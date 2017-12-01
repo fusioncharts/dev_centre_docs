@@ -1,3 +1,5 @@
 - Getting started
-- [Quick start](http://google.com)
-- [Creating First Chart](getting-started/building-your-first-chart)
+ - Quick start
+   - [Creating First Chart](getting-started/building-your-first-chart)
+   - [Crating Gauge](getting-started/building-your-gauge)
+   - [Creating Map](getting-started/building-your-map)
