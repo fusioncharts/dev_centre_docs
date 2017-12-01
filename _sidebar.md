@@ -1,5 +1,5 @@
 - Getting started
-  - [Building Dashbaord](getting-started/building-a-dashboard.md)
-  - [Creating First Chart](getting-started/building-your-first-chart.md)
-  - [Crating Gauge](getting-started/building-your-gauge.md)
-  - [Creating Map](getting-started/building-your-map.md)
+  - [Building Dashbaord](https://rawgithub.com/xdajay/dctest/master/getting-started/building-a-dashboard.md)
+  - [Creating First Chart](https://rawgithub.com/xdajay/dctest/master/getting-started/building-your-first-chart.md)
+  - [Crating Gauge](https://rawgithub.com/xdajay/dctest/master/getting-started/building-your-gauge.md)
+  - [Creating Map](https://rawgithub.com/xdajay/dctest/master/getting-started/building-your-map.md)
