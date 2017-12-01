@@ -1,3 +1,3 @@
 - Getting started
 - [Quick start](http://google.com)
-- [Creating First Chart](localhost:3000/getting-started/building-your-first-chart)
+- [Creating First Chart](getting-started/building-your-first-chart)
