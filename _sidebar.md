@@ -1,2 +1,3 @@
 - Getting started
 - [Quick start](http://google.com)
+- [Creating First Chart](/getting-started/building-your-first-chart.md)
