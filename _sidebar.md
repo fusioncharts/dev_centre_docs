@@ -1,2 +1,5 @@
 - Getting started
-- [Quick start](http://google.com)
+  - [Building Dashbaord](/getting-started/building-a-dashboard.md)
+  - [Creating First Chart](/getting-started/building-your-first-chart.md)
+  - [Crating Gauge](/getting-started/building-your-gauge.md)
+  - [Creating Map](/getting-started/building-your-map.md)
