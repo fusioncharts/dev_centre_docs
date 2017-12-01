@@ -1,2 +1,2 @@
 - Getting started
-  - [Building Dashbaord](https://www.google.com)
+- [Quick start](http://google.com)
