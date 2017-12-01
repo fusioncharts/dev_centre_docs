@@ -1,2 +1,2 @@
 - Getting started
-  - [Building Dashbaord](building-a-dashboard.md)
+  - [Building Dashbaord](/getting-started/building-a-dashboard)
