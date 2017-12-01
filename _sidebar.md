@@ -1,2 +1,2 @@
 - Getting started
-  - [Building Dashbaord](/getting-started/building-a-dashboard)
+  - [Building Dashbaord](https://www.google.com)
