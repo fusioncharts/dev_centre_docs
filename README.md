@@ -4,8 +4,4 @@ asdsad
 
 
 
-<script>
-  window.$docsify = {
-    ga: 'UA-XXXXX-Y'
-  }
-</script>  
+<div id="feedback"></div>
