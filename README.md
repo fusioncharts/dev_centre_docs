@@ -5,5 +5,7 @@ asdsad
 
 
 <script>
-  alert(" it works");
+  window.$docsify = {
+    ga: 'UA-XXXXX-Y'
+  }
 </script>  
