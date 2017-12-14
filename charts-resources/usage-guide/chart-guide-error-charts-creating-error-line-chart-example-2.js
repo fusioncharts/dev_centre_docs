@@ -1,0 +1,67 @@
+{
+    type: 'errorline',
+    renderAt: 'chart-container',
+    width: '500',
+    height: '350',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "theme": "fint",
+            "xaxisname": "Category",
+            "yaxisname": "Item (%)",
+            "numberSuffix": "%",
+            "caption": "Estimated Procurement from Top 2 Suppliers",
+            "subcaption": "(Next Year)",
+            "showvalues": "0",
+            "plottooltext": "$seriesname, $label: $value%",
+            //Error bar configuration
+            "halferrorbar": "0",
+            "errorBarColor": "#990000",
+            "errorBarAlpha": "50",
+            "errorBarThickness": "4",
+            "errorBarWidth": "8"
+        },
+        "categories": [{
+            "category": [{
+                "label": "Food & Beverage"
+            }, {
+                "label": "Apparel"
+            }, {
+                "label": "Electronics"
+            }, {
+                "label": "Baby Products"
+            }]
+        }],
+        "dataset": [{
+            "seriesname": "MB Suppliers",
+            "data": [{
+                "value": "28",
+                "errorvalue": "2"
+            }, {
+                "value": "16",
+                "errorvalue": "2"
+            }, {
+                "value": "24",
+                "errorvalue": "3"
+            }, {
+                "value": "32",
+                "errorvalue": "2"
+            }]
+        }, {
+            "seriesname": "VST Group Co Ltd ",
+            "data": [{
+                "value": "12",
+                "errorvalue": "2"
+            }, {
+                "value": "30",
+                "errorvalue": "4"
+            }, {
+                "value": "35",
+                "errorvalue": "5"
+            }, {
+                "value": "14",
+                "errorvalue": "2"
+            }]
+        }]
+    }
+}
