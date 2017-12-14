@@ -33,11 +33,11 @@ December| $730,000
 
 Let's now get to building the chart. There are 5 simple steps to building a chart using FusionCharts Suite XT:
 
-1. <a href="{{ site.baseurl }}getting-started/building-your-first-chart.html#installing-fusioncharts-suite-xt-for-your-application">Installing FusionCharts Suite XT for your application</a>
-2. <a href="{{ site.baseurl }}getting-started/building-your-first-chart.html#converting-your-tabular-data-to-fusioncharts-suite-xt-jsonxml-format">Converting your data to a JSON or XML format</a>
-3. <a href="{{ site.baseurl }}getting-started/building-your-first-chart.html#including-fusioncharts-suite-xt-library-in-your-page">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
-4. <a href="{{ site.baseurl }}getting-started/building-your-first-chart.html#creating-a-container-for-your-chart-in-the-web-page">Creating a container `<div>` for the chart</a>
-5. <a href="{{ site.baseurl }}getting-started/building-your-first-chart.html#creating-an-instance-of-the-chart">Using the new `FusionCharts()` constructor to create the chart instance, and then calling the `render()` method</a>
+1. <a href="/getting-started/building-your-first-chart.html#installing-fusioncharts-suite-xt-for-your-application">Installing FusionCharts Suite XT for your application</a>
+2. <a href="/getting-started/building-your-first-chart.html#converting-your-tabular-data-to-fusioncharts-suite-xt-jsonxml-format">Converting your data to a JSON or XML format</a>
+3. <a href="/getting-started/building-your-first-chart.html#including-fusioncharts-suite-xt-library-in-your-page">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
+4. <a href="/getting-started/building-your-first-chart.html#creating-a-container-for-your-chart-in-the-web-page">Creating a container `<div>` for the chart</a>
+5. <a href="/getting-started/building-your-first-chart.html#creating-an-instance-of-the-chart">Using the new `FusionCharts()` constructor to create the chart instance, and then calling the `render()` method</a>
 
 ### Installing FusionCharts Suite XT for your application
 
@@ -97,9 +97,9 @@ The final step is to create an instance of the chart type as `column2d`, set the
 
 The following code does the trick.
 
-{% highlight javascript lineanchors %}{% raw %}
-  FusionCharts.ready(function(){
-      var revenueChart = new FusionCharts({
+```javascript
+FusionCharts.ready(function(){
+    var revenueChart = new FusionCharts({
         "type": "column2d",
         "renderAt": "chartContainer",
         "width": "500",
@@ -168,7 +168,7 @@ The following code does the trick.
 
     revenueChart.render();
 })
-{% endraw %}{% endhighlight %}
+```
 
 In the above code:
 
@@ -188,7 +188,7 @@ Thats it! You just created your first interactive JavaScript chart using FusionC
 
 The full HTML code for the example looks as under:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
 <title>My first chart using FusionCharts Suite XT</title>
@@ -271,7 +271,7 @@ revenueChart.render();
   <div id="chartContainer">FusionCharts XT will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 When you now view the page in a browser, you should see an interactive Column 2D chart, showing monthly revenues for Harry's SuperMart similar to the live chart at the top of this page. Try rolling over the columns to see the tooltips, or refresh the page to see the chart animating again.
 
