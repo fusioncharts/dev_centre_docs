@@ -33,12 +33,6 @@ December| $730,000
 
 Let's now get to building the chart. There are 5 simple steps to building a chart using FusionCharts Suite XT:
 
-1. <a href="/getting-started/building-your-first-chart.md#installing-fusioncharts-suite-xt-for-your-application">Installing FusionCharts Suite XT for your application</a>
-2. <a href="/getting-started/building-your-first-chart.md#converting-your-tabular-data-to-fusioncharts-suite-xt-jsonxml-format">Converting your data to a JSON or XML format</a>
-3. <a href="/getting-started/building-your-first-chart.md#including-fusioncharts-suite-xt-library-in-your-page">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
-4. <a href="/getting-started/building-your-first-chart.md#creating-a-container-for-your-chart-in-the-web-page">Creating a container `<div>` for the chart</a>
-5. <a href="/getting-started/building-your-first-chart.md#creating-an-instance-of-the-chart">Using the new `FusionCharts()` constructor to create the chart instance, and then calling the `render()` method</a>
-
 ### Installing FusionCharts Suite XT for your application
 
 To check whether you have FusionCharts Suite XT installed for your web application, as detailed [here]{% linkTo tutorials/getting-started/installation.md %}, check for the following files in your `fusioncharts` folder:
@@ -69,7 +63,7 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, you u
 
 If you have to generate maps, you will need to include other files in your page, as we will see in the later sections.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
 <title>My first chart using FusionCharts Suite XT</title>
@@ -77,7 +71,7 @@ If you have to generate maps, you will need to include other files in your page,
 <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
 </head>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 ### Creating a container for your chart in the web page
 
