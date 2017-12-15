@@ -1,0 +1,3 @@
+- [Creating First Chart](getting-started/building-your-first-chart.md)
+- [Crating Gauge](getting-started/building-your-gauge.md)
+- [Creating Map](getting-started/building-your-map.md)
