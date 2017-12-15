@@ -33,11 +33,11 @@ December| $730,000
 
 Let's now get to building the chart. There are 5 simple steps to building a chart using FusionCharts Suite XT:
 
-1. <a href="/getting-started/building-your-first-chart.html#installing-fusioncharts-suite-xt-for-your-application">Installing FusionCharts Suite XT for your application</a>
-2. <a href="/getting-started/building-your-first-chart.html#converting-your-tabular-data-to-fusioncharts-suite-xt-jsonxml-format">Converting your data to a JSON or XML format</a>
-3. <a href="/getting-started/building-your-first-chart.html#including-fusioncharts-suite-xt-library-in-your-page">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
-4. <a href="/getting-started/building-your-first-chart.html#creating-a-container-for-your-chart-in-the-web-page">Creating a container `<div>` for the chart</a>
-5. <a href="/getting-started/building-your-first-chart.html#creating-an-instance-of-the-chart">Using the new `FusionCharts()` constructor to create the chart instance, and then calling the `render()` method</a>
+1. <a href="/getting-started/building-your-first-chart#installing-fusioncharts-suite-xt-for-your-application">Installing FusionCharts Suite XT for your application</a>
+2. <a href="/getting-started/building-your-first-chart#converting-your-tabular-data-to-fusioncharts-suite-xt-jsonxml-format">Converting your data to a JSON or XML format</a>
+3. <a href="/getting-started/building-your-first-chart#including-fusioncharts-suite-xt-library-in-your-page">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
+4. <a href="/getting-started/building-your-first-chart#creating-a-container-for-your-chart-in-the-web-page">Creating a container `<div>` for the chart</a>
+5. <a href="/getting-started/building-your-first-chart#creating-an-instance-of-the-chart">Using the new `FusionCharts()` constructor to create the chart instance, and then calling the `render()` method</a>
 
 ### Installing FusionCharts Suite XT for your application
 
@@ -83,11 +83,11 @@ If you have to generate maps, you will need to include other files in your page,
 
 Each chart in the page needs a container to reside in. A `<div>` element works well as a container for the chart, as defined below.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <body>
 <div id="chartContainer">FusionCharts XT will load here!</div>
 </body>
-{% endraw %}{% endhighlight %}
+```
 
 It is important to specify a unique ID for this `<div>` container within the web page, as this ID is used in the chart initialization code to refer to this container.
 
