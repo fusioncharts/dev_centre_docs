@@ -1,4 +1,4 @@
-- Home[](home.md)
+- [Home](home.md)
 
 - Getting started
    - [Creating First Chart](getting-started/building-your-first-chart.md)
