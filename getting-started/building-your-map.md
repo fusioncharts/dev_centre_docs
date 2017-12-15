@@ -35,11 +35,11 @@ Maps in FusionCharts Suite XT are provided as part of FusionMaps XT. FusionMaps 
 
 Let's now get to building the map. There are 5 simple steps to building a map using FusionCharts Suite XT:
 
-1. <a href="{{ site.baseurl }}getting-started/building-your-map.html#installing-fusioncharts-suite-xt-for-your-application">Installing FusionCharts Suite XT for your application</a>
-2. <a href="{{ site.baseurl }}getting-started/building-your-map.html#converting-your-data-to-fusioncharts-suite-xt-jsonxml-format">Converting your data to a JSON or XML format</a>
-3. <a href="{{ site.baseurl }}getting-started/building-your-map.html#including-fusioncharts-suite-xt-library-in-your-page">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
-4. <a href="{{ site.baseurl }}getting-started/building-your-map.html#creating-a-container-for-your-map-in-the-web-page">Creating a container `<div>` for the map</a>
-5. <a href="{{ site.baseurl }}getting-started/building-your-map.html#creating-an-instance-of-the-map">Using the new `FusionCharts()` constructor to create the map instance, and then calling the `render()` method</a>
+1. [Installing FusionCharts Suite XT for your application](getting-started/building-your-map?id=installing-fusioncharts-suite-xt-for-your-application)
+2. [Converting your data to a JSON or XML format](/getting-started/building-your-map?id=converting-your-data-to-fusioncharts-suite-xt-jsonxml-format)
+3. [Including the FusionCharts Suite XT JavaScript library in your HTML page](/getting-started/building-your-map?id=including-fusioncharts-suite-xt-library-in-your-page)
+4. [Creating a container &lt;div&gt; for the map](/getting-started/building-your-map?id=creating-a-container-for-your-map-in-the-web-page)
+5. [Using the new `FusionCharts()` constructor to create the map instance, and then calling the `render()` method](/getting-started/building-your-map?id=creating-an-instance)
 
 ### Installing FusionCharts Suite XT for your application
 
@@ -67,7 +67,7 @@ Here is the JSON/XML representation of the data you will use to build this map
 
 To include the FusionCharts Suite XT JavaScript library in your HTML page, you use the `<script>` tag as under. Next, we include a theme file to style the chart. The theme is called `fint` (FusionCharts internal) and it is present in `themes` folder of your download.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>My First map using FusionMaps XT</title>
@@ -75,7 +75,7 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, you u
     <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
 </head>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 This informs the browser where to load the FusionCharts Suite XT library from. We recommend using a relative path to the library hosted on the same domain as your web application.
 
@@ -83,11 +83,11 @@ This informs the browser where to load the FusionCharts Suite XT library from. W
 
 Next, you will need to create a container for your map in the form of a `<div>` element, as under.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <body>
-<div id="chartContainer">A US map will load here!</div>
+	<div id="chartContainer">A US map will load here!</div>
 </body>
-{% endraw %}{% endhighlight %}
+```
 
 This will later allow us to reference the `chartContainer` div and render a map in this space.
 
@@ -95,7 +95,7 @@ This will later allow us to reference the `chartContainer` div and render a map 
 
 The final step is to create an instance of the map, initialize with the correct width and height and then set the JSON data source.
 
-{% highlight html lineanchors %}{% raw %}
+```javacript
 <script type="text/javascript">
 FusionCharts.ready(function(){
    var salesByState = new FusionCharts({
@@ -344,7 +344,7 @@ FusionCharts.ready(function(){
     salesByState.render();
 });
 </script>
-{% endraw %}{% endhighlight %}
+```
 
 This is what we did in the above code
 
@@ -359,7 +359,7 @@ Thats it!  you have configured your first Map.
 
 The full HTML code for the example looks as under:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
 <title>My First map using FusionCharts Suite XT</title>
@@ -618,7 +618,8 @@ The full HTML code for the example looks as under:
     <div id="chartContainer">FusionMaps XT will load s map here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
+
 When you now view the page in a browser, you should see an interactive 2D Map, showing state-wise sales for Harry's SuperMart. This map works seamlessly across mobile devices like iPhones, iPads, Android devices etc.
 
 ### Was there a problem rendering the map?
