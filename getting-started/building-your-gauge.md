@@ -28,11 +28,11 @@ So any score <50 is bad, and gets a red color. Any score between 50 and 75 is av
 
 Let's now get to building the gauge. There are 5 simple steps to building a chart using FusionWidgets XT
 
-1. <a href="{{ site.baseurl }}getting-started/building-your-gauge.html#installing-fusioncharts-suite-xt-for-your-application">Installing FusionCharts Suite XT for your application</a>
-2. <a href="{{ site.baseurl }}getting-started/building-your-gauge.html#converting-your-data-to-fusioncharts-suite-xt-jsonxml-format">Converting your data to a JSON or XML format</a>
-3. <a href="{{ site.baseurl }}getting-started/building-your-gauge.html#including-fusioncharts-suite-xt-library-in-your-page">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
-4. <a href="{{ site.baseurl }}getting-started/building-your-gauge.html#creating-a-container-for-your-gauge-in-the-web-page">Creating a container `<div>` for the chart</a>
-5. <a href="{{ site.baseurl }}getting-started/building-your-gauge.html#creating-an-instance-of-the-gauge">Using the new `FusionCharts()` constructor to create the chart instance, and then calling the `render()` method</a>
+1. <a href="/getting-started/building-your-gauge.html#installing-fusioncharts-suite-xt-for-your-application">Installing FusionCharts Suite XT for your application</a>
+2. <a href="/getting-started/building-your-gauge.html#converting-your-data-to-fusioncharts-suite-xt-jsonxml-format">Converting your data to a JSON or XML format</a>
+3. <a href="/getting-started/building-your-gauge.html#including-fusioncharts-suite-xt-library-in-your-page">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
+4. <a href="/getting-started/building-your-gauge.html#creating-a-container-for-your-gauge-in-the-web-page">Creating a container `<div>` for the chart</a>
+5. <a href="/getting-started/building-your-gauge.html#creating-an-instance-of-the-gauge">Using the new `FusionCharts()` constructor to create the chart instance, and then calling the `render()` method</a>
 
 ### Installing FusionCharts Suite XT for your application
 
@@ -57,7 +57,7 @@ Here is the JSON/XML representation of the data you will use to build this gauge
 
 To include the FusionCharts Suite XT JavaScript library in your HTML page, you use the `<script>` tag as under. Next, we include a theme file to style the chart. The theme is called `fint` (FusionCharts internal) and it is present in the `themes` folder of your download.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
     <head>
     <title>My first gauge using FusionWidgets XT</title>
@@ -65,18 +65,18 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, you u
     <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
     </head>
 </html>
-{% endraw %}{% endhighlight %}
+```
 It informs the browser where to load the FusionCharts Suite XT library from. We recommend using a relative path to the library hosted on the same domain as your web application.
 
 ### Creating a container for your gauge in the web page
 
 Next, you will need to create a container for your chart in the form of a `<div>` element, as under.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <body>
   <div id="chart-container">An angular gauge will load here!</div>
 </body>
-{% endraw %}{% endhighlight %}
+```
 
 This will later allow us to reference the `chart-container` id and render a gauge in this container.
 
@@ -85,7 +85,7 @@ This will later allow us to reference the `chart-container` id and render a gaug
 
 The final step is to create an instance of an angular gauge, initialize it with the correct `width`, `height` and then set the JSON data source.
 
-{% highlight html lineanchors %}{% raw %}
+```javascript
 <script type="text/javascript">
 FusionCharts.ready(function () {
     var csatGauge = new FusionCharts({
@@ -134,7 +134,7 @@ FusionCharts.ready(function () {
     csatGauge.render();
 });
 </script>
-{% endraw %}{% endhighlight %}
+```
 
 In the above code:
 
@@ -150,7 +150,7 @@ Thats it! You just created your first interactive JavaScript gauge using FusionC
 The full HTML code for the example looks as under:
 
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
 <title>My first gauge using FusionWidgets XT</title>
@@ -209,7 +209,7 @@ FusionCharts.ready(function () {
   <div id="chart-container">An angular guage will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 
 When you now view the page in a browser, you should see an interactive angular gauge, showing weekly customer satisfaction score for Harry's SuperMart.
