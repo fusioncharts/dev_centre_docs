@@ -12,7 +12,7 @@ To solve this, we will use a US Map to represent his sales, which colors each st
 
 The final map would look as under.
 
-{% embed_chart {"source": "getting-started-your-first-charts-building-your-map-example1.js", "id": "1"} %}
+{% embed_chart getting-started-your-first-charts-building-your-map-example1.js %}
 
 The data used in this map is shown below:
 
@@ -60,7 +60,7 @@ The `fusionchart.usa.js` is located inside the maps folder in your download pack
 
 Here is the JSON/XML representation of the data you will use to build this map
 
-{% embed_data {"source": "getting-started-your-first-charts-building-your-map-example1.js"} %}
+{% embed_data getting-started-your-first-charts-building-your-map-example1.js %}
 
 ### Including FusionCharts Suite XT library in your page
 
@@ -98,7 +98,7 @@ The final step is to create an instance of the map, initialize with the correct 
 ```javascript
 <script type="text/javascript">
 FusionCharts.ready(function(){
-   var salesByState = new FusionCharts({
+   var salesByState = new FusionCharts({	
         "type": "maps/usa",
         "renderAt": "chartContainer",
         "width": "600",

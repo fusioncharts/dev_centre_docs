@@ -12,7 +12,7 @@ An angular/meter/dial gauge chart is used to display a specific dataset utilizin
 
 Gauges, in FusionCharts Suite XT, are available as part of FusionWidget XT. To start with, we'll build a simple "Weekly Customer Satisfaction Index" gauge, which would look as under once complete.
 
-{% embed_chart {"source": "getting-started-your-first-charts-building-your-gauge-example1.js", "id": "1"} %}
+{% embed_chart getting-started-your-first-charts-building-your-gauge-example1.js %}
 
 Harry defines the thresholds for his customer satisfaction score using the following range.
 
@@ -52,7 +52,7 @@ To see whether you have FusionCharts Suite XT installed for your web application
 
 Here is the JSON/XML representation of the data you will use to build this gauge
 
-{% embed_data {"source": "getting-started-your-first-charts-building-your-gauge-example1.js"} %}
+{% embed_data getting-started-your-first-charts-building-your-gauge-example1.js %}
 
 ### Including FusionCharts Suite XT library in your page
 

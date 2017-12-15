@@ -2,7 +2,7 @@ Let us build our first chart using FusionCharts Suite XT! Throughout this docume
 
 Let's start with a simple "Monthly revenue" chart, which we will plot in a Column 2D chart. Once done, it should look as under:
 
-{% embed_chart {"source": "getting-started-your-first-charts-building-your-chart-example1.js", "id": "1"} %}
+{% embed_chart getting-started-your-first-charts-building-your-chart-example-1.js %}
 
 The data for this chart can be represented in a table as under:
 
@@ -47,7 +47,7 @@ FusionCharts Suite XT JavaScript library accepts data in JSON or XML format only
 For this example, the tabular data above, when converted to FusionCharts Suite XT JSON/XML format, looks as under:
 
 
-{% embed_data {"source": "getting-started-your-first-charts-building-your-chart-example1.js"} %}
+{% embed_data getting-started-your-first-charts-building-your-chart-example1.js %}
 
 ### Including FusionCharts Suite XT library in your page
 
