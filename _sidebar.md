@@ -1,6 +1,5 @@
 - Getting started
    - [Creating First Chart](getting-started/building-your-first-chart.md)
-   - [Creating First Chart](getting-started/demo.md)
    - [Crating Gauge](getting-started/building-your-gauge.md)
    - [Creating Map](getting-started/building-your-map.md)
    
