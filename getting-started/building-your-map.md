@@ -95,7 +95,7 @@ This will later allow us to reference the `chartContainer` div and render a map 
 
 The final step is to create an instance of the map, initialize with the correct width and height and then set the JSON data source.
 
-```javacript
+```javascript
 <script type="text/javascript">
 FusionCharts.ready(function(){
    var salesByState = new FusionCharts({
