@@ -1,5 +1,3 @@
-- [Home](home.md)
-
 - Getting started
    - [Creating First Chart](getting-started/building-your-first-chart.md)
    - [Crating Gauge](getting-started/building-your-gauge.md)
