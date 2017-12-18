@@ -12,7 +12,7 @@ To solve this, we will use a US Map to represent his sales, which colors each st
 
 The final map would look as under.
 
-{% embed_chart getting-started-your-first-charts-building-your-map-example1.js %}
+{% embed_chart getting-started-your-first-charts-building-your-map-example-1.js %}
 
 The data used in this map is shown below:
 
