@@ -284,3 +284,6 @@ In case something went wrong and you are unable to see the chart, check for the 
 Click here for more information on [Troubleshooting]{% linkTo tutorials/troubleshooting/debugger.md %}.
 
 Now that Harry can monitor his monthly revenues using this interactive chart, let's build a gauge to show him the customer satisfaction score in the next section.
+
+[Creating Gauge](/getting-started/building-your-gauge)
+
