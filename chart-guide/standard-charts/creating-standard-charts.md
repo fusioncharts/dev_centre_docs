@@ -28,7 +28,7 @@ In this section, you will be shown a few examples of how the standard charts loo
 
 A single-series column 2D chart looks like this:
 
-{% embed_all {"source": "chart-guide-standard-charts-creating-standard-charts-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-standard-charts-creating-standard-charts-example-1.js %}
 
 In the above chart, we have shown the monthly revenue for the last one year for Harry’s SuperMart. We have plotted the months along the x-axis and the revenue, which is a numeric value, along the y-axis.
 
@@ -37,7 +37,7 @@ In the above chart, we have shown the monthly revenue for the last one year for 
 
 A single-series bar 2D chart looks like this:
 
-{% embed_all {"source": "chart-guide-standard-charts-creating-standard-charts-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-standard-charts-creating-standard-charts-example-2.js %}
 
 A bar chart is like a column chart that is inverted. Therefore, the numeric values, plotted along the y-axis in a column chart, are plotted along the x-axis in a bar chart and the data plot labels are plotted along the y-axis.
 
@@ -48,7 +48,7 @@ In the above chart, we have shown the five stores in a supermarket that have the
 
 A single-series line 2D chart looks like this:
 
-{% embed_all {"source": "chart-guide-standard-charts-creating-standard-charts-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-standard-charts-creating-standard-charts-example-3.js %}
 
 In the above chart, we have shown the total footfall at Bakersfield Central. We have plotted the days along the x-axis and the number of visitors along the y-axis.
 
@@ -57,7 +57,7 @@ In the above chart, we have shown the total footfall at Bakersfield Central. We 
 
 A single-series area 2D chart looks like this:
 
-{% embed_all {"source": "chart-guide-standard-charts-creating-standard-charts-example-4.js", "id": "4"} %}
+{% embed_all chart-guide-standard-charts-creating-standard-charts-example-4.js %}
 
 An area chart is similar to the line chart, with the difference that the area marked by the anchors and line segments is filled.
 
