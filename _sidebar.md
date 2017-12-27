@@ -7,4 +7,7 @@
   - [Configuring](/configuring-your-chart-basic/anchors-and-lines)
   - [annotations](/configuring-your-chart-basic/annotations)
   - [Border & Background](/configuring-your-chart-basic/border-and-background)
+  
+- Chart Guide
+  - [Creating Standart Charts](/chart-guide/standard-charts/creating-standard-charts)
    
