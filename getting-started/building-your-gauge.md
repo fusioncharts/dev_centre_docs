@@ -52,7 +52,7 @@ To see whether you have FusionCharts Suite XT installed for your web application
 
 Here is the JSON/XML representation of the data you will use to build this gauge
 
-{% embed_data getting-started-your-first-charts-building-your-gauge-example1.js %}
+{% embed_data getting-started-your-first-charts-building-your-gauge-example-1.js %}
 
 ### Including FusionCharts Suite XT library in your page
 
