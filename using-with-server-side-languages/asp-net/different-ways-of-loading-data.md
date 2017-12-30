@@ -28,7 +28,7 @@ In this section, you will be shown how the ASP.NET wrapper uses each of these me
 
 A multi-series line chart that shows the sales data for six products for the previous and the current year is shown below:
 
-{% embed_chart using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-1.js }
+{% embed_chart {"source": "using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-1.js", "id": "1"} %}
 
 As an example, we will look at how you can create this chart by generating a JSON string from the chart data contained in a 2D array.
 
@@ -406,7 +406,7 @@ To know more about the attributes that you can configure for the multi-series li
 
 A combination chart that shows the quarterly sales details—the revenue generated and the units sold—for product A is shown below:
 
-{% embed_chart using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-2.js }
+{% embed_chart {"source": "using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-2.js", "id": "2"} %}
 
 We will look at how you can create this chart using an XML string generated from data contained in a 2D array.
 
@@ -700,7 +700,7 @@ To know more about the attributes that you can configure for the multi-series co
 
 A column 3D chart that shows the monthly revenue for the last year at Harry’s SuperMart is shown below:
 
-{% embed_chart using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-3.js }
+{% embed_chart {"source": "using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-3.js", "id": "3"} %}
 
 We will look at how you can create this gauge by loading data from a `.json` file.
 
@@ -850,7 +850,7 @@ To know more about the attributes that you can configure for the column 3D chart
 
 An angular gauge showing the customer satisfaction score at Los Angeles Topanga is shown below:
 
-{% embed_chart using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-4.js }
+{% embed_chart {"source": "using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-4.js", "id": "4"} %}
 
 We will look at how you can create this gauge by loading data from a `.xml` file.
 
@@ -1009,7 +1009,7 @@ Given below are a few tips that, although applicable while using FusionCharts, n
     <td><strong>Single-series Chart</strong></td>
   </tr>
   <tr>
-{% embed_data using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-5.js }
+    <td>{% embed_data {"source": "using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-5.js"} %}
 For an example, click [here]{% linkTo tutorials/chart-guide/standard-charts/creating-standard-charts.md %}.
     </td>
   </tr>
@@ -1017,7 +1017,7 @@ For an example, click [here]{% linkTo tutorials/chart-guide/standard-charts/crea
     <td><strong>Multi-series Chart</strong></td>
   </tr>
   <tr>
-{% embed_data using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-6.js }
+    <td>{% embed_data {"source": "using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-6.js"} %}
 For an example, click [here]{% linkTo tutorials/chart-guide/multi-series-charts/creating-multi-series-charts.md %}.
     </td>
   </tr>

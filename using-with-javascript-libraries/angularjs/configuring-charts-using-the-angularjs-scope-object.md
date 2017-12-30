@@ -28,7 +28,7 @@ This articles describes how you can use the scope object to:
 
 A column 2D chart configured to update chart data dynamically is shown below:
 
-{% embed_chart using-with-javascript-libraries-angularjs-configuring-charts-using-the-angularjs-scope-object-example-1.js }
+{% embed_chart {"source": "using-with-javascript-libraries-angularjs-configuring-charts-using-the-angularjs-scope-object-example-1.js", "id": "1"} %}
 
 
 The HTML code for this chart is given below:
@@ -85,7 +85,7 @@ $scope.updateMyChartData = function() {
 As an example, look at how you can change the alignment of the chart caption, dynamically.
 A column 2D chart configured to let you do this is shown below:
 
-{% embed_chart using-with-javascript-libraries-angularjs-configuring-charts-using-the-angularjs-scope-object-example-1a.js }
+{% embed_chart {"source": "using-with-javascript-libraries-angularjs-configuring-charts-using-the-angularjs-scope-object-example-1a.js", "id": "2"} %}
 
 Three radio buttons are shown below the chart. Click the appropriate one to set the required alignment.
 The HTML code for this chart is given below:
@@ -144,7 +144,7 @@ $scope.rightAlignCaption = function() {
 
 The quarterly revenue column 2D chart configured to listen to the `dataplotClick` event is shown below:
 
-{% embed_chart using-with-javascript-libraries-angularjs-configuring-charts-using-the-angularjs-scope-object-example-2.js }
+{% embed_chart {"source": "using-with-javascript-libraries-angularjs-configuring-charts-using-the-angularjs-scope-object-example-2.js", "id": "3"} %}
 
 When a data plot is clicked, the text **Selected Value: **rendered below the chart is updated to show the value of that data plot.
 

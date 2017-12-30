@@ -37,7 +37,7 @@ In this section, you will be shown a how you can create combination charts.
 
 A 2D combination chart with a single y-axis looks like this:
 
-{% embed_all chart-guide-combination-charts-creating-combination-charts-example-1.js }
+{% embed_all {"source": "chart-guide-combination-charts-creating-combination-charts-example-1.js", "id": "1"} %}
 
 In the above chart, we have compared the actual revenue, the projected revenue and the profit earned for each month of the last year. All three metrics have been plotted using different chart types - the actual revenue earned is plotted using a column chart, the projected revenue is plotted using a line chart, and the profit earned is plotted using an area chart.
 
@@ -49,7 +49,7 @@ Using a different chart type for each metric ensures easy interpretation of the 
 
 A 2D combination chart with dual y-axis looks like this:
 
-{% embed_all chart-guide-combination-charts-creating-combination-charts-example-2.js }
+{% embed_all {"source": "chart-guide-combination-charts-creating-combination-charts-example-2.js", "id": "2"} %}
 
 In the above chart, we have shown a comparison between the revenue, profit, and the profit percentage. The revenue and the profit will be shown as amount in dollars but the profit percentage will require a different unit - percentage. These cannot be plotted on a single y-axis. FusionCharts Suite XT allows you to have two y-axes, a primary y-axis and a secondary y-axis, if you have two data of two different numeric units to plot.
 

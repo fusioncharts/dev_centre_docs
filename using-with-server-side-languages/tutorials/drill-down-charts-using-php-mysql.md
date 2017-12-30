@@ -1658,7 +1658,7 @@ if ($result) {
 
 The final chart, with two levels of drill-down, will look as shown below:
 
-{% embed_chart drill-down-charts-using-php-mysql-example-1.js }
+{% embed_chart {"source": "drill-down-charts-using-php-mysql-example-1.js", "id": "1"} %}
 
 <div style="text-align: center;">
   <a style="display: inline-block; width: auto; outline: none; padding: 20px 60px; margin-bottom: 10px; font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight: 600; color: #fff; text-align: center; vertical-align: middle; background-color: #167ed5; -webkit-border-radius: 2px; -webkit-border-radius: 0.2rem; -moz-border-radius: 2px; -moz-border-radius: 0.2rem; border-radius: 2px; border-radius: 0.2rem; cursor: pointer; -webkit-appearance: none; text-decoration: none;" href="{{ site.baseurl }}resources/downloads/php-mysql-multilevel-drill-down.zip" target="_blank" title="click me to download" >Download the Sample</a>

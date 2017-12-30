@@ -11,7 +11,7 @@ This section demonstrates rendering a chart via npm.
 
 Take a look at the column 2D chart shown below:
 
-{% embed_chart chart-guide-standard-charts-creating-standard-charts-example-1.js }
+{% embed_chart {"source": "chart-guide-standard-charts-creating-standard-charts-example-1.js", "id": "1"} %}
 
 The data structure needed to render this chart via npm is given below:
 

@@ -50,7 +50,7 @@ The FusionCharts Suite XT multi-axis line chart includes the following features:
 
 A multi-axis line chart rendered with three axes looks like this:
 
-{% embed_all chart-guide-multi-axis-line-chart-example-1.js }
+{% embed_all {"source": "chart-guide-multi-axis-line-chart-example-1.js", "id": "1"} %}
 
 ## Creating a Simple Multi-axis Line Chart
 

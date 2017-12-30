@@ -24,7 +24,7 @@ In this section, you will be shown how you can:
 
 A box and whisker chart with three of the five summary numbers - the minimum and maximum numbers and the median - shown looks like this:
 
-{% embed_all chart-guide-box-and-whisker-chart-configuring-the-five-summary-numbers-example-1.js }
+{% embed_all {"source": "chart-guide-box-and-whisker-chart-configuring-the-five-summary-numbers-example-1.js", "id": "1"} %}
 
 Given below is a brief description of the attributes used to show/hide the five summary numbers:
 

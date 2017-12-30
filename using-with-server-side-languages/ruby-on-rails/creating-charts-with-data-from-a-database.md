@@ -26,7 +26,7 @@ Using this data, you want to plot a column 2D chart showing the top 10 most popu
 
 The column 2D chart, with the drill-down functionality, that we need to render here looks like this:
 
-{% embed_chart using-with-server-side-languages-ruby-on-rails-creating-charts-with-data-from-a-database-example-1.js }
+{% embed_chart {"source": "using-with-server-side-languages-ruby-on-rails-creating-charts-with-data-from-a-database-example-1.js", "id": "1"} %}
 
 The data structure needed to create the above chart goes into the `app/controllers/examples_controller.rb` file. It is as given below:
 

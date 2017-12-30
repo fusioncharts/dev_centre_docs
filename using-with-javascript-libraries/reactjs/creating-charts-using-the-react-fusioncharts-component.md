@@ -38,7 +38,7 @@ __OR__
 
 Take a look at the column 2D chart shown below:
 
-{% embed_chart using-with-javascript-libraries-reactjs-creating-charts-using-the-react-fusioncharts-plugin-example-1.js }
+{% embed_chart {"source": "using-with-javascript-libraries-reactjs-creating-charts-using-the-react-fusioncharts-plugin-example-1.js", "id": "1"} %}
 
 The code to configure this chart that will be passed to the `FusionCharts` component is given below:
 
@@ -118,7 +118,7 @@ An alternate way to create charts using the React-FusionCharts component is by c
 
 Take a look at the multi-series line chart shown below:
 
-{% embed_chart using-with-javascript-libraries-reactjs-creating-charts-using-the-react-fusioncharts-plugin-example-2.js }
+{% embed_chart {"source": "using-with-javascript-libraries-reactjs-creating-charts-using-the-react-fusioncharts-plugin-example-2.js", "id": "2"} %}
 
 The code to render this chart, using the alternate method, is given below:
 

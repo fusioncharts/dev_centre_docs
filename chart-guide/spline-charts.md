@@ -38,7 +38,7 @@ A single-series spline 2D chart draws a single fitted curve through the data poi
 
 A simple single-series spline 2D chart looks like this:
 
-{% embed_all chart-guide-spline-charts-example-1.js }
+{% embed_all {"source": "chart-guide-spline-charts-example-1.js", "id": "1"} %}
 
 
 
@@ -48,7 +48,7 @@ A simple single-series spline 2D chart looks like this:
 
 A simple multi-series spline 2D chart looks like this:
 
-{% embed_all chart-guide-spline-charts-example-2.js }
+{% embed_all {"source": "chart-guide-spline-charts-example-2.js", "id": "2"} %}
 
 To render a multi-series spline chart:
 
@@ -62,13 +62,13 @@ A multi-series spline area 2D chart is nothing but a conventional area with a sm
 
 A simple multi-series spline area 2D chart looks like this:
 
-{% embed_all chart-guide-spline-charts-example-3.js }
+{% embed_all {"source": "chart-guide-spline-charts-example-3.js", "id": "3"} %}
 
 ### Single-series Spline Area 2D Chart
 
 A simple single-series spline area area 2D chart looks like this:
 
-{% embed_all chart-guide-spline-charts-example-4.js }
+{% embed_all {"source": "chart-guide-spline-charts-example-4.js", "id": "4"} %}
 
 To render a single-series spline chart:
 

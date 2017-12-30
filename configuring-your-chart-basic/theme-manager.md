@@ -36,7 +36,7 @@ Including a theme file for application to your chart is very similar to includin
 
 Shown below is a simple column 2D chart that lets you switch between each of the packaged themes.
 
-{% embed_all configuring-your-chart-theme-manager-example-1.js }
+{% embed_all {"source": "configuring-your-chart-theme-manager-example-1.js", "id": "1"} %}
 
 Using a theme in a chart is simple, you only need to specify the theme you wish to use at the `chart` level as an attribute. 
 

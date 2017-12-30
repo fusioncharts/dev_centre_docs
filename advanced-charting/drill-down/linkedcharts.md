@@ -36,7 +36,7 @@ The parent chart is a column 2D chart that shows the yearly sales of the top thr
 
 The above chart, when rendered, looks like this:
 
-{% embed_chart interactivity-drill-down-creating-and-configuring-linkedcharts-example-1.js }
+{% embed_chart {"source": "interactivity-drill-down-creating-and-configuring-linkedcharts-example-1.js", "id": "1"} %}
 
 In this section, you will be shown how you can:
 
@@ -52,7 +52,7 @@ The parent chart is a column 2D chart that shows the yearly sales of the top thr
 
 The above chart, when rendered, looks like this:
 
-{% embed_chart interactivity-drill-down-creating-and-configuring-linkedcharts-example-1.js }
+{% embed_chart {"source": "interactivity-drill-down-creating-and-configuring-linkedcharts-example-1.js", "id": "2"} %}
 
 ## Creating *LinkedCharts* using the Data URL Method
 
@@ -186,7 +186,7 @@ Given below is a brief description of how the `link` attribute is used for the d
 
 The data structure needed to render our sample column 2D drill-down chart using the data string method is given below:
 
-{% embed_data interactivity-drill-down-creating-and-configuring-linkedcharts-example-1.js }
+{% embed_data {"source": "interactivity-drill-down-creating-and-configuring-linkedcharts-example-1.js"} %}
 
 ## Configuring LinkedCharts Events
 
@@ -194,7 +194,7 @@ The FusionCharts JavaScript class includes events that are raised when linked it
 
 An implementation of the *LinkedCharts* events for a column 2D drill-down chart is shown below:
 
-{% embed_chart interactivity-drill-down-creating-and-configuring-linkedcharts-example-2.js }
+{% embed_chart {"source": "interactivity-drill-down-creating-and-configuring-linkedcharts-example-2.js", "id": "3"} %}
 
 Given below is a brief description of these events:
 
@@ -227,7 +227,7 @@ The `addEventListener()` method is configured for the parent chart to listen to 
 
 The data structure that shows the implementation of these events is given below:
 
-{% embed_data interactivity-drill-down-creating-and-configuring-linkedcharts-example-2.js }
+{% embed_data {"source": "interactivity-drill-down-creating-and-configuring-linkedcharts-example-2.js"} %}
 
 The `events` object, under the `dataSource` object, is used to configure the events that will be raised for a chart.
 

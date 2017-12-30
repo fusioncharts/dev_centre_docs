@@ -40,7 +40,7 @@ The `insertFusionCharts` method renders charts inside a specified HTML element. 
 
 A chart rendered using the `insertFusionCharts` method is shown below:
 
-{% embed_chart using-with-javascript-libraries-jquery-rendering-charts-using-jquery-example-1.js }
+{% embed_chart {"source": "using-with-javascript-libraries-jquery-rendering-charts-using-jquery-example-1.js", "id": "1"} %}
 
 The code snippet that shows how you can insert a new chart is given below:
 
@@ -76,7 +76,7 @@ The `appendFusionCharts` method renders a chart at the end of the specified HTML
 
 A column 2D chart appended to an existing pie 2D chart looks like this:
 
-{% embed_chart using-with-javascript-libraries-jquery-rendering-charts-using-jquery-example-2.js }
+{% embed_chart {"source": "using-with-javascript-libraries-jquery-rendering-charts-using-jquery-example-2.js", "id": "2"} %}
 
 The code snippet that shows how you can append a chart is given below:
 
@@ -122,7 +122,7 @@ The `prependFusionCharts` method works similar to the `appendFusionCharts` metho
 
 A column 2D chart prepended to an existing pie 2D chart looks like this:
 
-{% embed_chart using-with-javascript-libraries-jquery-rendering-charts-using-jquery-example-3.js }
+{% embed_chart {"source": "using-with-javascript-libraries-jquery-rendering-charts-using-jquery-example-3.js", "id": "3"} %}
 
 The code snippet that shows how you can prepend a chart is given below:
 

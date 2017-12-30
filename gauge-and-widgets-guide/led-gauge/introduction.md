@@ -22,11 +22,11 @@ The LED gauge (horizontal/vertical) is defined by its minimum and maximum values
 
 A horizontal LED gauge rendered to indicate the fuel levels looks like this:
 
-{% embed_all gauge-and-widgets-guide-led-gauge-introduction-example-1.js }
+{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-introduction-example-1.js", "id": "1"} %}
 
 Similarly, a vertical LED gauge rendered to indicate the fuel levels looks like this:
 
-{% embed_all gauge-and-widgets-guide-led-gauge-introduction-example-2.js }
+{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-introduction-example-2.js", "id": "2"} %}
 
 ## Elements of LED Gauges
 

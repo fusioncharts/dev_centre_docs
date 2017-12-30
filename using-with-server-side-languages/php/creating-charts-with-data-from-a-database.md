@@ -31,7 +31,7 @@ Assume that you have a __fusioncharts_phpsample__ database with the __Country__ 
 
 The column 2D chart that we need to render here looks like this:
 
-{% embed_chart using-with-server-side-languages-php-creating-charts-with-data-from-a-database-example-1.js }
+{% embed_chart {"source": "using-with-server-side-languages-php-creating-charts-with-data-from-a-database-example-1.js", "id": "1"} %}
 
 The data structure needed to render this chart is given below:
 
@@ -134,7 +134,7 @@ To show data at different levels of a hierarchy, we use drill-down charts. We wi
 
 The chart thus rendered looks like this:
 
-{% embed_chart using-with-server-side-languages-php-creating-charts-with-data-from-a-database-example-2.js }
+{% embed_chart {"source": "using-with-server-side-languages-php-creating-charts-with-data-from-a-database-example-2.js", "id": "2"} %}
 
 To render the above chart, we need two PHP files - `country.php` and `countryDrillDown.php`. The `country.php` file creates a drill-down column 2D chart showing the most populous countries. The `countryDrillDown.php` file creates column 2D charts that show the most populous cities for the country that was selected in the parent chart.
 
@@ -366,7 +366,7 @@ Assume that you have a __fusioncharts_phpsample__ database with the __Revenue__ 
 
 The multi-series combination chart that we need to render here looks like this:
 
-{% embed_chart using-with-server-side-languages-php-creating-charts-with-data-from-a-database-example-3.js }
+{% embed_chart {"source": "using-with-server-side-languages-php-creating-charts-with-data-from-a-database-example-3.js", "id": "3"} %}
 
 Before we dive into the code, let’s see what the JSON data for a multi-series combination 2D chart should look like. We have a sales data of Harry's Supermart for last year.
 

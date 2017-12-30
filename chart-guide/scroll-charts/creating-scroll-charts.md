@@ -30,11 +30,11 @@ The types of scroll charts available in the  FusionCharts Suite XT are :
 
 A scroll column 2D chart looks like this:
 
-{% embed_all chart-guide-scroll-charts-creating-scroll-charts-example-1.js }
+{% embed_all {"source": "chart-guide-scroll-charts-creating-scroll-charts-example-1.js", "id": "1"} %}
 
 A scroll stacked column 2D chart looks like this:
 
-{% embed_all chart-guide-scroll-charts-creating-scroll-charts-example-2.js }
+{% embed_all {"source": "chart-guide-scroll-charts-creating-scroll-charts-example-2.js", "id": "2"} %}
 
 ## Creating a Scroll Chart
 
@@ -42,7 +42,7 @@ As an example, we will create a scroll combination 2D chart with a dual y-axis t
 
 The scroll combination 2D chart (dual Y) chart thus created looks like this :
 
-{% embed_all chart-guide-scroll-charts-creating-scroll-charts-example-3.js }
+{% embed_all {"source": "chart-guide-scroll-charts-creating-scroll-charts-example-3.js", "id": "3"} %}
 
 
 

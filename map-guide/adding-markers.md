@@ -12,11 +12,11 @@ You can add custom defined markers on any map within FusionCharts Suite XT. Mark
 
 Shown below is a map specifying the world's 5 busiest airports with a triangle denoting the location of each airport.
 
-{% embed_chart map-guide-adding-markers-5-busiest-airports.js }
+{% embed_chart {"source": "map-guide-adding-markers-5-busiest-airports.js", "id": "1"} %}
 
 Each of these airports has been represented as markers in the world map. This data when converted to FusionCharts Suite XT data format looks like this
 
-{% embed_data map-guide-adding-markers-5-busiest-airports.js }
+{% embed_data {"source": "map-guide-adding-markers-5-busiest-airports.js"} %}
 
 This is what we did in the above data structure
 
@@ -125,11 +125,11 @@ In the previous example we saw how we can use predefined shapes to build markers
 
 Shown here is the same map as before but using an airplane icon for the marker.
 
-{% embed_chart map-guide-adding-markers-images.js }
+{% embed_chart {"source": "map-guide-adding-markers-images.js", "id": "2"} %}
 
 The data structure of this is shown below
 
-{% embed_data map-guide-adding-markers-images.js }
+{% embed_data {"source": "map-guide-adding-markers-images.js"} %}
 
 This is what we did in the above data structure
 
@@ -241,13 +241,13 @@ FusionCharts Suite XT allows you to connect any two defined markers on the map u
 
 Shown below is a map showing the busiest air routes from the Heathrow airport in London. The respective airports are connected using connectors
 
-{% embed_chart map-guide-adding-markers-connectors.js }
+{% embed_chart {"source": "map-guide-adding-markers-connectors.js", "id": "3"} %}
 
 Marker Connectors as part of FusionCharts Suite XT require a unique `ID` to be specified as part of the `marker` definition.
 
 Shown below is the data used to build the map.
 
-{% embed_data map-guide-adding-markers-connectors.js }
+{% embed_data {"source": "map-guide-adding-markers-connectors.js"} %}
 
 This is what we did in the above data structure
 

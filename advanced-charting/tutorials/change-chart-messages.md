@@ -66,7 +66,7 @@ In this section, you will be shown how yoou can:
 
 A simple column 2D chart that displays custom dataLoadStartMessage is shown below:
 
-{% embed_chart change-chart-messages-example-1.js }
+{% embed_chart {"source": "change-chart-messages-example-1.js", "id": "1"} %}
 
 The constructor for the chart is shown below:
 
@@ -111,7 +111,7 @@ To apply common styling to all chart messages, use these attributes:
 
 A column 2D chart that has custom style for all messages looks like this:
 
-{% embed_chart change-chart-messages-example-2.js }
+{% embed_chart {"source": "change-chart-messages-example-2.js", "id": "2"} %}
 
 
 The constructor data for the chart is shown below:

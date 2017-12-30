@@ -24,7 +24,7 @@ Assume that you have a spline chart that shows the footfalls for each day of a w
 
 Take a look at the spline chart shown below:
 
-{% embed_chart advanced-charting-annotations-grouping-annotations-example-1.js }
+{% embed_chart {"source": "advanced-charting-annotations-grouping-annotations-example-1.js", "id": "1"} %}
 
 
 
@@ -208,10 +208,10 @@ For the above spline chart, this example will let the user control whether the t
 
 The chart thus rendered looks like this:
 
-{% embed_chart advanced-charting-annotations-grouping-annotations-example-2.js }
+{% embed_chart {"source": "advanced-charting-annotations-grouping-annotations-example-2.js", "id": "2"} %}
 
 Selecting the **Show total footfall** radio button will show the annotation group, selecting the **Hide total footfall** radio button will hide it.
 
 The complete data structure for this chart is given below:
 
-{% embed_data advanced-charting-annotations-grouping-annotations-example-2.js }
+{% embed_data {"source": "advanced-charting-annotations-grouping-annotations-example-2.js"} %}

@@ -207,7 +207,7 @@ When the chart needs to be resized dynamically, we invoke the `resizeTo()` metho
 
 Shown below is an example, along with the code :
 
-{% embed_all getting-started-your-first-charts-changing-chart-size-example-1.js }
+{% embed_all {"source": "getting-started-your-first-charts-changing-chart-size-example-1.js", "id": "1"} %}
 
 
 ### Dynamically changing chart type using the `chartType()` method
@@ -218,7 +218,7 @@ However, FusionCharts Suite XT makes it simple for you to change chart types usi
 
 Shown below is an example, along with the code :
 
-{% embed_all getting-started-your-first-charts-changing-chart-type-example-2.js }
+{% embed_all {"source": "getting-started-your-first-charts-changing-chart-type-example-2.js", "id": "2"} %}
 
 
 You can also provide a new data source and format as an optional second parameter of `chartType(chartType, options)` method, to change the data along with the chart.

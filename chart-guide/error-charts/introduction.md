@@ -50,19 +50,19 @@ At present, there are three types of multi-series error charts available in the 
 
 An error bar chart looks like this:
 
-{% embed_all chart-guide-error-charts-introduction-example-1.js }
+{% embed_all {"source": "chart-guide-error-charts-introduction-example-1.js", "id": "1"} %}
 
 ### Error Line Chart
 
 An error line chart looks like this:
 
-{% embed_all chart-guide-error-charts-introduction-example-2.js }
+{% embed_all {"source": "chart-guide-error-charts-introduction-example-2.js", "id": "2"} %}
 
 ### Error Scatter Chart
 
 An error scatter chart looks like this:
 
-{% embed_all chart-guide-error-charts-introduction-example-3.js }
+{% embed_all {"source": "chart-guide-error-charts-introduction-example-3.js", "id": "3"} %}
 
 ## Features of an Error Chart
 

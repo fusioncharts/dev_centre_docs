@@ -10,7 +10,7 @@ Assume that you are plotting a real-time line chart to monitor the stock prices 
 
 The real-time line chart thus rendered is shown below:
 
-{% embed_all advanced-charting-real-time-charts-adding-data-stamp-example-1.js }
+{% embed_all {"source": "advanced-charting-real-time-charts-adding-data-stamp-example-1.js", "id": "1"} %}
 
 
 

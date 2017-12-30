@@ -26,11 +26,11 @@ Bullet graphs may be oriented horizontally or vertically and multiple graphs may
 
 A simple horizontal bullet graph looks like this:
 
-{% embed_all gauge-and-widgets-guide-bullet-graph-introduction-example-1.js }
+{% embed_all {"source": "gauge-and-widgets-guide-bullet-graph-introduction-example-1.js", "id": "1"} %}
 
 A simple vertical bullet graph looks like this:
 
-{% embed_all gauge-and-widgets-guide-bullet-graph-introduction-example-2.js }
+{% embed_all {"source": "gauge-and-widgets-guide-bullet-graph-introduction-example-2.js", "id": "2"} %}
 
 In the above charts, the filled bar represents the actual value and the line represents the target value.
 

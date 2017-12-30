@@ -16,11 +16,11 @@ Entities in FusionCharts Suite XT raise 3 events  `entityRollOver` , `entityRoll
 
 Shown below is a map that captures data from the entity events and displays it in a message box below the map. Hover on individual continents to see the population of only that specific continent.
 
-{% embed_chart map-guide-listening-to-map-events-1.js }
+{% embed_chart {"source": "map-guide-listening-to-map-events-1.js", "id": "1"} %}
 
 The data used to create this example is shown here
 
-{% embed_data map-guide-listening-to-map-events-1.js }
+{% embed_data {"source": "map-guide-listening-to-map-events-1.js"} %}
 
 This is what we did in the above data structure
 
@@ -139,11 +139,11 @@ Markers and Connectors raise events on mouse interactions like roll over, roll o
 
 Shown here is the world map that we built in {% linkTo tutorials/map-guide/adding-markers.md %} as part of the connectors section. It shows the busiest routes from the Heathrow.
 
-{% embed_chart map-guide-listening-to-map-events-2.js }
+{% embed_chart {"source": "map-guide-listening-to-map-events-2.js", "id": "2"} %}
 
 The data used to create this example is shown here.
 
-{% embed_data map-guide-listening-to-map-events-2.js }
+{% embed_data {"source": "map-guide-listening-to-map-events-2.js"} %}
 
 This is what we did in the above data structure
 

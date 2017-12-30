@@ -74,7 +74,7 @@ We will create a simple column 2D chart that plots the monthly revenue for the l
 
 The rendered column 2D chart will look like this:
 
-{% embed_chart using-with-server-side-languages-php-introduction-example-1.js }
+{% embed_chart {"source": "using-with-server-side-languages-php-introduction-example-1.js", "id": "1"} %}
 
 The data structure, with the steps in comments, that shows how you can use the FusionCharts PHP wrapper to plot the above chart is given below:
 

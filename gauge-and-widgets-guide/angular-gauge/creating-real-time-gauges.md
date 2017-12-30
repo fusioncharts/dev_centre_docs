@@ -96,7 +96,7 @@ After stopping the update, it can be restarted again by using client-side JavaSc
 
 A real-time angular gauge configured to stream data from an URL looks like this:
 
-{% embed_all gauge-and-widgets-guide-angular-gauge-creating-real-time-gauges-example-1.js }
+{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-creating-real-time-gauges-example-1.js", "id": "1"} %}
 
 In the above gauge, observe that both the dials update themselves every 10 seconds.
 
@@ -144,7 +144,7 @@ The FusionCharts JavaScript Class provides a rich and powerful API collection th
 
 A real-time angular gauge configured to use JavaScript API for real-time updates looks like this:
 
-{% embed_all gauge-and-widgets-guide-angular-gauge-creating-real-time-gauges-example-2.js }
+{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-creating-real-time-gauges-example-2.js", "id": "2"} %}
 
 Given below is a brief description of the JavaScript API methods used to configure the real-time angular gauge to receive real-time updates:
 
@@ -190,7 +190,7 @@ FusionCharts Suite XT introduces two events, `realTimeUpdateComplete` and `realT
 
 A real-time angular gauge configured to listen to the `realTimeUpdateComplete` event looks like this:
 
-{% embed_all gauge-and-widgets-guide-angular-gauge-creating-real-time-gauges-example-3.js }
+{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-creating-real-time-gauges-example-3.js", "id": "3"} %}
 
 Given below is a brief description of the `realTimeUpdateComplete` and the `realTimeUpdateError` events:
 

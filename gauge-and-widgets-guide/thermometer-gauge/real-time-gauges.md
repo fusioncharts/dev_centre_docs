@@ -44,7 +44,7 @@ Here, the output is a single value, -5. So, when the gauge will read this value,
 
 A thermometer gauge configured for real-time updates using JavaScript API looks like this:
 
-{% embed_all gauge-and-widgets-guide-thermometer-gauge-real-time-gauges-example-1.js }
+{% embed_all {"source": "gauge-and-widgets-guide-thermometer-gauge-real-time-gauges-example-1.js", "id": "1"} %}
 
 Given below is a brief description of the JavaScript API used to configure real-time updates:
 
@@ -76,7 +76,7 @@ Given below is a brief description of the JavaScript API used to configure real-
 
 A thermometer gauge configured for real-time updates using server-side script looks like this:
 
-{% embed_all gauge-and-widgets-guide-thermometer-gauge-real-time-gauges-example-2.js }
+{% embed_all {"source": "gauge-and-widgets-guide-thermometer-gauge-real-time-gauges-example-2.js", "id": "2"} %}
 
 Given below is a brief description of the attributes needed to configure real-time updates from the server:
 
@@ -106,7 +106,7 @@ Given below is a brief description of the attributes needed to configure real-ti
 
 A thermometer gauge configured to stop and restart receiving real-time updates looks like this:
 
-{% embed_all gauge-and-widgets-guide-thermometer-gauge-real-time-gauges-example-3.js }
+{% embed_all {"source": "gauge-and-widgets-guide-thermometer-gauge-real-time-gauges-example-3.js", "id": "3"} %}
 
 Given below is a brief description of the JavaScript API used to stop and restart receiving real-time updates:
 
@@ -135,7 +135,7 @@ FusionCharts Suite XT introduces two events, `realTimeUpdateComplete` and `realT
 
 A real-time thermometer gauge configured to listen to the `realTimeUpdateComplete` event looks like this:
 
-{% embed_all gauge-and-widgets-guide-thermometer-gauge-real-time-gauges-example-4.js }
+{% embed_all {"source": "gauge-and-widgets-guide-thermometer-gauge-real-time-gauges-example-4.js", "id": "4"} %}
 
 Given below is a brief description of the `realTimeUpdateComplete` event:
 
@@ -160,7 +160,7 @@ Given below is a brief description of the `realTimeUpdateComplete` event:
 
 A thermometer gauge configured to listen to the `realTimeUpdateError` event looks like this:
 
-{% embed_all gauge-and-widgets-guide-thermometer-gauge-real-time-gauges-example-5.js }
+{% embed_all {"source": "gauge-and-widgets-guide-thermometer-gauge-real-time-gauges-example-5.js", "id": "5"} %}
 
 Given below is a brief description of the `realTimeUpdateError` event:
 

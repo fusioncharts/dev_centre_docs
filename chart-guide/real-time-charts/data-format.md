@@ -73,7 +73,7 @@ To do this, you can provide data to the chart in the following format
 
 The real-time line chart thus rendered is shown below:
 
-{% embed_all advanced-charting-real-time-charts-data-format-example-1.js }
+{% embed_all {"source": "advanced-charting-real-time-charts-data-format-example-1.js", "id": "1"} %}
 
 
 

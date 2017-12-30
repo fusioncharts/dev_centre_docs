@@ -18,7 +18,7 @@ You can use text annotations to add notes, labels, or any other contextual text 
 
 A column 2D chart rendered using text annotations is shown below:
 
-{% embed_chart advanced-charting-annotations-creating-annotations-creating-text-annotations-example-1.js }
+{% embed_chart {"source": "advanced-charting-annotations-creating-annotations-creating-text-annotations-example-1.js", "id": "1"} %}
 
 The text **Promotional activities for Butterfinger made it surpass Snickers, the highest selling brand for 3 years** is a text annotation. Adding this text to the chart makes it self-descriptive and easy for a user to understand the chart. You can add multiple text annotations on a chart that can be notes, labels, or any text that adds more context to the chart.
 
@@ -137,4 +137,4 @@ The `toX` and `toY` attributes can also be set on text if text wrapping dimensio
 
 The complete data structure for the column 2D chart with the text annotation is given below:
 
-{% embed_data advanced-charting-annotations-creating-annotations-creating-text-annotations-example-1.js }
+{% embed_data {"source": "advanced-charting-annotations-creating-annotations-creating-text-annotations-example-1.js"} %}

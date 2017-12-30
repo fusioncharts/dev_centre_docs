@@ -50,13 +50,13 @@ FusionCharts Suite XT includes two types of heat map charts:
 
 A simple numeric heat map chart looks like this:
 
-{% embed_all chart-guide-heat-map-chart-introduction-example-1.js }
+{% embed_all {"source": "chart-guide-heat-map-chart-introduction-example-1.js", "id": "1"} %}
 
 ### Category-based Heat Map Chart
 
 A simple category-based heat map chart looks like this:
 
-{% embed_all chart-guide-heat-map-chart-introduction-example-2.js }
+{% embed_all {"source": "chart-guide-heat-map-chart-introduction-example-2.js", "id": "2"} %}
 
 ## Legends in Heat Map Charts
 

@@ -121,7 +121,7 @@ As an example, we will create a simple column 2D chart that plots the monthly re
 
 The column 2D chart generated from above data will look like this:
 
-{% embed_chart using-with-server-side-languages-ruby-on-rails-introduction-example-1.js }
+{% embed_chart {"source": "using-with-server-side-languages-ruby-on-rails-introduction-example-1.js", "id": "1"} %}
 
 **Creating the Chart**
 

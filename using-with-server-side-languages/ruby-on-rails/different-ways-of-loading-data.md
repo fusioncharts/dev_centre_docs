@@ -24,7 +24,7 @@ In this section, you will be shown how the Ruby on Rails wrapper uses each of th
 
 A column chart, the data for which is loaded using a static JSON string, is shown below:
 
-{% embed_chart using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-1.js }
+{% embed_chart {"source": "using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-1.js", "id": "1"} %}
 
 The data structure needed to create the above chart goes into the `app/controllers/examples_controller.rb` file. It is as given below:
 
@@ -152,7 +152,7 @@ As an example, we will create a multi-series column 2D chart that compares the q
 
 The multi-series column 2D chart thus rendered is shown below:
 
-{% embed_chart using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-2.js }
+{% embed_chart {"source": "using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-2.js", "id": "2"} %}
 
 The data structure needed to create the above chart goes into the `app/controllers/examples_controller.rb` file. It is as given below:
 
@@ -234,7 +234,7 @@ Given below are a few tips that, although applicable while using FusionCharts, n
      <td><strong>Single-series Chart</strong></td>
   </tr>
   <tr>
-{% embed_data using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-3.js }
+    <td>{% embed_data {"source": "using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-3.js"} %}
 For an example, click [here]{% linkTo tutorials/chart-guide/standard-charts/creating-standard-charts.md %}.
     </td>
   </tr>
@@ -242,7 +242,7 @@ For an example, click [here]{% linkTo tutorials/chart-guide/standard-charts/crea
     <td><strong>Multi-series Chart</strong></td>
   </tr>
   <tr>  
-{% embed_data using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-4.js }
+    <td>{% embed_data {"source": "using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-4.js"} %}
 For an example, click [here]{% linkTo tutorials/chart-guide/multi-series-charts/creating-multi-series-charts.md %}.
     </td>
   </tr>

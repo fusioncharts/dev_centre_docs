@@ -33,7 +33,7 @@ In this section, we will look at how you can define simple links that open in th
 
 A column 2D chart configured with simple links that open in the same page is shown below:
 
-{% embed_all interactivity-drill-down-simple-drill-down-example-1.js }
+{% embed_all {"source": "interactivity-drill-down-simple-drill-down-example-1.js", "id": "1"} %}
 
 In the above chart, every time any of the three data plots is clicked, the user is navigated to the FusionCharts home page, which opens in the same page.
 
@@ -64,7 +64,7 @@ All server-side scripting languages provide a generic function to URL Encode any
 
 A column 2d chart configured with simple links that open in a new page is shown below:
 
-{% embed_all interactivity-drill-down-simple-drill-down-example-2a.js }
+{% embed_all {"source": "interactivity-drill-down-simple-drill-down-example-2a.js", "id": "2"} %}
 
 Every time any of the three data plots is clicked, the FusionCharts home page opens in a new tab of the browser.
 

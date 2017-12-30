@@ -30,7 +30,7 @@ Assume that you have a __fusioncharts_jspsample__ database with the __Country__ 
 
 The resultant column 2D chart looks like this:
 
-{% embed_chart using-with-server-side-languages-java-creating-charts-with-data-from-a-database-example-1.js }
+{% embed_chart {"source": "using-with-server-side-languages-java-creating-charts-with-data-from-a-database-example-1.js", "id": "1"} %}
 
 The data structure to create this chart, by fetching chart data from a database, is given below:
 
@@ -179,7 +179,7 @@ Drill-down charts are used to show data at different levels of a hierarchy.
 
 Therefore, the resultant drill-down chart, according to the use-case, looks like this:
 
-{% embed_chart using-with-server-side-languages-java-creating-charts-with-data-from-a-database-example-2.js }
+{% embed_chart {"source": "using-with-server-side-languages-java-creating-charts-with-data-from-a-database-example-2.js", "id": "2"} %}
 
 To render the above chart, we need a JSP files —__country.jsp__. The __country.jsp__ file creates a drill-down column 2D chart showing the most populous countries and the most populous cities for countries that will be selected in the parent chart.
 
