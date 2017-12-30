@@ -62,11 +62,11 @@ This can be done by defining new IDs for entities within the `entitydef` array a
 
 The data structure of a world map with new IDs set is shown below
 
-{% embed_data {"source": "map-guide-custom-entity-ids.js"} %}
+{% embed_data map-guide-custom-entity-ids.js }
 
 With the newly defined custom entity IDs, the map looks like this:
 
-{% embed_chart {"source": "map-guide-custom-entity-ids.js", "id": "1"} %}
+{% embed_chart map-guide-custom-entity-ids.js }
 
 <p class="text-info">When defining new IDs for different entities on the map, ensure that you're referring to the right original internal ID. Also ensure that the redefined entity IDs are unique.</p>
 

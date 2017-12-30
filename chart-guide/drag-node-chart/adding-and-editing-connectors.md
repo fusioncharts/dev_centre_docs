@@ -16,7 +16,7 @@ In this section, you will be shown how you can:
 
 To understand this, the sample chart that we will use looks like this:
 
-{% embed_all {"source": "chart-guide-drag-node-chart-adding-and-editing-connectors-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-drag-node-chart-adding-and-editing-connectors-example-1.js }
 
 The above chart shows the US Subway Map and uses drag-able nodes to mark locations on the map.
 

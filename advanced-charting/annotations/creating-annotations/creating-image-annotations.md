@@ -16,7 +16,7 @@ chartPresent: true
 
 A column 2D chart rendered using image annotations is shown below:
 
-{% embed_chart {"source": "advanced-charting-annotations-creating-annotations-creating-image-annotations-example-1.js", "id": "1"} %}
+{% embed_chart advanced-charting-annotations-creating-annotations-creating-image-annotations-example-1.js }
 
 In this chart, images of brands are shown instead of the conventional 2D column data plots. Using these annotations makes the chart more intuitive while also increasing its visual appeal. Imagine how easy it becomes for your audience to read data in a chart like this, especially if the data is for a large number of brands.
 
@@ -95,4 +95,4 @@ Chart rendering does not pause for the images to load and, therefore, asynchrono
 
 The complete data structure for the column 2D chart with image annotations is given below:
 
-{% embed_data {"source": "advanced-charting-annotations-creating-annotations-creating-image-annotations-example-1.js"} %}
+{% embed_data advanced-charting-annotations-creating-annotations-creating-image-annotations-example-1.js }

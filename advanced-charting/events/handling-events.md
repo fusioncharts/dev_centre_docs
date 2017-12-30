@@ -19,11 +19,11 @@ A simple example to understand this would be to use the `renderComplete` event t
 
 Start with a simple column 2D chart, as shown below:
 
-{% embed_chart {"source": "advanced-charting-events-handling-events-example-1.js", "id": "1"} %}
+{% embed_chart advanced-charting-events-handling-events-example-1.js }
 
 The data structure for this column 2D chart is given below:
 
-{% embed_data {"source": "advanced-charting-events-handling-events-example-1.js"} %}
+{% embed_data advanced-charting-events-handling-events-example-1.js }
 
 Now, read on to understand how the `renderComplete` event will be handled for the above column 2D chart.
 
@@ -76,7 +76,7 @@ revenueChart.addEventListener(“renderComplete”, myEventListener);
 
 Your column 2D chart is now configured to listen to the `renderComplete` event.
 
-{% embed_chart {"source": "advanced-charting-events-handling-events-example-2.js", "id": "2"} %}
+{% embed_chart advanced-charting-events-handling-events-example-2.js }
 
 Open the JavaScript console (the listener function is configured to log a message in the console) to see the following message:
 

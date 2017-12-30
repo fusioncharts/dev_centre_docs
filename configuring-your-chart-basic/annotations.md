@@ -77,7 +77,7 @@ Shown below is a code snippet showing a the structure of a simple `annotations` 
 
 The simplest type of annotation is a line shaped annotation. The chart shown below has a simple dashed line and a label that highlights the point with the highest value over the week
 
-{% embed_all {"source": "configuring-your-chart-annotations-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-annotations-example-1.js }
 
 The attributes used to customize the annotation are:
 
@@ -131,7 +131,7 @@ The attributes used to customize the annotation are:
 
 The same annotation as shown above can be drawn using a circle that shows the highest value for the week. The chart looks like this
 
-{% embed_all {"source": "configuring-your-chart-annotations-example-10.js", "id": "2"} %}
+{% embed_all configuring-your-chart-annotations-example-10.js }
 
 Given below is the list of attributes used to draw and configure a circle annotation:
 
@@ -184,7 +184,7 @@ Given below is the list of attributes used to draw and configure a circle annota
 
 You can specify the url to an image instead of a shape. Shown below is an example where images are used for the annotations
 
-{% embed_all {"source": "configuring-your-chart-annotations-example-11.js", "id": "3"} %}
+{% embed_all configuring-your-chart-annotations-example-11.js }
 
 Given below is the list of attributes used to configure an image annotation:
 
@@ -219,7 +219,7 @@ It may be required at times to scale images based on chart specific requirements
 
 Shown here is an example where the images are scaled
 
-{% embed_all {"source": "configuring-your-chart-annotations-example-2.js", "id": "4"} %}
+{% embed_all configuring-your-chart-annotations-example-2.js }
 
 Given below is a brief description of the attributes used to scaling in an image annotation
 
@@ -244,7 +244,7 @@ Given below is a brief description of the attributes used to scaling in an image
 
 Shown here is a simple annotation with some text in a spline chart
 
-{% embed_all {"source": "configuring-your-chart-annotations-example-3.js", "id": "5"} %}
+{% embed_all configuring-your-chart-annotations-example-3.js }
 
 These are the attributes that help customize annotation text:
 

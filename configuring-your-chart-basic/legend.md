@@ -44,7 +44,7 @@ FusionCharts Suite XT supports legend interactivity. One of the features that co
 
 In the live chart shown below, when the legend icon for __Last Year__ is clicked, all data plots in blue, showing the quarterly revenue for the last year, are hidden.
 
-{% embed_all {"source": "configuring-your-chart-legend-example-10.js", "id": "10"} %}
+{% embed_all configuring-your-chart-legend-example-10.js }
 
 ## Highlighting the corresponding data series when a legend text is hovered over
 
@@ -52,7 +52,7 @@ Starting FusionCharts Suite XT v3.10.0, FusionCharts has introduced a new legend
 
 For example, in the chart shown below, when the mouse pointer is hovered over the legend text __This Year__, the data plots in blue (corresponding to __Last Year__) fadeout and the data plots in green (corresponding to __This Year__) are highlighted.
 
-{% embed_all {"source": "configuring-your-chart-legend-example-11.js", "id": "11"} %}
+{% embed_all configuring-your-chart-legend-example-11.js }
 
 Given below is a brief description of the attribute used to enable this feature:
 
@@ -74,7 +74,7 @@ Instead of just reducing the opacity of the data plots that don't correspond to 
 
 Take a look at the sample chart shown below:
 
-{% embed_all {"source": "configuring-your-chart-legend-example-12.js", "id": "12"} %}
+{% embed_all configuring-your-chart-legend-example-12.js }
 
 In this chart, when the mouse pointer is hovered over the legend text __This Year__, data plots belonging to the __Last Year__ data series are grayed out. 
 
@@ -154,7 +154,7 @@ In addition, the following attributes can also be used to customize the highligh
 
 A multi-series column 2D chart with the legend positioned in the right looks as below:
 
-{% embed_all {"source": "configuring-your-chart-legend-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-legend-example-1.js }
 
 The attribute to set legend position is as mentioned below.
 
@@ -178,7 +178,7 @@ The attribute to set legend position is as mentioned below.
 
 A multi-series column 2D chart with legend icon size changed to '**2'** looks as below:
 
-{% embed_all {"source": "configuring-your-chart-legend-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-legend-example-2.js }
 
 The attribute to configure legend icon size is detailed below:
 
@@ -198,7 +198,7 @@ The attribute to configure legend icon size is detailed below:
 
 A multi-series column 2D chart with a custom legend icon shape looks as below:
 
-{% embed_all {"source": "configuring-your-chart-legend-example-9.js", "id": "9"} %}
+{% embed_all configuring-your-chart-legend-example-9.js }
 
 Given below are the attributes used to draw a custom legend icon shape:
 
@@ -248,7 +248,7 @@ If you have multiple data items in a multi-series chart, the legend automaticall
 
 A multi-series column 2D chart with customized cosmetic properties of the legend scroll bar looks as below:
 
-{% embed_all {"source": "configuring-your-chart-legend-example-3.js", "id": "3"} %}
+{% embed_all configuring-your-chart-legend-example-3.js }
 
 The list of the attributes used to customize cosmetic properties of the legend scroll bar is mentioned below:
 
@@ -268,7 +268,7 @@ The list of the attributes used to customize cosmetic properties of the legend s
 
 A multi-series column 2D chart with the order of legend items reversed looks as below:
 
-{% embed_all {"source": "configuring-your-chart-legend-example-4.js", "id": "4"} %}
+{% embed_all configuring-your-chart-legend-example-4.js }
 
 The attribute to reverse legend order is mentioned below:
 
@@ -288,7 +288,7 @@ The attribute to reverse legend order is mentioned below:
 
 A multi-series column 2D chart with legend hidden looks as below:
 
-{% embed_all {"source": "configuring-your-chart-legend-example-5.js", "id": "5"} %}
+{% embed_all configuring-your-chart-legend-example-5.js }
 
 The attribute to show or hide a legend is mentioned in the table below:
 
@@ -308,7 +308,7 @@ The attribute to show or hide a legend is mentioned in the table below:
 
 A multi-series column 2D chart with one data series hidden looks as below:
 
-{% embed_all {"source": "configuring-your-chart-legend-example-6.js", "id": "6"} %}
+{% embed_all configuring-your-chart-legend-example-6.js }
 
 Given below is the attribute used to initially hide a dataset on chart loading:
 
@@ -328,7 +328,7 @@ Given below is the attribute used to initially hide a dataset on chart loading:
 
 A multi-series column 2D chart legend with customized appearance looks as below:
 
-{% embed_all {"source": "configuring-your-chart-legend-example-7.js", "id": "7"} %}
+{% embed_all configuring-your-chart-legend-example-7.js }
 
 Given below is the list of attributes used to customize the legend appearance:
 
@@ -377,7 +377,7 @@ Given below is the list of attributes used to customize the legend appearance:
 
 A multi-series column 2D chart legend with customized font cosmetics looks as below:
 
-{% embed_all {"source": "configuring-your-chart-legend-example-8.js", "id": "8"} %}
+{% embed_all configuring-your-chart-legend-example-8.js }
 
 Given below is the list of attributes used to customize the legend font cosmetics:
 

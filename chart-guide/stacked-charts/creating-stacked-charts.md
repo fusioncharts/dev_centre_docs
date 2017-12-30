@@ -38,7 +38,7 @@ As an example, we will create a stacked column 2D chart to plot the revenue spli
 
 The stacked column 2D chart thus created looks like this:
 
-{% embed_all {"source": "chart-guide-stacked-charts-creating-stacked-charts-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-stacked-charts-creating-stacked-charts-example-1.js }
 
 In the above stacked chart, the data plots for each category are rendered using two distinct colors to help interpretation. The data plots for non-food products are stacked above the data plots for food products, instead of alongside as in multi-series charts.
 

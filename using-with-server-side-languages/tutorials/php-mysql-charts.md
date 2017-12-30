@@ -396,6 +396,6 @@ The code which interacts with the PHP server implemented above and renders the c
 
 Now load the HTML in the browser using the URL: _http://localhost/chart_sample.html_ and you will get the below chart:
 
-{% embed_chart {"source": "php-mysql-charts-example-1.js", "id": "1"} %}
+{% embed_chart php-mysql-charts-example-1.js }
 
 **Note:** You can download the complete sample as a zip from [here](http://www.fusioncharts.com/downloads/samples/interactive_php_mysql_charts.zip) and unzip it in the **BITNAMI_INSTALL_DIR\apache2\htdocs** folder to get the sample running.

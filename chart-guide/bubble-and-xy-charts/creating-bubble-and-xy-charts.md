@@ -20,7 +20,7 @@ Scatter charts are used for plotting data that is defined in terms of two numeri
 
 A simple scatter chart looks like this:
 
-{% embed_all {"source": "chart-guide-bubble-and-xy-charts-creating-bubble-and-xy-charts-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-bubble-and-xy-charts-creating-bubble-and-xy-charts-example-1.js }
 
 The above scatter chart is plotted for two numeric values - the average day temperature (plotted on the x-axis and the sales (in USD) of beer and ice-cream (plotted on the y-axis); the chart shows how the temperature affects the sales revenue of beer and ice-cream.
 
@@ -32,7 +32,7 @@ Bubble charts are used for plotting data that is defined in terms of three numer
 
 A simple bubble chart looks like this:
 
-{% embed_all {"source": "chart-guide-bubble-and-xy-charts-creating-bubble-and-xy-charts-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-bubble-and-xy-charts-creating-bubble-and-xy-charts-example-2.js }
 
 The JSON/XML format of a bubble chart is slightly different from that of a scatter chart, this is because the bubble chart plots an additional numeric parameter.
 

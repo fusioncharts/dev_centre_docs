@@ -8,11 +8,11 @@ chartPresent: true
 
 With FusionCharts Suite XT, you can now define marker size based on associated data values. Earlier, we looked at an example of the 5 busiest airports in the world in the {% linkTo tutorials/map-guide/adding-markers.md %} section. Building on the same example, we can configure the size of the marker to be defined by the data value associated with the marker. In the chart below, the size of the marker is proportional to the total passenger traffic for the airport.
 
-{% embed_chart {"source": "map-guide-data-driven-markers.js", "id": "1"} %}
+{% embed_chart map-guide-data-driven-markers.js }
 
 This is the data structure when you convert it to the FusionCharts Suite XT XML/JSON format
 
-{% embed_data {"source": "map-guide-data-driven-markers.js"} %}
+{% embed_data map-guide-data-driven-markers.js }
 
 This is what we did in the above data structure
 

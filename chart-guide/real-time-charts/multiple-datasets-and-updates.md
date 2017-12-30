@@ -18,7 +18,7 @@ In this section, you will be shown how you can:
 
 A real-time column chart that compares the retail and online store transactions at Harry’s SuperMart looks like this:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-multiple-datasets-and-updates-example-1.js", "id": "1"} %}
+{% embed_all advanced-charting-real-time-charts-multiple-datasets-and-updates-example-1.js }
 
 As seen, the above chart is plotted for two datasets - retail store transactions and online transactions.
 In the above data, the `dataStreamURL` attribute is used to set `advance-charting-real-time-charts-multiple-datasets-and-updates-php-1.php` as the data provider page.
@@ -83,7 +83,7 @@ When providing multiple values, values within a dataset should be comma-separate
 
 A real-time chart with multiple updates for each dataset sent at one time looks like this:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-multiple-datasets-and-updates-example-1.js", "id": "2"} %}
+{% embed_all advanced-charting-real-time-charts-multiple-datasets-and-updates-example-1.js }
 
 In the above data, the `dataStreamURL` attribute is used to set `advance-charting-real-time-charts-multiple-datasets-and-updates-php-1.php` as the data provider page.
 

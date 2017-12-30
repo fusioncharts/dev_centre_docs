@@ -31,7 +31,7 @@ alert(JSON.stringify(jsonRtn));
 
 To understand this, the sample drag-node chart we will use looks like this:
 
-{% embed_all {"source": "chart-guide-drag-node-chart-getting-data-using-javascript-example.js", "id": "1"} %}
+{% embed_all chart-guide-drag-node-chart-getting-data-using-javascript-example.js }
 
 
 

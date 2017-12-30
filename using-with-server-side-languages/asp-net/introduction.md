@@ -20,7 +20,7 @@ In this section, you will be shown how you can create a simple chart using the F
 
 A column 3D chart that shows the monthly revenue for the last year at Harry’s SuperMart is shown below:
 
-{% embed_chart {"source": "using-with-server-side-languages-asp-net-introduction-example-1.js", "id": "1"} %}
+{% embed_chart using-with-server-side-languages-asp-net-introduction-example-1.js }
 
 As an example, we will try to create this chart using the ASP.NET wrapper.
 

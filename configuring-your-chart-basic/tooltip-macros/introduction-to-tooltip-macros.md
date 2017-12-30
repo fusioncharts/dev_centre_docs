@@ -21,11 +21,11 @@ This article focuses on how macros can be used to customize the tooltip text for
 
 In the column 2D chart shown below, hover the mouse pointer over any of  the data plots to see the default tooltip text:
 
-{% embed_all {"source": "configuring-your-chart-tooltip-macros-introduction-to-tooltip-macros-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-tooltip-macros-introduction-to-tooltip-macros-example-1.js }
 
 Now, look at the tooltip text for the data plots in the column 2D chart below:
 
-{% embed_all {"source": "configuring-your-chart-tooltip-macros-introduction-to-tooltip-macros-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-tooltip-macros-introduction-to-tooltip-macros-example-2.js }
 
 The tooltip text for the second chart is configured using tooltip macros. The `plotToolText` attribute is used to set a custom tooltip, using macros, and format it, using HTML tags, as shown in the code snippet below:
 

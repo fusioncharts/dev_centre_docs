@@ -14,9 +14,9 @@ The FusionCharts jQuery helper makes it easy to select FusionCharts Suite XT cha
 
 Using the `:FusionCharts` jQuery Selector, you can select all FusionCharts Suite XT charts rendered in a HTML page. For instance, clicking the "Apply Theme" button in the column chart shown below changes the theme for the pie chart (further down in this page) also. This is because the `:FusionCharts` selector selects all the charts in the page. This is useful for making changes across multiple charts in an entire page.
 
-{% embed_chart {"source": "using-with-javascript-libraries-jquery-selecting-charts-using-jquery-example-1.js", "id": "1"} %}
+{% embed_chart using-with-javascript-libraries-jquery-selecting-charts-using-jquery-example-1.js }
 
-{% embed_chart {"source": "using-with-javascript-libraries-jquery-selecting-charts-using-jquery-example-2.js", "id": "2"} %}
+{% embed_chart using-with-javascript-libraries-jquery-selecting-charts-using-jquery-example-2.js }
 
 The code snippet for selecting all charts is shown below:
 

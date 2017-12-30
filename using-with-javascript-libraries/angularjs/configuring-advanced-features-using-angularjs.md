@@ -28,7 +28,7 @@ Trend-lines are horizontal or vertical reference lines that can be used to defin
 
 Look at the column 2D chart shown below:
 
-{% embed_chart {"source": "using-with-javascript-libraries-angularjs-configuring-advanced-features-using-angularjs-example-1.js", "id": "1"} %}
+{% embed_chart using-with-javascript-libraries-angularjs-configuring-advanced-features-using-angularjs-example-1.js }
 
 The line labeled **Target - $175K** is a trend-line that is used as a reference to see if the sales target for a quarter has been achieved.
 
@@ -84,13 +84,13 @@ Annotations are graphical elements (for example, different types of shapes, cust
 
 A column 2D chart rendered with annotations is shown below:
 
-{% embed_chart {"source": "using-with-javascript-libraries-angularjs-configuring-advanced-features-using-angularjs-example-2.js", "id": "2"} %}
+{% embed_chart using-with-javascript-libraries-angularjs-configuring-advanced-features-using-angularjs-example-2.js }
 
 The text **Promotional activities for Butterfinger made it surpass Snickers, the highest selling brand for 3 years** in the above chart is an annotation of type text, the rectangle around this text is a rectangle annotation, and the chocolate bars are image annotations.
 
 A column 2D chart, without these annotations, is shown below:
 
-{% embed_chart {"source": "using-with-javascript-libraries-angularjs-configuring-advanced-features-using-angularjs-example-3.js", "id": "3"} %}
+{% embed_chart using-with-javascript-libraries-angularjs-configuring-advanced-features-using-angularjs-example-3.js }
 
 The HTML code to create the chart with annotations is given below:
 

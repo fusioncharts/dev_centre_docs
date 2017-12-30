@@ -30,7 +30,7 @@ In this section, you will be shown how you can:
 
 A column 2D chart configured with links that open in a pop-up window is shown below:
 
-{% embed_all {"source": "interactivity-drill-down-opening-in-pop-up-or-frames-example-1.js", "id": "1"} %}
+{% embed_all interactivity-drill-down-opening-in-pop-up-or-frames-example-1.js }
 
 In the above chart, each time a data plot is clicked, the target URL configured for that data plot opens in a pop-up window.
 
@@ -144,7 +144,7 @@ FusionCharts Suite XT allows you to open links in specified frames on the web pa
 
 A column 2D chart configured with links that open in a frame is shown below:
 
-{% embed_all {"source": "interactivity-drill-down-opening-in-pop-up-or-frames-example-2.js", "id": "2"} %}
+{% embed_all interactivity-drill-down-opening-in-pop-up-or-frames-example-2.js }
 
 Given below is a brief description of how the `link` attribute is used to open links in frames:
 

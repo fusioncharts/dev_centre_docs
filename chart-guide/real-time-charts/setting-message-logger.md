@@ -227,7 +227,7 @@ When a chart (with `useMessageLog` set to `1`) accepts this data stream, the mes
 
 A real-time chart that plots the footfalls at Bakersfield Central is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-setting-message-logger-example-1.js", "id": "1"} %}
+{% embed_all advanced-charting-real-time-charts-setting-message-logger-example-1.js }
 
 We have configured this chart to display an `ERROR` message in the message logger whenever the number of footfalls goes below 9. Open the message logger to look at the messages displayed for each real-time update.
 
@@ -277,7 +277,7 @@ You can pass the entire (or partial) message envelope to custom JavaScript funct
 
 A real-time column chart configured to pass all parameters from the message envelope to your custom JavaScript function is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-setting-message-logger-example-2.js", "id": "2"} %}
+{% embed_all advanced-charting-real-time-charts-setting-message-logger-example-2.js }
 
 The `useMessageLog`, `messageGoesToJS`, `messageJSHandler`, and `messagePassAllToJS` attributes (described earlier in this article) are used to pass all parameters from the message envelope to your function.
 

@@ -28,7 +28,7 @@ In this section, you will be shown how the FusionCharts PHP wrapper uses each of
 
 An area chart, the data for which is loaded from a static JSON string, is shown below:
 
-{% embed_chart {"source": "using-with-server-side-languages-php-different-ways-of-loading-data-example-1a.js", "id": "1"} %}
+{% embed_chart using-with-server-side-languages-php-different-ways-of-loading-data-example-1a.js }
 
 The data structure needed to render the above chart is given below:
 
@@ -90,7 +90,7 @@ The data structure needed to render the above chart is given below:
 
 A line chart, the data for which is loaded from a static XML string, is shown below:
 
-{% embed_chart {"source": "using-with-server-side-languages-php-different-ways-of-loading-data-example-1.js", "id": "2"} %}
+{% embed_chart using-with-server-side-languages-php-different-ways-of-loading-data-example-1.js }
 
 The data structure needed to render the above chart is given below:
 
@@ -132,7 +132,7 @@ The data structure needed to render the above chart is given below:
 
 A pie 2D chart, the data for which is loaded from an associative array, is shown below:
 
-{% embed_chart {"source": "using-with-server-side-languages-php-different-ways-of-loading-data-example-2.js", "id": "3"} %}
+{% embed_chart using-with-server-side-languages-php-different-ways-of-loading-data-example-2.js }
 
 The data structure needed to render the above chart is given below:
 
@@ -211,7 +211,7 @@ The data structure needed to render the above chart is given below:
 
 A bar 2D chart, the data for which is generated from an associative array, is shown below:
 
-{% embed_chart {"source": "using-with-server-side-languages-php-different-ways-of-loading-data-example-3.js", "id": "4"} %}
+{% embed_chart using-with-server-side-languages-php-different-ways-of-loading-data-example-3.js }
 
 The data structure needed to render the above chart is given below:
 
@@ -319,7 +319,7 @@ Given below are a few tips that, although applicable while coding for the entire
     <td><strong>Single-series Chart</strong></td>
 </tr>
 <tr>
-    <td>{% embed_data {"source": "using-with-server-side-languages-php-different-ways-of-loading-data-example-4.js"} %}
+{% embed_data using-with-server-side-languages-php-different-ways-of-loading-data-example-4.js }
 For an example, click [here]{% linkTo tutorials/chart-guide/standard-charts/creating-standard-charts.md %} (For XML - check the data under the XML tab).
     </td>
     </tr>
@@ -327,7 +327,7 @@ For an example, click [here]{% linkTo tutorials/chart-guide/standard-charts/crea
         <td><strong>Multi-series Chart</strong></td>
     </tr>
     <tr>
-    <td>{% embed_data {"source": "using-with-server-side-languages-php-different-ways-of-loading-data-example-5.js"} %}
+{% embed_data using-with-server-side-languages-php-different-ways-of-loading-data-example-5.js }
 For an example, click [here]{% linkTo tutorials/chart-guide/multi-series-charts/creating-multi-series-charts.md %} (For XML - check the data under the XML tab).
     </td>
 </tr>

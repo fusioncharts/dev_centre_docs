@@ -118,8 +118,8 @@ function modifyDataplot(){
 
 You can notice that the above chart is being rendered at HTML component with id 'api-chart-container'. The event handlers have been setup for each of the buttons but the implementations of the event handlers have been left empty and will be implemented in the rest of the article. Loading the HTML in the browser gives us the below result:
 
-{% embed_chart {"source": "basic-chart-configuration-tutorials-example-8.js", "id": "8"} %}
-{% embed_chart {"source": "basic-chart-configuration-tutorials-example-9.js", "id": "9"} %}
+{% embed_chart basic-chart-configuration-tutorials-example-8.js }
+{% embed_chart basic-chart-configuration-tutorials-example-9.js }
 
 Click <a href="http://jsfiddle.net/2r4732wj/8/" target="_blank">here</a> to view the above in JSFiddle.
 
@@ -167,8 +167,8 @@ You can see from the code above that the values for the chart properties are bei
 
 Loading the same HTML in the browser and clicking on the "__Modify Background__" button results in view as shown below:
 
-{% embed_chart {"source": "basic-chart-configuration-tutorials-example-8.js", "id": "10"} %}
-{% embed_chart {"source": "basic-chart-configuration-tutorials-example-10.js", "id": "11"} %}
+{% embed_chart basic-chart-configuration-tutorials-example-8.js }
+{% embed_chart basic-chart-configuration-tutorials-example-10.js }
 
 Click <a href="http://jsfiddle.net/2r4732wj/9/" target="_blank">here</a> to view the above in JSFiddle.
 
@@ -191,8 +191,8 @@ function modifyCanvas(){
 
 Loading the same HTML in the browser and clicking on the "__Modify Canvas__" button results in view as shown below:
 
-{% embed_chart {"source": "basic-chart-configuration-tutorials-example-8.js", "id": "12"} %}
-{% embed_chart {"source": "basic-chart-configuration-tutorials-example-11.js", "id": "13"} %}
+{% embed_chart basic-chart-configuration-tutorials-example-8.js }
+{% embed_chart basic-chart-configuration-tutorials-example-11.js }
 
 Click <a href="http://jsfiddle.net/2r4732wj/11/" target="_blank">here</a> to view the above in JSFiddle.
 
@@ -226,8 +226,8 @@ function modifyDataplot(){
 
 Loading the same HTML in the browser and clicking on the “Modify Data Plot” button results in view as shown below:
 
-{% embed_chart {"source": "basic-chart-configuration-tutorials-example-8.js", "id": "14"} %}
-{% embed_chart {"source": "basic-chart-configuration-tutorials-example-12.js", "id": "15"} %}
+{% embed_chart basic-chart-configuration-tutorials-example-8.js }
+{% embed_chart basic-chart-configuration-tutorials-example-12.js }
 
 
 Click <a href="http://jsfiddle.net/2r4732wj/11/" target="_blank">here</a> to view the above in JSFiddle.

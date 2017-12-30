@@ -32,7 +32,7 @@ Assume that you have a dashboard with a pie 2D and a column 2D chart to plot sal
 
 The dashboard looks as shown below:
 
-{% embed_chart {"source": "using-with-javascript-libraries-reactjs-including-interactivity-in-charts-using-reactjs-example-1.js", "id": "1"} %}
+{% embed_chart using-with-javascript-libraries-reactjs-including-interactivity-in-charts-using-reactjs-example-1.js }
 
 <p class="text-info">
 The complete code for this dashboard is given at the end of this article, after all steps have been explained.
