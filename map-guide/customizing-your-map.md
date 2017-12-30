@@ -30,7 +30,7 @@ FusionCharts Suite XT shows only the short names of the entities on the map by d
 
 A map with its full entity names displayed looks like the chart below. Here each of the continents are entities and their full names are part of the label.
 
-{% embed_chart {"source": "map-guide-world-population.js", "id": "1"} %}
+{% embed_chart map-guide-world-population.js %}
 
 The attributes used to customize this behavior are
 
@@ -52,13 +52,13 @@ The attributes used to customize this behavior are
 
 Given below is the data used to build the map
 
-{% embed_data {"source": "map-guide-world-population.js"} %}
+{% embed_data map-guide-world-population.js %}
 
 ## Showing values in labels
 
 You can set the entity label to show data values. In the chart below, we have configured the labels to show the population value along with the continent short name.
 
-{% embed_chart {"source": "map-guide-world-population-legend-with-icons.js", "id": "2"} %}
+{% embed_chart map-guide-world-population-legend-with-icons.js %}
 
 The attributes used to enable showing data values in labels are as follows:
 
@@ -80,13 +80,13 @@ The attributes used to enable showing data values in labels are as follows:
 
 Given below is the data used to build the map
 
-{% embed_data {"source": "map-guide-world-population-legend-with-icons.js"} %}
+{% embed_data map-guide-world-population-legend-with-icons.js %}
 
 ## Showing labels only for specific entities
 
 Labels are shown for all entities by default. It is possible to display labels only for specific entities of interest. In the example below we display labels for two most populous continents.
 
-{% embed_chart {"source": "map-guide-world-population-legend-with-icons-asia-africa.js", "id": "3"} %}
+{% embed_chart map-guide-world-population-legend-with-icons-asia-africa.js %}
 
 Here only Asia and Africa have their labels displayed while the other continents have no display text set for labels.
 
@@ -106,13 +106,13 @@ The attribute to configure display of labels is as follows:
 
 Given below is the data used to build the map
 
-{% embed_data {"source": "map-guide-world-population-legend-with-icons-asia-africa.js"} %}
+{% embed_data map-guide-world-population-legend-with-icons-asia-africa.js %}
 
 ## Customizing label display text
 
 It is also possible to use a completely customizable text to display for each specific entity. In the chart below we configure the data label of each continent as sparse, moderate or dense based on the population density.
 
-{% embed_chart {"source": "map-guide-world-population-legend-with-icons-density.js", "id": "4"} %}
+{% embed_chart map-guide-world-population-legend-with-icons-density.js %}
 
 The attribute used to define the display text for labels is as follows:
 
@@ -130,13 +130,13 @@ The attribute used to define the display text for labels is as follows:
 
 The data used to build this map is given below
 
-{% embed_data {"source": "map-guide-world-population-legend-with-icons-density.js"} %}
+{% embed_data map-guide-world-population-legend-with-icons-density.js %}
 
 ## Customising fonts
 
 You can customize font-related properties for each entity. In this example the font is set to __Helvetica__ and the size of the label name is proportional to the value of each entity.
 
-{% embed_chart {"source": "map-guide-world-population-legend-with-icons-custom-fonts.js", "id": "5"} %}
+{% embed_chart map-guide-world-population-legend-with-icons-custom-fonts.js %}
 
 The attributes used for customizing label fonts are as follows:
 
@@ -166,13 +166,13 @@ The attributes used for customizing label fonts are as follows:
 
 Given below is the data used to build the map
 
-{% embed_data {"source": "map-guide-world-population-legend-with-icons-custom-fonts.js"} %}
+{% embed_data map-guide-world-population-legend-with-icons-custom-fonts.js %}
 
 ## Using short names in tooltips
 
 Tooltips in maps show the full name of the entity along with the value by default. The tooltip can be configured to show only the short name. In the chart below, we have set the labels to show the entity full names and the tooltip shows the short name.
 
-{% embed_chart {"source": "map-guide-world-population-legend-with-icons-sname.js", "id": "6"} %}
+{% embed_chart map-guide-world-population-legend-with-icons-sname.js %}
 
 The attribute used to customize tooltips is explained here
 
@@ -190,13 +190,13 @@ The attribute used to customize tooltips is explained here
 
 Given below is the data used to build the map
 
-{% embed_data {"source": "map-guide-world-population-legend-with-icons-sname.js"} %}
+{% embed_data map-guide-world-population-legend-with-icons-sname.js %}
 
 ## Turning off entity tooltips
 
 In FusionCharts Suite XT, tooltips are on by default but can be turned off for entities. Tooltips have been removed for the chart below.
 
-{% embed_chart {"source": "map-guide-world-population-legend-with-icons-entitytooltip.js", "id": "7"} %}
+{% embed_chart map-guide-world-population-legend-with-icons-entitytooltip.js %}
 
 The attribute to configure tooltip display behaviour is as follows:
 
@@ -214,13 +214,13 @@ The attribute to configure tooltip display behaviour is as follows:
 
 The data that is used to build this map is shown here
 
-{% embed_data {"source": "map-guide-world-population-legend-with-icons-entitytooltip.js"} %}
+{% embed_data map-guide-world-population-legend-with-icons-entitytooltip.js %}
 
 ## Handling null entities
 
 It is likely that all entities within a map don't have an associated value (or have a null value). Such entities can be customized by modifying the transparency, color and hover effects. The chart below shows a sales tracker across continents with some entities having a null value.
 
-{% embed_chart {"source": "map-guide-world-population-legend-with-icons-nullentity.js", "id": "8"} %}
+{% embed_chart map-guide-world-population-legend-with-icons-nullentity.js %}
 
 The attributes used to configure null entities are mentioned below:
 
@@ -246,5 +246,5 @@ The attributes used to configure null entities are mentioned below:
 
 The data for this chart is shown below
 
-{% embed_data {"source": "map-guide-world-population-legend-with-icons-nullentity.js"} %}
+{% embed_data map-guide-world-population-legend-with-icons-nullentity.js %}
 

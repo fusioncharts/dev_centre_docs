@@ -34,7 +34,7 @@ The above command clears all the data that is currently being shown on the chart
 
 A real-time chart that clears all its data after every 10th update looks like this:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-clearing-chart-view-example-1.js", "id": "1"} %}
+{% embed_all advanced-charting-real-time-charts-clearing-chart-view-example-1.js %}
 
 
 
@@ -50,7 +50,7 @@ Real-time charts allow you to set a predefined interval in the JSON/XML data to 
 
 A real-time column chart configured to do this looks like this:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-clearing-chart-view-example-2.js", "id": "2"} %}
+{% embed_all advanced-charting-real-time-charts-clearing-chart-view-example-2.js %}
 
 Given below is a brief description of the attribute used to set the predefined interval:
 
@@ -82,7 +82,7 @@ Real-time charts expose a JavaScript API that enables you to clear charts at the
 
 A real-time column chart that is configured to be cleared using the JavaScript API after every 10th update looks like this:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-clearing-chart-view-example-3.js", "id": "3"} %}
+{% embed_all advanced-charting-real-time-charts-clearing-chart-view-example-3.js %}
 
 In the above data, the `chartRef` variable is used to get the chart reference. The `clearChart()` method is then called using the `chartRef` variable.
 

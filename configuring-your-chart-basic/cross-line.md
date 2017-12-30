@@ -24,7 +24,7 @@ In multi-series charts, when you hover on the chart canvas a color band appears 
 
 You can customize the color of the trend band using `crossLineColor` attribute. A multi series column chart with a customized band color looks as shown below:
 
-{% embed_all {"source": "configuring-your-chart-cross-line-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-cross-line-example-1.js %}
 
 Given below is the attribute used to customize the color of the cross line:
 
@@ -64,7 +64,7 @@ FusionCharts allows you to control the animation for the cross line of the chart
 
 If the animation is enabled, you can also set the animation duration for the cross line of your chart. A multi-series area chart with animation looks as below:
 
-{% embed_all {"source": "configuring-your-chart-cross-line-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-cross-line-example-2.js %}
 
 Given below are the attributes used to enable/disable animation and set the animation duration for the cross line:
 
@@ -87,7 +87,7 @@ Given below are the attributes used to enable/disable animation and set the anim
 
 Tooltip is a common element, used to display information when you hover on a particular data point. A consolidated tooltip has been introduced with the cross line which can be used in multi-series charts to get the detailed information of the hovered plots. A multi-series line chart with a consolidated tooltip looks as shown below:
 
-{% embed_all {"source": "configuring-your-chart-cross-line-example-3.js", "id": "3"} %}
+{% embed_all configuring-your-chart-cross-line-example-3.js %}
 
 In the above chart, by default the `plotColorInTooltip` attribute has been set to `1`. Set plotColorInTooltip: `0`, to turn off the color of the plot in the tooltip as shown in the image below:
 

@@ -28,7 +28,7 @@ As an example, we will create a radar chart that plots the results of a customer
 
 The radar chart thus created looks like this:
 
-{% embed_all {"source": "chart-guide-radar-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-radar-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to create a radar chart:
 

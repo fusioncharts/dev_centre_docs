@@ -44,7 +44,7 @@ The 24-hour clock is a convention of time-keeping in which the day runs from mid
 
 A Gantt chart configured for the input time format looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-date-formats-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-date-formats-example-1.js %}
 
 Given below is a brief description of the attributes used to set the input time format:
 
@@ -70,7 +70,7 @@ You can configure the output date format to be different from the input date for
 
 A Gantt chart with the output date format configured looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-date-formats-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-date-formats-example-2.js %}
 
 Given below is a brief description of the attribute used to set the output date format:
 

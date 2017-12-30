@@ -24,7 +24,7 @@ By default, the auto-generated percentage values for the line chart are not rend
 
 A pareto chart configured to render the percentage values for the line chart looks like this:
 
-{% embed_all {"source": "chart-guide-pareto-chart-configuring-a-pareto-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-pareto-chart-configuring-a-pareto-chart-example-1.js %}
 
 Given below is a brief description of the attribute that is used to show data values for the line series:
 
@@ -44,7 +44,7 @@ Given below is a brief description of the attribute that is used to show data va
 
 A pareto chart with the line segments customized looks like this:
 
-{% embed_all {"source": "chart-guide-pareto-chart-configuring-a-pareto-chart-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-pareto-chart-configuring-a-pareto-chart-example-2.js %}
 
 Given below is a brief description of the attributes used to customize the line segments:
 
@@ -84,7 +84,7 @@ Given below is a brief description of the attributes used to customize the line 
 
 A pareto chart with the secondary y-axis values hidden looks like this:
 
-{% embed_all {"source": "chart-guide-pareto-chart-configuring-a-pareto-chart-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-pareto-chart-configuring-a-pareto-chart-example-3.js %}
 
 Given below is a brief description of the attributes used to hide the secondary y-axis values:
 

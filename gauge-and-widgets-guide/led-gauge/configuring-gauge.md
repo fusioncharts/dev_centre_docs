@@ -32,7 +32,7 @@ In this section, you will be shown how you can:
 
 A LED gauge with the background color configured looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-configuring-gauge-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-led-gauge-configuring-gauge-example-1.js %}
 
 Given below is a brief description of the attribute used to configure the background color:
 
@@ -54,7 +54,7 @@ When you divide the LED scale into color ranges, the LED bars in each zone take 
 
 A LED gauge rendered with a single color for the LED fill and background looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-configuring-gauge-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-led-gauge-configuring-gauge-example-2.js %}
 
 Given below is a brief description of the attributes used to apply a single color for the LED fill and the LED background::
 
@@ -78,7 +78,7 @@ Given below is a brief description of the attributes used to apply a single colo
 
 A LED gauge rendered with the border hidden looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-configuring-gauge-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-led-gauge-configuring-gauge-example-3.js %}
 
 Given below is a brief description of the attribute used to show/hide the LED gauge border:
 
@@ -98,7 +98,7 @@ Given below is a brief description of the attribute used to show/hide the LED ga
 
 A LED gauge rendered with a customized border looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-configuring-gauge-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-led-gauge-configuring-gauge-example-4.js %}
 
 Given below is a brief description of the attributes used to customize the gauge border:
 
@@ -128,7 +128,7 @@ By default, the gauge determines the bar size and the gap automatically, based o
 
 A LED gauge configured for the LED bar size and gap looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-configuring-gauge-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-led-gauge-configuring-gauge-example-5.js %}
 
 Given below is a brief description of the attributes used to configure the LED bar size and gap:
 
@@ -154,7 +154,7 @@ Given below is a brief description of the attributes used to configure the LED b
 
 An LED gauge rendered with the chart value hidden looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-configuring-gauge-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-led-gauge-configuring-gauge-example-6.js %}
 
 Given below is a brief description of the attribute used to show/hide the chart value:
 
@@ -174,7 +174,7 @@ Given below is a brief description of the attribute used to show/hide the chart 
 
 An LED gauge with the tick marks and tick values hidden looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-configuring-gauge-example-7.js", "id": "7"} %}
+{% embed_all gauge-and-widgets-guide-led-gauge-configuring-gauge-example-7.js %}
 
 Given below is a brief description of the attributes used to show/hide tick marks and tick values:
 
@@ -203,7 +203,7 @@ You can also configure the number of tick marks, set the tick marks and tick val
 
 A LED gauge with the tick marks and tick values configured looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-configuring-gauge-example-8.js", "id": "8"} %}
+{% embed_all gauge-and-widgets-guide-led-gauge-configuring-gauge-example-8.js %}
 
 Given below is a brief description of the attributes used to configure tick marks and tick values:
 
@@ -259,7 +259,7 @@ FusionCharts Suite XT also allows you to configure the cosmetics of major and mi
 
 A LED gauge rendered with customized major and minor tick marks looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-configuring-gauge-example-9.js", "id": "9"} %}
+{% embed_all gauge-and-widgets-guide-led-gauge-configuring-gauge-example-9.js %}
 
 Given below is a brief description of the attributes used to configure the major and minor tick marks:
 
@@ -301,7 +301,7 @@ FusionCharts Suite XT allows you to display hover effects for the gauge.
 
 An LED gauge configured for hover effects looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-configuring-gauge-example-10.js", "id": "10"} %}
+{% embed_all gauge-and-widgets-guide-led-gauge-configuring-gauge-example-10.js %}
 
 Given below is a brief description of the attribute used to enable the hover effect for the LED gauge:
 

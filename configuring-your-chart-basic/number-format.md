@@ -42,7 +42,7 @@ This section talks about:
 
 A column 2D chart with values rounded off to two decimal places looks as below:
 
-{% embed_all {"source": "configuring-your-chart-number-format-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-number-format-example-1.js %}
 
 Given below are the attributes used to configure decimal places:
 
@@ -74,7 +74,7 @@ Given below are the attributes used to configure decimal places:
 
 A column 2D chart with trailing zeroes will look as below:
 
-{% embed_all {"source": "configuring-your-chart-number-format-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-number-format-example-2.js %}
 
 Given below are the attribute needed to force trailing zeroes:
 
@@ -106,7 +106,7 @@ Given below are the attribute needed to force trailing zeroes:
 
 FusionCharts Suite XT automatically formats your numbers by adding K, M (Kilo, Million) and proper commas to the numbers. A column 2D chart with automatic number formatting will look as below:
 
-{% embed_all {"source": "configuring-your-chart-number-format-example-3.js", "id": "3"} %}
+{% embed_all configuring-your-chart-number-format-example-3.js %}
 
 In the above example, the data for chart is 12523, 14570.230, 17375 and 18235.79. FusionCharts Suite XT automatically formats the number scaling to convert to K (Thousands) & M (Millions).
 
@@ -158,7 +158,7 @@ If this attribute is not specifically mentioned, the chart inherits the default 
 
 By default, a '**.'** (dot) is used as decimal separator and a '**,'** (comma) is used as thousand separator character. A column 2D chart with the thousand and decimal separator characters swapped will look as below:
 
-{% embed_all {"source": "configuring-your-chart-number-format-example-4.js", "id": "4"} %}
+{% embed_all configuring-your-chart-number-format-example-4.js %}
 
 Given below are the attributes used to customize the thousand and decimal separator characters:
 
@@ -194,7 +194,7 @@ Given below are the attributes used to customize the thousand and decimal separa
 
 By default, a thousand separator character is placed in numbers greater than 999 after every third digit from the right. A column 2D chart with the thousand separator configured for multiple values will look as below:
 
-{% embed_all {"source": "configuring-your-chart-number-format-example-5.js", "id": "5"} %}
+{% embed_all configuring-your-chart-number-format-example-5.js %}
 
 Given below is the attribute used to configure the thousand position value:
 
@@ -218,7 +218,7 @@ Given below is the attribute used to configure the thousand position value:
 
 A column 2D chart with customized number prefix(set to $) and suffix(set to /day )looks as below:
 
-{% embed_all {"source": "configuring-your-chart-number-format-example-6.js", "id": "6"} %}
+{% embed_all configuring-your-chart-number-format-example-6.js %}
 
 Given below are the attributes used to customize the number prefix and suffix:
 
@@ -276,7 +276,7 @@ Let's start with the most basic example which is already defined in FusionCharts
 
 If you plot a chart with data as 1252322, 857023, 903753 and 1082357, the rendered chart looks as shown in the image below:
 
-{% embed_all {"source": "configuring-your-chart-number-format-example-7.js", "id": "7"} %}
+{% embed_all configuring-your-chart-number-format-example-7.js %}
 
 Notice that FusionCharts Suite XT has scaled the numbers down to K. By default, FusionCharts Suite XT has the K, M (1000, 1000) scaling defined for each chart. Given below is the attribute used to allow automatic scaling:
 
@@ -309,7 +309,7 @@ This scale, in human terms, will look something as under:
 
 If you now plot a chart containing data in billions, the rendered chart looks as shown in the image below:
 
-{% embed_all {"source": "configuring-your-chart-number-format-example-8.js", "id": "8"} %}
+{% embed_all configuring-your-chart-number-format-example-8.js %}
 
 Given below are the attributes used to add a billion scale:
 
@@ -335,7 +335,7 @@ Suppose we're plotting a chart which indicates the time taken by a list of autom
 
 What we can instead do is build a scale indicating time and then specify it to the chart. This scale, in human terms, will look something as under. A chart with the time scaled to minutes, hours or days looks as below:
 
-{% embed_all {"source": "configuring-your-chart-number-format-example-9.js", "id": "9"} %}
+{% embed_all configuring-your-chart-number-format-example-9.js %}
 
 
 
@@ -345,7 +345,7 @@ What we can instead do is build a scale indicating time and then specify it to t
 
 Let’s see another example. Suppose you're plotting a chart indicating free storage volume of a backup server over a span of 24 hours. The free storage volume can be from few bits to a few gigabytes. Again, you have all your data in bits - so we can render the range as under:
 
-{% embed_all {"source": "configuring-your-chart-number-format-example-10.js", "id": "10"} %}
+{% embed_all configuring-your-chart-number-format-example-10.js %}
 
 ### Recursive number scaling
 
@@ -355,7 +355,7 @@ Let us build a chart which indicates the power back up used by a grocery store i
 
 The chart with recursive number scaling looks as below:
 
-{% embed_all {"source": "configuring-your-chart-number-format-example-11.js", "id": "11"} %}
+{% embed_all configuring-your-chart-number-format-example-11.js %}
 
 Given below is the list of attributes used to enable recursive scaling:
 

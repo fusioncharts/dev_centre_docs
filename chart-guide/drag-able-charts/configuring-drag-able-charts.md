@@ -40,7 +40,7 @@ FusionCharts Suite XT allows you to set and retrieve the charts’ upper and low
 
 A drag-able area chart configured to manage chart limits using JavaScript API looks like this:
 
-{% embed_all {"source": "chart-guide-drag-able-charts-configuring-drag-able-charts-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-drag-able-charts-configuring-drag-able-charts-example-1.js %}
 
 Give below is a brief description of the JavaScript functions used to manage chart limits:
 
@@ -78,7 +78,7 @@ FusionCharts XT allows you to limit the dragging of data plots with respect to t
 
 A drag-able column chart configured for snapping to the nearest div interval looks like this:
 
-{% embed_all {"source": "chart-guide-drag-able-charts-configuring-drag-able-charts-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-drag-able-charts-configuring-drag-able-charts-example-2.js %}
 
 Given below is a brief description of the attributes used to configure snapping to the nearest divisional line:
 

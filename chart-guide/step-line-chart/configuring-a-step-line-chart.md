@@ -20,7 +20,7 @@ By default, the step line chart displays the vertical joins - vertical lines tha
 
 A step line chart rendered without the vertical joins looks like this:
 
-{% embed_all {"source": "chart-guide-step-line-chart-configuring-a-step-line-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-step-line-chart-configuring-a-step-line-chart-example-1.js %}
 
 Given below is a brief description of the attribute used to hide the vertical joins:
 
@@ -42,7 +42,7 @@ For a step line chart, you can configure the direction of progression of the lin
 
 A step line chart rendered with the forward progressive mode disabled looks like this:
 
-{% embed_all {"source": "chart-guide-step-line-chart-configuring-a-step-line-chart-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-step-line-chart-configuring-a-step-line-chart-example-2.js %}
 
 Compare this chart with the step line chart shown above and see the difference in how each is rendered.
 

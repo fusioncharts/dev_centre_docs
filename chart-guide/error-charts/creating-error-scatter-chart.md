@@ -20,7 +20,7 @@ As an example, we will create a simple error scatter chart that shows the revenu
 
 An error scatter chart thus created looks like this:
 
-{% embed_all {"source": "chart-guide-error-charts-creating-error-scatter-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-error-charts-creating-error-scatter-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to create an error scatter chart:
 
@@ -67,7 +67,7 @@ You can customize the cosmetic properties of error bars to change their appearan
 
 An error scatter chart, after customizing the error bars, looks like this :
 
-{% embed_all {"source": "chart-guide-error-charts-creating-error-scatter-chart-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-error-charts-creating-error-scatter-chart-example-2.js %}
 
 Given below is a brief description of the attributes used to customize the error bars::
 

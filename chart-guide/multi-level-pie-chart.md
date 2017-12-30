@@ -34,7 +34,7 @@ As an example, we will create a multi-level pie chart that shows the sales break
 
 The multi-level pie chart thus rendered looks like this:
 
-{% embed_all {"source": "chart-guide-multi-level-pie-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-multi-level-pie-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to create a simple multi-level pie chart:
 

@@ -17,7 +17,7 @@ Clicking the export button will display the export menu, as shown in the image b
 
 A number of other features can also be configured like the name of the exported file and the display text for each format that is supported. A chart with these options configured, for the server-side export, is shown below:
 
-{% embed_chart {"source": "exporting-as-image-and-pdf-configuring-export-feature-example-1.js", "id": "1"} %}
+{% embed_chart exporting-as-image-and-pdf-configuring-export-feature-example-1.js %}
 
 The following is a complete list of chart level attributes that can be used to enable and configure exporting of charts:
 
@@ -99,7 +99,7 @@ The following is a complete list of chart level attributes that can be used to e
 
 The data structure needed to configure the export menu, for a server-side export, is given below:
 
-{% embed_data {"source": "exporting-as-image-and-pdf-configuring-export-feature-example-1.js"} %}
+{% embed_data exporting-as-image-and-pdf-configuring-export-feature-example-1.js %}
 
 ## Experimental Feature Export with Logo Image
 

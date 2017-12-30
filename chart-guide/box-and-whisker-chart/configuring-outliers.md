@@ -18,7 +18,7 @@ In this section, you will be shown how you can:
 
 A box and whisker chart with outliers looks like this:
 
-{% embed_all {"source": "chart-guide-box-and-whisker-chart-configuring-outliers-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-box-and-whisker-chart-configuring-outliers-example-1.js %}
 
 In the above chart, outlier values are displayed as triangle icons above each data plot.
 
@@ -62,7 +62,7 @@ For the chart shown above, all outliers provided as values to the `outliers` att
 
 A box and whisker chart with outliers beyond the range of the y-axis hidden looks like this:
 
-{% embed_all {"source": "chart-guide-box-and-whisker-chart-configuring-outliers-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-box-and-whisker-chart-configuring-outliers-example-2.js %}
 
 
 In the data above, you will see that the outlier values for Grade 3 are 72000 for male and 71000 for female. Therefore, the outliers for these values are not shown on the chart.
@@ -71,7 +71,7 @@ You can opt to show these hidden outlier values.
 
 A box and whisker chart with outlier values shown on the chart looks like this:
 
-{% embed_all {"source": "chart-guide-box-and-whisker-chart-configuring-outliers-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-box-and-whisker-chart-configuring-outliers-example-3.js %}
 
 Given below is a brief description of the attribute used to show all outliers on the box and whisker chart:
 

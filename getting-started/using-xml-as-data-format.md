@@ -10,7 +10,7 @@ Tom is a server-side developer working in Harry's team. He prefers working with 
 
 Let us build the same Revenue chart, which we built in the [first example]{% linkTo tutorials/getting-started/building-your-first-chart.md %} using JSON, and use XML data in this example.
 
-{% embed_chart {"source": "getting-started-your-first-charts-building-your-chart-example1.js", "id": "1"} %}
+{% embed_chart getting-started-your-first-charts-building-your-chart-example1.js %}
 
 ## Let’s Begin
 

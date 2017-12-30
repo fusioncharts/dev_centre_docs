@@ -20,7 +20,7 @@ In this section, you will be shown how you can:
 
 A drag-able column 2D chart configured to retrieve JSON data and render it in an `alert` window looks like this:
 
-{% embed_all {"source": "chart-guide-drag-able-charts-retrieving-data-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-drag-able-charts-retrieving-data-example-1.js %}
 
 Given below is a brief description of the function used to retrieve JSON data:
 
@@ -74,7 +74,7 @@ The `getDataWithID()` function returns a three-dimensional array that contains t
 
 A drag-able column chart configured to retrieve data using the `getDataWithID()` function looks like this:
 
-{% embed_all {"source": "chart-guide-drag-able-charts-retrieving-data-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-drag-able-charts-retrieving-data-example-2.js %}
 
 The data returned by the `getDataWithID()` function is without any editing.
 

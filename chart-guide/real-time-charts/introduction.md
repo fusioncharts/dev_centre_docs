@@ -26,7 +26,7 @@ Charts used in live stock monitoring are real-time charts. These charts first pr
 
 A real-time line chart used for stock price monitoring at Harry’s SuperMart looks like this:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-introduction-example-1.js", "id": "1"} %}
+{% embed_all advanced-charting-real-time-charts-introduction-example-1.js %}
 
 ## Features Supported by Real-time Charts
 

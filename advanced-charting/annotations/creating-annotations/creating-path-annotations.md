@@ -18,7 +18,7 @@ The path annotation lets you draw free-form graphic elements on your charts.
 
 Take a look at the spline chart shown below:
 
-{% embed_chart {"source": "advanced-charting-annotations-creating-annotations-creating-path-annotations-example-1.js", "id": "1"} %}
+{% embed_chart advanced-charting-annotations-creating-annotations-creating-path-annotations-example-1.js %}
 
 The rectangle drawn to highlight the lowest footfall is created using the path annotation.
 
@@ -84,4 +84,4 @@ The default value is `#ff0000`.</td>
 
 The complete data structure for the chart with path annotations is given below:
 
-{% embed_data {"source": "advanced-charting-annotations-creating-annotations-creating-path-annotations-example-1.js"} %}
+{% embed_data advanced-charting-annotations-creating-annotations-creating-path-annotations-example-1.js %}

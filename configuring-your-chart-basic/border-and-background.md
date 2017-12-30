@@ -30,7 +30,7 @@ This section is divided into the following parts:
 
 A column 2D chart with a customized border looks as below:
 
-{% embed_all {"source": "configuring-your-chart-border-and-background-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-border-and-background-example-1.js %}
 
 Given below is a brief description of the attributes used to customize chart border:
 
@@ -64,7 +64,7 @@ Background here refers to the complete area inside the chart border.
 
 A column 2D chart with a customized background color looks as below:
 
-{% embed_all {"source": "configuring-your-chart-border-and-background-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-border-and-background-example-2.js %}
 
 Below is the list of attributes that can be used to customize chart background:
 
@@ -100,7 +100,7 @@ When using a gradient fill for the background, you can configure three aspects:
 
 A column 2D chart with a gradient fill used in the background looks as below:
 
-{% embed_all {"source": "configuring-your-chart-border-and-background-example-3.js", "id": "3"} %}
+{% embed_all configuring-your-chart-border-and-background-example-3.js %}
 
 Below is the list of the attributes used to customize gradient fill for chart background:
 
@@ -134,7 +134,7 @@ You can specify an external image (GIF, JPEG or PNG only) as the background of t
 
 Shown below is a chart with an external image used as its background:
 
-{% embed_all {"source": "configuring-your-chart-border-and-background-example-4.js", "id": "4"} %}
+{% embed_all configuring-your-chart-border-and-background-example-4.js %}
 
 The attribute to use an external image as chart background is mentioned below:
 
@@ -168,7 +168,7 @@ You can customize the external image rendered as the chart background. FusionCha
 
 A column 2D chart with a partially transparent background looks as below:
 
-{% embed_all {"source": "configuring-your-chart-border-and-background-example-5.js", "id": "5"} %}
+{% embed_all configuring-your-chart-border-and-background-example-5.js %}
 
 Below is the list of attributes used to customize a chart image background:
 

@@ -12,7 +12,7 @@ In this section, you will be shown how you can set a chart as a hotspot.
 
 A column 2D chart rendered as a hotspot is shown below:
 
-{% embed_all {"source": "interactivity-drill-down-set-chart-as-hotspot-example-1.js", "id": "1"} %}
+{% embed_all interactivity-drill-down-set-chart-as-hotspot-example-1.js %}
 
 Clicking anywhere on this chart redirects you to the FusionCharts home page in a new browser tab.
 
@@ -63,7 +63,7 @@ You can configure the target URL to:
 
 An example of creating thumbnails for charts is shown below:
 
-{% embed_all {"source": "interactivity-drill-down-set-chart-as-hotspot-example-2.js", "id": "2"} %}
+{% embed_all interactivity-drill-down-set-chart-as-hotspot-example-2.js %}
 
 In the example above, a column 2D chart shows the monthly revenue for the last year at Harry’s SuperMart. To the left of the column 2D chart are three thumbnails - one for a column 2D chart, one for a pie chart, and one for a bar 2D chart. When a thumbnail is clicked, the monthly revenue data for Harry’s SuperMart is shown using the chart type in the thumbnail.
 

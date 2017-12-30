@@ -16,11 +16,11 @@ Assume that Harry wants to compare sales of the top four chocolate brands at his
 
 A conventional column 2D chart used to show this data will look like this:
 
-{% embed_chart {"source": "advanced-charting-annotations-introduction-example-1.js", "id": "1"} %}
+{% embed_chart advanced-charting-annotations-introduction-example-1.js %}
 
 Now, see how this chart looks when rendered using annotations:
 
-{% embed_chart {"source": "advanced-charting-annotations-introduction-example-2.js", "id": "2"} %}
+{% embed_chart advanced-charting-annotations-introduction-example-2.js %}
 
 Looks much better, doesn’t it? The chocolate bars shown in this chart are image annotations.
 

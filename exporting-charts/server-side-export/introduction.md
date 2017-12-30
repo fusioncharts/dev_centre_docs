@@ -27,7 +27,7 @@ The chart is downloaded to your machine in the selected format.
 
 A column 2D chart with export enabled is shown below:
 
-{% embed_all {"source": "exporting-as-image-and-pdf-introduction-example-1.js", "id": "1"} %}
+{% embed_all exporting-as-image-and-pdf-introduction-example-1.js %}
 
 Click the __insert image here__ menu button and select a format to export the chart.
 

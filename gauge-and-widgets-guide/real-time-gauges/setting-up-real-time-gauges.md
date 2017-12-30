@@ -20,7 +20,7 @@ If new data is flowing into your system at client side, you can feed data to the
 
 A cylinder gauge fed with real-time data using the `feedData()` method is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-gauges-setting-up-real-time-gauges-example-1.js", "id": "1"} %}
+{% embed_all advanced-charting-real-time-gauges-setting-up-real-time-gauges-example-1.js %}
 
 The gauge is configured to show the current diesel level in a generator. The fuel level in the cylinder increases or decreases indicating the current diesel value marked on it. Current data is also displayed at the bottom of the cylinder after every preset interval is elapsed.
 
@@ -52,7 +52,7 @@ In instances where you have to monitor the status of an application/system const
 
 An angular gauge updated with real-time data from a server is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-gauges-setting-up-real-time-gauges-example-2.js", "id": "2"} %}
+{% embed_all advanced-charting-real-time-gauges-setting-up-real-time-gauges-example-2.js %}
 
 In the above example, server CPU utilization of __foods.hsm.com__ and __garments.hsm.com__ is indicated on the angular gauge by two dials. The black dial shows the CPU utilization of the former and the gray dial shows the CPU utilization of the later website. 
 
@@ -90,7 +90,7 @@ You can stop real-time updates in two ways:
 
 A thermometer gauge configured to stop and restart receiving real-time updates is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-gauges-setting-up-real-time-gauges-example-3.js", "id": "3"} %}
+{% embed_all advanced-charting-real-time-gauges-setting-up-real-time-gauges-example-3.js %}
 
 In the above example, the gauge reflects the current temperature at Central Cold Store. The real-time data is also displayed at the bottom of the thermometer. To stop updating the data, click **Stop Update**. The gauge is not fed with real time data anymore. To resume real-time updates, click **Restart Update**.
 

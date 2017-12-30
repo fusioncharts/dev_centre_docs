@@ -20,7 +20,7 @@ In this section, you will be introduced to:
 
 A simple angular gauge looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-introduction-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-introduction-example-1.js %}
 
 As you can see in the example above, the gauge is created by defining the minimum and maximum values (referred to as lower limit and upper limit). Within that scale, you can create various qualitative ranges (color ranges) to classify your data. The purpose is to classify a value as belonging to a predetermined range. For example, you might define a range called "Best" that consists of values between 60 and 100. Or you might create a range called “Weak” that consists of values between 30 and 60. For each range, you can define a color, which helps to visually distinguish the ranges from each other.
 
@@ -42,7 +42,7 @@ An angular gauge consists of the following elements:
 
 We will see each of them in detail. Let’s first have a look at a standard angular gauge chart enlisting the various basic components:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-introduction-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-introduction-example-2.js %}
 
 ## Color Range
 

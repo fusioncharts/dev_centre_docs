@@ -30,7 +30,7 @@ This article describes the annotation events.
 
 A spline chart configured to demonstrate the `annotationRollOver` and `annotationRollOut` events is shown below:
 
-{% embed_chart {"source": "advanced-charting-annotations-using-annotation-events-example-1.js", "id": "1"} %}
+{% embed_chart advanced-charting-annotations-using-annotation-events-example-1.js %}
 
 
 
@@ -85,4 +85,4 @@ For more information on these parameters, click [here]{% linkTo FusionCharts.nam
 
 The complete data structure for the spline chart with annotation events is given below:
 
-{% embed_data {"source": "advanced-charting-annotations-using-annotation-events-example-1.js"} %}
+{% embed_data advanced-charting-annotations-using-annotation-events-example-1.js %}

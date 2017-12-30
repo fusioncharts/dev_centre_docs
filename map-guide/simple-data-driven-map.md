@@ -8,7 +8,7 @@ chartPresent: true
 
 In this section we will learn how to create a simple map showing the population of the different continents in the world. The output would look like the chart below.
 
-{% embed_chart {"source": "map-guide-simple-data-driven-map.js", "id": "1"} %}
+{% embed_chart map-guide-simple-data-driven-map.js %}
 
 There are 4 simple steps to building a map using FusionCharts Suite XT:
 
@@ -24,7 +24,7 @@ There are 4 simple steps to building a map using FusionCharts Suite XT:
 
 FusionCharts Suite XT accepts both JSON and XML data formats, and can read it as a string from a local or remote file. Here is the JSON/XML representation of the data to build the map above.
 
-{% embed_data {"source": "map-guide-simple-data-driven-map.js"} %}
+{% embed_data map-guide-simple-data-driven-map.js %}
 
 ## Include FusionCharts Suite XT library in your page
 

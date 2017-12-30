@@ -26,7 +26,7 @@ By default the zoom line chart displays as many data labels as can be accommodat
 
 A zoom line chart with the maximum number of labels limited looks like this:
 
-{% embed_all {"source": "chart-guide-zoom-line-chart-configuring-a-zoom-line-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-zoom-line-chart-configuring-a-zoom-line-chart-example-1.js %}
 
 In the above chart, the number of labels rendered on one screen is 12. To look at the preceding or following labels, you will need to use the scroll bar.
 
@@ -54,7 +54,7 @@ FusionCharts XT zoom line chart allows configuration of the distance between con
 
 A zoom line chart with the distance between the consecutive data plots configured looks like this:
 
-{% embed_all {"source": "chart-guide-zoom-line-chart-configuring-a-zoom-line-chart-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-zoom-line-chart-configuring-a-zoom-line-chart-example-2.js %}
 
 Given below is a  brief description of the attribute used to set distance between consecutive data plots:
 
@@ -78,7 +78,7 @@ In order to reduce clutter, you can make anchors visible only when the distance 
 
 A zoom line chart with the criteria for anchor display defined looks like this:
 
-{% embed_all {"source": "chart-guide-zoom-line-chart-configuring-a-zoom-line-chart-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-zoom-line-chart-configuring-a-zoom-line-chart-example-3.js %}
 
 Given below is a brief description of the attribute used to set the criteria for anchor display:
 
@@ -102,7 +102,7 @@ By default, the zoom line chart displays all the data plots in a single screen. 
 
 A zoom line chart rendered with pre-selected number of data plots looks like this:
 
-{% embed_all {"source": "chart-guide-zoom-line-chart-configuring-a-zoom-line-chart-example-4.js", "id": "4"} %}
+{% embed_all chart-guide-zoom-line-chart-configuring-a-zoom-line-chart-example-4.js %}
 
 Given below is a brief description of the attributes used to pre-select the number of visible data points:
 

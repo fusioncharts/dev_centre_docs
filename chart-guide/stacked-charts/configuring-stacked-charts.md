@@ -22,7 +22,7 @@ You can opt to show the sum of all stacked data plots in a column above that col
 
 A stacked column 2D chart with the cumulative sum rendered above its corresponding column looks like this:
 
-{% embed_all {"source": "chart-guide-stacked-charts-configuring-stacked-charts-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-stacked-charts-configuring-stacked-charts-example-1.js %}
 
 Given below is a brief description of the attribute used to display the cumulative sum:
 
@@ -44,7 +44,7 @@ You can use stacked charts to show the percentage distribution for individual it
 
 A 100% stacked column 2D chart looks like this:
 
-{% embed_all {"source": "chart-guide-stacked-charts-configuring-stacked-charts-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-stacked-charts-configuring-stacked-charts-example-2.js %}
 
 Given below is a brief description of the attributes used to render a 100% stacked chart:
 
@@ -71,7 +71,7 @@ By default, actual data values are rendered in tool-tips. You can opt to show th
 
 A stacked column chart configured to show percent values in tool-tips looks like this:
 
-{% embed_all {"source": "chart-guide-stacked-charts-configuring-stacked-charts-example-2.js", "id": "3"} %}
+{% embed_all chart-guide-stacked-charts-configuring-stacked-charts-example-2.js %}
 
 Given below is a brief description of the attributes used to show percent values in tool-tips:
 

@@ -21,7 +21,7 @@ As an example, we will create a box and whisker chart that shows the gender-wise
 
 The box and whisker chart thus created looke like this:
 
-{% embed_all {"source": "chart-guide-box-and-whisker-chart-creating-box-and-whisker-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-box-and-whisker-chart-creating-box-and-whisker-chart-example-1.js %}
 
 In the chart shown above, note that the minimum and maximum values and the median are displayed by default, whereas the upper and lower quartile values are hidden.
 
@@ -59,7 +59,7 @@ FusionCharts Suite XT supports `legend` for the box and whisker chart. Legend al
 
 A simple box and whisker chart rendered with a legend looks like this:
 
-{% embed_all {"source": "chart-guide-box-and-whisker-chart-creating-box-and-whisker-chart-example-1.js", "id": "2"} %}
+{% embed_all chart-guide-box-and-whisker-chart-creating-box-and-whisker-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to display legend in a box and whisker chart:
 

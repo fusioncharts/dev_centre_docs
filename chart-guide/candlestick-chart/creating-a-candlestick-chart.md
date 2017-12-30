@@ -34,7 +34,7 @@ As an example, we will create a candlestick chart that shows the daily stock pri
 
 The candlestick chart thus created looks like this:
 
-{% embed_all {"source": "chart-guide-candlestick-chart-creating-a-candlestick-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-candlestick-chart-creating-a-candlestick-chart-example-1.js %}
 
 In the chart above, the price chart is rendered in the first half of the candlestick chart while the volume chart is rendered in the second half.
 

@@ -12,7 +12,7 @@ As an example, we will create a zoom line chart that plots the number of unique 
 
 The zoom line chart thus created looks like this:
 
-{% embed_all {"source": "chart-guide-zoom-line-chart-creating-a-zoom-line-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-zoom-line-chart-creating-a-zoom-line-chart-example-1.js %}
 
 As seen in the chart above, at the time of rendering, the zoom line chart displays a macroscopic view of the data. The data is neatly compressed, so that all of it fits into the width of the chart. When the user selects a segment of the line plot by dragging the mouse cursor across the canvas, the selected portion expands to occupy the entire width of the chart. At this point, the scrollbar becomes functional, allowing the user to view the data that precedes or follows the selected section of data. To analyze the data in greater detail, the user can repeat the select and zoom process several times over (until further zooming is not possible). The chart can be restored to its original macroscopic display mode by clicking the `Reset Chart` button on the toolbar.
 

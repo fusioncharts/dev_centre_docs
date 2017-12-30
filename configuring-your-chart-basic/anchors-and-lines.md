@@ -22,7 +22,7 @@ This article talks about:
 
 The anchors and their corresponding tooltips are displayed by default. A line chart with anchors hidden looks as below:
 
-{% embed_all {"source": "configuring-your-chart-anchors-and-lines-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-anchors-and-lines-example-1.js %}
 
 Given below is the attribute used to display anchors in a chart:
 
@@ -46,7 +46,7 @@ Given below is the attribute used to display anchors in a chart:
 
 A line chart with customized anchors looks as below:
 
-{% embed_all {"source": "configuring-your-chart-anchors-and-lines-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-anchors-and-lines-example-2.js %}
 
 Given below are the attributes used to customize the appearance of anchors:
 
@@ -90,7 +90,7 @@ Given below are the attributes used to customize the appearance of anchors:
 
 FusionCharts Suite XT allows you to highlight a particular data point by customizing specific anchor points explicitly. To highlight a specific anchor, you need to customize the cosmetics for only that particular anchor. A line chart with anchors for specific data points customized looks as below:
 
-{% embed_all {"source": "configuring-your-chart-anchors-and-lines-example-3.js", "id": "3"} %}
+{% embed_all configuring-your-chart-anchors-and-lines-example-3.js %}
 
 To configure anchors for a specific data point, use the anchor customization attributes within the data object. 
 
@@ -102,7 +102,7 @@ External images are now supported in anchor of line and area type charts. This a
 
 A line chart with external images in the anchors looks as below:
 
-{% embed_all {"source": "configuring-your-chart-anchors-and-lines-example-4.js", "id": "4"} %}
+{% embed_all configuring-your-chart-anchors-and-lines-example-4.js %}
 
 Given below are the attributes used to configure external images in anchors:
 

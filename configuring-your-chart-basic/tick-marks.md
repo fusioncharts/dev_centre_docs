@@ -36,7 +36,7 @@ This section talks about:
 
 A LED gauge with tick marks and tick values hidden looks as below:
 
-{% embed_all {"source": "configuring-your-chart-tick-marks-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-tick-marks-example-1.js %}
 
 The following attributes can be used to show/hide tick marks and tick values:
 
@@ -67,7 +67,7 @@ By default, tick marks and tick values are placed outside a gauge. In vertical g
 
 An angular gauge with tick marks and tick values placed inside looks as below:
 
-{% embed_all {"source": "configuring-your-chart-tick-marks-example-10a.js", "id": "2"} %}
+{% embed_all configuring-your-chart-tick-marks-example-10a.js %}
 
 Following is the list of attributes for configuring tick mark position and tick values:
 
@@ -89,7 +89,7 @@ Following is the list of attributes for configuring tick mark position and tick 
 
 A linear gauge with tick marks and tick values placed above looks as below:
 
-{% embed_all {"source": "configuring-your-chart-tick-marks-example-10b.js", "id": "3"} %}
+{% embed_all configuring-your-chart-tick-marks-example-10b.js %}
 
 Given below is the attribute used to configure tick mark position and tick values for a horizontal gauge.
 
@@ -123,7 +123,7 @@ Similarly for a vertical gauge, tick marks and tick values can be placed on the 
 
 FusionCharts allows you to show every `n-th` value, where the upper and lower limit of the scale is always displayed. A Horizontal LED gauge displaying n-th value looks as below:
 
-{% embed_all {"source": "configuring-your-chart-tick-marks-example-2.js", "id": "4"} %}
+{% embed_all configuring-your-chart-tick-marks-example-2.js %}
 
 Given below is the attribute used to every n-th tick value for a horizontal led gauge:
 
@@ -143,7 +143,7 @@ Given below is the attribute used to every n-th tick value for a horizontal led 
 
 You can configure number of decimals and can also force the number of decimals on tick values. A horizontal LED gauge showing tick value in decimals looks as below:
 
-{% embed_all {"source": "configuring-your-chart-tick-marks-example-3.js", "id": "5"} %}
+{% embed_all configuring-your-chart-tick-marks-example-3.js %}
 
 Given below are the attributes used to configure tick values in decimals:
 
@@ -167,7 +167,7 @@ Given below are the attributes used to configure tick values in decimals:
 
 By setting the tick mark padding and tick value padding, you can control the amount of space between the tick mark and the gauge or between the tick values and tick marks. A horizontal led gauge with tick mark and tick values with defined padding is shown below:
 
-{% embed_all {"source": "configuring-your-chart-tick-marks-example-4.js", "id": "6"} %}
+{% embed_all configuring-your-chart-tick-marks-example-4.js %}
 
 Given below are the attributes used to set the padding for gauge, tick marks and tick values:
 
@@ -191,7 +191,7 @@ Given below are the attributes used to set the padding for gauge, tick marks and
 
 FusionCharts Suite XT allows to you to define the number of major and minor tick marks to be rendered on a gauge. A horizontal LED gauge with the number of tick marks manually configured looks as below:
 
-{% embed_all {"source": "configuring-your-chart-tick-marks-example-11a.js", "id": "7"} %}
+{% embed_all configuring-your-chart-tick-marks-example-11a.js %}
 
 Given below is a list of attributes used to configure the number of tick marks:
 
@@ -215,7 +215,7 @@ Given below is a list of attributes used to configure the number of tick marks:
 
 You can configure the color, transparency, height, and thickness of both, major and minor tick marks. A horizontal LED gauge with customized tick marks looks as below:
 
-{% embed_all {"source": "configuring-your-chart-tick-marks-example-11b.js", "id": "8"} %}
+{% embed_all configuring-your-chart-tick-marks-example-11b.js %}
 
 Given below is the list of attributes used to configure cosmetic properties of tick marks:
 

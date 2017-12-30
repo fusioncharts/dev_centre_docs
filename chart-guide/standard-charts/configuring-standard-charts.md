@@ -27,7 +27,7 @@ Trend-lines are customizable reference horizontal or vertical lines which aid in
 
 A quarterly sales summary chart rendered with a trend-line to show the target value looks like this:
 
-{% embed_all {"source": "chart-guide-standard-charts-configuring-standard-charts-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-standard-charts-configuring-standard-charts-example-1.js %}
 
 Given below is a brief description of the attributes used to render a trend-line on the chart:
 
@@ -58,7 +58,7 @@ If you don’t specify a value for this attribute, by default, it will take the 
 
 A quarterly sales summary chart rendered with a trend-zone to show a range of target values looks like this:
 
-{% embed_all {"source": "chart-guide-standard-charts-configuring-standard-charts-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-standard-charts-configuring-standard-charts-example-2.js %}
 
 The trend-zone uses the same attributes as the trend-line.
 
@@ -83,7 +83,7 @@ Vertical (or horizontal in case of bar charts) separator lines are elements that
 
 A line chart rendered with a vertical line looks like this:
 
-{% embed_all {"source": "chart-guide-standard-charts-configuring-standard-charts-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-standard-charts-configuring-standard-charts-example-3.js %}
 
 Given below is a brief description of the attributes used to render a vertical line:
 
@@ -114,7 +114,7 @@ FusionCharts Suite XT allows you to change the chart type dynamically through it
 
 An example of a chart, where you can dynamically change the chart type, looks like this:
 
-{% embed_all {"source": "chart-guide-standard-charts-configuring-standard-charts-example-4.js", "id": "4"} %}
+{% embed_all chart-guide-standard-charts-configuring-standard-charts-example-4.js %}
 
 
 ## Set Data Skipping
@@ -125,7 +125,7 @@ What if you want to render 10000 data points in a single series chart with a dim
 
 An example of an area chart rendered with `30000` data looks like as shown below:
 
-{% embed_all {"source": "chart-guide-standard-charts-configuring-standard-charts-example-5.js", "id": "5"} %}
+{% embed_all chart-guide-standard-charts-configuring-standard-charts-example-5.js %}
 
 The above chart gives a clear idea on how frequently the new trips are availed. The chart shows the data updated every hour.
 

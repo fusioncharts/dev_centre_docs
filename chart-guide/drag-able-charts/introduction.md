@@ -35,7 +35,7 @@ Once you are done with the visual updating of data, you can submit the data:
 
 A simple drag-able column 2D chart looks like this:
 
-{% embed_all {"source": "chart-guide-drag-able-charts-introduction-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-drag-able-charts-introduction-example-1.js %}
 
 In the above chart, the Estimated Demand data plot is drag-able. A table is rendered below the chart which reflects the visually-updated data on the chart.
 
@@ -43,7 +43,7 @@ In the above chart, the Estimated Demand data plot is drag-able. A table is rend
 
 A simple drag-line 2D chart looks like this:
 
-{% embed_all {"source": "chart-guide-drag-able-charts-introduction-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-drag-able-charts-introduction-example-2.js %}
 
 In the above chart, the anchors representing the Q3 and Q4 sales estimates for Apple and Samsung are drag-able. A table is rendered below the chart which reflects the visually-updated data on the chart.
 
@@ -51,6 +51,6 @@ In the above chart, the anchors representing the Q3 and Q4 sales estimates for A
 
 A simple drag-able area 2D chart looks like this:
 
-{% embed_all {"source": "chart-guide-drag-able-charts-introduction-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-drag-able-charts-introduction-example-3.js %}
 
 In the above chart, the anchors representing the Q3 and Q4 sales estimates for Apple and Samsung are drag-able. A table is rendered below the chart which reflects the visually-updated data on the chart.

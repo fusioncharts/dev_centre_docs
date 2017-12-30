@@ -20,7 +20,7 @@ In a heat map chart a dataplot can show multiple labels in different positions. 
 
 A heat map chart with the labels for the data plots configured looks like this:
 
-{% embed_all {"source": "chart-guide-heat-map-chart-configuring-labels-and-tool-tips-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-heat-map-chart-configuring-labels-and-tool-tips-example-1.js %}
 
 Given below is a brief description of the attributes used to configure labels:
 
@@ -64,7 +64,7 @@ FusionCharts Suite XT allows you to customize the information displayed in the t
 
 A heat map chart rendered with customized tool-tip text looks like this:
 
-{% embed_all {"source": "chart-guide-heat-map-chart-configuring-labels-and-tool-tips-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-heat-map-chart-configuring-labels-and-tool-tips-example-2.js %}
 
 Given below is a brief description of the attribute used to customize a tool-tip:
 

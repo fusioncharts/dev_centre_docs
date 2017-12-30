@@ -16,7 +16,7 @@ To export chart data, select the __Export as XLS__ option. The XLS file with the
 
 A column 2D chart with export enabled is shown below. Click the ![image]({{ site.baseurl }}assets/images/exporting-as-image-and-pdf-export-button.jpg) menu button and select the __Export as XLS__ option to export the chart data.
 
-{% embed_all {"source": "exporting-as-image-and-pdf-introduction-example-1.js", "id": "1"} %}
+{% embed_all exporting-as-image-and-pdf-introduction-example-1.js %}
 
 <p class="text-info">  To export a chart in the XLS format using server-side exporting, it is mandatory that the exporting server has the latest code, which is available in the FusionCharts package. Alternatively, the FusionCharts export link, [export.api3.fusioncharts.com](export.api3.fusioncharts.com), can also be used. For client-side exporting, the exporting chart data feature is supported only by modern browsers with canvas support (except Safari and IE9). </p>
 

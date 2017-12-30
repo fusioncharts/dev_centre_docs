@@ -26,7 +26,7 @@ This article talks about:
 
 A column 2D chart with customized zero plane looks like this:
 
-{% embed_all {"source": "configuring-your-chart-zero-plane-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-zero-plane-example-1.js %}
 
 Given below are the attributes used to customize the zero plane in a 2D chart:
 
@@ -58,7 +58,7 @@ Given below are the attributes used to customize the zero plane in a 2D chart:
 
 A column 3D chart with a customized zero plane looks like this:
 
-{% embed_all {"source": "configuring-your-chart-zero-plane-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-zero-plane-example-2.js %}
 
 Given below are the attributes used to customize the zero plane in a 3D chart:
 
@@ -96,7 +96,7 @@ Zero Plane is the line/plane that appears at zero x-position on canvas, when neg
 
 A scatter chart with customized vertical zero plane looks as below:
 
-{% embed_all {"source": "configuring-your-chart-zero-plane-example-3.js", "id": "3"} %}
+{% embed_all configuring-your-chart-zero-plane-example-3.js %}
 
 Given below are the attributes used to render and customize the vertical zero plane:
 
@@ -132,7 +132,7 @@ Given below are the attributes used to render and customize the vertical zero pl
 
 FusionCharts Suite XT allows you to show or hide the data value ('0') where the zero plane exists on the y-axis. A column 2D chart with the zero plane value hidden is shown below:
 
-{% embed_all {"source": "configuring-your-chart-zero-plane-example-4.js", "id": "4"} %}
+{% embed_all configuring-your-chart-zero-plane-example-4.js %}
 
 Given below is the attribute used to hide the zero plane value:
 
@@ -158,7 +158,7 @@ Given below is the attribute used to hide the zero plane value:
 
 Zero plane can be removed in the line, scatter and bubble charts but not in the column and area charts because they use it as their base to draw. A scatter chart with the vertical zero plane hidden is shown below:
 
-{% embed_all {"source": "configuring-your-chart-zero-plane-example-5.js", "id": "5"} %}
+{% embed_all configuring-your-chart-zero-plane-example-5.js %}
 
 Given below are the attributes used to show or hide the zero plane:
 

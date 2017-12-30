@@ -36,7 +36,7 @@ To create a pyramid chart, you will first need to plot the data that will be rep
 
 We will configure the "Number of People" as the `label` of the chart and the “Wealth Owned” as the `value` of the chart. The resultant Global Wealth Pyramid chart looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-pyramid-chart-simple-pyramid-chart-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-pyramid-chart-simple-pyramid-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to create the Global Wealth Pyramid chart:
 

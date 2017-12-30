@@ -12,7 +12,7 @@ The  zoom-scatter chart is primarily used to find correlations between datasets.
 
 Take a look at the sample zoom-scatter chart shown below:
 
-{% embed_chart {"source": "chart-guide-zoom-scatter-chart-introducing-the-zoom-scatter-chart-example-1.js", "id": "1"} %}
+{% embed_chart chart-guide-zoom-scatter-chart-introducing-the-zoom-scatter-chart-example-1.js %}
 
 The chart compares the admission rate (in percent) with the average annual returns on degree (in percent) for five majors and over a period of 20 years.
 

@@ -18,7 +18,7 @@ There are several methods to calculate and draw regression lines; scatter charts
 
 A scatter chart with regression lines looks like this:
 
-{% embed_all {"source": "chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-7.js", "id": "7"} %}
+{% embed_all chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-7.js %}
 
 Given below is a brief description of the attribute used to show regression lines:
 
@@ -46,7 +46,7 @@ The scatter chart with regression lines shown above uses the **Y on X** mode.
 
 The same chart with regression lines drawn using the **X on Y** mode looks like this:
 
-{% embed_all {"source": "chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-8.js", "id": "8"} %}
+{% embed_all chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-8.js %}
 
 Given below is a brief description of the attributes used to set the mode and customize regression lines:
 

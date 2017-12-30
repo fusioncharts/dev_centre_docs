@@ -22,7 +22,7 @@ This article talks about:
 
 In certain cases, you might want to explicitly specify the y-axis minimum & maximum values as well as the number of divisional lines. To do this, you need to disable the automatic adjustment of divisional lines and explicitly define the y-axis upper and lower limits as well as the number of divisional lines to render.  A column 2D chart with explicitly specified number of divisional lines is shown below:
 
-{% embed_all {"source": "configuring-your-chart-div-lines-and-grids-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-div-lines-and-grids-example-1.js %}
 
 Given below are the attributes used to adjust divisional lines:
 
@@ -54,7 +54,7 @@ Given below are the attributes used to adjust divisional lines:
 
 A multi-series column 2D chart with customized div lines(explicitly defined) looks as below:
 
-{% embed_all {"source": "configuring-your-chart-div-lines-and-grids-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-div-lines-and-grids-example-2.js %}
 
 Given below are the attributes used to customize the appearance of the divisional lines:
 
@@ -88,7 +88,7 @@ FusionCharts Suite XT allows you to render the divisional lines as dashed lines,
 
 A line chart with dashed div lines looks as below:
 
-{% embed_all {"source": "configuring-your-chart-div-lines-and-grids-example-3.js", "id": "3"} %}
+{% embed_all configuring-your-chart-div-lines-and-grids-example-3.js %}
 
 
 
@@ -126,7 +126,7 @@ To further aid data visualization, alternate spaces between grid lines can be co
 
 Horizontal grid bands, by default, do not appear between the divisional lines. A column 2D chart with horizontal grid bands enabled is shown here:
 
-{% embed_all {"source": "configuring-your-chart-div-lines-and-grids-example-4.js", "id": "4"} %}
+{% embed_all configuring-your-chart-div-lines-and-grids-example-4.js %}
 
 Given below is the attribute used to show/hide the horizontal grid bands:
 
@@ -150,7 +150,7 @@ Given below is the attribute used to show/hide the horizontal grid bands:
 
 A column 2D chart with customized horizontal grid bands looks as below:
 
-{% embed_all {"source": "configuring-your-chart-div-lines-and-grids-example-5.js", "id": "5"} %}
+{% embed_all configuring-your-chart-div-lines-and-grids-example-5.js %}
 
 Given below are the attributes used to customize the horizontal grid bands:
 

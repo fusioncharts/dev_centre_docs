@@ -60,7 +60,7 @@ The scale, on which the score will be plotted, can be defined as shown in the ta
 
 The angular gauge thus created looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-simple-gauge-example-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-simple-gauge-example-example-1.js %}
 
 Given below is a brief description of the attributes used to create a simple angular gauge:
 

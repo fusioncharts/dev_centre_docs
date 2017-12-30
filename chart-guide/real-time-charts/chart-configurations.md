@@ -48,7 +48,7 @@ Consider that you are plotting a real-time line chart to monitor stock price. Fo
 
 The real-time line chart thus rendered looks like this:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-chart-configurations-example-1.js", "id": "1"} %}
+{% embed_all advanced-charting-real-time-charts-chart-configurations-example-1.js %}
 
 
 
@@ -60,7 +60,7 @@ Real-time charts offer decimal rounding controls for the data values plotted on 
 
 A real-time line chart with decimal precisions specified is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-chart-configurations-example-2.js", "id": "2"} %}
+{% embed_all advanced-charting-real-time-charts-chart-configurations-example-2.js %}
 
 Given below is a brief description of the attributes used to specify the decimal precision:
 
@@ -99,7 +99,7 @@ Setting custom canvas margins is required when the initial width required by the
 
 A real-time line chart configured to set custom canvas margins is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-chart-configurations-example-3.js", "id": "3"} %}
+{% embed_all advanced-charting-real-time-charts-chart-configurations-example-3.js %}
 
 Given below is a brief description of the attributes used to customize the canvas margins:
 
@@ -139,7 +139,7 @@ Real-time charts automatically try to avoid overlapping of the incremental x-axi
 
 A real-time line chart configured for chart element padding is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-chart-configurations-example-4.js", "id": "4"} %}
+{% embed_all advanced-charting-real-time-charts-chart-configurations-example-4.js %}
 
 Given below is a brief description of the attribute used to configure chart element padding:
 
@@ -169,7 +169,7 @@ Trend-lines are horizontal lines spanning the breadth of the chart canvas. They 
 
 A real-time line chart rendered with a trend-line looks like this:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-chart-configurations-example-5.js", "id": "5"} %}
+{% embed_all advanced-charting-real-time-charts-chart-configurations-example-5.js %}
 
 Given below is a brief description of the attributes used to add a trend-line:
 
@@ -205,7 +205,7 @@ As shown in the data above, for each trend line on the chart, you need to define
 
 A real-time line chart rendered with a slanted trend-line is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-chart-configurations-example-6.js", "id": "6"} %}
+{% embed_all advanced-charting-real-time-charts-chart-configurations-example-6.js %}
 
 Given below is a brief description of  the attributes used to add a slanted trend-line:
 
@@ -241,7 +241,7 @@ Given below is a brief description of  the attributes used to add a slanted tren
 
 A real-time line chart rendered with a trend-zone is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-chart-configurations-example-7.js", "id": "7"} %}
+{% embed_all advanced-charting-real-time-charts-chart-configurations-example-7.js %}
 
 Given below is a brief description of the attributes used to add a trend-zone:
 
@@ -285,7 +285,7 @@ Given below is a brief description of the attributes used to add a trend-zone:
 
 Look at the real-time column chart shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-chart-configurations-example-8.js", "id": "8"} %}
+{% embed_all advanced-charting-real-time-charts-chart-configurations-example-8.js %}
 
 Observe in the chart shown above that the chart view shows 10 data plots at any given time.
 
@@ -293,7 +293,7 @@ You can increase/decrease the number of data points/data plots that are displaye
 
 A real-time column chart configured to display 15 data plots at a time is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-chart-configurations-example-9.js", "id": "9"} %}
+{% embed_all advanced-charting-real-time-charts-chart-configurations-example-9.js %}
 
 Given below is a brief description of the attribute used to increase/decrease the number of data points displayed:
 

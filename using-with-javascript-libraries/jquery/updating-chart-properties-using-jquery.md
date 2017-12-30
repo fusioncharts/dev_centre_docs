@@ -46,7 +46,7 @@ The `updateFusionCharts` method accepts new configuration values as a set of key
 
 An example that updates the chart type dynamically is shown below:
 
-{% embed_chart {"source": "using-with-javascript-libraries-jquery-updating-chart-properties-using-jquery-example-1.js", "id": "1"} %}
+{% embed_chart using-with-javascript-libraries-jquery-updating-chart-properties-using-jquery-example-1.js %}
 
 In the above chart, the chart type is changed dynamically when the corresponding radio button is selected. The code snippet used to change the chart type is shown below:
 
@@ -95,7 +95,7 @@ $("#chart-container1").updateFusionCharts({dataSource: 'MyNewChart.json', dataFo
 
 An example that shows how you can change the chart width and height at run-time is shown below:
 
-{% embed_chart {"source": "using-with-javascript-libraries-jquery-updating-chart-properties-using-jquery-example-2.js", "id": "2"} %}
+{% embed_chart using-with-javascript-libraries-jquery-updating-chart-properties-using-jquery-example-2.js %}
 
 The code snippet used to do this is shown below:
 
@@ -158,7 +158,7 @@ $('#chart-container’).attrFusionCharts('caption’);
 
 You can also set values of chart attributes using this method. The example below shows how you can set the chart caption:
 
-{% embed_chart {"source": "using-with-javascript-libraries-jquery-updating-chart-properties-using-jquery-example-3.js", "id": "3"} %}
+{% embed_chart using-with-javascript-libraries-jquery-updating-chart-properties-using-jquery-example-3.js %}
 
 The code snippet for this example is shown below:
 

@@ -22,7 +22,7 @@ From the menu rendered, select the required format; the chart is downloaded to y
 
 A column 2D chart with export enabled is shown below. Click the ![image]({{ site.baseurl }}assets/images/exporting-as-image-and-pdf-export-button.jpg) menu button and select a format to export the chart.
 
-{% embed_all {"source": "exporting-as-image-and-pdf-introduction-example-1.js", "id": "1"} %}
+{% embed_all exporting-as-image-and-pdf-introduction-example-1.js %}
 
 ## Modes of Export
 

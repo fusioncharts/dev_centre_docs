@@ -26,7 +26,7 @@ In this section, you will be shown how you can:
 
 A real-time angular gauge configured to set up the message logger looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-1.js %}
 
 In the above gauge, you will see a small icon menu appear at the bottom-left of the gauge. The message logger, which does not appear by default, appears when you click this icon and select the `Show Log` option from the menu rendered. To close the message logger window, click the close button in the top-right corner of the window or click anywhere outside the window.
 
@@ -93,7 +93,7 @@ Each real-time update of the chart can result in addition of message(s) to the l
 
 A real-time angular gauge configured to stream messages using the message logger looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-2.js %}
 
 Given below is a brief description of the attributes in the real-time data stream that help you stream messages:
 
@@ -159,7 +159,7 @@ Shown below is a simple example of message type ERROR:
 
 A real-time angular gauge configured to read this message looks like this: When a chart reads this, it'll display the message as under:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-2.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-2.js %}
 
 
 ### Creating Messages with an External Link
@@ -214,7 +214,7 @@ You have seen how you can log messages streamed from the server in the in-built 
 
 A real-time angular gauge configured to handle messages using custom JavaScript functions looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-3.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-3.js %}
 
 
 A simple implementation of the `myFunction` is as follows:
@@ -243,7 +243,7 @@ FusionCharts Suite XT allows you to configure the message logger. Using its clie
 
 A real-time angular gauge with its message logger configured using JavaScript API looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-4.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-logging-real-time-messages-example-4.js %}
 
 In order to manipulate the message logger using JavaScript API you need to get a reference of the gauge. Once this reference  is obtained, you can use any of API methods on the gauge’s logger (provided it's set to on)
 

@@ -76,12 +76,12 @@ A horizontal bullet configured for real-time updates using server-side script lo
         <span style="font-weight: bold;font-size: small;">Daily Sales Tracker by Salesperson</span>
         <span style="font-size: small;">Stereo Exchange Ltd, New York</span>
       </div>  <div style="padding-left: 2px; margin-top: -25px;">
-      {% embed_chart {"source": "gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-2.js", "id": "2"} %}
+{% embed_chart gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-2.js %}
     </div></div><br/>
 
 The data structure needed to render the above chart is given below:
 
-{% embed_data {"source": "gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-2.js"} %}
+{% embed_data gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-2.js %}
 
 Given below is a brief description of the attributes needed to configure real-time updates from the server:
 
@@ -116,12 +116,12 @@ A horizontal bullet configured to stop receiving real-time updates looks like th
         <span style="font-weight: bold;font-size: small;">Daily Sales Tracker by Salesperson</span>
         <span style="font-size: small;">Stereo Exchange Ltd, New York</span>
       </div>  <div style="padding-left: 2px; margin-top: -25px;">
-      {% embed_chart {"source": "gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-3.js", "id": "3"} %}
+{% embed_chart gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-3.js %}
     </div></div><br/>
 
 The data structure needed to render the above chart is given below:
 
-{% embed_data {"source": "gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-4.js"} %}
+{% embed_data gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-4.js %}
 
 Given below is a brief description of the JavaScript API used to stop and restart receiving real-time updates:
 
@@ -155,7 +155,7 @@ Following is an implementation of `realTimeUpdateComplete` event in Real-time bu
         <span style="font-weight: bold;font-size: small;">Daily Sales Tracker by Salesperson</span>
         <span style="font-size: small;">Stereo Exchange Ltd, New York</span>
       </div>  <div style="padding-left: 2px; margin-top: -25px;">
-      {% embed_chart {"source": "gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-4.js", "id": "4"} %}
+{% embed_chart gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-4.js %}
     </div></div><br/>
 
 Given below is a brief description of the `realTimeUpdateComplete` event:
@@ -184,7 +184,7 @@ A horizontal bullet configured to listen to the `realTimeUpdateError` event is i
         <span style="font-weight: bold;font-size: small;">Daily Sales Tracker by Salesperson</span>
         <span style="font-size: small;">Stereo Exchange Ltd, New York</span>
       </div>  <div style="padding-left: 2px; margin-top: -25px;">
-      {% embed_chart {"source": "gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-5.js", "id": "5"} %}
+{% embed_chart gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-5.js %}
     </div></div><br/>
 
 Given below is a brief description of the `realTimeUpdateError` event:

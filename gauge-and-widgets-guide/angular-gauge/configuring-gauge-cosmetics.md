@@ -24,7 +24,7 @@ An angular gauge is usually rendered with solid colors filled in the background.
 
 An angular gauge with the scale rendered using a gradient fill looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-1.js %}
 
 Given below is a brief description of the attributes used to configure the gradient fill for the gauge:
 
@@ -56,7 +56,7 @@ There are several ways in which you can configure the borders of an angular gaug
 
 An angular gauge rendered with the gauge border hidden looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-2.js %}
 
 Given below is a brief description of the attribute used to show/hide the gauge border:
 
@@ -82,7 +82,7 @@ FusionCharts Suite XT allows you to individually configure the color and transpa
 
 An angular gauge with the border cosmetics configured individually for each color range looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-3.js %}
 
 To configure borders individually for each color range, we use the attributes that belong to the `color` object, which in turn belongs to the `colorRange` object. Given below is a brief description of the attributes used to configure individual borders:
 
@@ -108,7 +108,7 @@ You can also configure the cosmetics for the entire border at once.
 
 An angular gauge rendered with the entire border customized at once looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-4.js %}
 
 Given below is a brief description of the attributes used to configure the entire border of the gauge scale at once:
 
@@ -138,7 +138,7 @@ Another option to configure the gauge border is to use a derivative of the fill 
 
 An angular gauge rendered with the derivative of the fill color applied to the border looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-5.js %}
 
 Given below is a brief description of the attribute used to apply the derivative fill color:
 
@@ -160,7 +160,7 @@ Based on the data values provided, the gauge automatically calculates the outer 
 
 An angular gauge with the outer and inner radius explicitly set to 180 and 30, respectively, looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-6.js %}
 
 Given below is a brief description of the attributes used to explicitly set the radius:
 
@@ -183,7 +183,7 @@ Given below is a brief description of the attributes used to explicitly set the 
 
 An angular gauge rendered with the inner radius specified as 75% of the outer radius looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-7.js", "id": "7"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-7.js %}
 
 
 ## Configuring Pivot Properties
@@ -200,7 +200,7 @@ The gauge automatically calculates the pivot radius based on the data values tha
 
 An angular gauge with the pivot radius explicitly set to 10 looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-8.js", "id": "8"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-8.js %}
 
 Given below is a brief description of the attribute used to explicitly set the pivot radius:
 
@@ -233,7 +233,7 @@ For a pivot, you can:
 
 An angular gauge with the pivot border color and transparency set to #333333 and 100, respectively, looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-9.js", "id": "9"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-9.js %}
 
 Given below is a brief description of the attributes used to configure the pivot border cosmetics:
 
@@ -257,7 +257,7 @@ Given below is a brief description of the attributes used to configure the pivot
 
 An angular gauge with the pivot fill color and transparency set to #333333 and 100 looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-10.js", "id": "10"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-10.js %}
 
 Given below is a brief description of the attributes used to configure the pivot fill cosmetics:
 
@@ -283,7 +283,7 @@ The `pivotFillColor` attribute fills the pivot with a single solid color. Howeve
 
 An angular gauge rendered with the gradient fill mix configured for the pivot looks like this
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-11.js", "id": "11"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-11.js %}
 
 Given below is a brief description of the attributes used to apply a gradient fill mix to the pivot:
 
@@ -309,7 +309,7 @@ You can also specify the pivot to be filled with a linear gradient instead of th
 
 An angular gauge rendered with a linear gradient pivot fill looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-12.js", "id": "12"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-12.js %}
 
 Given below is a brief description of the attribute used to configure a linear gradient pivot fill:
 

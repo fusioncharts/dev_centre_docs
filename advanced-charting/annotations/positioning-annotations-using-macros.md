@@ -44,7 +44,7 @@ Annotations can be positioned dynamically with respect to the chart itself and c
 
 A spline chart configured to position annotations with respect to the chart canvas is shown below:
 
-{% embed_chart {"source": "advanced-charting-annotations-positioning-annotations-using-macros-example-1.js", "id": "1"} %}
+{% embed_chart advanced-charting-annotations-positioning-annotations-using-macros-example-1.js %}
 
 
 
@@ -66,13 +66,13 @@ The list of canvas-related macros is given below:
 
 The data structure needed to render the above chart is given below:
 
-{% embed_data {"source": "advanced-charting-annotations-positioning-annotations-using-macros-example-1.js"} %}
+{% embed_data advanced-charting-annotations-positioning-annotations-using-macros-example-1.js %}
 
 ### Positioning Annotations with Respect to Datasets
 
 A spline chart configured to position annotations with respect to datasets is shown below:
 
-{% embed_chart {"source": "advanced-charting-annotations-positioning-annotations-using-macros-example-2.js", "id": "2"} %}
+{% embed_chart advanced-charting-annotations-positioning-annotations-using-macros-example-2.js %}
 
 In the chart above,  the annotation items (the horizontal dashed line, a text label on a rectangle  at extreme left of the dashed line, and the label with the store name and the total number of  visitors on the extreme right side of the line) are dynamically positioned such that they appear when you hover the mouse pointer over the corresponding anchor.  This is done by specifying values for the `x`, `y`,`tox, and `toy` attributes with respect to the dataset position, using annotation macros.
 
@@ -102,13 +102,13 @@ toy:$dataset.0.set.1.STARTY-40 </td>
 
 The data structure to render the above chart is given below::
 
-{% embed_data {"source": "advanced-charting-annotations-positioning-annotations-using-macros-example-2.js"} %}
+{% embed_data advanced-charting-annotations-positioning-annotations-using-macros-example-2.js %}
 
 ### Positioning Annotations with Respect to the Axes
 
 A spline chart with three rectangle and three text annotations positioned with respect to the y-axis is shown below:
 
-{% embed_chart {"source": "advanced-charting-annotations-positioning-annotations-using-macros-example-3.js", "id": "3"} %}
+{% embed_chart advanced-charting-annotations-positioning-annotations-using-macros-example-3.js %}
 
 The annotation items, showing the low, moderate, and high footfall ranges, are dynamically positioned over the y-axis using annotation sub-token macros.
 
@@ -149,7 +149,7 @@ y: $xaxis.label.0.starty+3,
 
 The data structure to render the above chart is given below::
 
-{% embed_data {"source": "advanced-charting-annotations-positioning-annotations-using-macros-example-3.js"} %}
+{% embed_data advanced-charting-annotations-positioning-annotations-using-macros-example-3.js %}
 
 ## Annotation Macros for Positioning with Respect to Other Chart Elements
 

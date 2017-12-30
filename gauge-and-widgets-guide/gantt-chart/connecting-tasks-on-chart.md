@@ -28,7 +28,7 @@ For our "Social Media Optimization" Gantt chart, we can connect tasks in the fol
 
 A Gantt chart rendered with connectors between the above tasks looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-connecting-tasks-on-chart-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-connecting-tasks-on-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to add connectors between tasks:
 
@@ -63,7 +63,7 @@ These attributes belong to the `connector` object, which in turn belongs to the 
 
 A Gantt chart with hover effects enabled looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-connecting-tasks-on-chart-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-connecting-tasks-on-chart-example-2.js %}
 
 Given below is a brief description of the attributes used to configure the hover effects:
 

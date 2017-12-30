@@ -23,7 +23,7 @@ Each theme file is shipped as a separate JavaScript file, located in the __js/th
 
 A column 2D chart showcasing each theme is shown below:
 
-{% embed_chart {"source": "advanced-charting-theme-manager-introduction-to-themes-example-1.js", "id": "1"} %}
+{% embed_chart advanced-charting-theme-manager-introduction-to-themes-example-1.js %}
 
 Click any radio button, followed by the __Apply Theme__ button, to see how the look and feel of the chart changes with each theme.
 
@@ -62,11 +62,11 @@ The following code snippet demonstrates the use of the `theme` attribute for app
 
 A column 2D chart configured using the __carbon__ theme is shown below:
 
-{% embed_chart {"source": "advanced-charting-theme-manager-applying-themes-example-1.js", "id": "2"} %}
+{% embed_chart advanced-charting-theme-manager-applying-themes-example-1.js %}
 
 The complete data structure needed to render this chart is given below:
 
-{% embed_data {"source": "advanced-charting-theme-manager-applying-themes-example-1.js"} %}
+{% embed_data advanced-charting-theme-manager-applying-themes-example-1.js %}
 
 <p class="text-info">
 If you are using the XML data format for the chart, you can use the `theme` attribute within the `<chart>` element. For example, `<chart theme=”carbon”>`

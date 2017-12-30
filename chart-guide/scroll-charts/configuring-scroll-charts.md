@@ -20,7 +20,7 @@ In this section, you will be shown how you can:
 
 A scroll chart with the number of visible data plots set to twelve looks like this:
 
-{% embed_all {"source": "chart-guide-scroll-charts-configuring-scroll-charts-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-scroll-charts-configuring-scroll-charts-example-1.js %}
 
 Given below is a brief description of the attribute used to set the number of visible plots:
 
@@ -42,7 +42,7 @@ By default, a scroll chart has a flat scroll bar. You can opt to render a gradie
 
 A scroll chart with a gradient scroll bar looks like this:
 
-{% embed_all {"source": "chart-guide-scroll-charts-configuring-scroll-charts-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-scroll-charts-configuring-scroll-charts-example-2.js %}
 
 Given below is a brief description of the attribute used to select a flat / gradient scroll bar:
 
@@ -62,7 +62,7 @@ Given below is a brief description of the attribute used to select a flat / grad
 
 A scroll chart with the cosmetic properties of the scroll bar customized looks like this:
 
-{% embed_all {"source": "chart-guide-scroll-charts-configuring-scroll-charts-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-scroll-charts-configuring-scroll-charts-example-3.js %}
 
 Given below is a brief description of the attributes used to customize the scroll bar :
 

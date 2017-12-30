@@ -14,7 +14,7 @@ As an example, we will create a step line chart to compare the revenue earned wi
 
 The step line chart thus created looks like this:
 
-{% embed_all {"source": "chart-guide-step-line-chart-creating-a-step-line-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-step-line-chart-creating-a-step-line-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to create a step line chart:
 

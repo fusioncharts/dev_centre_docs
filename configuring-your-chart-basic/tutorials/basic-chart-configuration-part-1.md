@@ -127,7 +127,7 @@ FusionCharts.ready(function () {
 
 With this we have created a simple 2D column chart as shown below:
 
-{% embed_chart {"source": "basic-chart-configuration-tutorials-example-1.js", "id": "1"} %}
+{% embed_chart basic-chart-configuration-tutorials-example-1.js %}
 
 Click <a href="http://jsfiddle.net/2r4732wj/1/" target="_blank">here</a> to view the above in JSFiddle.
 
@@ -162,7 +162,7 @@ var chartProperties = {
 
 Reloading the same example gives us the below graph with the border:
 
-{% embed_chart {"source": "basic-chart-configuration-tutorials-example-2.js", "id": "2"} %}
+{% embed_chart basic-chart-configuration-tutorials-example-2.js %}
 
 Click <a href="http://jsfiddle.net/2r4732wj/2/" target="_blank">here</a> to view the above in JSFiddle.
 
@@ -192,7 +192,7 @@ var chartProperties = {
 
 The chart now looks as shown below:
 
-{% embed_chart {"source": "basic-chart-configuration-tutorials-example-3.js", "id": "3"} %}
+{% embed_chart basic-chart-configuration-tutorials-example-3.js %}
 
 Click <a href="http://jsfiddle.net/2r4732wj/3/" target="_blank">here</a> to view the above in JSFiddle.
 
@@ -218,7 +218,7 @@ var chartProperties = {
 
 With the above changes the chart now looks as:
 
-{% embed_chart {"source": "basic-chart-configuration-tutorials-example-4.js", "id": "4"} %}
+{% embed_chart basic-chart-configuration-tutorials-example-4.js %}
 
 Click <a href="http://jsfiddle.net/2r4732wj/4/" target="_blank">here</a> to view the above in JSFiddle.
 
@@ -239,7 +239,7 @@ var chartProperties = {
 
 This changes the chart as shown below:
 
-{% embed_chart {"source": "basic-chart-configuration-tutorials-example-5.js", "id": "5"} %}
+{% embed_chart basic-chart-configuration-tutorials-example-5.js %}
 
 Click <a href="http://jsfiddle.net/2r4732wj/5/" target="_blank">here</a> to view the above in JSFiddle.
 
@@ -299,7 +299,7 @@ var chartData = [
 
 The chart now looks like:
 
-{% embed_chart {"source": "basic-chart-configuration-tutorials-example-6.js", "id": "6"} %}
+{% embed_chart basic-chart-configuration-tutorials-example-6.js %}
 
 Click <a href="http://jsfiddle.net/2r4732wj/6/" target="_blank">here</a> to view the above in JSFiddle.
 
@@ -362,7 +362,7 @@ Any property specific to a column goes with the chart data and the properties th
 
 With this change the chart now looks as shown below:
 
-{% embed_chart {"source": "basic-chart-configuration-tutorials-example-7.js", "id": "7"} %}
+{% embed_chart basic-chart-configuration-tutorials-example-7.js %}
 
 Click <a href="http://jsfiddle.net/2r4732wj/7/" target="_blank">here</a> to view the above in JSFiddle.
 

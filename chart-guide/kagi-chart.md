@@ -10,7 +10,7 @@ Developed by the Japanese in the 1870s, the Kagi chart uses a series of vertical
 
 A simple Kagi chart looks like this:
 
-{% embed_all {"source": "chart-guide-kagi-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-kagi-chart-example-1.js %}
 
 As you can see above, the Kagi chart shows a series of connecting vertical lines. The thickness and direction of the lines are dependent on the price. The line extends until the prices are moving in the same direction. Once the prices reverse by a negative amount, a new Kagi line is drawn in a new column. When prices enter a previous high or low, the thickness of the kagi line changes.
 

@@ -26,7 +26,7 @@ In this section, you will be shown how you can:
 
 A thermometer gauge with the gauge fill customized looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-1.js %}
 
 Given below is a brief description of the attributes used to customize the gauge fill:
 
@@ -50,7 +50,7 @@ Given below is a brief description of the attributes used to customize the gauge
 
 A thermometer gauge with the borders customized looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-2.js %}
 
 Given below is a brief description of the attributes used to customize the thermometer gauge border :
 
@@ -84,7 +84,7 @@ By default, the gauge automatically calculates the best thermometer radius and h
 
 A thermometer gauge with the thermometer radius and height set manually looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-3.js %}
 
 Given below is a brief description of the attributes used to manually set the thermometer radius and height:
 
@@ -110,7 +110,7 @@ By default, the current temperature value is shown below the thermometer gauge. 
 
 A thermometer gauge rendered with the temperature value hidden looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-4.js %}
 
 Given below is a brief description of the attribute used to show/hide the gauge value:
 
@@ -130,7 +130,7 @@ Given below is a brief description of the attribute used to show/hide the gauge 
 
 A thermometer gauge with the tick marks and tick values hidden looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-5.js %}
 
 Given below is a brief description of the attributes used to show/hide the tick marks and values:
 
@@ -154,7 +154,7 @@ Given below is a brief description of the attributes used to show/hide the tick 
 
 A thermometer gauge rendered with customized tick marks and tick values looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-6.js %}
 
 Given below is a brief description of the attributes used to configure the tick marks and tick values:
 
@@ -206,7 +206,7 @@ Given below is a brief description of the attributes used to configure the tick 
 
 A thermometer gauge configured for the tick marks cosmetic properties looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-7.js", "id": "7"} %}
+{% embed_all gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-7.js %}
 
 Given below is a brief description of the attributes used to customize the tick marks’ cosmetic properties:
 
@@ -246,7 +246,7 @@ Given below is a brief description of the attributes used to customize the tick 
 
 A thermometer gauge configured to enable hover effects looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-8.js", "id": "8"} %}
+{% embed_all gauge-and-widgets-guide-thermometer-gauge-configuring-gauge-example-8.js %}
 
 Given below is a brief description of the attribute used to enable the hover effect for the thermometer gauge:
 

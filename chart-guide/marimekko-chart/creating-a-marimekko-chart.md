@@ -22,7 +22,7 @@ In this section, you will be shown how you can create a Marimekko Chart.
 
 A simple Marimekko chart that shows the top 3 Electronic Brands (Bose, Dell, and Apple) in the top 3 revenue earning states (California, Washington, and Nevada) looks like this:
 
-{% embed_all {"source": "chart-guide-marimekko-chart-creating-a-marimekko-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-marimekko-chart-creating-a-marimekko-chart-example-1.js %}
 
 The Marimekko chart shown above, when seen in the default mode, helps you instantly figure out the following:
 

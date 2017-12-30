@@ -20,7 +20,7 @@ This section showcases how you can do this using the FusionCharts ASP.NET wrappe
 
 A multi-series line chart that shows the factory output by quantity for three factories is shown below:
 
-{% embed_chart {"source": "using-with-server-side-languages-asp-net-creating-charts-with-data-from-a-database-example-1.js", "id": "1"} %}
+{% embed_chart using-with-server-side-languages-asp-net-creating-charts-with-data-from-a-database-example-1.js %}
 
 Assume that you have a **factoryDB** database with the **factory_output** table that shows the number of units produced by three factories daily, from January 1, 2003 to January 20, 2003. In this example, you will be shown how you can use the FusionCharts ASP.NET wrapper and fetch data from this database to create the above multi-series line chart.
 

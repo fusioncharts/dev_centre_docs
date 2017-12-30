@@ -26,7 +26,7 @@ This section talks about:
 
 By default, vertical divisional lines are not rendered in a chart. A line chart with vertical div lines explicitly rendered is shown below:
 
-{% embed_all {"source": "configuring-your-chart-vertical-div-lines-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-vertical-div-lines-example-1.js %}
 
 Given below is the attribute used to render vertical div lines in a chart:
 
@@ -50,7 +50,7 @@ Given below is the attribute used to render vertical div lines in a chart:
 
 A line chart with customized vertical div lines is as shown below:
 
-{% embed_all {"source": "configuring-your-chart-vertical-div-lines-example-1.js", "id": "2"} %}
+{% embed_all configuring-your-chart-vertical-div-lines-example-1.js %}
 
 Given below are the attributes used to customize the appearance of vertical div lines:
 
@@ -82,7 +82,7 @@ Given below are the attributes used to customize the appearance of vertical div 
 
 You can render vertical divisional lines as dashed lines, instead of the default continuous lines. A line chart with dashed lines as vertical div lines is shown below:
 
-{% embed_all {"source": "configuring-your-chart-vertical-div-lines-example-2.js", "id": "3"} %}
+{% embed_all configuring-your-chart-vertical-div-lines-example-2.js %}
 
 Given below are the attributes used to render dashed vertical div lines:
 
@@ -116,7 +116,7 @@ Given below are the attributes used to render dashed vertical div lines:
 
 Vertical grid bands, by default, do not appear between the vertical divisional lines. A line chart with alternate vertical grid bands enabled is shown below:
 
-{% embed_all {"source": "configuring-your-chart-vertical-div-lines-example-3.js", "id": "4"} %}
+{% embed_all configuring-your-chart-vertical-div-lines-example-3.js %}
 
 Given below is the attribute used to render the alternate grid bands:
 
@@ -140,7 +140,7 @@ Given below is the attribute used to render the alternate grid bands:
 
 A line chart with customized vertical grid bands looks as below:
 
-{% embed_all {"source": "configuring-your-chart-vertical-div-lines-example-4.js", "id": "5"} %}
+{% embed_all configuring-your-chart-vertical-div-lines-example-4.js %}
 
 Given below are the attributes used to customize the vertical grid bands:
 

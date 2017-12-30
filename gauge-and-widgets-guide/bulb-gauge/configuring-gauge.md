@@ -28,7 +28,7 @@ In this section you will be shown how you can:
 
 A bulb gauge rendered with customized gauge border properties looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bulb-gauge-configuring-gauge-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-bulb-gauge-configuring-gauge-example-1.js %}
 
 Given below is a brief description of the attributes used to customize the gauge border:
 
@@ -64,7 +64,7 @@ The `gaugeBorderColor` attribute is used to apply a single solid color to the ga
 
 A bulb gauge rendered using a gradient fill mix for the border looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bulb-gauge-configuring-gauge-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-bulb-gauge-configuring-gauge-example-2.js %}
 
 In the above chart, the gauge border is rendered in a color darker than the initial fill color. To do this, we have used one token of the gradient fill mix to render the bulb border using a color that is 30% darker than the fill color.
 
@@ -76,7 +76,7 @@ By default, the gauge automatically determines its origin and radius based on th
 
 A bulb gauge rendered with the origin and radius configured manually looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bulb-gauge-configuring-gauge-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-bulb-gauge-configuring-gauge-example-3.js %}
 
 Given below is a brief description of the attributes used to manually configure the origin and radius of the bulb gauge:
 
@@ -106,7 +106,7 @@ By default, the bulb gauge is rendered with a 3D look and feel. However, you can
 
 A bulb gauge rendered in 2D looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bulb-gauge-configuring-gauge-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-bulb-gauge-configuring-gauge-example-4.js %}
 
 Given below is a brief description of the attribute used to render a bulb gauge in 2D:
 
@@ -128,7 +128,7 @@ By default, the gauge value is rendered outside the gauge. FusionCharts Suite XT
 
 A bulb gauge configured to render the gauge value inside the gauge looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bulb-gauge-configuring-gauge-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-bulb-gauge-configuring-gauge-example-5.js %}
 
 Given below is a brief description of the attribute used to render the gauge value inside:
 
@@ -150,7 +150,7 @@ By default, the current numerical value of the gauge is rendered on the gauge. I
 
 A bulb gauge configured to show the range name instead of the numerical as the gauge label looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bulb-gauge-configuring-gauge-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-bulb-gauge-configuring-gauge-example-6.js %}
 
 Given below is a brief description of the attribute used to render the range name:
 
@@ -172,7 +172,7 @@ FusionCharts Suite XT allows you to display hover effects for the gauge.
 
 A bulb  gauge configured for hover effects looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bulb-gauge-configuring-gauge-example-7.js", "id": "7"} %}
+{% embed_all gauge-and-widgets-guide-bulb-gauge-configuring-gauge-example-7.js %}
 
 Given below is a brief description of the attribute used to enable the hover effect for the bulb gauge:
 

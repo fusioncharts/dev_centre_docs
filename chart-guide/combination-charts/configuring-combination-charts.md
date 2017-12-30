@@ -22,7 +22,7 @@ For a dual y-axis chart, you can plot trend-lines with respect to both, the prim
 
 A combination chart rendered with two trend-lines looks like this:
 
-{% embed_all {"source": "chart-guide-combination-charts-configuring-combination-charts-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-combination-charts-configuring-combination-charts-example-1.js %}
 
 In the above chart, the `Average Revenue` trend-line has been plotted against the primary y-axis that shows the amount in USD. The `Average Profit %` trend-line has been plotted against the secondary y-axis that shows the profit %.
 
@@ -171,7 +171,7 @@ You can choose to swap positions of the primary and secondary axes.
 
 A combination chart rendered with the positions of the axes swapped looks like this:
 
-{% embed_all {"source": "chart-guide-combination-charts-configuring-combination-charts-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-combination-charts-configuring-combination-charts-example-2.js %}
 
 Given below is a brief description of the attribute used to swap axis positions:
 

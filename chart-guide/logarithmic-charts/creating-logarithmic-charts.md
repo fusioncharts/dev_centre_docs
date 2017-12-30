@@ -20,7 +20,7 @@ As an example, we will create a log column 2D chart that compares the store foot
 
 The log column chart thus rendered looks like this:
 
-{% embed_all {"source": "chart-guide-logarithmic-charts-creating-logarithmic-charts-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-logarithmic-charts-creating-logarithmic-charts-example-1.js %}
 
 
 ## Creating the Log Line 2D Chart

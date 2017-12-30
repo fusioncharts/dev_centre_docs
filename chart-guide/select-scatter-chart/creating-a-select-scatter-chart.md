@@ -16,7 +16,7 @@ As an example, we will plot a select-scatter chart to show the products sold and
 
 The select-scatter chart thus created looks like this:
 
-{% embed_all {"source": "chart-guide-select-scatter-chart-creating-a-select-scatter-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-select-scatter-chart-creating-a-select-scatter-chart-example-1.js %}
 
 To select a set of points, you can drag and draw a rectangle over the chart. All the points within this rectangle are now selected points. Once the rectangle has been drawn, you can resize it to adjust more points. The resize handlers let you do so.
 

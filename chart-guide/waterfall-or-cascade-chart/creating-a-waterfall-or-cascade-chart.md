@@ -16,7 +16,7 @@ As an example, we will create a waterfall chart to show the profit and loss anal
 
 The waterfall chart thus rendered looks like this:
 
-{% embed_all {"source": "chart-guide-waterfall-or-cascade-chart-creating-a-waterfall-or-cascade-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-waterfall-or-cascade-chart-creating-a-waterfall-or-cascade-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to create a waterfall chart:
 

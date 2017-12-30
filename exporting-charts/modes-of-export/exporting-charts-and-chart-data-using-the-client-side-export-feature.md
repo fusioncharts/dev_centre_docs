@@ -57,7 +57,7 @@ Given below is a brief description of the attributes that are used to enable cli
 
 The sample chart below showcases the client-side export feature. As with server-side export, click ![image]({{ site.baseurl }}assets/images/exporting-as-image-and-pdf-export-button.jpg) from the top-right corner of the chart and select __Export as JPG__.
 
-{% embed_all {"source": "exporting-charts-and-chart-data-using-the-client-side-export-feature-example-1.js", "id": "1"} %}
+{% embed_all exporting-charts-and-chart-data-using-the-client-side-export-feature-example-1.js %}
 
 How do you know if the export was done on the client-side? The images below show you the difference:
 

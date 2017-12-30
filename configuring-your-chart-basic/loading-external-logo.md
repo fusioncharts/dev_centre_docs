@@ -18,7 +18,7 @@ This section talks about:
 
 A column 2D chart with an external logo image looks as below:
 
-{% embed_all {"source": "configuring-your-chart-loading-external-logo-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-loading-external-logo-example-1.js %}
 
 Given below is the list of attributes used to add, position and customize an external logo in a chart:
 
@@ -50,7 +50,7 @@ Given below is the list of attributes used to add, position and customize an ext
 
 A column 2D chart with an image linked to an external URL will look as below:
 
-{% embed_all {"source": "configuring-your-chart-loading-external-logo-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-loading-external-logo-example-2.js %}
 
 Given below is the attribute used to link the logo to an external URL:
 

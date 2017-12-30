@@ -32,7 +32,7 @@ This article also includes:
 
 A column 2D chart with customized tooltip border and background looks as below:
 
-{% embed_all {"source": "configuring-your-chart-tool-tips-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-tool-tips-example-1.js %}
 
 Here is a brief description of the attributes used to customize tooltips:
 
@@ -68,7 +68,7 @@ Here is a brief description of the attributes used to customize tooltips:
 
 A column 2D chart with the tooltip text across multiple lines looks as below:
 
-{% embed_all {"source": "configuring-your-chart-tool-tips-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-tool-tips-example-2.js %}
 
 Given below is a brief description of the `toolText` attribute used for this:
 
@@ -104,7 +104,7 @@ Some of the points to remember while using macros for tooltips:
 
 Using the `plotToolText` attribute , you can add dynamic HTML tables in tooltips too. A box and whisker chart with customized tooltips having tables and macros looks as below:
 
-{% embed_all {"source": "configuring-your-chart-tool-tips-example-3.js", "id": "3"} %}
+{% embed_all configuring-your-chart-tool-tips-example-3.js %}
 
 Below is a brief description of the attributes used:
 
@@ -128,7 +128,7 @@ You can use the new `plotToolText` attribute introduced in FusionCharts Suite XT
 
 A column 2D chart with customized tooltips to display a detailed pie 2D chart looks as below:
 
-{% embed_all {"source": "configuring-your-chart-tool-tips-example-5.js", "id": "4"} %}
+{% embed_all configuring-your-chart-tool-tips-example-5.js %}
 
 This can be made possible by using `rollover()` and `rollout()`events on the data plot that can be used to display the pie 2D chart for each data plot when the mouse pointer is hovered over it.
 

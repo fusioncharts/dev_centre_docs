@@ -20,7 +20,7 @@ The base font group is used to customize the font properties for the text render
 
 A column 2D chart with customized base font properties looks as below:
 
-{% embed_all {"source": "configuring-your-chart-fonts-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-fonts-example-1.js %}
 
 Given below is a brief description of the attributes used to customize this text:
 
@@ -50,7 +50,7 @@ The outside canvas base font group is used to customize the font properties for 
 
 A column 2D chart with customized outside canvas base font properties looks as below:
 
-{% embed_all {"source": "configuring-your-chart-fonts-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-fonts-example-2.js %}
 
 Given below is a brief description of the attributes used to customize this text:
 

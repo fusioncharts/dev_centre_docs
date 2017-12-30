@@ -24,7 +24,7 @@ This article describes the API methods that let you create, manipulate, and dele
 
 A spline chart that demonstrates how annotations can be controlled dynamically is shown below:
 
-{% embed_chart {"source": "advanced-charting-annotations-controlling-annotations-dynamically-example-1.js", "id": "1"} %}
+{% embed_chart advanced-charting-annotations-controlling-annotations-dynamically-example-1.js %}
 
 
 
@@ -80,4 +80,4 @@ The API methods to control annotations dynamically are:
 
 The complete data structure for the spline chart is given below:
 
-{% embed_data {"source": "advanced-charting-annotations-controlling-annotations-dynamically-example-1.js"} %}
+{% embed_data advanced-charting-annotations-controlling-annotations-dynamically-example-1.js %}

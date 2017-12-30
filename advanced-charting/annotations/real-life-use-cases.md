@@ -24,17 +24,17 @@ This article describes how annotations can be used in the following scenarios:
 
 ## Adding a Data Callout Label
 
-{% embed_chart {"source": "advanced-charting-annotations-real-life-use-cases-example-1.js", "id": "1"} %}
+{% embed_chart advanced-charting-annotations-real-life-use-cases-example-1.js %}
 
 The above chart shows the usage of annotations to create a callout (using a rectangle, a polygon, and a text annotation, grouped together) above a column. The annotations are dynamically  positioned using annotation macros. After the chart is rendered (when the [renderComplete]{% linkTo FusionCharts.events.renderComplete %}  event is triggered), the quarter with the highest revenue is determined and the annotation group is positioned over the data plot representing that quarter.
 
 The data structure for this chart is given below::
 
-{% embed_data {"source": "advanced-charting-annotations-real-life-use-cases-example-1.js"} %}
+{% embed_data advanced-charting-annotations-real-life-use-cases-example-1.js %}
 
 ## Providing More Information about Data Plots
 
-{% embed_chart {"source": "advanced-charting-annotations-real-life-use-cases-example-2.js", "id": "2"} %}
+{% embed_chart advanced-charting-annotations-real-life-use-cases-example-2.js %}
 
 The above chart compares the footfall at two stores, Bakersfield Central and Los Angeles Topanga.
 
@@ -44,47 +44,47 @@ Macro sub-tokens are used to position the annotation group with respect to the a
 
 The data structure for this chart is given below:
 
-{% embed_data {"source": "advanced-charting-annotations-real-life-use-cases-example-2.js"} %}
+{% embed_data advanced-charting-annotations-real-life-use-cases-example-2.js %}
 
 ## Customizing the Y-axis
 
-{% embed_chart {"source": "advanced-charting-annotations-real-life-use-cases-example-2a.js", "id": "3"} %}
+{% embed_chart advanced-charting-annotations-real-life-use-cases-example-2a.js %}
 
 The above chart showcases annotations positioned dynamically, with respect to the y-axis, using macros. The annotations are used to mark three different ranges - low, moderate and high, with three different colors.
 
 The data structure for this chart is given below:
 
-{% embed_data {"source": "advanced-charting-annotations-real-life-use-cases-example-2a.js"} %}
+{% embed_data advanced-charting-annotations-real-life-use-cases-example-2a.js %}
 
 ## Adding More Context to the Chart
 
-{% embed_chart {"source": "advanced-charting-annotations-real-life-use-cases-example-3.js", "id": "4"} %}
+{% embed_chart advanced-charting-annotations-real-life-use-cases-example-3.js %}
 
 The above gauge shows the customer satisfaction score with some significant data like, the state average and the national average, using annotation shapes and text elements.
 
 The data structure for this chart is given below:
 
-{% embed_data {"source": "advanced-charting-annotations-real-life-use-cases-example-3.js"} %}
+{% embed_data advanced-charting-annotations-real-life-use-cases-example-3.js %}
 
 ## Annotation Images for Better visualization
 
-{% embed_chart {"source": "advanced-charting-annotations-real-life-use-cases-example-4.js", "id": "5"} %}
+{% embed_chart advanced-charting-annotations-real-life-use-cases-example-4.js %}
 
 In this chart, images of brands are shown instead of the conventional 2D column data plots. Using these annotations makes the chart more intuitive while also increasing its visual appeal. Imagine how easy it becomes for your audience to read data in a chart like this, especially if the data is for a large number of brands.
 
 The data structure for this chart is given below:
 
-{% embed_data {"source": "advanced-charting-annotations-real-life-use-cases-example-4.js"} %}
+{% embed_data advanced-charting-annotations-real-life-use-cases-example-4.js %}
 
 ## Events Triggering Display of Annotation Items
 
-{% embed_chart {"source": "advanced-charting-annotations-real-life-use-cases-example-5.js", "id": "6"} %}
+{% embed_chart advanced-charting-annotations-real-life-use-cases-example-5.js %}
 
 The above chart shows how you can use events on annotation items. Hovering the mouse pointer on the Weekend zone that is represented by a green rectangle on the chart, triggers the events `annotationRollOver` and `annotationRollOut`, which show the total footfall on Saturday and Sunday.
 
 The data structure for configuring events on annotation items is as follows:
 
-{% embed_data {"source": "advanced-charting-annotations-real-life-use-cases-example-5.js"} %}
+{% embed_data advanced-charting-annotations-real-life-use-cases-example-5.js %}
 
 ## Creating a Collaborative Dashboard
 

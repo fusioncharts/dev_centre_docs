@@ -14,25 +14,25 @@ This section talks about using predefined palettes.
 
 Palette 1 is the default chart palette. A chart with `palette` set as `1` looks as below:
 
-{% embed_all {"source": "configuring-your-chart-chart-palettes-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-chart-palettes-example-1.js %}
 
 Shown below is the same chart with the other four predefined palettes applied to it:
 
 `palette` set as `2`
 
-{% embed_all {"source": "configuring-your-chart-chart-palettes-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-chart-palettes-example-2.js %}
 
 `palette` set as `3`
 
-{% embed_all {"source": "configuring-your-chart-chart-palettes-example-3.js", "id": "3"} %}
+{% embed_all configuring-your-chart-chart-palettes-example-3.js %}
 
 `palette` set as `4`
 
-{% embed_all {"source": "configuring-your-chart-chart-palettes-example-4.js", "id": "4"} %}
+{% embed_all configuring-your-chart-chart-palettes-example-4.js %}
 
 `palette` set as `5`
 
-{% embed_all {"source": "configuring-your-chart-chart-palettes-example-5.js", "id": "5"} %}
+{% embed_all configuring-your-chart-chart-palettes-example-5.js %}
 
 Given below is a brief description of the palette attribute:
 

@@ -46,7 +46,7 @@ On hovering over a truncated data label, a tooltip showing the full label text i
 
 A column 2D chart with data labels in auto mode looks like this:
 
-{% embed_all {"source": "configuring-your-chart-data-labels-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-data-labels-example-1.js %}
 
 The list of attributes used to configure data labels in Auto mode is as follows:
 
@@ -72,7 +72,7 @@ In this mode, you can wrap long x-axis labels into multiple lines. If enough spa
 
 A column 2D chart with the data labels in wrap mode look like this:
 
-{% embed_all {"source": "configuring-your-chart-data-labels-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-data-labels-example-2.js %}
 
 The attribute used to set the data label mode to wrap mode is described below:
 
@@ -94,7 +94,7 @@ The attribute used to set the data label mode to wrap mode is described below:
 
 A column 2D chart with the data labels in rotate mode with slant labels look like this
 
-{% embed_all {"source": "configuring-your-chart-data-labels-example-3.js", "id": "3"} %}
+{% embed_all configuring-your-chart-data-labels-example-3.js %}
 
 The attributes used for rotating data labels is as follows:
 
@@ -120,7 +120,7 @@ The attributes used for rotating data labels is as follows:
 
 In this mode, data labels are distributed on multiple levels (default is 2) to increase the inter label space available on each level. For example, a column 2D chart with month labels in staggered mode looks like this:
 
-{% embed_all {"source": "configuring-your-chart-data-labels-example-4.js", "id": "4"} %}
+{% embed_all configuring-your-chart-data-labels-example-4.js %}
 
 Please reference attributes table from 'Auto Mode' section above.
 
@@ -146,7 +146,7 @@ If your data plot consists of values representing continuous quantities such as 
 
 A column 2D chart with the data labels using n-th label mode looks like this:
 
-{% embed_all {"source": "configuring-your-chart-data-labels-example-5.js", "id": "5"} %}
+{% embed_all configuring-your-chart-data-labels-example-5.js %}
 
 The list of attributes used to configure N-th Label Mode for data labels is as follows:
 
@@ -170,7 +170,7 @@ The list of attributes used to configure N-th Label Mode for data labels is as f
 
 You can display specific data labels with the help of the `showLabels` and the `showLabel` attributes. A column 2D chart showing only specific data label look like this:
 
-{% embed_all {"source": "configuring-your-chart-data-labels-example-6.js", "id": "6"} %}
+{% embed_all configuring-your-chart-data-labels-example-6.js %}
 
 Given below is a brief description of the attributes used to show specific data labels:
 
@@ -198,11 +198,11 @@ With label management, you can adjust the canvas padding (the space between the 
 
 To accommodate long labels, the chart automatically adjusts the right and left canvas margins. A line 2D chart with automatic canvas padding set for label management look like this:
 
-{% embed_all {"source": "configuring-your-chart-data-labels-example-7.js", "id": "7"} %}
+{% embed_all configuring-your-chart-data-labels-example-7.js %}
 
 An Area 2D chart with `canvasPadding` attribute configured looks like this:
 
-{% embed_all {"source": "configuring-your-chart-data-labels-example-8.js", "id": "8"} %}
+{% embed_all configuring-your-chart-data-labels-example-8.js %}
 
 Given below is a brief description of the attributes used to set the canvas padding in a chart:
 
@@ -240,7 +240,7 @@ You can customize the cosmetic properties of data labels such as font, border, b
 
 A column 2D chart with custom font, font-color and font-size of data labels looks like:
 
-{% embed_all {"source": "configuring-your-chart-data-labels-example-11.js", "id": "9"} %}
+{% embed_all configuring-your-chart-data-labels-example-11.js %}
 
 Given below is the list of attributes used to customize the font for data labels.
 
@@ -280,7 +280,7 @@ Given below is the list of attributes used to customize the font for data labels
 
 A column 2D chart with a dashed border around the data labels looks like:
 
-{% embed_all {"source": "configuring-your-chart-data-labels-example-12.js", "id": "10"} %}
+{% embed_all configuring-your-chart-data-labels-example-12.js %}
 
 Given below is the list of attributes used to customize the border for data labels.
 
@@ -328,7 +328,7 @@ Given below is the list of attributes used to customize the border for data labe
 
 A column 2D chart with custom background for data labels is shown below:
 
-{% embed_all {"source": "configuring-your-chart-data-labels-example-13.js", "id": "11"} %}
+{% embed_all configuring-your-chart-data-labels-example-13.js %}
 
 Given below is the list of attributes used to customize the background for data labels.
 
@@ -352,13 +352,13 @@ Given below is the list of attributes used to customize the background for data 
 
 Shown below is a chart with some very long data labels. As a result of this, the data plots get reduced to a fraction of the chart.
 
-{% embed_all {"source": "configuring-your-chart-data-labels-example-14.js", "id": "12"} %}
+{% embed_all configuring-your-chart-data-labels-example-14.js %}
 
 <br />
 
 Using the `maxLabelHeight` attribute, you can limit the maximum height of the data labels. This will truncate the data labels (add ellipsis) according to the maximum height. Applying `maxLabelHeight` to the above chart yields the following result:
 
-{% embed_all {"source": "configuring-your-chart-data-labels-example-15.js", "id": "13"} %}
+{% embed_all configuring-your-chart-data-labels-example-15.js %}
 
 <table>
   <tr>
@@ -378,7 +378,7 @@ Using the `maxLabelHeight` attribute, you can limit the maximum height of the da
 
 A column 2D chart with x-axis labels linked to `http://www.fusioncharts.com/` is shown below:
 
-{% embed_all {"source": "configuring-your-chart-data-labels-example-16.js", "id": "14"} %}
+{% embed_all configuring-your-chart-data-labels-example-16.js %}
 
 <table>
   <tr>

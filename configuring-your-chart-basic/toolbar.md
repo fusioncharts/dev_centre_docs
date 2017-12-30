@@ -53,7 +53,7 @@ The samples shown below showcase the difference between the current and the prev
 
 The drag-node chart below shows the __current implementation__ of the toolbar:
 
-{% embed_all {"source": "configuring-your-chart-toolbar-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-toolbar-example-1.js %}
 
 The image below shows the __previous implementation__:
 
@@ -61,7 +61,7 @@ The image below shows the __previous implementation__:
 
 The multi-axis line chart below shows the __current implementation__ of the checkboxes used to show/hide the axes lines. This implementation uses pure SVG exportable checkboxes; the previous implementation used HTML checkboxes.
 
- {% embed_all {"source": "configuring-your-chart-toolbar-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-toolbar-example-2.js %}
 
  The image below shows the __previous implementation__:
 

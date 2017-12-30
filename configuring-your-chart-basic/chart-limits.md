@@ -26,7 +26,7 @@ This section will guide you on how you can configure the chart limits for single
 
 A column 2D chart with the chart limits explicitly set to 2,500,000 looks as below:
 
-{% embed_all {"source": "configuring-your-chart-chart-limits-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-chart-limits-example-1.js %}
 
 Given below is the attributes used to define the chart limits:
 
@@ -52,7 +52,7 @@ You can decide whether to set the y-axis lower limit  to `0` (zero) or should th
 
 A column 2D chart with adaptive minimum value for the y-axis set looks as below:
 
-{% embed_all {"source": "configuring-your-chart-chart-limits-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-chart-limits-example-2.js %}
 
 Given below is the attribute used to set an adaptive minimum value for the y-axis:
 
@@ -76,7 +76,7 @@ Given below is the attribute used to set an adaptive minimum value for the y-axi
 
 A combination chart with chart limits explicitly defined for the primary and secondary y-axis looks as below:
 
-{% embed_all {"source": "configuring-your-chart-chart-limits-example-3.js", "id": "3"} %}
+{% embed_all configuring-your-chart-chart-limits-example-3.js %}
 
 Given below are the attributes used to explicitly set chart limits for the primary and secondary y-axis:
 
@@ -104,7 +104,7 @@ Given below are the attributes used to explicitly set chart limits for the prima
 
 You can configure your charts to have the chart limits for the primary and secondary y-axis synced. For charts with static data this can be done by specifying the minimum and maximum y-axis values. This won’t work for dynamic chart data. You can use the sync axis limit feature to ensure that both y-axes have the same limits. A column 2D chart with synced chart limits for the primary and secondary y-axis looks as below:
 
-{% embed_all {"source": "configuring-your-chart-chart-limits-example-4.js", "id": "4"} %}
+{% embed_all configuring-your-chart-chart-limits-example-4.js %}
 
 Given below is the attribute used to sync the chart limits in a dual y-axis chart:
 
@@ -128,7 +128,7 @@ Given below is the attribute used to sync the chart limits in a dual y-axis char
 
 A column 2D chart with the y-axis limits showing, but all other y-axis values hidden looks as below:
 
-{% embed_all {"source": "configuring-your-chart-chart-limits-example-5.js", "id": "5"} %}
+{% embed_all configuring-your-chart-chart-limits-example-5.js %}
 
 Given below is the attribute used to hide chart limits:
 

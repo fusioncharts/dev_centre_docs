@@ -26,7 +26,7 @@ In this section, you will be shown how you can:
 
 A box and whisker chart with the standard deviation icon shown in the legend box looks like this:
 
-{% embed_all {"source": "chart-guide-box-and-whisker-chart-configuring-standard-deviation-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-box-and-whisker-chart-configuring-standard-deviation-example-1.js %}
 
 Given below is a brief description of the attribute used to show the standard deviation icon in the legend:
 
@@ -48,7 +48,7 @@ You can opt to show/hide the standard deviation for specific datasets.
 
 A box and whisker chart with the standard deviation icon shown for a specific dataset in the legends box looks like this:
 
-{% embed_all {"source": "chart-guide-box-and-whisker-chart-configuring-standard-deviation-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-box-and-whisker-chart-configuring-standard-deviation-example-2.js %}
 
 To show/hide individual quartile deviation values, use the `showSD` attribute with the `data` object, that belongs to the `dataset` object.
 
@@ -91,7 +91,7 @@ For multiple data plots, you can draw a line to connect the standard deviation i
 
 A box and whisker chart rendered with a standard deviation connector looks like this:
 
-{% embed_all {"source": "chart-guide-box-and-whisker-chart-configuring-standard-deviation-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-box-and-whisker-chart-configuring-standard-deviation-example-3.js %}
 
 Given below is a brief description of the attribute used to draw standard deviation connectors for the box and whisker chart:
 
@@ -115,7 +115,7 @@ If you use the `showSD` attribute with the `data` object and set it to `0`, the 
 
 A box and whisker chart with the standard deviation null data connected looks like this:
 
-{% embed_all {"source": "chart-guide-box-and-whisker-chart-configuring-standard-deviation-example-4.js", "id": "4"} %}
+{% embed_all chart-guide-box-and-whisker-chart-configuring-standard-deviation-example-4.js %}
 
 In the above chart, a connector is drawn connecting the standard deviation icons of the first and the third data plots, skipping the second data plot.
 

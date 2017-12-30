@@ -12,7 +12,7 @@ A treemap is useful when hierarchical information has to be analyzed. A treemap 
 
 A simple treemap is shown below:
 
-{% embed_all {"source": "chart-guide-treemap-chart-creating-a-simple-treemap-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-treemap-chart-creating-a-simple-treemap-chart-example-1.js %}
 
 This treemap compares the sales team's performance in the present year with their performance in the previous year.
 

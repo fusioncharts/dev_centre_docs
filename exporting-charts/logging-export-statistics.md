@@ -18,7 +18,7 @@ The implementation of this feature helps to monitor the usage of the export serv
 
 The chart shown below is rendered with the logging feature enabled.
 
-{% embed_all {"source": "logging-export-statistics-example-1.js", "id": "1"} %}
+{% embed_all logging-export-statistics-example-1.js %}
 
 The logging details can be handled by the export server as well as by the log server.
 In case of server-side export and auto-export, both of which involve a call to the export server in the export process flow, the export server handles the logging details.

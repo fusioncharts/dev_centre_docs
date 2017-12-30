@@ -46,7 +46,7 @@ Using this data-model, we are generating column 2D chart showing monthly revenue
 
 The column 2D chart by fetching the required data from a database looks like this:
 
-{% embed_chart {"source": "using-with-server-side-languages-django-creating-charts-with-data-from-a-database-example-2.js", "id": "1"} %}
+{% embed_chart using-with-server-side-languages-django-creating-charts-with-data-from-a-database-example-2.js %}
 
 The data code required to create the above chart is given below:
 
@@ -120,7 +120,7 @@ class Country(models.Model):
 
 The column 2D chart, with the drill-down functionality, that we need to render here looks like this:
 
-{% embed_chart {"source": "using-with-server-side-languages-django-creating-charts-with-data-from-a-database-example-1.js", "id": "2"} %}
+{% embed_chart using-with-server-side-languages-django-creating-charts-with-data-from-a-database-example-1.js %}
 
 The code required to create the above chart is given below:
 

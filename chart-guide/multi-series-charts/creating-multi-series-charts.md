@@ -28,7 +28,7 @@ In this section, you will be shown a few examples of how multi-series charts loo
 
 A simple multi-series column 2D chart looks like this:
 
-{% embed_all {"source": "chart-guide-multi-series-charts-creating-multi-series-charts-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-multi-series-charts-creating-multi-series-charts-example-1.js %}
 
 The above chart compares the quarterly revenue earned for the previous year and the current year. The columns for both datasets, one for the previous year and one for the current year, have been rendered using different colors. This makes it easy to interpret and compare the data.
 
@@ -38,7 +38,7 @@ The above chart compares the quarterly revenue earned for the previous year and 
 
 A simple multi-series line chart looks like this:
 
-{% embed_all {"source": "chart-guide-multi-series-charts-creating-multi-series-charts-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-multi-series-charts-creating-multi-series-charts-example-2.js %}
 
 The above chart compares the number of visitors to the website for the last week and the current week. The line segments for both datasets, one for the last week and one for the current week, have been rendered using different colors. This makes it easy to interpret and compare the data.
 

@@ -26,7 +26,7 @@ This section talks about:
 
 Using FusionCharts Suite XT you can specify a custom color for each data plot. A column 2D chart with colors based on the quarter of the year is shown below:
 
-{% embed_all {"source": "configuring-your-chart-data-plot-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-data-plot-example-1.js %}
 
 Given below is the list of attributes used to define custom colors for individual data plots:
 
@@ -76,7 +76,7 @@ You can apply a global gradient color for an entire data plot as described in th
 
 A column 2D chart with global gradient color specified for individual data plots is shown below:
 
-{% embed_all {"source": "configuring-your-chart-data-plot-example-3.js", "id": "2"} %}
+{% embed_all configuring-your-chart-data-plot-example-3.js %}
 
 The list of attributes used to configure gradient color for data plots is shown below:
 
@@ -100,7 +100,7 @@ The list of attributes used to configure gradient color for data plots is shown 
 
 Apart from a basic gradient effect, you can also customize the gradient angle, and fill ratio for a data plot. A column 2D chart with customized gradient properties used for data plots looks as below:
 
-{% embed_all {"source": "configuring-your-chart-data-plot-example-4.js", "id": "3"} %}
+{% embed_all configuring-your-chart-data-plot-example-4.js %}
 
 Given below is the list of attributes used to configure gradient effects:
 
@@ -124,7 +124,7 @@ Given below is the list of attributes used to configure gradient effects:
 
 You can set the transparency of a data plot fill colour. A column 2D chart with data plot transparency property applied looks as below:
 
-{% embed_all {"source": "configuring-your-chart-data-plot-example-5.js", "id": "4"} %}
+{% embed_all configuring-your-chart-data-plot-example-5.js %}
 
 Given below is the list of attributes used to customize transparency of a data plot:
 
@@ -150,7 +150,7 @@ Given below is the list of attributes used to customize transparency of a data p
 
 Every data plot (column, area, or pie) has a border by default.You can choose to either retain the border or remove it. A chart with the ability to configure plot borders is shown below:
 
-{% embed_all {"source": "configuring-your-chart-data-plot-example-6.js", "id": "5"} %}
+{% embed_all configuring-your-chart-data-plot-example-6.js %}
 
 Given below is the attribute used to hide the plot border:
 
@@ -170,7 +170,7 @@ Given below is the attribute used to hide the plot border:
 
 You can set a dashed border for the data plot and can also customize dash-length and the gap between dashes. A column 2D chart with a black dashed border around the data plots looks as below:
 
-{% embed_all {"source": "configuring-your-chart-data-plot-example-7.js", "id": "6"} %}
+{% embed_all configuring-your-chart-data-plot-example-7.js %}
 
 Given below is a brief description of the attributes used to change the data plot border:
 
@@ -211,7 +211,7 @@ Given below is a brief description of the attributes used to change the data plo
 
 You can configure data plots with rounded edges in 2D Column or Bar charts. A chart with the data plots having round edges is shown below:
 
-{% embed_all {"source": "configuring-your-chart-data-plot-example-8.js", "id": "7"} %}
+{% embed_all configuring-your-chart-data-plot-example-8.js %}
 
 Given below is a brief description of the attributes used to apply round edges for data plots:
 
@@ -231,7 +231,7 @@ Given below is a brief description of the attributes used to apply round edges f
 
 You can display hover effects for data plots to add an interactive element to the charts. Shown below is a chart with hover effects enabled:
 
-{% embed_all {"source": "configuring-your-chart-data-plot-example-9.js", "id": "8"} %}
+{% embed_all configuring-your-chart-data-plot-example-9.js %}
 
 Given below is the list of attributes used to configure hover effects at a chart level. These settings are used in the chart object and will apply to all data plots in a chart.
 

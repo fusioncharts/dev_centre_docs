@@ -10,7 +10,7 @@ This section shows you how to customize the canvas area of your chart. Chart can
 
 The blue coloured area shown in the chart below is the canvas area:
 
-{% embed_all {"source": "configuring-your-chart-chart-canvas-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-chart-canvas-example-1.js %}
 
 In this section you will learn how to:
 
@@ -26,7 +26,7 @@ In this section you will learn how to:
 
 A live chart with its canvas fill color modified will look as below:
 
-{% embed_all {"source": "configuring-your-chart-chart-canvas-example-1.js", "id": "2"} %}
+{% embed_all configuring-your-chart-chart-canvas-example-1.js %}
 
 The attributes used to change canvas fill colour are described below:
 
@@ -52,7 +52,7 @@ By default, 2D charts are rendered with a border around the canvas. FusionCharts
 
 A live chart with a modified canvas border will look as below:
 
-{% embed_all {"source": "configuring-your-chart-chart-canvas-example-2.js", "id": "3"} %}
+{% embed_all configuring-your-chart-chart-canvas-example-2.js %}
 
 Given below is a brief description of the attributes used to customize the canvas border:
 
@@ -84,7 +84,7 @@ Given below is a brief description of the attributes used to customize the canva
 
 Below is a sample chart with a gradient filled chart canvas:
 
-{% embed_all {"source": "configuring-your-chart-chart-canvas-example-3.js", "id": "4"} %}
+{% embed_all configuring-your-chart-chart-canvas-example-3.js %}
 
 The following attributes can be used to customize the chart canvas with a gradient fill:
 
@@ -116,7 +116,7 @@ The following attributes can be used to customize the chart canvas with a gradie
 
 The canvas can be configured to have a 3D effect. A column chart with a 3D canvas will look like this:
 
-{% embed_all {"source": "configuring-your-chart-chart-canvas-example-4.js", "id": "5"} %}
+{% embed_all configuring-your-chart-chart-canvas-example-4.js %}
 
 Given below is a list of attributes that can be used to customize the 3D chart canvas:
 

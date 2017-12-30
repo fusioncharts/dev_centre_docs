@@ -10,7 +10,7 @@ There are several methods to calculate and draw regression lines; the zoom-scatt
 
 A zoom-scatter chart rendered with regression lines is shown below:
 
-{% embed_chart {"source": "drawing-regression-lines-in-the-zoom-scatter-chart-example-1.js", "id": "1"} %}
+{% embed_chart drawing-regression-lines-in-the-zoom-scatter-chart-example-1.js %}
 
 Given below is a brief description of the attribute used to show regression lines:
 
@@ -37,7 +37,7 @@ In the zoom-scatter chart shown above, the regression lines are drawn in the **Y
 
 The same chart with the regression lines drawn using the **X on Y** mode looks like this:
 
-{% embed_chart {"source": "drawing-regression-lines-in-the-zoom-scatter-chart-example-2.js", "id": "2"} %}
+{% embed_chart drawing-regression-lines-in-the-zoom-scatter-chart-example-2.js %}
 
 Given below is a brief description of the attributes used to set the mode and customize regression lines:
 

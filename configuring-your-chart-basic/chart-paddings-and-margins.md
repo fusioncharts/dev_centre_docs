@@ -22,7 +22,7 @@ This article shows you how to:
 
 A chart margin is the space between the chart border and the canvas border. It can also be called chart padding. You can set the chart margins on any of the 4 sides of a chart. Below is a chart with equal margins on all four sides:
 
-{% embed_all {"source": "configuring-your-chart-chart-paddings-and-margins-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-chart-paddings-and-margins-example-1.js %}
 
 Given below are the attributes used to customize chart margins:
 
@@ -58,7 +58,7 @@ Given below are the attributes used to customize chart margins:
 
 By setting the axis name padding and axis value padding, you can control the amount of space between the axes and the canvas. A chart with the axis names and axis values with defined padding is shown below:
 
-{% embed_all {"source": "configuring-your-chart-chart-paddings-and-margins-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-chart-paddings-and-margins-example-2.js %}
 
 Given below are the attributes used to set the padding for chart caption, and the axes names and values:
 
@@ -98,7 +98,7 @@ Given below are the attributes used to set the padding for chart caption, and th
 
 A column 2D chart with a padding introduced between the data values and the columns looks as below:
 
-{% embed_all {"source": "configuring-your-chart-chart-paddings-and-margins-example-3.js", "id": "3"} %}
+{% embed_all configuring-your-chart-chart-paddings-and-margins-example-3.js %}
 
 Given below is the attribute used to set data value padding:
 
@@ -122,7 +122,7 @@ Given below is the attribute used to set data value padding:
 
 For a line/area chart, the padding between the canvas border and the position where the line/area chart begins to draw is called canvas padding. A chart with chart padding introduced looks as below:
 
-{% embed_all {"source": "configuring-your-chart-chart-paddings-and-margins-example-4.js", "id": "4"} %}
+{% embed_all configuring-your-chart-chart-paddings-and-margins-example-4.js %}
 
 Given below is the attribute used to configure canvas padding:
 

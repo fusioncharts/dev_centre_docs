@@ -42,7 +42,7 @@ By default, when a pie/doughnut chart is loaded for the first time or refreshed,
 
 A pie chat configured to animate in the clockwise direction is shown below. Click the __Refresh__ button in the  __bottom-right corner__ of the chart to see the animation direction.
 
-{% embed_all {"source": "chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-11.js", "id": "11"} %}
+{% embed_all chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-11.js %}
 
 Given below is a brief description of the `animateClockwise` attribute:
 
@@ -64,7 +64,7 @@ By default, for a pie chart, the actual data values are shown on the chart as we
 
 A pie chart configured to show percent values on the chart looks like this:
 
-{% embed_all {"source": "chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-1.js %}
 
 Given below is a brief description of the attributes used to show percent values:
 
@@ -93,7 +93,7 @@ For a doughnut chart, you can configure the default text that will be rendered o
 
 A doughnut chart with the center label customized looks like this:
 
-{% embed_all {"source": "chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-2.js %}
 
 Given below is a brief description of the attributes used to customize the center label:
 
@@ -120,7 +120,7 @@ By default, the pie and doughnut charts allow you to slice out multiple pie/doug
 
 A pie chart with single-slicing enabled looks like this:
 
-{% embed_all {"source": "chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-3.js %}
 
 Given below is a brief description of the attribute used to enable single-slicing:
 
@@ -142,7 +142,7 @@ By default, pie and doughnut charts are rendered with smart labels and lines - s
 
 A pie chart with smart labels disabled looks like this:
 
-{% embed_all {"source": "chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-4.js", "id": "4"} %}
+{% embed_all chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-4.js %}
 
 Given below is a brief description of the attribute used to disable smart labels:
 
@@ -164,7 +164,7 @@ Given below is a brief description of the attribute used to disable smart labels
 
 A pie chart with the cosmetic properties of smart lines customized looks like this:
 
-{% embed_all {"source": "chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-5.js", "id": "5"} %}
+{% embed_all chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-5.js %}
 
 Given below is a brief description of the attributes used to customize smart lines:
 
@@ -238,7 +238,7 @@ By default, for pie/doughnut charts, the chart automatically calculates the best
 
 A pie chart with the outer radius customized looks like this:
 
-{% embed_all {"source": "chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-6.js", "id": "6"} %}
+{% embed_all chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-6.js %}
 
 Given below is a brief description of the attribute used to customize the outer radius:
 
@@ -260,7 +260,7 @@ By default, pie/doughnut charts start plotting from the 0° angle. The chart all
 
 A pie chart with the starting angle set to 45° looks like this:
 
-{% embed_all {"source": "chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-7.js", "id": "7"} %}
+{% embed_all chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-7.js %}
 
 Given below is a brief description of the attribute used to set the starting angle:
 
@@ -282,7 +282,7 @@ When a pie/doughnut chart first renders, by default, all slices are sliced-in. H
 
 A pie chart rendered with one slice sliced-out looks like this:
 
-{% embed_all {"source": "chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-8.js", "id": "8"} %}
+{% embed_all chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-8.js %}
 
 Given below is a brief description of the attribute used to slice out a pie slice when the chart is first rendered:
 
@@ -304,7 +304,7 @@ When a pie/doughnut slice is sliced-out, you can configure the distance between 
 
 A chart with the slicing distance configured looks like this:
 
-{% embed_all {"source": "chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-9.js", "id": "9"} %}
+{% embed_all chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-9.js %}
 
 Given below is a brief description of the attribute used to configure the slicing distance:
 
@@ -326,7 +326,7 @@ For pie/doughnut charts, you can configure the bevel effect to render the chart 
 
 A pie chart configured for the bevel effect looks like this:
 
-{% embed_all {"source": "chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-10.js", "id": "10"} %}
+{% embed_all chart-guide-pie-and-doughnut-charts-configuring-pie-and-doughnut-charts-example-10.js %}
 
 Given below is a brief description of the attributes used to configure the bevel effect:
 

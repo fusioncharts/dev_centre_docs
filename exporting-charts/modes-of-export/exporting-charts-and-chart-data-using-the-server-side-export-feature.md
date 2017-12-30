@@ -57,7 +57,7 @@ When exporting has been enabled for a chart, the chart is rendered with the expo
 
 A live chart with server-side exporting enabled is shown below:
 
-{% embed_all {"source": "exporting-charts-and-chart-data-using-the-server-side-export-feature-example-1.js", "id": "1"} %}
+{% embed_all exporting-charts-and-chart-data-using-the-server-side-export-feature-example-1.js %}
 
 __Note__: Go to the JSON tab to see how the `exportEnabled` and `exportMode` attributes have been used in the JSON tab.
 

@@ -28,7 +28,7 @@ Instead of displaying numeric data values, you can use text labels to denote dat
 
 A column 2D chart with custom text instead of numeric data values looks as below:
 
-{% embed_all {"source": "configuring-your-chart-data-values-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-data-values-example-1.js %}
 
 Given below is the attribute used to configure text as the data value:
 
@@ -60,13 +60,13 @@ You can display data values in the following modes:
 
 In the normal mode, you can display data values horizontally as shown below:
 
-{% embed_all {"source": "configuring-your-chart-data-values-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-data-values-example-2.js %}
 
 ### Rotated Mode
 
 In the rotated mode, you can rotate data values in a chart as shown below
 
-{% embed_all {"source": "configuring-your-chart-data-values-example-3.js", "id": "3"} %}
+{% embed_all configuring-your-chart-data-values-example-3.js %}
 
 Given below is the attribute used to rotate data values in the chart:
 
@@ -92,7 +92,7 @@ You can place data values inside a chart and you can also rotate it for better c
 
 A column 2D chart with data values placed inside columns looks as shown below:
 
-{% embed_all {"source": "configuring-your-chart-data-values-example-5.js", "id": "4"} %}
+{% embed_all configuring-your-chart-data-values-example-5.js %}
 
 Given below is the attribute used to place data values inside columns:
 
@@ -118,7 +118,7 @@ You can display specific data values as described in this sub-section.
 
 A column 2D chart with specific data values placed inside columns looks as below:
 
-{% embed_all {"source": "configuring-your-chart-data-values-example-6.js", "id": "5"} %}
+{% embed_all configuring-your-chart-data-values-example-6.js %}
 
 Given below is the attribute used to display only specific data values:
 
@@ -148,7 +148,7 @@ If there are a large number of values to be displayed along the y-axis, FusionCh
 
 A column 2D chart with y-axis values skipped to render only alternate values looks as below:
 
-{% embed_all {"source": "configuring-your-chart-data-values-example-7.js", "id": "6"} %}
+{% embed_all configuring-your-chart-data-values-example-7.js %}
 
 Given below is the attribute used to skip y-axis values:
 
@@ -178,7 +178,7 @@ You can customize the data value properties in terms of font, border, background
 
 A column 2D chart with a blue color font and other customizations applied, looks as below:
 
-{% embed_all {"source": "configuring-your-chart-data-values-example-8.js", "id": "7"} %}
+{% embed_all configuring-your-chart-data-values-example-8.js %}
 
 Given below is the list of attributes used to customize the font for data values:
 
@@ -222,7 +222,7 @@ Given below is the list of attributes used to customize the font for data values
 
 A Pie 2D chart with a dashed border around the data values looks as below:
 
-{% embed_all {"source": "configuring-your-chart-data-values-example-9.js", "id": "8"} %}
+{% embed_all configuring-your-chart-data-values-example-9.js %}
 
 Given below is the list of attributes used to customize the border for data values:
 
@@ -274,7 +274,7 @@ Given below is the list of attributes used to customize the border for data valu
 
 A Pie 2D chart with background properties for data values applied looks as below:
 
-{% embed_all {"source": "configuring-your-chart-data-values-example-10.js", "id": "9"} %}
+{% embed_all configuring-your-chart-data-values-example-10.js %}
 
 Given below is the list of attributes used to customize the background for data values:
 

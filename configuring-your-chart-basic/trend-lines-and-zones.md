@@ -34,7 +34,7 @@ FusionCharts Suite XT allows you to specify custom tool-text which will be rende
 
 A column 2D chart with a defined tool-text for trend line looks as below:
 
-{% embed_all {"source": "configuring-your-chart-trend-lines-and-zones-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-trend-lines-and-zones-example-1.js %}
 
 Given below is the attribute used to add tool-text:
 
@@ -54,7 +54,7 @@ Given below is the attribute used to add tool-text:
 
 Trend zones are similar to trend lines except that they mark out an entire zone rather than just a line. A column 2D chart with a trend zone looks as below:
 
-{% embed_all {"source": "configuring-your-chart-trend-lines-and-zones-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-trend-lines-and-zones-example-2.js %}
 
 Given below are the attributes used to render a trend zone:
 
@@ -84,7 +84,7 @@ If the `endValue` attribute is included in the code and `IsTrendZone` is set to 
 
 A column 2D chart with the trend line customized looks as below:
 
-{% embed_all {"source": "configuring-your-chart-trend-lines-and-zones-example-3a.js", "id": "3"} %}
+{% embed_all configuring-your-chart-trend-lines-and-zones-example-3a.js %}
 
 Given below are the attributes used to customize trend lines and trend zones:
 
@@ -110,7 +110,7 @@ Given below are the attributes used to customize trend lines and trend zones:
 
 A column 2D chart with the **trend zone** customized looks as below:
 
-{% embed_all {"source": "configuring-your-chart-trend-lines-and-zones-example-3b.js", "id": "4"} %}
+{% embed_all configuring-your-chart-trend-lines-and-zones-example-3b.js %}
 
 
 ## Customizing the trend-line display value text
@@ -119,7 +119,7 @@ Starting v3.8.0, FusionCharts allows you to also customize the display value tex
 
 A column chart with the trend-line's display value text customized looks as below:
 
-{% embed_all {"source": "configuring-your-chart-trend-lines-and-zones-example-6.js", "id": "8"} %}
+{% embed_all configuring-your-chart-trend-lines-and-zones-example-6.js %}
 
 Given below are the attributes used to customize the trend-line display value text:
 
@@ -195,7 +195,7 @@ Given below are the attributes used to customize the trend-line display value te
 
 A column 2D chart with a dashed trendline looks as below:
 
-{% embed_all {"source": "configuring-your-chart-trend-lines-and-zones-example-4a.js", "id": "5"} %}
+{% embed_all configuring-your-chart-trend-lines-and-zones-example-4a.js %}
 
 Given below are the attributes used to render a dashed trendline instead of the continuous line:
 
@@ -223,7 +223,7 @@ Given below are the attributes used to render a dashed trendline instead of the 
 
 A line chart with a slanted trend line is as shown below:
 
-{% embed_all {"source": "configuring-your-chart-trend-lines-and-zones-example-4b.js", "id": "6"} %}
+{% embed_all configuring-your-chart-trend-lines-and-zones-example-4b.js %}
 
 Given below are the attributes used to render a slanted trend line:
 
@@ -247,7 +247,7 @@ Given below are the attributes used to render a slanted trend line:
 
 FusionCharts Suite XT allows you to show the trendline label to the right of the chart canvas. A column 2D chart with the trendline label rendered on the right looks as below:
 
-{% embed_all {"source": "configuring-your-chart-trend-lines-and-zones-example-5a.js", "id": "7"} %}
+{% embed_all configuring-your-chart-trend-lines-and-zones-example-5a.js %}
 
 Given below is the attribute used to render the trend line label on the right:
 

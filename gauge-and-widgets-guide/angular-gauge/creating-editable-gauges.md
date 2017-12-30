@@ -18,11 +18,11 @@ A normal angular gauge can be converted to an editable gauge by converting all i
 
 An angular gauge with two dials converted to an editable gauge with both dials editable looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-creating-editable-gauges-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-creating-editable-gauges-example-1.js %}
 
 An angular gauge with only one dial editable looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-creating-editable-gauges-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-creating-editable-gauges-example-2.js %}
 
 Given below is a brief description of the attribute used to convert a normal gauge to an editable gauge:
 

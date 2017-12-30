@@ -24,7 +24,7 @@ In this section, you will be shown how you can:
 
 A box and whisker chart with the mean deviation icon shown in the legend box looks like thi:
 
-{% embed_all {"source": "chart-guide-box-and-whisker-chart-configuring-mean-deviation-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-box-and-whisker-chart-configuring-mean-deviation-example-1.js %}
 
 Given below is a brief description of the attribute used to show the mean deviation icon in the legend:
 
@@ -80,7 +80,7 @@ For multiple data plots, you can draw a line to connect the mean deviation icons
 
 A box and whisker chart rendered with a mean deviation connector looks like this:
 
-{% embed_all {"source": "chart-guide-box-and-whisker-chart-configuring-mean-deviation-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-box-and-whisker-chart-configuring-mean-deviation-example-2.js %}
 
 Given below is a brief description of the attribute used to draw mean deviation connectors for the box and whisker chart:
 
@@ -104,7 +104,7 @@ If you use the `showMD` attribute with the `data` object and set it to `0`, the 
 
 A box and whisker chart with the mean deviation null data connected looks like this:
 
-{% embed_all {"source": "chart-guide-box-and-whisker-chart-configuring-mean-deviation-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-box-and-whisker-chart-configuring-mean-deviation-example-3.js %}
 
 In the above chart, a connector is drawn connecting the mean deviation icons of the first and the third data plots, skipping the second data plot.
 

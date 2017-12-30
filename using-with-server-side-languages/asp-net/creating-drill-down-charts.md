@@ -10,7 +10,7 @@ chartPresent: true
 
 A column 2D chart, with the drill-down functionality, is shown below:
 
-{% embed_chart {"source": "using-with-server-side-languages-asp-net-creating-drill-down-charts-example-1.js", "id": "1"} %}
+{% embed_chart using-with-server-side-languages-asp-net-creating-drill-down-charts-example-1.js %}
 
 The above chart shows the annual sales summary for the years 2010-2013. It is configured to show three levels of drill-down. The first column 2D chart shows the yearly sales summary for all the four years.
 

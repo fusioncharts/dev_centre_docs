@@ -14,7 +14,7 @@ In this section, you will be shown how you can specify historical data on a char
 
 A real-time chart rendered with historical data looks like this:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-adding-historical-data-example-1.js", "id": "1"} %}
+{% embed_all advanced-charting-real-time-charts-adding-historical-data-example-1.js %}
 
 The above chart tracks the online purchases from Bakersfield Central at Harry’s SuperMart. When the chart first renders, it shows the purchases record from 8 minutes before the chart was rendered to a minute before. Thereafter, the chart updates itself every 5 seconds.
 In the data structure above, you can see that we have:

@@ -32,7 +32,7 @@ You can render the price chart using a candle chart, a bar chart, or a line char
 
 A candlestick chart with the price chart rendered as a line chart looks like this:
 
-{% embed_all {"source": "chart-guide-candlestick-chart-configuring-a-candlestick-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-candlestick-chart-configuring-a-candlestick-chart-example-1.js %}
 
 Given below is a brief description of the attribute used to set the chart type for the price chart:
 
@@ -72,7 +72,7 @@ Given below is a brief description of the attribute used to set the price to plo
 
 A candlestick chart rendered with the volume chart hidden looks like this:
 
-{% embed_all {"source": "chart-guide-candlestick-chart-configuring-a-candlestick-chart-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-candlestick-chart-configuring-a-candlestick-chart-example-2.js %}
 
 Given below is a brief description of the attribute used to show/hide the volume chart:
 
@@ -98,7 +98,7 @@ For a candlestick chart, you can plot overlay lines on the existing data plots. 
 
 A candlestick chart rendered with a trend-set looks like this:
 
-{% embed_all {"source": "chart-guide-candlestick-chart-configuring-a-candlestick-chart-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-candlestick-chart-configuring-a-candlestick-chart-example-3.js %}
 
 Given below is a brief description of the attributes used to configure the cosmetic and functional properties of trend-sets:
 
@@ -174,7 +174,7 @@ Trend lines are horizontal and vertical lines spanning the chart canvas that aid
 
 A candlestick chart rendered with a horizontal trend-line and a vertical trend-zone looks like this:
 
-{% embed_all {"source": "chart-guide-candlestick-chart-configuring-a-candlestick-chart-example-4.js", "id": "4"} %}
+{% embed_all chart-guide-candlestick-chart-configuring-a-candlestick-chart-example-4.js %}
 
 Given below is a brief description of the cosmetic and functional properties used to configure the horizontal and vertical trend-lines.
 

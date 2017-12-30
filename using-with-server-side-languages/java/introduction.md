@@ -74,7 +74,7 @@ We will create a simple column 2D chart that plots the monthly revenue for the l
 
 The rendered column 2D chart will look like this:
 
-{% embed_chart {"source": "using-with-server-side-languages-java-introduction-example-1.js", "id": "1"} %}
+{% embed_chart using-with-server-side-languages-java-introduction-example-1.js %}
 
 The data structure to render this chart is explained below:
 

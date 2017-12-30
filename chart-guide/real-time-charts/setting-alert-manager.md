@@ -26,7 +26,7 @@ In this section, you will be shown how you can:
 
 A real-time chart, in which the alert manager is configured to call a JavaScript function, looks like this:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-setting-alert-manager-example-1.js", "id": "1"} %}
+{% embed_all advanced-charting-real-time-charts-setting-alert-manager-example-1.js %}
 
 
 The container object for alerts is `alerts` property, which is a child of the `datasource` object.

@@ -22,7 +22,7 @@ By default, trend-lines don’t have a tooltip text configured for them. The too
 
 The column 2D chart shown below uses the `trendlineToolText` attribute for setting a custom tooltip text. Hover the mouse pointer over the trend-lines to see the tooltip text.
 
-{% embed_all {"source": "configuring-your-chart-tooltip-macros-tooltip-macros-additional-examples-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-tooltip-macros-tooltip-macros-additional-examples-example-1.js %}
 
 The tooltip is customized using the code snippet given below:
 
@@ -69,7 +69,7 @@ In the map below, showing the average shipping volume for a distribution network
 * Connector destination
 * Average no. of shipments shipped every day for the last quarter, from the source to the destination
 
-{% embed_all {"source": "configuring-your-chart-tooltip-macros-tooltip-macros-additional-examples-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-tooltip-macros-tooltip-macros-additional-examples-example-2.js %}
 
 The tooltip text is set using the following code snippet:
 
@@ -122,7 +122,7 @@ By default, the tooltip text for the data plots in a box and whisker chart inclu
 
 In the chart shown below, tooltip marcos for the box and whisker chart have been used to add the mean, quartile deviation, standard deviation, and mean deviation values to the tooltip text.
 
-{% embed_all {"source": "configuring-your-chart-tooltip-macros-tooltip-macros-additional-examples-example-3.js", "id": "3"} %}
+{% embed_all configuring-your-chart-tooltip-macros-tooltip-macros-additional-examples-example-3.js %}
 
 The tooltip text is set using the following code snippet:
 

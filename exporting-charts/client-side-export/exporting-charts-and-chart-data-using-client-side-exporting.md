@@ -26,7 +26,7 @@ Please note that, at present, this feature is supported only by the __Chrome__ a
 
 The sample chart below showcases the client-side export feature. As with server-side export, click ![image]({{ site.baseurl }}assets/images/exporting-as-image-and-pdf-export-button.jpg) from the top-right corner of the chart and select __Download as JPEG__.
 
-{% embed_all {"source": "getting-started-adding-interactivity-exporting-to-images-or-pdf-example-1.js", "id": "1"} %}
+{% embed_all getting-started-adding-interactivity-exporting-to-images-or-pdf-example-1.js %}
 
 How do you know if the export was done on the client-side? The images below show you the difference:
 

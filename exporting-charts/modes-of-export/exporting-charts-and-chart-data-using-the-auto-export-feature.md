@@ -70,7 +70,7 @@ Given below is a brief description of the attributes used to enable to the auto 
 
 The sample chart below showcases the auto export feature. Click/hover over the ![image]({{ site.baseurl }}assets/images/exporting-as-image-and-pdf-export-button.jpg) button from the top-right corner of the chart and select an export format.
 
-{% embed_all {"source": "exporting-charts-and-chart-data-using-the-auto-export-feature-example-1.js", "id": "1"} %}
+{% embed_all exporting-charts-and-chart-data-using-the-auto-export-feature-example-1.js %}
 
 Switch to the JSON tab of the chart rendered above to see how the `exportEnabled` and `exportMode` attributes are used. 
 

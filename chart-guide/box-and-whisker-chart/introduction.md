@@ -36,7 +36,7 @@ The distinct features of a box and whisker chart include:
 
 A simple box and whisker chart looks like this:
 
-{% embed_all {"source": "chart-guide-box-and-whisker-chart-introduction-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-box-and-whisker-chart-introduction-example-1.js %}
 
 ## Five-number Summary Principle
 

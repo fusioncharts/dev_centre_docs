@@ -26,7 +26,7 @@ Dividing the canvas of a bubble/scatter chart into quadrants makes analysis of t
 
 A bubble chart rendered with quadrants looks like this:
 
-{% embed_all {"source": "chart-guide-bubble-and-xy-charts-customizing-quadrants-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-bubble-and-xy-charts-customizing-quadrants-example-1.js %}
 
 Given below is a brief description of the attribute used to draw quadrants:
 
@@ -45,7 +45,7 @@ Given below is a brief description of the attribute used to draw quadrants:
 
 A bubble chart rendered with quadrants drawn at user-defined positions looks like this:
 
-{% embed_all {"source": "chart-guide-bubble-and-xy-charts-customizing-quadrants-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-bubble-and-xy-charts-customizing-quadrants-example-2.js %}
 
 Given below is a brief description of the attributes used to draw quadrants at user-defined positions:
 
@@ -72,7 +72,7 @@ The value of this attribute must be within the range of its corresponding relati
 
 A bubble chart with quadrant labels displayed looks like this:
 
-{% embed_all {"source": "chart-guide-bubble-and-xy-charts-customizing-quadrants-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-bubble-and-xy-charts-customizing-quadrants-example-3.js %}
 
 Given below is a brief description of the attributes used to specify quadrant labels:
 
@@ -103,7 +103,7 @@ Given below is a brief description of the attributes used to specify quadrant la
 
 A bubble chart showcasing the cosmetic attributes for quadrant labels is shown below:
 
-{% embed_all {"source": "chart-guide-bubble-and-xy-charts-customizing-quadrants-example-5.js", "id": "5"} %}
+{% embed_all chart-guide-bubble-and-xy-charts-customizing-quadrants-example-5.js %}
 
 Given below is a brief description of the quadrant label cosmetic attributes:
 
@@ -438,7 +438,7 @@ Given below is a brief description of the quadrant label cosmetic attributes:
 
 A bubble chart rendered with customized quadrant lines looks like this:
 
-{% embed_all {"source": "chart-guide-bubble-and-xy-charts-customizing-quadrants-example-4.js", "id": "4"} %}
+{% embed_all chart-guide-bubble-and-xy-charts-customizing-quadrants-example-4.js %}
 
 Given below is a brief description of the attributes used to customize quadrant lines:
 

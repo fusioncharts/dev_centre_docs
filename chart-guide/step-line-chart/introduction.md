@@ -16,6 +16,6 @@ Essentially, trends are quite apparent from the general slope of a line chart. H
 
 A multi-series step line chart looks like this:
 
-{% embed_all {"source": "chart-guide-step-line-chart-introduction-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-step-line-chart-introduction-example-1.js %}
 
 In the chart above, we have compared the revenue earned with the expense incurred in the last year. The step-like composition of the data segments gives an accurate representation for the revenue and expense for each month.

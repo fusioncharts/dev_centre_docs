@@ -10,7 +10,7 @@ Treemapping is a visual representation of an information tree created using the 
 
 A simple treemap is shown below:
 
-{% embed_chart {"source": "chart-guide-treemap-chart-creating-a-simple-treemap-chart-example-1.js", "id": "1"} %}
+{% embed_chart chart-guide-treemap-chart-creating-a-simple-treemap-chart-example-1.js %}
 
 This treemap compares the sales team's performance in the present year with their performance in the previous year.
 
@@ -116,7 +116,7 @@ FusionCharts implements the following model for interacting with a treemap:
 
 #### The initial stage:
 
-{% embed_all {"source": "chart-guide-treemap-chart-creating-a-simple-treemap-chart-example-1.js", "id": "2"} %}
+{% embed_all chart-guide-treemap-chart-creating-a-simple-treemap-chart-example-1.js %}
 
 To drill-down to a leaf node, the user can directly click on that node. For example, when any rectangle (node) in the __Northern Region__ is clicked, the chart view changes to what is shown in the image below:
 

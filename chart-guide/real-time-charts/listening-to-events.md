@@ -48,7 +48,7 @@ The FusionCharts JavaScript Class API `realTimeUpdateComplete`  event is raised 
 
 A real-time column chart configured to listen to the `realTimeUpdateComplete` event is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-listening-to-events-example-1.js", "id": "1"} %}
+{% embed_all advanced-charting-real-time-charts-listening-to-events-example-1.js %}
 
 The above chart shows the real-time statistics of footfalls at the Bakersfield Central outlet. The chart is updated with new data every five seconds. Whenever there is a data update, the `realTimeUpdateComplete` event is fired. The event is configured to then retrieve the last data updated and display it in an HTML table rendered below the chart.
 
@@ -92,7 +92,7 @@ A real-time column chart configured to listen to the `realTimeUpdateError` event
 
 
 
-{% embed_all {"source": "advanced-charting-real-time-charts-listening-to-events-example-2.js", "id": "2"} %}
+{% embed_all advanced-charting-real-time-charts-listening-to-events-example-2.js %}
 
 
 

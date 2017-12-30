@@ -20,7 +20,7 @@ As an example, we will create an error line chart that compares the estimated pr
 
 An error line chart thus created looks like this:
 
-{% embed_all {"source": "chart-guide-error-charts-creating-error-line-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-error-charts-creating-error-line-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to create an error line chart:
 
@@ -50,7 +50,7 @@ You can customize the cosmetic properties of error bars to change their appearan
 
 An error line chart, with the error bar customized, looks like this:
 
-{% embed_all {"source": "chart-guide-error-charts-creating-error-line-chart-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-error-charts-creating-error-line-chart-example-2.js %}
 
 Given below is a brief description of the attributes used to customize the error bars:
 

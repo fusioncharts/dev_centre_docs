@@ -36,7 +36,7 @@ The stacked columns in a Marimekko chart can be rendered:
 
 By default, a Marimekko chart is rendered with percentage values along the y-axis. A Marimekko chart rendered with actual values instead of percentage values looks like this:
 
-{% embed_all {"source": "chart-guide-marimekko-chart-configuring-a-marimekko-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-marimekko-chart-configuring-a-marimekko-chart-example-1.js %}
 
 Given below is a brief description of the attribute used to display actual data values:
 
@@ -55,7 +55,7 @@ Given below is a brief description of the attribute used to display actual data 
 
 By default, the total value of a market segment for a competitor is rendered at the top of each column. Users can choose to hide this value. A Marimekko chart with the total value of market segments hidden looks like this:
 
-{% embed_all {"source": "chart-guide-marimekko-chart-configuring-a-marimekko-chart-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-marimekko-chart-configuring-a-marimekko-chart-example-3.js %}
 
 Given below is a brief description of the attribute used to hide the total value of market segments:
 
@@ -77,7 +77,7 @@ By default, labels are rendered between the columns of a Marimekko chart, along 
 
 A Marimekko chart with the percentage labels on the x-axis hidden looks like this:
 
-{% embed_all {"source": "chart-guide-marimekko-chart-configuring-a-marimekko-chart-example-4.js", "id": "4"} %}
+{% embed_all chart-guide-marimekko-chart-configuring-a-marimekko-chart-example-4.js %}
 
 Given below is a brief description of the attribute used to hide the percentage labels:
 

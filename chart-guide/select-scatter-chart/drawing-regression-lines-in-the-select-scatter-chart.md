@@ -12,7 +12,7 @@ There are several methods to calculate and draw regression lines; scatter charts
 
 A select-scatter chart rendered with a regression line is shown below:
 
-{% embed_all {"source": "drawing-regression-lines-in-the-select-scatter-chart-example-1.js", "id": "1"} %}
+{% embed_all drawing-regression-lines-in-the-select-scatter-chart-example-1.js %}
 
 Given below is a brief description of the attribute used to show regression lines:
 
@@ -39,7 +39,7 @@ In the select-scatter chart shown above, the regression line is drawn in the **Y
 
 The same chart with the regression line drawn using the **X on Y** mode looks like this:
 
-{% embed_all {"source": "drawing-regression-lines-in-the-select-scatter-chart-example-2.js", "id": "2"} %}
+{% embed_all drawing-regression-lines-in-the-select-scatter-chart-example-2.js %}
 
 Given below is a brief description of the attributes used to set the mode and customize regression lines:
 

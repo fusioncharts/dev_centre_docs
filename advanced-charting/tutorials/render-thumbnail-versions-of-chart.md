@@ -11,7 +11,7 @@ FusionCharts Suite XT gives you an option to render your charts as thumbnail ver
 
 Shown below is an example with chart thumbnails that enlarge on click.
 
-{% embed_chart {"source": "render-thumbnail-versions-of-chart-example-1.js", "id": "1"} %}
+{% embed_chart render-thumbnail-versions-of-chart-example-1.js %}
 
 Chart thumbnails are characterised by the following:
 

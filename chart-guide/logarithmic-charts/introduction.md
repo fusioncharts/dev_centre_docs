@@ -30,11 +30,11 @@ FusionCharts Suite XT offers two types of logarithmic charts:
 
 A simple log column 2D chart looks like this:
 
-{% embed_all {"source": "chart-guide-logarithmic-charts-introduction-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-logarithmic-charts-introduction-example-1.js %}
 
 A simple log line chart looks like this:
 
-{% embed_all {"source": "chart-guide-logarithmic-charts-introduction-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-logarithmic-charts-introduction-example-2.js %}
 
 ## Features of Logarithmic Charts
 

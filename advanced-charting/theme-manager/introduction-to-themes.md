@@ -30,7 +30,7 @@ FusionCharts Suite XT is shipped with the following predefined themes:
 
 A column 2D chart showcasing each theme is shown below:
 
-{% embed_chart {"source": "advanced-charting-theme-manager-introduction-to-themes-example-1.js", "id": "1"} %}
+{% embed_chart advanced-charting-theme-manager-introduction-to-themes-example-1.js %}
 
 Click any radio button, followed by the __Apply Theme__ button, to see how the look and feel of the chart changes with each theme.
 

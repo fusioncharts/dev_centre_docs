@@ -28,7 +28,7 @@ This section is divided into following parts:
 
 A chart with both it’s caption and sub-caption set looks as below:
 
-{% embed_all {"source": "configuring-your-chart-titles-and-axis-names-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-titles-and-axis-names-example-1.js %}
 
 Mentioned below is the list of attributes used to set the chart caption and sub-caption:
 
@@ -54,7 +54,7 @@ You can customize the font properties of the chart’s caption and sub-caption.
 
 A column 2D chart with the font colour set to maroon and with custom font size for caption and sub-caption looks as below:
 
-{% embed_all {"source": "configuring-your-chart-titles-and-axis-names-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-titles-and-axis-names-example-2.js %}
 
 Below is the list of attributes used to customize caption and sub-caption font properties:
 
@@ -102,7 +102,7 @@ Below is the list of attributes used to customize caption and sub-caption font p
 
 A column 2D chart with the caption aligned to the bottom right of the chart looks as shown below:
 
-{% embed_all {"source": "configuring-your-chart-titles-and-axis-names-example-3.js", "id": "3"} %}
+{% embed_all configuring-your-chart-titles-and-axis-names-example-3.js %}
 
 Given below is a brief description of the attributes used to configure caption alignment:
 
@@ -138,7 +138,7 @@ You can configure axes names, font properties and border properties in FusionCha
 
 A column 2D chart with x-axis named "Quarter" and y-axis named “Amount (In USD)” looks as below:
 
-{% embed_all {"source": "configuring-your-chart-titles-and-axis-names-example-4.js", "id": "4"} %}
+{% embed_all configuring-your-chart-titles-and-axis-names-example-4.js %}
 
 Given below is a description of the attributes used to configure axes names:
 
@@ -164,7 +164,7 @@ You can configure the cosmetic properties like font, color and size of the x-axi
 
 A column 2D chart with the font cosmetic properties configured looks like this:
 
-{% embed_all {"source": "configuring-your-chart-titles-and-axis-names-example-5.js", "id": "5"} %}
+{% embed_all configuring-your-chart-titles-and-axis-names-example-5.js %}
 
 Given below is the list of attributes used to configure fonts for the x-axis and y-axis:
 
@@ -202,7 +202,7 @@ You can configure the border cosmetic properties of names using attributes descr
 
 A column 2D chart with dashed borders around the axes names looks like this:
 
-{% embed_all {"source": "configuring-your-chart-titles-and-axis-names-example-6.js", "id": "6"} %}
+{% embed_all configuring-your-chart-titles-and-axis-names-example-6.js %}
 
 Given below is the list of attributes used for configuring axes border properties:
 
@@ -250,7 +250,7 @@ Given below is the list of attributes used for configuring axes border propertie
 
 A column 2D chart with the axes name background colour set to blue and high transparency configuration looks as below:
 
-{% embed_all {"source": "configuring-your-chart-titles-and-axis-names-example-7.js", "id": "7"} %}
+{% embed_all configuring-your-chart-titles-and-axis-names-example-7.js %}
 
 The list of attributes used to configure the background for axis names is mentioned below:
 
@@ -284,7 +284,7 @@ The list of attributes used to configure the background for axis names is mentio
 
 A multi-series combination 2D chart with the primary and secondary y-axis names italicized looks as shown below:
 
-{% embed_all {"source": "configuring-your-chart-titles-and-axis-names-example-8.js", "id": "8"} %}
+{% embed_all configuring-your-chart-titles-and-axis-names-example-8.js %}
 
 Following is the list of attributes used to configure font properties for dual y-axes names:
 
@@ -324,7 +324,7 @@ Following is the list of attributes used to configure font properties for dual y
 
 A multi-series combination 2D chart with a blue and semi transparent background for the primary and secondary y-axis names looks as below:
 
-{% embed_all {"source": "configuring-your-chart-titles-and-axis-names-example-9.js", "id": "9"} %}
+{% embed_all configuring-your-chart-titles-and-axis-names-example-9.js %}
 
 Given below is the list of attributes used to configure background for dual y-axes:
 
@@ -352,7 +352,7 @@ Given below is the list of attributes used to configure background for dual y-ax
 
 A Multi-series combination 2D chart with a purple coloured dashed border around the primary and secondary y-axis names looks as below:
 
-{% embed_all {"source": "configuring-your-chart-titles-and-axis-names-example-10.js", "id": "10"} %}
+{% embed_all configuring-your-chart-titles-and-axis-names-example-10.js %}
 
 Given below is the list of attributes used to configure border properties for primary and secondary y-axes names:
 

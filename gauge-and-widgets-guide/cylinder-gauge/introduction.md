@@ -20,7 +20,7 @@ In this section, you will be introduced to:
 
 A simple example of a cylinder gauge has been showcased below:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-introduction-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-introduction-example-1.js %}
 
 The cylinder gauge shown here has been designed to monitor the diesel level in the generator at Bakersfield Central.
 

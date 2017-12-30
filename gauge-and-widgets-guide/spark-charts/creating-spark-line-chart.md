@@ -10,7 +10,7 @@ As an example, we will create a spark line chart that shows the stock price fluc
 
 A spark chart created to show the stock price looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-creating-spark-line-chart-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-creating-spark-line-chart-example-1.js %}
 
 Given below is a brief description of the attribute used to create a simple spark line chart:
 

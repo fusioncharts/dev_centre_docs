@@ -32,7 +32,7 @@ In this section, with respect to dials, we will see how to:
 
 An angular chart with the border of the dial configured looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-dials-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-dials-example-1.js %}
 
 Given below is a brief description of the attributes used to configure the borders of a dial:
 
@@ -60,7 +60,7 @@ Given below is a brief description of the attributes used to configure the borde
 
 An angular gauge rendered with the background of the dial filled with a single color looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-dials-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-dials-example-2.js %}
 
 Given below is a brief description of the attributes used to fill the dial background with a single color:
 
@@ -78,7 +78,7 @@ Given below is a brief description of the attributes used to fill the dial backg
 
 An angular gauge rendered with a gradient-fill background configured for the dial looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-dials-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-dials-example-3.js %}
 
 
 ## Configuring the Radius and Rear Extension
@@ -87,7 +87,7 @@ By default, the radius of the dial is configured by the gauge automatically. How
 
 An angular gauge configured for the radius and rear extension of the dial looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-dials-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-dials-example-4.js %}
 
 Given below is a brief description of the attributes used to configure the radius and rear extension of the dial:
 
@@ -113,7 +113,7 @@ Increasing the base and top width of a dial will increase the thickness of the b
 
 An angular gauge with the base and top width configured for the dial looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-dials-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-dials-example-5.js %}
 
 Given below is a brief description of the attributes used to configure the base and top width for the dial:
 
@@ -139,7 +139,7 @@ You can use hover effects to improve the visual representation of your gauge. Us
 
 An angular gauge with the dial configured for the hover effect looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-dials-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-dials-example-6.js %}
 
 Given below is a brief description of the attributes used to configure the hover effect for the dial:
 
@@ -179,7 +179,7 @@ Given below is a brief description of the attributes used to configure the hover
 
 An angular gauge rendered with the tool-tip text configured for the dial looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-dials-example-7.js", "id": "7"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-dials-example-7.js %}
 
 Given below is a brief description of the attribute used to configure the tool-text for the dial:
 
@@ -201,7 +201,7 @@ This can be achieved using macros.
 
 An angular gauge configured to update the tool-tip text for the dial in real-time looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-dials-example-8.js", "id": "8"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-dials-example-8.js %}
 
 
 The above sample replaces the hard-coded value with the macro `$value`. Now, whenever someone will roll-over the dial, the current value of the dial will be displayed along with the text set in the tooltext attribute of dial element.
@@ -218,7 +218,7 @@ You can add any number of dials to an angular gauge, with each dial configured t
 
 An angular gauge rendered with two dials looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-dials-example-9.js", "id": "9"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-dials-example-9.js %}
 
 To create multiple dials, you only have to create multiple `dial` objects; as many the number of dials you want, as many the number of the `dial` objects you create. The attributes to configure the functional and cosmetic properties for each dial will be initialized separately in each object instance.
 
@@ -230,7 +230,7 @@ Along with configuring the appearance of the dial, you can also show/hide dial v
 
 An angular gauge rendered with two dials, with dial values customized, looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-dials-example-10.js", "id": "10"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-dials-example-10.js %}
 
 Given below is a brief description of the attributes used to configure dial values:
 

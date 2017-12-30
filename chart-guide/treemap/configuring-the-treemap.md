@@ -25,7 +25,7 @@ A simple treemap with __navigation bar__ is shown below :
 
 <p class="text-info"> Click the rectangles in each chart to traverse through the chart and see how the chart view changes. </p>
 
-{% embed_all {"source": "chart-guide-treemap-chart-configuring-the-treemap-chart-example-9.js", "id": "1"} %}
+{% embed_all chart-guide-treemap-chart-configuring-the-treemap-chart-example-9.js %}
 
 This treemap shows the global population by continent as of 2015 with their literacy rate.
 
@@ -147,7 +147,7 @@ The glow effect is useful when the data label font color and the rectangle fill 
 
 A sample treemap with the data labels customized is shown below:
 
-{% embed_all {"source": "chart-guide-treemap-chart-configuring-the-treemap-chart-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-treemap-chart-configuring-the-treemap-chart-example-2.js %}
 
 Given below is a brief description of the attributes used to customize the glow effect for data labels:
 

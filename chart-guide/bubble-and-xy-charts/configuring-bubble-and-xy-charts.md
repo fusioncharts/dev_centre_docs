@@ -26,7 +26,7 @@ By default, data labels are not rendered on the bubbles in a bubble chart.
 
 A bubble chart with data labels rendered on bubbles looks like this:
 
-{% embed_all {"source": "chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-1.js %}
 
 Given below is a brief description of the attribute used to show/hide labels on bubbles:
 
@@ -47,7 +47,7 @@ The x-axis of the bubble/scatter chart can be segmented into categorical zones u
 
 A bubble chart with the x-axis segmented looks like this:
 
-{% embed_all {"source": "chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-2.js %}
 
 ## Configuring the X-axis Labels of Bubble/Scatter Charts
 
@@ -73,7 +73,7 @@ In the auto mode, the chart automatically calculates and displays the x-axis lab
 
 A bubble chart with the x-axis labels rendered in the auto mode looks like this:
 
-{% embed_all {"source": "chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-3.js %}
 
 In the above chart, you can see that the x-axis labels are automatically calculated and displayed. These x-axis labels are based on x-axis values which in turn are generated using the x values of the chart data. Additionally, along with each label a vertical divisional line is also rendered.
 
@@ -83,7 +83,7 @@ In this mode, the x-axis displays labels explicitly defined through the objects 
 
 A bubble chart with the x-axis labels rendered in the categories mode looks like this:
 
-{% embed_all {"source": "chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-4.js", "id": "4"} %}
+{% embed_all chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-4.js %}
 
 In the above chart, you can see that the labels explicitly defined in the `category` object array  within the `categories` object array are displayed. The automatically calculated labels are not displayed.
 
@@ -95,7 +95,7 @@ This mode is a combination of the auto mode and the category mode. It allows the
 
 A bubble chart with the x-axis labels rendered in the mixed mode looks like this:
 
-{% embed_all {"source": "chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-5.js", "id": "5"} %}
+{% embed_all chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-5.js %}
 
 In the above chart, you can see that the x-axis displays the automatically calculated labels as well as the explicitly defined labels.
 
@@ -171,7 +171,7 @@ Given below is a brief description of the attributes used to configure the verti
 
 A scatter chart with all the data points connected by a line looks like this:
 
-{% embed_all {"source": "chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-6.js", "id": "6"} %}
+{% embed_all chart-guide-bubble-and-xy-charts-configuring-bubble-and-xy-charts-example-6.js %}
 
 Given below is a brief description of the attribute used to connect data points by a line:
 

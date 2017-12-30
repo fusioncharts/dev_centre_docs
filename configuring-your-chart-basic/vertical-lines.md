@@ -24,7 +24,7 @@ This section talks about:
 
 You can configure the position where a vertical line will be rendered. A line chart with a vertical line displayed between the Friday and Saturday data points looks as below:
 
-{% embed_all {"source": "configuring-your-chart-vertical-lines-example-1.js", "id": "1"} %}
+{% embed_all configuring-your-chart-vertical-lines-example-1.js %}
 
 Given below is the list of attributes used to configure position of vertical separator line:
 
@@ -54,7 +54,7 @@ Given below is the list of attributes used to configure position of vertical sep
 
 A line 2D chart with a label ("weekend") for the vertical line between the columns for Friday and Saturday looks as below:
 
-{% embed_all {"source": "configuring-your-chart-vertical-lines-example-2.js", "id": "2"} %}
+{% embed_all configuring-your-chart-vertical-lines-example-2.js %}
 
 Given below is the attribute used to create labels for a vertical separator line:
 
@@ -78,7 +78,7 @@ Given below is the attribute used to create labels for a vertical separator line
 
 A line chart with the label position configured to show along the middle of the vline looks as below:
 
-{% embed_all {"source": "configuring-your-chart-vertical-lines-example-2.js", "id": "3"} %}
+{% embed_all configuring-your-chart-vertical-lines-example-2.js %}
 
 Given below is the attribute used to set label position for vertical lines:
 
@@ -102,9 +102,9 @@ Given below is the attribute used to set label position for vertical lines:
 
 A line chart with a customized label alignment looks as below:
 
-{% embed_all {"source": "configuring-your-chart-vertical-lines-example-3.js", "id": "4"} %}
+{% embed_all configuring-your-chart-vertical-lines-example-3.js %}
 
-{% embed_all {"source": "configuring-your-chart-vertical-lines-example-4.js", "id": "5"} %}
+{% embed_all configuring-your-chart-vertical-lines-example-4.js %}
 
 Note that, in the first chart, the label for the vertical line is vertically aligned to the top and horizontally aligned to the left. In the second chart, the label for the vertical line is vertically aligned to the bottom and horizontally aligned to the right.
 
@@ -136,7 +136,7 @@ Given below is a brief description of the attributes used to align the label for
 
 A line chart with the appearance of the vertical line customized (in this case: dashed appearance) looks as below:
 
-{% embed_all {"source": "configuring-your-chart-vertical-lines-example-5.js", "id": "6"} %}
+{% embed_all configuring-your-chart-vertical-lines-example-5.js %}
 
 Given below is the list of attributes used to customize the appearance of a vertical line:
 
@@ -180,7 +180,7 @@ Given below is the list of attributes used to customize the appearance of a vert
 
 A line chart rendered without a border for the label of the vertical line looks as below:
 
-{% embed_all {"source": "configuring-your-chart-vertical-lines-example-6.js", "id": "7"} %}
+{% embed_all configuring-your-chart-vertical-lines-example-6.js %}
 
 Given below is the list of attributes used to turn the label border on or off:
 

@@ -28,8 +28,8 @@ In the multi-series column 2D charts shown below, hover the mouse pointer over a
     <th> Chart with the custom tooltip </th>
   </tr>
   <tr>
-    <td> {% embed_all {"source": "configuring-your-chart-tooltip-macros-example-1.js", "id": "1"} %} </td>
-    <td> {% embed_all {"source": "configuring-your-chart-tooltip-macros-example-2.js", "id": "2"} %} </td>
+{% embed_all configuring-your-chart-tooltip-macros-example-1.js %}
+{% embed_all configuring-your-chart-tooltip-macros-example-2.js %}
   </tr>
 </table>
 
@@ -136,7 +136,7 @@ You can use the new `plotToolText` attribute introduced in FusionCharts Suite XT
 
 A column 2D chart with customized tooltips to display a detailed pie 2D chart looks as below:
 
-{% embed_all {"source": "configuring-your-chart-tool-tips-example-5.js", "id": "4"} %}
+{% embed_all configuring-your-chart-tool-tips-example-5.js %}
 
 This can be made possible by using `rollover ()` and `rollout ()`events on the data plot that can be used to display the pie 2D chart for each data plot when the mouse pointer is hovered over it.
 

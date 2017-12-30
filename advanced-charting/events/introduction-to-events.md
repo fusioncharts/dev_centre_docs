@@ -12,7 +12,7 @@ Events can be used for applications like monitoring the state of a system or a b
 
 Take a look at the pie chart shown below:
 
-{% embed_chart {"source": "advanced-charting-events-introduction-example-1.js", "id": "1"} %}
+{% embed_chart advanced-charting-events-introduction-example-1.js %}
 
 Roll the mouse pointer over any one pie slice and see how the text (the slice label and the no. of visitors) rendered below the chart changes.
 For example, if you roll the mouse pointer over the __Senior__ slice, the following text is displayed is below the chart:

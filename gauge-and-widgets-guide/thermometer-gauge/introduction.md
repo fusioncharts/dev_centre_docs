@@ -18,7 +18,7 @@ In this section, you will be introduced to:
 
 A sample FusionCharts Suite XT real-time thermometer gauge looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-thermometer-gauge-introduction-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-thermometer-gauge-introduction-example-1.js %}
 
 The thermometer gauge shown above is designed to work as the real-time temperature monitor for the Central Cold Store.
 

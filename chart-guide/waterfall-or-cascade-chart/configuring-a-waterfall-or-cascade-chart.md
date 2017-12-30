@@ -20,7 +20,7 @@ By default, every data plot in a waterfall chart is rendered using a different c
 
 A waterfall chart with distinct colors used for the positive and negative data plots looks like this:
 
-{% embed_all {"source": "chart-guide-waterfall-or-cascade-chart-configuring-a-waterfall-or-cascade-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-waterfall-or-cascade-chart-configuring-a-waterfall-or-cascade-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to customize colors for the positive and negative data plots:
 
@@ -48,7 +48,7 @@ A cumulative sum column is something that will show you the sum of all columns t
 
 A waterfall chart rendered with a cumulative sum column looks like this:
 
-{% embed_all {"source": "chart-guide-waterfall-or-cascade-chart-configuring-a-waterfall-or-cascade-chart-example-1.js", "id": "2"} %}
+{% embed_all chart-guide-waterfall-or-cascade-chart-configuring-a-waterfall-or-cascade-chart-example-1.js %}
 
 In the above waterfall chart, the ‘Total Sales’ column is a cumulative sum column.
 
@@ -72,7 +72,7 @@ A non-cumulative sum column is one that shows the sum of all the columns to its 
 
 A waterfall chart rendered with a non-cumulative sum column looks like this:
 
-{% embed_all {"source": "chart-guide-waterfall-or-cascade-chart-configuring-a-waterfall-or-cascade-chart-example-1.js", "id": "3"} %}
+{% embed_all chart-guide-waterfall-or-cascade-chart-configuring-a-waterfall-or-cascade-chart-example-1.js %}
 
 In the above chart, the ‘Total Costs’ column is a non-cumulative sum column.
 
@@ -100,7 +100,7 @@ By default, a column that represents the sum of all the values plotted on the ch
 
 A waterfall chart with the total sum column hidden looks like this:
 
-{% embed_all {"source": "chart-guide-waterfall-or-cascade-chart-configuring-a-waterfall-or-cascade-chart-example-2.js", "id": "4"} %}
+{% embed_all chart-guide-waterfall-or-cascade-chart-configuring-a-waterfall-or-cascade-chart-example-2.js %}
 
 Given below is a brief description of the attribute used to hide the total sum column:
 
@@ -126,7 +126,7 @@ Waterfall charts, by default, display connector lines between two consecutive co
 
 A waterfall chart rendered with customized connector lines looks like this:
 
-{% embed_all {"source": "chart-guide-waterfall-or-cascade-chart-configuring-a-waterfall-or-cascade-chart-example-3.js", "id": "5"} %}
+{% embed_all chart-guide-waterfall-or-cascade-chart-configuring-a-waterfall-or-cascade-chart-example-3.js %}
 
 Given below is a brief description of the attributes used to customize connector lines:
 

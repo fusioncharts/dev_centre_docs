@@ -18,7 +18,7 @@ In this section, you will be shown how you can:
 
 A drag-able column 2D chart created to plot the actual and estimated inventory status for the top five food items at Bakersfield Central looks like this:
 
-{% embed_all {"source": "chart-guide-drag-able-charts-creating-drag-able-charts-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-drag-able-charts-creating-drag-able-charts-example-1.js %}
 
 In the above chart, the data plots representing the estimated value are drag-able.
 
@@ -63,7 +63,7 @@ Given below is a brief description of the events used to configure drag-able cha
 
 A drag-able line 2D chart created to plot the quarterly sales for Apple and Samsung looks like this:
 
-{% embed_all {"source": "chart-guide-drag-able-charts-creating-drag-able-charts-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-drag-able-charts-creating-drag-able-charts-example-2.js %}
 
 In the above chart, the anchors representing the sales estimates for Apple and Samsung for Q3 and Q4 are drag-able. Recall that in the above drag-able column 2D chart we have configured all the data plots for one dataset to be drag-able. In this chart, however, we have made only selected data points of all datasets drag-able.
 
@@ -86,6 +86,6 @@ Given below is a brief description of how the `allowDrag` attribute is used to m
 
 A drag-able area 2D chart created to plot the quarterly sales for Apple and Samsung looks like this:
 
-{% embed_all {"source": "chart-guide-drag-able-charts-creating-drag-able-charts-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-drag-able-charts-creating-drag-able-charts-example-3.js %}
 
 To create a drag-able area 2D chart from a drag-able line 2D chart, just change the `type` attribute to `dragarea`.

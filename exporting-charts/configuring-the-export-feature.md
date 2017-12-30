@@ -16,7 +16,7 @@ When export is enabled, the ![image]({{ site.baseurl }}assets/images/exporting-a
 
 A number of other features can also be configured like the name of the exported file and the display text (in the menu) for each format that is supported. For example, in the chart shown below, we've changed menu item label for three out of the five items and changed the default file name (used when the file is downloaded).
 
-{% embed_all {"source": "exporting-as-image-and-pdf-configuring-export-feature-example-1.js", "id": "1"} %}
+{% embed_all exporting-as-image-and-pdf-configuring-export-feature-example-1.js %}
 
 The following is a complete list of `chart` level attributes that can be used to enable and configure exporting of charts:
 

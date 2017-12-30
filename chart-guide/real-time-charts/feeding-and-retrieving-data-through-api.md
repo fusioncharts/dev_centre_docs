@@ -22,7 +22,7 @@ You can use the `feedData(strData)` method to feed data to the chart. Here, `str
 
 A real-time line chart for which data is set using the `feedData(strData)` method is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-feeding-and-retrieving-data-through-API-example-1.js", "id": "1"} %}
+{% embed_all advanced-charting-real-time-charts-feeding-and-retrieving-data-through-API-example-1.js %}
 
 
 In the above data, we:
@@ -108,7 +108,7 @@ For any real-time chart present in the HTML page, you can use the `getData()` me
 
 A real-time column chart configured to retrieve data using the `getData()` method is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-charts-feeding-and-retrieving-data-through-API-example-2.js", "id": "2"} %}
+{% embed_all advanced-charting-real-time-charts-feeding-and-retrieving-data-through-API-example-2.js %}
 
 The following code snippet shows how you can use the `getData()` method for the above chart:
 

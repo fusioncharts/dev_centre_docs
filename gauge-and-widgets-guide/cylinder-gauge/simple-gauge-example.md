@@ -22,7 +22,7 @@ To create a cylinder gauge, you need to:
 
 The final gauge looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-simple-gauge-example-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-simple-gauge-example-example-1.js %}
 
 Given below is the list of attributes, belonging to the `chart` object, used to create a simple cylinder gauge:
 
