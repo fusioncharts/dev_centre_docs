@@ -1,464 +1,794 @@
-[Home](/)
--	Getting started
-    -   [Installation](/getting-started/installation)
-    -   [Upgrading from Evaluation Versions](/getting-started/upgrading-from-evaluation-versions)
-    -   [Upgrading from Previous Versions](/getting-started/upgrading-from-previous-versions)
-    -   [Your First Chart](/getting-started/building-your-first-chart)
-    -   [Your First Gauge](/getting-started/building-your-gauge)
-    -   [Your First Map](/getting-started/building-your-map)
-    -   [Building a Dashboard](/getting-started/building-a-dashboard)
-    -   [Using XML as Data Format](/getting-started/using-xml-as-data-format)
-    -   [Setting Data Source using URL](/getting-started/setting-data-source-using-url)
-    -   [Export using FusionCharts Export Server](/getting-started/export-your-charts)
-
-    -   Installing via npm and bower 
-        -   [Installing FusionCharts Suite XT via npm and Bower](/getting-started/installing-via-npm-and-bower/installing-fusioncharts-suite-xt-via-npm-and-bower)
-        -   [Installing via npm](/getting-started/installing-via-npm-and-bower/installing-via-npm)
-        -   [Rendering Charts via npm](/getting-started/installing-via-npm-and-bower/rendering-charts-via-npm)
-        -   [Installing via Bower](/getting-started/installing-via-npm-and-bower/installing-via-bower)
-        -   [Rendering Charts via Bower](/getting-started/installing-via-npm-and-bower/rendering-charts-via-bower)
-        -   [List of Charts](/getting-started/list-of-charts)
-        -   [List of Maps](/getting-started/list-of-maps)
-        -   [What's New in v3.12.2](/getting-started/whats-new)
-        -   [Deprecated Functionalities in v3.12.2](/getting-started/deprecated-functionalities)
-    
--   [Guides](#)
-    -   Chart Guide
-        -   Standard Charts
-            -   [Creating Standard Charts](/chart-guide/standard-charts/creating-standard-charts)
-            -   [Configuring Standard Charts](/chart-guide/standard-charts/configuring-standard-charts)
-        -   Pie and Doughnut Charts
-            -   [Creating Pie and Doughnut Charts](/chart-guide/pie-and-doughnut-charts/creating-pie-and-doughnut-charts)
-            -   [Configuring Pie and Doughnut Charts](/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts)
-        -   Multi-series Charts
-            -   [Creating Multi-series Charts](/chart-guide/multi-series-charts/creating-multi-series-charts)
-            -   [Configuring Multi-series Charts](/chart-guide/multi-series-charts/configuring-multi-series-charts)
-        -   Combination Charts
-            -   [Creating Combination Charts](/chart-guide/combination-charts/creating-combination-charts)
-            -   [Configuring Combination Charts](/chart-guide/combination-charts/configuring-combination-charts)
-        -   Stacked Charts
-            -   [Creating a Stacked Chart](/chart-guide/stacked-charts/creating-stacked-charts)
-            -   [Configuring a Stacked Chart](/chart-guide/stacked-charts/configuring-stacked-charts)
-        -   Scroll Charts
-            -   [Creating a Scroll Chart](/chart-guide/scroll-charts/creating-scroll-charts)
-            -   [Configuring Scroll Charts](/chart-guide/scroll-charts/configuring-scroll-charts)
-        -   Bubble and XY Charts
-            -   [Creating Bubble and XY Charts](/chart-guide/bubble-and-xy-charts/creating-bubble-and-xy-charts)
-            -   [Configuring Bubble and XY Charts](/chart-guide/bubble-and-xy-charts/configuring-bubble-and-xy-charts)
-            -   [Drawing Regression Lines in the Bubble and XY Charts](/chart-guide/bubble-and-xy-charts/drawing-regression-lines-in-the-bubble-and-xy-charts)
-            -   [Customizing Quadrants](/chart-guide/bubble-and-xy-charts/customizing-quadrants)
-        -   Pareto Chart
-            -   [Creating a Pareto Chart](/chart-guide/pareto-chart/creating-a-pareto-chart)
-            -   [Configuring a Pareto Chart](/chart-guide/pareto-chart/configuring-a-pareto-chart)
-        -   Marimekko Charts
-            -   [Creating a Marimekko Chart](/chart-guide/marimekko-chart/creating-a-marimekko-chart)
-            -   [Configuring a Marimekko Chart](/chart-guide/marimekko-chart/configuring-a-marimekko-chart)
-        -   Zoom Line Chart
-            -   [Creating a Zoom Line Chart](/chart-guide/zoom-line-chart/creating-a-zoom-line-chart)
-            -   [Configuring a Zoom Line Chart](/chart-guide/zoom-line-chart/configuring-a-zoom-line-chart)
-        -   [Zoom-line Dual Y-Axis Chart](/chart-guide/zoom-line-dy-chart)
-        -   Heat Map Chart
-            -   [Introduction to Heat Map Chart](/chart-guide/heat-map-chart/introduction)
-            -   [Creating Numeric Heat Map Charts](/chart-guide/heat-map-chart/creating-numeric-heat-map-chart)
-            -   [Creating Category-based Heat Map Charts](/chart-guide/heat-map-chart/creating-category-based-heat-map-chart)
-            -   [Legend Options](/chart-guide/heat-map-chart/legend-options)
-            -   [Configuring Labels and Tool-tips](/chart-guide/heat-map-chart/configuring-labels-and-tool-tips)
-            -   [Handling Out-of-range Data](/chart-guide/heat-map-chart/handling-out-of-range-data)
-        -   Treemap
-            -   [Introducing the Treemap](/chart-guide/treemap/introducing-the-treemap)
-            -   [Creating a Simple Treemap](/chart-guide/treemap/creating-a-simple-treemap)
-            -   [Tiling Algorithm for the Treemap](/chart-guide/treemap/tilling-algorithm-for-the-treemap)
-            -   [Configuring the Treemap](/chart-guide/treemap/configuring-the-treemap)
-            -   [Handling Events in the Treemap](/chart-guide/treemap/handling-events-in-the-treemap)
-        -   Drag Node Chart
-            -   [Introduction to Drag Node Chart](/chart-guide/drag-node-chart/introduction)
-            -   [Configuring Drag-node Charts](/chart-guide/drag-node-chart/configuring-drag-node-charts)
-            -   [Adding and Editing Nodes](/chart-guide/drag-node-chart/adding-and-editing-nodes)
-            -   [Adding and Editing Connectors](/chart-guide/drag-node-chart/adding-and-editing-connectors)
-            -   [Adding and Deleting Text Labels](/chart-guide/drag-node-chart/adding-and-deleting-text-labels)
-            -   [Updating Chart Data on Server](/chart-guide/drag-node-chart/updating-chart-data-on-server)
-            -   [Getting Data Using JavaScript](/chart-guide/drag-node-chart/getting-data-using-javascript)
-        -   Drag-able Charts
-            -   [Introduction to Drag-able Chart](/chart-guide/drag-able-charts/introduction)
-            -   [Creating Drag-able Charts](/chart-guide/drag-able-charts/creating-drag-able-charts)
-            -   [Configuring Drag-able Charts](/chart-guide/drag-able-charts/configuring-drag-able-charts)
-            -   [Retrieving Data](/chart-guide/drag-able-charts/retrieving-data)
-        -   Select-scatter Chart
-            -   [Creating a Select-scatter Chart](/chart-guide/select-scatter-chart/creating-a-select-scatter-chart)
-            -   [Getting Selected Data](/chart-guide/select-scatter-chart/getting-selected-data)
-            -   [Drawing Regression Lines in the Select-scatter Chart](/chart-guide/select-scatter-chart/drawing-regression-lines-in-the-select-scatter-chart)
-        -   Zoom-scatter Chart
-            -   [Introducing the Zoom Scatter Chart](/chart-guide/zoom-scatter-chart/introducing-the-zoom-scatter-chart)
-            -   [Creating a Zoom Scatter Chart](/chart-guide/zoom-scatter-chart/creating-a-zoom-scatter-chart)
-            -   [Drawing Regression Lines in the Zoom-scatter Chart](/chart-guide/zoom-scatter-chart/drawing-regression-lines-in-the-zoom-scatter-chart)
-        -   [Radar Chart](/chart-guide/radar-chart)
-        -   [Multi-axis Line Chart](/chart-guide/multi-axis-line-chart)
-        -   [Multi-level Pie Chart](/chart-guide/multi-level-pie-chart)
-        -   Candlestick Chart
-            -   [Creating a Candlestick Chart](/chart-guide/candlestick-chart/creating-a-candlestick-chart)
-            -   [Configuring a Candlestick Chart](/chart-guide/candlestick-chart/configuring-a-candlestick-chart)
-        -   Waterfall (Cascade) Chart
-            -   [Creating a Waterfall (Cascade) Chart](/chart-guide/waterfall-or-cascade-chart/creating-a-waterfall-or-cascade-chart)
-            -   [Configuring a Waterfall (Cascade) Chart](/chart-guide/waterfall-or-cascade-chart/configuring-a-waterfall-or-cascade-chart)
-        -   Box and Whisker Chart
-            -   [Introduction to Box and Whisker Chart](/chart-guide/box-and-whisker-chart/introduction)
-            -   [Creating Box and Whisker Chart](/chart-guide/box-and-whisker-chart/creating-box-and-whisker-chart)
-            -   [Configuring the Five Summary Numbers](/chart-guide/box-and-whisker-chart/configuring-the-five-summary-numbers)
-            -   [Configuring Mean](/chart-guide/box-and-whisker-chart/configuring-mean)
-            -   [Configuring Mean Deviation](/chart-guide/box-and-whisker-chart/configuring-mean-deviation)
-            -   [Configuring Standard Deviation](/chart-guide/box-and-whisker-chart/configuring-standard-deviation)
-            -   [Configuring Quartile Deviation](/chart-guide/box-and-whisker-chart/configuring-quartile-deviation)
-            -   [Configuring Outliers](/chart-guide/box-and-whisker-chart/configuring-outliers)
-        -   Error Charts
-            -   [Introduction to Error Chart](/chart-guide/error-charts/introduction)
-            -   [Creating Error Bar Chart](/chart-guide/error-charts/creating-error-bar-chart)
-            -   [Creating Error Line Chart](/chart-guide/error-charts/creating-error-line-chart)
-            -   [Creating Error Scatter Chart](/chart-guide/error-charts/creating-error-scatter-chart)
-        -   [Spline Charts](/chart-guide/spline-charts)
-        -   [Inverse Y-axis Chart](/chart-guide/inverse-y-axis-chart)
-        -   Logarithmic Charts
-            -   [Introduction to Logarithmic Chart](/chart-guide/logarithmic-charts/introduction)
-            -   [Creating Logarithmic Charts](/chart-guide/logarithmic-charts/creating-logarithmic-charts)
-            -   [Configuring Logarithmic Charts](/chart-guide/logarithmic-charts/configuring-logarithmic-charts)
-        -   Step Line Chart
-            -   [Introduction to Step Line Chart](/chart-guide/step-line-chart/introduction)
-            -   [Creating a Step Line Chart](/chart-guide/step-line-chart/creating-a-step-line-chart)
-            -   [Configuring a Step Line Chart](/chart-guide/step-line-chart/configuring-a-step-line-chart)
-        -   [Kagi Chart](/chart-guide/kagi-chart)
-        -   Real-time Charts
-            -   [Introduction to Real-time Charts](/chart-guide/real-time-charts/introduction)
-            -   [Real-time Data Format](/chart-guide/real-time-charts/data-format)
-            -   [Multiple Datasets and Updates](/chart-guide/real-time-charts/multiple-datasets-and-updates)
-            -   [Adding Historical Data](/chart-guide/real-time-charts/adding-historical-data)
-            -   [Chart Configuration](/chart-guide/real-time-charts/chart-configurations)
-            -   [Adding Data Stamp](/chart-guide/real-time-charts/adding-data-stamp)
-            -   [Setting Alert Manager](/chart-guide/real-time-charts/setting-alert-manager)
-            -   [Setting Message Logger](/chart-guide/real-time-charts/setting-message-logger)
-            -   [Clearing Chart View](/chart-guide/real-time-charts/clearing-chart-view)
-            -   [Feeding & Retrieving Data Through API](/chart-guide/real-time-charts/feeding-and-retrieving-data-through-api)
-            -   [Listening to Events](/chart-guide/real-time-charts/listening-to-events)
-            -   [Troubleshooting](/chart-guide/real-time-charts/troubleshooting)
-    -   Gauge & Widgets Guide
-        -   Angular Gauge
-            -   [Introduction to Angular Gauge](/gauge-and-widgets-guide/angular-gauge/introduction)
-            -   [Simple Angular Gauge Example](/gauge-and-widgets-guide/angular-gauge/simple-gauge-example)
-            -   [Configuring Angular Gauge Cosmetics](/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics)
-            -   [Configuring Dials](/gauge-and-widgets-guide/angular-gauge/configuring-dials)
-            -   [Configuring Tick Marks in Angular Gauge](/gauge-and-widgets-guide/angular-gauge/configuring-tick-marks)
-            -   [Adding Trend Points in Angular Gauge](/gauge-and-widgets-guide/angular-gauge/adding-trend-points)
-            -   [Configuring Angles & Origins](/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins)
-            -   [Dynamically Resizing Gauges](/gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges)
-            -   [Creating Editable Angular Gauge](/gauge-and-widgets-guide/angular-gauge/creating-editable-gauges)
-            -   [Creating Real-time Angluar Gauge](/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges)
-            -   [Logging Real-time Messages](/gauge-and-widgets-guide/angular-gauge/logging-real-time-messages)
-        -   Linear Gauge
-            -   [Introduction to Linear Gauge](/gauge-and-widgets-guide/linear-gauge/introduction)
-            -   [Simple Linear Gauge Example](/gauge-and-widgets-guide/linear-gauge/simple-gauge-example)
-            -   [Configuring Linear Gauge Cosmetics](/gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics)
-            -   [Configuring Tick Marks in Linear Gauge](/gauge-and-widgets-guide/linear-gauge/configuring-tick-marks)
-            -   [Adding Trend-points in Linear Gauge](/gauge-and-widgets-guide/linear-gauge/adding-trend-points)
-            -   [Creating Editable Linear Gauge](/gauge-and-widgets-guide/linear-gauge/creating-editable-gauges)
-            -   [Real-time Linear Gauge](/gauge-and-widgets-guide/linear-gauge/real-time-gauges)
-        -   LED Gauge
-            -   [Introduction to LED Gauge](/gauge-and-widgets-guide/led-gauge/introduction)
-            -   [Simple LED Gauge Example](/gauge-and-widgets-guide/led-gauge/simple-gauge-example)
-            -   [Configuring LED Gauge](/gauge-and-widgets-guide/led-gauge/configuring-gauge)
-            -   [Real-time LED Gauge](/gauge-and-widgets-guide/led-gauge/real-time-gauges)
-        -   Thermometer Gauge
-            -   [Introduction to Thermometer Gauge](/gauge-and-widgets-guide/thermometer-gauge/introduction)
-            -   [Simple Thermometer Gauge Example](/gauge-and-widgets-guide/thermometer-gauge/simple-gauge-example)
-            -   [Configuring Thermometer Gauge](/gauge-and-widgets-guide/thermometer-gauge/configuring-gauge)
-            -   [Real-time Thermometer Gauge](/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges)
-        -   Cylinder Gauge
-            -   [Introduction to Cylinder Gauge](/gauge-and-widgets-guide/cylinder-gauge/introduction)
-            -   [Simple Cylinder Gauge Example](/gauge-and-widgets-guide/cylinder-gauge/simple-gauge-example)
-            -   [Configuring Cylinder Gauge](/gauge-and-widgets-guide/cylinder-gauge/configuring-gauge)
-            -   [Real-time Cylinder Gauge](/gauge-and-widgets-guide/cylinder-gauge/real-time-gauges)
-        -   Bulb Gauge
-            -   [Introduction to Bulb Gauge](/gauge-and-widgets-guide/bulb-gauge/introduction)
-            -   [Simple Bulb Gauge Example](/gauge-and-widgets-guide/bulb-gauge/simple-gauge-example)
-            -   [Configuring Bulb Gauge](/gauge-and-widgets-guide/bulb-gauge/configuring-gauge)
-            -   [Real-time Bulb Gauge](/gauge-and-widgets-guide/bulb-gauge/real-time-gauges)
-        -   Funnel Chart
-            -   [Introduction to Funnel Chart](/gauge-and-widgets-guide/funnel-chart/introduction)
-            -   [Simple Funnel Chart Example](/gauge-and-widgets-guide/funnel-chart/simple-chart-example)
-            -   [Configuring Funnel Chart](/gauge-and-widgets-guide/funnel-chart/configuring-chart)
-        -   Pyramid Chart
-            -   [Introduction to Pyramid Chart](/gauge-and-widgets-guide/pyramid-chart/introduction)
-            -   [Creating a Simple Pyramid Chart](/gauge-and-widgets-guide/pyramid-chart/simple-pyramid-chart)
-            -   [Configuring Pyramid Chart](/gauge-and-widgets-guide/pyramid-chart/configuring-chart)
-        -   Spark Charts
-            -   [Introduction to Spark Chart](/gauge-and-widgets-guide/spark-charts/introduction)
-            -   [Creating a Spark Line Chart](/gauge-and-widgets-guide/spark-charts/creating-spark-line-chart)
-            -   [Configuring Spark Line Chart](/gauge-and-widgets-guide/spark-charts/configuring-spark-line-chart)
-            -   [Creating a Spark Column Chart](/gauge-and-widgets-guide/spark-charts/creating-spark-column-chart)
-            -   [Configuring Spark Column Chart](/gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart)
-            -   [Creating Spark Win/Loss Charts](/gauge-and-widgets-guide/spark-charts/creating-spark-win-loss-charts)
-            -   [Configuring Spark Win/Loss Charts](/gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts)
-        -   Bullet Graphs
-            -   [Introduction to Bullet Graph](/gauge-and-widgets-guide/bullet-graph/introduction)
-            -   [Creating Bullet Graphs](/gauge-and-widgets-guide/bullet-graph/creating-bullet-graphs)
-            -   [Configuring Bullet Graph](/gauge-and-widgets-guide/bullet-graph/configuring-bullet-graph)
-            -   [Real-time Bullet Graph](/gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs)
-        -   Gantt Chart
-            -   [Introduction to Gantt Chart](/gauge-and-widgets-guide/gantt-chart/introduction)
-            -   [Creating a Simple Gantt Chart](/gauge-and-widgets-guide/gantt-chart/creating-simple-gantt-chart)
-            -   [Configuring Cosmetics](/gauge-and-widgets-guide/gantt-chart/configuring-cosmetics)
-            -   [Configuring Task Bars](/gauge-and-widgets-guide/gantt-chart/configuring-task-bars)
-            -   [Configuring Date Formats](/gauge-and-widgets-guide/gantt-chart/configuring-date-formats)
-            -   [Adding Scroll to Chart](/gauge-and-widgets-guide/gantt-chart/adding-scroll-to-chart)
-            -   [Adding Multiple Tasks to a Process](/gauge-and-widgets-guide/gantt-chart/adding-multiple-task-to-a-process)
-            -   [Creating Time-based Charts](/gauge-and-widgets-guide/gantt-chart/creating-time-based-charts)
-            -   [Adding Milestones to a Chart](/gauge-and-widgets-guide/gantt-chart/adding-milestones-to-a-chart)
-            -   [Connecting Tasks on Chart](/gauge-and-widgets-guide/gantt-chart/connecting-tasks-on-chart)
-            -   [Adding Trend-lines](/gauge-and-widgets-guide/gantt-chart/adding-trend-lines)
-            -   [Events in Gantt Chart](/gauge-and-widgets-guide/gantt-chart/events-in-gantt-chart)
-        -   Real-time Gauges
-            -   [Introduction to Real-time Gauges](/gauge-and-widgets-guide/real-time-gauges/introduction)
-            -   [Setting Up Real-time Gauges](/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges)
-            -   [Setting the Alert Manager](/gauge-and-widgets-guide/real-time-gauges/setting-alert-manager)
-            -   [Using Events](/gauge-and-widgets-guide/real-time-gauges/using-events)
-            -   [Troubleshooting Real-time Gauges](/gauge-and-widgets-guide/real-time-gauges/troubleshooting-real-time-gauges)
-    -   Map Guide
-        -   [Setup](/map-guide/setup)
-        -   [Simple Data Driven Map](/map-guide/simple-data-driven-map)
-        -   [Customizing Your Map](/map-guide/customizing-your-map)
-        -   [Custom Entity IDs](/map-guide/custom-entity-ids)
-        -   [Coloring Based on Data Range](/map-guide/colouring-based-on-data-range)
-        -   [Adding Markers](/map-guide/adding-markers)
-        -   [Data Driven Markers](/map-guide/data-driven-markers)
-        -   [Using Marker Sheets](/map-guide/using-marker-sheets)
-        -   [Listening to Map Events](/map-guide/listening-to-map-events)
-        -   [Adding Drill Down to Maps](/map-guide/adding-drill-down-to-maps)
-    -   Map Reference
-        -   [Marker Data](/maps/marker-data/)
-        -   [Specification Sheets](/maps/spec-sheets/)
-        -   [Attribute Reference](/maps/attribute-reference)
-
--   Customizing Charts 
-    -   Basic Chart Configurations
-        -   [Changing the Size and Type](/basic-chart-configurations/changing-the-size-and-type)
-        -   [Border and Background](/basic-chart-configurations/border-and-background)
-        -   [Canvas](/basic-chart-configurations/canvas)
-        -   [Titles and Axis Names](/basic-chart-configurations/titles-and-axis-names)
-        -   [Data Plot](/basic-chart-configurations/data-plot)
-        -   [Data Labels](/basic-chart-configurations/configuring-your-chart-data-labels)
-        -   [Data Values](/basic-chart-configurations/data-values)
-        -   [Number Format](/basic-chart-configurations/number-format)
-        -   [Fonts](/basic-chart-configurations/fonts)
-        -   [Chart Palettes](/basic-chart-configurations/chart-palettes)
-        -   [Centralizing Themes for Your Charts](/basic-chart-configurations/centralizing-themes-for-your-charts)
-        -   [Theme Manager](/basic-chart-configurations/theme-manager)
-        -   [Chart Limits](/basic-chart-configurations/chart-limits)
-        -   [Div Lines and Grids](/basic-chart-configurations/div-lines-and-grids)
-        -   [Vertical Div Lines](/basic-chart-configurations/vertical-div-lines)
-        -   [Zero Plane](/basic-chart-configurations/zero-plane)
-        -   [Trend Lines and Zones](/basic-chart-configurations/trend-lines-and-zones)
-        -   [Anchors and Lines](/basic-chart-configurations/anchors-and-lines)
-        -   [Cross Line](/basic-chart-configurations/cross-line)
-        -   [Tooltips](/basic-chart-configurations/tool-tips)
-        -   Tooltip Macros
-            -   [Introduction to Tooltip Macros](/basic-chart-configurations/tooltip-macros/introduction-to-tooltip-macros)
-            -   [List of Tooltip Macros](/basic-chart-configurations/tooltip-macros/list-of-macros)
-            -   [Tooltip Macros-Additional Examples](/basic-chart-configurations/tooltip-macros/tooltip-macros-additional-examples)
-        -   [Vertical Lines](/basic-chart-configurations/vertical-lines)
-        -   [Legend](/basic-chart-configurations/legend)
-        -   [Annotations](/basic-chart-configurations/annotations)
-        -   [Tick Marks](/basic-chart-configurations/tick-marks)
-        -   [Loading External Logo](/basic-chart-configurations/loading-external-logo)
-        -   [Chart Paddings and Margins](/basic-chart-configurations/chart-paddings-and-margins)
-        -   [Toolbar](/basic-chart-configurations/toolbar)
-        -   Tutorials
-            -   [Basic Chart Configuration(Part-1)](/basic-chart-configurations/tutorials/basic-chart-configuration-part-1)
-            -   [Basic Chart Configuration(Part-2)](/basic-chart-configurations/tutorials/basic-chart-configuration-part-2)
-    -   Advanced Chart Configurations
-        -   Events
-            -   [Introduction to Events](/advanced-chart-configurations/events/introduction-to-events)
-            -   [Handling Events](/advanced-chart-configurations/events/handling-events)
-            -   [Classifying Events](/advanced-chart-configurations/events/classifying-events)
-        -   Drill-down
-            -   [Creating Simple Drill-down Charts](/advanced-chart-configurations/drill-down/simple-drill-down)
-            -   [Opening Links in Pop-up Windows or Frames](/advanced-chart-configurations/drill-down/opening-in-pop-up-or-frames)
-            -   [Setting the Chart as a Hotspot](/advanced-chart-configurations/drill-down/set-chart-as-hotspot)
-            -   [Creating and Configuring Linked Charts](/advanced-chart-configurations/drill-down/linkedcharts)
-            -   [Using JavaScript Functions as Links](/advanced-chart-configurations/drill-down/using-javascript-functions-as-links)
-        -   Annotations
-            -   [Introduction to Annotations](/advanced-chart-configurations/annotations/introduction)
-            -   Creating Annotations
-                -   [Introduction to creating annotations](/advanced-chart-configurations/annotations/creating-annotations/introduction)
-                -   [Creating Text Annotations](/advanced-chart-configurations/annotations/creating-annotations/creating-text-annotations)
-                -   [Creating Image Annotations](/advanced-chart-configurations/annotations/creating-annotations/creating-image-annotations)
-                -   [Creating Shape Annotations](/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations)
-                -   [Creating Path Annotations](/advanced-chart-configurations/annotations/creating-annotations/creating-path-annotations)
-            -   [Positioning Annotations Using Absolute Values](/advanced-chart-configurations/annotations/positioning-annotations-using-absolute-values)
-            -   [Positioning Annotations Using Macros](/advanced-chart-configurations/annotations/positioning-annotations-using-macros)
-            -   [Grouping Annotations](/advanced-chart-configurations/annotations/grouping-annotations)
-            -   [Controlling Annotations Dynamically](/advanced-chart-configurations/annotations/controlling-annotations-dynamically)
-            -   [Using Annotation Events](/advanced-chart-configurations/annotations/using-annotation-events)
-            -   [Real-life Use Cases](/advanced-chart-configurations/annotations/real-life-use-cases)
-            -   [Annotations References](/advanced-chart-configurations/annotations/annotations-references)
-        -   Theme Manager
-            -   [Introduction to Themes](/advanced-chart-configurations/theme-manager/introduction-to-themes)
-            -   [Applying Themes](/advanced-chart-configurations/theme-manager/applying-themes)
-            -   [Basics of Theme Definition](/advanced-chart-configurations/theme-manager/basics-of-theme-definition)
-            -   [Modifying Existing Themes](/advanced-chart-configurations/theme-manager/modifying-existing-themes)
-            -   [Creating New Themes](/advanced-chart-configurations/theme-manager/creating-new-themes)
-        -   Tutorials
-            -   [Render Thumbnail Versions of Charts](/advanced-chart-configurations/tutorials/render-thumbnail-versions-of-chart)
-            -   [Configure Chart Messages](/advanced-chart-configurations/tutorials/change-chart-messages)
-    -   [Chart Attributes](/chart-attributes)
-    -   Export Using
-        -   FusionCharts Export Server
-            -   [Exporting Charts as Image and PDF](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf)
-            -   [Exporting Chart Data](/exporting-charts/using-fc-export-server/exporting-chart-data)
-            -   Modes of Export
-                -   [Exporting Charts and Chart Data Using the Server-side Export Feature](/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature)
-                -   [Exporting Charts and Chart Data Using the Client-side Export Feature](/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-client-side-export-feature)
-                -   [Exporting Charts and Chart Data Using the Auto Export Feature](/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-auto-export-feature)
-            -   [Logging Export Statistics](/exporting-charts/using-fc-export-server/logging-export-statistics)
-            -   [Configuring the Export Feature](/exporting-charts/using-fc-export-server/configuring-the-export-feature)
-            -   Setup Private Export Server
-                -   [ASP.NET](/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server-asp-net)
-                -   [PHP](/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server-php)
-                -   [Java](/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server-java)
-                -   [Ruby on Rails](/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server-ruby-on-rails)
-            -   [Exporting Multiple Charts in a Single Image](/exporting-charts/using-fc-export-server/exporting-multiple-charts-in-a-single-image)
-            -   [Architecture of the FusionCharts Export Server](/exporting-charts/using-fc-export-server/architecture-of-the-fusioncharts-export-server)
-        -   FusionExport <span class="bubble-text">Beta</span>
-            -   [Overview](/exporting-charts/using-fusionexport/overview)
-            -   Installation
-                -   [Install FusionExport desktop](/exporting-charts/using-fusionexport/installation/install-fusionexport-desktop)
-                -   [Install FusionExport Web Service](/exporting-charts/using-fusionexport/installation/install-fusionexport-web-service)
-                -   [Install FusionExport CLI](/exporting-charts/using-fusionexport/installation/install-fusionexport-cli)
-                -   [Add Language SDKs](/exporting-charts/using-fusionexport/installation/add-language-sdks)
-            -   Tutorials
-                -   [Export chart as image](/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
-                -   [Change the export type](/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
-                -   [Customize the width and height of an exported chart](/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
-                -   [Export charts in bulk](/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files)
-                -   [Export the output files as a zip](/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip)
-                -   [Override the chart config](/exporting-charts/using-fusionexport/tutorials/override-the-chart-config)
-                -   [Export a dashboard](/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
-                -   [Add a logo or a heading to the dashboard](/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard)
-                -   [Convert an SVG image to PNG/JPEG/PDF](/exporting-charts/using-fusionexport/tutorials/convert-an-svg-image-to-png-jpeg-pdf)
-                -   [Use the licensed FusionCharts library for export](/exporting-charts/using-fusionexport/tutorials/using-fusionexport/use-the-licensed-fusioncharts-library-for-export)
-                -   [Inject extra JavaScript while exporting](/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting)
-                -   [Export remotely](/exporting-charts/using-fusionexport/tutorials/export-remotely)
-                -   [Manipulate the output filename](/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename)
-                -   [Add CLI options in a file](/exporting-charts/using-fusionexport/tutorials/cli-options-in-a-file)
-                -   [Enable logging](/exporting-charts/using-fusionexport/tutorials/enabling-logging)
-                -   [Save exported files to S3](/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three)
-                -   [Asynchronous capture](/exporting-charts/using-fusionexport/tutorials/asynchronous-capture)
-                -   [Export a D3 chart](/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart)
-            -   [CLI Reference](/exporting-charts/using-fusionexport/cli-reference)
-            -   [Web Service API Reference](/exporting-charts/using-fusionexport/fusionexport-web-service-api-reference)
-            -   SDK API Reference
-                -   [Node.js](/exporting-charts/using-fusionexport/sdk-api-reference/nodejs)
-                -   [Java](/exporting-charts/using-fusionexport/sdk-api-reference/java)
-                -   [C#](/exporting-charts/using-fusionexport/sdk-api-reference/c-sharp)
-                -   [PHP](/exporting-charts/using-fusionexport/sdk-api-reference/php)
-                -   [Python](/exporting-charts/using-fusionexport/sdk-api-reference/python)
-                -   [Golang](/exporting-charts/using-fusionexport/sdk-api-reference/golang)
-
--   API Reference
-    -   [FusionCharts](/api/fusioncharts)
-    -   [Events](/api/fusioncharts/fusioncharts-events)
-    -   [Methods](/api/fusioncharts/fusioncharts-methods)
-    -   [Properties](/api/fusioncharts/fusioncharts-properties)
-    -   [Type Definitions](/api/fusioncharts/fusioncharts-typedefs)
-    -   Namespaces
-        -   [Debugger](/api/fusioncharts/namespaces/debugger)
-        -   [Ajax](/api/fusioncharts/namespaces/ajax)
-        -   [PrintManager](/api/fusioncharts/namespaces/printmanager)
-        -   [Annotations](/api/fusioncharts/namespaces/annotations)
-    -   [Global Methods](/api/global-methods)
-
--   Tutorials
-    -   [Remove an Existing Chart from a Page](/api/tutorials/remove-an-existing-chart-from-a-page)
-    -   [Get Reference to Chart Object](/api/tutorials/reference-to-chart-object)
-    -   [FusionCharts Constructor and Object](/api/tutorials/fusioncharts-constructor-and-object)
-    -   [Change Chart Properties at Runtime](/api/tutorials/change-chart-properties-at-runtime)
-    -   [Using Special Characters](/api/tutorials/using-special-characters-in-a-chart)
-    -   [Plot Discontinuous Data](/api/tutorials/plot-discontinuous-data)
-    -   [Highlight Specific Data Points](/api/tutorials/highlight-specific-data-points-on-chart)
-    -   [View Data of Existing Chart](/api/tutorials/view-data-of-existing-chart-on-page)
-    -   [Get Formatted Numbers Outside Chart](/api/tutorials/get-formatted-numbers-outside-chart)
-    -   [Get SVG Representation of a Chart](/api/tutorials/get-svg-representation-of-a-chart)
-
--   Integration with your stack
-    -   Using with Server Side Languages
-        -   PHP
-            -   [Introduction to the FusionCharts PHP Wrapper](/using-with-server-side-languages/php/introduction)
-            -   [Different Ways of Loading Data in PHP](/using-with-server-side-languages/php/different-ways-of-loading-data)
-            -   [Creating Charts in PHP using a Database](/using-with-server-side-languages/php/creating-charts-with-data-from-a-database)
-        -   Ruby on Rails
-            -   [Introduction to the FusionCharts Ruby on Rails Wrapper](/using-with-server-side-languages/ruby-on-rails/introduction)
-            -   [Different Ways of Loading Data in Ruby](/using-with-server-side-languages/ruby-on-rails/different-ways-of-loading-data)
-            -   [Creating Charts in Ruby using a Database](/using-with-server-side-languages/ruby-on-rails/creating-charts-with-data-from-a-database)
-        -   ASP.NET
-            -   [Introduction to the FusionCharts ASP.NET Wrapper](/using-with-server-side-languages/asp-net/introduction)
-            -   [Different Ways of Loading Data in ASP.Net](/using-with-server-side-languages/asp-net/different-ways-of-loading-data)
-            -   [Creating Charts in ASP.Net using a Database](/using-with-server-side-languages/asp-net/creating-charts-with-data-from-a-database)
-            -   [Creating Drill-down Charts](/using-with-server-side-languages/asp-net/creating-drill-down-charts)
-        -   Java
-            -   [Introduction to the FusionCharts JSP Wrapper](/using-with-server-side-languages/java/introduction)
-            -   [Different Ways of Loading Data in Java](/using-with-server-side-languages/java/different-ways-of-loading-data)
-            -   [Creating Charts in Java using a Database](/using-with-server-side-languages/java/creating-charts-with-data-from-a-database)
-        -   Django
-            -   [Introduction to the FusionCharts Django Wrapper](/using-with-server-side-languages/django/introduction-to-the-django-wrapper)
-            -   [Different Ways of Loading Data in Django](/using-with-server-side-languages/django/different-ways-of-loading-data)
-            -   [Creating Charts in Django using a Database](/using-with-server-side-languages/django/creating-charts-with-data-from-a-database)
-        -   Tutorials
-            -   [Create Interactive Charts using PHP and MySQL](/using-with-server-side-languages/tutorials/php-mysql-charts)
-            -   [Create Drill-Down Charts using PHP and MySQL](/using-with-server-side-languages/tutorials/drill-down-charts-using-php-mysql)
-            -   [Create Charts using Node.js, ExpressJS and Mongodb](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb)
-    -   Using with JavaScript Libraries
-        -   jQuery
-            -   [Introduction to FusionCharts jQuery Helper](/using-with-javascript-libraries/jquery/introduction)
-            -   [Rendering Charts Using jQuery](/using-with-javascript-libraries/jquery/rendering-charts-using-jquery)
-            -   [Updating Chart Properties Using jQuery](/using-with-javascript-libraries/jquery/updating-chart-properties-using-jquery)
-            -   [Selecting Charts Using jQuery](/using-with-javascript-libraries/jquery/selecting-charts-using-jquery)
-            -   [Handling Events Using jQuery](/using-with-javascript-libraries/jquery/handling-events-using-jquery)
-            -   [Rendering Charts from HTML Tables](/using-with-javascript-libraries/jquery/rendering-charts-from-html-tables)
-            -   [API Reference](/using-with-javascript-libraries/jquery/api-reference)
-        -   AngularJS
-            -   [Introduction to FusionCharts AngularJS Directive](/using-with-javascript-libraries/angularjs/introduction)
-            -   [Creating Charts Using the Angular-FusionCharts Directive](/using-with-javascript-libraries/angularjs/creating-charts-using-the-angular-fusioncharts-directive)
-            -   [Configuring Charts Using the Scope](/using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object)
-            -   [Configuring Advanced Features Using AngularJS](/using-with-javascript-libraries/angularjs/configuring-advanced-features-using-angularjs)
-        -   ReactJS
-            -   [Introduction to FusionCharts ReactJS Component](/using-with-javascript-libraries/reactjs/introduction)
-            -   [Install FusionCharts ReactJS Component via NPM](/using-with-javascript-libraries/reactjs/install-fusioncharts-reactjs-component-via-npm)
-            -   [Creating Charts Using the React-FusionCharts Component](/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component)
-            -   [Configuring Charts Using the ReactJS Props Object](/using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object)
-            -   [Configuring Advanced Features Using ReactJS](/using-with-javascript-libraries/reactjs/configuring-advanced-features-using-reactjs)
-            -   [Including Interactivity in Charts Using ReactJS](/using-with-javascript-libraries/reactjs/including-interactivity-in-charts-using-reactjs)
-        -   VueJS
-            -   [Introduction to the FusionCharts VueJS Component](/using-with-javascript-libraries/vuejs/introduction)
-            -   [Installing the FusionCharts VueJS Component via NPM](/using-with-javascript-libraries/vuejs/installing-the-fusioncharts-vuejs-component-via-npm)
-            -   [Creating Charts Using the FusionCharts VueJS Component](/using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component)
-            -   [Configuring Advanced Features Using VueJS](/using-with-javascript-libraries/vuejs/configuring-advanced-features-using-vuejs)
-            -   [Including Interactivity in Charts Using VueJS](/using-with-javascript-libraries/vuejs/including-interactivity-in-charts-using-vuejs)
-        -   Angular4
-            -   [Introduction to the FusionCharts Angular4 Component](/using-with-javascript-libraries/angular4/introduction)
-            -   [Installing the FusionCharts Angular4 Component via NPM](/using-with-javascript-libraries/angular4/installing-the-fusioncharts-angular4-component-via-npm)
-            -   [Creating Charts Using the FusionCharts Angular4 Component](/using-with-javascript-libraries/angular4/creating-charts-using-the-fusioncharts-angular4-component)
-            -   [Configuring Advanced Features Using Angular4](/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4)
-            -   [Including Interactivity in Charts Using Angular4](/using-with-javascript-libraries/anguar4/including-interactivity-in-charts-using-anguar4)
-
--   Help
-    -   [Tutorials](/tutorials-list)
-    -   Troubleshooting
-        -   [Using the FusionCharts Suite XT Debugger](/troubleshooting/debugger)
-
--   [Error Handling](/)
-
--   [Showcase](/showcase)
-
--   [FAQ](/)
-
--   [Changelog](/)
-
-
-
-   
+<ul class="nav">
+	<li>
+		<i class="material-icons"></i>
+		<a href="/">Home</a></li>
+    <li>
+    	<i class="material-icons"></i>
+        <a>Getting started</a>
+        <ul>
+            <li><a href="/getting-started/installation">Installation</a></li>
+            <li><a href="/getting-started/upgrading-from-evaluation-versions">Upgrading from Evaluation Versions</a></li>
+            <li><a href="/getting-started/upgrading-from-previous-versions">Upgrading from Previous Versions</a></li>
+            <li><a href="/getting-started/building-your-first-chart">Your First Chart</a></li>
+            <li><a href="/getting-started/building-your-gauge">Your First Gauge</a></li>
+            <li><a href="/getting-started/building-your-map">Your First Map</a></li>
+            <li><a href="/getting-started/building-a-dashboard">Building a Dashboard</a></li>
+            <li><a href="/getting-started/using-xml-as-data-format">Using XML as Data Format</a></li>
+            <li><a href="/getting-started/setting-data-source-using-url">Setting Data Source using URL</a></li>
+            <li>
+                <a><a href="/getting-started/export-your-charts">Export using FusionCharts Export Server</a></a>
+            </li>
+            <li>
+                <a>Installing via npm and bower </a>
+                <ul>
+                    <li><a href="/getting-started/installing-via-npm-and-bower/installing-fusioncharts-suite-xt-via-npm-and-bower">Installing FusionCharts Suite XT via npm and Bower</a></li>
+                    <li><a href="/getting-started/installing-via-npm-and-bower/installing-via-npm">Installing via npm</a></li>
+                    <li><a href="/getting-started/installing-via-npm-and-bower/rendering-charts-via-npm">Rendering Charts via npm</a></li>
+                    <li><a href="/getting-started/installing-via-npm-and-bower/installing-via-bower">Installing via Bower</a></li>
+                    <li><a href="/getting-started/installing-via-npm-and-bower/rendering-charts-via-bower">Rendering Charts via Bower</a></li>
+                    <li><a href="/getting-started/list-of-charts">List of Charts</a></li>
+                    <li><a href="/getting-started/list-of-maps">List of Maps</a></li>
+                    <li><a href="/getting-started/whats-new">What&#39;s New in v3.12.2</a></li>
+                    <li><a href="/getting-started/deprecated-functionalities">Deprecated Functionalities in v3.12.2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+    	<i class="material-icons"></i>
+        <a><a href="#">Guides</a></a>
+        <ul>
+            <li>
+                Chart Guide
+                <ul>
+                    <li>
+                        Standard Charts
+                        <ul>
+                            <li><a href="/chart-guide/standard-charts/creating-standard-charts">Creating Standard Charts</a></li>
+                            <li><a href="/chart-guide/standard-charts/configuring-standard-charts">Configuring Standard Charts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Pie and Doughnut Charts
+                        <ul>
+                            <li><a href="/chart-guide/pie-and-doughnut-charts/creating-pie-and-doughnut-charts">Creating Pie and Doughnut Charts</a></li>
+                            <li><a href="/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts">Configuring Pie and Doughnut Charts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Multi-series Charts
+                        <ul>
+                            <li><a href="/chart-guide/multi-series-charts/creating-multi-series-charts">Creating Multi-series Charts</a></li>
+                            <li><a href="/chart-guide/multi-series-charts/configuring-multi-series-charts">Configuring Multi-series Charts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Combination Charts
+                        <ul>
+                            <li><a href="/chart-guide/combination-charts/creating-combination-charts">Creating Combination Charts</a></li>
+                            <li><a href="/chart-guide/combination-charts/configuring-combination-charts">Configuring Combination Charts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Stacked Charts
+                        <ul>
+                            <li><a href="/chart-guide/stacked-charts/creating-stacked-charts">Creating a Stacked Chart</a></li>
+                            <li><a href="/chart-guide/stacked-charts/configuring-stacked-charts">Configuring a Stacked Chart</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Scroll Charts
+                        <ul>
+                            <li><a href="/chart-guide/scroll-charts/creating-scroll-charts">Creating a Scroll Chart</a></li>
+                            <li><a href="/chart-guide/scroll-charts/configuring-scroll-charts">Configuring Scroll Charts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Bubble and XY Charts
+                        <ul>
+                            <li><a href="/chart-guide/bubble-and-xy-charts/creating-bubble-and-xy-charts">Creating Bubble and XY Charts</a></li>
+                            <li><a href="/chart-guide/bubble-and-xy-charts/configuring-bubble-and-xy-charts">Configuring Bubble and XY Charts</a></li>
+                            <li><a href="/chart-guide/bubble-and-xy-charts/drawing-regression-lines-in-the-bubble-and-xy-charts">Drawing Regression Lines in the Bubble and XY Charts</a></li>
+                            <li><a href="/chart-guide/bubble-and-xy-charts/customizing-quadrants">Customizing Quadrants</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Pareto Chart
+                        <ul>
+                            <li><a href="/chart-guide/pareto-chart/creating-a-pareto-chart">Creating a Pareto Chart</a></li>
+                            <li><a href="/chart-guide/pareto-chart/configuring-a-pareto-chart">Configuring a Pareto Chart</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Marimekko Charts
+                        <ul>
+                            <li><a href="/chart-guide/marimekko-chart/creating-a-marimekko-chart">Creating a Marimekko Chart</a></li>
+                            <li><a href="/chart-guide/marimekko-chart/configuring-a-marimekko-chart">Configuring a Marimekko Chart</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Zoom Line Chart
+                        <ul>
+                            <li><a href="/chart-guide/zoom-line-chart/creating-a-zoom-line-chart">Creating a Zoom Line Chart</a></li>
+                            <li><a href="/chart-guide/zoom-line-chart/configuring-a-zoom-line-chart">Configuring a Zoom Line Chart</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/chart-guide/zoom-line-dy-chart">Zoom-line Dual Y-Axis Chart</a></li>
+                    <li>
+                        Heat Map Chart
+                        <ul>
+                            <li><a href="/chart-guide/heat-map-chart/introduction">Introduction to Heat Map Chart</a></li>
+                            <li><a href="/chart-guide/heat-map-chart/creating-numeric-heat-map-chart">Creating Numeric Heat Map Charts</a></li>
+                            <li><a href="/chart-guide/heat-map-chart/creating-category-based-heat-map-chart">Creating Category-based Heat Map Charts</a></li>
+                            <li><a href="/chart-guide/heat-map-chart/legend-options">Legend Options</a></li>
+                            <li><a href="/chart-guide/heat-map-chart/configuring-labels-and-tool-tips">Configuring Labels and Tool-tips</a></li>
+                            <li><a href="/chart-guide/heat-map-chart/handling-out-of-range-data">Handling Out-of-range Data</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Treemap
+                        <ul>
+                            <li><a href="/chart-guide/treemap/introducing-the-treemap">Introducing the Treemap</a></li>
+                            <li><a href="/chart-guide/treemap/creating-a-simple-treemap">Creating a Simple Treemap</a></li>
+                            <li><a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap">Tiling Algorithm for the Treemap</a></li>
+                            <li><a href="/chart-guide/treemap/configuring-the-treemap">Configuring the Treemap</a></li>
+                            <li><a href="/chart-guide/treemap/handling-events-in-the-treemap">Handling Events in the Treemap</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Drag Node Chart
+                        <ul>
+                            <li><a href="/chart-guide/drag-node-chart/introduction">Introduction to Drag Node Chart</a></li>
+                            <li><a href="/chart-guide/drag-node-chart/configuring-drag-node-charts">Configuring Drag-node Charts</a></li>
+                            <li><a href="/chart-guide/drag-node-chart/adding-and-editing-nodes">Adding and Editing Nodes</a></li>
+                            <li><a href="/chart-guide/drag-node-chart/adding-and-editing-connectors">Adding and Editing Connectors</a></li>
+                            <li><a href="/chart-guide/drag-node-chart/adding-and-deleting-text-labels">Adding and Deleting Text Labels</a></li>
+                            <li><a href="/chart-guide/drag-node-chart/updating-chart-data-on-server">Updating Chart Data on Server</a></li>
+                            <li><a href="/chart-guide/drag-node-chart/getting-data-using-javascript">Getting Data Using JavaScript</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Drag-able Charts
+                        <ul>
+                            <li><a href="/chart-guide/drag-able-charts/introduction">Introduction to Drag-able Chart</a></li>
+                            <li><a href="/chart-guide/drag-able-charts/creating-drag-able-charts">Creating Drag-able Charts</a></li>
+                            <li><a href="/chart-guide/drag-able-charts/configuring-drag-able-charts">Configuring Drag-able Charts</a></li>
+                            <li><a href="/chart-guide/drag-able-charts/retrieving-data">Retrieving Data</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Select-scatter Chart
+                        <ul>
+                            <li><a href="/chart-guide/select-scatter-chart/creating-a-select-scatter-chart">Creating a Select-scatter Chart</a></li>
+                            <li><a href="/chart-guide/select-scatter-chart/getting-selected-data">Getting Selected Data</a></li>
+                            <li><a href="/chart-guide/select-scatter-chart/drawing-regression-lines-in-the-select-scatter-chart">Drawing Regression Lines in the Select-scatter Chart</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Zoom-scatter Chart
+                        <ul>
+                            <li><a href="/chart-guide/zoom-scatter-chart/introducing-the-zoom-scatter-chart">Introducing the Zoom Scatter Chart</a></li>
+                            <li><a href="/chart-guide/zoom-scatter-chart/creating-a-zoom-scatter-chart">Creating a Zoom Scatter Chart</a></li>
+                            <li><a href="/chart-guide/zoom-scatter-chart/drawing-regression-lines-in-the-zoom-scatter-chart">Drawing Regression Lines in the Zoom-scatter Chart</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/chart-guide/radar-chart">Radar Chart</a></li>
+                    <li><a href="/chart-guide/multi-axis-line-chart">Multi-axis Line Chart</a></li>
+                    <li><a href="/chart-guide/multi-level-pie-chart">Multi-level Pie Chart</a></li>
+                    <li>
+                        Candlestick Chart
+                        <ul>
+                            <li><a href="/chart-guide/candlestick-chart/creating-a-candlestick-chart">Creating a Candlestick Chart</a></li>
+                            <li><a href="/chart-guide/candlestick-chart/configuring-a-candlestick-chart">Configuring a Candlestick Chart</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Waterfall (Cascade) Chart
+                        <ul>
+                            <li><a href="/chart-guide/waterfall-or-cascade-chart/creating-a-waterfall-or-cascade-chart">Creating a Waterfall (Cascade) Chart</a></li>
+                            <li><a href="/chart-guide/waterfall-or-cascade-chart/configuring-a-waterfall-or-cascade-chart">Configuring a Waterfall (Cascade) Chart</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Box and Whisker Chart
+                        <ul>
+                            <li><a href="/chart-guide/box-and-whisker-chart/introduction">Introduction to Box and Whisker Chart</a></li>
+                            <li><a href="/chart-guide/box-and-whisker-chart/creating-box-and-whisker-chart">Creating Box and Whisker Chart</a></li>
+                            <li><a href="/chart-guide/box-and-whisker-chart/configuring-the-five-summary-numbers">Configuring the Five Summary Numbers</a></li>
+                            <li><a href="/chart-guide/box-and-whisker-chart/configuring-mean">Configuring Mean</a></li>
+                            <li><a href="/chart-guide/box-and-whisker-chart/configuring-mean-deviation">Configuring Mean Deviation</a></li>
+                            <li><a href="/chart-guide/box-and-whisker-chart/configuring-standard-deviation">Configuring Standard Deviation</a></li>
+                            <li><a href="/chart-guide/box-and-whisker-chart/configuring-quartile-deviation">Configuring Quartile Deviation</a></li>
+                            <li><a href="/chart-guide/box-and-whisker-chart/configuring-outliers">Configuring Outliers</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Error Charts
+                        <ul>
+                            <li><a href="/chart-guide/error-charts/introduction">Introduction to Error Chart</a></li>
+                            <li><a href="/chart-guide/error-charts/creating-error-bar-chart">Creating Error Bar Chart</a></li>
+                            <li><a href="/chart-guide/error-charts/creating-error-line-chart">Creating Error Line Chart</a></li>
+                            <li><a href="/chart-guide/error-charts/creating-error-scatter-chart">Creating Error Scatter Chart</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/chart-guide/spline-charts">Spline Charts</a></li>
+                    <li><a href="/chart-guide/inverse-y-axis-chart">Inverse Y-axis Chart</a></li>
+                    <li>
+                        Logarithmic Charts
+                        <ul>
+                            <li><a href="/chart-guide/logarithmic-charts/introduction">Introduction to Logarithmic Chart</a></li>
+                            <li><a href="/chart-guide/logarithmic-charts/creating-logarithmic-charts">Creating Logarithmic Charts</a></li>
+                            <li><a href="/chart-guide/logarithmic-charts/configuring-logarithmic-charts">Configuring Logarithmic Charts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Step Line Chart
+                        <ul>
+                            <li><a href="/chart-guide/step-line-chart/introduction">Introduction to Step Line Chart</a></li>
+                            <li><a href="/chart-guide/step-line-chart/creating-a-step-line-chart">Creating a Step Line Chart</a></li>
+                            <li><a href="/chart-guide/step-line-chart/configuring-a-step-line-chart">Configuring a Step Line Chart</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/chart-guide/kagi-chart">Kagi Chart</a></li>
+                    <li>
+                        Real-time Charts
+                        <ul>
+                            <li><a href="/chart-guide/real-time-charts/introduction">Introduction to Real-time Charts</a></li>
+                            <li><a href="/chart-guide/real-time-charts/data-format">Real-time Data Format</a></li>
+                            <li><a href="/chart-guide/real-time-charts/multiple-datasets-and-updates">Multiple Datasets and Updates</a></li>
+                            <li><a href="/chart-guide/real-time-charts/adding-historical-data">Adding Historical Data</a></li>
+                            <li><a href="/chart-guide/real-time-charts/chart-configurations">Chart Configuration</a></li>
+                            <li><a href="/chart-guide/real-time-charts/adding-data-stamp">Adding Data Stamp</a></li>
+                            <li><a href="/chart-guide/real-time-charts/setting-alert-manager">Setting Alert Manager</a></li>
+                            <li><a href="/chart-guide/real-time-charts/setting-message-logger">Setting Message Logger</a></li>
+                            <li><a href="/chart-guide/real-time-charts/clearing-chart-view">Clearing Chart View</a></li>
+                            <li><a href="/chart-guide/real-time-charts/feeding-and-retrieving-data-through-api">Feeding &amp; Retrieving Data Through API</a></li>
+                            <li><a href="/chart-guide/real-time-charts/listening-to-events">Listening to Events</a></li>
+                            <li><a href="/chart-guide/real-time-charts/troubleshooting">Troubleshooting</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Gauge &amp; Widgets Guide
+                <ul>
+                    <li>
+                        Angular Gauge
+                        <ul>
+                            <li><a href="/gauge-and-widgets-guide/angular-gauge/introduction">Introduction to Angular Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/angular-gauge/simple-gauge-example">Simple Angular Gauge Example</a></li>
+                            <li><a href="/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics">Configuring Angular Gauge Cosmetics</a></li>
+                            <li><a href="/gauge-and-widgets-guide/angular-gauge/configuring-dials">Configuring Dials</a></li>
+                            <li><a href="/gauge-and-widgets-guide/angular-gauge/configuring-tick-marks">Configuring Tick Marks in Angular Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/angular-gauge/adding-trend-points">Adding Trend Points in Angular Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins">Configuring Angles &amp; Origins</a></li>
+                            <li><a href="/gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges">Dynamically Resizing Gauges</a></li>
+                            <li><a href="/gauge-and-widgets-guide/angular-gauge/creating-editable-gauges">Creating Editable Angular Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges">Creating Real-time Angluar Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/angular-gauge/logging-real-time-messages">Logging Real-time Messages</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Linear Gauge
+                        <ul>
+                            <li><a href="/gauge-and-widgets-guide/linear-gauge/introduction">Introduction to Linear Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/linear-gauge/simple-gauge-example">Simple Linear Gauge Example</a></li>
+                            <li><a href="/gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics">Configuring Linear Gauge Cosmetics</a></li>
+                            <li><a href="/gauge-and-widgets-guide/linear-gauge/configuring-tick-marks">Configuring Tick Marks in Linear Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/linear-gauge/adding-trend-points">Adding Trend-points in Linear Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/linear-gauge/creating-editable-gauges">Creating Editable Linear Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/linear-gauge/real-time-gauges">Real-time Linear Gauge</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        LED Gauge
+                        <ul>
+                            <li><a href="/gauge-and-widgets-guide/led-gauge/introduction">Introduction to LED Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/led-gauge/simple-gauge-example">Simple LED Gauge Example</a></li>
+                            <li><a href="/gauge-and-widgets-guide/led-gauge/configuring-gauge">Configuring LED Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/led-gauge/real-time-gauges">Real-time LED Gauge</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Thermometer Gauge
+                        <ul>
+                            <li><a href="/gauge-and-widgets-guide/thermometer-gauge/introduction">Introduction to Thermometer Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/thermometer-gauge/simple-gauge-example">Simple Thermometer Gauge Example</a></li>
+                            <li><a href="/gauge-and-widgets-guide/thermometer-gauge/configuring-gauge">Configuring Thermometer Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges">Real-time Thermometer Gauge</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Cylinder Gauge
+                        <ul>
+                            <li><a href="/gauge-and-widgets-guide/cylinder-gauge/introduction">Introduction to Cylinder Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/cylinder-gauge/simple-gauge-example">Simple Cylinder Gauge Example</a></li>
+                            <li><a href="/gauge-and-widgets-guide/cylinder-gauge/configuring-gauge">Configuring Cylinder Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/cylinder-gauge/real-time-gauges">Real-time Cylinder Gauge</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Bulb Gauge
+                        <ul>
+                            <li><a href="/gauge-and-widgets-guide/bulb-gauge/introduction">Introduction to Bulb Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/bulb-gauge/simple-gauge-example">Simple Bulb Gauge Example</a></li>
+                            <li><a href="/gauge-and-widgets-guide/bulb-gauge/configuring-gauge">Configuring Bulb Gauge</a></li>
+                            <li><a href="/gauge-and-widgets-guide/bulb-gauge/real-time-gauges">Real-time Bulb Gauge</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Funnel Chart
+                        <ul>
+                            <li><a href="/gauge-and-widgets-guide/funnel-chart/introduction">Introduction to Funnel Chart</a></li>
+                            <li><a href="/gauge-and-widgets-guide/funnel-chart/simple-chart-example">Simple Funnel Chart Example</a></li>
+                            <li><a href="/gauge-and-widgets-guide/funnel-chart/configuring-chart">Configuring Funnel Chart</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Pyramid Chart
+                        <ul>
+                            <li><a href="/gauge-and-widgets-guide/pyramid-chart/introduction">Introduction to Pyramid Chart</a></li>
+                            <li><a href="/gauge-and-widgets-guide/pyramid-chart/simple-pyramid-chart">Creating a Simple Pyramid Chart</a></li>
+                            <li><a href="/gauge-and-widgets-guide/pyramid-chart/configuring-chart">Configuring Pyramid Chart</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Spark Charts
+                        <ul>
+                            <li><a href="/gauge-and-widgets-guide/spark-charts/introduction">Introduction to Spark Chart</a></li>
+                            <li><a href="/gauge-and-widgets-guide/spark-charts/creating-spark-line-chart">Creating a Spark Line Chart</a></li>
+                            <li><a href="/gauge-and-widgets-guide/spark-charts/configuring-spark-line-chart">Configuring Spark Line Chart</a></li>
+                            <li><a href="/gauge-and-widgets-guide/spark-charts/creating-spark-column-chart">Creating a Spark Column Chart</a></li>
+                            <li><a href="/gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart">Configuring Spark Column Chart</a></li>
+                            <li><a href="/gauge-and-widgets-guide/spark-charts/creating-spark-win-loss-charts">Creating Spark Win/Loss Charts</a></li>
+                            <li><a href="/gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts">Configuring Spark Win/Loss Charts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Bullet Graphs
+                        <ul>
+                            <li><a href="/gauge-and-widgets-guide/bullet-graph/introduction">Introduction to Bullet Graph</a></li>
+                            <li><a href="/gauge-and-widgets-guide/bullet-graph/creating-bullet-graphs">Creating Bullet Graphs</a></li>
+                            <li><a href="/gauge-and-widgets-guide/bullet-graph/configuring-bullet-graph">Configuring Bullet Graph</a></li>
+                            <li><a href="/gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs">Real-time Bullet Graph</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Gantt Chart
+                        <ul>
+                            <li><a href="/gauge-and-widgets-guide/gantt-chart/introduction">Introduction to Gantt Chart</a></li>
+                            <li><a href="/gauge-and-widgets-guide/gantt-chart/creating-simple-gantt-chart">Creating a Simple Gantt Chart</a></li>
+                            <li><a href="/gauge-and-widgets-guide/gantt-chart/configuring-cosmetics">Configuring Cosmetics</a></li>
+                            <li><a href="/gauge-and-widgets-guide/gantt-chart/configuring-task-bars">Configuring Task Bars</a></li>
+                            <li><a href="/gauge-and-widgets-guide/gantt-chart/configuring-date-formats">Configuring Date Formats</a></li>
+                            <li><a href="/gauge-and-widgets-guide/gantt-chart/adding-scroll-to-chart">Adding Scroll to Chart</a></li>
+                            <li><a href="/gauge-and-widgets-guide/gantt-chart/adding-multiple-task-to-a-process">Adding Multiple Tasks to a Process</a></li>
+                            <li><a href="/gauge-and-widgets-guide/gantt-chart/creating-time-based-charts">Creating Time-based Charts</a></li>
+                            <li><a href="/gauge-and-widgets-guide/gantt-chart/adding-milestones-to-a-chart">Adding Milestones to a Chart</a></li>
+                            <li><a href="/gauge-and-widgets-guide/gantt-chart/connecting-tasks-on-chart">Connecting Tasks on Chart</a></li>
+                            <li><a href="/gauge-and-widgets-guide/gantt-chart/adding-trend-lines">Adding Trend-lines</a></li>
+                            <li><a href="/gauge-and-widgets-guide/gantt-chart/events-in-gantt-chart">Events in Gantt Chart</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Real-time Gauges
+                        <ul>
+                            <li><a href="/gauge-and-widgets-guide/real-time-gauges/introduction">Introduction to Real-time Gauges</a></li>
+                            <li><a href="/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges">Setting Up Real-time Gauges</a></li>
+                            <li><a href="/gauge-and-widgets-guide/real-time-gauges/setting-alert-manager">Setting the Alert Manager</a></li>
+                            <li><a href="/gauge-and-widgets-guide/real-time-gauges/using-events">Using Events</a></li>
+                            <li><a href="/gauge-and-widgets-guide/real-time-gauges/troubleshooting-real-time-gauges">Troubleshooting Real-time Gauges</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Map Guide
+                <ul>
+                    <li><a href="/map-guide/setup">Setup</a></li>
+                    <li><a href="/map-guide/simple-data-driven-map">Simple Data Driven Map</a></li>
+                    <li><a href="/map-guide/customizing-your-map">Customizing Your Map</a></li>
+                    <li><a href="/map-guide/custom-entity-ids">Custom Entity IDs</a></li>
+                    <li><a href="/map-guide/colouring-based-on-data-range">Coloring Based on Data Range</a></li>
+                    <li><a href="/map-guide/adding-markers">Adding Markers</a></li>
+                    <li><a href="/map-guide/data-driven-markers">Data Driven Markers</a></li>
+                    <li><a href="/map-guide/using-marker-sheets">Using Marker Sheets</a></li>
+                    <li><a href="/map-guide/listening-to-map-events">Listening to Map Events</a></li>
+                    <li><a href="/map-guide/adding-drill-down-to-maps">Adding Drill Down to Maps</a></li>
+                </ul>
+            </li>
+            <li>
+                Map Reference
+                <ul>
+                    <li><a href="/maps/marker-data/">Marker Data</a></li>
+                    <li><a href="/maps/spec-sheets/">Specification Sheets</a></li>
+                    <li><a href="/maps/attribute-reference">Attribute Reference</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+    	<i class="material-icons"></i>
+        <a>Customizing Charts </a>
+        <ul>
+            <li>
+                Basic Chart Configurations
+                <ul>
+                    <li><a href="/basic-chart-configurations/changing-the-size-and-type">Changing the Size and Type</a></li>
+                    <li><a href="/basic-chart-configurations/border-and-background">Border and Background</a></li>
+                    <li><a href="/basic-chart-configurations/canvas">Canvas</a></li>
+                    <li><a href="/basic-chart-configurations/titles-and-axis-names">Titles and Axis Names</a></li>
+                    <li><a href="/basic-chart-configurations/data-plot">Data Plot</a></li>
+                    <li><a href="/basic-chart-configurations/configuring-your-chart-data-labels">Data Labels</a></li>
+                    <li><a href="/basic-chart-configurations/data-values">Data Values</a></li>
+                    <li><a href="/basic-chart-configurations/number-format">Number Format</a></li>
+                    <li><a href="/basic-chart-configurations/fonts">Fonts</a></li>
+                    <li><a href="/basic-chart-configurations/chart-palettes">Chart Palettes</a></li>
+                    <li><a href="/basic-chart-configurations/centralizing-themes-for-your-charts">Centralizing Themes for Your Charts</a></li>
+                    <li><a href="/basic-chart-configurations/theme-manager">Theme Manager</a></li>
+                    <li><a href="/basic-chart-configurations/chart-limits">Chart Limits</a></li>
+                    <li><a href="/basic-chart-configurations/div-lines-and-grids">Div Lines and Grids</a></li>
+                    <li><a href="/basic-chart-configurations/vertical-div-lines">Vertical Div Lines</a></li>
+                    <li><a href="/basic-chart-configurations/zero-plane">Zero Plane</a></li>
+                    <li><a href="/basic-chart-configurations/trend-lines-and-zones">Trend Lines and Zones</a></li>
+                    <li><a href="/basic-chart-configurations/anchors-and-lines">Anchors and Lines</a></li>
+                    <li><a href="/basic-chart-configurations/cross-line">Cross Line</a></li>
+                    <li><a href="/basic-chart-configurations/tool-tips">Tooltips</a></li>
+                    <li>
+                        Tooltip Macros
+                        <ul>
+                            <li><a href="/basic-chart-configurations/tooltip-macros/introduction-to-tooltip-macros">Introduction to Tooltip Macros</a></li>
+                            <li><a href="/basic-chart-configurations/tooltip-macros/list-of-macros">List of Tooltip Macros</a></li>
+                            <li><a href="/basic-chart-configurations/tooltip-macros/tooltip-macros-additional-examples">Tooltip Macros-Additional Examples</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="/basic-chart-configurations/vertical-lines">Vertical Lines</a></li>
+                    <li><a href="/basic-chart-configurations/legend">Legend</a></li>
+                    <li><a href="/basic-chart-configurations/annotations">Annotations</a></li>
+                    <li><a href="/basic-chart-configurations/tick-marks">Tick Marks</a></li>
+                    <li><a href="/basic-chart-configurations/loading-external-logo">Loading External Logo</a></li>
+                    <li><a href="/basic-chart-configurations/chart-paddings-and-margins">Chart Paddings and Margins</a></li>
+                    <li><a href="/basic-chart-configurations/toolbar">Toolbar</a></li>
+                    <li>
+                        Tutorials
+                        <ul>
+                            <li><a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-1">Basic Chart Configuration(Part-1)</a></li>
+                            <li><a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-2">Basic Chart Configuration(Part-2)</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Advanced Chart Configurations
+                <ul>
+                    <li>
+                        Events
+                        <ul>
+                            <li><a href="/advanced-chart-configurations/events/introduction-to-events">Introduction to Events</a></li>
+                            <li><a href="/advanced-chart-configurations/events/handling-events">Handling Events</a></li>
+                            <li><a href="/advanced-chart-configurations/events/classifying-events">Classifying Events</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Drill-down
+                        <ul>
+                            <li><a href="/advanced-chart-configurations/drill-down/simple-drill-down">Creating Simple Drill-down Charts</a></li>
+                            <li><a href="/advanced-chart-configurations/drill-down/opening-in-pop-up-or-frames">Opening Links in Pop-up Windows or Frames</a></li>
+                            <li><a href="/advanced-chart-configurations/drill-down/set-chart-as-hotspot">Setting the Chart as a Hotspot</a></li>
+                            <li><a href="/advanced-chart-configurations/drill-down/linkedcharts">Creating and Configuring Linked Charts</a></li>
+                            <li><a href="/advanced-chart-configurations/drill-down/using-javascript-functions-as-links">Using JavaScript Functions as Links</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Annotations
+                        <ul>
+                            <li><a href="/advanced-chart-configurations/annotations/introduction">Introduction to Annotations</a></li>
+                            <li>
+                                Creating Annotations
+                                <ul>
+                                    <li><a href="/advanced-chart-configurations/annotations/creating-annotations/introduction">Introduction to creating annotations</a></li>
+                                    <li><a href="/advanced-chart-configurations/annotations/creating-annotations/creating-text-annotations">Creating Text Annotations</a></li>
+                                    <li><a href="/advanced-chart-configurations/annotations/creating-annotations/creating-image-annotations">Creating Image Annotations</a></li>
+                                    <li><a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations">Creating Shape Annotations</a></li>
+                                    <li><a href="/advanced-chart-configurations/annotations/creating-annotations/creating-path-annotations">Creating Path Annotations</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/advanced-chart-configurations/annotations/positioning-annotations-using-absolute-values">Positioning Annotations Using Absolute Values</a></li>
+                            <li><a href="/advanced-chart-configurations/annotations/positioning-annotations-using-macros">Positioning Annotations Using Macros</a></li>
+                            <li><a href="/advanced-chart-configurations/annotations/grouping-annotations">Grouping Annotations</a></li>
+                            <li><a href="/advanced-chart-configurations/annotations/controlling-annotations-dynamically">Controlling Annotations Dynamically</a></li>
+                            <li><a href="/advanced-chart-configurations/annotations/using-annotation-events">Using Annotation Events</a></li>
+                            <li><a href="/advanced-chart-configurations/annotations/real-life-use-cases">Real-life Use Cases</a></li>
+                            <li><a href="/advanced-chart-configurations/annotations/annotations-references">Annotations References</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Theme Manager
+                        <ul>
+                            <li><a href="/advanced-chart-configurations/theme-manager/introduction-to-themes">Introduction to Themes</a></li>
+                            <li><a href="/advanced-chart-configurations/theme-manager/applying-themes">Applying Themes</a></li>
+                            <li><a href="/advanced-chart-configurations/theme-manager/basics-of-theme-definition">Basics of Theme Definition</a></li>
+                            <li><a href="/advanced-chart-configurations/theme-manager/modifying-existing-themes">Modifying Existing Themes</a></li>
+                            <li><a href="/advanced-chart-configurations/theme-manager/creating-new-themes">Creating New Themes</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Tutorials
+                        <ul>
+                            <li><a href="/advanced-chart-configurations/tutorials/render-thumbnail-versions-of-chart">Render Thumbnail Versions of Charts</a></li>
+                            <li><a href="/advanced-chart-configurations/tutorials/change-chart-messages">Configure Chart Messages</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/chart-attributes">Chart Attributes</a></li>
+            <li>
+                Export Using
+                <ul>
+                    <li>
+                        FusionCharts Export Server
+                        <ul>
+                            <li><a href="/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf">Exporting Charts as Image and PDF</a></li>
+                            <li><a href="/exporting-charts/using-fc-export-server/exporting-chart-data">Exporting Chart Data</a></li>
+                            <li>
+                                Modes of Export
+                                <ul>
+                                    <li><a href="/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature">Exporting Charts and Chart Data Using the Server-side Export Feature</a></li>
+                                    <li><a href="/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-client-side-export-feature">Exporting Charts and Chart Data Using the Client-side Export Feature</a></li>
+                                    <li><a href="/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-auto-export-feature">Exporting Charts and Chart Data Using the Auto Export Feature</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/exporting-charts/using-fc-export-server/logging-export-statistics">Logging Export Statistics</a></li>
+                            <li><a href="/exporting-charts/using-fc-export-server/configuring-the-export-feature">Configuring the Export Feature</a></li>
+                            <li>
+                                Setup Private Export Server
+                                <ul>
+                                    <li><a href="/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server-asp-net">ASP.NET</a></li>
+                                    <li><a href="/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server-php">PHP</a></li>
+                                    <li><a href="/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server-java">Java</a></li>
+                                    <li><a href="/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server-ruby-on-rails">Ruby on Rails</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/exporting-charts/using-fc-export-server/exporting-multiple-charts-in-a-single-image">Exporting Multiple Charts in a Single Image</a></li>
+                            <li><a href="/exporting-charts/using-fc-export-server/architecture-of-the-fusioncharts-export-server">Architecture of the FusionCharts Export Server</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        FusionExport <span class="bubble-text">Beta</span>
+                        <ul>
+                            <li><a href="/exporting-charts/using-fusionexport/overview">Overview</a></li>
+                            <li>
+                                Installation
+                                <ul>
+                                    <li><a href="/exporting-charts/using-fusionexport/installation/install-fusionexport-desktop">Install FusionExport desktop</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/installation/install-fusionexport-web-service">Install FusionExport Web Service</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/installation/install-fusionexport-cli">Install FusionExport CLI</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/installation/add-language-sdks">Add Language SDKs</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                Tutorials
+                                <ul>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/export-chart-as-image">Export chart as image</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/change-the-export-type">Change the export type</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart">Customize the width and height of an exported chart</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files">Export charts in bulk</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip">Export the output files as a zip</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/override-the-chart-config">Override the chart config</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/export-a-dashboard">Export a dashboard</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard">Add a logo or a heading to the dashboard</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/convert-an-svg-image-to-png-jpeg-pdf">Convert an SVG image to PNG/JPEG/PDF</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/using-fusionexport/use-the-licensed-fusioncharts-library-for-export">Use the licensed FusionCharts library for export</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting">Inject extra JavaScript while exporting</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/export-remotely">Export remotely</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename">Manipulate the output filename</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/cli-options-in-a-file">Add CLI options in a file</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/enabling-logging">Enable logging</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three">Save exported files to S3</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/asynchronous-capture">Asynchronous capture</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart">Export a D3 chart</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/exporting-charts/using-fusionexport/cli-reference">CLI Reference</a></li>
+                            <li><a href="/exporting-charts/using-fusionexport/fusionexport-web-service-api-reference">Web Service API Reference</a></li>
+                            <li>
+                                SDK API Reference
+                                <ul>
+                                    <li><a href="/exporting-charts/using-fusionexport/sdk-api-reference/nodejs">Node.js</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/sdk-api-reference/java">Java</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/sdk-api-reference/c-sharp">C#</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/sdk-api-reference/php">PHP</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/sdk-api-reference/python">Python</a></li>
+                                    <li><a href="/exporting-charts/using-fusionexport/sdk-api-reference/golang">Golang</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+    	<i class="material-icons"></i>
+        <a>API Reference</a>
+        <ul>
+            <li><a href="/api/fusioncharts">FusionCharts</a></li>
+            <li><a href="/api/fusioncharts/fusioncharts-events">Events</a></li>
+            <li><a href="/api/fusioncharts/fusioncharts-methods">Methods</a></li>
+            <li><a href="/api/fusioncharts/fusioncharts-properties">Properties</a></li>
+            <li><a href="/api/fusioncharts/fusioncharts-typedefs">Type Definitions</a></li>
+            <li>
+                Namespaces
+                <ul>
+                    <li><a href="/api/fusioncharts/namespaces/debugger">Debugger</a></li>
+                    <li><a href="/api/fusioncharts/namespaces/ajax">Ajax</a></li>
+                    <li><a href="/api/fusioncharts/namespaces/printmanager">PrintManager</a></li>
+                    <li><a href="/api/fusioncharts/namespaces/annotations">Annotations</a></li>
+                </ul>
+            </li>
+            <li><a href="/api/global-methods">Global Methods</a></li>
+        </ul>
+    </li>
+    <li>
+    	<i class="material-icons"></i>
+        <a>Tutorials</a>
+        <ul>
+            <li><a href="/api/tutorials/remove-an-existing-chart-from-a-page">Remove an Existing Chart from a Page</a></li>
+            <li><a href="/api/tutorials/reference-to-chart-object">Get Reference to Chart Object</a></li>
+            <li><a href="/api/tutorials/fusioncharts-constructor-and-object">FusionCharts Constructor and Object</a></li>
+            <li><a href="/api/tutorials/change-chart-properties-at-runtime">Change Chart Properties at Runtime</a></li>
+            <li><a href="/api/tutorials/using-special-characters-in-a-chart">Using Special Characters</a></li>
+            <li><a href="/api/tutorials/plot-discontinuous-data">Plot Discontinuous Data</a></li>
+            <li><a href="/api/tutorials/highlight-specific-data-points-on-chart">Highlight Specific Data Points</a></li>
+            <li><a href="/api/tutorials/view-data-of-existing-chart-on-page">View Data of Existing Chart</a></li>
+            <li><a href="/api/tutorials/get-formatted-numbers-outside-chart">Get Formatted Numbers Outside Chart</a></li>
+            <li><a href="/api/tutorials/get-svg-representation-of-a-chart">Get SVG Representation of a Chart</a></li>
+        </ul>
+    </li>
+    <li>
+    	<i class="material-icons"></i>
+        <a>Integration with your stack</a>
+        <ul>
+            <li>
+                Using with Server Side Languages
+                <ul>
+                    <li>
+                        PHP
+                        <ul>
+                            <li><a href="/using-with-server-side-languages/php/introduction">Introduction to the FusionCharts PHP Wrapper</a></li>
+                            <li><a href="/using-with-server-side-languages/php/different-ways-of-loading-data">Different Ways of Loading Data in PHP</a></li>
+                            <li><a href="/using-with-server-side-languages/php/creating-charts-with-data-from-a-database">Creating Charts in PHP using a Database</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Ruby on Rails
+                        <ul>
+                            <li><a href="/using-with-server-side-languages/ruby-on-rails/introduction">Introduction to the FusionCharts Ruby on Rails Wrapper</a></li>
+                            <li><a href="/using-with-server-side-languages/ruby-on-rails/different-ways-of-loading-data">Different Ways of Loading Data in Ruby</a></li>
+                            <li><a href="/using-with-server-side-languages/ruby-on-rails/creating-charts-with-data-from-a-database">Creating Charts in Ruby using a Database</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        ASP.NET
+                        <ul>
+                            <li><a href="/using-with-server-side-languages/asp-net/introduction">Introduction to the FusionCharts ASP.NET Wrapper</a></li>
+                            <li><a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data">Different Ways of Loading Data in ASP.Net</a></li>
+                            <li><a href="/using-with-server-side-languages/asp-net/creating-charts-with-data-from-a-database">Creating Charts in ASP.Net using a Database</a></li>
+                            <li><a href="/using-with-server-side-languages/asp-net/creating-drill-down-charts">Creating Drill-down Charts</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Java
+                        <ul>
+                            <li><a href="/using-with-server-side-languages/java/introduction">Introduction to the FusionCharts JSP Wrapper</a></li>
+                            <li><a href="/using-with-server-side-languages/java/different-ways-of-loading-data">Different Ways of Loading Data in Java</a></li>
+                            <li><a href="/using-with-server-side-languages/java/creating-charts-with-data-from-a-database">Creating Charts in Java using a Database</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Django
+                        <ul>
+                            <li><a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper">Introduction to the FusionCharts Django Wrapper</a></li>
+                            <li><a href="/using-with-server-side-languages/django/different-ways-of-loading-data">Different Ways of Loading Data in Django</a></li>
+                            <li><a href="/using-with-server-side-languages/django/creating-charts-with-data-from-a-database">Creating Charts in Django using a Database</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Tutorials
+                        <ul>
+                            <li><a href="/using-with-server-side-languages/tutorials/php-mysql-charts">Create Interactive Charts using PHP and MySQL</a></li>
+                            <li><a href="/using-with-server-side-languages/tutorials/drill-down-charts-using-php-mysql">Create Drill-Down Charts using PHP and MySQL</a></li>
+                            <li><a href="/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb">Create Charts using Node.js, ExpressJS and Mongodb</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                Using with JavaScript Libraries
+                <ul>
+                    <li>
+                        jQuery
+                        <ul>
+                            <li><a href="/using-with-javascript-libraries/jquery/introduction">Introduction to FusionCharts jQuery Helper</a></li>
+                            <li><a href="/using-with-javascript-libraries/jquery/rendering-charts-using-jquery">Rendering Charts Using jQuery</a></li>
+                            <li><a href="/using-with-javascript-libraries/jquery/updating-chart-properties-using-jquery">Updating Chart Properties Using jQuery</a></li>
+                            <li><a href="/using-with-javascript-libraries/jquery/selecting-charts-using-jquery">Selecting Charts Using jQuery</a></li>
+                            <li><a href="/using-with-javascript-libraries/jquery/handling-events-using-jquery">Handling Events Using jQuery</a></li>
+                            <li><a href="/using-with-javascript-libraries/jquery/rendering-charts-from-html-tables">Rendering Charts from HTML Tables</a></li>
+                            <li><a href="/using-with-javascript-libraries/jquery/api-reference">API Reference</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        AngularJS
+                        <ul>
+                            <li><a href="/using-with-javascript-libraries/angularjs/introduction">Introduction to FusionCharts AngularJS Directive</a></li>
+                            <li><a href="/using-with-javascript-libraries/angularjs/creating-charts-using-the-angular-fusioncharts-directive">Creating Charts Using the Angular-FusionCharts Directive</a></li>
+                            <li><a href="/using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object">Configuring Charts Using the Scope</a></li>
+                            <li><a href="/using-with-javascript-libraries/angularjs/configuring-advanced-features-using-angularjs">Configuring Advanced Features Using AngularJS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        ReactJS
+                        <ul>
+                            <li><a href="/using-with-javascript-libraries/reactjs/introduction">Introduction to FusionCharts ReactJS Component</a></li>
+                            <li><a href="/using-with-javascript-libraries/reactjs/install-fusioncharts-reactjs-component-via-npm">Install FusionCharts ReactJS Component via NPM</a></li>
+                            <li><a href="/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component">Creating Charts Using the React-FusionCharts Component</a></li>
+                            <li><a href="/using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object">Configuring Charts Using the ReactJS Props Object</a></li>
+                            <li><a href="/using-with-javascript-libraries/reactjs/configuring-advanced-features-using-reactjs">Configuring Advanced Features Using ReactJS</a></li>
+                            <li><a href="/using-with-javascript-libraries/reactjs/including-interactivity-in-charts-using-reactjs">Including Interactivity in Charts Using ReactJS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        VueJS
+                        <ul>
+                            <li><a href="/using-with-javascript-libraries/vuejs/introduction">Introduction to the FusionCharts VueJS Component</a></li>
+                            <li><a href="/using-with-javascript-libraries/vuejs/installing-the-fusioncharts-vuejs-component-via-npm">Installing the FusionCharts VueJS Component via NPM</a></li>
+                            <li><a href="/using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component">Creating Charts Using the FusionCharts VueJS Component</a></li>
+                            <li><a href="/using-with-javascript-libraries/vuejs/configuring-advanced-features-using-vuejs">Configuring Advanced Features Using VueJS</a></li>
+                            <li><a href="/using-with-javascript-libraries/vuejs/including-interactivity-in-charts-using-vuejs">Including Interactivity in Charts Using VueJS</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        Angular4
+                        <ul>
+                            <li><a href="/using-with-javascript-libraries/angular4/introduction">Introduction to the FusionCharts Angular4 Component</a></li>
+                            <li><a href="/using-with-javascript-libraries/angular4/installing-the-fusioncharts-angular4-component-via-npm">Installing the FusionCharts Angular4 Component via NPM</a></li>
+                            <li><a href="/using-with-javascript-libraries/angular4/creating-charts-using-the-fusioncharts-angular4-component">Creating Charts Using the FusionCharts Angular4 Component</a></li>
+                            <li><a href="/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4">Configuring Advanced Features Using Angular4</a></li>
+                            <li><a href="/using-with-javascript-libraries/anguar4/including-interactivity-in-charts-using-anguar4">Including Interactivity in Charts Using Angular4</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+    	<i class="material-icons"></i>
+        <a>Help</a>
+        <ul>
+            <li><a href="/tutorials-list">Tutorials</a></li>
+            <li>
+                Troubleshooting
+                <ul>
+                    <li><a href="/troubleshooting/debugger">Using the FusionCharts Suite XT Debugger</a></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li>
+    	<i class="material-icons"></i>
+        <a><a href="/">Error Handling</a></a>
+    </li>
+    <li>
+    	<i class="material-icons"></i>
+        <a><a href="/showcase">Showcase</a></a>
+    </li>
+    <li>
+    	<i class="material-icons"></i>
+        <a><a href="/">FAQ</a></a>
+    </li>
+    <li>
+    	<i class="material-icons"></i>
+        <a><a href="/">Changelog</a></a>
+    </li>
+</ul>
