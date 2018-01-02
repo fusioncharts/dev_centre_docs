@@ -60,7 +60,7 @@ The `fusionchart.usa.js` is located inside the maps folder in your download pack
 
 Here is the JSON/XML representation of the data you will use to build this map
 
-{% embed_data getting-started-your-first-charts-building-your-map-example1.js %}
+{% embed_data getting-started-your-first-charts-building-your-map-example-1.js %}
 
 ### Including FusionCharts Suite XT library in your page
 
