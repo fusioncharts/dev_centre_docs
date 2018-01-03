@@ -27,7 +27,7 @@
       </li>
     </ul>
   </li>
-  <li><i class="material-icons">directions</i><a><a href="#">Guides</a></a>
+  <li><i class="material-icons">directions</i><a href="#">Guides</a>
     <ul>
       <li><a>Chart Guide</a>
         <ul>
