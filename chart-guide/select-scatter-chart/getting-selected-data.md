@@ -12,13 +12,13 @@ In this section, you will be shown how the updated data is read using the JavaSc
 
 After the chart is rendered, to access the chart data as an array, the following function is called:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 //Get a reference to our chart
 var chartObject= FusionCharts("chartId");
 
 //Now get the data as array.
 var arrData = chartObject.getData();
-{% endraw %}{% endhighlight %}
+```
 
 You first need to get a reference to the chart object. You can do so using the `FusionCharts` item reference method. Next, to get the data as an array, call the `getData()` method of the chart. This method returns the data of the chart in a two-dimensional array.
 
@@ -85,7 +85,7 @@ If you map this with the JSON data, you will find the following:
 
 The chart also provides a method to read the selected data in the JSON/XML format. This method is named as the `getJSONData()` and can be invoked as under:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 //Get a reference to our chart
 var chartObject= FusionCharts("SelectChart");
 
@@ -94,7 +94,7 @@ var jsonRtn = chartObject.getJSONData();
 
 //Show it to user in alert box
 alert(jsonRtn);
-{% endraw %}{% endhighlight %}
+```
 
 The function `getJSONData()` returns the selected data. This function is also used to retrieve the complete data from the chart. To get the complete data from the chart you need to pass `false` as a parameter to the function. For example, `var jsonRtn = chartObject.getJSONData(false);`
 

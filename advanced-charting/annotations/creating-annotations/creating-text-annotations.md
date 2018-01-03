@@ -24,7 +24,7 @@ The text **Promotional activities for Butterfinger made it surpass Snickers, the
 
 The JSON structure for creating text annotations is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 "chart": {
     ...
 },
@@ -45,7 +45,7 @@ The JSON structure for creating text annotations is given below:
         }]
     }]
 }
-{% endraw %}{% endhighlight %}
+```
 
 The attributes used to create text annotations are:
 

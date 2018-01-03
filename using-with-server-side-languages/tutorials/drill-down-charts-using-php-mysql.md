@@ -38,10 +38,10 @@ To create a MySQL database, you will be required to access the MySQL database se
 
 Once we login to the database server, we will use the below commands to create a database for the drill-down sample.
 
-{% highlight php lineanchors %}{% raw %}
+```php
 CREATE DATABASE IF NOT EXISTS drilldown;
 USE drilldown;
-{% endraw %}{% endhighlight %}
+```
 
 Once the database is created and selected, it's time to create the tables that we need for the drill-down sample. We would require three tables called
 
@@ -51,7 +51,7 @@ Once the database is created and selected, it's time to create the tables that w
 
 Now, let's create the tables, using the code shown below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 --
 -- Definition of table `monthly_sales`
 --
@@ -77,12 +77,12 @@ CREATE TABLE `yearly_sales` (
   `Year` varchar(20) NOT NULL,
   `Sales` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-{% endraw %}{% endhighlight %}
+```
 
 
 Once the tables are created, we'll seed them with some data
 
-{% highlight php lineanchors %}{% raw %}
+```php
 --
 -- Dumping data for table `monthly_sales`
 --
@@ -206,11 +206,11 @@ INSERT INTO `yearly_sales` (`Year`,`Sales`) VALUES
  ('2015','39163'),
  ('2016','39973');
 /*!40000 ALTER TABLE `yearly_sales` ENABLE KEYS */;
-{% endraw %}{% endhighlight %}
+```
 
 We can verify whether the data is inserted by running the `SELECT SQL` command as shown below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 mysql> select * from yearly_sales;
 +------+-------+
 | Year | Sales |
@@ -223,7 +223,7 @@ mysql> select * from yearly_sales;
 | 2016 | 39973 |
 +------+-------+
 6 rows in set (0.00 sec)
-{% endraw %}{% endhighlight %}
+```
 
 Similarly, we can check out if all the tables have the data properly inserted by running a select command for each table. If all of these properly return data like above, we're all set to go to the second step.
 
@@ -249,14 +249,14 @@ The implementation of the above steps is shown below:
 
 * Download the FusionCharts PHP wrapper from <a href="http://www.fusioncharts.com/php-charts/" target="_blank">here</a>. Extract the downloaded zip, create a folder called __fusioncharts__ in your project directory and copy the __fusioncharts.php__ in the created fusioncharts folder. After copying include this file in your code as shown below
 
-{% highlight php lineanchors %}{% raw %}
+```php
 //including FusionCharts PHP Wrapper
 include("fusioncharts/fusioncharts.php");
-{% endraw %}{% endhighlight %}
+```
 
 * The default username to connect to the MySQL instance running on your machine is ‘__root__’ and the password is what you configured during the installation of the stack. The interaction with the database from PHP is achieved using the __mysqli__ extension. Given below is the code to establish the connection:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 $hostdb   = "MYSQL_SERVER_HOST_NAME"; // MySQl host
 $userdb   = "MYSQL_SERVER_USERNAME"; // MySQL username
 $passdb   = "MYSQL_SERVER_PASSWORD"; // MySQL password
@@ -269,7 +269,7 @@ $dbhandle = new mysqli($hostdb, $userdb, $passdb, $namedb);
 if ($dbhandle->connect_error) {
     exit("There was an error with your connection: " . $dbhandle->connect_error);
 }
-{% endraw %}{% endhighlight %}
+```
 
 * We would only need to include `fusioncharts.js` for this sample and for theme we are using custom made `elegant.js` specifically for this sample.
 
@@ -277,7 +277,7 @@ You can download an unlimited trial of FusionCharts consisting required core fil
 
 Assuming you have the FusionCharts library placed inside the folder "fusioncharts/js" in your project after downloading the core FusionCharts library, include the file in a script tag and the required theme in the head section of the PHP file as below.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <head>
   <title>Creating Drill Down Charts Using PHP and MySQL</title>
   <!-- FusionCharts Core Package File -->
@@ -285,17 +285,17 @@ Assuming you have the FusionCharts library placed inside the folder "fusionchart
   <script type="text/javascript" src="fusioncharts/js/elegant.js"></script>
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>  
 </head>
-{% endraw %}{% endhighlight %}
+```
 
 * Now that a connection to the database server is established and all the required files are included, we will query the database and fetch the yearly sales data.
 
-{% highlight php lineanchors %}{% raw %}
+```php
 //SQL Query for the Parent chart.
 $strQuery = "SELECT Year, Sales FROM yearly_sales";
  
 //Execute the query, or else return the error message.
 $result = $dbhandle->query($strQuery) or exit("Error code ({$dbhandle->errno}): {$dbhandle->error}");
-{% endraw %}{% endhighlight %}
+```
 
 If the query returns a valid response we'll start preparing the JSON array.
 
@@ -313,7 +313,7 @@ We’ll start with the data for the year 2011. In the code below, you can see th
 
 The final JSON code that we need for this sample should be as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
    "chart":{
       "caption":"YoY Sales - KFC",
@@ -1229,12 +1229,12 @@ The final JSON code that we need for this sample should be as shown below:
       }
    ]
 }
-{% endraw %}{% endhighlight %}
+```
 
 
 Now let's move on to the PHP code that will generate the above JSON data.
 
-{% highlight php lineanchors %}{% raw %}
+```php
 //SQL Query for the Parent chart.
 $strQuery = "SELECT Year, Sales FROM yearly_sales";
  
@@ -1389,27 +1389,27 @@ $resultQuarterly = $dbhandle->query($strQuarterly) or exit("Error code ({$dbhand
 		}
 		 
 	}
-{% endraw %}{% endhighlight %}
+```
 
 
 * Once we have the `$arrData` array ready, we will convert/encode it to JSON data
 
-{% highlight php lineanchors %}{% raw %}
+```php
 //Convert the array created into JSON as our chart would recieve the dat ain JSON
 $jsonEncodedData = json_encode($arrData);
-{% endraw %}{% endhighlight %}
+```
 
 
 * Next, we’ll feed the JSON data created and the other required parameters to the FusionCharts constructor.
 
-{% highlight php lineanchors %}{% raw %}
+```php
 $columnChart = new FusionCharts("column2d", "myFirstChart" , "300%", "500", "linked-chart", "json", "$jsonEncodedData");
-{% endraw %}{% endhighlight %}
+```
 
 
 * Finally, we will now call the render to render the linked chart now. For the `render` method to work, we will need a HTML div element (for our example, we will assign it the id `linked-chart`). And we will also need to configure the link properties in a script tag, as shown below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 $columnChart->render();    //Render Method
 <body>
      <!-- DOM element for Chart -->
@@ -1429,11 +1429,11 @@ $columnChart->render();    //Render Method
 ?>
 <div style="width:300px;" ><center><div id="linked-chart">Awesome Chart on its way!</div></center></div>         
 </body>
-{% endraw %}{% endhighlight %}
+```
 
 Therefore, the complete code for this sample will be as shown below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
  <?php
 //including FusionCharts PHP Wrapper
 include("fusioncharts/fusioncharts.php"); 
@@ -1653,7 +1653,7 @@ if ($result) {
          
       </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 
 The final chart, with two levels of drill-down, will look as shown below:

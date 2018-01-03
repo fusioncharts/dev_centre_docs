@@ -34,18 +34,18 @@ The line labeled **Target - $175K** is a trend-line that is used as a reference 
 
 The HTML code to create this chart using the Angular-FusionCharts directive is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <fusioncharts
 	width="450"
 	height="300"
 	type="column2d"
 	datasource="{{myDataSource}}">
 </fusioncharts>
-{% endraw %}{% endhighlight %}
+```
 
 The AngularJS code for this chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $scope.dataSource = {
     "chart": {
         "caption": "Quarterly Sales Summary",
@@ -76,7 +76,7 @@ $scope.dataSource = {
         }]
     }]
 };
-{% endraw %}{% endhighlight %}
+```
 
 ## Adding Annotations to Charts
 
@@ -94,18 +94,18 @@ A column 2D chart, without these annotations, is shown below:
 
 The HTML code to create the chart with annotations is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <fusioncharts
 	width="400"
 	height="400"
 	type="spline"
 	datasource="{{myDataSource}}">
 </fusioncharts>
-{% endraw %}{% endhighlight %}
+```
 
 The AngularJS code is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $scope.dataSource = {
 
     "chart": {
@@ -200,4 +200,4 @@ $scope.dataSource = {
         "value": "80000"
     }]
 };
-{% endraw %}{% endhighlight %}
+```

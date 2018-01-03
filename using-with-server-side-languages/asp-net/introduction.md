@@ -34,7 +34,7 @@ The data structure that goes into the **JSONURL.aspx** file is given below:
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
 
         <%@ Page Language="C#" AutoEventWireup="true" CodeFile="JSONUrl.aspx.cs" Inherits="BasicExample_BasicChart" %>
         <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -53,11 +53,11 @@ The data structure that goes into the **JSONURL.aspx** file is given below:
             </body>
         </html>
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-     {% highlight javascript lineanchors %}{% raw %}
+```javascript
 
       <%@ Page Language="VB" AutoEventWireup="false" CodeFile="JSON_URL.aspx.vb" Inherits="Samples_BasicExamples_JSON_URL" %>
 
@@ -79,7 +79,7 @@ The data structure that goes into the **JSONURL.aspx** file is given below:
       </html>
 
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -93,7 +93,7 @@ The data structure that goes into the **JSONURL.aspx.cs** file is given below:
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
 
       using System;
       using System.Collections;
@@ -124,11 +124,11 @@ The data structure that goes into the **JSONURL.aspx.cs** file is given below:
       }
 
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-     {% highlight javascript lineanchors %}{% raw %}
+```javascript
 
       Imports System.Collections
       Imports System.Configuration
@@ -158,7 +158,7 @@ The data structure that goes into the **JSONURL.aspx.cs** file is given below:
 
       End Class
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -172,10 +172,10 @@ The FusionCharts `Chart` class is used to initialize an object to create the cha
 
 The syntax of the `Chart` class constructor used to initialize the chart object is:
 
-{% highlight vb.net lineanchors %}{% raw %}
+```vb.net
 Chart <object name> = new Chart (chartType, chartId, chartWidth, chartHeight, dataFormat, dataSource, bgColor, bgOpacity)
 
-{% endraw %}{% endhighlight %}
+```
 
 Given below is a brief description of the constructor parameters:
 

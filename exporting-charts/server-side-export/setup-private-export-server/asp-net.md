@@ -33,11 +33,11 @@ __Step 3__: Make sure 'IUSR' has the proper read/write permissions in the __Expo
 
 __Step 4__: FusionCharts' export request contains some XML data, which is restricted in .NET 4 or above. Therefore, you may need to add the following configuration in your 'web.config' file:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <system.web>
 	<httpRuntime requestValidationMode="2.0"/>
 </system.web>
-{% endraw %}{% endhighlight %}
+```
 
 ## Configuring the Export Server
 

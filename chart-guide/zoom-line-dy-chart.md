@@ -19,11 +19,11 @@ The chart below shows a zoom-line dual y-axis chart created to compare unique fo
 
 In the JSON data, attributes and their corresponding values are written in the key-value pair format, as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 "<attributeName>": “<value>”
 
-{% endraw %}{% endhighlight %}
+```
 
 Given below is a brief description of the data structure used to create the above chart:
 <table>

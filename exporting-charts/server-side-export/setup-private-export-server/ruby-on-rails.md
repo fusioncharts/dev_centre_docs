@@ -28,23 +28,23 @@ __Step 5__: The export handler either writes the exported chart/chart data to di
 
 __Step 1__: Add this line to your application's Gemfile: <br/>
 
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     gem 'fusioncharts_exporter'
-    {% endraw %}{% endhighlight %}
+    ```
 
 __Step 2__: Execute:
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     $ bundle
-    {% endraw %}{% endhighlight %}
+    ```
 
 __Step 3__: Install both __Inkscape__ and __ImageMagick__ as they are necessary dependencies for the RoR export handler to work.
 
 <p class="text-info">  Starting FusionCharts Suite XT v3.11.0, __Inkscape__ and __ImageMagick__ are no longer required for browsers with canvas support. In that case, this step can be skipped. </p>
 
 __Step 4__: The gem provides a generator to create the required configuration files and directories. Run the following command: <br/>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     $ rails generate fusioncharts_exporter:install
-    {% endraw %}{% endhighlight %}
+    ```
 
 This creates the following files and directories:
 - __config/fusioncharts_exporter.yml__
@@ -76,9 +76,9 @@ The following are the configurables to be modified as required in the __config/f
 ## Mount the application
 
 You will have to specify the end point of the export server. In order to do this, you will have to mount the export handler to your rails application. Add the following lines in __config/routes.rb__: <br/>
-    {% highlight html lineanchors %}{% raw %}mount FusionchartsExporter::Engine, at: "<path>"{% endraw %}{% endhighlight %}
+```htmlmount FusionchartsExporter::Engine, at: "<path>"```
 
 
 For example, if you want your export server hosted at __http://example.com/export__, then add the following lines:
 
-    {% highlight javascript lineanchors %}{% raw %}mount FusionchartsExporter::Engine, at: "export"{% endraw %}{% endhighlight %}
+```javascriptmount FusionchartsExporter::Engine, at: "export"```

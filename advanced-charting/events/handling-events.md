@@ -39,13 +39,13 @@ For more details on the arguments passed to the event listeners, read the [Fusio
 
 The code snippet to define an event listener is shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 ...
 var myEventListener = function (eventObj, eventArgs) {
    console.log(eventObj.eventType + " was raised by the chart whose ID is " + eventObj.sender.id);
 };
 ...
-{% endraw %}{% endhighlight %}
+```
 
 The listener definition here uses the `eventObj` object to extract the type of event triggered and the ID of the chart on which the event is triggered.
 
@@ -68,11 +68,11 @@ The `addEventListener()` function takes the following two parameters:
 
 Once the listener function is defined, the line of code shown below is used to attach the listener function to the event:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 ...
 revenueChart.addEventListener(“renderComplete”, myEventListener);
 ...
-{% endraw %}{% endhighlight %}
+```
 
 Your column 2D chart is now configured to listen to the `renderComplete` event.
 
@@ -84,7 +84,7 @@ __renderComplete event was raised by the chart whose ID is chartobject-2.__
 
 The complete data structure of the chart, with the listener definition, is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 FusionCharts.ready(function () {
   var revenueChart = new FusionCharts({
@@ -130,7 +130,7 @@ FusionCharts.ready(function () {
     revenueChart.addEventListener("renderComplete", myEventListener);
     revenueChart.render();
   });
-{% endraw %}{% endhighlight %}
+```
 
 ### Embedding the Listener Function Inside the Event Listener
 
@@ -138,13 +138,13 @@ In the example above, the listener function is defined separately using the `myE
 
 This is how the code will then be re-written:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 ...
 revenueChart.addEventListener("renderComplete", function(eventObj, eventArgs) {
    console.log(eventObj.eventType + " was raised by the chart whose ID is " + eventObj.sender.id);
 });
 ...
-{% endraw %}{% endhighlight %}
+```
 
 ### Passing Event Listeners During Chart Creation
 
@@ -152,7 +152,7 @@ Another more unified way to pass all event listeners for a chart is to do so whi
 
 The `renderComplete` event for the above column 2D chart can thus be configured as:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 ...
  events:{
             'renderComplete': function(eventObj, args) {
@@ -161,7 +161,7 @@ The `renderComplete` event for the above column 2D chart can thus be configured 
         }
 
 ...
-{% endraw %}{% endhighlight %}
+```
 
 ## Listening to Events Triggered for All Charts on a Page
 
@@ -169,20 +169,20 @@ Events can be attached to the `windows.FusionCharts` object. Attaching events to
 
 Add the following code lines to the JS code for the above column 2D chart configured for the `renderComplete` event:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 ...
 FusionCharts.addEventListener("renderComplete", function(eventObj, eventArgs) {
    console.log(eventObj.eventType + " was raised by the chart whose ID is " + eventObj.sender.id);
 });
 ...
-{% endraw %}{% endhighlight %}
+```
 
 When the JavaScript console is opened on a page with multiple charts, a list of messages in the console show that the`renderComplete` event has been triggered for all charts on the page.
 
 ## Listening to Multiple Events Triggered for One Chart
 To listen to multiple events for one chart __using just one event listener__, use the code snippet shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 ...
 var myEventListener = function (eventObj, eventArgs) {
    console.log(eventObj.eventType + " was raised by the chart whose ID is " + eventObj.sender.id);
@@ -195,7 +195,7 @@ myChart.addEventListener("disposed", myEventListener);
 
 });
 ...
-{% endraw %}{% endhighlight %}
+```
 
 The above code configures four events, to be triggered during different stages of the chart’s lifecycle.
 
@@ -203,7 +203,7 @@ To optimize the above code, the last four lines of event attachment can be reduc
 
 This is how the revised code then looks:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 ...
 revenueChart.addEventListener(["initialized",
    "dataUpdated",
@@ -212,7 +212,7 @@ revenueChart.addEventListener(["initialized",
    console.log(eventObj.eventType + " was raised by the chart whose ID is " + eventObj.sender.id);
 });
 ...
-{% endraw %}{% endhighlight %}
+```
 
 ## Cancelling Event Listeners
 The `preventDefault()` function is used to cancel the execution of the listener function of an event. The function is used with the `eventObj` parameter—`eventObj.preventDefault()`—of the listener function.
@@ -245,7 +245,7 @@ One of the applications of this function is  to restrict listening to an event o
 
 The code snippet below shows how you can use this function:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 ...
 var func = function (eventObj) {
    console.log("Data was updated for the first time in chart");
@@ -257,6 +257,6 @@ revenueChart.addEventListener("dataUpdated", func);
 
 revenueChart.addEventListener("renderComplete", func);
 ...
-{% endraw %}{% endhighlight %}
+```
 
 The above code executes the listener when the `dataUpdated` event is triggered for the first time; after this execution, the listener detaches itself from the event.

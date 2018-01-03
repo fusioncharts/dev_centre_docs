@@ -15,7 +15,7 @@ Take a look at the column 2D chart shown below:
 
 The data structure needed to render this chart via npm is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var FusionCharts = require("fusioncharts");
 require("fusioncharts/fusioncharts.charts")(FusionCharts);
 var chart = new FusionCharts ({
@@ -76,4 +76,4 @@ var chart = new FusionCharts ({
 	}
 }).render("chartContainer");
 
-{% endraw %}{% endhighlight %}
+```

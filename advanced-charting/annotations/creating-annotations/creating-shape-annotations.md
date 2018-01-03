@@ -34,7 +34,7 @@ The rectangle around the text is a shape annotation.
 
 The JSON structure for creating image annotations is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 "chart": {
         ...
 },
@@ -55,7 +55,7 @@ The JSON structure for creating image annotations is given below:
         }]
     }]
 }
-{% endraw %}{% endhighlight %}
+```
 
 FusionCharts Suite XT includes several attributes to create and customize shape annotations. While many of these attributes are common to all shapes, some attributes work for only specific shapes.
 

@@ -22,7 +22,7 @@ To install the React-FusionCharts component for your applications, follow the st
 
 In your HTML, include the `fusioncharts.js` and the `react-fusioncharts.js` JavaScript files, as shown in the code below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 <script type="text/javascript" src="https://unpkg.com/react@0.13.3/dist/JSXTransformer.js"></script>
 <script type="text/javascript" src="https://unpkg.com/react@15/dist/react.min.js"></script>
@@ -30,7 +30,7 @@ In your HTML, include the `fusioncharts.js` and the `react-fusioncharts.js` Java
 <script type="text/javascript" src="https://unpkg.com/fusioncharts/fusioncharts.js"></script>
 <script type="text/javascript" src="https://unpkg.com/react-fusioncharts/dist/react-fusioncharts.js"></script>
 
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info"> It is mandatory that the __react-fusioncharts.js__ file be included after all other script files. </p>
 
@@ -38,17 +38,17 @@ In your HTML, include the `fusioncharts.js` and the `react-fusioncharts.js` Java
 
 Add a `<div>` HTML container element, which will be used to render the chart, as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 <div id="chart-container"></div>
 
-{% endraw %}{% endhighlight %}
+```
 
 ### Step 3: Define the Chart Configuration
 
 As shown in the code below, in your JavaScript code, define an object that contains the configuration for a FusionCharts Suite XT chart. Set the chart data source using the regular [FusionCharts JSON format]{% linkTo tutorials/getting-started/building-your-first-chart.md %}{:target='_blank'}.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 var chartConfigs = {
     type: "Column2D",
@@ -60,26 +60,26 @@ var chartConfigs = {
     }
 };
 
-{% endraw %}{% endhighlight %}
+```
 
 ### Step 4: Render the Chart
 
 The chart object is now passed to the FusionCharts component as the props object. The chart is then rendered using the `FusionCharts` tag, as shown in the code below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 ReactDOM.render(
     <ReactFC {...chartConfigs} />,
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 __An Alternative Method for Passing Chart Configuration__
 
 The alternative method for passing chart configuration combines steps __3__ and __4__, as shown in the code below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 var chartData = {
         chart: {},
@@ -95,7 +95,7 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 
 Once the installation is complete, you are ready to start creating and customizing your charts using the React-FusionCharts component. Read on to see how.

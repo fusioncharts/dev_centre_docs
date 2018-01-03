@@ -28,7 +28,7 @@ A column chart, the data for which is loaded using a static JSON string, is show
 
 The data structure needed to create the above chart goes into the `app/controllers/examples_controller.rb` file. It is as given below:
 
-{% highlight rb lineanchors %}{% raw %}
+```rb
 # Example to create a column 2D chart with the chart data passed in JSON string format.
 
 #The `fc_json` method is defined to load chart data from a JSON string.
@@ -105,7 +105,7 @@ def fc_json
 
 	})
 end
-{% endraw %}{% endhighlight %}
+```
 
 To know more about the attributes that you can configure for the column 2D chart, visit [this page]{% linkTo attrs.md chart=column2d %}.
 
@@ -115,7 +115,7 @@ Next, we will look at how you can render the column chart shown above using XML 
 
 The data structure needed to create the above chart goes into the `app/controllers/examples_controller.rb` file. It is as given below:
 
-{% highlight rb lineanchors %}{% raw %}
+```rb
 # The `fc_xml` method is defined to load chart data from an XML string.
 def fc_xml
 
@@ -142,7 +142,7 @@ def fc_xml
 	@chart.height = 400
 
 end
-{% endraw %}{% endhighlight %}
+```
 
 ## Loading Data from a Valid Ruby Hash
 
@@ -156,7 +156,7 @@ The multi-series column 2D chart thus rendered is shown below:
 
 The data structure needed to create the above chart goes into the `app/controllers/examples_controller.rb` file. It is as given below:
 
-{% highlight rb lineanchors %}{% raw %}
+```rb
 # The `fc_hash` function is defined to load data from a Ruby Hash. This data will be converted to
 
 # JSON and the chart will be rendered.
@@ -220,7 +220,7 @@ def fc_hash
   }
 })
 end
-{% endraw %}{% endhighlight %}
+```
 To know more about the attributes that you can configure for the multi-series column 2D chart, visit [this page]{% linkTo attrs.md chart=mscolumn2d %}.
 
 ## Important Tips for Developers

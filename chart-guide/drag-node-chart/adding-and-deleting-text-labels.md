@@ -99,12 +99,12 @@ When a new label is created, a JavaScript event, named `labelAdded`, is raised. 
 
 The code snippet required to trap this event is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 chartInstance.addEventListener(labeladded, function(e, a) {
     //Your code here
 });
 
-{% endraw %}{% endhighlight %}
+```
 
 ## Deleting a Text Label at Run-time
 
@@ -122,11 +122,11 @@ When a label is deleted, a JavaScript event, named `labelDeleted`, is raised. Yo
 
 The code snippet required to trap this event is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 chartInstance.addEventListener('labeldeleted', function(e, a) {
     //Your code here
 });
 
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">You can get the latest updated node and connector positions using JavaScript or by [submitting the updated positions]{% linkTo tutorials/chart-guide/drag-node-chart/updating-chart-data-on-server.md %} to a server-side script.</p>

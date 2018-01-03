@@ -43,7 +43,7 @@ December| $730,000
 The JSON representation for the above table looks as under:
 
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "chart": {
         "caption": "Monthly",
@@ -105,7 +105,7 @@ The JSON representation for the above table looks as under:
     }]
 }
 }
-{% endraw %}{% endhighlight %}
+```
 
 Copy this into a file, name it monthlyRevenue.json, and store it in the same folder as your HTML page.
 <p class="text-info">
@@ -114,7 +114,7 @@ If you are using multi-lingual characters in your JSON, make sure that you save 
 
 The data structure needed to render the above chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 FusionCharts.ready(function() {
     var fusioncharts = new FusionCharts({
         type: 'column2d',
@@ -126,7 +126,7 @@ FusionCharts.ready(function() {
     });
     fusioncharts.render();
 });
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">
 While rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive due to security restrictions enforced by most modern browsers.
@@ -137,7 +137,7 @@ While rendering your charts locally (without a web server, even if on the localh
 
 The XML representation for the above chart looks as under:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <chart caption='Harry&#39;s SuperMart' subcaption='Monthly revenue for last year' xaxisname='Month' yaxisname='Amount' numberprefix='$' palettecolors='#008ee4' bgalpha='0' borderalpha='20' canvasborderalpha='0' useplotgradientcolor='0' plotborderalpha='10' placevaluesinside='1' rotatevalues='1' valuefontcolor='#ffffff' captionpadding='20' showaxislines='1' axislinealpha='25' divlinealpha='10'>
     <set label='Jan' value='420000' />
     <set label='Feb' value='810000' />
@@ -152,7 +152,7 @@ The XML representation for the above chart looks as under:
     <set label='Nov' value='900000' />
     <set label='Dec' value='730000' />
 </chart>
-{% endraw %}{% endhighlight %}
+```
 
 Copy this into a file called monthlyRevenue.xml and store it in the same folder as your HTML page.
 
@@ -162,7 +162,7 @@ If you are using multi-lingual characters in your XML, make sure that you save t
 
 To initialize the chart and to instruct it using XML URL, you use the following code:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 FusionCharts.ready(function() {
     var myChart = new FusionCharts({
         "type": "column2d",
@@ -174,7 +174,7 @@ FusionCharts.ready(function() {
     });
     myChart.render();
 });
-{% endraw %}{% endhighlight %}
+```
 
 ## Was there a problem rendering the chart?
 

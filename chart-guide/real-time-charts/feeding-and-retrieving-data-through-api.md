@@ -53,7 +53,7 @@ Real-time charts let you track data updates for the real-time chart(s) rendered 
 
 You can define the `FC_ChartUpdated()` method in your HTML code as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 function FC_ChartUpdated(DOMId) {
     //Check if DOMId is that of the chart we want
     if (DOMId == "ChId1") {
@@ -62,7 +62,7 @@ function FC_ChartUpdated(DOMId) {
         //Now you can do anything with the chart...
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 Whenever a real-time chart (present in this page) receives new data (from the data provider page or the JavaScript `feedData()` method), it will now call the `FC_ChartUpdated()` method and pass its DOM Id to this method.
 
@@ -74,14 +74,14 @@ The `realTimeUpdateComplete` event is raised every time a real-time chart or gau
 
 A sample implementation of the `realTimeUpdateComplete` event is shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 FusionCharts("mychart").addEventListener("RealtimeUpdateComplete",
     function(event, parameter)
     {
         showData();
     }
 );
-{% endraw %}{% endhighlight %}
+```
 
 Existing JavaScript implementations using the FC_ChartUpdated event will continue to function without any problem.
 
@@ -93,14 +93,14 @@ The `realtimeUpdateError` event is raised when an error occurs while updating da
 
 A sample implementation of the `realtimeUpdateError` event is shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 FusionCharts("mychart").addEventListener("RealtimeUpdateError",
     function(event, parameter)
     {
         document.getElementById('ErrorView').innerHTML = "Problem occurred while updating real-time data. The error status code is" + parameter.httpStatus;
     }
 );
-{% endraw %}{% endhighlight %}
+```
 
 ### The getData() Method
 
@@ -112,7 +112,7 @@ A real-time column chart configured to retrieve data using the `getData()` metho
 
 The following code snippet shows how you can use the `getData()` method for the above chart:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 function showData() {
     //Retrieving the data
     var dataArr = FusionCharts("mychart").getData(),
@@ -138,7 +138,7 @@ function showData() {
     //Adding html string in the div container
     document.getElementById('tableView').innerHTML = str;
 }
-{% endraw %}{% endhighlight %}
+```
 
 Whenever the data for a chart with the `myChart` ID updates in the page, the `showData()` function is invoked. This function gets the new data for the chart in a JavaScript array using the `getData()` method. The `showData()` function then creates an HTML table and renders the new data in that table.
 

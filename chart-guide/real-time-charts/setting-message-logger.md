@@ -66,7 +66,7 @@ The following two steps are involved in configuring and using the message logger
 
 The following code snippet enables the use of the message logger for a real-time chart:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 {
    "chart": {
@@ -76,7 +76,7 @@ The following code snippet enables the use of the message logger for a real-time
    ...
    }
 }
-{% endraw %}{% endhighlight %}
+```
 
 Given below is a brief description of the attributes used in the code snippet above:
 
@@ -209,9 +209,9 @@ In the next section, we will look at different examples of real-time updates tha
 
 An example of a real-time update string passed to the message logger (contained in the column chart shown above) is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &label=13%3A18%3A46&value=12&msgTitle=Footfall at : &msgText=13%3A18%3A46 hrs is  13 Customers"
-{% endraw %}{% endhighlight %}
+```
 
 In this update, the `&label` and `&value` parameters are absorbed by the chart for data update.
 
@@ -233,9 +233,9 @@ We have configured this chart to display an `ERROR` message in the message logge
 
 To specify the message type, you can provide data in the following format:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &label=14%3A46%3A12&value=6&msgTitle=Footfall at : &msgText=14%3A46%3A12 hrs is  6 Customers WARNING !!!&msgType=ERROR
-{% endraw %}{% endhighlight %}
+```
 
 
 
@@ -245,9 +245,9 @@ To specify the message type, you can provide data in the following format:
 
 To display messages of type `LINK`, you can provide the following data:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &msgTitle=Check Dashboards for details&msgText=http%3A%2F%2Fwww%2Efusioncharts%2Ecom%3Fid%3D34&msgType=LINK
-{% endraw %}{% endhighlight %}
+```
 
 Because we want to link the message to `http://www.fusioncharts.com?id=34`,  the `&msgText` contains the URL Encoded link.
 
@@ -255,15 +255,15 @@ Because we want to link the message to `http://www.fusioncharts.com?id=34`,  the
 
 You can send an instruction to the chart from the server to clear the contents of the visible message logger. To do this, you need to send the following command:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &clearLog=1
-{% endraw %}{% endhighlight %}
+```
 
 You can send it as a part of the message stream, as shown in the example below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &label=14%3A46%3A12&value=6&msgTitle=Footfall at : &msgText=14%3A46%3A12 hrs is  6 Customers WARNING !!!&msgType=ERROR&clearLog=1
-{% endraw %}{% endhighlight %}
+```
 
 This will clear all the contents of the existing message logger and start afresh.
 
@@ -291,21 +291,21 @@ Using the client-side JavaScript API, you can manipulate the message logger to s
 
 To do any of these actions, you will need to get a reference to the chart. To get the reference to a chart, you can use the DOMID of the chart and pass it using any of the following ways:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var chartRef = FusionCharts("myChartId");
-{% endraw %}{% endhighlight %}
+```
 
 or
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var chartRef = FusionCharts.items["myChartId"];
-{% endraw %}{% endhighlight %}
+```
 
 The legacy function getChartFromId() still works as show below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var chartRef =  getChartFromId("myChartId");
-{% endraw %}{% endhighlight %}
+```
 
 However, note that `getChartFromId()` has been deprecated.
 

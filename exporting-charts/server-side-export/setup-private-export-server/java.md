@@ -38,7 +38,7 @@ __Step 2__: Install __Inkscape__ and __ImageMagick__ as both these modules are n
 __Step 3__: Copy files from the FusionCharts J2EE Export Handler to the server.
 
 __Step 4__:  Add the following servlet mapping in your application's __web.xml__:<br/>
-{% highlight html lineanchors %}{% raw %}
+```html
 <servlet>
     <display-name>FCExporter</display-name>
     <servlet-name>FCExporter</servlet-name>
@@ -49,7 +49,7 @@ __Step 4__:  Add the following servlet mapping in your application's __web.xml__
     <servlet-name>FCExporter</servlet-name>
     <url-pattern>/JSP/ExportExample/FCExporter</url-pattern>
 </servlet-mapping>
-{% endraw %}{% endhighlight %}
+```
 
 __Step 5__: Modify the `url-pattern` as per your application needs.
 
@@ -58,7 +58,7 @@ __Step 6__: Set the path to the folder where the generated image is to be saved 
 __Step 7__: Set the configuration for the __Inkscape__ and __ImageMagick__ path, __only for the Windows Environment__.
 Open the __fusioncharts_export.properties__ file present in the __Classes__ directory and make the following changes: <br/>
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 # Please specify the path to a folder with write permissions
 # The exported image/PDF files would be saved here (for Linux based server SAVEPATH should be changed to relative or absolute path accordingly)
 SAVEPATH = /JSP/ExportExample/ExportedImages/
@@ -83,7 +83,7 @@ INKSCAPE_PATH = C:\\Program Files (x86)\\Inkscape
 
 # Set the path of ImageMagick here(Only for Windows)
 IMAGEMAGICK_PATH = C:\\Program Files\\ImageMagick-6.9.0-Q16
-{% endraw %}{% endhighlight %}
+```
 
 <br>
 

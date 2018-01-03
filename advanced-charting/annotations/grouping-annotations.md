@@ -34,7 +34,7 @@ To create an annotation group, all you have to do is create each annotation item
 
 The code snippet to create the above text and rectangle annotation, as a group, is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 …
 "annotations": {
     "origw": "400",
@@ -64,7 +64,7 @@ The code snippet to create the above text and rectangle annotation, as a group, 
 }
 …
 
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info"> When the annotation group is rendered on the chart, annotation items will be layered in the order they are defined. Because you want to position the text annotation above the rectangle annotation, define the rectangle annotation before the text annotation. </p>
 

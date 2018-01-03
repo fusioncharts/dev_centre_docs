@@ -19,7 +19,7 @@ This article will walk you through the tier-based structure of  themes, the stru
 
 ## The Tier-based Structure of a Theme
 A partial definition of the __zune__ theme, as contained in the `fusioncharts.theme.zune.js` file, is given below:
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 FusionCharts.register('theme', {
     name: 'zune',
     theme: {
@@ -79,7 +79,7 @@ FusionCharts.register('theme', {
         ...
     }
 });
-{% endraw %}{% endhighlight %}
+```
 
 Themes in FusionCharts Suite XT let you set common values for attributes applicable to all charts in your web application, thus removing the overhead of configuring the attributes separately for each chart.
 
@@ -105,7 +105,7 @@ A theme definition includes the following types of tiers:
 Inside each tier, the required attributes are defined within the objects they belong to.
 For example, if you look at the `base` tier in the definition for the zune theme, you will see that attributes such as `paletteColors`, `captionFontSize`, `showHoverEffect`, and so on have been defined within the  `chart` object, because they belong to the  `chart` object. Now, if you  also had to configure the thickness for trend-lines for all charts, you would define the  `thickness` attribute within the `trendlines` object, as shown in the code snippet below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 …
 base: {
             chart: {
@@ -118,7 +118,7 @@ base: {
 }]
         },
 …
-{% endraw %}{% endhighlight %}
+```
 
 Each tier in the theme definition supports most JSON objects like `chart`, `dataset`, `trendlines`, and so on, and all the attributes that fall under these objects. Only, __make sure that you map the attributes and objects correctly__.
 
@@ -135,7 +135,7 @@ The `!important` directive lets you give an attribute precedence over any other 
 
 The code snippet below shows how this directive is used:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 FusionCharts.register('theme', {
     name: 'zune',
     theme: {
@@ -153,5 +153,5 @@ FusionCharts.register('theme', {
         …
     }
 });
-{% endraw %}{% endhighlight %}
+```
 Now that you have understood how theme definitions work, go ahead and see how you can [modify]{% linkTo tutorials/advanced-charting/theme-manager/modifying-existing-themes.md %} and [create themes]{% linkTo tutorials/advanced-charting/theme-manager/creating-new-themes.md %} on your own.

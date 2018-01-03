@@ -32,10 +32,10 @@ This article describes how you can include and apply themes for your charts.
 To apply a theme to your chart, you need to include its corresponding JavaScript file in your web page.
 
 The code snippet below shows how you can do this:
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 <script type="text/javascript" src="js/fusioncharts.js"></script>
 <script type="text/javascript" src="js/themes/fusioncharts.theme.carbon.js"></script>
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">
 The installation routine of a theme relies on the code in the `fusioncharts.js` file. Therefore, make sure that this file is always included before the JavaScript file for the theme.
@@ -49,7 +49,7 @@ Once you have included the theme file, the theme can be applied using the:
 
 ## Using the `theme` Attribute
 The following code snippet demonstrates the use of the `theme` attribute for applying a theme:
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     chart: {
         "theme": "carbon", //Set the value of the `theme` attribute to the name of the required theme
@@ -58,7 +58,7 @@ The following code snippet demonstrates the use of the `theme` attribute for app
     ...
     ...
 }
-{% endraw %}{% endhighlight %}
+```
 
 A column 2D chart configured using the __carbon__ theme is shown below:
 
@@ -75,7 +75,7 @@ If you are using the XML data format for the chart, you can use the `theme` attr
 ## Using the `setChartAttribute()` API Method
 
 The following code snippet demonstrates the use of the `setChartAttribute()` API method for applying a theme:
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 FusionCharts.ready(function () {
     var revenueChart = new FusionCharts({
         type: 'column2d',
@@ -93,13 +93,13 @@ FusionCharts.ready(function () {
     revenueChart.render();
     revenueChart.setChartAttribute(“theme”, “carbon”); //The attribute name and its value are passed as parameters to this method.
 });
-{% endraw %}{% endhighlight %}
+```
 
 ## Applying Multiple Themes for a Chart
 To apply multiple themes for a chart, specify the theme names as a comma-separated list. For example, if you are using the `theme` attribute, this is how you specify all the themes that you want to apply:
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 "theme": "zune,zune-v1"
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">
 __zune-v1__ is a user-defined theme. To know how user-defined themes can be created, refer the [Creating New Themes]{% linkTo tutorials/advanced-charting/theme-manager/creating-new-themes.md %} article. 

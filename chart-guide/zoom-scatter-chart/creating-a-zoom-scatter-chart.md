@@ -6015,11 +6015,11 @@ The data structure needed to create this chart is given below:
 
 In the JSON data, the attributes and their corresponding values are written in the following key-value pair format:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 "<attributeName>": “<value>”
 
-{% endraw %}{% endhighlight %}
+```
 
 Given below is a brief description of the data structure used to create a zoom scatter chart:
 

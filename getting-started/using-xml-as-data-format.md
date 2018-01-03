@@ -35,7 +35,7 @@ December| $730,000
 
 The XML representation for this table looks as under:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <chart caption='Harry&#39;s SuperMart' subcaption='Monthly revenue for last year' xaxisname='Month' yaxisname='Amount' numberprefix='$' palettecolors='#008ee4' bgalpha='0' borderalpha='20' canvasborderalpha='0' useplotgradientcolor='0' plotborderalpha='10' placevaluesinside='1' rotatevalues='1' valuefontcolor='#ffffff' captionpadding='20' showaxislines='1' axislinealpha='25' divlinealpha='10'>
   <set label='Jan' value='420000' />
   <set label='Feb' value='810000' />
@@ -50,7 +50,7 @@ The XML representation for this table looks as under:
   <set label='Nov' value='900000' />
   <set label='Dec' value='730000' />
 </chart>
-{% endraw %}{% endhighlight %}
+```
 
 Copy this into a file called chartdata.xml and store it in the same folder as your HTML page. If you use multi-lingual characters in your XML, ensure to save the XML data with UTF-8 encoding.
 
@@ -62,7 +62,7 @@ Do note that while rendering your charts locally (without a web server, even if 
 
 To initialize the chart and to instruct it to use XML data, you use the following embedding code.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <script type="text/javascript">
 FusionCharts.ready(function () {
   var myChart = new FusionCharts({
@@ -77,13 +77,13 @@ FusionCharts.ready(function () {
   myChart.render();
 });
 </script>
-{% endraw %}{% endhighlight %}
+```
 
 Note how we've used `xml` as `dataformat` as we are providing the XML as a string, and provided the XML string as value to the `dataSource` attribute.
 
 The full HTML code to create this chart is as follows
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
 <title>My First chart using FusionCharts Suite XT</title>
@@ -108,7 +108,7 @@ FusionCharts.ready(function () {
   <div id="chartContainer">FusionCharts XT will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 ## Was there a problem rendering the chart?
 

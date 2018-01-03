@@ -30,7 +30,7 @@ A spline chart with a rectangle annotation and a text annotation positioned at t
 
 The code snippet to position the rectangle annotation is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 ...
 "annotations": {
         ...
@@ -55,7 +55,7 @@ The code snippet to position the rectangle annotation is given below:
 }
 ...
 
-{% endraw %}{% endhighlight %}
+```
 
 The attributes used for positioning annotations are:
 

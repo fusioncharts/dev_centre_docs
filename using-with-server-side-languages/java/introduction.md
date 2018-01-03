@@ -82,7 +82,7 @@ The data structure to render this chart is explained below:
 
 Include the `fusioncharts.js` file, as shown in the code snippet below. 
 
-{% highlight java lineanchors %}{% raw %}
+```java
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
   <!DOCTYPE html>
@@ -94,7 +94,7 @@ Include the `fusioncharts.js` file, as shown in the code snippet below.
       <body>
           <div id="chart-container"></div>
 
-{% endraw %}{% endhighlight %}
+```
 
 This file is needed to render the chart. Ensure that the path to this JS file is correct. Otherwise, it may lead to JavaScript errors. Download FusionCharts from <a href="http://www.fusioncharts.com/download/" target="_blank">here</a>.
 
@@ -106,11 +106,11 @@ Include the `FusionCharts.java` file as a package in your project.
 
 Include the package in the file where you want to show FusionCharts.
 
-{% highlight java lineanchors %}{% raw %}
+```java
 
   <%@page import="fusioncharts.FusionCharts" %>
 
-{% endraw %}{% endhighlight %}
+```
 
 ### Step 4: 
 
@@ -131,7 +131,7 @@ Syntax for the constructor:
   %>
 </textarea>
 
-{% highlight java lineanchors %}{% raw %}
+```java
 
 <%
     FusionCharts column2dChart = new FusionCharts(
@@ -197,7 +197,7 @@ Syntax for the constructor:
         
 %>
 
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info"> __Note:__ Instead of coping the code from the code viewer, use __copy to clipboard__ button to copy the code. The reason we suggest this because in a code viewer, break lines(which is a complete  string line) has been used to display the proper method to set the chart cosmetics and how the datasource can be passed as a parameter.</p>
 
@@ -206,19 +206,19 @@ Syntax for the constructor:
 
 Render the chart.
 
-{% highlight java lineanchors %}{% raw %}
+```java
 
 		<%=column2dChart.render()%>
     </body>
 </html>
 
-{% endraw %}{% endhighlight %}
+```
 
 ### Final template
 
 The full HTML code for the example looks as under:
 
-{% highlight java lineanchors %}{% raw %}
+```java
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
   <!DOCTYPE html>
   <html>
@@ -246,4 +246,4 @@ The full HTML code for the example looks as under:
         <%=column2dChart.render()%>
     </body>
   </html>
-{% endraw %}{% endhighlight %}
+```

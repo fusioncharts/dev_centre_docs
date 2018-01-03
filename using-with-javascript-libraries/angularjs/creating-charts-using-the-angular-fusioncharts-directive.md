@@ -28,20 +28,20 @@ A simple column 2D chart is shown below:
 
 The HTML code to render this chart using the `fusioncharts` AngularJS directive is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <fusioncharts
     width="600"
     height="400"
     type="column2d"
     datasource="{{myDataSource}}">
 </fusioncharts>
-{% endraw %}{% endhighlight %}
+```
 
 In this example, the `fusioncharts` directive is used as a tag to define the view (the chart width, height, and the chart type) and the variable for the datasource.
 
 The AngularJS code to render this chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $scope.myDataSource = {
     chart: {
         caption: "Harry's SuperMart",
@@ -66,7 +66,7 @@ $scope.myDataSource = {
         value: "330000"
     }]
 };
-{% endraw %}{% endhighlight %}
+```
 
 ### Using the fusioncharts Directive as an Attribute
 
@@ -74,14 +74,14 @@ When the `fusioncharts` directive is used as an attribute of the `<div>` element
 
 The HTML code for the above chart, with the `fusioncharts` directive is used as an attribute, is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <div fusioncharts
     width="300"
     height="200"
     type="column2d",
     datasource="{{dataSource}}">
 </div>
-{% endraw %}{% endhighlight %}
+```
 
 ## Providing Attributes using Separate Objects
 
@@ -95,7 +95,7 @@ As an example, take a look at how a multi-series line chart, shown below, to com
 
 The HTML code for this chart is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <div fusioncharts
 	width="600”
 	height="400”
@@ -104,11 +104,11 @@ The HTML code for this chart is given below:
 	categories="{{categories}}”
 	dataset="{{dataset}}”>
 </div>
-{% endraw %}{% endhighlight %}
+```
 
 The AngularJS code for this chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $scope.attrs = {
 
     "caption": "Sales Comparison: 2013 versus 2014",
@@ -219,7 +219,7 @@ $scope.dataset = [{
         }]
     }
 ];
-{% endraw %}{% endhighlight %}
+```
 
 ## Fetching Chart Data from an External File
 
@@ -249,7 +249,7 @@ The attributes used to specify the type and URL of the external file are:
 
 The HTML code to render the above chart from a .json file is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <fusioncharts
     dataformat="jsonurl"
     datasource="data/data.json"
@@ -257,6 +257,6 @@ The HTML code to render the above chart from a .json file is given below:
     width="600"
     height="400">
 </fusioncharts>
-{% endraw %}{% endhighlight %}
+```
 
 Because all chart data is in the `data.json` file, this example does not need a separate AngularJS code to be written.

@@ -38,7 +38,7 @@ For our scenario, we would want to use the data stamp as follows:
 
 The following code snippet is used to set the initial data stamp:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 {
     "chart": {
@@ -49,15 +49,15 @@ The following code snippet is used to set the initial data stamp:
     },
 }
 
-{% endraw %}{% endhighlight %}
+```
 
 After every 15 seconds now, the chart will call the following URL:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 files/php/advanced-charting-real-time-charts-adding-data-stamp-php-1.php?FCTimeIndex=35454&dataStamp=13:43:45
 
-{% endraw %}{% endhighlight %}
+```
 
 The `dataStamp` attribute is used to add the data stamp to the URl. The `FCTimeIndex` is a paramter added by the chart to avoid caching.
 
@@ -65,11 +65,11 @@ The code in the data provider page will now request this data stamp and then pro
 
 Therefore, the output provided by the data provider page will read something like this:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 &label=13:43:55,13:44:05,13:44:15|value=34,23,65&dataStamp=13:45:15
 
-{% endraw %}{% endhighlight %}
+```
 
 The above output contains:
 
@@ -81,10 +81,10 @@ The above output contains:
 
 Once the chart receives this update, it will update itself to plot the three new values and will also update its data stamp. Next time when the chart invokes the data provider page, it will invoke the following URL:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 dataProviderPage.php?FCTimeIndex=37564&dataStamp=13:45:15
 
-{% endraw %}{% endhighlight %}
+```
 
 Note how the `dataStamp` has been updated to the one specified by the real-time update. This helps to constantly update the data stamp and thereby, keep a track of the last data sent to chart.

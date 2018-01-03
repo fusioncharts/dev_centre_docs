@@ -27,7 +27,7 @@ A column chart, the data for which is loaded using a static JSON string, is show
 
 The data structure needed to create the above chart is given below:
 
-{% highlight python lineanchors %}{% raw %}
+```python
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -95,7 +95,7 @@ def chart(request):
 	
  	return  render(request, 'index.html', {'output' : column2D.render()})
 
-{% endraw %}{% endhighlight %}
+```
 
 To know more about the attributes that you can configure for the column 2D chart, visit <a href="{{ site.baseurl }}chart-attributes.html?chart=column2d" target="_blank">this page</a>.
 
@@ -107,7 +107,7 @@ Next, we will look at how you can render the column chart shown above using XML 
 The data structure needed to create the above chart is given below:
 
 
-{% highlight python lineanchors %}{% raw %}
+```python
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -141,7 +141,7 @@ def chart(request):
 	# pass the URL of that file to the `dataSource` parameter.
 	
  	return  render(request, 'index.html', {'output' : line.render()})
-{% endraw %}{% endhighlight %}
+```
 
 
 ## Loading Data from a Valid Python Dictionary
@@ -156,7 +156,7 @@ The multi-series column 2D chart thus rendered is shown below:
 
 The data structure needed to create the above chart is given below:
 
-{% highlight python lineanchors %}{% raw %}
+```python
 from django.shortcuts import render
 from django.http import HttpResponse
 
@@ -218,7 +218,7 @@ def chart(request):
     mscol2D = FusionCharts("mscolumn2d", "ex1" , "600", "400", "chart-1", "json", dataSource)
     return render(request, 'index.html', {'output': mscol2D.render()}) 
 
-{% endraw %}{% endhighlight %}
+```
 
 To know more about the attributes that you can configure for the multi-series column 2D chart, visit <a href="{{ site.baseurl }}chart-attributes.html?chart=mscolumn2d" target="_blank">this page</a>.
 

@@ -34,7 +34,7 @@ The resultant column 2D chart looks like this:
 
 The data structure to create this chart, by fetching chart data from a database, is given below:
 
-{% highlight java lineanchors %}{% raw %}
+```java
 
 <%
     
@@ -167,7 +167,7 @@ The data structure to create this chart, by fetching chart data from a database,
     </body>
 </html>
 
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info"> The code above uses the `google-gson` library. <br> Gson is a Java library that can be used to convert: <br> - Java objects into their corresponding JSON representation <br> - JSON strings into their corresponding Java objects. <br> Gson allows working with arbitrary Java objects that include pre-existing objects for which you may not have the source code. <br> <br> The google-gsn library : <br> - Provides the `toJson()` and `fromJson()` methods for converting Java objects to JSON and the other way round <br> - Allows conversion of the already existing unmodifiable objects to and from JSON <br> - Supports Java Generics extensively <br> - Allows custom representations of objects <br> - Supports arbitrarily complex objects (with deep inheritance hierarchies and extensive use of generic types) <br> <br> The code above imports the `com.google.gson` package that enables the conversion from JSON to Java and Java to JSON. <br> <br> Click [here](https://github.com/google/gson){:target='_blank'} for more information on google-gson. </p>
 
@@ -185,7 +185,7 @@ To render the above chart, we need a JSP files —__country.jsp__. The __country
 
 The data structure that should go into the __country.jsp__ file is given below:
 
-{% highlight java lineanchors %}{% raw %}
+```java
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*" %>
@@ -382,4 +382,4 @@ The data structure that should go into the __country.jsp__ file is given below:
 </html>
 
 
-{% endraw %}{% endhighlight %}
+```

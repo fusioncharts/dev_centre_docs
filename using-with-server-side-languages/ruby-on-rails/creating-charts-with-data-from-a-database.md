@@ -30,7 +30,7 @@ The column 2D chart, with the drill-down functionality, that we need to render h
 
 The data structure needed to create the above chart goes into the `app/controllers/examples_controller.rb` file. It is as given below:
 
-{% highlight rb lineanchors %}{% raw %}
+```rb
 # Example to demonstrate the creation of a drill - down chart by fetching data from a database.
 # The `country`
 action is defined to load the base column 2D chart— the one that shows the top# 10 populous countries and has clickable data plots.
@@ -120,4 +120,4 @@ end
 })
 end
 
-{% endraw %}{% endhighlight %}
+```

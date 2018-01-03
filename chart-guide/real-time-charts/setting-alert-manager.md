@@ -95,7 +95,7 @@ Given below is a brief description of the attribute used to configure the alert 
 </table>
 
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "dataset": [{
         "seriesname": "Retail Store",
@@ -112,4 +112,4 @@ Given below is a brief description of the attribute used to configure the alert 
         }]
     }]
 }
-{% endraw %}{% endhighlight %}
+```

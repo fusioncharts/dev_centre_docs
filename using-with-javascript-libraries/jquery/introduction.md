@@ -18,19 +18,19 @@ To set up the FusionCharts jQuery helper, follow the steps given below:
 
 * Include `jquery.min.js` to enable jQuery in your project:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <script type="text/javascript" src="jquery.min.js"></script>
-{% endraw %}{% endhighlight %}
+```
 jQuery needs to be imported before the FusionCharts jQuery helper is included in the project. Note that in order to support IE 6/7/8, jQuery 1.x versions need to be used.
 
 * Copy  `fusioncharts.js` and `fusioncharts.jqueryplugin.js` from the __FusionCharts Download Package > js__ folder in your project
 
 * Add references to the required JavaScript files in your code:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <script type="text/javascript" src="fusioncharts.js"></script>
 <script type="text/javascript" src="fusioncharts-jquery-plugin.js"></script>
-{% endraw %}{% endhighlight %}
+```
 
 This completes the setup and you are now ready to begin using the FusionCharts jQuery helper.
 

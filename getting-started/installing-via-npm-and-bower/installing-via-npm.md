@@ -14,25 +14,25 @@ This section talks about how the **fusioncharts** and the **fusionmaps** package
 
 **Step 1**: Install the FusionCharts package.
 
-   {% highlight javascript lineanchors%}{% raw %}
+   ```javascript
    npm install fusioncharts
-   {% endraw %}{% endhighlight %}
+   ```
    
 **Step 2**: Load FusionCharts using `require`.
 
-   {% highlight javascript lineanchors%}{% raw %}
+   ```javascript
    var FusionCharts = require("fusioncharts");
-   {% endraw %}{% endhighlight %}
+   ```
    
 **Step 3**: Load the charts module using `require`.
 
-   {% highlight javascript lineanchors%}{% raw %}
+   ```javascript
    require("fusioncharts/fusioncharts.charts")(FusionCharts);
-   {% endraw %}{% endhighlight %}
+   ```
    
 **Step 4**: Create the FusionCharts instance required to render the chart.
 
-{% highlight javascript lineanchors%}{% raw %}
+```javascript
 	var chart = new FusionCharts ({
 	   "type": "column2d",
 	   "width": "500",
@@ -43,38 +43,38 @@ This section talks about how the **fusioncharts** and the **fusionmaps** package
 		    data: [{value: 500}, {value: 600}, {value: 700}]
 	 	}
 	}).render("chartContainer");
-{% endraw %}{% endhighlight %}
+```
 
 ## Installing the **fusionmaps** Package
 
 **Step 1**: Install the FusionMaps package.
 
-   {% highlight javascript lineanchors %}{% raw %} 	
+```javascript 	
    npm install fusionmaps
-   {% endraw %}{% endhighlight %}
+   ```
 
 **Step 2**: Load FusionCharts using `require`.
 
-   {% highlight javascript lineanchors %}{% raw %} 
+```javascript 
    var FusionCharts = require("fusioncharts");
-   {% endraw %}{% endhighlight %}
+   ```
    
 **Step 3**: Load the maps module using `require`.
 
-   {% highlight javascript lineanchors %}{% raw %} 
+```javascript 
    require("fusioncharts/fusioncharts.maps")(FusionCharts);
-   {% endraw %}{% endhighlight %}
+   ```
 
    
 **Step 4**: Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**, where **MAP_ALIAS** gets replaced by the map's JavaScript alias. Click [here](http://www.fusioncharts.com/dev/getting-started/list-of-maps.html){:target='_blank'} to get the alias names for all map definition files. Map definition files for all maps to be rendered in the application have to be included. <br> <br> Therefore, assuming that you need to render the world map, the alias name __world__ replaces __MAP_ALIAS__ in the format.
    
-   {% highlight javascript lineanchors %}{% raw %}
+```javascript
    require("fusioncharts/maps/fusioncharts.world")(FusionCharts);
-   {% endraw %}{% endhighlight %}
+   ```
 
 **Step 5**: Create the FusionCharts instance required to render the map.
 
-{% highlight javascript lineanchors %}{% raw %}   
+```javascript   
    var chart = new FusionCharts ({
 	"type": "world",
 	"width": "500",
@@ -85,7 +85,7 @@ This section talks about how the **fusioncharts** and the **fusionmaps** package
 		
 		}	
 	}).render("chartContainer");
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info"> The map definition files have to be included for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are required to be fetched from there. </p>
 
@@ -93,24 +93,24 @@ This section talks about how the **fusioncharts** and the **fusionmaps** package
 
 - To render a chart belonging to the PowerCharts package, load the PowerCharts module:
 
-	{% highlight javascript lineanchors %}{% raw %}
+```javascript
 	require("fusioncharts/fusioncharts.powercharts")(FusionCharts);
-	{% endraw %}{% endhighlight %}
+	```
 
 - To render a chart belonging to the FusionWidgets package, load the FusionWidgets module:
 
-	{% highlight javascript lineanchors %}{% raw %}
+```javascript
 	require("fusioncharts/fusioncharts.fusionwidgets")(FusionCharts);
-	{% endraw %}{% endhighlight %}
+	```
 
 <p class="text-info"> To know which chart belongs to which package, refer the [list of charts](http://www.fusioncharts.com/dev/getting-started/list-of-charts.html){:target='_blank'}. </p>
 
 - To render a map, load the FusionMaps module and the map definition file for that map:
 
-	{% highlight javascript lineanchors %}{% raw %}
+```javascript
 	require("fusioncharts/fusioncharts.maps")(FusionCharts);  
 require("fusioncharts/maps/fusioncharts.world")(FusionCharts);
-	{% endraw %}{% endhighlight %}
+	```
 
 <p class="text-info"> To know the map definition file names, refer the [list of maps](http://www.fusioncharts.com/dev/getting-started/list-of-maps.html){:target='_blank'}. </p>
 
@@ -120,30 +120,30 @@ For some chart types, you need to include/exclude certain files and in a certain
 
 - To render the zoom-scatter chart, it is necessary to include the **fusioncharts.js** and **fusioncharts.charts.js** files _before_ the **fusioncharts.zoomscatter.js** file.
   
-  {% highlight javascript lineanchors %}{% raw %}
+```javascript
   var FusionCharts = require("fusioncharts");
 require("fusioncharts/fusioncharts.charts")(FusionCharts);
 require("fusioncharts/fusioncharts.zoomscatter")(FusionCharts);
-  {% endraw %}{% endhighlight %}
+  ```
 
 - To render the treemap chart, it is necessary to include the **fusioncharts.js** and **fusioncharts.powercharts.js** files _before_ the **fusioncharts.treemap.js** file.
 
-  {% highlight javascript lineanchors %}{% raw %}
+```javascript
   var FusionCharts = require("fusioncharts");  
 require("fusioncharts/fusioncharts.powercharts")(FusionCharts);  
 require("fusioncharts/fusioncharts.treemap")(FusionCharts);
-  {% endraw %}{% endhighlight %}
+  ```
 
 - To render the SS Grid chart _only_ the **fusioncharts.js** and the **fusioncharts.ssgrid.js** files are needed.
 
-  {% highlight javascript lineanchors %}{% raw %}
+```javascript
   var FusionCharts = require("fusioncharts");  
 require("fusioncharts/fusioncharts.ssgrid")(FusionCharts);
-  {% endraw %}{% endhighlight %}
+  ```
 
 - To render the Gantt chart _only_ the **fusioncharts.js** and the **fusioncharts.gantt.js** files are needed.
 
-  {% highlight javascript lineanchors %}{% raw %}
+```javascript
   var FusionCharts = require("fusioncharts");  
 require("fusioncharts/fusioncharts.gantt")(FusionCharts);
-  {% endraw %}{% endhighlight %}
+  ```

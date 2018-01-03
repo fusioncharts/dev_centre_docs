@@ -20,7 +20,7 @@ Using the `:FusionCharts` jQuery Selector, you can select all FusionCharts Suite
 
 The code snippet for selecting all charts is shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $('#applyTheme').click(function() {
     // Use `FusionCharts` jQuery selector and apply theme to the charts
     $(':FusionCharts').attrFusionCharts({
@@ -28,7 +28,7 @@ $('#applyTheme').click(function() {
     });
 });
 
-{% endraw %}{% endhighlight %}
+```
 
 The `:FusionCharts` selector selects all the charts in the specified context, which in this case is the current page. You can use it as a conventional jQuery selector.
 
@@ -40,14 +40,14 @@ Given below are a few code snippets that show how you can select charts in speci
 
 For applying a common theme to all charts inside all the `<div>` elements in the page, use the code snippet given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $('div').attrFusionCharts({"theme": "fint"});
 
-{% endraw %}{% endhighlight %}
+```
 
 For applying a common theme to only those charts that belong to HTML elements having the `selectorExample` class, use the code snippet given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $('.selectorExample’).attrFusionCharts({"theme": "fint"});
 
-{% endraw %}{% endhighlight %}
+```

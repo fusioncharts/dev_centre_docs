@@ -50,16 +50,16 @@ An example that updates the chart type dynamically is shown below:
 
 In the above chart, the chart type is changed dynamically when the corresponding radio button is selected. The code snippet used to change the chart type is shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <div id="chart-container">FusionCharts will render here</div>
 <div id="controllers">
     <label><input name='chart-type' id='line' type='radio' value='line' /> Line chart</label>
     <label><input name='chart-type' id='bar2d' type='radio' value='bar2d' /> Bar chart</label>
     <label><input name='chart-type' checked id='column2d' type='radio' value='column2d' /> Column chart</label>
 </div>
-{% endraw %}{% endhighlight %}
+```
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $('#chart-container').insertFusionCharts({
     type: 'column2d',
     id: 'type-chart',
@@ -79,7 +79,7 @@ $('input').click(function() {
         'type': $(this).attr('value')
     });
 });
-{% endraw %}{% endhighlight %}
+```
 
 ### Changing the Data for an Existing Chart
 
@@ -87,9 +87,9 @@ When the value of the `dataFormat` attribute is set to `jsonurl`, the value of t
 
 The code snippet below shows how the `dataSource` can be updated for an existing chart:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $("#chart-container1").updateFusionCharts({dataSource: 'MyNewChart.json', dataFormat: 'jsonURL'});
-{% endraw %}{% endhighlight %}
+```
 
 ### Changing the Width and the Height at Run-time
 
@@ -99,7 +99,7 @@ An example that shows how you can change the chart width and height at run-time 
 
 The code snippet used to do this is shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $('#chart-container').insertFusionCharts({
     type: 'column2d',
     id: 'wh-chart',
@@ -142,7 +142,7 @@ $("#hminus").click(function() {
         'height': Number(revenueChart.height) - 20
     });
 });
-{% endraw %}{% endhighlight %}
+```
 
 ## The attrFusionCharts Method
 
@@ -152,9 +152,9 @@ To get the current value of a chart attribute, you can pass the name of the attr
 
 The code snippet below retrieves the value of the caption attribute of a chart:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $('#chart-container’).attrFusionCharts('caption’);
-{% endraw %}{% endhighlight %}
+```
 
 You can also set values of chart attributes using this method. The example below shows how you can set the chart caption:
 
@@ -162,7 +162,7 @@ You can also set values of chart attributes using this method. The example below
 
 The code snippet for this example is shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $('#chart-container').insertFusionCharts({
     type: 'column2d',
     width: '500',
@@ -186,4 +186,4 @@ $('#update').click(function() {
         'caption': document.getElementById('caption').value
     });
 });
-{% endraw %}{% endhighlight %}
+```

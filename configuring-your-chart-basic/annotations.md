@@ -12,12 +12,12 @@ Annotations as part of FusionCharts Suite XT are defined inside the `annotations
 
 Shown below is a code snippet showing a the structure of a simple `annotations` object.
 
-{% highlight html lineanchors %}{% raw %}<html>
+```html<html>
 <body></body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 "annotations": {
 
                "groups": [
@@ -69,7 +69,7 @@ Shown below is a code snippet showing a the structure of a simple `annotations` 
                    ]
 
 }
-{% endraw %}{% endhighlight %}
+```
 
 ## Using shapes in an annotation
 

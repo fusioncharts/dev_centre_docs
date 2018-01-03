@@ -36,9 +36,9 @@ We are going to use the XAMPP server for this tutorial. You can use any other se
 
 Zend uses Composer as its package dependency manager. You can install Zend using the composer command given below:
 
-{% highlight bash lineanchors %}{% raw %} 
+```bash 
 	$ composer require zendframework/zendframework
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info"> To know more about installing Zend and its packages, click [here](https://framework.zend.com/downloads).</p>
 
@@ -47,24 +47,24 @@ Zend uses Composer as its package dependency manager. You can install Zend using
 You can [download](http://www.fusioncharts.com/download/) the latest version of FusionCharts Suite XT from here. Alternately, you can also install it using the npm or bower package managers, using the commands given below:
 
 __For npm:__
-{% highlight bash lineanchors %}{% raw %} 
+```bash 
 	$ npm install fusioncharts
 $ npm install fusionmaps
-{% endraw %}{% endhighlight %}
+```
 
 __For Bower:__
-{% highlight bash lineanchors %}{% raw %} 
+```bash 
 	$ bower install fusioncharts
 $ bower install fusionmaps
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">FusionCharts also provides a dedicated PHP wrapper to create charts in PHP. You can download it from [here](http://www.fusioncharts.com/php-charts/).</p>
 
 Now, as we have our environment ready, let’s create a Zend skeleton application in which we will embed our chart. For this, we will use the Composer command given below:
 
-{% highlight bash lineanchors %}{% raw %} 
+```bash 
 	$ composer create-project -s dev zendframework/skeleton-application path/to/install
-{% endraw %}{% endhighlight %}
+```
 
 This command will install an initial set of dependencies needed for our application and we can now start configuring our application using the steps given below.
 
@@ -75,7 +75,7 @@ Click [here](https://docs.zendframework.com/tutorials/getting-started/skeleton-a
 
 In this step, we will define a virtual host for our application by adding the code given below in the httpd.conf file of our apache web server.
 
-{% highlight php lineanchors %}{% raw %}
+```php
 
     <VirtualHost *:80>
 	    ServerName zf-tutorial.localhost
@@ -88,7 +88,7 @@ In this step, we will define a virtual host for our application by adding the co
         </Directory>
 	</VirtualHost>
 
-{% endraw %}{% endhighlight %}
+```
 
 Once we have made the changes in our config file, we will save the file and restart the server. We will now start our zend skeleton application using [this URL](http://localhost:8080/) to verify we are on right path. 
 
@@ -96,17 +96,16 @@ Once we have made the changes in our config file, we will save the file and rest
 
 In this step, we will create a new PHP file, which will include our chart object. First, we will include the FusionCharts PHP wrapper in our file using the code given below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
     <?php
 	    // including FusionCharts PHP charts wrapper
 	    include("fusioncharts/fusioncharts.php");
-?>
-{% endraw %}{% endhighlight %}
+	?>
+```
 
 Next, we will include the FusionCharts package JavaScript files and chart container, which will be a HTML div element in the HTML code in our PHP file. 
 
-{% highlight html+php lineanchors %}{% raw %}
-
+```html+php
 	<html>
 	   <head>
 	     <title>Creating charts in PHP with Zend and FusionCharts</title>
@@ -119,11 +118,11 @@ Next, we will include the FusionCharts package JavaScript files and chart contai
 	    </body>
 </html>
 
-{% endraw %}{% endhighlight %}
+```
 
 Next, we will create a chart object using the FusionCharts PHP wrapper class and append it in our PHP file.
 
-{% highlight php lineanchors %}{% raw %}
+```php
     
 	<?php
 	    // chart object
@@ -168,7 +167,7 @@ Next, we will create a chart object using the FusionCharts PHP wrapper class and
 	    $columnChart->render();
 ?>
 
-{% endraw %}{% endhighlight %}
+```
 
 To know more about creating the chart object, you can check out [this developer documentation page](http://www.fusioncharts.com/dev/using-with-server-side-languages/php/introduction.html) on the FusionCharts website.
 We have now created our PHP file that we will place inside the public folder of our server. 

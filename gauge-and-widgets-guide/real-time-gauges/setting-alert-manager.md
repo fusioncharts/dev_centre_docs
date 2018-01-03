@@ -20,7 +20,7 @@ The above example shows the server CPU utilization of __akme.com__. The angular 
 
 The code snippet to set up the alert manager is as follows:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 chart {
     …..
     …….
@@ -38,7 +38,7 @@ chart {
     }
 }
 
-{% endraw %}{% endhighlight %}
+```
 
 The container element for `alert` is `alerts`, which is a child of the `chart`element.  `alert` is an array of objects where every object defines a threshold range (alert range). One of the following actions can be specified with any alert range:
 

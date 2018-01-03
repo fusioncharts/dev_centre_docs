@@ -16,49 +16,49 @@ This article outlines the steps to be executed for installing all the node modul
 
 To install `react` module, execute the following commands in the terminal: 
 
-{% highlight html lineanchors %}{% raw %}
+```html
 npm install react --save
-{% endraw %}{% endhighlight %}
+```
 
 To install `react-dom` module, execute the following commands in the terminal:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 npm install react-dom --save
-{% endraw %}{% endhighlight %}
+```
 
 To install `fusioncharts` module, execute the following commands in the terminal:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 npm install fusioncharts --save
-{% endraw %}{% endhighlight %}
+```
 
 To install `react-fusioncharts` module, execute the following commands in the terminal:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 npm install react-fusioncharts --save
-{% endraw %}{% endhighlight %}
+```
 
 All the above commands can also be done in a single line:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 npm install react react-dom fusioncharts react-fusioncharts --save
-{% endraw %}{% endhighlight %}
+```
 
 ### Step 2: Add the HTML Container Element to Render the Chart
 
 Add a `<div>` HTML container element, which will be used to render the chart, as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 <div id="chart-container"></div>
 
-{% endraw %}{% endhighlight %}
+```
 
 ### Step 3: Import react-fusioncharts package via npm
 
 Import react, react-dom, fusioncharts, and react-fusioncharts modules, in the same order, via npm. In your JavaScript code, define an object that consists of all the configurations and their values, required to render FusionCharts.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -80,7 +80,7 @@ var chartConfigs = {
     }
 };
 
-{% endraw %}{% endhighlight %}
+```
 
 ### Step 4: Render the Chart
 
@@ -93,19 +93,19 @@ FusionCharts ReactJs component can be used in following two ways:
 
 __Method 1:__ Render the chart in React application for a standalone chart. We can choose to make a component class or directly render the chart with the ReactFC component class. The object containing the chart configuration properties are passed to the FusionCharts component as props, as shown below: 
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 ReactDOM.render(
     <ReactFC {...chartConfigs} />,
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 
 __Method 2:__ Create a custom `MyApp` component to render the chart as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 var MyApp = React.createClass({
     ..., // Rest of the React Component Code
@@ -122,11 +122,11 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 We also recommend to create an object, with the configuration properties, and passing the values defined. So, you can also pass the configuration properties separately as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 var chartData = {
         chart: {},
@@ -142,7 +142,7 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 Once you are done with the steps given above, your chart will be rendered when you load the page.
 

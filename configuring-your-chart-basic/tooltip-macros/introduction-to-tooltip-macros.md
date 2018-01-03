@@ -29,11 +29,11 @@ Now, look at the tooltip text for the data plots in the column 2D chart below:
 
 The tooltip text for the second chart is configured using tooltip macros. The `plotToolText` attribute is used to set a custom tooltip, using macros, and format it, using HTML tags, as shown in the code snippet below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 "plotToolText": "Store location: $label <br> Sales (YTD): $dataValue <br> $displayValue"
 
-{% endraw %}{% endhighlight %}
+```
 
 The table below describes the attribute and macros used in the above example:
 

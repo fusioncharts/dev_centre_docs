@@ -27,7 +27,7 @@ To modify an existing a theme, all you need to do is add/update the required att
 
 A partial definition of the __zune__ theme, as contained in the `fusioncharts.theme.zune.js` file, is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 FusionCharts.register('theme', {
     name: 'zune',
     theme: {
@@ -86,7 +86,7 @@ FusionCharts.register('theme', {
         ...
     }
 });
-{% endraw %}{% endhighlight %}
+```
 
 Assume that, for all charts in the application, you want to modify this theme definition to:
 
@@ -119,7 +119,7 @@ Refer the [FusionCharts Suite XT Chart Attributes]{% linkTo attrs.md chart=area2
 ### Step 3:
 Revise the existing theme definition for these modifications, as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 FusionCharts.register('theme', {
     name: 'zune',
     theme: {
@@ -183,7 +183,7 @@ FusionCharts.register('theme', {
         ...
     }
 });
-{% endraw %}{% endhighlight %}
+```
 
 ### Step 4: 
 Save the file.
@@ -197,9 +197,9 @@ When modifying theme definitions, it is important for you to understand the conc
 Assume that the sub-caption of your chart is __Harry’s SuperMart__ .
 
 How do you write this in the theme definition?
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 subCaption: ‘Harry’s SuperMart’
-{% endraw %}{% endhighlight %}
+```
 
 is the code line that you would include in your theme definition.
 
@@ -210,9 +210,9 @@ In this example, the single quote after ‘y’ may be interpreted as the closin
 Escape characters are used to solve this problem.
 
 For the quotation mark after ‘y’ to be interpreted as an apostrophe, this is how you write the code line in your theme definition:
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 subCaption: ‘Harry\’s SuperMart’
-{% endraw %}{% endhighlight %}
+```
 
 __\’__ is an escape character that is used to tell the browser that the quotation mark is to be used as an apostrophe; this is called character quoting—using escape characters to represent characters that would otherwise have an incorrect interpretation.
 

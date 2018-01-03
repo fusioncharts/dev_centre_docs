@@ -82,7 +82,7 @@ For the data URL method, `dataformat` takes `jsonurl` (if the data for the desce
 
 The data structure needed to render the above parent chart using the data URL method is given below:
 
- {% highlight javascript lineanchors %}{% raw %}
+```javascript
  {
     "chart": {
         "caption": "Top 3 Juice Flavors",
@@ -107,13 +107,13 @@ The data structure needed to render the above parent chart using the data URL me
         "link": "newchart-jsonurl-grapes.json"
     }]
 }
-{% endraw %}{% endhighlight %}
+```
 
 From the data shown above, you can understand that when the user clicks the first data plot, chart data to render the subsequent linked chart is sourced from the `apple.json` file. Similarly, when the other two data plots are clicked, linked charts are rendered from the data given in the `cranberry.json` and `grapes.json` files.
 
 The `apple.json` file contains the data to plot a column 2D chart showing the quarterly sales figures of apple juice for the last year. The data structure for the `apple.json` file is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "chart": {
         "caption": "Apple Juice - Quarterly Sales",
@@ -136,24 +136,24 @@ The `apple.json` file contains the data to plot a column 2D chart showing the qu
         "value": "275000"
     }]
 }
-{% endraw %}{% endhighlight %}
+```
 
 Similarly, the `cranberry.json` and the `grapes.json` files contain the data to plot column 2D charts showing the quarterly sales figures for the cranberry juice and grapes juice, respectively.
 
 If you are using XML data for the chart, refer to the data structure for the parent chart is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <chart caption="Top 3 Juice Flavors" subcaption="Last year" xaxisname="Flavor" yaxisname="Amount (In USD)" numberprefix="$" theme="fint" plottooltext="$label, $dataValue,  $percentValue" animation="0">
 
 <set label="Apple" value="810000" link="newchart-xmlurl-apple.xml" />
 <set label="Cranberry" value="620000" link="newchart-xmlurl-cranberry.xml" />
 <set label="Grapes" value="350000" link="newchart-xmlurl-grapes.xml" />
 </chart>
-{% endraw %}{% endhighlight %}
+```
 
 Similarly, the data structure for the `apple.xml` file is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <chart caption="Apple Juice - Quarterly Sales" subcaption="Last year" numberprefix="$" theme="fint" plottooltext="$label, $dataValue,  $percentValue">
 
 <set label="Q1" value="157000" />
@@ -161,7 +161,7 @@ Similarly, the data structure for the `apple.xml` file is given below:
 <set label="Q3" value="206000" />
 <set label="Q4" value="275000" />
 </chart>
-{% endraw %}{% endhighlight %}
+```
 
 Likewise, you can create the `cranberry.xml` and the `grapes.xml` files to create *LinkedCharts*.
 

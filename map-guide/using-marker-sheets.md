@@ -17,7 +17,7 @@ The marker structure in v3.4 needs a `shapes` object and an `items` object. The 
 
 Shown below is the structure of a typical marker sheet
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "map": {},
     "markers": {
@@ -122,7 +122,7 @@ Shown below is the structure of a typical marker sheet
         }]
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 Here you can modify the `shapes` object with your own shape definition. In case you are not using the markers as part of your map you can simply delete it from the `markers` object.
 
@@ -134,7 +134,7 @@ This marker structure has a `shapes` , `definition` and `application` object. Th
 
 Given below is an example of the marker structure.
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "map": {},
     "markers": {
@@ -264,6 +264,6 @@ Given below is an example of the marker structure.
         }]
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 Click here for a list of all the <a href="{{ site.baseurl }}maps/marker-data/">Marker Data</a> files.

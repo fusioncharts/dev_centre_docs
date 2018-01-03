@@ -37,7 +37,7 @@ This is what we did in the above data structure
 
 The full HTML code to build this example is shown below
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -113,5 +113,5 @@ FusionCharts.ready(function() {
     <div id="chart-container">A world map will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 

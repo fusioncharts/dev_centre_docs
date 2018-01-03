@@ -90,7 +90,7 @@ The following example converts the table shown to a multi-series column chart:
 
 The data structure for this example is shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 $("#dataTable").convertToFusionCharts({
     type: "mscolumn2d",
     width: "700",
@@ -106,7 +106,7 @@ $("#dataTable").convertToFusionCharts({
         theme: "fint"
     }
 });
-{% endraw %}{% endhighlight %}
+```
 
 The `convertToFusionCharts` method is used to convert the data contained in the table to the JSON/XML format, in which data is consumed by the chart. It is important to provide a valid chart container in the `renderAt` parameter in the chart configuration. If `renderAt` is not provided then the chart will be drawn next to the table. The return value of the function is a jQuery object containing all the newly created instances of FusionCharts.
 

@@ -40,7 +40,7 @@ The data structure that goes into the **../ArrayExample/MultiSeriesJSON.aspx** f
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     <%@ Page Language="C#" AutoEventWireup="true" CodeFile="MultiSeriesJSON.aspx.cs" Inherits="ArrayExample_Default" %>
 
         <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -60,11 +60,11 @@ The data structure that goes into the **../ArrayExample/MultiSeriesJSON.aspx** f
             </body>
         </html>
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-     {% highlight javascript lineanchors %}{% raw %}
+```javascript
 
      <%@ Page Language="VB" AutoEventWireup="false" CodeFile="MultiSeriesJSON.aspx.vb" Inherits="Samples_ArrayExample_MultiSeriesJSON" %>
 
@@ -84,7 +84,7 @@ The data structure that goes into the **../ArrayExample/MultiSeriesJSON.aspx** f
         </body>
         </html>
               
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -98,7 +98,7 @@ The data structure that goes into the code behind **../ArrayExample/MultiSeriesJ
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     using System;
     using System.Collections;
     using System.Configuration;
@@ -282,11 +282,11 @@ The data structure that goes into the code behind **../ArrayExample/MultiSeriesJ
       }
     }
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
 
     Imports System.Collections
     Imports System.Configuration
@@ -395,7 +395,7 @@ The data structure that goes into the code behind **../ArrayExample/MultiSeriesJ
         End Sub
     End Class
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -418,7 +418,7 @@ The data structure that goes into the **../ArrayExample/CombinationXML.aspx** fi
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     <%@ Page Language="C#" AutoEventWireup="true" CodeFile="CombinationXML.aspx.cs" Inherits="ArrayExample_Combination" %>
 
             <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -438,11 +438,11 @@ The data structure that goes into the **../ArrayExample/CombinationXML.aspx** fi
                 </body>
             </html>
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
      <%@ Page Language="VB" AutoEventWireup="false" CodeFile="CombinationXML.aspx.vb" Inherits="Samples_ArrayExample_CombinationXML" %>
 
       <!DOCTYPE html>
@@ -461,7 +461,7 @@ The data structure that goes into the **../ArrayExample/CombinationXML.aspx** fi
       </body>
       </html>
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -475,7 +475,7 @@ The data structure that goes into the code behind **../ArrayExample/CombinationX
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     using System;
     using System.Data;
     using System.Configuration;
@@ -594,11 +594,11 @@ The data structure that goes into the code behind **../ArrayExample/CombinationX
     }
            
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
       
       Imports System.Data
       Imports System.Configuration
@@ -687,7 +687,7 @@ The data structure that goes into the code behind **../ArrayExample/CombinationX
           End Sub
       End Class
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -712,7 +712,7 @@ The data structure that goes into the **../BasicExample/JSONURL.aspx** file is g
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
  
       <%@ Page Language="C#" AutoEventWireup="true" CodeFile="JSONUrl.aspx.cs" Inherits="BasicExample_BasicChart" %>
 
@@ -732,11 +732,11 @@ The data structure that goes into the **../BasicExample/JSONURL.aspx** file is g
           </body>
       </html>
            
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
       
       <%@ Page Language="VB" AutoEventWireup="false" CodeFile="JSON_URL.aspx.vb" Inherits="Samples_BasicExamples_JSON_URL" %>
 
@@ -757,7 +757,7 @@ The data structure that goes into the **../BasicExample/JSONURL.aspx** file is g
       </body>
       </html>
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -771,7 +771,7 @@ The data structure that goes into the code behind **../BasicExample/JSONURL.aspx
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     using System;
     using System.Collections;
     using System.Configuration;
@@ -804,11 +804,11 @@ The data structure that goes into the code behind **../BasicExample/JSONURL.aspx
     }
        
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-    {% highlight javascript lineanchors %}{% raw %}  
+```javascript  
    
       Imports System.Collections
       Imports System.Configuration
@@ -838,7 +838,7 @@ The data structure that goes into the code behind **../BasicExample/JSONURL.aspx
 
       End Class
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -862,7 +862,7 @@ The data structure that goes into the **../BasicExample/XMLURL.aspx** file is gi
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     <%@ Page Language="C#" AutoEventWireup="true" CodeFile="XMLUrl.aspx.cs" Inherits="BasicExample_BasicChart" %>
 
       <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -883,11 +883,11 @@ The data structure that goes into the **../BasicExample/XMLURL.aspx** file is gi
       </html>
              
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
      
       <%@ Page Language="VB" AutoEventWireup="false" CodeFile="XML_URL.aspx.vb" Inherits="Samples_BasicExamples_XML_URL" %>
 
@@ -908,7 +908,7 @@ The data structure that goes into the **../BasicExample/XMLURL.aspx** file is gi
       </body>
       </html>
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
@@ -922,7 +922,7 @@ The data structure that goes into the code behind **../BasicExample/XMLURL.aspx.
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
     using System;
     using System.Collections;
     using System.Configuration;
@@ -957,11 +957,11 @@ The data structure that goes into the code behind **../BasicExample/XMLURL.aspx.
            }
       }  
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
   <div class='tab xml-tab'>
-    {% highlight javascript lineanchors %}{% raw %}
+```javascript
 
       Imports System.Collections
       Imports System.Configuration
@@ -990,7 +990,7 @@ The data structure that goes into the code behind **../BasicExample/XMLURL.aspx.
           End Sub
       End Class
 
-    {% endraw %}{% endhighlight %}
+    ```
   </div>
 
 </div>
