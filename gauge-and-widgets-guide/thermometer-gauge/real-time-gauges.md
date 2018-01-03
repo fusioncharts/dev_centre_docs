@@ -36,9 +36,9 @@ The real-time data format for gauges depends on:
 
 In the simplest form, if you're looking to update the thermometer gauge, you need to output the data in following format:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &value=-5
-{% endraw %}{% endhighlight %}
+```
 
 Here, the output is a single value, -5. So, when the gauge will read this value, it will update the chart by setting its value to -5 (if a data range is provided by the gauge, the value will first be checked to verify if it falls within the defined range).
 

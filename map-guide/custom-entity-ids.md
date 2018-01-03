@@ -72,7 +72,7 @@ With the newly defined custom entity IDs, the map looks like this:
 
 The full HTML code to build the example is shown here
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -166,7 +166,7 @@ FusionCharts.ready(function() {
     <div id="chart-container">A world map will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 This is what we did in the above data structure
 

@@ -43,11 +43,11 @@ The JSON/XML format of a bubble chart is slightly different from that of a scatt
 
 In the JSON data, the attributes and their corresponding values are written in the following key-value pair format:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 "<attributeName>": "<value>"
 
-{% endraw %}{% endhighlight %}
+```
 
 Given below is a brief description of the data structure used to create a bubble chart:
 

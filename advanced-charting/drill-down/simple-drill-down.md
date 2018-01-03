@@ -76,7 +76,7 @@ To open a link in a new page, the URL passed as the value for the `link` attribu
 
 <p class="text-info">Internally the chart decodes the URL that you set as the link. Before invoking the link, it again encodes the URL. If you are passing multilingual characters via a URL or do not want this decode-encode mechanism to be handled by the chart, you can use the `unescapeLinks` attribute as shown in the code snippet below :
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "chart": {
         "unescapeLinks": "0"
@@ -86,6 +86,6 @@ To open a link in a new page, the URL passed as the value for the `link` attribu
 }
 
 
-{% endraw %}{% endhighlight %}
+```
 
 </p>

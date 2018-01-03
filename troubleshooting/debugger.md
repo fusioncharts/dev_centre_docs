@@ -20,14 +20,14 @@ Possible errors that Harry’s developers may encounter:
 
 To enable the FusionCharts debugger, copy the following code block in your page where you've the charts defined. Typically, this goes in the `<head>`element of the page.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <script type="text/javascript">
 FusionCharts['debugger'].outputTo(function (message) {
     console.log(message);
 });
 FusionCharts['debugger'].enable(true);
 </script>
-{% endraw %}{% endhighlight %}
+```
 
 Now refresh the page in the browser. Note that users of Internet Explorer (version 8 and 9) need to  first enable the Developer Tools and then reload the page in order for this to work.
 
@@ -42,7 +42,7 @@ By default, the debugger logs the the name of the event that occurred, along wit
 
 To get these additional details, we tweak the code that enables the `debugger` by setting its `outputFormat` to `verbose`.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <script type="text/javascript">
 FusionCharts['debugger'].outputTo(function (id, sender,
     eventName, eventArgs) {
@@ -52,7 +52,7 @@ FusionCharts['debugger'].outputTo(function (id, sender,
 FusionCharts['debugger'].outputFormat('verbose');
 FusionCharts['debugger'].enable(true);
 </script>
-{% endraw %}{% endhighlight %}
+```
 
 Setting the `outputFormat` to `verbose` would pass the `eventArgs` as an additional parameter. This parameter is an object that contains all the parameters of the event.
 
@@ -88,7 +88,7 @@ The absence of an expected event is also a way to trace source of error. Say, yo
 
 A quick hack to check if the `debugger` works is to create a chart that contains intended errors in the initialization code..
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <script type="text/javascript">
 FusionCharts.ready(function () {
   var myChart = FusionCharts({
@@ -98,7 +98,7 @@ FusionCharts.ready(function () {
   });
 });
 </script>
-{% endraw %}{% endhighlight %}
+```
 
 The code above may appear correct at first, but a deeper look would reveal that we have not provided the new keyword while calling the {% linkTo FusionCharts %} constructor. This error can be readily spotted since an error event will be logged with error id 25081840 ({% linkTo FusionCharts.namespaces.debugger.typedefs.Error-25081840 %}). The error message would clearly outline a `RuntimeException` saying “Use the `new` keyword while creating a new FusionCharts object”.
 
@@ -107,7 +107,7 @@ The code above may appear correct at first, but a deeper look would reveal that 
 
 Older browsers, such as Internet Explorer 6, do not support a JavaScript Console. The following code block provides a workaround to simulate a basic console for logging messages.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <script type="text/javascript">
 FusionCharts.ready(function () {
   // Create a div element
@@ -129,7 +129,7 @@ FusionCharts.ready(function () {
   });
 });
 </script>
-{% endraw %}{% endhighlight %}
+```
 
 Including the above code snippet right after the inclusion of `fusioncharts.js` would create a small area on the top right corner of your page. This area would serve the purpose to show the output from debugger.
 
@@ -141,11 +141,11 @@ The debugger allows you to circumvent these limitations by incorporating the abi
 
 To enable Firebug Lite, we need to replace the script block that we previously used to enable the debugger with one that instead uses {% linkTo FusionCharts.namespaces.debugger.methods.enableFirebugLite %} to the one below.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <script type="text/javascript">
 FusionCharts['debugger'].enableFirebugLite();
 </script>
-{% endraw %}{% endhighlight %}
+```
 
 Firebug Lite component would appear as a tiny button in the bottom right corner of the page.
 

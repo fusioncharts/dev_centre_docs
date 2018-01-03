@@ -20,26 +20,26 @@ To install the Rails wrapper:
 
 1. Add this line to your application’s `Gemfile`:
 
-{% highlight rb lineanchors %}{% raw %}
+```rb
 gem ‘fusioncharts-rails’
-{% endraw %}{% endhighlight %}
+```
 
 RubyGems contain package information along with the files to install. To read more on gems, click [here](http://rubygems.org/gems/fusioncharts-rails).
 
 2. On the command line prompt, execute the following command:
 
-{% highlight bash lineanchors %}{% raw %}
+```bash
 $bundle
-{% endraw %}{% endhighlight %}
+```
 This command will automatically install the `fusioncharts-rails` gem.
 
 You can also install the gem directly from the command line prompt, without making any edits to the Gemfile.
 
 To do this, use the code line given below:
 
-{% highlight bash lineanchors %}{% raw %}
+```bash
 $gem install fusioncharts-rails
-{% endraw %}{% endhighlight %}
+```
 
 ## Downloading  the Latest FusionCharts Library
 
@@ -51,11 +51,11 @@ Once you have downloaded and extracted files from the package:
 
 2. Add the following code lines in the `app/assets/javascripts/application.js` file:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 //= require fusioncharts/fusioncharts
 //= require fusioncharts/fusioncharts.charts
 //= require fusioncharts/themes/fusioncharts.theme.fint
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info"> Ensure that the __config.assets.debug__ flag in the __development.rb__ file (config/environments/development.rb) is enabled (set to __true__) </p>
 
@@ -127,7 +127,7 @@ The column 2D chart generated from above data will look like this:
 
 The data structure, with steps explained as inline comments,  needed to create the above chart is given below:
 
-{% highlight rb lineanchors %}{% raw %}
+```rb
 # Example to create a column 2D chart with the chart data passed in JSON string format
 # Filename: `app/controllers/examples_controller.rb`
 
@@ -189,7 +189,7 @@ def fc_json
         	}]
     	}'
 	})
-{% endraw %}{% endhighlight %}
+```
 
 Data for the chart can be in any one of the following formats:
 
@@ -203,9 +203,9 @@ The `render()` method is used to render the above chart. The code for this metho
 
  The HTML code to render the chart is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <!-- Filename: `app/views/examples/fc_json.html.erb` -->
 <!-- **Step 2:** Render the chart**  **-->
 <div id="chart-container"></div>
 <%= @chart.render() %>
-{% endraw %}{% endhighlight %}
+```

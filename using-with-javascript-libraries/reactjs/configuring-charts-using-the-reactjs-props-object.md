@@ -34,15 +34,15 @@ A chart, configured to update data values dynamically, is shown below (click __U
 
 An HTML container element to contain the rendered chart is created first, as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 <div id="chart-container"></div>
 
-{% endraw %}{% endhighlight %}
+```
 
 The code to render this chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var myDataSource = {
     chart: {
@@ -140,7 +140,7 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 ## Updating Chart Attributes
 
@@ -150,15 +150,15 @@ A chart, configured to update the chart caption and sub-caption alignment dynami
 
 An HTML container element to contain the rendered chart is created first, as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 <div id="chart-container"></div>
 
-{% endraw %}{% endhighlight %}
+```
 
 The code to render this chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var myDataSource = {
     chart: {
@@ -273,7 +273,7 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">
 For a list of other attributes that you can configure for a column 2D chart, click [here]{% linkTo attrs.md chart=column2d %}{:target='_blank'}.
@@ -291,7 +291,7 @@ When the event is triggered, the text __Selected Value:__ rendered below the cha
 
 An HTML container element to contain the rendered chart is created first, as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 <div class="chart-example" id="chart-container"></div>
 
@@ -300,11 +300,11 @@ It is assigned an initial value 'nothing' that will be displayed when the chart 
 
 <p>Selected Value: <span id="selectedValue"></span></p> 
 
-{% endraw %}{% endhighlight %}
+```
 
 The code to render this chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var myDataSource = {
         "chart": {
@@ -358,4 +358,4 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```

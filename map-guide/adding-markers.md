@@ -34,7 +34,7 @@ This is what we did in the above data structure
 
 The full HTML code for the example is shown here
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map showing Markers</title>
@@ -117,7 +117,7 @@ The full HTML code for the example is shown here
     <div id="chart-container">A world map will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 ## Using Images or Icons as Markers
 
@@ -143,7 +143,7 @@ This is what we did in the above data structure
 
 The full HTML code to build this sample is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -233,7 +233,7 @@ FusionCharts.ready(function () {
 <div id="chart-container">A world map will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 ## Connecting Markers
 
@@ -261,7 +261,7 @@ This is what we did in the above data structure
 
 The HTML code used to build the sample is given below
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A map showing connectors</title>
@@ -357,6 +357,6 @@ The HTML code used to build the sample is given below
     <div id="chart-container">A world map will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 With this you have learnt how to create connectors and customize them to suit your needs. For a detailed list of all the attributes that you can use to customize markers and connectors visit the {% linkTo map-reference/attribute-reference.md %} page.

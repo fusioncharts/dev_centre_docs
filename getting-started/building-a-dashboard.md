@@ -45,7 +45,7 @@ When done, the dashboard would look as under:
 
 The HTML code to build this dashboard is given here
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
 <title>My first dashboard using FusionCharts Suite XT</title>
@@ -615,7 +615,7 @@ FusionCharts.ready(function () {
 </div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 You can see the dashboard, and edit it live on this [link](http://jsfiddle.net/fusioncharts/TumnU/).
 

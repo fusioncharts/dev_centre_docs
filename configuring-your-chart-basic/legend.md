@@ -80,21 +80,21 @@ In this chart, when the mouse pointer is hovered over the legend text __This Yea
 
 The `plotHighlightEffect` attribute is defined in the following format in order to customize the highlight effect:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
  plotHighlightEffect=effectName|confStr 
 
- {% endraw %}{% endhighlight %}
+ ```
 
 __effectName__ always stays __fadeout__. __confStr__ is a comma-separated list of customization properties for the effect.
 
 Therefore, for the above chart, the attribute has been defined as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 `"plotHighlightEffect": "fadeout|color=#7f7f7f, alpha=60"`
 
-{% endraw %}{% endhighlight %}
+```
 
 In addition, the following attributes can also be used to customize the highlight effect:
 

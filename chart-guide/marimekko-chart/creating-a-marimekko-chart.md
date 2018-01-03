@@ -42,11 +42,11 @@ The height of columns can be used to compare the TAM (Total Available Market) pe
 
 In the JSON data, the attributes and their corresponding values are written in the following key-value pair format:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 "<attributeName>": "<value>"
 
-{% endraw %}{% endhighlight %}
+```
 
 
 Given below is a brief description of the attributes used to render the above Marimekko chart:

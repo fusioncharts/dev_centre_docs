@@ -78,7 +78,7 @@ The rendered column 2D chart will look like this:
 
 The data structure, with the steps in comments, that shows how you can use the FusionCharts PHP wrapper to plot the above chart is given below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 <?php
    /**
     * step 1: Include the `fusioncharts.php` file that contains functions to embed the charts.
@@ -142,4 +142,4 @@ The data structure, with the steps in comments, that shows how you can use the F
     <div id="chart-1"><!-- Fusion Charts will render here--></div>
    </body>
 </html>
-{% endraw %}{% endhighlight %}
+```

@@ -27,7 +27,7 @@ In the above data, the `dataStreamURL` attribute is used to set `advance-chartin
 
 The data provider page now contains the following code:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 <?php
 	date_default_timezone_set("UTC");
 	$now =  date("H:i:s", time());
@@ -37,13 +37,13 @@ The data provider page now contains the following code:
 	//Output
    	echo  "&label=".$now."&value=".$randomValueRetail."|".$randomValueOnline;
 ?>
-{% endraw %}{% endhighlight %}
+```
 
 An example of how data values will be sent as output to the chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &label=19:26:56&value=22|7
-{% endraw %}{% endhighlight %}
+```
 
 In the data shown above, we have defined a common label that takes two values - one for each dataset. The values are separated using the `|` (pipe character). In the example above, 22 is the value for the Retail Store dataset and 7 is the value for the Online dataset. The order of values here should correspond with the order of dataset object arrays defined in the JSON/XML data.
 
@@ -59,13 +59,13 @@ Even when a dataset is not visible, it will continue updating itself in the back
 
 If you do not need interactive legend, you can set it off using the following code snippet:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "chart": {
         "interactiveLegend": "0"
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 ## Pushing Multiple Updates
 
@@ -73,9 +73,9 @@ So far, for every dataset rendered on the chart, we have passed only single-valu
 
 The example below shows the format you can use to push multiple updates at one time:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &label=11:45:55,11:46:00,11:46:05&value=22,27,28|7,6,5
-{% endraw %}{% endhighlight %}
+```
 
 In the above example, we have provided three updates for each dataset present on the chart together. We have also provided three new labels for the x-axis, each label corresponding to each value update for both datasets.
 
@@ -91,7 +91,7 @@ In the above data, the `dataStreamURL` attribute is used to set `advance-chartin
 
 The updated data provider page `advance-charting-real-time-charts-multiple-datasets-and-updates-php-1.php` to output multiple values contains the following code:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <?php
 	date_default_timezone_set("UTC");
 	//Get random numbers
@@ -105,10 +105,10 @@ The updated data provider page `advance-charting-real-time-charts-multiple-datas
 	//Output
    echo  "&label=".$time1.",".$time2."&value=".$randomValueRetail1.",".$randomValueRetail2."|".$randomValueOnline1.",".$randomValueOnline2;
 ?>
-{% endraw %}{% endhighlight %}
+```
 
 This page outputs the data in following format:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 &label=11:16:09,11:16:12&value=26,25|1,3
-{% endraw %}{% endhighlight %}
+```

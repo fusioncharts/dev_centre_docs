@@ -44,7 +44,7 @@ This is what we did in the above data structure
 
 The code for the example is shown here
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -131,7 +131,7 @@ FusionCharts.ready(function() {
     <textarea id="message" rows="4" cols="54" style='margin-left:10px;text-align:center'>"Total World Population 6.3 Billion" </textarea>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 ## Marker and Connector Events
 
@@ -167,7 +167,7 @@ This is what we did in the above data structure
 
 The full HTML code for this sample is shown here
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -287,6 +287,6 @@ FusionCharts.ready(function() {
     <textarea id="message" rows="4" cols="54" style='margin-left:10px;text-align:center'>Roll over or click on a marker or connector </textarea>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 For a list of all parameters for each of these events refer to the [API Reference for events]{% linkTo FusionCharts.events %}.

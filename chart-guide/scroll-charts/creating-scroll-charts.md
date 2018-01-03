@@ -52,11 +52,11 @@ The scroll combination 2D chart (dual Y) chart thus created looks like this :
 
 In the JSON data, the attributes and their corresponding values are written in the following key-value pair format:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 "<attributeName>": "<value>"
 
-{% endraw %}{% endhighlight %}
+```
 
 Given below is a brief description of the data structure used to create the above scroll combination 2D (dual Y) chart:
 

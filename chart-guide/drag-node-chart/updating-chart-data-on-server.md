@@ -22,13 +22,13 @@ To enable submission of data to server-side script, you first need to make sure 
 
 To show the __Submit__ button, you can use the following code snippet:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "chart": {
         "showFormBtn": "1"
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 This adds a submit button to your chart as shown below:
 
@@ -82,7 +82,7 @@ Given below is a brief description of the attributes used to show/hide and defin
 
 The code snippet below shows how the server-side PHP script is used to submit data:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <?php
 //File to write
 $filename = 'xml/dragNodeData.xml';
@@ -109,4 +109,4 @@ if (is_writable($filename)) {
     echo "The file $filename is not writable";
 }
 ?>
-{% endraw %}{% endhighlight %}
+```

@@ -40,7 +40,7 @@ The image of a chart rendered with different types of annotations items is shown
 
 The basic JSON structure to create annotations is shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "chart": {
         ...
@@ -82,7 +82,7 @@ The basic JSON structure to create annotations is shown below:
         ]
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 ## Objects Used to Create Annotations
 

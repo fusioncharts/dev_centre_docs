@@ -24,11 +24,11 @@ Consider the following scenario: You are plotting the values of a certain counte
 
 To do this, you will have to send the following command to the chart as part of your real-time data update:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 &clear=1
 
-{% endraw %}{% endhighlight %}
+```
 
 The above command clears all the data that is currently being shown on the chart. The chart now bears an empty canvas - ready to accept new incremental values from the real-time data provider page.
 

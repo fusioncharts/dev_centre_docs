@@ -14,13 +14,13 @@ The root `annotations` object accepts a number of attributes for configuring gen
 
 These attributes are defined using the code structure shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "annotations": {
         // Define the general configuration attributes here.
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 <table>
   <tr>
@@ -76,7 +76,7 @@ Annotation groups accept a number of attributes to uniformly configure all annot
 
 These attributes are defined using the code structure shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "annotations": {
         "groups": [{
@@ -84,7 +84,7 @@ These attributes are defined using the code structure shown below:
         }]
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 <table>
   <tr>
@@ -202,7 +202,7 @@ These attributes are defined using the code structure shown below:
 
 These attributes are defined using the code structure shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "annotations": {
         "groups": [{
@@ -212,7 +212,7 @@ These attributes are defined using the code structure shown below:
         }]
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 For simplicity, the annotation items configuration attributes are segregated into:
 

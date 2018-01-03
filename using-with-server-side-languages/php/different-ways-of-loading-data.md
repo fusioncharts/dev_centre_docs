@@ -32,7 +32,7 @@ An area chart, the data for which is loaded from a static JSON string, is shown 
 
 The data structure needed to render the above chart is given below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 <?php
     /*
        Include the `fusioncharts.php` file that contains functions to embed the charts.
@@ -82,7 +82,7 @@ The data structure needed to render the above chart is given below:
     <div id="chart-1">Fusion Charts will render here</div>
    </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info"> To know more about the attributes you can configure for the area chart, visit [this page]{% linkTo attrs.md chart=area2d %}.</p>
 
@@ -94,7 +94,7 @@ A line chart, the data for which is loaded from a static XML string, is shown be
 
 The data structure needed to render the above chart is given below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 <?php
     /*
         Include the `fusioncharts.php` file that contains functions to embed the charts.
@@ -124,7 +124,7 @@ The data structure needed to render the above chart is given below:
         <div id="chart-1">Fusion Charts will render here</div>
     </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">To know more about the attributes you can configure for the line chart, visit [this page]{% linkTo attrs.md chart=line %}</p>
 
@@ -136,7 +136,7 @@ A pie 2D chart, the data for which is loaded from an associative array, is shown
 
 The data structure needed to render the above chart is given below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 
 <?php
     /*
@@ -204,7 +204,7 @@ The data structure needed to render the above chart is given below:
     </body>
 </html>
 
-{% endraw %}{% endhighlight %}
+```
 <p class="text-info">To know more about the attributes you can configure for the pie 2D chart, visit [this page]{% linkTo attrs.md chart=pie2d %}.</p>
 
 ## Loading Data from an XML String Generated from an Associative Array
@@ -215,7 +215,7 @@ A bar 2D chart, the data for which is generated from an associative array, is sh
 
 The data structure needed to render the above chart is given below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 
 <?php
     /*
@@ -305,7 +305,7 @@ The data structure needed to render the above chart is given below:
     </body>
 </html>
 
-{% endraw %}{% endhighlight %}
+```
 <p class="text-info">To know more about the attributes you can configure for the bar 2D chart, visit [this page]{% linkTo attrs.md chart=bar2d %}.</p>
 
 ## Important Tips for Developers

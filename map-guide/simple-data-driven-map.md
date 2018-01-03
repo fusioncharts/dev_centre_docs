@@ -30,29 +30,29 @@ FusionCharts Suite XT accepts both JSON and XML data formats, and can read it as
 
 To include the FusionCharts Suite XT JavaScript library in your HTML page, you use the `<script>` tag as under. You will notice that we have also included a theme file to define chart cosmetics. The theme is called `fint` (FusionCharts internal) and is present in the `themes` folder.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <head>
     <title>A Data Driven Map</title>
     <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
     <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
 </head>
-{% endraw %}{% endhighlight %}
+```
 
 ## Create a container for your map in the web page
 
 Next, you will need to create a container for your map in the form of a `<div>` element, as under.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <body>
 <div id="chart-container">A world map will load here!</div>
 </body>
-{% endraw %}{% endhighlight %}
+```
 
 ## Create an instance of the map
 
 The final step is to create an instance of the map, initialize with the desired `width`, `height` dimensions and then set the JSON data source as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <script>
 FusionCharts.ready(function() {
     var populationMap = new FusionCharts({
@@ -114,7 +114,7 @@ FusionCharts.ready(function() {
     }).render();
 });
 </script>
-{% endraw %}{% endhighlight %}
+```
 
 This is what we did in the above code
 
@@ -138,7 +138,7 @@ With that you have created your first data driven world map.
 
 The full HTML code to build this map is shown here
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -222,7 +222,7 @@ FusionCharts.ready(function () {
 <div id="chart-container">A world map will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 ### Was there a problem rendering the map?
 

@@ -26,11 +26,11 @@ The column 2D chart shown below uses the `trendlineToolText` attribute for setti
 
 The tooltip is customized using the code snippet given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 "trendlineToolText": "$displayValue: $startDataValue"
 
-{% endraw %}{% endhighlight %}
+```
 
 Given below is a brief description of the attribute and macros used in this example:
 
@@ -73,11 +73,11 @@ In the map below, showing the average shipping volume for a distribution network
 
 The tooltip text is set using the following code snippet:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 "connectorToolText": "<b>From</b>: $fromLabel <br> <b>To</b>: $toLabel <br> <b>Daily shipments (avg)</b>: $label Units"
 
-{% endraw %}{% endhighlight %}
+```
 
 The table below describes the attribute and the macros used in the above example:
 
@@ -126,11 +126,11 @@ In the chart shown below, tooltip marcos for the box and whisker chart have been
 
 The tooltip text is set using the following code snippet:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 "plotToolText": "$seriesName Teachers-$label  <br> <br> Max value: $maxDataValue <br> Min value: $minDataValue <br> <br> Q3: $Q3 <br> Median: $median <br> Q1: $Q1 <br> <br> Mean: $mean <br> <br> Standard deviation: $SD <br> Quartile Deviation: $QD <br> Mean Deviation: $MD"
 
-{% endraw %}{% endhighlight %}
+```
 
 The table below describes the attribute and the macros used in the above example:
 

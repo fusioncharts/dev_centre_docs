@@ -22,35 +22,35 @@ To install the Angular-FusionCharts directive for your applications, follow the 
 
 In your HTML, include the `fusioncharts.js` and the `angular-fusioncharts.js` JavaScript file. The `angular-fusioncharts.js` file should mandatorily be included after all other scripts.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 <script type="text/javascript" src="/path/to/fusioncharts.js"></script>
 <script type="text/javascript" src="/path/to/angular.js"></script>
 <script type="text/javascript" src="/path/to/angular-fusioncharts.js"></script>
 
-{% endraw %}{% endhighlight %}
+```
 
 ### Step 2: Include the ng-fusioncharts directive in your module
 
 In the app, include the `ng-fusioncharts` directive as a dependency. If you are looking for where to add the dependency, look for the call to `angular.module` in your code.
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 angular.module("myApp", ["ng-fusioncharts"])
 
-{% endraw %}{% endhighlight %}
+```
 
 ### Step 3: Add the fusioncharts directive
 
 In your HTML, find the section where you want to add the chart. Here, define a `<div>` element with the `fusioncharts` directive.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <div ng-controller="MyController">
     <div fusioncharts width="600" height="400" type="column2d" dataSource="">
     </div>
 </div>
 
-{% endraw %}{% endhighlight %}
+```
 
 In the snippet above, it is assumed that the chart has to be added inside a controller called **MyController**. This can change based on what you name your controller.
 
@@ -60,7 +60,7 @@ In the above code snippet, the directive is bound to the datasource scope variab
 
 In your controller, set the datasource using the regular FusionCharts JSON format (see [this tutorial]{% linkTo tutorials/getting-started/building-your-first-chart.md %} for a general introduction to this format).
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 app.controller('MyController', function($scope) {
     //Define the `myDataSource` scope variable.
     $scope.myDataSource = {
@@ -73,7 +73,7 @@ app.controller('MyController', function($scope) {
     };
 });
 
-{% endraw %}{% endhighlight %}
+```
 
 You are now ready to start creating and customizing your charts using the Angular-FusionCharts directive. Read on to see how.
 

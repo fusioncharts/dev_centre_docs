@@ -68,11 +68,11 @@ In the above chart, we have shown the sales of liquor in a store for each day of
 
 In the JSON data, the attributes and their corresponding values are written in the following key-value pair format:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 "<attributeName>": "<value>"
 
-{% endraw %}{% endhighlight %}
+```
 
 Given below is a brief description of the data structure needed to render a standard single-series chart:
 

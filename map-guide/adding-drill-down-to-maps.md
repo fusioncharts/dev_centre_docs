@@ -30,17 +30,17 @@ Instructions on building the base US map and the data used can be found [here]{%
 
 Shown here is a snippet that configures the behaviour of the drill down as part of the entity.
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "id": "DC",
     "value": "2879000",
     "link": "j-drillDownState-DC|District of Columbia"
 }
-{% endraw %}{% endhighlight %}
+```
 
 Here is the full HTML code to build the map
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -307,7 +307,7 @@ FusionCharts.ready(function() {
     <div id="chart-container">A world map will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 Here the `drillDownState` method is called and the `DC|District of Columbia` is passed to it as parameter.
 
@@ -315,50 +315,50 @@ Here the `drillDownState` method is called and the `DC|District of Columbia` is 
 
 In the example shown below when a user clicks on the entity labelled DC, the url specified in `link` opens up in the same page.
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "id": "DC",
     "value": "2879000",
     "link": "Detailed/TotalSales.html"
 }
-{% endraw %}{% endhighlight %}
+```
 
 ### Open a URL in a new browser window
 
 In this example, when a user clicks on the entity labelled DC, the url specified in `link` opens up in a new browser window
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "id": "DC",
     "value": "2879000",
     "link": "n-Detailed/TotalSales.html"
 }
-{% endraw %}{% endhighlight %}
+```
 
 ### Open a URL in a specified frame/iframe
 
 In this example, when a user clicks on the entity labelled DC, the url specified in `link` opens up in a frame or iframe within the same browser window
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "id": "DC",
     "value": "2879000",
     "link": "F-Detailed/TotalSales.html"
 }
-{% endraw %}{% endhighlight %}
+```
 
 ### Open a URL in a pop-up window
 
 In this example, when a user clicks on the entity labelled DC, the url specified in `link` opens up in a pop up.
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
    "id": "DC",
     "value": "2879000",
     "link": "P-detailsPopUp,width=400,height=300,toolbar=no, scrollbars=no,resizable=no-Detailed/TotalSales.html"
 }
 
-{% endraw %}{% endhighlight %}
+```
 
 Here additionally the height, width, toolbar visibility and resizability of the new window are configured.
 
@@ -392,7 +392,7 @@ This is what we did in the above data structure
 
 The full HTML code for this example is shown below.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -660,7 +660,7 @@ FusionCharts.ready(function() {
     <div id="chart-container">A world map will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 ### LinkedCharts from a map to a chart
 
@@ -690,7 +690,7 @@ This is what we did in the above data structure
 
 The full code for the sample is shown here
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -1564,6 +1564,6 @@ FusionCharts.ready(function() {
     <div id="chart-container">A world map will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 That's it! You have just configured a map to drill down into a chart when the user clicks on an entity.

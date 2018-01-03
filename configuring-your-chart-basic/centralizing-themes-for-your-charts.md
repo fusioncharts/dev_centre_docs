@@ -27,7 +27,7 @@ FusionCharts Suite XT ships with 3 themes - `zune`, `ocean` and `carbon`. You ca
 
 In all the examples that we have built for Harry till now, we have already been using `fint` (FusionCharts Suite XT internal) theme. If you look at any of the chart’s data, you would find `“theme”`:`”fint”` attribute as part of that data.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
 <title>My first chart using FusionCharts Suite XT</title>
@@ -110,7 +110,7 @@ FusionCharts.ready(function () {
     <div id="chartContainer">FusionCharts XT will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 
 ### Applying the new theme
@@ -141,7 +141,7 @@ Shown below is how they would appear with the new theme applied.
 
 Simple. Isn't it? If you are curious to know how the theme file is structured, shown below is the content of `ocean` theme JSON file.
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 FusionCharts.register('theme', {
     name: 'ocean',
     theme: {
@@ -554,6 +554,6 @@ FusionCharts.register('theme', {
         }
     }
 });
-{% endraw %}{% endhighlight %}
+```
 
 Do note that you are not restricted to using an existing theme only. You can create your own themes, or extend any of the existing themes to modify the colors, fonts and properties to suit your designs. Just make sure you keep a copy of the original file.

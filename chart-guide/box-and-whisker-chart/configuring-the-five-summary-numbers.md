@@ -76,7 +76,7 @@ This attribute will work only when `"showValues": "1"`.</td>
 
 To selectively show summary numbers on the chart, set the `showValues` attribute and the attributes for the values you want to show to `1`. Set the remaining attributes to `0`. For example, if you want to show only the minimum values, use the code snippet shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "chart": {
         "caption": "Visits to a Website",
@@ -88,11 +88,11 @@ To selectively show summary numbers on the chart, set the `showValues` attribute
         "showMaxValues": "1"
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 You can also configure the box and whisker chart to show all five summary numbers at once. To do this you can use the code snippet shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "chart": {
         "caption": "Visits to a Website",
@@ -104,7 +104,7 @@ You can also configure the box and whisker chart to show all five summary number
         "showMaxValues": "1"
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 ## Customizing the Median (Q2)
 

@@ -34,16 +34,16 @@ To download the FusionCharts library using files placed in the folder of your pr
 * Place the FusionCharts library inside the "static/FusionCharts" folder in your project.
 * Insert the ``<script>`` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The ``<script>`` tag looks like as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {% load static %} 
 <script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
-{% endraw %}{% endhighlight %}
+```
 
 __Note__: Set your STATIC_ROOT path and run the command given below to update the static files:
 
-{% highlight python lineanchors %}{% raw %}
+```python
 python manage.py collectstatic
-{% endraw %}{% endhighlight %}
+```
 
 Now, you are ready to render charts using our Django wrapper.
 
@@ -114,7 +114,7 @@ The column 2D chart generated from above data will look like this:
 
 ### Creating the chart | The view
 
-{% highlight python lineanchors %}{% raw %}
+```python
 #Filename: app_name / views.py
 
 from django.shortcuts import render
@@ -183,7 +183,7 @@ def chart(request):
 
   return render(request, 'index.html', {'output': column2d.render()})
 
-{% endraw %}{% endhighlight %}
+```
 
 
 <p class="text-info">
@@ -196,12 +196,12 @@ __Note:__ Do not forget to include the above line in your code, as it calls the 
 
 The code for rendering the chart is written in the view file, i.e. -.py file. The HTMl code to render the charts is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <!-- Filename: app_name/templates/index.html -->
 <!-- **Step 2** Render the chart -->
 <div id = "chartContainer" > </div>
 { { output|safe } } 
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">In the above code, `output|safe` has been used to turn off the auto-escaping of data, on a per-site, per-template, or per-variable level.</p>
 
@@ -210,7 +210,7 @@ The code for rendering the chart is written in the view file, i.e. -.py file. Th
 
 The full HTML code for the example looks as under:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <!DOCTYPE html>
 <html>
   <head>
@@ -223,7 +223,7 @@ The full HTML code for the example looks as under:
     <div id="chart-1">{{ output|safe }}</div>
   </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 
 ### URL Configuration
@@ -232,7 +232,7 @@ To design URLs, create a `URL.conf` python module. It is a table of contents whi
 
 An example of a URL design is shown below:
 
-{% highlight python lineanchors %}{% raw %}
+```python
 #Filename: app_name / urls.py
 
 from django.conf.urls import url
@@ -241,7 +241,7 @@ from.import views
 urlpatterns = [
     url(r '^$', views.chart, name = 'demo'),
 ]
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">As the regular expressions are compiled at load time, the above process happens at lightening speed.</p>
 

@@ -26,11 +26,11 @@ In many of the examples in this documentation, we have used the `fint` (FusionCh
 
 Including a theme file for application to your chart is very similar to including the core FusionCharts Suite XT Library. You can use the `<script>` tag as shown here to include themes.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.ocean.js"></script>
 <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.carbon.js"></script>
 <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.zune.js"></script>
-{% endraw %}{% endhighlight %}
+```
 
 ## Using a theme in a chart
 
@@ -46,7 +46,7 @@ Using a theme in a chart is simple, you only need to specify the theme you wish 
 
 Themes as part of FusionCharts Suite XT follow an inheritance chain, by default when you specify a theme all the properties defined in the theme for the chart are applied to the chart. If you specify the same property with a different value in the `chart` object the theme setting is overridden.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <script type="text/javascript">
 FusionCharts.ready(function() {
     var revenueChart = new FusionCharts({
@@ -74,7 +74,7 @@ FusionCharts.ready(function() {
 })
 </script>
 
-{% endraw %}{% endhighlight %}
+```
 
 In the above code snippet the `baseFont` , `baseFontSize` and `baseFontColor` attributes specified at the `chart` level will override font attributes from the `zune` theme.
 
@@ -84,7 +84,7 @@ FusionCharts Suite XT also lets you use multiple themes for a single chart. This
 
 The attributes specified in the theme on the extreme right are given precedence over the ones on the left.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <script type="text/javascript">
 FusionCharts.ready(function() {
     var revenueChart = new FusionCharts({
@@ -108,7 +108,7 @@ FusionCharts.ready(function() {
     });
 })
 </script>
-{% endraw %}{% endhighlight %}
+```
 
 Here any attribute specified in the `ocean` theme will override the same attribute if specified, as part of the `zune` theme.
 

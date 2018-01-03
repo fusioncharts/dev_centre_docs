@@ -42,7 +42,7 @@ Take a look at the column 2D chart shown below:
 
 The code to configure this chart that will be passed to the `FusionCharts` component is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var salesChartConfigs = {
     width: "600",
@@ -74,24 +74,24 @@ var salesChartConfigs = {
 	}
 };
 
-{% endraw %}{% endhighlight %}
+```
 
 Now, to render this chart, the `FusionCharts` component, used as a tag, will be passed directly to the `ReactDOM.render()` method, as shown in the code below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 ReactDOM.render(
     <ReactFC {...salesChartConfigs} />,
     document.getElementById('sales-chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 ### Passing the `FusionCharts` Component as a Part of Another ReactJS Component
 
 To render a chart by passing the `FusionCharts` component as a part of another ReactJS component, this is how the code will change:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 var SalesChart = React.createClass({
     /** ReactJS code **/
@@ -110,7 +110,7 @@ var SalesChart = React.createClass({
     }
 });
 
-{% endraw %}{% endhighlight %}
+```
 
 ## Providing Attributes Using Separate Objects
 
@@ -122,7 +122,7 @@ Take a look at the multi-series line chart shown below:
 
 The code to render this chart, using the alternate method, is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var attrs = {
     "caption": "Sales Comparison: 2013 versus 2014",
@@ -244,7 +244,7 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">
 To know how a multi-series line chart can be created using the conventional JSON code, click [here](http://www.fusioncharts.com/dev/usage-guide/chart-guide/multi-series-charts/creating-multi-series-charts.html#creating-a-multi-series-line-2d-chart){:target='_blank'}.
@@ -273,7 +273,7 @@ The attributes used to specify the type and URL of the external file are:
 
 The code to render a chart from an external __.json__ file is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 ReactDOM.render(
     <ReactFC
@@ -285,6 +285,6 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 Depending on the chart configuration specified in the __data.json__ file, the chart is rendered.

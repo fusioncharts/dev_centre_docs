@@ -57,18 +57,18 @@ The username is **'root'** and password is the one you configured during the ins
 
 Now let us come to the setting up of table and seed data. The table containing the data is made up of two columns namely the name of the player and number of wickets. The CREATE TABLE SQL command for creating the table is given below:
 
-{% highlight mysql lineanchors %}{% raw %}
+```mysql
 	USE test;
 	CREATE TABLE top_odi_wicket_takers(
 	  player varchar(255),
 	    wickets integer,
 	    PRIMARY KEY (player)
 	);
-{% endraw %}{% endhighlight %}
+```
 
 Now let us seed this table with some initial data taken from [here](http://stats.espncricinfo.com/ci/engine/records/bowling/most_wickets_career.html?class=2;id=2015;type=year) as shown below:
 
-{% highlight mysql lineanchors %}{% raw %}
+```mysql
 	INSERT INTO top_odi_wicket_takers(player, wickets) VALUES('MA Starc', 34);
 	INSERT INTO top_odi_wicket_takers(player, wickets) VALUES('ST Finn', 27);
 	INSERT INTO top_odi_wicket_takers(player, wickets) VALUES('Imran Tahir', 25);
@@ -79,12 +79,12 @@ Now let us seed this table with some initial data taken from [here](http://stats
 	INSERT INTO top_odi_wicket_takers(player, wickets) VALUES('Wahab Riaz', 25);
 	INSERT INTO top_odi_wicket_takers(player, wickets) VALUES('JH Davey', 21);
 	INSERT INTO top_odi_wicket_takers(player, wickets) VALUES('UT Yadav', 22);
-{% endraw %}{% endhighlight %}
+```
 
 
 We can verify whether the data is inserted by running the SELECT SQL command as shown below:
 
-{% highlight mysql lineanchors %}{% raw %}
+```mysql
 	SELECT * FROM top_odi_wicket_takers;
 	+-------------+---------+
 	| player  | wickets |
@@ -101,7 +101,7 @@ We can verify whether the data is inserted by running the SELECT SQL command as 
 	| Wahab Riaz   |      25 |
 	+-------------+---------+
 	10 rows in set (0.00 sec)
-{% endraw %}{% endhighlight %}
+```
 
 With this we have the required data in the database. Let us now proceed to see how to implement the server program in PHP.
 
@@ -120,7 +120,7 @@ The implementation of above steps is as follows:
 
 * The default username to connect to MySQL instance running on your machine is **root** and **password** is the one you specified during the installation of your WAMP bundle. The interaction with the database from PHP is achieved using the mysqli extension. Below is the implementation to establish the connection: 
 
-{% highlight php lineanchors %}{% raw %}
+```php
 	<?php
 		//address of the server where db is installed
 		$servername = "localhost";
@@ -139,22 +139,22 @@ The implementation of above steps is as follows:
 		  die("Connection failed: " . $conn->connect_error);
 		}
 	?>	
-{% endraw %}{% endhighlight %}
+```
 
 * Once we have the connection established, we use connection object $conn to execute any SQL commands. We can now execute our SQL query as shown below: 
 
-{% highlight php lineanchors %}{% raw %}
+```php
 	<?php
 		//the SQL query to be executed
 		$query = "SELECT * FROM top_odi_wicket_takers";
 		//storing the result of the executed query
 		$result = $conn->query($query);
 	?>
-{% endraw %}{% endhighlight %}
+```
 
 * We have to now process the $result obtained in the above step in the form which is understood by FusionCharts. FusionCharts uses the chart data in the form of a list of label-value pairs. If there are rows/data returned by the query, we convert that data into an associative array. An associative array is just like any other array but in place of indices it uses keys to store the value of the array element. Below is the implementation to process the data in $result object: 
 
-{% highlight php lineanchors %}{% raw %}
+```php
 	<?php
 		//initialize the array to store the processed data
 		$jsonArray = array();
@@ -170,11 +170,11 @@ The implementation of above steps is as follows:
 		  }
 		}
 	?>
-{% endraw %}{% endhighlight %}
+```
 
 * Let us now encode the data processed in above step into JSON data as shown below: 
 
-{% highlight php lineanchors %}{% raw %}
+```php
 	<?php
 		//Closing the connection to DB
 		$conn->close();
@@ -183,7 +183,7 @@ The implementation of above steps is as follows:
 		//output the return value of json encode using the echo function. 
 		echo json_encode($jsonArray);
 	?>	
-{% endraw %}{% endhighlight %}
+```
 
 Let us integrate the code we have from all the steps above into a file named: chart_data.php and place this file at **BITNAMI_INSTALL_DIR\apache2\htdocs**, where BITNAMI_INSTALL_DIR is the path where your Bitnami WAMP package is installed.
 
@@ -191,7 +191,7 @@ Let us integrate the code we have from all the steps above into a file named: ch
 
 The contents of the chart_data.php is as shown below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 	<?php
 		//address of the server where db is installed
 		$servername = "localhost";
@@ -233,10 +233,10 @@ The contents of the chart_data.php is as shown below:
 		//output the return value of json encode using the echo function. 
 		echo json_encode($jsonArray);
 	?>	
-{% endraw %}{% endhighlight %}
+```
 
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 	var apiChart = new FusionCharts({
 	  type: 'column2d',
 	  renderAt: 'api-chart-container',
@@ -275,11 +275,11 @@ The contents of the chart_data.php is as shown below:
 	function modifyDataplot(){
 	  //to be implemented
 	}
-{% endraw %}{% endhighlight %}
+```
 
 To run chart_data.php, open http://localhost/chart_data.php in your browser. You would see the below JSON output:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 	[
 	  {
 	    label: "CJ Anderson",
@@ -292,7 +292,7 @@ To run chart_data.php, open http://localhost/chart_data.php in your browser. You
 	  ...
 	  ...
 	]
-{% endraw %}{% endhighlight %}
+```
 
 So with this we have our data source for the chart ready. Let us now go ahead and integrate it with FusionCharts library.
 
@@ -305,7 +305,7 @@ First let us download the required JavaScript libraries:
 
 Now let us create the HTML page chart_sample.html required to render the chart:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 	<!DOCTYPE html>
 	<html>
 	<head>
@@ -320,13 +320,13 @@ Now let us create the HTML page chart_sample.html required to render the chart:
 	  <script src="js/app.js"></script>
 	</body>
 	</html>
-{% endraw %}{% endhighlight %}
+```
 
 The code which interacts with the PHP server implemented above and renders the chart using our Javascript library would be implemented in app.js. The javascript implementation is as shown below:
 
 1. Fetch the required data from the server via an Ajax call using jQuery: 
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 	$.ajax({
 	    url: 'http://localhost/chart_data.php',
 	    type: 'GET',
@@ -334,11 +334,11 @@ The code which interacts with the PHP server implemented above and renders the c
 	      chartData = data;
 	    }
 	  });
-{% endraw %}{% endhighlight %}
+```
 
 2. After retrieving the data from the server, initialise the FusionCharts object with the chart properties and chart data as shown below: 
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 	var chartProperties = {
 	        "caption": "Top 10 wicket takes ODI Cricket in 2015",
 	        "xAxisName": "Player",
@@ -359,11 +359,11 @@ The code which interacts with the PHP server implemented above and renders the c
 	      });
 	      apiChart.render();
 	}
-{% endraw %}{% endhighlight %} 
+``` 
 
 ### Final app.js will look as below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 	$(function(){
 	  $.ajax({
 	    url: 'http://localhost/chart_data.php',
@@ -392,7 +392,7 @@ The code which interacts with the PHP server implemented above and renders the c
 	    }
 	  });
 	});
-{% endraw %}{% endhighlight %} 
+``` 
 
 Now load the HTML in the browser using the URL: _http://localhost/chart_sample.html_ and you will get the below chart:
 

@@ -38,15 +38,15 @@ The line labeled __Target - $175K__ is a trend-line representing the targeted qu
 
 An HTML container element to contain the rendered chart is created first, as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 <div id="chart-container"></div>
 
-{% endraw %}{% endhighlight %}
+```
 
 The code to render this chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var myDataSource = {
     "chart": {
@@ -95,7 +95,7 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 ## Adding Annotations on Charts
 
@@ -109,15 +109,15 @@ In this chart, the text __Promotional activities for Butterfinger made it surpas
 
 An HTML container element to contain the rendered chart is created first, as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 <div id="chart-container"></div>
 
-{% endraw %}{% endhighlight %}
+```
 
 The code to render this chart is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var myDataSource = {
     "chart": {
@@ -229,5 +229,5 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 

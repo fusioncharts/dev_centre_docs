@@ -121,7 +121,7 @@ For the above exported image, we have specified the:
 
 The data structure of the `batchExport()` method, to export the charts in the above sample is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 batchExportConfig = function() {
 	FusionCharts.batchExport({
@@ -137,7 +137,7 @@ batchExportConfig = function() {
   	});
 };
 
-{% endraw %}{% endhighlight %}
+```
 
 ## Selectively Exporting Charts
 
@@ -168,7 +168,7 @@ For the above exported image, we have specified the:
 
 Therefore, to download only the charts for the years __2015__ and __2012__, this is how you code the `batchExport()` method:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 batchExportConfig1 = function() {
 	FusionCharts.batchExport({
@@ -184,6 +184,6 @@ batchExportConfig1 = function() {
   	});
 };
 
-{% endraw %}{% endhighlight %}
+```
 
 <script pagespeed_no_defer="" type="text/javascript" data-chart='true' src='{{ site.baseurl }}/resources/js/exporting-multiple-charts-in-a-single-image.js'></script>

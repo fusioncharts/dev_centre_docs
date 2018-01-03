@@ -48,7 +48,7 @@ The interactive dashboard mentioned in the above example will, therefore, have a
 
 Chart configurations are passed to the `FusionCharts` component as the props object, as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var MyApp = React.createClass({
     /** ReactJS code **/
@@ -66,13 +66,13 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 ### Step 2: Defining an Event's Behavior for a Filter
 
 Data plotted on the column chart should be filtered based on the pie slice clicked, as directed by the snippet below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var pieChartConfigurations = {
     /** FusionCharts Configs **/
@@ -93,7 +93,7 @@ var pieChartConfigurations = {
     }
 };
 
-{% endraw %}{% endhighlight %}
+```
 
 ### Step 3: Storing the Filter
 
@@ -110,7 +110,7 @@ The `filterSource` property has to be set to use the component in the interactiv
 
 The code snippet below shows a sample definition for this function:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var MyApp = React.createClass({
     /** ReactJS code **/
@@ -163,7 +163,7 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 ### Step 4: Propagating the Filters
 
@@ -177,7 +177,7 @@ This step is important because the component internally compares the value of th
 
 The value stored for `filterSource` is accessed from the state of the parent component `MyApp` and is passed to the configuration property `eventSource`, as shown in the code snippet below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var MyApp = React.createClass({
     ....,
     storeFilters: function (fv, target) {...},
@@ -213,19 +213,19 @@ ReactDOM.render(
     <MyApp />,
     document.getElementById('chart-container')
 );
-{% endraw %}{% endhighlight %}
+```
 
 ### Example
 
 Now, coming back to the dashboard example referred to in the beginning of the article. The complete code to render the dashboard is given below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 <div id="chart-container"></div>
 
-{% endraw %}{% endhighlight %}
+```
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 /** Raw data **/
 var completeData = [
@@ -407,4 +407,4 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 
-{% endraw %}{% endhighlight %}
+```

@@ -32,7 +32,7 @@ To illustrate the above features we would take the following scenario: plotting 
 
 Before we show you how to beautify the charts, let us first set up rendering of the chart with some sample data (if you are just getting started with FusionCharts, please read <a href="http://www.fusioncharts.com/dev/getting-started/building-your-first-chart.html" target="_blank">this article first</a>). For that we have to create the placeholder in the HTML where the chart would be rendered as shown below:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,11 +49,11 @@ Before we show you how to beautify the charts, let us first set up rendering of 
   <script src="fusion-chart-column.js"></script>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 Then via JavaScript we have to build and render the chart in the above created placeholder. The chart needs to be provided with some data. It can be done by either using a server side call or by defining some data in the client itself. For this article we are going to adopt the later approach as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var chartData = [
     {
         "label": "Feb 4 2015",
@@ -80,12 +80,12 @@ var chartData = [
         "value": "73.38"
     }
 ];
-{% endraw %}{% endhighlight %}
+```
 
 The properties which are applied globally to the given chart are initialized in the form of a JSON object below. Names of the properties are self explanatory. Complete list of attributes for a 2D-column-chart can be found <a href="http://www.fusioncharts.com/dev/chart-attributes.html?chart=column2d" target="_blank">here</a>.
 
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var chartProperties = {
   "caption": "Price of Petrol in Bangalore",
   "subCaption": "In the last 6 months",
@@ -95,13 +95,13 @@ var chartProperties = {
   "rotatevalues": "1",
   "theme": "zune"
 }
-{% endraw %}{% endhighlight %}
+```
 
 Above properties are responsible for modifying the appearance and providing captions to the chart.
 
 Next we initialize the FusionCharts object by setting its properties for type of chart, id of the HTML element to place the chart, width, height, data format, data source as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var petrolPriceChart = new FusionCharts({
   type: 'column2d',
   renderAt: 'chart-container',
@@ -113,16 +113,16 @@ var petrolPriceChart = new FusionCharts({
     "data": chartData
   }
 });
-{% endraw %}{% endhighlight %}
+```
 
 
 To render the chart we invoke the render() function of the FusionCharts object as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 FusionCharts.ready(function () {
   petrolPriceChart.render();
 });
-{% endraw %}{% endhighlight %}
+```
 
 
 With this we have created a simple 2D column chart as shown below:
@@ -141,7 +141,7 @@ Now that we have the basic chart up and running, let us explore improvising the 
 
 Let us first add border to the above chart by modifying the chart properties object as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var chartProperties = {
   //… additional properties defined above
  
@@ -157,7 +157,7 @@ var chartProperties = {
   //opacity of the border
   "borderAlpha": "100"
 };
-{% endraw %}{% endhighlight %}
+```
 
 
 Reloading the same example gives us the below graph with the border:
@@ -168,7 +168,7 @@ Click <a href="http://jsfiddle.net/2r4732wj/2/" target="_blank">here</a> to view
 
 Now let us enhance the same chart by modifying its background as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var chartProperties = {
   //… additional properties defined above
  
@@ -187,7 +187,7 @@ var chartProperties = {
   */
   "canvasBgAlpha": "0",
 };
-{% endraw %}{% endhighlight %}
+```
 
 
 The chart now looks as shown below:
@@ -203,7 +203,7 @@ Canvas is the area of the chart on which columns of the chart are plotted i.e it
 
 Firstly let's modify the background of the canvas:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var chartProperties = {
   //additional properties defined above
  
@@ -213,7 +213,7 @@ var chartProperties = {
   //transparency of the canvas background
   "canvasBgAlpha":"10"
 };
-{% endraw %}{% endhighlight %}
+```
 
 
 With the above changes the chart now looks as:
@@ -225,7 +225,7 @@ Click <a href="http://jsfiddle.net/2r4732wj/4/" target="_blank">here</a> to view
 
 Now lets add a border to the canvas area as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var chartProperties = {
   //additional properties defined above
   
@@ -235,7 +235,7 @@ var chartProperties = {
   "canvasBorderThickness": "4",
   "canvasBorderAlpha": “80”
 }
-{% endraw %}{% endhighlight %}
+```
 
 This changes the chart as shown below:
 
@@ -250,7 +250,7 @@ Now let us customize the individual columns of the chart by changing their borde
 
 First let us fill the columns of the chart with gradient using the properties as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var chartProperties = {
   // additional properties defined above
     
@@ -259,11 +259,11 @@ var chartProperties = {
   "usePlotGradientColor" : 1,
   "plotGradientColor":"#ffffff"
 }
-{% endraw %}{% endhighlight %}
+```
 
 We can even override the color and opacity of the individual columns of the chart as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var chartData = [
   {
     "label": "Feb 4 2015",
@@ -294,7 +294,7 @@ var chartData = [
     "value": "73.38"
   }
 ];
-{% endraw %}{% endhighlight %}
+```
 
 
 The chart now looks like:
@@ -307,7 +307,7 @@ Next let us look at modifying the border of columns in the chart. By default the
 
 Let us look at how to define the border format for all of the columns of the chart first. and then we will look at how to override border properties for individual columns.
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var chartProperties = {
   //… additional chart properties defined above
  
@@ -319,11 +319,11 @@ var chartProperties = {
   "plotBorderThickness": "1",
   "plotBorderColor": "#000000"
 }
-{% endraw %}{% endhighlight %}
+```
 
 Let us override the border of the second column of the chart as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var chartData = [
   {
     "label": "Feb 4 2015",
@@ -355,7 +355,7 @@ var chartData = [
     "value": "73.38"
   }
 ];
-{% endraw %}{% endhighlight %}
+```
 
 
 Any property specific to a column goes with the chart data and the properties that are applicable to all the columns are defined in the chart properties.

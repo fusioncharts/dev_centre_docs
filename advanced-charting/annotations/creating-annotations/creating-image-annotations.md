@@ -22,7 +22,7 @@ In this chart, images of brands are shown instead of the conventional 2D column 
 
 The JSON structure for creating image annotations is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 "chart": {
     ...
 },
@@ -48,7 +48,7 @@ The JSON structure for creating image annotations is given below:
         }]
     }]
 }
-{% endraw %}{% endhighlight %}
+```
 
 The attributes used to create image annotations are:
 

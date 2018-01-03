@@ -42,7 +42,7 @@ The code for the above example is given below:
 
 ### HTML code:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 <div id="chart-container">FusionCharts will render here</div>
 <!-- Drill-down: Simple Link Open in Same Page. Attribute: # link -->
@@ -55,7 +55,7 @@ The code for the above example is given below:
     -->
 </script>
 
-{% endraw %}{% endhighlight %}
+```
 
 ### JSON data:
 
@@ -78,7 +78,7 @@ The code for the above example is given below:
 
 ### HTML code:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 <div id="chart-container">FusionCharts will render here</div>
 <!-- Drill-down: Simple Link Open in Same Page. Attribute: # link -->
@@ -91,7 +91,7 @@ The code for the above example is given below:
     -->
 </script>
 
-{% endraw %}{% endhighlight %}
+```
 
 ### JSON data:
 

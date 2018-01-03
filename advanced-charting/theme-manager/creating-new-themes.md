@@ -93,7 +93,7 @@ Based on the property-tier-attribute-object mapping shown above, write the JavaS
 
 Given below is the JS code for the sample theme:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 //The `FusionCharts.register()` API is used to register the new theme in the FusionCharts core.
 FusionCharts.register(‘theme’, {
 	name: ‘mySampleTheme’,
@@ -182,7 +182,7 @@ FusionCharts.register(‘theme’, {
 		}
 	}
 });
-{% endraw %}{% endhighlight %}
+```
 
 ### Step 4:
 
@@ -193,7 +193,7 @@ You can now [apply]{% linkTo tutorials/advanced-charting/theme-manager/applying-
 If you need to create multiple new themes for your application, the advisable approach is to specify all theme definitions in the same file. That way, you will have to include only one __.js__ file in your application, instead of multiple files. The theme name, as the value of the `theme` attribute or as the parameter of the `setChartAttribute()` method, can then change depending on your requirement. 
 
 A sample of the code that goes into the JavaScript file for creating multiple themes together is shown below:
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 var myTheme1 = {
          	name: ‘my-theme-1’,
 			theme: {...} // Theme JSON
@@ -206,22 +206,22 @@ var myTheme1 = {
           	name: ‘my-theme-1’,
 			theme: {...} // Theme JSON
       };
-{% endraw %}{% endhighlight %}
+```
 
 To register all the themes in one go, use the `FusionCharts.register()` API as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 FusionCharts.register('theme', [myTheme1, myTheme2, myTheme3]);
-{% endraw %}{% endhighlight %}
+```
 
 An alternate way of creating and registering multiple themes is shown below:
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 FusionCharts.register('theme', [
 	{name: ‘my-theme-1’, theme: {...}}, 
 	{name: ‘my-theme-2’, theme: {...}}, 
 	{name: ‘my-theme-3’, theme: {...}}
 ]);
-{% endraw %}{% endhighlight %}
+```
 
 ## Including Escape Characters in Theme Definition
 
@@ -230,9 +230,9 @@ When modifying theme definitions, it is important for you to understand the conc
 Assume that the sub-caption of your chart is __Harry’s SuperMart__ .
 
 How do you write this in the theme definition?
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 subCaption: ‘Harry’s SuperMart’
-{% endraw %}{% endhighlight %}
+```
 
 is the code line that you would include in your theme definition.
 
@@ -243,9 +243,9 @@ In this example, the single quote after ‘y’ may be interpreted as the closin
 Escape characters are used to solve this problem.
 
 For the quotation mark after ‘y’ to be interpreted as an apostrophe, this is how you write the code line in your theme definition:
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 subCaption: ‘Harry\’s SuperMart’
-{% endraw %}{% endhighlight %}
+```
 
 __\’__ is an escape character that is used to tell the browser that the quotation mark is to be used as an apostrophe; this is called character quoting—using escape characters to represent characters that would otherwise have an incorrect interpretation.
 

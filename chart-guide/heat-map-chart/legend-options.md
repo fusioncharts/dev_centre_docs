@@ -111,7 +111,7 @@ A single-color gradient legend looks as shown in the image below:
 
 The code snippet needed to show a single-color gradient legend is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 {
     "chart": {
@@ -128,7 +128,7 @@ The code snippet needed to show a single-color gradient legend is given below:
     }
 }
 
-{% endraw %}{% endhighlight %}
+```
 
 ### Interactivity using the Gradient Legend
 

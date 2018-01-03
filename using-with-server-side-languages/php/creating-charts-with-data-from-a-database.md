@@ -35,7 +35,7 @@ The column 2D chart that we need to render here looks like this:
 
 The data structure needed to render this chart is given below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 <?php
 
 /* Include the `fusioncharts.php` file that contains functions	to embed the charts. */
@@ -124,7 +124,7 @@ The data structure needed to render this chart is given below:
 
 </html>
 
-{% endraw %}{% endhighlight %}
+```
 
 ## Creating Drill-down Charts
 
@@ -140,7 +140,7 @@ To render the above chart, we need two PHP files - `country.php` and `countryDri
 
 The data structure in the `country.php` file is given below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 
 <?php
 
@@ -229,11 +229,11 @@ The data structure in the `country.php` file is given below:
    </body>
 </html>
 
-{% endraw %}{% endhighlight %}
+```
 
 The data structure for the `countryDrillDown.php` file is given below:
 
-{% highlight php lineanchors %}{% raw %}
+```php
 <?php
 
  /* Include the `includes/fusioncharts.php` file that contains functions to embed the charts.*/
@@ -357,7 +357,7 @@ The data structure for the `countryDrillDown.php` file is given below:
   	<div id="chart-1"><!-- Fusion Charts will render here--></div>
    </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 
 ## Create a Multi-series 2D Single Y Combination Chart
@@ -376,7 +376,7 @@ In the code below, you can see the data for 12 months.
 
 The final JSON code that we need for this sample should be as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "chart": {
         "caption": "Harry's SuperMart",
@@ -500,11 +500,11 @@ The final JSON code that we need for this sample should be as shown below:
         }]
     }]
 }
-{% endraw %}{% endhighlight %}
+```
 
 Now let’s move on to the PHP code that will generate the above JSON data.
 
-{% highlight php lineanchors %}{% raw %}
+```php
 <?php
 
 /* Include the `include/fusioncharts.php` file that contains functions to embed the charts.*/
@@ -611,6 +611,6 @@ if ($dbhandle->connect_error) {
     </body>
 
     </html>
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">Want to try out the above samples at your local environment? You can download the samples from <a href="https://github.com/fusioncharts/php-wrapper/archive/master.zip" target="_blank">here </a>.</p>

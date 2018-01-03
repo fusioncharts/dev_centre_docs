@@ -61,11 +61,11 @@ Therefore, we’ve plotted the amount in USD on the primary y-axis (the one on t
 
 In the JSON data, the attributes and their corresponding values are written in the following key-value pair format:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 
 "<attributeName>": "<value>"
 
-{% endraw %}{% endhighlight %}
+```
 
 Given below is a brief description of the data structure needed to render a combination chart:
 

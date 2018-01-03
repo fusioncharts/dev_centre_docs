@@ -38,11 +38,11 @@ To verify if the installation went fine:
 * Open Command Terminal and run the following command: `$ node -v` to get the version of the nodejs installed in your system.
 * Run the command node to open up a REPL (Read Evaluate Print Loop) console and try out a small command as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {node
 > console.log("Hello World");
 Hello World
-{% endraw %}{% endhighlight %}
+```
 
 
 ## Installing ExpressJS
@@ -70,7 +70,7 @@ Two very frequently used commands of MongoDB are: **mongod** and **mongo** .
 
 For this article we are going to consider the variation of price of Petrol and Diesel for the year 2015 in Bangalore, India. We have obtained the fuel price from [here](http://www.mypetrolprice.com/). As MongoDB is a JSON based document store, the data to be populated is created in the form of an array of JSON objects as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 [
   {
@@ -102,7 +102,7 @@ For this article we are going to consider the variation of price of Petrol and D
   }
 ]
 
-{% endraw %}{% endhighlight %}
+```
 
 Each JSON object contains 3 properties: Month, Price of Petrol and Price of Diesel for that month. To populate this data into the MongoDB we make use of another tool called: **mongoimport** provided by MongoDB. To this tool we provide the following information:
 
@@ -114,19 +114,19 @@ Each JSON object contains 3 properties: Month, Price of Petrol and Price of Dies
 5. option to indicate input is JSON array (`--jsonArray`)
 
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 $ mongoimport -d fusion_demo -c fuel_price --type json --file data.json --jsonArray
  
 connected to: 127.0.0.1
 2015-09-01T21:02:42.210+0530 imported 9 objects
 
-{% endraw %}{% endhighlight %}
+```
 
 Let us confirm if the data really got inserted by running a few queries as shown below:
 
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 MongoDB shell version: 2.6.7                         
 connecting to: test                                  
@@ -147,7 +147,7 @@ system.indexes
 { "_id" : ObjectId("55e5c51a1873f247b61bd923"), "month" : "Sept", "petrol" : 64.61, "diesel" : 47.02 }                                                    
 >
 
-{% endraw %}{% endhighlight %}
+```
 
 So now we have the required data in our db. Let us now see how to create REST API using ExpressJS to consume the data from MongoDB.
 
@@ -169,7 +169,7 @@ Let us develop the REST API by following the steps listed below:
 
 We make use of the require() function to import the required packages by passing the name of the package. 
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 //import express package
 var express = require("express");
@@ -177,14 +177,14 @@ var express = require("express");
 //import mongodb package
 var mongodb = require("mongodb");
 
-{% endraw %}{% endhighlight %}
+```
 
 
 #### Step 2 : Connect to MongoDB instance running locally
 
 We first have to build the connection url which consists of hostname, port and database name as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
     //MongoDB connection URL - mongodb://host:port/dbName
     var dbHost = "mongodb://localhost:27017/fusion_demo";
@@ -203,21 +203,21 @@ We first have to build the connection url which consists of hostname, port and d
       dbObject = db;
     });
 
-{% endraw %}{% endhighlight %}
+```
 
 #### Step 3 : Implement method to fetch the data from Database
 
 While we implement the method to fetch db, we also need to parse and construct the object so that we are able to use it for rendering the multi series line chart. The multi series line chart we are going to draw requires an array of labels, multiple arrays of values where each array indicates a series. The data we retrieve from db is an array of objects of the below form:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 { "_id" : ObjectId("55e5c5191873f247b61bd91b"), "month" : "Jan", "petrol" : 64.72, "diesel" : 52.49}
 
-{% endraw %}{% endhighlight %}
+```
 
 We have to transform the above into the form which will help us bind to the chart:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 {
   "dataset" : [
@@ -229,11 +229,11 @@ We have to transform the above into the form which will help us bind to the char
       "seriesname" :"Diesel Prices",
       "data" : [{"value": 52.49}]
     }
-{% endraw %}{% endhighlight %}
+```
 
 The above form will help us to extract categories array as well as data set very easily. Let us look at the method implementation below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
     function getData(){
       //use the find() API and pass an empty query object to retrieve all records
@@ -274,14 +274,14 @@ The above form will help us to extract categories array as well as data set very
       });
     }
 
-{% endraw %}{% endhighlight %}
+```
 
 #### Step 4 : Create Express Server and REST API end-point
 
 Let us expose the REST API at the URL /fuelPrices. We will modify the getData() method we defined in Step 3 by adding an additional parameter to the method. This additional parameter is the response object. We are going to write the JSON object created in `getData()` method to the response object so that it is sent to the client invoking the API. 
 
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 //create express app
 var app = express();
@@ -289,29 +289,29 @@ app.get("/fuelPrices", function(req, res){
   getData(res);
 });
 
-{% endraw %}{% endhighlight %}
+```
 
 #### Step 5 : Launch the Express App on some Port
 
 Express app is launched by listening to some unused port as shown below:
 
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 app.listen("3300", function(){
   console.log('Server up: localhost:3300');
 });
 
-{% endraw %}{% endhighlight %}
+```
 
 Let us launch this application using node by running the following command:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
     $ node server.js
     Server up: http://localhost:3300
 
-{% endraw %}{% endhighlight %}
+```
 
 You will notice that the server is up on http://localhost:3300. Open the URL http://localhost:3300/fuelPrices in the browser to find the JSON response of the API. 
 
@@ -327,7 +327,7 @@ We will be creating the required templates in a views directory. This is the con
 Base template, main.handlebars, is constructed as shown below:
 
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 <!-- Filename: main.handlebars -->
 <!DOCTYPE html>
@@ -351,7 +351,7 @@ Base template, main.handlebars, is constructed as shown below:
 </body>
 </html>
 
-{% endraw %}{% endhighlight %}
+```
 
 
 The layout template is referring to a JavaScript resource: **fusioncharts_demo.js** which is placed under **public/js folder**. This JavaScript resource is where we are going to add our code to get data from backend and render that in a chart. We are going to place all FusionCharts JavaScript library in this folder. 
@@ -366,7 +366,7 @@ Let us get back to the expressjs server code i.e server.js and do the following:
 
 1. Setup handlebars template engine with main.handlebars as default layout.
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 <!-- Filename: main.handlebars -->
     <!DOCTYPE html>
@@ -390,31 +390,31 @@ Let us get back to the expressjs server code i.e server.js and do the following:
     </body>
     </html>
 
-{% endraw %}{% endhighlight %}
+```
 
 2. Defining an endpoint to serve static resources like JavaScript resources
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 /Defining middleware to serve static files
 app.use('/public', express.static('public'));
 
-{% endraw %}{% endhighlight %}
+```
 
 A new endpoint to render the view:
 
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 app.get("/", function(req, res){
   res.render("chart");
 });
 
-{% endraw %}{% endhighlight %}
+```
 
 Let us work on building the JavaScript code for making an AJAX call to get the data as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var chartData;
 $(function(){
@@ -428,7 +428,7 @@ $(function(){
   });
 });
 
-{% endraw %}{% endhighlight %}
+```
 
 We will build chart.handlebars in two parts:
 
@@ -473,7 +473,7 @@ The aim of this HTML is to display the data in a tabular form as shown below:
 
 And for this we will make use of Handlebars template at the client side i.e we will process the handlebars templates in the client with the data we received after making an AJAX call to the server. Let us define the Handlebars template within in the `<script>` tag in the `chart.handlebars` file as shown below: 
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 <!-- This is where we display the table -->
 <div id="table-location">
  
@@ -484,16 +484,16 @@ And for this we will make use of Handlebars template at the client side i.e we w
  
 </div>
  
-{% endraw %}{% endhighlight %}
+```
 
 The placeholders identified by {{ }} are handlebar constructs. Let us get back to the JavaScript AJAX call we had made. Within the success function we will use `Handlebars.compile()` to compile the client side template and then invoke the compiled template with the data obtained from server as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var template = Handlebars.compile($("#tabular-template").html());
 $("#table-location").html(template(data));
 
-{% endraw %}{% endhighlight %}
+```
 
 If you want to see the app we have built so far in action, just run the following command from the app directory: `node server.js`. You will see Server up: http://localhost:3300 printed. Open the URL http://localhost:3300/ to see the table as shown in the below image:
 
@@ -505,7 +505,7 @@ In this section we will add code for rendering the chart. Let us build the chart
 
 1. Create chart properties object
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var chartProperties = {
     "caption": "Variation of Petrol and Diesel price in Bangalore",
@@ -514,21 +514,21 @@ var chartProperties = {
     "yAxisName": "Price"
 };
 
-{% endraw %}{% endhighlight %}
+```
 
 2. Create categories array object
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var categoriesArray = [{
       "category" : data["categories"]
 }];
 
-{% endraw %}{% endhighlight %}
+```
 
 3. Create FusionCharts object for multiseries line
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 var lineChart = new FusionCharts({
     type: 'msline',
@@ -543,15 +543,15 @@ var lineChart = new FusionCharts({
     }
 });
 
-{% endraw %}{% endhighlight %}
+```
 
 4. Render the chart using the `render()` API.
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 
 lineChart.render();
 
-{% endraw %}{% endhighlight %}
+```
 
 Let us load the URL http://localhost:3300/ in the browser to see both table and chart being displayed as shown in the image below:
 

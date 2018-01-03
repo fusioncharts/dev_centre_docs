@@ -24,7 +24,7 @@ The rectangle drawn to highlight the lowest footfall is created using the path a
 
 The JSON structure for creating path annotations is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "chart": {
         …
@@ -41,7 +41,7 @@ The JSON structure for creating path annotations is given below:
     …
 }
 
-{% endraw %}{% endhighlight %}
+```
 
 The attributes used to create path annotations are:
 

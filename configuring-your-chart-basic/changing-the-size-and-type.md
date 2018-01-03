@@ -14,7 +14,7 @@ FusionCharts Suite XT lets you specify the dimensions of charts either in pixels
 
 In the previous example, we have already seen how to specify `width` and `height` in pixels. The code is replicated below, again. You just need to provide the numeric values, and NOT add px at the end of such values.
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
 <title>My first chart using FusionCharts Suite XT</title>
@@ -97,13 +97,13 @@ In the previous example, we have already seen how to specify `width` and `height
     <div id="chartContainer">FusionCharts XT will load here!</div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 ### Setting width and height in percent, during initialization
 
 If you want to create a chart that automatically resizes when its parent container (another `<div>` or the entire windows) resizes, you can set the `width` and `height` of chart in percentage as under:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <html>
 <head>
 <title>My first chart using FusionCharts Suite XT</title>
@@ -188,7 +188,7 @@ If you want to create a chart that automatically resizes when its parent contain
 </div>
 </body>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 You will just need to ensure that you set the parent container of the chart in such a way that its dimensions change dynamically when the browser resizes or due to other changes taking place in the page (like when an element is added or removed).
 
