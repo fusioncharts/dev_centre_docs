@@ -27,7 +27,7 @@
       </li>
     </ul>
   </li>
-  <li><i class="icon-flip"></i><a href="#">Guides <i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
+  <li><i class="icon-flip"></i><a>Guides <i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
     <ul>
       <li><a>Chart Guide <i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
         <ul>
