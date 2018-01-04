@@ -1,6 +1,6 @@
 <ul class="nav">
   <li><i class="icon-home"></i><a href="/">Home</a></li>
-  <li><i class="icon-spaceship"></i><a>Getting started</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+  <li><i class="icon-spaceship"></i><a>Getting started <i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
     <ul>
       <li><a href="/getting-started/installation">Installation</a></li>
       <li><a href="/getting-started/upgrading-from-evaluation-versions">Upgrading from Evaluation Versions</a></li>
@@ -12,7 +12,7 @@
       <li><a href="/getting-started/using-xml-as-data-format">Using XML as Data Format</a></li>
       <li><a href="/getting-started/setting-data-source-using-url">Setting Data Source using URL</a></li>
       <li><a><a href="/getting-started/export-your-charts">Export using FusionCharts Export Server</a></a></li>
-      <li><a>Installing via npm and bower </a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+      <li><a>Installing via npm and bower <i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
         <ul>
           <li><a href="/getting-started/installing-via-npm-and-bower/installing-fusioncharts-suite-xt-via-npm-and-bower">Installing FusionCharts Suite XT via npm and Bower</a></li>
           <li><a href="/getting-started/installing-via-npm-and-bower/installing-via-npm">Installing via npm</a></li>
