@@ -2,9 +2,9 @@
   <li><i class="icon-home"></i><a href="/">Home</a></li>
   <li><i class="icon-home"></i><a>Demo</a>
     <ul class="nav-list master-nav">
-		  <li><a href="/demos/chart-gallery.html">Chart Gallery</a></li>
-		  <li><a href="/demos/dashboards.html">Business Dashboards</a></li>
-		  <li><a href="/demos/chart-fiddles.html">Live Examples of Charts</a></li>
+		  <li><a href="/demos/chart-gallery">Chart Gallery</a></li>
+		  <li><a href="/demos/dashboards">Business Dashboards</a></li>
+		  <li><a href="/demos/chart-fiddles">Live Examples of Charts</a></li>
     </ul>
   </li>
   
