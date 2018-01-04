@@ -27,7 +27,7 @@
       </li>
     </ul>
   </li>
-  <li><i class="material-icons">directions</i><a href="#">Guides</a>
+  <li><i class="icon-flip"></i><a href="#">Guides</a>
     <ul>
       <li><a>Chart Guide</a>
         <ul>
@@ -359,7 +359,7 @@
       </li>
     </ul>
   </li>
-  <li><i class="material-icons">directions</i><a>Customizing Charts </a>
+  <li><i class="icon-color"></i><a>Customizing Charts </a>
     <ul>
       <li><a>Basic Chart Configurations</a>
         <ul>
@@ -540,7 +540,7 @@
       </li>
     </ul>
   </li>
-  <li><i class="material-icons">directions</i><a>API Reference</a>
+  <li><i class="icon-api"></i><a>API Reference</a>
     <ul>
       <li><a href="/api/fusioncharts">FusionCharts</a></li>
       <li><a href="/api/fusioncharts/fusioncharts-events">Events</a></li>
@@ -558,7 +558,7 @@
       <li><a href="/api/global-methods">Global Methods</a></li>
     </ul>
   </li>
-  <li><i class="material-icons">directions</i><a>Tutorials</a>
+  <li><i class="icon-open-book"></i><a>Tutorials</a>
     <ul>
       <li><a href="/api/tutorials/remove-an-existing-chart-from-a-page">Remove an Existing Chart from a Page</a></li>
       <li><a href="/api/tutorials/reference-to-chart-object">Get Reference to Chart Object</a></li>
@@ -674,7 +674,7 @@
       </li>
     </ul>
   </li>
-  <li><i class="material-icons">directions</i><a>Help</a>
+  <li><i class="icon-help"></i><a>Help</a>
     <ul>
       <li><a href="/tutorials-list">Tutorials</a></li>
       <li>Troubleshooting
@@ -684,8 +684,8 @@
       </li>
     </ul>
   </li>
-  <li><i class="material-icons">directions</i><a><a href="/">Error Handling</a></a></li>
-  <li><i class="material-icons">directions</i><a><a href="/showcase">Showcase</a></a></li>
-  <li><i class="material-icons">directions</i><a><a href="/">FAQ</a></a></li>
-  <li><i class="material-icons">directions</i><a href="/">Changelog</a></li>
+  <li><i class="icon-error"></i><a href="/">Error Handling</a></li>
+  <li><i class="icon-widgets"></i><a href="/showcase">Showcase</a></li>
+  <li><i class="icon-help"></i><a href="/">FAQ</a></li>
+  <li><i class="icon-device-hub"></i><a href="/">Changelog</a></li>
 </ul>
