@@ -1,6 +1,6 @@
 <ul class="nav">
-  <li><i class="material-icons">home</i><a href="/">Home</a></li>
-  <li><i class="material-icons">directions</i><a>Getting started</a>
+  <li><i class="icon-home"></i><a href="/">Home</a></li>
+  <li><i class="icon-spaceship"></i><a>Getting started</a>
     <ul>
       <li><a href="/getting-started/installation">Installation</a></li>
       <li><a href="/getting-started/upgrading-from-evaluation-versions">Upgrading from Evaluation Versions</a></li>
