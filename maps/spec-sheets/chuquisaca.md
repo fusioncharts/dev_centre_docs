@@ -1,0 +1,27 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/chuquisaca
+
+Map Name: Chuquisaca
+Dimensions (Width x Height): 300x340
+
+
+
+{% embed_spec_map chuquisaca-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+BO.CQ.AZ|AZ|Azurduy
+BO.CQ.BB|BB|Belisario Boeto
+BO.CQ.HS|HS|Hernando Siles
+BO.CQ.LC|LC|Luis Calvo
+BO.CQ.NC|NC|Nor Cinti
+BO.CQ.OR|OR|Oropeza
+BO.CQ.SC|SC|Sud Cinti
+BO.CQ.TM|TM|Tomina
+BO.CQ.YM|YM|Yamparáez
+BO.CQ.ZU|ZU|Zudáñez

@@ -1,0 +1,31 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/malatya
+
+Map Name: Malatya
+Dimensions (Width x Height): 610x570
+
+
+
+{% embed_spec_map malatya-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+TR.ML.AK | AK | Akçadağ
+TR.ML.AP | AP | Arapgir
+TR.ML.AV | AV | Arguvan
+TR.ML.BA | BA | Battalgazi		
+TR.ML.DA | DA | Darende
+TR.ML.DS | DS | Doğanşehir
+TR.ML.DY | DY | Doğanyol
+TR.ML.HE | HE | Hekimhan		
+TR.ML.KA | KA | Kale
+TR.ML.KU | KU | Kuluncak
+TR.ML.ML | ML | Malatya
+TR.ML.PO | PO | Pütürge		
+TR.ML.YA | YA | Yazıhan
+TR.ML.YE | YE | Yeşilyurt

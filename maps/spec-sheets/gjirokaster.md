@@ -1,0 +1,21 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/gjirokaster
+
+Map Name: Gjirokaster
+Dimensions (Width x Height): 576x600
+
+
+
+{% embed_spec_map gjirokaster-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+01|GJ|Gjirokastër
+02|PR|Përmet
+03|TE|Tepelenë
+

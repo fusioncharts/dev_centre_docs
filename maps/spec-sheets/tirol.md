@@ -1,0 +1,27 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/tirol
+
+Map Name: Tirol
+Dimensions (Width x Height): 530x300
+
+
+
+{% embed_spec_map tirol-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+AT.TR.IM|IM|Imst
+AT.TR.IN|IN|Innsbruck
+AT.TR.IL|IL|Innsbruck-Land
+AT.TR.KB|KB|Kitzbühel
+AT.TR.KU|KU|Kufstein
+AT.TR.LA|LA|Landeck
+AT.TR.LZ|LZ|Lienz
+AT.TR.RE|RE|Reutte
+AT.TR.SZ|SZ|Schwaz
+

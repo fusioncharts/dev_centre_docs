@@ -1,0 +1,23 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/sarepol
+
+Map Name: Sar-e-Pol
+Dimensions (Width x Height): 610x570
+
+
+
+{% embed_spec_map sarepol-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+AF.SP.BA|BA|Balkhab
+AF.SP.KO|KO|Kohistanat
+AF.SP.SA|SA|Sangcharak
+AF.SP.SP|SP|Sari Pul
+AF.SP.SY|SY|Sayyad
+AF.SP.SQ|SQ|Sozma Qala

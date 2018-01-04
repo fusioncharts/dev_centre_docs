@@ -1,0 +1,27 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/britishvirginisland
+
+Map Name: Britishvirginisland
+Dimensions (Width x Height): 480x460
+
+
+
+{% embed_spec_map britishvirginisland-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+VI.BV.AN|AN|Anegada
+VI.BV.CI|CI|Cooper Island
+VI.BV.GI|GI|Ginger Island
+VI.BV.JD|JD|Jost Van Dyke
+VI.BV.NI|NI|Norman Island
+VI.BV.PI|PI|Peter Island
+VI.BV.SI|SI|Salt Island
+VI.BV.TO|TO|Tortola
+VI.BV.VG|VG|Virgin Gorda
+

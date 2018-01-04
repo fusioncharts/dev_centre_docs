@@ -1,0 +1,22 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/diber
+
+Map Name: Diber
+Dimensions (Width x Height): 572x567
+
+
+
+{% embed_spec_map diber-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+01|BU|Bulqizë
+02|DI|Dibër
+03|MT|Mat
+04|PE|Peshkopi
+

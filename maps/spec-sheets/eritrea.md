@@ -1,0 +1,24 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/eritrea
+
+Map Name: Eritrea
+Dimensions (Width x Height): 420x380
+
+
+
+{% embed_spec_map eritrea-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+ER.AN|AN|Anseba
+ER.DU|DU|Debub
+ER.DK|DK|Debubawi Keyih Bahri
+ER.GB|GB|Gash Barka
+ER.MA|MA|Maekel
+ER.SK|SK|Semenawi Keyih Bahri
+

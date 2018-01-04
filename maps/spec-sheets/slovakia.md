@@ -1,0 +1,26 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/slovakia
+
+Map Name: Slovakia
+Dimensions (Width x Height): 610x310
+
+
+
+{% embed_spec_map slovakia-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+01|BC|Banská Bystrica
+02|BL|Bratislava
+03|KI|Košice
+04|NI|Nitra
+05|PV|Prešov
+06|TC|Tren?ín
+07|TA|Trnava
+08|ZI|Žilina
+
