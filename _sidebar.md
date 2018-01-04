@@ -27,47 +27,47 @@
       </li>
     </ul>
   </li>
-  <li><i class="icon-flip"></i><a href="#">Guides</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+  <li><i class="icon-flip"></i><a href="#">Guides <i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
     <ul>
-      <li><a>Chart Guide</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+      <li><a>Chart Guide <i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
         <ul>
-          <li><a>Standard Charts</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Standard Charts <i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/standard-charts/creating-standard-charts">Creating Standard Charts</a></li>
               <li><a href="/chart-guide/standard-charts/configuring-standard-charts">Configuring Standard Charts</a></li>
             </ul>
           </li>
-          <li><a>Pie and Doughnut Charts</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Pie and Doughnut Charts <i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/pie-and-doughnut-charts/creating-pie-and-doughnut-charts">Creating Pie and Doughnut Charts</a></li>
               <li><a href="/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts">Configuring Pie and Doughnut Charts</a></li>
             </ul>
           </li>
-          <li><a>Multi-series Charts</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Multi-series Charts <i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/multi-series-charts/creating-multi-series-charts">Creating Multi-series Charts</a></li>
               <li><a href="/chart-guide/multi-series-charts/configuring-multi-series-charts">Configuring Multi-series Charts</a></li>
             </ul>
           </li>
-          <li><a>Combination Charts</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Combination Charts<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/combination-charts/creating-combination-charts">Creating Combination Charts</a></li>
               <li><a href="/chart-guide/combination-charts/configuring-combination-charts">Configuring Combination Charts</a></li>
             </ul>
           </li>
-          <li><a>Stacked Charts</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Stacked Charts<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/stacked-charts/creating-stacked-charts">Creating a Stacked Chart</a></li>
               <li><a href="/chart-guide/stacked-charts/configuring-stacked-charts">Configuring a Stacked Chart</a></li>
             </ul>
           </li>
-          <li><a>Scroll Charts</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Scroll Charts<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/scroll-charts/creating-scroll-charts">Creating a Scroll Chart</a></li>
               <li><a href="/chart-guide/scroll-charts/configuring-scroll-charts">Configuring Scroll Charts</a></li>
             </ul>
           </li>
-          <li><a>Bubble and XY Charts</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Bubble and XY Charts<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/bubble-and-xy-charts/creating-bubble-and-xy-charts">Creating Bubble and XY Charts</a></li>
               <li><a href="/chart-guide/bubble-and-xy-charts/configuring-bubble-and-xy-charts">Configuring Bubble and XY Charts</a></li>
@@ -75,26 +75,26 @@
               <li><a href="/chart-guide/bubble-and-xy-charts/customizing-quadrants">Customizing Quadrants</a></li>
             </ul>
           </li>
-          <li><a>Pareto Chart</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Pareto Chart<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/pareto-chart/creating-a-pareto-chart">Creating a Pareto Chart</a></li>
               <li><a href="/chart-guide/pareto-chart/configuring-a-pareto-chart">Configuring a Pareto Chart</a></li>
             </ul>
           </li>
-          <li><a>Marimekko Charts</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Marimekko Charts<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/marimekko-chart/creating-a-marimekko-chart">Creating a Marimekko Chart</a></li>
               <li><a href="/chart-guide/marimekko-chart/configuring-a-marimekko-chart">Configuring a Marimekko Chart</a></li>
             </ul>
           </li>
-          <li><a>Zoom Line Chart</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Zoom Line Chart<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/zoom-line-chart/creating-a-zoom-line-chart">Creating a Zoom Line Chart</a></li>
               <li><a href="/chart-guide/zoom-line-chart/configuring-a-zoom-line-chart">Configuring a Zoom Line Chart</a></li>
             </ul>
           </li>
           <li><a href="/chart-guide/zoom-line-dy-chart">Zoom-line Dual Y-Axis Chart</a></li>
-          <li><a>Heat Map Chart</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Heat Map Chart<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/heat-map-chart/introduction">Introduction to Heat Map Chart</a></li>
               <li><a href="/chart-guide/heat-map-chart/creating-numeric-heat-map-chart">Creating Numeric Heat Map Charts</a></li>
@@ -104,7 +104,7 @@
               <li><a href="/chart-guide/heat-map-chart/handling-out-of-range-data">Handling Out-of-range Data</a></li>
             </ul>
           </li>
-          <li><a>Treemap</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Treemap<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/treemap/introducing-the-treemap">Introducing the Treemap</a></li>
               <li><a href="/chart-guide/treemap/creating-a-simple-treemap">Creating a Simple Treemap</a></li>
@@ -113,7 +113,7 @@
               <li><a href="/chart-guide/treemap/handling-events-in-the-treemap">Handling Events in the Treemap</a></li>
             </ul>
           </li>
-          <li><a>Drag Node Chart</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Drag Node Chart<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/drag-node-chart/introduction">Introduction to Drag Node Chart</a></li>
               <li><a href="/chart-guide/drag-node-chart/configuring-drag-node-charts">Configuring Drag-node Charts</a></li>
@@ -124,7 +124,7 @@
               <li><a href="/chart-guide/drag-node-chart/getting-data-using-javascript">Getting Data Using JavaScript</a></li>
             </ul>
           </li>
-          <li><a>Drag-able Charts</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Drag-able Charts<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/drag-able-charts/introduction">Introduction to Drag-able Chart</a></li>
               <li><a href="/chart-guide/drag-able-charts/creating-drag-able-charts">Creating Drag-able Charts</a></li>
@@ -132,14 +132,14 @@
               <li><a href="/chart-guide/drag-able-charts/retrieving-data">Retrieving Data</a></li>
             </ul>
           </li>
-          <li><a>Select-scatter Chart</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Select-scatter Chart<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/select-scatter-chart/creating-a-select-scatter-chart">Creating a Select-scatter Chart</a></li>
               <li><a href="/chart-guide/select-scatter-chart/getting-selected-data">Getting Selected Data</a></li>
               <li><a href="/chart-guide/select-scatter-chart/drawing-regression-lines-in-the-select-scatter-chart">Drawing Regression Lines in the Select-scatter Chart</a></li>
             </ul>
           </li>
-          <li><a>Zoom-scatter Chart</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Zoom-scatter Chart<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/zoom-scatter-chart/introducing-the-zoom-scatter-chart">Introducing the Zoom Scatter Chart</a></li>
               <li><a href="/chart-guide/zoom-scatter-chart/creating-a-zoom-scatter-chart">Creating a Zoom Scatter Chart</a></li>
@@ -149,19 +149,19 @@
           <li><a href="/chart-guide/radar-chart">Radar Chart</a></li>
           <li><a href="/chart-guide/multi-axis-line-chart">Multi-axis Line Chart</a></li>
           <li><a href="/chart-guide/multi-level-pie-chart">Multi-level Pie Chart</a></li>
-          <li><a>Candlestick Chart</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Candlestick Chart<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/candlestick-chart/creating-a-candlestick-chart">Creating a Candlestick Chart</a></li>
               <li><a href="/chart-guide/candlestick-chart/configuring-a-candlestick-chart">Configuring a Candlestick Chart</a></li>
             </ul>
           </li>
-          <li><a>Waterfall (Cascade) Chart</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Waterfall (Cascade) Chart<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/waterfall-or-cascade-chart/creating-a-waterfall-or-cascade-chart">Creating a Waterfall (Cascade) Chart</a></li>
               <li><a href="/chart-guide/waterfall-or-cascade-chart/configuring-a-waterfall-or-cascade-chart">Configuring a Waterfall (Cascade) Chart</a></li>
             </ul>
           </li>
-          <li><a>Box and Whisker Chart</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Box and Whisker Chart<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/box-and-whisker-chart/introduction">Introduction to Box and Whisker Chart</a></li>
               <li><a href="/chart-guide/box-and-whisker-chart/creating-box-and-whisker-chart">Creating Box and Whisker Chart</a></li>
@@ -173,7 +173,7 @@
               <li><a href="/chart-guide/box-and-whisker-chart/configuring-outliers">Configuring Outliers</a></li>
             </ul>
           </li>
-          <li><a>Error Charts</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Error Charts<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/error-charts/introduction">Introduction to Error Chart</a></li>
               <li><a href="/chart-guide/error-charts/creating-error-bar-chart">Creating Error Bar Chart</a></li>
@@ -183,14 +183,14 @@
           </li>
           <li><a href="/chart-guide/spline-charts">Spline Charts</a></li>
           <li><a href="/chart-guide/inverse-y-axis-chart">Inverse Y-axis Chart</a></li>
-          <li><a>Logarithmic Charts</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Logarithmic Charts<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/logarithmic-charts/introduction">Introduction to Logarithmic Chart</a></li>
               <li><a href="/chart-guide/logarithmic-charts/creating-logarithmic-charts">Creating Logarithmic Charts</a></li>
               <li><a href="/chart-guide/logarithmic-charts/configuring-logarithmic-charts">Configuring Logarithmic Charts</a></li>
             </ul>
           </li>
-          <li><a>Step Line Chart</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Step Line Chart<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/step-line-chart/introduction">Introduction to Step Line Chart</a></li>
               <li><a href="/chart-guide/step-line-chart/creating-a-step-line-chart">Creating a Step Line Chart</a></li>
@@ -198,7 +198,7 @@
             </ul>
           </li>
           <li><a href="/chart-guide/kagi-chart">Kagi Chart</a></li>
-          <li><a>Real-time Charts</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Real-time Charts<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/chart-guide/real-time-charts/introduction">Introduction to Real-time Charts</a></li>
               <li><a href="/chart-guide/real-time-charts/data-format">Real-time Data Format</a></li>
@@ -216,9 +216,9 @@
           </li>
         </ul>
       </li>
-      <li><a>Gauge &amp; Widgets Guide</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+      <li><a>Gauge &amp; Widgets Guide<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
         <ul>
-          <li><a>Angular Gauge</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Angular Gauge<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/gauge-and-widgets-guide/angular-gauge/introduction">Introduction to Angular Gauge</a></li>
               <li><a href="/gauge-and-widgets-guide/angular-gauge/simple-gauge-example">Simple Angular Gauge Example</a></li>
@@ -233,7 +233,7 @@
               <li><a href="/gauge-and-widgets-guide/angular-gauge/logging-real-time-messages">Logging Real-time Messages</a></li>
             </ul>
           </li>
-          <li><a>Linear Gauge</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Linear Gauge<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/gauge-and-widgets-guide/linear-gauge/introduction">Introduction to Linear Gauge</a></li>
               <li><a href="/gauge-and-widgets-guide/linear-gauge/simple-gauge-example">Simple Linear Gauge Example</a></li>
@@ -244,7 +244,7 @@
               <li><a href="/gauge-and-widgets-guide/linear-gauge/real-time-gauges">Real-time Linear Gauge</a></li>
             </ul>
           </li>
-          <li><a>LED Gauge</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>LED Gauge<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/gauge-and-widgets-guide/led-gauge/introduction">Introduction to LED Gauge</a></li>
               <li><a href="/gauge-and-widgets-guide/led-gauge/simple-gauge-example">Simple LED Gauge Example</a></li>
@@ -252,7 +252,7 @@
               <li><a href="/gauge-and-widgets-guide/led-gauge/real-time-gauges">Real-time LED Gauge</a></li>
             </ul>
           </li>
-          <li><a>Thermometer Gauge</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Thermometer Gauge<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/gauge-and-widgets-guide/thermometer-gauge/introduction">Introduction to Thermometer Gauge</a></li>
               <li><a href="/gauge-and-widgets-guide/thermometer-gauge/simple-gauge-example">Simple Thermometer Gauge Example</a></li>
@@ -260,7 +260,7 @@
               <li><a href="/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges">Real-time Thermometer Gauge</a></li>
             </ul>
           </li>
-          <li><a>Cylinder Gauge</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Cylinder Gauge<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/gauge-and-widgets-guide/cylinder-gauge/introduction">Introduction to Cylinder Gauge</a></li>
               <li><a href="/gauge-and-widgets-guide/cylinder-gauge/simple-gauge-example">Simple Cylinder Gauge Example</a></li>
@@ -268,7 +268,7 @@
               <li><a href="/gauge-and-widgets-guide/cylinder-gauge/real-time-gauges">Real-time Cylinder Gauge</a></li>
             </ul>
           </li>
-          <li><a>Bulb Gauge</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Bulb Gauge<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/gauge-and-widgets-guide/bulb-gauge/introduction">Introduction to Bulb Gauge</a></li>
               <li><a href="/gauge-and-widgets-guide/bulb-gauge/simple-gauge-example">Simple Bulb Gauge Example</a></li>
@@ -276,21 +276,21 @@
               <li><a href="/gauge-and-widgets-guide/bulb-gauge/real-time-gauges">Real-time Bulb Gauge</a></li>
             </ul>
           </li>
-          <li><a>Funnel Chart</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Funnel Chart<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/gauge-and-widgets-guide/funnel-chart/introduction">Introduction to Funnel Chart</a></li>
               <li><a href="/gauge-and-widgets-guide/funnel-chart/simple-chart-example">Simple Funnel Chart Example</a></li>
               <li><a href="/gauge-and-widgets-guide/funnel-chart/configuring-chart">Configuring Funnel Chart</a></li>
             </ul>
           </li>
-          <li><a>Pyramid Chart</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Pyramid Chart<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/gauge-and-widgets-guide/pyramid-chart/introduction">Introduction to Pyramid Chart</a></li>
               <li><a href="/gauge-and-widgets-guide/pyramid-chart/simple-pyramid-chart">Creating a Simple Pyramid Chart</a></li>
               <li><a href="/gauge-and-widgets-guide/pyramid-chart/configuring-chart">Configuring Pyramid Chart</a></li>
             </ul>
           </li>
-          <li><a>Spark Charts</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Spark Charts<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/gauge-and-widgets-guide/spark-charts/introduction">Introduction to Spark Chart</a></li>
               <li><a href="/gauge-and-widgets-guide/spark-charts/creating-spark-line-chart">Creating a Spark Line Chart</a></li>
@@ -301,7 +301,7 @@
               <li><a href="/gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts">Configuring Spark Win/Loss Charts</a></li>
             </ul>
           </li>
-          <li><a>Bullet Graphs</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Bullet Graphs<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/gauge-and-widgets-guide/bullet-graph/introduction">Introduction to Bullet Graph</a></li>
               <li><a href="/gauge-and-widgets-guide/bullet-graph/creating-bullet-graphs">Creating Bullet Graphs</a></li>
@@ -309,7 +309,7 @@
               <li><a href="/gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs">Real-time Bullet Graph</a></li>
             </ul>
           </li>
-          <li><a>Gantt Chart</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Gantt Chart<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/gauge-and-widgets-guide/gantt-chart/introduction">Introduction to Gantt Chart</a></li>
               <li><a href="/gauge-and-widgets-guide/gantt-chart/creating-simple-gantt-chart">Creating a Simple Gantt Chart</a></li>
@@ -325,7 +325,7 @@
               <li><a href="/gauge-and-widgets-guide/gantt-chart/events-in-gantt-chart">Events in Gantt Chart</a></li>
             </ul>
           </li>
-          <li><a>Real-time Gauges</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Real-time Gauges<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/gauge-and-widgets-guide/real-time-gauges/introduction">Introduction to Real-time Gauges</a></li>
               <li><a href="/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges">Setting Up Real-time Gauges</a></li>
@@ -336,7 +336,7 @@
           </li>
         </ul>
       </li>
-      <li><a>Map Guide</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+      <li><a>Map Guide<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
         <ul>
           <li><a href="/map-guide/setup">Setup</a></li>
           <li><a href="/map-guide/simple-data-driven-map">Simple Data Driven Map</a></li>
@@ -350,7 +350,7 @@
           <li><a href="/map-guide/adding-drill-down-to-maps">Adding Drill Down to Maps</a></li>
         </ul>
       </li>
-      <li><a>Map Reference</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+      <li><a>Map Reference<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
         <ul>
           <li><a href="/maps/marker-data/">Marker Data</a></li>
           <li><a href="/maps/spec-sheets/">Specification Sheets</a></li>
@@ -359,9 +359,9 @@
       </li>
     </ul>
   </li>
-  <li><i class="icon-color"></i><a>Customizing Charts </a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+  <li><i class="icon-color"></i><a>Customizing Charts <i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
     <ul>
-      <li><a>Basic Chart Configurations</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+      <li><a>Basic Chart Configurations<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
         <ul>
           <li><a href="/basic-chart-configurations/changing-the-size-and-type">Changing the Size and Type</a></li>
           <li><a href="/basic-chart-configurations/border-and-background">Border and Background</a></li>
@@ -383,7 +383,7 @@
           <li><a href="/basic-chart-configurations/anchors-and-lines">Anchors and Lines</a></li>
           <li><a href="/basic-chart-configurations/cross-line">Cross Line</a></li>
           <li><a href="/basic-chart-configurations/tool-tips">Tooltips</a></li>
-          <li><a>Tooltip Macros</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Tooltip Macros<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/basic-chart-configurations/tooltip-macros/introduction-to-tooltip-macros">Introduction to Tooltip Macros</a></li>
               <li><a href="/basic-chart-configurations/tooltip-macros/list-of-macros">List of Tooltip Macros</a></li>
@@ -397,7 +397,7 @@
           <li><a href="/basic-chart-configurations/loading-external-logo">Loading External Logo</a></li>
           <li><a href="/basic-chart-configurations/chart-paddings-and-margins">Chart Paddings and Margins</a></li>
           <li><a href="/basic-chart-configurations/toolbar">Toolbar</a></li>
-          <li><a>Tutorials</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Tutorials<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-1">Basic Chart Configuration(Part-1)</a></li>
               <li><a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-2">Basic Chart Configuration(Part-2)</a></li>
@@ -405,16 +405,16 @@
           </li>
         </ul>
       </li>
-      <li><a>Advanced Chart Configurations</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+      <li><a>Advanced Chart Configurations<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
         <ul>
-          <li><a>Events</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Events<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/advanced-chart-configurations/events/introduction-to-events">Introduction to Events</a></li>
               <li><a href="/advanced-chart-configurations/events/handling-events">Handling Events</a></li>
               <li><a href="/advanced-chart-configurations/events/classifying-events">Classifying Events</a></li>
             </ul>
           </li>
-          <li><a>Drill-down</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Drill-down<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/advanced-chart-configurations/drill-down/simple-drill-down">Creating Simple Drill-down Charts</a></li>
               <li><a href="/advanced-chart-configurations/drill-down/opening-in-pop-up-or-frames">Opening Links in Pop-up Windows or Frames</a></li>
@@ -423,7 +423,7 @@
               <li><a href="/advanced-chart-configurations/drill-down/using-javascript-functions-as-links">Using JavaScript Functions as Links</a></li>
             </ul>
           </li>
-          <li><a>Annotations</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Annotations<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/advanced-chart-configurations/annotations/introduction">Introduction to Annotations</a></li>
               <li><a>Creating Annotations</a>
@@ -444,7 +444,7 @@
               <li><a href="/advanced-chart-configurations/annotations/annotations-references">Annotations References</a></li>
             </ul>
           </li>
-          <li><a>Theme Manager</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Theme Manager<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/advanced-chart-configurations/theme-manager/introduction-to-themes">Introduction to Themes</a></li>
               <li><a href="/advanced-chart-configurations/theme-manager/applying-themes">Applying Themes</a></li>
@@ -453,7 +453,7 @@
               <li><a href="/advanced-chart-configurations/theme-manager/creating-new-themes">Creating New Themes</a></li>
             </ul>
           </li>
-          <li><a>Tutorials</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Tutorials<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/advanced-chart-configurations/tutorials/render-thumbnail-versions-of-chart">Render Thumbnail Versions of Charts</a></li>
               <li><a href="/advanced-chart-configurations/tutorials/change-chart-messages">Configure Chart Messages</a></li>
@@ -462,13 +462,13 @@
         </ul>
       </li>
       <li><a href="/chart-attributes">Chart Attributes</a></li>
-      <li><a>Export Using</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+      <li><a>Export Using<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
         <ul>
-          <li><a>FusionCharts Export Server</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>FusionCharts Export Server<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf">Exporting Charts as Image and PDF</a></li>
               <li><a href="/exporting-charts/using-fc-export-server/exporting-chart-data">Exporting Chart Data</a></li>
-              <li><a>Modes of Export</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+              <li><a>Modes of Export<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
                 <ul>
                   <li><a href="/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature">Exporting Charts and Chart Data Using the Server-side Export Feature</a></li>
                   <li><a href="/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-client-side-export-feature">Exporting Charts and Chart Data Using the Client-side Export Feature</a></li>
@@ -477,7 +477,7 @@
               </li>
               <li><a href="/exporting-charts/using-fc-export-server/logging-export-statistics">Logging Export Statistics</a></li>
               <li><a href="/exporting-charts/using-fc-export-server/configuring-the-export-feature">Configuring the Export Feature</a></li>
-              <li><a>Setup Private Export Server</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+              <li><a>Setup Private Export Server<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
                 <ul>
                   <li><a href="/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server-asp-net">ASP.NET</a></li>
                   <li><a href="/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server-php">PHP</a></li>
@@ -489,10 +489,10 @@
               <li><a href="/exporting-charts/using-fc-export-server/architecture-of-the-fusioncharts-export-server">Architecture of the FusionCharts Export Server</a></li>
             </ul>
           </li>
-          <li><a>FusionExport <span class="bubble-text">Beta</span></a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>FusionExport <span class="bubble-text">Beta</span><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/exporting-charts/using-fusionexport/overview">Overview</a></li>
-              <li><a>Installation</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+              <li><a>Installation<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
                 <ul>
                   <li><a href="/exporting-charts/using-fusionexport/installation/install-fusionexport-desktop">Install FusionExport desktop</a></li>
                   <li><a href="/exporting-charts/using-fusionexport/installation/install-fusionexport-web-service">Install FusionExport Web Service</a></li>
@@ -500,7 +500,7 @@
                   <li><a href="/exporting-charts/using-fusionexport/installation/add-language-sdks">Add Language SDKs</a></li>
                 </ul>
               </li>
-              <li><a>Tutorials</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+              <li><a>Tutorials<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
                 <ul>
                   <li><a href="/exporting-charts/using-fusionexport/tutorials/export-chart-as-image">Export chart as image</a></li>
                   <li><a href="/exporting-charts/using-fusionexport/tutorials/change-the-export-type">Change the export type</a></li>
@@ -524,7 +524,7 @@
               </li>
               <li><a href="/exporting-charts/using-fusionexport/cli-reference">CLI Reference</a></li>
               <li><a href="/exporting-charts/using-fusionexport/fusionexport-web-service-api-reference">Web Service API Reference</a></li>
-              <li><a>SDK API Reference</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+              <li><a>SDK API Reference<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
                 <ul>
                   <li><a href="/exporting-charts/using-fusionexport/sdk-api-reference/nodejs">Node.js</a></li>
                   <li><a href="/exporting-charts/using-fusionexport/sdk-api-reference/java">Java</a></li>
@@ -540,14 +540,14 @@
       </li>
     </ul>
   </li>
-  <li><i class="icon-api"></i><a>API Reference</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+  <li><i class="icon-api"></i><a>API Reference<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
     <ul>
       <li><a href="/api/fusioncharts">FusionCharts</a></li>
       <li><a href="/api/fusioncharts/fusioncharts-events">Events</a></li>
       <li><a href="/api/fusioncharts/fusioncharts-methods">Methods</a></li>
       <li><a href="/api/fusioncharts/fusioncharts-properties">Properties</a></li>
       <li><a href="/api/fusioncharts/fusioncharts-typedefs">Type Definitions</a></li>
-      <li><a>Namespaces</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+      <li><a>Namespaces<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
         <ul>
           <li><a href="/api/fusioncharts/namespaces/debugger">Debugger</a></li>
           <li><a href="/api/fusioncharts/namespaces/ajax">Ajax</a></li>
@@ -558,7 +558,7 @@
       <li><a href="/api/global-methods">Global Methods</a></li>
     </ul>
   </li>
-  <li><i class="icon-open-book"></i><a>Tutorials</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+  <li><i class="icon-open-book"></i><a>Tutorials<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
     <ul>
       <li><a href="/api/tutorials/remove-an-existing-chart-from-a-page">Remove an Existing Chart from a Page</a></li>
       <li><a href="/api/tutorials/reference-to-chart-object">Get Reference to Chart Object</a></li>
@@ -574,23 +574,23 @@
   </li>
   <li><i class="icon-bookmark"></i><a>Integration with your stack</a>
     <ul>
-      <li><a>Using with Server Side Languages</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+      <li><a>Using with Server Side Languages<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
         <ul>
-          <li><a>PHP</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>PHP<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/using-with-server-side-languages/php/introduction">Introduction to the FusionCharts PHP Wrapper</a></li>
               <li><a href="/using-with-server-side-languages/php/different-ways-of-loading-data">Different Ways of Loading Data in PHP</a></li>
               <li><a href="/using-with-server-side-languages/php/creating-charts-with-data-from-a-database">Creating Charts in PHP using a Database</a></li>
             </ul>
           </li>
-          <li><a>Ruby on Rails</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Ruby on Rails<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/using-with-server-side-languages/ruby-on-rails/introduction">Introduction to the FusionCharts Ruby on Rails Wrapper</a></li>
               <li><a href="/using-with-server-side-languages/ruby-on-rails/different-ways-of-loading-data">Different Ways of Loading Data in Ruby</a></li>
               <li><a href="/using-with-server-side-languages/ruby-on-rails/creating-charts-with-data-from-a-database">Creating Charts in Ruby using a Database</a></li>
             </ul>
           </li>
-          <li><a>ASP.NET</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>ASP.NET<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/using-with-server-side-languages/asp-net/introduction">Introduction to the FusionCharts ASP.NET Wrapper</a></li>
               <li><a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data">Different Ways of Loading Data in ASP.Net</a></li>
@@ -598,21 +598,21 @@
               <li><a href="/using-with-server-side-languages/asp-net/creating-drill-down-charts">Creating Drill-down Charts</a></li>
             </ul>
           </li>
-          <li><a>Java</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Java<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/using-with-server-side-languages/java/introduction">Introduction to the FusionCharts JSP Wrapper</a></li>
               <li><a href="/using-with-server-side-languages/java/different-ways-of-loading-data">Different Ways of Loading Data in Java</a></li>
               <li><a href="/using-with-server-side-languages/java/creating-charts-with-data-from-a-database">Creating Charts in Java using a Database</a></li>
             </ul>
           </li>
-          <li><a>Django</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Django<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper">Introduction to the FusionCharts Django Wrapper</a></li>
               <li><a href="/using-with-server-side-languages/django/different-ways-of-loading-data">Different Ways of Loading Data in Django</a></li>
               <li><a href="/using-with-server-side-languages/django/creating-charts-with-data-from-a-database">Creating Charts in Django using a Database</a></li>
             </ul>
           </li>
-          <li><a>Tutorials</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Tutorials<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/using-with-server-side-languages/tutorials/php-mysql-charts">Create Interactive Charts using PHP and MySQL</a></li>
               <li><a href="/using-with-server-side-languages/tutorials/drill-down-charts-using-php-mysql">Create Drill-Down Charts using PHP and MySQL</a></li>
@@ -621,9 +621,9 @@
           </li>
         </ul>
       </li>
-      <li><a>Using with JavaScript Libraries</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+      <li><a>Using with JavaScript Libraries<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
         <ul>
-          <li><a>jQuery</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>jQuery<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/using-with-javascript-libraries/jquery/introduction">Introduction to FusionCharts jQuery Helper</a></li>
               <li><a href="/using-with-javascript-libraries/jquery/rendering-charts-using-jquery">Rendering Charts Using jQuery</a></li>
@@ -634,7 +634,7 @@
               <li><a href="/using-with-javascript-libraries/jquery/api-reference">API Reference</a></li>
             </ul>
           </li>
-          <li><a>AngularJS</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>AngularJS<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/using-with-javascript-libraries/angularjs/introduction">Introduction to FusionCharts AngularJS Directive</a></li>
               <li><a href="/using-with-javascript-libraries/angularjs/creating-charts-using-the-angular-fusioncharts-directive">Creating Charts Using the Angular-FusionCharts Directive</a></li>
@@ -642,7 +642,7 @@
               <li><a href="/using-with-javascript-libraries/angularjs/configuring-advanced-features-using-angularjs">Configuring Advanced Features Using AngularJS</a></li>
             </ul>
           </li>
-          <li><a>ReactJS</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>ReactJS<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/using-with-javascript-libraries/reactjs/introduction">Introduction to FusionCharts ReactJS Component</a></li>
               <li><a href="/using-with-javascript-libraries/reactjs/install-fusioncharts-reactjs-component-via-npm">Install FusionCharts ReactJS Component via NPM</a></li>
@@ -652,7 +652,7 @@
               <li><a href="/using-with-javascript-libraries/reactjs/including-interactivity-in-charts-using-reactjs">Including Interactivity in Charts Using ReactJS</a></li>
             </ul>
           </li>
-          <li><a>VueJS</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>VueJS<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/using-with-javascript-libraries/vuejs/introduction">Introduction to the FusionCharts VueJS Component</a></li>
               <li><a href="/using-with-javascript-libraries/vuejs/installing-the-fusioncharts-vuejs-component-via-npm">Installing the FusionCharts VueJS Component via NPM</a></li>
@@ -661,7 +661,7 @@
               <li><a href="/using-with-javascript-libraries/vuejs/including-interactivity-in-charts-using-vuejs">Including Interactivity in Charts Using VueJS</a></li>
             </ul>
           </li>
-          <li><a>Angular4</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+          <li><a>Angular4<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
             <ul>
               <li><a href="/using-with-javascript-libraries/angular4/introduction">Introduction to the FusionCharts Angular4 Component</a></li>
               <li><a href="/using-with-javascript-libraries/angular4/installing-the-fusioncharts-angular4-component-via-npm">Installing the FusionCharts Angular4 Component via NPM</a></li>
@@ -674,7 +674,7 @@
       </li>
     </ul>
   </li>
-  <li><i class="icon-help"></i><a>Help</a><i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i>
+  <li><i class="icon-help"></i><a>Help<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
     <ul>
       <li><a href="/tutorials-list">Tutorials</a></li>
       <li>Troubleshooting
