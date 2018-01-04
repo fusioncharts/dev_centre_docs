@@ -216,7 +216,7 @@
           </li>
         </ul>
       </li>
-      <li><a>Gauge & Widgets Guide</a>
+      <li><a>Gauge &amp; Widgets Guide</a>
         <ul>
           <li><a>Angular Gauge</a>
             <ul>
@@ -572,7 +572,7 @@
       <li><a href="/api/tutorials/get-svg-representation-of-a-chart">Get SVG Representation of a Chart</a></li>
     </ul>
   </li>
-  <li><i class="material-icons">directions</i><a>Integration with your stack</a>
+  <li><i class="icon-bookmark"></i><a>Integration with your stack</a>
     <ul>
       <li><a>Using with Server Side Languages</a>
         <ul>
