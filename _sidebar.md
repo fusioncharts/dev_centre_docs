@@ -686,6 +686,6 @@
   </li>
   <li><i class="icon-error"></i><a href="/">Error Handling</a></li>
   <li><i class="icon-widgets"></i><a href="/showcase">Showcase</a></li>
-  <li><i class="icon-help"></i><a href="/">FAQ</a></li>
+  <li class="divider-top"><i class="icon-help"></i><a href="/">FAQ</a></li>
   <li><i class="icon-device-hub"></i><a href="/">Changelog</a></li>
 </ul>
