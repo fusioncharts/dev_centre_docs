@@ -1,6 +1,6 @@
 <ul class="nav">
   <li><i class="icon-home"></i><a href="/">Home</a></li>
-  <li><i class="icon-home"></i><a>Demo</a>
+  <li><i class="icon-home"></i><a>Demo<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
     <ul class="nav-list master-nav">
 		  <li><a href="/demos/chart-gallery">Chart Gallery</a></li>
 		  <li><a href="/demos/dashboards">Business Dashboards</a></li>
