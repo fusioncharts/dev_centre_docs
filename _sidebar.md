@@ -692,8 +692,8 @@
       </li>
     </ul>
   </li>
-  <li><i class="icon-error"></i><a href="/">Error Handling</a></li>
+  <li><i class="icon-error"></i><a href="/error-handling">Error Handling</a></li>
   <li><i class="icon-widgets"></i><a href="/showcase">Showcase</a></li>
-  <li class="divider-top"><i class="icon-help"></i><a href="/">FAQ</a></li>
-  <li><i class="icon-device-hub"></i><a href="/">Changelog</a></li>
+  <li class="divider-top"><i class="icon-help"></i><a href="/faqs">FAQs</a></li>
+  <li><i class="icon-device-hub"></i><a href="/changelog.html">Changelog</a></li>
 </ul>
