@@ -7,6 +7,7 @@
 #### JavaScript Alias: maps/caymanislands
 
 
+<div class="code-wrapper">
 <ul class='code-tabs'>
     <li class='active'>
         <a data-toggle='new-json'>New JSON Format</a>
@@ -21,7 +22,7 @@
 <div class='tab-content'>
     <pre class='plain-code'></pre>
     <div class='tab new-json-tab active'>
-```javascript
+<pre><code class="language-javascript">
 {
     "map": {
         "showshadow": "0",
@@ -116,14 +117,14 @@
         ]
     }
 }
-```
+</code></pre>
 
 
 <p class='text-success'>{{ page.newJson }}</p>
 
     </div>
     <div class='tab old-json-tab'>
-```javascript
+<pre><code class="language-javascript">
 {
     "map": {
         "animation": "0",
@@ -231,14 +232,14 @@
         ]
     }
 }
-```
+</code></pre>
 
 
 <p class='text-success'>{{ page.oldJson }}</p>
 
     </div>
     <div class='tab old-xml-tab'>
-```html
+<pre><code class="language-html">
 <map animation="0" showshadow="0" showlabels="0" showmarkerlabels="1" fillcolor="F1f1f1" bordercolor="CCCCCC" basefont="Verdana" basefontsize="10" markerbordercolor="000000" markerbgcolor="FF5904" markerradius="6" legendposition="bottom" usehovercolor="0" showtooltip="0" showmarkertooltip="1" canvasbordercolor="375277" canvasborderalpha="40" >
   <data>
     <entity id="KY.BT" />
@@ -286,9 +287,10 @@
     </application>
   </markers>
 </map>
-```
+</code></pre>
 
 <p class='text-success'>{{ page.oldXml }}</p>
 
+</div>
 </div>
 </div>

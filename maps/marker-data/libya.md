@@ -7,6 +7,7 @@
 #### JavaScript Alias: maps/libya
 
 
+<div class="code-wrapper">
 <ul class='code-tabs'>
     <li class='active'>
         <a data-toggle='new-json'>New JSON Format</a>
@@ -21,7 +22,7 @@
 <div class='tab-content'>
     <pre class='plain-code'></pre>
     <div class='tab new-json-tab active'>
-```javascript
+<pre><code class="language-javascript">
 {
     "map": {
         "showshadow": "0",
@@ -217,14 +218,14 @@
         ]
     }
 }
-```
+</code></pre>
 
 
 <p class='text-success'>{{ page.newJson }}</p>
 
     </div>
     <div class='tab old-json-tab'>
-```javascript
+<pre><code class="language-javascript">
 {
     "map": {
         "animation": "0",
@@ -442,14 +443,14 @@
         ]
     }
 }
-```
+</code></pre>
 
 
 <p class='text-success'>{{ page.oldJson }}</p>
 
     </div>
     <div class='tab old-xml-tab'>
-```html
+<pre><code class="language-html">
 <map animation='0' showShadow='0' showLabels='0' showMarkerLabels='1' fillColor='F1f1f1' borderColor='999999' baseFont='Verdana' baseFontSize='10' markerBorderColor='000000' markerBgColor='' markerRadius='' legendPosition='bottom' useHoverColor='1' showMarkerToolTip='1'  >
 	<data>
 		<entity id='LY.AJ'  />
@@ -510,9 +511,10 @@
 		</application>
 	</markers>
 </map>
-```
+</code></pre>
 
 <p class='text-success'>{{ page.oldXml }}</p>
 
+</div>
 </div>
 </div>

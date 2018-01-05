@@ -7,6 +7,7 @@
 #### JavaScript Alias: maps/illinois
 
 
+<div class="code-wrapper">
 <ul class='code-tabs'>
     <li class='active'>
         <a data-toggle='new-json'>New JSON Format</a>
@@ -21,7 +22,7 @@
 <div class='tab-content'>
     <pre class='plain-code'></pre>
     <div class='tab new-json-tab active'>
-```javascript
+<pre><code class="language-javascript">
 {
     "map": {
         "showshadow": "0",
@@ -228,14 +229,14 @@
         ]
     }
 }
-```
+</code></pre>
 
 
 <p class='text-success'>{{ page.newJson }}</p>
 
     </div>
     <div class='tab old-json-tab'>
-```javascript
+<pre><code class="language-javascript">
 {
     "map": {},
     "markers": {
@@ -491,14 +492,14 @@
         ]
     }
 }
-```
+</code></pre>
 
 
 <p class='text-success'>{{ page.oldJson }}</p>
 
     </div>
     <div class='tab old-xml-tab'>
-```html
+<pre><code class="language-html">
 <map>
 	<markers>
 	    <shapes>
@@ -554,9 +555,10 @@
 		</application>
 	</markers>
 </map>
-```
+</code></pre>
 
 <p class='text-success'>{{ page.oldXml }}</p>
 
+</div>
 </div>
 </div>
