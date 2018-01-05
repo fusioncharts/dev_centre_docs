@@ -10,3 +10,6 @@ asdsad
 find
 
 .*{% embed_spec_map {"source": "([a-zA-Z0-9\-\.]+)".*\n
+
+
+.*highlight ([a-zA-Z0-9\.\-]*) lineanchors %}{% raw %}

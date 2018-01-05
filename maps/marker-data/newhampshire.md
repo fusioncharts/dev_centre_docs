@@ -21,7 +21,7 @@
 <div class='tab-content'>
     <pre class='plain-code'></pre>
     <div class='tab new-json-tab active'>
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "map": {
         "showshadow": "0",
@@ -217,14 +217,14 @@
         ]
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 
 <p class='text-success'>{{ page.newJson }}</p>
 
     </div>
     <div class='tab old-json-tab'>
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "map": {},
     "markers": {
@@ -466,14 +466,14 @@
         ]
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 
 <p class='text-success'>{{ page.oldJson }}</p>
 
     </div>
     <div class='tab old-xml-tab'>
-{% highlight html lineanchors %}{% raw %}
+```html
 <map>
 	<markers>
 	    <shapes>
@@ -527,7 +527,7 @@
 		</application>
 	</markers>
 </map>
-{% endraw %}{% endhighlight %}
+```
 
 <p class='text-success'>{{ page.oldXml }}</p>
 

@@ -21,7 +21,7 @@
 <div class='tab-content'>
     <pre class='plain-code'></pre>
     <div class='tab new-json-tab active'>
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "map": {
         "showshadow": "0",
@@ -116,14 +116,14 @@
         ]
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 
 <p class='text-success'>{{ page.newJson }}</p>
 
     </div>
     <div class='tab old-json-tab'>
-{% highlight javascript lineanchors %}{% raw %}
+```javascript
 {
     "map": {
         "animation": "0",
@@ -231,14 +231,14 @@
         ]
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 
 <p class='text-success'>{{ page.oldJson }}</p>
 
     </div>
     <div class='tab old-xml-tab'>
-{% highlight html lineanchors %}{% raw %}
+```html
 <map animation="0" showshadow="0" showlabels="0" showmarkerlabels="1" fillcolor="F1f1f1" bordercolor="CCCCCC" basefont="Verdana" basefontsize="10" markerbordercolor="000000" markerbgcolor="FF5904" markerradius="6" legendposition="bottom" usehovercolor="0" showtooltip="0" showmarkertooltip="1" canvasbordercolor="375277" canvasborderalpha="40" >
   <data>
     <entity id="KY.BT" />
@@ -286,7 +286,7 @@
     </application>
   </markers>
 </map>
-{% endraw %}{% endhighlight %}
+```
 
 <p class='text-success'>{{ page.oldXml }}</p>
 
