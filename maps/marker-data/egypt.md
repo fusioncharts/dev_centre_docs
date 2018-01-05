@@ -436,7 +436,7 @@
 </div>
 
 <div class='tab old-xml-tab'>
-<pre><code class="language-xml">
+<pre><code class="language-html">
 <map>
 	<markers>
 	    <shapes>
