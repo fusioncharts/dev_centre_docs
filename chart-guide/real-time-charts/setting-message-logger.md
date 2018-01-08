@@ -16,7 +16,7 @@ The message logger is essentially a scrollable text-based scrollable window that
 
 A simple message logger looks as shown in the image below:
 
-![image Message logger]({{ site.baseurl }}assets/images/advanced-charting-real-time-charts-setting-message-logger-image-1.png)
+![image Message logger](/assets/images/advanced-charting-real-time-charts-setting-message-logger-image-1.png)
 
 In the above image, we have a real-time column chart that monitors the footfalls at Bakersfield Central. Overlapping this chart is the message logger that contains messages that were streamed to the message logger by the server.
 
@@ -46,13 +46,13 @@ The FusionCharts Suite XT message logger has the following features:
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/setting-message-logger.html#setting-up-the-message-logger">Set up the message logger</a>
+* <a href="/chart-guide/real-time-charts/setting-message-logger#setting-up-the-message-logger" class="smoth-scroll">Set up the message logger</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/setting-message-logger.html#clearing-the-message-logger-from-the-server">Send real-time updates that can be streamed to the message logger</a>
+* <a href="/chart-guide/real-time-charts/setting-message-logger#clearing-the-message-logger-from-the-server" class="smoth-scroll">Send real-time updates that can be streamed to the message logger</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/setting-message-logger.html#handling-messages-in-javascript">Handle messages in JavaScript</a>
+* <a href="/chart-guide/real-time-charts/setting-message-logger#handling-messages-in-javascript" class="smoth-scroll">Handle messages in JavaScript</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/setting-message-logger.html#using-the-client-side-javascript-api">Use the client-side JavaScript API to manipulate the message logger</a>
+* <a href="/chart-guide/real-time-charts/setting-message-logger#using-the-client-side-javascript-api" class="smoth-scroll">Use the client-side JavaScript API to manipulate the message logger</a>
 
 ## Setting up the Message Logger
 
@@ -102,11 +102,11 @@ The context menu appears as a button in the bottom-left corner of the chart (you
 
 When the first message is streamed to the chart from server, the message logger is displayed as shown in the image below:
 
-![image alt text]({{ site.baseurl }}assets/images/advanced-charting-real-time-charts-setting-message-logger-image-2.png)
+![image alt text](/assets/images/advanced-charting-real-time-charts-setting-message-logger-image-2.png)
 
 A close button appears at the top-right corner of the message logger window that you can use to close the message logger. Or you can click anywhere outside the message logger window. To re-open the message logger, click the `Show Log` option from the context menu, as shown in the image below:
 
-![image alt text]({{ site.baseurl }}assets/images/advanced-charting-real-time-charts-setting-message-logger-image-3.png)
+![image alt text](/assets/images/advanced-charting-real-time-charts-setting-message-logger-image-3.png)
 
 Given below is a brief description of the attributes used to configure the functional and cosmetic properties of the message logger:
 
@@ -219,7 +219,7 @@ The `&msgTitle` and `&msgText` parameters are absorbed by the message logger. `&
 
 When a chart (with `useMessageLog` set to `1`) accepts this data stream, the message logger, as shown in the image below, is displayed:
 
-![image alt text]({{ site.baseurl }}assets/images/advanced-charting-real-time-charts-setting-message-logger-image-4.png)
+![image alt text](/assets/images/advanced-charting-real-time-charts-setting-message-logger-image-4.png)
 
 <p class="text-info">Note: If you are passing any special characters as part of your message text or title (like &, % etc.), you will need to URL Encode the text/title. </p>
 

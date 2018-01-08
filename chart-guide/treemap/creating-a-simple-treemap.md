@@ -8,7 +8,7 @@ chartPresent: true
 
 A treemap is useful when hierarchical information has to be analyzed. A treemap is created using 2D nested rectangles, which can be compared to gain insights from hierarchical information.
 
-<p class="text-info"> In order to render treemap chart, include fusioncharts.treemap.js in the project folder with rest of the .js files as mentioned [here]{% linkTo tutorials/getting-started/installation.md %}. </p>
+<p class="text-info"> In order to render treemap chart, include fusioncharts.treemap.js in the project folder with rest of the .js files as mentioned [here](/getting-started/installation). </p>
 
 A simple treemap is shown below:
 
@@ -18,7 +18,7 @@ This treemap compares the sales team's performance in the present year with thei
 
 When a rectangle is clicked, the clicked node and its subtree replaces the current root node. For example, when any rectangle (node) in the __Northern Region__ is clicked, the chart view changes to what is shown in the image below:
 
-![Treemap with Northern Region as the current node]({{ site.baseurl }}assets/images/chart-guide-treemap-chart-creating-a-simple-treemap-chart-image-6.jpg)
+![Treemap with Northern Region as the current node](/assets/images/chart-guide-treemap-chart-creating-a-simple-treemap-chart-image-6.jpg)
 
 <p class="text-info"> Click the rectangles in the treemap shown above and see how you can traverse through the leaf nodes. </p>
 
@@ -86,7 +86,7 @@ A gradient legend is a pane of blended colors derived from the `colorRange` defi
 
 A simple gradient legend looks as shown in the image below:
 
-![Gradient Legend]({{ site.baseurl }}assets/images/chart-guide-tree-map-chart-legend-options-image-1.jpg)
+![Gradient Legend](/assets/images/chart-guide-tree-map-chart-legend-options-image-1.jpg)
 
 Given below is a brief description of the attributes used to render the treemap with a gradient legend:
 
@@ -137,6 +137,6 @@ The gradient legend is interactive and allows filtering of nodes within a specif
 
 The sample treemap with the gradient legend set to show only those nodes that have values (assigned to the `sValue` attribute) between __-10__ and __10__ is shown in the image below. Notice that the nodes that don't fall in this bracket have been grayed out.
 
-![Showing/Hiding Data Values Using the Gradient Legend]({{ site.baseurl }}assets/images/chart-guide-treemap-chart-creating-a-simple-treemap-chart-image-7.jpg)
+![Showing/Hiding Data Values Using the Gradient Legend](/assets/images/chart-guide-treemap-chart-creating-a-simple-treemap-chart-image-7.jpg)
 
-Click [here]{% linkTo attrs.md chart=treemap %}{:target='_blank'} for the complete list of attributes supported by the treemap.
+Click [here](/chart-attributes?chart=treemap) for the complete list of attributes supported by the treemap.

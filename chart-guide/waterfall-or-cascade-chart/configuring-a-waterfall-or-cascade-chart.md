@@ -8,11 +8,11 @@ chartPresent: true
 
 FusionCharts Suite XT allows you to customize several cosmetic and functional properties for the waterfall chart. You can:
 
-* <a href="{{ site.baseurl }}chart-guide/waterfall-or-cascade-chart/configuring-a-waterfall-or-cascade-chart.html#customizing-colors-for-the-positive-and-negative-columns">Customize colors for the positive and negative columns</a>
+* <a href="/chart-guide/waterfall-or-cascade-chart/configuring-a-waterfall-or-cascade-chart#customizing-colors-for-the-positive-and-negative-columns" class="smoth-scroll">Customize colors for the positive and negative columns</a>
 
-* <a href="{{ site.baseurl }}chart-guide/waterfall-or-cascade-chart/configuring-a-waterfall-or-cascade-chart.html#showinghiding-sum-columns-on-the-chart">Show/hide cumulative, non-cumulative, and total sum columns on the chart</a>
+* <a href="/chart-guide/waterfall-or-cascade-chart/configuring-a-waterfall-or-cascade-chart#showinghiding-sum-columns-on-the-chart" class="smoth-scroll">Show/hide cumulative, non-cumulative, and total sum columns on the chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/waterfall-or-cascade-chart/configuring-a-waterfall-or-cascade-chart.html#customizing-connectors">Customize connectors</a>
+* <a href="/chart-guide/waterfall-or-cascade-chart/configuring-a-waterfall-or-cascade-chart#customizing-connectors" class="smoth-scroll">Customize connectors</a>
 
 ## Customizing Colors for the Positive and Negative Columns
 

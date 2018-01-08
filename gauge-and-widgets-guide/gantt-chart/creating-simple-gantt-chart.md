@@ -12,7 +12,7 @@ In this section, you will be shown how you can create a simple Gantt chart.
 
 As an example, you will be shown how to create a Gantt chart  that monitors the various processes and tasks involved in optimizing an organization's reach on the social media.
 
-<p class="text-info"> In order to render gantt chart, include fusioncharts.gantt.js in the project folder with rest of the .js files as mentioned [here]{% linkTo tutorials/getting-started/installation.md %}. </p>
+<p class="text-info"> In order to render gantt chart, include fusioncharts.gantt.js in the project folder with rest of the .js files as mentioned [here](/getting-started/installation). </p>
 
 A Gantt chart created to track the progress of a Social Media Optimization project looks like this:
 

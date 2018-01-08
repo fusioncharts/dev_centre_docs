@@ -10,9 +10,9 @@ FusionCharts Suite XT allows you to customize a drag-node chart in run-time - yo
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-editing-nodes.html#adding-a-node-at-run-time">Add a node at run-time</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-editing-nodes.html#editing-a-node-at-run-time">Edit a node at run-time</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-editing-nodes.html#deleting-a-node-at-run-time">Delete a node at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-editing-nodes#adding-a-node-at-run-time" class="smoth-scroll">Add a node at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-editing-nodes#editing-a-node-at-run-time" class="smoth-scroll">Edit a node at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-editing-nodes#deleting-a-node-at-run-time" class="smoth-scroll">Delete a node at run-time</a>
 
 To understand this, the sample chart that we will use looks like this:
 
@@ -26,15 +26,15 @@ To the above subway map chart, we will now add a new node.
 
 To add a node to:
 
-__Step 1__: From the bottom-left corner of the chart, click the ![image add-node-image-1]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-1.jpg) button. A menu is rendered.
+__Step 1__: From the bottom-left corner of the chart, click the ![image add-node-image-1](/assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-1.jpg) button. A menu is rendered.
 
 __Step 2__: From the menu, select __Add a node__.
 
-![image add-node-image-2]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-2.jpg)
+![image add-node-image-2](/assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-2.jpg)
 
 The node properties dialog box, as seen in the image below,  is shown:
 
-![image add-node-image-3]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-3.jpg)
+![image add-node-image-3](/assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-3.jpg)
 
 __Step 3__: In this dialog box, enter the node information.
 
@@ -148,11 +148,11 @@ This field will be visible only if the __Image__ check box is selected. </td>
 
 The image below shows the fields of the dialog box populated for a new node:
 
-![image add-node-image-4]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-4.jpg)
+![image add-node-image-4](/assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-4.jpg)
 
 Now, when the __Submit__ button is clicked, the new node created looks like this:
 
-![image add-node-image-5]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-5.jpg)
+![image add-node-image-5](/assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-5.jpg)
 
 <p class="text-info">You can define nodes in the chart data using the `data` object of the `dataset` object. </p>
 
@@ -182,11 +182,11 @@ __Step 3__: Click __Submit__.
 
 The image below shows the fields of the dialog box re-populated for the node we created above:
 
-![image add-node-image-6]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-6.jpg)
+![image add-node-image-6](/assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-6.jpg)
 
 Now, when the __Submit__ button is clicked, the edited node looks like this:
 
-![image add-node-image-7]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-7.jpg)
+![image add-node-image-7](/assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-7.jpg)
 
 ### Event Raised
 
@@ -208,7 +208,7 @@ __Step 1__: Press and hold the left mouse button on the node that you want to de
 
 __Step 2__: From the dialog box, click  __Delete__. The node is deleted.
 
-![image add-node-image-8]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-8.jpg)
+![image add-node-image-8](/assets/images/chart-guide-drag-node-chart-adding-and-editing-nodes-8.jpg)
 
 ### Event Raised
 
@@ -222,4 +222,4 @@ chartInstance.addEventListener('nodedeleted', function(e, a){
 });
 ```
 
-<p class="text-info">You can get the latest updated node positions using JavaScript or by [submitting the updated positions]{% linkTo tutorials/chart-guide/drag-node-chart/updating-chart-data-on-server.md %} to a server-side script.</p>
+<p class="text-info">You can get the latest updated node positions using JavaScript or by [submitting the updated positions](/chart-guide/drag-node-chart/updating-chart-data-on-server) to a server-side script.</p>

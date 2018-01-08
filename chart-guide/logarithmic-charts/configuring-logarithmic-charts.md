@@ -10,13 +10,13 @@ FusionCharts Suite XT allows you to configure the functional aspects of logarith
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/logarithmic-charts/configuring-logarithmic-charts.html#custom-selection-of-base">Custom select the base</a>
+* <a href="/chart-guide/logarithmic-charts/configuring-logarithmic-charts#custom-selection-of-base" class="smoth-scroll">Custom select the base</a>
 
-* <a href="{{ site.baseurl }}chart-guide/logarithmic-charts/configuring-logarithmic-charts.html#inverse-axis-support">Configure inverse axis support</a>
+* <a href="/chart-guide/logarithmic-charts/configuring-logarithmic-charts#inverse-axis-support" class="smoth-scroll">Configure inverse axis support</a>
 
-* <a href="{{ site.baseurl }}chart-guide/logarithmic-charts/configuring-logarithmic-charts.html#custom-selection-of-y-axis-lower-and-upper-limits">Custom select the y-axis upper and lower limits</a>
+* <a href="/chart-guide/logarithmic-charts/configuring-logarithmic-charts#custom-selection-of-y-axis-lower-and-upper-limits" class="smoth-scroll">Custom select the y-axis upper and lower limits</a>
 
-* <a href="{{ site.baseurl }}chart-guide/logarithmic-charts/configuring-logarithmic-charts.html#custom-selection-of-the-number-of-minor-divisional-lines">Custom select the number of minor divisional lines</a>
+* <a href="/chart-guide/logarithmic-charts/configuring-logarithmic-charts#custom-selection-of-the-number-of-minor-divisional-lines" class="smoth-scroll">Custom select the number of minor divisional lines</a>
 
 ## Custom Selection of Base
 

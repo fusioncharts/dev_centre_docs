@@ -10,9 +10,9 @@ You can load external logos at runtime to be displayed over the chart. The logos
 
 This section talks about:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/loading-external-logo.html#configuring-an-external-logo">Configuring an external logo</a>
+* <a href="/basic-chart-configurations/loading-external-logo#configuring-an-external-logo" class="smoth-scroll">Configuring an external logo</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/loading-external-logo.html#linking-logo-to-external-url">Linking the logo to an external URL</a>
+* <a href="/basic-chart-configurations/loading-external-logo#linking-logo-to-external-url" class="smoth-scroll">Linking the logo to an external URL</a>
 
 ## Configuring an external logo
 

@@ -12,11 +12,11 @@ By default, FusionCharts Suite XT automatically adds div lines based on the mini
 
 This article talks about:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/div-lines-and-grids.html#customizing-number-of-divisional-lines">Customizing number of divisional lines</a>
+* <a href="/basic-chart-configurations/div-lines-and-grids#customizing-number-of-divisional-lines" class="smoth-scroll">Customizing number of divisional lines</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/div-lines-and-grids.html#customizing-display-of-divisional-lines">Customizing display of divisional lines</a>
+* <a href="/basic-chart-configurations/div-lines-and-grids#customizing-display-of-divisional-lines" class="smoth-scroll">Customizing display of divisional lines</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/div-lines-and-grids.html#customizing-horizontal-grid-bands">Customizing horizontal grid bands</a>
+* <a href="/basic-chart-configurations/div-lines-and-grids#customizing-horizontal-grid-bands" class="smoth-scroll">Customizing horizontal grid bands</a>
 
 ## Customizing number of divisional lines
 

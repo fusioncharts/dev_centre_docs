@@ -8,11 +8,11 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT]{% linkTo tutorials/getting-started/building-your-first-chart.md %}
+* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
 
-* [Introduction to annotations]{% linkTo tutorials/advanced-charting/annotations/introduction.md %}
+* [Introduction to annotations](/advanced-charting/annotations/introduction)
 
-* [Creating simple annotations]{% linkTo tutorials/advanced-charting/annotations/creating-annotations/introduction.md %}
+* [Creating simple annotations](/advanced-charting/annotations/creating-annotations/introduction)
 
 The path annotation lets you draw free-form graphic elements on your charts.
 

@@ -8,19 +8,19 @@ chartPresent: true
 
 This article describes how annotations can be used in the following scenarios:
 
-* <a href="{{ site.baseurl }}advanced-chart-configurations/annotations/real-life-use-cases.html#adding-a-data-callout-label">Adding a data callout label</a>
+* <a href="/advanced-chart-configurations/annotations/real-life-use-cases#adding-a-data-callout-label" class="smoth-scroll">Adding a data callout label</a>
 
-* <a href="{{ site.baseurl }}advanced-chart-configurations/annotations/real-life-use-cases.html#providing-more-information-about-data-plots">Providing more information about the data plots</a>
+* <a href="/advanced-chart-configurations/annotations/real-life-use-cases#providing-more-information-about-data-plots" class="smoth-scroll">Providing more information about the data plots</a>
 
-* <a href="{{ site.baseurl }}advanced-chart-configurations/annotations/real-life-use-cases.html#customizing-the-y-axis">Customising Y Axis</a>
+* <a href="/advanced-chart-configurations/annotations/real-life-use-cases#customizing-the-y-axis" class="smoth-scroll">Customising Y Axis</a>
 
-* <a href="{{ site.baseurl }}advanced-chart-configurations/annotations/real-life-use-cases.html#adding-more-context-to-the-chart">Adding more context to the chart</a>
+* <a href="/advanced-chart-configurations/annotations/real-life-use-cases#adding-more-context-to-the-chart" class="smoth-scroll">Adding more context to the chart</a>
 
-* <a href="{{ site.baseurl }}advanced-chart-configurations/annotations/real-life-use-cases.html#annotation-images-for-better-visualization">Adding images for better visualization</a>
+* <a href="/advanced-chart-configurations/annotations/real-life-use-cases#annotation-images-for-better-visualization" class="smoth-scroll">Adding images for better visualization</a>
 
-* <a href="{{ site.baseurl }}advanced-chart-configurations/annotations/real-life-use-cases.html#events-triggering-display-of-annotation-items">Events triggering display of annotation items</a>
+* <a href="/advanced-chart-configurations/annotations/real-life-use-cases#events-triggering-display-of-annotation-items" class="smoth-scroll">Events triggering display of annotation items</a>
 
-* <a href="{{ site.baseurl }}advanced-chart-configurations/annotations/real-life-use-cases.html#creating-a-collaborative-dashboard">Creating a collaborative dashboard</a>
+* <a href="/advanced-chart-configurations/annotations/real-life-use-cases#creating-a-collaborative-dashboard" class="smoth-scroll">Creating a collaborative dashboard</a>
 
 ## Adding a Data Callout Label
 

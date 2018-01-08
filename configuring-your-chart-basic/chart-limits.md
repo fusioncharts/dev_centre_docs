@@ -12,15 +12,15 @@ The axis limits encompass all values present in the chart; no data value in the 
 
 This section will guide you on how you can configure the chart limits for single and dual y-axis charts. This section talks about:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/chart-limits.html#setting-chart-limits-explicitly">Setting chart limits explicitly</a>
+* <a href="/basic-chart-configurations/chart-limits#setting-chart-limits-explicitly" class="smoth-scroll">Setting chart limits explicitly</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/chart-limits.html#setting-y-axis-minimum-value-based-on-data-values">Setting y-axis minimum value based on data values</a>
+* <a href="/basic-chart-configurations/chart-limits#setting-y-axis-minimum-value-based-on-data-values" class="smoth-scroll">Setting y-axis minimum value based on data values</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/chart-limits.html#setting-axis-limits-for-charts-with-dual-y-axis">Setting axis limits for charts with dual y-axis</a>
+* <a href="/basic-chart-configurations/chart-limits#setting-axis-limits-for-charts-with-dual-y-axis" class="smoth-scroll">Setting axis limits for charts with dual y-axis</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/chart-limits.html#setting-same-axis-limits-for-primary-and-secondary-y-axes">Setting same axis limits for primary and secondary y-axes</a>
+* <a href="/basic-chart-configurations/chart-limits#setting-same-axis-limits-for-primary-and-secondary-y-axes" class="smoth-scroll">Setting same axis limits for primary and secondary y-axes</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/chart-limits.html#showing-or-hiding-y-axis-values">Showing or hiding y-axis values</a>
+* <a href="/basic-chart-configurations/chart-limits#showing-or-hiding-y-axis-values" class="smoth-scroll">Showing or hiding y-axis values</a>
 
 ## Setting chart limits explicitly
 

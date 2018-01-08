@@ -26,7 +26,7 @@ Shown here is a US map where each entity calls an external Google Maps API.
 
 Clicking on an entity opens up a pop up window with a full map of the state you clicked on.
 
-Instructions on building the base US map and the data used can be found [here]{% linkTo tutorials/getting-started/building-your-map.md %}
+Instructions on building the base US map and the data used can be found [here](/getting-started/building-your-map)
 
 Shown here is a snippet that configures the behaviour of the drill down as part of the entity.
 
@@ -380,7 +380,7 @@ Shown below is a World population density map. Clicking on the North America ent
 
 This is what we did in the above data structure
 
-* Created a World population density map as shown in {% linkTo tutorials/map-guide/customizing-your-map.md %} as the parent map and a descendant US map as shown in the {% linkTo tutorials/getting-started/building-your-map.md %} article.  Set the `link` attribute for the North America entity as `"newchart-json-NA"`. The `newchart` modifier specifies that this `link` is to open a new chart instance.
+* Created a World population density map as shown in (/map-guide/customizing-your-map) article.  Set the `link` attribute for the North America entity as `"newchart-json-NA"`. The `newchart` modifier specifies that this `link` is to open a new chart instance.
 
 * The `newchart` modifier is followed by a hyphen (-) and then the data format for the new chart is specified. Here it is set to `json`, whereas for the XML data, it is defined as `xml`. When using data URL method, you can specify `xmlurl` or `jsonurl` as its value.
 

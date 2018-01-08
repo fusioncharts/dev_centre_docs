@@ -10,9 +10,9 @@ A box and whisker chart is used to examine a given set of data and draw the stat
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/creating-box-and-whisker-chart.html#creating-a-simple-box-and-whisker-chart">Create a simple box and whisker chart</a>
+* <a href="/chart-guide/box-and-whisker-chart/creating-box-and-whisker-chart#creating-a-simple-box-and-whisker-chart" class="smoth-scroll">Create a simple box and whisker chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/creating-box-and-whisker-chart.html#legends-in-box-and-whisker-chart">Use legends in the box and whisker chart</a>
+* <a href="/chart-guide/box-and-whisker-chart/creating-box-and-whisker-chart#legends-in-box-and-whisker-chart" class="smoth-scroll">Use legends in the box and whisker chart</a>
 
 
 ## Creating a Simple Box and Whisker Chart

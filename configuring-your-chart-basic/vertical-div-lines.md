@@ -12,15 +12,15 @@ Vertical divisional (or div) lines are vertical lines running through the canvas
 
 The image below shows vertical div lines rendered in a line chart:
 
-![Configuring Your Chart - Vertical Div Lines]({{ site.baseurl }}assets/images/vertical_div_lines.png)
+![Configuring Your Chart - Vertical Div Lines](/assets/images/vertical_div_lines.png)
 
 This section talks about:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/vertical-div-lines.html#rendering-vertical-divisional-lines">Rendering vertical divisional lines</a>
+* <a href="/basic-chart-configurations/vertical-div-lines#rendering-vertical-divisional-lines" class="smoth-scroll">Rendering vertical divisional lines</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/vertical-div-lines.html#customizing-display-of-vertical-divisional-lines">Customizing display of vertical divisional lines</a>
+* <a href="/basic-chart-configurations/vertical-div-lines#customizing-display-of-vertical-divisional-lines" class="smoth-scroll">Customizing display of vertical divisional lines</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/vertical-div-lines.html#customizing-vertical-grid-bands">Customizing vertical grid bands</a>
+* <a href="/basic-chart-configurations/vertical-div-lines#customizing-vertical-grid-bands" class="smoth-scroll">Customizing vertical grid bands</a>
 
 ## Rendering vertical divisional lines
 

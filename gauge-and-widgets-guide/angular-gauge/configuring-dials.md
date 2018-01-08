@@ -10,21 +10,21 @@ FusionCharts Suite XT allows you to configure dials in angular gauges for severa
 
 In this section, with respect to dials, we will see how to:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#configuring-the-border-and-background-of-the-dial">Configure the border and background</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-dials#configuring-the-border-and-background-of-the-dial" class="smoth-scroll">Configure the border and background</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#configuring-the-radius-and-rear-extension">Configure the radius and rear extension</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-dials#configuring-the-radius-and-rear-extension" class="smoth-scroll">Configure the radius and rear extension</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#configuring-the-base-width-and-the-top-width">Configure the base width and top width</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-dials#configuring-the-base-width-and-the-top-width" class="smoth-scroll">Configure the base width and top width</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#configuring-hover-effects">Configure the hover effect</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-dials#configuring-hover-effects" class="smoth-scroll">Configure the hover effect</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#adding-custom-tool-text-for-the-dial">Add custom tool text</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-dials#adding-custom-tool-text-for-the-dial" class="smoth-scroll">Add custom tool text</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#adding-multiple-dials-on-the-gauge">Add multiple dials on the chart</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-dials#adding-multiple-dials-on-the-gauge" class="smoth-scroll">Add multiple dials on the chart</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#customizing-dial-values">Customize dial values</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-dials#customizing-dial-values" class="smoth-scroll">Customize dial values</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#updating-dials-using-id">Update dials using their ID</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-dials#updating-dials-using-id" class="smoth-scroll">Update dials using their ID</a>
 
 ## Configuring the Border and Background of the Dial
 
@@ -206,7 +206,7 @@ An angular gauge configured to update the tool-tip text for the dial in real-tim
 
 The above sample replaces the hard-coded value with the macro `$value`. Now, whenever someone will roll-over the dial, the current value of the dial will be displayed along with the text set in the tooltext attribute of dial element.
 
-For the complete understanding of the tooltip macros or a detail list of available macros please refer to [this]{% linkTo tutorials/configuring-your-chart-basic/tooltip-macros/introduction-to-tooltip-macros.md %} document.
+For the complete understanding of the tooltip macros or a detail list of available macros please refer to [this](/configuring-your-chart-basic/tooltip-macros/introduction-to-tooltip-macros) document.
 
 
 
@@ -336,4 +336,4 @@ Given below is a brief description of the attribute used to configure an ID for 
 </table>
 
 
-<p class="text-info">To learn how to create real-time angular gauges please refer to {% linkTo tutorials/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.md %} section.</p>
+<p class="text-info">To learn how to create real-time angular gauges please refer to (/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges) section.</p>

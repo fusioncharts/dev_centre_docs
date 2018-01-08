@@ -6,7 +6,7 @@ heading: Rendering Charts via npm
 chartPresent: true
 ---
 
-The [Installing via npm]{% linkTo tutorials/getting-started/installing-via-npm-and-bower/installing-via-npm.md %}{:target='_blank'} article was about how you can install the FusionCharts Suite XT version can be installed via the npm package manager.
+The [Installing via npm](/getting-started/installing-via-npm-and-bower/installing-via-npm) article was about how you can install FusionCharts Suite XT version via npm package manager.
 This section demonstrates rendering a chart via npm.
 
 Take a look at the column 2D chart shown below:

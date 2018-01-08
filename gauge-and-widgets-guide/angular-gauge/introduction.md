@@ -12,9 +12,9 @@ An angular (also called a meter or dial gauge) is used to display a specific dat
 
 In this section, you will be introduced to:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#a-simple-angular-gauge">A simple angular gauge</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/introduction#a-simple-angular-gauge" class="smoth-scroll">A simple angular gauge</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#elements-of-the-gauge">Elements of an angular gauge</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/introduction#elements-of-the-gauge" class="smoth-scroll">Elements of an angular gauge</a>
 
 ## A Simple Angular Gauge
 
@@ -28,17 +28,17 @@ As you can see in the example above, the gauge is created by defining the minimu
 
 An angular gauge consists of the following elements:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#color-range">Color range (radial scale)</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/introduction#color-range" class="smoth-scroll">Color range (radial scale)</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#dials-data-indicators">Dials (data value indicators)</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/introduction#dials-data-indicators" class="smoth-scroll">Dials (data value indicators)</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#tick-marks">Tick marks and values</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/introduction#tick-marks" class="smoth-scroll">Tick marks and values</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#tool-tips">Tool-tips</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/introduction#tool-tips" class="smoth-scroll">Tool-tips</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#trend-points--trend-arcs--trend-markers">Trend points, trend arcs, and trend markers</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/introduction#trend-points--trend-arcs--trend-markers" class="smoth-scroll">Trend points, trend arcs, and trend markers</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#annotations">Annotations</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/introduction#annotations" class="smoth-scroll">Annotations</a>
 
 We will see each of them in detail. Let’s first have a look at a standard angular gauge chart enlisting the various basic components:
 

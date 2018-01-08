@@ -10,13 +10,13 @@ chartPresent: true
 
 The FusionCharts ASP.NET wrapper lets you load data for a chart using:
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/asp-net/different-ways-of-loading-data.html#using-a-json-string">a JSON string generated from a 2D array</a>
+* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data#using-a-json-string" class="smoth-scroll">a JSON string generated from a 2D array</a>
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/asp-net/different-ways-of-loading-data.html#using-a-xml-string">an XML string generated from a 2D array</a>
+* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data#using-a-xml-string" class="smoth-scroll">an XML string generated from a 2D array</a>
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/asp-net/different-ways-of-loading-data.html#loading-json-data-from-a-file">JSON URL of a file that contains chart data</a>
+* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data#loading-json-data-from-a-file" class="smoth-scroll">JSON URL of a file that contains chart data</a>
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/asp-net/different-ways-of-loading-data.html#loading-xml-data-from-a-file">XML URL of a file that contains chart data</a>
+* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data#loading-xml-data-from-a-file" class="smoth-scroll">XML URL of a file that contains chart data</a>
 
 In this section, you will be shown how the ASP.NET wrapper uses each of these methods to generate charts.
 
@@ -400,7 +400,7 @@ The data structure that goes into the code behind **../ArrayExample/MultiSeriesJ
 
 </div>
 
-To know more about the attributes that you can configure for the multi-series line chart, visit [this page]{% linkTo attrs.md chart=msline %}.
+To know more about the attributes that you can configure for the multi-series line chart, visit [this page](/chart-attributes?chart=msline).
 
 ### Using a XML String
 
@@ -692,7 +692,7 @@ The data structure that goes into the code behind **../ArrayExample/CombinationX
 
 </div>
 
-To know more about the attributes that you can configure for the multi-series combination dual-y 2D chart, visit [this page]{% linkTo attrs.md chart=mscombidy2d %}.
+To know more about the attributes that you can configure for the multi-series combination dual-y 2D chart, visit [this page](/chart-attributes?chart=mscombidy2d).
 
 ## Loading Chart Data from a File
 
@@ -844,7 +844,7 @@ The data structure that goes into the code behind **../BasicExample/JSONURL.aspx
 </div>
 
 
-To know more about the attributes that you can configure for the column 3D chart, visit [this page]{% linkTo attrs.md chart=column3d %}.
+To know more about the attributes that you can configure for the column 3D chart, visit [this page](/chart-attributes?chart=column3d).
 
 ### Loading XML Data from a File
 
@@ -996,7 +996,7 @@ The data structure that goes into the code behind **../BasicExample/XMLURL.aspx.
 </div>
 
 
-To know more about the attributes that you can configure for the angular gauge, visit [this page]{% linkTo attrs.md chart=angulargauge %}.
+To know more about the attributes that you can configure for the angular gauge, visit [this page](/chart-attributes?chart=angulargauge).
 
 ## Important Tips for Developers
 
@@ -1010,7 +1010,7 @@ Given below are a few tips that, although applicable while using FusionCharts, n
   </tr>
   <tr>
 {% embed_data using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-5.js %}
-For an example, click [here]{% linkTo tutorials/chart-guide/standard-charts/creating-standard-charts.md %}.
+For an example, click [here](/chart-guide/standard-charts/creating-standard-charts).
     </td>
   </tr>
   <tr>
@@ -1018,7 +1018,7 @@ For an example, click [here]{% linkTo tutorials/chart-guide/standard-charts/crea
   </tr>
   <tr>
 {% embed_data using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-6.js %}
-For an example, click [here]{% linkTo tutorials/chart-guide/multi-series-charts/creating-multi-series-charts.md %}.
+For an example, click [here](/chart-guide/multi-series-charts/creating-multi-series-charts).
     </td>
   </tr>
 </table>

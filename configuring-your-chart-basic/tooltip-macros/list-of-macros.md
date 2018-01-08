@@ -8,7 +8,7 @@ chartPresent: true
 
 Prerequisites:
 
-* [Introduction to Tooltip Macros]{% linkTo tutorials/configuring-your-chart-basic/tooltip-macros/introduction-to-tooltip-macros.md %}{:target='_blank'}
+* [Introduction to Tooltip Macros](/configuring-your-chart-basic/tooltip-macros/introduction-to-tooltip-macros)
 
 <table>
 	<tr>

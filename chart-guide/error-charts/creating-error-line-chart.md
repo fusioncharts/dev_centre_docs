@@ -10,9 +10,9 @@ An error line chart is a conventional line chart with the ability to show error 
 
 In this section you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/error-charts/creating-error-line-chart.html#creating-a-simple-error-line-chart">Create a simple error line chart</a>
+* <a href="/chart-guide/error-charts/creating-error-line-chart#creating-a-simple-error-line-chart" class="smoth-scroll">Create a simple error line chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/error-charts/creating-error-line-chart.html#configuring-error-bars">Configure properties of error bars</a>
+* <a href="/chart-guide/error-charts/creating-error-line-chart#configuring-error-bars" class="smoth-scroll">Configure properties of error bars</a>
 
 ## Creating a Simple Error Line Chart
 

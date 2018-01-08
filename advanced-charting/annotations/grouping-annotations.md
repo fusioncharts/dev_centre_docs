@@ -8,11 +8,11 @@ chartPresent: true
 
 ## Prerequisites:
 
-* [Creating a simple chart using FusionCharts Suite XT]{% linkTo tutorials/getting-started/building-your-first-chart.md %}
+* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
 
-* [Introduction to Annotations]{% linkTo tutorials/advanced-charting/annotations/introduction.md %}
+* [Introduction to Annotations](/advanced-charting/annotations/introduction)
 
-* [Creating Annotations]{% linkTo tutorials/advanced-charting/annotations/creating-annotations/introduction.md %}
+* [Creating Annotations](/advanced-charting/annotations/creating-annotations/introduction)
 
 Annotation groups are a number of annotation items consolidated and configured together as one item. Grouping annotations is useful when there are multiple annotations on a chart and common properties have to be configured for all of them.
 

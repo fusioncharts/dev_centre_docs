@@ -10,9 +10,9 @@ FusionCharts Suite XT offers gauges that can be fed with real-time data periodic
 
 You can feed real-time data to a gauge in two ways:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges.html#using-javascript-api-methods">Using JavaScript API methods</a>
+* <a href="/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges#using-javascript-api-methods" class="smoth-scroll">Using JavaScript API methods</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges.html#using-server-side-scripts">Using server-side scripts</a>
+* <a href="/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges#using-server-side-scripts" class="smoth-scroll">Using server-side scripts</a>
 
 ## Using JavaScript API Methods
 

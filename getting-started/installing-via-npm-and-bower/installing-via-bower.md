@@ -66,7 +66,7 @@ This section talks about how the **fusioncharts** and the **fusionmaps** package
    <script src="bower_components/fusionmaps/fusioncharts.maps.js"></script>
    ```
    
-**Step 4**: Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;.js**, where **MAP_ALIAS** gets replaced by the map’s JavaScript alias. Click [here](http://www.fusioncharts.com/dev/getting-started/list-of-maps.html){:target='_blank'} to get the alias names for all map definition files. Map definition files for all maps to be rendered in the application have to be included. <br> <br> Therefore, assuming that you need to render the world map, the alias name __world__ replaces __MAP_ALIAS__ in the format.
+**Step 4**: Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;.js**, where **MAP_ALIAS** gets replaced by the map’s JavaScript alias. Click [here](http://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. Map definition files for all maps to be rendered in the application have to be included. <br> <br> Therefore, assuming that you need to render the world map, the alias name __world__ replaces __MAP_ALIAS__ in the format.
 
 ```javascript
   <script src="bower_components/fusionmaps/maps/fusioncharts.world.js"></script>
@@ -105,7 +105,7 @@ This section talks about how the **fusioncharts** and the **fusionmaps** package
 	<script src="bower_components/fusioncharts/fusioncharts.fusionwidgets.js"> </script>
 	```
 
-<p class="text-info"> To know which chart belongs to which package, refer the [list of charts](http://www.fusioncharts.com/dev/getting-started/list-of-charts.html){:target='_blank'}. </p>
+<p class="text-info"> To know which chart belongs to which package, refer the [list of charts](http://www.fusioncharts.com/dev/getting-started/list-of-charts.html). </p>
 
 - To render a map, load the FusionMaps module and the map definition file for that map:
 
@@ -114,7 +114,7 @@ This section talks about how the **fusioncharts** and the **fusionmaps** package
 <script src="bower_components/fusioncharts/maps/fusioncharts.world.js"> </script>
 	```
 
-<p class="text-info"> To know the map definition file names, refer the [list of maps](http://www.fusioncharts.com/dev/getting-started/list-of-maps.html){:target='_blank'}. </p>
+<p class="text-info"> To know the map definition file names, refer the [list of maps](http://www.fusioncharts.com/dev/getting-started/list-of-maps.html). </p>
 
 ## Chart-specific Dependencies for Bower
 

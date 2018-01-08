@@ -8,9 +8,9 @@ chartPresent: false
 
 ## Prerequisites
 
-* [Introduction to Themes]{% linkTo tutorials/advanced-charting/theme-manager/introduction-to-themes.md %}
-* [Applying Themes]{% linkTo tutorials/advanced-charting/theme-manager/applying-themes.md %}
-* [Basics of Theme Definition]{% linkTo tutorials/advanced-charting/theme-manager/basics-of-theme-definition.md %}
+* [Introduction to Themes](/advanced-charting/theme-manager/introduction-to-themes)
+* [Applying Themes](/advanced-charting/theme-manager/applying-themes)
+* [Basics of Theme Definition](/advanced-charting/theme-manager/basics-of-theme-definition)
 
 FusionCharts Suite XT is shipped with the following three predefined themes:
 
@@ -18,7 +18,7 @@ FusionCharts Suite XT is shipped with the following three predefined themes:
 * ocean
 * carbon
 
-You can choose a theme depending on your aesthetic requirements for the [charts, gauges, and maps](http://www.fusioncharts.com/charts/) in your application. Additionally, FusionCharts Suite XT gives you the option of [modifying existing themes]{% linkTo tutorials/advanced-charting/theme-manager/modifying-existing-themes.md %} or creating entirely new ones, if your requirements differ from what is already there.
+You can choose a theme depending on your aesthetic requirements for the [charts, gauges, and maps](http://www.fusioncharts.com/charts/) in your application. Additionally, FusionCharts Suite XT gives you the option of [modifying existing themes](/advanced-charting/theme-manager/modifying-existing-themes) or creating entirely new ones, if your requirements differ from what is already there.
 
 This article describes how you can create and register new themes using the FusionCharts API.
 
@@ -61,7 +61,7 @@ Determine the structure for each tier by mapping the attributes to be defined wi
 Based on the properties mentioned in the first table (the one that outlines the requirements for the theme sample), the table below lists the attributes that will be used to fulfil each requirement and the objects that the attributes belong to.
 
 <p class="text-info">
-Refer the [FusionCharts Suite XT Chart Attributes]{% linkTo attrs.md chart=area2d %} page for a complete understanding of the objects and attributes used to configure the charts, gauges, and maps.
+Refer the [FusionCharts Suite XT Chart Attributes](/chart-attributes?chart=area2d) page for a complete understanding of the objects and attributes used to configure the charts, gauges, and maps.
 </p>
 
 
@@ -187,7 +187,7 @@ FusionCharts.register(‘theme’, {
 ### Step 4:
 
 Use your theme!
-You can now [apply]{% linkTo tutorials/advanced-charting/theme-manager/applying-themes.md %} your new theme to the charts, gauges, and maps in your application using either the `theme` attribute of the `chart` object or the `setChartAttribute()` method of the FusionCharts API.
+You can now [apply](/advanced-charting/theme-manager/applying-themes) your new theme to the charts, gauges, and maps in your application using either the `theme` attribute of the `chart` object or the `setChartAttribute()` method of the FusionCharts API.
 
 ## Creating and Registering Multiple Themes
 If you need to create multiple new themes for your application, the advisable approach is to specify all theme definitions in the same file. That way, you will have to include only one __.js__ file in your application, instead of multiple files. The theme name, as the value of the `theme` attribute or as the parameter of the `setChartAttribute()` method, can then change depending on your requirement. 

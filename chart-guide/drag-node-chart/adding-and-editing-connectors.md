@@ -10,9 +10,9 @@ FusionCharts Suite XT allows you to customize a drag-node chart at run-time - yo
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-editing-connectors.html#adding-a-connector-at-run-time">Add a connector at run-time</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-editing-connectors.html#editing-a-connector-at-run-time">Edit a connector at run-time</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-editing-connectors.html#deleting-a-connector-at-run-time">Delete a connector at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-editing-connectors#adding-a-connector-at-run-time" class="smoth-scroll">Add a connector at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-editing-connectors#editing-a-connector-at-run-time" class="smoth-scroll">Edit a connector at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-editing-connectors#deleting-a-connector-at-run-time" class="smoth-scroll">Delete a connector at run-time</a>
 
 To understand this, the sample chart that we will use looks like this:
 
@@ -27,15 +27,15 @@ In the above chart, the "My Edited Location" node does not have any connectors c
 
 To add a connector:
 
-__Step 1__: From the bottom-left corner of the chart, click the ![Menu Button]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-1.jpg) button. A menu is rendered.
+__Step 1__: From the bottom-left corner of the chart, click the ![Menu Button](/assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-1.jpg) button. A menu is rendered.
 
 __Step 2__: From the menu, select __Add a Connector__.
 
-![Menu]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-2.jpg)
+![Menu](/assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-2.jpg)
 
 The connector properties dialog box, as seen in the image below,  is shown:
 
-![Connector Properties Dialog Box]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-3.jpg)
+![Connector Properties Dialog Box](/assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-3.jpg)
 
 __Step 3__: In this dialog box, enter the connector information.
 
@@ -111,11 +111,11 @@ Given below is a brief description of the fields in this dialog box:
 
 The image below shows the fields of the dialog box populated for a new connector:
 
-![Add Connector Dialog Box]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-4.jpg)
+![Add Connector Dialog Box](/assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-4.jpg)
 
 Now, when the __Submit__ button is clicked, the new connector created looks like this:
 
-![New Connector]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-5.jpg)
+![New Connector](/assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-5.jpg)
 
 <p class="text-info">You can define connectors in chart data too. Each connector line is defined in the data of the chart as an object in the `connectors` array element. </p>
 
@@ -146,11 +146,11 @@ __Step 3__: Click __Submit__.
 
 The image below shows the fields of the dialog box re-populated to edit the connector:
 
-![Edit Connector Dialog Box]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-6.jpg)
+![Edit Connector Dialog Box](/assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-6.jpg)
 
 The edited connector looks like this:
 
-![Connector After Edit]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-7.jpg)
+![Connector After Edit](/assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-7.jpg)
 
 ### Event Raised
 
@@ -173,7 +173,7 @@ __Step 1__: Press and hold the left mouse button on the connector to delete. The
 
 __Step 2__: From the dialog box, click __Delete__. The connector is deleted.
 
-![Delete Connector]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-8.jpg)
+![Delete Connector](/assets/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-8.jpg)
 
 ### Event Raised
 
@@ -188,4 +188,4 @@ chartInstance.addEventListener('connectordeleted', function(e, a) {
 
 ```
 
-<p class="text-info">You can get the latest updated node and connector positions using JavaScript or by [submitting the updated positions]{% linkTo tutorials/chart-guide/drag-node-chart/updating-chart-data-on-server.md %} to a server-side script.</p>
+<p class="text-info">You can get the latest updated node and connector positions using JavaScript or by [submitting the updated positions](/chart-guide/drag-node-chart/updating-chart-data-on-server) to a server-side script.</p>

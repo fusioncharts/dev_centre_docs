@@ -10,13 +10,13 @@ FusionCharts Suite XT allows you to customize the appearance of standard charts.
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/standard-charts/configuring-standard-charts.html#plotting-trend-elements-on-a-standard-chart">Plot trend elements on a standard chart</a>
+* <a href="/chart-guide/standard-charts/configuring-standard-charts#plotting-trend-elements-on-a-standard-chart" class="smoth-scroll">Plot trend elements on a standard chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/standard-charts/configuring-standard-charts.html#plotting-vertical-line-elements">Plot vertical line elements</a>
+* <a href="/chart-guide/standard-charts/configuring-standard-charts#plotting-vertical-line-elements" class="smoth-scroll">Plot vertical line elements</a>
 
-* <a href="{{ site.baseurl }}chart-guide/standard-charts/configuring-standard-charts.html#changing-chart-type">Change the chart type dynamically</a>
+* <a href="/chart-guide/standard-charts/configuring-standard-charts#changing-chart-type" class="smoth-scroll">Change the chart type dynamically</a>
 
-* <a href="{{ site.baseurl }}chart-guide/standard-charts/configuring-standard-charts.html#set-data-skipping">Set Data Skipping</a>
+* <a href="/chart-guide/standard-charts/configuring-standard-charts#set-data-skipping" class="smoth-scroll">Set Data Skipping</a>
 
 
 ## Plotting Trend Elements on a Standard Chart
@@ -75,7 +75,7 @@ Given below is a brief description of the attribute specific to a trend-zone:
   </tr>
 </table>
 
-FusionCharts Suite XT includes several options to customize trend elements. To know more, click [here]{% linkTo tutorials/configuring-your-chart-basic/trend-lines-and-zones.md %}.
+FusionCharts Suite XT includes several options to customize trend elements. To know more, click [here](/configuring-your-chart-basic/trend-lines-and-zones).
 
 ## Plotting Vertical Line Elements
 
@@ -106,7 +106,7 @@ Given below is a brief description of the attributes used to render a vertical l
   </tr>
 </table>
 
-FusionCharts Suite XT includes several options to customize vertical line elements. To know more, click [here]{% linkTo tutorials/configuring-your-chart-basic/vertical-lines.md %}.
+FusionCharts Suite XT includes several options to customize vertical line elements. To know more, click [here](/configuring-your-chart-basic/vertical-lines).
 
 ## Changing Chart Type
 
@@ -125,7 +125,7 @@ What if you want to render 10000 data points in a single series chart with a dim
 
 An example of an area chart rendered with `30000` data looks like as shown below:
 
-{% embed_all chart-guide-standard-charts-configuring-standard-charts-example-5.js %}
+{% embed_chart chart-guide-standard-charts-configuring-standard-charts-example-5.js %}
 
 The above chart gives a clear idea on how frequently the new trips are availed. The chart shows the data updated every hour.
 

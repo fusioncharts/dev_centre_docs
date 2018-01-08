@@ -8,13 +8,13 @@ chartPresent: true
 
 ## Prerequisites:
 
-* [Creating a simple chart using the FusionCharts Suite XT]{% linkTo tutorials/getting-started/building-your-first-chart.md %}
+* [Creating a simple chart using the FusionCharts Suite XT](/getting-started/building-your-first-chart)
 
-* [Introduction to Annotations]{% linkTo tutorials/advanced-charting/annotations/introduction.md %}
+* [Introduction to Annotations](/advanced-charting/annotations/introduction)
 
-* [Creating Annotations]{% linkTo tutorials/advanced-charting/annotations/creating-annotations/introduction.md %}
+* [Creating Annotations](/advanced-charting/annotations/creating-annotations/introduction)
 
-* [Grouping Annotations]{% linkTo tutorials/advanced-charting/annotations/grouping-annotations.md %}
+* [Grouping Annotations](/advanced-charting/annotations/grouping-annotations)
 
 FusionCharts Suite XT lets you capture events for the annotations rendered on your charts and perform a corresponding action. Events let you tap user interactions with annotations such as clicking an annotation, hovering over an annotation and so on.
 

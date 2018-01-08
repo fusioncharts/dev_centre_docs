@@ -6,7 +6,7 @@ heading: Rendering Charts via Bower
 chartPresent: true
 ---
 
-The [Installing via Bower]{% linkTo tutorials/getting-started/installing-via-npm-and-bower/installing-via-bower.md %}{:target='_blank'} article was about how you can install the FusionCharts Suite XT version can be installed via the Bower package manager.
+The [Installing via Bower](/getting-started/installing-via-npm-and-bower/installing-via-bower) article was about how you can install FusionCharts Suite XT version via Bower package manager.
 This section demonstrates rendering a chart via Bower.
 
 Take a look at the column 2D chart shown below:

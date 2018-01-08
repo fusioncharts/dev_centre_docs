@@ -10,15 +10,15 @@ The angular gauge is a real-time chart, which can continuously request new data 
 
 In this section, you will learn how to:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html#understanding-data-streaming-and-the-various-methods-for-data-streaming">Understand and use the various methods available for data streaming</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges#understanding-data-streaming-and-the-various-methods-for-data-streaming" class="smoth-scroll">Understand and use the various methods available for data streaming</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html#building-an-example-of-a-real-time-gauge-that-streams-data-from-an-url">Build an example of a real-time gauge that can stream data from an URL</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges#building-an-example-of-a-real-time-gauge-that-streams-data-from-an-url" class="smoth-scroll">Build an example of a real-time gauge that can stream data from an URL</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html#using-the-javascript-api-to-update-the-gauge">Use the JavaScript API to update the gauge</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges#using-the-javascript-api-to-update-the-gauge" class="smoth-scroll">Use the JavaScript API to update the gauge</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html#configuring-events-associated-with-real-time-updates">Configure events associated with real-time updates</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges#configuring-events-associated-with-real-time-updates" class="smoth-scroll">Configure events associated with real-time updates</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html#troubleshooting">Troubleshoot real-time gauges</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges#troubleshooting" class="smoth-scroll">Troubleshoot real-time gauges</a>
 
 ## Understanding Data Streaming and the Various Methods for Data Streaming
 
@@ -117,7 +117,7 @@ Given below is a brief description of the attributes used to configure real-time
   </tr>
   <tr>
     <td>`dataStamp`</td>
-    <td>Constantly changing data stamp that can be added to the real-time data URL, so as to maintain a state. Data stamp is basically a token of information that is passed with each update to the chart and back to the server, which helps to easily identify the last data sent to the gauge. For more information, read the {% linkTo tutorials/chart-guide/real-time-charts/adding-data-stamp.md %} article.</td>
+    <td>Constantly changing data stamp that can be added to the real-time data URL, so as to maintain a state. Data stamp is basically a token of information that is passed with each update to the chart and back to the server, which helps to easily identify the last data sent to the gauge. For more information, read the (/chart-guide/real-time-charts/adding-data-stamp) article.</td>
   </tr>
 </table>
 

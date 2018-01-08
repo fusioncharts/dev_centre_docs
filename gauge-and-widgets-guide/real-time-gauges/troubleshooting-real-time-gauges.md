@@ -6,7 +6,7 @@ heading: Troubleshooting Real-time Gauges
 chartPresent: false
 ---
 
-Real time gauges are useful when you have to monitor the current value without considering historical values. The article [Setting up Real Time Gauges]{% linkTo tutorials/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges.md %} describes how gauges can be set to update in real time.
+Real time gauges are useful when you have to monitor the current value without considering historical values. The article [Setting up Real Time Gauges](/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges) describes how gauges can be set to update in real time.
 
 Here are a few problems that might come up with real time gauges, and the possible solutions:
 
@@ -14,7 +14,7 @@ Here are a few problems that might come up with real time gauges, and the possib
 
 If the real-time gauge is set up to receive data from the server and the gauge renders initially but does not update subsequently, ensure that:
 
-* you have specified a valid path for the [`dataStreamURL`]{% linkTo tutorials/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges.md %}  attribute
+* you have specified a valid path for the [`dataStreamURL`](/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges)  attribute
 
 * if the URL has special characters like `?` or `&`,  then URL-encode the `dataStreamURL`
 
@@ -36,4 +36,4 @@ When accessing any of the JavaScript API methods, if you get an error ` .. is no
 
 * you are not rendering the gauge from the local file system (C:\ , D:). Instead, run it from a server (localhost - IIS or Apache) as the default security settings do not allow JavaScript interactions on the local file system, unless explicitly set.
 
-For information on using the FusionCharts Suite XT Debugger, refer the article {% linkTo tutorials/troubleshooting/debugger.md %}.
+For information on using the FusionCharts Suite XT Debugger, refer the article (/troubleshooting/debugger).

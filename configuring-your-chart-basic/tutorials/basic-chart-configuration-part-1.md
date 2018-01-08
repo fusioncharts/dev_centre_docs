@@ -6,7 +6,7 @@ heading: Basic Chart Configuration(Part-1)
 chartPresent: true
 ---
 
-FusionCharts Suite XT allows you to configure the border, chart background and the data plots present in the chart. This is the first article in a 2-part series where we cover how to configure chart properties. First article covers configuration of charts' appearance via properties while second part digs into usage of FusionCharts API to have the same effect. You can <a href="{{ site.baseurl }}basic-chart-configurations/tutorials/basic-chart-configuration-part-2.html" target="_blank">check out part-2 here</a>.
+FusionCharts Suite XT allows you to configure the border, chart background and the data plots present in the chart. This is the first article in a 2-part series where we cover how to configure chart properties. First article covers configuration of charts' appearance via properties while second part digs into usage of FusionCharts API to have the same effect. You can <a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-2.html" target="_blank">check out part-2 here</a>.
 
 Digesting huge amount of data in the form of numbers is very hard without visualizing the same. Charts are one of the ways of visualizing such huge numbers. We provide a huge library to visualize the data in form of charts and maps.
 
@@ -19,11 +19,11 @@ Charts can be made more interesting and visually appealing by modifying their bo
 
 In this article we will show you how to beautify your charts by modifying:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/tutorials/basic-chart-configuration-part-1.html#changing-background-and-border-of-complete-area-of-chart">Border and background of the complete area of the chart</a>
+* <a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-1#changing-background-and-border-of-complete-area-of-chart" class="smoth-scroll">Border and background of the complete area of the chart</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/tutorials/basic-chart-configuration-part-1.html#changing-the-border-and-background-of-the-canvas">Border and background of the data plot area (which is called canvas)</a>
+* <a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-1#changing-the-border-and-background-of-the-canvas" class="smoth-scroll">Border and background of the data plot area (which is called canvas)</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/tutorials/basic-chart-configuration-part-1.html#customising-the-columns-of-the-chart">Border and background of the columns in a column chart</a>
+* <a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-1#customising-the-columns-of-the-chart" class="smoth-scroll">Border and background of the columns in a column chart</a>
 
 
 To illustrate the above features we would take the following scenario: plotting the variation of price of petrol in Bangalore in the last 6 months.
@@ -368,4 +368,4 @@ Click <a href="http://jsfiddle.net/2r4732wj/7/" target="_blank">here</a> to view
 
 One can notice the difference in the format of the dash of the border between the second column and other columns above.
 
-This article was about configuring chart properties statically. In the <a href="{{ site.baseurl }}basic-chart-configurations/tutorials/basic-chart-configuration-tutorials-2.html" target="_blank">next part(part-2)</a> we will see how to use FusionCharts API to achieve the same results at runtime (dynamically).
+This article was about configuring chart properties statically. In the <a href="/basic-chart-configurations/tutorials/basic-chart-configuration-tutorials-2.html" target="_blank">next part(part-2)</a> we will see how to use FusionCharts API to achieve the same results at runtime (dynamically).

@@ -8,21 +8,21 @@ chartPresent: true
 
 A chart's background refers to the whole area on which a chart is drawn. The background of the chart is enclosed by a chart border. The chart border is a rectangle around the chart background.
 
-![Border and Background]({{ site.baseurl }}assets/images/border-and-background.png)
+![Border and Background](/assets/images/border-and-background.png)
 
 This article will show you how to configure your charts with respect to its border and background. It will explain a few attributes that control the behaviour of the chart border and background.
 
 This section is divided into the following parts:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/border-and-background.html#customizing-chart-borders">Customizing chart border</a>
+* <a href="/basic-chart-configurations/border-and-background#customizing-chart-borders" class="smoth-scroll">Customizing chart border</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/border-and-background.html#customizing-chart-background">Customizing chart background</a>
+* <a href="/basic-chart-configurations/border-and-background#customizing-chart-background" class="smoth-scroll">Customizing chart background</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/border-and-background.html#using-gradient-fill-for-the-background">Using gradient fill for the background</a>
+* <a href="/basic-chart-configurations/border-and-background#using-gradient-fill-for-the-background" class="smoth-scroll">Using gradient fill for the background</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/border-and-background.html#using-an-external-image-as-chart-background">Using an external image as the background</a>
+* <a href="/basic-chart-configurations/border-and-background#using-an-external-image-as-chart-background" class="smoth-scroll">Using an external image as the background</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/border-and-background.html#customizing-the-background-image">Customizing background image</a>
+* <a href="/basic-chart-configurations/border-and-background#customizing-the-background-image" class="smoth-scroll">Customizing background image</a>
 
 ## Customizing chart borders
 

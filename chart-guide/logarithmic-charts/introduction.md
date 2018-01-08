@@ -10,11 +10,11 @@ Logarithmic charts are similar to normal charts except for the fact that logarit
 
 In this section, you will be introduced to the:
 
-* <a href="{{ site.baseurl }}chart-guide/logarithmic-charts/introduction.html#basics-of-logarithmic-charts">Basics of logarithmic charts</a>
+* <a href="/chart-guide/logarithmic-charts/introduction#basics-of-logarithmic-charts" class="smoth-scroll">Basics of logarithmic charts</a>
 
-* <a href="{{ site.baseurl }}chart-guide/logarithmic-charts/introduction.html#types-of-logarithmic-charts">Types of logarithmic charts</a>
+* <a href="/chart-guide/logarithmic-charts/introduction#types-of-logarithmic-charts" class="smoth-scroll">Types of logarithmic charts</a>
 
-* <a href="{{ site.baseurl }}chart-guide/logarithmic-charts/introduction.html#features-of-logarithmic-charts">Features of logarithmic charts</a>
+* <a href="/chart-guide/logarithmic-charts/introduction#features-of-logarithmic-charts" class="smoth-scroll">Features of logarithmic charts</a>
 
 ## Basics of Logarithmic Charts
 

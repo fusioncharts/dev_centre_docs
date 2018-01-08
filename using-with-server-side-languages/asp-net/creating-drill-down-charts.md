@@ -157,4 +157,4 @@ The data structure that goes into the code behind **../DrillDownExample/Default.
 </div>
 
 
-<p class="text-info"> To read on how drill-down charts are created, click [here]{% linkTo tutorials/advanced-charting/drill-down/simple-drill-down.md %}. </p>
+<p class="text-info"> To read on how drill-down charts are created, click [here](/advanced-charting/drill-down/simple-drill-down). </p>

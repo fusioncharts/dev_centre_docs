@@ -12,21 +12,21 @@ Trend lines are customizable reference horizontal or vertical lines which aid in
 
 This section talks about:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/trend-lines-and-zones.html#adding-tool-text-to-a-trend-line">Adding tool-text to a trend line</a>
+* <a href="/basic-chart-configurations/trend-lines-and-zones#adding-tool-text-to-a-trend-line" class="smoth-scroll">Adding tool-text to a trend line</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/trend-lines-and-zones.html#adding-trend-zones">Adding trend zones</a>
+* <a href="/basic-chart-configurations/trend-lines-and-zones#adding-trend-zones" class="smoth-scroll">Adding trend zones</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/trend-lines-and-zones.html#customizing-trend-lines-and-trend-zones">Customizing trend lines and trend zones</a>
+* <a href="/basic-chart-configurations/trend-lines-and-zones#customizing-trend-lines-and-trend-zones" class="smoth-scroll">Customizing trend lines and trend zones</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/trend-lines-and-zones.html#customizing-the-trend-line-display-value-text">Customizing trend-line display value text</a>
+* <a href="/basic-chart-configurations/trend-lines-and-zones#customizing-the-trend-line-display-value-text" class="smoth-scroll">Customizing trend-line display value text</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/trend-lines-and-zones.html#adding-dashed-trend-lines">Adding dashed trend lines</a>
+* <a href="/basic-chart-configurations/trend-lines-and-zones#adding-dashed-trend-lines" class="smoth-scroll">Adding dashed trend lines</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/trend-lines-and-zones.html#adding-slanted-trendlines">Adding slanted trend lines</a>
+* <a href="/basic-chart-configurations/trend-lines-and-zones#adding-slanted-trendlines" class="smoth-scroll">Adding slanted trend lines</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/trend-lines-and-zones.html#configuring-the-trend-line-label">Configuring the trend line label</a>
+* <a href="/basic-chart-configurations/trend-lines-and-zones#configuring-the-trend-line-label" class="smoth-scroll">Configuring the trend line label</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/trend-lines-and-zones.html#adding-trendlines-for-a-dual-y-axis-chart">Adding trend lines in a dual y-axis chart</a>
+* <a href="/basic-chart-configurations/trend-lines-and-zones#adding-trendlines-for-a-dual-y-axis-chart" class="smoth-scroll">Adding trend lines in a dual y-axis chart</a>
 
 ## Adding tool-text to a trend line
 

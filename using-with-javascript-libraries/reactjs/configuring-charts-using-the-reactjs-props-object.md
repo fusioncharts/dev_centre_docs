@@ -8,23 +8,23 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT]{% linkTo tutorials/getting-started/building-your-first-chart.md %}{:target='_blank'}
+* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
 
-* [Installing the React-FusionCharts Component]{% linkTo tutorials/using-with-javascript-libraries/reactjs/introduction.md %}{:target='_blank'}
+* [Installing the React-FusionCharts Component](/using-with-javascript-libraries/reactjs/introduction)
 
-* [Installing the React-FusionCharts Component via NPM]{% linkTo tutorials/using-with-javascript-libraries/reactjs/install-fusioncharts-reactjs-component-via-npm.md %}{:target='_blank'}
+* [Installing the React-FusionCharts Component via NPM](/using-with-javascript-libraries/reactjs/install-fusioncharts-reactjs-component-via-npm)
 
-* [Creating Charts Using the React-FusionCharts Component]{% linkTo tutorials/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component.md %}{:target='_blank'}
+* [Creating Charts Using the React-FusionCharts Component](/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component)
 
 Once a chart is created using the React-FusionCharts component, the props object (that contains the data source or the object being used as the data source) can be used to update chart data before the `ReactDOM.render()` method is called.
 
 This articles describes how you can use the props object to:
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object.html#updating-chart-data">Update chart data</a>
+* <a href="/using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object#updating-chart-data" class="smoth-scroll">Update chart data</a>
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object.html#updating-chart-attributes">Update chart attributes</a>
+* <a href="/using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object#updating-chart-attributes" class="smoth-scroll">Update chart attributes</a>
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object.html#triggering-events-using-the-props-object">Trigger events from props</a>
+* <a href="/using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object#triggering-events-using-the-props-object" class="smoth-scroll">Trigger events from props</a>
 
 ## Updating Chart Data
 
@@ -276,12 +276,12 @@ ReactDOM.render(
 ```
 
 <p class="text-info">
-For a list of other attributes that you can configure for a column 2D chart, click [here]{% linkTo attrs.md chart=column2d %}{:target='_blank'}.
+For a list of other attributes that you can configure for a column 2D chart, click [here](/chart-attributes?chart=column2d).
 </p>
 
 ## Triggering Events Using the Props Object
 
-A column 2D chart, configured to listen to the [dataplotClick]{% linkTo FusionCharts.events.dataplotClick %}{:target='_blank'} event, is shown below (click a a data plot to trigger the event) :
+A column 2D chart, configured to listen to the [dataplotClick]{% linkTo FusionCharts.events.dataplotClick %} event, is shown below (click a a data plot to trigger the event) :
 
 {% embed_chart using-with-javascript-libraries-reactjs-configuring-charts-using-the-reactjs-props-object-example-3.js %}
 

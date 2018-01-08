@@ -10,11 +10,11 @@ Spark charts are data-intensive, design-simple, word-sized graphics charts for e
 
 In this section, you will be introduced to the:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/introduction.html#basics-of-spark-charts">Basics of spark charts</a>
+* <a href="/gauge-and-widgets-guide/spark-charts/introduction#basics-of-spark-charts" class="smoth-scroll">Basics of spark charts</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/introduction.html#types-of-spark-charts">Types of spark charts</a>
+* <a href="/gauge-and-widgets-guide/spark-charts/introduction#types-of-spark-charts" class="smoth-scroll">Types of spark charts</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/introduction.html#salient-features">Features of spark charts</a>
+* <a href="/gauge-and-widgets-guide/spark-charts/introduction#salient-features" class="smoth-scroll">Features of spark charts</a>
 
 ## Basics of Spark Charts
 

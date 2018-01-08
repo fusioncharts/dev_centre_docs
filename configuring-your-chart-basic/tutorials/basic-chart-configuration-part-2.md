@@ -6,7 +6,7 @@ heading: Basic Chart Configuration(Part-2)
 chartPresent: true
 ---
 
-This is the second article in a 2-part series where we cover how to configure chart properties. First article covers configuration of charts' appearance via properties while second part digs into usage of FusionCharts API to have the same effect. You can <a href="{{ site.baseurl }}basic-chart-configurations/tutorials/basic-chart-configuration-part-1.html" target="_blank">check out part-1 here</a>.
+This is the second article in a 2-part series where we cover how to configure chart properties. First article covers configuration of charts' appearance via properties while second part digs into usage of FusionCharts API to have the same effect. You can <a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-1.html" target="_blank">check out part-1 here</a>.
 
 In first-part we saw how to modify the appearance of the chart using the chart properties. In this article we will see how to make use of the APIs exposed by FusionCharts to set values for these properties dynamically.
 

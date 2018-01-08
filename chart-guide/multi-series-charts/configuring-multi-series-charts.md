@@ -10,9 +10,9 @@ FusionCharts Suite XT allows you to customize the appearance of multi-series cha
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/multi-series-charts/configuring-multi-series-charts.html#plotting-trend-elements">Plot trend elements</a>
+* <a href="/chart-guide/multi-series-charts/configuring-multi-series-charts#plotting-trend-elements" class="smoth-scroll">Plot trend elements</a>
 
-* <a href="{{ site.baseurl }}chart-guide/multi-series-charts/configuring-multi-series-charts.html#plotting-vertical-line-elements">Plot vertical line elements</a>
+* <a href="/chart-guide/multi-series-charts/configuring-multi-series-charts#plotting-vertical-line-elements" class="smoth-scroll">Plot vertical line elements</a>
 
 ## Plotting Trend Elements
 
@@ -64,7 +64,7 @@ Given below is a brief description of the attribute that is specific to renderin
 </table>
 
 
-FusionCharts Suite XT includes several options to customize trend elements. To know more, click [here]{% linkTo tutorials/configuring-your-chart-basic/trend-lines-and-zones.md %}.
+FusionCharts Suite XT includes several options to customize trend elements. To know more, click [here](/configuring-your-chart-basic/trend-lines-and-zones).
 
 ## Plotting Vertical Line Elements
 
@@ -92,4 +92,4 @@ Given below is a brief description of the attributes used to render a vertical l
 </table>
 
 
-FusionCharts Suite XT includes several options to customize vertical line elements. To know more, click [here]{% linkTo tutorials/configuring-your-chart-basic/vertical-lines.md %}.
+FusionCharts Suite XT includes several options to customize vertical line elements. To know more, click [here](/configuring-your-chart-basic/vertical-lines).

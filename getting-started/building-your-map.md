@@ -35,15 +35,15 @@ Maps in FusionCharts Suite XT are provided as part of FusionMaps XT. FusionMaps 
 
 Let's now get to building the map. There are 5 simple steps to building a map using FusionCharts Suite XT:
 
-1. [Installing FusionCharts Suite XT for your application](getting-started/building-your-map?id=installing-fusioncharts-suite-xt-for-your-application)
-2. [Converting your data to a JSON or XML format](/getting-started/building-your-map?id=converting-your-data-to-fusioncharts-suite-xt-jsonxml-format)
-3. [Including the FusionCharts Suite XT JavaScript library in your HTML page](/getting-started/building-your-map?id=including-fusioncharts-suite-xt-library-in-your-page)
-4. [Creating a container &lt;div&gt; for the map](/getting-started/building-your-map?id=creating-a-container-for-your-map-in-the-web-page)
-5. [Using the new `FusionCharts()` constructor to create the map instance, and then calling the `render()` method](/getting-started/building-your-map?id=creating-an-instance)
+1. <a href="/getting-started/building-your-map#installing-fusioncharts-suite-xt-for-your-application" class="smoth-scroll">Installing FusionCharts Suite XT for your application</a>
+2. <a href="/getting-started/building-your-map#converting-your-data-to-fusioncharts-suite-xt-jsonxml-format" class="smoth-scroll">Converting your data to a JSON or XML format</a>
+3. <a href="/getting-started/building-your-map#including-fusioncharts-suite-xt-library-in-your-page" class="smoth-scroll">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
+4. <a href="/getting-started/building-your-map#creating-a-container-for-your-map-in-the-web-page" class="smoth-scroll">Creating a container `<div>` for the map</a>
+5. <a href="/getting-started/building-your-map#creating-an-instance-of-the-map" class="smoth-scroll">Using the new `FusionCharts()` constructor to create the map instance, and then calling the `render()` method</a>
 
 ### Installing FusionCharts Suite XT for your application
 
-To see whether you have FusionCharts Suite XT installed for your web application, as detailed [here]{% linkTo tutorials/getting-started/installation.md %}, check for the following files in your `fusioncharts` folder:
+To see whether you have FusionCharts Suite XT installed for your web application, as detailed [here](/getting-started/installation), check for the following files in your `fusioncharts` folder:
 
   * `fusioncharts.charts.js`
   * `fusioncharts.js`
@@ -85,7 +85,7 @@ Next, you will need to create a container for your map in the form of a `<div>` 
 
 ```html
 <body>
-	<div id="chartContainer">A US map will load here!</div>
+<div id="chartContainer">A US map will load here!</div>
 </body>
 ```
 
@@ -95,10 +95,10 @@ This will later allow us to reference the `chartContainer` div and render a map 
 
 The final step is to create an instance of the map, initialize with the correct width and height and then set the JSON data source.
 
-```javascript
+```html
 <script type="text/javascript">
 FusionCharts.ready(function(){
-   var salesByState = new FusionCharts({	
+   var salesByState = new FusionCharts({
         "type": "maps/usa",
         "renderAt": "chartContainer",
         "width": "600",
@@ -349,7 +349,7 @@ FusionCharts.ready(function(){
 This is what we did in the above code
 
  * We created an instance of the `FusionCharts()` object in the `salesByState` variable. Each map in your HTML page needs to have a separate variable. The initialization code is wrapped within `FusionCharts.ready()` method. This safeguards your map instantiation code from being called before FusionCharts Suite XT library is loaded and is ready to be used on the page.
- * We instantiated the USA map for this example. Each map in FusionCharts Suite XT has an unique alias. [You can find the list of all maps an their aliases here]{% linkTo tutorials/getting-started/list-of-maps.md %}. The default package ships only with a US and World map. But, you can download all the other 965 maps [here](http://www.fusioncharts.com/download/maps/definition).
+ * We instantiated the USA map for this example. Each map in FusionCharts Suite XT has an unique alias. [You can find the list of all maps an their aliases here](/getting-started/list-of-maps). The default package ships only with a US and World map. But, you can download all the other 965 maps [here](http://www.fusioncharts.com/download/maps/definition).
  * Next, we specified the `width` and `height` of the map (in pixels) using the width and height property of the constructor.
  * To specify the data format as JSON, we set the `dataFormat` parameter to json.
  * The actual JSON data is embedded as string as value of `dataSource` parameter. The `map` object contains a list of key-value pairs that lets you configure the functional and cosmetic attributes of your map. The `colorrange` object lets you define different numeric ranges, each associated with a `color`, to indicate progressive thresholds.
@@ -619,7 +619,6 @@ The full HTML code for the example looks as under:
 </body>
 </html>
 ```
-
 When you now view the page in a browser, you should see an interactive 2D Map, showing state-wise sales for Harry's SuperMart. This map works seamlessly across mobile devices like iPhones, iPads, Android devices etc.
 
 ### Was there a problem rendering the map?
@@ -630,6 +629,6 @@ In case something went wrong and you are unable to see the map, check for the fo
  *  If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
  * If you get a __Loading Data__ or __Error in loading data__ message, check whether your JSON data structure is correct, and there are no conflicts related to quotation marks in your code.
 
-Click here for more information on [Troubleshooting]{% linkTo tutorials/troubleshooting/debugger.md %}.
+Click here for more information on [Troubleshooting](/troubleshooting/debugger).
 
 Now that Harry can monitor his state-wise Sales using this interactive map, let's see how we can change the type and size of a chart according to our requirements.

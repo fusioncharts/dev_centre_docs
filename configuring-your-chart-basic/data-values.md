@@ -8,19 +8,19 @@ chartPresent: true
 
 Data values are plot values i.e. values of each data plot (line, column, bar, pie) displayed on the chart.
 
-![FusionCharts data values]({{ site.baseurl }}assets/images/data_values.png)
+![FusionCharts data values](/assets/images/data_values.png)
 
 This section talks about:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/data-values.html#configuring-text-labels-instead-of-numeric-data-values">Configuring text labels instead of numeric data values</a>
+* <a href="/basic-chart-configurations/data-values#configuring-text-labels-instead-of-numeric-data-values" class="smoth-scroll">Configuring text labels instead of numeric data values</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/data-values.html#configuring-rotation-of-data-values">Configuring rotation of data values</a>
+* <a href="/basic-chart-configurations/data-values#configuring-rotation-of-data-values" class="smoth-scroll">Configuring rotation of data values</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/data-values.html#configuring-placement-of-data-values-inside-columns">Configuring placement of data values</a>
+* <a href="/basic-chart-configurations/data-values#configuring-placement-of-data-values-inside-columns" class="smoth-scroll">Configuring placement of data values</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/data-values.html#configuring-display-of-data-values">Configuring display of data values</a>
+* <a href="/basic-chart-configurations/data-values#configuring-display-of-data-values" class="smoth-scroll">Configuring display of data values</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/data-values.html#customizing-data-value-properties">Customizing data value properties</a>
+* <a href="/basic-chart-configurations/data-values#customizing-data-value-properties" class="smoth-scroll">Customizing data value properties</a>
 
 ## Configuring text labels instead of numeric data values
 

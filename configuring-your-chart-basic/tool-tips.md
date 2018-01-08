@@ -16,17 +16,17 @@ A tooltip is displayed when the mouse is hovered over a particular data point. I
 
 This article explains how you can:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/tool-tips.html#customizing-tooltips">Customize tooltips</a>
+* <a href="/basic-chart-configurations/tool-tips#customizing-tooltips" class="smoth-scroll">Customize tooltips</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/tool-tips.html#tooltip-text-across-multiple-lines">Show tooltip text across multiple lines</a>
+* <a href="/basic-chart-configurations/tool-tips#tooltip-text-across-multiple-lines" class="smoth-scroll">Show tooltip text across multiple lines</a>
 
 This article also includes:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/tool-tips.html#introduction-to-macros">Introduction to Macros</a>
+* <a href="/basic-chart-configurations/tool-tips#introduction-to-macros" class="smoth-scroll">Introduction to Macros</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/tool-tips.html#adding-html-tables-in-tooltips">Adding HTML tables in tooltips</a>
+* <a href="/basic-chart-configurations/tool-tips#adding-html-tables-in-tooltips" class="smoth-scroll">Adding HTML tables in tooltips</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/tool-tips.html#advanced-usage-of-tooltip-macros">Advanced usage of tooltip macros</a>
+* <a href="/basic-chart-configurations/tool-tips#advanced-usage-of-tooltip-macros" class="smoth-scroll">Advanced usage of tooltip macros</a>
 
 ## Customizing tooltips
 

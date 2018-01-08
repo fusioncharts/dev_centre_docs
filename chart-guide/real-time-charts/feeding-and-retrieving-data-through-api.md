@@ -10,9 +10,9 @@ The FusionCharts Suite XT real-time charts let you feed and retrieve data using 
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/feeding-and-retrieving-data-through-api.html#feeding-data-using-javascript">Feed data using the JavaScript API</a>
+* <a href="/chart-guide/real-time-charts/feeding-and-retrieving-data-through-api#feeding-data-using-javascript" class="smoth-scroll">Feed data using the JavaScript API</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/feeding-and-retrieving-data-through-api.html#retrieving--data-using-javascript">Retrieve data using the JavaScript API</a>
+* <a href="/chart-guide/real-time-charts/feeding-and-retrieving-data-through-api#retrieving--data-using-javascript" class="smoth-scroll">Retrieve data using the JavaScript API</a>
 
 ## Feeding Data using JavaScript
 

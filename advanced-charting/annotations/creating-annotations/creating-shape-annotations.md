@@ -8,23 +8,23 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT]{% linkTo tutorials/getting-started/building-your-first-chart.md %}
+* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
 
-* [Introduction to annotations]{% linkTo tutorials/advanced-charting/annotations/introduction.md %}
+* [Introduction to annotations](/advanced-charting/annotations/introduction)
 
-* [Creating simple annotations]{% linkTo tutorials/advanced-charting/annotations/creating-annotations/introduction.md %}
+* [Creating simple annotations](/advanced-charting/annotations/creating-annotations/introduction)
 
 FusionCharts Suite XT lets you draw annotations in any of the following shapes:
 
-* <a href="{{ site.baseurl }}advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations.html#rectangle">Rectangle</a>
+* <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations#rectangle" class="smoth-scroll">Rectangle</a>
 
-* <a href="{{ site.baseurl }}advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations.html#polygon">Polygon</a>
+* <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations#polygon" class="smoth-scroll">Polygon</a>
 
-* <a href="{{ site.baseurl }}advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations.html#line">Line</a>
+* <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations#line" class="smoth-scroll">Line</a>
 
-* <a href="{{ site.baseurl }}advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations.html#circle">Circle</a>
+* <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations#circle" class="smoth-scroll">Circle</a>
 
-* <a href="{{ site.baseurl }}advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations.html#arc">Arc</a>
+* <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations#arc" class="smoth-scroll">Arc</a>
 
 Take a look at the column 2D chart shown below:
 
@@ -133,7 +133,7 @@ For the line annotation, it renders the annotation itself as a dashed line.</td>
 
 A rectangle annotation will look as under:
 
-![image rectangle]({{ site.baseurl }}assets/images/advanced-charting-annotations-creating-annotations-creating-shape-annotations-image-1.jpg)
+![image rectangle](/assets/images/advanced-charting-annotations-creating-annotations-creating-shape-annotations-image-1.jpg)
 
 The attributes used to configure a rectangle annotation are:
 
@@ -173,7 +173,7 @@ The attributes used to configure a rectangle annotation are:
 
 A polygon annotation will look as under:
 
-![image polygon]({{ site.baseurl }}assets/images/advanced-charting-annotations-creating-annotations-creating-shape-annotations-image-2.jpg)
+![image polygon](/assets/images/advanced-charting-annotations-creating-annotations-creating-shape-annotations-image-2.jpg)
 
 The attributes used to configure a polygon annotation are:
 
@@ -209,7 +209,7 @@ The attributes used to configure a polygon annotation are:
 
 A line annotation will look as under:
 
-![image alt text]({{ site.baseurl }}assets/images/advanced-charting-annotations-creating-annotations-creating-shape-annotations-image-3.jpg)
+![image alt text](/assets/images/advanced-charting-annotations-creating-annotations-creating-shape-annotations-image-3.jpg)
 
 The attributes used to configure a line annotation are:
 
@@ -249,7 +249,7 @@ The attributes used to configure a line annotation are:
 
 A circle annotation will look as under:
 
-![image alt text]({{ site.baseurl }}assets/images/advanced-charting-annotations-creating-annotations-creating-shape-annotations-image-4.jpg)
+![image alt text](/assets/images/advanced-charting-annotations-creating-annotations-creating-shape-annotations-image-4.jpg)
 
 The attributes used to configure a circle annotation are:
 
@@ -287,7 +287,7 @@ An arc is suitable to draw doughnut like shapes or a slice of it. It can be used
 
 An arc annotation will look as under:
 
-![image alt text]({{ site.baseurl }}assets/images/advanced-charting-annotations-creating-annotations-creating-shape-annotations-image-5.jpg)
+![image alt text](/assets/images/advanced-charting-annotations-creating-annotations-creating-shape-annotations-image-5.jpg)
 
 The attributes used to configure an arc annotation are:
 

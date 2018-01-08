@@ -35,15 +35,15 @@ By default, the target URL opens in the same browser page as the chart. To open 
 
 You can configure the target URL to:
 
-* open in [the same window]{% linkTo tutorials/advanced-charting/drill-down/simple-drill-down.md %}
+* open in [the same window](/advanced-charting/drill-down/simple-drill-down)
 
-* open in [a new window]{% linkTo tutorials/advanced-charting/drill-down/simple-drill-down.md %}
+* open in [a new window](/advanced-charting/drill-down/simple-drill-down)
 
-* open in [another frame]{% linkTo tutorials/advanced-charting/drill-down/opening-in-pop-up-or-frames.md %}
+* open in [another frame](/advanced-charting/drill-down/opening-in-pop-up-or-frames)
 
-* open [in a new pop-up window]{% linkTo tutorials/advanced-charting/drill-down/opening-in-pop-up-or-frames.md %}
+* open [in a new pop-up window](/advanced-charting/drill-down/opening-in-pop-up-or-frames)
 
-* invoke existing [JavaScript functions]{% linkTo tutorials/advanced-charting/drill-down/linkedcharts.md %} defined within the same page
+* invoke existing [JavaScript functions](/advanced-charting/drill-down/linkedcharts) defined within the same page
 
 <p class="text-info"> If you set the entire chart as hotspot, the other links on the chart (individual links for data plots) will not work.  </p>
 

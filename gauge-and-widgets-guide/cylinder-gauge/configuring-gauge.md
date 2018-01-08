@@ -10,15 +10,15 @@ FusionCharts Suite XT offers you several options to configure and customize the 
 
 In this section, using a simple example, you will be shown how to:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/configuring-gauge.html#setting-cylinder-fill-color">Set the cylinder fill color</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/configuring-gauge#setting-cylinder-fill-color" class="smoth-scroll">Set the cylinder fill color</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/configuring-gauge.html#customizing-cylinder-origin-radius-and-height">Customize the cylinder origin, radius, and height</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/configuring-gauge#customizing-cylinder-origin-radius-and-height" class="smoth-scroll">Customize the cylinder origin, radius, and height</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/configuring-gauge.html#configuring-chart-value-display">Show or hide the chart value</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/configuring-gauge#configuring-chart-value-display" class="smoth-scroll">Show or hide the chart value</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/configuring-gauge.html#configuring-tick-marks-and-tick-values">Configure tick marks and tick values</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/configuring-gauge#configuring-tick-marks-and-tick-values" class="smoth-scroll">Configure tick marks and tick values</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/configuring-gauge.html#applying-hover-effects">Apply hover effects to the gauge</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/configuring-gauge#applying-hover-effects" class="smoth-scroll">Apply hover effects to the gauge</a>
 
 ## Setting Cylinder Fill Color
 

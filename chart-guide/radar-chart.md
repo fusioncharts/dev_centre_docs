@@ -18,9 +18,9 @@ Common application areas for radar charts include:
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/radar-chart.html#creating-a-single-series-radar-chart">Create a single-series radar chart</a>
+* <a href="/chart-guide/radar-chart#creating-a-single-series-radar-chart" class="smoth-scroll">Create a single-series radar chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/radar-chart.html#creating-a-multi-series-radar-chart">Create a multi-series radar chart</a>
+* <a href="/chart-guide/radar-chart#creating-a-multi-series-radar-chart" class="smoth-scroll">Create a multi-series radar chart</a>
 
 ## Creating a Single-series Radar Chart
 

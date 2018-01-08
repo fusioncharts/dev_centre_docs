@@ -10,13 +10,13 @@ A heat map chart is a specialized chart that uses colors to represent data value
 
 In this section, you will be introduced to the:
 
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/introduction.html#basics-of-heat-map-charts">Basics of heat map charts</a>
+* <a href="/chart-guide/heat-map-chart/introduction#basics-of-heat-map-charts" class="smoth-scroll">Basics of heat map charts</a>
 
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/introduction.html#key-features">Key features</a>
+* <a href="/chart-guide/heat-map-chart/introduction#key-features" class="smoth-scroll">Key features</a>
 
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/introduction.html#types-of-heat-map-charts">Types of heat map charts</a>
+* <a href="/chart-guide/heat-map-chart/introduction#types-of-heat-map-charts" class="smoth-scroll">Types of heat map charts</a>
 
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/introduction.html#legends-in-heat-map-charts">Legends in heat map charts</a>
+* <a href="/chart-guide/heat-map-chart/introduction#legends-in-heat-map-charts" class="smoth-scroll">Legends in heat map charts</a>
 
 ## Basics of Heat Map Charts
 
@@ -70,10 +70,10 @@ Heat map charts allow you to display two types of legends:
 
 A simple gradient legend looks as shown in the image below:
 
-![image gradient-legend]({{ site.baseurl }}assets/images/heat-map-introduction-1.jpg)
+![image gradient-legend](/assets/images/heat-map-introduction-1.jpg)
 
 ### Icon Legend
 
 A simple icon legend looks as shown in the image below:
 
-![image icon-legend]({{ site.baseurl }}assets/images/heat-map-introduction-2.jpg)
+![image icon-legend](/assets/images/heat-map-introduction-2.jpg)

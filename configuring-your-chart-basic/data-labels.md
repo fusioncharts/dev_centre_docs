@@ -8,17 +8,17 @@ chartPresent: true
 
 Data labels are the names of the data points that are displayed on the x-axis of a chart.
 
-![FusionCharts data labels]({{ site.baseurl }}assets/images/data_labels_new.png)
+![FusionCharts data labels](/assets/images/data_labels_new.png)
 
 In the chart shown above Jan, Feb, Mar etc. are data labels.
 
 This section explains:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/configuring-your-chart-data-labels.html#data-label-display-modes">Data label display modes</a>
+* <a href="/basic-chart-configurations/configuring-your-chart-data-labels#data-label-display-modes" class="smoth-scroll">Data label display modes</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/configuring-your-chart-data-labels.html#displaying-specific-data-labels">Displaying specific data labels</a>
+* <a href="/basic-chart-configurations/configuring-your-chart-data-labels#displaying-specific-data-labels" class="smoth-scroll">Displaying specific data labels</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/configuring-your-chart-data-labels.html#label-management-line-and-area-charts">Label management: Line and area charts</a>
+* <a href="/basic-chart-configurations/configuring-your-chart-data-labels#label-management-line-and-area-charts" class="smoth-scroll">Label management: Line and area charts</a>
 
 ## Data Label Display Modes
 
@@ -194,7 +194,7 @@ Given below is a brief description of the attributes used to show specific data 
 
 With label management, you can adjust the canvas padding (the space between the canvas border and the position where the data plot begins and ends) to accommodate long labels in line and area charts. This ensures that the first and last x-axis labels are not rendered outside the canvas border and the labels donâ€™t overlap each other.
 
-![FusionCharts data labels canvas padding]({{ site.baseurl }}assets/images/data_labels_canvas_padding.png)
+![FusionCharts data labels canvas padding](/assets/images/data_labels_canvas_padding.png)
 
 To accommodate long labels, the chart automatically adjusts the right and left canvas margins. A line 2D chart with automatic canvas padding set for label management look like this:
 

@@ -10,9 +10,9 @@ FusionCharts XT allows you to configure the functional properties of labels and 
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/configuring-labels-and-tool-tips.html#configuring-labels">Configure labels</a>
+* <a href="/chart-guide/heat-map-chart/configuring-labels-and-tool-tips#configuring-labels" class="smoth-scroll">Configure labels</a>
 
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/configuring-labels-and-tool-tips.html#configuring-tool-tips">Configure tool-tips</a>
+* <a href="/chart-guide/heat-map-chart/configuring-labels-and-tool-tips#configuring-tool-tips" class="smoth-scroll">Configure tool-tips</a>
 
 ## Configuring Labels
 

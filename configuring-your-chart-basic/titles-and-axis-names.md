@@ -10,17 +10,17 @@ FusionCharts Suite XT allows you to add caption, sub-caption, x-axis name and y-
 
 The caption (also called the chart title) is the heading of your chart; a sub-caption is the text that appears just below the caption.
 
-![Caption and Subcaption]({{ site.baseurl }}assets/images/titlesaxisnames.png)
+![Caption and Subcaption](/assets/images/titlesaxisnames.png)
 
 Cartesian charts have axes that run along the left and the bottom borders of the canvas. The x-axis runs along the bottom border of the canvas, starting at the left and ending on the right. The y-axis runs along the left border of the canvas, starting at the bottom and ending at the top of the chart. You can configure names for both the axes.
 
 This section is divided into following parts:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/titles-and-axis-names.html#customizing-chart-caption-and-sub-caption">Customizing chart caption & sub-caption</a>
+* <a href="/basic-chart-configurations/titles-and-axis-names#customizing-chart-caption-and-sub-caption" class="smoth-scroll">Customizing chart caption & sub-caption</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/titles-and-axis-names.html#customizing-x-axis-and-y-axis">Customizing X-Axis and Y-Axis</a>
+* <a href="/basic-chart-configurations/titles-and-axis-names#customizing-x-axis-and-y-axis" class="smoth-scroll">Customizing X-Axis and Y-Axis</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/titles-and-axis-names.html#dual-y-axis">Customizing Dual Y-Axis</a>
+* <a href="/basic-chart-configurations/titles-and-axis-names#dual-y-axis" class="smoth-scroll">Customizing Dual Y-Axis</a>
 
 ## Customizing chart caption and sub-caption
 

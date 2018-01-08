@@ -25,9 +25,9 @@ In a nutshell, a chart thumbnail is like a static image with an associated link 
 
 In this section, you will learn how to:
 
-* [Render plots shedding all other charts elements]({{ site.baseurl }}advanced-chart-configurations/tutorials/render-thumbnail-versions-of-chart.html#render-plots-shedding-all-other-chart-elements)
-* [Disable all Charting Interactivities]({{ site.baseurl }}advanced-chart-configurations/tutorials/render-thumbnail-versions-of-chart.html#disable-all-charting-interactivities)
-* [Present a static chart]({{ site.baseurl }}advanced-chart-configurations/tutorials/render-thumbnail-versions-of-chart.html#static-presentation-of-chart)
+* [Render plots shedding all other charts elements](/advanced-chart-configurations/tutorials/render-thumbnail-versions-of-chart.html#render-plots-shedding-all-other-chart-elements)
+* [Disable all Charting Interactivities](/advanced-chart-configurations/tutorials/render-thumbnail-versions-of-chart.html#disable-all-charting-interactivities)
+* [Present a static chart](/advanced-chart-configurations/tutorials/render-thumbnail-versions-of-chart.html#static-presentation-of-chart)
 
 
 ## Render Plots shedding all other Chart elements

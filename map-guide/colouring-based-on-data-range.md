@@ -6,7 +6,7 @@ heading: Coloring Based on Data Range
 chartPresent: true
 ---
 
-In setting up a {% linkTo tutorials/map-guide/simple-data-driven-map.md %} we used color ranges to define entity colors based on values. This process of defining colors for individual data buckets is not scalable, it requires grouping of data values under defined data range buckets. The entities within these buckets are denoted with the same color. Secondly, you need to define colours for each data range. This becomes tedious if the number of such buckets is large. You can use a gradient scale to simplify this process.
+In setting up a (/map-guide/simple-data-driven-map) we used color ranges to define entity colors based on values. This process of defining colors for individual data buckets is not scalable, it requires grouping of data values under defined data range buckets. The entities within these buckets are denoted with the same color. Secondly, you need to define colours for each data range. This becomes tedious if the number of such buckets is large. You can use a gradient scale to simplify this process.
 
 A gradient scale allows you to specify colours associated with specific data points. This defines an automatic gradient scale across the data range. Entities appear in unique colors as per the data value position on the gradient scale.
 

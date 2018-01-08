@@ -16,18 +16,18 @@ This treemap compares the sales team's performance in the present year with thei
 
 When a rectangle is clicked, the clicked node and its subtree replaces the current root node. For example, when any rectangle (node) in the __Northern Region__ is clicked, the chart view changes to what is shown in the image below:
 
-![Treemap with Northern Region as the current node]({{ site.baseurl }}assets/images/chart-guide-treemap-chart-creating-a-simple-treemap-chart-image-6.jpg)
+![Treemap with Northern Region as the current node](/assets/images/chart-guide-treemap-chart-creating-a-simple-treemap-chart-image-6.jpg)
 
 <p class="text-info"> Click the rectangles in the treemap shown above and see how you can traverse through the leaf nodes. </p>
 
 In this section, you will be shown:
 
-* <a href="{{ site.baseurl }}chart-guide/treemap/introducing-the-treemap.html#applications-of-a-treemap">Applications of a Treemap</a>
-* <a href="{{ site.baseurl }}chart-guide/treemap/introducing-the-treemap.html#visualization-of-a-treemap">Visualization of a Treemap</a>
-* <a href="{{ site.baseurl }}chart-guide/treemap/introducing-the-treemap.html#important-concepts-related-to-the-treemap">Concepts Related to the Treemap</a>
-	* <a href="{{ site.baseurl }}chart-guide/treemap/introducing-the-treemap.html#tiling">Tiling</a>
-	* <a href="{{ site.baseurl }}chart-guide/treemap/introducing-the-treemap.html#aspect-ratio">Aspect Ratio</a>
-* <a href="{{ site.baseurl }}chart-guide/treemap/introducing-the-treemap.html#interacting-with-a-treemap">How to interact with a Treemap</a>
+* <a href="/chart-guide/treemap/introducing-the-treemap#applications-of-a-treemap" class="smoth-scroll">Applications of a Treemap</a>
+* <a href="/chart-guide/treemap/introducing-the-treemap#visualization-of-a-treemap" class="smoth-scroll">Visualization of a Treemap</a>
+* <a href="/chart-guide/treemap/introducing-the-treemap#important-concepts-related-to-the-treemap" class="smoth-scroll">Concepts Related to the Treemap</a>
+	* <a href="/chart-guide/treemap/introducing-the-treemap#tiling" class="smoth-scroll">Tiling</a>
+	* <a href="/chart-guide/treemap/introducing-the-treemap#aspect-ratio" class="smoth-scroll">Aspect Ratio</a>
+* <a href="/chart-guide/treemap/introducing-the-treemap#interacting-with-a-treemap" class="smoth-scroll">How to interact with a Treemap</a>
 
 
 ## Applications of a Treemap
@@ -40,7 +40,7 @@ Treemap is modeled based on the tree data structure.
 
 The image below shows how an information tree is translated to the treemap. 
 
-![image alt text]({{ site.baseurl }}assets/images/chart-guide-treemap-chart-introducing-the-treemap-chart-image-1.png)
+![image alt text](/assets/images/chart-guide-treemap-chart-introducing-the-treemap-chart-image-1.png)
 
 ### Visualization of the treemap should conform to the following pointers:
 
@@ -120,8 +120,8 @@ FusionCharts implements the following model for interacting with a treemap:
 
 To drill-down to a leaf node, the user can directly click on that node. For example, when any rectangle (node) in the __Northern Region__ is clicked, the chart view changes to what is shown in the image below:
 
-![Treemap with Northern Region as the current node]({{ site.baseurl }}assets/images/chart-guide-treemap-chart-creating-a-simple-treemap-chart-image-6.jpg)
+![Treemap with Northern Region as the current node](/assets/images/chart-guide-treemap-chart-creating-a-simple-treemap-chart-image-6.jpg)
 
-Now, to go back one level up, the user can either click __Northern Region__ in the header of this view or the ![image alt text]({{ site.baseurl }}assets/images/chart-guide-treemap-chart-introducing-the-treemap-chart-image-2.png) (__Back to Parent__) button from the top-right corner of the chart. 
+Now, to go back one level up, the user can either click __Northern Region__ in the header of this view or the ![image alt text](/assets/images/chart-guide-treemap-chart-introducing-the-treemap-chart-image-2.png) (__Back to Parent__) button from the top-right corner of the chart. 
 
-To go directly back to the initial stage, the user can click ![image alt text]({{ site.baseurl }}assets/images/chart-guide-treemap-chart-introducing-the-treemap-chart-image-3.png) (__Back to Top__) from the top-right corner of the chart. The resultant view is the initial stage of the chart.
+To go directly back to the initial stage, the user can click ![image alt text](/assets/images/chart-guide-treemap-chart-introducing-the-treemap-chart-image-3.png) (__Back to Top__) from the top-right corner of the chart. The resultant view is the initial stage of the chart.

@@ -10,11 +10,11 @@ A multi-axis line chart, as the name suggests, is an interactive line chart that
 
 In this section, you will be introduced to:
 
-* <a href="{{ site.baseurl }}chart-guide/multi-axis-line-chart.html#basics-of-a-multi-axis-line-chart">Basics of a multi-axis line chart</a>
+* <a href="/chart-guide/multi-axis-line-chart#basics-of-a-multi-axis-line-chart" class="smoth-scroll">Basics of a multi-axis line chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/multi-axis-line-chart.html#features-of-a-multi-axis-line-chart">Features of a multi-axis line chart</a>
+* <a href="/chart-guide/multi-axis-line-chart#features-of-a-multi-axis-line-chart" class="smoth-scroll">Features of a multi-axis line chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/multi-axis-line-chart.html#creating-a-simple-multi-axis-line-chart">Creating a simple multi-axis line chart</a>
+* <a href="/chart-guide/multi-axis-line-chart#creating-a-simple-multi-axis-line-chart" class="smoth-scroll">Creating a simple multi-axis line chart</a>
 
 ## Basics of a Multi-axis Line Chart
 

@@ -10,9 +10,9 @@ The multi-level pie chart is a special type of chart that allows you to show sym
 
 In this section, you will be introduced to:
 
-* <a href="{{ site.baseurl }}chart-guide/multi-level-pie-chart.html#basics-of-a-multi-level-pie-chart">Basics of a multi-level pie chart</a>
+* <a href="/chart-guide/multi-level-pie-chart#basics-of-a-multi-level-pie-chart" class="smoth-scroll">Basics of a multi-level pie chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/multi-level-pie-chart.html#creating-a-simple-multi-level-pie-chart">Creating a simple multi-level pie chart</a>
+* <a href="/chart-guide/multi-level-pie-chart#creating-a-simple-multi-level-pie-chart" class="smoth-scroll">Creating a simple multi-level pie chart</a>
 
 ## Basics of a Multi-level Pie Chart
 

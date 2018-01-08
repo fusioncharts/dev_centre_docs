@@ -8,17 +8,17 @@ chartPresent: true
 
 Vertical (or horizontal in case of bar charts) separator lines or `vlines` are elements that can differentiate between data blocks in a chart. They can be placed between any two data points, or aligned to specific data points.
 
-![Vertical Lines]({{ site.baseurl }}assets/images/vertical_lines.png)
+![Vertical Lines](/assets/images/vertical_lines.png)
 
 This section talks about:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/vertical-lines.html#configuring-position-of-vertical-lines">Configuring positions of vertical lines</a>
+* <a href="/basic-chart-configurations/vertical-lines#configuring-position-of-vertical-lines" class="smoth-scroll">Configuring positions of vertical lines</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/vertical-lines.html#configuring-labels-for-vertical-lines">Configuring labels for vertical lines</a>
+* <a href="/basic-chart-configurations/vertical-lines#configuring-labels-for-vertical-lines" class="smoth-scroll">Configuring labels for vertical lines</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/vertical-lines.html#customizing-vertical-line-display-properties">Customizing vertical line display properties</a>
+* <a href="/basic-chart-configurations/vertical-lines#customizing-vertical-line-display-properties" class="smoth-scroll">Customizing vertical line display properties</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/vertical-lines.html#configuring-label-borders">Configuring label borders</a>
+* <a href="/basic-chart-configurations/vertical-lines#configuring-label-borders" class="smoth-scroll">Configuring label borders</a>
 
 ## Configuring position of vertical lines
 

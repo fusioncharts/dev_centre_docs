@@ -14,23 +14,23 @@ Tick marks, an element of gauges in FusionChart Suite XT, are calibration marks 
 
 A LED gauge with major and minor tick marks looks like this:
 
-![Tick marks]({{ site.baseurl }}assets/images/tick_marks.png)
+![Tick marks](/assets/images/tick_marks.png)
 
 This section talks about:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/tick-marks.html#showinghiding-tick-marks-and-tick-values">Showing or hiding tick marks and tick values</a>
+* <a href="/basic-chart-configurations/tick-marks#showinghiding-tick-marks-and-tick-values" class="smoth-scroll">Showing or hiding tick marks and tick values</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/tick-marks.html#configuring-the-tick-value-position">Configuring tick value position</a>
+* <a href="/basic-chart-configurations/tick-marks#configuring-the-tick-value-position" class="smoth-scroll">Configuring tick value position</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/tick-marks.html#showing-every-nth-tick-mark-value">Showing every nth tick mark value</a>
+* <a href="/basic-chart-configurations/tick-marks#showing-every-nth-tick-mark-value" class="smoth-scroll">Showing every nth tick mark value</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/tick-marks.html#showing-tick-values-in-decimals">Showing tick values in decimals</a>
+* <a href="/basic-chart-configurations/tick-marks#showing-tick-values-in-decimals" class="smoth-scroll">Showing tick values in decimals</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/tick-marks.html#configuring-tick-mark-and-tick-value-padding">Configuring tick mark and tick value padding</a>
+* <a href="/basic-chart-configurations/tick-marks#configuring-tick-mark-and-tick-value-padding" class="smoth-scroll">Configuring tick mark and tick value padding</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/tick-marks.html#configuring-the-number-of-major-and-minor-tick-marks">Configuring the number of major and minor tick marks</a>
+* <a href="/basic-chart-configurations/tick-marks#configuring-the-number-of-major-and-minor-tick-marks" class="smoth-scroll">Configuring the number of major and minor tick marks</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/tick-marks.html#configuring-cosmetic-properties-of-tick-marks">Configuring cosmetics of tick marks</a>
+* <a href="/basic-chart-configurations/tick-marks#configuring-cosmetic-properties-of-tick-marks" class="smoth-scroll">Configuring cosmetics of tick marks</a>
 
 ## Showing/hiding tick marks and tick values
 

@@ -10,9 +10,9 @@ Drag-able charts are special types of charts that allow you to visually update d
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/creating-drag-able-charts.html#creating-a-drag-able-column-2d-chart">Create a drag-able column 2D chart</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/creating-drag-able-charts.html#creating-a-drag-able-line-2d-chart">Create a drag-able line 2D chart</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/creating-drag-able-charts.html#creating-a-drag-able-area-2d-chart">Create a drag-able area 2D chart</a>
+* <a href="/chart-guide/drag-able-charts/creating-drag-able-charts#creating-a-drag-able-column-2d-chart" class="smoth-scroll">Create a drag-able column 2D chart</a>
+* <a href="/chart-guide/drag-able-charts/creating-drag-able-charts#creating-a-drag-able-line-2d-chart" class="smoth-scroll">Create a drag-able line 2D chart</a>
+* <a href="/chart-guide/drag-able-charts/creating-drag-able-charts#creating-a-drag-able-area-2d-chart" class="smoth-scroll">Create a drag-able area 2D chart</a>
 
 ## Creating a Drag-able Column 2D Chart
 

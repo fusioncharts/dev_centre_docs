@@ -102,7 +102,7 @@ To apply multiple themes for a chart, specify the theme names as a comma-separat
 ```
 
 <p class="text-info">
-__zune-v1__ is a user-defined theme. To know how user-defined themes can be created, refer the [Creating New Themes]{% linkTo tutorials/advanced-charting/theme-manager/creating-new-themes.md %} article. 
+__zune-v1__ is a user-defined theme. To know how user-defined themes can be created, refer the [Creating New Themes](/advanced-charting/theme-manager/creating-new-themes) article. 
 </p>
 
 Values of all attributes set across these themes will be applied to the chart. In case of overlapping attributes, the values specified for the rightmost theme will take precedence. For example if the `captionFontSize` attribute is specified for both themes, its value for the __zune-v1__ theme will be applied to the caption.

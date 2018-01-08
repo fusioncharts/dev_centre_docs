@@ -8,11 +8,11 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Introducing the Zoom-scatter Chart]{% linkTo tutorials/chart-guide/zoom-scatter-chart/introducing-the-zoom-scatter-chart.md %}{:target='_blank'}
+* [Introducing the Zoom-scatter Chart](/chart-guide/zoom-scatter-chart/introducing-the-zoom-scatter-chart)
 
 The FusionCharts Suite XT zoom-scatter chart, a special type of chart, is an extension of the scatter chart with the zooming and panning features and the ability to display millions of data points because of these features.It is primarily used to find correlations between datasets by analyzing visual patterns in the data.
 
-<p class="text-info"> In order to render zoom scatter chart, include fusioncharts.zoomscatter.js in the project folder with rest of the .js files as mentioned [here]{% linkTo tutorials/getting-started/installation.md %}. </p>
+<p class="text-info"> In order to render zoom scatter chart, include fusioncharts.zoomscatter.js in the project folder with rest of the .js files as mentioned [here](/getting-started/installation). </p>
                             
 A simple zoom-scatter chart is as shown below:
 
@@ -6098,6 +6098,6 @@ Given below is a brief description of the data structure used to create a zoom s
   </tr>
 </table>
 
-Click [here]{% linkTo attrs.md chart=zoomscatter %} for the complete list of attributes supported by the zoom-scatter chart.
+Click [here](/chart-attributes?chart=zoomscatter) for the complete list of attributes supported by the zoom-scatter chart.
 
 <p class="text-info"> The anchors in the zoom-scatter chart cannot be made clickable, because FusionCharts does not include the supporting API for defining an external URL for the data points due to performance concerns. </p>

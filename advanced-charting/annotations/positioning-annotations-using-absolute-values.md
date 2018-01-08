@@ -8,11 +8,11 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT]{% linkTo tutorials/getting-started/building-your-first-chart.md %}
+* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
 
-* [Introduction to annotations]{% linkTo tutorials/advanced-charting/annotations/introduction.md %}
+* [Introduction to annotations](/advanced-charting/annotations/introduction)
 
-* [Creating simple annotations]{% linkTo tutorials/advanced-charting/annotations/creating-annotations/introduction.md %}
+* [Creating simple annotations](/advanced-charting/annotations/creating-annotations/introduction)
 
 The FusionCharts XT annotation API lets you configure positions of annotations either during their creation or after rendering them on a chart/gauge. You can position annotation items by setting the positioning attributes (`x`, `y`, `toX`, `toY`, `radius`, and so on) to the required coordinates.
 
@@ -20,7 +20,7 @@ Annotations can be positioned using:
 
 * absolute values
 
-* [macros]{% linkTo tutorials/advanced-charting/annotations/positioning-annotations-using-macros.md %} - that take dynamic values relative to chart elements
+* [macros](/advanced-charting/annotations/positioning-annotations-using-macros) - that take dynamic values relative to chart elements
 
 This article describes how you can position annotations using static values.
 

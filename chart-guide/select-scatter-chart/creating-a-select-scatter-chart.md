@@ -22,7 +22,7 @@ To select a set of points, you can drag and draw a rectangle over the chart. All
 
 To select more scattered data points, you can add additional select rectangles on the chart. The process to add another select rectangle is the same, as shown in the image below. Click anywhere in the chart canvas and draw a rectangle.
 
-![image creating-select-scatter]({{ site.baseurl }}assets/images/chart-guide-select-scatter-chart-creating-a-select-scatter-chart-1.jpg)
+![image creating-select-scatter](/assets/images/chart-guide-select-scatter-chart-creating-a-select-scatter-chart-1.jpg)
 
 You can drag, resize, or delete any select rectangles individually. To delete any select rectangle, you can click the "X" "at the top right corner of the selection box  and the rectangle will be gone.
 

@@ -6,7 +6,7 @@ heading: Using JavaScript Functions as Links
 chartPresent: true
 ---
 
-An alternative to using [simple links]{% linkTo tutorials/advanced-charting/drill-down/simple-drill-down.md %}{:target='_blank'} in drill-down charts is using JavaScript functions, present in the same page, that can be invoked when a data plot on the chart is clicked.
+An alternative to using [simple links](/advanced-charting/drill-down/simple-drill-down) in drill-down charts is using JavaScript functions, present in the same page, that can be invoked when a data plot on the chart is clicked.
 
 FusionCharts provides the following two ways for setting JavaScript functions as links:
 <table>

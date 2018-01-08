@@ -6,7 +6,7 @@ heading: Setting the Alert Manager
 chartPresent: true
 ---
 
-Gauges can be set to update in real time, either programmatically or by polling the server for data. To know more about how to configure a real-time gauge, click [here]{% linkTo tutorials/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges.md %}.
+Gauges can be set to update in real time, either programmatically or by polling the server for data. To know more about how to configure a real-time gauge, click [here](/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges).
 
 Real-time gauges can be made more intuitive by setting an alert that indicates when a defined set of threshold data values are reached.
 
@@ -69,7 +69,7 @@ An `alert` object contains the following attributes:
     <td>Action to be taken when the value on the gauge matches an alert range. Possible values for this attribute are:
 `CALLJS` – Calls a JavaScript function that is specified in the `param` attribute (explained below).
 `SHOWANNOTATION` –  Displays an annotation item or a group. The group id of the annotation  is specified in `param` attribute.
-Grouping the annotation items is described in detail in the [Grouping Annotations]{% linkTo tutorials/advanced-charting/annotations/grouping-annotations.md %} article.</td>
+Grouping the annotation items is described in detail in the [Grouping Annotations](/advanced-charting/annotations/grouping-annotations) article.</td>
   </tr>
   <tr>
     <td>`param` </td>

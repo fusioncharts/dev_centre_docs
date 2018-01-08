@@ -12,11 +12,11 @@ In the advanced model, two event parameters are passed to the event listener fun
 
 In this section, you will be introduced to the:
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/listening-to-events.html#event-parameters-in-the-simple-model">Event parameters in the simple model</a>
+* <a href="/chart-guide/real-time-charts/listening-to-events#event-parameters-in-the-simple-model" class="smoth-scroll">Event parameters in the simple model</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/listening-to-events.html#event-parameters-in-the-advanced-model">Event parameters in the advanced model</a>
+* <a href="/chart-guide/real-time-charts/listening-to-events#event-parameters-in-the-advanced-model" class="smoth-scroll">Event parameters in the advanced model</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/listening-to-events.html#real-time-events">Real-time events</a>
+* <a href="/chart-guide/real-time-charts/listening-to-events#real-time-events" class="smoth-scroll">Real-time events</a>
 
 ## Event Parameters in the Simple Model
 

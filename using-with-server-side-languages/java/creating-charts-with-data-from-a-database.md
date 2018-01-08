@@ -14,19 +14,19 @@ This section showcases how you can do this using the FusionCharts JSP wrapper.
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/java/creating-charts-with-data-from-a-database.html#creating-a-column-2d-chart">Create a simple column 2D chart by fetching data from a database</a>
+* <a href="/using-with-server-side-languages/java/creating-charts-with-data-from-a-database#creating-a-column-2d-chart" class="smoth-scroll">Create a simple column 2D chart by fetching data from a database</a>
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/java/creating-charts-with-data-from-a-database.html#creating-a-drill-down-chart">Create a drill-down chart by fetching data from a database</a>
+* <a href="/using-with-server-side-languages/java/creating-charts-with-data-from-a-database#creating-a-drill-down-chart" class="smoth-scroll">Create a drill-down chart by fetching data from a database</a>
 
 
-<p class="text-info">Before you proceed, make sure you have <a href="{{ site.baseurl }}using-with-server-side-languages/java/introduction.html" target="_blank">installed and set up the plugin </a> correctly. Although you can create all kinds of charts using this method, in this section we will focus on only these two examples.</p>
+<p class="text-info">Before you proceed, make sure you have <a href="/using-with-server-side-languages/java/introduction.html" target="_blank">installed and set up the plugin </a> correctly. Although you can create all kinds of charts using this method, in this section we will focus on only these two examples.</p>
 
 
 ## Creating a Column 2D Chart
 
 Assume that you have a __fusioncharts_jspsample__ database with the __Country__ table that stores the population of all countries in the world. Using the data in this database, let's say you want to plot a column 2D chart showing the top ten most populous countries in the world.
 
-<p class="text-info"> You can [download](http://dev.mysql.com/doc/index-other.html){:target='_blank} this database from the MYSQL website or refer to the sample database available [here](https://dev.mysql.com/doc/world-setup/en/){:target='_blank}. </p>
+<p class="text-info"> You can [download](http://dev.mysql.com/doc/index-other.html) this database from the MYSQL website or refer to the sample database available [here](https://dev.mysql.com/doc/world-setup/en/). </p>
 
 The resultant column 2D chart looks like this:
 
@@ -169,7 +169,7 @@ The data structure to create this chart, by fetching chart data from a database,
 
 ```
 
-<p class="text-info"> The code above uses the `google-gson` library. <br> Gson is a Java library that can be used to convert: <br> - Java objects into their corresponding JSON representation <br> - JSON strings into their corresponding Java objects. <br> Gson allows working with arbitrary Java objects that include pre-existing objects for which you may not have the source code. <br> <br> The google-gsn library : <br> - Provides the `toJson()` and `fromJson()` methods for converting Java objects to JSON and the other way round <br> - Allows conversion of the already existing unmodifiable objects to and from JSON <br> - Supports Java Generics extensively <br> - Allows custom representations of objects <br> - Supports arbitrarily complex objects (with deep inheritance hierarchies and extensive use of generic types) <br> <br> The code above imports the `com.google.gson` package that enables the conversion from JSON to Java and Java to JSON. <br> <br> Click [here](https://github.com/google/gson){:target='_blank'} for more information on google-gson. </p>
+<p class="text-info"> The code above uses the `google-gson` library. <br> Gson is a Java library that can be used to convert: <br> - Java objects into their corresponding JSON representation <br> - JSON strings into their corresponding Java objects. <br> Gson allows working with arbitrary Java objects that include pre-existing objects for which you may not have the source code. <br> <br> The google-gsn library : <br> - Provides the `toJson()` and `fromJson()` methods for converting Java objects to JSON and the other way round <br> - Allows conversion of the already existing unmodifiable objects to and from JSON <br> - Supports Java Generics extensively <br> - Allows custom representations of objects <br> - Supports arbitrarily complex objects (with deep inheritance hierarchies and extensive use of generic types) <br> <br> The code above imports the `com.google.gson` package that enables the conversion from JSON to Java and Java to JSON. <br> <br> Click [here](https://github.com/google/gson) for more information on google-gson. </p>
 
 ## Creating a Drill-down Chart
 

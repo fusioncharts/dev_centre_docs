@@ -12,9 +12,9 @@ The cylinder gauge is a real-time chart, which can update its data after specifi
 
 In this section, you will be introduced to:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/introduction.html#a-simple-cylinder-gauge">A simple cylinder gauge</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/introduction#a-simple-cylinder-gauge" class="smoth-scroll">A simple cylinder gauge</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/introduction.html#elements-of-the-gauge">Elements of a cylinder gauge</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/introduction#elements-of-the-gauge" class="smoth-scroll">Elements of a cylinder gauge</a>
 
 ## A Simple Cylinder Gauge
 
@@ -40,7 +40,7 @@ A cylinder gauge chart consists of the following elements:
 
 Here we’ll see each of them in detail. Let’s first have a look at a standard cylinder chart enlisting the various basic components:
 
-![image cylinder-gauge]({{ site.baseurl }}assets/images/cylinder-gauge-introduction-1.jpg)
+![image cylinder-gauge](/assets/images/cylinder-gauge-introduction-1.jpg)
 
 ### Cylinder Fill
 

@@ -10,13 +10,13 @@ The Pareto chart, named after Vilfredo Pareto, is a type of chart which contains
 
 In this section you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/pareto-chart/configuring-a-pareto-chart.html#displaying-values-for-the-line-series">Display values for the line series</a>
+* <a href="/chart-guide/pareto-chart/configuring-a-pareto-chart#displaying-values-for-the-line-series" class="smoth-scroll">Display values for the line series</a>
 
-* <a href="{{ site.baseurl }}chart-guide/pareto-chart/configuring-a-pareto-chart.html#customizing-the-line-dataset">Customize the line dataset</a>
+* <a href="/chart-guide/pareto-chart/configuring-a-pareto-chart#customizing-the-line-dataset" class="smoth-scroll">Customize the line dataset</a>
 
-* <a href="{{ site.baseurl }}chart-guide/pareto-chart/configuring-a-pareto-chart.html#hiding-secondary-axis-values">Hide secondary axis values</a>
+* <a href="/chart-guide/pareto-chart/configuring-a-pareto-chart#hiding-secondary-axis-values" class="smoth-scroll">Hide secondary axis values</a>
 
-* <a href="{{ site.baseurl }}chart-guide/pareto-chart/configuring-a-pareto-chart.html#showinghiding-the-line-chart">Show/hide the line chart</a>
+* <a href="/chart-guide/pareto-chart/configuring-a-pareto-chart#showinghiding-the-line-chart" class="smoth-scroll">Show/hide the line chart</a>
 
 ## Displaying Values for the Line Series
 

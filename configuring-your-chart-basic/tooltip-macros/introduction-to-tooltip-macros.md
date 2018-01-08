@@ -8,7 +8,7 @@ chartPresent: true
 
 ## Prerequisites:
 
-* [Tooltips]{% linkTo tutorials/configuring-your-chart-basic/tool-tips.md %}{:target='_blank'}
+* [Tooltips](/configuring-your-chart-basic/tool-tips)
 
 FusionCharts Suite XT supports macros to configure dynamic and contextual content in tooltips. A macro is an instruction recorded using a combination of characters for a specific purpose. 
 Tooltip macros in FusionCharts enable you to use chart labels, data values, display values etc. as variables, and plain text, to form a complete customized tooltip text. 
@@ -56,7 +56,7 @@ The table below describes the attribute and macros used in the above example:
 	</tr>
 	<tr>
 		<td> `$displayValue` </td>
-		<td> This macro represents the value of the [displayValue](http://www.fusioncharts.com/dev/chart-attributes.html?chart=column2d&attributeName=data_displayValue){:target='_blank'} attribute of the `data` and `entity` objects. </td>
+		<td> This macro represents the value of the [displayValue](http://www.fusioncharts.com/dev/chart-attributes.html?chart=column2d&attributeName=data_displayValue) attribute of the `data` and `entity` objects. </td>
 	</tr>
 </table>
 

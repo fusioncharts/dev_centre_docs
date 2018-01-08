@@ -14,13 +14,13 @@ The blue coloured area shown in the chart below is the canvas area:
 
 In this section you will learn how to:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/canvas.html#changing-the-canvas-fill-color">Change the canvas fill color</a>
+* <a href="/basic-chart-configurations/canvas#changing-the-canvas-fill-color" class="smoth-scroll">Change the canvas fill color</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/canvas.html#customizing-the-canvas-border">Customize the canvas border</a>
+* <a href="/basic-chart-configurations/canvas#customizing-the-canvas-border" class="smoth-scroll">Customize the canvas border</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/canvas.html#using-gradient-fill-for-the-canvas">Use gradient fill for the canvas</a>
+* <a href="/basic-chart-configurations/canvas#using-gradient-fill-for-the-canvas" class="smoth-scroll">Use gradient fill for the canvas</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/canvas.html#configuring-the-3d-canvas">Configure a 3D canvas</a>
+* <a href="/basic-chart-configurations/canvas#configuring-the-3d-canvas" class="smoth-scroll">Configure a 3D canvas</a>
 
 ## Changing the canvas fill color
 

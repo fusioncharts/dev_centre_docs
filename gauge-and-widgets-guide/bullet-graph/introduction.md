@@ -10,11 +10,11 @@ A bullet graph is a variation of a bar graph and serves as a light weight replac
 
 In this section, you will be introduced to the:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/introduction.html#basics-of-bullet-graphs">Basics of bullet graphs</a>
+* <a href="/gauge-and-widgets-guide/bullet-graph/introduction#basics-of-bullet-graphs" class="smoth-scroll">Basics of bullet graphs</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/introduction.html#types-of-bullet-graphs">Types of bullet graphs</a>
+* <a href="/gauge-and-widgets-guide/bullet-graph/introduction#types-of-bullet-graphs" class="smoth-scroll">Types of bullet graphs</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/introduction.html#features-of-bullet-graphs">Features of bullet graphs</a>
+* <a href="/gauge-and-widgets-guide/bullet-graph/introduction#features-of-bullet-graphs" class="smoth-scroll">Features of bullet graphs</a>
 
 ## Basics of Bullet Graphs
 

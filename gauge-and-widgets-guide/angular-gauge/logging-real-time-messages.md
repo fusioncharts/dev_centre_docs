@@ -12,13 +12,13 @@ Essentially, the message logger is a text based scrollable window that can liste
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/logging-real-time-messages.html#setting-up-the-message-logger">Setup the message logger</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/logging-real-time-messages#setting-up-the-message-logger" class="smoth-scroll">Setup the message logger</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/logging-real-time-messages.html#streaming-messages-using-the-message-logger">Stream messages using the message logger</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/logging-real-time-messages#streaming-messages-using-the-message-logger" class="smoth-scroll">Stream messages using the message logger</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/logging-real-time-messages.html#handling-messages-in-javascript">Handle messages using the JavaScript API</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/logging-real-time-messages#handling-messages-in-javascript" class="smoth-scroll">Handle messages using the JavaScript API</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/logging-real-time-messages.html#configuring-the-message-logger-using-javascript-api">Configure the message logger using JavaScript API</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/logging-real-time-messages#configuring-the-message-logger-using-javascript-api" class="smoth-scroll">Configure the message logger using JavaScript API</a>
 
 <p class="text-info">To use message logger, you first need to make sure that you're using a real-time chart from FusionWidgets XT pack - i.e., charts which update themselves in real-time. Examples are real-time line chart, column chart, angular gauge, linear gauges etc.</p>
 

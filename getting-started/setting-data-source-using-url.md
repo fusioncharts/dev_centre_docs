@@ -10,8 +10,8 @@ FusionCharts lets you pass the complete JSON/XML chart data as a static string t
 
 In this section, you will be shown how to:
 
-* <a href="{{ site.baseurl }}getting-started/setting-data-source-using-url.html#loading-data-using-the-json-url">Load data using the JSON URL</a>
-* <a href="{{ site.baseurl }}getting-started/setting-data-source-using-url.html#loading-data-using-the-xml-url">Load data using the XML URL</a>
+* <a href="/getting-started/setting-data-source-using-url#loading-data-using-the-json-url" class="smoth-scroll">Load data using the JSON URL</a>
+* <a href="/getting-started/setting-data-source-using-url#loading-data-using-the-xml-url" class="smoth-scroll">Load data using the XML URL</a>
 
 The only difference between the two methods is the value that will be passed to the `dataFormat` attribute. For the first method, the dataFormat attribute takes json or xml as values, depending on the chart data. For the second method, the values will be jsonurl and xmlurl. 
 
@@ -19,7 +19,7 @@ This article explains how you can set the chart data using the URL of the corres
 
 ## Loading Data using the JSON URL
 
-Let us build the same revenue chart, which we built in the [first example]{% linkTo tutorials/getting-started/building-your-first-chart.md %} using JSON, and use a .json file as the data source in this example.
+Let us build the same revenue chart, which we built in the [first example](/getting-started/building-your-first-chart) using JSON, and use a .json file as the data source in this example.
 
 {% embed_chart getting-started-your-first-charts-building-your-chart-example1.js %}
 
@@ -186,6 +186,6 @@ In case something went wrong and you are unable to see the chart, check for the 
 
  *  If you get a __Loading Data__ or __Error in loading data__ message, check whether your JSON/XML data structure is correct, and there are no conflicts related to quotation marks in your code.
 
-Click here for more information on [Troubleshooting]{% linkTo tutorials/troubleshooting/debugger.md %}.
+Click here for more information on [Troubleshooting](/troubleshooting/debugger).
 
 Now that you’re familiar with the basics of FusionCharts Suite XT, let’s build some advanced chart types, including multiple series of data, real-time updates etc.

@@ -18,13 +18,13 @@ You can additionally provide the volume figure if you also want a volume chart t
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/candlestick-chart/configuring-a-candlestick-chart.html#setting-a-chart-type-for-the-price-chart">Set a chart type for the price chart</a>
+* <a href="/chart-guide/candlestick-chart/configuring-a-candlestick-chart#setting-a-chart-type-for-the-price-chart" class="smoth-scroll">Set a chart type for the price chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/candlestick-chart/configuring-a-candlestick-chart.html#setting-the-price-to-plot-for-the-line-price-chart">Set the price to plot for a line price chart</a>
+* <a href="/chart-guide/candlestick-chart/configuring-a-candlestick-chart#setting-the-price-to-plot-for-the-line-price-chart" class="smoth-scroll">Set the price to plot for a line price chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/candlestick-chart/configuring-a-candlestick-chart.html#showinghiding-the-volume-chart">Show/hide the volume chart</a>
+* <a href="/chart-guide/candlestick-chart/configuring-a-candlestick-chart#showinghiding-the-volume-chart" class="smoth-scroll">Show/hide the volume chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/candlestick-chart/configuring-a-candlestick-chart.html#configuring-trend-sets-and-trend-lines">Configure trend-lines, trend-sets, and vertical indicator lines</a>
+* <a href="/chart-guide/candlestick-chart/configuring-a-candlestick-chart#configuring-trend-sets-and-trend-lines" class="smoth-scroll">Configure trend-lines, trend-sets, and vertical indicator lines</a>
 
 ## Setting a Chart Type for the Price Chart
 

@@ -10,15 +10,15 @@ The Gantt chart supports scrolling for both, the data table and the Gantt view p
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/adding-scroll-to-chart.html#enabling-vertical-scrolling">Enable vertical scrolling</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/adding-scroll-to-chart#enabling-vertical-scrolling" class="smoth-scroll">Enable vertical scrolling</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/adding-scroll-to-chart.html#enabling-scroll-for-the-data-table">Enable scroll for the data table</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/adding-scroll-to-chart#enabling-scroll-for-the-data-table" class="smoth-scroll">Enable scroll for the data table</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/adding-scroll-to-chart.html#enabling-scrolling-for-the-gantt-pane">Enable scroll for the Gantt pane</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/adding-scroll-to-chart#enabling-scrolling-for-the-gantt-pane" class="smoth-scroll">Enable scroll for the Gantt pane</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/adding-scroll-to-chart.html#configuring-scroll-properties">Configure scroll properties</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/adding-scroll-to-chart#configuring-scroll-properties" class="smoth-scroll">Configure scroll properties</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/adding-scroll-to-chart.html#scroll-to-a-specific-date">Scroll to a particular date</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/adding-scroll-to-chart#scroll-to-a-specific-date" class="smoth-scroll">Scroll to a particular date</a>
 
 ## Enabling Vertical Scrolling
 

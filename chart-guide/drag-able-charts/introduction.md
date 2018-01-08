@@ -10,8 +10,8 @@ Drag-able charts are a special set of charts that allow you to visually manipula
 
 In this section, you will be introduced to the:
 
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/introduction.html#basics-of-drag-able-charts">Basics of drag-able charts</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/introduction.html#types-of-drag-able-charts">Types of drag-able charts</a>
+* <a href="/chart-guide/drag-able-charts/introduction#basics-of-drag-able-charts" class="smoth-scroll">Basics of drag-able charts</a>
+* <a href="/chart-guide/drag-able-charts/introduction#types-of-drag-able-charts" class="smoth-scroll">Types of drag-able charts</a>
 
 ## Basics of Drag-able Charts
 
@@ -19,9 +19,9 @@ Drag-able charts allow you to visually morph the data to update the figures on t
 
 FusionCharts Suite XT offers the following three types of drag-able charts:
 
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/introduction.html#drag-able-column-2d">Drag-able column 2D chart</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/introduction.html#drag-able-line-2d">Drag-able line 2D chart</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/introduction.html#drag-able-area-2d">Drag-able area 2D chart</a>
+* <a href="/chart-guide/drag-able-charts/introduction#drag-able-column-2d" class="smoth-scroll">Drag-able column 2D chart</a>
+* <a href="/chart-guide/drag-able-charts/introduction#drag-able-line-2d" class="smoth-scroll">Drag-able line 2D chart</a>
+* <a href="/chart-guide/drag-able-charts/introduction#drag-able-area-2d" class="smoth-scroll">Drag-able area 2D chart</a>
 
 Once you are done with the visual updating of data, you can submit the data:
 

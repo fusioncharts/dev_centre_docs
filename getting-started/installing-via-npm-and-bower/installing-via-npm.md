@@ -14,21 +14,21 @@ This section talks about how the **fusioncharts** and the **fusionmaps** package
 
 **Step 1**: Install the FusionCharts package.
 
-   ```javascript
-   npm install fusioncharts
-   ```
+```javascript
+npm install fusioncharts
+```
    
 **Step 2**: Load FusionCharts using `require`.
 
-   ```javascript
-   var FusionCharts = require("fusioncharts");
-   ```
+```javascript
+var FusionCharts = require("fusioncharts");
+```
    
 **Step 3**: Load the charts module using `require`.
 
-   ```javascript
-   require("fusioncharts/fusioncharts.charts")(FusionCharts);
-   ```
+```javascript
+require("fusioncharts/fusioncharts.charts")(FusionCharts);
+```
    
 **Step 4**: Create the FusionCharts instance required to render the chart.
 
@@ -66,7 +66,7 @@ This section talks about how the **fusioncharts** and the **fusionmaps** package
    ```
 
    
-**Step 4**: Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**, where **MAP_ALIAS** gets replaced by the map's JavaScript alias. Click [here](http://www.fusioncharts.com/dev/getting-started/list-of-maps.html){:target='_blank'} to get the alias names for all map definition files. Map definition files for all maps to be rendered in the application have to be included. <br> <br> Therefore, assuming that you need to render the world map, the alias name __world__ replaces __MAP_ALIAS__ in the format.
+**Step 4**: Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**, where **MAP_ALIAS** gets replaced by the map's JavaScript alias. Click [here](http://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. Map definition files for all maps to be rendered in the application have to be included. <br> <br> Therefore, assuming that you need to render the world map, the alias name __world__ replaces __MAP_ALIAS__ in the format.
    
 ```javascript
    require("fusioncharts/maps/fusioncharts.world")(FusionCharts);
@@ -103,7 +103,7 @@ This section talks about how the **fusioncharts** and the **fusionmaps** package
 	require("fusioncharts/fusioncharts.fusionwidgets")(FusionCharts);
 	```
 
-<p class="text-info"> To know which chart belongs to which package, refer the [list of charts](http://www.fusioncharts.com/dev/getting-started/list-of-charts.html){:target='_blank'}. </p>
+<p class="text-info"> To know which chart belongs to which package, refer the [list of charts](http://www.fusioncharts.com/dev/getting-started/list-of-charts.html). </p>
 
 - To render a map, load the FusionMaps module and the map definition file for that map:
 
@@ -112,7 +112,7 @@ This section talks about how the **fusioncharts** and the **fusionmaps** package
 require("fusioncharts/maps/fusioncharts.world")(FusionCharts);
 	```
 
-<p class="text-info"> To know the map definition file names, refer the [list of maps](http://www.fusioncharts.com/dev/getting-started/list-of-maps.html){:target='_blank'}. </p>
+<p class="text-info"> To know the map definition file names, refer the [list of maps](http://www.fusioncharts.com/dev/getting-started/list-of-maps.html). </p>
 
 ## Chart-specific Dependencies for npm
 

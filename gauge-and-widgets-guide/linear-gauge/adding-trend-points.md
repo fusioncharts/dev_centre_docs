@@ -10,9 +10,9 @@ Trend points are elements that can be used to show a target value on the gauge, 
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/adding-trend-points.html#adding-trend-points-in-a-linear-gauge">Add trend-points in a linear gauge</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/adding-trend-points#adding-trend-points-in-a-linear-gauge" class="smoth-scroll">Add trend-points in a linear gauge</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/adding-trend-points.html#trend-zones">Add trend-zones in a linear gauge</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/adding-trend-points#trend-zones" class="smoth-scroll">Add trend-zones in a linear gauge</a>
 
 ## Adding Trend-points in a Linear Gauge
 

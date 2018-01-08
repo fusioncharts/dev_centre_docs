@@ -12,13 +12,13 @@ The zero plane appears in the column, line, scatter, bubble and the area charts.
 
 This article talks about:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/zero-plane.html#customizing-the-zero-plane-in-a-2d-and-3d-chart">Customizing the zero plane in a 2D and 3D chart</a>
+* <a href="/basic-chart-configurations/zero-plane#customizing-the-zero-plane-in-a-2d-and-3d-chart" class="smoth-scroll">Customizing the zero plane in a 2D and 3D chart</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/zero-plane.html#configuring-the-vertical-zero-plane-in-the-scatter-and-bubble-charts">Configuring the vertical zero plane in the Scatter and Bubble Charts</a>
+* <a href="/basic-chart-configurations/zero-plane#configuring-the-vertical-zero-plane-in-the-scatter-and-bubble-charts" class="smoth-scroll">Configuring the vertical zero plane in the Scatter and Bubble Charts</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/zero-plane.html#showinghiding-the-zero-plane-value">Showing/hiding the zero plane values</a>, and
+* <a href="/basic-chart-configurations/zero-plane#showinghiding-the-zero-plane-value" class="smoth-scroll">Showing/hiding the zero plane values</a>, and
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/zero-plane.html#showinghiding-the-zero-plane">Showing/hiding the zero plane</a>
+* <a href="/basic-chart-configurations/zero-plane#showinghiding-the-zero-plane" class="smoth-scroll">Showing/hiding the zero plane</a>
 
 ## Customizing the Zero Plane in a 2D and 3D chart
 

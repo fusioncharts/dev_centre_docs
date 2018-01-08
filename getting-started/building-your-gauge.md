@@ -28,16 +28,15 @@ So any score <50 is bad, and gets a red color. Any score between 50 and 75 is av
 
 Let's now get to building the gauge. There are 5 simple steps to building a chart using FusionWidgets XT
 
-
-1. [Installing FusionCharts Suite XT for your application](/getting-started/building-your-gauge?id=installing-fusioncharts-suite-xt-for-your-application).
-2. [Converting your data to a JSON or XML format](/getting-started/building-your-gauge?id=converting-your-data-to-fusioncharts-suite-xt-jsonxml-format)
-3. [Including the FusionCharts Suite XT JavaScript library in your HTML page](/getting-started/building-your-gauge?id=including-fusioncharts-suite-xt-library-in-your-page)
-4. [Creating a container &lt;div&gt; for the chart](/getting-started/building-your-gauge?id=creating-a-container-for-your-gauge-in-the-web-page)
-5. [Using the new `FusionCharts()` constructor to create the chart instance, and then calling the `render()` method](/getting-started/building-your-gauge?id=creating-an-instance-of-the-gauge)
+1. <a href="/getting-started/building-your-gauge#installing-fusioncharts-suite-xt-for-your-application" class="smoth-scroll">Installing FusionCharts Suite XT for your application</a>
+2. <a href="/getting-started/building-your-gauge#converting-your-data-to-fusioncharts-suite-xt-jsonxml-format" class="smoth-scroll">Converting your data to a JSON or XML format</a>
+3. <a href="/getting-started/building-your-gauge#including-fusioncharts-suite-xt-library-in-your-page" class="smoth-scroll">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
+4. <a href="/getting-started/building-your-gauge#creating-a-container-for-your-gauge-in-the-web-page" class="smoth-scroll">Creating a container `<div>` for the chart</a>
+5. <a href="/getting-started/building-your-gauge#creating-an-instance-of-the-gauge" class="smoth-scroll">Using the new `FusionCharts()` constructor to create the chart instance, and then calling the `render()` method</a>
 
 ### Installing FusionCharts Suite XT for your application
 
-To see whether you have FusionCharts Suite XT installed for your web application, as detailed [here]{% linkTo tutorials/getting-started/installation.md %}, check for the following files in your `fusioncharts` folder:
+To see whether you have FusionCharts Suite XT installed for your web application, as detailed [here](/getting-started/installation), check for the following files in your `fusioncharts` folder:
 
   * `fusioncharts.charts.js`
   * `fusioncharts.js`
@@ -86,7 +85,7 @@ This will later allow us to reference the `chart-container` id and render a gaug
 
 The final step is to create an instance of an angular gauge, initialize it with the correct `width`, `height` and then set the JSON data source.
 
-```javascript
+```html
 <script type="text/javascript">
 FusionCharts.ready(function () {
     var csatGauge = new FusionCharts({
@@ -224,7 +223,7 @@ In case something went wrong and you are unable to see the gauge, check for the 
 
  * If you get a __Loading Data__ or __Error in loading data__ message, check whether your JSON data structure is correct, and there are no conflicts related to quotation marks in your code.
 
-Click here for more information on [Troubleshooting]{% linkTo tutorials/troubleshooting/debugger.md %}.
+Click here for more information on [Troubleshooting](/troubleshooting/debugger).
 
 Now that Harry can monitor his weekly customer satisfaction score using this gauge, let's build a map to plot his sales across various states in US.
 

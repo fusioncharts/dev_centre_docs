@@ -8,13 +8,13 @@ chartPresent: true
 
 Cross line is a vertical line/area used as quick reference for the data plots. So what it does, is, when you hover on the canvas a line/area appears highlighting the data plots along with the information in a tooltip. The tooltip that appears is consolidated with all the information required, for example, data values, labels of each data plot and also the color of the data plots. A cross line appears as shown in the image below: 
 
-![Cross Line]({{ site.baseurl }}assets/images/basic-chart-configurations-cross-line-1.png)
+![Cross Line](/assets/images/basic-chart-configurations-cross-line-1.png)
 
 In this section learn how to:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/cross-line.html#customize-the-cross-line">Customize the Cross line</a>
+* <a href="/basic-chart-configurations/cross-line#customize-the-cross-line" class="smoth-scroll">Customize the Cross line</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/cross-line.html#configure-the-consolidated-tooltip">Configure the consolidated tooltip</a>
+* <a href="/basic-chart-configurations/cross-line#configure-the-consolidated-tooltip" class="smoth-scroll">Configure the consolidated tooltip</a>
 
 ## Customize the Cross line
 
@@ -43,7 +43,7 @@ Given below is the attribute used to customize the color of the cross line:
 
 You can customize the opacity of the cross line using `crossLineAlpha` attribute. A multi-series column chart with a customized transparency (set to `20`) of the cross line looks as shown below:
 
-![Cross Line with customized opacity]({{ site.baseurl }}assets/images/basic-chart-configurations-cross-line-2.png)
+![Cross Line with customized opacity](/assets/images/basic-chart-configurations-cross-line-2.png)
 
 Given below is the attribute used to customize the opacity of the cross line:
 
@@ -91,11 +91,11 @@ Tooltip is a common element, used to display information when you hover on a par
 
 In the above chart, by default the `plotColorInTooltip` attribute has been set to `1`. Set plotColorInTooltip: `0`, to turn off the color of the plot in the tooltip as shown in the image below:
 
-![Cross Line with customized tooltip]({{ site.baseurl }}assets/images/basic-chart-configurations-cross-line-3.png)
+![Cross Line with customized tooltip](/assets/images/basic-chart-configurations-cross-line-3.png)
 
 Apply `tooltipGrayOutColor` attribute to specify the color of the unfocused plot in the tooltip. In the image below the label color of the unfocused plot in the tooltip has been set to `#3377ff`  as shown in the image below:
 
-![Cross Line with customized grayout in tooltip]({{ site.baseurl }}assets/images/basic-chart-configurations-cross-line-4.png)
+![Cross Line with customized grayout in tooltip](/assets/images/basic-chart-configurations-cross-line-4.png)
 
 The consolidated tooltip can be customized using following attributes:
 

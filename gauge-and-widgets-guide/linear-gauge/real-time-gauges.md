@@ -10,15 +10,15 @@ The linear gauge is a real-time chart, which can continuously request new data f
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/real-time-gauges.html#configuring-real-time-updates-using-javascript-api">Configure real-time updates using JavaScript API</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/real-time-gauges#configuring-real-time-updates-using-javascript-api" class="smoth-scroll">Configure real-time updates using JavaScript API</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/real-time-gauges.html#real-time-updates-using-server-side-script">Configure real-time updates using server-side script</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/real-time-gauges#real-time-updates-using-server-side-script" class="smoth-scroll">Configure real-time updates using server-side script</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/real-time-gauges.html#stoppingrestarting-updates">Stop and restart updates</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/real-time-gauges#stoppingrestarting-updates" class="smoth-scroll">Stop and restart updates</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/real-time-gauges.html#configuring-real-time-events">Configure events associated with real-time gauges</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/real-time-gauges#configuring-real-time-events" class="smoth-scroll">Configure events associated with real-time gauges</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/real-time-gauges.html#troubleshooting">Troubleshoot real-time gauges</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/real-time-gauges#troubleshooting" class="smoth-scroll">Troubleshoot real-time gauges</a>
 
 ## Configuring Real-time Updates using JavaScript API
 
@@ -190,7 +190,7 @@ Given below is a brief description of the attributes used to configure real-time
   </tr>
   <tr>
     <td>`dataStamp`</td>
-    <td>Constantly changing data stamp that can be added to the real-time data URL, so as to maintain a state. For more information, read the {% linkTo tutorials/chart-guide/real-time-charts/adding-data-stamp.md %} article.
+    <td>Constantly changing data stamp that can be added to the real-time data URL, so as to maintain a state. For more information, read the (/chart-guide/real-time-charts/adding-data-stamp) article.
     </td>
   </tr>
 </table>

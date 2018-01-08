@@ -10,9 +10,9 @@ One of the simplest gauges available in the FusionCharts Suite XT, the bulb gaug
 
 In this section, you will be introduced to the:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/introduction.html#basics-of-the-bulb-gauge">Basics of bulb gauge</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/introduction#basics-of-the-bulb-gauge" class="smoth-scroll">Basics of bulb gauge</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/introduction.html#elements-of-the-bulb-gauge">Elements of bulb gauge</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/introduction#elements-of-the-bulb-gauge" class="smoth-scroll">Elements of bulb gauge</a>
 
 ## Basics of the Bulb Gauge
 
@@ -34,7 +34,7 @@ A bulb gauge consists of the following elements:
 
 Before going into the details of each of them, let us have a look at a bulb gauge with the basic elements labeled:
 
-![image Bulb gauge - basic elements]({{ site.baseurl }}assets/images/bulb-gauge-introduction-1.png)
+![image Bulb gauge - basic elements](/assets/images/bulb-gauge-introduction-1.png)
 
 ### Color Range
 

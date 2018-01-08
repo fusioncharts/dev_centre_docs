@@ -10,9 +10,9 @@ Font properties for a chart include the font family, font size, and font color f
 
 This section will describe how you can customize the font properties for a chart. This section discusses:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/fonts.html#base-font-group">Base font group</a>
+* <a href="/basic-chart-configurations/fonts#base-font-group" class="smoth-scroll">Base font group</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/fonts.html#outside-canvas-base-font-group">Outside canvas base font group</a>
+* <a href="/basic-chart-configurations/fonts#outside-canvas-base-font-group" class="smoth-scroll">Outside canvas base font group</a>
 
 ## Base font group
 

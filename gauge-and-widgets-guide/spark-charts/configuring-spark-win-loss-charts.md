@@ -10,15 +10,15 @@ FusionCharts Suite XT allows you to configure the functional and cosmetic proper
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts.html#configuring-period-blocks">Configure period blocks</a>
+* <a href="/gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts#configuring-period-blocks" class="smoth-scroll">Configure period blocks</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts.html#configuring-win-loss-and-draw-colors">Configure win, loss, and draw colors</a>
+* <a href="/gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts#configuring-win-loss-and-draw-colors" class="smoth-scroll">Configure win, loss, and draw colors</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts.html#configuring-colors-to-show-scoreless-matches">Configure colors to show matches with no scores by a side</a>
+* <a href="/gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts#configuring-colors-to-show-scoreless-matches" class="smoth-scroll">Configure colors to show matches with no scores by a side</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts.html#showinghiding-chart-value">Show/hide chart value</a>
+* <a href="/gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts#showinghiding-chart-value" class="smoth-scroll">Show/hide chart value</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts.html#configuring-hover-effects">Configure hover effects</a>
+* <a href="/gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts#configuring-hover-effects" class="smoth-scroll">Configure hover effects</a>
 
 ## Configuring Period Blocks
 

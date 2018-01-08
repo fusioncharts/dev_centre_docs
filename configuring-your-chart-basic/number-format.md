@@ -10,31 +10,31 @@ FusionCharts Suite XT offers multiple options to format numbers on the chart. Yo
 
 This section talks about:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#number-formatting-basics">Number formatting basics</a>
+* <a href="/basic-chart-configurations/number-format#number-formatting-basics" class="smoth-scroll">Number formatting basics</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#configuring-decimal-places-rounding-off">Configuring decimal places (rounding off)</a>
+    * <a href="/basic-chart-configurations/number-format#configuring-decimal-places-rounding-off" class="smoth-scroll">Configuring decimal places (rounding off)</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#configuring-decimal-places-rounding-off-with-trailing-zeroes">Configuring decimal places (rounding off with trailing zeroes)</a>
+    * <a href="/basic-chart-configurations/number-format#configuring-decimal-places-rounding-off-with-trailing-zeroes" class="smoth-scroll">Configuring decimal places (rounding off with trailing zeroes)</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#automatic-number-formatting">Automatic number formatting</a>
+    * <a href="/basic-chart-configurations/number-format#automatic-number-formatting" class="smoth-scroll">Automatic number formatting</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#setting-custom-thousand-and-decimal-separator-character">Setting custom thousand and decimal separator character</a>
+    * <a href="/basic-chart-configurations/number-format#setting-custom-thousand-and-decimal-separator-character" class="smoth-scroll">Setting custom thousand and decimal separator character</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#configuring-thousand-separator-position">Configuring thousand separator position</a>
+    * <a href="/basic-chart-configurations/number-format#configuring-thousand-separator-position" class="smoth-scroll">Configuring thousand separator position</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#adding-number-prefix-and-suffix">Adding number prefix and suffix</a>
+    * <a href="/basic-chart-configurations/number-format#adding-number-prefix-and-suffix" class="smoth-scroll">Adding number prefix and suffix</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#number-scaling">Number Scaling</a>
+* <a href="/basic-chart-configurations/number-format#number-scaling" class="smoth-scroll">Number Scaling</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#basic-example">Basic example</a>
+    * <a href="/basic-chart-configurations/number-format#basic-example" class="smoth-scroll">Basic example</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#adding-billions-to-default-scaling">Adding billions to default scaling</a>
+    * <a href="/basic-chart-configurations/number-format#adding-billions-to-default-scaling" class="smoth-scroll">Adding billions to default scaling</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#putting-time-in-scale">Putting time in scale</a>
+    * <a href="/basic-chart-configurations/number-format#putting-time-in-scale" class="smoth-scroll">Putting time in scale</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#storage-size-example">Storage size example</a>
+    * <a href="/basic-chart-configurations/number-format#storage-size-example" class="smoth-scroll">Storage size example</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#recursive-number-scaling">Recursive number scaling</a>
+    * <a href="/basic-chart-configurations/number-format#recursive-number-scaling" class="smoth-scroll">Recursive number scaling</a>
 
 ## Number formatting basics
 

@@ -10,8 +10,8 @@ FusionCharts Suite XT lets you configure the functional aspects of drag-node cha
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/configuring-drag-node-charts.html#enablingdisabling-the-dragging-feature">Enable/disable the dragging feature for drag-node charts</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/configuring-drag-node-charts.html#switching-between-modes">Switch between modes</a>
+* <a href="/chart-guide/drag-node-chart/configuring-drag-node-charts#enablingdisabling-the-dragging-feature" class="smoth-scroll">Enable/disable the dragging feature for drag-node charts</a>
+* <a href="/chart-guide/drag-node-chart/configuring-drag-node-charts#switching-between-modes" class="smoth-scroll">Switch between modes</a>
 
 ## Enabling/Disabling the Dragging Feature
 

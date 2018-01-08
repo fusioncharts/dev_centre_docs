@@ -12,15 +12,15 @@ In a box and whisker chart, along with the dataset seriesname, the legend also s
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-quartile-deviation.html#showinghiding-the-quartile-deviation-icon">Show/hide the quartile deviation icon in the legend</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-quartile-deviation#showinghiding-the-quartile-deviation-icon" class="smoth-scroll">Show/hide the quartile deviation icon in the legend</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-quartile-deviation.html#showinghiding-individual-quartile-deviation-values">Show/hide the individual quartile deviation values</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-quartile-deviation#showinghiding-individual-quartile-deviation-values" class="smoth-scroll">Show/hide the individual quartile deviation values</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-quartile-deviation.html#customizing-the-quartile-deviation-icon">Customize the quartile deviation icon</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-quartile-deviation#customizing-the-quartile-deviation-icon" class="smoth-scroll">Customize the quartile deviation icon</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-quartile-deviation.html#drawing-quartile-deviation-connectors">Draw quartile deviation connectors</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-quartile-deviation#drawing-quartile-deviation-connectors" class="smoth-scroll">Draw quartile deviation connectors</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-quartile-deviation.html#connecting-null-data">Connect null data</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-quartile-deviation#connecting-null-data" class="smoth-scroll">Connect null data</a>
 
 ## Showing/Hiding the Quartile Deviation Icon
 

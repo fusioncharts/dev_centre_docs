@@ -8,23 +8,23 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT]{% linkTo tutorials/getting-started/building-your-first-chart.md %}{:target='_blank'}
+* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
 
-* [Installing the React-FusionCharts Component]{% linkTo tutorials/using-with-javascript-libraries/reactjs/introduction.md %}{:target='_blank'}
+* [Installing the React-FusionCharts Component](/using-with-javascript-libraries/reactjs/introduction)
 
-* [Installing the React-FusionCharts Component via NPM]{% linkTo tutorials/using-with-javascript-libraries/reactjs/install-fusioncharts-reactjs-component-via-npm.md %}{:target='_blank'}
+* [Installing the React-FusionCharts Component via NPM](/using-with-javascript-libraries/reactjs/install-fusioncharts-reactjs-component-via-npm)
 
-* [Creating Charts Using the React-FusionCharts Component]{% linkTo tutorials/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component.md %}{:target='_blank'}
+* [Creating Charts Using the React-FusionCharts Component](/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component)
 
-* [Configuring Charts Using the ReactJS Props Object]{% linkTo tutorials/using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object.md %}{:target='_blank'}
+* [Configuring Charts Using the ReactJS Props Object](/using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object)
 
-In addition to an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/){:target='_blank'} for plotting static and real-time data, FusionCharts Suite XT includes several advanced features that let you add more context to your chart and make data visualization easy. These features include [annotations]{% linkTo tutorials/advanced-charting/annotations/introduction.md %}{:target='_blank'}, [drill-down charts]{% linkTo tutorials/advanced-charting/drill-down/simple-drill-down.md %}{:target='_blank'}, [trend-lines]{% linkTo tutorials/configuring-your-chart-basic/trend-lines-and-zones.md %}{:target='_blank'}, and [events]{% linkTo tutorials/advanced-charting/events/introduction-to-events.md %}{:target='_blank'}.
+In addition to an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/) for plotting static and real-time data, FusionCharts Suite XT includes several advanced features that let you add more context to your chart and make data visualization easy. These features include [annotations](/advanced-charting/annotations/introduction).
 
 This article focuses on how you can use the React-FusionCharts component to: 
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/reactjs/configuring-advanced-features-using-reactjs.html#adding-trend-lines-on-a-chart">Add trend-lines on a chart</a>
+* <a href="/using-with-javascript-libraries/reactjs/configuring-advanced-features-using-reactjs#adding-trend-lines-on-a-chart" class="smoth-scroll">Add trend-lines on a chart</a>
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/reactjs/configuring-advanced-features-using-reactjs.html#adding-annotations-on-charts">Add annotations on a chart</a>
+* <a href="/using-with-javascript-libraries/reactjs/configuring-advanced-features-using-reactjs#adding-annotations-on-charts" class="smoth-scroll">Add annotations on a chart</a>
 
 ## Adding Trend-lines on a Chart
 

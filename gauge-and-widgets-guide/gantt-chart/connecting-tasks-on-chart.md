@@ -10,9 +10,9 @@ You can draw connectors between any two tasks on the chart to show the process f
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/connecting-tasks-on-chart.html#adding-connectors">Add connectors</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/connecting-tasks-on-chart#adding-connectors" class="smoth-scroll">Add connectors</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/connecting-tasks-on-chart.html#configuring-hover-effect-for-the-connectors">Configure the hover effect for connectors</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/connecting-tasks-on-chart#configuring-hover-effect-for-the-connectors" class="smoth-scroll">Configure the hover effect for connectors</a>
 
 ## Adding Connectors
 

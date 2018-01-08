@@ -13,8 +13,8 @@ Below is a list of status and error messages that can be set for any chart in th
 
 In this section, you will be shown how yoou can:
 
-* [Set custom messages]({{ site.baseurl }}advanced-chart-configurations/tutorials/change-chart-messages.html#setting-custom-messages)
-* [Use style for chart messages]({{ site.baseurl }}advanced-chart-configurations/tutorials/change-chart-messages.html#styling-chart-messages)
+* [Set custom messages](/advanced-chart-configurations/tutorials/change-chart-messages.html#setting-custom-messages)
+* [Use style for chart messages](/advanced-chart-configurations/tutorials/change-chart-messages.html#styling-chart-messages)
 
 
 <table>

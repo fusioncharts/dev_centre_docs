@@ -309,7 +309,7 @@ The links should be defined in the format `newchart-dataformat-datasource`. For 
 
 We’ll start with the data for the year 2011. In the code below, you can see that there are two levels of linked data, one for the yearly data and another for the quarterly data. The corresponding linked charts are defined inside the `linkeddata` arrays.
 
-![server side program as shown in diagram]({{ site.baseurl }}assets/images/xjson.jpg)
+![server side program as shown in diagram](/assets/images/xjson.jpg)
 
 The final JSON code that we need for this sample should be as shown below:
 
@@ -1661,5 +1661,5 @@ The final chart, with two levels of drill-down, will look as shown below:
 {% embed_chart drill-down-charts-using-php-mysql-example-1.js %}
 
 <div style="text-align: center;">
-  <a style="display: inline-block; width: auto; outline: none; padding: 20px 60px; margin-bottom: 10px; font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight: 600; color: #fff; text-align: center; vertical-align: middle; background-color: #167ed5; -webkit-border-radius: 2px; -webkit-border-radius: 0.2rem; -moz-border-radius: 2px; -moz-border-radius: 0.2rem; border-radius: 2px; border-radius: 0.2rem; cursor: pointer; -webkit-appearance: none; text-decoration: none;" href="{{ site.baseurl }}resources/downloads/php-mysql-multilevel-drill-down.zip" target="_blank" title="click me to download" >Download the Sample</a>
+  <a style="display: inline-block; width: auto; outline: none; padding: 20px 60px; margin-bottom: 10px; font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight: 600; color: #fff; text-align: center; vertical-align: middle; background-color: #167ed5; -webkit-border-radius: 2px; -webkit-border-radius: 0.2rem; -moz-border-radius: 2px; -moz-border-radius: 0.2rem; border-radius: 2px; border-radius: 0.2rem; cursor: pointer; -webkit-appearance: none; text-decoration: none;" href="/resources/downloads/php-mysql-multilevel-drill-down.zip" target="_blank" title="click me to download" >Download the Sample</a>
 </div>
