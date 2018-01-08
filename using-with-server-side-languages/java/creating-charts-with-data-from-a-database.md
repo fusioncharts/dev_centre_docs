@@ -14,9 +14,9 @@ This section showcases how you can do this using the FusionCharts JSP wrapper.
 
 In this section, you will be shown how you can:
 
-* <a href="/using-with-server-side-languages/java/creating-charts-with-data-from-a-database.html#creating-a-column-2d-chart">Create a simple column 2D chart by fetching data from a database</a>
+* <a href="/using-with-server-side-languages/java/creating-charts-with-data-from-a-database#creating-a-column-2d-chart" class="smoth-scroll">Create a simple column 2D chart by fetching data from a database</a>
 
-* <a href="/using-with-server-side-languages/java/creating-charts-with-data-from-a-database.html#creating-a-drill-down-chart">Create a drill-down chart by fetching data from a database</a>
+* <a href="/using-with-server-side-languages/java/creating-charts-with-data-from-a-database#creating-a-drill-down-chart" class="smoth-scroll">Create a drill-down chart by fetching data from a database</a>
 
 
 <p class="text-info">Before you proceed, make sure you have <a href="/using-with-server-side-languages/java/introduction.html" target="_blank">installed and set up the plugin </a> correctly. Although you can create all kinds of charts using this method, in this section we will focus on only these two examples.</p>

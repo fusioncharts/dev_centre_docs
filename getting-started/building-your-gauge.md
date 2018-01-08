@@ -28,11 +28,11 @@ So any score <50 is bad, and gets a red color. Any score between 50 and 75 is av
 
 Let's now get to building the gauge. There are 5 simple steps to building a chart using FusionWidgets XT
 
-1. <a href="/getting-started/building-your-gauge.html#installing-fusioncharts-suite-xt-for-your-application">Installing FusionCharts Suite XT for your application</a>
-2. <a href="/getting-started/building-your-gauge.html#converting-your-data-to-fusioncharts-suite-xt-jsonxml-format">Converting your data to a JSON or XML format</a>
-3. <a href="/getting-started/building-your-gauge.html#including-fusioncharts-suite-xt-library-in-your-page">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
-4. <a href="/getting-started/building-your-gauge.html#creating-a-container-for-your-gauge-in-the-web-page">Creating a container `<div>` for the chart</a>
-5. <a href="/getting-started/building-your-gauge.html#creating-an-instance-of-the-gauge">Using the new `FusionCharts()` constructor to create the chart instance, and then calling the `render()` method</a>
+1. <a href="/getting-started/building-your-gauge#installing-fusioncharts-suite-xt-for-your-application" class="smoth-scroll">Installing FusionCharts Suite XT for your application</a>
+2. <a href="/getting-started/building-your-gauge#converting-your-data-to-fusioncharts-suite-xt-jsonxml-format" class="smoth-scroll">Converting your data to a JSON or XML format</a>
+3. <a href="/getting-started/building-your-gauge#including-fusioncharts-suite-xt-library-in-your-page" class="smoth-scroll">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
+4. <a href="/getting-started/building-your-gauge#creating-a-container-for-your-gauge-in-the-web-page" class="smoth-scroll">Creating a container `<div>` for the chart</a>
+5. <a href="/getting-started/building-your-gauge#creating-an-instance-of-the-gauge" class="smoth-scroll">Using the new `FusionCharts()` constructor to create the chart instance, and then calling the `render()` method</a>
 
 ### Installing FusionCharts Suite XT for your application
 

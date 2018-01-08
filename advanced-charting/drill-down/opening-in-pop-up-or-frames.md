@@ -22,9 +22,9 @@ FusionCharts Suite XT lets you define simple links that:
 
 In this section, you will be shown how you can:
 
-* <a href="/advanced-chart-configurations/drill-down/opening-in-pop-up-or-frames.html#opening-links-in-pop-up-windows">open links in pop-up windows</a>
+* <a href="/advanced-chart-configurations/drill-down/opening-in-pop-up-or-frames#opening-links-in-pop-up-windows" class="smoth-scroll">open links in pop-up windows</a>
 
-* <a href="/advanced-chart-configurations/drill-down/opening-in-pop-up-or-frames.html#opening-links-in-frames">open links in frames</a>
+* <a href="/advanced-chart-configurations/drill-down/opening-in-pop-up-or-frames#opening-links-in-frames" class="smoth-scroll">open links in frames</a>
 
 ## Opening Links in Pop-up Windows
 

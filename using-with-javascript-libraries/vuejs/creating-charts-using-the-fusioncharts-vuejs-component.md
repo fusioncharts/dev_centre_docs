@@ -9,11 +9,11 @@ The following examples use the vue-fusioncharts component to create and configur
 
 This article talks about how you can:
 
-* <a href="/using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component.html#create-a-simple-chart-using-the-vue-fusioncharts-component">Create a simple chart using the Vue-FusionCharts component</a>
+* <a href="/using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component#create-a-simple-chart-using-the-vue-fusioncharts-component" class="smoth-scroll">Create a simple chart using the Vue-FusionCharts component</a>
 
-* <a href="/using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component.html#provide-chart-attributes-using-separate-objects">Provide chart attributes using separate objects</a>
+* <a href="/using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component#provide-chart-attributes-using-separate-objects" class="smoth-scroll">Provide chart attributes using separate objects</a>
 
-* <a href="/using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component.html#fetch-chart-data-from-an-external-file">Fetch chart data from an external file</a>
+* <a href="/using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component#fetch-chart-data-from-an-external-file" class="smoth-scroll">Fetch chart data from an external file</a>
 
 
 ## Create a simple chart using the vue-fusioncharts component

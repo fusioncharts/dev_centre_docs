@@ -10,13 +10,13 @@ FusionCharts Suite XT allows you to customize the appearance of standard charts.
 
 In this section, you will be shown how you can:
 
-* <a href="/chart-guide/standard-charts/configuring-standard-charts.html#plotting-trend-elements-on-a-standard-chart">Plot trend elements on a standard chart</a>
+* <a href="/chart-guide/standard-charts/configuring-standard-charts#plotting-trend-elements-on-a-standard-chart" class="smoth-scroll">Plot trend elements on a standard chart</a>
 
-* <a href="/chart-guide/standard-charts/configuring-standard-charts.html#plotting-vertical-line-elements">Plot vertical line elements</a>
+* <a href="/chart-guide/standard-charts/configuring-standard-charts#plotting-vertical-line-elements" class="smoth-scroll">Plot vertical line elements</a>
 
-* <a href="/chart-guide/standard-charts/configuring-standard-charts.html#changing-chart-type">Change the chart type dynamically</a>
+* <a href="/chart-guide/standard-charts/configuring-standard-charts#changing-chart-type" class="smoth-scroll">Change the chart type dynamically</a>
 
-* <a href="/chart-guide/standard-charts/configuring-standard-charts.html#set-data-skipping">Set Data Skipping</a>
+* <a href="/chart-guide/standard-charts/configuring-standard-charts#set-data-skipping" class="smoth-scroll">Set Data Skipping</a>
 
 
 ## Plotting Trend Elements on a Standard Chart

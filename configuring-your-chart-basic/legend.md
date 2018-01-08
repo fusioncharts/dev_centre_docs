@@ -16,27 +16,27 @@ Each series is represented by it’s own icon in the legend.
 
 This article talks about:
 
-* <a href="/basic-chart-configurations/legend.html#showinghiding-the-corresponding-data-series-when-a-legend-item-is-clicked">Showing/hiding the corresponding data series when a legend icon is clicked</a>
+* <a href="/basic-chart-configurations/legend#showinghiding-the-corresponding-data-series-when-a-legend-item-is-clicked" class="smoth-scroll">Showing/hiding the corresponding data series when a legend icon is clicked</a>
 
-* <a href="/basic-chart-configurations/legend.html#highlighting-the-corresponding-data-series-when-a-legend-text-is-hovered-over">Highlighting the corresponding data series when a legend text is hovered over</a>
+* <a href="/basic-chart-configurations/legend#highlighting-the-corresponding-data-series-when-a-legend-text-is-hovered-over" class="smoth-scroll">Highlighting the corresponding data series when a legend text is hovered over</a>
 
-* <a href="/basic-chart-configurations/legend.html#setting-the-legend-position">Setting legend position</a>
+* <a href="/basic-chart-configurations/legend#setting-the-legend-position" class="smoth-scroll">Setting legend position</a>
 
-* <a href="/basic-chart-configurations/legend.html#configuring-legend-icon-size">Configuring legend icon size</a>
+* <a href="/basic-chart-configurations/legend#configuring-legend-icon-size" class="smoth-scroll">Configuring legend icon size</a>
 
-* <a href="/basic-chart-configurations/legend.html#drawing-a-custom-legend-icon-shape">Drawing a custom legend icon</a>
+* <a href="/basic-chart-configurations/legend#drawing-a-custom-legend-icon-shape" class="smoth-scroll">Drawing a custom legend icon</a>
 
-* <a href="/basic-chart-configurations/legend.html#customizing-legend-scroll-bar">Customizing legend scroll bar</a>
+* <a href="/basic-chart-configurations/legend#customizing-legend-scroll-bar" class="smoth-scroll">Customizing legend scroll bar</a>
 
-* <a href="/basic-chart-configurations/legend.html#reversing-legend-order">Reversing legend order</a>
+* <a href="/basic-chart-configurations/legend#reversing-legend-order" class="smoth-scroll">Reversing legend order</a>
 
-* <a href="/basic-chart-configurations/legend.html#hiding-legend">Hiding legend</a>
+* <a href="/basic-chart-configurations/legend#hiding-legend" class="smoth-scroll">Hiding legend</a>
 
-* <a href="/basic-chart-configurations/legend.html#hiding-series-upon-loading">Hiding series upon loading</a>
+* <a href="/basic-chart-configurations/legend#hiding-series-upon-loading" class="smoth-scroll">Hiding series upon loading</a>
 
-* <a href="/basic-chart-configurations/legend.html#customizing-legend-appearance">Customizing legend appearance</a>
+* <a href="/basic-chart-configurations/legend#customizing-legend-appearance" class="smoth-scroll">Customizing legend appearance</a>
 
-* <a href="/basic-chart-configurations/legend.html#customizing-legend-font-cosmetics">Customizable legend font cosmetics</a>
+* <a href="/basic-chart-configurations/legend#customizing-legend-font-cosmetics" class="smoth-scroll">Customizable legend font cosmetics</a>
 
 ## Showing/hiding the corresponding data series when a legend item is clicked
 

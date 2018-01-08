@@ -10,13 +10,13 @@ chartPresent: true
 
 The FusionCharts ASP.NET wrapper lets you load data for a chart using:
 
-* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data.html#using-a-json-string">a JSON string generated from a 2D array</a>
+* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data#using-a-json-string" class="smoth-scroll">a JSON string generated from a 2D array</a>
 
-* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data.html#using-a-xml-string">an XML string generated from a 2D array</a>
+* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data#using-a-xml-string" class="smoth-scroll">an XML string generated from a 2D array</a>
 
-* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data.html#loading-json-data-from-a-file">JSON URL of a file that contains chart data</a>
+* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data#loading-json-data-from-a-file" class="smoth-scroll">JSON URL of a file that contains chart data</a>
 
-* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data.html#loading-xml-data-from-a-file">XML URL of a file that contains chart data</a>
+* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data#loading-xml-data-from-a-file" class="smoth-scroll">XML URL of a file that contains chart data</a>
 
 In this section, you will be shown how the ASP.NET wrapper uses each of these methods to generate charts.
 

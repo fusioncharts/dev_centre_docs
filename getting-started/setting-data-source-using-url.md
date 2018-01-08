@@ -10,8 +10,8 @@ FusionCharts lets you pass the complete JSON/XML chart data as a static string t
 
 In this section, you will be shown how to:
 
-* <a href="/getting-started/setting-data-source-using-url.html#loading-data-using-the-json-url">Load data using the JSON URL</a>
-* <a href="/getting-started/setting-data-source-using-url.html#loading-data-using-the-xml-url">Load data using the XML URL</a>
+* <a href="/getting-started/setting-data-source-using-url#loading-data-using-the-json-url" class="smoth-scroll">Load data using the JSON URL</a>
+* <a href="/getting-started/setting-data-source-using-url#loading-data-using-the-xml-url" class="smoth-scroll">Load data using the XML URL</a>
 
 The only difference between the two methods is the value that will be passed to the `dataFormat` attribute. For the first method, the dataFormat attribute takes json or xml as values, depending on the chart data. For the second method, the values will be jsonurl and xmlurl. 
 

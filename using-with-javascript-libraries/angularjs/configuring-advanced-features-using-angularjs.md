@@ -18,9 +18,9 @@ In addition to an extensive range of [charts, gauges, and maps](http://www.fusio
 
 This article focuses on how you can use the Angular-FusionCharts directive to add:
 
-* <a href="/using-with-javascript-libraries/angularjs/configuring-advanced-features-using-angularjs.html#adding-trend-lines-to-a-chart">Trend-lines</a>
+* <a href="/using-with-javascript-libraries/angularjs/configuring-advanced-features-using-angularjs#adding-trend-lines-to-a-chart" class="smoth-scroll">Trend-lines</a>
 
-* <a href="/using-with-javascript-libraries/angularjs/configuring-advanced-features-using-angularjs.html#adding-annotations-to-charts">Annotations</a>
+* <a href="/using-with-javascript-libraries/angularjs/configuring-advanced-features-using-angularjs#adding-annotations-to-charts" class="smoth-scroll">Annotations</a>
 
 ## Adding Trend-lines to a Chart
 

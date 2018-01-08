@@ -10,9 +10,9 @@ Pyramid charts are used for comparison of data, e.g. sales data of a product for
 
 In this section, you will be introduced to the:
 
-* <a href="/gauge-and-widgets-guide/pyramid-chart/introduction.html#basics-of-a-pyramid-chart">Basics of a pyramid chart</a>
+* <a href="/gauge-and-widgets-guide/pyramid-chart/introduction#basics-of-a-pyramid-chart" class="smoth-scroll">Basics of a pyramid chart</a>
 
-* <a href="/gauge-and-widgets-guide/pyramid-chart/introduction.html#salient-features">Salient features of a pyramid chart</a>
+* <a href="/gauge-and-widgets-guide/pyramid-chart/introduction#salient-features" class="smoth-scroll">Salient features of a pyramid chart</a>
 
 ## Basics of a Pyramid Chart
 

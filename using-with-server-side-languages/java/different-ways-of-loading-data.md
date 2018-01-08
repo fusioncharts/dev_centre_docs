@@ -10,13 +10,13 @@ chartPresent: true
 
 The FusionCharts JSP wrapper lets you load data for a chart using:
 
-* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data.html#loading-data-from-a-static-json-string">a static JSON string</a>
+* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data#loading-data-from-a-static-json-string" class="smoth-scroll">a static JSON string</a>
 
-* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data.html#loading-data-from-a-static-xml-string">a static XML string</a>
+* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data#loading-data-from-a-static-xml-string" class="smoth-scroll">a static XML string</a>
 
-* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data.html#loading-data-from-a-json-string-generated-from-an-associative-array">a JSON string generated from an associative array</a>
+* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data#loading-data-from-a-json-string-generated-from-an-associative-array" class="smoth-scroll">a JSON string generated from an associative array</a>
 
-* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data.html#loading-data-from-an-xml-string-generated-from-an-associative-array">an XML string generated from an associative array</a>
+* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data#loading-data-from-an-xml-string-generated-from-an-associative-array" class="smoth-scroll">an XML string generated from an associative array</a>
 
 <p class="text-info">Before you proceed, make sure you have <a href="/using-with-server-side-languages/java/introduction.html" target="_blank">installed and set up the plugin </a> correctly.</p>
 

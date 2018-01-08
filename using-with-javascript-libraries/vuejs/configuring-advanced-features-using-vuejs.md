@@ -10,13 +10,13 @@ FusionCharts Suite XT includes several advanced features that let you add more c
 
 This article focuses on how you can use the vue-fusioncharts component to:
 
-* <a href="/using-with-javascript-libraries/vuejs/configuring-advanced-features-using-vuejs.html#add-annotations-to-the-chart">Add annotations to the chart</a>
+* <a href="/using-with-javascript-libraries/vuejs/configuring-advanced-features-using-vuejs#add-annotations-to-the-chart" class="smoth-scroll">Add annotations to the chart</a>
 
-* <a href="/using-with-javascript-libraries/vuejs/configuring-advanced-features-using-vuejs.html#change-chart-type-at-runtime">Change chart type at runtime</a>
+* <a href="/using-with-javascript-libraries/vuejs/configuring-advanced-features-using-vuejs#change-chart-type-at-runtime" class="smoth-scroll">Change chart type at runtime</a>
 
-* <a href="/using-with-javascript-libraries/vuejs/configuring-advanced-features-using-vuejs.html#update-chart-data-dynamically">Update chart data dynamically</a>
+* <a href="/using-with-javascript-libraries/vuejs/configuring-advanced-features-using-vuejs#update-chart-data-dynamically" class="smoth-scroll">Update chart data dynamically</a>
 
-* <a href="/using-with-javascript-libraries/vuejs/configuring-advanced-features-using-vuejs.html#update-chart-attributes-dynamically">Update chart attributes dynamically</a>
+* <a href="/using-with-javascript-libraries/vuejs/configuring-advanced-features-using-vuejs#update-chart-attributes-dynamically" class="smoth-scroll">Update chart attributes dynamically</a>
 
 
 ## Add annotations to the chart

@@ -10,9 +10,9 @@ chartPresent: true
 
 The FusionCharts Django wrapper lets you load data for a chart using:
 
-* <a href="/using-with-server-side-languages/django/different-ways-of-loading-data.html#loading-data-from-a-static-json-string">a static JSON string</a>
-* <a href="/using-with-server-side-languages/django/different-ways-of-loading-data.html#loading-data-from-a-static-xml-string">a static XML string</a>
-* <a href="/using-with-server-side-languages/django/different-ways-of-loading-data.html#loading-data-from-a-valid-python-dictionary">a valid Python dictionary</a>
+* <a href="/using-with-server-side-languages/django/different-ways-of-loading-data#loading-data-from-a-static-json-string" class="smoth-scroll">a static JSON string</a>
+* <a href="/using-with-server-side-languages/django/different-ways-of-loading-data#loading-data-from-a-static-xml-string" class="smoth-scroll">a static XML string</a>
+* <a href="/using-with-server-side-languages/django/different-ways-of-loading-data#loading-data-from-a-valid-python-dictionary" class="smoth-scroll">a valid Python dictionary</a>
 
 
 In this section, you will be shown how the Django wrapper uses each of these methods to generate charts.

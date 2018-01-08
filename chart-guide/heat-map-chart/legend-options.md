@@ -10,11 +10,11 @@ FusionCharts Suite XT supports two types of legends for the heat map chart - the
 
 In this section, you will be shown how you can work with:
 
-* <a href="/chart-guide/heat-map-chart/legend-options.html#working-with-the-icon-legend">the icon legend</a>
+* <a href="/chart-guide/heat-map-chart/legend-options#working-with-the-icon-legend" class="smoth-scroll">the icon legend</a>
 
-* <a href="/chart-guide/heat-map-chart/legend-options.html#working-with-the-gradient-legend">the gradient legend</a>
+* <a href="/chart-guide/heat-map-chart/legend-options#working-with-the-gradient-legend" class="smoth-scroll">the gradient legend</a>
 
-* <a href="/chart-guide/heat-map-chart/legend-options.html#configuring-a-single-color-gradient-legend">percentage mapping</a>
+* <a href="/chart-guide/heat-map-chart/legend-options#configuring-a-single-color-gradient-legend" class="smoth-scroll">percentage mapping</a>
 
 ## Working with the Icon Legend
 

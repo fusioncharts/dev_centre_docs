@@ -10,13 +10,13 @@ An error chart is used to show the extent of uncertainty in information relative
 
 In this section, you will be introduced to the:
 
-* <a href="/chart-guide/error-charts/introduction.html#basics-of-an-error-chart">Basics of an error chart</a>
+* <a href="/chart-guide/error-charts/introduction#basics-of-an-error-chart" class="smoth-scroll">Basics of an error chart</a>
 
-* <a href="/chart-guide/error-charts/introduction.html#use-of-error-charts">Use of error charts</a>
+* <a href="/chart-guide/error-charts/introduction#use-of-error-charts" class="smoth-scroll">Use of error charts</a>
 
-* <a href="/chart-guide/error-charts/introduction.html#types-of-error-charts">Types of error charts</a>
+* <a href="/chart-guide/error-charts/introduction#types-of-error-charts" class="smoth-scroll">Types of error charts</a>
 
-* <a href="/chart-guide/error-charts/introduction.html#features-of-an-error-chart">Features of an error chart</a>
+* <a href="/chart-guide/error-charts/introduction#features-of-an-error-chart" class="smoth-scroll">Features of an error chart</a>
 
 ## Basics of an Error Chart
 

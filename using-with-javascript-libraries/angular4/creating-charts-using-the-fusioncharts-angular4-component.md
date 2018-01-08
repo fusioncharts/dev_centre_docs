@@ -10,11 +10,11 @@ The __angular4-fusioncharts__ component uses the fusioncharts component to creat
 
 This article talks about how you can:
 
-* <a href="/using-with-javascript-libraries/angular4/creating-charts-using-the-fusioncharts-angular4-component.html#create-a-simple-chart-using-the-angular4-fusioncharts-component">Create a simple chart using the angular4-fusioncharts component</a>
+* <a href="/using-with-javascript-libraries/angular4/creating-charts-using-the-fusioncharts-angular4-component#create-a-simple-chart-using-the-angular4-fusioncharts-component" class="smoth-scroll">Create a simple chart using the angular4-fusioncharts component</a>
 
-* <a href="/using-with-javascript-libraries/angular4/creating-charts-using-the-fusioncharts-angular4-component.html#provide-chart-attributes-using-separate-objects">Provide chart attributes using separate objects</a>
+* <a href="/using-with-javascript-libraries/angular4/creating-charts-using-the-fusioncharts-angular4-component#provide-chart-attributes-using-separate-objects" class="smoth-scroll">Provide chart attributes using separate objects</a>
 
-* <a href="/using-with-javascript-libraries/angular4/creating-charts-using-the-fusioncharts-angular4-component.html#fetch-chart-data-from-an-external-file">Fetch chart data from an external file</a>
+* <a href="/using-with-javascript-libraries/angular4/creating-charts-using-the-fusioncharts-angular4-component#fetch-chart-data-from-an-external-file" class="smoth-scroll">Fetch chart data from an external file</a>
 
 ## Create a simple chart using the angular4-fusioncharts component
 

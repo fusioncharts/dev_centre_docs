@@ -12,9 +12,9 @@ Cross line is a vertical line/area used as quick reference for the data plots. S
 
 In this section learn how to:
 
-* <a href="/basic-chart-configurations/cross-line.html#customize-the-cross-line">Customize the Cross line</a>
+* <a href="/basic-chart-configurations/cross-line#customize-the-cross-line" class="smoth-scroll">Customize the Cross line</a>
 
-* <a href="/basic-chart-configurations/cross-line.html#configure-the-consolidated-tooltip">Configure the consolidated tooltip</a>
+* <a href="/basic-chart-configurations/cross-line#configure-the-consolidated-tooltip" class="smoth-scroll">Configure the consolidated tooltip</a>
 
 ## Customize the Cross line
 

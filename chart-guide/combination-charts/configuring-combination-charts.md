@@ -10,11 +10,11 @@ Combination charts allow you to use more than one chart types on same chart canv
 
 In this section, you will be shown how you can:
 
-* <a href="/chart-guide/combination-charts/configuring-combination-charts.html#plotting-trend-elements">Plot trend elements</a>
+* <a href="/chart-guide/combination-charts/configuring-combination-charts#plotting-trend-elements" class="smoth-scroll">Plot trend elements</a>
 
-* <a href="/chart-guide/combination-charts/configuring-combination-charts.html#formatting-numbers-on-the-chart">Format Numbers</a>
+* <a href="/chart-guide/combination-charts/configuring-combination-charts#formatting-numbers-on-the-chart" class="smoth-scroll">Format Numbers</a>
 
-* <a href="/chart-guide/combination-charts/configuring-combination-charts.html#placing-the-secondary-axis-on-the-left">Place the secondary y-axis on the left</a>
+* <a href="/chart-guide/combination-charts/configuring-combination-charts#placing-the-secondary-axis-on-the-left" class="smoth-scroll">Place the secondary y-axis on the left</a>
 
 ## Plotting Trend Elements
 

@@ -10,9 +10,9 @@ FusionCharts Suite XT allows you to customize a drag-node chart at run-time - yo
 
 In this section, you will be shown how you can:
 
-* <a href="/chart-guide/drag-node-chart/adding-and-editing-connectors.html#adding-a-connector-at-run-time">Add a connector at run-time</a>
-* <a href="/chart-guide/drag-node-chart/adding-and-editing-connectors.html#editing-a-connector-at-run-time">Edit a connector at run-time</a>
-* <a href="/chart-guide/drag-node-chart/adding-and-editing-connectors.html#deleting-a-connector-at-run-time">Delete a connector at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-editing-connectors#adding-a-connector-at-run-time" class="smoth-scroll">Add a connector at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-editing-connectors#editing-a-connector-at-run-time" class="smoth-scroll">Edit a connector at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-editing-connectors#deleting-a-connector-at-run-time" class="smoth-scroll">Delete a connector at run-time</a>
 
 To understand this, the sample chart that we will use looks like this:
 

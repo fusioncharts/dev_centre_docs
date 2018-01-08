@@ -18,11 +18,11 @@ The React-FusionCharts component uses the `FusionCharts` component to create and
 
 This article talks about how you can:
 
-* <a href="/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component.html#creating-a-simple-chart-using-the-react-fusioncharts-component">Create a simple chart using the React-FusionCharts component</a>
+* <a href="/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component#creating-a-simple-chart-using-the-react-fusioncharts-component" class="smoth-scroll">Create a simple chart using the React-FusionCharts component</a>
 
-* <a href="/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component.html#providing-attributes-using-separate-objects">Provide chart attributes using separate objects</a>
+* <a href="/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component#providing-attributes-using-separate-objects" class="smoth-scroll">Provide chart attributes using separate objects</a>
 
-* <a href="/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component.html#fetching-chart-data-from-an-external-file">Fetch chart data from an external file</a>
+* <a href="/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component#fetching-chart-data-from-an-external-file" class="smoth-scroll">Fetch chart data from an external file</a>
 
 ## Creating a Simple Chart Using the React-FusionCharts Component
 

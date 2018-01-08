@@ -10,8 +10,8 @@ FusionCharts Suite XT allows you to create individual floating text labels on th
 
 In this section, you will be shown how you can:
 
-* <a href="/chart-guide/drag-node-chart/adding-and-deleting-text-labels.html#adding-a-text-label-at-run-time">Add a text label at run-time</a>
-* <a href="/chart-guide/drag-node-chart/adding-and-deleting-text-labels.html#deleting-a-text-label-at-run-time">Delete a text label at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-deleting-text-labels#adding-a-text-label-at-run-time" class="smoth-scroll">Add a text label at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-deleting-text-labels#deleting-a-text-label-at-run-time" class="smoth-scroll">Delete a text label at run-time</a>
 
 To understand this, the sample chart that we will use looks like this:
 

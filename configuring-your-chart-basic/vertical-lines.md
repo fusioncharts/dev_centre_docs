@@ -12,13 +12,13 @@ Vertical (or horizontal in case of bar charts) separator lines or `vlines` are e
 
 This section talks about:
 
-* <a href="/basic-chart-configurations/vertical-lines.html#configuring-position-of-vertical-lines">Configuring positions of vertical lines</a>
+* <a href="/basic-chart-configurations/vertical-lines#configuring-position-of-vertical-lines" class="smoth-scroll">Configuring positions of vertical lines</a>
 
-* <a href="/basic-chart-configurations/vertical-lines.html#configuring-labels-for-vertical-lines">Configuring labels for vertical lines</a>
+* <a href="/basic-chart-configurations/vertical-lines#configuring-labels-for-vertical-lines" class="smoth-scroll">Configuring labels for vertical lines</a>
 
-* <a href="/basic-chart-configurations/vertical-lines.html#customizing-vertical-line-display-properties">Customizing vertical line display properties</a>
+* <a href="/basic-chart-configurations/vertical-lines#customizing-vertical-line-display-properties" class="smoth-scroll">Customizing vertical line display properties</a>
 
-* <a href="/basic-chart-configurations/vertical-lines.html#configuring-label-borders">Configuring label borders</a>
+* <a href="/basic-chart-configurations/vertical-lines#configuring-label-borders" class="smoth-scroll">Configuring label borders</a>
 
 ## Configuring position of vertical lines
 

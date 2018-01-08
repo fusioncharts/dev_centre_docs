@@ -10,8 +10,8 @@ Tiling is the process of dividing large rectangles into smaller sub-rectangles. 
 
 The tiling algorithm affects how the larger rectangles are divided into smaller sub-rectangles, thus affecting how the chart looks like. FusionCharts supports the following two algorithms:
 
-* <a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap.html#the-squarified-algorithm">Squarified</a>
-* <a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap.html#slice-and-dice-algorithm">Slice and dice</a>
+* <a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap#the-squarified-algorithm" class="smoth-scroll">Squarified</a>
+* <a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap#slice-and-dice-algorithm" class="smoth-scroll">Slice and dice</a>
 
 
 ## The Squarified Algorithm
@@ -46,9 +46,9 @@ In a treemap, the slice and dice tiling algorithm is one of the simplest algorit
 
 In FusionCharts Suite XT we support three modes of slicing:
 
-* <a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap.html#vertical-mode">Vertical</a>
-* <a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap.html#horizontal-mode">Horizontal</a>
-* <a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap.html#alternate-mode">Alternate (default)</a>
+* <a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap#vertical-mode" class="smoth-scroll">Vertical</a>
+* <a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap#horizontal-mode" class="smoth-scroll">Horizontal</a>
+* <a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap#alternate-mode" class="smoth-scroll">Alternate (default)</a>
 
 
 #### Vertical Mode

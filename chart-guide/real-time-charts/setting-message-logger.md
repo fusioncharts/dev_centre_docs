@@ -46,13 +46,13 @@ The FusionCharts Suite XT message logger has the following features:
 
 In this section, you will be shown how you can:
 
-* <a href="/chart-guide/real-time-charts/setting-message-logger.html#setting-up-the-message-logger">Set up the message logger</a>
+* <a href="/chart-guide/real-time-charts/setting-message-logger#setting-up-the-message-logger" class="smoth-scroll">Set up the message logger</a>
 
-* <a href="/chart-guide/real-time-charts/setting-message-logger.html#clearing-the-message-logger-from-the-server">Send real-time updates that can be streamed to the message logger</a>
+* <a href="/chart-guide/real-time-charts/setting-message-logger#clearing-the-message-logger-from-the-server" class="smoth-scroll">Send real-time updates that can be streamed to the message logger</a>
 
-* <a href="/chart-guide/real-time-charts/setting-message-logger.html#handling-messages-in-javascript">Handle messages in JavaScript</a>
+* <a href="/chart-guide/real-time-charts/setting-message-logger#handling-messages-in-javascript" class="smoth-scroll">Handle messages in JavaScript</a>
 
-* <a href="/chart-guide/real-time-charts/setting-message-logger.html#using-the-client-side-javascript-api">Use the client-side JavaScript API to manipulate the message logger</a>
+* <a href="/chart-guide/real-time-charts/setting-message-logger#using-the-client-side-javascript-api" class="smoth-scroll">Use the client-side JavaScript API to manipulate the message logger</a>
 
 ## Setting up the Message Logger
 

@@ -14,10 +14,10 @@ FusionCharts Suite XT includes the FusionCharts Django wrapper that lets you cre
 
 In this section, you will be shown how to:
 
-* <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper.html#installing-the-fusioncharts-django-wrapper">Install the FusionCharts Django wrapper</a>
-* <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper.html#download-the-latest-fusioncharts-library-files">Download the latest FusionCharts Library Files</a>
-* <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper.html#creating-and-rendering-a-simple-chart-using-the-fusioncharts-django-wrapper">Create and render a simple chart using the FusionCharts Django Wrapper</a>
-* <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper.html#constructor-parameters">Use Constructor Parameters</a>
+* <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper#installing-the-fusioncharts-django-wrapper" class="smoth-scroll">Install the FusionCharts Django wrapper</a>
+* <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper#download-the-latest-fusioncharts-library-files" class="smoth-scroll">Download the latest FusionCharts Library Files</a>
+* <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper#creating-and-rendering-a-simple-chart-using-the-fusioncharts-django-wrapper" class="smoth-scroll">Create and render a simple chart using the FusionCharts Django Wrapper</a>
+* <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper#constructor-parameters" class="smoth-scroll">Use Constructor Parameters</a>
 
 
 ## Installing the FusionCharts Django Wrapper
@@ -248,9 +248,9 @@ urlpatterns = [
 
 Data for the chart can be in any one of the following formats:
 
-* <a href="/using-with-server-side-languages/django/different-ways-of-loading-data.html#loading-data-from-a-static-json-string">JSON String</a>
-* <a href="/using-with-server-side-languages/django/different-ways-of-loading-data.html#loading-data-from-a-static-xml-string">XML String</a>
-* <a href="/using-with-server-side-languages/django/different-ways-of-loading-data.html#loading-data-from-a-valid-python-dictionary">Valid Python Dictionary</a>
+* <a href="/using-with-server-side-languages/django/different-ways-of-loading-data#loading-data-from-a-static-json-string" class="smoth-scroll">JSON String</a>
+* <a href="/using-with-server-side-languages/django/different-ways-of-loading-data#loading-data-from-a-static-xml-string" class="smoth-scroll">XML String</a>
+* <a href="/using-with-server-side-languages/django/different-ways-of-loading-data#loading-data-from-a-valid-python-dictionary" class="smoth-scroll">Valid Python Dictionary</a>
 
 
 

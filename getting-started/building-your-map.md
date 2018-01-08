@@ -35,11 +35,11 @@ Maps in FusionCharts Suite XT are provided as part of FusionMaps XT. FusionMaps 
 
 Let's now get to building the map. There are 5 simple steps to building a map using FusionCharts Suite XT:
 
-1. <a href="/getting-started/building-your-map.html#installing-fusioncharts-suite-xt-for-your-application">Installing FusionCharts Suite XT for your application</a>
-2. <a href="/getting-started/building-your-map.html#converting-your-data-to-fusioncharts-suite-xt-jsonxml-format">Converting your data to a JSON or XML format</a>
-3. <a href="/getting-started/building-your-map.html#including-fusioncharts-suite-xt-library-in-your-page">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
-4. <a href="/getting-started/building-your-map.html#creating-a-container-for-your-map-in-the-web-page">Creating a container `<div>` for the map</a>
-5. <a href="/getting-started/building-your-map.html#creating-an-instance-of-the-map">Using the new `FusionCharts()` constructor to create the map instance, and then calling the `render()` method</a>
+1. <a href="/getting-started/building-your-map#installing-fusioncharts-suite-xt-for-your-application" class="smoth-scroll">Installing FusionCharts Suite XT for your application</a>
+2. <a href="/getting-started/building-your-map#converting-your-data-to-fusioncharts-suite-xt-jsonxml-format" class="smoth-scroll">Converting your data to a JSON or XML format</a>
+3. <a href="/getting-started/building-your-map#including-fusioncharts-suite-xt-library-in-your-page" class="smoth-scroll">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
+4. <a href="/getting-started/building-your-map#creating-a-container-for-your-map-in-the-web-page" class="smoth-scroll">Creating a container `<div>` for the map</a>
+5. <a href="/getting-started/building-your-map#creating-an-instance-of-the-map" class="smoth-scroll">Using the new `FusionCharts()` constructor to create the map instance, and then calling the `render()` method</a>
 
 ### Installing FusionCharts Suite XT for your application
 

@@ -10,11 +10,11 @@ The Gantt chart is a specialized chart used for displaying various timelines lik
 
 In this section, you will be introduced to the:
 
-* <a href="/gauge-and-widgets-guide/gantt-chart/introduction.html#basics-of-the-gantt-chart">Basics of the Gantt chart</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/introduction#basics-of-the-gantt-chart" class="smoth-scroll">Basics of the Gantt chart</a>
 
-* <a href="/gauge-and-widgets-guide/gantt-chart/introduction.html#features-of-the-gantt-chart">Features of the Gantt chart</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/introduction#features-of-the-gantt-chart" class="smoth-scroll">Features of the Gantt chart</a>
 
-* <a href="/gauge-and-widgets-guide/gantt-chart/introduction.html#elements-of-the-gantt-chart">Elements of the Gantt chart</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/introduction#elements-of-the-gantt-chart" class="smoth-scroll">Elements of the Gantt chart</a>
 
 ## Basics of the Gantt Chart
 

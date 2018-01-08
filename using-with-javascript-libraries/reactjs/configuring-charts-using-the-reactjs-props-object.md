@@ -20,11 +20,11 @@ Once a chart is created using the React-FusionCharts component, the props object
 
 This articles describes how you can use the props object to:
 
-* <a href="/using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object.html#updating-chart-data">Update chart data</a>
+* <a href="/using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object#updating-chart-data" class="smoth-scroll">Update chart data</a>
 
-* <a href="/using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object.html#updating-chart-attributes">Update chart attributes</a>
+* <a href="/using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object#updating-chart-attributes" class="smoth-scroll">Update chart attributes</a>
 
-* <a href="/using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object.html#triggering-events-using-the-props-object">Trigger events from props</a>
+* <a href="/using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object#triggering-events-using-the-props-object" class="smoth-scroll">Trigger events from props</a>
 
 ## Updating Chart Data
 

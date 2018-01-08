@@ -16,15 +16,15 @@ chartPresent: true
 
 FusionCharts Suite XT lets you draw annotations in any of the following shapes:
 
-* <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations.html#rectangle">Rectangle</a>
+* <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations#rectangle" class="smoth-scroll">Rectangle</a>
 
-* <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations.html#polygon">Polygon</a>
+* <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations#polygon" class="smoth-scroll">Polygon</a>
 
-* <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations.html#line">Line</a>
+* <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations#line" class="smoth-scroll">Line</a>
 
-* <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations.html#circle">Circle</a>
+* <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations#circle" class="smoth-scroll">Circle</a>
 
-* <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations.html#arc">Arc</a>
+* <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations#arc" class="smoth-scroll">Arc</a>
 
 Take a look at the column 2D chart shown below:
 

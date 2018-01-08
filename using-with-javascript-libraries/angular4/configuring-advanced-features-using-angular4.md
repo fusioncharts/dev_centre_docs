@@ -10,15 +10,15 @@ FusionCharts Suite XT includes several advanced features that let you add more c
 
 This article focuses on how you can use the angular4-fusioncharts component to:
 
-* <a href="/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4.html#add-annotations-to-the-chart">Add annotations to the chart</a>
+* <a href="/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4#add-annotations-to-the-chart" class="smoth-scroll">Add annotations to the chart</a>
 
-* <a href="/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4.html#add-trend-lines-to-the-chart">Add trend-lines to the chart</a>
+* <a href="/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4#add-trend-lines-to-the-chart" class="smoth-scroll">Add trend-lines to the chart</a>
 
-* <a href="/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4.html#change-chart-type-at-runtime">Change chart type at runtime</a>
+* <a href="/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4#change-chart-type-at-runtime" class="smoth-scroll">Change chart type at runtime</a>
 
-* <a href="/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4.html#update-chart-data-dynamically">Update chart data dynamically</a>
+* <a href="/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4#update-chart-data-dynamically" class="smoth-scroll">Update chart data dynamically</a>
 
-* <a href="/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4.html#update-chart-attributes-dynamically">Update chart attributes dynamically</a>
+* <a href="/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4#update-chart-attributes-dynamically" class="smoth-scroll">Update chart attributes dynamically</a>
 
 ## Add annotations to the chart
 

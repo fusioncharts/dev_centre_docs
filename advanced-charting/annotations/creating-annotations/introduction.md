@@ -16,9 +16,9 @@ FusionCharts Suite XT includes a wide range of [charts, gauges, and maps](http:/
 
 This article:
 
-* <a href="/advanced-chart-configurations/annotations/creating-annotations/introduction.html#annotation-items">Tells you about the different types of annotation items available</a>
+* <a href="/advanced-chart-configurations/annotations/creating-annotations/introduction#annotation-items" class="smoth-scroll">Tells you about the different types of annotation items available</a>
 
-* <a href="/advanced-chart-configurations/annotations/creating-annotations/introduction.html#objects-used-to-create-annotations">Describes the objects used to create annotations</a>
+* <a href="/advanced-chart-configurations/annotations/creating-annotations/introduction#objects-used-to-create-annotations" class="smoth-scroll">Describes the objects used to create annotations</a>
 
 ## Annotation Items
 

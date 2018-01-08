@@ -10,13 +10,13 @@ chartPresent: true
 
 The FusionCharts PHP wrapper lets you load data for a chart using:
 
-* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data.html#loading-data-from-a-static-json-string">a static JSON string</a>
+* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data#loading-data-from-a-static-json-string" class="smoth-scroll">a static JSON string</a>
 
-* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data.html#loading-data-from-a-static-xml-string">a static XML string</a>
+* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data#loading-data-from-a-static-xml-string" class="smoth-scroll">a static XML string</a>
 
-* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data.html#loading-data-from-a-json-string-generated-from-an-associative-array">a JSON string generated from an associative array</a>
+* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data#loading-data-from-a-json-string-generated-from-an-associative-array" class="smoth-scroll">a JSON string generated from an associative array</a>
 
-* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data.html#loading-data-from-a-json-string-generated-from-an-associative-array">an XML string generated from an associative array</a>
+* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data#loading-data-from-a-json-string-generated-from-an-associative-array" class="smoth-scroll">an XML string generated from an associative array</a>
 
 In this section, you will be shown how the FusionCharts PHP wrapper uses each of these methods to generate charts.
 

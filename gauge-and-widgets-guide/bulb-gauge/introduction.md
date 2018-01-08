@@ -10,9 +10,9 @@ One of the simplest gauges available in the FusionCharts Suite XT, the bulb gaug
 
 In this section, you will be introduced to the:
 
-* <a href="/gauge-and-widgets-guide/bulb-gauge/introduction.html#basics-of-the-bulb-gauge">Basics of bulb gauge</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/introduction#basics-of-the-bulb-gauge" class="smoth-scroll">Basics of bulb gauge</a>
 
-* <a href="/gauge-and-widgets-guide/bulb-gauge/introduction.html#elements-of-the-bulb-gauge">Elements of bulb gauge</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/introduction#elements-of-the-bulb-gauge" class="smoth-scroll">Elements of bulb gauge</a>
 
 ## Basics of the Bulb Gauge
 

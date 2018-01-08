@@ -22,12 +22,12 @@ When a rectangle is clicked, the clicked node and its subtree replaces the curre
 
 In this section, you will be shown:
 
-* <a href="/chart-guide/treemap/introducing-the-treemap.html#applications-of-a-treemap">Applications of a Treemap</a>
-* <a href="/chart-guide/treemap/introducing-the-treemap.html#visualization-of-a-treemap">Visualization of a Treemap</a>
-* <a href="/chart-guide/treemap/introducing-the-treemap.html#important-concepts-related-to-the-treemap">Concepts Related to the Treemap</a>
-	* <a href="/chart-guide/treemap/introducing-the-treemap.html#tiling">Tiling</a>
-	* <a href="/chart-guide/treemap/introducing-the-treemap.html#aspect-ratio">Aspect Ratio</a>
-* <a href="/chart-guide/treemap/introducing-the-treemap.html#interacting-with-a-treemap">How to interact with a Treemap</a>
+* <a href="/chart-guide/treemap/introducing-the-treemap#applications-of-a-treemap" class="smoth-scroll">Applications of a Treemap</a>
+* <a href="/chart-guide/treemap/introducing-the-treemap#visualization-of-a-treemap" class="smoth-scroll">Visualization of a Treemap</a>
+* <a href="/chart-guide/treemap/introducing-the-treemap#important-concepts-related-to-the-treemap" class="smoth-scroll">Concepts Related to the Treemap</a>
+	* <a href="/chart-guide/treemap/introducing-the-treemap#tiling" class="smoth-scroll">Tiling</a>
+	* <a href="/chart-guide/treemap/introducing-the-treemap#aspect-ratio" class="smoth-scroll">Aspect Ratio</a>
+* <a href="/chart-guide/treemap/introducing-the-treemap#interacting-with-a-treemap" class="smoth-scroll">How to interact with a Treemap</a>
 
 
 ## Applications of a Treemap

@@ -10,15 +10,15 @@ The thermometer gauge is a real-time chart, which can continuously request new d
 
 In this section, you will be shown how you can,
 
-* <a href="/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges.html#configuring-real-time-updates-using-javascript-api">Configure real-time updates using JavaScript API</a>
+* <a href="/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges#configuring-real-time-updates-using-javascript-api" class="smoth-scroll">Configure real-time updates using JavaScript API</a>
 
-* <a href="/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges.html#configuring-real-time-updates-using-server-side-script">Configure real-time updates using server-side script</a>
+* <a href="/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges#configuring-real-time-updates-using-server-side-script" class="smoth-scroll">Configure real-time updates using server-side script</a>
 
-* <a href="/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges.html#stoppingrestarting-updates">Stop/restart updates</a>
+* <a href="/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges#stoppingrestarting-updates" class="smoth-scroll">Stop/restart updates</a>
 
-* <a href="/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges.html#configuring-real-time-events">Configure real-time events</a>
+* <a href="/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges#configuring-real-time-events" class="smoth-scroll">Configure real-time events</a>
 
-* <a href="/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges.html#troubleshooting-real-time-gauges">Troubleshoot real-time gauges</a>
+* <a href="/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges#troubleshooting-real-time-gauges" class="smoth-scroll">Troubleshoot real-time gauges</a>
 
 ## Configuring Real-time Updates Using JavaScript API
 

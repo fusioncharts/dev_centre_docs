@@ -22,9 +22,9 @@ In addition to an extensive range of [charts, gauges, and maps](http://www.fusio
 
 This article focuses on how you can use the React-FusionCharts component to: 
 
-* <a href="/using-with-javascript-libraries/reactjs/configuring-advanced-features-using-reactjs.html#adding-trend-lines-on-a-chart">Add trend-lines on a chart</a>
+* <a href="/using-with-javascript-libraries/reactjs/configuring-advanced-features-using-reactjs#adding-trend-lines-on-a-chart" class="smoth-scroll">Add trend-lines on a chart</a>
 
-* <a href="/using-with-javascript-libraries/reactjs/configuring-advanced-features-using-reactjs.html#adding-annotations-on-charts">Add annotations on a chart</a>
+* <a href="/using-with-javascript-libraries/reactjs/configuring-advanced-features-using-reactjs#adding-annotations-on-charts" class="smoth-scroll">Add annotations on a chart</a>
 
 ## Adding Trend-lines on a Chart
 

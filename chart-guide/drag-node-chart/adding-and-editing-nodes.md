@@ -10,9 +10,9 @@ FusionCharts Suite XT allows you to customize a drag-node chart in run-time - yo
 
 In this section, you will be shown how you can:
 
-* <a href="/chart-guide/drag-node-chart/adding-and-editing-nodes.html#adding-a-node-at-run-time">Add a node at run-time</a>
-* <a href="/chart-guide/drag-node-chart/adding-and-editing-nodes.html#editing-a-node-at-run-time">Edit a node at run-time</a>
-* <a href="/chart-guide/drag-node-chart/adding-and-editing-nodes.html#deleting-a-node-at-run-time">Delete a node at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-editing-nodes#adding-a-node-at-run-time" class="smoth-scroll">Add a node at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-editing-nodes#editing-a-node-at-run-time" class="smoth-scroll">Edit a node at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-editing-nodes#deleting-a-node-at-run-time" class="smoth-scroll">Delete a node at run-time</a>
 
 To understand this, the sample chart that we will use looks like this:
 

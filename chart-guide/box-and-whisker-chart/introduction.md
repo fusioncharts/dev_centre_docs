@@ -10,11 +10,11 @@ A box and whisker chart is a statistical chart that is used to examine and summa
 
 In this section, you will be introduced to the:
 
-* <a href="/chart-guide/box-and-whisker-chart/introduction.html#basics-of-a-box-and-whisker-chart">Basics of a box and whisker chart</a>
+* <a href="/chart-guide/box-and-whisker-chart/introduction#basics-of-a-box-and-whisker-chart" class="smoth-scroll">Basics of a box and whisker chart</a>
 
-* <a href="/chart-guide/box-and-whisker-chart/introduction.html#features-of-a-box-and-whisker-chart">Features of a box and whisker chart</a>
+* <a href="/chart-guide/box-and-whisker-chart/introduction#features-of-a-box-and-whisker-chart" class="smoth-scroll">Features of a box and whisker chart</a>
 
-* <a href="/chart-guide/box-and-whisker-chart/introduction.html#five-number-summary-principle">Five-number summary principle for plotting data on the box and whisker chart</a>
+* <a href="/chart-guide/box-and-whisker-chart/introduction#five-number-summary-principle" class="smoth-scroll">Five-number summary principle for plotting data on the box and whisker chart</a>
 
 ## Basics of a Box and Whisker Chart
 

@@ -19,11 +19,11 @@ Charts can be made more interesting and visually appealing by modifying their bo
 
 In this article we will show you how to beautify your charts by modifying:
 
-* <a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-1.html#changing-background-and-border-of-complete-area-of-chart">Border and background of the complete area of the chart</a>
+* <a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-1#changing-background-and-border-of-complete-area-of-chart" class="smoth-scroll">Border and background of the complete area of the chart</a>
 
-* <a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-1.html#changing-the-border-and-background-of-the-canvas">Border and background of the data plot area (which is called canvas)</a>
+* <a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-1#changing-the-border-and-background-of-the-canvas" class="smoth-scroll">Border and background of the data plot area (which is called canvas)</a>
 
-* <a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-1.html#customising-the-columns-of-the-chart">Border and background of the columns in a column chart</a>
+* <a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-1#customising-the-columns-of-the-chart" class="smoth-scroll">Border and background of the columns in a column chart</a>
 
 
 To illustrate the above features we would take the following scenario: plotting the variation of price of petrol in Bangalore in the last 6 months.

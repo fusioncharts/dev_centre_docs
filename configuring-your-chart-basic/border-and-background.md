@@ -14,15 +14,15 @@ This article will show you how to configure your charts with respect to its bord
 
 This section is divided into the following parts:
 
-* <a href="/basic-chart-configurations/border-and-background.html#customizing-chart-borders">Customizing chart border</a>
+* <a href="/basic-chart-configurations/border-and-background#customizing-chart-borders" class="smoth-scroll">Customizing chart border</a>
 
-* <a href="/basic-chart-configurations/border-and-background.html#customizing-chart-background">Customizing chart background</a>
+* <a href="/basic-chart-configurations/border-and-background#customizing-chart-background" class="smoth-scroll">Customizing chart background</a>
 
-* <a href="/basic-chart-configurations/border-and-background.html#using-gradient-fill-for-the-background">Using gradient fill for the background</a>
+* <a href="/basic-chart-configurations/border-and-background#using-gradient-fill-for-the-background" class="smoth-scroll">Using gradient fill for the background</a>
 
-* <a href="/basic-chart-configurations/border-and-background.html#using-an-external-image-as-chart-background">Using an external image as the background</a>
+* <a href="/basic-chart-configurations/border-and-background#using-an-external-image-as-chart-background" class="smoth-scroll">Using an external image as the background</a>
 
-* <a href="/basic-chart-configurations/border-and-background.html#customizing-the-background-image">Customizing background image</a>
+* <a href="/basic-chart-configurations/border-and-background#customizing-the-background-image" class="smoth-scroll">Customizing background image</a>
 
 ## Customizing chart borders
 

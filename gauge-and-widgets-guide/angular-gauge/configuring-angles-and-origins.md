@@ -10,13 +10,13 @@ FusionCharts Suite XT allows you to draw the angular gauge from virtually any st
 
 In this section, you will be shown you can:
 
-* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.html#using-the-chart-object-attributes-to-create-gauges">Use the various chart object attributes to create angles</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins#using-the-chart-object-attributes-to-create-gauges" class="smoth-scroll">Use the various chart object attributes to create angles</a>
 
-* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.html#configuring-angular-gauge-angles">Configure gauge angles to render angles of different shapes</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins#configuring-angular-gauge-angles" class="smoth-scroll">Configure gauge angles to render angles of different shapes</a>
 
-* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.html#automatic-positioning-of-gauge-origins">Position gauge origins automatically</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins#automatic-positioning-of-gauge-origins" class="smoth-scroll">Position gauge origins automatically</a>
 
-* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.html#manually-setting-gauge-origins">Set gauge origins manually</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins#manually-setting-gauge-origins" class="smoth-scroll">Set gauge origins manually</a>
 
 ## Using the `chart` Object Attributes to Create Gauges
 

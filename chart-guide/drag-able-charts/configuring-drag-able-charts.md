@@ -10,9 +10,9 @@ FusionCharts Suite XT allows you to configure the axis limits and division inter
 
 In this section, you will be shown how you can:
 
-* <a href="/chart-guide/drag-able-charts/configuring-drag-able-charts.html#changing-axis-limits">Change axis limits</a>
-* <a href="/chart-guide/drag-able-charts/configuring-drag-able-charts.html#managing-chart-limits-using-javascript-api">Manage chart limits using JavaScript API</a>
-* <a href="/chart-guide/drag-able-charts/configuring-drag-able-charts.html#snapping-to-the-nearest-divisional-lines">Snap to the nearest division interval</a>
+* <a href="/chart-guide/drag-able-charts/configuring-drag-able-charts#changing-axis-limits" class="smoth-scroll">Change axis limits</a>
+* <a href="/chart-guide/drag-able-charts/configuring-drag-able-charts#managing-chart-limits-using-javascript-api" class="smoth-scroll">Manage chart limits using JavaScript API</a>
+* <a href="/chart-guide/drag-able-charts/configuring-drag-able-charts#snapping-to-the-nearest-divisional-lines" class="smoth-scroll">Snap to the nearest division interval</a>
 
 ## Changing Axis Limits
 

@@ -14,11 +14,11 @@ In the chart shown above Jan, Feb, Mar etc. are data labels.
 
 This section explains:
 
-* <a href="/basic-chart-configurations/configuring-your-chart-data-labels.html#data-label-display-modes">Data label display modes</a>
+* <a href="/basic-chart-configurations/configuring-your-chart-data-labels#data-label-display-modes" class="smoth-scroll">Data label display modes</a>
 
-* <a href="/basic-chart-configurations/configuring-your-chart-data-labels.html#displaying-specific-data-labels">Displaying specific data labels</a>
+* <a href="/basic-chart-configurations/configuring-your-chart-data-labels#displaying-specific-data-labels" class="smoth-scroll">Displaying specific data labels</a>
 
-* <a href="/basic-chart-configurations/configuring-your-chart-data-labels.html#label-management-line-and-area-charts">Label management: Line and area charts</a>
+* <a href="/basic-chart-configurations/configuring-your-chart-data-labels#label-management-line-and-area-charts" class="smoth-scroll">Label management: Line and area charts</a>
 
 ## Data Label Display Modes
 

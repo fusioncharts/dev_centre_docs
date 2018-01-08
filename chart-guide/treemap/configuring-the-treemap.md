@@ -10,12 +10,12 @@ FusionCharts Suite XT lets you configure the functionality of your treemap. Ther
 
 In this section, you will be shown how you can:
 
-* <a href="/chart-guide/treemap/configuring-the-treemap.html#navigation-bar-with-traversal-path">Use the navigation bar with traversal path</a>
-* <a href="/chart-guide/treemap/configuring-the-treemap.html#coloring-the-treemap-data-plots">Color The data plots</a>
-* <a href="/chart-guide/treemap/configuring-the-treemap.html#customizing-individual-data-plots">Customize data plots</a>
-* <a href="/chart-guide/treemap/configuring-the-treemap.html#customizing-all-text-within-the-chart-canvas">Customize All Text Within the Chart Canvas</a>
-* <a href="/chart-guide/treemap/configuring-the-treemap.html#customizing-only-the-data-labels">Customize Only the Data Labels</a>
-* <a href="/chart-guide/treemap/configuring-the-treemap.html#applying-the-glow-effect-to-data-labels">Apply the Glow Effect to Data Labels</a>
+* <a href="/chart-guide/treemap/configuring-the-treemap#navigation-bar-with-traversal-path" class="smoth-scroll">Use the navigation bar with traversal path</a>
+* <a href="/chart-guide/treemap/configuring-the-treemap#coloring-the-treemap-data-plots" class="smoth-scroll">Color The data plots</a>
+* <a href="/chart-guide/treemap/configuring-the-treemap#customizing-individual-data-plots" class="smoth-scroll">Customize data plots</a>
+* <a href="/chart-guide/treemap/configuring-the-treemap#customizing-all-text-within-the-chart-canvas" class="smoth-scroll">Customize All Text Within the Chart Canvas</a>
+* <a href="/chart-guide/treemap/configuring-the-treemap#customizing-only-the-data-labels" class="smoth-scroll">Customize Only the Data Labels</a>
+* <a href="/chart-guide/treemap/configuring-the-treemap#applying-the-glow-effect-to-data-labels" class="smoth-scroll">Apply the Glow Effect to Data Labels</a>
 
 ## Navigation Bar with Traversal Path
 

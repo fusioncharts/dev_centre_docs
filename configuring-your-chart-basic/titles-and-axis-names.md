@@ -16,11 +16,11 @@ Cartesian charts have axes that run along the left and the bottom borders of the
 
 This section is divided into following parts:
 
-* <a href="/basic-chart-configurations/titles-and-axis-names.html#customizing-chart-caption-and-sub-caption">Customizing chart caption & sub-caption</a>
+* <a href="/basic-chart-configurations/titles-and-axis-names#customizing-chart-caption-and-sub-caption" class="smoth-scroll">Customizing chart caption & sub-caption</a>
 
-* <a href="/basic-chart-configurations/titles-and-axis-names.html#customizing-x-axis-and-y-axis">Customizing X-Axis and Y-Axis</a>
+* <a href="/basic-chart-configurations/titles-and-axis-names#customizing-x-axis-and-y-axis" class="smoth-scroll">Customizing X-Axis and Y-Axis</a>
 
-* <a href="/basic-chart-configurations/titles-and-axis-names.html#dual-y-axis">Customizing Dual Y-Axis</a>
+* <a href="/basic-chart-configurations/titles-and-axis-names#dual-y-axis" class="smoth-scroll">Customizing Dual Y-Axis</a>
 
 ## Customizing chart caption and sub-caption
 

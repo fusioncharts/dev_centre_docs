@@ -12,9 +12,9 @@ The cylinder gauge is a real-time chart, which can update its data after specifi
 
 In this section, you will be introduced to:
 
-* <a href="/gauge-and-widgets-guide/cylinder-gauge/introduction.html#a-simple-cylinder-gauge">A simple cylinder gauge</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/introduction#a-simple-cylinder-gauge" class="smoth-scroll">A simple cylinder gauge</a>
 
-* <a href="/gauge-and-widgets-guide/cylinder-gauge/introduction.html#elements-of-the-gauge">Elements of a cylinder gauge</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/introduction#elements-of-the-gauge" class="smoth-scroll">Elements of a cylinder gauge</a>
 
 ## A Simple Cylinder Gauge
 

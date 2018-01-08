@@ -10,15 +10,15 @@ The bullet graph (horizontal and vertical bullet) is a real-time chart, which ca
 
 In this section, you will be shown how you can,
 
-* <a href="/gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs.html#configuring-real-time-updates-using-javascript-api">Configure real-time updates using JavaScript API</a>
+* <a href="/gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs#configuring-real-time-updates-using-javascript-api" class="smoth-scroll">Configure real-time updates using JavaScript API</a>
 
-* <a href="/gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs.html#configuring-real-time-updates-using-server-side-scripts">Configure real-time updates using server-side script</a>
+* <a href="/gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs#configuring-real-time-updates-using-server-side-scripts" class="smoth-scroll">Configure real-time updates using server-side script</a>
 
-* <a href="/gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs.html#stoppingrestarting-updates">Stop/restart updates</a>
+* <a href="/gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs#stoppingrestarting-updates" class="smoth-scroll">Stop/restart updates</a>
 
-* <a href="/gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs.html#configuring-real-time-events">Configure real-time events</a>
+* <a href="/gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs#configuring-real-time-events" class="smoth-scroll">Configure real-time events</a>
 
-* <a href="/gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs.html#troubleshooting-real-time-graphs">Troubleshoot real-time graphs</a>
+* <a href="/gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs#troubleshooting-real-time-graphs" class="smoth-scroll">Troubleshoot real-time graphs</a>
 
 ## Configuring Real-time Updates Using JavaScript API
 
