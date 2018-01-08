@@ -13,7 +13,7 @@ Installation of FusionCharts Suite XT merely involves __copying and pasting the 
 
 Thereafter, you can simply include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. <br/><br/>
 
-Starting v3.11.2, the **FusionCharts Suite XT can be installed via the npm and Bower** package managers. Click [here]{% linkTo tutorials/getting-started/installing-via-npm-and-bower/installing-fusioncharts-suite-xt-via-npm-and-bower.md %} for detailed instructions on installation via npm and Bower. 
+Starting v3.11.2, the **FusionCharts Suite XT can be installed via the npm and Bower** package managers. Click [here](/getting-started/installing-via-npm-and-bower/installing-fusioncharts-suite-xt-via-npm-and-bower) for detailed instructions on installation via npm and Bower. 
 </p>
 
 The JavaScript files of FusionCharts Suite library are located in `js` folder of your download package. You should see these JavaScript files in your `fusioncharts` folder now:

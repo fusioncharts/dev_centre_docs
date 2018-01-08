@@ -36,7 +36,7 @@ Let's now get to building the gauge. There are 5 simple steps to building a char
 
 ### Installing FusionCharts Suite XT for your application
 
-To see whether you have FusionCharts Suite XT installed for your web application, as detailed [here]{% linkTo tutorials/getting-started/installation.md %}, check for the following files in your `fusioncharts` folder:
+To see whether you have FusionCharts Suite XT installed for your web application, as detailed [here](/getting-started/installation), check for the following files in your `fusioncharts` folder:
 
   * `fusioncharts.charts.js`
   * `fusioncharts.js`
@@ -223,7 +223,7 @@ In case something went wrong and you are unable to see the gauge, check for the 
 
  * If you get a __Loading Data__ or __Error in loading data__ message, check whether your JSON data structure is correct, and there are no conflicts related to quotation marks in your code.
 
-Click here for more information on [Troubleshooting]{% linkTo tutorials/troubleshooting/debugger.md %}.
+Click here for more information on [Troubleshooting](/troubleshooting/debugger).
 
 Now that Harry can monitor his weekly customer satisfaction score using this gauge, let's build a map to plot his sales across various states in US.
 

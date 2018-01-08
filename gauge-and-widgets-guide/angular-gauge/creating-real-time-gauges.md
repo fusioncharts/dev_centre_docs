@@ -117,7 +117,7 @@ Given below is a brief description of the attributes used to configure real-time
   </tr>
   <tr>
     <td>`dataStamp`</td>
-    <td>Constantly changing data stamp that can be added to the real-time data URL, so as to maintain a state. Data stamp is basically a token of information that is passed with each update to the chart and back to the server, which helps to easily identify the last data sent to the gauge. For more information, read the {% linkTo tutorials/chart-guide/real-time-charts/adding-data-stamp.md %} article.</td>
+    <td>Constantly changing data stamp that can be added to the real-time data URL, so as to maintain a state. Data stamp is basically a token of information that is passed with each update to the chart and back to the server, which helps to easily identify the last data sent to the gauge. For more information, read the (/chart-guide/real-time-charts/adding-data-stamp) article.</td>
   </tr>
 </table>
 

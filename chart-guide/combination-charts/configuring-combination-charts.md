@@ -70,7 +70,7 @@ If you don’t specify a value for this attribute, by default, it will take the 
 
 
 
-FusionCharts Suite XT includes several options to customize trend elements. To know more about the trend elements in a single y-axis chart, click [here]{% linkTo attrs.md chart=mscombi2d %}. To know more about the dual y-axis chart, click [here]{% linkTo attrs.md chart=mscombidy2d %}.
+FusionCharts Suite XT includes several options to customize trend elements. To know more about the trend elements in a single y-axis chart, click [here](/chart-attributes?chart=mscombi2d).
 
 ## Formatting Numbers on the Chart
 
@@ -163,7 +163,7 @@ The above attributes are applicable to the primary y-axis. To use these attribut
 </table>
 
 
-For the complete list of number formatting attributes available for both the axes, refer to the number formatting section [here]{% linkTo attrs.md chart=mscombidy2d %}.
+For the complete list of number formatting attributes available for both the axes, refer to the number formatting section [here](/chart-attributes?chart=mscombidy2d).
 
 ## Placing the Secondary Axis on the Left
 

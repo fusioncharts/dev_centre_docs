@@ -11,7 +11,7 @@ This article outlines the steps to be executed for downloading and installing al
 
 ### Downloading the component
 
-You can download the __angular4-fusionCharts__ component from [here](https://www.fusioncharts.com/angular4-fusioncharts/){:target='_blank'}.
+You can download the __angular4-fusionCharts__ component from [here](https://www.fusioncharts.com/angular4-fusioncharts/).
 
 To install the __angular4-fusioncharts__ component for your applications, follow the steps given below:
 
@@ -132,4 +132,4 @@ Once the installation is complete, you can now create and customize your charts 
 
 ## Licensing
 
-Angular4-FusionCharts is an open-source resource and distributed under the terms of the MIT/X11 License. You will still need to include FusionCharts in your page. This project provides no direct functionality. You can download a [free evaluation version](https://www.fusioncharts.com/download/){:target='_blank'} here. You will still need to purchase a FusionCharts license to use in a commercial environment ([FusionCharts is free for noncommercial and personal use](https://www.fusioncharts.com/download/free/){:target='_blank'}).
+Angular4-FusionCharts is an open-source resource and distributed under the terms of the MIT/X11 License. You will still need to include FusionCharts in your page. This project provides no direct functionality. You can download a [free evaluation version](https://www.fusioncharts.com/download/) here. You will still need to purchase a FusionCharts license to use in a commercial environment ([FusionCharts is free for noncommercial and personal use](https://www.fusioncharts.com/download/free/)).

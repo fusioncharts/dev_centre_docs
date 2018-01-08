@@ -92,7 +92,7 @@ The new attributes that need to be added for receiving real-time updates from th
   <tr>
     <td>`dataStamp`</td>
     <td>This attribute is used to set a constantly changing data stamp that can be added to the real-time data URL, so as to maintain a state.
-For more information, read the {% linkTo tutorials/chart-guide/real-time-charts/adding-data-stamp.md %} article. </td>
+For more information, read the (/chart-guide/real-time-charts/adding-data-stamp) article. </td>
   </tr>
 </table>
 

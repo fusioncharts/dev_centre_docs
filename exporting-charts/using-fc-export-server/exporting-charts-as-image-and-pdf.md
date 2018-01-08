@@ -40,4 +40,4 @@ The `exportMode` attribute is used to switch betwen the modes of export.
 
 The subsequent articles in this section cover the features of each export mode and the `exportMode` attribute in detail.
 
-<p class="text-info"> To process the export data on your own server, you can configure one of the export handlers by following the [Setup Private Export Server]{% linkTo tutorials/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net.md %}{:target='_blank'} guide. </p>
+<p class="text-info"> To process the export data on your own server, you can configure one of the export handlers by following the [Setup Private Export Server](/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net) guide. </p>

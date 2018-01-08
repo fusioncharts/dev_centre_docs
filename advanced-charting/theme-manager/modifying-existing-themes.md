@@ -8,9 +8,9 @@ chartPresent: false
 
 ## Prerequisites
 
-* [Introduction to Themes]{% linkTo tutorials/advanced-charting/theme-manager/introduction-to-themes.md %}
-* [Applying Themes]{% linkTo tutorials/advanced-charting/theme-manager/applying-themes.md %}
-* [Basics of Theme Definition]{% linkTo tutorials/advanced-charting/theme-manager/basics-of-theme-definition.md %}
+* [Introduction to Themes](/advanced-charting/theme-manager/introduction-to-themes)
+* [Applying Themes](/advanced-charting/theme-manager/applying-themes)
+* [Basics of Theme Definition](/advanced-charting/theme-manager/basics-of-theme-definition)
 
 FusionCharts Suite XT is shipped with the following three predefined themes:
 
@@ -18,7 +18,7 @@ FusionCharts Suite XT is shipped with the following three predefined themes:
 * ocean
 * carbon
 
-You can choose a theme depending on your aesthetic requirements for the [charts, gauges, and maps](http://www.fusioncharts.com/charts/) in your application. Additionally, FusionCharts Suite XT gives you the option of modifying existing themes or [creating entirely new ones]{% linkTo tutorials/advanced-charting/theme-manager/creating-new-themes.md %}, if your requirements differ from what is already there.
+You can choose a theme depending on your aesthetic requirements for the [charts, gauges, and maps](http://www.fusioncharts.com/charts/) in your application. Additionally, FusionCharts Suite XT gives you the option of modifying existing themes or [creating entirely new ones](/advanced-charting/theme-manager/creating-new-themes), if your requirements differ from what is already there.
 
 This article describes how you can modify existing themes.
 
@@ -113,7 +113,7 @@ The table below shows this mapping:
 | Change the border color for maps | `geo`-because, as per the requirement list above, these settings have to be applied only for all the maps in the application | `borderColor` | `chart` | 
 
 <p class="text-info">
-Refer the [FusionCharts Suite XT Chart Attributes]{% linkTo attrs.md chart=area2d %} page for a complete understanding of the objects and attributes used to configure the charts, gauges, and maps.
+Refer the [FusionCharts Suite XT Chart Attributes](/chart-attributes?chart=area2d) page for a complete understanding of the objects and attributes used to configure the charts, gauges, and maps.
 </p>
 
 ### Step 3:
@@ -188,7 +188,7 @@ FusionCharts.register('theme', {
 ### Step 4: 
 Save the file.
 
-You can now [apply]{% linkTo tutorials/advanced-charting/theme-manager/applying-themes.md %} your modified theme to the charts, gauges, and maps in your application using either the `theme` attribute of the `chart` object or the `setChartAttribute()` method of the FusionCharts API.
+You can now [apply](/advanced-charting/theme-manager/applying-themes) your modified theme to the charts, gauges, and maps in your application using either the `theme` attribute of the `chart` object or the `setChartAttribute()` method of the FusionCharts API.
 
 ## Including Escape Characters in Theme Definition
 

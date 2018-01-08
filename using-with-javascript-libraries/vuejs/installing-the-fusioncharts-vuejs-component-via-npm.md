@@ -124,4 +124,4 @@ Once you are done with executing the steps, the chart will be rendered when you 
 
 ## Licensing
 
-Vue-FusionCharts is an open-source resource and distributed under the terms of the MIT/X11 License. You will still need to include FusionCharts in your page. This project provides no direct functionality. You can download a [free evaluation version](https://www.fusioncharts.com/download/){:target='_blank'} here. You will still need to purchase a FusionCharts license to use in a commercial environment ([FusionCharts is free for noncommercial and personal use](https://www.fusioncharts.com/download/free/){:target='_blank'}).
+Vue-FusionCharts is an open-source resource and distributed under the terms of the MIT/X11 License. You will still need to include FusionCharts in your page. This project provides no direct functionality. You can download a [free evaluation version](https://www.fusioncharts.com/download/) here. You will still need to purchase a FusionCharts license to use in a commercial environment ([FusionCharts is free for noncommercial and personal use](https://www.fusioncharts.com/download/free/)).

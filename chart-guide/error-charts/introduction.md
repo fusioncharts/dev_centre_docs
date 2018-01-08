@@ -40,11 +40,11 @@ Following are a few areas where error charts are commonly used:
 
 At present, there are three types of multi-series error charts available in the FusionCharts XT Suite:
 
-* [Error bar chart]{% linkTo attrs.md chart=errorbar2d %}
+* [Error bar chart](/chart-attributes?chart=errorbar2d)
 
-* [Error line chart]{% linkTo attrs.md chart=errorline %}
+* [Error line chart](/chart-attributes?chart=errorline)
 
-* [Error scatter chart (XY plot)]{% linkTo attrs.md chart=errorscatter %}
+* [Error scatter chart (XY plot)](/chart-attributes?chart=errorscatter)
 
 ### Error Bar Chart
 

@@ -8,9 +8,9 @@ chartPresent: false
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT]{% linkTo tutorials/getting-started/building-your-first-chart.md %}
+* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
 
-* [Introduction to annotations]{% linkTo tutorials/advanced-charting/annotations/introduction.md %}
+* [Introduction to annotations](/advanced-charting/annotations/introduction)
 
 FusionCharts Suite XT includes a wide range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/) that you can use to plot static as well as real-time data. Annotations, a compelling feature of the product, lets you make your charts self-descriptive and visually engaging.
 
@@ -114,10 +114,10 @@ This is covered in detail in the subsequent articles.</td>
 
 To know how to create the different types of annotations, refer the following articles:
 
-* [Creating Text Annotations]{% linkTo tutorials/advanced-charting/annotations/creating-annotations/creating-text-annotations.md %}
+* [Creating Text Annotations](/advanced-charting/annotations/creating-annotations/creating-text-annotations)
 
-* [Creating Image Annotations]{% linkTo tutorials/advanced-charting/annotations/creating-annotations/creating-image-annotations.md %}
+* [Creating Image Annotations](/advanced-charting/annotations/creating-annotations/creating-image-annotations)
 
-* [Creating Shape Annotations]{% linkTo tutorials/advanced-charting/annotations/creating-annotations/creating-shape-annotations.md %}
+* [Creating Shape Annotations](/advanced-charting/annotations/creating-annotations/creating-shape-annotations)
 
-* [Creating Path Annotations]{% linkTo tutorials/advanced-charting/annotations/creating-annotations/creating-path-annotations.md %}
+* [Creating Path Annotations](/advanced-charting/annotations/creating-annotations/creating-path-annotations)

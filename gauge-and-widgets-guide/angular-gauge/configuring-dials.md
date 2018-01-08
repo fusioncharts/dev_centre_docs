@@ -206,7 +206,7 @@ An angular gauge configured to update the tool-tip text for the dial in real-tim
 
 The above sample replaces the hard-coded value with the macro `$value`. Now, whenever someone will roll-over the dial, the current value of the dial will be displayed along with the text set in the tooltext attribute of dial element.
 
-For the complete understanding of the tooltip macros or a detail list of available macros please refer to [this]{% linkTo tutorials/configuring-your-chart-basic/tooltip-macros/introduction-to-tooltip-macros.md %} document.
+For the complete understanding of the tooltip macros or a detail list of available macros please refer to [this](/configuring-your-chart-basic/tooltip-macros/introduction-to-tooltip-macros) document.
 
 
 
@@ -336,4 +336,4 @@ Given below is a brief description of the attribute used to configure an ID for 
 </table>
 
 
-<p class="text-info">To learn how to create real-time angular gauges please refer to {% linkTo tutorials/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.md %} section.</p>
+<p class="text-info">To learn how to create real-time angular gauges please refer to (/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges) section.</p>

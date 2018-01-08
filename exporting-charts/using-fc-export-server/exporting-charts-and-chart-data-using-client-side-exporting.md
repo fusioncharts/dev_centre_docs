@@ -6,7 +6,7 @@ heading: Exporting Charts and Chart Data Using Client-side Exporting
 chartPresent: true
 ---
 
-Harry has created charts comparing vendor quotations for a very critical project. To add his charts to a project-progress presentation, he needs the charts as JPEGs. So far, he has used the FusionCharts [server-side export feature]{% linkTo tutorials/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf.md %}{:target='_blank'} to export his charts as images. However this time, because his data is crtical and confidential, he is not sure if he should use a publicly-hosted server for this export. While he can set up a [private export server]{% linkTo tutorials/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net.md %}{:target='_blank'} to export images, this requires extensive efforts and domain expertise. 
+Harry has created charts comparing vendor quotations for a very critical project. To add his charts to a project-progress presentation, he needs the charts as JPEGs. So far, he has used the FusionCharts [server-side export feature](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf) to export images, this requires extensive efforts and domain expertise. 
 
 To his relief, FusionCharts Suite XT, starting v3.8.0, includes support for client-side exporting, which also eases Harry's concerns about data confidentiality.
 

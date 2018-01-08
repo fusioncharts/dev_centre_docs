@@ -298,7 +298,7 @@ The HTML template for the above sample is:
 </div>
 ```
 
-To know how a combination chart can be created using the conventional JSON code, click [here](https://www.fusioncharts.com/dev/chart-guide/combination-charts/creating-combination-charts.html){:target='_blank'}.
+To know how a combination chart can be created using the conventional JSON code, click [here](https://www.fusioncharts.com/dev/chart-guide/combination-charts/creating-combination-charts.html).
 
 ## Fetch chart data from an external file
 

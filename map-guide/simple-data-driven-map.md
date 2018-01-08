@@ -120,7 +120,7 @@ This is what we did in the above code
 
 * We created an instance of `FusionCharts()` object in the `populationMap` variable. Each map in your HTML page needs to have a separate variable. The initialization code is wrapped within `FusionCharts.ready()` method. This safeguards your map instantiation code from being called before FusionCharts Suite XT library is loaded and is ready to be used on the page.
 
-* We instantiated the world map using its alias `maps/world`. Each map in FusionCharts Suite XT has a unique alias. You can find the list of all maps and their aliases [here]{% linkTo tutorials/getting-started/list-of-charts.md %}.
+* We instantiated the world map using its alias `maps/world`. Each map in FusionCharts Suite XT has a unique alias. You can find the list of all maps and their aliases [here](/getting-started/list-of-charts).
 
 * Next, we specified the width and height of the map (in pixels) using `width` and `height` property of the constructor.
 
@@ -234,5 +234,5 @@ In case something went wrong and you are unable to see the map, check for the fo
 
 * If you get a **Loading Data** or **a Error in loading data** message, check whether your JSON data structure is correct, and there are no conflicts related to quotation marks in your code.
 
-Click here for more information on [Troubleshooting]{% linkTo tutorials/troubleshooting/debugger.md %}.
+Click here for more information on [Troubleshooting](/troubleshooting/debugger).
 

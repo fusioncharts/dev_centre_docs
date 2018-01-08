@@ -222,4 +222,4 @@ chartInstance.addEventListener('nodedeleted', function(e, a){
 });
 ```
 
-<p class="text-info">You can get the latest updated node positions using JavaScript or by [submitting the updated positions]{% linkTo tutorials/chart-guide/drag-node-chart/updating-chart-data-on-server.md %} to a server-side script.</p>
+<p class="text-info">You can get the latest updated node positions using JavaScript or by [submitting the updated positions](/chart-guide/drag-node-chart/updating-chart-data-on-server) to a server-side script.</p>

@@ -24,17 +24,17 @@ A simple 2D pyramid chart looks like this:
 
 ## Salient Features
 
-* [Interactive pyramid slices]{% linkTo tutorials/gauge-and-widgets-guide/pyramid-chart/configuring-chart.md %}, when clicked can separate from the main pyramid
+* [Interactive pyramid slices](/gauge-and-widgets-guide/pyramid-chart/configuring-chart), when clicked can separate from the main pyramid
 
-* Ability to seamlessly [convert 3D pyramid to 2D pyramid]{% linkTo tutorials/gauge-and-widgets-guide/pyramid-chart/configuring-chart.md %} by right clicking on chart and selecting View 2D
+* Ability to seamlessly [convert 3D pyramid to 2D pyramid](/gauge-and-widgets-guide/pyramid-chart/configuring-chart) by right clicking on chart and selecting View 2D
 
-* Option to render the pyramid in 2D mode with more control over [border and fill properties]{% linkTo tutorials/gauge-and-widgets-guide/pyramid-chart/configuring-chart.md %}
+* Option to render the pyramid in 2D mode with more control over [border and fill properties](/gauge-and-widgets-guide/pyramid-chart/configuring-chart)
 
-* Option to [show values as actual values or in percentage]{% linkTo tutorials/gauge-and-widgets-guide/pyramid-chart/configuring-chart.md %}
+* Option to [show values as actual values or in percentage](/gauge-and-widgets-guide/pyramid-chart/configuring-chart)
 
 * Smart labels to avoid overlapping of pyramid labels
 
-* Option to [place labels on the side or in the center]{% linkTo tutorials/gauge-and-widgets-guide/pyramid-chart/configuring-chart.md %} of the chart
+* Option to [place labels on the side or in the center](/gauge-and-widgets-guide/pyramid-chart/configuring-chart) of the chart
 
 * Custom tool text for each pyramid slice
 

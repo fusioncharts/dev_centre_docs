@@ -6,7 +6,7 @@ headng: Configuring Export Feature
 chartPresent: true
 ---
 
-FusionCharts Suite XT lets you export your charts as images or PDFs by using its [server-side]{% linkTo tutorials/exporting-charts/using-fc-export-server/server-side-export/introduction.md %}{:target='_blank'} or [client-side]{% linkTo tutorials/exporting-charts/using-fc-export-server/client-side-export/exporting-charts-and-chart-data-using-client-side-exporting.md %}{:target='_blank'} (_since v3.8.0_) export features. Alternatively, FusionCharts also allows you to set up a [private server]{% linkTo tutorials/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net.md %}{:target='_blank'} for exporting your charts.
+FusionCharts Suite XT lets you export your charts as images or PDFs by using its [server-side](/exporting-charts/using-fc-export-server/server-side-export/introduction) for exporting your charts.
 
 The server-side export feature can be enabled by setting the `exportEnabled` attribute to __1__. To enable the client-side export feature, set the `exportEnabled` and the `exportAtClientSide` attributes to __1__. 
 The export button, ![image alt text Export Button](/assets/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-4.jpg), now appears in the top right corner of the chart.

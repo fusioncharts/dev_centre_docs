@@ -6,7 +6,7 @@ heading: Architecture of the FusionCharts Export Server
 chartPresent: False
 ---
 
-So far, you’ve been introduced to the FusionCharts chart export feature (to export charts as [images and PDF]{% linkTo tutorials/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf.md %}{:target='_blank'} as well as the [chart data in XLS]{% linkTo tutorials/exporting-charts/using-fc-export-server/exporting-chart-data.md %}{:target='_blank'}, the different modes of export ([server-side]{% linkTo tutorials/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature.md %}{:target='_blank'}, [client-side]{% linkTo tutorials/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-client-side-export-feature.md %}{:target='_blank'}, and [auto-export]{% linkTo tutorials/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-auto-export-feature.md %}{:target='_blank'}) supported by the suite, and [export statistics logging capabilities]{% linkTo tutorials/exporting-charts/using-fc-export-server/logging-export-statistics.md %}{:target='_blank'}.
+So far, you’ve been introduced to the FusionCharts chart export feature (to export charts as [images and PDF](/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf).
 
 This article will give you an insight into the overall architecture of the FusionCharts Export Server, details and workflow of the individual modules in the architecture, and how they can be decoupled.
 

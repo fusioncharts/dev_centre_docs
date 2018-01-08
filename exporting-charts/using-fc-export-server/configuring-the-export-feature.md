@@ -6,7 +6,7 @@ heading: Configuring the Export Feature
 chartPresent: true
 ---
 
-FusionCharts Suite XT lets you export your charts (as __JPG__, __PNG__, __SVG__, and __PDF__) and chart data (since v3.11.0; as __XLS__) by using its [server-side]{% linkTo tutorials/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature.md %}{:target='_blank'}, [client-side]{% linkTo tutorials/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-client-side-export-feature.md %}{:target='_blank'} (since v3.8.0), and [auto export]{% linkTo tutorials/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-auto-export-feature.md %}{:target='_blank'} (since v3.12.1) exporting modes. Alternatively, FusionCharts also allows you to set up a [private server]{% linkTo tutorials/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net.md %}{:target='_blank'} for exporting your charts.
+FusionCharts Suite XT lets you export your charts (as __JPG__, __PNG__, __SVG__, and __PDF__) and chart data (since v3.11.0; as __XLS__) by using its [server-side](/exporting-charts/using-fc-export-server/modes-of-export/exporting-charts-and-chart-data-using-the-server-side-export-feature) for exporting your charts.
 
 The exporting feature can be enabled by setting the `exportEnabled` attribute to 1. The mode of export can be selected by setting the `exportMode` attribute to server, client, or auto, as required.
 

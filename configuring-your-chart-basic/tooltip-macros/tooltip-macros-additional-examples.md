@@ -8,13 +8,13 @@ chartPresent: true
 
 ## Prerequisites:
 
-* [Introduction to Tooltip Macros]{% linkTo tutorials/configuring-your-chart-basic/tooltip-macros/introduction-to-tooltip-macros.md %}{:target='_blank'}
+* [Introduction to Tooltip Macros](/configuring-your-chart-basic/tooltip-macros/introduction-to-tooltip-macros)
 
-* [List of Tooltip Macros]{% linkTo tutorials/configuring-your-chart-basic/tooltip-macros/list-of-macros.md %}{:target='_blank'}
+* [List of Tooltip Macros](/configuring-your-chart-basic/tooltip-macros/list-of-macros)
 
 FusionCharts Suite XT includes about a 100 macros that can be used for tooltip customization—the text as well as the formatting.
 
-This article showcases a few more examples, in addition to the example covered in the [Introduction to Tooltip Macros]{% linkTo tutorials/configuring-your-chart-basic/tooltip-macros/introduction-to-tooltip-macros.md %}{:target='_blank'} article.
+This article showcases a few more examples, in addition to the example covered in the [Introduction to Tooltip Macros](/configuring-your-chart-basic/tooltip-macros/introduction-to-tooltip-macros) article.
 
 ## Example 1: Tooltip Macros for Trend-lines
 
@@ -45,7 +45,7 @@ Given below is a brief description of the attribute and macros used in this exam
 	</tr>
 	<tr>
 		<td> `$displayValue` </td>
-		<td> In context of the above example, this macro __represents the text rendered with the trend-line__, set using the [displayValue](http://www.fusioncharts.com/dev/chart-attributes.html?chart=column2d&attributeName=data_displayValue){:target='_blank'} attribute. </td>
+		<td> In context of the above example, this macro __represents the text rendered with the trend-line__, set using the [displayValue](http://www.fusioncharts.com/dev/chart-attributes.html?chart=column2d&attributeName=data_displayValue) attribute. </td>
 	</tr>
 	<tr>
 		<td> `$startDataValue` </td>
@@ -56,7 +56,7 @@ Given below is a brief description of the attribute and macros used in this exam
 
 <table>
 	<tr>
-		<td> Click [here]{% linkTo tutorials/configuring-your-chart-basic/tooltip-macros/list-of-macros.md %}{:target='_blank'} for the complete list of tooltip macros supported by FusionCharts Suite XT. </td>
+		<td> Click [here](/configuring-your-chart-basic/tooltip-macros/list-of-macros) for the complete list of tooltip macros supported by FusionCharts Suite XT. </td>
 	</tr>
 </table>
 
@@ -107,7 +107,7 @@ The table below describes the attribute and the macros used in the above example
 
 <table>
 	<tr>
-		<td> Click [here]{% linkTo tutorials/configuring-your-chart-basic/tooltip-macros/list-of-macros.md %}{:target='_blank'} for the complete list of tooltip macros supported by FusionCharts Suite XT. </td>
+		<td> Click [here](/configuring-your-chart-basic/tooltip-macros/list-of-macros) for the complete list of tooltip macros supported by FusionCharts Suite XT. </td>
 	</tr>
 </table>
 
@@ -187,7 +187,7 @@ The table below describes the attribute and the macros used in the above example
 
 <table>
 	<tr>
-		<td> Click [here]{% linkTo tutorials/configuring-your-chart-basic/tooltip-macros/list-of-macros.md %}{:target='_blank'} for the complete list of tooltip macros supported by FusionCharts Suite XT. </td>
+		<td> Click [here](/configuring-your-chart-basic/tooltip-macros/list-of-macros) for the complete list of tooltip macros supported by FusionCharts Suite XT. </td>
 	</tr>
 </table>
 

@@ -8,8 +8,8 @@ chartPresent: false
 
 ## Prerequisites
 
-* [Introduction to Events]{% linkTo tutorials/advanced-charting/events/introduction-to-events.md %}
-* [Handling Events]{% linkTo tutorials/advanced-charting/events/handling-events.md %}
+* [Introduction to Events](/advanced-charting/events/introduction-to-events)
+* [Handling Events](/advanced-charting/events/handling-events)
 
 FusionCharts Suite XT includes a comprehensive set of events that can be used to trigger actions for different stages in the life cycle of a chart or when you interact with a chart. 
 These events are classified based on when they are triggered, or the chart-type they belong to.

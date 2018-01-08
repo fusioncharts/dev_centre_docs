@@ -8,11 +8,11 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT]{% linkTo tutorials/getting-started/building-your-first-chart.md %}
+* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
 
-* [Introduction to annotations]{% linkTo tutorials/advanced-charting/annotations/introduction.md %}
+* [Introduction to annotations](/advanced-charting/annotations/introduction)
 
-* [Creating simple annotations]{% linkTo tutorials/advanced-charting/annotations/creating-annotations/introduction.md %}
+* [Creating simple annotations](/advanced-charting/annotations/creating-annotations/introduction)
 
 This article discusses positioning annotations at runtime using macros.
 
@@ -24,7 +24,7 @@ It describes:
 
 * <a href="/advanced-chart-configurations/annotations/positioning-annotations-using-macros#annotation-macros-for-positioning-with-respect-to-other-chart-elements" class="smoth-scroll">Annotation Macros for positioning with respect to other chart elements</a>
 
-<p class="text-info"> Annotations can also be [positioned statically]{% linkTo tutorials/advanced-charting/annotations/positioning-annotations-using-absolute-values.md %} in the chart constructor.</p>
+<p class="text-info"> Annotations can also be [positioned statically](/advanced-charting/annotations/positioning-annotations-using-absolute-values) in the chart constructor.</p>
 
 ## Annotation Macros
 

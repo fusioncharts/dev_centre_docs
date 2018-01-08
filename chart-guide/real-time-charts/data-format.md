@@ -121,7 +121,7 @@ To do this, you can provide the incremental data to the chart in the following f
 
 ```
 
-The link has to be specified in the [FusionCharts link format]{% linkTo tutorials/advanced-charting/drill-down/linkedcharts.md %}. The link in the above data has been URL Encoded because it contains special characters like &, %, etc.
+The link has to be specified in the [FusionCharts link format](/advanced-charting/drill-down/linkedcharts). The link in the above data has been URL Encoded because it contains special characters like &, %, etc.
 
 ### The toolText Attribute
 
@@ -182,4 +182,4 @@ After you have stopped updates for a chart, you can restart updates either by us
 
 ## Sending Messages Pertinent to the Message Logger
 
-For real-time charts that show the message logger, you can update various parameters for the message logger in real-time. All these parameters and their data format have been explained in the [Message Logger]{% linkTo tutorials/chart-guide/real-time-charts/setting-message-logger.md %} section.
+For real-time charts that show the message logger, you can update various parameters for the message logger in real-time. All these parameters and their data format have been explained in the [Message Logger](/chart-guide/real-time-charts/setting-message-logger) section.

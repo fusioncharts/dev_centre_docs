@@ -8,7 +8,7 @@ chartPresent: true
 
 A treemap is useful when hierarchical information has to be analyzed. A treemap is created using 2D nested rectangles, which can be compared to gain insights from hierarchical information.
 
-<p class="text-info"> In order to render treemap chart, include fusioncharts.treemap.js in the project folder with rest of the .js files as mentioned [here]{% linkTo tutorials/getting-started/installation.md %}. </p>
+<p class="text-info"> In order to render treemap chart, include fusioncharts.treemap.js in the project folder with rest of the .js files as mentioned [here](/getting-started/installation). </p>
 
 A simple treemap is shown below:
 
@@ -139,4 +139,4 @@ The sample treemap with the gradient legend set to show only those nodes that ha
 
 ![Showing/Hiding Data Values Using the Gradient Legend](/assets/images/chart-guide-treemap-chart-creating-a-simple-treemap-chart-image-7.jpg)
 
-Click [here]{% linkTo attrs.md chart=treemap %}{:target='_blank'} for the complete list of attributes supported by the treemap.
+Click [here](/chart-attributes?chart=treemap) for the complete list of attributes supported by the treemap.

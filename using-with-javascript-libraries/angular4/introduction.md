@@ -6,7 +6,7 @@ heading: Introduction to the FusionCharts Angular4 Component
 chartPresent: false
 ---
 
-FusionCharts Suite XT comes with an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/){:target='_blank'} that can be used to plot static and real-time data.
+FusionCharts Suite XT comes with an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/) that can be used to plot static and real-time data.
 
 The Angular4-FusionCharts component is a simple and lightweight binding for the FusionCharts charting library that lets you add rich and interactive charts to your Angular projects.
 

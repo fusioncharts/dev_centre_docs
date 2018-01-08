@@ -301,4 +301,4 @@ In case something went wrong and you are unable to see the chart, check for the 
 
 * If you get a Loading Data or Error in loading data message, check whether your JSON data structure is correct, and there are no conflicts related to quotation marks in your code.
 
-Click here for more information on [Troubleshooting](https://www.fusioncharts.com/dev/troubleshooting/debugger.html){:target='_blank'}
+Click here for more information on [Troubleshooting](https://www.fusioncharts.com/dev/troubleshooting/debugger.html)

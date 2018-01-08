@@ -6,7 +6,7 @@ heading: Install FusionCharts ReactJS Component via NPM
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/){:target='_blank'} that you can use to plot static as well as real-time data.
+FusionCharts Suite XT includes an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/) that you can use to plot static as well as real-time data.
 
 The __React-FusionCharts__ component, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single ReactJS component.
 
@@ -148,5 +148,5 @@ Once you are done with the steps given above, your chart will be rendered when y
 
 ## Licensing
 <p class="text-info">
-React-FusionCharts is open-source and distributed under the terms of the MIT/X11 License. You will still need to download and include FusionCharts in your page. This project provides no direct functionality. You can [download an evaluation](http://www.fusioncharts.com/download/){:target='_blank'}. You will still need to purchase a FusionCharts license to use in a commercial environment (FusionCharts is [free for non-commercial and personal use](http://www.fusioncharts.com/download/free/){:target='_blank'}).
+React-FusionCharts is open-source and distributed under the terms of the MIT/X11 License. You will still need to download and include FusionCharts in your page. This project provides no direct functionality. You can [download an evaluation](http://www.fusioncharts.com/download/). You will still need to purchase a FusionCharts license to use in a commercial environment (FusionCharts is [free for non-commercial and personal use](http://www.fusioncharts.com/download/free/)).
 </p>

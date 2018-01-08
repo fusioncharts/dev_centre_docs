@@ -8,17 +8,17 @@ chartPresent: true
 
 FusionCharts Suite XT lets you define simple links that:
 
-* open in [the same window]{% linkTo tutorials/advanced-charting/drill-down/simple-drill-down.md %}
+* open in [the same window](/advanced-charting/drill-down/simple-drill-down)
 
-* open in [a new window]{% linkTo tutorials/advanced-charting/drill-down/simple-drill-down.md %}
+* open in [a new window](/advanced-charting/drill-down/simple-drill-down)
 
 * open in a new pop-up window
 
 * open in a new frame
 
-* render the [whole chart as a hotspot]{% linkTo tutorials/advanced-charting/drill-down/set-chart-as-hotspot.md %}
+* render the [whole chart as a hotspot](/advanced-charting/drill-down/set-chart-as-hotspot)
 
-* invoke existing [JavaScript functions]{% linkTo tutorials/advanced-charting/drill-down/linkedcharts.md %} present within the same page
+* invoke existing [JavaScript functions](/advanced-charting/drill-down/linkedcharts) present within the same page
 
 In this section, you will be shown how you can:
 

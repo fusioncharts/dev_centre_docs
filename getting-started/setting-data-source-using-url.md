@@ -19,7 +19,7 @@ This article explains how you can set the chart data using the URL of the corres
 
 ## Loading Data using the JSON URL
 
-Let us build the same revenue chart, which we built in the [first example]{% linkTo tutorials/getting-started/building-your-first-chart.md %} using JSON, and use a .json file as the data source in this example.
+Let us build the same revenue chart, which we built in the [first example](/getting-started/building-your-first-chart) using JSON, and use a .json file as the data source in this example.
 
 {% embed_chart getting-started-your-first-charts-building-your-chart-example1.js %}
 
@@ -186,6 +186,6 @@ In case something went wrong and you are unable to see the chart, check for the 
 
  *  If you get a __Loading Data__ or __Error in loading data__ message, check whether your JSON/XML data structure is correct, and there are no conflicts related to quotation marks in your code.
 
-Click here for more information on [Troubleshooting]{% linkTo tutorials/troubleshooting/debugger.md %}.
+Click here for more information on [Troubleshooting](/troubleshooting/debugger).
 
 Now that you’re familiar with the basics of FusionCharts Suite XT, let’s build some advanced chart types, including multiple series of data, real-time updates etc.

@@ -436,4 +436,4 @@ The HTML code for this chart is given below:
 </div>
 ```
 
-For the complete list of attributes to configure a column 2D chart, click [here](https://www.fusioncharts.com/dev/chart-attributes.html?chart=column2d){:target='_blank'}.
+For the complete list of attributes to configure a column 2D chart, click [here](https://www.fusioncharts.com/dev/chart-attributes.html?chart=column2d).

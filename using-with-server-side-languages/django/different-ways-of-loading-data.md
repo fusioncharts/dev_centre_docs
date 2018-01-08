@@ -235,7 +235,7 @@ Given below are a few tips that, although applicable while using FusionCharts, n
   </tr>
   <tr>
 {% embed_data using-with-server-side-languages-django-different-ways-of-loading-data-example-3.js %}
-For an example, click [here]{% linkTo tutorials/chart-guide/standard-charts/creating-standard-charts.md %}.
+For an example, click [here](/chart-guide/standard-charts/creating-standard-charts).
     </td>
   </tr>
   <tr>
@@ -243,7 +243,7 @@ For an example, click [here]{% linkTo tutorials/chart-guide/standard-charts/crea
   </tr>
   <tr>  
 {% embed_data using-with-server-side-languages-django-different-ways-of-loading-data-example-4.js %}
-For an example, click [here]{% linkTo tutorials/chart-guide/multi-series-charts/creating-multi-series-charts.md %}.
+For an example, click [here](/chart-guide/multi-series-charts/creating-multi-series-charts).
     </td>
   </tr>
 </table>

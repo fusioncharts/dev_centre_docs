@@ -12,17 +12,17 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT]{% linkTo tutorials/getting-started/building-your-first-chart.md %}{:target='_blank'}
+* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
 
-* [Installing the React-FusionCharts Component]{% linkTo tutorials/using-with-javascript-libraries/reactjs/introduction.md %}{:target='_blank'}
+* [Installing the React-FusionCharts Component](/using-with-javascript-libraries/reactjs/introduction)
 
-* [Installing the React-FusionCharts Component via NPM]{% linkTo tutorials/using-with-javascript-libraries/reactjs/install-fusioncharts-reactjs-component-via-npm.md %}{:target='_blank'}
+* [Installing the React-FusionCharts Component via NPM](/using-with-javascript-libraries/reactjs/install-fusioncharts-reactjs-component-via-npm)
 
-* [Creating Charts Using the React-FusionCharts Component]{% linkTo tutorials/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component.md %}{:target='_blank'}
+* [Creating Charts Using the React-FusionCharts Component](/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component)
 
-* [Configuring Charts Using the ReactJS Props Object]{% linkTo tutorials/using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object.md %}{:target='_blank'}
+* [Configuring Charts Using the ReactJS Props Object](/using-with-javascript-libraries/reactjs/configuring-charts-using-the-reactjs-props-object)
 
-* [Configuring Advanced Features Using ReactJS]{% linkTo tutorials/using-with-javascript-libraries/reactjs/configuring-advanced-features-using-reactjs.md %}{:target='_blank'}
+* [Configuring Advanced Features Using ReactJS](/using-with-javascript-libraries/reactjs/configuring-advanced-features-using-reactjs)
 
 ReactJS provides a 'one-way' data flow. By monitoring the state of a parent ReactJS component, you can take advantage of this unidirectional data-binding to include interactivity between charts.
 
@@ -99,7 +99,7 @@ var pieChartConfigurations = {
 
 Before the filter is propagated to a chart, it has to be stored from where it is accessible to the chart. This is done in the function that sets the state of the parent component.
 
-A function is defined in the parent component and is called when the [slicingStart]{% linkTo FusionCharts.events.slicingStart %}{:target='_blank'} event is triggered. The function sets the state of the parent component, mandatorily, with:
+A function is defined in the parent component and is called when the [slicingStart]{% linkTo FusionCharts.events.slicingStart %} event is triggered. The function sets the state of the parent component, mandatorily, with:
 
 * `filterValue`: value of the selected slice
 * `filterSource`: ID of the chart that triggered the `slicingStart` event

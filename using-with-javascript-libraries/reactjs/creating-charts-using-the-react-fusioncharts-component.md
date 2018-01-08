@@ -8,11 +8,11 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT]{% linkTo tutorials/getting-started/building-your-first-chart.md %}{:target='_blank'}
+* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
 
-* [Installing the React-FusionCharts Component]{% linkTo tutorials/using-with-javascript-libraries/reactjs/introduction.md %}{:target='_blank'}
+* [Installing the React-FusionCharts Component](/using-with-javascript-libraries/reactjs/introduction)
 
-* [Installing the React-FusionCharts Component via NPM]{% linkTo tutorials/using-with-javascript-libraries/reactjs/install-fusioncharts-reactjs-component-via-npm.md %}{:target='_blank'}
+* [Installing the React-FusionCharts Component via NPM](/using-with-javascript-libraries/reactjs/install-fusioncharts-reactjs-component-via-npm)
 
 The React-FusionCharts component uses the `FusionCharts` component to create and configure charts using ReactJS.
 
@@ -247,7 +247,7 @@ ReactDOM.render(
 ```
 
 <p class="text-info">
-To know how a multi-series line chart can be created using the conventional JSON code, click [here](http://www.fusioncharts.com/dev/usage-guide/chart-guide/multi-series-charts/creating-multi-series-charts.html#creating-a-multi-series-line-2d-chart){:target='_blank'}.
+To know how a multi-series line chart can be created using the conventional JSON code, click [here](http://www.fusioncharts.com/dev/usage-guide/chart-guide/multi-series-charts/creating-multi-series-charts.html#creating-a-multi-series-line-2d-chart).
 </p>
 
 ## Fetching Chart Data from an External File

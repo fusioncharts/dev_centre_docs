@@ -19,13 +19,13 @@ Simple links are links that:
 
 * open in a new page
 
-* open in a specified [frame]{% linkTo tutorials/advanced-charting/drill-down/opening-in-pop-up-or-frames.md %}
+* open in a specified [frame](/advanced-charting/drill-down/opening-in-pop-up-or-frames)
 
-* open in a new [pop-up window]{% linkTo tutorials/advanced-charting/drill-down/opening-in-pop-up-or-frames.md %}
+* open in a new [pop-up window](/advanced-charting/drill-down/opening-in-pop-up-or-frames)
 
-* render the [whole chart as a hotspot]{% linkTo tutorials/advanced-charting/drill-down/set-chart-as-hotspot.md %}
+* render the [whole chart as a hotspot](/advanced-charting/drill-down/set-chart-as-hotspot)
 
-* **Chart links** (*Linked Charts*): Drill down to detailed [*LinkedCharts*]{% linkTo tutorials/advanced-charting/drill-down/linkedcharts.md %} that show data at different levels of detail*.*
+* **Chart links** (*Linked Charts*): Drill down to detailed [*LinkedCharts*](/advanced-charting/drill-down/linkedcharts) that show data at different levels of detail*.*
 
 In this section, we will look at how you can define simple links that open in the same page and links that open on a new page.
 

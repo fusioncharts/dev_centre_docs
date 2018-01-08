@@ -8,10 +8,10 @@ chartPresent: false
 
 ## Prerequisites
 
-* [Introduction to Themes]{% linkTo tutorials/advanced-charting/theme-manager/introduction-to-themes.md %}
-* [Applying Themes]{% linkTo tutorials/advanced-charting/theme-manager/applying-themes.md %}
+* [Introduction to Themes](/advanced-charting/theme-manager/introduction-to-themes)
+* [Applying Themes](/advanced-charting/theme-manager/applying-themes)
 
-FusionCharts Suite XT  is shipped with a set of predefined themes. Additionally, it also lets you  [modify existing themes]{% linkTo tutorials/advanced-charting/theme-manager/modifying-existing-themes.md %}  as well as [create your own themes]{% linkTo tutorials/advanced-charting/theme-manager/creating-new-themes.md %}. However, before you can start modifying or creating themes, you need to understand the structure of a theme.
+FusionCharts Suite XT  is shipped with a set of predefined themes. Additionally, it also lets you  [modify existing themes](/advanced-charting/theme-manager/modifying-existing-themes). However, before you can start modifying or creating themes, you need to understand the structure of a theme.
 
 Theme definitions are written using a tier-based structure, where each tier is used to define properties for all/specific chart, gauge, and map types.
 
@@ -123,7 +123,7 @@ base: {
 Each tier in the theme definition supports most JSON objects like `chart`, `dataset`, `trendlines`, and so on, and all the attributes that fall under these objects. Only, __make sure that you map the attributes and objects correctly__.
 
 <p class='text-info'>
-Refer the [FusionCharts Suite XT Chart Attributes]{% linkTo attrs.md chart=area2d %} page for an understanding of the objects and attributes used to configure the charts, gauges, and maps.
+Refer the [FusionCharts Suite XT Chart Attributes](/chart-attributes?chart=area2d) page for an understanding of the objects and attributes used to configure the charts, gauges, and maps.
 </p>
 
 ## Preventing Overriding of the Theme Definition
@@ -154,4 +154,4 @@ FusionCharts.register('theme', {
     }
 });
 ```
-Now that you have understood how theme definitions work, go ahead and see how you can [modify]{% linkTo tutorials/advanced-charting/theme-manager/modifying-existing-themes.md %} and [create themes]{% linkTo tutorials/advanced-charting/theme-manager/creating-new-themes.md %} on your own.
+Now that you have understood how theme definitions work, go ahead and see how you can [modify](/advanced-charting/theme-manager/modifying-existing-themes) on your own.

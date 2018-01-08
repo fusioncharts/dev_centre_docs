@@ -8,13 +8,13 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT]{% linkTo tutorials/getting-started/building-your-first-chart.md %}
+* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
 
-* [Installing the Angular-FusionCharts directive]{% linkTo tutorials/using-with-javascript-libraries/angularjs/introduction.md %}
+* [Installing the Angular-FusionCharts directive](/using-with-javascript-libraries/angularjs/introduction)
 
-* [Creating charts using the Angular-FusionCharts directive]{% linkTo tutorials/using-with-javascript-libraries/angularjs/creating-charts-using-the-angular-fusioncharts-directive.md %}
+* [Creating charts using the Angular-FusionCharts directive](/using-with-javascript-libraries/angularjs/creating-charts-using-the-angular-fusioncharts-directive)
 
-In addition to an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/) for plotting static and real-time data, FusionCharts Suite XT includes several advanced features that let you add more context to your chart and make data interpretation easy. These features include [annotations]{% linkTo tutorials/advanced-charting/annotations/introduction.md %}, [drill-down]{% linkTo tutorials/advanced-charting/drill-down/simple-drill-down.md %}, [trend-lines]{% linkTo tutorials/configuring-your-chart-basic/trend-lines-and-zones.md %} and [events]{% linkTo tutorials/advanced-charting/events/introduction-to-events.md %}.
+In addition to an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/) for plotting static and real-time data, FusionCharts Suite XT includes several advanced features that let you add more context to your chart and make data interpretation easy. These features include [annotations](/advanced-charting/annotations/introduction).
 
 This article focuses on how you can use the Angular-FusionCharts directive to add:
 

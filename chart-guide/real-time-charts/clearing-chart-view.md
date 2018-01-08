@@ -40,7 +40,7 @@ A real-time chart that clears all its data after every 10th update looks like th
 
 
 
-In the above data, the `feedData()` method (covered in the section on [feeding and retrieving data]{% linkTo tutorials/chart-guide/real-time-charts/feeding-and-retrieving-data-through-api.md %}) is used to send the clearing command from the server to the chart.
+In the above data, the `feedData()` method (covered in the section on [feeding and retrieving data](/chart-guide/real-time-charts/feeding-and-retrieving-data-through-api)) is used to send the clearing command from the server to the chart.
 
 <p class="text-info">When sending this command from the real-time data provider page to the chart, you need to make sure that it is not sent with each incremental data update. Otherwise, you will not see anything plotted on the chart because the chart will clear itself with each update.</p>
 

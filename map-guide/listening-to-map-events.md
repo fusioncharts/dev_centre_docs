@@ -24,7 +24,7 @@ The data used to create this example is shown here
 
 This is what we did in the above data structure
 
-* Created a World Population map exactly like we did as part of {% linkTo tutorials/map-guide/customizing-your-map.md %} and set its theme to `fint`.
+* Created a World Population map exactly like we did as part of (/map-guide/customizing-your-map) and set its theme to `fint`.
 
 * Defined event listeners in an `events` object as part of  the `FusionCharts()` constructor to listen to 3 events. This is the quickest way to define event listeners for a map. Alternatively, you can use the `addEventListener()` method on specific map instances, or on all maps globally, to listen to events.
 
@@ -137,7 +137,7 @@ FusionCharts.ready(function() {
 
 Markers and Connectors raise events on mouse interactions like roll over, roll out and click just like Entities.
 
-Shown here is the world map that we built in {% linkTo tutorials/map-guide/adding-markers.md %} as part of the connectors section. It shows the busiest routes from the Heathrow.
+Shown here is the world map that we built in (/map-guide/adding-markers) as part of the connectors section. It shows the busiest routes from the Heathrow.
 
 {% embed_chart map-guide-listening-to-map-events-2.js %}
 

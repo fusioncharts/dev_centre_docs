@@ -6,7 +6,7 @@ heading: Introduction to the FusionCharts VueJS Component
 chartPresent: false
 ---
 
-FusionCharts Suite XT comes with an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/){:target='_blank'} that can be used to plot static and real-time data.
+FusionCharts Suite XT comes with an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/) that can be used to plot static and real-time data.
 
 The Vue-FusionCharts component lets you include FusionCharts in your VueJS projects and add interactive JavaScript charts and graphs to your VueJS applications. Before we get into the installation process of the component, let’s take a look at what sets the VueJS component apart. 
 
@@ -22,7 +22,7 @@ In this article, we will talk about how you can download and install the Vue-Fus
 
 ## Downloading the component
 
-You can download the Vue-FusionCharts component from [here](https://www.fusioncharts.com/vue-fusioncharts/){:target='_blank'}.
+You can download the Vue-FusionCharts component from [here](https://www.fusioncharts.com/vue-fusioncharts/).
 
 ## Installing the Vue-FusionCharts component
 
@@ -44,7 +44,7 @@ In your HTML code, include the `fusioncharts.js` and `vue-fusioncharts.js` JavaS
 
 ### Step 2: Define the chart configuration
 
-As shown in the code below, in your JavaScript code, define an object that contains the configuration for a FusionCharts Suite XT chart. Set the chart data source using the regular [FusionCharts JSON format](http://www.fusioncharts.com/charts/){:target='_blank'}.
+As shown in the code below, in your JavaScript code, define an object that contains the configuration for a FusionCharts Suite XT chart. Set the chart data source using the regular [FusionCharts JSON format](http://www.fusioncharts.com/charts/).
 
 ```javascript
 data = {
@@ -98,4 +98,4 @@ Once the installation is complete, you will be ready to start creating and custo
 
 ## Licensing
 
-Vue-FusionCharts is an open-source resource and distributed under the terms of the MIT/X11 License. You will still need to include FusionCharts in your page. This project provides no direct functionality. You can download a [free evaluation version](https://www.fusioncharts.com/download/){:target='_blank'} here. You will still need to purchase a FusionCharts license to use in a commercial environment ([FusionCharts is free for noncommercial and personal use](https://www.fusioncharts.com/download/free/){:target='_blank'}).
+Vue-FusionCharts is an open-source resource and distributed under the terms of the MIT/X11 License. You will still need to include FusionCharts in your page. This project provides no direct functionality. You can download a [free evaluation version](https://www.fusioncharts.com/download/) here. You will still need to purchase a FusionCharts license to use in a commercial environment ([FusionCharts is free for noncommercial and personal use](https://www.fusioncharts.com/download/free/)).

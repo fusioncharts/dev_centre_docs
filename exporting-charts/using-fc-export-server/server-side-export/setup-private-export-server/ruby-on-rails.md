@@ -55,12 +55,12 @@ This creates the following files and directories:
 ## Inkscape
 
 Inkscape is an open source vector graphics editor. What sets Inkscape apart is its use of Scalable Vector Graphics (SVG), an open XML-based W3C standard, as the native format. Inkscape has a powerful command line interface and can be used in scripts for a variety of tasks, such as exporting and format conversions. 
-For more details, click [here](http://inkscape.org/doc/inkscape-man.html){:target='_blank'}.
+For more details, click [here](http://inkscape.org/doc/inkscape-man.html).
 
 ## ImageMagick
 
 ImageMagick is a free and open-source software suite for displaying, converting, and editing raster image and vector image files. The software mainly consists of a number of command-line interface utilities for manipulating images.
-For more details, click [here](http://www.imagemagick.org/){:target='_blank'}.
+For more details, click [here](http://www.imagemagick.org/).
 
 ## Configuration
 

@@ -75,7 +75,7 @@ Given below is a brief description of the attribute specific to a trend-zone:
   </tr>
 </table>
 
-FusionCharts Suite XT includes several options to customize trend elements. To know more, click [here]{% linkTo tutorials/configuring-your-chart-basic/trend-lines-and-zones.md %}.
+FusionCharts Suite XT includes several options to customize trend elements. To know more, click [here](/configuring-your-chart-basic/trend-lines-and-zones).
 
 ## Plotting Vertical Line Elements
 
@@ -106,7 +106,7 @@ Given below is a brief description of the attributes used to render a vertical l
   </tr>
 </table>
 
-FusionCharts Suite XT includes several options to customize vertical line elements. To know more, click [here]{% linkTo tutorials/configuring-your-chart-basic/vertical-lines.md %}.
+FusionCharts Suite XT includes several options to customize vertical line elements. To know more, click [here](/configuring-your-chart-basic/vertical-lines).
 
 ## Changing Chart Type
 
