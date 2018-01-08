@@ -1,6 +1,6 @@
 <ul class="nav">
   <li><i class="icon-home"></i><a href="/">Home</a></li>
-  <li><i class="icon-home"></i><a>Demo<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
+  <li><i class="icon-demo"></i><a>Demo<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
     <ul class="nav-list master-nav">
 		  <li><a href="/demos/chart-gallery">Chart Gallery</a></li>
 		  <li><a href="/demos/dashboards">Business Dashboards</a></li>
@@ -682,7 +682,7 @@
       </li>
     </ul>
   </li>
-  <li><i class="icon-help"></i><a>Help<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
+  <li><i class="icon-headset-mic"></i><a>Help<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
     <ul>
       <li><a href="/tutorials-list">Tutorials</a></li>
       <li>Troubleshooting
