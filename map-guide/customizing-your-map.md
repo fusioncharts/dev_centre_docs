@@ -8,21 +8,21 @@ chartPresent: true
 
 Now that we know how to create a simple map (hyperlinks to the Simple Data Driven Map section) we will now look at customization of different map attributes. Below is a list of basic customizations possible for maps:
 
-* <a href="{{ site.baseurl }}map-guide/customizing-your-map.html#showing-full-names-in-map-labels">Showing full names in map labels</a>
+* <a href="/map-guide/customizing-your-map.html#showing-full-names-in-map-labels">Showing full names in map labels</a>
 
-* <a href="{{ site.baseurl }}map-guide/customizing-your-map.html#showing-values-in-labels">Showing values in labels</a>
+* <a href="/map-guide/customizing-your-map.html#showing-values-in-labels">Showing values in labels</a>
 
-* <a href="{{ site.baseurl }}map-guide/customizing-your-map.html#showing-labels-only-for-specific-entities">Showing labels only for specific entities</a>
+* <a href="/map-guide/customizing-your-map.html#showing-labels-only-for-specific-entities">Showing labels only for specific entities</a>
 
-* <a href="{{ site.baseurl }}map-guide/customizing-your-map.html#customizing-label-display-text">Customizing label display text</a>
+* <a href="/map-guide/customizing-your-map.html#customizing-label-display-text">Customizing label display text</a>
 
-* <a href="{{ site.baseurl }}map-guide/customizing-your-map.html#customising-fonts">Customizing fonts</a>
+* <a href="/map-guide/customizing-your-map.html#customising-fonts">Customizing fonts</a>
 
-* <a href="{{ site.baseurl }}map-guide/customizing-your-map.html#using-short-names-in-tooltips">Using short names in tooltips</a>
+* <a href="/map-guide/customizing-your-map.html#using-short-names-in-tooltips">Using short names in tooltips</a>
 
-* <a href="{{ site.baseurl }}map-guide/customizing-your-map.html#turning-off-entity-tooltips">Turning off entity tool-tips</a>
+* <a href="/map-guide/customizing-your-map.html#turning-off-entity-tooltips">Turning off entity tool-tips</a>
 
-* <a href="{{ site.baseurl }}map-guide/customizing-your-map.html#turning-off-entity-tooltips">Handling null entities</a>
+* <a href="/map-guide/customizing-your-map.html#turning-off-entity-tooltips">Handling null entities</a>
 
 ## Showing full names in map labels
 

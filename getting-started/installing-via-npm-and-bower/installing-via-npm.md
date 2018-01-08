@@ -14,21 +14,21 @@ This section talks about how the **fusioncharts** and the **fusionmaps** package
 
 **Step 1**: Install the FusionCharts package.
 
-   ```javascript
-   npm install fusioncharts
-   ```
+```javascript
+npm install fusioncharts
+```
    
 **Step 2**: Load FusionCharts using `require`.
 
-   ```javascript
-   var FusionCharts = require("fusioncharts");
-   ```
+```javascript
+var FusionCharts = require("fusioncharts");
+```
    
 **Step 3**: Load the charts module using `require`.
 
-   ```javascript
-   require("fusioncharts/fusioncharts.charts")(FusionCharts);
-   ```
+```javascript
+require("fusioncharts/fusioncharts.charts")(FusionCharts);
+```
    
 **Step 4**: Create the FusionCharts instance required to render the chart.
 

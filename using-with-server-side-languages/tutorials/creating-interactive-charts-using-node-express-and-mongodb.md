@@ -20,13 +20,13 @@ In this post we will see how we can create dynamic charts using `ExpressJS` and 
 In this section, you will be shown how to:
 
 
-* [Install Node.js]({{ site.baseurl }}using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#installing-nodejs)
-* [Install ExpressJS]({{ site.baseurl }}using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#installing-expressjs)
-* [Install MongoDB]({{ site.baseurl }}using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#installing-mongodb)
-* [Populate data in MongoDB]({{ site.baseurl }}using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#populating-data-in-mongodb)
-* [Create REST API for data retrieval]({{ site.baseurl }}using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#creating-rest-api-for-data-retrieval)
-* [Create views for rendering the chart]({{ site.baseurl }}using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#creating-views-for-rendering-the-chart)
-* [Download source code]({{ site.baseurl }}using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#source-code-download)
+* [Install Node.js](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#installing-nodejs)
+* [Install ExpressJS](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#installing-expressjs)
+* [Install MongoDB](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#installing-mongodb)
+* [Populate data in MongoDB](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#populating-data-in-mongodb)
+* [Create REST API for data retrieval](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#creating-rest-api-for-data-retrieval)
+* [Create views for rendering the chart](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#creating-views-for-rendering-the-chart)
+* [Download source code](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#source-code-download)
 
 
 ## Installing Node.js
@@ -158,11 +158,11 @@ If you are familiar with Java, you would remember using a MySQL Connector Jar to
 
 Let us develop the REST API by following the steps listed below:
 
-* [Import the express and mongodb packages to be used in the application]({{ site.baseurl }}using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-1--import-the-express-and-mongodb-packages-to-be-used-in-the-application)
-* [Connect to MongoDB instance running locally]({{ site.baseurl }}using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-2--connect-to-mongodb-instance-running-locally)
-* [Implement method to fetch the data from Database]({{ site.baseurl }}using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-3--implement-method-to-fetch-the-data-from-database)
-* [Create express server and REST API end-point]({{ site.baseurl }}using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-4--create-express-server-and-rest-api-end-point)
-* [Launch the express app on a port]({{ site.baseurl }}using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-5--launch-the-express-app-on-some-port)
+* [Import the express and mongodb packages to be used in the application](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-1--import-the-express-and-mongodb-packages-to-be-used-in-the-application)
+* [Connect to MongoDB instance running locally](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-2--connect-to-mongodb-instance-running-locally)
+* [Implement method to fetch the data from Database](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-3--implement-method-to-fetch-the-data-from-database)
+* [Create express server and REST API end-point](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-4--create-express-server-and-rest-api-end-point)
+* [Launch the express app on a port](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-5--launch-the-express-app-on-some-port)
 
 
 #### Step 1 : Import the Express and Mongodb Packages to be used in the Application
@@ -360,7 +360,7 @@ Note: In the above we are making use of [Bootstrap](http://getbootstrap.com/css/
 
 Let us now see the code for the template that will contain the chart. The name of this template file is chart.handlebars. In this template we will show the data both in tabular as well as graphical format. Before we look at the template definition, let us look at the directory structure we have created so far:
 
-![server side program as shown in diagram]({{ site.baseurl }}assets/images/node-screen.png)
+![server side program as shown in diagram](/assets/images/node-screen.png)
 
 Let us get back to the expressjs server code i.e server.js and do the following:
 
@@ -497,7 +497,7 @@ $("#table-location").html(template(data));
 
 If you want to see the app we have built so far in action, just run the following command from the app directory: `node server.js`. You will see Server up: http://localhost:3300 printed. Open the URL http://localhost:3300/ to see the table as shown in the below image:
 
-![server side program as shown in diagram]({{ site.baseurl }}assets/images/data-table.png)
+![server side program as shown in diagram](/assets/images/data-table.png)
 
 ### Build the JavaScript and HTML to display the fuel price in a line chart ###
 
@@ -555,7 +555,7 @@ lineChart.render();
 
 Let us load the URL http://localhost:3300/ in the browser to see both table and chart being displayed as shown in the image below:
 
-![server side program as shown in diagram]({{ site.baseurl }}assets/images/data-table2.png)
+![server side program as shown in diagram](/assets/images/data-table2.png)
 
 ### Source Code Download ###
 

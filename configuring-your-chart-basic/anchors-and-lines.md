@@ -10,13 +10,13 @@ Each data point in a line/spline/area chart is represented by an anchor. Anchors
 
 This article talks about:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/anchors-and-lines.html#customizing-anchor-display">Customizing anchor display</a>
+* <a href="/basic-chart-configurations/anchors-and-lines.html#customizing-anchor-display">Customizing anchor display</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/anchors-and-lines.html#customizing-anchor-properties">Customizing anchor properties</a>
+* <a href="/basic-chart-configurations/anchors-and-lines.html#customizing-anchor-properties">Customizing anchor properties</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/anchors-and-lines.html#customizing-anchors-for-specific-data-points">Customizing anchors for specific data points</a>
+* <a href="/basic-chart-configurations/anchors-and-lines.html#customizing-anchors-for-specific-data-points">Customizing anchors for specific data points</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/anchors-and-lines.html#adding-external-images-in-anchors-of-line--spline-charts">Adding external images in anchors of line & spline charts</a>
+* <a href="/basic-chart-configurations/anchors-and-lines.html#adding-external-images-in-anchors-of-line--spline-charts">Adding external images in anchors of line & spline charts</a>
 
 ## Customizing anchor display
 

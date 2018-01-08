@@ -10,15 +10,15 @@ There are various ways in which you can customize the way your task bars render 
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-task-bars.html#creating-task-bars-to-indicate-percent-complete-figures">Create task bars indicating percentage of task completed</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/configuring-task-bars.html#creating-task-bars-to-indicate-percent-complete-figures">Create task bars indicating percentage of task completed</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-task-bars.html#customizing-the-hover-effect-for-tasks">Customize hover effects for task bars</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/configuring-task-bars.html#customizing-the-hover-effect-for-tasks">Customize hover effects for task bars</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-task-bars.html#creating-task-bars-that-look-like-task-groups">Create task bars that look like a task group</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/configuring-task-bars.html#creating-task-bars-that-look-like-task-groups">Create task bars that look like a task group</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-task-bars.html#drawing-task-bars-with-rounded-corners">Draw task bars with rounded corners</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/configuring-task-bars.html#drawing-task-bars-with-rounded-corners">Draw task bars with rounded corners</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-task-bars.html#customizing-tool-text-for-task-bars">Customize the tool text for each task</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/configuring-task-bars.html#customizing-tool-text-for-task-bars">Customize the tool text for each task</a>
 
 ## Creating Task Bars to Indicate Percent Complete Figures
 

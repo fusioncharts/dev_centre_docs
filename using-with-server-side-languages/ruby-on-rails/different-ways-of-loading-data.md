@@ -10,11 +10,11 @@ chartPresent: true
 
 The FusionCharts Rails wrapper lets you load data for a chart using:
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/ruby-on-rails/different-ways-of-loading-data.html#loading-data-from-a-static-json-string">a static JSON string</a>
+* <a href="/using-with-server-side-languages/ruby-on-rails/different-ways-of-loading-data.html#loading-data-from-a-static-json-string">a static JSON string</a>
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/ruby-on-rails/different-ways-of-loading-data.html#loading-data-from-a-static-xml-string">a static XML string</a>
+* <a href="/using-with-server-side-languages/ruby-on-rails/different-ways-of-loading-data.html#loading-data-from-a-static-xml-string">a static XML string</a>
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/ruby-on-rails/different-ways-of-loading-data.html#loading-data-from-a-valid-ruby-hash">a valid Ruby hash</a>
+* <a href="/using-with-server-side-languages/ruby-on-rails/different-ways-of-loading-data.html#loading-data-from-a-valid-ruby-hash">a valid Ruby hash</a>
 
 In this section, you will be shown how the Ruby on Rails wrapper uses each of these methods to generate charts.
 

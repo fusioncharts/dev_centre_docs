@@ -10,15 +10,15 @@ The bulb gauge is a real-time chart, which can continuously request new data fro
 
 In this section, you will be shown how you can,
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html#configuring-real-time-updates-using-javascript-api">Configure real-time updates using JavaScript API</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html#configuring-real-time-updates-using-javascript-api">Configure real-time updates using JavaScript API</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html#configuring-real-time-updates-using-server-side-scripts">Configure real-time updates using server-side script</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html#configuring-real-time-updates-using-server-side-scripts">Configure real-time updates using server-side script</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html#stoppingrestarting-updates">Stop/restart updates</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html#stoppingrestarting-updates">Stop/restart updates</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html#configuring-real-time-events">Configure real-time events</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html#configuring-real-time-events">Configure real-time events</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html#troubleshooting-real-time-gauges">Troubleshoot real-time gauges</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html#troubleshooting-real-time-gauges">Troubleshoot real-time gauges</a>
 
 ## Configuring Real-time Updates Using JavaScript API
 

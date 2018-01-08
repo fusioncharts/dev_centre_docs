@@ -8,17 +8,17 @@ chartPresent: true
 
 The format of real-time data for real-time charts depends on:
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/data-format.html#number-of-datasets-to-update">the number of datasets you want to update for the chart</a>
+* <a href="/chart-guide/real-time-charts/data-format.html#number-of-datasets-to-update">the number of datasets you want to update for the chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/data-format.html#number-of-incremental-updates">the number of incremental updates you want to pass to the chart in one attempt</a>
+* <a href="/chart-guide/real-time-charts/data-format.html#number-of-incremental-updates">the number of incremental updates you want to pass to the chart in one attempt</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/data-format.html#attributes-to-update-for-the-chart">the attributes you want to update for the chart</a>
+* <a href="/chart-guide/real-time-charts/data-format.html#attributes-to-update-for-the-chart">the attributes you want to update for the chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/data-format.html#attributes-to-update-for-each-dataset">the attributes you want to update for each dataset</a> - like `label`, `color`, `link`, `toolText`, etc.
+* <a href="/chart-guide/real-time-charts/data-format.html#attributes-to-update-for-each-dataset">the attributes you want to update for each dataset</a> - like `label`, `color`, `link`, `toolText`, etc.
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/data-format.html#providing-empty-data-to-the-chart">whether you are passing empty data to the chart</a>
+* <a href="/chart-guide/real-time-charts/data-format.html#providing-empty-data-to-the-chart">whether you are passing empty data to the chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/data-format.html#commands-sent-to-the-chart">the commands for the chart</a>
+* <a href="/chart-guide/real-time-charts/data-format.html#commands-sent-to-the-chart">the commands for the chart</a>
 
 
 In this section, you will be shown how the data format changes depending on the above factors.

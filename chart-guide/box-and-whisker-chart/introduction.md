@@ -10,11 +10,11 @@ A box and whisker chart is a statistical chart that is used to examine and summa
 
 In this section, you will be introduced to the:
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/introduction.html#basics-of-a-box-and-whisker-chart">Basics of a box and whisker chart</a>
+* <a href="/chart-guide/box-and-whisker-chart/introduction.html#basics-of-a-box-and-whisker-chart">Basics of a box and whisker chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/introduction.html#features-of-a-box-and-whisker-chart">Features of a box and whisker chart</a>
+* <a href="/chart-guide/box-and-whisker-chart/introduction.html#features-of-a-box-and-whisker-chart">Features of a box and whisker chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/introduction.html#five-number-summary-principle">Five-number summary principle for plotting data on the box and whisker chart</a>
+* <a href="/chart-guide/box-and-whisker-chart/introduction.html#five-number-summary-principle">Five-number summary principle for plotting data on the box and whisker chart</a>
 
 ## Basics of a Box and Whisker Chart
 
@@ -42,7 +42,7 @@ A simple box and whisker chart looks like this:
 
 The 'five-number summary' principle is used to plot data on the box and whisker charts. This principle helps to provide a statistical summary for a given set of numbers. It gives information about the range (minimum and maximum numbers), the center (median), and the spread (upper and lower quartiles) for the set of values provided. A simple illustration of a box and whisker plot is given below:
 
-![image alt text]({{ site.baseurl }}assets/images/chart-guide-box-and-whisker-chart-introduction-1.jpg)
+![image alt text](/assets/images/chart-guide-box-and-whisker-chart-introduction-1.jpg)
 
 <p class="text-info">There is another principle, named as the 'Seven-number Summary', which is not used in the current implementation.</p>
 

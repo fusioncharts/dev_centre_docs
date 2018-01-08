@@ -18,11 +18,11 @@ Once a chart is created using the Angular-FusionCharts directive, the scope obje
 
 This articles describes how you can use the scope object to:
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object.html#updating-the-chart-data-dynamically">Update the chart data dynamically</a>
+* <a href="/using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object.html#updating-the-chart-data-dynamically">Update the chart data dynamically</a>
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object.html#updating-the-chart-attributes-dynamically">Update the chart attributes dynamically</a>
+* <a href="/using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object.html#updating-the-chart-attributes-dynamically">Update the chart attributes dynamically</a>
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object.html#trigger-scope-events-from-the-chart">Trigger scope events</a>
+* <a href="/using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object.html#trigger-scope-events-from-the-chart">Trigger scope events</a>
 
 ## Updating the Chart Data Dynamically
 

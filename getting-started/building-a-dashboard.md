@@ -41,7 +41,7 @@ For this example, we will use screenshots and the final dashboard is available t
 
 When done, the dashboard would look as under:
 
-<img src="{{ site.baseurl }}assets/images/dashboard.png" alt="Drawing" style="width: 100%;"/>
+<img src="/assets/images/dashboard.png" alt="Drawing" style="width: 100%;"/>
 
 The HTML code to build this dashboard is given here
 

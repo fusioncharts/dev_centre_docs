@@ -10,11 +10,11 @@ Real-time charts in the FusionCharts Suite XT let you clear the data currently b
 
 The chart view can be cleared:
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/clearing-chart-view.html#clearing-the-chart-from-the-server">from the server</a>
+* <a href="/chart-guide/real-time-charts/clearing-chart-view.html#clearing-the-chart-from-the-server">from the server</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/clearing-chart-view.html#setting-a-chart-clearing-interval">by setting a clear interval</a>
+* <a href="/chart-guide/real-time-charts/clearing-chart-view.html#setting-a-chart-clearing-interval">by setting a clear interval</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/clearing-chart-view.html#clearing-chart-using-javascript-api">using JavaScript API</a>
+* <a href="/chart-guide/real-time-charts/clearing-chart-view.html#clearing-chart-using-javascript-api">using JavaScript API</a>
 
 In this section, you will be shown how you can clear the chart view using each of the above listed methods.
 

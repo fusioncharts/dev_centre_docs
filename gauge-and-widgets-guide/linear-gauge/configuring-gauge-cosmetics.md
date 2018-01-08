@@ -10,23 +10,23 @@ FusionCharts Suite XT allows you to configure the functional and cosmetic proper
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#configuring-pointer-properties">Configure pointer properties</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#configuring-pointer-properties">Configure pointer properties</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#adding-tool-text-and-a-link-to-the-pointer">Add tool text and link to a pointer</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#adding-tool-text-and-a-link-to-the-pointer">Add tool text and link to a pointer</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#adding-multiple-pointers">Add multiple pointers</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#adding-multiple-pointers">Add multiple pointers</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#configuring-the-pointer-value">Configure the pointer value</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#configuring-the-pointer-value">Configure the pointer value</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#configuring-the-pointer-position">Configure the pointer position</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#configuring-the-pointer-position">Configure the pointer position</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#configuring-the-gauge-gradient-mix">Configure the gauge gradient mix</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#configuring-the-gauge-gradient-mix">Configure the gauge gradient mix</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#configuring-gauge-borders">Configure the gauge borders</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#configuring-gauge-borders">Configure the gauge borders</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#hiding-gauge-labels">Hide gauge labels</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#hiding-gauge-labels">Hide gauge labels</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#configuring-hover-effects-for-the-gauge">Configure hover effects for the gauge</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html#configuring-hover-effects-for-the-gauge">Configure hover effects for the gauge</a>
 
 ## Configuring Pointer Properties
 

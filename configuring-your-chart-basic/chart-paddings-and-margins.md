@@ -10,13 +10,13 @@ FusionCharts Suite XT lets you manage the space around the canvas and within the
 
 This article shows you how to:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/chart-paddings-and-margins.html#modifying-chart-margins">Modify chart margins</a>
+* <a href="/basic-chart-configurations/chart-paddings-and-margins.html#modifying-chart-margins">Modify chart margins</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/chart-paddings-and-margins.html#changing-padding-for-caption-axes-names-and-axis-values">Change padding for chart caption, axis name and axis value</a>
+* <a href="/basic-chart-configurations/chart-paddings-and-margins.html#changing-padding-for-caption-axes-names-and-axis-values">Change padding for chart caption, axis name and axis value</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/chart-paddings-and-margins.html#changing-data-label-and-data-value-padding">Change data label and data value padding</a>
+* <a href="/basic-chart-configurations/chart-paddings-and-margins.html#changing-data-label-and-data-value-padding">Change data label and data value padding</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/chart-paddings-and-margins.html#changing-canvas-padding-in-a-chart">Changing canvas padding in a chart</a>
+* <a href="/basic-chart-configurations/chart-paddings-and-margins.html#changing-canvas-padding-in-a-chart">Changing canvas padding in a chart</a>
 
 ## Modifying chart margins
 

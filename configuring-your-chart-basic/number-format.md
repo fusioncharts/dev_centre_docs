@@ -10,31 +10,31 @@ FusionCharts Suite XT offers multiple options to format numbers on the chart. Yo
 
 This section talks about:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#number-formatting-basics">Number formatting basics</a>
+* <a href="/basic-chart-configurations/number-format.html#number-formatting-basics">Number formatting basics</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#configuring-decimal-places-rounding-off">Configuring decimal places (rounding off)</a>
+    * <a href="/basic-chart-configurations/number-format.html#configuring-decimal-places-rounding-off">Configuring decimal places (rounding off)</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#configuring-decimal-places-rounding-off-with-trailing-zeroes">Configuring decimal places (rounding off with trailing zeroes)</a>
+    * <a href="/basic-chart-configurations/number-format.html#configuring-decimal-places-rounding-off-with-trailing-zeroes">Configuring decimal places (rounding off with trailing zeroes)</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#automatic-number-formatting">Automatic number formatting</a>
+    * <a href="/basic-chart-configurations/number-format.html#automatic-number-formatting">Automatic number formatting</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#setting-custom-thousand-and-decimal-separator-character">Setting custom thousand and decimal separator character</a>
+    * <a href="/basic-chart-configurations/number-format.html#setting-custom-thousand-and-decimal-separator-character">Setting custom thousand and decimal separator character</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#configuring-thousand-separator-position">Configuring thousand separator position</a>
+    * <a href="/basic-chart-configurations/number-format.html#configuring-thousand-separator-position">Configuring thousand separator position</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#adding-number-prefix-and-suffix">Adding number prefix and suffix</a>
+    * <a href="/basic-chart-configurations/number-format.html#adding-number-prefix-and-suffix">Adding number prefix and suffix</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#number-scaling">Number Scaling</a>
+* <a href="/basic-chart-configurations/number-format.html#number-scaling">Number Scaling</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#basic-example">Basic example</a>
+    * <a href="/basic-chart-configurations/number-format.html#basic-example">Basic example</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#adding-billions-to-default-scaling">Adding billions to default scaling</a>
+    * <a href="/basic-chart-configurations/number-format.html#adding-billions-to-default-scaling">Adding billions to default scaling</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#putting-time-in-scale">Putting time in scale</a>
+    * <a href="/basic-chart-configurations/number-format.html#putting-time-in-scale">Putting time in scale</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#storage-size-example">Storage size example</a>
+    * <a href="/basic-chart-configurations/number-format.html#storage-size-example">Storage size example</a>
 
-    * <a href="{{ site.baseurl }}basic-chart-configurations/number-format.html#recursive-number-scaling">Recursive number scaling</a>
+    * <a href="/basic-chart-configurations/number-format.html#recursive-number-scaling">Recursive number scaling</a>
 
 ## Number formatting basics
 

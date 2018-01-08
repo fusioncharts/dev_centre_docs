@@ -10,9 +10,9 @@ Spline charts are a specialized form of line charts that display smooth curves t
 
 In this section, you will be introduced to the:
 
-* <a href="{{ site.baseurl }}chart-guide/spline-charts.html#basics-of-spline-charts">Basics of spline charts</a>
+* <a href="/chart-guide/spline-charts.html#basics-of-spline-charts">Basics of spline charts</a>
 
-* <a href="{{ site.baseurl }}chart-guide/spline-charts.html#types">Types of spline charts</a>
+* <a href="/chart-guide/spline-charts.html#types">Types of spline charts</a>
 
 ## Basics of Spline Charts
 
@@ -24,13 +24,13 @@ Spline charts can be used for plotting data that requires the usage of curve-fit
 
 FusionCharts Suite XT includes four types of spline charts:
 
-* <a href="{{ site.baseurl }}chart-guide/spline-charts.html#single-series-spline-2d-chart">Single-series spline 2D chart</a>
+* <a href="/chart-guide/spline-charts.html#single-series-spline-2d-chart">Single-series spline 2D chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/spline-charts.html#multi-series-spline-2d-chart">Multi-series spline 2D chart</a>
+* <a href="/chart-guide/spline-charts.html#multi-series-spline-2d-chart">Multi-series spline 2D chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/spline-charts.html#multi-series-spline-area-2d-chart">Single-series spline area 2D chart</a>
+* <a href="/chart-guide/spline-charts.html#multi-series-spline-area-2d-chart">Single-series spline area 2D chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/spline-charts.html#single-series-spline-area-2d-chart">Multi-series spline area 2D chart</a>
+* <a href="/chart-guide/spline-charts.html#single-series-spline-area-2d-chart">Multi-series spline area 2D chart</a>
 
 ### Single-series Spline 2D Chart
 

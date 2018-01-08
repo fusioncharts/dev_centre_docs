@@ -100,12 +100,13 @@ In this step, we will create a new PHP file, which will include our chart object
     <?php
 	    // including FusionCharts PHP charts wrapper
 	    include("fusioncharts/fusioncharts.php");
-	?>
+?>
 ```
 
 Next, we will include the FusionCharts package JavaScript files and chart container, which will be a HTML div element in the HTML code in our PHP file. 
 
-```html+php
+```html+php lineanchors %}{% raw %}
+
 	<html>
 	   <head>
 	     <title>Creating charts in PHP with Zend and FusionCharts</title>
@@ -177,7 +178,7 @@ We have now created our PHP file that we will place inside the public folder of 
 
 In this step, we will render the chart we created by executing the PHP file created in step 2 via the browser using this URL: http://localhost/phpFileName where `phpFileName` is the name of the file you created; in our example,  this will be `columnChart_json.php`. If you’ve followed all the directions given above properly, you should have a working chart as shown in the screenshot below: 
 
-![screenshot : Creating Charts with Zend and FusionCharts]({{ site.baseurl }}assets/images/creating-charts-with-zend-and-fusioncharts.jpg)
+![screenshot : Creating Charts with Zend and FusionCharts](/assets/images/creating-charts-with-zend-and-fusioncharts.jpg)
 
 <p class="text-info"> If you see any errors in your code, click [here](https://github.com/Pr3rana/fc-sample/tree/master/php/php_frameworks/zend) to view the complete source code of the sample project we created for this tutorial. </p>
 

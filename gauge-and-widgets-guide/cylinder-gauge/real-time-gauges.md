@@ -14,13 +14,13 @@ The gauges in the FusionCharts Suite XT are real-time gauges that can continuous
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/real-time-gauges.html#configuring-real-time-updates-using-javascript-api">Configure real-time updates using JavaScript API</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/real-time-gauges.html#configuring-real-time-updates-using-javascript-api">Configure real-time updates using JavaScript API</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/real-time-gauges.html#configuring-real-time-updates-using-server-side-script">Configure real-time updates using server-side script</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/real-time-gauges.html#configuring-real-time-updates-using-server-side-script">Configure real-time updates using server-side script</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/real-time-gauges.html#configuring-real-time-events">Configure real-time events</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/real-time-gauges.html#configuring-real-time-events">Configure real-time events</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/real-time-gauges.html#troubleshooting-real-time-gauges">Troubleshoot real-time gauges</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/real-time-gauges.html#troubleshooting-real-time-gauges">Troubleshoot real-time gauges</a>
 
 ## Configuring Real-time Updates using JavaScript API
 

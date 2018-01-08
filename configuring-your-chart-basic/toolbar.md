@@ -57,7 +57,7 @@ The drag-node chart below shows the __current implementation__ of the toolbar:
 
 The image below shows the __previous implementation__:
 
-![image]({{ site.baseurl }}assets/images/configuring-your-chart-basic-toolbar-drag-node-chart-previous-implementation.png)
+![image](/assets/images/configuring-your-chart-basic-toolbar-drag-node-chart-previous-implementation.png)
 
 The multi-axis line chart below shows the __current implementation__ of the checkboxes used to show/hide the axes lines. This implementation uses pure SVG exportable checkboxes; the previous implementation used HTML checkboxes.
 
@@ -65,7 +65,7 @@ The multi-axis line chart below shows the __current implementation__ of the chec
 
  The image below shows the __previous implementation__:
 
- ![image]({{ site.baseurl }}assets/images/configuring-your-chart-basic-toolbar-multi-axis-line-chart-previous-implementation.png)
+ ![image](/assets/images/configuring-your-chart-basic-toolbar-multi-axis-line-chart-previous-implementation.png)
 
  The difference between the current and previous implementation of the checkboxes, in the multi-axis line chart, is that the present checkboxes can be configured to set a custom checkbox color.
 

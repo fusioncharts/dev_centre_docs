@@ -10,15 +10,15 @@ chartPresent: true
 
 The FusionCharts JSP wrapper lets you load data for a chart using:
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/java/different-ways-of-loading-data.html#loading-data-from-a-static-json-string">a static JSON string</a>
+* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data.html#loading-data-from-a-static-json-string">a static JSON string</a>
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/java/different-ways-of-loading-data.html#loading-data-from-a-static-xml-string">a static XML string</a>
+* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data.html#loading-data-from-a-static-xml-string">a static XML string</a>
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/java/different-ways-of-loading-data.html#loading-data-from-a-json-string-generated-from-an-associative-array">a JSON string generated from an associative array</a>
+* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data.html#loading-data-from-a-json-string-generated-from-an-associative-array">a JSON string generated from an associative array</a>
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/java/different-ways-of-loading-data.html#loading-data-from-an-xml-string-generated-from-an-associative-array">an XML string generated from an associative array</a>
+* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data.html#loading-data-from-an-xml-string-generated-from-an-associative-array">an XML string generated from an associative array</a>
 
-<p class="text-info">Before you proceed, make sure you have <a href="{{ site.baseurl }}using-with-server-side-languages/java/introduction.html" target="_blank">installed and set up the plugin </a> correctly.</p>
+<p class="text-info">Before you proceed, make sure you have <a href="/using-with-server-side-languages/java/introduction.html" target="_blank">installed and set up the plugin </a> correctly.</p>
 
 In this section, you will be shown how the FusionCharts JSP wrapper uses each of these methods to render charts.
 <p class="text-info"> There are two more ways for loading data—using the JSON URL and using the XML URL. These methods are similar to using static strings. The only difference is that chart data is loaded from an external `.json` or `.xml` file. The URL of the file is passed as the value for the `data source` parameter of the constructor. In case of JSON data, `jsonurl` is passed as the value for the `data format` parameter; for XML data, it is `xmlurl`.</p>
@@ -428,6 +428,7 @@ The bar 2D chart shown below is rendered by loading data from an XML string that
 The data structure to render this chart is given below:
 
 ```java
+
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.util.*" %>
 

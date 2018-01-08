@@ -10,15 +10,15 @@ Data plot refers to the column in column chart, lines in a line chart, pie/dough
 
 This section talks about:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/data-plot.html#configuring-colors-for-data-plots">Configuring colors for data plots</a>
+* <a href="/basic-chart-configurations/data-plot.html#configuring-colors-for-data-plots">Configuring colors for data plots</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/data-plot.html#customizing-gradient-effects-for-data-plots">Customizing gradient effect for data plots</a>
+* <a href="/basic-chart-configurations/data-plot.html#customizing-gradient-effects-for-data-plots">Customizing gradient effect for data plots</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/data-plot.html#customizing-data-plot-transparency">Configuring plot transparency</a>
+* <a href="/basic-chart-configurations/data-plot.html#customizing-data-plot-transparency">Configuring plot transparency</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/data-plot.html#customizing-plot-border">Configuring plot border</a>
+* <a href="/basic-chart-configurations/data-plot.html#customizing-plot-border">Configuring plot border</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/data-plot.html#configuring-plot-hover-effects">Configuring plot hover effects</a>
+* <a href="/basic-chart-configurations/data-plot.html#configuring-plot-hover-effects">Configuring plot hover effects</a>
 
 ## Configuring colors for data plots
 

@@ -10,9 +10,9 @@ A funnel chart is used to plot streamlined data. For example, it can be used to 
 
 In this section, you will be introduced to the:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/funnel-chart/introduction.html#basics-of-a-funnel-chart">Basics of a funnel chart</a>
+* <a href="/gauge-and-widgets-guide/funnel-chart/introduction.html#basics-of-a-funnel-chart">Basics of a funnel chart</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/funnel-chart/introduction.html#salient-features">Features of a funnel chart</a>
+* <a href="/gauge-and-widgets-guide/funnel-chart/introduction.html#salient-features">Features of a funnel chart</a>
 
 ## Basics of a Funnel Chart
 

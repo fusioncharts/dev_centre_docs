@@ -10,15 +10,15 @@ FusionCharts Suite XT allows you to configure several functional and cosmetic pr
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/zoom-line-chart/configuring-a-zoom-line-chart.html#limiting-the-maximum-number-of-visible-data-labels">Limit the maximum number of data labels</a>
+* <a href="/chart-guide/zoom-line-chart/configuring-a-zoom-line-chart.html#limiting-the-maximum-number-of-visible-data-labels">Limit the maximum number of data labels</a>
 
-* <a href="{{ site.baseurl }}chart-guide/zoom-line-chart/configuring-a-zoom-line-chart.html#setting-the-distance-between-consecutive-data-plots">Set the distance between consecutive data plots</a>
+* <a href="/chart-guide/zoom-line-chart/configuring-a-zoom-line-chart.html#setting-the-distance-between-consecutive-data-plots">Set the distance between consecutive data plots</a>
 
-* <a href="{{ site.baseurl }}chart-guide/zoom-line-chart/configuring-a-zoom-line-chart.html#setting-the-criteria-for-anchor-display">Set the criteria for anchor display</a>
+* <a href="/chart-guide/zoom-line-chart/configuring-a-zoom-line-chart.html#setting-the-criteria-for-anchor-display">Set the criteria for anchor display</a>
 
-* <a href="{{ site.baseurl }}chart-guide/zoom-line-chart/configuring-a-zoom-line-chart.html#preselecting-the-number-of-visible-data-plots">Pre-select the number of visible data plots</a>
+* <a href="/chart-guide/zoom-line-chart/configuring-a-zoom-line-chart.html#preselecting-the-number-of-visible-data-plots">Pre-select the number of visible data plots</a>
 
-* <a href="{{ site.baseurl }}chart-guide/zoom-line-chart/configuring-a-zoom-line-chart.html#customizing-the-appearance-of-a-zoom-line-chart">Customize the appearance of a zoom line chart</a>
+* <a href="/chart-guide/zoom-line-chart/configuring-a-zoom-line-chart.html#customizing-the-appearance-of-a-zoom-line-chart">Customize the appearance of a zoom line chart</a>
 
 ## Limiting the Maximum Number of Visible Data Labels
 

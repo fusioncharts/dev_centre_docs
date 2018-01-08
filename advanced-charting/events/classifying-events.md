@@ -196,4 +196,4 @@ Given below is the classification of the rest of the events.
 * [beforePrint]{% linkTo FusionCharts.events.beforePrint %}
 * [printComplete]{% linkTo FusionCharts.events.printComplete %}
 * [printCancelled]{% linkTo FusionCharts.events.printCancelled %}
-* [printReadyStateChange]{% linkTo FusionCharts.events.printReadyStateChange %}
+* [printReadyStateChange (Deprecated API)]{% linkTo FusionCharts.events.printReadyStateChange %}

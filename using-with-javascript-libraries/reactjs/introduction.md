@@ -1,7 +1,7 @@
 ---
 permalink: using-with-javascript-libraries/reactjs/introduction.html
 title: Introduction to FusionCharts ReactJS Component | FusionCharts
-description: FusionCharts Suite XT includes an extensive range of charts, gauges, and maps that you can use to plot static as well as real-time data.
+description: The React-FusionCharts Component, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications
 heading: Introduction to FusionCharts ReactJS Component
 chartPresent: false
 ---

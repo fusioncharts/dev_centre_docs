@@ -10,33 +10,33 @@ A legend is a chart element that is used to display the series name of each data
 
 In the following image, the legend rendered below the x-axis helps to identify the data plots corresponding to a series name.
 
-![Configuring Your Chart - Legend]({{ site.baseurl }}assets/images/legend.png)
+![Configuring Your Chart - Legend](/assets/images/legend.png)
 
 Each series is represented by it’s own icon in the legend.
 
 This article talks about:
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/legend.html#showinghiding-the-corresponding-data-series-when-a-legend-item-is-clicked">Showing/hiding the corresponding data series when a legend icon is clicked</a>
+* <a href="/basic-chart-configurations/legend.html#showinghiding-the-corresponding-data-series-when-a-legend-item-is-clicked">Showing/hiding the corresponding data series when a legend icon is clicked</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/legend.html#highlighting-the-corresponding-data-series-when-a-legend-text-is-hovered-over">Highlighting the corresponding data series when a legend text is hovered over</a>
+* <a href="/basic-chart-configurations/legend.html#highlighting-the-corresponding-data-series-when-a-legend-text-is-hovered-over">Highlighting the corresponding data series when a legend text is hovered over</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/legend.html#setting-the-legend-position">Setting legend position</a>
+* <a href="/basic-chart-configurations/legend.html#setting-the-legend-position">Setting legend position</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/legend.html#configuring-legend-icon-size">Configuring legend icon size</a>
+* <a href="/basic-chart-configurations/legend.html#configuring-legend-icon-size">Configuring legend icon size</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/legend.html#drawing-a-custom-legend-icon-shape">Drawing a custom legend icon</a>
+* <a href="/basic-chart-configurations/legend.html#drawing-a-custom-legend-icon-shape">Drawing a custom legend icon</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/legend.html#customizing-legend-scroll-bar">Customizing legend scroll bar</a>
+* <a href="/basic-chart-configurations/legend.html#customizing-legend-scroll-bar">Customizing legend scroll bar</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/legend.html#reversing-legend-order">Reversing legend order</a>
+* <a href="/basic-chart-configurations/legend.html#reversing-legend-order">Reversing legend order</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/legend.html#hiding-legend">Hiding legend</a>
+* <a href="/basic-chart-configurations/legend.html#hiding-legend">Hiding legend</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/legend.html#hiding-series-upon-loading">Hiding series upon loading</a>
+* <a href="/basic-chart-configurations/legend.html#hiding-series-upon-loading">Hiding series upon loading</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/legend.html#customizing-legend-appearance">Customizing legend appearance</a>
+* <a href="/basic-chart-configurations/legend.html#customizing-legend-appearance">Customizing legend appearance</a>
 
-* <a href="{{ site.baseurl }}basic-chart-configurations/legend.html#customizing-legend-font-cosmetics">Customizable legend font cosmetics</a>
+* <a href="/basic-chart-configurations/legend.html#customizing-legend-font-cosmetics">Customizable legend font cosmetics</a>
 
 ## Showing/hiding the corresponding data series when a legend item is clicked
 

@@ -131,13 +131,13 @@ To change the theme from `fint` to `ocean`, it’s a two step process:
 
 Shown below is how they would appear with the new theme applied.
 
-![Column 2D]({{ site.baseurl }}assets/images/c2docean.png)
+![Column 2D](/assets/images/c2docean.png)
 
-![Gauge]({{ site.baseurl }}assets/images/gaugeocean.png)
+![Gauge](/assets/images/gaugeocean.png)
 
-![Multi Series]({{ site.baseurl }}assets/images/msocean.png)
+![Multi Series](/assets/images/msocean.png)
 
-![Map]({{ site.baseurl }}assets/images/mapocean.png)
+![Map](/assets/images/mapocean.png)
 
 Simple. Isn't it? If you are curious to know how the theme file is structured, shown below is the content of `ocean` theme JSON file.
 

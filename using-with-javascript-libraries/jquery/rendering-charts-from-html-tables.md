@@ -112,4 +112,4 @@ The `convertToFusionCharts` method is used to convert the data contained in the 
 
 Refer [here]{% linkTo tutorials/using-with-javascript-libraries/jquery/api-reference.md %}{:target='_blank'} for more details on this method.
 
-<script pagespeed_no_defer="" type="text/javascript" data-chart='true' src='{{ site.baseurl }}/resources/js/rendering-charts-from-html-tables.js'></script>
+<script pagespeed_no_defer="" type="text/javascript" data-chart='true' src='//resources/js/rendering-charts-from-html-tables.js'></script>

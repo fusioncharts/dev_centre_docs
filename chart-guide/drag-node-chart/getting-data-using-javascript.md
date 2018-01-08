@@ -46,7 +46,7 @@ Now, we will make the following updates to this drag-node chart:
 
 The drag-node chart rendered after making these updates looks like this:
 
- ![Updated Dragnode Chart]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-getting-data-using-javascript-image-1.jpg)
+ ![Updated Dragnode Chart](/assets/images/chart-guide-drag-node-chart-getting-data-using-javascript-image-1.jpg)
 
 Now if you wish to get the current data using the code `var jsonRtn = ourChart.getJSONData(); alert(JSON.stringify(jsonRtn));`, the updated data will be shown. The modified part of the updated data is shown below:
 

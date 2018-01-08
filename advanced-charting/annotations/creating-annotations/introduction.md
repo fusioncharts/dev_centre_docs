@@ -16,9 +16,9 @@ FusionCharts Suite XT includes a wide range of [charts, gauges, and maps](http:/
 
 This article:
 
-* <a href="{{ site.baseurl }}advanced-chart-configurations/annotations/creating-annotations/introduction.html#annotation-items">Tells you about the different types of annotation items available</a>
+* <a href="/advanced-chart-configurations/annotations/creating-annotations/introduction.html#annotation-items">Tells you about the different types of annotation items available</a>
 
-* <a href="{{ site.baseurl }}advanced-chart-configurations/annotations/creating-annotations/introduction.html#objects-used-to-create-annotations">Describes the objects used to create annotations</a>
+* <a href="/advanced-chart-configurations/annotations/creating-annotations/introduction.html#objects-used-to-create-annotations">Describes the objects used to create annotations</a>
 
 ## Annotation Items
 
@@ -36,7 +36,7 @@ You can add the following types of annotations to your chart:
 
 The image of a chart rendered with different types of annotations items is shown below:
 
-![image alt text]({{ site.baseurl }}assets/images/advanced-charting-annotations-creating-annotations-image-1.jpg)
+![image alt text](/assets/images/advanced-charting-annotations-creating-annotations-image-1.jpg)
 
 The basic JSON structure to create annotations is shown below:
 

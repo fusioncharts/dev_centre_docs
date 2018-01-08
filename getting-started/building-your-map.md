@@ -35,11 +35,11 @@ Maps in FusionCharts Suite XT are provided as part of FusionMaps XT. FusionMaps 
 
 Let's now get to building the map. There are 5 simple steps to building a map using FusionCharts Suite XT:
 
-1. [Installing FusionCharts Suite XT for your application](getting-started/building-your-map?id=installing-fusioncharts-suite-xt-for-your-application)
-2. [Converting your data to a JSON or XML format](/getting-started/building-your-map?id=converting-your-data-to-fusioncharts-suite-xt-jsonxml-format)
-3. [Including the FusionCharts Suite XT JavaScript library in your HTML page](/getting-started/building-your-map?id=including-fusioncharts-suite-xt-library-in-your-page)
-4. [Creating a container &lt;div&gt; for the map](/getting-started/building-your-map?id=creating-a-container-for-your-map-in-the-web-page)
-5. [Using the new `FusionCharts()` constructor to create the map instance, and then calling the `render()` method](/getting-started/building-your-map?id=creating-an-instance)
+1. <a href="/getting-started/building-your-map.html#installing-fusioncharts-suite-xt-for-your-application">Installing FusionCharts Suite XT for your application</a>
+2. <a href="/getting-started/building-your-map.html#converting-your-data-to-fusioncharts-suite-xt-jsonxml-format">Converting your data to a JSON or XML format</a>
+3. <a href="/getting-started/building-your-map.html#including-fusioncharts-suite-xt-library-in-your-page">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
+4. <a href="/getting-started/building-your-map.html#creating-a-container-for-your-map-in-the-web-page">Creating a container `<div>` for the map</a>
+5. <a href="/getting-started/building-your-map.html#creating-an-instance-of-the-map">Using the new `FusionCharts()` constructor to create the map instance, and then calling the `render()` method</a>
 
 ### Installing FusionCharts Suite XT for your application
 
@@ -85,7 +85,7 @@ Next, you will need to create a container for your map in the form of a `<div>` 
 
 ```html
 <body>
-	<div id="chartContainer">A US map will load here!</div>
+<div id="chartContainer">A US map will load here!</div>
 </body>
 ```
 
@@ -95,10 +95,10 @@ This will later allow us to reference the `chartContainer` div and render a map 
 
 The final step is to create an instance of the map, initialize with the correct width and height and then set the JSON data source.
 
-```javascript
+```html
 <script type="text/javascript">
 FusionCharts.ready(function(){
-   var salesByState = new FusionCharts({	
+   var salesByState = new FusionCharts({
         "type": "maps/usa",
         "renderAt": "chartContainer",
         "width": "600",
@@ -619,7 +619,6 @@ The full HTML code for the example looks as under:
 </body>
 </html>
 ```
-
 When you now view the page in a browser, you should see an interactive 2D Map, showing state-wise sales for Harry's SuperMart. This map works seamlessly across mobile devices like iPhones, iPads, Android devices etc.
 
 ### Was there a problem rendering the map?

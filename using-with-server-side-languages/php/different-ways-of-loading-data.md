@@ -10,17 +10,17 @@ chartPresent: true
 
 The FusionCharts PHP wrapper lets you load data for a chart using:
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/php/different-ways-of-loading-data.html#loading-data-from-a-static-json-string">a static JSON string</a>
+* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data.html#loading-data-from-a-static-json-string">a static JSON string</a>
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/php/different-ways-of-loading-data.html#loading-data-from-a-static-xml-string">a static XML string</a>
+* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data.html#loading-data-from-a-static-xml-string">a static XML string</a>
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/php/different-ways-of-loading-data.html#loading-data-from-a-json-string-generated-from-an-associative-array">a JSON string generated from an associative array</a>
+* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data.html#loading-data-from-a-json-string-generated-from-an-associative-array">a JSON string generated from an associative array</a>
 
-* <a href="{{ site.baseurl }}using-with-server-side-languages/php/different-ways-of-loading-data.html#loading-data-from-a-json-string-generated-from-an-associative-array">an XML string generated from an associative array</a>
+* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data.html#loading-data-from-a-json-string-generated-from-an-associative-array">an XML string generated from an associative array</a>
 
 In this section, you will be shown how the FusionCharts PHP wrapper uses each of these methods to generate charts.
 
-<p class="text-info">Before you proceed, make sure you have <a href="{{ site.baseurl }}using-with-server-side-languages/php/introduction.html" target="_blank">installed and set up the plugin </a> correctly.</p>
+<p class="text-info">Before you proceed, make sure you have <a href="/using-with-server-side-languages/php/introduction.html" target="_blank">installed and set up the plugin </a> correctly.</p>
 
 <p class="text-info"> There are two more ways for loading data - using the JSON URL and using the XML URL. These methods, however, are similar to using static strings. The only difference is that the data is loaded from a separate `.json` or `.xml` file. The URLs of the file is then passed as the value for the data source parameter of the constructor. In case of JSON data, `jsonurl` is passed as the value for the data format parameter; for XML data, it is `xmlurl`.</p>
 

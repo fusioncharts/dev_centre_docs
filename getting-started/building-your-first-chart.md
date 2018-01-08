@@ -6,7 +6,7 @@ heading: Your First Chart
 chartPresent: true
 ---
 
-> Let us build our first chart using FusionCharts Suite XT! Throughout this documentation, we will create charts for a fictional supermarket, Harry's SuperMart, so that Harry, the owner of the supermarket, can make more sense of the data captured at various touchpoints in his supermarket. This data, when processed and presented effectively, can give Harry actionable insights for effective decision-making.
+Let us build our first chart using FusionCharts Suite XT! Throughout this documentation, we will create charts for a fictional supermarket, Harry's SuperMart, so that Harry, the owner of the supermarket, can make more sense of the data captured at various touchpoints in his supermarket. This data, when processed and presented effectively, can give Harry actionable insights for effective decision-making.
 
 Let's start with a simple "Monthly revenue" chart, which we will plot in a Column 2D chart. Once done, it should look as under:
 
@@ -32,6 +32,12 @@ December| $730,000
 ### Let's Begin
 
 Let's now get to building the chart. There are 5 simple steps to building a chart using FusionCharts Suite XT:
+
+1. <a href="/getting-started/building-your-first-chart.html#installing-fusioncharts-suite-xt-for-your-application">Installing FusionCharts Suite XT for your application</a>
+2. <a href="/getting-started/building-your-first-chart.html#converting-your-tabular-data-to-fusioncharts-suite-xt-jsonxml-format">Converting your data to a JSON or XML format</a>
+3. <a href="/getting-started/building-your-first-chart.html#including-fusioncharts-suite-xt-library-in-your-page">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
+4. <a href="/getting-started/building-your-first-chart.html#creating-a-container-for-your-chart-in-the-web-page">Creating a container `<div>` for the chart</a>
+5. <a href="/getting-started/building-your-first-chart.html#creating-an-instance-of-the-chart">Using the new `FusionCharts()` constructor to create the chart instance, and then calling the `render()` method</a>
 
 ### Installing FusionCharts Suite XT for your application
 
@@ -92,8 +98,8 @@ The final step is to create an instance of the chart type as `column2d`, set the
 The following code does the trick.
 
 ```javascript
-FusionCharts.ready(function(){
-    var revenueChart = new FusionCharts({
+  FusionCharts.ready(function(){
+      var revenueChart = new FusionCharts({
         "type": "column2d",
         "renderAt": "chartContainer",
         "width": "500",
@@ -284,4 +290,3 @@ In case something went wrong and you are unable to see the chart, check for the 
 Click here for more information on [Troubleshooting]{% linkTo tutorials/troubleshooting/debugger.md %}.
 
 Now that Harry can monitor his monthly revenues using this interactive chart, let's build a gauge to show him the customer satisfaction score in the next section.
-

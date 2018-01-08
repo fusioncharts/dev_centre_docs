@@ -10,13 +10,13 @@ FusionCharts Suite XT allows you to customize the appearance of standard charts.
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/standard-charts/configuring-standard-charts.html#plotting-trend-elements-on-a-standard-chart">Plot trend elements on a standard chart</a>
+* <a href="/chart-guide/standard-charts/configuring-standard-charts.html#plotting-trend-elements-on-a-standard-chart">Plot trend elements on a standard chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/standard-charts/configuring-standard-charts.html#plotting-vertical-line-elements">Plot vertical line elements</a>
+* <a href="/chart-guide/standard-charts/configuring-standard-charts.html#plotting-vertical-line-elements">Plot vertical line elements</a>
 
-* <a href="{{ site.baseurl }}chart-guide/standard-charts/configuring-standard-charts.html#changing-chart-type">Change the chart type dynamically</a>
+* <a href="/chart-guide/standard-charts/configuring-standard-charts.html#changing-chart-type">Change the chart type dynamically</a>
 
-* <a href="{{ site.baseurl }}chart-guide/standard-charts/configuring-standard-charts.html#set-data-skipping">Set Data Skipping</a>
+* <a href="/chart-guide/standard-charts/configuring-standard-charts.html#set-data-skipping">Set Data Skipping</a>
 
 
 ## Plotting Trend Elements on a Standard Chart
@@ -125,7 +125,7 @@ What if you want to render 10000 data points in a single series chart with a dim
 
 An example of an area chart rendered with `30000` data looks like as shown below:
 
-{% embed_all chart-guide-standard-charts-configuring-standard-charts-example-5.js %}
+{% embed_chart chart-guide-standard-charts-configuring-standard-charts-example-5.js %}
 
 The above chart gives a clear idea on how frequently the new trips are availed. The chart shows the data updated every hour.
 
