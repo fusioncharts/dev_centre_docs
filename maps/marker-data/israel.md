@@ -248,7 +248,7 @@
 </code></pre>
 
 
-<p class='text-success'>{{ page.newJson }}</p>
+<p class='text-success'>New JSON format for map marker data.</p>
 
     </div>
     <div class='tab old-json-tab'>
@@ -533,7 +533,7 @@
 </code></pre>
 
 
-<p class='text-success'>{{ page.oldJson }}</p>
+<p class='text-success'>Old JSON format for map marker data, using separate application and definition blocks.</p>
 
     </div>
     <div class='tab old-xml-tab'>
@@ -601,7 +601,7 @@
 </map>
 </code></pre>
 
-<p class='text-success'>{{ page.oldXml }}</p>
+<p class='text-success'>Old XML format for map marker data, using separate application and definition blocks.</p>
 
 </div>
 </div>
