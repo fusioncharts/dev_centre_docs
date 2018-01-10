@@ -580,7 +580,7 @@
 <li><a href="/api/tutorials/get-svg-representation-of-a-chart">Get SVG Representation of a Chart</a></li>
 </ul>
 </li>
-<li><i class="icon-bookmark"></i><a>Integration with your stack</a>
+<li><i class="icon-bookmark"></i><a>Integration with your stack<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
 <ul>
 <li><a>Using with Server Side Languages<i class="icon-keyboard-arrow-right"></i><i class="icon-keyboard-arrow-down"></i></a>
 <ul>
