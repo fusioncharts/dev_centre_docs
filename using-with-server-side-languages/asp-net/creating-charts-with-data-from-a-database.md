@@ -25,14 +25,14 @@ A multi-series line chart that shows the factory output by quantity for three fa
 Assume that you have a **factoryDB** database with the **factory_output** table that shows the number of units produced by three factories daily, from January 1, 2003 to January 20, 2003. In this example, you will be shown how you can use the FusionCharts ASP.NET wrapper and fetch data from this database to create the above multi-series line chart.
 
 The data structure that goes into the **../DBExample/MSCharts.aspx** file is given below:
-
+<div class="code-wrapper">
 <ul class='code-tabs'>
   <li class='active'><a data-toggle='json'>C#</a></li>
   <li><a data-toggle='xml'>VB</a></li>
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-```javascript
+```aspx-cs
   <%@ Page Language="C#" AutoEventWireup="true" CodeFile="MSCharts.aspx.cs" Inherits="DBExample_MSCharts" %>
 
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -55,7 +55,7 @@ The data structure that goes into the **../DBExample/MSCharts.aspx** file is giv
   </div>
 
   <div class='tab xml-tab'>
-```javascript
+```aspx-vb
 
     <%@ Page Language="VB" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="Samples_DBExample_index" %>
 
@@ -79,17 +79,18 @@ The data structure that goes into the **../DBExample/MSCharts.aspx** file is giv
   </div>
 
 </div>
+</div>
 
 
 The data structure that goes into the code behind **../DBExample/MSCharts.aspx.cs** file is given below:
-
+<div class="code-wrapper">
 <ul class='code-tabs'>
   <li class='active'><a data-toggle='json'>C#</a></li>
   <li><a data-toggle='xml'>VB</a></li>
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-```javascript
+```aspx-cs
   using System;
   using System.Collections;
   using System.Configuration;
@@ -215,7 +216,7 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
   </div>
 
   <div class='tab xml-tab'>
-```javascript
+```aspx-vb
     
     Imports System.Collections
     Imports System.Configuration
@@ -339,4 +340,5 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
   ```
   </div>
 
+</div>
 </div>
