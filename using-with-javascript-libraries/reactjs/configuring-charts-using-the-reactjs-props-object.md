@@ -281,7 +281,7 @@ For a list of other attributes that you can configure for a column 2D chart, cli
 
 ## Triggering Events Using the Props Object
 
-A column 2D chart, configured to listen to the [dataplotClick]{% linkTo FusionCharts.events.dataplotClick %} event, is shown below (click a a data plot to trigger the event) :
+A column 2D chart, configured to listen to the [dataplotClick](/api/fusioncharts/fusioncharts-events#event-dataplotClick) event, is shown below (click a a data plot to trigger the event) :
 
 {% embed_chart using-with-javascript-libraries-reactjs-configuring-charts-using-the-reactjs-props-object-example-3.js %}
 

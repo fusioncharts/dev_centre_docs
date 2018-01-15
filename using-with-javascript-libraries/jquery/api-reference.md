@@ -18,27 +18,27 @@ chartPresent: false
     <tr>
         <td>`insertFusionCharts(chartConfigurations: Object)`</td>
         <td>Renders charts inside HTML elements. The HTML elements have to be selected using jQuery selector. In case, multiple HTML elements are selected using the jQuery selector, a chart will be rendered inside each selected HTML element. All existing elements inside the selected elements will be replaced by the rendered charts. This method returns the jQuery selected element to allow chaining with other jQuery methods.<br/>
-        An object of chart configurations (set of key-value pairs) can be passed as the parameter. Click [here]{% linkTo FusionCharts %} to view complete list of chart configurations.</td>
+        An object of chart configurations (set of key-value pairs) can be passed as the parameter. Click [here](/api/fusioncharts) to view complete list of chart configurations.</td>
     </tr>
     <tr>
         <td>`appendFusionCharts(chartConfigurations: Object)`</td>
         <td>Renders charts at the end of selected HTML elements. The HTML elements need to be selected using jQuery selector. In case multiple HTML elements are selected, a chart will be rendered inside each selected HTML element. All existing elements inside the selected elements will be preserved. The method returns the original jQuery selection to allow chaining of other jQuery methods.<br/>
-        An object of chart configurations (set of key-value pairs) can be passed as the parameter. Click [here]{% linkTo FusionCharts %} to view complete list of chart configurations.</td>
+        An object of chart configurations (set of key-value pairs) can be passed as the parameter. Click [here](/api/fusioncharts) to view complete list of chart configurations.</td>
     </tr>
     <tr>
         <td>`prependFusionCharts(chartConfigurations: Object)`</td>
         <td>Renders and inserts charts at the beginning of selected HTML elements. The HTML elements need to be selected using jQuery selector. In case multiple HTML elements are selected, a chart will be rendered inside each selected HTML element. All existing elements inside the selected elements will be preserved. The method returns the original jQuery selection to allow chaining of other jQuery methods.<br/>
-        An object of chart configurations (set of key, value pairs) can be passed as the parameter. Click [here]{% linkTo FusionCharts %} to view complete list of chart configurations.</td>
+        An object of chart configurations (set of key, value pairs) can be passed as the parameter. Click [here](/api/fusioncharts) to view complete list of chart configurations.</td>
     </tr>
     <tr>
         <td>`cloneFusionCharts(callback: function, [cloneConfigurations: Object])`</td>
         <td>This method makes a copy of existing charts in the selection and passes the list of cloned chart objects to a function for further processing.<br/>
         The method looks for all the charts in jQuery selected elements and clones them. An array of cloned chart objects (in `this` Array) is passed to a `callback` function whose name or reference needs to be passed as a mandatory parameter to `cloneFusionCharts` method. You can also use an anonymous function as the callback function.<br/>
-        Before cloning of existing charts, you can optionally overwrite some of the configurations of the existing charts. This can be achieved by passing an object (set of key or value pairs) containing chart configurations as `cloneConfigurations` parameter. Click [here]{% linkTo FusionCharts %} to view complete list of chart configurations.</td>
+        Before cloning of existing charts, you can optionally overwrite some of the configurations of the existing charts. This can be achieved by passing an object (set of key or value pairs) containing chart configurations as `cloneConfigurations` parameter. Click [here](/api/fusioncharts) to view complete list of chart configurations.</td>
     </tr>
     <tr>
         <td>`updateFusionCharts(updateConfigurations: Object)`</td>
-        <td>This method helps in updating chart configurations of an existing chart at run-time. Except for the chart `id`, you can re-configure attributes like the `type`, `dataSource`, `dataFormat`, `width`, `height`, and so on of existing charts. The possible `updateConfigurations` can be found [here]{% linkTo FusionCharts %}. __Note__ that the `id` cannot be passed to the `updateConfigurations` parameter. <br/>
+        <td>This method helps in updating chart configurations of an existing chart at run-time. Except for the chart `id`, you can re-configure attributes like the `type`, `dataSource`, `dataFormat`, `width`, `height`, and so on of existing charts. The possible `updateConfigurations` can be found [here](/api/fusioncharts). __Note__ that the `id` cannot be passed to the `updateConfigurations` parameter. <br/>
         This method is applied to the HTML elements selected using the jQuery selector. It finds all the charts rendered in the selected elements and updates all these charts with the values passed through the `updateConfigurations` parameter.<br/>
         __Note__ that the charts thus updated are internally re-drawn with the new configurations.</td>
     </tr>
@@ -96,6 +96,6 @@ chartPresent: false
     <tr>
         <td>`bind(eventType: String, eventHandler: function)` or<br/>`on(eventType: String, eventHandler: function)`</td>
         <td>Binds an event handler to the specified FusionChart event. The event handler needs to be attached to the the container HTML elements containing the FusionCharts objects.<br/>
-        The first parameter, `eventType`, is the name of the event. The list of events exposed by FusionCharts can be found [here]{% linkTo FusionCharts.events %}. These events can be used with the FusionCharts jQuery helper by prefixing them with the text "fusioncharts" and using the lowercase representation of the event name. For example, the `beforeRender` event will be named as `fusionchartsbeforerender`. This is done to avoid conflict with the existing jQuery events that might have the same names. The parameters passed to the event handler function, however, are the same.</td>
+        The first parameter, `eventType`, is the name of the event. The list of events exposed by FusionCharts can be found [here](/api/fusioncharts/fusioncharts-events). These events can be used with the FusionCharts jQuery helper by prefixing them with the text "fusioncharts" and using the lowercase representation of the event name. For example, the `beforeRender` event will be named as `fusionchartsbeforerender`. This is done to avoid conflict with the existing jQuery events that might have the same names. The parameters passed to the event handler function, however, are the same.</td>
     </tr>
 </table>

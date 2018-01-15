@@ -4,6 +4,7 @@ title: Installing via npm | FusionCharts
 description: FusionCharts Suite XT can now be downloaded via the npm and Bower package managers. This section talks about installing FusionCharts Suite XT via npm.
 heading: Installing via npm
 chartPresent: false
+breadcrumb: [["Home", "/"], ["Installing via NPM"]]
 ---
 
 This section talks about how the **fusioncharts** and the **fusionmaps** packages can be installed via the **npm** package management software.

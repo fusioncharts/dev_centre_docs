@@ -289,4 +289,4 @@ FusionCharts.ready(function() {
 </html>
 ```
 
-For a list of all parameters for each of these events refer to the [API Reference for events]{% linkTo FusionCharts.events %}.
+For a list of all parameters for each of these events refer to the [API Reference for events](/api/fusioncharts/fusioncharts-events).

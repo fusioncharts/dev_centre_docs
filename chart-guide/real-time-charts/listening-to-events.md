@@ -38,7 +38,7 @@ The details of these objects are explained below:
 
 * `argumentsObject`, the second argument, contains details of the event fired.  Depending on the type of event raised, the properties of the object vary.
 
-For more information on simple and advanced events and the `argumentsObject` for each event, refer to the [FusionCharts Events API]{% linkTo FusionCharts.events %} page.
+For more information on simple and advanced events and the `argumentsObject` for each event, refer to the [FusionCharts Events API](/api/fusioncharts/fusioncharts-events) page.
 
 ## Real-time Events
 

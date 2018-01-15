@@ -3,6 +3,7 @@ permalink: getting-started/installing-via-npm-and-bower/installing-fusioncharts-
 title: Installing FusionCharts Suite XT via npm and Bower | FusionCharts
 description: FusionCharts Suite XT can now be downloaded via npm and Bower pacakge managers. This section is an introduction to this feature.
 heading: Installing FusionCharts Suite XT via npm and Bower
+breadcrumb: [["Home", "/"], ["Installing FusionCharts Suite XT via npm and Bower"]]
 chartPresent: false
 ---
 

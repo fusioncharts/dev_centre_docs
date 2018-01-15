@@ -26,7 +26,7 @@ This article describes how annotations can be used in the following scenarios:
 
 {% embed_chart advanced-charting-annotations-real-life-use-cases-example-1.js %}
 
-The above chart shows the usage of annotations to create a callout (using a rectangle, a polygon, and a text annotation, grouped together) above a column. The annotations are dynamically  positioned using annotation macros. After the chart is rendered (when the [renderComplete]{% linkTo FusionCharts.events.renderComplete %}  event is triggered), the quarter with the highest revenue is determined and the annotation group is positioned over the data plot representing that quarter.
+The above chart shows the usage of annotations to create a callout (using a rectangle, a polygon, and a text annotation, grouped together) above a column. The annotations are dynamically  positioned using annotation macros. After the chart is rendered (when the [renderComplete](/api/fusioncharts/fusioncharts-events#event-renderComplete)  event is triggered), the quarter with the highest revenue is determined and the annotation group is positioned over the data plot representing that quarter.
 
 The data structure for this chart is given below::
 
@@ -38,7 +38,7 @@ The data structure for this chart is given below::
 
 The above chart compares the footfall at two stores, Bakersfield Central and Los Angeles Topanga.
 
-When the mouse pointer is hovered over a data plot, it triggers the [dataplotRollover]{% linkTo FusionCharts.events.dataplotRollOver %} event. Consequently, an annotation group (containing of a line, a label, and text annotation) that displays additional information about the data plot is shown. When the mouse pointer is hovered out of the data plot, it triggers the [dataPlotRollOut]{% linkTo FusionCharts.events.dataplotRollOut %} event and the annotation group is hidden.
+When the mouse pointer is hovered over a data plot, it triggers the [dataplotRollover](/api/fusioncharts/fusioncharts-events#event-dataplotRollOver) event. Consequently, an annotation group (containing of a line, a label, and text annotation) that displays additional information about the data plot is shown. When the mouse pointer is hovered out of the data plot, it triggers the [dataPlotRollOut](/api/fusioncharts/fusioncharts-events#event-dataplotRollOut) event and the annotation group is hidden.
 
 Macro sub-tokens are used to position the annotation group with respect to the axes and datasets. The `hide()` method is used to hide the group.
 

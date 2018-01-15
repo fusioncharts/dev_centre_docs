@@ -17,183 +17,183 @@ For example, there are events that are triggered during/when the chart renders, 
 
 This article gives you a detailed classification of the events in FusionCharts Suite XT.
 
-[ready]{% linkTo FusionCharts.events.ready %} is the first event that should be triggered when the FusionCharts library is included in the page, to ensure integrity of all the listeners. All interactions with the FusionCharts framework should initiate only after this event is fired.
+[ready](/api/fusioncharts/fusioncharts-events#static-event-ready) is the first event that should be triggered when the FusionCharts library is included in the page, to ensure integrity of all the listeners. All interactions with the FusionCharts framework should initiate only after this event is fired.
 
 Given below is the classification of the rest of the events.
 
 ## Chart Rendering-related Events
 
-* [loaded]{% linkTo FusionCharts.events.loaded %}
-* [rendered]{% linkTo FusionCharts.events.rendered %}
-* [renderComplete]{% linkTo FusionCharts.events.renderComplete %}
-* [backgroundLoaded]{% linkTo FusionCharts.events.backgroundLoaded %}
-* [backgroundLoadError]{% linkTo FusionCharts.events.backgroundLoadError %}
-* [beforeRender]{% linkTo FusionCharts.events.beforeRender %}
-* [renderCancelled]{% linkTo FusionCharts.events.renderCancelled %}
-* [beforeInitialize]{% linkTo FusionCharts.events.beforeInitialize %}
-* [initialized]{% linkTo FusionCharts.events.initialized %}
-* [dataRestored]{% linkTo FusionCharts.events.dataRestored %}
-* [chartUpdated]{% linkTo FusionCharts.events.chartUpdated %}
+* [loaded](/api/fusioncharts/fusioncharts-events#event-loaded)
+* [rendered](/api/fusioncharts/fusioncharts-events#event-rendered)
+* [renderComplete](/api/fusioncharts/fusioncharts-events#event-renderComplete)
+* [backgroundLoaded](/api/fusioncharts/fusioncharts-events#event-backgroundLoaded)
+* [backgroundLoadError](/api/fusioncharts/fusioncharts-events#event-backgroundLoadError)
+* [beforeRender](/api/fusioncharts/fusioncharts-events#event-beforeRender)
+* [renderCancelled](/api/fusioncharts/fusioncharts-events#event-renderCancelled)
+* [beforeInitialize](/api/fusioncharts/fusioncharts-events#static-event-beforeInitialize)
+* [initialized](/api/fusioncharts/fusioncharts-events#static-event-initialized)
+* [dataRestored](/api/fusioncharts/fusioncharts-events#event-dataRestored)
+* [chartUpdated](/api/fusioncharts/fusioncharts-events#event-chartUpdated)
 
 ## Data Load-related Events
 
-* [dataLoadRequested]{% linkTo FusionCharts.events.dataLoadRequested %}
-* [dataLoadError]{% linkTo FusionCharts.events.dataLoadError %}
-* [dataLoadCancelled]{% linkTo FusionCharts.events.dataLoadCancelled %}
-* [dataLoadRequestCancelled]{% linkTo FusionCharts.events.dataLoadRequestCancelled %}
-* [dataLoadRequestCompleted]{% linkTo FusionCharts.events.dataLoadRequestCompleted %}
-* [beforeDataUpdate]{% linkTo FusionCharts.events.beforeDataUpdate %}
-* [dataUpdateCancelled]{% linkTo FusionCharts.events.dataUpdateCancelled %}
-* [dataUpdated]{% linkTo FusionCharts.events.dataUpdated %}
-* [dataInvalid]{% linkTo FusionCharts.events.dataInvalid %}
-* [dataXMLInvalid]{% linkTo FusionCharts.events.dataXMLInvalid %}
-* [dataLoaded]{% linkTo FusionCharts.events.dataLoaded %}
-* [noDataToDisplay]{% linkTo FusionCharts.events.noDataToDisplay %}
+* [dataLoadRequested](/api/fusioncharts/fusioncharts-events#event-dataLoadRequested)
+* [dataLoadError](/api/fusioncharts/fusioncharts-events#event-dataLoadError)
+* [dataLoadCancelled](/api/fusioncharts/fusioncharts-events#event-dataLoadCancelled)
+* [dataLoadRequestCancelled](/api/fusioncharts/fusioncharts-events#event-dataLoadRequestCancelled)
+* [dataLoadRequestCompleted](/api/fusioncharts/fusioncharts-events#event-dataLoadRequestCompleted)
+* [beforeDataUpdate](/api/fusioncharts/fusioncharts-events#event-beforeDataUpdate)
+* [dataUpdateCancelled](/api/fusioncharts/fusioncharts-events#event-dataUpdateCancelled)
+* [dataUpdated](/api/fusioncharts/fusioncharts-events#event-dataUpdated)
+* [dataInvalid](/api/fusioncharts/fusioncharts-events#event-dataInvalid)
+* [dataXMLInvalid](/api/fusioncharts/fusioncharts-events#event-dataXMLInvalid)
+* [dataLoaded](/api/fusioncharts/fusioncharts-events#event-dataLoaded)
+* [noDataToDisplay](/api/fusioncharts/fusioncharts-events#event-noDataToDisplay)
 
 ## Events Specific to Chart Types
 
 ### Events Related to Editable Charts (Select Scatter Chart, Drag-able Charts, Drag-node Charts)
 
-* [beforeDataSubmit]{% linkTo FusionCharts.events.beforeDataSubmit %}
-* [dataSubmitError]{% linkTo FusionCharts.events.dataSubmitError %}
-* [dataSubmitted]{% linkTo FusionCharts.events.dataSubmitted %}
-* [dataSubmitCancelled]{% linkTo FusionCharts.events.dataSubmitCancelled %}
+* [beforeDataSubmit](/api/fusioncharts/fusioncharts-events#event-beforeDataSubmit)
+* [dataSubmitError](/api/fusioncharts/fusioncharts-events#event-dataSubmitError)
+* [dataSubmitted](/api/fusioncharts/fusioncharts-events#event-dataSubmitted)
+* [dataSubmitCancelled](/api/fusioncharts/fusioncharts-events#event-dataSubmitCancelled)
 
 ### Events for Drag-able Charts
 
-* [dataplotDragStart]{% linkTo FusionCharts.events.dataplotDragStart %}
-* [dataplotDragEnd]{% linkTo FusionCharts.events.dataplotDragEnd %}
+* [dataplotDragStart](/api/fusioncharts/fusioncharts-events#event-dataplotDragStart)
+* [dataplotDragEnd](/api/fusioncharts/fusioncharts-events#event-dataplotDragEnd)
 
 ### Events for the Drag-node Chart
 
-* [nodeAdded]{% linkTo FusionCharts.events.nodeAdded %}
-* [nodeUpdated]{% linkTo FusionCharts.events.nodeUpdated %}
-* [nodeDeleted]{% linkTo FusionCharts.events.nodeDeleted %}
-* [connectorAdded]{% linkTo FusionCharts.events.connectorAdded %}
-* [connectorUpdated]{% linkTo FusionCharts.events.connectorUpdated %}
-* [connectorDeleted]{% linkTo FusionCharts.events.connectorDeleted %}
-* [labelAdded]{% linkTo FusionCharts.events.labelAdded %}
-* [labelDeleted]{% linkTo FusionCharts.events.labelDeleted %}
-* [labelClick]{% linkTo FusionCharts.events.labelClick %}
-* [labelRollOver]{% linkTo FusionCharts.events.labelRollOver %}
-* [labelRollOut]{% linkTo FusionCharts.events.labelRollOut %}
-* [labelDragStart]{% linkTo FusionCharts.events.labelDragStart %}
-* [labelDragEnd]{% linkTo FusionCharts.events.labelDragEnd %}
+* [nodeAdded](/api/fusioncharts/fusioncharts-events#event-nodeAdded)
+* [nodeUpdated](/api/fusioncharts/fusioncharts-events#event-nodeUpdated)
+* [nodeDeleted](/api/fusioncharts/fusioncharts-events#event-nodeDeleted)
+* [connectorAdded](/api/fusioncharts/fusioncharts-events#event-connectorAdded)
+* [connectorUpdated](/api/fusioncharts/fusioncharts-events#event-connectorUpdated)
+* [connectorDeleted](/api/fusioncharts/fusioncharts-events#event-connectorDeleted)
+* [labelAdded](/api/fusioncharts/fusioncharts-events#event-labelAdded)
+* [labelDeleted](/api/fusioncharts/fusioncharts-events#event-labelDeleted)
+* [labelClick](/api/fusioncharts/fusioncharts-events#event-labelClick)
+* [labelRollOver](/api/fusioncharts/fusioncharts-events#event-labelRollOver)
+* [labelRollOut](/api/fusioncharts/fusioncharts-events#event-labelRollOut)
+* [labelDragStart](/api/fusioncharts/fusioncharts-events#event-labelDragStart)
+* [labelDragEnd](/api/fusioncharts/fusioncharts-events#event-labelDragEnd)
 
 ### Events for Pie and Doughnut Charts
 
-* [rotationEnd]{% linkTo FusionCharts.events.rotationEnd %}
-* [rotationStart]{% linkTo FusionCharts.events.rotationStart %}
-* [centerLabelRollover]{% linkTo FusionCharts.events.centerLabelRollover %}
-* [centerLabelRollout]{% linkTo FusionCharts.events.centerLabelRollout %}
-* [centerLabelClick]{% linkTo FusionCharts.events.centerLabelClick %}
-* [centerLabelChanged]{% linkTo FusionCharts.events.centerLabelChanged %}
-* [slicingStart]{% linkTo FusionCharts.events.slicingStart %}
-* [slicingEnd]{% linkTo FusionCharts.events.slicingEnd %}
+* [rotationEnd](/api/fusioncharts/fusioncharts-events#event-rotationEnd)
+* [rotationStart](/api/fusioncharts/fusioncharts-events#event-rotationStart)
+* [centerLabelRollover](/api/fusioncharts/fusioncharts-events#event-centerLabelRollover)
+* [centerLabelRollout](/api/fusioncharts/fusioncharts-events#event-centerLabelRollout)
+* [centerLabelClick](/api/fusioncharts/fusioncharts-events#event-centerLabelClick)
+* [centerLabelChanged](/api/fusioncharts/fusioncharts-events#event-centerLabelChanged)
+* [slicingStart](/api/fusioncharts/fusioncharts-events#event-slicingStart)
+* [slicingEnd](/api/fusioncharts/fusioncharts-events#event-slicingEnd)
 
 ### Events for Scroll Charts
 
-* [scrollStart]{% linkTo FusionCharts.events.scrollStart %}
-* [scrollEnd]{% linkTo FusionCharts.events.scrollEnd %}
+* [scrollStart](/api/fusioncharts/fusioncharts-events#event-scrollStart)
+* [scrollEnd](/api/fusioncharts/fusioncharts-events#event-scrollEnd)
 
 ### Events for Real-time Charts
 
-* [alertComplete]{% linkTo FusionCharts.events.alertComplete %}
-* [realTimeUpdateComplete]{% linkTo FusionCharts.events.realTimeUpdateComplete %}
-* [realTimeUpdateError]{% linkTo FusionCharts.events.realTimeUpdateError %}
+* [alertComplete](/api/fusioncharts/fusioncharts-events#event-alertComplete)
+* [realTimeUpdateComplete](/api/fusioncharts/fusioncharts-events#event-realTimeUpdateComplete)
+* [realTimeUpdateError](/api/fusioncharts/fusioncharts-events#event-realTimeUpdateError)
 
 ### Events for the Gantt Chart
 
-* [processClick]{% linkTo FusionCharts.events.processClick %}
-* [processRollOver]{% linkTo FusionCharts.events.processRollOver %}
-* [processRollOut]{% linkTo FusionCharts.events.processRollOut %}
-* [categoryClick]{% linkTo FusionCharts.events.categoryClick %}
-* [categoryRollOver]{% linkTo FusionCharts.events.categoryRollOver %}
-* [categoryRollOut]{% linkTo FusionCharts.events.categoryRollOut %}
-* [milestoneClick]{% linkTo FusionCharts.events.milestoneClick %}
-* [milestoneRollOver]{% linkTo FusionCharts.events.milestoneRollOver %}
-* [milestoneRollOut]{% linkTo FusionCharts.events.milestoneRollOut %}
-* [connectorClick]{% linkTo FusionCharts.events.connectorClick %}
-* [connectorRollOver]{% linkTo FusionCharts.events.connectorRollOver %}
-* [connectorRollOut]{% linkTo FusionCharts.events.connectorRollOut %}
+* [processClick](/api/fusioncharts/fusioncharts-events#event-processClick)
+* [processRollOver](/api/fusioncharts/fusioncharts-events#event-processRollOver)
+* [processRollOut](/api/fusioncharts/fusioncharts-events#event-processRollOut)
+* [categoryClick](/api/fusioncharts/fusioncharts-events#event-categoryClick)
+* [categoryRollOver](/api/fusioncharts/fusioncharts-events#event-categoryRollOver)
+* [categoryRollOut](/api/fusioncharts/fusioncharts-events#event-categoryRollOut)
+* [milestoneClick](/api/fusioncharts/fusioncharts-events#event-milestoneClick)
+* [milestoneRollOver](/api/fusioncharts/fusioncharts-events#event-milestoneRollOver)
+* [milestoneRollOut](/api/fusioncharts/fusioncharts-events#event-milestoneRollOut)
+* [connectorClick](/api/fusioncharts/fusioncharts-events#event-connectorClick)
+* [connectorRollOver](/api/fusioncharts/fusioncharts-events#event-connectorRollOver)
+* [connectorRollOut](/api/fusioncharts/fusioncharts-events#event-connectorRollOut)
 
 ### Events for the Select-scatter Chart
 
-* [selectionStart]{% linkTo FusionCharts.events.selectionStart %}
-* [selectionEnd]{% linkTo FusionCharts.events.selectionEnd %}
-* [selectionRemoved]{% linkTo FusionCharts.events.selectionRemoved %}
+* [selectionStart](/api/fusioncharts/fusioncharts-events#event-selectionStart)
+* [selectionEnd](/api/fusioncharts/fusioncharts-events#event-selectionEnd)
+* [selectionRemoved](/api/fusioncharts/fusioncharts-events#event-selectionRemoved)
 
 ### Events for the Zoom-line Chart
 
-* [zoomReset]{% linkTo FusionCharts.events.zoomReset %}
-* [zoomedOut]{% linkTo FusionCharts.events.zoomedOut %}
-* [zoomedIn]{% linkTo FusionCharts.events.zoomedIn %}
-* [zoomed]{% linkTo FusionCharts.events.zoomed %}
-* [zoomModeChanged]{% linkTo FusionCharts.events.zoomModeChanged %}
+* [zoomReset](/api/fusioncharts/fusioncharts-events#event-zoomReset)
+* [zoomedOut](/api/fusioncharts/fusioncharts-events#event-zoomedOut)
+* [zoomedIn](/api/fusioncharts/fusioncharts-events#event-zoomedIn)
+* [zoomed](/api/fusioncharts/fusioncharts-events#event-zoomed)
+* [zoomModeChanged](/api/fusioncharts/fusioncharts-events#event-zoomModeChanged)
 
 ### Event for the SSGrid Chart
 
-* [pageNavigated]{% linkTo FusionCharts.events.pageNavigated %}
+* [pageNavigated](/api/fusioncharts/fusioncharts-events#event-pageNavigated)
 
 ## Map-related Events
 
-* [entityRollOut]{% linkTo FusionCharts.events.entityRollOut %}
-* [entityRollOver]{% linkTo FusionCharts.events.entityRollOver %}
-* [entityClick]{% linkTo FusionCharts.events.entityClick %}
-* [markerRollOver]{% linkTo FusionCharts.events.markerRollOver %}
-* [markerRollOut]{% linkTo FusionCharts.events.markerRollOut %}
-* [markerClick]{% linkTo FusionCharts.events.markerClick %}
-* [connectorRollOver]{% linkTo FusionCharts.events.connectorRollOver %}
-* [connectorRollOut]{% linkTo FusionCharts.events.connectorRollOut %}
-* [connectorClick]{% linkTo FusionCharts.events.connectorClick %}
+* [entityRollOut](/api/fusioncharts/fusioncharts-events#event-entityRollOut)
+* [entityRollOver](/api/fusioncharts/fusioncharts-events#event-entityRollOver)
+* [entityClick](/api/fusioncharts/fusioncharts-events#event-entityClick)
+* [markerRollOver](/api/fusioncharts/fusioncharts-events#event-markerRollOver)
+* [markerRollOut](/api/fusioncharts/fusioncharts-events#event-markerRollOut)
+* [markerClick](/api/fusioncharts/fusioncharts-events#event-markerClick)
+* [connectorRollOver](/api/fusioncharts/fusioncharts-events#event-connectorRollOver)
+* [connectorRollOut](/api/fusioncharts/fusioncharts-events#event-connectorRollOut)
+* [connectorClick](/api/fusioncharts/fusioncharts-events#event-connectorClick)
 
 ## Generic Events
 
-* [annotationRollOver]{% linkTo FusionCharts.namespaces.annotations %}
-* [annotationRollOut]{% linkTo FusionCharts.namespaces.annotations %}
-* [annotationClick]{% linkTo FusionCharts.namespaces.annotations %}
-* [dataLabelRollOver]{% linkTo FusionCharts.events.dataLabelRollOver %}
-* [dataLabelRollOut]{% linkTo FusionCharts.events.dataLabelRollOut %}
-* [dataLabelClick]{% linkTo FusionCharts.events.dataLabelClick %}
-* [beforeDispose]{% linkTo FusionCharts.events.beforeDispose %}
-* [disposed]{% linkTo FusionCharts.events.disposed %}
-* [disposeCancelled]{% linkTo FusionCharts.events.disposeCancelled %}
-* [logoRollover]{% linkTo FusionCharts.events.logoRollover %}
-* [logoRollout]{% linkTo FusionCharts.events.logoRollout %}
-* [logoClick]{% linkTo FusionCharts.events.logoClick %}
-* [logoLoaded]{% linkTo FusionCharts.events.logoLoaded %}
-* [logoLoadError]{% linkTo FusionCharts.events.logoLoadError %}
-* [beforeResize]{% linkTo FusionCharts.events.beforeResize %}
-* [resized]{% linkTo FusionCharts.events.resized %}
-* [resizeCancelled]{% linkTo FusionCharts.events.resizeCancelled %}
-* [chartTypeChanged]{% linkTo FusionCharts.events.chartTypeChanged %}
-* [chartClick]{% linkTo FusionCharts.events.chartClick %}
-* [chartMouseMove]{% linkTo FusionCharts.events.chartMouseMove %}
-* [chartRollOver]{% linkTo FusionCharts.events.chartRollOver %}
-* [chartRollOut]{% linkTo FusionCharts.events.chartRollOut %}
-* [dataRestored]{% linkTo FusionCharts.events.dataRestored %}
-* [chartUpdated]{% linkTo FusionCharts.events.chartUpdated %}
-* [chartCleared]{% linkTo FusionCharts.events.chartCleared %}
-* [pinned]{% linkTo FusionCharts.events.pinned %}
-* [beforeExport]{% linkTo FusionCharts.events.beforeExport %}
-* [exported]{% linkTo FusionCharts.events.exported %}
-* [exportCancelled]{% linkTo FusionCharts.events.exportCancelled %}
-* [legendPointerDragStart]{% linkTo FusionCharts.events.legendPointerDragStart %}
-* [legendPointerDragStop]{% linkTo FusionCharts.events.legendPointerDragStop %}
-* [legendRangeUpdated]{% linkTo FusionCharts.events.legendRangeUpdated %}
-* [legendItemClicked]{% linkTo FusionCharts.events.legendItemClicked %}
-* [legendItemRollover]{% linkTo FusionCharts.events.legendItemRollover %}
-* [legendItemRollout]{% linkTo FusionCharts.events.legendItemRollout %}
-* [linkClicked]{% linkTo FusionCharts.events.linkClicked %}
-* [beforeLinkedItemOpen]{% linkTo FusionCharts.events.beforeLinkedItemOpen %}
-* [linkedItemOpened]{% linkTo FusionCharts.events.linkedItemOpened %}
-* [beforeLinkedItemClose]{% linkTo FusionCharts.events.beforeLinkedItemClose %}
-* [linkedItemClosed]{% linkTo FusionCharts.events.linkedItemClosed %}
-* [dataplotRollOver]{% linkTo FusionCharts.events.dataplotRollOver %}
-* [dataplotRollOut]{% linkTo FusionCharts.events.dataplotRollOut %}
-* [dataplotClick]{% linkTo FusionCharts.events.dataplotClick %}
-* [overlayButtonClick]{% linkTo FusionCharts.events.overlayButtonClick %}
-* [beforePrint]{% linkTo FusionCharts.events.beforePrint %}
-* [printComplete]{% linkTo FusionCharts.events.printComplete %}
-* [printCancelled]{% linkTo FusionCharts.events.printCancelled %}
-* [printReadyStateChange (Deprecated API)]{% linkTo FusionCharts.events.printReadyStateChange %}
+* [annotationRollOver](/api/fusioncharts/namespaces/annotations)
+* [annotationRollOut](/api/fusioncharts/namespaces/annotations)
+* [annotationClick](/api/fusioncharts/namespaces/annotations)
+* [dataLabelRollOver](/api/fusioncharts/fusioncharts-events#event-dataLabelRollOver)
+* [dataLabelRollOut](/api/fusioncharts/fusioncharts-events#event-dataLabelRollOut)
+* [dataLabelClick](/api/fusioncharts/fusioncharts-events#event-dataLabelClick)
+* [beforeDispose](/api/fusioncharts/fusioncharts-events#event-beforeDispose)
+* [disposed](/api/fusioncharts/fusioncharts-events#event-disposed)
+* [disposeCancelled](/api/fusioncharts/fusioncharts-events#event-disposeCancelled)
+* [logoRollover](/api/fusioncharts/fusioncharts-events#event-logoRollover)
+* [logoRollout](/api/fusioncharts/fusioncharts-events#event-logoRollout)
+* [logoClick](/api/fusioncharts/fusioncharts-events#event-logoClick)
+* [logoLoaded](/api/fusioncharts/fusioncharts-events#event-logoLoaded)
+* [logoLoadError](/api/fusioncharts/fusioncharts-events#event-logoLoadError)
+* [beforeResize](/api/fusioncharts/fusioncharts-events#event-beforeResize)
+* [resized](/api/fusioncharts/fusioncharts-events#event-resized)
+* [resizeCancelled](/api/fusioncharts/fusioncharts-events#event-resizeCancelled)
+* [chartTypeChanged](/api/fusioncharts/fusioncharts-events#event-chartTypeChanged)
+* [chartClick](/api/fusioncharts/fusioncharts-events#event-chartClick)
+* [chartMouseMove](/api/fusioncharts/fusioncharts-events#event-chartMouseMove)
+* [chartRollOver](/api/fusioncharts/fusioncharts-events#event-chartRollOver)
+* [chartRollOut](/api/fusioncharts/fusioncharts-events#event-chartRollOut)
+* [dataRestored](/api/fusioncharts/fusioncharts-events#event-dataRestored)
+* [chartUpdated](/api/fusioncharts/fusioncharts-events#event-chartUpdated)
+* [chartCleared](/api/fusioncharts/fusioncharts-events#event-chartCleared)
+* [pinned](/api/fusioncharts/fusioncharts-events#event-pinned)
+* [beforeExport](/api/fusioncharts/fusioncharts-events#event-beforeExport)
+* [exported](/api/fusioncharts/fusioncharts-events#event-exported)
+* [exportCancelled](/api/fusioncharts/fusioncharts-events#event-exportCancelled)
+* [legendPointerDragStart](/api/fusioncharts/fusioncharts-events#event-legendPointerDragStart)
+* [legendPointerDragStop](/api/fusioncharts/fusioncharts-events#event-legendPointerDragStop)
+* [legendRangeUpdated](/api/fusioncharts/fusioncharts-events#event-legendRangeUpdated)
+* [legendItemClicked](/api/fusioncharts/fusioncharts-events#event-legendItemClicked)
+* [legendItemRollover](/api/fusioncharts/fusioncharts-events#event-legendItemRollover)
+* [legendItemRollout](/api/fusioncharts/fusioncharts-events#event-legendItemRollout)
+* [linkClicked](/api/fusioncharts/fusioncharts-events#event-linkClicked)
+* [beforeLinkedItemOpen](/api/fusioncharts/fusioncharts-events#event-beforeLinkedItemOpen)
+* [linkedItemOpened](/api/fusioncharts/fusioncharts-events#event-linkedItemOpened)
+* [beforeLinkedItemClose](/api/fusioncharts/fusioncharts-events#event-beforeLinkedItemClose)
+* [linkedItemClosed](/api/fusioncharts/fusioncharts-events#event-linkedItemClosed)
+* [dataplotRollOver](/api/fusioncharts/fusioncharts-events#event-dataplotRollOver)
+* [dataplotRollOut](/api/fusioncharts/fusioncharts-events#event-dataplotRollOut)
+* [dataplotClick](/api/fusioncharts/fusioncharts-events#event-dataplotClick)
+* [overlayButtonClick](/api/fusioncharts/fusioncharts-events#event-overlayButtonClick)
+* [beforePrint](/api/fusioncharts/fusioncharts-events#event-beforePrint)
+* [printComplete](/api/fusioncharts/fusioncharts-events#event-printComplete)
+* [printCancelled](/api/fusioncharts/fusioncharts-events#event-printCancelled)
+* [printReadyStateChange (Deprecated API)](/api/fusioncharts/fusioncharts-events#event-printReadyStateChange)

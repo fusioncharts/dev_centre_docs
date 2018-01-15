@@ -4,6 +4,7 @@ title: Using XML as Data Format | FusionCharts
 description: FusionCharts Suite XT allows developers to pick  XML/JSON, without losing any functionality, whatsoever. Server-side developers find it easier to build XML
 heading: Using XML as Data Format
 chartPresent: true
+breadcrumb: [["Home", "/"], ["Using XML as Data Format"]]
 ---
 
 Tom is a server-side developer working in Harry's team. He prefers working with XML over JSON, because of the verbose nature of JSON. FusionCharts Suite XT allows developers like Tom to pick either XML or JSON, without losing any functionality, whatsoever. Server-side developers find it easier to build XML (using string concatenation), whereas JavaScript developers find it easier to work with JSON.

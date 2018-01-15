@@ -4,6 +4,7 @@ title: Your First Map | FusionCharts
 description: This article talks how to create your first map using FusionMaps. An example illustrates each and every step to build a map
 heading: Your First Map
 chartPresent: true
+breadcrumb: [["Home", "/"], ["Your First Map"]]
 ---
 
 Harry’s SuperMart has stores in multiple US states. Harry wants to keep a tab on the sales numbers across all these states. While he can easily put those in a column chart and compare, the context of location would be lost, and the chart will become illegible if he had to plot all the states. Additionally, Harry has thresholds that let him segregate states on the basis of low, moderate and high in terms of sales figures.
