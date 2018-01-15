@@ -24,7 +24,7 @@ Once you have implemented these steps, the FusionCharts JavaScript class takes c
 
 * It clones all chart configuration settings from the parent chart to create the descendant charts.
 
-* It allows you to configure specific properties for descendant charts using the [configureLink()]{% linkTo FusionCharts.methods.configureLink %} function.
+* It allows you to configure specific properties for descendant charts using the [configureLink()](/api/fusioncharts/fusioncharts-methods#configureLink) function.
 
 * It uses events to notify your code of when a link is invoked, a link item is opened, and a link item is closed.
 
@@ -233,4 +233,4 @@ The `events` object, under the `dataSource` object, is used to configure the eve
 
 <p class="text-info"> The `FusionCharts.addEventListener()` static function can be used to trap events globally—for all charts.</p>
 
-<p class="text-info"> For detailed descriptions of the _LinkedChart_ events, refer the [FusionCharts API Reference]{% linkTo FusionCharts.events %}.</p>
+<p class="text-info"> For detailed descriptions of the _LinkedChart_ events, refer the [FusionCharts API Reference](/api/fusioncharts/fusioncharts-events).</p>

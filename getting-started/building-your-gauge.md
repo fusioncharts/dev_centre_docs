@@ -4,6 +4,7 @@ title: Your First Gauge | FusionCharts
 description: This articles talks about the 5 simple steps to build a chart using FusionWidgets XT.
 heading: Your First Gauge
 chartPresent: true
+breadcrumb: [["Home", "/"], ["Your First Gauge"]]
 ---
 
 In this section, we will create a gauge (speedometer or dial chart) for Harry so that he can quickly monitor the customer satisfaction score for Harry’s SuperMart. Gauges are powerful tools that can be used to showcase things like a speedometer or the fuel remaining in your car. They use a radial scale to display data and a dial is used to indicate the value.

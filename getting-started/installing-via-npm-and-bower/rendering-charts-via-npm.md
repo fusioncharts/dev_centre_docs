@@ -4,6 +4,7 @@ title: Rendering Charts via npm | FusionCharts
 description: FusionCharts Suite XT can now be downloaded via the npm and Bower package managers. This section talks about rendering charts via npm.
 heading: Rendering Charts via npm
 chartPresent: true
+breadcrumb: [["Home", "/"], ["Rendering Charts via npm"]]
 ---
 
 The [Installing via npm](/getting-started/installing-via-npm-and-bower/installing-via-npm) article was about how you can install FusionCharts Suite XT version via npm package manager.

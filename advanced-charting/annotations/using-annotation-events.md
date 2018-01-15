@@ -81,7 +81,7 @@ Attributes passed under the `argObj` parameter of these events are as follows:
 
 * `groupOptions`
 
-For more information on these parameters, click [here]{% linkTo FusionCharts.namespaces.annotations.events %}.
+For more information on these parameters, click [here](/api/fusioncharts/namespaces/annotations#events).
 
 The complete data structure for the spline chart with annotation events is given below:
 

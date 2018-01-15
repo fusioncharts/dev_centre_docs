@@ -4,6 +4,7 @@ title: What's New in v3.12.2 | FusionCharts
 description: This section talks about the new features introduced in v3.12.2.
 heading: What's New in v3.12.2
 chartPresent: false
+breadcrumb: [["Home", "/"], ["What's New in v3.12.2"]]
 ---
 
 * Improvement:

@@ -4,6 +4,7 @@ title: Export your charts | FusionCharts
 description: Talks about FusionExport
 heading: Export using FusionCharts Export Server
 chartPresent: False
+breadcrumb: [["Home", "/"], ["Export using FusionCharts Export Server"]]
 ---
 
 FusionCharts Suite XT uses VML and SVG to render JavaScript charts in the browser, and lets you export the rendered charts in several formats.

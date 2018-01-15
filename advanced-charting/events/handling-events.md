@@ -34,7 +34,7 @@ To configure the `renderComplete` event for the column 2D chart, first define th
 A listener function is a JavaScript function that accepts two optional arguments: `eventObj` and `eventArgs`. These arguments receive information specific to the event to which the listener is attached.
 
 <p class='text-info'>
-For more details on the arguments passed to the event listeners, read the [FusionCharts API reference for event listeners]{% linkTo FusionCharts.typedefs.eventListener %}.
+For more details on the arguments passed to the event listeners, read the [FusionCharts API reference for event listeners](/api/fusioncharts/fusioncharts-typedefs#eventListener).
 </p>
 
 The code snippet to define an event listener is shown below:
@@ -63,7 +63,7 @@ The `addEventListener()` function takes the following two parameters:
 | Parameter | Type | Description|
 | --------- | :----| :----------|
 | `type` | string, Array[string] | The name of the event to which a listener will be attached. The event name is not case sensitive. To register multiple events in the same registration call, provide them as an array of event names. |
-| `listener` | [FusionCharts~eventListener]{% linkTo FusionCharts.typedefs.eventListener %} | The listener function that will be executed when the event is fired. |
+| `listener` | [FusionCharts~eventListener](/api/fusioncharts/fusioncharts-typedefs#eventListener) | The listener function that will be executed when the event is fired. |
 
 
 Once the listener function is defined, the line of code shown below is used to attach the listener function to the event:

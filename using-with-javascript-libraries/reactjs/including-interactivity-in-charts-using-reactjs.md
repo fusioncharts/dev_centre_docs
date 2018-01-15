@@ -99,7 +99,7 @@ var pieChartConfigurations = {
 
 Before the filter is propagated to a chart, it has to be stored from where it is accessible to the chart. This is done in the function that sets the state of the parent component.
 
-A function is defined in the parent component and is called when the [slicingStart]{% linkTo FusionCharts.events.slicingStart %} event is triggered. The function sets the state of the parent component, mandatorily, with:
+A function is defined in the parent component and is called when the [slicingStart](/api/fusioncharts/fusioncharts-events#event-slicingStart) event is triggered. The function sets the state of the parent component, mandatorily, with:
 
 * `filterValue`: value of the selected slice
 * `filterSource`: ID of the chart that triggered the `slicingStart` event

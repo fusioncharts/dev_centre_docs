@@ -309,7 +309,7 @@ var chartRef =  getChartFromId("myChartId");
 
 However, note that `getChartFromId()` has been deprecated.
 
-<p class="text-info">You can call the JavaScript APIs of a chart only after it has rendered. You can use the [rendered]{% linkTo FusionCharts.events.rendered %} [event listener]{% linkTo FusionCharts.typedefs.eventListener %} to check if a chart has rendered.</p>
+<p class="text-info">You can call the JavaScript APIs of a chart only after it has rendered. You can use the [rendered](/api/fusioncharts/fusioncharts-events#event-rendered) [event listener](/api/fusioncharts/fusioncharts-typedefs#eventListener) to check if a chart has rendered.</p>
 
 Once you have obtained the reference to the chart, you can use any of the functions below on the chart's logger:
 
@@ -337,4 +337,4 @@ If you get JavaScript errors when accessing the above functions, make sure that:
 
 * you have enabled the message logger for the chart as mentioned in `Setting up the Message Logger` and `Configuring the Message Logger` section above.
 
-* you are accessing these functions after the chart has rendered (you can use the [rendered]{% linkTo FusionCharts.events.rendered %} [event listener]{% linkTo FusionCharts.typedefs.eventListener %} to track if a chart has finished rendering).
+* you are accessing these functions after the chart has rendered (you can use the [rendered](/api/fusioncharts/fusioncharts-events#event-rendered) [event listener](/api/fusioncharts/fusioncharts-typedefs#eventListener) to track if a chart has finished rendering).

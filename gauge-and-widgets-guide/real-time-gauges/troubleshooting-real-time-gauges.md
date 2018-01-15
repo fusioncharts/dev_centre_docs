@@ -30,7 +30,7 @@ If the real-time gauge is set up to receive data from the server and the gauge r
 
 When accessing any of the JavaScript API methods, if you get an error ` .. is not a function of`, ensure that:
 
-* you are calling the JavaScript API method after the gauge has [loaded]{% linkTo FusionCharts.events.loaded %} and [rendered]{% linkTo FusionCharts.events.rendered %}.
+* you are calling the JavaScript API method after the gauge has [loaded](/api/fusioncharts/fusioncharts-events#event-loaded) and [rendered](/api/fusioncharts/fusioncharts-events#event-rendered).
 
 * you have provided all the required .js files of the FusionCharts library and no other JavaScript error has occured.
 

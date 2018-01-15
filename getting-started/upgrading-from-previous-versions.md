@@ -4,6 +4,7 @@ title: Upgrading from Previous Versions | FusionCharts
 description: This section talks about how can a user upgrade his version from the previous one.
 heading: Upgrading from Previous Versions
 chartPresent: false
+breadcrumb: [["Home", "/"], ["Upgrading from Previous Versions"]]
 ---
 
 This section is for those who are using any version of FusionCharts older than v3.3.1 and upgrading to v3.4 or beyond.
