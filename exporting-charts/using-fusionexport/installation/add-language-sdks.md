@@ -23,23 +23,23 @@ The FusionExport Language SDKs are tools for creating and managing the FusionExp
 <div class="tab-content extra-tabs">
 <div class="tab nodejs-tab active">
 <strong>To install the Node.js module, simply use the npm command:</strong>
-<pre><code class="language-javscript">$ npm install fusionexport-node-client --save</code></pre>
+<pre><code class="language-javscript">	$ npm install fusionexport-node-client --save</code></pre>
 <strong>To require the SDK into your project:</strong>
-<pre><code class="language-javscript">const FusionExport = require('fusionexport-node-client');</code></pre>
+<pre><code class="language-javscript">	const FusionExport = require('fusionexport-node-client');</code></pre>
 </div>
 
 <div class="tab python-tab">
 <strong>To install the Python package, simply use the pip command:</strong>
-<pre><code class="language-python">$ pip install fusionexport</code></pre>
+<pre><code class="language-python">	$ pip install fusionexport</code></pre>
 <strong>To import the SDK into your project:</strong>
-<pre><code class="language-python">from fusionexport import ExportManager, ExportConfig</code></pre>
+<pre><code class="language-python">	from fusionexport import ExportManager, ExportConfig</code></pre>
 </div>
 
 <div class="tab csharp-tab">
 <strong>You can install the SDK using the NuGet package manager. To install, open the NuGet package manager console and run the following command:</strong>
-<pre><code class="language-cs">$ Install-Package FusionExport -Version 1.0.0-beta</code></pre>
+<pre><code class="language-cs">	$ Install-Package FusionExport -Version 1.0.0-beta</code></pre>
 <strong>To use the SDK into your project:</strong>
-<pre><code class="language-vb">using FusionCharts.FusionExport.Client; </code></pre>
+<pre><code class="language-cs">	using FusionCharts.FusionExport.Client; </code></pre>
 </div>
 
 <div class="tab java-tab">
@@ -47,13 +47,13 @@ The FusionExport Language SDKs are tools for creating and managing the FusionExp
 <strong>To use as part of a Gradle project, first add the maven central repository to your repositories list:</strong>
 <pre><code class="language-java">
 	repositories {
-    	mavenCentral()
+		mavenCentral()
 	}
 </code></pre>
 <strong>Then, add this SDK as a dependency to your build.gradle file:</strong>
 <pre><code class="language-java">
 	dependencies {
-    	Compile "com.fusioncharts.fusionexport:fusionexport:1.0.0-beta"
+		Compile "com.fusioncharts.fusionexport:fusionexport:1.0.0-beta"
 	}
 </code></pre>
 <p><strong>Using Maven</strong></p>
@@ -66,20 +66,20 @@ The FusionExport Language SDKs are tools for creating and managing the FusionExp
 	&lt;/dependency&gt;
 </code></pre>
 <strong>To import the SDK into your project:</strong>
-<pre><code class="language-java"> import com.fusioncharts.fusionexport.client.*; </code></pre> </div>
+<pre><code class="language-java">	import com.fusioncharts.fusionexport.client.*; </code></pre> </div>
 <div class="tab golang-tab">
 <strong>To install the go package, simply use go get:</strong>
-<pre><code class="language-go"> go get github.com/fusioncharts/fusionexport-go-client </code></pre>
+<pre><code class="language-go">	go get github.com/fusioncharts/fusionexport-go-client </code></pre>
 <strong>To require this into your project:</strong>
-<pre><code class="language-go"> import "github.com/fusioncharts/fusionexport-go-client"</code></pre>
+<pre><code class="language-go">	import "github.com/fusioncharts/fusionexport-go-client"</code></pre>
 </div>
 
 <div class="tab php-tab">
 <strong>To install this package, simply use composer:</strong>
-<pre><code class="language-php">composer require fusioncharts/fusionexport:1.0.0-beta</code></pre>
+<pre><code class="language-php">	composer require fusioncharts/fusionexport:1.0.0-beta</code></pre>
 <strong>To use the SDK in your project:</strong>
 <pre><code class="language-php">
-    use FusionExport\ExportManager;
+	use FusionExport\ExportManager;
 	use FusionExport\ExportConfig;
 </code></pre>
 </div>
