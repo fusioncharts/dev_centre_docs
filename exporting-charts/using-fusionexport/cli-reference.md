@@ -15,7 +15,7 @@ All the CLI options can be written in a JSON file by providing the JSON file as 
 **Default:** `fusioncharts_export.json`
 
 config.json file looks like as shown below: 
-```javascript
+```console
 {
   "chart-config": "fusioncharts_chart.js",
   "output-file": "fc-<%= number(2, 100, 3)",
@@ -26,7 +26,7 @@ config.json file looks like as shown below:
 ```
 
 Run the following command in the terminal:
-```javascript
+```console
 $ fe -e fusioncharts_export.json
 ```
 
@@ -39,7 +39,7 @@ In case of JS file, the object is exported. It also accepts multiple files, dire
 FusionExport CLI accepts the chart configuration using the `--chart-config` or `-c` option. 
 
 Save the chart configuration in a JSON file. The structure of this JSON file will be as shown below:
-```javascript
+```console
 [
    {
       "type": "column2d",
@@ -72,33 +72,33 @@ Save the chart configuration in a JSON file. The structure of this JSON file wil
 ```
 
 Run the following command in the terminal:
-```javascript
+```console
 $ fe -c <chart-config-file.json>
 ```
 
 **JS structure to export a single chart from the CLI is as shown below:**
 Save the chart configuration in a JavaScript file. In this case, the whole chart configuration object must be exported. The JS structure to export a single chart from the CLI is as shown below:
-```javascript
+```console
 module.exports = {
   // fusioncharts config
 };
 ```
 
 To use this newly created JavaScript file for export, run the following command:
-```javascript
+```console
 $ fe - c <chart-config-file.js>
 ```
 
 **For exporting a single chart from the CLI using multiple files:**
 If chart configurations are stored in multiple directories and multiple files, all the files can be included using a glob pattern. In that case, the glob pattern should be provided using this option in a string format.
-```javascript
+```console
 module.exports = {
   // fusioncharts config
 };
 ```
 
 To use multiple files for the export, execute the following command:
-```javascript
+```console
 $ fe -c 'resources/charts/file_1.json resources/charts/file_2.json resources/charts/sub_1/* resources/charts/sub_2/*'
 ```
 
@@ -111,7 +111,7 @@ The JSON object structure should reflect the object structure of another chart c
 **To manipulate all chart configs through chart-config options:**
 
 Let’s say we have a chart config file with multiple chart configs as __multiple-chart-config.json__. The contents of this file are as given below:
-```javascript
+```console
 
 [
    {
@@ -225,7 +225,7 @@ export-config.json
 ```
 
 Execute the following command:
-```javascript
+```console
 $ fe -e export-config.json
 ```
 
@@ -240,7 +240,7 @@ The SVG file that needs to be exported.
 * Export an SVG file
 
 To the SVG file, named as `vector.svg` for our example, execute the following command::
-```javascript
+```console
 $ fe -i vector.svg
 ```
 
@@ -258,7 +258,7 @@ The two built in method structures are:
 * `timestamp()`: Provides the current time in milliseconds.
 
 Shift this and the examples after the methods are described.
-```javascript
+```console
 export--<%= number(1) %>
 
 exp--<%= timestamp() %>.png
@@ -270,12 +270,12 @@ If an extension is provided with the filename, the output type gets inferred fro
 Any zipped output will always be named **fusioncharts_export.zip**.
 
 To export using output file template, run the following command:
-```javascript
+```console
 $ fe -c multiple-chart-config.json -o export--<%= number(1) %>.jpg
 ```
 
 To export to __S3__ or __FTP__, just prepend `s3:` and `ftp:` to the output file string respectively.
-```javascript
+```console
 $ fe -c multiple-chart-config.json -o s3:export--<%= number(1) %>.jpg
 ```
 
@@ -284,7 +284,7 @@ JS or JSON file that contains methods and arrays to be used for naming the outpu
 Custom functions and arrays can also be provided on top of the two built in functions to construct the output file names.
 
 An example of an output definition file named as __def.js__ is as shown below:
-```javascript
+```console
 module.exports = {
   captionIndexStr: (chartConfig, index, chartConfigList) => {
     const caption = chartConfig.dataSource.chart.caption;
@@ -303,7 +303,7 @@ The `captionIndexStr` function receives three parameters from the FusionExport C
 This option also accepts array inputs that are iterated through to create file names dynamically.
 
 To export a file using the above file, run the following command:
-```javascript
+```console
 $ fe -c multiple-chart-config.json -o ‘exp--<%= captionIndexStr() %>_<%= dates %>’ -F def.js
 ```
 
@@ -313,7 +313,7 @@ Exports the output files either as individual files or in a zip format.
 **Default:** `false`
 
 The output gets exported in zip format. This option takes boolean value.
-```javascript
+```console
 $ fe -c multiple-chart-config.json -z 1
 ```
 
@@ -329,7 +329,7 @@ Output type can be any of the following:
 * png, jpg, jpeg, pdf, html for dashboard export
 
 Example:
-```javascript
+```console
 $ fe -c single.json -t xlsx
 ```
 
@@ -349,12 +349,12 @@ JS file that provides an option to bind custom methods to the events fired by th
 Using this option, you can add a custom javascript file while exporting. Here’s an example of a custom javascript that can be included while the export is taking place.
 
 The content present in the __custom.js__ file is shown below:
-```javascript
+```console
 document.body.style.transform = "rotate(-10deg)";
 ```
 
 Once done, run the following command:
-```javascript
+```console
 $ fe -c chart.json -b custom.js
 ```
 
@@ -382,7 +382,7 @@ The following code goes into the HTML file:
 ```
 
 The **multiple_charts_config.json** contains the configurations of the charts to be exported. The following code goes into the **multiple_charts_config.json** file: 
-```javascript
+```console
 [
    {
       "type": "pie2d",
@@ -485,7 +485,7 @@ The **multiple_charts_config.json** contains the configurations of the charts to
 In the configuration file, you need to include the same `renderAt` attribute so that when you finally export the charts, FusionExport will replace those divs with the actual charts.
 
 To create the template, run the following command:
-```javascript
+```console
 $ fe -c multiple_charts_config.json -T template.html
 ```
 
@@ -497,7 +497,7 @@ Default: **resources.json**
 This option is not mandatory; it is required only when `--remote-export-enabled` option is set to `true`. Most resources that are mentioned in the template using the `<link>`, `<script>` or `<img>` tags, are found intelligently. If any additional fonts and links are present in CSS or if any dynamic links are included in the JavaScript file, you can specify them using the `--resources` option.
 
 The format of the `--resources` option is as shown below:
-```javascript
+```console
 {
     "images": [
         "filename.jpg",
@@ -521,7 +521,7 @@ The format of the `--resources` option is as shown below:
 ### library-path (--library-path, -L)
 Path where the FusionCharts library is present.
 If you have a licensed version or custom FusionCharts library, you can use that to render your charts as well. Just pass the directory of the FusionCharts library using following command:
-```javascript
+```console
 $ fe -c multiple-charts-config.json -L licensed/fusioncharts
 ```
 
@@ -530,7 +530,7 @@ $ fe -c multiple-charts-config.json -L licensed/fusioncharts
 
 To place a banner on top of the exported dashboard, specify the logo which you want to use in that banner. Note that this is only available for dashboard export. 
 Example: 
-```javascript
+```console
 $ fe -c multiple_charts_config.json -T template.html -G logo.png
 ```
 
@@ -539,7 +539,7 @@ $ fe -c multiple_charts_config.json -T template.html -G logo.png
 
 To place a banner on top of the exported dashboard, you can also specify the heading that you want to use in that banner. Note that this is only used for dashboard export.
 Example:
-```javascript
+```console
 $ fe -c multiple_charts_config.json -T template.html -D ‘Financial Analysis’
 ```
 
@@ -548,7 +548,7 @@ $ fe -c multiple_charts_config.json -T template.html -D ‘Financial Analysis’
 
 When placing a banner on top of the exported dashboard, you can specify the subheading that you want to use in that banner. Note that this is only valid for dashboard export.
 Example:
-```javascript
+```console
 $ fe -c multiple_charts_config.json -T template.html -G logo.png -D ‘Financial Analysis’ -B ‘A descriptive analysis’
 ```
 
@@ -559,7 +559,7 @@ $ fe -c multiple_charts_config.json -T template.html -G logo.png -D ‘Financial
 Exporting can be invoked from the injected JavaScript `--callbacks option`. 
  If the `--async-capture` option is enabled, the injected script must emit `CAPTURE_EXIT` event.
 Example: `scrollcombidy2d` chart config.
-```javascript
+```console
 {
   module.exports = {
   type: 'scrollcombidy2d',
@@ -575,7 +575,7 @@ Example: `scrollcombidy2d` chart config.
 ```
 
 The intention here is to take a snap of the whole chart. By default, the chart’s width is `550px`. We will increase the width and then ask FusionExport to start processing. Following is the content of the __callback.js__ file:
-```javascript
+```console
 FusionCharts.items.myChartId.addEventListener('renderComplete', (evt) => {
     evt.sender.resizeTo('3000', '400');
     FusionExport.emit('CAPTURE_EXIT');
@@ -583,7 +583,7 @@ FusionCharts.items.myChartId.addEventListener('renderComplete', (evt) => {
 ```
 
 Run the following command:
-```javascript
+```console
 $ fe -c scrollchart.js -b callback.js -async-capture true
 ```
 
@@ -595,7 +595,7 @@ Maximum time (in milliseconds) the system will wait for async-capture event to t
 By default, maximum time FusionExport waits for the `CAPTURE_EXIT` event is `6` seconds. It can be increased up to `60` seconds using `--async-capture-timeout` option.
 
 Here is an example of the export config file.
-```javascript
+```console
 {
   "chart-config": "scrollchart.js",
   "callbacks": "callback.js",
@@ -614,7 +614,7 @@ Enables logging and sets the log destination.
 By default, export logging is disabled. It can be enabled by setting a log destination.
 
 You can provide the log file path using the following command:
-```javascript
+```console
 $ fe -c single.json -d logs/
 ```
 
@@ -622,7 +622,7 @@ $ fe -c single.json -d logs/
 **Default:** `fusioncharts_export.log`
 
 You can provide the log file name using the following command:
-```javascript
+```console
 $ fe -c single.json -d logs/ -f custom.log
 ```
 
@@ -630,7 +630,7 @@ $ fe -c single.json -d logs/ -f custom.log
 **Default:** `fusioncharts_export.log`
 
 You can provide the log file name using the following command:
-```javascript
+```console
 $ fe -c single.json -d logs/ -f custom.log
 ```
 
@@ -638,12 +638,12 @@ $ fe -c single.json -d logs/ -f custom.log
 **Default:** `info`
 
 You can provide the log level using the following command:
-```javascript
+```console
 $ fe -c single.json -d logs/ -f custom.log -l 5
 ```
 
 The supported log levels are:
-```javascript
+```console
 0: error 
 1: warn 
 2: info
@@ -669,15 +669,6 @@ Export server url.
 To export charts remotely, you need to deploy the FusionExport Web Service and get the export URL. 
 
 To do this, enable the `--remote-export-enabled` option and pass this option as shown in the command below:
-```javascript
+```console
 $ fe -c column_chart_config.json -R true -u http://localhost:3000/api/v1.0/export
 ```
-
-
-<div class='bookmark-container'>
-    <input class="search-query bookmark-search" placeholder="Search {{ page.title }}" type="text" autocomplete='off'>
-    <i class="fa fa-search search-icon"></i>
-    <ul class='api-bookmarks' tabindex = '1'>
-        <li class='no-match'></li>
-    </ul>
-</div>
