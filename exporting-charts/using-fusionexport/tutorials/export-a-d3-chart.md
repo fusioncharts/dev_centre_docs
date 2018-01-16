@@ -23,7 +23,7 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 <div class="tab cli-tab active">
 <div class="mt-20 pb-10">Let’s create a template file named <code>template.html</code> and load the <code>d3.js</code> library. Write the necessary code to render the chord diagram. Now, use the <code>--asyncCapture</code> CLI option to hook into D3’s rendering life-cycle and export the chart after D3 completes the rendering. </div>
 <div class="mt-20 pb-10"><strong>template.html</strong></div>
-```html
+<pre><code class="language-html">
 	<!DOCTYPE html>
 	<meta charset="utf-8">
 	<style>
@@ -148,28 +148,25 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	    d3.select(self.frameElement).style("height", outerRadius * 2 + "px");
 	  </script>
 	</body>
-```
-<div class="mt-20 pb-10">Pay special attention to <strong>FusionExport.emit('<code>CAPTURE_EXIT</code>')</strong>. You need to emit the <code>CAPTURE_EXIT</code> event when the render is complete.</div>
+</pre></code><div class="mt-20 pb-10">Pay special attention to <strong>FusionExport.emit('<code>CAPTURE_EXIT</code>')</strong>. You need to emit the <code>CAPTURE_EXIT</code> event when the render is complete.</div>
 <div class="mt-20 pb-10"><strong>The fusioncharts_config.json looks like as follows:</strong></div>
 
-```javascript
+<pre><code class="language-javascript">
 	{
 	  "template": "path/to/d3_exp/template.html",
 	  "output-file": "./",
 	  "type": "pdf",
 	  "async-capture": true
 	}
-```
-
+</pre></code>
 <div class="mt-20 pb-10"><strong>Once done, run the following command:</strong></div>
-```javascript
+<pre><code class="language-javascript">
 	$ fe -e fusioncharts_config.json
-```
-</div>
+</pre></code></div>
     
 <div class="tab nodejs-tab">
 
-```javascript
+<pre><code class="language-javascript">
 	const fs = require('fs');
 	const path = require('path');
 	// require fusionexport
@@ -203,10 +200,9 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	fusion.on('error', (err) => {
 	  console.error(err)
 	})
-```
-</div>
+</pre></code></div>
 <div class="tab java-tab">
-```java
+<pre><code class="language-java">
 	import com.fusioncharts.fusionexport.client.*; // import sdk
 
 	public class ExportChart implements ExportDoneListener, ExportStateChangedListener {
@@ -239,10 +235,9 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	        System.out.println("STATE: " + state);
 	    }
 	}
-```
-</div>
+</pre></code></div>
 <div class="tab csharp-tab">
-```c
+<pre><code class="language-c">
 	using System;
 	using System.IO;
 	using FusionCharts.FusionExport.Client; // Import sdk
@@ -284,10 +279,9 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	        }
 	    }
 	}
-```
-</div>
+</pre></code></div>
 <div class="tab php-tab">
-```php
+<pre><code class="language-php">
 	<?php
 
 	// D3 export
@@ -325,10 +319,9 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
-```
-</div>
+</pre></code></div>
 <div class="tab python-tab">
-```python
+<pre><code class="language-python">
 	#!/usr/bin/env python
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk
@@ -357,10 +350,9 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	em = ExportManager()
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-```
-</div>
+</pre></code></div>
 <div class="tab golang-tab">
-```javascript
+<pre><code class="language-javascript">
 	// D3 export
 
 	package main
@@ -415,7 +407,6 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	        panic(e)
 	    }
 	}
-```
-</div>
+</pre></code></div>
 </div>
 </div>
