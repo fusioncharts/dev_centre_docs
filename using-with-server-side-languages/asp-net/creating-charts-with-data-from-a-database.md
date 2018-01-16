@@ -31,52 +31,48 @@ The data structure that goes into the **../DBExample/MSCharts.aspx** file is giv
   <li><a data-toggle='xml'>VB</a></li>
 </ul>
 <div class='tab-content'>
-  <div class='tab json-tab active'>
-<pre><code class="language-aspx-cs">
-  <%@ Page Language="C#" AutoEventWireup="true" CodeFile="MSCharts.aspx.cs" Inherits="DBExample_MSCharts" %>
+<div class='tab json-tab active'>
+<pre><code class="language-cs">
+	&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;MSCharts.aspx.cs&quot; Inherits=&quot;DBExample_MSCharts&quot; %&gt;
 
-  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-  <html>
-      <head>
-          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-          <title>FusionCharts - Simple</title>
-          <!-- FusionCharts script tag -->
-          <script type="text/javascript" src="../fusioncharts/fusioncharts.js"></script>
-          <!-- End -->
-      </head>
-      <body>
-          <div style="text-align:center">
-              <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-          </div>
-      </body>
-  </html>
+	&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+	&lt;html&gt;
+	    &lt;head&gt;
+			&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+			&lt;title&gt;FusionCharts - Simple&lt;/title&gt;
+			&lt;!-- FusionCharts script tag --&gt;
+			&lt;script type=&quot;text/javascript&quot; src=&quot;../fusioncharts/fusioncharts.js&quot;&gt;&lt;/script&gt;
+			&lt;!-- End --&gt;
+		&lt;/head&gt;
+		&lt;body&gt;
+		  &lt;div style=&quot;text-align:center&quot;&gt;
+		      &lt;asp:Literal ID=&quot;Literal1&quot; runat=&quot;server&quot;&gt;&lt;/asp:Literal&gt;
+		  &lt;/div&gt;
+		&lt;/body&gt;
+	&lt;/html&gt;
+</code></pre>
+</div>
 
-  </code></pre>
-  </div>
+<div class='tab xml-tab'>
+<pre><code class="language-vb">
+	&lt;%@ Page Language=&quot;VB&quot; AutoEventWireup=&quot;false&quot; CodeFile=&quot;index.aspx.vb&quot; Inherits=&quot;Samples_DBExample_index&quot; %&gt;
 
-  <div class='tab xml-tab'>
-<pre><code class="language-aspx-vb">
-
-    <%@ Page Language="VB" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="Samples_DBExample_index" %>
-
-      <!DOCTYPE html>
-
-      <html xmlns="http://www.w3.org/1999/xhtml">
-      <head runat="server">
-          <title>FusionCharts with Database</title>
-          <script type="text/javascript" src="../../fusioncharts/fusioncharts.js"></script>
-          <!-- End --> 
-      </head>
-      <body>
-          Fusioncharts will render below
-          <div style="text-align:center">
-              <asp:Literal ID="Literal1" runat="server"></asp:Literal>           
-          </div>
-      </body>
-      </html>
-
-  </code></pre>
-  </div>
+	&lt;!DOCTYPE html&gt;
+	&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+	&lt;head runat=&quot;server&quot;&gt;
+		&lt;title&gt;FusionCharts with Database&lt;/title&gt;
+		&lt;script type=&quot;text/javascript&quot; src=&quot;../../fusioncharts/fusioncharts.js&quot;&gt;&lt;/script&gt;
+		&lt;!-- End --&gt; 
+	&lt;/head&gt;
+	&lt;body&gt;
+	  Fusioncharts will render below
+	  &lt;div style=&quot;text-align:center&quot;&gt;
+	      &lt;asp:Literal ID=&quot;Literal1&quot; runat=&quot;server&quot;&gt;&lt;/asp:Literal&gt;           
+	  &lt;/div&gt;
+	&lt;/body&gt;
+	&lt;/html&gt;
+</code></pre>
+</div>
 
 </div>
 </div>
@@ -90,7 +86,7 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-<pre><code class="language-aspx-cs">
+<pre><code class="language-cs">
   using System;
   using System.Collections;
   using System.Configuration;
@@ -121,10 +117,10 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
           // Initialize the chart-level attributes and append them to the
           //`xmlData` StringBuilder object.
 
-          xmlData.Append("<chart caption='Factory Output report' subCaption='By Quantity' showBorder='1' formatNumberScale='0' rotatelabels='1' showvalues='0'>");
+          xmlData.Append(&quot;&lt;chart caption='Factory Output report' subCaption='By Quantity' showBorder='1' formatNumberScale='0' rotatelabels='1' showvalues='0'&gt;&quot;);
 
-          // Initialize the `<categories>` element.
-          xmlData.AppendFormat("<categories>");
+          // Initialize the `&lt;categories&gt;` element.
+          xmlData.AppendFormat(&quot;&lt;categories&gt;&quot;);
 
           // Every date between January 01, 2003 and January 20, 2003 is entered thrice
           // in the **datepro** field in the **FactoryDB **database.
@@ -136,30 +132,30 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
 
           // Store the output of the `select` query in the `factoryQuery` string variable.
 
-          string factoryQuery = "select distinct format(datepro,'dd/mm/yyyy') as dd from factory_output";
+          string factoryQuery = &quot;select distinct format(datepro,'dd/mm/yyyy') as dd from factory_output&quot;;
 
           // Establish the database connection.
           DbConn oRs = new DbConn(factoryQuery);
 
           // Iterate through the data in the `factoryQuery` variable and add the dates as
 
-          // labels to the `<category>` element.
+          // labels to the `&lt;category&gt;` element.
 
           // Append this data to the `xmlData` object.
           while (oRs.ReadData.Read()) {
-              xmlData.AppendFormat("<category label='{0}'/>", oRs.ReadData["dd"].ToString());
+              xmlData.AppendFormat(&quot;&lt;category label='{0}'/&gt;&quot;, oRs.ReadData[&quot;dd&quot;].ToString());
           }
 
           //Close the database connection.
           oRs.ReadData.Close();
 
-          //Close the `<catgories>` element.
-          xmlData.AppendFormat("</categories>");
+          //Close the `&lt;catgories&gt;` element.
+          xmlData.AppendFormat(&quot;&lt;/categories&gt;&quot;);
 
           //Fetch all details for the three factories from the **Factory_Master** table
           // and store the result in the `factoryquery2` variable.
 
-          string factoryquery2 = "select * from factory_master";
+          string factoryquery2 = &quot;select * from factory_master&quot;;
 
           //Establish the database connection..
           DbConn oRs1 = new DbConn(factoryquery2);
@@ -169,14 +165,14 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
 
           while (oRs1.ReadData.Read()) {
               // Append the factory name as the value for the `seriesName` attribute.
-              xmlData.AppendFormat("<dataset seriesName='{0}'>", oRs1.ReadData["factoryname"].ToString());
+              xmlData.AppendFormat(&quot;&lt;dataset seriesName='{0}'&gt;&quot;, oRs1.ReadData[&quot;factoryname&quot;].ToString());
 
               // Based on the factory id, fetch the quantity produced by each factory on each day
               // from the factory_output table.
 
               // Store the results in the `factoryquery3` string object.
 
-              string factoryquery3 = "select quantity from factory_output where factoryid=" + oRs1.ReadData["factoryid"].ToString();
+              string factoryquery3 = &quot;select quantity from factory_output where factoryid=&quot; + oRs1.ReadData[&quot;factoryid&quot;].ToString();
 
               //Establish the database connection.
               DbConn oRs2 = new DbConn(factoryquery3);
@@ -184,40 +180,37 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
               // Iterate through the results in the `factoryquery3` object and fetch the quantity details
               // for each factory.
 
-              // Append the quantity details as the the value for the `<set>` element.
+              // Append the quantity details as the the value for the `&lt;set&gt;` element.
 
               while (oRs2.ReadData.Read()) {
-                  xmlData.AppendFormat("<set value='{0}'/>", oRs2.ReadData[0].ToString());
+                  xmlData.AppendFormat(&quot;&lt;set value='{0}'/&gt;&quot;, oRs2.ReadData[0].ToString());
               }
 
               // Close the database connection.
               oRs2.ReadData.Close();
 
-              // Close the `<dataset>` element.
-              xmlData.AppendFormat("</dataset>");
+              // Close the `&lt;dataset&gt;` element.
+              xmlData.AppendFormat(&quot;&lt;/dataset&gt;&quot;);
           }
 
           // Close the database connection.
           oRs1.ReadData.Close();
 
-          // Close the `<chart>` element.
-          xmlData.AppendFormat("</chart>");
+          // Close the `&lt;chart&gt;` element.
+          xmlData.AppendFormat(&quot;&lt;/chart&gt;&quot;);
 
           // Initialize the chart.
-          Chart factoryOutput = new Chart("msline", "myChart", "600", "350", "xml", xmlData.ToString());
+          Chart factoryOutput = new Chart(&quot;msline&quot;, &quot;myChart&quot;, &quot;600&quot;, &quot;350&quot;, &quot;xml&quot;, xmlData.ToString());
 
           // Render the chart.
           Literal1.Text = factoryOutput.Render();
       }
   }
+</code></pre>
+</div>
 
-
- </code></pre>
-  </div>
-
-  <div class='tab xml-tab'>
-<pre><code class="language-aspx-vb">
-    
+<div class='tab xml-tab'>
+<pre><code class="language-vb">
     Imports System.Collections
     Imports System.Configuration
     Imports System.Data
@@ -247,10 +240,10 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
         ' Initialize the chart-level attributes and append them to the
         '`xmlData` StringBuilder object.
 
-        xmlData.Append("<chart caption='Factory Output report' subCaption='By Quantity' showBorder='1' formatNumberScale='0' rotatelabels='1' showvalues='0'>")
+        xmlData.Append(&quot;&lt;chart caption='Factory Output report' subCaption='By Quantity' showBorder='1' formatNumberScale='0' rotatelabels='1' showvalues='0'&gt;&quot;)
 
-        ' Initialize the `<categories>` element.
-        xmlData.AppendFormat("<categories>")
+        ' Initialize the `&lt;categories&gt;` element.
+        xmlData.AppendFormat(&quot;&lt;categories&gt;&quot;)
 
         ' Every date between January 01, 2003 and January 20, 2003 is entered thrice
         ' in the **datepro** field in the **FactoryDB **database.
@@ -262,30 +255,30 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
 
         ' Store the output of the `select` query in the `factoryQuery` string variable.
 
-        Dim factoryQuery As String = "select distinct format(datepro,'dd/mm/yyyy') as dd from factory_output"
+        Dim factoryQuery As String = &quot;select distinct format(datepro,'dd/mm/yyyy') as dd from factory_output&quot;
 
         ' Establish the database connection.
         Dim oRs As New DbConn(factoryQuery)
 
         ' Iterate through the data in the `factoryQuery` variable and add the dates as
 
-        ' labels to the `<category>` element.
+        ' labels to the `&lt;category&gt;` element.
 
         ' Append this data to the `xmlData` object.
         While oRs.ReadData.Read()
-          xmlData.AppendFormat("<category label='{0}'/>", oRs.ReadData("dd").ToString())
+          xmlData.AppendFormat(&quot;&lt;category label='{0}'/&gt;&quot;, oRs.ReadData(&quot;dd&quot;).ToString())
         End While
 
         'Close the database connection.
         oRs.ReadData.Close()
 
-        'Close the `<catgories>` element.
-        xmlData.AppendFormat("</categories>")
+        'Close the `&lt;catgories&gt;` element.
+        xmlData.AppendFormat(&quot;&lt;/categories&gt;&quot;)
 
         'Fetch all details for the three factories from the **Factory_Master** table
         ' and store the result in the `factoryquery2` variable.
 
-        Dim factoryquery2 As String = "select * from factory_master"
+        Dim factoryquery2 As String = &quot;select * from factory_master&quot;
 
         'Establish the database connection..
         Dim oRs1 As New DbConn(factoryquery2)
@@ -295,14 +288,14 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
 
         While oRs1.ReadData.Read()
           ' Append the factory name as the value for the `seriesName` attribute.
-          xmlData.AppendFormat("<dataset seriesName='{0}'>", oRs1.ReadData("factoryname").ToString())
+          xmlData.AppendFormat(&quot;&lt;dataset seriesName='{0}'&gt;&quot;, oRs1.ReadData(&quot;factoryname&quot;).ToString())
 
           ' Based on the factory id, fetch the quantity produced by each factory on each day
           ' from the factory_output table.
 
           ' Store the results in the `factoryquery3` string object.
 
-          Dim factoryquery3 As String = "select quantity from factory_output where factoryid=" + oRs1.ReadData("factoryid").ToString()
+          Dim factoryquery3 As String = &quot;select quantity from factory_output where factoryid=&quot; + oRs1.ReadData(&quot;factoryid&quot;).ToString()
 
           'Establish the database connection.
           Dim oRs2 As New DbConn(factoryquery3)
@@ -310,35 +303,34 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
           ' Iterate through the results in the `factoryquery3` object and fetch the quantity details
           ' for each factory.
 
-          ' Append the quantity details as the the value for the `<set>` element.
+          ' Append the quantity details as the the value for the `&lt;set&gt;` element.
 
           While oRs2.ReadData.Read()
-            xmlData.AppendFormat("<set value='{0}'/>", oRs2.ReadData(0).ToString())
+            xmlData.AppendFormat(&quot;&lt;set value='{0}'/&gt;&quot;, oRs2.ReadData(0).ToString())
           End While
 
           ' Close the database connection.
           oRs2.ReadData.Close()
 
-          ' Close the `<dataset>` element.
-          xmlData.AppendFormat("</dataset>")
+          ' Close the `&lt;dataset&gt;` element.
+          xmlData.AppendFormat(&quot;&lt;/dataset&gt;&quot;)
         End While
 
         ' Close the database connection.
         oRs1.ReadData.Close()
 
-        ' Close the `<chart>` element.
-        xmlData.AppendFormat("</chart>")
+        ' Close the `&lt;chart&gt;` element.
+        xmlData.AppendFormat(&quot;&lt;/chart&gt;&quot;)
 
         ' Initialize the chart.
-        Dim factoryOutput As New Chart("msline", "myChart", "600", "350", "xml", xmlData.ToString())
+        Dim factoryOutput As New Chart(&quot;msline&quot;, &quot;myChart&quot;, &quot;600&quot;, &quot;350&quot;, &quot;xml&quot;, xmlData.ToString())
 
         ' Render the chart.
         Literal1.Text = factoryOutput.Render()
       End Sub
-    End Class
-
-  </code></pre>
-  </div>
+    End Class    
+</code></pre>
+</div>
 
 </div>
 </div>
