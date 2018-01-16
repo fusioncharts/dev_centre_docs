@@ -10,6 +10,7 @@ The FusionExport Language SDKs are tools for creating and managing the FusionExp
 
 ## Installation and basic usage guide for all the language SDKs
 
+<div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
     <li class="active"><a data-toggle="nodejs">Node.js</a></li>
     <li><a data-toggle="python">Python</a></li>
@@ -20,84 +21,89 @@ The FusionExport Language SDKs are tools for creating and managing the FusionExp
 </ul>
 
 <div class="tab-content extra-tabs">
-    <div class="tab nodejs-tab active">
+<div class="tab nodejs-tab active">
     	<div><strong>To install the Node.js module, simply use the npm command:</strong></div>
-```javascript
-        $ npm install fusionexport-node-client --save
-        ```
-        <div><strong>To require the SDK into your project:</strong></div>
-```javascript
+<pre><code class="language-javscript">
+    $ npm install fusionexport-node-client --save
+</code></pre>
+<div><strong>To require the SDK into your project:</strong></div>
+<pre><code class="language-javscript">
         const FusionExport = require('fusionexport-node-client');
-        ```
-    </div>
-    <div class="tab python-tab">
+</code></pre>
+</div>
+
+<div class="tab python-tab">
         <div><strong>To install the Python package, simply use the pip command:</strong></div>
-```javascript
+<pre><code class="language-python">
         $ pip install fusionexport
-        ```
+</code></pre>
         <div><strong>To import the SDK into your project:</strong></div>
-```javascript
+<pre><code class="language-python">
         from fusionexport import ExportManager, ExportConfig
-        ```
-    </div>
-    <div class="tab csharp-tab">
+</code></pre>
+</div>
+
+<div class="tab csharp-tab">
     	<div><strong>You can install the SDK using the NuGet package manager. To install, open the NuGet package manager console and run the following command:</strong></div>
-```javascript
+<pre><code class="language-cs">
         $ Install-Package FusionExport -Version 1.0.0-beta
-        ```
+</code></pre>
         <div><strong>To use the SDK into your project:</strong></div>
-```javascript
+<pre><code class="language-vb">
         using FusionCharts.FusionExport.Client; 
-        ```
-    </div>
-    <div class="tab java-tab">
+</code></pre>
+</div>
+
+<div class="tab java-tab">
     	<p><strong>Using Gradle</strong></p>
     	<div><strong>To use as part of a Gradle project, first add the maven central repository to your repositories list:</strong></div>
-```javascript
-		repositories {
-    mavenCentral()
-}
-        ```
-        <div><strong>Then, add this SDK as a dependency to your build.gradle file:</strong></div>
-```javascript
-		dependencies {
-    Compile "com.fusioncharts.fusionexport:fusionexport:1.0.0-beta"
-}
-        ```
-        <p><strong>Using Maven</strong></p>
-        <div><strong>To use the SDK with your maven project, add this dependency to your pom.xml file:
-</strong></div>
-```javascript
-        <dependency>
-  <groupId>com.fusioncharts.fusionexport</groupId>
-  <artifactId>fusionexport</artifactId>
-  <version>1.0.0-beta</version>
-</dependency>
-        ```
-        <div><strong>To import the SDK into your project:</strong></div>
-```javascript
+<pre><code class="language-java">
+	repositories {
+    	mavenCentral()
+	}
+</code></pre>
+<div><strong>Then, add this SDK as a dependency to your build.gradle file:</strong></div>
+<pre><code class="language-java">
+	dependencies {
+    	Compile "com.fusioncharts.fusionexport:fusionexport:1.0.0-beta"
+	}
+</code></pre>
+<p><strong>Using Maven</strong></p>
+<div><strong>To use the SDK with your maven project, add this dependency to your pom.xml file:</strong></div>
+<pre><code class="language-java">
+	&lt;dependency&gt;
+		&lt;groupId&gt;com.fusioncharts.fusionexport&lt;/groupId&gt;
+		&lt;artifactId&gt;fusionexport&lt;/artifactId&gt;
+		&lt;version&gt;1.0.0-beta&lt;/version&gt;
+	&lt;/dependency&gt;
+</code></pre>
+<div><strong>To import the SDK into your project:</strong></div>
+<pre><code class="language-java">
         import com.fusioncharts.fusionexport.client.*;
-        ```
-    </div>
-    <div class="tab golang-tab">
+</code></pre>
+</div>
+
+<div class="tab golang-tab">
     	<div><strong>To install the go package, simply use go get:</strong></div>
-```javascript
+<pre><code class="language-go">
         go get github.com/fusioncharts/fusionexport-go-client
-        ```
+</code></pre>
         <div><strong>To require this into your project:</strong></div>
-```javascript
+<pre><code class="language-go">
         import "github.com/fusioncharts/fusionexport-go-client"
-        ```
-    </div>
-    <div class="tab php-tab">
+</code></pre>
+</div>
+
+<div class="tab php-tab">
         <div><strong>To install this package, simply use composer:</strong></div>
-```javascript
+<pre><code class="language-php">
         composer require fusioncharts/fusionexport:1.0.0-beta
-        ```
+</code></pre>
         <div><strong>To use the SDK in your project:</strong></div>
-```javascript
+<pre><code class="language-php">
         use FusionExport\ExportManager;
-use FusionExport\ExportConfig;
-        ```
-    </div>
+		use FusionExport\ExportConfig;
+</code></pre>
+</div>
+</div>
 </div>

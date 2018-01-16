@@ -53,6 +53,7 @@ The data structure that goes into the **JSONURL.aspx** file is given below:
         &lt;/body&gt;
     &lt;/html&gt;
 </code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab xml-tab'>
@@ -75,6 +76,7 @@ The data structure that goes into the **JSONURL.aspx** file is given below:
 	&lt;/body&gt;
 	&lt;/html&gt;
 </code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 </div>
@@ -119,6 +121,7 @@ The data structure that goes into the **JSONURL.aspx.cs** file is given below:
 	  }
 	}
 </code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab xml-tab'>
@@ -151,8 +154,10 @@ The data structure that goes into the **JSONURL.aspx.cs** file is given below:
 
 	End Class
 </code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
+</div>
 </div>
 
 

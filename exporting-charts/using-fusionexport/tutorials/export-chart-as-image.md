@@ -9,6 +9,7 @@ chartPresent: False
 Let's start with a simple chart export. For exporting a single chart, save the chart configuration in a JSON file. The configuration should be inside an array.
 To export charts as images, you can use the CLI or SDKs of the languages mentioned below, using the command given below:
 
+<div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
     <li class="active"><a data-toggle="cli">CLI</a></li>
     <li><a data-toggle="nodejs">Node.js</a></li>
@@ -347,4 +348,5 @@ func check(e error) {
 }
         ```
     </div>
+</div>
 </div>
