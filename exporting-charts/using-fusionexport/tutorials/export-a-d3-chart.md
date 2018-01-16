@@ -8,6 +8,7 @@ chartPresent: False
 
 It is possible to export D3-based visualizations with FusionExport. To demonstrate, we will export this [chord diagram](https://bl.ocks.org/mbostock/1046712).
 
+<div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
     <li class="active"><a data-toggle="cli">CLI</a></li>
     <li><a data-toggle="nodejs">Node.js</a></li>
@@ -413,6 +414,7 @@ func check(e error) {
         panic(e)
     }
 }
-        ```
-    </div>
+```
+</div>
+</div>
 </div>
