@@ -51,6 +51,7 @@ The data structure that goes into the **../DBExample/MSCharts.aspx** file is giv
 		&lt;/body&gt;
 	&lt;/html&gt;
 </code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab xml-tab'>
@@ -72,6 +73,7 @@ The data structure that goes into the **../DBExample/MSCharts.aspx** file is giv
 	&lt;/body&gt;
 	&lt;/html&gt;
 </code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 </div>
@@ -207,6 +209,7 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
       }
   }
 </code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab xml-tab'>
@@ -330,6 +333,7 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
       End Sub
     End Class    
 </code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 </div>

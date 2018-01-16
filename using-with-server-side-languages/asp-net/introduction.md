@@ -28,138 +28,130 @@ Create two files named **JSONURL.aspx** and **JSONURL.aspx.cs**.
 
 The data structure that goes into the **JSONURL.aspx** file is given below:
 
+<div class="code-wrapper">
 <ul class='code-tabs'>
   <li class='active'><a data-toggle='json'>C#</a></li>
   <li><a data-toggle='xml'>VB</a></li>
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-```javascript
+<pre><code class="language-cs">
+	&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;JSONUrl.aspx.cs&quot; Inherits=&quot;BasicExample_BasicChart&quot; %&gt;
+    &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+            &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+            &lt;title&gt;FusionCharts - Simple&lt;/title&gt;
+            &lt;!-- FusionCharts script tag --&gt;
+            &lt;script type=&quot;text/javascript&quot; src=&quot;../fusioncharts/fusioncharts.js&quot;&gt;&lt;/script&gt;
+            &lt;!-- End --&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;div style=&quot;text-align:center&quot;&gt;
+                &lt;asp:Literal ID=&quot;Literal1&quot; runat=&quot;server&quot;&gt;&lt;/asp:Literal&gt;
+            &lt;/div&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+</div>
 
-        <%@ Page Language="C#" AutoEventWireup="true" CodeFile="JSONUrl.aspx.cs" Inherits="BasicExample_BasicChart" %>
-        <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-        <html>
-            <head>
-                <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-                <title>FusionCharts - Simple</title>
-                <!-- FusionCharts script tag -->
-                <script type="text/javascript" src="../fusioncharts/fusioncharts.js"></script>
-                <!-- End -->
-            </head>
-            <body>
-                <div style="text-align:center">
-                    <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-                </div>
-            </body>
-        </html>
+<div class='tab xml-tab'>
+<pre><code class="language-vb">
+	&lt;%@ Page Language=&quot;VB&quot; AutoEventWireup=&quot;false&quot; CodeFile=&quot;JSON_URL.aspx.vb&quot; Inherits=&quot;Samples_BasicExamples_JSON_URL&quot; %&gt;
 
-    ```
-  </div>
+	&lt;!DOCTYPE html&gt;
+	&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+	&lt;head runat=&quot;server&quot;&gt;
+	  &lt;title&gt;Basic FusionCharts population using JSON URL&lt;/title&gt;
+	  &lt;!-- FusionCharts script tag --&gt;
+	  &lt;script type=&quot;text/javascript&quot; src=&quot;../../fusioncharts/fusioncharts.js&quot;&gt;&lt;/script&gt;
+	  &lt;!-- End --&gt; 
+	&lt;/head&gt;
+	&lt;body&gt;
+	  Fusioncharts will render below
+	  &lt;div style=&quot;text-align:center&quot;&gt;
+	      &lt;asp:Literal ID=&quot;Literal1&quot; runat=&quot;server&quot;&gt;&lt;/asp:Literal&gt;           
+	  &lt;/div&gt;
+	&lt;/body&gt;
+	&lt;/html&gt;
+</code></pre>
+</div>
 
-  <div class='tab xml-tab'>
-```javascript
-
-      <%@ Page Language="VB" AutoEventWireup="false" CodeFile="JSON_URL.aspx.vb" Inherits="Samples_BasicExamples_JSON_URL" %>
-
-      <!DOCTYPE html>
-
-      <html xmlns="http://www.w3.org/1999/xhtml">
-      <head runat="server">
-          <title>Basic FusionCharts population using JSON URL</title>
-          <!-- FusionCharts script tag -->
-          <script type="text/javascript" src="../../fusioncharts/fusioncharts.js"></script>
-          <!-- End --> 
-      </head>
-      <body>
-          Fusioncharts will render below
-          <div style="text-align:center">
-              <asp:Literal ID="Literal1" runat="server"></asp:Literal>           
-          </div>
-      </body>
-      </html>
-
-
-    ```
-  </div>
-
+</div>
 </div>
 
 
 The data structure that goes into the **JSONURL.aspx.cs** file is given below:
 
+<div class="code-wrapper">
 <ul class='code-tabs'>
   <li class='active'><a data-toggle='json'>C#</a></li>
   <li><a data-toggle='xml'>VB</a></li>
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-```javascript
+<pre><code class="language-cs">
+	using System;
+	using System.Collections;
+	using System.Configuration;
+	using System.Data;
+	using System.Web;
+	using System.Web.Security;
+	using System.Web.UI;
+	using System.Web.UI.HtmlControls;
+	using System.Web.UI.WebControls;
+	using System.Web.UI.WebControls.WebParts;
+	// Use the `FusionCharts.Charts` namespace to be able to use classes and methods required to create charts.
+	using FusionCharts.Charts;
+	public partial class BasicExample_BasicChart: System.Web.UI.Page
+	{
+	  protected void Page_Load(object sender, EventArgs e)
+	  {
+	      // This page demonstrates the ease of generating charts using FusionCharts.
+	      // For this chart, we've used a pre-defined Data.json (contained in /Data/ folder)
+	      // Ideally, you would NOT use a physical data file. Instead you'll have
+	      // your own ASP.NET scripts virtually relay the JSON / XML data document.
+	      // For a head-start, we've kept this example very simple.
+	      //Initialize the chart.
+	      Chart sales = new Chart(&quot;column3d&quot;, &quot;myChart&quot;, &quot;600&quot;, &quot;350&quot;, &quot;jsonurl&quot;, &quot;../Data/Data.json&quot;);
+	      // Render the chart
+	      Literal1.Text = sales.Render();
+	  }
+	}
+</code></pre>
+</div>
 
-      using System;
-      using System.Collections;
-      using System.Configuration;
-      using System.Data;
-      using System.Web;
-      using System.Web.Security;
-      using System.Web.UI;
-      using System.Web.UI.HtmlControls;
-      using System.Web.UI.WebControls;
-      using System.Web.UI.WebControls.WebParts;
-      // Use the `FusionCharts.Charts` namespace to be able to use classes and methods required to create charts.
-      using FusionCharts.Charts;
-      public partial class BasicExample_BasicChart: System.Web.UI.Page
-      {
-          protected void Page_Load(object sender, EventArgs e)
-          {
-              // This page demonstrates the ease of generating charts using FusionCharts.
-              // For this chart, we've used a pre-defined Data.json (contained in /Data/ folder)
-              // Ideally, you would NOT use a physical data file. Instead you'll have
-              // your own ASP.NET scripts virtually relay the JSON / XML data document.
-              // For a head-start, we've kept this example very simple.
-              //Initialize the chart.
-              Chart sales = new Chart("column3d", "myChart", "600", "350", "jsonurl", "../Data/Data.json");
-              // Render the chart
-              Literal1.Text = sales.Render();
-          }
-      }
+<div class='tab xml-tab'>
+<pre><code class="language-vb">
+	Imports System.Collections
+	Imports System.Configuration
+	Imports System.Data
+	Imports System.Web
+	Imports System.Web.Security
+	Imports System.Web.UI
+	Imports System.Web.UI.HtmlControls
+	Imports System.Web.UI.WebControls
+	Imports System.Web.UI.WebControls.WebParts
+	' Use FusionCharts.Charts name space
+	Imports FusionCharts.Charts
+	Partial Class Samples_BasicExamples_JSON_URL
+	  Inherits System.Web.UI.Page
+	  Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+	      ' This page demonstrates the ease of generating charts using FusionCharts.
+	      ' For this chart, we've used a pre-defined Data.json (contained in /Data/ folder)
+	      ' Ideally, you would NOT use a physical data file. Instead you'll have 
+	      ' your own ASP.NET scripts virtually relay the JSON / XML data document.
+	      ' For a head-start, we've kept this example very simple.
 
+	      ' Initialize chart - Column 3D Chart with data from Data/Data.json
+	      Dim sales As New Chart(&quot;column3d&quot;, &quot;myChart&quot;, &quot;600&quot;, &quot;350&quot;, &quot;jsonurl&quot;, &quot;../../Data/Data.json&quot;)
+	      ' Render the chart
+	      Literal1.Text = sales.Render()
+	  End Sub
 
-    ```
-  </div>
-
-  <div class='tab xml-tab'>
-```javascript
-
-      Imports System.Collections
-      Imports System.Configuration
-      Imports System.Data
-      Imports System.Web
-      Imports System.Web.Security
-      Imports System.Web.UI
-      Imports System.Web.UI.HtmlControls
-      Imports System.Web.UI.WebControls
-      Imports System.Web.UI.WebControls.WebParts
-      ' Use FusionCharts.Charts name space
-      Imports FusionCharts.Charts
-      Partial Class Samples_BasicExamples_JSON_URL
-          Inherits System.Web.UI.Page
-          Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-              ' This page demonstrates the ease of generating charts using FusionCharts.
-              ' For this chart, we've used a pre-defined Data.json (contained in /Data/ folder)
-              ' Ideally, you would NOT use a physical data file. Instead you'll have 
-              ' your own ASP.NET scripts virtually relay the JSON / XML data document.
-              ' For a head-start, we've kept this example very simple.
-
-              ' Initialize chart - Column 3D Chart with data from Data/Data.json
-              Dim sales As New Chart("column3d", "myChart", "600", "350", "jsonurl", "../../Data/Data.json")
-              ' Render the chart
-              Literal1.Text = sales.Render()
-          End Sub
-
-      End Class
-
-    ```
-  </div>
+	End Class
+</code></pre>
+</div>
 
 </div>
 
