@@ -42,7 +42,6 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	$ fe -c multiple_charts_config.json -T template.html -G "path/to/logo.png" -D "FusionExport Dashboard" -B "Powered by FusionExport"
 </pre></code>
 </div>
-    
 <div class="tab nodejs-tab">
 <pre><code class="language-javascript">
 	const fs = require('fs');
