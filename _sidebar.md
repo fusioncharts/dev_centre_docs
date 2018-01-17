@@ -511,7 +511,7 @@
 <li><a href="/exporting-charts/using-fusionexport/tutorials/export-a-dashboard">Export a dashboard</a></li>
 <li><a href="/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard">Add a logo or a heading to the dashboard</a></li>
 <li><a href="/exporting-charts/using-fusionexport/tutorials/convert-an-svg-image-to-png-jpeg-pdf">Convert an SVG image to PNG/JPEG/PDF</a></li>
-<li><a href="/exporting-charts/using-fusionexport/tutorials/using-fusionexport/use-the-licensed-fusioncharts-library-for-export">Use the licensed FusionCharts library for export</a></li>
+<li><a href="/exporting-charts/using-fusionexport/tutorials/use-the-licensed-fusioncharts-library-for-export">Use the licensed FusionCharts library for export</a></li>
 <li><a href="/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting">Inject extra JavaScript while exporting</a></li>
 <li><a href="/exporting-charts/using-fusionexport/tutorials/export-remotely">Export remotely</a></li>
 <li><a href="/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename">Manipulate the output filename</a></li>

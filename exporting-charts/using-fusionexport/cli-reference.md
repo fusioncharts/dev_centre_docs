@@ -672,12 +672,3 @@ To do this, enable the `--remote-export-enabled` option and pass this option as 
 ```javascript
 $ fe -c column_chart_config.json -R true -u http://localhost:3000/api/v1.0/export
 ```
-
-
-<div class='bookmark-container'>
-    <input class="search-query bookmark-search" placeholder="Search {{ page.title }}" type="text" autocomplete='off'>
-    <i class="fa fa-search search-icon"></i>
-    <ul class='api-bookmarks' tabindex = '1'>
-        <li class='no-match'></li>
-    </ul>
-</div>

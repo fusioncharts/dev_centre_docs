@@ -19,16 +19,15 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
         <li><a data-toggle="golang">Golang</a></li>
     </ul>
 
-    <div class="tab-content extra-tabs">
-        <div class="tab cli-tab active">
-        <div>If you want to export the files as a zip, set the <strong>--output-as-zip</strong> option to true as shown in the command below:</div>
-    <pre><code class=“language-javscript”> 
-            $ fe -c multiple_charts_config.json -z false
-            </code></pre>
-        </div>
-        
-        <div class="tab nodejs-tab">
-    <pre><code class=“language-javscript”> 
+<div class="tab-content extra-tabs">
+<div class="tab cli-tab active">
+<div>If you want to export the files as a zip, set the <strong>--output-as-zip</strong> option to true as shown in the command below:</div>
+<pre><code class=“language-bash> 
+	$ fe -c multiple_charts_config.json -z false
+</code></pre>
+</div>
+<div class="tab nodejs-tab">
+<pre><code class=“language-javscript”> 
     const fs = require('fs');
     const path = require('path');
 
@@ -116,11 +115,10 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
             return fileContent;
         }
     }
-
-            </code></pre>
-        </div>
-        <div class="tab csharp-tab">
-    <pre><code class=“language-c> 
+</code></pre>
+</div>
+<div class="tab csharp-tab">
+<pre><code class=“language-c> 
     using System;
     using System.IO;
     using FusionCharts.FusionExport.Client; // Import sdk
@@ -300,8 +298,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
             panic(e)
         }
     }
-
-            </code></pre>
-        </div>
-    </div>
+</code></pre>
+</div>
+</div>
 </div>
