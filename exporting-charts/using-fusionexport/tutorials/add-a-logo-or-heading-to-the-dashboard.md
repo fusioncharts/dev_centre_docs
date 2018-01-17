@@ -30,13 +30,12 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 <div class="tab cli-tab active">
 <p>To add a logos, headings, and subheadings to the exported dashboard image, use the commands listed below: </p>
 <div>
-	<ul>
-		<li>To add a logo: <strong>--dashboard-logo</strong> or <strong>-G</strong></li>
-		<li>To add a heading: <strong>--dashboard-heading</strong> or <strong>-D</strong></li>
-		<li>To add a subheading: <strong>--dashboard-subheading</strong> or <strong>-B</strong></li>
-	</ul>
+<ul>
+<li>To add a logo: <strong>--dashboard-logo</strong> or <strong>-G</strong></li>
+<li>To add a heading: <strong>--dashboard-heading</strong> or <strong>-D</strong></li>
+<li>To add a subheading: <strong>--dashboard-subheading</strong> or <strong>-B</strong></li>
+</ul>
 </div>
-
 <p><strong>A sample command is shown below:</strong></p>
 <pre><code class="language-bash">
 	$ fe -c multiple_charts_config.json -T template.html -G "path/to/logo.png" -D "FusionExport Dashboard" -B "Powered by FusionExport"

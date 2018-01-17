@@ -144,11 +144,8 @@ To export a dashboard, you can use the CLI or SDKs of the languages mentioned be
 <pre><code class="language-bash">
 	$ fe -c multiple_charts_config.json -T template.html
 </pre></code>
-
 <div class="mt-20 pb-10">The <strong>--resources</strong> option is not mandatory; it is needed only when --remote-export-enabled is set to true. Most resources that are mentioned in the template, using the &lt;link&gt;, &lt;script&gt; or &lt;img&gt; tags, are found intelligently. If any additional fonts or links are present in the CSS or any dynamic links are included in the JavaScript file, you can specify them using the <strong>--resources</strong> option.</div>
-        
 <div class="mt-20 pb-10"><strong>The format of the --resources option is as shown below:</strong></div>
-
 <pre><code class="language-json">
 	{
 	    "images": [
