@@ -169,10 +169,8 @@ To export a dashboard, you can use the CLI or SDKs of the languages mentioned be
 	    ]
 	}
 </pre></code>
-
 </div>
 <div class="tab nodejs-tab">
-
 <pre><code class="language-javascript">
 	const fs = require('fs');
 	const path = require('path');
