@@ -30,7 +30,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 <div>Use the --input-file or -i options to convert the image into the required format using FusionExport, as shown below:</div>
 <pre><code class="language-bash">
 	$ fe -i chart.svg -t pdf
-</pre></code>
+</code></pre>
 </div>
     
 <div class="tab nodejs-tab">
@@ -67,7 +67,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 	fusion.on('error', (err) => {
 	  // catch error here
 	});
-</pre></code>
+</code></pre>
 </div>
 <div class="tab java-tab">
 <pre><code class="language-java">
@@ -106,7 +106,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 	    }
 	}
 
-</pre></code>
+</code></pre>
 </div>
 <div class="tab csharp-tab">
 <pre><code class="language-cs">
@@ -149,7 +149,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 	        }
 	    }
 	}
-</pre></code>
+</code></pre>
 </div>
 <div class="tab php-tab">
 <pre><code class="language-php">
@@ -188,7 +188,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
-</pre></code>
+</code></pre>
 </div>
 <div class="tab python-tab">
 <pre><code class="language-python">
@@ -218,7 +218,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 	em = ExportManager()
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</pre></code>
+</code></pre>
 </div>
 <div class="tab golang-tab">
 <pre><code class="language-javascript">
@@ -273,7 +273,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 	        panic(e)
 	    }
 	}
-</pre></code>
+</code></pre>
 </div>
 </div>
 </div>

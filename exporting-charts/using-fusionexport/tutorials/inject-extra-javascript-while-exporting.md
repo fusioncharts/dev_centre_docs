@@ -26,12 +26,12 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 <div class="mt-20 pb-10"><strong>The content of the custom.js file is as below:</strong></div>
 <pre><code class="language-javascript">
 	document.body.style.transform = "rotate(-10deg)";
-</pre></code>
+</code></pre>
 
 <div class="mt-20 pb-10"><strong>Once done, run the following command:</strong></div>
 <pre><code class="language-bash">
 	$ fe -c chart.json -b custom.js
-</pre></code>
+</code></pre>
 </div>
     
 <div class="tab nodejs-tab">
@@ -71,7 +71,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	  // catch error here
 	});
 
-</pre></code>
+</code></pre>
 </div>
 <div class="tab java-tab">
 <pre><code class="language-java">
@@ -126,7 +126,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	    }
 	}
 
-</pre></code>
+</code></pre>
 </div>
 <div class="tab csharp-tab">
 <pre><code class="language-cs">
@@ -172,7 +172,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	    }
 	}
 
-</pre></code>
+</code></pre>
 </div>
 <div class="tab php-tab">
 <pre><code class="language-php">
@@ -214,7 +214,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
 
-</pre></code>
+</code></pre>
 </div>
 <div class="tab python-tab">
 <pre><code class="language-python">
@@ -254,7 +254,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	em = ExportManager()
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</pre></code>
+</code></pre>
 </div>
 <div class="tab golang-tab">
 <pre><code class="language-javascript">
@@ -318,7 +318,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	    }
 	}
 
-</pre></code>
+</code></pre>
 </div>
 </div>
 </div>

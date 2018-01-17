@@ -11,7 +11,7 @@ You need to call the following method to invoke the export:
 
 <pre><code class="language-javascript">
 FusionExport.emit('CAPTURE_EXIT');
-</pre></code>
+</code></pre>
 
 By default, __FusionExport waits for 6 seconds for the event to trigger/occur__. You can opt to increase the wait time up to 60 seconds. To do so, set the `--maxWaitForCaptureExit` option in milliseconds.
 To use asynchronous capture, you can use the CLI or SDKs of the languages mentioned below, using the commands given below:
@@ -45,7 +45,7 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 	        // rest of the config
 	    }
 	};
-</pre></code>
+</code></pre>
 <div class="mt-20 pb-10">The intention here is to take a snap of the whole chart. By default, the chart’s width is `550px`. We will increase the width and then ask FusionExport to start processing.</div>
 <div class="mt-20 pb-10"><strong>Following is the content of the callback.js file:</strong></div>
 <pre><code class="language-javascript">
@@ -53,12 +53,12 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 	    evt.sender.resizeTo('3000', '400');
 	    FusionExport.emit('CAPTURE_EXIT');
 });
-</pre></code>
+</code></pre>
 
         <div class="mt-20 pb-10"><strong>Run the following command:</strong></div>
 <pre><code class="language-javascript">
 	$ fe -c scrollchart.js -b callback.js -async-capture true
-</pre></code>
+</code></pre>
 
 <div>By default, the maximum time that FusionExport waits for the <code>`CAPTURE_EXIT`</code> event is 6 seconds. It can be increased up to 60 seconds using `--async-capture-timeout` option.</div>
 <div class="mt-20 pb-10"><strong>Here is an example export_config.json file.</strong></div>
@@ -71,7 +71,7 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 	  "output-file": "fc-<%= number(1, 10) %>",
 	  "type": "jpeg"
 	}       
-</pre></code>
+</code></pre>
 
 The `--async-capture-timeout` option takes input as milliseconds. 
 </div>
@@ -113,7 +113,7 @@ The `--async-capture-timeout` option takes input as milliseconds.
 	  // catch error here
 	});
 
-</pre></code>
+</code></pre>
 </div>
 <div class="tab java-tab">
 <pre><code class="language-java">
@@ -168,7 +168,7 @@ The `--async-capture-timeout` option takes input as milliseconds.
 	    }
 	}
 
-</pre></code>
+</code></pre>
 </div>
 <div class="tab csharp-tab">
 <pre><code class="language-c">
@@ -213,7 +213,7 @@ The `--async-capture-timeout` option takes input as milliseconds.
 	        }
 	    }
 	}
-</pre></code>
+</code></pre>
 </div>
 <div class="tab php-tab">
 <pre><code class="language-php">
@@ -254,7 +254,7 @@ The `--async-capture-timeout` option takes input as milliseconds.
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
-</pre></code>
+</code></pre>
 </div>
 <div class="tab python-tab">
 <pre><code class="language-python">
@@ -294,7 +294,7 @@ The `--async-capture-timeout` option takes input as milliseconds.
 	em = ExportManager()
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</pre></code>
+</code></pre>
 </div>
 <div class="tab golang-tab">
 <pre><code class="language-javascript">
@@ -355,7 +355,7 @@ The `--async-capture-timeout` option takes input as milliseconds.
 	        panic(e)
 	    }
 	}
-</pre></code>
+</code></pre>
 </div>
 </div>
 </div>

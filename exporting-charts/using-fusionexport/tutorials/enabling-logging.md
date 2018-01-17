@@ -23,7 +23,7 @@ Refer to the example below:
     <div class="tab cli-tab active">
 <pre><code class="language-bash">
 	$ fe -c multiple_charts_config.json -d uat/ -f test.log -l 5
-</pre></code>
+</code></pre>
 </div>
 </div>
 </div>

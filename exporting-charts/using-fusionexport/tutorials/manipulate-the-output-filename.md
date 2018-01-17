@@ -22,7 +22,7 @@ Output filenames can be dynamically generated using the  `--output-file-definiti
 			return `${caption}__${index}`;
 		}
 	};
-</pre></code>
+</code></pre>
 </div>
 </div>
 </div>
@@ -46,7 +46,7 @@ The `captionIndexStr` function  receives three parameters from the FusionExport 
 			'17-11-2017_fc_4'
 		]
 	};
-</pre></code>
+</code></pre>
 </div>
 </div>
 </div>
@@ -77,7 +77,7 @@ To create the final output filename, the `--output-file` option should be used. 
 
 	path/to/export--<%= dates %>
 	output filename: path/to/export--17-11-2017_fc_1.png
-</pre></code>
+</code></pre>
 </div>
 </div>
 </div>

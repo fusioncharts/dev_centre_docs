@@ -39,7 +39,7 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 <p><strong>A sample command is shown below:</strong></p>
 <pre><code class="language-bash">
 	$ fe -c multiple_charts_config.json -T template.html -G "path/to/logo.png" -D "FusionExport Dashboard" -B "Powered by FusionExport"
-</pre></code>
+</code></pre>
 </div>
 <div class="tab nodejs-tab">
 <pre><code class="language-javascript">
@@ -80,7 +80,7 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	fusion.on('error', (err) => {
 	  // catch error here
 	});
-</pre></code>
+</code></pre>
 </div>
 <div class="tab java-tab">
 <pre><code class="language-java">
@@ -136,7 +136,7 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	        return fileContent;
 	    }
 	}
-</pre></code>
+</code></pre>
 </div>
 <div class="tab csharp-tab">
 <pre><code class="language-cs">
@@ -183,7 +183,7 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	        }
 	    }
 	}
-</pre></code>
+</code></pre>
 </div>
 <div class="tab php-tab">
 <pre><code class="language-php">
@@ -226,7 +226,7 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
-</pre></code>
+</code></pre>
 </div>
 <div class="tab python-tab">
 <pre><code class="language-python">
@@ -268,7 +268,7 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	em = ExportManager()
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</pre></code>
+</code></pre>
 </div>
 <div class="tab golang-tab">
 <pre><code class="language-go">
@@ -334,7 +334,7 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	        panic(e)
 	    }
 	}
-</pre></code>
+</code></pre>
 </div>
 </div>
 </div>

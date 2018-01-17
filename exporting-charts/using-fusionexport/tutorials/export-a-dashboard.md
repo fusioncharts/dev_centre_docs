@@ -37,7 +37,7 @@ To export a dashboard, you can use the CLI or SDKs of the languages mentioned be
 	    <div id="column_chart"></div>
 	  </body>
 	</html>
-</pre></code>
+</code></pre>
 <div class="mt-30 pb-10"><strong>The multiple_charts_config.json contains the configurations of the charts to be exported. The following code goes into the multiple_charts_config.json file: </strong></div>
 <pre><code class="language-json">
 	[
@@ -136,14 +136,14 @@ To export a dashboard, you can use the CLI or SDKs of the languages mentioned be
 	      }
 	   }
 	]
-</pre></code>
+</code></pre>
 <div class="mt-30 pb-10">Special attention needs to be given to the <strong>renderAt</strong> attribute. As you can see, our template contains two elements with the IDs <strong>#pie_chart</strong> and <strong>#column_chart</strong>.
 </div>
 <div class="mt-10 pb-10">In the configuration file, you need to include the same <strong>renderAt</strong> attribute so that when you finally export the charts, FusionExport will replace those divs with the actual charts.</div>
 <div class="mt-20 pb-10"><strong>To create the template, run the following command:</strong></div>
 <pre><code class="language-bash">
 	$ fe -c multiple_charts_config.json -T template.html
-</pre></code>
+</code></pre>
 <div class="mt-20 pb-10">The <strong>--resources</strong> option is not mandatory; it is needed only when --remote-export-enabled is set to true. Most resources that are mentioned in the template, using the &lt;link&gt;, &lt;script&gt; or &lt;img&gt; tags, are found intelligently. If any additional fonts or links are present in the CSS or any dynamic links are included in the JavaScript file, you can specify them using the <strong>--resources</strong> option.</div>
 <div class="mt-20 pb-10"><strong>The format of the --resources option is as shown below:</strong></div>
 <pre><code class="language-json">
@@ -165,7 +165,7 @@ To export a dashboard, you can use the CLI or SDKs of the languages mentioned be
 	        ""
 	    ]
 	}
-</pre></code>
+</code></pre>
 </div>
 <div class="tab nodejs-tab">
 <pre><code class="language-javascript">
@@ -203,7 +203,7 @@ To export a dashboard, you can use the CLI or SDKs of the languages mentioned be
 	fusion.on('error', (err) => {
 	  // catch error here
 	});
-</pre></code>
+</code></pre>
 </div>
 <div class="tab java-tab">
 <pre><code class="language-java">
@@ -256,7 +256,7 @@ To export a dashboard, you can use the CLI or SDKs of the languages mentioned be
 	        return fileContent;
 	    }
 	}
-</pre></code>
+</code></pre>
 </div>
 <div class="tab csharp-tab">
 <pre><code class="language-cs">
@@ -300,7 +300,7 @@ To export a dashboard, you can use the CLI or SDKs of the languages mentioned be
 	        }
 	    }
 	}
-</pre></code>
+</code></pre>
 </div>
 <div class="tab php-tab">
 <pre><code class="language-php">
@@ -339,7 +339,7 @@ To export a dashboard, you can use the CLI or SDKs of the languages mentioned be
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
-</pre></code>
+</code></pre>
 </div>
 <div class="tab python-tab">
 <pre><code class="language-python">
@@ -377,7 +377,7 @@ To export a dashboard, you can use the CLI or SDKs of the languages mentioned be
 	em = ExportManager()
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</pre></code>
+</code></pre>
 </div>
 <div class="tab golang-tab">
 <pre><code class="language-go">
@@ -436,7 +436,7 @@ To export a dashboard, you can use the CLI or SDKs of the languages mentioned be
 	        panic(e)
 	    }
 	}
-</pre></code>
+</code></pre>
 </div>
 </div>
 </div>

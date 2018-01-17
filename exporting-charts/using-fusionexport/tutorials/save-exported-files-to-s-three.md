@@ -31,7 +31,7 @@ Now, edit the content of the file `s3.json`.
 		"accessKey": "",
 		"secretAccessKey": ""
 	}
-</pre></code>
+</code></pre>
 </div>
 </div>
 </div>
@@ -52,7 +52,7 @@ Add the prefix `s3:` for `--output-file` option.
 		"chart-config": "fusioncharts_chart.js",
 		"output-file": "s3:fc-chart-<%= number(1) %>"
 	}
-</pre></code>
+</code></pre>
 </div>
 </div>
 </div>

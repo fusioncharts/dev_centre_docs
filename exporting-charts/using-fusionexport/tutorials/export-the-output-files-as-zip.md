@@ -25,7 +25,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
     <div>If you want to export the files as a zip, set the <strong>--output-as-zip</strong> option to true as shown in the command below:</div>
 <pre><code class="language-bash">
 	$ fe -c multiple_charts_config.json -z false
-</pre></code>
+</code></pre>
 </div>
     
 <div class="tab nodejs-tab">
@@ -63,7 +63,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	fusion.on('error', (err) => {
 	  // catch error here
 	});
-</pre></code>
+</code></pre>
 </div>
 <div class="tab java-tab">
 <pre><code class="language-java">
@@ -116,7 +116,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	        return fileContent;
 	    }
 	}
-</pre></code>
+</code></pre>
 </div>
 <div class="tab csharp-tab">
 <pre><code class="language-cs">
@@ -160,7 +160,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	        }
 	    }
 	}
-</pre></code>
+</code></pre>
 </div>
 <div class="tab php-tab">
 <pre><code class="language-php">
@@ -201,7 +201,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
-</pre></code>
+</code></pre>
 </div>
 <div class="tab python-tab">
 <pre><code class="language-python">
@@ -240,7 +240,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	em = ExportManager()
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</pre></code>
+</code></pre>
 </div>
 <div class="tab golang-tab">
 <pre><code class="language-go">
@@ -296,7 +296,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	        panic(e)
 	    }
 	}
-</pre></code>
+</code></pre>
 </div>
 </div>
 </div>

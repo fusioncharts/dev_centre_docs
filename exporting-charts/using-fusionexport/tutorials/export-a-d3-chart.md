@@ -148,7 +148,7 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	    d3.select(self.frameElement).style("height", outerRadius * 2 + "px");
 	  </script>
 	</body>
-</pre></code><div class="mt-20 pb-10">Pay special attention to <strong>FusionExport.emit('<code>CAPTURE_EXIT</code>')</strong>. You need to emit the <code>CAPTURE_EXIT</code> event when the render is complete.</div>
+</code></pre><div class="mt-20 pb-10">Pay special attention to <strong>FusionExport.emit('<code>CAPTURE_EXIT</code>')</strong>. You need to emit the <code>CAPTURE_EXIT</code> event when the render is complete.</div>
 <div class="mt-20 pb-10"><strong>The fusioncharts_config.json looks like as follows:</strong></div>
 
 <pre><code class="language-javascript">
@@ -158,11 +158,11 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	  "type": "pdf",
 	  "async-capture": true
 	}
-</pre></code>
+</code></pre>
 <div class="mt-20 pb-10"><strong>Once done, run the following command:</strong></div>
 <pre><code class="language-javascript">
 	$ fe -e fusioncharts_config.json
-</pre></code></div>
+</code></pre></div>
     
 <div class="tab nodejs-tab">
 
@@ -200,7 +200,7 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	fusion.on('error', (err) => {
 	  console.error(err)
 	})
-</pre></code></div>
+</code></pre></div>
 <div class="tab java-tab">
 <pre><code class="language-java">
 	import com.fusioncharts.fusionexport.client.*; // import sdk
@@ -235,7 +235,7 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	        System.out.println("STATE: " + state);
 	    }
 	}
-</pre></code></div>
+</code></pre></div>
 <div class="tab csharp-tab">
 <pre><code class="language-c">
 	using System;
@@ -279,7 +279,7 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	        }
 	    }
 	}
-</pre></code></div>
+</code></pre></div>
 <div class="tab php-tab">
 <pre><code class="language-php">
 	<?php
@@ -319,7 +319,7 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
-</pre></code></div>
+</code></pre></div>
 <div class="tab python-tab">
 <pre><code class="language-python">
 	#!/usr/bin/env python
@@ -350,7 +350,7 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	em = ExportManager()
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</pre></code></div>
+</code></pre></div>
 <div class="tab golang-tab">
 <pre><code class="language-javascript">
 	// D3 export
@@ -407,6 +407,6 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	        panic(e)
 	    }
 	}
-</pre></code></div>
+</code></pre></div>
 </div>
 </div>
