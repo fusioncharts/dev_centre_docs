@@ -23,13 +23,13 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 <div class="tab-content extra-tabs">
     <div class="tab cli-tab active">
     <div>If you want to export the files as a zip, set the <strong>--output-as-zip</strong> option to true as shown in the command below:</div>
-```bash
+<pre><code class="language-bash">
 	$ fe -c multiple_charts_config.json -z false
-```
+</pre></code>
 </div>
     
 <div class="tab nodejs-tab">
-```javascript
+<pre><code class="language-javascript">
 	const fs = require('fs');
 	const path = require('path');
 
@@ -63,10 +63,10 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	fusion.on('error', (err) => {
 	  // catch error here
 	});
-```
+</pre></code>
 </div>
 <div class="tab java-tab">
-```java
+<pre><code class="language-java">
 	import java.io.ByteArrayOutputStream;
 	import java.io.File;
 	import java.io.FileInputStream;
@@ -116,10 +116,10 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	        return fileContent;
 	    }
 	}
-```
+</pre></code>
 </div>
 <div class="tab csharp-tab">
-```cs
+<pre><code class="language-cs">
 	using System;
 	using System.IO;
 	using FusionCharts.FusionExport.Client; // Import sdk
@@ -160,10 +160,10 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	        }
 	    }
 	}
-```
+</pre></code>
 </div>
 <div class="tab php-tab">
-```php
+<pre><code class="language-php">
 	<?php
 
 	// Exporting the Output Files as Zip
@@ -201,10 +201,10 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
-```
+</pre></code>
 </div>
 <div class="tab python-tab">
-```python
+<pre><code class="language-python">
 	#!/usr/bin/env python
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk
@@ -240,10 +240,10 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	em = ExportManager()
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-```
+</pre></code>
 </div>
 <div class="tab golang-tab">
-```go
+<pre><code class="language-go">
 	// Exporting the Output Files as Zip
 
 	package main
@@ -296,7 +296,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	        panic(e)
 	    }
 	}
-```
+</pre></code>
 </div>
 </div>
 </div>
