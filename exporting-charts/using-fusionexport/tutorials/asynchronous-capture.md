@@ -28,10 +28,10 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 </ul>
 
 <div class="tab-content extra-tabs">
-    <div class="tab cli-tab active">
-    	<div class="mt-20 pb-10">Exporting can be invoked from the injected JavaScript (using the<code>--callbacks</code> option). If <code>--async-capture</code> option is enabled, the injected script must emit CAPTURE_EXIT event.</div>
-    	
-    	<div class="mt-20 pb-10"><strong>An example of a scrollCombidy2d chart is shown below:</strong></div>
+<div class="tab cli-tab active">
+<div class="mt-20 pb-10">Exporting can be invoked from the injected JavaScript (using the `--callbacks` option). If `--async-capture<` option is enabled, the injected script must emit CAPTURE_EXIT event.</div>
+
+<div class="mt-20 pb-10"><strong>An example of a scrollCombidy2d chart is shown below:</strong></div>
 <pre><code class="language-javascript">
 	// scrollchart.js
 	module.exports = {
@@ -56,20 +56,20 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 </code></pre>
 
         <div class="mt-20 pb-10"><strong>Run the following command:</strong></div>
-<pre><code class="language-javascript">
+<pre><code class="language-bash">
 	$ fe -c scrollchart.js -b callback.js -async-capture true
 </code></pre>
 
 <div>By default, the maximum time that FusionExport waits for the <code>`CAPTURE_EXIT`</code> event is 6 seconds. It can be increased up to 60 seconds using `--async-capture-timeout` option.</div>
 <div class="mt-20 pb-10"><strong>Here is an example export_config.json file.</strong></div>
-<pre><code class="language-javascript">
+<pre><code class="language-json">
 	{
-	  "chart-config": "scrollchart.js",
-	  "callbacks": "callback.js",
-	  "async-capture": "true",
-	  "async-capture-timeout": "4000",
-	  "output-file": "fc-<%= number(1, 10) %>",
-	  "type": "jpeg"
+		"chart-config": "scrollchart.js",
+		"callbacks": "callback.js",
+		"async-capture": "true",
+		"async-capture-timeout": "4000",
+		"output-file": "fc-<%= number(1, 10) %>",
+		"type": "jpeg"
 	}       
 </code></pre>
 
