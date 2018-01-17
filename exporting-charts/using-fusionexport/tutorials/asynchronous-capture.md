@@ -29,7 +29,7 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 
 <div class="tab-content extra-tabs">
 <div class="tab cli-tab active">
-<div class="mt-20 pb-10">Exporting can be invoked from the injected JavaScript (using the `--callbacks` option). If `--async-capture<` option is enabled, the injected script must emit CAPTURE_EXIT event.</div>
+<div class="mt-20 pb-10">Exporting can be invoked from the injected JavaScript (using the `--callbacks` option). If `--async-capture<` option is enabled, the injected script must emit `CAPTURE_EXIT event.`</div>
 
 <div class="mt-20 pb-10"><strong>An example of a scrollCombidy2d chart is shown below:</strong></div>
 <pre><code class="language-javascript">
