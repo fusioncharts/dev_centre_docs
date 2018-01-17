@@ -23,132 +23,134 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 <div class="tab cli-tab active">
 <div class="mt-20 pb-10">Let’s create a template file named <code>template.html</code> and load the <code>d3.js</code> library. Write the necessary code to render the chord diagram. Now, use the <code>--asyncCapture</code> CLI option to hook into D3’s rendering life-cycle and export the chart after D3 completes the rendering. </div>
 <div class="mt-20 pb-10"><strong>template.html</strong></div>
-<pre><code class="language-html">
-	<!DOCTYPE html>
-	<meta charset="utf-8">
-	<style>
-	  body {
-	    font: 10px sans-serif;
-	  }
+<pre><code class="language-html+xml">
+	&lt;!DOCTYPE html&gt;
+		&lt;meta charset=&quot;utf-8&quot;&gt;
+		&lt;style&gt;
+		  body {
+		    font: 10px sans-serif;
+		  }
 
-	  .chord {
-	    fill-opacity: .67;
-	  }
-	</style>
+		  .chord {
+		    fill-opacity: .67;
+		  }
+		&lt;/style&gt;
 
-	<body>
-	  <script src="https://d3js.org/d3.v3.min.js"></script>
-	  <script>
-	    var outerRadius = 1366 / 2,
-	      innerRadius = outerRadius - 130;
+		&lt;body&gt;
+		  &lt;script src=&quot;https://d3js.org/d3.v3.min.js&quot;&gt;&lt;/script&gt;
+		  &lt;script&gt;
+		    var outerRadius = 1366 / 2,
+		      innerRadius = outerRadius - 130;
 
-	    var fill = d3.scale.category20c();
+		    var fill = d3.scale.category20c();
 
-	    var chord = d3.layout.chord()
-	      .padding(.04)
-	      .sortSubgroups(d3.descending)
-	      .sortChords(d3.descending);
+		    var chord = d3.layout.chord()
+		      .padding(.04)
+		      .sortSubgroups(d3.descending)
+		      .sortChords(d3.descending);
 
-	    var arc = d3.svg.arc()
-	      .innerRadius(innerRadius)
-	      .outerRadius(innerRadius + 20);
+		    var arc = d3.svg.arc()
+		      .innerRadius(innerRadius)
+		      .outerRadius(innerRadius + 20);
 
-	    var svg = d3.select("body").append("svg")
-	      .attr("width", outerRadius * 2)
-	      .attr("height", outerRadius * 2)
-	      .append("g")
-	      .attr("transform", "translate(" + outerRadius + "," + outerRadius + ")");
+		    var svg = d3.select(&quot;body&quot;).append(&quot;svg&quot;)
+		      .attr(&quot;width&quot;, outerRadius * 2)
+		      .attr(&quot;height&quot;, outerRadius * 2)
+		      .append(&quot;g&quot;)
+		      .attr(&quot;transform&quot;, &quot;translate(&quot; + outerRadius + &quot;,&quot; + outerRadius + &quot;)&quot;);
 
-	    d3.json(
-	      "https://gist.githubusercontent.com/sandeep1995/141a2045ab9e4c8f450c970682b89b00/raw/7aacb8a793c2d9e0ed60ad0251e1b754b2c430f2/filename.json",
-	      function(error, imports) {
-	        if (error) throw error;
+		    d3.json(
+		      &quot;https://gist.githubusercontent.com/sandeep1995/141a2045ab9e4c8f450c970682b89b00/raw/7aacb8a793c2d9e0ed60ad0251e1b754b2c430f2/filename.json&quot;,
+		      function(error, imports) {
+		        if (error) throw error;
 
-	        var indexByName = d3.map(),
-	          nameByIndex = d3.map(),
-	          matrix = [],
-	          n = 0;
+		        var indexByName = d3.map(),
+		          nameByIndex = d3.map(),
+		          matrix = [],
+		          n = 0;
 
-	        // Returns the Flare package name for the given class name.
-	        function name(name) {
-	          return name.substring(0, name.lastIndexOf(".")).substring(6);
-	        }
+		        // Returns the Flare package name for the given class name.
+		        function name(name) {
+		          return name.substring(0, name.lastIndexOf(&quot;.&quot;)).substring(6);
+		        }
 
-	        // Compute a unique index for each package name.
-	        imports.forEach(function(d) {
-	          if (!indexByName.has(d = name(d.name))) {
-	            nameByIndex.set(n, d);
-	            indexByName.set(d, n++);
-	          }
-	        });
+		        // Compute a unique index for each package name.
+		        imports.forEach(function(d) {
+		          if (!indexByName.has(d = name(d.name))) {
+		            nameByIndex.set(n, d);
+		            indexByName.set(d, n++);
+		          }
+		        });
 
-	        // Construct a square matrix counting package imports.
-	        imports.forEach(function(d) {
-	          var source = indexByName.get(name(d.name)),
-	            row = matrix[source];
-	          if (!row) {
-	            row = matrix[source] = [];
-	            for (var i = -1; ++i < n;) row[i] = 0;
-	          }
-	          d.imports.forEach(function(d) {
-	            row[indexByName.get(name(d))]++;
-	          });
-	        });
+		        // Construct a square matrix counting package imports.
+		        imports.forEach(function(d) {
+		          var source = indexByName.get(name(d.name)),
+		            row = matrix[source];
+		          if (!row) {
+		            row = matrix[source] = [];
+		            for (var i = -1; ++i &lt; n;) row[i] = 0;
+		          }
+		          d.imports.forEach(function(d) {
+		            row[indexByName.get(name(d))]++;
+		          });
+		        });
 
-	        chord.matrix(matrix);
+		        chord.matrix(matrix);
 
-	        var g = svg.selectAll(".group")
-	          .data(chord.groups)
-	          .enter().append("g")
-	          .attr("class", "group");
+		        var g = svg.selectAll(&quot;.group&quot;)
+		          .data(chord.groups)
+		          .enter().append(&quot;g&quot;)
+		          .attr(&quot;class&quot;, &quot;group&quot;);
 
-	        g.append("path")
-	          .style("fill", function(d) {
-	            return fill(d.index);
-	          })
-	          .style("stroke", function(d) {
-	            return fill(d.index);
-	          })
-	          .attr("d", arc);
+		        g.append(&quot;path&quot;)
+		          .style(&quot;fill&quot;, function(d) {
+		            return fill(d.index);
+		          })
+		          .style(&quot;stroke&quot;, function(d) {
+		            return fill(d.index);
+		          })
+		          .attr(&quot;d&quot;, arc);
 
-	        g.append("text")
-	          .each(function(d) {
-	            d.angle = (d.startAngle + d.endAngle) / 2;
-	          })
-	          .attr("dy", ".35em")
-	          .attr("transform", function(d) {
-	            return "rotate(" + (d.angle * 180 / Math.PI - 90) + ")" +
-	              "translate(" + (innerRadius + 26) + ")" +
-	              (d.angle > Math.PI ? "rotate(180)" : "");
-	          })
-	          .style("text-anchor", function(d) {
-	            return d.angle > Math.PI ? "end" : null;
-	          })
-	          .text(function(d) {
-	            return nameByIndex.get(d.index);
-	          });
+		        g.append(&quot;text&quot;)
+		          .each(function(d) {
+		            d.angle = (d.startAngle + d.endAngle) / 2;
+		          })
+		          .attr(&quot;dy&quot;, &quot;.35em&quot;)
+		          .attr(&quot;transform&quot;, function(d) {
+		            return &quot;rotate(&quot; + (d.angle * 180 / Math.PI - 90) + &quot;)&quot; +
+		              &quot;translate(&quot; + (innerRadius + 26) + &quot;)&quot; +
+		              (d.angle &gt; Math.PI ? &quot;rotate(180)&quot; : &quot;&quot;);
+		          })
+		          .style(&quot;text-anchor&quot;, function(d) {
+		            return d.angle &gt; Math.PI ? &quot;end&quot; : null;
+		          })
+		          .text(function(d) {
+		            return nameByIndex.get(d.index);
+		          });
 
-	        svg.selectAll(".chord")
-	          .data(chord.chords)
-	          .enter().append("path")
-	          .attr("class", "chord")
-	          .style("stroke", function(d) {
-	            return d3.rgb(fill(d.source.index)).darker();
-	          })
-	          .style("fill", function(d) {
-	            return fill(d.source.index);
-	          })
-	          .attr("d", d3.svg.chord().radius(innerRadius));
+		        svg.selectAll(&quot;.chord&quot;)
+		          .data(chord.chords)
+		          .enter().append(&quot;path&quot;)
+		          .attr(&quot;class&quot;, &quot;chord&quot;)
+		          .style(&quot;stroke&quot;, function(d) {
+		            return d3.rgb(fill(d.source.index)).darker();
+		          })
+		          .style(&quot;fill&quot;, function(d) {
+		            return fill(d.source.index);
+		          })
+		          .attr(&quot;d&quot;, d3.svg.chord().radius(innerRadius));
 
-	        // Emitting CAPTURE_EXIT event after d3 chart render complete
-	        FusionExport.emit('CAPTURE_EXIT');
+		        // Emitting CAPTURE_EXIT event after d3 chart render complete
+		        FusionExport.emit('CAPTURE_EXIT');
 
-	      });
+		      });
 
-	    d3.select(self.frameElement).style("height", outerRadius * 2 + "px");
-	  </script>
-	</body>
-</code></pre><div class="mt-20 pb-10">Pay special attention to <strong>FusionExport.emit('<code>CAPTURE_EXIT</code>')</strong>. You need to emit the <code>CAPTURE_EXIT</code> event when the render is complete.</div>
+		    d3.select(self.frameElement).style(&quot;height&quot;, outerRadius * 2 + &quot;px&quot;);
+		  &lt;/script&gt;
+		&lt;/body&gt;
+	&lt;/html&gt;
+</code></pre>
+<div class="mt-20 pb-10">Pay special attention to <strong>FusionExport.emit('<code>CAPTURE_EXIT</code>')</strong>. You need to emit the <code>CAPTURE_EXIT</code> event when the render is complete.</div>
 <div class="mt-20 pb-10"><strong>The fusioncharts_config.json looks like as follows:</strong></div>
 
 <pre><code class="language-javascript">
@@ -407,6 +409,7 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	        panic(e)
 	    }
 	}
-</code></pre></div>
+</code></pre>
+</div>
 </div>
 </div>
