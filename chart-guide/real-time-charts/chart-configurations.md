@@ -10,17 +10,17 @@ FusionCharts Suite XT allows you to configure several functional and cosmetic pr
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/chart-configurations.html#setting-different-update-and-refresh-intervals">Set different update and refresh intervals</a>
+* <a href="/chart-guide/real-time-charts/chart-configurations#setting-different-update-and-refresh-intervals" class="smoth-scroll">Set different update and refresh intervals</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/chart-configurations.html#specifying-different-decimal-precisions">Specify different decimal precisions</a>
+* <a href="/chart-guide/real-time-charts/chart-configurations#specifying-different-decimal-precisions" class="smoth-scroll">Specify different decimal precisions</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/chart-configurations.html#setting-custom-canvas-margins">Set custom canvas margins</a>
+* <a href="/chart-guide/real-time-charts/chart-configurations#setting-custom-canvas-margins" class="smoth-scroll">Set custom canvas margins</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/chart-configurations.html#configuring-the-chart-element-padding">Configure chart element padding</a>
+* <a href="/chart-guide/real-time-charts/chart-configurations#configuring-the-chart-element-padding" class="smoth-scroll">Configure chart element padding</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/chart-configurations.html#adding-trend-lines-and-trend-zones">Add trend-lines and trend-zones</a>
+* <a href="/chart-guide/real-time-charts/chart-configurations#adding-trend-lines-and-trend-zones" class="smoth-scroll">Add trend-lines and trend-zones</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/chart-configurations.html#increasingdecreasing-the-number-of-data-points-displayed-on-the-chart">Increase/decrease the number of data points displayed on the chart</a>
+* <a href="/chart-guide/real-time-charts/chart-configurations#increasingdecreasing-the-number-of-data-points-displayed-on-the-chart" class="smoth-scroll">Increase/decrease the number of data points displayed on the chart</a>
 
 ## Setting Different Update and Refresh Intervals
 

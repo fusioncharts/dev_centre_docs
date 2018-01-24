@@ -10,9 +10,9 @@ Bubble and XY charts are used for plotting data that can be defined in terms of 
 
 The XY charts available in the FusionCharts Suite XT are:
 
-* <a href="{{ site.baseurl }}chart-guide/bubble-and-xy-charts/creating-bubble-and-xy-charts.html#scatter-charts">Scatter Chart</a>
+* <a href="/chart-guide/bubble-and-xy-charts/creating-bubble-and-xy-charts#scatter-charts" class="smoth-scroll">Scatter Chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/bubble-and-xy-charts/creating-bubble-and-xy-charts.html#bubble-charts">Bubble Chart</a>
+* <a href="/chart-guide/bubble-and-xy-charts/creating-bubble-and-xy-charts#bubble-charts" class="smoth-scroll">Bubble Chart</a>
 
 ## Scatter Charts
 

@@ -8,7 +8,7 @@ chartPresent: true
 
 Real-time gauges are used when a single value is of interest and has to be monitored constantly. For example, if you want to monitor the forex rate, you can use a real-time gauge to display the current currency value, at every set interval. Based on the rates, if you intend to trade or take suitable action, you can use events to track the updates and trigger appropriate functions.
 
-To know more about how to configure a real-time gauge, click [here]{% linkTo tutorials/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges.md %}.
+To know more about how to configure a real-time gauge, click [here](/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges).
 
 FusionCharts Suite XT offers two real-time events:
 

@@ -10,11 +10,11 @@ FusionCharts Suite XT supports two types of legends for the heat map chart - the
 
 In this section, you will be shown how you can work with:
 
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/legend-options.html#working-with-the-icon-legend">the icon legend</a>
+* <a href="/chart-guide/heat-map-chart/legend-options#working-with-the-icon-legend" class="smoth-scroll">the icon legend</a>
 
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/legend-options.html#working-with-the-gradient-legend">the gradient legend</a>
+* <a href="/chart-guide/heat-map-chart/legend-options#working-with-the-gradient-legend" class="smoth-scroll">the gradient legend</a>
 
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/legend-options.html#configuring-a-single-color-gradient-legend">percentage mapping</a>
+* <a href="/chart-guide/heat-map-chart/legend-options#configuring-a-single-color-gradient-legend" class="smoth-scroll">percentage mapping</a>
 
 ## Working with the Icon Legend
 
@@ -22,7 +22,7 @@ Icon legend allows us to display single color icons for numeric ranges. By defau
 
 A simple icon legend looks as shown in the image below:
 
-![Icon Legend]({{ site.baseurl }}assets/images/chart-guide-heat-map-chart-legend-options-image-1.jpg)
+![Icon Legend](/assets/images/chart-guide-heat-map-chart-legend-options-image-1.jpg)
 
 A simple heat map chart rendered with an icon legend looks like this:
 
@@ -58,7 +58,7 @@ Icon legends are interactive. You  can click a legend item to show or hide all t
 
 A heat map chart rendered with all "average" ratings hidden looks as shown in the image below:
 
-![Average Ratings]({{ site.baseurl }}assets/images/chart-guide-heat-map-chart-legend-options-image-2.jpg)
+![Average Ratings](/assets/images/chart-guide-heat-map-chart-legend-options-image-2.jpg)
 
 
 ## Working with the Gradient Legend
@@ -67,7 +67,7 @@ Gradient legend is a pane of blended colors derived from the `colorRange` defini
 
 A simple gradient legend is looks as shown in the image below:
 
-![Gradient Legend]({{ site.baseurl }}assets/images/chart-guide-heat-map-chart-legend-options-image-3.jpg)
+![Gradient Legend](/assets/images/chart-guide-heat-map-chart-legend-options-image-3.jpg)
 
 A heat map chart rendered with a gradient legend looks like this:
 
@@ -107,7 +107,7 @@ The default gradient legend is rendered using several different colors. However,
 
 A single-color gradient legend looks as shown in the image below:
 
-![Single Color Gradient Legend]({{ site.baseurl }}assets/images/chart-guide-heat-map-chart-legend-options-image-4.jpg)
+![Single Color Gradient Legend](/assets/images/chart-guide-heat-map-chart-legend-options-image-4.jpg)
 
 The code snippet needed to show a single-color gradient legend is given below:
 
@@ -140,4 +140,4 @@ For example, in a numeric range 0-10, you may want to show the numbers between 5
 
 A chart with data plots only in the range of 5 and 9 shown looks like this:
 
-![Chart with fixed range]({{ site.baseurl }}assets/images/chart-guide-heat-map-chart-legend-options-image-5.jpg)
+![Chart with fixed range](/assets/images/chart-guide-heat-map-chart-legend-options-image-5.jpg)

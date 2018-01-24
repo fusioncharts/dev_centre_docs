@@ -12,13 +12,13 @@ In a box and whisker chart, along with the dataset seriesname, the legend also s
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-mean.html#showinghiding-the-mean-icon">Show/hide the mean icon in the legend</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-mean#showinghiding-the-mean-icon" class="smoth-scroll">Show/hide the mean icon in the legend</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-mean.html#customizing-the-mean-icon">Customize the mean icon</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-mean#customizing-the-mean-icon" class="smoth-scroll">Customize the mean icon</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-mean.html#drawing-mean-connectors">Draw mean connectors</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-mean#drawing-mean-connectors" class="smoth-scroll">Draw mean connectors</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-mean.html#connecting-null-data">Connect null data</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-mean#connecting-null-data" class="smoth-scroll">Connect null data</a>
 
 ## Showing/Hiding the Mean Icon
 

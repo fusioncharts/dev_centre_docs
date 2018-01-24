@@ -10,11 +10,11 @@ FusionCharts Suite XT allows you to configure the functional and cosmetic proper
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/stacked-charts/configuring-stacked-charts.html#displaying-the-cumulative-sum-of-stacked-data">Display the cumulative sum of stacked data</a>
+* <a href="/chart-guide/stacked-charts/configuring-stacked-charts#displaying-the-cumulative-sum-of-stacked-data" class="smoth-scroll">Display the cumulative sum of stacked data</a>
 
-* <a href="{{ site.baseurl }}chart-guide/stacked-charts/configuring-stacked-charts.html#creating-100-stacked-charts">Create 100% stacked charts</a>
+* <a href="/chart-guide/stacked-charts/configuring-stacked-charts#creating-100-stacked-charts" class="smoth-scroll">Create 100% stacked charts</a>
 
-* <a href="{{ site.baseurl }}chart-guide/stacked-charts/configuring-stacked-charts.html#showing-percent-values-in-tool-tips">Show percentage values in tool-tips</a>
+* <a href="/chart-guide/stacked-charts/configuring-stacked-charts#showing-percent-values-in-tool-tips" class="smoth-scroll">Show percentage values in tool-tips</a>
 
 ## Displaying the Cumulative Sum of Stacked Data
 

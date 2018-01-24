@@ -1,0 +1,31 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/valgamaa
+
+Map Name: Valgamaa
+Dimensions (Width x Height): 562x600
+
+
+
+{% embed_spec_map valgamaa-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+03|HE|Helme
+04|HU|Hummuli
+05|KA|Karula
+07|PA|Palupera
+06|OT|Puhajarve/Otepää
+08|PU|Puka
+09|PO|Põdrala
+10|SA|Sangaste
+11|TA|Taheva
+12|TL|Tõlliste
+01|TR|Tõrva
+02|VA|Valga
+13|OR|Õru
+

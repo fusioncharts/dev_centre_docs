@@ -10,15 +10,15 @@ You can configure several cosmetic properties for a Gantt chart that help you im
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-cosmetics.html#defining-and-showinghiding-task-labels">Define and show/hide task labels</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/configuring-cosmetics#defining-and-showinghiding-task-labels" class="smoth-scroll">Define and show/hide task labels</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-cosmetics.html#showinghiding-task-start-and-end-dates">Show/hide task start and end dates</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/configuring-cosmetics#showinghiding-task-start-and-end-dates" class="smoth-scroll">Show/hide task start and end dates</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-cosmetics.html#adding-and-customizing-the-process-header">Add and customize process headers</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/configuring-cosmetics#adding-and-customizing-the-process-header" class="smoth-scroll">Add and customize process headers</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-cosmetics.html#adding-more-columns-to-the-data-table">Add more columns to the data table</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/configuring-cosmetics#adding-more-columns-to-the-data-table" class="smoth-scroll">Add more columns to the data table</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-cosmetics.html#customizing-the-hover-effect">Configure hover effects</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/configuring-cosmetics#customizing-the-hover-effect" class="smoth-scroll">Configure hover effects</a>
 
 ## Defining and Showing/Hiding Task Labels
 

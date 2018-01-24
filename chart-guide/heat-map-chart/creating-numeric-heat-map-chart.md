@@ -10,11 +10,11 @@ Numeric heat map charts are created using numeric data for the chart for scienti
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/creating-numeric-heat-map-chart.html#creating-a-simple-numeric-heat-map-charts">Create a simple numeric heat map chart</a>
+* <a href="/chart-guide/heat-map-chart/creating-numeric-heat-map-chart#creating-a-simple-numeric-heat-map-charts" class="smoth-scroll">Create a simple numeric heat map chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/creating-numeric-heat-map-chart.html#defining-the-order-of-rows-and-columns">Define the order of rows and columns</a>
+* <a href="/chart-guide/heat-map-chart/creating-numeric-heat-map-chart#defining-the-order-of-rows-and-columns" class="smoth-scroll">Define the order of rows and columns</a>
 
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/creating-numeric-heat-map-chart.html#configuring-colors-for-individual-cells">Configure colors for individual cells</a>
+* <a href="/chart-guide/heat-map-chart/creating-numeric-heat-map-chart#configuring-colors-for-individual-cells" class="smoth-scroll">Configure colors for individual cells</a>
 
 ## Creating a Simple Numeric Heat Map Charts
 

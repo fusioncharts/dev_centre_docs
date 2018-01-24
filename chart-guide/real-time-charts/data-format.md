@@ -8,17 +8,17 @@ chartPresent: true
 
 The format of real-time data for real-time charts depends on:
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/data-format.html#number-of-datasets-to-update">the number of datasets you want to update for the chart</a>
+* <a href="/chart-guide/real-time-charts/data-format#number-of-datasets-to-update" class="smoth-scroll">the number of datasets you want to update for the chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/data-format.html#number-of-incremental-updates">the number of incremental updates you want to pass to the chart in one attempt</a>
+* <a href="/chart-guide/real-time-charts/data-format#number-of-incremental-updates" class="smoth-scroll">the number of incremental updates you want to pass to the chart in one attempt</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/data-format.html#attributes-to-update-for-the-chart">the attributes you want to update for the chart</a>
+* <a href="/chart-guide/real-time-charts/data-format#attributes-to-update-for-the-chart" class="smoth-scroll">the attributes you want to update for the chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/data-format.html#attributes-to-update-for-each-dataset">the attributes you want to update for each dataset</a> - like `label`, `color`, `link`, `toolText`, etc.
+* <a href="/chart-guide/real-time-charts/data-format#attributes-to-update-for-each-dataset" class="smoth-scroll">the attributes you want to update for each dataset</a> - like `label`, `color`, `link`, `toolText`, etc.
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/data-format.html#providing-empty-data-to-the-chart">whether you are passing empty data to the chart</a>
+* <a href="/chart-guide/real-time-charts/data-format#providing-empty-data-to-the-chart" class="smoth-scroll">whether you are passing empty data to the chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/data-format.html#commands-sent-to-the-chart">the commands for the chart</a>
+* <a href="/chart-guide/real-time-charts/data-format#commands-sent-to-the-chart" class="smoth-scroll">the commands for the chart</a>
 
 
 In this section, you will be shown how the data format changes depending on the above factors.
@@ -121,7 +121,7 @@ To do this, you can provide the incremental data to the chart in the following f
 
 ```
 
-The link has to be specified in the [FusionCharts link format]{% linkTo tutorials/advanced-charting/drill-down/linkedcharts.md %}. The link in the above data has been URL Encoded because it contains special characters like &, %, etc.
+The link has to be specified in the [FusionCharts link format](/advanced-charting/drill-down/linkedcharts). The link in the above data has been URL Encoded because it contains special characters like &, %, etc.
 
 ### The toolText Attribute
 
@@ -182,4 +182,4 @@ After you have stopped updates for a chart, you can restart updates either by us
 
 ## Sending Messages Pertinent to the Message Logger
 
-For real-time charts that show the message logger, you can update various parameters for the message logger in real-time. All these parameters and their data format have been explained in the [Message Logger]{% linkTo tutorials/chart-guide/real-time-charts/setting-message-logger.md %} section.
+For real-time charts that show the message logger, you can update various parameters for the message logger in real-time. All these parameters and their data format have been explained in the [Message Logger](/chart-guide/real-time-charts/setting-message-logger) section.

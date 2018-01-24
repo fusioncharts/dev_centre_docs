@@ -10,9 +10,9 @@ FusionCharts Suite XT allows you to plot two types of logarithmic charts - log c
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/logarithmic-charts/creating-logarithmic-charts.html#creating-the-log-column-2d-chart">Create the log column 2D chart</a>
+* <a href="/chart-guide/logarithmic-charts/creating-logarithmic-charts#creating-the-log-column-2d-chart" class="smoth-scroll">Create the log column 2D chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/logarithmic-charts/creating-logarithmic-charts.html#creating-the-log-line-2d-chart">Create the log line 2D chart</a>
+* <a href="/chart-guide/logarithmic-charts/creating-logarithmic-charts#creating-the-log-line-2d-chart" class="smoth-scroll">Create the log line 2D chart</a>
 
 ## Creating the Log Column 2D Chart
 

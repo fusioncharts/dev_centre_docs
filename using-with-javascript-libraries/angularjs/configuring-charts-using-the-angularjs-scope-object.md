@@ -8,21 +8,21 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT]{% linkTo tutorials/getting-started/building-your-first-chart.md %}
+* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
 
-* [Installing the Angular-FusionCharts directive]{% linkTo tutorials/using-with-javascript-libraries/angularjs/introduction.md %}
+* [Installing the Angular-FusionCharts directive](/using-with-javascript-libraries/angularjs/introduction)
 
-* [Creating charts using the Angular-FusionCharts directive]{% linkTo tutorials/using-with-javascript-libraries/angularjs/creating-charts-using-the-angular-fusioncharts-directive.md %}
+* [Creating charts using the Angular-FusionCharts directive](/using-with-javascript-libraries/angularjs/creating-charts-using-the-angular-fusioncharts-directive)
 
 Once a chart is created using the Angular-FusionCharts directive, the scope object can be used to update the chart dynamically.
 
 This articles describes how you can use the scope object to:
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object.html#updating-the-chart-data-dynamically">Update the chart data dynamically</a>
+* <a href="/using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object#updating-the-chart-data-dynamically" class="smoth-scroll">Update the chart data dynamically</a>
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object.html#updating-the-chart-attributes-dynamically">Update the chart attributes dynamically</a>
+* <a href="/using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object#updating-the-chart-attributes-dynamically" class="smoth-scroll">Update the chart attributes dynamically</a>
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object.html#trigger-scope-events-from-the-chart">Trigger scope events</a>
+* <a href="/using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object#trigger-scope-events-from-the-chart" class="smoth-scroll">Trigger scope events</a>
 
 ## Updating the Chart Data Dynamically
 
@@ -138,7 +138,7 @@ $scope.rightAlignCaption = function() {
 
 ```
 
-<p class="text-info">For a list of other chart attributes that you can update for a column 2D chart, click [here]{% linkTo attrs.md chart=column2d %}.</p>
+<p class="text-info">For a list of other chart attributes that you can update for a column 2D chart, click [here](/chart-attributes?chart=column2d).</p>
 
 ## Trigger Scope Events from the Chart
 

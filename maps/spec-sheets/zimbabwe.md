@@ -1,0 +1,28 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/zimbabwe
+
+Map Name: Zimbabwe
+Dimensions (Width x Height): 490x460
+
+
+
+{% embed_spec_map zimbabwe-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+ZW.BU|BU|Bulawayo
+ZW.HA|HA|Harare
+ZW.MA|MA|Manicaland
+ZW.MC|MC|Mashonaland Central
+ZW.ME|ME|Mashonaland East
+ZW.MW|MW|Mashonaland West
+ZW.MV|MV|Masvingo
+ZW.MN|MN|Matabeleland North
+ZW.MS|MS|Matabeleland South
+ZW.MI|MI|Midlands
+

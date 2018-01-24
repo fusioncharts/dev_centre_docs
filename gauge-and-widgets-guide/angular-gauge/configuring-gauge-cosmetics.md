@@ -10,13 +10,13 @@ The angular gauge chart in the FusionCharts Suite XT offers you a lot of configu
 
 In this section, you will be shown how you can configure the:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-the-gauge-gradient-fill">Gauge gradient fill</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics#configuring-the-gauge-gradient-fill" class="smoth-scroll">Gauge gradient fill</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-gauge-borders">Gauge borders</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics#configuring-gauge-borders" class="smoth-scroll">Gauge borders</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-the-gauge-radius-and-inner-radius">Gauge radius and inner radius</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics#configuring-the-gauge-radius-and-inner-radius" class="smoth-scroll">Gauge radius and inner radius</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-pivot-properties">Pivot properties</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics#configuring-pivot-properties" class="smoth-scroll">Pivot properties</a>
 
 ## Configuring the Gauge Gradient Fill
 
@@ -48,9 +48,9 @@ Given below is a brief description of the attributes used to configure the gradi
 
 There are several ways in which you can configure the borders of an angular gauge scale. You can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#showinghiding-the-gauge-border">Show/hide the gauge border</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics#showinghiding-the-gauge-border" class="smoth-scroll">Show/hide the gauge border</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-border-cosmetics">Configure the border cosmetics</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics#configuring-border-cosmetics" class="smoth-scroll">Configure the border cosmetics</a>
 
 ### Showing/Hiding the Gauge Border
 
@@ -190,9 +190,9 @@ An angular gauge rendered with the inner radius specified as 75% of the outer ra
 
 Like the range scale and the border of the angular gauge, you can also configure the pivot that points to a data value on the range scale. For a pivot, you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#setting-the-pivot-radius">Set the radius</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics#setting-the-pivot-radius" class="smoth-scroll">Set the radius</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-pivot-cosmetics">Configure the cosmetic properties</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics#configuring-pivot-cosmetics" class="smoth-scroll">Configure the cosmetic properties</a>
 
 ### Setting the Pivot Radius
 
@@ -220,13 +220,13 @@ Given below is a brief description of the attribute used to explicitly set the p
 
 For a pivot, you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-the-pivot-border-cosmetics">Configure the pivot border cosmetics</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics#configuring-the-pivot-border-cosmetics" class="smoth-scroll">Configure the pivot border cosmetics</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-the-pivot-fill-cosmetics">Configure the pivot fill cosmetics</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics#configuring-the-pivot-fill-cosmetics" class="smoth-scroll">Configure the pivot fill cosmetics</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-the-pivot-fill-color-with-a-gradient-fill-mix">Configure the pivot fill color with a gradient fill mix</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics#configuring-the-pivot-fill-color-with-a-gradient-fill-mix" class="smoth-scroll">Configure the pivot fill color with a gradient fill mix</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-the-pivot-fill-with-a-linear-gradient">Configure the pivot fill color with a linear gradient</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics#configuring-the-pivot-fill-with-a-linear-gradient" class="smoth-scroll">Configure the pivot fill color with a linear gradient</a>
 
 
 #### Configuring the Pivot Border Cosmetics

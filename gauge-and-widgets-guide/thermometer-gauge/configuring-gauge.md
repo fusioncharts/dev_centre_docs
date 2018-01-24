@@ -10,17 +10,17 @@ FusionCharts Suite XT allows you to customize several cosmetic and functional pr
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/configuring-gauge.html#customizing-the-gauge-fill">Customize the gauge fill</a>
+* <a href="/gauge-and-widgets-guide/thermometer-gauge/configuring-gauge#customizing-the-gauge-fill" class="smoth-scroll">Customize the gauge fill</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/configuring-gauge.html#customizing-the-gauge-borders">Customize the gauge border</a>
+* <a href="/gauge-and-widgets-guide/thermometer-gauge/configuring-gauge#customizing-the-gauge-borders" class="smoth-scroll">Customize the gauge border</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/configuring-gauge.html#setting-the-thermometer-radius-and-height-manually">Set the thermometer radius and height manually</a>
+* <a href="/gauge-and-widgets-guide/thermometer-gauge/configuring-gauge#setting-the-thermometer-radius-and-height-manually" class="smoth-scroll">Set the thermometer radius and height manually</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/configuring-gauge.html#showinghiding-the-temperature-value">Show/hide temperature value</a>
+* <a href="/gauge-and-widgets-guide/thermometer-gauge/configuring-gauge#showinghiding-the-temperature-value" class="smoth-scroll">Show/hide temperature value</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/configuring-gauge.html#showinghiding-tick-marks-and-tick-values">Configure tick marks and values</a>
+* <a href="/gauge-and-widgets-guide/thermometer-gauge/configuring-gauge#showinghiding-tick-marks-and-tick-values" class="smoth-scroll">Configure tick marks and values</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/configuring-gauge.html#configuring-hover-effects-for-the-thermometer-gauge">Configure the hover effect</a>
+* <a href="/gauge-and-widgets-guide/thermometer-gauge/configuring-gauge#configuring-hover-effects-for-the-thermometer-gauge" class="smoth-scroll">Configure the hover effect</a>
 
 ## Customizing the Gauge Fill
 

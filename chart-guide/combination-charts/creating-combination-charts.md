@@ -6,7 +6,7 @@ heading: Creating Combination Charts
 chartPresent: true
 ---
 
-Combination charts are similar to [multi-series charts]{% linkTo tutorials/chart-guide/multi-series-charts/creating-multi-series-charts.md %}, they allow you to plot multiple datasets on the same chart. But an added advantage with using combination charts is that you can also plot multiple chart types on the same chart. For example, you can show the column, line, and area chart on the same chart canvas.
+Combination charts are similar to [multi-series charts](/chart-guide/multi-series-charts/creating-multi-series-charts), they allow you to plot multiple datasets on the same chart. But an added advantage with using combination charts is that you can also plot multiple chart types on the same chart. For example, you can show the column, line, and area chart on the same chart canvas.
 
 
 Combination charts can be rendered in either 2D or 3D, can have single or dual y-axes, and can be stacked or multi series in nature.

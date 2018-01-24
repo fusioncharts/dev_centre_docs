@@ -10,13 +10,13 @@ FusionCharts Suite XT allows you to draw the angular gauge from virtually any st
 
 In this section, you will be shown you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.html#using-the-chart-object-attributes-to-create-gauges">Use the various chart object attributes to create angles</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins#using-the-chart-object-attributes-to-create-gauges" class="smoth-scroll">Use the various chart object attributes to create angles</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.html#configuring-angular-gauge-angles">Configure gauge angles to render angles of different shapes</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins#configuring-angular-gauge-angles" class="smoth-scroll">Configure gauge angles to render angles of different shapes</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.html#automatic-positioning-of-gauge-origins">Position gauge origins automatically</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins#automatic-positioning-of-gauge-origins" class="smoth-scroll">Position gauge origins automatically</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.html#manually-setting-gauge-origins">Set gauge origins manually</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins#manually-setting-gauge-origins" class="smoth-scroll">Set gauge origins manually</a>
 
 ## Using the `chart` Object Attributes to Create Gauges
 
@@ -58,7 +58,7 @@ The following attributes of the `chart` object are the main control parameters t
 
 The angular gauge comprehends angles as shown in the images below:
 
-![image angular-gauge-angles1]({{ site.baseurl }}assets/images/angular-angles-1.jpg)![image angular-gauge-angles2]({{ site.baseurl }}assets/images/angular-angles-2.jpg)
+![image angular-gauge-angles1](/assets/images/angular-angles-1.jpg)![image angular-gauge-angles2](/assets/images/angular-angles-2.jpg)
 
 Each point in the circle can be represented by two angles - a positive angle and a negative angle.This enables you to plot bi-directional angular gauges.
 
@@ -101,4 +101,4 @@ An angular gauge rendered with manually-specified gauge origins looks like this:
 
 <p class="text-info">In the above example we have only modified the `gaugeOriginY` attribute to shift the origin upward, you can do similar adjustments with `gaugeOriginX` also.</p>
 
-<p class="text-info"> If you were to dynamically resize the gauge now with proper configuration, as explained in the {% linkTo tutorials/gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges.md %} section, FusionCharts Suite XT will automatically resize the origin positions and radius specified.</p>
+<p class="text-info"> If you were to dynamically resize the gauge now with proper configuration, as explained in the (/gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges) section, FusionCharts Suite XT will automatically resize the origin positions and radius specified.</p>

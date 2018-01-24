@@ -6,7 +6,7 @@ heading: Using Marker Sheets
 chartPresent: false
 ---
 
-FusionCharts Suite XT let's you create your own markers on a map. You can define any number of markers for each map. In addition, we have created JSON based marker definitions of important cities for most major maps. These marker definitions can be accessed in the <a href="{{ site.baseurl }}maps/marker-data/">Marker Data</a> section.
+FusionCharts Suite XT let's you create your own markers on a map. You can define any number of markers for each map. In addition, we have created JSON based marker definitions of important cities for most major maps. These marker definitions can be accessed in the <a href="/maps/marker-data/">Marker Data</a> section.
 
 
 ## Marker Structure in v3.4
@@ -266,4 +266,4 @@ Given below is an example of the marker structure.
 }
 ```
 
-Click here for a list of all the <a href="{{ site.baseurl }}maps/marker-data/">Marker Data</a> files.
+Click here for a list of all the <a href="/maps/marker-data/">Marker Data</a> files.

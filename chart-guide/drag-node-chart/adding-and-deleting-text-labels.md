@@ -10,8 +10,8 @@ FusionCharts Suite XT allows you to create individual floating text labels on th
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-deleting-text-labels.html#adding-a-text-label-at-run-time">Add a text label at run-time</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-deleting-text-labels.html#deleting-a-text-label-at-run-time">Delete a text label at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-deleting-text-labels#adding-a-text-label-at-run-time" class="smoth-scroll">Add a text label at run-time</a>
+* <a href="/chart-guide/drag-node-chart/adding-and-deleting-text-labels#deleting-a-text-label-at-run-time" class="smoth-scroll">Delete a text label at run-time</a>
 
 To understand this, the sample chart that we will use looks like this:
 
@@ -24,12 +24,12 @@ The above chart shows the US Subway Map and uses drag-able nodes to mark locatio
 
 To add a new text label:
 
-__Step 1__: From the bottom-left corner of the chart, click the ![Menu]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-1.jpg) button. A menu is rendered.
+__Step 1__: From the bottom-left corner of the chart, click the ![Menu](/assets/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-1.jpg) button. A menu is rendered.
 
 __Step 2__: From the menu, select __Add a Label__.
 The label properties dialog box, as seen in the image below, is shown:
 
-![Label Properties Dialog Box]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-3.jpg)
+![Label Properties Dialog Box](/assets/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-3.jpg)
 
 __Step 3__: In the label properties dialog, enter the label information.
 
@@ -83,11 +83,11 @@ Given below is a brief description of the fields in this dialog box:
 
 The image below shows the fields of the dialog box populated for a new label:
 
-![New Label Properties Dialog Box]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-4.jpg)
+![New Label Properties Dialog Box](/assets/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-4.jpg)
 
 Now, when the __Submit__ button is clicked, the new label created looks like this:
 
-![New Label]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-5.jpg)
+![New Label](/assets/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-5.jpg)
 
 You can drag the label to any position on the chart.
 
@@ -112,7 +112,7 @@ To delete a text label:
 
 __Step 1__: Press and hold the left mouse button on the label that you want to delete. A dialog box appears asking you to confirm the deletion.
 
-![Confirm Deletion]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-6.jpg)
+![Confirm Deletion](/assets/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-6.jpg)
 
 __Step 2__: From the dialog box, click __Delete__. The label is deleted.
 
@@ -129,4 +129,4 @@ chartInstance.addEventListener('labeldeleted', function(e, a) {
 
 ```
 
-<p class="text-info">You can get the latest updated node and connector positions using JavaScript or by [submitting the updated positions]{% linkTo tutorials/chart-guide/drag-node-chart/updating-chart-data-on-server.md %} to a server-side script.</p>
+<p class="text-info">You can get the latest updated node and connector positions using JavaScript or by [submitting the updated positions](/chart-guide/drag-node-chart/updating-chart-data-on-server) to a server-side script.</p>

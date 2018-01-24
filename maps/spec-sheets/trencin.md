@@ -1,0 +1,27 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/trencin
+
+Map Name: Trencin
+Dimensions (Width x Height): 600x516
+
+
+
+{% embed_spec_map trencin-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+SK.TC.BN|BN|Bánovce nad Bebravou
+SK.TC.IL|IL|Ilava
+SK.TC.MY|MY|Myjava
+SK.TC.NM|NM|Nové Mesto nad Váhom
+SK.TC.PE|PE|Partizánske
+SK.TC.PB|PB|Považská Bystrica
+SK.TC.PD|PD|Prievidza
+SK.TC.PU|PU|Púchov
+SK.TC.TN|TN|Trenín
+

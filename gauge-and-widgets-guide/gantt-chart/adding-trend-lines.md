@@ -10,9 +10,9 @@ Trend-lines and trend-zones are used to represent a target value and a target ra
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/adding-trend-lines.html#creating-a-trend-line">Create a trend-line</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/adding-trend-lines#creating-a-trend-line" class="smoth-scroll">Create a trend-line</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/adding-trend-lines.html#creating-trend-zones">Create a trend-zone</a>
+* <a href="/gauge-and-widgets-guide/gantt-chart/adding-trend-lines#creating-trend-zones" class="smoth-scroll">Create a trend-zone</a>
 
 ## Creating a Trend-line
 

@@ -32,7 +32,7 @@ To show the __Submit__ button, you can use the following code snippet:
 
 This adds a submit button to your chart as shown below:
 
-![image alt text]({{ site.baseurl }}assets/images/drag-node-updating-chart-1.jpg)
+![image alt text](/assets/images/drag-node-updating-chart-1.jpg)
 
 Given below is a brief description of the attributes used to show/hide and define the form properties for the __Submit__ button:
 

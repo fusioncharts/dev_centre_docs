@@ -6,7 +6,7 @@ heading: Zoom-line Dual Y-Axis Chart
 chartPresent: true
 ---
 
-The FusionCharts Suite XT zoom-line dual y-axis chart, like the [zoom-line chart]{% linkTo tutorials/chart-guide/zoom-line-chart/creating-a-zoom-line-chart.md %}{:target='_blank'}, is used to analyze data at macroscopic and microscopic levels. With the dual y-axis, this chart can be used to plot data that belongs to datasets having different numeric units on the same chart—an advantage over using the conventional zoom-line chart. 
+The FusionCharts Suite XT zoom-line dual y-axis chart, like the [zoom-line chart](/chart-guide/zoom-line-chart/creating-a-zoom-line-chart), is used to analyze data at macroscopic and microscopic levels. With the dual y-axis, this chart can be used to plot data that belongs to datasets having different numeric units on the same chart—an advantage over using the conventional zoom-line chart. 
 
 Another advantage of using the zoom-line dual y-axis chart is when you want to compare two datasets where the values of one dataset are spread over a smaller interval, while the values of another have large intervals between them. In this case, if the zoom-line chart was used, the dataset with the smaller interval will be plotted as a straight line.  
 

@@ -8,21 +8,21 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT]{% linkTo tutorials/getting-started/building-your-first-chart.md %}{:target='_blank'}
+* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
 
-* [Installing the React-FusionCharts Component]{% linkTo tutorials/using-with-javascript-libraries/reactjs/introduction.md %}{:target='_blank'}
+* [Installing the React-FusionCharts Component](/using-with-javascript-libraries/reactjs/introduction)
 
-* [Installing the React-FusionCharts Component via NPM]{% linkTo tutorials/using-with-javascript-libraries/reactjs/install-fusioncharts-reactjs-component-via-npm.md %}{:target='_blank'}
+* [Installing the React-FusionCharts Component via NPM](/using-with-javascript-libraries/reactjs/install-fusioncharts-reactjs-component-via-npm)
 
 The React-FusionCharts component uses the `FusionCharts` component to create and configure charts using ReactJS.
 
 This article talks about how you can:
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component.html#creating-a-simple-chart-using-the-react-fusioncharts-component">Create a simple chart using the React-FusionCharts component</a>
+* <a href="/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component#creating-a-simple-chart-using-the-react-fusioncharts-component" class="smoth-scroll">Create a simple chart using the React-FusionCharts component</a>
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component.html#providing-attributes-using-separate-objects">Provide chart attributes using separate objects</a>
+* <a href="/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component#providing-attributes-using-separate-objects" class="smoth-scroll">Provide chart attributes using separate objects</a>
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component.html#fetching-chart-data-from-an-external-file">Fetch chart data from an external file</a>
+* <a href="/using-with-javascript-libraries/reactjs/creating-charts-using-the-react-fusioncharts-component#fetching-chart-data-from-an-external-file" class="smoth-scroll">Fetch chart data from an external file</a>
 
 ## Creating a Simple Chart Using the React-FusionCharts Component
 
@@ -247,7 +247,7 @@ ReactDOM.render(
 ```
 
 <p class="text-info">
-To know how a multi-series line chart can be created using the conventional JSON code, click [here](http://www.fusioncharts.com/dev/usage-guide/chart-guide/multi-series-charts/creating-multi-series-charts.html#creating-a-multi-series-line-2d-chart){:target='_blank'}.
+To know how a multi-series line chart can be created using the conventional JSON code, click [here](http://www.fusioncharts.com/dev/usage-guide/chart-guide/multi-series-charts/creating-multi-series-charts.html#creating-a-multi-series-line-2d-chart).
 </p>
 
 ## Fetching Chart Data from an External File

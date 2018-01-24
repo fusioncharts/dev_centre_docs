@@ -17,9 +17,9 @@ As long as they don’t overlap, you can define any number of threshold ranges. 
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/setting-alert-manager.html#configuring-the-alert-manager-for-all-datasets">Configure the alert manager for all datasets on the chart</a>
+* <a href="/chart-guide/real-time-charts/setting-alert-manager#configuring-the-alert-manager-for-all-datasets" class="smoth-scroll">Configure the alert manager for all datasets on the chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/setting-alert-manager.html#configuring-the-alert-manager-for-individual-datasets">Configure the alert manager for individual datasets</a>
+* <a href="/chart-guide/real-time-charts/setting-alert-manager#configuring-the-alert-manager-for-individual-datasets" class="smoth-scroll">Configure the alert manager for individual datasets</a>
 
 
 ## Configuring the Alert Manager for all Datasets

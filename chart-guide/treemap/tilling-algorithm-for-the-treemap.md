@@ -10,8 +10,8 @@ Tiling is the process of dividing large rectangles into smaller sub-rectangles. 
 
 The tiling algorithm affects how the larger rectangles are divided into smaller sub-rectangles, thus affecting how the chart looks like. FusionCharts supports the following two algorithms:
 
-* <a href="{{ site.baseurl }}chart-guide/treemap/tilling-algorithm-for-the-treemap.html#the-squarified-algorithm">Squarified</a>
-* <a href="{{ site.baseurl }}chart-guide/treemap/tilling-algorithm-for-the-treemap.html#slice-and-dice-algorithm">Slice and dice</a>
+* <a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap#the-squarified-algorithm" class="smoth-scroll">Squarified</a>
+* <a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap#slice-and-dice-algorithm" class="smoth-scroll">Slice and dice</a>
 
 
 ## The Squarified Algorithm
@@ -46,9 +46,9 @@ In a treemap, the slice and dice tiling algorithm is one of the simplest algorit
 
 In FusionCharts Suite XT we support three modes of slicing:
 
-* <a href="{{ site.baseurl }}chart-guide/treemap/tilling-algorithm-for-the-treemap.html#vertical-mode">Vertical</a>
-* <a href="{{ site.baseurl }}chart-guide/treemap/tilling-algorithm-for-the-treemap.html#horizontal-mode">Horizontal</a>
-* <a href="{{ site.baseurl }}chart-guide/treemap/tilling-algorithm-for-the-treemap.html#alternate-mode">Alternate (default)</a>
+* <a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap#vertical-mode" class="smoth-scroll">Vertical</a>
+* <a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap#horizontal-mode" class="smoth-scroll">Horizontal</a>
+* <a href="/chart-guide/treemap/tilling-algorithm-for-the-treemap#alternate-mode" class="smoth-scroll">Alternate (default)</a>
 
 
 #### Vertical Mode
@@ -64,14 +64,14 @@ The chart below is rendered using `vertical` mode of slicing :
 
 Horizontal mode of slicing is the reverse of vertical mode where all nodes in the 1st level are sliced horizontally, but their child nodes are sliced vertically. When you set slicing mode to `horizontal`, the chart looks as shown in the image below : 
 
-![Slice and dice Horizontal Mode]({{ site.baseurl }}assets/images/chart-guide-treemap-setting-tiling-algorithm-image-2.jpg)
+![Slice and dice Horizontal Mode](/assets/images/chart-guide-treemap-setting-tiling-algorithm-image-2.jpg)
 
 
 #### Alternate Mode
 
 In the alternate mode of slicing, as the name implies, the direction in which the nodes are sliced alternates between vertical and horizontal. When you set slicing mode to `alternate`, the chart looks as shown in the image below:
 
-![Slice and dice Alternate Mode]({{ site.baseurl }}assets/images/chart-guide-treemap-setting-tiling-algorithm-image-1.jpg)
+![Slice and dice Alternate Mode](/assets/images/chart-guide-treemap-setting-tiling-algorithm-image-1.jpg)
 
 
 Given below is a brief description of the attribute used to set the algorithm:
@@ -91,4 +91,4 @@ Given below is a brief description of the attribute used to set the algorithm:
     </tr>
 </table>
 
-Click [here]{% linkTo attrs.md chart=treemap %}{:target=’_blank’} for the complete list of attributes supported by the treemap.
+Click [here](/chart-attributes?chart=treemap){:target=’_blank’} for the complete list of attributes supported by the treemap.

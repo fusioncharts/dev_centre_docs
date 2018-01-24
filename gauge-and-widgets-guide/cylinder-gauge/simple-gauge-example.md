@@ -16,9 +16,9 @@ To create a cylinder gauge, you need to:
 
 * Define the upper and lower limits for the gauge. The limits are displayed on the vertical scale to the left/right of the cylinder. For our example, the lower limit will be 0 and the upper limit will be 110 liters.
 
-* Decide the [visual properties]{% linkTo tutorials/gauge-and-widgets-guide/cylinder-gauge/configuring-gauge.md %} of the gauge. This involves customizing the elements of the gauge.
+* Decide the [visual properties](/gauge-and-widgets-guide/cylinder-gauge/configuring-gauge) of the gauge. This involves customizing the elements of the gauge.
 
-* Decide the [gauge value]{% linkTo tutorials/gauge-and-widgets-guide/cylinder-gauge/introduction.md %} along with the [fill color code]{% linkTo tutorials/gauge-and-widgets-guide/cylinder-gauge/configuring-gauge.md %}. For our example, the gauge value is 75 liters.
+* Decide the [gauge value](/gauge-and-widgets-guide/cylinder-gauge/introduction). For our example, the gauge value is 75 liters.
 
 The final gauge looks like this:
 

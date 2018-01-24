@@ -10,11 +10,11 @@ Real-time charts in the FusionCharts Suite XT let you clear the data currently b
 
 The chart view can be cleared:
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/clearing-chart-view.html#clearing-the-chart-from-the-server">from the server</a>
+* <a href="/chart-guide/real-time-charts/clearing-chart-view#clearing-the-chart-from-the-server" class="smoth-scroll">from the server</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/clearing-chart-view.html#setting-a-chart-clearing-interval">by setting a clear interval</a>
+* <a href="/chart-guide/real-time-charts/clearing-chart-view#setting-a-chart-clearing-interval" class="smoth-scroll">by setting a clear interval</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/clearing-chart-view.html#clearing-chart-using-javascript-api">using JavaScript API</a>
+* <a href="/chart-guide/real-time-charts/clearing-chart-view#clearing-chart-using-javascript-api" class="smoth-scroll">using JavaScript API</a>
 
 In this section, you will be shown how you can clear the chart view using each of the above listed methods.
 
@@ -40,7 +40,7 @@ A real-time chart that clears all its data after every 10th update looks like th
 
 
 
-In the above data, the `feedData()` method (covered in the section on [feeding and retrieving data]{% linkTo tutorials/chart-guide/real-time-charts/feeding-and-retrieving-data-through-api.md %}) is used to send the clearing command from the server to the chart.
+In the above data, the `feedData()` method (covered in the section on [feeding and retrieving data](/chart-guide/real-time-charts/feeding-and-retrieving-data-through-api)) is used to send the clearing command from the server to the chart.
 
 <p class="text-info">When sending this command from the real-time data provider page to the chart, you need to make sure that it is not sent with each incremental data update. Otherwise, you will not see anything plotted on the chart because the chart will clear itself with each update.</p>
 

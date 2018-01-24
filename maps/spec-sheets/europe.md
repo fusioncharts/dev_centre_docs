@@ -1,0 +1,65 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/europe
+
+Map Name: Europe
+Dimensions (Width x Height): 450x440
+
+
+
+{% embed_spec_map europe-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+001|AL|Albania
+002|AD|Andorra
+003|AT|Austria
+004|BY|Belarus
+005|BE|Belgium
+006|BA|Bosnia and Herzegovina
+007|BG|Bulgaria
+008|HY|Croatia
+044|CY|Cyprus
+009|CZ|Czech Republic
+010|DK|Denmark
+011|EE|Estonia
+012|FI|Finland
+013|FR|France
+014|DE|Germany
+015|GR|Greece
+016|HU|Hungary
+017|IS|Iceland
+018|IE|Ireland
+019|IT|Italy
+047|KO|Kosovo
+020|LV|Latvia
+021|LI|Liechtenstein
+022|LT|Lithuania
+023|LU|Luxembourg
+024|MK|Macedonia
+025|MT|Malta
+026|MD|Moldova
+027|MC|Monaco
+028|MO|Montenegro
+029|NL|Netherlands
+030|NO|Norway
+031|PL|Poland
+032|PT|Portugal
+033|RO|Romania
+046|RU|Russia
+034|SM|San Marino
+035|CS|Serbia
+036|SK|Slovakia
+037|SL|Slovenia
+038|ES|Spain
+039|SE|Sweden
+040|CH|Switzerland
+045|TK|Turkey
+041|UA|Ukraine
+042|UK|United Kingdom
+043|VA|Vatican City
+

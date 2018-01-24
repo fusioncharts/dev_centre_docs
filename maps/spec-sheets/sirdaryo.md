@@ -1,0 +1,27 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/sirdaryo
+
+Map Name: Sirdaryo
+Dimensions (Width x Height): 480x330
+
+
+
+
+
+{% embed_spec_map sirdaryo-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+UZ.SI.OQ|OQ|Akaltyn
+UZ.SI.BO|BO|Bayaut
+UZ.SI.GD|GD|Gulistan
+UZ.SI.XO|XO|Khavast
+UZ.SI.MI|MI|Mirzaabad
+UZ.SI.SA|SA|Saikhunabad
+UZ.SI.SR|SR|Sardoba
+UZ.SI.SD|SD|Sirdaryo

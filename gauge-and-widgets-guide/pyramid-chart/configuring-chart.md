@@ -10,19 +10,19 @@ FusionCharts Suite XT allows you to configure several functional and cosmetic pr
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/configuring-chart.html#drawing-a-2d-pyramid-with-customized-border-properties">Draw a 2D pyramid with customized border properties</a>
+* <a href="/gauge-and-widgets-guide/pyramid-chart/configuring-chart#drawing-a-2d-pyramid-with-customized-border-properties" class="smoth-scroll">Draw a 2D pyramid with customized border properties</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/configuring-chart.html#showing-labels-at-the-center-of-the-chart">Show labels at the center of the chart</a>
+* <a href="/gauge-and-widgets-guide/pyramid-chart/configuring-chart#showing-labels-at-the-center-of-the-chart" class="smoth-scroll">Show labels at the center of the chart</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/configuring-chart.html#showing-labels-in-the-legend-of-the-chart">Show labels in the legend of the chart</a>
+* <a href="/gauge-and-widgets-guide/pyramid-chart/configuring-chart#showing-labels-in-the-legend-of-the-chart" class="smoth-scroll">Show labels in the legend of the chart</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/configuring-chart.html#configuring-the-position-of-the-legend-box">Set the position of the legend box</a>
+* <a href="/gauge-and-widgets-guide/pyramid-chart/configuring-chart#configuring-the-position-of-the-legend-box" class="smoth-scroll">Set the position of the legend box</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/configuring-chart.html#showing-values-as-percentage">Show values as percentage</a>
+* <a href="/gauge-and-widgets-guide/pyramid-chart/configuring-chart#showing-values-as-percentage" class="smoth-scroll">Show values as percentage</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/configuring-chart.html#slicing-out-individual-pyramid-slices">Slice out individual pyramid slices</a>
+* <a href="/gauge-and-widgets-guide/pyramid-chart/configuring-chart#slicing-out-individual-pyramid-slices" class="smoth-scroll">Slice out individual pyramid slices</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/configuring-chart.html#configuring-hover-effects">Configure hover effects</a>
+* <a href="/gauge-and-widgets-guide/pyramid-chart/configuring-chart#configuring-hover-effects" class="smoth-scroll">Configure hover effects</a>
 
 ## Drawing a 2D Pyramid with Customized Border Properties
 

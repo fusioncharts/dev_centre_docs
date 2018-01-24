@@ -10,31 +10,31 @@ FusionCharts Suite XT allows you to configure the functional and cosmetic proper
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts.html#configuring-the-animation-direction-for-a-piedoughnut-chart">Customize the animation direction for a pie/doughnut chart</a>
+* <a href="/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts#configuring-the-animation-direction-for-a-piedoughnut-chart" class="smoth-scroll">Customize the animation direction for a pie/doughnut chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts.html#showing-percent-values-on-the-chart-and-actual-values-in-tooltips">Show percent values on the chart</a>
+* <a href="/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts#showing-percent-values-on-the-chart-and-actual-values-in-tooltips" class="smoth-scroll">Show percent values on the chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts.html#customizing-the-center-label-for-a-doughnut-chart">Customize the center label of a doughnut chart</a>
+* <a href="/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts#customizing-the-center-label-for-a-doughnut-chart" class="smoth-scroll">Customize the center label of a doughnut chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts.html#enabling-single-slice-slicing">Enable single slice slicing</a>
+* <a href="/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts#enabling-single-slice-slicing" class="smoth-scroll">Enable single slice slicing</a>
 
-* <a href="{{ site.baseurl }}chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts.html#disabling-smart-labels-and-lines">Disable smart labels and smart lines</a>
+* <a href="/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts#disabling-smart-labels-and-lines" class="smoth-scroll">Disable smart labels and smart lines</a>
 
-* <a href="{{ site.baseurl }}chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts.html#customizing-smart-lines">Customize smart lines</a>
+* <a href="/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts#customizing-smart-lines" class="smoth-scroll">Customize smart lines</a>
 
-* <a href="{{ site.baseurl }}chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts.html#configuring-the-label-distance-and-clearance">Configure the label distance and clearance</a>
+* <a href="/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts#configuring-the-label-distance-and-clearance" class="smoth-scroll">Configure the label distance and clearance</a>
 
-* <a href="{{ site.baseurl }}chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts.html#skipping-overlap-labels">Skip overlapping labels</a>
+* <a href="/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts#skipping-overlap-labels" class="smoth-scroll">Skip overlapping labels</a>
 
-* <a href="{{ site.baseurl }}chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts.html#customizing-pie-radius">Customize the pie radius</a>
+* <a href="/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts#customizing-pie-radius" class="smoth-scroll">Customize the pie radius</a>
 
-* <a href="{{ site.baseurl }}chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts.html#setting-the-starting-angle">Set the starting angle</a>
+* <a href="/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts#setting-the-starting-angle" class="smoth-scroll">Set the starting angle</a>
 
-* <a href="{{ site.baseurl }}chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts.html#slicing-a-piedoughnut">Slice a pie/doughnut</a>
+* <a href="/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts#slicing-a-piedoughnut" class="smoth-scroll">Slice a pie/doughnut</a>
 
-* <a href="{{ site.baseurl }}chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts.html#configuring-the-slicing-distance">Configure the slicing distance</a>
+* <a href="/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts#configuring-the-slicing-distance" class="smoth-scroll">Configure the slicing distance</a>
 
-* <a href="{{ site.baseurl }}chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts.html#configuring-the-bevel-effect">Configure the bevel effect</a>
+* <a href="/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts#configuring-the-bevel-effect" class="smoth-scroll">Configure the bevel effect</a>
 
 ## Configuring the Animation Direction for a Pie/Doughnut Chart
 

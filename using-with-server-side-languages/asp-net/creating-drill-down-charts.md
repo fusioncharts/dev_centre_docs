@@ -22,108 +22,105 @@ In this example, you will be shown how you can create this drill-down chart usin
 
 The data structure that goes into the **../DrillDownExample/Default.aspx** file is given below:
 
+<div class="code-wrapper">
 <ul class='code-tabs'>
   <li class='active'><a data-toggle='json'>C#</a></li>
   <li><a data-toggle='xml'>VB</a></li>
 </ul>
 <div class='tab-content'>
-  <div class='tab json-tab active'>
-```javascript
-  <%@ Page Language="C#" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="DB_DrillDown_Default" %>
+<div class='tab json-tab active'>
+<pre><code class="language-cs">
+	&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;Default.aspx.cs&quot; Inherits=&quot;DB_DrillDown_Default&quot; %&gt;
 
-    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+	&lt;html&gt;
+	    &lt;head&gt;
+	      &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+	      &lt;title&gt;FusionCharts - Simple&lt;/title&gt;
+	      &lt;!-- FusionCharts script tag --&gt;
+	      &lt;script type=&quot;text/javascript&quot; src=&quot;../fusioncharts/fusioncharts.js&quot;&gt;&lt;/script&gt;
+	      &lt;!-- End --&gt;
+	    &lt;/head&gt;
+	    &lt;body&gt;
+	      &lt;div style=&quot;text-align:center&quot;&gt;
+	            &lt;asp:Literal ID=&quot;Literal1&quot; runat=&quot;server&quot;&gt;&lt;/asp:Literal&gt;
+	      &lt;/div&gt;
+	    &lt;/body&gt;
+	&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-    <html>
-        <head>
-          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-          <title>FusionCharts - Simple</title>
-          <!-- FusionCharts script tag -->
-          <script type="text/javascript" src="../fusioncharts/fusioncharts.js"></script>
-          <!-- End -->
-        </head>
-        <body>
-          <div style="text-align:center">
-                <asp:Literal ID="Literal1" runat="server"></asp:Literal>
-          </div>
-        </body>
-    </html>
-           
+<div class='tab xml-tab'>
+<pre><code class="language-vb">
+	&lt;%@ Page Language=&quot;VB&quot; AutoEventWireup=&quot;false&quot; CodeFile=&quot;Default.aspx.vb&quot; Inherits=&quot;Samples_DrillDownExample_Default&quot; %&gt;
 
-    ```
-  </div>
+	&lt;!DOCTYPE html&gt;
+	&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+	&lt;head runat=&quot;server&quot;&gt;
+	    &lt;title&gt;FusionCharts - DrillDownExample&lt;/title&gt;
+	    &lt;!-- FusionCharts script tag --&gt;
+	    &lt;script type=&quot;text/javascript&quot; src=&quot;../../fusioncharts/fusioncharts.js&quot;&gt;&lt;/script&gt;
+	    &lt;!-- End --&gt; 
+	&lt;/head&gt;
+	&lt;body&gt;
+	    Fusioncharts will render below
+	    &lt;div style=&quot;text-align:center&quot;&gt;
+	        &lt;asp:Literal ID=&quot;Literal1&quot; runat=&quot;server&quot;&gt;&lt;/asp:Literal&gt;           
+	    &lt;/div&gt;
+	&lt;/body&gt;
+	&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-  <div class='tab xml-tab'>
-```javascript
-    
-    <%@ Page Language="VB" AutoEventWireup="false" CodeFile="Default.aspx.vb" Inherits="Samples_DrillDownExample_Default" %>
-
-    <!DOCTYPE html>
-
-    <html xmlns="http://www.w3.org/1999/xhtml">
-    <head runat="server">
-        <title>FusionCharts - DrillDownExample</title>
-        <!-- FusionCharts script tag -->
-        <script type="text/javascript" src="../../fusioncharts/fusioncharts.js"></script>
-        <!-- End --> 
-    </head>
-    <body>
-        Fusioncharts will render below
-        <div style="text-align:center">
-            <asp:Literal ID="Literal1" runat="server"></asp:Literal>           
-        </div>
-    </body>
-    </html>
-     
-  ```
-  </div>
-
+</div>
 </div>
 
 
 The data structure that goes into the code behind **../DrillDownExample/Default.aspx.cs** file is given below:
 
+<div class="code-wrapper">
 <ul class='code-tabs'>
   <li class='active'><a data-toggle='json'>C#</a></li>
   <li><a data-toggle='xml'>VB</a></li>
 </ul>
 <div class='tab-content'>
-  <div class='tab json-tab active'>
-```javascript
-  using System;
-  using System.Collections;
-  using System.Configuration;
-  using System.Data;
-  using System.Web;
-  using System.Web.Security;
-  using System.Web.UI;
-  using System.Web.UI.HtmlControls;
-  using System.Web.UI.WebControls;
-  using System.Web.UI.WebControls.WebParts;
+<div class='tab json-tab active'>
+<pre><code class="language-cs">
+	using System;
+	using System.Collections;
+	using System.Configuration;
+	using System.Data;
+	using System.Web;
+	using System.Web.Security;
+	using System.Web.UI;
+	using System.Web.UI.HtmlControls;
+	using System.Web.UI.WebControls;
+	using System.Web.UI.WebControls.WebParts;
 
-  // Use the `FusionCharts.Charts` namespace to be able to use classes and methods required to create charts.
-  // using FusionCharts.Charts;
+	// Use the `FusionCharts.Charts` namespace to be able to use classes and methods required to create charts.
+	// using FusionCharts.Charts;
 
-  public partial class DB_DrillDown_Default: System.Web.UI.Page {
-      protected void Page_Load(object sender, EventArgs e) {
-          // The data for the sample drill-down chart is stored in the DrillDownSSData.json file.
-          // To create this chart, chart data will be loaded from the `.json` file.
+	public partial class DB_DrillDown_Default: System.Web.UI.Page {
+	    protected void Page_Load(object sender, EventArgs e) {
+	        // The data for the sample drill-down chart is stored in the DrillDownSSData.json file.
+	        // To create this chart, chart data will be loaded from the `.json` file.
 
-          // Initialize the chart.
-          Chart sales = new Chart("column2d", "myChart", "600", "350", "jsonurl", "../Data/DrillDownSSData.json");
+	        // Initialize the chart.
+	        Chart sales = new Chart(&quot;column2d&quot;, &quot;myChart&quot;, &quot;600&quot;, &quot;350&quot;, &quot;jsonurl&quot;, &quot;../Data/DrillDownSSData.json&quot;);
 
-          // Render the chart.
-          Literal1.Text = sales.Render();
-      }
-  }
+	        // Render the chart.
+	        Literal1.Text = sales.Render();
+	    }
+	}
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-
-  ```
-  </div>
-
-  <div class='tab xml-tab'>
-```javascript
-    
-    Imports System.Collections
+<div class='tab xml-tab'>
+<pre><code class="language-vb">
+	Imports System.Collections
     Imports System.Configuration
     Imports System.Data
     Imports System.Web
@@ -145,16 +142,16 @@ The data structure that goes into the code behind **../DrillDownExample/Default.
             ' For a head-start, we've kept this example very simple.
 
             ' Initialize chart - Column 2D Chart with data from Data/DrillDownSSData.json
-            Dim sales As New Chart("column2d", "myChart", "600", "350", "jsonurl", "../../Data/DrillDownSSData.json")
+            Dim sales As New Chart(&quot;column2d&quot;, &quot;myChart&quot;, &quot;600&quot;, &quot;350&quot;, &quot;jsonurl&quot;, &quot;../../Data/DrillDownSSData.json&quot;)
             ' Render the chart
             Literal1.Text = sales.Render()
         End Sub
     End Class
-
-  ```
-  </div>
-
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
+</div>
+</div>
 
-<p class="text-info"> To read on how drill-down charts are created, click [here]{% linkTo tutorials/advanced-charting/drill-down/simple-drill-down.md %}. </p>
+> To read on how drill-down charts are created, click [here](/advanced-charting/drill-down/simple-drill-down).

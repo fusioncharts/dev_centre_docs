@@ -10,9 +10,9 @@ A funnel chart is used to plot streamlined data. For example, it can be used to 
 
 In this section, you will be introduced to the:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/funnel-chart/introduction.html#basics-of-a-funnel-chart">Basics of a funnel chart</a>
+* <a href="/gauge-and-widgets-guide/funnel-chart/introduction#basics-of-a-funnel-chart" class="smoth-scroll">Basics of a funnel chart</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/funnel-chart/introduction.html#salient-features">Features of a funnel chart</a>
+* <a href="/gauge-and-widgets-guide/funnel-chart/introduction#salient-features" class="smoth-scroll">Features of a funnel chart</a>
 
 ## Basics of a Funnel Chart
 
@@ -26,23 +26,23 @@ A streamline funnel chart to show the purchase-conversion analysis looks like th
 
 The funnel chart incorporates the following features:
 
-* [Interactive funnel slices]{% linkTo tutorials/gauge-and-widgets-guide/funnel-chart/configuring-chart.md %}, which when clicked can separate from the main funnel
+* [Interactive funnel slices](/gauge-and-widgets-guide/funnel-chart/configuring-chart), which when clicked can separate from the main funnel
 
-* Option to plot funnel slices as [hollow]{% linkTo tutorials/gauge-and-widgets-guide/funnel-chart/configuring-chart.md %} or [filled]{% linkTo tutorials/gauge-and-widgets-guide/funnel-chart/configuring-chart.md %}
+* Option to plot funnel slices as [hollow](/gauge-and-widgets-guide/funnel-chart/configuring-chart)
 
 * Option to set same slant angle for each funnel slice (or make them dependent on data)
 
-* Ability to seamlessly [convert 3D funnel to 2D funnel]{% linkTo tutorials/gauge-and-widgets-guide/funnel-chart/configuring-chart.md %}, by right clicking on the chart and selecting `View 2D`
+* Ability to seamlessly [convert 3D funnel to 2D funnel](/gauge-and-widgets-guide/funnel-chart/configuring-chart), by right clicking on the chart and selecting `View 2D`
 
-* Option to render the funnel in 2D mode with more control over the [border]{% linkTo tutorials/gauge-and-widgets-guide/funnel-chart/configuring-chart.md %} and fill properties
+* Option to render the funnel in 2D mode with more control over the [border](/gauge-and-widgets-guide/funnel-chart/configuring-chart) and fill properties
 
 * Option to show values as actual values or in percentage
 
-* Option to show a value as a [percentage of the first value or the previous value]{% linkTo tutorials/gauge-and-widgets-guide/funnel-chart/configuring-chart.md %}.
+* Option to show a value as a [percentage of the first value or the previous value](/gauge-and-widgets-guide/funnel-chart/configuring-chart).
 
 * Smart labels to avoid overlapping of funnel labels
 
-* Option to [place labels at the side or at the center]{% linkTo tutorials/gauge-and-widgets-guide/funnel-chart/configuring-chart.md %} of the funnel chart
+* Option to [place labels at the side or at the center](/gauge-and-widgets-guide/funnel-chart/configuring-chart) of the funnel chart
 
 * Custom tool text for each funnel slice
 

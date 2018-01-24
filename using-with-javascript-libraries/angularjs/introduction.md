@@ -58,7 +58,7 @@ In the snippet above, it is assumed that the chart has to be added inside a cont
 
 In the above code snippet, the directive is bound to the datasource scope variable. The variable, however, has not been defined yet.
 
-In your controller, set the datasource using the regular FusionCharts JSON format (see [this tutorial]{% linkTo tutorials/getting-started/building-your-first-chart.md %} for a general introduction to this format).
+In your controller, set the datasource using the regular FusionCharts JSON format (see [this tutorial](/getting-started/building-your-first-chart) for a general introduction to this format).
 
 ```javascript
 app.controller('MyController', function($scope) {

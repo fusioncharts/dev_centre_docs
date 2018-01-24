@@ -15,11 +15,11 @@ In FusionCharts Suite XT, all charts and gauges can resize dynamically when the 
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges.html#configuring-gauges-for-dynamic-resizing">Configure gauges for dynamic resizing</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges#configuring-gauges-for-dynamic-resizing" class="smoth-scroll">Configure gauges for dynamic resizing</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges.html#dynamic-resizing-of-gauges-with-manual-values-specified-for-various-gauge-elements">Resize gauges, that have manual values specified for various gauge elements, dynamically</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges#dynamic-resizing-of-gauges-with-manual-values-specified-for-various-gauge-elements" class="smoth-scroll">Resize gauges, that have manual values specified for various gauge elements, dynamically</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges.html#using-js-api-function-resizeto-for-resizing-charts">Use the JS API function resizeTo() for resizing charts</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges#using-js-api-function-resizeto-for-resizing-charts" class="smoth-scroll">Use the JS API function resizeTo() for resizing charts</a>
 
 ## Configuring Gauges for Dynamic Resizing
 
@@ -61,7 +61,7 @@ Two input fields have been rendered with the gauge to enter the target width and
 
 ## Dynamic Resizing of Gauges with Manual Values Specified for Various Gauge Elements
 
-You can configure the various functional and cosmetic properties of gauge elements by manually specifying values for each. For example, you can configure the gauge [radius]{% linkTo tutorials/gauge-and-widgets-guide/angular-gauge/configuring-dials.md %}, the [dial radius]{% linkTo tutorials/gauge-and-widgets-guide/angular-gauge/configuring-dials.md %}, the [tick value distance]{% linkTo tutorials/gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.md %}, the [gauge origin]{% linkTo tutorials/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.md %} etc. Ideally, you set these values based on specific width and height dimensions for the gauge. We name these dimensions as the original width and the original height of the gauge.
+You can configure the various functional and cosmetic properties of gauge elements by manually specifying values for each. For example, you can configure the gauge [radius](/gauge-and-widgets-guide/angular-gauge/configuring-dials) etc. Ideally, you set these values based on specific width and height dimensions for the gauge. We name these dimensions as the original width and the original height of the gauge.
 
 By default, a gauge set with manually-specified positions and size, when rendered initially, draws itself with all the elements based on the values provided in the JSON/XML. It does not scale its coordinates and other gauge elements. When this gauge is resized, it scales the manually specified values or coordinates based on the dimensions of the initially rendered gauge, that is, the width and height of the gauge when rendered for the first time. Thus, scaling of the various manually configured elements of a gauge will vary and may create problems when the initial dimensions of the gauge are different from the original width and height of the gauge.
 

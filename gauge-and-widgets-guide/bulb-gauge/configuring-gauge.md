@@ -10,19 +10,19 @@ FusionCharts Suite XT allows you to customize several functional and cosmetic pr
 
 In this section you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/configuring-gauge.html#configuring-the-gauge-border">Configure the gauge border</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/configuring-gauge#configuring-the-gauge-border" class="smoth-scroll">Configure the gauge border</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/configuring-gauge.html#using-gradient-fill-mix-for-the-gauge-border">Use the gradient fill mix for the gauge border</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/configuring-gauge#using-gradient-fill-mix-for-the-gauge-border" class="smoth-scroll">Use the gradient fill mix for the gauge border</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/configuring-gauge.html#configuring-the-origin-and-the-radius-of-the-bulb-gauge">Configure the Origin and the Radius of the Bulb Gauge</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/configuring-gauge#configuring-the-origin-and-the-radius-of-the-bulb-gauge" class="smoth-scroll">Configure the Origin and the Radius of the Bulb Gauge</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/configuring-gauge.html#rendering-the-bulb-gauge-in-2d">Render the bulb gauge in 2D</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/configuring-gauge#rendering-the-bulb-gauge-in-2d" class="smoth-scroll">Render the bulb gauge in 2D</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/configuring-gauge.html#placing-the-gauge-value-inside-the-gauge">Place the gauge value inside the gauge</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/configuring-gauge#placing-the-gauge-value-inside-the-gauge" class="smoth-scroll">Place the gauge value inside the gauge</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/configuring-gauge.html#rendering-the-range-name-as-the-gauge-label">Show range name instead of numerical value</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/configuring-gauge#rendering-the-range-name-as-the-gauge-label" class="smoth-scroll">Show range name instead of numerical value</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/configuring-gauge.html#configuring-the-hover-effect">Configure hover effects</a>
+* <a href="/gauge-and-widgets-guide/bulb-gauge/configuring-gauge#configuring-the-hover-effect" class="smoth-scroll">Configure hover effects</a>
 
 ## Configuring the Gauge Border
 

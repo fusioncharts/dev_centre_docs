@@ -12,13 +12,13 @@ FusionCharts Suite XT allows you to customize the five summary numbers and their
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-the-five-summary-numbers.html#showinghiding-the-five-summary-numbers">Show/hide the five summary numbers</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-the-five-summary-numbers#showinghiding-the-five-summary-numbers" class="smoth-scroll">Show/hide the five summary numbers</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-the-five-summary-numbers.html#customizing-the-median-q2">Customize the median</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-the-five-summary-numbers#customizing-the-median-q2" class="smoth-scroll">Customize the median</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-the-five-summary-numbers.html#customizing-the-upper-and-lower-quartiles-q1-and-q3">Customize the upper and lower quartiles (Q1 and Q3)</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-the-five-summary-numbers#customizing-the-upper-and-lower-quartiles-q1-and-q3" class="smoth-scroll">Customize the upper and lower quartiles (Q1 and Q3)</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-the-five-summary-numbers.html#customizing-the-minimum-and-maximum-numbers-lower-and-upper-whiskers">Customize the minimum and maximum numbers (lower and upper whiskers)</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-the-five-summary-numbers#customizing-the-minimum-and-maximum-numbers-lower-and-upper-whiskers" class="smoth-scroll">Customize the minimum and maximum numbers (lower and upper whiskers)</a>
 
 ## Showing/Hiding the Five Summary Numbers
 

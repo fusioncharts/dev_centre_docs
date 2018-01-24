@@ -10,29 +10,29 @@ FusionCharts Suite XT allows you to configure the axis limits and division inter
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/configuring-drag-able-charts.html#changing-axis-limits">Change axis limits</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/configuring-drag-able-charts.html#managing-chart-limits-using-javascript-api">Manage chart limits using JavaScript API</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/configuring-drag-able-charts.html#snapping-to-the-nearest-divisional-lines">Snap to the nearest division interval</a>
+* <a href="/chart-guide/drag-able-charts/configuring-drag-able-charts#changing-axis-limits" class="smoth-scroll">Change axis limits</a>
+* <a href="/chart-guide/drag-able-charts/configuring-drag-able-charts#managing-chart-limits-using-javascript-api" class="smoth-scroll">Manage chart limits using JavaScript API</a>
+* <a href="/chart-guide/drag-able-charts/configuring-drag-able-charts#snapping-to-the-nearest-divisional-lines" class="smoth-scroll">Snap to the nearest division interval</a>
 
 ## Changing Axis Limits
 
 The chart, by default, calculates the y-axis upper and lower limits based on the data provided to it. If you want any column to assume a value not covered within this axis range, you can increase or decrease the limits using the menu button at the top-right of the chart.
 
-![image alt text]({{ site.baseurl }}assets/images/chart-guide-drag-able-charts-configuring-drag-able-charts-image-1.jpg)
+![image alt text](/assets/images/chart-guide-drag-able-charts-configuring-drag-able-charts-image-1.jpg)
 
 When the menu button is clicked, a pop-up with the options to increase or decrease the upper and lower limits is revealed. Clicking on this menu button will reveal a menu with the options to increase or decrease the upper and lower limits.
 
-![image alt text]({{ site.baseurl }}assets/images/chart-guide-drag-able-charts-configuring-drag-able-charts-image-2.jpg)
+![image alt text](/assets/images/chart-guide-drag-able-charts-configuring-drag-able-charts-image-2.jpg)
 
 When you select any of the above options, the chart limits are increased or decreased using auto-calculated intervals. However, If you want to set manual values for the upper/lower limits, you can just click the limits and edit them directly.
 
-![image alt text]({{ site.baseurl }}assets/images/chart-guide-drag-able-charts-configuring-drag-able-charts-image-3.jpg)
+![image alt text](/assets/images/chart-guide-drag-able-charts-configuring-drag-able-charts-image-3.jpg)
 
-![image alt text]({{ site.baseurl }}assets/images/chart-guide-drag-able-charts-configuring-drag-able-charts-image-4.jpg)
+![image alt text](/assets/images/chart-guide-drag-able-charts-configuring-drag-able-charts-image-4.jpg)
 
 If you enter a limit value which cannot be accepted by the chart, the value will turn red to indicate that the value can not be accepted.
 
-![image alt text]({{ site.baseurl }}assets/images/chart-guide-drag-able-charts-configuring-drag-able-charts-image-5.png)
+![image alt text](/assets/images/chart-guide-drag-able-charts-configuring-drag-able-charts-image-5.png)
 
 ## Managing Chart Limits Using JavaScript API
 

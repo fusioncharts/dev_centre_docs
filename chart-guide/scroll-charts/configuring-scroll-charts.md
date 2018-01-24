@@ -10,11 +10,11 @@ FusionCharts Suite XT allows you to customize several functional and cosmetic pr
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/scroll-charts/configuring-scroll-charts.html#configuring-the-number-of-visible-data-plots">Configure the number of visible data plots</a>
+* <a href="/chart-guide/scroll-charts/configuring-scroll-charts#configuring-the-number-of-visible-data-plots" class="smoth-scroll">Configure the number of visible data plots</a>
 
-* <a href="{{ site.baseurl }}chart-guide/scroll-charts/configuring-scroll-charts.html#rendering-a-scroll-bar-with-the-gradient-effect">Render a scroll bar with gradient effect</a>
+* <a href="/chart-guide/scroll-charts/configuring-scroll-charts#rendering-a-scroll-bar-with-the-gradient-effect" class="smoth-scroll">Render a scroll bar with gradient effect</a>
 
-* <a href="{{ site.baseurl }}chart-guide/scroll-charts/configuring-scroll-charts.html#customizing-the-scroll-bar">Customize the scroll bar</a>
+* <a href="/chart-guide/scroll-charts/configuring-scroll-charts#customizing-the-scroll-bar" class="smoth-scroll">Customize the scroll bar</a>
 
 ## Configuring the Number of Visible Data Plots
 

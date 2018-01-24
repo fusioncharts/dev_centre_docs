@@ -1,0 +1,22 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/mangystau
+
+Map Name: Mangystau
+Dimensions (Width x Height): 421x391
+
+
+
+{% embed_spec_map mangystau-map.js %}
+
+### List of Entities
+
+ Id | Short label | Label
+---|---|---
+KZ.MG.BE|BE|Beyneu
+KZ.MG.KA|KA|Karakiya
+KZ.MG.MA|MA|Mangystau
+KZ.MG.MU|MU|Munaily
+KZ.MG.TU|TU|Tupkaragan

@@ -10,15 +10,15 @@ FusionCharts Suite XT allows you to configure the functional and cosmetic proper
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/bubble-and-xy-charts/configuring-bubble-and-xy-charts.html#displaying-labels-on-bubbles">Display labels on bubbles</a>
+* <a href="/chart-guide/bubble-and-xy-charts/configuring-bubble-and-xy-charts#displaying-labels-on-bubbles" class="smoth-scroll">Display labels on bubbles</a>
 
-* <a href="{{ site.baseurl }}chart-guide/bubble-and-xy-charts/configuring-bubble-and-xy-charts.html#segmenting-the-x-axis-of-bubblescatter-charts-into-categorical-zones">Segment the x-axis into categorical zones</a>
+* <a href="/chart-guide/bubble-and-xy-charts/configuring-bubble-and-xy-charts#segmenting-the-x-axis-of-bubblescatter-charts-into-categorical-zones" class="smoth-scroll">Segment the x-axis into categorical zones</a>
 
-* <a href="{{ site.baseurl }}chart-guide/bubble-and-xy-charts/configuring-bubble-and-xy-charts.html#configuring-the-x-axis-labels-of-bubblescatter-charts">Configure the x-axis labels</a>
+* <a href="/chart-guide/bubble-and-xy-charts/configuring-bubble-and-xy-charts#configuring-the-x-axis-labels-of-bubblescatter-charts" class="smoth-scroll">Configure the x-axis labels</a>
 
-* <a href="{{ site.baseurl }}chart-guide/bubble-and-xy-charts/configuring-bubble-and-xy-charts.html#configuring-the-x-axis-vertical-divisional-lines">Configure the x-axis vertical divisional lines</a>
+* <a href="/chart-guide/bubble-and-xy-charts/configuring-bubble-and-xy-charts#configuring-the-x-axis-vertical-divisional-lines" class="smoth-scroll">Configure the x-axis vertical divisional lines</a>
 
-* <a href="{{ site.baseurl }}chart-guide/bubble-and-xy-charts/configuring-bubble-and-xy-charts.html#connecting-scatter-plots-by-a-line-in-xy-scatter-charts">Connect scatter plots in a scatter chart</a>
+* <a href="/chart-guide/bubble-and-xy-charts/configuring-bubble-and-xy-charts#connecting-scatter-plots-by-a-line-in-xy-scatter-charts" class="smoth-scroll">Connect scatter plots in a scatter chart</a>
 
 ## Displaying Labels on Bubbles
 

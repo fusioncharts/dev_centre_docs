@@ -4,6 +4,7 @@ title: Your First Chart | FusionCharts
 description: This article talks about creating charts which can be made using any real life data. The article also contains steps to download FusionCharts.
 heading: Your First Chart
 chartPresent: true
+breadcrumb: [["Home", "/"], ["Your First Chart"]]
 ---
 
 Let us build our first chart using FusionCharts Suite XT! Throughout this documentation, we will create charts for a fictional supermarket, Harry's SuperMart, so that Harry, the owner of the supermarket, can make more sense of the data captured at various touchpoints in his supermarket. This data, when processed and presented effectively, can give Harry actionable insights for effective decision-making.
@@ -33,9 +34,15 @@ December| $730,000
 
 Let's now get to building the chart. There are 5 simple steps to building a chart using FusionCharts Suite XT:
 
+1. <a href="/getting-started/building-your-first-chart#installing-fusioncharts-suite-xt-for-your-application" class="smoth-scroll">Installing FusionCharts Suite XT for your application</a>
+2. <a href="/getting-started/building-your-first-chart#converting-your-tabular-data-to-fusioncharts-suite-xt-jsonxml-format" class="smoth-scroll">Converting your data to a JSON or XML format</a>
+3. <a href="/getting-started/building-your-first-chart#including-fusioncharts-suite-xt-library-in-your-page" class="smoth-scroll">Including the FusionCharts Suite XT JavaScript library in your HTML page</a>
+4. <a href="/getting-started/building-your-first-chart#creating-a-container-for-your-chart-in-the-web-page" class="smoth-scroll">Creating a container `<div>` for the chart</a>
+5. <a href="/getting-started/building-your-first-chart#creating-an-instance-of-the-chart" class="smoth-scroll">Using the new `FusionCharts()` constructor to create the chart instance, and then calling the `render()` method</a>
+
 ### Installing FusionCharts Suite XT for your application
 
-To check whether you have FusionCharts Suite XT installed for your web application, as detailed [here]{% linkTo tutorials/getting-started/installation.md %}, check for the following files in your `fusioncharts` folder:
+To check whether you have FusionCharts Suite XT installed for your web application, as detailed [here](/getting-started/installation), check for the following files in your `fusioncharts` folder:
 
   * `fusioncharts.charts.js`
   * `fusioncharts.js`
@@ -92,8 +99,8 @@ The final step is to create an instance of the chart type as `column2d`, set the
 The following code does the trick.
 
 ```javascript
-FusionCharts.ready(function(){
-    var revenueChart = new FusionCharts({
+  FusionCharts.ready(function(){
+      var revenueChart = new FusionCharts({
         "type": "column2d",
         "renderAt": "chartContainer",
         "width": "500",
@@ -281,7 +288,6 @@ In case something went wrong and you are unable to see the chart, check for the 
 
  * If you get a __Loading Data__ or __Error in loading data__ message, check whether your JSON data structure is correct, and there are no conflicts related to quotation marks in your code.
 
-Click here for more information on [Troubleshooting]{% linkTo tutorials/troubleshooting/debugger.md %}.
+Click here for more information on [Troubleshooting](/troubleshooting/debugger).
 
 Now that Harry can monitor his monthly revenues using this interactive chart, let's build a gauge to show him the customer satisfaction score in the next section.
-

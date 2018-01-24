@@ -12,13 +12,13 @@ In a box and whisker chart, along with the dataset seriesname, the legend also s
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-mean-deviation.html#showinghiding-the-mean-deviation-icon">Show/hide the mean deviation icon in the legend</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-mean-deviation#showinghiding-the-mean-deviation-icon" class="smoth-scroll">Show/hide the mean deviation icon in the legend</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-mean-deviation.html#customizing-the-mean-deviation-icon">Customize the mean deviation icon</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-mean-deviation#customizing-the-mean-deviation-icon" class="smoth-scroll">Customize the mean deviation icon</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-mean-deviation.html#drawing-mean-deviation-connectors">Draw mean deviation connectors</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-mean-deviation#drawing-mean-deviation-connectors" class="smoth-scroll">Draw mean deviation connectors</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-mean-deviation.html#connecting-null-data">Connect null data</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-mean-deviation#connecting-null-data" class="smoth-scroll">Connect null data</a>
 
 ## Showing/Hiding the Mean Deviation Icon
 

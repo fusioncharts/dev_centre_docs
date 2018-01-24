@@ -10,13 +10,13 @@ Trend points are elements that you use to show a target value on the gauge. For 
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/adding-trend-points.html#adding-a-simple-trend-point">Add a simple trend point</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/adding-trend-points#adding-a-simple-trend-point" class="smoth-scroll">Add a simple trend point</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/adding-trend-points.html#showing-trend-markers">Show trend markers</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/adding-trend-points#showing-trend-markers" class="smoth-scroll">Show trend markers</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/adding-trend-points.html#creating-a-trend-arc">Create trend arcs</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/adding-trend-points#creating-a-trend-arc" class="smoth-scroll">Create trend arcs</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/adding-trend-points.html#customizing-a-trend-arc">Customize trend arcs</a>
+* <a href="/gauge-and-widgets-guide/angular-gauge/adding-trend-points#customizing-a-trend-arc" class="smoth-scroll">Customize trend arcs</a>
 
 ## Adding a Simple Trend Point
 

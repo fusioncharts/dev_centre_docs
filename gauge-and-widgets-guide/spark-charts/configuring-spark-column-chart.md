@@ -10,13 +10,13 @@ FusionCharts Suite XT allows you to customize several cosmetic and functional pr
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart.html#configuring-period-blocks-for-the-chart">Configure period blocks</a>
+* <a href="/gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart#configuring-period-blocks-for-the-chart" class="smoth-scroll">Configure period blocks</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart.html#configuring-the-high-and-low-columns">Configure the high and low columns</a>
+* <a href="/gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart#configuring-the-high-and-low-columns" class="smoth-scroll">Configure the high and low columns</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart.html#adding-trend-linestrend-zones">Add trend-lines/trend-zones</a>
+* <a href="/gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart#adding-trend-linestrend-zones" class="smoth-scroll">Add trend-lines/trend-zones</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart.html#configuring-hover-effects-for-the-chart">Configure hover effects</a>
+* <a href="/gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart#configuring-hover-effects-for-the-chart" class="smoth-scroll">Configure hover effects</a>
 
 ## Configuring Period Blocks for the Chart
 

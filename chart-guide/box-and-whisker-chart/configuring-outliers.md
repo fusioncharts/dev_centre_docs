@@ -10,9 +10,9 @@ Outliers are values that are numerically distant from the set of numbers provide
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-outliers.html#customizing-the-outlier-icon">Customize the outlier icon</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-outliers#customizing-the-outlier-icon" class="smoth-scroll">Customize the outlier icon</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-outliers.html#showing-outliers-beyond-the-range-of-the-y-axis">Show outliers beyond the range of the y-axis</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-outliers#showing-outliers-beyond-the-range-of-the-y-axis" class="smoth-scroll">Show outliers beyond the range of the y-axis</a>
 
 ## Customizing the Outlier Icon
 

@@ -10,11 +10,11 @@ A box and whisker chart is a statistical chart that is used to examine and summa
 
 In this section, you will be introduced to the:
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/introduction.html#basics-of-a-box-and-whisker-chart">Basics of a box and whisker chart</a>
+* <a href="/chart-guide/box-and-whisker-chart/introduction#basics-of-a-box-and-whisker-chart" class="smoth-scroll">Basics of a box and whisker chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/introduction.html#features-of-a-box-and-whisker-chart">Features of a box and whisker chart</a>
+* <a href="/chart-guide/box-and-whisker-chart/introduction#features-of-a-box-and-whisker-chart" class="smoth-scroll">Features of a box and whisker chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/introduction.html#five-number-summary-principle">Five-number summary principle for plotting data on the box and whisker chart</a>
+* <a href="/chart-guide/box-and-whisker-chart/introduction#five-number-summary-principle" class="smoth-scroll">Five-number summary principle for plotting data on the box and whisker chart</a>
 
 ## Basics of a Box and Whisker Chart
 
@@ -42,7 +42,7 @@ A simple box and whisker chart looks like this:
 
 The 'five-number summary' principle is used to plot data on the box and whisker charts. This principle helps to provide a statistical summary for a given set of numbers. It gives information about the range (minimum and maximum numbers), the center (median), and the spread (upper and lower quartiles) for the set of values provided. A simple illustration of a box and whisker plot is given below:
 
-![image alt text]({{ site.baseurl }}assets/images/chart-guide-box-and-whisker-chart-introduction-1.jpg)
+![image alt text](/assets/images/chart-guide-box-and-whisker-chart-introduction-1.jpg)
 
 <p class="text-info">There is another principle, named as the 'Seven-number Summary', which is not used in the current implementation.</p>
 
@@ -50,15 +50,15 @@ On a box and whisker chart, three out of the five summary numbers are displayed 
 
 Apart from the five summary numbers the box and whisker chart allows you to display the following statistical figures on the chart:
 
-* [Mean]{% linkTo tutorials/chart-guide/box-and-whisker-chart/configuring-mean.md %}
+* [Mean](/chart-guide/box-and-whisker-chart/configuring-mean)
 
-* [Mean Deviation]{% linkTo tutorials/chart-guide/box-and-whisker-chart/configuring-mean-deviation.md %}
+* [Mean Deviation](/chart-guide/box-and-whisker-chart/configuring-mean-deviation)
 
-* [Standard Deviation]{% linkTo tutorials/chart-guide/box-and-whisker-chart/configuring-standard-deviation.md %}
+* [Standard Deviation](/chart-guide/box-and-whisker-chart/configuring-standard-deviation)
 
-* [Quartile Deviation]{% linkTo tutorials/chart-guide/box-and-whisker-chart/configuring-quartile-deviation.md %}
+* [Quartile Deviation](/chart-guide/box-and-whisker-chart/configuring-quartile-deviation)
 
-* [Outliers]{% linkTo tutorials/chart-guide/box-and-whisker-chart/configuring-outliers.md %}
+* [Outliers](/chart-guide/box-and-whisker-chart/configuring-outliers)
 
 To execute the five-number summary principle, we use the quartiles method. Using this method, a set of numbers is divided into four equal parts by three quartiles - Q1 (lower quartile), Q2 (median), and Q3 (upper quartile).
 

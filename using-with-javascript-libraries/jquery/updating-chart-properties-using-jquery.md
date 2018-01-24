@@ -36,11 +36,11 @@ In this section, you will be shown how you can use each of these methods.
 
 The `updateFusionCharts` method accepts new configuration values as a set of key-value pairs.  To understand how this method works, we will look at how you can:
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/jquery/updating-chart-properties-using-jquery.html#changing-the-type-of-an-existing-chart">Change the type of an existing chart</a>
+* <a href="/using-with-javascript-libraries/jquery/updating-chart-properties-using-jquery#changing-the-type-of-an-existing-chart" class="smoth-scroll">Change the type of an existing chart</a>
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/jquery/updating-chart-properties-using-jquery.html#changing-the-data-for-an-existing-chart">Change the data for an existing chart</a>
+* <a href="/using-with-javascript-libraries/jquery/updating-chart-properties-using-jquery#changing-the-data-for-an-existing-chart" class="smoth-scroll">Change the data for an existing chart</a>
 
-* <a href="{{ site.baseurl }}using-with-javascript-libraries/jquery/updating-chart-properties-using-jquery.html#changing-the-width-and-the-height-at-run-time">Change the width and height of an existing chart</a>
+* <a href="/using-with-javascript-libraries/jquery/updating-chart-properties-using-jquery#changing-the-width-and-the-height-at-run-time" class="smoth-scroll">Change the width and height of an existing chart</a>
 
 ### Changing the Type of an Existing Chart
 

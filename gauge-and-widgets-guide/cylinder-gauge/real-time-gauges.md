@@ -14,13 +14,13 @@ The gauges in the FusionCharts Suite XT are real-time gauges that can continuous
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/real-time-gauges.html#configuring-real-time-updates-using-javascript-api">Configure real-time updates using JavaScript API</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/real-time-gauges#configuring-real-time-updates-using-javascript-api" class="smoth-scroll">Configure real-time updates using JavaScript API</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/real-time-gauges.html#configuring-real-time-updates-using-server-side-script">Configure real-time updates using server-side script</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/real-time-gauges#configuring-real-time-updates-using-server-side-script" class="smoth-scroll">Configure real-time updates using server-side script</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/real-time-gauges.html#configuring-real-time-events">Configure real-time events</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/real-time-gauges#configuring-real-time-events" class="smoth-scroll">Configure real-time events</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/real-time-gauges.html#troubleshooting-real-time-gauges">Troubleshoot real-time gauges</a>
+* <a href="/gauge-and-widgets-guide/cylinder-gauge/real-time-gauges#troubleshooting-real-time-gauges" class="smoth-scroll">Troubleshoot real-time gauges</a>
 
 ## Configuring Real-time Updates using JavaScript API
 
@@ -92,7 +92,7 @@ The new attributes that need to be added for receiving real-time updates from th
   <tr>
     <td>`dataStamp`</td>
     <td>This attribute is used to set a constantly changing data stamp that can be added to the real-time data URL, so as to maintain a state.
-For more information, read the {% linkTo tutorials/chart-guide/real-time-charts/adding-data-stamp.md %} article. </td>
+For more information, read the (/chart-guide/real-time-charts/adding-data-stamp) article. </td>
   </tr>
 </table>
 

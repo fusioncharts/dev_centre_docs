@@ -10,13 +10,13 @@ An error chart is used to show the extent of uncertainty in information relative
 
 In this section, you will be introduced to the:
 
-* <a href="{{ site.baseurl }}chart-guide/error-charts/introduction.html#basics-of-an-error-chart">Basics of an error chart</a>
+* <a href="/chart-guide/error-charts/introduction#basics-of-an-error-chart" class="smoth-scroll">Basics of an error chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/error-charts/introduction.html#use-of-error-charts">Use of error charts</a>
+* <a href="/chart-guide/error-charts/introduction#use-of-error-charts" class="smoth-scroll">Use of error charts</a>
 
-* <a href="{{ site.baseurl }}chart-guide/error-charts/introduction.html#types-of-error-charts">Types of error charts</a>
+* <a href="/chart-guide/error-charts/introduction#types-of-error-charts" class="smoth-scroll">Types of error charts</a>
 
-* <a href="{{ site.baseurl }}chart-guide/error-charts/introduction.html#features-of-an-error-chart">Features of an error chart</a>
+* <a href="/chart-guide/error-charts/introduction#features-of-an-error-chart" class="smoth-scroll">Features of an error chart</a>
 
 ## Basics of an Error Chart
 
@@ -40,11 +40,11 @@ Following are a few areas where error charts are commonly used:
 
 At present, there are three types of multi-series error charts available in the FusionCharts XT Suite:
 
-* [Error bar chart]{% linkTo attrs.md chart=errorbar2d %}
+* [Error bar chart](/chart-attributes?chart=errorbar2d)
 
-* [Error line chart]{% linkTo attrs.md chart=errorline %}
+* [Error line chart](/chart-attributes?chart=errorline)
 
-* [Error scatter chart (XY plot)]{% linkTo attrs.md chart=errorscatter %}
+* [Error scatter chart (XY plot)](/chart-attributes?chart=errorscatter)
 
 ### Error Bar Chart
 

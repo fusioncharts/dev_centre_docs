@@ -4,6 +4,7 @@ title: Building a Dashboard | FusionCharts
 description: The consolidated view of having multiple related charts in a page is called a dashboard. This section talks about building a complete dashboard.
 heading: Building a Dashboard
 chartPresent: false
+breadcrumb: [["Home", "/"], ["Building a Dashboard"]]
 ---
 
 Harry now needs a consolidated view of all the charts, gauges and maps that his team has created. This consolidated view of having multiple related charts in a page is called a dashboard. In this section, we will help his team build a complete dashboard.
@@ -41,7 +42,7 @@ For this example, we will use screenshots and the final dashboard is available t
 
 When done, the dashboard would look as under:
 
-<img src="{{ site.baseurl }}assets/images/dashboard.png" alt="Drawing" style="width: 100%;"/>
+<img src="/assets/images/dashboard.png" alt="Drawing" style="width: 100%;"/>
 
 The HTML code to build this dashboard is given here
 

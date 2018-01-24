@@ -10,9 +10,9 @@ An error bar chart is a type of an error chart used to show variations in data f
 
 In this section you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/error-charts/creating-error-bar-chart.html#creating-a-simple-error-bar-chart">Create a simple error bar chart</a>
+* <a href="/chart-guide/error-charts/creating-error-bar-chart#creating-a-simple-error-bar-chart" class="smoth-scroll">Create a simple error bar chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/error-charts/creating-error-bar-chart.html#error-bar-configuration">Configure properties of error bars</a>
+* <a href="/chart-guide/error-charts/creating-error-bar-chart#error-bar-configuration" class="smoth-scroll">Configure properties of error bars</a>
 
 ## Creating a Simple Error Bar Chart
 

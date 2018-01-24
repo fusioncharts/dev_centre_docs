@@ -1,0 +1,27 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/mountainprovince
+
+Map Name: Mountain Province
+Dimensions (Width x Height): 610x570
+
+
+
+{% embed_spec_map mountainprovince-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+PH.MT.BR | BR | Barlig
+PH.MT.BU | BU | Bauko
+PH.MT.BS | BS | Besao
+PH.MT.BN | BN | Bontoc
+PH.MT.NT | NT | Natonin
+PH.MT.PR | PR | Paracelis
+PH.MT.SB | SB | Sabangan
+PH.MT.SD | SD | Sadanga
+PH.MT.SG | SG | Sagada
+PH.MT.TD | TD | Tadian

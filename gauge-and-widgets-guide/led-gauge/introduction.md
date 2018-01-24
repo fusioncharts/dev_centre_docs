@@ -12,9 +12,9 @@ LED gauges are of two types - horizontal LED gauges and vertical LED gauges. As 
 
 In this section, you will be introduced to the:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/led-gauge/introduction.html#basics-of-led-gauges">Basics of LED gauges</a>
+* <a href="/gauge-and-widgets-guide/led-gauge/introduction#basics-of-led-gauges" class="smoth-scroll">Basics of LED gauges</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/led-gauge/introduction.html#elements-of-led-gauges">Elements of LED gauges</a>
+* <a href="/gauge-and-widgets-guide/led-gauge/introduction#elements-of-led-gauges" class="smoth-scroll">Elements of LED gauges</a>
 
 ## Basics of LED Gauges
 
@@ -44,7 +44,7 @@ An LED gauge consists of the following elements:
 
 The image below shows a standard horizontal LED gauge with the basic elements of the gauge labeled.
 
-![image LED gauge - basic elements]({{ site.baseurl }}assets/images/led-gauge-introduction-1.jpg)
+![image LED gauge - basic elements](/assets/images/led-gauge-introduction-1.jpg)
 
 ### Color Range
 

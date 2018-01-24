@@ -10,9 +10,9 @@ Real-time charts in the FusionCharts Suite XT can be plotted for any number of d
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/multiple-datasets-and-updates.html#adding-multiple-datasets">Add multiple datasets</a>
+* <a href="/chart-guide/real-time-charts/multiple-datasets-and-updates#adding-multiple-datasets" class="smoth-scroll">Add multiple datasets</a>
 
-* <a href="{{ site.baseurl }}chart-guide/real-time-charts/multiple-datasets-and-updates.html#pushing-multiple-updates">Push multiple data updates for each dataset</a>
+* <a href="/chart-guide/real-time-charts/multiple-datasets-and-updates#pushing-multiple-updates" class="smoth-scroll">Push multiple data updates for each dataset</a>
 
 ## Adding Multiple Datasets
 
@@ -53,7 +53,7 @@ Like most other charts in the FusionCharts Suite XT, real-time charts with multi
 
 The image below is a screenshot of the above real-time chart with the Online transactions dataset hidden:
 
-![image alt text]({{ site.baseurl }}assets/images/advanced-charting-real-time-charts-multiple-datasets-and-updates-image-1.png)
+![image alt text](/assets/images/advanced-charting-real-time-charts-multiple-datasets-and-updates-image-1.png)
 
 Even when a dataset is not visible, it will continue updating itself in the background from the real-time data. Also, all alert managers associated with the dataset will continue to work.
 

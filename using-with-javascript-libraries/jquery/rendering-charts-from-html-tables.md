@@ -8,7 +8,7 @@ chartPresent: true
 
 <p style="background:rgba(249, 249, 249, 1); padding:15px; border:1px solid #888; border-bottom-width:3px; border-radius:4px; text-align:center;">FusionCharts JQuery Helper can be downloaded from <a href="http://www.fusioncharts.com/jquery-charts" target="_blank">here</a>.</p>
 
-The FusionCharts jQuery helper exposes [methods for rendering charts]{% linkTo tutorials/using-with-javascript-libraries/jquery/rendering-charts-using-jquery.md %}, where the FusionCharts constructor object is passed as an argument to the rendering methods.
+The FusionCharts jQuery helper exposes [methods for rendering charts](/using-with-javascript-libraries/jquery/rendering-charts-using-jquery), where the FusionCharts constructor object is passed as an argument to the rendering methods.
 
 An additional feature provided by the jQuery helper is the ability to convert a table containing numeric data into a relevant chart type. That is, instead of a JSON or XML data, your data source can be an HTML table.
 
@@ -110,6 +110,6 @@ $("#dataTable").convertToFusionCharts({
 
 The `convertToFusionCharts` method is used to convert the data contained in the table to the JSON/XML format, in which data is consumed by the chart. It is important to provide a valid chart container in the `renderAt` parameter in the chart configuration. If `renderAt` is not provided then the chart will be drawn next to the table. The return value of the function is a jQuery object containing all the newly created instances of FusionCharts.
 
-Refer [here]{% linkTo tutorials/using-with-javascript-libraries/jquery/api-reference.md %}{:target='_blank'} for more details on this method.
+Refer [here](/using-with-javascript-libraries/jquery/api-reference) for more details on this method.
 
-<script pagespeed_no_defer="" type="text/javascript" data-chart='true' src='{{ site.baseurl }}/resources/js/rendering-charts-from-html-tables.js'></script>
+<script pagespeed_no_defer="" type="text/javascript" data-chart='true' src='//resources/js/rendering-charts-from-html-tables.js'></script>

@@ -10,11 +10,11 @@ FusionCharts API includes several methods that allow you to fetch real-time data
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/retrieving-data.html#retrieving-a-data-set-in-the-json-format">Retrieve a data set in the JSON format</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/retrieving-data.html#retrieving-a-data-set-in-the-xml-format">Retrieve a data set in the XML format</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/retrieving-data.html#retrieving-a-data-set-in-the-csv-format">Retrieve a data set in the CSV format</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/retrieving-data.html#retrieving-data-using-the-getdatawithid-function">Retrieve data using the `getDataWithID()` method</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-able-charts/retrieving-data.html#retrieving-data-using-the-getdata-function">Retrieve data using the `getData()` method</a>
+* <a href="/chart-guide/drag-able-charts/retrieving-data#retrieving-a-data-set-in-the-json-format" class="smoth-scroll">Retrieve a data set in the JSON format</a>
+* <a href="/chart-guide/drag-able-charts/retrieving-data#retrieving-a-data-set-in-the-xml-format" class="smoth-scroll">Retrieve a data set in the XML format</a>
+* <a href="/chart-guide/drag-able-charts/retrieving-data#retrieving-a-data-set-in-the-csv-format" class="smoth-scroll">Retrieve a data set in the CSV format</a>
+* <a href="/chart-guide/drag-able-charts/retrieving-data#retrieving-data-using-the-getdatawithid-function" class="smoth-scroll">Retrieve data using the `getDataWithID()` method</a>
+* <a href="/chart-guide/drag-able-charts/retrieving-data#retrieving-data-using-the-getdata-function" class="smoth-scroll">Retrieve data using the `getData()` method</a>
 
 ## Retrieving a Data Set in the JSON Format
 

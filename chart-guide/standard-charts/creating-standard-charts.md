@@ -138,4 +138,3 @@ Given below is a brief description of the data structure needed to render a stan
     <td>It is used to specify the value for a data item. This attribute belongs to the `data` object.</td>
   </tr>
 </table>
-

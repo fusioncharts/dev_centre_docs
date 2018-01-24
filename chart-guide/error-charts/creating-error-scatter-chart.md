@@ -10,9 +10,9 @@ An error scatter chart is an XY plot chart with vertical and horizontal error ba
 
 In this section you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/error-charts/creating-error-scatter-chart.html#creating-a-simple-error-scatter-chart">Create a simple error scatter chart</a>
+* <a href="/chart-guide/error-charts/creating-error-scatter-chart#creating-a-simple-error-scatter-chart" class="smoth-scroll">Create a simple error scatter chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/error-charts/creating-error-scatter-chart.html#customizing-the-error-bar">Customize the vertical and horizontal error bars</a>
+* <a href="/chart-guide/error-charts/creating-error-scatter-chart#customizing-the-error-bar" class="smoth-scroll">Customize the vertical and horizontal error bars</a>
 
 ## Creating a Simple Error Scatter Chart
 

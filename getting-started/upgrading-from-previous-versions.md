@@ -4,6 +4,7 @@ title: Upgrading from Previous Versions | FusionCharts
 description: This section talks about how can a user upgrade his version from the previous one.
 heading: Upgrading from Previous Versions
 chartPresent: false
+breadcrumb: [["Home", "/"], ["Upgrading from Previous Versions"]]
 ---
 
 This section is for those who are using any version of FusionCharts older than v3.3.1 and upgrading to v3.4 or beyond.
@@ -61,4 +62,4 @@ The following points must be kept in mind while upgrading only a specific sub pr
 
   * __FusionMaps XT__ : If you are upgrading from an earlier version of FusionMaps XT, you must download the latest FusionMaps XT pack, copy `fusioncharts.maps.js` from the `js` folder and the specific map definition js files from the `maps` folder to your working directory and include or update that in your source code.
 
-This upgrades your earlier version of the charts to the latest version of FusionCharts XT. There are some features that are deprecated, which you can find [here]{% linkTo tutorials/getting-started/deprecated-functionalities.md%}. You may need to modify code to make use of the new features, or adapt to the deprecated functionality, especially if you have been using Flash charts.
+This upgrades your earlier version of the charts to the latest version of FusionCharts XT. There are some features that are deprecated, which you can find [here](/getting-started/deprecated-functionalities). You may need to modify code to make use of the new features, or adapt to the deprecated functionality, especially if you have been using Flash charts.

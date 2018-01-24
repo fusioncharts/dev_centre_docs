@@ -1,0 +1,25 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/beni
+
+Map Name: Beni
+Dimensions (Width x Height): 300x340
+
+
+
+{% embed_spec_map beni-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+BO.EB.CE|CE|Cercado
+BO.EB.IT|IT|Iténez
+BO.EB.GB|GB|José Ballivián
+BO.EB.MM|MM|Mamoré
+BO.EB.MR|MR|Marban
+BO.EB.MX|MX|Moxos
+BO.EB.VD|VD|Vaca Díez
+BO.EB.YC|YC|Yacuma

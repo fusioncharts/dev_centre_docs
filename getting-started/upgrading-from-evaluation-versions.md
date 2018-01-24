@@ -4,6 +4,7 @@ title: Upgrading from Evaluation Versions | FusionCharts
 description: This section is for users who have used an evaluation version of FusionCharts in their application, and are now upgrading to a commercial license.
 heading: Upgrading from Evaluation Versions
 chartPresent: false
+breadcrumb: [["Home", "/"], ["Upgrading from Evaluation Versions"]]
 ---
 
 This section is for users who have used an evaluation version of FusionCharts in their application, and are now upgrading to a commercial license. There is no feature limitation in the evaluation version of FusionCharts, except for the fact that all the charts are watermarked.
@@ -12,7 +13,7 @@ To upgrade, you must do the following:
 
 1. Replace the JavaScript files from the evaluation version, with the ones you received during purchase (can be found in the `js` folder of your download).
 
-2. If you are using an __older__ trial version of FusionCharts Suite XT (earlier than v3.4) [__the file names have changed__]{% linkTo tutorials/getting-started/upgrading-from-previous-versions.md %}. So, ensure that you have copied the following files from the `js` folder of your download:
+2. If you are using an __older__ trial version of FusionCharts Suite XT (earlier than v3.4) [__the file names have changed__](/getting-started/upgrading-from-previous-versions). So, ensure that you have copied the following files from the `js` folder of your download:
 
      * `fusioncharts.charts.js`
      * `fusioncharts.js`

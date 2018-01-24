@@ -18,13 +18,13 @@ This section focuses on how you can customize the appearance of the Marimekko ch
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/marimekko-chart/configuring-a-marimekko-chart.html#displaying-actual-data-values-instead-of-percentage-values">Display actual data values, instead of percentage values</a>
+* <a href="/chart-guide/marimekko-chart/configuring-a-marimekko-chart#displaying-actual-data-values-instead-of-percentage-values" class="smoth-scroll">Display actual data values, instead of percentage values</a>
 
-* <a href="{{ site.baseurl }}chart-guide/marimekko-chart/configuring-a-marimekko-chart.html#hiding-the-total-value-of-market-segments">Hide the sum total of the market segments</a>
+* <a href="/chart-guide/marimekko-chart/configuring-a-marimekko-chart#hiding-the-total-value-of-market-segments" class="smoth-scroll">Hide the sum total of the market segments</a>
 
-* <a href="{{ site.baseurl }}chart-guide/marimekko-chart/configuring-a-marimekko-chart.html#hiding-the-percentage-market-share-values">Hide the percentage market share value of competitors</a>
+* <a href="/chart-guide/marimekko-chart/configuring-a-marimekko-chart#hiding-the-percentage-market-share-values" class="smoth-scroll">Hide the percentage market share value of competitors</a>
 
-The section also talks about the <a href="{{ site.baseurl }}chart-guide/marimekko-chart/configuring-a-marimekko-chart.html#legend-interactivity-in-the-marimekko-chart">interactive legend</a>, __introduced for the Marimekko chart in FusionCharts v3.11.0__, works.
+The section also talks about the <a href="/chart-guide/marimekko-chart/configuring-a-marimekko-chart#legend-interactivity-in-the-marimekko-chart" class="smoth-scroll">interactive legend</a>, __introduced for the Marimekko chart in FusionCharts v3.11.0__, works.
 
 ## Displaying Actual Data Values Instead of Percentage Values
 
@@ -98,4 +98,4 @@ The Marimekko chart includes support for an interactive legend starting FusionCh
 
 For example, in the Marimekko chart shown above, if you were to hide the data plots for Washington using the legend, the data plots for California and Nevada will be automatically arranged in the available space, as shown in the image below:
 
-![Legend Interactivity in the Marimekko Chart]({{ site.baseurl }}assets/images/legend-interactivity-in-the-marimekko-chart.jpg)
+![Legend Interactivity in the Marimekko Chart](/assets/images/legend-interactivity-in-the-marimekko-chart.jpg)

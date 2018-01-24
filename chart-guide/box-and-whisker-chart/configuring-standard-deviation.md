@@ -12,15 +12,15 @@ In a box and whisker chart, along with the dataset seriesname, the legend also s
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-standard-deviation.html#showinghiding-the-standard-deviation-icon">Show/hide the standard deviation icon in the legend</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-standard-deviation#showinghiding-the-standard-deviation-icon" class="smoth-scroll">Show/hide the standard deviation icon in the legend</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-standard-deviation.html#showinghiding-individual-standard-deviation-values">Show/hide the individual standard deviation values</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-standard-deviation#showinghiding-individual-standard-deviation-values" class="smoth-scroll">Show/hide the individual standard deviation values</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-standard-deviation.html#customizing-the-standard-deviation-icon">Customize the standard deviation icon</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-standard-deviation#customizing-the-standard-deviation-icon" class="smoth-scroll">Customize the standard deviation icon</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-standard-deviation.html#drawing-standard-deviation-connectors">Draw standard deviation connectors</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-standard-deviation#drawing-standard-deviation-connectors" class="smoth-scroll">Draw standard deviation connectors</a>
 
-* <a href="{{ site.baseurl }}chart-guide/box-and-whisker-chart/configuring-standard-deviation.html#connecting-null-data">Connect null data</a>
+* <a href="/chart-guide/box-and-whisker-chart/configuring-standard-deviation#connecting-null-data" class="smoth-scroll">Connect null data</a>
 
 ## Showing/Hiding the Standard Deviation Icon
 

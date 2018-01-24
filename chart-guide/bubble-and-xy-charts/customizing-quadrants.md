@@ -10,15 +10,15 @@ FusionCharts Suite XT allows you to customize the quadrants drawn on bubble and 
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/bubble-and-xy-charts/customizing-quadrants.html#drawing-quadrants-on-bubble-and-scatter-charts">Draw quadrants at default positions</a>
+* <a href="/chart-guide/bubble-and-xy-charts/customizing-quadrants#drawing-quadrants-on-bubble-and-scatter-charts" class="smoth-scroll">Draw quadrants at default positions</a>
 
-* <a href="{{ site.baseurl }}chart-guide/bubble-and-xy-charts/customizing-quadrants.html#drawing-quadrants-at-user-defined-positions">Draw quadrants at user-defined positions</a>
+* <a href="/chart-guide/bubble-and-xy-charts/customizing-quadrants#drawing-quadrants-at-user-defined-positions" class="smoth-scroll">Draw quadrants at user-defined positions</a>
 
-* <a href="{{ site.baseurl }}chart-guide/bubble-and-xy-charts/customizing-quadrants.html#displaying-quadrant-labels">Display quadrant labels</a>
+* <a href="/chart-guide/bubble-and-xy-charts/customizing-quadrants#displaying-quadrant-labels" class="smoth-scroll">Display quadrant labels</a>
 
-* <a href="{{ site.baseurl }}chart-guide/bubble-and-xy-charts/customizing-quadrants.html#customizing-quadrant-labels">Customize quadrant labels</a>
+* <a href="/chart-guide/bubble-and-xy-charts/customizing-quadrants#customizing-quadrant-labels" class="smoth-scroll">Customize quadrant labels</a>
 
-* <a href="{{ site.baseurl }}chart-guide/bubble-and-xy-charts/customizing-quadrants.html#customizing-quadrant-lines">Customize quadrant lines</a>
+* <a href="/chart-guide/bubble-and-xy-charts/customizing-quadrants#customizing-quadrant-lines" class="smoth-scroll">Customize quadrant lines</a>
 
 ## Drawing Quadrants on Bubble and Scatter Charts
 

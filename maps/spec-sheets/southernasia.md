@@ -1,0 +1,25 @@
+---
+# Front matter (even empty) required for Jekyll to process
+---
+
+#### JavaScript Alias: maps/southernasia
+
+Map Name: Southernasia
+Dimensions (Width x Height): 640x439
+
+
+
+{% embed_spec_map southernasia-map.js %}
+
+### List of Entities
+
+ID | Short label | Label
+---|---|---|---
+93|AF|Afghanistan
+96|BD|Bangladesh
+97|BT|Bhutan
+104|IN|India
+106|IA|Iran
+115|NP|Nepal
+116|PK|Pakistan
+120|LK|Sri Lanka

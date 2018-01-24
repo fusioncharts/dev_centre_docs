@@ -39,14 +39,14 @@ To understand this, the sample drag-node chart we will use looks like this:
 
 Now, we will make the following updates to this drag-node chart:
 
-* [Add a node]{% linkTo tutorials/chart-guide/drag-node-chart/adding-and-editing-nodes.md %}, __My New Location__, using the __Add a Node__ menu item.
+* [Add a node](/chart-guide/drag-node-chart/adding-and-editing-nodes), __My New Location__, using the __Add a Node__ menu item.
 
-* [Add a connector]{% linkTo tutorials/chart-guide/drag-node-chart/adding-and-editing-connectors.md %}, __Way to SM__, between "Santa Monica" and "My New Location", using the __Add a Connector__ menu item.
+* [Add a connector](/chart-guide/drag-node-chart/adding-and-editing-connectors), __Way to SM__, between "Santa Monica" and "My New Location", using the __Add a Connector__ menu item.
 
 
 The drag-node chart rendered after making these updates looks like this:
 
- ![Updated Dragnode Chart]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-getting-data-using-javascript-image-1.jpg)
+ ![Updated Dragnode Chart](/assets/images/chart-guide-drag-node-chart-getting-data-using-javascript-image-1.jpg)
 
 Now if you wish to get the current data using the code `var jsonRtn = ourChart.getJSONData(); alert(JSON.stringify(jsonRtn));`, the updated data will be shown. The modified part of the updated data is shown below:
 

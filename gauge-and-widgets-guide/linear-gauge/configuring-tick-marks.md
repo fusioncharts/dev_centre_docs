@@ -10,17 +10,17 @@ FusionCharts Suite XT allows you to configure several functional and cosmetic pr
 
 In this section, you will be shown how to:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-tick-marks.html#showinghiding-tick-marks-and-tick-values">Show/hide tick marks and tick values</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/configuring-tick-marks#showinghiding-tick-marks-and-tick-values" class="smoth-scroll">Show/hide tick marks and tick values</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-tick-marks.html#configuring-tick-values">Configure tick values</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/configuring-tick-marks#configuring-tick-values" class="smoth-scroll">Configure tick values</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-tick-marks.html#configuring-the-position-of-tick-marks-and-tick-values">Configure the position of tick marks and values</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/configuring-tick-marks#configuring-the-position-of-tick-marks-and-tick-values" class="smoth-scroll">Configure the position of tick marks and values</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-tick-marks.html#configuring-the-number-of-major-and-minor-tick-marks">Configure the number of major and minor tick marks</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/configuring-tick-marks#configuring-the-number-of-major-and-minor-tick-marks" class="smoth-scroll">Configure the number of major and minor tick marks</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-tick-marks.html#configuring-cosmetics-for-tick-marks">Configure tick mark cosmetics</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/configuring-tick-marks#configuring-cosmetics-for-tick-marks" class="smoth-scroll">Configure tick mark cosmetics</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-tick-marks.html#configuring-the-tick-mark-and-tick-value-padding">Configure tick mark and tick value padding</a>
+* <a href="/gauge-and-widgets-guide/linear-gauge/configuring-tick-marks#configuring-the-tick-mark-and-tick-value-padding" class="smoth-scroll">Configure tick mark and tick value padding</a>
 
 ## Showing/Hiding Tick Marks and Tick Values
 

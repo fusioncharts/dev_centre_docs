@@ -7,14 +7,14 @@ chartPresent: false
 ---
 
 
-When building charts with FusionCharts Suite XT, if you run into errors, you can use {% linkTo FusionCharts.namespaces.debugger %} to trace such errors, and track the flow of events of the charts to investigate further.
+When building charts with FusionCharts Suite XT, if you run into errors, you can use (/api/fusioncharts/namespaces/debugger) to trace such errors, and track the flow of events of the charts to investigate further.
 
 Possible errors that Harry’s developers may encounter:
 
   * The location (`<div>` container) where the chart was supposed to render remains blank, even after the render() call.
   * Chart may get rendered but show messages such as “No data to display” or “Error in loading data.”
   * There may be JavaScript runtime errors on the page. preventing the scripts on page to complete execution.
-  * To trap these errors and to know what is happening within the charts, you can enable the {% linkTo FusionCharts.namespaces.debugger %}. That will assist you in finding the root cause of such unintended behavior.
+  * To trap these errors and to know what is happening within the charts, you can enable the (/api/fusioncharts/namespaces/debugger). That will assist you in finding the root cause of such unintended behavior.
 
 ### Enabling the debugger
 
@@ -38,7 +38,7 @@ An example of a message logged in the console could be: “13 `[chartobject-1]` 
 
 ### Getting additional information from the debugger logs
 
-By default, the debugger logs the the name of the event that occurred, along with the id of the chart that fired the event. By configuring the {% linkTo FusionCharts.namespaces.debugger.methods.outputFormat %} of the `debugger`, this log can be made even more informative, with details of every parameter of the events.
+By default, the debugger logs the the name of the event that occurred, along with the id of the chart that fired the event. By configuring the (/api/fusioncharts/namespaces/debugger#static-outputFormat) of the `debugger`, this log can be made even more informative, with details of every parameter of the events.
 
 To get these additional details, we tweak the code that enables the `debugger` by setting its `outputFormat` to `verbose`.
 
@@ -80,11 +80,11 @@ When the chart renders without an error, the debugger log would log things such 
 
 This log of an error-free chart shows the expected lifecycle of a chart where the framework is ready, when the chart is initialized along with its data, and when it is being updated and goes on to complete its rendering process.
 
-However, if it encounters something unexpected, the {% linkTo FusionCharts.namespaces.debugger.events.error %} and {% linkTo FusionCharts.namespaces.debugger.events.warning %} events will be logged. The additional argument of these events would contain the error code and the error message that can be looked up in our documentation to determine the probable cause of the error and its possible resolution. Other than this, there can be logs such as `dataLoadError`, `dataInvalid`, etc. that would be indicative of the nature of error a chart has faced.
+However, if it encounters something unexpected, the (/api/fusioncharts/namespaces/debugger#event-error) and (/api/fusioncharts/namespaces/debugger#event-warning) events will be logged. The additional argument of these events would contain the error code and the error message that can be looked up in our documentation to determine the probable cause of the error and its possible resolution. Other than this, there can be logs such as `dataLoadError`, `dataInvalid`, etc. that would be indicative of the nature of error a chart has faced.
 
-The `event Id` is another useful parameter that can reflect possible issues with the implementation of charts. For example, if the {% linkTo FusionCharts.events.ready %} event is logged after a chart has been initialised, it is an indication that charts were created even before the page was ready.
+The `event Id` is another useful parameter that can reflect possible issues with the implementation of charts. For example, if the (/api/fusioncharts/fusioncharts-events#static-event-ready) event is logged after a chart has been initialised, it is an indication that charts were created even before the page was ready.
 
-The absence of an expected event is also a way to trace source of error. Say, you have coded the charts to be disposed when someone switches the tab, but upon switching the tab, the {% linkTo FusionCharts.events.disposed %} event is not logged. This would indicate a possible issue with the logic and if left unchecked may cause the browser to leak memory and crash.
+The absence of an expected event is also a way to trace source of error. Say, you have coded the charts to be disposed when someone switches the tab, but upon switching the tab, the (/api/fusioncharts/fusioncharts-events#event-disposed) event is not logged. This would indicate a possible issue with the logic and if left unchecked may cause the browser to leak memory and crash.
 
 A quick hack to check if the `debugger` works is to create a chart that contains intended errors in the initialization code..
 
@@ -100,7 +100,7 @@ FusionCharts.ready(function () {
 </script>
 ```
 
-The code above may appear correct at first, but a deeper look would reveal that we have not provided the new keyword while calling the {% linkTo FusionCharts %} constructor. This error can be readily spotted since an error event will be logged with error id 25081840 ({% linkTo FusionCharts.namespaces.debugger.typedefs.Error-25081840 %}). The error message would clearly outline a `RuntimeException` saying “Use the `new` keyword while creating a new FusionCharts object”.
+The code above may appear correct at first, but a deeper look would reveal that we have not provided the new keyword while calling the (/api/fusioncharts) constructor. This error can be readily spotted since an error event will be logged with error id 25081840 ((/api/fusioncharts/namespaces/debugger#static-Error-25081840)). The error message would clearly outline a `RuntimeException` saying “Use the `new` keyword while creating a new FusionCharts object”.
 
 
 ### Using debugger with older browsers
@@ -139,7 +139,7 @@ Internet Explorer 7 through 10 does not support inspecting objects logged to the
 
 The debugger allows you to circumvent these limitations by incorporating the ability to automatically add Firebug Lite into your page. Firebug Lite is very powerful for debugging on older Internet Explorer browsers and on mobile device browsers that do not have a JavaScript Console. (Visit http://getfirebug.com/firebuglite for more information on this very popular component.)
 
-To enable Firebug Lite, we need to replace the script block that we previously used to enable the debugger with one that instead uses {% linkTo FusionCharts.namespaces.debugger.methods.enableFirebugLite %} to the one below.
+To enable Firebug Lite, we need to replace the script block that we previously used to enable the debugger with one that instead uses (/api/fusioncharts/namespaces/debugger#static-enableFirebugLite) to the one below.
 
 ```html
 <script type="text/javascript">

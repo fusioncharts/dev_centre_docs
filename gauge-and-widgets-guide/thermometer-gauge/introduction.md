@@ -10,9 +10,9 @@ Thermometer gauge, as the name implies, is used to display temperatures. The fil
 
 In this section, you will be introduced to:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/introduction.html#basics-of-the-thermometer-gauge">Basics of the thermometer gauge</a>
+* <a href="/gauge-and-widgets-guide/thermometer-gauge/introduction#basics-of-the-thermometer-gauge" class="smoth-scroll">Basics of the thermometer gauge</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/introduction.html#elements-of-thermometer-gauge">Elements of thermometer gauge</a>
+* <a href="/gauge-and-widgets-guide/thermometer-gauge/introduction#elements-of-thermometer-gauge" class="smoth-scroll">Elements of thermometer gauge</a>
 
 ## Basics of the Thermometer Gauge
 
@@ -40,7 +40,7 @@ A thermometer gauge consists of the following elements:
 
 Before going into the details of each of them, take a look at a standard thermometer gauge with the elements labeled.
 
-![image Thermometer-image]({{ site.baseurl }}assets/images/thermometer-gauge-introduction-1.png)
+![image Thermometer-image](/assets/images/thermometer-gauge-introduction-1.png)
 
 ### Thermometer Fill
 

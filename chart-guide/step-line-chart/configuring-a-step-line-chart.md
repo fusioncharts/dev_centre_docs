@@ -10,9 +10,9 @@ FusionCharts Suite XT allows you to configure the cosmetic and functional aspect
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}chart-guide/step-line-chart/configuring-a-step-line-chart.html#hiding-vertical-lines-from-the-chart">Hide vertical lines from the chart</a>
+* <a href="/chart-guide/step-line-chart/configuring-a-step-line-chart#hiding-vertical-lines-from-the-chart" class="smoth-scroll">Hide vertical lines from the chart</a>
 
-* <a href="{{ site.baseurl }}chart-guide/step-line-chart/configuring-a-step-line-chart.html#using-forward-steps">Use forward steps in the chart</a>
+* <a href="/chart-guide/step-line-chart/configuring-a-step-line-chart#using-forward-steps" class="smoth-scroll">Use forward steps in the chart</a>
 
 ## Hiding Vertical Lines from the Chart
 

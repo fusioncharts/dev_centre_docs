@@ -10,23 +10,23 @@ FusionCharts Suite XT allows you to configure various cosmetic and functional pr
 
 In this section, you will be shown how you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/led-gauge/configuring-gauge.html#configuring-the-led-gauge-background-color">Configure the LED gauge background color</a>
+* <a href="/gauge-and-widgets-guide/led-gauge/configuring-gauge#configuring-the-led-gauge-background-color" class="smoth-scroll">Configure the LED gauge background color</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/led-gauge/configuring-gauge.html#using-a-single-color-for-the-led-fill-and-background">Use a single color fill for the LED background</a>
+* <a href="/gauge-and-widgets-guide/led-gauge/configuring-gauge#using-a-single-color-for-the-led-fill-and-background" class="smoth-scroll">Use a single color fill for the LED background</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/led-gauge/configuring-gauge.html#showinghiding-the-gauge-border">Show/hide the gauge border</a>
+* <a href="/gauge-and-widgets-guide/led-gauge/configuring-gauge#showinghiding-the-gauge-border" class="smoth-scroll">Show/hide the gauge border</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/led-gauge/configuring-gauge.html#customizing-gauge-border-properties">Customize gauge border properties</a>
+* <a href="/gauge-and-widgets-guide/led-gauge/configuring-gauge#customizing-gauge-border-properties" class="smoth-scroll">Customize gauge border properties</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/led-gauge/configuring-gauge.html#configuring-the-led-bar-size-and-gap">Configure the LED bar size and gap</a>
+* <a href="/gauge-and-widgets-guide/led-gauge/configuring-gauge#configuring-the-led-bar-size-and-gap" class="smoth-scroll">Configure the LED bar size and gap</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/led-gauge/configuring-gauge.html#showinghiding-chart-value">Show/hide the chart value</a>
+* <a href="/gauge-and-widgets-guide/led-gauge/configuring-gauge#showinghiding-chart-value" class="smoth-scroll">Show/hide the chart value</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/led-gauge/configuring-gauge.html#showinghiding-tick-marks-and-tick-values">Show/hide tick marks and tick values</a>
+* <a href="/gauge-and-widgets-guide/led-gauge/configuring-gauge#showinghiding-tick-marks-and-tick-values" class="smoth-scroll">Show/hide tick marks and tick values</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/led-gauge/configuring-gauge.html#configuring-tick-marks-and-tick-values">Configure tick marks and tick values</a>
+* <a href="/gauge-and-widgets-guide/led-gauge/configuring-gauge#configuring-tick-marks-and-tick-values" class="smoth-scroll">Configure tick marks and tick values</a>
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/led-gauge/configuring-gauge.html#configuring-hover-effects">Configure hover effects</a>
+* <a href="/gauge-and-widgets-guide/led-gauge/configuring-gauge#configuring-hover-effects" class="smoth-scroll">Configure hover effects</a>
 
 ## Configuring the LED Gauge Background Color
 

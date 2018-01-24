@@ -1,18 +1,18 @@
 ---
 permalink: using-with-javascript-libraries/reactjs/introduction.html
 title: Introduction to FusionCharts ReactJS Component | FusionCharts
-description: FusionCharts Suite XT includes an extensive range of charts, gauges, and maps that you can use to plot static as well as real-time data.
+description: The React-FusionCharts Component, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications
 heading: Introduction to FusionCharts ReactJS Component
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/){:target='_blank'} that you can use to plot static as well as real-time data.
+FusionCharts Suite XT includes an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/) that you can use to plot static as well as real-time data.
 
 The __React-FusionCharts__ Component, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single ReactJS component.
 
 ## Downloading the Component
 
-You can download the React-FusionCharts component from [here](http://www.fusioncharts.com/reactjs-charts/){:target='_blank'}.
+You can download the React-FusionCharts component from [here](http://www.fusioncharts.com/reactjs-charts/).
 
 ## Installing the React-FusionCharts Component
 
@@ -46,7 +46,7 @@ Add a `<div>` HTML container element, which will be used to render the chart, as
 
 ### Step 3: Define the Chart Configuration
 
-As shown in the code below, in your JavaScript code, define an object that contains the configuration for a FusionCharts Suite XT chart. Set the chart data source using the regular [FusionCharts JSON format]{% linkTo tutorials/getting-started/building-your-first-chart.md %}{:target='_blank'}.
+As shown in the code below, in your JavaScript code, define an object that contains the configuration for a FusionCharts Suite XT chart. Set the chart data source using the regular [FusionCharts JSON format](/getting-started/building-your-first-chart).
 
 ```html
 
@@ -102,5 +102,5 @@ Once the installation is complete, you are ready to start creating and customizi
 
 ## Licensing
 <p class="text-info">
-React-FusionCharts is open-source and distributed under the terms of the MIT/X11 License. You will still need to download and include FusionCharts in your page. This project provides no direct functionality. You can [download an evaluation](http://www.fusioncharts.com/download/){:target='_blank'}. You will still need to purchase a FusionCharts license to use in a commercial environment (FusionCharts is [free for non-commercial and personal use](http://www.fusioncharts.com/download/free/){:target='_blank'}).
+React-FusionCharts is open-source and distributed under the terms of the MIT/X11 License. You will still need to download and include FusionCharts in your page. This project provides no direct functionality. You can [download an evaluation](http://www.fusioncharts.com/download/). You will still need to purchase a FusionCharts license to use in a commercial environment (FusionCharts is [free for non-commercial and personal use](http://www.fusioncharts.com/download/free/)).
 </p>
