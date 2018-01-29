@@ -8,7 +8,7 @@ chartPresent: true
 
 Maps as part of FusionCharts Suite XT support two types of drill down. This section will walk you through setting up drill down functionality for your maps.
 
-## Simple drill down
+## Simple drill down map
 
 Using this method, you can specify custom URLs or JavaScript methods to be invoked for each entity or marker on your map. When a user clicks the respective entity, the map will invoke that method, or redirect to the specific URL. If it's a URL, you can configure whether to open the URL in the same page, a new window in a pop-up or a frame.
 
