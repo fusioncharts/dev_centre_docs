@@ -18,37 +18,41 @@ Navigate to `~/fusionexport_config` directory (for Mac OS and Linux) or  `C:\Use
 
 Now, edit the content of the file `s3.json`.
 
+<div class="code-wrapper">
 <ul class="code-tabs">
     <li class="active"><a data-toggle="cli">CLI</a></li>
 </ul>
 
 <div class="tab-content">
-    <div class="tab cli-tab active">
-```javascript
-        {
-  "bucket": "",
-  "accessKey": "",
-  "secretAccessKey": ""
-}
-        ```
-    </div>
+<div class="tab cli-tab active">
+<pre><code class="language-javascript">
+	{
+		"bucket": "",
+		"accessKey": "",
+		"secretAccessKey": ""
+	}
+</code></pre>
+</div>
+</div>
 </div>
 
 ### Step 2
 
 Add the prefix `s3:` for `--output-file` option.
 
+<div class="code-wrapper">
 <ul class="code-tabs">
     <li class="active"><a data-toggle="cli">CLI</a></li>
 </ul>
 
 <div class="tab-content">
-    <div class="tab cli-tab active">
-```javascript
-        {
-  "chart-config": "fusioncharts_chart.js",
-  "output-file": "s3:fc-chart-<%= number(1) %>"
-}
-        ```
-    </div>
+<div class="tab cli-tab active">
+<pre><code class="language-javascript">
+	{
+		"chart-config": "fusioncharts_chart.js",
+		"output-file": "s3:fc-chart-<%= number(1) %>"
+	}
+</code></pre>
+</div>
+</div>
 </div>

@@ -22,7 +22,7 @@ This article explains how you can set the chart data using the URL of the corres
 
 Let us build the same revenue chart, which we built in the [first example](/getting-started/building-your-first-chart) using JSON, and use a .json file as the data source in this example.
 
-{% embed_chart getting-started-your-first-charts-building-your-chart-example1.js %}
+{% embed_chart getting-started-your-first-charts-building-your-chart-example-1.js %}
 
 The data for this chart is shown in the table below:
 
