@@ -5,6 +5,8 @@ description: FusionCharts Suite XT is a JavaScript library that runs on your des
 heading: Installation
 chartPresent: false
 breadcrumb: [["Home", "/"], ["Installation"]]
+feedbackWidget: true
+shareWidget: true
 ---
 
 FusionCharts Suite XT is a JavaScript library that runs on your desktop and mobile web browsers. 
