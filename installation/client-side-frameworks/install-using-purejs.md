@@ -1,12 +1,8 @@
 ---
-permalink: getting-started/installation.html
 title: Installation | FusionCharts
 description: FusionCharts Suite XT is a JavaScript library that runs on your desktop/mobile web browsers. This article talks about steps to download FusionCharts library
 heading: Installation
-chartPresent: false
 breadcrumb: [["Home", "/"], ["Installation"]]
-feedbackWidget: true
-shareWidget: true
 ---
 
 FusionCharts Suite XT—the industry's most comprehensive charting solution— is all about easing the whole process of data visualization through charts. This developer center includes everything that you'd want to know about FusionCharts Suite XT.
