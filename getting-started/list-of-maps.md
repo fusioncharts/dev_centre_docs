@@ -1,9 +1,7 @@
 ---
-permalink: getting-started/list-of-maps.html
 title: List of Maps | FusionCharts
 description: FusionMaps XT offers interactive maps to plot geographical data like revenue by regions, population by state, survey and election results effectively.
 heading: List of Maps
-chartPresent: false
 breadcrumb: [["Home", "/"], ["List of Maps"]]
 ---
 
