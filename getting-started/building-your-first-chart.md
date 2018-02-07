@@ -17,7 +17,6 @@ Let's start with a simple example of "Monthly revenue" chart, which we will plot
 
 The data for this chart is represented in a table as under:
 
-
 Month|Revenue|
 -|-
 January|$420,000|
@@ -41,7 +40,7 @@ FusionCharts Suite XT JavaScript library only accepts data in JSON or XML format
 
 For example, when you convert the data in the table above to JSON format, it will look as under:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 {
     "chart": {
         "caption": "Monthly revenue for last year",
@@ -101,13 +100,13 @@ For example, when you convert the data in the table above to JSON format, it wil
         }
     ]
 }
-{% endraw %}{% endhighlight %}
+```
 
 ## Include FusionCharts Suite XT library
 
 To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `&gt;script&lt;` tag. Next, include a theme file to style the chart. The theme is called `fint` (FusionCharts internal) and it is present in the `themes` folder of your download. Refer to the code below:
 
-{% highlight html lineanchors %}{% raw %}
+```
 <html>
 <head>
   <title>My first chart using FusionCharts Suite XT</title>
@@ -115,7 +114,7 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, use t
   <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
 </head>
 </html>
-{% endraw %}{% endhighlight %}
+```
 
 ## Create a container for the chart
 
@@ -127,7 +126,7 @@ Each chart in the page needs a container to reside in. A `<div>` element works w
   <div id="chartContainer">FusionCharts XT will load here!</div>
 </body>
 
-{% endraw %}{% endhighlight %}
+```
 
 Specify a unique ID for the `&gt;div&lt;` container within the web page. The unique ID is used in the chart initialization code to refer to the container.
 
@@ -137,7 +136,7 @@ In the final step, create an instance of the chart type as `column2d`, set the `
 
 The following code does the trick:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 
 FusionCharts.ready(function() {
     var revenueChart = new FusionCharts({
@@ -209,7 +208,7 @@ FusionCharts.ready(function() {
     revenueChart.render();
 })
 
-{% endraw %}{% endhighlight %}
+```
 
 In the above code:
 
@@ -318,7 +317,7 @@ The full HTML code for the example looks as under:
 
 </html>
 
-{% endraw %}{% endhighlight %}
+```
 
 Now view the page in a browser, you should see an interactive Column 2D chart, showing monthly revenues for Harry's SuperMart similar to the live chart at the top of this page. Try rolling over the columns to see the tooltips, or refresh the page to see the chart animating again.
 
