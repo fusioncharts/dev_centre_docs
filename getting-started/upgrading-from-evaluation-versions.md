@@ -5,6 +5,8 @@ description: This section is for users who have used an evaluation version of Fu
 heading: Upgrading from Evaluation Versions
 chartPresent: false
 breadcrumb: [["Home", "/"], ["Upgrading from Evaluation Versions"]]
+feedbackWidget: true
+shareWidget: true
 ---
 
 This section is for users who have used an evaluation version of FusionCharts in their application, and are now upgrading to a commercial license. There is no feature limitation in the evaluation version of FusionCharts, except for the fact that all the charts are watermarked.

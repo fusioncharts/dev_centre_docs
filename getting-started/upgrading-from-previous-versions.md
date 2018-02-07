@@ -5,6 +5,8 @@ description: This section talks about how can a user upgrade his version from th
 heading: Upgrading from Previous Versions
 chartPresent: false
 breadcrumb: [["Home", "/"], ["Upgrading from Previous Versions"]]
+feedbackWidget: true
+shareWidget: true
 ---
 
 This section is for those who are using any version of FusionCharts older than v3.3.1 and upgrading to v3.4 or beyond.
