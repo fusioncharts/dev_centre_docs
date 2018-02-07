@@ -1,9 +1,7 @@
 ---
-permalink: getting-started/using-xml-as-data-format.html
 title: Using XML as Data Format | FusionCharts
 description: FusionCharts Suite XT allows developers to pick  XML/JSON, without losing any functionality, whatsoever. Server-side developers find it easier to build XML
 heading: Using XML as Data Format
-chartPresent: true
 breadcrumb: [["Home", "/"], ["Using XML as Data Format"]]
 ---
 

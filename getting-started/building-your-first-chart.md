@@ -1,12 +1,8 @@
 ---
-permalink: getting-started/building-your-first-chart.html
 title: Your First Chart | FusionCharts
 description: This article talks about creating charts which can be made using any real life data. The article also contains steps to download FusionCharts.
 heading: Your First Chart
-chartPresent: true
 breadcrumb: [["Home", "/"], ["Your First Chart"]]
-feedbackWidget: true
-shareWidget: true
 ---
 
 Let's build our first chart using FusionCharts Suite XT! Throughout this documentation, we will create charts for a fictional supermarket, Harry's SuperMart, so that Harry, the owner, can make more sense of the data captured at various touchpoints in his supermarket. This data, when processed and presented effectively, can give Harry actionable insights for effective decision-making.

@@ -1,9 +1,7 @@
 ---
-permalink: getting-started/list-of-charts.html
 title: List of Charts | FusionCharts
 description: This article is about FusionCharts XT/FusionWidgets XT/PowerCharts XT with their JavaScript chart alias. Use this alias to create an instance of chart type
 heading: List of Charts
-chartPresent: false
 breadcrumb: [["Home", "/"], ["List of Charts"]]
 ---
 
