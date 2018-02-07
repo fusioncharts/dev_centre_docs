@@ -104,7 +104,7 @@ For example, when you convert the data in the table above to JSON format, it wil
 
 ## Include FusionCharts Suite XT library
 
-To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `&gt;script&lt;` tag. Next, include a theme file to style the chart. The theme is called `fint` (FusionCharts internal) and it is present in the `themes` folder of your download. Refer to the code below:
+To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called `fint` (FusionCharts internal) and it is present in the `themes` folder of your download. Refer to the code below:
 
 ```
 <html>
@@ -120,15 +120,14 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, use t
 
 Each chart in the page needs a container to reside in. A `<div>` element works well as a container for the chart, as defined below:
 
-{% highlight html lineanchors %}{% raw %}
-
+```
 <body>
   <div id="chartContainer">FusionCharts XT will load here!</div>
 </body>
 
 ```
 
-Specify a unique ID for the `&gt;div&lt;` container within the web page. The unique ID is used in the chart initialization code to refer to the container.
+Specify a unique ID for the `<div>` container within the web page. The unique ID is used in the chart initialization code to refer to the container.
 
 ## Create an instance of the chart
 
@@ -137,7 +136,6 @@ In the final step, create an instance of the chart type as `column2d`, set the `
 The following code does the trick:
 
 ```
-
 FusionCharts.ready(function() {
     var revenueChart = new FusionCharts({
         "type": "column2d",
@@ -224,14 +222,13 @@ In the above code:
 
 * Please note, we have used the `theme` attribute in the chart's JSON data and provided `fint` (FusionCharts Suite XT Internal theme) as the value for it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application. FusionCharts Suite XT is shipped with three default themes - `ocean`, `zune`, and `carbon`. You can also create your own themes, as detailed in a later section.
 
-* Call the `render` method to draw the chart in the `chartContainer` defined using the `&gt;div&lt;` element.
+* Call the `render` method to draw the chart in the `chartContainer` defined using the `<div>` element.
 
 That's it! You have just created your first interactive JavaScript chart using FusionCharts Suite XT.
 
 The full HTML code for the example looks as under:
 
-{% highlight html lineanchors %}{% raw %}
-
+```
 <html>
 
 <head>
