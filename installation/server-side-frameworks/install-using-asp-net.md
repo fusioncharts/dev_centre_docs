@@ -3,6 +3,7 @@ title: Install using ASP.NET | FusionCharts
 description: FusionCharts Suite XT includes the FusionCharts server-side ASP.NET wrapper that lets you create interactive, data-driven charts.
 heading: ASP.NET
 ---
+
 FusionCharts Suite XT includes the FusionCharts server-side ASP.NET wrapper that lets you create interactive, data-driven charts. FusionCharts uses JavaScript and HTML code to generate charts in the browser. Using the ASP.NET wrapper, you can create charts in your ASP.NET website without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page for generating charts.
 
 > The FusionCharts ASP.NET server-side wrapper requires a .NET Framework 3.5 or higher.
