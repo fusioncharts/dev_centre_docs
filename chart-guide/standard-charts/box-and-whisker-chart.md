@@ -597,7 +597,9 @@ Refer to the code given below:
 
 A box and whisker chart with null data connected using mean connectors is given below:
 
-<CHART>
+{% embed_all standard-charts-box-and-whisker-chart-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/rzj8s0xL/) to edit the above chart.
 
 Click here to edit the above chart.
 
@@ -633,9 +635,9 @@ Refer to the code given below:
 
 The box and whisker chart with mean deviation icon shown in the legend box looks like:
 
-<CHART>
+{% embed_all standard-charts-box-and-whisker-chart-example-11.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/cyzLx5v3/) to edit the above chart.
 
 ### Customize the mean deviation icon
 
@@ -653,11 +655,25 @@ To customize the mean deviation icon, follow the points given below:
 
 Refer to the code below:
 
-<Insert Code>
+```
+...
+{
+    "chart": {
+        "mdIconRadius": "5"
+        "mdIconSides": "5"
+        //"mdIconShape": "triangle"
+        "mdIconColor": "ff0000"
+        "mdIconAlpha": "70"
+    }
+}
+...
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-12.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/t24afhfs/) to edit the above chart.
 
 ### Draw mean deviation connectors
 
@@ -685,9 +701,9 @@ Refer to the code given below:
 
 A box and whisker chart rendered with a mean deviation connector looks like this:
 
-<Chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-13.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/7j79Lpna/) to edit the above chart.
 
 ### Connect null data
 
@@ -713,12 +729,6 @@ Refer to the code given below:
 
 ```
 
-A box and whisker chart with the mean deviation null data connected looks like this:
-
-<Chart>
-
-Click here to edit the above chart.
-
 ## Configure Standard Deviation
 
 Standard deviation is the measure of the variation or the dispersion of a set of data from the mean. It gives an idea of how spread out is the set of data from the mean.
@@ -729,7 +739,7 @@ Let's move ahead and customize the standard deviation of box and whisker chart.
 
 ### Show/Hide the standard deviation icon
 
-A box and whisker chart with the standard deviation icon can be shown in the legend box using `showMD` attribute. This attribute when set to `1` will show the icon representing the standard deviation value of the dataset in the legend.
+A box and whisker chart with the standard deviation icon can be shown in the legend box using `showSD` attribute. This attribute when set to `1` will show the icon representing the standard deviation value of the dataset in the legend.
 
 Refer to the code given below:
 
@@ -739,7 +749,7 @@ Refer to the code given below:
 
     "chart": {
 
-        "showMD": "1"
+        "showSD": "1"
 
     }
 
@@ -751,7 +761,9 @@ Refer to the code given below:
 
 A box and whisker chart with the standard deviation icon shown in the legend box looks like this:
 
-<chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-14.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/vLp55w9L/) to edit the above chart.
 
 Click here to edit the above chart.
 
@@ -770,6 +782,32 @@ To customize the standard deviation icon, follow the points given below:
 * Set the `sdIconColor` attribute to specify the hex color code of the standard deviation icon.
 
 * Set the `sdIconAlpha` attribute to set the transparency of the standard deviation icon. This attribute takes values between `0` (transparent) and `100` (opaque).
+
+Refer to the code given below:
+
+```
+
+{
+
+    "chart": {
+        "sdIconRadius": "5",
+        "sdIconSides": "5",
+        "sdIconShape": "triangle",
+        "sdIconColor": "ff0000",
+        "sdIconAlpha": "70"
+    }
+
+}
+
+...
+
+```
+
+A box and whisker chart with the standard deviation icon shown in the legend box looks like this:
+
+{% embed_all standard-charts-box-and-whisker-chart-example-15.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/u47qrcte/) to edit the above chart
 
 ### Draw standard deviation connectors
 
@@ -797,9 +835,9 @@ Refer to the code given below:
 
 A box and whisker chart rendered with a standard deviation connector looks like this:
 
-<chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-16.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/7zg46mwj/) to edit the above chart
 
 ### Connect Null data
 
@@ -824,12 +862,6 @@ Refer to the code given below:
 ...
 
 ```
-
-A box and whisker chart with the standard deviation null data connected looks like this:
-
-<chart>
-
-Click here to edit the above chart.
 
 ## Configuring Quartile Deviation
 
@@ -863,7 +895,9 @@ Refer to the code given below:
 
 A box and whisker chart with the quartile deviation icon shown in the legend box looks like this:
 
-<chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-17.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/grwfoLto/) to edit the above chart
 
 Click here to edit the above chart.
 
@@ -885,11 +919,29 @@ To customize the quartile deviation icon, follow the points given below:
 
 Refer to the code below:
 
-<Insert Code>
+```
+
+{
+
+    "chart": {
+        "qdIconRadius": "5",
+        "qdIconSides": "5",
+        "qdIconShape": "triangle",
+        "qdIconColor": "ff0000",
+        "qdIconAlpha": "70"
+    }
+
+}
+
+...
+
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-18.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/abk7goL7/) to edit the above chart
 
 ### Draw quartile deviation connectors
 
@@ -917,9 +969,9 @@ Refer to the code given below:
 
 A box and whisker chart rendered with a quartile deviation connector looks like this:
 
-<chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-19.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/Lxoohu0g/) to edit the above chart
 
 ### Connect Null data
 
@@ -946,10 +998,6 @@ Refer to the code given below:
 
 A box and whisker chart with the quartile deviation null data connected looks like this:
 
-<Chart>
-
-Click here to edit the above chart.
-
 ## Configuring Outliers
 
 Outliers are values that are numerically distant from the set of numbers provided. They are indicative values which may occur by chance or by error for any set of data provided. Outliers are not included in the statistical calculation of the five summary numbers - the minimum and maximum values, the median value, and the lower and upper quartile values. Instead, they are placed as separate points on the chart.
@@ -960,7 +1008,7 @@ To show the customization of the outlier icon, let's create a chart where the ou
 
 To customize the outlier icon, follow the points given below:
 
-* Set the `outliers` attribute to specify the outliers or the values greater than the maximum value from the data set provided. The attribute belongs to the `data` object (under `dataset` object).
+* Set the `outliers` attribute to specify the outliers or the values greater than the maximum value from the data set provided.
 
 * Set the `outlierIconRadius` attribute to specify the radius of the outlier icon.
 
@@ -972,13 +1020,30 @@ To customize the outlier icon, follow the points given below:
 
 * Set the `outlierIconAlpha` attribute to set the transparency of the outlier icon. This attribute takes values between `0` (transparent) and `100` (opaque).
 
+> All the attributes listed above belongs to the `data` object (under `dataset` object).
+
 Refer to the code below:
 
-<Insert Code>
+```
+...
+{
+    "data": {
+        "outliers": "1"
+        "outlierIconRadius": "5",
+        "outlierIconSides": "5",
+        //"outlierIconShape": "triangle",
+        "outlierIconColor": "ff0000",
+        "outlierIconAlpha": "70"
+    }
+}
+...
+```
 
 A box and whisker chart with outliers looks like this:
 
-<chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-20.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/y9wzdwur/) to edit the above chart
 
 Click here to edit the above chart.
 
@@ -990,7 +1055,9 @@ To show all outliers on the box and whisker chart, set the value of `showAllOutl
 
 A box and whisker chart with outliers beyond the range of the y-axis hidden looks like this:
 
-<CHART>
+{% embed_all standard-charts-box-and-whisker-chart-example-21.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/v22otbqg/) to edit the above chart
 
 In the data above, you will see that the outlier values for Grade 3 are 72000 for male and 71000 for female. Therefore, the outliers for these values are not shown on the chart.
 
@@ -998,6 +1065,8 @@ You can opt to show these hidden outlier values.
 
 A box and whisker chart with outlier values shown on the chart looks like this:
 
-<CHART>
+{% embed_all standard-charts-box-and-whisker-chart-example-22.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/oukgfmca/) to edit the above chart
 
 Click here to edit the above chart.
