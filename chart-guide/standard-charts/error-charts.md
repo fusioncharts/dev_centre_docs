@@ -1,28 +1,12 @@
 ---
-permalink: chart-guide/error-charts/introduction.html
-title: Introduction to Error Chart | FusionCharts
+title: Error Charts | FusionCharts
 description: An error chart is used to show the extent of uncertainty in information relative to an average value.
-heading: Introduction to Error Chart
-chartPresent: true
+heading: Error Charts
 ---
 
-An error chart is used to show the extent of uncertainty in information relative to an average value. Error charts can be used to show the range of values that can be taken up by a data point, instead of being restricted to a point value.
+An error chart is used to show the extent of uncertainty in information relative to an average value. Error charts can be used to show the range of values that can be taken up by a data point, instead of being restricted to a point value. Errors are indicated by distinct I-shaped bars that are both positive and negative. Typically the I-bars represent the standard deviation in a measurement indicating the degree of variance observed in a data point. Error charts give a general idea of the accuracy of information or, conversely, the amount of variation in data from it's expected value.
 
-In this section, you will be introduced to the:
-
-* <a href="/chart-guide/error-charts/introduction#basics-of-an-error-chart" class="smoth-scroll">Basics of an error chart</a>
-
-* <a href="/chart-guide/error-charts/introduction#use-of-error-charts" class="smoth-scroll">Use of error charts</a>
-
-* <a href="/chart-guide/error-charts/introduction#types-of-error-charts" class="smoth-scroll">Types of error charts</a>
-
-* <a href="/chart-guide/error-charts/introduction#features-of-an-error-chart" class="smoth-scroll">Features of an error chart</a>
-
-## Basics of an Error Chart
-
-An error chart shows the range of possible errors or deviations that might occur in the given data. Errors are indicated by distinct I-shaped bars that are both positive and negative. Typically the I-bars represent the standard deviation in a measurement indicating the degree of variance observed in a data point. Error charts give a general idea of the accuracy of information or, conversely, the amount of variation in data from it’s expected value.
-
-## Use of Error Charts
+## Use of error charts
 
 Following are a few areas where error charts are commonly used:
 
@@ -36,40 +20,163 @@ Following are a few areas where error charts are commonly used:
 
 * Human resource management
 
-## Types of Error Charts
+## Types of error charts
 
 At present, there are three types of multi-series error charts available in the FusionCharts XT Suite:
 
-* [Error bar chart](/chart-attributes?chart=errorbar2d)
+* Error bar chart
 
-* [Error line chart](/chart-attributes?chart=errorline)
+* Error line chart
 
-* [Error scatter chart (XY plot)](/chart-attributes?chart=errorscatter)
+* Error scatter chart (XY plot)
 
-### Error Bar Chart
+## Features of error charts
 
-An error bar chart looks like this:
-
-{% embed_all chart-guide-error-charts-introduction-example-1.js %}
-
-### Error Line Chart
-
-An error line chart looks like this:
-
-{% embed_all chart-guide-error-charts-introduction-example-2.js %}
-
-### Error Scatter Chart
-
-An error scatter chart looks like this:
-
-{% embed_all chart-guide-error-charts-introduction-example-3.js %}
-
-## Features of an Error Chart
-
-The distinct features of an error chart include:
+The distinct features of error charts include:
 
 * Supports both half and full error bars for positive and negative errors respectively.
 
 * Provides options to configure error bars by changing their color, thickness, and transparency.
 
 * Automatically customizes the width of the error bars depending on the importance of the deviation from actual data.
+
+Now, let's move ahead and create our first error chart.
+
+## Error Bar chart
+
+An **error bar** chart is a type of an error chart used to show variations in data from its original value. As an example, we will create an error bar chart that compares the lifespan of systems at the Daly City Serramonte, Bakersfield Central, Garden Groove Harbour stores. 
+
+The JSON and XML structure of the chart is:
+
+CODE SNIPPET
+
+To create an error bar chart:
+
+* Set the `type` attribute to `errorBar2d`.
+
+* Set the `errorValue` attribute to specify error value that will be plotted as the error bar on the chart. This attribute belongs to the `data` object, which belongs to the `dataset` object.
+
+An error bar chart thus created looks like this:
+
+**CHART**
+
+Click [here](http://jsfiddle.net/fusioncharts/7Z4Ha/) to edit the error bar chart.
+
+The full HTML code for the above sample is:
+
+HTML CODE SNIPPET
+
+## Error Line chart
+
+Now, let's create an **error line** chart that compares the estimated procurement from two suppliers. To render an error line chart, change the value of the `type` attribute from `errorbar2d` to `errorline`. The rest of the data structure remains the same.
+
+An error line chart thus created looks like:
+
+**CHART**
+
+Click here to edit the error bar chart.
+
+The full HTML code for the above sample is:
+
+HTML CODE SNIPPET
+
+## Error Scatter chart
+
+An **error scatter** chart is an XY plot chart with vertical and horizontal error bars to show a range of error values for a specific data value. As an example, we will create a simple error scatter chart that shows the revenue forecast for the next year.
+
+To render an error scatter chart, follow the steps given below:
+
+* Change the value of the `type` attribute from `errorline` to `errorscatter`.
+
+* Set the `label` attribute to specify the label for the data item. The label is rendered on the x-axis. This attribute belongs to the `category`, which belongs to the `categories` object.
+
+* The position of a datapoint is defined in the form of two numeric parameters, one from the y-axis and the other from the x-axis. When used with the `category` object, `x` attribute is used to specify the value given to each label rendered on the x-axis. When used with the `data` object, this attribute is used to specify the numeric `x` value needed to plot a data item.
+
+* Set the `y` attribute to specify the numeric y value needed to plot a data item. This attribute belongs to the `data` object, which belongs to the `dataset` object.
+
+* Set the `verticalErrorValue` to specify the range of possible vertical deviation values that will be plotted as the error bar on the chart. This attribute also belongs to the `data` object, which belongs to the `dataset` object.
+
+The error scatter chart will look like:
+
+**CHART**
+
+Click here to edit the error bar chart.
+
+The full HTML code for the above sample is:
+
+HTML CODE SNIPPET
+
+Now, let's customize the appearance and properties of the charts.
+
+## Customize Error charts 
+
+You can customize the cosmetic properties of error bars to change their appearance. To customize the properties, follow the steps given below:
+
+* Set the `halfErrorBar` attribute to specify the rendering of full or half error bars. Set this attribute to `1` to show half error bars, whereas set it to `0` (default) to render the full error bars.
+
+* Specify the hex color code to `errorBarColor` attribute, to set the color in which you want to render the error bars.
+
+* Set the transparency of the error bars using `errorBarAlpha` attribute. This attribute takes values between `0` (transparency) and `100` (opaque).
+
+* Set the thickness (in pixels) of the error bars using `errorBarThickness` attribute.
+
+* Set the width of the error bars using `errorBarWidthPercent` attribute. The width of the error bars will be dependent on the percentage of a column width.
+
+Refer to the code given below:
+
+```
+{
+
+	"chart": {
+
+		"halferrorbar": "0",
+
+		"errorBarColor": "#990000",
+
+		"errorBarAlpha": "50",
+
+		"errorBarThickness": "2",
+
+		"errorBarWidthPercent": "30"
+
+	},
+
+}
+
+...
+
+```
+
+An error bar chart, after customizing the error bars, looks like this:
+
+**CHART**
+
+Click [here](http://jsfiddle.net/fusioncharts/fumzvpw3/) to edit the error bars chart.
+
+> The configurations for the error line chart is same as that of the error bars chart.
+
+### Cosmetics of Error Scatter chart
+
+You can also customize the cosmetic properties of error scatter chart to change the  appearance of error bars in it. Most of the attributes are similar to the above rendered charts. To customize some more cosmetic properties of error bars in error scatter chart, follow the steps given below:
+
+* Set the `useVerticalErrorBar` attribute to show the error bars (half/full) for the error scatter chart. Setting this attribute to `1` (default) will show them, whereas setting it to `0` will hide them.
+
+* Set the `halfVerticalErrorBar` attribute to specify the rendering of full or half vertical error bars. Set this attribute to `1` to show half error bars, whereas set it to `0` (default) to render the full error bars.
+
+* Specify the hex color code to `verticalErrorBarColor` attribute, to set the color in which you want to render the vertical error bars.
+
+* Set the transparency of the vertical error bars using `verticalErrorBarAlpha` attribute. This attribute takes values between `0` (transparency) and `100` (opaque).
+
+* Set the thickness (in pixels) of the vertical error bars using `verticalErrorBarThickness` attribute.
+
+* Set the width (in pixels) of the vertical error bars using `verticalErrorBarWidth` attribute. 
+
+Refer to the code below:
+
+<Insert Code>
+
+An error scatter chart, after customizing the error bars, looks like:
+
+**CHART**
+
+Click here to edit the error scatter chart.
