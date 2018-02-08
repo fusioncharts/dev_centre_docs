@@ -4,6 +4,7 @@ description: FusionCharts Suite XT is a JavaScript library that runs on your des
 heading: jQuery
 breadcrumb: [["Home", "/"], ["jQuery"]]
 ---
+
 The FusionCharts Suite XT jQuery helper allows you to use jQuery syntax to render and manipulate your charts and graphs seamlessly across all browsers and devices.
 
 It helps you add interactive JavaScript charts to your web and mobile applications, combining the delight and comprehensiveness of the FusionCharts Suite XT with the easy-to-use jQuery syntax.

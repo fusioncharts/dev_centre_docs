@@ -4,6 +4,7 @@ description: FusionCharts Suite XT is a JavaScript library that runs on your des
 heading: React JS
 breadcrumb: [["Home", "/"], ["React JS"]]
 ---
+
 The React-FusionCharts Component, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single ReactJS component.
 
 ## Download

@@ -3,6 +3,7 @@ title: Install using django wrapper | FusionCharts
 description: FusionCharts Suite XT includes the FusionCharts server-side django wrapper that lets you create interactive, data-driven charts.
 heading: django
 ---
+
 The FusionCharts Django wrapper is a Python framework which is responsible for quick web development. It is basically a subroutine within a software library whose job is to call another subroutine with minimum amount of coding. It lets you generate the required JavaScript and HTML code as a string on the server, which is then used to render charts on a browser page.
 
 FusionCharts Suite XT includes the FusionCharts Django wrapper that lets you create interactive, data-driven charts. You can create a simple chart using the FusionCharts server-side Django wrapper without writing any JavaScript code.

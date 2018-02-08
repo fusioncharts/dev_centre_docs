@@ -3,6 +3,7 @@ title: Install using Ruby on rails | FusionCharts
 description: FusionCharts Suite XT includes the FusionCharts server-side RoR wrapper that lets you create interactive, data-driven charts.
 heading: Ruby on Rails
 ---
+
 FusionCharts Suite XT includes the Ruby on Rails wrapper that lets you create interactive, data-driven charts.
 
 ## Download

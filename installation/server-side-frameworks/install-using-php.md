@@ -3,6 +3,7 @@ title: Install using PHP wrapper | FusionCharts
 description: FusionCharts Suite XT includes the FusionCharts server-side PHP wrapper that lets you create interactive, data-driven charts.
 heading: PHP
 ---
+
 ## Set up FusionCharts Suite XT on web server
 
 * Create a folder named `fusioncharts` in the document root of your web application. You can name the folder differently, and place it within another folder as well instead of root. However, copying it to the root of your application allows all the pages in your application to easily access the library from anywhere.
