@@ -26,7 +26,7 @@ The distinct features of a box and whisker chart include:
 
 The `five-number summary` principle is used to plot data on the box and whisker charts. This principle helps to provide a statistical summary for a given set of numbers. It gives information about the range (minimum and maximum numbers), the center (median), and the spread (upper and lower quartiles) for the set of values provided. A simple illustration of a box and whisker plot is given below:
 
-<chart>
+IMAGE
 
 > There is another principle, named as the 'Seven-number Summary', which is not used in the current implementation.
 
@@ -102,10 +102,6 @@ The distance between the upper quartile and the lower quartile is called the int
 
 As an example, let's create a box and whisker chart that shows the gender-wise distribution of annual salaries. In the chart, note that the minimum and maximum values and the median will be  displayed by default, whereas the upper and lower quartile values will be hidden.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a box and whisker chart, keep a note of the steps given below:
 
 * Specify the series name for the dataset using `seriesName` attribute.
@@ -164,7 +160,7 @@ For a detailed list of attributes refer to the API reference page of box and whi
 
 The box and whisker chart thus created looks like:
 
-<chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/qLvZF/) to edit the box and whisker chart.
 
@@ -206,7 +202,7 @@ Refer to the code given below:
 
 A simple box and whisker chart rendered with a legend looks like this:
 
-<chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/qLvZF/) to edit the above chart.
 
@@ -232,13 +228,28 @@ A box and whisker chart with three of the five summary numbers - the minimum and
 
 > All the attributes listed above works only when `showValues` attribute is set to `1`.
 
-Refer to the code below:
 
-<INSERT CODE>
+Refer to the code below:
+```
+...
+{
+    "chart": {
+        "showvalues": "1",
+        "showMinValues": "1",
+        "showMaxValues": "1",
+        "showMedianValues": "1",
+        "showQ1Values": "0",
+        "showQ3Values": "0"
+    }
+}
+...
+```
 
 A box and whisker chart with five summary numbers- the minimum and maximum numbers and the median shown looks like:
 
-<Chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/q89k0bef/) to edit the above chart.
 
 Click here to edit the above chart.
 
@@ -321,12 +332,23 @@ To customize the median, follow the steps given below:
 > All these attributes can be used with the **chart**, **dataset**, and the **data** objects, depending on the requirement.
 
 Refer to the code below:
-
-<INSERT CODE>
+```
+...
+{
+    "chart": {
+        "medianColor": "ff0000",
+        "medianThickness": "5",
+        "medianAplha": "70"
+    }
+}
+...
+```
 
 The chart will look like as shown below:
 
-<CHART>
+{% embed_all standard-charts-box-and-whisker-chart-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/y3932d4e/) to edit the above chart.
 
 ### Customize the upper and lower quartiles (Q1 and Q3)
 
@@ -368,11 +390,39 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 
 Refer to the code below:
 
-<Insert Code>
+```
+...
+{
+    "chart": {
+        //The color of the upper quartile set to Red
+        "upperQuartileColor": "ff0000",
+        //The thickness of the upper quartile set to 5
+        "upperQuartileThickness": "5",
+        //The transparency of the upper quartile set to 70
+        "upperQuartileAlpha": "70",
+        //"upperBoxColor": "ff0000",
+        //"upperBoxAlpha": "70",
+        //"upperBoxBorderColor": "ff0000",
+        //"upperBoxBorderAlpha": "70",
+        //"upperBoxBorderThickness": "5",
+        //"lowerQuartileColor": "ff0000",
+        //"lowerQuartileThickness": "5",
+        //"lowerQuartileAlpha": "70",
+        //"lowerBoxColor": "ff0000",
+        //"lowerBoxAlpha": "70",
+        //"lowerBoxBorderColor": "ff0000",
+        //"lowerBoxBorderAlpha": "70",
+        //"lowerBoxBorderThickness": "5"
+    }
+}
+...
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/qofgk3ts/) to edit the above chart.
 
 ### Customize the lower and upper whiskers
 
@@ -396,11 +446,27 @@ To customize the whiskers, follow the points given below:
 
 Refer to the code below:
 
-<insert code>
+```
+...
+{
+    "chart": {
+        "upperWhiskerColor": "ff0000",
+        "upperWhiskerThickness": "5",
+        "upperWhiskerAlpha": "70",
+        "lowerWhiskerColor": "0fff00",
+        "lowerWhiskerThickness": "5",
+        "lowerWhiskerAlpha": "70",
+        "whiskersLimitsWidthRatio": "3"
+    }
+}
+...
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/nj1u9far/) to edit the above chart.
 
 ## Configure Mean
 
@@ -435,9 +501,9 @@ Refer to the code given below:
 
 A box and whisker chart with the mean icon shown in the legend looks like this:
 
-<Chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-7.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/o879q8hd/) to edit the above chart.
 
 ### Customize the mean icon
 
@@ -455,11 +521,25 @@ To customize the mean icon in the box and whisker chart, follow the points given
 
 Refer to the code below:
 
-<insert Code>
+```
+...
+{
+    "chart": {
+        "meanIconRadius": "5",
+        "meanIconSides": "3",
+        "meanIconShape": "triangle",
+        "meanIconColor": "ff0000,
+        "meanIconAlpha": "70"
+    }
+}
+...
+```
 
 The  chart will look like as shown below:
 
-<chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/mf3g5cgo/) to edit the above chart.
 
 ### Draw mean connectors
 
@@ -487,9 +567,9 @@ Refer to the code given below:
 
 A box and whisker chart rendered with mean connectors looks like this:
 
-<chart>
+{% embed_all standard-charts-box-and-whisker-chart-example-9.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/tr248p89/) to edit the above chart.
 
 ### Connect Null Data
 
