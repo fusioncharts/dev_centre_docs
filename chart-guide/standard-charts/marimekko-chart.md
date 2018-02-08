@@ -1,9 +1,7 @@
 ---
-permalink: chart-guide/marimekko-chart/creating-a-marimekko-chart.html
-title: Creating a Marimekko Chart | FusionCharts
+title: Marimekko Chart | FusionCharts
 description: Marimekko charts are stacked column charts with columns of variable width. They are primarily used for marketing analysis.
-heading: Creating a Marimekko Chart
-chartPresent: true
+heading: Marimekko Chart
 ---
 
 Marimekko charts are stacked column charts with columns of variable width. They are primarily used for marketing analysis.
@@ -16,15 +14,9 @@ The following three dimensions of marketing data can be represented using a Mari
 
 * Individual share of competitors in a market segment
 
-In this section, you will be shown how you can create a Marimekko Chart.
+Let's create a simple Marimekko chart that shows the top 3 Electronic Brands (Bose, Dell, and Apple) in the top 3 revenue earning states (California, Washington, and Nevada).
 
-## Creating a Marimekko Chart
-
-A simple Marimekko chart that shows the top 3 Electronic Brands (Bose, Dell, and Apple) in the top 3 revenue earning states (California, Washington, and Nevada) looks like this:
-
-{% embed_all chart-guide-marimekko-chart-creating-a-marimekko-chart-example-1.js %}
-
-The Marimekko chart shown above, when seen in the default mode, helps you instantly figure out the following:
+The Marimekko chart shown below, when seen in the default mode, helps you instantly figure out the following:
 
 * The top three manufactures within each state (Bose, Dell, and Apple) and the individual sales of each manufacturer within a state, indicated by the partitions in the stacked column.
 
@@ -32,84 +24,123 @@ The Marimekko chart shown above, when seen in the default mode, helps you instan
 
 * The percentage market share for each manufacturer, shown as a percentage label between the stacked columns. For example, Bose has a total market share of approximately 46%, as shown by the label between the data plots for Bose and Dell.
 
+The JSON and XML structure of the chart is:
+
+**CODE SNIPPET**
+
+To create a marimekko chart, set the `type` attribute to `marimekko`.
+
+For a detailed list of attributes you can check the API reference page of pie chart.
+
+The marimekko chart for the above code looks like :
+
+**CHART**
+
+Click [here](http://jsfiddle.net/fusioncharts/bdmTg/) to edit the marimekko chart.
+
+The full HTML code for the above sample is:
+
+**HTML CODE SNIPPET**
+
 As you can see in the chart data, the actual sales data has been provided. The Marimekko chart automatically converts these values into percentage values based on the size of a market segment and the percentage share held by competitors in each segment.
 
 The percentage share of each manufacturer within a segment is shown in the tooltip text for that partition. For example, the percentage share for Bose in Washington is approximately 25%; it can be seen in the tooltip text shown when the mouse pointer is hovered over the partition for Washington in the first column.
 
 The height of columns can be used to compare the TAM (Total Available Market) per market segment.
 
-## Brief Explanation of the JSON Data Structure
+Now, let's customize the appearance and properties of the marimekko chart. We'll also talk about the interactive legend, introduced for the marimekko chart in FusionCharts v3.11.0.
 
-In the JSON data, the attributes and their corresponding values are written in the following key-value pair format:
+## Display actual data values
 
-```html
+The stacked columns in a Marimekko chart can be rendered:
 
-"<attributeName>": "<value>"
+* Using percentage values
+
+* Using actual data values
+
+By default, a Marimekko chart is rendered with percentage values along the y-axis. To render the chart using actual data values, set the `usePercentDistribution` to `0`. This attribute specifies whether percentage distribution will be used on the y-axis to plot the data. The default value of this attribute is `1`.
+
+Refer to the code given below:
+
+```
+{
+
+  "chart": {
+
+    "usePercentDistribution": "0"
+
+  }
+
+}
+
+...
 
 ```
 
+A Marimekko chart rendered with actual values instead of percentage values looks like this:
 
-Given below is a brief description of the attributes used to render the above Marimekko chart:
+**CHART**
 
-<table>
-  <tr>
-    <th>Attribute Name</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>`type`</td>
-    <td>It is used to specify the type of chart you want to render. To render a Marimekko chart, the value for this attribute will be `marimekko`.</td>
-  </tr>
-  <tr>
-    <td>`renderAt`</td>
-    <td>It is used to specify the container object where the chart will be rendered.</td>
-  </tr>
-  <tr>
-    <td>`width`</td>
-    <td>It is used to specify the width of the chart.</td>
-  </tr>
-  <tr>
-    <td>`height`</td>
-    <td>It is used to specify the height of the chart.</td>
-  </tr>
-  <tr>
-    <td>`dataFormat`</td>
-    <td>It is used to specify the type of data that will passed to the `chart` object. This attribute takes two values: __json__, where the JSON data to render the chart is passed to the `dataSource` attribute, and __jsonurl__, where the relative path to a .json file is passed to the `dataSource` attribute. <br> Similarly, __xml__ and __xmlurl__ are also valid values. </td>
-  </tr>
-  <tr>
-    <td>`dataSource`</td>
-    <td>It is used to specify the source from where the data will be fetched, depending on the value passed to the `dataFormat` attribute.</td>
-  </tr>
-  <tr>
-    <td>`caption`</td>
-    <td>It is used to specify the chart caption. This attribute belongs to the `chart` object.</td>
-  </tr>
-  <tr>
-    <td>`subCaption`</td>
-    <td>It is used to specify the chart sub-caption. This attribute belongs to the `chart` object.</td>
-  </tr>
-  <tr>
-    <td>`xAxisName`</td>
-    <td>It is used to specify the x-axis name. This attribute belongs to the `chart` object.</td>
-  </tr>
-  <tr>
-    <td>`yAxisName`</td>
-    <td>It is used to specify the y-axis name. This attribute belongs to the `chart` object.</td>
-  </tr>
-  <tr>
-    <td>`numberPrefix`</td>
-    <td>It is used to specify the character that will precede all numeric values on the chart, for example, the __$__ symbol for the currency symbol. This attribute belongs to the `chart` object.</td>
-  </tr>
-  <tr>
-    <td>`label`</td>
-    <td>It is used to specify the label for a data item. The label is rendered on the x-axis. This attribute belongs to the `category` object array, which in turn belongs to the `categories` object array.</td>
-  </tr>
-  <tr>
-    <td>`value`</td>
-    <td>It is used to specify the value for a data item. This attribute belongs to the `data` object array, which in turn belongs to the `dataset` object array.</td>
-  </tr>
-  <tr>
-    <td>`seriesName`</td>
-    <td>It is used to specify a name for the dataset. This name is shown in the legend box rendered below the chart. This attribute belongs to the `dataset` object array.</td>
-  </tr>
-</table>
+Click [here](http://jsfiddle.net/fusioncharts/btfhoayu/) to edit the marimekko chart.
+
+## **Hide the total value of market segments**
+
+By default, the total value of a market segment for a competitor is rendered at the top of each column.
+
+Users can choose to hide this value by specify the `showSum` attribute. This attribute allows to show  the sum of all data plots stacked above each other. The sum is shown above the stacked columns. The default value for this attribute is `1` which shows the sum. To hide the sum, set this attribute to `0`.
+
+Refer to the code given below:
+
+```
+{
+
+  "chart": {
+
+    "showSum": "0"
+
+  }
+
+}
+
+...
+
+```
+
+A Marimekko chart with the total value of market segments hidden looks like this:
+
+CHART
+
+Click here to edit the marimekko chart.
+
+## Percentage market share values
+
+By default, labels are rendered between the columns of a Marimekko chart, along the x-axis, to show the percentage market value share of the competitors. These labels can be shown/hidden, depending on what the user requirement is. Set the `showAxisPercentValues` attribute to `0` to hide the percent values along the x-axis. The default value of this attribute is `1`.
+
+Refer to the code given below:
+
+```
+{
+
+  "chart": {
+
+    "showAxisPercentValues": "0"
+
+  }
+
+}
+
+...
+
+A Marimekko chart with the percentage labels on the x-axis hidden looks like this:
+
+**CHART**
+
+Click [here](http://jsfiddle.net/fusioncharts/vvk1of9j/) to edit the marimekko chart.
+
+## Legend Interactivity
+
+The Marimekko chart includes support for an interactive legend starting FusionCharts Suite XT v3.11.0. The interactive legend implementation for the Marimekko chart not only lets you show/hide the data plots but also manages the space vacated when data plots are hidden. Consequently, the percentage labels are also updated to reflect the current state of the chart.
+
+For example, in the Marimekko chart shown above, if you were to hide the data plots for Washington using the legend, the data plots for California and Nevada will be automatically arranged in the available space, as shown in the image below:
+
+**CHART**
