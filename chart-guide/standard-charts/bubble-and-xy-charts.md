@@ -2,15 +2,16 @@
 title: Bubble and XY Charts | FusionCharts
 description: XY are used for plotting data that is defined in terms of two numeric parameters.
 heading: Bubble and XY Charts
+breadcrumb: [["Home", "/"], ["Bubble and XY Charts"]]
 ---
 
 Bubble and XY charts are used for plotting data that can be defined in terms of multiple numeric parameters. In these charts, the x and y axes are numeric. So, the position of a data point is an indicator of two distinct numeric values.
 
 The XY charts available in the FusionCharts Suite XT are:
 
-* [Scatter Chart](https://www.fusioncharts.com/dev/chart-guide/bubble-and-xy-charts/creating-bubble-and-xy-charts.html#scatter-charts)
+* Scatter Chart
 
-* [Bubble Chart](https://www.fusioncharts.com/dev/chart-guide/bubble-and-xy-charts/creating-bubble-and-xy-charts.html#bubble-charts)
+* Bubble Chart
 
 ## Scatter Charts
 
@@ -18,23 +19,15 @@ Scatter charts are used for plotting data that is defined in terms of two numeri
 
 Let's create a scatter chart plotted for two numeric values - the average day temperature (plotted on the x-axis and the sales (in USD) of beer and ice-cream (plotted on the y-axis); the chart shows how the temperature affects the sales revenue of beer and ice-cream.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a scatter chart, set the `type` attribute to `scatter`.
 
 For a detailed list of attributes you can check the API reference page of scatter chart.
 
 A scatter chart for the above code looks like:
 
-<CHART>
+{% embed_all standard-charts-bubble-and-xy-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/6deM9/) to edit the scatter chart.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
 
 ## Bubble Charts
 
@@ -42,23 +35,15 @@ Bubble charts are used for plotting data that is defined in terms of three numer
 
 So let's create a bubble chart showing sales analysis of shoes of different brands for Harry's SuperMart for last month.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a bubble chart, set the `type` attribute to `bubble`.
 
 For a detailed list of attributes you can check the API reference page of bubble chart.
 
 A bubble chart for the above code looks like:
 
-<CHART>
+{% embed_all standard-charts-bubble-and-xy-charts-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/58sYu/) to edit the bubble chart.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
 
 > In case of bubble and scatter charts, categories are optional because the x-axis is numeric. Categories can, however, be used to define customized x-axis labels for any location on the x-scale. A category can define numeric or non-numeric labels for the x-axis. Unlike other multi-series charts where each dataset contains the same number of objects present in the data array as the number of categories, scatter and bubble charts can have varying number of objects present in the data array elements under each dataset array. In case categories are not defined, the x-axis displays an automatically-calculated numeric scale with vertical divisional lines and values of the divisional lines as x-axis labels. However, you can also explicitly define categories of your choice and show only those categories as x-axis labels. Moreover, you can also combine the categories and automatically-generated x-axis labels using a mixed mode. All of this will be explained in this section.
 
@@ -88,9 +73,9 @@ Refer to the code given below:
 
 A bubble chart with data labels rendered on bubbles looks like this:
 
-<CHART>
+{% embed_all standard-charts-bubble-and-xy-charts-example-3.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/apo6yp8r/) to edit the above chart.
 
 ## Segment the x-axis into categorical zones
 
