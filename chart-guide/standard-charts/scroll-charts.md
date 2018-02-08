@@ -1,20 +1,12 @@
 ---
-permalink: chart-guide/scroll-charts/creating-scroll-charts.html
-title: Creating a Scroll Chart | FusionCharts
+title: Scroll Chart | FusionCharts
 description: Charts with scrolls allows you to plot large quantities of data. They are also used to avoid cluttering of plots.
-heading: Creating a Scroll Chart
-chartPresent: true
+heading: Scroll Chart
 ---
-
-The FusionCharts Suite XT includes charts with scrolls that allow you to plot large quantities of data.
-
-In this section, you will be introduced to the basics of scroll charts and how you can create simple scroll charts.
-
-## Basics of Scroll Charts
 
 Scroll charts are used to avoid cluttering of plots, thereby providing a clean look. Scroll charts can show a larger number of data plots in a small space.
 
-The types of scroll charts available in the  FusionCharts Suite XT are :
+The types of scroll charts available in the FusionCharts Suite XT are :
 
 * Scroll Column 2D chart
 
@@ -28,117 +20,169 @@ The types of scroll charts available in the  FusionCharts Suite XT are :
 
 * Scroll Combination 2D chart (Dual Y)
 
-A scroll column 2D chart looks like this:
+## Scroll Column 2D chart
 
-{% embed_all chart-guide-scroll-charts-creating-scroll-charts-example-1.js %}
+Let's create a scroll column 2D chart to plot the sales trends for FY 2012 - FY 2013. 
 
-A scroll stacked column 2D chart looks like this:
+The JSON and XML structure of the chart is:
 
-{% embed_all chart-guide-scroll-charts-creating-scroll-charts-example-2.js %}
+**CODE SNIPPET**
 
-## Creating a Scroll Chart
+To create a scroll column 2D chart, set the `type` attribute to `scrollColumn2d`.
 
-As an example, we will create a scroll combination 2D chart with a dual y-axis to plot the revenue and the profit earned, in dollars, and the profit percent for FY 2012-FY 2013.
+For a detailed list of attributes you can check the API reference page of scroll column chart.
+
+The scroll column 2D chart for the above code looks like:
+
+**CHART**
+
+Click [here](http://jsfiddle.net/fusioncharts/nAa33/) to edit the scroll column 2D chart.
+
+The full HTML code for the above sample is:
+
+**HTML CODE SNIPPET**
+
+## Scroll Line 2D chart
+
+Now, let's create a scroll line 2D chart. To render a scroll line chart in 2D, change the value of the `type` attribute from `scrollColumn2d` to `scrollline2d`. The rest of the data structure remains the same.
+
+A single-series scroll line 2D chart looks like:
+
+**CHART**
+
+Click [here](http://jsfiddle.net/fusioncharts/Pm3nf/) to edit the scroll line 2D chart.
+
+## Scroll Area 2D
+
+Let's create the scroll area 2D chart. To render a scroll area chart in 2D, change the value of the `type` attribute from `scrollline2d` to `scrollarea2d`. The rest of the data structure remains the same.
+
+A single-series scroll area 2D chart looks like:
+
+**CHART**
+
+Click [here](http://jsfiddle.net/fusioncharts/7neLV/) to edit the scroll area 2D chart.
+
+## Scroll Stacked Column 2D chart
+
+Stacked charts are the multi-series charts with the plot datasets in top of each other. Now, let's create a scroll stacked column 2D chart. The example will plot the sales comparison w.r.t. the products and services for FY 2017-FY 2018.
+
+ To render a scroll stacked column chart in 2D, change the value of the `type` attribute to `scrollstackedcolumn2d`.
+
+A scroll stacked column 2D chart looks like:
+
+**CHART**
+
+Click [here](http://jsfiddle.net/fusioncharts/t3SKj/) to edit the scroll stacked column 2D chart.
+
+## Scroll Combination 2D chart
+
+Now, we will create a scroll combination 2D chart to plot the revenue and the profit earned, in dollars, and the profit for FY 2017-FY 2018.
+
+To render a scroll combination 2D chart, change the value of the `type` attribute to `scrollcombi2d`.
+
+A scroll combination 2D chart looks like:
+
+**CHART**
+
+Click [here](http://jsfiddle.net/fusioncharts/6Y3jt/) to edit the scroll stacked column 2D chart.
+
+To create a scroll combination 2D chart with a dual y-axis, change the value of the `type` attribute to `scrollcombidy2d`. Here we will plot the revenue and the profit earned, in dollars, and the profit percent for FY 2017-FY 2018.
 
 The scroll combination 2D chart (dual Y) chart thus created looks like this :
 
-{% embed_all chart-guide-scroll-charts-creating-scroll-charts-example-3.js %}
+**CHART**
 
+Click here to edit the scroll combination 2D chart with a dual y-axis.
 
+Now, let's customize the appearance and properties of the charts. 
 
+## Configure the number of visible data plots
 
+Scroll charts are generally used to avoid cluttering. With that in FusionCharts, you can also configure the number of data plots that will be visible in the scroll pane when the chart is first loaded. To configure this specify the number of visible plots using the `numVisiblePlot` attribute.
 
-## Brief Explanation of the Data Structure
+Refer to the code given below:
 
-In the JSON data, the attributes and their corresponding values are written in the following key-value pair format:
+```
+{
 
-```html
+  "chart": {
 
-"<attributeName>": "<value>"
+    "numVisiblePlot": "12"
+
+  },
+
+}
+
+...
 
 ```
 
-Given below is a brief description of the data structure used to create the above scroll combination 2D (dual Y) chart:
+A scroll chart with the number of visible data plots set to twelve looks like this:
 
-<table>
-  <tr>
-    <th>Attribute Name</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>`type`</td>
-    <td>It is used to specify the type of chart you want to render. For example, to render a scroll combination 2D (dual Y) chart, the value for this attribute will be `scrollcombidy2d`.</td>
-  </tr>
-  <tr>
-    <td>`renderAt`</td>
-    <td>It is used to specify the container object where the chart will be rendered.</td>
-  </tr>
-  <tr>
-    <td>`width`</td>
-    <td>It is used to specify the width of the chart.</td>
-  </tr>
-  <tr>
-    <td>`height`</td>
-    <td>It is used to specify the height of the chart.</td>
-  </tr>
-  <tr>
-    <td>`dataFormat`</td>
-    <td>It is used to specify the type of data that will passed to the chart object. This attribute takes two values: `json`, where the JSON data to render the chart is passed to the `dataSource` attribute, and `jsonurl`, where the relative path to a .json file is passed to the `dataSource` attribute.</td>
-  </tr>
-  <tr>
-    <td>`dataSource`</td>
-    <td>It specifies the source from where the data will be fetched, depending on the value passed to the `dataFormat` attribute.</td>
-  </tr>
-  <tr>
-    <td>`caption`</td>
-    <td>It is used to specify the chart caption. This attribute belongs to the `chart` object.</td>
-  </tr>
-  <tr>
-    <td>`subCaption`</td>
-    <td>It is used to specify the chart sub-caption. This attribute belongs to the `chart` object.</td>
-  </tr>
-  <tr>
-    <td>`xAxisName`</td>
-    <td>It is used to specify the name for the x-axis.</td>
-  </tr>
-  <tr>
-    <td>`pYAxisName`</td>
-    <td>It is used to specify the name for the primary y-axis.</td>
-  </tr>
-  <tr>
-    <td>`sYAxisName`</td>
-    <td>It is used to specify the name for the secondary y-axis.</td>
-  </tr>
-  <tr>
-    <td>`numberPrefix`</td>
-    <td>It is used to specify the character that will precede all numeric values on the chart, e.g. `$` for the currency symbol.</td>
-  </tr>
-  <tr>
-    <td>`sNumberSuffix`</td>
-    <td>It is used to specify the character that will be appended to all numeric values plotted against the secondary y-axis, e.g. `%` for the percentage sign.</td>
-  </tr>
-  <tr>
-    <td>`sYAxisMaxValue`</td>
-    <td>It is used to explicitly specify the upper limit for the secondary y-axis. By default, the chart automatically calculates the upper limit based on the data you provide.</td>
-  </tr>
-  <tr>
-    <td>`numVisiblePlot`</td>
-    <td>It is used to specify the number of data plots that will be visible in the scroll pane when the chart is first loaded.</td>
-  </tr>
-  <tr>
-    <td>`theme`</td>
-    <td>It is used to specify the theme for the chart.</td>
-  </tr>
-  <tr>
-    <td>`label`</td>
-    <td>It is used to specify the label for a data item. The label is rendered on the x-axis. This attribute belongs to the `category` object array, which in turn belongs to the `categories` object array.</td>
-  </tr>
-  <tr>
-    <td>`value`</td>
-    <td>It is used to specify the value for a data item. This attribute belongs to the `data` object array, which in turn belongs to the `dataset` object array.</td>
-  </tr>
-  <tr>
-    <td>`seriesName`</td>
-    <td>It is used to specify a name for the dataset. This name is shown in the legend box rendered below the chart. This attribute belongs to the `dataset` object array.</td>
-  </tr>
-</table>
+**CHART**
+
+Click here to edit the scroll column 2D chart.
+
+## Render a scroll bar with the gradient effect
+
+By default, a scroll chart has a flat scroll bar. You can opt to render a gradient scroll to visually enhance your chart. To render the scroll in gradient set the `flatScrollBars` attribute to `0`. 
+
+Refer to the code given below:
+
+```
+{
+
+  "chart": {
+
+    "flatScrollBars": "0"
+
+  },
+
+}
+
+...
+
+```
+
+A scroll chart with a gradient scroll bar looks like this:
+
+**CHART**
+
+Click here to edit the scroll column 2D chart.
+
+## Customizing the Scroll Bar
+
+The scroll bar of the scroll chart can be customized using the cosmetic properties. To the customize the scroll bar, follow the steps below:
+
+* Specify the hex code for the scroll color code using the `scrollColor` attribute.
+
+* Specify the height of the scroll bar using the `scrollHeight` attribute.
+
+* Set the distance of the scroll bar from the canvas  using the `scrollPadding` attribute.
+
+Refer to the code given below:
+
+```
+{
+
+  "chart": {
+
+    "scrollColor": "#1aaf5d",
+
+    "scrollHeight": "12",
+
+    "scrollPadding": "2"
+
+  },
+
+}
+
+...
+
+```
+
+A scroll chart with the cosmetic properties of the scroll bar customized looks like this:
+
+**CHART**
+
+Click here to edit the scroll column 2D chart.
