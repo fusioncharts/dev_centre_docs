@@ -85,7 +85,7 @@ The x-axis of the bubble/scatter chart can be segmented into categorical zones u
 
 A bubble chart with the x-axis segmented looks like this:
 
-<CHART>
+{% embed_all standard-charts-bubble-and-xy-charts-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/jcjjmhon/) to edit the above chart.
 
@@ -107,9 +107,9 @@ In the auto mode, the chart automatically calculates and displays the x-axis lab
 
 A bubble chart with the x-axis labels rendered in the auto mode looks like this:
 
-<CHART>
+{% embed_all standard-charts-bubble-and-xy-charts-example-5.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/vu6spe8b/) to edit the above chart.
 
 In the above chart, you can see that the x-axis labels are automatically calculated and displayed. These x-axis labels are based on x-axis values which in turn are generated using the `x` values of the chart data. Additionally, along with each label a vertical divisional line is also rendered.
 
@@ -119,9 +119,9 @@ In this mode, the x-axis displays labels explicitly defined through the objects 
 
 A bubble chart with the x-axis labels rendered in the categories mode looks like this:
 
-<CHART>
+{% embed_all standard-charts-bubble-and-xy-charts-example-6.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/grkoppxq/) to edit the above chart.
 
 In the above chart, you can see that the labels explicitly defined in the `category` object array within the `categories` object array are displayed. The automatically calculated labels are not displayed.
 
@@ -133,9 +133,9 @@ This mode is a combination of the auto mode and the category mode. It allows the
 
 A bubble chart with the x-axis labels rendered in the mixed mode looks like this:
 
-<CHART>
+{% embed_all standard-charts-bubble-and-xy-charts-example-7.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/rkqm4hLn/) to edit the above chart.
 
 In the above chart, you can see that the x-axis displays the automatically calculated labels as well as the explicitly defined labels.
 
@@ -175,11 +175,33 @@ Configure the vertical divisional lines, by following the points below:
 
 Refer to the code below:
 
-<Insert Code>
+```
+...
+{
+    "chart": {
+        "adjustVDiv": "1",
+        "showXAxisValues": "1",
+        "numVDivlines": "5",
+        "xAxisValuesStep": "1",
+        "vDivlineColor": "ff0000",
+        "vDivlineThickness": "2",
+        "vDivlineAlpha": "70",
+        "vDivlineIsDashed": "1",
+        "vDivlineDashLen": "4",
+        "vDivlineDashGap": "3",
+        "showAlternateVGridColor": "1",
+        "alternateVGridColor": "0ffff0",
+        "alternateVGridAlpha": "40"
+    }
+}
+...
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_all standard-charts-bubble-and-xy-charts-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/26Lsqna9/) to edit the above chart.
 
 ## Connect scatter plots by a line
 
@@ -204,9 +226,9 @@ Refer to the code given below:
 
 A scatter chart with all the data points connected by a line looks like this:
 
-<CHART>
+{% embed_all standard-charts-bubble-and-xy-charts-example-9.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/t7Ladarf/) to edit the above chart.
 
 ## Draw regression lines
 
@@ -218,14 +240,14 @@ For scatter and bubble charts, regression lines can be drawn based on the values
 
 There are several methods to calculate and draw regression lines; scatter charts, using linear regression, use the **least-squares** deviation method (also known as the least absolute deviation method). This method calculates the best-fitting straight-line for the observed data by minimizing the sum of the squares of the vertical deviation of each data point from the line (if a point lies on the fitted line exactly, then its vertical deviation is 0). As the deviation values are first squared and then summed, there are no cancellations between positive and negative values.
 
-To show the regression lines in the chart, set the `showRegressionLine` attribute to `1`. The default value of this attribute is `0`, which hides the line. THis attribute belongs to the `dataset` object.
+To show the regression lines in the chart, set the `showRegressionLine` attribute to `1`. The default value of this attribute is `0`, which hides the line. This attribute belongs to the `dataset` object.
 
 Refer to the code given below:
 
 ```
 {
 
-    "chart": {
+    "dataset": {
 
         "showRegressionLine": "1"
 
@@ -239,9 +261,9 @@ Refer to the code given below:
 
 A scatter chart with regression lines looks like this:
 
-<CHART>
+{% embed_all standard-charts-bubble-and-xy-charts-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Yd24m/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/8wwg1pat/) to edit the above chart.
 
 ### Modes of Regression
 
@@ -265,13 +287,24 @@ Here, let's try out the same chart with the regression lines drawn using the **X
 
 Refer to the code below:
 
-<Insert Code> 
+```
+...
+{
+    "chart": {
+        "showYonX": "1",
+        "regressionLineColor": "ff0000",
+        "regressionLineThickness": "5",
+        "regressionLineAlpha": "70"
+    }
+}
+...
+```
 
 The same chart with regression lines drawn using the **X on Y** mode looks like this:
 
-<CHART>
+{% embed_all standard-charts-bubble-and-xy-charts-example-11.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/yo0dc81r/) to edit the above chart.
 
 > The formulae used to draw the regression lines for both the modes are given below: 
 
@@ -301,9 +334,9 @@ Refer to the code given below:
 ```
 A bubble chart rendered with quadrants looks like this:
 
-<CHART>
+{% embed_all standard-charts-bubble-and-xy-charts-example-12.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/9Lk3u31L/) to edit the above chart.
 
 A bubble chart rendered with quadrants can also be drawn at user-defined positions. To specify the position of the vertical and horizontal quadrant lines, set the value to `quadrantXVal` and `quadrantYVal` attribute respectively. The value of these attribute should be within the range of its corresponding relative axis (and not pixels). 
 
@@ -336,9 +369,9 @@ Refer to the code given below:
 
 A bubble chart rendered with quadrants drawn at user-defined positions looks like this:
 
-<CHART>
+{% embed_all standard-charts-bubble-and-xy-charts-example-13.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/28m91mnh/) to edit the above chart.
 
 ## Display quadrant labels
 
@@ -360,13 +393,9 @@ Refer to the code given below:
     "chart": {
 
         "quadrantLabelTL": "Low Price / High Sale",
-
         "quadrantLabelTR": "High Price / High Sale",
-
         "quadrantLabelBL": "Low Price / Low Sale",
-
         "quadrantLabelBR": "High Price / Low Sale",
-
     }
 
 }
@@ -376,9 +405,9 @@ Refer to the code given below:
 ```
 A bubble chart with quadrant labels displayed looks like this:
 
-<CHART>
+{% embed_all standard-charts-bubble-and-xy-charts-example-14.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ot94tuqg/) to edit the above chart.
 
 ## Customize quadrant labels
 
@@ -394,16 +423,11 @@ We'll create a sample using some of the cosmetic properties for the quadrant lab
     "chart": {
 
         "quadrantLabelFontItalic": "1",
-
-    "quadrantLabelFontBold": "1",
-
-    "quadrantLabelTLFontColor": "#123456",
-
-    "quadrantLabelTRFontColor": "#ABCDEF",
-
-    "quadrantLabelBLFontColor": "#123ABC",
-
-    "quadrantLabelBRFontColor": "#DEF456"
+        "quadrantLabelFontBold": "1",
+        "quadrantLabelTLFontColor": "#123456",
+        "quadrantLabelTRFontColor": "#ABCDEF",
+        "quadrantLabelBLFontColor": "#123ABC",
+        "quadrantLabelBRFontColor": "#DEF456"
 
     }
 
@@ -414,9 +438,9 @@ We'll create a sample using some of the cosmetic properties for the quadrant lab
 ```
 A bubble chart showcasing the above cosmetic attributes for quadrant labels is shown below:
 
-<CHART>
+{% embed_all standard-charts-bubble-and-xy-charts-example-15.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/6o6jh6jm/) to edit the above chart.
 
 ## Customize quadrant lines
 
@@ -466,6 +490,6 @@ Refer to the code given below:
 ```
 A bubble chart rendered with customized quadrant lines looks like this:
 
-<CHART>
+{% embed_all standard-charts-bubble-and-xy-charts-example-16.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/mgf2z57n/) to edit the above chart.
