@@ -11,10 +11,9 @@ An angular/meter/dial gauge displays a specific dataset utilizing an indicator t
 
 Gauges, in FusionCharts Suite XT, are available as part of FusionWidget XT. To start with, we'll build a simple "Weekly Customer Satisfaction Index" gauge as shown below:
 
-***<<Embed Chart>>***
+{% embed_chart getting-started-your-first-widget.js %}
 
 Harry defines the thresholds for his customer satisfaction score using the following range.
-
 
 Range|Color|Hex Code|
 -|-|-
@@ -30,9 +29,9 @@ Let's now get to building the gauge.
 
 Here is the JSON/XML representation of the above data table to build this gauge:
 
-***<<Embed Code>>***
+{% embed_data getting-started-your-first-widget.js %}
 
-### **Include FusionCharts Suite XT library**
+### Include FusionCharts Suite XT library
 
 To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called `fint` (FusionCharts internal) and it is present in the `themes` folder of your download. Refer to the code below:
 

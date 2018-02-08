@@ -9,7 +9,7 @@ Let's build our first chart using FusionCharts Suite XT! Throughout this documen
 
 Let's start with a simple example of "Monthly revenue" chart, which we will plot in a Column 2D chart as shown below: 
 
-{% embed_chart getting-started-your-first-chart-example-1.js %}
+{% embed_chart getting-started-your-first-chart.js %}
 
 The data for this chart is represented in a table as under:
 
@@ -34,69 +34,9 @@ Let's now get to building the chart.
 
 FusionCharts Suite XT JavaScript library only accepts data in JSON or XML format. You can provide data as JSON/XML strings, or use data stored in physical files on your servers. In case your data is stored in database or other data sources, you can write server-side scripts to read that data, iterate through it, and use strings to generate the XML or JSON data.
 
-For example, when you convert the data in the table above to JSON format, it will look as under:
+For example, when you convert the data in the table above to JSON/XML format, it will look as under:
 
-```
-{
-    "chart": {
-        "caption": "Monthly revenue for last year",
-        "subCaption": "Harry's SuperMart",
-        "xAxisName": "Month",
-        "yAxisName": "Revenues (In USD)",
-        "numberPrefix": "$",
-        "theme": "fint"
-    },
-    "data": [{
-            "label": "Jan",
-            "value": "420000"
-        },
-        {
-            "label": "Feb",
-            "value": "810000"
-        },
-        {
-            "label": "Mar",
-            "value": "720000"
-        },
-        {
-            "label": "Apr",
-            "value": "550000"
-        },
-        {
-            "label": "May",
-            "value": "910000"
-        },
-        {
-            "label": "Jun",
-            "value": "510000"
-        },
-        {
-            "label": "Jul",
-            "value": "680000"
-        },
-        {
-            "label": "Aug",
-            "value": "620000"
-        },
-        {
-            "label": "Sep",
-            "value": "610000"
-        },
-        {
-            "label": "Oct",
-            "value": "490000"
-        },
-        {
-            "label": "Nov",
-            "value": "900000"
-        },
-        {
-            "label": "Dec",
-            "value": "730000"
-        }
-    ]
-}
-```
+{% embed_data getting-started-your-first-chart.js %}
 
 ## Include FusionCharts Suite XT library
 
