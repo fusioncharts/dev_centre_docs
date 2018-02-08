@@ -1,9 +1,8 @@
 ---
-permalink: basic-chart-configurations/tutorials/basic-chart-configuration-part-1.html
 title: Basic Chart Configuration(Part-1) | FusionCharts
 description: This section talks about the basic configurations for charts related to their canvas, background and border.
 heading: Basic Chart Configuration(Part-1)
-chartPresent: true
+breadcrumb: [["Home", "/"], ["Overview"]]
 ---
 
 FusionCharts Suite XT allows you to configure the border, chart background and the data plots present in the chart. This is the first article in a 2-part series where we cover how to configure chart properties. First article covers configuration of charts' appearance via properties while second part digs into usage of FusionCharts API to have the same effect. You can <a href="/basic-chart-configurations/tutorials/basic-chart-configuration-part-2.html" target="_blank">check out part-2 here</a>.
