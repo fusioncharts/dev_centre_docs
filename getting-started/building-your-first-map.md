@@ -15,8 +15,6 @@ The final map would look as shown below:
 
 {% embed_chart getting-started-your-first-map.js %}
 
-**<<Embed Map here>>**
-
 The data used in this map is shown below:
 
 State|Entity|Name Revenue|
