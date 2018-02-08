@@ -1,8 +1,8 @@
 ---
-title: Your First Gauge | FusionCharts
+title: Your First Widget | FusionCharts
 description: This articles talks about the 5 simple steps to build a chart using FusionWidgets XT.
-heading: Your First Gauge
-breadcrumb: [["Home", "/"], ["Your First Gauge"]]
+heading: Your First Widget
+breadcrumb: [["Home", "/"], ["Your First Widget"]]
 ---
 
 Now, we will create an angular gauge for Harry so that he can quickly monitor the customer satisfaction score for Harry's SuperMart. Gauges are powerful tools that can showcase using a radial scale to display data and a dial is used to indicate the value.
