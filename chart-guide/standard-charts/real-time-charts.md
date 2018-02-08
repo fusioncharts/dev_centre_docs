@@ -10,11 +10,11 @@ Real-time charts, also known as data streaming charts, are charts that automatic
 
 FusionCharts Suite XT currently offers the following six real-time charts:
 
+* Real Time Line
+
 * Real-time Area
 
-* Real-time Column
-
-* Real-time Line
+* Real Time Column
 
 * Real-time Stacked Area
 
@@ -72,44 +72,89 @@ The format of real-time data for real-time charts depends on:
 
 * the commands for the chart.
 
-Let's create our first real-time chart showcasing the stock price monitoring at Harry's SuperMart.
+## Real Time Line chart
+
+Let's create our first real-time line chart showcasing the stock price monitoring at Harry's SuperMart.
 
 The JSON and XML structure of the chart is:
 
 CODE SNIPPET
 
-## Real time line chart
+To create a real-time chart, set the `type` attribute to `realtimeline`.
 
-To create a real-time chart, set the `type` attribute to `RealTimeLine`.
-
-For a detailed list of attributes you can check the API reference page of real-time chart.
-
-In this section, you will be shown how the data format changes depending on the above factors. 
+For a detailed list of attributes you can check the API reference page of real-time line chart.
 
 A real-time line chart looks like:
 
 CHART
 
+## Real Time Area chart
+
+To create a real-time area chart, set the `type` attribute to `realtimeareachart`. The rest of the data structure remains the same.
+
+For a detailed list of attributes you can check the API reference page of real-time area chart.
+
+A real-time area chart looks like:
+
+<CHART>
+
+## Real Time Stacked Area chart
+
+To create a real-time chart, set the `type` attribute to `realtimestackedarea`. The rest of the data structure remains the same.
+
+For a detailed list of attributes you can check the API reference page of real-time area chart.
+
+A real-time stacked area chart looks like:
+
+<CHART>
+
+## Real Time Column chart
+
+To create a real-time column chart, set the `type` attribute to `realtimecolumn`. The rest of the data structure remains the same.
+
+For a detailed list of attributes you can check the API reference page of real-time area chart.
+
+A real-time column chart looks like:
+
+<CHART>
+
+## Real Time Stacked Column chart
+
+To create a real-time stacked column chart, set the `type` attribute to `realtimestackedcolumn`. The rest of the data structure remains the same.
+
+For a detailed list of attributes you can check the API reference page of real-time area chart.
+
+A real-time area chart looks like:
+
+<CHART>
+
+## Real Time Dual Y Line chart
+
+To create a real-time dual y line chart, set the `type` attribute to `realtimelinedy`. The rest of the data structure remains the same.
+
+For a detailed list of attributes you can check the API reference page of real-time area chart.
+
+A real-time area chart looks like:
+
+<CHART>
+
 ## Number of datasets to update
 
 Let's say you want to update two datasets plotted on a line chart. To do this, you need to output the data in the following format:
 
-**{% highlight javascript lineanchors %}{% raw %}**
+```
 
-**&value=23|43**
+&value=23|43
 
-**{% endraw %}{% endhighlight %}**
-
+```
 Here, the two output values, 23 and 43, are separated by the | (pipe character). The value specified first, 23, is set for the first dataset and the value specified second, 43, is set for the second dataset.
 
 Similarly, if you had three datasets to update, the data will be passed in the following format:
 
-**{% highlight javascript lineanchors %}{% raw %}**
+```
+&value=23|43|45
 
-**&value=23|43|45**
-
-**{% endraw %}{% endhighlight %}**
-
+```
 Here, the third value, 45, is set for the third dataset.
 
 ## Number of incremental updates
@@ -118,31 +163,28 @@ Real-time charts let you pass multiple values for one dataset in each update.
 
 If working over HTTP and need to ensure that you utilize the bandwidth efficiently. Considering this, it will not be feasible to set your chart, with three datasets, to update itself every second, because this may create a strain on the server. However, you also do not want to skip the data values that you missed by not updating the data every second. To avoid this, you can provide data to the chart in the following format:
 
-**{% highlight javascript lineanchors %}{% raw %}**
-
+```
 **&value=23,25,24|43,47,45|45,47,49**
 
-**{% endraw %}{% endhighlight %}**
-
+```
 Here, the values 23, 25, and 24 correspond to the first dataset, 43, 47, and 45 correspond to the second dataset, and 45, 47, and 49 correspond to the third dataset. All values for one dataset are separated by a comma, all datasets are separated by the | (pipe character)
 
-## Attributes to update for the chart
+## Attributes to update the chart
 
 Assume that you plot a real-time line chart to monitor stock prices for Harry's SuperMart. On this monitoring chart, the stock price is checked at every seventh instance of data update. You want to add a vertical trend-line that helps you keep track of every instance when the price is checked.
 
 To do this, you can provide data to the chart in the following format
 
-**{% highlight javascript lineanchors %}{% raw %}**
+```
+&label=11:45&value=753|345&vline=0&vLineLabel=vLine&vLineColor=#666666&vLineThickness=2&vLineDashed=1
 
-**&label=11:45&value=753|345&vline=0&vLineLabel=vLine&vLineColor=#666666&vLineThickness=2&vLineDashed=1**
-
-**{% endraw %}{% endhighlight %}**
+```
 
 The real-time line chart thus rendered is shown below:
 
 CHART
 
-## Attributes to update for each dataset
+## Attributes to update each dataset
 
 ### The label attribute
 
@@ -152,12 +194,10 @@ Consider that you are plotting a real-time multi-series line chart that indicate
 
 To do this, you can provide data to the chart in the following format:
 
-**{% highlight javascript lineanchors %}{% raw %}**
+```
+&label=11:45&value=23|43|45
 
-**&label=11:45&value=23|43|45**
-
-**{% endraw %}{% endhighlight %}**
-
+```
 When the chart receives this data, it shifts all existing data and labels one position to the left. Next it plots the new label on the x-axis and the three new data values on the y-axis.
 
 #### Hide the Label
@@ -166,11 +206,10 @@ For charts plotting a large number of data points, you may not want to render al
 
 For the data label that you want to hide, you can provide your incremental data to the chart in the following format:
 
-**{% highlight javascript lineanchors %}{% raw %}**
+```
+&label=11:45&showLabel=0&value=23|43|45
 
-**&label=11:45&showLabel=0&value=23|43|45**
-
-**{% endraw %}{% endhighlight %}**
+```
 
 The `showLabel` attribute, when set to `0`, hides the data label from the x-axis.
 
@@ -180,68 +219,58 @@ For real-time charts, you can render a data plot as a clickable link that opens 
 
 To do this, you can provide the incremental data to the chart in the following format:
 
-**{% highlight javascript lineanchors %}{% raw %}**
+```
+&label=11:45&value=23|43|45&link=showdetail.asp?server=1%26time=1145|showdetail.asp?server=2%26time=1145|showdetail.asp?server=3%26time=1145
 
-**&label=11:45&value=23|43|45&link=showdetail.asp?server=1%26time=1145|showdetail.asp?server=2%26time=1145|showdetail.asp?server=3%26time=1145**
-
-**{% endraw %}{% endhighlight %}**
-
+```
 The link has to be specified in the FusionCharts link format. The link in the above data has been URL Encoded because it contains special characters like `&`, `%`, etc.
 
 ### The toolText attribute
 
 To update the tool-text, you can provide the corresponding incremental data to the chart in the following format:
 
-**{% highlight javascript lineanchors %}{% raw %}**
+```
+&label=11:45&toolText=12/3/2007 11:45:23 AM &value=23|43|45
 
-**&label=11:45&toolText=12/3/2007 11:45:23 AM &value=23|43|45**
-
-**{% endraw %}{% endhighlight %}**
+```
 
 ### The color attribute
 
 To update the color, you can provide the corresponding incremental data to the chart in the following format:
 
-**{% highlight javascript lineanchors %}{% raw %}**
+```
+&label=11:45&value=23|43|45&color=FF0000|0372AB|FF5904
 
-**&label=11:45&value=23|43|45&color=FF0000|0372AB|FF5904**
-
-**{% endraw %}{% endhighlight %}**
-
+```
 The colors for each dataset are separated by the `|` (pipe character). The colors specified for real-time updates will always be filled as solid colors and not gradients.
 
 ## Provide empty data
 
 To provide empty data to the chart, so that a break in the data plot (column/line/area) shows, you can provide the incremental data to the chart in the following format:
 
-**{% highlight javascript lineanchors %}{% raw %}**
+```
+&label=11:45&value=||
 
-**&label=11:45&value=||**
-
-**{% endraw %}{% endhighlight %}**
-
+```
 ## Commands sent
 
-### The **clearChart** Command
+### The clearChart Command
 
 To clear the historical data displayed on the chart, you can send the `clearChart` command to the server in the following format:
 
-**{% highlight javascript lineanchors %}{% raw %}**
+```
+&clear=1
 
-**&clear=1**
+```
 
-**{% endraw %}{% endhighlight %}**
-
-### The **stopUpdate** Command
+### The stopUpdate Command
 
 To stop the chart from the polling the server for real-time updates, you can send the `stopUpdate` command in the following format:
 
-**{% highlight javascript lineanchors %}{% raw %}**
+```
+&stopUpdate=1
 
-**&stopUpdate=1**
-
-**{% endraw %}{% endhighlight %}**
-
+```
 After you have stopped updates for a chart, you can restart updates either by user interaction or by using client-side JavaScript API.
 
 ## Send messages pertinent
@@ -264,35 +293,35 @@ Data provider page
 
 The data provider page now contains the following code:
 
-**{% highlight php lineanchors %}{% raw %}**
+```
 
-**<?php**
+<?php
 
-**    date_default_timezone_set("UTC");**
+    date_default_timezone_set("UTC");
 
-**    $now =  date("H:i:s", time());**
+    $now =  date("H:i:s", time());
 
-**    //Get random numbers**
+    //Get random numbers
 
-**    $randomValueRetail = floor(rand(5,30));**
+    $randomValueRetail = floor(rand(5,30));
 
-**    $randomValueOnline = floor(rand(1,10));**
+    $randomValueOnline = floor(rand(1,10));
 
-**    //Output**
+    //Output
 
-**    echo  "&label=".$now."&value=".$randomValueRetail."|".$randomValueOnline;**
+    echo  "&label=".$now."&value=".$randomValueRetail."|".$randomValueOnline;
 
-**?>**
+?>
 
-**{% endraw %}{% endhighlight %}**
+```
 
 An example of how data values will be sent as output to the chart is given below:
 
-**{% highlight php lineanchors %}{% raw %}**
+```
 
-**&label=19:26:56&value=22|7**
+&label=19:26:56&value=22|7
 
-**{% endraw %}{% endhighlight %}**
+```
 
 In the data shown above, we have defined a common label that takes two values - one for each dataset. The values are separated using the `|` (pipe character). In the example above, 22 is the value for the Retail Store dataset and 7 is the value for the Online dataset. The order of values here should correspond with the order of dataset object arrays defined in the JSON/XML data.
 
@@ -308,7 +337,7 @@ Even when a dataset is not visible, it will continue updating itself in the back
 
 To disable the interactive legend, set the value of `interactiveLegend` attribute to `0`. Refer to the code below:
 
-{% highlight php lineanchors %}{% raw %}
+```
 
 {
 
@@ -320,7 +349,7 @@ To disable the interactive legend, set the value of `interactiveLegend` attribut
 
 }
 
-{% endraw %}{% endhighlight %}
+```
 
 ## Push multiple updates
 
@@ -328,11 +357,11 @@ So far, for every dataset rendered on the chart, we have passed only single-valu
 
 The example below shows the format used to push multiple updates at one time:
 
-**{% highlight php lineanchors %}{% raw %}**
+```
 
-**&label=11:45:55,11:46:00,11:46:05&value=22,27,28|7,6,5**
+&label=11:45:55,11:46:00,11:46:05&value=22,27,28|7,6,5
 
-**{% endraw %}{% endhighlight %}**
+```
 
 In the above example, three updated have been provided for each dataset present on the chart together. Three new labels has also been provided for the x-axis, each label corresponding to each value update for both datasets.
 
@@ -348,7 +377,7 @@ CHART
 
 The updated data provider page `advance-charting-real-time-charts-multiple-datasets-and-updates-php-1.php` to output multiple values contains the following code:
 
-{% highlight php lineanchors %}{% raw %}
+```
 
 <?php
 
@@ -376,15 +405,15 @@ The updated data provider page `advance-charting-real-time-charts-multiple-datas
 
 ?>
 
-{% endraw %}{% endhighlight %}
+```
 
 This page outputs the data in following format:
 
-**{% highlight php lineanchors %}{% raw %}**
+```
 
-**&label=11:16:09,11:16:12&value=26,25|1,3**
+&label=11:16:09,11:16:12&value=26,25|1,3
 
-**{% endraw %}{% endhighlight %}**
+```
 
 # Add historical data
 
@@ -416,8 +445,7 @@ Now, let's create a real-time column chart configuring to display 15 data plots 
 
 Refer to the code given below:
 
-{% highlight javascript lineanchors %}{% raw %}
-
+```
 ...
 
 {
@@ -432,7 +460,7 @@ Refer to the code given below:
 
 ...
 
-{% endraw %}{% endhighlight %}
+```
 
 A real-time column chart configured to display 15 data plots at a time is shown below:
 
@@ -468,8 +496,7 @@ For our scenario, we would want to use the data stamp as follows:
 
 The following code snippet is used to set the initial data stamp:
 
-{% highlight php lineanchors %}{% raw %}
-
+```
 {
 
     "chart": {
@@ -486,15 +513,14 @@ The following code snippet is used to set the initial data stamp:
 
 }
 
-{% endraw %}{% endhighlight %}
+```
 
 After every 15 seconds now, the chart will call the following URL:
 
-{% highlight php lineanchors %}{% raw %}
-
+```
 files/php/advanced-charting-real-time-charts-adding-data-stamp-php-1.php?FCTimeIndex=35454&dataStamp=13:43:45
 
-{% endraw %}{% endhighlight %}
+```
 
 The `dataStamp` attribute is used to add the data stamp to the URl. The `FCTimeIndex` is a paramter added by the chart to avoid caching.
 
@@ -502,11 +528,11 @@ The code in the data provider page will now request this data stamp and then pro
 
 Therefore, the output provided by the data provider page will read something like this:
 
-**{% highlight php lineanchors %}{% raw %}**
+```
 
-**&label=13:43:55,13:44:05,13:44:15|value=34,23,65&dataStamp=13:45:15**
+&label=13:43:55,13:44:05,13:44:15|value=34,23,65&dataStamp=13:45:15
 
-**{% endraw %}{% endhighlight %}**
+```
 
 The above output contains:
 
@@ -518,12 +544,10 @@ The above output contains:
 
 Once the chart receives this update, it will update itself to plot the three new values and will also update its data stamp. Next time when the chart invokes the data provider page, it will invoke the following URL:
 
-{% highlight php lineanchors %}{% raw %}
-
+```
 dataProviderPage.php?FCTimeIndex=37564&dataStamp=13:45:15
 
-{% endraw %}{% endhighlight %}
-
+```
 Note how the `dataStamp` has been updated to the one specified by the real-time update. This helps to constantly update the data stamp and thereby, keep a track of the last data sent to chart.
 
 # Set alert manager
@@ -567,12 +591,9 @@ A chart thus created looks like :
 
 CHART
 
-
 ALERT|
 -
 Footfall exceeded average|
-
-
 
 ## Configure the alert manager for individual datasets
 
@@ -586,8 +607,7 @@ Given below is a brief description of the attribute used to configure the alert 
 
 Refer to the code given below:
 
-{% highlight javascript lineanchors %}{% raw %}
-
+```
 ...
 
 {
@@ -634,7 +654,7 @@ Refer to the code given below:
 
 ...
 
-{% endraw %}{% endhighlight %}
+```
 
 # Set message logger
 
@@ -672,7 +692,7 @@ The FusionCharts Suite XT message logger has the following features:
 
 A simple message logger looks as shown in the image below:
 
-![](null)
+**CHART**
 
 In the above image, we have a real-time column chart that monitors the footfalls at Bakersfield Central. Overlapping this chart is the message logger that contains messages that were streamed to the message logger by the server.
 
@@ -696,8 +716,7 @@ The context menu appears as a button in the bottom-left corner of the chart (you
 
 The following code snippet enables the use of the message logger for a real-time chart:
 
-{% highlight javascript lineanchors %}{% raw %}
-
+```
 {
    "chart"**:** {
    ...
@@ -707,15 +726,15 @@ The following code snippet enables the use of the message logger for a real-time
    }
 }
 
-{% endraw %}{% endhighlight %}
+```
 
 When the first message is streamed to the chart from server, the message logger is displayed as shown in the image below:
 
-![](null)
+**CHART**
 
 A close button appears at the top-right corner of the message logger window that you can use to close the message logger. Or you can click anywhere outside the message logger window. To re-open the message logger, click the `Show Log` option from the context menu, as shown in the image below:
 
-![](null)
+**CHART**
 
 The `**messageGoesToJS`** attribute is used to pass only the "Message Text" parameter to the JavaScript function, whereas, the `**messagePassAllToJS`** is used to pass all the four parameters to the JavaScript function.
 
@@ -752,11 +771,11 @@ In the next section, let's look at different examples of real-time updates that 
 
 An example of a real-time update string passed to the message logger (contained in the column chart shown above) is given below:
 
-**{% highlight php lineanchors %}{% raw %}**
+```
 
-**&label=13%3A18%3A46&value=12&msgTitle=Footfall at : &msgText=13%3A18%3A46 hrs is  13 Customers"**
+&label=13%3A18%3A46&value=12&msgTitle=Footfall at : &msgText=13%3A18%3A46 hrs is  13 Customers"
 
-**{% endraw %}{% endhighlight %}**
+```
 
 In this update, the `&label` and `&value` parameters are absorbed by the chart for data update.
 
@@ -764,7 +783,7 @@ The `&msgTitle` and `&msgText` parameters are absorbed by the message logger. `&
 
 When a chart (with `useMessageLog` set to `1`) accepts this data stream, the message logger, as shown in the image below, is displayed:
 
-![](null)
+**CHART**
 
 > If you are passing any special characters as part of your message text or title (like &, % etc.), you will need to URL Encode the text/title.
 
@@ -778,21 +797,21 @@ CHART
 
 To specify the message type, you can provide data in the following format:
 
-**{% highlight php lineanchors %}{% raw %}**
+```
 
-**&label=14%3A46%3A12&value=6&msgTitle=Footfall at : &msgText=14%3A46%3A12 hrs is  6 Customers WARNING !!!&msgType=ERROR**
+&label=14%3A46%3A12&value=6&msgTitle=Footfall at : &msgText=14%3A46%3A12 hrs is  6 Customers WARNING !!!&msgType=ERROR
 
-**{% endraw %}{% endhighlight %}**
+```
 
 ### Create messages with links
 
 To display messages of type `LINK`, you can provide the following data:
 
-**{% highlight php lineanchors %}{% raw %}**
+```
 
-**&msgTitle=Check Dashboards for details&msgText=http%3A%2F%2Fwww%2Efusioncharts%2Ecom%3Fid%3D34&msgType=LINK**
+&msgTitle=Check Dashboards for details&msgText=http%3A%2F%2Fwww%2Efusioncharts%2Ecom%3Fid%3D34&msgType=LINK
 
-**{% endraw %}{% endhighlight %}**
+```
 
 Because we want to link the message to `http://www.fusioncharts.com?id=34`, the `&msgText` contains the URL Encoded link.
 
@@ -800,19 +819,19 @@ Because we want to link the message to `http://www.fusioncharts.com?id=34`, the 
 
 Send an instruction to the chart from the server to clear the contents of the visible message logger. To do this, you need to send the following command:
 
-**{% highlight php lineanchors %}{% raw %}**
+```
 
-**&clearLog=1**
+&clearLog=1
 
-**{% endraw %}{% endhighlight %}**
+```
 
 You can send it as a part of the message stream, as shown in the example below:
 
-**{% highlight php lineanchors %}{% raw %}**
+```
 
-**&label=14%3A46%3A12&value=6&msgTitle=Footfall at : &msgText=14%3A46%3A12 hrs is  6 Customers WARNING !!!&msgType=ERROR&clearLog=1**
+&label=14%3A46%3A12&value=6&msgTitle=Footfall at : &msgText=14%3A46%3A12 hrs is  6 Customers WARNING !!!&msgType=ERROR&clearLog=1
 
-**{% endraw %}{% endhighlight %}**
+```
 
 This will clear all the contents of the existing message logger and start afresh.
 
@@ -836,27 +855,24 @@ Using the client-side JavaScript API, you can manipulate the message logger to s
 
 To do any of these actions, you will need to get a reference to the chart. To get the reference to a chart, you can use the DOMID of the chart and pass it using any of the following ways:
 
-**{% highlight javascript lineanchors %}{% raw %}**
+```
 
-**var chartRef = FusionCharts("myChartId");**
+var chartRef = FusionCharts("myChartId");
 
-**{% endraw %}{% endhighlight %}**
-
+```
 Or
 
-{% highlight javascript lineanchors %}{% raw %}
-
+```
 var chartRef = FusionCharts.items["myChartId"];
 
-{% endraw %}{% endhighlight %}
-
+```
 The legacy function `getChartFromId()` still works as show below:
 
-**{% highlight javascript lineanchors %}{% raw %}**
+```
 
-**var chartRef =  getChartFromId("myChartId");**
+var chartRef =  getChartFromId("myChartId");
 
-**{% endraw %}{% endhighlight %}**
+```
 
 However, note that `getChartFromId()` has been deprecated.
 
@@ -896,11 +912,11 @@ Consider the following scenario: You are plotting the values of a certain counte
 
 To do this, you will have to send the following command to the chart as part of your real-time data update:
 
-**{% highlight javascript lineanchors %}{% raw %}**
+```
 
-**&clear=1**
+&clear=1
 
-**{% endraw %}{% endhighlight %}**
+```
 
 The above command clears all the data that is currently being shown on the chart. The chart now bears an empty canvas - ready to accept new incremental values from the real-time data provider page.
 
@@ -918,8 +934,7 @@ Real-time charts allow to set a predefined interval in the JSON/XML data to clea
 
 Refer to the code given below:
 
-{% highlight javascript lineanchors %}{% raw %}
-
+```
 ...
 
 {
@@ -934,13 +949,13 @@ Refer to the code given below:
 
 ...
 
-{% endraw %}{% endhighlight %}
+```
 
 A real-time column chart configured to do this looks like this:
 
 CHART
 
-## **Clear chart using JavaScript API**
+## Clear chart using JavaScript API
 
 Real-time charts expose a JavaScript API that enables you to clear charts at the client-side. To do this, you need to:
 
@@ -996,25 +1011,25 @@ Real-time charts let you track data updates for the real-time chart(s) rendered 
 
 You can define the `FC_ChartUpdated()` method in your HTML code as shown below:
 
-**{% highlight javascript lineanchors %}{% raw %}**
+```
 
-**function FC_ChartUpdated(DOMId) {**
+function FC_ChartUpdated(DOMId) {
 
-**    //Check if DOMId is that of the chart we want**
+    //Check if DOMId is that of the chart we want
 
-**    if (DOMId == "ChId1") {**
+    if (DOMId == "ChId1") {
 
-**        //Get reference to the chart**
+        //Get reference to the chart
 
-**        var chartRef = FusionCharts(DOMId);**
+        var chartRef = FusionCharts(DOMId);
 
-**        //Now you can do anything with the chart...**
+        //Now you can do anything with the chart...
 
-**    }**
+    }
 
-**}**
+}
 
-**{% endraw %}{% endhighlight %}**
+```
 
 Whenever a real-time chart (present in this page) receives new data (from the data provider page or the JavaScript `feedData()` method), it will now call the `FC_ChartUpdated()` method and pass its DOM Id to this method.
 
@@ -1026,7 +1041,7 @@ The `realTimeUpdateComplete` event is raised every time a real-time chart or gau
 
 A sample implementation of the `realTimeUpdateComplete` event is shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 
 FusionCharts("mychart").addEventListener("RealtimeUpdateComplete",
 
@@ -1040,16 +1055,14 @@ FusionCharts("mychart").addEventListener("RealtimeUpdateComplete",
 
 );
 
-{% endraw %}{% endhighlight %}
-
+```
 Existing JavaScript implementations using the FC_ChartUpdated event will continue to function without any problem.
 
 The `realtimeUpdateError` event is raised when an error occurs while updating data for a real-time chart or gauge. This event passes the HTTP Status (as number) of the error occurred.
 
 A sample implementation of the `realtimeUpdateError` event is shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
-
+```
 FusionCharts("mychart").addEventListener("RealtimeUpdateError",
 
     function(event, parameter)
@@ -1062,7 +1075,7 @@ FusionCharts("mychart").addEventListener("RealtimeUpdateError",
 
 );
 
-{% endraw %}{% endhighlight %}
+```
 
 ### The getData() method
 
@@ -1070,8 +1083,7 @@ For any real-time chart present in the HTML page, you can use the `getData()` me
 
 The following code snippet shows how you can use the `getData()` method for the above chart:
 
-{% highlight javascript lineanchors %}{% raw %}
-
+```
 function showData() {
 
     //Retrieving the data
@@ -1120,7 +1132,7 @@ function showData() {
 
 }
 
-{% endraw %}{% endhighlight %}
+```
 
 A real-time column chart configured to retrieve data using the `getData()` method is shown below:
 
@@ -1139,8 +1151,6 @@ The structure of the JavaScript array returned by the `getData()` function is sh
 [m,0] - Category label of data index m|Same as above|Same as above|Same as above|
 [m,0] - Category label of data index m|Same as above|Same as above|Same as above|
 
-
-
 Click the `Get Data` button rendered below the chart, to populate the with data updates as shown below:
 
 
@@ -1156,8 +1166,6 @@ Time|Customers|
 14:37:57|16|
 14:38:02|11|
 14:38:07|19|
-
-
 
 > Using the methods explained above, you can build a wide variety of interactive AJAX driven applications. You can use the chart as an interface to retrieve the data and then handle it in your JavaScript code.
 
@@ -1201,7 +1209,6 @@ CHART
 
 More details pertaining to this event are given in the table below:
 
-
 Name (Advanced model)|Name (Simple model)|When is it raised?|Event parameters|
 -|-|-|-
 `realtimeUpdateComplete`|FC_ChartUpdated|This event is raised whenever data is updated in real-time using:
@@ -1213,10 +1220,7 @@ The event arguments provided in the advanced model are:
 
 `eventObject` : This object contains the `eventId, eventType`, and `sender` properties.
 
-
 `argumentsObject`: This is passed as a blank object.|
-
-
 
 ### The realtimeUpdateError event
 
@@ -1230,7 +1234,6 @@ CHART
 
 More details pertaining to this event are given in the table below:
 
-
 Name (Advanced model)|Name (Simple model)|When is it raised?|Event parameters|
 -|-|-|-
 `realtimeUpdateError`|Not available|This event is raised when an error occurs while performing real-time update using `datastreamURL`.|The event arguments provided in the advanced model are:
@@ -1240,8 +1243,6 @@ Name (Advanced model)|Name (Simple model)|When is it raised?|Event parameters|
 `argumentsObject`: This object contains the property listed below:
 
 `httpStatus` : The HTTP Error status value is specified as a number (e.g., 404)|
-
-
 
 Now let's see how you can debug errors that might crop up with real-time charts. We've grouped the possible errors and suggested solutions for them.
 
@@ -1298,4 +1299,3 @@ If you see an endless loading progress bar in your browser, or if the right clic
 * The page which provides the incremental update data to the charts is hosted on the same sub-domain in which the charts are hosted. Otherwise, owing to security restrictions, the charts will not be able to receive updated data. Real-time charts are allowed to retrieve data only from the same sub-domain in which the charts are residing. Data can only be loaded from a domain that is an exact match to the location of the charts, including sub-domains. For this reason, a chart residing at `server1.mydomain.com` will not be able to access data from `mydomain.com`.
 
 > If you wish to load data from a different domain, you can set up a proxy page at the same sub-domain that will actually request data from the distant domain and then relay it to the charts. You must be able to upload and run a server-side script on a server in the same domain as the charts. In this method, a chart accesses the script, which loads the information, retrieves it, and returns the information back to the chart. This method is best if the server hosting the data is not under your control (for example, a public source or a web service).
-
