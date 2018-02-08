@@ -1,35 +1,30 @@
 ---
-permalink: chart-guide/kagi-chart.html
-title: Tutorial on Kagi Chart | FusionCharts
+title: Kagi Chart | FusionCharts
 description: Kagi chart uses a series of vertical lines to illustrate general levels of supply and demand for certain assets. These charts are independent of time
 heading: Kagi Chart
-chartPresent: true
 ---
 
 Developed by the Japanese in the 1870s, the Kagi chart uses a series of vertical lines to illustrate general levels of supply and demand for certain assets. Thick lines are drawn when the price of the underlying asset breaks above the previous high price and is interpreted as an increase in demand for the asset. Thin lines are used to represent increased stock when the price falls below the previous low.
 
-A simple Kagi chart looks like this:
+Let's create a Kagi chart which will show a series of connecting vertical lines. The thickness and direction of the lines will be dependent on the price. The line will extend until the prices are moving in the same direction. Once the prices reverse by a negative amount, a new Kagi line is drawn in a new column. When prices enter a previous high or low, the thickness of the kagi line changes.
 
-{% embed_all chart-guide-kagi-chart-example-1.js %}
+The JSON and XML structure of the chart is:
 
-As you can see above, the Kagi chart shows a series of connecting vertical lines. The thickness and direction of the lines are dependent on the price. The line extends until the prices are moving in the same direction. Once the prices reverse by a negative amount, a new Kagi line is drawn in a new column. When prices enter a previous high or low, the thickness of the kagi line changes.
+**CODE SNIPPET**
 
-Given below is a brief description of the attributes used to create a Kagi chart:
+To create a kagi chart, set the `type` attribute to `kagi`.
 
-<table>
-  <tr>
-    <th>Attribute</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>`label`</td>
-    <td>It is used to specify the label for the data item. The label is rendered on the x-axis. This attribute belongs to the `data` object.</td>
-  </tr>
-  <tr>
-    <td>`value`</td>
-    <td>It is used to specify the numeric value for the data item. This value will be plotted on the chart. This attribute belongs to the `data` object.</td>
-  </tr>
-</table>
+For a detailed list of attributes you can check the API reference page of kagi chart.
+
+A simple Kagi chart looks like:
+
+**CHART**
+
+Click [here](http://jsfiddle.net/fusioncharts/JRZ36/) to edit the kagi chart.
+
+The full HTML code for the above sample is:
+
+**HTML CODE SNIPPET**
 
 These charts are independent of time and only change direction once a predefined reversal amount is reached. This reversal value could be configured either as a percentage of range value or absolute value.
 
