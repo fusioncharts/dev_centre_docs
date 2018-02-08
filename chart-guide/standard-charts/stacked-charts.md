@@ -1,12 +1,12 @@
 ---
-permalink: chart-guide/stacked-charts/creating-stacked-charts.html
-title: Creating a Stacked Chart | FusionCharts
+title: Stacked Charts | FusionCharts
 description: In stacked chart plot datasets are on top of each other. They help in displaying the cumlative magnitude of two or more data series.
-heading: Creating a Stacked Chart
-chartPresent: true
+heading: Stacked Charts
 ---
 
-Stacked charts are similar to [multi-series charts](/chart-guide/multi-series-charts/creating-multi-series-charts), but plot datasets on top of each other, instead of the clustered side-by-side placement adopted by multi-series charts. Stacked charts help in displaying the cumulative magnitude of two or more data series. They help in representing a data value as a sum of two or more values. Each data series can be distinguished by the color of its section in the stack.
+Stacked Charts
+
+Stacked charts are similar to multi-series charts, but plot datasets on top of each other, instead of the clustered side-by-side placement adopted by multi-series charts. Stacked charts help in displaying the cumulative magnitude of two or more data series. They help in representing a data value as a sum of two or more values. Each data series can be distinguished by the color of its section in the stack.
 
 The FusionCharts Suite XT includes the following types of stacked charts:
 
@@ -32,97 +32,134 @@ The FusionCharts Suite XT includes the following types of stacked charts:
 
 * Scroll Stacked Column 2D
 
-## Creating a Stacked Chart
+## Stacked column 2D chart
 
-As an example, we will create a stacked column 2D chart to plot the revenue split for each quarter of the current year by product category - food products and non-food products.
+As an example, we will create a stacked column 2D chart to plot the revenue split for each quarter of the current year by product category - food products and non-food products. The data plots for each category are rendered using two distinct colors to help interpretation. The data plots for non-food products are stacked above the data plots for food products, instead of alongside as in multi-series charts.
+
+The JSON and XML structure of the chart is:
+
+**CODE SNIPPET**
+
+To create a stacked column chart in 2D, set the `type` attribute to `stackedcolumn2d`.
+
+For a detailed list of attributes you can check the API reference page of stacked column 2D chart.
 
 The stacked column 2D chart thus created looks like this:
 
-{% embed_all chart-guide-stacked-charts-creating-stacked-charts-example-1.js %}
+**CHARTS**
 
-In the above stacked chart, the data plots for each category are rendered using two distinct colors to help interpretation. The data plots for non-food products are stacked above the data plots for food products, instead of alongside as in multi-series charts.
+## Stacked Column 3D chart
 
+To render a stacked column chart in 3D, change the value of the `type` attribute from `stackedcolumn2d` to `stackedcolumn3d`. The rest of the data structure remains the same.
 
+A stacked column chart in 3D looks like:
 
-## Brief Explanation of the JSON Data Structure
+**CHARTS**
 
-In the JSON data, the attributes and their corresponding values are written in the following key-value pair format:
+Click here to edit the stacked column 3D chart.
 
-```html
+## Stacked Area 2D chart
 
-"<attributeName>": "<value>"
+To render a stacked area chart in 2D, change the value of the `type` attribute from `stackedcolumn3d` to `stackedarea2d`. The rest of the data structure remains the same.
+
+A stacked area chart in 2D looks like:
+
+**CHARTS**
+
+Click here to edit the stacked area 2D chart.
+
+To render a stacked bar chart in 2D, change the value of the `type` attribute from `stackedarea2d` to `stackedbar2d`. The rest of the data structure remains the same.
+
+A stacked bar chart in 2D looks like:
+
+**CHARTS**
+
+Click here to edit the stacked bar 2D chart.
+
+## Stacked area 3D chart
+
+To render a stacked bar chart in 3D, change the value of the `type` attribute from `stackedbar2d` to `stackedbar3d`. The rest of the data structure remains the same.
+
+A stacked bar chart in 3D looks like:
+
+**CHARTS**
+
+Click here to edit the stacked bar 3D chart.
+
+Now, let's customize the appearance and properties of the charts. 
+
+## Display the Cumulative Sum
+
+You can opt to show the sum of all stacked data plots in a column above that column.  To show the sum of all stacked data plots, set the `showSum` attribute to `1`.
+
+Refer to the code given below:
+
+```
+{
+
+  "chart": {
+
+    "showSum": "1"
+
+  },
+
+}
+
+...
 
 ```
 
-Given below is a brief description of the data structure used to create the above stacked column 2D chart:
+A stacked column 2D chart with the cumulative sum rendered above its corresponding column looks like this:
 
-<table>
-  <tr>
-    <th>Attribute Name</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>`type`</td>
-    <td>It is used to specify the type of chart you want to render. For example, to render a stacked column 2D chart, the value for this attribute will be `stackedcolumn2d`.</td>
-  </tr>
-  <tr>
-    <td>`renderAt`</td>
-    <td>It is used to specify the container object where the chart will be rendered.</td>
-  </tr>
-  <tr>
-    <td>`width`</td>
-    <td>It is used to specify the width of the chart.</td>
-  </tr>
-  <tr>
-    <td>`height`</td>
-    <td>It is used to specify the height of the chart.</td>
-  </tr>
-  <tr>
-    <td>`dataFormat`</td>
-    <td>It is used to specify the type of data that will passed to the chart object. This attribute takes two values: `json`, where the JSON data to render the chart is passed to the `dataSource` attribute, and `jsonurl`, where the relative path to a .json file is passed to the `dataSource` attribute.</td>
-  </tr>
-  <tr>
-    <td>`dataSource`</td>
-    <td>It specifies the source from where the data will be fetched, depending on the value passed to the `dataFormat` attribute.</td>
-  </tr>
-  <tr>
-    <td>`caption`</td>
-    <td>It is used to specify the chart caption. This attribute belongs to the `chart` object.</td>
-  </tr>
-  <tr>
-    <td>`subCaption`</td>
-    <td>It is used to specify the chart sub-caption. This attribute belongs to the `chart` object.</td>
-  </tr>
-  <tr>
-    <td>`xAxisName`</td>
-    <td>It is used to specify the name for the x-axis.</td>
-  </tr>
-  <tr>
-    <td>`yAxisName`</td>
-    <td>It is used to specify the name for the y-axis.</td>
-  </tr>
-  <tr>
-    <td>`showSum`</td>
-    <td>FusionCharts Suite XT allows you to show the sum of all data plots stacked above each other in one column above the column. This attribute is used to specify whether the sum of all stacked data plots will be shown. Setting this attribute to `1` will show the sum, setting it to `0` (default) will hide it.</td>
-  </tr>
-  <tr>
-    <td>`numberPrefix`</td>
-    <td>It is used to specify the character that will precede all numeric values on the chart, e.g. `$` for the currency symbol.</td>
-  </tr>
-  <tr>
-    <td>`theme`</td>
-    <td>It is used to specify the theme for the chart.</td>
-  </tr>
-  <tr>
-    <td>`label`</td>
-    <td>It is used to specify the label for a data item. The label is rendered on the x-axis. This attribute belongs to the `category` object array, which in turn belongs to the `categories` object array.</td>
-  </tr>
-  <tr>
-    <td>`value`</td>
-    <td>It is used to specify the value for a data item. This attribute belongs to the `data` object array, which in turn belongs to the `dataset` object array. </td>
-  </tr>
-  <tr>
-    <td>`seriesName`</td>
-    <td>It is used to specify a name for the dataset. This name is shown in the legend box rendered below the chart. This attribute belongs to the `dataset` object array. </td>
-  </tr>
-</table>
+**CHARTS**
+
+## Create 100% Stacked Charts
+
+You can use stacked charts to show the percentage distribution for individual items of a dataset. These stacked charts are called 100% Stacked Charts. The y-axis, instead of representing the actual data values, represents the percentage values. 
+
+To create a 100% stacked column chart, set the `stack100Percent` attribute to `1`. 
+
+Refer to the code given below:
+
+```
+{
+
+  "chart": {
+
+    "stack100Percent": "1"
+
+  },
+
+}
+
+...
+
+```
+
+A 100% stacked column 2D chart looks like this:
+
+**CHARTS**
+
+## Show Percent Values in Tool-tips
+
+By default, actual data values are rendered in tool-tips. Set the `showPercentInToolTip`  to `1` to show the percentage values in tool-tips.
+
+Refer to the code given below:
+
+```
+{
+
+  "chart": {
+
+    "showPercentInTooltip": "1"
+
+  },
+
+}
+
+...
+
+```
+A stacked column chart configured to show percent values in tool-tips looks like this:
+
+**CHARTS**
