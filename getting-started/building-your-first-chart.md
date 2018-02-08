@@ -9,7 +9,7 @@ Let's build our first chart using FusionCharts Suite XT! Throughout this documen
 
 Let's start with a simple example of "Monthly revenue" chart, which we will plot in a Column 2D chart as shown below: 
 
-***<<Insert Chart Here>>***
+{% embed_chart {"source": "getting-started-your-first-chart-example-1.js", "id": "1"} %}
 
 The data for this chart is represented in a table as under:
 
