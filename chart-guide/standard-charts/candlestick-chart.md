@@ -2,6 +2,7 @@
 title: Candlestick Chart | FusionCharts
 description: The FusionCharts Suite XT candlestick chart offers you a powerful and interactive interface to plot your stock data.
 heading: Candlestick Chart
+breadcrumb: [["Home", "/"], ["Candlestick Charts"]]
 ---
 
 A candlestick chart is widely used for applications that require analysis of equity and commodity prices. It allows you to show the opening price, closing price, highest trading price, lowest trading price, and the trade volume on a single chart. A combination of the line and bar charts, a candlestick chart represents the range of price movement for a specific time interval.
