@@ -2,6 +2,7 @@
 title: Candlestick Chart | FusionCharts
 description: The FusionCharts Suite XT candlestick chart offers you a powerful and interactive interface to plot your stock data.
 heading: Candlestick Chart
+breadcrumb: [["Home", "/"], ["Candlestick Charts"]]
 ---
 
 A candlestick chart is widely used for applications that require analysis of equity and commodity prices. It allows you to show the opening price, closing price, highest trading price, lowest trading price, and the trade volume on a single chart. A combination of the line and bar charts, a candlestick chart represents the range of price movement for a specific time interval.
@@ -26,10 +27,6 @@ The FusionCharts Suite XT candlestick chart offers you a powerful and interactiv
 
 As an example, we will create a candlestick chart that shows the daily stock price for Harry's SuperMart (stock name HRYS) for the last two months.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a candlestick chart, set the `type` attribute to `candlestick`. Some more attributes which helps in creating the chart are:
 
 * Set the `label` attribute to specify the label for the data item. The label is rendered along the x-axis.
@@ -48,13 +45,13 @@ To create a candlestick chart, set the `type` attribute to `candlestick`. Some m
 
 Refer to the code below:
 
-<INSERT CODE>
-
 For a detailed list of attributes you can check the API reference page of candlestick chart.
 
 The candlestick chart thus created will look like:
 
-<CHART>
+{% embed_all standard-charts-candlestick-chart-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/Hcm78/) to edit the candlestick chart.
 
 In the chart above, the price chart is rendered in the first half of the candlestick chart while the volume chart is rendered in the second half.
 
@@ -89,7 +86,7 @@ Refer to the code given below:
 
 A candlestick chart with the price chart rendered as a line chart looks like this:
 
-<CHART>
+{% embed_all standard-charts-candlestick-chart-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/b3xfLrmg/) to edit the candlestick chart.
 
@@ -118,7 +115,7 @@ Refer to the code given below:
 
 A candlestick chart looks like:
 
-<CHART>
+{% embed_all standard-charts-candlestick-chart-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/b3xfLrmg/) to edit the candlestick chart.
 
@@ -145,7 +142,7 @@ Refer to the code given below:
 
 A candlestick chart rendered with the volume chart hidden looks like this:
 
-<CHART>
+{% embed_all standard-charts-candlestick-chart-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/urzeqo6d/) to edit the candlestick chart.
 
@@ -189,13 +186,23 @@ To add cosmetics to the trend-sets, take a look at the following attributes and 
 
 Refer to the code below:
 
-<Insert Code>
+```
+"trendlines": {
+    "line": [{
+        "startValue": "24.8",
+        "displayValue": "Highest{br}Closing value:{br}$24.8",
+        "color": "#1aaf5d",
+        "thickness": "1"
+    }]
+}
+...
+```
 
 For a detailed list of attributes you can check the API reference page of candlestick chart.
 
 A candlestick chart rendered with a trend-set looks like this:
 
-<CHART>
+{% embed_all standard-charts-candlestick-chart-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/hqvpoLrm/) to edit the candlestick chart.
 

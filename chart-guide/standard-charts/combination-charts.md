@@ -2,6 +2,7 @@
 title: Combination Charts | FusionCharts
 description: Combination charts allow you to plot multiple datasets on the same chart. But an added advantage with using combination charts is that you can also plot multiple chart types on the same chart.
 heading: Combination Charts
+breadcrumb: [["Home", "/"], ["Combination Charts"]]
 ---
 
 Combination charts are similar to multi-series charts, they allow you to plot multiple datasets on the same chart. But an added advantage with using combination charts is that you can also plot multiple chart types on the same chart. For example, you can show the column, line, and area chart on the same chart canvas.
@@ -28,13 +29,9 @@ The combination charts available in the FusionCharts Suite XT are:
 
 * Multi Series Stacked Column 2D + Line Dual Y
 
-Let's create our first combination chart to showcase the comparison of actual revenue, projected revenue and the profit earned for each month of the last year. All three metrics have been plotted using different chart types - the actual revenue earned is plotted using a column chart, the projected revenue is plotted using a line chart, and the profit earned is plotted using an area chart.
-
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 ## Single y-axis combi chart 2D
+
+Let's create our first combination chart to showcase the comparison of actual revenue, projected revenue and the profit earned for each month of the last year. All three metrics have been plotted using different chart types - the actual revenue earned is plotted using a column chart, the projected revenue is plotted using a line chart, and the profit earned is plotted using an area chart.
 
 To create a single y-axis combination chart in 2D, set the `type` attribute to `msCombi2D`.
 
@@ -42,13 +39,9 @@ For a detailed list of attributes you can check the API reference page of pie ch
 
 A 2D combination chart with a single y-axis looks like this:
 
-<CHART>
+{% embed_all standard-charts-combination-chart-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/4REJ5/) to edit the single y combination chart in 2D.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
 
 Using a different chart type for each metric ensures easy interpretation of the data being shown.
 
@@ -58,13 +51,9 @@ To render a single y-axis combination chart in 3D, change the value of the `type
 
 A single y-axis combination chart in 3D looks like:
 
-<CHART>
+{% embed_all standard-charts-combination-chart-example-2.js %}
 
-Click here to edit the single y combination 3D chart.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
+Click [here](http://jsfiddle.net/fusioncharts/rjy87gfy/) to edit the single y combination chart in 2D.
 
 ## Dual y-axis combi chart 2D
 
@@ -76,13 +65,9 @@ Therefore, we've plotted the amount in USD on the primary y-axis (the one on the
 
 A 2D combination chart with dual y-axis looks like this:
 
-<CHART>
+{% embed_all standard-charts-combination-chart-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/S52bN/) to edit the dual y-axis combination chart in 2D.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
 
 ## Plotting Trend Elements
 
@@ -150,9 +135,9 @@ Refer to the code given below:
 ```
 A combination chart rendered with two trend-lines looks like this:
 
-<CHART>
+{% embed_all standard-charts-combination-chart-example-4.js %}
 
-Click here to edit the combination chart.
+Click [here](http://jsfiddle.net/fusioncharts/pj4koo6s/) to edit the combination chart.
 
 ## Placing the Secondary Axis on the Left
 
@@ -166,7 +151,7 @@ Refer to the code given below:
 
   "chart": {
 
-    "primaryAxisOnLeft" : "1"
+    "primaryAxisOnLeft" : "0"
 
   }
 
@@ -178,6 +163,6 @@ Refer to the code given below:
 
 A combination chart rendered with the positions of the axes swapped looks like this:
 
-<CHART>
+{% embed_all standard-charts-combination-chart-example-5.js %}
 
-Click here to edit the combination chart.
+Click [here](http://jsfiddle.net/fusioncharts/b0jw9h1L/) to edit the combination chart.
