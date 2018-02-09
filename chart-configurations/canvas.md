@@ -17,7 +17,7 @@ To customize the canvas fill color follow the steps below:
 
 * Specify the hex code of the canvas background color using the `showCanvasBorder` attribute.
 
-* Set the transparency of the canvas background using the `canvasBgAlpha` atteibute.
+* Set the transparency of the canvas background using the `canvasBgAlpha` attribute.
 
 Refer to the code below:
 
@@ -111,7 +111,7 @@ The canvas can be configured to have a 3D effect. To do so, follow the steps giv
 
 * Set the `showCanvasBg` attribute to `1` to show the canvas background. 
 
-* Set the `showCanvasBase` attribute to '1` to show the canvas base.
+* Set the `showCanvasBase` attribute to `1` to show the canvas base.
 
 * Specify the hex code of the base color using the `canvasBaseColor` attribute.
 
