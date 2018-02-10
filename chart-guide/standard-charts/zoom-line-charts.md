@@ -8,17 +8,13 @@ The FusionCharts Suite XT zoom line chart is a special type of multi-series line
 
 As an example, we will create a zoom line chart that plots the number of unique website visits to the harrysfoodmart.com and the harrysfashion.com websites for every day of the last year.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a zoom line chart, set the `type` attribute to `zoomline`.
 
 For a detailed list of attributes you can check the API reference page of zoomline chart.
 
 The zoom line chart thus created looks like this:
 
-**CHART**
+{% embed_all standard-charts-zoom-line-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/JU3Ud/) to edit the zoomline chart.
 
@@ -55,9 +51,9 @@ Refer to the code given below:
 
 A zoom line chart with the maximum number of labels limited looks like this:
 
-**CHART**
+{% embed_all standard-charts-zoom-line-charts-example-2.js %}
 
-Click here to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/t19c4y4e/) to edit the zoomline chart.
 
 > **numVisibleLabels** attribute only limits the number of visible data labels, it has no effect on the number of visible data points.
 
@@ -86,9 +82,9 @@ Refer to the code given below:
 
 A zoom line chart with the distance between the consecutive data plots configured looks like this:
 
-**CHART**
+{% embed_all standard-charts-zoom-line-charts-example-3.js %}
 
-Click here to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/v60znb4c/) to edit the zoomline chart.
 
 ## Set the criteria for anchor display
 
@@ -115,9 +111,9 @@ Refer to the code given below:
 
 A zoom line chart with the criteria for anchor display defined looks like this:
 
-**CHART**
+{% embed_all standard-charts-zoom-line-charts-example-4.js %}
 
-Click here to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/9nkgfaho/) to edit the zoomline chart.
 
 ## Pre-select the number of visible data plots
 
@@ -149,9 +145,9 @@ Refer to the code given below:
 ```
 A zoom line chart rendered with pre-selected number of data plots looks like this:
 
-**CHART**
+{% embed_all standard-charts-zoom-line-charts-example-5.js %}
 
-Click here to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/2fqud5w1/) to edit the zoomline chart.
 
 ## Customize the appearance of a zoom line chart
 
@@ -187,22 +183,18 @@ Following is the lists some of the customization attributes that are exclusive t
 
 * Specify the height of the scroll bar using `scrollHeight` attribute.
 
-Refer to the code below:
-
-<Insert Code>
-
 ## Zoom-line dual y-axis chart
 
 The FusionCharts Suite XT **zoom-line dual y-axis** chart, like the zoom-line chart, is used to analyze data at macroscopic and microscopic levels. With the dual y-axis, this chart can be used to plot data that belongs to datasets having different numeric units on the same chart—an advantage over using the conventional zoom-line chart.
 
 Another advantage of using the zoom-line dual y-axis chart is when you want to compare two datasets where the values of one dataset are spread over a smaller interval, while the values of another have large intervals between them. In this case, if the zoom-line chart was used, the dataset with the smaller interval will be plotted as a straight line.
 
-To create a pie 2D chart, set the `type` attribute to `zoomlinedy`.
+To create a zoom-line dual y-axis chart, set the `type` attribute to `zoomlinedy`.
 
-For a detailed list of attributes you can check the API reference page of zoomlinedy chart.
+For a detailed list of attributes you can check the API reference page of zoom-line dual y-axis chart.
 
 The chart below shows a zoom-line dual y-axis chart created to compare unique footfall with the sales (in dollars), for each day of the previous year.
 
-**CHART**
+{% embed_all standard-charts-zoom-line-charts-example-6.js %}
 
 Click here to edit the zoom line dual y-axis chart.
