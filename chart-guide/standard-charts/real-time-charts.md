@@ -307,7 +307,7 @@ A real-time column chart that compares the retail and online store transactions 
 
 Click [here](http://jsfiddle.net/fusioncharts/bmfwdck3/) to edit the real-time column chart.
 
-Data provider page
+## Data provider page
 
 The data provider page now contains the following code:
 
@@ -720,7 +720,7 @@ The FusionCharts Suite XT message logger has the following features:
 
 A simple message logger looks as shown in the image below:
 
-IMAGE
+![Message Logger]({% site.baseurl %}/images/real-time-charts-image-1.png)
 
 In the above image, we have a real-time column chart that monitors the footfalls at Bakersfield Central. Overlapping this chart is the message logger that contains messages that were streamed to the message logger by the server.
 
@@ -758,11 +758,11 @@ The following code snippet enables the use of the message logger for a real-time
 
 When the first message is streamed to the chart from server, the message logger is displayed as shown in the image below:
 
-IMAGE
+![First Message]({% site.baseurl %}/images/real-time-charts-image-2.png)
 
 A close button appears at the top-right corner of the message logger window that you can use to close the message logger. Or you can click anywhere outside the message logger window. To re-open the message logger, click the `Show Log` option from the context menu, as shown in the image below:
 
-IMAGE
+![Context Menu]({% site.baseurl %}/images/real-time-charts-image-3.png)
 
 The `**messageGoesToJS`** attribute is used to pass only the "Message Text" parameter to the JavaScript function, whereas, the `**messagePassAllToJS`** is used to pass all the four parameters to the JavaScript function.
 
@@ -811,7 +811,7 @@ The `&msgTitle` and `&msgText` parameters are absorbed by the message logger. `&
 
 When a chart (with `useMessageLog` set to `1`) accepts this data stream, the message logger, as shown in the image below, is displayed:
 
-IMAGE
+![Data Stream]({% site.baseurl %}/images/real-time-charts-image-4.png)
 
 > If you are passing any special characters as part of your message text or title (like &, % etc.), you will need to URL Encode the text/title.
 
