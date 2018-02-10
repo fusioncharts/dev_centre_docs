@@ -32,7 +32,7 @@ A simple multi-series column 2D chart looks like:
 
 {% embed_chart standard-charts-multi-series-charts-example-1.js %}
 
-Click here to edit the above multi-series chart.
+Click [here](http://jsfiddle.net/fusioncharts/ppcas1oo/) to edit the above multi-series chart.
 
 ## Multi-series Column 3D chart
 
@@ -42,9 +42,10 @@ The multi-series column chart in 3D looks like:
 
 {% embed_chart standard-charts-multi-series-charts-example-2.js %}
 
-Click here to edit the above multi-series chart.
+Click [here](http://jsfiddle.net/fusioncharts/3x4xcn70/) to edit the above multi-series chart.
 
 ## Multi-series Bar 2D chart
+
 Let's move ahead to create a multi-series bar chart in 2D which will show sales as per two major categories in different stores for last month.
 
 To render a multi-series bar chart in 2D, set the `type` to `msbar2d`.
@@ -85,6 +86,6 @@ A multi-series area chart looks like:
 
 {% embed_chart standard-charts-multi-series-charts-example-6.js %}
 
-Click here to edit the above multi-series chart.
+Click [here](http://jsfiddle.net/fusioncharts/jf73mv1e/) to edit the above multi-series chart.
 
 > Note that the number of **category** objects defined should be equal to the number of **data** objects defined, that is, if you mention twelve categories (twelve months), the data for both years (2013 and 2014) should also contain twelve **data** objects (twelve rows of data). Else, the chart will display empty space at that position.

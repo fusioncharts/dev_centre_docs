@@ -10,17 +10,13 @@ A pie chart is a circular chart divided into sectors where the arc length of eac
 
 Let's create our first pie 2D chart which will showcase the split in revenue by product categories for one year. 
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a pie 2D chart, set the `type` attribute to `pie2d`.
 
 For a detailed list of attributes you can check the API reference page of pie chart.
 
 The pie 2D chart for the above code looks like:
 
-**CHART**
+{% embed_chart standard-charts-pie-and-doughnut-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/hLhjhft8/) to edit the pie 2D chart.
 
