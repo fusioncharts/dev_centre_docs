@@ -46,10 +46,6 @@ Now, let's move ahead and create our first error chart.
 
 An **error bar** chart is a type of an error chart used to show variations in data from its original value. As an example, we will create an error bar chart that compares the lifespan of systems at the Daly City Serramonte, Bakersfield Central, Garden Groove Harbour stores. 
 
-The JSON and XML structure of the chart is:
-
-CODE SNIPPET
-
 To create an error bar chart:
 
 * Set the `type` attribute to `errorBar2d`.
@@ -58,13 +54,9 @@ To create an error bar chart:
 
 An error bar chart thus created looks like this:
 
-**CHART**
+{% embed_all standard-charts-error-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7Z4Ha/) to edit the error bar chart.
-
-The full HTML code for the above sample is:
-
-HTML CODE SNIPPET
+Click [here](http://jsfiddle.net/fusioncharts/7Z4Ha/) to edit the above error bar chart.
 
 ## Error Line chart
 
@@ -72,13 +64,9 @@ Now, let's create an **error line** chart that compares the estimated procuremen
 
 An error line chart thus created looks like:
 
-**CHART**
+{% embed_all standard-charts-error-charts-example-2.js %}
 
-Click here to edit the error bar chart.
-
-The full HTML code for the above sample is:
-
-HTML CODE SNIPPET
+Click [here](http://jsfiddle.net/fusioncharts/qutLzs7m/) to edit the above error line chart.
 
 ## Error Scatter chart
 
@@ -98,13 +86,9 @@ To render an error scatter chart, follow the steps given below:
 
 The error scatter chart will look like:
 
-**CHART**
+{% embed_all standard-charts-error-charts-example-3.js %}
 
-Click here to edit the error bar chart.
-
-The full HTML code for the above sample is:
-
-HTML CODE SNIPPET
+Click [here](http://jsfiddle.net/fusioncharts/uV3cB/) to edit the above error scatter chart.
 
 Now, let's customize the appearance and properties of the charts.
 
@@ -149,9 +133,9 @@ Refer to the code given below:
 
 An error bar chart, after customizing the error bars, looks like this:
 
-**CHART**
+{% embed_all standard-charts-error-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/fumzvpw3/) to edit the error bars chart.
+Click [here](http://jsfiddle.net/fusioncharts/fumzvpw3/) to edit the above chart.
 
 > The configurations for the error line chart is same as that of the error bars chart.
 
@@ -173,10 +157,27 @@ You can also customize the cosmetic properties of error scatter chart to change 
 
 Refer to the code below:
 
-<Insert Code>
+Refer to the code given below:
+
+```
+{
+
+  "chart": {
+      "halfverticalerrorbar": "0",
+      "verticalErrorBarColor": "#990000",
+      "verticalErrorBarThickness": "2",
+      "verticalErrorBarAlpha": "50",
+      "verticalErrorBarWidth": "8"
+  }
+
+}
+
+...
+
+```
 
 An error scatter chart, after customizing the error bars, looks like:
 
-**CHART**
+{% embed_all standard-charts-error-charts-example-5.js %}
 
-Click here to edit the error scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/e4rvjc37/) to edit the above error scatter chart.
