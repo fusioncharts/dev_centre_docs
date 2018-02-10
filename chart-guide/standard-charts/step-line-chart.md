@@ -10,25 +10,17 @@ Essentially, trends are quite apparent from the general slope of a line chart. H
 
 Let's create our first step line chart where we will compare the revenue earned with the expense incurred in the last year. The step-like composition of the data segments gives an accurate representation for the revenue and expense for each month.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a multi-series step line chart, set the `type` attribute to `msstepline`.
 
 For a detailed list of attributes you can check the API reference page of multi-series step line chart.
 
 A multi-series step line chart looks like this:
 
-**CHART**
+{% embed_all standard-charts-step-line-chart-example-1.js %}
 
 > The data structure above is similar to that of any multi-series chart in the FusionCharts Suite XT, except for the **type** attribute.
 
-Click here to edit the step line chart.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
+Click [here](http://jsfiddle.net/fusioncharts/DeFSs/) to edit the step line chart.
 
 ## Hide the Vertical Lines
 
@@ -54,7 +46,9 @@ Refer to the code given below:
 ```
 A step line chart rendered without the vertical joins looks like this:
 
-**CHART**
+{% embed_all standard-charts-step-line-charts-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/5dm09d7y/) to edit the step line chart.
 
 ## Use Forward Steps
 
@@ -78,6 +72,8 @@ Refer to the code given below:
 ```
 A step line chart rendered with the forward progressive mode disabled looks like this:
 
-**CHART**
+{% embed_all standard-charts-step-line-charts-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/sdhbwv98/) to edit the step line chart.
 
 > Compare this chart with the step line chart shown above and see the difference in how each is rendered.
