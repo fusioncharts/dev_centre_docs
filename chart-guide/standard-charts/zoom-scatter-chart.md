@@ -10,10 +10,6 @@ The zoom-scatter chart is primarily used to find correlations between datasets. 
 
 Let's create a chart which compares the admission rate (in percent) with the average annual returns on degree (in percent) for five majors and over a period of 20 years.
 
-The JSON structure of the chart is:
-
-CODE SNIPPET
-
 To create a zoom scatter chart, set the `type` attribute to `zoomscatter`. Rest of the data structure is same as that of previous created charts. Some of the attributes used to create a zoom scatter chart are:
 
 * `id` attribute sets the unique id for the data plot. 
@@ -28,7 +24,9 @@ For a detailed list of attributes you can check the API reference page of zoom s
 
 Take a look at the sample zoom-scatter chart shown below:
 
-CHART
+{% embed_chart standard-charts-zoom-scatter-charts-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/t1d4dmgp/) to edit the zoom-scatter chart.
 
 Drag the mouse-pointer over the chart to select and zoom into a subset of data points.
 
@@ -42,7 +40,7 @@ For a large amount of data rendered within limited chart space, this chart helps
 
 The zoom-scatter chart toolbar is an important interaction mode for the users of this chart. The toolbar, shown in the image below, is located in the top-right corner of the chart.
 
-**CHART**
+![ToolBar]({% site.baseurl %}/images/standard-charts-zoom-scatter-chart-image-1.png)
 
 The table below briefly describes the buttons on the toolbar of a zoom-scatter chart.
 
@@ -65,7 +63,7 @@ A regression line, rendered as a straight line, is used to show the trend of **y
 
 There are several methods to calculate and draw regression lines; the zoom-scatter chart, using linear regression, uses the **least-squares** deviation method (also known as the least absolute deviation method). This method calculates the best-fitting straight-line for the observed data by minimizing the sum of the squares of the vertical deviation of each data point from the line (if a point lies on the fitted line exactly, then its vertical deviation is 0). As the deviation values are first squared and then summed, there are no cancellations between positive and negative values.
 
-To draw the regression line in a zoom scatter chart, set the `showRegressionLine` attribute to `1`. The default value for this attribute is `0`. This attribute belongs to the `dataset` object.
+To draw the regression line in a zoom scatter chart, set the `showRegressionLine` attribute to `1`. The default value for this attribute is `0`.
 
 Refer to the code given below:
 
@@ -92,9 +90,9 @@ Refer to the code given below:
 
 A zoom-scatter chart rendered with regression lines is shown below:
 
-**CHART**
+{% embed_chart standard-charts-zoom-scatter-charts-example-2.js %}
 
-Click here to edit the zoom scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/08jkhjn9/) to edit the zoom scatter chart.
 
 ### Modes of Regression
 
@@ -118,9 +116,9 @@ Here, let's try out the same chart with the regression lines drawn using the **X
 
 Take a look at the zoom scatter chart rendered after making above changes:
 
-**CHART**
+{% embed_chart standard-charts-zoom-scatter-charts-example-3.js %}
 
-Click here to edit the zoom scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/jm8rfp7h/) to edit the zoom scatter chart.
 
 > The formulae used to draw the regression lines for both the modes are given below: 
 
