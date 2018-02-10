@@ -32,7 +32,7 @@ Drag the mouse-pointer over the chart to select and zoom into a subset of data p
 
 At the time of rendering, the zoom-scatter chart is displayed with a macroscopic view of data. To select a subset of data points and zoom into them, drag the mouse pointer over the data points. A rectangle is drawn to highlight the selected data points and all points within this rectangle are zoomed.
 
-When a subset of data plots is selected and zoomed into, the selected portion expands to occupy the entire width and height of the chart. Data is neatly compressed, so that all of it fits into the height and width of the chart. To analyze the data in greater detail, the select and zoom process can be repeated several times over, until the last level of granularity. The chart can be restored to its original macroscopic display mode by clicking the **CHART** button on the toolbar.
+When a subset of data plots is selected and zoomed into, the selected portion expands to occupy the entire width and height of the chart. Data is neatly compressed, so that all of it fits into the height and width of the chart. To analyze the data in greater detail, the select and zoom process can be repeated several times over, until the last level of granularity. The chart can be restored to its original macroscopic display mode by clicking the ![ToolBar_Button_Enter]({% site.baseurl %}/images/standard-charts-zoom-scatter-chart-image-2.png) button on the toolbar.
 
 For a large amount of data rendered within limited chart space, this chart helps you identify the correlation between data as well as analyze it further by zooming and panning into the data.
 
@@ -46,10 +46,10 @@ The table below briefly describes the buttons on the toolbar of a zoom-scatter c
 
 Button Icon|Button Name|Function|
 -|-|-
-|Zoom-in|Click to zoom-in to the chart/selected subset of data by a predefined amount, based on the center pivot point of the chart/dataset.|
-|Zoom-out|Click to zoom-out of the chart/selected subset of data by a predefined amount, similar to the zoom-in functionality.|
-|Reset|Click to zoom-out to the original macroscopic view of data.|
-|Select-zoom/Pan switch button|Click to switch between the modes of interaction. The zoom-scatter chart supports two modes of interaction—the zoom mode and the pan mode. The zoom mode lets you select a subset of data to get a zoomed view of that data. The pan mode lets you pan through the data in the current chart view. By default, the zoom mode is enabled. After every zoom, the pan mode is activated.|
+![Zoom-in]({% site.baseurl %}/images/standard-charts-zoom-scatter-chart-image-3.png)|Zoom-in|Click to zoom-in to the chart/selected subset of data by a predefined amount, based on the center pivot point of the chart/dataset.|
+![Zoom-out]({% site.baseurl %}/images/standard-charts-zoom-scatter-chart-image-4.png)|Zoom-out|Click to zoom-out of the chart/selected subset of data by a predefined amount, similar to the zoom-in functionality.|
+![Reset]({% site.baseurl %}/images/standard-charts-zoom-scatter-chart-image-5.png)|Reset|Click to zoom-out to the original macroscopic view of data.|
+![Select-zoom]({% site.baseurl %}/images/standard-charts-zoom-scatter-chart-image-6.png)|Select-zoom/Pan switch button|Click to switch between the modes of interaction. The zoom-scatter chart supports two modes of interaction—the zoom mode and the pan mode. The zoom mode lets you select a subset of data to get a zoomed view of that data. The pan mode lets you pan through the data in the current chart view. By default, the zoom mode is enabled. After every zoom, the pan mode is activated.|
 
 > In order to render zoom scatter chart, include fusioncharts.zoomscatter.js in the project folder with rest of the .js files as mentioned **[here](https://www.fusioncharts.com/dev/getting-started/installation.html)**.
 
