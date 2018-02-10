@@ -18,23 +18,15 @@ The two types of Pareto charts available are:
 
 In this example, let's create a pareto 2D chart showcasing the late arrivals of the employee by their respective reported cause. The primary y-axis shows the number of occurrences of the employee per month whereas the secondary y-axis shows the cumulative percentage.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a pareto chart in 2D, set the `type` attribute to `pareto2d`.
 
 For a detailed list of attributes you can check the API reference page of pareto 2D chart .
 
 The pareto chart in 2D for the above code looks like:
 
-**CHART**
+{% embed_all standard-charts-pareto-chart-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/Qc4Gp/) to edit the pareto 2D chart.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
 
 ## Pareto 3D
 
@@ -42,7 +34,7 @@ To render a pareto chart in 3D, change the value of the `type` attribute from `p
 
 A simple Pareto 3D chart looks like this:
 
-**CHART**
+{% embed_all standard-charts-pareto-chart-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/qEc4w/) to edit the pareto 3D chart.
 
@@ -73,7 +65,7 @@ Refer to the code given below:
 
 A pareto chart configured to render the percentage values for the line chart looks like this:
 
-**CHART**
+{% embed_all standard-charts-pareto-chart-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/zr2mdz3t/) to edit the pareto 2D chart.
 
@@ -122,7 +114,7 @@ Refer to the code given below:
 
 A pareto chart with the line segments customized looks like this:
 
-**CHART**
+{% embed_all standard-charts-pareto-chart-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/nmf6af24/) to edit the pareto 2D chart.
 
@@ -155,6 +147,6 @@ Refer to the code given below:
 
 A pareto chart with hidden secondary y-axis looks like:
 
-**CHART**
+{% embed_all standard-charts-pareto-chart-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/zm25ufqu/) to edit the pareto 2D chart.

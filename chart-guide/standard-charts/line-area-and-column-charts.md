@@ -10,10 +10,6 @@ Column and bar charts represent data with rectangular horizontal or vertical bar
 
 In this sample, let's create our first column chart showcasing the monthly revenue for last one year for Harry's SuperMart. We have plotted the months along the x-axis and the revenue, which is a numeric value, along the y-axis.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a single-series column 2D chart, follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
@@ -34,7 +30,7 @@ For a detailed list of attributes refer to the API reference page of column char
 
 A single-series column 2D chart looks like:
 
-**CHART**
+{% embed_all standard-charts-line-area-and-column-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/s7t8F/) to edit the column 2D chart.
 
@@ -48,7 +44,7 @@ To render a column chart in 3D, change the value of the `type` attribute from `c
 
 A single-series column 3D chart looks like:
 
-**CHART**
+{% embed_all standard-charts-line-area-and-column-charts-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/xL3py/ ) to edit the column 3D chart.
 
@@ -58,7 +54,7 @@ Now, lets create a bar 2D chart. In the chart below, we have shown five stores i
 
 To render a bar 2D chart, set the `type` to `bar2d`. A single-series bar 2D chart looks like:
 
-**CHART**
+{% embed_all standard-charts-line-area-and-column-charts-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/y3H2G/) to edit the bar 2D chart.
 
@@ -68,9 +64,9 @@ To render a bar chart in 3D, change the value of the `type` attribute from `bar2
 
 A single-series bar 3D chart looks like:
 
-**CHART**
+{% embed_all standard-charts-line-area-and-column-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/y3H2G/2912/) to edit the bar 3D chart.
+Click [here](http://jsfiddle.net/fusioncharts/b03dgzvv/) to edit the bar 3D chart.
 
 ## Line Chart
 
@@ -78,21 +74,15 @@ Line charts are commonly used to showcase the trend in data over time whereas ar
 
 In the sample, let's create a line chart showcasing total footfall at Bakersfield Central. We have plotted the days along the x-axis and the number of visitors along the y-axis.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
+To render a line chart, set the `type` attribute to `line`.
 
 For a detailed list of attributes refer to the API reference page of line chart.
 
 A line chart looks like:
 
-**CHART**
+{% embed_all standard-charts-line-area-and-column-charts-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/xb9TG/) to edit the line chart.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
 
 ## Area Chart
 
@@ -100,7 +90,7 @@ An area chart is similar to the line chart, with the difference that the area ma
 
 To render an area chart the same use case as above, set the `type` to `area`. A single-series area chart looks like:
 
-**CHART**
+{% embed_all standard-charts-line-area-and-column-charts-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/x5FBh/) to edit the area chart.
 
@@ -128,17 +118,11 @@ Given below is the JSON code to include trend-line on your chart:
 
 ```
 "trendlines": [{
-
     "line": [{
-
         "startvalue": "700000",
-
         "color": "#1aaf5d",
-
         "displayvalue": "Monthly Target"
-
     }]
-
 }]
 
 ```
@@ -147,17 +131,17 @@ For a detailed list of attributes refer to the API reference page of trend-line 
 
 A quarterly sales summary chart rendered with a trend-line to show the target value looks like this:
 
-**CHART**
+{% embed_all standard-charts-line-area-and-column-charts-example-7.js %}
 
-Click here to edit the column chart.
+Click [here](http://jsfiddle.net/fusioncharts/aktyv9jm/) to edit the column chart.
 
 **Trend-zone** is used to show a range of target values. The trend-zone uses the same attributes as the trend-line. `isTrendZone` is the attribute which is used to specify whether a chart will be rendered with a trend-line or a trend-zone. Setting this attribute to `0` will render a trend-line, setting it to `1` (default) will render a trend-zone. 
 
 A quarterly sales summary chart rendered with a trend-zone to show a range of target values looks like this:
 
-**CHART**
+{% embed_all standard-charts-line-area-and-column-charts-example-8.js %}
 
-Click here to edit the column chart.
+Click [here](http://jsfiddle.net/fusioncharts/6cq0uafp/) to edit the column chart.
 
 FusionCharts Suite XT includes several options to customize trend elements. To know more, click [here](https://www.fusioncharts.com/dev/basic-chart-configurations/trend-lines-and-zones.html).
 
@@ -179,9 +163,7 @@ Given below is the JSON code to include vertical line on your chart:
 {
 
     "vline": "true",
-
     "label": "Weekend Start",
-
     "linePosition": "0.7"
 
 },
@@ -192,7 +174,9 @@ For a detailed list of attributes refer to the API reference page of vertical li
 
 A line chart rendered with a vertical line looks like this:
 
-**CHART**
+{% embed_all standard-charts-line-area-and-column-charts-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/cdjco7hq/) to edit the above chart.
 
 FusionCharts Suite XT includes several options to customize vertical line elements. To know more, click [here](https://www.fusioncharts.com/dev/basic-chart-configurations/vertical-lines.html).
 
@@ -202,7 +186,7 @@ FusionCharts Suite XT allows you to change the chart type dynamically through it
 
 An example of a chart, where you can dynamically change the chart type, looks like this:
 
-CHART
+{% embed_all standard-charts-line-area-and-column-charts-example-10.js %}
 
 ## Set Data Skipping
 
@@ -223,6 +207,6 @@ Now, lets render an area chart with `30000` data. You will notice that the chart
 
 An example will look like as shown below:
 
-**CHART**
+{% embed_chart standard-charts-line-area-and-column-charts-example-11.js %}
 
 > In multi-series chart, one dataset can be overlapped (partially or completely) by another dataset only if the data plot of one dataset get hidden by the other.
