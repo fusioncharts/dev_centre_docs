@@ -8,29 +8,21 @@ The select-scatter chart is a special type of chart that allows users to visuall
 
 This can be used for a variety of purposes, where you want your users to visually select data from the scatter chart. As an example, we will plot a select-scatter chart to show the products sold and the price points earned, for televisions and cell phones at Harry's SuperMart in one week.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a select-scatter chart, set the `type` attribute to `selectscatter`.
 
 For a detailed list of attributes you can check the API reference page of select-scatter chart.
 
 The select-scatter chart thus created looks like this:
 
-**CHART**
+{% embed_all standard-charts-select-scatter-chart-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/3JjL8/) to edit the select-scatter chart.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
 
 To select a set of points, you can drag and draw a rectangle over the chart. All the points within this rectangle are now selected points. Once the rectangle has been drawn, you can resize it to adjust more points. The resize handlers let you do so.
 
 To select more scattered data points, you can add additional select rectangles on the chart. The process to add another select rectangle is the same, as shown in the image below. Click anywhere in the chart canvas and draw a rectangle.
 
-**CHART**
+IMAGE
 
 You can drag, resize, or delete any select rectangles individually. To delete any select rectangle, you can click the `X` at the top right corner of the selection box and the rectangle will be gone.
 
@@ -94,7 +86,9 @@ The function `getJSONData()` returns the selected data. This function is also us
 
 A select-scatter chart configured to show how the selected data is retrieved and updated looks like this:
 
-**CHART**
+{% embed_all standard-charts-select-scatter-chart-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/0e8vwaud/) to edit the select-scatter chart.
 
 Now, let's customize the appearance and properties of drawing regression lines in the select-scatter chart.
 
@@ -124,9 +118,9 @@ Refer to the code given below:
 ```
 A select-scatter chart rendered with a regression line is shown below:
 
-**CHART**
+{% embed_all standard-charts-select-scatter-chart-example-3.js %}
 
-Click here to edit the select-scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/0yL7zfps/) to edit the select-scatter chart.
 
 ### Modes of Regression
 
@@ -156,12 +150,9 @@ Refer to the code given below:
 	"chart": {
 
 		"showYOnX": "0",
-
-		"regressionLineColor": //Hex color code,
-
-		"regressionLineThickness": //Hex color code,
-
-		"regressionLineAlpha": //Hex color code
+		"regressionLineColor": "f4cb00",
+		"regressionLineThickness": "3",
+		"regressionLineAlpha": "70"
 
 	},
 
@@ -172,9 +163,9 @@ Refer to the code given below:
 ```
 The chart looks like:
 
-**CHART**
+{% embed_all standard-charts-select-scatter-chart-example-4.js %}
 
-Click here to edit the select-scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/7yhqp2oq/) to edit the select-scatter chart.
 
 > The formulae used to draw the regression lines for both the modes are given below: 
 
