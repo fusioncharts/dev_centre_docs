@@ -4,7 +4,7 @@ description: The FusionCharts Suite XT standard charts are simple charts used to
 heading: Line, Area and Column charts
 ---
 
-## Column and Bar Charts
+## Column 2D Chart
 
 Column and bar charts represent data with rectangular horizontal or vertical bars. The height of the bars are proportional to the values they represent. In case of a column chart, the `numeric values` are plotted along the y-axis and the `data labels` are plotted along the x-axis. Whereas in bar charts, the numeric values are plotted along the x-axis and the data labels are plotted along the y-axis. Column and bar charts are best fitted when you want to compare values. 
 
@@ -33,10 +33,6 @@ A single-series column 2D chart looks like:
 {% embed_all standard-charts-line-area-and-column-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/s7t8F/) to edit the column 2D chart.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
 
 ## Column 3D chart
 
