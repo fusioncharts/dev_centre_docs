@@ -30,23 +30,15 @@ The FusionCharts Suite XT log charts offer the following features:
 
 As an example, we will create a log column 2D chart that compares the store footfalls with the online visits for one year.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a log column 2D chart, set the `type` attribute to `logmscolumn2d`.
 
 For a detailed list of attributes you can check the API reference page of log column 2D chart.
 
 The log column 2D chart thus rendered looks like this:
 
-**CHART**
+{% embed_all standard-charts-logarithmic-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/kEeUR/) to edit the log column 2D chart.
-
-The full HTML code for the above sample is:
-
-HTML CODE SNIPPET
 
 ## Log Line 2D chart
 
@@ -54,7 +46,7 @@ Now, let's create a log line 2D chart that compares the store footfalls with the
 
 The log line chart thus rendered looks like this:
 
-**CHART**
+{% embed_all standard-charts-logarithmic-charts-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/LSdTC/) to add the log line 2D chart.
 
@@ -83,7 +75,7 @@ Refer to the code given below:
 
 A log column chart with the base set to 5 looks like this:
 
-**CHART**
+{% embed_all standard-charts-logarithmic-charts-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/dfdc2f9p/) to edit the log column 2D chart.
 
@@ -108,7 +100,7 @@ Refer to the code given below:
 
 A log column 2D chart rendered with an inverted y-axis looks like this:
 
-**CHART**
+{% embed_all standard-charts-logarithmic-charts-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/rr92f6Lm/) to edit the log column 2D chart.
 
@@ -137,6 +129,6 @@ Refer to the code given below:
 
 A log column chart with the number of minor divisional lines explicitly specified looks like this:
 
-**CHART**
+{% embed_all standard-charts-logarithmic-charts-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/8yx8gfaj/) to edit the log column 2D chart.
