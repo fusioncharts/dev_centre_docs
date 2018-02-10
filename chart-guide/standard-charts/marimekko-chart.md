@@ -24,10 +24,6 @@ The Marimekko chart shown below, when seen in the default mode, helps you instan
 
 * The percentage market share for each manufacturer, shown as a percentage label between the stacked columns. For example, Bose has a total market share of approximately 46%, as shown by the label between the data plots for Bose and Dell.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a marimekko chart, set the `type` attribute to `marimekko`.
 
 For a detailed list of attributes you can check the API reference page of pie chart.
@@ -37,10 +33,6 @@ The marimekko chart for the above code looks like :
 **CHART**
 
 Click [here](http://jsfiddle.net/fusioncharts/bdmTg/) to edit the marimekko chart.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
 
 As you can see in the chart data, the actual sales data has been provided. The Marimekko chart automatically converts these values into percentage values based on the size of a market segment and the percentage share held by competitors in each segment.
 

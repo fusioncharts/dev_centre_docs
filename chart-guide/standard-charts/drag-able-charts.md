@@ -20,25 +20,19 @@ Once you are done with the visual updating of data, you can submit the data, eit
 
 Let's create our first **drag-able column 2D** chart showcasing the actual and estimated inventory status for the top five food items at Bakersfield Central.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a drag-able column 2D chart:
 
 * Set the `type` attribute to `dragcolumn2d`.
 
 * Set the `allowDrag` attribute to specify whether the data plots representing a dataset will be drag-able. Set this attribute to `0` to disable the data plots from being drag-able, and set it to `1` (default) to enable them to be drag-able. This attribute belongs to the `dataset` object and makes all data plots for a dataset drag-able.
 
-Refer to the code below:
-
-<INSERT CODE>
-
 > For a detailed list of attributes you can check the API reference page of the drag-able column 2D chart.
 
 The drag-able column 2D chart for the above code looks like:
 
-CHART
+{% embed_all standard-charts-drag-able-charts-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/8JNRQ/) to edit the above drag-able chart.
 
 In the above chart, the data plots representing the estimated value are drag-able.
 
@@ -46,13 +40,17 @@ The above sample also shows an external table with the values from the 'Estimate
 
 Observe that there is also a `Restore` button on the chart. When the restore button is clicked, all data is reset to its original values. This is done using the `dataRestored` event.
 
-To render a drag-able line 2D chart, change the value of the `type` attribute from `dragcolumn2d` to `dragline`. This sample will showcase the quarterly sales for Apple and Samsung. The anchors will represent the sales estimates for Apple and Samsung for Q3 and Q4 are drag-able. Recall that in the above drag-able column 2D chart we have configured all the data plots for one dataset to be drag-able. In this chart, however, we have made only selected data points of all datasets drag-able.
-
 ## Drag-able Line 2D
+
+To render a drag-able line 2D chart, change the value of the `type` attribute from `dragcolumn2d` to `dragline`. 
+
+This sample will showcase the quarterly sales for Apple and Samsung. The anchors will represent the sales estimates for Apple and Samsung for Q3 and Q4 are drag-able. Recall that in the above drag-able column 2D chart we have configured all the data plots for one dataset to be drag-able. In this chart, however, we have made only selected data points of all datasets drag-able.
 
 A drag-able line 2D chart created to plot the quarterly sales for Apple and Samsung looks like:
 
-CHART
+{% embed_all standard-charts-drag-able-charts-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/8Fq44/) to edit the above drag-able chart.
 
 ## Drag-able Area 2D
 
@@ -60,7 +58,9 @@ To render a drag-able area 2D chart, change the value of the `type` attribute fr
 
 A drag-able area 2D chart thus created looks like:
 
-CHART
+{% embed_all standard-charts-drag-able-charts-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/2atfY/) to edit the above drag-able chart.
 
 Now, let's customize the appearance and properties of the charts. 
 
@@ -68,21 +68,21 @@ Now, let's customize the appearance and properties of the charts.
 
 The chart, by default, calculates the y-axis upper and lower limits based on the data provided to it. To let the column assume a value not covered within this axis range, increase or decrease the limits using the menu button at the top-right of the chart.
 
-<CHART>
+IMAGE
 
 Once you've clicked the menu button, a pop-up with the options to increase or decrease the upper and lower limits is revealed. Click on this menu button to reveal a menu with the options to increase or decrease the upper and lower limits.
 
-<CHART>
+IMAGE
 
 Select any of the above options, to increase or decrease the chart limits using auto-calculated intervals. However, to set manual values for the upper/lower limits, click the limits and edit them directly.
 
-**CHART**
+IMAGE
 
-**Chart**
+IMAGE
 
 If you enter a limit value which cannot be accepted by the chart, the value will turn red to indicate that the value can not be accepted as shown below:
 
-**Chart**
+IMAGE
 
 ## Manage chart limits using javaScript API
 
@@ -235,7 +235,9 @@ events: {
 
 A drag-able area chart configured to manage chart limits using JavaScript API looks like:
 
-CHART
+{% embed_all standard-charts-drag-able-charts-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/r8fgby9g/) to edit the above drag-able chart.
 
 ## Snap to the nearest divisional lines
 
@@ -273,15 +275,19 @@ Refer to the code given below:
 
 A drag-able column chart configured for snapping to the nearest div interval looks like this:
 
-CHART
+{% embed_all standard-charts-drag-able-charts-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/oq5vqv7n/) to edit the above drag-able chart.
 
 ## Retrieve a dataset
 
 A drag-able column 2D chart can be configured to retrieve JSON data and render it in an alert window. `getJSONData` function need to be called on an existing chart. It fetches data that has been set on the chart in the JSON format. Calling this function on a chart with no data set will return an empty `{  }` object.
 
-The chart looks like this:
+The chart retrieving datasets looks like this:
 
-CHART
+{% embed_all standard-charts-drag-able-charts-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/d6cLm0em/) to edit the above drag-able chart.
 
 A drag-able column 2D chart can also be configured to retrieve a data in XML and CSV format. The function to retrieve them are:
 
@@ -297,7 +303,9 @@ The `getDataWithID()` function returns a three-dimensional array that contains t
 
 A drag-able column chart configured to retrieve data using the `getDataWithID()` function looks like this:
 
-CHART
+{% embed_all standard-charts-drag-able-charts-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/cvcn499t/) to edit the above drag-able chart.
 
 The data returned by the `getDataWithID()` function is without any editing.
 
@@ -312,7 +320,6 @@ The key pointers of this method are:
 * The remaining columns map to their respective category and dataset. For each data, its id and last updated value on the chart is returned. In our example, because we have not changed any data visually on the chart, it is showing the original data.
 
 Given below is the structure of the three-dimensional array returned by this function:
-
 
 [0,0] - Empty|[0,1]- Dataset id|[0,2] - Dataset Id|[0,n]- Dataset Id|
 -|-|-|-
@@ -338,5 +345,6 @@ Thus, the array returned by the `getData()` function is a two-dimensional array 
 
 A drag-column chart configured to retrieve data using the `getData()` method looks like this:
 
-CHART
+{% embed_all standard-charts-drag-able-charts-example-8.js %}
 
+Click [here](http://jsfiddle.net/fusioncharts/qzm79rsv/) to edit the above drag-able chart.

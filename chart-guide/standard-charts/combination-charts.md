@@ -11,7 +11,7 @@ Combination charts are similar to multi-series charts, they allow you to plot mu
 
 The combination charts available in the FusionCharts Suite XT are:
 
-* 2D Single Y Combination
+* 2D Single y-axis combination
 
 * 3D Single Y Combination
 
@@ -29,7 +29,7 @@ The combination charts available in the FusionCharts Suite XT are:
 
 * Multi Series Stacked Column 2D + Line Dual Y
 
-## Single y-axis combi chart 2D
+## 2D single y-axis combination chart
 
 Let's create our first combination chart to showcase the comparison of actual revenue, projected revenue and the profit earned for each month of the last year. All three metrics have been plotted using different chart types - the actual revenue earned is plotted using a column chart, the projected revenue is plotted using a line chart, and the profit earned is plotted using an area chart.
 
@@ -45,7 +45,7 @@ Click [here](http://jsfiddle.net/fusioncharts/4REJ5/) to edit the single y combi
 
 Using a different chart type for each metric ensures easy interpretation of the data being shown.
 
-## Single y-axis combi chart 3D
+## 3D single y-axis combination chart
 
 To render a single y-axis combination chart in 3D, change the value of the `type` attribute from `mscombi2d` to `mscombi3d`. The rest of the data structure remains the same.
 
@@ -55,7 +55,7 @@ A single y-axis combination chart in 3D looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/rjy87gfy/) to edit the single y combination chart in 2D.
 
-## Dual y-axis combi chart 2D
+## 2D dual y-axis combination chart
 
 Now, let's create a dual y-axis combination chart in 2D. For this, change the value of the `type` attribute from `mscombi2d` to `mscombidy2d`.
 
@@ -68,6 +68,8 @@ A 2D combination chart with dual y-axis looks like this:
 {% embed_all standard-charts-combination-chart-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/S52bN/) to edit the dual y-axis combination chart in 2D.
+
+Now, let's customize the appearance and properties of the combination charts.
 
 ## Plotting Trend Elements
 
