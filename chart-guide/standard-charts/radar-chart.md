@@ -16,10 +16,6 @@ Common application areas for radar charts include:
 
 As an example, we will create our first radar chart that plots the results of a customer feedback survey based on five categories. The radar chart will be used to compare the results for each category and determine what service needs improvement.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a radar chart, set the `type` attribute to `radar` and follow the steps given below:
 
 * Specify the label for a data item using the `label` attribute. This attribute belongs to the `category` object, which in turn belongs to the `categories` object.
@@ -32,13 +28,9 @@ For a detailed list of attributes you can check the API reference page of radar 
 
 The radar chart created will look like as  shown below:
 
-**CHART**
+{% embed_all standard-charts-radar-chart-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/64v13yyy/) to edit the radar chart.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
 
 Now, we will create a multi-series radar chart for the budget analysis for the current month for the five key departments at a store. For each department, we will plot the allocated budget and the actual cost. This will help to determine how accurate the budget estimation at the beginning of the month was - whether the budget was over-allocated, under-allocated, or correctly allocated. 
 
@@ -46,11 +38,6 @@ Now, we will create a multi-series radar chart for the budget analysis for the c
 
 The multi-series radar chart thus created looks like this:
 
-**CHART**
+{% embed_all standard-charts-radar-chart-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/gqLerkph/) to edit the multi-series radar chart.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
-

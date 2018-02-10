@@ -36,10 +36,6 @@ The FusionCharts Suite XT multi-axis line chart includes the following features:
 
 Let's create our first multi-axis line which will showcase the revenue analysis Harry's SuperMart depending on the revenue, orders and footfall for 12 weeks. 
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a multi-axis line chart, set the `type` attribute to `multiaxisline`.
 
 The attributes and the structure of the multi-axis line chart is a bit different from the multi-series charts. So there are some configurations and attributes which may help you in customizing your chart. They are:
@@ -52,22 +48,14 @@ The attributes and the structure of the multi-axis line chart is a bit different
 
 * Specifying the `allowSelection` attribute will let you set the checkbox shown for each axis. Selecting/clearing this checkbox for an axis will show/hide the data set belonging to that axis.
 
-* Specify the allowAxisShift attribute to set the dynamic shifting of an axis. If you click an axis that is not the primary (the first from the left of the canvas) or the secondary (the first from the right canvas) axis, the axis to the left of this axis will replace it. The axis that you clicked will be placed at the end, in case of multiple axes. Setting this attribute to `0` will disable the shifting of axes, setting it to `1` (default) will enable it.
+* Specify the `allowAxisShift` attribute to set the dynamic shifting of an axis. If you click an axis that is not the primary (the first from the left of the canvas) or the secondary (the first from the right canvas) axis, the axis to the left of this axis will replace it. The axis that you clicked will be placed at the end, in case of multiple axes. Setting this attribute to `0` will disable the shifting of axes, setting it to `1` (default) will enable it.
 
 * Set the `showAxis` attribute to specify whether the axis will be shown or hidden (referred to as an imaginary axis). Setting this attribute to `0` will hide the axis, setting it to `1` (default) will show it.
-
-Refer to the code below:
-
-<insert Code>
 
 For a detailed list of attributes you can check the API reference page of multi-axis line chart.
 
 A multi-axis line chart rendered with three axes looks like this:
 
-**CHART**
+{% embed_all standard-charts-multi-axis-line-chart-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/aPHB5/) to edit the multi-axis line chart.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**

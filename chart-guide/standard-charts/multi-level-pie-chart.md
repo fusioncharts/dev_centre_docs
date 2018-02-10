@@ -18,21 +18,12 @@ This chart can be used to show various types of data like:
 
 As an example, we will create a multi-level pie chart that shows the sales breakup of top product categories for the last quarter at Harry's SuperMart.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a multi-level pie chart, set the `type` attribute to `multilevelpie`.
 
 For a detailed list of attributes you can check the API reference page of multi-level pie chart.
 
 The multi-level pie chart thus rendered looks like this:
 
-**CHART**
+{% embed_all standard-charts-multi-level-pie-chart-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/njjra2r4/) to edit the multi-level pie chart.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
-
