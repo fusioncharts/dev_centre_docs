@@ -76,17 +76,15 @@ The format of real-time data for real-time charts depends on:
 
 Let's create our first real-time line chart showcasing the stock price monitoring at Harry's SuperMart.
 
-The JSON and XML structure of the chart is:
-
-CODE SNIPPET
-
 To create a real-time chart, set the `type` attribute to `realtimeline`.
 
 For a detailed list of attributes you can check the API reference page of real-time line chart.
 
 A real-time line chart looks like:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/43fJn/) to edit the real-time line chart.
 
 ## Real Time Area chart
 
@@ -96,47 +94,63 @@ For a detailed list of attributes you can check the API reference page of real-t
 
 A real-time area chart looks like:
 
-<CHART>
+{% embed_chart standard-charts-real-time-charts-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/kdfX7/) to edit the real-time area chart.
 
 ## Real Time Stacked Area chart
 
-To create a real-time chart, set the `type` attribute to `realtimestackedarea`. The rest of the data structure remains the same.
+Now, let's create a real-time stacked area chart showcasing number of live visitors in every 5 seconds interval.
+
+To create a real-time chart, set the `type` attribute to `realtimestackedarea`. 
 
 For a detailed list of attributes you can check the API reference page of real-time area chart.
 
 A real-time stacked area chart looks like:
 
-<CHART>
+{% embed_chart standard-charts-real-time-charts-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/C8mkW/) to edit the real-time stacked area chart.
 
 ## Real Time Column chart
 
-To create a real-time column chart, set the `type` attribute to `realtimecolumn`. The rest of the data structure remains the same.
+In the above samples, we rendered real-time line and area charts. Let's now create a real-time column charts showcasing number of online transactions per second on the e-commerce site.
+
+To create a real-time column chart, set the `type` attribute to `realtimecolumn`.
 
 For a detailed list of attributes you can check the API reference page of real-time area chart.
 
 A real-time column chart looks like:
 
-<CHART>
+{% embed_chart standard-charts-real-time-charts-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/NvJat/) to edit the real-time column chart.
 
 ## Real Time Stacked Column chart
 
-To create a real-time stacked column chart, set the `type` attribute to `realtimestackedcolumn`. The rest of the data structure remains the same.
+FusionCharts also supports real-time stacked column chart. Here the sample below will showcase the  number of live visitors on site, updated every 5 seconds.
+
+To create a real-time stacked column chart, set the `type` attribute to `realtimestackedcolumn`.
 
 For a detailed list of attributes you can check the API reference page of real-time area chart.
 
-A real-time area chart looks like:
+A real-time stacked column chart looks like:
 
-<CHART>
+{% embed_chart standard-charts-real-time-charts-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/bLUw5/) to edit the real-time stacked column chart.
 
 ## Real Time Dual Y Line chart
 
-To create a real-time dual y line chart, set the `type` attribute to `realtimelinedy`. The rest of the data structure remains the same.
+To create a real-time dual y line chart, set the `type` attribute to `realtimelinedy`. 
 
 For a detailed list of attributes you can check the API reference page of real-time area chart.
 
-A real-time area chart looks like:
+A real-time dual y-axis line chart looks like:
 
-<CHART>
+{% embed_chart standard-charts-real-time-charts-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/2wn8g/) to edit the real-time dual y-axis line chart.
 
 ## Number of datasets to update
 
@@ -182,7 +196,9 @@ To do this, you can provide data to the chart in the following format
 
 The real-time line chart thus rendered is shown below:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/k703vvrm/) to edit the real-time line chart.
 
 ## Attributes to update each dataset
 
@@ -287,7 +303,9 @@ To add multiple datasets, let's create a real-time chart plotted for two dataset
 
 A real-time column chart that compares the retail and online store transactions at Harry's SuperMart looks like this:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/bmfwdck3/) to edit the real-time column chart.
 
 Data provider page
 
@@ -331,7 +349,7 @@ Like most other charts in the FusionCharts Suite XT, real-time charts with multi
 
 The image below is a screenshot of the above real-time chart with the Online transactions dataset hidden:
 
-![](null)
+IMAGES
 
 Even when a dataset is not visible, it will continue updating itself in the background from the real-time data. Also, all alert managers associated with the dataset will continue to work.
 
@@ -371,7 +389,9 @@ In the chart shown below, the `dataStreamURL` attribute will be used to set `adv
 
 A real-time chart with multiple updates for each dataset sent at one time looks like this:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/kmayyt5o/) to edit the real-time line chart.
 
 ### Data provider page
 
@@ -433,13 +453,15 @@ In the data structure above, you will see:
 
 A real-time chart rendered with historical data looks like this:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/s74a1zme/) to edit the real-time line chart.
 
 Now, in the chart shown below, observe that the chart view shows 10 data plots at any given time. Increase/decrease the number of data points/data plots that are displayed on the chart at one time.
 
 Look at the real-time column chart shown below:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-11.js %}
 
 Now, let's create a real-time column chart configuring to display 15 data plots at a time. To specify the number of data plots in one screen at a given time, set the value of `numDisplaySets` attribute to `15`. As soon as the 16th data comes in, the first data towards the left will be deleted and the rest of the data will be shifted one position to the left.
 
@@ -464,7 +486,9 @@ Refer to the code given below:
 
 A real-time column chart configured to display 15 data plots at a time is shown below:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-12.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/1xL2nd76/) to edit the real-time column chart.
 
 # Add data stamp
 
@@ -476,7 +500,9 @@ In traditional systems, the data provider page will have to keep track of the da
 
 The real-time line chart thus rendered is shown below:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-13.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/vmgcbnok/) to edit the real-time line chart.
 
 FusionCharts Suite XT uses the data stamp feature to solve this problem. Data stamp is a token of information that is passed with each update to the chart and back to the server, and helps to easily identify the data that was last sent to the chart.
 
@@ -589,7 +615,9 @@ Due to some security policies, usage of `eval` has been removed and some of the 
 
 A chart thus created looks like :
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-14.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ned9rmu6/) to edit the real-time chart.
 
 ALERT|
 -
@@ -692,7 +720,7 @@ The FusionCharts Suite XT message logger has the following features:
 
 A simple message logger looks as shown in the image below:
 
-**CHART**
+IMAGE
 
 In the above image, we have a real-time column chart that monitors the footfalls at Bakersfield Central. Overlapping this chart is the message logger that contains messages that were streamed to the message logger by the server.
 
@@ -730,11 +758,11 @@ The following code snippet enables the use of the message logger for a real-time
 
 When the first message is streamed to the chart from server, the message logger is displayed as shown in the image below:
 
-**CHART**
+IMAGE
 
 A close button appears at the top-right corner of the message logger window that you can use to close the message logger. Or you can click anywhere outside the message logger window. To re-open the message logger, click the `Show Log` option from the context menu, as shown in the image below:
 
-**CHART**
+IMAGE
 
 The `**messageGoesToJS`** attribute is used to pass only the "Message Text" parameter to the JavaScript function, whereas, the `**messagePassAllToJS`** is used to pass all the four parameters to the JavaScript function.
 
@@ -783,7 +811,7 @@ The `&msgTitle` and `&msgText` parameters are absorbed by the message logger. `&
 
 When a chart (with `useMessageLog` set to `1`) accepts this data stream, the message logger, as shown in the image below, is displayed:
 
-**CHART**
+IMAGE
 
 > If you are passing any special characters as part of your message text or title (like &, % etc.), you will need to URL Encode the text/title.
 
@@ -793,7 +821,9 @@ Let's configure a chart to display an `ERROR` message in the message logger when
 
 A real-time chart that plots the footfalls at Bakersfield Central is shown below:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-15.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/eqv91fqc/) to edit the real-time column chart.
 
 To specify the message type, you can provide data in the following format:
 
@@ -847,7 +877,9 @@ A real-time column chart configured to pass all parameters from the message enve
 
 Refer to the chart below:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-16.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/u7h1arjq/) to edit the real-time column chart.
 
 ## Use the client-side JavaScript API
 
@@ -924,7 +956,9 @@ In the sample rendered below, the `feedData()` method (covered in the section on
 
 A real-time chart that clears all its data after every 10th update looks like this:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-17.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/4pmbt9b8/) to edit the real-time chart.
 
 > When sending this command from the real-time data provider page to the chart, you need to make sure that it is not sent with each incremental data update. Otherwise, you will not see anything plotted on the chart because the chart will clear itself with each update.
 
@@ -953,7 +987,9 @@ Refer to the code given below:
 
 A real-time column chart configured to do this looks like this:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-18.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/qbp4t2hj/) to edit the real-time column chart.
 
 ## Clear chart using JavaScript API
 
@@ -967,7 +1003,9 @@ Let's create a real-time chart where the `chartRef` variable will be used to get
 
 A real-time column chart that is configured to be cleared using the JavaScript API after every 10th update looks like this:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-19.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/yvvypqbg/) to edit the real-time column chart.
 
 > You can call the JavaScript APIs of a chart only after it has rendered.
 
@@ -989,7 +1027,9 @@ Let's create a chart where the data follows the pointers below:
 
 A real-time line chart for which data is set using the `feedData(strData)` method is shown below:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-20.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/rngL29jb/) to edit the real-time line chart.
 
 ## Retrieve data using JavaScript
 
@@ -1136,7 +1176,9 @@ function showData() {
 
 A real-time column chart configured to retrieve data using the `getData()` method is shown below:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-21.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/qtgncuyg/) to edit the real-time column chart.
 
 Whenever the data for a chart with the `myChart` ID updates in the page, the `showData()` function is invoked. This function gets the new data for the chart in a JavaScript array using the `getData()`method. The `showData()` function then creates an HTML table and renders the new data in that table.
 
@@ -1205,7 +1247,9 @@ Let's create a chart which shows the real-time statistics of footfalls at the Ba
 
 A real-time column chart configured to listen to the `realTimeUpdateComplete` event is shown below:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-22.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/5ukb0qLq/) to edit the real-time column chart.
 
 More details pertaining to this event are given in the table below:
 
@@ -1230,7 +1274,9 @@ Let's create a chart with the URL to a fake data provider page has passed as val
 
 A real-time column chart configured to listen to the `realTimeUpdateError` event is shown below:
 
-CHART
+{% embed_chart standard-charts-real-time-charts-example-23.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/rwmmg6cg/) to edit the real-time column chart.
 
 More details pertaining to this event are given in the table below:
 
