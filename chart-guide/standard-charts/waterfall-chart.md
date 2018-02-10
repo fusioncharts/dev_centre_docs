@@ -8,10 +8,6 @@ A waterfall (cascade) chart is a special type of column chart that is used to sh
 
 Let's create our first waterfall chart which will showcase the profit and loss analysis.
 
-The JSON and XML structure of the chart is:
-
-**CODE SNIPPET**
-
 To create a waterfall chart, set the `type` attribute to `waterfall`.
 
 For a detailed list of attributes you can check the API reference page of waterfall chart.
@@ -21,10 +17,6 @@ The waterfall chart thus rendered looks like this:
 **CHART**
 
 Click here to edit the waterfall chart.
-
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
 
 ## Customize Colors for the Columns
 
