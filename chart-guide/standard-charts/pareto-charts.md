@@ -2,6 +2,7 @@
 title: Pareto Chart | FusionCharts
 description: In this section of Pareto chart you will be introduced to the basics of the Pareto chart and how you can create a simple one.
 heading: Pareto Chart
+breadcrumb: [["Home", "/"], ["Pareto Chart"]]
 ---
 
 A Pareto chart, named after Vilfredo Pareto, is a type of chart that combines the column chart with the line chart. The data values in a Pareto chart are represented by columns, which are arranged in descending order of magnitude. The cumulative total of these values is shown by an upward curving line. Pareto charts are used for isolating the key causes of a problem. They can also be used for determining the key factors of success.

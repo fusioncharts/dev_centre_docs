@@ -2,6 +2,7 @@
 title: Error Charts | FusionCharts
 description: An error chart is used to show the extent of uncertainty in information relative to an average value.
 heading: Error Charts
+breadcrumb: [["Home", "/"], ["Error Charts"]]
 ---
 
 An error chart is used to show the extent of uncertainty in information relative to an average value. Error charts can be used to show the range of values that can be taken up by a data point, instead of being restricted to a point value. Errors are indicated by distinct I-shaped bars that are both positive and negative. Typically the I-bars represent the standard deviation in a measurement indicating the degree of variance observed in a data point. Error charts give a general idea of the accuracy of information or, conversely, the amount of variation in data from it's expected value.

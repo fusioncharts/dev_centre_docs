@@ -2,6 +2,7 @@
 title: Logarithmic Chart | FusionCharts
 description: Logarithmic charts are similar to normal charts except for the fact that logarithmic charts use a logarithmic axis instead of a linear axis.
 heading: Logarithmic Chart
+breadcrumb: [["Home", "/"], ["Logarithmic Charts"]]
 ---
 
 Logarithmic charts are similar to normal charts except for the fact that logarithmic charts use a logarithmic axis instead of a linear axis. Logarithmic charts can have a logarithmic scale of any base greater than 1. These charts are perfect for plotting data that comprises of both small and large values. You can use these charts to plot data like sales comparison, election results, population growth, etc.

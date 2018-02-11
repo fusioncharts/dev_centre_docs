@@ -2,6 +2,7 @@
 title: Real-time Charts | FusionCharts
 description: Real-time charts, also known as data streaming charts, are charts that automatically update themselves after every n seconds, without any page refreshes
 heading: Real-time Charts
+breadcrumb: [["Home", "/"], ["Real-time Charts"]]
 ---
 
 Real-time Charts

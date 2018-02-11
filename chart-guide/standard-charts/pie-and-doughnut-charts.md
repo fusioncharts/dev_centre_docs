@@ -2,6 +2,7 @@
 title: Pie and Doughnut Charts | FusionCharts
 description: This section talks about pie and doughtnut charts. Pie and doughnut charts are used to plot data that needs to be shown as a percent of the whole
 heading: Pie and Doughnut Charts
+breadcrumb: [["Home", "/"], ["Pie and Doughnut Charts"]]
 ---
 
 A pie chart is a circular chart divided into sectors where the arc length of each sector, its central angle, and its area is proportional to the quantity it represents. A doughnut chart is similar to a pie chart and facilities similar kind of data analysis. FusionCharts Suite XT includes the pie and doughnut charts to plot data that needs to be shown as a percent of the whole.

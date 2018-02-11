@@ -1,7 +1,8 @@
 ---
-title: Waterfall (Cascade) Chart | FusionCharts
+title: Waterfall Chart | FusionCharts
 description: A waterfall chart, a type of column chart, used to show how an initial value is increased/decreased by a series of intermediate values, to a final value
-heading: Waterfall (Cascade) Chart
+heading: Waterfall Chart
+breadcrumb: [["Home", "/"], ["Waterfall Chart"]]
 ---
 
 A waterfall (cascade) chart is a special type of column chart that is used to show how an initial value is increased and decreased by a series of intermediate values, leading to a final value.

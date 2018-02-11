@@ -2,6 +2,7 @@
 title: Zoom Scatter Chart | FusionCharts
 description: The  zoom-scatter chart is primarily used to find correlations between datasets. Correlations in the chart can be determined by visual patterns in the data.
 heading: Zoom Scatter Chart
+breadcrumb: [["Home", "/"], ["Zoom Scatter Chart"]]
 ---
 
 The FusionCharts Suite XT zoom-scatter chart, a special type of chart, is an extension of the scatter chart with the zooming and panning features and the ability to display millions of data points because of these features.

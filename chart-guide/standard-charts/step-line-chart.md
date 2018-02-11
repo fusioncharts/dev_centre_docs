@@ -2,6 +2,7 @@
 title: Step Line Chart | FusionCharts
 description: It is a specialized line chart which, unlike the usual line charts, does not use the shortest distance to connect two data points
 heading: Step Line Chart
+breadcrumb: [["Home", "/"], ["Step Line Chart"]]
 ---
 
 A step line chart is used to visualize trends for a particular event which is not continuous in nature. It is a specialized line chart which, unlike the usual line charts, does not use the shortest distance to connect two data points; instead it uses vertical and horizontal lines to connect the data points in a series to form a step-like progression.

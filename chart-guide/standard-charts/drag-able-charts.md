@@ -2,6 +2,7 @@
 title: Drag-able Charts | FusionCharts
 description: Drag-able charts are special types of charts that allow you to visually update data on the chart and understand how the estimated data values affect the whole chart.
 heading: Drag-able Charts
+breadcrumb: [["Home", "/"], ["Drag-able Charts"]]
 ---
 
 Drag-able charts are a special set of charts that allow you to visually manipulate the data on a chart and then submit it back. These charts can be used intensively for simulations, financial planning, etc.** **Drag-able charts allow you to visually morph the data to update the figures on the chart. These charts derive their basic features from the multi-series column, the multi-series line, and the multi-series area charts.

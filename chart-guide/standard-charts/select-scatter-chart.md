@@ -2,6 +2,7 @@
 title: Select-scatter Chart | FusionCharts
 description: The select-scatter chart is a special type of chart that allows users to visually select a subset of data from the given data points.
 heading: Select-scatter Chart
+breadcrumb: [["Home", "/"], ["Select-scatter Chart"]]
 ---
 
 The select-scatter chart is a special type of chart that allows users to visually select a subset of data from the given data points. Essentially, it is an extension of the XY plot chart (scatter chart) with the added functionality of selecting any number of points on the chart and returning them back to the server, or JavaScript functions, for further processing.

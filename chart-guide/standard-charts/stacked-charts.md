@@ -2,6 +2,7 @@
 title: Stacked Charts | FusionCharts
 description: In stacked chart plot datasets are on top of each other. They help in displaying the cumlative magnitude of two or more data series.
 heading: Stacked Charts
+breadcrumb: [["Home", "/"], ["Stacked Charts"]]
 ---
 
 Stacked Charts
