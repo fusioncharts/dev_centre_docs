@@ -14,14 +14,15 @@ The anchors and their corresponding tooltips are displayed by default. To hide t
 ```
 {
     "chart": {
-        "drawAnchors": "0",
-        "theme": "fint"
+        "drawAnchors": "0"
     },
 
   ```
 A line chart with anchors hidden looks as below:
 
-<chart>
+{% embed_all chart-configurations-anchors-and-lines-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/5tajR/) to edit the above chart.
 
 ## Customize anchor properties
 
@@ -48,15 +49,16 @@ Refer to the code below:
         "anchorBorderThickness": "2",
         "anchorBorderColor": "#127fcb",
         "anchorSides": "3",
-        "anchorBgColor": "#d3f7ff",
-        "theme": "fint"
+        "anchorBgColor": "#d3f7ff"
     },
 
 ```
 
 A line chart with customized anchors looks like as shown below:
 
-<chart>
+{% embed_all chart-configurations-anchors-and-lines-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/QnFW2/) to edit the above chart.
 
 ## Customize anchors for specific data points
 
@@ -71,15 +73,8 @@ Refer to the code below:
 ```
 {
     "chart": {
-        "caption": "Customer Satisfaction Averages",
-        "subcaption": "Last week",
-        "xaxisname": "Day",
-        "yaxisname": "Satisfaction (In %)",
-        "numbersuffix": "%",
-        "showvalues": "0",
         "anchorRadius": "6",
-        "anchorBorderThickness": "2",
-        "theme": "fint"
+        "anchorBorderThickness": "2"
     },
     "data": [
         {
@@ -91,23 +86,8 @@ Refer to the code below:
         {
             "label": "Tue",
             "value": "42.4"
-        },
-        {
-            "label": "Wed",
-            "value": "28.2"
-        },
-        {
-            "label": "Thu",
-            "value": "22.8"
-        },
-        {
-            "label": "Fri",
-            "value": "39.2"
-        },
-        {
-            "label": "Sat",
-            "value": "66.45"
         }
+        ....
     ]
 }
 
@@ -115,7 +95,9 @@ Refer to the code below:
 
 A line chart with anchors for specific data points customized looks as below:
 
-<chart>
+{% embed_all chart-configurations-anchors-and-lines-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/w9ZWt/) to edit the above chart.
 
 ## Add external images
 
@@ -133,8 +115,58 @@ You can add external images in place of anchors for line and area charts. This a
 
 Refer to the code below:
 
-**<XML/JSON>**
+{
+    "chart": {
+        ...
+    },
+    "data": [
+        {
+            "label": "July",
+            "value": "7.8",
+            "displayValue": "John, 7.8",
+            "tooltext": "July : John, 7.8",
+            "anchorImageUrl": "http://static.fusioncharts.com/sampledata/userimages/1.png"
+        },
+        {
+            "label": "August",
+            "value": "6.9",
+            "displayValue": "Mac, 6.9",
+            "tooltext": "August : Mac, 6.9",
+            "anchorImageUrl": "http://static.fusioncharts.com/sampledata/userimages/2.png"
+        },
+        {
+            "label": "September",
+            "value": "8",
+            "displayValue": "Phillips, 8",
+            "tooltext": "September : Phillips, 8",
+            "anchorImageUrl": "http://static.fusioncharts.com/sampledata/userimages/3.png"
+        },
+        {
+            "label": "October",
+            "value": "7.5",
+            "displayValue": "Terrin, 7.5",
+            "tooltext": "October : Terrin, 7.5",
+            "anchorImageUrl": "http://static.fusioncharts.com/sampledata/userimages/4.png"
+        },
+        {
+            "label": "November",
+            "value": "7.7",
+            "displayValue": "Tom, 7.7",
+            "tooltext": "November : Tom, 7.7",
+            "anchorImageUrl": "http://static.fusioncharts.com/sampledata/userimages/5.png"
+        },
+        {
+            "label": "December",
+            "value": "6.7",
+            "displayValue": "Martha, 6.7",
+            "tooltext": "December : Martha, 6.7",
+            "anchorImageUrl": "http://static.fusioncharts.com/sampledata/userimages/6.png"
+        }
+    ]
+}
 
 A line chart with external images in the anchors looks as below:
 
-<chart>
+{% embed_all chart-configurations-anchors-and-lines-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ZBZKS/) to edit the above chart.
