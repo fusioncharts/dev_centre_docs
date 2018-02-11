@@ -115,6 +115,7 @@ You can add external images in place of anchors for line and area charts. This a
 
 Refer to the code below:
 
+```
 {
     "chart": {
         ...
@@ -164,6 +165,7 @@ Refer to the code below:
         }
     ]
 }
+```
 
 A line chart with external images in the anchors looks as below:
 
