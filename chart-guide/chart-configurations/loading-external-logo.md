@@ -22,14 +22,16 @@ Refer to the code below:
         "xAxisName": "Month",
         "yAxisName": "Amount (In USD)",
         "numberPrefix": "$",
-       **"logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",**
-    },
-
- ```
+        "logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png"
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-loading-external-logo-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/xwmrw80q/) to edit the above chart.
 
 ## Configure the external logo
 
@@ -52,17 +54,19 @@ Refer to the code below:
         "xAxisName": "Month",
         "yAxisName": "Amount (In USD)",
         "numberPrefix": "$",
-        **"logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",**
+        "logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
         "logoAlpha": "40",
         "logoScale": "110",
         "logoPosition": "TR"
-    },
-
- ```
+    }
+}
+```
 
 The chart will look like as shownn below:
 
-<chart>
+{% embed_chart chart-configurations-loading-external-logo-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/za1a6xer/) to edit the above chart.
 
 ## Link logo to an external URL
 
@@ -83,12 +87,13 @@ Refer to the code below:
         "logoAlpha": "40",
         "logoScale": "90",
         "logoPosition": "TR",
-        **"logoLink": "N-http://www.fusioncharts.com/"**
-    },
-
- ```
+        "logoLink": "N-http://www.fusioncharts.com/"
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-loading-external-logo-example-3.js %}
 
+Click [here](http://jsfiddle.net/fusioncharts/s0shLfau/) to edit the above chart.
