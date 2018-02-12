@@ -47,9 +47,11 @@ Click [here](http://jsfiddle.net/fusioncharts/58sYu/) to edit the bubble chart.
 
 > In case of bubble and scatter charts, categories are optional because the x-axis is numeric. Categories can, however, be used to define customized x-axis labels for any location on the x-scale. 
 
-A category can define numeric or non-numeric labels for the x-axis. Unlike other multi-series charts where each dataset contains the same number of objects present in the data array as the number of categories, scatter and bubble charts can have varying number of objects present in the data array elements under each dataset array. In case categories are not defined, the x-axis displays an automatically-calculated numeric scale with vertical divisional lines and values of the divisional lines as x-axis labels. 
+> A category can define numeric or non-numeric labels for the x-axis. Unlike other multi-series charts where each dataset contains the same number of objects present in the data array as the number of categories, scatter and bubble charts can have varying number of objects present in the data array elements under each dataset array. 
 
-However, you can also explicitly define categories of your choice and show only those categories as x-axis labels. Moreover, you can also combine the categories and automatically-generated x-axis labels using a mixed mode. All of this will be explained in this section.
+> In case categories are not defined, the x-axis displays an automatically-calculated numeric scale with vertical divisional lines and values of the divisional lines as x-axis labels. 
+
+> However, you can also explicitly define categories of your choice and show only those categories as x-axis labels. Moreover, you can also combine the categories and automatically-generated x-axis labels using a mixed mode. All of this will be explained in this section.
 
 Now, let's customize the appearance and properties of the charts. 
 
@@ -60,21 +62,14 @@ By default, data labels are not rendered on the bubbles in a bubble chart. To sh
 Refer to the code given below:
 
 ```
-
 {
-
     "chart": {
-
         "showValues": "1"
-
     }
-
+...
 }
 
-...
-
 ```
-
 A bubble chart with data labels rendered on bubbles looks like this:
 
 {% embed_chart standard-charts-bubble-and-xy-charts-example-3.js %}
@@ -145,7 +140,9 @@ In the above chart, you can see that the x-axis displays the automatically calcu
 
 To render the x-axis labels in the categories, set the value of the `xAxisLabelMode` attribute to `MIXED`.
 
-> By default, when `xAxisLabelMode` attribute is not defined and when categories are not explicitly defined in the data, the chart displays x-axis labels in the `auto` mode. In case, categories are defined (and the `xAxisLabelMode` attribute is not defined), the chart switches to the `categories` mode. You can also force any of the above three modes by explicitly defining the mode using the `xAxisLabelMode` attribute.
+> By default, when `xAxisLabelMode` attribute is not defined and when categories are not explicitly defined in the data, the chart displays x-axis labels in the `auto` mode. 
+
+> In case, categories are defined (and the `xAxisLabelMode` attribute is not defined), the chart switches to the `categories` mode. You can also force any of the above three modes by explicitly defining the mode using the `xAxisLabelMode` attribute.
 
 ## Configure the x-axis vertical divisional lines
 
