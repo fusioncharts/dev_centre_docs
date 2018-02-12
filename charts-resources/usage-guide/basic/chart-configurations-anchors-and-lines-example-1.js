@@ -14,7 +14,7 @@
             "numbersuffix": "%",
             "showvalues": "0",
             //Customizing anchor properties
-            "drawAnchors": "1",
+            "drawAnchors": "0",
             //Theme
             "theme": "fint"
 
