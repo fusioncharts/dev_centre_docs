@@ -76,7 +76,7 @@ Refer to the code given below:
 
 A log column chart with the base set to 5 looks like this:
 
-{% embed_all standard-charts-logarithmic-charts-example-3.js %}
+{% embed_chart standard-charts-logarithmic-charts-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/dfdc2f9p/) to edit the log column 2D chart.
 
@@ -101,7 +101,7 @@ Refer to the code given below:
 
 A log column 2D chart rendered with an inverted y-axis looks like this:
 
-{% embed_all standard-charts-logarithmic-charts-example-4.js %}
+{% embed_chart standard-charts-logarithmic-charts-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/rr92f6Lm/) to edit the log column 2D chart.
 
@@ -130,6 +130,6 @@ Refer to the code given below:
 
 A log column chart with the number of minor divisional lines explicitly specified looks like this:
 
-{% embed_all standard-charts-logarithmic-charts-example-5.js %}
+{% embed_chart standard-charts-logarithmic-charts-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/8yx8gfaj/) to edit the log column 2D chart.

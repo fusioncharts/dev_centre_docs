@@ -31,7 +31,7 @@ For a detailed list of attributes you can check the API reference page of multi-
 
 A simple multi-series column 2D chart looks like:
 
-{% embed_chart standard-charts-multi-series-charts-example-1.js %}
+{% embed_all standard-charts-multi-series-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/ppcas1oo/) to edit the above multi-series chart.
 
@@ -41,7 +41,7 @@ To render a multi-series column chart in 3D, change the value of the `type` attr
 
 The multi-series column chart in 3D looks like:
 
-{% embed_chart standard-charts-multi-series-charts-example-2.js %}
+{% embed_all standard-charts-multi-series-charts-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/3x4xcn70/) to edit the above multi-series chart.
 
@@ -53,7 +53,7 @@ To render a multi-series bar chart in 2D, set the `type` to `msbar2d`.
 
 A multi-series bar 2D chart looks like:
 
-{% embed_chart standard-charts-multi-series-charts-example-3.js %}
+{% embed_all standard-charts-multi-series-charts-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/H92Sx/) to edit the above multi-series chart.
 
@@ -63,7 +63,7 @@ To render a multi-series bar chart in 3D, change the value of the `type` attribu
 
 The multi-series bar chart in 3D looks like:
 
-{% embed_chart standard-charts-multi-series-charts-example-4.js %}
+{% embed_all standard-charts-multi-series-charts-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/X9xPM/) to edit the above multi-series chart.
 
@@ -75,7 +75,7 @@ To render a multi-series line chart, set the `type` to `msline`.
 
 A multi-series line chart looks like:
 
-{% embed_chart standard-charts-multi-series-charts-example-5.js %}
+{% embed_all standard-charts-multi-series-charts-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/T5C6h/) to edit the above multi-series chart.
 
@@ -85,7 +85,7 @@ To render a multi-series area chart the same use case as above, set the `type` t
 
 A multi-series area chart looks like:
 
-{% embed_chart standard-charts-multi-series-charts-example-6.js %}
+{% embed_all standard-charts-multi-series-charts-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/jf73mv1e/) to edit the above multi-series chart.
 

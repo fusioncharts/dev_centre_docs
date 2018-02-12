@@ -35,6 +35,8 @@ The FusionCharts Suite XT multi-axis line chart includes the following features:
 
     * Number formatting
 
+## Create a Multi-Axis Line chart
+
 Let's create our first multi-axis line which will showcase the revenue analysis Harry's SuperMart depending on the revenue, orders and footfall for 12 weeks. 
 
 To create a multi-axis line chart, set the `type` attribute to `multiaxisline`.

@@ -128,7 +128,7 @@ For a detailed list of attributes refer to the API reference page of trend-line 
 
 A quarterly sales summary chart rendered with a trend-line to show the target value looks like this:
 
-{% embed_all standard-charts-line-area-and-column-charts-example-7.js %}
+{% embed_chart standard-charts-line-area-and-column-charts-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/aktyv9jm/) to edit the column chart.
 
@@ -136,7 +136,7 @@ Click [here](http://jsfiddle.net/fusioncharts/aktyv9jm/) to edit the column char
 
 A quarterly sales summary chart rendered with a trend-zone to show a range of target values looks like this:
 
-{% embed_all standard-charts-line-area-and-column-charts-example-8.js %}
+{% embed_chart standard-charts-line-area-and-column-charts-example-8.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/6cq0uafp/) to edit the column chart.
 
@@ -171,7 +171,7 @@ For a detailed list of attributes refer to the API reference page of vertical li
 
 A line chart rendered with a vertical line looks like this:
 
-{% embed_all standard-charts-line-area-and-column-charts-example-9.js %}
+{% embed_chart standard-charts-line-area-and-column-charts-example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/cdjco7hq/) to edit the above chart.
 
@@ -183,7 +183,7 @@ FusionCharts Suite XT allows you to change the chart type dynamically through it
 
 An example of a chart, where you can dynamically change the chart type, looks like this:
 
-{% embed_all standard-charts-line-area-and-column-charts-example-10.js %}
+{% embed_chart standard-charts-line-area-and-column-charts-example-10.js %}
 
 ## Set Data Skipping
 

@@ -134,7 +134,7 @@ Refer to the code given below:
 
 An error bar chart, after customizing the error bars, looks like this:
 
-{% embed_all standard-charts-error-charts-example-4.js %}
+{% embed_chart standard-charts-error-charts-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/fumzvpw3/) to edit the above chart.
 
@@ -179,6 +179,6 @@ Refer to the code given below:
 
 An error scatter chart, after customizing the error bars, looks like:
 
-{% embed_all standard-charts-error-charts-example-5.js %}
+{% embed_chart standard-charts-error-charts-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/e4rvjc37/) to edit the above error scatter chart.

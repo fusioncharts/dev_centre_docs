@@ -47,7 +47,7 @@ Refer to the code given below:
 ```
 A step line chart rendered without the vertical joins looks like this:
 
-{% embed_all standard-charts-step-line-charts-example-2.js %}
+{% embed_chart standard-charts-step-line-charts-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/5dm09d7y/) to edit the step line chart.
 
@@ -73,7 +73,7 @@ Refer to the code given below:
 ```
 A step line chart rendered with the forward progressive mode disabled looks like this:
 
-{% embed_all standard-charts-step-line-charts-example-3.js %}
+{% embed_chart standard-charts-step-line-charts-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/sdhbwv98/) to edit the step line chart.
 

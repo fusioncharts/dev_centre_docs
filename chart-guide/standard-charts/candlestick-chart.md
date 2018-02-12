@@ -25,6 +25,8 @@ The FusionCharts Suite XT candlestick chart offers you a powerful and interactiv
 
 * Option to draw vertical indicator lines at any point on the x-axis.
 
+## Create a Candlestick chart
+
 As an example, we will create a candlestick chart that shows the daily stock price for Harry's SuperMart (stock name HRYS) for the last two months.
 
 To create a candlestick chart, set the `type` attribute to `candlestick`. Some more attributes which helps in creating the chart are:
@@ -86,7 +88,7 @@ Refer to the code given below:
 
 A candlestick chart with the price chart rendered as a line chart looks like this:
 
-{% embed_all standard-charts-candlestick-chart-example-2.js %}
+{% embed_chart standard-charts-candlestick-chart-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/b3xfLrmg/) to edit the candlestick chart.
 
@@ -115,7 +117,7 @@ Refer to the code given below:
 
 A candlestick chart looks like:
 
-{% embed_all standard-charts-candlestick-chart-example-3.js %}
+{% embed_chart standard-charts-candlestick-chart-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/b3xfLrmg/) to edit the candlestick chart.
 
@@ -142,7 +144,7 @@ Refer to the code given below:
 
 A candlestick chart rendered with the volume chart hidden looks like this:
 
-{% embed_all standard-charts-candlestick-chart-example-4.js %}
+{% embed_chart standard-charts-candlestick-chart-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/urzeqo6d/) to edit the candlestick chart.
 
@@ -202,7 +204,7 @@ For a detailed list of attributes you can check the API reference page of candle
 
 A candlestick chart rendered with a trend-set looks like this:
 
-{% embed_all standard-charts-candlestick-chart-example-5.js %}
+{% embed_chart standard-charts-candlestick-chart-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/hqvpoLrm/) to edit the candlestick chart.
 

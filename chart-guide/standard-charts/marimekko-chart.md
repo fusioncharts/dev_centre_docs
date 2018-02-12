@@ -15,6 +15,8 @@ The following three dimensions of marketing data can be represented using a Mari
 
 * Individual share of competitors in a market segment
 
+## Create a Marimekko chart
+
 Let's create a simple Marimekko chart that shows the top 3 Electronic Brands (Bose, Dell, and Apple) in the top 3 revenue earning states (California, Washington, and Nevada).
 
 The Marimekko chart shown below, when seen in the default mode, helps you instantly figure out the following:
@@ -72,11 +74,11 @@ Refer to the code given below:
 
 A Marimekko chart rendered with actual values instead of percentage values looks like this:
 
-{% embed_all standard-charts-marimekko-chart-example-2.js %}
+{% embed_chart standard-charts-marimekko-chart-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/btfhoayu/) to edit the marimekko chart.
 
-## **Hide the total value of market segments**
+## Hide the total value of market segments
 
 By default, the total value of a market segment for a competitor is rendered at the top of each column.
 
@@ -101,7 +103,7 @@ Refer to the code given below:
 
 A Marimekko chart with the total value of market segments hidden looks like this:
 
-{% embed_all standard-charts-marimekko-chart-example-3.js %}
+{% embed_chart standard-charts-marimekko-chart-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/m02om320/) to edit the marimekko chart.
 
@@ -126,7 +128,7 @@ Refer to the code given below:
 
 A Marimekko chart with the percentage labels on the x-axis hidden looks like this:
 
-{% embed_all standard-charts-marimekko-chart-example-4.js %}
+{% embed_chart standard-charts-marimekko-chart-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/vvk1of9j/) to edit the marimekko chart.
 

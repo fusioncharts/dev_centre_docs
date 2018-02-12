@@ -7,6 +7,8 @@ breadcrumb: [["Home", "/"], ["Zoom Line Chart"]]
 
 The FusionCharts Suite XT zoom line chart is a special type of multi-series line chart that allows analysis of data at macroscopic and microscopic levels. It can easily plot thousands of data points, which can produce indecipherable results if plotted on an ordinary line chart.
 
+## Create a Zoomline chart
+
 As an example, we will create a zoom line chart that plots the number of unique website visits to the harrysfoodmart.com and the harrysfashion.com websites for every day of the last year.
 
 To create a zoom line chart, set the `type` attribute to `zoomline`.
@@ -52,7 +54,7 @@ Refer to the code given below:
 
 A zoom line chart with the maximum number of labels limited looks like this:
 
-{% embed_all standard-charts-zoom-line-charts-example-2.js %}
+{% embed_chart standard-charts-zoom-line-charts-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/t19c4y4e/) to edit the zoomline chart.
 
@@ -83,7 +85,7 @@ Refer to the code given below:
 
 A zoom line chart with the distance between the consecutive data plots configured looks like this:
 
-{% embed_all standard-charts-zoom-line-charts-example-3.js %}
+{% embed_chart standard-charts-zoom-line-charts-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/v60znb4c/) to edit the zoomline chart.
 
@@ -112,7 +114,7 @@ Refer to the code given below:
 
 A zoom line chart with the criteria for anchor display defined looks like this:
 
-{% embed_all standard-charts-zoom-line-charts-example-4.js %}
+{% embed_chart standard-charts-zoom-line-charts-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/9nkgfaho/) to edit the zoomline chart.
 
@@ -146,7 +148,7 @@ Refer to the code given below:
 ```
 A zoom line chart rendered with pre-selected number of data plots looks like this:
 
-{% embed_all standard-charts-zoom-line-charts-example-5.js %}
+{% embed_chart standard-charts-zoom-line-charts-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/2fqud5w1/) to edit the zoomline chart.
 
@@ -183,6 +185,8 @@ Following is the lists some of the customization attributes that are exclusive t
 * Set the hex code to `scrollColor` attribute to specify the color for the scroll bar.
 
 * Specify the height of the scroll bar using `scrollHeight` attribute.
+
+**LIVE CHART** **CODE**
 
 ## Zoom-line dual y-axis chart
 

@@ -137,7 +137,7 @@ Refer to the code given below:
 ```
 A combination chart rendered with two trend-lines looks like this:
 
-{% embed_all standard-charts-combination-chart-example-4.js %}
+{% embed_chart standard-charts-combination-chart-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/pj4koo6s/) to edit the combination chart.
 
@@ -148,7 +148,6 @@ You can choose to swap positions of the primary and secondary axes using a singl
 Refer to the code given below:
 
 ```
-
 {
 
   "chart": {
@@ -165,6 +164,6 @@ Refer to the code given below:
 
 A combination chart rendered with the positions of the axes swapped looks like this:
 
-{% embed_all standard-charts-combination-chart-example-5.js %}
+{% embed_chart standard-charts-combination-chart-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/b0jw9h1L/) to edit the combination chart.

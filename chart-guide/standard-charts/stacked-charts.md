@@ -43,7 +43,7 @@ For a detailed list of attributes you can check the API reference page of stacke
 
 The stacked column 2D chart thus created looks like this:
 
-{% embed_chart standard-charts-stacked-charts-example-1.js %}
+{% embed_all standard-charts-stacked-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/15zbv887/) to edit the stacked column 2D chart.
 
@@ -53,7 +53,7 @@ To render a stacked column chart in 3D, change the value of the `type` attribute
 
 A stacked column chart in 3D looks like:
 
-{% embed_chart standard-charts-stacked-charts-example-2.js %}
+{% embed_all standard-charts-stacked-charts-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/z14fubaq/) to edit the stacked column 3D chart.
 
@@ -63,7 +63,7 @@ To render a stacked area chart in 2D, change the value of the `type` attribute f
 
 A stacked area chart in 2D looks like:
 
-{% embed_chart standard-charts-stacked-charts-example-3.js %}
+{% embed_all standard-charts-stacked-charts-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/3RYK6/) to edit the stacked area 2D chart.
 
@@ -73,7 +73,7 @@ To render a stacked bar chart in 2D, change the value of the `type` attribute fr
 
 A stacked bar chart in 2D looks like:
 
-{% embed_chart standard-charts-stacked-charts-example-4.js %}
+{% embed_all standard-charts-stacked-charts-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/obga4uw9/) to edit the stacked bar 2D chart.
 
@@ -83,7 +83,7 @@ To render a stacked bar chart in 3D, change the value of the `type` attribute fr
 
 A stacked bar chart in 3D looks like:
 
-{% embed_chart standard-charts-stacked-charts-example-5.js %}
+{% embed_all standard-charts-stacked-charts-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/L6gg6ow3/) to edit the stacked bar 3D chart.
 

@@ -17,7 +17,7 @@ For a detailed list of attributes you can check the API reference page of pie ch
 
 The pie 2D chart for the above code looks like:
 
-{% embed_chart standard-charts-pie-and-doughnut-charts-example-1.js %}
+{% embed_all standard-charts-pie-and-doughnut-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/hLhjhft8/) to edit the pie 2D chart.
 
@@ -27,7 +27,7 @@ To render a pie chart in 3D, change the value of the `type` attribute from `pie2
 
 A pie chart in 3D looks like :
 
-{% embed_chart standard-charts-pie-and-doughnut-charts-example-2.js %}
+{% embed_all standard-charts-pie-and-doughnut-charts-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/uq2muq97/) to edit the pie 3D chart.
 
@@ -43,7 +43,7 @@ For a detailed list of attributes you can check the API reference page of doughn
 
 The doughnut 2D chart for the above code looks like:
 
-{% embed_chart standard-charts-pie-and-doughnut-charts-example-3.js %}
+{% embed_all standard-charts-pie-and-doughnut-charts-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/wYj95/) to edit the doughnut 2D chart.
 
@@ -53,7 +53,7 @@ To render a doughnut chart in 3D, change the value of the `type` attribute from 
 
 A doughnut chart in 3D looks like :
 
-{% embed_chart standard-charts-pie-and-doughnut-charts-example-4.js %}
+{% embed_all standard-charts-pie-and-doughnut-charts-example-4.js %}
 
 Click [here](http://jsfiddle.net/wYj95/2965/) to edit the doughnut 3D chart.
 
@@ -81,7 +81,7 @@ Refer to the code given below:
 
 A pie chart configured to animate in the clockwise direction is shown below. Click the **Refresh** button in the **bottom-right corner** of the chart to see the animation direction.
 
-GIF
+**SAMPLE**
 
 Click here to edit the above chart.
 
@@ -369,7 +369,6 @@ Refer to the code given below:
     "slicingDistance": "10"
   },
 }
-
 ...
 
 ```

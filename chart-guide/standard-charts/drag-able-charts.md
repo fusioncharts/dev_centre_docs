@@ -232,7 +232,7 @@ events: {
 
 A drag-able area chart configured to manage chart limits using JavaScript API looks like:
 
-{% embed_all standard-charts-drag-able-charts-example-4.js %}
+{% embed_chart standard-charts-drag-able-charts-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/r8fgby9g/) to edit the above drag-able chart.
 
@@ -272,7 +272,7 @@ Refer to the code given below:
 
 A drag-able column chart configured for snapping to the nearest div interval looks like this:
 
-{% embed_all standard-charts-drag-able-charts-example-5.js %}
+{% embed_chart standard-charts-drag-able-charts-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/oq5vqv7n/) to edit the above drag-able chart.
 
@@ -282,7 +282,7 @@ A drag-able column 2D chart can be configured to retrieve JSON data and render i
 
 The chart retrieving datasets looks like this:
 
-{% embed_all standard-charts-drag-able-charts-example-6.js %}
+{% embed_chart standard-charts-drag-able-charts-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/d6cLm0em/) to edit the above drag-able chart.
 
@@ -300,7 +300,7 @@ The `getDataWithID()` function returns a three-dimensional array that contains t
 
 A drag-able column chart configured to retrieve data using the `getDataWithID()` function looks like this:
 
-{% embed_all standard-charts-drag-able-charts-example-7.js %}
+{% embed_chart standard-charts-drag-able-charts-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/cvcn499t/) to edit the above drag-able chart.
 
@@ -342,6 +342,6 @@ Thus, the array returned by the `getData()` function is a two-dimensional array 
 
 A drag-column chart configured to retrieve data using the `getData()` method looks like this:
 
-{% embed_all standard-charts-drag-able-charts-example-8.js %}
+{% embed_charts standard-charts-drag-able-charts-example-8.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/qzm79rsv/) to edit the above drag-able chart.
