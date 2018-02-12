@@ -13,22 +13,24 @@ This section talks about using these predefined palettes.
 
 Palette 1 is the default chart palette. A chart with `palette` set as `1` looks as below:
 
-<chart>
+{% embed_chart chart-configurations-chart-palettes-example-1.js %}
 
 Shown below is the same chart with the other four predefined palettes applied to it:
 
 `palette` set as `2`
 
-<chart>
+{% embed_chart chart-configurations-chart-palettes-example-2.js %}
 
 `palette` set as `3`
 
-<chart>
+{% embed_chart chart-configurations-chart-palettes-example-3.js %}
 
 `palette` set as `4`
 
-<chart>
+{% embed_chart chart-configurations-chart-palettes-example-4.js %}
 
 `palette` set as `5`
 
-<chart>
+{% embed_chart chart-configurations-chart-palettes-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/umb4jjwp/) to update the palettes on your own.
