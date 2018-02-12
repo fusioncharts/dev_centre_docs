@@ -7,27 +7,21 @@ breadcrumb: [["Home", "/"], ["Data Values"]]
 
 Data values are plot values i.e. values of each data plot (line, column, bar, pie) displayed on the chart. 
 
+![Data Values]({% site.baseurl %}/images/chart-configurations-data-values-image-1.png)
+
 ## Configure text labels instead of numeric data values
 
 Instead of displaying numeric data values, you can use text labels to denote data values for each data item. Specify the text you want to display using the `displayValue` attribute under `data` within the particular data plot. Refer to the code below:
 
 ```
-
 {
     "chart": {
-        "theme": "fint",
-        "caption": "Quarterly Revenue",
-        "subcaption": "Last year",
-        "xAxisName": "Quarter",
-        "yAxisName": "Amount (In USD)",
-        "numberPrefix": "$"
+        ...
     },
     "data": [
         {
             "label": "Q1",
-            "value": "1950000",
-
-            "displayValue": "Year's best"
+            "value": "1950000"
         },
         {
             "label": "Q2",
@@ -36,40 +30,49 @@ Instead of displaying numeric data values, you can use text labels to denote dat
         {
             "label": "Q3",
             "value": "1730000"
-        },
+        }, 
         {
             "label": "Q4",
-            "value": "2120000"
-          
+            "value": "2120000",
+            //Custom display string
+            "displayValue": "Year's best"
         }
     ]
 }
-
- ```
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-values-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/kzqrpah6/) to edit the above chart.
 
 ## Rotate data values
 
 By default, the data values appear horizontally as shown in the chart below:
 
-<chart>
+{% embed_chart chart-configurations-data-values-example-2.js %}
 
-You can opt to rotate the data values vertically. Set the `rotateValues` to `1` under the `chart` object. Refer to the code below:
+Click [here](http://jsfiddle.net/fusioncharts/7stgpskq/) to edit the above chart.
+
+You can opt to rotate the data values horizontally. Set the `rotateValues` to `0` under the `chart` object. The default value of this attribute is `1`.
+
+Refer to the code below:
 
 ``
 {
     "chart": {
         ...
-        "rotateValues": "1"
-    },
- ```
+        "rotateValues": "0"
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-values-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/c8co0Lgv/) to edit the above chart.
 
 ## Display data values outside columns
 
@@ -79,13 +82,16 @@ By default, the data values are displayed within the column data plots. Set the 
 {
     "chart": {
         "...
-        "placeDataValues": "0"
-    },
- ```
+        "placeValuesInside": "0"
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-values-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/hpf7h7wr/) to edit the above chart.
 
 ## Show/hide data values
 
@@ -96,12 +102,15 @@ By default, all the data values are displayed. Set the `showValues` attribute to
     "chart": {
         "...
         "showValues": "0"
-    },
- ```
+    }
+}
+```
 
 The chart will look like as shown in  the image below:
 
-<chart>
+{% embed_chart chart-configurations-data-values-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/uezpdfff/) to edit the above chart.
 
 You can also opt to show/hide specific  data values instead of hiding all of them. Set the `showValue` attribute to `0` under the `data` for that specific data value which you want to hide. This setting overrides the `showValues` setting at the chart object level. 
 
@@ -109,7 +118,7 @@ Refer to the code below:
 
 ```
 {
-    "chart"**:** {
+    "chart": {
         ...
         "showValues": "0"
     },
@@ -118,8 +127,16 @@ Refer to the code below:
             "label": "Q1",
             "value": "1950000",
             "showValue": "1"
-        },
- ```
+        }
+    ]
+}
+```
+
+The chart looks like as shown below:
+
+{% embed_chart chart-configurations-data-values-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/gs43rmof/) to edit the above chart.
 
 ### Skip y-axis values
 
@@ -135,13 +152,16 @@ Refer to the code below:
 {
     "chart": {
         ...
-        "yAxisValuesStep": "3"
-    },
-     ```
+        "yAxisValuesStep": "2"
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-values-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ekseaedo/) to edit the above chart.
 
 ## Customize data value properties
 
@@ -175,14 +195,17 @@ Refer to the code below:
         "valueFontColor": "#6699cc",
         "valueFontSize": "12",
         "valueFontBold": "1",
-        "valueFontItalic": "0"
-    },
-
-     ```
+        "valueFontItalic": "0",
+        "valueFontAlpha": "90"
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-values-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/e8a91fty/) to edit the above chart.
 
 ### Customize data value border
 
@@ -217,15 +240,16 @@ Refer to the code below:
         "valueBorderThickness": "0.5",
         "valueBorderDashed": "1",
         "valueBorderDashLen": "4",
-        "valueBorderDashGap": "2",
-        "valueFontSize": "11"
-    },
-
-     ```
+        "valueBorderDashGap": "2"
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-values-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/k8u7ront/) to edit the above chart.
 
 ### Customize data value background
 
@@ -239,8 +263,19 @@ To customize the background of the data  values the following attributes are use
 
 Refer to the code below:
 
-**INSERT CODE**
+```
+{
+    "chart": {
+        ...
+        "valueBgColor": "#666666",
+        "valueBgAlpha": "100",
+        "valueBgHoverAlpha": "5"
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-values-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/71x4njh2/) to edit the above chart.
