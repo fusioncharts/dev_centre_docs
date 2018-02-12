@@ -7,7 +7,7 @@ breadcrumb: [["Home", "/"], ["Data Labels"]]
 
 Data labels are the names of the data points that are displayed on the x-axis of a chart. 
 
-<image>
+![Data Labels]({% site.baseurl %}/images/chart-configurations-data-labels-image-1.png)
 
 In this article, we will learn how to customize the display of the data labels.
 
@@ -18,20 +18,6 @@ You can configure the arrangement and display properties for data labels using t
 ### Auto Mode
 
 In this mode, the chart automatically chooses the most appropriate display mode for data labels - depending on space availability. If the number of data labels is greater than the available space, then the data labels are either truncated (with ellipses to indicate truncation), wrapped, or rotated. On hovering over a truncated data label, a tooltip showing the full label text is displayed. The auto mode is active by default, but can be disabled by switching to an alternative label display mode.
-
-Refer to the code below:
-
-```
-{
-    "chart": {
-       ...
-        "labelDisplay": "Auto",
-    },
- ```
-
-The chart will look like as shown below:
-
-<chart - two images one truncated one not>
 
 In auto mode, you can set whether the long data labels be truncated by adding ellipses using the `useEllipsesWhenOverflow` attribute. By default, this attribute is set to `1` in order to prevent the long labels from overflowing the chart background. 
 
@@ -44,15 +30,16 @@ Refer to the code below:
     "chart": {
        ...
         "labelDisplay": "Auto",
-
         "useEllipsesWhenOverflow":"0",
-    },
-
- ```
+    }
+}
+```
 
 The chart will look like as shown in the image below:
 
-<chart>
+{% embed_chart chart-configurations-data-labels-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/h5d6xwyo/) to edit the above chart.
 
 ### Wrap Mode
 
@@ -69,7 +56,9 @@ In this mode, you can wrap long x-axis labels into multiple lines. If enough spa
 
 The chart with wrapped labels will look like as shown below:
 
-<chatrt>
+{% embed_chart chart-configurations-data-labels-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/uofvvvv3/) to edit the above chart.
 
 > In horizontal bar charts, you can specify the maximum % of available width for data labels with the `**maxLabelWidthPercent`** attribute. This attribute takes a value between `**5`** and `**80`**.
 
@@ -87,7 +76,9 @@ Set the `labelDisplay` attribute as `rotate` to view the data labels in rotate m
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-labels-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/11umogjk/) to edit the above chart.
 
 While viewing the labels in rotate mode you can also slant the labels for better visibility if required. Set the `slantLabel` attribute to `1` and the axis labels will be slanted to 45 degrees.
 
@@ -100,14 +91,16 @@ Refer to the code below:
     "chart": {
        ...
         "labelDisplay": "rotate",
-        "slantLables": "1"
+        "slantLabel": "1"
     },
 
  ```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-labels-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/mxceLe0k/) to edit the above chart.
 
 > In case of Scatter and Bubble charts, when the attribute** `xAxisLabelMode`** is set to `auto`, slanting of the X-axis labels is not applicable
 
@@ -125,7 +118,9 @@ In this mode, data labels are distributed on multiple levels (default is 2) to i
  ```
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-labels-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/z7L18vvh/) to edit the above chart.
 
 To change the distribution levels (default is 2) specify the level using the `staggerLines` attribute. Refer to the code below:
 
@@ -141,7 +136,9 @@ To change the distribution levels (default is 2) specify the level using the `st
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-labels-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/pdbq2gmr/) to edit the above chart.
 
 ### N-th Label Mode
 
@@ -157,7 +154,9 @@ If your data plot consists of values representing continuous quantities such as 
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-labels-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/Lsrdd84a/) to edit the above chart.
 
 ## Show/hide data all data labels
 
@@ -167,19 +166,21 @@ To hide the data labels set the `showLabels` attribute to `0` within the `chart`
 {
     "chart": {
        ...
-        "showLables": "0",               
+        "showLabels": "0",               
     },
  ```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-labels-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/fe1awqLn/) to edit the above chart.
 
 ## Hide specific data labels
 
 By default, all the data labels are displayed. You can opt to hide specific data values using the `showLabel` attribute within `data` under `chart` object. 
 
- ```
+```
 {
     "chart": {
         "caption": "Quarterly Revenue",
@@ -201,24 +202,28 @@ By default, all the data labels are displayed. You can opt to hide specific data
             **"showLabel": "0"**
         },
 ...
- ```
+```
 In the above code, we have set the `showLabel` attribute for **Quarter 2** to `0`. So, the chart will not display the label for that value. The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-labels-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/bv5f703k/) to edit the above chart.
 
 ## Label management: line and area charts
 
 With label management, you can adjust the canvas padding (the space between the canvas border and the position where the data plot begins and ends) to accommodate long labels in line and area charts. This ensures that the first and last x-axis labels are not rendered outside the canvas border and the labels don't overlap each other.
 
-<image>
+![Label Management]({% site.baseurl %}/images/chart-configurations-data-labels-image-2.png)
 
 To accommodate long labels, the chart automatically adjusts the right and left canvas margins. A line 2D chart with automatic canvas padding set for label management looks like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-labels-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/3qoyzms4/) to edit the above chart.
 
 Specify the space between the canvas border and first (& last data plots) using the `canvasPadding` attribute. Refer to the code below:
 
- ```
+```
 {
     "chart": {
         "caption": "Quarterly Revenue",
@@ -230,13 +235,15 @@ Specify the space between the canvas border and first (& last data plots) using 
         "theme": "fint"
     },
 
- ```
+```
 
 > If you set it `0` the first and the last anchor points will be on the canvas border.
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-labels-example-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/m11nsrja/) to edit the above chart
 
 Advanced x-axis label management has been implemented to achieve the following objectives:
 
@@ -274,28 +281,27 @@ To customize the font properties of the data labels the following attributes are
 
 Refer to the code below:
 
- ```
+```
 {
     "chart": {
        ...
         "labelFont": "Arial",
         "labelFontColor": "0075c2",
         "labelFontSize": "15",
-
-       "labelFontBold":"1",
-
-       "LableFontItalic":"1",
-
+        "labelFontBold":"1",
+        "lableFontItalic":"1",
         "labelFontAlpha":"70"
-    },
-
+    }
+}
 ...
 
- ```
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-labels-example-12.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/jcd7wv2x/) to edit the above chart.
 
 ### Border properties
 
@@ -319,32 +325,28 @@ To customize the border of the data labels the following attributes are used:
 
 Refer to the code below:
 
- ```
-
+```
 {
-    "chart": {
-       
+    "chart": {    
         "labelBorderPadding": "5",
         "labelBorderRadius": "2",
         "labelBorderDashed": "1",
-
         "labelBorderDashGap": "2",
-
         "labelBorderDashLen": "3",
-
         "labelBorderThickness": "2",
         "labelBorderColor": "#00ffaa",
         "labelBorderAlpha": "60"
-
-    },
-
+    }
+}
 ...
 
- ```
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-labels-example-13.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/qvjdz1Lw/) to edit the above chart.
 
 ### Background properties
 
@@ -356,47 +358,47 @@ To change the background of the data lablels the following attributes are used:
 
 Refer to the code below:
 
- ```
-
+```
 {
     {
     "chart": {
-              "labelBgColor": "eeeeee",
-
-              "labelBgAlpha":"30"
-    },
-…
-
- ```
+        "labelBgColor": "eeeeee",
+        "labelBgAlpha":"30"
+    }
+}    
+...
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-labels-example-14.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/usa7yuo1/) to edit the above chart.
 
 ## Configure height of the data label
 
 Shown below is a chart with some very long data labels, where the data plots are getting reduced to a fraction of the chart.
-
-<chart>
 
 You can limit the maximum height of the data labels using the `maxLabelHeight` attribute. This will truncate the data labels (add ellipsis) according to the maximum height set. 
 
 Refer to the code below:
 
 ```
-
 {
     {
     "chart": {
-             "maxLabelHeight"**:** "50",
+             "maxLabelHeight": "50",
 ...
-    },
-    ...
- ```
+    }
+}    
+...
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-labels-example-15.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/0zufrdbb/) to edit the above chart.
 
 ## Add links to data labels
 
@@ -407,13 +409,14 @@ You can add links to the data labels. Set the link you want to add to the data l
 {
     {
     "chart": {
-             "labelLink": "http://www.fusioncharts.com/",
-
+        "labelLink": "http://www.fusioncharts.com/"
+    }
+}
 ...
-    },
-    ...
- ```
+```
 
 The chart with data label linked will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-labels-example-16.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ferd2app/) to edit the above chart.
