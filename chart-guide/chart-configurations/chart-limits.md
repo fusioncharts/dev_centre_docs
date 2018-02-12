@@ -33,7 +33,9 @@ Refer  to the code below:
 
 The chart with custom y-axis limits will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-chart-limits-example-5.js %}
+
+Click here to edit the above chart.
 
 ## Set y-axis minimum value based on data values
 

@@ -5,9 +5,13 @@ heading: Canvas
 breadcrumb: [["Home", "/"], ["Canvas"]]
 ---
 
-Chart canvas refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered. The blue coloured area shown in the chart below is the canvas area:
+Chart canvas refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.
 
-<chart>
+The blue coloured area shown in the chart below is the canvas area:
+
+{% embed_chart chart-configurations-canvas-example-1.js %}
+
+Click here to edit the above chart.
 
 We will learn how to customize different properties of the canvas.
 
@@ -31,13 +35,16 @@ Refer to the code below:
         "showAlternateHGridColor": "0",
         "bgColor": "#eeeeee",
         "theme": "fint"
-    },
+    }
+}
 
 ```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-canvas-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/qx1djybc/) to edit the above chart.
 
 ## Customize canvas border
 
@@ -57,24 +64,21 @@ Refer to the code below:
  {
     "chart": {
        …
-
         "showCanvasBorder":"1",
-
         "canvasBorderThickness": "1",
-
-         " canvasBorderColor":"'666666",
-
-         "canvasBorderThickness":"1",
-
-         "canvasBorderAlpha":"80"
-       
-    },
+        " canvasBorderColor":"'666666",
+        "canvasBorderThickness":"1",
+        "canvasBorderAlpha":"80"
+    }
+}
 
 ```
 
 The chart will look like as shown below:
 
-**<CHART>**
+{% embed_chart chart-configurations-canvas-example-3.js %}
+
+Click [here]() to edit the above chart.
 
 ## Use gradient fill
 
@@ -103,7 +107,9 @@ Refer to the code below:
 
 Below is a sample chart with a gradient filled chart canvas:
 
-<chart>
+{% embed_chart chart-configurations-canvas-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/yngu2v81/) to edit the above chart.
 
 ## Configure the 3D effect
 
@@ -137,5 +143,6 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-canvas-example-5.js %}
 
+Click [here](http://jsfiddle.net/fusioncharts/xmtdue42/) to edit the above chart.
