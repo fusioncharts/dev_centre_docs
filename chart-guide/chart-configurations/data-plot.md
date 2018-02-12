@@ -18,12 +18,7 @@ Refer to the code below:
 ```
 {
     "chart": {
-        "caption": "Monthly Revenue",
-        "subCaption": "Last year",
-        "xAxisName": "Month",
-        "yAxisName": "Amount (In USD)",
-        "numberPrefix": "$",
-        "theme": "fint"
+        ...
     },
     "data": [
         {
@@ -89,12 +84,13 @@ Refer to the code below:
     ]
 }
 
-
- ```  
+```  
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-plot-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/2kayhgmk/) to edit the above chart.
 
 ### Different data series/data plots
 
@@ -104,20 +100,18 @@ Specify your own palette for data plots by providing a list of hex colors using 
 
 ```
 {
-
-  "chart":{
-
-   ...
-
+    "chart":{
+    ...
     "palettecolors":"FF5904,0372AB,FF0000"
-
-  },
-
- ```
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-plot-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/j7cbwm5o/) to edit the above chart.
 
 ## Gradient effects for data plots
 
@@ -134,19 +128,19 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
+        ...
         "usePlotGradientColor": "1",
-
         "plotGradientColor":"#ffffff"
-
-...
-    },
-
- ```
+        ...
+    }
+}    
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-plot-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/b781gp10/) to edit the above chart.
 
 ### Customize gradient properties
 
@@ -163,21 +157,21 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
+        ...
         "usePlotGradientColor": "1",
         "plotGradientColor": "#003366",
         "plotFillAngle": "0",
-
         "plotFillAlpha": "90",
-
         "plotFillRatio": "0,100"
-    },
-
- ```
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-plot-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/p26mehrm/) to edit the above chart.
 
 ## Show/hide plot border
 
@@ -185,20 +179,20 @@ Every data plot (column, area, or pie) has a border by default.Set the `showPlot
 
 Refer to the code below:
 
- ```
-
+```
 {
     "chart": {
-       ...
-        "showPlotBorder": "0",
-       
+        ...
+        "showPlotBorder": "0"
     },
+}
+```
 
- ```
+The chart will look like as shown below:
 
- The chart will look like as shown below:
+{% embed_chart chart-configurations-data-plot-example-5.js %}
 
-<chart>
+Click [here](http://jsfiddle.net/fusioncharts/bofsxted/) to edit the above chart.
 
 ## Dashed data plot border
 
@@ -210,22 +204,31 @@ You can set a dashed border for the data plot and can also customize dash-length
 
 * `plotBorderDashGap` -  Set the gap between two consecutive dashes in plot border (in pixels). 
 
+* `plotBorderThickness` - Set the thickness of the plot border.
+
+* `plotBorderColor` - Set the hex color code of the plot border.
+
 Refer to the code below:
 
  ```
 {
     "chart": {
         ...
+        "showPlotBorder": "1",
         "plotBorderDashed": "1",
         "plotBorderDashLen": "4",
         "plotBorderDashGap": "4",
+        "plotBorderThickness": "1",
+        "plotBorderColor": "#000000"
     },
-
- ```
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-plot-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/3dmmvjzL/) to edit the above chart.
 
 The above attributes are used in the `chart` object which affects globally. You can also use dashed plot borders for specific data plots instead of the whole chart data plots. To do so, use the following attributes within `data` under the `chart` object:
 
@@ -244,23 +247,23 @@ Refer to the code below:
     "chart": {
         ...
     },
-    "data": [
-        {
-            "label": "Q1",
-            "value": "1950000"
-
-            "Dashed": "1",
-            "DashLen": "4",
-            "DashGap": "4",
-        },
-
+    "data": [{
+        "label": "Q1",
+        "value": "1950000",
+        "Dashed": "1",
+        "DashLen": "4",
+        "DashGap": "4",
+    }]
+}
 ...
 
- ```
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-plot-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/0uq53Leq/) to edit the above chart.
 
 ## Round edges
 
@@ -271,15 +274,18 @@ Refer to the code below:
  ```
 {
     "chart": {
-       "useRoundEdges":"1"
-    },
+        "useRoundEdges":"1"
+    }
+}
 ...
 
- ```
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-data-plot-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/95kbo47f/) to edit the above chart.
 
 ## Plot hover effects
 
@@ -308,41 +314,41 @@ Refer to the code below:
  ```
 {
     "chart": {
-        …
-
+        ...
         "plotHoverEffect":"1",
-
         "plotFillHoverColor":"#00ffaa",
         "plotBorderHoverThickness": "1",
         "plotBorderHoverDashed": "1",
         "plotBorderHoverDashLen": "6",
         "plotBorderHoverDashGap": "2"
-    },
+    }
+}
 ...
-
- ```
+```
 
 Shown below is a chart with hover effects enabled:
 
-<charts>
+{% embed_chart chart-configurations-data-plot-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/znr9r87z/) to edit the above chart.
 
 You can also apply hover effects for individual data plots instead of applying them for all the data plots. To do so, you have to set the attributes within `data` for individual values. The attributes are: 
 
-* `HoverColor` - Set the hover color for data plots in hex code format, e.g. `#00ffaa`.
+* `hoverColor` - Set the hover color for data plots in hex code format, e.g. `#00ffaa`.
 
-* `HoverAlpha` - Set the transparency for hover color for data plots. 
+* `hoverAlpha` - Set the transparency for hover color for data plots. 
 
-* `BorderHoverColor` - Set the hover border color in hex code format, e.g. `#00ffaa`.
+* `borderHoverColor` - Set the hover border color in hex code format, e.g. `#00ffaa`.
 
-* `BorderHoverAlpha` - Set the transparency of hover border for data plots.
+* `borderHoverAlpha` - Set the transparency of hover border for data plots.
 
-* `BorderHoverThickness` - Set the hover border thickness (in pixels).
+* `borderHoverThickness` - Set the hover border thickness (in pixels).
 
 * `borderHoverDashed` - Set this to `1` to make data plot borders appear dashed on hover. 
 
-* `BorderHoverDashLen` - Set the length of each dash for all data plots on hover (in pixels).
+* `borderHoverDashLen` - Set the length of each dash for all data plots on hover (in pixels).
 
-* `BorderHoverDashGap` - Set the gap between two consecutive dashes for all data plots on hover(in pixels).
+* `borderHoverDashGap` - Set the gap between two consecutive dashes for all data plots on hover(in pixels).
 
 > All the above attributes will work only if `plotHoverEffect` is set to `1` under the chart object.
 
@@ -351,36 +357,24 @@ Refer to the code below:
 ```
 {
     "chart": {
-        …
-
-        "plotHoverEffect":"1",
-
         ...
+        "plotHoverEffect":"1"
     },
-
-"data": [
-        {
-            "label": "Q1",
-            "value": "1950000"
-
-            "HoverThickness": "1",
-            "BorderHoverDashed": "1",
-            "BorderHoverDashLen": "6",
-            "BorderHoverDashGap": "2"
-        },
-        {
-            "label": "Q2",
-            "value": "1450000"
-        },
-        {
-            "label": "Q3",
-            "value": "1730000"
-        },
-        {
-            "label": "Q4",
-            "value": "2120000"
-        }
-    ]
+    "data": [{
+        "label": "Q1",
+        "value": "1950000",
+        "HoverColor": "1",
+        "HoverAlpha": "1"
+    },
+    {
+        "label": "Q2",
+        "value": "1450000"
+    }]
 }
-
 ```
+
+Shown below is a chart with hover effects enabled for an individual data plot:
+
+{% embed_chart chart-configurations-data-plot-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/5rgy5Let/) to edit the above chart.
