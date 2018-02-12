@@ -7,7 +7,7 @@ breadcrumb: [["Home", "/"], ["Cross Line"]]
 
 Cross line is a vertical line/area used as a quick reference for data plots. When you hover on the canvas, a line/area appears highlighting the data plots along with the information in a tooltip. The tooltip that appears has all the information required, for example, data values, labels of each data plot and also the color of the data plots. A cross line appears as shown in the image below:
 
-<image>
+![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-1.png)
 
 ## Show/Hide the cross line
 
@@ -17,13 +17,16 @@ By default, the cross line is turned off. To show the crossline set the `drawCro
 {
     "chart": {
        ...
-        "dwCrossLine": "1",
-    },
+        "drawCrossLine": "1",
+    }
+}
  ```
 
 A chart with crossline will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-cross-line-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/sh917yad/) to edit the above chart.
 
 ## Customize the cross line
 
@@ -38,13 +41,15 @@ Specify the hex code of the cross line color using the `crossLineColor` attribut
     "chart": {
        ...
         "crosslinecolor": "cc3300",
-    },
-
+    }
+  }
 ```
 
 A multi-series column chart with a customized cross line looks like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-cross-line-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/7yvjb38s/) to edit the above chart.
 
 ### Customize opacity
 
@@ -55,13 +60,16 @@ Set the opacity of the crossline using the `crossLineAlpha` attribute. Refer to 
     "chart": {
        ...
         "crossLineAlpha": "20",
-    },
+    }
+  }
 
 ```
 
 A multi-series column chart with a customized transparency (set to `20`) of the cross line looks like as shown below:
 
-<image>
+{% embed_chart chart-configurations-cross-line-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/e94enLv1/) to edit the above chart.
 
 ### Enable/Disable animation
 
@@ -72,7 +80,8 @@ By default, the cross line animation is disabled. Set the `crossLineAnimation` a
     "chart": {
        ...
         "crossLineAnimatiion": "1",
-    },
+    }
+  }
 
 ```
 
@@ -83,13 +92,15 @@ If the animation is enabled, set the animation duration for the cross line of yo
     "chart": {
        ...
         "crossLineAnimatiionDuration": "10",
-    },
-
+    }
+  }
 ```
 
 A multi-series area chart with animation enabled looks as below:
 
-<chart>
+{% embed_chart chart-configurations-cross-line-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/jLcL5eaz/) to edit the above chart.
 
 ## Set tooltip background color
 
@@ -104,13 +115,13 @@ Refer to the code below:
     "chart": {
        ...
         "plotColorinTooltip": "0",
-    },
-
+    }
+  }
 ```
 
 The chart will look like as shown in the image below:
 
-<image>
+GIF
 
 Apply `tooltipGrayOutColor` attribute to specify the color of the unfocused plot in the tooltip. Refer to the code below;
 
@@ -119,13 +130,15 @@ Apply `tooltipGrayOutColor` attribute to specify the color of the unfocused plot
     "chart": {
        ...
         "tooltipGrayOutColor": "#3377ff",
-    },
-
+    }
+  }
 ```
 
 The chart will look like as shown below:
 
-<image>
+GIF
+
+Click here to edit the above chart.
 
 Specify the hex code of the tooltip background color using the `toolTipBgColor` attribute. Refer to the code below:
 
@@ -134,13 +147,13 @@ Specify the hex code of the tooltip background color using the `toolTipBgColor` 
     "chart": {
        ...
         "toolTipBgColor": "#fffffff",
-    },
-
+    }
+  }
 ```
 
 The chart will look like as shown below:
 
-<chart>
+GIF
 
 ## Set tooltip border color
 
@@ -151,13 +164,13 @@ Specify the hex code of the tooltip border color using the `toolTipBorderColor` 
     "chart": {
        ...
         "toolTipBorderColor": "#545454",
-    },
-
+    }
+  }
 ```
 
 The chart will look like as shown below:
 
-<chart>
+GIF
 
 ## Show/Hide tooltip shadow
 
@@ -168,13 +181,13 @@ Specify the character to separate the name and the value displayed in the toolti
     "chart": {
        ...
         "toolTipSepChar": ":",
-    },
-
+    }
+  }
 ```
 
 The chart will look like as shown below:
 
-<chart>
+GIF
 
 By default, the tooltip shadow is visible. To hide the tooltip shadow set the `showTooltipShadow` attribute to `0`. Refer to the code below:
 
@@ -183,10 +196,10 @@ By default, the tooltip shadow is visible. To hide the tooltip shadow set the `s
     "chart": {
        ...
         "toolTipSepChar": ":",
-    },
-
+    }
+  }
 ```
 
 The chart will look like as shown below:
 
-<chart>
+GIF
