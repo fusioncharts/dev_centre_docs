@@ -15,11 +15,11 @@ Assume that Harry wants to compare sales of the top four chocolate brands at his
 
 A conventional column 2D chart used to show this data will look like the following:
 
-{% embed_all chart-configurations-annotations-example-1.js %}
+{% embed_chart chart-configurations-annotations-example-1.js %}
 
 Now, see how the same chart will look, when rendered using annotations:
 
-{% embed_all chart-configurations-annotations-example-2.js %}
+{% embed_chart chart-configurations-annotations-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/49dJJ/) to edit the above chart.
 
@@ -173,7 +173,7 @@ Refer to the basic JSON structure to create annotations, given below:
 
 The image of a chart rendered with different types of annotations items is shown below:
 
-![Annotations]({% site.baseurl %}/gif/chart-configurations-annotations-image-1.jpg)
+![Annotations]({% site.baseurl %}/images/chart-configurations-annotations-image-1.jpg)
 
 ## Create text annotations
 
@@ -247,7 +247,7 @@ The JSON structure for creating text annotations is given below:
 
 The column 2D chart rendered using text annotations looks like as shown below:
 
-{% embed_all chart-configurations-annotations-example-3.js %}
+{% embed_chart chart-configurations-annotations-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/9xj50enk/) to edit the above chart.
 
@@ -306,7 +306,7 @@ The JSON structure for creating image annotations is given below:
 
 The column 2D charts with image annotations looks like:
 
-{% embed_all chart-configurations-annotations-example-4.js %}
+{% embed_chart chart-configurations-annotations-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/49dJJ/) to edit the above chart.
 
@@ -378,7 +378,7 @@ The JSON structure to create shape annotation is given below:
 
 Take a look at the column 2D chart shown below:
 
-{% embed_all chart-configurations-annotations-example-5.js %}
+{% embed_chart chart-configurations-annotations-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/9xj50enk/) to edit the above chart.
 
@@ -406,7 +406,7 @@ Use the following attributes to create rectangular annotations:
 
 A rectangle annotation will look as given below:
 
-![Rectangle]({% site.baseurl %}/gif/chart-configurations-annotations-image-2.jpg)
+![Rectangle]({% site.baseurl %}/images/chart-configurations-annotations-image-2.jpg)
 
 #### Polygon
 
@@ -424,7 +424,7 @@ Use the following attributes to create polygonal annotations:
 
 A polygon annotation will look as given below:
 
-![Polygon]({% site.baseurl %}/gif/chart-configurations-annotations-image-3.jpg)
+![Polygon]({% site.baseurl %}/images/chart-configurations-annotations-image-3.jpg)
 
 #### Line
 
@@ -444,7 +444,7 @@ Use the following attributes to create linear annotations:
 
 A line annotation will look as given below:
 
-![Line]({% site.baseurl %}/gif/chart-configurations-annotations-image-4.jpg)
+![Line]({% site.baseurl %}/images/chart-configurations-annotations-image-4.jpg)
 
 #### Circle
 
@@ -462,7 +462,7 @@ Use the following attributes to create circular annotations:
 
 A circle annotation will look as given below:
 
-![Circle]({% site.baseurl %}/gif/chart-configurations-annotations-image-5.jpg)
+![Circle]({% site.baseurl %}/images/chart-configurations-annotations-image-5.jpg)
 
 #### Arc
 
@@ -486,7 +486,7 @@ An arc is suitable to draw doughnut like shapes or a slice of it. You can use it
 
 An arc annotation will look as given below:
 
-![Arc]({% site.baseurl %}/gif/chart-configurations-annotations-image-6.jpg)
+![Arc]({% site.baseurl %}/images/chart-configurations-annotations-image-6.jpg)
 
 ### How to create path annotations
 
@@ -531,7 +531,7 @@ The JSON structure for creating path annotations is given below:
 
 Take a look at the spline chart shown below:
 
-{% embed_all chart-configurations-annotations-example-6.js %}
+{% embed_chart chart-configurations-annotations-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/an9hfrch/) to edit the above chart.
 
@@ -598,6 +598,6 @@ The code snippet to position the rectangle annotation is given below:
 
 A spline chart with a rectangle annotation and a text annotation positioned at the top-right corner of the canvas is shown below:
 
-{% embed_all chart-configurations-annotations-example-7.js %}
+{% embed_chart chart-configurations-annotations-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/ufgt8a10/) to edit the above chart.
