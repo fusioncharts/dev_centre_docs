@@ -161,7 +161,7 @@ For a detailed list of attributes refer to the API reference page of box and whi
 
 The box and whisker chart thus created looks like:
 
-{% embed_chart standard-charts-box-and-whisker-chart-example-1.js %}
+{% embed_all standard-charts-box-and-whisker-chart-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/qLvZF/) to edit the box and whisker chart.
 
