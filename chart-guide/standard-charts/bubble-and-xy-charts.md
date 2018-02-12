@@ -73,7 +73,7 @@ Refer to the code given below:
 
 A bubble chart with data labels rendered on bubbles looks like this:
 
-{% embed_all standard-charts-bubble-and-xy-charts-example-3.js %}
+{% embed_chart standard-charts-bubble-and-xy-charts-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/apo6yp8r/) to edit the above chart.
 
@@ -85,7 +85,7 @@ The x-axis of the bubble/scatter chart can be segmented into categorical zones u
 
 A bubble chart with the x-axis segmented looks like this:
 
-{% embed_all standard-charts-bubble-and-xy-charts-example-4.js %}
+{% embed_chart standard-charts-bubble-and-xy-charts-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/jcjjmhon/) to edit the above chart.
 
@@ -107,7 +107,7 @@ In the auto mode, the chart automatically calculates and displays the x-axis lab
 
 A bubble chart with the x-axis labels rendered in the auto mode looks like this:
 
-{% embed_all standard-charts-bubble-and-xy-charts-example-5.js %}
+{% embed_chart standard-charts-bubble-and-xy-charts-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/vu6spe8b/) to edit the above chart.
 
@@ -119,7 +119,7 @@ In this mode, the x-axis displays labels explicitly defined through the objects 
 
 A bubble chart with the x-axis labels rendered in the categories mode looks like this:
 
-{% embed_all standard-charts-bubble-and-xy-charts-example-6.js %}
+{% embed_chart standard-charts-bubble-and-xy-charts-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/grkoppxq/) to edit the above chart.
 
@@ -133,7 +133,7 @@ This mode is a combination of the auto mode and the category mode. It allows the
 
 A bubble chart with the x-axis labels rendered in the mixed mode looks like this:
 
-{% embed_all standard-charts-bubble-and-xy-charts-example-7.js %}
+{% embed_chart standard-charts-bubble-and-xy-charts-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/rkqm4hLn/) to edit the above chart.
 
@@ -199,7 +199,7 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-{% embed_all standard-charts-bubble-and-xy-charts-example-8.js %}
+{% embed_chart standard-charts-bubble-and-xy-charts-example-8.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/26Lsqna9/) to edit the above chart.
 
@@ -226,7 +226,7 @@ Refer to the code given below:
 
 A scatter chart with all the data points connected by a line looks like this:
 
-{% embed_all standard-charts-bubble-and-xy-charts-example-9.js %}
+{% embed_chart standard-charts-bubble-and-xy-charts-example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/t7Ladarf/) to edit the above chart.
 
@@ -261,7 +261,7 @@ Refer to the code given below:
 
 A scatter chart with regression lines looks like this:
 
-{% embed_all standard-charts-bubble-and-xy-charts-example-10.js %}
+{% embed_chart standard-charts-bubble-and-xy-charts-example-10.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/8wwg1pat/) to edit the above chart.
 
@@ -302,7 +302,7 @@ Refer to the code below:
 
 The same chart with regression lines drawn using the **X on Y** mode looks like this:
 
-{% embed_all standard-charts-bubble-and-xy-charts-example-11.js %}
+{% embed_chart standard-charts-bubble-and-xy-charts-example-11.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/yo0dc81r/) to edit the above chart.
 
@@ -334,7 +334,7 @@ Refer to the code given below:
 ```
 A bubble chart rendered with quadrants looks like this:
 
-{% embed_all standard-charts-bubble-and-xy-charts-example-12.js %}
+{% embed_chart standard-charts-bubble-and-xy-charts-example-12.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/9Lk3u31L/) to edit the above chart.
 
@@ -369,7 +369,7 @@ Refer to the code given below:
 
 A bubble chart rendered with quadrants drawn at user-defined positions looks like this:
 
-{% embed_all standard-charts-bubble-and-xy-charts-example-13.js %}
+{% embed_chart standard-charts-bubble-and-xy-charts-example-13.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/28m91mnh/) to edit the above chart.
 
@@ -405,7 +405,7 @@ Refer to the code given below:
 ```
 A bubble chart with quadrant labels displayed looks like this:
 
-{% embed_all standard-charts-bubble-and-xy-charts-example-14.js %}
+{% embed_chart standard-charts-bubble-and-xy-charts-example-14.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/ot94tuqg/) to edit the above chart.
 
@@ -438,7 +438,7 @@ We'll create a sample using some of the cosmetic properties for the quadrant lab
 ```
 A bubble chart showcasing the above cosmetic attributes for quadrant labels is shown below:
 
-{% embed_all standard-charts-bubble-and-xy-charts-example-15.js %}
+{% embed_chart standard-charts-bubble-and-xy-charts-example-15.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/6o6jh6jm/) to edit the above chart.
 
@@ -490,6 +490,6 @@ Refer to the code given below:
 ```
 A bubble chart rendered with customized quadrant lines looks like this:
 
-{% embed_all standard-charts-bubble-and-xy-charts-example-16.js %}
+{% embed_chart standard-charts-bubble-and-xy-charts-example-16.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/mgf2z57n/) to edit the above chart.
