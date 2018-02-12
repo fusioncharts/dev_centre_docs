@@ -33,13 +33,15 @@ Refer to the code below:
         "yAxisMaxvalue": "35000",
         "yAxisMinValue": "5000",
         "numDivLines": "9"
-    },
-
- ```
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-div-lines-and-grids-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ovbtuvkk/) to edit the above chart.
 
 ## Customize the display of divisional lines
 
@@ -59,12 +61,15 @@ Refer to the code below:
         "divLineColor": "#6699cc",
         "divLineAlpha": "60",
         "divLineDashed": "0"
-    },
- ```
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-div-lines-and-grids-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/y3r1w0tk/) to edit the above chart.
 
 ## Dashed divisional lines
 
@@ -85,13 +90,15 @@ Refer to the code below:
         "divLineDashed": "1",
         "divLineDashLen": "5",
         "divLineDashGap": "6"
-    },
-
- ```
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-div-lines-and-grids-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/5q05dmw1/) to edit the above chart.
 
 ## Customize horizontal grid bands
 
@@ -106,14 +113,17 @@ Refer to the code below:
  ```
 {
     "chart": {
-       ...
+        ...
         "showAlternateHGridColor": "1",
-           },
- ```
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-div-lines-and-grids-example-4.js %}
+
+Click here to edit the above chart.
 
 ### Customize horizontal grid bands
 
@@ -128,14 +138,15 @@ Refer to the code below:
  ```
 {
     "chart": {
-       ...
+        ...
         "alternateHGridColor": "#00FFAA",
-
-        "alternateHGridAlpha":"30"
-           },
- ```
+        "alternateHGridAlpha":"20"
+    }
+}
+```
 
 The chart will look like as shown in the image below:
 
-<chart>
+{% embed_chart chart-configurations-div-lines-and-grids-example-5.js %}
 
+Click [here](http://jsfiddle.net/fusioncharts/fu4ajL43/) to edit the above chart.
