@@ -5,9 +5,7 @@ heading: Box and Whisker Chart
 breadcrumb: [["Home", "/"], ["Box and Whisker Chart"]]
 ---
 
-A box and whisker chart is a statistical chart that is used to examine and summarize a range of data values.
-
-A box and whisker chart shows a frequency distribution of the data that helps in interpreting the distribution of data. It draws a statistical conclusion for the given data using the five number summary principle. The box and whisker chart is very useful to observe the mean, median, upper and lower quartiles, deviations, etc. for a huge set of data. It is used mostly used in chemical industries and weapon industries.
+A box and whisker chart is a statistical chart that is used to examine and summarize a range of data values. It shows a frequency distribution of the data that helps in interpreting the distribution of data. It draws a statistical conclusion for the given data using the five number summary principle. The box and whisker chart is very useful to observe the mean, median, upper and lower quartiles, deviations, etc. for a huge set of data. It is used mostly used in chemical industries and weapon industries.
 
 ## Features
 
@@ -118,42 +116,23 @@ Refer to the code given below:
 
 ```
 {
-
     "chart": {
-
         ...
-
     },
-
     "categories": [{
-
         ...
-
     }],
-
     "dataset": [{
-
             "seriesname": "Male",
-
             "lowerBoxColor": "#0075c2",
-
             "upperBoxColor": "#1aaf5d",
-
             "data": [{
-
                     "value": "2400,2000,2500,2800,3500,4000"
-
                 },
-
             ]
-
         }
-
     ]
-
 }
-
-...
 
 ```
 
@@ -165,15 +144,11 @@ The box and whisker chart thus created looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/qLvZF/) to edit the box and whisker chart.
 
-The full HTML code for the above sample is:
-
-**HTML CODE SNIPPET**
-
 ## Add legends to the chart
 
 FusionCharts Suite XT supports `legend` for the box and whisker chart. Legend allows you to display single color icons for numeric numbers.
 
-To display legend in a box and whisker chart, follow the points given below:
+To display legend in a box and whisker chart, the following attributes are used:
 
 * To display the legend on your chart, set the `showLegend` attribute to `1`.
 
@@ -184,23 +159,15 @@ For the detailed list of attributes to configure legend, refer to the API refere
 Refer to the code given below:
 
 ```
-
 {
-
     "chart": {
-
     	"showLegend": "1",
-
     	"legendPosition": "right"
-
     }
-
+...
 }
 
-...
-
 ```
-
 A simple box and whisker chart rendered with a legend looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-2.js %}
@@ -229,8 +196,8 @@ A box and whisker chart with three of the five summary numbers - the minimum and
 
 > All the attributes listed above works only when `showValues` attribute is set to `1`.
 
-
 Refer to the code below:
+
 ```
 ...
 {
@@ -242,8 +209,9 @@ Refer to the code below:
         "showQ1Values": "0",
         "showQ3Values": "0"
     }
+    ...
 }
-...
+
 ```
 
 A box and whisker chart with five summary numbers- the minimum and maximum numbers and the median shown looks like:
@@ -252,21 +220,16 @@ A box and whisker chart with five summary numbers- the minimum and maximum numbe
 
 Click [here](http://jsfiddle.net/fusioncharts/q89k0bef/) to edit the above chart.
 
-Click here to edit the above chart.
-
 To selectively show summary numbers on the chart, set the `showValues` attribute and the attributes for the values you want to show to 1. Set the remaining attributes to `0`. For example, if you want to show only the minimum values, use the code snippet shown below:
 
 Refer to the code given below:
 
 ```
-
 {
 
     "chart": {
 
-        "caption": "Visits to a Website",
-
-        "subcaption": "In three years",
+        ...
 
         "showQ1Values": "0",
 
@@ -279,10 +242,9 @@ Refer to the code given below:
         "showMaxValues": "1"
 
     }
+...
 
 }
-
-...
 
 ```
 
@@ -291,14 +253,11 @@ You can also configure the box and whisker chart to show all five summary number
 Refer to the code given below:
 
 ```
-
 {
 
     "chart": {
 
-        "caption": "Visits to a Website",
-
-        "subcaption": "In three years",
+        ...
 
         "showQ1values": "1",
 
@@ -311,10 +270,8 @@ Refer to the code given below:
         "showMaxValues": "1"
 
     }
-
+    ...
 }
-
-...
 
 ```
 
@@ -333,6 +290,7 @@ To customize the median, follow the steps given below:
 > All these attributes can be used with the **chart**, **dataset**, and the **data** objects, depending on the requirement.
 
 Refer to the code below:
+
 ```
 ...
 {
@@ -341,10 +299,10 @@ Refer to the code below:
         "medianThickness": "5",
         "medianAplha": "70"
     }
+    ...
 }
-...
-```
 
+```
 The chart will look like as shown below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-4.js %}
@@ -363,21 +321,74 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 
 * Set the `upperQuartileAlpha` attribute to specify the transparency of the upper quartile line. This attribute takes values between `0` (transparent) and `100` (opaque).
 
+```
+...
+{
+    "chart": {
+        //The color of the upper quartile set to Red
+        "upperQuartileColor": "ff0000",
+        //The thickness of the upper quartile set to 5
+        "upperQuartileThickness": "5",
+        //The transparency of the upper quartile set to 70
+        "upperQuartileAlpha": "70"
+    }
+    ...
+}
+
+
+```
 * Set the `upperBoxColor` attribute to specify the hex color code of the upper quartile box.
 
 * Set the `upperBoxAlpha` attribute to specify the transparency of the upper quartile box. This attribute takes values between `0` (transparent) and `100` (opaque).
 
+```
+...
+{
+    "chart": {
+        //"upperBoxColor": "ff0000",
+        //"upperBoxAlpha": "70"
+    }
+}
+...
+
+```
 * Set the `upperBoxBorderColor` attribute to specify the hex color code for the two sides of upper quartile box.
 
 * Set the `upperBoxBorderAlpha` attribute to specify the transparency for the two sides of upper quartile box. This attribute takes values between `0` (transparent) and `100` (opaque).
 
 * Set the `upperBoxBorderThickness` attribute to specify the thickness for the two sides of upper quartile box.
 
+```
+...
+{
+    "chart": {
+        //"upperBoxBorderColor": "ff0000",
+        //"upperBoxBorderAlpha": "70",
+        //"upperBoxBorderThickness": "5"
+    }
+    ...
+}
+
+```
+
 * Set the `lowerQuartileColor` attribute to specify the hex color code for the exact value of lower quartile. the line is the roof of the lower quartile box.
 
 * Set the `lowerQuartileThickness` attribute to specify the thickness of the lower quartile line.
 
 * Set the `lowerQuartileAlpha` attribute to specify the transparency of the lower quartile line. This attribute takes values between `0` (transparent) and `100` (opaque).
+
+```
+...
+{
+    "chart": {
+        //"lowerQuartileColor": "ff0000",
+        //"lowerQuartileThickness": "5",
+        //"lowerQuartileAlpha": "70"
+    }
+    ...
+}
+
+```
 
 * Set the `lowerBoxColor` attribute to specify the hex color code of the lower quartile box.
 
@@ -392,33 +403,18 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 Refer to the code below:
 
 ```
-...
 {
     "chart": {
-        //The color of the upper quartile set to Red
-        "upperQuartileColor": "ff0000",
-        //The thickness of the upper quartile set to 5
-        "upperQuartileThickness": "5",
-        //The transparency of the upper quartile set to 70
-        "upperQuartileAlpha": "70",
-        //"upperBoxColor": "ff0000",
-        //"upperBoxAlpha": "70",
-        //"upperBoxBorderColor": "ff0000",
-        //"upperBoxBorderAlpha": "70",
-        //"upperBoxBorderThickness": "5",
-        //"lowerQuartileColor": "ff0000",
-        //"lowerQuartileThickness": "5",
-        //"lowerQuartileAlpha": "70",
         //"lowerBoxColor": "ff0000",
         //"lowerBoxAlpha": "70",
         //"lowerBoxBorderColor": "ff0000",
         //"lowerBoxBorderAlpha": "70",
         //"lowerBoxBorderThickness": "5"
     }
+    ...
 }
-...
-```
 
+```
 The chart will look like as shown below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-5.js %}
@@ -448,7 +444,6 @@ To customize the whiskers, follow the points given below:
 Refer to the code below:
 
 ```
-...
 {
     "chart": {
         "upperWhiskerColor": "ff0000",
@@ -459,10 +454,10 @@ Refer to the code below:
         "lowerWhiskerAlpha": "70",
         "whiskersLimitsWidthRatio": "3"
     }
-}
 ...
-```
+}
 
+```
 The chart will look like as shown below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-6.js %}
@@ -487,19 +482,13 @@ Refer to the code given below:
 
 ```
 {
-
     "chart": {
-
         "showMean": "1"
-
     }
-
+...
 }
 
-...
-
 ```
-
 A box and whisker chart with the mean icon shown in the legend looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-7.js %}
@@ -523,7 +512,6 @@ To customize the mean icon in the box and whisker chart, follow the points given
 Refer to the code below:
 
 ```
-...
 {
     "chart": {
         "meanIconRadius": "5",
@@ -532,10 +520,9 @@ Refer to the code below:
         "meanIconColor": "ff0000,
         "meanIconAlpha": "70"
     }
-}
 ...
+}
 ```
-
 The  chart will look like as shown below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-8.js %}
@@ -551,21 +538,14 @@ For multiple data plots, you can draw a line to connect the mean values of each 
 Refer to the code given below:
 
 ```
-
 {
-
     "chart": {
-
         "drawMeanConnector": "1"
-
     }
-
+...
 }
 
-...
-
 ```
-
 A box and whisker chart rendered with mean connectors looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-9.js %}
@@ -581,21 +561,14 @@ In the chart shown below, a connector will drawn connecting the mean deviation i
 Refer to the code given below:
 
 ```
-
 {
-
     "chart": {
-
         "connectNullData": "1"
-
     }
-
+...
 }
 
-...
-
 ```
-
 A box and whisker chart with null data connected using mean connectors is given below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-10.js %}
@@ -619,18 +592,12 @@ A box and whisker chart with the mean deviation icon can be shown in the legend 
 Refer to the code given below:
 
 ```
-
 {
-
     "chart": {
-
         "showMD": "1"
-
     }
-
-}
-
 ...
+}
 
 ```
 
@@ -657,7 +624,6 @@ To customize the mean deviation icon, follow the points given below:
 Refer to the code below:
 
 ```
-...
 {
     "chart": {
         "mdIconRadius": "5"
@@ -666,10 +632,10 @@ Refer to the code below:
         "mdIconColor": "ff0000"
         "mdIconAlpha": "70"
     }
-}
 ...
-```
+}
 
+```
 The chart will look like as shown below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-12.js %}
@@ -685,21 +651,14 @@ For multiple data plots, you can draw a line to connect the mean deviation icons
 Refer to the code given below:
 
 ```
-
 {
-
     "chart": {
-
         "drawMDConnector": "1"
-
     }
-
+...
 }
 
-...
-
 ```
-
 A box and whisker chart rendered with a mean deviation connector looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-13.js %}
@@ -715,18 +674,12 @@ In the chart shown below, a connector will drawn connecting the mean deviation i
 Refer to the code given below:
 
 ```
-
 {
-
     "chart": {
-
         "connectNullData": "1"
-
     }
-
-}
-
 ...
+}
 
 ```
 
@@ -745,21 +698,14 @@ A box and whisker chart with the standard deviation icon can be shown in the leg
 Refer to the code given below:
 
 ```
-
 {
-
     "chart": {
-
         "showSD": "1"
-
     }
-
+...
 }
 
-...
-
 ```
-
 A box and whisker chart with the standard deviation icon shown in the legend box looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-14.js %}
@@ -787,9 +733,7 @@ To customize the standard deviation icon, follow the points given below:
 Refer to the code given below:
 
 ```
-
 {
-
     "chart": {
         "sdIconRadius": "5",
         "sdIconSides": "5",
@@ -797,18 +741,15 @@ Refer to the code given below:
         "sdIconColor": "ff0000",
         "sdIconAlpha": "70"
     }
-
+...
 }
 
-...
-
 ```
-
 A box and whisker chart with the standard deviation icon shown in the legend box looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-15.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/u47qrcte/) to edit the above chart
+Click [here](http://jsfiddle.net/fusioncharts/u47qrcte/) to edit the above chart.
 
 ### Draw standard deviation connectors
 
@@ -819,26 +760,21 @@ For multiple data plots, you can draw a line to connect the standard deviation i
 Refer to the code given below:
 
 ```
-
 {
 
     "chart": {
 
         "drawSDConnector": "1"
-
     }
-
+...
 }
 
-...
-
 ```
-
 A box and whisker chart rendered with a standard deviation connector looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-16.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7zg46mwj/) to edit the above chart
+Click [here](http://jsfiddle.net/fusioncharts/7zg46mwj/) to edit the above chart.
 
 ### Connect Null data
 
@@ -849,21 +785,14 @@ In the chart shown below, a connector will drawn connecting the standard deviati
 Refer to the code given below:
 
 ```
-
 {
-
     "chart": {
-
         "connectNullData": "1"
-
     }
-
+...
 }
 
-...
-
 ```
-
 ## Configuring Quartile Deviation
 
 The distance between the upper quartile and the lower quartile is called the interquartile range. Quartile deviation is half the distance between the two quartiles, i.e. half the interquartile range. It is also called the semi interquartile range.
@@ -879,26 +808,18 @@ A box and whisker chart with the quartile deviation icon can be shown in the leg
 Refer to the code given below:
 
 ```
-
 {
-
     "chart": {
-
         "showQD": "1"
-
     }
-
-}
-
 ...
-
+}
 ```
-
 A box and whisker chart with the quartile deviation icon shown in the legend box looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-17.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/grwfoLto/) to edit the above chart
+Click [here](http://jsfiddle.net/fusioncharts/grwfoLto/) to edit the above chart.
 
 Click here to edit the above chart.
 
@@ -921,9 +842,7 @@ To customize the quartile deviation icon, follow the points given below:
 Refer to the code below:
 
 ```
-
 {
-
     "chart": {
         "qdIconRadius": "5",
         "qdIconSides": "5",
@@ -931,18 +850,15 @@ Refer to the code below:
         "qdIconColor": "ff0000",
         "qdIconAlpha": "70"
     }
-
+...
 }
 
-...
-
 ```
-
 The chart will look like as shown below:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-18.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/abk7goL7/) to edit the above chart
+Click [here](http://jsfiddle.net/fusioncharts/abk7goL7/) to edit the above chart.
 
 ### Draw quartile deviation connectors
 
@@ -953,26 +869,18 @@ For multiple data plots, you can draw a line to connect the quartile deviation i
 Refer to the code given below:
 
 ```
-
 {
-
     "chart": {
-
         "drawQDConnector": "1"
-
     }
-
 }
 
-...
-
 ```
-
 A box and whisker chart rendered with a quartile deviation connector looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-19.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Lxoohu0g/) to edit the above chart
+Click [here](http://jsfiddle.net/fusioncharts/Lxoohu0g/) to edit the above chart.
 
 ### Connect Null data
 
@@ -984,19 +892,13 @@ Refer to the code given below:
 
 ```
 {
-
     "chart": {
-
         "connectNullData": "1"
-
     }
-
+...
 }
 
-...
-
 ```
-
 A box and whisker chart with the quartile deviation null data connected looks like this:
 
 ## Configuring Outliers
@@ -1026,7 +928,10 @@ To customize the outlier icon, follow the points given below:
 Refer to the code below:
 
 ```
-...
+{
+    "chart": {
+        ...
+    }
 {
     "data": {
         "outliers": "1"
@@ -1036,17 +941,15 @@ Refer to the code below:
         "outlierIconColor": "ff0000",
         "outlierIconAlpha": "70"
     }
+    ...
 }
-...
-```
 
+```
 A box and whisker chart with outliers looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-20.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/y9wzdwur/) to edit the above chart
-
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/y9wzdwur/) to edit the above chart.
 
 ### Show outliers beyond the range
 
@@ -1058,7 +961,7 @@ A box and whisker chart with outliers beyond the range of the y-axis hidden look
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-21.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/v22otbqg/) to edit the above chart
+Click [here](http://jsfiddle.net/fusioncharts/v22otbqg/) to edit the above chart.
 
 In the data above, you will see that the outlier values for Grade 3 are 72000 for male and 71000 for female. Therefore, the outliers for these values are not shown on the chart.
 
@@ -1068,6 +971,4 @@ A box and whisker chart with outlier values shown on the chart looks like this:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-22.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/oukgfmca/) to edit the above chart
-
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/oukgfmca/) to edit the above chart.

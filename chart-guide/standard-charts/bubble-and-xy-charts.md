@@ -45,7 +45,11 @@ A bubble chart for the above code looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/58sYu/) to edit the bubble chart.
 
-> In case of bubble and scatter charts, categories are optional because the x-axis is numeric. Categories can, however, be used to define customized x-axis labels for any location on the x-scale. A category can define numeric or non-numeric labels for the x-axis. Unlike other multi-series charts where each dataset contains the same number of objects present in the data array as the number of categories, scatter and bubble charts can have varying number of objects present in the data array elements under each dataset array. In case categories are not defined, the x-axis displays an automatically-calculated numeric scale with vertical divisional lines and values of the divisional lines as x-axis labels. However, you can also explicitly define categories of your choice and show only those categories as x-axis labels. Moreover, you can also combine the categories and automatically-generated x-axis labels using a mixed mode. All of this will be explained in this section.
+> In case of bubble and scatter charts, categories are optional because the x-axis is numeric. Categories can, however, be used to define customized x-axis labels for any location on the x-scale. 
+
+A category can define numeric or non-numeric labels for the x-axis. Unlike other multi-series charts where each dataset contains the same number of objects present in the data array as the number of categories, scatter and bubble charts can have varying number of objects present in the data array elements under each dataset array. In case categories are not defined, the x-axis displays an automatically-calculated numeric scale with vertical divisional lines and values of the divisional lines as x-axis labels. 
+
+However, you can also explicitly define categories of your choice and show only those categories as x-axis labels. Moreover, you can also combine the categories and automatically-generated x-axis labels using a mixed mode. All of this will be explained in this section.
 
 Now, let's customize the appearance and properties of the charts. 
 
