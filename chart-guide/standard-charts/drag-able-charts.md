@@ -69,7 +69,7 @@ Now, let's customize the appearance and properties of the charts.
 
 The chart, by default, calculates the y-axis upper and lower limits based on the data provided to it. To let the column assume a value not covered within this axis range, increase or decrease the limits using the menu button at the top-right of the chart.
 
-IMAGE
+![Dashboard]({% site.baseurl %}/gif/standard-charts-drag-able-charts-gif-1.gif)
 
 Once you've clicked the menu button, a pop-up with the options to increase or decrease the upper and lower limits is revealed. Click on this menu button to reveal a menu with the options to increase or decrease the upper and lower limits.
 
