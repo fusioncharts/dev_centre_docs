@@ -7,7 +7,7 @@ breadcrumb: [["Home", "/"], ["Border and Background"]]
 
 A chart's background refers to the whole area on which it is drawn and it is enclosed by the chart border, the rectangle around a chart's background.
 
-<image>
+![Border and Background]({% site.baseurl %}/images/chart-configurations-border-and-background-image-1.png)
 
 This article shows how to configure the border and background of your chart. It will also explain a few attributes that control the behavior of these elements. 
 
@@ -34,13 +34,16 @@ Refer to the code below:
         "borderThickness": "4",
         "borderAlpha": "80",
        ...
-    },
+    }
+}
 
 ```
 
 The chart will look like as shown below:
 
-<CHART>
+{% embed_chart chart-configurations-border-and-background-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/5vj22scs/) to edit the above chart.
 
 ### Customize chart background
 
@@ -59,13 +62,16 @@ Refer to the code below:
         "bgColor": "#DDDDDD",
         "bgAlpha": "50",
         ...
-    },
+    }
+}
 
 ```
 
 The chart will look like as shown below:
 
-<CHART>
+{% embed_chart chart-configurations-border-and-background-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/c5o8spm5/) to edit the above chart.
 
 ## Use gradient background
 
@@ -90,20 +96,23 @@ To do so, follow the steps given below:
 Refer to the code below:
 
 ```
-
+{
     "chart": {
         ...
         "bgColor": "EEEEEE,CCCCCC",
         "bgratio": "60,40",
         "bgAlpha": "70,80",
         "bgAngle": "180"
-    },
+    }
+}
 
 ```
 
 The chart will look like as shown in the image below:
 
-<CHART>
+{% embed_chart chart-configurations-border-and-background-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/73h05m4q/) to edit the above chart.
 
 ## Use external image
 
@@ -112,9 +121,8 @@ You can specify an external image (GIF, JPEG or PNG only) as the background of t
 ```
 {
 
-  "chart":{ 
+    "chart":{ 
     ...   
-
     "bgImage":"pizza.jpg"
 },
 
@@ -122,7 +130,9 @@ You can specify an external image (GIF, JPEG or PNG only) as the background of t
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-border-and-background-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ceqLLtwk/) to edit the above chart.
 
 ## Customize background image
 
@@ -141,34 +151,25 @@ Refer to the code below:
 ```
 {
 
-  "chart":{
-
-  ...    
-
-    "bgImage":"pizza.jpg",
-
-    "bgImageAlpha":"30",
-
-    "bgImageScale":"50",
-
-    "bgImageVAlign":"bottom",
-
-    "bgImageHAlign":"middle",
-
-    "bgImageDisplayMode":"center",
-
-...
-
-},
-
-  ...
-
+    "chart":{
+        ...    
+        "bgImage":"pizza.jpg",
+        "bgImageAlpha":"30",
+        "bgImageScale":"50",
+        "bgImageVAlign":"bottom",
+        "bgImageHAlign":"middle",
+        "bgImageDisplayMode":"center",
+        ...
+    },
+    ...
 }  
 
 ```
 
 The chart will look like as shown in the image below:
 
-<chart>
+{% embed_chart chart-configurations-border-and-background-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/gyjd7y46/) to edit the above chart.
 
 > Note that alignment attributes are ignored for `center` and `stretch` display modes and `bgImageScale` attribute works only for `none`, `center` and `tile` display modes.
