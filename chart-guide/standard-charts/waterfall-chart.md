@@ -52,7 +52,7 @@ For a detailed list of attributes you can check the API reference page of waterf
 
 A waterfall chart with distinct colors used for the positive and negative data plots looks like this:
 
-{% embed_all standard-charts-waterfall-charts-example-2.js %}
+{% embed_chart standard-charts-waterfall-charts-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/fp5uh8p6/) to edit the waterfall chart.
 
@@ -93,7 +93,7 @@ Refer to the code given below:
 
 A waterfall chart rendered with a cumulative sum column looks like this:
 
-{% embed_all standard-charts-waterfall-charts-example-3.js %}
+{% embed_chart standard-charts-waterfall-charts-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/478ur96x/) to edit the waterfall chart.
 
@@ -107,11 +107,28 @@ A non-cumulative sum column is one that shows the sum of all the columns to its 
 
 Refer to the  code below:
 
-<Insert Code>
+```
+{
+    "chart": {
+        ...
+    },
+    "data": [
+        ...{
+            "label": "Promotion Costs",
+            "value": "-86000"
+        },
+        {
+            "label": "Total Costs",
+            "issum": "1",
+            "cumulative": "0"
+        }
+    ]
+}
+    ```
 
 A waterfall chart rendered with a non-cumulative sum column looks like this:
 
-{% embed_all standard-charts-waterfall-charts-example-4.js %}
+{% embed_chart standard-charts-waterfall-charts-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/1crgnjar/) to edit the waterfall chart.
 
@@ -129,11 +146,18 @@ To do so, the following attributes are used:
 
 Refer to the code below:
 
-<insert Code>
+{
+    "chart": {
+        ...
+        "sumlabel": "Total {br} Profit",
+        "showSumAtEnd": "0"
+    },
+    ...
+}
 
 A waterfall chart with the total sum column hidden looks like this:
 
-{% embed_all standard-charts-waterfall-charts-example-5.js %}
+{% embed_chart standard-charts-waterfall-charts-example-5.js %}
 
 Click {here}(http://jsfiddle.net/fusioncharts/tvmospjo/) to edit the waterfall chart.
 
@@ -186,6 +210,6 @@ Refer to the code given below:
 
 A waterfall chart rendered with customized connector lines looks like this:
 
-{% embed_all standard-charts-waterfall-charts-example-6.js %}
+{% embed_chart standard-charts-waterfall-charts-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/mo48mf9s/) to edit the waterfall chart.

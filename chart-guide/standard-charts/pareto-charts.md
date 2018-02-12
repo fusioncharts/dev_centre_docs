@@ -66,7 +66,7 @@ Refer to the code given below:
 
 A pareto chart configured to render the percentage values for the line chart looks like this:
 
-{% embed_all standard-charts-pareto-chart-example-3.js %}
+{% embed_chart standard-charts-pareto-chart-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/zr2mdz3t/) to edit the pareto 2D chart.
 
@@ -115,7 +115,7 @@ Refer to the code given below:
 
 A pareto chart with the line segments customized looks like this:
 
-{% embed_all standard-charts-pareto-chart-example-4.js %}
+{% embed_chart standard-charts-pareto-chart-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/nmf6af24/) to edit the pareto 2D chart.
 
@@ -148,6 +148,6 @@ Refer to the code given below:
 
 A pareto chart with hidden secondary y-axis looks like:
 
-{% embed_all standard-charts-pareto-chart-example-5.js %}
+{% embed_chart standard-charts-pareto-chart-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/zm25ufqu/) to edit the pareto 2D chart.

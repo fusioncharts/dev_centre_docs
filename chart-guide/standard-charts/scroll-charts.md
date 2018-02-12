@@ -114,7 +114,7 @@ Refer to the code given below:
 
 A scroll chart with the number of visible data plots set to twelve looks like this:
 
-{% embed_all standard-charts-scroll-charts-example-7.js %}
+{% embed_chart standard-charts-scroll-charts-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/15tzb20e/) to edit the scroll column 2D chart.
 
@@ -141,7 +141,7 @@ Refer to the code given below:
 
 A scroll chart with a gradient scroll bar looks like this:
 
-{% embed_all standard-charts-scroll-charts-example-8.js %}
+{% embed_chart standard-charts-scroll-charts-example-8.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/ssfngtce/) to edit the scroll column 2D chart.
 
@@ -176,6 +176,6 @@ Refer to the code given below:
 
 A scroll chart with the cosmetic properties of the scroll bar customized looks like this:
 
-{% embed_all standard-charts-scroll-chart-example-9.js %}
+{% embed_chart standard-charts-scroll-chart-example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/guawyxge/) to edit the scroll column 2D chart.

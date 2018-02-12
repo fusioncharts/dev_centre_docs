@@ -83,7 +83,7 @@ For a detailed list of attributes you can check the API reference page of real-t
 
 A real-time line chart looks like:
 
-{% embed_chart standard-charts-real-time-charts-example-1.js %}
+{% embed_all standard-charts-real-time-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/43fJn/) to edit the real-time line chart.
 
@@ -95,7 +95,7 @@ For a detailed list of attributes you can check the API reference page of real-t
 
 A real-time area chart looks like:
 
-{% embed_chart standard-charts-real-time-charts-example-2.js %}
+{% embed_all standard-charts-real-time-charts-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/kdfX7/) to edit the real-time area chart.
 
@@ -109,7 +109,7 @@ For a detailed list of attributes you can check the API reference page of real-t
 
 A real-time stacked area chart looks like:
 
-{% embed_chart standard-charts-real-time-charts-example-3.js %}
+{% embed_all standard-charts-real-time-charts-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/C8mkW/) to edit the real-time stacked area chart.
 
@@ -123,7 +123,7 @@ For a detailed list of attributes you can check the API reference page of real-t
 
 A real-time column chart looks like:
 
-{% embed_chart standard-charts-real-time-charts-example-4.js %}
+{% embed_all standard-charts-real-time-charts-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/NvJat/) to edit the real-time column chart.
 
@@ -137,7 +137,7 @@ For a detailed list of attributes you can check the API reference page of real-t
 
 A real-time stacked column chart looks like:
 
-{% embed_chart standard-charts-real-time-charts-example-5.js %}
+{% embed_all standard-charts-real-time-charts-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/bLUw5/) to edit the real-time stacked column chart.
 
@@ -149,7 +149,7 @@ For a detailed list of attributes you can check the API reference page of real-t
 
 A real-time dual y-axis line chart looks like:
 
-{% embed_chart standard-charts-real-time-charts-example-6.js %}
+{% embed_all standard-charts-real-time-charts-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/2wn8g/) to edit the real-time dual y-axis line chart.
 
@@ -158,7 +158,6 @@ Click [here](http://jsfiddle.net/fusioncharts/2wn8g/) to edit the real-time dual
 Let's say you want to update two datasets plotted on a line chart. To do this, you need to output the data in the following format:
 
 ```
-
 &value=23|43
 
 ```
@@ -377,7 +376,6 @@ So far, for every dataset rendered on the chart, we have passed only single-valu
 The example below shows the format used to push multiple updates at one time:
 
 ```
-
 &label=11:45:55,11:46:00,11:46:05&value=22,27,28|7,6,5
 
 ```
@@ -427,16 +425,14 @@ The updated data provider page `advance-charting-real-time-charts-multiple-datas
 ?>
 
 ```
-
 This page outputs the data in following format:
 
 ```
-
 &label=11:16:09,11:16:12&value=26,25|1,3
 
 ```
 
-# Add historical data
+## Add historical data
 
 In most applications of real-time charts, you would want the chart to initially show historical data and then continue updating itself - instead of starting with a blank canvas and receiving data updates thereafter. You can do this by specifying the historical data in your JSON/XML data.
 

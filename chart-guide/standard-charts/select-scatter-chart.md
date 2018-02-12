@@ -19,6 +19,8 @@ The select-scatter chart thus created looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/3JjL8/) to edit the select-scatter chart.
 
+## Select set of pointss
+
 To select a set of points, you can drag and draw a rectangle over the chart. All the points within this rectangle are now selected points. Once the rectangle has been drawn, you can resize it to adjust more points. The resize handlers let you do so.
 
 To select more scattered data points, you can add additional select rectangles on the chart. The process to add another select rectangle is the same, as shown in the image below. Click anywhere in the chart canvas and draw a rectangle.
@@ -87,7 +89,7 @@ The function `getJSONData()` returns the selected data. This function is also us
 
 A select-scatter chart configured to show how the selected data is retrieved and updated looks like this:
 
-{% embed_all standard-charts-select-scatter-chart-example-2.js %}
+{% embed_chart standard-charts-select-scatter-chart-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/0e8vwaud/) to edit the select-scatter chart.
 
@@ -119,7 +121,7 @@ Refer to the code given below:
 ```
 A select-scatter chart rendered with a regression line is shown below:
 
-{% embed_all standard-charts-select-scatter-chart-example-3.js %}
+{% embed_chart standard-charts-select-scatter-chart-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/0yL7zfps/) to edit the select-scatter chart.
 
@@ -164,7 +166,7 @@ Refer to the code given below:
 ```
 The chart looks like:
 
-{% embed_all standard-charts-select-scatter-chart-example-4.js %}
+{% embed_chart standard-charts-select-scatter-chart-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/7yhqp2oq/) to edit the select-scatter chart.
 
