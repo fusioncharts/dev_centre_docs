@@ -255,21 +255,16 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
 
     "snapToDiv": "1",
 
     "snapToDivRelaxation": "5"
-
   }
-
+...
 }
 
-...
-
 ```
-
 A drag-able column chart configured for snapping to the nearest div interval looks like this:
 
 {% embed_chart standard-charts-drag-able-charts-example-5.js %}

@@ -79,7 +79,7 @@ To render an error scatter chart, follow the steps given below:
 
 * Set the `label` attribute to specify the label for the data item. The label is rendered on the x-axis. This attribute belongs to the `category`, which belongs to the `categories` object.
 
-* The position of a datapoint is defined in the form of two numeric parameters, one from the y-axis and the other from the x-axis. When used with the `category` object, `x` attribute is used to specify the value given to each label rendered on the x-axis. When used with the `data` object, this attribute is used to specify the numeric `x` value needed to plot a data item.
+* Set the `x` attribute within the `category` object to specify the value given to each label rendered on the x-axis. Set this attribute within the `data` object, to specify the numeric `x` value needed to plot a data item.
 
 * Set the `y` attribute to specify the numeric y value needed to plot a data item. This attribute belongs to the `data` object, which belongs to the `dataset` object.
 
@@ -111,7 +111,6 @@ Refer to the code given below:
 
 ```
 {
-
 	"chart": {
 
 		"halferrorbar": "0",
@@ -123,15 +122,11 @@ Refer to the code given below:
 		"errorBarThickness": "2",
 
 		"errorBarWidthPercent": "30"
-
 	},
-
+...
 }
 
-...
-
 ```
-
 An error bar chart, after customizing the error bars, looks like this:
 
 {% embed_chart standard-charts-error-charts-example-4.js %}
@@ -162,7 +157,6 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
       "halfverticalerrorbar": "0",
       "verticalErrorBarColor": "#990000",
@@ -170,10 +164,8 @@ Refer to the code given below:
       "verticalErrorBarAlpha": "50",
       "verticalErrorBarWidth": "8"
   }
-
-}
-
 ...
+}
 
 ```
 

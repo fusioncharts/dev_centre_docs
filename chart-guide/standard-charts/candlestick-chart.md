@@ -73,19 +73,13 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "plotPriceAs" : "line"
-
   }
-
+...
 }
 
-...
-
 ```
-
 A candlestick chart with the price chart rendered as a line chart looks like this:
 
 {% embed_chart standard-charts-candlestick-chart-example-2.js %}
@@ -102,19 +96,13 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "plotClosingPrice" : "0"
-
   }
-
+...
 }
 
-...
-
 ```
-
 A candlestick chart looks like:
 
 {% embed_chart standard-charts-candlestick-chart-example-3.js %}
@@ -129,19 +117,13 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "showVolumeChart" : "0"
-
   }
-
+...
 }
 
-...
-
 ```
-
 A candlestick chart rendered with the volume chart hidden looks like this:
 
 {% embed_chart standard-charts-candlestick-chart-example-4.js %}

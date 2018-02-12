@@ -97,13 +97,10 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
     ...
-
   },
   ...
-
   "trendlines": [{
 
     "line": [{
@@ -116,7 +113,8 @@ Refer to the code given below:
 
       "displayvalue": "Average{br}Revenue"
 
-    }, {
+    }, 
+    {
 
       "startValue": "21",
 
@@ -149,16 +147,11 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "primaryAxisOnLeft" : "0"
-
   }
-
-}
-
 ...
+}
 
 ```
 
