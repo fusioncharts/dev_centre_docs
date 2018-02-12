@@ -15,11 +15,15 @@ Assume that Harry wants to compare sales of the top four chocolate brands at his
 
 A conventional column 2D chart used to show this data will look like the following:
 
-<chart>
+{% embed_all chart-configurations-annotations-example-1.js %}
+
+Click here to edit the above chart.
 
 Now, see how the same chart will look, when rendered using annotations:
 
-<chart>
+{% embed_all chart-configurations-annotations-example-2.js %}
+
+Click here to edit the above chart.
 
 Looks much better, doesn't it? The chocolate bars shown in this chart are image annotations.
 
@@ -124,7 +128,9 @@ You can add the following types of annotations to your chart:
 
 The image of a chart rendered with different types of annotations items is shown below:
 
-<image>
+{% embed_all chart-configurations-annotations-example-3.js %}
+
+Click here to edit the above chart.
 
 Refer to the basic JSON structure to create annotations, given below:
 
@@ -213,10 +219,6 @@ Use the following attributes to text annotations, to add notes, labels, or any o
 
 * Set the maximum height the text can occupy, using the `wrapHeight` attribute. The chart will append ellipses to the end of the annotation whenever the text overflows beyond the vertical space that you allocate using the `wrapHeight` or `toY` attribute.
 
-The complete data structure for the column 2D chart rendered using text annotations is given below:
-
-<chart>
-
 The text "**Promotional activities for Butterfinger made it surpass Snickers, the highest selling brand for 3 years"** is a text annotation. 
 
 Adding this text to the chart makes it self-descriptive and easy for a user to understand the chart. You can add multiple text annotations on a chart that can be notes, labels, or any text that adds more context to the chart.
@@ -250,6 +252,12 @@ The JSON structure for creating text annotations is given below:
 The complete data structure for the column 2D chart with the text annotation is given below:
 
 <code snippet>
+
+The column 2D chart rendered using text annotations looks like as shown below:
+
+{% embed_all chart-configurations-annotations-example-4.js %}
+
+Click here to edit the above chart.
 
 ### How to create image annotations
 
@@ -308,19 +316,21 @@ The JSON structure for creating image annotations is given below:
 
 ```
 
+The column 2D charts with image annotations looks like:
+
+{% embed_all chart-configurations-annotations-example-5.js %}
+
+Click here to edit the above chart.
+
 ### How to create shape annotations
 
 You can draw annotations in any of the following shapes using FusionCharts Suite XT:
 
-* [Rectangle](https://www.fusioncharts.com/dev/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations.html#rectangle)
-
-* [Polygon](https://www.fusioncharts.com/dev/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations.html#polygon)
-
-* [Line](https://www.fusioncharts.com/dev/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations.html#line)
-
-* [Circle](https://www.fusioncharts.com/dev/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations.html#circle)
-
-* [Arc](https://www.fusioncharts.com/dev/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations.html#arc)
+* Rectangle
+* Polygon
+* Line
+* Circle
+* Arc
 
 FusionCharts Suite XT includes several attributes to create and customize shape annotations. While many of these attributes are common to all shapes, some attributes work only for specific shapes.
 
@@ -352,13 +362,7 @@ Use the following attributes to create shape annotations:
 
 * Specify the gap between each dash, if a dashed border is drawn around the annotation, using the `dashGap` attribute.
 
-Take a look at the column 2D chart shown below:
-
-<chart>
-
-The rectangle around the text is a shape annotation.
-
-The JSON structure for creating image annotations is given below:
+The JSON structure to create shape annotation is given below:
 
 ```
 "chart": {
@@ -384,6 +388,14 @@ The JSON structure for creating image annotations is given below:
 
 ```
 
+Take a look at the column 2D chart shown below:
+
+{% embed_all chart-configurations-annotations-example-6.js %}
+
+Click here to edit the above chart.
+
+The rectangle around the text is a shape annotation.
+
 > The complete data structure that shows how you use these attributes is given at the end of this article.
 
 ### Adhoc Attributes
@@ -406,7 +418,9 @@ Use the following attributes to create rectangular annotations:
 
 A rectangle annotation will look as given below:
 
-**CHART**
+{% embed_all chart-configurations-annotations-example-7.js %}
+
+Click here to edit the above chart.
 
 #### Polygon
 
@@ -424,7 +438,9 @@ Use the following attributes to create polygonal annotations:
 
 A polygon annotation will look as given below:
 
-**CHART**
+{% embed_all chart-configurations-annotations-example-8.js %}
+
+Click here to edit the above chart.
 
 #### Line
 
@@ -444,7 +460,9 @@ Use the following attributes to create linear annotations:
 
 A line annotation will look as given below:
 
-**CHART**
+{% embed_all chart-configurations-annotations-example-9.js %}
+
+Click here to edit the above chart.
 
 #### Circle
 
@@ -462,7 +480,9 @@ Use the following attributes to create circular annotations:
 
 A circle annotation will look as given below:
 
-**CHART**
+{% embed_all chart-configurations-annotations-example-10.js %}
+
+Click here to edit the above chart.
 
 #### Arc
 
@@ -486,7 +506,9 @@ An arc is suitable to draw doughnut like shapes or a slice of it. You can use it
 
 An arc annotation will look as given below:
 
-**CHART**
+{% embed_all chart-configurations-annotations-example-11.js %}
+
+Click here to edit the above chart.
 
 ### How to create path annotations
 
@@ -505,10 +527,6 @@ You can draw free-form graphic elements on your charts using the `path` annotati
 * Specify the hex color code for the annotation using the `color` attribute. 
 
 * Specify the transparency of the annotation using the `alpha` attribute, which takes values between 0 (transparent) and 100 (opaque, default).
-
-Take a look at the spline chart shown below:
-
-<chart>
 
 The rectangle drawn to highlight the lowest footfall is created using the path annotation.
 
@@ -537,41 +555,43 @@ The complete data structure for the chart with path annotations is given below:
 
 <code snippet>
 
+Take a look at the spline chart shown below:
+
+{% embed_all chart-configurations-annotations-example-12.js %}
+
+Click here to edit the above chart.
+
 ## Positioning Annotations 
 
 You can configure positions of annotations either during their creation or after rendering them on a chart/gauge. Position annotation items by setting the positioning attributes (`x`, `y`, `toX`, `toY`, `radius`, and so on) to the required coordinates.
 
 You can position annotations using:
 
-* absolute values
+* Absolute values
 
-* [macros](https://www.fusioncharts.com/dev/advanced-chart-configurations/annotations/positioning-annotations-using-macros.html) - that take dynamic values relative to chart elements
+* Macros - that take dynamic values relative to chart elements
 
-### Using absolute values
+### Absolute values
 
 In this section, you will see how to position annotations using static values. The attributes used to position annotations are as follows:
 
 * Specify the unique identification string for the group using the `id` attribute.
 
-* Set the x coordinate of the starting position of the annotation with respect to the leftmost position (taken as zero) of the chart using the `x` attribute.
+* Set the **x** coordinate of the starting position of the annotation with respect to the leftmost position (taken as zero) of the chart using the `x` attribute.
 
-* Set the y coordinate of the starting position of the annotation with respect to the topmost position (taken as zero) of the chart using the `y` attribute.
+* Set the **y** coordinate of the starting position of the annotation with respect to the topmost position (taken as zero) of the chart using the `y` attribute.
 
-* Specify the x coordinate of the ending position of the annotation with respect to the leftmost position (taken as zero) of the chart, using the `toX` attribute. Note that this attribute applies only to the rectangle and line annotations.
+* Specify the **x** coordinate of the ending position of the annotation with respect to the leftmost position (taken as zero) of the chart, using the `toX` attribute. Note that this attribute applies only to the rectangle and line annotations.
 
-* Specify the y coordinate of the ending position of the annotation with respect to the topmost position (taken as zero) of the chart, using the `toY` attribute. Note that this attribute applies only to the rectangle and line annotations.
+* Specify the **y** coordinate of the ending position of the annotation with respect to the topmost position (taken as zero) of the chart, using the `toY` attribute. Note that this attribute applies only to the rectangle and line annotations.
 
 * Specify the original width of the chart, in which the annotation will render as intended, using the `origW` attribute. It will be used as the reference width while automatically scaling annotations, if a chart is resized.
 
 * Specify the original height of the chart, in which the annotation will render as intended, using the `origH` attribute. It will be used as the reference height while automatically scaling annotations, if a chart is resized.
 
-* Specify the x coordinate position value of the final annotation items using the `xShift` attribute. When applying scaling, the value of this attribute will be included within the scale factor.
+* Specify the **x** coordinate position value of the final annotation items using the `xShift` attribute. When applying scaling, the value of this attribute will be included within the scale factor.
 
-* Specify the y coordinate position value of the final annotation items using the `yShift` attribute. When applying scaling, the value of this attribute will be included within the scale factor.
-
-A spline chart with a rectangle annotation and a text annotation positioned at the top-right corner of the canvas is shown below:
-
-<chart>
+* Specify the **y** coordinate position value of the final annotation items using the `yShift` attribute. When applying scaling, the value of this attribute will be included within the scale factor.
 
 The code snippet to position the rectangle annotation is given below:
 
@@ -605,3 +625,9 @@ The code snippet to position the rectangle annotation is given below:
 The complete data structure needed to render the above chart is given below:
 
 <code snippet>
+
+A spline chart with a rectangle annotation and a text annotation positioned at the top-right corner of the canvas is shown below:
+
+{% embed_all chart-configurations-annotations-example-13.js %}
+
+Click here to edit the above chart.
