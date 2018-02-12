@@ -161,7 +161,7 @@ For a detailed list of attributes refer to the API reference page of box and whi
 
 The box and whisker chart thus created looks like:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-1.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/qLvZF/) to edit the box and whisker chart.
 
@@ -203,7 +203,7 @@ Refer to the code given below:
 
 A simple box and whisker chart rendered with a legend looks like this:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-2.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/qLvZF/) to edit the above chart.
 
@@ -248,7 +248,7 @@ Refer to the code below:
 
 A box and whisker chart with five summary numbers- the minimum and maximum numbers and the median shown looks like:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-3.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/q89k0bef/) to edit the above chart.
 
@@ -347,7 +347,7 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-4.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/y3932d4e/) to edit the above chart.
 
@@ -421,7 +421,7 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-5.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/qofgk3ts/) to edit the above chart.
 
@@ -465,7 +465,7 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-6.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/nj1u9far/) to edit the above chart.
 
@@ -502,7 +502,7 @@ Refer to the code given below:
 
 A box and whisker chart with the mean icon shown in the legend looks like this:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-7.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/o879q8hd/) to edit the above chart.
 
@@ -538,7 +538,7 @@ Refer to the code below:
 
 The  chart will look like as shown below:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-8.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-8.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/mf3g5cgo/) to edit the above chart.
 
@@ -568,7 +568,7 @@ Refer to the code given below:
 
 A box and whisker chart rendered with mean connectors looks like this:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-9.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/tr248p89/) to edit the above chart.
 
@@ -598,7 +598,7 @@ Refer to the code given below:
 
 A box and whisker chart with null data connected using mean connectors is given below:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-10.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-10.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/rzj8s0xL/) to edit the above chart.
 
@@ -636,7 +636,7 @@ Refer to the code given below:
 
 The box and whisker chart with mean deviation icon shown in the legend box looks like:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-11.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-11.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/cyzLx5v3/) to edit the above chart.
 
@@ -672,7 +672,7 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-12.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-12.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/t24afhfs/) to edit the above chart.
 
@@ -702,7 +702,7 @@ Refer to the code given below:
 
 A box and whisker chart rendered with a mean deviation connector looks like this:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-13.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-13.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/7j79Lpna/) to edit the above chart.
 
@@ -762,7 +762,7 @@ Refer to the code given below:
 
 A box and whisker chart with the standard deviation icon shown in the legend box looks like this:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-14.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-14.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/vLp55w9L/) to edit the above chart.
 
@@ -806,7 +806,7 @@ Refer to the code given below:
 
 A box and whisker chart with the standard deviation icon shown in the legend box looks like this:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-15.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-15.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/u47qrcte/) to edit the above chart
 
@@ -836,7 +836,7 @@ Refer to the code given below:
 
 A box and whisker chart rendered with a standard deviation connector looks like this:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-16.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-16.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/7zg46mwj/) to edit the above chart
 
@@ -896,7 +896,7 @@ Refer to the code given below:
 
 A box and whisker chart with the quartile deviation icon shown in the legend box looks like this:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-17.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-17.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/grwfoLto/) to edit the above chart
 
@@ -940,7 +940,7 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-18.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-18.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/abk7goL7/) to edit the above chart
 
@@ -970,7 +970,7 @@ Refer to the code given below:
 
 A box and whisker chart rendered with a quartile deviation connector looks like this:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-19.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-19.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/Lxoohu0g/) to edit the above chart
 
@@ -1042,7 +1042,7 @@ Refer to the code below:
 
 A box and whisker chart with outliers looks like this:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-20.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-20.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/y9wzdwur/) to edit the above chart
 
@@ -1056,7 +1056,7 @@ To show all outliers on the box and whisker chart, set the value of `showAllOutl
 
 A box and whisker chart with outliers beyond the range of the y-axis hidden looks like this:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-21.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-21.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/v22otbqg/) to edit the above chart
 
@@ -1066,7 +1066,7 @@ You can opt to show these hidden outlier values.
 
 A box and whisker chart with outlier values shown on the chart looks like this:
 
-{% embed_all standard-charts-box-and-whisker-chart-example-22.js %}
+{% embed_chart standard-charts-box-and-whisker-chart-example-22.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/oukgfmca/) to edit the above chart
 
