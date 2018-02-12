@@ -67,23 +67,19 @@ Now, let's customize the appearance and properties of the charts.
 
 ## Change axis limits
 
-The chart, by default, calculates the y-axis upper and lower limits based on the data provided to it. To let the column assume a value not covered within this axis range, increase or decrease the limits using the menu button at the top-right of the chart.
+The chart, by default, calculates the y-axis upper and lower limits based on the data provided to it. To let the column assume a value not covered within this axis range, increase or decrease the limits using the menu button at the top-right of the chart. Click the menu button, a pop-up with the options to increase or decrease the upper and lower limits appears.
 
-![Dashboard]({% site.baseurl %}/gif/standard-charts-drag-able-charts-gif-1.gif)
+elect any of the above options, to increase or decrease the chart limits using auto-calculated intervals. 
 
-Once you've clicked the menu button, a pop-up with the options to increase or decrease the upper and lower limits is revealed. Click on this menu button to reveal a menu with the options to increase or decrease the upper and lower limits.
+![Change Axis Limits]({% site.baseurl %}/gif/standard-charts-drag-able-charts-gif-1.gif)
 
-IMAGE
+However, to set manual values for the upper/lower limits, click the limits and edit them directly.
 
-Select any of the above options, to increase or decrease the chart limits using auto-calculated intervals. However, to set manual values for the upper/lower limits, click the limits and edit them directly.
+![Change Axis Limits Manually]({% site.baseurl %}/gif/standard-charts-drag-able-charts-gif-2.gif)
 
-IMAGE
+> If you enter a limit value which cannot be accepted by the chart, the value will turn red to indicate that the value can not be accepted as shwon below:
 
-IMAGE
-
-If you enter a limit value which cannot be accepted by the chart, the value will turn red to indicate that the value can not be accepted as shown below:
-
-IMAGE
+![Set wrong axis limits]({% site.baseurl %}/gif/standard-charts-drag-able-charts-gif-3.gif)
 
 ## Manage chart limits using javaScript API
 

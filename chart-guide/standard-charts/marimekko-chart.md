@@ -136,4 +136,4 @@ The Marimekko chart includes support for an interactive legend starting FusionCh
 
 For example, in the Marimekko chart shown above, if you were to hide the data plots for Washington using the legend, the data plots for California and Nevada will be automatically arranged in the available space, as shown in the image below:
 
-IMAGE
+![Marimekko-Legend Interactivity]({% site.baseurl %}/gif/standard-charts-marimekko-gif-1)
