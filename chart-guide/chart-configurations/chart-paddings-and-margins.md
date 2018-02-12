@@ -30,13 +30,15 @@ Refer to the code below:
         "chartRightMargin": "40",
         "chartBottomMargin": "40",
        ...
-    },
-
+    }
+}
 ```
 
 The chart will look like as shown in the image below:
 
-<chart>
+{% embed_chart chart-configurations-chart-paddings-and-margins-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/nzz8pwv4/) to edit the above chart.
 
 ## Set padding for caption
 
@@ -47,10 +49,16 @@ Set the amount of empty space between the sub-caption and the top of the chart c
     "chart": {
         ...
         "captionPadding": "40",
-       ...
-    },
-
+        ...
+    }
+}
 ```
+
+The chart will look like as shown in the image below:
+
+{% embed_chart chart-configurations-chart-paddings-and-margins-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/8jfb6ozx/) to edit the above chart.
 
 ## Set padding for axes names
 
@@ -63,22 +71,21 @@ Set the axis name padding and axis value padding, to control the amount of space
 Refer to the code below:
 
 ```
-
-<chart xAxisNamePadding="10", yAxisNamePadding="10">
-
 {
     "chart": {
         ...
         "xAxisNamePadding": "10",
         "yAxisNamePadding": "10",
        ...
-    },
-
+    }
+}
 ```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-chart-paddings-and-margins-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/o618rzq3/) to edit the above chart.
 
 ## Set padding for axis values
 
@@ -92,12 +99,14 @@ Refer  to the code below:
         ...
         "yAxisValuePadding": "10",
        ...
-    },
-
+    }
+}
 ```
 The chart will look like as shown below:
 
-<CHART>
+{% embed_chart chart-configurations-chart-paddings-and-margins-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/dq73doa6/) to edit the above chart.
 
 ## Set padding for data label and data value 
 
@@ -109,15 +118,18 @@ Refer to the code below:
 {
     "chart": {
         ...
-        "labelPadding": "3",
+        "labelPadding": "5",
        ...
-    },
+    }
+}
 
 ```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-chart-paddings-and-margins-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/xz890my7/) to edit the above chart.
 
 ## Set padding for data value
 
@@ -129,15 +141,17 @@ Refer to the code below:
 {
     "chart": {
         ...
-        "labelPadding": "3",
+        "valuePadding": "5",
        ...
-    },
-
+    }
+}
 ```
 
 The chart will look like as shown below:
 
-<CHART>
+{% embed_chart chart-configurations-chart-paddings-and-margins-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/eozmehL3/) to edit the above chart.
 
 ## Set canvas padding in a chart
 
@@ -157,4 +171,6 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-chart-paddings-and-margins-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/v0d46ngb/) to edit the above chart.
