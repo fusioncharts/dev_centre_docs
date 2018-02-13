@@ -123,7 +123,7 @@ The chart will look like as shown in the image below:
 
 Click [here](http://jsfiddle.net/fusioncharts/uyymusv0/) to edit the above chart.
 
-Apply `tooltipGrayOutColor` attribute to specify the color of the unfocused plot in the tooltip. Refer to the code below;
+Set `tooltipGrayOutColor` attribute to specify the color of the unfocused plot in the tooltip. Refer to the code below:
 
 ```
  {

@@ -7,9 +7,8 @@ breadcrumb: [["Home", "/"], ["Data Plot"]]
 
 Data plot refers to the column in column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart. You can enhance the way your data plot looks using colors, gradients and hover effects. 
 
-## Set colors for data plots
 
-### Individual data plots
+## Color individual data plots
 
 You can specify a custom color for each data plot. Specify the hex code of the color using the `color` attribute within `data` under the `chart` object.
 
@@ -92,7 +91,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/2kayhgmk/) to edit the above chart.
 
-### Different data series/data plots
+## Color different data series/data plots
 
 You can also specify a comma separated list of colors for use in different data series (or in case of single series charts, different data plots). The colors are selected from the list in a round-robin way for each data series. 
 
@@ -104,6 +103,7 @@ Specify your own palette for data plots by providing a list of hex colors using 
     ...
     "palettecolors":"FF5904,0372AB,FF0000"
     }
+    ...
 }
 ```
 
@@ -113,9 +113,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/j7cbwm5o/) to edit the above chart.
 
-## Gradient effects for data plots
-
-### Add gradient effect to data plots
+## Add gradient effect to data plots
 
 You can apply a global gradient color for an entire data plot. To do so follow the steps given below:
 
@@ -133,6 +131,7 @@ Refer to the code below:
         "plotGradientColor":"#ffffff"
         ...
     }
+...
 }    
 ```
 
@@ -142,7 +141,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/b781gp10/) to edit the above chart.
 
-### Customize gradient properties
+## Customize gradient properties
 
 Apart from a basic gradient effect, you can also customize the gradient angle and fill ratio for a data plot. To customize the gradient properties the following attributes are used:
 
@@ -164,7 +163,9 @@ Refer to the code below:
         "plotFillAlpha": "90",
         "plotFillRatio": "0,100"
     }
+...
 }
+
 ```
 
 The chart will look like as shown below:
@@ -175,7 +176,7 @@ Click [here](http://jsfiddle.net/fusioncharts/p26mehrm/) to edit the above chart
 
 ## Show/hide plot border
 
-Every data plot (column, area, or pie) has a border by default.Set the `showPlotBorder` to `0` to hide the plot border. 
+Every data plot (column, area, or pie) has a border by default. Set the `showPlotBorder` to `0` to hide the plot border. 
 
 Refer to the code below:
 
@@ -185,6 +186,7 @@ Refer to the code below:
         ...
         "showPlotBorder": "0"
     },
+...
 }
 ```
 
@@ -221,6 +223,7 @@ Refer to the code below:
         "plotBorderThickness": "1",
         "plotBorderColor": "#000000"
     },
+...
 }
 ```
 
@@ -254,11 +257,10 @@ Refer to the code below:
         "DashLen": "4",
         "DashGap": "4",
     }]
-}
 ...
+}
 
 ```
-
 The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-plot-example-7.js %}
@@ -276,11 +278,10 @@ Refer to the code below:
     "chart": {
         "useRoundEdges":"1"
     }
-}
 ...
+}
 
 ```
-
 The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-plot-example-8.js %}
@@ -322,13 +323,14 @@ Refer to the code below:
         "plotBorderHoverDashLen": "6",
         "plotBorderHoverDashGap": "2"
     }
-}
 ...
+}
+
 ```
 
 Shown below is a chart with hover effects enabled:
 
-{% embed_chart chart-configurations-data-plot-example-9.js %}
+![Data plot hover effect]({% site.baseurl %}/gif/configurations-dataplot-gif-1.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/znr9r87z/) to edit the above chart.
 
@@ -375,6 +377,6 @@ Refer to the code below:
 
 Shown below is a chart with hover effects enabled for an individual data plot:
 
-{% embed_chart chart-configurations-data-plot-example-10.js %}
+![Data plot hover effect]({% site.baseurl %}/gif/configurations-dataplot-gif-2.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/5rgy5Let/) to edit the above chart.
