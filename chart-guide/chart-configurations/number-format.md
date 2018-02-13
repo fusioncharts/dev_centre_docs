@@ -7,9 +7,7 @@ breadcrumb: [["Home", "/"], ["Number Format"]]
 
 FusionCharts Suite XT offers multiple options to format numbers on the chart. You can configure number prefixes and suffixes, decimal places, and scale numbers based on a predefined scale.
 
-## Number formatting basics
-
-### Round off decimal places
+## Round off decimal places
 
 To round off the decimals for all the numbers on the chart set the number of decimal places to which all the numbers on the chart will be rounded off to using the `decimals` attribute. Valid range is from `0` to `10`.
 
@@ -18,15 +16,17 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
+        ...
         "decimals": "2",
-       
-    },
+    }
+}
  ```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-number-format-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/cqah4e7x/) to edit the above chart.
 
 You can also round off the decimal places for only the horizontal and vertical div lines. To do so, set the decimal precision of the div lines using the `yAxisValueDecimals` (horizontal div lines) and `xAxisValueDecimals` (vertical div lines) attributes respectively. 
 
@@ -37,18 +37,20 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
+        ...
         "yAxisValueDecimals": "2",
-
         "xAxisValueDecimals": "3",
-    },
+    }
+}
  ```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-number-format-example-3.js %}
 
-### Round off with trailing zeroes
+Click [here](http://jsfiddle.net/fusioncharts/6w50wtfd/) to edit the above chart.
+
+## Round off with trailing zeroes
 
 Use the following attributes to force trailing zeroes:
 
@@ -63,17 +65,19 @@ Refer to the code snippets below:
 ```
 {
     "chart": {
-       ...
+        ...
         "forceDecimals": "1",
-    },
-
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-number-format-example-2.js %}
 
-### Disable automatic formatting of numbers
+Click [here](http://jsfiddle.net/fusioncharts/2g4ne3xf/) to edit the above chart.
+
+## Disable automatic formatting of numbers
 
 FusionCharts XT automatically formats numbers displayed on charts. Use the following attributes to disable automatic number formatting:
 
@@ -92,15 +96,22 @@ FusionCharts XT automatically formats numbers displayed on charts. Use the follo
 Refer to the code below:
 
 ```
-**INSERT CODE**
+{
+    "chart": {
+        ...
+        "formatNumber": "0"
+    }
+}
 ```
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-number-format-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/L6bzmLd7/) to edit the above chart.
 
 A column 2D chart with automatic number formatting looks as the one given above. The data for the chart is 12523, 14570.230, 17375 and 18235.79. FusionCharts Suite XT automatically formats the number scaling by converting it to K and M.
 
-### Customize thousand and decimal separator
+## Customize thousand and decimal separator
 
 You can customize the thousand and decimal separator characters from the default `,` (comma) and `.` (dot) respectively. To do so, use the attributes given below:
 
@@ -117,18 +128,20 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
+        ...
         "decimalSeparator": ",",
         "thousandSeparator": "."
-    },
-
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-number-format-example-5.js %}
 
-### Configure thousand separator position
+Click [here](http://jsfiddle.net/fusioncharts/Lab3ckjd/) to edit the above chart.
+
+## Configure thousand separator position
 
 Specify the number of digits after which the thousand separator character should be placed, using the `thousandSeparatorPosition` attribute. If you set its value to `0`, the attribute will take its default value, which is `3`, and place the separator after every three digits starting from the right.
 
@@ -137,17 +150,19 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
+        ...
         "thousandSeparatorPosition": "2,3"
-    },
-
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-number-format-example-6.js %}
 
-### Add number prefix and suffix
+Click [here](http://jsfiddle.net/fusioncharts/r8bL2r4p/) to edit the above chart.
+
+## Add number prefix and suffix
 
 To customize the prefix and suffix of the numbers on the chart, use the following attributes:
 
@@ -168,24 +183,24 @@ Refer to the code below:
 ```
 {
     "chart": {
-	...
+	   ...
         "numberSuffix": "/day",
         "numberPrefix": "$"
-    },
-
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-number-format-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/hd8uvdfp/) to edit the above chart.
 
 > For dual y-axis charts, the primary axis performs number formatting and scaling by default. However, you have to explicitly define formatting and scaling for the secondary axis. To define the formatting and scaling properties for the secondary axis, prefix 's' to the attribute name. So, `numberPrefix` becomes `sNumberPrefix`, `forceYAxisValueDecimals` becomes `forceSYAxisValueDecimals`, and so on.
 
 ## Shorten data values
 
 Shorten numbers displayed on charts by scaling them, with commonly used scales like K, M, etc..You can also define your own scales for numbers and then apply it to all numbers on the chart.
-
-### Basic example
 
 Let's start with the most basic example, which is already defined in the FusionCharts Suite XT- thousands (K) and millions (M) scales. 
 
@@ -196,21 +211,23 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
-        "formatNumberScale": "1", 
-    },
-
+        ...
+        "formatNumberScale": "1"
+    }
+}    
 ```
 
 If you plot the data values as 1252322, 857023, 903753 and 1082357, then the rendered chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-number-format-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/xgufmpyw/) to edit the above chart.
 
 Notice that the numbers have been scaled down to K. By default, FusionCharts Suite XT has the K, M scaling defined for each chart. 
 
 In the following subsections, you can see how to define the scaling to suit your requirements:
 
-### Add billions to default scaling
+## Add billions to default scaling
 
 FusionCharts Suite XT does not have the scaling for billions defined. You have to explicitly modify the number scaling to add billions.
 
@@ -233,14 +250,17 @@ Refer to the code below:
 ```
 {
     "chart": {
-      ...
+        ...
         "numberScaleValue": "1000,1000,1000",
         "numberScaleUnit": "K,M,B"
-    },
+    }
+}
 ```
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-number-format-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/xpmu165b/) to edit the above chart.
 
 ### Example 1: Display time in the scale
 
@@ -252,16 +272,17 @@ Refer to the code below:
 {
     "chart": {
         ...
-
         "numberScaleValue": "60",
-        "numberScaleUnit": " minutes",
-    },
-
+        "numberScaleUnit": " minutes"
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-number-format-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/obryn50m/) to edit the above chart.
 
 ### Example 2: Display storage capacity in the scale
 
@@ -272,18 +293,20 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
+        ...
         "numberScaleValue": "1024,1024,1024",
-        "numberScaleUnit": " MB, GB, TB",       
-    },
-
+        "numberScaleUnit": " MB, GB, TB",     
+    }
+}
 ``` 
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-number-format-example-12.js %}
 
-### Use recursive number scaling
+Click [here](http://jsfiddle.net/fusioncharts/oupfaws8/) to edit the above chart.
+
+## Use recursive number scaling
 
 Recursive number scaling comes into the picture when you have number scales defined for your chart. With this, you can display the chart data better by breaking up the predefined number scale into smaller sections. For example, in a chart where time is being plotted, you can display 3.87 days as 3 days, 20 hours, 52 minutes and 25 seconds.
 
@@ -298,15 +321,17 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
-       "scaleRecursively": "1",
-        "maxScaleRecursion": "-1",
-    },
-
+        ...
+        "scaleRecursively": "1",
+        "maxScaleRecursion": "-1"
+    }
+}
 ``` 
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-number-format-example-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/L57nsapm/) to edit the above chart.
 
 > For Scatter and Bubble charts, use the `xScaleRecursively`, `xMaxScaleRecursion`, and `xScaleSeparator` attributes to scale the numbers recursively on the x-axis. These attributes will work only when you set the `xAxisLabelMode` attribute to `AUTO` or `MIXED`. To scale the numbers recursively on the secondary y-axis in a Dual Y-Axis chart, use the attributes `sScaleRecursively`, `sMaxScaleRecursion`, and `sScaleSeparator`.
