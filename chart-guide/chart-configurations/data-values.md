@@ -59,7 +59,7 @@ You can opt to rotate the data values horizontally. Set the `rotateValues` to `0
 
 Refer to the code below:
 
-``
+```
 {
     "chart": {
         ...

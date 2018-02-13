@@ -16,7 +16,7 @@
             "placeValuesInside": "0",
             "rotateValues": "0",
             "valueFont": "Arial",
-            "valueFontColor": "#6699cc",
+            "valueFontColor": "#ffffff",
             "valueFontSize": "12",
             "valueBgColor": "#666666",
             "valueBgAlpha": "90",

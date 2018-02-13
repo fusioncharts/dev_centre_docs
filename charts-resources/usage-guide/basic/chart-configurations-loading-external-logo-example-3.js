@@ -15,7 +15,7 @@
             //External image url path for logo
             "logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
             //Scaling logo image
-            "logoScale": "110",
+            "logoScale": "80",
             //Setting logo position
             "logoPosition": "TR",
             "logoLink": "N-http://www.fusioncharts.com/"

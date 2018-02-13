@@ -17,7 +17,7 @@
             //Changing logo alpha
             "logoAlpha": "40",
             //Scaling logo image
-            "logoScale": "110",
+            "logoScale": "80",
             //Setting logo position
             "logoPosition": "TR"
         },
