@@ -16,21 +16,19 @@ You can specify a custom tool-text which will be rendered when the mouse pointer
 Refer to the code below:
 
 ```
-"trendlines": [
-        {
-            "line": [
-                {
-                    ...
-                    "tooltext": "Quarterly sales target was $startDataValue",
-
-                }
-            ]
-
+"trendlines": [{
+    "line": [{
+        ...
+        "tooltext": "Quarterly sales target was $startDataValue",
+    }]
+}]
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-trend-lines-and-zones-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/qfeojqqq/) to edit the above chart.
 
 ## Add trend zones
 
@@ -42,32 +40,24 @@ Trend zones are similar to trend lines, except that they mark out an entire zone
 
 * Specify the data value of the end point of a trend zone using the `endValue` attribute. If you include this attribute in the code and set the `IsTrendZone` attribute to `0`, the trend-line will be rendered as a slanted line, starting at the `startValue` on the primary y-axis and ending at `endValue` on the secondary y-axis (which can be an imaginary secondary y-axis).
 
-
 Refer to the code below:
 
 ```
-"trendlines": [
-        {
-            "line": [
-                {
-	         ...
-                    "isTrendZone": "1",
-                    "startvalue": "175000",
-                    "endValue": "150000",
-                   
-                }
-
-		]
-
-}
-
-]	
-
+"trendlines": [{
+    "line": [{
+	...
+    "isTrendZone": "1",
+    "startvalue": "175000",
+    "endValue": "150000"
+    }]
+}]
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-trend-lines-and-zones-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/Lwhvy97s/) to edit the above chart.
 
 ## Customize trend lines and trend zones
 
@@ -82,26 +72,22 @@ Use the following attributes to customize trend lines and trend zones:
 Refer to the code below:
 
 ```
-
-"trendlines": [
-        {
-            "line": [
-                {
-                    ...
-                    "color": "#8cbb2c",
-                    "thickness": "4",
-                    "alpha": "60",
-                   
-                }
-            ]
-        }
-    ]
+"trendlines": [{
+    "line": [{
+        ...
+        "color": "#8cbb2c",
+        "thickness": "4",
+        "alpha": "60",
+    }]
+}]
 
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-trend-lines-and-zones-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/0x1zrh55/) to edit the above chart.
 
 ## Customize the trend line display value text
 
@@ -137,27 +123,27 @@ Use the attributes given below to customize the trend line display value text:
 
 * Set the gap between each dash, if the border around the trend-line display value is drawn as a dashed line, using the `trendValueBorderDashGap` attribute.
 
-
 Refer to the code below:
 
 ```
 {
     "chart": {
-       …
-
+        ...
         "trendValueFontBold": "1",
         "trendValueBorderColor": "#123456",
         "trendValueBorderDashed": "1",
         "trendValueBorderDashlen": "2",
         "trendValueBorderDashGap": "3",
         "trendValueBorderThickness": "3"
-    },
-
+    }
+}
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-trend-lines-and-zones-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/bf7jLjo2/) to edit the above chart.
 
 ## Add dashed trend lines
 
@@ -170,24 +156,22 @@ Use the attributes given below to render a dashed trend line instead of the cont
 * Set the gap between two consecutive dashes in trend lines (in pixels) using the `dashGap` attribute.
 
 ```
-"trendlines": [
-        {
-            "line": [
-                {
-                    ...
-                    "dashed": "1",
-                    "dashLen": "4",
-                    "dashGap": "2"
-                }
-            ]
-        }
-    ]
+"trendlines": [{
+    "line": [{
+        ...
+        "dashed": "1",
+        "dashLen": "4",
+        "dashGap": "2"
+    }]
+}]
 
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-trend-lines-and-zones-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/mepm69sL/) to edit the above chart.
 
 ## Add slanted trend lines
 
@@ -200,23 +184,21 @@ Use the following attributes to render a slanted trend line:
 Refer to the code below:
 
 ```
-"trendlines":        {
-            "line":                {
-
-         ...
-                    "startvalue":400",
-                    "endValue":000",
-                   
-                }
-            ]
-        }
-    ]
+"trendlines": [{
+    "line": [{
+        ...
+        "startvalue":400",
+        "endValue":000",
+    }]
+}]
 
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-trend-lines-and-zones-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/3r9r9bsr/) to edit the above chart.
 
 ## Configure the trend line label
 
@@ -225,23 +207,19 @@ Show the trend line label to the right of the chart canvas by setting the value 
 Refer to the code below:
 
 ```
-"trendlines": [
-        {
-            "line": [
-                {
-                   …
-
-                    "valueOnRight": "1"
-                }
-            ]
-        }
-    ]
-
+"trendlines": [{
+    "line": [{
+        ...
+        "valueOnRight": "1"
+    }]
+}]
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-trend-lines-and-zones-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/0u6eLpzc/) to edit the above chart.
 
 ## Add trend lines for a dual y-axis chart
 
@@ -250,21 +228,10 @@ Since a dual y-axis chart has 2 y-axes, you need to define both the trend line a
 Refer to the code below:
 
 ```
-"trendlines": [
-        {
-            "line": [
-                {
-                   …
-
-                    "parentYAxis": "S"
-                }
-            ]
-        }
-    ]
-
+"trendlines": [{
+    "line": [{
+        ...
+        "parentYAxis": "S"
+    }]
+}]
 ```
-
-The chart will look as shown below:
-
-<chart>
-
