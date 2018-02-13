@@ -13,7 +13,7 @@ A tooltip is displayed when the mouse is hovered over a particular data point. I
 
 * It denotes a series name, category name, and data value for multi-series and combination charts.
 
-## **Show/hide tooltips**
+## Show/hide tooltips
 
 By default, the tooltip is displayed. To hide the tool tip set the `showToolTip` attribute to `0`. 
 
@@ -25,14 +25,17 @@ Refer to the code below:
         ...
         "showToolTip": "0"
         ...
-    },
+    }
+}
 ```
 
 The chart will look as shown below:
 
 <chart>
 
-## **Customize tooltips**
+Click [here](http://jsfiddle.net/fusioncharts/m521xpzs/) to edit the above chart.
+
+## Customize tooltips
 
 To customize the tooltip use the following attributes:
 
@@ -40,7 +43,7 @@ To customize the tooltip use the following attributes:
 
 * Specify the hex code of the tooltip border color using the `toolTipBorderColor` attribute. Example - #ffaffa.
 
-* By default, the character used to separate the name and the value within the tooltip is set as `,`. Set a different separator character using the `ToolTipSepChar` attribute. This attribute accepts any string, e.g. `:`
+* By default, the character used to separate the name and the value within the tooltip is set as `,`. Set a different separator character using the `ToolTipSepChar` attribute. This attribute accepts any string, e.g. `:`.
 
 * Set the `showTooltipShadow` attribute to `1` in order to display shadow. 
 
@@ -54,7 +57,8 @@ Refer to the code below:
         "toolTipBgColor": "#666666",
         "toolTipBgAlpha": "80",
         "showToolTipShadow": "1"
-    },
+    }
+}
 
 ```
 
@@ -62,7 +66,9 @@ The chart will look as shown below:
 
 <chart>
 
-## **Display multiline tooltip text**
+Click [here](http://jsfiddle.net/fusioncharts/df92k3t5/) to edit the above chart.
+
+## Display multiline tooltip text
 
 By default, a tooltip shows the data item name and value in a single line of text. However, if you want to display more information on the tooltip, you can use the attribute `tooltext`to show the text in multiline format.
 
@@ -71,24 +77,23 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
-
-"data": [
-        {
-            ...
-            "tooltext": "Quarter 1{br}Total Sale: $195K{br}Rank: 1"
-	...
-        },
-
+        ...
     },
-
+    "data": [{
+        ...
+        "tooltext": "Quarter 1{br}Total Sale: $195K{br}Rank: 1"
+        ...
+    }
+}
 ```
 
 The chart will look as shown below:
 
 <chart>
 
-**Introduction to Macros**
+Click [here](http://jsfiddle.net/fusioncharts/13a8664h/) to edit the above chart.
+
+## Introduction to Macros
 
 FusionCharts Suite XT 3.4 introduces macros to configure dynamic and contextual content in tooltips. A macro is an instruction recorded using a combination of characters for a specific purpose. 
 
@@ -98,13 +103,13 @@ Tooltips can be configured to include supplementary information about the data p
 
 Keep the following pointers in mind when using macros:
 
-1. Macros are case-insensitive.
+* Macros are case-insensitive.
 
-2. A macro which is not applicable will be treated as string.
+* A macro which is not applicable will be treated as string.
 
-3. To use a macro name as text in tooltip use "" before the "$" sign. Example: to show "$value" in tooltip use "$value" in `tooltext` attribute.
+* To use a macro name as text in tooltip use "" before the "$" sign. Example: to show "$value" in tooltip use "$value" in `tooltext` attribute.
 
-4. Tooltext can also be configured from corresponding parent nodes (that is, chart, dataset, etc).
+* Tooltext can also be configured from corresponding parent nodes (that is, chart, dataset, etc).
 
 ### How to use tooltip macros
 
@@ -121,22 +126,22 @@ Refer to the code below:
 ```
 {
     "chart": {
-…
-
-     "plotToolText": "Store location: $label <br> Sales (YTD): $dataValue <br> $displayValue"
-
-
-...
-    },
+        ...
+        "plotToolText": "Store location: $label <br> Sales (YTD): $dataValue <br> $displayValue"
+        ...
+    }
+}
 ```
 
 The chart will look like as shown below:
 
 <chart>
 
-**Note**: In the chart above, if the data plot value is 750000 and you use `$value`, `750000` will be rendered as the value. However, if you use `$dataValue`, then `$750K` will be rendered as the value.
+Click [here](http://jsfiddle.net/fusioncharts/j1327y7v/) to edit the above chart.
 
-### Other attributes you can use
+> In the chart above, if the data plot value is 750000 and you use `$value`, `750000` will be rendered as the value. However, if you use `$dataValue`, then `$750K` will be rendered as the value.
+
+### Other attributes
 
 The following are some of the FusionCharts attributes that take tooltip macros as values. You can use these to customize tooltip text for the various chart elements.
 
@@ -183,26 +188,24 @@ Refer to the code below:
 ```
 {
     "chart": {
-…
-
-     "trendlineToolText": "$displayValue: $startDataValue"
-
-
-...
-    },
-
-
+        ...
+        "trendlineToolText": "$displayValue: $startDataValue"
+        ...
+    }
+}
 ```
 
 The chart will look like as shown below:
 
 <chart>
 
+Click [here](http://jsfiddle.net/fusioncharts/67Lzs1fq/) to edit the above chart.
+
 In the above chart, hover the mouse pointer over the trend-lines to see the tooltip text. You can find the description of the `trendlineToolText` attribute, in the <<Other attributes you can use>> section. Also, for details on the `$displayValue` macro, visit the <<How to use tooltip macros>>section.
 
 Apart from the ones given above, you can use either the `$startDataValue` macro (which represents the formatted starting value of a trend-line/trend-zone), or the `$startValue` macro (which represents the unformatted starting value). If the starting value is 680000 and you use `$startDataValue`, then the chart will show $680k as the data value. On the other hand, if you use `$startValue`, then the chart will show 680000 as the data value.  
 
-Click <<***here***>> for the complete list of tooltip macros supported by FusionCharts Suite XT.
+Click here for the complete list of tooltip macros supported by FusionCharts Suite XT.
 
 ### Example 2: Tooltip Macros for Map Connectors
 
@@ -221,18 +224,18 @@ Refer to the code below:
 ```
 {
     "chart": {
-     ...
+        ...
         "connectorToolText": "<b>From</b>: $fromLabel <br> <b>To</b>: $toLabel <br> <b>Daily shipments (avg)</b>: $label Units"
-     ...
-	 
-},
-
+        ...
+    }
+}
 ```
-
 
 The chart will look as shown below:
 
 <chart>
+
+Click [here](http://jsfiddle.net/fusioncharts/0dwyegdw/) to edit the above chart.
 
 In the chart above, you can see that the `connectorToolText` attribute has been used to configure a tooltip for the average shipping volume of a distribution network. The tooltip includes:
 
@@ -242,7 +245,7 @@ In the chart above, you can see that the `connectorToolText` attribute has been 
 
 * Average number of shipments made every day for the last quarter, from the source to the destination
 
-Click <<here>> for the complete list of tooltip macros supported by FusionCharts Suite XT.|
+Click here for the complete list of tooltip macros supported by FusionCharts Suite XT.|
 
 ### Example 3: Tooltip Macros for the Box and Whisker Chart
 
@@ -275,19 +278,22 @@ Refer to the code below:
 ```
 {
     "chart": {
-     ...
+        ...
         "plotToolText": "$seriesName Teachers-$label  <br> <br> Max value: $maxDataValue <br> Min value: $minDataValue <br> <br> Q3: $Q3 <br> Median: $median <br> Q1: $Q1 <br> <br> Mean: $mean <br> <br> Standard deviation: $SD <br> Quartile Deviation: $QD <br> Mean Deviation: $MD"
-     ... 
-},
-
+        ... 
+    }
+}
 ```
+
 The chart will look as shown below:
 
 <chart>
 
+Click [here](http://jsfiddle.net/fusioncharts/mgkhxywt/) to edit the above chart.
+
 In the chart shown above, tooltip macros for the box and whisker chart have been used to add the mean, quartile deviation, standard deviation, and mean deviation values to the tooltip text.
 
-**Note**: By default, the tooltip text for the data plots in a box and whisker chart includes the following values:
+> By default, the tooltip text for the data plots in a box and whisker chart includes the following values:
 
 * Minimum value
 
@@ -297,28 +303,4 @@ In the chart shown above, tooltip macros for the box and whisker chart have been
 
 * Median
 
-Click <<here>> for the complete list of tooltip macros supported by FusionCharts Suite XT.|
-
-### Example 4: Display HTML tables in tooltips
-
-Display dynamic HTML tables in tooltips using the `plotToolText` attribute. You can assign text, text containing macros, or HTML strings as value. All applicable styles and CSS will also work. 
-
-Refer to the code below:
-
-```
-{
-    "chart": {
-     …
-
- <div id='headerdiv'>$label</div><div><table width='120' border='1'><tr><td class='labelDiv'>Total Sale</td><td class='allpadding'>$value</td></tr><tr><td class='labelDiv'>Quarter</td><td class='allpadding'>$label</td></tr></table></div>
-     ... 
-},
-
-```
-
-The chart will look as shown below:
-
-<chart>
-
-Apart from the examples given above, you can also use `rollover()` and `rollout()` events along with the `plotToolText` attribute on the data plot, to display the pie 2D chart for each data plot when the mouse pointer is hovered over it.
-
+Click here for the complete list of tooltip macros supported by FusionCharts Suite XT.|
