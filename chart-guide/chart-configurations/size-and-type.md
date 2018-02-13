@@ -5,9 +5,7 @@ heading: Changing the Size and Type
 breadcrumb: [["Home", "/"], ["Changing the size and type"]]
 ---
 
-# Change the Size and Type
-
-Till now, you have seen how to build standalone charts, gauges, and maps, with each chart rendered on a separate HTML page. However, you can also integrate multiple charts on a single page to get a consolidated view. To do this, modify the dimensions of each chart so that it fits on the page.
+Integrate multiple charts on a single page to get a consolidated view. To do this, modify the dimensions of each chart so that it fits on the page.
 
 FusionCharts Suite XT lets you specify the dimensions of charts either in pixels or percentage values, relative to the containers. If the size is specified in pixels, then the dimensions of a chart remain constant, no matter the viewing device or screen size. However, if the dimensions are set as a percentage of the container, the chart converts that % value into pixels while rendering. When the container size changes, the chart is automatically resized accordingly.
 
