@@ -7,7 +7,7 @@ breadcrumb: [["Home", "/"], ["Vertical Lines"]]
 
 Vertical (or horizontal in case of bar charts) separator lines or `vlines` are elements that can help differentiate between data blocks in a chart. They can be placed between any two data points, or aligned to specific data points.
 
-<image>
+![Vertical lines]({% site.baseurl %}/images/chart-configurations-vertical-lines-image-1.png)
 
 ## Set vertical lines
 
@@ -26,58 +26,34 @@ Refer to the code below:
 ```
 {
     "chart": {
-
        ...
-
     },
-
-    "data": [
-
-       ...
-
-        {
-
-            "label": "Fri",
-
-            "value": "5529"
-
-        },
-
-       ** {**
-
-**            "vline": "true",**
-
-**            "label": "Weekend Start",**
-
-**            "linePosition": "0.7"**
-
-**        },**
-
-        {
-
-            "label": "Sat",
-
-            "value": "5803"
-
-        },
-
-        {
-
-            "label": "Sun",
-
-            "value": "6202"
-
-        }
-
-    ]
-
+    "data": [{
+        "label": "Fri",
+        "value": "5529"
+    },
+    {
+        "vline": "true",
+        "label": "Weekend Start",
+        "linePosition": "0.7"
+    },
+    {
+        "label": "Sat",
+        "value": "5803"
+    },
+    {
+        "label": "Sun",
+        "value": "6202"
+    }]
 }
 
  ```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-vertical-lines-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/L5dfydco/) to edit the above chart.
 
 ### Configure label positions
 
@@ -85,62 +61,35 @@ To set the position of the label, specify the position using the `labelPosition`
 
 ```
 {
-
     "chart": {
-
-       ...
-
+        ...
     },
-
-    "data": [
-
-       ...
-
-        {
-
-            "label": "Fri",
-
-            "value": "5529"
-
-        },
-
-       ** {**
-
-**            "vline": "true",**
-
-**            "label": "Weekend Start",**
-
-**            "linePosition": "0.7",**
-
-**            "labelPosition": "0.5"**
-
-**        },**
-
-        {
-
-            "label": "Sat",
-
-            "value": "5803"
-
-        },
-
-        {
-
-            "label": "Sun",
-
-            "value": "6202"
-
-        }
-
-    ]
-
+    "data": [{
+        "label": "Fri",
+        "value": "5529"
+    },
+    {
+        "vline": "true",
+        "label": "Weekend Start",
+        "linePosition": "0.7",
+        "labelPosition": "0.5"
+    },
+    {
+        "label": "Sat",
+        "value": "5803"
+    },
+    {
+        "label": "Sun",
+        "value": "6202"
+    }]
 }
-
- ```
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-vertical-lines-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/kLwfdgL0/) to edit the above chart.
 
 ### Configure label alignment
 
@@ -154,65 +103,37 @@ Refer to the code below:
 
 ```
 {
-
     "chart": {
-
-       ...
-
+        ...
     },
-
-    "data": [
-
-       ...
-
-        {
-
-            "label": "Fri",
-
-            "value": "5529"
-
-        },
-
-       ** {**
-
-**            "vline": "true",**
-
-**            "label": "Weekend Start",**
-
-**            "linePosition": "0.7",**
-
-**            "labelPosition": "0.5",**
-
-**            "labelVAlign": "middle",
-            "labelHAlign": "right"**
-
-**        },**
-
-        {
-
-            "label": "Sat",
-
-            "value": "5803"
-
-        },
-
-        {
-
-            "label": "Sun",
-
-            "value": "6202"
-
-        }
-
-    ]
-
+    "data": [{
+        "label": "Fri",
+        "value": "5529"
+    },
+    {
+        "vline": "true",
+        "label": "Weekend Start",
+        "linePosition": "0.7",
+        "labelPosition": "0.5",
+        "labelVAlign": "middle",
+        "labelHAlign": "right"
+    },
+    {
+        "label": "Sat",
+        "value": "5803"
+    },
+    {
+        "label": "Sun",
+        "value": "6202"
+    }]
 }
-
  ```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-vertical-lines-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/2ht3njrb/) to edit the above chart.
 
 ## Show label borders
 
@@ -221,132 +142,77 @@ To add borders to the label set the `showVLineLableBorder` to `1` within the `ch
 Refer to the code below:
 
 ```
-
 {
     "chart": {
         ...
-        "showVLineLabelBorder": "0",
     },
-
-    "data": [
-
-       ...
-
-        {
-
-            "label": "Fri",
-
-            "value": "5529"
-
-        },
-
-       ** {**
-
-**            "vline": "true",**
-
-**            "label": "Weekend Start",**
-
-**            "linePosition": "0.7",**
-
-**            "labelPosition": "0.5",**
-
-**            "labelVAlign": "middle",
-            "labelHAlign": "right"**
-
-**        },**
-
-        {
-
-            "label": "Sat",
-
-            "value": "5803"
-
-        },
-
-        {
-
-            "label": "Sun",
-
-            "value": "6202"
-
-        }
-
-    ]
-
+    "data": [{
+        "label": "Fri",
+        "value": "5529"
+    },
+    {
+        "vline": "true",
+        "label": "Weekend Start",
+        "linePosition": "0.7",
+        "labelPosition": "0.5",
+        "labelVAlign": "middle",
+        "labelHAlign": "right"
+    },
+    {
+        "label": "Sat",
+        "value": "5803"
+    },
+    {
+        "label": "Sun",
+        "value": "6202"
+    }]
 }
-
  ```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-vertical-lines-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/oo7wx0jg/) to edit the above chart.
 
 In order to show label borders for specific vertical lines, set the `showLabelBorder` attribute to `1` for a particular vertical line under `data`. This attribute overrides the setting in the chart object.
 
 Refer to the code below:
 
 ```
-
 {
     "chart": {
         ...
-       ** "showVLineLabelBorder": "0"**
     },
-
-    "data": [
-
-       ...
-
-        {
-
-            "label": "Fri",
-
-            "value": "5529"
-
-        },
-
-       ** {**
-
-**            "vline": "true",**
-
-**            "label": "Weekend Start",**
-
-**            "linePosition": "0.7",**
-
-**            "labelPosition": "0.5",**
-
-**            "labelVAlign": "middle",
-            "labelHAlign": "right",**
-
-**             "showLabelBorder": "0"**
-
-**        },**
-
-        {
-
-            "label": "Sat",
-
-            "value": "5803"
-
-        },
-
-        {
-
-            "label": "Sun",
-
-            "value": "6202"
-
-        }
-
-    ]
-
+    "data": [{
+        "label": "Fri",
+        "value": "5529"
+    },
+    {
+        "vline": "true",
+        "label": "Weekend Start",
+        "linePosition": "0.7",
+        "labelPosition": "0.5",
+        "labelVAlign": "middle",
+        "labelHAlign": "right",
+        "showLabelBorder": "1"
+    },
+    {
+        "label": "Sat",
+        "value": "5803"
+    },
+    {
+        "label": "Sun",
+        "value": "6202"
+    }]
 }
-
  ```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-vertical-lines-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/6zL3r5d1/) to edit the above chart.
 
 ## Customize visual properties
 
@@ -367,74 +233,41 @@ To customize the visual properties of the vertical line the following attributes
 Refer to the code below:
 
 ```
-
 {
-
     "chart": {
-
-       ...
-
+        ...
     },
-
-    "data": [
-
-       ...
-
-        {
-
-            "label": "Fri",
-
-            "value": "5529"
-
-        },
-
-       ** {**
-
-**            "vline": "true",**
-
-**            "label": "Weekend Start",**
-
-**            "linePosition": "0.7",**
-
-**            "labelPosition": "0.5",**
-
-**            "labelVAlign": "middle",
-            "labelHAlign": "right"**
-
-**            "color": "#6da81e",
-            "thickness": "2",
-            "alpha": "50",
-            "dashed": "1",
-            "dashLen": "4",
-            "dashGap": "2"**
-
-**        },**
-
-        {
-
-            "label": "Sat",
-
-            "value": "5803"
-
-        },
-
-        {
-
-            "label": "Sun",
-
-            "value": "6202"
-
-        }
-
-    ]
-
+    "data": [{
+        "label": "Fri",
+        "value": "5529"
+    },
+    {
+        "vline": "true",
+        "label": "Weekend Start",
+        "linePosition": "0.7",
+        "labelPosition": "0.5",
+        "labelVAlign": "middle",
+        "labelHAlign": "right"
+        "color": "#6da81e",
+        "thickness": "2",
+        "alpha": "50",
+        "dashed": "1",
+        "dashLen": "4",
+        "dashGap": "2"
+    },
+    {
+        "label": "Sat",
+        "value": "5803"
+    },
+    {
+        "label": "Sun",
+        "value": "6202"
+    }]
 }
-
- ```
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-vertical-lines-example-6.js %}
 
- 
-
+Click [here](http://jsfiddle.net/fusioncharts/r4y6ysb7/) to edit the above chart.
