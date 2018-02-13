@@ -21,9 +21,17 @@ Once you are done with the visual updating of data, you can submit the data, eit
 
 Let's create our first **drag-able column 2D** chart showcasing the actual and estimated inventory status for the top five food items at Bakersfield Central.
 
-To create a drag-able column 2D chart:
+To create a drag-able column 2D chart follow the steps given below:
 
-* Set the `type` attribute to `dragcolumn2d`.
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `dragcolumn2D`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 * Set the `allowDrag` attribute to specify whether the data plots representing a dataset will be drag-able. Set this attribute to `0` to disable the data plots from being drag-able, and set it to `1` (default) to enable them to be drag-able. This attribute belongs to the `dataset` object and makes all data plots for a dataset drag-able.
 
@@ -255,21 +263,16 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
 
     "snapToDiv": "1",
 
     "snapToDivRelaxation": "5"
-
   }
-
+...
 }
 
-...
-
 ```
-
 A drag-able column chart configured for snapping to the nearest div interval looks like this:
 
 {% embed_chart standard-charts-drag-able-charts-example-5.js %}

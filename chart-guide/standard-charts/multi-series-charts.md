@@ -25,7 +25,17 @@ The different types of multi-series charts available in the FusionCharts Suite X
 
 In this sample, let's create a multi-series column 2D chart  showcasing the comparison between quarterly revenue earned for the previous year and the current year. The columns for both datasets, one for the previous year and one for the current year, have been rendered using different colors. This makes it easy to interpret and compare the data.
 
-To create a multi-series column 2D chart, set the `type` attribute to `mscolumn2d`.
+To create a multi-series column 2D chart follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `mscloumn2d`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of multi-series column 2D chart.
 

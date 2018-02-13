@@ -13,13 +13,23 @@ The XY charts available in the FusionCharts Suite XT are:
 
 * Bubble Chart
 
-## Scatter Charts
+## Scatter Chart
 
 Scatter charts are used for plotting data that is defined in terms of two numeric parameters. Scatter charts are multi-series charts, but their data format is slightly different from that of conventional multi-series charts.
 
 Let's create a scatter chart plotted for two numeric values - the average day temperature (plotted on the x-axis and the sales (in USD) of beer and ice-cream (plotted on the y-axis); the chart shows how the temperature affects the sales revenue of beer and ice-cream.
 
-To create a scatter chart, set the `type` attribute to `scatter`.
+To create a scatter chart follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `scatter`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of scatter chart.
 
@@ -35,7 +45,17 @@ Bubble charts are used for plotting data that is defined in terms of three numer
 
 So let's create a bubble chart showing sales analysis of shoes of different brands for Harry's SuperMart for last month.
 
-To create a bubble chart, set the `type` attribute to `bubble`.
+To create a bubble chart follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `bubble`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of bubble chart.
 
@@ -158,6 +178,19 @@ Configure the vertical divisional lines, by following the points below:
 
 * By default, all divisional lines show their values. However, opt to skip every x(th) divisional line values using `xAxisValuesStep` attribute.
 
+```
+...
+{
+    "chart": {
+        "adjustVDiv": "1",
+        "showXAxisValues": "1",
+        "numVDivlines": "5",
+        "xAxisValuesStep": "1"
+    }
+...
+}
+
+```
 * Set the `vDivlineColor` attribute to specify the hex color code for the vertical divisional lines.
 
 * Set the `vDivlineThickness` attribute to specify the thickness of the vertical divisional lines. This attribute takes values between `1` (thinnest) and `5` (thickest).
@@ -170,6 +203,21 @@ Configure the vertical divisional lines, by following the points below:
 
 * Set the `vDivlineDashGap` attribute to specify the gap between each dash, if the vertical divisional lines are rendered as dashed lines.
 
+```
+...
+{
+    "chart": {
+        "vDivlineColor": "ff0000",
+        "vDivlineThickness": "2",
+        "vDivlineAlpha": "70",
+        "vDivlineIsDashed": "1",
+        "vDivlineDashLen": "4",
+        "vDivlineDashGap": "3"
+    }
+...
+}
+
+```
 * Set the `showAlternateVGridColor` attribute to specify the alternate color for the vertical grid bands.  The hex color code for the vertical grids is specified in `alternateVGridColor` attribute.
 
 * Set the `alternateVGridAlpha` attribute to specify the transparency for the alternate vertical grid bands. This attribute takes values between `0` (transparent) and `100` (opaque).
@@ -177,27 +225,16 @@ Configure the vertical divisional lines, by following the points below:
 Refer to the code below:
 
 ```
-...
 {
     "chart": {
-        "adjustVDiv": "1",
-        "showXAxisValues": "1",
-        "numVDivlines": "5",
-        "xAxisValuesStep": "1",
-        "vDivlineColor": "ff0000",
-        "vDivlineThickness": "2",
-        "vDivlineAlpha": "70",
-        "vDivlineIsDashed": "1",
-        "vDivlineDashLen": "4",
-        "vDivlineDashGap": "3",
         "showAlternateVGridColor": "1",
         "alternateVGridColor": "0ffff0",
         "alternateVGridAlpha": "40"
     }
-}
 ...
-```
+}
 
+```
 The chart will look like as shown below:
 
 {% embed_chart standard-charts-bubble-and-xy-charts-example-8.js %}
@@ -212,19 +249,13 @@ Refer to the code given below:
 
 ```
 {
-
     "chart": {
-
         "drawLine": "1"
-
     }
-
+...
 }
 
-...
-
 ```
-
 A scatter chart with all the data points connected by a line looks like this:
 
 {% embed_chart standard-charts-bubble-and-xy-charts-example-9.js %}
@@ -247,19 +278,17 @@ Refer to the code given below:
 
 ```
 {
-
-    "dataset": {
-
-        "showRegressionLine": "1"
-
+    "chart": {
+    ...
     }
-
+{
+    "dataset": {
+        "showRegressionLine": "1"
+    }
+...
 }
 
-...
-
 ```
-
 A scatter chart with regression lines looks like this:
 
 {% embed_chart standard-charts-bubble-and-xy-charts-example-10.js %}
@@ -289,7 +318,6 @@ Here, let's try out the same chart with the regression lines drawn using the **X
 Refer to the code below:
 
 ```
-...
 {
     "chart": {
         "showYonX": "1",
@@ -297,10 +325,10 @@ Refer to the code below:
         "regressionLineThickness": "5",
         "regressionLineAlpha": "70"
     }
-}
 ...
-```
+}
 
+```
 The same chart with regression lines drawn using the **X on Y** mode looks like this:
 
 {% embed_chart standard-charts-bubble-and-xy-charts-example-11.js %}
@@ -321,16 +349,11 @@ Refer to the code given below:
 
 ```
 {
-
     "chart": {
-
         "drawQuadrant": "1"
-
     }
-
-}
-
 ...
+}
 
 ```
 A bubble chart rendered with quadrants looks like this:
@@ -345,7 +368,6 @@ Refer to the code given below:
 
 ```
 {
-
     "chart": {
 
         //Drawing quadrants on chart
@@ -359,15 +381,11 @@ Refer to the code given below:
         //Setting y quadrant value to 12000
 
         "quadrantYVal": "12000"
-
     }
-
+...
 }
 
-...
-
 ```
-
 A bubble chart rendered with quadrants drawn at user-defined positions looks like this:
 
 {% embed_chart standard-charts-bubble-and-xy-charts-example-13.js %}
@@ -390,7 +408,6 @@ Refer to the code given below:
 
 ```
 {
-
     "chart": {
 
         "quadrantLabelTL": "Low Price / High Sale",
@@ -398,10 +415,8 @@ Refer to the code given below:
         "quadrantLabelBL": "Low Price / Low Sale",
         "quadrantLabelBR": "High Price / Low Sale",
     }
-
-}
-
 ...
+}
 
 ```
 A bubble chart with quadrant labels displayed looks like this:
@@ -420,21 +435,16 @@ We'll create a sample using some of the cosmetic properties for the quadrant lab
 
 ```
 {
-
     "chart": {
-
         "quadrantLabelFontItalic": "1",
         "quadrantLabelFontBold": "1",
         "quadrantLabelTLFontColor": "#123456",
         "quadrantLabelTRFontColor": "#ABCDEF",
         "quadrantLabelBLFontColor": "#123ABC",
         "quadrantLabelBRFontColor": "#DEF456"
-
     }
-
-}
-
 ...
+}
 
 ```
 A bubble chart showcasing the above cosmetic attributes for quadrant labels is shown below:
@@ -465,7 +475,6 @@ Refer to the code given below:
 
 ```
 {
-
     "chart": {
 
         "quadrantLineThickness": "2",
@@ -481,12 +490,9 @@ Refer to the code given below:
         "quadrantLineDashGap": "3",
 
         "quadrantLabelPadding": "5"
-
     }
-
-}
-
 ...
+}
 
 ```
 A bubble chart rendered with customized quadrant lines looks like this:

@@ -13,7 +13,19 @@ The zoom-scatter chart is primarily used to find correlations between datasets. 
 
 Let's create a chart which compares the admission rate (in percent) with the average annual returns on degree (in percent) for five majors and over a period of 20 years.
 
-To create a zoom scatter chart, set the `type` attribute to `zoomscatter`. Rest of the data structure is same as that of previous created charts. Some of the attributes used to create a zoom scatter chart are:
+To create a zoom scatter chart follow  the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `zoomscatter`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
+
+Some of the attributes used to create a zoom scatter chart are:
 
 * `id` attribute sets the unique id for the data plot. 
 
@@ -72,11 +84,8 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     ...
-
   },
 
   "dataset": [{
@@ -84,13 +93,10 @@ Refer to the code given below:
     "showRegressionLine" : "1"
 
   }]
-
+...
 }
 
-...
-
 ```
-
 A zoom-scatter chart rendered with regression lines is shown below:
 
 {% embed_chart standard-charts-zoom-scatter-charts-example-2.js %}
@@ -117,7 +123,7 @@ Here, let's try out the same chart with the regression lines drawn using the **X
 
 * Set the transparency of the regression line using `regressionLineAlpha` attribute. 
 
-Take a look at the zoom scatter chart rendered after making above changes:
+The chart will look like as shown below:
 
 {% embed_chart standard-charts-zoom-scatter-charts-example-3.js %}
 

@@ -27,7 +27,17 @@ The Marimekko chart shown below, when seen in the default mode, helps you instan
 
 * The percentage market share for each manufacturer, shown as a percentage label between the stacked columns. For example, Bose has a total market share of approximately 46%, as shown by the label between the data plots for Bose and Dell.
 
-To create a marimekko chart, set the `type` attribute to `marimekko`.
+To create a marimekko chart follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `marimekko`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of pie chart.
 
@@ -59,19 +69,13 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "usePercentDistribution": "0"
-
   }
-
+...
 }
 
-...
-
 ```
-
 A Marimekko chart rendered with actual values instead of percentage values looks like this:
 
 {% embed_chart standard-charts-marimekko-chart-example-2.js %}
@@ -88,16 +92,11 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "showSum": "0"
-
   }
-
-}
-
 ...
+}
 
 ```
 
@@ -115,16 +114,13 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "showAxisPercentValues": "0"
-
   }
-
+...
 }
 
-...
+```
 
 A Marimekko chart with the percentage labels on the x-axis hidden looks like this:
 

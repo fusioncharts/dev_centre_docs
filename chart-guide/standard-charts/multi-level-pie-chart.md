@@ -19,7 +19,17 @@ This chart can be used to show various types of data like:
 
 As an example, we will create a multi-level pie chart that shows the sales breakup of top product categories for the last quarter at Harry's SuperMart.
 
-To create a multi-level pie chart, set the `type` attribute to `multilevelpie`.
+To create a multi-level pie chart follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `multilevelpie`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of multi-level pie chart.
 

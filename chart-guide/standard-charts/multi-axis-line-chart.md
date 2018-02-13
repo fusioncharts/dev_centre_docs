@@ -39,7 +39,17 @@ The FusionCharts Suite XT multi-axis line chart includes the following features:
 
 Let's create our first multi-axis line which will showcase the revenue analysis Harry's SuperMart depending on the revenue, orders and footfall for 12 weeks. 
 
-To create a multi-axis line chart, set the `type` attribute to `multiaxisline`.
+To create a multi-axis line chart follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `multiaxisline`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 The attributes and the structure of the multi-axis line chart is a bit different from the multi-series charts. So there are some configurations and attributes which may help you in customizing your chart. They are:
 
@@ -54,6 +64,10 @@ The attributes and the structure of the multi-axis line chart is a bit different
 * Specify the `allowAxisShift` attribute to set the dynamic shifting of an axis. If you click an axis that is not the primary (the first from the left of the canvas) or the secondary (the first from the right canvas) axis, the axis to the left of this axis will replace it. The axis that you clicked will be placed at the end, in case of multiple axes. Setting this attribute to `0` will disable the shifting of axes, setting it to `1` (default) will enable it.
 
 * Set the `showAxis` attribute to specify whether the axis will be shown or hidden (referred to as an imaginary axis). Setting this attribute to `0` will hide the axis, setting it to `1` (default) will show it.
+
+Refer to the code below:
+
+**INSERT CODE**
 
 For a detailed list of attributes you can check the API reference page of multi-axis line chart.
 

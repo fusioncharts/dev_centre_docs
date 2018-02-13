@@ -33,7 +33,17 @@ The combination charts available in the FusionCharts Suite XT are:
 
 Let's create our first combination chart to showcase the comparison of actual revenue, projected revenue and the profit earned for each month of the last year. All three metrics have been plotted using different chart types - the actual revenue earned is plotted using a column chart, the projected revenue is plotted using a line chart, and the profit earned is plotted using an area chart.
 
-To create a single y-axis combination chart in 2D, set the `type` attribute to `msCombi2D`.
+To create a single y-axis combination chart in 2D follow the steps below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `mscombi2D`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of pie chart.
 
@@ -97,13 +107,10 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
     ...
-
   },
   ...
-
   "trendlines": [{
 
     "line": [{
@@ -116,7 +123,8 @@ Refer to the code given below:
 
       "displayvalue": "Average{br}Revenue"
 
-    }, {
+    }, 
+    {
 
       "startValue": "21",
 
@@ -149,16 +157,11 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "primaryAxisOnLeft" : "0"
-
   }
-
-}
-
 ...
+}
 
 ```
 

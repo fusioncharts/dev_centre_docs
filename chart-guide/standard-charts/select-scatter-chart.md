@@ -9,7 +9,17 @@ The select-scatter chart is a special type of chart that allows users to visuall
 
 This can be used for a variety of purposes, where you want your users to visually select data from the scatter chart. As an example, we will plot a select-scatter chart to show the products sold and the price points earned, for televisions and cell phones at Harry's SuperMart in one week.
 
-To create a select-scatter chart, set the `type` attribute to `selectscatter`.
+To create a select-scatter chart follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `selectscatter`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of select-scatter chart.
 
@@ -19,17 +29,15 @@ The select-scatter chart thus created looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/3JjL8/) to edit the select-scatter chart.
 
-## Select set of pointss
+## Select set of points
 
 To select a set of points, you can drag and draw a rectangle over the chart. All the points within this rectangle are now selected points. Once the rectangle has been drawn, you can resize it to adjust more points. The resize handlers let you do so.
 
-To select more scattered data points, you can add additional select rectangles on the chart. The process to add another select rectangle is the same, as shown in the image below. Click anywhere in the chart canvas and draw a rectangle.
+You can drag, resize, or delete any select rectangles individually. To delete any rectangle, you can click the `X` at the top right corner of the selection box. 
 
-IMAGE
+After selection click the `Submit` button. This button sends the JSON/XML data as a form to the server-side script. In the above sample, the JSON data for the selected points - the price and quantity of each tv/cell phone unit - have been displayed in a table. Click the `Restore` button to bring back the chart to its original state.
 
-You can drag, resize, or delete any select rectangles individually. To delete any select rectangle, you can click the `X` at the top right corner of the selection box and the rectangle will be gone.
-
-In the above chart, drag the mouse pointer across the chart to select a subset of data points. Once the selection process is over, click the `Submit` button. This button sends the JSON/XML data as a form to the server-side script. In the above sample, the JSON data for the selected points - the price and quantity of each tv/cell phone unit - have been displayed in a table. Click the `Restore` button to bring back the chart to its original state.
+![Select set of points]({% site.baseurl %}/gif/standard-charts-selectscatter-gif-1.gif)
 
 ## Get selected data
 
@@ -107,16 +115,11 @@ Refer to the code given below:
 
 ```
 {
-
 	"chart": {
-
 		"showRegressionLine": "1"
-
 	},
-
-}
-
 ...
+}
 
 ```
 A select-scatter chart rendered with a regression line is shown below:
@@ -149,19 +152,14 @@ Refer to the code given below:
 
 ```
 {
-
 	"chart": {
-
 		"showYOnX": "0",
 		"regressionLineColor": "f4cb00",
 		"regressionLineThickness": "3",
 		"regressionLineAlpha": "70"
-
 	},
-
-}
-
 ...
+}
 
 ```
 The chart looks like:

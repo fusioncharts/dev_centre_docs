@@ -10,7 +10,21 @@ Developed by the Japanese in the 1870s, the Kagi chart uses a series of vertical
 Let's create a Kagi chart which will show a series of connecting vertical lines. The thickness and direction of the lines will be dependent on the price. The line will extend until the prices are moving in the same direction. Once the prices reverse by a negative amount, a new Kagi line is drawn in a new column. When prices enter a previous high or low, the thickness of the kagi line changes.
 
 
-To create a kagi chart, set the `type` attribute to `kagi`.
+To create a Kagi chart, follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `kagi`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
+
+* Depending on the value passed to the `dataFormat` attribute, set the `dataSource` attribute(JSON/XML) from where the data will be fetched.
+
+* Specify the value for a data item using the `value` attribute within the `data` object.
 
 For a detailed list of attributes you can check the API reference page of kagi chart.
 

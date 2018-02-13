@@ -11,7 +11,17 @@ Essentially, trends are quite apparent from the general slope of a line chart. H
 
 Let's create our first step line chart where we will compare the revenue earned with the expense incurred in the last year. The step-like composition of the data segments gives an accurate representation for the revenue and expense for each month.
 
-To create a multi-series step line chart, set the `type` attribute to `msstepline`.
+To create a multi-series step line chart follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `msstepline`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of multi-series step line chart.
 
@@ -27,22 +37,17 @@ Click [here](http://jsfiddle.net/fusioncharts/DeFSs/) to edit the step line char
 
 By default, the step line chart displays the vertical joins - vertical lines that run through the edges of the horizontal planes thereby joining them into different steps. However, you can also disjoin the horizontal segments by hiding the vertical lines from the chart.
 
-To hide the vertical lines in your chart, set the `drawVerticalJoins` attribute to `0`. This attribute is used to specify whether the vertical joins that connect horizontal planes should be shown or not. 
+To hide the vertical lines in your chart, set the `drawVerticalJoins` attribute to `0`. 
 
 Refer to the code given below:
 
 ```
 {
-
 	"chart": {
-
 		"drawVerticalJoins": "0"
-
 	},
-
-}
-
 ...
+}
 
 ```
 A step line chart rendered without the vertical joins looks like this:
@@ -59,16 +64,11 @@ Refer to the code given below:
 
 ```
 {
-
 	"chart": {
-
 		"useForwardSteps": "0"
-
 	},
-
-}
-
 ...
+}
 
 ```
 A step line chart rendered with the forward progressive mode disabled looks like this:

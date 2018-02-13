@@ -9,7 +9,17 @@ A waterfall (cascade) chart is a special type of column chart that is used to sh
 
 Let's create our first waterfall chart which will showcase the profit and loss analysis.
 
-To create a waterfall chart, set the `type` attribute to `waterfall`.
+To create a waterfall chart follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `waterfall`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of waterfall chart.
 
@@ -33,21 +43,14 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "positiveColor": "#1aaf5d",
-
     "negativeColor": "#c02d00"
-
   },
-
+...
 }
 
-...
-
 ```
-
 For a detailed list of attributes you can check the API reference page of waterfall chart.
 
 A waterfall chart with distinct colors used for the positive and negative data plots looks like this:
@@ -66,31 +69,19 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "showSumAtEnd": "0"
-
   },
-
   "data": [
-
     {
-
       ...
-
       "issum": "1",
-
       ...
-
     }]
-
+...
 }
 
-...
-
 ```
-
 A waterfall chart rendered with a cumulative sum column looks like this:
 
 {% embed_chart standard-charts-waterfall-charts-example-3.js %}
@@ -124,7 +115,8 @@ Refer to the  code below:
         }
     ]
 }
-    ```
+
+```
 
 A waterfall chart rendered with a non-cumulative sum column looks like this:
 
@@ -146,6 +138,7 @@ To do so, the following attributes are used:
 
 Refer to the code below:
 
+```
 {
     "chart": {
         ...
@@ -155,6 +148,7 @@ Refer to the code below:
     ...
 }
 
+```
 A waterfall chart with the total sum column hidden looks like this:
 
 {% embed_chart standard-charts-waterfall-charts-example-5.js %}
@@ -185,7 +179,6 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
 
     "connectorColor": "#660000",
@@ -201,13 +194,10 @@ Refer to the code given below:
     "connectorDashGap": "2"
 
   },
-
+...
 }
 
-...
-
 ```
-
 A waterfall chart rendered with customized connector lines looks like this:
 
 {% embed_chart standard-charts-waterfall-charts-example-6.js %}

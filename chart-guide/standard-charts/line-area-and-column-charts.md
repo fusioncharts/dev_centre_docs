@@ -19,7 +19,7 @@ To create a single-series column 2D chart, follow the steps given below:
 
 * Set the container object using `renderAt` attribute.
 
-* Specify the dimension of the chart using`width` and `height` attributes.
+* Specify the dimension of the chart using `width` and `height` attributes.
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
@@ -158,15 +158,12 @@ Given below is the JSON code to include vertical line on your chart:
 
 ```
 {
-
     "vline": "true",
     "label": "Weekend Start",
     "linePosition": "0.7"
-
 },
 
 ```
-
 For a detailed list of attributes refer to the API reference page of vertical line section.
 
 A line chart rendered with a vertical line looks like this:
