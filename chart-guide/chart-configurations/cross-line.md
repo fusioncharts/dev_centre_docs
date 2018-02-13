@@ -121,6 +121,8 @@ The chart will look like as shown in the image below:
 
 GIF
 
+Click [here](http://jsfiddle.net/fusioncharts/uyymusv0/) to edit the above chart.
+
 Apply `tooltipGrayOutColor` attribute to specify the color of the unfocused plot in the tooltip. Refer to the code below;
 
 ```
@@ -136,7 +138,7 @@ The chart will look like as shown below:
 
 GIF
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/46por5dL/) to edit the above chart.
 
 Specify the hex code of the tooltip background color using the `toolTipBgColor` attribute. Refer to the code below:
 
@@ -144,7 +146,7 @@ Specify the hex code of the tooltip background color using the `toolTipBgColor` 
  {
     "chart": {
        ...
-        "toolTipBgColor": "#fffffff",
+        "toolTipBgColor": "#323232",
     }
   }
 ```
@@ -152,6 +154,8 @@ Specify the hex code of the tooltip background color using the `toolTipBgColor` 
 The chart will look like as shown below:
 
 GIF
+
+Click [here](http://jsfiddle.net/fusioncharts/x2jvt5rh/) to edit the above chart.
 
 ## Set tooltip border color
 
@@ -162,6 +166,7 @@ Specify the hex code of the tooltip border color using the `toolTipBorderColor` 
     "chart": {
        ...
         "toolTipBorderColor": "#545454",
+        "toolTipBorderThickness": "5"
     }
   }
 ```
@@ -169,6 +174,8 @@ Specify the hex code of the tooltip border color using the `toolTipBorderColor` 
 The chart will look like as shown below:
 
 GIF
+
+Click [here](http://jsfiddle.net/fusioncharts/zn0aqdze/) to edit the above chart.
 
 ## Show/Hide tooltip shadow
 
@@ -187,13 +194,15 @@ The chart will look like as shown below:
 
 GIF
 
+Click [here](http://jsfiddle.net/fusioncharts/xjbv3pq8/) to edit the above chart.
+
 By default, the tooltip shadow is visible. To hide the tooltip shadow set the `showTooltipShadow` attribute to `0`. Refer to the code below:
 
 ```
  {
     "chart": {
        ...
-        "toolTipSepChar": ":",
+        "showTooltipShadow": "1",
     }
   }
 ```
@@ -201,3 +210,5 @@ By default, the tooltip shadow is visible. To hide the tooltip shadow set the `s
 The chart will look like as shown below:
 
 GIF
+
+Click [here](http://jsfiddle.net/fusioncharts/1rbzf7q7/) to edit the above chart.
