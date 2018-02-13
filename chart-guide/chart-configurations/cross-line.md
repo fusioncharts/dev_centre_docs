@@ -119,11 +119,11 @@ Refer to the code below:
 
 The chart will look like as shown in the image below:
 
-GIF
+![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-2.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/uyymusv0/) to edit the above chart.
 
-Apply `tooltipGrayOutColor` attribute to specify the color of the unfocused plot in the tooltip. Refer to the code below;
+Set `tooltipGrayOutColor` attribute to specify the color of the unfocused plot in the tooltip. Refer to the code below:
 
 ```
  {
@@ -136,7 +136,7 @@ Apply `tooltipGrayOutColor` attribute to specify the color of the unfocused plot
 
 The chart will look like as shown below:
 
-GIF
+![Cross Line]({% site.baseurl %}/gif/chart-configurations-cross-line-image-4.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/46por5dL/) to edit the above chart.
 
@@ -153,13 +153,19 @@ Specify the hex code of the tooltip background color using the `toolTipBgColor` 
 
 The chart will look like as shown below:
 
-GIF
+![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-2.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/x2jvt5rh/) to edit the above chart.
 
-## Set tooltip border color
+## Customize tooltip border
 
-Specify the hex code of the tooltip border color using the `toolTipBorderColor` attribute. Refer to the code below: 
+To customize the tooltip border the following attributes are used:
+
+* Specify the hex code of the tooltip border color using the `toolTipBorderColor` attribute. 
+
+* Set the thickness of the border using the `toolTipBorderThicknes` attribute.
+
+Refer to the code below: 
 
 ```
  {
@@ -173,11 +179,11 @@ Specify the hex code of the tooltip border color using the `toolTipBorderColor` 
 
 The chart will look like as shown below:
 
-GIF
+![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-3.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/zn0aqdze/) to edit the above chart.
 
-## Show/Hide tooltip shadow
+## Set Separator Character for tooltip
 
 Specify the character to separate the name and the value displayed in the tooltip using the `toolTipSepChar` attribute. Refer to the code below:
 
@@ -192,9 +198,11 @@ Specify the character to separate the name and the value displayed in the toolti
 
 The chart will look like as shown below:
 
-GIF
+![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-4.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/xjbv3pq8/) to edit the above chart.
+
+## Show/Hide tooltip shadow
 
 By default, the tooltip shadow is visible. To hide the tooltip shadow set the `showTooltipShadow` attribute to `0`. Refer to the code below:
 
@@ -209,6 +217,6 @@ By default, the tooltip shadow is visible. To hide the tooltip shadow set the `s
 
 The chart will look like as shown below:
 
-GIF
+![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-5.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/1rbzf7q7/) to edit the above chart.
