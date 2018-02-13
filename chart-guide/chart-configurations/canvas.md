@@ -17,7 +17,7 @@ We will learn how to customize different properties of the canvas.
 
 ## Customize the canvas fill color
 
-To customize the canvas fill color follow the steps below:
+To customize the canvas fill color the following attributes are used:
 
 * Specify the hex code of the canvas background color using the `showCanvasBorder` attribute.
 
@@ -46,11 +46,30 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/qx1djybc/) to edit the above chart.
 
+## Hide canvas border
+
+By default, the canvas border is visible. To hide the canvas border, set the `showCanvasBorder` attribute to `0`. 
+
+Refer to the code below:
+
+```
+ {
+    "chart": {
+
+        "showCanvasBorder":"1",
+        ...
+    }
+}
+
+```
+
+The chart without canvas border will look like as shown below:
+
+**INSERT CHART**
+
 ## Customize canvas border
 
-To customize the border follow the steps below:
-
-* Show/hide the border using the `showCanvasBorder` attribute. 
+To customize the border the following attributes are used:
 
 * Specify the hex code to set the border color using the `canvasBorderColor` attribute.
 
@@ -63,8 +82,6 @@ Refer to the code below:
 ```
  {
     "chart": {
-       …
-        "showCanvasBorder":"1",
         "canvasBorderThickness": "1",
         " canvasBorderColor":"'666666",
         "canvasBorderThickness":"1",

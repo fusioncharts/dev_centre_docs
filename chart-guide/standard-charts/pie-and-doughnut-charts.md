@@ -11,7 +11,7 @@ A pie chart is a circular chart divided into sectors where the arc length of eac
 
 Let's create our first pie 2D chart which will showcase the split in revenue by product categories for one year. 
 
-To create a pie 2D chart follow the steps given below: set the `type` attribute to `pie2d`.
+To create a pie 2D chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
@@ -314,7 +314,6 @@ Refer to the code given below:
 }
 
 ```
-
 A pie chart with the starting angle set to 45° looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-13.js %}
