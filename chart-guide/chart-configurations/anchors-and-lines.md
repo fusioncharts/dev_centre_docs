@@ -22,6 +22,8 @@ The anchors and their corresponding tooltips are displayed by default. To hide t
   ```
 A line chart with anchors hidden looks as below:
 
+**INSERT CHART**
+
 {% embed_chart chart-configurations-anchors-and-lines-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/5tajR/) to edit the above chart.

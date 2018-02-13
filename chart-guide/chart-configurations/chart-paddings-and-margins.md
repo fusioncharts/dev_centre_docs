@@ -9,15 +9,15 @@ FusionCharts Suite XT lets you manage the space around the canvas and within the
 
 ## Set chart margins
 
-Chart margin is the space between the chart border and the canvas border. You can set the chart margins on any one of the chart's four sides. To do so, follow the steps given below:
+Chart margin is the space between the chart border and the canvas border. You can set the chart margins on any one of the chart's four sides. To do so, the following attributes are used:
 
-* Set the amount of empty space on the left of the chart using the 'chartLeftMargin` attribute.
+* Set the amount of empty space on the left of the chart using the `chartLeftMargin` attribute.
 
-* Set the amount of empty space on the top of the chart using the 'chartTopMargin` attribute.
+* Set the amount of empty space on the top of the chart using the `chartTopMargin` attribute.
 
-* Set the amount of empty space on the right of the chart using the 'chartRightMargin` attribute.
+* Set the amount of empty space on the right of the chart using the `chartRightMargin` attribute.
 
-* Set the amount of empty space on the bottom of the chart using the 'chartBottomMargin` attribute
+* Set the amount of empty space on the bottom of the chart using the `chartBottomMargin` attribute
 
 Refer to the code below:
 
@@ -62,7 +62,7 @@ Click [here](http://jsfiddle.net/fusioncharts/8jfb6ozx/) to edit the above chart
 
 ## Set padding for axes names
 
-Set the axis name padding and axis value padding, to control the amount of space between the axes and the canvas. To do so, follow the steps given below:
+Set the axis name padding and axis value padding, to control the amount of space between the axes and the canvas. To do so, the following attributes are used:
 
 * Specify the distance between the top of  x-axis title and the bottom of data labels using the `xAxisNamePadding` attribute. 
 
@@ -155,7 +155,7 @@ Click [here](http://jsfiddle.net/fusioncharts/eozmehL3/) to edit the above chart
 
 ## Set canvas padding in a chart
 
-For a line/area chart, canvas padding is the space between the canvas border and the position where the line/area chart begins. Specify the amount of gap using the `canvasPadding` attribute. 
+For a **line/area** chart, canvas padding is the space between the canvas border and the position where the line/area chart begins. Specify the amount of gap using the `canvasPadding` attribute. 
 
 Refer to the code below:
 
