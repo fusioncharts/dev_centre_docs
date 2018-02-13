@@ -11,7 +11,7 @@ Vertical divisional (or div) lines are vertical lines running through the canvas
 
 The image below shows vertical div lines rendered in a line chart:
 
-<image>
+![Vertical divisional lines]({% site.baseurl %}/images/chart-configurations-vertical-div-lines-image-1.png)
 
 ## Show vertical divisional lines
 
@@ -22,16 +22,18 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
+        ...
         "numVDivLines": "5",
-        …
-    },
-
- ```
+        ...
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-vertical-div-lines-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/43ayL5uf/) to edit the above chart.
 
 ## Customize the visuals of vertical divisional lines 
 
@@ -52,14 +54,17 @@ Refer to the code below:
         "numVDivLines": "5",
         "vDivLineColor": "#99ccff",
         "vDivLineThickness": "1",
-        "vDivLineAlpha": "50"    
-    },
-
- ```
+        "vDivLineAlpha": "50"  
+        ...  
+    }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-vertical-div-lines-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/vq1jvvze/) to edit the above chart.
 
 ### Dashed divisional lines
 
@@ -84,21 +89,20 @@ Refer to the code below:
         "vDivLineDashed": "1",
         "vDivLineDashLen": "5",
         "vDivLineDashGap": "3"
-   },
-
- ```
+        ...
+   }
+}
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-vertical-div-lines-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/4d4z0htq/) to edit the above chart.
 
 ## Show vertical grid bands
 
 Vertical grid bands, by default, do not appear between the vertical divisional lines. 
-
-A line chart with alternate vertical grid bands enabled is shown below:
-
-<chart>
 
 To show the vertical grid bands, set the `showAlternateVGridColor` attribute to `1`. 
 
@@ -109,9 +113,15 @@ Refer to the code below:
     "chart": {
         ...
         "showAlternateVGridColor": "1"  
-    },
+        ...
+    }
+}
+```
+A line chart with alternate vertical grid bands enabled is shown below:
 
- ```
+{% embed_chart chart-configurations-vertical-div-lines-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/30wLwwmj/) to edit the above chart.
 
 ### Customize the visuals vertical grid bands
 
@@ -126,17 +136,16 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
+        ...
         "alternateVGridColor": "#bee6ff",
-       
-        "alternateVGridAlpha": "30"       
-    },
-
- ```
+        "alternateVGridAlpha": "30"
+        ...       
+    }
+}    
+```
 
 The chart will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-vertical-div-lines-example-5.js %}
 
- 
-
+Click [here](http://jsfiddle.net/fusioncharts/be3ap4du/) to edit the above chart.
