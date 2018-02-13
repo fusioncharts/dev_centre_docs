@@ -32,6 +32,7 @@ Refer to the code below:
         "labelDisplay": "Auto",
         "useEllipsesWhenOverflow":"0",
     }
+...
 }
 ```
 
@@ -51,7 +52,8 @@ In this mode, you can wrap long x-axis labels into multiple lines. If enough spa
        ...
         "labelDisplay": "wrap", 
     },
-
+...
+}
  ```
 
 The chart with wrapped labels will look like as shown below:
@@ -60,7 +62,7 @@ The chart with wrapped labels will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/uofvvvv3/) to edit the above chart.
 
-> In horizontal bar charts, you can specify the maximum % of available width for data labels with the `**maxLabelWidthPercent`** attribute. This attribute takes a value between `**5`** and `**80`**.
+> In horizontal bar charts, you can specify the maximum % of available width for data labels with the `maxLabelWidthPercent`attribute. This attribute takes a value between `5` and `80`.
 
 ### Rotate Mode
 
@@ -70,8 +72,10 @@ Set the `labelDisplay` attribute as `rotate` to view the data labels in rotate m
 {
     "chart": {
        ...
-       labelDisplay": "rotate",
+       "labelDisplay": "rotate",
     },
+...
+}
  ```
 
 The chart will look like as shown below:
@@ -93,6 +97,8 @@ Refer to the code below:
         "labelDisplay": "rotate",
         "slantLabel": "1"
     },
+    ...
+}
 
  ```
 
@@ -114,7 +120,8 @@ In this mode, data labels are distributed on multiple levels (default is 2) to i
        ...
         "labelDisplay": "stagger",
     },
-
+...
+}
  ```
 The chart will look like as shown below:
 
@@ -131,7 +138,8 @@ To change the distribution levels (default is 2) specify the level using the `st
         "labelDisplay": "stagger",
         "staggerLines": "4"
     },
-
+...
+}
  ```
 
 The chart will look like as shown below:
@@ -150,6 +158,8 @@ If your data plot consists of values representing continuous quantities such as 
        ...
         "labelStep": "3",
     },
+...
+}
  ```
 
 The chart will look like as shown below:
@@ -168,6 +178,9 @@ To hide the data labels set the `showLabels` attribute to `0` within the `chart`
        ...
         "showLabels": "0",               
     },
+...
+}
+
  ```
 
 The chart will look like as shown below:
@@ -202,6 +215,7 @@ By default, all the data labels are displayed. You can opt to hide specific data
             **"showLabel": "0"**
         },
 ...
+}
 ```
 In the above code, we have set the `showLabel` attribute for **Quarter 2** to `0`. So, the chart will not display the label for that value. The chart will look like as shown below:
 
@@ -234,7 +248,8 @@ Specify the space between the canvas border and first (& last data plots) using 
         **"canvasPadding": "30",**
         "theme": "fint"
     },
-
+...
+}
 ```
 
 > If you set it `0` the first and the last anchor points will be on the canvas border.
@@ -292,8 +307,8 @@ Refer to the code below:
         "lableFontItalic":"1",
         "labelFontAlpha":"70"
     }
-}
 ...
+}
 
 ```
 
@@ -321,7 +336,7 @@ To customize the border of the data labels the following attributes are used:
 
 * `labelBorderDashGap` - Set the gap between two consecutive dashes of data label border (in pixels).
 
-* labelBorderDashLen` - Set the length of each dash in data label border (in pixels).
+* `labelBorderDashLen` - Set the length of each dash in data label border (in pixels).
 
 Refer to the code below:
 
@@ -337,8 +352,8 @@ Refer to the code below:
         "labelBorderColor": "#00ffaa",
         "labelBorderAlpha": "60"
     }
-}
 ...
+}
 
 ```
 
@@ -365,8 +380,9 @@ Refer to the code below:
         "labelBgColor": "eeeeee",
         "labelBgAlpha":"30"
     }
-}    
 ...
+} 
+
 ```
 
 The chart will look like as shown below:
@@ -387,11 +403,11 @@ Refer to the code below:
 {
     {
     "chart": {
-             "maxLabelHeight": "50",
-...
+             "maxLabelHeight": "50"
     }
-}    
 ...
+}    
+
 ```
 
 The chart will look like as shown below:
@@ -411,8 +427,9 @@ You can add links to the data labels. Set the link you want to add to the data l
     "chart": {
         "labelLink": "http://www.fusioncharts.com/"
     }
-}
 ...
+}
+
 ```
 
 The chart with data label linked will look like as shown below:

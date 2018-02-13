@@ -11,7 +11,7 @@ This section talks about using these predefined palettes.
 
 ## Predefined palettes
 
-Palette 1 is the default chart palette. A chart with `palette` set as `1` looks as below:
+**Palette 1** is the default chart palette. A chart with `palette` set as `1` looks as below:
 
 {% embed_chart chart-configurations-chart-palettes-example-1.js %}
 

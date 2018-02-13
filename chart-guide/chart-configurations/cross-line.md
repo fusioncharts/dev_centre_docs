@@ -24,15 +24,11 @@ By default, the cross line is turned off. To show the crossline set the `drawCro
 
 A chart with crossline will look like as shown below:
 
-{% embed_chart chart-configurations-cross-line-example-1.js %}
+![Cross Line]({% site.baseurl %}/gif/configurations-crossline-gif-1.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/sh917yad/) to edit the above chart.
 
-## Customize the cross line
-
-In a multi-series charts, when you hover on the chart canvas a color band appears highlighting the corresponding data plots for that particular section of the canvas. This color band is the cross line of the chart. You can customize the color, opacity and animation of the cross line.
-
-### Customize the color
+## Customize crossline color
 
 Specify the hex code of the cross line color using the `crossLineColor` attribute. Refer to the code below:
 
@@ -42,12 +38,14 @@ Specify the hex code of the cross line color using the `crossLineColor` attribut
        ...
         "crosslinecolor": "cc3300",
     }
+ ... 
   }
+
 ```
 
 A multi-series column chart with a customized cross line looks like as shown below:
 
-{% embed_chart chart-configurations-cross-line-example-2.js %}
+![Cross Line]({% site.baseurl %}/gif/configurations-crossline-gif-2.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/7yvjb38s/) to edit the above chart.
 
@@ -67,7 +65,7 @@ Set the opacity of the crossline using the `crossLineAlpha` attribute. Refer to 
 
 A multi-series column chart with a customized transparency (set to `20`) of the cross line looks like as shown below:
 
-{% embed_chart chart-configurations-cross-line-example-3.js %}
+![Cross Line]({% site.baseurl %}/gif/configurations-crossline-gif-3.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/e94enLv1/) to edit the above chart.
 

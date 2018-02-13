@@ -48,7 +48,7 @@ Click [here](http://jsfiddle.net/fusioncharts/qx1djybc/) to edit the above chart
 
 ## Hide canvas border
 
-By default, the canvas border is visible. To hide the canvas border, set the `showCanvasBorder` attribute to `0`. 
+By default, the canvas border is not visible. To show the canvas border, set the `showCanvasBorder` attribute to `1`. 
 
 Refer to the code below:
 
