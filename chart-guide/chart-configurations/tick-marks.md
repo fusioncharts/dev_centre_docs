@@ -13,7 +13,7 @@ Tick marks, an element of gauges in FusionChart Suite XT, are calibration marks 
 
 An LED gauge with major and minor tick marks looks like this:
 
-<image>
+![tick marks]({% site.baseurl %}/images/chart-configurations-tick-marks-image-1.png)
 
 ## Show/hide tick marks
 
@@ -23,15 +23,17 @@ By default, the tick marks are displayed. To hide the tick marks set the `showTi
 {
     "chart": {
        ...
-        "showTickMarks": "0",
-        …
-    },
-
- ```
+        "showTickMarks": "0"
+    }
+...    
+}
+```
 
 An LED gauge will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-tick-marks-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/39ffv9bt/) to edit the above chart.
 
 ## Show/Hide the tick values
 
@@ -41,15 +43,16 @@ By default, the tick values are displayed. To hide the tick values set the `show
 {
     "chart": {
        ...
-        "showTickValues": "0",
-        …
-    },
-
- ```
+        "showTickValues": "0"
+    }
+}
+```
 
 An LED gauge will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-tick-marks-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/coz9g5pw/) to edit the above chart.
 
 You can also opt to hide the upper and lower limits of the gauge. To do so, set the `showLimits` attribute to `0`.
 
@@ -59,15 +62,16 @@ Refer to the code below:
 {
     "chart": {
        ...
-        "showLimits": "0",
-        …
-    },
-
- ```
+        "showLimits": "0"
+    }
+}
+```
 
 An LED gauge will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-tick-marks-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/4aLmm0vs/) to edit the above chart.
 
 ## Configure the tick value position
 
@@ -83,61 +87,65 @@ Refer to the code below:
 
 ```
 {   
-
-"chart": {
+    "chart": {
         ...
         "placeTicksInside": "1",
-        "placeValuesInside": "1",
-       },
- ```
+        "placeValuesInside": "1"
+    }
+}
+```
 
 An angular gauge will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-tick-marks-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/76s1f9m3/) to edit the above chart.
 
 ### Tick value position of horizontal gauges
 
 To customize the position of tick marks and tick values of a horizontal use the following attributes:
 
-* Set the `ticksBelowGauge` to `1` to view the tick marks below the gauge.
+* Set the `ticksBelowGauge` to `0` to view the tick marks above the gauge.
 
 Refer to the code below:
 
 ```
    {
     "chart": {
-        …
-
-        "ticksBelowGauge": "1",
-    },
-
- ```
+        ...
+        "ticksBelowGauge": "0"
+    }
+}
+```
 
 A horizontal gauge will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-tick-marks-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/vqdccxk4/) to edit the above chart.
 
 ### Tick value position of vertical gauges
 
 To customize the position of tick marks and tick values of a vertical gauge use the following attributes:
 
-* Set the `ticksOnRight` to `1` to view the tick marks at the right of the gauge.
+* Set the `ticksOnRight` to `1` to view the tick marks at the right of the gauge. In case of the vertical gauge the tick marks get rendered above the gauge.
 
 Refer to the code below:
 
 ```
    {
     "chart": {
-        …
-
-        "ticksOnRight": "1",    
-    },
-
- ```
+        ...
+        "ticksOnRight": "1"
+    }
+}
+```
 
 A vertical gauge will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-tick-marks-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ja7c6na6/) to edit the above chart.
 
 ## Display every nth tick mark value
 
@@ -151,14 +159,16 @@ Refer to the code below:
 {
     "chart": {
         ...
-        "tickValueStep": "2",
-    },
-
+        "tickValueStep": "2"
+    }
+}
 ```
 
 A horizontal LED gauge displaying n-th value looks as below:
 
-<chart>
+{% embed_chart chart-configurations-tick-marks-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/bn9o9cc9/) to edit the above chart.
 
 ## Show tick values in decimals
 
@@ -177,14 +187,17 @@ Refer to the code below:
     "chart": {
         ...
         "tickValueDecimals": "3",
-
-        "forceTickValueDecimals":"1",
+        "forceTickValueDecimals":"1"
         ...
-    },
-
+    }
+}
 ```
 
 The chart will look like as shown below:
+
+{% embed_chart chart-configurations-tick-marks-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/d1wgyhx5/) to edit the above chart.
 
 ## Configure tick mark and tick value padding
 
@@ -203,15 +216,17 @@ Refer to the code below:
     "chart": {
         ...
         "tickMarkDistance": "10",
-        "tickValueDistance": "10",
+        "tickValueDistance": "10"
         ...
-    },
-
+    }
+}
 ```
 
 A horizontal LED gauge will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-tick-marks-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/b7vLwyoh/) to edit the above chart.
 
 ## Set the number of major and minor tick marks
 
@@ -228,18 +243,19 @@ Refer to the code below:
 ```
 {
     "chart": {
-        …
-
+        ...
         "adjustTM": "0",
         "majorTMNumber": "11",
         "minorTMNumber": "4"
-    },
-
+    }
+}
 ```
 
 A horizontal LED gauge will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-tick-marks-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/eke99cLx/) to edit the above chart.
 
 ## Configure visuals of tick marks
 
@@ -265,6 +281,7 @@ To do so, use the following attributes:
 
 Refer to the code below:
 
+```
 {
     "chart": {
         ...
@@ -276,9 +293,11 @@ Refer to the code below:
         "minorTMAlpha": "100",
         "minorTMHeight": "6",
         "minorTMThickness": "1"
-    },
-
+    }
+}
+```
 A horizontal LED gauge will look like as shown below:
 
-<chart>
+{% embed_chart chart-configurations-tick-marks-example-11.js %}
 
+Click [here](http://jsfiddle.net/fusioncharts/1w5un5zq/) to edit the above chart.

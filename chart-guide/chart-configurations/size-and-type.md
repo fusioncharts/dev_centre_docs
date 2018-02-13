@@ -9,348 +9,54 @@ Integrate multiple charts on a single page to get a consolidated view. To do thi
 
 FusionCharts Suite XT lets you specify the dimensions of charts either in pixels or percentage values, relative to the containers. If the size is specified in pixels, then the dimensions of a chart remain constant, no matter the viewing device or screen size. However, if the dimensions are set as a percentage of the container, the chart converts that % value into pixels while rendering. When the container size changes, the chart is automatically resized accordingly.
 
-### Set width and height in pixels during initialization
+## Set width and height in pixels during initialization
 
 To set the `width` and `height` you just need to provide the numeric values, and NOT add "px" at the end of such values. Refer to the code  below:
 
 ```
-<html>
-
-<head>
-
-    <title>My first chart using FusionCharts Suite XT</title>
-
-    <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
-
-    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
-
-    <script type="text/javascript">
-        FusionCharts.ready(function() {
-
-            var revenueChart = new FusionCharts({
-
-                "type": "column2d",
-
-                "renderAt": "chartContainer",
-
-                **"width": "500",**
-                
-                **"height": "300",**
-
-                "dataFormat": "json",
-
-                "dataSource": {
-
-                    "chart": {
-
-                        "caption": "Monthly revenue for last year",
-
-                        "subCaption": "Harry's SuperMart",
-
-                        "xAxisName": "Month",
-
-                        "yAxisName": "Revenues (In USD)",
-
-                        "theme": "fint"
-
-                    },
-
-                    "data": [
-
-                        {
-
-                            "label": "Jan",
-
-                            "value": "420000"
-
-                        },
-
-                        {
-
-                            "label": "Feb",
-
-                            "value": "810000"
-
-                        },
-
-                        {
-
-                            "label": "Mar",
-
-                            "value": "720000"
-
-                        },
-
-                        {
-
-                            "label": "Apr",
-
-                            "value": "550000"
-
-                        },
-
-                        {
-
-                            "label": "May",
-
-                            "value": "910000"
-
-                        },
-
-                        {
-
-                            "label": "Jun",
-
-                            "value": "510000"
-
-                        },
-
-                        {
-
-                            "label": "Jul",
-
-                            "value": "680000"
-
-                        },
-
-                        {
-
-                            "label": "Aug",
-
-                            "value": "620000"
-
-                        },
-
-                        {
-
-                            "label": "Sep",
-
-                            "value": "610000"
-
-                        },
-
-                        {
-
-                            "label": "Oct",
-
-                            "value": "490000"
-
-                        },
-
-                        {
-
-                            "label": "Nov",
-
-                            "value": "900000"
-
-                        },
-
-                        {
-
-                            "label": "Dec",
-
-                            "value": "730000"
-
-                        }
-
-                    ]
-
-                }
-
-            });
-
-            revenueChart.render("chartContainer");
-
-        })
-    </script>
-
-</head>
-
-<body>
-
-    <div id="chartContainer">FusionCharts XT will load here!</div>
-
-</body>
-
-</html>
+{
+    "type": "column2d",
+    "renderAt": "chartContainer",
+    "width": "500", //width of the chart
+    "height": "300", //height of the chart
+    "dataFormat": "json",
+    "dataSource": {
+        "chart": {
+            ...
+        },
+
+        "data": []
+    }
+}
 
 ```
 
-### Set width and height in percentage during initialization
+## Set width and height in percentage during initialization
 
 If you want to create a chart that automatically resizes when its parent container (another `<div>` or the entire window) resizes, here's how you can set the `width` and `height` of the chart:
 
 ```
-<html>
-
-<head>
-
-    <title>My first chart using FusionCharts Suite XT</title>
-
-    <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
-
-    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
-
-    <script type="text/javascript">
-        FusionCharts.ready(function() {
-
-            var revenueChart = new FusionCharts({
-
-                "type": "column2d",
-
-                "renderAt": "chartContainer",
-
-                **"width": "100%",**
-
-                **"height": "100%",**
-
-                "dataFormat": "json",
-
-                "dataSource": {
-
-                    "chart": {
-
-                        "caption": "Monthly revenue for last year",
-
-                        "subCaption": "Harry's SuperMart",
-
-                        "xAxisName": "Month",
-
-                        "yAxisName": "Revenues (In USD)",
-
-                        "theme": "fint"
-
-                    },
-
-                    "data": [
-
-                        {
-
-                            "label": "Jan",
-
-                            "value": "420000"
-
-                        },
-
-                        {
-
-                            "label": "Feb",
-
-                            "value": "810000"
-
-                        },
-
-                        {
-
-                            "label": "Mar",
-
-                            "value": "720000"
-
-                        },
-
-                        {
-
-                            "label": "Apr",
-
-                            "value": "550000"
-
-                        },
-
-                        {
-
-                            "label": "May",
-
-                            "value": "910000"
-
-                        },
-
-                        {
-
-                            "label": "Jun",
-
-                            "value": "510000"
-
-                        },
-
-                        {
-
-                            "label": "Jul",
-
-                            "value": "680000"
-
-                        },
-
-                        {
-
-                            "label": "Aug",
-
-                            "value": "620000"
-
-                        },
-
-                        {
-
-                            "label": "Sep",
-
-                            "value": "610000"
-
-                        },
-
-                        {
-
-                            "label": "Oct",
-
-                            "value": "490000"
-
-                        },
-
-                        {
-
-                            "label": "Nov",
-
-                            "value": "900000"
-
-                        },
-
-                        {
-
-                            "label": "Dec",
-
-                            "value": "730000"
-
-                        }
-
-                    ]
-
-                }
-
-            });
-
-            revenueChart.render("chartContainer");
-
-        })
-    </script>
-
-</head>
-
-<body>
-
-    <div id="parentContainer">
-
-        <div id="chartContainer">FusionCharts XT will load here!</div>
-
-    </div>
-
-</body>
-
-</html>
-
+{
+
+    "type": "column2d",
+    "renderAt": "chartContainer",
+    "width": "100%",
+    "height": "100%",
+    "dataFormat": "json",
+    "dataSource": {
+        "chart": {
+            ...
+        },
+
+        "data": []
+    }
+}
 ```
 Ensure that you set the parent container of the chart in a way that allows its dimensions to change dynamically when the browser is resized or other changes take place on the page (like when an element is added or removed).
 
 >In certain cases, if the HTML container element itself has not acquired proper width or height (due to error in rendering by browser), the chart might look squeezed, or it may not render in the first place. If this happens, then you have to specify the chart's dimensions in pixels.
 
-### Dynamically change dimensions
+## Dynamically change dimensions
 
 After you initialize a chart, you can change the dimensions dynamically, at client-side, through the JavaScript API `resizeTo()`.
 
@@ -358,7 +64,9 @@ Recreate the same chart you created earlier (as described in the [Your first cha
 
 Take a look at an example below, along with the code:
 
-<interactive snippet>
+{% embed_chart chart-configurations-size-and-type-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/5Lpu0hrt/) to edit the above chart.
 
 ### Dynamically change chart type 
 
@@ -368,7 +76,9 @@ However, with FusionCharts Suite XT, you can change chart types quickly, with th
 
 Shown below is an example, along with the code:
 
-<interactive snippet>
+{% embed_chart chart-configurations-size-and-type-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/txyb6ss4/) to edit the above chart.
 
 You can also provide a new data source and format as an optional second parameter of chartType(chartType, options) method, to change the data along with the chart.
 
