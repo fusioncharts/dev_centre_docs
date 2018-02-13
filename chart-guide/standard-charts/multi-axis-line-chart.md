@@ -67,7 +67,29 @@ The attributes and the structure of the multi-axis line chart is a bit different
 
 Refer to the code below:
 
-**INSERT CODE**
+```
+{
+    "chart": {
+        ...
+    },
+    "categories": [{
+            "category": [
+            ]
+        }],
+    "axis": [{
+    	"showAxis": "1",
+    	"allowAxisShift": "1",
+        "title": "Revenue",
+        "tickWidth": "10",
+        "numberPrefix": "$",
+        "divlineDashed": "1",
+        "dataset": [{
+            ...
+        }]
+    }]
+}
+
+```
 
 For a detailed list of attributes you can check the API reference page of multi-axis line chart.
 

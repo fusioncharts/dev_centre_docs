@@ -166,6 +166,23 @@ To add cosmetics to the trend-sets, take a look at the following attributes and 
 
 * `trendSetDashGap` attribute sets the gap between each dash, if the trend-sets are rendered as dashed.
 
+Refer to the code given below:
+
+```
+{
+  "chart": {
+    "trendSetColor" : "0",
+    "trendSetAlpha" : "0",
+    "trendSetThickness" : "0",
+    "trendSetDashed" : "0",
+    "trendSetDashLen" : "0",
+    "trendSetDashGap" : "0"
+  }
+}
+```
+
+To customize a specific trend-set, follow the steps given below:
+
 * `name` attribute sets the name of a trend-set. This attribute belongs to the `trendset` object.
 
 * Specify the `color` attribute under `trendset` object to set the hex code of the color that will be used to render a specific trend-set.
@@ -185,15 +202,21 @@ To add cosmetics to the trend-sets, take a look at the following attributes and 
 Refer to the code below:
 
 ```
-"trendlines": {
-    "line": [{
-        "startValue": "24.8",
-        "displayValue": "Highest{br}Closing value:{br}$24.8",
-        "color": "#1aaf5d",
-        "thickness": "1"
-    }]
-}
-...
+"trendset": [{
+    "name": "High trends",
+    "color": "#0000CC",
+    "alpha": "1",
+    "thickness": "1",
+    "includeInLegend": "1",
+    "dashed": "1",
+    "dashlen": "3",
+    "dashGap": "4",
+    "set": [{
+        ...    
+    }
+    ...
+    ]
+}]
 ```
 
 For a detailed list of attributes you can check the API reference page of candlestick chart.

@@ -55,7 +55,7 @@ The chart below shows a zoom-line dual y-axis chart created to compare unique fo
 
 {% embed_all standard-charts-zoom-line-charts-example-6.js %}
 
-Click here to edit the zoom line dual y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/mvsjs4ag/) to edit the zoom line dual y-axis chart.
 
 ## Limit the number of data labels
 

@@ -237,7 +237,17 @@ A box and whisker chart with five summary numbers- the minimum and maximum numbe
 
 Click [here](http://jsfiddle.net/fusioncharts/q89k0bef/) to edit the above chart.
 
-To selectively show summary numbers on the chart, set the `showValues` attribute and the attributes for the values you want to show to 1. Set the remaining attributes to `0`. For example, if you want to show only the minimum values, use the code snippet shown below:
+To selectively show summary numbers on the chart, firstly set the `showValues` attribute to `1`. Now set the attributes to show the respective values for summary numbers as shown below:
+
+* Set the value of `showQ1Values` to `1` to show the value of Q1.
+
+* Set the value of `showQ3Values` to  `1` to show the value of Q3.
+
+* Set the value of `showMedianValues` to  `1` to show the value of the median.
+
+* Set the value of `showMinValues` to  `1` to show the min value.
+
+* Set the value of `showMaxValues` to  `1` to show the max value.
 
 Refer to the code given below:
 
