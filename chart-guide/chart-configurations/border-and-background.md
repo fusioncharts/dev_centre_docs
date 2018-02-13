@@ -11,11 +11,28 @@ A chart's background refers to the whole area on which it is drawn and it is enc
 
 This article shows how to configure the border and background of your chart. It will also explain a few attributes that control the behavior of these elements. 
 
+## Hide chart borders
+
+By default, the chart borders are visible for 2D charts. To hide the chart border, set the `showBorder` attribute to `0`.
+
+Refer to the code below:
+
+```
+{
+    "chart": {
+       ...
+        "showBorder": "1",
+    }
+}
+
+```
+The chart without border will look like as shown below:
+
+**INSERT LIVE CHART**
+
 ## Customize chart borders
 
-To customize the chart border follow the steps given below:
-
-* Show/hide borders using the `showBorder` attribute. By default, the border is visible in 2D charts.
+To customize the chart border the following attributes are used:
 
 * Specify the hex code of the border color using the `borderColor` attribute.
 
@@ -29,7 +46,6 @@ Refer to the code below:
 {
     "chart": {
        ...
-        "showBorder": "1",
         "borderColor": "#666666",
         "borderThickness": "4",
         "borderAlpha": "80",
@@ -47,7 +63,7 @@ Click [here](http://jsfiddle.net/fusioncharts/5vj22scs/) to edit the above chart
 
 ### Customize chart background
 
-To customize the chart background follow the steps given below:
+To customize the chart background the following attributes are used:
 
 * Set the hex code of the color of the background using the `bgColor` attribute.
 
@@ -83,7 +99,7 @@ When using a gradient fill for the background, you can configure three aspects:
 
 * Set the gradient angle
 
-To do so, follow the steps given below:
+To do so, the following attributes are used:
 
 * Set the hex codes of the gradient colors separated by comma using the `bgColor` attribute.
 
@@ -136,7 +152,7 @@ Click [here](http://jsfiddle.net/fusioncharts/ceqLLtwk/) to edit the above chart
 
 ## Customize background image
 
-You can even customize the external image rendered as the chart background. To do so, follow the steps given below:
+You can even customize the external image rendered as the chart background. To do so, the following attributes are used:
 
 * Set the transparency level of the background image using the `bgImageApha` attribute.
 

@@ -5,9 +5,7 @@ heading: Annotations
 breadcrumb: [["Home", "/"], ["Annotations"]]
 ---
 
-You can find a lot of [charts, gauges, and maps](https://www.fusioncharts.com/charts/) within FusionCharts Suite XT, which you can use to plot static, as well as real time data. You can also use the powerful **annotations** feature, to increase the visual appeal of your charts and make them more informative.
-
-Annotations are user-defined objects or shapes drawn on a chart. You can use annotations to help end users interpret charts better. You can create different shapes, images, and text annotations for use with your chart.
+Annotations are user-defined objects or shapes drawn on a chart. You can use annotations to increase the visual appeal of your charts and make them more informative. Annotations help end users interpret charts better. You can create different shapes, images, and text annotations for use with your chart.
 
 For a glimpse of how this feature works, look at the example shown below:
 
@@ -24,8 +22,6 @@ Now, see how the same chart will look, when rendered using annotations:
 Click [here](http://jsfiddle.net/fusioncharts/49dJJ/) to edit the above chart.
 
 Looks much better, doesn't it? The chocolate bars shown in this chart are image annotations.
-
-Add descriptive information to your charts using FusionCharts Suite XT annotations. Customize your annotations using different shapes, images, and custom notes.
 
 Take a look at this video of a [collaboration dashboard](https://www.fusioncharts.com/dashboards/collaboration/) created to help a sales team unify their analysis and discussion. Notice the **callouts** shown above the columns for April and August. These callouts are shape annotations and the **numbers** shown next to the callouts are text annotations. Click these callouts and see how the annotations work!
 
@@ -376,7 +372,7 @@ The JSON structure to create shape annotation is given below:
 
 ```
 
-Take a look at the column 2D chart shown below:
+The chart will look like as shown below:
 
 {% embed_chart chart-configurations-annotations-example-5.js %}
 
@@ -529,7 +525,7 @@ The JSON structure for creating path annotations is given below:
 
 ```
 
-Take a look at the spline chart shown below:
+The chart will look like as shown below:
 
 {% embed_chart chart-configurations-annotations-example-6.js %}
 

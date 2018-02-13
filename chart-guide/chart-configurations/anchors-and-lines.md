@@ -7,6 +7,8 @@ breadcrumb: [["Home", "/"], ["Anchors and Lines"]]
 
 Each data point in a line/spline/area chart is represented by an anchor. Anchors help to easily identify the data point in the chart. Anchors show a tooltip showing the data plot details when the mouse is hovered over them, and can be linked to other pages as well. In this article we will discuss different configurations of the anchors.
 
+![Anchors]({% site.baseurl %}/images/chart-configurations-anchors-image-1.png)
+
 ## Hide anchors
 
 The anchors and their corresponding tooltips are displayed by default. To hide the anchors set the `drawAnchors` attribute to `0` as shown in the code below:
@@ -20,13 +22,13 @@ The anchors and their corresponding tooltips are displayed by default. To hide t
   ```
 A line chart with anchors hidden looks as below:
 
-{% embed_all chart-configurations-anchors-and-lines-example-1.js %}
+{% embed_chart chart-configurations-anchors-and-lines-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/5tajR/) to edit the above chart.
 
 ## Customize anchor properties
 
-To customize the properties of the anchors follow the steps given below:
+To customize the properties of the anchors the following attributes are used:
 
 * Specify the number of sides using the `anchorSides` attribute to define the shape of the anchor. Set the value to `3` to draw the anchor shape as a triangle.
 
@@ -56,17 +58,15 @@ Refer to the code below:
 
 A line chart with customized anchors looks like as shown below:
 
-{% embed_all chart-configurations-anchors-and-lines-example-2.js %}
+{% embed_chart chart-configurations-anchors-and-lines-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/QnFW2/) to edit the above chart.
 
 ## Customize anchors for specific data points
 
-You can highlight a particular data point by customizing specific anchor points explicitly. To highlight a specific anchor,customize the cosmetics for only that particular anchor. 
+To highlight a specific anchor, customize the cosmetics for only that particular anchor. 
 
-To customize the anchor of a specific data point use the same attributes as mentioned [above](#bookmark=id.jk8ar5vl5h0). In this scenario, instead of using the attributes within the `chart` object use them within the `data` object if you are using JSON.
-
-While using XML you can use the attributes within the `<set>` element of that specific data point instead of the `<chart>` element. 
+To customize the anchor of a specific data point use the same attributes as mentioned [above](#bookmark=id.jk8ar5vl5h0). In this scenario, instead of using the attributes within the `chart` object use them within the `data` object.
 
 Refer to the code below:
 
@@ -95,7 +95,7 @@ Refer to the code below:
 
 A line chart with anchors for specific data points customized looks as below:
 
-{% embed_all chart-configurations-anchors-and-lines-example-3.js %}
+{% embed_chart chart-configurations-anchors-and-lines-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/w9ZWt/) to edit the above chart.
 
@@ -169,6 +169,6 @@ Refer to the code below:
 
 A line chart with external images in the anchors looks as below:
 
-{% embed_all chart-configurations-anchors-and-lines-example-4.js %}
+{% embed_chart chart-configurations-anchors-and-lines-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/ZBZKS/) to edit the above chart.
