@@ -103,6 +103,20 @@ As an example, let's create a box and whisker chart that shows the gender-wise d
 
 To create a box and whisker chart, keep a note of the steps given below:
 
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `boxandwhisker2d`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using`width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
+
+* Depending on the value passed to the `dataFormat` attribute, set the `dataSource` attribute(JSON/XML) from where the data will be fetched.
+
+* Specify the value for a data item using the `value` attribute within the `data` object.
+
 * Specify the series name for the dataset using `seriesName` attribute.
 
 * Set the `lowerBoxColor` attribute to specify the hex color code to be used to render the lower quartile box. This attribute belongs to the dataset object.
@@ -110,7 +124,8 @@ To create a box and whisker chart, keep a note of the steps given below:
 * Set the `upperBoxColor` attribute to specify the hex color code to be used to render the upper quartile box. This attribute belongs to the dataset object.
 
 * Set the `value` attribute to specify a comma-separated list of values for each item in the data set. This attribute belongs to the `data` object under `dataset` object.
-**Note:** Comma (`,`) is the default data-separator. Specify the data-separator explicitly using the `dataSeparator` attribute.
+
+> **Note:** Comma (`,`) is the default data-separator. Specify the data-separator explicitly using the `dataSeparator` attribute.
 
 Refer to the code given below:
 
