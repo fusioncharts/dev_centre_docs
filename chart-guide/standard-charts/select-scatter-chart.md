@@ -29,17 +29,15 @@ The select-scatter chart thus created looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/3JjL8/) to edit the select-scatter chart.
 
-## Select set of pointss
+## Select set of points
 
 To select a set of points, you can drag and draw a rectangle over the chart. All the points within this rectangle are now selected points. Once the rectangle has been drawn, you can resize it to adjust more points. The resize handlers let you do so.
 
-To select more scattered data points, you can add additional select rectangles on the chart. The process to add another select rectangle is the same, as shown in the image below. Click anywhere in the chart canvas and draw a rectangle.
+You can drag, resize, or delete any select rectangles individually. To delete any rectangle, you can click the `X` at the top right corner of the selection box. 
 
-IMAGE
+After selection click the `Submit` button. This button sends the JSON/XML data as a form to the server-side script. In the above sample, the JSON data for the selected points - the price and quantity of each tv/cell phone unit - have been displayed in a table. Click the `Restore` button to bring back the chart to its original state.
 
-You can drag, resize, or delete any select rectangles individually. To delete any select rectangle, you can click the `X` at the top right corner of the selection box and the rectangle will be gone.
-
-In the above chart, drag the mouse pointer across the chart to select a subset of data points. Once the selection process is over, click the `Submit` button. This button sends the JSON/XML data as a form to the server-side script. In the above sample, the JSON data for the selected points - the price and quantity of each tv/cell phone unit - have been displayed in a table. Click the `Restore` button to bring back the chart to its original state.
+![Select set of points]({% site.baseurl %}/gif/standard-charts-selectscatter-gif-1.gif)
 
 ## Get selected data
 
