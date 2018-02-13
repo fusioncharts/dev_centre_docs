@@ -17,7 +17,7 @@ To create a select-scatter chart follow the steps given below:
 
 * Set the container object using `renderAt` attribute.
 
-* Specify the dimension of the chart using`width` and `height` attributes.
+* Specify the dimension of the chart using `width` and `height` attributes.
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
