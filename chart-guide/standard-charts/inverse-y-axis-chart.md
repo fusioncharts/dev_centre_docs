@@ -19,7 +19,17 @@ The FusionCharts Suite XT includes the following three types of inverse axis cha
 
 Let's create a inverse y-axis chart with two radio buttons : **Inverse Column 2D Chart** and **Column 2D Chart**. When the first radio button is selected, the chart is rendered with an inverse y-axis; when the second one is selected, the chart is rendered with a normal y-axis. Observe that when you render the inverse y-axis chart, the lower limit value is rendered at the top and the upper limit value is rendered at the bottom - inverse of how it is rendered for a normal y-axis chart.
 
-To create an inverse y-axis chart, set the `type` attribute to `inverseMSColumn2D`.
+To create an inverse y-axis chart follow the steps given below: 
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `inverseMSColumn2D`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using`width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of inverse y-axis chart.
 

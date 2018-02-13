@@ -13,13 +13,23 @@ The XY charts available in the FusionCharts Suite XT are:
 
 * Bubble Chart
 
-## Scatter Charts
+## Scatter Chart
 
 Scatter charts are used for plotting data that is defined in terms of two numeric parameters. Scatter charts are multi-series charts, but their data format is slightly different from that of conventional multi-series charts.
 
 Let's create a scatter chart plotted for two numeric values - the average day temperature (plotted on the x-axis and the sales (in USD) of beer and ice-cream (plotted on the y-axis); the chart shows how the temperature affects the sales revenue of beer and ice-cream.
 
-To create a scatter chart, set the `type` attribute to `scatter`.
+To create a scatter chart follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `scatter`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using`width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of scatter chart.
 
@@ -35,7 +45,17 @@ Bubble charts are used for plotting data that is defined in terms of three numer
 
 So let's create a bubble chart showing sales analysis of shoes of different brands for Harry's SuperMart for last month.
 
-To create a bubble chart, set the `type` attribute to `bubble`.
+To create a bubble chart follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `bubble`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using`width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of bubble chart.
 

@@ -31,7 +31,17 @@ The FusionCharts Suite XT log charts offer the following features:
 
 As an example, we will create a log column 2D chart that compares the store footfalls with the online visits for one year.
 
-To create a log column 2D chart, set the `type` attribute to `logmscolumn2d`.
+To create a log column 2D chart follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `logmscolumn2d`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using`width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of log column 2D chart.
 
@@ -61,16 +71,11 @@ Refer to the code given below:
 
 ```
 {
-
 	"chart": {
-
 		"base": "5"
-
 	},
-
-}
-
 ...
+}
 
 ```
 
@@ -82,23 +87,19 @@ Click [here](http://jsfiddle.net/fusioncharts/dfdc2f9p/) to edit the log column 
 
 ## Inverse axis support
 
-Logarithmic charts allow you to plot the y-axis values inversely so that the y-axis upper limit appears at the bottom of the chart canvas instead of at the top. Set the `invertYAxis` attribute as `1` to specify the inverted y-axis for the chart. Setting it to `0` (default) will make no change to the axis.
+Logarithmic charts allow you to plot the y-axis values inversely so that the y-axis upper limit appears at the bottom of the chart canvas instead of at the top. Set the `invertYAxis` attribute as `1` to specify the inverted y-axis for the chart. 
 
 Refer to the code given below:
 
 ```
 {
-
 	"chart": {
-
 		"invertYAxis": "1"
-
 	},
-
+...
 }
 
 ```
-
 A log column 2D chart rendered with an inverted y-axis looks like this:
 
 {% embed_chart standard-charts-logarithmic-charts-example-4.js %}
@@ -115,16 +116,11 @@ Refer to the code given below:
 
 ```
 {
-
 	"chart": {
-
 		"numMinorDivLines": "4"
-
 	},
-
-}
-
 ...
+}
 
 ```
 

@@ -29,7 +29,19 @@ The FusionCharts Suite XT candlestick chart offers you a powerful and interactiv
 
 As an example, we will create a candlestick chart that shows the daily stock price for Harry's SuperMart (stock name HRYS) for the last two months.
 
-To create a candlestick chart, set the `type` attribute to `candlestick`. Some more attributes which helps in creating the chart are:
+To create a candlestick chart follow the steps given below:
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `scatter`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using`width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
+
+In the JSON data:
+
+* Set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
 * Set the `label` attribute to specify the label for the data item. The label is rendered along the x-axis.
 
@@ -46,6 +58,8 @@ To create a candlestick chart, set the `type` attribute to `candlestick`. Some m
 * Set the `volume` attribute to specify the volume of the transaction. To render the volume chart, specify the value to this attribute.
 
 Refer to the code below:
+
+**INSERT  CODE**
 
 For a detailed list of attributes you can check the API reference page of candlestick chart.
 

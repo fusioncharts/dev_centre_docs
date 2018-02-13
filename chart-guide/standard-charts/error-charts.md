@@ -47,9 +47,17 @@ Now, let's move ahead and create our first error chart.
 
 An **error bar** chart is a type of an error chart used to show variations in data from its original value. As an example, we will create an error bar chart that compares the lifespan of systems at the Daly City Serramonte, Bakersfield Central, Garden Groove Harbour stores. 
 
-To create an error bar chart:
+To create an error bar chart follow the steps given below:
 
-* Set the `type` attribute to `errorBar2d`.
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `errorBar2D`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using`width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 * Set the `errorValue` attribute to specify error value that will be plotted as the error bar on the chart. This attribute belongs to the `data` object, which belongs to the `dataset` object.
 

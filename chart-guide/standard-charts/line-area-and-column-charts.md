@@ -158,15 +158,12 @@ Given below is the JSON code to include vertical line on your chart:
 
 ```
 {
-
     "vline": "true",
     "label": "Weekend Start",
     "linePosition": "0.7"
-
 },
 
 ```
-
 For a detailed list of attributes refer to the API reference page of vertical line section.
 
 A line chart rendered with a vertical line looks like this:

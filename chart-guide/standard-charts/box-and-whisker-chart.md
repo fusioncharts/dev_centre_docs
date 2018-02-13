@@ -103,8 +103,6 @@ As an example, let's create a box and whisker chart that shows the gender-wise d
 
 To create a box and whisker chart, keep a note of the steps given below:
 
-* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
-
 * Specify the chart type using the `type` attribute. To render a column chart, set `boxandwhisker2d`.
 
 * Set the container object using `renderAt` attribute.
@@ -114,6 +112,10 @@ To create a box and whisker chart, keep a note of the steps given below:
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 * Depending on the value passed to the `dataFormat` attribute, set the `dataSource` attribute(JSON/XML) from where the data will be fetched.
+
+**In the JSON data**
+
+* Set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
 * Specify the value for a data item using the `value` attribute within the `data` object.
 
