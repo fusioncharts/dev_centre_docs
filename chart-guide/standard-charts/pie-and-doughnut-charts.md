@@ -11,7 +11,17 @@ A pie chart is a circular chart divided into sectors where the arc length of eac
 
 Let's create our first pie 2D chart which will showcase the split in revenue by product categories for one year. 
 
-To create a pie 2D chart, set the `type` attribute to `pie2d`.
+To create a pie 2D chart follow the steps given below: set the `type` attribute to `pie2d`.
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `pie2d`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of pie chart.
 
@@ -68,17 +78,13 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
       "animateClockwise": "1"
   }
-
+...
 }
 
-...
-
 ```
-
 A pie chart configured to animate in the clockwise direction is shown below. Click the **Refresh** button in the **bottom-right corner** of the chart to see the animation direction.
 
 **SAMPLE**
@@ -107,10 +113,7 @@ Refer to the code given below:
   },
 }
 
-...
-
 ```
-
 For a detailed list of attributes you can check the API reference page of pie2D chart.
 
 A pie2D chart configured to show percent values on the chart looks like this:
@@ -137,9 +140,8 @@ Refer to the code given below:
     "defaultCenterLabel": "Total revenue: $60K",
     "centerLabel": "Revenue from $label: $value"
   },
-}
-
 ...
+}
 
 ```
 A doughnut chart with the center label customized looks like this:
@@ -161,9 +163,8 @@ Refer to the code given below:
   "chart": {
     "enableMultiSlicing": "0"
   },
-}
-
 ...
+}
 
 ```
 A doughnut chart with single-slicing enabled looks like this:
@@ -185,11 +186,10 @@ Refer to the code given below:
   "chart": {
     "enableSmartLabels": "0"
   },
-}
 ...
+}
 
 ```
-
 A pie chart with smart labels disabled looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-8.js %}
@@ -220,9 +220,8 @@ Refer to the code given below:
     "smartLineAlpha": "100",
     "isSmartLineSlanted": "0"
   },
-}
-
 ...
+}
 
 ```
 A pie chart with the cosmetic properties of smart lines customized looks like this:
@@ -252,9 +251,8 @@ Refer to the code given below:
     "labelDistance": "5",
     "smartLabelClearance": "5"
   },
-}
-
 ...
+}
 
 ```
 
@@ -270,16 +268,12 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
 
     "skipOverlapLabels": "1"
-
   },
-
-}
-
 ...
+}
 
 ```
 
@@ -291,19 +285,14 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
 
     "pieRadius": "50"
-
   },
-
+...
 }
 
-...
-
 ```
-
 A pie chart with the outer radius customized looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-12.js %}
@@ -321,8 +310,8 @@ Refer to the code given below:
   "chart": {
     "startingAngle": "45"
   },
-}
 ...
+}
 
 ```
 
@@ -345,12 +334,10 @@ Refer to the code given below:
     "value": "49100",
     "isSliced": "1"
   },
+...
 }
 
-...
-
 ```
-
 A pie chart rendered with one slice sliced-out looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-14.js %}
@@ -368,8 +355,8 @@ Refer to the code given below:
   "chart": {
     "slicingDistance": "10"
   },
-}
 ...
+}
 
 ```
 
@@ -393,12 +380,10 @@ Refer to the code given below:
     "use3DLighting": "1",
     "radius3D": "5"
   },
+...
 }
 
-...
-
 ```
-
 A pie chart configured for the bevel effect looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-16.js %}

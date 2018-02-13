@@ -17,7 +17,19 @@ Common application areas for radar charts include:
 
 As an example, we will create our first radar chart that plots the results of a customer feedback survey based on five categories. The radar chart will be used to compare the results for each category and determine what service needs improvement.
 
-To create a radar chart, set the `type` attribute to `radar` and follow the steps given below:
+To create a radar chart follow the steps given below:
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `radar`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using`width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
+
+**In the JSON data:**
+
+* Set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
 * Specify the label for a data item using the `label` attribute. This attribute belongs to the `category` object, which in turn belongs to the `categories` object.
 

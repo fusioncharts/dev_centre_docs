@@ -19,7 +19,17 @@ The two types of Pareto charts available are:
 
 In this example, let's create a pareto 2D chart showcasing the late arrivals of the employee by their respective reported cause. The primary y-axis shows the number of occurrences of the employee per month whereas the secondary y-axis shows the cumulative percentage.
 
-To create a pareto chart in 2D, set the `type` attribute to `pareto2d`.
+To create a pareto chart in 2D follow the steps given below: set the `type` attribute to `pareto2d`.
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `pareto2d`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of pareto 2D chart .
 
@@ -45,22 +55,17 @@ Now, let's customize the appearance and properties of the charts.
 
 ## Display values for the line series
 
-By default, the auto-generated percentage values for the line chart are not rendered. To specify the percentage data values for the line chart, set the `showLineValues` attribute to `1`. Setting this attribute to `0` (default) will hide them.
+By default, the auto-generated percentage values for the line chart are not rendered. To specify the percentage data values for the line chart, set the `showLineValues` attribute to `1`. 
 
 Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "showLineValues": "1"
-
   },
-
-}
-
 ...
+}
 
 ```
 
@@ -90,7 +95,6 @@ Refer to the code given below:
 
 ```
 {
-
     "chart": {
 
         "lineColor": "#8e0000",
@@ -104,15 +108,11 @@ Refer to the code given below:
         "lineDashLen": "5",
 
         "lineDashGap": "3"
-
     },
-
+...
 }
 
-...
-
 ```
-
 A pareto chart with the line segments customized looks like this:
 
 {% embed_chart standard-charts-pareto-chart-example-4.js %}
@@ -131,21 +131,16 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
 
     "showSecondaryLimits": "0",
 
     "showDivLineSecondaryValue": "0"
-
   },
-
+...
 }
 
-...
-
 ```
-
 A pareto chart with hidden secondary y-axis looks like:
 
 {% embed_chart standard-charts-pareto-chart-example-5.js %}

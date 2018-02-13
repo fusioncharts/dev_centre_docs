@@ -25,7 +25,17 @@ The types of scroll charts available in the FusionCharts Suite XT are :
 
 Let's create a scroll column 2D chart to plot the sales trends for FY 2012 - FY 2013. 
 
-To create a scroll column 2D chart, set the `type` attribute to `scrollColumn2d`.
+To create a scroll column 2D chart follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `scrollcolumn2d`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using`width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of scroll column chart.
 
@@ -99,16 +109,11 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "numVisiblePlot": "12"
-
   },
-
-}
-
 ...
+}
 
 ```
 
@@ -126,19 +131,13 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "flatScrollBars": "0"
-
   },
-
+...
 }
 
-...
-
 ```
-
 A scroll chart with a gradient scroll bar looks like this:
 
 {% embed_chart standard-charts-scroll-charts-example-8.js %}
@@ -159,18 +158,13 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "scrollColor": "#3a4660",
     "scrollHeight": "12",
     "scrollPadding": "5"
-
   },
-
-}
-
 ...
+}
 
 ```
 
