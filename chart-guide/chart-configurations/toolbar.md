@@ -18,42 +18,38 @@ Drag-node chart|Menu to add/edit/delete nodes, labels, and connectors|Menu place
 Real-time charts|Message logger|Menu placed at the bottom-left side of the chart|Context menu|
 Real-time charts|Real-time menu|Menu placed at the bottom-left side of the chart|Context menu|
 
-
-
 The samples shown below showcase the difference between the current and the previous implementations.
 
 The drag-node chart below shows the **current implementation of the toolbar**:
 
-<chart>
+{% embed_chart chart-configurations-toolbar-example-1.js %}
 
 The image below shows the **previous implementation**:
 
-<image>
+![toolbar]({% site.baseurl %}/images/chart-configurations-toolbar-image-1.png)
+
+Click [here](http://jsfiddle.net/fusioncharts/bvzjqkoq/) to edit the above chart.
 
 The multi-axis line chart below shows the **current implementation of the checkboxes** used to show/hide the axes lines. This implementation uses pure SVG exportable checkboxes while the previous implementation used HTML checkboxes.
-
-<chart>
-
-The image below shows the **previous implementation**:
-
-<image>
-
-The difference between the current and previous implementation of the checkboxes in the multi-axis line chart, is that you can configure the current checkboxes to set a custom checkbox color.
 
 To do so, specify the hex code of the checkbox color using the `checkBoxColor` attribute. 
 
 Refer to the code below:
 
 ```
-
 {
     "chart": {
        "checkBoxColor": "#3333cc"
-    },
+    }
+}
+```
 
- ```
+{% embed_chart chart-configurations-toolbar-example-2.js %}
 
-The chart will look like as shown below:
+The image below shows the **previous implementation**:
 
-<chart>
+![toolbar]({% site.baseurl %}/images/chart-configurations-toolbar-image-2.png)
 
+Click [here](http://jsfiddle.net/fusioncharts/hzg6mn18/) to edit the above chart.
+
+The difference between the current and previous implementation of the checkboxes in the multi-axis line chart, is that you can configure the current checkboxes to set a custom checkbox color.
