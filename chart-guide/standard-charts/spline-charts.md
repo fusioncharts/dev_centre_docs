@@ -23,7 +23,17 @@ FusionCharts Suite XT includes four types of spline charts:
 
 A single-series spline 2D chart draws a single fitted curve through the data points.
 
-To create a single-series spline 2D chart, set the `type` attribute to `spline`.
+To create a single-series spline 2D chart follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `spline`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using`width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of a spline chart.
 

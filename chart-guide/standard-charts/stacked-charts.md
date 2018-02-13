@@ -37,7 +37,17 @@ The FusionCharts Suite XT includes the following types of stacked charts:
 
 As an example, we will create a stacked column 2D chart to plot the revenue split for each quarter of the current year by product category - food products and non-food products. The data plots for each category are rendered using two distinct colors to help interpretation. The data plots for non-food products are stacked above the data plots for food products, instead of alongside as in multi-series charts.
 
-To create a stacked column chart in 2D, set the `type` attribute to `stackedcolumn2d`.
+To create a stacked column chart in 2D follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `stackedcolumn2d`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using `width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of stacked column 2D chart.
 
@@ -97,19 +107,13 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "showSum": "1"
-
   },
-
+...
 }
 
-...
-
 ```
-
 A stacked column 2D chart with the cumulative sum rendered above its corresponding column looks like this:
 
 {% embed_chart standard-charts-stacked-charts-example-6.js %}
@@ -126,16 +130,11 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "stack100Percent": "1"
-
   },
-
-}
-
 ...
+}
 
 ```
 
@@ -153,16 +152,11 @@ Refer to the code given below:
 
 ```
 {
-
   "chart": {
-
     "showPercentInTooltip": "1"
-
   },
-
-}
-
 ...
+}
 
 ```
 A stacked column chart configured to show percent values in tool-tips looks like this:

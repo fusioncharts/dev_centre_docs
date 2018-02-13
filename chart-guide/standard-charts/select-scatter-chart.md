@@ -9,7 +9,17 @@ The select-scatter chart is a special type of chart that allows users to visuall
 
 This can be used for a variety of purposes, where you want your users to visually select data from the scatter chart. As an example, we will plot a select-scatter chart to show the products sold and the price points earned, for televisions and cell phones at Harry's SuperMart in one week.
 
-To create a select-scatter chart, set the `type` attribute to `selectscatter`.
+To create a select-scatter chart follow the steps given below:
+
+* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
+
+* Specify the chart type using the `type` attribute. To render a column chart, set `selectscatter`.
+
+* Set the container object using `renderAt` attribute.
+
+* Specify the dimension of the chart using`width` and `height` attributes.
+
+* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
 For a detailed list of attributes you can check the API reference page of select-scatter chart.
 
@@ -107,16 +117,11 @@ Refer to the code given below:
 
 ```
 {
-
 	"chart": {
-
 		"showRegressionLine": "1"
-
 	},
-
-}
-
 ...
+}
 
 ```
 A select-scatter chart rendered with a regression line is shown below:
@@ -149,19 +154,14 @@ Refer to the code given below:
 
 ```
 {
-
 	"chart": {
-
 		"showYOnX": "0",
 		"regressionLineColor": "f4cb00",
 		"regressionLineThickness": "3",
 		"regressionLineAlpha": "70"
-
 	},
-
-}
-
 ...
+}
 
 ```
 The chart looks like:
