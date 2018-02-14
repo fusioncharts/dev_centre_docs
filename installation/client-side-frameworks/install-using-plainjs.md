@@ -7,11 +7,11 @@ breadcrumb: [["Home", "/"], ["Plain JS"]]
 
 FusionCharts Suite XT—the industry's most comprehensive charting solution— is all about easing the whole process of data visualization through charts. This developer center includes everything that you'd want to know about FusionCharts Suite XT.
 
-## Download
+## Download FusionCharts Suite XT
 
 FusionCharts Suite XT is a JavaScript library that runs on your desktop and mobile web browsers. Click [here](https://www.fusioncharts.com/download/) to download the library.
 
-> Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. Thereafter, you can simply include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
+Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. Thereafter, you can simply include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
 
 The JavaScript files of FusionCharts Suite library are located in `js` folder of your download package. Following is the list of **js** files present in your `fusioncharts` folder:
 
@@ -30,9 +30,7 @@ File Name|Description|
 
 > Starting v3.11.2, the FusionCharts Suite XT can be installed via the npm and Bower package managers.
 
-## Installation
-
-## Set up FusionCharts Suite XT on local machine
+## Install FusionCharts Suite XT on local machine
 
 If you need to create charts on your local machine for general charting or testing purposes, do the following:
 
@@ -74,7 +72,7 @@ The charts generated using licensed file would not show the watermark any more. 
 
 ## Install via npm
 
-Now, talks about how the **fusioncharts** and the **fusionmaps** packages can be installed via **NPM** package management software.
+Now, talks about how the **fusioncharts** and the **fusionmaps** packages can be installed via **NPM**.
 
 > The **fusioncharts** package contains files for all charts and widgets and only two map definition files, for the World map and the USA map. The **fusionmaps** package contains files for all charts and widgets and map definition files for all maps. Consequently, it takes longer for installation than the fusioncharts package and is recommended only if your application needs maps other than the World and USA maps.
 
@@ -84,109 +82,109 @@ Now, talks about how the **fusioncharts** and the **fusionmaps** packages can be
 
 ```
 npm install fusioncharts
+```
+
+**Step 2**: Load FusionCharts module.
 
 ```
-**Step 2**: Load FusionCharts using `require`.
+<script src="node_modules/fusioncharts/fusioncharts.js"></script>
+```
+
+**Step 3**: Load the charts module.
 
 ```
-var FusionCharts = require("fusioncharts");
-
+<script src="node_modules/fusioncharts/fusioncharts.charts.js"></script>
 ```
-**Step 3**: Load the charts module using `require`.
 
-```
-require("fusioncharts/fusioncharts.charts")(FusionCharts);
-
-```
 ### Install FusionMaps package
 
 **Step 1**: Install the FusionMaps package.
 
 ```
 npm install fusionmaps
+```
+
+**Step 2**: Load FusionCharts module.
 
 ```
-**Step 2**: Load FusionCharts using `require`.
+<script src="node_modules/fusionmaps/fusioncharts.js"></script>
+```
+
+**Step 3**: Load the maps module.
 
 ```
-var FusionCharts = require("fusioncharts");
-
+<script src="node_modules/fusionmaps/fusioncharts.maps.js"></script>
 ```
-**Step 3**: Load the maps module using `require`.
 
-```
-require("fusioncharts/fusioncharts.maps")(FusionCharts);
-
-```
 **Step 4**: Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.<MAP_ALIAS>**, where **MAP_ALIAS** gets replaced by the map's JavaScript alias. Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. Map definition files for all maps to be rendered in the application have to be included. 
 
 Therefore, assuming that you need to render the world map, the alias name **world** replaces **MAP_ALIAS** in the format.
 
 ```
-require("fusioncharts/maps/fusioncharts.world")(FusionCharts);
-
+<script src="node_modules/fusionmaps/maps/fusioncharts.world.js"></script>
 ```
+
 > The map definition files have to be included for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are required to be fetched from there.
 
-### Package-specific Dependencies for npm
+### Package-specific Dependencies
 
 * To render a chart belonging to the PowerCharts package, load the PowerCharts module:
 
 ```
-require("fusioncharts/fusioncharts.powercharts")(FusionCharts);
-
+<script src="node_modules/fusioncharts/fusioncharts.powercharts.js"> </script>
 ```
+
 * To render a chart belonging to the FusionWidgets package, load the FusionWidgets module:
 
 ```
-require("fusioncharts/fusioncharts.fusionwidgets")(FusionCharts);
-
+<script src="node_modules/fusioncharts/fusioncharts.fusionwidgets.js"> </script>
 ```
+
 > To know which chart belongs to which package, refer the **[list of charts](https://www.fusioncharts.com/dev/getting-started/list-of-charts.html)**.
 
 * To render a map, load the FusionMaps module and the map definition file for that map:
 
 ```
-require("fusioncharts/fusioncharts.maps")(FusionCharts);  
-require("fusioncharts/maps/fusioncharts.world")(FusionCharts);
-
+<script src="node_modules/fusioncharts/fusioncharts.maps.js"> </script>
+<script src="node_modules/fusioncharts/maps/fusioncharts.world.js"> </script>
 ```
+
 > To know the map definition file names, refer the **[list of maps](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html)**.
 
-### Chart-specific Dependencies for npm
+### Chart-specific Dependencies
 
 For some chart types, you need to include/exclude certain files and in a certain order. These chart types and the corresponding files are mentioned below:
 
 * To render the zoom-scatter chart, it is necessary to include the **fusioncharts.js** and **fusioncharts.charts.js** files before the **fusioncharts.zoomscatter.js** file.
 
 ```
-var FusionCharts = require("fusioncharts");
-require("fusioncharts/fusioncharts.charts")(FusionCharts);
-require("fusioncharts/fusioncharts.zoomscatter")(FusionCharts);
-
+<script src = "node_modules/fusioncharts/fusioncharts.js"> </script> 
+<script src = "node_modules/fusioncharts/fusioncharts.charts.js"> </script>  
+<script src = "node_modules/fusioncharts/fusioncharts.zoomscatter.js"> </script>
 ```
+
 * To render the treemap chart, it is necessary to include the **fusioncharts.js** and **fusioncharts.powercharts.js** files before the **fusioncharts.treemap.js** file.
 
 ```
-var FusionCharts = require("fusioncharts");  
-require("fusioncharts/fusioncharts.powercharts")(FusionCharts);  
-require("fusioncharts/fusioncharts.treemap")(FusionCharts);
-
+<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
+<script src = "node_modules/fusioncharts/fusioncharts.powercharts.js"> </script>  
+<script src = "node_modules/fusioncharts/fusioncharts.treemap.js"> </script>
 ```
+
 * To render the SS Grid chart only the **fusioncharts.js** and the **fusioncharts.ssgrid.js** files are needed.
 
 ```
-var FusionCharts = require("fusioncharts");  
-require("fusioncharts/fusioncharts.ssgrid")(FusionCharts);
-
+<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
+<script src = "node_modules/fusioncharts/fusioncharts.ssgrid.js"> </script>
 ```
+
 * To render the Gantt chart only the **fusioncharts.js** and the **fusioncharts.gantt.js** files are needed.
 
 ```
-var FusionCharts = require("fusioncharts");  
-require("fusioncharts/fusioncharts.gantt")(FusionCharts);
-
+<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
+<script src = "node_modules/fusioncharts/fusioncharts.gantt.js"> </script>
 ```
+
 ## Install via Bower
 
 This section talks about how the **fusioncharts** and the **fusionmaps** packages can be installed via **Bower** package management software.
@@ -199,18 +197,18 @@ This section talks about how the **fusioncharts** and the **fusionmaps** package
 
 ```
 bower install fusioncharts
-
 ```
+
 **Step 2**: Load FusionCharts module.
 
 ```
 <script src="bower_components/fusioncharts/fusioncharts.js"></script>
-
 ```
+
 **Step 3**: Load the charts module.
 
 ```
-<script src="bower_components/fusioncharts/fusioncharts.maps.js"></script>
+<script src="bower_components/fusioncharts/fusioncharts.charts.js"></script>
 
 ```
 ### Install FusionMaps package
@@ -219,29 +217,28 @@ bower install fusioncharts
 
 ```
 bower install fusionmaps
-
 ```
+
 **Step 2**: Load FusionCharts.
 
 ```
 <script src="bower_components/fusionmaps/fusioncharts.js"></script>
-
 ```
+
 **Step 3**: Load the maps module.
 
 ```
 <script src="bower_components/fusionmaps/fusioncharts.maps.js"></script>
-
 ```
 
-**Step 4**: Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.<MAP_ALIAS>js**, where **MAP_ALIAS** gets replaced by the map's JavaScript alias. Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. Map definition files for all maps to be rendered in the application have to be included. 
+**Step 4**: Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.<MAP_ALIAS>.js**, where **MAP_ALIAS** gets replaced by the map's JavaScript alias. Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. Map definition files for all maps to be rendered in the application have to be included. 
 
 Therefore, assuming that you need to render the world map, the alias name **world** replaces **MAP_ALIAS** in the format.
 
 ```
 <script src="bower_components/fusionmaps/maps/fusioncharts.world.js"></script>
-
 ```
+
 > Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are required to be fetched from there.
 
 ### Package-specific Dependencies for Bower
@@ -250,13 +247,12 @@ Therefore, assuming that you need to render the world map, the alias name **worl
 
 ```
 <script src="bower_components/fusioncharts/fusioncharts.powercharts.js"> </script>
-
 ```
+
 * To render a chart belonging to the FusionWidgets package, load the FusionWidgets module:
 
 ```
 <script src="bower_components/fusioncharts/fusioncharts.fusionwidgets.js"> </script>
-
 ```
 
 > To know which chart belongs to which package, refer the **[list of charts](https://www.fusioncharts.com/dev/getting-started/list-of-charts.html)**.
@@ -266,8 +262,8 @@ Therefore, assuming that you need to render the world map, the alias name **worl
 ```
 <script src="bower_components/fusioncharts/fusioncharts.maps.js"> </script>
 <script src="bower_components/fusioncharts/maps/fusioncharts.world.js"> </script>
-
 ```
+
 > To know the map definition file names, refer the **[list of maps](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html)**.
 
 ### Chart-specific Dependencies for Bower
@@ -280,7 +276,6 @@ For some chart types, you need to include/exclude certain files. These chart typ
 <script src = "bower_components/fusioncharts/fusioncharts.js"> </script> 
 <script src = "bower_components/fusioncharts/fusioncharts.charts.js"> </script>  
 <script src = "bower_components/fusioncharts/fusioncharts.zoomscatter.js"> </script>
-
 ```
 
 * To render the treemap chart, it is necessary to include the **fusioncharts.js** and **fusioncharts.powercharts.js** files before the **fusioncharts.treemap.js** file.
@@ -289,26 +284,18 @@ For some chart types, you need to include/exclude certain files. These chart typ
 <script src = "bower_components/fusioncharts/fusioncharts.js"> </script>  
 <script src = "bower_components/fusioncharts/fusioncharts.powercharts.js"> </script>  
 <script src = "bower_components/fusioncharts/fusioncharts.treemap.js"> </script>
-
 ```
+
 * To render the SS Grid chart only the **fusioncharts.js** and the **fusioncharts.ssgrid.js** files are needed.
 
 ```
 <script src = "bower_components/fusioncharts/fusioncharts.js"> </script>  
 <script src = "bower_components/fusioncharts/fusioncharts.ssgrid.js"> </script>
-
 ```
+
 * To render the Gantt chart only the **fusioncharts.js** and the **fusioncharts.gantt.js** files are needed.
 
 ```
 <script src = "bower_components/fusioncharts/fusioncharts.js"> </script>  
 <script src = "bower_components/fusioncharts/fusioncharts.gantt.js"> </script>
-
 ```
-## Related Resources
-
-* How to render a chart using Pure JavaScript?
-
-* How to render a gauge using Pure JavaScript?
-
-* How to render a map using Pure JavaScript?

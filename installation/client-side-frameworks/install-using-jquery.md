@@ -9,27 +9,29 @@ The FusionCharts Suite XT jQuery helper allows you to use jQuery syntax to rende
 
 It helps you add interactive JavaScript charts to your web and mobile applications, combining the delight and comprehensiveness of the FusionCharts Suite XT with the easy-to-use jQuery syntax.
 
+You can download the jQuery-FusionCharts component from [here](https://www.fusioncharts.com/jquery-charts/).
+
 ## Set up FusionCharts jQuery Helper
 
 To set up FusionCharts jQuery helper, follow the steps given below:
 
 * Include `jquery.min.js` to enable jQuery in your project:
 
-```
+```html
 <script type="text/javascript" src="jquery.min.js"></script>
-
 ```
+
 jQuery needs to be imported before the FusionCharts jQuery helper is included in the project. Note that in order to support IE 6/7/8, jQuery 1.x versions should be used.
 
 * Copy `fusioncharts.js` and `fusioncharts.jqueryplugin.js` from the **FusionCharts Download Package > js** folder in your project.
 
 * Add references to the required JavaScript files:
 
-```
+```html
 <script type="text/javascript" src="fusioncharts.js"></script>
 <script type="text/javascript" src="fusioncharts-jquery-plugin.js"></script>
-
 ```
+
 On top of all the existing features, the jQuery helper lets you do the following:
 
 * Render jQuery charts that work across PCs (including IE6/7/8), Macs, iPads, iPhones, and Android devices seamlessly
@@ -48,37 +50,26 @@ The easiest way to use `jquery-fusioncharts` plugin is to install it from npm an
 
 ```
 npm install jquery-fusioncharts --save
-
 ```
+
 ## Set up the FusionCharts jQuery plugin
 
 To set up the FusionCharts jQuery plugin, follow the steps given below:
 
-* Include `jquery.min.js` to enable jQuery in your project:
+* Include jQuery in your project:
 
 ```
-<script type="text/javascript" src="jquery.min.js"></script>
-
+var jQuery = require('jquery');
 ```
+
 > jQuery needs to be imported before the FusionCharts jQuery plugin is included in the project. Note that in order to support IE 6/7/8, jQuery 1.x versions should be used.
 
-* Copy `fusioncharts.js` and `fusioncharts.jqueryplugin.js` from the **FusionCharts Download Package > js** folder in your project
-
-* Add references to the required JavaScript files in your code:
-
 ```
-<script type="text/javascript" src="fusioncharts.js"></script>
+var jQuery = require('jquery');
 
-<script type="text/javascript" src="fusioncharts.jqueryplugin.js"></script>
+var FusionCharts = require('jquery-fusioncharts');
 
+var Charts = require('fusioncharts/fusioncharts.charts');
 ```
+
 This completes the setup and you are now ready to begin using the FusionCharts jQuery plugin.
-
-## Related Resources
-
-* How to render a chart using jQuery?
-
-* How to render a gauge using jQuery?
-
-* How to render a map using jQuery?
-
