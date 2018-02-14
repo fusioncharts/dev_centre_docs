@@ -29,7 +29,7 @@ The select-scatter chart thus created looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/3JjL8/) to edit the select-scatter chart.
 
-## Select set of points
+## Select Set of Points
 
 To select a set of points, you can drag and draw a rectangle over the chart. All the points within this rectangle are now selected points. Once the rectangle has been drawn, you can resize it to adjust more points. The resize handlers let you do so.
 
@@ -39,7 +39,7 @@ After selection click the `Submit` button. This button sends the JSON/XML data a
 
 ![Select set of points]({% site.baseurl %}/gif/standard-charts-selectscatter-gif-1.gif)
 
-## Get selected data
+## Get Selected Data
 
 After you select a subset of data points in a select-scatter chart and click `Submit`, the selected data is sent to a server-side script, or a JavaScript function, for further processing. Here you will see how the updated data is read using the JavaScript functions present on the same page.
 
@@ -78,7 +78,7 @@ Mapping then to the JSON data, gives:
 
 * The length of each row's array (horizontally) can be different, depending on the number of data points chosen for that dataset
 
-## Read JSON data from the chart
+## Read JSON data from the Chart
 
 The chart also provides a method to read the selected data in the JSON/XML format. This method is named as the `getJSONData()` and can be invoked as under:
 
@@ -103,7 +103,7 @@ Click [here](http://jsfiddle.net/fusioncharts/0e8vwaud/) to edit the select-scat
 
 Now, let's customize the appearance and properties of drawing regression lines in the select-scatter chart.
 
-## Draw regression lines in the select-scatter chart
+## Draw Regression Lines
 
 A regression line, rendered as a straight line, is used to show the trend of **y** values with respect to the **x** values or the trend of **x** values with respect to the **y** values. A regression line, therefore, can be used to derive a particular trend from the scattered data points in the chart canvas and predict values accordingly. For example, regression lines can be used to find trends and predict future sales, stock prices, currency exchange rates, productivity gains resulting from a training program, and so on.
 
@@ -117,8 +117,7 @@ Refer to the code given below:
 {
 	"chart": {
 		"showRegressionLine": "1"
-	},
-...
+	}
 }
 
 ```
@@ -157,11 +156,10 @@ Refer to the code given below:
 		"regressionLineColor": "f4cb00",
 		"regressionLineThickness": "3",
 		"regressionLineAlpha": "70"
-	},
-...
+	}
 }
-
 ```
+
 The chart looks like:
 
 {% embed_chart standard-charts-select-scatter-chart-example-4.js %}
