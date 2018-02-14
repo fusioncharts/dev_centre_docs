@@ -41,7 +41,7 @@ To hide the vertical lines in your chart, set the `drawVerticalJoins` attribute 
 
 Refer to the code given below:
 
-```JavaScript
+```
 {
 	"chart": {
 		"drawVerticalJoins": "0"

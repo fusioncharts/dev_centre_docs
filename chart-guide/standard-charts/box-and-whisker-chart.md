@@ -21,7 +21,7 @@ The distinct features of a box and whisker chart include:
 
 * It shows **outliers** - any value which is not residing within the set of values provided.
 
-## Five-number summary principle
+## Five-Number Summary Principle
 
 The `five-number summary` principle is used to plot data on the box and whisker charts. This principle helps to provide a statistical summary for a given set of numbers. It gives information about the range (minimum and maximum numbers), the center (median), and the spread (upper and lower quartiles) for the set of values provided. A simple illustration of a box and whisker plot is given below:
 
@@ -161,7 +161,7 @@ The box and whisker chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/qLvZF/) to edit the box and whisker chart.
 
-## Add legends to the chart
+## Add Legends to the chart
 
 FusionCharts Suite XT supports `legend` for the box and whisker chart. Legend allows you to display single color icons for numeric numbers.
 
@@ -191,7 +191,7 @@ A simple box and whisker chart rendered with a legend looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/qLvZF/) to edit the above chart.
 
-## Configure the five summary numbers
+## Configure the Five Summary Numbers
 
 Let's customize the five summary numbers and their deviations plotted on a box and a whisker chart.
 
@@ -253,26 +253,15 @@ Refer to the code given below:
 
 ```
 {
-
     "chart": {
-
-        ...
-
         "showQ1Values": "0",
-
         "showQ3Values": "0",
-
         "showMedianValues": "0",
-
         "showMinValues": "1",
-
         "showMaxValues": "1"
-
     }
-...
 
 }
-
 ```
 
 You can also configure the box and whisker chart to show all five summary numbers at once. 
@@ -281,28 +270,17 @@ Refer to the code given below:
 
 ```
 {
-
     "chart": {
-
-        ...
-
         "showQ1values": "1",
-
         "showQ3values": "1",
-
         "showMedianValues": "1",
-
         "showMinValues": "1",
-
         "showMaxValues": "1"
-
     }
-    ...
 }
-
 ```
 
-### Customize the median (Q2)
+### Customize the Median (Q2)
 
 The median for a set of numbers is represented by a line at the center of the box plot. The median acts as the separator between the upper and lower quartile boxes.
 
@@ -336,7 +314,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/y3932d4e/) to edit the above chart.
 
-### Customize the upper and lower quartiles (Q1 and Q3)
+### Customize the Upper and Lower Quartiles (Q1 and Q3)
 
 The quartiles of a set of data are spread as two boxes, separated by the median. The roof of the upper quartile box represents the exact value of the upper quartile (Q3) . The base of the lower quartile box represents the exact value of the lower quartile (Q1).
 
@@ -448,7 +426,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/qofgk3ts/) to edit the above chart.
 
-### Customize the lower and upper whiskers
+### Customize the Lower and Upper Whiskers
 
 The box and whisker chart displays the biggest number of a set of values as the upper whisker and the smallest number of the set as the lower whisker.
 
@@ -499,7 +477,7 @@ In a box and whisker chart, along with the dataset seriesname, the legend also s
 
 Let's customize the mean in box and whisker chart.
 
-### Show/Hide the mean icon
+### Show/Hide the Mean Icon
 
 To show the mean deviation icon in the legend set the `showMean` attribute to `1`. This attribute will specify whether the icon representing the mean of the dataset will be shown in the legend. The default value of this attribute is `0` which hides the icon. 
 
@@ -522,7 +500,7 @@ A box and whisker chart with the mean icon shown in the legend looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/o879q8hd/) to edit the above chart.
 
-### Customize the mean icon
+### Customize the Mean Icon
 
 To customize the mean icon in the box and whisker chart, follow the points given below:
 
@@ -556,7 +534,7 @@ The  chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/mf3g5cgo/) to edit the above chart.
 
-### Draw mean connectors
+### Draw Mean Connectors
 
 For multiple data plots, you can draw a line to connect the mean values of each dataplot. To draw the mean connectors, set the value of `drawMeanConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the mean for multiple sets of data. The default value of this attribute is `0`.
 
@@ -612,7 +590,7 @@ In a box and whisker chart, along with the dataset seriesname, the legend also s
 
 Let's move ahead and customize the mean deviation of box and whisker chart.
 
-### Show/Hide the mean deviation icon
+### Show/Hide the Mean Deviation Icon
 
 A box and whisker chart with the mean deviation icon can be shown in the legend box using `showMD` attribute. This attribute when set to `1` will show the icon representing the mean deviation value of the dataset in the legend.
 
@@ -634,7 +612,7 @@ The box and whisker chart with mean deviation icon shown in the legend box looks
 
 Click [here](http://jsfiddle.net/fusioncharts/cyzLx5v3/) to edit the above chart.
 
-### Customize the mean deviation icon
+### Customize the Mean Deviation Icon
 
 To customize the mean deviation icon, follow the points given below:
 
@@ -669,7 +647,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/t24afhfs/) to edit the above chart.
 
-### Draw mean deviation connectors
+### Draw Mean Deviation Connectors
 
 For multiple data plots, you can draw a line to connect the mean deviation icons of each dataplot. To draw the mean connectors, set the value of `drawMDConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the mean deviation for multiple sets of data. The default value of this attribute is `0`.
 
@@ -692,7 +670,7 @@ A box and whisker chart rendered with a mean deviation connector looks like this
 
 Click [here](http://jsfiddle.net/fusioncharts/7j79Lpna/) to edit the above chart.
 
-### Connect null data
+### Connect Null Data
 
 If you use the `showMD` attribute with the `data` object and set it to `0`, the chart will not display the mean deviation icon for that particular set of data. In this case, the missing mean deviation is considered as null data. Consequently, the mean deviation connectors will skip this null data and draw a continuous connector.
 
@@ -718,7 +696,7 @@ In a box and whisker chart, along with the dataset series name, the legend also 
 
 Let's move ahead and customize the standard deviation of box and whisker chart.
 
-### Show/Hide the standard deviation icon
+### Show/Hide the Standard Deviation Icon
 
 A box and whisker chart with the standard deviation icon can be shown in the legend box using `showSD` attribute. This attribute when set to `1` will show the icon representing the standard deviation value of the dataset in the legend.
 
@@ -739,11 +717,9 @@ A box and whisker chart with the standard deviation icon shown in the legend box
 
 Click [here](http://jsfiddle.net/fusioncharts/vLp55w9L/) to edit the above chart.
 
-Click here to edit the above chart.
-
 > To show/hide individual standard deviation values, use the `showSD` attribute with the `data` object, that belongs to the `dataset` object.
 
-### Customize the standard deviation icon
+### Customize the Standard Deviation Icon
 
 To customize the standard deviation icon, follow the points given below:
 
@@ -768,9 +744,7 @@ Refer to the code given below:
         "sdIconColor": "ff0000",
         "sdIconAlpha": "70"
     }
-...
 }
-
 ```
 A box and whisker chart with the standard deviation icon shown in the legend box looks like this:
 
@@ -778,7 +752,7 @@ A box and whisker chart with the standard deviation icon shown in the legend box
 
 Click [here](http://jsfiddle.net/fusioncharts/u47qrcte/) to edit the above chart.
 
-### Draw standard deviation connectors
+### Draw Standard Deviation Connectors
 
 For multiple data plots, you can draw a line to connect the standard deviation icons of each dataplot. To draw the connectors, set the value of `drawSDConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the standard deviation for multiple sets of data. The default value of this attribute is `0`.
 
@@ -788,14 +762,10 @@ Refer to the code given below:
 
 ```
 {
-
     "chart": {
-
         "drawSDConnector": "1"
     }
-...
 }
-
 ```
 A box and whisker chart rendered with a standard deviation connector looks like this:
 
@@ -828,7 +798,7 @@ In a box and whisker chart, along with the dataset series name, the legend also 
 
 Let's move on to customize the quartile deviation of box and whisker chart.
 
-### Show/Hide the quartile deviation icon
+### Show/Hide the Quartile Deviation Icon
 
 A box and whisker chart with the quartile deviation icon can be shown in the legend box using `showQD` attribute. This attribute when set to `1` will show the icon representing the quartile deviation value of the dataset in the legend.
 
@@ -848,11 +818,9 @@ A box and whisker chart with the quartile deviation icon shown in the legend box
 
 Click [here](http://jsfiddle.net/fusioncharts/grwfoLto/) to edit the above chart.
 
-Click here to edit the above chart.
-
 > To show/hide individual quartile deviation values, use the `showSD` attribute with the `data` object, that belongs to the `dataset` object.
 
-### Customize the quartile deviation icon
+### Customize the Quartile Deviation Icon
 
 To customize the quartile deviation icon, follow the points given below:
 
@@ -887,7 +855,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/abk7goL7/) to edit the above chart.
 
-### Draw quartile deviation connectors
+### Draw Quartile Deviation Connectors
 
 For multiple data plots, you can draw a line to connect the quartile deviation icons of each dataplot. To draw the connectors, set the value of `drawQDConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the quartile deviation for multiple sets of data. The default value of this attribute is `0`.
 
@@ -978,7 +946,7 @@ A box and whisker chart with outliers looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/y9wzdwur/) to edit the above chart.
 
-### Show outliers beyond the range
+### Show Outliers beyond the Range
 
 For the chart shown above, all outliers provided as values to the `outliers` attribute are in the range of the y-axis scale. However, there can be instances where the outlier values lie outside the range of the y-axis. In this case, by default, such outlier values are not shown on the chart to maintain the visual integrity of the data plots.
 
