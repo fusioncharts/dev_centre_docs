@@ -7,7 +7,7 @@ breadcrumb: [["Home", "/"], ["Pie and Doughnut Charts"]]
 
 A pie chart is a circular chart divided into sectors where the arc length of each sector, its central angle, and its area is proportional to the quantity it represents. A doughnut chart is similar to a pie chart and facilities similar kind of data analysis. FusionCharts Suite XT includes the pie and doughnut charts to plot data that needs to be shown as a percent of the whole.
 
-## Pie 2D chart
+## Pie 2D Chart
 
 Let's create our first pie 2D chart which will showcase the split in revenue by product categories for one year. 
 
@@ -31,7 +31,7 @@ The pie 2D chart for the above code looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/hLhjhft8/) to edit the pie 2D chart.
 
-## Pie 3D chart
+## Pie 3D Chart
 
 To render a pie chart in 3D, change the value of the `type` attribute from `pie2D` to `pie3D`. The rest of the data structure remains the same.
 
@@ -41,7 +41,7 @@ A pie chart in 3D looks like :
 
 Click [here](http://jsfiddle.net/fusioncharts/uq2muq97/) to edit the pie 3D chart.
 
-## Doughnut 2D chart
+## Doughnut 2D Chart
 
 As we know, a doughnut chart is similar to a pie chart. The only difference is that a doughnut chart has a blank center - as the name suggests, it looks like a doughnut. 
 
@@ -57,7 +57,7 @@ The doughnut 2D chart for the above code looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/wYj95/) to edit the doughnut 2D chart.
 
-## Doughnut 3D chart
+## Doughnut 3D Chart
 
 To render a doughnut chart in 3D, change the value of the `type` attribute from `doughnut2D` to `doughnut3D`. The rest of the data structure remains the same.
 
@@ -101,6 +101,8 @@ To show percent values and actual values in your chart, follow the steps given b
 
 * Set the `showPercentInTooltip` attribute to `1` to render the text of tooltip in percentage values.
 
+For a detailed list of attributes you can check the API reference page of pie2D chart.
+
 > The **showPercentValues** and the **showPercentInTooltip** attributes are applicable if you want to show percent values on the chart and actual values in tool-tips for a doughnut chart.
 
 Refer to the code given below:
@@ -114,15 +116,13 @@ Refer to the code given below:
 }
 
 ```
-For a detailed list of attributes you can check the API reference page of pie2D chart.
-
 A pie2D chart configured to show percent values on the chart looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/hLhjhft8/) to edit the pie 2D chart.
 
-## Customize the center label for a doughnut chart
+## Customize the Center Label for a Doughnut Chart
 
 For a doughnut chart, you can configure the default text that will be rendered on the center label. You can also configure the text that will be rendered on the center label when the mouse pointer is hovered over one of the doughnut slices.
 
@@ -150,7 +150,7 @@ A doughnut chart with the center label customized looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/wYj95/) to edit the doughnut 2D chart.
 
-Enable single-slice slicing
+## Enable Single-Slice Slicing
 
 By default, the pie and doughnut charts allow you to slice out multiple pie/doughnut slices at one time. You can, however, opt to enable slicing-out only one slice at a time.
 
@@ -173,7 +173,7 @@ A doughnut chart with single-slicing enabled looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/jg4k7eny/) to edit the doughnut 2D chart.
 
-## Disable smart labels and lines
+## Disable Smart Labels and Lines
 
 By default, pie and doughnut charts are rendered with smart labels and lines - smart labels are data labels connected to their corresponding pie slices using line segments called smart lines. Smart labels manage overlapping of labels even when a large number of labels are placed in close vicinity. You can, however, choose to disable these smart labels. 
 
@@ -260,7 +260,7 @@ Refer to the code given below:
 
 Click [here](http://jsfiddle.net/fusioncharts/dmyqomdp/) to edit the pie 2D chart.
 
-Skip overlap labels
+## Skip Overlap Labels
 
 When there are too many labels in the pie/doughnut chart (which is difficult to adjust even if you are using smart labels), the labels may overlap. In this case, you have the option to skip the overlapping labels. The labels of the least significant pies will be removed. To skip the overlapping of labels set the `skipOverlapLabels` attribute to `1`.
 
@@ -277,7 +277,7 @@ Refer to the code given below:
 
 ```
 
-## Customize pie radius
+## Customize Pie Radius
 
 By default, for pie/doughnut charts, the chart automatically calculates the best fit pie radius based on the data provided. However, you can choose to explicitly set the outer radius of the pie chart. Specify the outer radius of the pie/doughnut chart using `pieRadius` attribute.
 
@@ -299,7 +299,7 @@ A pie chart with the outer radius customized looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/rds15mvs/) to edit the pie 2D chart.
 
-## Set the starting angle
+## Set the Starting Angle
 
 By default, pie/doughnut charts start plotting from the 0° angle. The chart allows you to explicitly set the starting angle. Specify the `startingAngle` attribute set the starting angle for the pie/doughnut chart. The first pie slice will start plotting from the angle measure specified in this attribute.
 
@@ -320,7 +320,7 @@ A pie chart with the starting angle set to 45° looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/fnpr73jw/) to edit the pie 2D chart.
 
-## Slice a pie/doughnut
+## Slice a Pie/Doughnut
 
 When a pie/doughnut chart first renders, by default, all slices are sliced-in. However, to highlight a slice, you may want to render it sliced-out when the chart first loads. `isSliced` attribute can be used to specify the pie chart will be rendered with one slice sliced-out. Set this attribute to `1` for a pie slice to render a slice sliced-out. This attribute belongs to the `data` object.
 
@@ -343,7 +343,7 @@ A pie chart rendered with one slice sliced-out looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/mcozko5a/) to edit the pie 2D chart.
 
-## Configure the slicing distance
+## Configure the Slicing Distance
 
 When a pie/doughnut slice is sliced-out, you can configure the distance between the center and the sliced-out slices. Set the distance (in pixels) between the center of the chart and the sliced out slices using `slicingDistance` attribute.
 
@@ -365,7 +365,7 @@ A chart with the slicing distance configured looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/c5oybzc2/) to edit the pie 2D chart.
 
-Configure the bevel effect
+## Configure the Bevel Effect
 
 For pie/doughnut charts, you can configure the bevel effect to render the chart with 3D effects. Set the `use3DLighting` attribute to `1` to specify whether advanced gradients and shadow effects will be used to create better looking charts. 
 

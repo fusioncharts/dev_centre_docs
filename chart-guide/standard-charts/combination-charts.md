@@ -11,25 +11,25 @@ Combination charts are similar to multi-series charts, they allow you to plot mu
 
 The combination charts available in the FusionCharts Suite XT are:
 
-* 2D Single y-axis combination
+* 2D Single Y-axis Combination Chart
 
-* 3D Single Y Combination
+* 3D Single Y-axis Combination Chart
 
-* 2D Dual Y Combination
+* 2D Dual Y-axis Combination Chart
 
-* Column 3D + Line Single Y
+* Column 3D + Line Single Y-axis Chart
 
-* Column 3D + Line Dual Y
+* Column 3D + Line Dual Y-axis Chart
 
-* Stacked Column 2D Line Single Y
+* Stacked Column 2D Line Single Y-axis Chart
 
-* Stacked Column 3D Line Single Y
+* Stacked Column 3D Line Single Y-axis Chart
 
-* Stacked Column 3D Line Dual Y
+* Stacked Column 3D Line Dual Y-axis Chart
 
-* Multi Series Stacked Column 2D + Line Dual Y
+* Multi Series Stacked Column 2D + Line Dual Y-axis Chart
 
-## 2D single y-axis combination chart
+## 2D Single Y-axis Combination Chart
 
 Let's create our first combination chart to showcase the comparison of actual revenue, projected revenue and the profit earned for each month of the last year. All three metrics have been plotted using different chart types - the actual revenue earned is plotted using a column chart, the projected revenue is plotted using a line chart, and the profit earned is plotted using an area chart.
 
@@ -55,7 +55,7 @@ Click [here](http://jsfiddle.net/fusioncharts/4REJ5/) to edit the single y combi
 
 Using a different chart type for each metric ensures easy interpretation of the data being shown.
 
-## 3D single y-axis combination chart
+## 3D Single Y-axis Combination Chart
 
 To render a single y-axis combination chart in 3D, change the value of the `type` attribute from `mscombi2d` to `mscombi3d`. The rest of the data structure remains the same.
 
@@ -65,7 +65,7 @@ A single y-axis combination chart in 3D looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/rjy87gfy/) to edit the single y combination chart in 2D.
 
-## 2D dual y-axis combination chart
+## 2D Dual Y-axis Combination Chart
 
 Now, let's create a dual y-axis combination chart in 2D. For this, change the value of the `type` attribute from `mscombi2d` to `mscombidy2d`.
 
@@ -81,7 +81,7 @@ Click [here](http://jsfiddle.net/fusioncharts/S52bN/) to edit the dual y-axis co
 
 Now, let's customize the appearance and properties of the combination charts.
 
-## Plotting Trend Elements
+## Plot Trend Elements
 
 For a dual y-axis chart, you can plot trend-lines with respect to both, the primary y-axis and the secondary y-axis. The following sample will showcase the average revenue trend-line which will be plotted against the primary y-axis that shows the amount in USD. The average profit percent trend-line will be plotted against the secondary y-axis that shows the profit percent.
 
@@ -108,40 +108,23 @@ Refer to the code given below:
 ```
 {
   "chart": {
-    ...
+      ...
   },
-  ...
   "trendlines": [{
-
     "line": [{
-
       "startValue": "18833",
-
       "color": "#0075c2",   
-
       "valuePadding": "20",
-
       "displayvalue": "Average{br}Revenue"
-
     }, 
     {
-
       "startValue": "21",
-
       "parentYAxis": "s",
-
       "color": "#f2c500",
-
       "displayvalue": "Average{br}Profit %"
-
     }]
-
   }]
-
 }
-
-...
-
 ```
 A combination chart rendered with two trend-lines looks like this:
 
@@ -160,9 +143,7 @@ Refer to the code given below:
   "chart": {
     "primaryAxisOnLeft" : "0"
   }
-...
 }
-
 ```
 
 A combination chart rendered with the positions of the axes swapped looks like this:

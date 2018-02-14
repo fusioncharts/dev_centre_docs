@@ -76,14 +76,6 @@
                 "label": "Dec",
                 "value": "730000"
             }
-        ],
-        "trendlines": [{
-            "line": [{
-                "startvalue": "700000",
-                "color": "#1aaf5d",
-                "valueOnRight": "1",
-                "displayvalue": "Monthly Target"
-            }]
-        }]
+        ]
     }
 }

@@ -35,7 +35,7 @@ A single-series column 2D chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/s7t8F/) to edit the column 2D chart.
 
-## Column 3D chart
+## Column 3D Chart
 
 To render a column chart in 3D, change the value of the `type` attribute from `column2D` to `column3D`. The rest of the data structure remains the same.
 
@@ -45,7 +45,7 @@ A single-series column 3D chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/xL3py/ ) to edit the column 3D chart.
 
-## Bar 2D chart
+## Bar 2D Chart
 
 Now, lets create a bar 2D chart. In the chart below, we have shown five stores in a supermarket that have highest sales. The sales figures have been plotted along the x-axis and the store names have been plotted along the y-axis.
 
@@ -55,7 +55,7 @@ To render a bar 2D chart, set the `type` to `bar2d`. A single-series bar 2D char
 
 Click [here](http://jsfiddle.net/fusioncharts/y3H2G/) to edit the bar 2D chart.
 
-## Bar 3D chart
+## Bar 3D Chart
 
 To render a bar chart in 3D, change the value of the `type` attribute from `bar2D` to `bar3D`. The rest of the data structure remains the same.
 
@@ -85,7 +85,7 @@ Click [here](http://jsfiddle.net/fusioncharts/xb9TG/) to edit the line chart.
 
 An area chart is similar to the line chart, with the difference that the area marked by the anchors and line segments is filled.
 
-To render an area chart the same use case as above, set the `type` to `area`. A single-series area chart looks like:
+To render an area chart with the same use case as above, set the `type` to `area`. A single-series area chart looks like:
 
 {% embed_all standard-charts-line-area-and-column-charts-example-6.js %}
 
@@ -182,11 +182,11 @@ An example of a chart, where you can dynamically change the chart type, looks li
 
 {% embed_chart standard-charts-line-area-and-column-charts-example-10.js %}
 
-## Set Data Skipping
+## Data Skipping
 
 Visualization plays a crucial role in data science, helping data scientists to make sense of the underlying patterns within data, even before any other computation begins. With v3.12.0, FusionCharts has evolved to consume large amount of data in standard charts.
 
-What if you want to render 10000 data points in a single series chart with a dimension of 500 * 400 pixels for line, area and column charts. So if we take the width of the canvas as 500 pixels, an average of 20 data plots will be drawn every width of pixel which is not very informative with respect to visualization. **Data skipping** is a concept which has been introduced to draw only those plots in the canvas which actually creates a data trend without hampering the performance of the chart.
+What if you want to render 10000 data points in a single series chart with a dimension of 500x400 pixels for line, area and column charts. So if we take the width of the canvas as 500 pixels, an average of 20 data plots will be drawn every width of pixel which is not very informative with respect to visualization. **Data skipping** is a concept which has been introduced to draw only those plots in the canvas which actually creates a data trend without hampering the performance of the chart.
 
 Given below is the list of attributes by the help of which you can customize your data skipping:
 
