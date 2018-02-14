@@ -26,7 +26,7 @@ A line chart with anchors hidden looks as below:
 
 {% embed_chart chart-configurations-anchors-and-lines-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5tajR/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/5tajR/ "@@open-newtab") to edit the above chart.
 
 ## Customize anchor properties
 
@@ -62,7 +62,7 @@ A line chart with customized anchors looks like as shown below:
 
 {% embed_chart chart-configurations-anchors-and-lines-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/QnFW2/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/QnFW2/ "@@open-newtab") to edit the above chart.
 
 ## Customize anchors for specific data points
 
@@ -99,7 +99,7 @@ A line chart with anchors for specific data points customized looks as below:
 
 {% embed_chart chart-configurations-anchors-and-lines-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/w9ZWt/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/w9ZWt/ "@@open-newtab") to edit the above chart.
 
 ## Add external images
 
@@ -173,4 +173,4 @@ A line chart with external images in the anchors looks as below:
 
 {% embed_chart chart-configurations-anchors-and-lines-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ZBZKS/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ZBZKS/ "@@open-newtab") to edit the above chart.
