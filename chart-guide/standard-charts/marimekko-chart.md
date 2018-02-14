@@ -45,7 +45,7 @@ The marimekko chart for the above code looks like :
 
 {% embed_all standard-charts-marimekko-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/bdmTg/) to edit the marimekko chart.
+Click [here](http://jsfiddle.net/fusioncharts/bdmTg/ "@@open-newtab") to edit the marimekko chart.
 
 As you can see in the chart data, the actual sales data has been provided. The Marimekko chart automatically converts these values into percentage values based on the size of a market segment and the percentage share held by competitors in each segment.
 
@@ -72,7 +72,6 @@ Refer to the code given below:
   "chart": {
     "usePercentDistribution": "0"
   }
-...
 }
 
 ```
@@ -80,7 +79,7 @@ A Marimekko chart rendered with actual values instead of percentage values looks
 
 {% embed_chart standard-charts-marimekko-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/btfhoayu/) to edit the marimekko chart.
+Click [here](http://jsfiddle.net/fusioncharts/btfhoayu/ "@@open-newtab") to edit the marimekko chart.
 
 ## Hide the Total value of Market Segments
 
@@ -95,7 +94,6 @@ Refer to the code given below:
   "chart": {
     "showSum": "0"
   }
-...
 }
 
 ```
@@ -104,7 +102,7 @@ A Marimekko chart with the total value of market segments hidden looks like this
 
 {% embed_chart standard-charts-marimekko-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/m02om320/) to edit the marimekko chart.
+Click [here](http://jsfiddle.net/fusioncharts/m02om320/ "@@open-newtab") to edit the marimekko chart.
 
 ## Percentage Market Share Values
 
@@ -117,16 +115,14 @@ Refer to the code given below:
   "chart": {
     "showAxisPercentValues": "0"
   }
-...
 }
 
 ```
-
 A Marimekko chart with the percentage labels on the x-axis hidden looks like this:
 
 {% embed_chart standard-charts-marimekko-chart-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/vvk1of9j/) to edit the marimekko chart.
+Click [here](http://jsfiddle.net/fusioncharts/vvk1of9j/ "@@open-newtab") to edit the marimekko chart.
 
 ## Legend Interactivity
 

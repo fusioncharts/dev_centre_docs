@@ -33,7 +33,7 @@ Here is the JSON/XML representation of the above data table to build this gauge:
 
 ### Include FusionCharts Suite XT library
 
-To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called `fint` (FusionCharts internal) and it is present in the `themes` folder of your download. Refer to the code below:
+To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called fint (FusionCharts internal) and it's .js file is present in the themes folder of your download. Refer to the code below:
 
 ```
 <html>

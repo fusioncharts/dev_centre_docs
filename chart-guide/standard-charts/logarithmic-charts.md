@@ -49,7 +49,7 @@ The log column 2D chart thus rendered looks like this:
 
 {% embed_all standard-charts-logarithmic-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/kEeUR/) to edit the log column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/kEeUR/ "@@open-newtab") to edit the log column 2D chart.
 
 ## Log Line 2D Chart
 
@@ -59,7 +59,7 @@ The log line chart thus rendered looks like this:
 
 {% embed_all standard-charts-logarithmic-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/LSdTC/) to add the log line 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/LSdTC/ "@@open-newtab") to add the log line 2D chart.
 
 FusionCharts Suite XT allows you to configure the functional aspects of logarithmic charts. Now, let's customize the appearance and properties of the charts. 
 
@@ -82,7 +82,7 @@ A log column chart with the base set to 5 looks like this:
 
 {% embed_chart standard-charts-logarithmic-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/dfdc2f9p/) to edit the log column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/dfdc2f9p/ "@@open-newtab") to edit the log column 2D chart.
 
 ## Inverse Axis Support
 
@@ -95,7 +95,6 @@ Refer to the code given below:
 	"chart": {
 		"invertYAxis": "1"
 	},
-...
 }
 
 ```
@@ -103,7 +102,7 @@ A log column 2D chart rendered with an inverted y-axis looks like this:
 
 {% embed_chart standard-charts-logarithmic-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/rr92f6Lm/) to edit the log column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/rr92f6Lm/ "@@open-newtab") to edit the log column 2D chart.
 
 ## Custom Selection of Minor Divisional Lines
 
@@ -118,7 +117,6 @@ Refer to the code given below:
 	"chart": {
 		"numMinorDivLines": "4"
 	},
-...
 }
 
 ```
@@ -127,4 +125,4 @@ A log column chart with the number of minor divisional lines explicitly specifie
 
 {% embed_chart standard-charts-logarithmic-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8yx8gfaj/) to edit the log column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/8yx8gfaj/ "@@open-newtab") to edit the log column 2D chart.

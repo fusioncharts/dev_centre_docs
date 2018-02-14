@@ -97,4 +97,4 @@ A multi-axis line chart rendered with three axes looks like this:
 
 {% embed_all standard-charts-multi-axis-line-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/aPHB5/) to edit the multi-axis line chart.
+Click [here](http://jsfiddle.net/fusioncharts/aPHB5/ "@@open-newtab") to edit the multi-axis line chart.

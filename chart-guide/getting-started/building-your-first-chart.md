@@ -11,7 +11,7 @@ Let's start with a simple example of "Monthly revenue" chart, which we will plot
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-The data for this chart is represented in a table as under:
+The data for this chart is represented in a table below:
 
 Month|Revenue|
 -|-
@@ -28,7 +28,7 @@ October|$490,000|
 November|$900,000|
 December|$730,000|
 
-Let's now get to building the chart.
+Now, let's build the chart.
 
 ## Convert tabular data into JSON/XML format
 
@@ -69,7 +69,7 @@ Specify a unique ID for the `<div>` container within the web page. The unique ID
 
 In the final step, create an instance of the chart type as `column2d`, set the `width` and `height` (in pixels or %), and finally specify the JSON data for the chart, either as string or URL.
 
-The following code does the trick:
+Refer to the code below:
 
 ```
 FusionCharts.ready(function() {
@@ -252,7 +252,7 @@ The full HTML code for the example looks as under:
 
 ```
 
-Now view the page in a browser, you should see an interactive Column 2D chart, showing monthly revenues for Harry's SuperMart similar to the live chart at the top of this page. Try rolling over the columns to see the tooltips, or refresh the page to see the chart animating again.
+Now view the page in a browser, an interactive Column 2D chart is rendered, showing monthly revenues for Harry's SuperMart similar to the live chart at the top of this page. Try rolling over the columns to see the tooltips, or refresh the page to see the chart animating again.
 
 The best part about this chart is that it provides the same experience across mobile devices like iPhones, iPads, Android devices, and older browsers like IE6, including all the interactivity. FusionCharts Suite XT does all the hard work for you, so that you can focus on building your application!
 

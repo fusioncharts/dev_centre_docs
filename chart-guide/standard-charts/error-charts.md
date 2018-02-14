@@ -65,7 +65,7 @@ An error bar chart thus created looks like this:
 
 {% embed_all standard-charts-error-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7Z4Ha/) to edit the above error bar chart.
+Click [here](http://jsfiddle.net/fusioncharts/7Z4Ha/ "@@open-newtab") to edit the above error bar chart.
 
 ## Error Line Chart
 
@@ -75,7 +75,7 @@ An error line chart thus created looks like:
 
 {% embed_all standard-charts-error-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/qutLzs7m/) to edit the above error line chart.
+Click [here](http://jsfiddle.net/fusioncharts/qutLzs7m/ "@@open-newtab") to edit the above error line chart.
 
 ## Error Scatter Chart
 
@@ -97,7 +97,7 @@ The error scatter chart will look like:
 
 {% embed_all standard-charts-error-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/uV3cB/) to edit the above error scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/uV3cB/ "@@open-newtab") to edit the above error scatter chart.
 
 Now, let's customize the appearance and properties of the charts.
 
@@ -131,7 +131,6 @@ Refer to the code given below:
 
 		"errorBarWidthPercent": "30"
 	},
-...
 }
 
 ```
@@ -139,7 +138,7 @@ An error bar chart, after customizing the error bars, looks like this:
 
 {% embed_chart standard-charts-error-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/fumzvpw3/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/fumzvpw3/ "@@open-newtab") to edit the above chart.
 
 > The configurations for the error line chart is same as that of the error bars chart.
 
@@ -159,8 +158,6 @@ Customize the cosmetic properties of error scatter chart to change the  appearan
 
 * Set the width (in pixels) of the vertical error bars using `verticalErrorBarWidth` attribute. 
 
-Refer to the code below:
-
 Refer to the code given below:
 
 ```
@@ -172,7 +169,6 @@ Refer to the code given below:
       "verticalErrorBarAlpha": "50",
       "verticalErrorBarWidth": "8"
   }
-...
 }
 
 ```
@@ -181,4 +177,4 @@ An error scatter chart, after customizing the error bars, looks like:
 
 {% embed_chart standard-charts-error-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/e4rvjc37/) to edit the above error scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/e4rvjc37/ "@@open-newtab") to edit the above error scatter chart.

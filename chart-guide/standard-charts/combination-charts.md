@@ -51,7 +51,7 @@ A 2D combination chart with a single y-axis looks like this:
 
 {% embed_all standard-charts-combination-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/4REJ5/) to edit the single y combination chart in 2D.
+Click [here](http://jsfiddle.net/fusioncharts/4REJ5/ "@@open-newtab") to edit the single y combination chart in 2D.
 
 Using a different chart type for each metric ensures easy interpretation of the data being shown.
 
@@ -63,7 +63,7 @@ A single y-axis combination chart in 3D looks like:
 
 {% embed_all standard-charts-combination-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/rjy87gfy/) to edit the single y combination chart in 2D.
+Click [here](http://jsfiddle.net/fusioncharts/rjy87gfy/ "@@open-newtab") to edit the single y combination chart in 2D.
 
 ## 2D Dual Y-axis Combination Chart
 
@@ -77,7 +77,7 @@ A 2D combination chart with dual y-axis looks like this:
 
 {% embed_all standard-charts-combination-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/S52bN/) to edit the dual y-axis combination chart in 2D.
+Click [here](http://jsfiddle.net/fusioncharts/S52bN/ "@@open-newtab") to edit the dual y-axis combination chart in 2D.
 
 Now, let's customize the appearance and properties of the combination charts.
 
@@ -130,7 +130,7 @@ A combination chart rendered with two trend-lines looks like this:
 
 {% embed_chart standard-charts-combination-chart-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/pj4koo6s/) to edit the combination chart.
+Click [here](http://jsfiddle.net/fusioncharts/pj4koo6s/ "@@open-newtab") to edit the combination chart.
 
 ## Placing the Secondary Axis on the Left
 
@@ -150,4 +150,4 @@ A combination chart rendered with the positions of the axes swapped looks like t
 
 {% embed_chart standard-charts-combination-chart-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/b0jw9h1L/) to edit the combination chart.
+Click [here](http://jsfiddle.net/fusioncharts/b0jw9h1L/ "@@open-newtab") to edit the combination chart.

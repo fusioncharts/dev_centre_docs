@@ -37,7 +37,7 @@ The chart below shows you the difference between a normal and an inverse y-axis 
 
 {% embed_all standard-charts-inverse-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/WEJLC/) to edit the above inverse y-axis column chart
+Click [here](http://jsfiddle.net/fusioncharts/WEJLC/ "@@open-newtab") to edit the above inverse y-axis column chart
 
 ## Inverse Y-axis Area Chart
 
@@ -47,7 +47,7 @@ An inverse y-axis multi-series area chart looks like this:
 
 {% embed_all standard-charts-inverse-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/S38mg/) to edit the above inverse y-axis area chart.
+Click [here](http://jsfiddle.net/fusioncharts/S38mg/ "@@open-newtab") to edit the above inverse y-axis area chart.
 
 ## Inverse Y-axis Line Chart 
 
@@ -57,4 +57,4 @@ An inverse y-axis multi-series line chart looks like this:
 
 {% embed_all standard-charts-inverse-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/FJL6V/) to edit the above inverse y-axis line chart.
+Click [here](http://jsfiddle.net/fusioncharts/FJL6V/ "@@open-newtab") to edit the above inverse y-axis line chart.
