@@ -66,9 +66,7 @@ var jQuery = require('jquery');
 
 ```
 var jQuery = require('jquery');
-
 var FusionCharts = require('jquery-fusioncharts');
-
 var Charts = require('fusioncharts/fusioncharts.charts');
 ```
 

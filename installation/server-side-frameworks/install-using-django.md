@@ -1,7 +1,7 @@
 ---
 title: Install using django wrapper | FusionCharts
 description: FusionCharts Suite XT includes the FusionCharts server-side django wrapper that lets you create interactive, data-driven charts.
-heading: django
+heading: Django
 breadcrumb: [["Home", "/"], ["Django"]]
 ---
 

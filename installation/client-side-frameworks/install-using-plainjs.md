@@ -241,7 +241,7 @@ Therefore, assuming that you need to render the world map, the alias name **worl
 
 > Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are required to be fetched from there.
 
-### Package-specific Dependencies for Bower
+### Package-specific Dependencies
 
 * To render a chart belonging to the PowerCharts package, load the PowerCharts module:
 
@@ -266,7 +266,7 @@ Therefore, assuming that you need to render the world map, the alias name **worl
 
 > To know the map definition file names, refer the **[list of maps](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html)**.
 
-### Chart-specific Dependencies for Bower
+### Chart-specific Dependencies
 
 For some chart types, you need to include/exclude certain files. These chart types and the corresponding files are mentioned below:
 
