@@ -15,7 +15,7 @@ To create a pie 2D chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `pie2d`.
+* Specify the chart type using the `type` attribute. To render a pie 2D chart, set `pie2d`.
 
 * Set the container object using `renderAt` attribute.
 

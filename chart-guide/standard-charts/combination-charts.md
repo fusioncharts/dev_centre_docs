@@ -37,7 +37,7 @@ To create a single y-axis combination chart in 2D follow the steps below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `mscombi2D`.
+* Specify the chart type using the `type` attribute. To render a multi-series combination chart, set `mscombi2D`.
 
 * Set the container object using `renderAt` attribute.
 

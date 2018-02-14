@@ -23,7 +23,7 @@ To create a scatter chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `scatter`.
+* Specify the chart type using the `type` attribute. To render a scatter chart, set `scatter`.
 
 * Set the container object using `renderAt` attribute.
 
@@ -43,19 +43,7 @@ Click [here](http://jsfiddle.net/fusioncharts/6deM9/) to edit the scatter chart.
 
 Bubble charts are used for plotting data that is defined in terms of three numeric parameters. The third numeric parameter is indicated by the diameter of the bubble. The JSON/XML format of a bubble chart is slightly different from that of a scatter chart, this is because the bubble chart plots an additional numeric parameter.
 
-So let's create a bubble chart showing sales analysis of shoes of different brands for Harry's SuperMart for last month.
-
-To create a bubble chart follow the steps given below:
-
-* In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
-
-* Specify the chart type using the `type` attribute. To render a column chart, set `bubble`.
-
-* Set the container object using `renderAt` attribute.
-
-* Specify the dimension of the chart using `width` and `height` attributes.
-
-* Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
+So let's create a bubble chart showing sales analysis of shoes of different brands for Harry's SuperMart for last month. Specify the chart type using the `type` attribute. To render a bubble chart, set `bubble`.
 
 For a detailed list of attributes you can check the API reference page of bubble chart.
 

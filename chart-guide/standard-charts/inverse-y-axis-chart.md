@@ -23,7 +23,7 @@ To create an inverse y-axis chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `inverseMSColumn2D`.
+* Specify the chart type using the `type` attribute. To render a inverse y-axis column chart, set `inverseMSColumn2D`.
 
 * Set the container object using `renderAt` attribute.
 

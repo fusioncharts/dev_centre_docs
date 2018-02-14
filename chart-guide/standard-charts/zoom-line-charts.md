@@ -15,7 +15,7 @@ To create a zoom line chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `zoomline`.
+* Specify the chart type using the `type` attribute. To render a zoom line chart, set `zoomline`.
 
 * Set the container object using `renderAt` attribute.
 

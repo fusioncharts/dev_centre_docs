@@ -103,7 +103,7 @@ As an example, let's create a box and whisker chart that shows the gender-wise d
 
 To create a box and whisker chart, keep a note of the steps given below:
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `boxandwhisker2d`.
+* Specify the chart type using the `type` attribute. To render a box and whisker chart, set `boxandwhisker2d`.
 
 * Set the container object using `renderAt` attribute.
 

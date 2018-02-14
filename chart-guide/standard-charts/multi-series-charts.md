@@ -29,7 +29,7 @@ To create a multi-series column 2D chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `mscolumn2d`.
+* Specify the chart type using the `type` attribute. To render a multi-series colun 2D chart, set `mscolumn2d`.
 
 * Set the container object using `renderAt` attribute.
 

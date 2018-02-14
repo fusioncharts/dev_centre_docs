@@ -19,7 +19,7 @@ As an example, we will create our first radar chart that plots the results of a 
 
 To create a radar chart follow the steps given below:
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `radar`.
+* Specify the chart type using the `type` attribute. To render a radar chart, set `radar`.
 
 * Set the container object using `renderAt` attribute.
 

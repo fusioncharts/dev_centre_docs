@@ -51,7 +51,7 @@ To create an error bar chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `errorBar2D`.
+* Specify the chart type using the `type` attribute. To render an error chart, set `errorBar2D`.
 
 * Set the container object using `renderAt` attribute.
 

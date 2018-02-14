@@ -29,7 +29,7 @@ To create a scroll column 2D chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `scrollcolumn2d`.
+* Specify the chart type using the `type` attribute. To render a scroll column 2D chart, set `scrollcolumn2d`.
 
 * Set the container object using `renderAt` attribute.
 

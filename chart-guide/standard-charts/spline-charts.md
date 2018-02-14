@@ -27,7 +27,7 @@ To create a single-series spline 2D chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `spline`.
+* Specify the chart type using the `type` attribute. To render a spline chart, set `spline`.
 
 * Set the container object using `renderAt` attribute.
 

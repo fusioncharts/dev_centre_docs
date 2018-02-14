@@ -23,7 +23,7 @@ To create a multi-level pie chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `multilevelpie`.
+* Specify the chart type using the `type` attribute. To render a multi-level pie chart, set `multilevelpie`.
 
 * Set the container object using `renderAt` attribute.
 

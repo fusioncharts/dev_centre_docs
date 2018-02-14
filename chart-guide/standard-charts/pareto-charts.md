@@ -23,7 +23,7 @@ To create a pareto chart in 2D follow the steps given below: set the `type` attr
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `pareto2d`.
+* Specify the chart type using the `type` attribute. To render a pareto 2D chart, set `pareto2d`.
 
 * Set the container object using `renderAt` attribute.
 

@@ -15,7 +15,7 @@ To create a multi-series step line chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `msstepline`.
+* Specify the chart type using the `type` attribute. To render a step-line chart, set `msstepline`.
 
 * Set the container object using `renderAt` attribute.
 

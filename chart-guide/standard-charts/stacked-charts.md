@@ -39,7 +39,7 @@ To create a stacked column chart in 2D follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `stackedcolumn2d`.
+* Specify the chart type using the `type` attribute. To render a stacked column 2D chart, set `stackedcolumn2d`.
 
 * Set the container object using `renderAt` attribute.
 
