@@ -74,7 +74,7 @@ You can also render div lines as dashed lines instead of the default continuous 
 
 * Set the length of each dashed line using the `vDivLineDashLen` attribute.
 
-* Set the gap between each dash using the vDivLineDashGap` attribute.
+* Set the gap between each dash using the `vDivLineDashGap` attribute.
 
 Refer to the code below:
 

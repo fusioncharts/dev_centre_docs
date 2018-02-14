@@ -16,11 +16,11 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
-        "decimals": "2",
+        "decimals": "2"
     }
 }
- ```
+
+```
 
 The chart will look like as shown below:
 
@@ -37,12 +37,12 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "yAxisValueDecimals": "2",
-        "xAxisValueDecimals": "3",
+        "xAxisValueDecimals": "3"
     }
 }
- ```
+
+```
 
 The chart will look like as shown below:
 
@@ -65,10 +65,10 @@ Refer to the code snippets below:
 ```
 {
     "chart": {
-        ...
-        "forceDecimals": "1",
+        "forceDecimals": "1"
     }
 }
+
 ```
 
 The chart will look as shown below:
@@ -98,10 +98,10 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "formatNumber": "0"
     }
 }
+
 ```
 The chart will look as shown below:
 
@@ -109,7 +109,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/L6bzmLd7/) to edit the above chart.
 
-A column 2D chart with automatic number formatting looks as the one given above. The data for the chart is 12523, 14570.230, 17375 and 18235.79. FusionCharts Suite XT automatically formats the number scaling by converting it to K and M.
+A column 2D chart with automatic number formatting looks as the one given above. The data for the chart is `12523, 14570.230, 17375` and `18235.79`. FusionCharts Suite XT automatically formats the number scaling by converting it to `K` and `M`.
 
 ## Customize thousand and decimal separator
 
@@ -128,14 +128,14 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "decimalSeparator": ",",
         "thousandSeparator": "."
     }
 }
+
 ```
 
-The chart will look as shown below:
+The chart will look like as shown below:
 
 {% embed_chart chart-configurations-number-format-example-5.js %}
 
@@ -150,13 +150,12 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "thousandSeparatorPosition": "2,3"
     }
 }
-```
 
-The chart will look as shown below:
+```
+The chart will look like as shown below:
 
 {% embed_chart chart-configurations-number-format-example-6.js %}
 
@@ -183,13 +182,12 @@ Refer to the code below:
 ```
 {
     "chart": {
-	   ...
         "numberSuffix": "/day",
         "numberPrefix": "$"
     }
 }
-```
 
+```
 The chart will look as shown below:
 
 {% embed_chart chart-configurations-number-format-example-7.js %}
@@ -211,10 +209,10 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "formatNumberScale": "1"
     }
-}    
+}
+
 ```
 
 If you plot the data values as 1252322, 857023, 903753 and 1082357, then the rendered chart will look as shown below:
@@ -250,11 +248,11 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "numberScaleValue": "1000,1000,1000",
         "numberScaleUnit": "K,M,B"
     }
 }
+
 ```
 The chart will look as shown below:
 
@@ -271,13 +269,12 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "numberScaleValue": "60",
         "numberScaleUnit": " minutes"
     }
 }
-```
 
+```
 The chart will look as shown below:
 
 {% embed_chart chart-configurations-number-format-example-10.js %}
@@ -293,13 +290,12 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "numberScaleValue": "1024,1024,1024",
-        "numberScaleUnit": " MB, GB, TB",     
+        "numberScaleUnit": " MB, GB, TB"   
     }
 }
-``` 
 
+``` 
 The chart will look as shown below:
 
 {% embed_chart chart-configurations-number-format-example-12.js %}
@@ -321,13 +317,12 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "scaleRecursively": "1",
         "maxScaleRecursion": "-1"
     }
 }
-``` 
 
+``` 
 The chart will look as shown below:
 
 {% embed_chart chart-configurations-number-format-example-11.js %}

@@ -144,7 +144,7 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
+        "showVLineLabelBorder": "1"
     },
     "data": [{
         "label": "Fri",

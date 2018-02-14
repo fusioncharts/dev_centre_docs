@@ -30,9 +30,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/pxxsdfe0/) to edit the above chart.
 
-## Customize the zero plane
-
-### Zero plane in 2D chart
+## Customize zero plane in 2D chart
 
 To customize the zero plane in a  2D chart the  following attributes are used:
 
@@ -62,7 +60,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/ydxdrozz/) to edit the above chart.
 
-### Zero plane in 3D chart
+## Customize zero plane in 3D chart
 
 To customize the zero plane in a 3D chart the  following attributes are used:
 

@@ -1,8 +1,8 @@
 ---
-title: Add External Logo | FusionCharts
+title: External Logo | FusionCharts
 description: You can load external logos at runtime with can be GIF/JPEG/PNG or SWF files. This section talks about configuring and linking the logo to an external URL
 heading: Add External Logo
-breadcrumb: [["Home", "/"], ["Add External Logo"]]
+breadcrumb: [["Home", "/"], ["External Logo"]]
 ---
 
 You can load external logos at runtime which will be displayed over the chart. The logos can be GIF/JPEG/PNG or SWF files that reside on the same sub-domain as the chart.
@@ -16,12 +16,6 @@ Refer to the code below:
 ```
 {
     "chart": {
-        "theme": "fint",
-        "caption": "Monthly Revenue",
-        "subCaption": "Last year",
-        "xAxisName": "Month",
-        "yAxisName": "Amount (In USD)",
-        "numberPrefix": "$",
         "logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png"
     }
 }
@@ -35,7 +29,7 @@ Click [here](http://jsfiddle.net/fusioncharts/xwmrw80q/) to edit the above chart
 
 ## Configure the external logo
 
-To configure the external logo follow the steps given below:
+To configure the external logo the following attributes are used:
 
 * Set the transparency of the logo using the `logoAlpha` attribute. 
 
@@ -48,12 +42,6 @@ Refer to the code below:
 ```
 {
     "chart": {
-        "theme": "fint",
-        "caption": "Monthly Revenue",
-        "subCaption": "Last year",
-        "xAxisName": "Month",
-        "yAxisName": "Amount (In USD)",
-        "numberPrefix": "$",
         "logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
         "logoAlpha": "40",
         "logoScale": "80",
@@ -77,16 +65,6 @@ Refer to the code below:
 ```
 {
     "chart": {
-        "theme": "fint",
-        "caption": "Monthly Revenue",
-        "subCaption": "Last year",
-        "xAxisName": "Month",
-        "yAxisName": "Amount (In USD)",
-        "numberPrefix": "$",
-        "logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
-        "logoAlpha": "40",
-        "logoScale": "80",
-        "logoPosition": "TR",
         "logoLink": "N-http://www.fusioncharts.com/"
     }
 }
@@ -95,5 +73,7 @@ Refer to the code below:
 The chart will look like as shown below:
 
 {% embed_chart chart-configurations-loading-external-logo-example-3.js %}
+
+In the above chart, click on the logo to visit the external link.
 
 Click [here](http://jsfiddle.net/fusioncharts/s0shLfau/) to edit the above chart.

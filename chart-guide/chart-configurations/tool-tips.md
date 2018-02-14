@@ -13,6 +13,8 @@ A tooltip is displayed when the mouse is hovered over a particular data point. I
 
 * It denotes a series name, category name, and data value for multi-series and combination charts.
 
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltips-image-1.png)
+
 ## Show/hide tooltips
 
 By default, the tooltip is displayed. To hide the tool tip set the `showToolTip` attribute to `0`. 
@@ -22,18 +24,10 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "showToolTip": "0"
-        ...
     }
 }
 ```
-
-The chart will look as shown below:
-
-<chart>
-
-Click [here](http://jsfiddle.net/fusioncharts/m521xpzs/) to edit the above chart.
 
 ## Customize tooltips
 
@@ -52,7 +46,6 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
         "toolTipBorderColor": "#FFFFFF",
         "toolTipBgColor": "#666666",
         "toolTipBgAlpha": "80",
@@ -64,7 +57,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-<chart>
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltips-image-2.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/df92k3t5/) to edit the above chart.
 
@@ -77,19 +70,16 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
     },
     "data": [{
-        ...
         "tooltext": "Quarter 1{br}Total Sale: $195K{br}Rank: 1"
-        ...
     }
 }
 ```
 
 The chart will look as shown below:
 
-<chart>
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltips-image-3.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/13a8664h/) to edit the above chart.
 
@@ -135,7 +125,7 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-<chart>
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltips-image-4.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/j1327y7v/) to edit the above chart.
 
@@ -197,7 +187,7 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-<chart>
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltips-image-5.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/67Lzs1fq/) to edit the above chart.
 
@@ -224,16 +214,14 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "connectorToolText": "<b>From</b>: $fromLabel <br> <b>To</b>: $toLabel <br> <b>Daily shipments (avg)</b>: $label Units"
-        ...
     }
 }
 ```
 
 The chart will look as shown below:
 
-<chart>
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltips-image-5.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/0dwyegdw/) to edit the above chart.
 
@@ -287,7 +275,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-<chart>
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltips-image-6.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/mgkhxywt/) to edit the above chart.
 
