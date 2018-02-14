@@ -72,7 +72,7 @@ Refer to the code given below:
 ```
 A step line chart rendered with the forward progressive mode disabled looks like this:
 
-{% embed_chart standard-charts-step-line-charts-example-3.js %}
+{% embed_chart standard-charts-step-line-chart-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/sdhbwv98/) to edit the step line chart.
 
