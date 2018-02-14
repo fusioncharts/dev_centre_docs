@@ -253,6 +253,7 @@ Refer to the code given below:
   }
 }
 ```
+The configured zoom line chart looks like:
 
 {% embed_chart standard-charts-zoom-line-charts-example-7.js %}
 
