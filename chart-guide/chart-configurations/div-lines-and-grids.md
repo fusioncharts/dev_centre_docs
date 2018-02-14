@@ -129,7 +129,7 @@ Click here to edit the above chart.
 
 To customize the horizontal grid bands follow the steps given below:
 
-* Specify the hex code for the color of the horizontal grid using the `alternateHGridColor` attribute. Example - #00FFAA
+* Specify the hex code for the color of the horizontal grid using the `alternateHGridColor` attribute. Example - `#00FFAA`
 
 * Set the transparency of the horizontal grid using the `alternateHGridAlpha` attribute.
 
@@ -145,7 +145,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look like as shown in the image below:
+The chart will look like as shown below:
 
 {% embed_chart chart-configurations-div-lines-and-grids-example-5.js %}
 

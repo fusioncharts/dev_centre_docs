@@ -22,13 +22,13 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
         "baseFont": "Verdana",
         "baseFontSize": "11",
-        "baseFontColor": "#0066cc",
-        "theme": "fint"
+        "baseFontColor": "#0066cc"
     }
+...
 }
+
 ```
 
 The chart will look like as shown below:
@@ -52,15 +52,14 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "outCnvBaseFont": "Arial",
         "outCnvBaseFontSize": "11",
-        "outCnvBaseFontColor": "#2f69a0",
-        "theme": "fint"
+        "outCnvBaseFontColor": "#2f69a0"
     }
+...
 }
-```
 
+```
 The chart will look like as shown below:
 
 {% embed_chart chart-configurations-fonts-example-2.js %}

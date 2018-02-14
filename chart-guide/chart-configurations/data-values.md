@@ -39,8 +39,8 @@ Instead of displaying numeric data values, you can use text labels to denote dat
         }
     ]
 }
-```
 
+```
 The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-values-example-1.js %}
@@ -49,7 +49,7 @@ Click [here](http://jsfiddle.net/fusioncharts/kzqrpah6/) to edit the above chart
 
 ## Rotate data values
 
-By default, the data values appear horizontally as shown in the chart below:
+By default, the data values appear vertically as shown in the chart below:
 
 {% embed_chart chart-configurations-data-values-example-2.js %}
 
@@ -65,7 +65,9 @@ Refer to the code below:
         ...
         "rotateValues": "0"
     }
+...
 }
+
 ```
 
 The chart will look like as shown below:
@@ -84,7 +86,9 @@ By default, the data values are displayed within the column data plots. Set the 
         "...
         "placeValuesInside": "0"
     }
+...
 }
+
 ```
 
 The chart will look like as shown below:
@@ -103,7 +107,9 @@ By default, all the data values are displayed. Set the `showValues` attribute to
         "...
         "showValues": "0"
     }
+...
 }
+
 ```
 
 The chart will look like as shown in  the image below:
@@ -112,7 +118,7 @@ The chart will look like as shown in  the image below:
 
 Click [here](http://jsfiddle.net/fusioncharts/uezpdfff/) to edit the above chart.
 
-You can also opt to show/hide specific  data values instead of hiding all of them. Set the `showValue` attribute to `0` under the `data` for that specific data value which you want to hide. This setting overrides the `showValues` setting at the chart object level. 
+You can also opt to show/hide specific  data values instead of hiding all of them. Set the `showValue` attribute to `0` under the `data` for that specific data value which you want to hide. This setting overrides the `showValues` setting at the `chart` object level. 
 
 Refer to the code below:
 
@@ -130,6 +136,7 @@ Refer to the code below:
         }
     ]
 }
+
 ```
 
 The chart looks like as shown below:
@@ -142,7 +149,7 @@ Click [here](http://jsfiddle.net/fusioncharts/gs43rmof/) to edit the above chart
 
 If there is a large number of values to be displayed along the y-axis, you can opt to display every nth y-axis value skipping the rest.
 
-To do so, specify the n-th level using the `yAxisValuesStep` attribute. For  example, a chart showing data for 12 months and set with `yAxisValuesStep: 3` will show labels for January, April, July and October. The rest of the values will be skipped.
+To do so, specify the n-th level using the `yAxisValuesStep` attribute. For  example, if you set the value as `2`, the y-axis will display every 2nd value starting from the minimum value. 
 
 This attribute can also assume default values based on the space available in the chart to render y-axis values, and can override the values provided to avoid overlapping of y-axis values.
 
@@ -154,7 +161,9 @@ Refer to the code below:
         ...
         "yAxisValuesStep": "2"
     }
+...
 }
+
 ```
 
 The chart will look like as shown below:
@@ -198,7 +207,9 @@ Refer to the code below:
         "valueFontItalic": "0",
         "valueFontAlpha": "90"
     }
+...
 }
+
 ```
 
 The chart will look like as shown below:
@@ -242,7 +253,9 @@ Refer to the code below:
         "valueBorderDashLen": "4",
         "valueBorderDashGap": "2"
     }
+...
 }
+
 ```
 
 The chart will look like as shown below:
@@ -271,9 +284,10 @@ Refer to the code below:
         "valueBgAlpha": "100",
         "valueBgHoverAlpha": "5"
     }
+...
 }
-```
 
+```
 The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-values-example-10.js %}
