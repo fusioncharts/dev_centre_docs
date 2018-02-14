@@ -7,7 +7,7 @@ breadcrumb: [["Home", "/"], ["Error Charts"]]
 
 An error chart is used to show the extent of uncertainty in information relative to an average value. Error charts can be used to show the range of values that can be taken up by a data point, instead of being restricted to a point value. Errors are indicated by distinct I-shaped bars that are both positive and negative. Typically the I-bars represent the standard deviation in a measurement indicating the degree of variance observed in a data point. Error charts give a general idea of the accuracy of information or, conversely, the amount of variation in data from it's expected value.
 
-## Use of error charts
+## Use of Error Charts
 
 Following are a few areas where error charts are commonly used:
 
@@ -21,7 +21,7 @@ Following are a few areas where error charts are commonly used:
 
 * Human resource management
 
-## Types of error charts
+## Types of Error Charts
 
 At present, there are three types of multi-series error charts available in the FusionCharts XT Suite:
 
@@ -31,7 +31,7 @@ At present, there are three types of multi-series error charts available in the 
 
 * Error scatter chart (XY plot)
 
-## Features of error charts
+## Features of Error Charts
 
 The distinct features of error charts include:
 
@@ -43,7 +43,7 @@ The distinct features of error charts include:
 
 Now, let's move ahead and create our first error chart.
 
-## Error Bar chart
+## Error Bar Chart
 
 An **error bar** chart is a type of an error chart used to show variations in data from its original value. As an example, we will create an error bar chart that compares the lifespan of systems at the Daly City Serramonte, Bakersfield Central, Garden Groove Harbour stores. 
 
@@ -67,7 +67,7 @@ An error bar chart thus created looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/7Z4Ha/) to edit the above error bar chart.
 
-## Error Line chart
+## Error Line Chart
 
 Now, let's create an **error line** chart that compares the estimated procurement from two suppliers. To render an error line chart, change the value of the `type` attribute from `errorbar2d` to `errorline`. The rest of the data structure remains the same.
 
@@ -77,7 +77,7 @@ An error line chart thus created looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/qutLzs7m/) to edit the above error line chart.
 
-## Error Scatter chart
+## Error Scatter Chart
 
 An **error scatter** chart is an XY plot chart with vertical and horizontal error bars to show a range of error values for a specific data value. As an example, we will create a simple error scatter chart that shows the revenue forecast for the next year.
 
@@ -101,7 +101,7 @@ Click [here](http://jsfiddle.net/fusioncharts/uV3cB/) to edit the above error sc
 
 Now, let's customize the appearance and properties of the charts.
 
-## Customize Error charts 
+## Customize Error Charts 
 
 You can customize the cosmetic properties of error bars to change their appearance. To customize the properties, follow the steps given below:
 
@@ -143,9 +143,9 @@ Click [here](http://jsfiddle.net/fusioncharts/fumzvpw3/) to edit the above chart
 
 > The configurations for the error line chart is same as that of the error bars chart.
 
-### Cosmetics of Error Scatter chart
+### Cosmetics of Error Scatter Chart
 
-You can also customize the cosmetic properties of error scatter chart to change the  appearance of error bars in it. Most of the attributes are similar to the above rendered charts. To customize some more cosmetic properties of error bars in error scatter chart, follow the steps given below:
+Customize the cosmetic properties of error scatter chart to change the  appearance of error bars in it. Most of the attributes are similar to the above rendered charts. To customize some more cosmetic properties of error bars in error scatter chart, follow the steps given below:
 
 * Set the `useVerticalErrorBar` attribute to show the error bars (half/full) for the error scatter chart. Setting this attribute to `1` (default) will show them, whereas setting it to `0` will hide them.
 

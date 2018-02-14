@@ -126,7 +126,7 @@ Click [here](http://jsfiddle.net/fusioncharts/1crgnjar/) to edit the waterfall c
 
 In the above chart, the 'Total Costs' column is a non-cumulative sum column.
 
-#### Show/Hide a Total Sum Column
+### Show/Hide a Total Sum Column
 
 By default, a column that represents the sum of all the values plotted on the chart - the total sum column - is shown on the waterfall chart. You can, however, opt not to show this column. In the waterfall chart shown above, the 'Total Profit' column is the total sum column.
 
@@ -153,7 +153,7 @@ A waterfall chart with the total sum column hidden looks like this:
 
 {% embed_chart standard-charts-waterfall-charts-example-5.js %}
 
-Click {here}(http://jsfiddle.net/fusioncharts/tvmospjo/) to edit the waterfall chart.
+Click [here](http://jsfiddle.net/fusioncharts/tvmospjo/) to edit the waterfall chart.
 
 ## Customize Connectors
 

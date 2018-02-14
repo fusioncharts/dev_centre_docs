@@ -25,13 +25,13 @@ The FusionCharts Suite XT candlestick chart offers you a powerful and interactiv
 
 * Option to draw vertical indicator lines at any point on the x-axis.
 
-## Create a Candlestick chart
+## Create a Candlestick Chart
 
 As an example, we will create a candlestick chart that shows the daily stock price for Harry's SuperMart (stock name HRYS) for the last two months.
 
 To create a candlestick chart follow the steps given below:
 
-* Specify the chart type using the `type` attribute. To render a column chart, set `scatter`.
+* Specify the chart type using the `type` attribute. To render a candlestick chart, set `candlestick`.
 
 * Set the container object using `renderAt` attribute.
 
@@ -59,7 +59,40 @@ In the JSON data:
 
 Refer to the code below:
 
-**INSERT  CODE**
+```
+{
+    "chart": {
+        ...
+    },
+    "categories": [
+        {
+            "category": [...]
+        }
+    ],
+    "dataset": [
+        {
+            "data": [
+                {
+                    "open": "18.74",
+                    "high": "19.16",
+                    "low": "18.67 ",
+                    "close": "18.99",
+                    "x": "1",
+                    "volume": "4991285"
+                },
+                {
+                    "open": "23.97",
+                    "high": "23.99",
+                    "low": "23.14",
+                    "close": "23.32",
+                    "x": "61",
+                    "volume": "4879546"
+                }
+            ]
+        }
+    ]
+}
+```
 
 For a detailed list of attributes you can check the API reference page of candlestick chart.
 
@@ -79,7 +112,7 @@ Candlestick chart has both x-axis and y-axis as numeric. This chart does not dir
 
 Now, let's customize the appearance and properties of the charts. 
 
-## Set a chart type for the price chart
+## Set a chart type for the Price chart
 
 You can render the price chart using a candle chart, a bar chart, or a line chart. To render the price chart as per your requirement, set `plotPriceAs` attribute as `candlestick`, `bar` or `line`.
 
@@ -100,7 +133,7 @@ A candlestick chart with the price chart rendered as a line chart looks like thi
 
 Click [here](http://jsfiddle.net/fusioncharts/b3xfLrmg/) to edit the candlestick chart.
 
-## Set the price to plot for the line price chart
+## Set the Price to Plot for the Line Price chart
 
 For a price chart rendered as a line chart, you can decide whether you want to plot the chart w.r.t. the opening price or the closing price, using the `plotClosingPrice` attribute.
 
@@ -113,7 +146,6 @@ Refer to the code given below:
   "chart": {
     "plotClosingPrice" : "0"
   }
-...
 }
 
 ```
@@ -123,7 +155,7 @@ A candlestick chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/b3xfLrmg/) to edit the candlestick chart.
 
-## Show/Hide the volume chart
+## Show/Hide the Volume chart
 
 The volume chart in a candlestick chart can be set as hidden by specifying the `showVolumeChart` attribute as `0`.  The default value for this attribute is `1`.
 
@@ -146,9 +178,9 @@ Click [here](http://jsfiddle.net/fusioncharts/urzeqo6d/) to edit the candlestick
 
 > You can also customize the height of the volume chart by **volumeHeightPercent** attribute. The default value is **40%** and you can choose any value between **20%** to **80%**.
 
-## Configure trend-sets and trend-lines
+## Configure Trend-Sets and Trend-Lines
 
-### Trend-sets
+### Trend-Sets
 
 For a candlestick chart, you can plot overlay lines on the existing data plots. These lines, known as trend-sets, can be effectively used to show technical indicators.
 

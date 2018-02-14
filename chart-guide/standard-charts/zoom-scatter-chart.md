@@ -72,7 +72,7 @@ Button Icon|Button Name|Function|
 
 Now, let's see how to draw regression lines in the zoom scatter chart. 
 
-## Draw Regression lines
+## Draw Regression Lines
 
 A regression line, rendered as a straight line, is used to show the trend of **y** values with respect to the **x** values or the trend of **x** values with respect to the **y** values. A regression line, therefore, can be used to derive a particular trend from the scattered data points in the chart canvas and predict values accordingly. For example, regression lines can be used to find trends and predict future sales, stock prices, currency exchange rates, productivity gains resulting from a training program, and so on.
 

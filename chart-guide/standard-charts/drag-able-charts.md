@@ -265,19 +265,19 @@ Given below is the structure of the three-dimensional array returned by this fun
   </tr>
   <tr>
     <td>[1,0] - Category label of data index 1</td>
-    <td>Data for dataset [1] data index [1] - returned as an array with two elements.
+    <td>Data for dataset [1] data index [1] - returned as an array with two elements.</br>
 
 Sub array [0] - Id of set
 </br>
 Sub array [1] - Updated value of set
 </td>
-    <td>Data for dataset [2] data index [1] - returned as an array with two elements.
+    <td>Data for dataset [2] data index [1] - returned as an array with two elements.</br>
 
 Sub array [0] - Id of set
 </br>
 Sub array [1] - Updated value of set
 </td>
-    <td>Data for dataset [n] data index [m] - returned as an array with two elements.
+    <td>Data for dataset [n] data index [m] - returned as an array with two elements.</br>
 
 Sub array [0] - Id of set
 </br>
@@ -286,7 +286,7 @@ Sub array [1] - Updated value of set
   </tr>
   <tr>
     <td>[2,0] - Category label of data index 2 </td>
-    <td>Data for dataset [1] data index [2] - returned as an array with two elements.
+    <td>Data for dataset [1] data index [2] - returned as an array with two elements.</br>
 
 Sub array [0] - Id of set
 </br>
@@ -297,7 +297,7 @@ Sub array [1] - Updated value of set
   </tr>
   <tr>
     <td>[m,0] - Category label of data index m</td>
-    <td>Data for dataset [n] data index [m] - returned as an array with two elements.
+    <td>Data for dataset [n] data index [m] - returned as an array with two elements.</br>
 
 Sub array [0] - Id of set
 </br>
