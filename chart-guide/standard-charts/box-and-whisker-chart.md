@@ -25,7 +25,7 @@ The distinct features of a box and whisker chart include:
 
 The `five-number summary` principle is used to plot data on the box and whisker charts. This principle helps to provide a statistical summary for a given set of numbers. It gives information about the range (minimum and maximum numbers), the center (median), and the spread (upper and lower quartiles) for the set of values provided. A simple illustration of a box and whisker plot is given below:
 
-IMAGE
+![box and whisker]({% site.baseurl %}/images/standard-charts-box-and-whisker-image-1.jpg)
 
 > There is another principle, named as the 'Seven-number Summary', which is not used in the current implementation.
 
@@ -155,7 +155,7 @@ Refer to the code given below:
 
 For a detailed list of attributes refer to the API reference page of box and whisker chart.
 
-The box and whisker chart thus created looks like:
+The box and whisker chart looks like:
 
 {% embed_all standard-charts-box-and-whisker-chart-example-1.js %}
 
@@ -237,7 +237,17 @@ A box and whisker chart with five summary numbers- the minimum and maximum numbe
 
 Click [here](http://jsfiddle.net/fusioncharts/q89k0bef/) to edit the above chart.
 
-To selectively show summary numbers on the chart, set the `showValues` attribute and the attributes for the values you want to show to 1. Set the remaining attributes to `0`. For example, if you want to show only the minimum values, use the code snippet shown below:
+To selectively show summary numbers on the chart, firstly set the `showValues` attribute to `1`. Now set the attributes to show the respective values for summary numbers as shown below:
+
+* Set the value of `showQ1Values` to `1` to show the value of Q1.
+
+* Set the value of `showQ3Values` to  `1` to show the value of Q3.
+
+* Set the value of `showMedianValues` to  `1` to show the value of the median.
+
+* Set the value of `showMinValues` to  `1` to show the min value.
+
+* Set the value of `showMaxValues` to  `1` to show the max value.
 
 Refer to the code given below:
 

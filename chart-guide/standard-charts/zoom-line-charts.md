@@ -55,7 +55,7 @@ The chart below shows a zoom-line dual y-axis chart created to compare unique fo
 
 {% embed_all standard-charts-zoom-line-charts-example-6.js %}
 
-Click here to edit the zoom line dual y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/mvsjs4ag/) to edit the zoom line dual y-axis chart.
 
 ## Limit the number of data labels
 
@@ -147,10 +147,8 @@ Refer to the code given below:
   "chart": {
     "displayStartIndex": "49",
     "displayEndIndex": "253"
-  },
-...
+  }
 }
-
 ```
 A zoom line chart rendered with pre-selected number of data plots looks like this:
 
@@ -160,17 +158,43 @@ Click [here](http://jsfiddle.net/fusioncharts/2fqud5w1/) to edit the zoomline ch
 
 ## Customize the appearance of a zoom line chart
 
-FusionCharts Suite XT includes several options for customizing the appearance of a zoom line chart. Appearance of chart elements such as the scroll bar and toolbar can be configured with great deal of intricacy. 
+FusionCharts Suite XT includes several options for customizing the appearance of a zoom line chart. Appearance of chart elements such as the scroll bar and toolbar can be configured.
 
-Following is the lists some of the customization attributes that are exclusive to the zoom line chart:
-
-* Set the hex code using the `palette` attribute, to specify the color theme throughout the chart.
+The attributes to configure the `toolBar` button of the charts are:
 
 * Set the hex code using the `toolbarButtonColor`, to specify the color of the toolbar buttons.
+
+* Set the `showToolBarButtonToolText` attribute to `0` to disable the display of tooltips for toolbar buttons. The default value for this attribute is `1`.
+
+Refer to the code given below:
+
+```
+{
+  "chart": {
+    "toolbarButtonColor": "ff0000",
+    "showToolBarButtonToolText": "0"
+  }
+}
+```
+
+To configure the zoom panning of the chart:
 
 * Set the hex code using `zoomPaneBgColor` attribute to specify the background color of the zoom pane.
 
 * Set the transparency (range between 0 to 100) of the zoom pane using `zoomPaneBgAlpha` attribute.
+
+Refer to the code given below:
+
+```
+{
+  "chart": {
+    "zoomPaneBgColor": "#a7d7f9",
+    "zoomPaneBgAlpha": "50"
+  }
+}
+```
+
+To set the pin panning of the chart:
 
 * Specify the thickness of the pinned line using `pinLineThicknessDelta` attribute. The pinned line is rendered only when the chart is put to pin line mode.
 
@@ -178,7 +202,19 @@ Following is the lists some of the customization attributes that are exclusive t
 
 * Specify the transparency (range between 0 to 100) of the pin pane using `pinPaneBgAlpha` attribute.
 
-* Set the `showToolBarButtonToolText` attribute to `1` enable the display of tooltips for toolbar buttons.
+Refer to the code given below:
+
+```
+{
+  "chart": {
+    "pinLineThicknessDelta": "5",
+    "pinPaneBgColor": "#87919b",
+    "pinPaneBgAlpha": "50"
+  }
+}
+```
+
+The list of attributes to set the zooming mode of the zoomout button are: 
 
 * Specify the `btnResetChartTooltext` attribute to replace the default tooltext of the `Reset Chart` button with provided string.
 
@@ -188,12 +224,36 @@ Following is the lists some of the customization attributes that are exclusive t
 
 * Specify the `btnSwitchToPinModeTooltext` attribute to replace the default tooltext of `Switch to Pin Mode` button with provided string.
 
+Refer to the code given below:
+
+```
+{
+  "chart": {
+    "btnResetChartTooltext": "Want to Reset? Go for it.",
+    "btnZoomOutTooltext": "Zoom Out the Chart",
+    "btnSwitchToZoomModeTooltext": "Yes",
+    "btnSwitchToPinModeTooltext": "Switch on the Pin Mode",
+  }
+}
+```
+
+To configure the scroll bar of the chart:
+
 * Set the hex code to `scrollColor` attribute to specify the color for the scroll bar.
 
 * Specify the height of the scroll bar using `scrollHeight` attribute.
 
-Refer to the code below:
+Refer to the code given below:
 
-**INSERT CODE**
+```
+{
+  "chart": {
+    "scrollColor": "#bdbdbd",
+    "scrollHeight": "15"
+  }
+}
+```
 
-**LIVE CHART** **CODE**
+{% embed_chart standard-charts-zoom-line-charts-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/65jv5ohb/) to configure the above attributes.

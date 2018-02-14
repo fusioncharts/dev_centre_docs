@@ -98,9 +98,58 @@ Click [here](http://jsfiddle.net/fusioncharts/apo6yp8r/) to edit the above chart
 
 ## Segment the x-axis into categorical zones
 
-The x-axis of the bubble/scatter chart can be segmented into categorical zones using vertical trend lines. 
+The x-axis of the bubble/scatter chart can be segmented into categorical zones using vertical trend lines. To set the categorical zones follow the steps given below:
 
-**Provide attribute explanation**
+* Set the `isTrendZone` attribute to display the trendzone instead of the line.
+
+* Set the `startValue` attribute to specify the starting value of the trendzone.
+
+* Set the `endValue` attribute to specify the ending value of the trendzone.
+
+* Set the `color` attribute in `line` object to specify the color of the trendzone.
+
+* Set the `alpha` attribute in `line` object to specfy the transparency of the trendzone.
+
+Refer to the code below:
+
+```
+"vtrendlines": [{
+    "line": [{
+            "startValue": "0",
+            "endValue": "20",
+            "isTrendZone": "1",
+            "color": "#adebff",
+            "alpha": "25"
+        },
+        {
+            "startValue": "20",
+            "endValue": "40",
+            "isTrendZone": "1",
+            "color": "#adebff",
+            "alpha": "15"
+        },
+        {
+            "startValue": "40",
+            "endValue": "60",
+            "isTrendZone": "1"
+        },
+        {
+            "startValue": "60",
+            "endValue": "80",
+            "isTrendZone": "1",
+            "color": "#f2a485",
+            "alpha": "25"
+        },
+        {
+            "startValue": "80",
+            "endValue": "100",
+            "isTrendZone": "1",
+            "color": "#f2a485",
+            "alpha": "15"
+        }
+    ]
+}]
+```
 
 A bubble chart with the x-axis segmented looks like this:
 
