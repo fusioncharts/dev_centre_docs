@@ -20,13 +20,9 @@ Real-time charts|Real-time menu|Menu placed at the bottom-left side of the chart
 
 The samples shown below showcase the difference between the current and the previous implementations.
 
-The drag-node chart below shows the **current implementation of the toolbar**:
+The drag-node chart below shows the **implementation of the toolbar**:
 
 {% embed_chart chart-configurations-toolbar-example-1.js %}
-
-The image below shows the **previous implementation**:
-
-![toolbar]({% site.baseurl %}/images/chart-configurations-toolbar-image-1.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/bvzjqkoq/) to edit the above chart.
 
@@ -45,10 +41,6 @@ Refer to the code below:
 ```
 
 {% embed_chart chart-configurations-toolbar-example-2.js %}
-
-The image below shows the **previous implementation**:
-
-![toolbar]({% site.baseurl %}/images/chart-configurations-toolbar-image-2.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/hzg6mn18/) to edit the above chart.
 

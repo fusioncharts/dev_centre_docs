@@ -22,10 +22,8 @@ By default, the tick marks are displayed. To hide the tick marks set the `showTi
 ```
 {
     "chart": {
-       ...
         "showTickMarks": "0"
     }
-...    
 }
 ```
 
@@ -42,7 +40,6 @@ By default, the tick values are displayed. To hide the tick values set the `show
 ```
 {
     "chart": {
-       ...
         "showTickValues": "0"
     }
 }
@@ -61,7 +58,6 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
         "showLimits": "0"
     }
 }
@@ -88,7 +84,6 @@ Refer to the code below:
 ```
 {   
     "chart": {
-        ...
         "placeTicksInside": "1",
         "placeValuesInside": "1"
     }
@@ -112,7 +107,6 @@ Refer to the code below:
 ```
    {
     "chart": {
-        ...
         "ticksBelowGauge": "0"
     }
 }
@@ -135,7 +129,6 @@ Refer to the code below:
 ```
    {
     "chart": {
-        ...
         "ticksOnRight": "1"
     }
 }
@@ -158,7 +151,6 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "tickValueStep": "2"
     }
 }
@@ -185,10 +177,8 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "tickValueDecimals": "3",
         "forceTickValueDecimals":"1"
-        ...
     }
 }
 ```
@@ -214,10 +204,8 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "tickMarkDistance": "10",
         "tickValueDistance": "10"
-        ...
     }
 }
 ```
@@ -243,7 +231,6 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
         "adjustTM": "0",
         "majorTMNumber": "11",
         "minorTMNumber": "4"
@@ -275,16 +262,15 @@ To do so, use the following attributes:
 
 * Set the height of the minor ticks using the `minorTMHeight` attribute.
 
-* Set the thickness of the major ticks using  the `majorTMThickness attribute.
+* Set the thickness of the major ticks using  the `majorTMThickness` attribute.
 
-* Set the thickness of the minor ticks using  the `minorTMThickness attribute.
+* Set the thickness of the minor ticks using  the `minorTMThickness` attribute.
 
 Refer to the code below:
 
 ```
 {
     "chart": {
-        ...
         "majorTMColor": "#666666",
         "majorTMAlpha": "70",
         "majorTMHeight": "10",

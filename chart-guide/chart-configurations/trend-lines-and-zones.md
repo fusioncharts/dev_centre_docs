@@ -24,9 +24,9 @@ Refer to the code below:
 }]
 ```
 
-The chart will look as shown below:
+The chart will look like as shown below:
 
-{% embed_chart chart-configurations-trend-lines-and-zones-example-1.js %}
+![Trendlines]({% site.baseurl %}/images/chart-configurations-trendlines-image-1.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/qfeojqqq/) to edit the above chart.
 
@@ -53,7 +53,7 @@ Refer to the code below:
 }]
 ```
 
-The chart will look as shown below:
+The chart will look like as shown below:
 
 {% embed_chart chart-configurations-trend-lines-and-zones-example-2.js %}
 
@@ -83,7 +83,7 @@ Refer to the code below:
 
 ```
 
-The chart will look as shown below:
+The chart will look like as shown below:
 
 {% embed_chart chart-configurations-trend-lines-and-zones-example-3.js %}
 
@@ -139,7 +139,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The chart will look like as shown below:
 
 {% embed_chart chart-configurations-trend-lines-and-zones-example-4.js %}
 
@@ -167,7 +167,7 @@ Use the attributes given below to render a dashed trend line instead of the cont
 
 ```
 
-The chart will look as shown below:
+The chart will look like as shown below:
 
 {% embed_chart chart-configurations-trend-lines-and-zones-example-5.js %}
 
@@ -194,7 +194,7 @@ Refer to the code below:
 
 ```
 
-The chart will look as shown below:
+The chart will look like as shown below:
 
 {% embed_chart chart-configurations-trend-lines-and-zones-example-6.js %}
 
@@ -215,7 +215,7 @@ Refer to the code below:
 }]
 ```
 
-The chart will look as shown below:
+The chart will look like as shown below:
 
 {% embed_chart chart-configurations-trend-lines-and-zones-example-7.js %}
 
