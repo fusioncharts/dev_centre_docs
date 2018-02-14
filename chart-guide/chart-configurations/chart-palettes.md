@@ -33,4 +33,4 @@ Shown below is the same chart with the other four predefined palettes applied to
 
 {% embed_chart chart-configurations-chart-palettes-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/umb4jjwp/) to update the palettes on your own.
+Click [here](http://jsfiddle.net/fusioncharts/umb4jjwp/ "@@open-newtab") to update the palettes on your own.

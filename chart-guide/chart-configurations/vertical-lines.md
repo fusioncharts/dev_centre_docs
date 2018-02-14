@@ -53,7 +53,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-vertical-lines-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/L5dfydco/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/L5dfydco/ "@@open-newtab") to edit the above chart.
 
 ### Configure label positions
 
@@ -89,7 +89,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-vertical-lines-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/kLwfdgL0/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/kLwfdgL0/ "@@open-newtab") to edit the above chart.
 
 ### Configure label alignment
 
@@ -133,7 +133,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-vertical-lines-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/2ht3njrb/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/2ht3njrb/ "@@open-newtab") to edit the above chart.
 
 ## Show label borders
 
@@ -173,7 +173,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-vertical-lines-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/oo7wx0jg/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/oo7wx0jg/ "@@open-newtab") to edit the above chart.
 
 In order to show label borders for specific vertical lines, set the `showLabelBorder` attribute to `1` for a particular vertical line under `data`. This attribute overrides the setting in the chart object.
 
@@ -212,7 +212,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-vertical-lines-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6zL3r5d1/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/6zL3r5d1/ "@@open-newtab") to edit the above chart.
 
 ## Customize visual properties
 
@@ -270,4 +270,4 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-vertical-lines-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/r4y6ysb7/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/r4y6ysb7/ "@@open-newtab") to edit the above chart.

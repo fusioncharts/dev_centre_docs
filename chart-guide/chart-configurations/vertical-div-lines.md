@@ -33,7 +33,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-vertical-div-lines-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/43ayL5uf/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/43ayL5uf/ "@@open-newtab") to edit the above chart.
 
 ## Customize the visuals of vertical divisional lines 
 
@@ -64,7 +64,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-vertical-div-lines-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/vq1jvvze/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/vq1jvvze/ "@@open-newtab") to edit the above chart.
 
 ### Dashed divisional lines
 
@@ -98,7 +98,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-vertical-div-lines-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/4d4z0htq/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/4d4z0htq/ "@@open-newtab") to edit the above chart.
 
 ## Show vertical grid bands
 
@@ -121,7 +121,7 @@ A line chart with alternate vertical grid bands enabled is shown below:
 
 {% embed_chart chart-configurations-vertical-div-lines-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/30wLwwmj/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/30wLwwmj/ "@@open-newtab") to edit the above chart.
 
 ### Customize the visuals vertical grid bands
 
@@ -148,4 +148,4 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-vertical-div-lines-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/be3ap4du/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/be3ap4du/ "@@open-newtab") to edit the above chart.

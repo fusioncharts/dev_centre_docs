@@ -28,7 +28,7 @@ The chart will look like as shown below:
 
 ![Trendlines]({% site.baseurl %}/images/chart-configurations-trendlines-image-1.png)
 
-Click [here](http://jsfiddle.net/fusioncharts/qfeojqqq/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/qfeojqqq/ "@@open-newtab") to edit the above chart.
 
 ## Add trend zones
 
@@ -57,7 +57,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-trend-lines-and-zones-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Lwhvy97s/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/Lwhvy97s/ "@@open-newtab") to edit the above chart.
 
 ## Customize trend lines and trend zones
 
@@ -87,7 +87,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-trend-lines-and-zones-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/0x1zrh55/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/0x1zrh55/ "@@open-newtab") to edit the above chart.
 
 ## Customize the trend line display value text
 
@@ -143,7 +143,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-trend-lines-and-zones-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/bf7jLjo2/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/bf7jLjo2/ "@@open-newtab") to edit the above chart.
 
 ## Add dashed trend lines
 
@@ -171,7 +171,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-trend-lines-and-zones-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/mepm69sL/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/mepm69sL/ "@@open-newtab") to edit the above chart.
 
 ## Add slanted trend lines
 
@@ -198,7 +198,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-trend-lines-and-zones-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3r9r9bsr/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/3r9r9bsr/ "@@open-newtab") to edit the above chart.
 
 ## Configure the trend line label
 
@@ -219,7 +219,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-trend-lines-and-zones-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/0u6eLpzc/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/0u6eLpzc/ "@@open-newtab") to edit the above chart.
 
 ## Add trend lines for a dual y-axis chart
 
