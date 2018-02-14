@@ -1,8 +1,8 @@
 ---
-title: Install using Pure JS | FusionCharts
+title: Install using Plain JS | FusionCharts
 description: FusionCharts Suite XT is a JavaScript library that runs on your desktop/mobile web browsers. This article talks about steps to install FusionCharts library
-heading: Pure JS
-breadcrumb: [["Home", "/"], ["Pure JS"]]
+heading: Plain JS
+breadcrumb: [["Home", "/"], ["Plain JS"]]
 ---
 
 FusionCharts Suite XT—the industry's most comprehensive charting solution— is all about easing the whole process of data visualization through charts. This developer center includes everything that you'd want to know about FusionCharts Suite XT.
