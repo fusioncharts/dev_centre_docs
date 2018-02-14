@@ -41,18 +41,17 @@ To hide the vertical lines in your chart, set the `drawVerticalJoins` attribute 
 
 Refer to the code given below:
 
-```
+```JavaScript
 {
 	"chart": {
 		"drawVerticalJoins": "0"
-	},
-...
+	}
 }
 
 ```
 A step line chart rendered without the vertical joins looks like this:
 
-{% embed_chart standard-charts-step-line-charts-example-2.js %}
+{% embed_chart standard-charts-step-line-chart-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/5dm09d7y/) to edit the step line chart.
 
