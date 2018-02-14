@@ -177,6 +177,10 @@ Refer to the code given below:
 }
 ```
 
+The chart will look like as shown below:
+
+![ZoomLine chart]({% site.baseurl %}/images/standard-charts-zoom-line-chart-image-1.png)
+
 To configure the zoom panning of the chart:
 
 * Set the hex code using `zoomPaneBgColor` attribute to specify the background color of the zoom pane.
@@ -193,6 +197,9 @@ Refer to the code given below:
   }
 }
 ```
+The chart will look like as shown below:
+
+![ZoomLine chart]({% site.baseurl %}/gif/standard-charts-zoomline-gif-1.gif)
 
 To set the pin panning of the chart:
 
@@ -213,6 +220,9 @@ Refer to the code given below:
   }
 }
 ```
+The chart will look like as shown below:
+
+![ZoomLine chart]({% site.baseurl %}/gif/standard-charts-zoomline-gif-2.gif)
 
 The list of attributes to set the zooming mode of the zoomout button are: 
 
@@ -236,6 +246,9 @@ Refer to the code given below:
   }
 }
 ```
+The chart will look like as shown below:
+
+![ZoomLine chart]({% site.baseurl %}/gif/standard-charts-zoomline-gif-3.gif)
 
 To configure the scroll bar of the chart:
 
