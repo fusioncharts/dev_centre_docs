@@ -57,7 +57,6 @@ Refer to the code given below:
 ```
 {
     "chart": {
-        ...
         "captionFont": "Arial",
         "captionFontSize": "18",
         "captionFontColor": "#993300",
@@ -69,9 +68,7 @@ Refer to the code given below:
     },
 ```
 
-
 The chart will look like as shown below:
-
 
 **Insert Chart**
 
@@ -92,7 +89,6 @@ Refer to the code given below:
 ```
 {
     "chart": {
-       ...
         "alignCaptionWithCanvas": "1",
         "captionHorizontalPadding": "2",
         "captionOnTop": "0",
@@ -117,7 +113,6 @@ Refer to the code given below:
 ```
 {
     "chart": {
-       ...
         "xAxisName": "Quarter",
         "yAxisName": "Amount {br}(In USD)" 
     },
@@ -192,7 +187,6 @@ Refer to the code given below:
 ```
 {
     "chart": {
-        ...
         "xAxisNameBorderColor": "#6666FF",
         "xAxisNameBorderAlpha": "50",
         "xAxisNameBorderPadding": "6",
@@ -274,7 +268,6 @@ Refer to the code given below:
 ```
 {
     "chart": {
-       ...
         "pYAxisName": "Amount (In USD)",
         "sYAxisName": "Profit %",
         "pYAxisNameFont": "Arial",
@@ -354,7 +347,6 @@ Refer to the code given below:
 ```
 {
     "chart": {
-        ...
         "pYAxisNameBorderColor": "#6666FF",
         "pYAxisNameBorderAlpha": "50",
         "pYAxisNameBorderPadding": "6",

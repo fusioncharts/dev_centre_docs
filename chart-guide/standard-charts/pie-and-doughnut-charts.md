@@ -87,7 +87,7 @@ Refer to the code given below:
 ```
 A pie chart configured to animate in the clockwise direction is shown below. Click the **Refresh** button in the **bottom-right corner** of the chart to see the animation direction.
 
-GIF
+![Pie chart]({% site.baseurl %}/gif/standard-charts-pie-gif-1.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/g4bdb3f2/) to edit the above chart.
 
