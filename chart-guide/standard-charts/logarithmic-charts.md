@@ -27,7 +27,7 @@ The FusionCharts Suite XT log charts offer the following features:
 
 * Custom selection of minor divisional lines between any two major divisional lines.
 
-## Log Column 2D chart
+## Log Column 2D Chart
 
 As an example, we will create a log column 2D chart that compares the store footfalls with the online visits for one year.
 
@@ -51,7 +51,7 @@ The log column 2D chart thus rendered looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/kEeUR/) to edit the log column 2D chart.
 
-## Log Line 2D chart
+## Log Line 2D Chart
 
 Now, let's create a log line 2D chart that compares the store footfalls with the online visits for one year. To render a log line 2D chart, change the value of the `type` attribute from `logmscolumn2d` to `logmsline`. The rest of the data structure remains the same.
 
@@ -63,7 +63,7 @@ Click [here](http://jsfiddle.net/fusioncharts/LSdTC/) to add the log line 2D cha
 
 FusionCharts Suite XT allows you to configure the functional aspects of logarithmic charts. Now, let's customize the appearance and properties of the charts. 
 
-## Custom selection of base
+## Custom Selection of Base
 
 By default, the base of a logarithmic chart is set to 10. You can, however, set the base to any value of your requirement. Just ensure that the base value is any positive number greater than 1. Set the `base` attribute to specify the base value for the logarithmic chart.
 
@@ -73,8 +73,7 @@ Refer to the code given below:
 {
 	"chart": {
 		"base": "5"
-	},
-...
+	}
 }
 
 ```
@@ -85,7 +84,7 @@ A log column chart with the base set to 5 looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/dfdc2f9p/) to edit the log column 2D chart.
 
-## Inverse axis support
+## Inverse Axis Support
 
 Logarithmic charts allow you to plot the y-axis values inversely so that the y-axis upper limit appears at the bottom of the chart canvas instead of at the top. Set the `invertYAxis` attribute as `1` to specify the inverted y-axis for the chart. 
 
@@ -106,7 +105,7 @@ A log column 2D chart rendered with an inverted y-axis looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/rr92f6Lm/) to edit the log column 2D chart.
 
-## Custom selection of the number of minor divisional lines
+## Custom Selection of Minor Divisional Lines
 
 By default, the chart automatically calculates the number of minor divisional lines depending on the logarithmic base defined in the chart. 
 

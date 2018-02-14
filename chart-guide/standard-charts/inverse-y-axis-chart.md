@@ -15,7 +15,7 @@ The FusionCharts Suite XT includes the following three types of inverse axis cha
 
 * Inverse Y-axis Line Chart
 
-## Inverse y-axis column 2D chart 
+## Inverse Y-axis Column Chart 
 
 Let's create a inverse y-axis chart with two radio buttons : **Inverse Column 2D Chart** and **Column 2D Chart**. When the first radio button is selected, the chart is rendered with an inverse y-axis; when the second one is selected, the chart is rendered with a normal y-axis. Observe that when you render the inverse y-axis chart, the lower limit value is rendered at the top and the upper limit value is rendered at the bottom - inverse of how it is rendered for a normal y-axis chart.
 
@@ -39,7 +39,7 @@ The chart below shows you the difference between a normal and an inverse y-axis 
 
 Click [here](http://jsfiddle.net/fusioncharts/WEJLC/) to edit the above inverse y-axis column chart
 
-## Inverse y-axis area chart
+## Inverse Y-axis Area Chart
 
 You have seen how an inverse y-axis column chart looks. To render a inverse y-axis area chart, change the value of the `type` attribute from `inverseMSColumn2D` to `inverseMSArea`. The rest of the data structure remains the same.
 
@@ -49,7 +49,7 @@ An inverse y-axis multi-series area chart looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/S38mg/) to edit the above inverse y-axis area chart.
 
-## Inverse y-axis line chart 
+## Inverse Y-axis Line Chart 
 
 To render an inverse y-axis area chart, change the value of the `type` attribute from `inverseMSArea` to `inverseMSLine`. The rest of the data structure remains the same.
 
