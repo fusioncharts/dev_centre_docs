@@ -89,7 +89,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-plot-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/2kayhgmk/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/2kayhgmk/ "@@open-newtab") to edit the above chart.
 
 ## Color different data series/data plots
 
@@ -111,7 +111,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-plot-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/j7cbwm5o/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/j7cbwm5o/ "@@open-newtab") to edit the above chart.
 
 ## Add gradient effect to data plots
 
@@ -139,7 +139,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-plot-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/b781gp10/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/b781gp10/ "@@open-newtab") to edit the above chart.
 
 ## Customize gradient properties
 
@@ -172,7 +172,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-plot-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/p26mehrm/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/p26mehrm/ "@@open-newtab") to edit the above chart.
 
 ## Show/hide plot border
 
@@ -194,7 +194,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-plot-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/bofsxted/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/bofsxted/ "@@open-newtab") to edit the above chart.
 
 ## Dashed data plot border
 
@@ -231,7 +231,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-plot-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3dmmvjzL/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/3dmmvjzL/ "@@open-newtab") to edit the above chart.
 
 The above attributes are used in the `chart` object which affects globally. You can also use dashed plot borders for specific data plots instead of the whole chart data plots. To do so, use the following attributes within `data` under the `chart` object:
 
@@ -265,7 +265,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-plot-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/0uq53Leq/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/0uq53Leq/ "@@open-newtab") to edit the above chart.
 
 ## Round edges
 
@@ -286,7 +286,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-plot-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/95kbo47f/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/95kbo47f/ "@@open-newtab") to edit the above chart.
 
 ## Plot hover effects
 
@@ -332,7 +332,7 @@ Shown below is a chart with hover effects enabled:
 
 ![Data plot hover effect]({% site.baseurl %}/gif/configurations-dataplot-gif-1.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/znr9r87z/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/znr9r87z/ "@@open-newtab") to edit the above chart.
 
 You can also apply hover effects for individual data plots instead of applying them for all the data plots. To do so, you have to set the attributes within `data` for individual values. The attributes are: 
 
@@ -379,4 +379,4 @@ Shown below is a chart with hover effects enabled for an individual data plot:
 
 ![Data plot hover effect]({% site.baseurl %}/gif/configurations-dataplot-gif-2.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/5rgy5Let/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/5rgy5Let/ "@@open-newtab") to edit the above chart.

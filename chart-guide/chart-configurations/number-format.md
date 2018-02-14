@@ -26,7 +26,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-number-format-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/cqah4e7x/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/cqah4e7x/ "@@open-newtab") to edit the above chart.
 
 You can also round off the decimal places for only the horizontal and vertical div lines. To do so, set the decimal precision of the div lines using the `yAxisValueDecimals` (horizontal div lines) and `xAxisValueDecimals` (vertical div lines) attributes respectively. 
 
@@ -48,7 +48,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-number-format-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6w50wtfd/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/6w50wtfd/ "@@open-newtab") to edit the above chart.
 
 ## Round off with trailing zeroes
 
@@ -75,7 +75,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-number-format-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/2g4ne3xf/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/2g4ne3xf/ "@@open-newtab") to edit the above chart.
 
 ## Disable automatic formatting of numbers
 
@@ -107,7 +107,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-number-format-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/L6bzmLd7/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/L6bzmLd7/ "@@open-newtab") to edit the above chart.
 
 A column 2D chart with automatic number formatting looks as the one given above. The data for the chart is `12523, 14570.230, 17375` and `18235.79`. FusionCharts Suite XT automatically formats the number scaling by converting it to `K` and `M`.
 
@@ -139,7 +139,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-number-format-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Lab3ckjd/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/Lab3ckjd/ "@@open-newtab") to edit the above chart.
 
 ## Configure thousand separator position
 
@@ -159,7 +159,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-number-format-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/r8bL2r4p/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/r8bL2r4p/ "@@open-newtab") to edit the above chart.
 
 ## Add number prefix and suffix
 
@@ -192,7 +192,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-number-format-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/hd8uvdfp/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/hd8uvdfp/ "@@open-newtab") to edit the above chart.
 
 > For dual y-axis charts, the primary axis performs number formatting and scaling by default. However, you have to explicitly define formatting and scaling for the secondary axis. To define the formatting and scaling properties for the secondary axis, prefix 's' to the attribute name. So, `numberPrefix` becomes `sNumberPrefix`, `forceYAxisValueDecimals` becomes `forceSYAxisValueDecimals`, and so on.
 
@@ -219,7 +219,7 @@ If you plot the data values as 1252322, 857023, 903753 and 1082357, then the ren
 
 {% embed_chart chart-configurations-number-format-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/xgufmpyw/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/xgufmpyw/ "@@open-newtab") to edit the above chart.
 
 Notice that the numbers have been scaled down to K. By default, FusionCharts Suite XT has the K, M scaling defined for each chart. 
 
@@ -258,7 +258,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-number-format-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/xpmu165b/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/xpmu165b/ "@@open-newtab") to edit the above chart.
 
 ### Example 1: Display time in the scale
 
@@ -279,7 +279,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-number-format-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/obryn50m/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/obryn50m/ "@@open-newtab") to edit the above chart.
 
 ### Example 2: Display storage capacity in the scale
 
@@ -300,7 +300,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-number-format-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/oupfaws8/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/oupfaws8/ "@@open-newtab") to edit the above chart.
 
 ## Use recursive number scaling
 
@@ -327,6 +327,6 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-number-format-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/L57nsapm/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/L57nsapm/ "@@open-newtab") to edit the above chart.
 
 > For Scatter and Bubble charts, use the `xScaleRecursively`, `xMaxScaleRecursion`, and `xScaleSeparator` attributes to scale the numbers recursively on the x-axis. These attributes will work only when you set the `xAxisLabelMode` attribute to `AUTO` or `MIXED`. To scale the numbers recursively on the secondary y-axis in a Dual Y-Axis chart, use the attributes `sScaleRecursively`, `sMaxScaleRecursion`, and `sScaleSeparator`.

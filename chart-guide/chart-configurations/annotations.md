@@ -19,7 +19,7 @@ Now, see how the same chart will look, when rendered using annotations:
 
 {% embed_chart chart-configurations-annotations-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/49dJJ/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/49dJJ/ "@@open-newtab") to edit the above chart.
 
 Looks much better, doesn't it? The chocolate bars shown in this chart are image annotations.
 
@@ -245,7 +245,7 @@ The column 2D chart rendered using text annotations looks like as shown below:
 
 {% embed_chart chart-configurations-annotations-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9xj50enk/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/9xj50enk/ "@@open-newtab") to edit the above chart.
 
 ## Create image annotations
 
@@ -304,7 +304,7 @@ The column 2D charts with image annotations looks like:
 
 {% embed_chart chart-configurations-annotations-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/49dJJ/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/49dJJ/ "@@open-newtab") to edit the above chart.
 
 ## Create shape annotations
 
@@ -376,7 +376,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-annotations-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9xj50enk/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/9xj50enk/ "@@open-newtab") to edit the above chart.
 
 The rectangle around the text is a shape annotation.
 
@@ -529,7 +529,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-annotations-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/an9hfrch/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/an9hfrch/ "@@open-newtab") to edit the above chart.
 
 ## Positioning Annotations 
 
@@ -596,4 +596,4 @@ A spline chart with a rectangle annotation and a text annotation positioned at t
 
 {% embed_chart chart-configurations-annotations-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ufgt8a10/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ufgt8a10/ "@@open-newtab") to edit the above chart.

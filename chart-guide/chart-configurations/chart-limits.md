@@ -24,7 +24,6 @@ Refer  to the code below:
 ```
 {
     "chart": {
-        ...
         "yAxisMaxValue": "2500000",
         "yAxisMinValue": "1000000"
     }
@@ -37,7 +36,7 @@ The chart with custom y-axis limits will look like as shown below:
 
 {% embed_chart chart-configurations-chart-limits-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8qfgrdxw/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/8qfgrdxw/ "@@open-newtab") to edit the above chart.
 
 ## Set y-axis minimum value based on data values
 
@@ -59,7 +58,7 @@ A chart with adaptive minimum value for the y-axis will look like as shown below
 
 {% embed_chart chart-configurations-chart-limits-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/cs89448w/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/cs89448w/ "@@open-newtab") to edit the above chart.
 
 ## Set axis limits for charts with dual y-axis
 
@@ -93,7 +92,7 @@ A chart with explicitly defined limits for the primary and secondary y-axis look
 
 {% embed_chart chart-configurations-chart-limits-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/4azzajgL/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/4azzajgL/ "@@open-newtab") to edit the above chart.
 
 ## Set same axis limits for primary and secondary y-axes
 
@@ -116,7 +115,7 @@ A chart with synced chart limits for the primary and secondary y-axis looks like
 
 {% embed_chart chart-configurations-chart-limits-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7wo4mv5r/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/7wo4mv5r/ "@@open-newtab") to edit the above chart.
 
 ## Show/hide y-axis values
 
@@ -141,7 +140,7 @@ The chart will look like as shown in the image below:
 
 {% embed_chart chart-configurations-chart-limits-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/14srsdrw/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/14srsdrw/ "@@open-newtab") to edit the above chart.
 
 * Set the `showLimits` attribute to `0` to hide the maximum and minimum y-axis values. By default, it is set to `1` and the values are visible. This attribute overrides the setting of the `showYAxisValues`.
 
@@ -162,4 +161,4 @@ The chart will look like as shown in the image below:
 
 {% embed_chart chart-configurations-chart-limits-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/h2fzxqbr/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/h2fzxqbr/ "@@open-newtab") to edit the above chart.

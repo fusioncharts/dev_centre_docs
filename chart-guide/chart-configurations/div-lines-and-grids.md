@@ -41,7 +41,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-div-lines-and-grids-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ovbtuvkk/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ovbtuvkk/ "@@open-newtab") to edit the above chart.
 
 ## Customize the display of divisional lines
 
@@ -69,7 +69,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-div-lines-and-grids-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/y3r1w0tk/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/y3r1w0tk/ "@@open-newtab") to edit the above chart.
 
 ## Dashed divisional lines
 
@@ -98,7 +98,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-div-lines-and-grids-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5q05dmw1/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/5q05dmw1/ "@@open-newtab") to edit the above chart.
 
 ## Customize horizontal grid bands
 
@@ -149,4 +149,4 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-div-lines-and-grids-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/fu4ajL43/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/fu4ajL43/ "@@open-newtab") to edit the above chart.

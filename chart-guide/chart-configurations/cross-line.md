@@ -26,7 +26,7 @@ A chart with crossline will look like as shown below:
 
 ![Cross Line]({% site.baseurl %}/gif/configurations-crossline-gif-1.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/sh917yad/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/sh917yad/ "@@open-newtab") to edit the above chart.
 
 ## Customize crossline color
 
@@ -47,7 +47,7 @@ A multi-series column chart with a customized cross line looks like as shown bel
 
 ![Cross Line]({% site.baseurl %}/gif/configurations-crossline-gif-2.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/7yvjb38s/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/7yvjb38s/ "@@open-newtab") to edit the above chart.
 
 ### Customize opacity
 
@@ -67,7 +67,7 @@ A multi-series column chart with a customized transparency (set to `20`) of the 
 
 ![Cross Line]({% site.baseurl %}/gif/configurations-crossline-gif-3.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/e94enLv1/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/e94enLv1/ "@@open-newtab") to edit the above chart.
 
 ### Enable/Disable animation
 
@@ -98,7 +98,7 @@ A multi-series area chart with animation enabled looks as below:
 
 {% embed_chart chart-configurations-cross-line-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/jLcL5eaz/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/jLcL5eaz/ "@@open-newtab") to edit the above chart.
 
 ## Set tooltip background color
 
@@ -121,7 +121,7 @@ The chart will look like as shown in the image below:
 
 ![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-2.png)
 
-Click [here](http://jsfiddle.net/fusioncharts/uyymusv0/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/uyymusv0/ "@@open-newtab") to edit the above chart.
 
 Set `tooltipGrayOutColor` attribute to specify the color of the unfocused plot in the tooltip. Refer to the code below:
 
@@ -138,7 +138,7 @@ The chart will look like as shown below:
 
 ![Cross Line]({% site.baseurl %}/gif/chart-configurations-cross-line-image-4.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/46por5dL/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/46por5dL/ "@@open-newtab") to edit the above chart.
 
 Specify the hex code of the tooltip background color using the `toolTipBgColor` attribute. Refer to the code below:
 
@@ -155,7 +155,7 @@ The chart will look like as shown below:
 
 ![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-2.png)
 
-Click [here](http://jsfiddle.net/fusioncharts/x2jvt5rh/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/x2jvt5rh/ "@@open-newtab") to edit the above chart.
 
 ## Customize tooltip border
 
@@ -181,7 +181,7 @@ The chart will look like as shown below:
 
 ![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-3.png)
 
-Click [here](http://jsfiddle.net/fusioncharts/zn0aqdze/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/zn0aqdze/ "@@open-newtab") to edit the above chart.
 
 ## Set Separator Character for tooltip
 
@@ -200,7 +200,7 @@ The chart will look like as shown below:
 
 ![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-4.png)
 
-Click [here](http://jsfiddle.net/fusioncharts/xjbv3pq8/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/xjbv3pq8/ "@@open-newtab") to edit the above chart.
 
 ## Show/Hide tooltip shadow
 
@@ -219,4 +219,4 @@ The chart will look like as shown below:
 
 ![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-5.png)
 
-Click [here](http://jsfiddle.net/fusioncharts/1rbzf7q7/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/1rbzf7q7/ "@@open-newtab") to edit the above chart.

@@ -66,7 +66,7 @@ Take a look at an example below, along with the code:
 
 {% embed_chart chart-configurations-size-and-type-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5Lpu0hrt/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/5Lpu0hrt/ "@@open-newtab") to edit the above chart.
 
 ## Dynamically change chart type 
 
@@ -78,7 +78,7 @@ Shown below is an example, along with the code:
 
 {% embed_chart chart-configurations-size-and-type-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/txyb6ss4/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/txyb6ss4/ "@@open-newtab") to edit the above chart.
 
 You can also provide a new data source and format as an optional second parameter of `chartType (chartType, options)` method, to change the data along with the chart.
 
