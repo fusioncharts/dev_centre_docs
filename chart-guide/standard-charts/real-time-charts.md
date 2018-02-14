@@ -363,7 +363,7 @@ Even when a dataset is not visible, it will continue updating itself in the back
 
 To disable the interactive legend, set the value of `interactiveLegend` attribute to `0`. Refer to the code below:
 
-```json
+```
 {
     "chart": {
         "interactiveLegend": "0"
@@ -462,7 +462,6 @@ Refer to the code given below:
         "numDisplaySets": "15"
 
     }
-...
 }
 
 ```
@@ -504,7 +503,7 @@ For our scenario, we would want to use the data stamp as follows:
 
 The following code snippet is used to set the initial data stamp:
 
-```json
+```
 {
     "chart": {
         "dataStreamURL": "files/php/advanced-charting-real-time-charts-adding-data-stamp-php-1.php",
@@ -608,7 +607,7 @@ Given below is a brief description of the attribute used to configure the alert 
 
 Refer to the code given below:
 
-```json
+```
 {
     "chart": {
         ...
@@ -699,9 +698,7 @@ The following code snippet enables the use of the message logger for a real-time
    ...
    "useMessageLog": "1",
    "showRTMenuItem": "1"
-   ...
    }
-...
 }
 
 ```
@@ -892,7 +889,6 @@ To do this, you will have to send the following command to the chart as part of 
 &clear=1
 
 ```
-
 The above command clears all the data that is currently being shown on the chart. The chart now bears an empty canvas - ready to accept new incremental values from the real-time data provider page.
 
 In the sample rendered below, the `feedData()` method (covered in the section on [feeding and retrieving data](https://www.fusioncharts.com/dev/chart-guide/real-time-charts/feeding-and-retrieving-data-through-api.html)) is used to send the clearing command from the server to the chart.
@@ -911,7 +907,7 @@ Real-time charts allow to set a predefined interval in the JSON/XML data to clea
 
 Refer to the code given below:
 
-```json
+```
 {
     "chart": {
         "clearChartInterval": "50"

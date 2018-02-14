@@ -93,7 +93,6 @@ Refer to the code given below:
     "showRegressionLine" : "1"
 
   }]
-...
 }
 
 ```

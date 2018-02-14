@@ -123,7 +123,6 @@ Refer to the code given below:
   "chart": {
     "plotPriceAs" : "line"
   }
-...
 }
 
 ```
@@ -166,7 +165,6 @@ Refer to the code given below:
   "chart": {
     "showVolumeChart" : "0"
   }
-...
 }
 
 ```
@@ -242,12 +240,7 @@ Refer to the code below:
     "includeInLegend": "1",
     "dashed": "1",
     "dashlen": "3",
-    "dashGap": "4",
-    "set": [{
-        ...    
-    }
-    ...
-    ]
+    "dashGap": "4"
 }]
 ```
 

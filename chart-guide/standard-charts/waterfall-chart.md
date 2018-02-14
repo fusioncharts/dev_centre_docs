@@ -47,7 +47,6 @@ Refer to the code given below:
     "positiveColor": "#1aaf5d",
     "negativeColor": "#c02d00"
   },
-...
 }
 
 ```
@@ -78,7 +77,6 @@ Refer to the code given below:
       "issum": "1",
       ...
     }]
-...
 }
 
 ```
@@ -104,7 +102,7 @@ Refer to the  code below:
         ...
     },
     "data": [
-        ...{
+        {
             "label": "Promotion Costs",
             "value": "-86000"
         },
@@ -141,11 +139,10 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
+        
         "sumlabel": "Total {br} Profit",
         "showSumAtEnd": "0"
     },
-    ...
 }
 
 ```
@@ -194,7 +191,6 @@ Refer to the code given below:
     "connectorDashGap": "2"
 
   },
-...
 }
 
 ```

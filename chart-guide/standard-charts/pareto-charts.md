@@ -64,7 +64,6 @@ Refer to the code given below:
   "chart": {
     "showLineValues": "1"
   },
-...
 }
 
 ```
@@ -109,7 +108,6 @@ Refer to the code given below:
 
         "lineDashGap": "3"
     },
-...
 }
 
 ```
@@ -137,7 +135,6 @@ Refer to the code given below:
 
     "showDivLineSecondaryValue": "0"
   },
-...
 }
 
 ```

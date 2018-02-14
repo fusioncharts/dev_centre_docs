@@ -74,7 +74,6 @@ Refer to the code given below:
     "chart": {
         "showValues": "1"
     }
-...
 }
 
 ```
@@ -216,7 +215,6 @@ Configure the vertical divisional lines, by following the points below:
 * By default, all divisional lines show their values. However, opt to skip every x(th) divisional line values using `xAxisValuesStep` attribute.
 
 ```
-...
 {
     "chart": {
         "adjustVDiv": "1",
@@ -224,7 +222,6 @@ Configure the vertical divisional lines, by following the points below:
         "numVDivlines": "5",
         "xAxisValuesStep": "1"
     }
-...
 }
 
 ```
@@ -241,7 +238,6 @@ Configure the vertical divisional lines, by following the points below:
 * Set the `vDivlineDashGap` attribute to specify the gap between each dash, if the vertical divisional lines are rendered as dashed lines.
 
 ```
-...
 {
     "chart": {
         "vDivlineColor": "ff0000",
@@ -251,7 +247,6 @@ Configure the vertical divisional lines, by following the points below:
         "vDivlineDashLen": "4",
         "vDivlineDashGap": "3"
     }
-...
 }
 
 ```
@@ -268,7 +263,6 @@ Refer to the code below:
         "alternateVGridColor": "0ffff0",
         "alternateVGridAlpha": "40"
     }
-...
 }
 
 ```
@@ -289,7 +283,6 @@ Refer to the code given below:
     "chart": {
         "drawLine": "1"
     }
-...
 }
 
 ```
@@ -322,7 +315,6 @@ Refer to the code given below:
     "dataset": {
         "showRegressionLine": "1"
     }
-...
 }
 
 ```
@@ -362,7 +354,6 @@ Refer to the code below:
         "regressionLineThickness": "5",
         "regressionLineAlpha": "70"
     }
-...
 }
 
 ```
@@ -389,7 +380,6 @@ Refer to the code given below:
     "chart": {
         "drawQuadrant": "1"
     }
-...
 }
 
 ```
@@ -419,7 +409,6 @@ Refer to the code given below:
 
         "quadrantYVal": "12000"
     }
-...
 }
 
 ```
@@ -452,7 +441,6 @@ Refer to the code given below:
         "quadrantLabelBL": "Low Price / Low Sale",
         "quadrantLabelBR": "High Price / Low Sale",
     }
-...
 }
 
 ```
@@ -480,7 +468,6 @@ We'll create a sample using some of the cosmetic properties for the quadrant lab
         "quadrantLabelBLFontColor": "#123ABC",
         "quadrantLabelBRFontColor": "#DEF456"
     }
-...
 }
 
 ```
@@ -528,7 +515,6 @@ Refer to the code given below:
 
         "quadrantLabelPadding": "5"
     }
-...
 }
 
 ```

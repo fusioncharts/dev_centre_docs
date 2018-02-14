@@ -181,7 +181,7 @@ Refer to the code given below:
     	"showLegend": "1",
     	"legendPosition": "right"
     }
-...
+
 }
 
 ```
@@ -216,7 +216,6 @@ A box and whisker chart with three of the five summary numbers - the minimum and
 Refer to the code below:
 
 ```
-...
 {
     "chart": {
         "showvalues": "1",
@@ -226,8 +225,7 @@ Refer to the code below:
         "showQ1Values": "0",
         "showQ3Values": "0"
     }
-    ...
-}
+ }
 
 ```
 
@@ -297,14 +295,12 @@ To customize the median, follow the steps given below:
 Refer to the code below:
 
 ```
-...
 {
     "chart": {
         "medianColor": "ff0000",
         "medianThickness": "5",
         "medianAplha": "70"
     }
-    ...
 }
 
 ```
@@ -327,7 +323,6 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 * Set the `upperQuartileAlpha` attribute to specify the transparency of the upper quartile line. This attribute takes values between `0` (transparent) and `100` (opaque).
 
 ```
-...
 {
     "chart": {
         //The color of the upper quartile set to Red
@@ -337,7 +332,6 @@ To customize the upper and the lower quartile points and the boxes, follow the p
         //The transparency of the upper quartile set to 70
         "upperQuartileAlpha": "70"
     }
-    ...
 }
 
 
@@ -347,14 +341,12 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 * Set the `upperBoxAlpha` attribute to specify the transparency of the upper quartile box. This attribute takes values between `0` (transparent) and `100` (opaque).
 
 ```
-...
 {
     "chart": {
-        //"upperBoxColor": "ff0000",
-        //"upperBoxAlpha": "70"
+        "upperBoxColor": "ff0000",
+        "upperBoxAlpha": "70"
     }
 }
-...
 
 ```
 * Set the `upperBoxBorderColor` attribute to specify the hex color code for the two sides of upper quartile box.
@@ -364,14 +356,12 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 * Set the `upperBoxBorderThickness` attribute to specify the thickness for the two sides of upper quartile box.
 
 ```
-...
 {
     "chart": {
-        //"upperBoxBorderColor": "ff0000",
-        //"upperBoxBorderAlpha": "70",
-        //"upperBoxBorderThickness": "5"
+        "upperBoxBorderColor": "ff0000",
+        "upperBoxBorderAlpha": "70",
+        "upperBoxBorderThickness": "5"
     }
-    ...
 }
 
 ```
@@ -383,14 +373,13 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 * Set the `lowerQuartileAlpha` attribute to specify the transparency of the lower quartile line. This attribute takes values between `0` (transparent) and `100` (opaque).
 
 ```
-...
 {
     "chart": {
-        //"lowerQuartileColor": "ff0000",
-        //"lowerQuartileThickness": "5",
-        //"lowerQuartileAlpha": "70"
+        "lowerQuartileColor": "ff0000",
+        "lowerQuartileThickness": "5",
+        "lowerQuartileAlpha": "70"
     }
-    ...
+
 }
 
 ```
@@ -410,13 +399,12 @@ Refer to the code below:
 ```
 {
     "chart": {
-        //"lowerBoxColor": "ff0000",
-        //"lowerBoxAlpha": "70",
-        //"lowerBoxBorderColor": "ff0000",
-        //"lowerBoxBorderAlpha": "70",
-        //"lowerBoxBorderThickness": "5"
+        "lowerBoxColor": "ff0000",
+        "lowerBoxAlpha": "70",
+        "lowerBoxBorderColor": "ff0000",
+        "lowerBoxBorderAlpha": "70",
+        "lowerBoxBorderThickness": "5"
     }
-    ...
 }
 
 ```
@@ -459,7 +447,6 @@ Refer to the code below:
         "lowerWhiskerAlpha": "70",
         "whiskersLimitsWidthRatio": "3"
     }
-...
 }
 
 ```
@@ -490,7 +477,6 @@ Refer to the code given below:
     "chart": {
         "showMean": "1"
     }
-...
 }
 
 ```
@@ -525,7 +511,6 @@ Refer to the code below:
         "meanIconColor": "ff0000,
         "meanIconAlpha": "70"
     }
-...
 }
 ```
 The  chart will look like as shown below:
@@ -547,7 +532,6 @@ Refer to the code given below:
     "chart": {
         "drawMeanConnector": "1"
     }
-...
 }
 
 ```
@@ -570,7 +554,6 @@ Refer to the code given below:
     "chart": {
         "connectNullData": "1"
     }
-...
 }
 
 ```
@@ -601,11 +584,9 @@ Refer to the code given below:
     "chart": {
         "showMD": "1"
     }
-...
 }
 
 ```
-
 The box and whisker chart with mean deviation icon shown in the legend box looks like:
 
 {% embed_chart standard-charts-box-and-whisker-chart-example-11.js %}
@@ -637,7 +618,6 @@ Refer to the code below:
         "mdIconColor": "ff0000"
         "mdIconAlpha": "70"
     }
-...
 }
 
 ```
@@ -660,7 +640,6 @@ Refer to the code given below:
     "chart": {
         "drawMDConnector": "1"
     }
-...
 }
 
 ```
@@ -683,7 +662,6 @@ Refer to the code given below:
     "chart": {
         "connectNullData": "1"
     }
-...
 }
 
 ```
@@ -707,7 +685,6 @@ Refer to the code given below:
     "chart": {
         "showSD": "1"
     }
-...
 }
 
 ```
@@ -786,7 +763,6 @@ Refer to the code given below:
     "chart": {
         "connectNullData": "1"
     }
-...
 }
 
 ```
@@ -809,7 +785,6 @@ Refer to the code given below:
     "chart": {
         "showQD": "1"
     }
-...
 }
 ```
 A box and whisker chart with the quartile deviation icon shown in the legend box looks like this:
@@ -845,7 +820,6 @@ Refer to the code below:
         "qdIconColor": "ff0000",
         "qdIconAlpha": "70"
     }
-...
 }
 
 ```
@@ -890,7 +864,6 @@ Refer to the code given below:
     "chart": {
         "connectNullData": "1"
     }
-...
 }
 
 ```
@@ -932,11 +905,10 @@ Refer to the code below:
         "outliers": "1"
         "outlierIconRadius": "5",
         "outlierIconSides": "5",
-        //"outlierIconShape": "triangle",
+        "outlierIconShape": "triangle",
         "outlierIconColor": "ff0000",
         "outlierIconAlpha": "70"
     }
-    ...
 }
 
 ```

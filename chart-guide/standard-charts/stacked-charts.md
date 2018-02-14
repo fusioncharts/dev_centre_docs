@@ -108,7 +108,6 @@ Refer to the code given below:
   "chart": {
     "showSum": "1"
   },
-...
 }
 
 ```
@@ -131,7 +130,6 @@ Refer to the code given below:
   "chart": {
     "stack100Percent": "1"
   },
-...
 }
 
 ```
@@ -153,7 +151,6 @@ Refer to the code given below:
   "chart": {
     "showPercentInTooltip": "1"
   },
-...
 }
 
 ```

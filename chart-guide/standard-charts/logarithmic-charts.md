@@ -95,7 +95,6 @@ Refer to the code given below:
 	"chart": {
 		"invertYAxis": "1"
 	},
-...
 }
 
 ```
@@ -118,7 +117,6 @@ Refer to the code given below:
 	"chart": {
 		"numMinorDivLines": "4"
 	},
-...
 }
 
 ```

@@ -70,7 +70,6 @@ Refer to the code given below:
   "chart": {
     "numVisibleLabels": "12"
   },
-...
 }
 
 ```
@@ -93,7 +92,6 @@ Refer to the code given below:
   "chart": {
     "pixelsPerPoint": "40"
   },
-...
 }
 
 ```
@@ -120,7 +118,6 @@ Refer to the code given below:
   "chart": {
     "anchorMinRenderDistance": "15"
   },
-...
 }
 
 ```

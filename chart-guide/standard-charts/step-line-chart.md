@@ -66,7 +66,6 @@ Refer to the code given below:
 	"chart": {
 		"useForwardSteps": "0"
 	},
-...
 }
 
 ```

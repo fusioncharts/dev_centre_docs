@@ -72,7 +72,6 @@ Refer to the code given below:
   "chart": {
     "usePercentDistribution": "0"
   }
-...
 }
 
 ```
@@ -95,7 +94,6 @@ Refer to the code given below:
   "chart": {
     "showSum": "0"
   }
-...
 }
 
 ```
@@ -117,11 +115,9 @@ Refer to the code given below:
   "chart": {
     "showAxisPercentValues": "0"
   }
-...
 }
 
 ```
-
 A Marimekko chart with the percentage labels on the x-axis hidden looks like this:
 
 {% embed_chart standard-charts-marimekko-chart-example-4.js %}

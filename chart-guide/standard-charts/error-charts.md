@@ -131,7 +131,6 @@ Refer to the code given below:
 
 		"errorBarWidthPercent": "30"
 	},
-...
 }
 
 ```
@@ -159,8 +158,6 @@ Customize the cosmetic properties of error scatter chart to change the  appearan
 
 * Set the width (in pixels) of the vertical error bars using `verticalErrorBarWidth` attribute. 
 
-Refer to the code below:
-
 Refer to the code given below:
 
 ```
@@ -172,7 +169,6 @@ Refer to the code given below:
       "verticalErrorBarAlpha": "50",
       "verticalErrorBarWidth": "8"
   }
-...
 }
 
 ```

@@ -81,7 +81,6 @@ Refer to the code given below:
   "chart": {
       "animateClockwise": "1"
   }
-...
 }
 
 ```
@@ -140,7 +139,6 @@ Refer to the code given below:
     "defaultCenterLabel": "Total revenue: $60K",
     "centerLabel": "Revenue from $label: $value"
   },
-...
 }
 
 ```
@@ -163,7 +161,6 @@ Refer to the code given below:
   "chart": {
     "enableMultiSlicing": "0"
   },
-...
 }
 
 ```
@@ -186,7 +183,6 @@ Refer to the code given below:
   "chart": {
     "enableSmartLabels": "0"
   },
-...
 }
 
 ```
@@ -220,7 +216,6 @@ Refer to the code given below:
     "smartLineAlpha": "100",
     "isSmartLineSlanted": "0"
   },
-...
 }
 
 ```
@@ -251,7 +246,6 @@ Refer to the code given below:
     "labelDistance": "5",
     "smartLabelClearance": "5"
   },
-...
 }
 
 ```
@@ -272,11 +266,9 @@ Refer to the code given below:
 
     "skipOverlapLabels": "1"
   },
-...
 }
 
 ```
-
 ## Customize Pie Radius
 
 By default, for pie/doughnut charts, the chart automatically calculates the best fit pie radius based on the data provided. However, you can choose to explicitly set the outer radius of the pie chart. Specify the outer radius of the pie/doughnut chart using `pieRadius` attribute.
@@ -289,7 +281,6 @@ Refer to the code given below:
 
     "pieRadius": "50"
   },
-...
 }
 
 ```
@@ -310,7 +301,6 @@ Refer to the code given below:
   "chart": {
     "startingAngle": "45"
   },
-...
 }
 
 ```
@@ -333,7 +323,6 @@ Refer to the code given below:
     "value": "49100",
     "isSliced": "1"
   },
-...
 }
 
 ```
@@ -354,7 +343,6 @@ Refer to the code given below:
   "chart": {
     "slicingDistance": "10"
   },
-...
 }
 
 ```
@@ -379,7 +367,6 @@ Refer to the code given below:
     "use3DLighting": "1",
     "radius3D": "5"
   },
-...
 }
 
 ```
