@@ -43,7 +43,7 @@ A simple multi-series column 2D chart looks like:
 
 {% embed_all standard-charts-multi-series-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ppcas1oo/) to edit the above multi-series chart.
+Click [here](http://jsfiddle.net/fusioncharts/ppcas1oo/ "@@open-newtab") to edit the above multi-series chart.
 
 ## Multi-series Column 3D Chart
 
@@ -53,7 +53,7 @@ The multi-series column chart in 3D looks like:
 
 {% embed_all standard-charts-multi-series-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3x4xcn70/) to edit the above multi-series chart.
+Click [here](http://jsfiddle.net/fusioncharts/3x4xcn70/ "@@open-newtab") to edit the above multi-series chart.
 
 ## Multi-series Bar 2D Chart
 
@@ -65,7 +65,7 @@ A multi-series bar 2D chart looks like:
 
 {% embed_all standard-charts-multi-series-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/H92Sx/) to edit the above multi-series chart.
+Click [here](http://jsfiddle.net/fusioncharts/H92Sx/ "@@open-newtab") to edit the above multi-series chart.
 
 ## Multi-series Bar 3D Chart
 
@@ -75,7 +75,7 @@ The multi-series bar chart in 3D looks like:
 
 {% embed_all standard-charts-multi-series-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/X9xPM/) to edit the above multi-series chart.
+Click [here](http://jsfiddle.net/fusioncharts/X9xPM/ "@@open-newtab") to edit the above multi-series chart.
 
 ## Multi-series Line Chart
 
@@ -87,7 +87,7 @@ A multi-series line chart looks like:
 
 {% embed_all standard-charts-multi-series-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/T5C6h/) to edit the above multi-series chart.
+Click [here](http://jsfiddle.net/fusioncharts/T5C6h/ "@@open-newtab") to edit the above multi-series chart.
 
 ## Multi-series Area Chart
 
@@ -97,6 +97,6 @@ A multi-series area chart looks like:
 
 {% embed_all standard-charts-multi-series-charts-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/jf73mv1e/) to edit the above multi-series chart.
+Click [here](http://jsfiddle.net/fusioncharts/jf73mv1e/ "@@open-newtab") to edit the above multi-series chart.
 
 > Note that the number of **category** objects defined should be equal to the number of **data** objects defined, that is, if you mention twelve categories (twelve months), the data for both years (2013 and 2014) should also contain twelve **data** objects (twelve rows of data). Else, the chart will display empty space at that position.

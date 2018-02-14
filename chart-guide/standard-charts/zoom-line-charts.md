@@ -29,7 +29,7 @@ The zoom line chart thus created looks like this:
 
 {% embed_all standard-charts-zoom-line-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/JU3Ud/) to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/JU3Ud/ "@@open-newtab") to edit the zoomline chart.
 
 As seen in the chart above, at the time of rendering, the zoom line chart displays a macroscopic view of the data. The data is neatly compressed, so that all of it fits into the width of the chart. When the user selects a segment of the line plot by dragging the mouse cursor across the canvas, the selected portion expands to occupy the entire width of the chart. 
 
@@ -55,7 +55,7 @@ The chart below shows a zoom-line dual y-axis chart created to compare unique fo
 
 {% embed_all standard-charts-zoom-line-charts-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/mvsjs4ag/) to edit the zoom line dual y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/mvsjs4ag/ "@@open-newtab") to edit the zoom line dual y-axis chart.
 
 ## Limit the Number of Data Labels
 
@@ -78,7 +78,7 @@ A zoom line chart with the maximum number of labels limited looks like this:
 
 {% embed_chart standard-charts-zoom-line-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/t19c4y4e/) to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/t19c4y4e/ "@@open-newtab") to edit the zoomline chart.
 
 > **numVisibleLabels** attribute only limits the number of visible data labels, it has no effect on the number of visible data points.
 
@@ -103,7 +103,7 @@ A zoom line chart with the distance between the consecutive data plots configure
 
 {% embed_chart standard-charts-zoom-line-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/v60znb4c/) to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/v60znb4c/ "@@open-newtab") to edit the zoomline chart.
 
 ## Set the Criteria for Anchor Display
 
@@ -128,7 +128,7 @@ A zoom line chart with the criteria for anchor display defined looks like this:
 
 {% embed_chart standard-charts-zoom-line-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9nkgfaho/) to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/9nkgfaho/ "@@open-newtab") to edit the zoomline chart.
 
 ## Pre-select the Number of Visible Data Plots
 
@@ -154,7 +154,7 @@ A zoom line chart rendered with pre-selected number of data plots looks like thi
 
 {% embed_chart standard-charts-zoom-line-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/2fqud5w1/) to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/2fqud5w1/ "@@open-newtab") to edit the zoomline chart.
 
 ## Customize the Appearance of a Zoom-line Chart
 
@@ -270,4 +270,4 @@ The configured zoom line chart looks like:
 
 {% embed_chart standard-charts-zoom-line-charts-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/65jv5ohb/) to configure the above attributes.
+Click [here](http://jsfiddle.net/fusioncharts/65jv5ohb/ "@@open-newtab") to configure the above attributes.

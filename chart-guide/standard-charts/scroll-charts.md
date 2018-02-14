@@ -43,7 +43,7 @@ The scroll column 2D chart for the above code looks like:
 
 {% embed_all standard-charts-scroll-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/nAa33/) to edit the scroll column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/nAa33/ "@@open-newtab") to edit the scroll column 2D chart.
 
 ## Scroll Line 2D Chart
 
@@ -53,7 +53,7 @@ A single-series scroll line 2D chart looks like:
 
 {% embed_all standard-charts-scroll-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Pm3nf/) to edit the scroll line 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/Pm3nf/ "@@open-newtab") to edit the scroll line 2D chart.
 
 ## Scroll Area 2D Chart
 
@@ -63,7 +63,7 @@ A single-series scroll area 2D chart looks like:
 
 {% embed_all standard-charts-scroll-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7neLV/) to edit the scroll area 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/7neLV/ "@@open-newtab") to edit the scroll area 2D chart.
 
 ## Scroll Stacked Column 2D Chart
 
@@ -75,7 +75,7 @@ A scroll stacked column 2D chart looks like:
 
 {% embed_all standard-charts-scroll-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/t3SKj/) to edit the scroll stacked column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/t3SKj/ "@@open-newtab") to edit the scroll stacked column 2D chart.
 
 ## Scroll Combination 2D Chart
 
@@ -87,7 +87,7 @@ A scroll combination 2D chart looks like:
 
 {% embed_all standard-charts-scroll-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6Y3jt/) to edit the scroll stacked column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/6Y3jt/ "@@open-newtab") to edit the scroll stacked column 2D chart.
 
 ## Scroll Combination 2D Dual Y-axis Chart
 
@@ -97,7 +97,7 @@ The scroll combination 2D chart (dual Y) chart thus created looks like this :
 
 {% embed_all standard-charts-scroll-charts-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/cVXNg/) to edit the scroll combination 2D chart with a dual y-axis.
+Click [here](http://jsfiddle.net/fusioncharts/cVXNg/ "@@open-newtab") to edit the scroll combination 2D chart with a dual y-axis.
 
 Now, let's customize the appearance and properties of the charts. 
 
@@ -120,7 +120,7 @@ A scroll chart with the number of visible data plots set to twelve looks like th
 
 {% embed_chart standard-charts-scroll-charts-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/15tzb20e/) to edit the scroll column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/15tzb20e/ "@@open-newtab") to edit the scroll column 2D chart.
 
 ## Render a Scroll Bar with Gradient Effect
 
@@ -139,7 +139,7 @@ A scroll chart with a gradient scroll bar looks like this:
 
 {% embed_chart standard-charts-scroll-charts-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ssfngtce/) to edit the scroll column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/ssfngtce/ "@@open-newtab") to edit the scroll column 2D chart.
 
 ## Customizing the Scroll Bar
 
@@ -167,4 +167,4 @@ A scroll chart with the cosmetic properties of the scroll bar customized looks l
 
 {% embed_chart standard-charts-scroll-charts-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/guawyxge/) to edit the scroll column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/guawyxge/ "@@open-newtab") to edit the scroll column 2D chart.

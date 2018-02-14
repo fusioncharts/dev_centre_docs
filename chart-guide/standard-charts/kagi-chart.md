@@ -32,7 +32,7 @@ A simple Kagi chart looks like:
 
 {% embed_all standard-charts-kagi-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/JRZ36/) to edit the kagi chart.
+Click [here](http://jsfiddle.net/fusioncharts/JRZ36/ "@@open-newtab") to edit the kagi chart.
 
 These charts are independent of time and only change direction once a predefined reversal amount is reached. This reversal value could be configured either as a percentage of range value or absolute value.
 

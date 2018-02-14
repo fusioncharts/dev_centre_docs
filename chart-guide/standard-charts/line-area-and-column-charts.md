@@ -33,7 +33,7 @@ A single-series column 2D chart looks like:
 
 {% embed_all standard-charts-line-area-and-column-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/s7t8F/) to edit the column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/s7t8F/ "@@open-newtab") to edit the column 2D chart.
 
 ## Column 3D Chart
 
@@ -43,7 +43,7 @@ A single-series column 3D chart looks like:
 
 {% embed_all standard-charts-line-area-and-column-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/xL3py/ ) to edit the column 3D chart.
+Click [here](http://jsfiddle.net/fusioncharts/xL3py/ "@@open-newtab") to edit the column 3D chart.
 
 ## Bar 2D Chart
 
@@ -53,7 +53,7 @@ To render a bar 2D chart, set the `type` to `bar2d`. A single-series bar 2D char
 
 {% embed_all standard-charts-line-area-and-column-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/y3H2G/) to edit the bar 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/y3H2G/ "@@open-newtab") to edit the bar 2D chart.
 
 ## Bar 3D Chart
 
@@ -63,7 +63,7 @@ A single-series bar 3D chart looks like:
 
 {% embed_all standard-charts-line-area-and-column-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/b03dgzvv/) to edit the bar 3D chart.
+Click [here](http://jsfiddle.net/fusioncharts/b03dgzvv/ "@@open-newtab") to edit the bar 3D chart.
 
 ## Line Chart
 
@@ -79,7 +79,7 @@ A line chart looks like:
 
 {% embed_all standard-charts-line-area-and-column-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/xb9TG/) to edit the line chart.
+Click [here](http://jsfiddle.net/fusioncharts/xb9TG/ "@@open-newtab") to edit the line chart.
 
 ## Area Chart
 
@@ -89,7 +89,7 @@ To render an area chart with the same use case as above, set the `type` to `area
 
 {% embed_all standard-charts-line-area-and-column-charts-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/x5FBh/) to edit the area chart.
+Click [here](http://jsfiddle.net/fusioncharts/x5FBh/ "@@open-newtab") to edit the area chart.
 
 Now, let's customize the appearance and properties of the charts. 
 
@@ -130,7 +130,7 @@ A quarterly sales summary chart rendered with a trend-line to show the target va
 
 {% embed_chart standard-charts-line-area-and-column-charts-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/aktyv9jm/) to edit the column chart.
+Click [here](http://jsfiddle.net/fusioncharts/aktyv9jm/ "@@open-newtab") to edit the column chart.
 
 **Trend-zone** is used to show a range of target values. The trend-zone uses the same attributes as the trend-line. `isTrendZone` is the attribute which is used to specify whether a chart will be rendered with a trend-line or a trend-zone. Setting this attribute to `0` will render a trend-line, setting it to `1` (default) will render a trend-zone. 
 
@@ -138,9 +138,9 @@ A quarterly sales summary chart rendered with a trend-zone to show a range of ta
 
 {% embed_chart standard-charts-line-area-and-column-charts-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6cq0uafp/) to edit the column chart.
+Click [here](http://jsfiddle.net/fusioncharts/6cq0uafp/ "@@open-newtab") to edit the column chart.
 
-FusionCharts Suite XT includes several options to customize trend elements. To know more, click [here](https://www.fusioncharts.com/dev/basic-chart-configurations/trend-lines-and-zones.html).
+FusionCharts Suite XT includes several options to customize trend elements. To know more, click [here](https://www.fusioncharts.com/dev/basic-chart-configurations/trend-lines-and-zones.html "@@open-newtab").
 
 ## Plot Vertical Line Elements
 
@@ -170,9 +170,9 @@ A line chart rendered with a vertical line looks like this:
 
 {% embed_chart standard-charts-line-area-and-column-charts-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/cdjco7hq/) to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/cdjco7hq/ "@@open-newtab") to edit the above chart.
 
-FusionCharts Suite XT includes several options to customize vertical line elements. To know more, click [here](https://www.fusioncharts.com/dev/basic-chart-configurations/vertical-lines.html).
+FusionCharts Suite XT includes several options to customize vertical line elements. To know more, click [here](https://www.fusioncharts.com/dev/basic-chart-configurations/vertical-lines.html "@@open-newtab").
 
 ## Change Chart Type
 

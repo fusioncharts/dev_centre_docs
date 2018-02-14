@@ -100,7 +100,7 @@ The candlestick chart thus created will look like:
 
 {% embed_all standard-charts-candlestick-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Hcm78/) to edit the candlestick chart.
+Click [here](http://jsfiddle.net/fusioncharts/Hcm78/ "@@open-newtab") to edit the candlestick chart.
 
 In the chart above, the price chart is rendered in the first half of the candlestick chart while the volume chart is rendered in the second half.
 
@@ -131,7 +131,7 @@ A candlestick chart with the price chart rendered as a line chart looks like thi
 
 {% embed_chart standard-charts-candlestick-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/b3xfLrmg/) to edit the candlestick chart.
+Click [here](http://jsfiddle.net/fusioncharts/b3xfLrmg/ "@@open-newtab") to edit the candlestick chart.
 
 ## Set the Price to Plot for the Line Price chart
 
@@ -153,7 +153,7 @@ A candlestick chart looks like:
 
 {% embed_chart standard-charts-candlestick-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/b3xfLrmg/) to edit the candlestick chart.
+Click [here](http://jsfiddle.net/fusioncharts/b3xfLrmg/ "@@open-newtab") to edit the candlestick chart.
 
 ## Show/Hide the Volume chart
 
@@ -174,7 +174,7 @@ A candlestick chart rendered with the volume chart hidden looks like this:
 
 {% embed_chart standard-charts-candlestick-chart-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/urzeqo6d/) to edit the candlestick chart.
+Click [here](http://jsfiddle.net/fusioncharts/urzeqo6d/ "@@open-newtab") to edit the candlestick chart.
 
 > You can also customize the height of the volume chart by **volumeHeightPercent** attribute. The default value is **40%** and you can choose any value between **20%** to **80%**.
 
@@ -257,6 +257,6 @@ A candlestick chart rendered with a trend-set looks like this:
 
 {% embed_chart standard-charts-candlestick-chart-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/hqvpoLrm/) to edit the candlestick chart.
+Click [here](http://jsfiddle.net/fusioncharts/hqvpoLrm/ "@@open-newtab") to edit the candlestick chart.
 
 Each individual object in the `set` object under `trendset` can have two attributes: `x` and `value`. `x`  represents the x-axis index where this `value` should be plotted.

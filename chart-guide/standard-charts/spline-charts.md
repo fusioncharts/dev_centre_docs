@@ -41,7 +41,7 @@ A simple single-series spline 2D chart looks like this:
 
 {% embed_all standard-charts-spline-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9C9pj/) to edit the single-series spline 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/9C9pj/ "@@open-newtab") to edit the single-series spline 2D chart.
 
 ## Multi-Series Spline Chart
 
@@ -55,7 +55,7 @@ A multi-series spline chart looks like:
 
 {% embed_all standard-charts-spline-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/tnt27/) to edit the multi-series spline chart.
+Click [here](http://jsfiddle.net/fusioncharts/tnt27/ "@@open-newtab") to edit the multi-series spline chart.
 
 ## Multi-Series Spline Area 2D
 
@@ -71,7 +71,7 @@ A simple multi-series spline area 2D chart looks like this:
 
 {% embed_all standard-charts-spline-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/W9Bn6/) to edit the multi-series spline area 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/W9Bn6/ "@@open-newtab") to edit the multi-series spline area 2D chart.
 
 ## Single-Series Spline Area 2D Chart
 
@@ -81,6 +81,6 @@ A simple single-series spline area area 2D chart looks like this:
 
 {% embed_all standard-charts-spline-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/gwRWL/) to edit the single-series spline area 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/gwRWL/ "@@open-newtab") to edit the single-series spline area 2D chart.
 
 > Spline and spline area charts do not support joining of empty data points in the chart. That means, if your chart does not contain data at a particular point, the data points cannot be connected to each other and will appear as a broken dataset.

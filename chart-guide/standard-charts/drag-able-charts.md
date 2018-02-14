@@ -39,7 +39,7 @@ The drag-able column 2D chart for the above code looks like:
 
 {% embed_all standard-charts-drag-able-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8JNRQ/) to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/8JNRQ/ "@@open-newtab") to edit the above drag-able chart.
 
 In the above chart, the data plots representing the estimated value are drag-able.
 
@@ -59,7 +59,7 @@ A drag-able line 2D chart created to plot the quarterly sales for Apple and Sams
 
 {% embed_all standard-charts-drag-able-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8Fq44/) to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/8Fq44/ "@@open-newtab") to edit the above drag-able chart.
 
 ## Drag-able Area 2D Chart
 
@@ -69,7 +69,7 @@ A drag-able area 2D chart thus created looks like:
 
 {% embed_all standard-charts-drag-able-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/2atfY/) to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/2atfY/ "@@open-newtab") to edit the above drag-able chart.
 
 Now, let's customize the appearance and properties of the charts. 
 
@@ -179,7 +179,7 @@ A drag-able area chart configured to manage chart limits using JavaScript API lo
 
 {% embed_chart standard-charts-drag-able-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/r8fgby9g/) to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/r8fgby9g/ "@@open-newtab") to edit the above drag-able chart.
 
 ## Snap to the Nearest Divisional Lines
 
@@ -212,7 +212,7 @@ A drag-able column chart configured for snapping to the nearest div interval loo
 
 {% embed_chart standard-charts-drag-able-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/oq5vqv7n/) to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/oq5vqv7n/ "@@open-newtab") to edit the above drag-able chart.
 
 ## Retrieve a Dataset
 
@@ -222,7 +222,7 @@ The chart retrieving datasets looks like this:
 
 {% embed_chart standard-charts-drag-able-charts-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/d6cLm0em/) to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/d6cLm0em/ "@@open-newtab") to edit the above drag-able chart.
 
 A drag-able column 2D chart can also be configured to retrieve a data in XML and CSV format. The function to retrieve them are:
 
@@ -240,7 +240,7 @@ A drag-able column chart configured to retrieve data using the `getDataWithID()`
 
 {% embed_chart standard-charts-drag-able-charts-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/cvcn499t/) to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/cvcn499t/ "@@open-newtab") to edit the above drag-able chart.
 
 The data returned by the `getDataWithID()` function is without any editing.
 
@@ -318,4 +318,4 @@ A drag-column chart configured to retrieve data using the `getData()` method loo
 
 {% embed_charts standard-charts-drag-able-charts-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/qzm79rsv/) to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/qzm79rsv/ "@@open-newtab") to edit the above drag-able chart.

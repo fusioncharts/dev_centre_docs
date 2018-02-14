@@ -53,7 +53,7 @@ The stacked column 2D chart thus created looks like this:
 
 {% embed_all standard-charts-stacked-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/15zbv887/) to edit the stacked column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/15zbv887/ "@@open-newtab") to edit the stacked column 2D chart.
 
 ## Stacked Column 3D Chart
 
@@ -63,7 +63,7 @@ A stacked column chart in 3D looks like:
 
 {% embed_all standard-charts-stacked-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/z14fubaq/) to edit the stacked column 3D chart.
+Click [here](http://jsfiddle.net/fusioncharts/z14fubaq/ "@@open-newtab") to edit the stacked column 3D chart.
 
 ## Stacked Area 2D Chart
 
@@ -73,7 +73,7 @@ A stacked area chart in 2D looks like:
 
 {% embed_all standard-charts-stacked-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3RYK6/) to edit the stacked area 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/3RYK6/ "@@open-newtab") to edit the stacked area 2D chart.
 
 ## Stacked Bar 2D Chart
 
@@ -83,7 +83,7 @@ A stacked bar chart in 2D looks like:
 
 {% embed_all standard-charts-stacked-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/obga4uw9/) to edit the stacked bar 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/obga4uw9/ "@@open-newtab") to edit the stacked bar 2D chart.
 
 ## Stacked area 3D Chart
 
@@ -93,7 +93,7 @@ A stacked bar chart in 3D looks like:
 
 {% embed_all standard-charts-stacked-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/L6gg6ow3/) to edit the stacked bar 3D chart.
+Click [here](http://jsfiddle.net/fusioncharts/L6gg6ow3/ "@@open-newtab") to edit the stacked bar 3D chart.
 
 Now, let's customize the appearance and properties of the charts. 
 
@@ -116,7 +116,7 @@ A stacked column 2D chart with the cumulative sum rendered above its correspondi
 
 {% embed_chart standard-charts-stacked-charts-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/15zbv887/) to edit the above stacked column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/15zbv887/ "@@open-newtab") to edit the above stacked column 2D chart.
 
 ## Create 100% Stacked Charts
 
@@ -140,7 +140,7 @@ A 100% stacked column 2D chart looks like this:
 
 {% embed_chart standard-charts-stacked-charts-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/pcgxjcLb/) to edit the above stacked column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/pcgxjcLb/ "@@open-newtab") to edit the above stacked column 2D chart.
 
 ## Show Percent Values in Tool-Tips
 
@@ -161,4 +161,4 @@ A stacked column chart configured to show percent values in tool-tips looks like
 
 {% embed_chart standard-charts-stacked-charts-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/dwu9w555/) to edit the above stacked column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/dwu9w555/ "@@open-newtab") to edit the above stacked column 2D chart.

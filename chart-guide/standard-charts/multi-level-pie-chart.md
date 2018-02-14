@@ -37,4 +37,4 @@ The multi-level pie chart thus rendered looks like this:
 
 {% embed_all standard-charts-multi-level-pie-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/njjra2r4/) to edit the multi-level pie chart.
+Click [here](http://jsfiddle.net/fusioncharts/njjra2r4/ "@@open-newtab") to edit the multi-level pie chart.

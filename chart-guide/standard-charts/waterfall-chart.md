@@ -27,7 +27,7 @@ The waterfall chart thus rendered looks like this:
 
 {% embed_all standard-charts-waterfall-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/r9uwA/) to edit the waterfall chart.
+Click [here](http://jsfiddle.net/fusioncharts/r9uwA/ "@@open-newtab") to edit the waterfall chart.
 
 ## Customize Colors for the Columns
 
@@ -57,7 +57,7 @@ A waterfall chart with distinct colors used for the positive and negative data p
 
 {% embed_chart standard-charts-waterfall-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/fp5uh8p6/) to edit the waterfall chart.
+Click [here](http://jsfiddle.net/fusioncharts/fp5uh8p6/ "@@open-newtab") to edit the waterfall chart.
 
 ## Show/Hide Sum Columns
 
@@ -86,7 +86,7 @@ A waterfall chart rendered with a cumulative sum column looks like this:
 
 {% embed_chart standard-charts-waterfall-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/478ur96x/) to edit the waterfall chart.
+Click [here](http://jsfiddle.net/fusioncharts/478ur96x/ "@@open-newtab") to edit the waterfall chart.
 
 ### Show/Hide a Non-cumulative Sum Column
 
@@ -122,7 +122,7 @@ A waterfall chart rendered with a non-cumulative sum column looks like this:
 
 {% embed_chart standard-charts-waterfall-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/1crgnjar/) to edit the waterfall chart.
+Click [here](http://jsfiddle.net/fusioncharts/1crgnjar/ "@@open-newtab") to edit the waterfall chart.
 
 In the above chart, the 'Total Costs' column is a non-cumulative sum column.
 
@@ -153,7 +153,7 @@ A waterfall chart with the total sum column hidden looks like this:
 
 {% embed_chart standard-charts-waterfall-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/tvmospjo/) to edit the waterfall chart.
+Click [here](http://jsfiddle.net/fusioncharts/tvmospjo/ "@@open-newtab") to edit the waterfall chart.
 
 ## Customize Connectors
 
@@ -202,4 +202,4 @@ A waterfall chart rendered with customized connector lines looks like this:
 
 {% embed_chart standard-charts-waterfall-charts-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/mo48mf9s/) to edit the waterfall chart.
+Click [here](http://jsfiddle.net/fusioncharts/mo48mf9s/ "@@open-newtab") to edit the waterfall chart.
