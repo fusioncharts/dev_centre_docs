@@ -165,6 +165,6 @@ Refer to the code given below:
 
 A scroll chart with the cosmetic properties of the scroll bar customized looks like this:
 
-{% embed_chart standard-charts-scroll-chart-example-9.js %}
+{% embed_chart standard-charts-scroll-charts-example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/guawyxge/) to edit the scroll column 2D chart.
