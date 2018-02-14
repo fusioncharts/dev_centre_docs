@@ -7,7 +7,7 @@ breadcrumb: [["Home", "/"], ["Zoom Line Chart"]]
 
 The FusionCharts Suite XT zoom line chart is a special type of multi-series line chart that allows analysis of data at macroscopic and microscopic levels. It can easily plot thousands of data points, which can produce indecipherable results if plotted on an ordinary line chart.
 
-## Create a Zoomline chart
+## Create a Zoomline Chart
 
 As an example, we will create a zoom line chart that plots the number of unique website visits to the harrysfoodmart.com and the harrysfashion.com websites for every day of the last year.
 
@@ -41,7 +41,7 @@ The chart can be switched to pin mode, in pin mode - a ghost of the selected lin
 
 > The anchors in the zoom-line chart cannot be made clickable, because FusionCharts does not include the supporting API for defining an external URL for the data points.
 
-## Create a Zoom-line dual y-axis chart
+## Create a Zoom-line Dual Y-axis Chart
 
 The FusionCharts Suite XT **zoom-line dual y-axis** chart, like the zoom-line chart, is used to analyze data at macroscopic and microscopic levels. With the dual y-axis, this chart can be used to plot data that belongs to datasets having different numeric units on the same chart—an advantage over using the conventional zoom-line chart.
 
@@ -57,7 +57,7 @@ The chart below shows a zoom-line dual y-axis chart created to compare unique fo
 
 Click [here](http://jsfiddle.net/fusioncharts/mvsjs4ag/) to edit the zoom line dual y-axis chart.
 
-## Limit the number of data labels
+## Limit the Number of Data Labels
 
 By default the zoom line chart displays as many data labels as can be accommodated without causing a clutter. 
 
@@ -82,7 +82,7 @@ Click [here](http://jsfiddle.net/fusioncharts/t19c4y4e/) to edit the zoomline ch
 
 > **numVisibleLabels** attribute only limits the number of visible data labels, it has no effect on the number of visible data points.
 
-## Set the distance between the data plots
+## Set the Distance between the Data Plots
 
 In zoom line chart, set the distance (in pixels) between consecutive data plots using the  `pixelsPerPoint` attribute. A greater number of pixels will result in a higher quality display. 
 
@@ -105,7 +105,7 @@ A zoom line chart with the distance between the consecutive data plots configure
 
 Click [here](http://jsfiddle.net/fusioncharts/v60znb4c/) to edit the zoomline chart.
 
-## Set the criteria for anchor display
+## Set the Criteria for Anchor Display
 
 In order to reduce clutter, you can make anchors visible only when the distance between consecutive data points reaches a certain minimum value. For instance, you can instruct the chart to show anchors only when consecutive data points are `25 pixels` apart. 
 
@@ -130,7 +130,7 @@ A zoom line chart with the criteria for anchor display defined looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/9nkgfaho/) to edit the zoomline chart.
 
-## Pre-select the number of visible data plots
+## Pre-select the Number of Visible Data Plots
 
 By default, the zoom line chart displays all the data plots in a single screen. However, it is possible to pre-select the maximum number of data plots that will be visible on a single screen at the time of rendering.
 
@@ -156,7 +156,7 @@ A zoom line chart rendered with pre-selected number of data plots looks like thi
 
 Click [here](http://jsfiddle.net/fusioncharts/2fqud5w1/) to edit the zoomline chart.
 
-## Customize the appearance of a zoom line chart
+## Customize the Appearance of a Zoom-line Chart
 
 FusionCharts Suite XT includes several options for customizing the appearance of a zoom line chart. Appearance of chart elements such as the scroll bar and toolbar can be configured.
 
@@ -216,13 +216,13 @@ Refer to the code given below:
 
 The list of attributes to set the zooming mode of the zoomout button are: 
 
-* Specify the `btnResetChartTooltext` attribute to replace the default tooltext of the `Reset Chart` button with provided string.
+* Specify the `btnResetChartTooltext` attribute to replace the default tooltext of the **Reset Chart** button with provided string.
 
-* Specify the `btnZoomOutTooltext` attribute to replace the default tooltext of the `Zoom Out` button with provided string.
+* Specify the `btnZoomOutTooltext` attribute to replace the default tooltext of the **Zoom Out** button with provided string.
 
-* Specify the `btnSwitchToZoomModeTooltext` attribute to replace the default tooltext of `Switch to Zoom Mode` with provided string.
+* Specify the `btnSwitchToZoomModeTooltext` attribute to replace the default tooltext of **Switch to Zoom Mode** with provided string.
 
-* Specify the `btnSwitchToPinModeTooltext` attribute to replace the default tooltext of `Switch to Pin Mode` button with provided string.
+* Specify the `btnSwitchToPinModeTooltext` attribute to replace the default tooltext of **Switch to Pin Mode** button with provided string.
 
 Refer to the code given below:
 

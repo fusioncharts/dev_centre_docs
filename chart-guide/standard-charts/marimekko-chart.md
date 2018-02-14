@@ -15,11 +15,11 @@ The following three dimensions of marketing data can be represented using a Mari
 
 * Individual share of competitors in a market segment
 
-## Create a Marimekko chart
+## Create a Marimekko Chart
 
 Let's create a simple Marimekko chart that shows the top 3 Electronic Brands (Bose, Dell, and Apple) in the top 3 revenue earning states (California, Washington, and Nevada).
 
-The Marimekko chart shown below, when seen in the default mode, helps you instantly figure out the following:
+The Marimekko chart shown below, when seen in the default mode, helps in instantly figure out the following:
 
 * The top three manufactures within each state (Bose, Dell, and Apple) and the individual sales of each manufacturer within a state, indicated by the partitions in the stacked column.
 
@@ -55,7 +55,7 @@ The height of columns can be used to compare the TAM (Total Available Market) pe
 
 Now, let's customize the appearance and properties of the marimekko chart. We'll also talk about the interactive legend, introduced for the marimekko chart in FusionCharts v3.11.0.
 
-## Display actual data values
+## Display Actual Data Values
 
 The stacked columns in a Marimekko chart can be rendered:
 
@@ -82,7 +82,7 @@ A Marimekko chart rendered with actual values instead of percentage values looks
 
 Click [here](http://jsfiddle.net/fusioncharts/btfhoayu/) to edit the marimekko chart.
 
-## Hide the total value of market segments
+## Hide the Total value of Market Segments
 
 By default, the total value of a market segment for a competitor is rendered at the top of each column.
 
@@ -106,7 +106,7 @@ A Marimekko chart with the total value of market segments hidden looks like this
 
 Click [here](http://jsfiddle.net/fusioncharts/m02om320/) to edit the marimekko chart.
 
-## Percentage market share values
+## Percentage Market Share Values
 
 By default, labels are rendered between the columns of a Marimekko chart, along the x-axis, to show the percentage market value share of the competitors. These labels can be shown/hidden, depending on what the user requirement is. Set the `showAxisPercentValues` attribute to `0` to hide the percent values along the x-axis. The default value of this attribute is `1`.
 

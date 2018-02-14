@@ -15,8 +15,6 @@ FusionCharts Suite XT offers the following three types of drag-able charts:
 
 * Drag-able area 2D chart
 
-Once you are done with the visual updating of data, you can submit the data, either back to the server as form data (like HTML Forms), or, to JavaScript functions present on the same page as the chart. These JavaScript functions can then process the data and do the needful.
-
 ## Drag-able Column 2D
 
 Let's create our first **drag-able column 2D** chart showcasing the actual and estimated inventory status for the top five food items at Bakersfield Central.
@@ -35,7 +33,7 @@ To create a drag-able column 2D chart follow the steps given below:
 
 * Set the `allowDrag` attribute to specify whether the data plots representing a dataset will be drag-able. Set this attribute to `0` to disable the data plots from being drag-able, and set it to `1` (default) to enable them to be drag-able. This attribute belongs to the `dataset` object and makes all data plots for a dataset drag-able.
 
-> For a detailed list of attributes you can check the API reference page of the drag-able column 2D chart.
+For a detailed list of attributes you can check the API reference page of the drag-able column 2D chart.
 
 The drag-able column 2D chart for the above code looks like:
 
@@ -48,6 +46,8 @@ In the above chart, the data plots representing the estimated value are drag-abl
 The above sample also shows an external table with the values from the 'Estimated Demand' dataset. As soon as a value is updated on the chart, the table gets updated as well. This is done by retrieving the updated values using the `dataPlotDragEnd` event.
 
 Observe that there is also a `Restore` button on the chart. When the restore button is clicked, all data is reset to its original values. This is done using the `dataRestored` event.
+
+Once you are done with the visual updating of data, you can submit the data, either back to the server as form data (like HTML Forms), or, to JavaScript functions present on the same page as the chart. These JavaScript functions can then process the data and do the needful.
 
 ## Drag-able Line 2D
 
@@ -295,7 +295,7 @@ A drag-able column 2D chart can also be configured to retrieve a data in XML and
 
 * `getCSVData` - Set this function to fetch data that has been set on a chart in the CSV format. The data returned is the closest possible comma-separated value representation that has been provided to the chart. The exported data does not contain any functional or cosmetic attribute that was set on the chart.
 
-> Rest of the data structure remains the same as that of JSON format.
+Rest of the data structure remains the same as that of JSON format.
 
 ## Retrieve data using getDataWithID() function
 
@@ -321,22 +321,52 @@ The key pointers of this method are:
 
 Given below is the structure of the three-dimensional array returned by this function:
 
-[0,0] - Empty|[0,1]- Dataset id|[0,2] - Dataset Id|[0,n]- Dataset Id|
--|-|-|-
-[1,0] - Category label of data index 1|Data for dataset [1] data index [1] - returned as an array with two elements.
-Sub array [0] - Id of set
-Sub array [1] - Updated value of set|Data for dataset [2] data index [1] - returned as an array with two elements.
-Sub array [0] - Id of set
-Sub array [1] - Updated value of set|Data for dataset [n] data index [m] - returned as an array with two elements.
-Sub array [0] - Id of set
-Sub array [1] - Updated value of set|
-[2,0] - Category label of data index 2|Data for dataset [1] data index [2] - returned as an array with two elements.
-Sub array [0] - Id of set
-Sub array [1] - Updated value of set|Same as above|Same as above|
-[m,0] - Category label of data index m|Data for dataset [n] data index [m] - returned as an array with two elements.
-Sub array [0] - Id of set
-Sub array [1] - Updated value of set|Same as above|Same as above|
+<table>
+  <tr>
+    <th>[0,0] - Empty</th>
+    <th>[0,1]- Dataset id</th>
+    <th>[0,2] - Dataset Id</th>
+    <th>[0,n]- Dataset Id</th>
+  </tr>
+  <tr>
+    <td>[1,0] - Category label of data index 1</td>
+    <td>Data for dataset [1] data index [1] - returned as an array with two elements.
 
+Sub array [0] - Id of set
+Sub array [1] - Updated value of set
+</td>
+    <td>Data for dataset [2] data index [1] - returned as an array with two elements.
+
+Sub array [0] - Id of set
+Sub array [1] - Updated value of set
+</td>
+    <td>Data for dataset [n] data index [m] - returned as an array with two elements.
+
+Sub array [0] - Id of set
+Sub array [1] - Updated value of set
+</td>
+  </tr>
+  <tr>
+    <td>[2,0] - Category label of data index 2 </td>
+    <td>Data for dataset [1] data index [2] - returned as an array with two elements.
+
+Sub array [0] - Id of set
+Sub array [1] - Updated value of set
+</td>
+    <td>Same as above </td>
+    <td>Same as above </td>
+  </tr>
+  <tr>
+    <td>[m,0] - Category label of data index m</td>
+    <td>Data for dataset [n] data index [m] - returned as an array with two elements.
+
+Sub array [0] - Id of set
+Sub array [1] - Updated value of set
+</td>
+    <td>Same as above </td>
+    <td>Same as above </td>
+  </tr>
+</table>
 ## Retrieve data using getData() function
 
 The `getData()` function is similar to the `getDataWithID()` function except that it returns just the updated value of the data on the chart and not its ID.

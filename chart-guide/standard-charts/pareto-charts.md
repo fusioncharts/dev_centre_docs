@@ -53,7 +53,7 @@ Click [here](http://jsfiddle.net/fusioncharts/qEc4w/) to edit the pareto 3D char
 
 Now, let's customize the appearance and properties of the charts. 
 
-## Display values for the line series
+## Display Values for the Line Series
 
 By default, the auto-generated percentage values for the line chart are not rendered. To specify the percentage data values for the line chart, set the `showLineValues` attribute to `1`. 
 
@@ -75,7 +75,7 @@ A pareto chart configured to render the percentage values for the line chart loo
 
 Click [here](http://jsfiddle.net/fusioncharts/zr2mdz3t/) to edit the pareto 2D chart.
 
-## Customize the line dataset
+## Customize the Line Dataset
 
 In a pareto chart, you can customize the cosmetic of the line rendered. Given below are the cosmetic which can be applied to customize the line dataset.
 
@@ -119,9 +119,9 @@ A pareto chart with the line segments customized looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/nmf6af24/) to edit the pareto 2D chart.
 
-## Hide secondary axis values
+## Hide Secondary Axis Values
 
-Depending on the use case, you can hide the secondary y-axis of the pareto chart by following the steps given below:
+Depending on the use case, hide the secondary y-axis of the pareto chart by following the steps given below:
 
 * Specify the `showSecondaryLimits` attribute to set the upper and lower limits for the secondary y-axis. Setting this attribute to `0` will hide the limits, whereas setting it to `1` (default) will show them.
 

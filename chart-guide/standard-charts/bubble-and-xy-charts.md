@@ -84,7 +84,7 @@ A bubble chart with data labels rendered on bubbles looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/apo6yp8r/) to edit the above chart.
 
-## Segment the x-axis into categorical zones
+## Segment the x-axis into Categorical Zones
 
 The x-axis of the bubble/scatter chart can be segmented into categorical zones using vertical trend lines. To set the categorical zones follow the steps given below:
 
@@ -145,7 +145,7 @@ A bubble chart with the x-axis segmented looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/jcjjmhon/) to edit the above chart.
 
-## Configure x-axis labels
+## Configure X-axis Labels
 
 You can configure the display mode of the x-axis labels for bubble and scatter charts. You can either choose to make the chart automatically generate the x-axis labels along with vertical divisional lines or you can explicitly define each x-axis label. Additionally, you can also opt to mix these two modes.
 
@@ -201,7 +201,7 @@ To render the x-axis labels in the categories, set the value of the `xAxisLabelM
 
 > In case, categories are defined (and the `xAxisLabelMode` attribute is not defined), the chart switches to the `categories` mode. You can also force any of the above three modes by explicitly defining the mode using the `xAxisLabelMode` attribute.
 
-## Configure the x-axis vertical divisional lines
+## Configure the x-axis Vertical Divisional Lines
 
 X-axis vertical divisional lines are vertical lines running through the canvas in the chart. These lines are important in case of bubble charts as they divide the canvas into different sections. You can configure these lines as per your requirement. 
 
@@ -278,7 +278,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/26Lsqna9/) to edit the above chart.
 
-## Connect scatter plots by a line
+## Connect Scatter Plots by a Line
 
 In scatter charts, you can connect the scatter plots by a line. Set the `drawLine` attribute to `1`, which will connect the data points using a line. The default value for this attribute is `0`. This attribute belongs to the `dataset` object.
 
@@ -299,7 +299,7 @@ A scatter chart with all the data points connected by a line looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/t7Ladarf/) to edit the above chart.
 
-## Draw regression lines
+## Draw Regression Lines
 
 In scatter and bubble charts, each data point has two distinct numeric values: the **x** value with respect to the x-axis and the **y** value with respect to the y-axis.
 
@@ -378,7 +378,7 @@ Click [here](http://jsfiddle.net/fusioncharts/yo0dc81r/) to edit the above chart
 
 > **X on Y**: The regression equation of **X on Y** is the equation of the best fitting straight line in the form **x=a+by**, where **y** is the explanatory variable and **x** is the dependent variable and **b=(n . Σ (x.y) - (Σ x).(Σ y) )/ (n Σy² – (Σy)²)**.
 
-## Draw quadrants
+## Draw Quadrants
 
 Dividing the canvas of a bubble/scatter chart into quadrants makes analysis of the chart easier. Set the value of `drawQuadrant` attribute to `1` to draw quadrants for the chart. The default value of this attribute is `0`.
 
@@ -429,7 +429,7 @@ A bubble chart rendered with quadrants drawn at user-defined positions looks lik
 
 Click [here](http://jsfiddle.net/fusioncharts/28m91mnh/) to edit the above chart.
 
-## Display quadrant labels
+## Display Quadrant Labels
 
 In XY charts you can also set the label for all individual quadrants. To add labels the charts, follow the points given below:
 
@@ -462,7 +462,7 @@ A bubble chart with quadrant labels displayed looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/ot94tuqg/) to edit the above chart.
 
-## Customize quadrant labels
+## Customize Quadrant Labels
 
 The quadrant labels shown in the above chart can be customized according to the use case. Each and every cosmetic can be customized by setting the attribute for it. You can customize the font, font color, the transparency and the size of the font. The cosmetics of the label border and the background can also be customized if required.  
 
@@ -490,7 +490,7 @@ A bubble chart showcasing the above cosmetic attributes for quadrant labels is s
 
 Click [here](http://jsfiddle.net/fusioncharts/6o6jh6jm/) to edit the above chart.
 
-## Customize quadrant lines
+## Customize Quadrant Lines
 
 Customize the quadrant lines in the bubble chart using the list of attributes given below: 
 
