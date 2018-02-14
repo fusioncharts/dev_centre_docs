@@ -66,6 +66,7 @@ To enable this feature, set the `plotHighlightEffect` attribute to `fadeout` whe
 
 Refer to the code below:
 
+```
 {
     "chart": {
         ...
@@ -74,6 +75,7 @@ Refer to the code below:
 ...
 }
 
+```
 The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-3.js %}
@@ -157,7 +159,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_chart chart-configurations-legend-example-5.js %}
+![Drag Legend]({% site.baseurl %}/gif/configurations-legend-gif-2.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/5smv4kg4/) to edit the above chart.
 
@@ -188,17 +190,37 @@ Use the following attributes to draw a custom legend icon shape:
 
 * Set the `drawCustomLegendIcon` attribute to `1` to enable drawing of a custom legend icon. All other legend icon customization attributes work only if you enable this feature.
 
-* Specify the hex color code for the border of the legend icon using the `legendIconBorderColor` attribute. By default, it takes the data plot fill color.
-
-* Specify the hex color code for the background of the legend icon using the `legendIconBgColor` attribute. 
+```
+{
+    "chart": {
+        "drawCustomLegend":"1"
+    }
+}
+```
+* By default, the background color of the icons are same as that of the plot colors. Specify the hex color code for the background of the legend icon using the `legendIconBgColor` attribute. 
 
 * Set the legend icon transparency using the `legendIconAlpha` attribute. It takes values between `0` (transparent) and `100` (opaque; default).
 
 * Set the legend icon background transparency using the `legendIconBgAlpha` attribute. It takes values between `0` (transparent) and `100` (opaque; default). 
 
-* Set the number of sides for the legend icon using the `legendIconBgAlpha` attribute. 
-
 * Set the thickness of the legend icon border using the `legendIconBorderThickness` attribute. 
+
+* Specify the hex color code for the border of the legend icon using the `legendIconBorderColor` attribute. By default, it takes the data plot fill color.
+
+```
+{
+    "chart": {
+        ...
+        "legendIconBgColor": "#ff0000"
+        "legendIconAlpha": "50",
+        "legendIconBgAlpha": "30",
+        "legendIconBorderColor": "#123456",
+        "legendIconBorderThickness": "3"
+    }
+}
+```
+
+* Set the number of sides for the legend icon using the `legendIconSides` attribute. 
 
 * Set the starting angle for drawing the legend icon using the `legendIconStartAngle` attribute. 
 
@@ -207,19 +229,10 @@ Refer to the code below:
 ```
 {
     "chart": {
-        ...
-        "legendBgAlpha": "0",
-        "legendBorderAlpha": "0",
-        "legendShadow": "0",
-        "legendItemFontSize": "10",
-        "legendItemFontColor": "#666666",
-        "drawCustomLegendIcon": "1",
-        "legendIconAlpha": "50",
-        "legendIconBorderColor": "#123456",
-        "legendIconBorderThickness": "3",
         "legendIconSides": "5",
         "legendIconStartAngle": "60"
     }
+...
 }
 ```
 
@@ -306,11 +319,31 @@ Use the following attributes used to customize legend appearance:
 
 * Specify the background transparency for the legend using the `legendBgAlpha` attribute. It takes values between `0` (transparent) and `100` (opaque).
 
+```
+{
+    "chart": {
+        "legendBgColor": "#CCCCCC",
+        "legendBgAlpha": "20"
+    }
+}
+
+```
+
 * Specify the border color for the legend using the `legendBorderColor` attribute, which accepts hex codes as values.
 
 * Specify the border thickness for the legend in pixels, using the `legendBorderThickness` attribute.
 
 * Specify the border transparency for the legend using the `legendBorderAlpha` attribute. It takes values between `0` (transparent) and `100` (opaque).
+
+```
+{
+    "chart": {
+        "legendBorderColor": "#666666",
+        "legendBorderThickness": "1",
+        "legendBorderAlpha": "40",
+    }
+}
+```
 
 * Set the value of the `legendShadow` attribute to `1`, to display legend shadow. 
 
@@ -323,11 +356,6 @@ Refer to the code below:
 ```
 {
     "chart": {
-        "legendBgColor": "#CCCCCC",
-        "legendBgAlpha": "20",
-        "legendBorderColor": "#666666",
-        "legendBorderThickness": "1",
-        "legendBorderAlpha": "40",
         "legendCaptionAlignment": "center",
         "legendScrollBgColor": "#ffffff",
         "legendShadow": "1"
@@ -353,7 +381,28 @@ Use the following attributes to customize the legend font cosmetics:
 
 * Display legend keys in bold, by setting the value of `legendItemFontBold` attribute to `1`.
 
+```
+{
+    "chart": {
+        "legendItemFontBold": "0",
+        "legendItemFont": "Arial",
+        "legendItemFontSize": "11",
+        "legendItemFontColor": "#666666",
+    }
+}
+```
+
 * Specify the legend item font color on hover, using the `legendItemHoverFontColor` attribute, which accepts hex codes as values.
+
+```
+{
+    "chart": {
+
+        "legendItemHoverFontColor": "#000000"
+       
+    }
+}
+```
 
 * Specify the legend caption value using the `legendCaption` attribute, which accepts strings.
 
@@ -361,27 +410,20 @@ Use the following attributes to customize the legend font cosmetics:
 
 * Specify the legend caption font size using the `legendCaptionFontSize` attribute, which accepts values between `0` and `72`.
 
-* Display legend captions in bold, by setting the value of `legendItemFontBold` attribute to `1`.
+* Specify the hex color code for the caption font of the legend using the `legendCaptionFontColor` attribute.
 
+* Set the `legendCaptionBold` attribute to `1` to make the caption appear bold.
 
 Refer to the code below:
 
 ```
 {
-    "chart"**:** {
-        ...
-        "legendPosition": "right",
+    "chart": {
         "legendCaption": "Which year?",
         "legendCaptionBold": "1",
         "legendCaptionFont": "Arial",
         "legendCaptionFontSize": "14",
-        "legendCaptionFontColor": "#333333",
-        "legendItemFontBold": "0",
-        "legendItemFont": "Arial",
-        "legendItemFontSize": "11",
-        "legendItemFontColor": "#666666",
-        "legendItemHoverFontColor": "#000000", 
-        "legendItemHiddenColor": "#e8e8e8"
+        "legendCaptionFontColor": "#333333"
     }
 }
 ```
