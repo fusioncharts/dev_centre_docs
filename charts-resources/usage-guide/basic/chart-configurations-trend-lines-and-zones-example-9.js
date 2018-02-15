@@ -15,14 +15,8 @@
             "numberPrefix": "$",
             "theme": "fint",
             //Attributes to configure Trend Values
-            "trendValueBorderColor": "ff0000",
-            "trendValueBorderAlpha": "80",
-            "trendValueBorderPadding": "4",
-            "trendValueBorderRadius": "5",
-            "trendValueBorderThickness": "2",
-            "trendValueBorderDashed": "1",
-            "trendValueBorderDashLen": "3",
-            "trendValueBorderDashGap": "3"
+            "trendValueBgColor": "000000",
+            "trendValueBgAlpha": "70"
         },
         "data": [{
             "label": "Jan",

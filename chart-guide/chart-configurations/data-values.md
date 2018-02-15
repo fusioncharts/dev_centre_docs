@@ -9,11 +9,11 @@ Data values are plot values i.e. values of each data plot (line, column, bar, pi
 
 ![Data Values]({% site.baseurl %}/images/chart-configurations-data-values-image-1.png)
 
-## Configure text labels instead of numeric data values
+## Configure Text Labels instead of Numeric Data Values
 
 Instead of displaying numeric data values, you can use text labels to denote data values for each data item. Specify the text you want to display using the `displayValue` attribute under `data` within the particular data plot. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         ...
@@ -39,7 +39,6 @@ Instead of displaying numeric data values, you can use text labels to denote dat
         }
     ]
 }
-
 ```
 The chart will look like as shown below:
 
@@ -47,7 +46,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/kzqrpah6/ "@@open-newtab") to edit the above chart.
 
-## Rotate data values
+## Rotate Data Values
 
 By default, the data values appear vertically as shown in the chart below:
 
@@ -59,15 +58,12 @@ You can opt to rotate the data values horizontally. Set the `rotateValues` to `0
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "rotateValues": "0"
     }
-...
 }
-
 ```
 
 The chart will look like as shown below:
@@ -76,19 +72,16 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/c8co0Lgv/ "@@open-newtab") to edit the above chart.
 
-## Display data values outside columns
+## Display Data Values outside Columns
 
 By default, the data values are displayed within the column data plots. Set the `placeValuesInside` attribute to `0` and display the data values outside the column data plots. Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        "...
         "placeValuesInside": "0"
     }
-...
 }
-
 ```
 
 The chart will look like as shown below:
@@ -97,19 +90,16 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/hpf7h7wr/ "@@open-newtab") to edit the above chart.
 
-## Show/hide data values
+## Show/Hide Data Values
 
 By default, all the data values are displayed. Set the `showValues` attribute to `0` under the `chart` object to hide all the data values. Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        "...
         "showValues": "0"
     }
-...
 }
-
 ```
 
 The chart will look like as shown in  the image below:
@@ -122,10 +112,9 @@ You can also opt to show/hide specific  data values instead of hiding all of the
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "showValues": "0"
     },
     "data": [
@@ -145,7 +134,7 @@ The chart looks like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/gs43rmof/ "@@open-newtab") to edit the above chart.
 
-### Skip y-axis values
+### Skip Y-axis Values
 
 If there is a large number of values to be displayed along the y-axis, you can opt to display every nth y-axis value skipping the rest.
 
@@ -155,15 +144,12 @@ This attribute can also assume default values based on the space available in th
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "yAxisValuesStep": "2"
     }
-...
 }
-
 ```
 
 The chart will look like as shown below:
@@ -172,7 +158,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/ekseaedo/ "@@open-newtab") to edit the above chart.
 
-## Customize data value properties
+## Customize Data Value Properties
 
 You can customize the data value properties in terms of font, border, background, and alpha. 
 
@@ -194,10 +180,9 @@ To customize the font properties following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "placeValuesInside": "0",
         "rotateValues": "0",
         "valueFont": "Arial",
@@ -207,9 +192,7 @@ Refer to the code below:
         "valueFontItalic": "0",
         "valueFontAlpha": "90"
     }
-...
 }
-
 ```
 
 The chart will look like as shown below:
@@ -218,7 +201,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/e8a91fty/ "@@open-newtab") to edit the above chart.
 
-### Customize data value border
+### Customize Data Value Border
 
 To customize the border of the data values the following attributes are used:
 
@@ -240,10 +223,9 @@ To customize the border of the data values the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "valueBorderColor": "#666666",
         "valueBorderAlpha": "100",
         "valueBorderPadding": "5",
@@ -253,9 +235,7 @@ Refer to the code below:
         "valueBorderDashLen": "4",
         "valueBorderDashGap": "2"
     }
-...
 }
-
 ```
 
 The chart will look like as shown below:
@@ -264,7 +244,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/k8u7ront/ "@@open-newtab") to edit the above chart.
 
-### Customize data value background
+### Customize Data Value Background
 
 To customize the background of the data  values the following attributes are used:
 
@@ -276,18 +256,16 @@ To customize the background of the data  values the following attributes are use
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "valueBgColor": "#666666",
         "valueBgAlpha": "100",
         "valueBgHoverAlpha": "5"
     }
-...
 }
-
 ```
+
 The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-values-example-10.js %}

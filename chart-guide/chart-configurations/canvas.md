@@ -11,9 +11,11 @@ The blue coloured area shown in the chart below is the canvas area:
 
 {% embed_chart chart-configurations-canvas-example-1.js %}
 
+Click [here](http://jsfiddle.net/fusioncharts/ssaacvmj/ "@@open-newtab") to edit the above chart.
+
 We will learn how to customize different properties of the canvas.
 
-## Customize the canvas fill color
+## Customize the Canvas Fill Color
 
 To customize the canvas fill color the following attributes are used:
 
@@ -23,19 +25,16 @@ To customize the canvas fill color the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-       ...
         "canvasbgColor": "#1790e1",
         "canvasbgAlpha": "10",
         "canvasBorderThickness": "1",
         "showAlternateHGridColor": "0",
-        "bgColor": "#eeeeee",
-        "theme": "fint"
+        "bgColor": "#eeeeee"
     }
 }
-
 ```
 
 The chart will look like as shown below:
@@ -44,28 +43,27 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/qx1djybc/ "@@open-newtab") to edit the above chart.
 
-## Hide canvas border
+## Hide Canvas Border
 
-By default, the canvas border is not visible. To show the canvas border, set the `showCanvasBorder` attribute to `1`. 
+By default, the canvas border is not visible. To show the canvas border, set the `showCanvasBorder` attribute to `1`.
 
 Refer to the code below:
 
 ```
- {
+{
     "chart": {
-
-        "showCanvasBorder":"1",
-        ...
+        "showCanvasBorder":"1"
     }
 }
-
 ```
 
-The chart without canvas border will look like as shown below:
+The chart with canvas border will look like as shown below:
 
-**INSERT CHART**
+{% embed_chart chart-configurations-canvas-example-6.js %}
 
-## Customize canvas border
+Click [here](http://jsfiddle.net/fusioncharts/wt2r9cox/ "@@open-newtab") to edit the above chart.
+
+## Customize Canvas Border
 
 To customize the border the following attributes are used:
 
@@ -77,16 +75,14 @@ To customize the border the following attributes are used:
 
 Refer to the code below:
 
-```
- {
+```json
+{
     "chart": {
-        "canvasBorderThickness": "1",
-        " canvasBorderColor":"'666666",
-        "canvasBorderThickness":"1",
+        "canvasBorderColor":"'666666",
+        "canvasBorderThickness":"4",
         "canvasBorderAlpha":"80"
     }
 }
-
 ```
 
 The chart will look like as shown below:
@@ -95,7 +91,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/ju5dvkoh/ "@@open-newtab") to edit the above chart.
 
-## Use gradient fill
+## Use Gradient Fill
 
 To set gradient fill for the canvas follow the steps given below:
 
@@ -109,15 +105,15 @@ To set gradient fill for the canvas follow the steps given below:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "canvasbgColor": "#eeeeee,#b3b3b3",
         "canvasbgAlpha": "100",
         "canvasBgRatio": "40,60",
         "canvasBgAngle": "0"
-    },
-
+    }
+}    
 ```
 
 Below is a sample chart with a gradient filled chart canvas:
@@ -126,7 +122,7 @@ Below is a sample chart with a gradient filled chart canvas:
 
 Click [here](http://jsfiddle.net/fusioncharts/yngu2v81/ "@@open-newtab") to edit the above chart.
 
-## Configure the 3D effect
+## Configure the 3D Effect
 
 The canvas can be configured to have a 3D effect. To do so, follow the steps given below:
 
@@ -142,18 +138,17 @@ The canvas can be configured to have a 3D effect. To do so, follow the steps giv
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-       ...
         "showCanvasBg": "1",
         "showCanvasBase": "1",
         "canvasBaseDepth": "14",
         "canvasBgDepth": "5",
         "canvasBaseColor": "#aaaaaa",
         "canvasBgColor": "#eeeeee"
-    },
-
+    }
+}
 ```
 
 The chart will look like as shown below:

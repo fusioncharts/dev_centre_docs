@@ -9,26 +9,25 @@ Each data point in a line/spline/area chart is represented by an anchor. Anchors
 
 ![Anchors]({% site.baseurl %}/images/chart-configurations-anchors-image-1.png)
 
-## Hide anchors
+## Hide Anchors
 
 The anchors and their corresponding tooltips are displayed by default. To hide the anchors set the `drawAnchors` attribute to `0` as shown in the code below:
 
-```
+```json
 {
     "chart": {
         "drawAnchors": "0"
-    },
+    }
+}
+```
 
-  ```
 A line chart with anchors hidden looks as below:
-
-**INSERT CHART**
 
 {% embed_chart chart-configurations-anchors-and-lines-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/5tajR/ "@@open-newtab") to edit the above chart.
 
-## Customize anchor properties
+## Customize Anchor Properties
 
 To customize the properties of the anchors the following attributes are used:
 
@@ -46,7 +45,7 @@ To customize the properties of the anchors the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "anchorRadius": "6",
@@ -54,8 +53,8 @@ Refer to the code below:
         "anchorBorderColor": "#127fcb",
         "anchorSides": "3",
         "anchorBgColor": "#d3f7ff"
-    },
-
+    }
+}
 ```
 
 A line chart with customized anchors looks like as shown below:
@@ -64,7 +63,7 @@ A line chart with customized anchors looks like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/QnFW2/ "@@open-newtab") to edit the above chart.
 
-## Customize anchors for specific data points
+## Customize Anchors for specific Data Points
 
 To highlight a specific anchor, customize the cosmetics for only that particular anchor. 
 
@@ -72,7 +71,7 @@ To customize the anchor of a specific data point use the same attributes as ment
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "anchorRadius": "6",
@@ -101,7 +100,7 @@ A line chart with anchors for specific data points customized looks as below:
 
 Click [here](http://jsfiddle.net/fusioncharts/w9ZWt/ "@@open-newtab") to edit the above chart.
 
-## Add external images
+## Add External Images
 
 You can add external images in place of anchors for line and area charts. This allows you to use different images for each anchor, and lets you highlight special values. To do so, you have to set the attributes in individual `data` object. The attributes use are:
 
@@ -117,7 +116,7 @@ You can add external images in place of anchors for line and area charts. This a
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         ...

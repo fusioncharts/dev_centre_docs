@@ -9,19 +9,24 @@ Trend lines are reference horizontal or vertical lines which helps to interpret 
 
 > In the FusionCharts Suite XT, you can only use trendlines to add context to data, To show trends for data points, use regression lines.
 
-## Add tool-text to a trend line
+## Add Tool-text to a Trend Line
 
 You can specify a custom tool-text which will be rendered when the mouse pointer is hovered over the trend line. To do so, specify the text you want to display using the `toolText` attribute.
 
 Refer to the code below:
 
-```
-"trendlines": [{
-    "line": [{
+```json
+{
+    "chart": {
         ...
-        "tooltext": "Quarterly sales target was $startDataValue",
+    },
+    "trendlines": [{
+        "line": [{
+            ...
+            "tooltext": "Quarterly sales target was $startDataValue",
+        }]
     }]
-}]
+}
 ```
 
 The chart will look like as shown below:
@@ -30,7 +35,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/qfeojqqq/ "@@open-newtab") to edit the above chart.
 
-## Add trend zones
+## Add Trend Zones
 
 Trend zones are similar to trend lines, except that they mark out an entire zone rather than just a line. Use the following attributes to create trend zones:
 
@@ -42,15 +47,20 @@ Trend zones are similar to trend lines, except that they mark out an entire zone
 
 Refer to the code below:
 
-```
-"trendlines": [{
-    "line": [{
-	...
-    "isTrendZone": "1",
-    "startvalue": "175000",
-    "endValue": "150000"
+```json
+{
+    "chart": {
+        ...
+    },
+    "trendlines": [{
+        "line": [{
+    	...
+        "isTrendZone": "1",
+        "startvalue": "175000",
+        "endValue": "150000"
+        }]
     }]
-}]
+}
 ```
 
 The chart will look like as shown below:
@@ -59,7 +69,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/Lwhvy97s/ "@@open-newtab") to edit the above chart.
 
-## Customize trend lines and trend zones
+## Customize Trend Lines and Trend Zones
 
 Use the following attributes to customize trend lines and trend zones:
 
@@ -71,16 +81,20 @@ Use the following attributes to customize trend lines and trend zones:
 
 Refer to the code below:
 
-```
-"trendlines": [{
-    "line": [{
+```json
+{
+    "chart": {
         ...
-        "color": "#8cbb2c",
-        "thickness": "4",
-        "alpha": "60",
+    },
+    "trendlines": [{
+        "line": [{
+            ...
+            "color": "#8cbb2c",
+            "thickness": "4",
+            "alpha": "60",
+        }]
     }]
-}]
-
+}
 ```
 
 The chart will look like as shown below:
@@ -89,7 +103,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/0x1zrh55/ "@@open-newtab") to edit the above chart.
 
-## Customize the trend line display value text
+## Customize the Trend Line Display Value Text
 
 Use the attributes given below to customize the trend line display value text:
 
@@ -103,9 +117,42 @@ Use the attributes given below to customize the trend line display value text:
 
 * Set the transparency for the trend-line display values using the `trendValueAlpha` attribute, which accepts values between `0` (transparent) and `100` (opaque; default). 
 
+```json
+{
+    "chart": {
+        "trendValueFont": "Arial",
+        "trendValueFontSize": "12",
+        "trendValueFontBold": "1",
+        "trendValueFontItalic": "1",
+        "trendValueAlpha": "80"
+    }
+}
+```
+
+{% embed_chart chart-configurations-trend-lines-and-zones-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/kmpe918g/ "@@open-newtab") to edit the above chart.
+
+Use the attributes given below to customize the background of the trend line value text:
+
 * Set the color for the background of the trend-line display values using the `trendValueBgColor` attribute, which accepts hex codes of colors.
 
 * Set the transparency for the background of trend-line display values using the `trendValueBgAlpha` attribute, which accepts values between `0` (transparent) and `100` (opaque; default).
+
+```json
+{
+    "chart": {
+        "trendValueBgColor": "000000",
+        "trendValueBgAlpha": "70"
+    }
+}
+```
+
+{% embed_chart chart-configurations-trend-lines-and-zones-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/vvrduaek/ "@@open-newtab") to edit the above chart.
+
+Use the attributes given below to customize the border of trend line value text:
 
 * Set the color for the border around the trend-line display values using the `trendValueBorderColor` attribute, which accepts hex codes of colors.
 
@@ -117,6 +164,24 @@ Use the attributes given below to customize the trend line display value text:
 
 * Set the thickness for the border around the trend-line display values using the `trendValueBorderThickness` attribute.
 
+```json
+{
+    "chart": {
+        "trendValueBorderColor": "ff0000",
+        "trendValueBorderAlpha": "80",
+        "trendValueBorderPadding": "4",
+        "trendValueBorderRadius": "5",
+        "trendValueBorderThickness": "2"
+    }
+}
+```
+
+{% embed_chart chart-configurations-trend-lines-and-zones-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/oxmchda6/ "@@open-newtab") to edit the above chart.
+
+Use the attributes given below to customize the dashed border of trend line value text:
+
 * Specify whether the border around the trend-line display value will be drawn as a dashed line by setting the value of `trendValueBorderDashed` attribute to `1`.
 
 * Set the length of each dash, if the border around the trend-line display value is drawn as a dashed line, using the `trendValueBorderDashLen` attribute.
@@ -125,16 +190,12 @@ Use the attributes given below to customize the trend line display value text:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
-        "trendValueFontBold": "1",
-        "trendValueBorderColor": "#123456",
         "trendValueBorderDashed": "1",
-        "trendValueBorderDashlen": "2",
-        "trendValueBorderDashGap": "3",
-        "trendValueBorderThickness": "3"
+        "trendValueBorderDashLen": "#123456",
+        "trendValueBorderDashGap": "1"
     }
 }
 ```
@@ -143,9 +204,9 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-trend-lines-and-zones-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/bf7jLjo2/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/stht1u4c/ "@@open-newtab") to edit the above chart.
 
-## Add dashed trend lines
+## Add Aashed Trend Lines
 
 Use the attributes given below to render a dashed trend line instead of the continuous line:
 
@@ -155,16 +216,19 @@ Use the attributes given below to render a dashed trend line instead of the cont
 
 * Set the gap between two consecutive dashes in trend lines (in pixels) using the `dashGap` attribute.
 
-```
-"trendlines": [{
-    "line": [{
+```json
+{
+    "chart":{
         ...
-        "dashed": "1",
-        "dashLen": "4",
-        "dashGap": "2"
+    },
+    "trendlines": [{
+        "line": [{
+            "dashed": "1",
+            "dashLen": "4",
+            "dashGap": "2"
+        }]
     }]
-}]
-
+}
 ```
 
 The chart will look like as shown below:
@@ -173,7 +237,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/mepm69sL/ "@@open-newtab") to edit the above chart.
 
-## Add slanted trend lines
+## Add Slanted Trend Lines
 
 Use the following attributes to render a slanted trend line:
 
@@ -183,15 +247,18 @@ Use the following attributes to render a slanted trend line:
 
 Refer to the code below:
 
-```
-"trendlines": [{
-    "line": [{
+```json
+{
+    "chart":{
         ...
-        "startvalue":400",
-        "endValue":000",
+    },
+    "trendlines": [{
+        "line": [{
+            "startvalue":400",
+            "endValue":000"
+        }]
     }]
-}]
-
+}
 ```
 
 The chart will look like as shown below:
@@ -200,19 +267,23 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/3r9r9bsr/ "@@open-newtab") to edit the above chart.
 
-## Configure the trend line label
+## Configure the Trend Line Label
 
 Show the trend line label to the right of the chart canvas by setting the value of `valueOnRight` attribute to `1`.
 
 Refer to the code below:
 
-```
-"trendlines": [{
-    "line": [{
+```json
+{
+    "chart":{
         ...
-        "valueOnRight": "1"
+    },
+    "trendlines": [{
+        "line": [{
+            "valueOnRight": "1"
+        }]
     }]
-}]
+}
 ```
 
 The chart will look like as shown below:
@@ -221,17 +292,20 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/0u6eLpzc/ "@@open-newtab") to edit the above chart.
 
-## Add trend lines for a dual y-axis chart
+## Add Trend Lines for a Dual Y-axis Chart
 
 Since a dual y-axis chart has 2 y-axes, you need to define both the trend line and the axis on which the line will be defined. Set the value of the `parentYAxis` attribute of the `line` object to `S`, to show the trend line on the secondary axis.
 
 Refer to the code below:
 
-```
-"trendlines": [{
-    "line": [{
+```json
+{
+    "chart":{
         ...
-        "parentYAxis": "S"
+    },
+    "trendlines": [{
+        "line": [{
+            "parentYAxis": "S"
+        }]
     }]
-}]
-```
+}

@@ -6,19 +6,23 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "caption": "Quarterly revenue for last year",
+            "caption": "Quarterly Revenue",
+            "subCaption": "Last year",
             "xAxisName": "Quarter",
-            "yAxisName": "Amount",
-            "yaxismaxvalue": "2720000",
+            "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            //Outside canvas base font configuration
-            "outCnvBaseFont": "Arial",
-            "outCnvBaseFontSize": "11",
-            "outCnvBaseFontColor": "#633563",
+            //Caption cosmetics 
+            "captionFont": "Arial",
+            "captionFontSize": "18",
+            "captionFontColor": "#993300",
+            "captionFontBold": "1",
+            "subcaptionFont": "Arial",
+            "subcaptionFontSize": "14",
+            "subcaptionFontColor": "#993300",
+            "subcaptionFontBold": "0",
             //Theme
             "theme": "fint"
         },
-
         "data": [{
             "label": "Q1",
             "value": "1950000"

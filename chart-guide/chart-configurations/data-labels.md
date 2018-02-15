@@ -9,9 +9,7 @@ Data labels are the names of the data points that are displayed on the x-axis of
 
 ![Data Labels]({% site.baseurl %}/images/chart-configurations-data-labels-image-1.png)
 
-In this article, we will learn how to customize the display of the data labels.
-
-## Data label display modes
+## Data Label Display Modes
 
 You can configure the arrangement and display properties for data labels using the `labelDisplay` attribute. There are 5 display modes available (`auto`, `wrap`, `stagger`, `rotate` and `none`). We will discuss about each mode respectively.
 
@@ -28,11 +26,9 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
         "labelDisplay": "Auto",
-        "useEllipsesWhenOverflow":"0",
+        "useEllipsesWhenOverflow":"0"
     }
-...
 }
 ```
 
@@ -49,10 +45,8 @@ In this mode, you can wrap long x-axis labels into multiple lines. If enough spa
 ```
 {
     "chart": {
-       ...
-        "labelDisplay": "wrap", 
-    },
-...
+        "labelDisplay": "wrap"
+    }
 }
  ```
 
@@ -71,10 +65,8 @@ Set the `labelDisplay` attribute as `rotate` to view the data labels in rotate m
 ```
 {
     "chart": {
-       ...
-       "labelDisplay": "rotate",
-    },
-...
+       "labelDisplay": "rotate"
+    }
 }
  ```
 
@@ -93,14 +85,11 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
         "labelDisplay": "rotate",
         "slantLabel": "1"
-    },
-    ...
+    }
 }
-
- ```
+```
 
 The chart will look like as shown below:
 
@@ -110,19 +99,18 @@ Click [here](http://jsfiddle.net/fusioncharts/mxceLe0k/ "@@open-newtab") to edit
 
 > In case of Scatter and Bubble charts, when the attribute** `xAxisLabelMode`** is set to `auto`, slanting of the X-axis labels is not applicable
 
-### Staggered mode with stagger lines
+### Staggered Mode with Stagger Lines
 
 In this mode, data labels are distributed on multiple levels (default is 2) to increase the inter label space available on each level. Set the `labelDisplay` attribute as 'stagger`. Refer to the code below:
 
 ```
 {
     "chart": {
-       ...
-        "labelDisplay": "stagger",
-    },
-...
+        "labelDisplay": "stagger"
+    }
 }
- ```
+```
+
 The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-labels-example-5.js %}
@@ -134,13 +122,11 @@ To change the distribution levels (default is 2) specify the level using the `st
  ```
 {
     "chart": {
-       ...
         "labelDisplay": "stagger",
         "staggerLines": "4"
-    },
-...
+    }
 }
- ```
+```
 
 The chart will look like as shown below:
 
@@ -152,15 +138,13 @@ Click [here](http://jsfiddle.net/fusioncharts/pdbq2gmr/ "@@open-newtab") to edit
 
 If your data plot consists of values representing continuous quantities such as date, time, temperature etc. you can use the `labelstep` attribute to display every n-th label, instead of all labels on the x-axis. Refer to the code below:
 
- ```
+```
 {
     "chart": {
-       ...
-        "labelStep": "3",
-    },
-...
+        "labelStep": "3"
+    }
 }
- ```
+```
 
 The chart will look like as shown below:
 
@@ -168,20 +152,17 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/Lsrdd84a/ "@@open-newtab") to edit the above chart.
 
-## Show/hide data all data labels
+## Show/Hide Data for all Labels
 
 To hide the data labels set the `showLabels` attribute to `0` within the `chart` object. Refer to the code below:
 
- ```
+```
 {
     "chart": {
-       ...
-        "showLabels": "0",               
-    },
-...
+        "showLabels": "0"               
+    }
 }
-
- ```
+```
 
 The chart will look like as shown below:
 
@@ -189,7 +170,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/fe1awqLn/ "@@open-newtab") to edit the above chart.
 
-## Hide specific data labels
+## Hide Specific Data Labels
 
 By default, all the data labels are displayed. You can opt to hide specific data values using the `showLabel` attribute within `data` under `chart` object. 
 
@@ -204,26 +185,24 @@ By default, all the data labels are displayed. You can opt to hide specific data
         "theme": "fint",
         "showLabels": "0"
     },
-    "data": [
-        {
-            "label": "Quarter 1",
-            "value": "1950000"
-        },
-        {
-            "label": "Quarter 2",
-            "value": "1450000",
-            **"showLabel": "0"**
-        },
-...
+    "data": [{
+        "label": "Quarter 1",
+        "value": "1950000"
+    }, {
+        "label": "Quarter 2",
+        "value": "1450000",
+        "showLabel": "0"
+    }]
 }
 ```
+
 In the above code, we have set the `showLabel` attribute for **Quarter 2** to `0`. So, the chart will not display the label for that value. The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-labels-example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/bv5f703k/ "@@open-newtab") to edit the above chart.
 
-## Label management: line and area charts
+## Label Management: Line and Area Charts
 
 With label management, you can adjust the canvas padding (the space between the canvas border and the position where the data plot begins and ends) to accommodate long labels in line and area charts. This ensures that the first and last x-axis labels are not rendered outside the canvas border and the labels don't overlap each other.
 
@@ -245,10 +224,9 @@ Specify the space between the canvas border and first (& last data plots) using 
         "xAxisName": "Quarter",
         "yAxisName": "Amount (In USD)",
         "numberPrefix": "$",
-        **"canvasPadding": "30",**
+        "canvasPadding": "30",
         "theme": "fint"
-    },
-...
+    }
 }
 ```
 
@@ -274,7 +252,7 @@ Advanced x-axis label management has been implemented to achieve the following o
 
 > Advanced label management is not applicable to Bar, Pie, Doughnut, Marimekko, Zoom Line and Multi-series Combination 3D charts.
 
-## Customize data label properties
+## Customize Data Label Properties
 
 You can customize the cosmetic properties of data labels such as font, border, background, and alpha. 
 
@@ -299,7 +277,6 @@ Refer to the code below:
 ```
 {
     "chart": {
-       ...
         "labelFont": "Arial",
         "labelFontColor": "0075c2",
         "labelFontSize": "15",
@@ -307,9 +284,7 @@ Refer to the code below:
         "lableFontItalic":"1",
         "labelFontAlpha":"70"
     }
-...
 }
-
 ```
 
 The chart will look like as shown below:
@@ -352,9 +327,7 @@ Refer to the code below:
         "labelBorderColor": "#00ffaa",
         "labelBorderAlpha": "60"
     }
-...
 }
-
 ```
 
 The chart will look like as shown below:
@@ -363,7 +336,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/qvjdz1Lw/ "@@open-newtab") to edit the above chart.
 
-### Background properties
+### Background Properties
 
 To change the background of the data lablels the following attributes are used:
 
@@ -380,9 +353,7 @@ Refer to the code below:
         "labelBgColor": "eeeeee",
         "labelBgAlpha":"30"
     }
-...
-} 
-
+}
 ```
 
 The chart will look like as shown below:
@@ -391,7 +362,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/usa7yuo1/ "@@open-newtab") to edit the above chart.
 
-## Configure height of the data label
+## Configure Height of the Data Label
 
 Shown below is a chart with some very long data labels, where the data plots are getting reduced to a fraction of the chart.
 
@@ -403,11 +374,9 @@ Refer to the code below:
 {
     {
     "chart": {
-             "maxLabelHeight": "50"
+        "maxLabelHeight": "50"
     }
-...
 }    
-
 ```
 
 The chart will look like as shown below:
@@ -416,20 +385,17 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/0zufrdbb/ "@@open-newtab") to edit the above chart.
 
-## Add links to data labels
+## Add Links to Data Labels
 
 You can add links to the data labels. Set the link you want to add to the data label using the `labelLink` attribute. Refer to the code below:
 
 ```
-
 {
     {
     "chart": {
         "labelLink": "http://www.fusioncharts.com/"
     }
-...
 }
-
 ```
 
 The chart with data label linked will look like as shown below:

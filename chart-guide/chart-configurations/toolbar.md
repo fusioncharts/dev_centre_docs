@@ -9,7 +9,6 @@ FusionCharts Suite XT introduces the toolbar, starting from version 3.11.0. The 
 
 The new toolbar has changed the way certain chart elements are implemented. The table below summarizes these changes:
 
-
 Chart Type|Component|Previous Implementation|Current Implementation|
 -|-|-|-
 Multi-axis line chart|Checkboxes to show/hide axes lines|HTML checkboxes|Pure SVG exportable checkboxes|
@@ -20,7 +19,7 @@ Real-time charts|Real-time menu|Menu placed at the bottom-left side of the chart
 
 The samples shown below showcase the difference between the current and the previous implementations.
 
-The drag-node chart below shows the **implementation of the toolbar**:
+The drag-node chart below shows the implementation of the toolbar:
 
 {% embed_chart chart-configurations-toolbar-example-1.js %}
 
@@ -32,7 +31,7 @@ To do so, specify the hex code of the checkbox color using the `checkBoxColor` a
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
        "checkBoxColor": "#3333cc"

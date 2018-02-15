@@ -1,28 +1,18 @@
 {
-
     type: 'column2d',
     renderAt: 'chart-container',
-    id: 'myChart',
-    width: '550',
+    width: '500',
     height: '300',
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "caption": "Monthly revenue for the last year",
-            "subCaption": "Harry's SuperMart",
+            "caption": "Monthly Revenue",
+            "subCaption": "Last year",
             "xAxisName": "Month",
-            "yAxisName": "Revenue",
+            "yAxisName": "Amount(In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
-            //Attributes to configure Trend Values
-            "trendValueBorderColor": "ff0000",
-            "trendValueBorderAlpha": "80",
-            "trendValueBorderPadding": "4",
-            "trendValueBorderRadius": "5",
-            "trendValueBorderThickness": "2",
-            "trendValueBorderDashed": "1",
-            "trendValueBorderDashLen": "3",
-            "trendValueBorderDashGap": "3"
+            //Theme
+            "theme": "fint"
         },
         "data": [{
             "label": "Jan",
@@ -60,14 +50,6 @@
         }, {
             "label": "Dec",
             "value": "730000"
-        }],
-        "trendlines": [{
-            "line": [{
-                "startvalue": "700000",
-                "color": "#1aaf5d",
-                "valueOnRight": "1",
-                "displayvalue": "Monthly Target"
-            }]
         }]
     }
 }

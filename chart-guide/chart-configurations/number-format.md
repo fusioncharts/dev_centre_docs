@@ -7,19 +7,18 @@ breadcrumb: [["Home", "/"], ["Number Format"]]
 
 FusionCharts Suite XT offers multiple options to format numbers on the chart. You can configure number prefixes and suffixes, decimal places, and scale numbers based on a predefined scale.
 
-## Round off decimal places
+## Round off Decimal Places
 
 To round off the decimals for all the numbers on the chart set the number of decimal places to which all the numbers on the chart will be rounded off to using the `decimals` attribute. Valid range is from `0` to `10`.
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "decimals": "2"
     }
 }
-
 ```
 
 The chart will look like as shown below:
@@ -34,14 +33,13 @@ You can also round off the decimal places for only the horizontal and vertical d
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "yAxisValueDecimals": "2",
         "xAxisValueDecimals": "3"
     }
 }
-
 ```
 
 The chart will look like as shown below:
@@ -50,7 +48,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/6w50wtfd/ "@@open-newtab") to edit the above chart.
 
-## Round off with trailing zeroes
+## Round off with Trailing Zeroes
 
 Use the following attributes to force trailing zeroes:
 
@@ -60,15 +58,14 @@ Use the following attributes to force trailing zeroes:
 
 * Set the `forceXAxisValueDecimals` to `1`, to add/retain same number of trailing zeros after decimal point to all X-axis values on the chart.
 
-Refer to the code snippets below:
+Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "forceDecimals": "1"
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -77,7 +74,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/2g4ne3xf/ "@@open-newtab") to edit the above chart.
 
-## Disable automatic formatting of numbers
+## Disable Automatic Formatting of Numbers
 
 FusionCharts XT automatically formats numbers displayed on charts. Use the following attributes to disable automatic number formatting:
 
@@ -95,13 +92,12 @@ FusionCharts XT automatically formats numbers displayed on charts. Use the follo
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "formatNumber": "0"
     }
 }
-
 ```
 The chart will look as shown below:
 
@@ -111,7 +107,7 @@ Click [here](http://jsfiddle.net/fusioncharts/L6bzmLd7/ "@@open-newtab") to edit
 
 A column 2D chart with automatic number formatting looks as the one given above. The data for the chart is `12523, 14570.230, 17375` and `18235.79`. FusionCharts Suite XT automatically formats the number scaling by converting it to `K` and `M`.
 
-## Customize thousand and decimal separator
+## Customize Thousand and Decimal Separator
 
 You can customize the thousand and decimal separator characters from the default `,` (comma) and `.` (dot) respectively. To do so, use the attributes given below:
 
@@ -125,14 +121,13 @@ You can customize the thousand and decimal separator characters from the default
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "decimalSeparator": ",",
         "thousandSeparator": "."
     }
 }
-
 ```
 
 The chart will look like as shown below:
@@ -141,19 +136,18 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/Lab3ckjd/ "@@open-newtab") to edit the above chart.
 
-## Configure thousand separator position
+## Configure Thousand Separator Position
 
 Specify the number of digits after which the thousand separator character should be placed, using the `thousandSeparatorPosition` attribute. If you set its value to `0`, the attribute will take its default value, which is `3`, and place the separator after every three digits starting from the right.
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "thousandSeparatorPosition": "2,3"
     }
 }
-
 ```
 The chart will look like as shown below:
 
@@ -161,7 +155,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/r8bL2r4p/ "@@open-newtab") to edit the above chart.
 
-## Add number prefix and suffix
+## Add Number Prefix and Suffix
 
 To customize the prefix and suffix of the numbers on the chart, use the following attributes:
 
@@ -179,14 +173,13 @@ To customize the prefix and suffix of the numbers on the chart, use the followin
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "numberSuffix": "/day",
         "numberPrefix": "$"
     }
 }
-
 ```
 The chart will look as shown below:
 
@@ -196,7 +189,7 @@ Click [here](http://jsfiddle.net/fusioncharts/hd8uvdfp/ "@@open-newtab") to edit
 
 > For dual y-axis charts, the primary axis performs number formatting and scaling by default. However, you have to explicitly define formatting and scaling for the secondary axis. To define the formatting and scaling properties for the secondary axis, prefix 's' to the attribute name. So, `numberPrefix` becomes `sNumberPrefix`, `forceYAxisValueDecimals` becomes `forceSYAxisValueDecimals`, and so on.
 
-## Shorten data values
+## Shorten Data Values
 
 Shorten numbers displayed on charts by scaling them, with commonly used scales like K, M, etc..You can also define your own scales for numbers and then apply it to all numbers on the chart.
 
@@ -206,13 +199,12 @@ To enable automatic scaling, use the `formatNumberScale` attribute, which decide
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "formatNumberScale": "1"
     }
 }
-
 ```
 
 If you plot the data values as 1252322, 857023, 903753 and 1082357, then the rendered chart will look as shown below:
@@ -225,7 +217,7 @@ Notice that the numbers have been scaled down to K. By default, FusionCharts Sui
 
 In the following subsections, you can see how to define the scaling to suit your requirements:
 
-## Add billions to default scaling
+## Add Billions to Default Scaling
 
 FusionCharts Suite XT does not have the scaling for billions defined. You have to explicitly modify the number scaling to add billions.
 
@@ -245,14 +237,13 @@ Use the following attributes to add a billion scale to a chart:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "numberScaleValue": "1000,1000,1000",
         "numberScaleUnit": "K,M,B"
     }
 }
-
 ```
 The chart will look as shown below:
 
@@ -260,20 +251,19 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/xpmu165b/ "@@open-newtab") to edit the above chart.
 
-### Example 1: Display time in the scale
+### Example 1: Display Time in the Scale
 
 To display time in a chart in terms of progressively higher units (seconds, minutes, hours, days, etc.), build a scale indicating time and then specify it to the chart. 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "numberScaleValue": "60",
         "numberScaleUnit": " minutes"
     }
 }
-
 ```
 The chart will look as shown below:
 
@@ -281,20 +271,19 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/obryn50m/ "@@open-newtab") to edit the above chart.
 
-### Example 2: Display storage capacity in the scale
+### Example 2: Display Storage Capacity in the Scale
 
 To display storage capacity in terms of progressively higher units, (megabytes (MB), gigabytes (GB), terabytes (TB), etc.), build a scale indicating capacity of storage space and then specify it to the chart.
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "numberScaleValue": "1024,1024,1024",
         "numberScaleUnit": " MB, GB, TB"   
     }
 }
-
 ``` 
 The chart will look as shown below:
 
@@ -302,7 +291,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/oupfaws8/ "@@open-newtab") to edit the above chart.
 
-## Use recursive number scaling
+## Use Recursive Number Scaling
 
 Recursive number scaling comes into the picture when you have number scales defined for your chart. With this, you can display the chart data better by breaking up the predefined number scale into smaller sections. For example, in a chart where time is being plotted, you can display 3.87 days as 3 days, 20 hours, 52 minutes and 25 seconds.
 
@@ -314,14 +303,13 @@ Use the following attributes for recursive scaling:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "scaleRecursively": "1",
         "maxScaleRecursion": "-1"
     }
 }
-
 ``` 
 The chart will look as shown below:
 

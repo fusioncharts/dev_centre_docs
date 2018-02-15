@@ -13,18 +13,16 @@ The image below shows vertical div lines rendered in a line chart:
 
 ![Vertical divisional lines]({% site.baseurl %}/images/chart-configurations-vertical-div-lines-image-1.png)
 
-## Show vertical divisional lines
+## Show Vertical Divisional Lines
 
 By default, vertical divisional lines are not rendered in a chart. To render vertical divisional lines, specify the number of divisional lines you want to display using the `numVDivLines` attribute. 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
-        "numVDivLines": "5",
-        ...
+        "numVDivLines": "5"
     }
 }
 ```
@@ -35,7 +33,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/43ayL5uf/ "@@open-newtab") to edit the above chart.
 
-## Customize the visuals of vertical divisional lines 
+## Customize the Visuals of Vertical Divisional Lines 
 
 To customize the visals of the divisional lines use the following attributes:
 
@@ -47,7 +45,7 @@ To customize the visals of the divisional lines use the following attributes:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         ...
@@ -66,7 +64,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/vq1jvvze/ "@@open-newtab") to edit the above chart.
 
-### Dashed divisional lines
+### Dashed Divisional Lines
 
 You can also render div lines as dashed lines instead of the default continuous lines. To do so, use the following attributes:
 
@@ -78,10 +76,9 @@ You can also render div lines as dashed lines instead of the default continuous 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "numVDivLines": "5",
         "vDivLineColor": "#99ccff",
         "vDivLineThickness": "1",
@@ -89,7 +86,6 @@ Refer to the code below:
         "vDivLineDashed": "1",
         "vDivLineDashLen": "5",
         "vDivLineDashGap": "3"
-        ...
    }
 }
 ```
@@ -100,7 +96,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/4d4z0htq/ "@@open-newtab") to edit the above chart.
 
-## Show vertical grid bands
+## Show Vertical Grid Bands
 
 Vertical grid bands, by default, do not appear between the vertical divisional lines. 
 
@@ -108,12 +104,10 @@ To show the vertical grid bands, set the `showAlternateVGridColor` attribute to 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
-        "showAlternateVGridColor": "1"  
-        ...
+        "showAlternateVGridColor": "1" 
     }
 }
 ```
@@ -123,7 +117,7 @@ A line chart with alternate vertical grid bands enabled is shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/30wLwwmj/ "@@open-newtab") to edit the above chart.
 
-### Customize the visuals vertical grid bands
+### Customize the Visuals Vertical Grid Bands
 
 To customize the visual properties of the vertical grid bands use the following attributes:
 
@@ -133,13 +127,11 @@ To customize the visual properties of the vertical grid bands use the following 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "alternateVGridColor": "#bee6ff",
         "alternateVGridAlpha": "30"
-        ...       
     }
 }    
 ```
