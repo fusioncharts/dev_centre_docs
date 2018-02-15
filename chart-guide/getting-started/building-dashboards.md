@@ -4,7 +4,7 @@ description: The consolidated view of having multiple related charts in a page i
 heading: Building a Dashboard
 breadcrumb: [["Home", "/"], ["Building a Dashboard"]]
 ---
-Harry now needs a consolidated view of all the charts, gauges and maps that his team has created. This consolidated view of having multiple related charts in a page is called a dashboard. In this section, we will help his team build a complete dashboard.
+Harry now needs a unified view of all the charts, gauges, and maps that his team has created. This consolidated view of having multiple related charts in a page is called a dashboard. In this section, we will help his team build a complete dashboard.
 
 ## Building blocks for an effective dashboard
 
@@ -12,9 +12,9 @@ Creating a dashboard involves the following steps:
 
 * Know what metrics you want in the dashboard and draw a rough prototype of where they should be placed. A good practice is to keep **Key Performance Indicators** above the fold and related metrics close to one another.
 
-* Know what chart will represent the data best. (For e.g.: Column charts are useful for facilitating comparisons while Line charts are suitable for trend analysis over a period of time).
+* Know what chart will represent the data best. (E.g., Column charts are useful for facilitating comparisons while Line charts are suitable for trend analysis over a period of time).
 
-* Have data for all such charts ready to be incorporated in the dashboard.
+* Have data for all such charts ready to be incorporated into the dashboard.
 
 * Create separate container element (`<div>`) for each chart in the dashboard page.
 
@@ -26,9 +26,9 @@ From a technical perspective, you need to ensure that:
 
 * Each chart on the page should have a unique id.
 
-* Each chart should have a unique JavaScript variable name. This variable name is used to refer to the chart across the page, when you want to listen to chart events, or invoke a method on the chart.
+* Each chart should have a unique JavaScript variable name. This variable name is used to refer to the chart across the page when you want to listen to chart events or invoke a method on the chart.
 
-* Each chart should be rendered in separate HTML container, each container having unique id.
+* Each chart should be rendered in separate HTML container, each container having the unique id.
 
 * Data for each chart is present as a separate JSON/XML file or string.
 
@@ -641,7 +641,7 @@ The HTML code to build this dashboard is given here:
 ```
 You can see the dashboard, and edit it live on this [link](https://jsfiddle.net/fusioncharts/TumnU/).
 
-This is the most basic form of a dashboard. There are many enhancements that can be made to this dashboard, including:
+This is the most basic form of a dashboard. Many enhancements can be made to this dashboard, including:
 
 * Adding relevant KPIs for each metric that Harry wants to monitor. These KPIs could be purely in text, or use gauges to represent one key value per gauge.
 

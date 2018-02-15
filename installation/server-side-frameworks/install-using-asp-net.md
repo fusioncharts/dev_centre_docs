@@ -19,11 +19,11 @@ FusionCharts ASP.NET (C# & VB.NET) Wrapper can be downloaded from [here](https:/
 
 To work with FusionCharts ASP.NET wrapper, follow the steps given below:
 
-* Once you are done with the downloading of the wrapper, unzip the archive and move to `asp-net-wrapper/Src/` to get the main class file `FusionCharts.cs`.
+* After downloading of the wrapper, unzip the archive and move to `asp-net-wrapper/Src/` to get the main class file `FusionCharts.cs`.
 
-* To add the file inside your project right click the project name from **Solution Explorer** and select **Add->Existing item**. Don't forget to select the file type as code files from the file explorer window that appears. Select the `FusionCharts.cs` file from the explorer and click **add**.
+* To add the file inside your project right-click the project name from **Solution Explorer** and select **Add->Existing item**. Don't forget to select the file type as code files from the file explorer window that appears. Select the `FusionCharts.cs` file from the explorer and click **add**.
 
-> FusionCharts JS libraries should already be installed within your project in order to work with this wrapper.
+> FusionCharts JS libraries should already be installed within your project to work with this wrapper.
 
 ### Install FusionCharts JS libraries
 

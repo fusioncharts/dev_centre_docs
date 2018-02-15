@@ -9,7 +9,7 @@ FusionCharts Suite XT includes the Ruby on Rails wrapper that lets you create in
 
 ## Download
 
-FusionCharts Ruby on Rails Wrapper can be downloaded from [here](https://www.fusioncharts.com/ruby-on-rails-charts/).
+Download FusionCharts Ruby on Rails Wrapper from [here](https://www.fusioncharts.com/ruby-on-rails-charts/).
 
 ## Install
 
