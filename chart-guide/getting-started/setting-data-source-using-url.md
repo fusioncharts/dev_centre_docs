@@ -173,7 +173,7 @@ In case something went wrong and you are unable to see the chart, check for the 
 
 * If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. Check if the path to `fusioncharts.js` file is correct, and whether the file exists in that location.
+* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. Check if the path to `fusioncharts.js` file is correct and whether the file exists in that location.
 
 * If you get a **Loading Data** or **Error in loading data** message, check whether your JSON/XML data structure is correct, and there are no conflicts related to quotation marks in your code.
 

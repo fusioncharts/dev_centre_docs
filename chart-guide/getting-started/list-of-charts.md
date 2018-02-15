@@ -5,7 +5,7 @@ heading: List of Charts
 breadcrumb: [["Home", "/"], ["List of Charts"]]
 ---
 
-Given below is the list of charts in FusionCharts XT, FusionWidgets XT and PowerCharts XT along with their JavaScript chart alias. You can use this alias to create an instance of a particular chart type, in your JavaScript code.
+Given below is the list of charts in FusionCharts XT, FusionWidgets XT, and PowerCharts XT along with their JavaScript chart alias. You can use this alias to create an instance of a particular chart type, in your JavaScript code.
 
 ## FusionCharts XT
 

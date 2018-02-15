@@ -7,7 +7,7 @@ chartPresent: true
 breadcrumb: [["Home", "/"], ["Your First Map"]]
 ---
 
-Harry's SuperMart has stores in multiple US states. Harry wants to keep a tab on the sales numbers across all these states. While he can easily put those in a column chart and compare, the context of location would be lost, and the chart will become illegible if he had to plot all the states. Additionally, Harry has thresholds that let him segregate states on the basis of low, moderate and high in terms of sales figures.
+Harry's SuperMart has stores in multiple US states. Harry wants to keep a tab on the sales numbers across all these states. While he can easily put those in a column chart and compare, the context of location would be lost, and the chart will become illegible if he had to plot all the states. Additionally, Harry has thresholds that let him segregate states by low, moderate and high in terms of sales figures.
 
 To solve this, we will use a US Map to represent his sales, which colors each state based on the sales. Additionally, it provides an interactive slider for Harry to narrow down to specific states, based on a selected range of sales values.
 
@@ -42,7 +42,7 @@ Here is the JSON/XML representation of the data you will use to build this map
 
 ## Include FusionCharts Suite XT library
 
-To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called `fint` (FusionCharts internal) and it is present in `themes` folder of your download.
+To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called `fint` (FusionCharts internal) and, it is present in `themes` folder of your download.
 
 ```
 <html>
@@ -326,13 +326,13 @@ In the above code:
 
 * We created an instance of the `FusionCharts()` object in the `salesByState` variable. Each map in your HTML page needs to have a separate variable. The initialization code is wrapped within `FusionCharts.ready()` method. This safeguards your map instantiation code from being called before FusionCharts Suite XT library is loaded and is ready to be used on the page.
 
-* We instantiated the USA map for this example. Each map in FusionCharts Suite XT has an unique alias. [You can find the list of all maps and their aliases here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html). The default package ships only with a US and World map. But, you can download all the other 965 maps [here](https://www.fusioncharts.com/download/maps/definition).
+* We instantiated the USA map for this example. Each map in FusionCharts Suite XT has a unique alias. [You can find the list of all maps and their aliases here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html). The default package ships only with a US and World map. But, you can download all the other 965 maps [here](https://www.fusioncharts.com/download/maps/definition).
 
 * Next, we specified the `width` and `height` of the map (in pixels) using the width and height property of the constructor.
 
 * To specify the data format as JSON, we set the `dataFormat` parameter to json.
 
-* The actual JSON data is embedded as string value of `dataSource` parameter. 
+* The actual JSON data is embedded as the string value of `dataSource` parameter. 
 
 * The `map` object contains a list of key-value pairs that lets you configure the functional and cosmetic attributes of your map. 
 
@@ -340,9 +340,9 @@ In the above code:
 
 * Call the `render` method to render the map on the `chartContainer <div>` element.
 
-That's it! you have configured your first Map.
+That's it! You have configured your first Map.
 
-The full HTML code for the example looks as under:
+The full HTML code is shwon below:
 
 ```
 <html>
@@ -606,11 +606,11 @@ The full HTML code for the example looks as under:
 </html>
 
 ```
-Now view the page in a browser, you should see an interactive 2D Map, showing state-wise sales for Harry's SuperMart. This map works seamlessly across mobile devices like iPhones, iPads, Android devices etc.
+Now view the page in a browser, you should see an interactive 2D Map, showing state-wise sales for Harry's SuperMart. This map works seamlessly across mobile devices like iPhones, iPads, Android devices, etc.
 
 ## Problem rendering the map?
 
-In case something went wrong and you are unable to see the map, check for the following:
+In case something went wrong, and you are unable to see the map, check for the following:
 
 * If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
 

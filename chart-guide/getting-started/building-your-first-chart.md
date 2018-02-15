@@ -32,7 +32,7 @@ Now, let's build the chart.
 
 ## Convert tabular data into JSON/XML format
 
-FusionCharts Suite XT JavaScript library only accepts data in JSON or XML format. You can provide data as JSON/XML strings, or use data stored in physical files on your servers. In case your data is stored in database or other data sources, you can write server-side scripts to read that data, iterate through it, and use strings to generate the XML or JSON data.
+FusionCharts Suite XT JavaScript library only accepts data in JSON or XML format. You can provide data as JSON/XML strings, or use data stored in physical files on your servers. In case your data is stored in the database or other data sources, you can write server-side scripts to read that data, iterate through it, and use strings to generate the XML or JSON data.
 
 For example, when you convert the data in the table above to JSON/XML format, it will look as under:
 
@@ -40,7 +40,7 @@ For example, when you convert the data in the table above to JSON/XML format, it
 
 ## Include FusionCharts Suite XT library
 
-To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called `fint` (FusionCharts internal) and it is present in the `themes` folder of your download. Refer to the code below:
+To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called `fint` (FusionCharts internal), and it is present in the `themes` folder of your download. Refer to the code below:
 
 ```
 <html>
@@ -150,19 +150,19 @@ In the above code:
 
 * Next, we have created an instance of the `column2d` chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 500x300 pixels, and providing JSON data as a string.
 
-* To specify the data format as JSON, we have set the `dataFormat` parameter to `json`. To provide data in XML format, the value of this attribute will  be `xml` which we will discuss in [Using XML as Data Format](https://www.fusioncharts.com/dev/getting-started/using-xml-as-data-format.html) page.
+* To specify the data format as JSON, we have set the `dataFormat` parameter to `json`. To provide data in XML format, the value of this attribute will be `xml` which we will discuss in [Using XML as Data Format](https://www.fusioncharts.com/dev/getting-started/using-xml-as-data-format.html) page.
 
-* The actual JSON data is embedded as string value of the `dataSource` parameter. 
+* The actual JSON data is embedded as the string value of the `dataSource` parameter. 
 
-* The `chart` object contains a list of key-value pairs that you can use to configure the functional and cosmetic attributes of your chart. For example, you can set the chart caption using `"caption": "Harry's SuperMart"`. Each row of the tabular data is present within the `data` array, with name of month with key as `label`, and revenue with key as `value`.
+* The `chart` object contains a list of key-value pairs that you can use to configure the functional and cosmetic attributes of your chart. For example, you can set the chart caption using `"caption": "Harry's SuperMart"`. Each row of the tabular data is present within the `data` array, with the name of the month with key as `label`, and revenue with key as `value`.
 
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fint` (FusionCharts Suite XT Internal theme) as the value for it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application. FusionCharts Suite XT is shipped with three default themes - `ocean`, `zune`, and `carbon`. You can also create your own themes, as detailed in a later section.
+* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fint` (FusionCharts Suite XT Internal theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application. FusionCharts Suite XT is shipped with three default themes - `ocean`, `zune`, and `carbon`. You can also create your themes, as detailed in a later section.
 
 * Call the `render` method to draw the chart in the `chartContainer` defined using the `<div>` element.
 
 That's it! You have just created your first interactive JavaScript chart using FusionCharts Suite XT.
 
-The full HTML code for the example looks as under:
+The full HTML code is shown below:
 
 ```
 <html>
@@ -254,18 +254,18 @@ The full HTML code for the example looks as under:
 
 Now view the page in a browser, an interactive Column 2D chart is rendered, showing monthly revenues for Harry's SuperMart similar to the live chart at the top of this page. Try rolling over the columns to see the tooltips, or refresh the page to see the chart animating again.
 
-The best part about this chart is that it provides the same experience across mobile devices like iPhones, iPads, Android devices, and older browsers like IE6, including all the interactivity. FusionCharts Suite XT does all the hard work for you, so that you can focus on building your application!
+The best part about this chart is that it provides the same experience across mobile devices like iPhones, iPads, Android devices, and older browsers like IE6, including all the interactivity. FusionCharts Suite XT does all the hard work for you so that you can focus on building your application!
 
 ## Problem rendering the chart?
 
-In case something went wrong and you are unable to see the chart, check for the following:
+In case something went wrong, and you are unable to see the chart, check for the following:
 
 * If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. Check if the path to `fusioncharts.js` file is correct, and whether the file exists in that location.
+* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. Check if the path to `fusioncharts.js` file is correct and whether the file exists in that location.
 
 * If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
 
 Click here for more information on [Troubleshooting](https://www.fusioncharts.com/dev/troubleshooting/debugger.html).
 
-Now that Harry can monitor his monthly revenues using this interactive chart, let's build a gauge to show him the customer satisfaction score in the next section.
+Now that Harry can monitor his monthly revenues using this interactive charts let's build a gauge to show him the customer satisfaction score in the next section.
