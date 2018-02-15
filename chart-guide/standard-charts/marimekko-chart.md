@@ -21,7 +21,7 @@ Let's create a simple Marimekko chart that shows the top 3 Electronic Brands (Bo
 
 The Marimekko chart shown below, when seen in the default mode, helps in instantly figure out the following:
 
-* The top three manufactures within each state (Bose, Dell, and Apple) and the individual sales of each manufacturer within a state, indicated by the partitions in the stacked column.
+* The top three manufacturers within each state (Bose, Dell, and Apple) and the individual sales of each manufacturer within a state, indicated by the partitions in the stacked column.
 
 * The total sales by manufacturers across all three states for the given duration (a month, in this case), shown on top of the stacked column for each manufacturer. For example, the total sales for Bose, $848K, is shown above the first column.
 
@@ -39,7 +39,7 @@ To create a marimekko chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes you can check the API reference page of pie chart.
+For a detailed list of attributes, you can check the API reference page of the Marimekko chart.
 
 The marimekko chart for the above code looks like :
 
@@ -49,7 +49,7 @@ Click [here](http://jsfiddle.net/fusioncharts/bdmTg/ "@@open-newtab") to edit th
 
 As you can see in the chart data, the actual sales data has been provided. The Marimekko chart automatically converts these values into percentage values based on the size of a market segment and the percentage share held by competitors in each segment.
 
-The percentage share of each manufacturer within a segment is shown in the tooltip text for that partition. For example, the percentage share for Bose in Washington is approximately 25%; it can be seen in the tooltip text shown when the mouse pointer is hovered over the partition for Washington in the first column.
+The percentage share of each manufacturer within a segment is shown in the tooltip text for that partition. For example, the percentage share for Bose in Washington is approximately 25%; it can be seen in the tooltip text shown when the mouse pointer hovers over the partition for Washington in the first column.
 
 The height of columns can be used to compare the TAM (Total Available Market) per market segment.
 
@@ -85,7 +85,7 @@ Click [here](http://jsfiddle.net/fusioncharts/btfhoayu/ "@@open-newtab") to edit
 
 By default, the total value of a market segment for a competitor is rendered at the top of each column.
 
-Users can choose to hide this value by specify the `showSum` attribute. This attribute allows to show  the sum of all data plots stacked above each other. The sum is shown above the stacked columns. The default value for this attribute is `1` which shows the sum. To hide the sum, set this attribute to `0`.
+Set the `showSum` attribute to `0` to hide the sum of all data plots stacked above each other. The sum is shown above the stacked columns. The default value for this attribute is `1`.
 
 Refer to the code given below:
 

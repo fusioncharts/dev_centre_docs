@@ -11,11 +11,11 @@ This chart can be used to show various types of data like:
 
 * Organization structure
 
-* Multi-tiered data presentation, e.g. keyword analysis
+* Multi-tiered data presentation, e.g., keyword analysis
 
-* Inter-linked tree data, e.g. friends of friends
+* Inter-linked tree data, e.g., friends of friends
 
-* Sales breakup, e.g. for top product categories
+* Sales breakup, e.g., for top product categories
 
 As an example, we will create a multi-level pie chart that shows the sales breakup of top product categories for the last quarter at Harry's SuperMart.
 
@@ -31,7 +31,7 @@ To create a multi-level pie chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes you can check the API reference page of multi-level pie chart.
+For a detailed list of attributes, you can check the API reference page of multi-level pie chart.
 
 The multi-level pie chart thus rendered looks like this:
 

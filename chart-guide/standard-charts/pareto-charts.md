@@ -31,7 +31,7 @@ To create a pareto chart in 2D follow the steps given below: set the `type` attr
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes you can check the API reference page of pareto 2D chart .
+For a detailed list of attributes, you can check the API reference page of pareto 2D chart .
 
 The pareto chart in 2D for the above code looks like:
 

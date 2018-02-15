@@ -27,7 +27,7 @@ To create a single-series column 2D chart, follow the steps given below:
 
 * Specify the value for a data item using the `value` attribute within the `data` object. 
 
-For a detailed list of attributes refer to the API reference page of column chart.
+For a detailed list of attributes, refer to the API reference page of the column chart.
 
 A single-series column 2D chart looks like:
 
@@ -47,7 +47,7 @@ Click [here](http://jsfiddle.net/fusioncharts/xL3py/ "@@open-newtab") to edit th
 
 ## Bar 2D Chart
 
-Now, let's create a bar 2D chart. In the chart below, we have shown five stores in a supermarket that have highest sales. The sales figures have been plotted along the x-axis, and the store names have been plotted along the y-axis.
+Now, let's create a bar 2D chart. In the chart below, we have shown five stores in a supermarket that have highest sales. The sales figures are plotted along the x-axis, and the store names are plotted along the y-axis.
 
 To render a bar 2D chart, set the `type` to `bar2d`. A single-series bar 2D chart looks like:
 
@@ -186,7 +186,9 @@ An example of a chart, where you can dynamically change the chart type, looks li
 
 Visualization plays a crucial role in data science, helping data scientists to make sense of the underlying patterns within data, even before any other computation begins. With v3.12.0, FusionCharts has evolved to consume a large amount of data in standard charts.
 
-What if you want to render 10000 data points in a single series chart with a dimension of 500x400 pixels for line, area, and column charts. So if we take the width of the canvas as 500 pixels, an average of 20 data plots will be drawn every width of pixel which is not very informative with respect to visualization. **Data skipping** is a concept which has been introduced to draw only those plots in the canvas which actually creates a data trend without hampering the performance of the chart.
+What if you want to render 10000 data points in a single series chart with a dimension of 500x400 pixels for the line, area, and column charts. So if we take the width of the canvas as 500 pixels, an average of 20 data plots will be drawn every width of a pixel which is not very informative with respect to visualization. 
+
+**Data skipping** is a concept which has been introduced to draw only those plots in the canvas which actually creates a data trend without hampering the performance of the chart.
 
 Given below is the list of attributes with the help of which you can customize your data skipping:
 

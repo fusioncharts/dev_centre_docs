@@ -37,7 +37,7 @@ To create a scroll column 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes you can check the API reference page of scroll column chart.
+For a detailed list of attributes, you can check the API reference page of scroll column chart.
 
 The scroll column 2D chart for the above code looks like:
 

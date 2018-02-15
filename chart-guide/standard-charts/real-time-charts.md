@@ -11,11 +11,11 @@ Real-time charts, also known as data streaming charts, are charts that automatic
 
 FusionCharts Suite XT currently offers the following six real-time charts:
 
-* Real Time Line
+* Real-time Line
 
 * Real-time Area
 
-* Real Time Column
+* Real-time Column
 
 * Real-time Stacked Area
 
@@ -31,9 +31,9 @@ Real-time charts support the following features:
 
 * Multiple datasets with real time update for each of them
 
-* Multiple data updated in each update i.e., a single pull to the server can come back with any number of data values updated.
+* Multiple data updated in each update, i.e., a single pull to the server can come back with any number of data values updated.
 
-* Multiple updates and refresh intervals for the chart. Update interval fetches for the new data but it will not change the view of chart. Refresh interval applies the updated data on chart view.
+* Multiple updates and refresh intervals on the chart. Update interval fetches the new data, but it will not change the view of the chart. Refresh interval applies the updated data in chart view.
 
 * Message logger
 
@@ -61,19 +61,19 @@ Real-time charts support the following features:
 
 The format of real-time data for real-time charts depends on:
 
-* The number of datasets you want to update for the chart.
+* The number of datasets you want to update the chart with.
 
 * The number of incremental updates you want to pass to the chart in one attempt.
 
-* The attributes you want to update for the chart.
+* The attributes you want to update the chart with.
 
-* The attributes you want to update for each dataset - like label, color, link, toolText, etc.
+* The attributes you want to update for each dataset - like the label, color, link, toolText, etc.
 
 * Whether you are passing empty data to the chart
 
 * the commands for the chart.
 
-## Real Time Line chart
+## Real-Time Line chart
 
 Let's create our first real-time line chart showcasing the stock price monitoring at Harry's SuperMart.
 
@@ -89,7 +89,7 @@ To create a real-time chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes you can check the API reference page of real-time line chart.
+For a detailed list of attributes, you can check the API reference page of real-time line chart.
 
 A real-time line chart looks like:
 
@@ -101,7 +101,7 @@ Click [here](http://jsfiddle.net/fusioncharts/43fJn/ "@@open-newtab") to edit th
 
 To create a real-time area chart, set the `type` attribute to `realtimeareachart`. The rest of the data structure remains the same.
 
-For a detailed list of attributes you can check the API reference page of real-time area chart.
+For a detailed list of attributes, you can check the API reference page of the real-time area chart.
 
 A real-time area chart looks like:
 
@@ -111,11 +111,11 @@ Click [here](http://jsfiddle.net/fusioncharts/kdfX7/ "@@open-newtab") to edit th
 
 ## Real Time Stacked Area chart
 
-Now, let's create a real-time stacked area chart showcasing number of live visitors in every 5 seconds interval.
+Now, let's create a real-time stacked area chart showcasing the number of live visitors in every 5 seconds interval.
 
 To create a real-time chart, set the `type` attribute to `realtimestackedarea`. 
 
-For a detailed list of attributes you can check the API reference page of real-time area chart.
+For a detailed list of attributes, you can check the API reference page of real-time area chart.
 
 A real-time stacked area chart looks like:
 
@@ -129,7 +129,7 @@ In the above samples, we rendered real-time line and area charts. Let's now crea
 
 To create a real-time column chart, set the `type` attribute to `realtimecolumn`.
 
-For a detailed list of attributes you can check the API reference page of real-time area chart.
+For a detailed list of attributes, you can check the API reference page of real-time area chart.
 
 A real-time column chart looks like:
 
@@ -139,11 +139,11 @@ Click [here](http://jsfiddle.net/fusioncharts/NvJat/ "@@open-newtab") to edit th
 
 ## Real Time Stacked Column chart
 
-FusionCharts also supports real-time stacked column chart. Here the sample below will showcase the  number of live visitors on site, updated every 5 seconds.
+FusionCharts also supports real-time stacked column chart. Here the sample below will showcase the number of live visitors on site, updated every 5 seconds.
 
 To create a real-time stacked column chart, set the `type` attribute to `realtimestackedcolumn`.
 
-For a detailed list of attributes you can check the API reference page of real-time area chart.
+For a detailed list of attributes, you can check the API reference page of real-time area chart.
 
 A real-time stacked column chart looks like:
 
@@ -155,7 +155,7 @@ Click [here](http://jsfiddle.net/fusioncharts/bLUw5/ "@@open-newtab") to edit th
 
 To create a real-time dual y line chart, set the `type` attribute to `realtimelinedy`. 
 
-For a detailed list of attributes you can check the API reference page of real-time area chart.
+For a detailed list of attributes, you can check the API reference page of real-time area chart.
 
 A real-time dual y-axis line chart looks like:
 
@@ -197,7 +197,7 @@ Here, the values 23, 25, and 24 correspond to the first dataset, 43, 47, and 45 
 
 Assume that you plot a real-time line chart to monitor stock prices for Harry's SuperMart. On this monitoring chart, the stock price is checked at every seventh instance of data update. You want to add a vertical trend-line that helps you keep track of every instance when the price is checked.
 
-To do this, you can provide data to the chart in the following format
+To do this, you can provide data to the chart in the following format:
 
 ```
 &label=11:45&value=753|345&vline=0&vLineLabel=vLine&vLineColor=#666666&vLineThickness=2&vLineDashed=1
@@ -216,7 +216,7 @@ Click [here](http://jsfiddle.net/fusioncharts/k703vvrm/ "@@open-newtab") to edit
 
 #### Update the label as a part of Real-Time data
 
-Consider that you are plotting a real-time multi-series line chart that indicates the load on three servers. The time is plotted on the x-axis and the corresponding load for all three servers is plotted on the y-axis. With each incremental data, you will now also have to provide the label for the x-axis along with the data value for the y-axis.
+Consider that you are plotting a real-time multi-series line chart that indicates the load on three servers. The time is plotted on the x-axis, and the corresponding load for all three servers is plotted on the y-axis. With each incremental data, you will now also have to provide the label for the x-axis along with the data value for the y-axis.
 
 To do this, you can provide data to the chart in the following format:
 
@@ -224,11 +224,11 @@ To do this, you can provide data to the chart in the following format:
 &label=11:45&value=23|43|45
 
 ```
-When the chart receives this data, it shifts all existing data and labels one position to the left. Next it plots the new label on the x-axis and the three new data values on the y-axis.
+When the chart receives this data, it shifts all existing data and labels one position to the left. Next, it plots the new label on the x-axis and the three new data values on the y-axis.
 
 #### Hide the Label
 
-For charts plotting a large number of data points, you may not want to render all labels on the chart to avoid cluttering. Instead you may want to show alternate labels, while updating your data every minute.
+For charts plotting a large number of data points, you may not want to render all labels on the chart to avoid cluttering. Instead, you may want to show alternate labels, while updating your data every minute.
 
 For the data label that you want to hide, you can provide your incremental data to the chart in the following format:
 
@@ -268,7 +268,7 @@ To update the color, you can provide the corresponding incremental data to the c
 &label=11:45&value=23|43|45&color=FF0000|0372AB|FF5904
 
 ```
-The colors for each dataset are separated by the `|` (pipe character). The colors specified for real-time updates will always be filled as solid colors and not gradients.
+The colors for each dataset are separated by the `|` (pipe character). The colors specified for real-time updates will always be filled with solid colors and not gradients.
 
 ## Provide Empty Data
 
@@ -349,11 +349,11 @@ An example of how data values will be sent as output to the chart is given below
 
 ```
 
-In the data shown above, we have defined a common label that takes two values - one for each dataset. The values are separated using the `|` (pipe character). In the example above, 22 is the value for the Retail Store dataset and 7 is the value for the Online dataset. The order of values here should correspond with the order of dataset object arrays defined in the JSON/XML data.
+In the data shown above, we have defined a common label that takes two values - one for each dataset. The values are separated using the `|` (pipe character). In the example above, 22 is the value for the Retail Store dataset, and 7 is the value of the Online dataset. The order of values here should correspond with the order of dataset object arrays defined in the JSON/XML data.
 
 ### Interactive Legend
 
-Like most other charts in the FusionCharts Suite XT, real-time charts with multiple datasets are also rendered with an interactive legend. An interactive legend is useful when, out of multiple datasets, you want to focus on only one. To hide a dataset, you click the corresponding data series name in the legend and the dataset will not be displayed. When the series name is clicked again, the dataset can be viewed on the chart.
+Like most other charts in the FusionCharts Suite XT, real-time charts with multiple datasets are also rendered with an interactive legend. An interactive legend is useful when, out of multiple datasets, you want to focus on only one. To hide a dataset, you click the corresponding data series name in the legend, and the dataset will not be displayed. When the series name is clicked again, the dataset can be viewed on the chart.
 
 The image below is a screenshot of the above real-time chart with the Online transactions dataset hidden:
 
@@ -430,7 +430,7 @@ In this section, you will be shown how you can specify historical data on a char
 
 ## Specify Historical Data
 
-Here let's create a chart which tracks the online purchases from Bakersfield Central at Harry's SuperMart. When the chart first renders, it shows the purchases record from 8 minutes before the chart was rendered to a minute before. Thereafter, the chart updates itself every 5 seconds.
+Here let's create a chart which tracks the online purchases from Bakersfield Central at Harry's SuperMart. When the chart first renders, it shows the purchases record from 8 minutes before the chart was rendered to a minute before. After that, the chart updates itself every 5 seconds.
 
 In the data structure above, you will see:
 
@@ -450,7 +450,7 @@ Look at the real-time column chart shown below:
 
 {% embed_chart standard-charts-real-time-charts-example-11.js %}
 
-Now, let's create a real-time column chart configuring to display 15 data plots at a time. To specify the number of data plots in one screen at a given time, set the value of `numDisplaySets` attribute to `15`. As soon as the 16th data comes in, the first data towards the left will be deleted and the rest of the data will be shifted one position to the left.
+Now, let's create a real-time column chart configuring to display 15 data plots at a time. To specify the number of data plots in one screen at a given time, set the value of `numDisplaySets` attribute to `15`. As soon as the 16th data comes in, the first data towards the left will be deleted, and the rest of the data will be shifted one position to the left.
 
 Refer to the code given below:
 
@@ -489,13 +489,13 @@ FusionCharts Suite XT uses the data stamp feature to solve this problem. Data st
 
 For our scenario, we would want to use the data stamp as follows:
 
-1. When the chart is first rendered, we will provide the initial date/time as data stamp in the XML/JSON data , so that the chart can pass it to the data provider page as querystring.
+1. When the chart is first rendered, we will provide the initial date/time as data stamp in the XML/JSON data, so that the chart can pass it to the data provider page as querystring.
 
 2. The data provider page will now request this data stamp from the querystring and provide any stock price data recorded after that time as output data. Thereafter, it will build the data string and then append the updated data stamp, which is the data/time of the last data sent to the chart.
 
 3. The entire data and the data stamp will now be sent to the chart as a real-time update.
 
-4. The chart will read this data, update the view, and then update its own data stamp.
+4. The chart will read this data, update the view, and then update its data stamp.
 
 5. After this, when the chart again polls the server for real-time data, it appends the updated data stamp to the data provider page and requests new data. Steps 2, 3, and 4 will thus be executed recursively.
 
@@ -513,14 +513,14 @@ The following code snippet is used to set the initial data stamp:
 }
 ```
 
-After every 15 seconds now, the chart will call the following URL:
+After every 15 seconds, the chart will call the following URL:
 
 ```
 files/php/advanced-charting-real-time-charts-adding-data-stamp-php-1.php?FCTimeIndex=35454&dataStamp=13:43:45
 
 ```
 
-The `dataStamp` attribute is used to add the data stamp to the URl. The `FCTimeIndex` is a paramter added by the chart to avoid caching.
+The `dataStamp` attribute is used to add the data stamp to the URL. The `FCTimeIndex` is a parameter added to the chart to avoid caching.
 
 The code in the data provider page will now request this data stamp and then provide the values updated after this time. After providing the three updated values (for the last 15 seconds) the data provider page will need to update the data stamp by providing the time of the last stock price reading.
 
@@ -545,7 +545,7 @@ Once the chart receives this update, it will update itself to plot the three new
 dataProviderPage.php?FCTimeIndex=37564&dataStamp=13:45:15
 
 ```
-Note how the `dataStamp` has been updated to the one specified by the real-time update. This helps to constantly update the data stamp and thereby, keep a track of the last data sent to chart.
+Note how the `dataStamp` has been updated to the one specified by the real-time update. This helps to constantly update the data stamp and thereby, keep track of the last data sent to chart.
 
 # Set Alert Manager
 
@@ -563,7 +563,7 @@ Now, let's see how can the alert manager can be configured.
 
 Let's create a real-time chart, in which the alert manager is configured to call a JavaScript function. The container object for alerts is `alerts` property, which is a child of the `datasource` object.
 
-Now, for each alert range object , you need to define an alert array element as a child of the alerts object. The alert array elements can be configured using following points: 
+Now, for each alert range object, you need to define an alert array element as a child of the alerts object. The alert array elements can be configured using following points: 
 
 * Set the `minValue` attribute to specify the minimum value for the threshold range. For example, to define an alert for the range 5-8, 5 is the minimum value. When real-time values are matched against the value for `minValue`, the value is inclusive. 
 
@@ -572,18 +572,18 @@ Now, for each alert range object , you need to define an alert array element as 
 * Set the `action` attribute to define the action to be taken, when the chart value matches an alert range. Possible values for this attribute are:
 
 `CALLJS` – It calls a JavaScript function (specified using the `param` attribute – explained next) when the chart value matches against an alert range. To pass parameters to the JavaScript function, specify the exact function name and parameters in the `param` attribute – for example, `"param": "showAlert('Online Transaction above average');"` 
-`SHOWANNOTATION` – You can create custom annotations and annotation groups (with named IDs). This action lets you show a predefined annotation group in the chart. For example, you may define an annotation group of three circles, that represent three status indicators in the colors red, green, and yellow, and assign an annotation group ID for them. By default, you may hide all status indicators. Later, based on the chart's value, you may show an annotation. The group Id of the annotation to be shown is defined using the `param` attribute. When the chart value falls out of the that alert range, the chart hides the annotation.
+`SHOWANNOTATION` – You can create custom annotations and annotation groups (with named IDs). This action lets you show a predefined annotation group in the chart. For example, you may define an annotation group of three circles, that represent three status indicators in the colors red, green, and yellow, and assign an annotation group ID for them. By default, you may hide all status indicators. Later, based on the chart's value, you may show an annotation. The group Id of the annotation to be shown is defined using the `param` attribute. When the chart value falls out of the alert range, the chart hides the annotation.
 
 * Set the `param` attribute to accept the parameter for an action, depending on the type of action specified using the `action` attribute. For the `CALLJS` action, it takes the name of the JavaScript function and for the `SHOWANNOTATION` action, it takes the ID of the annotation group in order to show the annotation.
 Due to some security policies, usage of `eval` has been removed and some of the features of param attribute has been deprecated:
 
-    * Special characters like `(`, `)`, `-` and ,cannot be passed as a parameter while function call.
+    * Special characters like `(`, `)`, `-` and, cannot be passed as a parameter while function call.
 
     * Multiple functions cannot be passed after `param` attribute.
 
     * A function cannot be defined after `param` attribute.
 
-* Set the `occurOnce` attribute to specify an alert threshold range to execute once. Set this attribute to `1` will notify the alert manager only the first time a value falls into that range. For example, for a temperature range 70-80 Fahrenheit , if you want to be notified only once when the temperature is 75, set the `occurOnce` attribute to 1 for this range.
+* Set the `occurOnce` attribute to specify an alert threshold range to execute once. Set this attribute to `1` will notify the alert manager only the first time a value falls within that range. For example, for a temperature range 70-80 Fahrenheit, if you want to be notified only once when the temperature is 75, set the `occurOnce` attribute to 1 for this range.
 
 A chart thus created looks like :
 
@@ -636,7 +636,7 @@ Refer to the code given below:
 
 FusionCharts Suite XT uses the concept of streaming and showing real-time messages on the chart using the message logger. The message logger can be effectively used to show necessary real-time information or live error bugs.
 
-The message logger is essentially a scrollable text-based scrollable window that can listen to messages streamed the from server and then do one of the following:
+The message logger is essentially a scrollable text-based scrollable window that can listen to messages streamed the from the server and then do one of the following:
 
 * Display the message in the message logger window
 
@@ -646,13 +646,13 @@ The FusionCharts Suite XT message logger has the following features:
 
 * Message logger is supported by all real-time charts and gauges. The non real-time charts do not support the message logger.
 
-* Each real time update of the chart can have one message to be added to the logger.
+* Each real-time update of the chart can have one message to be added to the logger.
 
-* Because it is a scrollable, the message logger can contain any number of messages.
+* Because it is scrollable, the message logger can contain any number of messages.
 
 * The cosmetics of this message logger are fully customizable.
 
-* Messages streamed to the message logger can either be displayed in the in-built logger or passed to any JavaScript function present in the same page. This helps you build your custom client-side loggers, without having to worry about retrieving real time data from the server.
+* Messages streamed to the message logger can either be displayed in the in-built logger or passed to any JavaScript function present in the same page. This helps you build your custom client-side loggers, without having to worry about retrieving real-time data from the server.
 
 * The message logger be switched on or off by setting `useMessageLog` to 0 or 1 in the `chart` object of the JSON data (or in the `<chart>` element of the XML data) for the chart.
 
@@ -676,7 +676,7 @@ In the above image, we have a real-time column chart that monitors the footfalls
 
 The following two steps are involved in configuring and using the message logger.
 
-* Configure your JSON data to to use the message logger by setting its functional and cosmetic properties.
+* Configure your JSON data to use the message logger by setting its functional and cosmetic properties.
 
 * Configure the real-time data provider page to broadcast/stream messages to the logger.
 
@@ -684,7 +684,7 @@ The following two steps are involved in configuring and using the message logger
 
 To configure the message logger, follow the steps given below:
 
-* Set the value of `useMessageLog` attribute to `1` to specify the message loogger for a real-time chart/gauge. 
+* Set the value of `useMessageLog` attribute to `1` to specify the message logger for a real-time chart/gauge. 
 The message logger, however, will become visible only when it listens to the first message streamed from the server.
 
 * Set the value to `showRTMenuItem` attribute to `1` to specify the real-time update-related menu items in the chart's  context menu.
@@ -713,7 +713,7 @@ A close button appears at the top-right corner of the message logger window that
 
 The `**messageGoesToJS`** attribute is used to pass only the "Message Text" parameter to the JavaScript function, whereas, the `**messagePassAllToJS`** is used to pass all the four parameters to the JavaScript function.
 
-For a detailed list of attributes used to configure the functional and cosmetic properties of the message logger, refer to the API reference page of real-time chart.
+For a detailed list of attributes used to configure the functional and cosmetic properties of the message logger, refer to the API reference page of the real-time chart.
 
 ### Stream Message
 
@@ -730,7 +730,7 @@ To log messages provided in the real-time data stream, follow the points given b
 * Set the `msgtype` attribute to specify the message type. Possible values are `INFO`, `ERROR`, `LITERAL`, or `LINK`. 
 Each message type is rendered using a different formatting style to aid instant interpretation. `INFO` messages are shown using normal font properties. `ERROR` messages are highlighted in a shade of red. `LITERAL` type messages are shown in code-like blocks. `LINK` messages serve as clickable links.
 
-* The messages streamed to the chart can either be displayed in the message log window or can be passed to JavaScript functions(which we'll see next). Set the value of `msgGoesToLog` attribute to `1` to specify the message to be loggin in the bulit-in log window. 
+* The messages streamed to the chart can either be displayed in the message log window or can be passed to JavaScript functions(which we'll see next). Set the value of `msgGoesToLog` attribute to `1` to specify the message to be logging in the built-in log window. 
 By default, this attribute takes its value from the `messageGoesToLog` attribute defined for the chart object.
 
 * Set the `msgGoesToJS` attribute to specify whether each message streamed from the server will be passed to the local JavaScript function. Setting this attribute to `1` will pass the message to the JavaScript function, setting it to `0` will show it in the built-in log window.
@@ -759,7 +759,7 @@ When a chart (with `useMessageLog` set to `1`) accepts this data stream, the mes
 
 ![Data Stream]({% site.baseurl %}/images/real-time-charts-image-4.png)
 
-> If you are passing any special characters as part of your message text or title (like &, % etc.), you will need to URL Encode the text/title.
+> If you are passing any special characters as part of your message text or title (like &, %, etc.), you will need to URL Encode the text/title.
 
 ### Change the Message Type
 
@@ -790,7 +790,7 @@ Because we want to link the message to `http://www.fusioncharts.com?id=34`, the 
 
 ## Clear the Message Logger from the Server
 
-Send an instruction to the chart from the server to clear the contents of the visible message logger. To do this, you need to send the following command:
+Send instruction to the chart from the server to clear the contents of the visible message logger. To do this, you need to send the following command:
 
 ```
 &clearLog=1
@@ -853,7 +853,7 @@ However, note that `getChartFromId()` has been deprecated.
 
 Once you have obtained the reference to the chart, you can use any of the functions below on the chart's logger:
 
-* `chartRef.showLog()` - This function is used to show the message logger, if it is not already visible.
+* `chartRef.showLog()` - This function is used to show the message logger if it is not already visible.
 
 * `chartRef.hideLog()` - This function is used to hide the message logger, if it is already visible.
 
@@ -867,7 +867,7 @@ If you get JavaScript errors when accessing the above functions, make sure that:
 
 # Clear Chart View
 
-Chart clearing helps to reduce CPU usage by real-time charts, when they have been running live for several days or months. Clearing the chart re-instantiates many objects in the chart, thereby clearing a lot of memory.
+Chart clearing helps to reduce CPU usage by real-time charts when they have been running live for several days or months. Clearing the chart re-instantiates many objects in the chart, thereby clearing a lot of memory.
 
 The chart view can be cleared:
 
@@ -877,7 +877,7 @@ The chart view can be cleared:
 
 * Using JavaScript API
 
-Now, let's discuss on how you can clear the chart view using each of the above listed methods.
+Now, let's discuss how you can clear the chart view using each of the above listed methods.
 
 ## Clear the chart from the Server
 
@@ -945,7 +945,7 @@ Now, let's check out how to feed data for the real-time charts.
 
 When feeding data using the JavaScript API, ensure that the format of the data feed is same as that specified by the real-time data provider page.
 
-Use the `feedData(strData)` method to feed data to the chart. Here, `strData` is a string value which contains data in exactly the same format as that provided by the real-time data provider page.
+Use the `feedData(strData)` method to feed data to the chart. Here, `strData` is a string value which contains data in the same format as that provided by the real-time data provider page.
 
 Let's create a chart where the data follows the pointers below:
 
@@ -1018,7 +1018,7 @@ FusionCharts("mychart").addEventListener("RealtimeUpdateComplete",
 ```
 Existing JavaScript implementations using the FC_ChartUpdated event will continue to function without any problem.
 
-The `realtimeUpdateError` event is raised when an error occurs while updating data for a real-time chart or gauge. This event passes the HTTP Status (as number) of the error occurred.
+The `realtimeUpdateError` event is raised when an error occurs while updating data for a real-time chart or gauge. This event passes the HTTP Status (as the number) of the error occurred.
 
 A sample implementation of the `realtimeUpdateError` event is shown below:
 
@@ -1125,7 +1125,7 @@ Time|Customers|
 
 ## Listen to Events
 
-The FusionCharts JavaScript Class API provides a number of events for real-time charts. These events are categorized into two broad groups - simple events and advanced events. Each event provides arguments to the event-listeners.
+The FusionCharts JavaScript Class API provides some events for real-time charts. These events are categorized into two broad groups - simple events and advanced events. Each event provides arguments to the event-listeners.
 
 In the advanced model, two event parameters are passed to the event listener function. The first parameter, `eventObject` is is structurally common for all events. The second parameter, `argumentsObject` contains event specific properties.
 
@@ -1155,7 +1155,7 @@ For more information on simple and advanced events and the `argumentsObject` for
 
 The FusionCharts JavaScript Class API `realTimeUpdateComplete` event is raised every time a real-time chart or gauge updates itself with new data.
 
-Let's create a chart which shows the real-time statistics of footfalls at the Bakersfield Central outlet. The chart will be updated with new data every five seconds. Whenever there is a data update, the `realTimeUpdateComplete` event will be fired. The event is configured to then retrieve the last data updated and display it in an HTML table rendered below the chart.
+Let's create a chart which shows the real-time statistics of footfalls at the Bakersfield Central outlet. The chart will be updated with new data every five seconds. Whenever there is a data update, the `realTimeUpdateComplete` event will be fired. The event is configured to retrieve the last data updated and display it in an HTML table rendered below the chart.
 
 A real-time column chart configured to listen to the `realTimeUpdateComplete` event is shown below:
 
@@ -1222,7 +1222,7 @@ If you see an endless loading progress bar in your browser, or if the right clic
 
 * Whether your chart JavaScript files and JSON/XML data are on the same sub-domain. Cross domain data loading is not allowed.
 
-* Whether your JSON/XML and chart file names are in accordance to the naming conventions imposed by your operating system
+* Whether your JSON/XML and chart file names are in accordance with the naming conventions imposed by your operating system
 
 ### If you get the "Invalid Data." message, it means that the JSON/XML data is malformed. Check it again for common errors like:
 
