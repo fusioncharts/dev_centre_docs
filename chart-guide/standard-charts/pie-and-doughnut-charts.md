@@ -23,7 +23,7 @@ To create a pie 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes you can check the API reference page of pie chart.
+For a detailed list of attributes, you can check the API reference page of pie chart.
 
 The pie 2D chart for the above code looks like:
 
@@ -49,7 +49,7 @@ Let's create our first doughnut 2D chart showcasing the same use case for the pi
 
 To create a doughnut 2D chart, set the `type` attribute to `doughnut2d`.
 
-For a detailed list of attributes you can check the API reference page of doughnut chart.
+For a detailed list of attributes, you can check the API reference page of doughnut chart.
 
 The doughnut 2D chart for the above code looks like:
 
@@ -100,7 +100,7 @@ To show percent values and actual values in your chart, follow the steps given b
 
 * Set the `showPercentInTooltip` attribute to `1` to render the text of tooltip in percentage values.
 
-For a detailed list of attributes you can check the API reference page of pie2D chart.
+For a detailed list of attributes, you can check the API reference page of pie2D chart.
 
 > The **showPercentValues** and the **showPercentInTooltip** attributes are applicable if you want to show percent values on the chart and actual values in tool-tips for a doughnut chart.
 
@@ -172,7 +172,7 @@ Click [here](http://jsfiddle.net/fusioncharts/jg4k7eny/ "@@open-newtab") to edit
 
 ## Disable Smart Labels and Lines
 
-By default, pie and doughnut charts are rendered with smart labels and lines - smart labels are data labels connected to their corresponding pie slices using line segments called smart lines. Smart labels manage overlapping of labels even when a large number of labels are placed in close vicinity. You can, however, choose to disable these smart labels. 
+By default, pie and doughnut charts are rendered with smart labels and lines - smart labels are data labels connected to their corresponding pie slices using line segments called smart lines. Smart labels manage overlapping of labels even when a large number of labels are placed in the close vicinity. You can, however, choose to disable these smart labels. 
 
 To disable the smart labels, set `enableSmartLabels` attribute to `0`. 
 
@@ -198,7 +198,7 @@ Click [here](http://jsfiddle.net/fusioncharts/tom7289j/ "@@open-newtab") to edit
 
 Apart from enabling and disabling the smart lines, you can also set the cosmetic properties of smart lines. To customize the smart lines, follow the steps given below:
 
-* Specify the hex code of the smart line color using the `smartLineColor` attribute.
+* Specify the hex code for the smart line color using the `smartLineColor` attribute.
 
 * Set the thickness of the smart lines using the `smartLineThickness` attribute.
 
@@ -376,4 +376,4 @@ A pie chart configured for the bevel effect looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/n0xz9x8h/ "@@open-newtab") to edit the pie 2D chart.
 
-> For all the samples shown above, if you want so see how each attribute works for the doughnut chart, just change the value of the **type** attribute from **pie2D**/**pie3D** to **doughnut2D**/**doughnut3D**
+> For all the samples shown above, if you want to see how each attribute works for the doughnut chart, just change the value of the **type** attribute from **pie2D**/**pie3D** to **doughnut2D**/**doughnut3D**

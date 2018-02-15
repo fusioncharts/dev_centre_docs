@@ -37,7 +37,7 @@ To create a radar chart follow the steps given below:
 
 * Specify the name of the series for a dataset using the `seriesname` attribute. This attribute belongs to the `dataset` object.
 
-For a detailed list of attributes you can check the API reference page of radar chart.
+For a detailed list of attributes, you can check the API reference page of radar chart.
 
 The radar chart created will look like as  shown below:
 

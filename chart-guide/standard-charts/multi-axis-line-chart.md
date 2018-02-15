@@ -5,7 +5,7 @@ heading: Multi-axis Line Chart
 breadcrumb: [["Home", "/"], ["Multi-axis Line Chart"]]
 ---
 
-A multi-axis line chart, as the name suggests, is an interactive line chart that can be configured for multiple axes. It is a special type of chart that allows multiple y-axes to be rendered in the same chart. The advantage of using a multi-axis line chart is that you can plot multiple data sets with different types of units (e.g. liter, kg, meter) and different scale ranges ( e.g. 1-100 on one axis, 1m - 100m on another axis, and 0 - 1 on yet another axis) on the same chart.
+A multi-axis line chart, as the name suggests, is an interactive line chart that can be configured for multiple axes. It is a special type of chart that allows multiple y-axes to be rendered in the same chart. The advantage of using a multi-axis line chart is that you can plot multiple data sets with different types of units. For example, 1-100 on one axis, 1m - 100m on another axis, and 0 - 1 on yet another axis) on the same chart.
 
 ## Features
 
@@ -17,9 +17,9 @@ The FusionCharts Suite XT multi-axis line chart includes the following features:
 
 * Options to make the axis visible or imaginary.
 
-* Options to draw the axis on left or right side of chart.
+* Options to draw the axis on left or right side of the chart.
 
-* Interactive options, like dynamic sliding of axis from one end to other upon clicking.
+* Interactive options, like dynamic sliding of the axis from one end to other upon clicking.
 
 * Ability to plot multiple data-sets against the same axis.
 
@@ -37,7 +37,7 @@ The FusionCharts Suite XT multi-axis line chart includes the following features:
 
 ## Create a Multi-Axis Line Chart
 
-Let's create our first multi-axis line which will showcase the revenue analysis Harry's SuperMart depending on the revenue, orders and footfall for 12 weeks. 
+Let's create our first multi-axis line which will showcase the revenue analysis Harry's SuperMart depending on the revenue, orders, and footfall for 12 weeks. 
 
 To create a multi-axis line chart follow the steps given below:
 

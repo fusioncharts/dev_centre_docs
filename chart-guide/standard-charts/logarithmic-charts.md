@@ -43,7 +43,7 @@ To create a log column 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes you can check the API reference page of log column 2D chart.
+For a detailed list of attributes, you can check the API reference page of log column 2D chart.
 
 The log column 2D chart thus rendered looks like this:
 
@@ -108,7 +108,7 @@ Click [here](http://jsfiddle.net/fusioncharts/rr92f6Lm/ "@@open-newtab") to edit
 
 By default, the chart automatically calculates the number of minor divisional lines depending on the logarithmic base defined in the chart. 
 
-You can, however, explicitly specify the number of minor divisional lines to be rendered between any two major divisional lines using `numMinorDivLines` attribute. This attribute takes value greater than `0`.
+You can, however, explicitly specify the number of minor divisional lines between any two major divisional lines using `numMinorDivLines` attribute. This attribute takes the value greater than `0`.
 
 Refer to the code given below:
 
