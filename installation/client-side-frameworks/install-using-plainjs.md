@@ -11,9 +11,9 @@ FusionCharts Suite XT—the industry's most comprehensive charting solution— i
 
 FusionCharts Suite XT is a JavaScript library that runs on your desktop and mobile web browsers. Click [here](https://www.fusioncharts.com/download/) to download the library.
 
-Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. Thereafter, you can simply include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
+> Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
 
-The JavaScript files of FusionCharts Suite library are located in `js` folder of your download package. Following is the list of **js** files present in your `fusioncharts` folder:
+Find the JavaScript files of FusionCharts Suite library in `js` folder of your download package. Following is the list of **js** files present in your `fusioncharts` folder:
 
 File Name|Description|
 -|-
@@ -25,10 +25,10 @@ File Name|Description|
 `fusioncharts.treemap.js`|This file is required to render the Treemap, present under PowerCharts XT.|
 `fusioncharts.zoomscatter.js`|This file is required to render the Zoom scatter chart, present under FusionCharts XT.|
 `fusioncharts.maps.js`|This file is core map renderer file. The map definitions, however, are stored separately, as explained next.|
-`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`.   You can download definition of all the 965 maps offered by FusionMaps XT from here.|
-`themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges and maps to style them through a central FusionCharts theme (JSON) file. Each theme file has its own name, through which it is referenced.|
+`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`.You can download definition of all the 965 maps offered by FusionMaps XT from here.|
+`themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme (JSON) file. Refer each theme with their respective file names.|
 
-> Starting v3.11.2, the FusionCharts Suite XT can be installed via the npm and Bower package managers.
+> Starting v3.11.2, install FusionCharts Suite XT via the npm and Bower package managers.
 
 ## Install FusionCharts Suite XT on local machine
 

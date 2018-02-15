@@ -13,7 +13,7 @@ You can download the Angular-FusionCharts directive from [here](https://www.fusi
 
 ## Install
 
-In your HTML, include the `fusioncharts.js` and the `angular-fusioncharts.js` JavaScript file. It is necessary to include the `angular-fusioncharts.js` file after all other files.
+In your HTML, include the `fusioncharts.js` and the `angular-fusioncharts.js` JavaScript file. It is necessary to include `angular-fusioncharts.js` after all other files.
 
 ```
 <script type="text/javascript" src="/path/to/fusioncharts.js"></script>
@@ -23,7 +23,7 @@ In your HTML, include the `fusioncharts.js` and the `angular-fusioncharts.js` Ja
 
 ## Include ng-fusioncharts
 
-Include the `ng-fusioncharts` as a dependency in the application. Search for the call to angular.module to added the dependency.
+Include the `ng-fusioncharts` as a dependency in the application. Search for the call to `angular.module` to add the dependency.
 
 ```
 angular.module("myApp", ["ng-fusioncharts"])
@@ -44,11 +44,11 @@ Add the `<div>` with a **fc-chart** directive in your HTML file, assuming that i
 </div>
 ```
 
-Now this is bound to a datasource with the `myDataSource` scope object.
+Now, this is bound to a datasource with the `myDataSource` scope object.
 
 ## Populate the required variables
 
-Previously, we have binded to the undefined scope variable myDataSource.
+Previously, we have bound to the undefined scope variable myDataSource.
 
 Set the `DataSource` like a regular FusionCharts JSON format DataSource inside the controller. Refer to the code below:
 
@@ -84,8 +84,8 @@ app.controller('MyController', function($scope) {
 });
 ```
 
-This completes the setup and you are now ready to begin using the FusionCharts AngularJs plugin.
+The above steps complete the setup, and you are now ready to use the FusionCharts AngularJs plugin.
 
 ## Licensing
 
-Angular-FusionCharts is open-source and distributed under the terms of the MIT/X11 License. You will still need to download and include FusionCharts in your page. This project provides no direct functionality. You can **[download an evaluation](https://www.fusioncharts.com/download/)**. You will still need to purchase a FusionCharts license to use in a commercial environment (FusionCharts is **[free for non-commercial and personal use](https://www.fusioncharts.com/download/free/)**) .
+Angular-FusionCharts is open-source and distributed under the terms of the MIT/X11 License. You will still need to download and include FusionCharts in your page. This project provides no direct functionality. You can **[download an evaluation](https://www.fusioncharts.com/download/)**. You will still need to purchase a FusionCharts license to use in a commercial environment (FusionCharts is **[free for non-commercial and personal use](https://www.fusioncharts.com/download/free/)**).
