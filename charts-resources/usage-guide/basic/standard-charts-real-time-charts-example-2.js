@@ -59,13 +59,14 @@
     },
     "events": {
         "initialized": function(e) {
+			var chartRef = e.sender;
             function addLeadingZero(num) {
                 return (num <= 9) ? ("0" + num) : num;
             }
 
             function updateData() {
                 // Get reference to the chart using its ID
-                var chartRef = FusionCharts("stockRealTimeChart"),
+				// var chartRef = FusionCharts("stockRealTimeChart"),
                     // We need to create a querystring format incremental update, containing
                     // label in hh:mm:ss format
                     // and a value (random).
