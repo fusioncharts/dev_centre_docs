@@ -11,6 +11,8 @@ The blue coloured area shown in the chart below is the canvas area:
 
 {% embed_chart chart-configurations-canvas-example-1.js %}
 
+Click [here](http://jsfiddle.net/fusioncharts/ssaacvmj/ "@@open-newtab") to edit the above chart.
+
 We will learn how to customize different properties of the canvas.
 
 ## Customize the canvas fill color
@@ -46,7 +48,7 @@ Click [here](http://jsfiddle.net/fusioncharts/qx1djybc/ "@@open-newtab") to edit
 
 ## Hide canvas border
 
-By default, the canvas border is not visible. To show the canvas border, set the `showCanvasBorder` attribute to `1`. 
+By default, the canvas border is not visible. To show the canvas border, set the `showCanvasBorder` attribute to `1`.
 
 Refer to the code below:
 
@@ -61,9 +63,11 @@ Refer to the code below:
 
 ```
 
-The chart without canvas border will look like as shown below:
+The chart with canvas border will look like as shown below:
 
-**INSERT CHART**
+{% embed_chart chart-configurations-canvas-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/wt2r9cox/ "@@open-newtab") to edit the above chart.
 
 ## Customize canvas border
 

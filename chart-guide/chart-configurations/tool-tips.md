@@ -283,4 +283,4 @@ In the chart shown above, tooltip macros for the box and whisker chart have been
 
 * Median
 
-Click here for the complete list of tooltip macros supported by FusionCharts Suite XT.|
+Click here for the complete list of tooltip macros supported by FusionCharts Suite XT.

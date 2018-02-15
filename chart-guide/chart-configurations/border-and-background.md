@@ -11,7 +11,7 @@ A chart's background refers to the whole area on which it is drawn and it is enc
 
 This article shows how to configure the border and background of your chart. It will also explain a few attributes that control the behavior of these elements. 
 
-## Hide chart borders
+## Show/Hide Chart Borders
 
 By default, the chart borders are visible for 2D charts. To hide the chart border, set the `showBorder` attribute to `0`.
 
@@ -27,7 +27,9 @@ Refer to the code below:
 ```
 The chart without border will look like as shown below:
 
-**INSERT LIVE CHART**
+{% embed_chart chart-configurations-border-and-background-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/b58ma056/ "@@open-newtab") to edit the above chart.
 
 ## Customize chart borders
 

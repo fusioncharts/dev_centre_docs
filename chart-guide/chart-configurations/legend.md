@@ -19,16 +19,14 @@ To show/hide the legends, set the `showLegend` attribute to 1/0. The default val
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "showLegend": "1"
     }
-...
 }
+```
 
- ```
 The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-1.js %}
@@ -43,15 +41,14 @@ With FusionCharts Suite XT, show/hide the data plots belonging to a data series 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "interactiveLegend": "0"
     }
-...
 }
 ```
+
 The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-2.js %}
@@ -66,16 +63,14 @@ To enable this feature, set the `plotHighlightEffect` attribute to `fadeout` whe
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "plotHighlightEffect": "fadeout"
     }
-...
 }
-
 ```
+
 The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-3.js %}
@@ -92,15 +87,18 @@ Define `plotHighlightEffect` attribute in the following format, to customize the
 
 `plotHighlightEffect=effectName|confStr`
 
-Always set `effectName` to `fadeout`. Use `confStr`, a comma-separated list of customization properties for the effect.
+Always set `effectName` to `fadeout`. Use `confStr`, a comma-separated list of customization properties for the effect. use the following attributes to see the difference:
+
+* Specify the hex code for the data plot fill color using the `color` attribute.
+
+* Specify the transparency of the data plots using the `alpha` attribute.
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
-        "plotHighlightEffect": "fadeout|color=#7f7f7f, alpha=60",
+        "plotHighlightEffect": "fadeout|color=#7f7f7f, alpha=60"
     }
 }
 ```
@@ -109,7 +107,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/v39dnw63/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/dy42jqc3/ "@@open-newtab") to edit the above chart.
 
 In the above chart, when you hover the mouse pointer over the legend text **This Year**, data plots belonging to the **Last Year** data series are grayed out.
 
@@ -117,25 +115,69 @@ For the above chart, the attribute has been defined as shown below:
 
 `"plotHighlightEffect": "fadeout|color=#7f7f7f, alpha=60"`
 
-Use the following attributes to customize the highlight effect:
-
-* Specify the hex code for the data plot fill color using the `color` attribute.
-
-* Specify the transparency of the data plots using the `alpha` attribute.
+Use the following attributes to customize the border while highlight effect is set:
 
 * Specify the hex code for the plot border color using the `borderColor` attribute.
 
 * Specify the transparency of the plot border using the `borderAlpha` attribute. If you don't include this attribute into the configuration string, then it takes the value assigned to the attribute `alpha` (in the configuration string, as shown above).
 
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        "showplotBorder": "1",
+        "plotHighlightEffect": "fadeout|borderColor=ff0000, borderAlpha=50"
+    }
+}
+```
+
+{% embed_chart chart-configurations-legend-example-13.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/v39dnw63/ "@@open-newtab") to edit the above chart.
+
+Use the following attributes to customize the background of the anchor:
+
 * Specify the hex code for the anchor background color using the `anchorBgColor` attribute. If you don't include this attribute into the configuration string, then it takes the value assigned to the attribute `color` (in the configuration string, as shown above).
 
 * Specify the transparency of the anchor background using the `anchorBgAlpha` attribute. 
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        "plotHighlightEffect": "fadeout|anchorBgColor=ff0000, anchorBgAlpha=50"
+    }
+}
+```
+
+{% embed_chart chart-configurations-legend-example-14.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/kLk72vnz/ "@@open-newtab") to edit the above chart.
+
+The attributes to customize the values while highlight effect are:
 
 * Specify the hex code for the data value background color using the `valueBgColor` attribute.
 
 * Specify the hex code for the data value border color using the `valueBorderColor` attribute.
 
 * Specify the hex code for the data value font color using the `valueFontColor` attribute. If you don't include this attribute into the configuration string, then it takes the value assigned to the attribute `color` (in the configuration string, as shown above).
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        "showplotBorder": "1",
+        "plotHighlightEffect": "fadeout|alpha=60, valueBgColor=#ff0000, valueBorderColor=#3a4660, valueFontColor=#000000"
+    }
+}
+```
+
+{% embed_chart chart-configurations-legend-example-15.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/kj9bofzm/ "@@open-newtab") to edit the above chart.
 
 ## Set the legend position
 
@@ -147,10 +189,9 @@ Use the following attributes to set legend position:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "legendPosition": "right",
         "legendAllowDrag": "1"
     }
@@ -169,10 +210,9 @@ Specify the legend icon size using the `legendIconScale` attribute. You can cont
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "legendIconScale": "2"
     }
 }
@@ -190,7 +230,9 @@ Use the following attributes to draw a custom legend icon shape:
 
 * Set the `drawCustomLegendIcon` attribute to `1` to enable drawing of a custom legend icon. All other legend icon customization attributes work only if you enable this feature.
 
-```
+Refer to the code below:
+
+```json
 {
     "chart": {
         "drawCustomLegend":"1"
@@ -207,10 +249,11 @@ Use the following attributes to draw a custom legend icon shape:
 
 * Specify the hex color code for the border of the legend icon using the `legendIconBorderColor` attribute. By default, it takes the data plot fill color.
 
-```
+Refer to the code below:
+
+```json
 {
     "chart": {
-        ...
         "legendIconBgColor": "#ff0000"
         "legendIconAlpha": "50",
         "legendIconBgAlpha": "30",
@@ -226,13 +269,12 @@ Use the following attributes to draw a custom legend icon shape:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "legendIconSides": "5",
         "legendIconStartAngle": "60"
     }
-...
 }
 ```
 
@@ -252,10 +294,9 @@ If you have multiple data items in a multi-series chart, the legend automaticall
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "legendScrollBgColor": "#cccccc",
         "legendScrollBarColor": "#999999"
     }
@@ -274,10 +315,9 @@ Set the value of `reverseLegend` attribute to `1`, to reverse the order of datas
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "reverseLegend": "1"
     }
 }
@@ -295,14 +335,15 @@ Set the value of `initiallyHidden`attribute to `1`, to hide the data plots of a 
 
 Refer to the code below:
 
-```
-"dataset": [
-        {
-            ...
-            "initiallyHidden": "1",
-
-        },
-
+```json
+{
+    "chart": {
+        ...
+    },
+    "dataset": [{
+        "initiallyHidden": "1"
+    }]
+}
 ```
 
 The chart will look as shown below:
@@ -319,14 +360,15 @@ Use the following attributes used to customize legend appearance:
 
 * Specify the background transparency for the legend using the `legendBgAlpha` attribute. It takes values between `0` (transparent) and `100` (opaque).
 
-```
+Refer to the code below:
+
+```json
 {
     "chart": {
         "legendBgColor": "#CCCCCC",
         "legendBgAlpha": "20"
     }
 }
-
 ```
 
 * Specify the border color for the legend using the `legendBorderColor` attribute, which accepts hex codes as values.
@@ -335,7 +377,9 @@ Use the following attributes used to customize legend appearance:
 
 * Specify the border transparency for the legend using the `legendBorderAlpha` attribute. It takes values between `0` (transparent) and `100` (opaque).
 
-```
+Refer to the code below:
+
+```json
 {
     "chart": {
         "legendBorderColor": "#666666",
@@ -353,7 +397,7 @@ Use the following attributes used to customize legend appearance:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "legendCaptionAlignment": "center",
@@ -381,7 +425,9 @@ Use the following attributes to customize the legend font cosmetics:
 
 * Display legend keys in bold, by setting the value of `legendItemFontBold` attribute to `1`.
 
-```
+Refer to the code below:
+
+```json
 {
     "chart": {
         "legendItemFontBold": "0",
@@ -394,12 +440,12 @@ Use the following attributes to customize the legend font cosmetics:
 
 * Specify the legend item font color on hover, using the `legendItemHoverFontColor` attribute, which accepts hex codes as values.
 
-```
+Refer to the code below:
+
+```json
 {
     "chart": {
-
-        "legendItemHoverFontColor": "#000000"
-       
+        "legendItemHoverFontColor": "#000000" 
     }
 }
 ```
@@ -416,7 +462,7 @@ Use the following attributes to customize the legend font cosmetics:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "legendCaption": "Which year?",
