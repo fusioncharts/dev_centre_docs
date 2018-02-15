@@ -5,6 +5,8 @@ heading: Pie and Doughnut Charts
 breadcrumb: [["Home", "/"], ["Pie and Doughnut Charts"]]
 ---
 
+> This chart type belongs to FusionCharts XT.
+
 A pie chart is a circular chart divided into sectors where the arc length of each sector, its central angle, and its area is proportional to the quantity it represents. A doughnut chart is similar to a pie chart and facilities similar kind of data analysis. FusionCharts Suite XT includes the pie and doughnut charts to plot data that needs to be shown as a percent of the whole.
 
 ## Pie 2D Chart
@@ -23,7 +25,7 @@ To create a pie 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, you can check the API reference page of pie chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pie2d "@@open-newtab") page of multi-series pie 2D chart.
 
 The pie 2D chart for the above code looks like:
 
@@ -34,6 +36,8 @@ Click [here](http://jsfiddle.net/fusioncharts/hLhjhft8/ "@@open-newtab") to edit
 ## Pie 3D Chart
 
 To render a pie chart in 3D, change the value of the `type` attribute from `pie2D` to `pie3D`. The rest of the data structure remains the same.
+
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pie3d "@@open-newtab") page of multi-series pie 3D chart.
 
 A pie chart in 3D looks like :
 
@@ -49,7 +53,7 @@ Let's create our first doughnut 2D chart showcasing the same use case for the pi
 
 To create a doughnut 2D chart, set the `type` attribute to `doughnut2d`.
 
-For a detailed list of attributes, you can check the API reference page of doughnut chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=doughnut2d "@@open-newtab") page of multi-series doughnut 2D chart.
 
 The doughnut 2D chart for the above code looks like:
 
@@ -60,6 +64,8 @@ Click [here](http://jsfiddle.net/fusioncharts/wYj95/ "@@open-newtab") to edit th
 ## Doughnut 3D Chart
 
 To render a doughnut chart in 3D, change the value of the `type` attribute from `doughnut2D` to `doughnut3D`. The rest of the data structure remains the same.
+
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=doughnut3d "@@open-newtab") page of multi-series doughnut 3D chart.
 
 A doughnut chart in 3D looks like :
 
@@ -99,8 +105,6 @@ To show percent values and actual values in your chart, follow the steps given b
 * Set the `showPercentValues` attribute to `1` to show percent values as data labels.
 
 * Set the `showPercentInTooltip` attribute to `1` to render the text of tooltip in percentage values.
-
-For a detailed list of attributes, you can check the API reference page of pie2D chart.
 
 > The **showPercentValues** and the **showPercentInTooltip** attributes are applicable if you want to show percent values on the chart and actual values in tool-tips for a doughnut chart.
 

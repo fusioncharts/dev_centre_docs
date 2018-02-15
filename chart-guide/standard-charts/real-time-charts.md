@@ -5,6 +5,8 @@ heading: Real-time Charts
 breadcrumb: [["Home", "/"], ["Real-time Charts"]]
 ---
 
+> This chart type belongs to FusionWidgets XT.
+
 Real-time Charts
 
 Real-time charts, also known as data streaming charts, are charts that automatically update themselves after every `n` seconds, without any page refreshes, by getting new data from the server.
@@ -89,7 +91,7 @@ To create a real-time chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, you can check the API reference page of real-time line chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=realtimeline "@@open-newtab") page of real-time line chart.
 
 A real-time line chart looks like:
 
@@ -101,7 +103,7 @@ Click [here](http://jsfiddle.net/fusioncharts/43fJn/ "@@open-newtab") to edit th
 
 To create a real-time area chart, set the `type` attribute to `realtimeareachart`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, you can check the API reference page of the real-time area chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=realtimearea "@@open-newtab") page of real-time area chart.
 
 A real-time area chart looks like:
 
@@ -115,7 +117,7 @@ Now, let's create a real-time stacked area chart showcasing the number of live v
 
 To create a real-time chart, set the `type` attribute to `realtimestackedarea`. 
 
-For a detailed list of attributes, you can check the API reference page of real-time area chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=realtimestackedarea "@@open-newtab") page of real-time stacked area chart.
 
 A real-time stacked area chart looks like:
 
@@ -129,7 +131,7 @@ In the above samples, we rendered real-time line and area charts. Let's now crea
 
 To create a real-time column chart, set the `type` attribute to `realtimecolumn`.
 
-For a detailed list of attributes, you can check the API reference page of real-time area chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=realtimecolumn "@@open-newtab") page of real-time column chart.
 
 A real-time column chart looks like:
 
@@ -143,7 +145,7 @@ FusionCharts also supports real-time stacked column chart. Here the sample below
 
 To create a real-time stacked column chart, set the `type` attribute to `realtimestackedcolumn`.
 
-For a detailed list of attributes, you can check the API reference page of real-time area chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=realtimestackedcolumn "@@open-newtab") page of real-time stacked column chart.
 
 A real-time stacked column chart looks like:
 
@@ -155,7 +157,7 @@ Click [here](http://jsfiddle.net/fusioncharts/bLUw5/ "@@open-newtab") to edit th
 
 To create a real-time dual y line chart, set the `type` attribute to `realtimelinedy`. 
 
-For a detailed list of attributes, you can check the API reference page of real-time area chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=realtimelinedy "@@open-newtab") page of real-time dual y-axis line chart.
 
 A real-time dual y-axis line chart looks like:
 

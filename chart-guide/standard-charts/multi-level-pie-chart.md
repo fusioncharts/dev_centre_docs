@@ -5,6 +5,8 @@ heading: Multi-level Pie Chart
 breadcrumb: [["Home", "/"], ["Multi-level Pie Chart"]]
 ---
 
+> This chart type belongs to PowerCharts XT.
+
 The multi-level pie chart is a special type of chart that allows you to show symmetrical and asymmetrical tree structures in a consolidated pie-like structure. It presents the entire hierarchical data in a single-screen snapshot, which makes it a preferred choice over a tree view. Also, the pie slices can assume numerical values and thereby divide the visual segments in a ratio based on the numerical values. The chart also offers advanced interactivity options like visual path tracing from any child to parent.
 
 This chart can be used to show various types of data like:
@@ -31,7 +33,7 @@ To create a multi-level pie chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, you can check the API reference page of multi-level pie chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=multilevelpie "@@open-newtab") page of multi-level pie chart.
 
 The multi-level pie chart thus rendered looks like this:
 

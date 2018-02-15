@@ -5,6 +5,8 @@ heading: Line, Area and Column charts
 breadcrumb: [["Home", "/"], ["Line, Area and Column Charts"]]
 ---
 
+> This chart type belongs to FusionCharts XT.
+
 ## Column 2D Chart
 
 Column and bar charts represent data with rectangular horizontal or vertical bars. The height of the bars is proportional to the values they represent. In case of a column chart, the `numeric values` are plotted along the y-axis, and the `data labels` are plotted along the x-axis. Whereas in bar charts, the numeric values are plotted along the x-axis, and the data labels are plotted along the y-axis. Column and bar charts are best fitted when you want to compare values. 
@@ -27,7 +29,7 @@ To create a single-series column 2D chart, follow the steps given below:
 
 * Specify the value for a data item using the `value` attribute within the `data` object. 
 
-For a detailed list of attributes, refer to the API reference page of the column chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=column2d "@@open-newtab") page of column 2D chart.
 
 A single-series column 2D chart looks like:
 
@@ -39,6 +41,8 @@ Click [here](http://jsfiddle.net/fusioncharts/s7t8F/ "@@open-newtab") to edit th
 
 To render a column chart in 3D, change the value of the `type` attribute from `column2D` to `column3D`. The rest of the data structure remains the same.
 
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=column3d "@@open-newtab") page of column 3D chart.
+
 A single-series column 3D chart looks like:
 
 {% embed_all standard-charts-line-area-and-column-charts-example-2.js %}
@@ -49,6 +53,8 @@ Click [here](http://jsfiddle.net/fusioncharts/xL3py/ "@@open-newtab") to edit th
 
 Now, let's create a bar 2D chart. In the chart below, we have shown five stores in a supermarket that have highest sales. The sales figures are plotted along the x-axis, and the store names are plotted along the y-axis.
 
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bar2d "@@open-newtab") page of bar 2D chart.
+
 To render a bar 2D chart, set the `type` to `bar2d`. A single-series bar 2D chart looks like:
 
 {% embed_all standard-charts-line-area-and-column-charts-example-3.js %}
@@ -58,6 +64,8 @@ Click [here](http://jsfiddle.net/fusioncharts/y3H2G/ "@@open-newtab") to edit th
 ## Bar 3D Chart
 
 To render a bar chart in 3D, change the value of the `type` attribute from `bar2D` to `bar3D`. The rest of the data structure remains the same.
+
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bar3d "@@open-newtab") page of bar 3D chart.
 
 A single-series bar 3D chart looks like:
 
@@ -73,7 +81,7 @@ In the sample, let's create a line chart showcasing total footfall at Bakersfiel
 
 To render a line chart, set the `type` attribute to `line`.
 
-For a detailed list of attributes refer to the API reference page of the line chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=line "@@open-newtab") page of line chart.
 
 A line chart looks like:
 
@@ -85,7 +93,11 @@ Click [here](http://jsfiddle.net/fusioncharts/xb9TG/ "@@open-newtab") to edit th
 
 An area chart is similar to the line chart, with the difference that the area marked by the anchors and line segments is filled.
 
-To render an area chart with the same use case as above, set the `type` to `area`. A single-series area chart looks like:
+To render an area chart with the same use case as above, set the `type` to `area`.
+
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=area2d "@@open-newtab") page of area chart.
+
+A single-series area chart looks like:
 
 {% embed_all standard-charts-line-area-and-column-charts-example-6.js %}
 
@@ -123,8 +135,6 @@ Given below is the JSON code to include trend-line on your chart:
 }]
 
 ```
-
-For a detailed list of attributes refer to the API reference page of trend-line section.
 
 A quarterly sales summary chart rendered with a trend-line to show the target value looks like this:
 
@@ -164,7 +174,6 @@ Given below is the JSON code to include a vertical line on your chart:
 },
 
 ```
-For a detailed list of attributes refer to the API reference page of vertical line section.
 
 A line chart rendered with a vertical line looks like this:
 

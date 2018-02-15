@@ -5,6 +5,8 @@ heading: Spline Charts
 breadcrumb: [["Home", "/"], ["Spline Charts"]]
 ---
 
+> This chart type belongs to PowerCharts XT.
+
 Spline charts are a specialized form of line charts that display smooth curves through the different data points. It integrates all the characteristics of a conventional line chart except for the fact that unlike line charts, which connect data points with straight lines, spline charts draw a fitted curved line to join the data points.
 
 Spline charts can be used for plotting data that requires the usage of curve-fitting e.g., an impulse-response chart, a product life cycle chart, etc. It is also significantly used in designing Pareto charts.
@@ -35,7 +37,7 @@ To create a single-series spline 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, you can check the API reference page of a spline chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=spline "@@open-newtab") page of single-series spline 2D chart.
 
 A simple single-series spline 2D chart looks like this:
 
@@ -50,6 +52,8 @@ To render a multi-series spline chart:
 * Set the `type` attribute to `msspline`.
 
 * Use the `seriesname` attribute and the `data` object, which belong to the `dataset` object, to specify multiple datasets.
+
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=msspline "@@open-newtab") page of multi-series spline 2D chart.
 
 A multi-series spline chart looks like:
 
@@ -67,6 +71,8 @@ To render a multi-series spline area 2D chart:
 
 * Use the `seriesname` attribute and the `data` object, which belong to the `dataset` object, to specify multiple datasets.
 
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=mssplinearea "@@open-newtab") page of multi-series spline area 2D chart.
+
 A simple multi-series spline area 2D chart looks like this:
 
 {% embed_all standard-charts-spline-charts-example-3.js %}
@@ -76,6 +82,8 @@ Click [here](http://jsfiddle.net/fusioncharts/W9Bn6/ "@@open-newtab") to edit th
 ## Single-Series Spline Area 2D Chart
 
 To render a single-series spline area chart, set the `type` attribute to `splinearea`.
+
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=splinearea "@@open-newtab") page of single-series spline area 2D chart.
 
 A simple single-series spline area 2D chart looks like this:
 
