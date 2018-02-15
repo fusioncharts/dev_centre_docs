@@ -47,7 +47,7 @@ To create a stacked column chart in 2D follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes you can check the API reference page of stacked column 2D chart.
+For a detailed list of attributes, you can check the API reference page of stacked column 2D chart.
 
 The stacked column 2D chart thus created looks like this:
 

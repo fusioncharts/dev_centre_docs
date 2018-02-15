@@ -7,7 +7,7 @@ breadcrumb: [["Home", "/"], ["Spline Charts"]]
 
 Spline charts are a specialized form of line charts that display smooth curves through the different data points. It integrates all the characteristics of a conventional line chart except for the fact that unlike line charts, which connect data points with straight lines, spline charts draw a fitted curved line to join the data points.
 
-Spline charts can be used for plotting data that requires the usage of curve-fitting e.g. an impulse-response chart, a product life cycle chart, etc. It is also significantly used in designing Pareto charts.
+Spline charts can be used for plotting data that requires the usage of curve-fitting e.g., an impulse-response chart, a product life cycle chart, etc. It is also significantly used in designing Pareto charts.
 
 FusionCharts Suite XT includes four types of spline charts:
 
@@ -35,7 +35,7 @@ To create a single-series spline 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes you can check the API reference page of a spline chart.
+For a detailed list of attributes, you can check the API reference page of a spline chart.
 
 A simple single-series spline 2D chart looks like this:
 
@@ -77,7 +77,7 @@ Click [here](http://jsfiddle.net/fusioncharts/W9Bn6/ "@@open-newtab") to edit th
 
 To render a single-series spline area chart, set the `type` attribute to `splinearea`.
 
-A simple single-series spline area area 2D chart looks like this:
+A simple single-series spline area 2D chart looks like this:
 
 {% embed_all standard-charts-spline-charts-example-4.js %}
 
