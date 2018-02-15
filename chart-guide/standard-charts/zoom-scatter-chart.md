@@ -41,7 +41,7 @@ For a detailed list of attributes, refer to the [chart attributes]({% site.baseu
 
 Take a look at the sample zoom-scatter chart shown below:
 
-{% embed_all standard-charts-zoom-scatter-charts-example-1.js %}
+{% embed_chart standard-charts-zoom-scatter-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/t1d4dmgp/ "@@open-newtab") to edit the zoom-scatter chart.
 

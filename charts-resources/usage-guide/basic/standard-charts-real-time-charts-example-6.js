@@ -1,8 +1,6 @@
 {
-
     type: 'realtimelinedy',
     dataFormat: 'json',
-    id: 'stockMonitor',
     renderAt: 'chart-container',
     width: '500',
     height: '350',

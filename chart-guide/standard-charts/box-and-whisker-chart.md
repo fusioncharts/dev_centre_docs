@@ -131,6 +131,8 @@ To create a box and whisker chart, keep a note of the steps given below:
 
 > **Note:** Comma (`,`) is the default data-separator. Specify the data-separator explicitly using the `dataSeparator` attribute.
 
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=boxandwhisker2d "@@open-newtab") page of box and whisker chart.
+
 Refer to the code given below:
 
 ```json
@@ -154,8 +156,6 @@ Refer to the code given below:
 }
 
 ```
-
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=boxandwhisker2d "@@open-newtab") page of box and whisker chart.
 
 The box and whisker chart looks like:
 

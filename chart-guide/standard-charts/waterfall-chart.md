@@ -23,7 +23,7 @@ To create a waterfall chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=waterfall "@@open-newtab") page of waterfall chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=waterfall2d "@@open-newtab") page of waterfall chart.
 
 The waterfall chart thus rendered looks like this:
 

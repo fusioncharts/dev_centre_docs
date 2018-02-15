@@ -1,5 +1,4 @@
 {
-    id: "stackRealTimeChart",
     type: 'realtimestackedcolumn',
     renderAt: 'chart-container',
     width: '500',
