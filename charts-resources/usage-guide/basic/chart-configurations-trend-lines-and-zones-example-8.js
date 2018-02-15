@@ -15,14 +15,11 @@
             "numberPrefix": "$",
             "theme": "fint",
             //Attributes to configure Trend Values
-            "trendValueBorderColor": "ff0000",
-            "trendValueBorderAlpha": "80",
-            "trendValueBorderPadding": "4",
-            "trendValueBorderRadius": "5",
-            "trendValueBorderThickness": "2",
-            "trendValueBorderDashed": "1",
-            "trendValueBorderDashLen": "3",
-            "trendValueBorderDashGap": "3"
+            "trendValueFont": "Arial",
+            "trendValueFontSize": "12",
+            "trendValueFontBold": "1",
+            "trendValueFontItalic": "1",
+            "trendValueAlpha": "80"
         },
         "data": [{
             "label": "Jan",

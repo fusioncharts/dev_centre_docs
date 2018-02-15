@@ -40,7 +40,7 @@
             "color": "#6da81e",
             "alpha": "50",
             //(Optionally) Hiding vline label border from vline element
-            "showLabelBorder": "0"
+            "showLabelBorder": "1"
         }, {
             "label": "Sat",
             "value": "5803"

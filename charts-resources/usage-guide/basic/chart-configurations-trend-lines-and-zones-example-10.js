@@ -19,10 +19,7 @@
             "trendValueBorderAlpha": "80",
             "trendValueBorderPadding": "4",
             "trendValueBorderRadius": "5",
-            "trendValueBorderThickness": "2",
-            "trendValueBorderDashed": "1",
-            "trendValueBorderDashLen": "3",
-            "trendValueBorderDashGap": "3"
+            "trendValueBorderThickness": "2"
         },
         "data": [{
             "label": "Jan",
