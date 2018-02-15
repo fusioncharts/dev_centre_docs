@@ -15,7 +15,7 @@ There are two ways of obtaining data for the chart:
 
 But how do we go about dynamic binding of data? Before we explain that, let us understand how dynamic binding of data works. The data required is stored in an external source which can be a database and is provided to the chart via a server side program as shown in the below diagram:
 
-![server side program as shown in diagram](/assets/images/server-side-diagram.png)
+![server side program as shown in diagram]({% site.baseurl %}/images/server-side-diagram.png)
 
 In this article we are going to show you how to write server side code in PHP to retrieve the data from MySQL database and bind the data obtained to the chart. We are going to divide this article in two four parts:
 
@@ -41,17 +41,17 @@ This stack is popularly called as *AMP(Apache MySQL PHP) stack and when you incl
 
 At the end of the installation of the WAMP bundle you will be prompted to launch the app as shown below:
 
-![installation of the WAMP](/assets/images/wamp-setup.png)
+![installation of the WAMP]({% site.baseurl %}/images/wamp-setup.png)
 
 You can manage the MySQL DB server and Apache server by clicking on the **Manage Servers** tab as shown below:
 
-![installation of the WAMP](/assets/images/wamp-setup-2.png)
+![installation of the WAMP]({% site.baseurl %}/images/wamp-setup-2.png)
 
 ## Step-2: Creating Database and Initializing with seed data in MySQL
 
 WAMP bundle installed above provides a browser based application to interact with the MySQL DB. The browser based application can be accessed at: _http://127.0.0.1/phpmyadmin/_. You will be prompted for username and password as shown below:
 
-![phpmyadmin](/assets/images/phpmyadmin.png)
+![phpmyadmin]({% site.baseurl %}/images/phpmyadmin.png)
 
 The username is **'root'** and password is the one you configured during the installation of the WAMP stack.
 
