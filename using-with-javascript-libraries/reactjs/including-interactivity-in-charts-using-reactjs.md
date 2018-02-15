@@ -6,9 +6,7 @@ heading: Including Interactivity in Charts Using ReactJS
 chartPresent: true
 ---
 
-<script defer type="text/javascript" src="{{ site.baseurl | append:'assets/fusioncharts/react-fusioncharts.js'}}"></script>
 
-<script defer type="text/javascript" src="{{ site.baseurl | append:'assets/fusioncharts/react-fusioncharts.min.js'}}"></script>
 
 ## Prerequisites
 

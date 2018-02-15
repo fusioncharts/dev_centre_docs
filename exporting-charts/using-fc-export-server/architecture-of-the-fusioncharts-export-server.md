@@ -47,11 +47,11 @@ The server module:
 
 #### Workflow of the Converter Module
 
-<img src="/assets/images/workflow-of-the-converter-module.jpg" width="auto" height="400" alt="Workflow of the Converter Module">
+<img src="{% site.baseurl %}/images/workflow-of-the-converter-module.jpg" width="auto" height="400" alt="Workflow of the Converter Module">
 
 #### Workflow of the Server Module
 
-<img src="/assets/images/workflow-of-the-server-module.jpg" width="400" height="auto" alt="Workflow of the Server Module">
+<img src="{% site.baseurl %}/images/workflow-of-the-server-module.jpg" width="400" height="auto" alt="Workflow of the Server Module">
 
 ## Decoupling of the Converter Module and the Logging Module
 

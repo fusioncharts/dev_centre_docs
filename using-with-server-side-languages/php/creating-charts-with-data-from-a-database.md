@@ -372,7 +372,7 @@ Before we dive into the code, let’s see what the JSON data for a multi-series 
 
 In the code below, you can see the data for 12 months.
 
-![server side program as shown in diagram](/assets/images/php_multi-seriesjson.png)
+![server side program as shown in diagram]({% site.baseurl %}/images/php_multi-seriesjson.png)
 
 The final JSON code that we need for this sample should be as shown below:
 
