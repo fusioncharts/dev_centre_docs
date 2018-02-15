@@ -11,7 +11,7 @@ The axis limits encompass all values present in the chart; no data value in the 
 
 Let's check how to customize the chart limits.
 
-## Set chart limits explicitly
+## Set Chart Limits Explicitly
 
 You can set custom y-axis limits as per your requirement. To do so, the following attribbutes are used:
 
@@ -21,15 +21,13 @@ You can set custom y-axis limits as per your requirement. To do so, the followin
 
 Refer  to the code below:
 
-```
+```json
 {
     "chart": {
         "yAxisMaxValue": "2500000",
         "yAxisMinValue": "1000000"
     }
-...
 }
-
 ```
 
 The chart with custom y-axis limits will look like as shown below:
@@ -38,20 +36,18 @@ The chart with custom y-axis limits will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/8qfgrdxw/ "@@open-newtab") to edit the above chart.
 
-## Set y-axis minimum value based on data values
+## Set Y-axis Minimum value
 
 You can choose to set the y-axis lower limit to `0` (zero) or let the y-axis lower limit adapt itself to the values provided to the chart. To do so, set the `setAdaptiveYMin` attribute to `1`. By default, this attribute is set to `0`.
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "setAdaptiveYMin":"1"
     }
-...
 }
-
 ```
 
 A chart with adaptive minimum value for the y-axis will look like as shown below:
@@ -60,7 +56,7 @@ A chart with adaptive minimum value for the y-axis will look like as shown below
 
 Click [here](http://jsfiddle.net/fusioncharts/cs89448w/ "@@open-newtab") to edit the above chart.
 
-## Set axis limits for charts with dual y-axis
+## Set Axis Limits for Dual Y-axis Charts
 
 In case of dual y-axis charts, you can set custom y-axis limits for both the primary and secondary y-axes. To do so, the following attribbutes are used:
 
@@ -74,18 +70,15 @@ In case of dual y-axis charts, you can set custom y-axis limits for both the pri
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "pYAxisMinValue": "1000",
         "pYAxisMaxValue": "25000",
         "sYAxisMinValue": "1400",
         "sYAxisMaxValue": "1700"
     }
-...
 }
-
 ```
 
 A chart with explicitly defined limits for the primary and secondary y-axis looks like as shown below:
@@ -94,21 +87,18 @@ A chart with explicitly defined limits for the primary and secondary y-axis look
 
 Click [here](http://jsfiddle.net/fusioncharts/4azzajgL/ "@@open-newtab") to edit the above chart.
 
-## Set same axis limits for primary and secondary y-axes
+## Set same Axis Limits for Primary and Secondary Y-axes
 
 Configure your charts so that the chart limits for the primary and secondary y-axes are synced. For charts with static data this can be done by specifying the minimum and maximum y-axis values, but this won't work for dynamic chart data. For dynamic charts, set the `syncAxisLimits` attribute to `1`. 
 
 Refer  to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "syncAxisLimits": "1"
     }
-...
 }
-
 ```
 
 A chart with synced chart limits for the primary and secondary y-axis looks like as shown below:
@@ -117,7 +107,7 @@ A chart with synced chart limits for the primary and secondary y-axis looks like
 
 Click [here](http://jsfiddle.net/fusioncharts/7wo4mv5r/ "@@open-newtab") to edit the above chart.
 
-## Show/hide y-axis values
+## Show/Hide Y-axis Values
 
 By default, all the y-axis values are visible. You can hide all the y-axis values or only the maximum and minimum y-axis values showing the rest. To do so, the following attribbutes are used:
 
@@ -125,15 +115,12 @@ By default, all the y-axis values are visible. You can hide all the y-axis value
 
 Refer  to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "showYAxisValues": "0"
     }
-...
 }
-
 ```
 
 The chart will look like as shown in the image below:
@@ -146,15 +133,12 @@ Click [here](http://jsfiddle.net/fusioncharts/14srsdrw/ "@@open-newtab") to edit
 
 Refer  to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "showLimits": "0"
     }
-...
 }
-
 ```
 
 The chart will look like as shown in the image below:

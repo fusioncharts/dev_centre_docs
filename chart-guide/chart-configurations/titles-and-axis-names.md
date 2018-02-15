@@ -81,6 +81,7 @@ Refer to the code given below:
     }
 }
 ```
+
 The chart with customized caption and subcaption looks like as shown below:
 
 {% embed_chart chart-configurations-titles-and-axis-names-example-2.js %}
@@ -429,7 +430,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/999f2Lbw/ "@@open-newtab") to edit the above chart.
 
-## Configure the Border properties of Y-axis Names
+## Configure the Border Properties of Y-axis Names
 
 Use the following attributes to customize the primary and secondary y-axis names for a multi-series, combination 2D chart with a dashed border and a chosen color:
 

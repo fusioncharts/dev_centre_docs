@@ -9,7 +9,7 @@ Divisional lines are horizontal lines running along the canvas. They enable easi
 
 By default, FusionCharts Suite XT automatically adds div lines based on the minimum and maximum y-axis values. However, several customization options for div lines are also available.
 
-## Customize the number of divisional lines
+## Customize the Number of Divisional Lines
 
 By default, the divisional lines are automatically adjusted. You can opt to explicitly specify the minimum and maximum values for the y-axis, as well as the number of divisional lines. 
 
@@ -25,10 +25,9 @@ To do this, you need to disable the automatic adjustment of divisional lines and
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "adjustDiv": "0",
         "yAxisMaxvalue": "35000",
         "yAxisMinValue": "5000",
@@ -43,9 +42,9 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/ovbtuvkk/ "@@open-newtab") to edit the above chart.
 
-## Customize the display of divisional lines
+## Customize the Display of Divisional Lines
 
-To customize the display of div linnes follow the steps given below:
+To customize the display of divisional lines follow the steps given below:
 
 * Specify the hex code for the color of the div line using the `divLineColor` attribute.
 
@@ -55,7 +54,7 @@ To customize the display of div linnes follow the steps given below:
 
 Refer to the code below:
 
- ```
+```json
 {
     "chart": {
         "divLineColor": "#6699cc",
@@ -71,7 +70,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/y3r1w0tk/ "@@open-newtab") to edit the above chart.
 
-## Dashed divisional lines
+## Dashed Divisional Lines
 
 You can render the divisional lines as dashed lines, instead of the default continuous lines. To do so follow the steps given below:
 
@@ -83,10 +82,9 @@ You can render the divisional lines as dashed lines, instead of the default cont
 
 Refer to the code below:
 
- ```
+ ```json
 {
     "chart": {
-       ...
         "divLineDashed": "1",
         "divLineDashLen": "5",
         "divLineDashGap": "6"
@@ -100,21 +98,20 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/5q05dmw1/ "@@open-newtab") to edit the above chart.
 
-## Customize horizontal grid bands
+## Customize Horizontal Grid Bands
 
 To further aid data visualization, you can color alternate spaces between grid lines to create grid bands.
 
-### Show/hide horizontal grid bands
+### Show/Hide Horizontal Grid Bands
 
 By default, horizontal grid bands do not appear between the divisional lines. Set the `showAlternateHGridColor` attribute to `1` to display the horizontal grid bands. 
 
 Refer to the code below:
 
- ```
+```json
 {
     "chart": {
-        ...
-        "showAlternateHGridColor": "1",
+        "showAlternateHGridColor": "1"
     }
 }
 ```
@@ -123,9 +120,9 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-div-lines-and-grids-example-4.js %}
 
-Click here to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/1buopbat/ "@@open-newtab") to edit the above chart.
 
-### Customize horizontal grid bands
+### Customize Horizontal Grid Bands
 
 To customize the horizontal grid bands follow the steps given below:
 
@@ -135,10 +132,9 @@ To customize the horizontal grid bands follow the steps given below:
 
 Refer to the code below:
 
- ```
+```json
 {
     "chart": {
-        ...
         "alternateHGridColor": "#00FFAA",
         "alternateHGridAlpha":"20"
     }

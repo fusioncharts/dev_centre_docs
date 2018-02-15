@@ -7,7 +7,7 @@ breadcrumb: [["Home", "/"], ["Fonts"]]
 
 Font properties include the font family, size, and color for the text rendered inside and outside the chart canvas. 
 
-## Customize base font group
+## Customize Base Font Group
 
 The base font group is used to customize the font properties for the text rendered on the chart itself. To customize the base fonts follow the steps given below:
 
@@ -35,7 +35,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/fyczLffy/ "@@open-newtab") to edit the above chart.
 
-## Outside canvas base font group
+## Outside Canvas Base Font Group
 
 This is used to customize font properties for the text placed outside the chart canvas. To do so, follow the steps given below:
 

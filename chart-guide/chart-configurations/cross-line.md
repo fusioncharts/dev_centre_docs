@@ -9,15 +9,14 @@ Cross line is a vertical line/area used as a quick reference for data plots. Whe
 
 ![Cross Line]({% site.baseurl %}/images/chart-configurations-cross-line-image-1.png)
 
-## Show/Hide the cross line
+## Show/Hide the Cross Line
 
 By default, the cross line is turned off. To show the crossline set the `drawCrossLine` attribute to `1`. Refer to the code below:
 
 ```
 {
     "chart": {
-       ...
-        "drawCrossLine": "1",
+        "drawCrossLine": "1"
     }
 }
  ```
@@ -28,19 +27,16 @@ A chart with crossline will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/sh917yad/ "@@open-newtab") to edit the above chart.
 
-## Customize crossline color
+## Customize Cross Line Color
 
 Specify the hex code of the cross line color using the `crossLineColor` attribute. Refer to the code below:
 
 ```
- {
+{
     "chart": {
-       ...
-        "crosslinecolor": "cc3300",
+        "crosslinecolor": "cc3300"
     }
- ... 
-  }
-
+}
 ```
 
 A multi-series column chart with a customized cross line looks like as shown below:
@@ -49,18 +45,16 @@ A multi-series column chart with a customized cross line looks like as shown bel
 
 Click [here](http://jsfiddle.net/fusioncharts/7yvjb38s/ "@@open-newtab") to edit the above chart.
 
-### Customize opacity
+### Customize Opacity
 
 Set the opacity of the crossline using the `crossLineAlpha` attribute. Refer to the code below:
 
 ```
- {
+{
     "chart": {
-       ...
-        "crossLineAlpha": "20",
+        "crossLineAlpha": "20"
     }
-  }
-
+}
 ```
 
 A multi-series column chart with a customized transparency (set to `20`) of the cross line looks like as shown below:
@@ -69,29 +63,26 @@ A multi-series column chart with a customized transparency (set to `20`) of the 
 
 Click [here](http://jsfiddle.net/fusioncharts/e94enLv1/ "@@open-newtab") to edit the above chart.
 
-### Enable/Disable animation
+### Enable/Disable Animation
 
 By default, the cross line animation is disabled. Set the `crossLineAnimation` attribute to`1` to enable the animation. Refer to the code below:
 
 ```
- {
+{
     "chart": {
-       ...
-        "crossLineAnimatiion": "1",
+        "crossLineAnimatiion": "1"
     }
-  }
-
+}
 ```
 
 If the animation is enabled, set the animation duration for the cross line of your chart using the `crossLineAnimationDuration` attribute. Refer to the code below:
 
 ```
- {
+{
     "chart": {
-       ...
-        "crossLineAnimatiionDuration": "10",
+        "crossLineAnimatiionDuration": "10"
     }
-  }
+}
 ```
 
 A multi-series area chart with animation enabled looks as below:
@@ -100,7 +91,7 @@ A multi-series area chart with animation enabled looks as below:
 
 Click [here](http://jsfiddle.net/fusioncharts/jLcL5eaz/ "@@open-newtab") to edit the above chart.
 
-## Set tooltip background color
+## Set Tooltip Background Color
 
 Tooltip is a common element, used to display information whenever you hover on a particular data point. A consolidated tooltip has been introduced with the cross line which can be used to get the detailed information of the hovered plots in a multi-series chart. 
 
@@ -109,12 +100,11 @@ By default the tooltip takes the color of the dataplot. Set the `plotColorInTool
 Refer to the code below:
 
 ```
- {
+{
     "chart": {
-       ...
-        "plotColorinTooltip": "0",
+        "plotColorinTooltip": "0"
     }
-  }
+}
 ```
 
 The chart will look like as shown in the image below:
@@ -126,12 +116,11 @@ Click [here](http://jsfiddle.net/fusioncharts/uyymusv0/ "@@open-newtab") to edit
 Set `tooltipGrayOutColor` attribute to specify the color of the unfocused plot in the tooltip. Refer to the code below:
 
 ```
- {
+{
     "chart": {
-       ...
-        "tooltipGrayOutColor": "#3377ff",
+        "tooltipGrayOutColor": "#3377ff"
     }
-  }
+}
 ```
 
 The chart will look like as shown below:
@@ -143,12 +132,11 @@ Click [here](http://jsfiddle.net/fusioncharts/46por5dL/ "@@open-newtab") to edit
 Specify the hex code of the tooltip background color using the `toolTipBgColor` attribute. Refer to the code below:
 
 ```
- {
+{
     "chart": {
-       ...
-        "toolTipBgColor": "#323232",
+        "toolTipBgColor": "#323232"
     }
-  }
+}
 ```
 
 The chart will look like as shown below:
@@ -157,7 +145,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/x2jvt5rh/ "@@open-newtab") to edit the above chart.
 
-## Customize tooltip border
+## Customize Tooltip Border
 
 To customize the tooltip border the following attributes are used:
 
@@ -168,13 +156,12 @@ To customize the tooltip border the following attributes are used:
 Refer to the code below: 
 
 ```
- {
+{
     "chart": {
-       ...
         "toolTipBorderColor": "#545454",
         "toolTipBorderThickness": "5"
     }
-  }
+}
 ```
 
 The chart will look like as shown below:
@@ -183,17 +170,16 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/zn0aqdze/ "@@open-newtab") to edit the above chart.
 
-## Set Separator Character for tooltip
+## Set Separator Character for Tooltip
 
 Specify the character to separate the name and the value displayed in the tooltip using the `toolTipSepChar` attribute. Refer to the code below:
 
 ```
- {
+{
     "chart": {
-       ...
-        "toolTipSepChar": ":",
+        "toolTipSepChar": ":"
     }
-  }
+}
 ```
 
 The chart will look like as shown below:
@@ -202,17 +188,16 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/xjbv3pq8/ "@@open-newtab") to edit the above chart.
 
-## Show/Hide tooltip shadow
+## Show/Hide Tooltip Shadow
 
 By default, the tooltip shadow is visible. To hide the tooltip shadow set the `showTooltipShadow` attribute to `0`. Refer to the code below:
 
 ```
- {
+{
     "chart": {
-       ...
-        "showTooltipShadow": "1",
+        "showTooltipShadow": "1"
     }
-  }
+}
 ```
 
 The chart will look like as shown below:

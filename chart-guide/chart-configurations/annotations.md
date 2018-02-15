@@ -37,68 +37,36 @@ In addition to creating annotations, you can:
 
 Now that you have seen what annotations look like and how useful they can be in making your charts informative, go ahead and see how you can create them.
 
-## How annotations work
+## How Annotations Work
 
 Annotations are defined inside the `annotations` object. This object has an array of `groups`, and each `group` element has a unique id. The `groups` object contains an array of `items`, each of which contains information on one specific annotation in the chart. 
 
 Organising annotations in groups is useful when you manipulate multiple annotations at once through API calls. Refer to the code below to understand the structure of a simple `annotations` object.
 
-```
+```json
 "annotations": {
-
-               "groups": [
-
-                   {
-
-                       "id": "custom-group-1",
-
-                       "items": [
-
-                           {
-
-                            // Item definition goes here
-
-                           },
-
-                           {
-
-                            // Item definition goes here
-
-                           },
-
-                           ]
-
-                   },
-
-                   {
-
-                       "id": "custom-group-2",
-
-                       "items": [
-
-                           {
-
-                            // Item definition goes here
-
-                           },
-
-                           {
-
-                            // Item definition goes here
-
-                           },
-
-                           ]
-
-                   },
-
-                   ]
-
+    "groups": [{
+        "id": "custom-group-1",
+        "items": [{
+            // Item definition goes here
+        },
+        {
+            // Item definition goes here
+        }]
+    },
+    {
+        "id": "custom-group-2",
+        "items": [{
+            // Item definition goes here
+        },
+        {
+            // Item definition goes here
+        }]
+    }]
 }
-
 ```
 
-## Use objects to create annotations
+## Use Objects to Create Annotations
 
 Use the following objects to create annotations:
 
@@ -108,7 +76,7 @@ Use the following objects to create annotations:
 
 * `items` is an object array that defines individual annotation items contained in one annotation group.
 
-## Add different types of annotations
+## Add Different types of Annotations
 
 You can add the following types of annotations to your chart:
 
@@ -122,56 +90,52 @@ You can add the following types of annotations to your chart:
 
 Refer to the basic JSON structure to create annotations, given below:
 
-```
+```json
 {
     "chart": {
         ...
     },
     "annotations": {
         "groups": [{
-                *//Annotation group 1*
-                *//Define a unique identification string for the group.*
-                "items": [
-                    *//Define individual annotation items.*
-                    {*//Annotation Item 1},*
-                    {*//Annotation Item 2},*
-                    ...
-                    {*//Annotation Item *n*}*
-                ]
-            }, {
-                *//Annotation group 2*
-                *//Define a unique identification string for the group.*
-                "items": [
-                    *//Define individual annotation items.*
-                    {*//Annotation Item 1},*
-                    {*//Annotation Item 2},*
-                    ...
-                    {*//Annotation Item *n*}*
-                ]
-            },
-            ...
-             {
-                *//Annotation group *n
-                *//Define a unique identification string for the group.*
-                "items": [
-                    *//Define individual annotation items.*
-                    {*//Annotation Item 1},*
-                    {*//Annotation Item 2},*
-                    ...
-                    {*//Annotation Item *n*}*
-                ]
-            },
-        ]
+            //Annotation group 1
+            //Define a unique identification string for the group.
+            "items": [
+                //Define individual annotation items.
+                {//Annotation Item 1},
+                {//Annotation Item 2},
+                ...
+                {//Annotation Item n}
+            ]
+        }, {
+            //Annotation group 2
+            //Define a unique identification string for the group.
+            "items": [
+                //Define individual annotation items.
+                {//Annotation Item 1},
+                {//Annotation Item 2},
+                ...
+                {//Annotation Item n}
+            ]
+        }, {
+            //Annotation group n
+            //Define a unique identification string for the group.
+            "items": [
+                //Define individual annotation items.
+                {//Annotation Item 1},
+                {//Annotation Item 2},
+                ...
+                {//Annotation Item n}
+            ]
+        }]
     }
 }
-
 ```
 
 The image of a chart rendered with different types of annotations items is shown below:
 
 ![Annotations]({% site.baseurl %}/images/chart-configurations-annotations-image-1.jpg)
 
-## Create text annotations
+## Create Text Annotations
 
 Use the following attributes to text annotations, to add notes, labels, or any other contextual text information to charts.
 
@@ -217,28 +181,27 @@ Adding this text to the chart makes it self-descriptive and easy for a user to u
 
 The JSON structure for creating text annotations is given below:
 
-```
-"chart": {
-    ...
-},
-"annotations": {
-    "groups": [{
-        "items": [{
-            //Text annotation 1
-            "type": "text",
-            //Define the attributes needed to create a text annotation
-            ...
-        },
+```json
+{
+    "chart": {
         ...
-        {
-            //Text annotation *n*
-            "type": "text",
-            //Define the attributes needed to create a text annotation
-            ...
+    },
+    "annotations": {
+        "groups": [{
+            "items": [{
+                //Text annotation 1
+                "type": "text",
+                //Define the attributes needed to create a text annotation
+                ...
+            }, {
+                //Text annotation n
+                "type": "text",
+                //Define the attributes needed to create a text annotation
+                ...
+            }]
         }]
-    }]
+    }
 }
-
 ```
 
 The column 2D chart rendered using text annotations looks like as shown below:
@@ -247,7 +210,7 @@ The column 2D chart rendered using text annotations looks like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/9xj50enk/ "@@open-newtab") to edit the above chart.
 
-## Create image annotations
+## Create Image Annotations
 
 Use the following attributes to create image annotations:
 
@@ -271,33 +234,32 @@ In this chart, images of brands are shown instead of the conventional 2D column 
 
 The JSON structure for creating image annotations is given below:
 
-```
-"chart": {
-    ...
-},
-"annotations": {
-    "groups": [{
-        "items": [{
-            //Image 1
-            "type": "image",
-            //Define the attributes needed to create the image annotation
-            ...
-        }, {
-            //Image 2
-            "type": "image",
-            //Define the attributes needed to create the image annotation
-            ...
-        },
+```json
+{
+    "chart": {
         ...
-        {
-            //Image *n*
-            "type": "image",
-            //Define the attributes needed to create the image annotation
-            ...
+    },
+    "annotations": {
+        "groups": [{
+            "items": [{
+                //Image 1
+                "type": "image",
+                //Define the attributes needed to create the image annotation
+                ...
+            }, {
+                //Image 2
+                "type": "image",
+                //Define the attributes needed to create the image annotation
+                ...
+            }, {
+                //Image n
+                "type": "image",
+                //Define the attributes needed to create the image annotation
+                ...
+            }]
         }]
-    }]
+    }
 }
-
 ```
 
 The column 2D charts with image annotations looks like:
@@ -306,7 +268,7 @@ The column 2D charts with image annotations looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/49dJJ/ "@@open-newtab") to edit the above chart.
 
-## Create shape annotations
+## Create Shape Annotations
 
 You can draw annotations in any of the following shapes using FusionCharts Suite XT:
 
@@ -348,28 +310,29 @@ Use the following attributes to create shape annotations:
 
 The JSON structure to create shape annotation is given below:
 
-```
-"chart": {
+```json
+{
+    "chart": {
         ...
-},
-"annotations": {
-    "groups": [{
-        "items": [{
-          //Shape 1
-            "type": ""//appropriate value according to required shape type, discussed later in this article,
-            ...
-        }, {
-            //Shape 2
-            "type": ""//appropriate value according to required shape type, discussed later in this article,
-            ...
-        }, {
-          //Shape *n*
-            "type": ""//appropriate value according to required shape type, discussed later in this article,
-            ...
+    },
+    "annotations": {
+        "groups": [{
+            "items": [{
+                //Shape 1
+                "type": ""//appropriate value according to required shape type, discussed later in this article,
+                ...
+            }, {
+                //Shape 2
+                "type": ""//appropriate value according to required shape type, discussed later in this article,
+                ...
+            }, {
+                //Shape *n*
+                "type": ""//appropriate value according to required shape type, discussed later in this article,
+                ...
+            }]
         }]
-    }]
+    }
 }
-
 ```
 
 The chart will look like as shown below:
@@ -484,7 +447,7 @@ An arc annotation will look as given below:
 
 ![Arc]({% site.baseurl %}/images/chart-configurations-annotations-image-6.jpg)
 
-### How to create path annotations
+### Create Path Annotations
 
 You can draw free-form graphic elements on your charts using the `path` annotation. Use the following attributes to create path annotations:
 
@@ -506,23 +469,21 @@ The rectangle drawn to highlight the lowest footfall is created using the path a
 
 The JSON structure for creating path annotations is given below:
 
-```
+```json
 {
     "chart": {
-        …
+        ...
     },
     "annotations": {
         "groups": [{
             "items": [{
                 "type": "path",
                 //Define the attributes needed to create the path annotation
-                …
+                ...
             }]
         }]
     }
-    …
 }
-
 ```
 
 The chart will look like as shown below:
@@ -541,7 +502,7 @@ You can position annotations using:
 
 * Macros - that take dynamic values relative to chart elements
 
-### Absolute values
+### Absolute Values
 
 In this section, you will see how to position annotations using static values. The attributes used to position annotations are as follows:
 
@@ -565,31 +526,30 @@ In this section, you will see how to position annotations using static values. T
 
 The code snippet to position the rectangle annotation is given below:
 
-```
-...
-"annotations": {
+```json
+{
+    "chart": {
         ...
-    "groups": [{
+    }
+    "annotations": {
+            ...
+        "groups": [{
             "items": [{
-                    "id": "dyn-labelBG",
-                    "type": "rectangle",
-                    "radius": "3",
-                    "x": "290",
-                    "y": "60",
-                    "tox": "390",
-                    "toy": "90",
-                    "color": "#0075c2",
-                    "alpha": "70",
-                    "origW": "400",
-                    "origH": "300"
-                },
-                ...
-            ]
-        }
-    ]
+                "id": "dyn-labelBG",
+                "type": "rectangle",        
+                "radius": "3",
+                "x": "290",
+                "y": "60",
+                "tox": "390",
+                "toy": "90",
+                "color": "#0075c2",
+                "alpha": "70",
+                "origW": "400",
+                "origH": "300"        
+            }]
+        }]
+    }
 }
-...
-
 ```
 
 A spline chart with a rectangle annotation and a text annotation positioned at the top-right corner of the canvas is shown below:

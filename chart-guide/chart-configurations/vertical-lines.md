@@ -9,7 +9,7 @@ Vertical (or horizontal in case of bar charts) separator lines or `vlines` are e
 
 ![Vertical lines]({% site.baseurl %}/images/chart-configurations-vertical-lines-image-1.png)
 
-## Set vertical lines
+## Set Vertical Lines
 
 By default, the vertical lines do not appear. To display a vertical line follow the steps below:
 
@@ -23,7 +23,7 @@ By default, the vertical lines do not appear. To display a vertical line follow 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
        ...
@@ -46,8 +46,7 @@ Refer to the code below:
         "value": "6202"
     }]
 }
-
- ```
+```
 
 The chart will look like as shown below:
 
@@ -55,11 +54,11 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/L5dfydco/ "@@open-newtab") to edit the above chart.
 
-### Configure label positions
+### Configure Label Positions
 
 To set the position of the label, specify the position using the `labelPosition` attribute. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         ...
@@ -91,7 +90,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/kLwfdgL0/ "@@open-newtab") to edit the above chart.
 
-### Configure label alignment
+### Configure Label Alignment
 
 To configure the alignment of the label the following attributes are used:
 
@@ -101,7 +100,7 @@ To configure the alignment of the label the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         ...
@@ -135,13 +134,13 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/2ht3njrb/ "@@open-newtab") to edit the above chart.
 
-## Show label borders
+## Show Label Borders
 
 To add borders to the label set the `showVLineLableBorder` to `1` within the `chart` object. This attribute is used to show borders for the labels of all the vertical lines.
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "showVLineLabelBorder": "1"
@@ -179,7 +178,7 @@ In order to show label borders for specific vertical lines, set the `showLabelBo
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         ...
@@ -214,7 +213,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/6zL3r5d1/ "@@open-newtab") to edit the above chart.
 
-## Customize visual properties
+## Customize Visual Properties
 
 To customize the visual properties of the vertical line the following attributes are used:
 
@@ -232,7 +231,7 @@ To customize the visual properties of the vertical line the following attributes
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         ...

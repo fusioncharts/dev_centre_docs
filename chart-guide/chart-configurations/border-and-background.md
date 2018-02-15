@@ -17,13 +17,12 @@ By default, the chart borders are visible for 2D charts. To hide the chart borde
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "showBorder": "1",
     }
 }
-
 ```
 The chart without border will look like as shown below:
 
@@ -31,7 +30,7 @@ The chart without border will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/b58ma056/ "@@open-newtab") to edit the above chart.
 
-## Customize chart borders
+## Customize Chart Borders
 
 To customize the chart border the following attributes are used:
 
@@ -43,17 +42,14 @@ To customize the chart border the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-       ...
         "borderColor": "#666666",
         "borderThickness": "4",
-        "borderAlpha": "80",
-       ...
+        "borderAlpha": "80"
     }
 }
-
 ```
 
 The chart will look like as shown below:
@@ -62,7 +58,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/5vj22scs/ "@@open-newtab") to edit the above chart.
 
-### Customize chart background
+### Customize Chart Background
 
 To customize the chart background the following attributes are used:
 
@@ -72,16 +68,13 @@ To customize the chart background the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "bgColor": "#DDDDDD",
-        "bgAlpha": "50",
-        ...
+        "bgAlpha": "50"
     }
 }
-
 ```
 
 The chart will look like as shown below:
@@ -90,7 +83,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/c5o8spm5/ "@@open-newtab") to edit the above chart.
 
-## Use gradient background
+## Use Gradient Background
 
 When using a gradient fill for the background, you can configure three aspects:
 
@@ -112,17 +105,15 @@ To do so, the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "bgColor": "EEEEEE,CCCCCC",
         "bgratio": "60,40",
         "bgAlpha": "70,80",
         "bgAngle": "180"
     }
 }
-
 ```
 
 The chart will look like as shown in the image below:
@@ -131,18 +122,16 @@ The chart will look like as shown in the image below:
 
 Click [here](http://jsfiddle.net/fusioncharts/73h05m4q/ "@@open-newtab") to edit the above chart.
 
-## Use external image
+## Use External Image
 
 You can specify an external image (GIF, JPEG or PNG only) as the background of the chart. Use the `bgImage` attribute to specify the **URL** of the external image as shown in the code below:
 
-```
+```json
 {
-
-    "chart":{ 
-    ...   
-    "bgImage":"pizza.jpg"
-},
-
+    "chart":{
+        "bgImage":"pizza.jpg"
+    }
+}    
 ```
 
 The chart will look like as shown below:
@@ -151,7 +140,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/ceqLLtwk/ "@@open-newtab") to edit the above chart.
 
-## Customize background image
+## Customize Background Image
 
 You can even customize the external image rendered as the chart background. To do so, the following attributes are used:
 
@@ -165,22 +154,17 @@ You can even customize the external image rendered as the chart background. To d
 
 Refer to the code below:
 
-```
+```json
 {
-
     "chart":{
-        ...    
         "bgImage":"pizza.jpg",
         "bgImageAlpha":"30",
         "bgImageScale":"50",
         "bgImageVAlign":"bottom",
         "bgImageHAlign":"middle",
         "bgImageDisplayMode":"center",
-        ...
-    },
-    ...
+    }
 }  
-
 ```
 
 The chart will look like as shown in the image below:

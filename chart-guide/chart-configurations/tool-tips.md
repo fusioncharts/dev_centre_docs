@@ -15,7 +15,7 @@ A tooltip is displayed when the mouse is hovered over a particular data point. I
 
 ![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-1.png)
 
-## Show/hide tooltips
+## Show/Hide Tooltips
 
 By default, the tooltip is displayed. To hide the tool tip set the `showToolTip` attribute to `0`. 
 
@@ -28,7 +28,7 @@ Refer to the code below:
     }
 }
 ```
-## Customize tooltips
+## Customize Tooltips
 
 To customize the tooltip use the following attributes:
 
@@ -59,7 +59,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/df92k3t5/ "@@open-newtab") to edit the above chart.
 
-## Display multiline tooltip text
+## Display Multiline Tooltip Text
 
 By default, a tooltip shows the data item name and value in a single line of text. However, if you want to display more information on the tooltip, you can use the attribute `tooltext`to show the text in multiline format.
 
@@ -99,7 +99,7 @@ Keep the following pointers in mind when using macros:
 
 * Tooltext can also be configured from corresponding parent nodes (that is, chart, dataset, etc).
 
-### How to use tooltip macros
+### How to use Tooltip Macros
 
 To configure tooltip text with tooltip macros, set a custom tooltip using `plotToolText` attribute. The attribute accepts macros, plain text and HTML tags, as strings to create custom tooltip text for data plots. You can use the following attributes with `plotToolText`:
 
@@ -127,7 +127,7 @@ Click [here](http://jsfiddle.net/fusioncharts/j1327y7v/ "@@open-newtab") to edit
 
 > In the chart above, if the data plot value is 750000 and you use `$value`, `750000` will be rendered as the value. However, if you use `$dataValue`, then `$750K` will be rendered as the value.
 
-### Other attributes
+### Other Attributes
 
 The following are some of the FusionCharts attributes that take tooltip macros as values. You can use these to customize tooltip text for the various chart elements.
 
@@ -161,7 +161,7 @@ The following are some of the FusionCharts attributes that take tooltip macros a
 
 * Customize tooltip text for the mean deviation icon in the Box and Whisker charts using the `MDTooltext` attribute under the `dataset` and `data` objects. It accepts macros, plain text, and HTML tags, as strings.
 
-### Tooltip macros: Additional examples
+### Tooltip Macros: Additional Examples
 
 FusionCharts Suite XT includes about a 100 macros that you can use to customize the text and the formatting of tooltips.
 

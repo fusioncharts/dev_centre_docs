@@ -9,11 +9,11 @@ Integrate multiple charts on a single page to get a consolidated view. To do thi
 
 FusionCharts Suite XT lets you specify the dimensions of charts either in pixels or percentage values, relative to the containers. If the size is specified in pixels, then the dimensions of a chart remain constant, no matter the viewing device or screen size. However, if the dimensions are set as a percentage of the container, the chart converts that `%` value into pixels while rendering. When the container size changes, the chart is automatically resized accordingly.
 
-## Set width and height in pixels during initialization
+## Set Width and Height in Pixels
 
-To set the `width` and `height` you just need to provide the numeric values, and NOT add "px" at the end of such values. Refer to the code  below:
+To set the `width` and `height` you just need to provide the numeric values, and not add "px" at the end of such values. Refer to the code  below:
 
-```
+```json
 {
     "type": "column2d",
     "renderAt": "chartContainer",
@@ -24,18 +24,16 @@ To set the `width` and `height` you just need to provide the numeric values, and
         "chart": {
             ...
         },
-
         "data": []
     }
 }
-
 ```
 
-## Set width and height in percentage during initialization
+## Set Width and Height in Percentage
 
 If you want to create a chart that automatically resizes when its parent container (another `<div>` or the entire window) resizes, here's how you can set the `width` and `height` of the chart:
 
-```
+```json
 {
 
     "type": "column2d",
@@ -47,7 +45,6 @@ If you want to create a chart that automatically resizes when its parent contain
         "chart": {
             ...
         },
-
         "data": []
     }
 }
@@ -56,7 +53,7 @@ Ensure that you set the parent container of the chart in a way that allows its d
 
 > In certain cases, if the HTML container element itself has not acquired proper width or height (due to error in rendering by browser), the chart might look squeezed, or it may not render in the first place. If this happens, then you have to specify the chart's dimensions in pixels.
 
-## Dynamically change dimensions
+## Dynamically Change Dimensions
 
 After you initialize a chart, you can change the dimensions dynamically, at client-side, through the JavaScript API `resizeTo()`.
 
@@ -68,7 +65,7 @@ Take a look at an example below, along with the code:
 
 Click [here](http://jsfiddle.net/fusioncharts/5Lpu0hrt/ "@@open-newtab") to edit the above chart.
 
-## Dynamically change chart type 
+## Dynamically Change Chart Type 
 
 You can convert a column chart to a line chart at the click of a button, to compare trends in the data. The standard approach for this would be to create an instance of line chart, pass it the same JSON data, and then render it.
 

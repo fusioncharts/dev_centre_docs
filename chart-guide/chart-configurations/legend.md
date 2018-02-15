@@ -13,7 +13,7 @@ In the following image, the legend rendered below the x-axis helps identify the 
 
 ![Legend]({% site.baseurl %}/images/chart-configurations-legend-image-1.png)
 
-## Show/hide the legends
+## Show/Hide the Legends
 
 To show/hide the legends, set the `showLegend` attribute to 1/0. The default value of this attribute is `1`.
 
@@ -35,7 +35,7 @@ Click [here](http://jsfiddle.net/fusioncharts/gdu2539p/ "@@open-newtab") to edit
 
 In the chart shown above, when you click the legend icon for **Last Year**, all data plots in blue, (showing the quarterly revenue for the last year) are hidden.
 
-## Show/hide data plots via the legend
+## Show/Hide Data Plots via the Legend
 
 With FusionCharts Suite XT, show/hide the data plots belonging to a data series by clicking the corresponding legend icon. The legend interaction can also be disabled using `interactiveLegend` attribute. The default value of this attribute is `1`. Let's check out a sample without interactive legend.
 
@@ -55,7 +55,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/u2q9Lte5/ "@@open-newtab") to edit the above chart.
 
-## Highlight a data series via the legend
+## Highlight a Data Series via the Legend
 
 Hover the mouse pointer over a legend text to highlight corresponding data plots in the chart. Whenever you do this, the chart reduces the opacity of the data plots belonging to other data series, making the one you clicked on stand out prominently. 
 
@@ -79,7 +79,7 @@ Click [here](http://jsfiddle.net/fusioncharts/sf0owgb4/ "@@open-newtab") to edit
 
 In the chart shown above, when the mouse pointer is hovered over the legend text **This Year**, the data plots in blue (corresponding to **Last Year**) fade out and the data plots in green (corresponding to **This Year**) are highlighted.
 
-### Customize the highlight effect
+### Customize the Highlight Effect
 
 Instead of just reducing the opacity of the data plots that don't correspond to the hovered over legend text, you can customize a different effect.
 
@@ -179,7 +179,7 @@ Refer to the code below:
 
 Click [here](http://jsfiddle.net/fusioncharts/kj9bofzm/ "@@open-newtab") to edit the above chart.
 
-## Set the legend position
+## Set the Legend Position
 
 Use the following attributes to set legend position:
 
@@ -204,7 +204,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/5smv4kg4/ "@@open-newtab") to edit the above chart.
 
-## Configure legend icon size
+## Configure Legend Icon Size
 
 Specify the legend icon size using the `legendIconScale` attribute. You can control the size of legend icon with values from `1` (100%) to `5` (500%).
 
@@ -224,7 +224,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/0ca9wu47/ "@@open-newtab") to edit the above chart.
 
-## Draw a custom legend icon shape
+## Draw a Custom Legend Icon Shape
 
 Use the following attributes to draw a custom legend icon shape:
 
@@ -239,6 +239,7 @@ Refer to the code below:
     }
 }
 ```
+
 * By default, the background color of the icons are same as that of the plot colors. Specify the hex color code for the background of the legend icon using the `legendIconBgColor` attribute. 
 
 * Set the legend icon transparency using the `legendIconAlpha` attribute. It takes values between `0` (transparent) and `100` (opaque; default).
@@ -284,7 +285,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/x8182enw/ "@@open-newtab") to edit the above chart.
 
-## Customize legend scroll bar
+## Customize Legend Scroll Bar
 
 If you have multiple data items in a multi-series chart, the legend automatically displays a scroll bar. Use the following attributes to customize cosmetic properties of the scroll bar:
 
@@ -309,7 +310,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/8qzuqa1m/ "@@open-newtab") to edit the above chart.
 
-## Reverse legend order
+## Reverse Legend Order
 
 Set the value of `reverseLegend` attribute to `1`, to reverse the order of datasets in the legend. 
 
@@ -329,7 +330,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/Lgq5tcko/ "@@open-newtab") to edit the above chart.
 
-## Hide data series upon loading
+## Hide Data Series upon Loading
 
 Set the value of `initiallyHidden`attribute to `1`, to hide the data plots of a data series initially, on chart load. The plots will become visible when you click on the name of the series in the legend. This attribute works from the `dataset` object level in JSON data, and by default takes the value of `0`, thereby displaying data plots of every series when you load the chart. 
 
@@ -352,7 +353,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/vhydr4f9/ "@@open-newtab") to edit the above chart.
 
-## Customize legend appearance
+## Customize Legend Appearance
 
 Use the following attributes used to customize legend appearance:
 
@@ -413,7 +414,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/Laqyo45v/ "@@open-newtab") to edit the above chart.
 
-## Customize legend font cosmetics
+## Customize Legend Font Cosmetics
 
 Use the following attributes to customize the legend font cosmetics:
 
