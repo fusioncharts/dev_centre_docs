@@ -5,6 +5,8 @@ heading: Candlestick Chart
 breadcrumb: [["Home", "/"], ["Candlestick Charts"]]
 ---
 
+> This chart type belongs to PowerCharts XT.
+
 A candlestick chart is widely used for applications that require analysis of equity and commodity prices. It allows you to show the opening price, closing price, highest trading price, lowest trading price, and the trade volume on a single chart. A combination of the line and bar charts, a candlestick chart represents the range of price movement for a specific time interval.
 
 The FusionCharts Suite XT candlestick chart offers you a powerful and interactive interface to plot your stock data. It offers the following features:
@@ -94,7 +96,7 @@ Refer to the code below:
 }
 ```
 
-For a detailed list of attributes you can check the API reference page of candlestick chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=candlestick "@@open-newtab") page of candlestick chart.
 
 The candlestick chart thus created will look like:
 
@@ -243,8 +245,6 @@ Refer to the code below:
     "dashGap": "4"
 }]
 ```
-
-For a detailed list of attributes you can check the API reference page of candlestick chart.
 
 A candlestick chart rendered with a trend-set looks like this:
 

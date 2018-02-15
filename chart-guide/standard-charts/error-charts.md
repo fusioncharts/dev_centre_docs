@@ -5,6 +5,8 @@ heading: Error Charts
 breadcrumb: [["Home", "/"], ["Error Charts"]]
 ---
 
+> This chart type belongs to PowerCharts XT.
+
 An error chart is used to show the extent of uncertainty in information relative to an average value. Error charts can be used to show the range of values that can be taken up by a data point, instead of being restricted to a point value. Errors are indicated by distinct I-shaped bars that are both positive and negative. Typically the I-bars represent the standard deviation in a measurement indicating the degree of variance observed in a data point. Error charts give a general idea of the accuracy of information or, conversely, the amount of variation in data from it's expected value.
 
 ## Use of Error Charts
@@ -61,6 +63,8 @@ To create an error bar chart follow the steps given below:
 
 * Set the `errorValue` attribute to specify error value that will be plotted as the error bar on the chart. This attribute belongs to the `data` object, which belongs to the `dataset` object.
 
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=errorbar2d "@@open-newtab") page of error bar chart.
+
 An error bar chart thus created looks like this:
 
 {% embed_all standard-charts-error-charts-example-1.js %}
@@ -70,6 +74,8 @@ Click [here](http://jsfiddle.net/fusioncharts/7Z4Ha/ "@@open-newtab") to edit th
 ## Error Line Chart
 
 Now, let's create an **error line** chart that compares the estimated procurement from two suppliers. To render an error line chart, change the value of the `type` attribute from `errorbar2d` to `errorline`. The rest of the data structure remains the same.
+
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=errorline "@@open-newtab") page of error line chart.
 
 An error line chart thus created looks like:
 
@@ -92,6 +98,8 @@ To render an error scatter chart, follow the steps given below:
 * Set the `y` attribute to specify the numeric y value needed to plot a data item. This attribute belongs to the `data` object, which belongs to the `dataset` object.
 
 * Set the `verticalErrorValue` to specify the range of possible vertical deviation values that will be plotted as the error bar on the chart. This attribute also belongs to the `data` object, which belongs to the `dataset` object.
+
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=errorscatter "@@open-newtab") page of error scatter chart.
 
 The error scatter chart will look like:
 
