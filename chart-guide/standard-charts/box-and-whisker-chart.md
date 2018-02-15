@@ -5,6 +5,8 @@ heading: Box and Whisker Chart
 breadcrumb: [["Home", "/"], ["Box and Whisker Chart"]]
 ---
 
+> This chart type belongs to PowerCharts XT.
+
 A box and whisker chart is a statistical chart that is used to examine and summarize a range of data values. It shows a frequency distribution of the data that helps in interpreting the distribution of data. It draws a statistical conclusion for the given data using the five number summary principle. The box and whisker chart is very useful to observe the mean, median, upper and lower quartiles, deviations, etc. for a huge set of data. It is used mostly used in chemical industries and weapon industries.
 
 ## Features
@@ -47,9 +49,9 @@ To execute the five-number summary principle, we use the quartiles method. Using
 
 > There are two other methods, Deciles, and Percentiles, that are used to execute the five-number summary, which has not been used in this implementation.
 
-We will now look at some of the formulae that are used to plot data on a box and whisker chart.
+We will now look at some of the formula that are used to plot data on a box and whisker chart.
 
-> All the formulae are calculated after sorting the provided set of data in ascending order.
+> All the formula are calculated after sorting the provided set of data in ascending order.
 
 ### Mean
 
@@ -131,7 +133,7 @@ To create a box and whisker chart, keep a note of the steps given below:
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         ...
@@ -153,7 +155,7 @@ Refer to the code given below:
 
 ```
 
-For a detailed list of attributes refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=boxandwhisker2d "@@open-newtab")  page of box and whisker chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=boxandwhisker2d "@@open-newtab") page of box and whisker chart.
 
 The box and whisker chart looks like:
 
@@ -175,7 +177,7 @@ For the detailed list of attributes to configure legend, refer to the API refere
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
     	"showLegend": "1",
@@ -199,7 +201,7 @@ Let's customize the five summary numbers and their deviations plotted on a box a
 
 A box and whisker chart with three of the five summary numbers - the minimum and maximum numbers and the median - shown. To set the display of the summary numbers, follow the points given below:
 
-* Set the `showvalues` attribute to display the five number summary on the chart. The default value of this attribute is `1` which shows the values in the chart, whereas setting it to `0` will hide the values.
+* Set the `showValues` attribute to display the five number summary on the chart. The default value of this attribute is `1` which shows the values in the chart, whereas setting it to `0` will hide the values.
 
 * To hide the minimum value (or the lower limit) of each data plot, set the `showMinValues` attribute to `0`. The default value for this attribute is `1`.
 
@@ -215,7 +217,7 @@ A box and whisker chart with three of the five summary numbers - the minimum and
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "showvalues": "1",
@@ -249,7 +251,7 @@ To selectively show summary numbers on the chart, firstly set the `showValues` a
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "showQ1Values": "0",
@@ -266,7 +268,7 @@ You can also configure the box and whisker chart to show all five summary number
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "showQ1values": "1",
@@ -294,7 +296,7 @@ To customize the median, follow the steps given below:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "medianColor": "ff0000",
@@ -322,7 +324,7 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 
 * Set the `upperQuartileAlpha` attribute to specify the transparency of the upper quartile line. This attribute takes values between `0` (transparent) and `100` (opaque).
 
-```
+```json
 {
     "chart": {
         //The color of the upper quartile set to Red
@@ -340,7 +342,7 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 
 * Set the `upperBoxAlpha` attribute to specify the transparency of the upper quartile box. This attribute takes values between `0` (transparent) and `100` (opaque).
 
-```
+```json
 {
     "chart": {
         "upperBoxColor": "ff0000",
@@ -355,7 +357,7 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 
 * Set the `upperBoxBorderThickness` attribute to specify the thickness for the two sides of upper quartile box.
 
-```
+```json
 {
     "chart": {
         "upperBoxBorderColor": "ff0000",
@@ -372,7 +374,7 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 
 * Set the `lowerQuartileAlpha` attribute to specify the transparency of the lower quartile line. This attribute takes values between `0` (transparent) and `100` (opaque).
 
-```
+```json
 {
     "chart": {
         "lowerQuartileColor": "ff0000",
@@ -396,7 +398,7 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "lowerBoxColor": "ff0000",
@@ -436,7 +438,7 @@ To customize the whiskers, follow the points given below:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "upperWhiskerColor": "ff0000",
@@ -472,7 +474,7 @@ To show the mean deviation icon in the legend set the `showMean` attribute to `1
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "showMean": "1"
@@ -502,7 +504,7 @@ To customize the mean icon in the box and whisker chart, follow the points given
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "meanIconRadius": "5",
@@ -527,7 +529,7 @@ For multiple data plots, you can draw a line to connect the mean values of each 
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "drawMeanConnector": "1"
@@ -549,7 +551,7 @@ In the chart shown below, a connector is drawn connecting the mean deviation ico
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "connectNullData": "1"
@@ -579,7 +581,7 @@ A box and whisker chart with the mean deviation icon can be shown in the legend 
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "showMD": "1"
@@ -609,7 +611,7 @@ To customize the mean deviation icon, follow the points given below:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "mdIconRadius": "5"
@@ -635,7 +637,7 @@ For multiple data plots, you can draw a line to connect the mean deviation icons
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "drawMDConnector": "1"
@@ -657,7 +659,7 @@ In the chart shown below, a connector is drawn connecting the mean deviation ico
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "connectNullData": "1"
@@ -680,7 +682,7 @@ A box and whisker chart with the standard deviation icon can be shown in the leg
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "showSD": "1"
@@ -712,7 +714,7 @@ To customize the standard deviation icon, follow the points given below:
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "sdIconRadius": "5",
@@ -737,7 +739,7 @@ For multiple data plots, you can draw a line to connect the standard deviation i
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "drawSDConnector": "1"
@@ -758,7 +760,7 @@ In the chart shown below, a connector is drawn connecting the standard deviation
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "connectNullData": "1"
@@ -780,7 +782,7 @@ A box and whisker chart with the quartile deviation icon can be shown in the leg
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "showQD": "1"
@@ -811,7 +813,7 @@ To customize the quartile deviation icon, follow the points given below:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "qdIconRadius": "5",
@@ -837,7 +839,7 @@ For multiple data plots, you can draw a line to connect the quartile deviation i
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "drawQDConnector": "1"
@@ -859,7 +861,7 @@ In the chart shown below, a connector is drawn connecting the quartile deviation
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "connectNullData": "1"
@@ -895,7 +897,7 @@ To customize the outlier icon, follow the points given below:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         ...

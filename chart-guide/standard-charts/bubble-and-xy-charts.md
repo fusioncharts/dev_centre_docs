@@ -5,6 +5,8 @@ heading: Bubble and XY Charts
 breadcrumb: [["Home", "/"], ["Bubble and XY Charts"]]
 ---
 
+> This chart type belongs to FusionCharts XT.
+
 Bubble and XY charts are used for plotting data that can be defined in terms of multiple numeric parameters. In these charts, the x and y axes are numeric. So, the position of a data point is an indicator of two distinct numeric values.
 
 The XY charts available in the FusionCharts Suite XT are:
@@ -31,7 +33,7 @@ To create a scatter chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, you can check the API reference page of scatter chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=scatter "@@open-newtab") page of scatter chart.
 
 A scatter chart for the above code looks like:
 
@@ -45,7 +47,7 @@ Bubble charts are used for plotting data that is defined in terms of three numer
 
 So let's create a bubble chart showing sales analysis of shoes of different brands for Harry's SuperMart for last month. Specify the chart type using the `type` attribute. To render a bubble chart, set `bubble`.
 
-For a detailed list of attributes, you can check the API reference page of the bubble chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bubble "@@open-newtab") page of bubble chart.
 
 A bubble chart for the above code looks like:
 
@@ -69,7 +71,7 @@ By default, data labels are not rendered on the bubbles in a bubble chart. To sh
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "showValues": "1"
@@ -214,7 +216,7 @@ Configure the vertical divisional lines, by following the points below:
 
 * By default, all divisional lines show their values. However, opt to skip every x(th) divisional line values using `xAxisValuesStep` attribute.
 
-```
+```json
 {
     "chart": {
         "adjustVDiv": "1",
@@ -237,7 +239,7 @@ Configure the vertical divisional lines, by following the points below:
 
 * Set the `vDivlineDashGap` attribute to specify the gap between each dash.
 
-```
+```json
 {
     "chart": {
         "vDivlineColor": "ff0000",
@@ -256,7 +258,7 @@ Configure the vertical divisional lines, by following the points below:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "showAlternateVGridColor": "1",
@@ -278,7 +280,7 @@ In scatter charts, you can connect the scatter plots by a line. Set the `drawLin
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "drawLine": "1"
@@ -306,7 +308,7 @@ To show the regression lines in the chart, set the `showRegressionLine` attribut
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
     ...
@@ -346,7 +348,7 @@ Here, let's try out the same chart with the regression lines drawn using the **X
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "showYonX": "1",
@@ -375,7 +377,7 @@ Dividing the canvas of a bubble/scatter chart into quadrants makes the analysis 
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "drawQuadrant": "1"
@@ -393,20 +395,16 @@ A bubble chart rendered with quadrants can also be drawn at user-defined positio
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
-
         //Drawing quadrants on chart
-
         "drawQuadrant": "1",
 
         //Setting x quadrant value to 54
-
         "quadrantXVal": "54",
 
         //Setting y quadrant value to 12000
-
         "quadrantYVal": "12000"
     }
 }
@@ -432,7 +430,7 @@ In XY charts you can also set the label for all individual quadrants. To add lab
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
 
@@ -454,11 +452,9 @@ Click [here](http://jsfiddle.net/fusioncharts/ot94tuqg/ "@@open-newtab") to edit
 
 The quadrant labels shown in the above chart can be customized according to the use case. Each cosmetic property can be customized by setting the attribute for it. You can customize the font, font color, the transparency and the size of the font. The cosmetics of the label border and the background can also be customized if required.  
 
-For a detailed list of attributes to customize the quadrant labels of the bubble chart, refer to the API reference page.
-
 We'll create a sample using some of the cosmetic properties for the quadrant labels. Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "quadrantLabelFontItalic": "1",
@@ -497,22 +493,15 @@ Customize the quadrant lines in the bubble chart using the list of attributes gi
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
-
         "quadrantLineThickness": "2",
-
         "quadrantLineAlpha": "30",
-
         "quadrantLineColor": "#ac3d44",
-
         "quadrantLineIsDashed": "1",
-
         "quadrantLineDashLen": "2",
-
         "quadrantLineDashGap": "3",
-
         "quadrantLabelPadding": "5"
     }
 }
