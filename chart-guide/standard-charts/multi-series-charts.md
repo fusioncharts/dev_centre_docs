@@ -5,7 +5,7 @@ heading: Multi-series Charts
 breadcrumb: [["Home", "/"], ["Multi-Series Charts"]]
 ---
 
-> This chart type belongs to FusionCharts XT.
+> These chart types belong to **FusionCharts XT**.
 
 FusionCharts Suite XT includes multi-series charts that allow to plot data for multiple datasets. For example, you can plot the revenue collected each month for the last two years using a multi-series chart. Multi-series charts allow to plot the highs and lows of multiple datasets while also comparing them.
 

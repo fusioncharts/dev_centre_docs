@@ -5,7 +5,7 @@ heading: Select-scatter Chart
 breadcrumb: [["Home", "/"], ["Select-scatter Chart"]]
 ---
 
-> This chart type belongs to PowerCharts XT.
+> This chart type belongs to **PowerCharts XT**.
 
 The select-scatter chart is a special type of chart that allows users to visually select a subset of data from the given data points. Essentially, it is an extension of the XY plot chart (scatter chart) with the added functionality of selecting any number of points on the chart and returning them to the server, or JavaScript functions, for further processing.
 

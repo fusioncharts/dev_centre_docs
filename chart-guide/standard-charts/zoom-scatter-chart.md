@@ -5,7 +5,7 @@ heading: Zoom Scatter Chart
 breadcrumb: [["Home", "/"], ["Zoom Scatter Chart"]]
 ---
 
-> This chart type belongs to FusionCharts XT.
+> This chart type belongs to **FusionCharts XT**.
 
 The FusionCharts Suite XT zoom-scatter chart, a special type of chart, is an extension of the scatter chart with the zooming and panning features and the ability to display millions of data points because of these features.
 

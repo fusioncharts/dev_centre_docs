@@ -5,7 +5,7 @@ heading: Scroll Chart
 breadcrumb: [["Home", "/"], ["Scroll Chart"]]
 ---
 
-> This chart type belongs to FusionCharts XT.
+> These chart types belong to **FusionCharts XT**.
 
 Scroll charts are used to avoid cluttering of plots, thereby providing a clean look. Scroll charts can show a larger number of data plots in a small space.
 

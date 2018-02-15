@@ -5,7 +5,7 @@ heading: Pareto Chart
 breadcrumb: [["Home", "/"], ["Pareto Chart"]]
 ---
 
-> This chart type belongs to FusionCharts XT.
+> These chart types belong to **FusionCharts XT**.
 
 A Pareto chart, named after Vilfredo Pareto, is a type of chart that combines the column chart with the line chart. The data values in a Pareto chart are represented by columns, which are arranged in descending order of magnitude. The cumulative total of these values is shown by an upward curving line. Pareto charts are used for isolating the key causes of a problem. They can also be used for determining the key factors of success.
 

@@ -5,7 +5,7 @@ heading: Line, Area and Column charts
 breadcrumb: [["Home", "/"], ["Line, Area and Column Charts"]]
 ---
 
-> This chart type belongs to FusionCharts XT.
+> These chart types belong to **FusionCharts XT**.
 
 ## Column 2D Chart
 

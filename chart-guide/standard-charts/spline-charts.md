@@ -5,7 +5,7 @@ heading: Spline Charts
 breadcrumb: [["Home", "/"], ["Spline Charts"]]
 ---
 
-> This chart type belongs to PowerCharts XT.
+> These chart types belong to **PowerCharts XT**.
 
 Spline charts are a specialized form of line charts that display smooth curves through the different data points. It integrates all the characteristics of a conventional line chart except for the fact that unlike line charts, which connect data points with straight lines, spline charts draw a fitted curved line to join the data points.
 

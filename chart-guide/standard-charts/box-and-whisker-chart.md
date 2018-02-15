@@ -5,7 +5,7 @@ heading: Box and Whisker Chart
 breadcrumb: [["Home", "/"], ["Box and Whisker Chart"]]
 ---
 
-> This chart type belongs to PowerCharts XT.
+> This chart type belongs to **PowerCharts XT**.
 
 A box and whisker chart is a statistical chart that is used to examine and summarize a range of data values. It shows a frequency distribution of the data that helps in interpreting the distribution of data. It draws a statistical conclusion for the given data using the five number summary principle. The box and whisker chart is very useful to observe the mean, median, upper and lower quartiles, deviations, etc. for a huge set of data. It is used mostly used in chemical industries and weapon industries.
 

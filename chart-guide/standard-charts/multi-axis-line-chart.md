@@ -5,7 +5,7 @@ heading: Multi-axis Line Chart
 breadcrumb: [["Home", "/"], ["Multi-axis Line Chart"]]
 ---
 
-> This chart type belongs to PowerCharts XT.
+> This chart type belongs to **PowerCharts XT**.
 
 A multi-axis line chart, as the name suggests, is an interactive line chart that can be configured for multiple axes. It is a special type of chart that allows multiple y-axes to be rendered in the same chart. The advantage of using a multi-axis line chart is that you can plot multiple data sets with different types of units. For example, 1-100 on one axis, 1m - 100m on another axis, and 0 - 1 on yet another axis) on the same chart.
 

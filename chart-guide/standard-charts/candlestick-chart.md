@@ -5,7 +5,7 @@ heading: Candlestick Chart
 breadcrumb: [["Home", "/"], ["Candlestick Charts"]]
 ---
 
-> This chart type belongs to PowerCharts XT.
+> This chart type belongs to **PowerCharts XT**.
 
 A candlestick chart is widely used for applications that require analysis of equity and commodity prices. It allows you to show the opening price, closing price, highest trading price, lowest trading price, and the trade volume on a single chart. A combination of the line and bar charts, a candlestick chart represents the range of price movement for a specific time interval.
 

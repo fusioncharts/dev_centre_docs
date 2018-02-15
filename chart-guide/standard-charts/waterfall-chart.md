@@ -5,7 +5,7 @@ heading: Waterfall Chart
 breadcrumb: [["Home", "/"], ["Waterfall Chart"]]
 ---
 
-> This chart type belongs to PowerCharts XT.
+> This chart type belongs to **PowerCharts XT**.
 
 A waterfall (cascade) chart is a special type of column chart that is used to show how an initial value is increased and decreased by a series of intermediate values, leading to a final value.
 

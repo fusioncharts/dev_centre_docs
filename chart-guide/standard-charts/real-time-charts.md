@@ -5,7 +5,7 @@ heading: Real-time Charts
 breadcrumb: [["Home", "/"], ["Real-time Charts"]]
 ---
 
-> This chart type belongs to FusionWidgets XT.
+> These chart types belong to **FusionWidgets XT**.
 
 Real-time Charts
 

@@ -5,7 +5,7 @@ heading: Stacked Charts
 breadcrumb: [["Home", "/"], ["Stacked Charts"]]
 ---
 
-> This chart type belongs to FusionCharts XT.
+> These chart types belong to **FusionCharts XT**.
 
 Stacked charts are similar to multi-series charts, but plot datasets on top of each other, instead of the clustered side-by-side placement adopted by multi-series charts. Stacked charts help in displaying the cumulative magnitude of two or more data series. They help in representing a data value as a sum of two or more values. Each data series can be distinguished by the color of its section in the stack.
 

@@ -5,7 +5,7 @@ heading: Marimekko Chart
 breadcrumb: [["Home", "/"], ["Marimekko Chart"]]
 ---
 
-> This chart type belongs to FusionCharts XT.
+> This chart type belongs to **FusionCharts XT**.
 
 Marimekko charts are stacked column charts with columns of variable width. They are primarily used for marketing analysis.
 

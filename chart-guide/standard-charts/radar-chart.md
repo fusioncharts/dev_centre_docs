@@ -5,7 +5,7 @@ heading: Radar Chart
 breadcrumb: [["Home", "/"], ["Radar Chart"]]
 ---
 
-> This chart type belongs to PowerCharts XT.
+> This chart type belongs to **PowerCharts XT**.
 
 A radar chart (also known as a spider chart) is a visual interpretation of data bearing multiple dimensions. With the radial grid like structure, the chart displays the values of different categories on its axis. Radar charts are primarily used as a data comparison tool to visually correlate and contrast entities over its diverse aspects such as growth against benchmarks, progress over several criteria, etc. Radar charts can be plotted for a single dataset (single-series radar chart) or multiple datasets (multi-series radar chart).
 

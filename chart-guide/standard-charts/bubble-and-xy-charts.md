@@ -5,7 +5,7 @@ heading: Bubble and XY Charts
 breadcrumb: [["Home", "/"], ["Bubble and XY Charts"]]
 ---
 
-> This chart type belongs to FusionCharts XT.
+> These chart types belong to **FusionCharts XT**.
 
 Bubble and XY charts are used for plotting data that can be defined in terms of multiple numeric parameters. In these charts, the x and y axes are numeric. So, the position of a data point is an indicator of two distinct numeric values.
 
