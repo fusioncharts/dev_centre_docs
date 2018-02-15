@@ -5,7 +5,7 @@ heading: Drag-able Charts
 breadcrumb: [["Home", "/"], ["Drag-able Charts"]]
 ---
 
-Drag-able charts are a special set of charts that allow you to visually manipulate the data on a chart and then submit it back. These charts can be used intensively for simulations, financial planning, etc.** **Drag-able charts allow you to visually morph the data to update the figures on the chart. These charts derive their basic features from the multi-series column, the multi-series line, and the multi-series area charts.
+Drag-able charts are a special set of charts that allow you to visually manipulate the data on a chart and then submit it back. These charts can be used intensively for simulations, financial planning, etc.** **Drag-able charts allow you to visually morph the data to update the figures in the chart. These charts derive their basic features from the multi-series column, the multi-series line, and the multi-series area charts.
 
 FusionCharts Suite XT offers the following three types of drag-able charts:
 
@@ -75,9 +75,11 @@ Now, let's customize the appearance and properties of the charts.
 
 ## Change Axis Limits
 
-The chart, by default, calculates the y-axis upper and lower limits based on the data provided to it. To let the column assume a value not covered within this axis range, increase or decrease the limits using the menu button at the top-right of the chart. Click the menu button, a pop-up with the options to increase or decrease the upper and lower limits appears.
+The chart, by default, calculates the y-axis upper and lower limits based on the data provided to it. To let the column assume a value not covered within this axis range, increase or decrease the limits using the menu button at the top-right of the chart. 
 
-elect any of the above options, to increase or decrease the chart limits using auto-calculated intervals. 
+Click the menu button, a pop-up with the options to increase or decrease the upper and lower limits appears.
+
+Select any of the above options, to increase or decrease the chart limits using auto-calculated intervals. 
 
 ![Change Axis Limits]({% site.baseurl %}/gif/standard-charts-drag-able-charts-gif-1.gif)
 
@@ -85,7 +87,7 @@ However, to set manual values for the upper/lower limits, click the limits and e
 
 ![Change Axis Limits Manually]({% site.baseurl %}/gif/standard-charts-drag-able-charts-gif-2.gif)
 
-> If you enter a limit value which cannot be accepted by the chart, the value will turn red to indicate that the value can not be accepted as shwon below:
+> If you enter a limit value which cannot be accepted by the chart, the value will turn red to indicate that the value can not be accepted as shown below:
 
 ![Set wrong axis limits]({% site.baseurl %}/gif/standard-charts-drag-able-charts-gif-3.gif)
 
@@ -187,9 +189,9 @@ Limit the dragging of data plots with respect to the divisional lines on the cha
 
 To snap to the nearest divisional lines, follow the steps given below:
 
-* Specify the `snapToDivOnly` attribute to set the dragging of the data points till the nearest divisional lines on the chart. The data points cannot acquire a value between any two divisional lines and, as such, they will always fall on a divisional line value.
+* Specify the `snapToDivOnly` attribute to set the dragging of the data points till the nearest divisional lines on the chart. The data points cannot acquire a value between any two divisional lines and, as such, they will always fall on divisional line value.
 
-* When dragging the area plots, snap them to the nearest divisional line on chart. To do so, just set the `snapToDiv` attribute as 1. The difference between this attribute and snapToDivOnly attribute is that snapToDivOnlyattribute (when set to 1) allows you to drag the data points onto a div line. But using this attribute, you can create a "sticky" kind of interface, so that when the data point is dropped near a divisional line, it assumes the divisional line value. However, if it is dropped at a farther location, it will stay where it is.
+* When dragging the area plots, snap them to the nearest divisional line on the chart. To do so, just set the `snapToDiv` attribute as 1. The difference between this attribute and the `snapToDivOnly` attribute is that `snapToDivOnlyattribute` (when set to 1) allows you to drag the data points onto a div line. But using this attribute, you can create a "sticky" kind of interface, so that when the data point is dropped near a divisional line, it assumes the divisional line value. However, if it is dropped at a farther location, it will stay where it is.
 
 * Set the `snapToDivRelaxation` attribute to specify the distance in pixels from the divisional lines where the data points will behave sticky.
 **Note**: This attribute works only when the `snapToDiv` attribute is set to `1`.
@@ -216,7 +218,7 @@ Click [here](http://jsfiddle.net/fusioncharts/oq5vqv7n/ "@@open-newtab") to edit
 
 ## Retrieve a Dataset
 
-A drag-able column 2D chart can be configured to retrieve JSON data and render it in an alert window. `getJSONData` function need to be called on an existing chart. It fetches data that has been set on the chart in the JSON format. Calling this function on a chart with no data set will return an empty `{  }` object.
+A drag-able column 2D chart can be configured to retrieve JSON data and render it in an alert window. `getJSONData` function needs to be called on an existing chart. It fetches data that has been set on the chart in the JSON format. Calling this function on a chart with no data set will return an empty `{  }` object.
 
 The chart retrieving datasets looks like this:
 
@@ -226,7 +228,7 @@ Click [here](http://jsfiddle.net/fusioncharts/d6cLm0em/ "@@open-newtab") to edit
 
 A drag-able column 2D chart can also be configured to retrieve a data in XML and CSV format. The function to retrieve them are:
 
-* `getXMLData` - Set this function to fetch data that has been set on a chart in the XML format. This function needs to be called on an existing chart. If this function is called on a chart which has no data set on it, it returns an empty `<chart />` element as string.
+* `getXMLData` - Set this function to fetch data that has been set on a chart in the XML format. This function needs to be called on an existing chart. If this function is called on a chart which has no data set on it, it returns an empty `<chart />` element as a string.
 
 * `getCSVData` - Set this function to fetch data that has been set on a chart in the CSV format. The data returned is the closest possible comma-separated value representation that has been provided to the chart. The exported data does not contain any functional or cosmetic attribute that was set on the chart.
 
@@ -252,7 +254,7 @@ The key pointers of this method are:
 
 * The first column in the array returned contains the labels of all the categories.
 
-* The remaining columns map to their respective category and dataset. For each data, its id and last updated value on the chart is returned. In our example, because we have not changed any data visually on the chart, it is showing the original data.
+* The remaining columns map to their respective category and dataset. For each data, its id and last updated value on the chart are returned. In our example, because we have not changed any data visually on the chart, it is showing the original data.
 
 Given below is the structure of the three-dimensional array returned by this function:
 

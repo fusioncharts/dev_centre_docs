@@ -11,7 +11,7 @@ The FusionCharts Suite XT candlestick chart offers you a powerful and interactiv
 
 * Integrated price and volume plot, where the volume plot can be turned on or off.
 
-* Multiple chart options for price plotting - candlestick / bar / line.
+* Multiple chart options for price plotting - candlestick/bar/line.
 
 * Interactive tooltip and customizable hover bar.
 
