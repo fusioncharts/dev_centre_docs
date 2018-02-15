@@ -95,7 +95,7 @@ For a detailed list of attributes, refer to the [chart attributes]({% site.baseu
 
 A real-time line chart looks like:
 
-{% embed_all standard-charts-real-time-charts-example-1.js %}
+{% embed_chart standard-charts-real-time-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/43fJn/ "@@open-newtab") to edit the real-time line chart.
 
@@ -107,7 +107,7 @@ For a detailed list of attributes, refer to the [chart attributes]({% site.baseu
 
 A real-time area chart looks like:
 
-{% embed_all standard-charts-real-time-charts-example-2.js %}
+{% embed_chart standard-charts-real-time-charts-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/kdfX7/ "@@open-newtab") to edit the real-time area chart.
 
@@ -121,7 +121,7 @@ For a detailed list of attributes, refer to the [chart attributes]({% site.baseu
 
 A real-time stacked area chart looks like:
 
-{% embed_all standard-charts-real-time-charts-example-3.js %}
+{% embed_chart standard-charts-real-time-charts-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/C8mkW/ "@@open-newtab") to edit the real-time stacked area chart.
 
@@ -135,7 +135,7 @@ For a detailed list of attributes, refer to the [chart attributes]({% site.baseu
 
 A real-time column chart looks like:
 
-{% embed_all standard-charts-real-time-charts-example-4.js %}
+{% embed_chart standard-charts-real-time-charts-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/NvJat/ "@@open-newtab") to edit the real-time column chart.
 
@@ -149,7 +149,7 @@ For a detailed list of attributes, refer to the [chart attributes]({% site.baseu
 
 A real-time stacked column chart looks like:
 
-{% embed_all standard-charts-real-time-charts-example-5.js %}
+{% embed_chart standard-charts-real-time-charts-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/bLUw5/ "@@open-newtab") to edit the real-time stacked column chart.
 
@@ -161,7 +161,7 @@ For a detailed list of attributes, refer to the [chart attributes]({% site.baseu
 
 A real-time dual y-axis line chart looks like:
 
-{% embed_all standard-charts-real-time-charts-example-6.js %}
+{% embed_chart standard-charts-real-time-charts-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/2wn8g/ "@@open-newtab") to edit the real-time dual y-axis line chart.
 
