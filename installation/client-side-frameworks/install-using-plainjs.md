@@ -38,21 +38,21 @@ If you need to create charts on your local machine for general charting or testi
 
 * Copy the JavaScript files from the `js` folder of the download package and paste it in your `fusioncharts` folder.
 
-* Create HTML pages and include the above JavaScript files through a relative path to start creating charts
+* Create HTML pages and include the above JavaScript files through a relative path to start creating charts.
 
-> While rendering charts locally (without a web server, even if **localhost**), you will not be able to load data from XML or JSON files present on your hard-drive, due to security restrictions enforced by most modern browsers—including Google Chrome. Generally, Chrome requires you to have a local server set up (localhost) to run things.
+> While rendering charts locally (without a web server, even if **localhost**), you will not be able to load data from XML or JSON files present on your hard-drive. Mainly, due to security restrictions enforced by most modern browsers—including Google Chrome, which requires you to have a local server set up (localhost) to run things.
 
 ## Integrate specific products from the Suite
 
 FusionCharts Suite XT consists of 4 products:
 
-* **FusionCharts XT** - It offers all the general-purpose charts like column, bar, line, area, pie, combination and stacked charts to advanced charts like combination, scroll, zoom line, XY Plot, Marimekko and Pareto charts.
+* **FusionCharts XT** - It offers all the general-purpose charts like column, bar, line, area, pie, combination and stacked charts to advanced charts like the combination, scroll, zoom line, XY Plot, Marimekko and Pareto charts.
 
-* **FusionWidgets XT** - It renders a variety of gauges and charts including speedometer charts (also called angular gauge and dial chart), linear gauges, bulb gauge, Gantt charts, funnel and pyramid charts. In addition, it also offers sparklines and bullet graphs that can be embedded within content to show a lot of KPIs in a compact space.
+* **FusionWidgets XT** - It renders a variety of gauges and charts including speedometer charts (also called angular gauge and dial chart), linear gauges, bulb gauge, Gantt charts, funnel and pyramid charts. It also provides sparklines and bullet graphs that can be embedded within content to show a lot of KPIs in a compact space.
 
 * **PowerCharts XT** - It offers a set of advanced charts for domain-specific usage like network diagrams, profit-loss analysis, financial planning, stock price plotting and hierarchical structures. It also offers visually editable charts to simulate what-if scenarios and radar (spider) charts to compare multiple entities on multiple parameters.
 
-* **FusionMaps XT** - It offers interactive maps to plot geographical data like revenue by regions, population by state, survey and election results effectively. You can also drop markers on the map to pinpoint places like office locations and flight routes. It has over 1000 maps including all continents, major countries and all US states.
+* **FusionMaps XT** - It offers interactive maps to plot geographical data like revenue by regions, population by state, survey and election results effectively. You can also drop markers on the map to pinpoint places like office locations and flight routes. It has over 1000 maps including all continents, major countries, and all US states.
 
 By default, when you set up FusionCharts Suite XT on your web server or your local file system, you can create all the 90+ charts and 1000+ maps (after downloading the map definition files separately). However, if you need to use just a specific FusionCharts Suite XT product, you need to do the following:
 
@@ -68,13 +68,13 @@ By default, when you set up FusionCharts Suite XT on your web server or your loc
 
 This method comes in handy when you have licensed only specific product(s) from FusionCharts Suite XT, and need to overwrite the evaluation version files with the licensed ones. In such a scenario, you will copy the licensed JavaScript files of the relevant product from the licensed download pack (provided after purchase) to your project folder and overwrite the existing evaluation files.
 
-The charts generated using licensed file would not show the watermark any more. However, any chart generated using other products, which you do not have a license for, would continue showing the evaluation watermark.
+The charts generated using licensed file would not show the watermark anymore. However, any chart created using other products, which you do not have a license for, would continue showing the evaluation watermark.
 
 ## Install via npm
 
-Now, talks about how the **fusioncharts** and the **fusionmaps** packages can be installed via **NPM**.
+Now, let's discuss how to install the **fusioncharts** and the **fusionmaps** packages via **NPM**.
 
-> The **fusioncharts** package contains files for all charts and widgets and only two map definition files, for the World map and the USA map. The **fusionmaps** package contains files for all charts and widgets and map definition files for all maps. Consequently, it takes longer for installation than the fusioncharts package and is recommended only if your application needs maps other than the World and USA maps.
+> The **fusioncharts** package contains files for all charts and widgets and only two map definition files, for the World map and the USA map. The **fusionmaps** package includes all map definition files. Consequently, it takes longer for installation than the fusioncharts package and is recommended only if your application needs maps other than the World and USA maps.
 
 ### Install FusionCharts package
 
@@ -116,7 +116,7 @@ npm install fusionmaps
 <script src="node_modules/fusionmaps/fusioncharts.maps.js"></script>
 ```
 
-**Step 4**: Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.<MAP_ALIAS>**, where **MAP_ALIAS** gets replaced by the map's JavaScript alias. Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. Map definition files for all maps to be rendered in the application have to be included. 
+**Step 4**: Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.<MAP_ALIAS>**. Replace **MAP_ALIAS** by the map's JavaScript alias. Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. Include map definition files for all maps to render in the application.
 
 Therefore, assuming that you need to render the world map, the alias name **world** replaces **MAP_ALIAS** in the format.
 
@@ -124,7 +124,7 @@ Therefore, assuming that you need to render the world map, the alias name **worl
 <script src="node_modules/fusionmaps/maps/fusioncharts.world.js"></script>
 ```
 
-> The map definition files have to be included for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are required to be fetched from there.
+> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are fetched from there.
 
 ### Package-specific Dependencies
 
@@ -153,7 +153,7 @@ Therefore, assuming that you need to render the world map, the alias name **worl
 
 ### Chart-specific Dependencies
 
-For some chart types, you need to include/exclude certain files and in a certain order. These chart types and the corresponding files are mentioned below:
+For some chart types, you need to include/exclude certain files and in a specific order. Following  are the chart types, and the corresponding files:
 
 * To render the zoom-scatter chart, it is necessary to include the **fusioncharts.js** and **fusioncharts.charts.js** files before the **fusioncharts.zoomscatter.js** file.
 
@@ -163,7 +163,7 @@ For some chart types, you need to include/exclude certain files and in a certain
 <script src = "node_modules/fusioncharts/fusioncharts.zoomscatter.js"> </script>
 ```
 
-* To render the treemap chart, it is necessary to include the **fusioncharts.js** and **fusioncharts.powercharts.js** files before the **fusioncharts.treemap.js** file.
+* To render the treemap chart, include the **fusioncharts.js** and **fusioncharts.powercharts.js** files before the **fusioncharts.treemap.js** file.
 
 ```
 <script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
@@ -187,9 +187,9 @@ For some chart types, you need to include/exclude certain files and in a certain
 
 ## Install via Bower
 
-This section talks about how the **fusioncharts** and the **fusionmaps** packages can be installed via **Bower** package management software.
+This section talks about how to install the **fusioncharts** and the **fusionmaps** packages via **Bower** package management software.
 
-> The **fusioncharts** package contains files for all charts and widgets and only two map definition files, for the World map and the USA map. The **fusionmaps** package contains files for all charts and widgets and map definition files for all maps. Consequently, it takes longer for installation than the fusioncharts package and is recommended only if your application needs maps other than the World and USA maps.
+> The **fusioncharts** package contains files for all charts and widgets and only two map definition files, for the World map and the USA map. The **fusionmaps** package contains files for all charts and widgets and maps definition files for all maps. Consequently, it takes longer for installation than the fusioncharts package and is recommended if your application needs maps other than the World and USA maps.
 
 ### Install FusionCharts package
 
@@ -231,7 +231,7 @@ bower install fusionmaps
 <script src="bower_components/fusionmaps/fusioncharts.maps.js"></script>
 ```
 
-**Step 4**: Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.<MAP_ALIAS>.js**, where **MAP_ALIAS** gets replaced by the map's JavaScript alias. Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. Map definition files for all maps to be rendered in the application have to be included. 
+**Step 4**: Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.<MAP_ALIAS>.js**. Replace **MAP_ALIAS** by the map's JavaScript alias. Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. Include map definition files for all maps to be rendered in the application. 
 
 Therefore, assuming that you need to render the world map, the alias name **world** replaces **MAP_ALIAS** in the format.
 
@@ -239,7 +239,7 @@ Therefore, assuming that you need to render the world map, the alias name **worl
 <script src="bower_components/fusionmaps/maps/fusioncharts.world.js"></script>
 ```
 
-> Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are required to be fetched from there.
+> Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are fetched from there.
 
 ### Package-specific Dependencies
 
@@ -268,7 +268,7 @@ Therefore, assuming that you need to render the world map, the alias name **worl
 
 ### Chart-specific Dependencies
 
-For some chart types, you need to include/exclude certain files. These chart types and the corresponding files are mentioned below:
+Following are the chart types, and the corresponding files:
 
 * To render the zoom-scatter chart, it is necessary to include the **fusioncharts.js** and **fusioncharts.charts.js** files before the **fusioncharts.zoomscatter.js** file.
 
@@ -278,7 +278,7 @@ For some chart types, you need to include/exclude certain files. These chart typ
 <script src = "bower_components/fusioncharts/fusioncharts.zoomscatter.js"> </script>
 ```
 
-* To render the treemap chart, it is necessary to include the **fusioncharts.js** and **fusioncharts.powercharts.js** files before the **fusioncharts.treemap.js** file.
+* To render the treemap chart, include the **fusioncharts.js** and the **fusioncharts.js** and **fusioncharts.powercharts.js** files before the **fusioncharts.treemap.js** file.
 
 ```
 <script src = "bower_components/fusioncharts/fusioncharts.js"> </script>  
