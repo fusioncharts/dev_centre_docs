@@ -9,8 +9,6 @@ Data labels are the names of the data points that are displayed on the x-axis of
 
 ![Data Labels]({% site.baseurl %}/images/chart-configurations-data-labels-image-1.png)
 
-In this article, we will learn how to customize the display of the data labels.
-
 ## Data Label Display Modes
 
 You can configure the arrangement and display properties for data labels using the `labelDisplay` attribute. There are 5 display modes available (`auto`, `wrap`, `stagger`, `rotate` and `none`). We will discuss about each mode respectively.
@@ -154,7 +152,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/Lsrdd84a/ "@@open-newtab") to edit the above chart.
 
-## Show/hide data all data labels
+## Show/Hide Data for all Labels
 
 To hide the data labels set the `showLabels` attribute to `0` within the `chart` object. Refer to the code below:
 
@@ -254,7 +252,7 @@ Advanced x-axis label management has been implemented to achieve the following o
 
 > Advanced label management is not applicable to Bar, Pie, Doughnut, Marimekko, Zoom Line and Multi-series Combination 3D charts.
 
-## Customize data label properties
+## Customize Data Label Properties
 
 You can customize the cosmetic properties of data labels such as font, border, background, and alpha. 
 

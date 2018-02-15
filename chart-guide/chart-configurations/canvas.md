@@ -32,7 +32,7 @@ Refer to the code below:
         "canvasbgAlpha": "10",
         "canvasBorderThickness": "1",
         "showAlternateHGridColor": "0",
-        "bgColor": "#eeeeee",
+        "bgColor": "#eeeeee"
     }
 }
 ```
@@ -78,9 +78,8 @@ Refer to the code below:
 ```json
 {
     "chart": {
-        "canvasBorderThickness": "1",
-        " canvasBorderColor":"'666666",
-        "canvasBorderThickness":"1",
+        "canvasBorderColor":"'666666",
+        "canvasBorderThickness":"4",
         "canvasBorderAlpha":"80"
     }
 }
