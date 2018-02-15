@@ -105,7 +105,7 @@ Now, let's customize the appearance and properties of the charts.
 
 You can customize the cosmetic properties of error bars to change their appearance. To customize the properties, follow the steps given below:
 
-* Set the `halfErrorBar` attribute to specify the rendering of full or half error bars. Set this attribute to `1` to show half error bars, whereas set it to `0` (default) to render the full error bars.
+* Set the `halfErrorBar` attribute to specify the rendering of full or half error bars. Set this attribute to `1` to show half error bars. Set it to `0` (default) to render the full error bars.
 
 * Specify the hex color code to `errorBarColor` attribute, to set the color in which you want to render the error bars.
 
@@ -113,7 +113,7 @@ You can customize the cosmetic properties of error bars to change their appearan
 
 * Set the thickness (in pixels) of the error bars using `errorBarThickness` attribute.
 
-* Set the width of the error bars using `errorBarWidthPercent` attribute. The width of the error bars will be dependent on the percentage of a column width.
+* Set the width of the error bars using `errorBarWidthPercent` attribute. The width of the error bars are dependent on the percentage of the column width.
 
 Refer to the code given below:
 
@@ -144,11 +144,11 @@ Click [here](http://jsfiddle.net/fusioncharts/fumzvpw3/ "@@open-newtab") to edit
 
 ### Cosmetics of Error Scatter Chart
 
-Customize the cosmetic properties of error scatter chart to change the  appearance of error bars in it. Most of the attributes are similar to the above rendered charts. To customize some more cosmetic properties of error bars in error scatter chart, follow the steps given below:
+Customize the cosmetic properties of error scatter chart to change the appearance of error bars in it. Most of the attributes are similar to the above rendered charts. To customize some more cosmetic properties of error bars in error scatter chart, follow the steps given below:
 
 * Set the `useVerticalErrorBar` attribute to show the error bars (half/full) for the error scatter chart. Setting this attribute to `1` (default) will show them, whereas setting it to `0` will hide them.
 
-* Set the `halfVerticalErrorBar` attribute to specify the rendering of full or half vertical error bars. Set this attribute to `1` to show half error bars, whereas set it to `0` (default) to render the full error bars.
+* Set the `halfVerticalErrorBar` attribute to specify the rendering of full or half vertical error bars. Set this attribute to `1` to show half error bars. Set it to `0` (default) to render the full error bars.
 
 * Specify the hex color code to `verticalErrorBarColor` attribute, to set the color in which you want to render the vertical error bars.
 

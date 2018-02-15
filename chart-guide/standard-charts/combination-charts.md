@@ -5,7 +5,7 @@ heading: Combination Charts
 breadcrumb: [["Home", "/"], ["Combination Charts"]]
 ---
 
-Combination charts are similar to multi-series charts, they allow you to plot multiple datasets on the same chart. But an added advantage with using combination charts is that you can also plot multiple chart types on the same chart. For example, you can show the column, line, and area chart on the same chart canvas.
+Combination charts are similar to multi-series charts. They allow you to plot multiple datasets on the same chart. But an added advantage of using combination charts is that you can also plot multiple chart types on the same chart. For example, you can show the column, line, and area chart on the same chart canvas.
 
 > Combination charts can be rendered in either 2D or 3D, can have single or dual y-axes, and can be stacked or multi series in nature.
 
@@ -45,15 +45,13 @@ To create a single y-axis combination chart in 2D follow the steps below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes you can check the API reference page of pie chart.
+For a detailed list of attributes, you can check the API reference page of the Single Y-Axis combination chart.
 
 A 2D combination chart with a single y-axis looks like this:
 
 {% embed_all standard-charts-combination-chart-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/4REJ5/ "@@open-newtab") to edit the single y combination chart in 2D.
-
-Using a different chart type for each metric ensures easy interpretation of the data being shown.
 
 ## 3D Single Y-axis Combination Chart
 
@@ -69,7 +67,7 @@ Click [here](http://jsfiddle.net/fusioncharts/rjy87gfy/ "@@open-newtab") to edit
 
 Now, let's create a dual y-axis combination chart in 2D. For this, change the value of the `type` attribute from `mscombi2d` to `mscombidy2d`.
 
-In this chart, we will show a comparison between the revenue, profit, and the profit percentage. The revenue and the profit will be shown as amount in dollars but the profit percentage will require a different unit - percentage. These cannot be plotted on a single y-axis. FusionCharts Suite XT allows you to have two y-axes, a primary y-axis and a secondary y-axis, if you have two data of two different numeric units to plot.
+In this chart, we will show a comparison between the revenue, profit, and the profit percentage. The revenue and the profit will be shown as the amount in dollars, but the profit percentage will require a different unit - percentage. These cannot be plotted on a single y-axis. FusionCharts Suite XT allows you to have two y-axes, a primary y-axis, and a secondary y-axis if you have two data of two different numeric units to plot.
 
 Therefore, we've plotted the amount in USD on the primary y-axis (the one on the left) and the profit % on the secondary y-axis (the one on the right).
 
@@ -83,7 +81,7 @@ Now, let's customize the appearance and properties of the combination charts.
 
 ## Plot Trend Elements
 
-For a dual y-axis chart, you can plot trend-lines with respect to both, the primary y-axis and the secondary y-axis. The following sample will showcase the average revenue trend-line which will be plotted against the primary y-axis that shows the amount in USD. The average profit percent trend-line will be plotted against the secondary y-axis that shows the profit percent.
+For a dual y-axis chart, you can plot trend-lines for both, the primary y-axis and the secondary y-axis. The following sample will showcase the average revenue trend-line which will be plotted against the primary y-axis that shows the amount in USD. The average profit percent trend-line will be plotted against the secondary y-axis that shows the profit percent.
 
 To plot a trend-lines on a chart, follow the steps given below:
 
@@ -134,7 +132,7 @@ Click [here](http://jsfiddle.net/fusioncharts/pj4koo6s/ "@@open-newtab") to edit
 
 ## Placing the Secondary Axis on the Left
 
-You can choose to swap positions of the primary and secondary axes using a single attribute i.e. `primaryAxisOnLeft`. Set this attribute to `1`, to render the primary axis on the left and the secondary axis on right.
+You can choose to swap positions of the primary and secondary axes using a single attribute i.e., `primaryAxisOnLeft`. Set this attribute to `1`, to render the primary axis on the left and the secondary axis on right.
 
 Refer to the code given below:
 
