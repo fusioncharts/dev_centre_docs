@@ -21,7 +21,7 @@ To create a waterfall chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes you can check the API reference page of waterfall chart.
+For a detailed list of attributes, you can check the API reference page of waterfall chart.
 
 The waterfall chart thus rendered looks like this:
 
@@ -50,7 +50,7 @@ Refer to the code given below:
 }
 
 ```
-For a detailed list of attributes you can check the API reference page of waterfall chart.
+For a detailed list of attributes, you can check the API reference page of waterfall chart.
 
 A waterfall chart with distinct colors used for the positive and negative data plots looks like this:
 
@@ -88,7 +88,7 @@ Click [here](http://jsfiddle.net/fusioncharts/478ur96x/ "@@open-newtab") to edit
 
 ### Show/Hide a Non-cumulative Sum Column
 
-A non-cumulative sum column is one that shows the sum of all the columns to its left, but after the last cumulative sum column. To show the non-cumulative use the following attributes:
+A non-cumulative sum column is one that shows the sum of all the columns to its left but after the last cumulative sum column. To show the non-cumulative use the following attributes:
 
 * Set the `isSum` attribute to `1` to render a column displaying sum of all the previous data values.
 
@@ -126,7 +126,7 @@ In the above chart, the 'Total Costs' column is a non-cumulative sum column.
 
 ### Show/Hide a Total Sum Column
 
-By default, a column that represents the sum of all the values plotted on the chart - the total sum column - is shown on the waterfall chart. You can, however, opt not to show this column. In the waterfall chart shown above, the 'Total Profit' column is the total sum column.
+By default, a column that represents the sum of all the values plotted on the chart - the total sum column - is shown in the waterfall chart. You can, however, opt not to show this column. In the waterfall chart shown above, the 'Total Profit' column is the total sum column.
 
 To do so, the following attributes are used:
 
@@ -162,9 +162,9 @@ To customize the cosmetic properties of the connector lines, follow the steps gi
 
 * Specify the `connectorColor` attribute to set the hex color code for the connector lines.
 
-* Specify the `connectorAplha` attribute to set the transparency for for the connector lines. This attribute takes values between `0` (transparent) and `100` (opaque).
+* Specify the `connectorAplha` attribute to set the transparency for the connector lines. This attribute takes values between `0` (transparent) and `100` (opaque).
 
-* Specify the `connectorThickness` attribute to set the thinckness of the connector lines.
+* Specify the `connectorThickness` attribute to set the thickness of the connector lines.
 
 * To render the connector lines as dashed lines, set the `connectorDashed` attribute to `1`. 
 

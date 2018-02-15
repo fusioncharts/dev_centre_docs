@@ -5,7 +5,7 @@ heading: Select-scatter Chart
 breadcrumb: [["Home", "/"], ["Select-scatter Chart"]]
 ---
 
-The select-scatter chart is a special type of chart that allows users to visually select a subset of data from the given data points. Essentially, it is an extension of the XY plot chart (scatter chart) with the added functionality of selecting any number of points on the chart and returning them back to the server, or JavaScript functions, for further processing.
+The select-scatter chart is a special type of chart that allows users to visually select a subset of data from the given data points. Essentially, it is an extension of the XY plot chart (scatter chart) with the added functionality of selecting any number of points on the chart and returning them to the server, or JavaScript functions, for further processing.
 
 This can be used for a variety of purposes, where you want your users to visually select data from the scatter chart. As an example, we will plot a select-scatter chart to show the products sold and the price points earned, for televisions and cell phones at Harry's SuperMart in one week.
 
@@ -21,7 +21,7 @@ To create a select-scatter chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes you can check the API reference page of select-scatter chart.
+For a detailed list of attributes, you can check the API reference page of select-scatter chart.
 
 The select-scatter chart thus created looks like this:
 
@@ -105,7 +105,7 @@ Now, let's customize the appearance and properties of drawing regression lines i
 
 ## Draw Regression Lines
 
-A regression line, rendered as a straight line, is used to show the trend of **y** values with respect to the **x** values or the trend of **x** values with respect to the **y** values. A regression line, therefore, can be used to derive a particular trend from the scattered data points in the chart canvas and predict values accordingly. For example, regression lines can be used to find trends and predict future sales, stock prices, currency exchange rates, productivity gains resulting from a training program, and so on.
+A regression line, rendered as a straight line, is used to show the trend of **y** values for the **x** values or the trend of **x** values for the **y** values. A regression line, therefore, can be used to derive a particular trend from the scattered data points in the chart canvas and predict values accordingly. For example, regression lines can be used to find trends and predict future sales, stock prices, currency exchange rates, productivity gains resulting from a training program, and so on.
 
 There are several methods to calculate and draw regression lines; scatter charts, using linear regression, use the **least-squares** deviation method (also known as the least absolute deviation method). This method calculates the best-fitting straight-line for the observed data by minimizing the sum of the squares of the vertical deviations of each data point from the line (if a point lies on the fitted line exactly, then its vertical deviation is 0). As the deviations are first squared and then summed, there are no cancellations between positive and negative values.
 
@@ -166,7 +166,7 @@ The chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/7yhqp2oq/ "@@open-newtab") to edit the select-scatter chart.
 
-> The formulae used to draw the regression lines for both the modes are given below: 
+> The formula used to draw the regression lines for both the modes are given below: 
 
 **> Y on X**: The regression equation of **Y on X** is the equation of the best fitting straight line in the form **y=a+bx**, where **x** is the explanatory variable and **y** is the dependent variable and **b=( n . Σ (x.y) - (Σ x).(Σ y) )/ (n Σx² – (Σx)² )**. 
 
