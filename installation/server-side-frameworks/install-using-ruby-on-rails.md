@@ -2,6 +2,7 @@
 title: Install using Ruby on rails | FusionCharts
 description: FusionCharts Suite XT includes the FusionCharts server-side RoR wrapper that lets you create interactive, data-driven charts.
 heading: Ruby on Rails
+breadcrumb: [["Home", "/"], ["Ruby on Rails"]]
 ---
 
 FusionCharts Suite XT includes the Ruby on Rails wrapper that lets you create interactive, data-driven charts.
@@ -18,15 +19,14 @@ To install the Rails wrapper:
 
 ```
 gem 'fusioncharts-rails'
-
 ```
+
 RubyGems contain package information along with the files to install. To read more on gems, click [here](https://rubygems.org/gems/fusioncharts-rails).
 
 * On the command line prompt, execute the following command:
 
 ```
 $bundle
-
 ```
 This command will automatically install the `fusioncharts-rails` gem.
 
@@ -36,16 +36,8 @@ To do this, use the code line given below:
 
 ```
 $gem install fusioncharts-rails
-
 ```
+
 > Ensure that the **config.assets.debug** flag in the **development.rb** file (config/environments/development.rb) is enabled (set to **true**)
 
 Now, you are ready to prepare the chart using our  Ruby on Rails wrapper.
-
-## Related Resources
-
-* How to render a chart using PHP?
-
-* How to render a gauge using PHP?
-
-* How to render a map using PHP?

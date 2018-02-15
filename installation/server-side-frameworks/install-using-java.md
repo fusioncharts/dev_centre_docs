@@ -2,6 +2,7 @@
 title: Install using JAVA | FusionCharts
 description: FusionCharts Suite XT includes the FusionCharts server-side JSP wrapper that lets you create interactive, data-driven charts.
 heading: JAVA
+breadcrumb: [["Home", "/"], ["Java"]]
 ---
 
 FusionCharts Suite XT includes the FusionCharts JSP wrapper that lets you create interactive, data-driven charts without writing any JavaScript code.
@@ -28,33 +29,24 @@ To work with FusionCharts JSP wrapper, follow the steps given below:
 
 There are two ways you can install FusionCharts JS library in your project:
 
-* Using FusionCharts CDN
+* Use FusionCharts CDN
 
-* Using library files placed in the folder of your project
+* Use library files placed in the folder of your project
 
-**Using FusionCharts CDN**
+#### Use FusionCharts CDN
 
 Write a script tag in the section of the page where you want to add the source of the FusionCharts library link from the official CDN:
 
 ```
 <script type="text/javascript" src="[http://static.fusioncharts.com/code/latest/fusioncharts.js](http://static.fusioncharts.com/code/latest/fusioncharts.js)"></script>
-
 ```
 
-**Using library files placed in a folder of your project**
+#### Use library files placed in a folder of your project
 
 Next, write a script tag in the section of the page where you want to add the source of the FusionCharts library link from the local folder.
 
 ```
 <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
-
 ```
+
 Now, you are ready to prepare the chart using our JSP-wrapper.
-
-## Related Resources
-
-* How to render a chart using Java?
-
-* How to render a gauge using Java?
-
-* How to render a map using Java?

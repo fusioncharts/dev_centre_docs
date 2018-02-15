@@ -2,6 +2,7 @@
 title: Install using ASP.NET | FusionCharts
 description: FusionCharts Suite XT includes the FusionCharts server-side ASP.NET wrapper that lets you create interactive, data-driven charts.
 heading: ASP.NET
+breadcrumb: [["Home", "/"], ["ASP.NET"]]
 ---
 
 FusionCharts Suite XT includes the FusionCharts server-side ASP.NET wrapper that lets you create interactive, data-driven charts. FusionCharts uses JavaScript and HTML code to generate charts in the browser. Using the ASP.NET wrapper, you can create charts in your ASP.NET website without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page for generating charts.
@@ -28,33 +29,26 @@ To work with FusionCharts ASP.NET wrapper, follow the steps given below:
 
 There are two ways you can install FusionCharts JS library in your project
 
-* Using FusionCharts CDN
+* Use FusionCharts CDN
 
-* Using library files placed in the folder of your project
+* Use library files placed in the folder of your project
 
-**Using FusionCharts CDN**
+#### Use FusionCharts CDN
 
 Write a script tag in the section of the page where you want to add the source of the FusionCharts library link from the official CDN:
 
-```
+```html
 <script type="text/javascript" src="[http://static.fusioncharts.com/code/latest/fusioncharts.js](http://static.fusioncharts.com/code/latest/fusioncharts.js)"></script>
 
 ```
 
-**Using library files placed in a folder of your project**
+#### Use library files placed in a folder of your project
 
 Next, write a script tag in the section of the page where you add the src of FusionCharts library link from local folder
 
-```
+```html
 <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
 
 ```
+
 Now, you are ready to prepare the chart using our ASP.NET wrapper.
-
-## Related Resources
-
-* How to render a chart using ASP.NET?
-
-* How to render a gauge using ASP.NET?
-
-* How to render a map using ASP.NET?
