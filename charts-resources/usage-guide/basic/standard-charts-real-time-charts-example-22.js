@@ -1,5 +1,4 @@
 {
-    id: "realtimechart-1",
     type: 'realtimecolumn',
     renderAt: 'chart-container',
     width: '600',
