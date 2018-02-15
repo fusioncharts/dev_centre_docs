@@ -19,16 +19,14 @@ The base font group is used to customize the font properties for the text render
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "baseFont": "Verdana",
         "baseFontSize": "11",
         "baseFontColor": "#0066cc"
     }
-...
 }
-
 ```
 
 The chart will look like as shown below:
@@ -49,16 +47,14 @@ This is used to customize font properties for the text placed outside the chart 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "outCnvBaseFont": "Arial",
         "outCnvBaseFontSize": "11",
-        "outCnvBaseFontColor": "#2f69a0"
+        "outCnvBaseFontColor": "#633563"
     }
-...
 }
-
 ```
 The chart will look like as shown below:
 

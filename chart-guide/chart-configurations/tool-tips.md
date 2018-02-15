@@ -13,7 +13,7 @@ A tooltip is displayed when the mouse is hovered over a particular data point. I
 
 * It denotes a series name, category name, and data value for multi-series and combination charts.
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltips-image-1.png)
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-1.png)
 
 ## Show/hide tooltips
 
@@ -21,7 +21,7 @@ By default, the tooltip is displayed. To hide the tool tip set the `showToolTip`
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "showToolTip": "0"
@@ -42,7 +42,7 @@ To customize the tooltip use the following attributes:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "toolTipBorderColor": "#FFFFFF",
@@ -51,12 +51,11 @@ Refer to the code below:
         "showToolTipShadow": "1"
     }
 }
-
 ```
 
 The chart will look as shown below:
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltips-image-2.png)
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-2.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/df92k3t5/ "@@open-newtab") to edit the above chart.
 
@@ -66,19 +65,19 @@ By default, a tooltip shows the data item name and value in a single line of tex
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
     },
     "data": [{
         "tooltext": "Quarter 1{br}Total Sale: $195K{br}Rank: 1"
-    }
+    }]
 }
 ```
 
 The chart will look as shown below:
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltips-image-3.png)
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-3.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/13a8664h/ "@@open-newtab") to edit the above chart.
 
@@ -112,19 +111,17 @@ To configure tooltip text with tooltip macros, set a custom tooltip using `plotT
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "plotToolText": "Store location: $label <br> Sales (YTD): $dataValue <br> $displayValue"
-        ...
     }
 }
 ```
 
 The chart will look like as shown below:
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltips-image-4.png)
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-4.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/j1327y7v/ "@@open-newtab") to edit the above chart.
 
@@ -174,23 +171,21 @@ By default, trend lines don't have a tooltip text configured for them. However, 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "trendlineToolText": "$displayValue: $startDataValue"
-        ...
     }
 }
 ```
 
 The chart will look like as shown below:
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltips-image-5.png)
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-5.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/67Lzs1fq/ "@@open-newtab") to edit the above chart.
 
-In the above chart, hover the mouse pointer over the trend-lines to see the tooltip text. You can find the description of the `trendlineToolText` attribute, in the <<Other attributes you can use>> section. Also, for details on the `$displayValue` macro, visit the <<How to use tooltip macros>>section.
+In the above chart, hover the mouse pointer over the trend-lines to see the tooltip text. You can find the description of the `trendlineToolText` attribute, in the Other attributes you can use section. Also, for details on the `$displayValue` macro, visit the How to use tooltip macros section.
 
 Apart from the ones given above, you can use either the `$startDataValue` macro (which represents the formatted starting value of a trend-line/trend-zone), or the `$startValue` macro (which represents the unformatted starting value). If the starting value is 680000 and you use `$startDataValue`, then the chart will show $680k as the data value. On the other hand, if you use `$startValue`, then the chart will show 680000 as the data value.  
 
@@ -210,7 +205,7 @@ Use the following attribute and tooltip macros to set a tooltip text for connect
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "connectorToolText": "<b>From</b>: $fromLabel <br> <b>To</b>: $toLabel <br> <b>Daily shipments (avg)</b>: $label Units"
@@ -220,7 +215,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltips-image-5.png)
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-5.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/0dwyegdw/ "@@open-newtab") to edit the above chart.
 
@@ -262,19 +257,17 @@ Use the following macros to set a tooltip text for data plots in a box and whisk
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "plotToolText": "$seriesName Teachers-$label  <br> <br> Max value: $maxDataValue <br> Min value: $minDataValue <br> <br> Q3: $Q3 <br> Median: $median <br> Q1: $Q1 <br> <br> Mean: $mean <br> <br> Standard deviation: $SD <br> Quartile Deviation: $QD <br> Mean Deviation: $MD"
-        ... 
     }
 }
 ```
 
 The chart will look as shown below:
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltips-image-6.png)
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-6.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/mgkhxywt/ "@@open-newtab") to edit the above chart.
 

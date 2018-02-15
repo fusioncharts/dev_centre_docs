@@ -14,7 +14,7 @@
             //Outside canvas base font configuration
             "outCnvBaseFont": "Arial",
             "outCnvBaseFontSize": "11",
-            "outCnvBaseFontColor": "#2f69a0",
+            "outCnvBaseFontColor": "#633563",
             //Theme
             "theme": "fint"
         },

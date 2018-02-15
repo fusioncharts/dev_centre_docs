@@ -13,13 +13,12 @@ To round off the decimals for all the numbers on the chart set the number of dec
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "decimals": "2"
     }
 }
-
 ```
 
 The chart will look like as shown below:
@@ -34,14 +33,13 @@ You can also round off the decimal places for only the horizontal and vertical d
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "yAxisValueDecimals": "2",
         "xAxisValueDecimals": "3"
     }
 }
-
 ```
 
 The chart will look like as shown below:
@@ -60,15 +58,14 @@ Use the following attributes to force trailing zeroes:
 
 * Set the `forceXAxisValueDecimals` to `1`, to add/retain same number of trailing zeros after decimal point to all X-axis values on the chart.
 
-Refer to the code snippets below:
+Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "forceDecimals": "1"
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -95,13 +92,12 @@ FusionCharts XT automatically formats numbers displayed on charts. Use the follo
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "formatNumber": "0"
     }
 }
-
 ```
 The chart will look as shown below:
 
@@ -125,14 +121,13 @@ You can customize the thousand and decimal separator characters from the default
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "decimalSeparator": ",",
         "thousandSeparator": "."
     }
 }
-
 ```
 
 The chart will look like as shown below:
@@ -147,13 +142,12 @@ Specify the number of digits after which the thousand separator character should
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "thousandSeparatorPosition": "2,3"
     }
 }
-
 ```
 The chart will look like as shown below:
 
@@ -179,14 +173,13 @@ To customize the prefix and suffix of the numbers on the chart, use the followin
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "numberSuffix": "/day",
         "numberPrefix": "$"
     }
 }
-
 ```
 The chart will look as shown below:
 
@@ -206,13 +199,12 @@ To enable automatic scaling, use the `formatNumberScale` attribute, which decide
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "formatNumberScale": "1"
     }
 }
-
 ```
 
 If you plot the data values as 1252322, 857023, 903753 and 1082357, then the rendered chart will look as shown below:
@@ -245,14 +237,13 @@ Use the following attributes to add a billion scale to a chart:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "numberScaleValue": "1000,1000,1000",
         "numberScaleUnit": "K,M,B"
     }
 }
-
 ```
 The chart will look as shown below:
 
@@ -266,14 +257,13 @@ To display time in a chart in terms of progressively higher units (seconds, minu
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "numberScaleValue": "60",
         "numberScaleUnit": " minutes"
     }
 }
-
 ```
 The chart will look as shown below:
 
@@ -287,14 +277,13 @@ To display storage capacity in terms of progressively higher units, (megabytes (
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "numberScaleValue": "1024,1024,1024",
         "numberScaleUnit": " MB, GB, TB"   
     }
 }
-
 ``` 
 The chart will look as shown below:
 
@@ -314,14 +303,13 @@ Use the following attributes for recursive scaling:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "scaleRecursively": "1",
         "maxScaleRecursion": "-1"
     }
 }
-
 ``` 
 The chart will look as shown below:
 
