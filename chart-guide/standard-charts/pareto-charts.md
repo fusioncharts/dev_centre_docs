@@ -5,6 +5,8 @@ heading: Pareto Chart
 breadcrumb: [["Home", "/"], ["Pareto Chart"]]
 ---
 
+> These chart types belong to **FusionCharts XT**.
+
 A Pareto chart, named after Vilfredo Pareto, is a type of chart that combines the column chart with the line chart. The data values in a Pareto chart are represented by columns, which are arranged in descending order of magnitude. The cumulative total of these values is shown by an upward curving line. Pareto charts are used for isolating the key causes of a problem. They can also be used for determining the key factors of success.
 
 The left vertical axis or the primary axis shows the frequency of occurrence, the cost, or other important units of measurement. The right vertical axis or the secondary axis shows the cumulative percentage of the total number of occurrences, the total cost, or the total of a specific unit of measurement.
@@ -31,7 +33,7 @@ To create a pareto chart in 2D follow the steps given below: set the `type` attr
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, you can check the API reference page of pareto 2D chart .
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pareto2d "@@open-newtab") page of multi-series pareto 2D chart.
 
 The pareto chart in 2D for the above code looks like:
 
@@ -42,6 +44,8 @@ Click [here](http://jsfiddle.net/fusioncharts/Qc4Gp/ "@@open-newtab") to edit th
 ## Pareto 3D
 
 To render a pareto chart in 3D, change the value of the `type` attribute from `pareto2D` to `pareto3D`. The rest of the data structure remains the same.
+
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pareto3d "@@open-newtab") page of multi-series pareto 3D chart.
 
 A simple Pareto 3D chart looks like this:
 

@@ -5,6 +5,8 @@ heading: Zoom Line Chart
 breadcrumb: [["Home", "/"], ["Zoom Line Chart"]]
 ---
 
+> These chart types belong to **FusionCharts XT**.
+
 The FusionCharts Suite XT zoom line chart is a special type of multi-series line chart that allows analysis of data at macroscopic and microscopic levels. It can easily plot thousands of data points, which can produce indecipherable results if plotted on an ordinary line chart.
 
 ## Create a Zoomline Chart
@@ -23,7 +25,7 @@ To create a zoom line chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, you can check the API reference page of zoomline chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=zoomline "@@open-newtab") page of zoomline chart.
 
 The zoom line chart thus created looks like this:
 
@@ -49,7 +51,7 @@ Another advantage of using the zoom-line dual y-axis chart is when you want to c
 
 To create a zoom-line dual y-axis chart, set the `type` attribute to `zoomlinedy`.
 
-For a detailed list of attributes, you can check the API reference page of zoom-line dual y-axis chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=zoomlinedy "@@open-newtab") page of zoomlinedy chart.
 
 The chart below shows a zoom-line dual y-axis chart created to compare unique footfall with the sales (in dollars), for each day of the previous year.
 

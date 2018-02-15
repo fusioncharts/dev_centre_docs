@@ -1,5 +1,5 @@
 {
-    id: "stockRealTimeChart",
+
     type: 'realtimeline',
     renderAt: 'chart-container',
     width: '500',
@@ -33,7 +33,8 @@
         }]
     },
     "events": {
-        "initialized": function(e) {
+        "initialized": function(e, a) {
+            console.log(e, a);
             function addLeadingZero(num) {
                 return (num <= 9) ? ("0" + num) : num;
             }

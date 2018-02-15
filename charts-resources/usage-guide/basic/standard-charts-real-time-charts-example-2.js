@@ -1,5 +1,4 @@
 {
-    id: "stockRealTimeChart",
     type: 'realtimearea',
     renderAt: 'chart-container',
     width: '500',

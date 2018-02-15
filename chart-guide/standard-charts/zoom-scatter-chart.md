@@ -5,6 +5,8 @@ heading: Zoom Scatter Chart
 breadcrumb: [["Home", "/"], ["Zoom Scatter Chart"]]
 ---
 
+> This chart type belongs to **FusionCharts XT**.
+
 The FusionCharts Suite XT zoom-scatter chart, a special type of chart, is an extension of the scatter chart with the zooming and panning features and the ability to display millions of data points because of these features.
 
 The zoom-scatter chart is primarily used to find correlations between datasets. Correlations in the chart can be determined by visual patterns in the data. Higher the number of data points, higher is the accuracy of the correlations. The zoom-scatter chart is capable of handling more than a million data points in modern canvas supported browsers (including IE9+).
@@ -35,11 +37,11 @@ Some of the attributes used to create a zoom scatter chart are:
 
 > The above attributes belong to the `data` object (child of the dataset object).
 
-For a detailed list of attributes, you can check the API reference page of zoom scatter chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=zoomscatter "@@open-newtab") page of zoom scatter chart.
 
 Take a look at the sample zoom-scatter chart shown below:
 
-{% embed_all standard-charts-zoom-scatter-charts-example-1.js %}
+{% embed_chart standard-charts-zoom-scatter-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/t1d4dmgp/ "@@open-newtab") to edit the zoom-scatter chart.
 

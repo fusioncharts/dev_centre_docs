@@ -5,6 +5,8 @@ heading: Logarithmic Chart
 breadcrumb: [["Home", "/"], ["Logarithmic Charts"]]
 ---
 
+> These chart types belong to **PowerCharts XT**.
+
 Logarithmic charts are similar to normal charts except for the fact that logarithmic charts use a logarithmic axis instead of a linear axis. Logarithmic charts can have a logarithmic scale of any base greater than 1. These charts are perfect for plotting data that comprises of both small and large values. You can use these charts to plot data like sales comparison, election results, population growth, etc.
 
 ## Types
@@ -43,7 +45,7 @@ To create a log column 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, you can check the API reference page of log column 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=LogMSColumn2D "@@open-newtab") page of log column 2D chart.
 
 The log column 2D chart thus rendered looks like this:
 
@@ -54,6 +56,8 @@ Click [here](http://jsfiddle.net/fusioncharts/kEeUR/ "@@open-newtab") to edit th
 ## Log Line 2D Chart
 
 Now, let's create a log line 2D chart that compares the store footfalls with the online visits for one year. To render a log line 2D chart, change the value of the `type` attribute from `logmscolumn2d` to `logmsline`. The rest of the data structure remains the same.
+
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=LogMSLine "@@open-newtab") page of log line 2D chart.
 
 The log line chart thus rendered looks like this:
 

@@ -5,6 +5,8 @@ heading: Step Line Chart
 breadcrumb: [["Home", "/"], ["Step Line Chart"]]
 ---
 
+> This chart type belongs to **PowerCharts XT**.
+
 A step line chart is used to visualize trends for a particular event which is not continuous in nature. It is a specialized line chart which, unlike the usual line charts, does not use the shortest distance to connect two data points; instead, it uses vertical and horizontal lines to connect the data points in a series to form a step-like progression.
 
 Essentially, trends are quite apparent from the general slope of a line chart. However, when the lines take distorted shapes for a specific segment of data points, it becomes very difficult to determine the drift. This is where the significance of a step line chart comes in. For a given set of data, where a line chart shows the generic deviation of the data points, a step line chart not only enables you to compare the magnitude and change in values at different points of the same series but also helps you discern the intermittent pattern of the trend at the same time.
@@ -23,7 +25,7 @@ To create a multi-series step line chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, you can check the API reference page of the multi-series step line chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=msstepline "@@open-newtab") page of step-line chart.
 
 A multi-series step line chart looks like this:
 

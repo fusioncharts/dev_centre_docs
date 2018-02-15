@@ -5,6 +5,8 @@ heading: Select-scatter Chart
 breadcrumb: [["Home", "/"], ["Select-scatter Chart"]]
 ---
 
+> This chart type belongs to **PowerCharts XT**.
+
 The select-scatter chart is a special type of chart that allows users to visually select a subset of data from the given data points. Essentially, it is an extension of the XY plot chart (scatter chart) with the added functionality of selecting any number of points on the chart and returning them to the server, or JavaScript functions, for further processing.
 
 This can be used for a variety of purposes, where you want your users to visually select data from the scatter chart. As an example, we will plot a select-scatter chart to show the products sold and the price points earned, for televisions and cell phones at Harry's SuperMart in one week.
@@ -21,7 +23,7 @@ To create a select-scatter chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, you can check the API reference page of select-scatter chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=selectscatter "@@open-newtab") page of select-scatter chart.
 
 The select-scatter chart thus created looks like this:
 

@@ -5,6 +5,8 @@ heading: Multi-axis Line Chart
 breadcrumb: [["Home", "/"], ["Multi-axis Line Chart"]]
 ---
 
+> This chart type belongs to **PowerCharts XT**.
+
 A multi-axis line chart, as the name suggests, is an interactive line chart that can be configured for multiple axes. It is a special type of chart that allows multiple y-axes to be rendered in the same chart. The advantage of using a multi-axis line chart is that you can plot multiple data sets with different types of units. For example, 1-100 on one axis, 1m - 100m on another axis, and 0 - 1 on yet another axis) on the same chart.
 
 ## Features
@@ -65,9 +67,11 @@ The attributes and the structure of the multi-axis line chart is a bit different
 
 * Set the `showAxis` attribute to specify whether the axis will be shown or hidden (referred to as an imaginary axis). Setting this attribute to `0` will hide the axis, setting it to `1` (default) will show it.
 
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=MultiAxisLine "@@open-newtab") page of multi-axis line chart.
+
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         ...
@@ -90,8 +94,6 @@ Refer to the code below:
 }
 
 ```
-
-For a detailed list of attributes you can check the API reference page of multi-axis line chart.
 
 A multi-axis line chart rendered with three axes looks like this:
 

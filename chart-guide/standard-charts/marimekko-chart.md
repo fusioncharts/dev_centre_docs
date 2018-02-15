@@ -5,6 +5,8 @@ heading: Marimekko Chart
 breadcrumb: [["Home", "/"], ["Marimekko Chart"]]
 ---
 
+> This chart type belongs to **FusionCharts XT**.
+
 Marimekko charts are stacked column charts with columns of variable width. They are primarily used for marketing analysis.
 
 The following three dimensions of marketing data can be represented using a Marimekko chart:
@@ -39,7 +41,7 @@ To create a marimekko chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, you can check the API reference page of the Marimekko chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=marimekko "@@open-newtab") page of marimekko chart.
 
 The marimekko chart for the above code looks like :
 
