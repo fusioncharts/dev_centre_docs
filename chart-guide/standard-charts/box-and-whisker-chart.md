@@ -153,7 +153,7 @@ Refer to the code given below:
 
 ```
 
-For a detailed list of attributes refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=boxandwhisker2d page of box and whisker chart.
+For a detailed list of attributes refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=boxandwhisker2d "@@open-newtab")  page of box and whisker chart.
 
 The box and whisker chart looks like:
 
