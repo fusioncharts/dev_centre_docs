@@ -19,9 +19,9 @@ FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG 
 
 <p class="text-info">  To export a chart in the XLS format, using server-side exporting, it is mandatory that the exporting server has the latest code, which is available in the FusionCharts package. Alternatively, the FusionCharts export link, [export.api3.fusioncharts.com](export.api3.fusioncharts.com), can also be used. For client-side exporting, download as XLS is supported only by modern browsers with canvas support (except Safari and IE9). </p>
 
-To enable server-side exporting, the chart level attribute `exportEnabled` is set to __1__. The ![image](/assets/images/exporting-as-image-and-pdf-export-button.jpg) menu button is now visible in the top-right corner of the chart. Click/hover over this menu button to see the dropdown menu with the export options, as shown in the image below:
+To enable server-side exporting, the chart level attribute `exportEnabled` is set to __1__. The ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) menu button is now visible in the top-right corner of the chart. Click/hover over this menu button to see the dropdown menu with the export options, as shown in the image below:
 
-![image](/assets/images/exporting-as-image-and-pdf-export-menu.jpg)
+![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-menu.jpg)
 
 The chart is downloaded to your machine in the selected format.
 

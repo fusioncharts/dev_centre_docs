@@ -1,7 +1,6 @@
 {
     type: 'hlineargauge',
     renderAt: 'chart-container',
-    id: 'cpu-linear-gauge-2',
     width: '400',
     height: '170',
     dataFormat: 'json',
@@ -63,7 +62,7 @@
                 var ggPrcnt = 60 + parseInt(Math.floor(Math.random() * 10), 10),
                     //Range 75-85%
                     bcPrcnt = 75 + parseInt(Math.floor(Math.random() * 10), 10);
-                FusionCharts.items["cpu-linear-gauge-2"].feedData("value=" + ggPrcnt + "|" + bcPrcnt);
+               	evtObj.sender.feedData("value=" + ggPrcnt + "|" + bcPrcnt);
             }, 5000);
         },
         "disposed": function(evtObj, argObj) {

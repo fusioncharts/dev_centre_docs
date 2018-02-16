@@ -19,7 +19,7 @@ __Two main parts make FusionExport :__
 
 ## FusionExport architecture
 
-![FusionExport Architecture Diagram](/assets/images/fusionexport-architecture-diagram.png)
+![FusionExport Architecture Diagram]({% site.baseurl %}/images/fusionexport-architecture-diagram.png)
 
 <div class="text-info">
 	<strong>To interact with FusionExport, you can either go for simple CLI or use the language of your choice.</strong>

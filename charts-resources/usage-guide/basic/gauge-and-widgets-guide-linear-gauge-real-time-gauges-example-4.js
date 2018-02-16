@@ -1,7 +1,6 @@
 {
     type: 'hlineargauge',
     renderAt: 'chart-container',
-    id: 'cpu-linear-gauge-4',
     width: '400',
     height: '170',
     dataFormat: 'json',
@@ -65,7 +64,7 @@
 
             function showData() {
                 //Retrieving the data
-                var dataVal = FusionCharts.items["cpu-linear-gauge-4"].getData(1),
+                var dataVal = evtObj.sender.getData(1),
                     str = "",
                     currDate = new Date(),
                     label = formatTime(currDate.getHours()) + ":" + formatTime(currDate.getMinutes()) + ":" + formatTime(currDate.getSeconds());

@@ -1,7 +1,6 @@
 {
     type: 'bulb',
     renderAt: 'chart-container',
-    id: 'myChart',
     width: '300',
     height: '300',
     dataFormat: 'json',
@@ -19,7 +18,7 @@
             //Tooltext
             "plottooltext": "Current Temperature: $value°C",
 
-            "dataStreamURL": "bulbData.php",
+            "dataStreamURL": "dummy-url-bulbData.php",
             "refreshInterval": "5",
             //Theme
             "theme": "fint"

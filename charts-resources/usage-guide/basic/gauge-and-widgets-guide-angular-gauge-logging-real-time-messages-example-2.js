@@ -14,7 +14,7 @@
             "valueBelowPivot": "1",
             "tickValueDistance": "25",
             "theme": "fint",
-            "dataStreamUrl": "http://static.fusioncharts.com/sampledata/php/streamErrorMessages.php",
+            "dataStreamUrl": "https://static.fusioncharts.com/sampledata/php/streamErrorMessages.php",
             "refreshInterval": "10",
             "useMessageLog": "1",
             "showRTmenuItem": "1"
