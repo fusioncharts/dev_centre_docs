@@ -15,11 +15,11 @@ An LED gauge with major and minor tick marks looks like this:
 
 ![tick marks]({% site.baseurl %}/images/chart-configurations-tick-marks-image-1.png)
 
-## Show/hide tick marks
+## Show/Hide Tick Marks
 
 By default, the tick marks are displayed. To hide the tick marks set the `showTickMarks` attribute to `1`. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "showTickMarks": "0"
@@ -33,11 +33,11 @@ An LED gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/39ffv9bt/ "@@open-newtab") to edit the above chart.
 
-## Show/Hide the tick values
+## Show/Hide the Tick Values
 
 By default, the tick values are displayed. To hide the tick values set the `showTickValues` attribute to `1`. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "showTickValues": "0"
@@ -55,7 +55,7 @@ You can also opt to hide the upper and lower limits of the gauge. To do so, set 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "showLimits": "0"
@@ -69,7 +69,7 @@ An LED gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/4aLmm0vs/ "@@open-newtab") to edit the above chart.
 
-## Configure the tick value position
+## Configure the Tick Value Position
 
 By default, tick marks and tick values are placed outside a gauge. In vertical gauges (like the vertical LED gauge), they are placed to the right of the gauge by default. Similarly, in horizontal gauges (like the horizontal LED gauge), they are placed below the gauge.
 
@@ -81,7 +81,7 @@ To customize the position of tick marks and tick values use the following attrib
 
 Refer to the code below:
 
-```
+```json
 {   
     "chart": {
         "placeTicksInside": "1",
@@ -96,7 +96,7 @@ An angular gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/76s1f9m3/ "@@open-newtab") to edit the above chart.
 
-### Tick value position of horizontal gauges
+### Tick Value Position of Horizontal Gauges
 
 To customize the position of tick marks and tick values of a horizontal use the following attributes:
 
@@ -104,8 +104,8 @@ To customize the position of tick marks and tick values of a horizontal use the 
 
 Refer to the code below:
 
-```
-   {
+```json
+{
     "chart": {
         "ticksBelowGauge": "0"
     }
@@ -118,16 +118,16 @@ A horizontal gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/vqdccxk4/ "@@open-newtab") to edit the above chart.
 
-### Tick value position of vertical gauges
+### Tick Value Position of Vertical Gauges
 
 To customize the position of tick marks and tick values of a vertical gauge use the following attributes:
 
-* Set the `ticksOnRight` to `1` to view the tick marks at the right of the gauge. In case of the vertical gauge the tick marks get rendered above the gauge.
+* Set the `ticksOnRight` to `1` to view the tick marks at the right of the gauge. In case of the vertical gauge, the tick marks get rendered above the gauge.
 
 Refer to the code below:
 
-```
-   {
+```json
+{
     "chart": {
         "ticksOnRight": "1"
     }
@@ -140,7 +140,7 @@ A vertical gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/ja7c6na6/ "@@open-newtab") to edit the above chart.
 
-## Display every nth tick mark value
+## Display every nth Tick Mark Value
 
 FusionCharts allows you to show every n-th value, where the upper and lower limit of the scale is always displayed. 
 
@@ -148,7 +148,7 @@ To do so, specify the n-th tick value using the `tickValueStep` attribute.
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "tickValueStep": "2"
@@ -162,7 +162,7 @@ A horizontal LED gauge displaying n-th value looks as below:
 
 Click [here](http://jsfiddle.net/fusioncharts/bn9o9cc9/ "@@open-newtab") to edit the above chart.
 
-## Show tick values in decimals
+## Show Tick Values in Decimals
 
 You can configure the number of decimals and can also force the number of decimals on tick values. 
 
@@ -174,7 +174,7 @@ To do so, the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "tickValueDecimals": "3",
@@ -189,7 +189,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/d1wgyhx5/ "@@open-newtab") to edit the above chart.
 
-## Configure tick mark and tick value padding
+## Configure Tick Mark and Tick Value Padding
 
 By defining the padding for tick mark and tick value, you can control the amount of space between the tick mark and the gauge, or between the tick values and tick marks. 
 
@@ -201,7 +201,7 @@ To do so, use the following attributes:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "tickMarkDistance": "10",
@@ -216,7 +216,7 @@ A horizontal LED gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/b7vLwyoh/ "@@open-newtab") to edit the above chart.
 
-## Set the number of major and minor tick marks
+## Set the Number of Major and Minor Tick Marks
 
 By default, the number of major and minor ticks are automatically adjusted. You can opt to define the number of major and minor tick marks to be rendered on a gauge. To do so, the following attributes are used:
 
@@ -228,7 +228,7 @@ By default, the number of major and minor ticks are automatically adjusted. You 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "adjustTM": "0",
@@ -244,15 +244,15 @@ A horizontal LED gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/eke99cLx/ "@@open-newtab") to edit the above chart.
 
-## Configure visuals of tick marks
+## Configure Visuals of Tick Marks
 
 You can configure the color, transparency, height, and thickness of both, major and minor tick marks. 
 
 To do so, use the following attributes:
 
-* Specify the hex code of the major ticks color using the `majorTMColor` attribute. 
+* Specify the hex code for the major ticks color using the `majorTMColor` attribute. 
 
-* Specify the hex code of the minor ticks color using the `minorTMColor` attribute.
+* Specify the hex code for the minor ticks color using the `minorTMColor` attribute.
 
 * Set the transparency of the major ticks using the `majorTMAlpha` attribute.
 
@@ -262,13 +262,13 @@ To do so, use the following attributes:
 
 * Set the height of the minor ticks using the `minorTMHeight` attribute.
 
-* Set the thickness of the major ticks using  the `majorTMThickness` attribute.
+* Set the thickness of the major ticks using the `majorTMThickness` attribute.
 
-* Set the thickness of the minor ticks using  the `minorTMThickness` attribute.
+* Set the thickness of the minor ticks using the `minorTMThickness` attribute.
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "majorTMColor": "#666666",

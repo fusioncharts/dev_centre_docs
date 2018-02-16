@@ -1,5 +1,4 @@
 {
-    id: "stockRealTimeChart",
     type: 'realtimeline',
     renderAt: 'chart-container',
     width: '500',
@@ -34,6 +33,7 @@
     },
     "events": {
         "initialized": function(e) {
+			var chartRef = e.sender;
             var flag = 0;
 
             function addLeadingZero(num) {
@@ -43,7 +43,7 @@
 
             function updateData() {
                 // Get reference to the chart using its ID
-                var chartRef = e.sender,
+                // var chartRef = e.sender,
                     // We need to create a querystring format incremental update, containing
                     // label in hh:mm:ss format
                     // and a value (random).

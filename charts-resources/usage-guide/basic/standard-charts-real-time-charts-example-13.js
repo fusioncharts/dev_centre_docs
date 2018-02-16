@@ -8,7 +8,7 @@
         "chart": {
             "caption": "Harry's Supermart",
             "subCaption": "Real-time Stock Price monitor",
-            "dataStreamURL": "../../../resources/php/advanced-charting-real-time-charts-adding-data-stamp-php-1.php",
+            "dataStreamURL": "https://static.fusioncharts.com/sample/dev2.0/advanced-charting-real-time-charts-adding-data-stamp-php-1.php",
             "refreshInterval": "5",
             "updateInterval": "15",
             "yaxisminvalue": "30",

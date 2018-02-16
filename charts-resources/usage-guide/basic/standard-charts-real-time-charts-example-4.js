@@ -1,5 +1,4 @@
 {
-    id: "mychart",
     type: 'realtimecolumn',
     renderAt: 'chart-container',
     width: '600',
@@ -69,6 +68,7 @@
     },
     "events": {
         "initialized": function(evt, arg) {
+			var chartRef = evt.sender;
             //Format minutes, seconds by adding 0 prefix accordingly
             function formatTime(time) {
                 (time < 10) ? (time = "0" + time) : (time = time);
@@ -78,7 +78,7 @@
             function updateData() {
 
                 //Get reference to the chart using its ID
-                var chartRef = FusionCharts("mychart"),
+                // var chartRef = FusionCharts("mychart"),
                     //We need to create a querystring format incremental update, containing
                     //label in hh:mm:ss format
                     //and a value (random).

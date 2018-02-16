@@ -9,7 +9,7 @@ FusionCharts Suite XT has five chart color palettes which configure these chart 
 
 This section talks about using these predefined palettes.
 
-## Predefined palettes
+## Predefined Palettes
 
 **Palette 1** is the default chart palette. A chart with `palette` set as `1` looks as below:
 

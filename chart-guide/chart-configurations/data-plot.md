@@ -5,16 +5,15 @@ heading: Data Plot
 breadcrumb: [["Home", "/"], ["Data Plot"]]
 ---
 
-Data plot refers to the column in column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart. You can enhance the way your data plot looks using colors, gradients and hover effects. 
-
+Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart. You can enhance the way your data plot looks using colors, gradients and hover effects. 
 
 ## Color individual data plots
 
-You can specify a custom color for each data plot. Specify the hex code of the color using the `color` attribute within `data` under the `chart` object.
+You can specify a custom color for each data plot. Specify the hex code of the color using the `color` attribute within `data`under the `chart` object.
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         ...
@@ -82,7 +81,6 @@ Refer to the code below:
         }
     ]
 }
-
 ```  
 
 The chart will look like as shown below:
@@ -91,19 +89,17 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/2kayhgmk/ "@@open-newtab") to edit the above chart.
 
-## Color different data series/data plots
+## Color different Data Plots
 
 You can also specify a comma separated list of colors for use in different data series (or in case of single series charts, different data plots). The colors are selected from the list in a round-robin way for each data series. 
 
-Specify your own palette for data plots by providing a list of hex colors using the `paletteColors` attribute. Refer to the code below:
+Specify your custom palette for data plots by providing a list of hex colors using the `paletteColors` attribute. Refer to the code below:
 
-```
+```json
 {
     "chart":{
-    ...
-    "palettecolors":"FF5904,0372AB,FF0000"
+        "palettecolors":"FF5904,0372AB,FF0000"
     }
-    ...
 }
 ```
 
@@ -113,7 +109,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/j7cbwm5o/ "@@open-newtab") to edit the above chart.
 
-## Add gradient effect to data plots
+## Add Gradient Effect to Data Plots
 
 You can apply a global gradient color for an entire data plot. To do so follow the steps given below:
 
@@ -123,15 +119,12 @@ You can apply a global gradient color for an entire data plot. To do so follow t
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "usePlotGradientColor": "1",
         "plotGradientColor":"#ffffff"
-        ...
     }
-...
 }    
 ```
 
@@ -141,31 +134,28 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/b781gp10/ "@@open-newtab") to edit the above chart.
 
-## Customize gradient properties
+## Customize Gradient Properties
 
-Apart from a basic gradient effect, you can also customize the gradient angle and fill ratio for a data plot. To customize the gradient properties the following attributes are used:
+Apart from a basic gradient effect, you can also customize the gradient angle and fill ratio for a data plot. To customize the gradient properties, the following attributes are used:
 
-* `plotFillAngle` - Set the fill angle for gradient (for column, area and pie charts). Values can range from `0-360`.
+* `plotFillAngle` - Set the fill angle for the gradient (for column, area and pie charts). Values can range from `0-360`.
 
-* `plotFillRatio` - Specify the start and end of the gradient effect in a comma separated format. For example a setting of "20, 40" would cause the gradient effect to start at 20% of width and end at 40% of width. The color before gradient start would be set to the data plot color and after gradient end would get set to the gradient fill color.
+* `plotFillRatio` - Specify the start and end of the gradient effect in a comma separated format. For example, a setting of "20, 40" would cause the gradient effect to start at 20% of width and end at 40% of the width. The color before gradient start would be set to the data plot color, and after the gradient end would get set to the gradient fill color.
 
 * `plotFillAlpha` - Set the transparency of the gradient fill. 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "usePlotGradientColor": "1",
         "plotGradientColor": "#003366",
         "plotFillAngle": "0",
         "plotFillAlpha": "90",
         "plotFillRatio": "0,100"
     }
-...
 }
-
 ```
 
 The chart will look like as shown below:
@@ -174,19 +164,17 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/p26mehrm/ "@@open-newtab") to edit the above chart.
 
-## Show/hide plot border
+## Show/Hide Plot Border
 
 Every data plot (column, area, or pie) has a border by default. Set the `showPlotBorder` to `0` to hide the plot border. 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "showPlotBorder": "0"
-    },
-...
+    }
 }
 ```
 
@@ -196,7 +184,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/bofsxted/ "@@open-newtab") to edit the above chart.
 
-## Dashed data plot border
+## Dashed data Plot Border
 
 You can set a dashed border for the data plot and can also customize dash-length and the gap between dashes. To do so, the following attributes are used:
 
@@ -212,18 +200,16 @@ You can set a dashed border for the data plot and can also customize dash-length
 
 Refer to the code below:
 
- ```
+ ```json
 {
     "chart": {
-        ...
         "showPlotBorder": "1",
         "plotBorderDashed": "1",
         "plotBorderDashLen": "4",
         "plotBorderDashGap": "4",
         "plotBorderThickness": "1",
         "plotBorderColor": "#000000"
-    },
-...
+    }
 }
 ```
 
@@ -245,7 +231,7 @@ The above attributes are used in the `chart` object which affects globally. You 
 
 Refer to the code below:
 
- ```
+```json
 {
     "chart": {
         ...
@@ -257,9 +243,7 @@ Refer to the code below:
         "DashLen": "4",
         "DashGap": "4",
     }]
-...
 }
-
 ```
 The chart will look like as shown below:
 
@@ -267,20 +251,18 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/0uq53Leq/ "@@open-newtab") to edit the above chart.
 
-## Round edges
+## Round Edges
 
 You can configure data plots with rounded edges in 2D Column or Bar charts. Set the `useRoundEdges` attribute to `1`. 
 
 Refer to the code below:
 
- ```
+```json
 {
     "chart": {
         "useRoundEdges":"1"
     }
-...
 }
-
 ```
 The chart will look like as shown below:
 
@@ -288,7 +270,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/95kbo47f/ "@@open-newtab") to edit the above chart.
 
-## Plot hover effects
+## Plot Hover Effects
 
 You can display hover effects for data plots to add an interactive element to the charts. To apply the hover effects at the `chart` level, the following attributes are used:
 
@@ -312,10 +294,9 @@ You can display hover effects for data plots to add an interactive element to th
 
 Refer to the code below:
 
- ```
+ ```json
 {
     "chart": {
-        ...
         "plotHoverEffect":"1",
         "plotFillHoverColor":"#00ffaa",
         "plotBorderHoverThickness": "1",
@@ -323,9 +304,7 @@ Refer to the code below:
         "plotBorderHoverDashLen": "6",
         "plotBorderHoverDashGap": "2"
     }
-...
 }
-
 ```
 
 Shown below is a chart with hover effects enabled:
@@ -356,10 +335,9 @@ You can also apply hover effects for individual data plots instead of applying t
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "plotHoverEffect":"1"
     },
     "data": [{

@@ -5,15 +5,15 @@ heading: Add External Logo
 breadcrumb: [["Home", "/"], ["External Logo"]]
 ---
 
-You can load external logos at runtime which will be displayed over the chart. The logos can be GIF/JPEG/PNG or SWF files that reside on the same sub-domain as the chart.
+You can load external logos at runtime which will be displayed on the chart. The logos can be GIF/JPEG/PNG or SWF files that reside on the same sub-domain as the chart.
 
-## Add an external logo
+## Add an External Logo
 
 To add an external logo specify the URL of the logo using the `logoURL` attribute. 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png"
@@ -27,9 +27,9 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/xwmrw80q/ "@@open-newtab") to edit the above chart.
 
-## Configure the external logo
+## Configure the External Logo
 
-To configure the external logo the following attributes are used:
+To configure the external logo, the following attributes are used:
 
 * Set the transparency of the logo using the `logoAlpha` attribute. 
 
@@ -39,7 +39,7 @@ To configure the external logo the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
@@ -56,13 +56,13 @@ The chart will look like as shownn below:
 
 Click [here](http://jsfiddle.net/fusioncharts/za1a6xer/ "@@open-newtab") to edit the above chart.
 
-## Link logo to an external URL
+## Link Logo to an External URL
 
-To add an external link to the logo, specify the exterlink using the `logoLink` attribute. 
+To add an external link to the logo, specify the external link using the `logoLink` attribute. 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "logoLink": "N-http://www.fusioncharts.com/"

@@ -17,13 +17,13 @@ FusionCharts JSP Wrapper can be downloaded from [here](https://www.fusioncharts.
 
 To work with FusionCharts JSP wrapper, follow the steps given below:
 
-* Once you are done with the downloading of the wrapper, unzip the archive and move its contents to the `/jsp-wrapper-master/src/java/fusioncharts/` to get the `FusionCharts.java` main class file.
+* After downloading the wrapper, unzip the archive and move its contents to the `/jsp-wrapper-master/src/java/fusioncharts/` to get the `FusionCharts.java` main class file.
 
 * Include `FusionCharts.java` in your project
 
 * Start using the methods and classes available under the **FusionCharts** namespace to generate charts in your project.
 
-> FusionCharts JS libraries should already be installed within your project in order to work with this wrapper.
+> FusionCharts JS libraries should already be installed within your project to work with this wrapper.
 
 ### Install FusionCharts JS libraries
 
@@ -38,7 +38,7 @@ There are two ways you can install FusionCharts JS library in your project:
 Write a script tag in the section of the page where you want to add the source of the FusionCharts library link from the official CDN:
 
 ```
-<script type="text/javascript" src="[http://static.fusioncharts.com/code/latest/fusioncharts.js](http://static.fusioncharts.com/code/latest/fusioncharts.js)"></script>
+<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
 ```
 
 #### Use library files placed in a folder of your project

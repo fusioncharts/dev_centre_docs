@@ -1,6 +1,6 @@
 {
-    type: 'realtimecolumn',
-    renderAt: 'chart-container',
+	renderAt: 'chart-container',
+	type: "realtimecolumn", 
     width: '600',
     height: '300',
     dataFormat: 'json',

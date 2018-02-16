@@ -5,13 +5,15 @@ heading: Zoom Scatter Chart
 breadcrumb: [["Home", "/"], ["Zoom Scatter Chart"]]
 ---
 
+> This chart type belongs to **FusionCharts XT**.
+
 The FusionCharts Suite XT zoom-scatter chart, a special type of chart, is an extension of the scatter chart with the zooming and panning features and the ability to display millions of data points because of these features.
 
 The zoom-scatter chart is primarily used to find correlations between datasets. Correlations in the chart can be determined by visual patterns in the data. Higher the number of data points, higher is the accuracy of the correlations. The zoom-scatter chart is capable of handling more than a million data points in modern canvas supported browsers (including IE9+).
 
 ## Create a Zoom Scatter chart
 
-Let's create a chart which compares the admission rate (in percent) with the average annual returns on degree (in percent) for five majors and over a period of 20 years.
+Let's create a chart which compares the admission rate (in percent) with the average annual returns on the degree (in percent) for five majors and over a period of 20 years.
 
 To create a zoom scatter chart follow  the steps given below:
 
@@ -33,21 +35,21 @@ Some of the attributes used to create a zoom scatter chart are:
 
 * `y` attribute specifies the y-coordinate of the data plot.
 
-> The above attributes belongs to the `data` object (child of the dataset object).
+> The above attributes belong to the `data` object (child of the dataset object).
 
-For a detailed list of attributes you can check the API reference page of zoom scatter chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=zoomscatter "@@open-newtab") page of zoom scatter chart.
 
 Take a look at the sample zoom-scatter chart shown below:
 
-{% embed_all standard-charts-zoom-scatter-charts-example-1.js %}
+{% embed_chart standard-charts-zoom-scatter-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/t1d4dmgp/ "@@open-newtab") to edit the zoom-scatter chart.
 
-Drag the mouse-pointer over the chart to select and zoom into a subset of data points.
+Drag the cursor over the chart to select and zoom into a subset of data points.
 
 At the time of rendering, the zoom-scatter chart is displayed with a macroscopic view of data. To select a subset of data points and zoom into them, drag the mouse pointer over the data points. A rectangle is drawn to highlight the selected data points and all points within this rectangle are zoomed.
 
-When a subset of data plots is selected and zoomed into, the selected portion expands to occupy the entire width and height of the chart. Data is neatly compressed, so that all of it fits into the height and width of the chart. To analyze the data in greater detail, the select and zoom process can be repeated several times over, until the last level of granularity. The chart can be restored to its original macroscopic display mode by clicking the ![ToolBar_Button_Enter]({% site.baseurl %}/images/standard-charts-zoom-scatter-chart-image-2.png) button on the toolbar.
+When a subset of data plots is selected and zoomed into, the selected portion expands to occupy the entire width and height of the chart. Data is neatly compressed so that all of it fits into the height and width of the chart. To analyze the data in greater detail, the select and zoom process can be repeated several times over, until the last level of granularity. The chart can be restored to its original macroscopic display mode by clicking the ![ToolBar_Button_Enter]({% site.baseurl %}/images/standard-charts-zoom-scatter-chart-image-2.png) button on the toolbar.
 
 For a large amount of data rendered within limited chart space, this chart helps you identify the correlation between data as well as analyze it further by zooming and panning into the data.
 
@@ -68,15 +70,15 @@ Button Icon|Button Name|Function|
 
 > In order to render zoom scatter chart, include fusioncharts.zoomscatter.js in the project folder with rest of the .js files as mentioned **[here](https://www.fusioncharts.com/dev/getting-started/installation.html)**.
 
-> The anchors in the zoom-scatter chart cannot be made clickable, because FusionCharts does not include the supporting API for defining an external URL for the data points due to performance concerns.
+> The anchors in the zoom-scatter chart cannot be made clickable because FusionCharts does not include the supporting API for defining an external URL for the data points due to performance concerns.
 
 Now, let's see how to draw regression lines in the zoom scatter chart. 
 
 ## Draw Regression Lines
 
-A regression line, rendered as a straight line, is used to show the trend of **y** values with respect to the **x** values or the trend of **x** values with respect to the **y** values. A regression line, therefore, can be used to derive a particular trend from the scattered data points in the chart canvas and predict values accordingly. For example, regression lines can be used to find trends and predict future sales, stock prices, currency exchange rates, productivity gains resulting from a training program, and so on.
+A regression line, rendered as a straight line, is used to show the trend of **y** values for the **x** values or the trend of **x** values for the **y** values. A regression line, therefore, can be used to derive a particular trend from the scattered data points in the chart canvas and predict values accordingly. For example, regression lines can be used to find trends and predict future sales, stock prices, currency exchange rates, productivity gains resulting from a training program, and so on.
 
-There are several methods to calculate and draw regression lines; the zoom-scatter chart, using linear regression, uses the **least-squares** deviation method (also known as the least absolute deviation method). This method calculates the best-fitting straight-line for the observed data by minimizing the sum of the squares of the vertical deviation of each data point from the line (if a point lies on the fitted line exactly, then its vertical deviation is 0). As the deviation values are first squared and then summed, there are no cancellations between positive and negative values.
+There are several methods to calculate and draw regression lines; the zoom-scatter chart, using linear regression, use the **least-squares** deviation method (also known as the least absolute deviation method). This method calculates the best-fitting straight-line for the observed data by minimizing the sum of the squares of the vertical deviation of each data point from the line (if a point lies on the fitted line exactly, then its vertical deviation is 0). As the deviation values are first squared and then summed, there are no cancellations between positive and negative values.
 
 To draw the regression line in a zoom scatter chart, set the `showRegressionLine` attribute to `1`. The default value for this attribute is `0`.
 

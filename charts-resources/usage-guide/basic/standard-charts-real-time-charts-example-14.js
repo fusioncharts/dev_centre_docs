@@ -1,5 +1,4 @@
 {
-    id: "mychart",
     type: 'realtimecolumn',
     renderAt: 'chart-container',
     width: '600',
@@ -77,18 +76,33 @@
     },
     events: {
         'beforeRender': function(evt, args) {
-            var controllers = document.createElement('div');
-            controllers.setAttribute('id', 'tableView');
-            controllers.style.cssText = "";
+			var controllers = document.createElement('div'),
+                container = document.createElement('div'),
+                header = document.createElement('div');
+
+			controllers.setAttribute('id', 'tableView');
+			container.style.height = '400px';
+            container.style.width = '100%';
+            container.style.background = '#fff';
+
+            header.style.textAlign = 'center';
+            header.style.borderBottom = '1px solid black';
+            header.style.width = '100%';
+            header.style.height = '30px';
+            header.innerHTML = 'Average Footfall Exceeded';
+
+            container.appendChild(header);
+			container.appendChild(controllers);
+			//controllers.style.cssText = "width:100%;height:400px;";
             //Display container div and write table
-            args.container.parentNode.insertBefore(controllers, args.container.nextSibling);
+			args.container.parentNode.insertBefore(container, args.container.nextSibling);
         },
         'rendered': function(evt, args) {
             window.showAlert = function(msg) {
                 var dispCon = document.getElementById("tableView"),
                     str = "",
-                    tdStyle = "border:1px solid;border-color:#cccccc;width:50%;font-weight: bold;font-size: 14px;padding: 3px;text-align:center",
-                    tdStyle2 = "border:1px solid;border-color:#cccccc;width:50%;color:#aa0000;font-weight: bold;font-size: 14px;padding: 3px;text-align:center";
+                    tdStyle = "width:50%;font-weight: bold;font-size: 14px;padding: 3px;text-align:center",
+					tdStyle2 = "width:50%;color:#aa0000;font-weight: bold;font-size: 14px;padding: 3px;text-align:center";
 
                 //Creating the table format
                 str += '<table cellpadding="1" width="275px" cellspacing="0">';

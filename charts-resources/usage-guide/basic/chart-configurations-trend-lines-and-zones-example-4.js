@@ -1,4 +1,5 @@
 {
+
     type: 'column2d',
     renderAt: 'chart-container',
     id: 'myChart',
@@ -13,12 +14,15 @@
             "yAxisName": "Revenue",
             "numberPrefix": "$",
             "theme": "fint",
-            "trendValueFontBold": "1",
-            "trendValueBorderColor": "#123456",
+            //Attributes to configure Trend Values
+            "trendValueBorderColor": "ff0000",
+            "trendValueBorderAlpha": "80",
+            "trendValueBorderPadding": "4",
+            "trendValueBorderRadius": "5",
+            "trendValueBorderThickness": "2",
             "trendValueBorderDashed": "1",
-            "trendValueBorderDashlen": "2",
-            "trendValueBorderDashGap": "3",
-            "trendValueBorderThickness": "3"
+            "trendValueBorderDashLen": "3",
+            "trendValueBorderDashGap": "3"
         },
         "data": [{
             "label": "Jan",

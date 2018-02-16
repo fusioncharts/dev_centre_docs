@@ -5,6 +5,8 @@ heading: Box and Whisker Chart
 breadcrumb: [["Home", "/"], ["Box and Whisker Chart"]]
 ---
 
+> This chart type belongs to **PowerCharts XT**.
+
 A box and whisker chart is a statistical chart that is used to examine and summarize a range of data values. It shows a frequency distribution of the data that helps in interpreting the distribution of data. It draws a statistical conclusion for the given data using the five number summary principle. The box and whisker chart is very useful to observe the mean, median, upper and lower quartiles, deviations, etc. for a huge set of data. It is used mostly used in chemical industries and weapon industries.
 
 ## Features
@@ -27,7 +29,7 @@ The `five-number summary` principle is used to plot data on the box and whisker 
 
 ![box and whisker]({% site.baseurl %}/images/standard-charts-box-and-whisker-image-1.jpg)
 
-> There is another principle, named as the 'Seven-number Summary', which is not used in the current implementation.
+> There is another principle, named as the 'Seven-number Summary' which is not used in the current implementation.
 
 On a box and whisker chart, three out of the five summary numbers are displayed by default (median, minimum number, and maximum number). You can also opt to display the other two summary numbers (upper and lower quartiles).
 
@@ -45,11 +47,11 @@ Apart from the five summary numbers the box and whisker chart allows you to disp
 
 To execute the five-number summary principle, we use the quartiles method. Using this method, a set of numbers is divided into four equal parts by three quartiles - Q1 (lower quartile), Q2 (median), and Q3 (upper quartile).
 
-> There are two other methods, Deciles and Percentiles, that are used to execute the five-number summary, which have not been used in this implementation.
+> There are two other methods, Deciles, and Percentiles, that are used to execute the five-number summary, which has not been used in this implementation.
 
-We will now look at some of the formulae that are used to plot data on a box and whisker chart.
+We will now look at some of the formula that are used to plot data on a box and whisker chart.
 
-> All the formulae are calculated after sorting the provided set of data in ascending order.
+> All the formula are calculated after sorting the provided set of data in ascending order.
 
 ### Mean
 
@@ -57,19 +59,19 @@ Mean is the usual average. The formula to calculate the mean is `ΣXi /N`, where
 
 ### Median (Q2)
 
-To find the median, you will first need to arrange the given set of data in ascending order (from the smallest to the greatest number). The element that resides in the center-most position is said to be the median. This is easy to derive when the set of data contains odd number of elements. You can also use the formula `(N+1)/2` to find the position, where `N` is the number of elements in the given set of data. But if the set of data consists of even number of elements, you get two middle positions. The average of the two numbers residing in the middle gives the median.
+To find the median, you will first need to arrange the given set of data in ascending order (from the smallest to the greatest number). The element that resides in the center-most position is said to be the median. This is easy to derive when the set of data contains an odd number of elements. You can also use the formula `(N+1)/2` to find the position, where `N` is the number of elements in the given set of data. But if the set of data consists of even number of elements, you get two middle positions. The average of the two numbers residing in the middle gives the median.
 
 ### Lower Quartile (Q1)
 
-The median divides the data into a lower half and an upper half. The lower quartile is the middle value of the lower half, i.e. the element between the minimum number and the median. The formula to find the position of the lower quartile when there are odd number of elements is `(N+1)/4` and for even number of elements it is `N/4`.
+The median divides the data into a lower half and an upper half. The lower quartile is the middle value of the lower half, i.e., the element between the minimum number and the median. The formula to find the position of the lower quartile when there is odd number of elements is `(N+1)/4`, and for even number of elements it is `N/4`.
 
 ### Upper Quartile (Q3)
 
-The upper quartile is the middle value that resides between the maximum number and the median. The formula to find the position of the upper quartile when there are odd number of elements is `(3N+3)/4` and for even number of elements it is `3N/4`.
+The upper quartile is the middle value that resides between the maximum number and the median. The formula to find the position of the upper quartile when there is odd number of elements is `(3N+3)/4`, and for even number of elements it is `3N/4`.
 
 ### Mean Deviation
 
-Mean deviation is the average of the absolute differences between each individual value and the mean. It gives us an idea of how spread out the set of values is from the center. The formula to calculate the mean deviation is `Σ|Xi - mean|/N`, where `N` is the total number of elements in a set of data, `X` is the data points or values present in the set of data, and `i` is the position of the values in the set of data. For grouped data, the formula is `Σf |Xi - mean|/N`, where `f` is the frequency of occurrence.
+Mean deviation is the average of the absolute differences between each value and the mean. It gives us an idea of how spread out the set of values is from the center. The formula to calculate the mean deviation is `Σ|Xi - mean|/N`, where `N` is the total number of elements in a set of data, `X` is the data points or values present in the set of data, and `i` is the position of the values in the set of data. For grouped data, the formula is `Σf |Xi - mean|/N`, where `f` is the frequency of occurrence.
 
 The process to calculate mean deviation is:
 
@@ -95,11 +97,11 @@ The process to calculate standard deviation is given below:
 
 ### Quartile Deviation
 
-The distance between the upper quartile and the lower quartile is called the interquartile range. Quartile deviation is half the distance between the two quartiles, i.e. half the interquartile range. It is also called as the semi-interquartile range. The formula to calculate quartile deviation is `(Q3-Q1)/2`.
+The distance between the upper quartile and the lower quartile is called the interquartile range. Quartile deviation is half the distance between the two quartiles, i.e., half the interquartile range. It is also called as the semi-interquartile range. The formula to calculate quartile deviation is `(Q3-Q1)/2`.
 
 ## Create a chart
 
-As an example, let's create a box and whisker chart that shows the gender-wise distribution of annual salaries. In the chart, note that the minimum and maximum values and the median will be  displayed by default, whereas the upper and lower quartile values will be hidden.
+As an example, let's create a box and whisker chart that shows the gender-wise distribution of annual salaries. In the chart, note that the minimum and maximum values and the median will be displayed by default, whereas the upper and lower quartile values will be hidden.
 
 To create a box and whisker chart, keep a note of the steps given below:
 
@@ -111,7 +113,7 @@ To create a box and whisker chart, keep a note of the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-* Depending on the value passed to the `dataFormat` attribute, set the `dataSource` attribute(JSON/XML) from where the data will be fetched.
+* Depending on the value passed to the `dataFormat` attribute, set the `dataSource` attribute (JSON/XML) from where the data will be fetched.
 
 **In the JSON data**
 
@@ -125,13 +127,15 @@ To create a box and whisker chart, keep a note of the steps given below:
 
 * Set the `upperBoxColor` attribute to specify the hex color code to be used to render the upper quartile box. This attribute belongs to the dataset object.
 
-* Set the `value` attribute to specify a comma-separated list of values for each item in the data set. This attribute belongs to the `data` object under `dataset` object.
+* Set the `value` attribute to specify a comma-separated list of values for each item in the dataset. This attribute belongs to the `data` object under `dataset` object.
 
 > **Note:** Comma (`,`) is the default data-separator. Specify the data-separator explicitly using the `dataSeparator` attribute.
 
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=boxandwhisker2d "@@open-newtab") page of box and whisker chart.
+
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         ...
@@ -153,8 +157,6 @@ Refer to the code given below:
 
 ```
 
-For a detailed list of attributes refer to the API reference page of box and whisker chart.
-
 The box and whisker chart looks like:
 
 {% embed_all standard-charts-box-and-whisker-chart-example-1.js %}
@@ -165,17 +167,17 @@ Click [here](http://jsfiddle.net/fusioncharts/qLvZF/ "@@open-newtab") to edit th
 
 FusionCharts Suite XT supports `legend` for the box and whisker chart. Legend allows you to display single color icons for numeric numbers.
 
-To display legend in a box and whisker chart, the following attributes are used:
+To display the legend in a box and whisker chart, the following attributes are used:
 
 * To display the legend on your chart, set the `showLegend` attribute to `1`.
 
-* Specify the position of legend on the chart using `legendPosition` attribute. Set the value of this  attribute to `bottom` to display the legend below the chart, whereas set the value to `right` to display the legend at the right side of the chart.
+* Specify the position of legend on the chart using `legendPosition` attribute. Set the value of this attribute to `bottom` to display the legend below the chart, whereas setting the value to `right` to display the legend at the right side of the chart.
 
 For the detailed list of attributes to configure legend, refer to the API reference page of the box and whisker chart.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
     	"showLegend": "1",
@@ -199,7 +201,7 @@ Let's customize the five summary numbers and their deviations plotted on a box a
 
 A box and whisker chart with three of the five summary numbers - the minimum and maximum numbers and the median - shown. To set the display of the summary numbers, follow the points given below:
 
-* Set the `showvalues` attribute to specify the display of  five summary on the chart. The default value of this attribute is `1` which shows the values in the chart, whereas setting it to `0` will hide the values.
+* Set the `showValues` attribute to display the five number summary on the chart. The default value of this attribute is `1` which shows the values in the chart, whereas setting it to `0` will hide the values.
 
 * To hide the minimum value (or the lower limit) of each data plot, set the `showMinValues` attribute to `0`. The default value for this attribute is `1`.
 
@@ -211,11 +213,11 @@ A box and whisker chart with three of the five summary numbers - the minimum and
 
 * To hide the upper quartile value of each data plot, set the `showQ3Values` attribute to `0`. The default value for this attribute is `1`.
 
-> All the attributes listed above works only when `showValues` attribute is set to `1`.
+> All the attributes listed above works when `showValues` attribute is set to `1`.
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "showvalues": "1",
@@ -249,7 +251,7 @@ To selectively show summary numbers on the chart, firstly set the `showValues` a
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "showQ1Values": "0",
@@ -266,7 +268,7 @@ You can also configure the box and whisker chart to show all five summary number
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "showQ1values": "1",
@@ -290,11 +292,11 @@ To customize the median, follow the steps given below:
 
 * Set the `medianAplha` attribute to specify the transparency of the median line. This attribute takes values between `0` (transparent) and `100` (opaque).
 
-> All these attributes can be used with the **chart**, **dataset**, and the **data** objects, depending on the requirement.
+> All these attributes can be used with the **chart**, **dataset**, and the **data** objects depending on the requirement.
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "medianColor": "ff0000",
@@ -312,7 +314,7 @@ Click [here](http://jsfiddle.net/fusioncharts/y3932d4e/ "@@open-newtab") to edit
 
 ### Customize the Upper and Lower Quartiles (Q1 and Q3)
 
-The quartiles of a set of data are spread as two boxes, separated by the median. The roof of the upper quartile box represents the exact value of the upper quartile (Q3) . The base of the lower quartile box represents the exact value of the lower quartile (Q1).
+The quartiles of a set of data are spread as two boxes, separated by the median. The roof of the upper quartile box represents the exact value of the upper quartile (Q3). The base of the lower quartile box represents the exact value of the lower quartile (Q1).
 
 To customize the upper and the lower quartile points and the boxes, follow the points given below:
 
@@ -322,7 +324,7 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 
 * Set the `upperQuartileAlpha` attribute to specify the transparency of the upper quartile line. This attribute takes values between `0` (transparent) and `100` (opaque).
 
-```
+```json
 {
     "chart": {
         //The color of the upper quartile set to Red
@@ -340,7 +342,7 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 
 * Set the `upperBoxAlpha` attribute to specify the transparency of the upper quartile box. This attribute takes values between `0` (transparent) and `100` (opaque).
 
-```
+```json
 {
     "chart": {
         "upperBoxColor": "ff0000",
@@ -355,7 +357,7 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 
 * Set the `upperBoxBorderThickness` attribute to specify the thickness for the two sides of upper quartile box.
 
-```
+```json
 {
     "chart": {
         "upperBoxBorderColor": "ff0000",
@@ -366,13 +368,13 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 
 ```
 
-* Set the `lowerQuartileColor` attribute to specify the hex color code for the exact value of lower quartile. the line is the roof of the lower quartile box.
+* Set the `lowerQuartileColor` attribute to specify the hex color code for the exact value of lower quartile. The line is the roof of the lower quartile box.
 
 * Set the `lowerQuartileThickness` attribute to specify the thickness of the lower quartile line.
 
 * Set the `lowerQuartileAlpha` attribute to specify the transparency of the lower quartile line. This attribute takes values between `0` (transparent) and `100` (opaque).
 
-```
+```json
 {
     "chart": {
         "lowerQuartileColor": "ff0000",
@@ -396,7 +398,7 @@ To customize the upper and the lower quartile points and the boxes, follow the p
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "lowerBoxColor": "ff0000",
@@ -420,13 +422,13 @@ The box and whisker chart displays the biggest number of a set of values as the 
 
 To customize the whiskers, follow the points given below:
 
-* Set the `upperWhiskerColor` attribute to specify the hex color code for upper whisker of the data plot.
+* Set the `upperWhiskerColor` attribute to specify the hex color code for the upper whisker of the data plot.
 
 * Set the `upperWhiskerThickness` attribute to specify the thickness of the upper whisker.
 
 * Set the `upperWhiskerAlpha` attribute to specify the transparency of the upper whisker. This attribute takes values between `0` (transparent) and `100` (opaque).
 
-* Set the `lowerWhiskerColor` attribute to specify the hex color code for lower whisker of the data plot.
+* Set the `lowerWhiskerColor` attribute to specify the hex color code for the lower whisker of the data plot.
 
 * Set the `lowerWhiskerThickness` attribute to specify the thickness of the lower whisker.
 
@@ -436,7 +438,7 @@ To customize the whiskers, follow the points given below:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "upperWhiskerColor": "ff0000",
@@ -460,7 +462,7 @@ Click [here](http://jsfiddle.net/fusioncharts/nj1u9far/ "@@open-newtab") to edit
 
 Mean is the mathematical average for a set of numbers.
 
-In a box and whisker chart, along with the dataset seriesname, the legend also shows the icons for mean, mean deviation, standard deviation, quartile deviation, and the outliers of every data plot. This is a concept exclusively applicable to the box and whisker chart. Each dataset is highlighted by different colors to easily differentiate between them and their icons. The legend icons are interactive; you can click the icons to show/hide the associated values on the chart.
+In a box and whisker chart, along with the dataset series name, the legend also shows the icons for mean, mean deviation, standard deviation, quartile deviation, and the outliers of every data plot. This is a concept exclusively applicable to the box and whisker chart. Each dataset is highlighted by different colors to differentiate between them and their icons easily. The legend icons are interactive; you can click the icons to show/hide the associated values on the chart.
 
 Let's customize the mean in box and whisker chart.
 
@@ -472,7 +474,7 @@ To show the mean deviation icon in the legend set the `showMean` attribute to `1
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "showMean": "1"
@@ -494,7 +496,7 @@ To customize the mean icon in the box and whisker chart, follow the points given
 
 * Set the `meanIconSides` attribute to specify the sides of the mean icon.
 
-* Set the `meanIconShape` attribute to specify the shape of the mean icon. This attribute takes one of the following two values: `polygon` or `spoke`. The default shape for the mean icon is the triangle (i.e. a polygon with three sides).
+* Set the `meanIconShape` attribute to specify the shape of the mean icon. This attribute takes one of the following two values: `polygon` or `spoke`. The default shape for the mean icon is the triangle (i.e., a polygon with three sides).
 
 * Set the `meanIconColor` attribute to specify the hex color code of the mean icon.
 
@@ -502,7 +504,7 @@ To customize the mean icon in the box and whisker chart, follow the points given
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "meanIconRadius": "5",
@@ -521,13 +523,13 @@ Click [here](http://jsfiddle.net/fusioncharts/mf3g5cgo/ "@@open-newtab") to edit
 
 ### Draw Mean Connectors
 
-For multiple data plots, you can draw a line to connect the mean values of each dataplot. To draw the mean connectors, set the value of `drawMeanConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the mean for multiple sets of data. The default value of this attribute is `0`.
+For multiple data plots, you can draw a line to connect the mean values of each data plot. To draw the mean connectors, set the value of `drawMeanConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the mean for multiple sets of data. The default value of this attribute is `0`.
 
 > The color that is used to render the mean deviation icon is also used to render the connecting line.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "drawMeanConnector": "1"
@@ -545,11 +547,11 @@ Click [here](http://jsfiddle.net/fusioncharts/tr248p89/ "@@open-newtab") to edit
 
 If you use the `showMean` attribute with the `data` object and set it to `0`, the chart will not display the mean icon for that particular set of data. In this case, the missing mean deviation is considered as null data. Consequently, the mean connectors will skip this null data and draw a continuous connector.
 
-In the chart shown below, a connector will drawn connecting the mean deviation icons of the first and the third data plots, skipping the second data plot. Set the value of `connectNullData` attribute as `1` to connect the null data using mean connectors. This will ignore the null values and draw a continuous  connector line . This attribute is applicable for the mean icon and all the other deviation icons.
+In the chart shown below, a connector is drawn connecting the mean deviation icons of the first and the third data plots, skipping the second data plot. Set the value of `connectNullData` attribute as `1` to connect the null data using mean connectors. This will ignore the null values and draw a continuous connector line. This attribute is applicable for the mean icon and all the other deviation icons.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "connectNullData": "1"
@@ -569,17 +571,17 @@ Click here to edit the above chart.
 
 Mean deviation is the average of distances between each of the values and the mean. It gives us an idea of how spread out is the set of values from the center.
 
-In a box and whisker chart, along with the dataset seriesname, the legend also shows the icons for mean, mean deviation, standard deviation, quartile deviation, and the outliers of every data plot. This is a concept exclusively applicable to the box and whisker chart. Each dataset is highlighted by different colors to easily differentiate between them and their icons. The legend icons are interactive; you can click the icons to show/hide the associated values on the chart.
+In a box and whisker chart, along with the dataset series name, the legend also shows the icons for mean, mean deviation, standard deviation, quartile deviation, and the outliers of every data plot. This is a concept exclusively applicable to the box and whisker chart. Each dataset is highlighted by different colors to differentiate between them and their icons easily. The legend icons are interactive; you can click the icons to show/hide the associated values on the chart.
 
 Let's move ahead and customize the mean deviation of box and whisker chart.
 
 ### Show/Hide the Mean Deviation Icon
 
-A box and whisker chart with the mean deviation icon can be shown in the legend box using `showMD` attribute. This attribute when set to `1` will show the icon representing the mean deviation value of the dataset in the legend.
+A box and whisker chart with the mean deviation icon can be shown in the legend box using `showMD` attribute. This attribute when set to `1`, will show the icon representing the mean deviation value of the dataset in the legend.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "showMD": "1"
@@ -601,7 +603,7 @@ To customize the mean deviation icon, follow the points given below:
 
 * Set the `mdIconSides` attribute to specify the sides of the mean deviation icon.
 
-* Set the `mdIconShape` attribute to specify the shape of the mean deviation icon. This attribute takes one of the following two values: `polygon` or `spoke`. The default shape for the mean deviation icon is the triangle (i.e. a polygon with three sides).
+* Set the `mdIconShape` attribute to specify the shape of the mean deviation icon. This attribute takes one of the following two values: `polygon` or `spoke`. The default shape for the mean deviation icon is the triangle (i.e., a polygon with three sides).
 
 * Set the `mdIconColor` attribute to specify the hex color code of the mean deviation icon.
 
@@ -609,7 +611,7 @@ To customize the mean deviation icon, follow the points given below:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "mdIconRadius": "5"
@@ -629,13 +631,13 @@ Click [here](http://jsfiddle.net/fusioncharts/t24afhfs/ "@@open-newtab") to edit
 
 ### Draw Mean Deviation Connectors
 
-For multiple data plots, you can draw a line to connect the mean deviation icons of each dataplot. To draw the mean connectors, set the value of `drawMDConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the mean deviation for multiple sets of data. The default value of this attribute is `0`.
+For multiple data plots, you can draw a line to connect the mean deviation icons of each data plot. To draw the mean connectors, set the value of `drawMDConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the mean deviation for multiple sets of data. The default value of this attribute is `0`.
 
 > The color that is used to render the mean deviation icon is also used to render the connecting line.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "drawMDConnector": "1"
@@ -653,11 +655,11 @@ Click [here](http://jsfiddle.net/fusioncharts/7j79Lpna/ "@@open-newtab") to edit
 
 If you use the `showMD` attribute with the `data` object and set it to `0`, the chart will not display the mean deviation icon for that particular set of data. In this case, the missing mean deviation is considered as null data. Consequently, the mean deviation connectors will skip this null data and draw a continuous connector.
 
-In the chart shown below, a connector will drawn connecting the mean deviation icons of the first and the third data plots, skipping the second data plot. Set the value of `connectNullData` attribute as `1` to connect the null data using mean connectors. This will ignore the null values and draw a continuous connector line . This attribute is applicable for the mean icon and all the other deviation icons.
+In the chart shown below, a connector is drawn connecting the mean deviation icons of the first and the third data plots, skipping the second data plot. Set the value of `connectNullData` attribute as `1` to connect the null data using mean connectors. This will ignore the null values and draw a continuous connector line. This attribute is applicable for the mean icon and all the other deviation icons.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "connectNullData": "1"
@@ -670,17 +672,17 @@ Refer to the code given below:
 
 Standard deviation is the measure of the variation or the dispersion of a set of data from the mean. It gives an idea of how spread out is the set of data from the mean.
 
-In a box and whisker chart, along with the dataset series name, the legend also shows the icons for mean, mean deviation, standard deviation, quartile deviation, and the outliers of every data plot. This is a concept exclusively applicable to the box and whisker chart. Each dataset is highlighted by different colors to easily differentiate between them and their icons. The legend icons are interactive; you can click the icons to show/hide the associated values on the chart.
+In a box and whisker chart, along with the dataset series name, the legend also shows the icons for mean, mean deviation, standard deviation, quartile deviation, and the outliers of every data plot. This is a concept exclusively applicable to the box and whisker chart. Each dataset is highlighted by different colors to differentiate between them and their icons easily. The legend icons are interactive; you can click the icons to show/hide the associated values on the chart.
 
 Let's move ahead and customize the standard deviation of box and whisker chart.
 
 ### Show/Hide the Standard Deviation Icon
 
-A box and whisker chart with the standard deviation icon can be shown in the legend box using `showSD` attribute. This attribute when set to `1` will show the icon representing the standard deviation value of the dataset in the legend.
+A box and whisker chart with the standard deviation icon can be shown in the legend box using `showSD` attribute. This attribute when set to `1`, will show the icon representing the standard deviation value of the dataset in the legend.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "showSD": "1"
@@ -694,7 +696,7 @@ A box and whisker chart with the standard deviation icon shown in the legend box
 
 Click [here](http://jsfiddle.net/fusioncharts/vLp55w9L/ "@@open-newtab") to edit the above chart.
 
-> To show/hide individual standard deviation values, use the `showSD` attribute with the `data` object, that belongs to the `dataset` object.
+> To show/hide individual standard deviation values, use the `showSD` attribute with the `data` object, whhich belongs to the `dataset` object.
 
 ### Customize the Standard Deviation Icon
 
@@ -704,7 +706,7 @@ To customize the standard deviation icon, follow the points given below:
 
 * Set the `sdIconSides` attribute to specify the sides of the standard deviation icon.
 
-* Set the `sdIconShape` attribute to specify the shape of the standard deviation icon. This attribute takes one of the following two values: `polygon` or `spoke`. The default shape for the standard deviation icon is the triangle (i.e. a polygon with three sides).
+* Set the `sdIconShape` attribute to specify the shape of the standard deviation icon. This attribute takes one of the following two values: `polygon` or `spoke`. The default shape for the standard deviation icon is the triangle (i.e., a polygon with three sides).
 
 * Set the `sdIconColor` attribute to specify the hex color code of the standard deviation icon.
 
@@ -712,7 +714,7 @@ To customize the standard deviation icon, follow the points given below:
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "sdIconRadius": "5",
@@ -731,13 +733,13 @@ Click [here](http://jsfiddle.net/fusioncharts/u47qrcte/ "@@open-newtab") to edit
 
 ### Draw Standard Deviation Connectors
 
-For multiple data plots, you can draw a line to connect the standard deviation icons of each dataplot. To draw the connectors, set the value of `drawSDConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the standard deviation for multiple sets of data. The default value of this attribute is `0`.
+For multiple data plots, you can draw a line to connect the standard deviation icons of each data plot. To draw the connectors, set the value of `drawSDConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the standard deviation for multiple sets of data. The default value of this attribute is `0`.
 
 > The color that is used to render the standard deviation icon is also used to render the connecting line.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "drawSDConnector": "1"
@@ -754,11 +756,11 @@ Click [here](http://jsfiddle.net/fusioncharts/7zg46mwj/ "@@open-newtab") to edit
 
 If you use the `showSD` attribute with the `data` object and set it to `0`, the chart will not display the standard deviation icon for that particular set of data. In this case, the missing standard deviation is considered as null data. Consequently, the standard deviation connectors will skip this null data and draw a continuous connector.
 
-In the chart shown below, a connector will drawn connecting the standard deviation icons of the first and the third data plots, skipping the second data plot. Set the value of `connectNullData` attribute as `1` to connect the null data using standard deviation connectors. This will ignore the null values and draw a continuous connector line . This attribute is applicable for the standard deviation icon and all the other deviation icons.
+In the chart shown below, a connector is drawn connecting the standard deviation icons of the first and the third data plots, skipping the second data plot. Set the value of `connectNullData` attribute as `1` to connect the null data using standard deviation connectors. This will ignore the null values and draw a continuous connector line. This attribute is applicable for the standard deviation icon and all the other deviation icons.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "connectNullData": "1"
@@ -768,19 +770,19 @@ Refer to the code given below:
 ```
 ## Configuring Quartile Deviation
 
-The distance between the upper quartile and the lower quartile is called the interquartile range. Quartile deviation is half the distance between the two quartiles, i.e. half the interquartile range. It is also called the semi interquartile range.
+The distance between the upper quartile and the lower quartile is called the interquartile range. Quartile deviation is half the distance between the two quartiles, i.e., half the interquartile range. It is also called the semi-interquartile range.
 
-In a box and whisker chart, along with the dataset series name, the legend also shows the icons for mean, mean deviation, standard deviation, quartile deviation, and the outliers of every data plot. This is a concept exclusively applicable to the box and whisker chart. Each dataset is highlighted by different colors to easily differentiate between them and their icons. The legend icons are interactive; you can click the icons to show/hide the associated values on the chart.
+In a box and whisker chart, along with the dataset series name, the legend also shows the icons for mean, mean deviation, standard deviation, quartile deviation, and the outliers of every data plot. This is a concept exclusively applicable to the box and whisker chart. Each dataset is highlighted by different colors to differentiate between them and their icons easily. The legend icons are interactive; you can click the icons to show/hide the associated values on the chart.
 
 Let's move on to customize the quartile deviation of box and whisker chart.
 
 ### Show/Hide the Quartile Deviation Icon
 
-A box and whisker chart with the quartile deviation icon can be shown in the legend box using `showQD` attribute. This attribute when set to `1` will show the icon representing the quartile deviation value of the dataset in the legend.
+A box and whisker chart with the quartile deviation icon can be shown in the legend box using `showQD` attribute. This attribute when set to `1`, will show the icon representing the quartile deviation value of the dataset in the legend.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "showQD": "1"
@@ -793,7 +795,7 @@ A box and whisker chart with the quartile deviation icon shown in the legend box
 
 Click [here](http://jsfiddle.net/fusioncharts/grwfoLto/ "@@open-newtab") to edit the above chart.
 
-> To show/hide individual quartile deviation values, use the `showSD` attribute with the `data` object, that belongs to the `dataset` object.
+> To show/hide individual quartile deviation values, use the `showSD` attribute with the `data` object, which belongs to the `dataset` object.
 
 ### Customize the Quartile Deviation Icon
 
@@ -803,7 +805,7 @@ To customize the quartile deviation icon, follow the points given below:
 
 * Set the `qdIconSides` attribute to specify the sides of the quartile deviation icon.
 
-* Set the `qdIconShape` attribute to specify the shape of the quartile deviation icon. This attribute takes one of the following two values: `polygon` or `spoke`. The default shape for the quartile deviation icon is the triangle (i.e. a polygon with three sides).
+* Set the `qdIconShape` attribute to specify the shape of the quartile deviation icon. This attribute takes one of the following two values: `polygon` or `spoke`. The default shape for the quartile deviation icon is the triangle (i.e., a polygon with three sides).
 
 * Set the `qdIconColor` attribute to specify the hex color code of the quartile deviation icon.
 
@@ -811,7 +813,7 @@ To customize the quartile deviation icon, follow the points given below:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "qdIconRadius": "5",
@@ -831,13 +833,13 @@ Click [here](http://jsfiddle.net/fusioncharts/abk7goL7/ "@@open-newtab") to edit
 
 ### Draw Quartile Deviation Connectors
 
-For multiple data plots, you can draw a line to connect the quartile deviation icons of each dataplot. To draw the connectors, set the value of `drawQDConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the quartile deviation for multiple sets of data. The default value of this attribute is `0`.
+For multiple data plots, you can draw a line to connect the quartile deviation icons of each data plot. To draw the connectors, set the value of `drawQDConnector` attribute as `1`. It specifies whether a connector should be drawn to connect the quartile deviation for multiple sets of data. The default value of this attribute is `0`.
 
 > The color that is used to render the quartile deviation icon is also used to render the connecting line.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "drawQDConnector": "1"
@@ -855,11 +857,11 @@ Click [here](http://jsfiddle.net/fusioncharts/Lxoohu0g/ "@@open-newtab") to edit
 
 If you use the `showQD` attribute with the `data` object and set it to `0`, the chart will not display the quartile deviation icon for that particular set of data. In this case, the missing quartile deviation is considered as null data. Consequently, the quartile deviation connectors will skip this null data and draw a continuous connector.
 
-In the chart shown below, a connector will drawn connecting the quartile deviation icons of the first and the third data plots, skipping the second data plot. Set the value of `connectNullData` attribute as `1` to connect the null data using quartile deviation connectors. This will ignore the null values and draw a continuous connector line . This attribute is applicable for the quartile deviation icon and all the other deviation icons.
+In the chart shown below, a connector is drawn connecting the quartile deviation icons of the first and the third data plots, skipping the second data plot. Set the value of `connectNullData` attribute as `1` to connect the null data using quartile deviation connectors. This will ignore the null values and draw a continuous connector line. This attribute is applicable for the quartile deviation icon and all the other deviation icons.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "connectNullData": "1"
@@ -885,17 +887,17 @@ To customize the outlier icon, follow the points given below:
 
 * Set the `outlierIconSides` attribute to specify the sides of the outlier icon.
 
-* Set the `outlierIconShape` attribute to specify the shape of the outlier icon. This attribute takes one of the following two values: `polygon` or `spoke`. The default shape for the outlier icon is the triangle (i.e. a polygon with three sides).
+* Set the `outlierIconShape` attribute to specify the shape of the outlier icon. This attribute takes one of the following two values: `polygon` or `spoke`. The default shape for the outlier icon is the triangle (i.e., a polygon with three sides).
 
 * Set the `outlierIconColor` attribute to specify the hex color code of the outlier icon.
 
 * Set the `outlierIconAlpha` attribute to set the transparency of the outlier icon. This attribute takes values between `0` (transparent) and `100` (opaque).
 
-> All the attributes listed above belongs to the `data` object (under `dataset` object).
+> All the attributes listed above belong to the `data` object (under `dataset` object).
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         ...
@@ -922,7 +924,7 @@ Click [here](http://jsfiddle.net/fusioncharts/y9wzdwur/ "@@open-newtab") to edit
 
 For the chart shown above, all outliers provided as values to the `outliers` attribute are in the range of the y-axis scale. However, there can be instances where the outlier values lie outside the range of the y-axis. In this case, by default, such outlier values are not shown on the chart to maintain the visual integrity of the data plots.
 
-To show all outliers on the box and whisker chart, set the value of `showAllOutliers` attribute to `1`. This will show the outlier values beyond the range of the y-axis. The default value of this attribute is `0` i.e. hidden outliers.
+To show all outliers on the box and whisker chart, set the value of `showAllOutliers` attribute to `1`. This will show the outlier values beyond the range of the y-axis. The default value of this attribute is `0`, i.e., hidden outliers.
 
 A box and whisker chart with outliers beyond the range of the y-axis hidden looks like this:
 

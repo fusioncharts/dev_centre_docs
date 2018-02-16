@@ -21,7 +21,7 @@ To set up FusionCharts jQuery helper, follow the steps given below:
 <script type="text/javascript" src="jquery.min.js"></script>
 ```
 
-jQuery needs to be imported before the FusionCharts jQuery helper is included in the project. Note that in order to support IE 6/7/8, jQuery 1.x versions should be used.
+> Import jQuery before including the FusionCharts jQuery helper the project. Note that to support IE 6/7/8, use jQuery 1.x versions.
 
 * Copy `fusioncharts.js` and `fusioncharts.jqueryplugin.js` from the **FusionCharts Download Package > js** folder in your project.
 
@@ -46,7 +46,7 @@ On top of all the existing features, the jQuery helper lets you do the following
 
 ## Install via NPM
 
-The easiest way to use `jquery-fusioncharts` plugin is to install it from npm and include it in your own build process (using [Browserify](http://browserify.org/), [Webpack](http://webpack.github.io/) etc). Refer to the code below:
+The easiest way to use `jquery-fusioncharts` plugin is to install it from npm and include it in your build process (using [Browserify](http://browserify.org/), [Webpack](http://webpack.github.io/) etc). Refer to the code below:
 
 ```
 npm install jquery-fusioncharts --save
@@ -62,7 +62,7 @@ To set up the FusionCharts jQuery plugin, follow the steps given below:
 var jQuery = require('jquery');
 ```
 
-> jQuery needs to be imported before the FusionCharts jQuery plugin is included in the project. Note that in order to support IE 6/7/8, jQuery 1.x versions should be used.
+> Import jQuery before including the FusionCharts jQuery helper the project. Note that to support IE 6/7/8, use jQuery 1.x versions.
 
 ```
 var jQuery = require('jquery');
@@ -70,4 +70,4 @@ var FusionCharts = require('jquery-fusioncharts');
 var Charts = require('fusioncharts/fusioncharts.charts');
 ```
 
-This completes the setup and you are now ready to begin using the FusionCharts jQuery plugin.
+The above steps complete the setup, and you are now ready to begin using the FusionCharts jQuery plugin.

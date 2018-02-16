@@ -5,33 +5,32 @@ heading: Border and Background
 breadcrumb: [["Home", "/"], ["Border and Background"]]
 ---
 
-A chart's background refers to the whole area on which it is drawn and it is enclosed by the chart border, the rectangle around a chart's background.
+A chart's background refers to the whole area on which it is drawn, and it is enclosed by the chart border, the rectangle around a chart's background.
 
 ![Border and Background]({% site.baseurl %}/images/chart-configurations-border-and-background-image-1.png)
 
-This article shows how to configure the border and background of your chart. It will also explain a few attributes that control the behavior of these elements. 
+## Show/Hide Chart Borders
 
-## Hide chart borders
-
-By default, the chart borders are visible for 2D charts. To hide the chart border, set the `showBorder` attribute to `0`.
+By default, the chart borders are visible for 2D charts. To hide the chart border, set the `showBorder` attribute to `0`. Set this attribute to `1` (default) to show the border around the canvas of the chart.
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "showBorder": "1",
     }
 }
-
 ```
 The chart without border will look like as shown below:
 
-**INSERT LIVE CHART**
+{% embed_chart chart-configurations-border-and-background-example-7.js %}
 
-## Customize chart borders
+Click [here](http://jsfiddle.net/fusioncharts/b58ma056/ "@@open-newtab") to edit the above chart.
 
-To customize the chart border the following attributes are used:
+## Customize Chart Borders
+
+To customize the chart border, the following attributes are used:
 
 * Specify the hex code of the border color using the `borderColor` attribute.
 
@@ -41,17 +40,14 @@ To customize the chart border the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-       ...
         "borderColor": "#666666",
         "borderThickness": "4",
-        "borderAlpha": "80",
-       ...
+        "borderAlpha": "80"
     }
 }
-
 ```
 
 The chart will look like as shown below:
@@ -60,9 +56,9 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/5vj22scs/ "@@open-newtab") to edit the above chart.
 
-### Customize chart background
+### Customize Chart Background
 
-To customize the chart background the following attributes are used:
+To customize the chart background, the following attributes are used:
 
 * Set the hex code of the color of the background using the `bgColor` attribute.
 
@@ -70,16 +66,13 @@ To customize the chart background the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "bgColor": "#DDDDDD",
-        "bgAlpha": "50",
-        ...
+        "bgAlpha": "50"
     }
 }
-
 ```
 
 The chart will look like as shown below:
@@ -88,19 +81,19 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/c5o8spm5/ "@@open-newtab") to edit the above chart.
 
-## Use gradient background
+## Use Gradient Background
 
 When using a gradient fill for the background, you can configure three aspects:
 
 * Set gradient transparency
 
-* Set ratio of colour distribution
+* Set ratio of color distribution
 
 * Set the gradient angle
 
 To do so, the following attributes are used:
 
-* Set the hex codes of the gradient colors separated by comma using the `bgColor` attribute.
+* Set the hex codes of the gradient colors separated by a comma using the `bgColor` attribute.
 
 * Set the transparency of the background using the `bgAlpha` attribute.
 
@@ -110,17 +103,15 @@ To do so, the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "bgColor": "EEEEEE,CCCCCC",
         "bgratio": "60,40",
         "bgAlpha": "70,80",
         "bgAngle": "180"
     }
 }
-
 ```
 
 The chart will look like as shown in the image below:
@@ -129,18 +120,16 @@ The chart will look like as shown in the image below:
 
 Click [here](http://jsfiddle.net/fusioncharts/73h05m4q/ "@@open-newtab") to edit the above chart.
 
-## Use external image
+## Use External Image
 
 You can specify an external image (GIF, JPEG or PNG only) as the background of the chart. Use the `bgImage` attribute to specify the **URL** of the external image as shown in the code below:
 
-```
+```json
 {
-
-    "chart":{ 
-    ...   
-    "bgImage":"pizza.jpg"
-},
-
+    "chart":{
+        "bgImage":"http://upload.wikimedia.org/wikipedia/commons/7/79/Misc_fruit.jpg"
+    }
+}    
 ```
 
 The chart will look like as shown below:
@@ -149,7 +138,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/ceqLLtwk/ "@@open-newtab") to edit the above chart.
 
-## Customize background image
+## Customize Background Image
 
 You can even customize the external image rendered as the chart background. To do so, the following attributes are used:
 
@@ -163,22 +152,17 @@ You can even customize the external image rendered as the chart background. To d
 
 Refer to the code below:
 
-```
+```json
 {
-
     "chart":{
-        ...    
         "bgImage":"pizza.jpg",
         "bgImageAlpha":"30",
         "bgImageScale":"50",
         "bgImageVAlign":"bottom",
         "bgImageHAlign":"middle",
         "bgImageDisplayMode":"center",
-        ...
-    },
-    ...
+    }
 }  
-
 ```
 
 The chart will look like as shown in the image below:

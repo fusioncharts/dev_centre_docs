@@ -7,19 +7,18 @@ breadcrumb: [["Home", "/"], ["Zero Plane"]]
 
 Zero plane is a plane separating the positive and negative numbers on the y-axis of a chart. It is rendered by default in any chart that plots both negative and positive values.
 
-The zero plane is applicable to column, line, scatter, bubble and the area charts. Additionally, scatter and bubble charts also support vertical zero plane on the x-axis.
+The zero plane applies to column, line, scatter, bubble and the area charts. Additionally, scatter and bubble charts also support vertical zero plane on the x-axis.
 
-## Show/hide the zero plane
+## Show/Hide the Zero Plane
 
 By default, the zero plane is rendered in any chart that plots both negative and positive values.  To hide the zero plane, set the `showZeroPlane	` attribute to `0`. 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
-        "showZeroPlane": "1",
+        "showZeroPlane": "1"
     }
 }
 ```
@@ -30,11 +29,11 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/pxxsdfe0/ "@@open-newtab") to edit the above chart.
 
-## Customize zero plane in 2D chart
+## Customize Zero Plane in 2D chart
 
-To customize the zero plane in a  2D chart the  following attributes are used:
+To customize the zero plane in a 2D chart, the following attributes are used:
 
-* Specify the hex code for the color of the  zero plane using the `zeroPlaneColor` attribute.
+* Specify the hex code for the color of the zero plane using the `zeroPlaneColor` attribute.
 
 * Set the thickness (in pixels) of the zero plane using the `zeroPlaneThickness` attribute.
 
@@ -42,7 +41,7 @@ To customize the zero plane in a  2D chart the  following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         ...
@@ -60,11 +59,11 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/ydxdrozz/ "@@open-newtab") to edit the above chart.
 
-## Customize zero plane in 3D chart
+## Customize Zero Plane in 3D chart
 
-To customize the zero plane in a 3D chart the  following attributes are used:
+To customize the zero plane in a 3D chart, the following attributes are used:
 
-* Specify the hex code for the color of the  zero plane using the `zeroPlaneColor` attribute.
+* Specify the hex code for the color of the zero plane using the `zeroPlaneColor` attribute.
 
 * Set the transparency of the zero plane using the `zeroPlaneAplha` attribute.
 
@@ -74,7 +73,7 @@ To customize the zero plane in a 3D chart the  following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         ...
@@ -93,16 +92,15 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/z6mqxka9/ "@@open-newtab") to edit the above chart.
 
-## Vertical zero plane in scatter and bubble charts
+## Vertical Zero Plane
 
 In case of XY plot charts, zero plane appears vertically at zero x-position on canvas, when negative data is being shown on the chart.
 
 To hide the vertical zero plane set the `showVZeroPlane` attribute to `0`. Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "showVZeroPlane": "0"       
     }
 }
@@ -114,7 +112,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/1u4f1jpy/ "@@open-newtab") to edit the above chart.
 
-To configure the vertical zerol plane use the following attributes:
+To configure the vertical zero plane use the following attributes:
 
 * Specify the hex code of the color for the vertical zero plane using the `vZeroPlaneColor` attribute.
 
@@ -124,10 +122,9 @@ To configure the vertical zerol plane use the following attributes:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "showVZeroPlane": "1",
         "vZeroPlaneColor": "#cc3300",
         "vZeroPlaneThickness": "3",
@@ -142,16 +139,15 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/8qqeL31d/ "@@open-newtab") to edit the above chart.
 
-## Show/hide the zero plane value
+## Show/Hide the Zero Plane Value
 
 By default, the data value (`0`) where the zero plane exists on the y-axis is displayed. To hide the zero plane value set the `showZeroPlaneValue` attribute to '0'. 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "showZeroPlaneValue": "0"
     }
 }
@@ -167,10 +163,9 @@ In dual y-axis charts, `showPZeroPlaneValue` (primary y-axis) and `showSZeroPlan
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        ...
         "showPZeroPlaneValue": "0",
         "showSZeroPlaneValue": "0"
     }

@@ -1,8 +1,6 @@
 {
-
     type: 'realtimelinedy',
     dataFormat: 'json',
-    id: 'stockMonitor',
     renderAt: 'chart-container',
     width: '500',
     height: '350',
@@ -86,13 +84,14 @@
     },
     "events": {
         "initialized": function(e) {
+			var chartRef = e.sender;
             function formatTime(num) {
                 return (num <= 9) ? ("0" + num) : num;
             }
 
             function updateData() {
                 // Get reference to the chart using its ID
-                var chartRef = FusionCharts("stockMonitor"),
+                // var chartRef = FusionCharts("stockMonitor"),
                     //We need to create a querystring format incremental update, containing
                     //label in hh:mm:ss format
                     //and a value (random).
@@ -108,7 +107,6 @@
                     strData = "&label=" + label + "&value=" + hrys + "|" + nyse;
                 //Feed it to chart.
                 chartRef.feedData(strData);
-                console.log(nyse);
             }
             var myVar = setInterval(function() {
                 updateData();

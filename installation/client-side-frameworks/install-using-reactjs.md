@@ -51,7 +51,7 @@ To install `react-fusioncharts` module, execute the following commands in the te
 npm install react-fusioncharts --save
 ```
 
-All the above commands can also be done in a single line as shownn below:
+All the above commands can also be done in a single line as shown below:
 
 ```
 npm install react react-dom fusioncharts react-fusioncharts --save

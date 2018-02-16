@@ -5,6 +5,8 @@ heading: Pie and Doughnut Charts
 breadcrumb: [["Home", "/"], ["Pie and Doughnut Charts"]]
 ---
 
+> These chart types belong to **FusionCharts XT**.
+
 A pie chart is a circular chart divided into sectors where the arc length of each sector, its central angle, and its area is proportional to the quantity it represents. A doughnut chart is similar to a pie chart and facilities similar kind of data analysis. FusionCharts Suite XT includes the pie and doughnut charts to plot data that needs to be shown as a percent of the whole.
 
 ## Pie 2D Chart
@@ -23,7 +25,7 @@ To create a pie 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes you can check the API reference page of pie chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pie2d "@@open-newtab") page of multi-series pie 2D chart.
 
 The pie 2D chart for the above code looks like:
 
@@ -34,6 +36,8 @@ Click [here](http://jsfiddle.net/fusioncharts/hLhjhft8/ "@@open-newtab") to edit
 ## Pie 3D Chart
 
 To render a pie chart in 3D, change the value of the `type` attribute from `pie2D` to `pie3D`. The rest of the data structure remains the same.
+
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pie3d "@@open-newtab") page of multi-series pie 3D chart.
 
 A pie chart in 3D looks like :
 
@@ -49,7 +53,7 @@ Let's create our first doughnut 2D chart showcasing the same use case for the pi
 
 To create a doughnut 2D chart, set the `type` attribute to `doughnut2d`.
 
-For a detailed list of attributes you can check the API reference page of doughnut chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=doughnut2d "@@open-newtab") page of multi-series doughnut 2D chart.
 
 The doughnut 2D chart for the above code looks like:
 
@@ -60,6 +64,8 @@ Click [here](http://jsfiddle.net/fusioncharts/wYj95/ "@@open-newtab") to edit th
 ## Doughnut 3D Chart
 
 To render a doughnut chart in 3D, change the value of the `type` attribute from `doughnut2D` to `doughnut3D`. The rest of the data structure remains the same.
+
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=doughnut3d "@@open-newtab") page of multi-series doughnut 3D chart.
 
 A doughnut chart in 3D looks like :
 
@@ -99,8 +105,6 @@ To show percent values and actual values in your chart, follow the steps given b
 * Set the `showPercentValues` attribute to `1` to show percent values as data labels.
 
 * Set the `showPercentInTooltip` attribute to `1` to render the text of tooltip in percentage values.
-
-For a detailed list of attributes you can check the API reference page of pie2D chart.
 
 > The **showPercentValues** and the **showPercentInTooltip** attributes are applicable if you want to show percent values on the chart and actual values in tool-tips for a doughnut chart.
 
@@ -172,7 +176,7 @@ Click [here](http://jsfiddle.net/fusioncharts/jg4k7eny/ "@@open-newtab") to edit
 
 ## Disable Smart Labels and Lines
 
-By default, pie and doughnut charts are rendered with smart labels and lines - smart labels are data labels connected to their corresponding pie slices using line segments called smart lines. Smart labels manage overlapping of labels even when a large number of labels are placed in close vicinity. You can, however, choose to disable these smart labels. 
+By default, pie and doughnut charts are rendered with smart labels and lines - smart labels are data labels connected to their corresponding pie slices using line segments called smart lines. Smart labels manage overlapping of labels even when a large number of labels are placed in the close vicinity. You can, however, choose to disable these smart labels. 
 
 To disable the smart labels, set `enableSmartLabels` attribute to `0`. 
 
@@ -198,7 +202,7 @@ Click [here](http://jsfiddle.net/fusioncharts/tom7289j/ "@@open-newtab") to edit
 
 Apart from enabling and disabling the smart lines, you can also set the cosmetic properties of smart lines. To customize the smart lines, follow the steps given below:
 
-* Specify the hex code of the smart line color using the `smartLineColor` attribute.
+* Specify the hex code for the smart line color using the `smartLineColor` attribute.
 
 * Set the thickness of the smart lines using the `smartLineThickness` attribute.
 
@@ -376,4 +380,4 @@ A pie chart configured for the bevel effect looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/n0xz9x8h/ "@@open-newtab") to edit the pie 2D chart.
 
-> For all the samples shown above, if you want so see how each attribute works for the doughnut chart, just change the value of the **type** attribute from **pie2D**/**pie3D** to **doughnut2D**/**doughnut3D**
+> For all the samples shown above, if you want to see how each attribute works for the doughnut chart, just change the value of the **type** attribute from **pie2D**/**pie3D** to **doughnut2D**/**doughnut3D**

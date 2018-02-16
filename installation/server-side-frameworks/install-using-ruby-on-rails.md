@@ -9,7 +9,7 @@ FusionCharts Suite XT includes the Ruby on Rails wrapper that lets you create in
 
 ## Download
 
-FusionCharts Ruby on Rails Wrapper can be downloaded from [here](https://www.fusioncharts.com/ruby-on-rails-charts/).
+Download FusionCharts Ruby on Rails Wrapper from [here](https://www.fusioncharts.com/ruby-on-rails-charts/).
 
 ## Install
 
@@ -26,7 +26,7 @@ RubyGems contain package information along with the files to install. To read mo
 * On the command line prompt, execute the following command:
 
 ```
-$bundle
+$ bundle
 ```
 This command will automatically install the `fusioncharts-rails` gem.
 
@@ -35,7 +35,7 @@ You can also install the gem directly from the command line prompt, without maki
 To do this, use the code line given below:
 
 ```
-$gem install fusioncharts-rails
+$ gem install fusioncharts-rails
 ```
 
 > Ensure that the **config.assets.debug** flag in the **development.rb** file (config/environments/development.rb) is enabled (set to **true**)

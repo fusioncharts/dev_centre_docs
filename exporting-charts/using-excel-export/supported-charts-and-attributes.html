@@ -1,0 +1,284 @@
+---
+permalink: exporting-charts/using-excelexport/supported-charts-and-attributes.html
+title: Supported Chart Attributes | FusionCharts
+description: This sections contains the list of attributes supported in excel export feature with the detailed description.
+heading: Supported Chart Attributes
+chartPresent: true
+layout: page
+---
+
+
+<div>
+    <p>Select a chart type from list below to see attributes and details</p>
+    <div class="xls-attr">
+	    <div class="chart-list">
+	    	<select class="chart-items">
+	    	{% for data in site.data.attrs-data %}
+	    		{% if data.xls %}
+	            	<option data-json="{{ data.json }}" data-alias="{{ data.alias }}">{{ data.name }}</option>
+	            {% endif %}
+	        {% endfor %}
+			</select>
+	    </div>
+	    <div class="title-container">
+	        <h2 class="current-chart"></h2>
+	        <div id="attr-elements-operations">
+	            <div id="attr-search-x">
+	                <div class="search-container">
+	                    <input type="text" id="attr-search" placeholder="search for an attribute" />
+	                    <i class="fa fa-search search-icon"></i>
+	                </div>
+	                <!-- <ul class="search-results"></ul> -->
+	            </div>
+	            <a href="javascript:void(0)"class="a_expandAll collapsed">Expand all attributes</a>
+	        </div>
+	    </div>
+    </div>
+  <div id="chart-attributes" class="chart-attributes"></div>
+</div>
+<script type="text/unknown" id="groupTemplate">
+    <div>
+        <div class="group-title">
+            <h3>##name##</h3>
+        </div>
+        <div class="group-description">
+            <p>##description##</p>
+        </div>
+        <div class="group-tables">
+            ##groupTables##
+        </div>
+    </div>
+</script>
+<script type="text/unknown" id="orphanTemplate">
+    <div>
+        <h2>Other Attributes</h2>
+    </div>
+    ##orphanTables##
+</script>
+<script type="text/unknown" id="attributesTemplate">
+    <div class="attrs-title">
+        <div class="toggle-detail">
+            <h2 class="table-name"> ##table## </h2>
+            <i class="fa fa-2x fa-angle-down pull-right attr-dropdown"></i>
+            ##caption##
+        </div>
+    </div>
+    <div class="parameters details">
+        <div class="param-wrapper">
+            <div class="details">
+                <div class="description">
+                    <p> ##description## </p>
+                </div>
+            </div>
+            <div class="pull-left monospace">
+                <!-- "name" -->
+                <code>##path##</code>
+                <!-- -->
+                <pre class="brace open-brace">: {</pre>
+            </div>
+            <div class="parameters">
+                ##paramwrappers##
+                <pre class="brace close-brace">}</pre>
+            </div>
+        </div>
+    </div>
+</script>
+<script type="text/unknown" id="tableCaption">
+    <p class="table-caption">##caption##</p>
+</script>
+<script type="text/unknown" id="versionSince">
+    <span class="version-since">since ##versionsince##</span>
+</script>
+<script type="text/unknown" id="attributesValue">
+
+    <div class="param-wrapper">
+        <div class="param-name clear-float monospace">
+            <code>##name##</code>
+            <p class="param-type"><span class="text-color">: </span>##type##</p>
+            <a class="toggle-detail" data-alias="no-reload" id="##anchor-link-id-name##" href="##anchor-link-name##">[+]</a>
+            ##versionsince##
+    </a>
+        </div>
+        <div class="details sub-details">
+            <div class="description">
+                <p>##description##</p>
+            </div>
+            ##range##
+        </div>
+    </div>
+</script>
+
+<script type="text/unknown" id="rangeTemplate">
+    <div class="range-val">
+        Range: <span>##range##</span>
+    </div>
+</script>
+
+<!-- <script type="text/javascript">
+	$(document).ready(function(){
+
+		$(".chart-items").on("change", function(){
+			var optionSelected = $("option:selected", this);
+			var valueSelected = this.value;
+
+			renderAttr(optionSelected.data("json"), optionSelected.data("alias"), true);
+		});
+
+
+		function renderAttr(fileName, alias, replaceHist) {
+			$.getJSON(DEVCENTER.absolutePath + "/resources/xls-attributes/" + fileName + ".json", function() {}).done(function(data) {
+			    var finalHtml = '',
+			        index,
+			        // Caching all the DOM elements so that we don't query DOM often
+			        orphanTemplate = $('#orphanTemplate').html(),
+			        groupTemplateDiv = $('#groupTemplate'),
+			        tableTemplateDiv = $('#attributesTemplate'),
+			        paramTemplateDiv = $('#attributesValue'),
+			        rangeTemplateDiv = $('#rangeTemplate'),
+			        captionTemplateDiv = $('#tableCaption'),
+			        versionTemplateDiv = $('#versionSince'),
+			        groupList = data['groups'],
+			        tablesList = data['tables'],
+			        groupObject = {},
+			        groupOutput = '',
+			        orphanOutput = '';
+			    // If the data doesn't have tables object, consider the entire data to be set of tables
+			    // Can be replaced when all the JSONs are grouped
+			    if (!tablesList) {
+			        tablesList = data;
+			    }
+			    // Iterate through all tables
+			    $.each(tablesList, function(index, table) {
+			        var i, key, groupId,
+			            attrs, attrsLength, attrsKey, captionTemplate, versionTemplate, paramTemplate, rangeTemplate,
+			            groupTemplate = groupTemplateDiv.html(),
+			            tableTemplate = tableTemplateDiv.html(),
+			            paramWrappers = '';
+			        if (!table['shown'] || table['shown'] !== 'false') {
+			            for (key in table) {
+			                // If it is attrs, use the attributesValue and rangeValue Template
+			                if (key === 'attrs') {
+			                    for (i = 0, attrs = table[key], attrsLength = table[key].length; i < attrsLength; i++) {
+			                        paramTemplate = paramTemplateDiv.html();
+			                        rangeTemplate = rangeTemplateDiv.html();
+			                        for (attrsKey in attrs[i]) {
+			                            if (attrsKey === 'range' && attrs[i][attrsKey].trim() !== '') {
+			                                rangeTemplate = rangeTemplate.replace('##' + attrsKey + '##', attrs[i][attrsKey]);
+			                                paramTemplate = paramTemplate.replace('##' + attrsKey + '##', rangeTemplate);
+			                            } else if (attrsKey === 'versionsince') {
+			                                versionTemplate = versionTemplateDiv.html();
+			                                versionTemplate = versionTemplate.replace('##' + attrsKey + '##', attrs[i][attrsKey]);
+			                                paramTemplate = paramTemplate.replace('##' + attrsKey + '##', versionTemplate);
+			                            } else if (attrsKey === 'description') {
+			                                paramTemplate = paramTemplate.replace('##' + attrsKey + '##', DEVCENTER.converter.makeHtml(attrs[i][attrsKey]));
+			                            } else {
+			                                paramTemplate = paramTemplate.replace('##' + attrsKey + '##', attrs[i][attrsKey]);
+			                                paramTemplate = paramTemplate.replace('##anchor-link-'+ attrsKey + '##', location.pathname + '?chart='+ alias + '&attributeName='+ (table.path ? table.path : 'chart') + '_' + attrs[i][attrsKey]);
+			                                paramTemplate = paramTemplate.replace('##anchor-link-id-'+ attrsKey + '##', (table.path ? table.path : 'chart') + '_' + attrs[i][attrsKey].toLowerCase());
+			                            }
+			                        }
+			                        paramTemplate = paramTemplate.replace('##range##', '');
+			                        paramTemplate = paramTemplate.replace('##versionsince##', '');
+			                        paramWrappers += paramTemplate;
+			                    }
+			                    tableTemplate = tableTemplate.replace('##paramwrappers##', paramWrappers);
+			                } else if (key === 'caption') {
+			                    captionTemplate = captionTemplateDiv.html();
+			                    captionTemplate = captionTemplate.replace('##' + key + '##', table[key]);
+			                    tableTemplate = tableTemplate.replace('##' + key + '##', captionTemplate);
+			                } else if (key === 'path') {
+			                    tableTemplate = tableTemplate.replace('##' + key + '##', table[key]);
+			                } else if (key === 'description') {
+			                    tableTemplate = tableTemplate.replace('##' + key + '##', DEVCENTER.converter.makeHtml(table[key]));
+			                } else {
+			                    tableTemplate = tableTemplate.replace('##' + key + '##', table[key]);
+			                }
+			            }
+			            tableTemplate = tableTemplate.replace('##caption##', '');
+			            tableTemplate = tableTemplate.replace('##path##', 'chart');
+			            tableTemplate = tableTemplate.replace('##versionsince##', '');
+			            // If the table contains the property group, then add this table to the corresponding group object
+			            // If the group object has not been created, create an object and then insert this table
+			            // If group is not present, then add it to the orphan output (tables without group)
+			            if (table['group']) {
+			                groupId = table['group'];
+			                if (!groupObject[groupId]) {
+			                    for (key in groupList[groupId]) {
+			                        groupTemplate = groupTemplate.replace('##' + key + '##', groupList[groupId][key]);
+			                    }
+			                    groupObject[groupId] = groupTemplate;
+			                }
+			                index = groupObject[groupId].indexOf('##groupTables##');
+			                groupObject[groupId] = groupObject[groupId].substr(0, index) + tableTemplate + groupObject[groupId].substr(index);
+			            } else {
+			                orphanOutput += tableTemplate;
+			            }
+			        }
+			    });
+			    // Append all the group items into a single string
+			    for (var key in groupObject) {
+			        groupObject[key] = groupObject[key].replace('##groupTables##', '');
+			        groupOutput += groupObject[key];
+			    }
+			    // If there are tables present without any group, add it to orphan string
+			    if (orphanOutput) {
+			        if (data['groups']) orphanOutput = orphanTemplate.replace('##orphanTables##', orphanOutput);
+			    }
+			    // Append the strings to DOM (tables with group and without group)
+			    $('#chart-attributes').html(groupOutput + orphanOutput);
+			    // Highlight the code snippets in descriptions
+			    $('#chart-attributes .description pre[class*="language-"] code').each(function() {
+			        Prism.highlightElement(this, true);
+			    });
+			    $('.a_expandAll').removeClass('expanded').addClass('collapsed').html('Expand all attributes');
+			    // Update the URL hash
+			    // This will update the browser history.
+			    // Hence update the current location before update the location hash
+			    if (replaceHist && history.pushState) {
+			       	DEVCENTER.currentLocation = location.pathname;
+	        		DEVCENTER.currentSearchQuery = DEVCENTER.attributeSearchKey + alias;
+	                history.pushState(null, $('title'), location.origin + location.pathname + DEVCENTER.currentSearchQuery);
+			    }
+
+			}).fail(function() {
+			    //console.log('error');
+			}).always(function() {
+			    //console.log('complete');
+			});
+		}
+
+		function initChartAttributes() {
+		    var file = location.pathname.split('/').pop(),
+		        replace = false,
+		        searchValue, selectedChart, searchExp, currentLocation, attributeName;
+		    
+	        searchValue = location.search;
+	        if (searchValue && searchValue !== '') {
+	            searchExp = new RegExp("^\\" + DEVCENTER.attributeSearchKey);
+	            searchValue = searchValue.replace(searchExp, '');
+
+	            if(searchValue.indexOf('&') > -1)
+	            	attributeName = searchValue.split('&')[1].split('=')[1].toLowerCase();
+
+	            searchValue = searchValue.split('&')[0];
+	            selectedChart = $("[data-alias=" + searchValue + "]");
+
+	            var title = $("[data-alias=" + searchValue + "]").text().split('Chart')[0] + " Chart Attributes";
+	            
+	            if (selectedChart.length === 1) {
+	                $('title').html(title);
+	                renderAttr(selectedChart.attr('data-json'), selectedChart.attr('data-alias'), false);
+	                //scroll to particular attribute position
+	                if(attributeName && $('#'+attributeName).parents('.parameters.details').prev())
+	                    DEVCENTER.focusAttibute(attributeName, 1000);
+	            }
+	        } else {
+	            // Load Area2D chart by default
+	            renderAttr("Area2D", "area2d", true);
+	        }
+		}
+
+		initChartAttributes();
+
+	});
+</script> -->  

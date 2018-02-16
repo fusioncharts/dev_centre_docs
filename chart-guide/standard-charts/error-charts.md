@@ -5,6 +5,8 @@ heading: Error Charts
 breadcrumb: [["Home", "/"], ["Error Charts"]]
 ---
 
+> These chart types belong to **PowerCharts XT**.
+
 An error chart is used to show the extent of uncertainty in information relative to an average value. Error charts can be used to show the range of values that can be taken up by a data point, instead of being restricted to a point value. Errors are indicated by distinct I-shaped bars that are both positive and negative. Typically the I-bars represent the standard deviation in a measurement indicating the degree of variance observed in a data point. Error charts give a general idea of the accuracy of information or, conversely, the amount of variation in data from it's expected value.
 
 ## Use of Error Charts
@@ -61,6 +63,8 @@ To create an error bar chart follow the steps given below:
 
 * Set the `errorValue` attribute to specify error value that will be plotted as the error bar on the chart. This attribute belongs to the `data` object, which belongs to the `dataset` object.
 
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=errorbar2d "@@open-newtab") page of error bar chart.
+
 An error bar chart thus created looks like this:
 
 {% embed_all standard-charts-error-charts-example-1.js %}
@@ -70,6 +74,8 @@ Click [here](http://jsfiddle.net/fusioncharts/7Z4Ha/ "@@open-newtab") to edit th
 ## Error Line Chart
 
 Now, let's create an **error line** chart that compares the estimated procurement from two suppliers. To render an error line chart, change the value of the `type` attribute from `errorbar2d` to `errorline`. The rest of the data structure remains the same.
+
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=errorline "@@open-newtab") page of error line chart.
 
 An error line chart thus created looks like:
 
@@ -93,6 +99,8 @@ To render an error scatter chart, follow the steps given below:
 
 * Set the `verticalErrorValue` to specify the range of possible vertical deviation values that will be plotted as the error bar on the chart. This attribute also belongs to the `data` object, which belongs to the `dataset` object.
 
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=errorscatter "@@open-newtab") page of error scatter chart.
+
 The error scatter chart will look like:
 
 {% embed_all standard-charts-error-charts-example-3.js %}
@@ -105,7 +113,7 @@ Now, let's customize the appearance and properties of the charts.
 
 You can customize the cosmetic properties of error bars to change their appearance. To customize the properties, follow the steps given below:
 
-* Set the `halfErrorBar` attribute to specify the rendering of full or half error bars. Set this attribute to `1` to show half error bars, whereas set it to `0` (default) to render the full error bars.
+* Set the `halfErrorBar` attribute to specify the rendering of full or half error bars. Set this attribute to `1` to show half error bars. Set it to `0` (default) to render the full error bars.
 
 * Specify the hex color code to `errorBarColor` attribute, to set the color in which you want to render the error bars.
 
@@ -113,7 +121,7 @@ You can customize the cosmetic properties of error bars to change their appearan
 
 * Set the thickness (in pixels) of the error bars using `errorBarThickness` attribute.
 
-* Set the width of the error bars using `errorBarWidthPercent` attribute. The width of the error bars will be dependent on the percentage of a column width.
+* Set the width of the error bars using `errorBarWidthPercent` attribute. The width of the error bars are dependent on the percentage of the column width.
 
 Refer to the code given below:
 
@@ -144,11 +152,11 @@ Click [here](http://jsfiddle.net/fusioncharts/fumzvpw3/ "@@open-newtab") to edit
 
 ### Cosmetics of Error Scatter Chart
 
-Customize the cosmetic properties of error scatter chart to change the  appearance of error bars in it. Most of the attributes are similar to the above rendered charts. To customize some more cosmetic properties of error bars in error scatter chart, follow the steps given below:
+Customize the cosmetic properties of error scatter chart to change the appearance of error bars in it. Most of the attributes are similar to the above rendered charts. To customize some more cosmetic properties of error bars in error scatter chart, follow the steps given below:
 
 * Set the `useVerticalErrorBar` attribute to show the error bars (half/full) for the error scatter chart. Setting this attribute to `1` (default) will show them, whereas setting it to `0` will hide them.
 
-* Set the `halfVerticalErrorBar` attribute to specify the rendering of full or half vertical error bars. Set this attribute to `1` to show half error bars, whereas set it to `0` (default) to render the full error bars.
+* Set the `halfVerticalErrorBar` attribute to specify the rendering of full or half vertical error bars. Set this attribute to `1` to show half error bars. Set it to `0` (default) to render the full error bars.
 
 * Specify the hex color code to `verticalErrorBarColor` attribute, to set the color in which you want to render the vertical error bars.
 

@@ -5,36 +5,38 @@ heading: Titles and Axis Names
 breadcrumb: [["Home", "/"], ["Titles and Axis names"]]
 ---
 
-The caption (also called the chart title) is the heading of your chart, whereas a sub-caption is the text that appears just below the caption. In the sections below, you can see how to add caption, subcaption, x-axis name, and y-axis name to your charts, as well as configure their font properties.
+The caption (also called the chart title) is the heading of your chart, whereas a sub-caption is the text that appears just below the caption. In the sections below, you can see how to add a caption, subcaption, x-axis name, and y-axis name to your charts, as well as configure their font properties.
 
-**image**
+![Titles and Axis Names]({% site.baseurl %}/images/chart-configuration-titles-and-axis-names-image-1.png)
 
-Cartesian charts have axes that run along the left and the bottom borders of the canvas. The x-axis runs along the bottom border of the canvas, running left to right. The y-axis runs along the left border of the canvas, going from the bottom and to the top.
+Cartesian charts have axes that run along the left and the bottom borders of the canvas. The x-axis runs along the bottom border of the canvas, running from left to right. The y-axis runs along the left border of the canvas, going from the bottom and to the top.
 
-## Set the caption and subcaption
+## Set the Caption and Subcaption
 
 * Specify the caption of the chart using the `caption` attribute, which accepts text values.
 
 * Specify the sub-caption of the chart using the `subCaption` attribute, which accepts text values.
 
-
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "caption": "Monthly Revenue",
         "subCaption": "Last year"
-    },
-
+    }
+}
 ```
+
 The chart will look like as shown below:
 
-**Insert Chart**
+{% embed_chart chart-configurations-titles-and-axis-names-example-1.js %}
 
-## Customize font properties 
+Click [here](http://jsfiddle.net/fusioncharts/ubw094z3/ "@@open-newtab") to edit the above chart.
 
-Use the following attributes to customize the font color, size, formatting, etc., of the caption and subcaption.
+## Customize Font Properties 
+
+Use the following attributes to customize the font color, size, formatting, etc., of the caption.
 
 * Set the caption font family using the `captionFont` attribute.
 
@@ -43,6 +45,21 @@ Use the following attributes to customize the font color, size, formatting, etc.
 * Set the caption font size (between `0` and `72`) using the `captionFontSize` attribute.
 
 * Set caption font to bold by setting the value of the `captionFontBold` attribute to `1`.
+
+Refer to the code given below:
+
+```json
+{
+    "chart": {
+        "captionFont": "Arial",
+        "captionFontSize": "18",
+        "captionFontColor": "#993300",
+        "captionFontBold": "1"
+    }
+}
+```
+
+To customize the font color, size, formatting, etc., of the subcaption, use the following attributes:
 
 * Set the subcaption font family using the `subCaptionFont` attribute.
 
@@ -54,25 +71,24 @@ Use the following attributes to customize the font color, size, formatting, etc.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
-        "captionFont": "Arial",
-        "captionFontSize": "18",
-        "captionFontColor": "#993300",
-        "captionFontBold": "1",
         "subcaptionFont": "Arial",
         "subcaptionFontSize": "14",
         "subcaptionFontColor": "#993300",
         "subcaptionFontBold": "0"
-    },
+    }
+}
 ```
 
-The chart will look like as shown below:
+The chart with customized caption and subcaption looks like as shown below:
 
-**Insert Chart**
+{% embed_chart chart-configurations-titles-and-axis-names-example-2.js %}
 
-## Configure caption alignment
+Click [here](http://jsfiddle.net/fusioncharts/o4xhvc0g/ "@@open-newtab") to edit the above chart.
+
+## Configure Caption Alignment
 
 Use the following attributes to configure caption alignment:
 
@@ -80,27 +96,30 @@ Use the following attributes to configure caption alignment:
 
 * Display the caption at the top of the chart by setting the value of the `captionOnTop` attribute to `1`.
 
-* Align the caption with the canvas area instead of chart area, by setting the value of the `alignCaptionWithCanvas` attribute to `1`.
+* Align the caption with the canvas area instead of the chart area, by setting the value of the `alignCaptionWithCanvas` attribute to `1`.
 
 * Configure the padding (in pixels) from either edge when the caption is not center aligned, using the `captionHorizontalPadding` attribute.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "alignCaptionWithCanvas": "1",
         "captionHorizontalPadding": "2",
         "captionOnTop": "0",
         "captionAlignment": "right"
-    },
-
+    }
+}
 ```
+
 The chart will look like as shown below:
 
-**Insert Chart**
+{% embed_chart chart-configurations-titles-and-axis-names-example-3.js %}
 
-## Setting axes names
+Click [here](http://jsfiddle.net/fusioncharts/bbsmmt84/ "@@open-newtab") to edit the above chart.
+
+## Setting Axes Names
 
 Use the following attributes to configure names of axes:
 
@@ -110,81 +129,104 @@ Use the following attributes to configure names of axes:
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "xAxisName": "Quarter",
         "yAxisName": "Amount {br}(In USD)" 
-    },
-
+    }
+}
 ```
 
 The chart will look like as shown below:
 
-**Insert Chart**
+{% embed_chart chart-configurations-titles-and-axis-names-example-4.js %}
 
-## Configure font cosmetic properties 
+Click [here](http://jsfiddle.net/fusioncharts/9y23m8vq/ "@@open-newtab") to edit the above chart.
 
-Configure cosmetic properties like font, color, and size of the X-axis (or Y-axis) name using the attributes given below:
+## Configure Font Cosmetic Properties 
 
-* Set the font family of X-axis using the `xAxisNameFont` attribute or Y-axis using the `yAxisNameFont` attribute.
+Configure cosmetic properties like font, color, and size of the X-axis name using the attributes given below:
 
-* Set the font color of the X-axis in hex code using the `xAxisNameFontColor` attribute, or that of the Y-axis using the `yAxisNameFontColor` attribute.
+* Set the font family of X-axis using the `xAxisNameFont` attribute.
 
-* Set the font size (between `0` and `72`) of the X-axis using the `xAxisNameFontSize` attribute, or that of the Y-axis using the `yAxisNameFontSize` attribute.
+* Set the font color of the X-axis in hex code using the `xAxisNameFontColor` attribute.
 
-* Set the font style to bold of the X-axis using the `xAxisNameFontBold` attribute, or that of the Y-axis using the `yAxisNameFontBold` attribute. In either case, set the value to `1`.
+* Set the font size (between `0` and `72`) of the X-axis using the `xAxisNameFontSize` attribute.
 
-* Set the font style to italic of the X-axis using the `xAxisNameFontItalic` attribute, or that of the Y-axis using the `yAxisNameFontItalic` attribute. In either case, set the value to `1`.
+* Set the font style to bold of the X-axis using the `xAxisNameFontBold` attribute.
 
+* Set the font style to italic of the X-axis using the `xAxisNameFontItalic` attribute.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "xAxisNameFont": "Arial",
         "xAxisNameFontSize": "12",
         "xAxisNameFontColor": "#993300",
         "xAxisNameFontBold": "1",
-        "xAxisNameFontItalic": "1",
+        "xAxisNameFontItalic": "1"
+    }
+}
+```
+
+Configure cosmetic properties like font, color, and size of the Y-axis name using the attributes given below:
+
+* Set the font family of Y-axis using the `yAxisNameFont` attribute.
+
+* Set the font color of the Y-axis in hex code using the `yAxisNameFontColor` attribute.
+
+* Set the font size (between `0` and `72`) of the Y-axis using the `yAxisNameFontSize` attribute.
+
+* Set the font style to bold of the Y-axis using the `yAxisNameFontBold` attribute.
+
+* Set the font style to italic of the Y-axis using the `yAxisNameFontItalic` attribute.
+
+Refer to the code given below:
+
+```json
+{
+    "chart": {
         "yAxisNameFont": "Arial",
         "yAxisNameFontSize": "12",
         "yAxisNameFontColor": "#993300",
         "yAxisNameFontBold": "1",
         "yAxisNameFontItalic": "1"
-
-},
-
+    }
+}
 ```
+
 The chart will look like as shown below:
 
-**Insert Chart**
+{% embed_chart chart-configurations-titles-and-axis-names-example-5.js %}
 
-## Configure cosmetic properties of borders of the names
+Click [here](http://jsfiddle.net/fusioncharts/7o7qpcL2/ "@@open-newtab") to edit the above chart.
 
-Use the following attributes to configure cosmetic properties of the borders around names of axes:
+## Configure Cosmetic Properties of Borders of the Names
 
-* Set the border color of the name of the X-axis in hex code using the `xAxisNameBorderColor` attribute, or that of the Y-axis using the `yAxisNameBorderColor` attribute.
+Use the following attributes to configure cosmetic properties of the borders around names of x-axis:
 
-* Set the transparency (between `0` for transparent and `100` for opaque) of the border around the name of the X-axis using the `xAxisNameBorderColor` attribute, or that of the Y-axis using the `yAxisNameBorderColor` attribute.
+* Set the border color of the name of the X-axis in hex code using the `xAxisNameBorderColor` attribute.
 
-* Set the padding of the border (in pixels) around the name of the X-axis using the `xAxisNameBorderPadding` attribute, or that of the Y-axis using the `yAxisNameBorderPadding` attribute.
+* Set the transparency (between `0` for transparent and `100` for opaque) of the border around the name of the X-axis using the `xAxisNameBorderAlpha` attribute.
 
-* Set the radius of the border (in pixels) around the name of the X-axis using the `xAxisNameBorderRadius` attribute, or that of the Y-axis using the `yAxisNameBorderRadius` attribute.
+* Set the padding of the border (in pixels) around the name of the X-axis using the `xAxisNameBorderPadding` attribute.
 
-* Set the thickness of the border (in pixels) around the name of the X-axis using the `xAxisNameBorderThickness` attribute, or that of the Y-axis using the `yAxisNameBorderThickness` attribute.
+* Set the radius of the border (in pixels) around the name of the X-axis using the `xAxisNameBorderRadius` attribute
 
-* Make the border around the name of the X-axis dashed using the `xAxisNameBorderDashed` attribute, or that of the Y-axis using the `yAxisNameBorderDashed` attribute. In either case, set the value to `1`.
+* Set the thickness of the border (in pixels) around the name of the X-axis using the `xAxisNameBorderThickness` attribute.
 
-* Set the length of each dash (in pixels) in the dashed border around the name of the X-axis using the `xAxisNameBorderDashLen` attribute, or that of the Y-axis using the `yAxisNameBorderDashLen` attribute.
+* Make the border around the name of the X-axis dashed using the `xAxisNameBorderDashed` attribute.
 
-* Set the gap between two consecutive dashes (in pixels) in the dashed border around the name of the X-axis using the `xAxisNameBorderDashGap` attribute, or that of the Y-axis using the `yAxisNameBorderDashGap` attribute.
+* Set the length of each dash (in pixels) in the dashed border around the name of the X-axis using the `xAxisNameBorderDashLen` attribute.
 
+* Set the gap between two consecutive dashes (in pixels) in the dashed border around the name of the X-axis using the `xAxisNameBorderDashGap` attribute.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "xAxisNameBorderColor": "#6666FF",
@@ -194,7 +236,34 @@ Refer to the code given below:
         "xAxisNameBorderThickness": "2",
         "xAxisNameBorderDashed": "1",
         "xAxisNameBorderDashLen": "4",
-        "xAxisNameBorderDashGap": "2",
+        "xAxisNameBorderDashGap": "2"
+    }
+}
+```
+
+Use the following attributes to configure cosmetic properties of the borders around names of y-axis:
+
+* Set the border color of the name of the X-axis in hex code using the `yAxisNameBorderColor` attribute.
+
+* Set the transparency (between `0` for transparent and `100` for opaque) of the border around the name of the X-axis using the `yAxisNameBorderAlpha` attribute.
+
+* Set the padding of the border (in pixels) around the name of the X-axis using the `yAxisNameBorderPadding` attribute.
+
+* Set the radius of the border (in pixels) around the name of the X-axis using the `yAxisNameBorderRadius` attribute.
+
+* Set the thickness of the border (in pixels) around the name of the X-axis using the `yAxisNameBorderThickness` attribute.
+
+* Make the border around the name of the X-axis dashed using the `yAxisNameBorderDashed` attribute.
+
+* Set the length of each dash (in pixels) in the dashed border around the name of the X-axis using the `yAxisNameBorderDashLen` attribute.
+
+* Set the gap between two consecutive dashes (in pixels) in the dashed border around the name of the X-axis using the `yAxisNameBorderDashGap` attribute.
+
+Refer to the code given below:
+
+```json
+{
+    "chart": {
         "yAxisNameBorderColor": "#6666FF",
         "yAxisNameBorderAlpha": "50",
         "yAxisNameBorderPadding": "6",
@@ -203,51 +272,85 @@ Refer to the code given below:
         "yAxisNameBorderDashed": "1",
         "yAxisNameBorderDashLen": "4",
         "yAxisNameBorderDashGap": "2"
-       
-    },
-
+    }
+}
 ```
+
 The chart will look like as shown below:
 
-**Insert Chart**
+{% embed_chart chart-configurations-titles-and-axis-names-example-6.js %}
 
-## Configure the font opacity and background
+Click [here](http://jsfiddle.net/fusioncharts/js1h6pgm/ "@@open-newtab") to edit the above chart.
 
-Use the following attributes to configure the background for names of axes:
+## Configure the Font Opacity and Background
 
-* Set the transparency (between `0` for transparent and `100` for opaque) of the name of the X-axis using the `xAxisNameFontAlpha` attribute, or that of the Y-axis using the `yAxisNameFontAlpha` attribute.
+Use the following attributes to configure the background for names of x-axis:
 
-* Set the background color (in hex code) of the name of the X-axis using the `xAxisNameBgColor` attribute, or that of the Y-axis using the `yAxisNameBgColor` attribute.
+* Set the font family of x-axis name using `xAxisNameFont` attribute.
 
-* Set the transparency (between `0` for transparent and `100` for opaque) of the background of the name of the X-axis using the `xAxisNameBgAlpha` attribute, or that of the Y-axis using the `yAxisNameBgAlpha` attribute.
+* Set the x-axis name font size (between `0` and `72`) using `xAxisNameFontSize` attribute.
 
-* Set the transparency (between `0` for transparent and `100` for opaque) of the name of the X-axis using the `xAxisNameAlpha` attribute, or that of the Y-axis using the `yAxisNameAlpha` attribute.
+* Set the transparency (between `0` for transparent and `100` for opaque) of the name of the x-axis using the `xAxisNameFontAlpha` attribute.
+
+* Set the background color (in hex code) of the name of the x-axis using the `xAxisNameBgColor` attribute.
+
+* Set the transparency (between `0` for transparent and `100` for opaque) of the background of the name of the x-axis using the `xAxisNameBgAlpha` attribute.
+
+* Set the transparency (between `0` for transparent and `100` for opaque) of the name of the x-axis using the `xAxisNameAlpha` attribute.
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
+        "xAxisNameFont": "Arial",
+        "xAxisNameFontSize": "14",
         "xAxisNameBgColor": "#3399ff",
         "xAxisNameBgAlpha": "20",
         "xAxisNameFontAlpha": "50",
-        "xAxisNameBorderPadding": "10",
+        "xAxisNameBorderPadding": "10"       
+    }
+}
+```
+
+Use the following attributes to configure the background for names of y-axis:
+
+* Set the font family of X-axis name using `yAxisNameFont` attribute.
+
+* Set the x-axis name font size (between `0` and `72`) using `yAxisNameFontSize` attribute.
+
+* Set the transparency (between `0` for transparent and `100` for opaque) of the name of the X-axis using the `yAxisNameFontAlpha` attribute.
+
+* Set the background color (in hex code) of the name of the X-axis using the `yAxisNameBgColor` attribute.
+
+* Set the transparency (between `0` for transparent and `100` for opaque) of the background of the name of the X-axis using the `yAxisNameBgAlpha` attribute.
+
+* Set the transparency (between `0` for transparent and `100` for opaque) of the name of the X-axis using the `yAxisNameAlpha` attribute.
+
+Refer to the code given below:
+
+```json
+{
+    "chart": {
         "yAxisNameFont": "Arial",
         "yAxisNameFontSize": "14",
         "yAxisNameBgColor": "#3399ff",
         "yAxisNameBgAlpha": "20",
         "yAxisNameFontAlpha": "50",
         "yAxisNameBorderPadding": "10"       
-    },
-
+    }
+}
 ```
+
 The chart will look like as shown below:
 
-**Insert Chart**
+{% embed_chart chart-configurations-titles-and-axis-names-example-7.js %}
 
-## Configure font cosmetic properties for primary and secondary y-axis names
+Click [here](http://jsfiddle.net/fusioncharts/4q55b6z5/ "@@open-newtab") to edit the above chart.
 
-Use the following attributes to configure font properties of a multi-series, combination 2D chart with the primary and secondary y-axis names italicized:
+## Configure Font Properties for Y-axis Names
+
+Use the following attributes to configure font properties of a multi-series combination 2D chart with the primary and secondary y-axis names italicized:
 
 * Set the titles of the primary and secondary axes using the `pYAxisName` and `sYAxisName` attributes, respectively.
 
@@ -265,7 +368,7 @@ Use the following attributes to configure font properties of a multi-series, com
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "pYAxisName": "Amount (In USD)",
@@ -282,14 +385,17 @@ Refer to the code given below:
         "sYAxisNameFontBold": "1",
         "sYAxisNameFontItalic": "1",
         "sYAxisNameFontAlpha": "50" 
-    },
-
+    }
+}
 ```
+
 The chart will look like as shown below:
 
-**Insert Chart**
+{% embed_chart chart-configurations-titles-and-axis-names-example-8.js %}
 
-## Configure background properties for primary and secondary y-axis names
+Click [here](http://jsfiddle.net/fusioncharts/pfsytcca/ "@@open-newtab") to edit the above chart.
+
+## Configure Background Properties of Y-axis Names
 
 Use the following attributes to set a semi-transparent background in a chosen color for the primary and secondary y-axis names of a multi-series, combination 2D chart:
 
@@ -301,7 +407,7 @@ Use the following attributes to set a semi-transparent background in a chosen co
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "pYAxisNameBgColor": "#3399ff",
@@ -313,16 +419,18 @@ Refer to the code given below:
         "sYAxisNameBgColor": "#3399ff",
         "sYAxisNameBgAlpha": "20",
         "sYAxisNameBorderPadding": "6",
-        "sYAxisNameAlpha": "50",
-        "theme": "fint"
-    },
-
+        "sYAxisNameAlpha": "50"
+    }
+}
 ```
+
 The chart will look like as shown below:
 
-**Insert Chart**
+{% embed_chart chart-configurations-titles-and-axis-names-example-9.js %}
 
-## Configure the border cosmetic properties for the primary and secondary y-axis names
+Click [here](http://jsfiddle.net/fusioncharts/999f2Lbw/ "@@open-newtab") to edit the above chart.
+
+## Configure the Border Properties of Y-axis Names
 
 Use the following attributes to customize the primary and secondary y-axis names for a multi-series, combination 2D chart with a dashed border and a chosen color:
 
@@ -344,7 +452,7 @@ Use the following attributes to customize the primary and secondary y-axis names
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "pYAxisNameBorderColor": "#6666FF",
@@ -362,13 +470,13 @@ Refer to the code given below:
         "sYAxisNameBorderThickness": "1",
         "sYAxisNameBorderDashed": "1",
         "sYAxisNameBorderDashLen": "4",
-        "sYAxisNameBorderDashGap": "2",
-       
-    },
-
+        "sYAxisNameBorderDashGap": "2",       
+    }
+}
 ```
 
 The chart will look like as shown below:
 
-**Insert Chart**
+{% embed_chart chart-configurations-titles-and-axis-names-example-10.js %}
 
+Click [here](http://jsfiddle.net/fusioncharts/d09622mw/ "@@open-newtab") to edit the above chart.

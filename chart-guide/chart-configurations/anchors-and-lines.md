@@ -5,34 +5,33 @@ heading: Anchors and Lines
 breadcrumb: [["Home", "/"], ["Anchors and Lines"]]
 ---
 
-Each data point in a line/spline/area chart is represented by an anchor. Anchors help to easily identify the data point in the chart. Anchors show a tooltip showing the data plot details when the mouse is hovered over them, and can be linked to other pages as well. In this article we will discuss different configurations of the anchors.
+Each data point in a line/spline/area chart is represented by an anchor. Anchors help to identify the data point in the chart easily. Anchors show a tooltip showing the data plot details when the mouse is hovered over them and can be linked to other pages as well. In this article, we will discuss different configurations of the anchors.
 
 ![Anchors]({% site.baseurl %}/images/chart-configurations-anchors-image-1.png)
 
-## Hide anchors
+## Hide Anchors
 
-The anchors and their corresponding tooltips are displayed by default. To hide the anchors set the `drawAnchors` attribute to `0` as shown in the code below:
+By default, the anchors and their corresponding tooltips are displayed. To hide the anchors set the `drawAnchors` attribute to `0` as shown in the code below:
 
-```
+```json
 {
     "chart": {
         "drawAnchors": "0"
-    },
+    }
+}
+```
 
-  ```
-A line chart with anchors hidden looks as below:
-
-**INSERT CHART**
+A line chart with anchors hidden looks like as shown as below:
 
 {% embed_chart chart-configurations-anchors-and-lines-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/5tajR/ "@@open-newtab") to edit the above chart.
 
-## Customize anchor properties
+## Customize Anchor Properties
 
-To customize the properties of the anchors the following attributes are used:
+To customize the properties of the anchors, the following attributes are used:
 
-* Specify the number of sides using the `anchorSides` attribute to define the shape of the anchor. Set the value to `3` to draw the anchor shape as a triangle.
+* Specify the number of sides using the `anchorSides` attribute to define the shape of the anchor. Set the value to `3` to draw the anchor shaped like a triangle.
 
 * Set the radius (in pixels) of the anchor using the `anchorRadius` attribute.
 
@@ -46,7 +45,7 @@ To customize the properties of the anchors the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "anchorRadius": "6",
@@ -54,8 +53,8 @@ Refer to the code below:
         "anchorBorderColor": "#127fcb",
         "anchorSides": "3",
         "anchorBgColor": "#d3f7ff"
-    },
-
+    }
+}
 ```
 
 A line chart with customized anchors looks like as shown below:
@@ -64,7 +63,7 @@ A line chart with customized anchors looks like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/QnFW2/ "@@open-newtab") to edit the above chart.
 
-## Customize anchors for specific data points
+## Customize Anchors for specific Data Points
 
 To highlight a specific anchor, customize the cosmetics for only that particular anchor. 
 
@@ -72,7 +71,7 @@ To customize the anchor of a specific data point use the same attributes as ment
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "anchorRadius": "6",
@@ -95,15 +94,15 @@ Refer to the code below:
 
 ```
 
-A line chart with anchors for specific data points customized looks as below:
+A line chart with anchors of specific data points customized looks as below:
 
 {% embed_chart chart-configurations-anchors-and-lines-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/w9ZWt/ "@@open-newtab") to edit the above chart.
 
-## Add external images
+## Add External Images
 
-You can add external images in place of anchors for line and area charts. This allows you to use different images for each anchor, and lets you highlight special values. To do so, you have to set the attributes in individual `data` object. The attributes use are:
+You can add external images in place of anchors for line and area charts. This allows you to use different images for each anchor and lets you highlight special values. To do so, you have to set the attributes in individual `data` object. The attributes used are:
 
 * Specify the URL of the image using the `anchorImageUrl` attribute.
 
@@ -117,7 +116,7 @@ You can add external images in place of anchors for line and area charts. This a
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         ...
