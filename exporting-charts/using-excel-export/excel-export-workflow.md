@@ -8,7 +8,7 @@ chartPresent: False
 
 A high-level flow diagram of the export process using the FusionCharts Excel export feature is shown below:
 
-![Excel Export]({{ site.baseurl }}assets/images/excel-export-workflow.png)
+![Excel Export]({% site.baseurl %}/images/excel-export-workflow.png)
 
 The process to export charts using FusionCharts Excel export is given below:
 

@@ -23,13 +23,13 @@ __Steps :__
 
         * Search for the package in the Nuget repository.
 
-        ![Excel Export]({{ site.baseurl }}assets/images/server-side-set-up-image-1.png)
+        ![Excel Export]({% site.baseurl %}/images/server-side-set-up-image-1.png)
 
         * Click __Install__.
 
     * __Method 2__: Through the Nuget command line, execute the command given below:
 
-      ```
+```
 $ Install-Package FusionCharts.ExcelExport.MVC -Version 1.0.0-beta
 ```
 
@@ -89,23 +89,23 @@ The routeURL is optional and the default URL is `api/v1.0/export`. This is the U
 
 * To disable incoming request validation, add the code given below to the **web.config** file:
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <configuration>
-  <system.web>
+    <system.web>
     <!-- 
     Add these configurations to your existing system.web.
     If the mentioned tags are already present in your web.config, only add the missing attribute values for that tag.
     -->
     <httpRuntime requestValidationMode="2.0"/>
     <pages>
-      <namespaces>
-        <add namespace="System.Web.Mvc"/>
-        <add namespace="System.Web.Mvc.Ajax"/>
-        <add namespace="System.Web.Mvc.Html"/>
-        <add namespace="System.Web.Routing"/>
-      </namespaces>
+        <namespaces>
+            <add namespace="System.Web.Mvc"/>
+            <add namespace="System.Web.Mvc.Ajax"/>
+            <add namespace="System.Web.Mvc.Html"/>
+            <add namespace="System.Web.Routing"/>
+        </namespaces>
     </pages>
-  </system.web>
+    </system.web>
 </configuration>
 ```
 
@@ -122,7 +122,7 @@ __Steps:__
 
     * Search for the package in the Nuget repository.
 
-    ![Excel Export]({{ site.baseurl }}assets/images/server-side-set-up-image-5.png)
+    ![Excel Export]({% site.baseurl %}/images/server-side-set-up-image-5.png)
 
     * Click **Install**.
 
@@ -131,23 +131,23 @@ __Steps:__
 
 * In the **web.config** file, add `<httpRuntime requestValidationMode="2.0" />` under the `<system.web>` configuration, as shown below: 
 
-{% highlight html lineanchors %}{% raw %}
+```html
 <configuration>
-  <system.web>
+    <system.web>
     <!-- 
     Add these configurations to your existing system.web.
     If the mentioned tags are already present in your web.config, only add the missing attribute values for that tag.
     -->
     <httpRuntime requestValidationMode="2.0"/>
     <pages>
-      <namespaces>
-        <add namespace="System.Web.Mvc"/>
-        <add namespace="System.Web.Mvc.Ajax"/>
-        <add namespace="System.Web.Mvc.Html"/>
-        <add namespace="System.Web.Routing"/>
-      </namespaces>
+        <namespaces>
+            <add namespace="System.Web.Mvc"/>
+            <add namespace="System.Web.Mvc.Ajax"/>
+            <add namespace="System.Web.Mvc.Html"/>
+            <add namespace="System.Web.Routing"/>
+        </namespaces>
     </pages>
-  </system.web>
+    </system.web>
 </configuration>
 ```
 

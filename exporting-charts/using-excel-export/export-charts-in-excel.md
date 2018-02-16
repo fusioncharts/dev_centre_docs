@@ -16,13 +16,13 @@ Let's check out a few examples of specific chart types using Excel export.
 
 ## Export multi-series area 2D chart
 
-{% embed_all {"source": "exporting-charts-in-excel-example-1.js", "id": "1", "iframe": "207vp6yu"} %}
+{% embed_all exporting-charts-in-excel-example-1.js %}
 
 Click __Export as Excel__ option from the menu, to download an excel file with corresponding chart and data.
 
 ## Export the column 3D chart
 
-{% embed_all {"source": "exporting-charts-in-excel-example-2.js", "id": "2", "iframe": "ayanxgk5"} %}
+{% embed_all exporting-charts-in-excel-example-2.js %}
 
 In the above sample, 3D column chart is exported in excel format.
 
@@ -35,37 +35,37 @@ Following attributes are used to customize the caption and subcaption of the abo
 
 ## Export doughnut chart
 
-{% embed_all {"source": "exporting-charts-in-excel-example-3.js", "id": "3", "iframe": "vm6bdg65"} %}
+{% embed_all exporting-charts-in-excel-example-3.js %}
 
 Set the starting angle of the first slice using `startingAngle` attribute.
 
 ## Export error bar chart
 
-{% embed_all {"source": "exporting-charts-in-excel-example-4.js", "id": "4", "iframe": "o8w457n9"} %}
+{% embed_all exporting-charts-in-excel-example-4.js %}
 
 Set `rotateValues` attribute to `1` to rotate data values in chart.
 
 ## Export radar chart
 
-{% embed_all {"source": "exporting-charts-in-excel-example-5.js", "id": "5", "iframe": "ubhb4xhr"} %}
+{% embed_all exporting-charts-in-excel-example-5.js %}
 
 Radar Chart is useful in visualizing multiple series of multi-dimensional data. Set `showLegend` attribute to `1` to show the legend.
 
 ## Export box and whisker chart
 
-{% embed_all {"source": "exporting-charts-in-excel-example-6.js", "id": "6", "iframe": "70yrjm62"} %}
+{% embed_all exporting-charts-in-excel-example-6.js %}
 
 Set the `legendPosition` attribute to `right` or `bottom` (default) to specify the legend position.
 
 ## Export spline chart
 
-{% embed_all {"source": "exporting-charts-in-excel-example-7.js", "id": "7", "iframe": "ccuheL7k"} %}
+{% embed_all exporting-charts-in-excel-example-7.js %}
 
 Embed a logo on the chart using `logoURL` attribute.
 
 ## Exporting the multi-axis line chart
 
-{% embed_all {"source": "exporting-charts-in-excel-example-8.js", "id": "8", "iframe": "13g80ft1"} %}
+{% embed_all exporting-charts-in-excel-example-8.js %}
 
 This chart will be rendered as a static image in excel sheet. Since excel supports only upto two axes, this chart cannot be represented as an interactive excel chart. So, the chart is exported as static image.
 
