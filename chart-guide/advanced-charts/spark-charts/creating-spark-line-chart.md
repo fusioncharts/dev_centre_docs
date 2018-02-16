@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/spark-charts/creating-spark-line-chart.html
 title: Creating a Spark Line Chart | FusionCharts
 description: This section talks about how to create a spark line chart.
 heading: Creating a Spark Line Chart

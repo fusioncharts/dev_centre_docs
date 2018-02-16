@@ -1,5 +1,4 @@
 ---
-permalink: chart-guide/drag-node-chart/adding-and-editing-connectors.html
 title: Adding and Editing Connectors | FusionCharts
 description: FusionCharts Suite XT allows you to customize a drag-node chart at run-time - you can add, edit, or delete connectors in a drag-node chart.
 heading: Adding and Editing Connectors
@@ -7,12 +6,6 @@ chartPresent: true
 ---
 
 FusionCharts Suite XT allows you to customize a drag-node chart at run-time - you can add, edit, or delete connectors in a drag-node chart. Set the chart to edit mode to use this feature (edit mode can be enabled by setting "`viewMode: 0`" in the `chart` object).
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-editing-connectors.html#adding-a-connector-at-run-time">Add a connector at run-time</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-editing-connectors.html#editing-a-connector-at-run-time">Edit a connector at run-time</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-editing-connectors.html#deleting-a-connector-at-run-time">Delete a connector at run-time</a>
 
 To understand this, the sample chart that we will use looks like this:
 

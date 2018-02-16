@@ -1,5 +1,4 @@
 ---
-permalink: chart-guide/drag-node-chart/adding-and-deleting-text-labels.html
 title: Adding and Deleting Text Labels | FusionCharts
 description: FusionCharts Suite XT allows you to create individual floating text labels on the chart. This helps in defining a strict text content that can be shown and dragged anywhere on the chart.
 heading: Adding and Deleting Text Labels
@@ -7,11 +6,6 @@ chartPresent: true
 ---
 
 FusionCharts Suite XT allows you to create individual floating text labels on the chart. This helps in defining a strict text content that can be shown and dragged anywhere on the chart. As of now, you can only add or delete a label, but you cannot edit a label.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-deleting-text-labels.html#adding-a-text-label-at-run-time">Add a text label at run-time</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-deleting-text-labels.html#deleting-a-text-label-at-run-time">Delete a text label at run-time</a>
 
 To understand this, the sample chart that we will use looks like this:
 

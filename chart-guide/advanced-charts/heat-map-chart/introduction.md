@@ -1,5 +1,4 @@
 ---
-permalink: chart-guide/heat-map-chart/introduction.html
 title: Introduction to Heat Map Chart | FusionCharts
 description: A heat map chart is a specialized chart that uses colors to represent data values in a table. It is mostly used to plot large and complex data.
 heading: Introduction to Heat Map Chart
@@ -7,16 +6,6 @@ chartPresent: true
 ---
 
 A heat map chart is a specialized chart that uses colors to represent data values in a table. It is mostly used to plot large and complex data.
-
-In this section, you will be introduced to the:
-
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/introduction.html#basics-of-heat-map-charts">Basics of heat map charts</a>
-
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/introduction.html#key-features">Key features</a>
-
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/introduction.html#types-of-heat-map-charts">Types of heat map charts</a>
-
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/introduction.html#legends-in-heat-map-charts">Legends in heat map charts</a>
 
 ## Basics of Heat Map Charts
 

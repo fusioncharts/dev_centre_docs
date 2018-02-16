@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/gantt-chart/adding-trend-lines.html
 title: Adding Trend-lines | FusionCharts
 description: Trend-lines and trend-zones, used to represent target value and target range, respectively, add them to your Gantt chart to mark an event for a particular data
 heading: Adding Trend-lines
@@ -7,12 +6,6 @@ chartPresent: true
 ---
 
 Trend-lines and trend-zones are used to represent a target value and a target range, respectively. You can add them to your Gantt chart to mark an event for a particular data - for example, you can add a trend-line to indicate "Testing Start" or a trend-zone to show the Christmas vacation period.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/adding-trend-lines.html#creating-a-trend-line">Create a trend-line</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/adding-trend-lines.html#creating-trend-zones">Create a trend-zone</a>
 
 ## Creating a Trend-line
 

@@ -1,5 +1,4 @@
 ---
-permalink: chart-guide/treemap/configuring-the-treemap.html
 title: Configuring the Treemap | FusionCharts
 description: Some ways by the help of which you can customize your treemap are, setting tiling algorithm, enable/disable the use of a navigation bar, set custom colors, etc
 heading: Configuring the Treemap
@@ -7,15 +6,6 @@ chartPresent: true
 ---
 
 FusionCharts Suite XT lets you configure the functionality of your treemap. There are various ways in which you can customize your treemap—for example, you can set the tiling algorithm (decide how the chart will be divided into nodes), enable/disable the use of a navigation bar to traverse through the chart, set custom colors for the nodes, customize all the texts in the chart canvas, customize the data labels separately, set glowing effect and so on.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}chart-guide/treemap/configuring-the-treemap.html#navigation-bar-with-traversal-path">Use the navigation bar with traversal path</a>
-* <a href="{{ site.baseurl }}chart-guide/treemap/configuring-the-treemap.html#coloring-the-treemap-data-plots">Color The data plots</a>
-* <a href="{{ site.baseurl }}chart-guide/treemap/configuring-the-treemap.html#customizing-individual-data-plots">Customize data plots</a>
-* <a href="{{ site.baseurl }}chart-guide/treemap/configuring-the-treemap.html#customizing-all-text-within-the-chart-canvas">Customize All Text Within the Chart Canvas</a>
-* <a href="{{ site.baseurl }}chart-guide/treemap/configuring-the-treemap.html#customizing-only-the-data-labels">Customize Only the Data Labels</a>
-* <a href="{{ site.baseurl }}chart-guide/treemap/configuring-the-treemap.html#applying-the-glow-effect-to-data-labels">Apply the Glow Effect to Data Labels</a>
 
 ## Navigation Bar with Traversal Path
 

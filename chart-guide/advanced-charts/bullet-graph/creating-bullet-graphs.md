@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/bullet-graph/creating-bullet-graphs.html
 title: Creating Bullet Graphs | FusionCharts
 description: To create a bullet chart, you need to define the upper and lower limits for the chart and the actual and target value.
 heading: Creating Bullet Graphs

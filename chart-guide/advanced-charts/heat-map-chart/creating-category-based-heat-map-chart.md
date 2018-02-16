@@ -1,5 +1,4 @@
 ---
-permalink: chart-guide/heat-map-chart/creating-category-based-heat-map-chart.html
 title: Creating Category-based Heat Map Charts | FusionCharts
 description: In heat map category-based mapping is done by defining several color categories or ranges and setting a specific color category to a cell.
 heading: Creating Category-based Heat Map Charts

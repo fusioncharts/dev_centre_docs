@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/spark-charts/configuring-spark-line-chart.html
 title: Configuring Spark Line Chart | FusionCharts
 description: You can show period blocks on a spark line chart using colored bands, helping you to easily interpret the periods on the chart.
 heading: Configuring Spark Line Chart
@@ -7,20 +6,6 @@ chartPresent: true
 ---
 
 FusionCharts Suite XT allows you to configure the functional and cosmetic properties of the spark line chart.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-line-chart.html#defining-period-blocks-for-the-chart">Define period blocks for the chart</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-line-chart.html#configuring-open-close-high-and-low-points">Configure open, close, and high/low points</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-line-chart.html#configuring-line-and-anchor-cosmetics">Configure line and anchor cosmetics</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-line-chart.html#showing-only-points-but-no-lines">Show only points and no lines</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-line-chart.html#customizing-trend-lines">Add trend-lines/trend-zones</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-line-chart.html#customizing-trend-lines">Configure hover effects</a>
 
 ## Defining Period Blocks for the Chart
 

@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart.html
 title: Configuring Spark Column Chart | FusionCharts
 description: This section of spark column chart talks about configuring period blocks, adding trend-lines/trend-zones, hover effects, etc
 heading: Configuring Spark Column Chart
@@ -7,16 +6,6 @@ chartPresent: true
 ---
 
 FusionCharts Suite XT allows you to customize several cosmetic and functional properties for the spark column chart.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart.html#configuring-period-blocks-for-the-chart">Configure period blocks</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart.html#configuring-the-high-and-low-columns">Configure the high and low columns</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart.html#adding-trend-linestrend-zones">Add trend-lines/trend-zones</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart.html#configuring-hover-effects-for-the-chart">Configure hover effects</a>
 
 ## Configuring Period Blocks for the Chart
 

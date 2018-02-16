@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/gantt-chart/configuring-cosmetics.html
 title: Configuring Cosmetics | FusionCharts
 description: This sections talks about configuration of cosmetics in gantt chart. Here you can add and customize process headers, add more columns, etc
 heading: Configuring Cosmetics
@@ -7,18 +6,6 @@ chartPresent: true
 ---
 
 You can configure several cosmetic properties for a Gantt chart that help you improve the visual representation of your chart.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-cosmetics.html#defining-and-showinghiding-task-labels">Define and show/hide task labels</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-cosmetics.html#showinghiding-task-start-and-end-dates">Show/hide task start and end dates</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-cosmetics.html#adding-and-customizing-the-process-header">Add and customize process headers</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-cosmetics.html#adding-more-columns-to-the-data-table">Add more columns to the data table</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-cosmetics.html#customizing-the-hover-effect">Configure hover effects</a>
 
 ## Defining and Showing/Hiding Task Labels
 

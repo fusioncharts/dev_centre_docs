@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/gantt-chart/adding-milestones-to-a-chart.html
 title: Adding Milestones to a Chart | FusionCharts
 description: Milestones, an important part of Gantt chart as they allow you to visually depict any crucial dates. Create your milestones on chart based on dates and tasks
 heading: Adding Milestones to a Chart

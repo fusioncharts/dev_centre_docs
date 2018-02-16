@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/pyramid-chart/configuring-chart.html
 title: Configuring Pyramid Chart | FusionCharts
 description: This section talks about pyramid chart, draw a 2D pyramid with customized border, labels shown at the center of the chart, etc
 heading: Configuring Pyramid Chart
@@ -7,22 +6,6 @@ chartPresent: true
 ---
 
 FusionCharts Suite XT allows you to configure several functional and cosmetic properties for pyramid charts.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/configuring-chart.html#drawing-a-2d-pyramid-with-customized-border-properties">Draw a 2D pyramid with customized border properties</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/configuring-chart.html#showing-labels-at-the-center-of-the-chart">Show labels at the center of the chart</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/configuring-chart.html#showing-labels-in-the-legend-of-the-chart">Show labels in the legend of the chart</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/configuring-chart.html#configuring-the-position-of-the-legend-box">Set the position of the legend box</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/configuring-chart.html#showing-values-as-percentage">Show values as percentage</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/configuring-chart.html#slicing-out-individual-pyramid-slices">Slice out individual pyramid slices</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/configuring-chart.html#configuring-hover-effects">Configure hover effects</a>
 
 ## Drawing a 2D Pyramid with Customized Border Properties
 

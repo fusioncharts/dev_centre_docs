@@ -1,5 +1,4 @@
 ---
-permalink: chart-guide/drag-node-chart/adding-and-editing-nodes.html
 title: Adding and Editing Nodes | FusionCharts
 description: To avail the feature of editing and deleting nodes, you need to render the chart in edit mode.
 heading: Adding and Editing Nodes
@@ -7,12 +6,6 @@ chartPresent: true
 ---
 
 FusionCharts Suite XT allows you to customize a drag-node chart in run-time - you can add, edit, or delete nodes in a drag-node chart. To avail this feature you need to render the chart in edit mode (edit mode can be enabled by setting `"viewMode": "0"` in the `chart` object).
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-editing-nodes.html#adding-a-node-at-run-time">Add a node at run-time</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-editing-nodes.html#editing-a-node-at-run-time">Edit a node at run-time</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/adding-and-editing-nodes.html#deleting-a-node-at-run-time">Delete a node at run-time</a>
 
 To understand this, the sample chart that we will use looks like this:
 

@@ -1,5 +1,4 @@
 ---
-permalink: chart-guide/treemap/creating-a-simple-treemap.html
 title: Creating a Simple Treemap | FusionCharts
 description: A treemap is useful when hierarchical information has to be analyzed, created using 2D nested rectangles, which can be compared to gain insights
 heading: Creating a Simple Treemap

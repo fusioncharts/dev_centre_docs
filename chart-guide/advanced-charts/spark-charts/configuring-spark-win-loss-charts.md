@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts.html
 title: Configuring Spark Win/Loss Charts | FusionCharts
 description: A spark win-loss chart configured to show period blocks. The functional and cosmetic properties can be configured for spark win/loss chart.
 heading: Configuring Spark Win/Loss Charts
@@ -7,18 +6,6 @@ chartPresent: true
 ---
 
 FusionCharts Suite XT allows you to configure the functional and cosmetic properties of spark win-loss charts to improve representation.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts.html#configuring-period-blocks">Configure period blocks</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts.html#configuring-win-loss-and-draw-colors">Configure win, loss, and draw colors</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts.html#configuring-colors-to-show-scoreless-matches">Configure colors to show matches with no scores by a side</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts.html#showinghiding-chart-value">Show/hide chart value</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts.html#configuring-hover-effects">Configure hover effects</a>
 
 ## Configuring Period Blocks
 

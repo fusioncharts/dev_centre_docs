@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/spark-charts/creating-spark-win-loss-charts.html
 title: Creating Spark Win/Loss Charts | FusionCharts
 description: This section talks about how to create a spark win/loss chart.
 heading: Creating Spark Win/Loss Charts
