@@ -6,7 +6,7 @@ heading: Introducing the Treemap
 chartPresent: true
 ---
 
-Treemapping is a visual representation of an information tree created using the [tree data structure](https://en.wikipedia.org/wiki/Tree_(data_structure)). It is displayed as 2D nested rectangles, representing the nodes and leaves of the tree data, related to each other. 
+Treemapping is a visual representation of an information tree created using the tree data structure. It is displayed as 2D nested rectangles, representing the nodes and leaves of the tree data, related to each other. 
 
 A simple treemap is shown below:
 

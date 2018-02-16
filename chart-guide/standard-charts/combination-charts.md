@@ -7,7 +7,7 @@ breadcrumb: [["Home", "/"], ["Combination Charts"]]
 
 > These chart types belong to **FusionCharts XT**.
 
-Combination charts are similar to multi-series charts. They allow you to plot multiple datasets on the same chart. But an added advantage of using combination charts is that you can also plot multiple chart types on the same chart. For example, you can show the column, line, and area chart on the same chart canvas.
+Combination charts are similar to [multi-series charts]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts "@@open-newtab"). They allow you to plot multiple datasets on the same chart. But an added advantage of using combination charts is that you can also plot multiple chart types on the same chart. For example, you can show the column, line, and area chart on the same chart canvas.
 
 > Combination charts can be rendered in either 2D or 3D, can have single or dual y-axes, and can be stacked or multi series in nature.
 
