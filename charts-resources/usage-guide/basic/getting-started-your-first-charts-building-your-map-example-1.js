@@ -1,4 +1,4 @@
-$(function() {var chart = new FusionCharts({
+{
     type: 'maps/usa',
     renderAt: 'chart-container',
     width: '600',
@@ -186,4 +186,3 @@ $(function() {var chart = new FusionCharts({
         }]
     }
 }
-).render('chart-container-1'); });
