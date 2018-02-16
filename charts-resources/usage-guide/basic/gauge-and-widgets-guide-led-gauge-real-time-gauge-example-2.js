@@ -1,6 +1,5 @@
 {
     type: 'hled',
-    renderAt: 'chart-container',
     width: '300',
     height: '200',
     dataFormat: 'json',
@@ -22,7 +21,7 @@
             "useSameFillBgColor": "1",
 
             "chartBottomMargin": "20",
-            "dataStreamURL": "../../../resources/php/gauge-and-widgets-guide-led-gauge-real-time-gauges-php-2.php",
+            "dataStreamURL": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-led-gauge-real-time-gauges-php-2.php",
             "refreshInterval": "5",
             "theme": "fint"
         },

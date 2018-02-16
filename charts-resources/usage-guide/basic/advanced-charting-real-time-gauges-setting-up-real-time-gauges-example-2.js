@@ -12,7 +12,7 @@
             "lowerLimit": "0",
             "upperLimit": "100",
             "numberSuffix": "%",
-            "dataStreamUrl": "../../../resources/php/advanced-charting-real-time-gauges-setting-up-real-time-gauges-php-1.php",
+            "dataStreamUrl": "https://static.fusioncharts.com/sample/dev2.0/advanced-charting-real-time-gauges-setting-up-real-time-gauges-php-1.php",
             "refreshInterval": "5",
             "theme": "fint"
         },

@@ -20,7 +20,7 @@
             "gaugeBorderThickness": "2",
             "gaugeBorderAlpha": "30",
             "thmOriginX": "100",
-            "dataStreamURL": "../../../resources/php/gauge-and-widgets-guide-thermometer-gauge-real-time-gauges-php-2.php",
+            "dataStreamURL": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-thermometer-gauge-real-time-gauges-php-2.php",
             "refreshInterval": "5",
             "theme": "fint"
         },

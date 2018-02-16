@@ -12,7 +12,7 @@
             "subcaption": "Bakersfield Central",
             "lowerLimit": "0",
             "upperLimit": "120",
-            "dataStreamUrl": "../../../resources/php/gauge-and-widgets-guide-cylinder-gauge-real-time-gauges-php-2.php",
+            "dataStreamUrl": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-cylinder-gauge-real-time-gauges-php-2.php",
             "lowerLimitDisplay": "Empty",
             "upperLimitDisplay": "Full",
             "numberSuffix": " ltrs",
