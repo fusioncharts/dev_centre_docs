@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html
 title: Creating Real-time Angular Gauge | FusionCharts
 description: In this section, understand and use the various methods available for data streaming, use a JavaScript API to update the gauge, etc.
 heading: Creating Real-time Angluar Gauge

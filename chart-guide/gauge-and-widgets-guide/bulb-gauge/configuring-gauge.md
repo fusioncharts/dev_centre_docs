@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/bulb-gauge/configuring-gauge.html
 title: Configuring Bulb Gauge | FusionCharts
 description: This section talks about configuring the gauge border, use the gradient fill mix for the gauge border, render a bulb in 2D, etc
 heading: Configuring Bulb Gauge

@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics.html
 title: Configuring Linear Gauge Cosmetics | FusionCharts
 description: This section of linear gauge talks how to configure pointer properties, add tooltext, add multiple pointers, configure the pointer value, position, etc
 heading: Configuring Linear Gauge Cosmetics

@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/led-gauge/configuring-gauge.html
 title: Configuring LED Gauge | FusionCharts
 description: In LED gauge, you can configure various cosmetic & functional properties. This section talks about configuring background color, gauge border, bar size, etc
 heading: Configuring LED Gauge

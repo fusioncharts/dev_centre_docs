@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.html
 title: Configuring Angles & Origins | FusionCharts
 description: This section talks about configuring anlges and origins, how to use various chart object to create angles, configure gauge angles, set gauge origins, etc
 heading: Configuring Angles & Origins

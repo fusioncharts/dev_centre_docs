@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html
 title: Configuring Angular Gauge Cosmetics | FusionCharts
 description: This section talks about configuring the gauge gradient fill, gauge border, gauge radius, pivot properties.
 heading: Configuring Angular Gauge Cosmetics

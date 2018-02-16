@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/thermometer-gauge/real-time-gauges.html
 title: Real-time Thermometer Gauge | FusionCharts
 description: This section of thermometer talks about configuring real-time updates using JavaScript API or server-side script.
 heading: Real-time Thermometer Gauge

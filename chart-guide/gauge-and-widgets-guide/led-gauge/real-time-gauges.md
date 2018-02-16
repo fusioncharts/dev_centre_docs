@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/led-gauge/real-time-gauges.html
 title: Real-time LED Gauge | FusionCharts
 description: This section of LED gauge talks about configuring real-time updates using JavaScript API or server-side script, configuring real-time events, etc
 heading: Real-time LED Gauge

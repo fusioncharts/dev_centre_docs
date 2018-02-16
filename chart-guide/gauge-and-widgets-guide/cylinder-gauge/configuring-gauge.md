@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/cylinder-gauge/configuring-gauge.html
 title: Configuring Cylinder Gauge | FusionCharts
 description: This article talks about configurations of cylinder gauge, on how to set the fill color, show or hide the chart value, etc
 heading: Configuring Cylinder Gauge

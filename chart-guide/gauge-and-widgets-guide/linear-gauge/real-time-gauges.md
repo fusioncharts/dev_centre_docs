@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/linear-gauge/real-time-gauges.html
 title: Real-time Linear Gauge | FusionCharts
 description: This section of linear gauge talks about configuring real-time updated using Javascript API or server-side script, etc
 heading: Real-time Linear Gauge

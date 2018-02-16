@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/linear-gauge/configuring-tick-marks.html
 title: Configuring Tick Marks in Linear Gauge | FusionCharts
 description: This sections of led gauge talks about configuring tick values, position of tick marks, number of major and minor tick marks and their cosmetics.
 heading: Configuring Tick Marks in Linear Gauge

@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/bulb-gauge/simple-gauge-example.html
 title: Simple Bulb Gauge Example | FusionCharts 
 description: In this section, you will be shown how you can create a simple bulb gauge. To create a bulb you need to define the lower and upper limits.
 heading: Simple Bulb Gauge Example

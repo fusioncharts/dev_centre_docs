@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/thermometer-gauge/configuring-gauge.html
 title: Configuring Thermometer Gauge | FusionCharts
 description: This section talks about customizing the gauge fill color and border, also about setting the radius and height of the thermometer manually.
 heading: Configuring Thermometer Gauge

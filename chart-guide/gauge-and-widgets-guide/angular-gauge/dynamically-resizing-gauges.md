@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges.html
 title: Dynamically Resizing Gauges | FusionCharts
 description: This section will show how one can configure gauges for dynamic resizing or use the JS API function to resize the charts.
 heading: Dynamically Resizing Gauges

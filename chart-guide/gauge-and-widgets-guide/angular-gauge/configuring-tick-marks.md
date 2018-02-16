@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.html
 title: Configuring Tick Marks in Angular Gauge | FusionCharts
 description: This section talks about showing/hiding the tick marks and tick values, configuring tick mark cosmetics, munber of major and minor tick marks, etc
 heading: Configuring Tick Marks in Angular Gauge

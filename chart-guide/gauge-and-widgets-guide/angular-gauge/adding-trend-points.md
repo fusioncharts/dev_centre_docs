@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/adding-trend-points.html
 title: Adding Trend Points in Angular Gauge | FusionCharts
 description: This section talks about adding simple trend point, show trend markers, create trend arcs, customize trend arcs, etc.
 heading: Adding Trend Points in Angular Gauge

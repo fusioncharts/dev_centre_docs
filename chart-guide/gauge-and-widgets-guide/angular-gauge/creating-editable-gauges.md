@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/creating-editable-gauges.html
 title: Creating Editable Angular Gauge | FusionCharts
 description: This section talks on how to convert a normal gauge to an editable one.
 heading: Creating Editable Angular Gauge

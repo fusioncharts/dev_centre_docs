@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/logging-real-time-messages.html
 title: Logging Real-time Messages | FusionCharts
 description: This section talks about message logger which can be used effectively to show some necessary real-time information or live error logs.
 heading: Logging Real-time Messages

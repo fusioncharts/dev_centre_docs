@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges.html
 title: Setting Up Real-time Gauges | FusionCharts
 description: FusionCharts Suite XT offers gauges that can be fed with real-time data periodically and can render the new data without a page refresh.
 heading: Setting Up Real-time Gauges

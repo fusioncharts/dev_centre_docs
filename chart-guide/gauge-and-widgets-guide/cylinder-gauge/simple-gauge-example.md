@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/cylinder-gauge/simple-gauge-example.html
 title: Simple Cylinder Gauge Example | FusionCharts
 description: To create a cylinder gauge, you need to define the upper and lower limits for the gauge and decide the visual properties of the cylinder.
 heading: Simple Cylinder Gauge Example

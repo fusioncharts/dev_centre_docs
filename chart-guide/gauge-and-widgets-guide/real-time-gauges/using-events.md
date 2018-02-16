@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/real-time-gauges/using-events.html
 title: Using Events | FusionCharts
 description: Real-time gauges are used when single value is of interest. FusionCharts offers two real-time events, realTimeUpdateComplete() & realTimeUpdateError()s
 heading: Using Events

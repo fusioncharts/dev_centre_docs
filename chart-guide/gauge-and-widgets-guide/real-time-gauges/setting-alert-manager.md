@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/real-time-gauges/setting-alert-manager.html
 title: Setting the Alert Manager | FusionCharts
 description: This section talks about setting alert manager. Real-time gauges can be made intuitive by setting an alert indicated when a defined set of values are reached
 heading: Setting the Alert Manager

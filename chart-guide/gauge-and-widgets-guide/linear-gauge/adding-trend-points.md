@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/linear-gauge/adding-trend-points.html
 title: Adding Trend-points in Linear Gauge | FusionCharts
 description: Trend points are elements that can be used to show a target value on the gauge. This section shows how to add trend-points and trend-zones in a linear gauge
 heading: Adding Trend-points in Linear Gauge

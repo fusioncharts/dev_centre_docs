@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/real-time-gauges/introduction.html
 title: Introduction to Real-time Gauges | FusionCharts
 description: Real-time gauges are useful in sectors like healthcare, IT, automotive, networking, for applications where continuous monitoring of a state is required.
 heading: Introduction to Real-time Gauges
@@ -34,16 +33,16 @@ In this example, when the temperature falls below -35°C, the bulb turns red and
 
 All gauges offered by FusionCharts Suite XT support real-time updates. For a detailed description on each gauge type, click the type-specific links given below:
 
-* [Angular]{% linkTo tutorials/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.md %}
+* [Angular]({% site.baseurl %}/chart-guide/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges "@@open-newtab")
 
-* [Linear]{% linkTo tutorials/gauge-and-widgets-guide/linear-gauge/real-time-gauges.md %}
+* [Linear]({% site.baseurl %}/chart-guide/gauge-and-widgets-guide/linear-gauge/real-time-gauges "@@open-newtab")
 
-* [LED]{% linkTo tutorials/gauge-and-widgets-guide/led-gauge/real-time-gauges.md %}
+* [LED]({% site.baseurl %}/chart-guide/gauge-and-widgets-guide/led-gauge/real-time-gauges "@@open-newtab")
 
-* [Thermometer]{% linkTo tutorials/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges.md %}
+* [Thermometer]({% site.baseurl %}/chart-guide/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges "@@open-newtab")
 
-* [Cylinder]{% linkTo tutorials/gauge-and-widgets-guide/cylinder-gauge/real-time-gauges.md %}
+* [Cylinder]({% site.baseurl %}/chart-guide/gauge-and-widgets-guide/cylinder-gauge/real-time-gauges "@@open-newtab")
 
-* [Bulb]{% linkTo tutorials/gauge-and-widgets-guide/bulb-gauge/real-time-gauges.md %}
+* [Bulb]({% site.baseurl %}/chart-guide/gauge-and-widgets-guide/bulb-gauge/real-time-gauges "@@open-newtab")
 
 Read ahead to understand how you can setup and work with real-time gauges.

@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html
 title: Real-time Bulb Gauge | FusionCharts
 description: The bulb gauge is a real-time chart, which can continuously request new data from the server and display the same, without involving any page refreshes.
 heading: Real-time Bulb Gauge

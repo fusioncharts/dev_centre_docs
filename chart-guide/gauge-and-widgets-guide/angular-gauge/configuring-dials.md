@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/configuring-dials.html
 title: Configuring Dials | FusionCharts
 description: With respect to dials, this section talks about configuring the border, background, radius, extension, base width, top width, hover effect, dial values.
 heading: Configuring Dials

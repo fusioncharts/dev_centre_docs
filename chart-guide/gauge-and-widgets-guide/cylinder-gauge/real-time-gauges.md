@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/cylinder-gauge/real-time-gauges.html
 title: Real-time Cylinder Gauge | FusionCharts
 description: Real-time Cylinder Gauge can continuously request and render new data without involving a page refresh.
 heading: Real-time Cylinder Gauge

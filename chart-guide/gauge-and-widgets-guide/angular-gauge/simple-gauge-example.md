@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/simple-gauge-example.html
 title: Simple Angular Gauge Example | FusionCharts
 description: An angular gauge is used to display a specific data point using a dial over a radial scale  with defined limits.
 heading: Simple Angular Gauge Example
