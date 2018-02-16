@@ -51,7 +51,7 @@ If you want to create a chart that automatically resizes when its parent contain
 ```
 Ensure that you set the parent container of the chart in a way that allows its dimensions to change dynamically when the browser is resized or other changes take place on the page (like when an element is added or removed).
 
-> In certain cases, if the HTML container element itself has not acquired proper width or height (due to error in rendering by browser), the chart might look squeezed, or it may not render in the first place. If this happens, then you have to specify the chart's dimensions in pixels.
+> In certain cases, if the HTML container element itself has not acquired proper width or height (due to an error in rendering by the browser), the chart might look squeezed, or it may not render in the first place. If this happens, then you have to specify the chart's dimensions in pixels.
 
 ## Dynamically Change Dimensions
 
@@ -67,7 +67,7 @@ Click [here](http://jsfiddle.net/fusioncharts/5Lpu0hrt/ "@@open-newtab") to edit
 
 ## Dynamically Change Chart Type 
 
-You can convert a column chart to a line chart at the click of a button, to compare trends in the data. The standard approach for this would be to create an instance of line chart, pass it the same JSON data, and then render it.
+You can convert a column chart to a line chart at the click of a button, to compare trends in the data. The standard approach for this would be to create an instance of a line chart, pass it the same JSON data, and then render it.
 
 However, with FusionCharts Suite XT, you can change chart types quickly, with the `chartType()` method. The only constraint is that the new chart type must also consume the same type of data (such as single-series). This API is useful when you want users to be able to select the right view for their data, without you having to rebuild the entire chart.
 
@@ -79,4 +79,4 @@ Click [here](http://jsfiddle.net/fusioncharts/txyb6ss4/ "@@open-newtab") to edit
 
 You can also provide a new data source and format as an optional second parameter of `chartType (chartType, options)` method, to change the data along with the chart.
 
-Now that you know how to configure the size of different charts to put them on single page, take a look at centralizing cosmetic properties of charts across the entire application.
+Now that you know how to configure the size of different charts to put them on a single page take a look at centralizing cosmetic properties of charts across the entire application.

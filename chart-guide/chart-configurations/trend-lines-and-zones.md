@@ -5,13 +5,13 @@ heading: Trend Lines and Zones
 breadcrumb: [["Home", "/"], ["Trendlines and zones"]]
 ---
 
-Trend lines are reference horizontal or vertical lines which helps to interpret data. They are customizable, and can be used to set context or define limits and targets. For example, while plotting quarterly sales of a company, you might want to use a trendline to depict the target sales.
+Trend lines are reference horizontal or vertical lines which help to interpret data. They are customizable and can be used to set context or define limits and targets. For example, while plotting quarterly sales of a company, you might want to use a trendline to depict the target sales.
 
 > In the FusionCharts Suite XT, you can only use trendlines to add context to data, To show trends for data points, use regression lines.
 
 ## Add Tool-text to a Trend Line
 
-You can specify a custom tool-text which will be rendered when the mouse pointer is hovered over the trend line. To do so, specify the text you want to display using the `toolText` attribute.
+You can specify a custom tool-text which will be rendered when the mouse pointer hovers over the trend line. To do so, specify the text you want to display using the `toolText` attribute.
 
 Refer to the code below:
 
@@ -162,7 +162,7 @@ Use the attributes given below to customize the border of trend line value text:
 
 * Set the radius for the border around the trend-line display values using the `trendValueBorderRadius` attribute.
 
-* Set the thickness for the border around the trend-line display values using the `trendValueBorderThickness` attribute.
+* Set the thickness of the border around the trend-line display values using the `trendValueBorderThickness` attribute.
 
 ```json
 {

@@ -5,9 +5,9 @@ heading: Vertical Div Lines
 breadcrumb: [["Home", "/"], ["Vertical Div Lines"]]
 ---
 
-Vertical divisional (or div) lines are vertical lines running through the canvas in a chart. They help in relating the data to its respective label, when there is large amount of data.
+Vertical divisional (or div) lines are vertical lines running through the canvas in a chart. They help in relating the data to its respective label when there a is large amount of data.
 
-> Vertical div lines are applicable only to line, area, spline, splineArea, and XY type charts.
+> Vertical div lines are applicable only for the line, area, spline, splineArea, and XY type charts.
 
 The image below shows vertical div lines rendered in a line chart:
 
@@ -35,7 +35,7 @@ Click [here](http://jsfiddle.net/fusioncharts/43ayL5uf/ "@@open-newtab") to edit
 
 ## Customize the Visuals of Vertical Divisional Lines 
 
-To customize the visals of the divisional lines use the following attributes:
+To customize the visuals of the divisional lines use the following attributes:
 
 * Specify the hex code of for the divisional line color using the `vDivLineColor` attribute.
 

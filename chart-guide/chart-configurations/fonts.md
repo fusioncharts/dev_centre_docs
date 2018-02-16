@@ -15,7 +15,7 @@ The base font group is used to customize the font properties for the text render
 
 * Set the size of the base font using the `baseFontSize` attribute.
 
-* Specify the hex code for the color of the base font using the `baseFontColor`	attribute.
+* Specify the hex code for the color of the base font using the `baseFontColor` attribute.
 
 Refer to the code below:
 
@@ -43,7 +43,7 @@ This is used to customize font properties for the text placed outside the chart 
 
 * Set the size of the font outside the chart canvas using the `outCnvBaseFontSize` attribute.
 
-* Specify the hex code for the color of the font outside  the chart canvas using the `outCanvBaseFontColor` attribute.
+* Specify the hex code for the color of the font outside the chart canvas using the `outCanvBaseFontColor` attribute.
 
 Refer to the code below:
 

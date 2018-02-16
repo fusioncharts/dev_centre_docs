@@ -43,4 +43,4 @@ Refer to the code below:
 
 Click [here](http://jsfiddle.net/fusioncharts/hzg6mn18/ "@@open-newtab") to edit the above chart.
 
-The difference between the current and previous implementation of the checkboxes in the multi-axis line chart, is that you can configure the current checkboxes to set a custom checkbox color.
+The difference between the current and previous implementation of the checkboxes in the multi-axis line chart is that you can configure the current checkboxes to set a custom checkbox color.

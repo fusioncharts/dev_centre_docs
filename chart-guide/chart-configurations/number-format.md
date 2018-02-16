@@ -52,11 +52,11 @@ Click [here](http://jsfiddle.net/fusioncharts/6w50wtfd/ "@@open-newtab") to edit
 
 Use the following attributes to force trailing zeroes:
 
-* Set the `forceDecimals` attribute to `1`, to add/retain same number of trailing zeros after decimal point to all figures on the chart.
+* Set the `forceDecimals` attribute to `1`, to add/retain the same number of trailing zeros after the decimal point to all figures on the chart.
 
-* Set the `forceYAxisValueDecimals` attribute to `1`, to add/retain same number of trailing zeros after decimal point to all Y-axis values on the chart.
+* Set the `forceYAxisValueDecimals` attribute to `1`, to add/retain the same number of trailing zeros after the decimal point to all Y-axis values on the chart.
 
-* Set the `forceXAxisValueDecimals` to `1`, to add/retain same number of trailing zeros after decimal point to all X-axis values on the chart.
+* Set the `forceXAxisValueDecimals` to `1`, to add/retain the same number of trailing zeros after the decimal point to all X-axis values on the chart.
 
 Refer to the code below:
 
@@ -86,9 +86,9 @@ FusionCharts XT automatically formats numbers displayed on charts. Use the follo
 
 * Set the `formatNumberScale` attribute to `1`, to automatically add K (thousands) and M (millions) to a number after truncating and rounding it. Alternatively, set this to `0` to disallow automatic formatting. Note that this attribute will only work if you don't specifically mention the `yFormatNumberScale` and `xFormatNumberScale` attributes.
 
-* Set the `yFormatNumberScale` attribute to `1`, to to automatically add K (thousands) and M (millions) to all the numbers on the Y-axis of the chart. Alternatively, set this to `0` to disallow automatic formatting. If you don't mention this attribute, the chart will inherit the default value from the `formatNumberScale` attribute.
+* Set the `yFormatNumberScale` attribute to `1`, to automatically add K (thousands) and M (millions) to all the numbers on the Y-axis of the chart. Alternatively, set this to `0` to disallow automatic formatting. If you don't mention this attribute, the chart will inherit the default value from the `formatNumberScale` attribute.
 
-* Set the `xFormatNumberScale` attribute to `1`, to to automatically add K (thousands) and M (millions) to all the numbers on the X-axis of the chart. Alternatively, set this to `0` to disallow automatic formatting. If you don't mention this attribute, the chart will inherit the default value from the `formatNumberScale` attribute.
+* Set the `xFormatNumberScale` attribute to `1`, to automatically add K (thousands) and M (millions) to all the numbers on the X-axis of the chart. Alternatively, set this to `0` to disallow automatic formatting. If you don't mention this attribute, the chart will inherit the default value from the `formatNumberScale` attribute.
 
 Refer to the code below:
 
@@ -105,7 +105,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/L6bzmLd7/ "@@open-newtab") to edit the above chart.
 
-A column 2D chart with automatic number formatting looks as the one given above. The data for the chart is `12523, 14570.230, 17375` and `18235.79`. FusionCharts Suite XT automatically formats the number scaling by converting it to `K` and `M`.
+A column 2D chart with automatic number formatting looks like the one given above. The data for the chart is `12523, 14570.230, 17375` and `18235.79`. FusionCharts Suite XT automatically formats the number scaling by converting it to `K` and `M`.
 
 ## Customize Thousand and Decimal Separator
 
@@ -138,7 +138,7 @@ Click [here](http://jsfiddle.net/fusioncharts/Lab3ckjd/ "@@open-newtab") to edit
 
 ## Configure Thousand Separator Position
 
-Specify the number of digits after which the thousand separator character should be placed, using the `thousandSeparatorPosition` attribute. If you set its value to `0`, the attribute will take its default value, which is `3`, and place the separator after every three digits starting from the right.
+Specify the number of digits after which the thousand separator character should be placed, using the `thousandSeparatorPosition` attribute. If you set its value to `0`, the attribute will take its default value, which is `3`, and places the separator after every three digits starting from the right.
 
 Refer to the code below:
 
@@ -191,7 +191,7 @@ Click [here](http://jsfiddle.net/fusioncharts/hd8uvdfp/ "@@open-newtab") to edit
 
 ## Shorten Data Values
 
-Shorten numbers displayed on charts by scaling them, with commonly used scales like K, M, etc..You can also define your own scales for numbers and then apply it to all numbers on the chart.
+Shorten numbers displayed on charts by scaling them, with commonly used scales like K, M, etc..You can also define custom scales for numbers and then apply it to all numbers on the chart.
 
 Let's start with the most basic example, which is already defined in the FusionCharts Suite XT- thousands (K) and millions (M) scales. 
 
@@ -253,7 +253,7 @@ Click [here](http://jsfiddle.net/fusioncharts/xpmu165b/ "@@open-newtab") to edit
 
 ### Example 1: Display Time in the Scale
 
-To display time in a chart in terms of progressively higher units (seconds, minutes, hours, days, etc.), build a scale indicating time and then specify it to the chart. 
+To display time in a chart in terms of progressively higher units (seconds, minutes, hours, days, etc.), build a scale indicating the time and then specify it in the chart. 
 
 Refer to the code below:
 
@@ -273,7 +273,7 @@ Click [here](http://jsfiddle.net/fusioncharts/obryn50m/ "@@open-newtab") to edit
 
 ### Example 2: Display Storage Capacity in the Scale
 
-To display storage capacity in terms of progressively higher units, (megabytes (MB), gigabytes (GB), terabytes (TB), etc.), build a scale indicating capacity of storage space and then specify it to the chart.
+To display storage capacity in terms of progressively higher units, (megabytes (MB), gigabytes (GB), terabytes (TB), etc.), build a scale indicating the capacity of storage space and then specify it to the chart.
 
 Refer to the code below:
 

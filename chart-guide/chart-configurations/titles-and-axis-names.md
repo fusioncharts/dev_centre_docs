@@ -5,11 +5,11 @@ heading: Titles and Axis Names
 breadcrumb: [["Home", "/"], ["Titles and Axis names"]]
 ---
 
-The caption (also called the chart title) is the heading of your chart, whereas a sub-caption is the text that appears just below the caption. In the sections below, you can see how to add caption, subcaption, x-axis name, and y-axis name to your charts, as well as configure their font properties.
+The caption (also called the chart title) is the heading of your chart, whereas a sub-caption is the text that appears just below the caption. In the sections below, you can see how to add a caption, subcaption, x-axis name, and y-axis name to your charts, as well as configure their font properties.
 
 ![Titles and Axis Names]({% site.baseurl %}/images/chart-configuration-titles-and-axis-names-image-1.png)
 
-Cartesian charts have axes that run along the left and the bottom borders of the canvas. The x-axis runs along the bottom border of the canvas, running left to right. The y-axis runs along the left border of the canvas, going from the bottom and to the top.
+Cartesian charts have axes that run along the left and the bottom borders of the canvas. The x-axis runs along the bottom border of the canvas, running from left to right. The y-axis runs along the left border of the canvas, going from the bottom and to the top.
 
 ## Set the Caption and Subcaption
 
@@ -96,7 +96,7 @@ Use the following attributes to configure caption alignment:
 
 * Display the caption at the top of the chart by setting the value of the `captionOnTop` attribute to `1`.
 
-* Align the caption with the canvas area instead of chart area, by setting the value of the `alignCaptionWithCanvas` attribute to `1`.
+* Align the caption with the canvas area instead of the chart area, by setting the value of the `alignCaptionWithCanvas` attribute to `1`.
 
 * Configure the padding (in pixels) from either edge when the caption is not center aligned, using the `captionHorizontalPadding` attribute.
 
@@ -174,15 +174,15 @@ Refer to the code given below:
 
 Configure cosmetic properties like font, color, and size of the Y-axis name using the attributes given below:
 
-* Set the font family of X-axis using the `yAxisNameFont` attribute or Y-axis using the `` attribute.
+* Set the font family of Y-axis using the `yAxisNameFont` attribute.
 
-* Set the font color of the X-axis in hex code using the `yAxisNameFontColor` attribute.
+* Set the font color of the Y-axis in hex code using the `yAxisNameFontColor` attribute.
 
-* Set the font size (between `0` and `72`) of the X-axis using the `yAxisNameFontSize` attribute.
+* Set the font size (between `0` and `72`) of the Y-axis using the `yAxisNameFontSize` attribute.
 
-* Set the font style to bold of the X-axis using the `yAxisNameFontBold` attribute.
+* Set the font style to bold of the Y-axis using the `yAxisNameFontBold` attribute.
 
-* Set the font style to italic of the X-axis using the `yAxisNameFontItalic` attribute.
+* Set the font style to italic of the Y-axis using the `yAxisNameFontItalic` attribute.
 
 Refer to the code given below:
 

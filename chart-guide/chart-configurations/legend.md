@@ -37,7 +37,7 @@ In the chart shown above, when you click the legend icon for **Last Year**, all 
 
 ## Show/Hide Data Plots via the Legend
 
-With FusionCharts Suite XT, show/hide the data plots belonging to a data series by clicking the corresponding legend icon. The legend interaction can also be disabled using `interactiveLegend` attribute. The default value of this attribute is `1`. Let's check out a sample without interactive legend.
+With FusionCharts Suite XT, show/hide the data plots belonging to a data series by clicking the corresponding legend icon. The legend interaction can also be disabled using `interactiveLegend` attribute. The default value of this attribute is `1`. Let's check out a sample without the interactive legend.
 
 Refer to the code below:
 
@@ -59,7 +59,7 @@ Click [here](http://jsfiddle.net/fusioncharts/u2q9Lte5/ "@@open-newtab") to edit
 
 Hover the mouse pointer over a legend text to highlight corresponding data plots in the chart. Whenever you do this, the chart reduces the opacity of the data plots belonging to other data series, making the one you clicked on stand out prominently. 
 
-To enable this feature, set the `plotHighlightEffect` attribute to `fadeout` whenever the mouse pointer is hovered over a data plot.
+To enable this feature, set the `plotHighlightEffect` attribute to `fadeout` whenever the mouse pointer hovers over a data plot.
 
 Refer to the code below:
 
@@ -77,7 +77,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/sf0owgb4/ "@@open-newtab") to edit the above chart.
 
-In the chart shown above, when the mouse pointer is hovered over the legend text **This Year**, the data plots in blue (corresponding to **Last Year**) fade out and the data plots in green (corresponding to **This Year**) are highlighted.
+In the chart shown above, when the mouse pointer hovers over the legend text **This Year**, the data plots in blue (corresponding to **Last Year**) fade out, and the data plots in green (corresponding to **This Year**) are highlighted.
 
 ### Customize the Highlight Effect
 
@@ -87,7 +87,7 @@ Define `plotHighlightEffect` attribute in the following format, to customize the
 
 `plotHighlightEffect=effectName|confStr`
 
-Always set `effectName` to `fadeout`. Use `confStr`, a comma-separated list of customization properties for the effect. use the following attributes to see the difference:
+Always set `effectName` to `fadeout`. Use `confStr`, a comma-separated list of customization properties for the effect. Use the following attributes to see the difference:
 
 * Specify the hex code for the data plot fill color using the `color` attribute.
 
@@ -156,7 +156,7 @@ Refer to the code below:
 
 Click [here](http://jsfiddle.net/fusioncharts/kLk72vnz/ "@@open-newtab") to edit the above chart.
 
-The attributes to customize the values while highlight effect are:
+The attributes to customize the values of highlight effect are:
 
 * Specify the hex code for the data value background color using the `valueBgColor` attribute.
 
@@ -392,7 +392,7 @@ Refer to the code below:
 
 * Set the value of the `legendShadow` attribute to `1`, to display legend shadow. 
 
-* If you have too many items on the legend, it will automatically display a scroll bar. Specify the background color of the scroll bar using the `legendScrollBgColor` attribute, which accepts hex codes.
+* If you have too many items in the legend, it will automatically display a scroll bar. Specify the background color of the scroll bar using the `legendScrollBgColor` attribute, which accepts hex codes.
 
 * Specify the horizontal alignment of the legend caption with the `legendCaptionAlignment` attribute, which accepts the values `left`, `center`, and `right`.
 
