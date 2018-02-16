@@ -10,7 +10,7 @@ If the data values are beyond the numeric ranges defined in the `colorRange` obj
 
 A chart with a blank data plot rendered for out-of-range data looks like this:
 
-{% embed_all {"source": "chart-guide-heat-map-chart-handling-out-of-range-data-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-heat-map-chart-handling-out-of-range-data-example-1.js %}
 
 In the above chart, the cells that represent the job happiness index for the accounting department at Compton-Rancho Dom and the marketing department at Garden Groove Harbour are blank.
 
@@ -24,7 +24,7 @@ Percentage mapping is a feature that allows the chart to display the data values
 
 A heat map chart with percentage mapping looks like this:
 
-{% embed_all {"source": "chart-guide-heat-map-chart-handling-out-of-range-data-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-heat-map-chart-handling-out-of-range-data-example-2.js %}
 
 Given below is a brief description of the attribute used to enable percentage mapping:
 

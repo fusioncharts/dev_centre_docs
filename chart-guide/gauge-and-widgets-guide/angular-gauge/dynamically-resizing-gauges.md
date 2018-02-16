@@ -33,7 +33,7 @@ Whenever the container element resizes, the gauge can also dynamically resize it
 
 An angular gauge configured to resize dynamically looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-dynamically-resizing-gauges-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-dynamically-resizing-gauges-example-1.js %}
 
 Given below is a brief description of the attribute used to configure dynamic resizing for gauges:
 
@@ -83,7 +83,7 @@ The below sample is calculated with a original width of 390 pixels and original 
 
 An angular gauge, with element sizes manually-specified, configured for dynamic resize looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-dynamically-resizing-gauges-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-dynamically-resizing-gauges-example-2.js %}
 
 Given below is a brief description of the attributes that control dynamic resizing:
 
@@ -105,7 +105,7 @@ Given below is a brief description of the attributes that control dynamic resizi
 
 
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-dynamically-resizing-gauges-example-2.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-dynamically-resizing-gauges-example-2.js %}
 
 In a similar way, the annotations present in a gauge can also be scaled and resized dynamically.
 
@@ -117,7 +117,7 @@ The FusionCharts JavaScript API allows you to resize an existing chart using the
 
 An angular gauge configured for using the `resizeTo()` functions looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-dynamically-resizing-gauges-example-3.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-dynamically-resizing-gauges-example-3.js %}
 
 Given below is a brief description of the `resizeTo()` function:
 

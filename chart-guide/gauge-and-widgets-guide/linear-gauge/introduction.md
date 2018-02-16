@@ -20,7 +20,7 @@ The FusionCharts Suite XT linear gauge is a real-time gauge, which can update it
 
 A simple linear gauge looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-introduction-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-introduction-example-1.js %}
 
 The linear gauge is used to display a specific data point using a pointer that moves on a horizontal named color scale to indicate whether the monitored data is within the defined limits.
 

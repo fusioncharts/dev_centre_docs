@@ -34,19 +34,19 @@ The FusionCharts Suite XT offer three types of spark charts:
 
 A simple spark line chart looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-introduction-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-introduction-example-1.js %}
 
 ### Spark Column Chart
 
 A simple spark column chart looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-introduction-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-introduction-example-2.js %}
 
 ### Spark Win-Loss Chart
 
 A simple spark win-loss chart looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-introduction-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-introduction-example-3.js %}
 
 ## Salient Features
 

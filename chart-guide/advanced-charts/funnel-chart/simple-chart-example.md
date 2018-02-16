@@ -50,7 +50,7 @@ To create a funnel chart, you will need to define the data to be represented on 
 
 A funnel chart created to show the above purchase-conversion analysis looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-funnel-chart-simple-chart-example-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-funnel-chart-simple-chart-example-example-1.js %}
 
 Given below is a brief description of the attributes used to create a simple funnel chart:
 

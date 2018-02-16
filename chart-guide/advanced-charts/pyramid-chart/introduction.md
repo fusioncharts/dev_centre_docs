@@ -20,7 +20,7 @@ As you know, each segment in a pyramid chart represents a dataset with the heigh
 
 A simple 2D pyramid chart looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-pyramid-chart-introduction-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-pyramid-chart-introduction-example-1.js %}
 
 ## Salient Features
 

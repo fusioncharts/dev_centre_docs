@@ -107,7 +107,6 @@
                     strData = "&label=" + label + "&value=" + hrys + "|" + nyse;
                 //Feed it to chart.
                 chartRef.feedData(strData);
-                console.log(nyse);
             }
             var myVar = setInterval(function() {
                 updateData();

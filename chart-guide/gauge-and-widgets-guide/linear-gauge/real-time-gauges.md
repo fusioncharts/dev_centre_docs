@@ -48,7 +48,7 @@ Here, the output is a single value, 75. So, when the gauge will read this value,
 
 A linear gauge configured to update the value of a single pointer looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-1.js %}
 
 Given below is a brief description of the JavaScript API methods used to configure real-time updates:
 
@@ -78,7 +78,7 @@ Here, we are specifying two values in the real-time update. So, assuming that we
 
 A linear gauge configured to update multiple pointers looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-2.js %}
 
 
 #### Updating Pointer(s) using the Named ID
@@ -114,7 +114,7 @@ This will change the value of pointer 1 (having the id `gGrovePointer`) to 65 an
 
 A linear gauge configured to update the values of multiple pointers using named IDs looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-3.js %}
 
 Given below is a brief description of the JavaScript API methods used to update pointers using their IDs:
 
@@ -161,7 +161,7 @@ We can retrieve data from gauge once the data has been updated.
 
 A linear gauge configured to retrieve updated data looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-4.js %}
 
 The data structure needed to retrieve updated data is as follows:
 
@@ -170,7 +170,7 @@ The data structure needed to retrieve updated data is as follows:
 
 An LED gauge updated in real-time using a server-side script looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-5.js %}
 
 Given below is a brief description of the attributes used to configure real-time updates using server-side scripts:
 
@@ -200,7 +200,7 @@ Given below is a brief description of the attributes used to configure real-time
 
 An LED gauge configured to stop and restart receiving real-time updates looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-6.js %}
 
 Given below is a brief description of the JavaScript API used to stop and restart receiving real-time updates:
 
@@ -230,7 +230,7 @@ FusionCharts Suite XT introduces two events, `realTimeUpdateComplete` and `realT
 
 A real-time linear gauge configured to listen to the `realTimeUpdateComplete` event looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-7.js", "id": "7"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-real-time-gauges-example-7.js %}
 
 Given below is a brief description of the `realTimeUpdateComplete` event:
 

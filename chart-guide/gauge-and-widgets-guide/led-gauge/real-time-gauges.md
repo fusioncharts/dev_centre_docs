@@ -36,7 +36,7 @@ The real-time data format for gauges depends on:
 
 A real-time LED gauge looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-real-time-gauge-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-led-gauge-real-time-gauge-example-1.js %}
 
 Given below is a brief description of the JavaScript API methods used to update a pointer:
 
@@ -70,7 +70,7 @@ Given below is a brief description of the JavaScript API methods used to update 
 
 An LED gauge updated in real-time using a server-side script looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-real-time-gauge-example-1.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-led-gauge-real-time-gauge-example-1.js %}
 
 Given below is a brief description of the attributes used to configure real-time updates using server-side scripts:
 
@@ -100,7 +100,7 @@ Given below is a brief description of the attributes used to configure real-time
 
 An LED gauge configured to stop and restart receiving real-time updates looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-real-time-gauge-example-2.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-led-gauge-real-time-gauge-example-2.js %}
 
 Given below is a brief description of the JavaScript API used to stop and restart receiving real-time updates:
 
@@ -129,7 +129,7 @@ FusionCharts Suite XT introduces two events, `realTimeUpdateComplete` and `realT
 
 A real-time LED gauge configured to listen to the `realTimeUpdateComplete` event looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-real-time-gauge-example-3.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-led-gauge-real-time-gauge-example-3.js %}
 
 Given below is a brief description of the `realTimeUpdateComplete` event:
 
@@ -153,7 +153,7 @@ Given below is a brief description of the `realTimeUpdateComplete` event:
 
 A LED gauge configured to listen to the `realTimeUpdateError` event looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-led-gauge-real-time-gauge-example-4.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-led-gauge-real-time-gauge-example-4.js %}
 
 Given below is a brief description of the `realTimeUpdateError` event:
 

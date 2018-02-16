@@ -22,7 +22,7 @@ FusionCharts Suite XT introduces the treemap chart starting v3.10.0, and support
 
 A treemap configured to demonstrate the `beforeDrillUp`, `drillUp`, `beforeDrillDown`, and `drillDown` events is shown below:
 
-{% embed_all {"source": "chart-guide-treemap-chart-handling-events-in-the-treemap-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-treemap-chart-handling-events-in-the-treemap-chart-example-1.js %}
 
 The data to render this chart is given below:
 

@@ -48,7 +48,7 @@ To create a simple linear gauge, you need to:
 
 The linear gauge thus created to show the server utilization, in percentage, at food.hsm.com looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-simple-gauge-example-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-simple-gauge-example-example-1.js %}
 
 Given below is a brief description of the attributes used to create a simple linear gauge:
 

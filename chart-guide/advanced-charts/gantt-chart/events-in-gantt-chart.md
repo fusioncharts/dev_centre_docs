@@ -16,7 +16,7 @@ To understand how Gantt chart events work, we will look at one example - we will
 
 The Social Media Optimization Gantt chart configured to capture data from the `dataPlotClick` event and display it in an annotation below the chart looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-events-in-gantt-charts-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-events-in-gantt-charts-example-1.js %}
 
 In the chart above, when you click a process all details related to that process are shown in the rectangle annotation rendered below the chart.
 

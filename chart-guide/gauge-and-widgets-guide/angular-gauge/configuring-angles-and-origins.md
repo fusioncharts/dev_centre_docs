@@ -58,13 +58,13 @@ The following attributes of the `chart` object are the main control parameters t
 
 The angular gauge comprehends angles as shown in the images below:
 
-![image angular-gauge-angles1]({{ site.baseurl }}assets/images/angular-angles-1.jpg)![image angular-gauge-angles2]({{ site.baseurl }}assets/images/angular-angles-2.jpg)
+![image angular-gauge-angles1]({% site.baseurl %}/images/angular-angles-1.jpg)![image angular-gauge-angles2]({% site.baseurl %}/images/angular-angles-2.jpg)
 
 Each point in the circle can be represented by two angles - a positive angle and a negative angle.This enables you to plot bi-directional angular gauges.
 
 An angular gauge flipped horizontally looks like this:
 
-{% embed_all {"source": "chart-guide-fusionwidgets-xt-angular-gauge-configuring-angles-and-origins-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-fusionwidgets-xt-angular-gauge-configuring-angles-and-origins-example-1.js %}
 
 
 To flip the gauge, all you need to do is swap the default values of the `gaugeStartAngle` and the `gaugeEndAngle` attributes.
@@ -81,7 +81,7 @@ Shown below are some examples that will help you understand how the origin point
 
 An angular gauge with the start angle and end angle measuring 0° and 90° respectively looks like this:
 
-{% embed_all {"source": "chart-guide-fusionwidgets-xt-angular-gauge-configuring-angles-and-origins-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-fusionwidgets-xt-angular-gauge-configuring-angles-and-origins-example-2.js %}
 
 
 
@@ -96,7 +96,7 @@ You can manually configure the gauge origins if the automatic adjustment of the 
 
 An angular gauge rendered with manually-specified gauge origins looks like this:
 
-{% embed_all {"source": "chart-guide-fusionwidgets-xt-angular-gauge-configuring-angles-and-origins-example-3.js", "id": "3"} %}
+{% embed_all chart-guide-fusionwidgets-xt-angular-gauge-configuring-angles-and-origins-example-3.js %}
 
 
 <p class="text-info">In the above example we have only modified the `gaugeOriginY` attribute to shift the origin upward, you can do similar adjustments with `gaugeOriginX` also.</p>

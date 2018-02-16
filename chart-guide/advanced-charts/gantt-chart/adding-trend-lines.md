@@ -20,7 +20,7 @@ As an example, we will create a trend line showing "Testing Start" in the "Socia
 
 A Gantt chart rendered with a trend-line looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-adding-trend-lines-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-adding-trend-lines-example-1.js %}
 
 Given below is a brief description of the attributes used to create a trend-line:
 
@@ -61,7 +61,7 @@ As an example, we will create a trend-zone in the "Social Media Optimization" Ga
 
 A Gantt chart rendered with a trend-zone looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-adding-trend-lines-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-adding-trend-lines-example-2.js %}
 
 
 Given below is a brief description of the attributes used to render a trend-zone:

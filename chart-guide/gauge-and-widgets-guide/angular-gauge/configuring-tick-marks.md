@@ -26,7 +26,7 @@ In this section, you will be shown how to:
 
 An angular gauge rendered with the tick marks and tick values hidden looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-tick-marks-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-tick-marks-example-1.js %}
 
 Given below is a brief description of the attributes used to show/hide the tick marks and values:
 
@@ -53,7 +53,7 @@ By default, the tick marks and tick values are rendered outside the gauge scale.
 
 An angular gauge rendered with the tick marks and tick values placed inside looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-tick-marks-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-tick-marks-example-2.js %}
 
 Given below is a brief description of the attributes used to place the tick marks and tick values inside the gauge:
 
@@ -80,7 +80,7 @@ Based on the data you provide, the gauge automatically decides the number of maj
 
 An angular gauge with the number of major and minor tick marks explicitly set to 12 and 4, respectively, looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-tick-marks-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-tick-marks-example-3.js %}
 
 Given below is a brief description of the attributes used to explicitly set the number of major and minor tick marks:
 
@@ -107,7 +107,7 @@ You can customize the appearance of the major and minor tick marks for their col
 
 An angular gauge rendered with the cosmetics for major and minor tick marks configured looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-tick-marks-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-tick-marks-example-4.js %}
 
 Given below is a brief description of the attributes used to configure the cosmetics for major and minor tick marks:
 
@@ -160,7 +160,7 @@ You can opt to show only every nth tick value on the angular gauge scale.
 
 An angular gauge configured to show only every alternate tick value looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-tick-marks-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-tick-marks-example-5.js %}
 
 Given below is a brief description of the attribute used to show only every nth tick value:
 
@@ -183,7 +183,7 @@ You can also show decimal numbers as tick values. For these decimal numbers, you
 
 An angular gauge configured to render one digit after the decimal point and force decimals looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-tick-marks-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-tick-marks-example-6.js %}
 
 Given below is a brief description of the attributes used to configure decimals for tick values:
 
@@ -208,7 +208,7 @@ Given below is a brief description of the attributes used to configure decimals 
 
 An angular gauge rendered with a distance of 25 pixels between the tick marks and values looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-tick-marks-example-7.js", "id": "7"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-tick-marks-example-7.js %}
 
 Given below is a brief description of the attribute used to set the tick value distance:
 

@@ -22,7 +22,7 @@ To create a thermometer gauge, you need to:
 
 A thermometer gauge created to monitor the temperature at the Central Cold Store looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-thermometer-gauge-simple-gauge-example-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-thermometer-gauge-simple-gauge-example-example-1.js %}
 
 Given below is a brief description of the attributes used to create a simple thermometer gauge:
 

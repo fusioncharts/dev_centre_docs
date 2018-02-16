@@ -26,7 +26,7 @@ You can have task bars on your chart that tell you what percentage of a task has
 
 A Gantt chart rendered with task bars indicating percent complete figures looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-task-bars-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-task-bars-example-1.js %}
 
 Given below is a brief description of the attributes used to render percent complete task bars:
 
@@ -56,7 +56,7 @@ By default, hover effects are enabled for Gantt charts. You can further customiz
 
 A Gantt chart with the hover effect for the tasks customized looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-task-bars-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-task-bars-example-2.js %}
 
 Given below is a brief description of the attributes used to customize the hover effect for tasks:
 
@@ -96,7 +96,7 @@ Given below is a brief description of the attributes used to customize the hover
 
 A Gantt chart with the hover effect customized for slacks looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-task-bars-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-task-bars-example-3.js %}
 
 Given below is a brief description of the attributes used to customize the hover effect for slacks:
 
@@ -120,7 +120,7 @@ Given below is a brief description of the attributes used to customize the hover
 
 A Gantt chart with task bars presented as task groups looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-task-bars-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-task-bars-example-4.js %}
 
 Given below is a brief description of the attributes used to represent a task as a parent group visually:
 
@@ -140,7 +140,7 @@ Given below is a brief description of the attributes used to represent a task as
 
 A Gantt chart having task bars with rounded corners looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-task-bars-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-task-bars-example-5.js %}
 
 Given below is a brief description of the attributes used to render task bars with rounded corners:
 
@@ -162,7 +162,7 @@ FusionCharts Suite XT allows you to add custom tool text for the task bars in a 
 
 A Gantt chart rendered with a custom tool text (using attributes and macros) for task bars is given below:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-task-bars-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-task-bars-example-6.js %}
 
 Given below is a brief description of the attributes used to render a custom tool text:
 

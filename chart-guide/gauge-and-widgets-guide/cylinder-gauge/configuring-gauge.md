@@ -26,7 +26,7 @@ By default, the cylinder gauge is filled using the default fill color. However, 
 
 A cylinder gauge with the fill color set to green looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-1.js %}
 
 Given below is the attribute used to define custom colors for cylinder fill:
 
@@ -48,7 +48,7 @@ By default, the chart automatically calculates the best-fit coordinates and size
 
 A cylinder gauge rendered using user-defined origin, radius, and height looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-2.js %}
 
 Given below is a brief description of the attributes used to customize the cylinder origin, radius, and height:
 
@@ -82,7 +82,7 @@ By default, the chart data value indicated by the cylinder gauge is shown  below
 
 A cylinder gauge rendered with the chart value hidden looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-3.js %}
 
 Given below is a brief description of the attribute used to show/hide the chart value:
 
@@ -105,7 +105,7 @@ Given below is a brief description of the attribute used to show/hide the chart 
 
 A cylinder gauge configured to hide all tick marks and tick values looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-4.js %}
 
 The cylinder gauge shown here is designed in a way that the user decides whether or not to render the tick marks and tick values. Selecting the check boxes below the chart will show the tick marks and values; clearing them hides tick marks and values again.
 
@@ -133,7 +133,7 @@ By default, the tick marks and tick values are rendered to the right of the gaug
 
 A cylinder gauge rendered with the tick marks and values positioned to the left looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-5.js %}
 
 Given below is the list of attributes used to customize the tick position:
 
@@ -153,7 +153,7 @@ Given below is the list of attributes used to customize the tick position:
 
 A cylinder gauge rendered with the number of tick marks explicitly specified looks this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-6.js %}
 
 Given below is the list of attributes used to customize the number of tick marks::
 
@@ -179,7 +179,7 @@ The cylinder gauge can automatically adjust the number of major ticks to a best 
 
 A cylinder gauge rendered with the automatic adjustment of tick marks disabled looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-7.js", "id": "7"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-7.js %}
 
 Given below is the list of attributes used to enable/disable the auto adjustment of tick marks:
 
@@ -201,7 +201,7 @@ You can opt to show only every nth tick value on the gauge, instead of showing a
 
 A cylinder gauge configured to show tick values for only every second major tick mark looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-8.js", "id": "8"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-8.js %}
 
 Given below is the list of attributes used to configure the tick value step:
 
@@ -221,7 +221,7 @@ Given below is the list of attributes used to configure the tick value step:
 
 A cylinder gauge rendered with the appearance of the tick marks customized looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-9.js", "id": "9"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-9.js %}
 
 Given below is the list of attributes used to configure tick value step:
 
@@ -275,7 +275,7 @@ We can set hover/touch effects for the cylinder gauge to boost visualization; it
 
 A cylinder gauge rendered with the hover effects applied looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-10.js", "id": "10"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-configuring-gauge-example-10.js %}
 
 Given below is the list of attributes used to configure hover effects for a cylinder gauge:
 

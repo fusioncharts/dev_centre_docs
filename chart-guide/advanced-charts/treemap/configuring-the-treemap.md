@@ -25,13 +25,13 @@ A simple treemap with __navigation bar__ is shown below :
 
 <p class="text-info"> Click the rectangles in each chart to traverse through the chart and see how the chart view changes. </p>
 
-{% embed_all {"source": "chart-guide-treemap-chart-configuring-the-treemap-chart-example-9.js", "id": "1"} %}
+{% embed_all chart-guide-treemap-chart-configuring-the-treemap-chart-example-9.js %}
 
 This treemap shows the global population by continent as of 2015 with their literacy rate.
 
 In the above chart when a child node is clicked, the clicked node and its subtree replaces the current root node. For example, when any node under Southeast Asia Region is clicked, the chart view changes to what is shown in the image below:
 
-![Treemap with Southeast Asia as the current node]({{ site.baseurl }}assets/images/chart-guide-treemap-chart-configuring-the-treemap-chart-image-2.png)
+![Treemap with Southeast Asia as the current node]({% site.baseurl %}/images/chart-guide-treemap-chart-configuring-the-treemap-chart-image-2.png)
 
 Observe that all the parent nodes are visible in the navigation bar and you can switch to any of them directly by clicking them.
 
@@ -147,7 +147,7 @@ The glow effect is useful when the data label font color and the rectangle fill 
 
 A sample treemap with the data labels customized is shown below:
 
-{% embed_all {"source": "chart-guide-treemap-chart-configuring-the-treemap-chart-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-treemap-chart-configuring-the-treemap-chart-example-2.js %}
 
 Given below is a brief description of the attributes used to customize the glow effect for data labels:
 

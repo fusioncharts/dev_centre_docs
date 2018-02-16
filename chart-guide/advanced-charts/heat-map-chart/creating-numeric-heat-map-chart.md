@@ -94,7 +94,7 @@ The following data will be used to categorize the rating for a feature as bad, a
 
 The numeric heat map chart thus rendered looks like this:
 
-{% embed_all {"source": "chart-guide-heat-map-chart-creating-numeric-heat-map-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-heat-map-chart-creating-numeric-heat-map-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to create a simple numeric heat map chart:
 
@@ -142,7 +142,7 @@ There is one more method to plot numeric based heat map charts that allows you t
 
 The above chart with pre-defined rows and columns looks like this:
 
-{% embed_all {"source": "chart-guide-heat-map-chart-creating-numeric-heat-map-chart-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-heat-map-chart-creating-numeric-heat-map-chart-example-2.js %}
 
 Given below is a brief description of the attributes used to pre-define rows and columns:
 

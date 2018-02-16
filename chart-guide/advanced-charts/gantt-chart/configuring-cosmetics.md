@@ -24,7 +24,7 @@ In this section, you will be shown how you can:
 
 A Gantt chart with task labels defined and shown looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-1.js %}
 
 Given below is a brief description of the attributes used to define and set the visibility of the task labels:
 
@@ -56,7 +56,7 @@ Given below is a brief description of the attributes used to define and set the 
 
 A Gantt chart that demonstrates how you can show and hide task start and end dates looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-2.js %}
 
 Given below is a brief description of the attributes used to show/hide task start and end dates:
 
@@ -88,7 +88,7 @@ Given below is a brief description of the attributes used to show/hide task star
 
 A Gantt chart with a process header defined and customized looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-3.js %}
 
 Given below is a brief description of the attributes used to add and customize process headers:
 
@@ -140,11 +140,11 @@ Given below is a brief description of the attributes used to add and customize p
 
 The Social Media Optimization Gantt chart that we have been looking at so far looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-4.js %}
 
 The above Gantt chart rendered with an additional "Owner" column looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-5.js %}
 
 
 Because the chart width is relatively small here, a scroll bar comes up and allows the users to scroll through the data table. You can increase the width of data table by:
@@ -173,7 +173,7 @@ In a Gantt chart, the hover effect is rendered as a vertical/horizontal band whe
 
 A Gantt chart with the hover effect customized globally looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-6.js %}
 
 Given below is a brief description of the attributes used to customize the hover effect globally.
 
@@ -197,7 +197,7 @@ Given below is a brief description of the attributes used to customize the hover
 
 A Gantt chart with the hover effect customized for all processes looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-7.js", "id": "7"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-7.js %}
 
 Given below is a brief description of the attributes used to customize the hover effect for processes:
 
@@ -229,7 +229,7 @@ Given below is a brief description of the attributes used to customize the hover
 
 A Gantt chart customized for the hover effect for categories looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-8.js", "id": "8"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-configuring-cosmetics-example-8.js %}
 
 Given below is a brief description of the attributes used to customize the hover effect for categories:
 

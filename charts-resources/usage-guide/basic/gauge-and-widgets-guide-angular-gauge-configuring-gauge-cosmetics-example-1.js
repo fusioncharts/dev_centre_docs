@@ -1,6 +1,5 @@
 {
     type: 'angulargauge',
-    renderAt: 'chart-container',
     width: '400',
     height: '250',
     dataFormat: 'json',
