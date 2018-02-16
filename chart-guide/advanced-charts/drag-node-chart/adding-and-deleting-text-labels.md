@@ -123,4 +123,4 @@ chartInstance.addEventListener('labeldeleted', function(e, a) {
 
 ```
 
-<p class="text-info">You can get the latest updated node and connector positions using JavaScript or by [submitting the updated positions]{% linkTo tutorials/chart-guide/drag-node-chart/updating-chart-data-on-server.md %} to a server-side script.</p>
+<p class="text-info">You can get the latest updated node and connector positions using JavaScript or by [submitting the updated positions]({% site.baseurl %}/chart-guide/advanced-charts/drag-node-chart/updating-chart-data-on-server "@@open-newtab") to a server-side script.</p>
