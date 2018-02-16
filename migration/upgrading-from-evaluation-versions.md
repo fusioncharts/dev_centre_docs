@@ -1,9 +1,8 @@
 ---
-permalink: getting-started/upgrading-from-evaluation-versions.html
-title: Upgrading from Evaluation Versions | FusionCharts
+title: Upgrade from Evaluation Versions | FusionCharts
 description: This section is for users who have used an evaluation version of FusionCharts in their application, and are now upgrading to a commercial license.
-heading: Upgrading from Evaluation Versions
-chartPresent: false
+heading: Upgrade from Evaluation Versions
+breadcrumb: [["Home", "/"], ["Upgrade from Evaluation Versions"]]
 ---
 
 This section is for users who have used an evaluation version of FusionCharts in their application, and are now upgrading to a commercial license. There is no feature limitation in the evaluation version of FusionCharts, except for the fact that all the charts are watermarked.

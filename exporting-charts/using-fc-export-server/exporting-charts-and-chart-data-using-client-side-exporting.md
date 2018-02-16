@@ -25,7 +25,7 @@ To enable the client-side export feature for your application, all you need to d
 Please note that, at present, this feature is supported only by the __Chrome__,  __Firefox__, and __IE >= 10__ browsers. The FusionCharts team is working to include support for other browsers also.
 </p>
 
-The sample chart below showcases the client-side export feature. As with server-side export, click ![image](/assets/images/exporting-as-image-and-pdf-export-button.jpg) from the top-right corner of the chart and select __Export as JPG__.
+The sample chart below showcases the client-side export feature. As with server-side export, click ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) from the top-right corner of the chart and select __Export as JPG__.
 
 {% embed_all getting-started-adding-interactivity-exporting-to-images-or-pdf-example-1.js %}
 
@@ -37,15 +37,15 @@ How do you know if the export was done on the client-side? The images below show
 		<th style="width: 90%"> <center> Network tab in the browser console: Server-side export </center> </th>		
 	</tr>
 	<tr>
-		<td style="width: 90"> ![image alt text Network tab: Client-side export](/assets/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-2.jpg){: .center-align .table-img} </td>
-		<td style="width: 90%"> ![image alt text Network tab: Server-side export](/assets/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-3.jpg){: .center-align .table-img} </td>
+		<td style="width: 90"> ![image alt text Network tab: Client-side export]({% site.baseurl %}/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-2.jpg){: .center-align .table-img} </td>
+		<td style="width: 90%"> ![image alt text Network tab: Server-side export]({% site.baseurl %}/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-3.jpg){: .center-align .table-img} </td>
 	</tr>
 </table>
 
 The graphic below details the steps that are involved in a client-side export:
 
 {:refdef: style="margin-left: auto; margin-right: auto; width: 6em"}
-![image alt text](/assets/images/exporting-to-images-or-pdf-client-side-exporting-steps.png)
+![image alt text]({% site.baseurl %}/images/exporting-to-images-or-pdf-client-side-exporting-steps.png)
 {: refdef}
 
 This feature uses the HTML5 API; therefore, it is important that modern browsers include support for:
