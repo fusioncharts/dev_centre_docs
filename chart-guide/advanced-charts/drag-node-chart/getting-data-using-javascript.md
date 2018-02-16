@@ -39,9 +39,9 @@ To understand this, the sample drag-node chart we will use looks like this:
 
 Now, we will make the following updates to this drag-node chart:
 
-* [Add a node]{% linkTo tutorials/chart-guide/drag-node-chart/adding-and-editing-nodes.md %}, __My New Location__, using the __Add a Node__ menu item.
+* [Add a node]({% site.baseurl %}/chart-guide/advanced-charts/drag-node-chart/adding-and-editing-nodes "@@open-newtab"), __My New Location__, using the __Add a Node__ menu item.
 
-* [Add a connector]{% linkTo tutorials/chart-guide/drag-node-chart/adding-and-editing-connectors.md %}, __Way to SM__, between "Santa Monica" and "My New Location", using the __Add a Connector__ menu item.
+* [Add a connector]({% site.baseurl %}/chart-guide/advanced-charts/drag-node-chart/adding-and-editing-connectors "@@open-newtab"), __Way to SM__, between "Santa Monica" and "My New Location", using the __Add a Connector__ menu item.
 
 
 The drag-node chart rendered after making these updates looks like this:

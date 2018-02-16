@@ -91,4 +91,4 @@ Given below is a brief description of the attribute used to set the algorithm:
     </tr>
 </table>
 
-Click [here]{% linkTo attrs.md chart=treemap %}{:target=’_blank’} for the complete list of attributes supported by the treemap.
+Click [here]({% site.baseurl %}/chart-attributes?chart=treeap "@@open-newtab") for the complete list of attributes supported by the treemap.

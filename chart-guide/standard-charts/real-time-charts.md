@@ -251,7 +251,7 @@ To do this, you can provide the incremental data to the chart in the following f
 &label=11:45&value=23|43|45&link=showdetail.asp?server=1%26time=1145|showdetail.asp?server=2%26time=1145|showdetail.asp?server=3%26time=1145
 
 ```
-The link has to be specified in the FusionCharts link format. The link in the above data has been URL Encoded because it contains special characters like `&`, `%`, etc.
+The link in the above data has been URL Encoded because it contains special characters like `&`, `%`, etc.
 
 ### The ToolText Attribute
 
@@ -303,7 +303,7 @@ After you have stopped updates for a chart, you can restart updates either by us
 
 ## Send Messages Pertinent
 
-For real-time charts that show the message logger, update various parameters for the message logger in real-time. All these parameters and their data format have been explained in the Message Logger section.
+For real-time charts that show the message logger, update various parameters for the message logger in real-time.
 
 # Multiple Datasets and Updates
 
@@ -851,7 +851,7 @@ var chartRef =  getChartFromId("myChartId");
 
 However, note that `getChartFromId()` has been deprecated.
 
-> You can call the JavaScript APIs of a chart only after it has rendered. You can use the **rendered** **event listener** to check if a chart has rendered.
+> You can call the JavaScript APIs of a chart only after it has rendered. You can use the [rendered event listener]({% site.baseurl %}/api/fusioncharts/fusioncharts-events "@@open-newtab") to check if a chart has rendered.
 
 Once you have obtained the reference to the chart, you can use any of the functions below on the chart's logger:
 
@@ -893,7 +893,7 @@ To do this, you will have to send the following command to the chart as part of 
 ```
 The above command clears all the data that is currently being shown on the chart. The chart now bears an empty canvas - ready to accept new incremental values from the real-time data provider page.
 
-In the sample rendered below, the `feedData()` method (covered in the section on [feeding and retrieving data](https://www.fusioncharts.com/dev/chart-guide/real-time-charts/feeding-and-retrieving-data-through-api.html)) is used to send the clearing command from the server to the chart.
+In the sample rendered below, the `feedData()` method is used to send the clearing command from the server to the chart.
 
 A real-time chart that clears all its data after every 10th update looks like this:
 
@@ -1149,7 +1149,7 @@ The details of these objects are explained below:
 
     * **sender** : A FusionCharts JavaScript Object reference to the chart that has raised the event. `argumentsObject`, the second argument, contains details of the event fired. Depending on the type of event raised, the properties of the object vary.
 
-For more information on simple and advanced events and the `argumentsObject` for each event, refer to the FusionCharts Events API page.
+For more information on simple and advanced events and the `argumentsObject` for each event, refer to the [FusionCharts Events API]({% site.baseurl %}/api/fusioncharts/fusioncharts-events "@@open-newtab") page.
 
 ## Real-time Events
 
