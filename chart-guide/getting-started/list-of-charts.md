@@ -98,7 +98,7 @@ Chart Type|JavaScript Alias|
 [Real-time Bulb]({% site.baseurl %}/chart-attributes?chart=bulb "@@open-newtab")|bulb|
 [Real-time Cylinder]({% site.baseurl %}/chart-attributes?chart=cylinder "@@open-newtab")|cylinder|
 [Real-time Horizontal LED]({% site.baseurl %}/chart-attributes?chart=hled "@@open-newtab")|hled|
-[Real-time Horizontal Linear]({% site.baseurl %}/chart-attributes?chart=hlineargauge "@@open-newtab")|hlineargauge|
+[Real-time Horizontal Linear]({% site.baseurl %}/chart-attributes?chart=HLinearGauge "@@open-newtab")|hlineargauge|
 [Real-time Thermometer]({% site.baseurl %}/chart-attributes?chart=thermometer "@@open-newtab")|thermometer|
 [Real-time Vertical LED]({% site.baseurl %}/chart-attributes?chart=vled "@@open-newtab")|vled|
 
@@ -144,8 +144,8 @@ It offers a set of advanced charts for domain-specific usage like network diagra
 
 Chart Type|JavaScript Alias|
 -|-
-[Logarithmic Column 2D Chart]({% site.baseurl %}/chart-attributes?chart=logmscolumn2d "@@open-newtab")|logmscolumn2d|
-[Logarithmic Line 2D Chart]({% site.baseurl %}/chart-attributes?chart=logmsline "@@open-newtab")|logmsline|
+[Logarithmic Column 2D Chart]({% site.baseurl %}/chart-attributes?chart=LogMSColumn2D "@@open-newtab")|logmscolumn2d|
+[Logarithmic Line 2D Chart]({% site.baseurl %}/chart-attributes?chart=LogMSLine "@@open-newtab")|logmsline|
 
 ### Spline Charts
 
@@ -168,9 +168,9 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-[Inverse y-Axis Area 2D Chart]({% site.baseurl %}/chart-attributes?chart=inversemsarea "@@open-newtab")|inversemsarea|
-[Inverse y-Axis Column 2D Chart]({% site.baseurl %}/chart-attributes?chart=inversemscolumn2d "@@open-newtab")|inversemscolumn2d|
-[Inverse y-Axis Line 2D Chart]({% site.baseurl %}/chart-attributes?chart=inversemsline "@@open-newtab")|inversemsline|
+[Inverse y-Axis Area 2D Chart]({% site.baseurl %}/chart-attributes?chart=InverseMSArea "@@open-newtab")|inversemsarea|
+[Inverse y-Axis Column 2D Chart]({% site.baseurl %}/chart-attributes?chart=InverseMSColumn2D "@@open-newtab")|inversemscolumn2d|
+[Inverse y-Axis Line 2D Chart]({% site.baseurl %}/chart-attributes?chart=InverseMSLine "@@open-newtab")|inversemsline|
 
 ### Drag-able Charts
 
@@ -190,8 +190,8 @@ Chart Type|JavaScript Alias|
 [Box and Whisker Chart]({% site.baseurl %}/chart-attributes?chart=boxandwhisker2d "@@open-newtab")|boxandwhisker2d|
 [Candle-Stick Chart]({% site.baseurl %}/chart-attributes?chart=candlestick "@@open-newtab")|candlestick|
 [Drag Node Chart]({% site.baseurl %}/chart-attributes?chart=dragnode "@@open-newtab")|dragnode|
-[Step Line Charts]({% site.baseurl %}/chart-attributes?chart=msstepLine "@@open-newtab")|msstepLine|
-[Multi-axis Line Chart]({% site.baseurl %}/chart-attributes?chart=multiaxisline "@@open-newtab")|multiaxisline|
+[Step Line Charts]({% site.baseurl %}/chart-attributes?chart=msstepline "@@open-newtab")|msstepLine|
+[Multi-axis Line Chart]({% site.baseurl %}/chart-attributes?chart=MultiAxisLine "@@open-newtab")|multiaxisline|
 [Multi-level Pie Chart]({% site.baseurl %}/chart-attributes?chart=multilevelpie "@@open-newtab")|multilevelpie|
 [Select-Scatter Chart]({% site.baseurl %}/chart-attributes?chart=selectscatter "@@open-newtab")|selectscatter|
 [Waterfall / Cascade Chart]({% site.baseurl %}/chart-attributes?chart=waterfall2d "@@open-newtab")|waterfall2d|
