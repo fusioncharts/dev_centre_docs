@@ -84,7 +84,7 @@ Given below is a brief description of the attributes needed to configure real-ti
   </tr>
   <tr>
     <td>`dataStamp`</td>
-    <td>Constantly changing data stamp that can be added to the real-time data URL, so as to maintain a state. For more information, read the {% linkTo tutorials/chart-guide/real-time-charts/adding-data-stamp.md %} article.</td>
+    <td>Constantly changing data stamp that can be added to the real-time data URL, so as to maintain a state. </td>
   </tr>
 </table>
 

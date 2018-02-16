@@ -187,12 +187,6 @@ An angular gauge configured to update the tool-tip text for the dial in real-tim
 
 The above sample replaces the hard-coded value with the macro `$value`. Now, whenever someone will roll-over the dial, the current value of the dial will be displayed along with the text set in the tooltext attribute of dial element.
 
-For the complete understanding of the tooltip macros or a detail list of available macros please refer to [this]{% linkTo tutorials/configuring-your-chart-basic/tooltip-macros/introduction-to-tooltip-macros.md %} document.
-
-
-
-
-
 ## Adding Multiple Dials on the Gauge
 
 You can add any number of dials to an angular gauge, with each dial configured to have its own value and individual properties.
@@ -315,6 +309,3 @@ Given below is a brief description of the attribute used to configure an ID for 
     <td>It is used to specify a unique identification for a dial on the gauge, e.g. Dial 1. This attribute belongs to the `dial` object, which in turn belongs to the `dials` object.</td>
   </tr>
 </table>
-
-
-<p class="text-info">To learn how to create real-time angular gauges please refer to {% linkTo tutorials/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.md %} section.</p>
