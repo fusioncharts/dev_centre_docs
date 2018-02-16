@@ -28,4 +28,3 @@ JavaScript embedding code:
 Data for this chart:
 
 {% embed_data getting-started-your-first-charts-building-your-map-example-1.js %}
-
