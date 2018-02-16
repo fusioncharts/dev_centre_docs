@@ -32,7 +32,7 @@ In this section, you will be shown how you can:
 
 A linear gauge configured for the cosmetic properties of the pointer looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-1.js %}
 
 Given below is a brief description of the attributes used to configure the pointer cosmetic properties:
 
@@ -75,7 +75,7 @@ These attributes belong to the `pointer` object, which in turn belongs to the `p
 
 A linear gauge with the pointer having a tool-text and pointing to an external link looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-2.js %}
 
 Given below is a brief description of the attributes used to add a tool-text and an external link for the pointer:
 
@@ -102,7 +102,7 @@ These attributes belong to the `pointer` object, which in turn belongs to the `p
 
 A linear gauge rendered with two pointers, showing the server CPU utilization for a transaction server and a web server looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-3.js %}
 
 To add multiple pointers, you only need to create multiple instances of the `pointer` object, which belongs to the `pointers` object.
 
@@ -111,7 +111,7 @@ To add multiple pointers, you only need to create multiple instances of the `poi
 
 A linear gauge rendered with the pointer value configured looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-4.js %}
 
 The gauge shown above is rendered with two check boxes below it: __Show Value__ and __Place Value Above Pointer__. If you select the __Show Value__ check box, the value of the pointer is shown; if you clear it, the value is hidden. If you select the __Place Value Above Pointer__ check box, the value is placed above the pointer; if you clear it, the value is shown below.
 
@@ -142,7 +142,7 @@ You can configure the linear gauge to show the pointer along the top edge or the
 
 A linear gauge that allows you to configure the pointer position looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-5.js %}
 
 The gauge shown above is rendered with two check boxes below it: __Pointer on Top__ and __Pointer at Bottom__. If you select the __Pointer on Top__ check box, the pointer is shown along the top edge of the gauge; if you select the __Pointer at Bottom__ check box, the pointer is shown along the bottom edge of the gauge.
 
@@ -167,7 +167,7 @@ This attribute belongs to the `chart` object.
 
 A linear gauge configured using the gauge gradient mix looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-6.js %}
 
 Given below is a brief description of the attributes used to configure the gauge gradient mix:
 
@@ -191,7 +191,7 @@ Given below is a brief description of the attributes used to configure the gauge
 
 A linear gauge configured for border cosmetic properties looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-7.js", "id": "7"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-7.js %}
 
 Given below is a brief description of the attributes used to configure gauge borders:
 
@@ -223,7 +223,7 @@ Given below is a brief description of the attributes used to configure gauge bor
 
 A linear gauge configured to hide gauge labels looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-8.js", "id": "8"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-8.js %}
 
 Look at the __Show Labels?__ check box rendered below the above linear gauge. If you select this check box, you can see the label for each color range on the gauge scale. If you clear the check box, the labels are hidden.
 
@@ -249,7 +249,7 @@ You can use hover effects to improve the visual representation of your gauge; yo
 
 A linear gauge configured for hover effects looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-9.js", "id": "9"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-configuring-gauge-cosmetics-example-9.js %}
 
 Hover your mouse pointer above the gauge pointer and observe how the cosmetics of the pointer change.
 

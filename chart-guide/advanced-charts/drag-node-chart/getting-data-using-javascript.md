@@ -31,7 +31,7 @@ alert(JSON.stringify(jsonRtn));
 
 To understand this, the sample drag-node chart we will use looks like this:
 
-{% embed_all {"source": "chart-guide-drag-node-chart-getting-data-using-javascript-example.js", "id": "1"} %}
+{% embed_all chart-guide-drag-node-chart-getting-data-using-javascript-example.js %}
 
 
 
@@ -46,7 +46,7 @@ Now, we will make the following updates to this drag-node chart:
 
 The drag-node chart rendered after making these updates looks like this:
 
- ![Updated Dragnode Chart]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-getting-data-using-javascript-image-1.jpg)
+ ![Updated Dragnode Chart]({% site.baseurl %}/images/chart-guide-drag-node-chart-getting-data-using-javascript-image-1.jpg)
 
 Now if you wish to get the current data using the code `var jsonRtn = ourChart.getJSONData(); alert(JSON.stringify(jsonRtn));`, the updated data will be shown. The modified part of the updated data is shown below:
 

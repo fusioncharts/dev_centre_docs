@@ -10,7 +10,7 @@ As an example, we will create a bullet graph to show last month’s revenue, whe
 
 A horizontal bullet graph to plot the actual revenue and the target revenue looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bullet-graph-creating-bullet-graphs-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-bullet-graph-creating-bullet-graphs-example-1.js %}
 
 To create a bullet graph, you will need to:
 

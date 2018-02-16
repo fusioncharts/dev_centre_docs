@@ -1,7 +1,6 @@
 {
     type: 'hled',
     renderAt: 'chart-container',
-    id: 'myHLED1',
     width: '300',
     height: '200',
     dataFormat: 'json',

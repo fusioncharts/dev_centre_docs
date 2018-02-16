@@ -20,7 +20,7 @@ In a funnel chart, the data is stream-lined, i.e., each funnel slice in the funn
 
 A streamline funnel chart to show the purchase-conversion analysis looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-funnel-chart-introduction-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-funnel-chart-introduction-example-1.js %}
 
 ## Salient Features
 

@@ -28,7 +28,7 @@ You can show period blocks on a spark line chart using colored bands, helping yo
 
 A spark line chart configured to show a period block looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to define period blocks:
 
@@ -66,7 +66,7 @@ By default, the spark line chart highlights the open, close, high, and low point
 
 A spark line chart configured for the colors of the open, close, high, and low points looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-2.js %}
 
 Given below is a brief description of the attributes used to define colors for the points:
 
@@ -98,7 +98,7 @@ Given below is a brief description of the attributes used to define colors for t
 
 A spark line chart with the open, close, high, and low anchor points hidden looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-3.js %}
 
 The chart is rendered with four check boxes below the chart: __Show Open Anchor?__, __Show Close Anchor?__, __Show High Anchor?__, and __Show Low Anchor?__. Selecting the check boxes shows the respective anchor points, clearing them hides the respective anchor points.
 
@@ -132,7 +132,7 @@ Given below is a brief description of the attributes used to show/hide anchors:
 
 A spark line chart configured to hide the anchor point values looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-4.js %}
 
 The chart is rendered with four check boxes below the chart: __Show Open Value?__, __Show Close Value?__, __Show High Value?__, and __Show Low Value?__. Selecting the check boxes shows the respective anchor values, clearing them hides the respective anchor values.
 
@@ -164,7 +164,7 @@ Given below is a brief description of the attributes used to show/hide anchor po
 
 A spark line chart configured for line cosmetics looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-5.js %}
 
 Given below is a brief description of the attributes used to configure line cosmetics:
 
@@ -192,7 +192,7 @@ Given below is a brief description of the attributes used to configure line cosm
 
 A spark line chart configured for the anchor cosmetics looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-6.js %}
 
 Given below is a brief description of the attributes used to configure anchor cosmetics:
 
@@ -231,7 +231,7 @@ You can also show only points, representing the data values, on the chart, witho
 
 A spark line chart configured to show only points, without any line segments, looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-7.js", "id": "7"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-7.js %}
 
 Given below is a brief description of the attribute used to hide line segments:
 
@@ -254,7 +254,7 @@ Given below is a brief description of the attribute used to hide line segments:
 
 A spark line chart rendered with a trend-line looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-8.js", "id": "8"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-8.js %}
 
 Given below is a brief description of the attributes used to render a trend-line:
 
@@ -278,7 +278,7 @@ Given below is a brief description of the attributes used to render a trend-line
 
 A spark line chart with the cosmetic properties of trend-lines configured looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-9.js", "id": "9"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-9.js %}
 
 Given below is a brief description of the attributes used to configure trend-line cosmetics:
 
@@ -318,7 +318,7 @@ Given below is a brief description of the attributes used to configure trend-lin
 
 A spark line chart rendered with a trend-zone looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-10.js", "id": "10"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-10.js %}
 
 Given below is a brief description of the attributes used to render a trend-zone:
 
@@ -352,7 +352,7 @@ You can use hover effects to improve the visual representation of your chart.
 
 A spark line chart configured to enable hover effects looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-11.js", "id": "11"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-line-chart-example-11.js %}
 
 Given below is a brief description of the attributes used to configure hover effects:
 

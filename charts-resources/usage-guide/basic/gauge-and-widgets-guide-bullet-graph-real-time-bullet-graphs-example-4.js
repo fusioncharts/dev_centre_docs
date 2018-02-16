@@ -1,6 +1,5 @@
 {
     type: 'hbullet',
-    renderAt: 'chart-container',
     width: '450',
     height: '85',
     dataFormat: 'json',

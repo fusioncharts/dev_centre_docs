@@ -48,7 +48,7 @@ To create a bulb gauge, you need to:
 
 A bulb gauge created to monitor the temperature status of deep freezers looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bulb-gauge-simple-gauge-example-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-bulb-gauge-simple-gauge-example-example-1.js %}
 
 Given below is a brief description of the attributes used to create a simple bulb gauge:
 

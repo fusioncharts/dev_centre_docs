@@ -10,7 +10,7 @@ As an example, we will create a spark column chart that shows the monthly revenu
 
 A spark column chart that shows the monthly revenue looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-creating-spark-column-chart-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-creating-spark-column-chart-example-1.js %}
 
 Given below is a brief description of the attribute used to create a simple spark column chart:
 

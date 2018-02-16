@@ -12,7 +12,7 @@ Trend points are elements that you use to show a target value on the gauge. For 
 
 An angular gauge rendered with a trend-point showing last year’s average customer satisfaction score looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-adding-trend-points-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-adding-trend-points-example-1.js %}
 
 Given below is a brief description of the attributes used to add and customize a simple trend point to the gauge:
 
@@ -76,7 +76,7 @@ For each trend point, you can also show a triangular marker and customize it.
 
 An angular gauge rendered with a marker for the trend point looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-adding-trend-points-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-adding-trend-points-example-2.js %}
 
 Given below is a brief description of the attributes used to show and customize a trend marker:
 
@@ -118,7 +118,7 @@ You can also create trend-arcs to represent a range of values, instead of a sing
 
 An angular gauge rendered with a trend arc looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-adding-trend-points-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-adding-trend-points-example-3.js %}
 
 Given below is a brief description of the attributes used to create a trend arc:
 
@@ -146,7 +146,7 @@ Given below is a brief description of the attributes used to create a trend arc:
 
 An angular gauge rendered with trend arc customized for its functional and cosmetic properties looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-adding-trend-points-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-adding-trend-points-example-4.js %}
 
 Given below is a brief description of the attributes used to customize a trend arc:
 

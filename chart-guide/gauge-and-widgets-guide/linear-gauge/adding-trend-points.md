@@ -20,7 +20,7 @@ In this section, you will be shown how you can:
 
 A linear gauge rendered with two trend-points showing the optimum zone of operation for a web server looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-adding-trend-points-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-adding-trend-points-example-1.js %}
 
 Given below is a brief description of the attributes used to add and customize the trend-points for a linear gauge:
 
@@ -63,7 +63,7 @@ These attributes belong to the `points` object, which in turn belongs to the `tr
 
 A linear gauge rendered with two trend-points with  markers looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-adding-trend-points-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-adding-trend-points-example-2.js %}
 
 Given below is a brief description of the attributes used to add and customize a trend-point with a marker:
 
@@ -98,7 +98,7 @@ Trend-zones are used to represent a range of values, instead of a single value, 
 
 A linear gauge rendered with a trend-zone looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-adding-trend-points-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-adding-trend-points-example-3.js %}
 
 Given below is a brief description of the attributes used to add a trend-zone to the linear gauge:
 

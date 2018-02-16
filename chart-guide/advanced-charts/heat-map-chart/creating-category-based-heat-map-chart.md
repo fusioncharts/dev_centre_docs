@@ -14,7 +14,7 @@ As an example, we will create a category-based heat map chart that shows the ave
 
 The category-based heat map chart thus rendered looks like this:
 
-{% embed_all {"source": "chart-guide-heat-map-chart-creating-category-based-heat-map-chart-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-heat-map-chart-creating-category-based-heat-map-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to create a category-based heat map chart:
 

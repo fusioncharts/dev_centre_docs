@@ -31,7 +31,7 @@ This event is triggered every time the gauge updates itself with new data, in on
 
 A real-time thermometer gauge configured to listen to the `realTimeUpdateComplete()` event is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-gauges-using-events-example-1.js", "id": "1"} %}
+{% embed_all advanced-charting-real-time-gauges-using-events-example-1.js %}
 
 The gauge displays the current temperature at Central Cold Store. When the temperature changes, the event `realTimeUpdateComplete()` is triggered. Consequently, the gauge and the annotation are updated.
 
@@ -62,7 +62,7 @@ This event is triggered when an error occurs while a gauge is updated in real-ti
 
 A thermometer gauge configured to listen to the `realTimeUpdateError()` event is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-gauges-using-events-example-2.js", "id": "2"} %}
+{% embed_all advanced-charting-real-time-gauges-using-events-example-2.js %}
 
 Here, the URL is set to `thermometerData.php`  which does not exist. Hence, the page returns an error and this is captured by the `realTimeUpdateError()` event that displays an error message.
 

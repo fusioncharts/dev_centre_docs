@@ -28,7 +28,7 @@ In this section, you will be shown how you can:
 
 A bullet graph with the color properties customized looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-1.js %}
 
 Given below is a brief description of the attributes used to customize plot and target color properties:
 
@@ -60,7 +60,7 @@ Given below is a brief description of the attributes used to customize plot and 
 
 A bullet graph with the border properties customized looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-2.js %}
 
 Given below is a brief description of the attributes used to customize plot and target border properties:
 
@@ -94,7 +94,7 @@ By default, the chart automatically decides the width/height (width in case of a
 
 A horizontal bullet graph with the height of the plot and target bar customized looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-3.js %}
 
 Given below is a brief description of the attributes used to customize the plot and target height:
 
@@ -122,7 +122,7 @@ You can configure the color range to be filled with a gradient mix instead of a 
 
 A horizontal bullet graph configured for the color range properties looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-4.js %}
 
 Given below is a brief description of the attributes used to configure the color properties for the color range:
 
@@ -164,7 +164,7 @@ Given below is a brief description of the attributes used to configure the color
 
 A horizontal bullet graph with  the shadow effect enabled looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-5.js %}
 
 The above chart is rendered with a __Show Shadow ?__ check box. Selecting this check box will enable the shadow effect for the bullet graph, deselecting it will disable the effect.
 
@@ -190,7 +190,7 @@ In a horizontal bullet graph, by default, the tick marks are rendered below the 
 
 A horizontal bullet graph with the tick/value visibility and positioning  customized looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-6.js %}
 
 The above chart is rendered with three check boxes: "Show Tick Mark?" - Selecting it will show the tick marks, deselecting it will hide them, “Show Tick Value?” - Selecting it will show the tick values, deselecting it will hide them, “Tick on Top?” - Selecting it will show the tick marks above the graph, deselecting it will show them below.
 
@@ -222,7 +222,7 @@ By default, the number of major and minor tick marks is determined by the chart 
 
 A bullet graph with the number and cosmetics of major and minor tick marks customized looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-7.js", "id": "7"} %}
+{% embed_all gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-7.js %}
 
 Given below is a brief description of the attributes used to customize the tick marks:
 
@@ -278,7 +278,7 @@ Given below is a brief description of the attributes used to customize the tick 
 
 A bullet graph rendered with a dot as the plot instead of the filled bar looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-8.js", "id": "8"} %}
+{% embed_all gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-8.js %}
 
 Given below is a brief description of the attribute used to show a dot instead of the filled bar:
 
@@ -298,7 +298,7 @@ Given below is a brief description of the attribute used to show a dot instead o
 
 A horizontal bullet graph with the chart value hidden looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-9.js", "id": "9"} %}
+{% embed_all gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-9.js %}
 
 The chart above is rendered with a Show Value? check box. Selecting this check box will show the chart value, deselecting it will hide the value.
 
@@ -322,7 +322,7 @@ You can use hover effects to improve the visual representation of your gauge.
 
 A horizontal bullet graph with hover effects enabled looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-10.js", "id": "10"} %}
+{% embed_all gauge-and-widgets-guide-bullet-graph-configuring-bullet-graph-example-10.js %}
 
 Given below is a brief description of the attributes used to enable and configure the hover effect:
 

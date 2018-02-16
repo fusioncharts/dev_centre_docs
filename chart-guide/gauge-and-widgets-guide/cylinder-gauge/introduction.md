@@ -20,7 +20,7 @@ In this section, you will be introduced to:
 
 A simple example of a cylinder gauge has been showcased below:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-introduction-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-introduction-example-1.js %}
 
 The cylinder gauge shown here has been designed to monitor the diesel level in the generator at Bakersfield Central.
 
@@ -40,7 +40,7 @@ A cylinder gauge chart consists of the following elements:
 
 Here we’ll see each of them in detail. Let’s first have a look at a standard cylinder chart enlisting the various basic components:
 
-![image cylinder-gauge]({{ site.baseurl }}assets/images/cylinder-gauge-introduction-1.jpg)
+![image cylinder-gauge]({% site.baseurl %}/images/cylinder-gauge-introduction-1.jpg)
 
 ### Cylinder Fill
 

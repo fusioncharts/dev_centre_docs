@@ -26,7 +26,7 @@ Vertical scrolling is enabled by default depending on the height of the chart. I
 
 A Gantt chart with vertical scrolling disabled looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-adding-scroll-to-chart-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-adding-scroll-to-chart-example-1.js %}
 
 Given below is a brief description of the attribute used to enable/disable vertical scrolling:
 
@@ -49,7 +49,7 @@ The data table automatically starts to scroll when you add data columns that do 
 
 A Gantt chart with a scroll rendered for the data table looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-adding-scroll-to-chart-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-adding-scroll-to-chart-example-2.js %}
 
 
 
@@ -69,7 +69,7 @@ By default, the Gantt pane never automatically scrolls, unless you explicitly sp
 
 A Gantt chart rendered to enable scrolling for the Gantt pane looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-adding-scroll-to-chart-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-adding-scroll-to-chart-example-3.js %}
 
 Given below is a brief description of the attributes used to enable scrolling for the Gantt pane:
 
@@ -131,7 +131,7 @@ You can configure several cosmetic properties for the scroll bar.
 
 A Gantt chart with the scroll cosmetic properties configured looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-adding-scroll-to-chart-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-adding-scroll-to-chart-example-4.js %}
 
 Given below is a brief description of the attributes used to configure scroll cosmetics:
 
@@ -178,7 +178,7 @@ For the Gantt chart, you can specify the date from where the chart will initiall
 
 The Social Media Optimization Gantt chart, that starts from Aug’14, configured to start rendering from Sept’14 looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-adding-scroll-to-chart-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-adding-scroll-to-chart-example-5.js %}
 
 Given below is a brief description of the attribute used to set the date from which the chart will initially render:
 

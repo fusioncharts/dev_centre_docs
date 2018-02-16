@@ -22,7 +22,7 @@ A Gantt chart is a date/time-based chart that allows you to plot tasks visually 
 
 A typical FusionCharts Suite XT Gantt chart looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-introduction-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-introduction-example-1.js %}
 
 ## Features of the Gantt Chart
 
@@ -96,9 +96,9 @@ A Gantt chart consists of the following elements:
 
 The images below show a standard Gantt chart with a few of the above elements labeled:
 
-![Gantt Chart 1]({{ site.baseurl }}assets/images/gauge-and-widgets-guide-gantt-chart-introduction-image-1.gif)
+![Gantt Chart 1]({% site.baseurl %}/images/gauge-and-widgets-guide-gantt-chart-introduction-image-1.gif)
 
-![Gantt Chart 2]({{ site.baseurl }}assets/images/gauge-and-widgets-guide-gantt-chart-introduction-image-2.gif)
+![Gantt Chart 2]({% site.baseurl %}/images/gauge-and-widgets-guide-gantt-chart-introduction-image-2.gif)
 
 ### Categories and Sub-categories (Dates) on the Visual Time-line
 

@@ -20,7 +20,7 @@ As an example, we will add milestones to the "Social Media Optimization" Gantt c
 
 A Gantt chart with milestones added looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-adding-milestones-to-a-chart-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-adding-milestones-to-a-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to add a milestone:
 
@@ -55,7 +55,7 @@ Given below is a brief description of the attributes used to add a milestone:
 
   You can add custom labels for milestones on a Gantt chart, as shown in the chart below:
 
-  {% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-adding-milestones-to-a-chart-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-adding-milestones-to-a-chart-example-2.js %}
 
   Given below is a brief description of the attributes used to add custom labels for milestones:
 

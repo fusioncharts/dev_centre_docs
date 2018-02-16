@@ -24,7 +24,7 @@ You can show period blocks on the chart using colored bands. This helps you easi
 
 A spark column chart rendered with a period block of three months looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-column-chart-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-column-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to configure a period block:
 
@@ -54,7 +54,7 @@ By default, the spark column chart highlights, using a default color,  the highe
 
 A spark column chart with the color of the high and low columns configured looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-column-chart-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-column-chart-example-2.js %}
 
 Given below is a brief description of the attributes used to configure the high and low columns:
 
@@ -80,7 +80,7 @@ Given below is a brief description of the attributes used to configure the high 
 
 A spark column chart rendered with a trend-line looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-column-chart-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-column-chart-example-3.js %}
 
 Given below is a brief description of the attributes used to render a trend-line:
 
@@ -104,7 +104,7 @@ Given below is a brief description of the attributes used to render a trend-line
 
 A spark column chart with the cosmetic properties of trend-lines configured looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-column-chart-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-column-chart-example-4.js %}
 
 Given below is a brief description of the attributes used to configure trend-line cosmetics:
 
@@ -144,7 +144,7 @@ Given below is a brief description of the attributes used to configure trend-lin
 
 A spark column chart rendered with a trend-zone looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-column-chart-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-column-chart-example-5.js %}
 
 Given below is a brief description of the attributes used to render a trend-zone:
 
@@ -178,7 +178,7 @@ You can use hover effects to improve the visual representation of your gauge.
 
 A spark columnchart configured to enable hover effects looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-charts-configuring-spark-column-chart-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-spark-charts-configuring-spark-column-chart-example-6.js %}
 
 Given below is a brief description of the attributes used to configure the hover effect:
 

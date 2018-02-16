@@ -22,11 +22,11 @@ Icon legend allows us to display single color icons for numeric ranges. By defau
 
 A simple icon legend looks as shown in the image below:
 
-![Icon Legend]({{ site.baseurl }}assets/images/chart-guide-heat-map-chart-legend-options-image-1.jpg)
+![Icon Legend]({% site.baseurl %}/images/chart-guide-heat-map-chart-legend-options-image-1.jpg)
 
 A simple heat map chart rendered with an icon legend looks like this:
 
-{% embed_all {"source": "chart-guide-heat-map-chart-legend-options-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-heat-map-chart-legend-options-example-1.js %}
 
 Given below is a brief description of the attribute used to specify the color for each icon in the legend:
 
@@ -58,7 +58,7 @@ Icon legends are interactive. You  can click a legend item to show or hide all t
 
 A heat map chart rendered with all "average" ratings hidden looks as shown in the image below:
 
-![Average Ratings]({{ site.baseurl }}assets/images/chart-guide-heat-map-chart-legend-options-image-2.jpg)
+![Average Ratings]({% site.baseurl %}/images/chart-guide-heat-map-chart-legend-options-image-2.jpg)
 
 
 ## Working with the Gradient Legend
@@ -67,11 +67,11 @@ Gradient legend is a pane of blended colors derived from the `colorRange` defini
 
 A simple gradient legend is looks as shown in the image below:
 
-![Gradient Legend]({{ site.baseurl }}assets/images/chart-guide-heat-map-chart-legend-options-image-3.jpg)
+![Gradient Legend]({% site.baseurl %}/images/chart-guide-heat-map-chart-legend-options-image-3.jpg)
 
 A heat map chart rendered with a gradient legend looks like this:
 
-{% embed_all {"source": "chart-guide-heat-map-chart-legend-options-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-heat-map-chart-legend-options-example-2.js %}
 
 Given below is a brief description of the attributes used to configure a gradient legend:
 
@@ -107,7 +107,7 @@ The default gradient legend is rendered using several different colors. However,
 
 A single-color gradient legend looks as shown in the image below:
 
-![Single Color Gradient Legend]({{ site.baseurl }}assets/images/chart-guide-heat-map-chart-legend-options-image-4.jpg)
+![Single Color Gradient Legend]({% site.baseurl %}/images/chart-guide-heat-map-chart-legend-options-image-4.jpg)
 
 The code snippet needed to show a single-color gradient legend is given below:
 
@@ -140,4 +140,4 @@ For example, in a numeric range 0-10, you may want to show the numbers between 5
 
 A chart with data plots only in the range of 5 and 9 shown looks like this:
 
-![Chart with fixed range]({{ site.baseurl }}assets/images/chart-guide-heat-map-chart-legend-options-image-5.jpg)
+![Chart with fixed range]({% site.baseurl %}/images/chart-guide-heat-map-chart-legend-options-image-5.jpg)
