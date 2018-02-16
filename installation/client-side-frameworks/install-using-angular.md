@@ -1,7 +1,7 @@
 ---
-title: Install using Angular JS| FusionCharts
+title: Install using Angular| FusionCharts
 description: FusionCharts Suite XT is a JavaScript library that runs on your desktop/mobile web browsers. This article talks about steps to install using angular js
-heading: Angular JS
+heading: Angular
 breadcrumb: [["Home", "/"], ["Angular JS"]]
 ---
 
