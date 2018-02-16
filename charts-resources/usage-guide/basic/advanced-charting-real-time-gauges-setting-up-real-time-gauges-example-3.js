@@ -20,7 +20,7 @@
             "gaugeBorderThickness": "2",
             "gaugeBorderAlpha": "30",
             "thmOriginX": "100",
-            "dataStreamURL": "../../../resources/php/advanced-charting-real-time-gauges-setting-up-real-time-gauges-php-2.php",
+            "dataStreamURL": "https://static.fusioncharts.com/sample/dev2.0/advanced-charting-real-time-gauges-setting-up-real-time-gauges-php-2.php",
             "refreshInterval": "5",
             "theme": "fint"
         },

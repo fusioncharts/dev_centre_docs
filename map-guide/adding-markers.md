@@ -26,7 +26,7 @@ This is what we did in the above data structure
 
 * The `markers` object contains an array of `items`. Each item corresponds to a specific marker on the map.
 
-* Individual markers have a unique `id` which you can use to reference the marker later. They have a `shapeId` which specifies the shape of the marker. We have set it to `triangle` in the above example. Possible values are `arc` , `circle` `polygon` and `image`. For a list of all possible attributes you can use for the `markers` object click [here]{% linkTo map-reference/attribute-reference.md %}.
+* Individual markers have a unique `id` which you can use to reference the marker later. They have a `shapeId` which specifies the shape of the marker. We have set it to `triangle` in the above example. Possible values are `arc` , `circle` `polygon` and `image`.
 
 * Each marker element also has a `x` and `y` co-ordinate and label text stored with `label` as key.
 
@@ -359,4 +359,4 @@ The HTML code used to build the sample is given below
 </html>
 ```
 
-With this you have learnt how to create connectors and customize them to suit your needs. For a detailed list of all the attributes that you can use to customize markers and connectors visit the {% linkTo map-reference/attribute-reference.md %} page.
+With this you have learnt how to create connectors and customize them to suit your needs.

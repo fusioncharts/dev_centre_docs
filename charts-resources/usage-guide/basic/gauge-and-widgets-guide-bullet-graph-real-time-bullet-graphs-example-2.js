@@ -1,6 +1,5 @@
 {
     type: 'hbullet',
-    renderAt: 'chart-container',
     width: '450',
     height: '72',
     dataFormat: 'json',
@@ -24,7 +23,7 @@
             "plotToolText": "<div>Sales : <b>$$value</b></div>",
             "targettooltext": "Target : <b>$$targetvalue</b>",
             "theme": "zune",
-            "dataStreamURL": "../../resources/php/gauge-and-widgets-guide-bullet-chart-real-time-bullet-chart-php-1.php",
+            "dataStreamURL": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-bullet-chart-real-time-bullet-chart-php-1.php",
             "refreshInterval": "10"
         },
         "colorRange": {

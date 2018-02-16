@@ -5,53 +5,37 @@ ul.nav
 	li
 		i.icon-spaceship
 		a
-			| Getting started 
+			| Installation 
 			i.icon-keyboard-arrow-right
 		ul
 			li
-				a(href=site.baseurl + '/getting-started/installation') Installation
-			li
-				a(href=site.baseurl + '/getting-started/upgrading-from-evaluation-versions') Upgrading from Evaluation Versions
-			li
-				a(href=site.baseurl + '/getting-started/upgrading-from-previous-versions') Upgrading from Previous Versions
-			li
-				a(href=site.baseurl + '/getting-started/building-your-first-chart') Your First Chart
-			li
-				a(href=site.baseurl + '/getting-started/building-your-gauge') Your First Gauge
-			li
-				a(href=site.baseurl + '/getting-started/building-your-map') Your First Map
-			li
-				a(href=site.baseurl + '/getting-started/building-a-dashboard') Building a Dashboard
-			li
-				a(href=site.baseurl + '/getting-started/using-xml-as-data-format') Using XML as Data Format
-			li
-				a(href=site.baseurl + '/getting-started/setting-data-source-using-url') Setting Data Source using URL
-			li
 				a
-					a(href=site.baseurl + '/getting-started/export-your-charts') Export using FusionCharts Export Server
-			li
-				a
-					| Installing via npm and bower 
+					| Client Side Frameworks 
 					i.icon-keyboard-arrow-right
 				ul
 					li
-						a(href=site.baseurl + '/getting-started/installing-via-npm-and-bower/installing-fusioncharts-suite-xt-via-npm-and-bower') Installing FusionCharts Suite XT via npm and Bower
+						a(href=site.baseurl + '/installation/client-side-frameworks/install-using-plainjs') Plain JS
 					li
-						a(href=site.baseurl + '/getting-started/installing-via-npm-and-bower/installing-via-npm') Installing via npm
+						a(href=site.baseurl + '/installation/client-side-frameworks/install-using-angular') Angular
 					li
-						a(href=site.baseurl + '/getting-started/installing-via-npm-and-bower/rendering-charts-via-npm') Rendering Charts via npm
+						a(href=site.baseurl + '/installation/client-side-frameworks/install-using-reactjs') React
 					li
-						a(href=site.baseurl + '/getting-started/installing-via-npm-and-bower/installing-via-bower') Installing via Bower
+						a(href=site.baseurl + '/installation/client-side-frameworks/install-using-jquery') jQuery
+			li
+				a
+					| Server Side Frameworks 
+					i.icon-keyboard-arrow-right
+				ul
 					li
-						a(href=site.baseurl + '/getting-started/installing-via-npm-and-bower/rendering-charts-via-bower') Rendering Charts via Bower
-			li
-				a(href=site.baseurl + '/getting-started/list-of-charts') List of Charts
-			li
-				a(href=site.baseurl + '/getting-started/list-of-maps') List of Maps
-			li
-				a(href=site.baseurl + '/getting-started/whats-new') What's New in v3.12.2
-			li
-				a(href=site.baseurl + '/getting-started/deprecated-functionalities') Deprecated Functionalities in v3.12.2
+						a(href=site.baseurl + '/installation/server-side-frameworks/install-using-php') PHP
+					li
+						a(href=site.baseurl + '/installation/server-side-frameworks/install-using-ruby-on-rails') Ruby on Rails
+					li
+						a(href=site.baseurl + '/installation/server-side-frameworks/install-using-asp-net') ASP.NET
+					li
+						a(href=site.baseurl + '/installation/server-side-frameworks/install-using-java') Java
+					li
+						a(href=site.baseurl + '/installation/server-side-frameworks/install-using-django') Django
 	li
 		i.icon-flip
 		a
@@ -60,507 +44,396 @@ ul.nav
 		ul
 			li
 				a
-					| Chart Guide 
+					| Getting Started 
 					i.icon-keyboard-arrow-right
 				ul
 					li
-						a
-							| Standard Charts 
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/standard-charts/creating-standard-charts') Creating Standard Charts
-							li
-								a(href=site.baseurl + '/chart-guide/standard-charts/configuring-standard-charts') Configuring Standard Charts
+						a(href=site.baseurl + '/chart-guide/getting-started/building-your-first-chart') Your First Chart
 					li
-						a
-							| Pie and Doughnut Charts 
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/pie-and-doughnut-charts/creating-pie-and-doughnut-charts') Creating Pie and Doughnut Charts
-							li
-								a(href=site.baseurl + '/chart-guide/pie-and-doughnut-charts/configuring-pie-and-doughnut-charts') Configuring Pie and Doughnut Charts
+						a(href=site.baseurl + '/chart-guide/getting-started/building-your-first-widget') Your First Widget
 					li
-						a
-							| Multi-series Charts 
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/multi-series-charts/creating-multi-series-charts') Creating Multi-series Charts
-							li
-								a(href=site.baseurl + '/chart-guide/multi-series-charts/configuring-multi-series-charts') Configuring Multi-series Charts
+						a(href=site.baseurl + '/chart-guide/getting-started/building-your-first-map') Your First Map
 					li
-						a
-							| Combination Charts
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/combination-charts/creating-combination-charts') Creating Combination Charts
-							li
-								a(href=site.baseurl + '/chart-guide/combination-charts/configuring-combination-charts') Configuring Combination Charts
+						a(href=site.baseurl + '/chart-guide/getting-started/building-dashboards') Building Dashboards
 					li
-						a
-							| Stacked Charts
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/stacked-charts/creating-stacked-charts') Creating a Stacked Chart
-							li
-								a(href=site.baseurl + '/chart-guide/stacked-charts/configuring-stacked-charts') Configuring a Stacked Chart
+						a(href=site.baseurl + '/chart-guide/getting-started/list-of-charts') List of Charts
 					li
-						a
-							| Scroll Charts
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/scroll-charts/creating-scroll-charts') Creating a Scroll Chart
-							li
-								a(href=site.baseurl + '/chart-guide/scroll-charts/configuring-scroll-charts') Configuring Scroll Charts
+						a(href=site.baseurl + '/chart-guide/getting-started/list-of-maps') List of Maps
 					li
-						a
-							| Bubble and XY Charts
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/bubble-and-xy-charts/creating-bubble-and-xy-charts') Creating Bubble and XY Charts
-							li
-								a(href=site.baseurl + '/chart-guide/bubble-and-xy-charts/configuring-bubble-and-xy-charts') Configuring Bubble and XY Charts
-							li
-								a(href=site.baseurl + '/chart-guide/bubble-and-xy-charts/drawing-regression-lines-in-the-bubble-and-xy-charts') Drawing Regression Lines in the Bubble and XY Charts
-							li
-								a(href=site.baseurl + '/chart-guide/bubble-and-xy-charts/customizing-quadrants') Customizing Quadrants
+						a(href=site.baseurl + '/chart-guide/getting-started/using-xml-as-data-format') Using XML as Data Format
 					li
-						a
-							| Pareto Chart
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/pareto-chart/creating-a-pareto-chart') Creating a Pareto Chart
-							li
-								a(href=site.baseurl + '/chart-guide/pareto-chart/configuring-a-pareto-chart') Configuring a Pareto Chart
-					li
-						a
-							| Marimekko Charts
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/marimekko-chart/creating-a-marimekko-chart') Creating a Marimekko Chart
-							li
-								a(href=site.baseurl + '/chart-guide/marimekko-chart/configuring-a-marimekko-chart') Configuring a Marimekko Chart
-					li
-						a
-							| Zoom Line Chart
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/zoom-line-chart/creating-a-zoom-line-chart') Creating a Zoom Line Chart
-							li
-								a(href=site.baseurl + '/chart-guide/zoom-line-chart/configuring-a-zoom-line-chart') Configuring a Zoom Line Chart
-					li
-						a(href=site.baseurl + '/chart-guide/zoom-line-dy-chart') Zoom-line Dual Y-Axis Chart
-					li
-						a
-							| Heat Map Chart
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/heat-map-chart/introduction') Introduction to Heat Map Chart
-							li
-								a(href=site.baseurl + '/chart-guide/heat-map-chart/creating-numeric-heat-map-chart') Creating Numeric Heat Map Charts
-							li
-								a(href=site.baseurl + '/chart-guide/heat-map-chart/creating-category-based-heat-map-chart') Creating Category-based Heat Map Charts
-							li
-								a(href=site.baseurl + '/chart-guide/heat-map-chart/legend-options') Legend Options
-							li
-								a(href=site.baseurl + '/chart-guide/heat-map-chart/configuring-labels-and-tool-tips') Configuring Labels and Tool-tips
-							li
-								a(href=site.baseurl + '/chart-guide/heat-map-chart/handling-out-of-range-data') Handling Out-of-range Data
-					li
-						a
-							| Treemap
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/treemap/introducing-the-treemap') Introducing the Treemap
-							li
-								a(href=site.baseurl + '/chart-guide/treemap/creating-a-simple-treemap') Creating a Simple Treemap
-							li
-								a(href=site.baseurl + '/chart-guide/treemap/tilling-algorithm-for-the-treemap') Tiling Algorithm for the Treemap
-							li
-								a(href=site.baseurl + '/chart-guide/treemap/configuring-the-treemap') Configuring the Treemap
-							li
-								a(href=site.baseurl + '/chart-guide/treemap/handling-events-in-the-treemap') Handling Events in the Treemap
-					li
-						a
-							| Drag Node Chart
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/drag-node-chart/introduction') Introduction to Drag Node Chart
-							li
-								a(href=site.baseurl + '/chart-guide/drag-node-chart/configuring-drag-node-charts') Configuring Drag-node Charts
-							li
-								a(href=site.baseurl + '/chart-guide/drag-node-chart/adding-and-editing-nodes') Adding and Editing Nodes
-							li
-								a(href=site.baseurl + '/chart-guide/drag-node-chart/adding-and-editing-connectors') Adding and Editing Connectors
-							li
-								a(href=site.baseurl + '/chart-guide/drag-node-chart/adding-and-deleting-text-labels') Adding and Deleting Text Labels
-							li
-								a(href=site.baseurl + '/chart-guide/drag-node-chart/updating-chart-data-on-server') Updating Chart Data on Server
-							li
-								a(href=site.baseurl + '/chart-guide/drag-node-chart/getting-data-using-javascript') Getting Data Using JavaScript
-					li
-						a
-							| Drag-able Charts
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/drag-able-charts/introduction') Introduction to Drag-able Chart
-							li
-								a(href=site.baseurl + '/chart-guide/drag-able-charts/creating-drag-able-charts') Creating Drag-able Charts
-							li
-								a(href=site.baseurl + '/chart-guide/drag-able-charts/configuring-drag-able-charts') Configuring Drag-able Charts
-							li
-								a(href=site.baseurl + '/chart-guide/drag-able-charts/retrieving-data') Retrieving Data
-					li
-						a
-							| Select-scatter Chart
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/select-scatter-chart/creating-a-select-scatter-chart') Creating a Select-scatter Chart
-							li
-								a(href=site.baseurl + '/chart-guide/select-scatter-chart/getting-selected-data') Getting Selected Data
-							li
-								a(href=site.baseurl + '/chart-guide/select-scatter-chart/drawing-regression-lines-in-the-select-scatter-chart') Drawing Regression Lines in the Select-scatter Chart
-					li
-						a
-							| Zoom-scatter Chart
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/zoom-scatter-chart/introducing-the-zoom-scatter-chart') Introducing the Zoom Scatter Chart
-							li
-								a(href=site.baseurl + '/chart-guide/zoom-scatter-chart/creating-a-zoom-scatter-chart') Creating a Zoom Scatter Chart
-							li
-								a(href=site.baseurl + '/chart-guide/zoom-scatter-chart/drawing-regression-lines-in-the-zoom-scatter-chart') Drawing Regression Lines in the Zoom-scatter Chart
-					li
-						a(href=site.baseurl + '/chart-guide/radar-chart') Radar Chart
-					li
-						a(href=site.baseurl + '/chart-guide/multi-axis-line-chart') Multi-axis Line Chart
-					li
-						a(href=site.baseurl + '/chart-guide/multi-level-pie-chart') Multi-level Pie Chart
-					li
-						a
-							| Candlestick Chart
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/candlestick-chart/creating-a-candlestick-chart') Creating a Candlestick Chart
-							li
-								a(href=site.baseurl + '/chart-guide/candlestick-chart/configuring-a-candlestick-chart') Configuring a Candlestick Chart
-					li
-						a
-							| Waterfall (Cascade) Chart
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/waterfall-or-cascade-chart/creating-a-waterfall-or-cascade-chart') Creating a Waterfall (Cascade) Chart
-							li
-								a(href=site.baseurl + '/chart-guide/waterfall-or-cascade-chart/configuring-a-waterfall-or-cascade-chart') Configuring a Waterfall (Cascade) Chart
-					li
-						a
-							| Box and Whisker Chart
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/box-and-whisker-chart/introduction') Introduction to Box and Whisker Chart
-							li
-								a(href=site.baseurl + '/chart-guide/box-and-whisker-chart/creating-box-and-whisker-chart') Creating Box and Whisker Chart
-							li
-								a(href=site.baseurl + '/chart-guide/box-and-whisker-chart/configuring-the-five-summary-numbers') Configuring the Five Summary Numbers
-							li
-								a(href=site.baseurl + '/chart-guide/box-and-whisker-chart/configuring-mean') Configuring Mean
-							li
-								a(href=site.baseurl + '/chart-guide/box-and-whisker-chart/configuring-mean-deviation') Configuring Mean Deviation
-							li
-								a(href=site.baseurl + '/chart-guide/box-and-whisker-chart/configuring-standard-deviation') Configuring Standard Deviation
-							li
-								a(href=site.baseurl + '/chart-guide/box-and-whisker-chart/configuring-quartile-deviation') Configuring Quartile Deviation
-							li
-								a(href=site.baseurl + '/chart-guide/box-and-whisker-chart/configuring-outliers') Configuring Outliers
-					li
-						a
-							| Error Charts
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/error-charts/introduction') Introduction to Error Chart
-							li
-								a(href=site.baseurl + '/chart-guide/error-charts/creating-error-bar-chart') Creating Error Bar Chart
-							li
-								a(href=site.baseurl + '/chart-guide/error-charts/creating-error-line-chart') Creating Error Line Chart
-							li
-								a(href=site.baseurl + '/chart-guide/error-charts/creating-error-scatter-chart') Creating Error Scatter Chart
-					li
-						a(href=site.baseurl + '/chart-guide/spline-charts') Spline Charts
-					li
-						a(href=site.baseurl + '/chart-guide/inverse-y-axis-chart') Inverse Y-axis Chart
-					li
-						a
-							| Logarithmic Charts
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/logarithmic-charts/introduction') Introduction to Logarithmic Chart
-							li
-								a(href=site.baseurl + '/chart-guide/logarithmic-charts/creating-logarithmic-charts') Creating Logarithmic Charts
-							li
-								a(href=site.baseurl + '/chart-guide/logarithmic-charts/configuring-logarithmic-charts') Configuring Logarithmic Charts
-					li
-						a
-							| Step Line Chart
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/step-line-chart/introduction') Introduction to Step Line Chart
-							li
-								a(href=site.baseurl + '/chart-guide/step-line-chart/creating-a-step-line-chart') Creating a Step Line Chart
-							li
-								a(href=site.baseurl + '/chart-guide/step-line-chart/configuring-a-step-line-chart') Configuring a Step Line Chart
-					li
-						a(href=site.baseurl + '/chart-guide/kagi-chart') Kagi Chart
-					li
-						a
-							| Real-time Charts
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/chart-guide/real-time-charts/introduction') Introduction to Real-time Charts
-							li
-								a(href=site.baseurl + '/chart-guide/real-time-charts/data-format') Real-time Data Format
-							li
-								a(href=site.baseurl + '/chart-guide/real-time-charts/multiple-datasets-and-updates') Multiple Datasets and Updates
-							li
-								a(href=site.baseurl + '/chart-guide/real-time-charts/adding-historical-data') Adding Historical Data
-							li
-								a(href=site.baseurl + '/chart-guide/real-time-charts/chart-configurations') Chart Configuration
-							li
-								a(href=site.baseurl + '/chart-guide/real-time-charts/adding-data-stamp') Adding Data Stamp
-							li
-								a(href=site.baseurl + '/chart-guide/real-time-charts/setting-alert-manager') Setting Alert Manager
-							li
-								a(href=site.baseurl + '/chart-guide/real-time-charts/setting-message-logger') Setting Message Logger
-							li
-								a(href=site.baseurl + '/chart-guide/real-time-charts/clearing-chart-view') Clearing Chart View
-							li
-								a(href=site.baseurl + '/chart-guide/real-time-charts/feeding-and-retrieving-data-through-api') Feeding & Retrieving Data Through API
-							li
-								a(href=site.baseurl + '/chart-guide/real-time-charts/listening-to-events') Listening to Events
-							li
-								a(href=site.baseurl + '/chart-guide/real-time-charts/troubleshooting') Troubleshooting
+						a(href=site.baseurl + '/chart-guide/getting-started/setting-data-source-using-url') Setting Data Source Using URL
 			li
 				a
-					| Gauge & Widgets Guide
+					| Chart Configurations
+					i.icon-keyboard-arrow-right
+				ul
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/size-and-type') Size and Type
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/border-and-background') Border and Background
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/canvas') Canvas
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/titles-and-axis-names') Titles and Axis Names
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/data-plot') Data Plot
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/data-labels') Data Labels
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/data-values') Data Values
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/number-format') Number Format
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/fonts') Fonts
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/chart-palettes') Chart Palettes 
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/chart-limits') Chart Limits 
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/div-lines-and-grids') Div Lines and Grids
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/vertical-div-lines') Vertical Div Lines
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/zero-plane') Zero Plane
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/trend-lines-and-zones') Trend Lines and Zones
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/anchors-and-lines') Anchors and Lines
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/cross-line') Cross Line
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/tool-tips') Tooltips
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/vertical-lines') Vertical Lines
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/legend') Legend
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/annotations') Annotations
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/tick-marks') Tick Marks
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/loading-external-logo') Loading External Logo
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/chart-paddings-and-margins') Chart Paddings and Margins
+					li
+						a(href=site.baseurl + '/chart-guide/chart-configurations/toolbar') Toolbar
+			li
+				a
+					| Standard Charts 
+					i.icon-keyboard-arrow-right
+				ul
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/line-area-and-column-charts') Line, Area and Column Charts
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/pie-and-doughnut-charts') Pie and Doughnut Charts
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/multi-series-charts') Multi-Series Charts
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/combination-charts') Combination Charts
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/stacked-charts') Stacked Charts
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/scroll-charts') Scroll Charts
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/bubble-and-xy-charts') Bubble and XY Charts
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/pareto-charts') Pareto Charts
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/marimekko-chart') Marimekko Charts
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/zoom-line-charts') Zoom Line Charts
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/drag-able-charts') Drag-able Charts
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/select-scatter-chart') Select Scatter Chart
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/zoom-scatter-chart') Zoom Scatter Chart
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/radar-chart') Radar Chart
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/multi-axis-line-chart') Multi-axis Line Chart
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/multi-level-pie-chart') Multi-level Pie Chart
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/candlestick-chart') Candlestick Chart
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/waterfall-chart') Waterfall Chart
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/box-and-whisker-chart') Box and Whisker Chart
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/error-charts') Error Charts
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/spline-charts') Spline Charts
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/inverse-y-axis-chart') Inverse Y Axis Chart
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/logarithmic-charts') Logarithmic Charts
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/step-line-chart') Step Line Chart
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/kagi-chart') Kagi Chart
+					li
+						a(href=site.baseurl + '/chart-guide/standard-charts/real-time-charts') Real-Time Charts
+			li
+				a
+					| Gauges and Widgets 
 					i.icon-keyboard-arrow-right
 				ul
 					li
 						a
-							| Angular Gauge
+							| Angular Gauge 
 							i.icon-keyboard-arrow-right
 						ul
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/angular-gauge/introduction') Introduction to Angular Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/angular-gauge/introduction') Introduction to Angular Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/angular-gauge/simple-gauge-example') Simple Angular Gauge Example
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/angular-gauge/simple-gauge-example') Simple Angular Gauge Example
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics') Configuring Angular Gauge Cosmetics
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics') Configuring Angular Gauge Cosmetics
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/angular-gauge/configuring-dials') Configuring Dials
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/angular-gauge/configuring-dials') Configuring Dials
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/angular-gauge/configuring-tick-marks') Configuring Tick Marks in Angular Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/angular-gauge/configuring-tick-marks') Configuring Tick Marks in Angular Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/angular-gauge/adding-trend-points') Adding Trend Points in Angular Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/angular-gauge/adding-trend-points') Adding Trend Points in Angular Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins') Configuring Angles & Origins
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins') Configuring Angles & Origins
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges') Dynamically Resizing Gauges
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges') Dynamically Resizing Gauges
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/angular-gauge/creating-editable-gauges') Creating Editable Angular Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/angular-gauge/creating-editable-gauges') Creating Editable Angular Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges') Creating Real-time Angluar Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges') Creating Real-time Angular Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/angular-gauge/logging-real-time-messages') Logging Real-time Messages
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/angular-gauge/logging-real-time-messages') Logging Real-time Messages
 					li
 						a
-							| Linear Gauge
+							| Linear Gauge 
 							i.icon-keyboard-arrow-right
 						ul
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/linear-gauge/introduction') Introduction to Linear Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/linear-gauge/introduction') Introduction to Linear Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/linear-gauge/simple-gauge-example') Simple Linear Gauge Example
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/linear-gauge/simple-gauge-example') Simple Linear Gauge Example
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics') Configuring Linear Gauge Cosmetics
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/linear-gauge/configuring-gauge-cosmetics') Configuring Linear Gauge Cosmetics
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/linear-gauge/configuring-tick-marks') Configuring Tick Marks in Linear Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/linear-gauge/configuring-tick-marks') Configuring TickMarks in Linear Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/linear-gauge/adding-trend-points') Adding Trend-points in Linear Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/linear-gauge/adding-trend-points') Adding Trend Points in Linear Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/linear-gauge/creating-editable-gauges') Creating Editable Linear Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/linear-gauge/creating-editable-gauges') Creating Editable Linear Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/linear-gauge/real-time-gauges') Real-time Linear Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/linear-gauge/real-time-gauges') Real-time Linear Gauge
 					li
 						a
-							| LED Gauge
+							| LED Gauge 
 							i.icon-keyboard-arrow-right
 						ul
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/led-gauge/introduction') Introduction to LED Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/led-gauge/introduction') Introduction to LED Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/led-gauge/simple-gauge-example') Simple LED Gauge Example
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/led-gauge/simple-gauge-example') Simple LED Gauge Example
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/led-gauge/configuring-gauge') Configuring LED Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/led-gauge/configuring-gauge') Configuring LED Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/led-gauge/real-time-gauges') Real-time LED Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/led-gauge/real-time-gauges') Real-time LED Gauge
 					li
 						a
-							| Thermometer Gauge
+							| Thermometer Gauge 
 							i.icon-keyboard-arrow-right
 						ul
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/thermometer-gauge/introduction') Introduction to Thermometer Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/thermometer-gauge/introduction') Introduction to Thermometer Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/thermometer-gauge/simple-gauge-example') Simple Thermometer Gauge Example
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/thermometer-gauge/simple-gauge-example') Simple Thermometer Gauge Example
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/thermometer-gauge/configuring-gauge') Configuring Thermometer Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/thermometer-gauge/configuring-gauge') Configuring Thermometer Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges') Real-time Thermometer Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/thermometer-gauge/real-time-gauges') Real-time Thermometer Gauge
 					li
 						a
-							| Cylinder Gauge
+							| Cylinder Gauge 
 							i.icon-keyboard-arrow-right
 						ul
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/cylinder-gauge/introduction') Introduction to Cylinder Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/cylinder-gauge/introduction') Introduction to Cylinder Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/cylinder-gauge/simple-gauge-example') Simple Cylinder Gauge Example
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/cylinder-gauge/simple-gauge-example') Simple Cylinder Gauge Example
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/cylinder-gauge/configuring-gauge') Configuring Cylinder Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/cylinder-gauge/configuring-gauge') Configuring Cylinder Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/cylinder-gauge/real-time-gauges') Real-time Cylinder Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/cylinder-gauge/real-time-gauges') Real-time Cylinder Gauge
 					li
 						a
-							| Bulb Gauge
+							| Bulb Gauge 
 							i.icon-keyboard-arrow-right
 						ul
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/bulb-gauge/introduction') Introduction to Bulb Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/bulb-gauge/introduction') Introduction to Bulb Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/bulb-gauge/simple-gauge-example') Simple Bulb Gauge Example
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/bulb-gauge/simple-gauge-example') Simple Bulb Gauge Example
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/bulb-gauge/configuring-gauge') Configuring Bulb Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/bulb-gauge/configuring-gauge') Configuring Bulb Gauge
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/bulb-gauge/real-time-gauges') Real-time Bulb Gauge
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/bulb-gauge/real-time-gauges') Real-time Bulb Gauge
 					li
 						a
-							| Funnel Chart
+							| Real-time Gauge 
 							i.icon-keyboard-arrow-right
 						ul
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/funnel-chart/introduction') Introduction to Funnel Chart
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/real-time-gauges/introduction') Introduction to Real-time Gauges
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/funnel-chart/simple-chart-example') Simple Funnel Chart Example
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges') Setting Up Real-time Gauges
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/funnel-chart/configuring-chart') Configuring Funnel Chart
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/real-time-gauges/setting-alert-manager') Setting the Alert Manager
+							li
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/real-time-gauges/using-events') Using Events
+							li
+								a(href=site.baseurl + '/chart-guide/gauge-and-widgets-guide/real-time-gauges/troubleshooting-real-time-gauges') Troubleshooting Real-time Gauges
+
+			li
+				a
+					| Advanced Charts 
+					i.icon-keyboard-arrow-right
+				ul
 					li
 						a
-							| Pyramid Chart
+							| Funnel Chart 
 							i.icon-keyboard-arrow-right
 						ul
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/pyramid-chart/introduction') Introduction to Pyramid Chart
+								a(href=site.baseurl + '/chart-guide/advanced-charts/funnel-chart/introduction') Introduction to Funnel Chart
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/pyramid-chart/simple-pyramid-chart') Creating a Simple Pyramid Chart
+								a(href=site.baseurl + '/chart-guide/advanced-charts/funnel-chart/simple-chart-example') Simple Funnel Chart Example
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/pyramid-chart/configuring-chart') Configuring Pyramid Chart
+								a(href=site.baseurl + '/chart-guide/advanced-charts/funnel-chart/configuring-chart') Configuring Funnel Chart
 					li
 						a
-							| Spark Charts
+							| Pyramid Chart 
 							i.icon-keyboard-arrow-right
 						ul
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/spark-charts/introduction') Introduction to Spark Chart
+								a(href=site.baseurl + '/chart-guide/advanced-charts/pyramid-chart/introduction') Introduction to Pyramid Chart
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/spark-charts/creating-spark-line-chart') Creating a Spark Line Chart
+								a(href=site.baseurl + '/chart-guide/advanced-charts/pyramid-chart/simple-pyramid-chart') Creating a Simple Pyramid Chart
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/spark-charts/configuring-spark-line-chart') Configuring Spark Line Chart
+								a(href=site.baseurl + '/chart-guide/advanced-charts/pyramid-chart/configuring-chart') Configuring Pyramid Chart
+					li
+						a
+							| Spark Charts 
+							i.icon-keyboard-arrow-right
+						ul
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/spark-charts/creating-spark-column-chart') Creating a Spark Column Chart
+								a(href=site.baseurl + '/chart-guide/advanced-charts/spark-charts/introduction') Introduction to Spark Chart
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/spark-charts/configuring-spark-column-chart') Configuring Spark Column Chart
+								a(href=site.baseurl + '/chart-guide/advanced-charts/spark-charts/creating-spark-line-chart') Creating a Spark Line Chart
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/spark-charts/creating-spark-win-loss-charts') Creating Spark Win/Loss Charts
+								a(href=site.baseurl + '/chart-guide/advanced-charts/spark-charts/configuring-spark-line-chart') Configuring Spark Line Chart
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/spark-charts/configuring-spark-win-loss-charts') Configuring Spark Win/Loss Charts
+								a(href=site.baseurl + '/chart-guide/advanced-charts/spark-charts/creating-spark-column-chart') Creating a Spark Column Chart
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/spark-charts/configuring-spark-column-chart') Configuring Spark Column Chart
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/spark-charts/creating-spark-win-loss-charts') Creating a Spark Win/Loss Chart
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/spark-charts/configuring-spark-win-loss-charts') Configuring Spark Win/Loss Chart
 					li
 						a
 							| Bullet Graphs
 							i.icon-keyboard-arrow-right
 						ul
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/bullet-graph/introduction') Introduction to Bullet Graph
+								a(href=site.baseurl + '/chart-guide/advanced-charts/bullet-graph/introduction') Introduction to Bullet Graph
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/bullet-graph/creating-bullet-graphs') Creating Bullet Graphs
+								a(href=site.baseurl + '/chart-guide/advanced-charts/bullet-graph/creating-bullet-graphs') Creating a Bullet Graph
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/bullet-graph/configuring-bullet-graph') Configuring Bullet Graph
+								a(href=site.baseurl + '/chart-guide/advanced-charts/bullet-graph/configuring-bullet-graph') Configuring Bullet Graph
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs') Real-time Bullet Graph
+								a(href=site.baseurl + '/chart-guide/advanced-charts/bullet-graph/real-time-bullet-graphs') Real-time Bullet Graph
 					li
 						a
 							| Gantt Chart
 							i.icon-keyboard-arrow-right
 						ul
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/gantt-chart/introduction') Introduction to Gantt Chart
+								a(href=site.baseurl + '/chart-guide/advanced-charts/gantt-chart/introduction') Introduction to Gantt Chart
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/gantt-chart/creating-simple-gantt-chart') Creating a Simple Gantt Chart
+								a(href=site.baseurl + '/chart-guide/advanced-charts/gantt-chart/creating-simple-gantt-chart') Creating a Simple Gantt Chart
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/gantt-chart/configuring-cosmetics') Configuring Cosmetics
+								a(href=site.baseurl + '/chart-guide/advanced-charts/gantt-chart/configuring-cosmetics') Configuring Cosmetics
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/gantt-chart/configuring-task-bars') Configuring Task Bars
+								a(href=site.baseurl + '/chart-guide/advanced-charts/gantt-chart/configuring-task-bars') Configuring Task Bars
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/gantt-chart/configuring-date-formats') Configuring Date Formats
+								a(href=site.baseurl + '/chart-guide/advanced-charts/gantt-chart/configuring-date-formats') Configuring Date Formats
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/gantt-chart/adding-scroll-to-chart') Adding Scroll to Chart
+								a(href=site.baseurl + '/chart-guide/advanced-charts/gantt-chart/adding-scroll-to-chart') Adding Scroll to Chart
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/gantt-chart/adding-multiple-task-to-a-process') Adding Multiple Tasks to a Process
+								a(href=site.baseurl + '/chart-guide/advanced-charts/gantt-chart/adding-multiple-task-to-a-process') Adding Multiple Tasks to a Process
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/gantt-chart/creating-time-based-charts') Creating Time-based Charts
+								a(href=site.baseurl + '/chart-guide/advanced-charts/gantt-chart/creating-time-based-charts') Creating Time-based Charts
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/gantt-chart/adding-milestones-to-a-chart') Adding Milestones to a Chart
+								a(href=site.baseurl + '/chart-guide/advanced-charts/gantt-chart/adding-milestones-to-a-chart') Adding Milestones to a Chart
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/gantt-chart/connecting-tasks-on-chart') Connecting Tasks on Chart
+								a(href=site.baseurl + '/chart-guide/advanced-charts/gantt-chart/connecting-tasks-on-chart') Connecting Tasks on Chart
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/gantt-chart/adding-trend-lines') Adding Trend-lines
+								a(href=site.baseurl + '/chart-guide/advanced-charts/gantt-chart/adding-trend-lines') Adding Trend-lines
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/gantt-chart/events-in-gantt-chart') Events in Gantt Chart
+								a(href=site.baseurl + '/chart-guide/advanced-charts/gantt-chart/events-in-gantt-chart') Events in Gantt Chart
 					li
 						a
-							| Real-time Gauges
+							| Heat Map Chart
 							i.icon-keyboard-arrow-right
 						ul
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/real-time-gauges/introduction') Introduction to Real-time Gauges
+								a(href=site.baseurl + '/chart-guide/advanced-charts/heat-map-chart/introduction') Introduction to Heat Map Chart
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges') Setting Up Real-time Gauges
+								a(href=site.baseurl + '/chart-guide/advanced-charts/heat-map-chart/creating-numeric-heat-map-chart') Creating Numeric Heat Map Charts
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/real-time-gauges/setting-alert-manager') Setting the Alert Manager
+								a(href=site.baseurl + '/chart-guide/advanced-charts/heat-map-chart/creating-category-based-heat-map-chart') Creating Category-based Heat Map Charts
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/real-time-gauges/using-events') Using Events
+								a(href=site.baseurl + '/chart-guide/advanced-charts/heat-map-chart/legend-options') Legend Options
 							li
-								a(href=site.baseurl + '/gauge-and-widgets-guide/real-time-gauges/troubleshooting-real-time-gauges') Troubleshooting Real-time Gauges
+								a(href=site.baseurl + '/chart-guide/advanced-charts/heat-map-chart/configuring-labels-and-tool-tips') Configuring Labels and Tool-tips
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/heat-map-chart/handling-out-of-range-data') Handling out-of-range Data
+					li
+						a
+							| Treemap
+							i.icon-keyboard-arrow-right
+						ul
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/treemap/introducing-the-treemap') Introducing the Treemap
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/treemap/creating-a-simple-treemap') Creating a Simple Treemap
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/treemap/tilling-algorithm-for-the-treemap') Tiling Algorithm for the Treemap
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/treemap/configuring-the-treemap') Configuring the Treemap
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/treemap/handling-events-in-the-treemap') Handling Events in the Treemap
+					li
+						a
+							| Drag Node Chart
+							i.icon-keyboard-arrow-right
+						ul
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/drag-node-chart/introduction') Introduction to Drag-node Chart
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/drag-node-chart/configuring-drag-node-charts') Configuring Drag-node Chart
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/drag-node-chart/adding-and-editing-nodes') Adding and Editing Nodes
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/drag-node-chart/adding-and-editing-connectors') Adding and editing Connectors
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/drag-node-chart/adding-and-deleting-text-labels') Adding and Deleting Text Labels
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/drag-node-chart/updating-chart-data-on-server') Updating Chart Data on Server
+							li
+								a(href=site.baseurl + '/chart-guide/advanced-charts/drag-node-chart/getting-data-using-javascript') Getting Data using JavaScript
+
 			li
 				a
 					| Map Guide
@@ -617,85 +490,6 @@ ul.nav
 		ul
 			li
 				a
-					| Basic Chart Configurations
-					i.icon-keyboard-arrow-right
-				ul
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/changing-the-size-and-type') Changing the Size and Type
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/border-and-background') Border and Background
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/canvas') Canvas
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/titles-and-axis-names') Titles and Axis Names
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/data-plot') Data Plot
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/configuring-your-chart-data-labels') Data Labels
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/data-values') Data Values
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/number-format') Number Format
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/fonts') Fonts
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/chart-palettes') Chart Palettes
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/centralizing-themes-for-your-charts') Centralizing Themes for Your Charts
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/theme-manager') Theme Manager
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/chart-limits') Chart Limits
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/div-lines-and-grids') Div Lines and Grids
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/vertical-div-lines') Vertical Div Lines
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/zero-plane') Zero Plane
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/trend-lines-and-zones') Trend Lines and Zones
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/anchors-and-lines') Anchors and Lines
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/cross-line') Cross Line
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/tool-tips') Tooltips
-					li
-						a
-							| Tooltip Macros
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/basic-chart-configurations/tooltip-macros/introduction-to-tooltip-macros') Introduction to Tooltip Macros
-							li
-								a(href=site.baseurl + '/basic-chart-configurations/tooltip-macros/list-of-macros') List of Tooltip Macros
-							li
-								a(href=site.baseurl + '/basic-chart-configurations/tooltip-macros/tooltip-macros-additional-examples') Tooltip Macros-Additional Examples
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/vertical-lines') Vertical Lines
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/legend') Legend
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/annotations') Annotations
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/tick-marks') Tick Marks
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/loading-external-logo') Loading External Logo
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/chart-paddings-and-margins') Chart Paddings and Margins
-					li
-						a(href=site.baseurl + '/basic-chart-configurations/toolbar') Toolbar
-					li
-						a
-							| Tutorials
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/basic-chart-configurations/tutorials/basic-chart-configuration-part-1') Basic Chart Configuration(Part-1)
-							li
-								a(href=site.baseurl + '/basic-chart-configurations/tutorials/basic-chart-configuration-part-2') Basic Chart Configuration(Part-2)
-			li
-				a
 					| Advanced Chart Configurations
 					i.icon-keyboard-arrow-right
 				ul
@@ -710,21 +504,6 @@ ul.nav
 								a(href=site.baseurl + '/advanced-chart-configurations/events/handling-events') Handling Events
 							li
 								a(href=site.baseurl + '/advanced-chart-configurations/events/classifying-events') Classifying Events
-					li
-						a
-							| Drill-down
-							i.icon-keyboard-arrow-right
-						ul
-							li
-								a(href=site.baseurl + '/advanced-chart-configurations/drill-down/simple-drill-down') Creating Simple Drill-down Charts
-							li
-								a(href=site.baseurl + '/advanced-chart-configurations/drill-down/opening-in-pop-up-or-frames') Opening Links in Pop-up Windows or Frames
-							li
-								a(href=site.baseurl + '/advanced-chart-configurations/drill-down/set-chart-as-hotspot') Setting the Chart as a Hotspot
-							li
-								a(href=site.baseurl + '/advanced-chart-configurations/drill-down/linkedcharts') Creating and Configuring Linked Charts
-							li
-								a(href=site.baseurl + '/advanced-chart-configurations/drill-down/using-javascript-functions-as-links') Using JavaScript Functions as Links
 					li
 						a
 							| Annotations
@@ -820,13 +599,13 @@ ul.nav
 									i.icon-keyboard-arrow-right
 								ul
 									li
-										a(href=site.baseurl + '/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server-asp-net') ASP.NET
+										a(href=site.baseurl + '/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net') ASP.NET
 									li
-										a(href=site.baseurl + '/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server-php') PHP
+										a(href=site.baseurl + '/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/php') PHP
 									li
-										a(href=site.baseurl + '/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server-java') Java
+										a(href=site.baseurl + '/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/java') Java
 									li
-										a(href=site.baseurl + '/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server-ruby-on-rails') Ruby on Rails
+										a(href=site.baseurl + '/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/ruby-on-rails') Ruby on Rails
 							li
 								a(href=site.baseurl + '/exporting-charts/using-fc-export-server/exporting-multiple-charts-in-a-single-image') Exporting Multiple Charts in a Single Image
 							li
@@ -914,6 +693,24 @@ ul.nav
 										a(href=site.baseurl + '/exporting-charts/using-fusionexport/sdk-api-reference/python') Python
 									li
 										a(href=site.baseurl + '/exporting-charts/using-fusionexport/sdk-api-reference/golang') Golang
+					li
+						a
+							| Excel Export 
+							span.bubble-text Beta
+							i.icon-keyboard-arrow-right
+						ul
+							li
+								a(href=site.baseurl + '/exporting-charts/using-excel-export/overview') Overview
+							li
+								a(href=site.baseurl + '/exporting-charts/using-excel-export/excel-export-server-side-setup') Server Side Set-up
+							li
+								a(href=site.baseurl + '/exporting-charts/using-excel-export/excel-export-client-side-setup') Client Side Set-up
+							li
+								a(href=site.baseurl + '/exporting-charts/using-excel-export/excel-export-workflow') Excel Export Workflow
+							li
+								a(href=site.baseurl + '/exporting-charts/using-excel-export/export-charts-in-excel') Export charts in Excel
+							li
+								a(href=site.baseurl + '/exporting-charts/using-excel-export/supported-charts-and-attributes') Supported Chart Attributes
 	li
 		i.icon-api
 		a
@@ -974,7 +771,7 @@ ul.nav
 	li
 		i.icon-bookmark
 		a
-			| Integration with your stack
+			| Integration with your Stack
 			i.icon-keyboard-arrow-right
 		ul
 			li
@@ -1133,7 +930,7 @@ ul.nav
 							li
 								a(href=site.baseurl + '/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4') Configuring Advanced Features Using Angular4
 							li
-								a(href=site.baseurl + '/using-with-javascript-libraries/anguar4/including-interactivity-in-charts-using-anguar4') Including Interactivity in Charts Using Angular4
+								a(href=site.baseurl + '/using-with-javascript-libraries/angular4/including-interactivity-in-charts-using-angular4') Including Interactivity in Charts Using Angular4
 	li
 		i.icon-headset-mic
 		a
@@ -1141,9 +938,25 @@ ul.nav
 			i.icon-keyboard-arrow-right
 		ul
 			li
-				a(href=site.baseurl + '/tutorials-list') Tutorials
+				a
+					| Migration
+					i.icon-keyboard-arrow-right
+				ul
+					li
+						a(href=site.baseurl + '/migration/upgrading-from-evaluation-versions') Upgrade from Evaluation Versions
+
+					li
+						a(href=site.baseurl + '/migration/upgrading-from-previous-versions') Upgrade from Previous Versions
+
+					li
+						a(href=site.baseurl + '/migration/whats-new') What's New in v3.12.2
+
+					li
+						a(href=site.baseurl + '/migration/deprecated-functionalities') Deprecated Functionalities in v3.12.2
 			li
-				| Troubleshooting
+				a
+					| Troubleshooting
+					i.icon-keyboard-arrow-right
 				ul
 					li
 						a(href=site.baseurl + '/troubleshooting/debugger') Using the FusionCharts Suite XT Debugger

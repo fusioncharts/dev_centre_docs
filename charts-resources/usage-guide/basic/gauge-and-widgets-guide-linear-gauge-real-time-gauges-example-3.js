@@ -1,7 +1,6 @@
 {
     type: 'hlineargauge',
     renderAt: 'chart-container',
-    id: 'cpu-linear-gauge-3',
     width: '400',
     height: '170',
     dataFormat: 'json',
@@ -65,8 +64,8 @@
                 var trnPrcnt = 60 + parseInt(Math.floor(Math.random() * 10), 10),
                     //Web server Range 75-85%
                     webPrcnt = 75 + parseInt(Math.floor(Math.random() * 10), 10);
-                FusionCharts.items["cpu-linear-gauge-3"].setDataForId("transServer", trnPrcnt);
-                FusionCharts.items["cpu-linear-gauge-3"].setDataForId("webServer", webPrcnt);
+                evtObj.sender.setDataForId("transServer", trnPrcnt);
+                evtObj.sender.setDataForId("webServer", webPrcnt);
             }, 5000);
         },
         "disposed": function(evtObj, argObj) {

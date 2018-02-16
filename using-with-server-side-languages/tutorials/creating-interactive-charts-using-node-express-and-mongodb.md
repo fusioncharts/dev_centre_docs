@@ -360,7 +360,7 @@ Note: In the above we are making use of [Bootstrap](http://getbootstrap.com/css/
 
 Let us now see the code for the template that will contain the chart. The name of this template file is chart.handlebars. In this template we will show the data both in tabular as well as graphical format. Before we look at the template definition, let us look at the directory structure we have created so far:
 
-![server side program as shown in diagram](/assets/images/node-screen.png)
+![server side program as shown in diagram]({% site.baseurl %}/images/node-screen.png)
 
 Let us get back to the expressjs server code i.e server.js and do the following:
 
@@ -497,7 +497,7 @@ $("#table-location").html(template(data));
 
 If you want to see the app we have built so far in action, just run the following command from the app directory: `node server.js`. You will see Server up: http://localhost:3300 printed. Open the URL http://localhost:3300/ to see the table as shown in the below image:
 
-![server side program as shown in diagram](/assets/images/data-table.png)
+![server side program as shown in diagram]({% site.baseurl %}/images/data-table.png)
 
 ### Build the JavaScript and HTML to display the fuel price in a line chart ###
 
@@ -555,7 +555,7 @@ lineChart.render();
 
 Let us load the URL http://localhost:3300/ in the browser to see both table and chart being displayed as shown in the image below:
 
-![server side program as shown in diagram](/assets/images/data-table2.png)
+![server side program as shown in diagram]({% site.baseurl %}/images/data-table2.png)
 
 ### Source Code Download ###
 

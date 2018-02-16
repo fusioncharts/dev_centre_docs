@@ -17,7 +17,7 @@
             "numberSuffix": " ltrs",
             "showValue": "1",
             "chartBottomMargin": "45",
-            "dataStreamUrl": "../../../resources/php/gauge-and-widgets-guide-cylinder-gauge-real-time-gauges-php-1.php",
+            "dataStreamUrl": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-cylinder-gauge-real-time-gauges-php-1.php",
             "refreshInterval": "2",
             "refreshInstantly": "1"
         },
