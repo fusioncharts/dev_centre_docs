@@ -7,7 +7,7 @@ breadcrumb: [["Home", "/"], ["Zero Plane"]]
 
 Zero plane is a plane separating the positive and negative numbers on the y-axis of a chart. It is rendered by default in any chart that plots both negative and positive values.
 
-The zero plane is applicable to column, line, scatter, bubble and the area charts. Additionally, scatter and bubble charts also support vertical zero plane on the x-axis.
+The zero plane applies to column, line, scatter, bubble and the area charts. Additionally, scatter and bubble charts also support vertical zero plane on the x-axis.
 
 ## Show/Hide the Zero Plane
 
@@ -31,9 +31,9 @@ Click [here](http://jsfiddle.net/fusioncharts/pxxsdfe0/ "@@open-newtab") to edit
 
 ## Customize Zero Plane in 2D chart
 
-To customize the zero plane in a  2D chart the  following attributes are used:
+To customize the zero plane in a 2D chart, the following attributes are used:
 
-* Specify the hex code for the color of the  zero plane using the `zeroPlaneColor` attribute.
+* Specify the hex code for the color of the zero plane using the `zeroPlaneColor` attribute.
 
 * Set the thickness (in pixels) of the zero plane using the `zeroPlaneThickness` attribute.
 
@@ -61,9 +61,9 @@ Click [here](http://jsfiddle.net/fusioncharts/ydxdrozz/ "@@open-newtab") to edit
 
 ## Customize Zero Plane in 3D chart
 
-To customize the zero plane in a 3D chart the  following attributes are used:
+To customize the zero plane in a 3D chart, the following attributes are used:
 
-* Specify the hex code for the color of the  zero plane using the `zeroPlaneColor` attribute.
+* Specify the hex code for the color of the zero plane using the `zeroPlaneColor` attribute.
 
 * Set the transparency of the zero plane using the `zeroPlaneAplha` attribute.
 
@@ -112,7 +112,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/1u4f1jpy/ "@@open-newtab") to edit the above chart.
 
-To configure the vertical zerol plane use the following attributes:
+To configure the vertical zero plane use the following attributes:
 
 * Specify the hex code of the color for the vertical zero plane using the `vZeroPlaneColor` attribute.
 

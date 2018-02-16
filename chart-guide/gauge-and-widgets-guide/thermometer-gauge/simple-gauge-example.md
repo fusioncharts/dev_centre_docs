@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/thermometer-gauge/simple-gauge-example.html
 title: Simple Thermometer Gauge Example | FusionCharts
 description:  A thermometer gauge is used to display temperature data; the fill level of the thermometer indicates the temperature.
 heading: Simple Thermometer Gauge Example

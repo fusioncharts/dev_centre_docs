@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html
 title: Creating Real-time Angular Gauge | FusionCharts
 description: In this section, understand and use the various methods available for data streaming, use a JavaScript API to update the gauge, etc.
 heading: Creating Real-time Angluar Gauge
@@ -7,18 +6,6 @@ chartPresent: true
 ---
 
 The angular gauge is a real-time chart, which can continuously request new data from the server and display the same, without involving any page refreshes. The chart initializes itself, loads new data periodically and auto-updates to reflect the current state of data. There are two different ways to update the angular gauge; one method directly polls data from the server while the other retrieves data using JavaScript API methods.
-
-In this section, you will learn how to:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html#understanding-data-streaming-and-the-various-methods-for-data-streaming">Understand and use the various methods available for data streaming</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html#building-an-example-of-a-real-time-gauge-that-streams-data-from-an-url">Build an example of a real-time gauge that can stream data from an URL</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html#using-the-javascript-api-to-update-the-gauge">Use the JavaScript API to update the gauge</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html#configuring-events-associated-with-real-time-updates">Configure events associated with real-time updates</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html#troubleshooting">Troubleshoot real-time gauges</a>
 
 ## Understanding Data Streaming and the Various Methods for Data Streaming
 

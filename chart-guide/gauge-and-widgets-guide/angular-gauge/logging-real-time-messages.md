@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/logging-real-time-messages.html
 title: Logging Real-time Messages | FusionCharts
 description: This section talks about message logger which can be used effectively to show some necessary real-time information or live error logs.
 heading: Logging Real-time Messages
@@ -9,16 +8,6 @@ chartPresent: true
 FusionCharts Suite XT introduces a new concept of streaming and showing real-time messages in the gauge using Message Logger. The message logger can be effectively used to show some necessary real-time information or live error logs.
 
 Essentially, the message logger is a text based scrollable window that can listen to messages streamed from the server and then either display the messages in the message logger window or pass them to custom JavaScript functions (defined by you) for further actions.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/logging-real-time-messages.html#setting-up-the-message-logger">Setup the message logger</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/logging-real-time-messages.html#streaming-messages-using-the-message-logger">Stream messages using the message logger</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/logging-real-time-messages.html#handling-messages-in-javascript">Handle messages using the JavaScript API</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/logging-real-time-messages.html#configuring-the-message-logger-using-javascript-api">Configure the message logger using JavaScript API</a>
 
 <p class="text-info">To use message logger, you first need to make sure that you're using a real-time chart from FusionWidgets XT pack - i.e., charts which update themselves in real-time. Examples are real-time line chart, column chart, angular gauge, linear gauges etc.</p>
 

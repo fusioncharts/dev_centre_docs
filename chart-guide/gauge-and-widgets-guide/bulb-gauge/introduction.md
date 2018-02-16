@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/bulb-gauge/introduction.html
 title: Introduction to Bulb Gauge | FusionCharts
 description: The bulb gauge is used to indicate a specific dataset by utilizing a circle that indicates whether the monitored data is within defined limits
 heading: Introduction to Bulb Gauge
@@ -9,10 +8,6 @@ chartPresent: true
 One of the simplest gauges available in the FusionCharts Suite XT, the bulb gauge is used to indicate a specific dataset by utilizing a circle that indicates whether the monitored data is within defined limits and if it is, then which limit does it belong to. Colors for the bulb can be selected to suit the application such as green for satisfactory, yellow for caution, and red for alarm.
 
 In this section, you will be introduced to the:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/introduction.html#basics-of-the-bulb-gauge">Basics of bulb gauge</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/introduction.html#elements-of-the-bulb-gauge">Elements of bulb gauge</a>
 
 ## Basics of the Bulb Gauge
 

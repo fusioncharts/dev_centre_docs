@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.html
 title: Configuring Angles & Origins | FusionCharts
 description: This section talks about configuring anlges and origins, how to use various chart object to create angles, configure gauge angles, set gauge origins, etc
 heading: Configuring Angles & Origins
@@ -7,16 +6,6 @@ chartPresent: true
 ---
 
 FusionCharts Suite XT allows you to draw the angular gauge from virtually any start angle to any end angle and in both directions.
-
-In this section, you will be shown you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.html#using-the-chart-object-attributes-to-create-gauges">Use the various chart object attributes to create angles</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.html#configuring-angular-gauge-angles">Configure gauge angles to render angles of different shapes</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.html#automatic-positioning-of-gauge-origins">Position gauge origins automatically</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.html#manually-setting-gauge-origins">Set gauge origins manually</a>
 
 ## Using the `chart` Object Attributes to Create Gauges
 

@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/introduction.html
 title: Introduction to Angular Gauge | FusionCharts
 description: Angular gauges are essentially like the speedometer or the fuel gauge. They use a radial scale to display the data range & a dial to indicate the data value.
 heading: Introduction to Angular Gauge
@@ -9,12 +8,6 @@ chartPresent: true
 Angular gauges are essentially like the speedometer or the fuel gauge of a car. They use a radial scale to display the data range and a dial to indicate the data value.
 
 An angular (also called a meter or dial gauge) is used to display a specific data point using a dial over a radial scale with defined limits. Colors can be associated for the sections of the data to suit the application e.g. green for satisfactory, yellow for caution, and red for alarm.
-
-In this section, you will be introduced to:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#a-simple-angular-gauge">A simple angular gauge</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#elements-of-the-gauge">Elements of an angular gauge</a>
 
 ## A Simple Angular Gauge
 
@@ -28,17 +21,17 @@ As you can see in the example above, the gauge is created by defining the minimu
 
 An angular gauge consists of the following elements:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#color-range">Color range (radial scale)</a>
+* Color range (radial scale)
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#dials-data-indicators">Dials (data value indicators)</a>
+* Dials (data value indicators)
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#tick-marks">Tick marks and values</a>
+* Tick marks and values
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#tool-tips">Tool-tips</a>
+* Tool-tips
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#trend-points--trend-arcs--trend-markers">Trend points, trend arcs, and trend markers</a>
+* Trend points, trend arcs, and trend markers
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#annotations">Annotations</a>
+* Annotations
 
 We will see each of them in detail. Let’s first have a look at a standard angular gauge chart enlisting the various basic components:
 

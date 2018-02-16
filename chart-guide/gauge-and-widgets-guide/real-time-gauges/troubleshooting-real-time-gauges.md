@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/real-time-gauges/troubleshooting-real-time-gauges.html
 title: Troubleshooting Real-time Gauges | FusionCharts
 description: This article talks about few problems of real time gauges, that is, gauges does not update in real-time or any error accessing JavaScript API method
 heading: Troubleshooting Real-time Gauges

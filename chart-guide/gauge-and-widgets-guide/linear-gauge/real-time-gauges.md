@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/linear-gauge/real-time-gauges.html
 title: Real-time Linear Gauge | FusionCharts
 description: This section of linear gauge talks about configuring real-time updated using Javascript API or server-side script, etc
 heading: Real-time Linear Gauge
@@ -7,18 +6,6 @@ chartPresent: true
 ---
 
 The linear gauge is a real-time chart, which can continuously request new data from the server and display the same, without involving any page refreshes. The chart initializes itself, loads new data every n seconds, and silently updates itself to reflect the current state of data. There are two different ways to update the linear gauge; one method directly polls data from the server while the other retrieves data using JavaScript API methods.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/real-time-gauges.html#configuring-real-time-updates-using-javascript-api">Configure real-time updates using JavaScript API</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/real-time-gauges.html#real-time-updates-using-server-side-script">Configure real-time updates using server-side script</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/real-time-gauges.html#stoppingrestarting-updates">Stop and restart updates</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/real-time-gauges.html#configuring-real-time-events">Configure events associated with real-time gauges</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/real-time-gauges.html#troubleshooting">Troubleshoot real-time gauges</a>
 
 ## Configuring Real-time Updates using JavaScript API
 

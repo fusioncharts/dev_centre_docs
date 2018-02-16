@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/creating-editable-gauges.html
 title: Creating Editable Angular Gauge | FusionCharts
 description: This section talks on how to convert a normal gauge to an editable one.
 heading: Creating Editable Angular Gauge
@@ -7,10 +6,6 @@ chartPresent: true
 ---
 
 The angular gauge in the FusionCharts Suite XT suite can also act as an input control, allowing users to visually drag and change the value of the dial. Once the value is updated, it can be retrieved by the gauge using the FusionCharts’ events.
-
-In this section, you will be shown how you can:
-
-* Convert a normal gauge to an editable one
 
 ## Converting a Normal Gauge to an Editable Gauge
 

@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/linear-gauge/creating-editable-gauges.html
 title: Creating Editable Linear Gauge | FusionCharts
 description: The linear gauge in FusionCharts Suite XT can act as an input control, allowing users to visually drag and change the value of pointer.
 heading: Creating Editable Linear Gauge

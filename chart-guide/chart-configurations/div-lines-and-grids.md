@@ -48,7 +48,7 @@ To customize the display of divisional lines follow the steps given below:
 
 * Specify the hex code for the color of the div line using the `divLineColor` attribute.
 
-* Set the thickness (in pixels) of the horizontal div lines using the `divLineThickness` attribubte.
+* Set the thickness (in pixels) of the horizontal div lines using the `divLineThickness` attribute.
 
 * Set the transparency of the divisional lines using the `divLineAlpha` attribute.
 
@@ -76,7 +76,7 @@ You can render the divisional lines as dashed lines, instead of the default cont
 
 * Set the `divLineDashed` attribute to `1` to display the div lines as dashed.
 
-* Set the length of each dash line using the `divLineDashLen` attribute.
+* Set the length of each dashed line using the `divLineDashLen` attribute.
 
 * Set the gap between the dashed lines using the `divLineDashGap` attribute.
 

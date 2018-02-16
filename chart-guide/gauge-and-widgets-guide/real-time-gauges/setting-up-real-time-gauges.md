@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges.html
 title: Setting Up Real-time Gauges | FusionCharts
 description: FusionCharts Suite XT offers gauges that can be fed with real-time data periodically and can render the new data without a page refresh.
 heading: Setting Up Real-time Gauges
@@ -10,9 +9,9 @@ FusionCharts Suite XT offers gauges that can be fed with real-time data periodic
 
 You can feed real-time data to a gauge in two ways:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges.html#using-javascript-api-methods">Using JavaScript API methods</a>
+* Using JavaScript API methods
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges.html#using-server-side-scripts">Using server-side scripts</a>
+* Using server-side scripts
 
 ## Using JavaScript API Methods
 

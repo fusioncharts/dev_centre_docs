@@ -5,7 +5,7 @@ heading: Data Values
 breadcrumb: [["Home", "/"], ["Data Values"]]
 ---
 
-Data values are plot values i.e. values of each data plot (line, column, bar, pie) displayed on the chart. 
+Data values are plot values, i.e. values of each data plot (line, column, bar, pie) displayed on the chart. 
 
 ![Data Values]({% site.baseurl %}/images/chart-configurations-data-values-image-1.png)
 
@@ -108,7 +108,7 @@ The chart will look like as shown in  the image below:
 
 Click [here](http://jsfiddle.net/fusioncharts/uezpdfff/ "@@open-newtab") to edit the above chart.
 
-You can also opt to show/hide specific  data values instead of hiding all of them. Set the `showValue` attribute to `0` under the `data` for that specific data value which you want to hide. This setting overrides the `showValues` setting at the `chart` object level. 
+You can also opt to show/hide specific data values instead of hiding all of them. Set the `showValue` attribute to `0` under the `data` for that specific data value which you want to hide. This setting overrides the `showValues` setting at the `chart` object level. 
 
 Refer to the code below:
 
@@ -138,9 +138,9 @@ Click [here](http://jsfiddle.net/fusioncharts/gs43rmof/ "@@open-newtab") to edit
 
 If there is a large number of values to be displayed along the y-axis, you can opt to display every nth y-axis value skipping the rest.
 
-To do so, specify the n-th level using the `yAxisValuesStep` attribute. For  example, if you set the value as `2`, the y-axis will display every 2nd value starting from the minimum value. 
+To do so, specify the n-th level using the `yAxisValuesStep` attribute. For example, if you set the value as `2`, the y-axis will display every 2nd value starting from the minimum value. 
 
-This attribute can also assume default values based on the space available in the chart to render y-axis values, and can override the values provided to avoid overlapping of y-axis values.
+This attribute can also assume default values based on the space available in the chart to render y-axis values and can override the values provided to avoid overlapping of y-axis values.
 
 Refer to the code below:
 
@@ -160,7 +160,7 @@ Click [here](http://jsfiddle.net/fusioncharts/ekseaedo/ "@@open-newtab") to edit
 
 ## Customize Data Value Properties
 
-You can customize the data value properties in terms of font, border, background, and alpha. 
+You can customize the data value properties like font, border, background, and alpha. 
 
 ### Font Properties
 
@@ -176,7 +176,7 @@ To customize the font properties following attributes are used:
 
 *  Set the `valueFontItalic` attribute to `1` to and display the data values as `italics`
 
-* Set the tramsparency of the data values using the `valueFontAlpha` attribute.
+* Set the transparency of the data values using the `valueFontAlpha` attribute.
 
 Refer to the code below:
 
@@ -203,7 +203,7 @@ Click [here](http://jsfiddle.net/fusioncharts/e8a91fty/ "@@open-newtab") to edit
 
 ### Customize Data Value Border
 
-To customize the border of the data values the following attributes are used:
+To customize the border of the data values, the following attributes are used:
 
 * Specify the hex code of the border color using the `valueBorderColor` attribute.
 
@@ -213,7 +213,7 @@ To customize the border of the data values the following attributes are used:
 
 * Set the radius if the border using the `valueBorderRadius` attribute.
 
-* Set the `valueBorderDashed` attribute to `1` to display the  border as dashed lines.
+* Set the `valueBorderDashed` attribute to `1` to display the border as dashed lines.
 
 * Specify the gap between two dashed lines using the `valueBorderDashGap` attribute.
 
@@ -246,7 +246,7 @@ Click [here](http://jsfiddle.net/fusioncharts/k8u7ront/ "@@open-newtab") to edit
 
 ### Customize Data Value Background
 
-To customize the background of the data  values the following attributes are used:
+To customize the background of the data values, the following attributes are used:
 
 * Specify the hex code for the background color using the `valueBgColor` attribute.
 

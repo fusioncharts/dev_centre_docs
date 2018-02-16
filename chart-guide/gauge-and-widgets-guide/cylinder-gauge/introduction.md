@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/cylinder-gauge/introduction.html
 title: Introduction to Cylinder Gauge | FusionCharts
 description: The cylinder gauge is represented by a vertical cylinder, whose fill level is defined by the data value being plotted.
 heading: Introduction to Cylinder Gauge
@@ -9,12 +8,6 @@ chartPresent: true
 The cylinder gauge is represented by a vertical cylinder, whose fill level is defined by the data value being plotted. It is used to report inventory levels, fuel levels, etc.
 
 The cylinder gauge is a real-time chart, which can update its data after specified intervals, without requiring any page refreshes.
-
-In this section, you will be introduced to:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/introduction.html#a-simple-cylinder-gauge">A simple cylinder gauge</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/cylinder-gauge/introduction.html#elements-of-the-gauge">Elements of a cylinder gauge</a>
 
 ## A Simple Cylinder Gauge
 

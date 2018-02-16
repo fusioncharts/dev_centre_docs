@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.html
 title: Configuring Tick Marks in Angular Gauge | FusionCharts
 description: This section talks about showing/hiding the tick marks and tick values, configuring tick mark cosmetics, munber of major and minor tick marks, etc
 heading: Configuring Tick Marks in Angular Gauge
@@ -7,20 +6,6 @@ chartPresent: true
 ---
 
 FusionCharts Suite XT allows you to configure several functional and cosmetic properties for tick marks and tick values.
-
-In this section, you will be shown how to:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.html#showinghiding-tick-marks-and-tick-values">Show/hide the tick marks and tick values</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.html#placing-tick-marks-and-tick-values-inside-the-gauge">Place tick marks and tick values inside the gauge</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.html#configuring-the-number-of-major-and-minor-tick-marks">Configure the number of major and minor tick marks</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.html#configuring-cosmetics-for-major-and-minor-tick-marks">Configure tick mark cosmetics</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.html#configuring-tick-values">Configure tick values</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.html#setting-tick-value-distance">Set the tick value distance</a>
 
 ## Showing/Hiding Tick Marks and Tick Values
 
@@ -44,8 +29,6 @@ Given below is a brief description of the attributes used to show/hide the tick 
     <td>It is used to specify whether the tick values will be shown or hidden. Setting this attribute to `0` hides the tick values, setting it to `1` (default) shows them. </td>
   </tr>
 </table>
-
-
 
 ## Placing Tick Marks and Tick Values Inside the Gauge
 

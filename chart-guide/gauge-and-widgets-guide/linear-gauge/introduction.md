@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/linear-gauge/introduction.html
 title: Introduction to Linear Gauge | FusionCharts
 description: A linear gauge uses a horizontal scale to display the data range. This section talks about basics of a linear gauge and its elements
 heading: Introduction to Linear Gauge
@@ -7,12 +6,6 @@ chartPresent: true
 ---
 
 A linear gauge uses a horizontal scale to display the data range along with a fully configurable data pointer (or multiple pointers) to indicate the data value on the scale.
-
-In this section, you will be introduced to:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/introduction.html#basics-of-a-linear-gauge">Basics of a linear gauge</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/introduction.html#elements-of-the-linear-gauge">Elements of a linear gauge</a>
 
 ## Basics of a Linear Gauge
 

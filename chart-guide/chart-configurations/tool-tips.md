@@ -5,7 +5,7 @@ heading: Tooltips
 breadcrumb: [["Home", "/"], ["Tooltips"]]
 ---
 
-A tooltip is displayed when the mouse is hovered over a particular data point. It denotes valuable information such as:
+A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information such as:
 
 * It denotes the name and data value in single series charts.
 
@@ -32,13 +32,13 @@ Refer to the code below:
 
 To customize the tooltip use the following attributes:
 
-* Specify the hex code of the tooltip background color using the `toolTipBGColor` attribute. Example - #000ffa.
+* Specify the hex code for the tooltip background color using the `toolTipBGColor` attribute. Example - #000ffa.
 
-* Specify the hex code of the tooltip border color using the `toolTipBorderColor` attribute. Example - #ffaffa.
+* Specify the hex code for the tooltip border color using the `toolTipBorderColor` attribute. Example - #ffaffa.
 
 * By default, the character used to separate the name and the value within the tooltip is set as `,`. Set a different separator character using the `ToolTipSepChar` attribute. This attribute accepts any string, e.g. `:`.
 
-* Set the `showTooltipShadow` attribute to `1` in order to display shadow. 
+* Set the `showTooltipShadow` attribute to `1` to display shadow. 
 
 Refer to the code below:
 
@@ -61,7 +61,7 @@ Click [here](http://jsfiddle.net/fusioncharts/df92k3t5/ "@@open-newtab") to edit
 
 ## Display Multiline Tooltip Text
 
-By default, a tooltip shows the data item name and value in a single line of text. However, if you want to display more information on the tooltip, you can use the attribute `tooltext`to show the text in multiline format.
+By default, a tooltip shows the data item name and value in a single line of text. However, if you want to display more information on the tooltip, you can use the attribute `tooltext` to show the text in multiline format.
 
 Refer to the code below:
 
@@ -85,7 +85,7 @@ Click [here](http://jsfiddle.net/fusioncharts/13a8664h/ "@@open-newtab") to edit
 
 FusionCharts Suite XT 3.4 introduces macros to configure dynamic and contextual content in tooltips. A macro is an instruction recorded using a combination of characters for a specific purpose. 
 
-You can use tooltip macros to customize chart labels, data values, display values etc. as variables, and plain text, to form a completely customized tooltip text. Each chart contains labels, raw values, formatted values, display values, etc., as variables that you use in conjunction with your custom text to form the complete tooltext. 
+You can use tooltip macros to customize chart labels, data values, display values, etc. as variables, and plain text, to form a completely customized tooltip text. Each chart contains labels, raw values, formatted values, display values, etc., as variables that you use in conjunction with your custom text to form the complete tooltext. 
 
 Tooltips can be configured to include supplementary information about the data plotted on a chart. Macros allow you to automate the inclusion of this information, saving the effort of manual customization.
 
@@ -95,13 +95,13 @@ Keep the following pointers in mind when using macros:
 
 * A macro which is not applicable will be treated as string.
 
-* To use a macro name as text in tooltip use "" before the "$" sign. Example: to show "$value" in tooltip use "$value" in `tooltext` attribute.
+* To use a macro name as text in tooltip use `""` before the `"$"` sign. Example: to show "$value" in tooltip use "$value" in `tooltext` attribute.
 
-* Tooltext can also be configured from corresponding parent nodes (that is, chart, dataset, etc).
+* Tooltext can also be configured from corresponding parent nodes (that is, chart, dataset, etc.).
 
 ### How to use Tooltip Macros
 
-To configure tooltip text with tooltip macros, set a custom tooltip using `plotToolText` attribute. The attribute accepts macros, plain text and HTML tags, as strings to create custom tooltip text for data plots. You can use the following attributes with `plotToolText`:
+To configure tooltip text with tooltip macros, set a custom tooltip using `plotToolText` attribute. The attribute accepts macros, plain text, and HTML tags, as strings to create custom tooltip text for data plots. You can use the following attributes with `plotToolText`:
 
 * Use the `$label` macro to customize the data plot, category, connector, and marker labels.
 
@@ -187,7 +187,7 @@ Click [here](http://jsfiddle.net/fusioncharts/67Lzs1fq/ "@@open-newtab") to edit
 
 In the above chart, hover the mouse pointer over the trend-lines to see the tooltip text. You can find the description of the `trendlineToolText` attribute, in the Other attributes you can use section. Also, for details on the `$displayValue` macro, visit the How to use tooltip macros section.
 
-Apart from the ones given above, you can use either the `$startDataValue` macro (which represents the formatted starting value of a trend-line/trend-zone), or the `$startValue` macro (which represents the unformatted starting value). If the starting value is 680000 and you use `$startDataValue`, then the chart will show $680k as the data value. On the other hand, if you use `$startValue`, then the chart will show 680000 as the data value.  
+Apart from the ones given above, you can use either the `$startDataValue` macro (which represents the formatted starting value of a trend-line/trend-zone) or the `$startValue` macro (which represents the unformatted starting value). If the starting value is 680000 and you use `$startDataValue`, then the chart will show $680k as the data value. On the other hand, if you use `$startValue`, then the chart will show 680000 as the data value.  
 
 Click here for the complete list of tooltip macros supported by FusionCharts Suite XT.
 

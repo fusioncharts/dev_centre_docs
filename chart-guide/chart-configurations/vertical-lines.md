@@ -13,7 +13,7 @@ Vertical (or horizontal in case of bar charts) separator lines or `vlines` are e
 
 By default, the vertical lines do not appear. To display a vertical line follow the steps below:
 
-* Create and object under `data` between the data values where you want to render the vertical line.
+* Create an object under `data` between the data values where you want to render the vertical line.
 
 * Set the `vLine` attribute to `1`. 
 
@@ -92,7 +92,7 @@ Click [here](http://jsfiddle.net/fusioncharts/kLwfdgL0/ "@@open-newtab") to edit
 
 ### Configure Label Alignment
 
-To configure the alignment of the label the following attributes are used:
+To configure the alignment of the label, the following attributes are used:
 
 * Set the horizontal alignment of the label using the `labelHAlign` attribute. The possible values for this attribute are `left`, `center` (default), and `right`.
 
@@ -215,7 +215,7 @@ Click [here](http://jsfiddle.net/fusioncharts/6zL3r5d1/ "@@open-newtab") to edit
 
 ## Customize Visual Properties
 
-To customize the visual properties of the vertical line the following attributes are used:
+To customize the visual properties of the vertical line, the following attributes are used:
 
 * Specify the hex code for the color of the vertical line using the `color` attribute.
 

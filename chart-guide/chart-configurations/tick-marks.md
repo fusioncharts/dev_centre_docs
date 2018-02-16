@@ -122,7 +122,7 @@ Click [here](http://jsfiddle.net/fusioncharts/vqdccxk4/ "@@open-newtab") to edit
 
 To customize the position of tick marks and tick values of a vertical gauge use the following attributes:
 
-* Set the `ticksOnRight` to `1` to view the tick marks at the right of the gauge. In case of the vertical gauge the tick marks get rendered above the gauge.
+* Set the `ticksOnRight` to `1` to view the tick marks at the right of the gauge. In case of the vertical gauge, the tick marks get rendered above the gauge.
 
 Refer to the code below:
 
@@ -250,9 +250,9 @@ You can configure the color, transparency, height, and thickness of both, major 
 
 To do so, use the following attributes:
 
-* Specify the hex code of the major ticks color using the `majorTMColor` attribute. 
+* Specify the hex code for the major ticks color using the `majorTMColor` attribute. 
 
-* Specify the hex code of the minor ticks color using the `minorTMColor` attribute.
+* Specify the hex code for the minor ticks color using the `minorTMColor` attribute.
 
 * Set the transparency of the major ticks using the `majorTMAlpha` attribute.
 
@@ -262,9 +262,9 @@ To do so, use the following attributes:
 
 * Set the height of the minor ticks using the `minorTMHeight` attribute.
 
-* Set the thickness of the major ticks using  the `majorTMThickness` attribute.
+* Set the thickness of the major ticks using the `majorTMThickness` attribute.
 
-* Set the thickness of the minor ticks using  the `minorTMThickness` attribute.
+* Set the thickness of the minor ticks using the `minorTMThickness` attribute.
 
 Refer to the code below:
 

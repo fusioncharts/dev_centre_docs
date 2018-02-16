@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/led-gauge/simple-gauge-example.html
 title: Simple LED Gauge Example | FusionCharts
 description: This section of talks about how to define the lower/upper limits for the gauge scale. How to divide the gauge scale into three different colored regions, etc
 heading: Simple LED Gauge Example

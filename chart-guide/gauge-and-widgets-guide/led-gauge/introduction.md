@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/led-gauge/introduction.html
 title: Introduction to LED Gauge | FusionCharts
 description: An LED gauge has a horizontal/vertical scale. It uses bars that change color. This section talks about basics of LED gauges along with their useful elements
 heading: Introduction to LED Gauge
@@ -9,12 +8,6 @@ chartPresent: true
 An LED Gauge is essentially similar to an angular gauge chart but with a horizontal/vertical scale instead of a circular one. It uses bars that change color, or marks out different regions in different colors to indicate whether data is within preset parameters. The colors can be selected to suit the application such as green for satisfactory, yellow for caution, and red for alarm.
 
 LED gauges are of two types - horizontal LED gauges and vertical LED gauges. As the name suggests, the horizontal LED gauge has the bar placed horizontally while the vertical LED has it vertically. LED Gauges are used in financial applications like management dashboards, factory operation output reports, etc.
-
-In this section, you will be introduced to the:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/led-gauge/introduction.html#basics-of-led-gauges">Basics of LED gauges</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/led-gauge/introduction.html#elements-of-led-gauges">Elements of LED gauges</a>
 
 ## Basics of LED Gauges
 

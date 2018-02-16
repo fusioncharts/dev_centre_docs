@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/linear-gauge/simple-gauge-example.html
 title: Simple Linear Gauge Example | FusionCharts
 description: Linear gauge is used to display aspecific data point over a horizontal scale using a slider component.
 heading: Simple Linear Gauge Example

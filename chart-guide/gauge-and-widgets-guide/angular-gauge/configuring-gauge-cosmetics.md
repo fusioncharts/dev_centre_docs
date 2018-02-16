@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html
 title: Configuring Angular Gauge Cosmetics | FusionCharts
 description: This section talks about configuring the gauge gradient fill, gauge border, gauge radius, pivot properties.
 heading: Configuring Angular Gauge Cosmetics
@@ -7,16 +6,6 @@ chartPresent: true
 ---
 
 The angular gauge chart in the FusionCharts Suite XT offers you a lot of configuration options that help you improve the visual representation of the gauge.
-
-In this section, you will be shown how you can configure the:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-the-gauge-gradient-fill">Gauge gradient fill</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-gauge-borders">Gauge borders</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-the-gauge-radius-and-inner-radius">Gauge radius and inner radius</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-pivot-properties">Pivot properties</a>
 
 ## Configuring the Gauge Gradient Fil
 

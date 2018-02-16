@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/angular-gauge/adding-trend-points.html
 title: Adding Trend Points in Angular Gauge | FusionCharts
 description: This section talks about adding simple trend point, show trend markers, create trend arcs, customize trend arcs, etc.
 heading: Adding Trend Points in Angular Gauge
@@ -7,16 +6,6 @@ chartPresent: true
 ---
 
 Trend points are elements that you use to show a target value on the gauge. For example, while plotting the average customer satisfaction score for the current year, you might also want to show the average score for the last year for comparison. This average score for the last year can be shown as a trend point on the gauge.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/adding-trend-points.html#adding-a-simple-trend-point">Add a simple trend point</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/adding-trend-points.html#showing-trend-markers">Show trend markers</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/adding-trend-points.html#creating-a-trend-arc">Create trend arcs</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/adding-trend-points.html#customizing-a-trend-arc">Customize trend arcs</a>
 
 ## Adding a Simple Trend Point
 
@@ -73,12 +62,7 @@ Given below is a brief description of the attributes used to add and customize a
   </tr>
 </table>
 
-
 These attributes belong to the `point` object, which in turn belongs to the `trendpoints` object.
-
-
-
-
 
 ## Showing Trend Markers
 
