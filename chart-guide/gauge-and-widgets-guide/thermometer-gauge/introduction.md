@@ -8,12 +8,6 @@ chartPresent: true
 
 Thermometer gauge, as the name implies, is used to display temperatures. The fill level of the thermometer indicates the temperature data that you wish to depict. The thermometer chart is a real-time gauge, which can update its data at every specified interval, without requiring any page refreshes.
 
-In this section, you will be introduced to:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/introduction.html#basics-of-the-thermometer-gauge">Basics of the thermometer gauge</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/introduction.html#elements-of-thermometer-gauge">Elements of thermometer gauge</a>
-
 ## Basics of the Thermometer Gauge
 
 A sample FusionCharts Suite XT real-time thermometer gauge looks like this:

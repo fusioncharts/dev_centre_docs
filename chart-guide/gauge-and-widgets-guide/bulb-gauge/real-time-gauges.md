@@ -8,18 +8,6 @@ chartPresent: true
 
 The bulb gauge is a real-time chart, which can continuously request new data from the server and display the same, without involving any page refreshes. The chart initializes itself, loads new data periodically, and auto-updates to reflect the current state of data. There are two different ways to update the bulb gauge; one method directly polls data from the server while the other retrieves data using JavaScript API methods.
 
-In this section, you will be shown how you can,
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html#configuring-real-time-updates-using-javascript-api">Configure real-time updates using JavaScript API</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html#configuring-real-time-updates-using-server-side-scripts">Configure real-time updates using server-side script</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html#stoppingrestarting-updates">Stop/restart updates</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html#configuring-real-time-events">Configure real-time events</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/real-time-gauges.html#troubleshooting-real-time-gauges">Troubleshoot real-time gauges</a>
-
 ## Configuring Real-time Updates Using JavaScript API
 
 ### Real-time Data Format

@@ -16,7 +16,6 @@ FusionCharts Suite XT offers two real-time events:
 
 * `realTimeUpdateError()`
 
-
 ## The `realtimeUpdateComplete()` Event
 
 This event is triggered every time the gauge updates itself with new data, in one of the following ways:

@@ -8,12 +8,6 @@ chartPresent: true
 
 Trend points are elements that can be used to show a target value on the gauge, for example, the target customer satisfaction score, optimum server utilization, etc.
 
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/adding-trend-points.html#adding-trend-points-in-a-linear-gauge">Add trend-points in a linear gauge</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/adding-trend-points.html#trend-zones">Add trend-zones in a linear gauge</a>
-
 ## Adding Trend-points in a Linear Gauge
 
 ### Adding a Simple Trend-point

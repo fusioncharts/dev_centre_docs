@@ -31,8 +31,6 @@ Given below is a brief description of the attributes used to show/hide the tick 
   </tr>
 </table>
 
-
-
 ## Placing Tick Marks and Tick Values Inside the Gauge
 
 By default, the tick marks and tick values are rendered outside the gauge scale. However, you can configure them to be placed inside the gauge.

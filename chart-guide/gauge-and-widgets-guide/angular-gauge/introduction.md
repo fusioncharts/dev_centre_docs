@@ -22,17 +22,17 @@ As you can see in the example above, the gauge is created by defining the minimu
 
 An angular gauge consists of the following elements:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#color-range">Color range (radial scale)</a>
+* Color range (radial scale)
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#dials-data-indicators">Dials (data value indicators)</a>
+* Dials (data value indicators)
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#tick-marks">Tick marks and values</a>
+* Tick marks and values
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#tool-tips">Tool-tips</a>
+* Tool-tips
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#trend-points--trend-arcs--trend-markers">Trend points, trend arcs, and trend markers</a>
+* Trend points, trend arcs, and trend markers
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/introduction.html#annotations">Annotations</a>
+* Annotations
 
 We will see each of them in detail. Let’s first have a look at a standard angular gauge chart enlisting the various basic components:
 

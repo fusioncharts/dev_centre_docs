@@ -10,10 +10,6 @@ One of the simplest gauges available in the FusionCharts Suite XT, the bulb gaug
 
 In this section, you will be introduced to the:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/introduction.html#basics-of-the-bulb-gauge">Basics of bulb gauge</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/introduction.html#elements-of-the-bulb-gauge">Elements of bulb gauge</a>
-
 ## Basics of the Bulb Gauge
 
 The bulb gauge is one of the simplest charts in all. It is used in a variety of applications including financial dashboards, machine controller screens etc., where a single value or state indicator is required.

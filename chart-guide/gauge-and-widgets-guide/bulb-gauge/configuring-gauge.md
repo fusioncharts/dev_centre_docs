@@ -8,22 +8,6 @@ chartPresent: true
 
 FusionCharts Suite XT allows you to customize several functional and cosmetic properties for the bulb gauge.
 
-In this section you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/configuring-gauge.html#configuring-the-gauge-border">Configure the gauge border</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/configuring-gauge.html#using-gradient-fill-mix-for-the-gauge-border">Use the gradient fill mix for the gauge border</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/configuring-gauge.html#configuring-the-origin-and-the-radius-of-the-bulb-gauge">Configure the Origin and the Radius of the Bulb Gauge</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/configuring-gauge.html#rendering-the-bulb-gauge-in-2d">Render the bulb gauge in 2D</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/configuring-gauge.html#placing-the-gauge-value-inside-the-gauge">Place the gauge value inside the gauge</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/configuring-gauge.html#rendering-the-range-name-as-the-gauge-label">Show range name instead of numerical value</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bulb-gauge/configuring-gauge.html#configuring-the-hover-effect">Configure hover effects</a>
-
 ## Configuring the Gauge Border
 
 A bulb gauge rendered with customized gauge border properties looks like this:

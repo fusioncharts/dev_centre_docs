@@ -8,20 +8,6 @@ chartPresent: true
 
 FusionCharts Suite XT allows you to customize several cosmetic and functional properties for the thermometer gauge.
 
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/configuring-gauge.html#customizing-the-gauge-fill">Customize the gauge fill</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/configuring-gauge.html#customizing-the-gauge-borders">Customize the gauge border</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/configuring-gauge.html#setting-the-thermometer-radius-and-height-manually">Set the thermometer radius and height manually</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/configuring-gauge.html#showinghiding-the-temperature-value">Show/hide temperature value</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/configuring-gauge.html#showinghiding-tick-marks-and-tick-values">Configure tick marks and values</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/thermometer-gauge/configuring-gauge.html#configuring-hover-effects-for-the-thermometer-gauge">Configure the hover effect</a>
-
 ## Customizing the Gauge Fill
 
 A thermometer gauge with the gauge fill customized looks like this:
@@ -44,7 +30,6 @@ Given below is a brief description of the attributes used to customize the gauge
     <td>It is used to specify the transparency for the gauge fill. This attribute takes values between 0 (transparent) and 100 (opaque), e.g. 50.</td>
   </tr>
 </table>
-
 
 ## Customizing the Gauge Borders
 

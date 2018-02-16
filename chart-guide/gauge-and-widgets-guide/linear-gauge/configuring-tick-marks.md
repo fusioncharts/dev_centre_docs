@@ -8,20 +8,6 @@ chartPresent: true
 
 FusionCharts Suite XT allows you to configure several functional and cosmetic properties for tick marks and tick values.
 
-In this section, you will be shown how to:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-tick-marks.html#showinghiding-tick-marks-and-tick-values">Show/hide tick marks and tick values</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-tick-marks.html#configuring-tick-values">Configure tick values</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-tick-marks.html#configuring-the-position-of-tick-marks-and-tick-values">Configure the position of tick marks and values</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-tick-marks.html#configuring-the-number-of-major-and-minor-tick-marks">Configure the number of major and minor tick marks</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-tick-marks.html#configuring-cosmetics-for-tick-marks">Configure tick mark cosmetics</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/linear-gauge/configuring-tick-marks.html#configuring-the-tick-mark-and-tick-value-padding">Configure tick mark and tick value padding</a>
-
 ## Showing/Hiding Tick Marks and Tick Values
 
 A linear gauge configured to show/hide tick marks and tick values looks like this:

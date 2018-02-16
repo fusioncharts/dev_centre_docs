@@ -63,12 +63,7 @@ Given below is a brief description of the attributes used to add and customize a
   </tr>
 </table>
 
-
 These attributes belong to the `point` object, which in turn belongs to the `trendpoints` object.
-
-
-
-
 
 ## Showing Trend Markers
 
