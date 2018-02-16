@@ -5,11 +5,11 @@ heading: Data Plot
 breadcrumb: [["Home", "/"], ["Data Plot"]]
 ---
 
-Data plot refers to the column in column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart. You can enhance the way your data plot looks using colors, gradients and hover effects. 
+Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart. You can enhance the way your data plot looks using colors, gradients and hover effects. 
 
 ## Color individual data plots
 
-You can specify a custom color for each data plot. Specify the hex code of the color using the `color` attribute within `data` under the `chart` object.
+You can specify a custom color for each data plot. Specify the hex code of the color using the `color` attribute within `data`under the `chart` object.
 
 Refer to the code below:
 
@@ -93,7 +93,7 @@ Click [here](http://jsfiddle.net/fusioncharts/2kayhgmk/ "@@open-newtab") to edit
 
 You can also specify a comma separated list of colors for use in different data series (or in case of single series charts, different data plots). The colors are selected from the list in a round-robin way for each data series. 
 
-Specify your own palette for data plots by providing a list of hex colors using the `paletteColors` attribute. Refer to the code below:
+Specify your custom palette for data plots by providing a list of hex colors using the `paletteColors` attribute. Refer to the code below:
 
 ```json
 {
@@ -136,11 +136,11 @@ Click [here](http://jsfiddle.net/fusioncharts/b781gp10/ "@@open-newtab") to edit
 
 ## Customize Gradient Properties
 
-Apart from a basic gradient effect, you can also customize the gradient angle and fill ratio for a data plot. To customize the gradient properties the following attributes are used:
+Apart from a basic gradient effect, you can also customize the gradient angle and fill ratio for a data plot. To customize the gradient properties, the following attributes are used:
 
-* `plotFillAngle` - Set the fill angle for gradient (for column, area and pie charts). Values can range from `0-360`.
+* `plotFillAngle` - Set the fill angle for the gradient (for column, area and pie charts). Values can range from `0-360`.
 
-* `plotFillRatio` - Specify the start and end of the gradient effect in a comma separated format. For example a setting of "20, 40" would cause the gradient effect to start at 20% of width and end at 40% of width. The color before gradient start would be set to the data plot color and after gradient end would get set to the gradient fill color.
+* `plotFillRatio` - Specify the start and end of the gradient effect in a comma separated format. For example, a setting of "20, 40" would cause the gradient effect to start at 20% of width and end at 40% of the width. The color before gradient start would be set to the data plot color, and after the gradient end would get set to the gradient fill color.
 
 * `plotFillAlpha` - Set the transparency of the gradient fill. 
 
