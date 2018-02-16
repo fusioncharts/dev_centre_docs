@@ -185,7 +185,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/67Lzs1fq/ "@@open-newtab") to edit the above chart.
 
-In the above chart, hover the mouse pointer over the trend-lines to see the tooltip text. You can find the description of the `trendlineToolText` attribute, in the Other attributes you can use section. Also, for details on the `$displayValue` macro, visit the How to use tooltip macros section.
+In the above chart, hover the mouse pointer over the trend-lines to see the tooltip text. You can find the description of the `trendlineToolText` attribute, in the Other attributes you can use section. 
 
 Apart from the ones given above, you can use either the `$startDataValue` macro (which represents the formatted starting value of a trend-line/trend-zone) or the `$startValue` macro (which represents the unformatted starting value). If the starting value is 680000 and you use `$startDataValue`, then the chart will show $680k as the data value. On the other hand, if you use `$startValue`, then the chart will show 680000 as the data value.  
 
