@@ -34,7 +34,7 @@ However, to dynamically pass values to the gauge, you use the JavaScript API.
 
 A cylinder gauge configured to receive real-time updates using the JavaScript API looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-real-time-gauges-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-real-time-gauges-example-1.js %}
 
 The cylinder gauge exposes the following JavaScript APIs:
 
@@ -70,7 +70,7 @@ Another way to update a chart in real-time is by using server-side script.
 
 A cylinder gauge configured to receive real-time updates using the server-side script looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-real-time-gauges-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-real-time-gauges-example-2.js %}
 
 The new attributes that need to be added for receiving real-time updates from the server are:
 
@@ -113,7 +113,7 @@ To restart updates from the server, use the `startUpdate` command from the serve
 
 A cylinder gauge configured to allow stopping and restarting real-time updates from the server, looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-real-time-gauges-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-real-time-gauges-example-3.js %}
 
 The cylinder gauge exposes the following JavaScript APIs for stop update and restart update:
 
@@ -146,7 +146,7 @@ This event is raised when a real-time gauge or chart completes updating data.
 
 A cylinder gauge configured to listen to the `realTimeUpdateComplete` event looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-real-time-gauges-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-real-time-gauges-example-4.js %}
 
 Given below is a brief description of the `realTimeUpdateComplete` event:
 
@@ -174,7 +174,7 @@ This event is raised when an error occurs while updating data in a real-time gau
 
 A cylinder gauge configured to listen to the `realTimeUpdateError` event looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-cylinder-gauge-real-time-gauges-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-cylinder-gauge-real-time-gauges-example-5.js %}
 
 Given below is a brief description of the `realtimeUpdateError` event:
 

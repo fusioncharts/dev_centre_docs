@@ -1,7 +1,6 @@
 {
     type: 'bulb',
     renderAt: 'chart-container',
-    id: 'myChart',
     width: '300',
     height: '300',
     dataFormat: 'json',

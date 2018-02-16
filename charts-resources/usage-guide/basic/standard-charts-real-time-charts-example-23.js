@@ -41,14 +41,14 @@
         'beforeRender': function(evt, arg) {
             var controllers = document.createElement('div');
             controllers.setAttribute('id', 'tableCont-2');
-            controllers.innerHTML = "<div id='errorView' style='width: 475px;border: 2px solid #666666;background-color:#9b545b;  color:#ffffff;display:none;padding: 3px;margin-left: 60px;margin-top: 10px;'></div>";
+            controllers.innerHTML = "<div id='errorView' style='width: 475px;border: 2px solid #666666;background-color:#9b545b;  color:#ffffff;display:block;padding: 3px;margin-left: 60px;margin-top: 10px;'></div>";
             //Display container div and write table
             arg.container.parentNode.insertBefore(controllers, arg.container.nextSibling);
 
         },
         'RealtimeUpdateError': function(event, parameter) {
             var dispBox = document.getElementById("errorView");
-            dispBox.style.display = "block";
+            // dispBox.style.display = "block";
             dispBox.innerHTML = "Problem occurred while updating real-time data. The error status code is" + parameter.httpStatus;
         }
     }

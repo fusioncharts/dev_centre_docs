@@ -30,7 +30,7 @@ By default, a pyramid chart renders as a 3D chart with a context menu that allow
 
 A pyramid chart rendered  in 2D mode with customized border properties looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-pyramid-chart-configuring-chart-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-pyramid-chart-configuring-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to render a 2D pyramid chart with customized border properties:
 
@@ -67,7 +67,7 @@ Given below is a brief description of the attributes used to render a 2D pyramid
 
 A pyramid chart configured to render labels at the center looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-pyramid-chart-configuring-chart-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-pyramid-chart-configuring-chart-example-2.js %}
 
 Given below is a brief description of the attribute used to render labels at the center:
 
@@ -91,7 +91,7 @@ You can opt to show the labels in the legend box instead of showing them with th
 A pyramid chart with the labels rendered in the legend box looks like this:
 
 
-{% embed_all {"source": "gauge-and-widgets-guide-pyramid-chart-configuring-chart-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-pyramid-chart-configuring-chart-example-3.js %}
 
 
 Given below is a brief description of the attributes used to show labels in the legend:
@@ -120,7 +120,7 @@ By default, the legend box is placed at the bottom of the pyramid chart. You can
 
 A pyramid chart with the legend box positioned to the right looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-pyramid-chart-configuring-chart-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-pyramid-chart-configuring-chart-example-4.js %}
 
 Given below is a brief description of the attribute used to configure the position of the legend box:
 
@@ -141,7 +141,7 @@ Given below is a brief description of the attribute used to configure the positi
 
 A pyramid chart configured to show percent values instead of numerical values looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-pyramid-chart-configuring-chart-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-pyramid-chart-configuring-chart-example-5.js %}
 
 Given below is a brief description of the attribute used to show percent values:
 
@@ -162,7 +162,7 @@ Given below is a brief description of the attribute used to show percent values:
 
 A pyramid chart rendered with each slice sliced out looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-pyramid-chart-configuring-chart-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-pyramid-chart-configuring-chart-example-6.js %}
 
 Given below is a brief description of the attribute used to slice out the pyramid slices:
 
@@ -185,7 +185,7 @@ If this attribute is used as a part of the `chart` object, it is applicable to a
 
 A pyramid chart with hover effects enabled looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-pyramid-chart-configuring-chart-example-7.js", "id": "7"} %}
+{% embed_all gauge-and-widgets-guide-pyramid-chart-configuring-chart-example-7.js %}
 
 Given below is a brief description of the attributes used to configure the hover effects:
 

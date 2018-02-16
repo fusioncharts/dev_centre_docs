@@ -22,7 +22,7 @@ The chart below is rendered using the __squarified__ algorithm, which is the def
 
 <p class="text-info"> Click the rectangles in each chart to traverse through the chart and see how the chart view changes. </p>
 
-{% embed_all {"source": "chart-guide-treemap-chart-setting-tiling-algorithm-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-treemap-chart-setting-tiling-algorithm-example-1.js %}
 
 This treemap compares the top selling car manufacturers in Europe in the present year with their performance in the previous year.
 
@@ -57,21 +57,21 @@ In the treemap you can set the mode of slicing the nodes. In the vertical mode o
 
 The chart below is rendered using `vertical` mode of slicing : 
 
-{% embed_all {"source": "chart-guide-treemap-chart-setting-tiling-algorithm-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-treemap-chart-setting-tiling-algorithm-example-2.js %}
 
 
 #### Horizontal Mode
 
 Horizontal mode of slicing is the reverse of vertical mode where all nodes in the 1st level are sliced horizontally, but their child nodes are sliced vertically. When you set slicing mode to `horizontal`, the chart looks as shown in the image below : 
 
-![Slice and dice Horizontal Mode]({{ site.baseurl }}assets/images/chart-guide-treemap-setting-tiling-algorithm-image-2.jpg)
+![Slice and dice Horizontal Mode]({% site.baseurl %}/images/chart-guide-treemap-setting-tiling-algorithm-image-2.jpg)
 
 
 #### Alternate Mode
 
 In the alternate mode of slicing, as the name implies, the direction in which the nodes are sliced alternates between vertical and horizontal. When you set slicing mode to `alternate`, the chart looks as shown in the image below:
 
-![Slice and dice Alternate Mode]({{ site.baseurl }}assets/images/chart-guide-treemap-setting-tiling-algorithm-image-1.jpg)
+![Slice and dice Alternate Mode]({% site.baseurl %}/images/chart-guide-treemap-setting-tiling-algorithm-image-1.jpg)
 
 
 Given below is a brief description of the attribute used to set the algorithm:

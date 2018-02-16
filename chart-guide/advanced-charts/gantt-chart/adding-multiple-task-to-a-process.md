@@ -103,7 +103,7 @@ In the above JSON, we have:
 
 When you now view this chart, you'll get something as under:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-adding-multiple-tasks-to-a-process-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-adding-multiple-tasks-to-a-process-example-1.js %}
 
 ## Showing Projected vs Actual Dates
 
@@ -111,7 +111,7 @@ The technique of allocating multiple tasks can be used effectively to show the p
 
 A Gantt chart shown with the projected and actual timelines looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-adding-multiple-tasks-to-a-process-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-adding-multiple-tasks-to-a-process-example-2.js %}
 
 In the above chart, we are showing the time required by various tasks in a construction process. The projected time required is rendered in blue and the actual time required is rendered in gray.
 
@@ -125,7 +125,7 @@ As you can see in the chart above, we have used color coding to distinguish betw
 
 A projected vs actual Gantt chart rendered with a legend looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-adding-multiple-tasks-to-a-process-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-adding-multiple-tasks-to-a-process-example-3.js %}
 
 Given below is a brief description of the attributes used to render a legend:
 

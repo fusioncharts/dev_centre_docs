@@ -50,13 +50,13 @@ FusionCharts Suite XT includes two types of heat map charts:
 
 A simple numeric heat map chart looks like this:
 
-{% embed_all {"source": "chart-guide-heat-map-chart-introduction-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-heat-map-chart-introduction-example-1.js %}
 
 ### Category-based Heat Map Chart
 
 A simple category-based heat map chart looks like this:
 
-{% embed_all {"source": "chart-guide-heat-map-chart-introduction-example-2.js", "id": "2"} %}
+{% embed_all chart-guide-heat-map-chart-introduction-example-2.js %}
 
 ## Legends in Heat Map Charts
 
@@ -70,10 +70,10 @@ Heat map charts allow you to display two types of legends:
 
 A simple gradient legend looks as shown in the image below:
 
-![image gradient-legend]({{ site.baseurl }}assets/images/heat-map-introduction-1.jpg)
+![image gradient-legend]({% site.baseurl %}/images/heat-map-introduction-1.jpg)
 
 ### Icon Legend
 
 A simple icon legend looks as shown in the image below:
 
-![image icon-legend]({{ site.baseurl }}assets/images/heat-map-introduction-2.jpg)
+![image icon-legend]({% site.baseurl %}/images/heat-map-introduction-2.jpg)

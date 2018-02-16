@@ -15,7 +15,7 @@ In this section, you will be shown how you can:
 
 To understand this, the sample chart that we will use looks like this:
 
-{% embed_all {"source": "chart-guide-drag-node-chart-adding-and-deleting-text-labels-example-1.js", "id": "1"} %}
+{% embed_all chart-guide-drag-node-chart-adding-and-deleting-text-labels-example-1.js %}
 
 The above chart shows the US Subway Map and uses drag-able nodes to mark locations on the map.
 
@@ -24,12 +24,12 @@ The above chart shows the US Subway Map and uses drag-able nodes to mark locatio
 
 To add a new text label:
 
-__Step 1__: From the bottom-left corner of the chart, click the ![Menu]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-1.jpg) button. A menu is rendered.
+__Step 1__: From the bottom-left corner of the chart, click the ![Menu]({% site.baseurl %}/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-1.jpg) button. A menu is rendered.
 
 __Step 2__: From the menu, select __Add a Label__.
 The label properties dialog box, as seen in the image below, is shown:
 
-![Label Properties Dialog Box]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-3.jpg)
+![Label Properties Dialog Box]({% site.baseurl %}/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-3.jpg)
 
 __Step 3__: In the label properties dialog, enter the label information.
 
@@ -83,11 +83,11 @@ Given below is a brief description of the fields in this dialog box:
 
 The image below shows the fields of the dialog box populated for a new label:
 
-![New Label Properties Dialog Box]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-4.jpg)
+![New Label Properties Dialog Box]({% site.baseurl %}/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-4.jpg)
 
 Now, when the __Submit__ button is clicked, the new label created looks like this:
 
-![New Label]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-5.jpg)
+![New Label]({% site.baseurl %}/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-5.jpg)
 
 You can drag the label to any position on the chart.
 
@@ -112,7 +112,7 @@ To delete a text label:
 
 __Step 1__: Press and hold the left mouse button on the label that you want to delete. A dialog box appears asking you to confirm the deletion.
 
-![Confirm Deletion]({{ site.baseurl }}assets/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-6.jpg)
+![Confirm Deletion]({% site.baseurl %}/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-6.jpg)
 
 __Step 2__: From the dialog box, click __Delete__. The label is deleted.
 

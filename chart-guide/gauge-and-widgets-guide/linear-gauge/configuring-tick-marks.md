@@ -26,7 +26,7 @@ In this section, you will be shown how to:
 
 A linear gauge configured to show/hide tick marks and tick values looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-configuring-tick-marks-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-configuring-tick-marks-example-1.js %}
 
 Look at the check boxes rendered below the gauge. If you select the __Show Tick Mark?__ check box, the tick marks will be shown; if you clear it, they will be hidden. Similarly, you can select/clear the __Show Tick Value?__ check box to show/hide tick values.
 
@@ -54,7 +54,7 @@ When you have a large number of tick marks on the gauge scale, showing all tick 
 
 A linear gauge configured to render decimal tick values corresponding to every alternate tick mark looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-configuring-tick-marks-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-configuring-tick-marks-example-2.js %}
 
 Given below is a brief description of the attributes used to configure tick values:
 
@@ -84,7 +84,7 @@ By default, the tick marks are placed outside the gauge, below the gauge scale. 
 
 A linear gauge configured to place tick marks and tick values inside the gauge, above the gauge scale, looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-configuring-tick-marks-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-configuring-tick-marks-example-3.js %}
 
 Given below is a brief description of the attributes used to configure the positions of tick marks and tick values:
 
@@ -114,7 +114,7 @@ By default, the gauge automatically decides the number of major and minor tick m
 
 A linear gauge with the number of major and minor tick marks explicitly set to 9 and 5, respectively, looks like this
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-configuring-tick-marks-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-configuring-tick-marks-example-4.js %}
 
 Given below is a brief description of the attributes used to configure the number of tick marks:
 
@@ -142,7 +142,7 @@ Given below is a brief description of the attributes used to configure the numbe
 
 A linear gauge configured for the cosmetic properties of major and minor tick marks looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-configuring-tick-marks-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-configuring-tick-marks-example-5.js %}
 
 Given below is a brief description of the attributes used to configure the tick marks’ cosmetics:
 
@@ -192,7 +192,7 @@ By default, the gauge automatically decides the padding distance for tick marks 
 
 A linear gauge configured for the tick mark and tick value padding looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-configuring-tick-marks-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-configuring-tick-marks-example-6.js %}
 
 Given below is a brief description of the attributes used to configure the tick mark and tick value padding:
 

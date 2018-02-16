@@ -26,7 +26,7 @@ A real-time gauge polls for new data at regular preset intervals and displays th
 
 A bulb gauge configured for real time updates is shown below:
 
-{% embed_all {"source": "advanced-charting-real-time-gauges-introduction-example-1.js", "id": "1"} %}
+{% embed_all advanced-charting-real-time-gauges-introduction-example-1.js %}
 
 This bulb gauge shows temperature status of a deep freezer. The gauge shows a single value, which is the current temperature of the freezer. It is configured to change color and display a message in real-time based on the range the current temperature value falls in.
 

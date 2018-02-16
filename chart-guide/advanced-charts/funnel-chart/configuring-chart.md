@@ -34,7 +34,7 @@ By default, a funnel chart renders as a 3D chart with a context menu that allows
 
 A funnel chart rendered in 2D with customized borders looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-funnel-chart-configuring-chart-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-funnel-chart-configuring-chart-example-1.js %}
 
 Given below is a brief description of the attributes used to render a 2D funnel chart with customized border properties:
 
@@ -70,7 +70,7 @@ Given below is a brief description of the attributes used to render a 2D funnel 
 
 A funnel chart configured to render labels at the center looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-funnel-chart-configuring-chart-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-funnel-chart-configuring-chart-example-2.js %}
 
 Given below is a brief description of the attribute used to render labels at the center:
 
@@ -92,7 +92,7 @@ You can opt to show the labels in the legend box instead of showing them with th
 
 A funnel chart with the labels rendered in the legend box looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-funnel-chart-configuring-chart-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-funnel-chart-configuring-chart-example-3.js %}
 
 Given below is a brief description of the attributes used to show labels in the legend:
 
@@ -136,7 +136,7 @@ By default, in a 3D funnel chart, the slices are rendered as hollow. You can opt
 
 A funnel chart rendered will filled slices looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-funnel-chart-configuring-chart-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-funnel-chart-configuring-chart-example-4.js %}
 
 Given below is a brief description of the attribute used to render filled funnel slices:
 
@@ -158,7 +158,7 @@ By default, when plotting streamlined data, the chart uses variable funnel slice
 
 A funnel chart rendered with the same slant angle for all funnel slices looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-funnel-chart-configuring-chart-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-funnel-chart-configuring-chart-example-5.js %}
 
 Given below is a brief description of the attribute used to configure the same slant angle:
 
@@ -181,7 +181,7 @@ When showing values in percentage for each slice, you can ask the chart to calcu
 
 A funnel chart configured to show percentage values w.r.t the previous slice looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-funnel-chart-configuring-chart-example-6.js", "id": "6"} %}
+{% embed_all gauge-and-widgets-guide-funnel-chart-configuring-chart-example-6.js %}
 
 Given below is a brief description of the attribute used to show values as the percentage of the previous value:
 
@@ -209,7 +209,7 @@ At times, you may want important data to be highlighted so that it is easily not
 
 A funnel chart with a slice sliced-out looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-funnel-chart-configuring-chart-example-7.js", "id": "7"} %}
+{% embed_all gauge-and-widgets-guide-funnel-chart-configuring-chart-example-7.js %}
 
 Given below is a brief description of the attribute used to slice out individual funnel slices:
 
@@ -231,7 +231,7 @@ If this attribute is used as a part of the `chart` object, it is applicable to a
 
 A funnel chart with hover effects enabled looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-funnel-chart-configuring-chart-example-8.js", "id": "8"} %}
+{% embed_all gauge-and-widgets-guide-funnel-chart-configuring-chart-example-8.js %}
 
 Given below is a brief description of the attributes used to configure the hover effect:
 

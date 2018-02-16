@@ -10,7 +10,7 @@ As an example, we will create a spark win/loss chart to show the score-card of B
 
 A spark win/loss chart rendered to show Bobby Fischer’s score-card looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-chart-creating-spark-win-loss-charts-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-spark-chart-creating-spark-win-loss-charts-example-1.js %}
 
 Given below is a brief description of the attribute used to render a spark win/loss chart:
 

@@ -46,7 +46,7 @@ As an example, we will plot a time-based Gantt chart that represents the time sh
 
 The "Development Division - Time Shifts" Gantt chart thus rendered looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-creating-time-based-chart-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-creating-time-based-chart-example-1.js %}
 
 
 

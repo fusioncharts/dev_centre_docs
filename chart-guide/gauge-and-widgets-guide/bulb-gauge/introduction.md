@@ -20,7 +20,7 @@ The bulb gauge is one of the simplest charts in all. It is used in a variety of 
 
 A simple bulb gauge rendered to indicate the temperature status of deep freezers looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-bulb-gauge-introduction-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-bulb-gauge-introduction-example-1.js %}
 
 The gauge is defined by minimum and maximum values. Within that scale you can create various ranges to classify your data. Depending on the range that the data value belongs, the bulb color changes and the display value is set accordingly.
 
@@ -34,7 +34,7 @@ A bulb gauge consists of the following elements:
 
 Before going into the details of each of them, let us have a look at a bulb gauge with the basic elements labeled:
 
-![image Bulb gauge - basic elements]({{ site.baseurl }}assets/images/bulb-gauge-introduction-1.png)
+![image Bulb gauge - basic elements]({% site.baseurl %}/images/bulb-gauge-introduction-1.png)
 
 ### Color Range
 

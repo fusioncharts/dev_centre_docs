@@ -16,7 +16,7 @@ As an example, you will be shown how to create a Gantt chart  that monitors the 
 
 A Gantt chart created to track the progress of a Social Media Optimization project looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-creating-simple-gantt-chart-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-creating-simple-gantt-chart-example-1.js %}
 
 To create a Gantt chart, you need to:
 

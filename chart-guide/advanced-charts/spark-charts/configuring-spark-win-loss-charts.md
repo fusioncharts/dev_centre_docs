@@ -26,7 +26,7 @@ You can show period blocks on the chart using colored bands. This helps you easi
 
 A spark win-loss chart configured to show period blocks of three matches looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-chart-configuring-spark-win-loss-charts-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-spark-chart-configuring-spark-win-loss-charts-example-1.js %}
 
 Given below is a brief description of the attributes used to define period blocks:
 
@@ -56,7 +56,7 @@ Given below is a brief description of the attributes used to define period block
 
 A spark win-loss chart with the win, loss, and draw colors configured looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-chart-configuring-spark-win-loss-charts-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-spark-chart-configuring-spark-win-loss-charts-example-2.js %}
 
 Given below is a brief description of the attributes used to configure the win, loss, and draw colors:
 
@@ -84,7 +84,7 @@ Given below is a brief description of the attributes used to configure the win, 
 
 A spark win-loss chart with a color configured to show scoreless matches looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-chart-configuring-spark-win-loss-charts-example-3.js", "id": "3"} %}
+{% embed_all gauge-and-widgets-guide-spark-chart-configuring-spark-win-loss-charts-example-3.js %}
 
 Given below is a brief description of the attribute used to configure a color for scoreless matches:
 
@@ -104,7 +104,7 @@ Given below is a brief description of the attribute used to configure a color fo
 
 A spark win-loss chart with the chart value hidden looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-chart-configuring-spark-win-loss-charts-example-4.js", "id": "4"} %}
+{% embed_all gauge-and-widgets-guide-spark-chart-configuring-spark-win-loss-charts-example-4.js %}
 
 Given below is a brief description of the attribute used to show/hide the chart value:
 
@@ -126,7 +126,7 @@ You can use hover effects to improve the visual representation of your gauge.
 
 A spark win-loss chart configured to enable hover effects looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-spark-chart-configuring-spark-win-loss-charts-example-5.js", "id": "5"} %}
+{% embed_all gauge-and-widgets-guide-spark-chart-configuring-spark-win-loss-charts-example-5.js %}
 
 Given below is a brief description of the attributes used to configure the hover effect for a spark win-loss chart:
 

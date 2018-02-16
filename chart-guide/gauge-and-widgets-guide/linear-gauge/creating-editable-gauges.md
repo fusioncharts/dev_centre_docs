@@ -16,7 +16,7 @@ An editable gauge is a normal gauge configured to process real-time updates.
 
 A normal linear gauge converted into an editable one looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-linear-gauge-creating-editable-gauges-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-linear-gauge-creating-editable-gauges-example-1.js %}
 
 Given below is a brief description of the attribute used to create an editable gauge:
 
