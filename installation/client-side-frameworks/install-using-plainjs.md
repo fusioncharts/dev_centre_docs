@@ -299,3 +299,12 @@ Following are the chart types, and the corresponding files:
 <script src = "bower_components/fusioncharts/fusioncharts.js"> </script>  
 <script src = "bower_components/fusioncharts/fusioncharts.gantt.js"> </script>
 ```
+
+## Further Links
+
+* [Your First Chart]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart "@@open-newtab") 
+* [Your First Widget]({% site.baseurl %}/chart-guide/getting-started/building-your-first-widget "@@open-newtab") 
+* [Your First Map]({% site.baseurl %}/chart-guide/getting-started/building-your-first-map "@@open-newtab")
+* [Building Dashboards]({% site.baseurl %}/chart-guide/getting-started/building-dashboards "@@open-newtab")
+* [List of Charts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts "@@open-newtab") 
+* [List of Maps]({% site.baseurl %}/chart-guide/getting-started/list-of-maps "@@open-newtab") 

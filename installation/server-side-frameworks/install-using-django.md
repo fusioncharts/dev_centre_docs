@@ -33,3 +33,12 @@ python manage.py collectstatic
 To install the FusionCharts Django wrapper, you would require Python 2.7 (or a higher version). To download Python, click [here](https://www.python.org/downloads/).
 
 Include the `FusionCharts.py`(present in the [django-wrapper](https://github.com/fusioncharts/django-wrapper/blob/master/fusioncharts/fusioncharts.py) repository) file into your project. Once done, you can start rendering the charts using the classes and methods under the FusionCharts namespace.
+
+## Further Links
+
+* [Your First Chart]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart "@@open-newtab") 
+* [Your First Widget]({% site.baseurl %}/chart-guide/getting-started/building-your-first-widget "@@open-newtab") 
+* [Your First Map]({% site.baseurl %}/chart-guide/getting-started/building-your-first-map "@@open-newtab")
+* [Building Dashboards]({% site.baseurl %}/chart-guide/getting-started/building-dashboards "@@open-newtab")
+* [List of Charts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts "@@open-newtab") 
+* [List of Maps]({% site.baseurl %}/chart-guide/getting-started/list-of-maps "@@open-newtab") 
