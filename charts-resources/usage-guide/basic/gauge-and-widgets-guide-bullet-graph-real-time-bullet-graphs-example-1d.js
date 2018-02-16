@@ -1,33 +1,31 @@
 {
-    "chart_1": {
-        "type": "hbullet",
-        "renderAt": "chart-container",
-        "width": "450",
-        "height": "62",
-        "dataFormat": "json",
-        "dataSource": {
+	"chart_5": {
+        type: "hbullet",
+        renderAt: "chart-container",
+        width: "450",
+        height: "62",
+        dataFormat: "json",
+        dataSource: {
             "chart": {
-                "caption": "Tyson",
-                "subcaption": "Ponce",
+                "caption": "Alisia",
+                "subcaption": "Dotts",
                 "captionFontSize": "11.5",
                 "subcaptionFontSize": "11.5",
                 "subcaptionFontBold": "1",
-                "captionPadding": "4",
-                "chartTopMargin": "15",
+                "captionPadding": "5",
+                "chartTopMargin": "5",
                 "chartLeftMargin": "10",
                 "chartRightMargin": "10",
-                "chartBottomMargin": "10",
+                "chartBottomMargin": "5",
                 "animation": "1",
                 "upperLimit": "12000",
-                "showLimits": "0",
-                "showborder": "0",
-                "showTickValues": "0",
                 "decimals": "2",
                 "forceDecimals": "1",
+                "showborder": "0",
                 "numberprefix": "$",
                 "targetFillPercent": "75",
                 "targetColor": "#444444",
-                "plotFillPercent": "39",
+                "plotFillPercent": "40",
                 "plotFillColor": "#444444",
                 "formatNumberScale": "1",
                 "baseFontColor": "595959",
@@ -50,21 +48,21 @@
                     "code": "#e1dee2"
                 }]
             },
-            "value": "3512",
+            "value": "6555",
             "target": "10000"
         },
         "events": {
             "rendered": function(evtObj, argObj) {
-                var i1 = 3512,
+                var i5 = 6555,
                     chartRef = evtObj.sender;
                 chartRef.intervalVar = setInterval(function() {
-                    i1 = i1 + parseInt(Math.floor(Math.random() * 200), 10);
-                    if (i1 < 9870) {
-                        chartRef.feedData("value=" + i1 + "&target=10000");
+                    i5 = i5 + parseInt(Math.floor(Math.random() * 50), 10);
+                    if (i5 < 10120) {
+                        chartRef.feedData("value=" + i5 + "&target=10000");
                     } else {
                         clearInterval(chartRef.intervalVar);
                     }
-                }, 15000);
+                }, 17000);
             }
         }
     }

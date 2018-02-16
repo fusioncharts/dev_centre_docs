@@ -23,7 +23,11 @@ A bullet graph configured for real-time updates using JavaScript API looks like 
     <span style="font-weight: bold;font-size: small;">Daily Sales Tracker by Salesperson</span>
     <span style="font-size: small;">Stereo Exchange Ltd, New York</span>
 </div>  <div style="padding-left: 2px; margin-top: -25px;">
-<p> {% embed_chart gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-1.js %}</p>
+<p>{% embed_chart gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-1.js %}</p>
+<p>{% embed_chart gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-1a.js %}</p>
+<p>{% embed_chart gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-1b.js %}</p>
+<p>{% embed_chart gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-1c.js %}</p>
+<p>{% embed_chart gauge-and-widgets-guide-bullet-graph-real-time-bullet-graphs-example-1d.js %}</p>
 </div></div><br/>
   
 As you can see above, 5 real-time horizontal charts are rendered at a time to showcase a Daily Sales Tracker of salesperson for Stereo Exchange Ltd, New York.

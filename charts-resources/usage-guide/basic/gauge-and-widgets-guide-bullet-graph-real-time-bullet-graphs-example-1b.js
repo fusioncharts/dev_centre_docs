@@ -1,19 +1,19 @@
 {
-    "chart_1": {
-        "type": "hbullet",
-        "renderAt": "chart-container",
-        "width": "450",
-        "height": "62",
-        "dataFormat": "json",
-        "dataSource": {
+	"chart_3": {
+        type: "hbullet",
+        renderAt: "chart-container",
+        width: "450",
+        height: "53",
+        dataFormat: "json",
+        dataSource: {
             "chart": {
-                "caption": "Tyson",
-                "subcaption": "Ponce",
+                "caption": "Harry",
+                "subcaption": "Bower",
                 "captionFontSize": "11.5",
                 "subcaptionFontSize": "11.5",
                 "subcaptionFontBold": "1",
-                "captionPadding": "4",
-                "chartTopMargin": "15",
+                "captionPadding": "3",
+                "chartTopMargin": "5",
                 "chartLeftMargin": "10",
                 "chartRightMargin": "10",
                 "chartBottomMargin": "10",
@@ -27,7 +27,7 @@
                 "numberprefix": "$",
                 "targetFillPercent": "75",
                 "targetColor": "#444444",
-                "plotFillPercent": "39",
+                "plotFillPercent": "40",
                 "plotFillColor": "#444444",
                 "formatNumberScale": "1",
                 "baseFontColor": "595959",
@@ -50,21 +50,21 @@
                     "code": "#e1dee2"
                 }]
             },
-            "value": "3512",
+            "value": "4987",
             "target": "10000"
         },
         "events": {
             "rendered": function(evtObj, argObj) {
-                var i1 = 3512,
+                var i3 = 4987,
                     chartRef = evtObj.sender;
                 chartRef.intervalVar = setInterval(function() {
-                    i1 = i1 + parseInt(Math.floor(Math.random() * 200), 10);
-                    if (i1 < 9870) {
-                        chartRef.feedData("value=" + i1 + "&target=10000");
+                    i3 = i3 + parseInt(Math.floor(Math.random() * 300), 10);
+                    if (i3 < 11750) {
+                        chartRef.feedData("value=" + i3 + "&target=10000");
                     } else {
                         clearInterval(chartRef.intervalVar);
                     }
-                }, 15000);
+                }, 20000);
             }
         }
     }
