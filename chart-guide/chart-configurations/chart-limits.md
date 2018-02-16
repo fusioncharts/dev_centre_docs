@@ -13,11 +13,11 @@ Let's check how to customize the chart limits.
 
 ## Set Chart Limits Explicitly
 
-You can set custom y-axis limits as per your requirement. To do so, the following attribbutes are used:
+You can set custom y-axis limits as per your requirement. To do so, the following attributes are used:
 
 * Set the lower limit of the y-axis using the `yAxisMinValue` attribute. 
 
-* Set the upper limit of the y-axis  using the `yAxisMaxValue` attribute.
+* Set the upper limit of the y-axis using the `yAxisMaxValue` attribute.
 
 Refer  to the code below:
 
@@ -58,7 +58,7 @@ Click [here](http://jsfiddle.net/fusioncharts/cs89448w/ "@@open-newtab") to edit
 
 ## Set Axis Limits for Dual Y-axis Charts
 
-In case of dual y-axis charts, you can set custom y-axis limits for both the primary and secondary y-axes. To do so, the following attribbutes are used:
+In case of dual y-axis charts, you can set custom y-axis limits for both the primary and secondary y-axes. To do so, the following attributes are used:
 
 * Set the lower limit of the primary y-axis using the `pYAxisMinValue` attribute.
 
@@ -89,7 +89,7 @@ Click [here](http://jsfiddle.net/fusioncharts/4azzajgL/ "@@open-newtab") to edit
 
 ## Set same Axis Limits for Primary and Secondary Y-axes
 
-Configure your charts so that the chart limits for the primary and secondary y-axes are synced. For charts with static data this can be done by specifying the minimum and maximum y-axis values, but this won't work for dynamic chart data. For dynamic charts, set the `syncAxisLimits` attribute to `1`. 
+Configure your charts so that the chart limits for the primary and secondary y-axes are synced. For charts with static data, this can be done by specifying the minimum and maximum y-axis values, but this won't work for dynamic chart data. For dynamic charts, set the `syncAxisLimits` attribute to `1`. 
 
 Refer  to the code below:
 
@@ -109,7 +109,7 @@ Click [here](http://jsfiddle.net/fusioncharts/7wo4mv5r/ "@@open-newtab") to edit
 
 ## Show/Hide Y-axis Values
 
-By default, all the y-axis values are visible. You can hide all the y-axis values or only the maximum and minimum y-axis values showing the rest. To do so, the following attribbutes are used:
+By default, all the y-axis values are visible. You can hide all the y-axis values or only the maximum and minimum y-axis values showing the rest. To do so, the following attributes are used:
 
 * Set the `showYAxisValues` attribute to `0` to hide all the y-axis values. By default, it is set to `1` and the all the values are visible.
 
@@ -129,7 +129,7 @@ The chart will look like as shown in the image below:
 
 Click [here](http://jsfiddle.net/fusioncharts/14srsdrw/ "@@open-newtab") to edit the above chart.
 
-* Set the `showLimits` attribute to `0` to hide the maximum and minimum y-axis values. By default, it is set to `1` and the values are visible. This attribute overrides the setting of the `showYAxisValues`.
+* Set the `showLimits` attribute to `0` to hide the maximum and minimum y-axis values. By default, it is set to `1`, and the values are visible. This attribute overrides the setting of the `showYAxisValues`.
 
 Refer  to the code below:
 

@@ -5,7 +5,7 @@ heading: Border and Background
 breadcrumb: [["Home", "/"], ["Border and Background"]]
 ---
 
-A chart's background refers to the whole area on which it is drawn and it is enclosed by the chart border, the rectangle around a chart's background.
+A chart's background refers to the whole area on which it is drawn, and it is enclosed by the chart border, the rectangle around a chart's background.
 
 ![Border and Background]({% site.baseurl %}/images/chart-configurations-border-and-background-image-1.png)
 
@@ -30,7 +30,7 @@ Click [here](http://jsfiddle.net/fusioncharts/b58ma056/ "@@open-newtab") to edit
 
 ## Customize Chart Borders
 
-To customize the chart border the following attributes are used:
+To customize the chart border, the following attributes are used:
 
 * Specify the hex code of the border color using the `borderColor` attribute.
 
@@ -58,7 +58,7 @@ Click [here](http://jsfiddle.net/fusioncharts/5vj22scs/ "@@open-newtab") to edit
 
 ### Customize Chart Background
 
-To customize the chart background the following attributes are used:
+To customize the chart background, the following attributes are used:
 
 * Set the hex code of the color of the background using the `bgColor` attribute.
 
@@ -87,13 +87,13 @@ When using a gradient fill for the background, you can configure three aspects:
 
 * Set gradient transparency
 
-* Set ratio of colour distribution
+* Set ratio of color distribution
 
 * Set the gradient angle
 
 To do so, the following attributes are used:
 
-* Set the hex codes of the gradient colors separated by comma using the `bgColor` attribute.
+* Set the hex codes of the gradient colors separated by a comma using the `bgColor` attribute.
 
 * Set the transparency of the background using the `bgAlpha` attribute.
 
