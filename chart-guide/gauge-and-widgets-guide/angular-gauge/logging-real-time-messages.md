@@ -139,9 +139,9 @@ Given below is a brief description of the attributes in the real-time data strea
 
 Shown below is an example of real-time update string passed by the server to the message logger:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=Server CPU Utilization : 84
-{% endraw %}{% endhighlight %}
+```
 
 Here, we first have the `&value` parameter which is absorbed by the gauge for data update. Next, we have the `msgTitle` and the `msgText` parameters which get absorbed by the message logger. Here, we have set the date & time as the title and the text "Server Utilization: ", along with the value 84, as the message.
 
@@ -153,9 +153,9 @@ Take a look at the chart rendered above to see how this update appears in the ac
 
 Shown below is a simple example of message type ERROR:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=Server CPU Utilization : 84&msgType=ERROR
-{% endraw %}{% endhighlight %}
+```
 
 A real-time angular gauge configured to read this message looks like this: When a chart reads this, it'll display the message as under:
 
@@ -166,9 +166,9 @@ A real-time angular gauge configured to read this message looks like this: When 
 
 To create and render a message as a link, you will need to set the URL Encoded link as the value for the `msgText` attribute and set the `msgType` to LINK, as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=http%3A%2F%2Fwww%2Efusioncharts%2Ecom%3Fid%3D34&msgType=LINK
-{% endraw %}{% endhighlight %}
+```
 
 In the above example, we're linking the message to http://www.fusioncharts.com?id=34 - we've URL Encoded the link, as it contains special characters (? in this case).
 
@@ -180,13 +180,13 @@ To render custom text as a link, set the `msgType` attribute to INFO and provide
 
 {% highlight html lineanchors %}{% raw %}
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=<A HREF='http://www.fusioncharts.com?id=34'><U>Server CPU Utilization : 84</U></A>&msgType=INFO
-{% endraw %}{% endhighlight %}
+```
 
 After URL Encoding
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 &value=84&msgTitle=24-07-2014%2002:22:51&msgText=%3CA%20HREF='http://www.fusioncharts.com?id=34'%3E%3CU%3EServer%20CPU%20Utilization%20:%2084%3C/U%3E%3C/A%3E&msgType=INFO
-{% endraw %}{% endhighlight %}
+```
 
 To specify a link, you will need to output the HTML code for the link as `msgText`. Add the `<u>` tag in the HTML code if you need to underline the link. Finally, URLEncode the entire `msgText` parameter and then stream to the chart.
 
@@ -194,15 +194,15 @@ To specify a link, you will need to output the HTML code for the link as `msgTex
 
 You can instruct the gauge to clear the contents of the visible message logger by sending the command shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 &clearLog=1
-{% endraw %}{% endhighlight %}
+```
 
 You can also send send it as a part of a message stream, as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=Server CPU Utilization : 84&msgType=ERROR&clearLog=1
-{% endraw %}{% endhighlight %}
+```
 
 This will clear all the contents of the existing message logger and start afresh.
 
@@ -219,7 +219,7 @@ A real-time angular gauge configured to handle messages using custom JavaScript 
 
 A simple implementation of the `myFunction` is as follows:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 var myFunction = function(strMsgId, strMsgTitle, strMsgText, strMsgType){
             //This method is invoked when the chart streams real-time message to JS.
             //Order of parameters - strMsgId, strMsgTitle, strMsgText, strMsgType
@@ -229,7 +229,7 @@ var myFunction = function(strMsgId, strMsgTitle, strMsgText, strMsgType){
             //- strMsgType - Type of each message - INFO, ERROR, LITERAL or LINK
            alert("A message was streamed from server. \nMessage Id: " + strMsgId + "\nMessage Title: " + strMsgTitle + "\nMessage Text: " + strMsgText + "\nMessage Type: " + strMsgType);
         }
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">In place of a custom function you can also use JavaScript’s native function (e.g `alert`) to show messages streamed from the server to the client. But in that case you will only be able to show the value of  the `msgText` parameter passed from the server.</p>
 

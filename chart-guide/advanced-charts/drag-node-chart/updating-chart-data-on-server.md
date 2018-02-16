@@ -22,13 +22,13 @@ To enable submission of data to server-side script, you first need to make sure 
 
 To show the __Submit__ button, you can use the following code snippet:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 {
     "chart": {
         "showFormBtn": "1"
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 This adds a submit button to your chart as shown below:
 
@@ -109,4 +109,4 @@ if (is_writable($filename)) {
     echo "The file $filename is not writable";
 }
 ?>
-{% endraw %}{% endhighlight %}
+```

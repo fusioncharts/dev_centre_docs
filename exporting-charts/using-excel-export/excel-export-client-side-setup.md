@@ -12,9 +12,9 @@ To set up FusionCharts Excel export on the client side, follow the steps given b
 
 * You can also include the file using NPM by running the following command:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 npm install https://s3.amazonaws.com/fusionimplementation/fusioncharts_lib/fusioncharts-3.12.3-beta.1.tgz 
-{% endraw %}{% endhighlight %}
+```
 
 * To show the **Export As Excel** menu option, set the following fields in the chart config:
 

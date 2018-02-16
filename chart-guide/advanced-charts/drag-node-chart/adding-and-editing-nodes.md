@@ -162,11 +162,11 @@ When a new node is created, a JavaScript event, named `nodeAdded`, is raised. Yo
 
 The code snippet required to trap this event is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 chartInstance.addEventListener('nodeadded', function(e, a){
     //Your code here
 });
-{% endraw %}{% endhighlight %}
+```
 
 ## Editing a Node at Run-time
 
@@ -194,11 +194,11 @@ When a node is edited, a JavaScript event, named `nodeUpdated`, is raised. You c
 
 The code snippet required to trap this event is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 chartInstance.addEventListener('nodeupdated', function(e, a){
     //Your code here
 });
-{% endraw %}{% endhighlight %}
+```
 
 ## Deleting a Node at Run-Time
 
@@ -216,10 +216,10 @@ When a node is deleted, a JavaScript event, named `nodeDeleted`, is raised. You 
 
 The code snippet required to trap this event is given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 chartInstance.addEventListener('nodedeleted', function(e, a){
     //Your code here
 });
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">You can get the latest updated node positions using JavaScript or by [submitting the updated positions]{% linkTo tutorials/chart-guide/drag-node-chart/updating-chart-data-on-server.md %} to a server-side script.</p>

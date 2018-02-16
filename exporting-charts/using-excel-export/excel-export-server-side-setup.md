@@ -29,13 +29,13 @@ __Steps :__
 
     * __Method 2__: Through the Nuget command line, execute the command given below:
 
-      {% highlight javascript lineanchors %}{% raw %}
+      ```
 $ Install-Package FusionCharts.ExcelExport.MVC -Version 1.0.0-beta
-{% endraw %}{% endhighlight %}
+```
 
 * Add the code given below to the **Global.asax** class:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -70,7 +70,7 @@ namespace FusionExcelExportServer
         }
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 The above code:
 
@@ -80,9 +80,9 @@ The above code:
 
 * The method signature for ExportMVCRegistrar.RegisterRoutes is:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 ExportMVCRegistrar RegisterRoutes(RouteCollection routes, [string routeURL = "api/v1.0/export"])`
-{% endraw %}{% endhighlight %}
+```
 
 The routeURL is optional and the default URL is `api/v1.0/export`. This is the URL of the export endpoint and should be set as `exportExcelHandler` field in chart config (client-side setup). For e.g., default endpoint URL will be __http://yourURL.com/api/v1.0/export__.
 
@@ -107,7 +107,7 @@ The routeURL is optional and the default URL is `api/v1.0/export`. This is the U
     </pages>
   </system.web>
 </configuration>
-{% endraw %}{% endhighlight %}
+```
 
 * Build and run the application.
 
@@ -149,7 +149,7 @@ __Steps:__
     </pages>
   </system.web>
 </configuration>
-{% endraw %}{% endhighlight %}
+```
 
 * By default **FCExcelExport.aspx** will be located in the root directory, so your default post request will be handled by __https://yourURL.com//FCExcelExport.aspx__.
 * For a custom path of Excel export, save the file  **FCExcelExport.aspx** in your desired location and post all your requests to that path. E.g. __https://yourURL.com/&lt; file location &gt;/FCExcelExport.aspx__.
@@ -172,15 +172,15 @@ __Steps:__
 
     * __Method 2:__ Through the Nuget command line, execute the command given below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 $ Install-Package FusionCharts.ExcelExport.WebAPI -Version 1.0.0-beta
-{% endraw %}{% endhighlight %}
+```
 
 * In the **WebApiConfig.cs** file, insert the code given below to register the routeURL of Excel export:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 FCExcelExport_WebApi.WebApiConfig.Register(config,"<routeURL>");
-{% endraw %}{% endhighlight %}
+```
 
 * By default `routeURL` is set to FCExcelExport.
 * Build the application.
