@@ -1,8 +1,8 @@
 ---
-title: Install using React JS | FusionCharts
+title: Install using React | FusionCharts
 description: FusionCharts Suite XT is a JavaScript library that runs on your desktop/mobile web browsers. This article talks about steps to install React JS.
-heading: React JS
-breadcrumb: [["Home", "/"], ["React JS"]]
+heading: React
+breadcrumb: [["Home", "/"], ["React"]]
 ---
 
 The React-FusionCharts Component, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single ReactJS component.
@@ -60,3 +60,12 @@ npm install react react-dom fusioncharts react-fusioncharts --save
 ## Licensing
 
 React-FusionCharts is open-source and distributed under the terms of the MIT/X11 License. You will still need to download and include FusionCharts in your page. This project provides no direct functionality. You can **[download an evaluation](https://www.fusioncharts.com/download/)**. You will still need to purchase a FusionCharts license to use in a commercial environment (FusionCharts is **[free for non-commercial and personal use](https://www.fusioncharts.com/download/free/)**).
+
+## Further Links
+
+* [Your First Chart]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart "@@open-newtab") 
+* [Your First Widget]({% site.baseurl %}/chart-guide/getting-started/building-your-first-widget "@@open-newtab") 
+* [Your First Map]({% site.baseurl %}/chart-guide/getting-started/building-your-first-map "@@open-newtab")
+* [Building Dashboards]({% site.baseurl %}/chart-guide/getting-started/building-dashboards "@@open-newtab")
+* [List of Charts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts "@@open-newtab") 
+* [List of Maps]({% site.baseurl %}/chart-guide/getting-started/list-of-maps "@@open-newtab") 

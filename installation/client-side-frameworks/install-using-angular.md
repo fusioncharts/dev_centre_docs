@@ -1,8 +1,8 @@
 ---
-title: Install using Angular JS| FusionCharts
+title: Install using Angular| FusionCharts
 description: FusionCharts Suite XT is a JavaScript library that runs on your desktop/mobile web browsers. This article talks about steps to install using angular js
-heading: Angular JS
-breadcrumb: [["Home", "/"], ["Angular JS"]]
+heading: Angular
+breadcrumb: [["Home", "/"], ["Angular"]]
 ---
 
 The Angular-FusionCharts directive, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single AngularJS directive.
@@ -89,3 +89,12 @@ The above steps complete the setup, and you are now ready to use the FusionChart
 ## Licensing
 
 Angular-FusionCharts is open-source and distributed under the terms of the MIT/X11 License. You will still need to download and include FusionCharts in your page. This project provides no direct functionality. You can **[download an evaluation](https://www.fusioncharts.com/download/)**. You will still need to purchase a FusionCharts license to use in a commercial environment (FusionCharts is **[free for non-commercial and personal use](https://www.fusioncharts.com/download/free/)**).
+
+## Further Links
+
+* [Your First Chart]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart "@@open-newtab") 
+* [Your First Widget]({% site.baseurl %}/chart-guide/getting-started/building-your-first-widget "@@open-newtab") 
+* [Your First Map]({% site.baseurl %}/chart-guide/getting-started/building-your-first-map "@@open-newtab")
+* [Building Dashboards]({% site.baseurl %}/chart-guide/getting-started/building-dashboards "@@open-newtab")
+* [List of Charts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts "@@open-newtab") 
+* [List of Maps]({% site.baseurl %}/chart-guide/getting-started/list-of-maps "@@open-newtab") 
