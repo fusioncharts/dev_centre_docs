@@ -42,7 +42,7 @@ The code snippet to feed real-time data to the gauge using  the `feedData()` met
         }, 1000); // set the refresh interval to 1000 ms
     }
 }
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-info">The time interval for the gauge update has to be defined in milliseconds. </p>
 
@@ -116,8 +116,8 @@ The JavaScript API methods to stop and restart real-time updates are as follows:
 
 A real-time gauge stops polling the server for further updates when it receives the following command from the server:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 &stopUpdate=1
-{% endraw %}{% endhighlight %}
+```
 
 After stopping the update, it can be restarted either using user interaction or using the client-side JavaScript API method, `restartUpdate()`, described earlier.

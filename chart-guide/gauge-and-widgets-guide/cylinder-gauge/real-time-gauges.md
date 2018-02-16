@@ -101,15 +101,15 @@ For more information, read the {% linkTo tutorials/chart-guide/real-time-charts/
 
 You can stop the chart from polling the server for any more real-time updates. To do this, you use the `stopUpdate` command as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 "stopUpdate": “1”;
-{% endraw %}{% endhighlight %}
+```
 
 To restart updates from the server, use the `startUpdate` command from the server as shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 "startUpdate": “1”;
-{% endraw %}{% endhighlight %}
+```
 
 A cylinder gauge configured to allow stopping and restarting real-time updates from the server, looks like this:
 

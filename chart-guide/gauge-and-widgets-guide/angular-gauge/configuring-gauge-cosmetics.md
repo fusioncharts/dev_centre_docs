@@ -18,13 +18,13 @@ In this section, you will be shown how you can configure the:
 
 * <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-pivot-properties">Pivot properties</a>
 
-## Configuring the Gauge Gradient Fill
+## Configuring the Gauge Gradient Fil
 
 An angular gauge is usually rendered with solid colors filled in the background. To enhance the visual representation of charts, you can use a gradient fill for the background.
 
 An angular gauge with the scale rendered using a gradient fill looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-1.js", "id": "1"} %}
+{% embed_all gauge-and-widgets-guide-angular-gauge-configuring-gauge-cosmetics-example-1.js %}
 
 Given below is a brief description of the attributes used to configure the gradient fill for the gauge:
 

@@ -5,6 +5,7 @@ description: This section talks about including interactivity in charts using An
 heading: Including Interactivity in Charts Using Angular4
 chartPresent: true
 ---
+
 Angular is a front-end Javascript based framework. FusionCharts Suite XT comes with an Angular binding, using the angular4-fusioncharts component, that allows rendering interactive charts in Angular4 applications. 
 
 So far, we’ve seen how you can <a href="/using-with-javascript-libraries/angular4/creating-charts-using-the-fusioncharts-angular4-component.html">create a simple chart</a> using the angular4-fusioncharts component as well as how you can <a href="/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4.html">add advanced configurations</a> to your charts. In this article, we'll learn how to use the angular4-fusioncharts component to include interactivity in your charts.

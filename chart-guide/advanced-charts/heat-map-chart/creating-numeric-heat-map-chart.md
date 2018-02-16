@@ -180,7 +180,7 @@ Given below is a brief description of the attribute used to configure colors for
 
 Given below is a code snippet that shows how you can configure colors for individual cells:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 {
     "chart": {
             ...
@@ -209,6 +209,6 @@ Given below is a code snippet that shows how you can configure colors for indivi
     ],
     ...
 }
-{% endraw %}{% endhighlight %}
+```
 
 In the above data, the color attribute is used in two `data` elements to apply different colors for the first two cells of the chart. These two colors are different from the colors defined in the `colorRange` element. The transparency of the cell can also be controlled by using the `alpha` attribute with `data` object.

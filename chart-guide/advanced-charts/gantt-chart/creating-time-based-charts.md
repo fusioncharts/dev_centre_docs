@@ -18,7 +18,7 @@ The 24-hour clock is a convention of time-keeping in which the day runs from mid
 
 So, to specify a time in the JSON data, you will have to define a "category" as shown in the code snippet below::
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 "category": [
     {
         "start": "00:00:00",
@@ -26,19 +26,19 @@ So, to specify a time in the JSON data, you will have to define a "category" as 
         "label": "Day"
     }
 ]
-{% endraw %}{% endhighlight %}
+```
 
 Or, you can define task as shown below:
 
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 "task": {
     "processid": "EMP121",
     "start": "08:00:00",
     "end": "12:30:00",
     "label": "Morning Shift"
 }
-{% endraw %}{% endhighlight %}
+```
 
 ## Time-based Gantt chart
 

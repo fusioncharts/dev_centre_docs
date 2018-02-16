@@ -40,9 +40,9 @@ The real-time data format for the angular gauge depends on:
 
 In the simplest form, if you're looking to update the value of a gauge, you need to output the data in following format:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 &value=34
-{% endraw %}{% endhighlight %}
+```
 
 Here, the output is a single value, 34. So, when the gauge will read this value, it will update itself by setting its value to 34 (if a data range is provided by the gauge, the value will first be checked to verify if it falls within the defined range).
 
@@ -50,9 +50,9 @@ Here, the output is a single value, 34. So, when the gauge will read this value,
 
 If you have multiple dials defined, you can update them all in a single update as shown in the following output from the real-time data provider page:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 &value=34|25|54
-{% endraw %}{% endhighlight %}
+```
 
 Here, we're specifying three values in the real-time update. So, assuming that we've 3 dials or pointers defined in the chart, each one of them will take the values in sequence and update itself. Therefore, the first dial will now show 34, second one will show 25, and the third one will show 54. The sequence of dials is determined by the order in which they are defined in the JSON/XML data.
 
@@ -62,7 +62,7 @@ Another way to update dials is by defining a unique ID for each dial and then pa
 
 To define an ID for each dial, you can use the code snippet shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 "dial": [{
     ...
     "id": “CPU1Temp”
@@ -72,13 +72,13 @@ To define an ID for each dial, you can use the code snippet shown below:
     "id": “CPU2Temp”
     ...
 }]
-{% endraw %}{% endhighlight %}
+```
 
 You can now update each of these named dials as shown in the following output in your real-time data stream:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 &CPU1Temp=23&CPU2Temp=34
-{% endraw %}{% endhighlight %}
+```
 
 This will change the value of dial 1 (with id as `CPU1Temp`) to 23 and dial 2 to 34.
 
@@ -86,9 +86,9 @@ This will change the value of dial 1 (with id as `CPU1Temp`) to 23 and dial 2 to
 
 If you wish to stop the gauge from polling the server for any more real-time updates, you can send the following command from server to do so:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 &stopUpdate=1
-{% endraw %}{% endhighlight %}
+```
 
 After stopping the update, it can be restarted again by using client-side JavaScript.
 
@@ -126,15 +126,15 @@ In the above data, note that we have set the `dataStreamURL` attribute to [http:
 
 For example, the `serverLoad.php` data provider will return two random values within 100% in the format shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 &value=84|14
-{% endraw %}{% endhighlight %}
+```
 
 Because we have defined unique IDs for both dials, It can also return data in the format shown below:
 
-{% highlight javascript lineanchors %}{% raw %}
+```
 &fd_dial=84&clth_dial=14
-{% endraw %}{% endhighlight %}
+```
 
 <p class="text-warning">The data provider page needs to be on the same sub-domain on which the chart is hosted and invoked from. Otherwise, the cross-domain security might restrict data access and hence the real-time feature won't work.</p>
 
