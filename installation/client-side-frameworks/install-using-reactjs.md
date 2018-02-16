@@ -2,7 +2,7 @@
 title: Install using React | FusionCharts
 description: FusionCharts Suite XT is a JavaScript library that runs on your desktop/mobile web browsers. This article talks about steps to install React JS.
 heading: React
-breadcrumb: [["Home", "/"], ["React JS"]]
+breadcrumb: [["Home", "/"], ["React"]]
 ---
 
 The React-FusionCharts Component, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single ReactJS component.
