@@ -23,7 +23,7 @@ Click [here](http://jsfiddle.net/fusioncharts/49dJJ/ "@@open-newtab") to edit th
 
 Looks much better, doesn't it? The chocolate bars shown in this chart are image annotations.
 
-Take a look at this video of a [collaboration dashboard](https://www.fusioncharts.com/dashboards/collaboration/) created to help a sales team unify their analysis and discussion. Notice the **callouts** shown above the columns for April and August. These callouts are shape annotations and the **numbers** shown next to the callouts are text annotations. Click these callouts and see how the annotations work!
+Take a look at this video of a [collaboration dashboard](https://www.fusioncharts.com/dashboards/collaboration/) created to help a sales team unify their analysis and discussion. Notice the **callouts** shown above the columns for April and August. These callouts are **shape** annotations and the **numbers** shown next to the callouts are text annotations. Click these callouts and see how the annotations work!
 
 In addition to creating annotations, you can:
 
@@ -35,7 +35,7 @@ In addition to creating annotations, you can:
 
 * Customize the response to user actions using annotation events
 
-Now that you have seen what annotations look like and how useful they can be in making your charts informative, go ahead and see how you can create them.
+Now that you have seen what annotations look like and how useful they can be in making your charts informative go ahead and see how you can create them.
 
 ## How Annotations Work
 
@@ -131,7 +131,7 @@ Refer to the basic JSON structure to create annotations, given below:
 }
 ```
 
-The image of a chart rendered with different types of annotations items is shown below:
+The image of a chart rendered with different types of annotation items is shown below:
 
 ![Annotations]({% site.baseurl %}/images/chart-configurations-annotations-image-1.jpg)
 
@@ -143,9 +143,9 @@ Use the following attributes to text annotations, to add notes, labels, or any o
 
 * Set the type of annotation to be rendered using the `type` attribute. In this instance, set it to `text`.
 
-* Set the x coordinate of the position of the text annotation with respect to the leftmost position (taken as zero) of the chart using the `x` attribute.
+* Set the x coordinate of the position of the text annotation for the leftmost position (taken as zero) of the chart using the `x` attribute.
 
-* Set the y coordinate of the position of the text annotation with respect to the topmost position (taken as zero) of the chart using the `y` attribute.
+* Set the y coordinate of the position of the text annotation for the topmost position (taken as zero) of the chart using the `y` attribute.
 
 * Set the font family for the text annotation using the `font` attribute.
 
@@ -171,7 +171,7 @@ Use the following attributes to text annotations, to add notes, labels, or any o
 
 * Set the value of the `wrap` attribute to `1`, to enable text wrapping for the annotation.
 
-* Set the width after which the text will be wrapped, using the `wrapWidth` attribute. You can also set the `toX` and `toY` attributes, if you provide the text wrapping dimensions in absolute pixels from the origin coordinates of the annotation group.
+* Set the width after which the text will be wrapped, using the `wrapWidth` attribute. You can also set the `toX` and `toY` attributes if you provide the text wrapping dimensions in absolute pixels from the origin coordinates of the annotation group.
 
 * Set the maximum height the text can occupy, using the `wrapHeight` attribute. The chart will append ellipses to the end of the annotation whenever the text overflows beyond the vertical space that you allocate using the `wrapHeight` or `toY` attribute.
 
@@ -218,11 +218,11 @@ Use the following attributes to create image annotations:
 
 * Specify the type of annotation using the `id`.attribute. In this instance, set it to `image`.
 
-* Specify the location of the image file (JPEG, PNG, or GIF) that should be rendered on the chart using the `url` attribute. Note that chart rendering does not pause for images to load and asynchronously draws them as and when they are loaded. if you need to load them instantaneously, consider preloading the images.
+* Specify the location of the image file (JPEG, PNG, or GIF) that should be rendered on the chart using the `url` attribute. Note that chart rendering does not pause for images to load and asynchronously draws them as and when they are loaded. If you need to load them instantaneously, consider preloading the images.
 
-* Set the x coordinate of the position of the image annotation with respect to the leftmost position (taken as zero) of the chart using the `x` attribute.
+* Set the x coordinate of the position of the image annotation for the leftmost position (taken as zero) of the chart using the `x` attribute.
 
-* Set the y coordinate of the position of the image annotation with respect to the topmost position of the image annotation (taken as zero) of the chart using the `y` attribute.
+* Set the y coordinate of the position of the image annotation for the topmost position of the image annotation (taken as zero) of the chart using the `y` attribute.
 
 * Specify the resize value for the image width using the `xScale` attribute.
 
@@ -345,21 +345,21 @@ The rectangle around the text is a shape annotation.
 
 > The complete data structure that shows how you use these attributes is given at the end of this article.
 
-### Adhoc Attributes
+## Adhoc Attributes
 
-#### Rectangle
+### Rectangle
 
 Use the following attributes to create rectangular annotations:
 
 * Set the type of annotation by setting the `type` attribute value to `rectangle`.
 
-* Set the x coordinate of the starting position of the rectangular annotation with respect to the leftmost position (taken as zero) of the chart using the `x` attribute.
+* Set the x coordinate of the starting position of the rectangular annotation for the leftmost position (taken as zero) of the chart using the `x` attribute.
 
-* Set the y coordinate of the starting position of the rectangular annotation with respect to the topmost position (taken as zero) of the chart using the `y` attribute.
+* Set the y coordinate of the starting position of the rectangular annotation for the topmost position (taken as zero) of the chart using the `y` attribute.
 
-* Specify the x coordinate of the ending position of the rectangle with respect to the leftmost position (taken as zero) of the chart using the `toX` attribute.
+* Specify the x coordinate of the ending position of the rectangle for the leftmost position (taken as zero) of the chart using the `toX` attribute.
 
-* Specify the y coordinate of the ending position of the rectangle with respect to the topmost position (taken as zero) of the chart using the `toY` attribute.
+* Specify the y coordinate of the ending position of the rectangle for the topmost position (taken as zero) of the chart using the `toY` attribute.
 
 * Specify the radius of the edges of the rectangle, in pixels, using the `radius` attribute. Use it when you want to render the annotation as a rounded rectangle.
 
@@ -373,11 +373,11 @@ Use the following attributes to create polygonal annotations:
 
 * Specify the type of annotation by setting the `type` attribute value to `polygon`.
 
-* Set the number of sides for the polygon using the `sides`attribute. Note that it's value must be greater than 2.
+* Set the number of sides of the polygon using the `sides`attribute. Note that its value must be greater than 2.
 
-* Set the x coordinate of the center of the polygon with respect to the leftmost position (taken as zero) of the chart using the `x` attribute.
+* Set the x coordinate of the center of the polygon for the leftmost position (taken as zero) of the chart using the `x` attribute.
 
-* Set the y coordinate of the center of the polygon with respect to the topmost position (taken as zero) of the chart using the `y` attribute.
+* Set the y coordinate of the center of the polygon for the topmost position (taken as zero) of the chart using the `y` attribute.
 
 * Specify the radius of the edges of the polygon, in pixels, using the `radius` attribute. Use it when you want to render the annotation as a rounded polygon.
 
@@ -391,13 +391,13 @@ Use the following attributes to create linear annotations:
 
 * Specify the type of annotation by setting the `type` attribute value to `line`.
 
-* Specify the x coordinate of the starting position of the line with respect to the leftmost position (taken as zero) of the chart, using the `x` attribute.
+* Specify the x coordinate of the starting position of the line for the leftmost position (taken as zero) of the chart, using the `x` attribute.
 
-* Specify the y coordinate of the starting position of the line with respect to the topmost position (taken as zero) of the chart, using the `y` attribute.
+* Specify the y coordinate of the starting position of the line for the topmost position (taken as zero) of the chart, using the `y` attribute.
 
-* Specify the x coordinate of the ending position of the line with respect to the leftmost position (taken as zero) of the chart, using the `toX` attribute.
+* Specify the x coordinate of the ending position of the line for the leftmost position (taken as zero) of the chart, using the `toX` attribute.
 
-* Specify the y coordinate of the ending position of the line with respect to the topmost position (taken as zero) of the chart, using the `toY` attribute.
+* Specify the y coordinate of the ending position of the line for the topmost position (taken as zero) of the chart, using the `toY` attribute.
 
 * Specify the thickness of the line (in pixels) using the `thickness` attribute.
 
@@ -411,9 +411,9 @@ Use the following attributes to create circular annotations:
 
 * Specify the type of annotation by setting the `type` attribute value to `circle`.
 
-* Set the x coordinate of the center of the circle with respect to the leftmost position (taken as zero) of the chart using the `x` attribute.
+* Set the x coordinate of the center of the circle for the leftmost position (taken as zero) of the chart using the `x` attribute.
 
-* Set the y coordinate of the center of the circle with respect to the topmost position (taken as zero) of the chart using the `y` attribute.
+* Set the y coordinate of the center of the circle for the topmost position (taken as zero) of the chart using the `y` attribute.
 
 * Specify the radius of the edges of the circle, in pixels, using the `radius` attribute. 
 
@@ -429,9 +429,9 @@ An arc is suitable to draw doughnut like shapes or a slice of it. You can use it
 
 * Specify the type of annotation by setting the `type` attribute value to `arc`.
 
-* Set the x coordinate of the center of the arc with respect to the leftmost position (taken as zero) of the chart using the `x` attribute.
+* Set the x coordinate of the center of the arc for the leftmost position (taken as zero) of the chart using the `x` attribute.
 
-* Set the y coordinate of the center of the arc with respect to the topmost position (taken as zero) of the chart using the `y` attribute.
+* Set the y coordinate of the center of the arc for the topmost position (taken as zero) of the chart using the `y` attribute.
 
 * Specify the outer radius of the arc in pixels using the `radius` attribute. 
 
@@ -457,9 +457,9 @@ You can draw free-form graphic elements on your charts using the `path` annotati
 
 * Specify the path command and accepts standard SVG path format, using the `path` attribute. 
 
-* Set the x coordinate of the starting position of the path with respect to the leftmost position (taken as zero) of the chart using the `x` attribute.
+* Set the x coordinate of the starting position of the path for the leftmost position (taken as zero) of the chart using the `x` attribute.
 
-* Set the y coordinate of the starting position of the path with respect to the topmost position (taken as zero) of the chart using the `y` attribute.
+* Set the y coordinate of the starting position of the path for the topmost position (taken as zero) of the chart using the `y` attribute.
 
 * Specify the hex color code for the annotation using the `color` attribute. 
 
@@ -508,17 +508,17 @@ In this section, you will see how to position annotations using static values. T
 
 * Specify the unique identification string for the group using the `id` attribute.
 
-* Set the **x** coordinate of the starting position of the annotation with respect to the leftmost position (taken as zero) of the chart using the `x` attribute.
+* Set the **x** coordinate of the starting position of the annotation for the leftmost position (taken as zero) of the chart using the `x` attribute.
 
-* Set the **y** coordinate of the starting position of the annotation with respect to the topmost position (taken as zero) of the chart using the `y` attribute.
+* Set the **y** coordinate of the starting position of the annotation for the topmost position (taken as zero) of the chart using the `y` attribute.
 
-* Specify the **x** coordinate of the ending position of the annotation with respect to the leftmost position (taken as zero) of the chart, using the `toX` attribute. Note that this attribute applies only to the rectangle and line annotations.
+* Specify the **x** coordinate of the ending position of the annotation for the leftmost position (taken as zero) of the chart, using the `toX` attribute. Note that this attribute applies only to the rectangle and line annotations.
 
-* Specify the **y** coordinate of the ending position of the annotation with respect to the topmost position (taken as zero) of the chart, using the `toY` attribute. Note that this attribute applies only to the rectangle and line annotations.
+* Specify the **y** coordinate of the ending position of the annotation for the topmost position (taken as zero) of the chart, using the `toY` attribute. Note that this attribute applies only to the rectangle and line annotations.
 
-* Specify the original width of the chart, in which the annotation will render as intended, using the `origW` attribute. It will be used as the reference width while automatically scaling annotations, if a chart is resized.
+* Specify the original width of the chart, in which the annotation will render as intended, using the `origW` attribute. It will be used as the reference width while automatically scaling annotations if a chart is resized.
 
-* Specify the original height of the chart, in which the annotation will render as intended, using the `origH` attribute. It will be used as the reference height while automatically scaling annotations, if a chart is resized.
+* Specify the original height of the chart, in which the annotation will render as intended, using the `origH` attribute. It will be used as the reference height while automatically scaling annotations if a chart is resized.
 
 * Specify the **x** coordinate position value of the final annotation items using the `xShift` attribute. When applying scaling, the value of this attribute will be included within the scale factor.
 

@@ -7,7 +7,7 @@ breadcrumb: [["Home", "/"], ["Canvas"]]
 
 Chart canvas refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.
 
-The blue coloured area shown in the chart below is the canvas area:
+The blue colored area shown in the chart below is the canvas area:
 
 {% embed_chart chart-configurations-canvas-example-1.js %}
 
@@ -17,7 +17,7 @@ We will learn how to customize different properties of the canvas.
 
 ## Customize the Canvas Fill Color
 
-To customize the canvas fill color the following attributes are used:
+To customize the canvas fill color, the following attributes are used:
 
 * Specify the hex code of the canvas background color using the `showCanvasBorder` attribute.
 
@@ -65,7 +65,7 @@ Click [here](http://jsfiddle.net/fusioncharts/wt2r9cox/ "@@open-newtab") to edit
 
 ## Customize Canvas Border
 
-To customize the border the following attributes are used:
+To customize the border, the following attributes are used:
 
 * Specify the hex code to set the border color using the `canvasBorderColor` attribute.
 
@@ -95,13 +95,13 @@ Click [here](http://jsfiddle.net/fusioncharts/ju5dvkoh/ "@@open-newtab") to edit
 
 To set gradient fill for the canvas follow the steps given below:
 
-* Specify the hex codes of the gradient colors separated by comma using the `canvasBgColor` attribute.
+* Specify the hex codes of the gradient colors separated by a comma using the `canvasBgColor` attribute.
 
 * Set the transparency of the background color using the `canvasBgAlpha` attribute.
 
-* Set the canvas background ratio in percentage for gradients separated by comma using the `canvasBgRatio` attribute.
+* Set the canvas background ratio in percentage for gradients separated by a comma using the `canvasBgRatio` attribute.
 
-* Specify canvas background angle (in degrees) in case of gradient. Valid range is `0` to `360`.
+* Specify canvas background angle (in degrees) in case of a gradient. Valid range is `0` to `360`.
 
 Refer to the code below:
 

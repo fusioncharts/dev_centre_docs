@@ -17,7 +17,7 @@ Chart margin is the space between the chart border and the canvas border. You ca
 
 * Set the amount of empty space on the right of the chart using the `chartRightMargin` attribute.
 
-* Set the amount of empty space on the bottom of the chart using the `chartBottomMargin` attribute
+* Set the amount of empty space on the bottom of the chart using the `chartBottomMargin` attribute.
 
 Refer to the code below:
 
@@ -60,9 +60,9 @@ Click [here](http://jsfiddle.net/fusioncharts/8jfb6ozx/ "@@open-newtab") to edit
 
 Set the axis name padding and axis value padding, to control the amount of space between the axes and the canvas. To do so, the following attributes are used:
 
-* Specify the distance between the top of  x-axis title and the bottom of data labels using the `xAxisNamePadding` attribute. 
+* Specify the distance between the top of x-axis title and the bottom of data labels using the `xAxisNamePadding` attribute. 
 
-* Specify the distance between the top of  y-axis title and the start of y-axis values using the `yAxisNamePadding` attribute.
+* Specify the distance between the top of y-axis title and the start of y-axis values using the `yAxisNamePadding` attribute.
 
 Refer to the code below:
 
@@ -83,7 +83,7 @@ Click [here](http://jsfiddle.net/fusioncharts/o618rzq3/ "@@open-newtab") to edit
 
 ## Set Padding for Axis Values
 
-Specify the amount of horizontal space between the canvas left edge and the y-axis values or trend line values (on left/right side) using the `yAxisValuePadding` attribute. 
+Specify the amount of horizontal space between the left edge of the canvas and the y-axis values or trend line values (on left/right side) using the `yAxisValuePadding` attribute. 
 
 Refer  to the code below:
 
