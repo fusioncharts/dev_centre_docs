@@ -13,14 +13,6 @@ chartPresent: true
 </style>
 In FusionCharts Suite XT, all charts and gauges can resize dynamically when the container element is resized.
 
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges.html#configuring-gauges-for-dynamic-resizing">Configure gauges for dynamic resizing</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges.html#dynamic-resizing-of-gauges-with-manual-values-specified-for-various-gauge-elements">Resize gauges, that have manual values specified for various gauge elements, dynamically</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges.html#using-js-api-function-resizeto-for-resizing-charts">Use the JS API function resizeTo() for resizing charts</a>
-
 ## Configuring Gauges for Dynamic Resizing
 
 To enable the dynamic resizing feature, you need to :

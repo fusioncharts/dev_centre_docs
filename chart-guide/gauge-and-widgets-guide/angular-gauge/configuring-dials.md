@@ -8,24 +8,6 @@ chartPresent: true
 
 FusionCharts Suite XT allows you to configure dials in angular gauges for several cosmetic and functional properties.
 
-In this section, with respect to dials, we will see how to:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#configuring-the-border-and-background-of-the-dial">Configure the border and background</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#configuring-the-radius-and-rear-extension">Configure the radius and rear extension</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#configuring-the-base-width-and-the-top-width">Configure the base width and top width</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#configuring-hover-effects">Configure the hover effect</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#adding-custom-tool-text-for-the-dial">Add custom tool text</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#adding-multiple-dials-on-the-gauge">Add multiple dials on the chart</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#customizing-dial-values">Customize dial values</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-dials.html#updating-dials-using-id">Update dials using their ID</a>
-
 ## Configuring the Border and Background of the Dial
 
 ### Configuring Border

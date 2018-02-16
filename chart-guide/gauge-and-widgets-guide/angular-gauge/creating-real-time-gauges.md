@@ -8,18 +8,6 @@ chartPresent: true
 
 The angular gauge is a real-time chart, which can continuously request new data from the server and display the same, without involving any page refreshes. The chart initializes itself, loads new data periodically and auto-updates to reflect the current state of data. There are two different ways to update the angular gauge; one method directly polls data from the server while the other retrieves data using JavaScript API methods.
 
-In this section, you will learn how to:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html#understanding-data-streaming-and-the-various-methods-for-data-streaming">Understand and use the various methods available for data streaming</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html#building-an-example-of-a-real-time-gauge-that-streams-data-from-an-url">Build an example of a real-time gauge that can stream data from an URL</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html#using-the-javascript-api-to-update-the-gauge">Use the JavaScript API to update the gauge</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html#configuring-events-associated-with-real-time-updates">Configure events associated with real-time updates</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/creating-real-time-gauges.html#troubleshooting">Troubleshoot real-time gauges</a>
-
 ## Understanding Data Streaming and the Various Methods for Data Streaming
 
 When you use the real-time data format you need to create a data provider (primarily a server side script) at your server. Next, need to specify the URL of this data provider and the time interval (in seconds) after which the gauge will look for new data. The data provider must then output the new data in the real-time data format.

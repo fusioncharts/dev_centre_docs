@@ -8,20 +8,6 @@ chartPresent: true
 
 FusionCharts Suite XT allows you to configure several functional and cosmetic properties for tick marks and tick values.
 
-In this section, you will be shown how to:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.html#showinghiding-tick-marks-and-tick-values">Show/hide the tick marks and tick values</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.html#placing-tick-marks-and-tick-values-inside-the-gauge">Place tick marks and tick values inside the gauge</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.html#configuring-the-number-of-major-and-minor-tick-marks">Configure the number of major and minor tick marks</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.html#configuring-cosmetics-for-major-and-minor-tick-marks">Configure tick mark cosmetics</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.html#configuring-tick-values">Configure tick values</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.html#setting-tick-value-distance">Set the tick value distance</a>
-
 ## Showing/Hiding Tick Marks and Tick Values
 
 An angular gauge rendered with the tick marks and tick values hidden looks like this:

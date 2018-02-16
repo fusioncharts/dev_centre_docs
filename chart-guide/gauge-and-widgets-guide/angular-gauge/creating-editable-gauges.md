@@ -8,10 +8,6 @@ chartPresent: true
 
 The angular gauge in the FusionCharts Suite XT suite can also act as an input control, allowing users to visually drag and change the value of the dial. Once the value is updated, it can be retrieved by the gauge using the FusionCharts’ events.
 
-In this section, you will be shown how you can:
-
-* Convert a normal gauge to an editable one
-
 ## Converting a Normal Gauge to an Editable Gauge
 
 A normal angular gauge can be converted to an editable gauge by converting all its dials to editable ones or just specific ones.
