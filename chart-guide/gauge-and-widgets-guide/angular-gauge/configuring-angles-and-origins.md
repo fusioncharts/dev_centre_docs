@@ -90,4 +90,4 @@ An angular gauge rendered with manually-specified gauge origins looks like this:
 
 <p class="text-info">In the above example we have only modified the `gaugeOriginY` attribute to shift the origin upward, you can do similar adjustments with `gaugeOriginX` also.</p>
 
-<p class="text-info"> If you were to dynamically resize the gauge now with proper configuration, as explained in the {% linkTo tutorials/gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges.md %} section, FusionCharts Suite XT will automatically resize the origin positions and radius specified.</p>
+<p class="text-info"> If you were to dynamically resize the gauge now with proper configuration, FusionCharts Suite XT will automatically resize the origin positions and radius specified.</p>

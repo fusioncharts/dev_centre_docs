@@ -19,24 +19,24 @@ A streamline funnel chart to show the purchase-conversion analysis looks like th
 
 The funnel chart incorporates the following features:
 
-* [Interactive funnel slices]{% linkTo tutorials/gauge-and-widgets-guide/funnel-chart/configuring-chart.md %}, which when clicked can separate from the main funnel
+* Interactive funnel slices, which when clicked can separate from the main funnel.
 
-* Option to plot funnel slices as [hollow]{% linkTo tutorials/gauge-and-widgets-guide/funnel-chart/configuring-chart.md %} or [filled]{% linkTo tutorials/gauge-and-widgets-guide/funnel-chart/configuring-chart.md %}
+* Option to plot funnel slices as hollow or filled.
 
 * Option to set same slant angle for each funnel slice (or make them dependent on data)
 
-* Ability to seamlessly [convert 3D funnel to 2D funnel]{% linkTo tutorials/gauge-and-widgets-guide/funnel-chart/configuring-chart.md %}, by right clicking on the chart and selecting `View 2D`
+* Ability to seamlessly convert 3D funnel to 2D funnel, by right clicking on the chart and selecting `View 2D`.
 
-* Option to render the funnel in 2D mode with more control over the [border]{% linkTo tutorials/gauge-and-widgets-guide/funnel-chart/configuring-chart.md %} and fill properties
+* Option to render the funnel in 2D mode with more control over the border and fill properties.
 
-* Option to show values as actual values or in percentage
+* Option to show values as actual values or in percentage.
 
-* Option to show a value as a [percentage of the first value or the previous value]{% linkTo tutorials/gauge-and-widgets-guide/funnel-chart/configuring-chart.md %}.
+* Option to show a value as a percentage of the first value or the previous value.
 
-* Smart labels to avoid overlapping of funnel labels
+* Smart labels to avoid overlapping of funnel labels.
 
-* Option to [place labels at the side or at the center]{% linkTo tutorials/gauge-and-widgets-guide/funnel-chart/configuring-chart.md %} of the funnel chart
+* Option to place labels at the side or at the center of the funnel chart.
 
-* Custom tool text for each funnel slice
+* Custom tool text for each funnel slice.
 
-* Links supported for each funnel slice
+* Links supported for each funnel slice.

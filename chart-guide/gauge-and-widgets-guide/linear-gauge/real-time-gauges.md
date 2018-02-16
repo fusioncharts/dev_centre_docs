@@ -1,6 +1,6 @@
 ---
 title: Real-time Linear Gauge | FusionCharts
-description: This section of linear gauge talks about configuring real-time updated using Javascript API or server-side script, etc
+description: This section of linear gauge talks about configuring real-time updated using Javascript API or server-side script, etc.
 heading: Real-time Linear Gauge
 chartPresent: true
 ---
@@ -177,7 +177,7 @@ Given below is a brief description of the attributes used to configure real-time
   </tr>
   <tr>
     <td>`dataStamp`</td>
-    <td>Constantly changing data stamp that can be added to the real-time data URL, so as to maintain a state. For more information, read the {% linkTo tutorials/chart-guide/real-time-charts/adding-data-stamp.md %} article.
+    <td>Constantly changing data stamp that can be added to the real-time data URL, so as to maintain a state.
     </td>
   </tr>
 </table>
