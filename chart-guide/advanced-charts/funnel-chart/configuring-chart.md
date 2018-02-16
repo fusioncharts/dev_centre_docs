@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/funnel-chart/configuring-chart.html
 title: Configuring Funnel Chart | FusionCharts
 description: This section talks about how you can draw a 2D funnel chart with customized border properties, configure legend, draw each slices, etc
 heading: Configuring Funnel Chart
@@ -7,26 +6,6 @@ chartPresent: true
 ---
 
 FusionCharts Suite XT allows you to configure several cosmetic and functional properties for the funnel chart.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/funnel-chart/configuring-chart.html#drawing-a-2d-funnel-chart-with-customized-borders">Draw a 2D funnel chart with customized border properties</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/funnel-chart/configuring-chart.html#showing-labels-at-the-center-of-the-funnel-chart">Show labels at the center of the funnel chart</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/funnel-chart/configuring-chart.html#showing-labels-in-the-legend-for-the-funnel-chart">Show labels in the legend for the funnel chart</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/funnel-chart/configuring-chart.html#configuring-the-position-of-the-legend-box">Configure the legend box position</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/funnel-chart/configuring-chart.html#drawing-filled-funnel-slices-in-3d-mode">Draw filled funnel slices</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/funnel-chart/configuring-chart.html#drawing-all-slices-with-same-slant-angle-when-plotting-streamlined-data">Draw all slices with the same slant angle</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/funnel-chart/configuring-chart.html#showing-values-as-percentage-of-the-previous-value">Show values as percentage of the previous value</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/funnel-chart/configuring-chart.html#slicing-out-individual-funnel-slices">Slice out individual funnel slices</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/funnel-chart/configuring-chart.html#configuring-hover-effects">Configure the hover effect</a>
 
 ## Drawing a 2D Funnel Chart with Customized Borders
 

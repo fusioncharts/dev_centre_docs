@@ -1,5 +1,4 @@
 ---
-permalink: chart-guide/treemap/handling-events-in-the-treemap.html
 title: Handling Events in the Treemap | FusionCharts
 description: In a treemap you can configure standard interactivity for items like tooltips and gradient legend using attributes and JavaScript events of the chart
 heading: Handling Events in the Treemap

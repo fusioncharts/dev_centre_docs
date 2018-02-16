@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/gantt-chart/creating-time-based-charts.html
 title: Creating Time-based Charts | FusionCharts
 description: This section talks about creating time-based charts and date+tim-based charts. One can also specify a time in the JSON data
 heading: Creating Time-based Charts

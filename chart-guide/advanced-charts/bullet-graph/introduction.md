@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/bullet-graph/introduction.html
 title: Introduction to Bullet Graph | FusionCharts
 description: A bullet graph is a variation of a bar graph and serves as a light weight replacement for dashboard gauges and meters.
 heading: Introduction to Bullet Graph
@@ -7,14 +6,6 @@ chartPresent: true
 ---
 
 A bullet graph is a variation of a bar graph and serves as a light weight replacement for dashboard gauges and meters. Bullet graphs can be used in cases where space is a constraint and other gauges or widgets cannot be used.
-
-In this section, you will be introduced to the:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/introduction.html#basics-of-bullet-graphs">Basics of bullet graphs</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/introduction.html#types-of-bullet-graphs">Types of bullet graphs</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/introduction.html#features-of-bullet-graphs">Features of bullet graphs</a>
 
 ## Basics of Bullet Graphs
 

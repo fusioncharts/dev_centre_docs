@@ -1,5 +1,4 @@
 ---
-permalink: chart-guide/heat-map-chart/handling-out-of-range-data.html
 title: Handling Out-of-range Data | FusionCharts
 description: In heat map if the data values are beyond the numeric ranges defined in the colorRange object, the chart will show blank data plots
 heading: Handling Out-of-range Data

@@ -1,5 +1,4 @@
 ---
-permalink: chart-guide/drag-node-chart/getting-data-using-javascript.html
 title: Getting Data Using JavaScript | FusionCharts
 description: Drag-node charts let you update data in real-time. To access the updated JSON data at the client-side using JavaScript, you can parse this data and update your data sources through AJAX, etc.
 heading: Getting Data Using JavaScript

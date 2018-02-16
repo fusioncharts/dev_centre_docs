@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/gantt-chart/adding-multiple-task-to-a-process.html
 title: Adding Multiple Tasks to a Process | FusionCharts
 description: There can be scenarios wherein a process may have multiple tasks. A Gantt chart allows to create multiple tasks for processes by mapping tasks using IDs.
 heading: Adding Multiple Tasks to a Process

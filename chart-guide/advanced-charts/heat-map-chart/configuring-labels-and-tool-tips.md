@@ -1,5 +1,4 @@
 ---
-permalink: chart-guide/heat-map-chart/configuring-labels-and-tool-tips.html
 title: Configuring Labels and Tool-tips | FusionCharts
 description: In a heat map chart a dataplot can show multiple labels in different positions. For example, you can display labels at the center and the four corners of a dataplot.
 heading: Configuring Labels and Tool-tips
@@ -7,12 +6,6 @@ chartPresent: true
 ---
 
 FusionCharts XT allows you to configure the functional properties of labels and tool-tips.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/configuring-labels-and-tool-tips.html#configuring-labels">Configure labels</a>
-
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/configuring-labels-and-tool-tips.html#configuring-tool-tips">Configure tool-tips</a>
 
 ## Configuring Labels
 

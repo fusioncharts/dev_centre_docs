@@ -1,5 +1,4 @@
 ---
-permalink: chart-guide/treemap/tilling-algorithm-for-the-treemap.html
 title: Tiling Algorithm for the Treemap | FusionCharts
 description: In tree map, tiling is a process of dividing large rectangles into smaller sub-rectangles with an aspect ratio which depends in the algorithm you choose
 heading: Tiling Algorithm for the Treemap

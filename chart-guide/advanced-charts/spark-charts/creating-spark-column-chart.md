@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/spark-charts/creating-spark-column-chart.html
 title: Creating a Spark Column Chart | FusionCharts
 description: This section talks about how to create a spark column chart.
 heading: Creating a Spark Column Chart

@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/funnel-chart/introduction.html
 title: Introduction to Funnel Chart | FusionCharts
 description: A funnel chart is used to plot streamlined data. For example, it can be used to plot the sales data for a sales pipeline analysis.
 heading: Introduction to Funnel Chart
@@ -7,12 +6,6 @@ chartPresent: true
 ---
 
 A funnel chart is used to plot streamlined data. For example, it can be used to plot the sales data for a sales pipeline analysis. A funnel chart consists of multiple segments, each segment representing a data point. You can render a funnel chart in either 2D or 3D.
-
-In this section, you will be introduced to the:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/funnel-chart/introduction.html#basics-of-a-funnel-chart">Basics of a funnel chart</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/funnel-chart/introduction.html#salient-features">Features of a funnel chart</a>
 
 ## Basics of a Funnel Chart
 

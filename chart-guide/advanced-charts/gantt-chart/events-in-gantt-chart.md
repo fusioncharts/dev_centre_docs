@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/gantt-chart/events-in-gantt-chart.html
 title: Events in Gantt Chart | FusionCharts
 description: This section talks about various events that is raised in the gantt chart. Take a look how events work.
 heading: Events in Gantt Chart

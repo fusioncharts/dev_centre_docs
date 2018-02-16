@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/bullet-graph/configuring-bullet-graph.html
 title: Configuring Bullet Graph | FusionCharts
 description: FusionCharts Suite XT allows you to configure several cosmetic and functional properties for the bullet graphs.
 heading: Configuring Bullet Graph
@@ -7,20 +6,6 @@ chartPresent: true
 ---
 
 FusionCharts Suite XT allows you to configure several cosmetic and functional properties for the bullet graphs.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/configuring-bullet-graph.html#customizing-plot-and-target-properties">Customize plot and target properties</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/configuring-bullet-graph.html#customizing-color-range-properties">Customize color range properties</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/configuring-bullet-graph.html#customizing-tick-marks-and-tick-values">Customize tick marks</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/configuring-bullet-graph.html#rendering-a-dot-as-the-plot-instead-of-a-filled-bar">Render a dot as the data plot</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/configuring-bullet-graph.html#showinghiding-chart-value">Show/hide the chart value</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/configuring-bullet-graph.html#configuring-hover-effects">Configure hover effects</a>
 
 ## Customizing Plot and Target Properties
 

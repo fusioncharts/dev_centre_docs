@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs.html
 title: Real-time Bullet Graph | FusionCharts
 description: The bullet graph is a real-time chart, which can continuously request new data from the server and display the same, without involving any page refreshes.
 heading: Real-time Bullet Graph
@@ -7,18 +6,6 @@ chartPresent: true
 ---
 
 The bullet graph (horizontal and vertical bullet) is a real-time chart, which can continuously request new data from the server and display the same, without involving any page refreshes. The chart initializes itself, loads new data periodically, and auto-updates to reflect the current state of data. There are two different ways to update the bullet; one method directly polls data from the server while the other retrieves data using JavaScript API methods.
-
-In this section, you will be shown how you can,
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs.html#configuring-real-time-updates-using-javascript-api">Configure real-time updates using JavaScript API</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs.html#configuring-real-time-updates-using-server-side-scripts">Configure real-time updates using server-side script</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs.html#stoppingrestarting-updates">Stop/restart updates</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs.html#configuring-real-time-events">Configure real-time events</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/bullet-graph/real-time-bullet-graphs.html#troubleshooting-real-time-graphs">Troubleshoot real-time graphs</a>
 
 ## Configuring Real-time Updates Using JavaScript API
 

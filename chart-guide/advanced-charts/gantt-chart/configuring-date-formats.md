@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/gantt-chart/configuring-date-formats.html
 title: Configuring Date Formats | FusionCharts
 description: FusionCharts Suite XT allows you to configure the input and output date format; you can input the date in one format and output it using a custom format.
 heading: Configuring Date Formats
@@ -7,14 +6,6 @@ chartPresent: true
 ---
 
 FusionCharts Suite XT allows you to configure the input and output date format; you can input the date in one format and output it using a custom format.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-date-formats.html#setting-input-date-format">Set input date format</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-date-formats.html#setting-input-time-format">Set input time format</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/configuring-date-formats.html#setting-the-output-date-format">Configure output date format</a>
 
 ## Setting Input Date Format
 

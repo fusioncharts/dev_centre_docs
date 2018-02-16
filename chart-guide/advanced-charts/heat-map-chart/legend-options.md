@@ -1,5 +1,4 @@
 ---
-permalink: chart-guide/heat-map-chart/legend-options.html
 title: Legend Options | FusionCharts
 description: FusionCharts Suite XT supports two types of legends for the heat map chart - the gradient legend and the icon legend.
 heading: Legend Options
@@ -7,14 +6,6 @@ chartPresent: true
 ---
 
 FusionCharts Suite XT supports two types of legends for the heat map chart - the gradient legend and the icon legend.
-
-In this section, you will be shown how you can work with:
-
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/legend-options.html#working-with-the-icon-legend">the icon legend</a>
-
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/legend-options.html#working-with-the-gradient-legend">the gradient legend</a>
-
-* <a href="{{ site.baseurl }}chart-guide/heat-map-chart/legend-options.html#configuring-a-single-color-gradient-legend">percentage mapping</a>
 
 ## Working with the Icon Legend
 

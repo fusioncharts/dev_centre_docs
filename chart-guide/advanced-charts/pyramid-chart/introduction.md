@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/pyramid-chart/introduction.html
 title: Introduction to Pyramid Chart | FusionCharts
 description: Pyramid charts are used for comparison of data. This section indroduces some basics of pyramid chart with some of its silent features
 heading: Introduction to Pyramid Chart
@@ -7,12 +6,6 @@ chartPresent: true
 ---
 
 Pyramid charts are used for comparison of data, e.g. sales data of a product for a year. A pyramid chart consists of various segments, each representing a data point. The height of the pyramid segment, with respect to the entire pyramid, depicts the value for a specific data point.
-
-In this section, you will be introduced to the:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/introduction.html#basics-of-a-pyramid-chart">Basics of a pyramid chart</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/pyramid-chart/introduction.html#salient-features">Salient features of a pyramid chart</a>
 
 ## Basics of a Pyramid Chart
 

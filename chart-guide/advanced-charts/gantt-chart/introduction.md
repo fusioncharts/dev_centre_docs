@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/gantt-chart/introduction.html
 title: Introduction to Gantt Chart | FusionCharts
 description: The Gantt chart is a specialized chart used for displaying various timelines like project timelines, development timelines, etc.
 heading: Introduction to Gantt Chart
@@ -7,14 +6,6 @@ chartPresent: true
 ---
 
 The Gantt chart is a specialized chart used for displaying various timelines like project timelines, development timelines, etc.
-
-In this section, you will be introduced to the:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/introduction.html#basics-of-the-gantt-chart">Basics of the Gantt chart</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/introduction.html#features-of-the-gantt-chart">Features of the Gantt chart</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/gantt-chart/introduction.html#elements-of-the-gantt-chart">Elements of the Gantt chart</a>
 
 ## Basics of the Gantt Chart
 

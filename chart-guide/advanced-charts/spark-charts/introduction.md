@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/spark-charts/introduction.html
 title: Introduction to Spark Chart | FusionCharts
 description: Spark charts are data-intensive, design-simple, word-sized graphics charts for embedding in a context of words, numbers and images.
 heading: Introduction to Spark Chart
@@ -7,14 +6,6 @@ chartPresent: true
 ---
 
 Spark charts are data-intensive, design-simple, word-sized graphics charts for embedding in a context of words, numbers and images.
-
-In this section, you will be introduced to the:
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/introduction.html#basics-of-spark-charts">Basics of spark charts</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/introduction.html#types-of-spark-charts">Types of spark charts</a>
-
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/spark-charts/introduction.html#salient-features">Features of spark charts</a>
 
 ## Basics of Spark Charts
 

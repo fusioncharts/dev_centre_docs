@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/gantt-chart/creating-simple-gantt-chart.html
 title: Creating a Simple Gantt Chart | FusionCharts
 description: The Gantt chart is a specialized chart typically used to monitor the progress of a project. This section talks about creating a simple Gantt chart
 heading: Creating a Simple Gantt Chart

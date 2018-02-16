@@ -1,5 +1,4 @@
 ---
-permalink: gauge-and-widgets-guide/pyramid-chart/simple-pyramid-chart.html
 title: Creating a Simple Pyramid Chart | FusionCharts
 description: To create a pyramid chart, you will first need to plot the data that will be represented by the chart.
 heading: Creating a Simple Pyramid Chart

@@ -1,5 +1,4 @@
 ---
-permalink: chart-guide/drag-node-chart/configuring-drag-node-charts.html
 title: Configuring Drag-node Charts | FusionCharts
 description: FusionCharts Suite XT lets you configure the functional aspects of drag-node charts.
 heading: Configuring Drag-node Charts
@@ -7,11 +6,6 @@ chartPresent: false
 ---
 
 FusionCharts Suite XT lets you configure the functional aspects of drag-node charts.
-
-In this section, you will be shown how you can:
-
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/configuring-drag-node-charts.html#enablingdisabling-the-dragging-feature">Enable/disable the dragging feature for drag-node charts</a>
-* <a href="{{ site.baseurl }}chart-guide/drag-node-chart/configuring-drag-node-charts.html#switching-between-modes">Switch between modes</a>
 
 ## Enabling/Disabling the Dragging Feature
 
