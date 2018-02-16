@@ -19,50 +19,29 @@ Use the `link` attribute to define a simple link for a data plot. It belongs to 
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-
        ...
     },
-
     "data": [
-
         {
-
             "label": "Apple",
-
             "value": "810000",
-
-           ** "link": "http://fusioncharts.com"**
-
+            "link": "http://fusioncharts.com"
         },
-
         {
-
             "label": "Cranberry",
-
             "value": "620000",
-
-           ** "link": "http://fusioncharts.com"**
-
+            "link": "http://fusioncharts.com"
         },
-
         {
-
             "label": "Grapes",
-
             "value": "350000",
-
-           ** "link": "http://fusioncharts.com"**
-
+            "link": "http://fusioncharts.com"
         }
-
     ]
-
 }
-
 ```
 
 The chart will look as shown below:
@@ -77,49 +56,29 @@ Precede the link you pass as the value of the `link` attribute with `n-`, to ope
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
     },
-
     "data": [
-
         {
-
             "label": "Apple",
-
             "value": "810000",
-
-            **"link": "n-http://fusioncharts.com"**
-
+            "link": "n-http://fusioncharts.com"
         },
-
         {
-
             "label": "Cranberry",
-
             "value": "620000",
-
-           ** "link": "n-http://fusioncharts.com"**
-
+            "link": "n-http://fusioncharts.com"
         },
-
         {
-
             "label": "Grapes",
-
             "value": "350000",
-
-            **"link": "n-http://fusioncharts.com"**
-
+            "link": "n-http://fusioncharts.com"
         }
-
     ]
-
 }
-
 ```
 
 The chart will look as shown below:
@@ -128,7 +87,7 @@ The chart will look as shown below:
 
 Note that, internally, the chart decodes the URL that you set as the link. Before invoking the link, it again encodes the URL. If you pass multilingual characters via a URL or do not want this decode-encode mechanism to be handled by the chart, you can use the `**unescapeLinks`** attribute as shown in the code snippet below:
 
-```
+```json
 {
     "chart": {
         "unescapeLinks": "0"
@@ -187,65 +146,41 @@ Follow the steps given below:
 
 Refer to the code below:
 
-```
+```json
 {
-
     "chart": {
-
-      ...
-
+        ...
     },
-
     "data": [
-
         {
-
             "label": "Apple",
-
             "value": "810000",
-
             "link": "P-detailsWin,width=400,height=300,toolbar=no,scrollbars=yes, resizable=no-http://fusioncharts.com"
-
         },
-
         {
-
             "label": "Cranberry",
-
             "value": "620000",
-
             "link": "P-detailsWin,width=400,height=300,toolbar=no,scrollbars=yes, resizable=no-http://www.fusioncharts.com/explore/charts/"
-
         },
-
         {
-
             "label": "Grapes",
-
             "value": "350000",
-
             "link": "P-detailsWin,width=400,height=300,toolbar=no,scrollbars=yes, resizable=no-http://blog.fusioncharts.com/"
-
         }
-
     ]
-
 }
-
 ```
 
 > Internally the chart decodes the URL that you set the link. Before invoking the link, it again encodes the URL. If you are passing multilingual characters via a URL or do not want this decode-encode mechanism to be handled by the chart, use the `**unescapeLinks`** attribute.
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         "unescapeLinks": "0"
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -258,51 +193,29 @@ When defining the `link` attribute, precede the target URL with `F-` to open the
 
 Refer to the code below:
 
-```
+```json
 {
-
     "chart": {
-
        ...
-
     },
-
     "data": [
-
         {
-
             "label": "Apple",
-
             "value": "810000",
-
-           ** "link": "F-drill-http://fusioncharts.com"**
-
+            "link": "F-drill-http://fusioncharts.com"
         },
-
         {
-
             "label": "Cranberry",
-
             "value": "620000",
-
-            **"link": "F-drill-http://www.fusioncharts.com/explore/charts/"**
-
+            "link": "F-drill-http://www.fusioncharts.com/explore/charts/"
         },
-
         {
-
             "label": "Grapes",
-
             "value": "350000",
-
-           ** "link": "F-drill-http://blog.fusioncharts.com/"**
-
+            "link": "F-drill-http://blog.fusioncharts.com/"
         }
-
     ]
-
 }
-
 ```
 
 > You can provide `**_parent`** as the name of the frame. The URL will get loaded in the frame or browser window which is the parent of the current window. Typically, the main browser space becomes the parent frame that contains all the other frames. Hence, if you wish to remove all frames and load the URL freshly in the same location, you can use `**_parent`** as the name of the frame.
@@ -325,13 +238,13 @@ You can configure the target URL to:
 
 Refer to the code below, which sets the chart as a hotspot that, when clicked, opens the homepage of FusionCharts website in a new tab:
 
-```
+```json
 {
     "chart": {
         ...
         "clickURL": "n-http://www.fusioncharts.com"
-    },
-
+    }
+}
 ```
 
 > Note that if you set the entire chart as hotspot, the other links on the chart (individual links for data plots) will not work.
@@ -354,8 +267,8 @@ Create a thumbnail of a chart, which, when clicked, will open the maximized char
 "chart": {
        ...
         "clickURL": "DetailedChart.html"
-    },
-
+    }
+}
 ```
 
 In the above chart, when you click the hotspot, the maximized version of the chart will open in the same window.
@@ -420,10 +333,8 @@ Specify the `link` attribute (which belongs to the data object) for each data pl
 
 The syntax for the link attribute is:
 
-```
-
+```json
 "link": "newchart-dataformat-datasource"
-
 ```
 
 Here, newchart is constant.For the data URL method, assign `jsonurl` (if the data for the descendant chart is in a .json file) or `xmlurl` (if the data for the descendant chart is in a .xml file) as the value of `dataformat`. Specify the URL of the .json/.xml file as the value of the `datasource` attribute.
@@ -432,104 +343,58 @@ The data structure needed to render the parent chart given above using the data 
 
 ```
 {
-
     "chart": {
-
         "caption": "Top 3 Juice Flavors",
-
         "subcaption": "Last year",
-
         "xaxisname": "Flavor",
-
         "yaxisname": "Amount (In USD)",
-
         "numberprefix": "$",
-
         "theme": "fint",
-
         "plottooltext": "$label, $dataValue,  $percentValue"
-
     },
-
     "data": [{
-
         "label": "Apple",
-
         "value": "810000",
-
         "link": "newchart-jsonurl-apple.json"
-
     }, {
-
         "label": "Cranberry",
-
         "value": "620000",
-
         "link": "newchart-jsonurl-cranberry.json"
-
     }, {
-
         "label": "Grapes",
-
         "value": "350000",
-
         "link": "newchart-jsonurl-grapes.json"
-
     }]
-
 }
-
 ```
 From the data shown above, you can understand that when the user clicks the first data plot, the chart sources the data to render the subsequent linked chart from the apple.json file. Similarly, when you click on the other two data plots, the chart renders the respective linked charts from the data are given in the cranberry.json and grapes.json files.
 
 The apple.json file contains the data to plot a column 2D chart showing the quarterly sales figures of apple juice for the last year. The data structure for the apple.json file is given below:
 
 ```
-
 {
 
     "chart": {
-
         "caption": "Apple Juice - Quarterly Sales",
-
         "subcaption": "Last year",
-
         "numberprefix": "$",
-
         "theme": "fint",
-
         "plottooltext": "$label, $dataValue,  $percentValue"
-
     },
-
     "data": [{
-
         "label": "Q1",
-
         "value": "157000"
-
     }, {
-
         "label": "Q2",
-
         "value": "172000"
-
     }, {
-
         "label": "Q3",
-
         "value": "206000"
-
     }, {
-
         "label": "Q4",
-
         "value": "275000"
-
     }]
-
 }
-
 ```
 
 Similarly, the cranberry.json and the grapes.json files contain the data to plot column 2D charts showing the quarterly sales figures for the cranberry juice and grape juice, respectively.
@@ -537,17 +402,13 @@ Similarly, the cranberry.json and the grapes.json files contain the data to plot
 If you are using XML data for the chart, refer to the data structure for the parent chart given below:
 
 ```
-
 JSON
-
 ```
 
 Similarly, the data structure for the apple.xml file is given below:
 
 ```
-
 JSON
-
 ```
 
 Likewise, you can create the cranberry.xml and the grapes.xml files to create linked charts.
@@ -559,261 +420,133 @@ For the data string method, `dataformat` accepts either `json` (if the JSON data
 Refer to the code below:
 
 ```
-
 {
-
     "chart": {
-
         "caption": "Top 3 Juice Flavors",
-
         "subcaption": "Last year",
-
         "xaxisName": "Flavor",
-
         "yaxisName": "Amount (In USD)",
-
         "numberPrefix": "$",
-
         "theme": "fint",
-
         "rotateValues": "0"
-
     },
-
     "data": [
-
         {
-
             "label": "Apple",
-
             "value": "810000",
-
             "link": "newchart-xml-apple"
-
         },
-
         {
-
             "label": "Cranberry",
-
             "value": "620000",
-
             "link": "newchart-xml-cranberry"
-
         },
-
         {
-
             "label": "Grapes",
-
             "value": "350000",
-
             "link": "newchart-xml-grapes"
-
         }
-
     ],
-
     "linkeddata": [
-
         {
-
             "id": "apple",
-
             "linkedchart": {
-
                 "chart": {
-
                     "caption": "Apple Juice - Quarterly Sales",
-
                     "subcaption": "Last year",
-
                     "xaxisname": "Quarter",
-
                     "yaxisname": "Amount (In USD)",
-
                     "numberprefix": "$",
-
                     "theme": "fint",
-
                     "rotateValues": "0"
-
                 },
-
                 "data": [
-
                     {
-
                         "label": "Q1",
-
                         "value": "157000"
-
                     },
-
                     {
-
                         "label": "Q2",
-
                         "value": "172000"
-
                     },
-
                     {
-
                         "label": "Q3",
-
                         "value": "206000"
-
                     },
-
                     {
-
                         "label": "Q4",
-
                         "value": "275000",
-
                         "rotateValues": "0"
-
                     }
-
                 ]
-
             }
-
         },
-
         {
-
             "id": "cranberry",
-
             "linkedchart": {
-
                 "chart": {
-
                     "caption": "Cranberry Juice - Quarterly Sales",
-
                     "subcaption": "Last year",
-
                     "xaxisname": "Quarter",
-
                     "yaxisname": "Amount (In USD)",
-
                     "numberprefix": "$",
-
                     "theme": "fint",
-
                     "rotateValues": "0"
-
                 },
-
                 "data": [
-
                     {
-
                         "label": "Q1",
-
                         "value": "102000"
-
                     },
-
                     {
-
                         "label": "Q2",
-
                         "value": "142000"
-
                     },
-
                     {
-
                         "label": "Q3",
-
                         "value": "187000"
-
                     },
-
                     {
-
                         "label": "Q4",
-
                         "value": "189000"
-
                     }
-
                 ]
-
             }
-
         },
-
         {
-
             "id": "grapes",
-
             "linkedchart": {
-
                 "chart": {
-
                     "caption": "Grape Juice - Quarterly Sales",
-
                     "subcaption": "Last year",
-
                     "xaxisname": "Quarter",
-
                     "yaxisname": "Amount (In USD)",
-
                     "numberprefix": "$",
-
                     "theme": "fint",
-
                     "rotateValues": "0"
-
                 },
-
                 "data": [
-
                     {
-
                         "label": "Q1",
-
                         "value": "45000"
-
                     },
-
                     {
-
                         "label": "Q2",
-
                         "value": "72000"
-
                     },
-
                     {
-
                         "label": "Q3",
-
                         "value": "95000"
-
                     },
-
                     {
-
                         "label": "Q4",
-
                         "value": "108000"
-
                     }
-
                 ]
-
             }
-
         }
-
     ]
-
 }
-
 ```
 
 ### Configuring events for linked charts
