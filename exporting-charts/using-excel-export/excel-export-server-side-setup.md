@@ -166,7 +166,7 @@ __Steps:__
     * __Method 1:__ Through Nuget Package manager:
         * Search for the package in the Nuget repository.
 
-        ![Excel Export]({{ site.baseurl }}assets/images/server-side-set-up-image-6.png)
+        ![Excel Export]({% site.baseurl %}/images/server-side-set-up-image-6.png)
 
         * Click __Install__.
 
