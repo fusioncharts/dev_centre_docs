@@ -1,0 +1,379 @@
+[
+    {
+        "table": "Functional Attributes",
+        "attrs": [
+            {
+                "description": "It sets the configuration whether the x-axis labels will be displayed or not.",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "showLabels"
+            },
+            {
+                "description": "This attribute lets you set whether the data labels would show up as rotated labels on the chart.",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "rotateLabels"
+            },
+            {
+                "description": "By default, all the labels are displayed on the chart. However, if you have a set of streaming data (like name of months or days of week), you can opt to show every n-th label for better clarity. This attribute just lets you do so. It allows to display every n(th) y-axis label.",
+                "range": "1 or above",
+                "type": "Number",
+                "name": "labelStep"
+            },
+            {
+                "description": "The entire chart can now act as a hotspot. Use this URL to define the hotspot link for the chart. The link can be specified in FusionCharts Link Format.",
+                "range": "",
+                "type": "String",
+                "name": "clickURL"
+            },
+            {
+                "description": "If you want to hide volume chart, you can use this attribute.",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "showVolumeChart"
+            },
+            {
+                "description": "Height of the volume chart in percent (with respect to total chart). By default, it's set to 40%.",
+                "range": "20%-80%",
+                "type": "Number",
+                "name": "volumeHeightPercent"
+            }
+        ],
+        "description": "These attributes let you control a variety of functional elements on the chart. For example, you can opt to show or hide data labels, data values. You can also set chart limits and extended properties. "
+    },
+    {
+        "table": "Chart Titles and Axis Names",
+        "attrs": [
+            {
+                "description": "Caption of the chart.",
+                "type": "String",
+                "name": "caption"
+            },
+            {
+                "description": "Sub-caption of the chart.",
+                "type": "String",
+                "name": "subCaption"
+            },
+            {
+                "description": "The y-axis name for the price chart.",
+                "type": "String",
+                "name": "pYAxisName"
+            },
+            {
+                "description": "The y-axis name for the volume chart.",
+                "type": "String",
+                "name": "vYAxisName"
+            }
+        ],
+        "description": "Using these attributes, you can set the various headings and titles of chart like caption, sub-caption and y-axis names etc. "
+    },
+    {
+        "table": "Chart Caption Cosmetics",
+        "attrs": [
+            {
+                "description": "Sets the caption font size in pixels",
+                "range": "6 - 72",
+                "type": "Number",
+                "name": "captionFontSize"
+            },
+            {
+                "description": "Sets the sub-caption font size (in pixels)",
+                "range": "6 - 72",
+                "type": "Number",
+                "name": "subCaptionFontSize"
+            },
+            {
+                "description": "Whether the caption font should be displayed in bold",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "captionFontBold"
+            },
+            {
+                "description": "Whether the sub caption font should be displayed in bold",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "subCaptionFontBold"
+            }
+        ],
+        "description": "These attributes let you configure the cosmetics of chart caption and sub-caption."
+    },
+    {
+        "table": "Chart Axis Configuration Attributes",
+        "attrs": [
+            {
+                "description": "The y-axis of the charts is divided into vertical sections using div (divisional) lines. Each div line assumes a value based on its position. Using this attribute you can set whether to show those div line (y-axis) values or not.",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "showYAxisValues"
+            },
+            {
+                "description": "By default, all div lines show their values. However, you can opt to display every x(th) div line value using this attribute.",
+                "range": "1 or above",
+                "type": "Number",
+                "name": "yAxisValuesStep"
+            },
+            {
+                "description": "If you do not wish to rotate y-axis name, set this as 0. It specifically comes to use when you have special characters (UTF8) in your y-axis name that do not show up in rotated mode.",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "rotateYAxisName"
+            },
+            {
+                "description": "The candlestick chart has both x and y axis as numeric. This attribute lets you explicitly set the x-axis lower limit. If you do not specify this value, the chart will automatically calculate the best value for you.",
+                "range": "Numeric Value",
+                "type": "Number",
+                "name": "xAxisMinValue"
+            },
+            {
+                "description": "The candlestick chart has both x and y axis as numeric. This attribute lets you explicitly set the x-axis upper limit. If you do not specify this value, the chart will automatically calculate the best value for you.",
+                "range": "Numeric Value",
+                "type": "Number",
+                "name": "xAxisMaxValue"
+            },
+            
+            {
+                "description": "This attribute helps you explicitly set the upper limit of the price chart. If you don't specify this value, it is automatically calculated by the chart based on the data provided by you.",
+                "range": "",
+                "type": "Number",
+                "name": "pYAxisMaxValue"
+            },
+            {
+                "description": "This attribute helps you explicitly set the lower limit of the price chart. If you don't specify this value, it is automatically calculated by the chart based on the data provided by you.",
+                "range": "",
+                "type": "Number",
+                "name": "pYAxisMinValue"
+            },
+            {
+                "description": "Lower limit for the volume chart axis. If you do not specify this, the chart will automatically calculate for you.",
+                "range": "",
+                "type": "Number",
+                "name": "vYAxisMinValue"
+            },
+            {
+                "description": "Upper limit for the volume chart axis. If you do not specify this, the chart will automatically calculate for you.",
+                "range": "",
+                "type": "Number",
+                "name": "vYAxisMaxValue"
+            }
+        ],
+        "description": "Using these attributes, you can set and configure x-axis labels, y-axis values and set chart cosmetics for the axis like color, alpha, etc."
+    },
+    {
+        "table": "Primary y-Axis Name Cosmetics",
+        "attrs": [
+            {
+                "description": "Specifies the primary y-axis font size",
+                "range": "6 - 72",
+                "type": "Number",
+                "name": "pYAxisNameFontSize"
+            },
+            {
+                "description": "Whether primary y-axis font should be bold",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "pYAxisNameFontBold"
+            },
+            {
+                "description": "Whether primary y-axis font should be italicized",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "pYAxisNameFontItalic"
+            }
+        ],
+        "description": "When using a dual y-axis chart (having a primary and a secondary axis), these attributes let you configure the cosmetics of the primary axis name (title)"
+    },
+    {
+        "table": "Volume y-Axis Name Cosmetics",
+        "attrs": [
+            {
+                "description": "Specifies the volume y-axis font size",
+                "range": "6 - 72",
+                "type": "Number",
+                "versionsince": "3.11.0",
+                "name": "vYAxisNameFontSize"
+            },
+            {
+                "description": "Whether volume y-axis font should be bold",
+                "range": "0/1",
+                "type": "Boolean",
+                "versionsince": "3.11.0",
+                "name": "vYAxisNameFontBold"
+            },
+            {
+                "description": "Whether volume y-axis font should be italicized",
+                "range": "0/1",
+                "type": "Boolean",
+                "versionsince": "3.11.0",
+                "name": "vYAxisNameFontItalic"
+            }
+        ],
+        "description": "When using a dual y-axis chart, these attributes let you configure the cosmetics of the volumne y-axis name (title)"
+    },
+    {
+        "table": "Chart Cosmetics",
+        "attrs": [
+            {
+                "description": "To place any image (JPG/PNG/GIF) as background of the chart, enter the (path and) name of the background image. It should be in the same domain as the chart.",
+                "range": "",
+                "type": "String",
+                "versionsince": "3.2.1",
+                "name": "bgImage"
+            },
+            {
+                "description": "You can load an external logo (JPEG/PNG) to your chart, this attribute lets you specify the URL. Due to cross domain security restrictions it is advised to use a logo from the same domain name as your charts.",
+                "range": "URL",
+                "type": "String",
+                "name": "logoURL"
+            }
+        ],
+        "description": "The following attributes let you configure chart cosmetics like background color, background alpha, canvas color & alpha etc. "
+    },
+    {
+        "table": "Number Formatting",
+        "attrs": [
+            {
+                "description": "This configuration determines whether the numbers displayed on the price chart will be formatted using commas, e.g., 40,000 if 'formatNumber': '1'; and 40000 if 'formatNumber': '0';.",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "formatNumber"
+            },
+            {
+                "description": "Configuration whether to add K (thousands) and M (millions) to a number after truncating and rounding it - e.g., if `formatNumberScale` is set to 1, 1043 would become 1.04K (with decimals set to 2 places). Same with numbers in millions - an M will be added at the end.",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "formatNumberScale"
+            },
+            {
+                "description": "Using this attribute, you could add prefix to all the numbers visible on the price chart. For example, to represent all dollars figure on the chart, you could specify this attribute to $ to show like $40000, $50000.",
+                "range": "Character",
+                "type": "String",
+                "name": "numberPrefix"
+            },
+            {
+                "description": "Using this attribute, you could add suffix to all the numbers visible on the price chart. For example, to represent all figures quantified as per annum on the chart, you could specify this attribute to '/a' to show like 40000/a, 50000/a.",
+                "range": "Character",
+                "type": "String",
+                "name": "numberSuffix"
+            },
+            {
+                "description": "This attribute helps you specify the character to be used as the thousands separator in a number.",
+                "range": "Character",
+                "type": "String",
+                "name": "thousandSeparator"
+            },
+            {
+                "description": "This option helps you specify the position of the thousand separator.",
+                "range": " ",
+                "type": "Number",
+                "versionsince": "3.2.1",
+                "name": "thousandSeparatorPosition"
+            },
+            {
+                "description": "Number of decimal places to which all numbers on the price chart would be rounded to.",
+                "range": "0-10",
+                "type": "Number",
+                "name": "decimals"
+            },
+            {
+                "description": "Whether to add 0 padding at the end of decimal numbers. For example, if you set decimals as 2 and a number is 23.4. If `forceDecimals` is set to 1, the number will automatically be converted to 23.40 (note the extra 0 at the end).",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "forceDecimals"
+            },
+            {
+                "description": "This configuration determines whether the numbers belonging to volume chart will be formatted using commas, e.g., 40,000 if 'vFormatNumber': '1'; and 40000 if 'vFormatNumber' : '0';",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "vFormatNumber"
+            },
+            {
+                "description": "Configuration whether to add K (thousands) and M (millions) to a number belonging to volume chart after truncating and rounding it - e.g., if `vFormatNumberScale` is set to 1, 10434 would become 1.04K (with `vDecimals` set to 2 places). Same with numbers in millions - an M will be added at the end.",
+                "range": "0/1",
+                "type": "Boolean",
+                "name": "vFormatNumberScale"
+            },
+            {
+                "description": "Using this attribute, you could add prefix to all the numbers belonging to volume chart.",
+                "range": "Character",
+                "type": "String",
+                "name": "vNumberPrefix"
+            },
+            {
+                "description": "Using this attribute, you could add prefix to all the numbers belonging to volume chart.",
+                "range": "Character",
+                "type": "String",
+                "name": "vNumberSuffix"
+            },
+            {
+                "description": "Number of decimal places to which all numbers belonging to volume chart would be rounded to.",
+                "range": "0-10",
+                "type": "Number",
+                "name": "vDecimals"
+            }
+        ],
+        "description": "PowerCharts XT offers you a lot of options to format your numbers on the chart. Using the attributes below, you can control a myriad of options like: Formatting of commas and decimals Number prefixes and suffixes Decimal places to which the numbers would round to Scaling of numbers based on a user defined scale Custom number input formats "
+    },
+    {
+        "table": "The categories Object",
+        "path": "categories",
+        "attrs": [
+            {
+                "description": "Lets you specify font size for the x-axis data labels.",
+                "range": "",
+                "type": "Number",
+                "name": "fontSize"
+            }
+        ],
+        "description": "The `categories` object and the `category` object (child of  the `categories` object)  are used to specify x-axis labels for multi-series charts. The attributes of the `categories` object are used to set the font properties of all x-axis labels collectively."
+    },
+    {
+        "table": "The category Object",
+        "path": "category",
+        "attrs": [
+            {
+                "description": "This attribute determines the label for the data item. The label appears on the x-axis of chart.\n\n __Note__: The `label` attribute replaces the `name` attribute. Previously, either one of the attributes could be used to set the label. Support for the `name` attribute has been discontinued since v3.10.0.",
+                "range": "",
+                "type": "String",
+                "name": "label"
+            }
+        ],
+        "description": "The attributes of the `category` object are used to define and customize individual x-axis labels for multi-series charts."
+    },
+    {
+        "table": "The data Object",
+        "path": "data",
+        "attrs": [
+            {
+                "description": "Opening price for the set.",
+                "range": "",
+                "type": "Number",
+                "name": "open"
+            },
+            {
+                "description": "Closing price for the set.",
+                "range": "",
+                "type": "Number",
+                "name": "close"
+            },
+            {
+                "description": "Highest price point reached for the set.",
+                "range": "",
+                "type": "Number",
+                "name": "high"
+            },
+            {
+                "description": "Lowest price point reached for the set.",
+                "range": "",
+                "type": "Number",
+                "name": "low"
+            },
+            {
+                "description": "Volume of transaction. If you do not specify volume for any of the sets, PowerCharts XT wouldn't plot the volume chart at the bottom.",
+                "range": "",
+                "type": "Number",
+                "name": "volume"
+            }
+        ],
+        "description": "The `data` object represents a set of data which is to be plotted on the chart and determines a set of data which would appear on the chart.. The `data` object is used within its parent object, the `dataset` object, as shown below: \n\n<pre class=\"language-javascript\"><code>\n\"dataset\"[{\n\t\"data\": [{\n\t\t\"open\": \"18.74\",\n\t\t\"high\": \"19.16\",\n\t\t\"low\": \"18.67\",\n\t\t\"close\": \"18.99\", \n\t\t\"x\": \"1\", \n\t\t\"volume\": \"4991285\"\n\t\t}]\n\t}]\n</code></pre> "
+    }
+]
