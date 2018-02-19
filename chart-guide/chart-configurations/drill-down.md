@@ -44,9 +44,11 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The chart when configured using above feature, looks like as shown below:
 
-**chart**
+{% embed_chart chart-configurations-drill-down-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/L7vLc9n2/ "@@open-newtab") to edit the above chart.
 
 > Note: If you have special characters (**?**, **&**, etc.), in your link, make sure that your link is in the URL Encoded format. Every time you click a data plot, FusionCharts Suite XT decodes the link and invokes the URL. All server-side scripting languages provide a generic function to URL Encode any string - for example, the `**server.URLEncode(strURL)`** method in ASP and ASP.NET.
 
@@ -81,9 +83,11 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The chart when configured using above feature, looks like as shown below:
 
-**chart**
+{% embed_chart chart-configurations-drill-down-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/hs7rz3k1/ "@@open-newtab") to edit the above chart.
 
 Note that, internally, the chart decodes the URL that you set as the link. Before invoking the link, it again encodes the URL. If you pass multilingual characters via a URL or do not want this decode-encode mechanism to be handled by the chart, you can use the `**unescapeLinks`** attribute as shown in the code snippet below:
 
@@ -95,10 +99,6 @@ Note that, internally, the chart decodes the URL that you set as the link. Befor
 }
 
 ```
-
-The chart will look as shown below:
-
-**chart**
 
 ### In a pop-up window
 
@@ -171,21 +171,11 @@ Refer to the code below:
 }
 ```
 
-> Internally the chart decodes the URL that you set the link. Before invoking the link, it again encodes the URL. If you are passing multilingual characters via a URL or do not want this decode-encode mechanism to be handled by the chart, use the `**unescapeLinks`** attribute.
+The chart when configured using above feature, looks like as shown below:
 
-Refer to the code below:
+{% embed_chart chart-configurations-drill-down-example-3.js %}
 
-```json
-{
-    "chart": {
-        "unescapeLinks": "0"
-    }
-}
-```
-
-The chart will look as shown below:
-
-**chart**
+Click [here](http://jsfiddle.net/fusioncharts/28nqcyu7/ "@@open-newtab") to edit the above chart.
 
 ### In a frame
 
@@ -218,6 +208,12 @@ Refer to the code below:
 }
 ```
 
+The chart when configured using above feature, looks like as shown below:
+
+{% embed_chart chart-configurations-drill-down-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/28ru7erc/ "@@open-newtab") to edit the above chart.
+
 > You can provide `**_parent`** as the name of the frame. The URL will get loaded in the frame or browser window which is the parent of the current window. Typically, the main browser space becomes the parent frame that contains all the other frames. Hence, if you wish to remove all frames and load the URL freshly in the same location, you can use `**_parent`** as the name of the frame.
 
 ### Set the chart as a hotspot
@@ -247,17 +243,13 @@ Refer to the code below, which sets the chart as a hotspot that, when clicked, o
 }
 ```
 
+The chart when configured using above feature, looks like as shown below:
+
+{% embed_chart chart-configurations-drill-down-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/3q9qzo8h/ "@@open-newtab") to edit the above chart.
+
 > Note that if you set the entire chart as hotspot, the other links on the chart (individual links for data plots) will not work.
-
-Internally the chart decodes the URL that you set as the link. Before invoking the link, it again encodes the URL. If you pass multilingual characters via a URL or do not want this decode-encode mechanism to be handled by the chart, use the `**unescapeLinks`** attribute as shown in the code snippet below:
-
-```
-{
-    "chart" : {
-        "unescapeLinks" : "0"
-    }
-}
-```
 
 ### Create a thumbnail of the chart
 
@@ -273,7 +265,11 @@ Create a thumbnail of a chart, which, when clicked, will open the maximized char
 
 In the above chart, when you click the hotspot, the maximized version of the chart will open in the same window.
 
-## Chart links (<<Linked Charts>>)
+{% embed_chart chart-configurations-drill-down-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/pj9u9ym2/ "@@open-newtab") to edit the above chart.
+
+## Chart links (Linked Charts)
 
 Drill down to detailed **linked charts** that show data at different levels of detail.
 
@@ -309,23 +305,9 @@ The parent chart is a column 2D chart that shows the yearly sales of the top thr
 
 The above chart, when rendered, looks like the following:
 
-**Chart**
+{% embed_chart chart-configurations-drill-down-example-7.js %}
 
-In this section, you will see how to:
-
-* Create a basic linked chart that loads the descendant charts using the data URL method
-
-* Create a linked chart with all data for descendant charts specified using the data string method
-
-* Configure events in a linked chart.
-
-As an example here, we will consider a simple scenario of a parent chart with the single level of drill-down and see how you can create it using the data URL and the data string method.
-
-The parent chart is a column 2D chart that shows the yearly sales of the top three juice flavors, for the last year. When a data plot for a flavor of juice is clicked, it drills-down to show a descendant column 2D chart that shows the quarterly sales figures for the selected flavor.
-
-The above chart, when rendered, looks like this:
-
-**Chart**
+Click [here](http://jsfiddle.net/fusioncharts/wvpzfz5g/ "@@open-newtab") to edit the above chart.
 
 ### Create linked charts using Data URL method
 
@@ -334,14 +316,24 @@ Specify the `link` attribute (which belongs to the data object) for each data pl
 The syntax for the link attribute is:
 
 ```json
-"link": "newchart-dataformat-datasource"
+{
+    "chart": {
+        "link": "newchart-dataformat-datasource"        
+    }
+}
 ```
+
+The above chart, when rendered, looks like the following:
+
+{% embed_chart chart-configurations-drill-down-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/v76phqq5/ "@@open-newtab") to edit the above chart.
 
 Here, newchart is constant.For the data URL method, assign `jsonurl` (if the data for the descendant chart is in a .json file) or `xmlurl` (if the data for the descendant chart is in a .xml file) as the value of `dataformat`. Specify the URL of the .json/.xml file as the value of the `datasource` attribute.
 
 The data structure needed to render the parent chart given above using the data URL method is given below:
 
-```
+```json
 {
     "chart": {
         "caption": "Top 3 Juice Flavors",
@@ -371,7 +363,7 @@ From the data shown above, you can understand that when the user clicks the firs
 
 The apple.json file contains the data to plot a column 2D chart showing the quarterly sales figures of apple juice for the last year. The data structure for the apple.json file is given below:
 
-```
+```json
 {
 
     "chart": {
@@ -401,14 +393,25 @@ Similarly, the cranberry.json and the grapes.json files contain the data to plot
 
 If you are using XML data for the chart, refer to the data structure for the parent chart given below:
 
-```
-JSON
+```html
+<chart caption="Top 3 Juice Flavors" subcaption="Last year" xaxisname="Flavor" yaxisname="Amount (In USD)" numberprefix="$" theme="fint" plottooltext="$label, $dataValue,  $percentValue" animation="0">
+
+<set label="Apple" value="810000" link="newchart-xmlurl-apple.xml" />
+<set label="Cranberry" value="620000" link="newchart-xmlurl-cranberry.xml" />
+<set label="Grapes" value="350000" link="newchart-xmlurl-grapes.xml" />
+</chart>
 ```
 
 Similarly, the data structure for the apple.xml file is given below:
 
-```
-JSON
+```html
+<chart caption="Apple Juice - Quarterly Sales" subcaption="Last year" numberprefix="$" theme="fint" plottooltext="$label, $dataValue,  $percentValue">
+
+<set label="Q1" value="157000" />
+<set label="Q2" value="172000" />
+<set label="Q3" value="206000" />
+<set label="Q4" value="275000" />
+</chart>
 ```
 
 Likewise, you can create the cranberry.xml and the grapes.xml files to create linked charts.
@@ -419,7 +422,7 @@ For the data string method, `dataformat` accepts either `json` (if the JSON data
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "caption": "Top 3 Juice Flavors",
@@ -549,7 +552,7 @@ Refer to the code below:
 }
 ```
 
-### Configuring events for linked charts
+### Configure events for linked charts
 
 The FusionCharts JavaScript class includes events raised when you open or close linked items, as detailed below:
 
@@ -563,256 +566,135 @@ The FusionCharts JavaScript class includes events raised when you open or close 
 
 A chart utilizing these events is given below:
 
-**Chart**
+{% embed_chart chart-configurations-drill-down-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/sknyboh5/ "@@open-newtab") to edit the above chart.
 
 Configure the `addEventListener()` method for the parent chart to listen to these events. The data structure that shows how to implement these events is given below:
 
-```
-
+```json
 {
-
     "chart": {
-
         "caption": "Top 3 Juice Flavors",
-
         "subcaption": "Last year",
-
         "xaxisname": "Flavor",
-
         "yaxisname": "Amount (In USD)",
-
         "numberprefix": "$",
-
         "theme": "fint",
-
         "rotateValues": "0"
-
     },
-
     "data": [
-
         {
-
             "label": "Apple",
-
             "value": "810000",
-
             "link": "newchart-xml-apple"
-
         },
-
         {
-
             "label": "Cranberry",
-
             "value": "620000",
-
             "link": "newchart-xml-cranberry"
-
         },
-
         {
-
             "label": "Grapes",
-
             "value": "350000",
-
             "link": "newchart-xml-grapes"
-
         }
-
     ],
-
     "linkeddata": [
-
         {
-
             "id": "apple",
-
             "linkedchart": {
-
                 "chart": {
-
                     "caption": "Apple Juice - Quarterly Sales",
-
                     "subcaption": "Last year",
-
                     "numberprefix": "$",
-
                     "theme": "fint",
-
                     "rotateValues": "0",
-
                     "plottooltext": "$label, $dataValue,  $percentValue"
-
                 },
-
                 "data": [
-
                     {
-
                         "label": "Q1",
-
                         "value": "157000"
-
                     },
-
                     {
-
                         "label": "Q2",
-
                         "value": "172000"
-
                     },
-
                     {
-
                         "label": "Q3",
-
                         "value": "206000"
-
                     },
-
                     {
-
                         "label": "Q4",
-
                         "value": "275000"
-
                     }
-
                 ]
-
             }
-
         },
-
         {
-
             "id": "cranberry",
-
             "linkedchart": {
-
                 "chart": {
-
                     "caption": "Cranberry Juice - Quarterly Sales",
-
                     "subcaption": "Last year",
-
                     "numberprefix": "$",
-
                     "theme": "fint",
-
                     "plottooltext": "$label, $dataValue,  $percentValue"
-
                 },
-
                 "data": [
-
                     {
-
                         "label": "Q1",
-
                         "value": "102000"
-
                     },
-
                     {
-
                         "label": "Q2",
-
                         "value": "142000"
-
                     },
-
                     {
-
                         "label": "Q3",
-
                         "value": "187000"
-
                     },
-
                     {
-
                         "label": "Q4",
-
                         "value": "189000"
-
                     }
-
                 ]
-
             }
-
         },
-
         {
-
             "id": "grapes",
-
             "linkedchart": {
-
                 "chart": {
-
                     "caption": "Grapes Juice - Quarterly Sales",
-
                     "subcaption": "Last year",
-
                     "numberprefix": "$",
-
                     "theme": "fint",
-
                     "rotateValues": "0",
-
                     "plottooltext": "$label, $dataValue,  $percentValue"
-
                 },
-
                 "data": [
-
                     {
-
                         "label": "Q1",
-
                         "value": "45000"
-
                     },
-
                     {
-
                         "label": "Q2",
-
                         "value": "72000"
-
                     },
-
                     {
-
                         "label": "Q3",
-
                         "value": "95000"
-
                     },
-
                     {
-
-                        "label": "Q4",
-
+                        "label": "Q4"
                         "value": "108000"
-
                     }
-
                 ]
-
             }
-
         }
-
     ]
-
 }
-
 ```
 
 Use the events object (under the dataSource object) to configure the events raised for a chart.
@@ -845,31 +727,26 @@ The j- Prefix
 
 Take a look at an example of a drill-down chart and its corresponding code, used to link charts using the j- prefix, given below. For this example, a JavaScript function, showAlert, is defined to show the label and value of the data plot you click. For example, when you click the data plot labeled **Apple**, the showAlert function is invoked, and an alert box is displayed with the data value and the label.
 
-**Chart**
+The chart thus looks like as shown below:
 
-### HTML code:
+{% embed_chart chart-configurations-drill-down-example-9.js %}
 
+Click [here](http://jsfiddle.net/fusioncharts/cgLLusuL/ "@@open-newtab") to edit the above chart.
+
+Following is the HTML code:
+
+```html
 <div id="chart-container">FusionCharts will render here</div>
-
 <!-- Drill-down: Simple Link Open in Same Page. Attribute: # link -->
-
 <script language="JavaScript" src="fusioncharts/js/fusioncharts.js"></script>
-
 <script language="JavaScript">
-
     <!--
-
     function showAlert(myVar) {
-
         window.alert(myVar);
-
     }
-
     -->
-
 </script>
-
-### JSON data:
+```
 
 In the code snippet given above, showAlert is a custom function that is present in the HTML page that embeds the chart. **Apple, $810K** is the parameter value passed to the function. As mentioned before, you can only pass one one string parameter to the JavaScript function using the j- prefix.
 
@@ -881,34 +758,26 @@ For this example, the parameter string contains the data label and data value on
 
 An example of a drill-down chart and its corresponding code, that implements linking using the JavaScript: prefix, is given below:
 
-**chart**
+{% embed_chart chart-configurations-drill-down-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/z7vnp56d/ "@@open-newtab") to edit the above chart.
 
 Similar to the above example, the showAlert function is defined to show an alert message that contains the clicked data plot label and value.
 
 The code for the above example is given below:
 
-### HTML code:
+**HTML code:**
 
-```
-
+```html
 <div id="chart-container">FusionCharts will render here</div>
-
 <!-- Drill-down: Simple Link Open in Same Page. Attribute: # link -->
-
 <script language="JavaScript" src="fusioncharts/js/fusioncharts.js"></script>
-
 <script language="JavaScript">
-
     <!--
-
     function showAlert(myVar) {
-
         window.alert(myVar);
-
     }
-
     -->
-
 </script>
 
 ```
