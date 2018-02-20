@@ -203,10 +203,10 @@ Given below is the list of attributes with the help of which you can customize y
 
 * Set `plotBinSize` attribute to `1`, to render minimum one data plot within the width of one pixel. Example, if `plotBinSize: 1`, minimum one column plot will be rendered within the width of one pixel.
 For line and area charts, minimum of two anchors connecting one single line will be drawn. If `plotBinSize: 0.5`, minimum two column plot on each pixel (width )will be rendered. 
-**Note:** To disable data skipping, set this attribute to `0`.
 
 * Set the `labelBinSize` attribute to `1`, to display minimum one label in the width of one pixel.
-> **Note:** To disable this label skipping, set this attribute to `0`.
+
+**Note:** To disable this label skipping, set this attribute to `0`.
 
 Now, let's render an area chart with `30000` data. You will notice that the chart will give a clear idea on how frequently the new trips are availed. The chart will show the data updated every hour. The chart plots with maximum and minimum value in a single pixel (width), drawn to show the pattern out of data. The plots get overlapped only if they are hidden by another plot which results to render the chart much faster than expected. The overlapping takes place based on the data trend which cannot be compromised.
 
