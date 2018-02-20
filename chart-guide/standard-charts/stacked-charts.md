@@ -93,7 +93,7 @@ A stacked bar chart in 2D looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/obga4uw9/ "@@open-newtab") to edit the stacked bar 2D chart.
 
-## Stacked area 3D Chart
+## Stacked Bar 3D Chart
 
 To render a stacked bar chart in 3D, change the value of the `type` attribute from `stackedbar2d` to `stackedbar3d`. The rest of the data structure remains the same.
 
@@ -104,6 +104,8 @@ A stacked bar chart in 3D looks like:
 {% embed_all standard-charts-stacked-charts-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/L6gg6ow3/ "@@open-newtab") to edit the stacked bar 3D chart.
+
+> The remaining seven types of stacked charts are shown under [combination charts]({% site.baseurl %}/chart-guide/standard-charts/combination-charts "@@open-newtab") and [scroll charts](({% site.baseurl %}/chart-guide/standard-charts/scroll-charts "@@open-newtab")) section.
 
 Now, let's customize the appearance and properties of the charts. 
 
