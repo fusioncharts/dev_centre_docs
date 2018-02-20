@@ -50,7 +50,7 @@ The chart when configured using above feature, looks like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/L7vLc9n2/ "@@open-newtab") to edit the above chart.
 
-> Note: If you have special characters (**?**, **&**, etc.), in your link, make sure that your link is in the URL Encoded format. Every time you click a data plot, FusionCharts Suite XT decodes the link and invokes the URL. All server-side scripting languages provide a generic function to URL Encode any string - for example, the `server.URLEncode(strURL)` method in ASP and ASP.NET.
+> If you have special characters (**?**, **&**, etc.), in your link, make sure that your link is in the URL Encoded format. Every time you click a data plot, FusionCharts Suite XT decodes the link and invokes the URL. All server-side scripting languages provide a generic function to URL Encode any string - for example, the `server.URLEncode(strURL)` method in ASP and ASP.NET.
 
 ### In a new page
 
