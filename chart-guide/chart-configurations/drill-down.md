@@ -50,7 +50,7 @@ The chart when configured using above feature, looks like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/L7vLc9n2/ "@@open-newtab") to edit the above chart.
 
-> Note: If you have special characters (**?**, **&**, etc.), in your link, make sure that your link is in the URL Encoded format. Every time you click a data plot, FusionCharts Suite XT decodes the link and invokes the URL. All server-side scripting languages provide a generic function to URL Encode any string - for example, the `**server.URLEncode(strURL)`** method in ASP and ASP.NET.
+> Note: If you have special characters (**?**, **&**, etc.), in your link, make sure that your link is in the URL Encoded format. Every time you click a data plot, FusionCharts Suite XT decodes the link and invokes the URL. All server-side scripting languages provide a generic function to URL Encode any string - for example, the `server.URLEncode(strURL)` method in ASP and ASP.NET.
 
 ### In a new page
 
@@ -212,7 +212,7 @@ The chart when configured using above feature, looks like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/28ru7erc/ "@@open-newtab") to edit the above chart.
 
-> You can provide `_parent` as the name of the frame. The URL will get loaded in the frame or browser window which is the parent of the current window. Typically, the main browser space becomes the parent frame that contains all the other frames. Hence, if you wish to remove all frames and load the URL freshly in the same location, you can use `**_parent`** as the name of the frame.
+> You can provide `_parent` as the name of the frame. The URL will get loaded in the frame or browser window which is the parent of the current window. Typically, the main browser space becomes the parent frame that contains all the other frames. Hence, if you wish to remove all frames and load the URL freshly in the same location, you can use `_parent` as the name of the frame.
 
 ### Set the chart as a hotspot
 
@@ -709,11 +709,11 @@ To use this method, place the JavaScript function name after the `j-` notation. 
 
 The `JavaScript:` prefix
 
-To use this, place the function name and the parameter after the `JavaScript:`notation. To call a function in `JavaScript:` notation, make the function available in the global scope and ensure that the function name is the same as that of the string you provide after the `JavaScript:` prefix.
+To use this, place the function name and the parameter after the `JavaScript:` notation. To call a function in `JavaScript:` notation, make the function available in the global scope and ensure that the function name is the same as that of the string you provide after the `JavaScript:` prefix.
 
 Note:
 
-* Due to some security policies, you can no longer use `eval`, as well as some of the features of Javascript: prefix.
+* Due to some security policies, you can no longer use `eval`, as well as some of the features of `Javascript:` prefix.
 
 * You cannot pass special characters like **(**, **)**, **-**, **%** as parameters when you call a function.
 
@@ -780,6 +780,6 @@ The code for the above example is given below:
 
 ```
 
-**Apple** and **$810K** are passed as two parameters to the showAlert function—**Apple** is passed as a string parameter and **$810K** is passed as a numeric parameter.
+**Apple** and **$810K** are passed as two parameters to the showAlert function— **Apple** is passed as a string parameter and **$810K** is passed as a numeric parameter.
 
 Now, when the data plot labeled **Apple** is clicked, the showAlert function is invoked and the two parameters are passed to it.

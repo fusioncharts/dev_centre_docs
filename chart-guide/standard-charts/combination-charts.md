@@ -149,7 +149,7 @@ Click [here](http://jsfiddle.net/fusioncharts/7chax01w/ "@@open-newtab") to edit
 
 ## Multi Series Stacked Column 2D + Line Dual Y-axis Chart
 
-To render the multi-series stacked column _ line dual y-axis chart in 2D, set the value of `type` attribute to `msstackedcolumn2dlinedy`.
+To render the multi-series stacked column + line dual y-axis chart in 2D, set the value of `type` attribute to `msstackedcolumn2dlinedy`.
 
 For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=msstackedcolumn2dlinedy "@@open-newtab") page of multi-series stacked column 2D line dual y-axis chart.
 
