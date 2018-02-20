@@ -107,11 +107,19 @@
         'beforeRender': function(evt, args) {
             if (!document.getElementById('eventmessages')) {
                 // Create container div for radio controls
+                var wrapper = document.createElement('div');
+                var label = document.createElement('label');
+                label.innerText = "Click on the data plot for the event to fire";
                 var controllers = document.createElement('div');
                 controllers.setAttribute('id', 'eventmessages');
                 controllers.innerHTML = "";
 
-                args.container.parentNode.insertBefore(controllers, args.container.nextSibling);
+                wrapper.appendChild(label);
+                wrapper.appendChild(controllers);
+
+                // args.container.parentNode.insertBefore(controllers, args.container.nextSibling);
+
+                args.container.parentNode.insertBefore(wrapper, args.container.nextSibling);
 
                 // set css style for controllers div
                 controllers.style.cssText = 'position:inherit; width:400px; height: 100px; border: 1px solid #cccccc; margin-top:10px;padding-left:5px; overflow: scroll;';

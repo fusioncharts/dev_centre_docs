@@ -58,21 +58,23 @@
     },
     events: {
         'beforeRender': function(evt, args) {
+            var wrapper = document.createElement('div');
+            wrapper.style.overflow = "hidden"
             // Create div for thumbnails
             var thumbnails = document.createElement('div');
             thumbnails.innerHTML = '<div id="thumbnail-column"></div><div id="thumbnail-pie"></div><div id="thumbnail-bar"></div></div>';
-            thumbnails.style.cssText = 'display:inline-block; float:left;';
+            thumbnails.style.cssText = 'display:block; float:left;';
 
             // Append thumbnails div before chart-container
-            args.container.parentNode.insertBefore(thumbnails, args.container);
+            //args.container.parentNode.insertBefore(thumbnails, args.container);
+            args.container.parentNode.insertBefore(wrapper, args.container);
+            wrapper.appendChild(thumbnails);
+            wrapper.appendChild(args.container);
 
-            // Append line-breaker div after chart-container
-            var divBreak = document.createElement('div');
-            divBreak.style.cssText = 'clear: both;';
-            args.container.parentNode.insertBefore(divBreak, args.container.nextSibling);
+
 
             // Set CSS style for chart-container
-            args.container.style.cssText = 'padding:5px; font-size:11px; display:inline-block; float:left; clear:right;';
+            args.container.style.cssText = 'padding:5px; font-size:11px; display:block; float:left;';
         },
         'renderComplete': function(evt, args) {
             var createThumbNail = function(chartId, width, height, divId) {

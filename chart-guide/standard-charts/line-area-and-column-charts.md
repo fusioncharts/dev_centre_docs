@@ -206,7 +206,7 @@ For line and area charts, minimum of two anchors connecting one single line will
 
 * Set the `labelBinSize` attribute to `1`, to display minimum one label in the width of one pixel.
 
-**Note:** To disable this label skipping, set this attribute to `0`.
+> To disable this label skipping, set this attribute to `0`.
 
 Now, let's render an area chart with `30000` data. You will notice that the chart will give a clear idea on how frequently the new trips are availed. The chart will show the data updated every hour. The chart plots with maximum and minimum value in a single pixel (width), drawn to show the pattern out of data. The plots get overlapped only if they are hidden by another plot which results to render the chart much faster than expected. The overlapping takes place based on the data trend which cannot be compromised.
 

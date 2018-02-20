@@ -89,7 +89,7 @@ The chart when configured using above feature, looks like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/hs7rz3k1/ "@@open-newtab") to edit the above chart.
 
-Note that, internally, the chart decodes the URL that you set as the link. Before invoking the link, it again encodes the URL. If you pass multilingual characters via a URL or do not want this decode-encode mechanism to be handled by the chart, you can use the `**unescapeLinks`** attribute as shown in the code snippet below:
+Note that, internally, the chart decodes the URL that you set as the link. Before invoking the link, it again encodes the URL. If you pass multilingual characters via a URL or do not want this decode-encode mechanism to be handled by the chart, you can use the `unescapeLinks` attribute as shown in the code snippet below:
 
 ```json
 {
@@ -134,13 +134,11 @@ When defining the `link` attribute, precede the target URL with `P-` to open the
 
 * Replace `top` with `screenY`.
 
-To know more about the attributes compatible with different browsers, click **here**.
-
 Follow the steps given below:
 
 * Specify the `detailsWin` as the name of the new pop-up window in which the target URL will be rendered.
 
-* Configure the functional attributes using its cosmetic and functional attributes (explained in the table below).
+* Configure the functional attributes using its cosmetic and functional attributes.
 
 * Specify the URL of the encoded link. Use a hyphen as the separator between the attributes and the link.
 
@@ -214,7 +212,7 @@ The chart when configured using above feature, looks like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/28ru7erc/ "@@open-newtab") to edit the above chart.
 
-> You can provide `**_parent`** as the name of the frame. The URL will get loaded in the frame or browser window which is the parent of the current window. Typically, the main browser space becomes the parent frame that contains all the other frames. Hence, if you wish to remove all frames and load the URL freshly in the same location, you can use `**_parent`** as the name of the frame.
+> You can provide `_parent` as the name of the frame. The URL will get loaded in the frame or browser window which is the parent of the current window. Typically, the main browser space becomes the parent frame that contains all the other frames. Hence, if you wish to remove all frames and load the URL freshly in the same location, you can use `**_parent`** as the name of the frame.
 
 ### Set the chart as a hotspot
 
@@ -222,15 +220,15 @@ Set an entire chart as a hotspot using the `clickURL` attribute, which accepts a
 
 You can configure the target URL to:
 
-* open in [the same window](https://www.fusioncharts.com/dev/advanced-chart-configurations/drill-down/simple-drill-down.html)
+* Open in the same window
 
-* open in [a new window](https://www.fusioncharts.com/dev/advanced-chart-configurations/drill-down/simple-drill-down.html)
+* Open in a new window
 
-* open in [another frame](https://www.fusioncharts.com/dev/advanced-chart-configurations/drill-down/opening-in-pop-up-or-frames.html)
+* Open in another frame
 
-* open [in a new popup window](https://www.fusioncharts.com/dev/advanced-chart-configurations/drill-down/opening-in-pop-up-or-frames.html)
+* Open in a new popup window
 
-* invoke existing [JavaScript functions](https://www.fusioncharts.com/dev/advanced-chart-configurations/drill-down/linkedcharts.html) defined within the same page
+* Invoke existing JavaScript functions
 
 Refer to the code below, which sets the chart as a hotspot that, when clicked, opens the homepage of FusionCharts website in a new tab:
 
@@ -359,9 +357,9 @@ The data structure needed to render the parent chart given above using the data 
     }]
 }
 ```
-From the data shown above, you can understand that when the user clicks the first data plot, the chart sources the data to render the subsequent linked chart from the apple.json file. Similarly, when you click on the other two data plots, the chart renders the respective linked charts from the data are given in the cranberry.json and grapes.json files.
+From the data shown above, you can understand that when the user clicks the first data plot, the chart sources the data to render the subsequent linked chart from the **apple.json** file. Similarly, when you click on the other two data plots, the chart renders the respective linked charts from the data are given in the cranberry.json and grapes.json files.
 
-The apple.json file contains the data to plot a column 2D chart showing the quarterly sales figures of apple juice for the last year. The data structure for the apple.json file is given below:
+The **apple.json** file contains the data to plot a column 2D chart showing the quarterly sales figures of apple juice for the last year. The data structure for the **apple.json** file is given below:
 
 ```json
 {
@@ -402,7 +400,7 @@ If you are using XML data for the chart, refer to the data structure for the par
 </chart>
 ```
 
-Similarly, the data structure for the apple.xml file is given below:
+Similarly, the data structure for the **apple.xml** file is given below:
 
 ```html
 <chart caption="Apple Juice - Quarterly Sales" subcaption="Last year" numberprefix="$" theme="fint" plottooltext="$label, $dataValue,  $percentValue">
@@ -414,7 +412,7 @@ Similarly, the data structure for the apple.xml file is given below:
 </chart>
 ```
 
-Likewise, you can create the cranberry.xml and the grapes.xml files to create linked charts.
+Likewise, you can create the **cranberry.xml** and the **grapes.xml** files to create linked charts.
 
 ### Create linked charts using data string method
 
@@ -703,7 +701,7 @@ Use the events object (under the dataSource object) to configure the events rais
 
 ### Use JavaScript functions as links
 
-Instead of using [simple links](https://www.fusioncharts.com/dev/advanced-chart-configurations/drill-down/simple-drill-down.html) in drill-down charts, you can also use JavaScript functions, present in the same page, which you can invoke when a data plot on the chart is clicked. FusionCharts provides two ways for setting JavaScript functions as links, as detailed below:
+Instead of using simple links in drill-down charts, you can also use JavaScript functions, present in the same page, which you can invoke when a data plot on the chart is clicked. FusionCharts provides two ways for setting JavaScript functions as links, as detailed below:
 
 The `j-` prefix
 
@@ -717,17 +715,17 @@ Note:
 
 * Due to some security policies, you can no longer use `eval`, as well as some of the features of Javascript: prefix.
 
-* You cannot pass special characters like (, ), -, % and, as parameter when you call a function.
+* You cannot pass special characters like **(**, **)**, **-**, **%** as parameters when you call a function.
 
 * You cannot define a function, or pass multiple functions, after the `Javascript:` prefix.
 
 Both prefixes are discussed in detail below:
 
-The j- Prefix
+**The j- Prefix**
 
-Take a look at an example of a drill-down chart and its corresponding code, used to link charts using the j- prefix, given below. For this example, a JavaScript function, showAlert, is defined to show the label and value of the data plot you click. For example, when you click the data plot labeled **Apple**, the showAlert function is invoked, and an alert box is displayed with the data value and the label.
+Take a look at an example of a drill-down chart and its corresponding code, used to link charts using the **j- prefix**, given below. For this example, a JavaScript function, `showAlert`, is defined to show the label and value of the data plot you click. For example, when you click the data plot labeled **Apple**, the `showAlert` function is invoked, and an alert box is displayed with the data value and the label.
 
-The chart thus looks like as shown below:
+The chart looks like as shown below:
 
 {% embed_chart chart-configurations-drill-down-example-9.js %}
 
@@ -748,9 +746,9 @@ Following is the HTML code:
 </script>
 ```
 
-In the code snippet given above, showAlert is a custom function that is present in the HTML page that embeds the chart. **Apple, $810K** is the parameter value passed to the function. As mentioned before, you can only pass one one string parameter to the JavaScript function using the j- prefix.
+In the code snippet given above, `showAlert` is a custom function that is present in the HTML page that embeds the chart. **Apple, $810K** is the parameter value passed to the function. As mentioned before, you can only pass one one string parameter to the JavaScript function using the **j- prefix**.
 
-Now, when you click the data plot labeled **Apple**, the string **Apple, $810K** is passed as a parameter to the showAlert function.
+Now, when you click the data plot labeled **Apple**, the string **Apple, $810K** is passed as a parameter to the `showAlert` function.
 
 For this example, the parameter string contains the data label and data value only for demonstration purposes. For actual implementations, you can pass identifier numbers or strings of data. When a user clicks the link, the identifiers are sent back to the JavaScript function for further actions (for example, loading detailed data for that identifier using AJAX, or any such tasks—the possibilities are endless).
 
@@ -781,8 +779,6 @@ The code for the above example is given below:
 </script>
 
 ```
-
-**JSON data:**
 
 **Apple** and **$810K** are passed as two parameters to the showAlert function—**Apple** is passed as a string parameter and **$810K** is passed as a numeric parameter.
 
