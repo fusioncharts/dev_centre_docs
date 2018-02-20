@@ -21,18 +21,6 @@ The FusionCharts Suite XT includes the following types of stacked charts:
 
 * Stacked Bar 3D Chart
 
-* Stacked Column 2D Line Single Y Chart
-
-* Stacked Column 3D Line Single Y Chart
-
-* Stacked Column 3D Line Dual Y Chart
-
-* Multi-series Stacked Column 2D Chart
-
-* Multi-series Stacked Column 2D Line Dual Y Chart
-
-* Scroll Stacked Column 2D Chart
-
 ## Stacked column 2D Chart
 
 As an example, we will create a stacked column 2D chart to plot the revenue split for each quarter of the current year by product category - food products and non-food products. The data plots for each category are rendered using two distinct colors to help interpretation. The data plots for non-food products are stacked above the data plots for food products, instead of alongside as in multi-series charts.
@@ -93,7 +81,7 @@ A stacked bar chart in 2D looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/obga4uw9/ "@@open-newtab") to edit the stacked bar 2D chart.
 
-## Stacked area 3D Chart
+## Stacked Bar 3D Chart
 
 To render a stacked bar chart in 3D, change the value of the `type` attribute from `stackedbar2d` to `stackedbar3d`. The rest of the data structure remains the same.
 
@@ -104,6 +92,8 @@ A stacked bar chart in 3D looks like:
 {% embed_all standard-charts-stacked-charts-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/L6gg6ow3/ "@@open-newtab") to edit the stacked bar 3D chart.
+
+> Some of the other stacked charts are shown in [combination charts]({% site.baseurl %}/chart-guide/standard-charts/combination-charts "@@open-newtab") and [scroll charts]({% site.baseurl %}/chart-guide/standard-charts/scroll-charts "@@open-newtab") section.
 
 Now, let's customize the appearance and properties of the charts. 
 

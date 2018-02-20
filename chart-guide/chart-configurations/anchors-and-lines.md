@@ -21,7 +21,7 @@ By default, the anchors and their corresponding tooltips are displayed. To hide 
 }
 ```
 
-A line chart with anchors hidden looks like as shown as below:
+A line chart with anchors hidden looks like as shown below:
 
 {% embed_chart chart-configurations-anchors-and-lines-example-1.js %}
 
