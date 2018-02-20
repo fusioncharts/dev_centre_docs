@@ -105,7 +105,7 @@ A stacked bar chart in 3D looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/L6gg6ow3/ "@@open-newtab") to edit the stacked bar 3D chart.
 
-> The remaining seven types of stacked charts are shown under [combination charts]({% site.baseurl %}/chart-guide/standard-charts/combination-charts "@@open-newtab") and [scroll charts](({% site.baseurl %}/chart-guide/standard-charts/scroll-charts "@@open-newtab")) section.
+> The remaining seven types of stacked charts are shown under [combination charts]({% site.baseurl %}/chart-guide/standard-charts/combination-charts "@@open-newtab") and [scroll charts]({% site.baseurl %}/chart-guide/standard-charts/scroll-charts "@@open-newtab") section.
 
 Now, let's customize the appearance and properties of the charts. 
 
