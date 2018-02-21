@@ -44,25 +44,33 @@ Annotations are defined inside the `annotations` object. This object has an arra
 Organising annotations in groups is useful when you manipulate multiple annotations at once through API calls. Refer to the code below to understand the structure of a simple `annotations` object.
 
 ```json
-"annotations": {
-    "groups": [{
-        "id": "custom-group-1",
-        "items": [{
-            // Item definition goes here
-        },
-        {
-            // Item definition goes here
-        }]
+{
+    "chart": {
+        ...
     },
-    {
-        "id": "custom-group-2",
-        "items": [{
-            // Item definition goes here
+    "data": [{
+        ...
+    }],
+    "annotations": {
+        "groups": [{
+            "id": "custom-group-1",
+            "items": [{
+                // Item definition goes here
+            },
+            {
+                // Item definition goes here
+            }]
         },
         {
-            // Item definition goes here
+            "id": "custom-group-2",
+            "items": [{
+                // Item definition goes here
+            },
+            {
+                // Item definition goes here
+            }]
         }]
-    }]
+    }
 }
 ```
 
@@ -95,6 +103,9 @@ Refer to the basic JSON structure to create annotations, given below:
     "chart": {
         ...
     },
+    "data": [{
+        ...
+    }],
     "annotations": {
         "groups": [{
             //Annotation group 1
@@ -186,6 +197,9 @@ The JSON structure for creating text annotations is given below:
     "chart": {
         ...
     },
+    "data": [{
+        ...
+    }],
     "annotations": {
         "groups": [{
             "items": [{
@@ -239,6 +253,9 @@ The JSON structure for creating image annotations is given below:
     "chart": {
         ...
     },
+    "data": [{
+        ...
+    }],
     "annotations": {
         "groups": [{
             "items": [{
@@ -315,6 +332,9 @@ The JSON structure to create shape annotation is given below:
     "chart": {
         ...
     },
+    "data": [{
+        ...
+    }],
     "annotations": {
         "groups": [{
             "items": [{
@@ -474,6 +494,9 @@ The JSON structure for creating path annotations is given below:
     "chart": {
         ...
     },
+    "data": [{
+        ...
+    }],
     "annotations": {
         "groups": [{
             "items": [{
@@ -531,6 +554,9 @@ The code snippet to position the rectangle annotation is given below:
     "chart": {
         ...
     }
+    "data": [{
+        ...
+    }],
     "annotations": {
             ...
         "groups": [{

@@ -67,14 +67,14 @@ However, it is also possible to limit the maximum number of data labels that are
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "numVisibleLabels": "12"
   },
 }
-
 ```
+
 A zoom line chart with the maximum number of labels limited looks like this:
 
 {% embed_chart standard-charts-zoom-line-charts-example-2.js %}
@@ -89,14 +89,14 @@ In zoom line chart, set the distance (in pixels) between consecutive data plots 
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "pixelsPerPoint": "40"
   },
 }
-
 ```
+
 > The anchors in the zoom-line chart cannot be made clickable because FusionCharts does not include the supporting API for defining an external URL for the data points.
 
 A zoom line chart with the distance between the consecutive data plots configured looks like this:
@@ -115,14 +115,14 @@ To specify the minimum distance between the consecutive data points, set the val
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "anchorMinRenderDistance": "15"
   },
 }
-
 ```
+
 A zoom line chart with the criteria for anchor display defined looks like this:
 
 {% embed_chart standard-charts-zoom-line-charts-example-4.js %}
@@ -141,7 +141,7 @@ To pre-select the number of data plots for on your screen, follow the steps give
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "displayStartIndex": "49",
@@ -149,6 +149,7 @@ Refer to the code given below:
   }
 }
 ```
+
 A zoom line chart rendered with pre-selected number of data plots looks like this:
 
 {% embed_chart standard-charts-zoom-line-charts-example-5.js %}
@@ -167,7 +168,7 @@ The attributes to configure the `toolBar` button of the charts are:
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "toolbarButtonColor": "ff0000",
@@ -188,7 +189,7 @@ To configure the zoom panning of the chart:
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "zoomPaneBgColor": "#a7d7f9",
@@ -196,6 +197,7 @@ Refer to the code given below:
   }
 }
 ```
+
 The chart will look like as shown below:
 
 ![ZoomLine chart]({% site.baseurl %}/gif/standard-charts-zoomline-gif-1.gif)
@@ -210,7 +212,7 @@ To set the pin panning of the chart:
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "pinLineThicknessDelta": "5",
@@ -219,6 +221,7 @@ Refer to the code given below:
   }
 }
 ```
+
 The chart will look like as shown below:
 
 ![ZoomLine chart]({% site.baseurl %}/gif/standard-charts-zoomline-gif-2.gif)
@@ -235,7 +238,7 @@ The list of attributes to set the zooming mode of the zoomout button are:
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "btnResetChartTooltext": "Want to Reset? Go for it.",
@@ -245,6 +248,7 @@ Refer to the code given below:
   }
 }
 ```
+
 The chart will look like as shown below:
 
 ![ZoomLine chart]({% site.baseurl %}/gif/standard-charts-zoomline-gif-3.gif)
@@ -257,7 +261,7 @@ To configure the scroll bar of the chart:
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "scrollColor": "#bdbdbd",
@@ -265,6 +269,7 @@ Refer to the code given below:
   }
 }
 ```
+
 The configured zoom line chart looks like:
 
 {% embed_chart standard-charts-zoom-line-charts-example-7.js %}

@@ -20,6 +20,9 @@ Refer to the code below:
     "chart": {
         ...
     },
+    "data": [{
+        ...
+    }],
     "trendlines": [{
         "line": [{
             ...
@@ -52,6 +55,9 @@ Refer to the code below:
     "chart": {
         ...
     },
+    "data": [{
+        ...
+    }],
     "trendlines": [{
         "line": [{
     	...
@@ -86,6 +92,9 @@ Refer to the code below:
     "chart": {
         ...
     },
+    "data": [{
+        ...
+    }],
     "trendlines": [{
         "line": [{
             ...
@@ -252,6 +261,9 @@ Refer to the code below:
     "chart":{
         ...
     },
+    "data": [{
+        ...
+    }],
     "trendlines": [{
         "line": [{
             "startvalue":400",
@@ -278,6 +290,9 @@ Refer to the code below:
     "chart":{
         ...
     },
+    "data": [{
+        ...
+    }],
     "trendlines": [{
         "line": [{
             "valueOnRight": "1"
@@ -303,6 +318,9 @@ Refer to the code below:
     "chart":{
         ...
     },
+    "data": [{
+        ...
+    }],
     "trendlines": [{
         "line": [{
             "parentYAxis": "S"

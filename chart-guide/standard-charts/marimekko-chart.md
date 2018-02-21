@@ -69,13 +69,12 @@ By default, a Marimekko chart is rendered with percentage values along the y-axi
 
 Refer to the code given below:
 
-```
+```json
 {
-  "chart": {
-    "usePercentDistribution": "0"
-  }
+	"chart": {
+		"usePercentDistribution": "0"
+	}
 }
-
 ```
 A Marimekko chart rendered with actual values instead of percentage values looks like this:
 
@@ -91,13 +90,12 @@ Set the `showSum` attribute to `0` to hide the sum of all data plots stacked abo
 
 Refer to the code given below:
 
-```
+```json
 {
-  "chart": {
-    "showSum": "0"
-  }
+ 	"chart": {
+		"showSum": "0"
+ 	}
 }
-
 ```
 
 A Marimekko chart with the total value of market segments hidden looks like this:
@@ -112,13 +110,12 @@ By default, labels are rendered between the columns of a Marimekko chart, along 
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "showAxisPercentValues": "0"
   }
 }
-
 ```
 A Marimekko chart with the percentage labels on the x-axis hidden looks like this:
 

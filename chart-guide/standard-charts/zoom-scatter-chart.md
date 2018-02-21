@@ -84,19 +84,15 @@ To draw the regression line in a zoom scatter chart, set the `showRegressionLine
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     ...
   },
-
   "dataset": [{
-
-    "showRegressionLine" : "1"
-
+  	"showRegressionLine" : "1"
   }]
 }
-
 ```
 A zoom-scatter chart rendered with regression lines is shown below:
 

@@ -48,12 +48,10 @@ Refer to the code below:
 ```json
 {
     "chart": {
-        ...
         "numVDivLines": "5",
         "vDivLineColor": "#99ccff",
         "vDivLineThickness": "1",
-        "vDivLineAlpha": "50"  
-        ...  
+        "vDivLineAlpha": "50"
     }
 }
 ```

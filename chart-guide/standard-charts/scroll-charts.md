@@ -119,13 +119,12 @@ Scroll charts are generally used to avoid cluttering. With that in FusionCharts,
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "numVisiblePlot": "12"
   }
 }
-
 ```
 
 A scroll chart with the number of visible data plots set to twelve looks like this:
@@ -140,7 +139,7 @@ By default, a scroll chart has a flat scroll bar. You can opt to render a gradie
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "flatScrollBars": "0"
@@ -165,7 +164,7 @@ The scroll bar of the scroll chart can be customized using the cosmetic properti
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "scrollColor": "#3a4660",

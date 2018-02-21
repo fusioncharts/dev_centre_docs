@@ -35,7 +35,6 @@ If you want to create a chart that automatically resizes when its parent contain
 
 ```json
 {
-
     "type": "column2d",
     "renderAt": "chartContainer",
     "width": "100%",

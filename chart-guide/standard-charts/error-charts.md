@@ -125,22 +125,16 @@ You can customize the cosmetic properties of error bars to change their appearan
 
 Refer to the code given below:
 
-```
+```json
 {
 	"chart": {
-
 		"halferrorbar": "0",
-
 		"errorBarColor": "#990000",
-
 		"errorBarAlpha": "50",
-
 		"errorBarThickness": "2",
-
 		"errorBarWidthPercent": "30"
 	},
 }
-
 ```
 An error bar chart, after customizing the error bars, looks like this:
 
@@ -168,17 +162,16 @@ Customize the cosmetic properties of error scatter chart to change the appearanc
 
 Refer to the code given below:
 
-```
+```json
 {
-  "chart": {
-      "halfverticalerrorbar": "0",
-      "verticalErrorBarColor": "#990000",
-      "verticalErrorBarThickness": "2",
-      "verticalErrorBarAlpha": "50",
-      "verticalErrorBarWidth": "8"
-  }
+	"chart": {
+		"halfverticalerrorbar": "0",
+	    "verticalErrorBarColor": "#990000",
+	    "verticalErrorBarThickness": "2",
+	    "verticalErrorBarAlpha": "50",
+	    "verticalErrorBarWidth": "8"	      
+ 	}
 }
-
 ```
 
 An error scatter chart, after customizing the error bars, looks like:
