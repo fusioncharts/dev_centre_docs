@@ -59,8 +59,6 @@ Successful Registrations|210,000|
 Logged In|190,000|
 Purchased on Introductory Offers|120,000|
 
-
-
 To create a funnel chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
