@@ -7,13 +7,7 @@ breadcrumb: [["Home", "/dev"], ["Funnel Chart"]]
 
 Use a funnel chart to plot streamlined data. For instance, you can plot sales data into a funnel chart to analyze the sales pipeline. Structurally, a funnel chart consists of multiple segments and each segment represents a data point. You can render a funnel chart in either 2D or 3D.
 
-## Basics of a funnel chart
-
 In a funnel chart, the data is streamlined, i.e., each slice (section) in the funnel represents a process flow that has filtered out data. For example, if you use a funnel chart to display the employment process, the first slice will represent the "Number of candidates who applied". Thereafter, each process flow (like "Interview Phase 1", "IQ Test", "Project", etc.) will be represented by subsequent funnel slices, each slice filtering the data provided to the previous slice. The last slice bears the value that is the final result of the entire procedure (for example, "Candidates recruited" in this scenario).
-
-A streamline funnel chart to show the purchase-conversion analysis looks like the following:
-
-***<<Insert Live Chart>>***
 
 ## Salient Features
 
@@ -41,14 +35,9 @@ Features of a funnel chart that you may find useful:
 
 * Link each funnel slice to a different target.
 
-## Simple Funnel Chart Example
-
-You can use a funnel chart to show streamlined data. Each slice in the funnel represents a process that has filtered out data. The last funnel bears the value that is the final result of the entire procedure.
-
 ## Create a Funnel Chart
 
 We will create a funnel chart that shows the purchase-conversion analysis, using the data provided in the table below. It will filter out data to finally show how many people who visited the website actually purchased something.
-
 
 Process|Number of People|
 -|-
@@ -75,9 +64,11 @@ To create a funnel chart follow the steps given below:
 
 * Use the `label` attribute within the `data` object to specify the label to be be rendered for a funnel slice, e.g., "Unique Website Visits".
 
-The chart will look like as shown below:
+A streamline funnel chart to show the purchase-conversion analysis looks like the following:
 
-***<<Insert Live Chart>>***
+{% embed_chart standard-charts-funnel-chart-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/8sJdx/ "@@open-newtab") to edit the above chart.
 
 With FusionCharts Suite XT, you can configure several cosmetic and functional properties for the funnel chart.
 
@@ -99,8 +90,7 @@ To render a 2D funnel chart with customized border properties, the following att
 
 Refer to the code below: 
 
-``` 
-
+```json
 {
     "chart": {
         "is2D": "1",
@@ -108,13 +98,15 @@ Refer to the code below:
         "plotBorderColor": "#333333",
         "plotBorderThickness": "1",
         "plotBorderAlpha": "50"
-    },
-
+    }
+}
 ```
 
 The chart will look like the one given below:
 
-**<<Insert Live Chart>>**
+{% embed_chart standard-charts-funnel-chart-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/4JfYt/ "@@open-newtab") to edit the above chart.
 
 ## Show labels at the center of the chart
 
@@ -124,19 +116,20 @@ The JSON code will look as below:
 
 Refer to the code below: 
 
-``` 
+```json
 {
     "chart": {
         "showLabelsAtCenter": "1"
 
-    },
-
-
+    }
+}
 ```
 
 The chart will look like the one given below:
 
-**<<Insert Live Chart>>**
+{% embed_chart standard-charts-funnel-chart-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/5rV6H/ "@@open-newtab") to edit the above chart.
 
 ## Show Labels in the Legend
 
