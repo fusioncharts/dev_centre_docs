@@ -192,4 +192,4 @@ Given below are a few sample templates of custom output date formats:
 </table>
 
 
-> The output format is not restricted to the examples listed above. Using the tokens, you can build your own custom date format templates.</p>
+> The output format is not restricted to the examples listed above. Using the tokens, you can build your own custom date format templates.

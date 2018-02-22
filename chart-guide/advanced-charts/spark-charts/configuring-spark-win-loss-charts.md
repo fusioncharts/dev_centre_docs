@@ -37,7 +37,7 @@ Given below is a brief description of the attributes used to define period block
 </table>
 
 
->  When configuring period blocks, ensure that the period length is always less than the number of data points that you have specified, as period length is directly numbered on data points.</p>
+>  When configuring period blocks, ensure that the period length is always less than the number of data points that you have specified, as period length is directly numbered on data points.
 
 ## Configuring Win, Loss, and Draw Colors
 
