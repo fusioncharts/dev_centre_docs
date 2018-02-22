@@ -247,6 +247,7 @@ Refer to the code below:
 
 ```
 **INSERT CODE**
+
 ```
 
 The chart will look as shown below:
