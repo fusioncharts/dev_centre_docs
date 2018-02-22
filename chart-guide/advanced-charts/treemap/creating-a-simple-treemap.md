@@ -138,4 +138,4 @@ The sample treemap with the gradient legend set to show only those nodes that ha
 
 ![Showing/Hiding Data Values Using the Gradient Legend]({% site.baseurl %}/images/chart-guide-treemap-chart-creating-a-simple-treemap-chart-image-7.jpg)
 
-Click [here]({% site.baseurl %}/chart-attributes?chart=treeap "@@open-newtab") for the complete list of attributes supported by the treemap.
+Click [here]({% site.baseurl %}/chart-attributes?chart=treemap "@@open-newtab") for the complete list of attributes supported by the treemap.

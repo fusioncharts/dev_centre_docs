@@ -6,14 +6,6 @@ heading: Creating Text Annotations
 chartPresent: true
 ---
 
-## Prerequisites
-
-* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
-
-* [Introduction to annotations](/advanced-charting/annotations/introduction)
-
-* [Creating simple annotations](/advanced-charting/annotations/creating-annotations/introduction)
-
 You can use text annotations to add notes, labels, or any other contextual text information that you may want to make available to your users.
 
 A column 2D chart rendered using text annotations is shown below:

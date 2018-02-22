@@ -82,7 +82,7 @@ Given below is a brief description of the attributes used to show/hide and defin
 
 The code snippet below shows how the server-side PHP script is used to submit data:
 
-{% highlight html lineanchors %}{% raw %}
+```php
 <?php
 //File to write
 $filename = 'xml/dragNodeData.xml';

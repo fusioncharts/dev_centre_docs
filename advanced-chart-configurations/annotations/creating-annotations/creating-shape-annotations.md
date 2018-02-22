@@ -6,14 +6,6 @@ heading: Creating Shape Annotations
 chartPresent: true
 ---
 
-## Prerequisites
-
-* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
-
-* [Introduction to annotations](/advanced-charting/annotations/introduction)
-
-* [Creating simple annotations](/advanced-charting/annotations/creating-annotations/introduction)
-
 FusionCharts Suite XT lets you draw annotations in any of the following shapes:
 
 * <a href="/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations#rectangle" class="smoth-scroll">Rectangle</a>

@@ -8,21 +8,21 @@ chartPresent: true
 
 Now that we know how to create a simple map (hyperlinks to the Simple Data Driven Map section) we will now look at customization of different map attributes. Below is a list of basic customizations possible for maps:
 
-* <a href="/map-guide/customizing-your-map#showing-full-names-in-map-labels" class="smoth-scroll">Showing full names in map labels</a>
+* Showing full names in map labels
 
-* <a href="/map-guide/customizing-your-map#showing-values-in-labels" class="smoth-scroll">Showing values in labels</a>
+* Showing values in labels
 
-* <a href="/map-guide/customizing-your-map#showing-labels-only-for-specific-entities" class="smoth-scroll">Showing labels only for specific entities</a>
+* Showing labels only for specific entities
 
-* <a href="/map-guide/customizing-your-map#customizing-label-display-text" class="smoth-scroll">Customizing label display text</a>
+* Customizing label display text
 
-* <a href="/map-guide/customizing-your-map#customising-fonts" class="smoth-scroll">Customizing fonts</a>
+* Customizing fonts
 
-* <a href="/map-guide/customizing-your-map#using-short-names-in-tooltips" class="smoth-scroll">Using short names in tooltips</a>
+* Using short names in tooltips
 
-* <a href="/map-guide/customizing-your-map#turning-off-entity-tooltips" class="smoth-scroll">Turning off entity tool-tips</a>
+* Turning off entity tool-tips
 
-* <a href="/map-guide/customizing-your-map#turning-off-entity-tooltips" class="smoth-scroll">Handling null entities</a>
+* Handling null entities
 
 ## Showing full names in map labels
 

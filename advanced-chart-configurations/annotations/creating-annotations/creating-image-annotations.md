@@ -6,14 +6,6 @@ heading: Creating Image Annotations
 chartPresent: true
 ---
 
-## Prerequisites
-
-* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
-
-* [Introduction to annotations](/advanced-charting/annotations/introduction)
-
-* [Creating simple annotations](/advanced-charting/annotations/creating-annotations/introduction)
-
 A column 2D chart rendered using image annotations is shown below:
 
 {% embed_chart advanced-charting-annotations-creating-annotations-creating-image-annotations-example-1.js %}

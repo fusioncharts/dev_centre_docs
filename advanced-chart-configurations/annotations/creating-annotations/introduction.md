@@ -8,9 +8,9 @@ chartPresent: false
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
+* [Creating a simple chart using FusionCharts Suite XT]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart "@@open-newtab")
 
-* [Introduction to annotations](/advanced-charting/annotations/introduction)
+* [Introduction to annotations]({% site.baseurl %}/advanced-chart-configurations/annotations/introduction "@@open-newtab")
 
 FusionCharts Suite XT includes a wide range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/) that you can use to plot static as well as real-time data. Annotations, a compelling feature of the product, lets you make your charts self-descriptive and visually engaging.
 
@@ -36,7 +36,7 @@ You can add the following types of annotations to your chart:
 
 The image of a chart rendered with different types of annotations items is shown below:
 
-![image alt text](/assets/images/advanced-charting-annotations-creating-annotations-image-1.jpg)
+![image alt text]({% site.baseurl %}/images/advanced-charting-annotations-creating-annotations-image-1.jpg)
 
 The basic JSON structure to create annotations is shown below:
 
@@ -114,10 +114,10 @@ This is covered in detail in the subsequent articles.</td>
 
 To know how to create the different types of annotations, refer the following articles:
 
-* [Creating Text Annotations](/advanced-charting/annotations/creating-annotations/creating-text-annotations)
+* [Creating Text Annotations]({% site.baseurl %}/advanced-chart-configurations/annotations/creating-annotations/creating-text-annotations "@@open-newtab")
 
-* [Creating Image Annotations](/advanced-charting/annotations/creating-annotations/creating-image-annotations)
+* [Creating Image Annotations]({% site.baseurl %}/advanced-chart-configurations/annotations/creating-annotations/creating-image-annotations "@@open-newtab")
 
-* [Creating Shape Annotations](/advanced-charting/annotations/creating-annotations/creating-shape-annotations)
+* [Creating Shape Annotations]({% site.baseurl %}/advanced-chart-configurations/annotations/creating-annotations/creating-shape-annotations "@@open-newtab")
 
-* [Creating Path Annotations](/advanced-charting/annotations/creating-annotations/creating-path-annotations)
+* [Creating Path Annotations]({% site.baseurl %}/advanced-chart-configurations/annotations/creating-annotations/creating-path-annotations "@@open-newtab")
