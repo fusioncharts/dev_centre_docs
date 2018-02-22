@@ -23,4 +23,4 @@ During bulk export, you can override the height and width of all the charts usin
 </div>
 </div>
 
-<p class="text-info">It doesn't work with direct SVG input.</p>
+> It doesn't work with direct SVG input.</p>

@@ -91,7 +91,7 @@ As an example, take a look at how a multi-series line chart, shown below, to com
 
 {% embed_chart using-with-javascript-libraries-angularjs-creating-charts-using-the-angular-fusioncharts-plugin-example-2.js %}
 
-<p class="text-info"> To know how a multi-series line chart can be created using conventional JSON code and a description of the data structure used, click [here](/chart-guide/multi-series-charts/creating-multi-series-charts).</p>
+>  To know how a multi-series line chart can be created using conventional JSON code and a description of the data structure used, click [here](/chart-guide/multi-series-charts/creating-multi-series-charts).</p>
 
 The HTML code for this chart is given below:
 

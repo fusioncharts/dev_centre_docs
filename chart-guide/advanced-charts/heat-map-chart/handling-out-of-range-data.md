@@ -42,6 +42,6 @@ Given below is a brief description of the attribute used to enable percentage ma
 When percentage mapping is used, the lowest data value from the JSON data is considered to be the lower limit and will be displayed as 0%; the highest data value is considered as the upper limit and will be displayed as 100%. Color ranges have to be created with 0 as the lower limit and 100 as the upper limit.
 
 
-<p class="text-info"> You can choose to enable percentage mapping even when all your data values fall within the defined range.</p>
+>  You can choose to enable percentage mapping even when all your data values fall within the defined range.</p>
 
-<p class="text-info">In category based heat map chart, if you provide a category name by the attribute colorRangeLabel through the `data` element which is not defined in the `colorRange` element, the chart will show blank dataplot. </p>
+> In category based heat map chart, if you provide a category name by the attribute colorRangeLabel through the `data` element which is not defined in the `colorRange` element, the chart will show blank dataplot. </p>

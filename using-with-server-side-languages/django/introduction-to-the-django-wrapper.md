@@ -186,7 +186,7 @@ def chart(request):
 ```
 
 
-<p class="text-info">
+> 
  <span style="font-size: 13px; font-weight: bold; font-family: monospace;">return render(request, <span style="color: #d14;">'index.html'</span>, {<span style="color: #d14;">'output'</span>: column2d.render()})</span> </p>
 
 __Note:__ Do not forget to include the above line in your code, as it calls the `index.html` template and sets the data in the variable named `output`. This template file captures the variable(_output_) and renders the chart in its respective location.
@@ -203,7 +203,7 @@ The code for rendering the chart is written in the view file, i.e. -.py file. Th
 { { output|safe } } 
 ```
 
-<p class="text-info">In the above code, `output|safe` has been used to turn off the auto-escaping of data, on a per-site, per-template, or per-variable level.</p>
+> In the above code, `output|safe` has been used to turn off the auto-escaping of data, on a per-site, per-template, or per-variable level.</p>
 
 
 ### Final template
@@ -243,7 +243,7 @@ urlpatterns = [
 ]
 ```
 
-<p class="text-info">As the regular expressions are compiled at load time, the above process happens at lightening speed.</p>
+> As the regular expressions are compiled at load time, the above process happens at lightening speed.</p>
 
 
 Data for the chart can be in any one of the following formats:

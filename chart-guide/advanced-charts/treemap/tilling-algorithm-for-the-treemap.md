@@ -19,7 +19,7 @@ The squarified algorithm for the treemap is visually appealing in part because t
 
 The chart below is rendered using the __squarified__ algorithm, which is the default tiling algorithm:
 
-<p class="text-info"> Click the rectangles in each chart to traverse through the chart and see how the chart view changes. </p>
+>  Click the rectangles in each chart to traverse through the chart and see how the chart view changes. </p>
 
 {% embed_all chart-guide-treemap-chart-setting-tiling-algorithm-example-1.js %}
 

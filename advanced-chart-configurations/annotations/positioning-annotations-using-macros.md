@@ -24,7 +24,7 @@ It describes:
 
 * <a href="/advanced-chart-configurations/annotations/positioning-annotations-using-macros#annotation-macros-for-positioning-with-respect-to-other-chart-elements" class="smoth-scroll">Annotation Macros for positioning with respect to other chart elements</a>
 
-<p class="text-info"> Annotations can also be [positioned statically](/advanced-charting/annotations/positioning-annotations-using-absolute-values) in the chart constructor.</p>
+Annotations can also be [positioned statically](/advanced-charting/annotations/positioning-annotations-using-absolute-values) in the chart constructor.
 
 ## Annotation Macros
 
@@ -32,7 +32,7 @@ Annotation macros are predefined variables used to dynamically position individu
 
 You can use any number of macros as variables with the positioning attributes. Using the **+** or **-** operators, you can add or subtract the macro values from each other or from a fixed number.  For example, for an annotation item, assume that you set `"x": "$canvasStartX + $chartLeftMargin + 2"`. The starting x coordinate of the item will now be set to a value that is the starting x coordinate of the chart canvas, the chart’s left margin, and a fixed two pixels added to together.
 
-<p class="text-info">You can use only the `+` or `-` operators to create a macro expression. There should be at least one macro name to create a macro expression. Common mathematical expressions like `30 + 10 - 5`, which do not contain a macro, will not work.</p>
+> You can use only the `+` or `-` operators to create a macro expression. There should be at least one macro name to create a macro expression. Common mathematical expressions like `30 + 10 - 5`, which do not contain a macro, will not work.</p>
 
 When a chart or a gauge is resized, the values provided by macros are not scaled. Instead, they are replaced with the new values provided by the resized chart. However, the numeric values present in the macro expressions are scaled. For example, the value `10` in the expression `$chartStartY + 10` is scaled when the chart is dynamically resized. To avoid this, prefix the number with the `$` symbol. For example, the value `10` in the expression `$chartStartY + $10` is NOT scaled when you dynamically resize the chart.
 

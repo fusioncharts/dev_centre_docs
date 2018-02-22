@@ -60,7 +60,7 @@ The table below maps the properties in the theme definition to the corresponding
 Determine the structure for each tier by mapping the attributes to be defined with the objects they belong to.
 Based on the properties mentioned in the first table (the one that outlines the requirements for the theme sample), the table below lists the attributes that will be used to fulfil each requirement and the objects that the attributes belong to.
 
-<p class="text-info">
+> 
 Refer the [FusionCharts Suite XT Chart Attributes](/chart-attributes?chart=area2d) page for a complete understanding of the objects and attributes used to configure the charts, gauges, and maps.
 </p>
 

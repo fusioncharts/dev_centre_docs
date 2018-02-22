@@ -17,7 +17,7 @@ When a rectangle is clicked, the clicked node and its subtree replaces the curre
 
 ![Treemap with Northern Region as the current node]({% site.baseurl %}/images/chart-guide-treemap-chart-creating-a-simple-treemap-chart-image-6.jpg)
 
-<p class="text-info"> Click the rectangles in the treemap shown above and see how you can traverse through the leaf nodes. </p>
+>  Click the rectangles in the treemap shown above and see how you can traverse through the leaf nodes. </p>
 
 In this section, you will be shown:
 
@@ -93,7 +93,7 @@ Other algorithms that can also be used, include:
 * Binary tree
 * Mixed treemaps
 
-<p class="text-info"> Presently, the FusionCharts Treemap supports only the __slice and dice__ and the __squarified__ algorithms. Support for more algorithms is subject to consideration in the future releases. </p>
+>  Presently, the FusionCharts Treemap supports only the __slice and dice__ and the __squarified__ algorithms. Support for more algorithms is subject to consideration in the future releases. </p>
 
 ## Interacting with a Treemap
 

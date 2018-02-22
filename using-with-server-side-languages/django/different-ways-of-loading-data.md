@@ -17,7 +17,7 @@ The FusionCharts Django wrapper lets you load data for a chart using:
 
 In this section, you will be shown how the Django wrapper uses each of these methods to generate charts.
 
-<p class="text-info">Before you proceed, make sure you have <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper.html" target="_blank">installed and set up the plugin </a> correctly.</p>
+> Before you proceed, make sure you have <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper.html" target="_blank">installed and set up the plugin </a> correctly.</p>
 
 ## Loading Data from a Static JSON String
 

@@ -26,7 +26,7 @@ alert(JSON.stringify(jsonRtn));
 
 ```
 
-<p class="text-info">The function `getJSONData()` returns the latest or changed data. This function is also used to retrieve the original data from the chart. To get the original data from the chart you need `false` as a parameter to the function. For example, `var jsonRtn = ourChart.getJSONData(false);` </p>
+> The function `getJSONData()` returns the latest or changed data. This function is also used to retrieve the original data from the chart. To get the original data from the chart you need `false` as a parameter to the function. For example, `var jsonRtn = ourChart.getJSONData(false);` </p>
 
 To understand this, the sample drag-node chart we will use looks like this:
 

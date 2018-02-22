@@ -1,5 +1,5 @@
 ---
-permalink: api/tutorials/fusioncharts-constructor-and-object.html
+permalink: apihtml
 title: FusionCharts Constructor and Object | FusionCharts
 description: All of the charts and maps are constructed using the constructor provided by FusionCharts which accepts a JSON object of chart properties.
 heading: FusionCharts Constructor and Object
@@ -17,11 +17,10 @@ Also it is necessary to have a basic understanding of the structure of the JSON 
 
 In this article we are going to cover:
 
-* [Creating charts using the FusionCharts constructor](/tutorials/fusioncharts-constructor-and-object#creating-charts-using-the-fusioncharts-constructor)
-* [Accessing already created chart using FusionCharts constructor](/tutorials/fusioncharts-constructor-and-object#accessing-already-created-chart-using-fusioncharts-constructor)
-* [Invoking APIs using instance of FusionCharts](/tutorials/fusioncharts-constructor-and-object#invoking-apis-using-instance-of-fusioncharts)
-* [Managing Synchronization when Rendering Multiple Charts](/tutorials/fusioncharts-constructor-and-object#managing-synchronization-when-rendering-multiple-charts)
-
+* Creating charts using the FusionCharts constructor
+* Accessing already created chart using FusionCharts constructor
+* Invoking APIs using instance of FusionCharts
+* Managing Synchronization when Rendering Multiple Charts
 
 ## Creating charts using the FusionCharts Constructor
 

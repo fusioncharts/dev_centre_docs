@@ -65,7 +65,7 @@ For ease of understanding, therefore, the attributes have been divided into two 
 
 * Adhoc attributes
 
-<p class="text-info"> The complete data structure that shows how you use these attributes is given at the end of this article. </p>
+> The complete data structure that shows how you use these attributes is given at the end of this article.
 
 ## Common Attributes
 

@@ -16,7 +16,7 @@ The dashboard looks like as shown below:
 
 {% embed_chart using-with-javascript-libraries-reactjs-including-interactivity-in-charts-using-vuejs-example-1.js %}
 
-<p class="text-info"> The complete code for this dashboard is given at the end of this article, after all steps have been explained. </p>
+>  The complete code for this dashboard is given at the end of this article, after all steps have been explained. </p>
 
 The following three steps describe in detail, with code samples, how you can establish data interactivity between charts:
 

@@ -138,7 +138,7 @@ $scope.rightAlignCaption = function() {
 
 ```
 
-<p class="text-info">For a list of other chart attributes that you can update for a column 2D chart, click [here](/chart-attributes?chart=column2d).</p>
+> For a list of other chart attributes that you can update for a column 2D chart, click [here](/chart-attributes?chart=column2d).</p>
 
 ## Trigger Scope Events from the Chart
 

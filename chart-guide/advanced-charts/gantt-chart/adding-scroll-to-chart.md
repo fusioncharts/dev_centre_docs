@@ -110,7 +110,7 @@ Given below is a brief description of the values that the `ganttPaneDurationUnit
 </table>
 
 
-<p class="text-info">If the duration specified by you is more than the actual time span of the chart, the scroll bar for the Gantt pane is not displayed.</p>
+> If the duration specified by you is more than the actual time span of the chart, the scroll bar for the Gantt pane is not displayed.</p>
 
 ## Configuring Scroll Properties
 
@@ -156,7 +156,7 @@ Given below is a brief description of the attributes used to configure scroll co
 
 All our previous charts are with flat scrollbars.
 
-<p class="text-info">If you do not find this attribute in the data do not be surprised, as this attribute is set in the theme, we are using for the fiddles.</p>
+> If you do not find this attribute in the data do not be surprised, as this attribute is set in the theme, we are using for the fiddles.</p>
 
 
 ## Scroll to a Specific Date

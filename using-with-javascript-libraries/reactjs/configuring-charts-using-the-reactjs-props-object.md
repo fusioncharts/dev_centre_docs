@@ -275,7 +275,7 @@ ReactDOM.render(
 
 ```
 
-<p class="text-info">
+> 
 For a list of other attributes that you can configure for a column 2D chart, click [here](/chart-attributes?chart=column2d).
 </p>
 

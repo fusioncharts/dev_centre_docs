@@ -12,7 +12,7 @@ The export is done using a server-side helper library that converts the SVG to t
 
 When charts are exported on the client side, the entire exporting process is carried out using the user’s browser. The chart’s SVG is converted into the selected export format and download using the HTML5 `download` attribute.
 
-<p class="text-info"> You must have an active internet connection for this feature to work. </p>
+>  You must have an active internet connection for this feature to work. </p>
 
 To enable chart exporting, the `chart` level attribute `exportEnabled` is set to __1__. The ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) menu button is then visible in the top-right corner of the chart. Click/hover over this menu button to see the dropdown menu with the export options, as shown in the image below:
 
@@ -36,8 +36,8 @@ By default, charts are exported using the auto export feature.
 
 The `exportMode` attribute is used to switch betwen the modes of export.
 
-<p class="text-info"> Starting v3.12.1, the `exportMode` attribute __replaces__ the `exportAtClientSide` attribute. </p>
+>  Starting v3.12.1, the `exportMode` attribute __replaces__ the `exportAtClientSide` attribute. </p>
 
 The subsequent articles in this section cover the features of each export mode and the `exportMode` attribute in detail.
 
-<p class="text-info"> To process the export data on your own server, you can configure one of the export handlers by following the [Setup Private Export Server](/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net) guide. </p>
+>  To process the export data on your own server, you can configure one of the export handlers by following the [Setup Private Export Server](/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net) guide. </p>

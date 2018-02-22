@@ -37,9 +37,9 @@ Given below is a brief description of the attributes used to configure the gradi
 
 There are several ways in which you can configure the borders of an angular gauge scale. You can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#showinghiding-the-gauge-border">Show/hide the gauge border</a>
+* Show/hide the gauge border
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-border-cosmetics">Configure the border cosmetics</a>
+* Configure the border cosmetics
 
 ### Showing/Hiding the Gauge Border
 
@@ -61,7 +61,7 @@ Given below is a brief description of the attribute used to show/hide the gauge 
 </table>
 
 
-<p class="text-warning">On the above sample the shadow is hidden through the use of the `fint` theme. Shadows might interfere with the border color.</p>
+> On the above sample the shadow is hidden through the use of the `fint` theme. Shadows might interfere with the border color.
 
 ### Configuring Border Cosmetics
 
@@ -179,9 +179,9 @@ An angular gauge rendered with the inner radius specified as 75% of the outer ra
 
 Like the range scale and the border of the angular gauge, you can also configure the pivot that points to a data value on the range scale. For a pivot, you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#setting-the-pivot-radius">Set the radius</a>
+* Set the radius
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-pivot-cosmetics">Configure the cosmetic properties</a>
+* Configure the cosmetic properties
 
 ### Setting the Pivot Radius
 
@@ -209,13 +209,13 @@ Given below is a brief description of the attribute used to explicitly set the p
 
 For a pivot, you can:
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-the-pivot-border-cosmetics">Configure the pivot border cosmetics</a>
+* Configure the pivot border cosmetics
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-the-pivot-fill-cosmetics">Configure the pivot fill cosmetics</a>
+* Configure the pivot fill cosmetics
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-the-pivot-fill-color-with-a-gradient-fill-mix">Configure the pivot fill color with a gradient fill mix</a>
+* Configure the pivot fill color with a gradient fill mix
 
-* <a href="{{ site.baseurl }}gauge-and-widgets-guide/angular-gauge/configuring-gauge-cosmetics.html#configuring-the-pivot-fill-with-a-linear-gradient">Configure the pivot fill color with a linear gradient</a>
+* Configure the pivot fill color with a linear gradient
 
 
 #### Configuring the Pivot Border Cosmetics

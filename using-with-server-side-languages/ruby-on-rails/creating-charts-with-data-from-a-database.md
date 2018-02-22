@@ -14,7 +14,7 @@ This section showcases how you can do this using the FusionCharts Ruby on Rails 
 
 As an example, in this section, you will be shown how you can create a drill-down chart by fetching the required data from a database.
 
-<p class="text-info"> Before you proceed, make sure you have [installed and set up the plugin](/using-with-server-side-languages/ruby-on-rails/introduction) correctly. </p>
+>  Before you proceed, make sure you have [installed and set up the plugin](/using-with-server-side-languages/ruby-on-rails/introduction) correctly. </p>
 
 ## Creating a Drill-down Chart
 
@@ -22,7 +22,7 @@ Assume that you have a **fusioncharts_sample** database that stores the populati
 
 Using this data, you want to plot a column 2D chart showing the top 10 most populous countries in the world. Furthermore, you want to render this column 2D chart as a drill-down chart, where clicking each data plot shows another chart plotting the top 10 populous cities of that country.
 
-<p class="text-info"> You can [download](http://dev.mysql.com/doc/index-other.html) this database from the MYSQL website or refer to the sample database available [here](https://dev.mysql.com/doc/world-setup/en/). </p>
+>  You can [download](http://dev.mysql.com/doc/index-other.html) this database from the MYSQL website or refer to the sample database available [here](https://dev.mysql.com/doc/world-setup/en/). </p>
 
 The column 2D chart, with the drill-down functionality, that we need to render here looks like this:
 

@@ -66,7 +66,7 @@ The code snippet to create the above text and rectangle annotation, as a group, 
 
 ```
 
-<p class="text-info"> When the annotation group is rendered on the chart, annotation items will be layered in the order they are defined. Because you want to position the text annotation above the rectangle annotation, define the rectangle annotation before the text annotation. </p>
+When the annotation group is rendered on the chart, annotation items will be layered in the order they are defined. Because you want to position the text annotation above the rectangle annotation, define the rectangle annotation before the text annotation.
 
 When multiple annotations are grouped together, manipulating common functional and cosmetic properties and positioning annotations becomes easy. For example, assume that you had to change the position of the text and rectangle annotation from the spline chart above, you would have to first re-position the rectangle annotation and then re-position the text annotation.
 
@@ -198,7 +198,7 @@ The summation of these values should not exceed 100. </td>
 </table>
 
 
-<p class="text-info"> These attributes belong to the `annotations` → `groups` object array. </p>
+These attributes belong to the `annotations` → `groups` object array.
 
 ## Manipulating Annotation Groups
 

@@ -12,9 +12,9 @@ FusionCharts Suite XT includes the FusionCharts server-side ASP.NET wrapper that
 
 In this section, you will be shown how you can create a simple chart using the FusionCharts ASP.NET wrapper.
 
-<p class="text-info"> The FusionCharts ASP.NET server-side wrapper requires a .NET Framework 3.5 or higher. </p>
+>  The FusionCharts ASP.NET server-side wrapper requires a .NET Framework 3.5 or higher. </p>
 
-<p class="text-info"> Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper/tree/master/DLLFile" target="_blank">__FusionCharts.dll__</a> file in the **Bin** folder of your application. </p>
+>  Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper/tree/master/DLLFile" target="_blank">__FusionCharts.dll__</a> file in the **Bin** folder of your application. </p>
 
 ## Creating a Simple Chart using the FusionCharts ASP.NET Wrapper
 
@@ -226,7 +226,7 @@ Given below is a brief description of the constructor parameters:
 </table>
 
 
-<p class="text-info"> It is not necessary that you assign values for all parameters during initialization. The order of parameters, however, needs to be preserved. Also, you need to make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before you run the application. If not, either the chart will not render at all or it will not render the way you want it to. </p>
+>  It is not necessary that you assign values for all parameters during initialization. The order of parameters, however, needs to be preserved. Also, you need to make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before you run the application. If not, either the chart will not render at all or it will not render the way you want it to. </p>
 
 ### Methods under the Chart Class
 

@@ -18,7 +18,7 @@ The FusionCharts Rails wrapper lets you load data for a chart using:
 
 In this section, you will be shown how the Ruby on Rails wrapper uses each of these methods to generate charts.
 
-<p class="text-info"> Before you proceed, make sure you have [installed and set up the plugin](/using-with-server-side-languages/ruby-on-rails/introduction) correctly. </p>
+>  Before you proceed, make sure you have [installed and set up the plugin](/using-with-server-side-languages/ruby-on-rails/introduction) correctly. </p>
 
 ## Loading Data from a Static JSON String
 

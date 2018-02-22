@@ -68,7 +68,7 @@ With the newly defined custom entity IDs, the map looks like this:
 
 {% embed_chart map-guide-custom-entity-ids.js %}
 
-<p class="text-info">When defining new IDs for different entities on the map, ensure that you're referring to the right original internal ID. Also ensure that the redefined entity IDs are unique.</p>
+> When defining new IDs for different entities on the map, ensure that you're referring to the right original internal ID. Also ensure that the redefined entity IDs are unique.</p>
 
 The full HTML code to build the example is shown here
 

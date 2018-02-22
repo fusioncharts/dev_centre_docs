@@ -78,7 +78,7 @@ app.controller('MyController', function($scope) {
 You are now ready to start creating and customizing your charts using the Angular-FusionCharts directive. Read on to see how.
 
 ## Licensing
-<p class="text-info">
+> 
 Angular-FusionCharts is open-source and distributed under the terms of the MIT/X11 License. You will still need to download and include FusionCharts in your page. This project provides no direct functionality. You can [download an evaluation](http://www.fusioncharts.com/download/). You will still need to purchase a FusionCharts license to use in a commercial environment (FusionCharts is [free ](http://www.fusioncharts.com/download/free/)[for non-commercial and personal use](http://www.fusioncharts.com/download/free/)) .
 
 </p>

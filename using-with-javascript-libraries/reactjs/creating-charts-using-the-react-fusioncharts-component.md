@@ -246,7 +246,7 @@ ReactDOM.render(
 
 ```
 
-<p class="text-info">
+> 
 To know how a multi-series line chart can be created using the conventional JSON code, click [here](http://www.fusioncharts.com/dev/usage-guide/chart-guide/multi-series-charts/creating-multi-series-charts.html#creating-a-multi-series-line-2d-chart).
 </p>
 

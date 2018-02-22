@@ -123,7 +123,7 @@ Because we have defined unique IDs for both dials, It can also return data in th
 &fd_dial=84&clth_dial=14
 ```
 
-<p class="text-warning">The data provider page needs to be on the same sub-domain on which the chart is hosted and invoked from. Otherwise, the cross-domain security might restrict data access and hence the real-time feature won't work.</p>
+> The data provider page needs to be on the same sub-domain on which the chart is hosted and invoked from. Otherwise, the cross-domain security might restrict data access and hence the real-time feature won't work.
 
 ## Using the JavaScript API to Update the Gauge
 
@@ -221,7 +221,7 @@ If the chart renders initially, but does not update in real-time, do the followi
 
 * You also need to make sure that the page which provides the incremental data update to the charts must be hosted on the same sub-domain in which the charts are hosted - otherwise, owing to security restrictions, the charts won't be able to receive the updates. Due to security restrictions, charts are allowed to retrieve data only from the same sub-domain in which the charts are residing. Data can only be loaded from a domain that is an exact match to the location of the charts, including sub-domains. For this reason, a chart residing at `server1.mydomain.com` will not be able to access data from `mydomain.com`.
 
-<p class="text-info">If you wish to load data from a different domain, you can set up a proxy page at the same sub-domain that will actually request data from the distant domain and then relay it to the charts. You must be able to upload and run a server-side script on a server in the same domain as the charts. In this method, a chart accesses the script, which loads the information, retrieves it and returns the information back to the chart. This method is best feasible if the server hosting the data is not under your control (for example, a public source or a web service).</p>
+> If you wish to load data from a different domain, you can set up a proxy page at the same sub-domain that will actually request data from the distant domain and then relay it to the charts. You must be able to upload and run a server-side script on a server in the same domain as the charts. In this method, a chart accesses the script, which loads the information, retrieves it and returns the information back to the chart. This method is best feasible if the server hosting the data is not under your control (for example, a public source or a web service).
 
 While accessing any of the JavaScript API methods listed above, if you get an error like `"... is not a function of ..."`,
 

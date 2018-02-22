@@ -10,7 +10,7 @@ chartPresent: true
 
 The FusionCharts jQuery helper can be used to retrieve and update chart data and properties, for example, the chart type, width, height, caption, background color, and so on. dynamically at run-time. This feature is useful when you wish to change chart titles, theme colors, number formatting or scaling setup, divisional line and grid configurations, or any other functional and cosmetic features of an existing chart.
 
-<p class="text-info">While the API allows you to update selective configurations and properties, internally the entire chart is redrawn.</p>
+> While the API allows you to update selective configurations and properties, internally the entire chart is redrawn.</p>
 
 The methods in the jQuery helper that let you retrieve and update chart data and properties are:
 

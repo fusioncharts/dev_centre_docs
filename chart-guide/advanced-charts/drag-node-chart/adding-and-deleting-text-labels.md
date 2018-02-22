@@ -85,7 +85,7 @@ Now, when the __Submit__ button is clicked, the new label created looks like thi
 
 You can drag the label to any position on the chart.
 
-<p class="text-info">You can define labels in chart data too. Each label is defined in the data of the chart through the object as the `labels` array element. </p>
+> You can define labels in chart data too. Each label is defined in the data of the chart through the object as the `labels` array element. </p>
 
 ### Event Raised
 
@@ -123,4 +123,4 @@ chartInstance.addEventListener('labeldeleted', function(e, a) {
 
 ```
 
-<p class="text-info">You can get the latest updated node and connector positions using JavaScript or by [submitting the updated positions]({% site.baseurl %}/chart-guide/advanced-charts/drag-node-chart/updating-chart-data-on-server "@@open-newtab") to a server-side script.</p>
+> You can get the latest updated node and connector positions using JavaScript or by [submitting the updated positions]({% site.baseurl %}/chart-guide/advanced-charts/drag-node-chart/updating-chart-data-on-server "@@open-newtab") to a server-side script.</p>

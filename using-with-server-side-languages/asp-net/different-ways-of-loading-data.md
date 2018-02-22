@@ -20,7 +20,7 @@ The FusionCharts ASP.NET wrapper lets you load data for a chart using:
 
 In this section, you will be shown how the ASP.NET wrapper uses each of these methods to generate charts.
 
-<p class="text-info"> Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper/tree/master/DLLFile" target="_blank">__FusionCharts.dll__</a> file in the **Bin** folder of your web application. </p>
+>  Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper/tree/master/DLLFile" target="_blank">__FusionCharts.dll__</a> file in the **Bin** folder of your web application. </p>
 
 ## Loading Data from a 2D Array
 

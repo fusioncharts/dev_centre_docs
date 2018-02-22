@@ -59,7 +59,7 @@ FusionExport CLI provides two system-defined functions that can be used to gener
 
 To create the final output filename, the `--output-file` option should be used. This option accepts the filename template string as shown below:
 
-<p class="text-info">The output filename template string uses the EJS templating engine.</p>
+> The output filename template string uses the EJS templating engine.</p>
 
 <div class="code-wrapper">
 <ul class="code-tabs">

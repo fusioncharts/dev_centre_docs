@@ -18,10 +18,10 @@ The FusionCharts JSP wrapper lets you load data for a chart using:
 
 * <a href="/using-with-server-side-languages/java/different-ways-of-loading-data#loading-data-from-an-xml-string-generated-from-an-associative-array" class="smoth-scroll">an XML string generated from an associative array</a>
 
-<p class="text-info">Before you proceed, make sure you have <a href="/using-with-server-side-languages/java/introduction.html" target="_blank">installed and set up the plugin </a> correctly.</p>
+> Before you proceed, make sure you have <a href="/using-with-server-side-languages/java/introduction.html" target="_blank">installed and set up the plugin </a> correctly.</p>
 
 In this section, you will be shown how the FusionCharts JSP wrapper uses each of these methods to render charts.
-<p class="text-info"> There are two more ways for loading data—using the JSON URL and using the XML URL. These methods are similar to using static strings. The only difference is that chart data is loaded from an external `.json` or `.xml` file. The URL of the file is passed as the value for the `data source` parameter of the constructor. In case of JSON data, `jsonurl` is passed as the value for the `data format` parameter; for XML data, it is `xmlurl`.</p>
+>  There are two more ways for loading data—using the JSON URL and using the XML URL. These methods are similar to using static strings. The only difference is that chart data is loaded from an external `.json` or `.xml` file. The URL of the file is passed as the value for the `data source` parameter of the constructor. In case of JSON data, `jsonurl` is passed as the value for the `data format` parameter; for XML data, it is `xmlurl`.</p>
 
 ## Loading Data from a Static JSON String
 
@@ -417,7 +417,7 @@ The data structure to render this chart is given below:
 
 ```
 
-<p class="text-info"> The code above uses the `google-gson` library. <br> Gson is a Java library that can be used to convert: <br> - Java objects into their corresponding JSON representation <br> - JSON strings into their corresponding Java objects. <br> Gson allows working with arbitrary Java objects that include pre-existing objects for which you may not have the source code. <br> <br> The google-gson library : <br> - Provides the `toJson()` and `fromJson()` methods for converting Java objects to JSON and the other way round <br> - Allows conversion of the already existing unmodifiable objects to and from JSON <br> - Supports Java Generics extensively <br> - Allows custom representations of objects <br> - Supports arbitrarily complex objects (with deep inheritance hierarchies and extensive use of generic types) <br> <br> The code above imports the `com.google.gson` package the enables the conversion from JSON to Java and Java to JSON. <br> <br> Click [here](https://github.com/google/gson) for more information on google-gson. </p>
+>  The code above uses the `google-gson` library. <br> Gson is a Java library that can be used to convert: <br> - Java objects into their corresponding JSON representation <br> - JSON strings into their corresponding Java objects. <br> Gson allows working with arbitrary Java objects that include pre-existing objects for which you may not have the source code. <br> <br> The google-gson library : <br> - Provides the `toJson()` and `fromJson()` methods for converting Java objects to JSON and the other way round <br> - Allows conversion of the already existing unmodifiable objects to and from JSON <br> - Supports Java Generics extensively <br> - Allows custom representations of objects <br> - Supports arbitrarily complex objects (with deep inheritance hierarchies and extensive use of generic types) <br> <br> The code above imports the `com.google.gson` package the enables the conversion from JSON to Java and Java to JSON. <br> <br> Click [here](https://github.com/google/gson) for more information on google-gson. </p>
 
 ## Loading Data from an XML String Generated from an Associative Array
 

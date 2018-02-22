@@ -16,7 +16,7 @@ The dashboard looks like as shown below:
 
 {% embed_chart using-with-javascript-libraries-angular4-including-interactivity-in-charts-using-angular4-example-1.js %}
 
-<p class="text-info">
+> 
 The complete code for this dashboard is given at the end of this article, after all steps have been explained.
 </p>
 

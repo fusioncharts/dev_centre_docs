@@ -345,7 +345,7 @@ Attribute | Description
 `DATA_SAVE_PATH` | Path where the MySQL data will be stored
 `EXPORT_FILE_SAVE_PATH` | Path where the exported files will be stored
 
-<p class="text-info">If you change any of the configuration for MySQL and RabbitMQ here, it should be reflected in the application configuration as well.</p>
+> If you change any of the configuration for MySQL and RabbitMQ here, it should be reflected in the application configuration as well.</p>
 
 ## Application Configuration
 Default filename: __configs/fusioncharts.exporter.json__

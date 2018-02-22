@@ -112,7 +112,7 @@ The table below shows this mapping:
 | Set a uniform thickness for trend-lines | `base`-because, as per the requirement list above, these settings have to be applied for all charts in the application | `thickness` | `trendlines` |
 | Change the border color for maps | `geo`-because, as per the requirement list above, these settings have to be applied only for all the maps in the application | `borderColor` | `chart` | 
 
-<p class="text-info">
+> 
 Refer the [FusionCharts Suite XT Chart Attributes](/chart-attributes?chart=area2d) page for a complete understanding of the objects and attributes used to configure the charts, gauges, and maps.
 </p>
 

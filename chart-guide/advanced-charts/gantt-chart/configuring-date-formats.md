@@ -75,7 +75,7 @@ Given below is a brief description of the attribute used to set the output date 
     <td>It is used to specify the format in which a date will be rendered on the Gantt chart. You can also specify how the dates look on your Gantt chart using this attribute. This attribute takes the output date format in various output date templates(e.g., `mns ddds, yyyy`).<br/>
     Here, `mns ddds, yyyy` is the custom date format template which is applied to output dates to convert our input dates to a more readable format. For example by using this template the date `01/01/2014` with be converted to `Jan 1st, 2014`.
 
-<p class="text-info"> If you do not explicitly specify the output date format, the chart uses the input date format to render the date on the Gantt chart.</p></td>
+>  If you do not explicitly specify the output date format, the chart uses the input date format to render the date on the Gantt chart.</p></td>
   </tr>
 </table>
 
@@ -192,4 +192,4 @@ Given below are a few sample templates of custom output date formats:
 </table>
 
 
-<p class="text-info">The output format is not restricted to the examples listed above. Using the tokens, you can build your own custom date format templates.</p>
+> The output format is not restricted to the examples listed above. Using the tokens, you can build your own custom date format templates.</p>

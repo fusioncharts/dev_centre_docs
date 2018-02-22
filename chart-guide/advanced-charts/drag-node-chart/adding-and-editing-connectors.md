@@ -110,7 +110,7 @@ Now, when the __Submit__ button is clicked, the new connector created looks like
 
 ![New Connector]({% site.baseurl %}/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-5.jpg)
 
-<p class="text-info">You can define connectors in chart data too. Each connector line is defined in the data of the chart as an object in the `connectors` array element. </p>
+> You can define connectors in chart data too. Each connector line is defined in the data of the chart as an object in the `connectors` array element. </p>
 
 ### Event Raised
 
@@ -181,4 +181,4 @@ chartInstance.addEventListener('connectordeleted', function(e, a) {
 
 ```
 
-<p class="text-info">You can get the latest updated node and connector positions using JavaScript or by [submitting the updated positions]({% site.baseurl %}/chart-guide/advanced-charts/drag-node-chart/updating-chart-data-on-server "@@open-newtab") to a server-side script.</p>
+> You can get the latest updated node and connector positions using JavaScript or by [submitting the updated positions]({% site.baseurl %}/chart-guide/advanced-charts/drag-node-chart/updating-chart-data-on-server "@@open-newtab") to a server-side script.</p>

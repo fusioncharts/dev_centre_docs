@@ -20,7 +20,7 @@ The primary need for coming up with the client-side export feature  was to elimi
 
 To enable the client-side export feature for your application, all you need to do is set the `exportEnabled` and the `exportAtClientSide` (since v3.8.0) attributes to __1__ and you are good to go.
 
-<p class="text-info">
+> 
 Please note that, at present, this feature is supported only by the __Chrome__ and __Firefox__ browsers. The FusionCharts team is working to include support for other browsers also.
 </p>
 
@@ -55,4 +55,4 @@ Because the feature uses the HTML5 API, it is important that modern browsers inc
 
 These technologies perform the necessary conversion from SVG to the required format (the rendered charts in the .jpg, .png, or .pdf formats, or the chart data in the .xls format). Using the HTML5 API helps to overcome the earlier browser functionality limitations that hampered the implementation of this feature.
 
-<p class="text-info"> FusionCharts supports exporting chart data as XLS starting v3.11.0. Select __Download as XLS__ from the menu at the top-right corner of the chart. </p>
+>  FusionCharts supports exporting chart data as XLS starting v3.11.0. Select __Download as XLS__ from the menu at the top-right corner of the chart. </p>

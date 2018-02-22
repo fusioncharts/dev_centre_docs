@@ -37,7 +37,7 @@ The code snippet below shows how you can do this:
 <script type="text/javascript" src="js/themes/fusioncharts.theme.carbon.js"></script>
 ```
 
-<p class="text-info">
+> 
 The installation routine of a theme relies on the code in the `fusioncharts.js` file. Therefore, make sure that this file is always included before the JavaScript file for the theme.
 </p>
 
@@ -68,7 +68,7 @@ The complete data structure needed to render this chart is given below:
 
 {% embed_data advanced-charting-theme-manager-applying-themes-example-1.js %}
 
-<p class="text-info">
+> 
 If you are using the XML data format for the chart, you can use the `theme` attribute within the `<chart>` element. For example, `<chart theme=”carbon”>`
 </p>
 
@@ -101,7 +101,7 @@ To apply multiple themes for a chart, specify the theme names as a comma-separat
 "theme": "zune,zune-v1"
 ```
 
-<p class="text-info">
+> 
 __zune-v1__ is a user-defined theme. To know how user-defined themes can be created, refer the [Creating New Themes](/advanced-charting/theme-manager/creating-new-themes) article. 
 </p>
 

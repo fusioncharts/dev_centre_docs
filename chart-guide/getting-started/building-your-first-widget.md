@@ -130,7 +130,7 @@ In the above code:
 
 * The `dial` element specifies the properties and value for the dial.
 
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fint`(FusionCharts Suite XT Internal theme) as the value of it. Themes let you centralize your cosmetic and functional properties across various charts in your web application. FusionCharts Suite XT is shipped with three default themes - `ocean`, `zune` and `carbon`. You can also create your own themes, which we will learn in [Theme Manager](https://www.fusioncharts.com/dev/basic-chart-configurations/theme-manager.html).
+* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fint`(FusionCharts Suite XT Internal theme) as the value of it. Themes let you centralize your cosmetic and functional properties across various charts in your web application. FusionCharts Suite XT is shipped with three default themes - `ocean`, `zune` and `carbon`. You can also create your own themes, which we will learn in [Theme Manager]({% site.baseurl %}/advanced-chart-configurations/theme-manager/introduction-to-themes "@@open-newtab").
 
 * Call the `render` method to draw the gauge in chart-container `<div>` element.
 

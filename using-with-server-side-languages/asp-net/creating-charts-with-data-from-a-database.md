@@ -12,9 +12,9 @@ In addition to directly specifying the chart data (or the URL for the file in wh
 
 This section showcases how you can do this using the FusionCharts ASP.NET wrapper to create a multi-series line chart by fetching data from a database.
 
-<p class="text-info"> Although you can create all FusionCharts chart types using this method, in this section we will focus on only this one example these two examples. </p>
+>  Although you can create all FusionCharts chart types using this method, in this section we will focus on only this one example these two examples. </p>
 
-<p class="text-info"> Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper/tree/master/DLLFile" target="_blank">__FusionCharts.dll__</a> file in the **Bin** folder of your web application. </p>
+>  Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper/tree/master/DLLFile" target="_blank">__FusionCharts.dll__</a> file in the **Bin** folder of your web application. </p>
 
 ## Creating a Multi-series Line Chart
 
