@@ -314,24 +314,15 @@ Given below are a few tips that, although applicable while coding for the entire
 
 * The structure in which chart data is specified, based on whether you are rendering a single-series chart or a multi-series chart.  The table below shows the difference:
 
-<table>
-<tr>
-    <td><strong>Single-series Chart</strong></td>
-</tr>
-<tr>
+**Single-series Chart**
+
 {% embed_data using-with-server-side-languages-php-different-ways-of-loading-data-example-4.js %}
 For an example, click [here]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts "@@open-newtab") (For XML - check the data under the XML tab).
-    </td>
-    </tr>
-    <tr>
-        <td><strong>Multi-series Chart</strong></td>
-    </tr>
-    <tr>
+
+**Multi-series Chart**
+    
 {% embed_data using-with-server-side-languages-php-different-ways-of-loading-data-example-5.js %}
 For an example, click [here]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts "@@open-newtab") (For XML - check the data under the XML tab).
-    </td>
-</tr>
-</table>
 
 * Make sure that the XML strings are escaped properly, especially for instances where the data for the chart is enclosed in quotation marks. Also make sure that the entire string is enclosed in single quotes, while the attributes and corresponding values are enclosed in double quotes. Doing otherwise will break the code.
 
