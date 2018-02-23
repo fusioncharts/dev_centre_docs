@@ -21,13 +21,12 @@ __Two main parts make FusionExport :__
 
 ![FusionExport Architecture Diagram]({% site.baseurl %}/images/fusionexport-architecture-diagram.png)
 
-<div class="text-info">
-	<strong>To interact with FusionExport, you can either go for simple CLI or use the language of your choice.</strong>
-	<div class="mt-10">If you're using the CLI, choose between FusionExport Desktop (local export) or, FusionExport Web Service (remote export) based on your requirement.</div>
-	<div class="mt-10">If you're using any of the 6 available language SDKs, use FusionExport Desktop (local export) to export your charts & dashboards. SDKs are available for Node.js, Java, C#, PHP, Python and Golang.</div>
-</div>
+> **To interact with FusionExport, you can either go for simple CLI or use the language of your choice.**
+
+> If you're using the CLI, choose between FusionExport Desktop (local export) or, FusionExport Web Service (remote export) based on your requirement.
+
+> If you're using any of the 6 available language SDKs, use FusionExport Desktop (local export) to export your charts & dashboards. SDKs are available for Node.js, Java, C#, PHP, Python and Golang.
 
 __For the processing site, you can choose between remote and local.__
 To process export activities locally, install FusionExport Desktop which talks to the client-interface via a socket connection. FusionExport Desktop also comes with a GUI that lets you monitor ongoing operations. 
 FusionExport Web Service is our remote export engine that communicates with your interface through HTTP connections.
-

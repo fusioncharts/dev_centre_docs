@@ -199,7 +199,7 @@ Syntax for the constructor:
 
 ```
 
-<p class="text-info"> __Note:__ Instead of coping the code from the code viewer, use __copy to clipboard__ button to copy the code. The reason we suggest this because in a code viewer, break lines(which is a complete  string line) has been used to display the proper method to set the chart cosmetics and how the datasource can be passed as a parameter.</p>
+>  __Note:__ Instead of coping the code from the code viewer, use __copy to clipboard__ button to copy the code. The reason we suggest this because in a code viewer, break lines(which is a complete  string line) has been used to display the proper method to set the chart cosmetics and how the datasource can be passed as a parameter.
 
 
 ### Step 5:
@@ -207,11 +207,11 @@ Syntax for the constructor:
 Render the chart.
 
 ```java
-
+<html>
+  <body>
 		<%=column2dChart.render()%>
-    </body>
+  </body>
 </html>
-
 ```
 
 ### Final template

@@ -41,7 +41,7 @@ We will see each of them in detail. Let’s first have a look at a standard angu
 
 An angular gauge displays the data values on a radial scale. The radial scale is marked by a lower limit and an upper limit, i.e. the minimum and maximum values that can be plotted. Within that scale, you can create various sections to classify your data - each section can have a different background color, border color, etc. to differentiate them from one another. These sections are called color ranges. In the above chart, we have 3 color ranges marked as green, yellow, and red. There can be any number of color ranges. For each color range, you will have to specify the minimum and maximum values and the hex color code for the range.
 
-<p class="text-info">Each color range should have it’s own unique range value. So, if a range is defined as 0-50, the next range should have the minimum value as 50 necessarily. It cannot have an overlap with the previous section. Similarly, if the upper limit of the chart is 100, the last range should have max value set as 100.</p>
+> Each color range should have it’s own unique range value. So, if a range is defined as 0-50, the next range should have the minimum value as 50 necessarily. It cannot have an overlap with the previous section. Similarly, if the upper limit of the chart is 100, the last range should have max value set as 100.
 
 ## Dials (Data Indicators)
 

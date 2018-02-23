@@ -58,7 +58,7 @@ An angular gauge flipped horizontally looks like this:
 
 To flip the gauge, all you need to do is swap the default values of the `gaugeStartAngle` and the `gaugeEndAngle` attributes.
 
-<p class="text-warning"> When specifying the start and end angles for gauges, you should always make sure that the difference between start and end angle should not be more than 360 degrees, else the gauge will not behave as intended.</p>
+> When specifying the start and end angles for gauges, you should always make sure that the difference between start and end angle should not be more than 360 degrees, else the gauge will not behave as intended.
 
 ## Automatic Positioning of Gauge Origins
 
@@ -77,7 +77,7 @@ An angular gauge with the start angle and end angle measuring 0° and 90° respe
 You can change the values of the `startAngle` and the `endAngle` attributes and see how the position of the origin
 for each gauge changes depending on the combination of the start and end angle measures.
 
-<p class="text-info"> Important note: Along with positioning the origins, a JavaScript Angular gauge also scales itself to best - fit into the available space.</p>
+>  Important note: Along with positioning the origins, a JavaScript Angular gauge also scales itself to best - fit into the available space.
 
 ## Manually Setting Gauge Origins
 
@@ -88,6 +88,6 @@ An angular gauge rendered with manually-specified gauge origins looks like this:
 {% embed_all chart-guide-fusionwidgets-xt-angular-gauge-configuring-angles-and-origins-example-3.js %}
 
 
-<p class="text-info">In the above example we have only modified the `gaugeOriginY` attribute to shift the origin upward, you can do similar adjustments with `gaugeOriginX` also.</p>
+> In the above example we have only modified the `gaugeOriginY` attribute to shift the origin upward, you can do similar adjustments with `gaugeOriginX` also.
 
-<p class="text-info"> If you were to dynamically resize the gauge now with proper configuration, FusionCharts Suite XT will automatically resize the origin positions and radius specified.</p>
+>  If you were to dynamically resize the gauge now with proper configuration, FusionCharts Suite XT will automatically resize the origin positions and radius specified.

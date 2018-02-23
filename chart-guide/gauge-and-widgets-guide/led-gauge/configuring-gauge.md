@@ -127,7 +127,7 @@ Given below is a brief description of the attributes used to configure the LED b
 </table>
 
 
-<p class="text-info">To make the LEDs appear continuous, you can set `ledGap` to 0.</p>
+> To make the LEDs appear continuous, you can set `ledGap` to 0.</p>
 
 ## Showing/Hiding Chart Value
 

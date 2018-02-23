@@ -58,7 +58,7 @@ In the snippet above, it is assumed that the chart has to be added inside a cont
 
 In the above code snippet, the directive is bound to the datasource scope variable. The variable, however, has not been defined yet.
 
-In your controller, set the datasource using the regular FusionCharts JSON format (see [this tutorial](/getting-started/building-your-first-chart) for a general introduction to this format).
+In your controller, set the datasource using the regular FusionCharts JSON format (see [this tutorial]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart "@@open-newtab") for a general introduction to this format).
 
 ```javascript
 app.controller('MyController', function($scope) {
@@ -78,7 +78,7 @@ app.controller('MyController', function($scope) {
 You are now ready to start creating and customizing your charts using the Angular-FusionCharts directive. Read on to see how.
 
 ## Licensing
-<p class="text-info">
+> 
 Angular-FusionCharts is open-source and distributed under the terms of the MIT/X11 License. You will still need to download and include FusionCharts in your page. This project provides no direct functionality. You can [download an evaluation](http://www.fusioncharts.com/download/). You will still need to purchase a FusionCharts license to use in a commercial environment (FusionCharts is [free ](http://www.fusioncharts.com/download/free/)[for non-commercial and personal use](http://www.fusioncharts.com/download/free/)) .
 
 </p>

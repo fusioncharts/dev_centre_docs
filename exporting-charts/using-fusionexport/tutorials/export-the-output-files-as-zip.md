@@ -23,13 +23,13 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 <div class="tab-content extra-tabs">
     <div class="tab cli-tab active">
     <div>If you want to export the files as a zip, set the <strong>--output-as-zip</strong> option to true as shown in the command below:</div>
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	$ fe -c multiple_charts_config.json -z false
 </code></pre>
 </div>
     
 <div class="tab nodejs-tab">
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	const fs = require('fs');
 	const path = require('path');
 
@@ -66,7 +66,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab java-tab">
-<pre><code class="language-java">
+<pre><code class="custom-hlc language-java">
 	import java.io.ByteArrayOutputStream;
 	import java.io.File;
 	import java.io.FileInputStream;
@@ -119,7 +119,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab csharp-tab">
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	using System;
 	using System.IO;
 	using FusionCharts.FusionExport.Client; // Import sdk
@@ -163,7 +163,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab php-tab">
-<pre><code class="language-php">
+<pre><code class="custom-hlc language-php">
 	<?php
 
 	// Exporting the Output Files as Zip
@@ -204,7 +204,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab python-tab">
-<pre><code class="language-python">
+<pre><code class="custom-hlc language-python">
 	#!/usr/bin/env python
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk
@@ -243,7 +243,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab golang-tab">
-<pre><code class="language-go">
+<pre><code class="custom-hlc language-go">
 	// Exporting the Output Files as Zip
 
 	package main

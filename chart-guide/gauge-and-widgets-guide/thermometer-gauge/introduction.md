@@ -15,7 +15,7 @@ A sample FusionCharts Suite XT real-time thermometer gauge looks like this:
 
 The thermometer gauge shown above is designed to work as the real-time temperature monitor for the Central Cold Store.
 
-<p class="text-info"> The thermometer gauge does **NOT** need a pre-defined color range. Instead, it takes in the fill color as an attribute and uses that color to fill up the thermometer. </p>
+>  The thermometer gauge does **NOT** need a pre-defined color range. Instead, it takes in the fill color as an attribute and uses that color to fill up the thermometer.
 
 ## Elements of Thermometer Gauge
 

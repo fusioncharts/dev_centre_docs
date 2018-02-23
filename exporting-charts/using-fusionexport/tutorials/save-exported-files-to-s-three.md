@@ -25,7 +25,7 @@ Now, edit the content of the file `s3.json`.
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	{
 		"bucket": "",
 		"accessKey": "",
@@ -47,7 +47,7 @@ Add the prefix `s3:` for `--output-file` option.
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	{
 		"chart-config": "fusioncharts_chart.js",
 		"output-file": "s3:fc-chart-<%= number(1) %>"

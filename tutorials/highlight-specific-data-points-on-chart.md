@@ -91,9 +91,9 @@ You can configure the anchors using the attributes detailed below.
 
 Some of the most prominent ways of highlighting data points using FusionCharts are:
 
-* [Changing the color of an individual data point](/tutorials/highlight-specific-data-points-on-chart#changing-the-color-of-an-individual-data-point)
-* [Highlighting the data point by changing its alpha and using dashed border](/tutorials/highlight-specific-data-points-on-chart#highlighting-the-data-point-by-changing-its-alpha-and-using-dashed-border)
-* [Changing anchor properties in charts like line and area](/tutorials/highlight-specific-data-points-on-chart#changing-anchor-properties-in-charts-like-line-and-area)
+* Changing the color of an individual data point
+* Highlighting the data point by changing its alpha and using dashed border
+* Changing anchor properties in charts like line and area
 
 
 ## Changing the Color of an Individual Data Point

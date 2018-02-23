@@ -33,7 +33,7 @@ This is what we did in the above data structure
 
 * Lastly the tabular data is specified within the `data` array, with name of the new ID with key as `id`, and population with key as `value`.
 
-<p class="text-info">It is possible to use only one color to draw the gradient scale. Here, the scale will appear starting from the darkest shade of the color (lower limit) to the brightest shade of the color (upper limit). The map will automatically decide the numeric range taking the lowest data value present as the lower limit and the highest data value as the upper limit. There is no scope however of setting the upper limit using the `maxValue` attribute.</p>
+> It is possible to use only one color to draw the gradient scale. Here, the scale will appear starting from the darkest shade of the color (lower limit) to the brightest shade of the color (upper limit). The map will automatically decide the numeric range taking the lowest data value present as the lower limit and the highest data value as the upper limit. There is no scope however of setting the upper limit using the `maxValue` attribute.</p>
 
 The full HTML code to build this example is shown below
 

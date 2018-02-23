@@ -21,10 +21,6 @@ The real-time data format for gauges depends on:
 
 * the use of commands for the gauge - like stop update etc.
 
-A real-time LED gauge looks like this:
-
-{% embed_all gauge-and-widgets-guide-led-gauge-real-time-gauge-example-1.js %}
-
 Given below is a brief description of the JavaScript API methods used to update a pointer:
 
 <table>

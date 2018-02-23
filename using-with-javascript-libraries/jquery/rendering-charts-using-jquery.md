@@ -114,7 +114,7 @@ The `cloneFusionCharts` method accepts two arguments:
 
 * A configuration object: An object containing chart configurations which are applied to each cloned chart
 
-For more information on cloning a chart, click [here](/using-with-javascript-libraries/jquery/api-reference).
+For more information on cloning a chart, click [here]({% site.baseurl %}/using-with-javascript-libraries/jquery/api-reference "@@open-newtab").
 
 ## The prependFusionCharts Method
 

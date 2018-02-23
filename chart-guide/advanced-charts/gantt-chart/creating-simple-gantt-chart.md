@@ -11,7 +11,7 @@ In this section, you will be shown how you can create a simple Gantt chart.
 
 As an example, you will be shown how to create a Gantt chart that monitors the various processes and tasks involved in optimizing an organization's reach on the social media.
 
-<p class="text-info"> In order to render gantt chart, include fusioncharts.gantt.js in the project folder.</p>
+>  In order to render gantt chart, include fusioncharts.gantt.js in the project folder.
 
 A Gantt chart created to track the progress of a Social Media Optimization project looks like this:
 
@@ -98,4 +98,4 @@ The Gantt chart shown above tracks the monthly progress of each proces. Each mon
 
 The Social Media Optimization Gantt chart rendered with multiple categories looks like this:
 
-{% embed_all {"source": "gauge-and-widgets-guide-gantt-chart-creating-simple-gantt-chart-example-2.js", "id": "2"} %}
+{% embed_all gauge-and-widgets-guide-gantt-chart-creating-simple-gantt-chart-example-2.js %}

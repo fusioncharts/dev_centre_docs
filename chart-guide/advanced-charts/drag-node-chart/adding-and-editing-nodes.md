@@ -147,7 +147,7 @@ Now, when the __Submit__ button is clicked, the new node created looks like this
 
 ![image add-node-image-5]({% site.baseurl %}/images/chart-guide-drag-node-chart-adding-and-editing-nodes-5.jpg)
 
-<p class="text-info">You can define nodes in the chart data using the `data` object of the `dataset` object. </p>
+> You can define nodes in the chart data using the `data` object of the `dataset` object. </p>
 
 ### Event Raised
 
@@ -215,4 +215,4 @@ chartInstance.addEventListener('nodedeleted', function(e, a){
 });
 ```
 
-<p class="text-info">You can get the latest updated node positions using JavaScript or by [submitting the updated positions]({% site.baseurl %}/chart-guide/advanced-charts/drag-node-chart/updating-chart-data-on-server "@@open-newtab") to a server-side script.</p>
+> You can get the latest updated node positions using JavaScript or by [submitting the updated positions]({% site.baseurl %}/chart-guide/advanced-charts/drag-node-chart/updating-chart-data-on-server "@@open-newtab") to a server-side script.</p>

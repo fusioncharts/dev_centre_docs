@@ -23,13 +23,13 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 <div class="tab-content extra-tabs">
 <div class="tab cli-tab active">
 <div>To use the licensed version of the FusionCharts library, you can provide the path to the FusionCharts library using the --library-path, or -L, option. Run the following command:</div>
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	$ fe -c multiple_charts_config.json -L "path/to/fusioncharts"
 </code></pre>
 </div>
     
 <div class="tab nodejs-tab">
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	const fs = require('fs');
 	const path = require('path');
 
@@ -64,7 +64,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab java-tab">
-<pre><code class="language-java">
+<pre><code class="custom-hlc language-java">
 	import java.io.ByteArrayOutputStream;
 	import java.io.File;
 	import java.io.FileInputStream;
@@ -117,7 +117,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab csharp-tab">
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	using System;
 	using System.IO;
 	using FusionCharts.FusionExport.Client; // Import sdk
@@ -161,7 +161,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab php-tab">
-<pre><code class="language-php">
+<pre><code class="custom-hlc language-php">
 	<?php
 
 	// Using the licensed FusionCharts library for export
@@ -201,7 +201,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab python-tab">
-<pre><code class="language-python">
+<pre><code class="custom-hlc language-python">
 	#!/usr/bin/env python
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk
@@ -240,7 +240,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab golang-tab">
-<pre><code class="language-go">
+<pre><code class="custom-hlc language-go">
 	// Using the licensed FusionCharts library for export
 
 	package main

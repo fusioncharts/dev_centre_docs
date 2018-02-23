@@ -23,7 +23,7 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 <div class="tab cli-tab active">
 <div class="mt-20 pb-10">Let’s create a template file named <code>template.html</code> and load the <code>d3.js</code> library. Write the necessary code to render the chord diagram. Now, use the <code>--asyncCapture</code> CLI option to hook into D3’s rendering life-cycle and export the chart after D3 completes the rendering. </div>
 <div class="mt-20 pb-10"><strong>template.html</strong></div>
-<pre><code class="language-html+xml">
+<pre><code class="custom-hlc language-html+xml">
 	&lt;!DOCTYPE html&gt;
 		&lt;meta charset=&quot;utf-8&quot;&gt;
 		&lt;style&gt;
@@ -153,7 +153,7 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 <div class="mt-20 pb-10">Pay special attention to <strong>FusionExport.emit('<code>CAPTURE_EXIT</code>')</strong>. You need to emit the <code>CAPTURE_EXIT</code> event when the render is complete.</div>
 <div class="mt-20 pb-10"><strong>The fusioncharts_config.json looks like as follows:</strong></div>
 
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	{
 	  "template": "path/to/d3_exp/template.html",
 	  "output-file": "./",
@@ -162,13 +162,13 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	}
 </code></pre>
 <div class="mt-20 pb-10"><strong>Once done, run the following command:</strong></div>
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	$ fe -e fusioncharts_config.json
 </code></pre></div>
     
 <div class="tab nodejs-tab">
 
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	const fs = require('fs');
 	const path = require('path');
 	// require fusionexport
@@ -204,7 +204,7 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	})
 </code></pre></div>
 <div class="tab java-tab">
-<pre><code class="language-java">
+<pre><code class="custom-hlc language-java">
 	import com.fusioncharts.fusionexport.client.*; // import sdk
 
 	public class ExportChart implements ExportDoneListener, ExportStateChangedListener {
@@ -239,7 +239,7 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	}
 </code></pre></div>
 <div class="tab csharp-tab">
-<pre><code class="language-c">
+<pre><code class="custom-hlc language-c">
 	using System;
 	using System.IO;
 	using FusionCharts.FusionExport.Client; // Import sdk
@@ -283,7 +283,7 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	}
 </code></pre></div>
 <div class="tab php-tab">
-<pre><code class="language-php">
+<pre><code class="custom-hlc language-php">
 	<?php
 
 	// D3 export
@@ -323,7 +323,7 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
 </code></pre></div>
 <div class="tab python-tab">
-<pre><code class="language-python">
+<pre><code class="custom-hlc language-python">
 	#!/usr/bin/env python
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk
@@ -354,7 +354,7 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	em.export(export_config, on_export_done, on_export_state_changed)
 </code></pre></div>
 <div class="tab golang-tab">
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	// D3 export
 
 	package main

@@ -15,7 +15,7 @@ Output filenames can be dynamically generated using the  `--output-file-definiti
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	module.exports = {
 		captionIndexStr: (chartConfig, index, chartConfigList) => {
 			const caption = chartConfig.dataSource.chart.caption;
@@ -37,7 +37,7 @@ The `captionIndexStr` function  receives three parameters from the FusionExport 
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	module.exports = {
 		dates: [
 			'17-11-2017_fc_1',
@@ -59,7 +59,7 @@ FusionExport CLI provides two system-defined functions that can be used to gener
 
 To create the final output filename, the `--output-file` option should be used. This option accepts the filename template string as shown below:
 
-<p class="text-info">The output filename template string uses the EJS templating engine.</p>
+> The output filename template string uses the EJS templating engine.</p>
 
 <div class="code-wrapper">
 <ul class="code-tabs">
@@ -68,7 +68,7 @@ To create the final output filename, the `--output-file` option should be used. 
 
 <div class="tab-content">
     <div class="tab cli-tab active">
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	path/to/export--<%= number(1, 100) %>
 	output filename: path/to/export--1.png
 

@@ -142,7 +142,7 @@ Because the chart width is relatively small here, a scroll bar comes up and allo
 
 You can also explicitly set the width of each data column using the `width` attribute of the `datacolumn` object. This can be set as a pixel value or as a percentage of the entire data grid width.
 
-<p class="text-info">If you wish to hide the scroll bar of the data column, you can set `showFullDataTable` to `0` (false) in `chart` object. This will wrap &amp; truncate the data labels and try to squeeze them in the required space (only if possible).</p>
+> If you wish to hide the scroll bar of the data column, you can set `showFullDataTable` to `0` (false) in `chart` object. This will wrap &amp; truncate the data labels and try to squeeze them in the required space (only if possible).</p>
 
 ## Customizing the Hover Effect
 

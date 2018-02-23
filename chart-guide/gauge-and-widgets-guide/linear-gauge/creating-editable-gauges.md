@@ -31,7 +31,7 @@ Given below is a brief description of the attribute used to create an editable g
   </tr>
 </table>
 
-<p class="text-info"> If a gauge has multiple pointers and all have them have to be made editable, the `editMode` attribute is defined for the `chart` object. If a gauge has multiple pointers and only specific ones have to be made editable, the `editMode` attribute is defined as a part of the `pointer` object, which belongs to the `pointers` object.</p>
+>  If a gauge has multiple pointers and all have them have to be made editable, the `editMode` attribute is defined for the `chart` object. If a gauge has multiple pointers and only specific ones have to be made editable, the `editMode` attribute is defined as a part of the `pointer` object, which belongs to the `pointers` object.</p>
 
 
 ### Method used to Create Editable Gauges in the Previous Versions

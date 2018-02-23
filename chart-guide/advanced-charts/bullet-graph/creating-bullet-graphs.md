@@ -43,4 +43,4 @@ To create a bullet graph, you will need to:
 </table>
 
 
-<p class="text-info"> To render the above chart as a vertical bullet graph, change the value of the `type` attribute to `vBullet`. </p>
+>  To render the above chart as a vertical bullet graph, change the value of the `type` attribute to `vBullet`. </p>

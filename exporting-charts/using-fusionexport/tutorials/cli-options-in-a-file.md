@@ -16,7 +16,7 @@ The content of the __fusionexport_config.json__ file is given below:
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="language-json">
+<pre><code class="custom-hlc language-json">
 	{
 		"chart-config": "uat/50charts.js",
 		"output-file": "uat/export-<%= number(1, 100) %>",
@@ -42,7 +42,7 @@ Once done, run the following command:
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	$ fe -e fusioncharts_config.json
 </code></pre>
 </div>

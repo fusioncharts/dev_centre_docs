@@ -143,7 +143,7 @@ Given below is a brief description of the attributes used to configure the color
 </table>
 
 
-<p class="text-info">To render the bullet graph in 2D, set the `colorRangeFillMix` attribute to an empty value, like this `"colorRangeFillMix": ""`.</p>
+> To render the bullet graph in 2D, set the `colorRangeFillMix` attribute to an empty value, like this `"colorRangeFillMix": ""`.</p>
 
 ### Configuring Shadow
 
@@ -335,7 +335,7 @@ Given below is a brief description of the attributes used to enable and configur
   <tr>
     <td>`showPlotBorderOnHover`</td>
     <td>It is used to specify whether the plot border will be shown when the mouse pointer is hovered over it. Setting this attribute to `1` will show the plot border on hover, setting it `0` will not.<br/>
-    <p class="text-info">If you set the `showPlotBorder` attribute to `0` but configure the other hover properties for the plot border, the border is still rendered.</p></td>
+    > If you set the `showPlotBorder` attribute to `0` but configure the other hover properties for the plot border, the border is still rendered.</p></td>
   </tr>
   <tr>
     <td>`plotBorderHoverColor`</td>

@@ -10,19 +10,19 @@ chartPresent: true
 
 The FusionCharts PHP wrapper lets you load data for a chart using:
 
-* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data#loading-data-from-a-static-json-string" class="smoth-scroll">a static JSON string</a>
+* a static JSON string
 
-* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data#loading-data-from-a-static-xml-string" class="smoth-scroll">a static XML string</a>
+* a static XML string
 
-* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data#loading-data-from-a-json-string-generated-from-an-associative-array" class="smoth-scroll">a JSON string generated from an associative array</a>
+* a JSON string generated from an associative array
 
-* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data#loading-data-from-a-json-string-generated-from-an-associative-array" class="smoth-scroll">an XML string generated from an associative array</a>
+* an XML string generated from an associative array
 
 In this section, you will be shown how the FusionCharts PHP wrapper uses each of these methods to generate charts.
 
-<p class="text-info">Before you proceed, make sure you have <a href="/using-with-server-side-languages/php/introduction.html" target="_blank">installed and set up the plugin </a> correctly.</p>
+> Before you proceed, make sure you have [installed and set up the plugin correctly]({% site.baseurl %}/using-with-server-side-languages/php/introduction "@@open-newtab").
 
-<p class="text-info"> There are two more ways for loading data - using the JSON URL and using the XML URL. These methods, however, are similar to using static strings. The only difference is that the data is loaded from a separate `.json` or `.xml` file. The URLs of the file is then passed as the value for the data source parameter of the constructor. In case of JSON data, `jsonurl` is passed as the value for the data format parameter; for XML data, it is `xmlurl`.</p>
+>  There are two more ways for loading data - using the JSON URL and using the XML URL. These methods, however, are similar to using static strings. The only difference is that the data is loaded from a separate `.json` or `.xml` file. The URLs of the file is then passed as the value for the data source parameter of the constructor. In case of JSON data, `jsonurl` is passed as the value for the data format parameter; for XML data, it is `xmlurl`.</p>
 
 ## Loading Data from a Static JSON String
 
@@ -84,7 +84,7 @@ The data structure needed to render the above chart is given below:
 </html>
 ```
 
-<p class="text-info"> To know more about the attributes you can configure for the area chart, visit [this page](/chart-attributes?chart=area2d).</p>
+>  To know more about the attributes you can configure for the area chart, visit [this page]({% site.baseurl %}/chart-attributes?chart=area2d "@@open-newtab").
 
 ## Loading Data from a Static XML String
 
@@ -126,7 +126,7 @@ The data structure needed to render the above chart is given below:
 </html>
 ```
 
-<p class="text-info">To know more about the attributes you can configure for the line chart, visit [this page](/chart-attributes?chart=line)</p>
+> To know more about the attributes you can configure for the line chart, visit [this page]({% site.baseurl %}/chart-attributes?chart=line "@@open-newtab").
 
 ## Loading Data from a JSON String Generated from an Associative Array
 
@@ -205,7 +205,7 @@ The data structure needed to render the above chart is given below:
 </html>
 
 ```
-<p class="text-info">To know more about the attributes you can configure for the pie 2D chart, visit [this page](/chart-attributes?chart=pie2d).</p>
+> To know more about the attributes you can configure for the pie 2D chart, visit [this page]({% site.baseurl %}/chart-attributes?chart=pie2d "@@open-newtab").
 
 ## Loading Data from an XML String Generated from an Associative Array
 
@@ -306,7 +306,7 @@ The data structure needed to render the above chart is given below:
 </html>
 
 ```
-<p class="text-info">To know more about the attributes you can configure for the bar 2D chart, visit [this page](/chart-attributes?chart=bar2d).</p>
+> To know more about the attributes you can configure for the bar 2D chart, visit [this page]({% site.baseurl %}/chart-attributes?chart=bar2d "@@open-newtab").</p>
 
 ## Important Tips for Developers
 
@@ -314,24 +314,17 @@ Given below are a few tips that, although applicable while coding for the entire
 
 * The structure in which chart data is specified, based on whether you are rendering a single-series chart or a multi-series chart.  The table below shows the difference:
 
-<table>
-<tr>
-    <td><strong>Single-series Chart</strong></td>
-</tr>
-<tr>
+**Single-series Chart**
+
 {% embed_data using-with-server-side-languages-php-different-ways-of-loading-data-example-4.js %}
-For an example, click [here](/chart-guide/standard-charts/creating-standard-charts) (For XML - check the data under the XML tab).
-    </td>
-    </tr>
-    <tr>
-        <td><strong>Multi-series Chart</strong></td>
-    </tr>
-    <tr>
+
+For an example, click [here]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts "@@open-newtab") (For XML - check the data under the XML tab).
+
+**Multi-series Chart**
+    
 {% embed_data using-with-server-side-languages-php-different-ways-of-loading-data-example-5.js %}
-For an example, click [here](/chart-guide/multi-series-charts/creating-multi-series-charts) (For XML - check the data under the XML tab).
-    </td>
-</tr>
-</table>
+
+For an example, click [here]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts "@@open-newtab") (For XML - check the data under the XML tab).
 
 * Make sure that the XML strings are escaped properly, especially for instances where the data for the chart is enclosed in quotation marks. Also make sure that the entire string is enclosed in single quotes, while the attributes and corresponding values are enclosed in double quotes. Doing otherwise will break the code.
 
