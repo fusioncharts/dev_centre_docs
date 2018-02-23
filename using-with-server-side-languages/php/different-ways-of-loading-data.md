@@ -10,17 +10,17 @@ chartPresent: true
 
 The FusionCharts PHP wrapper lets you load data for a chart using:
 
-* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data#loading-data-from-a-static-json-string" class="smoth-scroll">a static JSON string</a>
+* a static JSON string
 
-* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data#loading-data-from-a-static-xml-string" class="smoth-scroll">a static XML string</a>
+* a static XML string
 
-* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data#loading-data-from-a-json-string-generated-from-an-associative-array" class="smoth-scroll">a JSON string generated from an associative array</a>
+* a JSON string generated from an associative array
 
-* <a href="/using-with-server-side-languages/php/different-ways-of-loading-data#loading-data-from-a-json-string-generated-from-an-associative-array" class="smoth-scroll">an XML string generated from an associative array</a>
+* an XML string generated from an associative array
 
 In this section, you will be shown how the FusionCharts PHP wrapper uses each of these methods to generate charts.
 
-> Before you proceed, make sure you have <a href="/using-with-server-side-languages/php/introduction.html" target="_blank">installed and set up the plugin </a> correctly.</p>
+> Before you proceed, make sure you have [installed and set up the plugin correctly]({% site.baseurl %}/using-with-server-side-languages/php/introduction "@@open-newtab").
 
 >  There are two more ways for loading data - using the JSON URL and using the XML URL. These methods, however, are similar to using static strings. The only difference is that the data is loaded from a separate `.json` or `.xml` file. The URLs of the file is then passed as the value for the data source parameter of the constructor. In case of JSON data, `jsonurl` is passed as the value for the data format parameter; for XML data, it is `xmlurl`.</p>
 
@@ -84,7 +84,7 @@ The data structure needed to render the above chart is given below:
 </html>
 ```
 
->  To know more about the attributes you can configure for the area chart, visit [this page](/chart-attributes?chart=area2d).</p>
+>  To know more about the attributes you can configure for the area chart, visit [this page]({% site.baseurl %}/chart-attributes?chart=area2d "@@open-newtab").
 
 ## Loading Data from a Static XML String
 
