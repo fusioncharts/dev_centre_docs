@@ -126,7 +126,7 @@ The data structure needed to render the above chart is given below:
 </html>
 ```
 
-> To know more about the attributes you can configure for the line chart, visit [this page](/chart-attributes?chart=line)</p>
+> To know more about the attributes you can configure for the line chart, visit [this page]({% site.baseurl %}/chart-attributes?chart=line "@@open-newtab").
 
 ## Loading Data from a JSON String Generated from an Associative Array
 
@@ -205,7 +205,7 @@ The data structure needed to render the above chart is given below:
 </html>
 
 ```
-> To know more about the attributes you can configure for the pie 2D chart, visit [this page](/chart-attributes?chart=pie2d).</p>
+> To know more about the attributes you can configure for the pie 2D chart, visit [this page]({% site.baseurl %}/chart-attributes?chart=pie2d "@@open-newtab").
 
 ## Loading Data from an XML String Generated from an Associative Array
 
@@ -306,7 +306,7 @@ The data structure needed to render the above chart is given below:
 </html>
 
 ```
-> To know more about the attributes you can configure for the bar 2D chart, visit [this page](/chart-attributes?chart=bar2d).</p>
+> To know more about the attributes you can configure for the bar 2D chart, visit [this page]({% site.baseurl %}/chart-attributes?chart=bar2d "@@open-newtab").</p>
 
 ## Important Tips for Developers
 
@@ -320,7 +320,7 @@ Given below are a few tips that, although applicable while coding for the entire
 </tr>
 <tr>
 {% embed_data using-with-server-side-languages-php-different-ways-of-loading-data-example-4.js %}
-For an example, click [here](/chart-guide/standard-charts/creating-standard-charts) (For XML - check the data under the XML tab).
+For an example, click [here]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts "@@open-newtab") (For XML - check the data under the XML tab).
     </td>
     </tr>
     <tr>
@@ -328,7 +328,7 @@ For an example, click [here](/chart-guide/standard-charts/creating-standard-char
     </tr>
     <tr>
 {% embed_data using-with-server-side-languages-php-different-ways-of-loading-data-example-5.js %}
-For an example, click [here](/chart-guide/multi-series-charts/creating-multi-series-charts) (For XML - check the data under the XML tab).
+For an example, click [here]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts "@@open-newtab") (For XML - check the data under the XML tab).
     </td>
 </tr>
 </table>
