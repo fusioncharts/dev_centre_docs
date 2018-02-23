@@ -152,13 +152,13 @@ Take a look at the sample shown below:
 
 <input type="submit" value="Export Charts" onclick="selectiveBatchExportConfig();" />
 
-{% embed_chart exporting-multiple-charts-in-a-single-image-example-1.js %}
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-5.js %}
 
-{% embed_chart exporting-multiple-charts-in-a-single-image-example-2.js %}
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-6.js %}
 
-{% embed_chart exporting-multiple-charts-in-a-single-image-example-3.js %}
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-7.js %}
 
-{% embed_chart exporting-multiple-charts-in-a-single-image-example-4.js %}
+{% embed_chart exporting-multiple-charts-in-a-single-image-example-8.js %}
 
 When you click the __Export Charts__ button in this sample, the image downloaded is as shown below:
 
