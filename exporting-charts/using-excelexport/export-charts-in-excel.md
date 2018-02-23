@@ -12,7 +12,7 @@ Depending on the chart type, some of the charts will be exported as interactive 
 
 Let's check out a few examples of specific chart types using Excel export.
 
-> For detailed list of supported chart types and attributes click <a href="{{ site.baseurl }}exporting-charts/using-excelexport/supported-charts-and-attributes.html?chart=area2d">here</a>.
+> For detailed list of supported chart types and attributes click [here]({% site.baseurl %}/exporting-charts/using-excelexport/supported-charts-and-attributes?chart=area2d "@@open-newtab").
 
 ## Export multi-series area 2D chart
 
@@ -69,4 +69,4 @@ Embed a logo on the chart using `logoURL` attribute.
 
 This chart will be rendered as a static image in excel sheet. Since excel supports only upto two axes, this chart cannot be represented as an interactive excel chart. So, the chart is exported as static image.
 
-> Detailed List of supported Charts types and attributes can be found <a href="{{ site.baseurl }}exporting-charts/using-excelexport/supported-charts-and-attributes.html?chart=area2d">here</a>.
+> Detailed List of supported Charts types and attributes can be found [here]({% site.baseurl %}/exporting-charts/using-excelexport/supported-charts-and-attributes?chart=area2d "@@open-newtab").

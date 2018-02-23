@@ -45,7 +45,7 @@ The code snippet to feed real-time data to the gauge using  the `feedData()` met
 }
 ```
 
-<p class="text-info">The time interval for the gauge update has to be defined in milliseconds. </p>
+> The time interval for the gauge update has to be defined in milliseconds. </p>
 
 ## Using Server-side Scripts
 
@@ -67,7 +67,7 @@ The gauge is color-coded to indicate levels of CPU utilization as follows:
 
 The gauge is configured to poll the server at `http://static.fusioncharts.com/sampledata/php/serverLoad.php` every 5 seconds for the current utilization value through the `datastreamURL` parameter.
 
-<p class="text-info">The server page has to be on the same domain on which the gauge is hosted.</p>
+> The server page has to be on the same domain on which the gauge is hosted.</p>
 
 The server returns the new data for both sites to the gauge at once. This can be achieved by passing the data in a pipe separated form, as shown below:
 
@@ -75,7 +75,7 @@ The server returns the new data for both sites to the gauge at once. This can be
 
 The dials pick up data sequentially and indicate the updated value on the gauge. The order of the dials is defined in the script. Here, the black dial points to 85 and the gray dial points to 60.
 
-<p class="text-info">The `refreshInterval` has to be specified in seconds.</p>
+> The `refreshInterval` has to be specified in seconds.</p>
 
 
 ## Stopping/Restarting Real-time Updates

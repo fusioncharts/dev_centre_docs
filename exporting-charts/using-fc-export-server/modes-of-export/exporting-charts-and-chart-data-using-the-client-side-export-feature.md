@@ -18,7 +18,7 @@ FusionCharts provides programs to set up the export server at a client’s end, 
 
 The primary need for coming up with the client-side export feature  was to eliminate the need of a server for exporting, thus bringing down the turnaround time it takes for an export, as well as to address the data confidentiality issues. The client-side export feature removes the round-trip involved in exporting from a  server and eliminates the difficulties involved in setting up one with the proper dependencies.
 
-<p class="text-info">
+> 
 Please note that, at present, this feature is supported only by the __Chrome__,  __Firefox__, and __IE >= 10__ browsers. The FusionCharts team is working to include support for other browsers also.
 </p>
 
@@ -86,4 +86,4 @@ This feature uses the HTML5 API; therefore, it is important that modern browsers
 
 These technologies perform the necessary conversion from SVG to the required format (the rendered charts in the JPG, PNG, or PDF formats, or the chart data (in the XLS format). Using the HTML5 API helps to overcome the earlier browser functionality limitations that hampered the implementation of this feature.
 
-<p class="text-info"> FusionCharts supports exporting chart data as XLS starting v3.11.0. Select __Download as XLS__ from the menu in the top-right corner of the chart. </p>
+>  FusionCharts supports exporting chart data as XLS starting v3.11.0. Select __Download as XLS__ from the menu in the top-right corner of the chart. </p>

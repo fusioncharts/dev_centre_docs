@@ -66,4 +66,4 @@ If the labels for the numeric ranges are not specified, the chart will display t
   </tr>
 </table>
 
-<p class="text-info"> In category-based heat map charts we can only define a single color for a particular category. Any data set to that category will appear in the color specified for that particular group. It is not possible to use gradient colors in a category based heat map chart. </p>
+>  In category-based heat map charts we can only define a single color for a particular category. Any data set to that category will appear in the color specified for that particular group. It is not possible to use gradient colors in a category based heat map chart.

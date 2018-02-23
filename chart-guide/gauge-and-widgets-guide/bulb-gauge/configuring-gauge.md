@@ -43,15 +43,13 @@ Given below is a brief description of the attributes used to customize the gauge
 
 The `gaugeBorderColor` attribute is used to apply a single solid color to the gauge border, where the border color can be different from the fill color for the gauge. Using a gradient fill mix, you can render the border in a color that is darker or lighter than the fill color used for the gauge.
 
-<p class="text-info"> The gradient fill mix renders the border in a color that is darker/lighter than the initial color in which the gauge was rendered.</p>
+> The gradient fill mix renders the border in a color that is darker/lighter than the initial color in which the gauge was rendered.
 
 A bulb gauge rendered using a gradient fill mix for the border looks like this:
 
 {% embed_all gauge-and-widgets-guide-bulb-gauge-configuring-gauge-example-2.js %}
 
 In the above chart, the gauge border is rendered in a color darker than the initial fill color. To do this, we have used one token of the gradient fill mix to render the bulb border using a color that is 30% darker than the fill color.
-
-
 
 ## Configuring the Origin and the Radius of the Bulb Gauge
 

@@ -10,7 +10,7 @@ chartPresent: true
 
 The FusionCharts jQuery helper can be used to retrieve and update chart data and properties, for example, the chart type, width, height, caption, background color, and so on. dynamically at run-time. This feature is useful when you wish to change chart titles, theme colors, number formatting or scaling setup, divisional line and grid configurations, or any other functional and cosmetic features of an existing chart.
 
-<p class="text-info">While the API allows you to update selective configurations and properties, internally the entire chart is redrawn.</p>
+> While the API allows you to update selective configurations and properties, internally the entire chart is redrawn.</p>
 
 The methods in the jQuery helper that let you retrieve and update chart data and properties are:
 
@@ -34,13 +34,7 @@ In this section, you will be shown how you can use each of these methods.
 
 ## The updateFusionCharts Method
 
-The `updateFusionCharts` method accepts new configuration values as a set of key-value pairs.  To understand how this method works, we will look at how you can:
-
-* <a href="/using-with-javascript-libraries/jquery/updating-chart-properties-using-jquery#changing-the-type-of-an-existing-chart" class="smoth-scroll">Change the type of an existing chart</a>
-
-* <a href="/using-with-javascript-libraries/jquery/updating-chart-properties-using-jquery#changing-the-data-for-an-existing-chart" class="smoth-scroll">Change the data for an existing chart</a>
-
-* <a href="/using-with-javascript-libraries/jquery/updating-chart-properties-using-jquery#changing-the-width-and-the-height-at-run-time" class="smoth-scroll">Change the width and height of an existing chart</a>
+The `updateFusionCharts` method accepts new configuration values as a set of key-value pairs.
 
 ### Changing the Type of an Existing Chart
 

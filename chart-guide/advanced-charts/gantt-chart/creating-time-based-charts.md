@@ -47,11 +47,7 @@ The "Development Division - Time Shifts" Gantt chart thus rendered looks like th
 
 {% embed_all gauge-and-widgets-guide-gantt-chart-creating-time-based-chart-example-1.js %}
 
-
-
-
-
-<p class='text-info'>If you're using only time based charts, you can specify 23:59:59 as 24:00:00 for ease of usage.</p>
+> If you're using only time based charts, you can specify 23:59:59 as 24:00:00 for ease of usage.
 
 ## Creating Date+Time-based Charts
 

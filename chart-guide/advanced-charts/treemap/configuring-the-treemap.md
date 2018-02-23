@@ -13,7 +13,7 @@ In a treemap, the navigation bar displays a traversal path and allows you to go 
 
 A simple treemap with __navigation bar__ is shown below : 
 
-<p class="text-info"> Click the rectangles in each chart to traverse through the chart and see how the chart view changes. </p>
+>  Click the rectangles in each chart to traverse through the chart and see how the chart view changes. </p>
 
 {% embed_all chart-guide-treemap-chart-configuring-the-treemap-chart-example-9.js %}
 
@@ -66,7 +66,7 @@ Given below is a brief description of attributes that can be used to customize i
 	</tr>
 </table>
 
-<p class="text-info"> Only the font color can be customized for individual data plots. Other font customizations like the font family or the font size are not available at the individual data plot level. </p>
+>  Only the font color can be customized for individual data plots. Other font customizations like the font family or the font size are not available at the individual data plot level. </p>
 
 
 ## Customizing All Text Within the Chart Canvas
@@ -164,4 +164,4 @@ Given below is a brief description of the attributes used to customize the glow 
 	</tr>
 </table>
 
-Click [here]({% site.baseurl %}/chart-attributes?chart=treeap "@@open-newtab") for the complete list of attributes supported by the treemap.
+Click [here]({% site.baseurl %}/chart-attributes?chart=treemap "@@open-newtab") for the complete list of attributes supported by the treemap.

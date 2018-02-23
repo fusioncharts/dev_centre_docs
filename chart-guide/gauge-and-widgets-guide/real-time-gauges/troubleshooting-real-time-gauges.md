@@ -23,7 +23,7 @@ If the real-time gauge is set up to receive data from the server and the gauge r
 
 * the page that provides incremental data update to the gauges is hosted on the same sub-domain. For instance, a chart residing at "server1.mydomain.com" will not be able to access data from “mydomain.com”.
 
-<p class="text-info"> To load data from a different domain, setup a proxy page at the sub-domain. The page will request data from the distant domain and relay it to the gauge. </p>
+>  To load data from a different domain, setup a proxy page at the sub-domain. The page will request data from the distant domain and relay it to the gauge. </p>
 
 ## Problem 2: Error accessing JavaScript API methods
 

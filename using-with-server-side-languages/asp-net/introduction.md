@@ -12,9 +12,9 @@ FusionCharts Suite XT includes the FusionCharts server-side ASP.NET wrapper that
 
 In this section, you will be shown how you can create a simple chart using the FusionCharts ASP.NET wrapper.
 
-<p class="text-info"> The FusionCharts ASP.NET server-side wrapper requires a .NET Framework 3.5 or higher. </p>
+> The FusionCharts ASP.NET server-side wrapper requires a .NET Framework 3.5 or higher.
 
-<p class="text-info"> Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper/tree/master/DLLFile" target="_blank">__FusionCharts.dll__</a> file in the **Bin** folder of your application. </p>
+> Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper/tree/master/DLLFile" target="_blank">__FusionCharts.dll__</a> file in the **Bin** folder of your application.
 
 ## Creating a Simple Chart using the FusionCharts ASP.NET Wrapper
 
@@ -35,7 +35,7 @@ The data structure that goes into the **JSONURL.aspx** file is given below:
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;JSONUrl.aspx.cs&quot; Inherits=&quot;BasicExample_BasicChart&quot; %&gt;
     &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
     &lt;html&gt;
@@ -57,7 +57,7 @@ The data structure that goes into the **JSONURL.aspx** file is given below:
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
 	&lt;%@ Page Language=&quot;VB&quot; AutoEventWireup=&quot;false&quot; CodeFile=&quot;JSON_URL.aspx.vb&quot; Inherits=&quot;Samples_BasicExamples_JSON_URL&quot; %&gt;
 
 	&lt;!DOCTYPE html&gt;
@@ -92,7 +92,7 @@ The data structure that goes into the **JSONURL.aspx.cs** file is given below:
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	using System;
 	using System.Collections;
 	using System.Configuration;
@@ -125,7 +125,7 @@ The data structure that goes into the **JSONURL.aspx.cs** file is given below:
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
 	Imports System.Collections
 	Imports System.Configuration
 	Imports System.Data
@@ -226,7 +226,7 @@ Given below is a brief description of the constructor parameters:
 </table>
 
 
-<p class="text-info"> It is not necessary that you assign values for all parameters during initialization. The order of parameters, however, needs to be preserved. Also, you need to make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before you run the application. If not, either the chart will not render at all or it will not render the way you want it to. </p>
+>  It is not necessary that you assign values for all parameters during initialization. The order of parameters, however, needs to be preserved. Also, you need to make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before you run the application. If not, either the chart will not render at all or it will not render the way you want it to. </p>
 
 ### Methods under the Chart Class
 

@@ -24,18 +24,18 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 <div class="tab cli-tab active">
 <p>You can add a custom javascript file while exporting using the --callbacks, or -b, option. Here’s an example of a custom JavaScript that can be included while the export is happening.</p>
 <div class="mt-20 pb-10"><strong>The content of the custom.js file is as below:</strong></div>
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	document.body.style.transform = "rotate(-10deg)";
 </code></pre>
 
 <div class="mt-20 pb-10"><strong>Once done, run the following command:</strong></div>
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	$ fe -c chart.json -b custom.js
 </code></pre>
 </div>
     
 <div class="tab nodejs-tab">
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	const fs = require('fs');
 	const path = require('path');
 
@@ -74,7 +74,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab java-tab">
-<pre><code class="language-java">
+<pre><code class="custom-hlc language-java">
 	import java.io.ByteArrayOutputStream;
 	import java.io.File;
 	import java.io.FileInputStream;
@@ -129,7 +129,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab csharp-tab">
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	using System;
 	using System.IO;
 	using FusionCharts.FusionExport.Client; // Import sdk
@@ -175,7 +175,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab php-tab">
-<pre><code class="language-php">
+<pre><code class="custom-hlc language-php">
 	<?php
 
 	// Injecting custom JavaScript while exporting
@@ -217,7 +217,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab python-tab">
-<pre><code class="language-python">
+<pre><code class="custom-hlc language-python">
 	#!/usr/bin/env python
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk
@@ -257,7 +257,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab golang-tab">
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	// Injecting custom JavaScript while exporting
 
 	package main

@@ -57,7 +57,7 @@ Once you have downloaded and extracted files from the package:
 //= require fusioncharts/themes/fusioncharts.theme.fint
 ```
 
-<p class="text-info"> Ensure that the __config.assets.debug__ flag in the __development.rb__ file (config/environments/development.rb) is enabled (set to __true__) </p>
+>  Ensure that the __config.assets.debug__ flag in the __development.rb__ file (config/environments/development.rb) is enabled (set to __true__) </p>
 
 ## Creating and Rendering a Simple Chart using the FusionCharts Rails Wrapper
 

@@ -13,7 +13,7 @@ FusionCharts Suite XT let's you create your own markers on a map. You can define
 
 The marker structure in v3.4 needs a `shapes` object and an `items` object. The `shapes` object defines the look of the marker. The `items` object contains all the marker related information like the `x` and `y` coordinates, the unique `id` of the marker and other attributes for customization.
 
-<p class="text-info">If you are using the XML data type, change the `items` object to the `<data>` tag.</p>
+> If you are using the XML data type, change the `items` object to the `<data>` tag.</p>
 
 Shown below is the structure of a typical marker sheet
 

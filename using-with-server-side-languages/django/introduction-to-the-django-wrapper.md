@@ -12,14 +12,6 @@ The FusionCharts Django wrapper is a Python framework which is responsible for q
 
 FusionCharts Suite XT includes the FusionCharts Django wrapper that lets you create interactive, data-driven charts. You can create a simple chart using the FusionCharts server-side Django wrapper without writing any JavaScript code.
 
-In this section, you will be shown how to:
-
-* <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper#installing-the-fusioncharts-django-wrapper" class="smoth-scroll">Install the FusionCharts Django wrapper</a>
-* <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper#download-the-latest-fusioncharts-library-files" class="smoth-scroll">Download the latest FusionCharts Library Files</a>
-* <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper#creating-and-rendering-a-simple-chart-using-the-fusioncharts-django-wrapper" class="smoth-scroll">Create and render a simple chart using the FusionCharts Django Wrapper</a>
-* <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper#constructor-parameters" class="smoth-scroll">Use Constructor Parameters</a>
-
-
 ## Installing the FusionCharts Django Wrapper
 
 To install the FusionCharts Django wrapper, you would require Python 2.7 (or a higher version). To download Python, click <a href="https://www.python.org/downloads/" target="_blank">here</a>.
@@ -186,7 +178,7 @@ def chart(request):
 ```
 
 
-<p class="text-info">
+> 
  <span style="font-size: 13px; font-weight: bold; font-family: monospace;">return render(request, <span style="color: #d14;">'index.html'</span>, {<span style="color: #d14;">'output'</span>: column2d.render()})</span> </p>
 
 __Note:__ Do not forget to include the above line in your code, as it calls the `index.html` template and sets the data in the variable named `output`. This template file captures the variable(_output_) and renders the chart in its respective location.
@@ -203,7 +195,7 @@ The code for rendering the chart is written in the view file, i.e. -.py file. Th
 { { output|safe } } 
 ```
 
-<p class="text-info">In the above code, `output|safe` has been used to turn off the auto-escaping of data, on a per-site, per-template, or per-variable level.</p>
+> In the above code, `output|safe` has been used to turn off the auto-escaping of data, on a per-site, per-template, or per-variable level.</p>
 
 
 ### Final template
@@ -243,7 +235,7 @@ urlpatterns = [
 ]
 ```
 
-<p class="text-info">As the regular expressions are compiled at load time, the above process happens at lightening speed.</p>
+> As the regular expressions are compiled at load time, the above process happens at lightening speed.</p>
 
 
 Data for the chart can be in any one of the following formats:

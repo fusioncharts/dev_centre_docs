@@ -127,7 +127,4 @@ Currently, using the FusionCharts export handler, when a chart having a custom l
 
 To use this feature, set `exportEnabled` to __1__ (because we are using the server-side export feature), and set `exportHandler` to the url __http://export.api3.fusioncharts.com/logo/__. Using this exporter, the generated output will contain the logo along with the chart. 
 
-<p class="text-info">
-Note that this is an experimental feature and thus might not be a completely reliable solution.
-</p>
-
+> Note that this is an experimental feature and thus might not be a completely reliable solution.

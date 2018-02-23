@@ -9,9 +9,9 @@ layout: page
 
 This section shows you how you can change properties once the chart has been drawn. It is possible to configure the following
 
-* [Height and width of the chart]({{ site.baseurl }}api/tutorials/change-chart-properties-at-runtime.html#changing-height-and-width-of-the-chart)
-* [Chart type]({{ site.baseurl }}api/tutorials/change-chart-properties-at-runtime.html#changing-chart-type)
-* [Chart Properties like Fonts and Caption and Sub Caption Text]({{ site.baseurl }}api/tutorials/change-chart-properties-at-runtime.html#changing-chart-properties)
+* Height and width of the chart
+* Chart type
+* Chart Properties like Fonts and Caption and Sub Caption Text
 
 ## Changing height and width of the chart
 
@@ -20,7 +20,7 @@ Once you have initialized a chart, you can change the dimensions, at the client-
 You can call the 'resizeTo()' method specifying the new `width` and `height` of your chart (in pixels) like this:
 
 ```java
-	revenueChart.resizeTo(width, height);	
+revenueChart.resizeTo(width, height);	
 ```
 
 You can call this method anytime after the chart has finished rendering.
@@ -35,7 +35,7 @@ FusionCharts Suite XT makes it simple for you to change chart types using the 'c
 The following snippet shows you how to call the 'chartType()' method.
 
 ```java
-	revenueChart.chartType(newcharttype)
+revenueChart.chartType(newcharttype)
 ```
 
 This API is useful when you want your users to be able to select the right view for their data, without you having to re-build the entire chart. You can call this method anytime after the chart has finished rendering.
@@ -69,4 +69,4 @@ Similarly you can set the font size of the chart using the 'baseFontSize' attrib
 
 Shown here is a chart that allows you to change the font size at runtime.
 
-{% embed_chart {"source": "change-chart-properties-at-runtime-example-4.js", "id": "4"} %}
+{% embed_chart change-chart-properties-at-runtime-example-4.js %}

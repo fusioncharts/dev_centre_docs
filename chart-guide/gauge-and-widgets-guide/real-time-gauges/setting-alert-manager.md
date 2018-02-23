@@ -46,7 +46,7 @@ The container element for `alert` is `alerts`, which is a child of the `chart`el
 * Show a predefined annotation
 
 
-<p class="text-info"> Make sure that the alert ranges do not overlap.</p>
+>  Make sure that the alert ranges do not overlap.</p>
 
 An `alert` object contains the following attributes:
 

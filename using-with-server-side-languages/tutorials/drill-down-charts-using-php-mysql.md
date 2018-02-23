@@ -22,7 +22,7 @@ To get the code in this article working we need the below softwares installed an
 This stack is popularly called as *AMP(Apache MySQL PHP) stack and when you include the platform on which this stack is running then it becomes either WAMP (Windows Apache MySql PHP) or LAMP (Linux Apache MySQL PHP). So there are lots of vendors who bundle this stack and make it available for download. 
 Once the stack is set up properly:
 
-* Create a project folder called php-mysql-drill-down in the root directory of the web server. You should be able to browse to this folder via any web browser using the <a href="http://localhost/php-mysql-drill-down/" target="_blank">URL</a>.
+* Create a project folder called php-mysql-drill-down in the root directory of the web server. You should be able to browse to this folder via any web browser using the `http://localhost/php-mysql-drill-down/` URL.
 
 * Create a blank file named index.php and save it in the php-mysql-drill-down folder.
 
@@ -1661,5 +1661,5 @@ The final chart, with two levels of drill-down, will look as shown below:
 {% embed_chart drill-down-charts-using-php-mysql-example-1.js %}
 
 <div style="text-align: center;">
-  <a style="display: inline-block; width: auto; outline: none; padding: 20px 60px; margin-bottom: 10px; font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight: 600; color: #fff; text-align: center; vertical-align: middle; background-color: #167ed5; -webkit-border-radius: 2px; -webkit-border-radius: 0.2rem; -moz-border-radius: 2px; -moz-border-radius: 0.2rem; border-radius: 2px; border-radius: 0.2rem; cursor: pointer; -webkit-appearance: none; text-decoration: none;" href="/resources/downloads/php-mysql-multilevel-drill-down.zip" target="_blank" title="click me to download" >Download the Sample</a>
+  <a style="display: inline-block; width: auto; outline: none; padding: 20px 60px; margin-bottom: 10px; font-family: 'Open Sans', Arial, sans-serif; font-size: 18px; line-height: 24px; font-weight: 600; color: #fff; text-align: center; vertical-align: middle; background-color: #167ed5; -webkit-border-radius: 2px; -webkit-border-radius: 0.2rem; -moz-border-radius: 2px; -moz-border-radius: 0.2rem; border-radius: 2px; border-radius: 0.2rem; cursor: pointer; -webkit-appearance: none; text-decoration: none;" href="https://static.fusioncharts.com/sample/dev2.0/php-mysql-multilevel-drill-down.zip" target="_blank" title="click me to download" >Download the Sample</a>
 </div>

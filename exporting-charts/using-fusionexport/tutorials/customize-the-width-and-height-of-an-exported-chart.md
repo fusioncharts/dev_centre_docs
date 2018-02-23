@@ -16,11 +16,11 @@ During bulk export, you can override the height and width of all the charts usin
 
 <div class="tab-content">
 <div class="tab cli-tab active">
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	$ fe -c multiple_charts_config.json -W 800 -H 400
 </code></pre>
 </div>
 </div>
 </div>
 
-<p class="text-info">It doesn't work with direct SVG input.</p>
+> It doesn't work with direct SVG input.

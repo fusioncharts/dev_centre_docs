@@ -19,7 +19,7 @@ When a rectangle is clicked, the clicked node and its subtree replaces the curre
 
 ![Treemap with Northern Region as the current node]({% site.baseurl %}/images/chart-guide-treemap-chart-creating-a-simple-treemap-chart-image-6.jpg)
 
-<p class="text-info"> Click the rectangles in the treemap shown above and see how you can traverse through the leaf nodes. </p>
+>  Click the rectangles in the treemap shown above and see how you can traverse through the leaf nodes. </p>
 
 
 ## Brief Explanation of the Data Structure
@@ -128,7 +128,7 @@ Given below is a brief description of the attributes used to render the treemap 
   </tr>
 </table>
 
-<p class="text-info"> The value assigned to the `sValue` attribute in the chart data is used to assign color to a data plot based on which numeric range it falls in. </p>
+>  The value assigned to the `sValue` attribute in the chart data is used to assign color to a data plot based on which numeric range it falls in. </p>
 
 ### Showing/Hiding Data Values Using the Gradient Legend
 
@@ -138,4 +138,4 @@ The sample treemap with the gradient legend set to show only those nodes that ha
 
 ![Showing/Hiding Data Values Using the Gradient Legend]({% site.baseurl %}/images/chart-guide-treemap-chart-creating-a-simple-treemap-chart-image-7.jpg)
 
-Click [here]({% site.baseurl %}/chart-attributes?chart=treeap "@@open-newtab") for the complete list of attributes supported by the treemap.
+Click [here]({% site.baseurl %}/chart-attributes?chart=treemap "@@open-newtab") for the complete list of attributes supported by the treemap.

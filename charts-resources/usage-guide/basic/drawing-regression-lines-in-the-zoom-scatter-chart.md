@@ -64,7 +64,7 @@ Given below is a brief description of the attributes used to set the mode and cu
   </tr>
 </table>
 
-<p class="text-info">
+> 
 
 The formulae used to draw the regression lines for both the modes are given below:
 

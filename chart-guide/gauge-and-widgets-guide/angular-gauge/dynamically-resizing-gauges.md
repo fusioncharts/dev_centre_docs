@@ -48,7 +48,7 @@ In this example, we have set the chart’s size in percentage and have set `mana
 
 Two input fields have been rendered with the gauge to enter the target width and height for the container element. When, after entering values in both fields, the `Resize` button is clicked, the width and the height of the container element are resized based on the inputs provided. As soon as the dimensions of the container element change, the gauge automatically resizes itself.
 
-<p class="text-info">Please note that while dynamic resizing, the gauge and all its elements are scaled proportionally and works perfectly only for constrained resizing i.e., both width and height of the gauge are resized in proportions. If the chart is not scaled in proportions, the gauge will scale in the least possible proportion and then leave empty space all around it.</p>
+> Please note that while dynamic resizing, the gauge and all its elements are scaled proportionally and works perfectly only for constrained resizing i.e., both width and height of the gauge are resized in proportions. If the chart is not scaled in proportions, the gauge will scale in the least possible proportion and then leave empty space all around it.
 
 ## Dynamic Resizing of Gauges with Manual Values Specified for Various Gauge Elements
 
@@ -64,7 +64,7 @@ However, it is observed that when the dimensions of the initially rendered gauge
 
 2. On further resizing the gauge, all its elements scale based on the dimensions of the initially rendered gauge.
 
-<p class="text-info">This scenario is apparent in applications that have containers with dynamic dimensions like web parts, panels, etc. These containers are not set with fixed dimensions. Rather, they derive their dimensions based on various conditions like the space available, the number of rows and columns, etc.</p>
+> This scenario is apparent in applications that have containers with dynamic dimensions like web parts, panels, etc. These containers are not set with fixed dimensions. Rather, they derive their dimensions based on various conditions like the space available, the number of rows and columns, etc.
 
 This may lead to either a cropped gauge or a gauge with lots of extra space and even when you further resize the container, the gauge will not fit into the given space and will always remain cropped or spaced.
 
@@ -93,14 +93,11 @@ Given below is a brief description of the attributes that control dynamic resizi
   </tr>
 </table>
 
-
-
-
 {% embed_all gauge-and-widgets-guide-angular-gauge-dynamically-resizing-gauges-example-2.js %}
 
 In a similar way, the annotations present in a gauge can also be scaled and resized dynamically.
 
-<p class="text-warning">Please also note that the dynamic resizing feature will not work if you have set `"autoScale": "0"`.</p>
+> Please also note that the dynamic resizing feature will not work if you have set `"autoScale": "0"`.
 
 ## Using JS API Function `resizeTo()` for Resizing Charts
 

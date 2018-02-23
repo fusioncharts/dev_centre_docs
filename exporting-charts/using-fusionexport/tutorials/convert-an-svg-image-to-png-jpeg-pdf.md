@@ -28,13 +28,13 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 <div>Save the SVG in a file and name it, let’s say, chart.svg.</div>
 <div><strong>Step 2</strong></div>
 <div>Use the --input-file or -i options to convert the image into the required format using FusionExport, as shown below:</div>
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	$ fe -i chart.svg -t pdf
 </code></pre>
 </div>
     
 <div class="tab nodejs-tab">
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	const path = require('path');
 
 	// require fusionexport
@@ -70,7 +70,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 </code></pre>
 </div>
 <div class="tab java-tab">
-<pre><code class="language-java">
+<pre><code class="custom-hlc language-java">
 	import java.io.ByteArrayOutputStream;
 	import java.io.File;
 	import java.io.FileInputStream;
@@ -109,7 +109,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 </code></pre>
 </div>
 <div class="tab csharp-tab">
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	using System;
 	using System.IO;
 	using FusionCharts.FusionExport.Client; // Import sdk
@@ -152,7 +152,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 </code></pre>
 </div>
 <div class="tab php-tab">
-<pre><code class="language-php">
+<pre><code class="custom-hlc language-php">
 	<?php
 
 	// Converting an SVG image to PNG/JPEG/PDF
@@ -191,7 +191,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 </code></pre>
 </div>
 <div class="tab python-tab">
-<pre><code class="language-python">
+<pre><code class="custom-hlc language-python">
 	#!/usr/bin/env python
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk
@@ -221,7 +221,7 @@ To convert an SVG image to PNG/JPEG/PDF, you can use the CLI or SDKs of the lang
 </code></pre>
 </div>
 <div class="tab golang-tab">
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	// Converting an SVG image to PNG/JPEG/PDF
 
 	package main

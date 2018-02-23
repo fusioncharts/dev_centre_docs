@@ -215,7 +215,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-5.png)
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-6.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/0dwyegdw/ "@@open-newtab") to edit the above chart.
 
@@ -267,7 +267,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-6.png)
+![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-7.png)
 
 Click [here](http://jsfiddle.net/fusioncharts/mgkhxywt/ "@@open-newtab") to edit the above chart.
 

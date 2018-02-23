@@ -140,7 +140,7 @@ Given below is a brief description of the JavaScript API methods used to update 
 </table>
 
 
-<p class="text-info">You can call the JavaScript APIs of a chart only after it has rendered.</p>
+> You can call the JavaScript APIs of a chart only after it has rendered.</p>
 
 ### Retrieving Data from the Gauge
 

@@ -8,7 +8,7 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
+* [Creating a simple chart using FusionCharts Suite XT]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart "@@open-newtab")
 
 * [Installing the React-FusionCharts Component](/using-with-javascript-libraries/reactjs/introduction)
 
@@ -246,7 +246,7 @@ ReactDOM.render(
 
 ```
 
-<p class="text-info">
+> 
 To know how a multi-series line chart can be created using the conventional JSON code, click [here](http://www.fusioncharts.com/dev/usage-guide/chart-guide/multi-series-charts/creating-multi-series-charts.html#creating-a-multi-series-line-2d-chart).
 </p>
 
