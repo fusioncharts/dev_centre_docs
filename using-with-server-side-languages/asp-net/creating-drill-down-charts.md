@@ -154,4 +154,4 @@ The data structure that goes into the code behind **../DrillDownExample/Default.
 </div>
 </div>
 
-> To read on how drill-down charts are created, click [here](/advanced-charting/drill-down/simple-drill-down).
+> To read on how drill-down charts are created, click [here]({% site.baseurl %}/chart-guide/chart-configurations/drill-down "@@open-newtab").

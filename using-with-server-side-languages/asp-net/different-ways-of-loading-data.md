@@ -10,13 +10,13 @@ chartPresent: true
 
 The FusionCharts ASP.NET wrapper lets you load data for a chart using:
 
-* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data#using-a-json-string" class="smoth-scroll">a JSON string generated from a 2D array</a>
+* a JSON string generated from a 2D array
 
-* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data#using-a-xml-string" class="smoth-scroll">an XML string generated from a 2D array</a>
+* an XML string generated from a 2D array
 
-* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data#loading-json-data-from-a-file" class="smoth-scroll">JSON URL of a file that contains chart data</a>
+* JSON URL of a file that contains chart data
 
-* <a href="/using-with-server-side-languages/asp-net/different-ways-of-loading-data#loading-xml-data-from-a-file" class="smoth-scroll">XML URL of a file that contains chart data</a>
+* XML URL of a file that contains chart data
 
 In this section, you will be shown how the ASP.NET wrapper uses each of these methods to generate charts.
 
@@ -399,9 +399,9 @@ The data structure that goes into the code behind **../ArrayExample/MultiSeriesJ
 </div>
 </div>
 
-To know more about the attributes that you can configure for the multi-series line chart, visit [this page](/chart-attributes?chart=msline).
+To know more about the attributes that you can configure for the multi-series line chart, visit [this page]({% site.baseurl %}/chart-attributes?chart=msline "@@open-newtab").
 
-### Using a XML String
+### Using an XML String
 
 A combination chart that shows the quarterly sales details—the revenue generated and the units sold—for product A is shown below:
 
@@ -692,9 +692,7 @@ The data structure that goes into the code behind **../ArrayExample/CombinationX
 </div>
 </div>
 
-To know more about the attributes that you can configure for the multi-series combination dual-y 2D chart, visit [this page](/chart-attributes?chart=mscombidy2d).
-
-## Loading Chart Data from a File
+To know more about the attributes that you can configure for the multi-series combination dual-y 2D chart, visit [this page]({% site.baseurl %}/chart-attributes?chart=mscombidy2d "@@open-newtab").
 
 ### Loading JSON Data from a File
 
@@ -844,7 +842,7 @@ The data structure that goes into the code behind **../BasicExample/JSONURL.aspx
 </div>
 
 
-To know more about the attributes that you can configure for the column 3D chart, visit [this page](/chart-attributes?chart=column3d).
+To know more about the attributes that you can configure for the column 3D chart, visit [this page]({% site.baseurl %}/chart-attributes?chart=column3d "@@open-newtab").
 
 ### Loading XML Data from a File
 
@@ -994,7 +992,7 @@ The data structure that goes into the code behind **../BasicExample/XMLURL.aspx.
 </div>
 </div>
 
-To know more about the attributes that you can configure for the angular gauge, visit [this page](/chart-attributes?chart=angulargauge).
+To know more about the attributes that you can configure for the angular gauge, visit [this page]({% site.baseurl %}/chart-attributes?chart=angulargauge "@@open-newtab").
 
 ## Important Tips for Developers
 
@@ -1002,26 +1000,18 @@ Given below are a few tips that, although applicable while using FusionCharts, n
 
 * The structure of chart data is different based on whether you are rendering a single-series chart or a multi-series chart. The table below shows the difference:
 
-<table>
-  <tr>
-    <td><strong>Single-series Chart</strong></td>
-  </tr>
-  <tr>
+**Single-series Chart**
+  
 {% embed_data using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-5.js %}
+
 For an example, click [here](/chart-guide/standard-charts/creating-standard-charts).
-    </td>
-  </tr>
-  <tr>
-    <td><strong>Multi-series Chart</strong></td>
-  </tr>
-  <tr>
+
+**Multi-series Chart**
+
 {% embed_data using-with-server-side-languages-asp-net-different-ways-of-loading-data-example-6.js %}
+
 For an example, click [here](/chart-guide/multi-series-charts/creating-multi-series-charts).
-    </td>
-  </tr>
-</table>
-
-
+  
 * Make sure that the XML strings are escaped properly, especially for instances where the data for the chart is enclosed in quotation marks. Also make sure that the entire string is enclosed in single quotes, while the attributes and corresponding values are enclosed in double quotes. Doing otherwise will break the code.
 
 * The chart ID should be unique for all charts rendered on the same page. Otherwise, it will result in a JavaScript error.
