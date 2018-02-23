@@ -14,7 +14,7 @@ This section showcases how you can do this using the FusionCharts Ruby on Rails 
 
 As an example, in this section, you will be shown how you can create a drill-down chart by fetching the required data from a database.
 
->  Before you proceed, make sure you have [installed and set up the plugin]({% site.baseurl %}/using-with-server-side-languages/ruby-on-rails/introduction "@@open-newtab") correctly. </p>
+>  Before you proceed, make sure you have [installed and set up the plugin]({% site.baseurl %}/using-with-server-side-languages/ruby-on-rails/introduction "@@open-newtab") correctly.
 
 ## Creating a Drill-down Chart
 

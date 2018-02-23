@@ -10,18 +10,18 @@ chartPresent: true
 
 The FusionCharts JSP wrapper lets you load data for a chart using:
 
-* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data#loading-data-from-a-static-json-string" class="smoth-scroll">a static JSON string</a>
+* a static JSON string
 
-* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data#loading-data-from-a-static-xml-string" class="smoth-scroll">a static XML string</a>
+* a static XML string
 
-* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data#loading-data-from-a-json-string-generated-from-an-associative-array" class="smoth-scroll">a JSON string generated from an associative array</a>
+* a JSON string generated from an associative array
 
-* <a href="/using-with-server-side-languages/java/different-ways-of-loading-data#loading-data-from-an-xml-string-generated-from-an-associative-array" class="smoth-scroll">an XML string generated from an associative array</a>
+* an XML string generated from an associative array
 
-> Before you proceed, make sure you have <a href="/using-with-server-side-languages/java/introduction.html" target="_blank">installed and set up the plugin </a> correctly.</p>
+> Before you proceed, make sure you have [installed and set up the plugin]({% site.baseurl %}/using-with-server-side-languages/java/introduction "@@open-newtab") correctly.
 
 In this section, you will be shown how the FusionCharts JSP wrapper uses each of these methods to render charts.
->  There are two more ways for loading data—using the JSON URL and using the XML URL. These methods are similar to using static strings. The only difference is that chart data is loaded from an external `.json` or `.xml` file. The URL of the file is passed as the value for the `data source` parameter of the constructor. In case of JSON data, `jsonurl` is passed as the value for the `data format` parameter; for XML data, it is `xmlurl`.</p>
+>  There are two more ways for loading data—using the JSON URL and using the XML URL. These methods are similar to using static strings. The only difference is that chart data is loaded from an external `.json` or `.xml` file. The URL of the file is passed as the value for the `data source` parameter of the constructor. In case of JSON data, `jsonurl` is passed as the value for the `data format` parameter; for XML data, it is `xmlurl`.
 
 ## Loading Data from a Static JSON String
 

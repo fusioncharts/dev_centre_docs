@@ -12,12 +12,7 @@ In addition to directly specifying the chart data (or the URL for the file in wh
 
 This section showcases how you can do this using the FusionCharts Django wrapper.
 
-In this section, you will be shown how you can:
-
-* <a href="/using-with-server-side-languages/django/creating-charts-with-data-from-a-database#creating-a-simple-column-chart" class="smoth-scroll">Create a simple column chart</a>
-* <a href="/using-with-server-side-languages/django/creating-charts-with-data-from-a-database#creating-a-drill-down-chart" class="smoth-scroll">Create a drill-down chart</a>
-
-> Before you proceed, make sure you have <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper.html" target="_blank">installed and set up the plugin </a> correctly.</p>
+> Before you proceed, make sure you have [installed and set up the plugin]({% site.baseurl %}/using-with-server-side-languages/django/introduction-to-the-django-wrapper "@@open-newtab") correctly.
 
 
 ## Creating a simple Column Chart
