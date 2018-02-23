@@ -84,7 +84,7 @@ The following example converts the table shown to a multi-series column chart:
     </tbody>
 </table>
 
-<div id="chart-container"></div>
+<div class="chart-example" id="chart-container"></div>
 
 <input style="margin: 10px 10px 10px 0;" type="button" id="convert" value="Create chart from table" />
 
