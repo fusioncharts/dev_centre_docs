@@ -12,15 +12,7 @@ In addition to directly specifying the chart data (or the URL for the file in wh
 
 This section showcases how you can do this using the FusionCharts PHP wrapper.
 
-In this section, you will be shown how you can:
-
-* <a href="/using-with-server-side-languages/php/creating-charts-with-data-from-a-database#creating-a-column-2d-chart" class="smoth-scroll">Create a simple column 2D chart by fetching data from a database</a>
-
-* <a href="/using-with-server-side-languages/php/creating-charts-with-data-from-a-database#creating-drill-down-charts" class="smoth-scroll">Create a drill-down chart by fetching data from a database</a>
-
-* <a href="/using-with-server-side-languages/php/creating-charts-with-data-from-a-database#create-a-multi-series-2d-single-y-combination-chart" class="smoth-scroll">Create a multi-series combination chart by fetching data from a database</a>
-
-> Before you proceed, make sure you have <a href="/using-with-server-side-languages/php/introduction.html" target="_blank">installed and set up the plugin </a> correctly. Although you can create all kinds of charts using this method, in this section we will focus on only these two examples.</p>
+> Before you proceed, make sure you have [ installed and set up the plugin correctly]({% site.baseurl %}/using-with-server-side-languages/php/introduction "@@open-newtab"). Although you can create all kinds of charts using this method, in this section we will focus on only these two examples.
 
 
 ## Creating a Column 2D Chart
@@ -35,7 +27,7 @@ The column 2D chart that we need to render here looks like this:
 
 The data structure needed to render this chart is given below:
 
-```php
+```html
 <?php
 
 /* Include the `fusioncharts.php` file that contains functions	to embed the charts. */
