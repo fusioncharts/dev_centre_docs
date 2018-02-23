@@ -8,7 +8,7 @@ chartPresent: true
 
 Angular is a front-end Javascript based framework. FusionCharts Suite XT comes with an Angular binding, using the angular4-fusioncharts component, that allows rendering interactive charts in Angular4 applications. 
 
-So far, we’ve seen how you can <a href="/using-with-javascript-libraries/angular4/creating-charts-using-the-fusioncharts-angular4-component.html">create a simple chart</a> using the angular4-fusioncharts component as well as how you can <a href="/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4.html">add advanced configurations</a> to your charts. In this article, we'll learn how to use the angular4-fusioncharts component to include interactivity in your charts.
+So far, we’ve seen how you can [create a simple chart]({% site.baseurl %}/using-with-javascript-libraries/angular4/creating-charts-using-the-fusioncharts-angular4-component "@@open-newtab") using the angular4-fusioncharts component as well as how you can [add advanced configurations]({% site.baseurl %}/using-with-javascript-libraries/angular4/configuring-advanced-features-using-angular4 "@@open-newtab") to your charts. In this article, we'll learn how to use the angular4-fusioncharts component to include interactivity in your charts.
 
 Let’s say Harry has a dashboard with a pie2d and a column2d chart to plot sales data. The pie 2D chart plots collective sales for the retail and wholesale stores; the column 2D chart plots sales for individual stores. Harry wants his charts to be interactive in a way that when the pie slice representing retail stores is clicked, the column 2D chart shows data only for all retail stores, and likewise for the wholesale stores.
 
