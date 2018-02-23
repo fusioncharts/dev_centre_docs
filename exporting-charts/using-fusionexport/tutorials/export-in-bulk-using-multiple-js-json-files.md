@@ -10,16 +10,16 @@ How about, instead of exporting a single chart at a time, you could export multi
 Exporting charts in bulk is now easier than ever. In a JSON file, save the configurations of all the charts to be exported in an array. That means, each element in the array should hold one single chart's configuration.
 The file structure of such a JSON file will look as shown below:
 
-<pre><code class="language-json">
-	[
-		{
-			// first chart config
-		},
-		{
-			// second chart config
-		}
-	]
-</code></pre>
+```
+[
+	{
+		// first chart config
+	},
+	{
+		// second chart config
+	}
+]
+```
 
 To export charts in bulk, you can use the CLI or SDKs of the languages mentioned below, using the command given below:
 

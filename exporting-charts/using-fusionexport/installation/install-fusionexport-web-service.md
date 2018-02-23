@@ -66,6 +66,6 @@ $ PORT=8080 npm start
 $ npm run log:listen
 ```
 
-Click <a href="/exporting-charts/using-fusionexport/fusionexport-web-service-api-reference.html">here</a> for more information on the configuration and API for the FusionExport web service.
+Click [here]({% site.baseurl %}/exporting-charts/using-fusionexport/fusionexport-web-service-api-reference "@@open-newtab") for more information on the configuration and API for the FusionExport web service.
 
-Once you are done with the installation, to use FusionExport Web Service you also need to install the <a href="/exporting-charts/using-fusionexport/installation/install-fusionexport-cli.html">CLI</a>.
+Once you are done with the installation, to use FusionExport Web Service you also need to install the [CLI]({% site.baseurl %}/exporting-charts/using-fusionexport/cli-reference "@@open-newtab").
