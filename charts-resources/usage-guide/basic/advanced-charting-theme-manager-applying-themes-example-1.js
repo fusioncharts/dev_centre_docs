@@ -52,7 +52,7 @@
         }]
     },
     events: {
-        'beforeRender': function(evt, args) {
+        '_beforeRender': function(evt, args) {
             var scriptElem;
             function handleLoad() {
                 evt.sender.setChartAttribute('theme', 'carbon');

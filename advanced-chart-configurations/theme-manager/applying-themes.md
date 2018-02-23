@@ -32,7 +32,8 @@ This article describes how you can include and apply themes for your charts.
 To apply a theme to your chart, you need to include its corresponding JavaScript file in your web page.
 
 The code snippet below shows how you can do this:
-```javascript
+
+```html
 <script type="text/javascript" src="js/fusioncharts.js"></script>
 <script type="text/javascript" src="js/themes/fusioncharts.theme.carbon.js"></script>
 ```
