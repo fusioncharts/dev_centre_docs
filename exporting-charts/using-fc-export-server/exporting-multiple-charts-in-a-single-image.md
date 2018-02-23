@@ -12,9 +12,9 @@ Starting version 3.11.0, FusionCharts Suite XT lets you export all charts on a p
 
 This article explains how you can:
 
-* <a href="/exporting-charts/exporting-multiple-charts-in-a-single-image#exporting-multiple-charts-at-once-and-customizing-the-exported-charts" class="smoth-scroll">Export multiple charts at once and customize them</a>
+* Export multiple charts at once and customize them<
 
-* <a href="/exporting-charts/exporting-multiple-charts-in-a-single-image#selectively-exporting-charts" class="smoth-scroll">Selectively export charts</a>
+* Selectively export charts<
 
 ## Exporting Multiple Charts at Once and Customizing the Exported Charts
 

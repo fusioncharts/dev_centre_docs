@@ -1,5 +1,4 @@
 {
-
     type: 'boxandwhisker2d',
     renderAt: 'chart-container',
     width: '550',
@@ -15,10 +14,10 @@
             "theme": "fint",
             "showValues": "1",
             "showMD": "1",
-            "mdIconRadius": "5"
-            "mdIconSides": "5"
+            "mdIconRadius": "5",
+            "mdIconSides": "5",
             //"mdIconShape": "triangle"
-            "mdIconColor": "ff0000"
+            "mdIconColor": "ff0000",
             "mdIconAlpha": "70"
         },
         "categories": [{
