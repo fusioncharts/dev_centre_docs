@@ -37,40 +37,32 @@ The code snippet below shows how you can do this:
 <script type="text/javascript" src="js/themes/fusioncharts.theme.carbon.js"></script>
 ```
 
-> 
-The installation routine of a theme relies on the code in the `fusioncharts.js` file. Therefore, make sure that this file is always included before the JavaScript file for the theme.
-</p>
+> The installation routine of a theme relies on the code in the `fusioncharts.js` file. Therefore, make sure that this file is always included before the JavaScript file for the theme.
 
 Once you have included the theme file, the theme can be applied using the:
 
 * `theme` attribute of the `chart` object  (in the JSON chart data)
-                                    OR
+
 * `setChartAttribute()` method of the FusionCharts API (in the JSON chart data)
 
 ## Using the `theme` Attribute
+
 The following code snippet demonstrates the use of the `theme` attribute for applying a theme:
+
 ```javascript
 {
     chart: {
         "theme": "carbon", //Set the value of the `theme` attribute to the name of the required theme
         ...
-    },
-    ...
-    ...
+    }
 }
 ```
 
 A column 2D chart configured using the __carbon__ theme is shown below:
 
-{% embed_chart advanced-charting-theme-manager-applying-themes-example-1.js %}
+{% embed_all advanced-charting-theme-manager-applying-themes-example-1.js %}
 
-The complete data structure needed to render this chart is given below:
-
-{% embed_data advanced-charting-theme-manager-applying-themes-example-1.js %}
-
-> 
-If you are using the XML data format for the chart, you can use the `theme` attribute within the `<chart>` element. For example, `<chart theme=”carbon”>`
-</p>
+> If you are using the XML data format for the chart, you can use the `theme` attribute within the `<chart>` element. For example, `<chart theme=”carbon”>`
 
 ## Using the `setChartAttribute()` API Method
 
