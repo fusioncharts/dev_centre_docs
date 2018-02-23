@@ -37,4 +37,4 @@ Salient features of the drag-node chart include:
 
 Here is a sample for Dragnode chart :
 
-{% embed_all {"source": "chart-guide-drag-node-chart-introduction-example.js", "id": "1"} %}
+{% embed_all chart-guide-drag-node-chart-introduction-example.js %}

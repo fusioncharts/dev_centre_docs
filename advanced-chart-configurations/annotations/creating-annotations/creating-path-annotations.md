@@ -6,14 +6,6 @@ heading: Creating Path Annotations
 chartPresent: true
 ---
 
-## Prerequisites
-
-* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
-
-* [Introduction to annotations](/advanced-charting/annotations/introduction)
-
-* [Creating simple annotations](/advanced-charting/annotations/creating-annotations/introduction)
-
 The path annotation lets you draw free-form graphic elements on your charts.
 
 Take a look at the spline chart shown below:

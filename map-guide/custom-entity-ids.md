@@ -8,7 +8,7 @@ chartPresent: true
 
 All maps in FusionCharts Suite XT have pre defined unique internal IDs to reference each entity. Based on your use case you might want to name these entities differently. You can solve this problem by creating custom IDs for entities on a map. Apart from re-defining identities, you can also re-define the short name and long name of each identity, and use these as the label or tooltip of the map.
 
-Let's work with a simple example of population map by continents. The table below shows the population numbers for the different continents. It also has columns for the "FusionCharts Internal ID" for each continent and a custom defined Desired ID.
+Let's work with a simple example of population map by continents. The table below shows the population numbers for the different continents. It also has columns for the "FusionCharts Internal ID" for each continent and a custom defined Desired ID.
 
 <table>
   <tr>
@@ -68,7 +68,7 @@ With the newly defined custom entity IDs, the map looks like this:
 
 {% embed_chart map-guide-custom-entity-ids.js %}
 
-> When defining new IDs for different entities on the map, ensure that you're referring to the right original internal ID. Also ensure that the redefined entity IDs are unique.</p>
+> When defining new IDs for different entities on the map, ensure that you're referring to the right original internal ID. Also ensure that the redefined entity IDs are unique.
 
 The full HTML code to build the example is shown here
 
