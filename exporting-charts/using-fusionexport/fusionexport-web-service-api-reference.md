@@ -10,7 +10,7 @@ FusionExport Web Service fires an HTTP server to export images and data. The web
 
 ## Installation
 
-Please follow the installation guide <a href="/exporting-charts/using-fusionexport/installation/install-fusionexport-web-service.html">here</a>.
+Please follow the installation guide [here]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-web-service "@@open-newtab").
 
 ## API Endpoint Reference
 
@@ -46,22 +46,13 @@ Description | Does the export processing and returns the required files back to 
   	<td>files.zip</td>
   	<td>Template, callback, and resource files sent as zip.
   	__Example:__
-  	resources/
-├── images/
-│ ├── owl.jpg
-│ ├── meow.png
-├── stylesheets/
-│ ├── bootstrap.css
-│ └── bootstrap.min.css
-├── javascripts/
-│ ├── bootstrap.js
-│ └── bootstrap.min.js
-├── fonts/
-│ ├── glyphicons-halflings-regular.eot
-│ └── glyphicons-halflings-regular.woff
-├── template.html
-└── callbacks.js
-</td>
+    </br>
+  	resources -> images -> owl.jpg, meow.png </br>
+    resources -> stylesheets -> bootstrap.css, bootstrap.min.css </br>
+    resources -> javascripts -> bootstrap.js, bootstrap.min.js </br>
+    resources -> fonts -> glyphicons-halflings-regular.eot, glyphicons-halflings-regular.woff</br>
+    resources -> template.html, callbacks.js
+    </td>
   </tr>
   <tr>
   	<td>`parameters`</td>
