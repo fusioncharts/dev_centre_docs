@@ -92,7 +92,7 @@ The data structure that goes into the **JSONURL.aspx.cs** file is given below:
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	using System;
 	using System.Collections;
 	using System.Configuration;
@@ -125,7 +125,7 @@ The data structure that goes into the **JSONURL.aspx.cs** file is given below:
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
 	Imports System.Collections
 	Imports System.Configuration
 	Imports System.Data

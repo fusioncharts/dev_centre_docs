@@ -40,11 +40,11 @@ To export charts in bulk, you can use the CLI or SDKs of the languages mentioned
 <div>The CLI will find the common path for all the files, use that as a reference, and create a similar folder structure that is easily recognizable.</div>
 <div>In case of files containing more than one chart config, it will create a folder named after that filename and put all the exported images in it.</div>
 <p><strong>To do a bulk export, run the command given below:</strong></p>
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	$ fe -c 'uat/resources/charts/file_1.json uat/resources/charts/file_2.json uat/resources/charts/sub_1/* uat/resources/charts/sub_2/*'}
 </code></pre>
 <p><strong>The above command, when executed, will create a folder structure as follows:</strong></p>
-<pre><code class="language-text">
+<pre><code class="custom-hlc language-text">
 	fusioncharts_export
 	  sub_1
 	    mul_1
@@ -60,7 +60,7 @@ To export charts in bulk, you can use the CLI or SDKs of the languages mentioned
 </code></pre>
 </div>
 <div class="tab nodejs-tab">
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	const fs = require('fs');
 	const path = require('path');
 	// require fusionexport
@@ -95,7 +95,7 @@ To export charts in bulk, you can use the CLI or SDKs of the languages mentioned
 </code></pre>
 </div>
 <div class="tab java-tab">
-<pre><code class="language-java">
+<pre><code class="custom-hlc language-java">
 	import java.io.ByteArrayOutputStream;
 	import java.io.File;
 	import java.io.FileInputStream;
@@ -147,7 +147,7 @@ To export charts in bulk, you can use the CLI or SDKs of the languages mentioned
 </code></pre>
 </div>
 <div class="tab csharp-tab">
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	using System;
 	using System.IO;
 	using FusionCharts.FusionExport.Client; // Import sdk
@@ -190,7 +190,7 @@ To export charts in bulk, you can use the CLI or SDKs of the languages mentioned
 </code></pre>
 </div>
 <div class="tab php-tab">
-<pre><code class="language-php">
+<pre><code class="custom-hlc language-php">
 	<?php
 
 	// Export in Bulk
@@ -230,7 +230,7 @@ To export charts in bulk, you can use the CLI or SDKs of the languages mentioned
 </code></pre>
 </div>
 <div class="tab python-tab">
-<pre><code class="language-python">
+<pre><code class="custom-hlc language-python">
 	#!/usr/bin/env python
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk
@@ -268,7 +268,7 @@ To export charts in bulk, you can use the CLI or SDKs of the languages mentioned
 </code></pre>
 </div>
 <div class="tab golang-tab">
-<pre><code class="language-go">
+<pre><code class="custom-hlc language-go">
 	// Export in Bulk
 
 	package main

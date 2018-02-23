@@ -41,7 +41,7 @@ The data structure that goes into the **../ArrayExample/MultiSeriesJSON.aspx** f
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;MultiSeriesJSON.aspx.cs&quot; Inherits=&quot;ArrayExample_Default&quot; %&gt;
 
     &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
@@ -64,7 +64,7 @@ The data structure that goes into the **../ArrayExample/MultiSeriesJSON.aspx** f
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-cv">
+<pre><code class="custom-hlc language-cv">
 	&lt;%@ Page Language=&quot;VB&quot; AutoEventWireup=&quot;false&quot; CodeFile=&quot;MultiSeriesJSON.aspx.vb&quot; Inherits=&quot;Samples_ArrayExample_MultiSeriesJSON&quot; %&gt;
 
     &lt;!DOCTYPE html&gt;
@@ -97,7 +97,7 @@ The data structure that goes into the code behind **../ArrayExample/MultiSeriesJ
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
     using System;
     using System.Collections;
     using System.Configuration;
@@ -285,7 +285,7 @@ The data structure that goes into the code behind **../ArrayExample/MultiSeriesJ
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
 	Imports System.Collections
     Imports System.Configuration
     Imports System.Data
@@ -418,7 +418,7 @@ The data structure that goes into the **../ArrayExample/CombinationXML.aspx** fi
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;CombinationXML.aspx.cs&quot; Inherits=&quot;ArrayExample_Combination&quot; %&gt;
 
     &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
@@ -441,7 +441,7 @@ The data structure that goes into the **../ArrayExample/CombinationXML.aspx** fi
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
 	&lt;%@ Page Language=&quot;VB&quot; AutoEventWireup=&quot;false&quot; CodeFile=&quot;CombinationXML.aspx.vb&quot; Inherits=&quot;Samples_ArrayExample_CombinationXML&quot; %&gt;
 
 	&lt;!DOCTYPE html&gt;
@@ -476,7 +476,7 @@ The data structure that goes into the code behind **../ArrayExample/CombinationX
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	using System;
     using System.Data;
     using System.Configuration;
@@ -598,7 +598,7 @@ The data structure that goes into the code behind **../ArrayExample/CombinationX
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
 	  Imports System.Data
       Imports System.Configuration
       Imports System.Collections
@@ -711,7 +711,7 @@ The data structure that goes into the **../BasicExample/JSONURL.aspx** file is g
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;JSONUrl.aspx.cs&quot; Inherits=&quot;BasicExample_BasicChart&quot; %&gt;
 
 	&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
@@ -734,7 +734,7 @@ The data structure that goes into the **../BasicExample/JSONURL.aspx** file is g
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
 	&lt;%@ Page Language=&quot;VB&quot; AutoEventWireup=&quot;false&quot; CodeFile=&quot;JSON_URL.aspx.vb&quot; Inherits=&quot;Samples_BasicExamples_JSON_URL&quot; %&gt;
 
       &lt;!DOCTYPE html&gt;
@@ -770,7 +770,7 @@ The data structure that goes into the code behind **../BasicExample/JSONURL.aspx
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	using System;
     using System.Collections;
     using System.Configuration;
@@ -806,7 +806,7 @@ The data structure that goes into the code behind **../BasicExample/JSONURL.aspx
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb"> 
+<pre><code class="custom-hlc language-vb"> 
 	Imports System.Collections
 	Imports System.Configuration
 	Imports System.Data
@@ -861,7 +861,7 @@ The data structure that goes into the **../BasicExample/XMLURL.aspx** file is gi
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;XMLUrl.aspx.cs&quot; Inherits=&quot;BasicExample_BasicChart&quot; %&gt;
 
 	  &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
@@ -884,7 +884,7 @@ The data structure that goes into the **../BasicExample/XMLURL.aspx** file is gi
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
 	&lt;%@ Page Language=&quot;VB&quot; AutoEventWireup=&quot;false&quot; CodeFile=&quot;XML_URL.aspx.vb&quot; Inherits=&quot;Samples_BasicExamples_XML_URL&quot; %&gt;
 
       &lt;!DOCTYPE html&gt;
@@ -919,7 +919,7 @@ The data structure that goes into the code behind **../BasicExample/XMLURL.aspx.
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
     using System;
     using System.Collections;
     using System.Configuration;
@@ -958,7 +958,7 @@ The data structure that goes into the code behind **../BasicExample/XMLURL.aspx.
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
 	Imports System.Collections
 	Imports System.Configuration
 	Imports System.Data

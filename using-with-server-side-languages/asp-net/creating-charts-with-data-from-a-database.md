@@ -32,7 +32,7 @@ The data structure that goes into the **../DBExample/MSCharts.aspx** file is giv
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;MSCharts.aspx.cs&quot; Inherits=&quot;DBExample_MSCharts&quot; %&gt;
 
 	&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
@@ -55,7 +55,7 @@ The data structure that goes into the **../DBExample/MSCharts.aspx** file is giv
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
 	&lt;%@ Page Language=&quot;VB&quot; AutoEventWireup=&quot;false&quot; CodeFile=&quot;index.aspx.vb&quot; Inherits=&quot;Samples_DBExample_index&quot; %&gt;
 
 	&lt;!DOCTYPE html&gt;
@@ -88,7 +88,7 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
   using System;
   using System.Collections;
   using System.Configuration;
@@ -213,7 +213,7 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
     Imports System.Collections
     Imports System.Configuration
     Imports System.Data

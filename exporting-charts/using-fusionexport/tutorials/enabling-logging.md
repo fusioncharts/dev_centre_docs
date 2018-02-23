@@ -21,7 +21,7 @@ Refer to the example below:
 
 <div class="tab-content">
     <div class="tab cli-tab active">
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	$ fe -c multiple_charts_config.json -d uat/ -f test.log -l 5
 </code></pre>
 </div>

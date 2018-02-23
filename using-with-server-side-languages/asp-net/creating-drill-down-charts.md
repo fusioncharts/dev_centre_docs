@@ -29,7 +29,7 @@ The data structure that goes into the **../DrillDownExample/Default.aspx** file 
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;Default.aspx.cs&quot; Inherits=&quot;DB_DrillDown_Default&quot; %&gt;
 
 	&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
@@ -52,7 +52,7 @@ The data structure that goes into the **../DrillDownExample/Default.aspx** file 
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
 	&lt;%@ Page Language=&quot;VB&quot; AutoEventWireup=&quot;false&quot; CodeFile=&quot;Default.aspx.vb&quot; Inherits=&quot;Samples_DrillDownExample_Default&quot; %&gt;
 
 	&lt;!DOCTYPE html&gt;
@@ -87,7 +87,7 @@ The data structure that goes into the code behind **../DrillDownExample/Default.
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	using System;
 	using System.Collections;
 	using System.Configuration;
@@ -119,7 +119,7 @@ The data structure that goes into the code behind **../DrillDownExample/Default.
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
 	Imports System.Collections
     Imports System.Configuration
     Imports System.Data
