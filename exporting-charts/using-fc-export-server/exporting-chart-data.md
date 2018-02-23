@@ -18,6 +18,6 @@ A column 2D chart with export enabled is shown below. Click the ![image]({% site
 
 {% embed_all exporting-as-image-and-pdf-introduction-example-1.js %}
 
->   To export a chart in the XLS format using server-side exporting, it is mandatory that the exporting server has the latest code, which is available in the FusionCharts package. Alternatively, the FusionCharts export link, [export.api3.fusioncharts.com](export.api3.fusioncharts.com), can also be used. For client-side exporting, the exporting chart data feature is supported only by modern browsers with canvas support (except Safari and IE9). </p>
+> To export a chart in the XLS format using server-side exporting, it is mandatory that the exporting server has the latest code, which is available in the FusionCharts package. Alternatively, the FusionCharts export link, `export.api3.fusioncharts.com`, can also be used. For client-side exporting, the exporting chart data feature is supported only by modern browsers with canvas support (except Safari and IE9).
 
->  To process the export data on your own server, you can configure one of the export handlers by following the [Setup Private Export Server](/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net) guide. </p>
+> To process the export data on your own server, you can configure one of the export handlers by following the [Setup Private Export Server](/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net) guide.
