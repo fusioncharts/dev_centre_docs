@@ -8,9 +8,9 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
+* [Creating a simple chart using FusionCharts Suite XT]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart "@@open-newtab")
 
-* [Installing the Angular-FusionCharts directive](/using-with-javascript-libraries/angularjs/introduction)
+* [Installing the Angular-FusionCharts directive]({% site.baseurl %}/using-with-javascript-libraries/angularjs/introduction "@@open-newtab")
 
 The Angular-FusionCharts directive uses the `fusioncharts` directive to create and configure charts using AngularJS.
 
@@ -91,7 +91,7 @@ As an example, take a look at how a multi-series line chart, shown below, to com
 
 {% embed_chart using-with-javascript-libraries-angularjs-creating-charts-using-the-angular-fusioncharts-plugin-example-2.js %}
 
->  To know how a multi-series line chart can be created using conventional JSON code and a description of the data structure used, click [here](/chart-guide/multi-series-charts/creating-multi-series-charts).</p>
+>  To know how a multi-series line chart can be created using conventional JSON code and a description of the data structure used, click [here]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts "@@open-newtab").</p>
 
 The HTML code for this chart is given below:
 

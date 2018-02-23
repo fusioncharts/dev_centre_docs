@@ -46,7 +46,7 @@ Add a `<div>` HTML container element, which will be used to render the chart, as
 
 ### Step 3: Define the Chart Configuration
 
-As shown in the code below, in your JavaScript code, define an object that contains the configuration for a FusionCharts Suite XT chart. Set the chart data source using the regular [FusionCharts JSON format](/getting-started/building-your-first-chart).
+As shown in the code below, in your JavaScript code, define an object that contains the configuration for a FusionCharts Suite XT chart. Set the chart data source using the regular [FusionCharts JSON format]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart "@@open-newtab").
 
 ```html
 

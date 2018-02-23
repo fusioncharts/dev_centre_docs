@@ -8,21 +8,13 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
+* [Creating a simple chart using FusionCharts Suite XT]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart "@@open-newtab")
 
-* [Installing the Angular-FusionCharts directive](/using-with-javascript-libraries/angularjs/introduction)
+* [Installing the Angular-FusionCharts directive]({% site.baseurl %}/using-with-javascript-libraries/angularjs/introduction "@@open-newtab")
 
-* [Creating charts using the Angular-FusionCharts directive](/using-with-javascript-libraries/angularjs/creating-charts-using-the-angular-fusioncharts-directive)
+* [Creating charts using the Angular-FusionCharts directive]({% site.baseurl %}/using-with-javascript-libraries/angularjs/creating-charts-using-the-angular-fusioncharts-directive "@@open-newtab")
 
 Once a chart is created using the Angular-FusionCharts directive, the scope object can be used to update the chart dynamically.
-
-This articles describes how you can use the scope object to:
-
-* <a href="/using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object#updating-the-chart-data-dynamically" class="smoth-scroll">Update the chart data dynamically</a>
-
-* <a href="/using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object#updating-the-chart-attributes-dynamically" class="smoth-scroll">Update the chart attributes dynamically</a>
-
-* <a href="/using-with-javascript-libraries/angularjs/configuring-charts-using-the-angularjs-scope-object#trigger-scope-events-from-the-chart" class="smoth-scroll">Trigger scope events</a>
 
 ## Updating the Chart Data Dynamically
 
@@ -138,7 +130,7 @@ $scope.rightAlignCaption = function() {
 
 ```
 
-> For a list of other chart attributes that you can update for a column 2D chart, click [here](/chart-attributes?chart=column2d).</p>
+> For a list of other chart attributes that you can update for a column 2D chart, click [here]({% site.baseurl %}/chart-attributes?chart=column2d "@@open-newtab").
 
 ## Trigger Scope Events from the Chart
 

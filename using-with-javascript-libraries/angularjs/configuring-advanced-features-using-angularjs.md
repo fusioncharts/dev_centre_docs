@@ -8,19 +8,13 @@ chartPresent: true
 
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
+* [Creating a simple chart using FusionCharts Suite XT]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart "@@open-newtab")
 
-* [Installing the Angular-FusionCharts directive](/using-with-javascript-libraries/angularjs/introduction)
+* [Installing the Angular-FusionCharts directive]({% site.baseurl %}/using-with-javascript-libraries/angularjs/introduction "@@open-newtab")
 
-* [Creating charts using the Angular-FusionCharts directive](/using-with-javascript-libraries/angularjs/creating-charts-using-the-angular-fusioncharts-directive)
+* [Creating charts using the Angular-FusionCharts directive]({% site.baseurl %}/using-with-javascript-libraries/angularjs/creating-charts-using-the-angular-fusioncharts-directive "@@open-newtab")
 
-In addition to an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/) for plotting static and real-time data, FusionCharts Suite XT includes several advanced features that let you add more context to your chart and make data interpretation easy. These features include [annotations](/advanced-charting/annotations/introduction).
-
-This article focuses on how you can use the Angular-FusionCharts directive to add:
-
-* <a href="/using-with-javascript-libraries/angularjs/configuring-advanced-features-using-angularjs#adding-trend-lines-to-a-chart" class="smoth-scroll">Trend-lines</a>
-
-* <a href="/using-with-javascript-libraries/angularjs/configuring-advanced-features-using-angularjs#adding-annotations-to-charts" class="smoth-scroll">Annotations</a>
+In addition to an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/) for plotting static and real-time data, FusionCharts Suite XT includes several advanced features that let you add more context to your chart and make data interpretation easy. These features include [annotations]({% site.baseurl %}/chart-guide/chart-configuration/annotations "@@open-newtab").
 
 ## Adding Trend-lines to a Chart
 
