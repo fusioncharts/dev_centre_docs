@@ -220,7 +220,7 @@ def chart(request):
 
 ```
 
-To know more about the attributes that you can configure for the multi-series column 2D chart, visit [this page]({% site.baseurl %}/chart-attributes.html?chart=mscolumn2d" "@@open-newtab")this page.
+To know more about the attributes that you can configure for the multi-series column 2D chart, visit [this page]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart "@@open-newtab") this page.
 
 
 ## Important Tips for Developers

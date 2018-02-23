@@ -12,9 +12,9 @@ FusionCharts Suite XT includes the FusionCharts server-side ASP.NET wrapper that
 
 In this section, you will be shown how you can create a simple chart using the FusionCharts ASP.NET wrapper.
 
->  The FusionCharts ASP.NET server-side wrapper requires a .NET Framework 3.5 or higher. </p>
+> The FusionCharts ASP.NET server-side wrapper requires a .NET Framework 3.5 or higher.
 
->  Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper/tree/master/DLLFile" target="_blank">__FusionCharts.dll__</a> file in the **Bin** folder of your application. </p>
+> Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper/tree/master/DLLFile" target="_blank">__FusionCharts.dll__</a> file in the **Bin** folder of your application.
 
 ## Creating a Simple Chart using the FusionCharts ASP.NET Wrapper
 
