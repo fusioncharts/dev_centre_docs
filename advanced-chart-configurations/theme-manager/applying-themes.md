@@ -6,11 +6,6 @@ heading: Applying Themes
 chartPresent: true
 ---
 
-<script defer type="text/javascript" src="{{ site.baseurl | append:'assets/fusioncharts/themes/fusioncharts.theme.carbon.js'}}"></script>
-<script defer type="text/javascript" src="{{ site.baseurl | append:'assets/fusioncharts/themes/fusioncharts.theme.ocean.js'}}"></script>
-<script defer type="text/javascript" src="{{ site.baseurl | append:'assets/fusioncharts/themes/fusioncharts.theme.zune.js'}}"></script>
-
-
 FusionCharts Suite XT lets you create theme files to centrally define the cosmetic and functional properties that you want to apply consistently to all charts across your web application. 
 
 The product comes with the following three predefined themes:
@@ -67,6 +62,7 @@ A column 2D chart configured using the __carbon__ theme is shown below:
 ## Using the `setChartAttribute()` API Method
 
 The following code snippet demonstrates the use of the `setChartAttribute()` API method for applying a theme:
+
 ```javascript
 FusionCharts.ready(function () {
     var revenueChart = new FusionCharts({
