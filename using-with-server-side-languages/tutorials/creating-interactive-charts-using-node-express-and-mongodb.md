@@ -17,18 +17,6 @@ There are multiple web frameworks built on top of Node.js leveraging its platfor
 
 In this post we will see how we can create dynamic charts using `ExpressJS` and `MongoDB`. ExpressJS is a minimalistic framework for `Node.js` which is used to create web applications. MongoDB is a NoSQL based data store which stores data in the form of collection of documents where each document is of custom JSON format called `BSON`.
 
-In this section, you will be shown how to:
-
-
-* [Install Node.js](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#installing-nodejs)
-* [Install ExpressJS](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#installing-expressjs)
-* [Install MongoDB](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#installing-mongodb)
-* [Populate data in MongoDB](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#populating-data-in-mongodb)
-* [Create REST API for data retrieval](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#creating-rest-api-for-data-retrieval)
-* [Create views for rendering the chart](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#creating-views-for-rendering-the-chart)
-* [Download source code](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#source-code-download)
-
-
 ## Installing Node.js
 
 Download the relevant Node.js installer for your operating system from <a href="https://nodejs.org/en/download/">here</a> and follow the instructions to install it on your system. For windows the installer will update the Path variable to include the location for the node executable. 
@@ -158,14 +146,14 @@ If you are familiar with Java, you would remember using a MySQL Connector Jar to
 
 Let us develop the REST API by following the steps listed below:
 
-* [Import the express and mongodb packages to be used in the application](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-1--import-the-express-and-mongodb-packages-to-be-used-in-the-application)
-* [Connect to MongoDB instance running locally](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-2--connect-to-mongodb-instance-running-locally)
-* [Implement method to fetch the data from Database](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-3--implement-method-to-fetch-the-data-from-database)
-* [Create express server and REST API end-point](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-4--create-express-server-and-rest-api-end-point)
-* [Launch the express app on a port](/using-with-server-side-languages/tutorials/creating-interactive-charts-using-node-express-and-mongodb.html#step-5--launch-the-express-app-on-some-port)
+* Import the express and mongodb packages to be used in the application.
+* Connect to MongoDB instance running locally.
+* Implement method to fetch the data from Database.
+* Create express server and REST API end-point.
+* Launch the express app on a port.
 
 
-#### Step 1 : Import the Express and Mongodb Packages to be used in the Application
+### Step 1 : Import the Express and Mongodb Packages to be used in the Application
 
 We make use of the require() function to import the required packages by passing the name of the package. 
 
@@ -179,8 +167,7 @@ var mongodb = require("mongodb");
 
 ```
 
-
-#### Step 2 : Connect to MongoDB instance running locally
+### Step 2 : Connect to MongoDB instance running locally
 
 We first have to build the connection url which consists of hostname, port and database name as shown below:
 

@@ -19,10 +19,10 @@ But how do we go about dynamic binding of data? Before we explain that, let us u
 
 In this article we are going to show you how to write server side code in PHP to retrieve the data from MySQL database and bind the data obtained to the chart. We are going to divide this article in two four parts:
 
-* [Installing prerequisite software](/using-with-server-side-languages/tutorials/php-mysql-charts.html#step-1-installing-prerequisite-software)
-* [Creating database and initializing with seed data in MySQL](/using-with-server-side-languages/tutorials/php-mysql-charts.html#step-2-creating-database-and-initializing-with-seed-data-in-mysql)
-* [Implementing PHP based server program](/using-with-server-side-languages/tutorials/php-mysql-charts.html#step-3-implementing-php-based-server-program)
-* [Integrating chart with the data from server](/using-with-server-side-languages/tutorials/php-mysql-charts.html#step-4-integrating-chart-with-the-data-from-server)
+* Installing prerequisite software
+* Creating database and initializing with seed data in MySQL
+* Implementing PHP based server program
+* Integrating chart with the data from server
 
 To demonstrate this let us consider data of [top 10 wicket takers](http://stats.espncricinfo.com/ci/engine/records/bowling/most_wickets_career.html?class=2;id=2015;type=year) in One Day International (ODI) cricket in the year 2015.
 
