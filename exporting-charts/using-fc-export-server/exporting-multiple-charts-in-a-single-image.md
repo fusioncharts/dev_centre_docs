@@ -8,13 +8,13 @@ chartPresent: true
 
 Starting version 3.11.0, FusionCharts Suite XT lets you export all charts on a page in a single image at once, in the __JPG__ and __PNG__ formats. With this, you also have the option of customizing the exported charts for parameters like the width and height of the exported chart, the background color, transparency, and so on.
 
-<p class='text-info'> Multiple charts can be exported at once only in the PNG and JPG formats. </p>
+> Multiple charts can be exported at once only in the PNG and JPG formats.
 
 This article explains how you can:
 
 * Export multiple charts at once and customize them<
 
-* Selectively export charts<
+* Selectively export charts
 
 ## Exporting Multiple Charts at Once and Customizing the Exported Charts
 
