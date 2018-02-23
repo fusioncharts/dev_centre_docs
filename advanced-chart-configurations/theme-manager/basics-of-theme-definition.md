@@ -6,12 +6,7 @@ heading: Basics of Theme Definition
 chartPresent: false
 ---
 
-## Prerequisites
-
-* [Introduction to Themes](/advanced-charting/theme-manager/introduction-to-themes)
-* [Applying Themes](/advanced-charting/theme-manager/applying-themes)
-
-FusionCharts Suite XT  is shipped with a set of predefined themes. Additionally, it also lets you  [modify existing themes](/advanced-charting/theme-manager/modifying-existing-themes). However, before you can start modifying or creating themes, you need to understand the structure of a theme.
+FusionCharts Suite XT  is shipped with a set of predefined themes. Additionally, it also lets you modify existing themes. However, before you can start modifying or creating themes, you need to understand the structure of a theme.
 
 Theme definitions are written using a tier-based structure, where each tier is used to define properties for all/specific chart, gauge, and map types.
 
@@ -19,6 +14,7 @@ This article will walk you through the tier-based structure of  themes, the stru
 
 ## The Tier-based Structure of a Theme
 A partial definition of the __zune__ theme, as contained in the `fusioncharts.theme.zune.js` file, is given below:
+
 ```javascript
 FusionCharts.register('theme', {
     name: 'zune',
@@ -89,8 +85,6 @@ For example, you may want to enable hover effects for only all pie 2D charts in 
 
 To do this, the hover effects properties will have to be restricted to only the pie 2D charts. The tiered structure of themes in FusionCharts Suite XT lets you restrict this scope of theme application This is true for any other chart type that you want to configure.
 
-
-
 A theme definition includes the following types of tiers:
 
 | Tier Name | Description |
@@ -154,4 +148,4 @@ FusionCharts.register('theme', {
     }
 });
 ```
-Now that you have understood how theme definitions work, go ahead and see how you can [modify](/advanced-charting/theme-manager/modifying-existing-themes) on your own.
+Now that you have understood how theme definitions work, go ahead and see how you can modify on your own.

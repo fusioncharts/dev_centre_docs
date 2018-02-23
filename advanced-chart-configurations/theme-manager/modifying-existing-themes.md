@@ -6,19 +6,13 @@ heading: Modifying Existing Themes
 chartPresent: false
 ---
 
-## Prerequisites
-
-* [Introduction to Themes](/advanced-charting/theme-manager/introduction-to-themes)
-* [Applying Themes](/advanced-charting/theme-manager/applying-themes)
-* [Basics of Theme Definition](/advanced-charting/theme-manager/basics-of-theme-definition)
-
 FusionCharts Suite XT is shipped with the following three predefined themes:
 
 * zune
 * ocean
 * carbon
 
-You can choose a theme depending on your aesthetic requirements for the [charts, gauges, and maps](http://www.fusioncharts.com/charts/) in your application. Additionally, FusionCharts Suite XT gives you the option of modifying existing themes or [creating entirely new ones](/advanced-charting/theme-manager/creating-new-themes), if your requirements differ from what is already there.
+You can choose a theme depending on your aesthetic requirements for the [charts, gauges, and maps](http://www.fusioncharts.com/charts/) in your application. Additionally, FusionCharts Suite XT gives you the option of modifying existing themes or creating entirely new ones, if your requirements differ from what is already there.
 
 This article describes how you can modify existing themes.
 
