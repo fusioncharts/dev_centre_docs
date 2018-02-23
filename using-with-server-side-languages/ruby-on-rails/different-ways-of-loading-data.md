@@ -10,15 +10,15 @@ chartPresent: true
 
 The FusionCharts Rails wrapper lets you load data for a chart using:
 
-* <a href="/using-with-server-side-languages/ruby-on-rails/different-ways-of-loading-data#loading-data-from-a-static-json-string" class="smoth-scroll">a static JSON string</a>
+* a static JSON string
 
-* <a href="/using-with-server-side-languages/ruby-on-rails/different-ways-of-loading-data#loading-data-from-a-static-xml-string" class="smoth-scroll">a static XML string</a>
+* a static XML string
 
-* <a href="/using-with-server-side-languages/ruby-on-rails/different-ways-of-loading-data#loading-data-from-a-valid-ruby-hash" class="smoth-scroll">a valid Ruby hash</a>
+* a valid Ruby hash
 
 In this section, you will be shown how the Ruby on Rails wrapper uses each of these methods to generate charts.
 
->  Before you proceed, make sure you have [installed and set up the plugin](/using-with-server-side-languages/ruby-on-rails/introduction) correctly. </p>
+>  Before you proceed, make sure you have [installed and set up the plugin]({% site.baseurl %}/using-with-server-side-languages/ruby-on-rails/introduction "@@open-newtab") correctly.
 
 ## Loading Data from a Static JSON String
 
@@ -107,7 +107,7 @@ def fc_json
 end
 ```
 
-To know more about the attributes that you can configure for the column 2D chart, visit [this page](/chart-attributes?chart=column2d).
+To know more about the attributes that you can configure for the column 2D chart, visit [this page]({% site.baseurl %}/chart-attributes?chart=column2d "@@open-newtab").
 
 ## Loading Data from a Static XML String
 
@@ -221,7 +221,7 @@ def fc_hash
 })
 end
 ```
-To know more about the attributes that you can configure for the multi-series column 2D chart, visit [this page](/chart-attributes?chart=mscolumn2d).
+To know more about the attributes that you can configure for the multi-series column 2D chart, visit [this page]({% site.baseurl %}/chart-attributes?chart=mscolumn2d "@@open-newtab").
 
 ## Important Tips for Developers
 
@@ -229,25 +229,17 @@ Given below are a few tips that, although applicable while using FusionCharts, n
 
 * The structure of chart data is different based on whether you are rendering a single-series chart or a multi-series chart. The table below shows the difference:
 
-<table>
-  <tr>
-     <td><strong>Single-series Chart</strong></td>
-  </tr>
-  <tr>
+**Single-series Chart**
+  
 {% embed_data using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-3.js %}
-For an example, click [here](/chart-guide/standard-charts/creating-standard-charts).
-    </td>
-  </tr>
-  <tr>
-    <td><strong>Multi-series Chart</strong></td>
-  </tr>
-  <tr>  
-{% embed_data using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-4.js %}
-For an example, click [here](/chart-guide/multi-series-charts/creating-multi-series-charts).
-    </td>
-  </tr>
-</table>
 
+For an example, click [here](/chart-guide/standard-charts/creating-standard-charts).
+
+**Multi-series Chart**
+  
+{% embed_data using-with-server-side-languages-ruby-on-rails-different-ways-of-loading-data-example-4.js %}
+
+For an example, click [here](/chart-guide/multi-series-charts/creating-multi-series-charts).
 
 * Make sure that the XML strings are escaped properly, especially for instances where the data for the chart is enclosed in quotation marks. Also make sure that the entire string is enclosed in single quotes, while the attributes and corresponding values are enclosed in double quotes. Doing otherwise will break the code.
 
