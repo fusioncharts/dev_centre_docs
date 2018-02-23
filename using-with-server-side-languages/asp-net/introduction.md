@@ -35,7 +35,7 @@ The data structure that goes into the **JSONURL.aspx** file is given below:
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;JSONUrl.aspx.cs&quot; Inherits=&quot;BasicExample_BasicChart&quot; %&gt;
     &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
     &lt;html&gt;
@@ -57,7 +57,7 @@ The data structure that goes into the **JSONURL.aspx** file is given below:
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
 	&lt;%@ Page Language=&quot;VB&quot; AutoEventWireup=&quot;false&quot; CodeFile=&quot;JSON_URL.aspx.vb&quot; Inherits=&quot;Samples_BasicExamples_JSON_URL&quot; %&gt;
 
 	&lt;!DOCTYPE html&gt;
