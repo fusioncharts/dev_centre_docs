@@ -153,7 +153,7 @@ Let us develop the REST API by following the steps listed below:
 * Launch the express app on a port.
 
 
-### Step 1 : Import the Express and Mongodb Packages to be used in the Application
+#### Step 1 : Import the Express and Mongodb Packages to be used in the Application
 
 We make use of the require() function to import the required packages by passing the name of the package. 
 
@@ -167,7 +167,7 @@ var mongodb = require("mongodb");
 
 ```
 
-### Step 2 : Connect to MongoDB instance running locally
+#### Step 2 : Connect to MongoDB instance running locally
 
 We first have to build the connection url which consists of hostname, port and database name as shown below:
 
@@ -300,10 +300,10 @@ Let us launch this application using node by running the following command:
 
 ```
 
-You will notice that the server is up on http://localhost:3300. Open the URL http://localhost:3300/fuelPrices in the browser to find the JSON response of the API. 
+You will notice that the server is up on `http://localhost:3300`. Open the URL `http://localhost:3300/fuelPrices` in the browser to find the JSON response of the API. 
 
 
-## Creating views for rendering the chart ##
+## Creating views for rendering the chart
 
 Now that we have the back-end ready, let us focus on building the views for rendering the chart. We are going to use a template engine which will help us create dynamic HTML views. Using this template we can define parts of the page that will be populated by the data from the backend and rest will be statically defined. The template engine we would be using for this article is called [Handlebars](http://handlebarsjs.com/).
 
@@ -351,7 +351,7 @@ Let us now see the code for the template that will contain the chart. The name o
 
 Let us get back to the expressjs server code i.e server.js and do the following:
 
-1. Setup handlebars template engine with main.handlebars as default layout.
+* Setup handlebars template engine with main.handlebars as default layout.
 
 ```javascript
 
@@ -379,7 +379,7 @@ Let us get back to the expressjs server code i.e server.js and do the following:
 
 ```
 
-2. Defining an endpoint to serve static resources like JavaScript resources
+* Defining an endpoint to serve static resources like JavaScript resources
 
 ```javascript
 
@@ -482,7 +482,7 @@ $("#table-location").html(template(data));
 
 ```
 
-If you want to see the app we have built so far in action, just run the following command from the app directory: `node server.js`. You will see Server up: http://localhost:3300 printed. Open the URL http://localhost:3300/ to see the table as shown in the below image:
+If you want to see the app we have built so far in action, just run the following command from the app directory: `node server.js`. You will see Server up: `http://localhost:3300` printed. Open the URL `http://localhost:3300/` to see the table as shown in the below image:
 
 ![server side program as shown in diagram]({% site.baseurl %}/images/data-table.png)
 
@@ -490,7 +490,7 @@ If you want to see the app we have built so far in action, just run the followin
 
 In this section we will add code for rendering the chart. Let us build the chart step-by-step as shown below:
 
-1. Create chart properties object
+* Create chart properties object
 
 ```javascript
 
@@ -503,7 +503,7 @@ var chartProperties = {
 
 ```
 
-2. Create categories array object
+* Create categories array object
 
 ```javascript
 
@@ -513,7 +513,7 @@ var categoriesArray = [{
 
 ```
 
-3. Create FusionCharts object for multiseries line
+* Create FusionCharts object for multiseries line
 
 ```javascript
 
@@ -532,7 +532,7 @@ var lineChart = new FusionCharts({
 
 ```
 
-4. Render the chart using the `render()` API.
+* Render the chart using the `render()` API.
 
 ```javascript
 
@@ -540,7 +540,7 @@ lineChart.render();
 
 ```
 
-Let us load the URL http://localhost:3300/ in the browser to see both table and chart being displayed as shown in the image below:
+Let us load the URL `http://localhost:3300/` in the browser to see both table and chart being displayed as shown in the image below:
 
 ![server side program as shown in diagram]({% site.baseurl %}/images/data-table2.png)
 

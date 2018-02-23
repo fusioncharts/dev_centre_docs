@@ -22,7 +22,7 @@ To get the code in this article working we need the below softwares installed an
 This stack is popularly called as *AMP(Apache MySQL PHP) stack and when you include the platform on which this stack is running then it becomes either WAMP (Windows Apache MySql PHP) or LAMP (Linux Apache MySQL PHP). So there are lots of vendors who bundle this stack and make it available for download. 
 Once the stack is set up properly:
 
-* Create a project folder called php-mysql-drill-down in the root directory of the web server. You should be able to browse to this folder via any web browser using the <a href="http://localhost/php-mysql-drill-down/" target="_blank">URL</a>.
+* Create a project folder called php-mysql-drill-down in the root directory of the web server. You should be able to browse to this folder via any web browser using the `http://localhost/php-mysql-drill-down/` URL.
 
 * Create a blank file named index.php and save it in the php-mysql-drill-down folder.
 
