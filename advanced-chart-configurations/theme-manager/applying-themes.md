@@ -90,14 +90,14 @@ FusionCharts.ready(function () {
 ```
 
 ## Applying Multiple Themes for a Chart
+
 To apply multiple themes for a chart, specify the theme names as a comma-separated list. For example, if you are using the `theme` attribute, this is how you specify all the themes that you want to apply:
+
 ```javascript
 "theme": "zune,zune-v1"
 ```
 
-> 
-__zune-v1__ is a user-defined theme. To know how user-defined themes can be created, refer the [Creating New Themes](/advanced-charting/theme-manager/creating-new-themes) article. 
-</p>
+> __zune-v1__ is a user-defined theme. To know how user-defined themes can be created, refer the [Creating New Themes]({% site.baseurl %}/advanced-chart-configurations/theme-manager/creating-new-themes "@@open-newtab") article. 
 
 Values of all attributes set across these themes will be applied to the chart. In case of overlapping attributes, the values specified for the rightmost theme will take precedence. For example if the `captionFontSize` attribute is specified for both themes, its value for the __zune-v1__ theme will be applied to the caption.
 
