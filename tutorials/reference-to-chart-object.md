@@ -9,10 +9,9 @@ layout: page
 
 FusionCharts Suite XT supports 3 ways of getting references to the chart object at runtime. They are: 
 
-* [Using the FusionCharts constructor](/tutorials/reference-to-chart-object#using-the-fusioncharts-constructor)
-* [Using the items object](/tutorials/reference-to-chart-object#using-the-items-object)
-* [Using the getChartFromId function](/tutorials/reference-to-chart-object#using-the-getchartfromid-function)
-
+* Using the FusionCharts constructor
+* Using the items object
+* Using the getChartFromId function
 
 This reference comes in handy if you want to perform operations on the chart like change its properties or chart type once the chart is rendered.
 

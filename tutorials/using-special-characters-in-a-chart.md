@@ -11,9 +11,9 @@ FusionCharts Suite supports all unicode characters as part of charts. You can us
 
 In this section, you will be shown how to: 
 
-* [Use Multi Lingual Text](/tutorials/using-special-characters-in-a-chart#using-multi-lingual-text)
-* [Use Currency symbols](/tutorials/using-special-characters-in-a-chart#using-currency-symbols)
-* [Use Special Characters](/tutorials/using-special-characters-in-a-chart#using-special-characters)
+* Use Multi Lingual Text
+* Use Currency symbols
+* Use Special Characters
 
 ## Using Multi Lingual Text
 

@@ -34,8 +34,6 @@ The FusionCharts constructor accepts a JSON object whose properties are as follo
 Here is how the structure looks:
 
 ```javascript
-
-
 {
     //chart properties
     id: “SOME_ID”,
@@ -50,8 +48,6 @@ Here is how the structure looks:
         }
     }
 }
-
-
 ```
 
 Let us step-by-step build the properties JSON object by considering the above 3 classifications. First are the properties that define the chart like id, dimensions, chart type, data format. All the available properties can be found [here]({{ site.baseurl }}api/fusioncharts.html):
@@ -165,20 +161,17 @@ We saw above how to build a FusionCharts object by passing a JSON object of char
 Let's create a button to print the chart's actual data. The html code for this example is given below:
 
 
-```javascript
-
+```html
 <div id="chart-container">FusionCharts will render here</div>
 <button id="get-chart-data">Print Chart Data</button>
 <div id="chart-data"></div>
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="fusioncharts-sample.js"></script>
-
 ```
 
 The button with id `get-chart-data` is the one which will print the chart's underlying data. We will use jQuery so as to make it easy to deal with the event handlers for the button. All the javascript related code will be placed inside `fusioncharts-sample.js` as shown below:
 
 ```javascript
-
 $(function(){
   // include here the properties JSON Object defined above
 var sampleChart = new FusionCharts(propertiesObject);
@@ -191,7 +184,6 @@ sampleChart.render();
 function getChartData(){
   //to be implemented
 }
-
 ```
 
 In the above JavaScript code we have created a function `getChartData` chart to display the chart data.
@@ -200,7 +192,6 @@ FusionCharts class provides an alternative constructor like API which accepts th
 
 
 ```javascript
-
 var existingFusionChartsObject = FusionCharts(“sample-chart-id”);
  
 We will use the above API call in the getChartData method to get the chart’s data:
@@ -213,19 +204,15 @@ function getChartData(){
     $("#chart-data").text(JSON.stringify(chartData));
  
 }
-
 ```
 
 In the above code snippet the `getJSONData()` API returns a JSON having structure:
 
-
 ```javascript
-
 {
   chart:{},
   data:{}
 }
-
 ```
 
 where chart contains the values of the properties controlling chart's appearance and data contains the actual data of the chart. Since we are interested in data property, we fetch the same from the API response.
@@ -242,21 +229,18 @@ Let us add a new button to the HTML snippet from above, to resize the chart to a
 
 
 ```html
-
 <div id="chart-container">FusionCharts will render here</div>
 <button id="get-chart-data">Print Chart Data</button>
 <button id="resize-chart">Resize Chart</button>
 <div id="chart-data"></div>
 <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
 <script src="fusioncharts-sample.js"></script>
-
 ```
 
 Setup a handler for the button in `fusioncharts-sample.js` as shown below:
 
 
 ```javascript
-
 $("#resize-chart").click(function(){
     resizeChart("sample-chart");
 });
@@ -264,7 +248,6 @@ $("#resize-chart").click(function(){
 function resizeChart(chartId){
     FusionCharts(chartId).resizeTo(200,200);
 }
-
 ```
 
 Loading the HTML in the browser and clicking on the "Resize Chart" reduces the size of the chart as shown below (JSFiddle link [here](http://jsfiddle.net/uhnanqgv/4/)):
@@ -274,13 +257,11 @@ Let us look at another API `setChartAttribute` to change the chart attribute. We
 
 
 ```html
-
 <div id="chart-container">FusionCharts will render here</div>
 <button id="get-chart-data">Print Chart Data</button>
 <button id="resize-chart">Resize Chart</button>
 <button id="chart-border">Change chart border</button>
 <div id="chart-data"></div>
-
 ```
 
 Setup the handler for the new button with id `chart-border` as shown below:
@@ -320,4 +301,4 @@ So, if there are two charts to be rendered one after the other, calling the `ren
 * Draw the graphics for chart 1
 * Draw the graphics for chart 2
 
-In order to incorporate this feature, some of the [APIs](/api/fusioncharts/fusioncharts-methods) are now given a callback function that is executed when `asyncRender` is set to `1`.
+In order to incorporate this feature, some of the [APIs]({% site.baseurl %}https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods "@@open-newtab") are now given a callback function that is executed when `asyncRender` is set to `1`.
