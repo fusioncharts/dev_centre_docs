@@ -141,18 +141,20 @@ You can show the labels in the legend box, instead of showing them with the data
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "showLegend": "1",
         "showLabels": "0"
-       
-    },
-
+    }
+}
 ```
+
 The chart will look like the one given below:
 
-**<<Insert Live Chart>>**
+{% embed_chart standard-charts-funnel-chart-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/mmxwek55/ "@@open-newtab") to edit the above chart.
 
 ## Configure the position of the legend box
 
@@ -162,14 +164,12 @@ Set the value of the `legendPosition` attribute to `RIGHT`, to place the legend 
 
 Refer to the code below:
 
-```
+```json
 {
-
     "chart": {
-       "legendPosition": "RIGHT"
-
+        "legendPosition": "RIGHT"
     },
-
+}
 ```
 
 The chart will look like the one given below:
@@ -182,21 +182,19 @@ In a 3D funnel chart, the slices are rendered as hollow by default. You can, how
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
        "isHollow": "1"
-
     },
-
+}
 ```
 
 The chart will look like the one given below:
 
-**<<Insert Live Chart>>**
+{% embed_chart standard-charts-funnel-chart-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/6wjnfz2m/ "@@open-newtab") to edit the above chart.
 
 ## Draw all slices with the same slant angle
 
@@ -204,19 +202,18 @@ By default, whenever you plot streamlined data, the chart uses variable funnel s
 
 Refer to the code below:
 
-```
+```json
 {
-
     "chart": {
-
        "useSameSlantAngle": "1"
-
     },
-
+}
 ```
 The chart will look like the one given below:
 
-**<<Insert Live Chart>>**
+{% embed_chart standard-charts-funnel-chart-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/7vtkkb4n/ "@@open-newtab") to edit the above chart.
 
 ## Show values as percentage of the previous value
 
@@ -228,21 +225,19 @@ When showing values in percentage for each slice, you can ask the chart to calcu
 
 Refer to the code below:
 
-```
+```json
 {
-
     "chart": {
-
-       "showPercentValues": "1",
-
-      "percentOfPrevious": "1"
-
+        "showPercentValues": "1",
+        "percentOfPrevious": "1"
     },
-
+}
 ```
 The chart will look like the one given below:
 
-**<<Insert Live Chart>>**
+{% embed_chart standard-charts-funnel-chart-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/zh4w2z7r/ "@@open-newtab") to edit the above chart.
 
 ## Slice Out Individual Funnel Slices
 
@@ -250,28 +245,26 @@ At times, you may want to highlight important data. so that it can be easily not
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-      …
-
+        ...
     },
-
     "data": [
-         ...        
+        ...        
         {
             ...
             "isSliced": "1"
         },
     ]
 }
-
-}
 ```
 
 The chart will look like the one given below:
 
-**<<Insert Live Chart>>***
+{% embed_chart standard-charts-funnel-chart-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/vknfqok4/ "@@open-newtab") to edit the above chart.
 
 ## Configure Hover Effects
 
@@ -291,8 +284,7 @@ Use the following attributes to configure the hover effect:
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         "showPercentValues": "1",
@@ -305,8 +297,9 @@ Refer to the code below:
         "plotBorderHoverAlpha": "60",
         "plotBorderHoverThickness": "2"
     },
+}
+```
 
 The chart with hover effects enabled will look like the following:
 
-**<<Insert Live Chart>>**
-
+GIF
