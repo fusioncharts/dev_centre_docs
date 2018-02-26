@@ -9,7 +9,7 @@ Use a funnel chart to plot streamlined data. For instance, you can plot sales da
 
 In a funnel chart, the data is streamlined, i.e., each slice (section) in the funnel represents a process flow that has filtered out data. For example, if you use a funnel chart to display the employment process, the first slice will represent the "Number of candidates who applied". Thereafter, each process flow (like "Interview Phase 1", "IQ Test", "Project", etc.) will be represented by subsequent funnel slices, each slice filtering the data provided to the previous slice. The last slice bears the value that is the final result of the entire procedure (for example, "Candidates recruited" in this scenario).
 
-## Salient Features
+## Silent Features
 
 Features of a funnel chart that you may find useful:
 
@@ -174,7 +174,9 @@ Refer to the code below:
 
 The chart will look like the one given below:
 
-** <<Insert Live Chart>> **
+{% embed_chart standard-charts-funnel-chart-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/6wjnfz2m/ "@@open-newtab") to edit the above chart.
 
 ## Draw Filled Funnel Slices (in 3D Mode)
 
@@ -192,9 +194,9 @@ Refer to the code below:
 
 The chart will look like the one given below:
 
-{% embed_chart standard-charts-funnel-chart-example-5.js %}
+{% embed_chart standard-charts-funnel-chart-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6wjnfz2m/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/rjqgfxwf/ "@@open-newtab") to edit the above chart.
 
 ## Draw all slices with the same slant angle
 
