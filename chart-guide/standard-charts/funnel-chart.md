@@ -66,7 +66,7 @@ To create a funnel chart follow the steps given below:
 
 A streamline funnel chart to show the purchase-conversion analysis looks like the following:
 
-{% embed_chart standard-charts-funnel-chart-example-1.js %}
+{% embed_all standard-charts-funnel-chart-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/8sJdx/ "@@open-newtab") to edit the above chart.
 
