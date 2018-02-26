@@ -13,7 +13,7 @@ Icon legend allows us to display single color icons for numeric ranges. By defau
 
 A simple icon legend looks as shown in the image below:
 
-![Icon Legend]({% site.baseurl %}/images/chart-guide-heat-map-chart-legend-options-image-1.jpg)
+<span> ![Icon Legend]({% site.baseurl %}/images/chart-guide-heat-map-chart-legend-options-image-1.jpg) </span>
 
 A simple heat map chart rendered with an icon legend looks like this:
 

@@ -18,7 +18,7 @@ The above chart shows the US Subway Map and uses drag-able nodes to mark locatio
 
 To add a new text label:
 
-__Step 1__: From the bottom-left corner of the chart, click the ![Menu]({% site.baseurl %}/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-1.jpg) button. A menu is rendered.
+__Step 1__: From the bottom-left corner of the chart, click the <span> ![Menu]({% site.baseurl %}/images/chart-guide-drag-node-chart-adding-and-deleting-text-labels-image-1.jpg) </span> button. A menu is rendered.
 
 __Step 2__: From the menu, select __Add a Label__.
 The label properties dialog box, as seen in the image below, is shown:

@@ -20,7 +20,7 @@ In the above chart, the "My Edited Location" node does not have any connectors c
 
 To add a connector:
 
-__Step 1__: From the bottom-left corner of the chart, click the ![Menu Button]({% site.baseurl %}/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-1.jpg) button. A menu is rendered.
+__Step 1__: From the bottom-left corner of the chart, click the <span> ![Menu Button]({% site.baseurl %}/images/chart-guide-drag-node-chart-adding-and-editing-connectors-image-1.jpg) </span> button. A menu is rendered.
 
 __Step 2__: From the menu, select __Add a Connector__.
 

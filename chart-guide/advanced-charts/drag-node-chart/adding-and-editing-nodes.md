@@ -19,11 +19,11 @@ To the above subway map chart, we will now add a new node.
 
 To add a node to:
 
-__Step 1__: From the bottom-left corner of the chart, click the ![image add-node-image-1]({% site.baseurl %}/images/chart-guide-drag-node-chart-adding-and-editing-nodes-1.jpg) button. A menu is rendered.
+__Step 1__: From the bottom-left corner of the chart, click the <span> ![image add-node-image-1]({% site.baseurl %}/images/chart-guide-drag-node-chart-adding-and-editing-nodes-1.jpg) </span> button. A menu is rendered.
 
 __Step 2__: From the menu, select __Add a node__.
 
-![image add-node-image-2]({% site.baseurl %}/images/chart-guide-drag-node-chart-adding-and-editing-nodes-2.jpg)
+<span> ![image add-node-image-2]({% site.baseurl %}/images/chart-guide-drag-node-chart-adding-and-editing-nodes-2.jpg) </span>
 
 The node properties dialog box, as seen in the image below,  is shown:
 
