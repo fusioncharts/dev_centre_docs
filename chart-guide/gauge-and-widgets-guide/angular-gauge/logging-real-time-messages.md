@@ -9,7 +9,7 @@ FusionCharts Suite XT introduces a new concept of streaming and showing real-tim
 
 Essentially, the message logger is a text based scrollable window that can listen to messages streamed from the server and then either display the messages in the message logger window or pass them to custom JavaScript functions (defined by you) for further actions.
 
-<p class="text-info">To use message logger, you first need to make sure that you're using a real-time chart from FusionWidgets XT pack - i.e., charts which update themselves in real-time. Examples are real-time line chart, column chart, angular gauge, linear gauges etc.</p>
+> To use message logger, you first need to make sure that you're using a real-time chart from FusionWidgets XT pack - i.e., charts which update themselves in real-time. Examples are real-time line chart, column chart, angular gauge, linear gauges etc.
 
 ## Setting up the Message Logger
 
@@ -70,7 +70,7 @@ Given below is a brief description of the attributes used to set up the message 
     <td>`messagePassAllToJS`</td>
     <td>It is used to specify whether whether all parameters of a message envelope will be passed to the the custom JavaScript function.  A message envelope contains the following four parameters: Message ID, Message Title, Message Text, and Message Type.
 
-<p class="text-info">The `messageGoesToJS` attribute is used to pass only the Message Text parameter to the JavaScript function, whereas, the `messagePassAllToJS` is used to pass all the four parameters to the JavaScript function.</p>
+> The `messageGoesToJS` attribute is used to pass only the Message Text parameter to the JavaScript function, whereas, the `messagePassAllToJS` is used to pass all the four parameters to the JavaScript function.
     </td>
   </tr>
 </table>
@@ -122,7 +122,7 @@ Given below is a brief description of the attributes in the real-time data strea
 </table>
 
 
-<p class="text-info">The messages to be logged should be provided in the real-time data stream and not in the JSON data. Real-time data stream refers to the data provided by the URL specified in the `dataStreamURL` attribute. </p>
+> The messages to be logged should be provided in the real-time data stream and not in the JSON data. Real-time data stream refers to the data provided by the URL specified in the `dataStreamURL` attribute. 
 
 ### Examples of a Real-time Update
 
@@ -136,7 +136,7 @@ Here, we first have the `&value` parameter which is absorbed by the gauge for da
 
 Take a look at the chart rendered above to see how this update appears in the actual message logger.
 
-<p class="text-info">If you are passing any special characters as a part of your message text or title (like &, % etc.), you will need to URL Encode the text/title. </p>
+> If you are passing any special characters as a part of your message text or title (like &, % etc.), you will need to URL Encode the text/title. 
 
 ### Changing Message Type
 
@@ -161,7 +161,7 @@ To create and render a message as a link, you will need to set the URL Encoded l
 
 In the above example, we're linking the message to http://www.fusioncharts.com?id=34 - we've URL Encoded the link, as it contains special characters (? in this case).
 
-<p class="text-info">When specifying a link message type, the link itself is shown as the message text. You cannot change the message text. </p>
+> When specifying a link message type, the link itself is shown as the message text. You cannot change the message text. 
 
 ### Linking Custom Text
 
@@ -195,7 +195,7 @@ You can also send send it as a part of a message stream, as shown below:
 
 This will clear all the contents of the existing message logger and start afresh.
 
-> If you send `&clearLog=1` with each real-time update, the chart will not show any messages in the logger, as the log is being cleared with each update. As such, take caution to send this command only when the log needs to be cleared. </p>
+> If you send `&clearLog=1` with each real-time update, the chart will not show any messages in the logger, as the log is being cleared with each update. As such, take caution to send this command only when the log needs to be cleared. 
 
 ## Handling Messages in JavaScript
 
@@ -222,7 +222,7 @@ var myFunction = function(strMsgId, strMsgTitle, strMsgText, strMsgType){
 }
 ```
 
-<p class="text-info">In place of a custom function you can also use JavaScript’s native function (e.g `alert`) to show messages streamed from the server to the client. But in that case you will only be able to show the value of  the `msgText` parameter passed from the server.</p>
+> In place of a custom function you can also use JavaScript’s native function (e.g `alert`) to show messages streamed from the server to the client. But in that case you will only be able to show the value of  the `msgText` parameter passed from the server.
 
 ## Configuring the Message Logger using JavaScript API
 
@@ -260,6 +260,6 @@ Given below is a brief description of the JavaScript API methods used to configu
 </table>
 
 
-<p class="text-info">Note: Here we have used the `feedData()` method of the FusionCharts API to provide real-time update. You can pass these updates from the server through data-provider pages using the `dataStreamURL` attribute. </p>
+> Note: Here we have used the `feedData()` method of the FusionCharts API to provide real-time update. You can pass these updates from the server through data-provider pages using the `dataStreamURL` attribute. 
 
-<p class="text-info">You can call the JavaScript APIs of a chart only after it has rendered. You can use the `Rendered` event listener to check if a chart has rendered. </p>
+> You can call the JavaScript APIs of a chart only after it has rendered. You can use the `Rendered` event listener to check if a chart has rendered. 

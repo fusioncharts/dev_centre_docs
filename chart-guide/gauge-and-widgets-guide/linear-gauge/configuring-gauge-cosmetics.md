@@ -220,7 +220,7 @@ Given below is a brief description of the attribute used to hide gauge labels:
 </table>
 
 
-<p class="text-info"> An alternate way to not show gauge labels is by not initializing the `label` attribute for the `color` object. </p>
+>  An alternate way to not show gauge labels is by not initializing the `label` attribute for the `color` object. </p>
 
 ## Configuring Hover Effects for the Gauge
 

@@ -16,7 +16,7 @@ To do this, enable the `--remote-export-enabled` option and pass the `--export-u
 
 <div class="tab-content">
     <div class="tab cli-tab active">
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	$ fe -c column_chart_config.json -R true -u http://localhost:3000/api/v1.0/export
 </code></pre>
 </div>

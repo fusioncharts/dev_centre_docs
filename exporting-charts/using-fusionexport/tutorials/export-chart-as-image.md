@@ -26,7 +26,7 @@ To export charts as images, you can use the CLI or SDKs of the languages mention
 <div class="mt-10 pb-10"><strong>For exporting a single chart from the CLI, using a JSON file:</strong></div>
 <div><strong>Step 1</strong></div>
 <div class="pb-10">Save the chart configuration in a JSON file named as chart-config-file.json</div>
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	[
 		{
 			"type": "column2d",
@@ -59,14 +59,14 @@ To export charts as images, you can use the CLI or SDKs of the languages mention
 </code></pre>
 <div class="mt-20"><strong>Step 2</strong></div>
 <div class="pb-10">To export the file, run the following command from the terminal/command prompt:</div>
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	$ fe -c chart-config-file.json
 </code></pre>
 <div class="mt-30"><strong>For exporting a single chart from the CLI, using a JS file:</strong></div>
 <div class="mt-20"><strong>Step 1</strong></div>
 <div class="pb-10">Save the chart configuration in a JavaScript file named as <strong>chart-config-file.js</strong>. In this case, the whole chart configuration object must be exported. </div>
 
-<pre><code class="language-json">
+<pre><code class="custom-hlc language-json">
 	module.exports = {
 		// fusioncharts config
 	};
@@ -74,12 +74,12 @@ To export charts as images, you can use the CLI or SDKs of the languages mention
 
 <div class="mt-20"><strong>Step 2</strong></div>
 <div class="pb-10">To use this newly created JavaScript file for the export, execute the following command:</div>
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	$ fe -c chart-config-file.js
 </code></pre>
 </div>
 <div class="tab nodejs-tab">
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	const fs = require('fs');
 	const path = require('path');
 
@@ -115,7 +115,7 @@ To export charts as images, you can use the CLI or SDKs of the languages mention
 </code></pre>
 </div>
 <div class="tab java-tab">
-<pre><code class="language-java">
+<pre><code class="custom-hlc language-java">
 	import java.io.ByteArrayOutputStream;
 	import java.io.File;
 	import java.io.FileInputStream;
@@ -167,7 +167,7 @@ To export charts as images, you can use the CLI or SDKs of the languages mention
 </code></pre>
 </div>
 <div class="tab csharp-tab">
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	using System;
 	using System.IO;
 	using FusionCharts.FusionExport.Client; // Import sdk
@@ -210,7 +210,7 @@ To export charts as images, you can use the CLI or SDKs of the languages mention
 </code></pre>
 </div>
 <div class="tab php-tab">
-<pre><code class="language-php">
+<pre><code class="custom-hlc language-php">
 	<?php
 
 	// Exporting a chart
@@ -249,7 +249,7 @@ To export charts as images, you can use the CLI or SDKs of the languages mention
 </code></pre>
 </div>
 <div class="tab python-tab">
-<pre><code class="language-python">
+<pre><code class="custom-hlc language-python">
 	#!/usr/bin/env python
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk
@@ -287,7 +287,7 @@ To export charts as images, you can use the CLI or SDKs of the languages mention
 </code></pre>
 </div>
 <div class="tab golang-tab">
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	// Exporting a chart
 
 	package main

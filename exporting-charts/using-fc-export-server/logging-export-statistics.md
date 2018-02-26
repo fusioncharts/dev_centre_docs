@@ -32,7 +32,7 @@ This is how the analytics UI looks:
 
 <img src="{% site.baseurl %}/images/analytics-ui.png" width="700" height="auto" alt="analytics UI">
 
-<p class="text-info"> An end user can view logs only if the user has setup his own export server. In this case, the logs can be seen at __{USER_DOMAIN}/api/v1.0/logs__. <br> FusionCharts provides its users with a Logger UI package that presents the logged in statistics in an easy-to-read, tabular format. The analytics UI image shown above is an example. <br> Users exporting through the FusionCharts public export sever will not be able to view the statistics logged. </p>
+>  An end user can view logs only if the user has setup his own export server. In this case, the logs can be seen at __{USER_DOMAIN}/api/v1.0/logs__. <br> FusionCharts provides its users with a Logger UI package that presents the logged in statistics in an easy-to-read, tabular format. The analytics UI image shown above is an example. <br> Users exporting through the FusionCharts public export sever will not be able to view the statistics logged. </p>
 
 ## Logging Architecture
 

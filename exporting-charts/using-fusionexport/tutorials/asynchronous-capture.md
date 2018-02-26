@@ -9,7 +9,7 @@ chartPresent: False
 Exporting can be invoked from the injected JavaScript (done using the `--callbackFilePath` option). If the `--asyncCapture` option is enabled, the injected script will trigger the  `CAPTURE_EXIT` event.
 You need to call the following method to invoke the export:
 
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 FusionExport.emit('CAPTURE_EXIT');
 </code></pre>
 
@@ -32,7 +32,7 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 <div class="mt-20 pb-10">Exporting can be invoked from the injected JavaScript (using the `--callbacks` option). If `--async-capture<` option is enabled, the injected script must emit `CAPTURE_EXIT event.`</div>
 
 <div class="mt-20 pb-10"><strong>An example of a scrollCombidy2d chart is shown below:</strong></div>
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	// scrollchart.js
 	module.exports = {
 	    type: 'scrollcombidy2d',
@@ -48,7 +48,7 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 </code></pre>
 <div class="mt-20 pb-10">The intention here is to take a snap of the whole chart. By default, the chart’s width is `550px`. We will increase the width and then ask FusionExport to start processing.</div>
 <div class="mt-20 pb-10"><strong>Following is the content of the callback.js file:</strong></div>
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	    FusionCharts.items.myChartId.addEventListener('renderComplete', (evt) => {
 	    evt.sender.resizeTo('3000', '400');
 	    FusionExport.emit('CAPTURE_EXIT');
@@ -56,13 +56,13 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 </code></pre>
 
         <div class="mt-20 pb-10"><strong>Run the following command:</strong></div>
-<pre><code class="language-bash">
+<pre><code class="custom-hlc language-bash">
 	$ fe -c scrollchart.js -b callback.js -async-capture true
 </code></pre>
 
 <div>By default, the maximum time that FusionExport waits for the <code>`CAPTURE_EXIT`</code> event is 6 seconds. It can be increased up to 60 seconds using `--async-capture-timeout` option.</div>
 <div class="mt-20 pb-10"><strong>Here is an example export_config.json file.</strong></div>
-<pre><code class="language-json">
+<pre><code class="custom-hlc language-json">
 	{
 		"chart-config": "scrollchart.js",
 		"callbacks": "callback.js",
@@ -77,7 +77,7 @@ The `--async-capture-timeout` option takes input as milliseconds.
 </div>
     
 <div class="tab nodejs-tab">
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	const fs = require('fs');
 	const path = require('path');
 
@@ -116,7 +116,7 @@ The `--async-capture-timeout` option takes input as milliseconds.
 </code></pre>
 </div>
 <div class="tab java-tab">
-<pre><code class="language-java">
+<pre><code class="custom-hlc language-java">
 	import java.io.ByteArrayOutputStream;
 	import java.io.File;
 	import java.io.FileInputStream;
@@ -171,7 +171,7 @@ The `--async-capture-timeout` option takes input as milliseconds.
 </code></pre>
 </div>
 <div class="tab csharp-tab">
-<pre><code class="language-c">
+<pre><code class="custom-hlc language-c">
 	using System;
 	using System.IO;
 	using FusionCharts.FusionExport.Client; // Import sdk
@@ -216,7 +216,7 @@ The `--async-capture-timeout` option takes input as milliseconds.
 </code></pre>
 </div>
 <div class="tab php-tab">
-<pre><code class="language-php">
+<pre><code class="custom-hlc language-php">
 	<?php
 
 	// Async capture
@@ -257,7 +257,7 @@ The `--async-capture-timeout` option takes input as milliseconds.
 </code></pre>
 </div>
 <div class="tab python-tab">
-<pre><code class="language-python">
+<pre><code class="custom-hlc language-python">
 	#!/usr/bin/env python
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk
@@ -297,7 +297,7 @@ The `--async-capture-timeout` option takes input as milliseconds.
 </code></pre>
 </div>
 <div class="tab golang-tab">
-<pre><code class="language-javascript">
+<pre><code class="custom-hlc language-javascript">
 	// Async capture
 
 	package main

@@ -6,11 +6,9 @@ heading: Including Interactivity in Charts Using ReactJS
 chartPresent: true
 ---
 
-
-
 ## Prerequisites
 
-* [Creating a simple chart using FusionCharts Suite XT](/getting-started/building-your-first-chart)
+* [Creating a simple chart using FusionCharts Suite XT]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart "@@open-newtab")
 
 * [Installing the React-FusionCharts Component](/using-with-javascript-libraries/reactjs/introduction)
 
@@ -32,7 +30,7 @@ The dashboard looks as shown below:
 
 {% embed_chart using-with-javascript-libraries-reactjs-including-interactivity-in-charts-using-reactjs-example-1.js %}
 
-<p class="text-info">
+> 
 The complete code for this dashboard is given at the end of this article, after all steps have been explained.
 </p>
 
@@ -102,7 +100,7 @@ A function is defined in the parent component and is called when the [slicingSta
 * `filterValue`: value of the selected slice
 * `filterSource`: ID of the chart that triggered the `slicingStart` event
 
-<p class="text-info">
+> 
 The `filterSource` property has to be set to use the component in the interactive mode.
 </p>
 

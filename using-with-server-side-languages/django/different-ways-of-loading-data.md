@@ -10,14 +10,14 @@ chartPresent: true
 
 The FusionCharts Django wrapper lets you load data for a chart using:
 
-* <a href="/using-with-server-side-languages/django/different-ways-of-loading-data#loading-data-from-a-static-json-string" class="smoth-scroll">a static JSON string</a>
-* <a href="/using-with-server-side-languages/django/different-ways-of-loading-data#loading-data-from-a-static-xml-string" class="smoth-scroll">a static XML string</a>
-* <a href="/using-with-server-side-languages/django/different-ways-of-loading-data#loading-data-from-a-valid-python-dictionary" class="smoth-scroll">a valid Python dictionary</a>
+* a static JSON string
+* a static XML string
+* a valid Python dictionary
 
 
 In this section, you will be shown how the Django wrapper uses each of these methods to generate charts.
 
-<p class="text-info">Before you proceed, make sure you have <a href="/using-with-server-side-languages/django/introduction-to-the-django-wrapper.html" target="_blank">installed and set up the plugin </a> correctly.</p>
+> Before you proceed, make sure you have [installed and set up the plugin]({% site.baseurl %}/using-with-server-side-languages/django/introduction-to-the-django-wrapper "@@open-newtab") correctly.
 
 ## Loading Data from a Static JSON String
 
@@ -97,7 +97,7 @@ def chart(request):
 
 ```
 
-To know more about the attributes that you can configure for the column 2D chart, visit <a href="/chart-attributes.html?chart=column2d" target="_blank">this page</a>.
+To know more about the attributes that you can configure for the column 2D chart, visit [this page]({% site.baseurl %}/chart-attributes.html?chart=column2d "@@open-newtab").
 
 
 ## Loading Data from a Static XML String
@@ -220,7 +220,7 @@ def chart(request):
 
 ```
 
-To know more about the attributes that you can configure for the multi-series column 2D chart, visit <a href="/chart-attributes.html?chart=mscolumn2d" target="_blank">this page</a>.
+To know more about the attributes that you can configure for the multi-series column 2D chart, visit [this page]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart "@@open-newtab") this page.
 
 
 ## Important Tips for Developers
@@ -229,25 +229,18 @@ Given below are a few tips that, although applicable while using FusionCharts, n
 
 * The structure of chart data is different based on whether you are rendering a single-series chart or a multi-series chart. The table below shows the difference:
 
-<table>
-  <tr>
-     <td><strong>Single-series Chart</strong></td>
-  </tr>
-  <tr>
+**Single-series Chart**
+  
 {% embed_data using-with-server-side-languages-django-different-ways-of-loading-data-example-3.js %}
-For an example, click [here](/chart-guide/standard-charts/creating-standard-charts).
-    </td>
-  </tr>
-  <tr>
-    <td><strong>Multi-series Chart</strong></td>
-  </tr>
-  <tr>  
-{% embed_data using-with-server-side-languages-django-different-ways-of-loading-data-example-4.js %}
-For an example, click [here](/chart-guide/multi-series-charts/creating-multi-series-charts).
-    </td>
-  </tr>
-</table>
 
+For an example, click [here](/chart-guide/standard-charts/line-area-and-column-charts).
+    
+**Multi-series Chart**
+  
+{% embed_data using-with-server-side-languages-django-different-ways-of-loading-data-example-4.js %}
+
+For an example, click [here](/chart-guide/standard-charts/multi-series-charts).
+ 
 * Make sure that the XML strings are escaped properly, especially for instances where the data for the chart is enclosed in quotation marks. Also make sure that the entire string is enclosed in single quotes, while the attributes and corresponding values are enclosed in double quotes. Doing otherwise will break the code.
 
 * The chart ID should be unique for all charts rendered on the same page. Otherwise, it will result in a JavaScript error.

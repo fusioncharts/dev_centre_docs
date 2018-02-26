@@ -12,13 +12,13 @@ In this section we will learn how to create a simple map showing the population 
 
 There are 4 simple steps to building a map using FusionCharts Suite XT:
 
-* <a href="/map-guide/simple-data-driven-map#convert-data-to-jsonxml-format" class="smoth-scroll">Convert your data to FusionCharts Suite JSON or XML format</a>
+* Convert your data to FusionCharts Suite JSON or XML format
 
-* <a href="/map-guide/simple-data-driven-map#include-fusioncharts-suite-xt-library-in-your-page" class="smoth-scroll">Include the FusionCharts Suite XT JavaScript library in your HTML page</a>
+* Include the FusionCharts Suite XT JavaScript library in your HTML page
 
-* <a href="/map-guide/simple-data-driven-map#create-a-container-for-your-map-in-the-web-page" class="smoth-scroll">Create a container `<div>` for the map</a>
+* Create a container `<div>` for the map
 
-* <a href="/map-guide/simple-data-driven-map#create-an-instance-of-the-map" class="smoth-scroll">Use the `FusionCharts()` constructor to create the map instance, and then call the `render()` method</a>
+* Use the `FusionCharts()` constructor to create the map instance, and then call the `render()` method
 
 ## Convert data to JSON/XML format
 

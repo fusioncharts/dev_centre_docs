@@ -35,7 +35,7 @@ Before going into the details of each of them, let us have a look at a bulb gaug
 
 On a bulb gauge scale, you can create any number of ranges to classify your data. For each range, you will have to specify the minimum and maximum values, a name for the range that will be displayed as the label, and the hex code for the color that will used to indicate the range.
 
-<p class="text-info">Note: Each color range should have its own unique range index. For example, if a range is defined as 0-50, the next range should have the minimum value as 50 necessarily. Similarly, if the upper limit of the chart is 100, the last range should have max value as 100 for the chart to function properly.</p>
+> Each color range should have its own unique range index. For example, if a range is defined as 0-50, the next range should have the minimum value as 50 necessarily. Similarly, if the upper limit of the chart is 100, the last range should have max value as 100 for the chart to function properly.
 
 ### Value Textbox
 

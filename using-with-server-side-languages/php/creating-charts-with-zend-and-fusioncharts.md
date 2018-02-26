@@ -40,7 +40,7 @@ Zend uses Composer as its package dependency manager. You can install Zend using
 	$ composer require zendframework/zendframework
 ```
 
-<p class="text-info"> To know more about installing Zend and its packages, click [here](https://framework.zend.com/downloads).</p>
+>  To know more about installing Zend and its packages, click [here](https://framework.zend.com/downloads).</p>
 
 ## FusionCharts
 
@@ -58,7 +58,7 @@ __For Bower:__
 $ bower install fusionmaps
 ```
 
-<p class="text-info">FusionCharts also provides a dedicated PHP wrapper to create charts in PHP. You can download it from [here](http://www.fusioncharts.com/php-charts/).</p>
+> FusionCharts also provides a dedicated PHP wrapper to create charts in PHP. You can download it from [here](http://www.fusioncharts.com/php-charts/).</p>
 
 Now, as we have our environment ready, let’s create a Zend skeleton application in which we will embed our chart. For this, we will use the Composer command given below:
 
@@ -180,6 +180,6 @@ In this step, we will render the chart we created by executing the PHP file crea
 
 ![screenshot : Creating Charts with Zend and FusionCharts]({% site.baseurl %}/images/creating-charts-with-zend-and-fusioncharts.jpg)
 
-<p class="text-info"> If you see any errors in your code, click [here](https://github.com/Pr3rana/fc-sample/tree/master/php/php_frameworks/zend) to view the complete source code of the sample project we created for this tutorial. </p>
+>  If you see any errors in your code, click [here](https://github.com/Pr3rana/fc-sample/tree/master/php/php_frameworks/zend) to view the complete source code of the sample project we created for this tutorial. </p>
 
 

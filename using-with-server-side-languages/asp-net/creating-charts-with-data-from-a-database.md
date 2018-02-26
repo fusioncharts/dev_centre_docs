@@ -12,9 +12,9 @@ In addition to directly specifying the chart data (or the URL for the file in wh
 
 This section showcases how you can do this using the FusionCharts ASP.NET wrapper to create a multi-series line chart by fetching data from a database.
 
-<p class="text-info"> Although you can create all FusionCharts chart types using this method, in this section we will focus on only this one example these two examples. </p>
+>  Although you can create all FusionCharts chart types using this method, in this section we will focus on only this one example these two examples. </p>
 
-<p class="text-info"> Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper/tree/master/DLLFile" target="_blank">__FusionCharts.dll__</a> file in the **Bin** folder of your web application. </p>
+>  Before you begin, make sure that you have copied the <a href="https://github.com/fusioncharts/asp-net-wrapper/tree/master/DLLFile" target="_blank">__FusionCharts.dll__</a> file in the **Bin** folder of your web application. </p>
 
 ## Creating a Multi-series Line Chart
 
@@ -32,7 +32,7 @@ The data structure that goes into the **../DBExample/MSCharts.aspx** file is giv
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
 	&lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;MSCharts.aspx.cs&quot; Inherits=&quot;DBExample_MSCharts&quot; %&gt;
 
 	&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
@@ -55,7 +55,7 @@ The data structure that goes into the **../DBExample/MSCharts.aspx** file is giv
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
 	&lt;%@ Page Language=&quot;VB&quot; AutoEventWireup=&quot;false&quot; CodeFile=&quot;index.aspx.vb&quot; Inherits=&quot;Samples_DBExample_index&quot; %&gt;
 
 	&lt;!DOCTYPE html&gt;
@@ -88,7 +88,7 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
 </ul>
 <div class='tab-content'>
   <div class='tab json-tab active'>
-<pre><code class="language-cs">
+<pre><code class="custom-hlc language-cs">
   using System;
   using System.Collections;
   using System.Configuration;
@@ -213,7 +213,7 @@ The data structure that goes into the code behind **../DBExample/MSCharts.aspx.c
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="language-vb">
+<pre><code class="custom-hlc language-vb">
     Imports System.Collections
     Imports System.Configuration
     Imports System.Data

@@ -40,7 +40,7 @@ In your HTML code, include the `fusioncharts.js` and `vue-fusioncharts.js` JavaS
 <script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"></script>
 ```
 
-<p class="text-info"> It is mandatory to add the __vue-fusioncharts.js__ file __after__ all the other script files. </p>
+>  It is mandatory to add the __vue-fusioncharts.js__ file __after__ all the other script files. </p>
 
 ### Step 2: Define the chart configuration
 
