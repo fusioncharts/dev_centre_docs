@@ -121,6 +121,6 @@ To drill-down to a leaf node, the user can directly click on that node. For exam
 
 ![Treemap with Northern Region as the current node]({% site.baseurl %}/images/chart-guide-treemap-chart-creating-a-simple-treemap-chart-image-6.jpg)
 
-Now, to go back one level up, the user can either click __Northern Region__ in the header of this view or the <span> ![image alt text]({% site.baseurl %}/images/chart-guide-treemap-chart-introducing-the-treemap-chart-image-2.png)</span> (__Back to Parent__) button from the top-right corner of the chart. 
+Now, to go back one level up, the user can either click __Northern Region__ in the header of this view or the <span> ![image alt text]({% site.baseurl %}/images/chart-guide-treemap-chart-introducing-the-treemap-chart-image-2.png) </span> (__Back to Parent__) button from the top-right corner of the chart. 
 
 To go directly back to the initial stage, the user can click <span> ![image alt text]({% site.baseurl %}/images/chart-guide-treemap-chart-introducing-the-treemap-chart-image-3.png)</span> (__Back to Top__) from the top-right corner of the chart. The resultant view is the initial stage of the chart.
