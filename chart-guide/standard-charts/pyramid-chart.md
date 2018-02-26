@@ -7,13 +7,7 @@ breadcrumb: [["Home", "/dev"], ["Pyramid Chart"]]
 
 Use Pyramid charts to compare data, such as the sales data of a product for a year. A pyramid chart consists of various segments, each representing a data point. The height of the pyramid segment, with respect to the entire pyramid, represents the value of a specific data point.
 
-## Basics of a pyramid chart
-
 As you know, each segment in a pyramid chart represents a dataset with the height of the segment representing the value for that dataset. To distinguish segments from one another, you can configure them individually for their background, border, etc. Adjacent to the pyramid segments, the label and value of that pyramid can be displayed.
-
-A simple 2D pyramid chart looks like the following:
-
-**<chart>**
 
 ## Salient features
 
@@ -62,7 +56,9 @@ To create a pyramid chart follow the steps given below:
 
 The Global Wealth Pyramid chart you get by using the above code will look like the following:
 
-**<<Insert Live Chart>>**
+{% embed_all standard-charts-pyramid-chart-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/pktoL7o4/ "@@open-newtab") to edit the above chart.
 
 You can configure several functional and cosmetic properties for pyramid charts.
 
@@ -84,8 +80,7 @@ Use the following attributes to render a 2D pyramid chart with customized border
 
 Refer to the code given below:
 
-```
-
+```json
 {
     "chart": {
         "is2D": "1",
@@ -94,12 +89,14 @@ Refer to the code given below:
         "plotBorderAlpha": "100",
         "plotBorderColor": "#333333"
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_all standard-charts-pyramid-chart-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/oy87kg3f/ "@@open-newtab") to edit the above chart.
 
 ## Show labels at the center of the chart
 
@@ -107,18 +104,19 @@ Set the value of the `showLabelsAtCenter` attribute to '1', to show the labels a
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
-       
         "showLabelsAtCenter": "1"
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_all standard-charts-pyramid-chart-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/6u7e72co/ "@@open-newtab") to edit the above chart.
 
 ## Show labels in the legend of the chart
 
@@ -130,20 +128,20 @@ You can show the labels in the legend box, instead of showing them with the data
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
-       
         "showlegend": "1",
         "showlabels": "0"     
-
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_all standard-charts-pyramid-chart-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/c9t3ya49/ "@@open-newtab") to edit the above chart.
 
 ## Configure the position of the legend box
 
@@ -151,18 +149,19 @@ By default, the legend box is placed at the bottom of the pyramid chart. You can
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "legendPosition": "RIGHT",
-
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_all standard-charts-pyramid-chart-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/cLah09x0/ "@@open-newtab") to edit the above chart.
 
 ## Show data values as percentage
 
@@ -170,19 +169,19 @@ You can configure a pyramid chart to show percent values instead of numerical va
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
-       
         "showPercentValues": "1"
-
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_all standard-charts-pyramid-chart-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/Lj8x9scr/ "@@open-newtab") to edit the above chart.
 
 ## Slice Out Individual Pyramid Slices
 
@@ -190,19 +189,19 @@ You can make either all slices, or individual slice(s) of the pyramid chart, app
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
-       
         "isSliced": "1"
-
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_all standard-charts-pyramid-chart-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/bwwct623/ "@@open-newtab") to edit the above chart.
 
 ## Configure Hover Effects 
  
@@ -222,10 +221,9 @@ Use the attributes given below, to configure the hover effects in a chart:
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
-        ...
         "showHoverEffect": "1",
         "hoverColor": "#cccccc",
         "hoverAlpha": "75",
@@ -233,10 +231,9 @@ Refer to the code given below:
         "borderHoverAlpha": "100",
         "borderHoverThickness": "3"
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
-
+GIF
