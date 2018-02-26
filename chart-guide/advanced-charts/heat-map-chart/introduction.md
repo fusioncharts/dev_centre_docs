@@ -59,10 +59,10 @@ Heat map charts allow you to display two types of legends:
 
 A simple gradient legend looks as shown in the image below:
 
-![image gradient-legend]({% site.baseurl %}/images/heat-map-introduction-1.jpg)
+<span>![image gradient-legend]({% site.baseurl %}/images/heat-map-introduction-1.jpg) </span>
 
 ### Icon Legend
 
 A simple icon legend looks as shown in the image below:
 
-![image icon-legend]({% site.baseurl %}/images/heat-map-introduction-2.jpg)
+<span>![image icon-legend]({% site.baseurl %}/images/heat-map-introduction-2.jpg) </span>

@@ -10,7 +10,7 @@ FusionCharts Suite XT lets you export your charts (as __JPG__, __PNG__, __SVG__,
 
 The exporting feature can be enabled by setting the `exportEnabled` attribute to 1. The mode of export can be selected by setting the `exportMode` attribute to server, client, or auto, as required.
 
-When export is enabled, the ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) button appears in the top-right corner of the chart. Clicking this button will display the export menu, as shown in the image below. This menu contains a list of all the possible formats the chart can be exported in.
+When export is enabled, the <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> button appears in the top-right corner of the chart. Clicking this button will display the export menu, as shown in the image below. This menu contains a list of all the possible formats the chart can be exported in.
 
 ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-menu.jpg)
 
