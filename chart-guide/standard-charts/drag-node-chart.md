@@ -39,7 +39,7 @@ Using a drag-node chart, you can:
 
 A sample drag-node chart is given below:
 
-<chart>
+**<chart>**
 
 ## Configure Drag-node Charts
 
@@ -52,28 +52,26 @@ Set the value of the `allowDrag` attribute to `1` to make a node draggable.
 Refer to the code below:
 
 ```
-
+**INSERT CODE**
 ```
 
 The chart will look as shown below:
 
-<chart>
+**<chart>**
 
 ### Switch between modes
 
-You can either render drag-node charts in the edit mode (in which you can add, edit, or delete 
-
-nodes, connectors, and labels), or in the view mode(in which you can only view the chart). To enable view mode, set the value of the `viewMode` attribute to `1`. If you set its value to `0` instead, then the chart will be rendered in edit mode, but will have a **Settings** button at the bottom of it.
+You can either render drag-node charts in the edit mode (in which you can add, edit, or delete nodes, connectors, and labels), or in the view mode (in which you can only view the chart). To enable view mode, set the value of the `viewMode` attribute to `1`. If you set its value to `0` instead, then the chart will be rendered in edit mode, but will have a **Settings** button at the bottom of it.
 
 Refer to the code below:
 
 ```
-
+**INSERT CODE**
 ```
 
 The chart will look as shown below:
 
-<chart>
+**<chart>**
 
 ## Add and edit nodes
 
@@ -82,7 +80,7 @@ Using FusionCharts Suite XT, you can customize a drag-node chart in runtime. You
 
 The chart will look as shown below:
 
-<chart>
+**<chart>**
 
 The above chart shows the US Subway Map and uses draggable nodes to mark locations on the map.
 
@@ -90,17 +88,17 @@ The above chart shows the US Subway Map and uses draggable nodes to mark locatio
 
 Follow the steps given below to add a new node to the above subway map chart.
 
-**Step 1**: From the bottom-left corner of the chart, click the ![](null) button. Notice that a menu is rendered..
+* From the bottom-left corner of the chart, click the **image** button. Note that a menu is rendered.
 
-**Step 2**: From the menu, select **Add a node**.
+* From the menu, select **Add a node**.
 
-![](null)
+**IMAGE**
 
 You will see a node properties dialog box, as shown in the image below:
 
-![](null)
+**IMAGE**
 
-**Step 3**: In this dialog box, enter the node information, and finally click the **Submit** button.
+* In this dialog box, enter the node information, and finally click the **Submit** button.
 
 Here's how to fill in the different fields in the dialog box:
 
@@ -146,65 +144,61 @@ Here's how to fill in the different fields in the dialog box:
 
 The dialog box will look like the one shown below:
 
-![](null)
+**IMAGE**
 
 Now, when you click on the **Submit** button, the newly created node will look like the following:
 
-![](null)
+**IMAGE**
 
-Note: You can define nodes in the chart data using the `data` object of the `dataset` object.
+> Note: You can define nodes in the chart data using the `data` object of the `dataset` object.
 
-#### Customize chart by trapping raised event
+## Customize chart by trapping raised event
 
 When you create a new node, a JavaScript event, named `nodeAdded`, is raised. You can trap and use this event to customize the output, according to your requirements.
 
 Refer to the code below:
 
-<code snippet>
+**<code snippet>**
 
-### Edit a node at runtime
+## Edit a node at runtime
 
 You can edit all of the properties of a node, except for the ID and the dataset to which it belongs. To edit a node:
 
-**Step 1**: Press and hold the left mouse button on that node. The node properties dialog box will be rendered with the **Id** and **Dataset** fields disabled.
+* Press and hold the left mouse button on that node. The node properties dialog box will be rendered with the `Id` and `Dataset` fields disabled.
 
-**Step 2**: In this dialog box, re-populate the fields you want to edit.
+* In this dialog box, re-populate the fields you want to edit.
 
-**Step 3**: Click **Submit**.
+* Click **Submit**.
 
-The dialog box will look like the one shown below:
+The dialog box will look like as shown below:
 
-![](null)
+**IMAGE**
 
 Now, when you click on the **Submit** button, the edited node will look like the following:
 
-![](null)
-
-#### Customize chart by trapping raised event
+**IMAGE**
 
 When you edit a node, a JavaScript event named `nodeUpdated` is raised. You can trap and use this event to customize the output according to your requirements.
 
 The code snippet required to trap this event is given below:
 
-<code snippet>
+**<code snippet>**
 
-### Delete a node at runtime
+## Delete a node at runtime
 
 To delete a node:
 
-**Step 1**: Press and hold the left mouse button on the node that you want to delete. The node properties dialog box will appear.
+* Press and hold the left mouse button on the node that you want to delete. The node properties dialog box will appear.
 
-**Step 2**: In the dialog box, click **Delete** button. The node will be deleted.
+* In the dialog box, click **Delete** button. The node will be deleted.
 
-![](null)
-
-#### Customize chart by trapping raised event
+**IMAGE**
 
 When you delete a node, a JavaScript event named `nodeDeleted` is raised. You can trap and use this event to customize the output according to your requirements.
 
 The code snippet required to trap this event is given below:
 
-<code snippet>
+**<code snippet>**
 
 > You can get the latest updated node positions using JavaScript or by[ submitting the updated positions](https://www.fusioncharts.com/dev/chart-guide/advanced-charts/drag-node-chart/updating-chart-data-on-server) to a server-side script.
 
@@ -214,7 +208,7 @@ Using FusionCharts Suite XT, you can customize a drag-node chart at runtime. You
 
 A sample chart will look like the following:
 
-<chart>
+**<chart>**
 
 The above chart shows the US Subway Map and uses drag-able nodes to mark locations on the map.
 
@@ -224,19 +218,19 @@ In the above chart, the "My Edited Location" node does not have any connectors c
 
 To add a connector:
 
-**Step 1**: From the bottom-left corner of the chart, click the ![](null) button. A menu will be rendered.
+* From the bottom-left corner of the chart, click the ![](null) button. A menu will be rendered.
 
-**Step 2**: From the menu, select **Add a Connector**.
+* From the menu, select **Add a Connector**.
 
-![](null)
+**Image**
 
 The connector properties dialog box, as seen in the image below, will appear:
 
-![](null)
+**Image**
 
-**Step 3**: In this dialog box, enter the connector information.
+* In this dialog box, enter the connector information.
 
-**Step 4**: Click **Submit**.
+* Click **Submit**.
 
 Here's how to fill in the different fields in the dialog box:
 
@@ -270,15 +264,13 @@ Here's how to fill in the different fields in the dialog box:
 
 The image below shows the fields of the dialog box populated for a new connector:
 
-![](null)
+**IMAGE**
 
 Now, when you click the **Submit** button, the new connector created will look like the following:
 
-![](null)
+**IMAGE**
 
 You can define connectors in chart data too. Each connector line is defined in the data of the chart as an object in the connectors array element.
-
-#### Customize chart by trapping raised event
 
 When you create a new connector, a JavaScript event named `connectorAdded` is raised. You can trap and use this event to customize the output according to your requirements.
 
@@ -292,39 +284,35 @@ You can edit all properties of a connector, except for the source and destinatio
 
 To edit a connector:
 
-**Step 1**: Press and hold the left mouse button on the connector to be edited. The connector properties dialog box will appear, with the **Connect To** and **Connect From** fields disabled.
+* Press and hold the left mouse button on the connector to be edited. The connector properties dialog box will appear, with the **Connect To** and **Connect From** fields disabled.
 
-**Step 2**: In this dialog box, re-populate the fields you want to edit.
+* In this dialog box, re-populate the fields you want to edit.
 
-**Step 3**: Click **Submit**.
+* Click **Submit**.
 
 The dialog box will look like the one shown below:
 
-![](null)
+**IMAGE**
 
 The edited connector will look like the following:
 
-![](null)
-
-#### Customize chart by trapping raised event
+**IMAGE**
 
 When you edit a connector, a JavaScript event named `connectorUpdated` is raised. You can trap and use this event to customize the output according to your requirements.
 
 The code snippet required to trap this event is given below:
 
-<code snippet>
+**<code snippet>**
 
 ### Delete a Connector at runtime
 
 To delete a connector:
 
-**Step 1**: Press and hold the left mouse button on the connector to delete. The connector properties dialog box appears.
+* Press and hold the left mouse button on the connector to delete. The connector properties dialog box appears.
 
-**Step 2**: From the dialog box, click **Delete**. The connector will be deleted.
+* From the dialog box, click **Delete**. The connector will be deleted.
 
-![](null)
-
-#### Customize chart by trapping raised event
+**IMAGE**
 
 When you delete a connector, a JavaScript event named `connectorDeleted` is raised. You can trap and use this event to customize the output according to your requirements.
 
@@ -338,21 +326,23 @@ FusionCharts Suite XT allows you to create individual floating text labels on th
 
 To understand this, the sample chart that we will use looks like this:
 
+**CHART**
+
 The above chart shows the US Subway Map and uses draggable nodes to mark locations on the map.
 
 ### Add a text label at runtime
 
 To add a new text label:
 
-**Step 1**: From the bottom-left corner of the chart, click the ![](null) button. A menu is rendered.
+* From the bottom-left corner of the chart, click the ![](null) button. A menu is rendered.
 
-**Step 2**: From the menu, select **Add a Label**. The label properties dialog box, as seen in the image below, will appear:
+* From the menu, select **Add a Label**. The label properties dialog box, as seen in the image below, will appear:
 
-![](null)
+**IMAGE**
 
-**Step 3**: In the label properties dialog, enter the label information.
+* In the label properties dialog, enter the label information.
 
-**Step 4**: Click **Submit**.
+* Click **Submit**.
 
 Here's how to fill in the different fields in the dialog box:
 
@@ -374,43 +364,39 @@ Here's how to fill in the different fields in the dialog box:
 
 * Specify the hex code for the label background color in the Background Color field.
 
-The dialog box will look like the one shown below:
+The dialog box will look like as shown below:
 
-![](null)
+**IMAGE**
 
 Now, when you click the **Submit** button, the new label created will look like the following:
 
-![](null)
+**IMAGE**
 
 You can drag the label to any position on the chart.
 
 You can define labels in chart data, through the object as the `labels` array element.
 
-#### Customize chart by trapping raised event
-
 When you create a new label, a JavaScript event named `labelAdded` is raised. You can trap and use this event to customize the output according to your requirements.
 
 The code snippet required to trap this event is given below:
 
-<code snippet>
+**<code snippet>**
 
 ### Delete a text label at runtime
 
 To delete a text label:
 
-**Step 1**: Press and hold the left mouse button on the label that you want to delete. A dialog box will appear and ask you to confirm the deletion.
+* Press and hold the left mouse button on the label that you want to delete. A dialog box will appear and ask you to confirm the deletion.
 
-![](null)
+**IMAGE**
 
-**Step 2**: In the dialog box, click the **Delete** button. The label will be deleted.
-
-#### Customize chart by trapping raised event
+* In the dialog box, click the **Delete** button. The label will be deleted.
 
 When you delete a label, a JavaScript event named `labelDeleted` is raised. You can trap and use this event to customize the output according to your requirements.
 
 The code snippet required to trap this event is given below:
 
-<code snippet>
+**<code snippet>**
 
 > You can get the latest updated node and connector positions using JavaScript or by[ submitting the updated positions](https://www.fusioncharts.com/dev/chart-guide/advanced-charts/drag-node-chart/updating-chart-data-on-server) to a server-side script.
 
@@ -432,11 +418,11 @@ To enable data submission to server-side script, you need to make sure that the 
 
 Use the following code snippet to show the **Submit** button:
 
-<code snippet>
+**<code snippet>**
 
 This will add a submit button to your chart, as shown below:
 
-![](null)
+**IMAGE**
 
 Use the following attributes to show/hide and define the form properties for the **Submit** button:
 
@@ -460,7 +446,7 @@ Use the following attributes to show/hide and define the form properties for the
 
 You can see how the server-side PHP script is used to submit data, in the code snippet given below:
 
-<code snippet>
+**<code snippet>**
 
 ## Get data using JavaScript
 
@@ -468,13 +454,13 @@ In a drag-node chart, you can update data in real-time. To access the updated JS
 
 In this section, you will see how to read the updated data using JavaScript functions present on the same page. Once the chart is rendered, you can access the updated chart data as JSON, simply by calling the `getJSONData()` function on the chart. Use the following code snippet to do so:
 
-<code snippet>
+**<code snippet>**
 
 > The function getJSONData() returns the latest or changed data. You need to use this function to retrieve the original data from the chart, as well. Note that in order to get the original data from the chart, you need to pass `false` as a parameter to the function. For example, `var jsonRtn = ourChart.getJSONData(false);`
 
 The chart will look as shown below:
 
-<chart>
+**<chart>**
 
 Now, make the following updates to this drag-node chart:
 
@@ -484,9 +470,9 @@ Now, make the following updates to this drag-node chart:
 
 The chart will look as shown below:
 
-<chart>
+**<chart>**
 
 Now if you want to get the current data using the code `var jsonRtn = ourChart.getJSONData(); alert(JSON.stringify(jsonRtn));`, the updated data will be shown in the chart. The modified part of the updated data is shown in the code snippet given below:
 
-<code snippet>
+**<code snippet>**
 
