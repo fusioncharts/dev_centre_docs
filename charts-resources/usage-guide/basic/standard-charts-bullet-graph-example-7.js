@@ -15,31 +15,33 @@
             "numberPrefix": "$",
             "numberSuffix": "K",
             "chartBottomMargin": "25",
-            //Configuring plot fill color
-            "plotFillColor": "#5b0101",
-            //Configuring plot transparenct (alpha)
-            "plotFillAlpha": "90",
-            //Configuring target color
-            "targetColor": "#5b0101",
-            //Configuring target thickness
-            "targetThickness": "4"
+            //Defining color range fill mix formula
+            "colorRangeFillMix": "{light-10},{light-70},{dark-10}",
+            //Defining color range fill ratio
+            "colorRangeFillRatio": "10,70,20",
+            //Showing color range borders
+            "showColorRangeBorder": "1",
+            //Customizing color range borders (Color, Thickness and Alpha)
+            "colorRangeBorderColor": "#CCCCCC",
+            "colorRangeBorderThickness": "1",
+            "colorRangeBorderAlpha": "100"
         },
         "colorRange": {
             "color": [{
                 "minValue": "0",
                 "maxValue": "50",
                 "code": "#e44a00",
-                "alpha": "25"
+                "alpha": "50"
             }, {
                 "minValue": "50",
                 "maxValue": "75",
                 "code": "#f8bd19",
-                "alpha": "25"
+                "alpha": "50"
             }, {
                 "minValue": "75",
                 "maxValue": "120",
                 "code": "#6baa01",
-                "alpha": "25"
+                "alpha": "50"
             }]
         },
         "value": "82",

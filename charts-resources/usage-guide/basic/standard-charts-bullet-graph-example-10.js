@@ -15,14 +15,16 @@
             "numberPrefix": "$",
             "numberSuffix": "K",
             "chartBottomMargin": "25",
-            //Configuring plot fill color
-            "plotFillColor": "#5b0101",
-            //Configuring plot transparenct (alpha)
-            "plotFillAlpha": "90",
-            //Configuring target color
-            "targetColor": "#5b0101",
-            //Configuring target thickness
-            "targetThickness": "4"
+            "minorTMNumber": "3",
+            //Configuring tick marks cosmetics
+            "majorTMcolor": "#0075c2",
+            "majorTMalpha": "50",
+            "majorTMheight": "5",
+            "majorTMthickness": "2",
+            "minorTMcolor": "#0075c2",
+            "minorTMalpha": "50",
+            "minorTMheight": "2",
+            "minorTMThickness": "1"
         },
         "colorRange": {
             "color": [{

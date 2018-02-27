@@ -15,14 +15,14 @@
             "numberPrefix": "$",
             "numberSuffix": "K",
             "chartBottomMargin": "25",
-            //Configuring plot fill color
-            "plotFillColor": "#5b0101",
-            //Configuring plot transparenct (alpha)
-            "plotFillAlpha": "90",
-            //Configuring target color
-            "targetColor": "#5b0101",
-            //Configuring target thickness
-            "targetThickness": "4"
+            //Configuring hover effects
+            "targetHoverColor": "#1aaf5d",
+            "targetHoverAlpha": "75",
+            "targetHoverThickness": "5",
+            "showPlotBorderOnHover": "1",
+            "plotBorderHoverColor": "#001421",
+            "plotBorderHoverAlpha": "75",
+            "plotBorderHoverThickness": "2"
         },
         "colorRange": {
             "color": [{

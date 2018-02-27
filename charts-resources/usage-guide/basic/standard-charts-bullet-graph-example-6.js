@@ -15,14 +15,10 @@
             "numberPrefix": "$",
             "numberSuffix": "K",
             "chartBottomMargin": "25",
-            //Configuring plot fill color
-            "plotFillColor": "#5b0101",
-            //Configuring plot transparenct (alpha)
-            "plotFillAlpha": "90",
-            //Configuring target color
-            "targetColor": "#5b0101",
-            //Configuring target thickness
-            "targetThickness": "4"
+            // Percent of width occupied by the plot
+            "plotfillpercent": "30",
+            // Percent of canvas width occupied by target bar
+            "targetFillPercent": "30"
         },
         "colorRange": {
             "color": [{
