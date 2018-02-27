@@ -85,7 +85,7 @@ To create a bullet graph follow the steps given below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-bullet-graph-example-3.js %}
+{% embed_chart standard-charts-bullet-graph-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/yskgsb97/ "@@open-newtab") to edit the above chart.
 
@@ -120,7 +120,7 @@ Refer to the code below::
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-bullet-graph-example-4.js %}
+{% embed_chart standard-charts-bullet-graph-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/joyr91g7/ "@@open-newtab") to edit the above chart.
 
@@ -151,7 +151,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-bullet-graph-example-5.js %}
+{% embed_chart standard-charts-bullet-graph-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/710b7267/ "@@open-newtab") to edit the above chart.
 
@@ -176,7 +176,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-bullet-graph-example-6.js %}
+{% embed_chart standard-charts-bullet-graph-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/mefby40r/ "@@open-newtab") to edit the above chart.
 
@@ -212,7 +212,7 @@ Refer to the code below:
 ```
 The chart will look as shown below:
 
-{% embed_all standard-charts-bullet-graph-example-7.js %}
+{% embed_chart standard-charts-bullet-graph-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/uxhr8wnk/ "@@open-newtab") to edit the above chart.
 
@@ -233,7 +233,7 @@ Refer to the code below:
 ```
 The chart will look as shown below:
 
-{% embed_all standard-charts-bullet-graph-example-8.js %}
+{% embed_chart standard-charts-bullet-graph-example-8.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/jgk1xjtx/ "@@open-newtab") to edit the above chart.
 
@@ -261,7 +261,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-bullet-graph-example-9.js %}
+{% embed_chart standard-charts-bullet-graph-example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/cot6n25d/ "@@open-newtab") to edit the above chart.
 
@@ -317,7 +317,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-bullet-graph-example-10.js %}
+{% embed_chart standard-charts-bullet-graph-example-10.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/ma7ndkhg/ "@@open-newtab") to edit the above chart.
 
@@ -336,7 +336,7 @@ Refer to the code below:
 ```
 The chart will look as shown below:
 
-{% embed_all standard-charts-bullet-graph-example-11.js %}
+{% embed_chart standard-charts-bullet-graph-example-11.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/2vopy2jm/ "@@open-newtab") to edit the above chart.
 
@@ -356,7 +356,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-bullet-graph-example-12.js %}
+{% embed_chart standard-charts-bullet-graph-example-12.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/2gd2htrt/ "@@open-newtab") to edit the above chart.
 
@@ -420,11 +420,11 @@ A bullet graph configured for real-time updates using JavaScript API looks like 
    <span style="font-weight: bold;font-size: small;">Daily Sales Tracker by Salesperson</span>
    <span style="font-size: small;">Stereo Exchange Ltd, New York</span>
 </div>  <div style="padding-left: 2px; margin-top: -25px;">
-<p>{% embed_all standard-charts-bullet-graph-example-14.js %}</p>
-<p>{% embed_all standard-charts-bullet-graph-example-15.js %}</p>
-<p>{% embed_all standard-charts-bullet-graph-example-16.js %}</p>
-<p>{% embed_all standard-charts-bullet-graph-example-17.js %}</p>
-<p>{% embed_all standard-charts-bullet-graph-example-18.js %}</p>
+<p>{% embed_chart standard-charts-bullet-graph-example-14.js %}</p>
+<p>{% embed_chart standard-charts-bullet-graph-example-15.js %}</p>
+<p>{% embed_chart standard-charts-bullet-graph-example-16.js %}</p>
+<p>{% embed_chart standard-charts-bullet-graph-example-17.js %}</p>
+<p>{% embed_chart standard-charts-bullet-graph-example-18.js %}</p>
 </div></div></br>
 
 Click [here](http://jsfiddle.net/fusioncharts/tqndwy20/ "@@open-newtab") to edit the above chart.
@@ -450,25 +450,13 @@ The JSON code looks as below:
 
 The chart will look as shown below:
 
-<div style="border: 1px solid; font-family: Open Sans; width: 454px;">
-      <div style="color: #595959;display: inline-block;width: 250px; text-align: center; margin: 10px 100px;">
-        <span style="font-weight: bold;font-size: small;">Daily Sales Tracker by Salesperson</span>
-        <span style="font-size: small;">Stereo Exchange Ltd, New York</span>
-      </div>  <div style="padding-left: 2px; margin-top: -25px;">
-      {% embed_chart standard-charts-bullet-graph-example-19.js %}
-    </div></div><br/>
+{% embed_chart standard-charts-bullet-graph-example-19.js %}
 
 ## Stop/restart updates
 
 A horizontal bullet configured to stop receiving real-time updates looks like the following:
 
-<div style="border: 1px solid; font-family: Open Sans; width: 454px;">
-      <div style="color: #595959;display: inline-block;width: 250px; text-align: center; margin: 10px 100px;">
-        <span style="font-weight: bold;font-size: small;">Daily Sales Tracker by Salesperson</span>
-        <span style="font-size: small;">Stereo Exchange Ltd, New York</span>
-      </div>  <div style="padding-left: 2px; margin-top: -25px;">
-      {% embed_all standard-charts-bullet-graph-example-20.js %}
-    </div></div><br/>
+{% embed_chart standard-charts-bullet-graph-example-20.js %}
 
 ## Configure real-time events
 
@@ -476,13 +464,7 @@ FusionCharts Suite XT introduces two events to track real-time updates on bullet
 
 Following is an implementation of `realTimeUpdateComplete` event in a real-time bullet graph:
 
-<div style="border: 1px solid; font-family: Open Sans; width: 454px;">
-      <div style="color: #595959;display: inline-block;width: 250px; text-align: center; margin: 10px 100px;">
-        <span style="font-weight: bold;font-size: small;">Daily Sales Tracker by Salesperson</span>
-        <span style="font-size: small;">Stereo Exchange Ltd, New York</span>
-      </div>  <div style="padding-left: 2px; margin-top: -25px;">
-      {% embed_all standard-charts-bullet-graph-example-21.js %}
-    </div></div><br/>
+{% embed_chart standard-charts-bullet-graph-example-21.js %}
 
 The `realTimeUpdateComplete` event is raised every time the real-time bullet updates itself with new data. This event is raised in any of the following cases:
 
@@ -498,15 +480,7 @@ The event arguments provided in the advanced model are:
 
 Take a look at a horizontal bullet configured to listen to the `realTimeUpdateError` event, given below:
 
-<div style="border: 1px solid; font-family: Open Sans; width: 454px;">
-      <div style="color: #595959;display: inline-block;width: 250px; text-align: center; margin: 10px 100px;">
-        <span style="font-weight: bold;font-size: small;">Daily Sales Tracker by Salesperson</span>
-        <span style="font-size: small;">Stereo Exchange Ltd, New York</span>
-      </div>  <div style="padding-left: 2px; margin-top: -25px;">
-      {% embed_all standard-charts-bullet-graph-example-22.js %}
-    </div></div><br/>
-
-{% embed_all standard-charts-bullet-graph-example-22.js %}
+{% embed_chart standard-charts-bullet-graph-example-22.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/tfmv5km3/ "@@open-newtab") to edit the above chart.
 
