@@ -22,7 +22,7 @@ Click __Export as Excel__ option from the menu, to download an excel file with c
 
 ## Export the column 3D chart
 
-{% embed_all exporting-charts-in-excel-example-2.js %}
+{% embed_all exporting-charts-in-excel-example-2.js ayanxgk5 %}
 
 In the above sample, 3D column chart is exported in excel format.
 
@@ -35,37 +35,37 @@ Following attributes are used to customize the caption and subcaption of the abo
 
 ## Export doughnut chart
 
-{% embed_all exporting-charts-in-excel-example-3.js %}
+{% embed_all exporting-charts-in-excel-example-3.js vm6bdg65 %}
 
 Set the starting angle of the first slice using `startingAngle` attribute.
 
 ## Export error bar chart
 
-{% embed_all exporting-charts-in-excel-example-4.js %}
+{% embed_all exporting-charts-in-excel-example-4.js o8w457n9 %}
 
 Set `rotateValues` attribute to `1` to rotate data values in chart.
 
 ## Export radar chart
 
-{% embed_all exporting-charts-in-excel-example-5.js %}
+{% embed_all exporting-charts-in-excel-example-5.js ubhb4xhr %}
 
 Radar Chart is useful in visualizing multiple series of multi-dimensional data. Set `showLegend` attribute to `1` to show the legend.
 
 ## Export box and whisker chart
 
-{% embed_all exporting-charts-in-excel-example-6.js %}
+{% embed_all exporting-charts-in-excel-example-6.js 70yrjm62 %}
 
 Set the `legendPosition` attribute to `right` or `bottom` (default) to specify the legend position.
 
 ## Export spline chart
 
-{% embed_all exporting-charts-in-excel-example-7.js %}
+{% embed_all exporting-charts-in-excel-example-7.js ccuheL7k %}
 
 Embed a logo on the chart using `logoURL` attribute.
 
 ## Exporting the multi-axis line chart
 
-{% embed_all exporting-charts-in-excel-example-8.js %}
+{% embed_all exporting-charts-in-excel-example-8.js 13g80ft1 %}
 
 This chart will be rendered as a static image in excel sheet. Since excel supports only upto two axes, this chart cannot be represented as an interactive excel chart. So, the chart is exported as static image.
 
