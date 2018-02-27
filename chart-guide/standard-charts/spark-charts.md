@@ -193,7 +193,7 @@ Refer to the code given below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-2.js %}
+{% embed_chart standard-charts-spark-chart-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/D2C4q/ "@@open-newtab") to edit the above chart.
 
@@ -226,7 +226,7 @@ Refer to the code given below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-3.js %}
+{% embed_chart standard-charts-spark-chart-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/6ZVkb/ "@@open-newtab") to edit the above chart.
 
@@ -257,7 +257,7 @@ Refer to the code given below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-4.js %}
+{% embed_chart standard-charts-spark-chart-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/7rtvb/ "@@open-newtab") to edit the above chart.
 
@@ -288,7 +288,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-5.js %}
+{% embed_chart standard-charts-spark-chart-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/LWhcS/ "@@open-newtab") to edit the above chart.
 
@@ -319,7 +319,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-6.js %}
+{% embed_chart standard-charts-spark-chart-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/KEE66/ "@@open-newtab") to edit the above chart.
 
@@ -353,7 +353,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-7.js %}
+{% embed_chart standard-charts-spark-chart-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/745Az/ "@@open-newtab") to edit the above chart.
 
@@ -373,7 +373,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-8.js %}
+{% embed_chart standard-charts-spark-chart-example-8.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/8975mgsx/ "@@open-newtab") to edit the above chart.
 
@@ -410,7 +410,7 @@ Refer to the code given below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-9.js %}
+{% embed_chart standard-charts-spark-chart-example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/KRZ9W/ "@@open-newtab") to edit the above chart.
 
@@ -457,7 +457,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-10.js %}
+{% embed_chart standard-charts-spark-chart-example-10.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/aFE6Q/ "@@open-newtab") to edit the above chart.
 
@@ -499,7 +499,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-11.js %}
+{% embed_chart standard-charts-spark-chart-example-11.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/mLGD3/ "@@open-newtab") to edit the above chart.
 
@@ -570,7 +570,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-14.js %}
+{% embed_chart standard-charts-spark-chart-example-14.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/3MMH2/ "@@open-newtab") to edit the above chart.
 
@@ -595,7 +595,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-15.js %}
+{% embed_chart standard-charts-spark-chart-example-15.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/TQ6pv/ "@@open-newtab") to edit the above chart.
 
@@ -630,7 +630,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-16.js %}
+{% embed_chart standard-charts-spark-chart-example-16.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/ZLhAG/ "@@open-newtab") to edit the above chart.
 
@@ -677,7 +677,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-17.js %}
+{% embed_chart standard-charts-spark-chart-example-17.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/8WKu4/ "@@open-newtab") to edit the above chart.
 
@@ -718,7 +718,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-18.js %}
+{% embed_chart standard-charts-spark-chart-example-18.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/TZ3tB/ "@@open-newtab") to edit the above chart.
 
@@ -834,7 +834,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-21.js %}
+{% embed_chart standard-charts-spark-chart-example-21.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/http://jsfiddle.net/fusioncharts/LQuEr/2// "@@open-newtab") to edit the above chart.
 
@@ -864,7 +864,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-22.js %}
+{% embed_chart standard-charts-spark-chart-example-22.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/RAVML/ "@@open-newtab") to edit the above chart.
 
@@ -884,7 +884,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-12.js %}
+{% embed_chart standard-charts-spark-chart-example-12.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/q6m35/ "@@open-newtab") to edit the above chart.
 
@@ -904,7 +904,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-spark-chart-example-19.js %}
+{% embed_chart standard-charts-spark-chart-example-19.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/U3Qkj/ "@@open-newtab") to edit the above chart.
 
