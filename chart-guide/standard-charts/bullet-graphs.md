@@ -15,9 +15,13 @@ The bullet graph features a single, primary measure (for example, current year-t
 
 You can orient bullet graphs horizontally or vertically. You can even stack multiple graphs to compare several measures at once.
 
-**<Horizontal bullet graph>**
+{% embed_all standard-charts-bullet-graph-example-1.js %}
 
-**<Vertical bullet graph>**
+Click [here](http://jsfiddle.net/fusioncharts/jGgrU/ "@@open-newtab") to edit the above chart.
+
+{% embed_all standard-charts-bullet-graph-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/Cn6bt/ "@@open-newtab") to edit the above chart.
 
 In the above charts, the filled bar represents the actual value and the line represents the target value.
 
@@ -47,13 +51,11 @@ As an example, create a bullet graph to show a month's revenue for an organizati
 
 Data for the bullet graph is provided in the table below:
 
-
 Range|What it means|Color|
 -|-|-
 0-50k|Poor|Light Red|
 50k-75k|Moderate|Light Yellow|
 75k-100k|Good|Light Green|
-
 
 Also, plot the following values:
 
@@ -81,10 +83,11 @@ To create a bullet graph follow the steps given below:
 
 * Define the color range (numerical value for qualitative ranges) for the chart under the `colorRange`. Each range value has its own exclusive `minValue` and `maxValue` attributes and also a color code to define qualitative ranges of performance - **poor**, **satisfactory**, and **good**.
 
-
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all standard-charts-bullet-graph-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/yskgsb97/ "@@open-newtab") to edit the above chart.
 
 > To render the above chart as a vertical bullet graph, change the value of the `type` attribute to `vBullet`.
 
@@ -104,17 +107,15 @@ To customize color properties of the bullet graph, use the following attributes:
 
 Refer to the code below::
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": {        
         "plotFillColor": "#5b0101",
         "plotFillAlpha": "90",
         "targetColor": "#5b0101",
         "targetThickness": "4"
-    }
-
+    },
+}
 ```
 
 The chart will look as shown below:
@@ -135,7 +136,7 @@ To customize the border, use the following attributes:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         
@@ -162,7 +163,7 @@ By default, the chart automatically decides the width/height (width in case of a
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         
@@ -195,7 +196,7 @@ You can configure the color range to be filled with a gradient mix instead of a 
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         
@@ -220,7 +221,7 @@ Set the value of `showShadow` attribute to `1`, to enable shadow effects for the
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
        
@@ -288,7 +289,7 @@ By default, the chart determines the number of major and minor tick marks automa
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         
@@ -316,7 +317,7 @@ Set the value of the `plotAsDot` attribute to `1`, to render a dot as the plot.
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
 
@@ -367,7 +368,7 @@ Use the following attributes to enable and configure hover effects, to improve t
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         
