@@ -16,7 +16,7 @@ Let's check out a few examples of specific chart types using Excel export.
 
 ## Export multi-series area 2D chart
 
-{% embed_all exporting-charts-in-excel-example-1.js %}
+{% embed_all exporting-charts-in-excel-example-1.js, "iframe": "207vp6yu" %}
 
 Click __Export as Excel__ option from the menu, to download an excel file with corresponding chart and data.
 
