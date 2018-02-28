@@ -206,7 +206,7 @@ A sample treemap with the gradient legend set to show only those nodes that have
 
 GIF
 
-Click [here ](https://www.fusioncharts.com/dev/chart-attributes?chart=treeap)for the complete list of attributes supported by the treemap.
+Click [here]({% site.baseurl %}chart-attributes/?chart=treemap "@@open-newtab") for the complete list of attributes supported by the treemap.
 
 ## Set tiling algorithm for the treemap
 
@@ -258,26 +258,60 @@ In the chart given below, you can see the nodes of the manufacturers (say Toyota
 
 Refer to the code below:
 
+```json
+{
+	"chart": {
+		"algorithm": "sliceanddice",
+		"slicingmode": "vertical"
+	}
+}
+```
+
+The chart looks like shown below:
+
 {% embed_all standard-charts-treemap-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/LL6rqgk4/ "@@open-newtab") to edit the above chart.
 
 **Horizontal Mode**
 
+To set slicing mode to `horizontal`, refer to the code below:
 
-When you set slicing mode to `horizontal`, the chart will look like the image given below:
+```json
+{
+	"chart": {
+		"algorithm": "sliceanddice",
+		"slicingmode": "horizontal"
+	}
+}
+```
 
-**CHART**
+The chart looks like shown below:
+
+{% embed_all standard-charts-treemap-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/2xoeqm8j/ "@@open-newtab") to edit the above chart.
 
 **Alternate Mode**
 
+When you set slicing mode to `alternate`, refer to the code below:
 
-When you set slicing mode to `alternate`, the chart will look as shown below:
+```json
+{
+	"chart": {
+		"algorithm": "sliceanddice",
+		"slicingmode": "alternate"
+	}
+}
+```
 
-**CHART**
+The chart looks like shown below:
 
+{% embed_all standard-charts-treemap-example-5.js %}
 
-Click [here ](https://www.fusioncharts.com/dev/chart-attributes?chart=treeap)for the complete list of attributes supported by the treemap.
+Click [here](http://jsfiddle.net/fusioncharts/buksebna/ "@@open-newtab") to edit the above chart.
+
+Click [here]({% site.baseurl %}chart-attributes/?chart=treemap "@@open-newtab") for the complete list of attributes supported by the treemap.
 
 ## Configure the Treemap
 
@@ -297,29 +331,33 @@ Using FusionCharts Suite XT, you can configure the functionality of your treemap
 
 ### Render navigation bar with traversal path
 
-
 In a treemap, the navigation bar displays a traversal path, which you can use to return to any of the traversed parents, simply by clicking on it. 
 
 Set the value of the `showNavigationBar` attribute to `1`, to show a navigation bar on a treemap. The bar can show the traversed path and provide the ability to switch to any traversed parent in a click. Otherwise, it can also provide the ability to return to a previous toolbar (which you can only use to go back one step) or to the root level.
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		"showNavigationBar": "1"
+	}
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all standard-charts-treemap-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/uL36xvxx/ "@@open-newtab") to edit the above chart.
 
 The treemap above shows the global population by continent as of 2015 with their literacy rate.
 
 When you click on a child node, the clicked node and its subtree will replace the current root node. For example, when you click on any node under Southeast Asia Region, the chart view will change to what is shown in the image below. Observe that all the parent nodes are visible in the navigation bar and you can switch to any of them directly by clicking on them. 
 
-**IMAGE**
+GIF
 
 ### Color the treemap data plots
-
 
 In a data-driven treemap, you can use color ranges to define colors for data plots, based on their values. For a treemap, you can define data plot colors:
 
