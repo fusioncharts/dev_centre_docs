@@ -33,13 +33,13 @@ Using FusionCharts Suite XT, you can build two types of heat map charts. Use the
 
 ### Numeric heat map chart
 
-{% embed_chart standard-charts-heat-map-chart-example-1.js %}
+{% embed_all standard-charts-heat-map-chart-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/LsSU9/ "@@open-newtab") to edit the above chart.
 
 ### Category based heat map chart
 
-{% embed_chart standard-charts-heat-map-chart-example-2.js %}
+{% embed_all standard-charts-heat-map-chart-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/4qg2v27x/ "@@open-newtab") to edit the above chart.
 
@@ -92,7 +92,7 @@ Numeric Range|Label|Color|
 
 The chart will look as shown below:
 
-{% embed_chart standard-charts-heat-map-chart-example-3.js %}
+{% embed_all standard-charts-heat-map-chart-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/9mngxv1s/ "@@open-newtab") to edit the above chart.
 
@@ -219,7 +219,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/n3o2ycc0/ "@@open-newtab") to edit the above chart.
 
-> Note: In the above data, the `color` attribute is present in two data elements, and applies different colors for the first two cells of the chart. These two colors are different from the colors defined in the `colorRange` element. You can also control the transparency of the cell using the `alpha` attribute with the `data` object.
+> In the above data, the `color` attribute is present in two data elements, and applies different colors for the first two cells of the chart. These two colors are different from the colors defined in the `colorRange` element. You can also control the transparency of the cell using the `alpha` attribute with the `data` object.
 
 ## Create category based heat map charts
 
