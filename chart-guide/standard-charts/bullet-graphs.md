@@ -482,8 +482,6 @@ Take a look at a horizontal bullet configured to listen to the `realTimeUpdateEr
 
 {% embed_chart standard-charts-bullet-graph-example-22.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/tfmv5km3/ "@@open-newtab") to edit the above chart.
-
 The `realTimeUpdateError` event is raised when an error occurs while performing real-time update using `datastreamURL`. The event arguments provided in the advanced model are:
 
 * `eventObject `: This object contains `eventId`, `eventType` and `sender` properties.

@@ -9,11 +9,9 @@ A heat map chart is a specialized chart that uses colors to represent data value
 
 ## Basics of a heat map chart
 
-
 You can use the heat map chart to plot data like employee attendance records, a periodic table, tracking investments in the stock market, comparing the performance of different companies, etc. You can set different colors for different levels of data. For example, if you use the heat map chart to plot employee attendance records, you can use colors like red, yellow, blue and green to indicate a bad, average, good, and excellent grade, respectively, based on percentage values. Once the chart, you will be able to easily distinguish the four grades.
 
 ## Features of a heat map chart
-
 
 Using a heat map chart, you can:
 
@@ -31,34 +29,33 @@ Using a heat map chart, you can:
 
 ## Types of heat map charts
 
-
 Using FusionCharts Suite XT, you can build two types of heat map charts. Use the numeric heat map chart to plot numeric data, and the category based heat map chart to plot non-numeric data. These charts look as shown below:
 
 ### Numeric heat map chart
 
-**<<Insert chart>>**
+{% embed_chart standard-charts-heat-map-chart-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/LsSU9/ "@@open-newtab") to edit the above chart.
 
 ### Category based heat map chart
 
-**<<Insert chart>>**
+{% embed_chart standard-charts-heat-map-chart-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/4qg2v27x/ "@@open-newtab") to edit the above chart.
 
 ## Legends in heat map charts
-
 
 As stated earlier, you can use two different types of legends with heat map charts: 
 
 ### Gradient legend
 
-
-**<<Insert image>>**
+![Gradient-Legend]({% site.baseurl %}/images/heat-map-introduction-1.jpg)
 
 ### Icon legend
 
-
-**<<Insert image>>**
+![Icon-Legend]({% site.baseurl %}/images/heat-map-introduction-2.jpg)
 
 ## Create numeric heat map charts
-
 
 Use the following attributes to create a simple numeric heat map chart:
 
@@ -76,14 +73,7 @@ Use the following attributes to create a simple numeric heat map chart:
 
 * Specify the maximum value that can be plotted on the chart, using the `maxValue` attribute.
 
-Refer to the code below:
-
-```
-**INSERT CODE**
-```
-
 Use the following data to build the chart:
-
 
 Smartphone Ratings|Processor|Screen Size|Price|Battery Backup|Camera|
 -|-|-|-|-|-
@@ -92,9 +82,7 @@ HTC One (M8)|Quad Core 2.3 GHz|5 inch|$600|20 Hrs|5 MP|
 Apple iPhone 5S|Dual Core|4 inch|$649|10 Hrs|8 MP|
 Nokia Lumia 1520|Quad Core 2.2 GHz|6 inch|$470|27 Hrs|20MP|
 
-
 Use the following data to categorize bad, average, or good ratings:
-
 
 Numeric Range|Label|Color|
 -|-|-
@@ -102,13 +90,13 @@ Numeric Range|Label|Color|
 5-8.5|Average|"#f6bc33"|
 8.5-10|Good|"#6da81e"|
 
-
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-heat-map-chart-example-3.js %}
 
-### Define the order of rows and columns
+Click [here](http://jsfiddle.net/fusioncharts/9mngxv1s/ "@@open-newtab") to edit the above chart.
 
+## Define the order of rows and columns
 
 In the chart given above, you can see that the chart automatically decides the order of rows and columns according to the sequence in which you define them for the data object. So, the chart displays `Samsung Galaxy S5` in the first row, `HTC One (M8)` in the second, and so on.
 
@@ -124,27 +112,112 @@ Note: Use the attributes mentioned above with the `row` object when defining a r
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		...
+	},
+	"rows": {
+		"row": [{
+			"id": "IPHONES5",
+			"label": "Apple iPhone 5S"
+		}, 
+		{
+			"id": "SGS5",
+			"label": "Samsung Galaxy S5"
+		},
+		{
+			"id": "HTC1M8",
+			"label": "HTC One (M8)"
+		},
+		{
+			"id": "LUMIA",
+			"label": "Nokia Lumia 1520"
+        }]
+	},
+	"columns": {
+        "column": [{
+        	"id": "price",
+        	"label": "Price"
+        },
+        {
+        	"id": "processor",
+        	"label": "Processor"
+        },
+        {
+        	"id": "screen",
+        	"label": "Screen Size"
+        },
+        {
+        	"id": "backup",
+        	"label": "Battery Backup"
+        }, 
+        {
+        	"id": "cam",
+        	"label": "Camera"
+        }]
+	},
+	"dataset": [{
+		"data": [{
+			...
+		}]
+	}]     
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-heat-map-chart-example-4.js %}
 
-### Configure colors for individual cells
+Click [here](http://jsfiddle.net/fusioncharts/ty6y2sya/ "@@open-newtab") to edit the above chart.
+
+## Configure colors for individual cells
 
 Specify the hex code for the color that will be applied to a cell using the `color` attribute with the `data` object.
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		...
+	},
+	"rows": {
+		"row": [{
+			...
+        }]
+	},
+	"columns": {
+        "column": [{
+        	...
+        }]
+	},
+	"dataset": [{
+		"data": [{
+			"rowid": "IPHONES5",
+            "columnid": "processor",
+            "value": "9.1",
+            "tlLabel": "Dual Core",
+            "trLabel": "OS : iOS 7",
+            "color": "#d45faa"
+		},
+		{
+			"rowid": "SGS5",
+            "columnid": "processor",
+            "value": "8.7",
+            "tlLabel": "Quad Core 2.5 GHz",
+            "trLabel": "OS : Android 4.4 Kitkat",
+            "color": "#ff9f55"
+		}]
+	}]     
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-heat-map-chart-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/n3o2ycc0/ "@@open-newtab") to edit the above chart.
 
 > Note: In the above data, the `color` attribute is present in two data elements, and applies different colors for the first two cells of the chart. These two colors are different from the colors defined in the `colorRange` element. You can also control the transparency of the cell using the `alpha` attribute with the `data` object.
 
@@ -176,13 +249,68 @@ Use the following attributes to create a category based heat map chart:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "rows": {
+        "row": [{
+            "id": "NY",
+            "label": "New York"
+        }, 
+        {
+            "id": "LA",
+            "label": "Los Angeles"
+        }, 
+        {
+            ...
+        }]
+    },
+    "columns": {
+        "column": [{
+            "id": "wI",
+            "label": "Winter"
+        }, 
+        {
+            "id": "SU",
+            "label": "Summer"
+        }, 
+        {
+            ...
+        }]
+    },
+    "dataset": [{
+        "data": [{
+            "rowid": "LA",
+            "columnid": "WI",
+            "value": "60.10",
+            "colorRangeLabel": "Warm"
+        }, 
+        {
+            "rowid": "LA",
+            "columnid": "SP",
+            "displayValue": "64.5",
+            "colorRangeLabel": "Warm"
+        }, 
+        {
+            ...
+        }]
+    }],
+    "colorRange": {
+        "gradient": "0",
+        "color": [{
+            ...
+        }]
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-heat-map-chart-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/m0bkumqw/ "@@open-newtab") to edit the above chart.
 
 In the category based heat map chart given above, you can see the average temperature, across various seasons, for the top four cities in the U.S. Note that you can only define a single color for a particular category. Any data set to that category will appear in the color specified for that particular group. You cannot use gradient colors in a category based heat map chart.
 
@@ -192,11 +320,7 @@ You can create two types of legends in heat map charts built with FusionCharts S
 
 ### Create an icon legend
 
-
-Using an icon legend, you can display single color icons for numeric ranges. By default, a heat map chart is rendered with an icon legend, like the one in the image below:
-
-**IMAGE**
-
+Using an icon legend, you can display single color icons for numeric ranges. By default, a heat map chart is rendered with an icon legend.
 
 Use the following attributes to specify the color for each icon in the legend:
 
@@ -208,28 +332,53 @@ Use the following attributes to specify the color for each icon in the legend:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "dataset": [{
+        "data": [{
+            ...
+        }]
+    }],
+    "colorrange": {
+        ...
+        "color": [{
+            "code": "E24B1A",
+            "minvalue": "1",
+            "maxvalue": "5",
+            "label": "Bad"
+        }, {
+            "code": "F6BC33",
+            "minvalue": "5",
+            "maxvalue": "8.5",
+            "label": "Average"
+        }, {
+            "code": "6DA81E",
+            "minvalue": "8.5",
+            "maxvalue": "10",
+            "label": "Good"
+        }]
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-heat-map-chart-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ou00rdwd/ "@@open-newtab") to edit the above chart.
 
 ### Use interactivity of icon legends
 
 Icon legends are interactive. You can click a legend item to show or hide all the cells mapped with the color range represented by the legend item. A heat map chart rendered with all "average" ratings hidden looks as shown in the image below:
 
-**IMAGE**
+![icon-legend]({% site.baseurl %}/images/standard-charts-heat-map-chart-image-1.jpg)
 
 ## Create a gradient legend
 
-
 A gradient legend is a pane of blended colors derived from the `colorRange` definitions, and features a linear scale is drawn with two draggable pointers. Each color you define for a numeric range blends with the next color, forming a gradient strip. Each point on the gradient scale represents a unique color and value. So, all the different values in the chart appear in unique colors as per the position on the gradient scale.
-
-A simple gradient legend looks as shown in the image below:
-
-**IMAGE**
 
 Use the following attributes to configure a gradient legend:
 
@@ -243,28 +392,90 @@ Use the following attributes to configure a gradient legend:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+
+    "dataset": [{
+        "data": [{
+            ...
+        }]
+    }],
+    "colorRange": {
+        "gradient": "1",
+        "minValue": "0",
+        "code": "#e24b1a",
+        "startLabel": "Poor",
+        "endLabel": "Good",
+        "color": [{
+            "code": "#e24b1a",
+            "minValue": "1",
+            "maxValue": "5",
+            "label": "Bad"
+        }, {
+            "code": "#f6bc33",
+            "minValue": "5",
+            "maxValue": "7",
+            "label": "Average"
+        }, {
+            "code": "#6da81e",
+            "minValue": "7",
+            "maxValue": "10",
+            "label": "Good"
+        }]
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-heat-map-chart-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/9jfkcnmc/ "@@open-newtab") to edit the above chart.
 
 ### Configure a single-color gradient legend
-
 
 By default, a gradient legend is rendered using several different colors. However, you can also render a gradient legend using shades of the same color. To do this, set the hex code of the single color using the `code` attribute under the `colorRange` object.
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "rows": {
+        "row": [{
+            ...
+        }]
+    },
+    "columns": {
+        "column": [{
+            ...
+        }]
+    },
+    "dataset": [{
+        "data": [{
+            ...
+        }]
+    }],
+    "colorRange": {
+        "gradient": "1",
+        "minValue": "0",
+        "code": "#2a7faa",
+        "startLabel": "Not satisfied",
+        "endLabel": "Love it!"
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-heat-map-chart-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/48sa9jfw/ "@@open-newtab") to edit the above chart.
 
 ### Use interactivity of a gradient legend
 
@@ -282,7 +493,6 @@ Using FusionCharts XT, you can configure the functional properties of labels and
 
 ### Configure labels
 
-
 In a heat map chart, you can show multiple labels in different positions for the same data plot. For example, you can display labels at the center and the four corners of a dataplot. Use the following attributes to configure labels:
 
 * Display a numeric value at the center of a data plot using the `value` attribute. All number formatting features will apply, if you use this attribute.
@@ -299,13 +509,46 @@ In a heat map chart, you can show multiple labels in different positions for the
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "rows": {
+        "row": [{
+            ...
+        }]
+    },
+    "columns": {
+        "column": [{
+            ...
+        }]
+    },
+    "dataset": [{
+        "data": [{
+            "rowid": "SGS5",
+            "columnid": "processor",
+            "value": "8.7",
+            "tlLabel": "Quad Core 2.5 GHz"
+        }, 
+        {
+            ...
+        }]
+    }],
+    "colorrange": {
+        ...
+        "color": [{
+            ...
+        }]
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-heat-map-chart-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/jjpkt7zt/ "@@open-newtab") to edit the above chart.
 
 ### Configure tooltips
 
@@ -313,39 +556,136 @@ By default, a heat map chart configures the tool-tip by including the values ass
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        "toolTipColor": "#ffffff",
+        "toolTipBorderThickness": "0",
+        "toolTipBgColor": "#000000",
+        "toolTipBgAlpha": "80",
+        "toolTipBorderRadius": "2",
+        "toolTipPadding": "5",
+    },
+    "rows": {
+        "row": [{
+            ...
+        }]
+    },
+    "columns": {
+        "column": [{
+            ...
+        }]
+    },
+    "dataset": [{
+        "data": [{
+            "rowid": "SGS5",
+            "columnid": "processor",
+            "value": "8.7",
+            "tllabel": "Quad Core 2.5 GHz",
+            "trlabel": "OS : Android 4.4 Kitkat"
+        }, {
+            ...
+        }]
+    }],
+    "colorrange": {
+        ...
+        "color": [{
+            ...
+        }]
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-heat-map-chart-example-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/3wsay8rt/ "@@open-newtab") to edit the above chart.
 
 ## Handle out-of-range data
 
-
 If data values are beyond the numeric ranges you define in the `colorRange` object, the chart shows blank data plots. A chart with a blank data plot rendered for out-of-range data looks like the following:
 
-**<INSERT CHART>**
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        ...
+    },
+    "rows": {
+        "row": [{
+            ...
+        }]
+    },
+    "columns": {
+        "column": [{
+            ...
+        }]
+    },
+    "dataset": [{
+        "data": [{
+            ...
+        }]
+    }],
+    "colorRange": {
+        "gradient": "1",
+        "minValue": "0",
+        "code": "#2a7faa",
+        "startLabel": "Not satisfied",
+        "endLabel": "Love it!"
+    }
+}
+```
+
+{% embed_chart standard-charts-heat-map-chart-example-12.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/py94vcko/ "@@open-newtab") to edit the above chart.
 
 To avoid such blank data plots, you can enable percentage mapping for heat map charts.
 
 ## Map data by percentage
 
-
 Using percentage mapping, you can display data values in percentage. Set the value of the `mapByPercent` attribute to `1`, to enable percentage mapping for heat map charts.
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "rows": {
+        "row": [{
+            ...
+        }]
+    },
+    "columns": {
+        "column": [{
+            ...
+        }]
+    },
+    "dataset": [{
+        "data": [{
+            "rowid": "JA",
+            "columnid": "EN",
+            "value": "3.7"
+        }, {
+            ...
+        }]
+    }],
+    "colorRange": {
+        ...
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-heat-map-chart-example-13.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/a0bz875q/ "@@open-newtab") to edit the above chart.
 
 > Note: When you use percentage mapping, the lowest data value from the JSON data is considered to be the lower limit and displayed as 0%. The highest data value, on the other hand, is considered as the upper limit and is displayed as 100%. Also, you need to create color ranges with 0 as the lower limit and 100 as the upper limit. You can enable percentage mapping even if all your data values fall within the defined range. 
 
 In a category based heat map chart, if you provide a category name by the attribute `colorRangeLabel` through the `data` element, which is not defined in the `colorRange` element, the chart will show blank data plot.
-
