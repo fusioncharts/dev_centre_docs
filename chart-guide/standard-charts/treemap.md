@@ -162,20 +162,41 @@ Apart from the attributes detailed above, you also need to set the values of 3 o
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "data": [{
+        ...
+    }],
+    "colorrange": {
+        "mapbypercent": "1",
+        "gradient": "1",
+        "minvalue": "-25",
+        "code": "e24b1a",
+        "startlabel": "Decline",
+        "endlabel": "Rise",
+        "color": [{
+            "code": "ffffff",
+            "maxvalue": "0",
+            "label": "Static"
+        }, {
+            "code": "6da81e",
+            "maxvalue": "25",
+            "label": "AVERAGE"
+        }]
+    }
+}
 ```
 
 > The value you assign to the `sValue` attribute in the chart data will be used to assign color to a data plot, based on the numeric range it falls within.
 
-The treemap will look like as shown inthe image below:
+The gradient legend will look like as shown in the image below:
 
-{% embed_all standard-charts-treemap-example-2.js %}
-
-Click [here](http://jsfiddle.net/fusioncharts/dhauz809/ "@@open-newtab") to edit the above chart.
+![Gradient-Legend]({% site.baseurl %}/images/standard-charts-treemap-image-2.jpg)
 
 ### Show/hide data values using the gradient legend
-
 
 You can use the interactive gradient legend to filter nodes within a specific range of values. Drag the scale pointers to set the required lower and upper limits.
 
@@ -183,7 +204,7 @@ A sample treemap with the gradient legend set to show only those nodes that have
 
 > Notice that the nodes that don't fall in this bracket are all grayed out.
 
-**IMAGE**
+GIF
 
 Click [here ](https://www.fusioncharts.com/dev/chart-attributes?chart=treeap)for the complete list of attributes supported by the treemap.
 
@@ -207,7 +228,9 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-**<chart>**
+{% embed_all standard-charts-treemap-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/myz9pjpw/ "@@open-newtab") to edit the above chart.
 
 > Note: In the chart given above, you can compare the performances of top selling car manufacturers in Europe in the present year with that in the previous year. Click the rectangles to traverse through the chart and see how the chart view changes.
 
@@ -227,20 +250,17 @@ Still, if you want to use this algorithm, use the following attributes to do so.
 
     * `alternate`: In this mode, rectangles are sliced alternatively in the same level.
 
-Refer to the code below:
-
-```
-**INSERT CODE**
-```
-
 Find an example of each slicing mode, given below:
 
 **Vertical Mode**
 
-
 In the chart given below, you can see the nodes of the manufacturers (say Toyota Group, BMW Group) are sliced vertically, but their child nodes are sliced horizontally.
 
-**<chart>**
+Refer to the code below:
+
+{% embed_all standard-charts-treemap-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/LL6rqgk4/ "@@open-newtab") to edit the above chart.
 
 **Horizontal Mode**
 
