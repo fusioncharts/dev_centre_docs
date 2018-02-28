@@ -9,7 +9,9 @@ Treemapping is a visual representation of an information tree created using the 
 
 A simple treemap will look like as shown below:
 
-**<<Insert chart>>**
+{% embed_all standard-charts-treemap-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/dhauz809/ "@@open-newtab") to edit the above chart.
 
 Click the rectangles in the treemap shown above and see how you can traverse through the leaf nodes.
 
@@ -21,7 +23,7 @@ Use a treemap to display hierarchical information presented using a tree structu
 
 In the image given below, you can see how an information tree is translated to the treemap:
 
-**IMAGE**
+![TreeMap]({% site.baseurl %}/images/standard-charts-treemap-image-1.jpg)
 
 ## How to build a good treemap
 
@@ -41,7 +43,6 @@ Note: The treemap should utilize maximum space on the screen. If you manage the 
 
 ### Tiling
 
-
 Tiling is the process, by which a treemap divides large rectangles into smaller sub-rectangles. Ideally, a treemap tiling algorithm creates rectangles with an aspect ratio that is close to one, with ordering based on the underlying data tree. 
 
 These properties have an inverse relationship, though. You need to make a choice between optimizing between the order of placement and the aspect ratio. When you optimize the aspect ratio, the order of placement becomes less predictable. On the other hand, if you stabilize the order of placement, the aspect ratio degrades. Therefore, you can generally categorize tiling algorithms as the ones that:
@@ -56,17 +57,14 @@ These properties have an inverse relationship, though. You need to make a choice
 
 Aspect ratio, especially for the innermost rectangle, is one of the most significant constraints in a treemap chart. If the aspect ratio is high, the treemap has thin rectangles, which are extremely difficult to compare. In the ideal case, where the treemap aspect ratio is expected to be 1, the nested rectangles are squares that are much easier to compare, at a glance. 
 
-> Note: The aspect ratio is never exactly 1 in real-life use-cases, but there are algorithms that try to keep it to 1, by trading off the order.
+> The aspect ratio is never exactly 1 in real-life use-cases, but there are algorithms that try to keep it to 1, by trading off the order.
 
 In the table below, you can see the commonly used algorithms, as well as the trade offs that you must make when using them:
-
 
 Algorithm|Order|Aspect Ratio|
 -|-|-
 Slice and dice|Ordered|Very high|
 Squarified|Unordered|Lowest|
-
-
 
 Other algorithms that you can use include:
 
@@ -92,7 +90,6 @@ The basic interaction model for the treemap includes the following:
 
 ### FusionCharts treemap interaction model
 
-
 FusionCharts implements the following model for interacting with a treemap:
 
 #### The initial stage
@@ -104,7 +101,6 @@ Then, to go back up one level, click on Northern Region in the header of the vie
 **IMAGE GIF**
 
 ## Create a simple treemap
-
 
 A treemap is useful when you need to analyze hierarchical information. You can compare the 2D nested rectangles of a treemap to quickly gain insights from the data. To render a treemap chart, include fusioncharts.treemap.js in the project folder with rest of the .js files as mentioned [here](https://www.fusioncharts.com/dev/installation/client-side-frameworks/install-using-plainjs).
 
@@ -132,18 +128,13 @@ Use the following attributes to build a simple treemap:
 
 * Use the `sValue` attribute to specify the secondary value for a data item. This value is used to set the color (based on the color range defined using the `colorRange` object) of the rectangle (node).
 
-Refer to the code below:
-
-```
-**INSERT CODE**
-
-```
-
 The Tree map will look like as shown below:
 
-**<chart>**
+{% embed_all standard-charts-treemap-example-1.js %}
 
-> Note: The treemap shown above compares the sales team's performance in the present year with their performance in the previous year. Click on a rectangle to replace the node and its with the current root node. For example, click on any rectangle (node) in the Northern Region to change the chart view as shown in the image below:
+Click [here](http://jsfiddle.net/fusioncharts/dhauz809/ "@@open-newtab") to edit the above chart.
+
+> The treemap shown above compares the sales team's performance in the present year with their performance in the previous year. Click on a rectangle to replace the node and its with the current root node. For example, click on any rectangle (node) in the Northern Region to change the chart view as shown in the image below:
 
 **IMAGE GIF**
 
@@ -174,11 +165,14 @@ Refer to the code below:
 ```
 **INSERT CODE**
 ```
-> Note: The value you assign to the `sValue` attribute in the chart data will be used to assign color to a data plot, based on the numeric range it falls within.
+
+> The value you assign to the `sValue` attribute in the chart data will be used to assign color to a data plot, based on the numeric range it falls within.
 
 The treemap will look like as shown inthe image below:
 
-**INSERT CHART**
+{% embed_all standard-charts-treemap-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/dhauz809/ "@@open-newtab") to edit the above chart.
 
 ### Show/hide data values using the gradient legend
 
@@ -194,7 +188,6 @@ A sample treemap with the gradient legend set to show only those nodes that have
 Click [here ](https://www.fusioncharts.com/dev/chart-attributes?chart=treeap)for the complete list of attributes supported by the treemap.
 
 ## Set tiling algorithm for the treemap
-
 
 Tiling is the process of dividing large rectangles into smaller sub-rectangles. Ideally, a treemap tiling algorithm creates rectangles with an aspect ratio that is close to 1, with ordering based on the underlying data/information tree.
 
@@ -449,4 +442,3 @@ Refer to the code below:
 The chart will look as shown below:
 
 **<chart>**
-
