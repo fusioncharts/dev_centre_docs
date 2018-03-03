@@ -368,7 +368,15 @@ In a data-driven treemap, you can use color ranges to define colors for data plo
 Refer to the code below:
 
 ```
-**INSERT CODE**
+{
+	"chart": {
+		...
+	},
+	"data":{
+		...
+	},
+	"color"
+}
 ```
 
 The tree map will look like as shown in the image below:

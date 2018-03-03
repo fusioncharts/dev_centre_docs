@@ -28,7 +28,7 @@
             "labelFontSize": "9",
             "showchildlabels": "1",
             "algorithm": "sliceanddice",
-            "slicingmode": "horizontal",
+            "slicingmode": "alternate",
             "theme": "zune",
             "legendCaption": "Growth in sales - Compared to previous year"
         },
