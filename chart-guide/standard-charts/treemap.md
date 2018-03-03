@@ -1,5 +1,5 @@
 ---
-title:Treemap | FusionCharts
+title: Treemap | FusionCharts
 description: Treemapping is a visual representation of an information tree created using the tree data structure displayed as 2D nested rectangles,representing the nodes
 heading:Treemap
 breadcrumb: [["Home", "/dev"], ["Treemap"]]
@@ -37,7 +37,7 @@ In the image given below, you can see how an information tree is translated to t
 
 * To build an ideal treemap, maintain the aspect ratio as 1.
 
-Note: The treemap should utilize maximum space on the screen. If you manage the available space efficiently, you can plot thousands of items in a treemap.
+> The treemap should utilize maximum space on the screen. If you manage the available space efficiently, you can plot thousands of items in a treemap.
 
 ## Important concepts related to the treemap
 
@@ -222,8 +222,12 @@ Set the value of the `algorithm` attribute to `squarified`, to use the latter as
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		"algorithm": "squarified"
+	}
+}
 ```
 
 The chart will look like as shown below:
@@ -232,7 +236,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/myz9pjpw/ "@@open-newtab") to edit the above chart.
 
-> Note: In the chart given above, you can compare the performances of top selling car manufacturers in Europe in the present year with that in the previous year. Click the rectangles to traverse through the chart and see how the chart view changes.
+> In the chart given above, you can compare the performances of top selling car manufacturers in Europe in the present year with that in the previous year. Click the rectangles to traverse through the chart and see how the chart view changes.
 
 ### Use the slice and dice algorithm
 
@@ -367,26 +371,42 @@ In a data-driven treemap, you can use color ranges to define colors for data plo
 
 Refer to the code below:
 
-```
+```json
 {
 	"chart": {
 		...
 	},
-	"data":{
-		...
-	},
-	"color"
+	"data": [{
+        "label": "Top Selling Brands",
+        "fillcolor": "595f5d",
+        "value": "5800",
+        "data": [{
+            "label": "Samsung",
+            "fillcolor": "838986",
+            "value": "2217",
+            "data": [{
+                ...
+            }]
+        }]
+    }],
+    "colorrange": {
+        ...
+        "color": [{
+            ...
+        }]
+    }
 }
 ```
 
 The tree map will look like as shown in the image below:
 
-**INSERT CHART**
+{% embed_all standard-charts-treemap-example-8.js %}
 
-> Note that the data plot color in the sample treemap used so far has been assigned using the `colorRange` object. Use `colorRange` object to define the numeric ranges for the gradient legend. Then you can assign a color to a data plot, based on where the value of the `sValue` attribute falls within the numeric range.
+Click [here](http://jsfiddle.net/Lrg6gL4w/ "@@open-newtab") to edit the above chart.
+
+> The data plot color in the sample treemap used so far has been assigned using the `colorRange` object. Use `colorRange` object to define the numeric ranges for the gradient legend. Then you can assign a color to a data plot, based on where the value of the `sValue` attribute falls within the numeric range.
 
 ## Customize individual data plots
-
 
 Use the following attributes to customize individual data plots:
 
@@ -394,20 +414,49 @@ Use the following attributes to customize individual data plots:
 
 * Set the hex code for the color to be used for the data plot label, using the `fontColor` attribute.
 
-> Note: You can only customize the font color for individual data plots. Other customizations like the font family or the font size are unavailable at the individual data plot level.
+> Customize the font color for individual data plots. Other customizations like the font family or the font size are unavailable at the individual data plot level.
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		...
+	},
+	"data": [{
+        "label": "Top Selling Brands",
+        "fillcolor": "595f5d",
+        "value": "5800",
+        "data": [{
+            "label": "Samsung",
+            "fillcolor": "838986",
+            "value": "2217",
+            "data": [{
+                "label": "Galaxy Note 4",
+                "value": "519",
+                "sValue": "1.09",
+                "fillColor": "1b7ac7"
+            }{
+                ...
+            }]
+        }]
+    }],
+    "colorrange": {
+        ...
+        "color": [{
+            ...
+        }]
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all standard-charts-treemap-example-7.js %}
+
+Click [here](http://jsfiddle.net/2p8jujd1/ "@@open-newtab") to edit the above chart.
 
 ## Customize chart text
-
 
 Use the following attributes to customize all text within the chart canvas, including all the captions and sub-captions:
 
@@ -417,20 +466,27 @@ Use the following attributes to customize all text within the chart canvas, incl
 
 * Set the hex code of the color for the text using the `baseFontColor` attribute. 
 
-> Note: The base font attributes affect all text on the chart, including all the captions and sub-captions.
+> The base font attributes affect all text on the chart, including all the captions and sub-captions.
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		"baseFont": "Arial",
+		"baseFontSize": "11",
+		"baseFontColor": "59605e"
+	}
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all standard-charts-treemap-example-9.js %}
+
+Click [here](http://jsfiddle.net/q5ky0cg9/ "@@open-newtab") to edit the above chart.
 
 ## Customize data labels
-
 
 Use the following attributes to customize only the data labels in the chart:
 
@@ -444,20 +500,29 @@ Use the following attributes to customize only the data labels in the chart:
 
 * Display the label text in italic formatting, by setting the value of the `labelFontItalic` attribute to `1`.
 
-> Note: The label font attributes affect only the data labels on the chart.
+> The label font attributes affect only the data labels on the chart.
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		"labelFont": "Arial",
+		"labelFontSize": "12",
+		"labelFontColor": "ff0000",
+		"labelFontBold": "1",
+		"labelFontItalic": "1"
+	}
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+Create: {% embed_all standard-charts-treemap-example-10.js %}
+
+Click [here](http://jsfiddle.net// "@@open-newtab") to edit the above chart.
 
 ## Apply a glow effect to data labels
-
 
 You can apply a background color different from the label font color to data labels, generating a glow effect. This is useful when the data label font color and the rectangle fill color are either same or similar, which can happen when the chart is rendered with a gradient legend.
 
@@ -473,13 +538,22 @@ Use the following attributes to customize the glow effect for data labels:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		"labelGlow": "1",
+		"labelGlowIntensity": "50",
+		"labelGlowColor": "#cccc00",
+		"labelGlowRadius": "10"
+	}
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all standard-charts-treemap-example-11.js %}
+
+Click [here](http://jsfiddle.net/Lwgmxo0q/ "@@open-newtab") to edit the above chart.
 
 Click [here ](https://www.fusioncharts.com/dev/chart-attributes?chart=treeap)for the complete list of attributes supported by the treemap.
 
@@ -501,10 +575,21 @@ Using FusionCharts Suite XT, you can configure standard interactivity for items 
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		"beforeDrillDown": "",
+		"drillDown": "",
+		"beforeDrillUp": "",
+		"drillUp": "",
+		"drillDownCancelled": "",
+		"drillUpCancelled": ""
+	}
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all standard-charts-treemap-example-12.js %}
+
+Click [here](http://jsfiddle.net/sb57jj7b/ "@@open-newtab") to edit the above chart.
