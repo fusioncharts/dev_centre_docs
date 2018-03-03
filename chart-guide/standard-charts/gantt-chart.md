@@ -13,7 +13,9 @@ A Gantt chart is a date/time-based chart, with which you can plot tasks visually
 
 A typical FusionCharts Suite XT Gantt chart looks like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-gantt-chart-example-1.js %}
+
+Click [here](http://jsfiddle.net/4ga6go1j/ "@@open-newtab") to edit the above chart.
 
 ## Features of the Gantt Chart
 
@@ -89,9 +91,9 @@ A Gantt chart consists of the following elements:
 
 In the images given below, you can see a standard Gantt chart with a few of the above elements labeled:
 
-**Image**
+![gantt-element-image-1]({% site.baseurl %}/images/standard-charts-gantt-chart-image-1.gif)
 
-**Image**
+![gantt-element-image-2]({% site.baseurl %}/images/standard-charts-gantt-chart-image-2.gif)
 
 ## Categories and subcategories (dates)
 
@@ -147,11 +149,13 @@ The Gantt chart is a specialized chart that you can use to monitor the progress 
 
 As an example, see how you can create a Gantt chart that monitors the various processes and tasks involved in optimizing the reach of an organization on social media.
 
-> In order to render Gantt chart, include fusioncharts.Gantt.js in the project folder with rest of the .js files, as mentioned <<**[here](https://www.fusioncharts.com/dev/getting-started/installation.html)**>>.
+> In order to render Gantt chart, include fusioncharts.Gantt.js in the project folder with rest of the .js files, as mentioned **[here]({% site.baseurl %}/installation/client-side-frameworks/install-using-plainjs "@@open-newtab")**.
 
 A Gantt chart that you build to track the progress of a Social Media Optimization project looks like the following:
 
-**<<Insert chart>>**
+{% embed_chart standard-charts-gantt-chart-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/z79b74k3/ "@@open-newtab") to edit the above chart.
 
 To create a Gantt chart, you need to:
 
@@ -184,7 +188,9 @@ The Gantt chart shown above tracks the monthly progress of each process. Each mo
 
 The Social Media Optimization Gantt chart rendered with multiple categories looks like the following:
 
-**<<Insert chart>>**
+{% embed_chart standard-charts-gantt-chart-example-3.js %}
+
+Click [here](http://jsfiddle.net/w4jxncxa/ "@@open-newtab") to edit the above chart.
 
 ## Define and show/hide task labels
 
@@ -1120,4 +1126,3 @@ Refer to the code below:
 The chart will look as shown below:
 
 **<chart>**
-
