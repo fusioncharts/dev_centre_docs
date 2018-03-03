@@ -633,3 +633,4 @@ Now if you want to get the current data using the code `var jsonRtn = ourChart.g
         "label": []
     }
 }
+```
