@@ -158,7 +158,9 @@ When you create a new node, a JavaScript event, named `nodeAdded`, is raised. Yo
 
 Refer to the code below:
 
+```
 **<code snippet>**
+```
 
 ## Edit a node at runtime
 
