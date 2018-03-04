@@ -198,18 +198,56 @@ Use the following attributes to define and set the visibility of the task labels
 
 * Set the value of the `showTaskLabels` attribute to `1`, to render task labels on the chart. 
 
-* Set the value of the showLabels attribute to `1`, to display task labels on the chart.
+* Set the value of the `showLabels` attribute to `1`, to display task labels on the chart.
 
 * Use the `label` attribute to specify the text of the label for a particular task.
 
 Refer to the code below:
 
+```json
+{
+    "chart": {
+        "showTaskLabels": "1"
+    },
+    "categories": [{
+        "category": [{
+            "start": "08/01/2014",
+            "end": "09/30/2014",
+            "label": "Q3"
+        }, {
+            ...
+        }]
+    }, {
+        "category": [{
+            "start": "08/01/2014",
+            "end": "08/31/2014",
+            "label": "Aug '14"
+        }, {
+            ...
+        }]
+    }],
+    "processes": {
+        ...
+        "process": [{
+            "label": "Identify Customers"
+        }, {
+            ...
+        }]
+    },
+    "tasks": {
+        "task": [{
+            ...
+        }]
+    }
+
+}
 ```
-**INSERT CODE**
-```
+
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/q9n2fe0d/ "@@open-newtab") to edit the above chart.
 
 ## Show/Hide Task Start and End Dates
 
@@ -225,12 +263,45 @@ Use the following attributes to show/hide task start and end dates:
 
 Refer to the code below:
 
+```json
+{
+    "chart": {
+        "showTaskLabels": "1",
+    },
+    "categories": [{
+        "category": [{
+            ...
+        }]
+    }, {
+        "category": [{
+            ...
+        }]
+    }],
+    "processes": {
+        ...
+        "process": [{
+            ...
+        }]
+    },
+    "tasks": {
+        "task": [{
+            "start": "10/06/2014",
+            "end": "01/21/2015",
+            "label": "Promotion Applications",
+            "showStartDate": "1",
+            "showEndDate": "1"
+        }, {
+            ...
+        }]
+    }
+}
 ```
-**INSERT CODE**
-```
+
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/q9n2fe0d/ "@@open-newtab") to edit the above chart.
 
 ## Add and customize the process header
 
@@ -256,23 +327,57 @@ Use the following attributes used to add and customize process headers:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "categories": [{
+        "category": [{
+            ...
+        }]
+    }, {
+        "category": [{
+            ...
+        }]
+    }],
+    "processes": {
+        "fontsize": "12",
+        "isbold": "1",
+        "align": "right",
+        "headerText": "What to do",
+        "headerFontSize": "20",
+        "headerVAlign": "bottom",
+        "headerAlign": "right",
+        "process": [{
+            ...
+        }]
+    },
+    "tasks": {
+        "task": [{
+            ...
+        }]
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/y0objesp/ "@@open-newtab") to edit the above chart.
 
 ## Add more columns to the data table
 
 The Social Media Optimization Gantt chart that we have been looking at so far looks like the following:
 
-**<<Insert chart>>**
+{% embed_chart standard-charts-gantt-chart-example-7.js %}
 
 The above Gantt chart rendered with an additional "Owner" column looks like the following:
 
-**<<Insert chart>>**
+{% embed_chart standard-charts-gantt-chart-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/bt4sp3rp/ "@@open-newtab") to edit the above chart.
 
 Since the chart width is relatively small here, a scroll bar comes up to help you scroll through the data table. To increase the width of the data table:
 
@@ -298,12 +403,19 @@ Use the following attributes to customize the hover effect globally.
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		"hoverBandColor": "#BEFFFF",
+		"hoverBandAlpha": "40"
+	}
+}
 ```
 The chart will look as shown below:
 
-**<chart>**
+GIF
+
+Click [here](http://jsfiddle.net/fusioncharts/6w30L5x1/ "@@open-newtab") to edit the above chart.
 
 ### Customize hover effect for processes
 
@@ -319,12 +431,39 @@ Customize the hover effect for processes using the following attributes:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "categories": [{
+        "category": [{
+            ...
+        }]
+    }, {
+        "category": [{
+            ...
+        }]
+    }],
+    "processes": {
+        "hoverBandcolor": "#AFFAEC",
+		"hoverBandAlpha": "30",
+        "process": [{
+            ...
+        }]
+    },
+    "tasks": {
+        "task": [{
+            ...
+        }]
+    }
+}
 ```
 The chart will look as shown below:
 
-**<chart>**
+GIF
+
+Click [here](http://jsfiddle.net/fusioncharts/gkxkwru0/ "@@open-newtab") to edit the above chart.
 
 ### Customize hover effect for categories
 
@@ -340,13 +479,40 @@ Use the following attributes to customize the hover effect for categories:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "categories": [{
+    	"hoverBandcolor": "#A1F1EF",
+    	"hoverBandAlpha": "50",
+        "category": [{
+            ...
+        }]
+    }, {
+        "category": [{
+            ...
+        }]
+    }],
+    "processes": {
+        "process": [{
+            ...
+        }]
+    },
+    "tasks": {
+        "task": [{
+            ...
+        }]
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+GIF
+
+Click [here](http://jsfiddle.net/fusioncharts/20Lhm9e9/ "@@open-newtab") to edit the above chart.
 
 ## Disable hover effects
 
@@ -358,13 +524,20 @@ Use the following attributes to disable the hover effect:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		"showHoverEffect": "0",
+		"showHoverBand": "0"
+	}
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-9.js %}
+
+Click [here](http://jsfiddle.net/82asq1uL/ "@@open-newtab") to edit the above chart.
 
 ## Configure task bars
 
@@ -382,13 +555,52 @@ Use the following attributes to render task bars that indicate the percentage of
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        "slackFillColor": "#CC0000",
+    },
+    "datatable": {
+        ...
+        "datacolumn": [{
+            ...
+            "text": [{
+                ...
+            }]
+        }]
+    },
+    "categories": [{
+        "category": [{
+            ...
+        }]
+    }, {
+        "category": [{
+            ...
+        }]
+    }],
+    "processes": {
+        ...
+        "process": [{
+            ...
+        }]
+    },
+    "tasks": {
+        "task": [{
+            "start": "10/06/2014",
+            "end": "01/21/2015",
+            "percentComplete": "20"
+        }, {
+            ...
+        }]
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/xeeactrr/ "@@open-newtab") to edit the above chart.
 
 ### Customize the hover effect for tasks
 
@@ -408,16 +620,62 @@ Use the following attributes to customize the hover effect for tasks:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "datatable": {
+        ...
+        "datacolumn": [{
+            ...
+            "text": [{
+                ...
+            }]
+        }]
+    },
+    "categories": [{
+            "category": [{
+                ...
+            }]
+        },
+        {
+            "category": [{
+                ...
+            }]
+        }
+    ],
+    "processes": {
+        ...
+        "process": [{
+            ...
+        }]
+    },
+    "tasks": {
+        "hoverFillColor": "#F4BEFF",
+        "hoverFillAlpha": "80",
+        "task": [{
+                "start": "10/06/2014",
+                "end": "01/21/2015",
+                "hoverFillColor": "#1FC0FF",
+                "hoverFillAlpha": "80"
+            },
+            {
+                ...
+            }
+        ]
+    }
+
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+GIF
+
+Click [here](http://jsfiddle.net/fusioncharts/df36h963/ "@@open-newtab") to edit the above chart.
 
 ### Customize hover effect for slacks
-
 
 Use the following attributes to customize the hover effect for slacks:
 
@@ -427,28 +685,122 @@ Use the following attributes to customize the hover effect for slacks:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "datatable": {
+        ...
+        "datacolumn": [{
+            ...
+            "text": [{
+                ...
+            }]
+        }]
+    },
+    "categories": [{
+            "category": [{
+                ...
+            }]
+        },
+        {
+            "category": [{
+                ...
+            }]
+        }
+    ],
+    "processes": {
+        ...
+        "process": [{
+            ...
+        }]
+    },
+    "tasks": {
+        "hoverFillColor": "#F4BEFF",
+        "hoverFillAlpha": "80",
+        "slackHoverFillColor": "#CEFF1F",
+        "slackHoverFillAlpha": "80",
+        "task": [{
+                "start": "10/06/2014",
+                "end": "01/21/2015",
+                "percentComplete": "20",
+                "slackHoverFillColor": "#F50EF1",
+                "slackHoverFillAlpha": "80"
+            },
+            {
+                ...
+            }
+        ]
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+GIF
+
+Click [here](http://jsfiddle.net/fusioncharts/cgqe3esp/ "@@open-newtab") to edit the above chart.
 
 ### Create task bars that look like task groups
-
 
 Set the value of the `showAsGroup` attribute to `1`, to visually represent a task as a parent group.
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "datatable": {
+        ...
+        "datacolumn": [{
+            ...
+            "text": [{
+                ...
+            }]
+        }]
+    },
+    "categories": [{
+            "category": [{
+                ...
+            }]
+        },
+        {
+            "category": [{
+                ...
+            }]
+        }
+    ],
+    "processes": {
+        ...
+        "process": [{
+            ...
+        }]
+    },
+    "tasks": {
+        ...
+        "task": [{
+                "start": "10/06/2014",
+                "end": "01/21/2015",
+                "showAsGroup": "1",
+                "label": "Production",
+                "showLabel": "1"
+            },
+            {
+                ...
+            }
+        ]
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/2mj0quk2/ "@@open-newtab") to edit the above chart.
 
 ### Draw task bars with rounded corners
 
@@ -456,16 +808,21 @@ Set the value of the `taskBarRoundRadius` attribute to render task bars with rou
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		"taskBarRoundRadius": "6"
+	}
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-12.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/dehy0557/ "@@open-newtab") to edit the above chart.
 
 ### Customize tool text for task bars
-
 
 Use the following attributes to render custom tool text:
 
