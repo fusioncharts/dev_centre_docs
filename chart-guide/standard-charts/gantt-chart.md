@@ -832,13 +832,20 @@ Use the following attributes to render custom tool text:
 
 Refer to the code below:
 
-```
-**NSERT CODE**
+```json
+{
+	"chart": {
+		"dateInToolTip": "1",
+		"plottooltext": "$processName{br} $label starting date $start{br}$label ending date $end",
+	}	
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+GIF
+
+Click [here](http://jsfiddle.net/u5jLjvcb/ "@@open-newtab") to edit the above chart.
 
 ### Add macros to tooltip variables
 
@@ -866,16 +873,6 @@ Add macros to configure dynamic and contextual content in tooltip. For instance,
 
 * Specify the name of the process that corresponds to a milestone using the `$processName` macro.
 
-Refer to the code below:
-
-```
-**INSERT CODE**
-```
-
-The chart will look as shown below:
-
-**<chart>**
-
 ## Configure date formats
 
 Using FusionCharts Suite XT, you can input the date in one format and output it using a custom format.
@@ -890,17 +887,23 @@ Specify the input date format for all the dates in your JSON data using the `dat
 
 * yyyy/mm/dd
 
-Note: This is a mandatory attribute to specify. Once you specify it with a specific format, all dates in your JSON data must conform to that format.
+> This is a mandatory attribute to specify. Once you specify it with a specific format, all dates in your JSON data must conform to that format.
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		"dateFormat": "mm/dd/yyyy"
+	}	
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-13.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/03a0az67/ "@@open-newtab") to edit the above chart.
 
 ### Set Input Time Format
 
@@ -977,12 +980,18 @@ Vertical scrolling is enabled by default, depending on the height of your chart.
 Refer to the code below:
 
 ```
-**INSERT CODE**
+{
+	"chart": {
+		"useVerticalScrolling": "1"
+	}
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-14.js %}
+
+Click [here](http://jsfiddle.net/u5pqwp6u/ "@@open-newtab") to edit the above chart.
 
 ### Enable scroll for the data table
 
@@ -996,13 +1005,20 @@ The data table automatically starts to scroll when you add data columns that do 
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		"GanttWidthPercent": "50",
+		"showFullDataTable": "0"
+	}
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-15.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/7tpLp7La/ "@@open-newtab") to edit the above chart.
 
 ### Enable scrolling for the gantt pane
 
@@ -1028,13 +1044,20 @@ Note: You can assign any of the following values, each of which represent a diff
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		"ganttPaneDuration": "3",
+	    "ganttPaneDurationUnit": "m"
+	}
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-16.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/abqs6hra/ "@@open-newtab") to edit the above chart.
 
 > Note: If the duration specified by you is more than the actual time span of the chart, the scroll bar for the Gantt pane is not displayed.
 
@@ -1058,13 +1081,23 @@ Use the following attributes to configure scroll cosmetics:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		"scrollColor": "#CCCCCC",
+		"scrollPadding": "4",
+        "scrollHeight": "20",
+        "scrollBtnWidth": "25",
+        "scrollBtnPadding": "5"
+	}
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-17.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/2g6pffz5/ "@@open-newtab") to edit the above chart.
 
 > If you do not find this attribute in the data do not be surprised, as this attribute is set in the theme we are using for the fiddles.
 
@@ -1074,13 +1107,19 @@ Specify the date from where the Gantt chart will initially render, using the `sc
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		"scrollToDate": "08/24/2014"
+	}
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-18.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/wtgt049h/ "@@open-newtab") to edit the above chart.
 
 ## Add Multiple Tasks to a Process
 
@@ -1094,18 +1133,15 @@ Assume that we have a Gantt chart showing the employee schedule where each emplo
 
 For this example, let's plot a Gantt chart showing the scheduled work list for each employee during a particular week. You can visualize the data as shown in the table below. Note that all input dates are in mm/dd/yyyy hh:mm:ss format.
 
-
 Employee Name|Employee Id|Team|Allotted tasks for this week|
 -|-|-|-
 John.S|EMP121|Graphics|Date: 7/21/2014 09:30:00 - 7/21/2014 17:00:00
 
 Task: Logo-I
 
-
 Date: 7/22/2014 09:30:00 - 7/22/2014 16:30:00
 
 Task: Logo-II
-
 
 Date: 7/23/2014 14:00:00 - 7/24/2014 16:30:00
 
@@ -1117,11 +1153,9 @@ Mary.P|EMP123|Testing|Date: 7/21/2014 10:00:00 - 7/21/2014 15:30:00
 
 Task: Testing Specification
 
-
 Date: 7/22/2014 09:30:00 - 7/22/2014 16:00:00
 
 Task: Testing tool research
-
 
 Date: 7/23/2014 09:30:00 - 7/25/2014 16:30:00
 
@@ -1130,11 +1164,9 @@ Andrew.H|EMP124|QA|Date: 7/22/2014 09:30:00 - 7/22/2014 16:30:00
 
 Task: QA
 
-
 Date: 7/23/2014 09:00:00 - 7/23/2014 16:30:00
 
 Task: QA
-
 
 Date: 7/24/2014 09:30:00 - 7/25/2014 14:30:00
 
@@ -1171,14 +1203,17 @@ In the above JSON, we have:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-19.js %}
+
+Click [here](http://jsfiddle.net/hcmh1g1d/ "@@open-newtab") to edit the above chart.
 
 ### Show Projected vs Actual Dates
 
-
 You can follow the technique of allocating multiple tasks to show the projected vs actual duration for different tasks. A Gantt chart with projected and actual timelines looks like the following:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-20.js %}
+
+Click [here](http://jsfiddle.net/3vexrxyc/ "@@open-newtab") to edit the above chart.
 
 In the above chart, you can see the time required by various tasks in a construction process. The projected time required is rendered in blue and the actual time required is rendered in gray.
 
@@ -1194,15 +1229,53 @@ In the chart above, notice how color coding can help you distinguish between act
 
 Refer to the code below:
 
-```
-
-**<<Insert Code>>**
-
+```json
+{
+    "chart": {
+        ...
+    },
+    "categories": [{
+            "category": [{
+                ...
+            }]
+        },
+        {
+            "category": [{
+                ...
+            }]
+        }
+    ],
+    "processes": {
+        ...
+        "process": [{
+            ...
+        }]
+    },
+    "tasks": {
+        ...
+        "task": [{
+            ...
+        }]
+    },
+    "legend": {
+        "item": [{
+                "label": "Planned",
+                "color": "999999"
+            },
+            {
+                "label": "Actual",
+                "color": "4567aa"
+            }
+        ]
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-21.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/24hkmdn2/ "@@open-newtab") to edit the above chart.
 
 ## Create Time-based Charts
 
@@ -1218,7 +1291,7 @@ To specify a time in the JSON data, you need to define a `category` object.
 
 Refer to the code below:
 
-```
+```json
 "category": [
     {
         "start": "00:00:00",
@@ -1226,28 +1299,18 @@ Refer to the code below:
         "label": "Day"
     }
 ]
-
 ```
-
-The chart will look as shown below:
-
-**<chart>**
 
 You can also define a `task` object. Refer to the code below:
 
-```
-
+```json
 "task": {
     "processid": "EMP121",
     "start": "08:00:00",
     "end": "12:30:00",
     "label": "Morning Shift"
 }
-
 ```
-The chart will look as shown below:
-
-**<chart>**
 
 ### Time-based Gantt chart
 
@@ -1255,7 +1318,9 @@ As an example, let's plot a time-based Gantt chart that represents the time shif
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-22.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/6tcmp7oq/ "@@open-newtab") to edit the above chart.
 
 > Note that if you're using only time-based charts, you can specify 23:59:59 as 24:00:00 for ease of usage.
 
@@ -1265,7 +1330,9 @@ As an example here, let's plot a time-based Gantt chart to show the development 
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-23.js %}
+
+Click [here](http://jsfiddle.net/t3xds0q3/ "@@open-newtab") to edit the above chart.
 
 ## Add milestones to a chart
 
@@ -1283,15 +1350,50 @@ You can use milestones on a Gantt chart, to visually depict crucial dates. You c
 
 Refer to the code below:
 
-```
-
-**<<Insert Code>>**
-
+```json
+{
+    "chart": {
+        ...
+    },
+    "categories": [{
+        "category": [{
+            ...
+        }]
+    }],
+    "processes": {
+        ...
+        "process": [{
+            ...
+        }]
+    },
+    "tasks": {
+        "task": [{
+            ...
+        }]
+    },
+    "milestones": {
+        "milestone": [{
+            "date": "1/21/2015",
+            "taskid": "7",
+            "color": "#f8bd19",
+            "shape": "star",
+            "tooltext": "Development Complete"
+        }, {
+            "date": "3/28/2015",
+            "taskid": "10",
+            "color": "#f8bd19",
+            "shape": "star",
+            "tooltext": "Successful Completion of Campaign"
+        }]
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-24.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/4633o8kt/ "@@open-newtab") to edit the above chart.
 
 In the chart above, you can see milestones added to the "Social Media Optimization" Gantt chart, to show the completion of development and the successful completion of the campaign.
 
@@ -1323,13 +1425,54 @@ You can add custom labels for milestones on a Gantt chart, using the attributes 
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "categories": [{
+        "category": [{
+            ...
+        }]
+    }],
+    "processes": {
+        ...
+        "process": [{
+            ...
+        }]
+    },
+    "tasks": {
+        "task": [{
+            ...
+        }]
+    },
+    "milestones": {
+        "milestone": [{
+            "date": "1/21/2015",
+            "taskid": "7",
+            "color": "#f8bd19",
+            "shape": "star",
+            "tooltext": "Successful Completion of Development",
+            "label": "Development Complete",
+            "color": "#587B17"
+        }, {
+            "date": "3/28/2015",
+            "taskid": "10",
+            "color": "#f8bd19",
+            "shape": "star",
+            "tooltext": "Successful Completion of Campaign",
+            "label": "Campaign Complete",
+            "color": "#4838D2"
+        }]
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-25.js %}
+
+Click [here](http://jsfiddle.net/xjaLgojm/ "@@open-newtab") to edit the above chart.
 
 ## Connect Tasks on Chart
 
@@ -1349,13 +1492,55 @@ To draw a connector, specify the IDs of the tasks that you want to connect and w
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "categories": [{
+        "category": [{
+            ...
+        }]
+    }],
+    "processes": {
+        ...
+        "process": [{
+            ...
+        }]
+    },
+    "tasks": {
+        "task": [{
+            ...
+        }]
+    },
+    //Adding connectors to tasks using id's
+    "connectors": [{
+        "connector": [
+
+            {
+                "fromtaskid": "2",
+                "totaskid": "3",
+                "color": "#008ee4",
+                "thickness": "2"
+            }, {
+                ...
+            }, {
+                "fromtaskid": "8",
+                "totaskid": "9",
+                "fromTaskConnectStart": "1",
+                "color": "#008ee4",
+                "thickness": "2"
+            }
+        ]
+    }]
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-26.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/x87o9gms/ "@@open-newtab") to edit the above chart.
 
 For our "Social Media Optimization" Gantt chart, we can connect tasks in the following ways:
 
@@ -1381,13 +1566,23 @@ Use the following attributes to configure hover effects in a Gantt chart:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+	"chart": {
+		"showHoverEffect": "1",
+		"showConnectorHoverEffect": "1",
+		"connectorHoverColor":"#5b0101", 
+        "connectorHoverAlpha":"60", 
+        "connectorHoverThickness":"3"
+	}
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+GIF
+
+Click [here](http://jsfiddle.net/fusioncharts/Lgocm9pu/ "@@open-newtab") to edit the above chart.
 
 ## Add Trend-lines
 
@@ -1409,13 +1604,44 @@ Use the following attributes to create a trend-line on a Gantt chart:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "categories": [{
+        "category": [{
+            ...
+        }]
+    }],
+    "processes": {
+        ...
+        "process": [{
+            ...
+        }]
+    },
+    "tasks": {
+        "task": [{
+            ...
+        }]
+    },
+    "trendlines": [{
+        "line": [{
+            "start": "01/21/2015",
+            "displayValue": "Testing Start",
+            "color": "#333333",
+            "thickness": "2",
+            "dashed": "1"
+        }]
+    }]
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-27.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/rww0qmmk/ "@@open-newtab") to edit the above chart.
 
 ### Create a trend-zone
 
@@ -1435,13 +1661,45 @@ Use the following attributes to create a trend-zone on a Gantt chart:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "categories": [{
+        "category": [{
+            ...
+        }]
+    }],
+    "processes": {
+        ...
+        "process": [{
+            ...
+        }]
+    },
+    "tasks": {
+        "task": [{
+            ...
+        }]
+    },
+    "trendlines": [{
+        "line": [{
+            "start": "12/25/2014",
+            "end": "12/31/2014",
+            "displayvalue": "Christmas Week",
+            "istrendzone": "1",
+            "alpha": "20",
+            "color": "#FF5904"
+        }]
+    }]
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-gantt-chart-example-28.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/j2bnxcnn/ "@@open-newtab") to edit the above chart.
 
 ## Events in Gantt chart
 
@@ -1473,12 +1731,8 @@ You can configure the following events for Gantt charts:
 
 * The `milestoneRollOut` event is fired when you move the mouse pointer out of a connector.
 
-Refer to the code below:
-
-```
-**INSERT CODE**
-```
-
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all standard-charts-gantt-chart-example-29.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/wcpqhtr6/ "@@open-newtab") to edit the above chart.
