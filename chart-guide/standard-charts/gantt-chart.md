@@ -842,7 +842,6 @@ The chart will look as shown below:
 
 ### Add macros to tooltip variables
 
-
 Add macros to configure dynamic and contextual content in tooltip. For instance, you can specify the tool text for milestones in the Gantt chart using the `milestoneToolText` attribute. Use the following macros specifically with Gantt charts:
 
 * Specify the start time of a task using the `$start` macro.
