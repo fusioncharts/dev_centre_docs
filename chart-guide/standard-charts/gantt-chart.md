@@ -15,7 +15,7 @@ A typical FusionCharts Suite XT Gantt chart looks like the following:
 
 {% embed_chart standard-charts-gantt-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/4ga6go1j/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/avLb04cs/ "@@open-newtab") to edit the above chart.
 
 ## Features of the Gantt Chart
 
@@ -190,7 +190,7 @@ The Social Media Optimization Gantt chart rendered with multiple categories look
 
 {% embed_chart standard-charts-gantt-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/w4jxncxa/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/z0sLtqu7/ "@@open-newtab") to edit the above chart.
 
 ## Define and show/hide task labels
 
@@ -537,7 +537,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-9.js %}
 
-Click [here](http://jsfiddle.net/82asq1uL/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/xzf4qd0k/ "@@open-newtab") to edit the above chart.
 
 ## Configure task bars
 
@@ -845,7 +845,7 @@ The chart will look as shown below:
 
 GIF
 
-Click [here](http://jsfiddle.net/u5jLjvcb/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/n89ey0z9/ "@@open-newtab") to edit the above chart.
 
 ### Add macros to tooltip variables
 
@@ -991,7 +991,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-14.js %}
 
-Click [here](http://jsfiddle.net/u5pqwp6u/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/8vsdf0fw/ "@@open-newtab") to edit the above chart.
 
 ### Enable scroll for the data table
 
@@ -1205,7 +1205,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-19.js %}
 
-Click [here](http://jsfiddle.net/hcmh1g1d/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/9vq3pum8/ "@@open-newtab") to edit the above chart.
 
 ### Show Projected vs Actual Dates
 
@@ -1213,7 +1213,7 @@ You can follow the technique of allocating multiple tasks to show the projected 
 
 {% embed_chart standard-charts-gantt-chart-example-20.js %}
 
-Click [here](http://jsfiddle.net/3vexrxyc/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/u5c0taws/ "@@open-newtab") to edit the above chart.
 
 In the above chart, you can see the time required by various tasks in a construction process. The projected time required is rendered in blue and the actual time required is rendered in gray.
 
@@ -1332,7 +1332,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-23.js %}
 
-Click [here](http://jsfiddle.net/t3xds0q3/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/d71yd3m0/ "@@open-newtab") to edit the above chart.
 
 ## Add milestones to a chart
 
@@ -1472,7 +1472,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-25.js %}
 
-Click [here](http://jsfiddle.net/xjaLgojm/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/u8nm6b2w/ "@@open-newtab") to edit the above chart.
 
 ## Connect Tasks on Chart
 
