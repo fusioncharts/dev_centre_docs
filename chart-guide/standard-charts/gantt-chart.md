@@ -413,7 +413,7 @@ Refer to the code below:
 ```
 The chart will look as shown below:
 
-GIF
+![Gantt-Chart-GIF-1]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-1.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/6w30L5x1/ "@@open-newtab") to edit the above chart.
 
@@ -461,7 +461,7 @@ Refer to the code below:
 ```
 The chart will look as shown below:
 
-GIF
+![Gantt-Chart-GIF-2]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-2.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/gkxkwru0/ "@@open-newtab") to edit the above chart.
 
@@ -510,7 +510,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-GIF
+![Gantt-Chart-GIF-3]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-3.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/20Lhm9e9/ "@@open-newtab") to edit the above chart.
 
@@ -671,7 +671,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-GIF
+![Gantt-Chart-GIF-4]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-4.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/df36h963/ "@@open-newtab") to edit the above chart.
 
@@ -738,7 +738,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-GIF
+![Gantt-Chart-GIF-5]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-5.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/cgqe3esp/ "@@open-newtab") to edit the above chart.
 
@@ -843,7 +843,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-GIF
+![Gantt-Chart-GIF-1]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-6.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/n89ey0z9/ "@@open-newtab") to edit the above chart.
 
@@ -1580,7 +1580,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-GIF
+![Gantt-Chart-GIF-7]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-7.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/Lgocm9pu/ "@@open-newtab") to edit the above chart.
 

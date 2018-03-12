@@ -94,11 +94,11 @@ FusionCharts implements the following model for interacting with a treemap:
 
 #### The initial stage
 
-To drill-down to a leaf node, click directly on that node. For example, click on any node in the Northern Region to change the chart view to something like the image given below:
+To drill-down to a leaf node, click directly on that node. For example, click on any node in the Northern Region to change the chart view.
 
-Then, to go back up one level, click on Northern Region in the header of the view above, or the ***Back to Parent*** button on the top-right corner of the chart. You can also go directly back to the initial stage. To do so, click the ***Back to Top*** button on the top-right corner of the chart. 
+Then, to go back one level up, click on Northern Region in the header of the view, or the ***Back to Parent*** button on the top-right corner of the chart. You can also go directly back to the initial stage. To do so, click the ***Back to Top*** button on the top-right corner of the chart. 
 
-**IMAGE GIF**
+![Treemap-GIF-1]({% site.baseurl %}/gif/standard-charts-treemap-gif-1.gif)
 
 ## Create a simple treemap
 
@@ -130,13 +130,13 @@ Use the following attributes to build a simple treemap:
 
 The Tree map will look like as shown below:
 
-{% embed_all standard-charts-treemap-example-1.js %}
+{% embed_all standard-charts-treemap-example-1a.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/dhauz809/ "@@open-newtab") to edit the above chart.
 
-> The treemap shown above compares the sales team's performance in the present year with their performance in the previous year. Click on a rectangle to replace the node and its with the current root node. For example, click on any rectangle (node) in the Northern Region to change the chart view as shown in the image below:
+> The treemap shown above compares the sales team's performance in the present year with their performance in the previous year. Click on a rectangle to replace the node with the current root node. For example, click on any rectangle (node) in the Northern Region to change the chart view as shown in the image below:
 
-**IMAGE GIF**
+> ![Treemap-GIF-2]({% site.baseurl %}/gif/standard-charts-treemap-gif-2.gif)
 
 ## Render a gradient legend
 
@@ -204,7 +204,7 @@ A sample treemap with the gradient legend set to show only those nodes that have
 
 > Notice that the nodes that don't fall in this bracket are all grayed out.
 
-GIF
+![Treemap-GIF-3]({% site.baseurl %}/gif/standard-charts-treemap-gif-3.gif)
 
 Click [here]({% site.baseurl %}chart-attributes/?chart=treemap "@@open-newtab") for the complete list of attributes supported by the treemap.
 
@@ -359,7 +359,7 @@ The treemap above shows the global population by continent as of 2015 with their
 
 When you click on a child node, the clicked node and its subtree will replace the current root node. For example, when you click on any node under Southeast Asia Region, the chart view will change to what is shown in the image below. Observe that all the parent nodes are visible in the navigation bar and you can switch to any of them directly by clicking on them. 
 
-GIF
+![Treemap-GIF-4]({% site.baseurl %}/gif/standard-charts-treemap-gif-4.gif)
 
 ### Color the treemap data plots
 

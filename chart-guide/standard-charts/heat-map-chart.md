@@ -485,7 +485,7 @@ Using a gradient legend, you can filter cells within a specific range of values.
 
 The chart will look as shown below:
 
-**GIF IMAGE**
+![Heat-Map-Chart-GIF-1]({% site.baseurl %}/gif/standard-charts-heat-map-chart-gif-1.gif)
 
 ## Configure labels and tooltips
 

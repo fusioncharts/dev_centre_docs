@@ -530,7 +530,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-GIF
+![Spark-Charts-GIF-1]({% site.baseurl %}/gif/standard-charts-spark-charts-gif-1.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/fwaL5/ "@@open-newtab") to edit the above chart.
 
@@ -744,7 +744,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-GIF
+![Spark-Charts-GIF-2]({% site.baseurl %}/gif/standard-charts-spark-charts-gif-2.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/UhMzX/ "@@open-newtab") to edit the above chart.
 
@@ -935,6 +935,6 @@ Refer to the code below:
 
 The chart will look like the following:
 
-GIF
+![Spark-Charts-GIF-3]({% site.baseurl %}/gif/standard-charts-spark-charts-gif-3.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/8myGp/ "@@open-newtab") to edit the above chart.

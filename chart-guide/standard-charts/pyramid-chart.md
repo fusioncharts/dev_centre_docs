@@ -236,6 +236,6 @@ Refer to the code given below:
 
 The chart will look like the following:
 
-GIF
+![pyramid]({% site.baseurl %}/gif/standard-charts-pyramid-gif-1.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/q9ujc5hd/ "@@open-newtab") to edit the above chart.

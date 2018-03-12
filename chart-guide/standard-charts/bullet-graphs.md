@@ -401,7 +401,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-GIF
+![Bullet-Graph-GIF-1]({% site.baseurl %}/gif/standard-charts-bullet-graph-gif-1.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/tfmv5km3/ "@@open-newtab") to edit the above chart.
 
