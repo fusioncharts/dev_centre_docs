@@ -402,7 +402,7 @@ The tree map will look like as shown in the image below:
 
 {% embed_all standard-charts-treemap-example-8.js %}
 
-Click [here](http://jsfiddle.net/Lrg6gL4w/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/x336y7ej/ "@@open-newtab") to edit the above chart.
 
 > The data plot color in the sample treemap used so far has been assigned using the `colorRange` object. Use `colorRange` object to define the numeric ranges for the gradient legend. Then you can assign a color to a data plot, based on where the value of the `sValue` attribute falls within the numeric range.
 
@@ -454,7 +454,7 @@ The chart will look as shown below:
 
 {% embed_all standard-charts-treemap-example-7.js %}
 
-Click [here](http://jsfiddle.net/2p8jujd1/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/4av9kLrc/ "@@open-newtab") to edit the above chart.
 
 ## Customize chart text
 
@@ -484,7 +484,7 @@ The chart will look as shown below:
 
 {% embed_all standard-charts-treemap-example-9.js %}
 
-Click [here](http://jsfiddle.net/q5ky0cg9/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/4pnjj3c9/ "@@open-newtab") to edit the above chart.
 
 ## Customize data labels
 
@@ -518,9 +518,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-Create: {% embed_all standard-charts-treemap-example-10.js %}
+{% embed_all standard-charts-treemap-example-10.js %}
 
-Click [here](http://jsfiddle.net// "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/mbze14ch/ "@@open-newtab") to edit the above chart.
 
 ## Apply a glow effect to data labels
 
@@ -553,7 +553,7 @@ The chart will look as shown below:
 
 {% embed_all standard-charts-treemap-example-11.js %}
 
-Click [here](http://jsfiddle.net/Lwgmxo0q/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/5r3oa3r5/ "@@open-newtab") to edit the above chart.
 
 Click [here ](https://www.fusioncharts.com/dev/chart-attributes?chart=treeap)for the complete list of attributes supported by the treemap.
 
@@ -592,4 +592,4 @@ The chart will look as shown below:
 
 {% embed_all standard-charts-treemap-example-12.js %}
 
-Click [here](http://jsfiddle.net/sb57jj7b/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/d36cqn7s/ "@@open-newtab") to edit the above chart.
