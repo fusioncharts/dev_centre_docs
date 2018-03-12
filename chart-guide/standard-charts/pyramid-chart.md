@@ -237,3 +237,5 @@ Refer to the code given below:
 The chart will look like the following:
 
 GIF
+
+Click [here](http://jsfiddle.net/fusioncharts/q9ujc5hd/ "@@open-newtab") to edit the above chart.

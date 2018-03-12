@@ -305,3 +305,5 @@ Refer to the code below:
 The chart with hover effects enabled will look like the following:
 
 GIF
+
+Click [here](http://jsfiddle.net/fusioncharts/ecrjq9jz/ "@@open-newtab") to edit the above chart.
