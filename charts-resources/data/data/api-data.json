@@ -27620,7 +27620,7 @@
                     "examples": {
                         "0": {
                             "caption": "",
-                            "code": "// Assuming a page has many instances of [FusionCharts]({% site.baseurl %}/api/fusioncharts), but\r// none of them are rendered, we are going to iterate through all and\r// render them.\rfor (var item in FusionCharts.items) {\r    FusionCharts.items[item].render();\r}",
+                            "code": "// Assuming a page has many instances of FusionCharts, but\r// none of them are rendered, we are going to iterate through all and\r// render them.\rfor (var item in FusionCharts.items) {\r    FusionCharts.items[item].render();\r}",
                             "type": "js"
                         },
                         "1": {
