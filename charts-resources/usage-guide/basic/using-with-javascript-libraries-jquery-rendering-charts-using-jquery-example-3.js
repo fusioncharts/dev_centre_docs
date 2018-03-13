@@ -52,30 +52,30 @@
     events: {
         'beforeRender': function(event, args) {
             var container = args.container;
+            
+            var btnClone = document.createElement('input');
+            btnClone.id = 'chart-clone-2';
+            btnClone.type = 'button';
+            btnClone.value = 'Prepend clone';
 
-            var btnClone = $('<input/>')
-                .attr({
-                    'id': 'clone-button',
-                    'type': 'button',
-                    'value': 'Prepend clone'
-                })
-                .click(function() {
-                    appendClone();
-                    btnClone.remove();
-                });
+            btnClone.addEventListener('click', function(){
+                appendClone(container);
+                btnClone.remove();
+            });
 
-            container.parentNode.insertBefore(btnClone[0], container.nextSibling);
+            container.parentNode.insertBefore(btnClone, container.nextSibling);
 
-            var appendClone = function() {
-                // Clone the chart to create a column chart representation of the same data
-                $(container).cloneFusionCharts(function() {
-                    // Append the cloned chart to the same chart container
-                    $(container).prependFusionCharts(this[0]);
-                }, {
-                    'id': 'chart-clone-2',
+            var appendClone = function(container) {
+                var con = document.createElement('div');
+                con.id = "chart-con";
+                container.insertBefore(con, container.childNodes[0]);
+
+                var obj = event.sender.clone({
+                    'id': 'chart-clone',
                     'type': 'column2d',
                     'events': {}
                 });
+                obj.render(con.id);
             };
         }
     }

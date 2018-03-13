@@ -954,63 +954,63 @@ You can group a number of annotation items together as one item. This is useful 
 
 To create an annotation group, all you have to do is create each annotation item as an object within the same `groups → items` object array. When you group multiple annotations together, you can easily manipulate common functional and cosmetic properties, as well as position them, using the following attributes:
 
-* Specify a unique identification string for the annotation group, using the **id** attribute.
+* Specify a unique identification string for the annotation group, using the `id` attribute.
 
-* Specify the x coordinate of the starting position of the group with respect to the leftmost position (taken as 0) of the chart, using the **x** attribute. Note that if you also configure it individually for the annotation item(s) within the group, then the value of the **x** attribute for the item will be relative to the value of the **x** attribute for the group.
+* Specify the x coordinate of the starting position of the group with respect to the leftmost position (taken as 0) of the chart, using the `x` attribute. Note that if you also configure it individually for the annotation item(s) within the group, then the value of the `x` attribute for the item will be relative to the value of the `x` attribute for the group.
 
-* Specify the y coordinate of the starting position of the group with respect to the topmost position (taken as 0) of the chart, using the **y** attribute. Note that if you also configure it individually for the annotation item(s) within the group, then the value of the **y** attribute for the item will be relative to the value of the **y** attribute for the group.
+* Specify the y coordinate of the starting position of the group with respect to the topmost position (taken as 0) of the chart, using the `y` attribute. Note that if you also configure it individually for the annotation item(s) within the group, then the value of the `y` attribute for the item will be relative to the value of the `y` attribute for the group.
 
-* Set the value of the **autoScale** attribute to `1`, to automatically scale the annotation group, if you resize a chart.
+* Set the value of the `autoScale` attribute to `1`, to automatically scale the annotation group, if you resize a chart.
 
-* Set the value of the **scaleText** attribute to `1`, to automatically scale text annotations in the annotation group, if you resize a chart. 
+* Set the value of the `scaleText` attribute to `1`, to automatically scale text annotations in the annotation group, if you resize a chart. 
 
-* Set the value of the **scaleImages** attribute to `1`, to automatically scale image annotations in the annotation group, if you resize a chart.
+* Set the value of the `scaleImages` attribute to `1`, to automatically scale image annotations in the annotation group, if you resize a chart.
 
-* Set the value of the **constrainedScale** attribute to `1`, to retain the aspect ratio (height:width) of annotations, even when they are scaled.
+* Set the value of the `constrainedScale` attribute to `1`, to retain the aspect ratio (height:width) of annotations, even when they are scaled.
 
-* Set the value of the **showBelow** attribute to `1`, to prevent annotations in the group from overlapping the data plots. The annotations will then be shown below the data plots.
+* Set the value of the `showBelow` attribute to `1`, to prevent annotations in the group from overlapping the data plots. The annotations will then be shown below the data plots.
 
-* Specify the original width of the chart (in which the annotation renders as intended), using the **origW** attribute. Note that this value is used as the reference width while automatically scaling annotations, if you resize a chart.
+* Specify the original width of the chart (in which the annotation renders as intended), using the `origW` attribute. Note that this value is used as the reference width while automatically scaling annotations, if you resize a chart.
 
-* Specify the original height of the chart (in which the annotation renders as intended), using the **origH** attribute. Note that this value is used as the reference width while automatically scaling annotations, if you resize a chart.
+* Specify the original height of the chart (in which the annotation renders as intended), using the `origH` attribute. Note that this value is used as the reference width while automatically scaling annotations, if you resize a chart.
 
-* Specify the value to be added to the x coordinate position value of the final annotation items on the x-axis, using the **xShift** attribute. Note that if you place an annotation at 100 pixels left and set the value of **xShift** to 50, then the effective value of the x coordinate for the annotation will add up to 150 pixels. Also, whenever you apply scaling, the value of this attribute is included within the scale factor.
+* Specify the value to be added to the x coordinate position value of the final annotation items on the x-axis, using the `xShift` attribute. Note that if you place an annotation at 100 pixels left and set the value of `xShift` to 50, then the effective value of the x coordinate for the annotation will add up to 150 pixels. Also, whenever you apply scaling, the value of this attribute is included within the scale factor.
 
-* Specify the value to be added to the y coordinate position value of the final annotation items on the y-axis, using the **yShift** attribute. Note that if you place an annotation at 100 pixels from the top and set the value of **yShift** to 50, then the effective value of the y coordinate for the annotation will add up to 150 pixels. Also, whenever you apply scaling, the value of this attribute is included within the scale factor.
+* Specify the value to be added to the y coordinate position value of the final annotation items on the y-axis, using the `yShift` attribute. Note that if you place an annotation at 100 pixels from the top and set the value of `yShift` to 50, then the effective value of the y coordinate for the annotation will add up to 150 pixels. Also, whenever you apply scaling, the value of this attribute is included within the scale factor.
 
-* Specify the value to be added to all annotation groups along the x coordinate, using the **grpXShift** attribute. The difference between **xShift** and this attribute is that, during scaling, **xShift** is included within the scale factor whereas **grpXShift** is excluded.
+* Specify the value to be added to all annotation groups along the x coordinate, using the `grpXShift` attribute. The difference between `xShift` and this attribute is that, during scaling, `xShift` is included within the scale factor whereas `grpXShift` is excluded.
 
-* Specify the value to be added to all annotation groups along the y coordinate, using the **grpYShift** attribute. The difference between **yShift** and this attribute is that, during scaling, **yShift** is included within the scale factor whereas **grpYShift** is excluded.
+* Specify the value to be added to all annotation groups along the y coordinate, using the `grpYShift` attribute. The difference between `yShift` and this attribute is that, during scaling, `yShift` is included within the scale factor whereas `grpYShift` is excluded.
 
-* Specify the transparency (between `0` for transparent and `100` for opaque) for the group of annotations, using the **alpha** attribute.
+* Specify the transparency (between `0` for transparent and `100` for opaque) for the group of annotations, using the `alpha` attribute.
 
-* Set the value of the **visible** attribute of a group of annotations to `0`, to hide the group.
+* Set the value of the `visible` attribute of a group of annotations to `0`, to hide the group.
 
-* Set the value of the **showShadow** attribute to `1`, to show a shadow effect for the annotation group.
+* Set the value of the `showShadow` attribute to `1`, to show a shadow effect for the annotation group.
 
-* Specify the hex color code for the annotation group, using the **color** attribute.
+* Specify the hex color code for the annotation group, using the `color` attribute.
 
-* Specify the font family for all the text annotation(s) in the annotation group, using the **font** attribute.
+* Specify the font family for all the text annotation(s) in the annotation group, using the `font` attribute.
 
-* Specify the font size for all the text annotation(s) in the annotation group, using the **fontSize** attribute.
+* Specify the font size for all the text annotation(s) in the annotation group, using the `fontSize` attribute.
 
-* Specify the horizontal alignment for all text annotation(s), using the **textAlign** attribute.
+* Specify the horizontal alignment for all text annotation(s), using the `textAlign` attribute.
 
-* Specify the vertical alignment for all text annotation(s), using the **textVAlign** attribute.
+* Specify the vertical alignment for all text annotation(s), using the `textVAlign` attribute.
 
-* Specify whether text annotation(s) are to be rotated, using the **rotateText** attribute. Note that this attribute takes `0` (default), `1`, `left`, and `right`, as values.
+* Specify whether text annotation(s) are to be rotated, using the `rotateText` attribute. Note that this attribute takes `0` (default), `1`, `left`, and `right`, as values.
 
-* Set the value of the **wrapText** attribute to `1`, to automatically wrap words that are too long to fit in a line, to the next one. 
+* Set the value of the `wrapText` attribute to `1`, to automatically wrap words that are too long to fit in a line, to the next one. 
 
-* Specify the URL to which you will be redirected if you click the annotation group, using the **link** attribute.
+* Specify the URL to which you will be redirected if you click the annotation group, using the `link` attribute.
 
-* Specify the tooltip for the annotation group using the **toolText** attribute.
+* Specify the tooltip for the annotation group using the `toolText` attribute.
 
-* Specify a list of hex color codes, if the group has to be rendered with a gradient effect, using the **fillColor** attribute.
+* Specify a list of hex color codes, if the group has to be rendered with a gradient effect, using the `fillColor` attribute.
 
-* Specify the fill color ratio for an annotation group, if the group has to be rendered with a gradient effect, using the **fillRatio** attribute. Note that this attribute is useful only if you specify multiple colors using the **fillColor** attribute. It is a comma-separated list of numbers that lie between 0 and 100. The number of values you provide for this attribute should be the same as that for the **fillColor** attribute. In case the number of ratio values is less than the number of colors you provide, the last of the comma-separated values is repeated for the remaining colors. The summation of these values should not exceed 100.
+* Specify the fill color ratio for an annotation group, if the group has to be rendered with a gradient effect, using the `fillRatio` attribute. Note that this attribute is useful only if you specify multiple colors using the `fillColor` attribute. It is a comma-separated list of numbers that lie between 0 and 100. The number of values you provide for this attribute should be the same as that for the `fillColor` attribute. In case the number of ratio values is less than the number of colors you provide, the last of the comma-separated values is repeated for the remaining colors. The summation of these values should not exceed 100.
 
-> Note: These attributes belong to the **annotations** → **groups** object array.
+> These attributes belong to the **annotations** → **groups** object array.
 
 Refer to the code below:
 
@@ -1138,29 +1138,29 @@ You can use methods available within FusionCharts Suite XT to create, update, se
 
 Use the following methods to dynamically create, manipulate, and delete annotations:
 
-* Add a group that can hold multiple annotation items within it, using the **addGroup(options)** method. Use the **options** parameter to define the characteristics of the group. 
+* Add a group that can hold multiple annotation items within it, using the `addGroup(options)` method. Use the `options` parameter to define the characteristics of the group. 
 
-* Add an annotation item to a specified group, using the **addItem(groupId, options, drawImmediate)** method. 
+* Add an annotation item to a specified group, using the `addItem(groupId, options, drawImmediate)` method. 
 
-    * Use the **groupId** parameter to specify the id of the group, to which the annotation item will be added. If you leave this parameter** **unspecified, a new group will be created and the annotation item added to it.
+    * Use the `groupId` parameter to specify the id of the group, to which the annotation item will be added. If you leave this parameter` `unspecified, a new group will be created and the annotation item added to it.
 
-    * Use the **options** parameter to define the characteristics of the annotation item to be added.
+    * Use the `options` parameter to define the characteristics of the annotation item to be added.
 
-    * Use the **drawImmediate** parameter to specify whether the annotation item has to be drawn immediately, or not. This property is of the Boolean type and accepts either true or false as values.
+    * Use the `drawImmediate` parameter to specify whether the annotation item has to be drawn immediately, or not. This property is of the Boolean type and accepts either true or false as values.
 
-* Show a specific annotation group or item on the chart, using the **show(id)** method. Use the **id** parameter to specify the identification string of the group or item to be shown.
+* Show a specific annotation group or item on the chart, using the `show(id)` method. Use the `id` parameter to specify the identification string of the group or item to be shown.
 
-* Hide a specific annotation group or item from the chart, using the hide(id) method. Use the **id** parameter to specify the identification string of the group or item to be hidden.
+* Hide a specific annotation group or item from the chart, using the hide(id) method. Use the `id` parameter to specify the identification string of the group or item to be hidden.
 
-* Update the properties of a specific annotation group, or an individual item in a specific group, using the **update(id,{key:value})** method.
+* Update the properties of a specific annotation group, or an individual item in a specific group, using the `update(id,{key:value})` method.
 
-    * Use the **id** parameter to specify the identification string of the group or item to be updated.
+    * Use the `id` parameter to specify the identification string of the group or item to be updated.
 
-    * Use the **key** parameter to specify the property of the annotation group or item to be updated.
+    * Use the `key` parameter to specify the property of the annotation group or item to be updated.
 
-    * Use the **value** parameter to specify the new value for the property of the annotation group or item to be updated.
+    * Use the `value` parameter to specify the new value for the property of the annotation group or item to be updated.
 
-* Remove a specific group or an annotation item, using the **destroy(id)** method. Use the **id** parameter to specify the identification string of the group or item to be removed. 
+* Remove a specific group or an annotation item, using the `destroy(id)` method. Use the `id` parameter to specify the identification string of the group or item to be removed. 
 
 * Removes all annotation groups and items within the groups, using the clear() method.
 
@@ -1284,7 +1284,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/pLvuerqt/ "@@open-newtab") to edit the above chart.
 
-> In the above chart, you can see how to use annotations to create a callout (using a rectangle, a polygon, and a text annotation, grouped together) above a column. The annotations are dynamically positioned using annotation macros. After the chart is rendered (when the **[renderComplete](https://docs.fusioncharts.com/archive/3.12.1/api/fusioncharts/fusioncharts-events.html#event-renderComplete)** event is triggered), the quarter with the highest revenue is determined and the annotation group is positioned over the data plot representing that quarter.
+> In the above chart, you can see how to use annotations to create a callout (using a rectangle, a polygon, and a text annotation, grouped together) above a column. The annotations are dynamically positioned using annotation macros. After the chart is rendered (when the `[renderComplete](https://docs.fusioncharts.com/archive/3.12.1/api/fusioncharts/fusioncharts-events.html#event-renderComplete)` event is triggered), the quarter with the highest revenue is determined and the annotation group is positioned over the data plot representing that quarter.
 
 ### Provide more information about data plots
 
@@ -1524,7 +1524,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/uc91ftc1/ "@@open-newtab") to edit the above chart.
 
-> The above chart compares the footfall at two stores, Bakersfield Central and Los Angeles Topanga. When you hover the mouse pointer over a data plot, it triggers the **[dataplotRollover](https://docs.fusioncharts.com/archive/3.12.1/api/fusioncharts/fusioncharts-events.html#event-dataplotRollOver)** event. Consequently, an annotation group (containing a line, a label, and text annotation) is shown, which displays additional information about the data plot. When you hover the mouse pointer out of the data plot, it triggers the **[dataPlotRollOut](https://docs.fusioncharts.com/archive/3.12.1/api/fusioncharts/fusioncharts-events.html#event-dataplotRollOut)** event and the annotation group is hidden.
+> The above chart compares the footfall at two stores, Bakersfield Central and Los Angeles Topanga. When you hover the mouse pointer over a data plot, it triggers the `[dataplotRollover](https://docs.fusioncharts.com/archive/3.12.1/api/fusioncharts/fusioncharts-events.html#event-dataplotRollOver)` event. Consequently, an annotation group (containing a line, a label, and text annotation) is shown, which displays additional information about the data plot. When you hover the mouse pointer out of the data plot, it triggers the `[dataPlotRollOut](https://docs.fusioncharts.com/archive/3.12.1/api/fusioncharts/fusioncharts-events.html#event-dataplotRollOut)` event and the annotation group is hidden.
 
 Macro sub-tokens are used to position the annotation group with respect to the axes and datasets. The `hide()` method is used to hide the group.
 
@@ -1953,25 +1953,25 @@ In the following sections, you can see an exhaustive set of attributes and macro
 
 You can use the following attributes with the root `annotations` object, to globally configure generic aspects of annotations:
 
-* Set the value of the **autoScale** attribute to `1`, to automatically scale a group of annotations, if chart dimensions change.
+* Set the value of the `autoScale` attribute to `1`, to automatically scale a group of annotations, if chart dimensions change.
 
-* Set the value of the **constrainedScale** attribute to `1`, to retain the aspect ratio (height:width) of annotations when scaling.
+* Set the value of the `constrainedScale` attribute to `1`, to retain the aspect ratio (height:width) of annotations when scaling.
 
-* Set the value of the **scaleText** attribute to `1`, to automatically scale text annotations in a group of annotations, if chart dimensions change.
+* Set the value of the `scaleText` attribute to `1`, to automatically scale text annotations in a group of annotations, if chart dimensions change.
 
-* Set the value of the **scaleImages** attribute to `1`, to automatically scale image annotations in a group of annotations, if chart dimensions change.
+* Set the value of the `scaleImages` attribute to `1`, to automatically scale image annotations in a group of annotations, if chart dimensions change.
 
-* Specify a value to be added to the x coordinate position value of the final annotation items on the x-axis, using the **xShift** attribute. While applying scaling, the value of this attribute is included within the scale factor.
+* Specify a value to be added to the x coordinate position value of the final annotation items on the x-axis, using the `xShift` attribute. While applying scaling, the value of this attribute is included within the scale factor.
 
-* Specify a value to be added to the y coordinate position value of the final annotation items on the y-axis, using the **yShift** attribute. While applying scaling, the value of this attribute is included within the scale factor.
+* Specify a value to be added to the y coordinate position value of the final annotation items on the y-axis, using the `yShift` attribute. While applying scaling, the value of this attribute is included within the scale factor.
 
-* Shift all annotation groups along the x coordinate by a fixed distance, using the **grpXShift** attribute. Note that unlike **xShift**, the value of **grpXShift** is not included in the scale factor when applying scaling.
+* Shift all annotation groups along the x coordinate by a fixed distance, using the `grpXShift` attribute. Note that unlike `xShift`, the value of `grpXShift` is not included in the scale factor when applying scaling.
 
-* Shift all annotation groups along the y coordinate by a fixed distance, using the **grpyShift** attribute. Note that unlike **yShift**, the value of **grpyShift** is not included in the scale factor when applying scaling.
+* Shift all annotation groups along the y coordinate by a fixed distance, using the `grpyShift` attribute. Note that unlike `yShift`, the value of `grpyShift` is not included in the scale factor when applying scaling.
 
-* Specify the original width of the chart, in which the annotations render as intended, using the **origW** attribute. Note that this value is used as the reference width while automatically scaling annotations, when a chart is resized.
+* Specify the original width of the chart, in which the annotations render as intended, using the `origW` attribute. Note that this value is used as the reference width while automatically scaling annotations, when a chart is resized.
 
-* Specify the original height of the chart, in which the annotations render as intended, using the **origH** attribute. Note that this value is used as the reference height while automatically scaling annotations, when a chart is resized.
+* Specify the original height of the chart, in which the annotations render as intended, using the `origH` attribute. Note that this value is used as the reference height while automatically scaling annotations, when a chart is resized.
 
 Refer to the code below:
 
@@ -1987,57 +1987,57 @@ Refer to the code below:
 
 You can uniformly configure all annotation items contained within an annotation group, by using a number of attributes, as detailed in the list below. Group attributes inherit default values from the ones defined as root-level annotation attributes.
 
-* Specify a unique identification string for the annotation group using the **id** attribute.
+* Specify a unique identification string for the annotation group using the `id` attribute.
 
-* Specify the x coordinate of the starting position of a group of annotations with respect to the leftmost position (taken as 0) of the chart, using the **x** attribute. If you also configure it individually for the annotation item(s) within the group. Then the value of the **x** attribute for the item is set relative to the value of the **x** attribute for the group.
+* Specify the x coordinate of the starting position of a group of annotations with respect to the leftmost position (taken as 0) of the chart, using the `x` attribute. If you also configure it individually for the annotation item(s) within the group. Then the value of the `x` attribute for the item is set relative to the value of the `x` attribute for the group.
 
-* Specify the y coordinate of the starting position of a group of annotations with respect to the topmost position (taken as 0) of the chart, using the **y** attribute. If you also configure it individually for the annotation item(s) within the group. Then the value of the **y** attribute for the item is set relative to the value of the **y** attribute for the group.
+* Specify the y coordinate of the starting position of a group of annotations with respect to the topmost position (taken as 0) of the chart, using the `y` attribute. If you also configure it individually for the annotation item(s) within the group. Then the value of the `y` attribute for the item is set relative to the value of the `y` attribute for the group.
 
-* Set the value of the **autoScale** attribute to `1`, to automatically scale a group of annotations, if chart dimensions change.
+* Set the value of the `autoScale` attribute to `1`, to automatically scale a group of annotations, if chart dimensions change.
 
-* Set the value of the **constrainedScale** attribute to `1`, to retain the aspect ratio (height:width) of annotations when scaling.
+* Set the value of the `constrainedScale` attribute to `1`, to retain the aspect ratio (height:width) of annotations when scaling.
 
-* Set the value of the **scaleText** attribute to `1`, to automatically scale text annotations in a group of annotations, if chart dimensions change.
+* Set the value of the `scaleText` attribute to `1`, to automatically scale text annotations in a group of annotations, if chart dimensions change.
 
-* Set the value of the **scaleImages** attribute to `1`, to automatically scale image annotations in a group of annotations, if chart dimensions change.
+* Set the value of the `scaleImages` attribute to `1`, to automatically scale image annotations in a group of annotations, if chart dimensions change.
 
-* Set the value of the **showBelow** attribute to `1`, to prevent the annotation group from overlapping the data plots.
+* Set the value of the `showBelow` attribute to `1`, to prevent the annotation group from overlapping the data plots.
 
-* Specify the original width of the chart, in which the annotations render as intended, using the **origW** attribute. Note that this value is used as the reference width while automatically scaling annotations, when a chart is resized.
+* Specify the original width of the chart, in which the annotations render as intended, using the `origW` attribute. Note that this value is used as the reference width while automatically scaling annotations, when a chart is resized.
 
-* Specify the original height of the chart, in which the annotations render as intended, using the **origH** attribute. Note that this value is used as the reference height while automatically scaling annotations, when a chart is resized.
+* Specify the original height of the chart, in which the annotations render as intended, using the `origH` attribute. Note that this value is used as the reference height while automatically scaling annotations, when a chart is resized.
 
-* Specify a value to be added to the x coordinate position value of the final annotation items on the x-axis, using the **xShift** attribute. While applying scaling, the value of this attribute is included within the scale factor.
+* Specify a value to be added to the x coordinate position value of the final annotation items on the x-axis, using the `xShift` attribute. While applying scaling, the value of this attribute is included within the scale factor.
 
-* Specify a value to be added to the y coordinate position value of the final annotation items on the y-axis, using the **yShift** attribute. While applying scaling, the value of this attribute is included within the scale factor.
+* Specify a value to be added to the y coordinate position value of the final annotation items on the y-axis, using the `yShift` attribute. While applying scaling, the value of this attribute is included within the scale factor.
 
-* Shift all annotation groups along the x coordinate by a fixed distance, using the **grpXShift** attribute. Note that unlike **xShift**, the value of **grpXShift** is not included in the scale factor when applying scaling.
+* Shift all annotation groups along the x coordinate by a fixed distance, using the `grpXShift` attribute. Note that unlike `xShift`, the value of `grpXShift` is not included in the scale factor when applying scaling.
 
-* Shift all annotation groups along the y coordinate by a fixed distance, using the **grpyShift** attribute. Note that unlike **yShift**, the value of **grpyShift** is not included in the scale factor when applying scaling.
+* Shift all annotation groups along the y coordinate by a fixed distance, using the `grpyShift` attribute. Note that unlike `yShift`, the value of `grpyShift` is not included in the scale factor when applying scaling.
 
-* Specify the transparency (between `0` for transparent and `100` for opaque) for a group of annotations, using the **alpha** attribute.
+* Specify the transparency (between `0` for transparent and `100` for opaque) for a group of annotations, using the `alpha` attribute.
 
-* Set the value of the **visible** attribute of a group of annotations to `0`, to hide the group.
+* Set the value of the `visible` attribute of a group of annotations to `0`, to hide the group.
 
-* Set the value of the **showShadow** attribute to `1`, to show a shadow effect for the annotation group.
+* Set the value of the `showShadow` attribute to `1`, to show a shadow effect for the annotation group.
 
-* Specify the hex color code for the annotation group, using the **color** attribute.
+* Specify the hex color code for the annotation group, using the `color` attribute.
 
-* Specify the font family for all the text annotation(s) in the annotation group, using the **font** attribute.
+* Specify the font family for all the text annotation(s) in the annotation group, using the `font` attribute.
 
-* Specify the font size for all the text annotation(s) in the annotation group, using the **fontSize** attribute.
+* Specify the font size for all the text annotation(s) in the annotation group, using the `fontSize` attribute.
 
-* Specify the horizontal alignment for all text annotation(s), using the **textAlign** attribute.
+* Specify the horizontal alignment for all text annotation(s), using the `textAlign` attribute.
 
-* Specify the vertical alignment for all text annotation(s), using the **textVAlign** attribute.
+* Specify the vertical alignment for all text annotation(s), using the `textVAlign` attribute.
 
-* Specify whether text annotation(s) are to be rotated, using the **rotateText** attribute. Note that this attribute takes `0` (default), `1`, `left`, and `right`, as values.
+* Specify whether text annotation(s) are to be rotated, using the `rotateText` attribute. Note that this attribute takes `0` (default), `1`, `left`, and `right`, as values.
 
-* Set the value of the **wrapText** attribute to `1`, to automatically wrap words that are too long to fit in a line, to the next one. 
+* Set the value of the `wrapText` attribute to `1`, to automatically wrap words that are too long to fit in a line, to the next one. 
 
-* Specify the URL to which you will be redirected if you click the annotation group, using the **link** attribute.
+* Specify the URL to which you will be redirected if you click the annotation group, using the `link` attribute.
 
-* Specify the tooltip for the annotation group using the **toolText** attribute.
+* Specify the tooltip for the annotation group using the `toolText` attribute.
 
 Refer to the code below:
 
@@ -2057,43 +2057,43 @@ You can segregate attributes for annotation items into two types, common (which 
 
 ### Common Attributes
 
-* Specify a unique identification for the annotation using the **id** attribute. You can then use it to identify and change other properties of the annotation.
+* Specify a unique identification for the annotation using the `id` attribute. You can then use it to identify and change other properties of the annotation.
 
-* Specify the type of annotation to be drawn, using the **type** attribute.
+* Specify the type of annotation to be drawn, using the `type` attribute.
 
-* Specify the hex color code for the annotation, using the **color** attribute.
+* Specify the hex color code for the annotation, using the `color` attribute.
 
-* Specify the transparency (between `0` for transparent and `100` for opaque) of the annotation, using the **alpha** attribute.
+* Specify the transparency (between `0` for transparent and `100` for opaque) of the annotation, using the `alpha` attribute.
 
-* Specify a list of hex color codes, if the group has to be rendered with a gradient effect, using the **fillColor** attribute. Note that this attribute is not applicable to the line, text, and image annotations.
+* Specify a list of hex color codes, if the group has to be rendered with a gradient effect, using the `fillColor` attribute. Note that this attribute is not applicable to the line, text, and image annotations.
 
-* Specify the transparency (between `0` for transparent and `100` for opaque) of the colors (specified using the **fillColor** attribute) using the **fillAlpha** attribute. Note that the number of values you provide for this attribute should be the same as those for the **fillColor** attribute. In case the number of values is less than the number of colors you provide, the last of the comma-separated values is repeated for the remaining colors.
+* Specify the transparency (between `0` for transparent and `100` for opaque) of the colors (specified using the `fillColor` attribute) using the `fillAlpha` attribute. Note that the number of values you provide for this attribute should be the same as those for the `fillColor` attribute. In case the number of values is less than the number of colors you provide, the last of the comma-separated values is repeated for the remaining colors.
 
-* Specify the ratio (between `0` and `100`) for distribution for all colors specified as a comma-separated list to the **fillColor** attribute, using the **fillRatio** attribute. The number of values you provide for this attribute should be the same as that for the **fillColor** attribute. In case the number of ratio values is less than the number of colors you provide, the last of the comma-separated values is repeated for the remaining colors. The summation of these values should not exceed 100.
+* Specify the ratio (between `0` and `100`) for distribution for all colors specified as a comma-separated list to the `fillColor` attribute, using the `fillRatio` attribute. The number of values you provide for this attribute should be the same as that for the `fillColor` attribute. In case the number of ratio values is less than the number of colors you provide, the last of the comma-separated values is repeated for the remaining colors. The summation of these values should not exceed 100.
 
-* Specify the angle (between `0` degree and `360` degrees) in which the gradient is to be drawn for a gradient **fillColor**, using the **fillAngle** attribute.
+* Specify the angle (between `0` degree and `360` degrees) in which the gradient is to be drawn for a gradient `fillColor`, using the `fillAngle` attribute.
 
-* Specify whether the gradient fill is to be linear or radial (default for circle and arc annotations), using the **fillPattern** attribute.
+* Specify whether the gradient fill is to be linear or radial (default for circle and arc annotations), using the `fillPattern` attribute.
 
-* Show a border around the annotation by setting the value of the **showBorder** attribute to `1`.
+* Show a border around the annotation by setting the value of the `showBorder` attribute to `1`.
 
-* Specify the hex color code for the annotation border, using the **borderColor** attribute. Note that this attribute is not applicable to the line annotation.
+* Specify the hex color code for the annotation border, using the `borderColor` attribute. Note that this attribute is not applicable to the line annotation.
 
-* Specify the transparency (between `0` for transparent and `100` for opaque) of the annotation border, using the **borderAlpha** attribute. Note that this attribute is not applicable to the line annotation.
+* Specify the transparency (between `0` for transparent and `100` for opaque) of the annotation border, using the `borderAlpha` attribute. Note that this attribute is not applicable to the line annotation.
 
-* Specify the thickness (in pixels) of the annotation border, using the **borderThickness** attribute. Note that this attribute is not applicable to the line annotation.
+* Specify the thickness (in pixels) of the annotation border, using the `borderThickness` attribute. Note that this attribute is not applicable to the line annotation.
 
-* Specify whether the annotation border is to be drawn using dashed lines, by setting the value of the **dashed** attribute to `1`. Note that for the line annotation, this attribute renders the annotation itself as a dashed line.
+* Specify whether the annotation border is to be drawn using dashed lines, by setting the value of the `dashed` attribute to `1`. Note that for the line annotation, this attribute renders the annotation itself as a dashed line.
 
-* Specify the length of each dash, if a dashed border is drawn for the annotation, using the **dashLen** attribute.
+* Specify the length of each dash, if a dashed border is drawn for the annotation, using the `dashLen` attribute.
 
-* Specify the gap between each dash, if a dashed border is drawn for the annotation, using the **dashGap** attribute.
+* Specify the gap between each dash, if a dashed border is drawn for the annotation, using the `dashGap` attribute.
 
-* Specify the tooltip for annotation items that is shown when you hover the mouse pointer over it, using the **toolText** attribute.
+* Specify the tooltip for annotation items that is shown when you hover the mouse pointer over it, using the `toolText` attribute.
 
-* Specify the URL to which you will be redirected, if you click the annotation item, using the **link** attribute.
+* Specify the URL to which you will be redirected, if you click the annotation item, using the `link` attribute.
 
-* Specify whether a shadow effect is to be shown for the annotation group, by setting the value of the **showShadow** attribute to `1`.
+* Specify whether a shadow effect is to be shown for the annotation group, by setting the value of the `showShadow` attribute to `1`.
 
 Refer to the code below:
 
@@ -2108,138 +2108,6 @@ Refer to the code below:
     }
 }
 ```
-
-### Ad Hoc Attributes
-
-#### **Line**
-
-* Set the value of the **type** attribute to line, to create a line annotation.
-
-* Specify the x coordinate of the starting position of the line with respect to the leftmost position (taken as zero) of the chart, using the **x** attribute.
-
-* Specify the y coordinate of the starting position of the line with respect to the topmost position (taken as zero) of the chart, using the **y** attribute.
-
-* Specify the x coordinate of the ending position of the line with respect to the leftmost position (taken as zero) of the chart, using the **toX** attribute.
-
-* Specify the y coordinate of the ending position of the line with respect to the topmost position (taken as zero) of the chart, using the **toY** attribute.
-
-* Specify the thickness (in pixels) of the line, using the **thickness** attribute.
-
-#### **Circle**
-
-* Set the value of the **type** attribute to circle, to create a circular annotation.
-
-* Specify the x coordinate of the center of the circle with respect to the leftmost position (taken as zero) of the chart, using the **x** attribute.
-
-* Specify the y coordinate of the center of the circle with respect to the topmost position (taken as zero) of the chart, using the **y** attribute.
-
-* Specify the radius (in pixels) of the circle, using the **radius** attribute.
-
-* Specify the height (in pixels), if you want to draw an oval annotation, using the **yRadius** attribute.
-
-* Specify the starting angle (in degrees), if the circle has to be drawn like a wedge, using the **startAngle** attribute. 
-
-* Specify the ending angle (in degrees), if the circle has to be drawn like a wedge, using the **endAngle** attribute. Note that, to draw a semicircle, you need to set "startAngle": "0" and "endAngle": "180".
-
-#### **Arc**
-
-* Set the value of the **type** attribute to arc, to create an arc-shaped annotation.
-
-* Specify the x coordinate of the center of the arc with respect to the leftmost position (taken as zero) of the chart, using the **x** attribute.
-
-* Specify the y coordinate of the center of the arc with respect to the topmost position (taken as zero) of the chart, using the **y** attribute.
-
-* Specify the outer radius (in pixels) of the arc, using the **radius** attribute.
-
-* Specify the inner radius (in pixels) of the arc, using the **innerRadius** attribute.
-
-* Specify the starting angle of the arc, by setting the value of the **startAngle** attribute between 0 and 360. 
-
-* Specify the ending angle of the arc, by setting the value of the **endAngle** attribute between 0 and 360.
-
-#### **Rectangle**
-
-* Set the value of the **type** attribute to rectangle, to create a rectangular annotation.
-
-* Specify the x coordinate of the starting position of the rectangle with respect to the leftmost position (taken as zero) of the chart, using the **x** attribute.
-
-* Specify the y coordinate of the starting position of the rectangle with respect to the topmost position (taken as zero) of the chart, using the **y** attribute.
-
-* Specify the x coordinate of the ending position of the rectangle with respect to the leftmost position (taken as zero) of the chart, using the **toX** attribute.
-
-* Specify the y coordinate of the ending position of the rectangle with respect to the topmost position (taken as zero) of the chart, using the **toY** attribute.
-
-* Specify the radius (in pixels) of the edges of a rectangle, using the **radius** attribute. Note that you need to use this attribute to render the annotation as a rounded rectangle.
-
-#### **Polygon**
-
-* Set the value of the **type** attribute to polygon, to create a polygonal annotation.
-
-* Specify the number (greater than 2) of sides for the polygon, using the **sides** attribute.
-
-* Specify the x coordinate of the center of the polygon with respect to the leftmost position (taken as zero) of the chart, using the **x** attribute.
-
-* Specify the y coordinate of the center of the polygon with respect to the topmost position (taken as zero) of the chart, using the **y** attribute.
-
-* Specify the radius (in pixels) of the edges of a polygon, using the **radius** attribute. 
-
-#### **Text**
-
-* Set the value of the **type** attribute to text, to create a text annotation.
-
-* Specify the text to be rendered as the annotation, using the **text** attribute.
-
-* Specify the x coordinate of the position of the text annotation with respect to the leftmost position (taken as zero) of the chart, using the **x** attribute.
-
-* Specify the y coordinate of the position of the text annotation with respect to the topmost position (taken as zero) of the chart, using the **y** attribute.
-
-* Specify the font family for the text annotation, using the **font** attribute.
-
-* Specify the font size for the text annotation, using the **fontSize** attribute.
-
-* Specify the horizontal alignment (as `left`, `center`, or `right`) of the text annotation, using the **align** attribute.
-
-* Specify the horizontal alignment (as `top`, `middle`, or `bottom`) of the text annotation, using the **vAlign** attribute.
-
-* Set the value of the bold attribute to `1`, to render the text in bold formatting.
-
-* Set the value of the italic attribute to `1`, to render the text in italic formatting.
-
-* Specify the hex color code for the background of the text annotation, using the **bgColor** attribute.
-
-* Set a fixed margin (in pixels) to the left of the text, using the **leftMargin** attribute.
-
-* Specify whether the text annotations are be rotated using the **rotateText** attribute, which takes the values `0`, `1`, `left`, and `right`.
-
-* Set the value of the **wrap** attribute to `1`, to enable text wrapping.
-
-* Specify the width after which the text will break into a new line, using the **wrapWidth** attribute. Note that you can also set **toX** and **toY** attributes on text, if you provide text wrapping dimensions in absolute pixels from the origin coordinates of the annotation group.
-
-* Specify the height after which the text will be wrapped, using the **wrapHeight** attribute. Ellipses will be automatically appended to the end of the text, when it overflows beyond the vertical space you allocate using **wrapHeight** or **toY** attributes.
-
-#### **Path**
-
-* Set the value of the **type** attribute to path, to create a path annotation.
-
-* Specify the path command using the **path** attribute. Note that this attribute accepts standard SVG path format.
-
-* Specify the x coordinate of the starting position of the path with respect to the leftmost position (taken as 0) of the chart, using the **x** attribute.
-
-* Specify the y coordinate of the starting position of the path with respect to the topmost position (taken as 0) of the chart, using the **y** attribute.
-
-#### **Images**
-
-* Set the value of the **type** attribute to image, to create an image annotation.
-
-* Specify the location of the image file (in jpeg, png, or gif format) that is to be rendered on the chart, using the **url** attribute. Note that chart rendering does not pause for the image to load, and as such, asynchronously draws them as and when they are loaded. If you need to load the images instantaneously, consider preloading them.
-
-* Specify the x coordinate of the starting position of the image annotation with respect to the leftmost position (taken as 0) of the chart, using the **x** attribute.
-
-* Specify the y coordinate of the starting position of the image annotation with respect to the topmost position (taken as 0) of the chart, using the **y** attribute.
-
-* Specify the resize value for the image width, using the **xScale** attribute.
-
-* Specify the resize value for the image height, using the **yScale** attribute.
 
 ## Use macros to position annotations
 
