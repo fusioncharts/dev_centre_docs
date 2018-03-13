@@ -42,7 +42,7 @@ Arkansas|maps/arkansas|
 California|maps/california|
 Colorado|maps/colorado|
 Connecticut|maps/connecticut|
-Delaware|maps/celaware|
+Delaware|maps/delaware|
 District of Columbia|maps/districtofcolumbia|
 Florida|maps/florida|
 Georgia|maps/georgia|

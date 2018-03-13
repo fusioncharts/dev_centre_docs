@@ -13,7 +13,7 @@ FusionCharts Suite XT includes the FusionCharts server-side ASP.NET wrapper that
 
 ## Download
 
-FusionCharts ASP.NET (C# & VB.NET) Wrapper can be downloaded from [here](https://www.fusioncharts.com/php-charts/).
+FusionCharts ASP.NET (C# & VB.NET) Wrapper can be downloaded from [here](https://www.fusioncharts.com/asp-net-charts/).
 
 ## Install
 
