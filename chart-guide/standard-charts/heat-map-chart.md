@@ -5,7 +5,7 @@ heading: Heat Map Chart
 breadcrumb: [["Home", "/dev"], ["Heat Map Chart"]]
 ---
 
-A heat map chart is a specialized chart that uses colors to represent data values in a table. You will find it most useful, when you need to plot large and complex data.
+A heat map chart is a specialized chart that uses colors to represent data values in a table. You will find it most useful when you need to plot large and complex data.
 
 ## Basics of a heat map chart
 
@@ -219,11 +219,11 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/n3o2ycc0/ "@@open-newtab") to edit the above chart.
 
-> In the above data, the `color` attribute is present in two data elements, and applies different colors for the first two cells of the chart. These two colors are different from the colors defined in the `colorRange` element. You can also control the transparency of the cell using the `alpha` attribute with the `data` object.
+> In the above data, the `color` attribute is present in two data elements and applies different colors for the first two cells of the chart. These two colors are different from the colors defined in the `colorRange` element. You can also control the transparency of the cell using the `alpha` attribute with the `data` object.
 
 ## Create category based heat map charts
 
-You can do category based mapping by defining several color categories or ranges, and setting a specific color category to a cell. You don't need to map numeric values to value ranges. Instead, use a color range to map a cell with a color category.
+You can do category based mapping by defining several color categories or ranges, and set a specific color category to a cell. You don't need to map numeric values to value ranges. Instead, use a color range to map a cell with a color category.
 
 Use the following attributes to create a category based heat map chart:
 
@@ -378,7 +378,7 @@ Icon legends are interactive. You can click a legend item to show or hide all th
 
 ## Create a gradient legend
 
-A gradient legend is a pane of blended colors derived from the `colorRange` definitions, and features a linear scale is drawn with two draggable pointers. Each color you define for a numeric range blends with the next color, forming a gradient strip. Each point on the gradient scale represents a unique color and value. So, all the different values in the chart appear in unique colors as per the position on the gradient scale.
+A gradient legend is a pane of blended colors derived from the `colorRange` definitions and features a linear scale is drawn with two draggable pointers. Each color you define for a numeric range blends with the next color, forming a gradient strip. Each point on the gradient scale represents a unique color and value. So, all the different values in the chart appear in unique colors as per the position on the gradient scale.
 
 Use the following attributes to configure a gradient legend:
 
@@ -481,7 +481,7 @@ Click [here](http://jsfiddle.net/fusioncharts/48sa9jfw/ "@@open-newtab") to edit
 
 **Show/hide data values**
 
-Using a gradient legend, you can filter cells within a specific range of values. To specify the range that should be shown on the chart, click and hold the cursor on any one or both of the scale pointers and drag them to set the required lower and upper limit. The chart will display only those data plots that lie within that range, while hiding the rest of the numbers.
+Using a gradient legend, you can filter cells within a specific range of values. To specify the range that should be shown on the chart, click and hold the cursor on any one or both of the scale pointers and drag them to set the required lower and upper limit. The chart will display only those data plots that lie within that range while hiding the rest of the numbers.
 
 The chart will look as shown below:
 
@@ -495,9 +495,9 @@ Using FusionCharts XT, you can configure the functional properties of labels and
 
 In a heat map chart, you can show multiple labels in different positions for the same data plot. For example, you can display labels at the center and the four corners of a dataplot. Use the following attributes to configure labels:
 
-* Display a numeric value at the center of a data plot using the `value` attribute. All number formatting features will apply, if you use this attribute.
+* Display a numeric value at the center of a data plot using the `value` attribute. All number formatting features will apply if you use this attribute.
 
-* Display any numeric or string value at the center of the data plot, using the `displayValue` attribute. This attribute will override the `value` attribute, if you use both in the code. Note that number formatting features are not applicable on the value of this attribute.
+* Display any numeric or string value at the center of the data plot, using the `displayValue` attribute. This attribute will override the `value` attribute if you use both in the code. Note that number formatting features are not applicable to the value of this attribute.
 
 * Display a label in the top-left corner of a data plot, using the `tlLabel` attribute.
 
@@ -604,7 +604,7 @@ Click [here](http://jsfiddle.net/fusioncharts/3wsay8rt/ "@@open-newtab") to edit
 
 ## Handle out-of-range data
 
-If data values are beyond the numeric ranges you define in the `colorRange` object, the chart shows blank data plots. A chart with a blank data plot rendered for out-of-range data looks like the following:
+If data values are beyond the numeric ranges you define in the `colorRange` object; the chart shows blank data plots. A chart with a blank data plot rendered for out-of-range data looks like the following:
 
 Refer to the code below:
 
