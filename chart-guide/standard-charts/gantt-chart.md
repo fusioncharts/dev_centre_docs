@@ -29,11 +29,11 @@ With a Gantt chart, you can:
 
 * Display the completion of each task in percentage, either as an empty bar or by using a different fill color (which you can define with the attribute `slackFillColor`).
 
-* Show a scrollable data table at the side of the chart. You can create any number of columns in this table and display any type of data you want. You can also customize the cosmetics of each cell of this table.
+* Show a scrollable data table at the side of the chart. You can create any number of columns in this table and display any data you want. You can also customize the cosmetics of each cell of this table.
 
 * Restrict the Gantt view pane area to a specified date/time duration. You can view the rest by scrolling the chart.
 
-* Link tasks to processes by an ID. Therefore, you can define multiple tasks for each process. This can help in cases where you plot a Gantt chart indicating allotted work for all team members and each member has multiple jobs allotted during the same period.
+* Link tasks to processes by an ID. Therefore, you can define multiple tasks for each process. This can help in cases where you plot a Gantt chart indicating allotted work for all team members, and each member has multiple jobs allotted during the same period.
 
 * Show/hide task labels, percent labels, individual task bar dates, etc.
 
@@ -51,7 +51,7 @@ With a Gantt chart, you can:
 
 * Set colors for the chart with pre-defined palettes and single color theme selectors.
 
-* Define the width ratio in which the data table and Gantt area is to be distributed.
+* Define the width ratio in which the data table and Gantt area are to be distributed.
 
 * Fully customize Gantt and grid cosmetics, as well as other settings, like scroll properties.
 
@@ -99,7 +99,7 @@ In the images given below, you can see a standard Gantt chart with a few of the 
 
 A Gantt chart has a horizontal axis representing the total time span of the project. You can break this axis down into increments (for example, days, weeks, or months). You can also define any number of sub-categories to show dates broken into smaller units. For example, if you want to show a Gantt chart spanning two years, you can show the first sub-category as quarters, then divide these quarters into months, then weeks, and finally into days.
 
-Irregular distribution of the timeline is also possible. For example, if you want to plot a Gantt chart illustrating the development of a certain project during a time span of three months and you want to show the weekly progress, you can easily divide the time period into weeks based on their actual dates. In the visual date time line, the bar on the top can represent the months by their names and the bar below it can display the weeks.
+The irregular distribution of the timeline is also possible. For example, if you want to plot a Gantt chart illustrating the development of a certain project during a time span of three months and you want to show the weekly progress, you can easily divide the time period into weeks based on their actual dates. In the visual date timeline, the bar on the top can represent the months by their names and the bar below it can display the weeks.
 
 In most of the other Gantt charts, you are forced to divide a month into four weeks only, thereby resulting in aberrations in the visual data display, as a month is always more than 4 weeks. However, the FusionCharts Suite XT Gantt chart is date based, which means all your divisions of date are perfect. You can show a week starting in one month and ending in another.
 
@@ -121,13 +121,13 @@ Task bars are the actual bars which represent the duration of each task. They ru
 
 Milestones are an important part of the Gantt chart as they allow you to visually depict any crucial dates on the chart. You can create your own milestones on the chart based on the date and the tasks, i.e., for a given task you can specify milestones on specific dates. You can customize all the visual properties of the milestone including shape (star or polygon), size, and colors.
 
-Additionally, you can add tool text and link for the milestone.
+Additionally, you can add tool text and link to the milestone.
 
 ## Task Connectors
 
 You can draw connectors between the task bars to indicate the process flow.
 
-On the functional side, to draw a connector, all you need to do is specify the `Id`attributes for the two tasks that you want to connect. Apart from this, you can also specify where the connector joins the start and end task bar individually – at their start or end.
+On the functional side, to draw a connector, all you need to do is specify the `Id` attributes for the two tasks that you want to connect. Apart from this, you can also specify where the connector joins the start and end task bar individually – at their start or end.
 
 For example, if you need to plot two connecting tasks which are simultaneous in nature, that is each process starts at the same time and relates to the same thing, you can connect the start of taskbar to the start of end bar to give the visual effect. Similarly, if the second process can start only after the first process has ended, you can connect the end of the first task bar to the beginning of the succeeding taskbar.
 
@@ -137,7 +137,7 @@ You can use trend-lines to show important dates on the chart - like today, or a 
 
 ## Legend
 
-You can define your own legend and keys for the chart. This is an optional requirement, but can be useful to depict what each color represents.
+You can define your own legend and keys for the chart. This is an optional requirement but can be useful to depict what each color represents.
 
 ## Vertical Scroll Bar
 
@@ -606,9 +606,9 @@ Click [here](http://jsfiddle.net/fusioncharts/xeeactrr/ "@@open-newtab") to edit
 
 Use the following attributes to customize the hover effect for tasks:
 
-* Set the value of the `taskHoverFillColor` attribute in hex code to specify the task bar fill color, when you hover the mouse pointer over it. It applies to all tasks.
+* Set the value of the `taskHoverFillColor` attribute in hex code to specify the task bar fill color when you hover the mouse pointer over it. It applies to all tasks.
 
-* Set the value of the `taskHoverFillAlpha` attribute between `0` (transparent) and `100` (opaque), to specify the transparency of the task bar fill color, when you hover the mouse pointer over it. It applies to all tasks.
+* Set the value of the `taskHoverFillAlpha` attribute between `0` (transparent) and `100` (opaque), to specify the transparency of the task bar fill color when you hover the mouse pointer over it. It applies to all tasks.
 
 * Set the value of the `hoverFillColor` attribute in hex code to specify the hover band color for specific categories, when you hover the mouse pointer over it. Use this attribute with the `tasks` object to apply the color to all tasks created using the object. Otherwise, use it with the task object, to apply the color to only one task created using the object.
 
@@ -679,9 +679,9 @@ Click [here](http://jsfiddle.net/fusioncharts/df36h963/ "@@open-newtab") to edit
 
 Use the following attributes to customize the hover effect for slacks:
 
-* Set the value of the `slackHoverFillColor` attribute in hex code to specify the slack bar fill color, when you hover the mouse pointer over it.
+* Set the value of the `slackHoverFillColor` attribute in hex code to specify the slack bar fill color when you hover the mouse pointer over it.
 
-* Set the value of the `slackHoverFillAlpha` attribute between `0` (transparent) and `100` (opaque), to specify the transparency of the slack bar fill color, when you hover the mouse pointer over it.
+* Set the value of the `slackHoverFillAlpha` attribute between `0` (transparent) and `100` (opaque), to specify the transparency of the slack bar fill color when you hover the mouse pointer over it.
 
 Refer to the code below:
 
@@ -975,7 +975,7 @@ The Gantt chart supports scrolling for both the data table and the Gantt view pa
 
 ### Enable vertical scrolling
 
-Vertical scrolling is enabled by default, depending on the height of your chart. If the number of processes fit within the height of the chart, vertical scrolling will not appear. You can manually enable vertical scrolling, if you want. To do so, set the value of the `useVerticalScrolling` attribute to `1`.
+Vertical scrolling is enabled by default, depending on the height of your chart. If the number of processes fits within the height of the chart, vertical scrolling will not appear. You can manually enable vertical scrolling, if you want. To do so, set the value of the `useVerticalScrolling` attribute to `1`.
 
 Refer to the code below:
 
@@ -1223,7 +1223,7 @@ In the chart above, notice how color coding can help you distinguish between act
 
 * Specify the label for the legend using the `label` attribute.
 
-* Specify the hex code of the color to be used for the legend using the `color` attribute.
+* Specify the hex code for the color to be used for the legend using the `color` attribute.
 
 * Specify the caption for the legend box using the `legendCaption` attribute.
 
@@ -1285,7 +1285,7 @@ Using FusionCharts Suite XT, you can create date-based and time-based charts, as
 
 In FusionCharts Suite XT, you must specify time in the 24-hour format as "hour:mins:secs (hh:mm:ss)" in the JSON/XML data.
 
-The 24-hour clock is a convention of time-keeping in which the day runs from midnight to midnight and is divided into 24 hours, numbered from 0 to 23. A time of the day is written in the 24-hour notation in the form hh:mm (for example 01:23) or hh:mm:ss (for example, 01:23:45), where hh (00 to 23) is the decimal number of full hours that have passed since midnight, mm (00 to 59) is the number of full minutes that have passed since the last full hour, and ss (00 to 59) is the number of seconds since the last full minute. In the 24-hour time notation, the day begins at midnight, 00:00 and the last minute of the day is that which begins at 23:59.
+The 24-hour clock is a convention of time-keeping in which the day runs from midnight to midnight and is divided into 24 hours, numbered from 0 to 23. A time of the day is written in the 24-hour notation in the form hh:mm (for example 01:23) or hh:mm:ss (for example, 01:23:45), where hh (00 to 23) is the decimal number of full hours that have passed since midnight, mm (00 to 59) is the number of full minutes that have passed since the last full hour, and ss (00 to 59) is the number of seconds since the last full minute. In the 24-hour time notation, the day begins at midnight, 00:00 and the last minute of the day are that which begins at 23:59.
 
 To specify a time in the JSON data, you need to define a `category` object. 
 
