@@ -25,7 +25,7 @@ Using a drag-node chart, you can:
 
     * add, edit, or delete text labels
 
-* Define links between any two nodes on the chart. Links can have arrows at both sides or either side. Each link has a label and a strength factor
+* Define links between any two nodes on the chart. Links can have arrows on both sides or either side. Each link has a label and a strength factor
 
 * Visually add nodes, connectors, and labels at runtime
 
@@ -71,7 +71,7 @@ Click [here](http://jsfiddle.net/fusioncharts/hLjr3bve/ "@@open-newtab") to edit
 
 ### Switch between modes
 
-You can either render drag-node charts in the edit mode (in which you can add, edit, or delete nodes, connectors, and labels), or in the view mode (in which you can only view the chart). To enable view mode, set the value of the `viewMode` attribute to `1`. If you set its value to `0` instead, then the chart will be rendered in edit mode, but will have a **Settings** button at the bottom of it.
+You can either render drag-node charts in the edit mode (in which you can add, edit, or delete nodes, connectors, and labels) or in the view mode (in which you can only view the chart). To enable view mode, set the value of the `viewMode` attribute to `1`. If you set its value to `0` instead, then the chart will be rendered in edit mode but will have a **Settings** button at the bottom of it.
 
 Refer to the code below:
 
@@ -139,15 +139,15 @@ Here's how to fill in the different fields in the dialog box:
 
 * Choose the shape of the node as `rectangle` (default), `circle`, or `polygon`, in the Shape dropdown menu.
 
-* Specify the height of the shape in the Height field. Note that this field is visible only when you select the Rectangle opton from the Shape dropdown menu.
+* Specify the height of the shape in the Height field. Note that this field is visible only when you select the Rectangle option from the Shape dropdown menu.
 
-* Specify the width of the shape in the Width field. Note that this field is visible only when you select the Rectangle opton from the Shape dropdown menu.
+* Specify the width of the shape in the Width field. Note that this field is visible only when you select the Rectangle option from the Shape dropdown menu.
 
 * Specify the radius of the shape in the Radius field. Note that this field is visible only when you select Circle or Polygon from the Shape drop-down menu.
 
 * Specify the number of sides for the shape in the Sides field. Note that this field is visible only when you select Polygon from the Shape drop-down.
 
-* Specify the URL to which the chart will redirect you, if you click on the node, in the Link field.
+* Specify the URL to which the chart will redirect you if you click on the node, in the Link field.
 
 * Specify whether an image will be rendered with the node in the Image field. If you select this checkbox several fields (URL, Width, Height, and Align) that allow you to enter image information will become visible. 
 
@@ -233,7 +233,7 @@ chartInstance.addEventListener('nodedeleted', function(e, a){
 
 ## Add and edit connectors
 
-Using FusionCharts Suite XT, you can customize a drag-node chart at runtime. You can add, edit, or delete connectors in a drag-node chart. Set the chart to edit mode to use this feature (enable edit mode by setting "viewMode: 0" in the chart object).
+Using FusionCharts Suite XT, you can customize a drag-node chart in runtime. You can add, edit, or delete connectors in a drag-node chart. Set the chart to edit mode to use this feature (enable edit mode by setting "viewMode: 0" in the chart object).
 
 A sample chart will look like the following:
 
@@ -489,7 +489,7 @@ Use the following attributes to show/hide and define the form properties for the
 
 * Specify whether the **Submit** button will be rendered on the chart by setting the value of the `showFormBtn` attribute to `1`. Note that if you use JavaScript methods to get data from the chart, you can hide this button.
 
-* Specify the URL of the server-side script to which you want to submit the updated data, using the `formAction` attribute. You can specify either the relative, or the absolute path. You also need to use the `strXML` form variable in this page.
+* Specify the URL of the server-side script to which you want to submit the updated data, using the `formAction` attribute. You can specify either the relative or the absolute path. You also need to use the `strXML` form variable on this page.
 
 * Specify `GET`, or `POST` as the method for submitting form data, using the `formMethod` attribute. If you submit the data in XML format, you should ideally use the `POST` method.
 

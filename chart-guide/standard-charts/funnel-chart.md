@@ -5,9 +5,9 @@ heading: Funnel Chart
 breadcrumb: [["Home", "/dev"], ["Funnel Chart"]]
 ---
 
-Use a funnel chart to plot streamlined data. For instance, you can plot sales data into a funnel chart to analyze the sales pipeline. Structurally, a funnel chart consists of multiple segments and each segment represents a data point. You can render a funnel chart in either 2D or 3D.
+Use a funnel chart to plot streamlined data. For instance, you can plot sales data into a funnel chart to analyze the sales pipeline. Structurally, a funnel chart consists of multiple segments, and each segment represents a data point. You can render a funnel chart in either 2D or 3D.
 
-In a funnel chart, the data is streamlined, i.e., each slice (section) in the funnel represents a process flow that has filtered out data. For example, if you use a funnel chart to display the employment process, the first slice will represent the "Number of candidates who applied". Thereafter, each process flow (like "Interview Phase 1", "IQ Test", "Project", etc.) will be represented by subsequent funnel slices, each slice filtering the data provided to the previous slice. The last slice bears the value that is the final result of the entire procedure (for example, "Candidates recruited" in this scenario).
+In a funnel chart, the data is streamlined, i.e., each slice (section) in the funnel represents a process flow that has filtered out data. For example, if you use a funnel chart to display the employment process, the first slice will represent the "Number of candidates who applied". After that, each process flow (like "Interview Phase 1", "IQ Test", "Project", etc.) will be represented by subsequent funnel slices, each slice filtering the data provided to the previous slice. The last slice bears the value that is the final result of the entire procedure (for example, "Candidates recruited" in this scenario).
 
 ## Salient Features
 
@@ -25,11 +25,11 @@ Features of a funnel chart that you may find useful:
 
 * Show values as actual values or in percentage.
 
-* Show a value as a percentage of the first value or the previous value.
+* Show a value as percentage of the first value or the previous value.
 
 * Use smart labels to avoid overlapping of funnel labels.
 
-* Place labels at the side or at the center of the funnel chart.
+* Place labels at the side or the center of the funnel chart.
 
 * Enter custom tool text for each funnel slice.
 
@@ -60,9 +60,9 @@ To create a funnel chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-* Use `value` attribute within the `data` object to show the numerical value for the data represented by a funnel slice. 
+* Use `value` attribute within the `data` object to show the numerical value of the data represented by a funnel slice. 
 
-* Use the `label` attribute within the `data` object to specify the label to be be rendered for a funnel slice, e.g., "Unique Website Visits".
+* Use the `label` attribute within the `data` object to specify the label to be rendered for a funnel slice, e.g., "Unique Website Visits".
 
 A streamline funnel chart to show the purchase-conversion analysis looks like the following:
 
@@ -135,7 +135,7 @@ Click [here](http://jsfiddle.net/fusioncharts/5rV6H/ "@@open-newtab") to edit th
 
 You can show the labels in the legend box, instead of showing them with the data plots. To do this, show the legend box and hide the labels for the data plots. The following attributes are used:
 
-* Set the value of the `showLegend` attribute to `1`, to show the legend box for the chart.
+* Set the value of the `showLegend` attribute to `1`, to display the legend.
 
 * Set the value of the `showLabels` attribute to `1`, to show the labels for data plots.
 
@@ -243,7 +243,7 @@ Click [here](http://jsfiddle.net/fusioncharts/zh4w2z7r/ "@@open-newtab") to edit
 
 ## Slice Out Individual Funnel Slices
 
-At times, you may want to highlight important data. so that it can be easily noticed. In a funnel chart, you can slice out the funnel slice that represents any such data. Set the `isSliced` attribute to `1` to slice out a particular data slice. Note that you can either use this attribute as part of the `chart` object (in which case it will apply to all slices), or the `data` object (in which case it will only apply to the slice(s) for which you define it).
+At times, you may want to highlight important data so that it can be easily noticed. In a funnel chart, you can slice out the funnel slice that represents any such data. Set the `isSliced` attribute to `1` to slice out a particular data slice. Note that you can either use this attribute as part of the `chart` object (in which case it will apply to all slices), or the `data` object (in which case it will only apply to the slice(s) for which you define it).
 
 Refer to the code below:
 
