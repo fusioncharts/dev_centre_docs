@@ -17,7 +17,7 @@ Click the rectangles in the treemap shown above and see how you can traverse thr
 
 ## Applications of a treemap
 
-Use a treemap to display hierarchical information presented using a tree structure. You can, for instance, use a treemap to show the folder structure of a system. You can also use it to study patterns and occurrences in a large data set, since the color and the size dimensions are correlated.
+Use a treemap to display hierarchical information presented using a tree structure. You can, for instance, use a treemap to show the folder structure of a system. You can also use it to study patterns and occurrences in a large dataset since the color, and the size dimensions are correlated.
 
 ## Visualization of a treemap
 
@@ -45,7 +45,7 @@ In the image given below, you can see how an information tree is translated to t
 
 Tiling is the process, by which a treemap divides large rectangles into smaller sub-rectangles. Ideally, a treemap tiling algorithm creates rectangles with an aspect ratio that is close to one, with ordering based on the underlying data tree. 
 
-These properties have an inverse relationship, though. You need to make a choice between optimizing between the order of placement and the aspect ratio. When you optimize the aspect ratio, the order of placement becomes less predictable. On the other hand, if you stabilize the order of placement, the aspect ratio degrades. Therefore, you can generally categorize tiling algorithms as the ones that:
+These properties have an inverse relationship, though. You need to choose between optimizing the order of placement and the aspect ratio. When you optimize the aspect ratio, the order of placement becomes less predictable. On the other hand, if you stabilize the order of placement, the aspect ratio degrades. Therefore, you can categorize tiling algorithms like the ones that:
 
 * Support low aspect ratio
 
@@ -59,7 +59,7 @@ Aspect ratio, especially for the innermost rectangle, is one of the most signifi
 
 > The aspect ratio is never exactly 1 in real-life use-cases, but there are algorithms that try to keep it to 1, by trading off the order.
 
-In the table below, you can see the commonly used algorithms, as well as the trade offs that you must make when using them:
+In the table below, you can see the commonly used algorithms, as well as the trade-offs that you must make when using them:
 
 Algorithm|Order|Aspect Ratio|
 -|-|-
@@ -114,7 +114,7 @@ Use the following attributes to build a simple treemap:
 
 * Use the `height` attribute to set the height of the chart, in pixels.
 
-* Use the `dataFormat` attribute to set the format, in which data will be passed to the `chart` object. Note that this attribute can accept any one among two different sets of values - either `json` (JSON data to render the chart is passed to the `dataSource` attribute) and `jsonurl` (the relative path to a .json file is passed to the `dataSource` attribute), or `xml` and `xmlurl`.
+* Use the `dataFormat` attribute to set the format, in which data will be passed to the `chart` object. Note that this attribute can accept anyone among two different sets of values - either `json` (JSON data to render the chart is passed to the `dataSource` attribute) and `jsonurl` (the relative path to a .json file is passed to the `dataSource` attribute) or `xml` and `xmlurl`.
 
 * Use the `dataSource` attribute to specify the source from which the chart will fetch data, depending on the value passed to the `dataFormat` attribute.
 
@@ -128,7 +128,7 @@ Use the following attributes to build a simple treemap:
 
 * Use the `sValue` attribute to specify the secondary value for a data item. This value is used to set the color (based on the color range defined using the `colorRange` object) of the rectangle (node).
 
-The Tree map will look like as shown below:
+The Treemap will look like as shown below:
 
 {% embed_all standard-charts-treemap-example-1a.js %}
 
@@ -190,7 +190,7 @@ Refer to the code below:
 }
 ```
 
-> The value you assign to the `sValue` attribute in the chart data will be used to assign color to a data plot, based on the numeric range it falls within.
+> The value you assign to the `sValue` attribute in the chart data will be used to assign a color to a data plot, based on the numeric range it falls within.
 
 The gradient legend will look like as shown in the image below:
 
@@ -248,9 +248,9 @@ Still, if you want to use this algorithm, use the following attributes to do so.
 
 * Set the value of the attribute `slicingMode` to the mode you want to use for the chart:
 
-    * `vertical`: In this mode all the nodes in the nth level are sliced vertically and the ones in the n+1 th level are sliced horizontally, beginning at level 1.
+    * `vertical`: In this mode, all the nodes in the nth level are sliced vertically, and the ones in the n+1 th level are sliced horizontally, beginning at level 1.
 
-    * `horizontal`: In this mode all the nodes in the nth level are sliced horizontally and the ones in the n+1 th level are sliced vertically, beginning at level 1.
+    * `horizontal`: In this mode, all the nodes in the nth level are sliced horizontally and the ones in the n+1 th level are sliced vertically, beginning at level 1.
 
     * `alternate`: In this mode, rectangles are sliced alternatively in the same level.
 
@@ -271,7 +271,7 @@ Refer to the code below:
 }
 ```
 
-The chart looks like shown below:
+The chart looks like as shown below:
 
 {% embed_all standard-charts-treemap-example-3.js %}
 
@@ -290,7 +290,7 @@ To set slicing mode to `horizontal`, refer to the code below:
 }
 ```
 
-The chart looks like shown below:
+The chart looks like as shown below:
 
 {% embed_all standard-charts-treemap-example-4.js %}
 
@@ -309,7 +309,7 @@ When you set slicing mode to `alternate`, refer to the code below:
 }
 ```
 
-The chart looks like shown below:
+The chart looks like as shown below:
 
 {% embed_all standard-charts-treemap-example-5.js %}
 
@@ -398,7 +398,7 @@ Refer to the code below:
 }
 ```
 
-The tree map will look like as shown in the image below:
+The treemap will look like as shown in the image below:
 
 {% embed_all standard-charts-treemap-example-8.js %}
 
@@ -561,13 +561,13 @@ Click [here ](https://www.fusioncharts.com/dev/chart-attributes?chart=treeap)for
 
 Using FusionCharts Suite XT, you can configure standard interactivity for items like tooltips and gradient legend, through the treemap attributes. However, if you need to further extend chart interactivity, you can raise the following JavaScript events for this chart, and then build your custom modifications over them:
 
-* The `beforeDrillDown` event is triggered just before the chart is rendered, when you drill down to a child node.
+* The `beforeDrillDown` event is triggered just before the chart is rendered when you drill down to a child node.
 
-* The `drillDown` event is triggered just after the chart is rendered, when you drill down to a child node.
+* The `drillDown` event is triggered just after the chart is rendered when you drill down to a child node.
 
-* The `beforeDrillUp` event is triggered just before the chart is rendered, when you drill up to the immediate parent node, or the root node.
+* The `beforeDrillUp` event is triggered just before the chart is rendered, when you drill up to the immediate parent node or the root node.
 
-* The `drillUp` event is triggered just after the chart is rendered when you drill up to the immediate parent node, or the root node.
+* The `drillUp` event is triggered just after the chart is rendered when you drill up to the immediate parent node or the root node.
 
 * The `drillDownCancelled` event is triggered when the `beforeDrillDown` event is interrupted.
 
