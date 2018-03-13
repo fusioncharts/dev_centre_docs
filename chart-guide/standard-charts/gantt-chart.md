@@ -1133,47 +1133,61 @@ Assume that we have a Gantt chart showing the employee schedule where each emplo
 
 For this example, let's plot a Gantt chart showing the scheduled work list for each employee during a particular week. You can visualize the data as shown in the table below. Note that all input dates are in mm/dd/yyyy hh:mm:ss format.
 
-Employee Name|Employee Id|Team|Allotted tasks for this week|
--|-|-|-
-John.S|EMP121|Graphics|Date: 7/21/2014 09:30:00 - 7/21/2014 17:00:00
-
-Task: Logo-I
-
-Date: 7/22/2014 09:30:00 - 7/22/2014 16:30:00
-
-Task: Logo-II
-
-Date: 7/23/2014 14:00:00 - 7/24/2014 16:30:00
-
-Task: Website Template|
-David.G|EMP122|PHP|Date: 7/21/2014 10:00:00 - 7/25/2014 14:30:00
-
-Task: PHP Blueprint|
-Mary.P|EMP123|Testing|Date: 7/21/2014 10:00:00 - 7/21/2014 15:30:00
-
-Task: Testing Specification
-
-Date: 7/22/2014 09:30:00 - 7/22/2014 16:00:00
-
-Task: Testing tool research
-
-Date: 7/23/2014 09:30:00 - 7/25/2014 16:30:00
-
-Task: Testing tool integration|
-Andrew.H|EMP124|QA|Date: 7/22/2014 09:30:00 - 7/22/2014 16:30:00
-
-Task: QA
-
-Date: 7/23/2014 09:00:00 - 7/23/2014 16:30:00
-
-Task: QA
-
-Date: 7/24/2014 09:30:00 - 7/25/2014 14:30:00
-
-Task: QA|
-Neil.M|EMP125|Documentation|Date: 7/25/2014 15:00:00 - 7/25/2014 16:59:00
-
-Task: Weekly Meet|
+<table>
+  <tr>
+    <th>Employee Name </th>
+    <th>Employee Id</th>
+    <th>Team</th>
+    <th>Allotted tasks for this week </th>
+  </tr>
+  <tr>
+    <td>John.S</td>
+    <td>EMP121</td>
+    <td>Graphics</td>
+    <td>Date: 7/21/2014 09:30:00 - 7/21/2014 17:00:00<br/>
+    Task: Logo-I<br/><br/>
+    Date: 7/22/2014 09:30:00 - 7/22/2014 16:30:00<br/>
+    Task: Logo-II<br/><br/>
+    Date: 7/23/2014 14:00:00 - 7/24/2014 16:30:00<br/>
+    Task: Website Template</td>
+  </tr>
+  <tr>
+    <td>David.G</td>
+    <td>EMP122</td>
+    <td>PHP</td>
+    <td>Date: 7/21/2014 10:00:00 - 7/25/2014 14:30:00<br/>
+    Task: PHP Blueprint</td>
+  </tr>
+  <tr>
+    <td>Mary.P</td>
+    <td>EMP123</td>
+    <td>Testing</td>
+    <td>Date: 7/21/2014 10:00:00 - 7/21/2014 15:30:00<br/>
+    Task: Testing Specification<br/><br/>
+    Date: 7/22/2014 09:30:00 - 7/22/2014 16:00:00<br/>
+    Task: Testing tool research<br/><br/>
+    Date: 7/23/2014 09:30:00 - 7/25/2014 16:30:00<br/>
+    Task: Testing tool integration</td>
+  </tr>
+  <tr>
+    <td>Andrew.H</td>
+    <td>EMP124</td>
+    <td>QA</td>
+    <td>Date: 7/22/2014 09:30:00 - 7/22/2014 16:30:00<br/>
+    Task: QA<br/><br/>
+    Date: 7/23/2014 09:00:00 - 7/23/2014 16:30:00<br/>
+    Task: QA<br/><br/>
+    Date: 7/24/2014 09:30:00 - 7/25/2014 14:30:00<br/>
+    Task: QA</td>
+  </tr>
+  <tr>
+    <td>Neil.M</td>
+    <td>EMP125</td>
+    <td>Documentation</td>
+    <td>Date: 7/25/2014 15:00:00 - 7/25/2014 16:59:00<br/>
+    Task: Weekly Meet</td>
+  </tr>
+</table>
 
 From the above data, you can deduce that:
 
