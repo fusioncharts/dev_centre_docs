@@ -43,7 +43,7 @@ In bullet graphs, you can:
 
 * Draw circular/semicircular range bar.
 
-* Customize color of range bar.
+* Customize the color of range bar.
 
 ## Create bullet graphs
 
@@ -105,7 +105,7 @@ To customize color properties of the bullet graph, use the following attributes:
 
 * Set the thickness of the target line in pixels using the 'targetThickness' attribute. 
 
-Refer to the code below::
+Refer to the code below:
 
 ```json
 {
@@ -192,7 +192,7 @@ You can configure the color range to be filled with a gradient mix instead of a 
 
 * Specify the hex code for the border color using the `colorRangeBorderColor` attribute.
 
-* Specify the thickness for the color range border, in pixels, using the `colorRangeBorderThickness` attribute.
+* Specify the thickness of the color range border, in pixels, using the `colorRangeBorderThickness` attribute.
 
 * Specify the transparency of the color range border between `0` (transparent) and `100` (opaque) using the `colorRangeBorderAlpha` attribute.
 
@@ -239,11 +239,11 @@ Click [here](http://jsfiddle.net/fusioncharts/jgk1xjtx/ "@@open-newtab") to edit
 
 ## Customize tick/value visibility and position
 
-In a horizontal bullet graph, tick marks are rendered below the graph by default. However, you can render them above the graph. In a vertical bullet graph, tick marks are rendered on the right, by default. However, you can show them on the left instead. You can also the tick marks and the tick values, if you wish. Use the following attributes to do so:
+In a horizontal bullet graph, tick marks are rendered below the graph by default. However, you can render them above the graph. In a vertical bullet graph, tick marks are rendered on the right, by default. However, you can show them on the left instead. You can also the tick marks and the tick values if you wish. Use the following attributes to do so:
 
-* Show tick marks for the graph by setting the `showTickMarks`attribute to `1`.
+* Show tick marks of the graph by setting the `showTickMarks`attribute to `1`.
 
-* Show tick values for the graph by setting the `showTickValues`attribute to `1`.
+* Show tick values of the graph by setting the `showTickValues`attribute to `1`.
 
 * Show tick marks and tick values above the graph by setting the value of `ticksBelowGraph`attribute to `0`.
 
@@ -439,7 +439,7 @@ Configure real-time updates from the server using the attributes given below:
 
 * Specify the number of seconds after which the chart will look for new data using the `refreshInterval` attribute. 
 
-* Specify the constantly changing data stamp that can be added to the real-time data URL, using the `dataStamp` attribute, so as to maintain a state. For more information, read the (Adding Data Stamp	FusionCharts](/dev/chart-guide/real-time-charts/adding-data-stamp.html) article.
+* Specify the constantly changing data stamp that can be added to the real-time data URL, using the `dataStamp` attribute, to maintain a state. For more information, read the (Adding Data Stamp	FusionCharts](/dev/chart-guide/real-time-charts/adding-data-stamp.html) article.
 
 The JSON code looks as below:
 
