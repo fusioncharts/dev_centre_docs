@@ -43,13 +43,12 @@ To hide the vertical lines in your chart, set the `drawVerticalJoins` attribute 
 
 Refer to the code given below:
 
-```
+```json
 {
 	"chart": {
 		"drawVerticalJoins": "0"
 	}
 }
-
 ```
 A step line chart rendered without the vertical joins looks like this:
 
@@ -63,13 +62,12 @@ For a step line chart, you can configure the direction of progression of the lin
 
 Refer to the code given below:
 
-```
+```json
 {
 	"chart": {
 		"useForwardSteps": "0"
 	},
 }
-
 ```
 A step line chart rendered with the forward progressive mode disabled looks like this:
 

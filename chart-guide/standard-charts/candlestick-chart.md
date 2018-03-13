@@ -120,13 +120,12 @@ You can render the price chart using a candle chart, a bar chart, or a line char
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "plotPriceAs" : "line"
   }
 }
-
 ```
 A candlestick chart with the price chart rendered as a line chart looks like this:
 
@@ -142,13 +141,12 @@ As discussed before, high and low price values are not required for the line cha
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "plotClosingPrice" : "0"
   }
 }
-
 ```
 A candlestick chart looks like:
 
@@ -162,13 +160,12 @@ The volume chart in a candlestick chart can be set as hidden by specifying the `
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "showVolumeChart" : "0"
   }
 }
-
 ```
 A candlestick chart rendered with the volume chart hidden looks like this:
 
@@ -200,7 +197,7 @@ To add cosmetics to the trend-sets, take a look at the following attributes and 
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "trendSetColor" : "0",
@@ -233,17 +230,23 @@ To customize a specific trend-set, follow the steps given below:
 
 Refer to the code below:
 
-```
-"trendset": [{
-    "name": "High trends",
-    "color": "#0000CC",
-    "alpha": "1",
-    "thickness": "1",
-    "includeInLegend": "1",
-    "dashed": "1",
-    "dashlen": "3",
-    "dashGap": "4"
-}]
+```json
+{
+    "chart": {
+        ...
+    },
+    "data": [],
+    "trendset": [{
+        "name": "High trends",
+        "color": "#0000CC",
+        "alpha": "1",
+        "thickness": "1",
+        "includeInLegend": "1",
+        "dashed": "1",
+        "dashlen": "3",
+        "dashGap": "4"
+    }]
+}
 ```
 
 A candlestick chart rendered with a trend-set looks like this:

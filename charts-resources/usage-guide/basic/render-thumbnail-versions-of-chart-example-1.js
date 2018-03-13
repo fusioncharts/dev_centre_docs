@@ -1,9 +1,8 @@
 {
-
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '600',
-    height: '400',
+    width: '400',
+    height: '300',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -59,21 +58,24 @@
     },
     events: {
         'beforeRender': function(evt, args) {
+            var wrapper = document.createElement('div');
+            wrapper.style.overflow = "hidden"
+            wrapper.setAttribute('class', 'multi-chart');
             // Create div for thumbnails
             var thumbnails = document.createElement('div');
             thumbnails.innerHTML = '<div id="thumbnail-column"></div><div id="thumbnail-pie"></div><div id="thumbnail-bar"></div></div>';
-            thumbnails.style.cssText = 'display:inline-block; float:left;';
+            thumbnails.style.cssText = 'display:block; float:left;';
 
             // Append thumbnails div before chart-container
-            args.container.parentNode.insertBefore(thumbnails, args.container);
+            //args.container.parentNode.insertBefore(thumbnails, args.container);
+            args.container.parentNode.insertBefore(wrapper, args.container);
+            wrapper.appendChild(thumbnails);
+            wrapper.appendChild(args.container);
 
-            // Append line-breaker div after chart-container
-            var divBreak = document.createElement('div');
-            divBreak.style.cssText = 'clear: both;';
-            args.container.parentNode.insertBefore(divBreak, args.container.nextSibling);
+
 
             // Set CSS style for chart-container
-            args.container.style.cssText = 'padding:5px; font-size:11px; display:inline-block; float:left; clear:right;';
+            args.container.style.cssText = 'padding:5px; font-size:11px; display:block; float:left;';
         },
         'renderComplete': function(evt, args) {
             var createThumbNail = function(chartId, width, height, divId) {
@@ -88,10 +90,10 @@
                 clonedChart.setChartAttribute({
                     "showValues": "0",
                     "showLabels": "0",
-                    "animation": "0",
+                    "animation": "1",
                     "exportEnabled": "0",
                     "showTooltip": "0",
-                    "showHoverEffect": "0",
+                    "showHoverEffect": "1",
                     "showYAxisValues": "0",
                     "caption": "",
                     "subCaption": "",

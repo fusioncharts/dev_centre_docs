@@ -77,7 +77,6 @@ Refer to the code given below:
         "showValues": "1"
     }
 }
-
 ```
 A bubble chart with data labels rendered on bubbles looks like this:
 
@@ -102,42 +101,50 @@ The x-axis of the bubble/scatter chart can be segmented into categorical zones u
 Refer to the code below:
 
 ```
-"vtrendlines": [{
-    "line": [{
-            "startValue": "0",
-            "endValue": "20",
-            "isTrendZone": "1",
-            "color": "#adebff",
-            "alpha": "25"
-        },
-        {
-            "startValue": "20",
-            "endValue": "40",
-            "isTrendZone": "1",
-            "color": "#adebff",
-            "alpha": "15"
-        },
-        {
-            "startValue": "40",
-            "endValue": "60",
-            "isTrendZone": "1"
-        },
-        {
-            "startValue": "60",
-            "endValue": "80",
-            "isTrendZone": "1",
-            "color": "#f2a485",
-            "alpha": "25"
-        },
-        {
-            "startValue": "80",
-            "endValue": "100",
-            "isTrendZone": "1",
-            "color": "#f2a485",
-            "alpha": "15"
-        }
-    ]
-}]
+{
+    "chart": {
+        ...
+    },
+    "data": {
+        ...
+    },
+    "vtrendlines": [{
+        "line": [{
+                "startValue": "0",
+                "endValue": "20",
+                "isTrendZone": "1",
+                "color": "#adebff",
+                "alpha": "25"
+            },
+            {
+                "startValue": "20",
+                "endValue": "40",
+                "isTrendZone": "1",
+                "color": "#adebff",
+                "alpha": "15"
+            },
+            {
+                "startValue": "40",
+                "endValue": "60",
+                "isTrendZone": "1"
+            },
+            {
+                "startValue": "60",
+                "endValue": "80",
+                "isTrendZone": "1",
+                "color": "#f2a485",
+                "alpha": "25"
+            },
+            {
+                "startValue": "80",
+                "endValue": "100",
+                "isTrendZone": "1",
+                "color": "#f2a485",
+                "alpha": "15"
+            }
+        ]
+    }]
+}
 ```
 
 A bubble chart with the x-axis segmented looks like this:
@@ -225,7 +232,6 @@ Configure the vertical divisional lines, by following the points below:
         "xAxisValuesStep": "1"
     }
 }
-
 ```
 * Set the `vDivlineColor` attribute to specify the hex color code for the vertical divisional lines.
 
@@ -250,7 +256,6 @@ Configure the vertical divisional lines, by following the points below:
         "vDivlineDashGap": "3"
     }
 }
-
 ```
 * Set the `showAlternateVGridColor` attribute to specify the alternate color for the vertical grid bands.  The hex color code for the vertical grids is specified in `alternateVGridColor` attribute.
 
@@ -266,7 +271,6 @@ Refer to the code below:
         "alternateVGridAlpha": "40"
     }
 }
-
 ```
 The chart will look like as shown below:
 
@@ -286,7 +290,6 @@ Refer to the code given below:
         "drawLine": "1"
     }
 }
-
 ```
 A scatter chart with all the data points connected by a line looks like this:
 
@@ -311,14 +314,12 @@ Refer to the code given below:
 ```json
 {
     "chart": {
-    ...
-    }
-{
-    "dataset": {
+        ...
+    },
+    "dataset": [{
         "showRegressionLine": "1"
-    }
+    }]
 }
-
 ```
 A scatter chart with regression lines looks like this:
 
@@ -357,7 +358,6 @@ Refer to the code below:
         "regressionLineAlpha": "70"
     }
 }
-
 ```
 The same chart with regression lines drawn using the **X on Y** mode looks like this:
 
@@ -383,7 +383,6 @@ Refer to the code given below:
         "drawQuadrant": "1"
     }
 }
-
 ```
 A bubble chart rendered with quadrants looks like this:
 
@@ -408,7 +407,6 @@ Refer to the code given below:
         "quadrantYVal": "12000"
     }
 }
-
 ```
 A bubble chart rendered with quadrants drawn at user-defined positions looks like this:
 
@@ -440,7 +438,6 @@ Refer to the code given below:
         "quadrantLabelBR": "High Price / Low Sale",
     }
 }
-
 ```
 A bubble chart with quadrant labels displayed looks like this:
 
@@ -465,7 +462,6 @@ We'll create a sample using some of the cosmetic properties for the quadrant lab
         "quadrantLabelBRFontColor": "#DEF456"
     }
 }
-
 ```
 A bubble chart showcasing the above cosmetic attributes for quadrant labels is shown below:
 
@@ -505,7 +501,6 @@ Refer to the code given below:
         "quadrantLabelPadding": "5"
     }
 }
-
 ```
 A bubble chart rendered with customized quadrant lines looks like this:
 

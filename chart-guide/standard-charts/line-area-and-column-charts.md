@@ -125,15 +125,20 @@ To plot a trend-line on a chart, follow the steps given below:
 
 Given below is the JSON code to include trend-line on your chart:
 
-```
-"trendlines": [{
-    "line": [{
-        "startvalue": "700000",
-        "color": "#1aaf5d",
-        "displayvalue": "Monthly Target"
-    }]
-}]
-
+```json
+{
+	"chart": {
+		...
+	},
+	"data": [],
+	"trendlines": [{
+	    "line": [{
+	        "startvalue": "700000",
+	        "color": "#1aaf5d",
+	        "displayvalue": "Monthly Target"
+	    }]
+	}]
+}
 ```
 
 A quarterly sales summary chart rendered with a trend-line to show the target value looks like this:
@@ -166,13 +171,20 @@ To plot vertical line in your chart, follow the steps given below:
 
 Given below is the JSON code to include a vertical line on your chart:
 
-```
+```json
 {
-    "vline": "true",
-    "label": "Weekend Start",
-    "linePosition": "0.7"
-},
-
+	"chart": {
+		...
+	},
+	"data": [],
+	"trendlines": [{
+	    "line": [{
+	        "vline": "true",
+    		"label": "Weekend Start",
+    		"linePosition": "0.7"
+	    }]
+	}]
+}
 ```
 
 A line chart rendered with a vertical line looks like this:

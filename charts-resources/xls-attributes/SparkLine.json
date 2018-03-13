@@ -1,0 +1,15 @@
+[
+    {
+        "table": "The data Object",
+        "path": "data",
+        "attrs": [
+            {
+                "description": "Numerical value for the data item. This value will be plotted on the chart.",
+                "range": "",
+                "type": "Number",
+                "name": "value"
+            }
+        ],
+        "description": "In single-series charts, each instance of the `data` object represents a data value to be plotted on the chart. For a single-series chart, one instance of the `data` object looks as shown in the example below:\n\n<pre class=\"language-javascript\"><code>\n\"data\"[{\n\t\t\"value\": \"10000\"\n\t}]\n</code></pre>\n\nAttributes of the `data` object are used to set and configure the data values for the chart."
+    }
+]
