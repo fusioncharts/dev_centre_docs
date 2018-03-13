@@ -525,7 +525,7 @@ You can position annotations using:
 
 * Macros - that take dynamic values relative to chart elements
 
-### Absolute Values
+## Absolute Values
 
 In this section, you will see how to position annotations using static values. The attributes used to position annotations are as follows:
 
@@ -584,97 +584,62 @@ A spline chart with a rectangle annotation and a text annotation positioned at t
 
 Click [here](http://jsfiddle.net/fusioncharts/ufgt8a10/ "@@open-newtab") to edit the above chart.
 
-### Use macros 
+## Use Macros 
 
 Annotation macros are predefined variables you can use to dynamically position individual annotation items. Since macros assume values at runtime, you can use them with all annotation positioning attributes. That way, you can position annotations relative to chart/gauge elements, such as caption, legend, etc. For example, for an annotation item, if you set `"x": "$captionStartX"`, `x` will take the value of the starting x-coordinate of the chart caption.
 
 You can use any number of macros as variables with the positioning attributes. Use the **+** or **-** operators to add or subtract the macro values from each other or from a fixed number. For example, for an annotation item, assume that you set `"x": "$canvasStartX + $chartLeftMargin + 2"`. The starting x-coordinate of the item will now take a value that is the sum of the starting x-coordinate of the chart canvas, the chart's left margin, and a fixed length of two pixels added together.
 
-> You can use only the **+** or **-** operators to create a macro expression. There should be at least one macro name to create a macro expression. Common mathematical expressions like __**30 + 10 - 5__**, which do not contain a macro, will not work.
+> You can use only the **+** or **-** operators to create a macro expression. There should be at least one macro name to create a macro expression. Common mathematical expressions like __30 + 10 - 5__, which do not contain a macro, will not work.
 
 When you resize a chart or a gauge, the values provided by macros are not scaled. Instead, they are replaced with the new values provided by the resized chart. However, the numeric values present in the macro expressions are scaled. For example, the value `10` in the expression `$chartStartY + 10` is scaled when you dynamically resize the chart. To avoid this, prefix the number with the $ symbol. For example, the value `10` in the expression `$chartStartY + $10` is NOT scaled when you dynamically resize the chart.
 
-#### Dynamically position annotations using macros
+### Dynamically Position Annotations using Macros
 
 You can dynamically position annotations with respect to the chart itself, as well as the chart elements like the legend, caption, canvas, axes, and the datasets.
 
-#### Position annotations with respect to the canvas
-
+### Position Annotations with respect to the Canvas
 
 Use the macros `$canvasStartX`, `$canvasStartY`, `$canvasEndX`, `$canvasEndY`, `$canvasWidth`, and `$canvasHeight` to position annotations with respect to the chart canvas. Note that this only applies to charts that have canvas (primarily, cartesian charts).
 
 Refer to the code below:
 
 ```json
-
 {
-
     "chart": {
-
-       ...
-
+        ...
     },
-
     "annotations": {
-
-       ...
-
-        "groups": [
-
-            {
-
-                "items": [
-
-                    {
-
-                        "id": "dyn-labelBG",
-
-                        "type": "rectangle",
-
-                        "radius": "3",
-
-                        "x": "$canvasEndX - 100",
-
-                        "y": "$canvasStartY",
-
-                        "tox": "$canvasEndX",
-
-                        "toy": "$canvasStartY + 30",
-
-                        "color": "#0075c2",
-
-                        "alpha": "70"
-
-                    },
-
-                    
-
-                ]
-
-            }
-
-        ]
-
+        ...
+        "groups": [{
+            "items": [{
+                "id": "dyn-labelBG",
+                "type": "rectangle",
+                "radius": "3",
+                "x": "$canvasEndX - 100",
+                "y": "$canvasStartY",
+                "tox": "$canvasEndX",
+                "toy": "$canvasStartY + 30",
+                "color": "#0075c2",
+                "alpha": "70"
+            }]
+        }]
     },
-
     "data": [
-
-       ...
-
+        ...
     ]
-
 }
-
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-annotations-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/jnkfyu5d/ "@@open-newtab") to edit the above chart.
 
 > In the chart above, the annotation items (a rectangle and a text label) showing the total footfall at Bakersfield Central are positioned at the top-right corner of the canvas. The values of the attributes `x`, `y`, `toX`, and `toY` are specified with respect to the canvas start and end position, using annotation macros.
 
-#### 
-Position annotations with respect to datasets
+### Position annotations with respect to datasets
 
 Use the $dataset macro to add the position information of the plots in a dataset to the annotation. You can apply the "dataset_index [separator] set [separator] set_index [separator] position_key" sub token to the macro. 
 
@@ -693,318 +658,130 @@ For example, you can use the following values to position a rectangle above the 
 Refer to the code below::
 
 ```json
-
 {
-
     "chart": {
-
         "caption": "Number of visitors last week",
-
         "subCaption": "Bakersfield Central vs Los Angeles Topanga",
-
         "xAxisName": "Day",
-
         "yAxisName": "No. of Visitors",
-
         "theme": "fint",
-
         "animation": "0",
-
         "showValues": "0",
-
         "showTooltip": "0"
-
     },
-
-    "categories": [
-
-        {
-
-            "category": [
-
-                {
-
-                    "label": "Mon"
-
-                },
-
-                {
-
-                    "label": "Tue"
-
-                },
-
-                {
-
-                    "label": "Wed"
-
-                },
-
-                {
-
-                    "vline": "true",
-
-                    "lineposition": "0",
-
-                    "color": "#0075c2",
-
-                    "labelHAlign": "right",
-
-                    "labelPosition": "0",
-
-                    "label": "National holiday"
-
-                },
-
-                {
-
-                    "label": "Thu"
-
-                },
-
-                {
-
-                    "label": "Fri"
-
-                },
-
-                {
-
-                    "label": "Sat"
-
-                },
-
-                {
-
-                    "label": "Sun"
-
-                }
-
-            ]
-
-        }
-
-    ],
-
+    "categories": [{
+        "category": [{
+            "label": "Mon"
+        }, {
+            "label": "Tue"
+        }, {
+            "label": "Wed"
+        }, {
+            "vline": "true",
+            "lineposition": "0",
+            "color": "#0075c2",
+            "labelHAlign": "right",
+            "labelPosition": "0",
+            "label": "National holiday"
+        }, {
+            "label": "Thu"
+        }, {
+            "label": "Fri"
+        }, {
+            "label": "Sat"
+        }, {
+            "label": "Sun"
+        }]
+    }],
     "annotations": {
-
-        "groups": [
-
-            {
-
-                "id": "ds1tips",
-
-                "items": [
-
-                    {
-
-                        "id": "indicator-line",
-
-                        "type": "line",
-
-                        "dashed": "1"
-
-                    },
-
-                    {
-
-                        "id": "tip1_1",
-
-                        "type": "rectangle",
-
-                        "visible": "0",
-
-                        "fillcolor": "#0075c2",
-
-                        "x": "$dataset.0.set.0.x + 5",
-
-                        "y": "$dataset.0.set.0.y - 30",
-
-                        "tox": "$dataset.0.set.0.x + 80",
-
-                        "toy": "$dataset.0.set.0.y - 10"
-
-                    }
-
-                ]
-
-            },
-
-            {
-
-                "id": "dyn-label-grp",
-
-                "items": [
-
-                    {
-
-                        "id": "dyn-label-bg",
-
-                        "type": "rectangle",
-
-                        "radius": "3"
-
-                    },
-
-                    {
-
-                        "id": "dyn-label",
-
-                        "type": "text",
-
-                        "fillcolor": "#ffffff",
-
-                        "fontsize": "11",
-
-                        "bold": "1"
-
-                    },
-
-                    {
-
-                        "id": "dyn-detail-label",
-
-                        "type": "text",
-
-                        "align": "right",
-
-                        "x": "$canvasendx",
-
-                        "bgcolor": "#ffffff"
-
-                    }
-
-                ]
-
-            }
-
-        ]
-
+        "groups": [{
+            "id": "ds1tips",
+            "items": [{
+                "id": "indicator-line",
+                "type": "line",
+                "dashed": "1"
+            }, {
+                "id": "tip1_1",
+                "type": "rectangle",
+                "visible": "0",
+                "fillcolor": "#0075c2",
+                "x": "$dataset.0.set.0.x + 5",
+                "y": "$dataset.0.set.0.y - 30",
+                "tox": "$dataset.0.set.0.x + 80",
+                "toy": "$dataset.0.set.0.y - 10"
+            }]
+        }, {
+            "id": "dyn-label-grp",
+            "items": [{
+                "id": "dyn-label-bg",
+                "type": "rectangle",
+                "radius": "3"
+            }, {
+                "id": "dyn-label",
+                "type": "text",
+                "fillcolor": "#ffffff",
+                "fontsize": "11",
+                "bold": "1"
+            }, {
+                "id": "dyn-detail-label",
+                "type": "text",
+                "align": "right",
+                "x": "$canvasendx",
+                "bgcolor": "#ffffff"
+            }]
+        }]
     },
-
-    "dataset": [
-
-        {
-
-            "seriesname": "Bakersfield Central",
-
-            "data": [
-
-                {
-
-                    "value": "15123"
-
-                },
-
-                {
-
-                    "value": "14233"
-
-                },
-
-                {
-
-                    "value": "25507"
-
-                },
-
-                {
-
-                    "value": "9110"
-
-                },
-
-                {
-
-                    "value": "15529"
-
-                },
-
-                {
-
-                    "value": "20803"
-
-                },
-
-                {
-
-                    "value": "19202"
-
-                }
-
-            ]
-
-        },
-
-        {
-
-            "seriesname": "Los Angeles Topanga",
-
-            "data": [
-
-                {
-
-                    "value": "13400"
-
-                },
-
-                {
-
-                    "value": "12800"
-
-                },
-
-                {
-
-                    "value": "22800"
-
-                },
-
-                {
-
-                    "value": "12400"
-
-                },
-
-                {
-
-                    "value": "15800"
-
-                },
-
-                {
-
-                    "value": "19800"
-
-                },
-
-                {
-
-                    "value": "21800"
-
-                }
-
-            ]
-
-        }
-
-    ]
-
+    "dataset": [{
+        "seriesname": "Bakersfield Central",
+        "data": [{
+            "value": "15123"
+        }, {
+            "value": "14233"
+        }, {
+            "value": "25507"
+        }, {
+            "value": "9110"
+        }, {
+            "value": "15529"
+        }, {
+            "value": "20803"
+        }, {
+            "value": "19202"
+        }]
+    }, {
+        "seriesname": "Los Angeles Topanga",
+        "data": [{
+            "value": "13400"
+        }, {
+            "value": "12800"
+        }, {
+            "value": "22800"
+        }, {
+            "value": "12400"
+        }, {
+            "value": "15800"
+        }, {
+            "value": "19800"
+        }, {
+            "value": "21800"
+        }]
+    }]
 }
-
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-annotations-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/sxp10xpd/ "@@open-newtab") to edit the above chart.
 
 > In the chart above, the annotation items (the horizontal dashed line, a text label on a rectangle at extreme left of the dashed line, and the label with the store name and the total number of visitors on the extreme right side of the line) are dynamically positioned, so that they appear when you hover the mouse pointer over the corresponding anchor. You can use annotation macros to do this, simply by specifying values for the `x`, `y`, `tox` and `toy` attributes with respect to the dataset position.
 
-#### Position annotations with respect to the axes
+### Position annotations with respect to the axes
 
 Use the following macros to position annotations with respect to the x and y axes:
 
-##### **$yaxis**
+#### **$yaxis**
 
 Use the `$yaxis` macro to add the position information of the y-axis labels to the annotation. You can apply the "yaxis_index [separator] label [separator] label_index [separator] position_key" sub token to the macro.
 
@@ -1016,7 +793,7 @@ For example, you can position a text on the y axis, using the following values:
 
 * y: $yaxis.0.label.0.starty - 5
 
-##### **$xaxis**
+#### **$xaxis**
 
 Use the `$xaxis` macro to add the position information of the x-axis labels to the annotation. You can apply the "xaxis_index [separator] label [separator] label_index [separator] position_key" sub token to the macro.
 
@@ -1031,264 +808,123 @@ For example, you can position a text on the x axis, using the following values:
 Refer to the code below:
 
 ```json
-
 {
-
     "chart": {
-
         "caption": "Bakersfield Central - Total footfalls",
-
         "subCaption": "Last week",
-
         "xAxisName": "Day",
-
         "yAxisName": "No. of Visitors",
-
         "yAxisNamePadding": "20",
-
         "paletteColors": "#008ee4",
-
         "bgAlpha": "0",
-
         "borderAlpha": "20",
-
         "canvasBorderAlpha": "0",
-
         "plotBorderAlpha": "10",
-
         "captionpadding": "20",
-
         "axisLineAlpha": "25",
-
         "divLineAlpha": "10",
-
         "showValues": "0",
-
         "showAlternateHGridColor": "0"
-
     },
-
     "annotations": {
-
         "origw": "400",
-
         "origh": "300",
-
         "autoscale": "1",
-
-        "groups": [
-
-            {
-
-                "items": [
-
-                    {
-
-                        "id": "high-labels-zone",
-
-                        "type": "rectangle",
-
-                        "x": "$yaxis.0.label.5.startx + 5",
-
-                        "y": "$yaxis.0.label.5.starty",
-
-                        "tox": "$yaxis.0.label.3.endx",
-
-                        "toy": "$yaxis.0.label.3.starty",
-
-                        "color": "#6baa01",
-
-                        "alpha": "20"
-
-                    },
-
-                    {
-
-                        "id": "high-label",
-
-                        "type": "text",
-
-                        "text": "High",
-
-                        "x": "$yaxis.0.label.4.startx - 5",
-
-                        "y": "$yaxis.0.label.4.starty",
-
-                        "rotateText": "1",
-
-                        "color": "#6baa01"
-
-                    },
-
-                    {
-
-                        "id": "moderate-labels-zone",
-
-                        "type": "rectangle",
-
-                        "x": "$yaxis.0.label.3.startx + 5",
-
-                        "y": "$yaxis.0.label.3.starty",
-
-                        "tox": "$yaxis.0.label.2.endx",
-
-                        "toy": "$yaxis.0.label.1.starty",
-
-                        "color": "#f8bd19",
-
-                        "alpha": "20"
-
-                    },
-
-                    {
-
-                        "id": "moderate-label",
-
-                        "type": "text",
-
-                        "text": "Moderate",
-
-                        "x": "$yaxis.0.label.2.startx - 5",
-
-                        "y": "$yaxis.0.label.2.starty",
-
-                        "rotateText": "1",
-
-                        "color": "#f8bd19"
-
-                    },
-
-                    {
-
-                        "id": "low-labels-zone",
-
-                        "type": "rectangle",
-
-                        "x": "$yaxis.0.label.1.startx - 3",
-
-                        "y": "$yaxis.0.label.1.starty",
-
-                        "tox": "$yaxis.0.label.0.endx",
-
-                        "toy": "$yaxis.0.label.0.endy",
-
-                        "color": "#e44a00",
-
-                        "alpha": "20"
-
-                    },
-
-                    {
-
-                        "id": "low-label",
-
-                        "type": "text",
-
-                        "text": "Low",
-
-                        "x": "$yaxis.0.label.1.startx - 12",
-
-                        "y": "$yaxis.0.label.0.starty - 5",
-
-                        "rotateText": "1",
-
-                        "color": "#e44a00"
-
-                    }
-
-                ]
-
-            }
-
-        ]
-
+        "groups": [{
+            "items": [{
+                "id": "high-labels-zone",
+                "type": "rectangle",
+                "x": "$yaxis.0.label.5.startx + 5",
+                "y": "$yaxis.0.label.5.starty",
+                "tox": "$yaxis.0.label.3.endx",
+                "toy": "$yaxis.0.label.3.starty",
+                "color": "#6baa01",
+                "alpha": "20"
+            }, {
+                "id": "high-label",
+                "type": "text",
+                "text": "High",
+                "x": "$yaxis.0.label.4.startx - 5",
+                "y": "$yaxis.0.label.4.starty",
+                "rotateText": "1",
+                "color": "#6baa01"
+            }, {
+                "id": "moderate-labels-zone",
+                "type": "rectangle",
+                "x": "$yaxis.0.label.3.startx + 5",
+                "y": "$yaxis.0.label.3.starty",
+                "tox": "$yaxis.0.label.2.endx",
+                "toy": "$yaxis.0.label.1.starty",
+                "color": "#f8bd19",
+                "alpha": "20"
+            }, {
+                "id": "moderate-label",
+                "type": "text",
+                "text": "Moderate",
+                "x": "$yaxis.0.label.2.startx - 5",
+                "y": "$yaxis.0.label.2.starty",
+                "rotateText": "1",
+                "color": "#f8bd19"
+            }, {
+                "id": "low-labels-zone",
+                "type": "rectangle",
+                "x": "$yaxis.0.label.1.startx - 3",
+                "y": "$yaxis.0.label.1.starty",
+                "tox": "$yaxis.0.label.0.endx",
+                "toy": "$yaxis.0.label.0.endy",
+                "color": "#e44a00",
+                "alpha": "20"
+            }, {
+                "id": "low-label",
+                "type": "text",
+                "text": "Low",
+                "x": "$yaxis.0.label.1.startx - 12",
+                "y": "$yaxis.0.label.0.starty - 5",
+                "rotateText": "1",
+                "color": "#e44a00"
+            }]
+        }]
     },
-
-    "data": [
-
-        {
-
-            "label": "Mon",
-
-            "value": "15123"
-
-        },
-
-        {
-
-            "label": "Tue",
-
-            "value": "14233"
-
-        },
-
-        {
-
-            "label": "Wed",
-
-            "value": "25507"
-
-        },
-
-        {
-
-            "vline": "true",
-
-            "lineposition": "0",
-
-            "color": "#6baa01",
-
-            "labelHAlign": "left",
-
-            "label": "National holiday"
-
-        },
-
-        {
-
-            "label": "Thu",
-
-            "value": "9110"
-
-        },
-
-        {
-
-            "label": "Fri",
-
-            "value": "15529"
-
-        },
-
-        {
-
-            "label": "Sat",
-
-            "value": "20803"
-
-        },
-
-        {
-
-            "label": "Sun",
-
-            "value": "19202"
-
-        }
-
-    ]
-
+    "data": [{
+        "label": "Mon",
+        "value": "15123"
+    }, {
+        "label": "Tue",
+        "value": "14233"
+    }, {
+        "label": "Wed",
+        "value": "25507"
+    }, {
+        "vline": "true",
+        "lineposition": "0",
+        "color": "#6baa01",
+        "labelHAlign": "left",
+        "label": "National holiday"
+    }, {
+        "label": "Thu",
+        "value": "9110"
+    }, {
+        "label": "Fri",
+        "value": "15529"
+    }, {
+        "label": "Sat",
+        "value": "20803"
+    }, {
+        "label": "Sun",
+        "value": "19202"
+    }]
 }
-
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-annotations-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/bhqg0p4e/ "@@open-newtab") to edit the above chart.
 
 > In the above chart, the annotation items, showing the low, moderate, and high footfall ranges, are dynamically positioned over the y-axis using annotation sub-token macros.
 
-#### Position annotations with respect to other chart elements
+### Position annotations with respect to other chart elements
 
 Use the following macros to dynamically position annotations with respect to the chart and its other elements:
 
@@ -1309,16 +945,6 @@ Use the following macros to dynamically position annotations with respect to the
 * Position annotations with respect to the width of the entire funnel or pyramid plot, using the macro `$plotWidth`.
 
 * Position annotations with respect to half-width of the entire funnel or pyramid plot, using the macro `$plotSemiWidth`.
-
-Refer to the code below:
-
-```
-
-```
-
-The chart will look as shown below:
-
-<chart>
 
 ## Group annotations
 
@@ -1389,67 +1015,41 @@ To create an annotation group, all you have to do is create each annotation item
 Refer to the code below:
 
 ```json
-
 {
-
-"annotations": {
-
-    "origw": "400",
-
-    "origh": "300",
-
-    "autoscale": "1",
-
-    "groups": [{
-
-        "items": [{
-
-            "id": "dyn-labelBG",
-
-            "type": "rectangle",
-
-            "radius": "3",
-
-            "x": "$canvasEndX - 100",
-
-            "y": "$canvasStartY",
-
-            "tox": "$canvasEndX",
-
-            "toy": "$canvasStartY + 30",
-
-            "color": "#0075c2",
-
-            "alpha": "70"
-
-        }, {
-
-            "id": "dyn-label",
-
-            "type": "text",
-
-            "text": "Total: 119,507",
-
-            "fillcolor": "#ffffff",
-
-            "fontsize": "10",
-
-            "x": "$canvasEndX - 50",
-
-            "y": "$canvasStartY + 15"
-
+    "annotations": {
+        "origw": "400",
+        "origh": "300",
+        "autoscale": "1",
+        "groups": [{
+            "items": [{
+                "id": "dyn-labelBG",
+                "type": "rectangle",
+                "radius": "3",
+                "x": "$canvasEndX - 100",
+                "y": "$canvasStartY",
+                "tox": "$canvasEndX",
+                "toy": "$canvasStartY + 30",
+                "color": "#0075c2",
+                "alpha": "70"
+            }, {
+                "id": "dyn-label",
+                "type": "text",
+                "text": "Total: 119,507",
+                "fillcolor": "#ffffff",
+                "fontsize": "10",
+                "x": "$canvasEndX - 50",
+                "y": "$canvasStartY + 15"
+            }]
         }]
-
-    }]
-
-}
-
+    }
 }
 ```
 
 The chart will look as follows:
 
-<chart>
+{% embed_chart chart-configurations-annotations-example-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/p6t4g981/ "@@open-newtab") to edit the above chart.
 
 In the spline chart given above, you can see the total number of footfalls for each week created as an annotation group. A rectangle and a text annotation are grouped together to show the total number of footfalls. Note that if you have to change the position of the text and rectangle annotation from the spline chart above, you would have to first reposition the rectangle annotation and then re-position the text annotation. Instead, if you manipulate them as a group, you only have to change the group's position.
 
@@ -1457,169 +1057,82 @@ In the spline chart given above, you can see the total number of footfalls for e
 
 ### Manipulate Annotation Groups
 
-
 In the example given below, you can see how manipulating annotations as a group is easier than manipulating them as individual items.
 
 Refer to the code below:
 
 ```json
-
 {
-
     "chart": {
-
         "caption": "Bakersfield Central - Total footfalls",
-
         "subCaption": "Last week",
-
         "xAxisName": "Day",
-
         "yAxisName": "No. of Visitors",
-
         "showTooltip": "0",
-
         "formatNumberScale": "0",
-
         "theme": "fint"
-
     },
-
     "annotations": {
-
         "origw": "400",
-
         "origh": "300",
-
         "autoscale": "1",
-
-        "groups": [
-
-            {
-
-                "id": "total-footfall",
-
-                "items": [
-
-                    {
-
-                        "id": "dyn-labelBG",
-
-                        "type": "rectangle",
-
-                        "radius": "3",
-
-                        "x": "$canvasEndX - 100",
-
-                        "y": "$canvasStartY",
-
-                        "tox": "$canvasEndX",
-
-                        "toy": "$canvasStartY + 30",
-
-                        "color": "#0075c2",
-
-                        "alpha": "70"
-
-                    },
-
-                    {
-
-                        "id": "dyn-label",
-
-                        "type": "text",
-
-                        "text": "Total: 119,507",
-
-                        "fillcolor": "#ffffff",
-
-                        "fontsize": "10",
-
-                        "x": "$canvasEndX - 50",
-
-                        "y": "$canvasStartY + 15"
-
-                    }
-
-                ]
-
-            }
-
-        ]
-
+        "groups": [{
+            "id": "total-footfall",
+            "items": [{
+                "id": "dyn-labelBG",
+                "type": "rectangle",
+                "radius": "3",
+                "x": "$canvasEndX - 100",
+                "y": "$canvasStartY",
+                "tox": "$canvasEndX",
+                "toy": "$canvasStartY + 30",
+                "color": "#0075c2",
+                "alpha": "70"
+            }, {
+                "id": "dyn-label",
+                "type": "text",
+                "text": "Total: 119,507",
+                "fillcolor": "#ffffff",
+                "fontsize": "10",
+                "x": "$canvasEndX - 50",
+                "y": "$canvasStartY + 15"
+            }]
+        }]
     },
-
-    "data": [
-
-        {
-
-            "label": "Mon",
-
-            "value": "15123"
-
-        },
-
-        {
-
-            "label": "Tue",
-
-            "value": "14233"
-
-        },
-
-        {
-
-            "label": "Wed",
-
-            "value": "25507"
-
-        },
-
-        {
-
-            "label": "Thu",
-
-            "value": "9110"
-
-        },
-
-        {
-
-            "label": "Fri",
-
-            "value": "15529"
-
-        },
-
-        {
-
-            "label": "Sat",
-
-            "value": "20803"
-
-        },
-
-        {
-
-            "label": "Sun",
-
-            "value": "19202"
-
-        }
-
-    ]
-
+    "data": [{
+        "label": "Mon",
+        "value": "15123"
+    }, {
+        "label": "Tue",
+        "value": "14233"
+    }, {
+        "label": "Wed",
+        "value": "25507"
+    }, {
+        "label": "Thu",
+        "value": "9110"
+    }, {
+        "label": "Fri",
+        "value": "15529"
+    }, {
+        "label": "Sat",
+        "value": "20803"
+    }, {
+        "label": "Sun",
+        "value": "19202"
+    }]
 }
-
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-annotations-example-12.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/zfvp8ffp/ "@@open-newtab") to edit the above chart.
 
 > In the above spline chart, you can control whether the total number of footfalls will be shown or hidden, by manipulating attributes as a group.
 
-## 
-Dynamically control annotations** **
+## Dynamically control annotations
 
 You can use methods available within FusionCharts Suite XT to create, update, set the visibility of, and delete annotation groups and items at runtime, with the FusionCharts API. This is especially helpful when you want to augment your charts with context sensitive information. For instance, you can show, hide, or update the color for an annotation group or item using the respective methods.
 
@@ -1654,101 +1167,50 @@ Use the following methods to dynamically create, manipulate, and delete annotati
 Refer to the code below:
 
 ```json
-
 {
-
     "chart": {
-
         "caption": "Total footfall in Bakersfield Central",
-
         "subCaption": "Last week",
-
         "xAxisName": "Day",
-
         "yAxisName": "No. of Visitors",
-
         "showValues": "1",
-
         "theme": "fint"
-
     },
-
     "annotations": {
-
         "origw": "400",
-
         "origh": "300",
-
         "autoscale": "1"
-
     },
-
-    "data": [
-
-        {
-
-            "label": "Mon",
-
-            "value": "15123"
-
-        },
-
-        {
-
-            "label": "Tue",
-
-            "value": "14233"
-
-        },
-
-        {
-
-            "label": "Wed",
-
-            "value": "25507"
-
-        },
-
-        {
-
-            "label": "Thu",
-
-            "value": "9110"
-
-        },
-
-        {
-
-            "label": "Fri",
-
-            "value": "15529"
-
-        },
-
-        {
-
-            "label": "Sat",
-
-            "value": "20803"
-
-        },
-
-        {
-
-            "label": "Sun",
-
-            "value": "19202"
-
-        }
-
-    ]
-
+    "data": [{
+        "label": "Mon",
+        "value": "15123"
+    }, {
+        "label": "Tue",
+        "value": "14233"
+    }, {
+        "label": "Wed",
+        "value": "25507"
+    }, {
+        "label": "Thu",
+        "value": "9110"
+    }, {
+        "label": "Fri",
+        "value": "15529"
+    }, {
+        "label": "Sat",
+        "value": "20803"
+    }, {
+        "label": "Sun",
+        "value": "19202"
+    }]
 }
-
 ```
+
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-annotations-example-13.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/a39kuoj5/ "@@open-newtab") to edit the above chart.
 
 ## Real life use cases
 
@@ -1759,1614 +1221,723 @@ In the examples given below, you can see how annotations can be used in differen
 Refer to the code below:
 
 ```json
-
 {
-
     "chart": {
-
         "caption": "Comparison of Quarterly Revenue",
-
         "subCaption": "Last Year",
-
         "showBorder": "0",
-
         "xAxisName": "Quarter",
-
         "yAxisName": "Amount (In USD)",
-
         "numberPrefix": "$",
-
         "yAxisMaxValue": "50000",
-
         "showValues": "0",
-
         "showTooltip": "0",
-
         "animation": "0",
-
         "theme": "fint"
-
     },
-
-    "data": [
-
-        {
-
-            "label": "Q1",
-
-            "value": "30400"
-
-        },
-
-        {
-
-            "label": "Q2",
-
-            "value": "29800"
-
-        },
-
-        {
-
-            "label": "Q3",
-
-            "value": "21800"
-
-        },
-
-        {
-
-            "label": "Q4",
-
-            "value": "26800"
-
-        }
-
-    ],
-
+    "data": [{
+        "label": "Q1",
+        "value": "30400"
+    }, {
+        "label": "Q2",
+        "value": "29800"
+    }, {
+        "label": "Q3",
+        "value": "21800"
+    }, {
+        "label": "Q4",
+        "value": "26800"
+    }],
     "annotations": {
-
         "showbelow": "0",
-
-        "groups": [
-
-            {
-
-                "id": "Callout",
-
-                "items": [
-
-                    {
-
-                        "id": "CalloutBase",
-
-                        "type": "rectangle",
-
-                        "radius": "2",
-
-                        "alpha": "90",
-
-                        "fillColor": "#6baa01"
-
-                    },
-
-                    {
-
-                        "id": "CalloutTriangle",
-
-                        "type": "polygon",
-
-                        "sides": "3",
-
-                        "startangle": "270",
-
-                        "alpha": "90",
-
-                        "fillColor": "#6baa01",
-
-                        "radius": "9"
-
-                    },
-
-                    {
-
-                        "id": "CalloutLabel",
-
-                        "type": "Text",
-
-                        "fontSize": "12",
-
-                        "bold": "1",
-
-                        "fillcolor": "#ffffff"
-
-                    }
-
-                ]
-
-            }
-
-        ]
-
+        "groups": [{
+            "id": "Callout",
+            "items": [{
+                "id": "CalloutBase",
+                "type": "rectangle",
+                "radius": "2",
+                "alpha": "90",
+                "fillColor": "#6baa01"
+            }, {
+                "id": "CalloutTriangle",
+                "type": "polygon",
+                "sides": "3",
+                "startangle": "270",
+                "alpha": "90",
+                "fillColor": "#6baa01",
+                "radius": "9"
+            }, {
+                "id": "CalloutLabel",
+                "type": "Text",
+                "fontSize": "12",
+                "bold": "1",
+                "fillcolor": "#ffffff"
+            }]
+        }]
     }
-
 }
-
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-annotations-example-14.js %}
 
-Note: In the above chart, you can see how to use annotations to create a callout (using a rectangle, a polygon, and a text annotation, grouped together) above a column. The annotations are dynamically positioned using annotation macros. After the chart is rendered (when the **[renderComplete](https://docs.fusioncharts.com/archive/3.12.1/api/fusioncharts/fusioncharts-events.html#event-renderComplete)** event is triggered), the quarter with the highest revenue is determined and the annotation group is positioned over the data plot representing that quarter.
+Click [here](http://jsfiddle.net/fusioncharts/pLvuerqt/ "@@open-newtab") to edit the above chart.
 
-### 
-Provide more information about data plots
+> In the above chart, you can see how to use annotations to create a callout (using a rectangle, a polygon, and a text annotation, grouped together) above a column. The annotations are dynamically positioned using annotation macros. After the chart is rendered (when the **[renderComplete](https://docs.fusioncharts.com/archive/3.12.1/api/fusioncharts/fusioncharts-events.html#event-renderComplete)** event is triggered), the quarter with the highest revenue is determined and the annotation group is positioned over the data plot representing that quarter.
+
+### Provide more information about data plots
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
         "caption": "Number of visitors last week",
-
         "subCaption": "Bakersfield Central vs Los Angeles Topanga",
-
         "xAxisName": "Day",
-
         "yAxisName": "No. of visitors",
-
         "yAxisNamePadding": "100",
-
         "showYAxisValues": "0",
-
         "theme": "fint",
-
         "showValues": "0",
-
         "showTooltip": "0"
-
     },
-
-    "categories": [
-
-        {
-
-            "category": [
-
-                {
-
-                    "label": "Mon"
-
-                },
-
-                {
-
-                    "label": "Tue"
-
-                },
-
-                {
-
-                    "label": "Wed"
-
-                },
-
-                {
-
-                    "vline": "true",
-
-                    "lineposition": "0",
-
-                    "color": "#6baa01",
-
-                    "labelHAlign": "right",
-
-                    "labelPosition": "0",
-
-                    "label": "National holiday"
-
-                },
-
-                {
-
-                    "label": "Thu"
-
-                },
-
-                {
-
-                    "label": "Fri"
-
-                },
-
-                {
-
-                    "label": "Sat"
-
-                },
-
-                {
-
-                    "label": "Sun"
-
-                }
-
-            ]
-
-        }
-
-    ],
-
+    "categories": [{
+        "category": [{
+            "label": "Mon"
+        }, {
+            "label": "Tue"
+        }, {
+            "label": "Wed"
+        }, {
+            "vline": "true",
+            "lineposition": "0",
+            "color": "#6baa01",
+            "labelHAlign": "right",
+            "labelPosition": "0",
+            "label": "National holiday"
+        }, {
+            "label": "Thu"
+        }, {
+            "label": "Fri"
+        }, {
+            "label": "Sat"
+        }, {
+            "label": "Sun"
+        }]
+    }],
     "annotations": {
-
         "origw": "600",
-
         "origh": "450",
-
         "autoscale": "1",
-
-        "groups": [
-
-            {
-
-                "id": "ds1tips",
-
-                "items": [
-
-                    {
-
-                        "id": "indicator-line",
-
-                        "type": "line",
-
-                        "dashed": "1"
-
-                    },
-
-                    {
-
-                        "id": "tip1_1",
-
-                        "type": "rectangle",
-
-                        "fillcolor": "#6baa01",
-
-                        "x": "$dataset.0.set.0.x + 5",
-
-                        "y": "$dataset.0.set.0.y - 30",
-
-                        "tox": "$dataset.0.set.0.x + 80",
-
-                        "toy": "$dataset.0.set.0.y - 10",
-
-                        "visible": "0"
-
-                    }
-
-                ]
-
-            },
-
-            {
-
-                "id": "yaxisline",
-
-                "items": [
-
-                    {
-
-                        "id": "line",
-
-                        "type": "line",
-
-                        "color": "#f8bd19",
-
-                        "x": "$canvasstartx - 5",
-
-                        "y": "$canvasstarty",
-
-                        "tox": "$canvasstartx - 5",
-
-                        "toy": "$canvasendy",
-
-                        "thickness": "3"
-
-                    },
-
-                    {
-
-                        "id": "none-label-bg",
-
-                        "type": "rectangle",
-
-                        "fillcolor": "#f8bd19",
-
-                        "x": "$canvasstartx - 60",
-
-                        "tox": "$canvasstartx - 15",
-
-                        "y": "$canvasendy - 20",
-
-                        "toy": "$canvasendy",
-
-                        "radius": "3"
-
-                    },
-
-                    {
-
-                        "id": "none-dot",
-
-                        "type": "circle",
-
-                        "radius": "5",
-
-                        "x": "$canvasstartx - 5",
-
-                        "y": "$canvasendy - 10",
-
-                        "color": "#f8bd19"
-
-                    },
-
-                    {
-
-                        "id": "none-label",
-
-                        "type": "text",
-
-                        "fillcolor": "#ffffff",
-
-                        "text": "None",
-
-                        "x": "$canvasstartx - 37",
-
-                        "y": "$canvasendy - 12",
-
-                        "fontsize": "12",
-
-                        "bold": "1"
-
-                    },
-
-                    {
-
-                        "id": "few-label-bg",
-
-                        "type": "rectangle",
-
-                        "fillcolor": "#f8bd19",
-
-                        "x": "$canvasstartx - 55",
-
-                        "tox": "$canvasstartx - 15",
-
-                        "y": "$canvasendy - 100",
-
-                        "toy": "$canvasendy - 80",
-
-                        "radius": "3"
-
-                    },
-
-                    {
-
-                        "id": "few-dot",
-
-                        "type": "circle",
-
-                        "radius": "5",
-
-                        "x": "$canvasstartx - 5",
-
-                        "y": "$canvasendy - 90",
-
-                        "color": "#f8bd19"
-
-                    },
-
-                    {
-
-                        "id": "few-label",
-
-                        "type": "text",
-
-                        "fillcolor": "#ffffff",
-
-                        "text": "Few",
-
-                        "x": "$canvasstartx - 35",
-
-                        "y": "$canvasendy - 92",
-
-                        "fontsize": "12",
-
-                        "bold": "1"
-
-                    },
-
-                    {
-
-                        "id": "moderate-label-bg",
-
-                        "type": "rectangle",
-
-                        "fillcolor": "#f8bd19",
-
-                        "x": "$canvasstartx - 85",
-
-                        "tox": "$canvasstartx - 15",
-
-                        "y": "$canvasendy - 180",
-
-                        "toy": "$canvasendy - 160",
-
-                        "radius": "3"
-
-                    },
-
-                    {
-
-                        "id": "moderate-dot",
-
-                        "type": "circle",
-
-                        "radius": "5",
-
-                        "x": "$canvasstartx - 5",
-
-                        "y": "$canvasendy - 170",
-
-                        "color": "#f8bd19"
-
-                    },
-
-                    {
-
-                        "id": "moderate-label",
-
-                        "type": "text",
-
-                        "fillcolor": "#ffffff",
-
-                        "text": "Moderate",
-
-                        "x": "$canvasstartx - 50",
-
-                        "y": "$canvasendy - 172",
-
-                        "fontsize": "12",
-
-                        "bold": "1"
-
-                    },
-
-                    {
-
-                        "id": "maximum-label-bg",
-
-                        "type": "rectangle",
-
-                        "fillcolor": "#f8bd19",
-
-                        "x": "$canvasstartx - 88",
-
-                        "tox": "$canvasstartx - 15",
-
-                        "y": "$canvasendy - 260",
-
-                        "toy": "$canvasendy - 240",
-
-                        "radius": "3"
-
-                    },
-
-                    {
-
-                        "id": "maximum-dot",
-
-                        "type": "circle",
-
-                        "radius": "5",
-
-                        "x": "$canvasstartx - 5",
-
-                        "y": "$canvasendy - 252",
-
-                        "color": "#f8bd19"
-
-                    },
-
-                    {
-
-                        "id": "maximum-label",
-
-                        "type": "text",
-
-                        "fillcolor": "#ffffff",
-
-                        "text": "High",
-
-                        "x": "$canvasstartx - 52",
-
-                        "y": "$canvasendy - 252",
-
-                        "fontsize": "12",
-
-                        "bold": "1"
-
-                    }
-
-                ]
-
-            },
-
-            {
-
-                "id": "dyn-label-grp",
-
-                "items": [
-
-                    {
-
-                        "id": "dyn-label-bg",
-
-                        "type": "rectangle",
-
-                        "radius": "3"
-
-                    },
-
-                    {
-
-                        "id": "dyn-label",
-
-                        "type": "text",
-
-                        "fillcolor": "#ffffff",
-
-                        "fontsize": "12",
-
-                        "bold": "1"
-
-                    },
-
-                    {
-
-                        "id": "dyn-detail-label",
-
-                        "type": "text",
-
-                        "align": "right",
-
-                        "x": "$canvasendx",
-
-                        "bgcolor": "#ffffff"
-
-                    }
-
-                ]
-
-            }
-
-        ]
-
+        "groups": [{
+            "id": "ds1tips",
+            "items": [{
+                "id": "indicator-line",
+                "type": "line",
+                "dashed": "1"
+            }, {
+                "id": "tip1_1",
+                "type": "rectangle",
+                "fillcolor": "#6baa01",
+                "x": "$dataset.0.set.0.x + 5",
+                "y": "$dataset.0.set.0.y - 30",
+                "tox": "$dataset.0.set.0.x + 80",
+                "toy": "$dataset.0.set.0.y - 10",
+                "visible": "0"
+            }]
+        }, {
+            "id": "yaxisline",
+            "items": [{
+                "id": "line",
+                "type": "line",
+                "color": "#f8bd19",
+                "x": "$canvasstartx - 5",
+                "y": "$canvasstarty",
+                "tox": "$canvasstartx - 5",
+                "toy": "$canvasendy",
+                "thickness": "3"
+            }, {
+                "id": "none-label-bg",
+                "type": "rectangle",
+                "fillcolor": "#f8bd19",
+                "x": "$canvasstartx - 60",
+                "tox": "$canvasstartx - 15",
+                "y": "$canvasendy - 20",
+                "toy": "$canvasendy",
+                "radius": "3"
+            }, {
+                "id": "none-dot",
+                "type": "circle",
+                "radius": "5",
+                "x": "$canvasstartx - 5",
+                "y": "$canvasendy - 10",
+                "color": "#f8bd19"
+            }, {
+                "id": "none-label",
+                "type": "text",
+                "fillcolor": "#ffffff",
+                "text": "None",
+                "x": "$canvasstartx - 37",
+                "y": "$canvasendy - 12",
+                "fontsize": "12",
+                "bold": "1"
+            }, {
+                "id": "few-label-bg",
+                "type": "rectangle",
+                "fillcolor": "#f8bd19",
+                "x": "$canvasstartx - 55",
+                "tox": "$canvasstartx - 15",
+                "y": "$canvasendy - 100",
+                "toy": "$canvasendy - 80",
+                "radius": "3"
+            }, {
+                "id": "few-dot",
+                "type": "circle",
+                "radius": "5",
+                "x": "$canvasstartx - 5",
+                "y": "$canvasendy - 90",
+                "color": "#f8bd19"
+            }, {
+                "id": "few-label",
+                "type": "text",
+                "fillcolor": "#ffffff",
+                "text": "Few",
+                "x": "$canvasstartx - 35",
+                "y": "$canvasendy - 92",
+                "fontsize": "12",
+                "bold": "1"
+            }, {
+                "id": "moderate-label-bg",
+                "type": "rectangle",
+                "fillcolor": "#f8bd19",
+                "x": "$canvasstartx - 85",
+                "tox": "$canvasstartx - 15",
+                "y": "$canvasendy - 180",
+                "toy": "$canvasendy - 160",
+                "radius": "3"
+            }, {
+                "id": "moderate-dot",
+                "type": "circle",
+                "radius": "5",
+                "x": "$canvasstartx - 5",
+                "y": "$canvasendy - 170",
+                "color": "#f8bd19"
+            }, {
+                "id": "moderate-label",
+                "type": "text",
+                "fillcolor": "#ffffff",
+                "text": "Moderate",
+                "x": "$canvasstartx - 50",
+                "y": "$canvasendy - 172",
+                "fontsize": "12",
+                "bold": "1"
+            }, {
+                "id": "maximum-label-bg",
+                "type": "rectangle",
+                "fillcolor": "#f8bd19",
+                "x": "$canvasstartx - 88",
+                "tox": "$canvasstartx - 15",
+                "y": "$canvasendy - 260",
+                "toy": "$canvasendy - 240",
+                "radius": "3"
+            }, {
+                "id": "maximum-dot",
+                "type": "circle",
+                "radius": "5",
+                "x": "$canvasstartx - 5",
+                "y": "$canvasendy - 252",
+                "color": "#f8bd19"
+            }, {
+                "id": "maximum-label",
+                "type": "text",
+                "fillcolor": "#ffffff",
+                "text": "High",
+                "x": "$canvasstartx - 52",
+                "y": "$canvasendy - 252",
+                "fontsize": "12",
+                "bold": "1"
+            }]
+        }, {
+            "id": "dyn-label-grp",
+            "items": [{
+                "id": "dyn-label-bg",
+                "type": "rectangle",
+                "radius": "3"
+            }, {
+                "id": "dyn-label",
+                "type": "text",
+                "fillcolor": "#ffffff",
+                "fontsize": "12",
+                "bold": "1"
+            }, {
+                "id": "dyn-detail-label",
+                "type": "text",
+                "align": "right",
+                "x": "$canvasendx",
+                "bgcolor": "#ffffff"
+            }]
+        }]
     },
-
-    "dataset": [
-
-        {
-
-            "seriesname": "Bakersfield Central",
-
-            "data": [
-
-                {
-
-                    "value": "15123"
-
-                },
-
-                {
-
-                    "value": "14233"
-
-                },
-
-                {
-
-                    "value": "25507"
-
-                },
-
-                {
-
-                    "value": "9110"
-
-                },
-
-                {
-
-                    "value": "15529"
-
-                },
-
-                {
-
-                    "value": "20803"
-
-                },
-
-                {
-
-                    "value": "19202"
-
-                }
-
-            ]
-
-        },
-
-        {
-
-            "seriesname": "Los Angeles Topanga",
-
-            "data": [
-
-                {
-
-                    "value": "13400"
-
-                },
-
-                {
-
-                    "value": "12800"
-
-                },
-
-                {
-
-                    "value": "22800"
-
-                },
-
-                {
-
-                    "value": "12400"
-
-                },
-
-                {
-
-                    "value": "15800"
-
-                },
-
-                {
-
-                    "value": "19800"
-
-                },
-
-                {
-
-                    "value": "21800"
-
-                }
-
-            ]
-
-        }
-
-    ]
-
+    "dataset": [{
+        "seriesname": "Bakersfield Central",
+        "data": [{
+            "value": "15123"
+        }, {
+            "value": "14233"
+        }, {
+            "value": "25507"
+        }, {
+            "value": "9110"
+        }, {
+            "value": "15529"
+        }, {
+            "value": "20803"
+        }, {
+            "value": "19202"
+        }]
+    }, {
+        "seriesname": "Los Angeles Topanga",
+        "data": [{
+            "value": "13400"
+        }, {
+            "value": "12800"
+        }, {
+            "value": "22800"
+        }, {
+            "value": "12400"
+        }, {
+            "value": "15800"
+        }, {
+            "value": "19800"
+        }, {
+            "value": "21800"
+        }]
+    }]
 }
-
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-annotations-example-15.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/uc91ftc1/ "@@open-newtab") to edit the above chart.
 
 > The above chart compares the footfall at two stores, Bakersfield Central and Los Angeles Topanga. When you hover the mouse pointer over a data plot, it triggers the **[dataplotRollover](https://docs.fusioncharts.com/archive/3.12.1/api/fusioncharts/fusioncharts-events.html#event-dataplotRollOver)** event. Consequently, an annotation group (containing a line, a label, and text annotation) is shown, which displays additional information about the data plot. When you hover the mouse pointer out of the data plot, it triggers the **[dataPlotRollOut](https://docs.fusioncharts.com/archive/3.12.1/api/fusioncharts/fusioncharts-events.html#event-dataplotRollOut)** event and the annotation group is hidden.
 
 Macro sub-tokens are used to position the annotation group with respect to the axes and datasets. The `hide()` method is used to hide the group.
 
-### 
-
-Customize the Y-axis
-
+### Customize the Y-axis
 
 Refer to the code below:
 
 ```json
-
 {
-
     "chart": {
-
         "caption": "Bakersfield Central - Total footfalls",
-
         "subCaption": "Last week",
-
         "xAxisName": "Day",
-
         "yAxisName": "No. of Visitors",
-
         "theme": "fint"
-
     },
-
     "annotations": {
-
         "origw": "400",
-
         "origh": "300",
-
         "autoscale": "1",
-
-        "groups": [
-
-            {
-
-                "items": [
-
-                    {
-
-                        "id": "high-labels-zone",
-
-                        "type": "rectangle",
-
-                        "x": "$yaxis.0.label.5.startx + 5",
-
-                        "y": "$yaxis.0.label.5.starty",
-
-                        "tox": "$yaxis.0.label.3.endx",
-
-                        "toy": "$yaxis.0.label.3.starty",
-
-                        "color": "#6baa01",
-
-                        "alpha": "20"
-
-                    },
-
-                    {
-
-                        "id": "high-label",
-
-                        "type": "text",
-
-                        "text": "High",
-
-                        "x": "$yaxis.0.label.4.startx - 5",
-
-                        "y": "$yaxis.0.label.4.starty",
-
-                        "rotateText": "1",
-
-                        "color": "#6baa01"
-
-                    },
-
-                    {
-
-                        "id": "moderate-labels-zone",
-
-                        "type": "rectangle",
-
-                        "x": "$yaxis.0.label.3.startx + 5",
-
-                        "y": "$yaxis.0.label.3.starty",
-
-                        "tox": "$yaxis.0.label.2.endx",
-
-                        "toy": "$yaxis.0.label.1.starty",
-
-                        "color": "#f8bd19",
-
-                        "alpha": "20"
-
-                    },
-
-                    {
-
-                        "id": "moderate-label",
-
-                        "type": "text",
-
-                        "text": "Moderate",
-
-                        "x": "$yaxis.0.label.2.startx - 5",
-
-                        "y": "$yaxis.0.label.2.starty",
-
-                        "rotateText": "1",
-
-                        "color": "#f8bd19"
-
-                    },
-
-                    {
-
-                        "id": "low-labels-zone",
-
-                        "type": "rectangle",
-
-                        "x": "$yaxis.0.label.1.startx - 3",
-
-                        "y": "$yaxis.0.label.1.starty",
-
-                        "tox": "$yaxis.0.label.0.endx",
-
-                        "toy": "$yaxis.0.label.0.endy",
-
-                        "color": "#e44a00",
-
-                        "alpha": "20"
-
-                    },
-
-                    {
-
-                        "id": "low-label",
-
-                        "type": "text",
-
-                        "text": "Low",
-
-                        "x": "$yaxis.0.label.1.startx - 12",
-
-                        "y": "$yaxis.0.label.0.starty - 5",
-
-                        "rotateText": "1",
-
-                        "color": "#e44a00"
-
-                    }
-
-                ]
-
-            }
-
-        ]
-
+        "groups": [{
+            "items": [{
+                "id": "high-labels-zone",
+                "type": "rectangle",
+                "x": "$yaxis.0.label.5.startx + 5",
+                "y": "$yaxis.0.label.5.starty",
+                "tox": "$yaxis.0.label.3.endx",
+                "toy": "$yaxis.0.label.3.starty",
+                "color": "#6baa01",
+                "alpha": "20"
+            }, {
+                "id": "high-label",
+                "type": "text",
+                "text": "High",
+                "x": "$yaxis.0.label.4.startx - 5",
+                "y": "$yaxis.0.label.4.starty",
+                "rotateText": "1",
+                "color": "#6baa01"
+            }, {
+                "id": "moderate-labels-zone",
+                "type": "rectangle",
+                "x": "$yaxis.0.label.3.startx + 5",
+                "y": "$yaxis.0.label.3.starty",
+                "tox": "$yaxis.0.label.2.endx",
+                "toy": "$yaxis.0.label.1.starty",
+                "color": "#f8bd19",
+                "alpha": "20"
+            }, {
+                "id": "moderate-label",
+                "type": "text",
+                "text": "Moderate",
+                "x": "$yaxis.0.label.2.startx - 5",
+                "y": "$yaxis.0.label.2.starty",
+                "rotateText": "1",
+                "color": "#f8bd19"
+            }, {
+                "id": "low-labels-zone",
+                "type": "rectangle",
+                "x": "$yaxis.0.label.1.startx - 3",
+                "y": "$yaxis.0.label.1.starty",
+                "tox": "$yaxis.0.label.0.endx",
+                "toy": "$yaxis.0.label.0.endy",
+                "color": "#e44a00",
+                "alpha": "20"
+            }, {
+                "id": "low-label",
+                "type": "text",
+                "text": "Low",
+                "x": "$yaxis.0.label.1.startx - 12",
+                "y": "$yaxis.0.label.0.starty - 5",
+                "rotateText": "1",
+                "color": "#e44a00"
+            }]
+        }]
     },
-
-    "data": [
-
-        {
-
-            "label": "Mon",
-
-            "value": "15123"
-
-        },
-
-        {
-
-            "label": "Tue",
-
-            "value": "14233"
-
-        },
-
-        {
-
-            "label": "Wed",
-
-            "value": "25507"
-
-        },
-
-        {
-
-            "vline": "true",
-
-            "lineposition": "0",
-
-            "color": "#6baa01",
-
-            "labelHAlign": "left",
-
-            "label": "National holiday"
-
-        },
-
-        {
-
-            "label": "Thu",
-
-            "value": "9110"
-
-        },
-
-        {
-
-            "label": "Fri",
-
-            "value": "15529"
-
-        },
-
-        {
-
-            "label": "Sat",
-
-            "value": "20803"
-
-        },
-
-        {
-
-            "label": "Sun",
-
-            "value": "19202"
-
-        }
-
-    ]
-
+    "data": [{
+        "label": "Mon",
+        "value": "15123"
+    }, {
+        "label": "Tue",
+        "value": "14233"
+    }, {
+        "label": "Wed",
+        "value": "25507"
+    }, {
+        "vline": "true",
+        "lineposition": "0",
+        "color": "#6baa01",
+        "labelHAlign": "left",
+        "label": "National holiday"
+    }, {
+        "label": "Thu",
+        "value": "9110"
+    }, {
+        "label": "Fri",
+        "value": "15529"
+    }, {
+        "label": "Sat",
+        "value": "20803"
+    }, {
+        "label": "Sun",
+        "value": "19202"
+    }]
 }
-
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-annotations-example-16.js %}
 
+Click [here](http://jsfiddle.net/fusioncharts/ov9kx01n/ "@@open-newtab") to edit the above chart.
 
 > The above chart showcases annotations positioned dynamically, with respect to the y-axis, using macros. The annotations are used to mark three different ranges - low, moderate and high, with three different colors.
 
-### 
-
-Add More Context to the Chart
+### Add More Context to the Chart
 
 Refer to the code below:
 
 ```json
-
 {
-
     "chart": {
-
         "caption": "Customer Satisfaction Score",
-
         "subcaption": "Los Angeles Topanga",
-
         "plotToolText": "Current Score: $value",
-
         "theme": "fint",
-
         "chartBottomMargin": "50",
-
         "showValue": "1"
-
     },
-
     "colorRange": {
-
-        "color": [
-
-            {
-
-                "minValue": "0",
-
-                "maxValue": "4.5",
-
-                "code": "#e44a00"
-
-            },
-
-            {
-
-                "minValue": "4.5",
-
-                "maxValue": "7.5",
-
-                "code": "#f8bd19"
-
-            },
-
-            {
-
-                "minValue": "7.5",
-
-                "maxValue": "10",
-
-                "code": "#6baa01"
-
-            }
-
-        ]
-
+        "color": [{
+            "minValue": "0",
+            "maxValue": "4.5",
+            "code": "#e44a00"
+        }, {
+            "minValue": "4.5",
+            "maxValue": "7.5",
+            "code": "#f8bd19"
+        }, {
+            "minValue": "7.5",
+            "maxValue": "10",
+            "code": "#6baa01"
+        }]
     },
-
     "dials": {
-
-        "dial": [
-
-            {
-
-                "value": "8.9"
-
-            }
-
-        ]
-
+        "dial": [{
+            "value": "8.9"
+        }]
     },
-
     "trendPoints": {
-
-        "point": [
-
-            {
-
-                "startValue": "6.8",
-
-                "color": "#0075c2",
-
-                "dashed": "1"
-
-            },
-
-            {
-
-                "startValue": "9.5",
-
-                "color": "#0075c2",
-
-                "dashed": "1"
-
-            },
-
-            {
-
-                "startValue": "6.8",
-
-                "endValue": "9.5",
-
-                "color": "#0075c2",
-
-                "radius": "185",
-
-                "innerRadius": "80"
-
-            }
-
-        ]
-
+        "point": [{
+            "startValue": "6.8",
+            "color": "#0075c2",
+            "dashed": "1"
+        }, {
+            "startValue": "9.5",
+            "color": "#0075c2",
+            "dashed": "1"
+        }, {
+            "startValue": "6.8",
+            "endValue": "9.5",
+            "color": "#0075c2",
+            "radius": "185",
+            "innerRadius": "80"
+        }]
     },
-
     "annotations": {
-
         "origw": "450",
-
         "origh": "300",
-
         "autoscale": "1",
-
         "showBelow": "0",
-
-        "groups": [
-
-            {
-
-                "id": "arcs",
-
-                "items": [
-
-                    {
-
-                        "id": "national-cs-bg",
-
-                        "type": "rectangle",
-
-                        "x": "$chartCenterX+2",
-
-                        "y": "$chartEndY - 45",
-
-                        "tox": "$chartCenterX + 130",
-
-                        "toy": "$chartEndY - 25",
-
-                        "fillcolor": "#f8bd19"
-
-                    },
-
-                    {
-
-                        "id": "national-cs-text",
-
-                        "type": "Text",
-
-                        "color": "#ffffff",
-
-                        "label": "National Average : 7.2",
-
-                        "fontSize": "12",
-
-                        "align": "left",
-
-                        "x": "$chartCenterX + 7",
-
-                        "y": "$chartEndY - 35"
-
-                    },
-
-                    {
-
-                        "id": "state-cs-bg",
-
-                        "type": "rectangle",
-
-                        "x": "$chartCenterX-2",
-
-                        "y": "$chartEndY - 45",
-
-                        "tox": "$chartCenterX - 103",
-
-                        "toy": "$chartEndY - 25",
-
-                        "fillcolor": "#6baa01"
-
-                    },
-
-                    {
-
-                        "id": "state-cs-text",
-
-                        "type": "Text",
-
-                        "color": "#ffffff",
-
-                        "label": "State Average : 8",
-
-                        "fontSize": "12",
-
-                        "align": "right",
-
-                        "x": "$chartCenterX - 7",
-
-                        "y": "$chartEndY - 35"
-
-                    },
-
-                    {
-
-                        "id": "store-cs-bg",
-
-                        "type": "rectangle",
-
-                        "x": "$chartCenterX-130",
-
-                        "y": "$chartEndY - 22",
-
-                        "tox": "$chartCenterX + 150",
-
-                        "toy": "$chartEndY - 2",
-
-                        "fillcolor": "#0075c2"
-
-                    },
-
-                    {
-
-                        "id": "state-cs-text",
-
-                        "type": "Text",
-
-                        "color": "#ffffff",
-
-                        "label": "Store's Customer Satisfaction Range: 6.8 to 9.5",
-
-                        "fontSize": "12",
-
-                        "align": "center",
-
-                        "x": "$chartCenterX + 10",
-
-                        "y": "$chartEndY - 12"
-
-                    }
-
-                ]
-
-            }
-
-        ]
-
+        "groups": [{
+            "id": "arcs",
+            "items": [{
+                "id": "national-cs-bg",
+                "type": "rectangle",
+                "x": "$chartCenterX+2",
+                "y": "$chartEndY - 45",
+                "tox": "$chartCenterX + 130",
+                "toy": "$chartEndY - 25",
+                "fillcolor": "#f8bd19"
+            }, {
+                "id": "national-cs-text",
+                "type": "Text",
+                "color": "#ffffff",
+                "label": "National Average : 7.2",
+                "fontSize": "12",
+                "align": "left",
+                "x": "$chartCenterX + 7",
+                "y": "$chartEndY - 35"
+            }, {
+                "id": "state-cs-bg",
+                "type": "rectangle",
+                "x": "$chartCenterX-2",
+                "y": "$chartEndY - 45",
+                "tox": "$chartCenterX - 103",
+                "toy": "$chartEndY - 25",
+                "fillcolor": "#6baa01"
+            }, {
+                "id": "state-cs-text",
+                "type": "Text",
+                "color": "#ffffff",
+                "label": "State Average : 8",
+                "fontSize": "12",
+                "align": "right",
+                "x": "$chartCenterX - 7",
+                "y": "$chartEndY - 35"
+            }, {
+                "id": "store-cs-bg",
+                "type": "rectangle",
+                "x": "$chartCenterX-130",
+                "y": "$chartEndY - 22",
+                "tox": "$chartCenterX + 150",
+                "toy": "$chartEndY - 2",
+                "fillcolor": "#0075c2"
+            }, {
+                "id": "state-cs-text",
+                "type": "Text",
+                "color": "#ffffff",
+                "label": "Store's Customer Satisfaction Range: 6.8 to 9.5",
+                "fontSize": "12",
+                "align": "center",
+                "x": "$chartCenterX + 10",
+                "y": "$chartEndY - 12"
+            }]
+        }]
     }
-
 }
-
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-annotations-example-17.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/gkwnc4q3/ "@@open-newtab") to edit the above chart.
 
 > The above gauge shows the customer satisfaction score with some significant data like, the state average and the national average, using annotation shapes and text elements.
 
-### 
-Annotate images for better visualization
+### Annotate images for better visualization
 
 Refer to the code below:
 
 ```json
-
 {
-
     "chart": {
-
         "caption": "Sales figures for top 4 chocolate brands - FY2013-2014",
-
         "subCaption": "Harry's SuperMart",
-
         "xAxisName": "Brand",
-
         "yAxisName": "Amount (In USD)",
-
         "yAxisMaxValue": "120000",
-
         "numberPrefix": "$",
-
         "theme": "fint",
-
         "PlotfillAlpha": "0",
-
         "placeValuesInside": "0",
-
         "rotateValues": "0",
-
         "valueFontColor": "#333333",
-
         "valuePadding": 10
-
     },
-
     "annotations": {
-
         "width": "500",
-
         "height": "300",
-
         "autoScale": "1",
-
-        "groups": [
-
-            {
-
-                "id": "user-images",
-
-                "xScale_": "20",
-
-                "yScale_": "20",
-
-                "items": [
-
-                    {
-
-                        "id": "butterFinger-icon",
-
-                        "type": "image",
-
-                        "url": "http://static.fusioncharts.com/sampledata/images/butterFinger.png",
-
-                        "x": "$xaxis.label.0.x - 30",
-
-                        "y": "$canvasEndY - 150",
-
-                        "xScale": "50",
-
-                        "yScale": "40"
-
-                    },
-
-                    {
-
-                        "id": "tom-user-icon",
-
-                        "type": "image",
-
-                        "url": "http://static.fusioncharts.com/sampledata/images/snickrs.png",
-
-                        "x": "$xaxis.label.1.x - 26",
-
-                        "y": "$canvasEndY - 141",
-
-                        "xScale": "48",
-
-                        "yScale": "38"
-
-                    },
-
-                    {
-
-                        "id": "Milton-user-icon",
-
-                        "type": "image",
-
-                        "url": "http://static.fusioncharts.com/sampledata/images/coffee_crisp.png",
-
-                        "x": "$xaxis.label.2.x - 22",
-
-                        "y": "$canvasEndY - 134",
-
-                        "xScale": "43",
-
-                        "yScale": "36"
-
-                    },
-
-                    {
-
-                        "id": "Brian-user-icon",
-
-                        "type": "image",
-
-                        "url": "http://static.fusioncharts.com/sampledata/images/100grand.png",
-
-                        "x": "$xaxis.label.3.x - 22",
-
-                        "y": "$canvasEndY - 131",
-
-                        "xScale": "43",
-
-                        "yScale": "35"
-
-                    }
-
-                ]
-
-            }
-
-        ]
-
+        "groups": [{
+            "id": "user-images",
+            "xScale_": "20",
+            "yScale_": "20",
+            "items": [{
+                "id": "butterFinger-icon",
+                "type": "image",
+                "url": "http://static.fusioncharts.com/sampledata/images/butterFinger.png",
+                "x": "$xaxis.label.0.x - 30",
+                "y": "$canvasEndY - 150",
+                "xScale": "50",
+                "yScale": "40"
+            }, {
+                "id": "tom-user-icon",
+                "type": "image",
+                "url": "http://static.fusioncharts.com/sampledata/images/snickrs.png",
+                "x": "$xaxis.label.1.x - 26",
+                "y": "$canvasEndY - 141",
+                "xScale": "48",
+                "yScale": "38"
+            }, {
+                "id": "Milton-user-icon",
+                "type": "image",
+                "url": "http://static.fusioncharts.com/sampledata/images/coffee_crisp.png",
+                "x": "$xaxis.label.2.x - 22",
+                "y": "$canvasEndY - 134",
+                "xScale": "43",
+                "yScale": "36"
+            }, {
+                "id": "Brian-user-icon",
+                "type": "image",
+                "url": "http://static.fusioncharts.com/sampledata/images/100grand.png",
+                "x": "$xaxis.label.3.x - 22",
+                "y": "$canvasEndY - 131",
+                "xScale": "43",
+                "yScale": "35"
+            }]
+        }]
     },
-
-    "data": [
-
-        {
-
-            "label": "Butterfinger",
-
-            "value": "92000"
-
-        },
-
-        {
-
-            "label": "Snickers",
-
-            "value": "87000"
-
-        },
-
-        {
-
-            "label": "Coffee Crisp",
-
-            "value": "83000"
-
-        },
-
-        {
-
-            "label": "100 Grand",
-
-            "value": "80000"
-
-        }
-
-    ]
-
+    "data": [{
+        "label": "Butterfinger",
+        "value": "92000"
+    }, {
+        "label": "Snickers",
+        "value": "87000"
+    }, {
+        "label": "Coffee Crisp",
+        "value": "83000"
+    }, {
+        "label": "100 Grand",
+        "value": "80000"
+    }]
 }
-
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-annotations-example-18.js %}
 
-### > In the above chart, images of brands are shown instead of the conventional 2D column data plots. Using these annotations makes the chart more intuitive while also increasing its visual appeal. Imagine how easy it becomes for your audience to read data in a chart like this, especially if the data is for a large number of brands.
+Click [here](http://jsfiddle.net/fusioncharts/rpsrtk8a/ "@@open-newtab") to edit the above chart.
 
-Use Events to Trigger Display of Annotation Items
+> In the above chart, images of brands are shown instead of the conventional 2D column data plots. Using these annotations makes the chart more intuitive while also increasing its visual appeal. Imagine how easy it becomes for your audience to read data in a chart like this, especially if the data is for a large number of brands.
+
+### Use Events to Trigger Display of Annotation Items
 
 Refer to the code below:
 
 ```json
-
 {
-
     "chart": {
-
         "caption": "Total footfall in Bakersfield Central",
-
         "subCaption": "Last week",
-
         "xAxisName": "Day",
-
         "yAxisName": "No. of Visitors",
-
         "paletteColors": "#008ee4",
-
         "bgAlpha": "0",
-
         "borderAlpha": "20",
-
         "canvasBorderAlpha": "0",
-
         "plotBorderAlpha": "10",
-
         "captionpadding": "20",
-
         "showXAxisLines": "1",
-
         "axisLineAlpha": "25",
-
         "divLineAlpha": "10",
-
         "showValues": "0",
-
         "showAlternateHGridColor": "0"
-
     },
-
     "annotations": {
-
         "origw": "400",
-
         "origh": "300",
-
         "autoscale": "1",
-
-        "groups": [
-
-            {
-
-                "items": [
-
-                    {
-
-                        "id": "zone",
-
-                        "type": "rectangle",
-
-                        "x": "$xaxis.label.6.x",
-
-                        "y": "$canvasEndY",
-
-                        "tox": "$xaxis.label.7.x",
-
-                        "toy": "$canvasStartY",
-
-                        "color": "#6baa01",
-
-                        "alpha": "20"
-
-                    },
-
-                    {
-
-                        "id": "label",
-
-                        "type": "text",
-
-                        "text": "Weekend",
-
-                        "fillcolor": "#666666",
-
-                        "fontSize": "10",
-
-                        "bold": "1",
-
-                        "x": "$xaxis.label.7.x - 25",
-
-                        "y": "$canvasEndY - 35"
-
-                    }
-
-                ]
-
-            }
-
-        ]
-
+        "groups": [{
+            "items": [{
+                "id": "zone",
+                "type": "rectangle",
+                "x": "$xaxis.label.6.x",
+                "y": "$canvasEndY",
+                "tox": "$xaxis.label.7.x",
+                "toy": "$canvasStartY",
+                "color": "#6baa01",
+                "alpha": "20"
+            }, {
+                "id": "label",
+                "type": "text",
+                "text": "Weekend",
+                "fillcolor": "#666666",
+                "fontSize": "10",
+                "bold": "1",
+                "x": "$xaxis.label.7.x - 25",
+                "y": "$canvasEndY - 35"
+            }]
+        }]
     },
-
-    "data": [
-
-        {
-
-            "label": "Mon",
-
-            "value": "15123"
-
-        },
-
-        {
-
-            "label": "Tue",
-
-            "value": "14233"
-
-        },
-
-        {
-
-            "label": "Wed",
-
-            "value": "25507"
-
-        },
-
-        {
-
-            "vline": "true",
-
-            "lineposition": "0",
-
-            "color": "#6baa01",
-
-            "labelHAlign": "left",
-
-            "label": "National holiday"
-
-        },
-
-        {
-
-            "label": "Thu",
-
-            "value": "9110"
-
-        },
-
-        {
-
-            "label": "Fri",
-
-            "value": "15529"
-
-        },
-
-        {
-
-            "label": "Sat",
-
-            "value": "20803"
-
-        },
-
-        {
-
-            "label": "Sun",
-
-            "value": "19202"
-
-        }
-
-    ]
-
+    "data": [{
+        "label": "Mon",
+        "value": "15123"
+    }, {
+        "label": "Tue",
+        "value": "14233"
+    }, {
+        "label": "Wed",
+        "value": "25507"
+    }, {
+        "vline": "true",
+        "lineposition": "0",
+        "color": "#6baa01",
+        "labelHAlign": "left",
+        "label": "National holiday"
+    }, {
+        "label": "Thu",
+        "value": "9110"
+    }, {
+        "label": "Fri",
+        "value": "15529"
+    }, {
+        "label": "Sat",
+        "value": "20803"
+    }, {
+        "label": "Sun",
+        "value": "19202"
+    }]
 }
-
 ```
 
 The chart will look as shown below:
 
-<chart>
+{% embed_chart chart-configurations-annotations-example-19.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/3Lnm59z6/ "@@open-newtab") to edit the above chart.
 
 > In the above chart, you can see how to use events on annotation items. If you hover the mouse pointer on the Weekend zone (represented by a green rectangle on the chart), it triggers the events **annotationRollOver** and **annotationRollOut**, which show the total footfall on Saturday and Sunday.
 
-## 
-
-Create a Collaborative Dashboard
+## Create a Collaborative Dashboard
 
 Click [here](http://www.fusioncharts.com/dashboards/collaboration/) to see a collaborative dashboard that is a complex and practical example of how to use annotations, to add more information to a chart.
 
@@ -3378,7 +1949,7 @@ Annotations, thus, let you add more information to your charts, creatively.
 
 In the following sections, you can see an exhaustive set of attributes and macros supported by annotations in FusionCharts Suite XT.
 
-### General configuration attributes
+## General configuration attributes
 
 You can use the following attributes with the root `annotations` object, to globally configure generic aspects of annotations:
 
@@ -3405,21 +1976,14 @@ You can use the following attributes with the root `annotations` object, to glob
 Refer to the code below:
 
 ```json
-
 {
-
     "annotations": {
-
         // Define the general configuration attributes here.
-
     }
-
 }
-
 ```
 
-### 
-Configure attributes for annotation groups
+## Configure attributes for annotation groups
 
 You can uniformly configure all annotation items contained within an annotation group, by using a number of attributes, as detailed in the list below. Group attributes inherit default values from the ones defined as root-level annotation attributes.
 
@@ -3478,28 +2042,20 @@ You can uniformly configure all annotation items contained within an annotation 
 Refer to the code below:
 
 ```json
-
 {
-
     "annotations": {
-
         "groups": [{
-
             //Define the group configuration attributes here.
-
         }]
-
     }
-
 }
-
 ```
 
-### Configure attributes for annotation items
+## Configure attributes for annotation items
 
 You can segregate attributes for annotation items into two types, common (which work for all annotation types) and ad-hoc (which only work for certain annotation types).
 
-#### Common Attributes
+### Common Attributes
 
 * Specify a unique identification for the annotation using the **id** attribute. You can then use it to identify and change other properties of the annotation.
 
@@ -3542,30 +2098,20 @@ You can segregate attributes for annotation items into two types, common (which 
 Refer to the code below:
 
 ```json
-
 {
-
     "annotations": {
-
         "groups": [{
-
             "items": [{
-
                 //Define the annotation items configuration attributes here.
-
             }]
-
         }]
-
     }
-
 }
-
 ```
 
-#### Ad Hoc Attributes
+### Ad Hoc Attributes
 
-##### **Line**
+#### **Line**
 
 * Set the value of the **type** attribute to line, to create a line annotation.
 
@@ -3579,13 +2125,7 @@ Refer to the code below:
 
 * Specify the thickness (in pixels) of the line, using the **thickness** attribute.
 
-Refer to the code below:
-
-```
-
-```
-
-##### **Circle**
+#### **Circle**
 
 * Set the value of the **type** attribute to circle, to create a circular annotation.
 
@@ -3601,13 +2141,7 @@ Refer to the code below:
 
 * Specify the ending angle (in degrees), if the circle has to be drawn like a wedge, using the **endAngle** attribute. Note that, to draw a semicircle, you need to set "startAngle": "0" and "endAngle": "180".
 
-Refer to the code below:
-
-```
-
-```
-
-##### **Arc**
+#### **Arc**
 
 * Set the value of the **type** attribute to arc, to create an arc-shaped annotation.
 
@@ -3623,13 +2157,7 @@ Refer to the code below:
 
 * Specify the ending angle of the arc, by setting the value of the **endAngle** attribute between 0 and 360.
 
-Refer to the code below:
-
-```
-
-```
-
-##### **Rectangle**
+#### **Rectangle**
 
 * Set the value of the **type** attribute to rectangle, to create a rectangular annotation.
 
@@ -3643,13 +2171,7 @@ Refer to the code below:
 
 * Specify the radius (in pixels) of the edges of a rectangle, using the **radius** attribute. Note that you need to use this attribute to render the annotation as a rounded rectangle.
 
-Refer to the code below:
-
-```
-
-```
-
-##### **Polygon**
+#### **Polygon**
 
 * Set the value of the **type** attribute to polygon, to create a polygonal annotation.
 
@@ -3661,13 +2183,7 @@ Refer to the code below:
 
 * Specify the radius (in pixels) of the edges of a polygon, using the **radius** attribute. 
 
-Refer to the code below:
-
-```
-
-```
-
-##### **Text**
+#### **Text**
 
 * Set the value of the **type** attribute to text, to create a text annotation.
 
@@ -3701,13 +2217,7 @@ Refer to the code below:
 
 * Specify the height after which the text will be wrapped, using the **wrapHeight** attribute. Ellipses will be automatically appended to the end of the text, when it overflows beyond the vertical space you allocate using **wrapHeight** or **toY** attributes.
 
-Refer to the code below:
-
-```
-
-```
-
-##### **Path**
+#### **Path**
 
 * Set the value of the **type** attribute to path, to create a path annotation.
 
@@ -3717,13 +2227,7 @@ Refer to the code below:
 
 * Specify the y coordinate of the starting position of the path with respect to the topmost position (taken as 0) of the chart, using the **y** attribute.
 
-Refer to the code below:
-
-```
-
-```
-
-##### **Images**
+#### **Images**
 
 * Set the value of the **type** attribute to image, to create an image annotation.
 
@@ -3737,13 +2241,7 @@ Refer to the code below:
 
 * Specify the resize value for the image height, using the **yScale** attribute.
 
-Refer to the code below:
-
-```
-
-```
-
-### Use macros to position annotations
+## Use macros to position annotations
 
 Use the following macros to position annotations within charts and gauges:
 
@@ -3767,17 +2265,11 @@ Use the following macros to position annotations within charts and gauges:
 
 * Position annotations with respect to half-width of the entire funnel or pyramid plot, using the `$plotSemiWidth` macro.
 
- Refer to the code below:
-
-```json
-
-```
-
-### Use sub-token macros to position annotations 
+## Use sub-token macros to position annotations 
 
 Use the following sub-token macros to position annotations with respect to datasets and axes:
 
-#### $dataset
+### $dataset
 
 Use the $dataset macro to add the position information of the plots in a dataset to the annotation. You can apply the "dataset_index [separator] set [separator] set_index [separator] position_key" sub token to the macro. 
 
@@ -3793,13 +2285,7 @@ For example, you can use the following values to position a rectangle above the 
 
 * toy:$dataset.0.set.1.STARTY-40
 
-Refer to the code below:
-
-```json
-
-```
-
-#### $yaxis
+### $yaxis
 
 Use the $yaxis macro to add the position information of the y-axis labels to the annotation. You can apply the "yaxis_index [separator] label [separator] label_index [separator] position_key" sub token to the macro.
 
@@ -3811,13 +2297,7 @@ For example, you can position a text on the y axis, using the following values:
 
 * y: $yaxis.0.label.0.starty - 5
 
-Refer to the code below:
-
-```
-
-```
-
-#### $xaxis
+### $xaxis
 
 Use the $xaxis macro to add the position information of the x-axis labels to the annotation. You can apply the "xaxis_index [separator] label [separator] label_index [separator] position_key" sub token to the macro.
 
@@ -3828,10 +2308,3 @@ For example, you can position a text on the x axis, using the following values:
 * x: $xaxis.label.1.startx+2,
 
 * y: $xaxis.label.0.starty+3
-
-Refer to the code below:
-
-```
-
-```
-
