@@ -232,7 +232,7 @@ Refer to the code below:
 
 The chart will look like as shown below:
 
-{% embed_all standard-charts-treemap-example-2.js %}
+{% embed_chart standard-charts-treemap-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/myz9pjpw/ "@@open-newtab") to edit the above chart.
 
@@ -273,7 +273,7 @@ Refer to the code below:
 
 The chart looks like as shown below:
 
-{% embed_all standard-charts-treemap-example-3.js %}
+{% embed_chart standard-charts-treemap-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/LL6rqgk4/ "@@open-newtab") to edit the above chart.
 
@@ -292,7 +292,7 @@ To set slicing mode to `horizontal`, refer to the code below:
 
 The chart looks like as shown below:
 
-{% embed_all standard-charts-treemap-example-4.js %}
+{% embed_chart standard-charts-treemap-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/2xoeqm8j/ "@@open-newtab") to edit the above chart.
 
@@ -311,7 +311,7 @@ When you set slicing mode to `alternate`, refer to the code below:
 
 The chart looks like as shown below:
 
-{% embed_all standard-charts-treemap-example-5.js %}
+{% embed_chart standard-charts-treemap-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/buksebna/ "@@open-newtab") to edit the above chart.
 
@@ -351,7 +351,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-treemap-example-6.js %}
+{% embed_chart standard-charts-treemap-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/uL36xvxx/ "@@open-newtab") to edit the above chart.
 
@@ -400,7 +400,7 @@ Refer to the code below:
 
 The treemap will look like as shown in the image below:
 
-{% embed_all standard-charts-treemap-example-8.js %}
+{% embed_chart standard-charts-treemap-example-8.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/x336y7ej/ "@@open-newtab") to edit the above chart.
 
@@ -452,7 +452,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-treemap-example-7.js %}
+{% embed_chart standard-charts-treemap-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/4av9kLrc/ "@@open-newtab") to edit the above chart.
 
@@ -482,7 +482,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-treemap-example-9.js %}
+{% embed_chart standard-charts-treemap-example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/4pnjj3c9/ "@@open-newtab") to edit the above chart.
 
@@ -518,7 +518,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-treemap-example-10.js %}
+{% embed_chart standard-charts-treemap-example-10.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/mbze14ch/ "@@open-newtab") to edit the above chart.
 
@@ -551,7 +551,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-treemap-example-11.js %}
+{% embed_chart standard-charts-treemap-example-11.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/5r3oa3r5/ "@@open-newtab") to edit the above chart.
 
@@ -590,6 +590,6 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all standard-charts-treemap-example-12.js %}
+{% embed_chart standard-charts-treemap-example-12.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/d36cqn7s/ "@@open-newtab") to edit the above chart.
