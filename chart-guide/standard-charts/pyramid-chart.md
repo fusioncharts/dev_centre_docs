@@ -11,7 +11,7 @@ As you know, each segment in a pyramid chart represents a dataset with the heigh
 
 ## Salient features
 
-* Click on Interactive pyramid slices, to separate them from the main pyramid.
+* Click on Interactive pyramid slices to separate them from the main pyramid.
 
 * Right click on the chart and select View 2D to seamlessly convert 3D pyramid to 2D pyramid. 
 
