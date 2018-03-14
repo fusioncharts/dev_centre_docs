@@ -105,7 +105,7 @@ To customize color properties of the bullet graph, use the following attributes:
 
 * Specify the color to be used to render the target line in hex code, using the `targetColor` attribute.
 
-* Set the thickness of the target line in pixels using the 'targetThickness' attribute. 
+* Set the thickness of the target line in pixels using the `targetThickness` attribute. 
 
 Refer to the code below:
 
