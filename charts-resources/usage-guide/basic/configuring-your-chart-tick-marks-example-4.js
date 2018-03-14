@@ -1,7 +1,7 @@
 {
         type: 'hled',
         renderAt: 'chart-container',
-        id: 'myChart',
+        
         width: '500',
         height: '170',
         dataFormat: 'json',
