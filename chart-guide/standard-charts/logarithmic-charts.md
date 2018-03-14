@@ -73,13 +73,12 @@ By default, the base of a logarithmic chart is set to 10. You can, however, set 
 
 Refer to the code given below:
 
-```
+```json
 {
 	"chart": {
 		"base": "5"
 	}
 }
-
 ```
 
 A log column chart with the base set to 5 looks like this:
@@ -94,13 +93,12 @@ Logarithmic charts allow you to plot the y-axis values inversely so that the y-a
 
 Refer to the code given below:
 
-```
+```json
 {
 	"chart": {
 		"invertYAxis": "1"
 	},
 }
-
 ```
 A log column 2D chart rendered with an inverted y-axis looks like this:
 
@@ -116,13 +114,12 @@ You can, however, explicitly specify the number of minor divisional lines betwee
 
 Refer to the code given below:
 
-```
+```json
 {
 	"chart": {
 		"numMinorDivLines": "4"
 	},
 }
-
 ```
 
 A log column chart with the number of minor divisional lines explicitly specified looks like this:

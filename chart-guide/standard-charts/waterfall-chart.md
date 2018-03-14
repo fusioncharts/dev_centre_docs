@@ -43,14 +43,13 @@ To customize the chart to show distinct colors for the positive and negative col
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "positiveColor": "#1aaf5d",
     "negativeColor": "#c02d00"
   },
 }
-
 ```
 
 A waterfall chart with distinct colors used for the positive and negative data plots looks like this:
@@ -67,7 +66,7 @@ A cumulative sum column is something that will show you the sum of all columns t
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "showSumAtEnd": "0"
@@ -79,7 +78,6 @@ Refer to the code given below:
       ...
     }]
 }
-
 ```
 A waterfall chart rendered with a cumulative sum column looks like this:
 
@@ -97,7 +95,7 @@ A non-cumulative sum column is one that shows the sum of all the columns to its 
 
 Refer to the  code below:
 
-```
+```json
 {
     "chart": {
         ...
@@ -114,7 +112,6 @@ Refer to the  code below:
         }
     ]
 }
-
 ```
 
 A waterfall chart rendered with a non-cumulative sum column looks like this:
@@ -137,7 +134,7 @@ To do so, the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         
@@ -145,7 +142,6 @@ Refer to the code below:
         "showSumAtEnd": "0"
     },
 }
-
 ```
 A waterfall chart with the total sum column hidden looks like this:
 
@@ -175,25 +171,17 @@ To customize the cosmetic properties of the connector lines, follow the steps gi
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
-
     "connectorColor": "#660000",
-
     "connectorAlpha": "50",
-
     "connectorThickness": "3",
-
     "connectorDashed": "1",
-
     "connectorDashLen": "5"
-
     "connectorDashGap": "2"
-
   },
 }
-
 ```
 A waterfall chart rendered with customized connector lines looks like this:
 

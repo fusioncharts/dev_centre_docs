@@ -10,7 +10,7 @@
             "caption": "Harry's Supermart - Bakersfield Central",
             "subCaption": "Footfalls",
             "showrealtimevalue": "1",
-            "dataStreamURL": "explore/data.php",
+            "dataStreamURL": "dummy-data.php",
             "paletteColors": "#008ee4,#9b59b6",
             "borderAlpha": "0",
             "yaxismaxvalue": "20",

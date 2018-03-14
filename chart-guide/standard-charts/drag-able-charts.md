@@ -113,7 +113,7 @@ With FusionCharts Suite XT, you can set and retrieve the charts' upper and lower
 
 Refer to the code given below:
 
-```
+```json
 events: {
     'rendered': function(evtObj, argObj) {
         var chartIns = evtObj.sender,
@@ -180,7 +180,6 @@ events: {
         }
     }
 }
-
 ```
 
 A drag-able area chart configured to manage chart limits using JavaScript API looks like:
@@ -206,14 +205,13 @@ To snap to the nearest divisional lines, follow the steps given below:
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "snapToDiv": "1",
         "snapToDivRelaxation": "5"
     }
 }
-
 ```
 
 A drag-able column chart configured for snapping to the nearest div interval looks like this:

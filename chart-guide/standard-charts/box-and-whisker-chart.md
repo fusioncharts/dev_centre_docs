@@ -228,7 +228,6 @@ Refer to the code below:
         "showQ3Values": "0"
     }
  }
-
 ```
 
 A box and whisker chart with five summary numbers- the minimum and maximum numbers and the median shown looks like:
@@ -260,7 +259,6 @@ Refer to the code given below:
         "showMinValues": "1",
         "showMaxValues": "1"
     }
-
 }
 ```
 
@@ -329,8 +327,10 @@ To customize the upper and the lower quartile points and the boxes, follow the p
     "chart": {
         //The color of the upper quartile set to Red
         "upperQuartileColor": "ff0000",
+
         //The thickness of the upper quartile set to 5
         "upperQuartileThickness": "5",
+        
         //The transparency of the upper quartile set to 70
         "upperQuartileAlpha": "70"
     }
@@ -381,9 +381,7 @@ To customize the upper and the lower quartile points and the boxes, follow the p
         "lowerQuartileThickness": "5",
         "lowerQuartileAlpha": "70"
     }
-
 }
-
 ```
 
 * Set the `lowerBoxColor` attribute to specify the hex color code of the lower quartile box.
@@ -408,7 +406,6 @@ Refer to the code below:
         "lowerBoxBorderThickness": "5"
     }
 }
-
 ```
 The chart will look like as shown below:
 
@@ -450,7 +447,6 @@ Refer to the code below:
         "whiskersLimitsWidthRatio": "3"
     }
 }
-
 ```
 The chart will look like as shown below:
 
@@ -480,7 +476,6 @@ Refer to the code given below:
         "showMean": "1"
     }
 }
-
 ```
 A box and whisker chart with the mean icon shown in the legend looks like this:
 
@@ -535,7 +530,6 @@ Refer to the code given below:
         "drawMeanConnector": "1"
     }
 }
-
 ```
 A box and whisker chart rendered with mean connectors looks like this:
 
@@ -557,7 +551,6 @@ Refer to the code given below:
         "connectNullData": "1"
     }
 }
-
 ```
 A box and whisker chart with null data connected using mean connectors is given below:
 
@@ -587,7 +580,6 @@ Refer to the code given below:
         "showMD": "1"
     }
 }
-
 ```
 The box and whisker chart with mean deviation icon shown in the legend box looks like:
 
@@ -621,7 +613,6 @@ Refer to the code below:
         "mdIconAlpha": "70"
     }
 }
-
 ```
 The chart will look like as shown below:
 
@@ -643,7 +634,6 @@ Refer to the code given below:
         "drawMDConnector": "1"
     }
 }
-
 ```
 A box and whisker chart rendered with a mean deviation connector looks like this:
 
@@ -665,7 +655,6 @@ Refer to the code given below:
         "connectNullData": "1"
     }
 }
-
 ```
 
 ## Configure Standard Deviation
@@ -688,7 +677,6 @@ Refer to the code given below:
         "showSD": "1"
     }
 }
-
 ```
 A box and whisker chart with the standard deviation icon shown in the legend box looks like this:
 
@@ -766,7 +754,6 @@ Refer to the code given below:
         "connectNullData": "1"
     }
 }
-
 ```
 ## Configuring Quartile Deviation
 
@@ -901,8 +888,7 @@ Refer to the code below:
 {
     "chart": {
         ...
-    }
-{
+    },
     "data": {
         "outliers": "1"
         "outlierIconRadius": "5",
@@ -912,7 +898,6 @@ Refer to the code below:
         "outlierIconAlpha": "70"
     }
 }
-
 ```
 A box and whisker chart with outliers looks like this:
 

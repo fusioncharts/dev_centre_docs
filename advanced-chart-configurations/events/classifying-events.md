@@ -6,7 +6,7 @@ heading: Classifying Events
 chartPresent: false
 ---
 
-## Prerequisites
+## Pre-requisites
 
 * [Introduction to Events]({% site.baseurl %}/advanced-chart-configurations/events/introduction-to-events "@@open-newtab")
 * [Handling Events]({% site.baseurl %}/advanced-chart-configurations/events/handling-events "@@open-newtab")

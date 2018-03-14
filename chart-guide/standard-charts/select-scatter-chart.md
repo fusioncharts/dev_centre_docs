@@ -84,7 +84,7 @@ Mapping then to the JSON data, gives:
 
 The chart also provides a method to read the selected data in the JSON/XML format. This method is named as the `getJSONData()` and can be invoked as under:
 
-```
+```json
 //Get a reference to our chart
 var chartObject= FusionCharts("SelectChart");
 
@@ -115,13 +115,12 @@ To show the regression line, set the `showRegressionLine` attribute to `1`. Sett
 
 Refer to the code given below:
 
-```
+```json
 {
 	"chart": {
 		"showRegressionLine": "1"
 	}
 }
-
 ```
 A select-scatter chart rendered with a regression line is shown below:
 
@@ -151,7 +150,7 @@ The same sample with the regression line drawn using the **X on Y** mode will be
 
 Refer to the code given below:
 
-```
+```json
 {
 	"chart": {
 		"showYOnX": "0",

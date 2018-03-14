@@ -185,11 +185,12 @@ FusionCharts Suite XT includes several options to customize trend elements. To k
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
       ...
   },
+  "data": [],
   "trendlines": [{
     "line": [{
       "startValue": "18833",
@@ -218,7 +219,7 @@ You can choose to swap positions of the primary and secondary axes using a singl
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "primaryAxisOnLeft" : "0"

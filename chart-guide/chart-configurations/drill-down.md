@@ -363,7 +363,6 @@ The **apple.json** file contains the data to plot a column 2D chart showing the 
 
 ```json
 {
-
     "chart": {
         "caption": "Apple Juice - Quarterly Sales",
         "subcaption": "Last year",

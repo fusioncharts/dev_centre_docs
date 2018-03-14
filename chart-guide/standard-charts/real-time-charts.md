@@ -323,7 +323,7 @@ Click [here](http://jsfiddle.net/fusioncharts/bmfwdck3/ "@@open-newtab") to edit
 
 The data provider page now contains the following code:
 
-```
+```php
 <?php
 
     date_default_timezone_set("UTC");
@@ -341,7 +341,6 @@ The data provider page now contains the following code:
     echo  "&label=".$now."&value=".$randomValueRetail."|".$randomValueOnline;
 
 ?>
-
 ```
 
 An example of how data values will be sent as output to the chart is given below:
@@ -365,7 +364,7 @@ Even when a dataset is not visible, it will continue updating itself in the back
 
 To disable the interactive legend, set the value of `interactiveLegend` attribute to `0`. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "interactiveLegend": "0"
@@ -456,16 +455,13 @@ Now, let's create a real-time column chart configuring to display 15 data plots 
 
 Refer to the code given below:
 
-```
+```json
 {
-
     "chart": {
-
         "numDisplaySets": "15"
 
     }
 }
-
 ```
 A real-time column chart configured to display 15 data plots at a time is shown below:
 
@@ -505,7 +501,7 @@ For our scenario, we would want to use the data stamp as follows:
 
 The following code snippet is used to set the initial data stamp:
 
-```
+```json
 {
     "chart": {
         "dataStreamURL": "files/php/advanced-charting-real-time-charts-adding-data-stamp-php-1.php",
@@ -609,7 +605,7 @@ Given below is a brief description of the attribute used to configure the alert 
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         ...
@@ -631,7 +627,6 @@ Refer to the code given below:
         }]
     }
 }
-
 ```
 
 # Set Message Logger
@@ -694,7 +689,7 @@ The context menu appears as a button in the bottom-left corner of the chart (you
 
 The following code snippet enables the use of the message logger for a real-time chart:
 
-```
+```json
 {
    "chart": {
    ...
@@ -702,7 +697,6 @@ The following code snippet enables the use of the message logger for a real-time
    "showRTMenuItem": "1"
    }
 }
-
 ```
 
 When the first message is streamed to the chart from server, the message logger is displayed as shown in the image below:
@@ -909,7 +903,7 @@ Real-time charts allow to set a predefined interval in the JSON/XML data to clea
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
         "clearChartInterval": "50"
@@ -993,10 +987,8 @@ function FC_ChartUpdated(DOMId) {
         var chartRef = FusionCharts(DOMId);
 
         //Now you can do anything with the chart...
-
     }
 }
-
 ```
 
 Whenever a real-time chart (present in this page) receives new data (from the data provider page or the JavaScript `feedData()` method), it will now call the `FC_ChartUpdated()` method and pass its DOM Id to this method.
@@ -1009,22 +1001,22 @@ The `realTimeUpdateComplete` event is raised every time a real-time chart or gau
 
 A sample implementation of the `realTimeUpdateComplete` event is shown below:
 
-```
+```json
 FusionCharts("mychart").addEventListener("RealtimeUpdateComplete",
     function(event, parameter)
     {
         showData();
     }
 );
-
 ```
+
 Existing JavaScript implementations using the FC_ChartUpdated event will continue to function without any problem.
 
 The `realtimeUpdateError` event is raised when an error occurs while updating data for a real-time chart or gauge. This event passes the HTTP Status (as the number) of the error occurred.
 
 A sample implementation of the `realtimeUpdateError` event is shown below:
 
-```
+```json
 FusionCharts("mychart").addEventListener("RealtimeUpdateError",
     function(event, parameter)
     {
@@ -1039,7 +1031,7 @@ For any real-time chart present in the HTML page, you can use the `getData()` me
 
 The following code snippet shows how you can use the `getData()` method for the above chart:
 
-```
+```json
 function showData() {
 
     //Retrieving the data
@@ -1086,7 +1078,6 @@ function showData() {
 
     document.getElementById('tableView').innerHTML = str;
 }
-
 ```
 
 A real-time column chart configured to retrieve data using the `getData()` method is shown below:
@@ -1208,7 +1199,7 @@ Now let's see how you can debug errors that might crop up with real-time charts.
 
 ## Troubleshooting
 
-### If you do not see any chart at all:
+**If you do not see any chart at all:**
 
 If you see an endless loading progress bar in your browser, or if the right click menu (right click at the place where the chart should render) shows "Chart not loaded", check the following:
 
@@ -1216,7 +1207,7 @@ If you see an endless loading progress bar in your browser, or if the right clic
 
 * Have you provided the name of the chart correctly in your code?
 
-### If you get the "Error in Loading Data" message, check:
+**If you get the "Error in Loading Data" message, check:**
 
 * Whether you've provided the correct path to the JSON/XML data in your code.
 
@@ -1226,7 +1217,7 @@ If you see an endless loading progress bar in your browser, or if the right clic
 
 * Whether your JSON/XML and chart file names are in accordance with the naming conventions imposed by your operating system
 
-### If you get the "Invalid Data." message, it means that the JSON/XML data is malformed. Check it again for common errors like:
+**If you get the "Invalid Data." message, it means that the JSON/XML data is malformed. Check it again for common errors like:**
 
 * Presence of duplicate attributes in the JSON/XML.
 
@@ -1236,7 +1227,7 @@ If you see an endless loading progress bar in your browser, or if the right clic
 
 * Missing closing tag for any element.
 
-### If you get a screen showing "The chart will appear within this DIV…" or "Chart." or "FusionWidgets XT will load here", check if:
+**If you get a screen showing "The chart will appear within this DIV…" or "Chart." or "FusionWidgets XT will load here", check if:**
 
 * You have copied the required JavaScript files in the right folder.
 
@@ -1246,7 +1237,7 @@ If you see an endless loading progress bar in your browser, or if the right clic
 
 * Unique names are used for the chart's JavaScript variable, chart's ID, and the HTML div's ID
 
-### If the chart renders initially, but doesn't update in real time, make sure that:
+**If the chart renders initially, but doesn't update in real time, make sure that:**
 
 * You have specified a correct and valid path for the `dataStreamURL` attribute in the JSON/XML data.
 

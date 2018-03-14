@@ -5,6 +5,8 @@ heading: Introduction to Bullet Graph
 breadcrumb: [["Home", "/dev"], ["Bullet graph"]]
 ---
 
+> These chart types belong to **FusionWidgets XT**.
+
 A bullet graph is a variation of a bar graph and serves as a lightweight replacement for dashboard gauges and meters. You can use bullet graphs in situations where you don't have enough space available for other types of gauges or widgets.
 
 ## Basics of bullet graphs
@@ -15,9 +17,13 @@ The bullet graph features a single, primary measure (for example, current year-t
 
 You can orient bullet graphs horizontally or vertically. You can even stack multiple graphs to compare several measures at once.
 
-**<Horizontal bullet graph>**
+{% embed_all standard-charts-bullet-graph-example-1.js %}
 
-**<Vertical bullet graph>**
+Click [here](http://jsfiddle.net/fusioncharts/jGgrU/ "@@open-newtab") to edit the above chart.
+
+{% embed_all standard-charts-bullet-graph-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/Cn6bt/ "@@open-newtab") to edit the above chart.
 
 In the above charts, the filled bar represents the actual value and the line represents the target value.
 
@@ -39,7 +45,7 @@ In bullet graphs, you can:
 
 * Draw circular/semicircular range bar.
 
-* Customize color of range bar.
+* Customize the color of range bar.
 
 ## Create bullet graphs
 
@@ -47,13 +53,11 @@ As an example, create a bullet graph to show a month's revenue for an organizati
 
 Data for the bullet graph is provided in the table below:
 
-
 Range|What it means|Color|
 -|-|-
 0-50k|Poor|Light Red|
 50k-75k|Moderate|Light Yellow|
 75k-100k|Good|Light Green|
-
 
 Also, plot the following values:
 
@@ -81,10 +85,11 @@ To create a bullet graph follow the steps given below:
 
 * Define the color range (numerical value for qualitative ranges) for the chart under the `colorRange`. Each range value has its own exclusive `minValue` and `maxValue` attributes and also a color code to define qualitative ranges of performance - **poor**, **satisfactory**, and **good**.
 
-
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-bullet-graph-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/yskgsb97/ "@@open-newtab") to edit the above chart.
 
 > To render the above chart as a vertical bullet graph, change the value of the `type` attribute to `vBullet`.
 
@@ -100,26 +105,26 @@ To customize color properties of the bullet graph, use the following attributes:
 
 * Specify the color to be used to render the target line in hex code, using the `targetColor` attribute.
 
-* Set the thickness of the target line in pixels using the 'targetThickness' attribute. 
+* Set the thickness of the target line in pixels using the `targetThickness` attribute. 
 
-Refer to the code below::
+Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": {        
         "plotFillColor": "#5b0101",
         "plotFillAlpha": "90",
         "targetColor": "#5b0101",
         "targetThickness": "4"
-    }
-
+    },
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-bullet-graph-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/joyr91g7/ "@@open-newtab") to edit the above chart.
 
 ## Customize border cosmetics
 
@@ -135,22 +140,22 @@ To customize the border, use the following attributes:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        
         "showPlotBorder": "1",
         "plotBorderColor": "#333333",
         "plotBorderThickness": "1",
         "plotBorderAlpha": "100"
-
-    }
-
+    },
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-bullet-graph-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/710b7267/ "@@open-newtab") to edit the above chart.
 
 ## Customize the plot and target width/height
 
@@ -162,20 +167,20 @@ By default, the chart automatically decides the width/height (width in case of a
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        
         "plotfillpercent": "30",
         "targetFillPercent": "30"
-
-    }
-
+    },
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-bullet-graph-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/mefby40r/ "@@open-newtab") to edit the above chart.
 
 ## Configure color
 
@@ -189,28 +194,29 @@ You can configure the color range to be filled with a gradient mix instead of a 
 
 * Specify the hex code for the border color using the `colorRangeBorderColor` attribute.
 
-* Specify the thickness for the color range border, in pixels, using the `colorRangeBorderThickness` attribute.
+* Specify the thickness of the color range border, in pixels, using the `colorRangeBorderThickness` attribute.
 
 * Specify the transparency of the color range border between `0` (transparent) and `100` (opaque) using the `colorRangeBorderAlpha` attribute.
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        
         "colorRangeFillMix": "{light-10},{light-70},{dark-10}",
         "colorRangeFillRatio": "10,70,20",
         "showColorRangeBorder": "1",
         "colorRangeBorderColor": "#CCCCCC",
         "colorRangeBorderThickness": "1",
         "colorRangeBorderAlpha": "100"
-    }
-
+    },
+}
 ```
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-bullet-graph-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/uxhr8wnk/ "@@open-newtab") to edit the above chart.
 
 > To render the bullet graph in 2D, set the `colorRangeFillMix` attribute to an empty value, like this `colorRangeFillMix`.
 
@@ -220,41 +226,48 @@ Set the value of `showShadow` attribute to `1`, to enable shadow effects for the
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-       
      "showShadow": "1"
-
-  }
-
+    }
+}
 ```
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-bullet-graph-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/jgk1xjtx/ "@@open-newtab") to edit the above chart.
 
 ## Customize tick/value visibility and position
 
-In a horizontal bullet graph, tick marks are rendered below the graph by default. However, you can render them above the graph. In a vertical bullet graph, tick marks are rendered on the right, by default. However, you can show them on the left instead. You can also the tick marks and the tick values, if you wish. Use the following attributes to do so:
+In a horizontal bullet graph, tick marks are rendered below the graph by default. However, you can render them above the graph. In a vertical bullet graph, tick marks are rendered on the right, by default. However, you can show them on the left instead. You can also the tick marks and the tick values if you wish. Use the following attributes to do so:
 
-* Show tick marks for the graph by setting the `showTickMarks`attribute to `1`.
+* Show tick marks of the graph by setting the `showTickMarks`attribute to `1`.
 
-* Show tick values for the graph by setting the `showTickValues`attribute to `1`.
+* Show tick values of the graph by setting the `showTickValues`attribute to `1`.
 
 * Show tick marks and tick values above the graph by setting the value of `ticksBelowGraph`attribute to `0`.
 
 Refer to the code below:
 
-```
-**INSERT CODE**
-
+```json
+{
+    "chart": {
+        "showTickMarks": "1",
+        "showTickValues": "1",
+        "ticksBelowGraph": "1"
+    },
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-bullet-graph-example-9.js %}
 
-Note: The above chart is rendered with three check boxes: 
+Click [here](http://jsfiddle.net/fusioncharts/cot6n25d/ "@@open-newtab") to edit the above chart.
+
+> The above chart is rendered with three check boxes: 
 
 * Select the "Show Tick Mark?" option to show the tick marks, or deselect it to hide them. 
 
@@ -288,10 +301,9 @@ By default, the chart determines the number of major and minor tick marks automa
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        
         "minorTMNumber": "3",
         "majorTMcolor": "#0075c2",
         "majorTMalpha": "50",
@@ -301,33 +313,34 @@ Refer to the code below:
         "minorTMalpha": "50",
         "minorTMheight": "2",
         "minorTMThickness": "1"
-
-  }
-
+    }
+}
 ```
+
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-bullet-graph-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ma7ndkhg/ "@@open-newtab") to edit the above chart.
 
 ## Render a dot as the plot instead of a filled bar
-
 
 Set the value of the `plotAsDot` attribute to `1`, to render a dot as the plot.
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-
         "plotAsDot": "1"
-
-  }
-
+    },
+}
 ```
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-bullet-graph-example-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/2vopy2jm/ "@@open-newtab") to edit the above chart.
 
 ## Show/hide chart value
 
@@ -335,13 +348,19 @@ Set the value of the `showValue`attribute to `0`, to hide the value.
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        "showValue": "1"
+    },
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart standard-charts-bullet-graph-example-12.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/2gd2htrt/ "@@open-newtab") to edit the above chart.
 
 Note: The chart above is rendered with a "Show Value?" check box. Select this check box to show the chart value, or deselect it to hide the value.
 
@@ -367,10 +386,9 @@ Use the following attributes to enable and configure hover effects, to improve t
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-        
         "showHoverEffect": "1"
         "targetHoverColor": "#1aaf5d",
         "targetHoverAlpha": "75",
@@ -379,13 +397,15 @@ Refer to the code below:
         "plotBorderHoverColor": "#001421",
         "plotBorderHoverAlpha": "75",
         "plotBorderHoverThickness": "2"
-
-  }
-
+    },
+}
 ```
+
 The chart will look as shown below:
 
-**<chart>**
+![Bullet-Graph-GIF-1]({% site.baseurl %}/gif/standard-charts-bullet-graph-gif-1.gif)
+
+Click [here](http://jsfiddle.net/fusioncharts/tfmv5km3/ "@@open-newtab") to edit the above chart.
 
 ## Real-time Bullet Graph
 
@@ -397,7 +417,19 @@ The real-time data format for bullet chart depends on the data value being passe
 
 A bullet graph configured for real-time updates using JavaScript API looks like the following:
 
-**<chart>**
+<div style="border: 1px solid; font-family: Open Sans; width: 454px;">
+<div style="color: #595959;display: inline-block;width: 250px; text-align: center; margin: 10px 100px;">
+   <span style="font-weight: bold;font-size: small;">Daily Sales Tracker by Salesperson</span>
+   <span style="font-size: small;">Stereo Exchange Ltd, New York</span>
+</div>  <div style="padding-left: 2px; margin-top: -25px;">
+<p>{% embed_chart standard-charts-bullet-graph-example-14.js %}</p>
+<p>{% embed_chart standard-charts-bullet-graph-example-15.js %}</p>
+<p>{% embed_chart standard-charts-bullet-graph-example-16.js %}</p>
+<p>{% embed_chart standard-charts-bullet-graph-example-17.js %}</p>
+<p>{% embed_chart standard-charts-bullet-graph-example-18.js %}</p>
+</div></div></br>
+
+Click [here](http://jsfiddle.net/fusioncharts/tqndwy20/ "@@open-newtab") to edit the above chart.
 
 As you can see above, 5 real-time horizontal charts are rendered at a time to showcase a Daily Sales Tracker of salesperson for Stereo Exchange Ltd, New York.
 
@@ -409,34 +441,24 @@ Configure real-time updates from the server using the attributes given below:
 
 * Specify the number of seconds after which the chart will look for new data using the `refreshInterval` attribute. 
 
-* Specify the constantly changing data stamp that can be added to the real-time data URL, using the `dataStamp` attribute, so as to maintain a state. For more information, read the (Adding Data Stamp	FusionCharts](/dev/chart-guide/real-time-charts/adding-data-stamp.html) article.
+* Specify the constantly changing data stamp that can be added to the real-time data URL, using the `dataStamp` attribute, to maintain a state. For more information, read the (Adding Data Stamp	FusionCharts](/dev/chart-guide/real-time-charts/adding-data-stamp.html) article.
 
 The JSON code looks as below:
 
-```
-
+```json
 "dataStreamURL": "../../resources/php/gauge-and-widgets-guide-bullet-chart-real-time-bullet-chart-php-1.php",
         "refreshInterval": "10"
-
 ```
 
 The chart will look as shown below:
 
-**<chart>**
-
-The data structure you need to render the above chart is given below:
-
-**<code snippet>**
+{% embed_chart standard-charts-bullet-graph-example-19.js %}
 
 ## Stop/restart updates
 
 A horizontal bullet configured to stop receiving real-time updates looks like the following:
 
-**<chart>**
-
-The data structure you need to render the chart is given below:
-
-**<code snippet>**
+{% embed_chart standard-charts-bullet-graph-example-20.js %}
 
 ## Configure real-time events
 
@@ -444,7 +466,7 @@ FusionCharts Suite XT introduces two events to track real-time updates on bullet
 
 Following is an implementation of `realTimeUpdateComplete` event in a real-time bullet graph:
 
-**<chart>**
+{% embed_chart standard-charts-bullet-graph-example-21.js %}
 
 The `realTimeUpdateComplete` event is raised every time the real-time bullet updates itself with new data. This event is raised in any of the following cases:
 
@@ -458,9 +480,9 @@ The event arguments provided in the advanced model are:
 
 * `argumentsObject`: This object contains the values of the updated data and the previous data.
 
-Take a look at ahorizontal bullet configured to listen to the `realTimeUpdateError` event, given below:
+Take a look at a horizontal bullet configured to listen to the `realTimeUpdateError` event, given below:
 
-**<chart>**
+{% embed_chart standard-charts-bullet-graph-example-22.js %}
 
 The `realTimeUpdateError` event is raised when an error occurs while performing real-time update using `datastreamURL`. The event arguments provided in the advanced model are:
 

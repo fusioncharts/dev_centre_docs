@@ -13,7 +13,7 @@ Cross line is a vertical line/area used as a quick reference for data plots. Whe
 
 By default, the cross line is turned off. To show the crossline set the `drawCrossLine` attribute to `1`. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "drawCrossLine": "1"
@@ -31,7 +31,7 @@ Click [here](http://jsfiddle.net/fusioncharts/sh917yad/ "@@open-newtab") to edit
 
 Specify the hex code of the cross line color using the `crossLineColor` attribute. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "crosslinecolor": "cc3300"
@@ -49,7 +49,7 @@ Click [here](http://jsfiddle.net/fusioncharts/7yvjb38s/ "@@open-newtab") to edit
 
 Set the opacity of the crossline using the `crossLineAlpha` attribute. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "crossLineAlpha": "20"
@@ -67,7 +67,7 @@ Click [here](http://jsfiddle.net/fusioncharts/e94enLv1/ "@@open-newtab") to edit
 
 By default, the cross line animation is disabled. Set the `crossLineAnimation` attribute to`1` to enable the animation. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "crossLineAnimatiion": "1"
@@ -77,7 +77,7 @@ By default, the cross line animation is disabled. Set the `crossLineAnimation` a
 
 If you have enabled animation, set the animation duration for the cross line of your chart using the `crossLineAnimationDuration` attribute. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "crossLineAnimatiionDuration": "10"
@@ -99,7 +99,7 @@ By default, the tooltip takes the color of the dataplot. Set the `plotColorInToo
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "plotColorinTooltip": "0"
@@ -115,7 +115,7 @@ Click [here](http://jsfiddle.net/fusioncharts/uyymusv0/ "@@open-newtab") to edit
 
 Set `tooltipGrayOutColor` attribute to specify the color of the unfocused plot in the tooltip. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "tooltipGrayOutColor": "#3377ff"
@@ -131,7 +131,7 @@ Click [here](http://jsfiddle.net/fusioncharts/46por5dL/ "@@open-newtab") to edit
 
 Specify the hex code of the tooltip background color using the `toolTipBgColor` attribute. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "toolTipBgColor": "#323232"
@@ -155,7 +155,7 @@ To customize the tooltip border, the following attributes are used:
 
 Refer to the code below: 
 
-```
+```json
 {
     "chart": {
         "toolTipBorderColor": "#545454",
@@ -174,7 +174,7 @@ Click [here](http://jsfiddle.net/fusioncharts/zn0aqdze/ "@@open-newtab") to edit
 
 Specify the character to separate the name and the value displayed in the tooltip using the `toolTipSepChar` attribute. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "toolTipSepChar": ":"
@@ -192,7 +192,7 @@ Click [here](http://jsfiddle.net/fusioncharts/xjbv3pq8/ "@@open-newtab") to edit
 
 By default, the tooltip shadow is visible. To hide the tooltip shadow set the `showTooltipShadow` attribute to `0`. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "showTooltipShadow": "1"

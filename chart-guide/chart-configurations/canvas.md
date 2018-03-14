@@ -49,7 +49,7 @@ By default, the canvas border is not visible. To show the canvas border, set the
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "showCanvasBorder":"1"

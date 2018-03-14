@@ -103,13 +103,12 @@ You can opt to show the sum of all stacked data plots in a column above that col
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "showSum": "1"
   },
 }
-
 ```
 A stacked column 2D chart with the cumulative sum rendered above its corresponding column looks like this:
 
@@ -125,13 +124,12 @@ To create a 100% stacked column chart, set the `stack100Percent` attribute to `1
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "stack100Percent": "1"
   },
 }
-
 ```
 
 A 100% stacked column 2D chart looks like this:
@@ -146,13 +144,12 @@ By default, actual data values are rendered in tool-tips. Set the `showPercentIn
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "showPercentInTooltip": "1"
   },
 }
-
 ```
 A stacked column chart configured to show percent values in tool-tips looks like this:
 

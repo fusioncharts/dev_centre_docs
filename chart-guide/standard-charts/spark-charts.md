@@ -5,9 +5,9 @@ heading: Spark Chart
 breadcrumb: [["Home", "/dev"], ["Spark Charts"]]
 ---
 
-Spark charts are data-intensive, design-simple, word-sized graphics charts that you can embed in a context of words, numbers and images.
+> These chart types belong to **FusionWidgets XT**.
 
-## Basics of spark charts
+Spark charts are data-intensive, design-simple, word-sized graphics charts that you can embed in a context of words, numbers, and images.
 
 Spark charts are succinct, memorable, and located right where they are discussed. You need to use these charts inline, which means that they are about the same height as the surrounding text. Use spark charts extensively in space-efficient executive dashboards to show a lot of KPIs within a single view.
 
@@ -35,10 +35,13 @@ The major features of spark charts include the following:
 
 * Use a different color for scoreless games in win-loss charts.
 
-
 ## Types of Spark Charts
 
-With FusionCharts Suite XT, you can build three types of spark charts - line, column, and win/loss.
+With FusionCharts Suite XT, you can build three types of spark charts -
+
+* Line
+* Column
+* Win/loss
 
 ## Create a Spark Line Chart
 
@@ -60,30 +63,115 @@ To create a spark line chart follow the steps given below:
 
 Refer to the code given below:
 
-```
-
+```json
 {
     "chart": {
-       ...
+        ...
     },
-    "dataset": [
+    "dataset": [{
+        "data": [{
+            "value": "38.42"
+        },
         {
-            "data": [
-                {
-                    "value": "38.42"
-                },
-
+            "value": "41.43"
+        }, 
+        {
+            "value": "34.78"
+        }, 
+        {
+            "value": "40.67"
+        }, 
+        {
+            "value": "44.12"
+        }, 
+        {
+            "value": "38.45"
+        }, 
+        {
+            "value": "40.71"
+        }, 
+        {
+            "value": "49.90"
+        }, 
+        {
+            "value": "40.12"
+        }, 
+        {
+            "value": "34.91"
+        }, 
+        {
+            "value": "42.02"
+        }, 
+        {
+            "value": "35.21"
+        }, 
+        {
+            "value": "43.31"
+        }, 
+        {
+            "value": "40.21"
+        }, 
+        {
+            "value": "40.54"
+        }, 
+        {
+            "value": "40.90"
+        }, 
+        {
+            "value": "54.21"
+        }, 
+        {
+            "value": "41.90"
+        }, 
+        {
+            "value": "33.43"
+        }, 
+        {
+            "value": "46.73"
+        }, 
+        {
+            "value": "50.42"
+        }, 
+        {
+            "value": "40.74"
+        }, 
+        {
+            "value": "42.31"
+        }, 
+        {
+            "value": "50.39"
+        }, 
+        {
+            "value": "51.10"
+        }, 
+        {
+            "value": "44.84"
+        }, 
+        {
+            "value": "51.64"
+        }, 
+        {
+            "value": "47.62"
+        }, 
+        {
+            "value": "39.61"
+        }, 
+        {
+            "value": "35.13"
+        }]
+    }]
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_all standard-charts-spark-chart-example-1.js %}
 
-## Configure a spark line chart
+Click [here](http://jsfiddle.net/fusioncharts/wrm46/ "@@open-newtab") to edit the above chart.
 
-You can configure the functional and cosmetic properties of a spark line chart in many ways, using FusionCharts Suite XT.
+Configure the functional and cosmetic properties of a spark line chart in many ways, using FusionCharts Suite XT.
 
-### Define period blocks for the chart
+## Define period blocks for the chart
 
 Use the following attributes, to define period blocks in the chart:
 
@@ -95,22 +183,23 @@ Use the following attributes, to define period blocks in the chart:
 
 Refer to the code given below:
 
-```
-
+```json
 {
     "chart": {
         "periodlength": "7",
         "periodcolor": "#cccccc",
         "periodalpha": "50"
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-2.js %}
 
-### Configure open, close, high, and low points
+Click [here](http://jsfiddle.net/fusioncharts/D2C4q/ "@@open-newtab") to edit the above chart.
+
+## Configure open, close, high, and low points
 
 By default, the spark line chart highlights the open, close, high, and low points and also shows their values. However, you can configure how the highlighting is done.
 
@@ -126,24 +215,24 @@ Use the attributes given below, to define colors for the points:
 
 Refer to the code given below:
 
-```
-
+```json
 {
     "chart": {
         "openColor": "#0099ff",
         "closeColor": "#0099ff",
         "highColor": "#00cc33",
         "lowColor": "#cc0000"
-       
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-3.js %}
 
-### Show selective points
+Click [here](http://jsfiddle.net/fusioncharts/6ZVkb/ "@@open-newtab") to edit the above chart.
+
+## Show selective points
 
 Use the attributes given below, to show/hide anchors:
 
@@ -157,6 +246,7 @@ Use the attributes given below, to show/hide anchors:
 
 Refer to the code given below:
 
+```json
 {
     "chart": {
         "showOpenAnchor": "0",
@@ -164,14 +254,18 @@ Refer to the code given below:
         "showHighAnchor": "0",
         "showLowAnchor": "0"
     },
+}
+```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/7rtvb/ "@@open-newtab") to edit the above chart.
 
 Notice that the chart is rendered with four checkboxes below the chart: **Show Open Anchor**, **Show Close Anchor**, **Show High Anchor**, and **Show Low Anchor**. Select the checkboxes to show the respective anchor points, or clear them to hide the respective anchor points.
 
-### Show/hide anchor point values
+## Show/hide anchor point values
 
 Use the attributes given below, to show/hide anchor point values:
 
@@ -183,8 +277,7 @@ Use the attributes given below, to show/hide anchor point values:
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -192,16 +285,18 @@ Refer to the code below:
         "showCloseValue": "0",
         "showHighLowValue": "0"
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/LWhcS/ "@@open-newtab") to edit the above chart.
 
 Notice that the chart is rendered with four checkboxes below the chart: **Show Open Value**, **Show Close Value**, **Show High Value**, and **Show Low Value**. Select the checkboxes to show the respective anchor values, or clear them to hide the values.
 
-### Configure line and anchor cosmetics
+## Configure line and anchor cosmetics
 
 Use the attributes given below, to configure line cosmetics:
 
@@ -213,8 +308,7 @@ Use the attributes given below, to configure line cosmetics:
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -222,15 +316,16 @@ Refer to the code below:
         "lineThickness": "2",
         "lineAlpha": "75"
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-6.js %}
 
-### Configure anchor cosmetics
+Click [here](http://jsfiddle.net/fusioncharts/KEE66/ "@@open-newtab") to edit the above chart.
 
+## Configure anchor cosmetics
 
 Use the attributes given below to configure anchor cosmetics:
 
@@ -246,44 +341,43 @@ Use the attributes given below to configure anchor cosmetics:
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-    
         "drawAnchors": "1",
         "anchorSides": "3",
         "anchorRadius": "3",
         "anchorColor": "#ee8f49",
         "anchorAlpha": "40"
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-7.js %}
 
-### Show only points but no lines
+Click [here](http://jsfiddle.net/fusioncharts/745Az/ "@@open-newtab") to edit the above chart.
+
+## Show only points but no lines
 
 You can show only points to represent the data values on the chart, without any line segments connecting them. To do so, set the value of `lineAlpha` attribute to specify the transparency of the lines on the chart, `0` (transparent) and `100` (opaque).
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-   
-        "lineAlpha": "0"
-       
+        "lineAlpha": "0"      
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/8975mgsx/ "@@open-newtab") to edit the above chart.
 
 ### Add trend lines/trend zones
 
@@ -297,59 +391,32 @@ Use the following attributes to render a trend-line:
 
 Refer to the code given below:
 
+```json
 {
-
     "chart": {
-
-       ...
-
+        ...
     },
-
-    "dataset": [
-
-        {
-
-            "data": [
-
-              ...
-
-            ]
-
-        }
-
-    ],
-
-    "trendlines": [
-
-        {
-
-            "line": [
-
-                {
-
-                    "startValue": "40",
-
-                    "endValue": "42"
-
-                }
-
-            ]
-
-        }
-
-    ]
-
+    "dataset": [{
+        "data": [{
+            ...
+        }]
+    }],
+    "trendlines": [{
+        "line": [{
+            "startValue": "40",
+            "endValue": "42"
+        }]
+    }]
 }
-
-
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/KRZ9W/ "@@open-newtab") to edit the above chart.
 
 ### Customize trend-lines
-
 
 Use the attributes given below to configure trend-line cosmetics:
 
@@ -367,65 +434,34 @@ Use the attributes given below to configure trend-line cosmetics:
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
         ...
-
     },
-
-    "dataset": [
-
-        {
-
-            "data": [
-
-                ...
-
-            ]
-
-        }
-
-    ],
-
-    "trendlines": [
-
-        {
-
-            "line": [
-
-                {
-
-                    "color": "#ff0000",
-
-                    "thickness": "1",
-
-                    "dashed": "1",
-
-                    "dashedLen": "3",
-
-                    "dashgap": "3",
-
-                    "alpha": "100"
-
-                }
-
-            ]
-
-        }
-
-    ]
-
+    "dataset": [{
+        "data": [{
+            ...
+        }]
+    }],
+    "trendlines": [{
+        "line": [{
+            "color": "#ff0000",
+            "thickness": "1",
+            "dashed": "1",
+            "dashedLen": "3",
+            "dashgap": "3",
+            "alpha": "100"
+        }]
+    }]
 }
-
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/aFE6Q/ "@@open-newtab") to edit the above chart.
 
 ### Add trend-zones
 
@@ -441,61 +477,33 @@ Use the attributes given below to render a trend-zone:
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
-       ...
-
+        ...
     },
+    "dataset": [{
+        "data": [{
+            ...
+        }]
+    }],
+    "trendlines": [{
+        "line": [{
+            "startValue": "30",
+            "endValue": "45",
+            "isTrendZone": "1",
+            "color": "#999999"
 
-    "dataset": [
-
-        {
-
-            "data": [
-
-              ...
-
-            ]
-
-        }
-
-    ],
-
-    "trendlines": [
-
-        {
-
-            "line": [
-
-                {
-
-                    "startValue": "30",
-
-                    "endValue": "45",
-
-                    "isTrendZone": "1",
-
-                    "color": "#999999"
-
-                }
-
-            ]
-
-        }
-
-    ]
-
+        }]
+    }]
 }
-
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/mLGD3/ "@@open-newtab") to edit the above chart.
 
 ### Configure hover effects
 
@@ -511,22 +519,22 @@ You can use hover effects to improve the visual representation of your chart. Us
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-      
         "openHoverColor": "#9bd6fd",
         "closeHoverColor": "#9bd6fd",
         "highHoverColor": "#90ff90",
         "lowHoverColor": "#fd6c6c"
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+![Spark-Charts-GIF-1]({% site.baseurl %}/gif/standard-charts-spark-charts-gif-1.gif)
+
+Click [here](http://jsfiddle.net/fusioncharts/fwaL5/ "@@open-newtab") to edit the above chart.
 
 ## Create a spark column chart
 
@@ -534,13 +542,13 @@ To create a spark column chart change the value of the `type` attribute from `sp
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_all standard-charts-spark-chart-example-13.js %}
 
-## Configure spark column chart
+Click [here](http://jsfiddle.net/fusioncharts/nbTf9/ "@@open-newtab") to edit the above chart.
 
-Using FusionCharts Suite XT, you can customize several cosmetic and functional properties of the spark column chart.
+Customize several cosmetic and functional properties of the spark column chart, using FusionCharts Suite XT.
 
-### Configure period blocks for the chart
+## Configure period blocks for the chart
 
 Show period blocks on the chart using colored bands, to easily interpret periods on the chart. Use the following attributes to do so:
 
@@ -552,23 +560,23 @@ Show period blocks on the chart using colored bands, to easily interpret periods
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-        
         "periodlength": "3",
         "periodcolor": "#cccccc",
         "periodalpha": "50"
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-14.js %}
 
-### Configure the high and low columns
+Click [here](http://jsfiddle.net/fusioncharts/3MMH2/ "@@open-newtab") to edit the above chart.
+
+## Configure the high and low columns
 
 By default, the spark column chart highlights the highest and lowest data plots using a default color, and also shows their values. You can, however, configure the colors for the highest and lowest columns based on your requirement. Use the following attributes to do so:
 
@@ -578,23 +586,22 @@ By default, the spark column chart highlights the highest and lowest data plots 
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-       ...
         "highColor": "#6baa01",
         "lowColor": "#e44a00"
-
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-15.js %}
 
-### Add Trend-lines
+Click [here](http://jsfiddle.net/fusioncharts/TQ6pv/ "@@open-newtab") to edit the above chart.
+
+## Add Trend-lines
 
 Use the following attributes to add a trend-line to a spark column chart:
 
@@ -604,59 +611,32 @@ Use the following attributes to add a trend-line to a spark column chart:
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
-       ...
-
+        ...
     },
-
-    "dataset": [
-
-        {
-
-            "data": [
-
-               ...
-
-            ]
-
-        }
-
-    ],
-
-    "trendlines": [
-
-        {
-
-            "line": [
-
-                {
-
-                    "startvalue": "550000",
-
-                    "endValue": "700000"
-
-                }
-
-            ]
-
-        }
-
-    ]
-
+    "dataset": [{
+        "data": [{
+            ...
+        }]
+    }],
+    "trendlines": [{
+        "line": [{
+            "startvalue": "550000",
+            "endValue": "700000"
+        }]
+    }]
 }
-
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-16.js %}
 
-### Customize trend-lines
+Click [here](http://jsfiddle.net/fusioncharts/ZLhAG/ "@@open-newtab") to edit the above chart.
+
+## Customize trend-lines
 
 Use the attributes given below to configure trend-line cosmetics:
 
@@ -674,69 +654,36 @@ Use the attributes given below to configure trend-line cosmetics:
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
         ...
-
     },
-
-    "dataset": [
-
-        {
-
-            "data": [
-
-                ...
-
-            ]
-
-        }
-
-    ],
-
-    "trendlines": [
-
-        {
-
-            "line": [
-
-                {
-
-                    ...
-
-                    "color": "#ff0000",
-
-                    "thickness": "1",
-
-                    "dashed": "1",
-
-                    "dashedLen": "3",
-
-                    "dashgap": "3",
-
-                    "alpha": "100"
-
-                }
-
-            ]
-
-        }
-
-    ]
-
+    "dataset": [{
+        "data": [{
+            ...
+        }]
+    }],
+    "trendlines": [{
+        "line": [{
+            color": "#ff0000",
+            "thickness": "1",
+            "dashed": "1",
+            "dashedLen": "3",
+            "dashgap": "3",
+            "alpha": "100"
+        }]
+    }]
 }
-
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-17.js %}
 
-### Add trend-zones
+Click [here](http://jsfiddle.net/fusioncharts/8WKu4/ "@@open-newtab") to edit the above chart.
+
+## Add trend-zones
 
 Use the attributes given below to render a trend-zone:
 
@@ -750,63 +697,34 @@ Use the attributes given below to render a trend-zone:
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
         ...
-
     },
-
-    "dataset": [
-
-        {
-
-            "data": [
-
-               ...
-
-            ]
-
-        }
-
-    ],
-
-    "trendlines": [
-
-        {
-
-            "line": [
-
-                {
-
-                    "startValue": "450000",
-
-                    "endValue": "650000",
-
-                    "isTrendZone": "1",
-
-                    "color": "#ff0000"
-
-                }
-
-            ]
-
-        }
-
-    ]
-
+    "dataset": [{
+        "data": [{
+            ...
+        }]
+    }],
+    "trendlines": [{
+        "line": [{
+            "startValue": "450000",
+            "endValue": "650000",
+            "isTrendZone": "1",
+            "color": "#ff0000"
+        }]
+    }]
 }
-
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-18.js %}
 
-### Configure hover effects for the chart
+Click [here](http://jsfiddle.net/fusioncharts/TZ3tB/ "@@open-newtab") to edit the above chart.
+
+## Configure hover effects for the chart
 
 Use the attributes given below to configure the hover effect:
 
@@ -816,20 +734,21 @@ Use the attributes given below to configure the hover effect:
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
       
         "highHoverColor": "#b0fdb0",
         "lowHoverColor": "#fcb0b0"
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+![Spark-Charts-GIF-2]({% site.baseurl %}/gif/standard-charts-spark-charts-gif-2.gif)
+
+Click [here](http://jsfiddle.net/fusioncharts/UhMzX/ "@@open-newtab") to edit the above chart.
 
 ## Create spark win/loss charts
 
@@ -839,167 +758,61 @@ Show the value of a column on the spark win/loss chart using the `value` attribu
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
-      ...
-
+        ...
     },
-
-    "dataset": [
-
+    "dataset": [{
+        "data": [{
+            "value": "W"
+        },
         {
-
-            "data": [
-
-                {
-
-                    "value": "L"
-
-                },
-
-                {
-
-                    "value": "L"
-
-                },
-
-                {
-
-                    "value": "W"
-
-                },
-
-                {
-
-                    "value": "D"
-
-                },
-
-                {
-
-                    "value": "W"
-
-                },
-
-                {
-
-                    "value": "W"
-
-                },
-
-                {
-
-                    "value": "D"
-
-                },
-
-                {
-
-                    "value": "W"
-
-                },
-
-                {
-
-                    "value": "D"
-
-                },
-
-                {
-
-                    "value": "W"
-
-                },
-
-                {
-
-                    "value": "L"
-
-                },
-
-                {
-
-                    "value": "D"
-
-                },
-
-                {
-
-                    "value": "W"
-
-                },
-
-                {
-
-                    "value": "D"
-
-                },
-
-                {
-
-                    "value": "D"
-
-                },
-
-                {
-
-                    "value": "D"
-
-                },
-
-                {
-
-                    "value": "D"
-
-                },
-
-                {
-
-                    "value": "D"
-
-                },
-
-                {
-
-                    "value": "D"
-
-                },
-
-                {
-
-                    "value": "D"
-
-                },
-
-                {
-
-                    "value": "W"
-
-                }
-
-            ]
-
-        }
-
-    ]
-
+            "value": "W"
+        },
+        {
+            "value": "W"
+        },
+        {
+            "value": "L"
+        },
+        {
+            "value": "W"
+        },
+        {
+            "value": "W"
+        },
+        {
+            "value": "L"
+        },
+        {
+            "value": "L"
+        },
+        {
+            "value": "W"
+        },
+        {
+            "value": "L"
+        },
+        {
+            "value": "W"
+        },
+        {
+            "value": "W"
+        }]
+    }]
 }
-
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_all standard-charts-spark-chart-example-20.js %}
 
-## Configure spark win/loss charts
+Click [here](http://jsfiddle.net/fusioncharts/nn5hx/ "@@open-newtab") to edit the above chart.
 
-Using FusionCharts Suite XT, you can configure the functional and cosmetic properties of spark win-loss charts.
+Configure the functional and cosmetic properties of spark win-loss charts, using FusionCharts Suite XT.
 
-#### Configure Period Blocks
+## Configure Period Blocks
 
 Use the following attributes to show period blocks on the chart using colored bands, and easily interpret periods:
 
@@ -1011,25 +824,25 @@ Use the following attributes to show period blocks on the chart using colored ba
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-       
+    "chart": {      
         "periodlength": "3",
         "periodcolor": "#cccccc",
         "periodalpha": "90"
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-21.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/http://jsfiddle.net/fusioncharts/LQuEr/2// "@@open-newtab") to edit the above chart.
 
 > When configuring period blocks, ensure that the period length is always less than the number of data points that you have specified, as period length is directly numbered on data points.
 
-### Configure win, loss, and draw colors
+## Configure win, loss, and draw colors
 
 Use the following attributes to configure the win, loss, and draw colors:
 
@@ -1041,63 +854,63 @@ Use the following attributes to configure the win, loss, and draw colors:
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-        
         "winColor": "#00cc33",
         "lossColor": "#cc0000",
         "drawColor": "#0075c2"
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-22.js %}
 
-### Configure colors to show scoreless matches
+Click [here](http://jsfiddle.net/fusioncharts/RAVML/ "@@open-newtab") to edit the above chart.
+
+## Configure colors to show scoreless matches
 
 Specify a fill color for the bars indicating a scoreless match, by setting the value of the `scoreLessColor` attribute to the hex code of the color.
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-        
         "scoreLessColor": "#aa0000"
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-12.js %}
 
-### Show/hide chart values
+Click [here](http://jsfiddle.net/fusioncharts/q6m35/ "@@open-newtab") to edit the above chart.
+
+## Show/hide chart values
 
 Set the value of the `showValue` attribute to `1`, to show data chart values within the chart.
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": {       
         "showValue": "1"
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+{% embed_chart standard-charts-spark-chart-example-19.js %}
 
-### Configure hover effects
+Click [here](http://jsfiddle.net/fusioncharts/U3Qkj/ "@@open-newtab") to edit the above chart.
+
+## Configure hover effects
 
 Use the attributes mentioned below, to configure the hover effects for a spark win-loss chart:
 
@@ -1111,20 +924,19 @@ Use the attributes mentioned below, to configure the hover effects for a spark w
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-        ...
         "winHoverColor": "#49b6fe",
         "lossHoverColor": "#55e395",
         "drawHoverColor": "#ba9803",
         "scoreLessHoverColor": "#cccccc"
     },
-
+}
 ```
 
 The chart will look like the following:
 
-**<<Insert Chart>>**
+![Spark-Charts-GIF-3]({% site.baseurl %}/gif/standard-charts-spark-charts-gif-3.gif)
 
+Click [here](http://jsfiddle.net/fusioncharts/8myGp/ "@@open-newtab") to edit the above chart.

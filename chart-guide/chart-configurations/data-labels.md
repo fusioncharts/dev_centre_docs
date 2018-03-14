@@ -23,7 +23,7 @@ Set the `useEllipsesWhenOverflow` to `0` to stop displaying the data labels as e
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "labelDisplay": "Auto",
@@ -42,7 +42,7 @@ Click [here](http://jsfiddle.net/fusioncharts/h5d6xwyo/ "@@open-newtab") to edit
 
 In this mode, you can wrap long x-axis labels into multiple lines. If enough space is not available in a chart, this mode will automatically trim labels, add ellipses at the end, and show tooltips for such labels. To wrap the data labels, set the `labelDisplay` attribute as `wrap`. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "labelDisplay": "wrap"
@@ -62,7 +62,7 @@ Click [here](http://jsfiddle.net/fusioncharts/uofvvvv3/ "@@open-newtab") to edit
 
 Set the `labelDisplay` attribute as `rotate` to view the data labels in rotate mode. Refer to the code below:
 
-```
+```json
 {
     "chart": {
        "labelDisplay": "rotate"
@@ -82,7 +82,7 @@ While viewing the labels in the rotate mode you can also slant the labels for be
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "labelDisplay": "rotate",
@@ -103,7 +103,7 @@ Click [here](http://jsfiddle.net/fusioncharts/mxceLe0k/ "@@open-newtab") to edit
 
 In this mode, data labels are distributed on multiple levels (default is 2) to increase the inter label space available on each level. Set the `labelDisplay` attribute as 'stagger`. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "labelDisplay": "stagger"
@@ -119,7 +119,7 @@ Click [here](http://jsfiddle.net/fusioncharts/z7L18vvh/ "@@open-newtab") to edit
 
 To change the distribution levels (default is 2) specify the level using the `staggerLines` attribute. Refer to the code below:
 
- ```
+ ```json
 {
     "chart": {
         "labelDisplay": "stagger",
@@ -138,7 +138,7 @@ Click [here](http://jsfiddle.net/fusioncharts/pdbq2gmr/ "@@open-newtab") to edit
 
 If your data plot consists of values representing continuous quantities such as date, time, temperature, etc. you can use the `labelstep` attribute to display every n-th label, instead of all labels on the x-axis. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "labelStep": "3"
@@ -156,7 +156,7 @@ Click [here](http://jsfiddle.net/fusioncharts/Lsrdd84a/ "@@open-newtab") to edit
 
 To hide the data labels set the `showLabels` attribute to `0` within the `chart` object. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "showLabels": "0"               
@@ -174,7 +174,7 @@ Click [here](http://jsfiddle.net/fusioncharts/fe1awqLn/ "@@open-newtab") to edit
 
 By default, all the data labels are displayed. You can opt to hide specific data values using the `showLabel` attribute within `data` under `chart` object. 
 
-```
+```json
 {
     "chart": {
         "caption": "Quarterly Revenue",
@@ -216,7 +216,7 @@ Click [here](http://jsfiddle.net/fusioncharts/3qoyzms4/ "@@open-newtab") to edit
 
 Specify the space between the canvas border and first (& last data plots) using the `canvasPadding` attribute. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "caption": "Quarterly Revenue",
@@ -274,7 +274,7 @@ To customize the font properties of the data labels, the following attributes ar
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "labelFont": "Arial",
@@ -315,7 +315,7 @@ To customize the border of the data labels, the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {    
         "labelBorderPadding": "5",
@@ -346,7 +346,7 @@ To change the background of the data labels, the following attributes are used:
 
 Refer to the code below:
 
-```
+```json
 {
     {
     "chart": {
@@ -370,7 +370,7 @@ You can limit the maximum height of the data labels using the `maxLabelHeight` a
 
 Refer to the code below:
 
-```
+```json
 {
     {
     "chart": {
@@ -389,7 +389,7 @@ Click [here](http://jsfiddle.net/fusioncharts/0zufrdbb/ "@@open-newtab") to edit
 
 You can add links to the data labels. Set the link you want to add to the data label using the `labelLink` attribute. Refer to the code below:
 
-```
+```json
 {
     {
     "chart": {

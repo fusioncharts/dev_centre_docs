@@ -63,13 +63,12 @@ By default, the auto-generated percentage values for the line chart are not rend
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "showLineValues": "1"
   },
 }
-
 ```
 
 A pareto chart configured to render the percentage values for the line chart looks like this:
@@ -96,24 +95,17 @@ In a pareto chart, you can customize the cosmetic of the line rendered. Given be
 
 Refer to the code given below:
 
-```
+```json
 {
     "chart": {
-
         "lineColor": "#8e0000",
-
         "lineThickness": "2",
-
         "lineAlpha": "80",
-
         "lineDashed": "1",
-
         "lineDashLen": "5",
-
         "lineDashGap": "3"
     },
 }
-
 ```
 A pareto chart with the line segments customized looks like this:
 
@@ -131,16 +123,13 @@ Depending on the use case, hide the secondary y-axis of the pareto chart by foll
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
-
     "showSecondaryLimits": "0",
-
     "showDivLineSecondaryValue": "0"
   },
 }
-
 ```
 A pareto chart with hidden secondary y-axis looks like:
 

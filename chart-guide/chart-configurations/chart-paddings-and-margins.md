@@ -21,7 +21,7 @@ Chart margin is the space between the chart border and the canvas border. You ca
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "chartLeftMargin": "40",
@@ -42,7 +42,7 @@ Click [here](http://jsfiddle.net/fusioncharts/nzz8pwv4/ "@@open-newtab") to edit
 
 Set the amount of empty space between the sub-caption and the top of the chart canvas using the `captionPadding` attribute. Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "captionPadding": "40"
@@ -66,7 +66,7 @@ Set the axis name padding and axis value padding, to control the amount of space
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "xAxisNamePadding": "10",
@@ -87,7 +87,7 @@ Specify the amount of horizontal space between the left edge of the canvas and t
 
 Refer  to the code below:
 
-```
+```json
 {
     "chart": {
         "yAxisValuePadding": "10"
@@ -106,7 +106,7 @@ Specify the vertical space between the canvas bottom edge and the data labels us
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "labelPadding": "5"
@@ -126,7 +126,7 @@ Specify the space between the columns/anchors and the value text boxes using the
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "valuePadding": "5"
@@ -146,7 +146,7 @@ For a **line/area** chart, canvas padding is the space between the canvas border
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         "canvasPadding": "30"

@@ -92,7 +92,6 @@ Refer to the code below:
         }]
     }]
 }
-
 ```
 
 A multi-axis line chart rendered with three axes looks like this:

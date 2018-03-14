@@ -82,14 +82,14 @@ However, FusionCharts includes the `animateClockwise` attribute that lets you an
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
       "animateClockwise": "1"
   }
 }
-
 ```
+
 A pie chart configured to animate in the clockwise direction is shown below. Click the **Refresh** button in the **bottom-right corner** of the chart to see the animation direction.
 
 ![Pie chart]({% site.baseurl %}/gif/standard-charts-pie-gif-1.gif)
@@ -110,15 +110,15 @@ To show percent values and actual values in your chart, follow the steps given b
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "showPercentValues": "1",
     "showPercentInTooltip": "0"
   },
 }
-
 ```
+
 A pie2D chart configured to show percent values on the chart looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-5.js %}
@@ -137,15 +137,15 @@ To customize the center label of your chart, follow the steps given below:
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "defaultCenterLabel": "Total revenue: $60K",
     "centerLabel": "Revenue from $label: $value"
   },
 }
-
 ```
+
 A doughnut chart with the center label customized looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-6.js %}
@@ -160,14 +160,14 @@ By default, single slicing is enabled. To stop the single slicing set the `enabl
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "enableMultiSlicing": "0"
   },
 }
-
 ```
+
 A doughnut chart with single-slicing enabled looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-7.js %}
@@ -182,14 +182,14 @@ To disable the smart labels, set `enableSmartLabels` attribute to `0`.
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "enableSmartLabels": "0"
   },
 }
-
 ```
+
 A pie chart with smart labels disabled looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-8.js %}
@@ -212,7 +212,7 @@ Apart from enabling and disabling the smart lines, you can also set the cosmetic
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "smartLineColor": "#ff0000",
@@ -221,8 +221,8 @@ Refer to the code given below:
     "isSmartLineSlanted": "0"
   },
 }
-
 ```
+
 A pie chart with the cosmetic properties of smart lines customized looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-9.js %}
@@ -243,7 +243,7 @@ To configure the label distance and clearance, follow the steps given below:
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "enableSmartLabels": "0",
@@ -251,7 +251,6 @@ Refer to the code given below:
     "smartLabelClearance": "5"
   },
 }
-
 ```
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-10.js %}
@@ -264,30 +263,30 @@ When there are too many labels in the pie/doughnut chart (which is difficult to 
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
 
     "skipOverlapLabels": "1"
   },
 }
-
 ```
+
 ## Customize Pie Radius
 
 By default, for pie/doughnut charts, the chart automatically calculates the best fit pie radius based on the data provided. However, you can choose to explicitly set the outer radius of the pie chart. Specify the outer radius of the pie/doughnut chart using `pieRadius` attribute.
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
 
     "pieRadius": "50"
   },
 }
-
 ```
+
 A pie chart with the outer radius customized looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-12.js %}
@@ -300,14 +299,14 @@ By default, pie/doughnut charts start plotting from the 0° angle. The chart all
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "startingAngle": "45"
   },
 }
-
 ```
+
 A pie chart with the starting angle set to 45° looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-13.js %}
@@ -320,7 +319,7 @@ When a pie/doughnut chart first renders, by default, all slices are sliced-in. H
 
 Refer to the code given below:
 
-```
+```json
 {
   "data": {
     "label": "Household",
@@ -328,8 +327,8 @@ Refer to the code given below:
     "isSliced": "1"
   },
 }
-
 ```
+
 A pie chart rendered with one slice sliced-out looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-14.js %}
@@ -342,13 +341,12 @@ When a pie/doughnut slice is sliced-out, you can configure the distance between 
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "slicingDistance": "10"
   },
 }
-
 ```
 
 A chart with the slicing distance configured looks like this:
@@ -365,15 +363,15 @@ Set the 3D radius of the chart using `radius3D` attribute. Using this attribute 
 
 Refer to the code given below:
 
-```
+```json
 {
   "chart": {
     "use3DLighting": "1",
     "radius3D": "5"
   },
 }
-
 ```
+
 A pie chart configured for the bevel effect looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-16.js %}
