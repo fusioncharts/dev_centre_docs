@@ -1199,7 +1199,7 @@ Now let's see how you can debug errors that might crop up with real-time charts.
 
 ## Troubleshooting
 
-### If you do not see any chart at all:
+**If you do not see any chart at all:**
 
 If you see an endless loading progress bar in your browser, or if the right click menu (right click at the place where the chart should render) shows "Chart not loaded", check the following:
 
@@ -1207,7 +1207,7 @@ If you see an endless loading progress bar in your browser, or if the right clic
 
 * Have you provided the name of the chart correctly in your code?
 
-### If you get the "Error in Loading Data" message, check:
+**If you get the "Error in Loading Data" message, check:**
 
 * Whether you've provided the correct path to the JSON/XML data in your code.
 
@@ -1217,7 +1217,7 @@ If you see an endless loading progress bar in your browser, or if the right clic
 
 * Whether your JSON/XML and chart file names are in accordance with the naming conventions imposed by your operating system
 
-### If you get the "Invalid Data." message, it means that the JSON/XML data is malformed. Check it again for common errors like:
+**If you get the "Invalid Data." message, it means that the JSON/XML data is malformed. Check it again for common errors like:**
 
 * Presence of duplicate attributes in the JSON/XML.
 
@@ -1227,7 +1227,7 @@ If you see an endless loading progress bar in your browser, or if the right clic
 
 * Missing closing tag for any element.
 
-### If you get a screen showing "The chart will appear within this DIV…" or "Chart." or "FusionWidgets XT will load here", check if:
+**If you get a screen showing "The chart will appear within this DIV…" or "Chart." or "FusionWidgets XT will load here", check if:**
 
 * You have copied the required JavaScript files in the right folder.
 
@@ -1237,7 +1237,7 @@ If you see an endless loading progress bar in your browser, or if the right clic
 
 * Unique names are used for the chart's JavaScript variable, chart's ID, and the HTML div's ID
 
-### If the chart renders initially, but doesn't update in real time, make sure that:
+**If the chart renders initially, but doesn't update in real time, make sure that:**
 
 * You have specified a correct and valid path for the `dataStreamURL` attribute in the JSON/XML data.
 
