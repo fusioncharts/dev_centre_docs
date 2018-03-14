@@ -1,5 +1,4 @@
 {
-    id: "mychart",
     type: 'msspline',
     renderAt: 'chart-container',
     width: '600',

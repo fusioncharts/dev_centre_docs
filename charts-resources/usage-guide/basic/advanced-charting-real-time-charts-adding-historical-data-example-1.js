@@ -1,5 +1,4 @@
 {
-    id: "mychart",
     type: 'realtimecolumn',
     renderAt: 'chart-container',
     width: '600',
@@ -78,7 +77,7 @@
                 updateData = function() {
 
                     //Get reference to the chart using its ID
-                    var chartRef = FusionCharts("mychart");
+                    var chartRef = evt.sender;
                     //We need to create a querystring format incremental update, containing
                     //label in hh:mm:ss format
                     //and a value (random).
