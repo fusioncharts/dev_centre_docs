@@ -91,10 +91,13 @@
                 chartRef.feedData(strData);
             }
             //Interval
-            var myVar = setInterval(function() {
+            chartRef.chartInterval = setInterval(function() {
                 updateData();
 
             }, 10000);
+        },
+        "disposed": function(evt, args) {
+            clearInterval(evt.sender.chartInterval);
         }
     }
 }

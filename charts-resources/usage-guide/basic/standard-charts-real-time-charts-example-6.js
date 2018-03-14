@@ -108,9 +108,12 @@
                 //Feed it to chart.
                 chartRef.feedData(strData);
             }
-            var myVar = setInterval(function() {
+            chartRef.chartInterval = setInterval(function() {
                 updateData();
             }, 5000);
+        },
+        "disposed": function(evt, args) {
+            clearInterval(evt.sender.chartInterval);
         }
     }
 }
