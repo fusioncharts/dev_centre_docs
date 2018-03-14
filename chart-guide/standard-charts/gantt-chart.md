@@ -5,6 +5,8 @@ heading: Gantt Chart
 breadcrumb: [["Home", "/dev"], ["Gantt Chart"]]
 ---
 
+> These chart types belong to **FusionWidgets XT**.
+
 The Gantt chart is a specialized chart that you can use, to display various timelines, such as project timelines, development timelines, etc.
 
 ## Basics of the Gantt chart

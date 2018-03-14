@@ -5,6 +5,8 @@ heading: Treemap
 breadcrumb: [["Home", "/dev"], ["Treemap"]]
 ---
 
+> This chart type belongs to **PowerCharts XT**.
+
 Treemapping is a visual representation of an information tree created using the tree data structure. It is displayed as 2D nested rectangles, representing the nodes and leaves of the tree data and their relations with each other.
 
 A simple treemap will look like as shown below:

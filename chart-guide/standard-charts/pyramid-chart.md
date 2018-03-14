@@ -5,6 +5,8 @@ heading: Introduction to Pyramid Chart
 breadcrumb: [["Home", "/dev"], ["Pyramid Chart"]]
 ---
 
+> These chart types belong to **FusionWidgets XT**.
+
 Use Pyramid charts to compare data, such as the sales data of a product for a year. A pyramid chart consists of various segments, each representing a data point. The height of the pyramid segment, with respect to the entire pyramid, represents the value of a specific data point.
 
 As you know, each segment in a pyramid chart represents a dataset with the height of the segment representing the value for that dataset. To distinguish segments from one another, you can configure them individually for their background, border, etc. Adjacent to the pyramid segments, the label and value of that pyramid can be displayed.

@@ -5,6 +5,8 @@ heading: Introduction to Bullet Graph
 breadcrumb: [["Home", "/dev"], ["Bullet graph"]]
 ---
 
+> These chart types belong to **FusionWidgets XT**.
+
 A bullet graph is a variation of a bar graph and serves as a lightweight replacement for dashboard gauges and meters. You can use bullet graphs in situations where you don't have enough space available for other types of gauges or widgets.
 
 ## Basics of bullet graphs
