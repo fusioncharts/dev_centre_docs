@@ -5,6 +5,8 @@ heading: Heat Map Chart
 breadcrumb: [["Home", "/dev"], ["Heat Map Chart"]]
 ---
 
+> This chart type belongs to **PowerCharts XT**.
+
 A heat map chart is a specialized chart that uses colors to represent data values in a table. You will find it most useful when you need to plot large and complex data.
 
 ## Basics of a heat map chart

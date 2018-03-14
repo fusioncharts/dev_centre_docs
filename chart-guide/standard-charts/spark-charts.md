@@ -5,6 +5,8 @@ heading: Spark Chart
 breadcrumb: [["Home", "/dev"], ["Spark Charts"]]
 ---
 
+> These chart types belong to **FusionWidgets XT**.
+
 Spark charts are data-intensive, design-simple, word-sized graphics charts that you can embed in a context of words, numbers, and images.
 
 Spark charts are succinct, memorable, and located right where they are discussed. You need to use these charts inline, which means that they are about the same height as the surrounding text. Use spark charts extensively in space-efficient executive dashboards to show a lot of KPIs within a single view.

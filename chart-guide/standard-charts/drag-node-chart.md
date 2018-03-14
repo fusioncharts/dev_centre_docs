@@ -5,6 +5,8 @@ heading: Drag Node Chart
 breadcrumb: [["Home", "/dev"], ["Drag Node Chart"]]
 ---
 
+> This chart type belongs to **PowerCharts XT**.
+
 The drag node chart is a specialized type of chart that shows each data set as a draggable node. Perfect for network diagrams, hierarchy structures, etc., this chart provides a highly intuitive interface for you to visually adjust related entities, link them, and even add new ones. 
 
 You can also take visual inputs from other users using this chart and then submit the final positions of the nodes to your scripts for further processing.

@@ -5,6 +5,8 @@ heading: Introduction to Bullet Graph
 breadcrumb: [["Home", "/dev"], ["Bullet graph"]]
 ---
 
+> These chart types belong to **FusionWidgets XT**.
+
 A bullet graph is a variation of a bar graph and serves as a lightweight replacement for dashboard gauges and meters. You can use bullet graphs in situations where you don't have enough space available for other types of gauges or widgets.
 
 ## Basics of bullet graphs
@@ -103,7 +105,7 @@ To customize color properties of the bullet graph, use the following attributes:
 
 * Specify the color to be used to render the target line in hex code, using the `targetColor` attribute.
 
-* Set the thickness of the target line in pixels using the 'targetThickness' attribute. 
+* Set the thickness of the target line in pixels using the `targetThickness` attribute. 
 
 Refer to the code below:
 

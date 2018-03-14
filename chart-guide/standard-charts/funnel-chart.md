@@ -5,6 +5,8 @@ heading: Funnel Chart
 breadcrumb: [["Home", "/dev"], ["Funnel Chart"]]
 ---
 
+> These chart types belong to **FusionWidgets XT**.
+
 Use a funnel chart to plot streamlined data. For instance, you can plot sales data into a funnel chart to analyze the sales pipeline. Structurally, a funnel chart consists of multiple segments, and each segment represents a data point. You can render a funnel chart in either 2D or 3D.
 
 In a funnel chart, the data is streamlined, i.e., each slice (section) in the funnel represents a process flow that has filtered out data. For example, if you use a funnel chart to display the employment process, the first slice will represent the "Number of candidates who applied". After that, each process flow (like "Interview Phase 1", "IQ Test", "Project", etc.) will be represented by subsequent funnel slices, each slice filtering the data provided to the previous slice. The last slice bears the value that is the final result of the entire procedure (for example, "Candidates recruited" in this scenario).
