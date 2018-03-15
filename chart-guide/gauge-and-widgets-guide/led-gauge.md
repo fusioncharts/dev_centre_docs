@@ -14,17 +14,21 @@ The LED gauge (horizontal/vertical) is defined by its minimum and maximum values
 
 A horizontal LED gauge rendered to indicate fuel levels looks like the following:
 
-**<chart>**
+{% embed_all gauges-and-widgets-led-example-1.js %}
+
+[here](http://jsfiddle.net/fusioncharts/3w4pm/ "@@open-newtab")
 
 A vertical LED gauge rendered to indicate fuel levels looks like the following:
 
-**<chart>**
+{% embed_all gauges-and-widgets-led-example-2.js %}
+
+[here](http://jsfiddle.net/fusioncharts/5Bd2f/ "@@open-newtab")
 
 ## Elements of LED gauges
 
 In the image below, you can see the basic elements of an LED gauge.
 
-**IMAGE**
+![Led-gauge]({% site.baseurl %}/images/led-gauge-introduction-1.jpg)
 
 ## Color range
 
@@ -70,85 +74,21 @@ To create an LED gauge use the attributes given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-* Use the lowerLimit attribute to specify the lower limit, or the minimum value, of the gauge scale.
+* Use the `lowerLimit` attribute to specify the lower limit, or the minimum value, of the gauge scale.
 
-* Use the upperLimit attribute to specify the upper limit, or the maximum value, of the gauge scale.
+* Use the `upperLimit` attribute to specify the upper limit, or the maximum value, of the gauge scale.
 
-* Use the lowerLimitDisplay attribute to specify the label to be displayed with the lower limit value on the gauge scale.
+* Use the `lowerLimitDisplay` attribute to specify the label to be displayed with the lower limit value on the gauge scale.
 
-* Use the upperLimitDisplay attribute to specify the label to be displayed with the upper limit value on the gauge scale.
+* Use the `upperLimitDisplay` attribute to specify the label to be displayed with the upper limit value on the gauge scale.
 
-* Use the numberSuffix attribute to specify the character which will be appended at the end of a number.
+* Use the `numberSuffix` attribute to specify the character which will be appended at the end of a number.
 
-Refer to the code below:
+The chart with `type` attribute set to `vled` will look as shown below:
 
- ```
+{% embed_all gauges-and-widgets-led-example-3.js %}
 
-{
-    "chart": {
-        "caption": "Fuel Level Indicator",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "lowerLimitDisplay": "Empty",
-        "upperLimitDisplay": "Full",
-        "numberSuffix": "%",
-        "valueFontSize": "12",
-        "showhovereffect": "1",
-        "origW": "400",
-        "origH": "150",
-        "ledSize": "3",
-        "ledGap": "2",
-        "manageResize": "1",
-        "theme": "fint"
-    },
-    "annotations": {
-        "showbelow": "1",
-        "groups": [
-            {
-                "id": "indicator",
-                "items": [
-                    {
-                        "id": "bgRectAngle",
-                        "type": "rectangle",
-                        "alpha": "90",
-                        "radius": "1",
-                        "fillColor": "#6baa01",
-                        "x": "$gaugeCenterX - 20",
-                        "tox": "$gaugeCenterX + 20",
-                        "y": "$gaugeEndY + 25",
-                        "toy": "$gaugeEndY + 45"
-                    }
-                ]
-            }
-        ]
-    },
-    "colorRange": {
-        "color": [
-            {
-                "minValue": "0",
-                "maxValue": "45",
-                "code": "#e44a00"
-            },
-            {
-                "minValue": "45",
-                "maxValue": "75",
-                "code": "#f8bd19"
-            },
-            {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#6baa01"
-            }
-        ]
-    },
-    "value": "92"
-}
-
-```
-
-The chart will look as shown below:
-
-**<chart>8*
+[here](http://jsfiddle.net/fusioncharts/5Bd2f/ "@@open-newtab")
 
 ## Specify the background color
 
@@ -156,20 +96,19 @@ Use the `gaugeFillColor` attribute to specify the hex code of the color to be ap
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-       
         "gaugeFillColor": "#444444"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-led-example-4.js %}
+
+[here](http://jsfiddle.net/fusioncharts/hcdL2h1q/ "@@open-newtab")
 
 ## Use a single color for LED fill and background
 
@@ -183,19 +122,20 @@ Use the following attributes to apply a single color for the LED fill and the LE
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
-     
         "useSameFillColor": "1",
         "useSameFillBgColor": "1"       
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-led-example-5.js %}
+
+[here](http://jsfiddle.net/fusioncharts/BabW7/ "@@open-newtab")
 
 ## Show/Hide the gauge border
 
@@ -203,20 +143,19 @@ Set the value of the `showGaugeBorder` attribute to specify whether the border f
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-       
+    "chart": {  
         "showGaugeBorder": "0"
-
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-led-example-6.js %}
+
+[here](http://jsfiddle.net/fusioncharts/UZuye/ "@@open-newtab")
 
 ## Customize gauge border properties
 
@@ -230,21 +169,21 @@ Use the following attributes to customize the gauge border:
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         "gaugeBorderColor": "#AAAAAA",
         "gaugeBorderThickness": "7",
         "gaugeBorderAlpha": "70"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-led-example-7.js %}
+
+[here](http://jsfiddle.net/fusioncharts/Z547j/ "@@open-newtab")
 
 ## Configure LED bar size and gap
 
@@ -256,19 +195,20 @@ By default, the gauge determines the bar size and the gap automatically, based o
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         "ledSize": "5",
         "ledGap": "1"       
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-led-example-8.js %}
+
+[here](http://jsfiddle.net/fusioncharts/bq9gM/ "@@open-newtab")
 
 > Note: To make the LEDs appear continuous, you can set `ledGap` to `0`.
 
@@ -278,19 +218,19 @@ Set the value of the `showValue` attribute to `1`, to specify whether the curren
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-       
+    "chart": {   
         "showValue": "1"
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-led-example-9.js %}
+
+[here](http://jsfiddle.net/fusioncharts/A5EWt/ "@@open-newtab")
 
 ## Show/hide tick marks and tick values
 
@@ -302,21 +242,20 @@ Use the following attributes to show/hide tick marks and tick values:
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-       
         "showTickMarks": "1",
         "showTickValues": "1"
-
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-led-example-10.js %}
+
+[here](http://jsfiddle.net/fusioncharts/94uyv/ "@@open-newtab")
 
 ## Configure tick marks and tick values
 
@@ -344,11 +283,9 @@ By default, the tick marks and values are placed below the gauge in the horizont
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-       
         "adjustTM": "1",
         "ticksBelowGauge": "1",
         "tickMarkDistance": "5",
@@ -358,14 +295,15 @@ Refer to the code below:
         "minorTMNumber": "4",
         "minorTMHeight": "7",
         "tickValueStep": "2"
-    
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-led-example-11.js %}
+
+[here](http://jsfiddle.net/fusioncharts/hduMV/ "@@open-newtab")
 
 ## Configure tick mark and tick value cosmetics
 
@@ -385,11 +323,9 @@ You can also use FusionCharts Suite XT to configure the cosmetics of major and m
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "majorTMNumber": "5",
         "minorTMNumber": "5",
         "tickMarkDistance": "5",
@@ -399,14 +335,15 @@ Refer to the code below:
         "minorTMColor": "#0000CC",
         "minorTMAlpha": "30",
         "minorTMThickness": "2",
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-led-example-12.js %}
+
+[here](http://jsfiddle.net/fusioncharts/zHfPX/ "@@open-newtab")
 
 ## Configure hover effects
 
@@ -414,20 +351,19 @@ Using FusionCharts Suite XT, you can display hover effects for the gauge. Set th
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-       
         "showHoverEffect": "1"
-
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+GIF
+
+[here](http://jsfiddle.net/fusioncharts/ah36v6e0/ "@@open-newtab")
 
 ## Real time LED gauge
 
@@ -451,17 +387,6 @@ Use the following JavaScript API methods used to update a pointer:
 
 * Use the `setData(value)` method to set the data for the gauge. The value should be within the limits of the gauge.
 
-Refer to the code below:
-
-```
-**INSERT CODE**
-
-```
-
-The chart will look as shown below:
-
-**<chart>**
-
 ## Configure real time updates using server-side script
 
 Use the following parameters to configure real time updates using server-side scripts:
@@ -470,17 +395,24 @@ Use the following parameters to configure real time updates using server-side sc
 
 * Use the `refreshInterval` parameter to specify the number of seconds after which the chart will look for new data. This process will happen continuously.
 
-* Use the `dataStamp` parameter to add a constantly changing data stamp that can be added to the real time data URL, so as to maintain a state. For more information, read <this article>.
+* Use the `dataStamp` parameter to add a constantly changing data stamp that can be added to the real time data URL, so as to maintain a state.
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        "dataStreamURL": "../../../resources/php/gauge-and-widgets-guide-led-gauge-real-time-gauges-php-1.php",
+        "refreshInterval": "5",
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-led-example-13.js %}
+
+[here](http://jsfiddle.net/fusioncharts/abb2xdL4/ "@@open-newtab")
 
 ## Stop/restart updates
 
@@ -492,13 +424,55 @@ Use the following JavaScript API methods to stop and restart real time updates t
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "annotations": {
+        ...
+    },
+    "colorRange": {
+        ...
+    },
+},
+"events": {
+    'beforeRender': function(evt, args) {
+        var chargePercent = 50,
+            flag = 0,
+            count = 0,
+            startStopBtn = document.getElementById('btnSU');
+
+        if (!startStopBtn) {
+            // Create button if it does not already exist
+            startStopBtn = document.createElement('input');
+            startStopBtn.setAttribute('id', 'btnSU');
+            startStopBtn.setAttribute('type', 'button');
+            startStopBtn.setAttribute('value', 'Stop Update');
+
+            // Append button right after chart-container
+            args.container.parentNode.insertBefore(startStopBtn, args.container.nextSibling);
+
+        }
+        startStopBtn.onclick = function() {
+            var btnState = document.getElementById('btnSU').value;
+            if (btnState === 'Stop Update') {
+                startStopBtn.setAttribute('value', 'Restart Update');
+                evt.sender.stopUpdate();
+            } else {
+                startStopBtn.setAttribute('value', 'Stop Update');
+                evt.sender.restartUpdate();
+            }
+        };
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-led-example-14.js %}
+
+[here](http://jsfiddle.net/fusioncharts/q32kuqm4/ "@@open-newtab")
 
 ## Configure real time events
 
@@ -522,13 +496,69 @@ The event arguments provided in the advanced model are as follows:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "annotations": {
+        ...
+    },
+    "colorRange": {
+        ...
+    },
+},
+events: {
+    'renderComplete': function(evt, arg) {
+        var chargePercent = 50,
+            flag = 0,
+            count = 0;
+            evt.sender.chargeInterval = setInterval(function() {
+
+                if (flag === 0) {
+                    count++;
+                    if (count > 4) {
+                        chargePercent -= 5;
+                        count = 0;
+                    }
+
+                    if (chargePercent === 5) {
+                        flag = 1;
+                    }
+                } else {
+                    chargePercent += 5;
+                    if (chargePercent === 100) {
+                        flag = 0;
+                    }
+
+                }
+                evt.sender.feedData("&value=" + chargePercent);
+            }, 2000);
+    },
+    'realTimeUpdateComplete': function(evt, arg) {
+        var annotations = evt.sender.annotations,
+            chargePercent = evt.sender.getData(),
+            minutes = 2.4 * chargePercent,
+            hr = parseInt(minutes / 60),
+            hr = (hr <= 0) ? "" : hr + ((hr === 1) ? " hour " : " hours "),
+            min = minutes % 60,
+            min = (min <= 0) ? "" : ((min < 9) ? "0" + min : min) + " minutes ";
+
+        annotations.update('remainingTxt', {
+            "text": hr + min + "remaining..."
+        });
+    },
+    'disposed': function(evt, arg) {
+        clearInterval(evt.sender.chargeInterval);
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-led-example-15.js %}
+
+[here](http://jsfiddle.net/fusioncharts/uas6cu6L/ "@@open-newtab")
 
 ### Use the `realTimeUpdateError` event
 
@@ -540,13 +570,40 @@ The `realTimeUpdateError` event is raised when an error occurs while performing 
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "annotations": {
+        ...
+    },
+    "colorRange": {
+        ...
+    },
+},
+events: {
+    'beforeRender': function(evt, args) {
+        // Create container div for data table
+        var msgCont = document.createElement('div');
+        msgCont.setAttribute('id', 'chart-message');
+        //Set style for message container
+        msgCont.style.cssText = 'width : 300px; min-height: 50px; color : #cc0000; font-family : Arial, Helvetica, sans-serif; font-size : 14px; margin-top : 10px;';
+        // Append container div to page
+        args.container.parentNode.insertBefore(msgCont, args.container.nextSibling);
+    },
+    'realtimeUpdateError': function(evt, args) {
+        document.getElementById('chart-message').innerHTML = "<b>Error Occured !</b><br>Status Code : " + args.httpStatus;
+        evt.sender.stopUpdate();
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-led-example-16.js %}
+
+[here](http://jsfiddle.net/fusioncharts/60ubophr/ "@@open-newtab")
 
 ## Troubleshoot real time gauges
 
