@@ -4,6 +4,8 @@ description: The bulb gauge is used to indicate a specific dataset by utilizing 
 heading: Bulb Gauge
 ---
 
+> This chart type belongs to **FusionWidgets XT**.
+
 Bulb gauge is used to indicate a specific dataset by utilizing a circle that indicates whether the monitored data is within defined limits, and if it is, then which limit does it belong to. Colors for the bulb can be selected to suit the application such as green for satisfactory, yellow for caution, and red for alarm.
 
 ## Basics of the bulb gauge
@@ -88,7 +90,7 @@ Also set the number suffix character (the character which will show up at the en
 }
 ```
 
-There are other attributes of the `<chart>` element which we will not be delving into now, because of this being a really basic gauge. For a detailed list you can check the API reference page of bulb gauge.
+There are other attributes of the `<chart>` element which we will not be delving into now, because of this being a really basic gauge. For a detailed list you can check the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bulb "@@open-newtab") page of bulb gauge.
 
 ## Define the color range
 
@@ -159,7 +161,7 @@ To configure the border of the bulb gauge refer to the code below:
 }
 ```
 
-For a detailed list of attributes refer to the API reference page.
+For a detailed list of attributes refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bulb "@@open-newtab") page of the bulb gauge.
 
 The bulb gauge will look as shown in the image below:
 
@@ -333,7 +335,7 @@ Click [here](http://jsfiddle.net/fusioncharts/xn8591nn/ "@@open-newtab") to edit
 
 For a detailed list of JavaScript API used to configure real-time updates refer to the API reference page.
 
-> You can also configure using  server-side scripts. For a detailed list of attributes refer to the API reference page.
+> You can also configure using  server-side scripts. For a detailed list of attributes refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bulb "@@open-newtab") page.
 
 ## Stop/Restart updates
 
@@ -363,15 +365,11 @@ A real-time bulb gauge configured to listen to the `realTimeUpdateComplete` even
 
 Click [here](http://jsfiddle.net/fusioncharts/9zphu0hq/ "@@open-newtab") to edit the above chart.
 
-For detailed description of the `realTimeUpdateComplete` event refer to the API reference page.
-
 A bulb gauge configured to listen to the `realTimeUpdateError` event looks like this:
 
 {% embed_chart gauges-and-widgets-bulb-example-13.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/37geybvf/ "@@open-newtab") to edit the above chart.
-
-For detailed description of the `realTimeUpdateError` event refer to the API reference page.
 
 ## Troubleshoot real-time gauges
 
