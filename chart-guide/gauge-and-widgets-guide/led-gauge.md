@@ -62,7 +62,7 @@ Annotations let you draw your own custom shapes, text, or load images on the cha
 
 To create an LED gauge use the attributes given below:
 
-* Specify the type using the `type` attribute. To render ahorizontal LED gauge, set `hled` and to render a vertical LED gauge, set `vled`.
+* Specify the type using the `type` attribute. To render a horizontal LED gauge, set `hled` and to render a vertical LED gauge, set `vled`.
 
 * Set the container object using `renderAt` attribute.
 
