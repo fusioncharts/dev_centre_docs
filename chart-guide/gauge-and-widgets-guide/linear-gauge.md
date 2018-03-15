@@ -450,7 +450,7 @@ The chart will look as shown below:
 
 Look at the **Show Labels?** checkbox rendered below the above linear gauge. If you select this check box, you can see the label for each color range on the gauge scale. If you clear the check box, the labels are hidden.
 
-> An alternate way to not show gauge labels is by not initializing the **label** attribute for the **color** object.
+> An alternate way to not show gauge labels is by not initializing the `label` attribute for the `color` object.
 
 ## Configure hover effects for the gauge
 
@@ -602,7 +602,7 @@ Refer to the code below:
 
 {
     "chart": {
-        ...
+        
         "majorTMNumber": "9",
         "minorTMNumber": "5",
         "adjustTM": "1"
