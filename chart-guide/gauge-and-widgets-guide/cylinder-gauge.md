@@ -84,7 +84,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-cylinder-example-2.js %}
+{% embed_chart gauges-and-widgets-cylinder-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/MWnVr/ "@@open-newtab") to edit the above gauge.
 
@@ -108,7 +108,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-cylinder-example-3.js %}
+{% embed_chart gauges-and-widgets-cylinder-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/QseLf/ "@@open-newtab") to edit the above gauge.
 
@@ -141,7 +141,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-cylinder-example-4.js %}
+{% embed_chart gauges-and-widgets-cylinder-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/AN44L/ "@@open-newtab") to edit the above gauge.
 
@@ -163,7 +163,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-cylinder-example-5.js %}
+{% embed_chart gauges-and-widgets-cylinder-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/ZWTxT/ "@@open-newtab") to edit the above gauge.
 
@@ -190,7 +190,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-cylinder-example-6.js %}
+{% embed_chart gauges-and-widgets-cylinder-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/T85UH/ "@@open-newtab") to edit the above gauge.
 
@@ -210,7 +210,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-cylinder-example-7.js %}
+{% embed_chart gauges-and-widgets-cylinder-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/L3Hs4/ "@@open-newtab") to edit the above gauge.
 
@@ -237,7 +237,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-cylinder-example-8.js %}
+{% embed_chart gauges-and-widgets-cylinder-example-8.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/9BJrS/ "@@open-newtab") to edit the above gauge.
 
@@ -257,7 +257,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-cylinder-example-9.js %}
+{% embed_chart gauges-and-widgets-cylinder-example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/qtk9z/ "@@open-newtab") to edit the above gauge.
 
@@ -279,7 +279,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-cylinder-example-10.js %}
+{% embed_chart gauges-and-widgets-cylinder-example-10.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/LNxHB/ "@@open-newtab") to edit the above gauge.
 
@@ -327,7 +327,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-cylinder-example-11.js %}
+{% embed_chart gauges-and-widgets-cylinder-example-11.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/em5cg/ "@@open-newtab") to edit the above gauge.
 
@@ -407,7 +407,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-cylinder-example-12.js %}
+{% embed_chart gauges-and-widgets-cylinder-example-12.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/77kv6s1h/ "@@open-newtab") to edit the above gauge.
 
@@ -435,7 +435,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-cylinder-example-13.js %}
+{% embed_chart gauges-and-widgets-cylinder-example-13.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/wcb7b8g3/ "@@open-newtab") to edit the above gauge.
 
@@ -491,7 +491,7 @@ events: {
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-cylinder-example-14.js %}
+{% embed_chart gauges-and-widgets-cylinder-example-14.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/389fyhdg/ "@@open-newtab") to edit the above gauge.
 
@@ -558,7 +558,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-cylinder-example-15.js %}
+{% embed_chart gauges-and-widgets-cylinder-example-15.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/beo34buz/ "@@open-newtab") to edit the above gauge.
 
@@ -605,7 +605,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-cylinder-example-16.js %}
+{% embed_chart gauges-and-widgets-cylinder-example-16.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/9d8e05pb/ "@@open-newtab") to edit the above gauge.
 
