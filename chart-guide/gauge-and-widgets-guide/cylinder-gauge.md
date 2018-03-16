@@ -10,13 +10,15 @@ The cylinder gauge is represented by a vertical cylinder, whose fill level is de
 
 You can use the cylinder gauge shown below, to monitor the diesel level in the generator at Bakersfield Central.
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/MWnVr/ "@@open-newtab") to edit the above gauge.
 
 ## Elements of cylinder gauges
 
 In the image below, you can see the basic elements of a cylinder gauge:
 
-**IMAGE**
+![Cylinder-gauge]({% site.baseurl %}/images/cylinder-gauge-introduction-1.jpg)
 
 ### Cylinder fill
 
@@ -68,26 +70,25 @@ Use the following attributes to create a simple cylinder gauge:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "lowerLimit": "0",
         "upperLimit": "120",
         "lowerLimitDisplay": "Empty",
         "upperLimitDisplay": "Full",
         "numberSuffix": " ltrs"
-
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-2.js %}
 
-> Note: The cylinder gauge shown above has a maximum capacity of 120 liters, and is configured to show that 75 liters of diesel is left in the generator.
+Click [here](http://jsfiddle.net/fusioncharts/MWnVr/ "@@open-newtab") to edit the above gauge.
+
+> The cylinder gauge shown above has a maximum capacity of 120 liters, and is configured to show that 75 liters of diesel is left in the generator.
 
 You have several options to configure and customize the cylinder gauge to suit your requirements.
 
@@ -97,19 +98,19 @@ Use the `cylFillColor` attribute to specify the hex code of the fill color for t
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-       
+    "chart": {    
         "cylFillColor": "#1aaf5d"
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/QseLf/ "@@open-newtab") to edit the above gauge.
 
 > Note: if you do not customize the fill color, the cylinder gauge will use the default color as the fill color instead.
 
@@ -127,22 +128,22 @@ Use the following attributes to customize the cylinder origin, radius, and heigh
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "cyloriginx": "50",
         "cyloriginy": "260",
         "cylradius": "40",
         "cylheight": "150"
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/AN44L/ "@@open-newtab") to edit the above gauge.
 
 > Note: If you don't customize the origin, radius, and height, the cylinder gauge will automatically calculate the best-fit coordinates and size for the cylinder. 
 
@@ -152,21 +153,21 @@ Set the value of the `showValue` attribute to `0` to hide the data values below 
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "showValue": "0"
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-5.js %}
 
-> Note: By default, the attribute takes `1` as the value, and displays data values below the gauge. 
+Click [here](http://jsfiddle.net/fusioncharts/ZWTxT/ "@@open-newtab") to edit the above gauge.
+
+> By default, the attribute takes `1` as the value, and displays data values below the gauge. 
 
 ## Hide tick marks and tick values
 
@@ -178,21 +179,20 @@ Use the following attributes to hide tick marks and values:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "showTickMarks": "0",
-
         "showTickValues": "0"
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/T85UH/ "@@open-newtab") to edit the above gauge.
 
 ## Position tick marks and tick values
 
@@ -200,21 +200,21 @@ Set the value of the `ticksOnRight` attribute to `0`, to render the tick marks o
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "ticksOnRight": "0"
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-7.js %}
 
-> Note: By default, the tick marks and tick values are rendered to the right of the gauge.
+Click [here](http://jsfiddle.net/fusioncharts/L3Hs4/ "@@open-newtab") to edit the above gauge.
+
+> By default, the tick marks and tick values are rendered to the right of the gauge.
 
 ## Customize the number of tick marks
 
@@ -226,20 +226,20 @@ Use the following attributes to customize the number of tick marks:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "majorTMNumber": "9",
         "minorTMNumber": "1"
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/9BJrS/ "@@open-newtab") to edit the above gauge.
 
 ## Disable auto adjustment of tick marks
 
@@ -247,19 +247,19 @@ Set the value of the `adjustTM`attribute to `0`, to disable automatic distributi
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "adjustTM": "0"
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/qtk9z/ "@@open-newtab") to edit the above gauge.
 
 > Note: Unless you manually disable the automatic distribution of tick marks, the cylinder gauge can automatically calculate and display the best feasible number of major tick marks.
 
@@ -269,21 +269,21 @@ Set the value of the `tickValueStep` attribute to **n**, to only display every *
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "tickValueStep": "2"
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-10.js %}
 
-> Note: The cylinder gauge always displays the upper and lower limits of the scale.
+Click [here](http://jsfiddle.net/fusioncharts/LNxHB/ "@@open-newtab") to edit the above gauge.
+
+> The cylinder gauge always displays the upper and lower limits of the scale.
 
 ## Configure tick mark cosmetics
 
@@ -309,11 +309,9 @@ Use the following attributes to configure the major and minor tick marks:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "majorTMColor": "#1aaf5d",
         "majorTMAlpha": "100",
         "majorTMHeight": "10",
@@ -324,15 +322,16 @@ Refer to the code below:
         "minorTMThickness": "1",
         "tickmarkDistance": "5"
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/em5cg/ "@@open-newtab") to edit the above gauge.
 
 ## Apply hover effects
-
 
 Use the following attributes to configure hover/touch effects for the cylinder gauge and boost visualization:
 
@@ -342,20 +341,20 @@ Use the following attributes to configure hover/touch effects for the cylinder g
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "cylFillHoverColor": "#0099fd",
         "cylFillHoverAlpha": "85"
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+GIF
+
+Click [here](http://jsfiddle.net/fusioncharts/cSkE3/ "@@open-newtab") to edit the above gauge.
 
 ## Build a real-time cylinder gauge
 
@@ -381,13 +380,36 @@ Use the following JavaScript API methods used to update a pointer:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "value": "110"
+},
+"events": {
+    "rendered": function(evtObj, argObj) {
+        var fuelVolume = 110,
+            gaugeRef = evtObj.sender;
+        gaugeRef.chartInterval = setInterval(function() {
+
+            (fuelVolume < 10) ? (fuelVolume = 110) : "";
+            var consVolume = fuelVolume - (Math.floor(Math.random() * 3));
+            gaugeRef.feedData("&value=" + consVolume);
+            fuelVolume = consVolume;
+        }, 3000);
+    },
+    "disposed": function(evt, arg) {
+        clearInterval(evt.sender.chartInterval);
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-12.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/77kv6s1h/ "@@open-newtab") to edit the above gauge.
 
 ## Configure real time updates using server-side script
 
@@ -401,13 +423,21 @@ Use the following parameters to configure real time updates using server-side sc
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        "dataStreamUrl": "../../../resources/php/gauge-and-widgets-guide-cylinder-gauge-real-time-gauges-php-1.php",
+        "refreshInterval": "2",
+        "refreshInstantly": "1"
+    },
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-13.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/wcb7b8g3/ "@@open-newtab") to edit the above gauge.
 
 ## Stop/restart updates
 
@@ -419,13 +449,51 @@ Use the following JavaScript API methods to stop and restart real time updates t
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "value": "110"
+},
+events: {
+    "beforeRender": function(evt, args) {
+        // creating div for controllers
+        var controllers = document.createElement('div'),
+            isStopped = false,
+            gaugeRef = evt.sender;
+        controllers.setAttribute('id', 'controllers');
+
+        // Create checkbox inside div
+        controllers.innerHTML = '<input type="button" value="Stop Update" id="toggleBtn" style="margin-left:5px;margin-top:5px;font-size:13px;padding:2px;" />';
+        args.container.parentNode.insertBefore(controllers, args.container.nextSibling);
+
+        // setting css styles for controllers div
+        controllers.style.cssText = "text-align: center;";
+        var btn = document.getElementById('toggleBtn'),
+            startStopUpdate = function() {
+                if (!isStopped) {
+                    isStopped = true
+                    btn.value = "Restart Update";
+                    gaugeRef.stopUpdate();
+                } else {
+                    isStopped = false;
+                    btn.value = "Stop Update";
+                    gaugeRef.restartUpdate();
+                }
+            }
+
+        btn.addEventListener && btn.addEventListener("click", startStopUpdate);
+
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-14.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/389fyhdg/ "@@open-newtab") to edit the above gauge.
 
 ## Configure real time events
 
@@ -449,13 +517,50 @@ The event arguments provided in the advanced model are as follows:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "value": "110"
+},
+"events": {
+    "rendered": function(evtObj, argObj) {
+        var gaugeRef = evtObj.sender,
+            fuelVolume = 110;
+        gaugeRef.chartInterval = setInterval(function() {
+            (fuelVolume < 10) ? (fuelVolume = 110) : "";
+            var consVolume = fuelVolume - (Math.floor(Math.random() * 3));
+            gaugeRef.feedData("&value=" + consVolume);
+            fuelVolume = consVolume;
+        }, 1000);
+    },
+    //Using real time update event to update the annotation
+    //showing available volume of Diesel
+    "realTimeUpdateComplete": function(evt, arg) {
+        var annotations = evt.sender.annotations,
+            dataVal = evt.sender.getData(),
+            colorVal = (dataVal >= 70) ? "#6caa03" : ((dataVal <= 25) ? "#e44b02" : "#f8bd1b");
+        //Updating value
+        annotations && annotations.update('rangeText', {
+            "text": "Available Volume: " + dataVal + " ltrs"
+        });
+        //Changing background color as per value
+        annotations && annotations.update('rangeBg', {
+            "fillcolor": colorVal
+        });
+    },
+    "disposed": function(evt, arg) {
+        clearInterval(evt.sender.chartInterval);
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-15.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/beo34buz/ "@@open-newtab") to edit the above gauge.
 
 ### Use the `realTimeUpdateError` event
 
@@ -467,13 +572,42 @@ The `realTimeUpdateError` event is raised when an error occurs while performing 
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "value": "110"
+},
+"events": {
+    'beforeRender': function(evt, args) {
+
+        // creating div for controllers
+        var controllers = document.createElement('div'),
+            container = document.getElementById('chart-container');
+        // Create checkbox inside div
+
+        controllers.innerHTML = '<div id="chart-message"></div>';
+
+        controllers.setAttribute('id', 'controllers');
+        // setting css styles for controllers div
+        controllers.style.cssText = "text-align: center;min-height: 50px;color : #cc0000;font-family : Arial, Helvetica, sans-serif;font-size : 14px;margin-top : 10px;";
+        args.container.parentNode.insertBefore(controllers, args.container.nextSibling);
+    },
+
+    //Using real time update error event
+    "realtimeUpdateError": function(evtObj, argObj) {
+        var msgDiv = document.getElementById('chart-message');
+        msgDiv.innerHTML = "<b>Error Occured !</b><br> Status Code : " + argObj.httpStatus;
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-cylinder-example-16.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/9d8e05pb/ "@@open-newtab") to edit the above gauge.
 
 ## Troubleshoot real time gauges
 
