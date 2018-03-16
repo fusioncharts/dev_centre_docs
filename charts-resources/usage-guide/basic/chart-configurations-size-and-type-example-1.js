@@ -61,7 +61,7 @@
             controllers.getElements
             args.container.appendChild(controllers);
             labels = controllers.getElementsByTagName("label");
-            for (var i in labels) {
+            for (var i =0; i<labels.length; i++) {
                 labels[i].style.cssText = "display: inline;"
             }
         },
