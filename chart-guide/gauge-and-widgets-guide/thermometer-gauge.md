@@ -4,19 +4,23 @@ description: Thermometer gauge, is used to display temperatures. The fill level 
 heading: Thermometer Gauge
 ---
 
+> This chart type belongs to **FusionWidgets XT**.
+
 A thermometer gauge is used to display temperatures. The fill level of the thermometer indicates the temperature data that you want to display. The thermometer gauge is a real-time gauge, which can update its data at every specified interval, without requiring any page refreshes. The thermometer gauge does NOT need a predefined color range. Instead, it takes in the fill color as an attribute and uses that color to fill up the thermometer.
 
 ## Simple thermometer gauge example
 
 You can use the thermometer gauge shown below as a real-time temperature monitor for the fictional Central Cold Store.
 
-**<chart>**
+{% embed_all gauges-and-widgets-thermometer-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/3BNH3/ "@@open-newtab") to edit the above gauge.
 
 ## Elements of thermometer gauges
 
 In the image below, you can see the basic elements of a thermometer gauge labeled:
 
-**IMAGE**
+![Thermometer-gauge]({% site.baseurl %}/images/thermometer-gauge-introduction-1.png)
 
 ### Thermometer fill
 
@@ -66,24 +70,23 @@ Use the following attributes to create a simple thermometer gauge:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "lowerLimit": "-10",
         "upperLimit": "0",
         "numberSuffix": "°C",
         "thmFillColor": "#008ee4",
         "thmOriginX": "100"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-thermometer-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/LZWyr/ "@@open-newtab") to edit the above gauge.
 
 ## Customize the gauge fill
 
@@ -95,24 +98,22 @@ Use the following attributes to customize the gauge fill:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "gaugeFillColor": "#008ee4",
         "gaugeFillAlpha": "70"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-thermometer-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/6UFzr/ "@@open-newtab") to edit the above gauge.
 
 ## Customize the gauge borders
-
 
 Use the following attributes to customize the thermometer gauge border :
 
@@ -126,23 +127,22 @@ Use the following attributes to customize the thermometer gauge border :
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "showGaugeBorder": "1",
         "gaugeBorderColor": "#008ee4",
         "gaugeBorderThickness": "2",
         "gaugeBorderAlpha": "60"
-
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-thermometer-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/8r7RV/ "@@open-newtab") to edit the above gauge.
 
 ## Manually set the thermometer radius and height
 
@@ -154,22 +154,20 @@ You can let the gauge automatically calculate the best thermometer radius and he
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "thmBulbRadius": "35",
         "thmHeight": "150"
-        
-
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-thermometer-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/gpX6k/ "@@open-newtab") to edit the above gauge.
 
 ## Hide the temperature value
 
@@ -178,20 +176,18 @@ Set the value of the `showValue` attribute to `0`, to hide temperature values on
 Refer to the code below:
 
 ```
-
 {
-    "chart": {
-        
+    "chart": {     
         "showValue": "0"
-        
-
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-thermometer-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/V73nQ/ "@@open-newtab") to edit the above gauge.
 
 ## Show/hide tick marks and tick values
 
@@ -204,20 +200,19 @@ Use the following attributes to hide the tick marks and tick values. Note that b
 Refer to the code below:
 
 ```
-
 {
-    "chart": {
-        
+    "chart": {     
         "showTickMarks": "0",
-
         "showTickValues": "0"
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-thermometer-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/tQ985/ "@@open-newtab") to edit the above gauge.
 
 ## Configure tick marks and tick values
 
@@ -243,11 +238,9 @@ Use the following attributes to configure the tick marks and tick values:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "adjustTM": "1",
         "ticksOnRight": "0",
         "tickMarkDistance": "5",
@@ -258,12 +251,14 @@ Refer to the code below:
         "minorTMHeight": "7",
         "tickValueStep": "2"
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-thermometer-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/JZ36w/ "@@open-newtab") to edit the above gauge.
 
 ## Customize tick marks
 
@@ -283,11 +278,9 @@ Use the following attributes to customize the cosmetic properties of tick marks:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "majorTMColor": "#666666",
         "majorTMAlpha": "100",
         "majorTMThickness": "2",
@@ -295,12 +288,14 @@ Refer to the code below:
         "minorTMAlpha": "50",
         "minorTMThickness": "2"
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-thermometer-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/uHBcn/ "@@open-newtab") to edit the above gauge.
 
 ## Configure hover effects
 
@@ -308,19 +303,19 @@ Set the value of the `showHoverEffect` attribute `1`, to enable hover/touch effe
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "showhovereffect": "1"
     },
-
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+GIF
+
+Click [here](http://jsfiddle.net/fusioncharts/hyvLk5d8/ "@@open-newtab") to edit the above gauge.
 
 ## Configure real-time updates using JavaScript API
 
@@ -334,10 +329,8 @@ When you invoke the data provider page on the server end, it outputs the new dat
 
 In the simplest form, if you want to update the thermometer gauge, you have to output the data in the following format:
 
-```
-
+```json
 &value=-5
-
 ```
 
 Here, the output is a single value, -5. So, when the gauge reads this value, it will update the chart by setting its value to -5 (if you have provided a data range for the gauge, it will first check the value to verify if it falls within the defined range).
@@ -352,14 +345,41 @@ Use the following JavaScript API methods to update a thermometer gauge:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "value": "-6"
+},
+"events": {
+    "rendered": function(evt, arg) {
+        evt.sender.dataUpdate = setInterval(function() {
+            var value,
+                prevTemp = evt.sender.getData(),
+                mainTemp = (Math.random() * 10) * (-1),
+                diff = Math.abs(prevTemp - mainTemp);
 
+            diff = diff > 1 ? (Math.random() * 1) : diff;
+            if (mainTemp > prevTemp) {
+                value = prevTemp + diff;
+            } else {
+                value = prevTemp - diff;
+            }
+            evt.sender.feedData("&value=" + value);
+        }, 3000);
+    },
+    "disposed": function(evt, arg) {
+        clearInterval(evt.sender.dataUpdate);
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-thermometer-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/gfqnj2oc/ "@@open-newtab") to edit the above gauge.
 
 ## Configure real time updates using server-side script
 
@@ -373,13 +393,20 @@ Use the following parameters to configure real time updates using server-side sc
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        "dataStreamURL": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-thermometer-gauge-real-time-gauges-php-1.php",
+        "refreshInterval": "5"
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-thermometer-example-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/zc2Ldvjs/ "@@open-newtab") to edit the above gauge.
 
 ## Stop/restart updates
 
@@ -391,13 +418,48 @@ Use the following JavaScript API methods to stop and restart real time updates t
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "value": "-6"
+},
+"events": {
+    'beforeRender': function(evt, args) {
+        // creating div for controllers
+        var controllers = document.createElement('div');
+
+        // Create button inside div
+        controllers.innerHTML = '<input id="btnSU" type="submit" name="Submit" value="Stop Update" >';
+        args.container.parentNode.insertBefore(controllers, args.container.nextSibling);
+        controllers.setAttribute('id', 'controllers');
+    },
+    "renderComplete": function(evtObj, argObj) {
+        var flag = 0,
+            btn = document.getElementById("btnSU"),
+            startStopUpdate = function() {
+                if (flag === 0) {
+                    btn.value = "Restart Update";
+                    evtObj.sender.stopUpdate();
+                    flag = 1;
+                } else {
+                    btn.value = "Stop Update";
+                    evtObj.sender.restartUpdate();
+                    flag = 0;
+                }
+
+            };
+        btn.addEventListener && btn.addEventListener("click", startStopUpdate);
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-thermometer-example-12.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/pt2t929n/ "@@open-newtab") to edit the above gauge.
 
 ## Configure real time events
 
@@ -421,13 +483,66 @@ The event arguments provided in the advanced model are as follows:
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "value": "-6"
+},
+"events": {
+    "rendered": function(evt, arg) {
+        evt.sender.dataUpdate = setInterval(function() {
+            var value,
+                prevTemp = evt.sender.getData(),
+                mainTemp = (Math.random() * 10) * (-1),
+                diff = Math.abs(prevTemp - mainTemp);
+
+            diff = diff > 1 ? (Math.random() * 1) : diff;
+            if (mainTemp > prevTemp) {
+                value = prevTemp + diff;
+            } else {
+                value = prevTemp - diff;
+            }
+
+            evt.sender.feedData("&value=" + value);
+
+        }, 3000);
+        updateAnnotation = function(evtObj, argObj) {
+            var code,
+                chartObj = evtObj.sender,
+                val = chartObj.getData(),
+                annotations = chartObj.annotations;
+
+            if (val >= -4.5) {
+                code = "#00FF00";
+            } else if (val < -4.5 && val > -6) {
+                code = "#ff9900";
+            } else {
+                code = "#ff0000";
+            }
+            annotations.update("background", {
+                "fillColor": code
+            });
+        };
+    },
+    "renderComplete": function(evt, arg) {
+        updateAnnotation(evt, arg);
+    },
+    "realtimeUpdateComplete": function(evt, arg) {
+        updateAnnotation(evt, arg);
+    },
+    "disposed": function(evt, arg) {
+        clearInterval(evt.sender.dataUpdate);
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-thermometer-example-13.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/hmx9wxtg/ "@@open-newtab") to edit the above gauge.
 
 ### Use the `realTimeUpdateError` event
 
@@ -439,13 +554,37 @@ The `realTimeUpdateError` event is raised when an error occurs while performing 
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "value": "-6"
+},
+"events": {
+    'beforeRender': function(evt, args) {
+        // creating div for controllers
+        var controllers = document.createElement('div'),
+            container = document.getElementById('chart-container');
+        // Create checkbox inside div
+        controllers.innerHTML = '<div id="chart-message"></div>';
+        controllers.setAttribute('id', 'controllers');
+        // setting css styles for controllers div
+        controllers.style.cssText = "min-height: 50px;color : #cc0000;font-family : Arial, Helvetica, sans-serif;font-size : 14px;margin-top : 10px;text-align: center;";
+        args.container.parentNode.insertBefore(controllers, args.container.nextSibling);
+    },
+    "realtimeUpdateError": function(evtObj, argObj) {
+
+        document.getElementById('chart-message').innerHTML = "<b>Error Occured !</b><br> Status Code : " + argObj.httpStatus;
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_all gauges-and-widgets-thermometer-example-14.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/16nftft4/ "@@open-newtab") to edit the above gauge.
 
 ## Troubleshoot real time gauges
 
