@@ -84,7 +84,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-thermometer-example-2.js %}
+{% embed_chart gauges-and-widgets-thermometer-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/LZWyr/ "@@open-newtab") to edit the above gauge.
 
@@ -109,7 +109,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-thermometer-example-3.js %}
+{% embed_chart gauges-and-widgets-thermometer-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/6UFzr/ "@@open-newtab") to edit the above gauge.
 
@@ -140,7 +140,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-thermometer-example-4.js %}
+{% embed_chart gauges-and-widgets-thermometer-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/8r7RV/ "@@open-newtab") to edit the above gauge.
 
@@ -165,7 +165,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-thermometer-example-5.js %}
+{% embed_chart gauges-and-widgets-thermometer-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/gpX6k/ "@@open-newtab") to edit the above gauge.
 
@@ -185,7 +185,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-thermometer-example-6.js %}
+{% embed_chart gauges-and-widgets-thermometer-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/V73nQ/ "@@open-newtab") to edit the above gauge.
 
@@ -210,7 +210,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-thermometer-example-7.js %}
+{% embed_chart gauges-and-widgets-thermometer-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/tQ985/ "@@open-newtab") to edit the above gauge.
 
@@ -256,7 +256,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-thermometer-example-8.js %}
+{% embed_chart gauges-and-widgets-thermometer-example-8.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/JZ36w/ "@@open-newtab") to edit the above gauge.
 
@@ -293,7 +293,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-thermometer-example-9.js %}
+{% embed_chart gauges-and-widgets-thermometer-example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/uHBcn/ "@@open-newtab") to edit the above gauge.
 
@@ -377,7 +377,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-thermometer-example-10.js %}
+{% embed_chart gauges-and-widgets-thermometer-example-10.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/gfqnj2oc/ "@@open-newtab") to edit the above gauge.
 
@@ -404,7 +404,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-thermometer-example-11.js %}
+{% embed_chart gauges-and-widgets-thermometer-example-11.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/zc2Ldvjs/ "@@open-newtab") to edit the above gauge.
 
@@ -457,7 +457,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-thermometer-example-12.js %}
+{% embed_chart gauges-and-widgets-thermometer-example-12.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/pt2t929n/ "@@open-newtab") to edit the above gauge.
 
@@ -540,7 +540,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-thermometer-example-13.js %}
+{% embed_chart gauges-and-widgets-thermometer-example-13.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/hmx9wxtg/ "@@open-newtab") to edit the above gauge.
 
@@ -582,7 +582,7 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-{% embed_all gauges-and-widgets-thermometer-example-14.js %}
+{% embed_chart gauges-and-widgets-thermometer-example-14.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/16nftft4/ "@@open-newtab") to edit the above gauge.
 
