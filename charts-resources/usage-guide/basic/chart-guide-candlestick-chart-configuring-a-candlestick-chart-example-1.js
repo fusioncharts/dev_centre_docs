@@ -1,7 +1,7 @@
 {
     type: 'candlestick',
     renderAt: 'chart-container',
-    id: 'myChart',
+    
     width: '600',
     height: '400',
     dataFormat: 'json',

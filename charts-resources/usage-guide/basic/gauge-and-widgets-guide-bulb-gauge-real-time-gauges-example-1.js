@@ -44,9 +44,10 @@
     },
     "events": {
         "rendered": function(evtObj, argObj) {
-            evtObj.sender.chartInterval = setInterval(function() {
+            var chartRef = evtObj.sender;
+            chartRef.chartInterval = setInterval(function() {
                 var num = (Math.floor(Math.random() * 55) * -1) - 5;
-                FusionCharts("myChart").feedData("&value=" + num);
+                chartRef.feedData("&value=" + num);
             }, 10000);
         },
         "disposed": function(evt, arg) {

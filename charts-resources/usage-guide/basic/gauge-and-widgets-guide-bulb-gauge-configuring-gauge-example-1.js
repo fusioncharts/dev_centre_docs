@@ -49,12 +49,13 @@
     },
     "events": {
         "rendered": function(evtObj, argObj) {
+        	var chartRef = evtObj.sender;
             evtObj.sender.chartInterval = setInterval(function() {
                 var num = (Math.floor(Math.random() * 55) * -1) - 5;
-                FusionCharts("myChart").feedData("&value=" + num);
+               	chartRef.feedData("&value=" + num);
             }, 10000);
         },
-        "disposed": function(evt, sender) {
+        "disposed": function(evt, arg) {
             clearInterval(evt.sender.chartInterval);
         }
     }
