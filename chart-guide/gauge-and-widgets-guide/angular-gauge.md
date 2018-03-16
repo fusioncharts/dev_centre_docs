@@ -99,8 +99,7 @@ Use the following attributes to create a simple angular gauge with the data give
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         "caption": "Customer Satisfaction Score",
@@ -114,33 +113,28 @@ Refer to the code below:
         "theme": "fint"
     },
     "colorRange": {
-        "color": [
-            {
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#e44a00"
-            },
-            {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#f8bd19"
-            },
-            {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#6baa01"
-            }
-        ]
+        "color": [{
+            "minValue": "0",
+            "maxValue": "50",
+            "code": "#e44a00"
+        },
+        {
+            "minValue": "50",
+            "maxValue": "75",
+            "code": "#f8bd19"
+        },
+        {
+            "minValue": "75",
+            "maxValue": "100",
+            "code": "#6baa01"
+        }]
     },
     "dials": {
-        "dial": [
-            {
-                "value": "67"
-            }
-        ]
+        "dial": [{
+            "value": "67"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -161,16 +155,13 @@ Use the following attributes to configure the gradient fill for the gauge:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
         "gaugeFillRatio": "15"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -183,15 +174,12 @@ Set the value of the `showGaugeBorder` attribute to `0`, to hide the gauge borde
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "showGaugeBorder": "0"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -212,23 +200,17 @@ Note: To configure borders individually for each color range, use the attributes
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
     },
     "colorRange": {
-        "color": [
-            {
-                ...
-                "borderColor": "#780101",
-                "borderAlpha": "100"
-            },
-        ]
+        "color": [{
+            "borderColor": "#780101",
+            "borderAlpha": "100"
+        }]
     },
 }
-
 ```
 
 The chart will look as shown below:
@@ -247,16 +229,14 @@ Use the following attributes to configure the entire border of the gauge scale a
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "gaugeBorderColor": "#111111",
         "gaugeBorderThickness": "1",
         "gaugeBorderAlpha": "100"
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -269,15 +249,12 @@ Specify the derivative of the fill color that should be applied to the border, u
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "gaugeBorderColor": "{dark-30}"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -285,7 +262,6 @@ The chart will look as shown below:
 **<chart>**
 
 ## Configure outer and inner radius
-
 
 Based on the data values provided, the gauge automatically calculates the outer and inner radii for the color range scale. You can, however, explicitly set the radii for the gauge using the following attributes:
 
@@ -295,16 +271,13 @@ Based on the data values provided, the gauge automatically calculates the outer 
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "gaugeOuterRadius": "180",
         "gaugeInnerRadius": "120"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -312,7 +285,6 @@ The chart will look as shown below:
 **<chart>**
 
 ## Configure pivot properties
-
 
 Like the range scale and the border of the angular gauge, you can also configure the pivot that points to a data value on the range scale. 
 
@@ -322,15 +294,12 @@ The gauge automatically calculates the pivot radius based on the data values tha
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": {     
         "pivotRadius": "10"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -338,7 +307,6 @@ The chart will look as shown below:
 **<chart>**
 
 ## Configure pivot border cosmetics
-
 
 Use the following attributes to configure pivot border cosmetics:
 
@@ -348,16 +316,13 @@ Use the following attributes to configure pivot border cosmetics:
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-        
         "pivotBorderColor": "#333333",
         "pivotBorderAlpha": "100"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -365,7 +330,6 @@ The chart will look as shown below:
 **<chart>**
 
 ## Configure pivot fill cosmetics
-
 
 Use the following attributes to configure pivot fill cosmetics:
 
@@ -375,16 +339,13 @@ Use the following attributes to configure pivot fill cosmetics:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "pivotFillColor": "#5599CC",
         "pivotFillAlpha": "100"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -392,7 +353,6 @@ The chart will look as shown below:
 **<chart>**
 
 ## Configure the pivot fill color with a gradient fill mix
-
 
 The `pivotFillColor` attribute fills the pivot with a single solid color. However, you can also fill the pivot with a gradient fill, by using the attributes given below:
 
@@ -402,17 +362,14 @@ The `pivotFillColor` attribute fills the pivot with a single solid color. Howeve
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "pivotFillColor": "#1122CC",
         "pivotFillMix": "{dark-50},{light-30},{dark-40}",
         "pivotFillRatio": "70,30"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -425,15 +382,12 @@ Specify whether the gradient fill for the pivot should be linear or radial, by s
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "pivotFillType": "linear"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -456,30 +410,24 @@ Use the following attributes to configure the borders of a dial:
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
     },
     "colorRange": {
         "color": [
-            …
-
+            ...
         ]
     },
     "dials": {
-        "dial": [
-            {
-                ...
-                "borderColor": "#111111",
-                "borderThickness": "1",
-                "borderAlpha": "100"
-            }
-        ]
+        "dial": [{
+            "borderColor": "#111111",
+            "borderThickness": "1",
+            "borderAlpha": "100"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -492,8 +440,7 @@ Specify the hex code of the color(s) that will be used to fill the background fo
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -504,16 +451,11 @@ Refer to the code below:
         ]
     },
     "dials": {
-        "dial": [
-            {
-                ...
-                "bgColor": "#999999"
-               
-            }
-        ]
+        "dial": [{
+            "bgColor": "#999999"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -531,8 +473,7 @@ By default, the gauge automatically configures the radius of the dial. However, 
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -543,16 +484,12 @@ Refer to the code below:
         ]
     },
     "dials": {
-        "dial": [
-            {
-                ...
-                "radius": "140",
-                "rearExtension": "15"
-            }
-        ]
+        "dial": [{
+            "radius": "140",
+            "rearExtension": "15"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -570,8 +507,7 @@ If you Increase the base and the top width of a dial, you can increase the thick
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -582,17 +518,12 @@ Refer to the code below:
         ]
     },
     "dials": {
-        "dial": [
-            {
-                ...
-                "baseWidth": "15",
-                "topWidth": "3"
-               
-            }
-        ]
+        "dial": [{
+            "baseWidth": "15",
+            "topWidth": "3"  
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -617,13 +548,11 @@ You can use hover effects to modify how the dial reacts when you hover the mouse
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
         "showHoverEffect": "1",
-       
     },
     "colorRange": {
         "color": [
@@ -631,20 +560,15 @@ Refer to the code below:
         ]
     },
     "dials": {
-        "dial": [
-            {
-                ...
-                "bgHoverColor": "#cccccc",
-                "bgHoverAlpha": "80",
-                "BorderHoverColor": "#999999",
-                "BorderHoverAlpha": "80",
-                "BorderHoverThickness": "2"
-               
-            }
-        ]
+        "dial": [{
+            "bgHoverColor": "#cccccc",
+            "bgHoverAlpha": "80",
+            "BorderHoverColor": "#999999",
+            "BorderHoverAlpha": "80",
+            "BorderHoverThickness": "2"  
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -657,8 +581,7 @@ Specify the text that will be rendered as the tooltip when you hover the mouse p
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -669,16 +592,11 @@ Refer to the code below:
         ]
     },
     "dials": {
-        "dial": [
-            {
-                ...
-                "tooltext": "Current customer satisfaction score is 67"
-               
-            }
-        ]
+        "dial": [{
+            "tooltext": "Current customer satisfaction score is 67"   
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -689,7 +607,7 @@ The chart will look as shown below:
 
 Refer to the code below:
 
-```
+```json
 {
     "chart": {
         ...
@@ -700,15 +618,12 @@ Refer to the code below:
         ]
     },
     "dials": {
-        "dial": [
-            {
-                "value": "67",
-                "tooltext": "Current customer satisfaction score is $value"               
-            }
-        ]
+        "dial": [{
+            "value": "67",
+            "tooltext": "Current customer satisfaction score is $value"               
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -725,8 +640,7 @@ You can add any number of dials to an angular gauge, and configure each dial to 
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -737,28 +651,24 @@ Refer to the code below:
         ]
     },
     "dials": {
-        "dial": [
-            {
-                "value": "67",
-                "showValue": "1",
-                "valueX": "200",
-                "valueY": "180",
-                "bgAlpha": "10",
-                "tooltext": "Last year's average : $value",
-                "rearExtension": "15"
-            },
-            {
-                "value": "78",
-                "showValue": "1",
-                "valueX": "250",
-                "valueY": "220",
-                "tooltext": "Current year's average : $value",
-                "rearExtension": "15"
-            }
-        ]
+        "dial": [{
+            "value": "67",
+            "showValue": "1",
+            "valueX": "200",
+            "valueY": "180",
+            "bgAlpha": "10",
+            "tooltext": "Last year's average : $value",
+            "rearExtension": "15"
+        }, {
+            "value": "78",
+            "showValue": "1",
+            "valueX": "250",
+            "valueY": "220",
+            "tooltext": "Current year's average : $value",
+            "rearExtension": "15"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -809,8 +719,7 @@ Apart from configuring the appearance of the dial, you can also show/hide dial v
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         "caption": "Average Customer Satisfaction Score",
@@ -831,46 +740,38 @@ Refer to the code below:
         "theme": "fint"
     },
     "colorRange": {
-        "color": [
-            {
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#e44a00"
-            },
-            {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#f8bd19"
-            },
-            {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#6baa01"
-            }
-        ]
+        "color": [{
+            "minValue": "0",
+            "maxValue": "50",
+            "code": "#e44a00"
+        }, {
+            "minValue": "50",
+            "maxValue": "75",
+            "code": "#f8bd19"
+        }, {
+            "minValue": "75",
+            "maxValue": "100",
+            "code": "#6baa01"
+        }]
     },
     "dials": {
-        "dial": [
-            {
-                "value": "67",
-                "showValue": "1",
-                "valueX": "190",
-                "valueY": "180",
-                "tooltext": "Last year's average : $value",
-                "rearExtension": "15"
-            },
-            {
-                "value": "78",
-                "showValue": "1",
-                "valueX": "260",
-                "valueY": "220",
-                "tooltext": "Current year's average : $value",
-                "rearExtension": "15"
-            }
-        ]
+        "dial": [{
+            "value": "67",
+            "showValue": "1",
+            "valueX": "190",
+            "valueY": "180",
+            "tooltext": "Last year's average : $value",
+            "rearExtension": "15"
+        }, {
+            "value": "78",
+            "showValue": "1",
+            "valueX": "260",
+            "valueY": "220",
+            "tooltext": "Current year's average : $value",
+            "rearExtension": "15"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -883,8 +784,7 @@ When you use angular gauges with multiple dials in real time applications, you n
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -895,17 +795,11 @@ Refer to the code below:
         ]
     },
     "dials": {
-        "dial": [
-            {
-               
-                ...
-                "id": "Dial 1"
-               
-            },
-        ]
+        "dial": [{
+            "id": "Dial 1"              
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -924,16 +818,13 @@ Use the following attributes to show/hide tick marks and values:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "showTickMarks": "0",
         "showTickValues": "0"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -950,16 +841,13 @@ By default, the tick marks and tick values are rendered outside the gauge scale.
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "placeTicksInside": "1",
         "placeValuesInside": "1"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -976,16 +864,13 @@ Based on the data you provide, the gauge automatically decides the number of maj
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "majorTMNumber": "9",
         "minorTMNumber": "4"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -1014,11 +899,9 @@ You can customize the color, transparency, height, and thickness of of the major
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-       
         "majorTMColor": "#333333",
         "majorTMAlpha": "100",
         "majorTMHeight": "15",
@@ -1027,11 +910,8 @@ Refer to the code below:
         "minorTMAlpha": "100",
         "minorTMHeight": "12",
         "minorTMThickness": "1"
-       
     },
-   
 }
-
 ```
 
 The chart will look as shown below:
@@ -1044,15 +924,12 @@ You can choose to only show every n<sup>th</sup> tick mark on the angular gauge 
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "tickValueStep": "2"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -1069,16 +946,13 @@ You can show decimal numbers as tick values. For these decimal numbers, you can 
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "tickValueDecimals": "1",
         "forceTickValueDecimals": "1"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -1097,17 +971,14 @@ You can set the distance between tick values, using the following attributes:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "autoAlignTickValues": "1",
         "manageValueOverLapping": "1",
         "tickValueDistance": "25"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -1144,8 +1015,7 @@ Note: These attributes belong to the `point` object, which in turn belongs to th
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -1156,34 +1026,27 @@ Refer to the code below:
         ]
     },
     "dials": {
-        "dial": [
-            {
-                ...
-            }
-        ]
+        "dial": [{
+            ...
+        }]
     },
     "trendpoints": {
-        "point": [
-            {
-                "startValue": "62",
-                "displayValue": "Last Year",
-                "color": "#0075c2",
-                "thickness": "2",
-                "radius": "180",
-                "innerRadius": "82",
-                "alpha": "100",
-
-                "valueInside": "1",
-                "dashed": "1",
-                "dashLen": "2",
-                "dashGap": "1",
-
-                "trendValueDistance": "3"
-            }
-        ]
+        "point": [{
+            "startValue": "62",
+            "displayValue": "Last Year",
+            "color": "#0075c2",
+            "thickness": "2",
+            "radius": "180",
+            "innerRadius": "82",
+            "alpha": "100",
+            "valueInside": "1",
+            "dashed": "1",
+            "dashLen": "2",
+            "dashGap": "1",
+            "trendValueDistance": "3"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -1206,8 +1069,7 @@ For each trend point, you can show a triangular marker and customize it. Use the
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -1218,27 +1080,21 @@ Refer to the code below:
         ]
     },
     "dials": {
-        "dial": [
-            {
-                ...
-            }
-        ]
+        "dial": [{
+            ...
+        }]
     },
     "trendpoints": {
-        "point": [
-            {
-                "startValue": "62",
-                "useMarker": "1",
-                "markerColor": "#F1f1f1",
-                "markerBorderColor": "#666666",
-                "markerRadius": "10",
-                "markerTooltext": "Previous year's average was 62"
-               
-            }
-        ]
+        "point": [{
+            "startValue": "62",
+            "useMarker": "1",
+            "markerColor": "#F1f1f1",
+            "markerBorderColor": "#666666",
+            "markerRadius": "10",
+            "markerTooltext": "Previous year's average was 62"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -1255,8 +1111,7 @@ You can create trend-arcs to represent a range of values, instead of a single va
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -1267,23 +1122,17 @@ Refer to the code below:
         ]
     },
     "dials": {
-        "dial": [
-            {
-                ...
-            }
-        ]
+        "dial": [{
+            ...
+        }]
     },
     "trendpoints": {
-        "point": [
-            {
-                "startValue": "80",
-                "endValue": "100"
-               
-            }
-        ]
+        "point": [{
+            "startValue": "80",
+            "endValue": "100"  
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -1291,7 +1140,6 @@ The chart will look as shown below:
 **<chart>**
 
 ## Customize a trend arc
-
 
 Use the following attributes to customize the functional and cosmetic properties of a trend arc:
 
@@ -1309,8 +1157,7 @@ Use the following attributes to customize the functional and cosmetic properties
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -1321,27 +1168,22 @@ Refer to the code below:
         ]
     },
     "dials": {
-        "dial": [
-            {
-                ...
-            }
-        ]
+        "dial": [{
+            ...
+        }]
     },
     "trendpoints": {
-        "point": [
-            {
-                "startValue": "80",
-                "endValue": "100",
-                "radius": "180",
-                "innerRadius": "5",
-                "displayValue": "Target",
-                "color": "#0075c2",
-                "alpha": "40"
-            }
-        ]
+        "point": [{
+            "startValue": "80",
+            "endValue": "100",
+            "radius": "180",
+            "innerRadius": "5",
+            "displayValue": "Target",
+            "color": "#0075c2",
+            "alpha": "40"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -1370,7 +1212,7 @@ Use the following attributes of the `chart` object to create charts of various a
 
 Refer to the code below:
 
-```
+```json
 **INSERT CODE**
 ```
 
@@ -1388,16 +1230,13 @@ You can represent each point in the circle by two angles - a positive angle and 
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "gaugeStartAngle": "0",
         "gaugeEndAngle": "90"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -1412,16 +1251,13 @@ Based on the start and end angle measures of the gauge, the x and y center point
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "gaugeStartAngle": "45",
         "gaugeEndAngle": "135"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -1436,26 +1272,22 @@ You can manually configure the gauge origins if the automatic adjustment of the 
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "gaugeOriginY": "230"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
 
 **<chart>**
 
-> Note: In the above example, only the `gaugeOriginY` attribute has been modified, to shift the origin upward, you can do similar adjustments with `**gaugeOriginX**` also.
+> In the above example, only the `gaugeOriginY` attribute has been modified, to shift the origin upward, you can do similar adjustments with `**gaugeOriginX**` also.
 
 
 If you were to dynamically resize the gauge now with proper configuration, as explained in the [Dynamically Resizing Gauges|FusionCharts](/dev/gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges.html) section, FusionCharts Suite XT will automatically resize the origin positions and radius specified.|
-
 
 ## Configure gauges for dynamic resizing
 
@@ -1473,13 +1305,10 @@ Whenever you resize the container element, the gauge can also dynamically resize
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "manageResize": "1"
-       
     },
     "colorRange": {
         "color": [
@@ -1487,31 +1316,22 @@ Refer to the code below:
         ]
     },
     "dials": {
-        "dial": [
-            {
-               ...
-            }
-        ]
+        "dial": [{
+            ...
+        }]
     },
     "trendPoints": {
         "point": [
-            ...        ]
+            ...
+        ]
     },
     "annotations": {
-        ...
         "autoscale": "1",
-       
-        "groups": [
-            {
-               ...                    
-
-}
-                ]
-            }
-        ]
+        "groups": [{
+            ...                    
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -1522,10 +1342,9 @@ In the above example, you can see the chart's size set in percentage and the `ma
 
 Two input fields have been rendered with the gauge to enter the target width and height for the container element. If you click the 'Resize' button after entering values in both fields, the width and the height of the container element will be resized based on your inputs. As soon as the dimensions of the container element change, the gauge will automatically resize itself.
 
-> Note: When you dynamically resize, the gauge and all its elements will be scaled proportionally and work perfectly only for constrained resizing, i.e., both width and height of the gauge will resize in proportions. If you do not scale the chart in proportions, the gauge will scale in the least possible proportion and leave empty space all around.
+> When you dynamically resize, the gauge and all its elements will be scaled proportionally and work perfectly only for constrained resizing, i.e., both width and height of the gauge will resize in proportions. If you do not scale the chart in proportions, the gauge will scale in the least possible proportion and leave empty space all around.
 
 ## Dynamically resize gauges with manual values for elements
-
 
 You can configure the various functional and cosmetic properties of gauge elements by manually specifying values for each, in order to dynamically resize them. For example, you can configure the gauge [radius](https://www.fusioncharts.com/dev/gauge-and-widgets-guide/angular-gauge/configuring-dials.html), the [dial radius](https://www.fusioncharts.com/dev/gauge-and-widgets-guide/angular-gauge/configuring-dials.html), the [tick value distance](https://www.fusioncharts.com/dev/gauge-and-widgets-guide/angular-gauge/configuring-tick-marks.html), the [gauge origin](https://www.fusioncharts.com/dev/gauge-and-widgets-guide/angular-gauge/configuring-angles-and-origins.html), etc. Ideally, you should set these values based on specific width and height dimensions for the gauge. You can name these dimensions as the original width and the original height of the gauge.
 
@@ -1553,34 +1372,27 @@ The  `origW` and `origH`attributes function as follows:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "origw": "390",
         "origh": "300",
         "gaugeOriginX": "195",
         "gaugeOriginY": "280",
         "gaugeOuterRadius": "200",
-       
     },
     "colorRange": {
         "color": [
-           ...        ]
+            ...
+        ]
     },
     "dials": {
-        "dial": [
-            {
-                "valueX": "8.9",
-
-           "valueY": "10.1"            
-
-}
-        ]
+        "dial": [{
+            "valueX": "8.9",
+            "valueY": "10.1"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -1597,10 +1409,8 @@ Using the FusionCharts JavaScript API, you can resize an existing chart using th
 
 Refer to the code below:
 
-```
-
+```json
 **INSERT CODE**
-
 ```
 
 The chart will look as shown below:
@@ -1617,15 +1427,12 @@ You can convert a  normal angular gauge to an editable gauge, by either converti
 
 To make all of the dials editable, refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-        
         "editMode": "1"
-      
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -1634,36 +1441,28 @@ The chart will look as shown below:
 
 To make only one of the dials editable, refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
     },
     "colorRange": {
         "color": [
-            ...        ]
+            ...
+        ]
     },
     "dials": {
-        "dial": [
-            {
-                ...
-                "editMode": "1"
-            },
-            {
-                ...
-            }
-        ]
+        "dial": [{
+            ...
+            "editMode": "1"
+        }, {
+            ...
+        }]
     },
     "annotations": {
         ...
-                    }
-                ]
-            }
-        ]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -1702,10 +1501,8 @@ The real time data format for the angular gauge depends on:
 
 In the simplest form, if you're looking to update the value of a gauge, you need to output the data in following format:
 
-```
-
+```json
 &value=34
-
 ```
 
 Here, the output is a single value, 34. So, when the gauge will read this value, it will update itself by setting its value to 34 (if a data range is provided by the gauge, it will first check the value to verify whether it falls within the defined range).
@@ -1714,9 +1511,8 @@ Here, the output is a single value, 34. So, when the gauge will read this value,
 
 If you have multiple dials defined, you can update them all at one go, as shown in the following output, from the real time data provider page:
 
-```
+```json
 &value=34|25|54
-
 ```
 
 Here, you can see 3 values specified in the real time update. So, assuming that you have 3 dials or pointers defined in the chart, each one of them will take the values in sequence and update itself. Therefore, the first dial will now show 34, second one will show 25, and the third one will show 54. The sequence of dials is determined by the order in which they are defined in the JSON/XML data.
@@ -1725,23 +1521,24 @@ Here, you can see 3 values specified in the real time update. So, assuming that 
 
 Another way to update dials is to define a unique ID for each dial and then pass the updated value to the ID. To define an ID for each dial, you can use the code snippet shown below:
 
-```
-"dial": [{
-    ...
-    "id": "CPU1Temp"
-    ...
-}, {
-    ...
-    "id": "CPU2Temp"
-    ...
-}]
+```json
+{
+    "dial": [{
+        ...
+        "id": "CPU1Temp"
+        ...
+    }, {
+        ...
+        "id": "CPU2Temp"
+        ...
+    }]
+}
 ```
 
 You can now update each of these named dials as shown in the following output in your real time data stream:
 
-```
+```json
 &CPU1Temp=23 &CPU2Temp=34
-
 ```
 
 This will change the value of dial 1 (with id as `CPU1Temp`) to 23 and dial 2 (with id as `CPU2Temp`) to 34.
@@ -1750,9 +1547,8 @@ This will change the value of dial 1 (with id as `CPU1Temp`) to 23 and dial 2 (w
 
 If you wish to stop the gauge from polling the server for any more real time updates, you can send the following command from server to do so:
 
-```
+```json
 &stopUpdate=1
-
 ```
 
 After stopping the update, you can restart it by using client-side JavaScript.
@@ -1769,16 +1565,13 @@ Use the following parameters to build a real time gauge that can stream data fro
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-        ...
         "dataStreamUrl": "http://static.fusioncharts.com/sampledata/php/serverLoad.php",
         "refreshInterval": "10"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -1789,16 +1582,14 @@ In the above code, note that the value of the `dataStreamURL` attribute is set t
 
 For example, the `serverLoad.php` data provider will return two random values within 100% in the format shown below:
 
-```
+```json
 &value=84|14
-
 ```
 
 Since both dials have unique IDs defined for them, the gauge can also return data in the format shown below:
 
-```
+```json
 &fd_dial=84&clth_dial=14
-
 ```
 
 > The data provider page needs to be on the same sub-domain on which the chart is hosted and invoked from. Otherwise, the cross-domain security might restrict data access, which means the real time feature won't work.
@@ -1825,7 +1616,7 @@ Use the following JavaScript API methods used to configure the real time angular
 
 Refer to the code below:
 
-```
+```json
 **INSERT CODE**
 ```
 
@@ -1855,7 +1646,7 @@ The event arguments provided in the advanced model that you can use are:
 
 Refer to the code below:
 
-```
+```json
 **INSERT CODE**
 ```
 
@@ -1864,7 +1655,6 @@ The chart will look as shown below:
 **<chart>**
 
 ### The `realTimeUpdateError` event
-
 
 The `realTimeUpdateError` event is raised when an error occurs while performing real time update using datastreamURL.
 
@@ -1876,7 +1666,7 @@ The event arguments provided in the advanced model that you can use are:
 
 Refer to the code below:
 
-```
+```json
 **INSERT CODE**
 ```
 
@@ -1942,7 +1732,7 @@ Use the following attributes to set up the message logger for a real time angula
 
 Refer to the code below:
 
-```
+```json
 **INSERT CODE**
 ```
 
@@ -1953,7 +1743,6 @@ The chart will look as shown below:
 > Note: In the above gauge, you will see a small icon menu appear at the bottom-left of the gauge. The message logger, which does not appear by default, appears when you click this icon and select the `Show Log` option from the menu rendered. To close the message logger window, click the close button in the top-right corner of the window or click anywhere outside the window.
 
 ## Stream messages using the message logger
-
 
 Each real time update you make to the chart can result in addition of message(s) to the logger. Use the following attributes in the real time data stream to stream messages:
 
@@ -1973,7 +1762,7 @@ Each real time update you make to the chart can result in addition of message(s)
 
 Refer to the code below:
 
-```
+```json
 **ISERT CODE**
 ```
 
@@ -2002,12 +1791,10 @@ The chart will look as shown below:
 
 ### Change message type
 
-
 You can see an example of message type `ERROR`, given below:
 
-```
+```json
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=Server CPU Utilization : 84&msgType=ERROR
-
 ```
 
 The chart will look as shown below:
@@ -2019,9 +1806,8 @@ The chart will look as shown below:
 
 To create and render a message as a link, you need to set the URL Encoded link as the value for the `msgText` attribute and set the `msgType` to `LINK`, as shown below:
 
-```
+```json
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=http%3A%2F%2Fwww%2Efusioncharts%2Ecom%3Fid%3D34&msgType=LINK
-
 ```
 
 In the above example, you can see that the message is linked to `[http://www.fusioncharts.com?id=34](http://www.fusioncharts.com/?id=34)`. The link is URL Encoded, as it contains special characters.
@@ -2030,19 +1816,16 @@ In the above example, you can see that the message is linked to `[http://www.fus
 
 ### Link custom text
 
-
 To render custom text as a link, set the `msgType` attribute to `INFO` and provide the entire link in HTML code to the `msgText` attribute, as shown below:
 
-```
+```json
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=<A HREF='http://www.fusioncharts.com?id=34'><U>Server CPU Utilization : 84</U></A>&msgType=INFO
-
 ```
 
 After URL Encoding, the above example will look like the following: 
 
-```
+```json
 &value=84&msgTitle=24-07-2014%2002:22:51&msgText=%3CA%20HREF='http://www.fusioncharts.com?id=34'%3E%3CU%3EServer%20CPU%20Utilization%20:%2084%3C/U%3E%3C/A%3E&msgType=INFO
-
 ```
 
 To specify a link, you need to output the HTML code for the link as `msgText`. Add the `<u>` tag in the HTML code if you want to underline the link. Finally, URL Encode the entire `msgText` parameter and then stream to the chart.
@@ -2051,16 +1834,14 @@ To specify a link, you need to output the HTML code for the link as `msgText`. A
 
 You can instruct the gauge to clear the contents of the visible message logger, by sending the command shown below:
 
-```
+```json
 &clearLog=1
-
 ```
 
 You can also send it as a part of a message stream, as shown below:
 
-```
+```json
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=Server CPU Utilization : 84&msgType=ERROR&clearLog=1
-
 ```
 
 This will clear all the contents of the existing message logger and start afresh.
@@ -2077,19 +1858,19 @@ A real time angular gauge configured to handle messages using custom JavaScript 
 
 A simple implementation of the `myFunction` is as follows:
 
-```
+```json
 var myFunction = function(strMsgId, strMsgTitle, strMsgText, strMsgType){
-            *//This method is invoked when the chart streams real time message to JS.*
-            *//Order of parameters - strMsgId, strMsgTitle, strMsgText, strMsgType*
-            *//- strMsgId - The ID allotted to each message by your server-side code.*
-            *//- strMsgTitle - Title given to each message by your server-side code.*
-            *//- strMsgText - Text of each message.*
-            *//- strMsgType - Type of each message - INFO, ERROR, LITERAL or LINK*
-           alert("A message was streamed from server. \nMessage Id: " + strMsgId + "\nMessage Title: " + strMsgTitle + "\nMessage Text: " + strMsgText + "\nMessage Type: " + strMsgType);
-        }
+    *//This method is invoked when the chart streams real time message to JS.*
+    *//Order of parameters - strMsgId, strMsgTitle, strMsgText, strMsgType*
+    *//- strMsgId - The ID allotted to each message by your server-side code.*
+    *//- strMsgTitle - Title given to each message by your server-side code.*
+    *//- strMsgText - Text of each message.*
+    *//- strMsgType - Type of each message - INFO, ERROR, LITERAL or LINK*
+   alert("A message was streamed from server. \nMessage Id: " + strMsgId + "\nMessage Title: " + strMsgTitle + "\nMessage Text: " + strMsgText + "\nMessage Type: " + strMsgType);
+}
 ```
 
-> In place of a custom function, you can also use a native JavaScript function (for example, `**alert`**) to show messages streamed from the server to the client. But in that case you will only be able to show the value of the `**msgText**` parameter passed from the server.
+> In place of a custom function, you can also use a native JavaScript function (for example, `alert`) to show messages streamed from the server to the client. But in that case you will only be able to show the value of the `msgText` parameter passed from the server.
 
 ## Configure message logger using JavaScript API
 
@@ -2103,13 +1884,6 @@ A real time angular gauge with its message logger configured using JavaScript AP
 
 **<chart>**
 
-```
-**Message Log**
-
-OS update on 01/10/2018 Server CPU Utilization : 69OS update on 01/10/2018 Server CPU Utilization : 67 OS update on 01/10/2018 Server CPU Utilization : 67
-
-```
-
 In order to manipulate the message logger using JavaScript API you need to get a reference of the gauge. Once you get the reference, you can use any of API methods on the logger of the gauge (provided you set it to `on`).
 
 Use the following JavaScript API methods to configure the message logger:
@@ -2120,4 +1894,4 @@ Use the following JavaScript API methods to configure the message logger:
 
 * Use the `clearLog()` method to clear the contents of the log.
 
-> Note: Here we have used the `**feedData()`** method of the FusionCharts API to provide real time update. You can pass these updates from the server through data-provider pages using the `**dataStreamURL` **attribute. You can call the JavaScript APIs of a chart only after it has rendered. You can use the `**Rendered`** event listener to check if a chart has rendered.
+> Here we have used the `feedData()` method of the FusionCharts API to provide real time update. You can pass these updates from the server through data-provider pages using the `dataStreamURL` attribute. You can call the JavaScript APIs of a chart only after it has rendered. You can use the `Rendered` event listener to check if a chart has rendered.
