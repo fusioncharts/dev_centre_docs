@@ -24,7 +24,7 @@ You can make use of configuration options to configure the linear gauge into jus
 
 ## Elements of the linear gauge
 
-### Horizontal scale
+### Horizontal Scale
 
 The linear gauge scale is defined by minimum and maximum values. Within that scale, you can create as many number of ranges as required, to classify your data. For each range, you will have to specify the minimum and maximum limits, a name for the range (than can be rendered as the label for the range), and the hex code for the color to be used for the range.
 
@@ -40,11 +40,11 @@ The colors specified for each range are green, yellow, and red respectively.
 
 > Each color range should have its own unique range value and should not overlap with adjoining color ranges. If you define a range as 0-35, the next range should have its minimum value as 35. Similarly, if you set the upper limit of the chart as 100, the last range should have maximum value as 100.
 
-### Data pointers
+### Data Pointers
 
 Data pointers point to the current data value on the linear gauge scale. For the pointer, you can define the number of sides (for the shape), as well as configure its border, background, and radius. You can also create and configure the cosmetics for multiple pointers for the same gauge scale, each pointing to a different value.
 
-### Tick marks
+### Tick Marks
 
 Tick marks are calibration marks on the horizontal scale to help interpret the reading. There are two types of tick marks, which you can draw on the gauge:
 
@@ -54,7 +54,7 @@ Tick marks are calibration marks on the horizontal scale to help interpret the r
 
 For all the tick marks, you can specify the color and the height, as well as show/hide the values.
 
-### Trend points and trend zones
+### Trend Points and Trend Zones
 
 Trend points are used to represent a single target value on the gauge scale, against which the current value can be compared. Similarly, trend zones are used to represent a range on the scale.
 
@@ -64,7 +64,7 @@ For example, you can use a trend point to mark the percentage of CPU utilization
 
 Using annotations, you can draw custom shapes, text, or load images on the linear gauge.
 
-## Simple linear gauge example
+## Simple Linear Gauge Example
 
 The linear gauge is used to display a specific data point over a horizontal scale using a slider component - also called as the pointer - to indicate the data value. In the example given below, you can see how to create a linear gauge that indicates the server utilization at food.hsm.com.
 
@@ -189,11 +189,13 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/R8fe6/ "@@open-newtab") to edit the above gauge.
 
 You can configure the functional and cosmetic properties of the linear gauge to improve its visual representation.
 
-## Configure pointer properties
+## Configure Pointer Properties
 
 Use the following attributes to configure the cosmetic properties of the pointer:
 
@@ -238,7 +240,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/6a9Tb/ "@@open-newtab") to edit the above gauge.
 
 ## Add tool text and a link to the pointer
 
@@ -273,7 +277,19 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/VLRJ2/ "@@open-newtab") to edit the above gauge.
+
+## Adding Multiple Pointers
+
+A linear gauge rendered with two pointers, showing the server CPU utilization for a transaction server and a web server looks like this:
+
+{% embed_chart gauges-and-widgets-linear-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/K99bA/ "@@open-newtab") to edit the above gauge.
+
+To add multiple pointers, you only need to create multiple instances of the `pointer` object, which belongs to the `pointers` object.
 
 ## Configure the pointer value
 
@@ -309,7 +325,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/Mn2d5/ "@@open-newtab") to edit the above gauge.
 
 Note: The gauge shown above is rendered with two check boxes below it: **Show Value** and **Place Value Above Pointer**. If you select the **Show Value** checkbox, the value of the pointer is shown; if you clear it, the value is hidden. If you select the **Place Value Above Pointer** checkbox, the value is placed above the pointer; if you clear it, the value is shown below.
 
@@ -329,7 +347,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ZVKw9/ "@@open-newtab") to edit the above gauge.
 
 The gauge shown above is rendered with two check boxes below it: **Pointer on Top** and **Pointer at Bottom**. If you select the **Pointer on Top** check box, the pointer is shown along the top edge of the gauge; if you select the **Pointer at Bottom** checkbox, the pointer is shown along the bottom edge of the gauge.
 
@@ -354,7 +374,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/Uen3g/ "@@open-newtab") to edit the above gauge.
 
 ## Configure gauge borders
 
@@ -383,7 +405,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ZN6df/ "@@open-newtab") to edit the above gauge.
 
 ## Hide gauge labels
 
@@ -401,7 +425,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/fCLZ3/ "@@open-newtab") to edit the above gauge.
 
 Look at the **Show Labels?** checkbox rendered below the above linear gauge. If you select this check box, you can see the label for each color range on the gauge scale. If you clear the check box, the labels are hidden.
 
@@ -443,7 +469,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+GIF
+
+Click [here](http://jsfiddle.net/fusioncharts/5zu86/ "@@open-newtab") to edit the above gauge.
 
 Using FusionCharts Suite XT, you can configure several functional and cosmetic properties for tick marks and tick values.
 
@@ -468,7 +496,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/5YYkT/ "@@open-newtab") to edit the above gauge.
 
 ## Configure tick values
 
@@ -496,7 +526,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-12.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/pVKYU/ "@@open-newtab") to edit the above gauge.
 
 ## Configure positions of tick marks and tick values
 
@@ -524,7 +556,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-13.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/Zy3ku/ "@@open-newtab") to edit the above gauge.
 
 ## Configure the number of major and minor tick marks
 
@@ -552,7 +586,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-14.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/8a6Bx/ "@@open-newtab") to edit the above gauge.
 
 Note: In the linear gauge above, you can see the the number of major and minor tick marks explicitly set to 9 and 5, respectively.
 
@@ -595,7 +631,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-15.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/rd45T/ "@@open-newtab") to edit the above gauge.
 
 ## Configure tick mark and tick value padding
 
@@ -618,7 +656,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-16.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/8swzd/ "@@open-newtab") to edit the above gauge.
 
 ## Trend points
 
@@ -674,7 +714,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-17.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/LH9pn/ "@@open-newtab") to edit the above gauge.
 
 ## Add a trend point with a marker
 
@@ -718,7 +760,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-18.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/rRN2s/ "@@open-newtab") to edit the above gauge.
 
 ## Add trend zones to a linear gauge
 
@@ -762,7 +806,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-19.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/fkY6g/ "@@open-newtab") to edit the above gauge.
 
 ## Create an editable linear gauge
 
@@ -781,7 +827,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-20.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/QTEg7/ "@@open-newtab") to edit the above gauge.
 
 > If a gauge has multiple pointers and all have them have to be made editable, the **editMode** attribute is defined for the `chart` object. If a gauge has multiple pointers and only specific ones have to be made editable, the `editMode` attribute is defined as a part of the `pointer` object, which belongs to the `pointers` object.
 
@@ -843,7 +891,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-21.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/r3onjpnt/ "@@open-newtab") to edit the above gauge.
 
 ### Update multiple pointers
 
@@ -881,7 +931,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-22.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/czrprd22/ "@@open-newtab") to edit the above gauge.
 
 ### Update pointer(s) using the named ID
 
@@ -925,13 +977,45 @@ Use the following JavaScript API methods to update pointers using their IDs:
 
 Refer to the code below:
 
-```
-**INSERT CCODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "colorRange": {
+        "color": [{
+            ...
+        }]
+    },
+    "pointers": {
+        "pointer": [{
+            ...
+        }]
+    }
+},
+"events": {
+    "rendered": function(evtObj, argObj) {
+        evtObj.sender.intervalVar = setInterval(function() {
+            //Updating widget with randomly generated values
+            //Transaction server Range 60-70%
+            var trnPrcnt = 60 + parseInt(Math.floor(Math.random() * 10), 10),
+                //Web server Range 75-85%
+                webPrcnt = 75 + parseInt(Math.floor(Math.random() * 10), 10);
+            FusionCharts.items["cpu-linear-gauge-3"].setDataForId("transServer", trnPrcnt);
+            FusionCharts.items["cpu-linear-gauge-3"].setDataForId("webServer", webPrcnt);
+        }, 5000);
+    },
+    "disposed": function(evtObj, argObj) {
+        clearInterval(evtObj.sender.intervalVar);
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-23.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/p7Lausdw/ "@@open-newtab") to edit the above gauge.
 
 > Call the JavaScript APIs of a chart only after it has rendered.
 
@@ -939,13 +1023,84 @@ The chart will look as shown below:
 
 You can retrieve data from gauge once the data has been updated. The data structure you need to retrieve updated data is as follows:
 
-```
-**INSERT CCODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "colorRange": {
+        "color": [{
+            ...
+        }]
+    },
+    "pointers": {
+        "pointer": [{
+            ...
+        }]
+    }
+},
+"events": {
+    'beforeRender': function(evt, args) {
+        // creating div for controllers
+        var controllers = document.createElement('div');
+
+        // Create radio buttons inside div
+        controllers.innerHTML = '<input type="button" value="Get Data" id="getdata_btn" style="margin-left:5px;margin-top:5px;"/><div id="tableView" style="margin: 3px;padding:5px;float: left;"></div>';
+        // set css style for controllers div
+        controllers.style.cssText = '';
+        args.container.appendChild(controllers);
+        controllers.setAttribute('id', 'controllers');
+    },
+    "renderComplete": function(evtObj, argObj) {
+        evtObj.sender.intervalVar = setInterval(function() {
+            var prcnt = 65 + parseInt(Math.floor(Math.random() * 10), 10);
+            FusionCharts.items["cpu-linear-gauge-4"].feedData("value=" + prcnt);
+        }, 5000);
+
+        //Format minutes, seconds by adding 0 prefix accordingly
+        function formatTime(time) {
+            (time < 10) ? (time = "0" + time) : (time = time);
+            return time;
+        }
+
+        function showData() {
+            //Retrieving the data
+            var dataVal = FusionCharts.items["cpu-linear-gauge-4"].getData(1),
+                str = "",
+                currDate = new Date(),
+                label = formatTime(currDate.getHours()) + ":" + formatTime(currDate.getMinutes()) + ":" + formatTime(currDate.getSeconds());
+            //Creating the table format
+            str += '<table border="1" cellpadding="1" cellspacing="0" bordercolor="#cccccc" width="320px">';
+            str += '    <tr>';
+            str += '        <td width="50%" style="font-weight: bold;font-size: 14px;padding: 3px;">Current Time</td>';
+            str += '        <td width="50%" style="font-weight: bold;font-size: 14px;padding: 3px;">Current Utilization</td>';
+            str += '    </tr>';
+            str += '    <tr>';
+            str += '        <td width="50%" style="padding: 3px;" align="center">' + label + '</td>';
+            str += '        <td width="50%" style="padding: 3px;" align="center">' + dataVal + '</td>';
+            str += '    </tr>';
+            //Preparing html string to create the table with data
+
+            str += '</table>';
+            //Showing the table
+            document.getElementById("tableView").style.cssText = 'overflow-y:auto;display:block;margin-top:5px';
+            document.getElementById("tableView").innerHTML = str;
+        }
+
+        document.getElementById("getdata_btn").addEventListener("click", showData);
+
+    },
+    "disposed": function(evtObj, argObj) {
+        clearInterval(evtObj.sender.intervalVar);
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-24.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ee9711vk/ "@@open-newtab") to edit the above gauge.
 
 ### Retrieve data using server-side script
 
@@ -970,7 +1125,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-25.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/yy0bp783/ "@@open-newtab") to edit the above gauge.
 
 ## Stop/restart updates
 
@@ -982,13 +1139,56 @@ Use the following JavaScript API methods to stop and restart receiving real-time
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "colorRange": {
+        "color": [{
+            ...
+        }]
+    },
+    "pointers": {
+        "pointer": [{
+            ...
+        }]
+    }
+},
+"events": {
+    'beforeRender': function(evtObj, argObj) {
+        // creating div for controllers
+        var controllers = document.createElement('div');
+        // Create radio buttons inside div
+        controllers.innerHTML = '<input type="button" value="Stop Update" id="toggleBtn" style="margin-left:5px;margin-top:5px;font-size:13px;padding:2px;" />';
+        argObj.container.appendChild(controllers);
+        controllers.setAttribute('id', 'controllers');
+    },
+    'renderComplete': function(evtObj, argObj) {
+
+        var isStopped = false,
+            startStopUpdate = function() {
+                if (!isStopped) {
+                    isStopped = true;
+                    document.getElementById("toggleBtn").value = "Restart Update";
+                    FusionCharts.items["cs-linear-gauge-6"].stopUpdate();
+                } else {
+                    isStopped = false;
+                    document.getElementById("toggleBtn").value = "Stop Update";
+                    FusionCharts.items["cs-linear-gauge-6"].restartUpdate();
+                }
+            }
+
+        document.getElementById("toggleBtn").addEventListener("click", startStopUpdate);
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-26.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/px5muLjh/ "@@open-newtab") to edit the above gauge.
 
 ## Configure Real-time Events
 
@@ -1014,13 +1214,52 @@ Use the `realtimeUpdateError`event, to track whether an error occurs while perfo
 
 Refer to the code below:
 
-```
-**INSERT CODE**
+```json
+{
+    "chart": {
+        ...
+    },
+    "colorRange": {
+        "color": [{
+            ...
+        }]
+    },
+    "pointers": {
+        "pointer": [{
+            ...
+        }]
+    }
+},
+"events": {
+    "rendered": function(evtObj, argObj) {
+        evtObj.sender.intervalVar = setInterval(function() {
+            var prcnt = 65 + parseInt(Math.floor(Math.random() * 10), 10);
+            FusionCharts.items["cpu-linear-gauge-7"].feedData("value=" + prcnt);
+        }, 5000);
+    },
+    "realTimeUpdateComplete": function(evt, arg) {
+        var annotations = evt.sender.annotations,
+            percentValue = evt.sender.getData(1),
+            colorVal = "#" + ((percentValue > 70) ? "ff6650" : "f6bd11");
+        annotations && annotations.update('rangeText', {
+            "text": "Currently Utilizing " + percentValue + "%"
+        });
+        annotations && annotations.update('rangeBg', {
+            "fillcolor": colorVal
+        });
+
+    },
+    "disposed": function(evtObj, argObj) {
+        clearInterval(evtObj.sender.intervalVar);
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-linear-example-27.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/uq7r85ob/ "@@open-newtab") to edit the above gauge.
 
 ## Troubleshooting
 
