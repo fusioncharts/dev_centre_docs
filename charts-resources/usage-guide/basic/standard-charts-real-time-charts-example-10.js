@@ -75,9 +75,6 @@
                     return time;
                 },
                 updateData = function() {
-
-                    //Get reference to the chart using its ID
-                    // var chartRef = FusionCharts("mychart");
                     //We need to create a querystring format incremental update, containing
                     //label in hh:mm:ss format
                     //and a value (random).

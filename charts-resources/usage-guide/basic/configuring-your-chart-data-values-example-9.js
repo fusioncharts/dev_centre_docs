@@ -1,7 +1,7 @@
 {
     type: 'pie2d',
     renderAt: 'chart-container',
-    id: 'myChart',
+    
     width: '450',
     height: '350',
     dataFormat: 'json',
