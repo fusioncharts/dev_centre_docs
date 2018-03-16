@@ -50,7 +50,7 @@ Here is how the structure looks:
 }
 ```
 
-Let us step-by-step build the properties JSON object by considering the above 3 classifications. First are the properties that define the chart like id, dimensions, chart type, data format. All the available properties can be found [here]({{ site.baseurl }}api/fusioncharts.html):
+Let us step-by-step build the properties JSON object by considering the above 3 classifications. First are the properties that define the chart like id, dimensions, chart type, data format. All the available properties can be found [here]({% site.baseurl %}api/fusioncharts "@@open-newtab"):
 
 
 ```javascript
@@ -75,7 +75,7 @@ var propertiesObject = {
 
 ```
 
-Next are the properties which modify the appearance of the chart like background color, border color, border thickness, caption, plot appearance. These properties vary with the type of the chart. Different properties available against each chart type can be found [here]({{ site.baseurl }}chart-attributes.html?chart=area2d). And these properties are defined within the dataSource property of the JSON object:
+Next are the properties which modify the appearance of the chart like background color, border color, border thickness, caption, plot appearance. These properties vary with the type of the chart. Different properties available against each chart type can be found [here]({% site.baseurl %}chart-attributes/?chart=area2d "@@open-newtab"). And these properties are defined within the dataSource property of the JSON object:
 
 
 ```javascript
