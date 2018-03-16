@@ -14,7 +14,7 @@ A simple linear gauge looks like the following:
 
 {% embed_all gauges-and-widgets-linear-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3w4pm/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/R8fe6/ "@@open-newtab") to edit the above gauge.
 
 You can use a linear gauge to display a specific data point, using a pointer. The pointer moves on a horizontal named color scale to indicate whether the monitored data is within the defined limits.
 
@@ -82,7 +82,6 @@ To create a linear gauge, you need to:
 
 * Divide the gauge scale into three regions to indicate three utilization limits for the server - low, moderate, and high. The result might look like the values given in the table below:
 
-
 Range|Server Utilization Level|Color for the Range|
 -|-|-
 0-35%|Low|Green e.g. #8cba02|
@@ -109,8 +108,7 @@ Range|Server Utilization Level|Color for the Range|
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         "theme": "fint",
@@ -124,85 +122,69 @@ Refer to the code below:
         "valueFontBold": "0"
     },
     "colorRange": {
-        "color": [
-            {
-                "minValue": "0",
-                "maxValue": "35",
-                "label": "Low"
-            },
-            {
-                "minValue": "35",
-                "maxValue": "70",
-                "label": "Moderate"
-            },
-            {
-                "minValue": "70",
-                "maxValue": "100",
-                "label": "High"
-            }
-        ]
+        "color": [{
+            "minValue": "0",
+            "maxValue": "35",
+            "label": "Low"
+        }, {
+            "minValue": "35",
+            "maxValue": "70",
+            "label": "Moderate"
+        }, {
+            "minValue": "70",
+            "maxValue": "100",
+            "label": "High"
+        }]
     },
     "pointers": {
-        "pointer": [
-            {
-                "value": "75"
-            }
-        ]
+        "pointer": [{
+            "value": "75"
+        }]
     },
     "trendPoints": {
-        "point": [
-            {
-                "startValue": "70",
-                "displayValue": " ",
-                "dashed": "1",
-                "showValues": "0"
-            },
-            {
-                "startValue": "85",
-                "displayValue": " ",
-                "dashed": "1",
-                "showValues": "0"
-            },
-            {
-                "startValue": "70",
-                "endValue": "85",
-                "displayValue": " ",
-                "alpha": "40"
-            }
-        ]
+        "point": [{
+            "startValue": "70",
+            "displayValue": " ",
+            "dashed": "1",
+            "showValues": "0"
+        }, {
+            "startValue": "85",
+            "displayValue": " ",
+            "dashed": "1",
+            "showValues": "0"
+        }, {
+            "startValue": "70",
+            "endValue": "85",
+            "displayValue": " ",
+            "alpha": "40"
+        }]
     },
     "annotations": {
         "origw": "400",
         "origh": "190",
         "autoscale": "1",
-        "groups": [
-            {
-                "id": "range",
-                "items": [
-                    {
-                        "id": "rangeBg",
-                        "type": "rectangle",
-                        "x": "$chartCenterX-115",
-                        "y": "$chartEndY-35",
-                        "tox": "$chartCenterX +115",
-                        "toy": "$chartEndY-15",
-                        "fillcolor": "#0075c2"
-                    },
-                    {
-                        "id": "rangeText",
-                        "type": "Text",
-                        "fontSize": "11",
-                        "fillcolor": "#ffffff",
-                        "text": "Recommended Utilization Range : 70% - 85%",
-                        "x": "$chartCenterX",
-                        "y": "$chartEndY-25"
-                    }
-                ]
-            }
-        ]
+        "groups": [{
+            "id": "range",
+            "items": [{
+                "id": "rangeBg",
+                "type": "rectangle",
+                "x": "$chartCenterX-115",
+                "y": "$chartEndY-35",
+                "tox": "$chartCenterX +115",
+                "toy": "$chartEndY-15",
+                "fillcolor": "#0075c2"
+            }, {
+                "id": "rangeText",
+                "type": "Text",
+                "fontSize": "11",
+                "fillcolor": "#ffffff",
+                "text": "Recommended Utilization Range : 70% - 85%",
+                "x": "$chartCenterX",
+                "y": "$chartEndY-25"
+            }]
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -229,8 +211,7 @@ Use the following attributes to configure the cosmetic properties of the pointer
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -241,21 +222,18 @@ Refer to the code below:
         ]
     },
     "pointers": {
-        "pointer": [
-            {
-                "borderColor": "#333333",
-                "borderThickness": "2",
-                "borderAlpha": "60",
-                "bgColor": "#0075c2",
-                "bgAlpha": "75",
-                "radius": "6",
-                "sides": "4",
-                "value": "75"
-            }
-        ]
+        "pointer": [{
+            "borderColor": "#333333",
+            "borderThickness": "2",
+            "borderAlpha": "60",
+            "bgColor": "#0075c2",
+            "bgAlpha": "75",
+            "radius": "6",
+            "sides": "4",
+            "value": "75"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -272,8 +250,7 @@ Use the following attributes to add a tool-text and an external link for the poi
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -284,19 +261,15 @@ Refer to the code below:
         ]
     },
     "pointers": {
-        "pointer": [
-            {
-                "toolText": "Customer satisfaction $value%",
-                "link": "http://www.fusioncharts.com"
-               
-            }
-        ]
+        "pointer": [{
+            "toolText": "Customer satisfaction $value%",
+            "link": "http://www.fusioncharts.com"
+        }]
     }
 }
-
 ```
 
-> Note - To add multiple pointers to a gauge, you simply need to create multiple instances of the `pointer` object, which belongs to the `pointers` object. Refer to the example given above.
+> To add multiple pointers to a gauge, you simply need to create multiple instances of the `pointer` object, which belongs to the `pointers` object. Refer to the example given above.
 
 The chart will look as shown below:
 
@@ -312,8 +285,7 @@ Use the following attributes to configure the pointer value:
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
        ...
@@ -324,26 +296,15 @@ Refer to the code below:
         ]
     },
     "pointers": {
-        "pointer": [
-            {
-                ...
-
-                "showValue": "1",
-
-                "valueAbovePointer": "1"
-            },
-
-{
-                ...
-
-                "showValue": "0"
-
-               
-            }
-        ]
+        "pointer": [{
+            "showValue": "1",
+            "valueAbovePointer": "1"
+        }, {
+            ...
+            "showValue": "0"   
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -358,15 +319,12 @@ You can configure the linear gauge to show the pointer along the top edge or the
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-        ...
         "pointerOnTop": "0"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -385,15 +343,13 @@ Use the following attributes to configure the gauge gradient mix:
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-        ...
         "gaugeFillMix": "{light-10},{light-70},{dark-10}",
         "gaugeFillRatio": "40,20,40"
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -414,17 +370,15 @@ Use the following attributes to configure gauge borders:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "showGaugeBorder": "1",
         "gaugeBorderColor": "{light-50}",
         "gaugeBorderThickness": "4",
         "gaugeBorderAlpha": "100"
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -437,15 +391,12 @@ To hide the gauge labels, simply set the value of the `showGaugeLabels` attribut
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "showGaugeLabels": "0"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -476,8 +427,7 @@ You can use hover effects to improve the visual representation of your gauge. Si
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         "pointerBgHoverColor": "#0075c2",
@@ -487,9 +437,8 @@ Refer to the code below:
         "pointerBorderHoverColor": "#333333",
         "pointerBorderHoverAlpha": "100",
         "pointerHoverRadius": "11"
-
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -508,18 +457,13 @@ Use the following attributes to show/hide tick marks in linear gauges:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "showTickMarks": "1",
         "showTickValues": "1"
-        
-
     },
-
-
+}
 ```
 
 The chart will look as shown below:
@@ -540,17 +484,14 @@ Use the following attributes to configure tick values:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "tickValueStep": "2",
         "tickValueDecimals": "1",
         "forceTickValueDecimals": "1"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -571,17 +512,14 @@ Use the following attributes to configure the positions of tick marks and tick v
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "ticksBelowGauge": "0",
         "placeTicksInside": "1",
         "placeValuesInside": "1"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -602,17 +540,14 @@ Use the following attributes to configure the number of tick marks:
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "majorTMNumber": "9",
         "minorTMNumber": "5",
         "adjustTM": "1"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -643,11 +578,9 @@ Use the following attributes to configure cosmetic properties, such as color, tr
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "majorTMColor": "#163143",
         "majorTMAlpha": "50",
         "majorTMHeight": "7",
@@ -656,9 +589,8 @@ Refer to the code below:
         "minorTMAlpha": "30",
         "minorTMHeight": "4",
         "minorTMThickness": "1"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -675,16 +607,13 @@ By default, the gauge automatically decides the padding distance for tick marks 
 
 Refer to the code below:
 
-```
-
+```json
 {
-    "chart": {
-        
+    "chart": { 
         "tickMarkDistance": "5",
         "tickValueDistance": "0"
-       
     },
-
+}
 ```
 
 The chart will look as shown below:
@@ -715,16 +644,14 @@ Note: The above attributes belong to the points object, which in turn belongs to
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
     },
     "colorRange": {
         "color": [
-            …
-
+            ...
         ]
     },
     "pointers": {
@@ -733,20 +660,16 @@ Refer to the code below:
         ]
     },
     "trendPoints": {
-        "point": [
-            {
-                "startValue": "70",
-                "color": "#dddddd",
-                "dashed": "1",
-                "dashlen": "3",
-                "dashgap": "3",
-                "thickness": "2"
-            },
-           
-        ]
+        "point": [{
+            "startValue": "70",
+            "color": "#dddddd",
+            "dashed": "1",
+            "dashlen": "3",
+            "dashgap": "3",
+            "thickness": "2"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -767,8 +690,7 @@ Use the following attributes to add and customize a trend point with a marker:
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
        ...
@@ -784,19 +706,14 @@ Refer to the code below:
         ]
     },
     "trendPoints": {
-        "point": [
-            {
-                ...
-                "useMarker": "1",
-                "markerColor": "#0075c2",
-                "markerBorderColor": "#666666",
-                "markerRadius": "5"
-            },
-           
-        ]
+        "point": [{
+            "useMarker": "1",
+            "markerColor": "#0075c2",
+            "markerBorderColor": "#666666",
+            "markerRadius": "5"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -817,8 +734,7 @@ You can use trend zones to represent a range of values, instead of a single valu
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -834,17 +750,14 @@ Refer to the code below:
         ]
     },
     "trendPoints": {
-        "point": [
-            {
-                "startValue": "70",
-                "endValue": "85",
-                "displayValue": "Recommended{br}Range (70-85%)",
-                "alpha": "30"
-            }
-        ]
+        "point": [{
+            "startValue": "70",
+            "endValue": "85",
+            "displayValue": "Recommended{br}Range (70-85%)",
+            "alpha": "30"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -857,15 +770,13 @@ You can use the linear gauge in FusionCharts Suite XT as an input control, to vi
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-       ...
+        ...
         "editMode": "1"
     },
-   
-
+}
 ```
 
 The chart will look as shown below:
@@ -902,7 +813,7 @@ The real-time data format of your linear gauge depends on:
 
 In the simplest form, if you want to update the value of a gauge, you need to output the data in following format:
 
-```
+```json
 &value=75
 ```
 
@@ -912,26 +823,22 @@ Use the `feedData(strData)` method to feed real time data to the gauge. The data
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-       ...
+        ...
     },
     "colorRange": {
         "color": [
-           ...
+            ...
         ]
     },
     "pointers": {
-        "pointer": [
-            {
-                "value": "75"
-            }
-        ]
+        "pointer": [{
+            "value": "75"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -942,7 +849,7 @@ The chart will look as shown below:
 
 If you have defined multiple pointers, you can update them all at one go, as shown in the following output from the real-time data provider page:
 
-```
+```json
 &value=34|25
 ```
 
@@ -950,8 +857,7 @@ Here, you are specifying two values in the real-time update. So, assuming that y
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
         ...
@@ -962,19 +868,15 @@ Refer to the code below:
         ]
     },
     "pointers": {
-        "pointer": [
-            {
-                ...
-                "value": "75"
-            },
-            {
-                ...
-                "value": "92"
-            }
-        ]
+        "pointer": [{
+            ...
+            "value": "75"
+        }, {
+            ...
+            "value": "92"
+        }]
     }
 }
-
 ```
 
 The chart will look as shown below:
@@ -985,30 +887,26 @@ The chart will look as shown below:
 
 You can update pointers by defining a unique ID for each pointer and then passing the updated data value to the ID. To do so, use the code snippet shown below:
 
-```
-
-"pointers": {
-       "pointer": [
-        {
+```json
+{
+    "pointers": {
+       "pointer": [{
             ...
             "id": "gGrovePointer",
             ...
-        },
-        {
+        }, {
             ...
             "id": "bFieldPointer",
             ...
-        }
-    ]
+        }]
+    }
 }
-
 ```
 
 You can now update each of these named pointers in your real-time data stream, as shown in the following output:
 
-```
+```json
 &gGrovePointer=65 &bFieldPointer=80
-
 ```
 
 This will change the value of pointer 1 (having the id gGrovePointer) to 65 and pointer 2 (having the id bFieldPointer) to 80.
@@ -1035,7 +933,7 @@ The chart will look as shown below:
 
 **<chart>**
 
-> Note: You can call the JavaScript APIs of a chart only after it has rendered.
+> Call the JavaScript APIs of a chart only after it has rendered.
 
 ### Retrieve data from the gauge
 
@@ -1061,16 +959,13 @@ Use the following parameters to configure real-time updates using server-side sc
 
 Refer to the code below:
 
-```
-
+```json
 {
     "chart": {
-       
         "dataStreamUrl": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-linear-gauge-real-time-gauges-php-1.php",
         "refreshInterval": "10"
     },
-    
-
+}
 ```
 
 The chart will look as shown below:
