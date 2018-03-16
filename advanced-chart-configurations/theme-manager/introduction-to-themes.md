@@ -6,11 +6,9 @@ heading: Introduction to Themes
 chartPresent: true
 ---
 
-<script defer type="text/javascript" src="{{ site.baseurl | append:'assets/fusioncharts/themes/fusioncharts.theme.carbon.js'}}"></script>
-
-<script defer type="text/javascript" src="{{ site.baseurl | append:'assets/fusioncharts/themes/fusioncharts.theme.ocean.js'}}"></script>
-
-<script defer type="text/javascript" src="{{ site.baseurl | append:'assets/fusioncharts/themes/fusioncharts.theme.zune.js'}}"></script>
+<script defer type="text/javascript" src="{% site.baseurl %}/nodex/fusionmaps/themes/fusioncharts.theme.carbon.js"></script>
+<script defer type="text/javascript" src="{% site.baseurl %}/nodex/fusionmaps/themes/fusioncharts.theme.ocean.js"></script>
+<script defer type="text/javascript" src="{% site.baseurl %}/nodex/fusionmaps/themes/fusioncharts.theme.zune.js"></script>
 
 Using FusionCharts Suite XT you can create web applications that include multiple instances of the various [charts, gauges, and maps](http://www.fusioncharts.com/charts/) that the product offers. For all such instances, however, it becomes imperative to maintain a consistent look and feel across the application.
 While you can set the cosmetic and functional attributes to the required values in the JSON/XML data for each chart, this solution is feasible only if you have a small application with fewer number of charts. For large applications, replicating a single change across all charts will be a cumbersome task.
