@@ -4,13 +4,17 @@ description: A linear gauge uses a horizontal scale to display the data range. T
 heading: Linear Gauge
 ---
 
+> This chart type belongs to **FusionWidgets XT**.
+
 A linear gauge uses a horizontal scale to display the data range along with a fully configurable data pointer (or multiple pointers) to indicate the data value on the scale. The FusionCharts Suite XT linear gauge is a real-time gauge, which can update its data at specified intervals, without requiring any page refreshes.
 
 ## Basics of a linear gauge
 
 A simple linear gauge looks like the following:
 
-**<chart>**
+{% embed_all gauges-and-widgets-linear-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/3w4pm/ "@@open-newtab") to edit the above gauge.
 
 You can use a linear gauge to display a specific data point, using a pointer. The pointer moves on a horizontal named color scale to indicate whether the monitored data is within the defined limits.
 

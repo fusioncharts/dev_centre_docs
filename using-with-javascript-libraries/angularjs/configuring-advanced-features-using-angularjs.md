@@ -14,7 +14,7 @@ chartPresent: true
 
 * [Creating charts using the Angular-FusionCharts directive]({% site.baseurl %}/using-with-javascript-libraries/angularjs/creating-charts-using-the-angular-fusioncharts-directive "@@open-newtab")
 
-In addition to an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/) for plotting static and real-time data, FusionCharts Suite XT includes several advanced features that let you add more context to your chart and make data interpretation easy. These features include [annotations]({% site.baseurl %}/chart-guide/chart-configuration/annotations "@@open-newtab").
+In addition to an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/) for plotting static and real-time data, FusionCharts Suite XT includes several advanced features that let you add more context to your chart and make data interpretation easy. These features include [annotations]({% site.baseurl %}/chart-guide/chart-configurations/annotations "@@open-newtab").
 
 ## Adding Trend-lines to a Chart
 

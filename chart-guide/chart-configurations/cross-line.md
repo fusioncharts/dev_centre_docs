@@ -125,7 +125,7 @@ Set `tooltipGrayOutColor` attribute to specify the color of the unfocused plot i
 
 The chart will look like as shown below:
 
-![Cross Line]({% site.baseurl %}/gif/chart-configurations-cross-line-image-4.gif)
+![Cross Line]({% site.baseurl %}/gif/configurations-crossline-gif-4.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/46por5dL/ "@@open-newtab") to edit the above chart.
 
