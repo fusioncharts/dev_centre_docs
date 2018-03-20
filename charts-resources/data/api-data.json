@@ -26,7 +26,7 @@
                 "type": [
                   "string"
                 ],
-                "description": "Provide the name of the chart type to be rendered. Click [here]{% linkTo tutorials/getting-started/list-of-charts.md %}{:target='_blank'} for the complete list of charts in FusionCharts Suite XT.\n\nThis parameter controls what chart will be rendered. The data passed to the chart has to be compatible with the chart type specified here.\n\nAlternatively, you can also call [chartType]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#chartType) on the chart instance to provide the chart type.",
+                "description": "Provide the name of the chart type to be rendered. Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') for the complete list of charts in FusionCharts Suite XT.\n\nThis parameter controls what chart will be rendered. The data passed to the chart has to be compatible with the chart type specified here.\n\nAlternatively, you can also call [chartType]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#chartType) on the chart instance to provide the chart type.",
                 "defaultvalue": "",
                 "optional": true,
                 "nullable": false,
@@ -17683,7 +17683,7 @@
           "access": "",
           "scope": "instance",
           "virtual": false,
-          "description": "Triggered when you start drawing a selection box on a select-scatter/zoom-scatter chart. \r\r >[__Try It Yourself! (select-scatter chart)__](http://jsfiddle.net/fusioncharts/51t1gz2a/ '@@open-newtab') \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/thf9fxbg/){:target='_blank'}\r\r",
+          "description": "Triggered when you start drawing a selection box on a select-scatter/zoom-scatter chart. \r\r >[__Try It Yourself! (select-scatter chart)__](http://jsfiddle.net/fusioncharts/51t1gz2a/ '@@open-newtab') \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/thf9fxbg/ '@@open-newtab') \r\r",
           "examples": {},
           "params": {
             "eventObj": {
@@ -17914,7 +17914,7 @@
           "access": "",
           "scope": "instance",
           "virtual": false,
-          "description": "Triggered when you complete drawing a selection box on a select-scatter/zoom-scatter chart. \r\r >[__Try It Yourself! (select-scatter chart)__](http://jsfiddle.net/fusioncharts/xL5yegvv/){:target='_blank'}\r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/6Lays0wo/){:target='_blank'}\r\r",
+          "description": "Triggered when you complete drawing a selection box on a select-scatter/zoom-scatter chart. \r\r >[__Try It Yourself! (select-scatter chart)__](http://jsfiddle.net/fusioncharts/xL5yegvv/ '@@open-newtab') \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/6Lays0wo/ '@@open-newtab') \r\r",
           "examples": {},
           "params": {
             "eventObj": {
@@ -23774,7 +23774,7 @@
           "access": "",
           "scope": "instance",
           "virtual": false,
-          "description": "Triggered every time there is an error in updating chart data in real-time,  using the `dataStreamURL` attribute. \n\n .[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ugtf9jjh/){:target='_blank'} \n\n",
+          "description": "Triggered every time there is an error in updating chart data in real-time,  using the `dataStreamURL` attribute. \n\n .[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ugtf9jjh/ '@@open-newtab') \n\n",
           "examples": {},
           "params": {
             "eventObj": {
