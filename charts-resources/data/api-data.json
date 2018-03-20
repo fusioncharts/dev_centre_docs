@@ -13661,7 +13661,8 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time a zoom-line/zoom-scatter chart is reset to its original values (when the zooming history is cleared). \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/9ds5ztsm/){:target='_blank'} \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/qyjwq3un/){:target='_blank'} \r\r",
+                    "description": "Triggered every time a zoom-line/zoom-scatter chart is reset to its original values (when the zooming history is cleared). \r\r >[Try It Yourself! (zoom-line chart)](http://jsfiddle.net/fusioncharts/5tajR/ "@@open-newtab")
+\r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/qyjwq3un/){:target='_blank'} \r\r",
                     "examples": {},
                     "params": {
                         "eventObj": {
