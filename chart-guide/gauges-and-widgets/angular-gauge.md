@@ -1325,7 +1325,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/dh2h5drx/ "@@open-newtab") to edit the above chart.
 
-> Note: Along with positioning the origins, a JavaScript angular gauge also scales itself to best-fit within the available space.
+> Along with positioning the origins, a JavaScript angular gauge also scales itself to best-fit within the available space.
 
 ## Manually set gauge origins
 

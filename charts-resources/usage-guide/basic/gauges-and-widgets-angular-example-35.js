@@ -2,7 +2,7 @@
     type: 'angulargauge',
     renderAt: 'chart-container',
     width: '100%',
-    height: '100%',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
