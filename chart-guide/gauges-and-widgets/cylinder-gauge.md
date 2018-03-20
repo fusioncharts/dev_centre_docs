@@ -352,7 +352,7 @@ Refer to the code below:
 
 The gauge will look like as shown below:
 
-GIF
+![Cylinder]({% site.baseurl %}/gif/gauges-and-widgets-cylinder.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/cSkE3/ "@@open-newtab") to edit the above gauge.
 

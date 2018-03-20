@@ -295,7 +295,7 @@ FusionCharts Suite XT allows you to display hover effects for the gauge. Set the
 
 The gauge will look  like as shown below:
 
-GIF
+![Bulb]({% site.baseurl %}/gif/gauges-and-widgets-bulb-gif.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/0ehkf2sx/ "@@open-newtab") to edit the above chart.
 

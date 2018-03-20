@@ -363,7 +363,7 @@ Refer to the code below:
 
 The gauge will look like as shown below:
 
-GIF
+![Led]({% site.baseurl %}/gif/gauges-and-widgets-led.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/ah36v6e0/ "@@open-newtab") to edit the above gauge.
 

@@ -313,7 +313,7 @@ Refer to the code below:
 
 The gauge will look like as shown below:
 
-GIF
+![Thermometer]({% site.baseurl %}/gif/gauges-and-widgets-thermometer.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/hyvLk5d8/ "@@open-newtab") to edit the above gauge.
 
