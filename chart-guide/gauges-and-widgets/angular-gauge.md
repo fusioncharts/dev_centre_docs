@@ -1467,6 +1467,70 @@ The sample given above is calculated with a original width of 390 pixels and ori
 
 > The dynamic resizing feature will not work if you have set **"autoScale": "0"**.
 
+## Set Alert Manager
+
+Gauges can be set to update in real time, either programmatically or by polling the server for data. To know more about how to configure a real-time gauge, click [here]{% linkTo tutorials/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges.md %}.
+
+Real-time gauges can be made more intuitive by setting an alert that indicates when a defined set of threshold data values are reached.
+
+For example, if you are monitoring the CPU utilization on the server and want to display a warning message when it goes above 70%, you can set an alert using the __Alert Manager__.
+
+An `alert` object contains the following attributes:
+
+* Specify the `minValue` attribute to set the minimum value for the alert range. For example, to define an alert for the range 0 - 50, `minValue` will be `0`(inclusive).
+
+* Specify the `maxValue` attribute to set the maximum value for the alert range. For example, to define an alert for the range 0-50, `maxValue` will be 50 (inclusive).
+
+* `action` attribute is to used when the value on the gauge matches an alert range. Possible values for the this attribute are:
+
+  * `CALLJS` – Calls a JavaScript function that is specified in the `param` attribute (explained below).
+  * `SHOWANNOTATION` –  Displays an annotation item or a group. The group id of the annotation  is specified in `param` attribute.
+
+* `param` attribute is used to set the action of the parameter depending on the type of action:
+
+  * `CALLJS` -   takes the name of JavaScript function and its parameters
+  * `SHOWANNOTATION` - takes the ID of the annotation items or a .
+
+Due to some security policies, usage of `eval` has been removed and some of the features of param attribute has been deprecated:
+
+* Special characters like `(`, `)`, `-` and `,` cannot be passed as a parameter while function call.
+* Multiple functions cannot be passed after `param` attribute.
+* A function cannot be defined after `param` attribute.
+
+Let's create a sample to show the server CPU utilization of __akme.com__. The angular gauge is configured with three color-coded bands to identify levels of utilization of the server. When the CPU utilization is over 70%, an alert is set to display a warning message. The message to be displayed is passed to the `showAlert()` JavaScript method.
+
+The code snippet to set up the alert manager is as follows:
+
+```
+chart {
+  ...
+  "alerts": {
+    "alert": [{
+      // set the threshold range
+      "minvalue": "0",
+      "maxvalue": "50",
+      // action on reaching the threshold range, JavaScript function showAlert()
+      "action": "callJS",
+      "param": "showAlert('Current server CPU Utilization is low');"
+    }]
+  }
+}
+```
+
+An angular gauge configured to do this is shown below:
+
+{% embed_chart gauges-and-widgets-angular-example-48.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/k6he33en/ "@@open-newtab") to edit the above chart.
+
+The container element for `alert` is `alerts`, which is a child of the `chart` element. `alert` is an array of objects where every object defines a threshold range (alert range). One of the following actions can be specified with any alert range:
+
+* Call a JavaScript function
+
+* Show a predefined annotation
+
+> Make sure that the alert ranges do not overlap.
+
 ## Use JS API function resizeTo() to resize charts
 
 Using the FusionCharts JavaScript API, you can resize an existing chart using the resizeTo() function. You can pass the new width and height of the chart in pixels or percent parameters to the function, or change the width and height property of the chart object and then call the function. The API Method signature for the function is - resizeTo(width:String, height:String).
