@@ -1277,28 +1277,11 @@ Use the following attributes of the `chart` object to create charts of various a
 
 * Specify the inner radius (in pixels) for the color range scale, using the `gaugeInnerRadius` attribute. Note that this attribute can take two types of values, either as exact pixels, or as a percentage of the outer radius.
 
-Refer to the code below:
-
-```json
-{
-    "chart": {
-        "gaugeStartAngle": "0",
-        "gaugeEndAngle": "90"
-    }
-}
-```
-
-The chart will look as shown below:
-
-{% embed_chart gauges-and-widgets-angular-example-32.js %}
-
-Click [here](http://jsfiddle.net/fusioncharts/gfp1wve3/ "@@open-newtab") to edit the above chart.
-
 ## Configure gauge angles
 
 The angular gauge processes angles as shown in the images below:
 
-**IMAGE**
+![Angular-Angle]({% site.baseurl %}/images/angular-angles-2.jpg)
 
 You can represent each point in the circle by two angles - a positive angle and a negative angle, to plot bi-directional angular gauges. To flip the gauge, all you need to do is swap the default values of the `gaugeStartAngle` and the `gaugeEndAngle` attributes.
 
@@ -1315,7 +1298,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-angular-example-32.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/gfp1wve3/ "@@open-newtab") to edit the above chart.
 
 > When specifying the start and end angles for gauges, always make sure the difference between start and end angle is not more than 360 degrees. Otherwise, the gauge will not behave as intended.
 
@@ -1336,7 +1321,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-angular-example-33.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/dh2h5drx/ "@@open-newtab") to edit the above chart.
 
 > Note: Along with positioning the origins, a JavaScript angular gauge also scales itself to best-fit within the available space.
 
@@ -1356,12 +1343,11 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-angular-example-34.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/o4cfv31a/ "@@open-newtab") to edit the above chart.
 
 > In the above example, only the `gaugeOriginY` attribute has been modified, to shift the origin upward, you can do similar adjustments with `**gaugeOriginX**` also.
-
-
-If you were to dynamically resize the gauge now with proper configuration, as explained in the [Dynamically Resizing Gauges|FusionCharts](/dev/gauge-and-widgets-guide/angular-gauge/dynamically-resizing-gauges.html) section, FusionCharts Suite XT will automatically resize the origin positions and radius specified.|
 
 ## Configure gauges for dynamic resizing
 
@@ -1410,7 +1396,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-angular-example-35.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/wLLzwssf/ "@@open-newtab") to edit the above chart.
 
 In the above example, you can see the chart's size set in percentage and the `manageResize` attribute set to `1` (true) in the chart object of the JSON data. These make the gauge capable of re-calculating the space available and adjusting to its new surroundings, whenever you modify the dimensions of the parent container.
 
@@ -1438,7 +1426,7 @@ This may lead to either a cropped gauge or a gauge with lots of extra space, and
 
 To take care of this scenario, you need to pass the original width and height (as values to the attributes `origW` and `origH`, respectively) to the gauge. On receiving the original width and height, the gauge will check them against the current dimensions and scale everything accordingly. 
 
-The  `origW` and `origH`attributes function as follows:
+The `origW` and `origH`attributes function as follows:
 
 * Specify the original width of the gauge using the `origW` attribute, if you want to dynamically resize the chart. It refers to the width based on which the various elements of the gauge have been manually configured.
 
@@ -1471,11 +1459,13 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-angular-example-36.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/v5f4szq0/ "@open-newtab") to edit the above chart.
 
 The sample given above is calculated with a original width of 390 pixels and original height of 300 pixels. You can also see that a host of attributes (`gaugeOriginX`, `gaugeOriginY`, and `gaugeOuterRadius`, as well as `valueX` and `valueY` on the `dial` object) have been defined with fixed coordinate values. Now, if you have to render this chart with any values other than 390 pixels wide and 300 pixels tall, several of the gauge elements may not be positioned as intended. To solve this issue, you can define `origw` and `origh` attributes to `390` and `300` respectively, in the `chart` object, and provide a different width and height (`300` and `280`) for the chart. The chart will still appear as expected. In a similar way, you can also dynamically scale and resize the annotations present in a gauge.
 
-> Note: The dynamic resizing feature will not work if you have set **"autoScale": "0"**.
+> The dynamic resizing feature will not work if you have set **"autoScale": "0"**.
 
 ## Use JS API function resizeTo() to resize charts
 
@@ -1484,12 +1474,70 @@ Using the FusionCharts JavaScript API, you can resize an existing chart using th
 Refer to the code below:
 
 ```json
-**INSERT CODE**
+{
+    "chart": {
+        ...
+    },
+    "dials": {
+        "dial": [{
+            ...
+        }]
+    },
+    "annotations": {
+        "groups": [{
+            ...
+            "items": [{
+                ...
+            }]
+        }]
+    }
+},
+"events": {
+    "initialized": function(evtObj, argObj) {
+        var scoreArray = [],
+            score,
+            speedScore,
+            flag,
+            diff;
+            evtObj.sender.resetInterval = setInterval(function() {
+                var i,
+                    percent,
+                    num = 30;
+                score = 40 +
+                    parseInt(Math.floor(Math.random() * 170));
+                if (!speedScore) {
+                    speedScore = score;
+                }
+                diff = (score - speedScore);
+
+                for (i = 0; i < 5; i++) {
+                    percent = num - (i * 5);
+                    scoreArray[i] = diff * (percent / 100);
+                }
+                flag = 0;
+
+            }, 1000);
+            evtObj.sender.changeInterval = setInterval(function() {
+                if (speedScore && diff) {
+                    speedScore += scoreArray[flag];
+                    flag += 1;
+                    FusionCharts.items["myGauge"].feedData("value=" + speedScore);
+
+                }
+            }, 2000);
+    },
+    "disposed": function(evtObj, argObj) {
+        clearInterval(evtObj.sender.resetInterval);
+        clearInterval(evtObj.sender.changeInterval);
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-angular-example-37.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/aesajvL0/ "@@open-newtab") to edit the above chart.
 
 ## Create an editable angular gauge
 
@@ -1511,7 +1559,9 @@ To make all of the dials editable, refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-angular-example-38.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/6benn62w/ "@@open-newtab") to edit the above chart.
 
 To make only one of the dials editable, refer to the code below:
 
@@ -1541,7 +1591,9 @@ To make only one of the dials editable, refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-angular-example-39.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/zdf4kym8/ "@@open-newtab") to edit the above chart.
 
 ## Create an editable gauge in the earlier versions
 
@@ -1550,8 +1602,6 @@ If you are using an earlier version of FusionCharts Suite XT, you might benefit 
 Once you change the value of the gauge, the latter automatically calls the `FC_ChartUpdated(DOMId)` JavaScript function.
 
 You need to define this method in your HTML page and then write the JavaScript code to retrieve the data using `getData(index)` or `getDataForId(id)` method as shown below:
-
-To look at the HTML + JavaScript code required to retrieve data from the dial when a user changes the value, click [here](http://docs.fusioncharts.com/widgets/Contents/Angular/Edit.html).
 
 ## Create real time angular gauge
 
@@ -1650,7 +1700,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-angular-example-40.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/quqyc6va/ "@@open-newtab") to edit the above chart.
 
 In the above code, note that the value of the `dataStreamURL` attribute is set to `[http://static.fusioncharts.com/sampledata/php/serverLoad.php](http://static.fusioncharts.com/sampledata/php/serverLoad.php)` and the `refreshInterval` attribute to `10`. This means after every 10 seconds the chart will fetch data from the URL and update the dials.
 
@@ -1691,18 +1743,76 @@ Use the following JavaScript API methods used to configure the real time angular
 Refer to the code below:
 
 ```json
-**INSERT CODE**
+{
+    "chart": {
+        ...
+    },
+    "dials": {
+        "dial": [{
+            ...
+        }]
+    },
+    "annotations": {
+        "groups": [{
+            ...
+            "items": [{
+                ...
+            }]
+        }]
+    }
+},
+"events": {
+    "initialized": function(evtObj, argObj) {
+        var scoreArray = [],
+            score,
+            speedScore,
+            flag,
+            diff;
+            evtObj.sender.resetInterval = setInterval(function() {
+                var i,
+                    percent,
+                    num = 30;
+                score = 40 +
+                    parseInt(Math.floor(Math.random() * 170));
+                if (!speedScore) {
+                    speedScore = score;
+                }
+                diff = (score - speedScore);
+
+                for (i = 0; i < 5; i++) {
+                    percent = num - (i * 5);
+                    scoreArray[i] = diff * (percent / 100);
+                }
+                flag = 0;
+
+            }, 1000);
+            evtObj.sender.changeInterval = setInterval(function() {
+                if (speedScore && diff) {
+                    speedScore += scoreArray[flag];
+                    flag += 1;
+                    FusionCharts.items["myGauge"].feedData("value=" + speedScore);
+
+                }
+            }, 2000);
+    },
+    "disposed": function(evtObj, argObj) {
+        clearInterval(evtObj.sender.resetInterval);
+        clearInterval(evtObj.sender.changeInterval);
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-angular-example-41.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/vqef0be2/ "@@open-newtab") to edit the above chart.
 
 ## Configure events associated with real time updates
 
 You can use the following events to track real time updates on gauges:
 
-### The `realTimeUpdateComplete` event
+### The `realTimeUpdateComplete` and `realTimeUpdateError` event
 
 The `realTimeUpdateComplete` event is raised every time the real time gauge updates itself with new data. This event is raised in any of the following cases:
 
@@ -1718,18 +1828,6 @@ The event arguments provided in the advanced model that you can use are:
 
 * `argumentsObject`: This object contains the values of the updated data and the previous data.
 
-Refer to the code below:
-
-```json
-**INSERT CODE**
-```
-
-The chart will look as shown below:
-
-**<chart>**
-
-### The `realTimeUpdateError` event
-
 The `realTimeUpdateError` event is raised when an error occurs while performing real time update using datastreamURL.
 
 The event arguments provided in the advanced model that you can use are:
@@ -1741,12 +1839,64 @@ The event arguments provided in the advanced model that you can use are:
 Refer to the code below:
 
 ```json
-**INSERT CODE**
+{
+    "chart": {
+        ...
+    },
+    "dials": {
+        "dial": [{
+            ...
+        }]
+    },
+    "annotations": {
+        "groups": [{
+            ...
+            "items": [{
+                ...
+            }]
+        }]
+    }
+},
+events: {
+    'beforeRender': function(evt, args) {
+        var score = document.createElement('div');
+        score.setAttribute('id', 'score-detail');
+        score.innerHTML = 'Current server CPU Utilization is: <b>78</b>';
+        score.style.cssText = "font-family:'Helvetica Neue', Arial; font-size: 14px; padding:10px 0 10px 20px;";
+        args.container.parentNode.insertBefore(score, args.container.nextSibling);
+    },
+    "rendered": function(evtObj, argObj) {
+        evtObj.sender.intervalVar = setInterval(function() {
+            var chartIns = evtObj.sender,
+                prcnt = 65 + parseInt(Math.floor(Math.random() * 10), 10);
+
+            chartIns.feedData("value=" + prcnt);
+
+        }, 5000);
+    },
+    "realtimeUpdateComplete": function(evtObj, argObj) {
+        var updtObj = argObj && argObj.updateObject,
+            values = updtObj && updtObj.values,
+            updtValStr = values && values[0],
+            updtVal = updtValStr &&
+            parseFloat(updtValStr).toFixed(0),
+            divToUpdate = document.getElementById("score-detail");
+
+        divToUpdate.innerHTML = "Current server CPU Utilization is : <b>" + updtVal + "</b>";
+
+
+    },
+    "disposed": function(evtObj, argObj) {
+        clearInterval(evtObj.sender.intervalVar);
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-angular-example-42.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/bmpxxz4v/ "@@open-newtab") to edit the above chart.
 
 ## Troubleshoot problems with real time updates
 
@@ -1807,12 +1957,18 @@ Use the following attributes to set up the message logger for a real time angula
 Refer to the code below:
 
 ```json
-**INSERT CODE**
+{
+    "chart": {
+        "useMessageLog": "1"
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-angular-example-43.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/zqz1apsr/ "@@open-newtab") to edit the above chart.
 
 > Note: In the above gauge, you will see a small icon menu appear at the bottom-left of the gauge. The message logger, which does not appear by default, appears when you click this icon and select the `Show Log` option from the menu rendered. To close the message logger window, click the close button in the top-right corner of the window or click anywhere outside the window.
 
@@ -1837,12 +1993,19 @@ Each real time update you make to the chart can result in addition of message(s)
 Refer to the code below:
 
 ```json
-**ISERT CODE**
+{
+    "chart": {
+        "dataStreamUrl": "https://static.fusioncharts.com/sampledata/php/streamErrorMessages.php",
+        "useMessageLog": "1"
+    }
+}
 ```
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-angular-example-44.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/6cr4u10t/ "@@open-newtab") to edit the above chart.
 
 > The messages to be logged should be provided in the real time data stream and not in the JSON data. real time data stream refers to the data provided by the URL specified in the `**dataStreamURL`** attribute.
 
@@ -1857,10 +2020,6 @@ You can see an example of real time update string passed by the server to the me
 
 Here, you initially have the `&value` parameter, which is absorbed by the gauge for data update. Next, you have the `msgTitle` and the `msgText` parameters which get absorbed by the message logger. You can also see that the date and the time are set as the title and the text "Server Utilization: ", along with the value `84`, are set as the message.
 
-The chart will look as shown below:
-
-**<chart>**
-
 > If you are passing any special characters as a part of your message text or title (like &, % etc.), you will need to URL Encode the text/title.
 
 ### Change message type
@@ -1873,10 +2032,11 @@ You can see an example of message type `ERROR`, given below:
 
 The chart will look as shown below:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-angular-example-45.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/uvp6nLwb/ "@@open-newtab") to edit the above chart.
 
 ### Create messages with an external link
-
 
 To create and render a message as a link, you need to set the URL Encoded link as the value for the `msgText` attribute and set the `msgType` to `LINK`, as shown below:
 
@@ -1928,7 +2088,9 @@ You have seen how to log messages streamed from the server in the in-built visua
 
 A real time angular gauge configured to handle messages using custom JavaScript functions looks like the following:
 
-<chart>
+{% embed_chart gauges-and-widgets-angular-example-46.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/8oz1e2tq/ "@@open-newtab") to edit the above chart.
 
 A simple implementation of the `myFunction` is as follows:
 
@@ -1956,7 +2118,9 @@ Using FusionCharts Suite XT, you can configure the message logger, in order to:
 
 A real time angular gauge with its message logger configured using JavaScript API looks like the following:
 
-**<chart>**
+{% embed_chart gauges-and-widgets-angular-example-47.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/ng37L2qx/ "@@open-newtab") to edit the above chart.
 
 In order to manipulate the message logger using JavaScript API you need to get a reference of the gauge. Once you get the reference, you can use any of API methods on the logger of the gauge (provided you set it to `on`).
 
