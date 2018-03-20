@@ -1347,7 +1347,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/o4cfv31a/ "@@open-newtab") to edit the above chart.
 
-> In the above example, only the `gaugeOriginY` attribute has been modified, to shift the origin upward, you can do similar adjustments with `**gaugeOriginX**` also.
+> In the above example, only the `gaugeOriginY` attribute has been modified, to shift the origin upward, you can do similar adjustments with `gaugeOriginX` also.
 
 ## Configure gauges for dynamic resizing
 
