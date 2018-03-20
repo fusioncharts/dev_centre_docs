@@ -433,7 +433,7 @@ Look at the **Show Labels?** checkbox rendered below the above linear gauge. If 
 
 > An alternate way to not show gauge labels is by not initializing the `label` attribute for the `color` object.
 
-## Configure hover effects for the gauge
+## Configure hover effects for the pointer
 
 You can use hover effects to improve the visual representation of your gauge. Simply configure the pointer cosmetics to change when you hover the mouse pointer over it. Use the following attributes to configure hover effects for the gauge
 
