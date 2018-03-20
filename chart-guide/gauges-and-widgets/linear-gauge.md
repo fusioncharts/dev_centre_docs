@@ -187,7 +187,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-2.js %}
 
@@ -238,7 +238,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-3.js %}
 
@@ -275,7 +275,7 @@ Refer to the code below:
 
 > To add multiple pointers to a gauge, you simply need to create multiple instances of the `pointer` object, which belongs to the `pointers` object. Refer to the example given above.
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-4.js %}
 
@@ -323,7 +323,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-6.js %}
 
@@ -345,7 +345,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-7.js %}
 
@@ -372,7 +372,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-8.js %}
 
@@ -403,7 +403,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-9.js %}
 
@@ -423,7 +423,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-10.js %}
 
@@ -467,7 +467,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 GIF
 
@@ -494,7 +494,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-11.js %}
 
@@ -524,7 +524,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-12.js %}
 
@@ -554,7 +554,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-13.js %}
 
@@ -584,7 +584,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-14.js %}
 
@@ -629,7 +629,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-15.js %}
 
@@ -654,7 +654,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-16.js %}
 
@@ -712,7 +712,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-17.js %}
 
@@ -758,7 +758,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-18.js %}
 
@@ -804,7 +804,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-19.js %}
 
@@ -825,7 +825,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-20.js %}
 
@@ -889,7 +889,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-21.js %}
 
@@ -929,7 +929,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-22.js %}
 
@@ -1011,7 +1011,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-23.js %}
 
@@ -1096,7 +1096,7 @@ You can retrieve data from gauge once the data has been updated. The data struct
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-24.js %}
 
@@ -1108,7 +1108,7 @@ Use the following parameters to configure real-time updates using server-side sc
 
 * Use the `dataStreamURL`parameter to set the path of the page, which is supposed to relay real-time data to the chart. If you have special characters as a part of the data stream URL, like **?** or **&**, you need to URL Encode the entire `dataStreamURL` attribute. Note that the page needs to be on the same sub-domain on which you host the chart and invoke it from. Otherwise, security will restrict it from accessing the data, and the real-time feature won't work. 
 
-* Use the `refreshInterval`parameter to specify the number of seconds, after which the chart will look for new data.
+* Use the `refreshInterval`parameter to specify the number of seconds, after which The gauge will look  for new data.
 
 * Use the `dataStamp`parameter to add a constantly changing data stamp to the real-time data URL, so as to maintain a particular state.
 
@@ -1123,7 +1123,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-25.js %}
 
@@ -1184,7 +1184,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-26.js %}
 
@@ -1255,7 +1255,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-27.js %}
 

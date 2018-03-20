@@ -146,7 +146,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-3.js %}
 
@@ -175,7 +175,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-4.js %}
 
@@ -195,7 +195,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-5.js %}
 
@@ -228,7 +228,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-6.js %}
 
@@ -256,7 +256,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-7.js %}
 
@@ -276,7 +276,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-8.js %}
 
@@ -301,7 +301,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-9.js %}
 
@@ -325,7 +325,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-10.js %}
 
@@ -350,7 +350,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-11.js %}
 
@@ -375,7 +375,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-12.js %}
 
@@ -401,7 +401,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-13.js %}
 
@@ -421,7 +421,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-14.js %}
 
@@ -465,7 +465,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-15.js %}
 
@@ -495,7 +495,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-16.js %}
 
@@ -530,7 +530,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-17.js %}
 
@@ -565,7 +565,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-18.js %}
 
@@ -612,7 +612,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 GIF
 
@@ -642,7 +642,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 GIF
 
@@ -671,7 +671,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 GIF
 
@@ -718,7 +718,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-19.js %}
 
@@ -823,7 +823,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-20.js %}
 
@@ -872,7 +872,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-21.js %}
 
@@ -897,7 +897,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-22.js %}
 
@@ -922,7 +922,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-23.js %}
 
@@ -965,7 +965,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-24.js %}
 
@@ -985,7 +985,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-25.js %}
 
@@ -1010,7 +1010,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-26.js %}
 
@@ -1038,7 +1038,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-27.js %}
 
@@ -1108,7 +1108,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-28.js %}
 
@@ -1158,7 +1158,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-29.js %}
 
@@ -1198,7 +1198,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-30.js %}
 
@@ -1251,7 +1251,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-31.js %}
 
@@ -1296,7 +1296,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-32.js %}
 
@@ -1319,7 +1319,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-33.js %}
 
@@ -1341,7 +1341,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-34.js %}
 
@@ -1394,7 +1394,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-35.js %}
 
@@ -1457,7 +1457,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-36.js %}
 
@@ -1597,7 +1597,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-37.js %}
 
@@ -1621,7 +1621,7 @@ To make all of the dials editable, refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-38.js %}
 
@@ -1653,7 +1653,7 @@ To make only one of the dials editable, refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-39.js %}
 
@@ -1747,7 +1747,7 @@ Use the following parameters to build a real time gauge that can stream data fro
 
 * Use the `dataStreamURL` parameter to set the path of the page, which is supposed to relay real time data to the chart. If you have special characters as a part of your data stream URL, like `?` or `&`, then you need to encode the entire URL in `dataStreamURL`. This page needs to be on the same sub-domain on which you host the chart and invoke it from. Otherwise, security will restrict it from accessing the data and hence the real time feature won't work. Example: `dataStreamURL`=`'liveQuote.aspx?name=xyz'`
 
-* Use the `refreshInterval` parameter to specify the number of seconds after which the chart will look for new data.
+* Use the `refreshInterval` parameter to specify the number of seconds after which The gauge will look  for new data.
 
 * Use the `dataStamp` parameter to add a constantly changing data stamp to the real time data URL, so as to maintain a state. A data stamp is basically a token of information that passes with each update to the chart and back to the server, helping in easily identifying the last data sent to the gauge.
 
@@ -1762,7 +1762,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-40.js %}
 
@@ -1866,7 +1866,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-41.js %}
 
@@ -1956,7 +1956,7 @@ events: {
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-42.js %}
 
@@ -2028,7 +2028,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-43.js %}
 
@@ -2065,7 +2065,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-44.js %}
 
@@ -2094,7 +2094,7 @@ You can see an example of message type `ERROR`, given below:
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=Server CPU Utilization : 84&msgType=ERROR
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-45.js %}
 
