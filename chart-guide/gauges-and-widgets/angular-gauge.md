@@ -644,7 +644,7 @@ Refer to the code below:
 
 The gauge will look like as shown below:
 
-GIF
+{% embed_chart gauges-and-widgets-angular-example-49.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/zc72rux0/ "@@open-newtab") to edit the above chart.
 
@@ -673,7 +673,7 @@ Refer to the code below:
 
 The gauge will look like as shown below:
 
-GIF
+{% embed_chart gauges-and-widgets-angular-example-50.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/RXe47/ "@@open-newtab") to edit the above chart.
 
