@@ -1,7 +1,6 @@
 {
     type: 'hlineargauge',
     renderAt: 'chart-container',
-    id: 'cpu-linear-gauge-4',
     width: '400',
     height: '170',
     dataFormat: 'json',
@@ -52,9 +51,10 @@
             controllers.setAttribute('id', 'controllers');
         },
         "renderComplete": function(evtObj, argObj) {
-            evtObj.sender.intervalVar = setInterval(function() {
+            var chartRef = evtObj.sender;
+            chartRef.intervalVar = setInterval(function() {
                 var prcnt = 65 + parseInt(Math.floor(Math.random() * 10), 10);
-                FusionCharts.items["cpu-linear-gauge-4"].feedData("value=" + prcnt);
+                chartRef.feedData("value=" + prcnt);
             }, 5000);
 
             //Format minutes, seconds by adding 0 prefix accordingly
@@ -65,7 +65,7 @@
 
             function showData() {
                 //Retrieving the data
-                var dataVal = FusionCharts.items["cpu-linear-gauge-4"].getData(1),
+                var dataVal = chartRef.getData(1),
                     str = "",
                     currDate = new Date(),
                     label = formatTime(currDate.getHours()) + ":" + formatTime(currDate.getMinutes()) + ":" + formatTime(currDate.getSeconds());
