@@ -3964,8 +3964,8 @@
                 "alias": "atyrau",
                 "specSheet": "/maps/spec-sheets/atyrau"
             }, {
-                "name": "Baikonur",
-                "alias": "baikonur",
+                "name": "Baikonur City",
+                "alias": "baikonurcity",
                 "specSheet": "/maps/spec-sheets/baikonurcity"
             }, {
                 "name": "East Kazakhstan",
