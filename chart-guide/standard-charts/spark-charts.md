@@ -838,7 +838,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-21.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/http://jsfiddle.net/fusioncharts/LQuEr/2// "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/6c5hbzLn/ "@@open-newtab") to edit the above chart.
 
 > When configuring period blocks, ensure that the period length is always less than the number of data points that you have specified, as period length is directly numbered on data points.
 

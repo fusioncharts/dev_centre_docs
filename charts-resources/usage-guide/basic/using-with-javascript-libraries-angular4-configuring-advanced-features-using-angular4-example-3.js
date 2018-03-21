@@ -60,7 +60,7 @@
         }]
     },
     "events": {
-        "initialized": function(eventObj, dataObj) {
+        "rendered": function(eventObj, dataObj) {
 
             document.getElementById("selector").addEventListener("change", function(ev) {
                 var chartType = ev.target.value;

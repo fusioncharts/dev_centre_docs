@@ -1687,17 +1687,17 @@
                 "alias": "kilis",
                 "specSheet": "/maps/spec-sheets/kilis"
             }, {
-                "name": "Kırıkkale",
-                "alias": "kırıkkale",
-                "specSheet": "/maps/spec-sheets/kırıkkale"
+                "name": "Kirikkale",
+                "alias": "kirikkale",
+                "specSheet": "/maps/spec-sheets/kirikkale"
             }, {
-                "name": "Kırklareli",
-                "alias": "kırklareli",
-                "specSheet": "/maps/spec-sheets/kırklareli"
+                "name": "Kirklareli",
+                "alias": "kirklareli",
+                "specSheet": "/maps/spec-sheets/kirklareli"
             }, {
-                "name": "Kırsehir",
-                "alias": "kırsehir",
-                "specSheet": "/maps/spec-sheets/kırsehir"
+                "name": "Kirsehir",
+                "alias": "kirsehir",
+                "specSheet": "/maps/spec-sheets/kirsehir"
             }, {
                 "name": "Kocaeli",
                 "alias": "kocaeli",
@@ -3569,8 +3569,8 @@
                 "specSheet": "/maps/spec-sheets/oecusse"
             }, {
                 "name": "Viqueque",
-                "alias": "viqueue",
-                "specSheet": "/maps/spec-sheets/viqueue"
+                "alias": "viqueque",
+                "specSheet": "/maps/spec-sheets/viqueque"
             }]
         }, {
             "name": "India",
@@ -3964,8 +3964,8 @@
                 "alias": "atyrau",
                 "specSheet": "/maps/spec-sheets/atyrau"
             }, {
-                "name": "Baikonur",
-                "alias": "baikonur",
+                "name": "Baikonur City",
+                "alias": "baikonurcity",
                 "specSheet": "/maps/spec-sheets/baikonurcity"
             }, {
                 "name": "East Kazakhstan",
@@ -5297,9 +5297,9 @@
                 "alias": "sirdaryo",
                 "specSheet": "/maps/spec-sheets/sirdaryo"
             }, {
-                "name": "Surnondaryo",
-                "alias": "surnondaryo",
-                "specSheet": "/maps/spec-sheets/surnondaryo"
+                "name": "Surxondaryo",
+                "alias": "surxondaryo",
+                "specSheet": "/maps/spec-sheets/surxondaryo"
             }, {
                 "name": "Tashkent City",
                 "alias": "tashkentcity",

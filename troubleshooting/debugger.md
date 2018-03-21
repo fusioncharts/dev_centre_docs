@@ -7,7 +7,7 @@ chartPresent: false
 ---
 
 
-When building charts with FusionCharts Suite XT, if you run into errors, you can refer [here]({% site.baseurl %}/dev/api/fusioncharts/namespaces/debugger "@@open-newtab") to trace such errors, and track the flow of events of the charts to investigate further.
+When building charts with FusionCharts Suite XT, if you run into errors, you can refer [here]({% site.baseurl %}/api/fusioncharts/namespaces/debugger "@@open-newtab") to trace such errors, and track the flow of events of the charts to investigate further.
 
 Possible errors that Harry’s developers may encounter:
 
