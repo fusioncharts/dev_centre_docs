@@ -16,7 +16,7 @@
             "chartBottomMargin": "40",
             "valueFontSize": "11",
             "valueFontBold": "0",
-            "dataStreamUrl": "../../../resources/php/gauge-and-widgets-guide-linear-gauge-real-time-gauges-php-2.php",
+            "dataStreamUrl": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-linear-gauge-real-time-gauges-php-2.php",
             "refreshInterval": "10"
         },
         "colorRange": {
