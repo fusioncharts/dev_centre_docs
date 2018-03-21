@@ -125,6 +125,6 @@ The following is a complete list of `chart` level attributes that can be used to
 
 Currently, using the FusionCharts export handler, when a chart having a custom logo is exported as an image, the logo is not present in the generated image. We are introducing an experimental feature, which allows the logo present in the chart to be exported as well and be displayed in the resultant image.
 
-To use this feature, set `exportEnabled` to __1__ (because we are using the server-side export feature), and set `exportHandler` to the url __http://export.api3.fusioncharts.com/logo/__. Using this exporter, the generated output will contain the logo along with the chart. 
+To use this feature, set `exportEnabled` to __1__ (because we are using the server-side export feature), and set `exportHandler` to the url __http&#58;//export.api3.fusioncharts.com/logo/__. Using this exporter, the generated output will contain the logo along with the chart. 
 
-> Note that this is an experimental feature and thus might not be a completely reliable solution.
+> This is an experimental feature and thus might not be a completely reliable solution.

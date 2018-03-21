@@ -79,6 +79,6 @@ You will have to specify the end point of the export server. In order to do this
 ```htmlmount FusionchartsExporter::Engine, at: "<path>"```
 
 
-For example, if you want your export server hosted at __http://example.com/export__, then add the following lines:
+For example, if you want your export server hosted at __http&#58;//example.com/export__, then add the following lines:
 
 ```javascriptmount FusionchartsExporter::Engine, at: "export"```

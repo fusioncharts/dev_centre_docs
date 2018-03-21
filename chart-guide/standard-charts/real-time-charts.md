@@ -7,8 +7,6 @@ breadcrumb: [["Home", "/"], ["Real-time Charts"]]
 
 > These chart types belong to **FusionWidgets XT**.
 
-Real-time Charts
-
 Real-time charts, also known as data streaming charts, are charts that automatically update themselves after every `n` seconds, without any page refreshes, by getting new data from the server.
 
 FusionCharts Suite XT currently offers the following six real-time charts:
@@ -305,7 +303,7 @@ After you have stopped updates for a chart, you can restart updates either by us
 
 For real-time charts that show the message logger, update various parameters for the message logger in real-time.
 
-# Multiple Datasets and Updates
+## Multiple Datasets and Updates
 
 Real-time charts in the FusionCharts Suite XT can be plotted for any number of datasets. This feature, however, is configured differently from adding and updating a single dataset.
 
@@ -469,7 +467,7 @@ A real-time column chart configured to display 15 data plots at a time is shown 
 
 Click [here](http://jsfiddle.net/fusioncharts/1xL2nd76/ "@@open-newtab") to edit the real-time column chart.
 
-# Add Data Stamp
+## Add Data Stamp
 
 Let's plot a real-time line chart to monitor the stock prices for Harry's SuperMart. T stock price change to be recorded every 5 seconds. However, to efficiently consume bandwidth, you want to this stream this data to the chart only after every 15 seconds.
 
@@ -545,7 +543,7 @@ dataProviderPage.php?FCTimeIndex=37564&dataStamp=13:45:15
 ```
 Note how the `dataStamp` has been updated to the one specified by the real-time update. This helps to constantly update the data stamp and thereby, keep track of the last data sent to chart.
 
-# Set Alert Manager
+## Set Alert Manager
 
 The alert manager helps you define thresholds for data values and perform specific actions for the defined thresholds. For example, if you are plotting a real-time temperature chart and wish to play a sound when the temperature reaches between 90 and 100 Fahrenheit, you can do this using the alert manager.
 
@@ -629,7 +627,7 @@ Refer to the code given below:
 }
 ```
 
-# Set Message Logger
+## Set Message Logger
 
 FusionCharts Suite XT uses the concept of streaming and showing real-time messages on the chart using the message logger. The message logger can be effectively used to show necessary real-time information or live error bugs.
 
@@ -861,7 +859,7 @@ If you get JavaScript errors when accessing the above functions, make sure that:
 
 * Accessing these functions after the chart has rendered (you can use the [rendered](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events.html#event-rendered) [event listener](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-typedefs.html#eventListener) to track if a chart has finished rendering).
 
-# Clear Chart View
+## Clear Chart View
 
 Chart clearing helps to reduce CPU usage by real-time charts when they have been running live for several days or months. Clearing the chart re-instantiates many objects in the chart, thereby clearing a lot of memory.
 

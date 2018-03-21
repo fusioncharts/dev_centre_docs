@@ -40,7 +40,7 @@
     },
     "events": {
         "rendered": function(evtObj, argObj) {
-        	var charRef = events.sender;
+        	var charRef = events.evtObj;
             evtObj.sender.intervalVar = setInterval(function() {
                 var prcnt = 65 + parseInt(Math.floor(Math.random() * 10), 10);
                 

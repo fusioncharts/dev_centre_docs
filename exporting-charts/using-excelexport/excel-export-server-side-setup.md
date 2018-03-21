@@ -84,7 +84,7 @@ The above code:
 ExportMVCRegistrar RegisterRoutes(RouteCollection routes, [string routeURL = "api/v1.0/export"])`
 ```
 
-The routeURL is optional and the default URL is `api/v1.0/export`. This is the URL of the export endpoint and should be set as `exportExcelHandler` field in chart config (client-side setup). For e.g., default endpoint URL will be __http://yourURL.com/api/v1.0/export__.
+The routeURL is optional and the default URL is `api/v1.0/export`. This is the URL of the export endpoint and should be set as `exportExcelHandler` field in chart config (client-side setup). For e.g., default endpoint URL will be __http&#58;//yourURL.com/api/v1.0/export__.
 
 
 * To disable incoming request validation, add the code given below to the **web.config** file:

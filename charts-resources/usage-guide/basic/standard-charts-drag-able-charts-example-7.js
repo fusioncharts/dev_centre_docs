@@ -15,6 +15,7 @@
         "categories": [{
             "category": [{
                 "label": "Poultry"
+
             }, {
                 "label": "Rice"
             }, {
@@ -101,7 +102,6 @@
                             tableStr += "<td style='" + tdStyle + "'>empty</td>";
                         } else {
                             tableStr += "<td style='" + tdStyle + "'>" + data[i][j] + "</td>";
-                            console.log(data[i][j]);
                         }
                     }
                 }

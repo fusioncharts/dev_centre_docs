@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "caption": "Split of Visitors by Age Group",
+            "caption": "Split of Visitors by Age Groupxx",
             "subCaption": "Last year",
             "paletteColors": "#0075c2,#1aaf5d,#f2c500,#f45b00,#8e0000",
             "bgColor": "#ffffff",
@@ -53,29 +53,29 @@
         'beforeRender': function(event, args) {
             var container = args.container;
 
-            var btnClone = $('<input/>')
-                .attr({
-                    'id': 'clone-button',
-                    'type': 'button',
-                    'value': 'Append clone'
-                })
-                .click(function() {
-                    appendClone();
-                    btnClone.remove();
-                });
+            var btnClone = document.createElement('input');
+            btnClone.id = 'clone-button';
+            btnClone.type = 'button';
+            btnClone.value = 'Append clone';
 
-            container.parentNode.insertBefore(btnClone[0], container.nextSibling);
+            btnClone.addEventListener('click', function(){
+                appendClone(container);
+                btnClone.remove();
+            });
 
-            var appendClone = function() {
-                // Clone the chart to create a column chart representation of the same data
-                $(container).cloneFusionCharts(function() {
-                    // Append the cloned chart to the same chart container
-                    $(container).appendFusionCharts(this[0]);
-                }, {
+            container.parentNode.insertBefore(btnClone, container.nextSibling);
+
+            var appendClone = function(container) {
+                var con = document.createElement('div');
+                con.id = "chart-con1";
+                container.appendChild(con);
+
+                var obj = event.sender.clone({
                     'id': 'chart-clone',
                     'type': 'column2d',
                     'events': {}
                 });
+                obj.render(con.id);
             };
         }
     }

@@ -1,6 +1,5 @@
 {
     type: 'dragnode',
-    id: 'subwaymap',
     renderAt: 'chart-container',
     width: '800',
     height: '600',
