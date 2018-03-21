@@ -1469,7 +1469,7 @@ The sample given above is calculated with a original width of 390 pixels and ori
 
 ## Set Alert Manager
 
-Gauges can be set to update in real time, either programmatically or by polling the server for data. To know more about how to configure a real-time gauge, click [here]{% linkTo tutorials/gauge-and-widgets-guide/real-time-gauges/setting-up-real-time-gauges.md %}.
+Gauges can be set to update in real time, either programmatically or by polling the server for data. To know more about how to configure a real-time gauge, click [here]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#create-real-time-angular-gauge-55).
 
 Real-time gauges can be made more intuitive by setting an alert that indicates when a defined set of threshold data values are reached.
 
@@ -2071,7 +2071,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/6cr4u10t/ "@@open-newtab") to edit the above chart.
 
-> The messages to be logged should be provided in the real time data stream and not in the JSON data. real time data stream refers to the data provided by the URL specified in the `**dataStreamURL`** attribute.
+> The messages to be logged should be provided in the real time data stream and not in the JSON data. real time data stream refers to the data provided by the URL specified in the `dataStreamURL` attribute.
 
 ### Example of a real time update
 
@@ -2144,7 +2144,7 @@ You can also send it as a part of a message stream, as shown below:
 
 This will clear all the contents of the existing message logger and start afresh.
 
-> If you send `**&clearLog=1`** with each real time update, the chart will not show any messages in the logger, as the log is being cleared with each update. As such, take caution to send this command only when the log needs to be cleared.
+> If you send `&clearLog=1` with each real time update, the chart will not show any messages in the logger, as the log is being cleared with each update. As such, take caution to send this command only when the log needs to be cleared.
 
 ## Handle messages in JavaScript
 

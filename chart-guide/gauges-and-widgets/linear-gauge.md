@@ -329,7 +329,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/Mn2d5/ "@@open-newtab") to edit the above gauge.
 
-Note: The gauge shown above is rendered with two check boxes below it: **Show Value** and **Place Value Above Pointer**. If you select the **Show Value** checkbox, the value of the pointer is shown; if you clear it, the value is hidden. If you select the **Place Value Above Pointer** checkbox, the value is placed above the pointer; if you clear it, the value is shown below.
+> The gauge shown above is rendered with two check boxes below it: **Show Value** and **Place Value Above Pointer**. If you select the **Show Value** checkbox, the value of the pointer is shown; if you clear it, the value is hidden. If you select the **Place Value Above Pointer** checkbox, the value is placed above the pointer; if you clear it, the value is shown below.
 
 ## Configure pointer position
 
@@ -680,7 +680,7 @@ Use the following attributes to add and customize a trend point for a linear gau
 
 * Specify the thickness (in pixels) of the trend line, using the `thickness` attribute.
 
-Note: The above attributes belong to the points object, which in turn belongs to the trendPoints object.
+> The above attributes belong to the points object, which in turn belongs to the trendPoints object.
 
 Refer to the code below:
 
