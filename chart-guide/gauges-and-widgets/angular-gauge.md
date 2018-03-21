@@ -1469,7 +1469,7 @@ The sample given above is calculated with a original width of 390 pixels and ori
 
 ## Set Alert Manager
 
-Gauges can be set to update in real time, either programmatically or by polling the server for data. To know more about how to configure a real-time gauge, click [here]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#create-real-time-angular-gauge-55 '@@open-newtab').
+Gauges can be set to update in real time, either programmatically or by polling the server for data. To know more about how to configure a real-time gauge, click [here]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#create-real-time-angular-gauge-55).
 
 Real-time gauges can be made more intuitive by setting an alert that indicates when a defined set of threshold data values are reached.
 
