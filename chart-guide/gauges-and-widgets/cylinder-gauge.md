@@ -112,7 +112,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/QseLf/ "@@open-newtab") to edit the above gauge.
 
-> Note: if you do not customize the fill color, the cylinder gauge will use the default color as the fill color instead.
+> If you do not customize the fill color, the cylinder gauge will use the default color as the fill color instead.
 
 ## Customize cylinder origin, radius, and height
 
@@ -145,7 +145,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/AN44L/ "@@open-newtab") to edit the above gauge.
 
-> Note: If you don't customize the origin, radius, and height, the cylinder gauge will automatically calculate the best-fit coordinates and size for the cylinder. 
+> If you don't customize the origin, radius, and height, the cylinder gauge will automatically calculate the best-fit coordinates and size for the cylinder. 
 
 ## Configure chart value display
 
@@ -261,7 +261,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/qtk9z/ "@@open-newtab") to edit the above gauge.
 
-> Note: Unless you manually disable the automatic distribution of tick marks, the cylinder gauge can automatically calculate and display the best feasible number of major tick marks.
+> Unless you manually disable the automatic distribution of tick marks, the cylinder gauge can automatically calculate and display the best feasible number of major tick marks.
 
 ## Configure tick value step
 
