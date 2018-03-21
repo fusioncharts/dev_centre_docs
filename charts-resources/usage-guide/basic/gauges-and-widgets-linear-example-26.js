@@ -1,7 +1,7 @@
 {
     type: 'hlineargauge',
     renderAt: 'chart-container',
-    id: 'cs-linear-gauge-6',
+    id: 'cs-linear-gauge-26',
     width: '400',
     height: '170',
     dataFormat: 'json',
@@ -60,11 +60,11 @@
                     if (!isStopped) {
                         isStopped = true;
                         document.getElementById("toggleBtn").value = "Restart Update";
-                        FusionCharts.items["cs-linear-gauge-6"].stopUpdate();
+                        FusionCharts.items["cs-linear-gauge-26"].stopUpdate();
                     } else {
                         isStopped = false;
                         document.getElementById("toggleBtn").value = "Stop Update";
-                        FusionCharts.items["cs-linear-gauge-6"].restartUpdate();
+                        FusionCharts.items["cs-linear-gauge-26"].restartUpdate();
                     }
                 }
 

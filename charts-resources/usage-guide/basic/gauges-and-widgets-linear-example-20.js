@@ -1,7 +1,7 @@
 {
     type: 'hlineargauge',
     renderAt: 'chart-container',
-    id: 'csi-linear-gauge',
+    id: 'csi-linear-gauge-20',
     width: '400',
     height: '190',
     dataFormat: 'json',
