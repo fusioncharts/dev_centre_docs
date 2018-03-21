@@ -1,5 +1,5 @@
 {
-        type: 'maps/Kırsehir',
+        type: 'maps/kirikkale',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"TR.KH.AC","value":888},{"id":"TR.KH.AP","value":3538},{"id":"TR.KH.BO","value":584},{"id":"TR.KH.CI","value":1936},{"id":"TR.KH.KA","value":2751},{"id":"TR.KH.KH","value":995},{"id":"TR.KH.MU","value":3940}]
+            "data": [{"id":"TR.KK.BH","value":888},{"id":"TR.KK.BL","value":3538},{"id":"TR.KK.CE","value":584},{"id":"TR.KK.DE","value":1936},{"id":"TR.KK.KA","value":2751},{"id":"TR.KK.KE","value":995},{"id":"TR.KK.KK","value":3940},{"id":"TR.KK.SU","value":4076},{"id":"TR.KK.YA","value":2161}]
         }
     }

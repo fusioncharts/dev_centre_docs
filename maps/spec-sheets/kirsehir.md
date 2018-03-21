@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/Kırsehir
+#### JavaScript Alias: maps/kirsehir
 
 Map Name: Baikonur City
 Dimensions (Width x Height): 421x391
 
 
 
-{% embed_spec_map Kırsehir-map.js %}
+{% embed_spec_map kirsehir-map.js %}
 
 ### List of Entities
 

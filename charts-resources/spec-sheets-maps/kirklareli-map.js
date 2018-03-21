@@ -1,5 +1,5 @@
 {
-        type: 'maps/kırıkkale',
+        type: 'maps/kirklareli',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"TR.KK.BH","value":888},{"id":"TR.KK.BL","value":3538},{"id":"TR.KK.CE","value":584},{"id":"TR.KK.DE","value":1936},{"id":"TR.KK.KA","value":2751},{"id":"TR.KK.KE","value":995},{"id":"TR.KK.KK","value":3940},{"id":"TR.KK.SU","value":4076},{"id":"TR.KK.YA","value":2161}]
+            "data": [{"id":"TR.KL.BA","value":888},{"id":"TR.KL.DE","value":3538},{"id":"TR.KL.KL","value":584},{"id":"TR.KL.KO","value":1936},{"id":"TR.KL.LU","value":2751},{"id":"TR.KL.PE","value":995},{"id":"TR.KL.PI","value":3940},{"id":"TR.KL.VI","value":4076}]
         }
     }

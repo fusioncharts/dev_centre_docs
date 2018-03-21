@@ -1687,17 +1687,17 @@
                 "alias": "kilis",
                 "specSheet": "/maps/spec-sheets/kilis"
             }, {
-                "name": "Kırıkkale",
-                "alias": "kırıkkale",
-                "specSheet": "/maps/spec-sheets/kırıkkale"
+                "name": "Kirikkale",
+                "alias": "kirikkale",
+                "specSheet": "/maps/spec-sheets/kirikkale"
             }, {
-                "name": "Kırklareli",
-                "alias": "kırklareli",
-                "specSheet": "/maps/spec-sheets/kırklareli"
+                "name": "Kirklareli",
+                "alias": "kirklareli",
+                "specSheet": "/maps/spec-sheets/kirklareli"
             }, {
-                "name": "Kırsehir",
-                "alias": "kırsehir",
-                "specSheet": "/maps/spec-sheets/kırsehir"
+                "name": "Kirsehir",
+                "alias": "kirsehir",
+                "specSheet": "/maps/spec-sheets/kirsehir"
             }, {
                 "name": "Kocaeli",
                 "alias": "kocaeli",

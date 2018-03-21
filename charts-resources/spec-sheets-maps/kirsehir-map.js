@@ -1,5 +1,5 @@
 {
-        type: 'maps/Kırklareli',
+        type: 'maps/kirsehir',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"TR.KL.BA","value":888},{"id":"TR.KL.DE","value":3538},{"id":"TR.KL.KL","value":584},{"id":"TR.KL.KO","value":1936},{"id":"TR.KL.LU","value":2751},{"id":"TR.KL.PE","value":995},{"id":"TR.KL.PI","value":3940},{"id":"TR.KL.VI","value":4076}]
+            "data": [{"id":"TR.KH.AC","value":888},{"id":"TR.KH.AP","value":3538},{"id":"TR.KH.BO","value":584},{"id":"TR.KH.CI","value":1936},{"id":"TR.KH.KA","value":2751},{"id":"TR.KH.KH","value":995},{"id":"TR.KH.MU","value":3940}]
         }
     }
