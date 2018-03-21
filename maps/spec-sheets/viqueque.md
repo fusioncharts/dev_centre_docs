@@ -4,7 +4,7 @@
 
 #### JavaScript Alias: maps/viqueque
 
-Map Name: Baikonur City
+Map Name: Viqueque
 Dimensions (Width x Height): 421x391
 
 

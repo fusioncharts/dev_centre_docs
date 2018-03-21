@@ -4,7 +4,7 @@
 
 #### JavaScript Alias: maps/kirikkale
 
-Map Name: Baikonur City
+Map Name: Kirikkale
 Dimensions (Width x Height): 421x391
 
 

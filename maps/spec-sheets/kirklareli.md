@@ -4,7 +4,7 @@
 
 #### JavaScript Alias: maps/kirklareli
 
-Map Name: Baikonur City
+Map Name: Kirklareli
 Dimensions (Width x Height): 421x391
 
 

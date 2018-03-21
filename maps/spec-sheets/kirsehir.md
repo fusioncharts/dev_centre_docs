@@ -4,7 +4,7 @@
 
 #### JavaScript Alias: maps/kirsehir
 
-Map Name: Baikonur City
+Map Name: Kirsehir
 Dimensions (Width x Height): 421x391
 
 
