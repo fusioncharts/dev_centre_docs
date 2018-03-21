@@ -4,7 +4,7 @@
 
 #### JavaScript Alias: maps/surxondaryo
 
-Map Name: Baikonur City
+Map Name: Surxondaryo
 Dimensions (Width x Height): 421x391
 
 
