@@ -262,88 +262,88 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-Armenia|maps/armenia|
-Azerbaijan|maps/azerbaijan|
-Bangladesh|maps/bangladesh|
-Bhutan|maps/bhutan|
-Brunei|maps/brunei|
-Burma|maps/burma|
-Cambodia|maps/cambodia|
-China|maps/china|
-China (With Direct-controlled municipalities and Special administrative regions)|maps/china2|
-China|maps/china3|
-Asia Georgia|maps/asiageorgia|
-East Timor|maps/easttimor|
-Hong Kong|maps/hongkong|
-India|maps/india|
-Indonesia|maps/indonesia|
-Japan|maps/japan|
-Kazakhstan|maps/kazakhstan|
-Laos|maps/laos|
-Macau|maps/macau|
-Malaysia|maps/malaysia|
-Mongolia|maps/mongolia|
-Nepal|maps/nepal|
-North Korea|maps/northkorea|
-Philippines|maps/philippines|
-Russia|maps/russia|
-Singapore|maps/singapore|
-South Korea|maps/southkorea|
-Sri Lanka|maps/srilanka|
-Taiwan|maps/taiwan|
-Thailand|maps/thailand|
-Tibet|maps/tibet|
-Vietnam|maps/vietnam|
+[Armenia]({% site.baseurl %}/maps/spec-sheets/armenia "@@soft-reload")|maps/armenia|
+[Azerbaijan]({% site.baseurl %}/maps/spec-sheets/azerbaijan "@@soft-reload")|maps/azerbaijan|
+[Bangladesh]({% site.baseurl %}/maps/spec-sheets/bangladesh "@@soft-reload")|maps/bangladesh|
+[Bhutan]({% site.baseurl %}/maps/spec-sheets/bhutan "@@soft-reload")|maps/bhutan|
+[Brunei]({% site.baseurl %}/maps/spec-sheets/brunei "@@soft-reload")|maps/brunei|
+[Burma]({% site.baseurl %}/maps/spec-sheets/burma "@@soft-reload")|maps/burma|
+[Cambodia]({% site.baseurl %}/maps/spec-sheets/cambodia "@@soft-reload")|maps/cambodia|
+[China]({% site.baseurl %}/maps/spec-sheets/china "@@soft-reload")|maps/china|
+[China (With Direct-controlled municipalities and Special administrative regions)]({% site.baseurl %}/maps/spec-sheets/china2 "@@soft-reload")|maps/china2|
+[China]({% site.baseurl %}/maps/spec-sheets/china3 "@@soft-reload")|maps/china3|
+[Asia Georgia]({% site.baseurl %}/maps/spec-sheets/asiageorgia "@@soft-reload")|maps/asiageorgia|
+[East Timor]({% site.baseurl %}/maps/spec-sheets/easttimor "@@soft-reload")|maps/easttimor|
+[Hong Kong]({% site.baseurl %}/maps/spec-sheets/hongkong "@@soft-reload")|maps/hongkong|
+[India]({% site.baseurl %}/maps/spec-sheets/india "@@soft-reload")|maps/india|
+[Indonesia]({% site.baseurl %}/maps/spec-sheets/indonesia "@@soft-reload")|maps/indonesia|
+[Japan]({% site.baseurl %}/maps/spec-sheets/japan "@@soft-reload")|maps/japan|
+[Kazakhstan]({% site.baseurl %}/maps/spec-sheets/kazakhstan "@@soft-reload")|maps/kazakhstan|
+[Laos]({% site.baseurl %}/maps/spec-sheets/laos "@@soft-reload")|maps/laos|
+[Macau]({% site.baseurl %}/maps/spec-sheets/macau "@@soft-reload")|maps/macau|
+[Malaysia]({% site.baseurl %}/maps/spec-sheets/malaysia "@@soft-reload")|maps/malaysia|
+[Mongolia]({% site.baseurl %}/maps/spec-sheets/mongolia "@@soft-reload")|maps/mongolia|
+[Nepal]({% site.baseurl %}/maps/spec-sheets/nepal "@@soft-reload")|maps/nepal|
+[North Korea]({% site.baseurl %}/maps/spec-sheets/northkorea "@@soft-reload")|maps/northkorea|
+[Philippines]({% site.baseurl %}/maps/spec-sheets/philippines "@@soft-reload")|maps/philippines|
+[Russia]({% site.baseurl %}/maps/spec-sheets/russia "@@soft-reload")|maps/russia|
+[Singapore]({% site.baseurl %}/maps/spec-sheets/singapore "@@soft-reload")|maps/singapore|
+[South Korea]({% site.baseurl %}/maps/spec-sheets/southkorea "@@soft-reload")|maps/southkorea|
+[Sri Lanka]({% site.baseurl %}/maps/spec-sheets/srilanka "@@soft-reload")|maps/srilanka|
+[Taiwan]({% site.baseurl %}/maps/spec-sheets/taiwan "@@soft-reload")|maps/taiwan|
+[Thailand]({% site.baseurl %}/maps/spec-sheets/thailand "@@soft-reload")|maps/thailand|
+[Tibet]({% site.baseurl %}/maps/spec-sheets/tibet "@@soft-reload")|maps/tibet|
+[Vietnam]({% site.baseurl %}/maps/spec-sheets/vietnam "@@soft-reload")|maps/vietnam|
 
 ## Azerbaijan (Regions)
 
 Chart Type|JavaScript Alias|
 -|-
-Absheron|maps/absheron|
-Aran|maps/aran|
-Daglig Shirvan|maps/dagligshirvan|
-Ganja Gazakh|maps/ganjagazakh|
-Guba Khachmaz|maps/gubakhachmaz|
-Kalbajar Lachin|maps/kalbajarlachin|
-Lankaran|maps/lankaran|
-Nakhchivan|maps/nakhchivan|
-Shaki Zaqatala|maps/nakhchivan|
-Yukhari Garabakh|maps/yukharigarabakh|
+[Absheron]({% site.baseurl %}/maps/spec-sheets/absheron "@@soft-reload")|maps/absheron|
+[Aran]({% site.baseurl %}/maps/spec-sheets/aran "@@soft-reload")|maps/aran|
+[Daglig Shirvan]({% site.baseurl %}/maps/spec-sheets/dagligshirvan "@@soft-reload")|maps/dagligshirvan|
+[Ganja Gazakh]({% site.baseurl %}/maps/spec-sheets/ganjagazakh "@@soft-reload")|maps/ganjagazakh|
+[Guba Khachmaz]({% site.baseurl %}/maps/spec-sheets/gubakhachmaz "@@soft-reload")|maps/gubakhachmaz|
+[Kalbajar Lachin]({% site.baseurl %}/maps/spec-sheets/kalbajarlachin "@@soft-reload")|maps/kalbajarlachin|
+[Lankaran]({% site.baseurl %}/maps/spec-sheets/lankaran "@@soft-reload")|maps/lankaran|
+[Nakhchivan]({% site.baseurl %}/maps/spec-sheets/nakhchivan "@@soft-reload")|maps/nakhchivan|
+[Shaki Zaqatala]({% site.baseurl %}/maps/spec-sheets/shakizaqatala "@@soft-reload")|maps/shakizaqatala|
+[Yukhari Garabakh]({% site.baseurl %}/maps/spec-sheets/yukharigarabakh "@@soft-reload")|maps/yukharigarabakh|
 
 ## Bangladesh (Divisions)
 
 Chart Type|JavaScript Alias|
 -|-
-Barisal|maps/barisal|
-Chittagong|maps/chittagong|
-Dhaka|maps/dhaka|
-Khulna|maps/khulna|
-Mymensingh|maps/mymensingh|
-Rajshahi|maps/rajshahi|
-Rangpur|maps/rangpur|
-Sylhet|maps/sylhet|
+[Barisal]({% site.baseurl %}/maps/spec-sheets/barisal "@@soft-reload")|maps/barisal|
+[Chittagong]({% site.baseurl %}/maps/spec-sheets/chittagong "@@soft-reload")|maps/chittagong|
+[Dhaka]({% site.baseurl %}/maps/spec-sheets/dhaka "@@soft-reload")|maps/dhaka|
+[Khulna]({% site.baseurl %}/maps/spec-sheets/khulna "@@soft-reload")|maps/khulna|
+[Mymensingh]({% site.baseurl %}/maps/spec-sheets/mymensingh "@@soft-reload")|maps/mymensingh|
+[Rajshahi]({% site.baseurl %}/maps/spec-sheets/rajshahi "@@soft-reload")|maps/rajshahi|
+[Rangpur]({% site.baseurl %}/maps/spec-sheets/rangpur "@@soft-reload")|maps/rangpur|
+[Sylhet]({% site.baseurl %}/maps/spec-sheets/sylhet "@@soft-reload")|maps/sylhet|
 
 ## Kazakhstan (Regions)
 
 Chart Type|JavaScript Alias|
 -|-
-Akmola|maps/akmola|
-Aktobe|maps/aktobe|
-Almaty City|maps/almatycity|
-Almaty|maps/almaty|
-Astana City|maps/astanacity|
-Atyrau|maps/atyrau|
-Baikonur City|maps/baikonurcity|
-East Kazakhstan|maps/eastkazakhstan|
-Jambyl|maps/jambyl|
-Karaganda|maps/karaganda|
-Kostanay|maps/kostanay|
-Kyzylorda|maps/kyzylorda|
-Mangystau|maps/mangystau|
-North Kazakhstan|maps/northkazakhstan|
-Pavlodar|maps/pavlodar|
-South Kazakhstan|maps/southkazakhstan|
-West Kazakhstan|maps/westkazakhstan|
+[Akmola]({% site.baseurl %}/maps/spec-sheets/akmola "@@soft-reload")|maps/akmola|
+[Aktobe]({% site.baseurl %}/maps/spec-sheets/aktobe "@@soft-reload")|maps/aktobe|
+[Almaty City]({% site.baseurl %}/maps/spec-sheets/almatycity "@@soft-reload")|maps/almatycity|
+[Almaty]({% site.baseurl %}/maps/spec-sheets/almaty "@@soft-reload")|maps/almaty|
+[Astana City]({% site.baseurl %}/maps/spec-sheets/astanacity "@@soft-reload")|maps/astanacity|
+[Atyrau]({% site.baseurl %}/maps/spec-sheets/atyrau "@@soft-reload")|maps/atyrau|
+[Baikonur City]({% site.baseurl %}/maps/spec-sheets/baikonurcity "@@soft-reload")|maps/baikonurcity|
+[East Kazakhstan]({% site.baseurl %}/maps/spec-sheets/eastkazakhstan "@@soft-reload")|maps/eastkazakhstan|
+[Jambyl]({% site.baseurl %}/maps/spec-sheets/jambyl "@@soft-reload")|maps/jambyl|
+[Karaganda]({% site.baseurl %}/maps/spec-sheets/karaganda "@@soft-reload")|maps/karaganda|
+[Kostanay]({% site.baseurl %}/maps/spec-sheets/kostanay "@@soft-reload")|maps/kostanay|
+[Kyzylorda]({% site.baseurl %}/maps/spec-sheets/kyzylorda "@@soft-reload")|maps/kyzylorda|
+[Mangystau]({% site.baseurl %}/maps/spec-sheets/mangystau "@@soft-reload")|maps/mangystau|
+[North Kazakhstan]({% site.baseurl %}/maps/spec-sheets/northkazakhstan "@@soft-reload")|maps/northkazakhstan|
+[Pavlodar]({% site.baseurl %}/maps/spec-sheets/pavlodar "@@soft-reload")|maps/pavlodar|
+[South Kazakhstan]({% site.baseurl %}/maps/spec-sheets/southkazakhstan "@@soft-reload")|maps/southkazakhstan|
+[West Kazakhstan]({% site.baseurl %}/maps/spec-sheets/westkazakhstan "@@soft-reload")|maps/westkazakhstan|
 
 ## Middle East
 
