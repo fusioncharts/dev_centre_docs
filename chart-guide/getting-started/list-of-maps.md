@@ -13,7 +13,7 @@ To render these maps, you need to download the map definition files from [here](
 
 Chart Type|JavaScript Alias|
 -|-
-World|maps/world|
+[World]({% site.baseurl %}/maps/spec-sheets/world "@@soft-reload")|maps/world|
 World With Antarctica|maps/worldwithantarctica|
 World with Countries|maps/worldwithcountries|
 World 8 Regions|maps/world8|
