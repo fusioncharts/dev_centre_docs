@@ -70,96 +70,96 @@ Chart Type|JavaScript Alias|
 [New York]({% site.baseurl %}/maps/spec-sheets/newyork "@@soft-reload")|maps/newyork|
 [North Carolina]({% site.baseurl %}/maps/spec-sheets/northcarolina "@@soft-reload")|maps/northcarolina|
 [North Dakota]({% site.baseurl %}/maps/spec-sheets/northdakota "@@soft-reload")|maps/northdakota|
-Ohio|maps/ohio|
-Oklahoma|maps/oklahoma|
-Oregon|maps/oregon|
-Pennsylvania|maps/pennsylvania|
-Rhode Island|maps/rhodeisland|
-South Carolina|maps/southcarolina|
-South Dakota|maps/southdakota|
-Tennessee|maps/tennessee|
-Texas|maps/texas|
-Utah|maps/utah|
-Washington|maps/washington|
-Vermont|maps/vermont|
-Virginia|maps/virginia|
-West Virginia|maps/westvirginia|
-Wisconsin|maps/wisconsin|
-Wyoming|maps/wyoming|
+[Ohio]({% site.baseurl %}/maps/spec-sheets/ohio "@@soft-reload")|maps/ohio|
+[Oklahoma]({% site.baseurl %}/maps/spec-sheets/oklahoma "@@soft-reload")|maps/oklahoma|
+[Oregon]({% site.baseurl %}/maps/spec-sheets/oregon "@@soft-reload")|maps/oregon|
+[Pennsylvania]({% site.baseurl %}/maps/spec-sheets/pennsylvania "@@soft-reload")|maps/pennsylvania|
+[Rhode Island]({% site.baseurl %}/maps/spec-sheets/rhodeisland "@@soft-reload")|maps/rhodeisland|
+[South Carolina]({% site.baseurl %}/maps/spec-sheets/southcarolina "@@soft-reload")|maps/southcarolina|
+[South Dakota]({% site.baseurl %}/maps/spec-sheets/southdakota "@@soft-reload")|maps/southdakota|
+[Tennessee]({% site.baseurl %}/maps/spec-sheets/tennessee "@@soft-reload")|maps/tennessee|
+[Texas]({% site.baseurl %}/maps/spec-sheets/texas "@@soft-reload")|maps/texas|
+[Utah]({% site.baseurl %}/maps/spec-sheets/utah "@@soft-reload")|maps/utah|
+[Washington]({% site.baseurl %}/maps/spec-sheets/washington "@@soft-reload")|maps/washington|
+[Vermont]({% site.baseurl %}/maps/spec-sheets/vermont "@@soft-reload")|maps/vermont|
+[Virginia]({% site.baseurl %}/maps/spec-sheets/virginia "@@soft-reload")|maps/virginia|
+[West Virginia]({% site.baseurl %}/maps/spec-sheets/westvirginia "@@soft-reload")|maps/westvirginia|
+[Wisconsin]({% site.baseurl %}/maps/spec-sheets/wisconsin "@@soft-reload")|maps/wisconsin|
+[Wyoming]({% site.baseurl %}/maps/spec-sheets/wyoming "@@soft-reload")|maps/wyoming|
 
 ## USA Regions
 
 Chart Type|JavaScript Alias|
 -|-
-USA (All Regions)|maps/usaregion|
-USA Central Region|maps/usacentralregion|
-USA North East Region|maps/usanortheastregion|
-USA South East Region|maps/usasoutheastregion|
-USA North West Region|maps/usanorthwestregion|
-USA South West Region|maps/usasouthwestregion|
+[USA (All Regions)]({% site.baseurl %}/maps/spec-sheets/usaregion "@@soft-reload")|maps/usaregion|
+[USA Central Region]({% site.baseurl %}/maps/spec-sheets/usacentralregion "@@soft-reload")|maps/usacentralregion|
+[USA North East Region]({% site.baseurl %}/maps/spec-sheets/usanortheastregion "@@soft-reload")|maps/usanortheastregion|
+[USA South East Region]({% site.baseurl %}/maps/spec-sheets/usasoutheastregion "@@soft-reload")|maps/usasoutheastregion|
+[USA North West Region]({% site.baseurl %}/maps/spec-sheets/usanorthwestregion "@@soft-reload")|maps/usanorthwestregion|
+[USA South West Region]({% site.baseurl %}/maps/spec-sheets/usasouthwestregion "@@soft-reload")|maps/usasouthwestregion|
 
 ## Europe (Countries)
 
 Chart Type|JavaScript Alias|
 -|-
-Europe (All Countries)|maps/europewithcountries|
-Europe (All islands)|maps/europe2|
-Albania|maps/albania|
-Andorra|maps/andorra|
-Austria|maps/austria|
-Belarus|maps/belarus|
-Belgium|maps/belgium|
-Bosnia-Herzegovina|maps/bosniaherzegovina|
-Bulgaria|maps/bulgaria|
-Croatia|maps/croatia|
-Cyprus|maps/cyprus|
-Cyprus (Regions)|maps/cyprus2|
-Czech Republic|maps/czechrepublic|
-Denmark|maps/denmark|
-Denmark (Regions)|maps/denmarkregion|
-England|maps/england|
-Estonia|maps/estonia|
-Finland|maps/finland|
-France|maps/france|
-France (Departments)|maps/francedepartment|
-Germany|maps/germany|
-Greece|maps/greece|
-Hungary|maps/hungary|
-Hungary (Regions)|maps/hungaryregions|
-Iceland|maps/iceland|
-Ireland|maps/ireland|
-Italy|maps/italy|
-Kosovo Districts|maps/kosovodistricts|
-Latvia|maps/latvia|
-Liechtenstein|maps/liechtenstein|
-Lithuania|maps/lithuania|
-Luxembourg|maps/luxembourg|
-Macedonia|maps/macedonia|
-Malta|maps/malta|
-Moldova|maps/moldova|
-Monaco|maps/monaco|
-Montenegro|maps/montenegro|
-Netherlands|maps/netherlands|
-Norway|maps/norway|
-Norway (Regions)|maps/norwayregion|
-Poland (Counties)|maps/polandcounties|
-Poland|maps/poland|
-Portugal|maps/portugal|
-Romania|maps/romania|
-San Marino|maps/sanmarino|
-Scotland|maps/scotland|
-Serbia|maps/serbia|
-Serbia Wo Kosovo|maps/serbiawokosovo|
-Slovakia|maps/slovakia|
-Slovenia|maps/slovenia|
-Spain (Autonomous)|maps/spain|
-Spain (Provinces)|maps/spainprovinces|
-Sweden|maps/sweden|
-Switzerland|maps/switzerland|
-Turkey|maps/turkey|
-UK|maps/uk|
-Ukraine|maps/ukraine|
-Vatican City|maps/vaticancity|
+[Europe (All Countries)]({% site.baseurl %}/maps/spec-sheets/europewithcountries "@@soft-reload")|maps/europewithcountries|
+[Europe (All islands)]({% site.baseurl %}/maps/spec-sheets/europe2 "@@soft-reload")|maps/europe2|
+[Albania]({% site.baseurl %}/maps/spec-sheets/albania "@@soft-reload")|maps/albania|
+[Andorra]({% site.baseurl %}/maps/spec-sheets/andorra "@@soft-reload")|maps/andorra|
+[Austria]({% site.baseurl %}/maps/spec-sheets/austria "@@soft-reload")|maps/austria|
+[Belarus]({% site.baseurl %}/maps/spec-sheets/belarus "@@soft-reload")|maps/belarus|
+[Belgium]({% site.baseurl %}/maps/spec-sheets/belgium "@@soft-reload")|maps/belgium|
+[Bosnia-Herzegovina]({% site.baseurl %}/maps/spec-sheets/bosniaherzegovina "@@soft-reload")|maps/bosniaherzegovina|
+[Bulgaria]({% site.baseurl %}/maps/spec-sheets/bulgaria "@@soft-reload")|maps/bulgaria|
+[Croatia]({% site.baseurl %}/maps/spec-sheets/croatia "@@soft-reload")|maps/croatia|
+[Cyprus]({% site.baseurl %}/maps/spec-sheets/cyprus "@@soft-reload")|maps/cyprus|
+[Cyprus (Regions)]({% site.baseurl %}/maps/spec-sheets/cyprus2 "@@soft-reload")|maps/cyprus2|
+[Czech Republic]({% site.baseurl %}/maps/spec-sheets/czechrepublic "@@soft-reload")|maps/czechrepublic|
+[Denmark]({% site.baseurl %}/maps/spec-sheets/denmark "@@soft-reload")|maps/denmark|
+[Denmark (Regions)]({% site.baseurl %}/maps/spec-sheets/denmarkregion "@@soft-reload")|maps/denmarkregion|
+[England]({% site.baseurl %}/maps/spec-sheets/england "@@soft-reload")|maps/england|
+[Estonia]({% site.baseurl %}/maps/spec-sheets/estonia "@@soft-reload")|maps/estonia|
+[Finland]({% site.baseurl %}/maps/spec-sheets/finland "@@soft-reload")|maps/finland|
+[France]({% site.baseurl %}/maps/spec-sheets/france "@@soft-reload")|maps/france|
+[France (Departments)]({% site.baseurl %}/maps/spec-sheets/francedepartment "@@soft-reload")|maps/francedepartment|
+[Germany]({% site.baseurl %}/maps/spec-sheets/germany "@@soft-reload")|maps/germany|
+[Greece]({% site.baseurl %}/maps/spec-sheets/greece "@@soft-reload")|maps/greece|
+[Hungary]({% site.baseurl %}/maps/spec-sheets/hungary "@@soft-reload")|maps/hungary|
+[Hungary (Regions)]({% site.baseurl %}/maps/spec-sheets/hungaryregions "@@soft-reload")|maps/hungaryregions|
+[Iceland]({% site.baseurl %}/maps/spec-sheets/iceland "@@soft-reload")|maps/iceland|
+[Ireland]({% site.baseurl %}/maps/spec-sheets/ireland "@@soft-reload")|maps/ireland|
+[Italy]({% site.baseurl %}/maps/spec-sheets/italy "@@soft-reload")|maps/italy|
+[Kosovo Districts]({% site.baseurl %}/maps/spec-sheets/kosovodistricts "@@soft-reload")|maps/kosovodistricts|
+[Latvia]({% site.baseurl %}/maps/spec-sheets/latvia "@@soft-reload")|maps/latvia|
+[Liechtenstein]({% site.baseurl %}/maps/spec-sheets/liechtenstein "@@soft-reload")|maps/liechtenstein|
+[Lithuania]({% site.baseurl %}/maps/spec-sheets/lithuania "@@soft-reload")|maps/lithuania|
+[Luxembourg]({% site.baseurl %}/maps/spec-sheets/luxembourg "@@soft-reload")|maps/luxembourg|
+[Macedonia]({% site.baseurl %}/maps/spec-sheets/macedonia "@@soft-reload")|maps/macedonia|
+[Malta]({% site.baseurl %}/maps/spec-sheets/malta "@@soft-reload")|maps/malta|
+[Moldova]({% site.baseurl %}/maps/spec-sheets/moldova "@@soft-reload")|maps/moldova|
+[Monaco]({% site.baseurl %}/maps/spec-sheets/monaco "@@soft-reload")|maps/monaco|
+[Montenegro]({% site.baseurl %}/maps/spec-sheets/montenegro "@@soft-reload")|maps/montenegro|
+[Netherlands]({% site.baseurl %}/maps/spec-sheets/netherlands "@@soft-reload")|maps/netherlands|
+[Norway]({% site.baseurl %}/maps/spec-sheets/norway "@@soft-reload")|maps/norway|
+[Norway (Regions)]({% site.baseurl %}/maps/spec-sheets/norwayregion "@@soft-reload")|maps/norwayregion|
+[Poland (Counties)]({% site.baseurl %}/maps/spec-sheets/polandcounties "@@soft-reload")|maps/polandcounties|
+[Poland]({% site.baseurl %}/maps/spec-sheets/poland "@@soft-reload")|maps/poland|
+[Portugal]({% site.baseurl %}/maps/spec-sheets/portugal "@@soft-reload")|maps/portugal|
+[Romania]({% site.baseurl %}/maps/spec-sheets/romania "@@soft-reload")|maps/romania|
+[San Marino]({% site.baseurl %}/maps/spec-sheets/sanmarino "@@soft-reload")|maps/sanmarino|
+[Scotland]({% site.baseurl %}/maps/spec-sheets/scotland "@@soft-reload")|maps/scotland|
+[Serbia]({% site.baseurl %}/maps/spec-sheets/serbia "@@soft-reload")|maps/serbia|
+[Serbia Wo Kosovo]({% site.baseurl %}/maps/spec-sheets/serbiawokosovo "@@soft-reload")|maps/serbiawokosovo|
+[Slovakia]({% site.baseurl %}/maps/spec-sheets/slovakia "@@soft-reload")|maps/slovakia|
+[Slovenia]({% site.baseurl %}/maps/spec-sheets/slovenia "@@soft-reload")|maps/slovenia|
+[Spain (Autonomous)]({% site.baseurl %}/maps/spec-sheets/spain "@@soft-reload")|maps/spain|
+[Spain (Provinces)]({% site.baseurl %}/maps/spec-sheets/spainprovinces "@@soft-reload")|maps/spainprovinces|
+[Sweden]({% site.baseurl %}/maps/spec-sheets/sweden "@@soft-reload")|maps/sweden|
+[Switzerland]({% site.baseurl %}/maps/spec-sheets/switzerland "@@soft-reload")|maps/switzerland|
+[Turkey]({% site.baseurl %}/maps/spec-sheets/turkey "@@soft-reload")|maps/turkey|
+[UK]({% site.baseurl %}/maps/spec-sheets/uk "@@soft-reload")|maps/uk|
+[Ukraine]({% site.baseurl %}/maps/spec-sheets/ukraine "@@soft-reload")|maps/ukraine|
+[Vatican City]({% site.baseurl %}/maps/spec-sheets/vaticancity "@@soft-reload")|maps/vaticancity|
 
 ## Europe (Regions)
 
