@@ -165,98 +165,98 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-Europe (All Regions)|maps/europeregion|
-East European Region|maps/easteuropeanregion|
-West European Region|maps/westeuropeanregion|
-Central European Region|maps/centraleuropeanregion|
-North European Region|maps/northeuropeanregion|
-South European Region|maps/southeuropeanregion|
+[Europe (All Regions)]({% site.baseurl %}/maps/spec-sheets/europeregion "@@soft-reload")|maps/europeregion|
+[East European Region]({% site.baseurl %}/maps/spec-sheets/easteuropeanregion "@@soft-reload")|maps/easteuropeanregion|
+[West European Region]({% site.baseurl %}/maps/spec-sheets/westeuropeanregion "@@soft-reload")|maps/westeuropeanregion|
+[Central European Region]({% site.baseurl %}/maps/spec-sheets/centraleuropeanregion "@@soft-reload")|maps/centraleuropeanregion|
+[North European Region]({% site.baseurl %}/maps/spec-sheets/northeuropeanregion "@@soft-reload")|maps/northeuropeanregion|
+[South European Region]({% site.baseurl %}/maps/spec-sheets/southeuropeanregion "@@soft-reload")|maps/southeuropeanregion|
 
 ## UK
 
 Chart Type|JavaScript Alias|
 -|-
-UK (With Islands)|maps/uk7|
-UK (With Counties)|maps/ukcounties|
-England (Region)|maps/englandregion|
-Scotland (Region)|maps/scotlandregion|
-Wales|maps/wales|
-Northern Ireland|maps/northernireland|
+[UK (With Islands)]({% site.baseurl %}/maps/spec-sheets/uk7 "@@soft-reload")|maps/uk7|
+[UK (With Counties)]({% site.baseurl %}/maps/spec-sheets/ukcounties "@@soft-reload")|maps/ukcounties|
+[England (Region)]({% site.baseurl %}/maps/spec-sheets/englandregion "@@soft-reload")|maps/englandregion|
+[Scotland (Region)]({% site.baseurl %}/maps/spec-sheets/scotlandregion "@@soft-reload")|maps/scotlandregion|
+[Wales]({% site.baseurl %}/maps/spec-sheets/wales "@@soft-reload")|maps/wales|
+[Northern Ireland]({% site.baseurl %}/maps/spec-sheets/northernireland "@@soft-reload")|maps/northernireland|
 
 ## North America
 
 Chart Type|JavaScript Alias|
 -|-
-Antigua|maps/antigua|
-Bahamas|maps/bahamas|
-Barbados|maps/barbados|
-Canada|maps/canada|
-Cayman Islands|maps/caymanislands|
-Cuba|maps/cuba|
-Dominica|maps/dominica|
-Dominican Republic|maps/dominicanrepublic|
-Greenland|maps/greenland|
-Grenada|maps/grenada|
-Haiti|maps/haiti|
-Jamaica|maps/jamaica|
-Mexico|maps/mexico|
-Puerto Rico|maps/puertorico|
-Saint Kitts and Nevis|maps/saintkittsandnevis|
-Saint Lucia|maps/saintlucia|
-Saint Vincent and The Grenadines|maps/saintvincentandthegrenadines|
-Trinidad and Tobago|maps/trinidadandtobago|
+[Antigua]({% site.baseurl %}/maps/spec-sheets/antigua "@@soft-reload")|maps/antigua|
+[Bahamas]({% site.baseurl %}/maps/spec-sheets/bahamas "@@soft-reload")|maps/bahamas|
+[Barbados]({% site.baseurl %}/maps/spec-sheets/barbados "@@soft-reload")|maps/barbados|
+[Canada]({% site.baseurl %}/maps/spec-sheets/canada "@@soft-reload")|maps/canada|
+[Cayman Islands]({% site.baseurl %}/maps/spec-sheets/caymanislands "@@soft-reload")|maps/caymanislands|
+[Cuba]({% site.baseurl %}/maps/spec-sheets/cuba "@@soft-reload")|maps/cuba|
+[Dominica]({% site.baseurl %}/maps/spec-sheets/dominica "@@soft-reload")|maps/dominica|
+[Dominican Republic]({% site.baseurl %}/maps/spec-sheets/dominicanrepublic "@@soft-reload")|maps/dominicanrepublic|
+[Greenland]({% site.baseurl %}/maps/spec-sheets/greenland "@@soft-reload")|maps/greenland|
+[Grenada]({% site.baseurl %}/maps/spec-sheets/grenada "@@soft-reload")|maps/grenada|
+[Haiti]({% site.baseurl %}/maps/spec-sheets/haiti "@@soft-reload")|maps/haiti|
+[Jamaica]({% site.baseurl %}/maps/spec-sheets/jamaica "@@soft-reload")|maps/jamaica|
+[Mexico]({% site.baseurl %}/maps/spec-sheets/mexico "@@soft-reload")|maps/mexico|
+[Puerto Rico]({% site.baseurl %}/maps/spec-sheets/puertorico "@@soft-reload")|maps/puertorico|
+[Saint Kitts and Nevis]({% site.baseurl %}/maps/spec-sheets/saintkittsandnevis "@@soft-reload")|maps/saintkittsandnevis|
+[Saint Lucia]({% site.baseurl %}/maps/spec-sheets/uk7 "@@soft-reload")|maps/saintlucia|
+[Saint Vincent and The Grenadines]({% site.baseurl %}/maps/spec-sheets/saintvincentandthegrenadines "@@soft-reload")|maps/saintvincentandthegrenadines|
+[Trinidad and Tobago]({% site.baseurl %}/maps/spec-sheets/trinidadandtobago "@@soft-reload")|maps/trinidadandtobago|
 
 ## South America
 
 Chart Type|JavaScript Alias|
 -|-
-Argentina|maps/argentina|
-Bolivia|maps/bolivia|
-Brazil|maps/brazil|
-Brazil (Regions)|maps/brazilregion|
-Chile|maps/chile|
-Colombia|maps/colombia|
-Ecuador|maps/ecuador|
-Falkland Island|maps/falklandisland|
-French Guiana|maps/frenchguiana|
-Guyana|maps/guyana|
-Paraguay|maps/paraguay|
-Peru|maps/peru|
-Suriname|maps/suriname|
-Uruguay|maps/uruguay|
-Venezuela|maps/venezuela|
+[Argentina]({% site.baseurl %}/maps/spec-sheets/argentina "@@soft-reload")|maps/argentina|
+[Bolivia]({% site.baseurl %}/maps/spec-sheets/bolivia "@@soft-reload")|maps/bolivia|
+[Brazil]({% site.baseurl %}/maps/spec-sheets/brazil "@@soft-reload")|maps/brazil|
+[Brazil (Regions)]({% site.baseurl %}/maps/spec-sheets/brazilregion "@@soft-reload")|maps/brazilregion|
+[Chile]({% site.baseurl %}/maps/spec-sheets/chile "@@soft-reload")|maps/chile|
+[Colombia]({% site.baseurl %}/maps/spec-sheets/colombia "@@soft-reload")|maps/colombia|
+[Ecuador]({% site.baseurl %}/maps/spec-sheets/ecuador "@@soft-reload")|maps/ecuador|
+[Falkland Island]({% site.baseurl %}/maps/spec-sheets/falklandisland "@@soft-reload")|maps/falklandisland|
+[French Guiana]({% site.baseurl %}/maps/spec-sheets/frenchguiana "@@soft-reload")|maps/frenchguiana|
+[Guyana]({% site.baseurl %}/maps/spec-sheets/guyana "@@soft-reload")|maps/guyana|
+[Paraguay]({% site.baseurl %}/maps/spec-sheets/paraguay "@@soft-reload")|maps/paraguay|
+[Peru]({% site.baseurl %}/maps/spec-sheets/peru "@@soft-reload")|maps/peru|
+[Suriname]({% site.baseurl %}/maps/spec-sheets/suriname "@@soft-reload")|maps/suriname|
+[Uruguay]({% site.baseurl %}/maps/spec-sheets/uruguay "@@soft-reload")|maps/uruguay|
+[Venezuela]({% site.baseurl %}/maps/spec-sheets/venezuela "@@soft-reload")|maps/venezuela|
 
 ## Central America
 
 Chart Type|JavaScript Alias|
 -|-
-Central America (with Caribbean)|maps/centralamericawithcaribbean|
-Central America (with Virgin Islands)|maps/centralamerica2|
-Belize|maps/belize|
-Costa Rica|maps/costarica|
-El Salvador|maps/elsalvador|
-Guatemala|maps/guatemala|
-Honduras|maps/honduras|
-Nicaragua|maps/nicaragua|
-Panama|maps/panama|
+[Central America (with Caribbean)]({% site.baseurl %}/maps/spec-sheets/centralamericawithcaribbean "@@soft-reload")|maps/centralamericawithcaribbean|
+[Central America (with Virgin Islands)]({% site.baseurl %}/maps/spec-sheets/centralamerica2 "@@soft-reload")|maps/centralamerica2|
+[Belize]({% site.baseurl %}/maps/spec-sheets/belize "@@soft-reload")|maps/belize|
+[Costa Rica]({% site.baseurl %}/maps/spec-sheets/costarica "@@soft-reload")|maps/costarica|
+[El Salvador]({% site.baseurl %}/maps/spec-sheets/elsalvador "@@soft-reload")|maps/elsalvador|
+[Guatemala]({% site.baseurl %}/maps/spec-sheets/guatemala "@@soft-reload")|maps/guatemala|
+[Honduras]({% site.baseurl %}/maps/spec-sheets/honduras "@@soft-reload")|maps/honduras|
+[Nicaragua]({% site.baseurl %}/maps/spec-sheets/nicaragua "@@soft-reload")|maps/nicaragua|
+[Panama]({% site.baseurl %}/maps/spec-sheets/panama "@@soft-reload")|maps/panama|
 
 ## Canada Provinces & Territories
 
 Chart Type|JavaScript Alias|
 -|-
-Alberta|maps/alberta|
-British Columbia|maps/britishcolumbia|
-Manitoba|maps/manitoba|
-New Brunswick|maps/newbrunswick|
-Newfoundland and Labrador|maps/newfoundlandandlabrador|
-Northwest Territories|maps/northwestterritories|
-Nova Scotia|maps/novascotia|
-Nunavut|maps/nunavut|
-Ontario|maps/ontario|
-Prince Edward Island|maps/princeedwardisland|
-Quebec|maps/quebec|
-Saskatchewan|maps/saskatchewan|
-Yukon Territory|maps/yukonterritory|
+[Alberta]({% site.baseurl %}/maps/spec-sheets/alberta "@@soft-reload")|maps/alberta|
+[British Columbia]({% site.baseurl %}/maps/spec-sheets/britishcolumbia "@@soft-reload")|maps/britishcolumbia|
+[Manitoba]({% site.baseurl %}/maps/spec-sheets/manitoba "@@soft-reload")|maps/manitoba|
+[New Brunswick]({% site.baseurl %}/maps/spec-sheets/newbrunswick "@@soft-reload")|maps/newbrunswick|
+[Newfoundland and Labrador]({% site.baseurl %}/maps/spec-sheets/newfoundlandandlabrador "@@soft-reload")|maps/newfoundlandandlabrador|
+[Northwest Territories]({% site.baseurl %}/maps/spec-sheets/northwestterritories "@@soft-reload")|maps/northwestterritories|
+[Nova Scotia]({% site.baseurl %}/maps/spec-sheets/novascotia "@@soft-reload")|maps/novascotia|
+[Nunavut]({% site.baseurl %}/maps/spec-sheets/nunavut "@@soft-reload")|maps/nunavut|
+[Ontario]({% site.baseurl %}/maps/spec-sheets/ontario "@@soft-reload")|maps/ontario|
+[Prince Edward Island]({% site.baseurl %}/maps/spec-sheets/princeedwardisland "@@soft-reload")|maps/princeedwardisland|
+[Quebec]({% site.baseurl %}/maps/spec-sheets/quebec "@@soft-reload")|maps/quebec|
+[Saskatchewan]({% site.baseurl %}/maps/spec-sheets/saskatchewan "@@soft-reload")|maps/saskatchewan|
+[Yukon Territory]({% site.baseurl %}/maps/spec-sheets/yukonterritory "@@soft-reload")|maps/yukonterritory|
 
 ## Asia
 
