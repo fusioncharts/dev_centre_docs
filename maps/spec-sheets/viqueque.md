@@ -5,9 +5,7 @@
 #### JavaScript Alias: maps/viqueque
 
 Map Name: Viqueque
-Dimensions (Width x Height): 480x330
-
-
+Dimensions (Width x Height): 421x391
 
 
 
@@ -15,10 +13,10 @@ Dimensions (Width x Height): 480x330
 
 ### List of Entities
 
-ID | Short label | Label
----|---|---|---
+ Id | Short label | Label
+---|---|---
 TL.VQ.LA|LA|Lacluta
 TL.VQ.OS|OS|Ossu
 TL.VQ.UL|UL|Uato-Lari
-TL.VQ.UC|UC|Uatucarbau		
+TL.VQ.UC|UC|Uatucarbau
 TL.VQ.VI|VI|Viqueque

@@ -1,7 +1,7 @@
 {
     type: 'hlineargauge',
     renderAt: 'chart-container',
-    id: 'cs-linear-gauge-6',
+    id: 'cs-linear-gauge-26',
     width: '400',
     height: '170',
     dataFormat: 'json',
@@ -16,7 +16,7 @@
             "chartBottomMargin": "40",
             "valueFontSize": "11",
             "valueFontBold": "0",
-            "dataStreamUrl": "../../../resources/php/gauge-and-widgets-guide-linear-gauge-real-time-gauges-php-2.php",
+            "dataStreamUrl": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-linear-gauge-real-time-gauges-php-2.php",
             "refreshInterval": "10"
         },
         "colorRange": {
@@ -60,11 +60,11 @@
                     if (!isStopped) {
                         isStopped = true;
                         document.getElementById("toggleBtn").value = "Restart Update";
-                        FusionCharts.items["cs-linear-gauge-6"].stopUpdate();
+                        FusionCharts.items["cs-linear-gauge-26"].stopUpdate();
                     } else {
                         isStopped = false;
                         document.getElementById("toggleBtn").value = "Stop Update";
-                        FusionCharts.items["cs-linear-gauge-6"].restartUpdate();
+                        FusionCharts.items["cs-linear-gauge-26"].restartUpdate();
                     }
                 }
 

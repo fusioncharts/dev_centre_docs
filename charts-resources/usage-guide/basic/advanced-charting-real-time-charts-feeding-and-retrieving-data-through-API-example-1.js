@@ -1,5 +1,4 @@
 {
-    id: "mychart-1",
     type: 'realtimeline',
     renderAt: 'chart-container',
     width: '600',

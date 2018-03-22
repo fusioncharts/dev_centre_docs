@@ -1,7 +1,7 @@
 {
     type: 'hlineargauge',
     renderAt: 'chart-container',
-    id: 'cs-linear-gauge-5',
+    id: 'cs-linear-gauge-25',
     width: '400',
     height: '170',
     dataFormat: 'json',
@@ -16,7 +16,7 @@
             "chartBottomMargin": "40",
             "valueFontSize": "11",
             "valueFontBold": "0",
-            "dataStreamUrl": "../../../resources/php/gauge-and-widgets-guide-linear-gauge-real-time-gauges-php-1.php",
+            "dataStreamUrl": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-linear-gauge-real-time-gauges-php-1.php",
             "refreshInterval": "10"
         },
         "colorRange": {

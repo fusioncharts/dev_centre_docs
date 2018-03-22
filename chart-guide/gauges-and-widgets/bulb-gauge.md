@@ -185,7 +185,7 @@ To do this, we have used one token of the gradient fill mix to render the bulb b
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-bulb-example-5.js %}
 
@@ -235,7 +235,7 @@ To do so, set the `is3D` attribute to `0` as shown below:
 }
 ```
 
-The chart will look like as shown below:
+The gauge will look  like as shown below:
 
 {% embed_chart gauges-and-widgets-bulb-example-7.js %}
 
@@ -275,7 +275,7 @@ To do so set the `useColorNameAsValue` to `1` as shown in the code below:
 }
 ```
 
-The chart will look like as shown below:
+The gauge will look  like as shown below:
 
 {% embed_chart gauges-and-widgets-bulb-example-9.js %}
 
@@ -293,9 +293,9 @@ FusionCharts Suite XT allows you to display hover effects for the gauge. Set the
 }
 ```
 
-The chart will look like as shown below:
+The gauge will look  like as shown below:
 
-GIF
+![Bulb]({% site.baseurl %}/gif/gauges-and-widgets-bulb-gif.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/0ehkf2sx/ "@@open-newtab") to edit the above chart.
 
@@ -327,7 +327,7 @@ In the simplest form, if you're looking to update the bulb gauge, you need to ou
 &value=34
 ```
 
-Here, the output is a single value, 34. So, when FusionWidgets XT will read this value, it will update the chart by setting its value to 34 (if the data is within range). The chart will look like as shown below:
+Here, the output is a single value, 34. So, when FusionWidgets XT will read this value, it will update the chart by setting its value to 34 (if the data is within range). The gauge will look  like as shown below:
 
 {% embed_chart gauges-and-widgets-bulb-example-10.js %}
 

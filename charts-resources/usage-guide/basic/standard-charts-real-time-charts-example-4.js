@@ -76,9 +76,6 @@
             }
             //Update Data method
             function updateData() {
-
-                //Get reference to the chart using its ID
-                // var chartRef = FusionCharts("mychart"),
                     //We need to create a querystring format incremental update, containing
                     //label in hh:mm:ss format
                     //and a value (random).
@@ -91,13 +88,10 @@
                 chartRef.feedData(strData);
             }
             //Interval
-            chartRef.chartInterval = setInterval(function() {
+            var myVar = setInterval(function() {
                 updateData();
 
             }, 10000);
-        },
-        "disposed": function(evt, args) {
-            clearInterval(evt.sender.chartInterval);
         }
     }
 }

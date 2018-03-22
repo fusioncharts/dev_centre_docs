@@ -1,6 +1,6 @@
 {
     type: 'area2d',
-    id: "myChart",
+    
     renderAt: 'chart-container',
     width: '500',
     height: '350',

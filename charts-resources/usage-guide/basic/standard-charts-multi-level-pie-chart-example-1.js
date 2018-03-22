@@ -1,7 +1,7 @@
 {
     type: 'multilevelpie',
     renderAt: 'chart-container',
-    id: "myChart",
+    
     width: '500',
     height: '500',
     dataFormat: 'json',

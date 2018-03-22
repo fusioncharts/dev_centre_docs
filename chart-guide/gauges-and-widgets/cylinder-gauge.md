@@ -82,7 +82,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-2.js %}
 
@@ -106,13 +106,13 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/QseLf/ "@@open-newtab") to edit the above gauge.
 
-> Note: if you do not customize the fill color, the cylinder gauge will use the default color as the fill color instead.
+> If you do not customize the fill color, the cylinder gauge will use the default color as the fill color instead.
 
 ## Customize cylinder origin, radius, and height
 
@@ -139,13 +139,13 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/AN44L/ "@@open-newtab") to edit the above gauge.
 
-> Note: If you don't customize the origin, radius, and height, the cylinder gauge will automatically calculate the best-fit coordinates and size for the cylinder. 
+> If you don't customize the origin, radius, and height, the cylinder gauge will automatically calculate the best-fit coordinates and size for the cylinder. 
 
 ## Configure chart value display
 
@@ -161,7 +161,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-5.js %}
 
@@ -188,7 +188,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-6.js %}
 
@@ -208,7 +208,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-7.js %}
 
@@ -235,7 +235,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-8.js %}
 
@@ -255,13 +255,13 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/qtk9z/ "@@open-newtab") to edit the above gauge.
 
-> Note: Unless you manually disable the automatic distribution of tick marks, the cylinder gauge can automatically calculate and display the best feasible number of major tick marks.
+> Unless you manually disable the automatic distribution of tick marks, the cylinder gauge can automatically calculate and display the best feasible number of major tick marks.
 
 ## Configure tick value step
 
@@ -277,7 +277,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-10.js %}
 
@@ -325,7 +325,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-11.js %}
 
@@ -350,9 +350,9 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
-GIF
+![Cylinder]({% site.baseurl %}/gif/gauges-and-widgets-cylinder.gif)
 
 Click [here](http://jsfiddle.net/fusioncharts/cSkE3/ "@@open-newtab") to edit the above gauge.
 
@@ -405,7 +405,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-12.js %}
 
@@ -417,7 +417,7 @@ Use the following parameters to configure real time updates using server-side sc
 
 * Use the `dataStreamURL` parameter to set the path of the page, which is supposed to relay real time data to the chart. If you have special characters as a part of the data stream URL, such as **?** or **&**, you need to URL Encode the entire `dataStreamURL`. Note that the target page needs to be on the same sub-domain on which the chart is hosted and invoked from. Otherwise, security will restrict it from accessing the data and hence the real time feature won't work.
 
-* Use the `refreshInterval` parameter to specify the number of seconds after which the chart will look for new data. This process will happen continuously.
+* Use the `refreshInterval` parameter to specify the number of seconds after which The gauge will look  for new data. This process will happen continuously.
 
 * Use the `dataStamp` parameter to add a constantly changing data stamp that can be added to the real time data URL, so as to maintain a state. For more information, read <this article>.
 
@@ -433,7 +433,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-13.js %}
 
@@ -489,7 +489,7 @@ events: {
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-14.js %}
 
@@ -556,7 +556,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-15.js %}
 
@@ -603,7 +603,7 @@ Refer to the code below:
 }
 ```
 
-The chart will look as shown below:
+The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-16.js %}
 
