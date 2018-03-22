@@ -449,15 +449,15 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-Algeria|maps/algeria|
-Angola|maps/angola|
-Benin|maps/benin|
-Botswana|maps/botswana|
-Burkina Faso|maps/burkinafaso|
-Burundi|maps/burundi|
-Cameroon|maps/cameroon|
-Cape Verde|maps/capeverde|
-Central African Republic|maps/centralafricanrepublic|
+[Algeria]({% site.baseurl %}/maps/spec-sheets/algeria "@@soft-reload")|maps/algeria|
+[Angola]({% site.baseurl %}/maps/spec-sheets/angola "@@soft-reload")|maps/angola|
+[Benin]({% site.baseurl %}/maps/spec-sheets/benin "@@soft-reload")|maps/benin|
+[Botswana]({% site.baseurl %}/maps/spec-sheets/botswana "@@soft-reload")|maps/botswana|
+[Burkina Faso]({% site.baseurl %}/maps/spec-sheets/burkinafaso "@@soft-reload")|maps/burkinafaso|
+[Burundi]({% site.baseurl %}/maps/spec-sheets/burundi "@@soft-reload")|maps/burundi|
+[Cameroon]({% site.baseurl %}/maps/spec-sheets/cameroon "@@soft-reload")|maps/cameroon|
+[Cape Verde]({% site.baseurl %}/maps/spec-sheets/capeverde "@@soft-reload")|maps/capeverde|
+[Central African Republic]({% site.baseurl %}/maps/spec-sheets/centralafricanrepublic "@@soft-reload")|maps/centralafricanrepublic|
 Chad|maps/chad|
 Comoros|maps/comoros|
 Congo|maps/congo|
