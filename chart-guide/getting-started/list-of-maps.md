@@ -14,21 +14,21 @@ To render these maps, you need to download the map definition files from [here](
 Chart Type|JavaScript Alias|
 -|-
 [World]({% site.baseurl %}/maps/spec-sheets/world "@@soft-reload")|maps/world|
-World With Antarctica|maps/worldwithantarctica|
-World with Countries|maps/worldwithcountries|
-World 8 Regions|maps/world8|
-World 8 Regions With Antarctica|maps/world8withantarctica|
-Europe|maps/europe|
-North America|maps/northamerica|
-Central America|maps/centralamerica|
-South America|maps/southamerica|
-Asia|maps/asia|
-Africa|maps/africa|
-Middle East|maps/middleeast|
-Oceania|maps/oceania|
-Asia (no Mid-East)|maps/asia3|
-North America (no Central)|maps/northamericawocentral|
-North America (with Carribeans)|maps/northamericawithcarribeans|
+[World With Antarctica]({% site.baseurl %}/maps/spec-sheets/worldwithantarctica "@@soft-reload")|maps/worldwithantarctica|
+[World with Countries]({% site.baseurl %}/maps/spec-sheets/worldwithcountries "@@soft-reload")|maps/worldwithcountries|
+[World 8 Regions]({% site.baseurl %}/maps/spec-sheets/world8 "@@soft-reload")|maps/world8|
+[World 8 Regions With Antarctica]({% site.baseurl %}/maps/spec-sheets/world8withantarctica "@@soft-reload")|maps/world8withantarctica|
+[Europe]({% site.baseurl %}/maps/spec-sheets/europe "@@soft-reload")|maps/europe|
+[North America]({% site.baseurl %}/maps/spec-sheets/northamerica "@@soft-reload")|maps/northamerica|
+[Central America]({% site.baseurl %}/maps/spec-sheets/centralamerica "@@soft-reload")|maps/centralamerica|
+[South America]({% site.baseurl %}/maps/spec-sheets/southamerica "@@soft-reload")|maps/southamerica|
+[Asia]({% site.baseurl %}/maps/spec-sheets/asia "@@soft-reload")|maps/asia|
+[Africa]({% site.baseurl %}/maps/spec-sheets/africa "@@soft-reload")|maps/africa|
+[Middle East]({% site.baseurl %}/maps/spec-sheets/middleeast "@@soft-reload")|maps/middleeast|
+[Oceania]({% site.baseurl %}/maps/spec-sheets/oceania "@@soft-reload")|maps/oceania|
+[Asia (no Middle-East)]({% site.baseurl %}/maps/spec-sheets/asia3 "@@soft-reload")|maps/asia3|
+[North America (no Central)]({% site.baseurl %}/maps/spec-sheets/northamericawocentral "@@soft-reload")|maps/northamericawocentral|
+[North America (with Carribeans)]({% site.baseurl %}/maps/spec-sheets/northamericawcaribbean "@@soft-reload")|maps/northamericawithcarribeans|
 
 ## US & Counties
 
