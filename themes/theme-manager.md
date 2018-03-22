@@ -374,7 +374,7 @@ In the above format, `\` is an escape character. You can use it to tell the brow
 
 * Use **\"** to indicate double quotes.
 
-* Use **\\** to indicate a backslash.
+* Use **\ \ ** to indicate a backslash.
 
 * Use **\n** to indicate a new line.
 
