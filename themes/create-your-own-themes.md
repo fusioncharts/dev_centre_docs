@@ -22,7 +22,7 @@ Assume that you have to create a theme named **mySampleTheme**, which needs to i
 
     * Ensure data plots for positive data values are rendered using the color code: **#3333FF**.
 
-    * Ensure data plots for negative data values are rendered using the color code #CC0000.
+    * Ensure data plots for negative data values are rendered using the color code: **#CC0000**.
 
 * For all bubble charts:
 
