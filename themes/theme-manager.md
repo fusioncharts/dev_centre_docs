@@ -172,7 +172,7 @@ Now, if you also have to configure the thickness for trendlines for all charts, 
 
 > Each tier in the theme definition supports most JSON objects, like chart, dataset, trendlines, and so on, and all the attributes that fall under these objects. Just map the attributes and objects correctly.
 
-Refer to the [FusionCharts Suite XT Chart Attributes](https://www.fusioncharts.com/chart-attributes?chart=area2d) page to better understand the objects and attributes used to configure the charts, gauges, and maps.
+Refer to the [FusionCharts Suite XT Chart Attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') page to better understand the objects and attributes used to configure the charts, gauges, and maps.
 
 ### Prevent theme definition override
 
