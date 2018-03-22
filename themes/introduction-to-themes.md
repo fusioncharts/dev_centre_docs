@@ -30,7 +30,8 @@ FusionCharts Suite XT ships with the following predefined themes:
 
 A column 2D chart showcasing the 3 themes mentioned above is given below:
 
-**<chart>**
+{% embed_all themes-introduction-to-themes-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/0dtjw8a5/ '@@open-newtab') to edit the above chart.
 
 In the above chart, click any radio button and then the **Apply Theme** button, to see how the look and feel of the chart changes with each theme.
-

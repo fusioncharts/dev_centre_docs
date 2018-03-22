@@ -1,7 +1,7 @@
 ---
-title: Creating New Themes | FusionCharts
+title: Create Your Own Themes | FusionCharts
 description: FusionCharts Suite XT is shipped with the following three predefined themes zune, ocean and carbon.
-heading: Creating New Themes
+heading: Create Your Own Themes
 ---
 
 Assume that you have to create a theme named **mySampleTheme**, which needs to include the properties listed below:
@@ -126,184 +126,95 @@ Given below is a stepwise procedure for creating this theme:
 
 Refer to the code for the new theme, given below:
 
-```
-
+```json
 //The `FusionCharts.register()` API is used to register the new theme in the FusionCharts core.
-
 FusionCharts.register('theme', {
-
     name: 'mySampleTheme',
-
     theme: {
-
         base: {
-
             chart: {
-
                 paletteColors: '#0075c2,#1aaf5d,#f2c500',
-
                 subCaption: 'Harry's SuperMart !important', //The !important directive is used to ensure that the subcaption cannot be overriden in the theme definition or in the chart data.
-
                 captionFontSize: '14'
-
                 subCaptionFontSize: '12'
-
                 captionFontBold: '1',
-
                 subCaptionFontBold: '0',
-
                 showHoverEffect: '1',
-
                 placeValuesInside: '0'
-
-                },
-
+            },
             trendlines: [{
-
                 color: '#FF000',
-
                 thickness: '3',
-
                 dashed: '1',
-
                 dashLen: '4',
-
                 dashGap: '2'
-
-                }]
-
-            },
-
-        column2d: {
-
-            dataset: {
-
-                        data: function(dataObj) {
-
-                            color: (Number(dataObj.value) < 0 ? "#3333FF" : "#CC0000"),
-
-                    }
-
-                }
-
-            }
-
-        bubble: {
-
-            chart: {
-
-                drawQuadrant: '1',
-
-                quadrantLineColor: '3',
-
-                quadrantLineThickness: '1',
-
-                quadrantLineAlpha: '4',
-
-                },
-
-            dataset: [{
-
-                regressionLineColor: '#123456',
-
-                regressionLineThickness: '3',
-
-                regressionLineAlpha: '70'  
-
             }]
-
-        }
-
-        pie2d: {
-
-            chart: {
-
-                showPercentInToolTip: '1',
-
-                enableSmartLabels: '1'
-
+        },
+        column2d: {
+            dataset: {
+                data: function(dataObj) {
+                    color: (Number(dataObj.value) < 0 ? "#3333FF" : "#CC0000"),
                 }
-
-            },
-
-        zoomline: {
-
-            chart: {
-
-            anchorMinRenderDistance : '20'                
-
-                }
-
-            },        
-
-        gantt: {
-
-            processes: [{
-
-                headerFont: 'Arial',
-
-                headerFontSize: '16',
-
-                headerFontColor: '#321ABC',
-
-                headerIsBold: '1',
-
-                headerIsUnderline: '1',
-
-                headerAlign: 'left',
-
-                headerVAlign: 'bottom'
-
-                }]
-
-            },      
-
-        geo: {
-
-            chart: {
-
-                showLabels: '1',
-
-                useSNameInLabels: '1',
-
-                useSNameInToolTip: '0',
-
-                entityFillHoverColor: '#9A9A9A',
-
-                entityFillHoverAlpha: '60',
-
-                markerFillHoverColor: '#8AE65C',
-
-                markerFillHoverAlpha: '60',
-
-                }
-
-            marker: {
-
-                connector: {
-
-                    thickness: '4',
-
-                    color: '#336699',
-
-                    alpha: '60',
-
-                    dashed: '1',
-
-                    dashLen: '4',
-
-                    dashGap: '2'
-
-                }
-
             }
-
         }
-
+        bubble: {
+            chart: {
+                drawQuadrant: '1',
+                quadrantLineColor: '3',
+                quadrantLineThickness: '1',
+                quadrantLineAlpha: '4',
+            },
+            dataset: [{
+                regressionLineColor: '#123456',
+                regressionLineThickness: '3',
+                regressionLineAlpha: '70'  
+            }]
+        }
+        pie2d: {
+            chart: {
+                showPercentInToolTip: '1',
+                enableSmartLabels: '1'
+            }
+        },
+        zoomline: {
+            chart: {
+                anchorMinRenderDistance : '20'                
+            }
+        },        
+        gantt: {
+            processes: [{
+                headerFont: 'Arial',
+                headerFontSize: '16',
+                headerFontColor: '#321ABC',
+                headerIsBold: '1',
+                headerIsUnderline: '1',
+                headerAlign: 'left',
+                headerVAlign: 'bottom'
+            }]
+        },      
+        geo: {
+            chart: {
+                showLabels: '1',
+                useSNameInLabels: '1',
+                useSNameInToolTip: '0',
+                entityFillHoverColor: '#9A9A9A',
+                entityFillHoverAlpha: '60',
+                markerFillHoverColor: '#8AE65C',
+                markerFillHoverAlpha: '60',
+            }
+            marker: {
+                connector: {
+                    thickness: '4',
+                    color: '#336699',
+                    alpha: '60',
+                    dashed: '1',
+                    dashLen: '4',
+                    dashGap: '2'
+                }
+            }
+        }
     }
-
 });
-
 ```
 
 **Step 5**: Apply your new theme to the charts, gauges, and maps in your application, using either the `theme` attribute of the `chart` object or the `setChartAttribute()` method of the FusionCharts API.
@@ -314,59 +225,39 @@ If you need to create multiple new themes for your application, then ideally you
 
 Refer to the code below for a sample:
 
-```
-
-var myTheme1 = {
-
-             name: 'my-theme-1',
-
-            theme: {...} // Theme JSON
-
-          },
-
+```json
+{
+    var myTheme1 = {
+        name: 'my-theme-1',
+        theme: {...} // Theme JSON
+    },
     myTheme2 = {
-
-              name: 'my-theme-1',
-
-            theme: {...} // Theme JSON
-
-          },
-
+        name: 'my-theme-1',
+        theme: {...} // Theme JSON
+    },
     myTheme3 = {
-
-              name: 'my-theme-1',
-
-            theme: {...} // Theme JSON
-
-      };
-
+        name: 'my-theme-1',
+        theme: {...} // Theme JSON
+    };
+}
 ```
 
 To register all the themes in one go, use the `FusionCharts.register()` API as shown below:
 
-```
-
+```json
 FusionCharts.register('theme', [myTheme1, myTheme2, myTheme3]);
-
 ```
 
 You can also create and register multiple themes as shown below:
 
-```
-
+```json
 FusionCharts.register('theme', [
-
     {name: 'my-theme-1', theme: {...}}, 
-
     {name: 'my-theme-2', theme: {...}}, 
-
     {name: 'my-theme-3', theme: {...}}
-
 ]);
-
 ```
 
 ## Include escape characters in theme definition
 
-You can include escape characters in definitions for new themes using the same process as the one you follow to include them when modifying existing themes. The process is detailed <<here>>.
-
+You can include escape characters in definitions for new themes using the same process as the one you follow to include them when modifying existing themes. The process is detailed [here]({% site.baseurl %}/themes/theme-manager#include-escape-characters-in-theme-definition-9 "@@open-newtab").
