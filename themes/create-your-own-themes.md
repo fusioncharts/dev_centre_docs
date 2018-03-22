@@ -260,4 +260,4 @@ FusionCharts.register('theme', [
 
 ## Include escape characters in theme definition
 
-You can include escape characters in definitions for new themes using the same process as the one you follow to include them when modifying existing themes. The process is detailed [here]({% site.baseurl %}/themes/theme-manager#include-escape-characters-in-theme-definition-9 '@@open-newtab').
+You can include escape characters in definitions for new themes using the same process as the one you follow to include them when modifying existing themes. The process is detailed [here]({% site.baseurl %}/themes/theme-manager#include-escape-characters-in-theme-definition-9 "@@open-newtab").
