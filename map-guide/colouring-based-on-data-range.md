@@ -6,38 +6,176 @@ heading: Coloring Based on Data Range
 chartPresent: true
 ---
 
-In setting up a (/map-guide/simple-data-driven-map) we used color ranges to define entity colors based on values. This process of defining colors for individual data buckets is not scalable, it requires grouping of data values under defined data range buckets. The entities within these buckets are denoted with the same color. Secondly, you need to define colours for each data range. This becomes tedious if the number of such buckets is large. You can use a gradient scale to simplify this process.
+You have to use color ranges to define entity colors based on values, in order to set up a <<simple data driven map>>. Since the process of defining colors for individual data buckets is not scalable, you need to group data values under defined data range buckets. 
 
-A gradient scale allows you to specify colours associated with specific data points. This defines an automatic gradient scale across the data range. Entities appear in unique colors as per the data value position on the gradient scale.
+Note that you need to denote entities within these buckets with the same color. Also, you need to define colors for each data range. This can become tedious if you have to deal with a large number of buckets. In that case, you can use a gradient scale to simplify this process.
 
-The following chart shows a map with a gradient legend:
+Using a gradient scale, you can specify colours associated with specific data points. This defines an automatic gradient scale across the data range. Entities appear in unique colors as per the data value position on the gradient scale.
 
-{% embed_chart map-guide-colouring-based-on-data-range.js %}
+## Build a map with a gradient scale
 
-Observe that you can drag the legend pointers from both ends and set thresholds such that only those entities that are within the threshold are visible.
+Here's how you can build a map with a gradient scale:
 
+* Set the `caption` of the map and apply the `fint` theme (FusionCharts Internal Theme) to control the cosmetic properties of the map. Use the `formatNumberScale` and `showLabels` attributes to specify the formatting on labels.
 
-The data structure of the map will look like this will look like this
+* Use the `colorrange` object to define different numeric ranges of the gradient legend. Also, use the following attributes to define specific properties:
 
-{% embed_data map-guide-colouring-based-on-data-range.js %}
+    * Use the `startLabel` and `endLabel` attributes to define the labels on the starting and ending points of the gradient scale.
 
-This is what we did in the above data structure
+    * Use the `minValue` attribute to specify the starting point of the scale.
 
-* Set the `caption` of the map and applied the `fint` theme (FusionCharts Internal Theme) to control the cosmetic properties of the map. The `formatNumberScale`  and `showLabels` attributes were are used to specify the formatting on labels.
+    * Use the `color` attribute to specify the starting color of the legend.
 
-* The `colorrange` object defines different numeric ranges of the gradient legend, the `startLabel` and `endLabel` define the label on the starting and end points of the gradient scale. The `minValue` attribute specifies the starting point of the scale and the `color` attribute specifies the starting color of the legend.
+* Use the `colorrange` object, which has an array of `color` objects, to indicate progressive thresholds. Specify the upper limit of the band with `maxValue` as key.
 
-* The `colorrange` object has an array of `color` objects, to indicate progressive thresholds. Here the upper limit of the band is specified with `maxValue` as key.
+* Specify the color code for the upper limit of each band in the gradient with `code` as key.
 
-* The color code for the upper limit of each band in the gradient is specified with `code` as key.
+* Lastly, specify the tabular data within the `data` array, with name of the new ID with key as `id`, and population with key as `value`.
 
-* Lastly the tabular data is specified within the `data` array, with name of the new ID with key as `id`, and population with key as `value`.
+Refer to the code given below:
 
-> It is possible to use only one color to draw the gradient scale. Here, the scale will appear starting from the darkest shade of the color (lower limit) to the brightest shade of the color (upper limit). The map will automatically decide the numeric range taking the lowest data value present as the lower limit and the highest data value as the upper limit. There is no scope however of setting the upper limit using the `maxValue` attribute.</p>
+```
 
-The full HTML code to build this example is shown below
+{
 
-```html
+    "chart": {
+
+        "caption": "Global Population Density",
+
+        "theme": "fint",
+
+        "showLabels": "1",
+
+        "formatNumberScale": "0"
+
+    },
+
+    "colorrange": {
+
+        "minvalue": "0",
+
+        "startlabel": "Low",
+
+        "endlabel": "High",
+
+        "code": "#FF4411",
+
+        "gradient": "1",
+
+        "color": [
+
+            {
+
+                "maxvalue": "25",
+
+                "code": "#FFDD44",
+
+                "displayValue": "Median"
+
+            },
+
+            {
+
+                "maxvalue": "100",
+
+                "code": "#6baa01"
+
+            }
+
+        ]
+
+    },
+
+    "data": [
+
+        {
+
+            "id": "NA",
+
+            "value": "22.1",
+
+            "showLabel": "1",
+
+            "displayValue": "Moderate"
+
+        },
+
+        {
+
+            "id": "SA",
+
+            "value": "22.0",
+
+            "showLabel": "1",
+
+            "displayValue": "Moderate"
+
+        },
+
+        {
+
+            "id": "AS",
+
+            "value": "95.0",
+
+            "showLabel": "1",
+
+            "displayValue": "Dense"
+
+        },
+
+        {
+
+            "id": "EU",
+
+            "value": "72.5",
+
+            "showLabel": "1",
+
+            "displayValue": "Dense"
+
+        },
+
+        {
+
+            "id": "AF",
+
+            "value": "33.7",
+
+            "showLabel": "1",
+
+            "displayValue": "Moderate"
+
+        },
+
+        {
+
+            "id": "AU",
+
+            "value": "3.2",
+
+            "showLabel": "1",
+
+            "displayValue": "Sparse"
+
+        }
+
+    ]
+
+}
+
+```
+
+The map will look as shown below:
+
+<map>
+
+> Note: You can use only one color to draw the gradient scale. Here, the scale will appear starting from the darkest shade of the color (lower limit) to the brightest shade of the color (upper limit). The map will automatically decide the numeric range taking the lowest data value present as the lower limit and the highest data value as the upper limit. In this case, however, you cannot set the upper limit using the `maxValue` attribute.
+
+To build the map shown above, refer to the HTML code given below:
+
+```
+
 <html>
 <head>
     <title>A Data Driven Map</title>
@@ -113,5 +251,5 @@ FusionCharts.ready(function() {
     <div id="chart-container">A world map will load here!</div>
 </body>
 </html>
-```
 
+```
