@@ -15,7 +15,7 @@ Refer to the code snippet given below:
 <script type="text/javascript" src="js/themes/fusioncharts.theme.carbon.js"></script>
 ```
 
-> Note: The installation routine of a theme relies on the code in the fusioncharts.js file. Therefore, make sure that this file is always included before the JavaScript file for the theme.
+> The installation routine of a theme relies on the code in the fusioncharts.js file. Therefore, make sure that this file is always included before the JavaScript file for the theme.
 
 Once you include the theme file, you can apply the theme using the:
 
@@ -40,7 +40,7 @@ You can see a column 2D chart configured using the carbon theme, given below:
 
 **<chart>**
 
-> Note: If you are using the XML data format for the chart, you can use the theme attribute within the <chart> element. For example, <chart theme="carbon">
+> If you are using the XML data format for the chart, you can use the theme attribute within the <chart> element. For example, <chart theme="carbon">
 
 ### Use the setChartAttribute() method
 
@@ -73,7 +73,7 @@ To apply multiple themes for a chart, specify the theme names as a comma-separat
 "theme": "zune,zune-v1"
 ```
 
-> Note: `zune-v1` is a user-defined theme. To find out how to create user-defined themes, refer to the Create New Themes section.
+> `zune-v1` is a user-defined theme. To find out how to create user-defined themes, refer to the Create New Themes section.
 
 Values of all attributes that you set across these themes will be applied to the chart. In case of overlapping attributes, the values you specify for the rightmost theme will take precedence. For example, if you specify the `captionFontSize` attribute for both themes, its value for the `zune-v1` theme will be applied to the caption.
 
@@ -170,7 +170,7 @@ Now, if you also have to configure the thickness for trendlines for all charts, 
 }
 ```
 
-Note: Each tier in the theme definition supports most JSON objects, like chart, dataset, trendlines, and so on, and all the attributes that fall under these objects. Just map the attributes and objects correctly.
+> Each tier in the theme definition supports most JSON objects, like chart, dataset, trendlines, and so on, and all the attributes that fall under these objects. Just map the attributes and objects correctly.
 
 Refer to the [FusionCharts Suite XT Chart Attributes](https://www.fusioncharts.com/chart-attributes?chart=area2d) page to better understand the objects and attributes used to configure the charts, gauges, and maps.
 
@@ -286,7 +286,7 @@ Follow the step-by-step procedure given below, to modify the theme definition:
 
 * To change the border color for all maps, modify the `borderColor` attribute (which belongs to the `chart` object) within the `geo` tier.
 
-Note: Refer to the FusionCharts Suite XT Chart Attributes page to better understand the objects and attributes used to configure the charts, gauges, and maps.
+> Refer to the FusionCharts Suite XT Chart Attributes page to better understand the objects and attributes used to configure the charts, gauges, and maps.
 
 **Step 3**: Revise the existing theme definitions for these modifications, as shown in the code snippet below:
 
@@ -368,13 +368,13 @@ However, major browsers may interpret the single quote after 'y' as the closing 
 ```json
 subCaption: 'Harry\'s SuperMart'
 ```
-In the above format, `\' is an escape character. You can use it to tell the browser that the quotation mark after `y` is an apostrophe, and not a part of the code. This way of using escape characters to represent characters that browsers would otherwise interpret incorrectly is called character quoting. You can use the following escape characters (in the given sequences) in your code:
+In the above format, `\` is an escape character. You can use it to tell the browser that the quotation mark after `y` is an apostrophe, and not a part of the code. This way of using escape characters to represent characters that browsers would otherwise interpret incorrectly is called character quoting. You can use the following escape characters (in the given sequences) in your code:
 
 * Use **\'** to indicate an apostrophe, or a single quote.
 
 * Use **\"** to indicate double quotes.
 
-* Use **\ **to indicate a backslash.
+* Use **\\** to indicate a backslash.
 
 * Use **\n** to indicate a new line.
 
