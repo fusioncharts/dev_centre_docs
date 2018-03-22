@@ -34,42 +34,42 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-USA (States)|maps/usa|
-Alaska|maps/alaska|
-Alabama|maps/alabama|
-Arizona|maps/arizona|
-Arkansas|maps/arkansas|
-California|maps/california|
-Colorado|maps/colorado|
-Connecticut|maps/connecticut|
-Delaware|maps/delaware|
-District of Columbia|maps/districtofcolumbia|
-Florida|maps/florida|
-Georgia|maps/georgia|
-Hawaii|maps/hawaii|
-Idaho|maps/idaho|
-Illinois|maps/illinois|
-Indiana|maps/indiana|
-Iowa|maps/iowa|
-Kentucky|maps/kentucky|
-Kansas|maps/kansas|
-Lousiana|maps/louisiana|
-Maine|maps/maine|
-Maryland|maps/maryland|
-Massachusetts|maps/massachusetts|
-Michigan|maps/michigan|
-Minnesota|maps/minnesota|
-Mississippi|maps/mississippi|
-Missouri|maps/missouri|
-Montana|maps/montana|
-Nebraska|maps/nebraska|
-Nevada|maps/nevada|
-New Hampshire|maps/newhampshire|
-New Jersey|maps/newjersey|
-New Mexico|maps/newmexico|
-New York|maps/newyork|
-North Carolina|maps/northcarolina|
-North Dakota|maps/northdakota|
+[USA (States)]({% site.baseurl %}/maps/spec-sheets/usa "@@soft-reload")|maps/usa|
+[Alaska]({% site.baseurl %}/maps/spec-sheets/alaska "@@soft-reload")|maps/alaska|
+[Alabama]({% site.baseurl %}/maps/spec-sheets/alabama "@@soft-reload")|maps/alabama|
+[Arizona]({% site.baseurl %}/maps/spec-sheets/arizona "@@soft-reload")|maps/arizona|
+[Arkansas]({% site.baseurl %}/maps/spec-sheets/arkansas "@@soft-reload")|maps/arkansas|
+[California]({% site.baseurl %}/maps/spec-sheets/california "@@soft-reload")|maps/california|
+[Colorado]({% site.baseurl %}/maps/spec-sheets/colorado "@@soft-reload")|maps/colorado|
+[Connecticut]({% site.baseurl %}/maps/spec-sheets/connecticut "@@soft-reload")|maps/connecticut|
+[Delaware]({% site.baseurl %}/maps/spec-sheets/delaware "@@soft-reload")|maps/delaware|
+[District of Columbia]({% site.baseurl %}/maps/spec-sheets/districtofcolumbia "@@soft-reload")|maps/districtofcolumbia|
+[Florida]({% site.baseurl %}/maps/spec-sheets/florida "@@soft-reload")|maps/florida|
+[Georgia]({% site.baseurl %}/maps/spec-sheets/georgia "@@soft-reload")|maps/georgia|
+[Hawaii]({% site.baseurl %}/dev/maps/spec-sheets/hawaii "@@soft-reload")|maps/hawaii|
+[Idaho]({% site.baseurl %}/maps/spec-sheets/idaho "@@soft-reload")|maps/idaho|
+[Illinois]({% site.baseurl %}/maps/spec-sheets/illinois "@@soft-reload")|maps/illinois|
+[Indiana]({% site.baseurl %}/maps/spec-sheets/indiana "@@soft-reload")|maps/indiana|
+[Iowa]({% site.baseurl %}/maps/spec-sheets/iowa "@@soft-reload")|maps/iowa|
+[Kentucky]({% site.baseurl %}/maps/spec-sheets/kentucky "@@soft-reload")|maps/kentucky|
+[Kansas]({% site.baseurl %}/maps/spec-sheets/kansas "@@soft-reload")|maps/kansas|
+[Louisiana]({% site.baseurl %}/maps/spec-sheets/louisiana "@@soft-reload")|maps/louisiana|
+[Maine]({% site.baseurl %}/maps/spec-sheets/maine "@@soft-reload")|maps/maine|
+[Maryland]({% site.baseurl %}/maps/spec-sheets/maryland "@@soft-reload")|maps/maryland|
+[Massachusetts]({% site.baseurl %}/maps/spec-sheets/massachusetts "@@soft-reload")|maps/massachusetts|
+[Michigan]({% site.baseurl %}/maps/spec-sheets/michigan "@@soft-reload")|maps/michigan|
+[Minnesota]({% site.baseurl %}/maps/spec-sheets/minnesota "@@soft-reload")|maps/minnesota|
+[Mississippi]({% site.baseurl %}/maps/spec-sheets/mississippi "@@soft-reload")|maps/mississippi|
+[Missouri]({% site.baseurl %}/maps/spec-sheets/missouri "@@soft-reload")|maps/missouri|
+[Montana]({% site.baseurl %}/maps/spec-sheets/montana "@@soft-reload")|maps/montana|
+[Nebraska]({% site.baseurl %}/maps/spec-sheets/nebraska "@@soft-reload")|maps/nebraska|
+[Nevada]({% site.baseurl %}/maps/spec-sheets/nevada "@@soft-reload")|maps/nevada|
+[New Hampshire]({% site.baseurl %}/maps/spec-sheets/newhampshire "@@soft-reload")|maps/newhampshire|
+[New Jersey]({% site.baseurl %}/maps/spec-sheets/newjersey "@@soft-reload")|maps/newjersey|
+[New Mexico]({% site.baseurl %}/maps/spec-sheets/newmexico "@@soft-reload")|maps/newmexico|
+[New York]({% site.baseurl %}/maps/spec-sheets/newyork "@@soft-reload")|maps/newyork|
+[North Carolina]({% site.baseurl %}/maps/spec-sheets/northcarolina "@@soft-reload")|maps/northcarolina|
+[North Dakota]({% site.baseurl %}/maps/spec-sheets/northdakota "@@soft-reload")|maps/northdakota|
 Ohio|maps/ohio|
 Oklahoma|maps/oklahoma|
 Oregon|maps/oregon|
