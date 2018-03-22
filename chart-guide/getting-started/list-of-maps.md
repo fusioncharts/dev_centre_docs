@@ -349,101 +349,101 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-Afghanistan|maps/afghanistan|
-Bahrain|maps/bahrain|
-Iran|maps/iran|
-Iraq|maps/iraq|
-Israel|maps/israel|
-Jordan|maps/jordan|
-Kuwait|maps/kuwait|
-Kyrgyzstan|maps/kyrgyzstan|
-Lebanon|maps/lebanon|
-Oman|maps/oman|
-Pakistan|maps/pakistan|
-Qatar|maps/qatar|
-Saudi Arabia|maps/saudiarabia|
-Syria|maps/syria|
-Tajikistan|maps/tajikistan|
-Turkmenistan|maps/turkmenistan|
-United Arab Emirates|maps/uae|
-Uzbekistan|maps/uzbekistan|
-Yemen|maps/yemen|
+[Afghanistan]({% site.baseurl %}/maps/spec-sheets/afghanistan "@@soft-reload")|maps/afghanistan|
+[Bahrain]({% site.baseurl %}/maps/spec-sheets/bahrain "@@soft-reload")|maps/bahrain|
+[Iran]({% site.baseurl %}/maps/spec-sheets/iran "@@soft-reload")|maps/iran|
+[Iraq]({% site.baseurl %}/maps/spec-sheets/iraq "@@soft-reload")|maps/iraq|
+[Israel]({% site.baseurl %}/maps/spec-sheets/israel "@@soft-reload")|maps/israel|
+[Jordan]({% site.baseurl %}/maps/spec-sheets/jordan "@@soft-reload")|maps/jordan|
+[Kuwait]({% site.baseurl %}/maps/spec-sheets/kuwait "@@soft-reload")|maps/kuwait|
+[Kyrgyzstan]({% site.baseurl %}/maps/spec-sheets/kyrgyzstan "@@soft-reload")|maps/kyrgyzstan|
+[Lebanon]({% site.baseurl %}/maps/spec-sheets/lebanon "@@soft-reload")|maps/lebanon|
+[Oman]({% site.baseurl %}/maps/spec-sheets/oman "@@soft-reload")|maps/oman|
+[Pakistan]({% site.baseurl %}/maps/spec-sheets/pakistan "@@soft-reload")|maps/pakistan|
+[Qatar]({% site.baseurl %}/maps/spec-sheets/qatar "@@soft-reload")|maps/qatar|
+[Saudi Arabia]({% site.baseurl %}/maps/spec-sheets/saudiarabia "@@soft-reload")|maps/saudiarabia|
+[Syria]({% site.baseurl %}/maps/spec-sheets/syria "@@soft-reload")|maps/syria|
+[Tajikistan]({% site.baseurl %}/maps/spec-sheets/tajikistan "@@soft-reload")|maps/tajikistan|
+[Turkmenistan]({% site.baseurl %}/maps/spec-sheets/turkmenistan "@@soft-reload")|maps/turkmenistan|
+[United Arab Emirates]({% site.baseurl %}/maps/spec-sheets/uae "@@soft-reload")|maps/uae|
+[Uzbekistan]({% site.baseurl %}/maps/spec-sheets/uzbekistan "@@soft-reload")|maps/uzbekistan|
+[Yemen]({% site.baseurl %}/maps/spec-sheets/yemen "@@soft-reload")|maps/yemen|
 
 ## Afghanistan (Provinces)
 
 Chart Type|JavaScript Alias|
 -|-
-Badakhshan|maps/badakhshan|
-Baghlan|maps/baghlan|
-Balkh|maps/balkh|
-Bamyan|maps/bamyan|
-Farah|maps/farah|
-Faryab|maps/faryab|
-Ghazni|maps/ghazni|
-Ghor|maps/ghor|
-Helmand|maps/helmand|
-Herat|maps/herat|
-Jowzjan|maps/jowzjan|
-Kabul|maps/kabul|
-Kandahar|maps/kandahar|
-Kapisa|maps/kapisa|
-Khost|maps/khost|
-Laghman|maps/laghman|
-Logar|maps/logar|
-Maidan Wardak|maps/maidanwardak|
-Nangarhar|maps/nangarhar|
-Nimruz|maps/nimruz|
-Nuristan|maps/nuristan|
-Paktia|maps/paktia|
-Paktika|maps/paktika|
-Panjshir|maps/panjshir|
-Samangan|maps/samangan|
-Sar-e-pol|maps/sarepol|
-Takhar|maps/takhar|
-Urozgan|maps/urozgan|
-Zabul|maps/zabul|
+[Badakhshan]({% site.baseurl %}/maps/spec-sheets/badakhshan "@@soft-reload")|maps/badakhshan|
+[Baghlan]({% site.baseurl %}/maps/spec-sheets/baghlan "@@soft-reload")|maps/baghlan|
+[Balkh]({% site.baseurl %}/maps/spec-sheets/balkh "@@soft-reload")|maps/balkh|
+[Bamyan]({% site.baseurl %}/maps/spec-sheets/bamyan "@@soft-reload")|maps/bamyan|
+[Farah]({% site.baseurl %}/maps/spec-sheets/farah "@@soft-reload")|maps/farah|
+[Faryab]({% site.baseurl %}/maps/spec-sheets/faryab "@@soft-reload")|maps/faryab|
+[Ghazni]({% site.baseurl %}/maps/spec-sheets/ghazni "@@soft-reload")|maps/ghazni|
+[Ghor]({% site.baseurl %}/maps/spec-sheets/ghor "@@soft-reload")|maps/ghor|
+[Helmand]({% site.baseurl %}/maps/spec-sheets/helmand "@@soft-reload")|maps/helmand|
+[Herat]({% site.baseurl %}/maps/spec-sheets/herat "@@soft-reload")|maps/herat|
+[Jowzjan]({% site.baseurl %}/maps/spec-sheets/jowzjan "@@soft-reload")|maps/jowzjan|
+[Kabul]({% site.baseurl %}/maps/spec-sheets/kabul "@@soft-reload")|maps/kabul|
+[Kandahar]({% site.baseurl %}/maps/spec-sheets/kandahar "@@soft-reload")|maps/kandahar|
+[Kapisa]({% site.baseurl %}/maps/spec-sheets/kapisa "@@soft-reload")|maps/kapisa|
+[Khost]({% site.baseurl %}/maps/spec-sheets/khost "@@soft-reload")|maps/khost|
+[Laghman]({% site.baseurl %}/maps/spec-sheets/laghman "@@soft-reload")|maps/laghman|
+[Logar]({% site.baseurl %}/maps/spec-sheets/logar "@@soft-reload")|maps/logar|
+[Maidan Wardak]({% site.baseurl %}/maps/spec-sheets/maidanwardak "@@soft-reload")|maps/maidanwardak|
+[Nangarhar]({% site.baseurl %}/maps/spec-sheets/nangarhar "@@soft-reload")|maps/nangarhar|
+[Nimruz]({% site.baseurl %}/maps/spec-sheets/nimruz "@@soft-reload")|maps/nimruz|
+[Nuristan]({% site.baseurl %}/maps/spec-sheets/nuristan "@@soft-reload")|maps/nuristan|
+[Paktia]({% site.baseurl %}/maps/spec-sheets/paktia "@@soft-reload")|maps/paktia|
+[Paktika]({% site.baseurl %}/maps/spec-sheets/paktika "@@soft-reload")|maps/paktika|
+[Panjshir]({% site.baseurl %}/maps/spec-sheets/panjshir "@@soft-reload")|maps/panjshir|
+[Samangan]({% site.baseurl %}/maps/spec-sheets/samangan "@@soft-reload")|maps/samangan|
+[Sar-e-pol]({% site.baseurl %}/maps/spec-sheets/sarepol "@@soft-reload")|maps/sarepol|
+[Takhar]({% site.baseurl %}/maps/spec-sheets/takhar "@@soft-reload")|maps/takhar|
+[Urozgan]({% site.baseurl %}/maps/spec-sheets/urozgan "@@soft-reload")|maps/urozgan|
+[Zabul]({% site.baseurl %}/maps/spec-sheets/zabul "@@soft-reload")|maps/zabul|
 
 ## Iran (Regions)
 
 Chart Type|JavaScript Alias|
 -|-
-Esfahan|maps/esfahan|
-Kermanshah|maps/kermanshah|
-Mashhad|maps/mashhad|
-Tabriz|maps/tabriz|
-Tehran|maps/tehran|
+[Esfahan]({% site.baseurl %}/maps/spec-sheets/esfahan "@@soft-reload")|maps/esfahan|
+[Kermanshah]({% site.baseurl %}/maps/spec-sheets/kermanshah "@@soft-reload")|maps/kermanshah|
+[Mashhad]({% site.baseurl %}/maps/spec-sheets/mashhad "@@soft-reload")|maps/mashhad|
+[Tabriz]({% site.baseurl %}/maps/spec-sheets/tabriz "@@soft-reload")|maps/tabriz|
+[Tehran]({% site.baseurl %}/maps/spec-sheets/tehran "@@soft-reload")|maps/tehran|
 
 ## Lebanon (Governorates)
 
 Chart Type|JavaScript Alias|
 -|-
-Beirut|maps/beirut|
-Beqaa|maps/beqaa|
-Mount Lebanon|maps/mountlebanon|
-Nabatieh|maps/nabatieh|
-North Map|maps/northmap|
-South Map|maps/southmap|
+[Beirut]({% site.baseurl %}/maps/spec-sheets/beirut "@@soft-reload")|maps/beirut|
+[Beqaa]({% site.baseurl %}/maps/spec-sheets/beqaa "@@soft-reload")|maps/beqaa|
+[Mount Lebanon]({% site.baseurl %}/maps/spec-sheets/mountlebanon "@@soft-reload")|maps/mountlebanon|
+[Nabatieh]({% site.baseurl %}/maps/spec-sheets/tehran "@@soft-reload")|maps/nabatieh|
+[North Map]({% site.baseurl %}/maps/spec-sheets/tehran "@@soft-reload")|maps/northmap|
+[South Map]({% site.baseurl %}/maps/spec-sheets/southmap "@@soft-reload")|maps/southmap|
 
 ## Oceania
 
 Chart Type|JavaScript Alias|
 -|-
-Australia|maps/australia|
-Australia (W/Capital)|maps/australia2|
-Fiji|maps/fiji|
-Kiribati|maps/kiribati|
-Marshall Island|maps/marshallisland|
-Micronesia|maps/micronesia|
-Nauru|maps/nauru|
-New Caledonia|maps/newcaledonia|
-New Zealand|maps/newzealand|
-Palau|maps/palau|
-Papua New Guinea|maps/papuanewguinea|
-Samoa|maps/samoa|
-Solomon Island|maps/solomonisland|
-Tonga|maps/tonga|
-Tuvalu|maps/tuvalu|
-Vanuatu|maps/vanuatu|
+[Australia]({% site.baseurl %}/maps/spec-sheets/australia "@@soft-reload")|maps/australia|
+[Australia (W/Capital)]({% site.baseurl %}/maps/spec-sheets/australia2 "@@soft-reload")|maps/australia2|
+[Fiji]({% site.baseurl %}/maps/spec-sheets/fiji "@@soft-reload")|maps/fiji|
+[Kiribati]({% site.baseurl %}/maps/spec-sheets/kiribati "@@soft-reload")|maps/kiribati|
+[Marshall Island]({% site.baseurl %}/maps/spec-sheets/marshallisland "@@soft-reload")|maps/marshallisland|
+[Micronesia]({% site.baseurl %}/maps/spec-sheets/micronesia "@@soft-reload")|maps/micronesia|
+[Nauru]({% site.baseurl %}/maps/spec-sheets/nauru "@@soft-reload")|maps/nauru|
+[New Caledonia]({% site.baseurl %}/maps/spec-sheets/newcaledonia "@@soft-reload")|maps/newcaledonia|
+[New Zealand]({% site.baseurl %}/maps/spec-sheets/newzealand "@@soft-reload")|maps/newzealand|
+[Palau]({% site.baseurl %}/maps/spec-sheets/palau "@@soft-reload")|maps/palau|
+[Papua New Guinea]({% site.baseurl %}/maps/spec-sheets/papuanewguinea "@@soft-reload")|maps/papuanewguinea|
+[Samoa]({% site.baseurl %}/maps/spec-sheets/samoa "@@soft-reload")|maps/samoa|
+[Solomon]({% site.baseurl %}/maps/spec-sheets/solomonisland "@@soft-reload") Island|maps/solomonisland|
+[Tonga]({% site.baseurl %}/maps/spec-sheets/tonga "@@soft-reload")|maps/tonga|
+[Tuvalu]({% site.baseurl %}/maps/spec-sheets/tuvalu "@@soft-reload")|maps/tuvalu|
+[Vanuatu]({% site.baseurl %}/maps/spec-sheets/vanuatu "@@soft-reload")|maps/vanuatu|
 
 ## Africa
 
