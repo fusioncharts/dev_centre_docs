@@ -991,88 +991,88 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-Asia (All Regions)|maps/asiaregion|
-Northern Asia|maps/northernasia|
-Central Asia|maps/centralasia|
-Eastern Asia|maps/easternasia|
-Southern Asia|maps/southernasia|
-South East Asia|maps/southeastasia|
-Western Asia|maps/westernasia|
+[Asia (All Regions)]({% site.baseurl %}/maps/spec-sheets/asiaregion "@@soft-reload")|maps/asiaregion|
+[Northern Asia]({% site.baseurl %}/maps/spec-sheets/northernasia "@@soft-reload")|maps/northernasia|
+[Central Asia]({% site.baseurl %}/maps/spec-sheets/centralasia "@@soft-reload")|maps/centralasia|
+[Eastern Asia]({% site.baseurl %}/maps/spec-sheets/easternasia "@@soft-reload")|maps/easternasia|
+[Southern Asia]({% site.baseurl %}/maps/spec-sheets/southernasia "@@soft-reload")|maps/southernasia|
+[South East Asia]({% site.baseurl %}/maps/spec-sheets/southeastasia "@@soft-reload")|maps/southeastasia|
+[Western Asia]({% site.baseurl %}/maps/spec-sheets/westernasia "@@soft-reload")|maps/westernasia|
 
 ### South Korea (Provincial)
 
 Chart Type|JavaScript Alias|
 -|-
-Busan|maps/busan|
-Chungcheong bukdo|maps/chungcheongbukdo|
-Chungcheong namdo|maps/chungcheongnamdo|
-Gangwondo|maps/gangwondo|
-Gwangju|maps/gwangju|
-Gyeonggido|maps/gyeonggido|
-Gyeongsang bukdo|maps/gyeongsangbukdo|
-Gyeongsang namdo|maps/gyeongsangnamdo|
-Incheon|maps/incheon|
-Jejudo|maps/jejudo|
-Jeolla bukdo|maps/jeollabukdo|
-Jeolla namdo|maps/jeollanamdo|
-Daegu|maps/daegu|
-Daejeon|maps/daejeon|
-Seoul|maps/seoul|
-Ulsan|maps/ulsan|
+[Busan]({% site.baseurl %}/maps/spec-sheets/busan "@@soft-reload")|maps/busan|
+[Chungcheong bukdo]({% site.baseurl %}/maps/spec-sheets/chungcheongbukdo "@@soft-reload")|maps/chungcheongbukdo|
+[Chungcheong namdo]({% site.baseurl %}/maps/spec-sheets/chungcheongnamdo "@@soft-reload")|maps/chungcheongnamdo|
+[Gangwondo]({% site.baseurl %}/maps/spec-sheets/gangwondo "@@soft-reload")|maps/gangwondo|
+[Gwangju]({% site.baseurl %}/maps/spec-sheets/gwangju "@@soft-reload")|maps/gwangju|
+[Gyeonggido]({% site.baseurl %}/maps/spec-sheets/gyeonggido "@@soft-reload")|maps/gyeonggido|
+[Gyeongsang bukdo]({% site.baseurl %}/maps/spec-sheets/gyeongsangbukdo "@@soft-reload")|maps/gyeongsangbukdo|
+[Gyeongsang namdo]({% site.baseurl %}/maps/spec-sheets/gyeongsangnamdo "@@soft-reload")|maps/gyeongsangnamdo|
+[Incheon]({% site.baseurl %}/maps/spec-sheets/incheon "@@soft-reload")|maps/incheon|
+[Jejudo]({% site.baseurl %}/maps/spec-sheets/jejudo "@@soft-reload")|maps/jejudo|
+[Jeolla bukdo]({% site.baseurl %}/maps/spec-sheets/jeollabukdo "@@soft-reload")|maps/jeollabukdo|
+[Jeolla namdo]({% site.baseurl %}/maps/spec-sheets/jeollanamdo "@@soft-reload")|maps/jeollanamdo|
+[Daegu]({% site.baseurl %}/maps/spec-sheets/daegu "@@soft-reload")|maps/daegu|
+[Daejeon]({% site.baseurl %}/maps/spec-sheets/daejeon "@@soft-reload")|maps/daejeon|
+[Seoul]({% site.baseurl %}/maps/spec-sheets/seoul "@@soft-reload")|maps/seoul|
+[Ulsan]({% site.baseurl %}/maps/spec-sheets/ulsan "@@soft-reload")|maps/ulsan|
 
 ### North Korea (Provincial)
 
 Chart Type|JavaScript Alias|
 -|-
-Rason|maps/rason|
-North Hamgyong|maps/northhamgyong|
-Ryanggang|maps/ryanggang|
-Chagang|maps/chagang|
-South Hamgyong|maps/southhamgyong|
-North Pyongan|maps/northpyongan|
-Sinuiju|maps/sinuiju|
-South Pyongan|maps/southpyongan|
-Pyongyang|maps/pyongyang|
-North Hwangae|maps/northhwangae|
-Kangwon|maps/kangwon|
-Kumgangsan|maps/kumgangsan|
-Kaesong|maps/kaesong|
-South Hwangae|maps/southhwangae|
+[Rason]({% site.baseurl %}/maps/spec-sheets/rason "@@soft-reload")|maps/rason|
+[North Hamgyong]({% site.baseurl %}/maps/spec-sheets/northhamgyong "@@soft-reload")|maps/northhamgyong|
+[Ryanggang]({% site.baseurl %}/maps/spec-sheets/ryanggang "@@soft-reload")|maps/ryanggang|
+[Chagang]({% site.baseurl %}/maps/spec-sheets/chagang "@@soft-reload")|maps/chagang|
+[South Hamgyong]({% site.baseurl %}/maps/spec-sheets/southhamgyong "@@soft-reload")|maps/southhamgyong|
+[North Pyongan]({% site.baseurl %}/maps/spec-sheets/northpyongan "@@soft-reload")|maps/northpyongan|
+[Sinuiju]({% site.baseurl %}/maps/spec-sheets/sinuiju "@@soft-reload")|maps/sinuiju|
+[South Pyongan]({% site.baseurl %}/maps/spec-sheets/southpyongan "@@soft-reload")|maps/southpyongan|
+[Pyongyang]({% site.baseurl %}/maps/spec-sheets/pyongyang "@@soft-reload")|maps/pyongyang|
+[North Hwangae]({% site.baseurl %}/maps/spec-sheets/northhwangae "@@soft-reload")|maps/northhwangae|
+[Kangwon]({% site.baseurl %}/maps/spec-sheets/kangwon "@@soft-reload")|maps/kangwon|
+[Kumgangsan]({% site.baseurl %}/maps/spec-sheets/kumgangsan "@@soft-reload")|maps/kumgangsan|
+[Kaesong]({% site.baseurl %}/maps/spec-sheets/kaesong "@@soft-reload")|maps/kaesong|
+[South Hwangae]({% site.baseurl %}/maps/spec-sheets/southhwangae "@@soft-reload")|maps/southhwangae|
 
 ### China (Provincial)
 
 Chart Type|JavaScript Alias|
 -|-
-Anhui|maps/anhui|
-Beijing|maps/beijing|
-Shanxi|maps/shanxi|
-Chongqing|maps/chongqing|
-Fujian|maps/fujian|
-Gansu|maps/gansu|
-Shanghai|maps/shanghai|
-Tianjin|maps/tianjin|
-Guangdong|maps/guangdong|
-Guizhou|maps/guizhou|
-Hainan|maps/hainan|
-Hebei|maps/hebei|
-Heilongjiang|maps/heilongjiang|
-Henan|maps/henan|
-Hubei|maps/hubei|
-Hunan|maps/hunan|
-Jiangsu|maps/jiangsu|
-Jiangxi|maps/jiangxi|
-Jilin|maps/jilin|
-Liaoning|maps/liaoning|
-Qinghai|maps/qinghai|
-Shaanxi|maps/shaanxi|
-Shandong|maps/shandong|
-Sichuan|maps/sichuan|
-Yunnan|maps/yunnan|
-Zhejiang|maps/zhejiang|
-Nei Mongol|maps/neimongol|
-Xinjiang|maps/xinjiang|
-Guangxi|maps/guangxi|
-Ningxia Hui|maps/ningxiahui|
+[Anhui]({% site.baseurl %}/maps/spec-sheets/anhui "@@soft-reload")|maps/anhui|
+[Beijing]({% site.baseurl %}/maps/spec-sheets/beijing "@@soft-reload")|maps/beijing|
+[Shanxi]({% site.baseurl %}/maps/spec-sheets/shanxi "@@soft-reload")|maps/shanxi|
+[Chongqing]({% site.baseurl %}/maps/spec-sheets/chongqing "@@soft-reload")|maps/chongqing|
+[Fujian]({% site.baseurl %}/maps/spec-sheets/fujian "@@soft-reload")|maps/fujian|
+[Gansu]({% site.baseurl %}/maps/spec-sheets/gansu "@@soft-reload")|maps/gansu|
+[Shanghai]({% site.baseurl %}/maps/spec-sheets/shanghai "@@soft-reload")|maps/shanghai|
+[Tianjin]({% site.baseurl %}/maps/spec-sheets/tianjin "@@soft-reload")|maps/tianjin|
+[Guangdong]({% site.baseurl %}/maps/spec-sheets/guangdong "@@soft-reload")|maps/guangdong|
+[Guizhou]({% site.baseurl %}/maps/spec-sheets/guizhou "@@soft-reload")|maps/guizhou|
+[Hainan]({% site.baseurl %}/maps/spec-sheets/hainan "@@soft-reload")|maps/hainan|
+[Hebei]({% site.baseurl %}/maps/spec-sheets/hebei "@@soft-reload")|maps/hebei|
+[Heilongjiang]({% site.baseurl %}/maps/spec-sheets/heilongjiang "@@soft-reload")|maps/heilongjiang|
+[Henan]({% site.baseurl %}/maps/spec-sheets/henan "@@soft-reload")|maps/henan|
+[Hubei]({% site.baseurl %}/maps/spec-sheets/hubei "@@soft-reload")|maps/hubei|
+[Hunan]({% site.baseurl %}/maps/spec-sheets/hunan "@@soft-reload")|maps/hunan|
+[Jiangsu]({% site.baseurl %}/maps/spec-sheets/jiangsu "@@soft-reload")|maps/jiangsu|
+[Jiangxi]({% site.baseurl %}/maps/spec-sheets/jiangxi "@@soft-reload")|maps/jiangxi|
+[Jilin]({% site.baseurl %}/maps/spec-sheets/jilin "@@soft-reload")|maps/jilin|
+[Liaoning]({% site.baseurl %}/maps/spec-sheets/liaoning "@@soft-reload")|maps/liaoning|
+[Qinghai]({% site.baseurl %}/maps/spec-sheets/qinghai "@@soft-reload")|maps/qinghai|
+[Shaanxi]({% site.baseurl %}/maps/spec-sheets/shaanxi "@@soft-reload")|maps/shaanxi|
+[Shandong]({% site.baseurl %}/maps/spec-sheets/shandong "@@soft-reload")|maps/shandong|
+[Sichuan]({% site.baseurl %}/maps/spec-sheets/sichuan "@@soft-reload")|maps/sichuan|
+[Yunnan]({% site.baseurl %}/maps/spec-sheets/yunnan "@@soft-reload")|maps/yunnan|
+[Zhejiang]({% site.baseurl %}/maps/spec-sheets/zhejiang "@@soft-reload")|maps/zhejiang|
+[Nei Mongol]({% site.baseurl %}/maps/spec-sheets/neimongol "@@soft-reload")|maps/neimongol|
+[Xinjiang]({% site.baseurl %}/maps/spec-sheets/xinjiang "@@soft-reload")|maps/xinjiang|
+[Guangxi]({% site.baseurl %}/maps/spec-sheets/guangxi "@@soft-reload")|maps/guangxi|
+[Ningxia Hui]({% site.baseurl %}/maps/spec-sheets/ningxiahui "@@soft-reload")|maps/ningxiahui|
 
 ### Japan
 
