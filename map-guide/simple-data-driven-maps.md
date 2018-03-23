@@ -1,14 +1,14 @@
 ---
-title: Simple Data Driven Map | FusionCharts
+title: Simple Data Driven Maps | FusionCharts
 description: In this section we will learn how to create a simple map showing the population of the different continents in the world.
-heading: Simple Data Driven Map
+heading: Simple Data Driven Maps
 ---
 
 In the map given below, you can see the populations of the different continents in the world. 
 
 {% embed_all map-guide-simple-data-driven-maps-example-1.js %}
 
-[here](http://jsfiddle.net/fusioncharts/5tajR/ "@@open-newtab")
+Click [here](http://jsfiddle.net/fusioncharts/jjLnb9jt/ "@@open-newtab") to edit the above map.
 
 In the sections below, you will see how to build a map like the one above and customize it using different attributes.
 
@@ -298,7 +298,9 @@ Refer to the code below:
 
 The map will look as shown below:
 
-<map>
+{% embed_chart map-guide-simple-data-driven-maps-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/5Gr3N/ "@@open-newtab") to edit the above map.
 
 > In the above map, each of the continents are entities and their full names are part of the label.
 
@@ -323,9 +325,11 @@ Refer to the code below:
 
 The map will look as shown below:
 
-<map>
+{% embed_chart map-guide-simple-data-driven-maps-example-3.js %}
 
-Note: In the map above, the labels are configured to show the population value along with the continent short name.
+Click [here](http://jsfiddle.net/fusioncharts/7rz5a/ "@@open-newtab") to edit the above map.
+
+> In the map above, the labels are configured to show the population value along with the continent short name.
 
 ### Show labels only for specific entities
 
@@ -354,7 +358,9 @@ Refer to the code below:
 
 The map will look as shown below:
 
-<map>
+{% embed_chart map-guide-simple-data-driven-maps-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/qb31mo1b/ "@@open-newtab") to edit the above map.
 
 Note: In the example given above, you can see labels displayed only for the two most populous continents (Asia and Africa).
 
@@ -383,7 +389,9 @@ Refer to the code below:
 
 The map will look as shown below:
 
-<map>
+{% embed_chart map-guide-simple-data-driven-maps-example-5.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/qb31mo1b/ "@@open-newtab") to edit the above map.
 
 Note: In the map above, you can see the data label of each continent customized as `sparse`, `moderate` or `dense`, based on the population density.
 
@@ -425,7 +433,9 @@ Refer to the code below:
 
 The map will look as shown below:
 
-<map>
+{% embed_chart map-guide-simple-data-driven-maps-example-6.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/QffVn/ "@@open-newtab") to edit the above map.
 
 Note: In the example above, the font is set to `Helvetica` and the size of the label name is proportional to the value of each entity.
 
@@ -445,7 +455,9 @@ Refer to the code below:
 
 The map will look as shown below:
 
-<map>
+{% embed_chart map-guide-simple-data-driven-maps-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/E7jNV/ "@@open-newtab") to edit the above map.
 
 ### Turn off entity tooltips
 
@@ -463,7 +475,9 @@ Refer to the code below:
 
 The map will look as shown below:
 
-<map>
+{% embed_chart map-guide-simple-data-driven-maps-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/G9SNX/ "@@open-newtab") to edit the above map.
 
 ### Handle null entities
 
@@ -489,4 +503,6 @@ Refer to the code below:
 
 The map will look as shown below:
 
-<map>
+{% embed_chart map-guide-simple-data-driven-maps-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/BP3G5/ "@@open-newtab") to edit the above map.

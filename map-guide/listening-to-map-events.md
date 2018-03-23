@@ -30,8 +30,7 @@ Entities in FusionCharts Suite XT can raise 3 events - `entityRollOver`, `entity
 
 Refer to the data structure given below:
 
-```
-
+```json
 {
     "chart": {
         "caption": "Global Population",
@@ -42,164 +41,146 @@ Refer to the data structure given below:
         "showToolTip": "0"
     },
     "colorrange": {
-        "color": [
-            {
-                "minvalue": "0",
-                "maxvalue": "100",
-                "code": "#D0DFA3",
-                "displayValue": "< 100M"
-            },
-            {
-                "minvalue": "100",
-                "maxvalue": "500",
-                "code": "#B0BF92",
-                "displayValue": "100-500M"
-            },
-            {
-                "minvalue": "500",
-                "maxvalue": "1000",
-                "code": "#91AF64",
-                "displayValue": "500M-1B"
-            },
-            {
-                "minvalue": "1000",
-                "maxvalue": "5000",
-                "code": "#A9FF8D",
-                "displayValue": "> 1B"
-            }
-        ]
+        "color": [{
+            "minvalue": "0",
+            "maxvalue": "100",
+            "code": "#D0DFA3",
+            "displayValue": "< 100M"
+        }, {
+            "minvalue": "100",
+            "maxvalue": "500",
+            "code": "#B0BF92",
+            "displayValue": "100-500M"
+        }, {
+            "minvalue": "500",
+            "maxvalue": "1000",
+            "code": "#91AF64",
+            "displayValue": "500M-1B"
+        }, {
+            "minvalue": "1000",
+            "maxvalue": "5000",
+            "code": "#A9FF8D",
+            "displayValue": "> 1B"
+        }]
     },
-    "data": [
-        {
-            "id": "NA",
-            "value": "515"
-        },
-        {
-            "id": "SA",
-            "value": "373"
-        },
-        {
-            "id": "AS",
-            "value": "3875"
-        },
-        {
-            "id": "EU",
-            "value": "727"
-        },
-        {
-            "id": "AF",
-            "value": "885"
-        },
-        {
-            "id": "AU",
-            "value": "32"
-        }
-    ]
+    "data": [{
+        "id": "NA",
+        "value": "515"
+    }, {
+        "id": "SA",
+        "value": "373"
+    }, {
+        "id": "AS",
+        "value": "3875"
+    }, {
+        "id": "EU",
+        "value": "727"
+    }, {
+        "id": "AF",
+        "value": "885"
+    }, {
+        "id": "AU",
+        "value": "32"
+    }]
 }
-
 ```
 
 Refer to the entire HTML code, given below:
 
-```
-
+```html
 <html>
 <head>
     <title>A Data Driven Map</title>
     <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
     <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
-<script>
-FusionCharts.ready(function() {
-    var populationMap = new FusionCharts({
-        type: 'maps/world',
-        renderAt: 'chart-container',
-        width: '600',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
-                "caption": "Global Population",
-                "theme": "fint",
-                "formatNumberScale": "0",
-                "numberSuffix": "M",
-                "showLabels": "1",
-                "showToolTip": "0"
-            },
-            "colorrange": {
-                "color": [{
-                    "minvalue": "0",
-                    "maxvalue": "100",
-                    "code": "#D0DFA3",
-                    "displayValue": "< 100M"
+    <script>
+    FusionCharts.ready(function() {
+        var populationMap = new FusionCharts({
+            type: 'maps/world',
+            renderAt: 'chart-container',
+            width: '600',
+            height: '400',
+            dataFormat: 'json',
+            dataSource: {
+                "chart": {
+                    "caption": "Global Population",
+                    "theme": "fint",
+                    "formatNumberScale": "0",
+                    "numberSuffix": "M",
+                    "showLabels": "1",
+                    "showToolTip": "0"
+                },
+                "colorrange": {
+                    "color": [{
+                        "minvalue": "0",
+                        "maxvalue": "100",
+                        "code": "#D0DFA3",
+                        "displayValue": "< 100M"
+                    }, {
+                        "minvalue": "100",
+                        "maxvalue": "500",
+                        "code": "#B0BF92",
+                        "displayValue": "100-500M"
+                    }, {
+                        "minvalue": "500",
+                        "maxvalue": "1000",
+                        "code": "#91AF64",
+                        "displayValue": "500M-1B"
+                    }, {
+                        "minvalue": "1000",
+                        "maxvalue": "5000",
+                        "code": "#A9FF8D",
+                        "displayValue": "> 1B"
+                    }]
+                },
+                "data": [{
+                    "id": "NA",
+                    "value": "515"
                 }, {
-                    "minvalue": "100",
-                    "maxvalue": "500",
-                    "code": "#B0BF92",
-                    "displayValue": "100-500M"
+                    "id": "SA",
+                    "value": "373"
                 }, {
-                    "minvalue": "500",
-                    "maxvalue": "1000",
-                    "code": "#91AF64",
-                    "displayValue": "500M-1B"
+                    "id": "AS",
+                    "value": "3875"
                 }, {
-                    "minvalue": "1000",
-                    "maxvalue": "5000",
-                    "code": "#A9FF8D",
-                    "displayValue": "> 1B"
-                }]
+                    "id": "EU",
+                    "value": "727"
+                }, {
+                    "id": "AF",
+                    "value": "885"
+                }, {
+                    "id": "AU",
+                    "value": "32"
+                }],
             },
-            "data": [{
-                "id": "NA",
-                "value": "515"
-            }, {
-                "id": "SA",
-                "value": "373"
-            }, {
-                "id": "AS",
-                "value": "3875"
-            }, {
-                "id": "EU",
-                "value": "727"
-            }, {
-                "id": "AF",
-                "value": "885"
-            }, {
-                "id": "AU",
-                "value": "32"
-            }],
-        },
-        "events": {
-            "entityRollover": function(evt, data) {
-                document.getElementById('message').value = "" + data.label + "\n" + "Population: " + data.value + "M";
-            },
-            "entityRollout": function(evt, data) {
-                document.getElementById('message').value =
-                    "Total World Population - 6.3 Billion";
-            },
-            "entityClick": function(evt, data) {
-                alert("You have clicked on " + data.label + ".");
-            },
-        }
-    }).render();
-});
-</script>
+            "events": {
+                "entityRollover": function(evt, data) {
+                    document.getElementById('message').value = "" + data.label + "\n" + "Population: " + data.value + "M";
+                },
+                "entityRollout": function(evt, data) {
+                    document.getElementById('message').value =
+                        "Total World Population - 6.3 Billion";
+                },
+                "entityClick": function(evt, data) {
+                    alert("You have clicked on " + data.label + ".");
+                },
+            }
+        }).render();
+    });
+    </script>
 </head>
 <body>
     <div id="chart-container">A world map will load here!</div>
     <textarea id="message" rows="4" cols="54" style='margin-left:10px;text-align:center'>"Total World Population 6.3 Billion" 
-
-
-
-
 ```
 
-Note: The `eventObject` and `argumentsObject` within the event listener are referenced as `evt` and `data` respectively, in the above example.
+> The `eventObject` and `argumentsObject` within the event listener are referenced as `evt` and `data` respectively, in the above example.
 
 The map will look as shown below:
 
 
 
-Note: The map shown above that captures data from the entity events and displays it in a message box below the map. You can hover on individual continents to see the population of only that specific continent.
+> The map shown above that captures data from the entity events and displays it in a message box below the map. You can hover on individual continents to see the population of only that specific continent.
 
 ## Listen to marker and connector events
 
