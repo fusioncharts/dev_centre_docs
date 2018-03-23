@@ -557,98 +557,98 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-Baden-Wurttemberg|maps/badenwurttemberg|
-Bavaria|maps/bavaria|
-Berlin|maps/berlin|
-Brandenburg|maps/brandenburg|
-Hesse|maps/hesse|
-Lower Saxony|maps/lowersaxony|
-Mecklenburg-Vorpommern|maps/mecklenburgvorpommern|
-North Rhine-Westphalia|maps/northrhinewestphalia|
-Rhineland-Palatinate|maps/rhinelandpalatinate|
-Saarland|maps/saarland|
-Sachsen-Anhalt|maps/sachsenanhalt|
-Saxony|maps/saxony|
-Schleswig-Holstein|maps/schleswigholstein|
-Thuringia|maps/thuringia|
+[Baden-Wurttemberg]({% site.baseurl %}/maps/spec-sheets/badenwurttemberg "@@soft-reload")|maps/badenwurttemberg|
+[Bavaria]({% site.baseurl %}/maps/spec-sheets/bavaria "@@soft-reload")|maps/bavaria|
+[Berlin]({% site.baseurl %}/maps/spec-sheets/berlin "@@soft-reload")|maps/berlin|
+[Brandenburg]({% site.baseurl %}/maps/spec-sheets/brandenburg "@@soft-reload")|maps/brandenburg|
+[Hesse]({% site.baseurl %}/maps/spec-sheets/hesse "@@soft-reload")|maps/hesse|
+[Lower Saxony]({% site.baseurl %}/maps/spec-sheets/lowersaxony "@@soft-reload")|maps/lowersaxony|
+[Mecklenburg-Vorpommern]({% site.baseurl %}/maps/spec-sheets/mecklenburgvorpommern "@@soft-reload")|maps/mecklenburgvorpommern|
+[North Rhine-Westphalia]({% site.baseurl %}/maps/spec-sheets/northrhinewestphalia "@@soft-reload")|maps/northrhinewestphalia|
+[Rhineland-Palatinate]({% site.baseurl %}/maps/spec-sheets/rhinelandpalatinate "@@soft-reload")|maps/rhinelandpalatinate|
+[Saarland]({% site.baseurl %}/maps/spec-sheets/saarland "@@soft-reload")|maps/saarland|
+[Sachsen-Anhalt]({% site.baseurl %}/maps/spec-sheets/sachsenanhalt "@@soft-reload")|maps/sachsenanhalt|
+[Saxony]({% site.baseurl %}/maps/spec-sheets/saxony "@@soft-reload")|maps/saxony|
+[Schleswig-Holstein]({% site.baseurl %}/maps/spec-sheets/schleswigholstein "@@soft-reload")|maps/schleswigholstein|
+[Thuringia]({% site.baseurl %}/maps/spec-sheets/thuringia "@@soft-reload")|maps/thuringia|
 
 ### Italy (Regions)
 
 Chart Type|JavaScript Alias|
 -|-
-Abruzzo|maps/abruzzo|
-Apulia|maps/apulia|
-Basilicata|maps/basilicata|
-Calabria|maps/calabria|
-Campania|maps/campania|
-Emilia Romagna|maps/emiliaromagna|
-Friuli Venezia Giulia|maps/friuliveneziagiulia|
-Lazio|maps/lazio|
-Liguria|maps/liguria|
-Lombardy|maps/lombardy|
-Marche|maps/marche|
-Molise|maps/molise|
-Piedmont|maps/piedmont|
-Sardinia|maps/sardinia|
-Sicily|maps/sicily|
-Trentino Alto Adige|maps/trentinoaltoadige|
-Sudtirol|maps/sudtirol|
-Tuscany|maps/tuscany|
-Umbria|maps/umbria|
-Valle d'Aosta|maps/valledaosta|
-Veneto|maps/veneto|
+[Abruzzo]({% site.baseurl %}/maps/spec-sheets/abruzzo "@@soft-reload")|maps/abruzzo|
+[Apulia]({% site.baseurl %}/maps/spec-sheets/apulia "@@soft-reload")|maps/apulia|
+[Basilicata]({% site.baseurl %}/maps/spec-sheets/basilicata "@@soft-reload")|maps/basilicata|
+[Calabria]({% site.baseurl %}/maps/spec-sheets/calabria "@@soft-reload")|maps/calabria|
+[Campania]({% site.baseurl %}/maps/spec-sheets/campania "@@soft-reload")|maps/campania|
+[Emilia Romagna]({% site.baseurl %}/maps/spec-sheets/emiliaromagna "@@soft-reload")|maps/emiliaromagna|
+[Friuli Venezia Giulia]({% site.baseurl %}/maps/spec-sheets/friuliveneziagiulia "@@soft-reload")|maps/friuliveneziagiulia|
+[Lazio]({% site.baseurl %}/maps/spec-sheets/lazio "@@soft-reload")|maps/lazio|
+[Liguria]({% site.baseurl %}/maps/spec-sheets/liguria "@@soft-reload")|maps/liguria|
+[Lombardy]({% site.baseurl %}/maps/spec-sheets/lombardy "@@soft-reload")|maps/lombardy|
+[Marche]({% site.baseurl %}/maps/spec-sheets/marche "@@soft-reload")|maps/marche|
+[Molise]({% site.baseurl %}/maps/spec-sheets/molise "@@soft-reload")|maps/molise|
+[Piedmont]({% site.baseurl %}/maps/spec-sheets/piedmont "@@soft-reload")|maps/piedmont|
+[Sardinia]({% site.baseurl %}/maps/spec-sheets/sardinia "@@soft-reload")|maps/sardinia|
+[Sicily]({% site.baseurl %}/maps/spec-sheets/sicily "@@soft-reload")|maps/sicily|
+[Trentino Alto Adige]({% site.baseurl %}/maps/spec-sheets/trentinoaltoadige "@@soft-reload")|maps/trentinoaltoadige|
+[Sudtirol]({% site.baseurl %}/maps/spec-sheets/sudtirol "@@soft-reload")|maps/sudtirol|
+[Tuscany]({% site.baseurl %}/maps/spec-sheets/tuscany "@@soft-reload")|maps/tuscany|
+[Umbria]({% site.baseurl %}/maps/spec-sheets/umbria "@@soft-reload")|maps/umbria|
+[Valle d'Aosta]({% site.baseurl %}/maps/spec-sheets/valledaosta "@@soft-reload")|maps/valledaosta|
+[Veneto]({% site.baseurl %}/maps/spec-sheets/veneto "@@soft-reload")|maps/veneto|
 
 ### Sweden (Counties)
 
 Chart Type|JavaScript Alias|
 -|-
-Blekinge|maps/blekinge|
-Dalarna|maps/dalarna|
-Gavleborg|maps/gavleborg|
-Halland|maps/halland|
-Jamtland|maps/jamtland|
-Jonkoping|maps/jonkoping|
-Kalmar|maps/kalmar|
-Kronoberg|maps/kronoberg|
-Norrbotten|maps/norrbotten|
-Orebro|maps/orebro|
-Ostergotland|maps/ostergotland|
-Skane|maps/skane|
-Sodermanland|maps/sodermanland|
-Stockholm County|maps/stockholm|
-Uppsala|maps/uppsala|
-Varmland|maps/varmland|
-Vasterbotten|maps/vasterbotten|
-Vasternorrland|maps/vasternorrland|
-Vastmanland|maps/vastmanland|
-Vastra Gotaland|maps/vastragotaland|
+[Blekinge]({% site.baseurl %}/maps/spec-sheets/blekinge "@@soft-reload")|maps/blekinge|
+[Dalarna]({% site.baseurl %}/maps/spec-sheets/dalarna "@@soft-reload")|maps/dalarna|
+[Gavleborg]({% site.baseurl %}/maps/spec-sheets/gavleborg "@@soft-reload")|maps/gavleborg|
+[Halland]({% site.baseurl %}/maps/spec-sheets/halland "@@soft-reload")|maps/halland|
+[Jamtland]({% site.baseurl %}/maps/spec-sheets/jamtland "@@soft-reload")|maps/jamtland|
+[Jonkoping]({% site.baseurl %}/maps/spec-sheets/jonkoping "@@soft-reload")|maps/jonkoping|
+[Kalmar]({% site.baseurl %}/maps/spec-sheets/kalmar "@@soft-reload")|maps/kalmar|
+[Kronoberg]({% site.baseurl %}/maps/spec-sheets/kronoberg "@@soft-reload")|maps/kronoberg|
+[Norrbotten]({% site.baseurl %}/maps/spec-sheets/norrbotten "@@soft-reload")|maps/norrbotten|
+[Orebro]({% site.baseurl %}/maps/spec-sheets/orebro "@@soft-reload")|maps/orebro|
+[Ostergotland]({% site.baseurl %}/maps/spec-sheets/ostergotland "@@soft-reload")|maps/ostergotland|
+[Skane]({% site.baseurl %}/maps/spec-sheets/skane "@@soft-reload")|maps/skane|
+[Sodermanland]({% site.baseurl %}/maps/spec-sheets/sodermanland "@@soft-reload")|maps/sodermanland|
+[Stockholm County]({% site.baseurl %}/maps/spec-sheets/stockholm "@@soft-reload")|maps/stockholm|
+[Uppsala]({% site.baseurl %}/maps/spec-sheets/uppsala "@@soft-reload")|maps/uppsala|
+[Varmland]({% site.baseurl %}/maps/spec-sheets/varmland "@@soft-reload")|maps/varmland|
+[Vasterbotten]({% site.baseurl %}/maps/spec-sheets/vasterbotten "@@soft-reload")|maps/vasterbotten|
+[Vasternorrland]({% site.baseurl %}/maps/spec-sheets/vasternorrland "@@soft-reload")|maps/vasternorrland|
+[Vastmanland]({% site.baseurl %}/maps/spec-sheets/vastmanland "@@soft-reload")|maps/vastmanland|
+[Vastra Gotaland]({% site.baseurl %}/maps/spec-sheets/vastragotaland "@@soft-reload")|maps/vastragotaland|
 
 ## Switzerland (Cantons)
 
 Chart Type|JavaScript Alias|
 -|-
-Aargau|maps/aargau|
-Zurich|maps/zurich|
-Appenzell Ausserrhoden|maps/appenzellausserrhoden|
-Appenzell Innerrhoden|maps/appenzellinnerrhoden|
-Bern|maps/bern|
-Basel-Landschaft|maps/basellandschaft|
-Fribourg|maps/fribourg|
-Geneva|maps/geneva|
-Graubunden|maps/graubunden|
-Jura|maps/jura|
-Lucerne|maps/lucerne|
-Neuchatel|maps/neuchatel|
-Nidwalden|maps/nidwalden|
-Obwalden|maps/obwalden|
-Schaffhausen|maps/schaffhausen|
-Schwyz|maps/schwyz|
-Solothurn|maps/solothurn|
-St. Gallen|maps/saintgallen|
-Thurgau|maps/thurgau|
-Ticino|maps/ticino|
-Valais|maps/valais|
-Vaud|maps/vaud|
+[Aargau]({% site.baseurl %}/maps/spec-sheets/aargau "@@soft-reload")|maps/aargau|
+[Zurich]({% site.baseurl %}/maps/spec-sheets/zurich "@@soft-reload")|maps/zurich|
+[Appenzell Ausserrhoden]({% site.baseurl %}/maps/spec-sheets/appenzellausserrhoden "@@soft-reload")|maps/appenzellausserrhoden|
+[Appenzell Innerrhoden]({% site.baseurl %}/maps/spec-sheets/appenzellinnerrhoden "@@soft-reload")|maps/appenzellinnerrhoden|
+[Bern]({% site.baseurl %}/maps/spec-sheets/bern "@@soft-reload")|maps/bern|
+[Basel-Landschaft]({% site.baseurl %}/maps/spec-sheets/basellandschaft "@@soft-reload")|maps/basellandschaft|
+[Fribourg]({% site.baseurl %}/maps/spec-sheets/fribourg "@@soft-reload")|maps/fribourg|
+[Geneva]({% site.baseurl %}/maps/spec-sheets/geneva "@@soft-reload")|maps/geneva|
+[Graubunden]({% site.baseurl %}/maps/spec-sheets/graubunden "@@soft-reload")|maps/graubunden|
+[Jura]({% site.baseurl %}/maps/spec-sheets/jura "@@soft-reload")|maps/jura|
+[Lucerne]({% site.baseurl %}/maps/spec-sheets/lucerne "@@soft-reload")|maps/lucerne|
+[Neuchatel]({% site.baseurl %}/maps/spec-sheets/neuchatel "@@soft-reload")|maps/neuchatel|
+[Nidwalden]({% site.baseurl %}/maps/spec-sheets/nidwalden "@@soft-reload")|maps/nidwalden|
+[Obwalden]({% site.baseurl %}/maps/spec-sheets/obwalden "@@soft-reload")|maps/obwalden|
+[Schaffhausen]({% site.baseurl %}/maps/spec-sheets/schaffhausen "@@soft-reload")|maps/schaffhausen|
+[Schwyz]({% site.baseurl %}/maps/spec-sheets/schwyz "@@soft-reload")|maps/schwyz|
+[Solothurn]({% site.baseurl %}/maps/spec-sheets/solothurn "@@soft-reload")|maps/solothurn|
+[St. Gallen]({% site.baseurl %}/maps/spec-sheets/saintgallen "@@soft-reload")|maps/saintgallen|
+[Thurgau]({% site.baseurl %}/maps/spec-sheets/thurgau "@@soft-reload")|maps/thurgau|
+[Ticino]({% site.baseurl %}/maps/spec-sheets/ticino "@@soft-reload")|maps/ticino|
+[Valais]({% site.baseurl %}/maps/spec-sheets/valais "@@soft-reload")|maps/valais|
+[Vaud]({% site.baseurl %}/maps/spec-sheets/vaud "@@soft-reload")|maps/vaud|
 
 ### Romania
 
