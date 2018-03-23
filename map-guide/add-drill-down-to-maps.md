@@ -1,14 +1,14 @@
 ---
-title: Adding Drill Down to Maps | FusionCharts
+title: Add Drill Down to Maps | FusionCharts
 description: Maps as part of FusionCharts Suite XT support two types of drill down. This section will walk you through setting up drill down functionality for your maps.
-heading: Adding Drill Down to Maps
+heading: Add Drill Down to Maps
 ---
 
 Using the simple drill down method, you can specify custom URLs or JavaScript methods to be invoked for each entity or marker on your map. When you click on the respective entity, the map will invoke that method, or redirect to the specific URL. If it's a URL, you can configure whether to open the URL in the same page, a new window, a pop-up, or a frame.
 
 You can use simple links with your maps in one of the following ways:
 
-### Invoke JavaScript methods on marker interaction
+## Invoke JavaScript methods on marker interaction
 
 You can invoke JavaScript methods whenever you interact with entities or markers in your maps. 
 
