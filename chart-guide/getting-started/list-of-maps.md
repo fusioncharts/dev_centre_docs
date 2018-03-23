@@ -1078,31 +1078,31 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-Kyoto|maps/kyoto|
-Hokkaido|maps/hokkaido|
-Ishikawa|maps/ishikawa|
-Okinawa|maps/okinawa|
-Kagoshima|maps/kagoshima|
-Miyazaki|maps/miyazaki|
-Oita|maps/oita|
-Kumamoto|maps/kumamoto|
-Nagasaki|maps/nagasaki|
-Saga|maps/saga|
-Fukuoka|maps/fukuoka|
-Kochi|maps/kochi|
-Ehime|maps/ehime|
-Kagawa|maps/kagawa|
-Tokushima|maps/tokushima|
-Yamaguchi|maps/yamaguchi|
-Hiroshima|maps/hiroshima|
-Okayama|maps/okayama|
-Shimane|maps/shimane|
-Tottori|maps/tottori|
-Wakayama|maps/wakayama|
-Nara|maps/nara|
-Hyogo|maps/hyogo|
-Osaka|maps/osaka|
-Shiga|maps/shiga|
+[Kyoto]({% site.baseurl %}/maps/spec-sheets/kyoto "@@soft-reload")|maps/kyoto|
+[Hokkaido]({% site.baseurl %}/maps/spec-sheets/hokkaido "@@soft-reload")|maps/hokkaido|
+[Ishikawa]({% site.baseurl %}/maps/spec-sheets/ishikawa "@@soft-reload")|maps/ishikawa|
+[Okinawa]({% site.baseurl %}/maps/spec-sheets/okinawa "@@soft-reload")|maps/okinawa|
+[Kagoshima]({% site.baseurl %}/maps/spec-sheets/kagoshima "@@soft-reload")|maps/kagoshima|
+[Miyazaki]({% site.baseurl %}/maps/spec-sheets/miyazaki "@@soft-reload")|maps/miyazaki|
+[Oita]({% site.baseurl %}/maps/spec-sheets/oita "@@soft-reload")|maps/oita|
+[Kumamoto]({% site.baseurl %}/maps/spec-sheets/kumamoto "@@soft-reload")|maps/kumamoto|
+[Nagasaki]({% site.baseurl %}/maps/spec-sheets/nagasaki "@@soft-reload")|maps/nagasaki|
+[Saga]({% site.baseurl %}/maps/spec-sheets/saga "@@soft-reload")|maps/saga|
+[Fukuoka]({% site.baseurl %}/maps/spec-sheets/fukuoka "@@soft-reload")|maps/fukuoka|
+[Kochi]({% site.baseurl %}/maps/spec-sheets/kochi "@@soft-reload")|maps/kochi|
+[Ehime]({% site.baseurl %}/maps/spec-sheets/ehime "@@soft-reload")|maps/ehime|
+[Kagawa]({% site.baseurl %}/maps/spec-sheets/kagawa "@@soft-reload")|maps/kagawa|
+[Tokushima]({% site.baseurl %}/maps/spec-sheets/tokushima "@@soft-reload")|maps/tokushima|
+[Yamaguchi]({% site.baseurl %}/maps/spec-sheets/yamaguchi "@@soft-reload")|maps/yamaguchi|
+[Hiroshima]({% site.baseurl %}/maps/spec-sheets/hiroshima "@@soft-reload")|maps/hiroshima|
+[Okayama]({% site.baseurl %}/maps/spec-sheets/okayama "@@soft-reload")|maps/okayama|
+[Shimane]({% site.baseurl %}/maps/spec-sheets/shimane "@@soft-reload")|maps/shimane|
+[Tottori]({% site.baseurl %}/maps/spec-sheets/tottori "@@soft-reload")|maps/tottori|
+[Wakayama]({% site.baseurl %}/maps/spec-sheets/wakayama "@@soft-reload")|maps/wakayama|
+[Nara]({% site.baseurl %}/maps/spec-sheets/nara "@@soft-reload")|maps/nara|
+[Hyogo]({% site.baseurl %}/maps/spec-sheets/hyogo "@@soft-reload")|maps/hyogo|
+[Osaka]({% site.baseurl %}/maps/spec-sheets/osaka "@@soft-reload")|maps/osaka|
+[Shiga]({% site.baseurl %}/maps/spec-sheets/shiga "@@soft-reload")|maps/shiga|
 Mie|maps/mie|
 Aichi|maps/aichi|
 Shizuoka|maps/shizuoka|
