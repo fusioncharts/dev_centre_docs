@@ -654,88 +654,88 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-Romania|maps/romania|
-Romania (Regions)|maps/romaniaregion|
+[Romania]({% site.baseurl %}/maps/spec-sheets/romania "@@soft-reload")|maps/romania|
+[Romania (Regions)]({% site.baseurl %}/maps/spec-sheets/romaniaregion "@@soft-reload")|maps/romaniaregion|
 
 ### Austria (States)
 
 Chart Type|JavaScript Alias|
 -|-
-Burgenland|maps/burgenland|
-Karnten (Carinthia)|maps/karnten (carinthia)|
-Niederosterreich|maps/niederosterreich|
-Oberosterreich|maps/oberosterreich|
-Salzburg|maps/salzburg|
-Steiermark (Styria)|maps/steiermark|
-Tirol (Tyrol)|maps/tirol|
-Vorarlberg|maps/vorarlberg|
-Wien (Vienna)|maps/wien|
+[Burgenland]({% site.baseurl %}/maps/spec-sheets/burgenland "@@soft-reload")|maps/burgenland|
+[Karnten (Carinthia)]({% site.baseurl %}/maps/spec-sheets/karnten "@@soft-reload")|maps/karnten|
+[Niederosterreich]({% site.baseurl %}/maps/spec-sheets/niederosterreich "@@soft-reload")|maps/niederosterreich|
+[Oberosterreich]({% site.baseurl %}/maps/spec-sheets/oberosterreich "@@soft-reload")|maps/oberosterreich|
+[Salzburg]({% site.baseurl %}/maps/spec-sheets/salzburg "@@soft-reload")|maps/salzburg|
+[Steiermark (Styria)]({% site.baseurl %}/maps/spec-sheets/steiermark "@@soft-reload")|maps/steiermark|
+[Tirol (Tyrol)]({% site.baseurl %}/maps/spec-sheets/tirol "@@soft-reload")|maps/tirol|
+[Vorarlberg]({% site.baseurl %}/maps/spec-sheets/vorarlberg "@@soft-reload")|maps/vorarlberg|
+[Wien (Vienna)]({% site.baseurl %}/maps/spec-sheets/wien "@@soft-reload")|maps/wien|
 
 ### Portugal (Districts)
 
 Chart Type|JavaScript Alias|
 -|-
-Aveiro|maps/aveiro|
-Beja|maps/beja|
-Braga|maps/braga|
-Braganca|maps/braganca|
-Castelo Branco|maps/castelobranco|
-Coimbra|maps/coimbra|
-Evora|maps/evora|
-Faro|maps/faro|
-Guarda|maps/guarda|
-Lieria|maps/lieria|
-Lisboa|maps/lisboa|
-Portalegre|maps/portalegre|
-Porto|maps/porto|
-Santarem|maps/santarem|
-Setubal|maps/setubal|
-Vianado Castelo|maps/vianadocastelo|
-Vila Real|maps/vilareal|
-Viseu|maps/viseu|
+[Aveiro]({% site.baseurl %}/maps/spec-sheets/aveiro "@@soft-reload")|maps/aveiro|
+[Beja]({% site.baseurl %}/maps/spec-sheets/beja "@@soft-reload")|maps/beja|
+[Braga]({% site.baseurl %}/maps/spec-sheets/braga "@@soft-reload")|maps/braga|
+[Braganca]({% site.baseurl %}/maps/spec-sheets/braganca "@@soft-reload")|maps/braganca|
+[Castelo Branco]({% site.baseurl %}/maps/spec-sheets/castelobranco "@@soft-reload")|maps/castelobranco|
+[Coimbra]({% site.baseurl %}/maps/spec-sheets/coimbra "@@soft-reload")|maps/coimbra|
+[Evora]({% site.baseurl %}/maps/spec-sheets/evora "@@soft-reload")|maps/evora|
+[Faro]({% site.baseurl %}/maps/spec-sheets/faro "@@soft-reload")|maps/faro|
+[Guarda]({% site.baseurl %}/maps/spec-sheets/guarda "@@soft-reload")|maps/guarda|
+[Lieria]({% site.baseurl %}/maps/spec-sheets/lieria "@@soft-reload")|maps/lieria|
+[Lisboa]({% site.baseurl %}/maps/spec-sheets/lisboa "@@soft-reload")|maps/lisboa|
+[Portalegre]({% site.baseurl %}/maps/spec-sheets/portalegre "@@soft-reload")|maps/portalegre|
+[Porto]({% site.baseurl %}/maps/spec-sheets/porto "@@soft-reload")|maps/porto|
+[Santarem]({% site.baseurl %}/maps/spec-sheets/santarem "@@soft-reload")|maps/santarem|
+[Setubal]({% site.baseurl %}/maps/spec-sheets/setubal "@@soft-reload")|maps/setubal|
+[Vianado Castelo]({% site.baseurl %}/maps/spec-sheets/vianadocastelo "@@soft-reload")|maps/vianadocastelo|
+[Vila Real]({% site.baseurl %}/maps/spec-sheets/vilareal "@@soft-reload")|maps/vilareal|
+[Viseu]({% site.baseurl %}/maps/spec-sheets/viseu "@@soft-reload")|maps/viseu|
 
 ### Bulgaria (Provinces)
 
 Chart Type|JavaScript Alias|
 -|-
-Blagoevgrad|maps/blagoevgrad|
-Burgas|maps/burgas|
-Dobrich|maps/dobrich|
-Gabrovo|maps/gabrovo|
-Haskovo|maps/haskovo|
-Kardzhali|maps/kardzhali|
-Kyustendil|maps/kyustendil|
-Lovech|maps/lovech|
-Bulgaria Montana|maps/bulgariamontana|
-Pazardzhik|maps/pazardzhik|
-Pernik|maps/pernik|
-Pleven|maps/pleven|
-Plovdiv|maps/plovdiv|
-Razgrad|maps/razgrad|
-Ruse|maps/ruse|
-Shumen|maps/shumen|
-Silistra|maps/silistra|
-Sliven|maps/sliven|
-Smolyan|maps/smolyan|
-Sofia City|maps/gradsofia|
-Sofia Province|maps/sofiaprovince|
-Stara Zagora|maps/starazagora|
-Targovishte|maps/targovishte|
-Varna|maps/varna|
-Veliko Tarnovo|maps/velikotarnovo|
-Vidin|maps/vidin|
-Vratsa|maps/vratsa|
-Yambol|maps/yambol|
+[Blagoevgrad]({% site.baseurl %}/maps/spec-sheets/blagoevgrad "@@soft-reload")|maps/blagoevgrad|
+[Burgas]({% site.baseurl %}/maps/spec-sheets/burgas "@@soft-reload")|maps/burgas|
+[Dobrich]({% site.baseurl %}/maps/spec-sheets/dobrich "@@soft-reload")|maps/dobrich|
+[Gabrovo]({% site.baseurl %}/maps/spec-sheets/gabrovo "@@soft-reload")|maps/gabrovo|
+[Haskovo]({% site.baseurl %}/maps/spec-sheets/haskovo "@@soft-reload")|maps/haskovo|
+[Kardzhali]({% site.baseurl %}/maps/spec-sheets/kardzhali "@@soft-reload")|maps/kardzhali|
+[Kyustendil]({% site.baseurl %}/maps/spec-sheets/kyustendil "@@soft-reload")|maps/kyustendil|
+[Lovech]({% site.baseurl %}/maps/spec-sheets/lovech "@@soft-reload")|maps/lovech|
+[Bulgaria Montana]({% site.baseurl %}/maps/spec-sheets/bulgariamontana "@@soft-reload")|maps/bulgariamontana|
+[Pazardzhik]({% site.baseurl %}/maps/spec-sheets/pazardzhik "@@soft-reload")|maps/pazardzhik|
+[Pernik]({% site.baseurl %}/maps/spec-sheets/pernik "@@soft-reload")|maps/pernik|
+[Pleven]({% site.baseurl %}/maps/spec-sheets/pleven "@@soft-reload")|maps/pleven|
+[Plovdiv]({% site.baseurl %}/maps/spec-sheets/plovdiv "@@soft-reload")|maps/plovdiv|
+[Razgrad]({% site.baseurl %}/maps/spec-sheets/razgrad "@@soft-reload")|maps/razgrad|
+[Ruse]({% site.baseurl %}/maps/spec-sheets/ruse "@@soft-reload")|maps/ruse|
+[Shumen]({% site.baseurl %}/maps/spec-sheets/shumen "@@soft-reload")|maps/shumen|
+[Silistra]({% site.baseurl %}/maps/spec-sheets/silistra "@@soft-reload")|maps/silistra|
+[Sliven]({% site.baseurl %}/maps/spec-sheets/sliven "@@soft-reload")|maps/sliven|
+[Smolyan]({% site.baseurl %}/maps/spec-sheets/smolyan "@@soft-reload")|maps/smolyan|
+[Sofia City]({% site.baseurl %}/maps/spec-sheets/gradsofia "@@soft-reload")|maps/gradsofia|
+[Sofia Province]({% site.baseurl %}/maps/spec-sheets/sofiaprovince "@@soft-reload")|maps/sofiaprovince|
+[Stara Zagora]({% site.baseurl %}/maps/spec-sheets/starazagora "@@soft-reload")|maps/starazagora|
+[Targovishte]({% site.baseurl %}/maps/spec-sheets/targovishte "@@soft-reload")|maps/targovishte|
+[Varna]({% site.baseurl %}/maps/spec-sheets/varna "@@soft-reload")|maps/varna|
+[Veliko Tarnovo]({% site.baseurl %}/maps/spec-sheets/velikotarnovo "@@soft-reload")|maps/velikotarnovo|
+[Vidin]({% site.baseurl %}/maps/spec-sheets/vidin "@@soft-reload")|maps/vidin|
+[Vratsa]({% site.baseurl %}/maps/spec-sheets/vratsa "@@soft-reload")|maps/vratsa|
+[Yambol]({% site.baseurl %}/maps/spec-sheets/yambol "@@soft-reload")|maps/yambol|
 
 ### Denmark (5 Regions)
 
 Chart Type|JavaScript Alias|
 -|-
-Hovedstaden|maps/hovedstaden|
-Midtjylland|maps/midtjylland|
-Nordjylland|maps/nordjylland|
-Sjaelland (ac)|maps/sjaelland|
-Syddanmark|maps/syddanmark|
+[Hovedstaden]({% site.baseurl %}/maps/spec-sheets/yambol "@@soft-reload")|maps/hovedstaden|
+[Midtjylland]({% site.baseurl %}/maps/spec-sheets/yambol "@@soft-reload")|maps/midtjylland|
+[Nordjylland]({% site.baseurl %}/maps/spec-sheets/yambol "@@soft-reload")|maps/nordjylland|
+[Sjaelland (ac)]({% site.baseurl %}/maps/spec-sheets/yambol "@@soft-reload")|maps/sjaelland|
+[Syddanmark]({% site.baseurl %}/maps/spec-sheets/yambol "@@soft-reload")|maps/syddanmark|
 
 ### Hungary (7 Regions)
 
