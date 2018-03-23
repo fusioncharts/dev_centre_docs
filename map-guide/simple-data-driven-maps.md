@@ -12,11 +12,9 @@ Click [here](http://jsfiddle.net/fusioncharts/jjLnb9jt/ "@@open-newtab") to edit
 
 In the sections below, you will see how to build a map like the one above and customize it using different attributes.
 
-## Build a simple data driven map
-
 There are 4 simple steps to building a map using FusionCharts Suite XT, as detailed in the sections below:
 
-### Convert data to JSON/XML format
+## Convert data to JSON/XML format
 
 FusionCharts Suite XT accepts both JSON and XML data formats, and can read them as strings from a local or remote file. Refer to the code given below for the JSON/XML representation of the data you need, in order to build the map shown above.
 
@@ -87,9 +85,9 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, use t
 
 > The theme file included in the code snippet shown above is called `fint` (FusionCharts internal) and is present in the `themes` folder. You can use it to define chart cosmetics.
 
-### Create a container for your map in the web page
+## Create a container for your map in the web page
 
-Next, you need to create a container for your map in the form of a <div> element, as shown below:
+Next, you need to create a container for your map in the form of a &lt;div&gt; element, as shown below:
 
 ```json
 <body>
@@ -97,7 +95,7 @@ Next, you need to create a container for your map in the form of a <div> element
 </body>
 ```
 
-### Create an instance of the map
+## Create an instance of the map
 
 In the final step, you have to create an instance of the map, initialize it with the desired width and height dimensions, and then set the JSON data source. Do the following to build an example:
 
@@ -105,7 +103,7 @@ In the final step, you have to create an instance of the map, initialize it with
 
 * Create an instance of `FusionCharts()` object in the `populationMap` variable. Each map in your HTML page needs to have a separate variable. Also, note that the initialization code is wrapped within `FusionCharts.ready()` method. This safeguards your map instantiation code from being called before FusionCharts Suite XT library is loaded and is ready to be used on the page.
 
-* Create an instance of the world map using its alias `maps/world`. Each map in FusionCharts Suite XT has a unique alias. You can find the list of all maps and their aliases [here](https://www.fusioncharts.com/getting-started/list-of-charts).
+* Create an instance of the world map using its alias `maps/world`. Each map in FusionCharts Suite XT has a unique alias. You can find the list of all maps and their aliases [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab').
 
 * Next, specify the width and height of the map (in pixels), using `width` and `height` properties of the constructor.
 
@@ -174,23 +172,9 @@ Refer to the code below:
 }
 ```
 
-## Troubleshoot your map
+Now that you know how to create a simple map, try customizing different map attributes. You can apply the following customizations to maps:
 
-In case something goes wrong and you are unable to see the map, check for the following:
-
-* If you get a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
-
-* If the chart does not show up at all, but there are no JavaScript errors, check whether the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see whether `fusioncharts.js` has loaded properly.
-
-* If you get a **Loading data** or a **Error in loading data** message, check whether your JSON data structure is correct, and ensure there are no conflicts related to quotation marks in your code.
-
-Click here for more information on [Troubleshooting](https://www.fusioncharts.com/troubleshooting/debugger).
-
-## Customize your map
-
-Now that you know how to create a <simple map>, try customizing different map attributes. You can apply the following customizations to maps:
-
-### Show full names in map labels
+## Show full names in map labels
 
 FusionCharts Suite XT shows only the short names of the entities on the map by default. You can set the map to display the full name of the entity. Use the following attributes  to do so:
 
@@ -217,7 +201,7 @@ Click [here](http://jsfiddle.net/fusioncharts/5Gr3N/ "@@open-newtab") to edit th
 
 > In the above map, each of the continents are entities and their full names are part of the label.
 
-### Show values in labels
+## Show values in labels
 
 You can set the entity labels to show data values. Use the following attributes to do so:
 
@@ -244,7 +228,7 @@ Click [here](http://jsfiddle.net/fusioncharts/7rz5a/ "@@open-newtab") to edit th
 
 > In the map above, the labels are configured to show the population value along with the continent short name.
 
-### Show labels only for specific entities
+## Show labels only for specific entities
 
 By default, a map displays labels for all entities. However, you can choose to display labels only for specific entities of interest. To do so, set the value of the `showLabel` attribute to `1`, for only the entities that you want to show labels for. Note that to control display for specific entities, you need to define this value at an entity level.
 
@@ -275,9 +259,9 @@ The map will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/qb31mo1b/ "@@open-newtab") to edit the above map.
 
-Note: In the example given above, you can see labels displayed only for the two most populous continents (Asia and Africa).
+> In the example given above, you can see labels displayed only for the two most populous continents (Asia and Africa).
 
-### Customize label text
+## Customize label text
 
 You can display customized label text for each specific entity. Use the `displayValue` attribute to do so.
 
@@ -306,7 +290,7 @@ The map will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/qb31mo1b/ "@@open-newtab") to edit the above map.
 
-Note: In the map above, you can see the data label of each continent customized as `sparse`, `moderate` or `dense`, based on the population density.
+> In the map above, you can see the data label of each continent customized as `sparse`, `moderate` or `dense`, based on the population density.
 
 ### Customize fonts
 
@@ -350,9 +334,9 @@ The map will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/QffVn/ "@@open-newtab") to edit the above map.
 
-Note: In the example above, the font is set to `Helvetica` and the size of the label name is proportional to the value of each entity.
+> In the example above, the font is set to `Helvetica` and the size of the label name is proportional to the value of each entity.
 
-### Use short names in tooltips
+## Use short names in tooltips
 
 By default, tooltips in maps show the full name of the entity along with the value. However, you can configure the tooltips to show only the short names. To do so, set the value of the `useSNameInToolTip` attribute to `1`.
 
@@ -372,7 +356,7 @@ The map will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/E7jNV/ "@@open-newtab") to edit the above map.
 
-### Turn off entity tooltips
+## Turn off entity tooltips
 
 In FusionCharts Suite XT, tooltips are on by default. However, you can turn them off for entities. To do so, set the value of the `showEntityToolTip` attribute to `0`. 
 
@@ -392,7 +376,7 @@ The map will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/G9SNX/ "@@open-newtab") to edit the above map.
 
-### Handle null entities
+## Handle null entities
 
 There are times when you may have to work with datasets, in which one or more entities have the null value. You can customize such entities by modifying the transparency, color and hover effects. To do so, use the following attributes:
 
@@ -419,3 +403,15 @@ The map will look as shown below:
 {% embed_chart map-guide-simple-data-driven-maps-example-9.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/BP3G5/ "@@open-newtab") to edit the above map.
+
+## Troubleshoot
+
+In case something goes wrong and you are unable to see the map, check for the following:
+
+* If you get a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
+
+* If the chart does not show up at all, but there are no JavaScript errors, check whether the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see whether `fusioncharts.js` has loaded properly.
+
+* If you get a **Loading data** or a **Error in loading data** message, check whether your JSON data structure is correct, and ensure there are no conflicts related to quotation marks in your code.
+
+Click here for more information on [Troubleshooting]({% site.baseurl %}/troubleshooting/debugger '@@open-newtab').
