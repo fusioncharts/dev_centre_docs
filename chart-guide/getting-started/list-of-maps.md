@@ -458,54 +458,54 @@ Chart Type|JavaScript Alias|
 [Cameroon]({% site.baseurl %}/maps/spec-sheets/cameroon "@@soft-reload")|maps/cameroon|
 [Cape Verde]({% site.baseurl %}/maps/spec-sheets/capeverde "@@soft-reload")|maps/capeverde|
 [Central African Republic]({% site.baseurl %}/maps/spec-sheets/centralafricanrepublic "@@soft-reload")|maps/centralafricanrepublic|
-Chad|maps/chad|
-Comoros|maps/comoros|
-Congo|maps/congo|
-Cote Divoire|maps/cotedivoire|
-Democratic Republic of the Congo|maps/democraticrepublicofcongo|
-Djibouti|maps/djibouti|
-Egypt|maps/egypt|
-Equatorial Guinea|maps/equatorialguinea|
-Eritrea|maps/eritrea|
-Ethiopia|maps/ethiopia|
-Gabon|maps/gabon|
-Gambia|maps/gambia|
-Ghana|maps/ghana|
-Guinea|maps/guinea|
-Guinea-Bissau|maps/guineabissau|
-Kenya|maps/kenya|
-Lesotho|maps/esotho|
-Liberia|maps/liberia|
-Libya|maps/libya|
-Madagascar|maps/madagascar|
-Madagascar (Regions)|madagascarregions|
-Malawi|maps/malawi|
-Mali|maps/mali|
-Mauritania|maps/mauritania|
-Mauritius|maps/mauritius|
-Morocco|maps/morocco|
-Mozambique|maps/mozambique|
-Namibia|maps/namibia|
-Niger|maps/niger|
-Nigeria|maps/nigeria|
-Rwanda|maps/rwanda|
-Sao Tome and Principe|maps/saotomeandprincipe|
-Senegal|maps/senegal|
-Seychelles|maps/seychelles|
-Sierra Leone|maps/sierraleone|
-Somalia|maps/somalia|
-South Africa|maps/southafrica|
-South Sudan|maps/southsudan|
-Sudan|maps/sudan|
-Sudan Wo South Sudan|maps/sudanwosouthsudan|
-Swaziland|maps/swaziland|
-Tanzania|maps/tanzania|
-Togo|maps/togo|
-Tunisia|maps/tunisia|
-Uganda|maps/uganda|
-Western Sahara|maps/westernsahara|
-Zambia|maps/zambia|
-Zimbabwe|maps/zimbabwe|
+[Chad]({% site.baseurl %}/maps/spec-sheets/chad "@@soft-reload")|maps/chad|
+[Comoros]({% site.baseurl %}/maps/spec-sheets/comoros "@@soft-reload")|maps/comoros|
+[Congo]({% site.baseurl %}/maps/spec-sheets/congo "@@soft-reload")|maps/congo|
+[Cote Divoire]({% site.baseurl %}/maps/spec-sheets/cotedivoire "@@soft-reload")|maps/cotedivoire|
+[Democratic Republic of the Congo]({% site.baseurl %}/maps/spec-sheets/democraticrepublicofcongo "@@soft-reload")|maps/democraticrepublicofcongo|
+[Djibouti]({% site.baseurl %}/maps/spec-sheets/djibouti "@@soft-reload")|maps/djibouti|
+[Egypt]({% site.baseurl %}/maps/spec-sheets/egypt "@@soft-reload")|maps/egypt|
+[Equatorial Guinea]({% site.baseurl %}/maps/spec-sheets/equatorialguinea "@@soft-reload")|maps/equatorialguinea|
+[Eritrea]({% site.baseurl %}/maps/spec-sheets/eritrea "@@soft-reload")|maps/eritrea|
+[Ethiopia]({% site.baseurl %}/maps/spec-sheets/ethiopia "@@soft-reload")|maps/ethiopia|
+[Gabon]({% site.baseurl %}/maps/spec-sheets/gabon "@@soft-reload")|maps/gabon|
+[Gambia]({% site.baseurl %}/maps/spec-sheets/gambia "@@soft-reload")|maps/gambia|
+[Ghana]({% site.baseurl %}/maps/spec-sheets/ghana "@@soft-reload")|maps/ghana|
+[Guinea]({% site.baseurl %}/maps/spec-sheets/guinea "@@soft-reload")|maps/guinea|
+[Guinea-Bissau]({% site.baseurl %}/maps/spec-sheets/guineabissau "@@soft-reload")|maps/guineabissau|
+[Kenya]({% site.baseurl %}/maps/spec-sheets/kenya "@@soft-reload")|maps/kenya|
+[Lesotho]({% site.baseurl %}/maps/spec-sheets/esotho "@@soft-reload")|maps/esotho|
+[Liberia]({% site.baseurl %}/maps/spec-sheets/liberia "@@soft-reload")|maps/liberia|
+[Libya]({% site.baseurl %}/maps/spec-sheets/libya "@@soft-reload")|maps/libya|
+[Madagascar]({% site.baseurl %}/maps/spec-sheets/madagascar "@@soft-reload")|maps/madagascar|
+[Madagascar (Regions)]({% site.baseurl %}/maps/spec-sheets/madagascarregions "@@soft-reload")|madagascarregions|
+[Malawi]({% site.baseurl %}/maps/spec-sheets/malawi "@@soft-reload")|maps/malawi|
+[Mali]({% site.baseurl %}/maps/spec-sheets/mali "@@soft-reload")|maps/mali|
+[Mauritania]({% site.baseurl %}/maps/spec-sheets/mauritania "@@soft-reload")|maps/mauritania|
+[Mauritius]({% site.baseurl %}/maps/spec-sheets/mauritius "@@soft-reload")|maps/mauritius|
+[Morocco]({% site.baseurl %}/maps/spec-sheets/morocco "@@soft-reload")|maps/morocco|
+[Mozambique]({% site.baseurl %}/maps/spec-sheets/mozambique "@@soft-reload")|maps/mozambique|
+[Namibia]({% site.baseurl %}/maps/spec-sheets/namibia "@@soft-reload")|maps/namibia|
+[Niger]({% site.baseurl %}/maps/spec-sheets/niger "@@soft-reload")|maps/niger|
+[Nigeria]({% site.baseurl %}/maps/spec-sheets/nigeria "@@soft-reload")|maps/nigeria|
+[Rwanda]({% site.baseurl %}/maps/spec-sheets/rwanda "@@soft-reload")|maps/rwanda|
+[Sao Tome and Principe]({% site.baseurl %}/maps/spec-sheets/saotomeandprincipe "@@soft-reload")|maps/saotomeandprincipe|
+[Senegal]({% site.baseurl %}/maps/spec-sheets/senegal "@@soft-reload")|maps/senegal|
+[Seychelles]({% site.baseurl %}/maps/spec-sheets/seychelles "@@soft-reload")|maps/seychelles|
+[Sierra Leone]({% site.baseurl %}/maps/spec-sheets/sierraleone "@@soft-reload")|maps/sierraleone|
+[Somalia]({% site.baseurl %}/maps/spec-sheets/somalia "@@soft-reload")|maps/somalia|
+[South Africa]({% site.baseurl %}/maps/spec-sheets/southafrica "@@soft-reload")|maps/southafrica|
+[South Sudan]({% site.baseurl %}/maps/spec-sheets/southsudan "@@soft-reload")|maps/southsudan|
+[Sudan]({% site.baseurl %}/maps/spec-sheets/sudan "@@soft-reload")|maps/sudan|
+[Sudan Wo South Sudan]({% site.baseurl %}/maps/spec-sheets/sudanwosouthsudan "@@soft-reload")|maps/sudanwosouthsudan|
+[Swaziland]({% site.baseurl %}/maps/spec-sheets/swaziland "@@soft-reload")|maps/swaziland|
+[Tanzania]({% site.baseurl %}/maps/spec-sheets/tanzania "@@soft-reload")|maps/tanzania|
+[Togo]({% site.baseurl %}/maps/spec-sheets/togo "@@soft-reload")|maps/togo|
+[Tunisia]({% site.baseurl %}/maps/spec-sheets/tunisia "@@soft-reload")|maps/tunisia|
+[Uganda]({% site.baseurl %}/maps/spec-sheets/uganda "@@soft-reload")|maps/uganda|
+[Western Sahara]({% site.baseurl %}/maps/spec-sheets/westernsahara "@@soft-reload")|maps/westernsahara|
+[Zambia]({% site.baseurl %}/maps/spec-sheets/zambia "@@soft-reload")|maps/zambia|
+[Zimbabwe]({% site.baseurl %}/maps/spec-sheets/zimbabwe "@@soft-reload")|maps/zimbabwe|
 
 ## Europe
 
