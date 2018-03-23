@@ -85,100 +85,13 @@ Refer to the data structure given below:
 }
 ```
 
-Refer to the entire HTML code, given below:
-
-```html
-<html>
-<head>
-    <title>A Data Driven Map</title>
-    <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
-    <script>
-    FusionCharts.ready(function() {
-        var populationMap = new FusionCharts({
-            type: 'maps/world',
-            renderAt: 'chart-container',
-            width: '600',
-            height: '400',
-            dataFormat: 'json',
-            dataSource: {
-                "chart": {
-                    "caption": "Global Population",
-                    "theme": "fint",
-                    "formatNumberScale": "0",
-                    "numberSuffix": "M",
-                    "showLabels": "1",
-                    "showToolTip": "0"
-                },
-                "colorrange": {
-                    "color": [{
-                        "minvalue": "0",
-                        "maxvalue": "100",
-                        "code": "#D0DFA3",
-                        "displayValue": "< 100M"
-                    }, {
-                        "minvalue": "100",
-                        "maxvalue": "500",
-                        "code": "#B0BF92",
-                        "displayValue": "100-500M"
-                    }, {
-                        "minvalue": "500",
-                        "maxvalue": "1000",
-                        "code": "#91AF64",
-                        "displayValue": "500M-1B"
-                    }, {
-                        "minvalue": "1000",
-                        "maxvalue": "5000",
-                        "code": "#A9FF8D",
-                        "displayValue": "> 1B"
-                    }]
-                },
-                "data": [{
-                    "id": "NA",
-                    "value": "515"
-                }, {
-                    "id": "SA",
-                    "value": "373"
-                }, {
-                    "id": "AS",
-                    "value": "3875"
-                }, {
-                    "id": "EU",
-                    "value": "727"
-                }, {
-                    "id": "AF",
-                    "value": "885"
-                }, {
-                    "id": "AU",
-                    "value": "32"
-                }],
-            },
-            "events": {
-                "entityRollover": function(evt, data) {
-                    document.getElementById('message').value = "" + data.label + "\n" + "Population: " + data.value + "M";
-                },
-                "entityRollout": function(evt, data) {
-                    document.getElementById('message').value =
-                        "Total World Population - 6.3 Billion";
-                },
-                "entityClick": function(evt, data) {
-                    alert("You have clicked on " + data.label + ".");
-                },
-            }
-        }).render();
-    });
-    </script>
-</head>
-<body>
-    <div id="chart-container">A world map will load here!</div>
-    <textarea id="message" rows="4" cols="54" style='margin-left:10px;text-align:center'>"Total World Population 6.3 Billion" 
-```
-
 > The `eventObject` and `argumentsObject` within the event listener are referenced as `evt` and `data` respectively, in the above example.
 
 The map will look as shown below:
 
+{% embed_chart map-guide-listening-to-map-events-example-1.js %}
 
+Click [here](http://jsfiddle.net/fusioncharts/twp9sypv/ "@@open-newtab") to edit the above map.
 
 > The map shown above that captures data from the entity events and displays it in a message box below the map. You can hover on individual continents to see the population of only that specific continent.
 
@@ -206,8 +119,7 @@ You can use markers and connectors to raise events on mouse interactions, such a
 
 Refer to the data structure given below:
 
-```
-
+```json
 {
     "chart": {
         "caption": "Busiest Routes from Heathrow Airport",
@@ -221,105 +133,76 @@ Refer to the data structure given below:
         "entityFillHoverColor": "#E5E5E9"
     },
     "markers": {
-        "items": [
-            {
-                "id": "London",
-                "shapeid": "triangle",
-                "x": "340.23",
-                "y": "125.9",
-                "label": "LHR",
-                "tooltext": "Heathrow International Airport {br}IACL Code : EGLL",
-                "labelpos": "left"
-            },
-            {
-                "id": "New York",
-                "shapeid": "triangle",
-                "x": "178.14",
-                "y": "154.9",
-                "label": "JFK",
-                "tooltext": "John F Kennedy Airport {br}IACL Code : KJFK",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "Dubai",
-                "shapeid": "triangle",
-                "x": "458.14",
-                "y": "203.9",
-                "label": "DXB",
-                "tooltext": "Dubai International Airport {br} IACL Code : OMDB",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "Singapore",
-                "shapeid": "triangle",
-                "x": "558.14",
-                "y": "255.9",
-                "label": "SIN",
-                "tooltext": "Singapore International Airport {br} IACL Code : WSSS",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "Hong Kong",
-                "shapeid": "triangle",
-                "x": "573.14",
-                "y": "202.9",
-                "label": "HKG",
-                "tooltext": "Hong Kong International Airport {br} IACL Code : VHHH",
-                "labelpos": "bottom"
-            }
-        ],
-        "connectors": [
-            {
-                "from": "London",
-                "to": "Hong Kong",
-                "tooltext": "<b>London to Hong Kong</b>{br} Total Passengers: 1,801,520",
-                "label": "LHR to HKK"
-            },
-            {
-                "from": "London",
-                "to": "Singapore",
-                "tooltext": "<b>London to Singapore</b>{br} Total Passengers: 1,507,032",
-                "label": "LHR to SIN"
-            },
-            {
-                "from": "London",
-                "to": "New York",
-                "tooltext": "<b>London to New York{br} Total Passengers: 2,551,276",
-                "label": "LHR to NYC"
-            },
-            {
-                "from": "London",
-                "to": "Dubai",
-                "tooltext": "<b>London to Dubai</b>{br} Total Passengers: 1,974,078",
-                "label": "LHR to DXB"
-            }
-        ]
+        "items": [{
+            "id": "London",
+            "shapeid": "triangle",
+            "x": "340.23",
+            "y": "125.9",
+            "label": "LHR",
+            "tooltext": "Heathrow International Airport {br}IACL Code : EGLL",
+            "labelpos": "left"
+        }, {
+            "id": "New York",
+            "shapeid": "triangle",
+            "x": "178.14",
+            "y": "154.9",
+            "label": "JFK",
+            "tooltext": "John F Kennedy Airport {br}IACL Code : KJFK",
+            "labelpos": "bottom"
+        }, {
+            "id": "Dubai",
+            "shapeid": "triangle",
+            "x": "458.14",
+            "y": "203.9",
+            "label": "DXB",
+            "tooltext": "Dubai International Airport {br} IACL Code : OMDB",
+            "labelpos": "bottom"
+        }, {
+            "id": "Singapore",
+            "shapeid": "triangle",
+            "x": "558.14",
+            "y": "255.9",
+            "label": "SIN",
+            "tooltext": "Singapore International Airport {br} IACL Code : WSSS",
+            "labelpos": "bottom"
+        }, {
+            "id": "Hong Kong",
+            "shapeid": "triangle",
+            "x": "573.14",
+            "y": "202.9",
+            "label": "HKG",
+            "tooltext": "Hong Kong International Airport {br} IACL Code : VHHH",
+            "labelpos": "bottom"
+        }],
+        "connectors": [{
+            "from": "London",
+            "to": "Hong Kong",
+            "tooltext": "<b>London to Hong Kong</b>{br} Total Passengers: 1,801,520",
+            "label": "LHR to HKK"
+        }, {
+            "from": "London",
+            "to": "Singapore",
+            "tooltext": "<b>London to Singapore</b>{br} Total Passengers: 1,507,032",
+            "label": "LHR to SIN"
+        }, {
+            "from": "London",
+            "to": "New York",
+            "tooltext": "<b>London to New York{br} Total Passengers: 2,551,276",
+            "label": "LHR to NYC"
+        }, {
+            "from": "London",
+            "to": "Dubai",
+            "tooltext": "<b>London to Dubai</b>{br} Total Passengers: 1,974,078",
+            "label": "LHR to DXB"
+        }]
     }
 }
-
 ```
 
-Refer to the entire HTML code, given below:
+The map will look as shown below:
 
-```
+{% embed_chart map-guide-listening-to-map-events-example-2.js %}
 
-
-
-    
-    
-    
-
-
-
-    
-A world map will load here!
-
-    
-Roll over or click on a marker or connector 
-
-
-
-
-```
+Click [here](http://jsfiddle.net/fusioncharts/t226vxnp/ "@@open-newtab") to edit the above map.
 
 For a list of all parameters for each of these events, refer to the [API Reference for events](https://www.fusioncharts.com/api/fusioncharts/fusioncharts-events).

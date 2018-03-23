@@ -4,7 +4,6 @@ description: You can add custom defined markers on any map. Markers can be used 
 heading: Adding Markers
 ---
 
-
 You can add custom defined markers to any map within FusionCharts Suite XT, to represent locations like cities, junctions, houses, office locations, malls or any other entity with a geographic location.
 
 ## Use simple shapes as markers
@@ -33,8 +32,7 @@ To build a map specifying the world's 5 busiest airports, with a triangle denoti
 
 Refer to the JSON code given below:
 
-```
-
+```json
 {
     "chart": {
         "caption": "Top 5 Busiest Airports in the World",
@@ -47,152 +45,58 @@ Refer to the JSON code given below:
         "entityFillHoverColor": "#E5E5E9"
     },
     "markers": {
-        "items": [
-            {
-                "id": "lon",
-                "shapeid": "triangle",
-                "x": "340.23",
-                "y": "125.9",
-                "label": "LHR",
-                "tooltext": "Heathrow International Airport {br}IACL Code : EGLL",
-                "labelpos": "left"
-            },
-            {
-                "id": "alt",
-                "shapeid": "triangle",
-                "x": "160.14",
-                "y": "164.9",
-                "label": "ATL",
-                "tooltext": "Hartsfield Jackson Atlanta International Airport {br}IACL Code : KATL",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "dub",
-                "shapeid": "triangle",
-                "x": "458.14",
-                "y": "203.9",
-                "label": "DXB",
-                "tooltext": "Dubai International Airport {br} IACL Code : OMDB",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "tok",
-                "shapeid": "triangle",
-                "x": "628.14",
-                "y": "165.9",
-                "label": "HND",
-                "tooltext": "Tokyo Haneda Airport{br} IACL Code : RJTT",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "beij",
-                "shapeid": "triangle",
-                "x": "573.14",
-                "y": "161.9",
-                "label": "PEK",
-                "tooltext": "Beijing Capital International Airport {br} IACL Code : ZBAA",
-                "labelpos": "bottom"
-            }
-        ]
+        "items": [{
+            "id": "lon",
+            "shapeid": "triangle",
+            "x": "340.23",
+            "y": "125.9",
+            "label": "LHR",
+            "tooltext": "Heathrow International Airport {br}IACL Code : EGLL",
+            "labelpos": "left"
+        }, {
+            "id": "alt",
+            "shapeid": "triangle",
+            "x": "160.14",
+            "y": "164.9",
+            "label": "ATL",
+            "tooltext": "Hartsfield Jackson Atlanta International Airport {br}IACL Code : KATL",
+            "labelpos": "bottom"
+        }, {
+            "id": "dub",
+            "shapeid": "triangle",
+            "x": "458.14",
+            "y": "203.9",
+            "label": "DXB",
+            "tooltext": "Dubai International Airport {br} IACL Code : OMDB",
+            "labelpos": "bottom"
+        }, {
+            "id": "tok",
+            "shapeid": "triangle",
+            "x": "628.14",
+            "y": "165.9",
+            "label": "HND",
+            "tooltext": "Tokyo Haneda Airport{br} IACL Code : RJTT",
+            "labelpos": "bottom"
+        }, {
+            "id": "beij",
+            "shapeid": "triangle",
+            "x": "573.14",
+            "y": "161.9",
+            "label": "PEK",
+            "tooltext": "Beijing Capital International Airport {br} IACL Code : ZBAA",
+            "labelpos": "bottom"
+        }]
     }
 }
-
-```
-
-Refer to the full HTML code given below:
-
-```
-
-<html>
-<head>
-    <title>A Data Driven Map showing Markers</title>
-    <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
-    <script>
-    FusionCharts.ready(function() {
-        var airportsMap = new FusionCharts({
-            type: 'maps/world',
-            renderAt: 'chart-container',
-            width: '600',
-            height: '400',
-            dataFormat: 'json',
-            dataSource: {
-                "chart": {
-                    "caption": "Top 5 Busiest Airports in the World",
-                    "subcaption": "Based on Passenger Traffic",
-                    "theme": "fint",
-                    "markerBgColor": "#FF0000",
-                    "markerRadius": "10",
-                    "showMarkerLabels": "1",
-                    "entityFillColor": "#A8A8A8",
-                    "entityFillHoverColor": "#E5E5E9"
-                },
-                "markers": {
-                    "items": [
-                        {
-                            "id": "lon",
-                            "shapeid": "triangle",
-                            "x": "340.23",
-                            "y": "125.9",
-                            "label": "LHR",
-                            "tooltext": "Heathrow International Airport {br}IACL Code : EGLL",
-                            "labelpos": "left"
-                        },
-                        {
-                            "id": "alt",
-                            "shapeid": "triangle",
-                            "x": "160.14",
-                            "y": "164.9",
-                            "label": "ATL",
-                            "tooltext": "Hartsfield Jackson Atlanta International Airport {br}IACL Code : KATL",
-                            "labelpos": "bottom"
-                        },
-                        {
-                            "id": "dub",
-                            "shapeid": "triangle",
-                            "x": "458.14",
-                            "y": "203.9",
-                            "label": "DXB",
-                            "tooltext": "Dubai International Airport {br} IACL Code : OMDB",
-                            "labelpos": "bottom"
-                        },
-                        {
-                            "id": "tok",
-                            "shapeid": "triangle",
-                            "x": "628.14",
-                            "y": "165.9",
-                            "label": "HND",
-                            "tooltext": "Tokyo Haneda Airport{br} IACL Code : RJTT",
-                            "labelpos": "bottom"
-                        },
-                        {
-                            "id": "beij",
-                            "shapeid": "triangle",
-                            "x": "573.14",
-                            "y": "161.9",
-                            "label": "PEK",
-                            "tooltext": "Beijing Capital International Airport {br} IACL Code : ZBAA",
-                            "labelpos": "bottom"
-                        }
-                    ]
-                }
-            }
-        }).render();
-    });
-    </script>
-</head>
-<body>
-    <div id="chart-container">A world map will load here!</div>
-</body>
-</html>
-
 ```
 
 The map will look as shown below:
 
-<map>
+{% embed_all map-guide-markers-example-1.js %}
 
-## Use images/ icons as markers
+Click [here](http://jsfiddle.net/fusioncharts/p70nsf03/ "@@open-newtab") to edit the above map.
+
+## Use images/icons as markers
 
 In the map above, you used predefined shapes to build markers. However, you can also use external images or icons as markers. You need to customize the shapes object to do this.
 
@@ -210,8 +114,7 @@ Here's how you can build the same map as the one above, but with airplane icons 
 
 Refer to the JSON code given below:
 
-```
-
+```json
 {
     "chart": {
         "caption": "Top 5 Airports in the World",
@@ -222,166 +125,63 @@ Refer to the JSON code given below:
         "entityFillHoverColor": "#E5E5E9"
     },
     "markers": {
-        "shapes": [
-            {
-                "id": "myCustomShape",
-                "type": "image",
-                "url": "http://static.fusioncharts.com/docs/assets/airplane-99047_150.png",
-                "xscale": "15",
-                "yscale": "15",
-                "labelPadding": "15"
-            }
-        ],
-        "items": [
-            {
-                "id": "lon",
-                "shapeid": "myCustomShape",
-                "x": "340.23",
-                "y": "125.9",
-                "label": "LHR",
-                "tooltext": "Heathrow International Airport {br}IACL Code : EGLL",
-                "labelpos": "left"
-            },
-            {
-                "id": "was",
-                "shapeid": "myCustomShape",
-                "x": "160.14",
-                "y": "164.9",
-                "label": "ATL",
-                "tooltext": "Hartsfield Jackson Atlanta International Airport {br}IACL Code : KATL",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "dub",
-                "shapeid": "myCustomShape",
-                "x": "458.14",
-                "y": "203.9",
-                "label": "DXB",
-                "tooltext": "Dubai International Airport {br} IACL Code : OMDB",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "tok",
-                "shapeid": "myCustomShape",
-                "x": "628.14",
-                "y": "165.9",
-                "label": "HND",
-                "tooltext": "Tokyo Haneda Airport{br} IACL Code : RJTT",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "beij",
-                "shapeid": "myCustomShape",
-                "x": "573.14",
-                "y": "161.9",
-                "tooltext": "Beijing Capital International Airport {br} IACL Code : ZBAA",
-                "labelpos": "bottom"
-            }
-        ]
+        "shapes": [{
+            "id": "myCustomShape",
+            "type": "image",
+            "url": "http://static.fusioncharts.com/docs/assets/airplane-99047_150.png",
+            "xscale": "15",
+            "yscale": "15",
+            "labelPadding": "15"
+        }],
+        "items": [{
+            "id": "lon",
+            "shapeid": "myCustomShape",
+            "x": "340.23",
+            "y": "125.9",
+            "label": "LHR",
+            "tooltext": "Heathrow International Airport {br}IACL Code : EGLL",
+            "labelpos": "left"
+        }, {
+            "id": "was",
+            "shapeid": "myCustomShape",
+            "x": "160.14",
+            "y": "164.9",
+            "label": "ATL",
+            "tooltext": "Hartsfield Jackson Atlanta International Airport {br}IACL Code : KATL",
+            "labelpos": "bottom"
+        }, {
+            "id": "dub",
+            "shapeid": "myCustomShape",
+            "x": "458.14",
+            "y": "203.9",
+            "label": "DXB",
+            "tooltext": "Dubai International Airport {br} IACL Code : OMDB",
+            "labelpos": "bottom"
+        }, {
+            "id": "tok",
+            "shapeid": "myCustomShape",
+            "x": "628.14",
+            "y": "165.9",
+            "label": "HND",
+            "tooltext": "Tokyo Haneda Airport{br} IACL Code : RJTT",
+            "labelpos": "bottom"
+        }, {
+            "id": "beij",
+            "shapeid": "myCustomShape",
+            "x": "573.14",
+            "y": "161.9",
+            "tooltext": "Beijing Capital International Airport {br} IACL Code : ZBAA",
+            "labelpos": "bottom"
+        }]
     }
 }
-
-```
-
-Refer to the full HTML code given below:
-
-```
-
-<html>
-<head>
-    <title>A Data Driven Map</title>
-    <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
-<script>
-FusionCharts.ready(function () {
-    var airportsMap = new FusionCharts({
-        type: 'maps/world',
-        renderAt: 'chart-container',
-        width: '600',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
-                "caption" : "Top 5 Airports in the World",
-                "subcaption" : "Based on Passenger Traffic",
-                "theme": "fint",
-                "showMarkerLabels" : "1",
-                "entityFillColor" : "#A8A8A8",
-                "entityFillHoverColor" : "#E5E5E9"
-                    },
-            "markers": {
-            "shapes": [
-                    {
-                        "id": "myCustomShape",
-                        "type": "image",
-                        "url": "http://static.fusioncharts.com/docs/assets/airplane-99047_150.png",
-                        "xscale": "15",
-                        "yscale": "15",
-                        "labelPadding": "15"
-                    }
-                ],
-            "items" : [
-            {
-                "id":"lon",
-                "shapeid": "myCustomShape",
-                "x": "340.23",
-                "y": "125.9",
-                "label": "LHR",
-                "tooltext": "Heathrow International Airport {br}IACL Code : EGLL",
-                "labelpos": "left"
-            },
-            {
-                "id": "was",
-                "shapeid": "myCustomShape",
-                "x": "160.14",
-                "y": "164.9",
-                "label": "ATL",
-                "tooltext": "Hartsfield Jackson Atlanta International Airport {br}IACL Code : KATL",
-
-                "labelpos": "bottom"
-            },
-            {
-                "id": "dub",
-                "shapeid": "myCustomShape",
-                "x": "458.14",
-                "y": "203.9",
-                "label": "DXB",
-                "tooltext": "Dubai International Airport {br} IACL Code : OMDB",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "tok",
-                "shapeid": "myCustomShape",
-                "x": "628.14",
-                "y": "165.9",
-                "label": "HND",
-                "tooltext": "Tokyo Haneda Airport{br} IACL Code : RJTT",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "beij",
-                "shapeid": "myCustomShape",
-                "x": "573.14",
-                "y": "161.9",
-                "tooltext": "Beijing Capital International Airport {br} IACL Code : ZBAA",
-                "labelpos": "bottom"
-            }]
-                }
-            }
-    }).render();
-});
-</script>
-</head>
-<body>
-<div id="chart-container">A world map will load here!</div>
-</body>
-</html>
-
 ```
 
 The map will look as shown below:
 
-<map>
+{% embed_all map-guide-markers-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/f87te3v5/ "@@open-newtab") to edit the above map.
 
 ## Use connectors between markers
 
@@ -401,8 +201,7 @@ For example, build a map showing the busiest air routes from the Heathrow airpor
 
 Refer to the JSON code below:
 
-```
-
+```json
 {
     "chart": {
         "caption": "Busiest Routes from Heathrow Airport",
@@ -417,181 +216,73 @@ Refer to the JSON code below:
         "entityFillHoverColor": "#E5E5E9"
     },
     "markers": {
-        "items": [
-            {
-                "id": "lon",
-                "shapeid": "triangle",
-                "x": "340.23",
-                "y": "125.9",
-                "label": "LHR",
-                "tooltext": "Heathrow International Airport {br}IACL Code : EGLL",
-                "labelpos": "left"
-            },
-            {
-                "id": "nyc",
-                "shapeid": "triangle",
-                "x": "178.14",
-                "y": "154.9",
-                "label": "JFK",
-                "tooltext": "John F Kennedy Airport {br}IACL Code : KJFK",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "dub",
-                "shapeid": "triangle",
-                "x": "458.14",
-                "y": "203.9",
-                "label": "DXB",
-                "tooltext": "Dubai International Airport {br} IACL Code : OMDB",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "sg",
-                "shapeid": "triangle",
-                "x": "558.14",
-                "y": "255.9",
-                "label": "SIN",
-                "tooltext": "Singapore International Airport {br} IACL Code : WSSS",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "hk",
-                "shapeid": "triangle",
-                "x": "573.14",
-                "y": "202.9",
-                "label": "HKG",
-                "tooltext": "Hong Kong International Airport {br} IACL Code : VHHH",
-                "labelpos": "bottom"
-            }
-        ],
-        "connectors": [
-            {
-                "from": "lon",
-                "to": "hk",
-                "tooltext": "<b>London to Hong Kong</b>{br} Total Passengers: 1,801,520"
-            },
-            {
-                "from": "lon",
-                "to": "sg",
-                "tooltext": "<b>London to Singapore</b>{br} Total Passengers: 1,507,032"
-            },
-            {
-                "from": "lon",
-                "to": "nyc",
-                "tooltext": "<b>London to New York{br} Total Passengers: 2,551,276"
-            },
-            {
-                "from": "lon",
-                "to": "dub",
-                "tooltext": "<b>London to Dubai</b>{br} Total Passengers: 1,974,078"
-            }
-        ]
+        "items": [{
+            "id": "lon",
+            "shapeid": "triangle",
+            "x": "340.23",
+            "y": "125.9",
+            "label": "LHR",
+            "tooltext": "Heathrow International Airport {br}IACL Code : EGLL",
+            "labelpos": "left"
+        }, {
+            "id": "nyc",
+            "shapeid": "triangle",
+            "x": "178.14",
+            "y": "154.9",
+            "label": "JFK",
+            "tooltext": "John F Kennedy Airport {br}IACL Code : KJFK",
+            "labelpos": "bottom"
+        }, {
+            "id": "dub",
+            "shapeid": "triangle",
+            "x": "458.14",
+            "y": "203.9",
+            "label": "DXB",
+            "tooltext": "Dubai International Airport {br} IACL Code : OMDB",
+            "labelpos": "bottom"
+        }, {
+            "id": "sg",
+            "shapeid": "triangle",
+            "x": "558.14",
+            "y": "255.9",
+            "label": "SIN",
+            "tooltext": "Singapore International Airport {br} IACL Code : WSSS",
+            "labelpos": "bottom"
+        }, {
+            "id": "hk",
+            "shapeid": "triangle",
+            "x": "573.14",
+            "y": "202.9",
+            "label": "HKG",
+            "tooltext": "Hong Kong International Airport {br} IACL Code : VHHH",
+            "labelpos": "bottom"
+        }],
+        "connectors": [{
+            "from": "lon",
+            "to": "hk",
+            "tooltext": "<b>London to Hong Kong</b>{br} Total Passengers: 1,801,520"
+        }, {
+            "from": "lon",
+            "to": "sg",
+            "tooltext": "<b>London to Singapore</b>{br} Total Passengers: 1,507,032"
+        }, {
+            "from": "lon",
+            "to": "nyc",
+            "tooltext": "<b>London to New York{br} Total Passengers: 2,551,276"
+        }, {
+            "from": "lon",
+            "to": "dub",
+            "tooltext": "<b>London to Dubai</b>{br} Total Passengers: 1,974,078"
+        }]
     }
 }
-
 ```
 
-Refer to the full HTML code given below:
+The map looks ike as shown below:
 
-```
+{% embed_all map-guide-markers-example-3.js %}
 
-<html>
-<head>
-    <title>A map showing connectors</title>
-    <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
-    <script>
-    FusionCharts.ready(function() {
-        var routesMap = new FusionCharts({
-            type: 'maps/world',
-            renderAt: 'chart-container',
-            width: '600',
-            height: '400',
-            dataFormat: 'json',
-            dataSource: {
-                "chart": {
-                    "caption": "Busiest Routes from Heathrow Airport",
-                    "subcaption": "2014",
-                    "theme": "fint",
-                    "markerBgColor": "#FF0000",
-                    "markerRadius": "10",
-                    "showMarkerLabels": "1",
-                    "connectorColor": "#0CB2B0",
-                    "connectorHoverColor": "#339933",
-                    "entityFillColor": "#CECED2",
-                    "entityFillHoverColor": "#E5E5E9"
-                },
-                "markers": {
-                    "items": [{
-                        "id": "lon",
-                        "shapeid": "triangle",
-                        "x": "340.23",
-                        "y": "125.9",
-                        "label": "LHR",
-                        "tooltext": "Heathrow International Airport {br}IACL Code : EGLL",
-                        "labelpos": "left"
-                    }, {
-                        "id": "nyc",
-                        "shapeid": "triangle",
-                        "x": "178.14",
-                        "y": "154.9",
-                        "label": "JFK",
-                        "tooltext": "John F Kennedy Airport {br}IACL Code : KJFK",
-                        "labelpos": "bottom"
-                    }, {
-                        "id": "dub",
-                        "shapeid": "triangle",
-                        "x": "458.14",
-                        "y": "203.9",
-                        "label": "DXB",
-                        "tooltext": "Dubai International Airport {br} IACL Code : OMDB",
-                        "labelpos": "bottom"
-                    }, {
-                        "id": "sg",
-                        "shapeid": "triangle",
-                        "x": "558.14",
-                        "y": "255.9",
-                        "label": "SIN",
-                        "tooltext": "Singapore International Airport {br} IACL Code : WSSS",
-                        "labelpos": "bottom"
-                    }, {
-                        "id": "hk",
-                        "shapeid": "triangle",
-                        "x": "573.14",
-                        "y": "202.9",
-                        "label": "HKG",
-                        "tooltext": "Hong Kong International Airport {br} IACL Code : VHHH",
-                        "labelpos": "bottom"
-                    }],
-                    "connectors": [{
-                        "from": "lon",
-                        "to": "hk",
-                        "tooltext": "<b>London to Hong Kong</b>{br} Total Passengers: 1,801,520"
-                    }, {
-                        "from": "lon",
-                        "to": "sg",
-                        "tooltext": "<b>London to Singapore</b>{br} Total Passengers: 1,507,032"
-                    }, {
-                        "from": "lon",
-                        "to": "nyc",
-                        "tooltext": "<b>London to New York{br} Total Passengers: 2,551,276"
-                    }, {
-                        "from": "lon",
-                        "to": "dub",
-                        "tooltext": "<b>London to Dubai</b>{br} Total Passengers: 1,974,078"
-                    }]
-                }
-            }
-        }).render();
-    });
-    </script>
-</head>
-<body>
-    <div id="chart-container">A world map will load here!</div>
-</body>
-</html>
-
-```
+Click [here](http://jsfiddle.net/fusioncharts/j922xqta/ "@@open-newtab") to edit the above map.
 
 ## Use data driven markers
 
@@ -613,8 +304,7 @@ In FusionCharts Suite XT, you can define marker sizes based on associated data v
 
 Refer to the JSON code below:
 
-```
-
+```json
 {
     "chart": {
         "caption": "Top 5 Busiest Airports in the World",
@@ -630,423 +320,60 @@ Refer to the JSON code below:
         "numbersuffix": "M"
     },
     "markers": {
-        "items": [
-            {
-                "id": "lon",
-                "shapeid": "circle",
-                "x": "340.23",
-                "y": "125.9",
-                "label": "LHR",
-                "value": "16.0",
-                "tooltext": "Heathrow International Airport {br} Total Passengers: $value M{br} IACL Code : EGLL",
-                "labelpos": "left"
-            },
-            {
-                "id": "atl",
-                "shapeid": "circle",
-                "x": "160.14",
-                "y": "164.9",
-                "label": "ATL",
-                "value": "21.6",
-                "tooltext": "Hartsfield Jackson Atlanta International Airport {br} Total Passengers: $value M{br} IACL Code : KATL",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "dub",
-                "shapeid": "circle",
-                "x": "458.14",
-                "y": "203.9",
-                "label": "DXB",
-                "value": "18.3",
-                "tooltext": "Dubai International Airport {br} Total Passengers: $value M{br} IACL Code : OMDB",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "tok",
-                "shapeid": "circle",
-                "x": "628.14",
-                "y": "165.9",
-                "label": "HND",
-                "value": "16.6",
-                "tooltext": "Tokyo Haneda Airport {br} Total Passengers: $value M{br} IACL Code : RJTT",
-                "labelpos": "bottom"
-            },
-            {
-                "id": "beij",
-                "shapeid": "circle",
-                "x": "573.14",
-                "y": "161.9",
-                "label": "PEK",
-                "value": "20.5",
-                "tooltext": "Beijing Capital International Airport {br} Total Passengers: $value M{br} IACL Code : ZBAA",
-                "labelpos": "bottom"
-            }
-        ]
+        "items": [{
+            "id": "lon",
+            "shapeid": "circle",
+            "x": "340.23",
+            "y": "125.9",
+            "label": "LHR",
+            "value": "16.0",
+            "tooltext": "Heathrow International Airport {br} Total Passengers: $value M{br} IACL Code : EGLL",
+            "labelpos": "left"
+        }, {
+            "id": "atl",
+            "shapeid": "circle",
+            "x": "160.14",
+            "y": "164.9",
+            "label": "ATL",
+            "value": "21.6",
+            "tooltext": "Hartsfield Jackson Atlanta International Airport {br} Total Passengers: $value M{br} IACL Code : KATL",
+            "labelpos": "bottom"
+        }, {
+            "id": "dub",
+            "shapeid": "circle",
+            "x": "458.14",
+            "y": "203.9",
+            "label": "DXB",
+            "value": "18.3",
+            "tooltext": "Dubai International Airport {br} Total Passengers: $value M{br} IACL Code : OMDB",
+            "labelpos": "bottom"
+        }, {
+            "id": "tok",
+            "shapeid": "circle",
+            "x": "628.14",
+            "y": "165.9",
+            "label": "HND",
+            "value": "16.6",
+            "tooltext": "Tokyo Haneda Airport {br} Total Passengers: $value M{br} IACL Code : RJTT",
+            "labelpos": "bottom"
+        }, {
+            "id": "beij",
+            "shapeid": "circle",
+            "x": "573.14",
+            "y": "161.9",
+            "label": "PEK",
+            "value": "20.5",
+            "tooltext": "Beijing Capital International Airport {br} Total Passengers: $value M{br} IACL Code : ZBAA",
+            "labelpos": "bottom"
+        }]
     }
 }
-
-```
-
-Refer to the full HTML code given below:
-
-```
-
-<html>
-<head>
-    <title>A Data Driven Map</title>
-    <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
-<script>
-FusionCharts.ready(function() {
-    var airportsMap = new FusionCharts({
-        type: 'maps/world',
-        renderAt: 'chart-container',
-        width: '600',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
-                "caption": "Top 5 Busiest Airports in the World",
-                "subcaption": "Based on Passenger Traffic in 2014",
-                "theme": "fint",
-                "markerBgColor": "#3399FF",
-                "entityFillColor": "#A8A8A8",
-                "entityFillHoverColor": "#E5E5E9",
-                "useValuesforMarkers": "1",
-                "showMarkerLabels": "1",
-                "showvalue": "0",
-                "markerTooltext": "$label",
-                "numbersuffix": "M"
-            },
-            "markers": {
-                "items": [{
-                    "id": "lon",
-                    "shapeid": "circle",
-                    "x": "340.23",
-                    "y": "125.9",
-                    "label": "LHR",
-                    "value": "16.0",
-                    "tooltext": "Heathrow International Airport {br} Total Passengers: $value M{br} IACL Code : EGLL",
-                    "labelpos": "left"
-                }, {
-                    "id": "atl",
-                    "shapeid": "circle",
-                    "x": "160.14",
-                    "y": "164.9",
-                    "label": "ATL",
-                    "value": "21.6",
-                    "tooltext": "Hartsfield Jackson Atlanta International Airport {br} Total Passengers: $value M{br} IACL Code : KATL",
-                    "labelpos": "bottom"
-                }, {
-                    "id": "dub",
-                    "shapeid": "circle",
-                    "x": "458.14",
-                    "y": "203.9",
-                    "label": "DXB",
-                    "value": "18.3",
-                    "tooltext": "Dubai International Airport {br} Total Passengers: $value M{br} IACL Code : OMDB",
-                    "labelpos": "bottom"
-                }, {
-                    "id": "tok",
-                    "shapeid": "circle",
-                    "x": "628.14",
-                    "y": "165.9",
-                    "label": "HND",
-                    "value": "16.6",
-                    "tooltext": "Tokyo Haneda Airport {br} Total Passengers: $value M{br} IACL Code : RJTT",
-                    "labelpos": "bottom"
-                }, {
-                    "id": "beij",
-                    "shapeid": "circle",
-                    "x": "573.14",
-                    "y": "161.9",
-                    "label": "PEK",
-                    "value": "20.5",
-                    "tooltext": "Beijing Capital International Airport {br} Total Passengers: $value M{br} IACL Code : ZBAA",
-                    "labelpos": "bottom"
-                }]
-            }
-        }
-    }).render();
-});
-</script>
-</head>
-<body>
-    <div id="chart-container">A world map will load here!</div>
-</body>
-</html>
-
 ```
 
 The map will look as shown below:
 
-<map>
+{% embed_all map-guide-markers-example-4.js %}
 
-Note: In the map above, the size of the marker is proportional to the total passenger traffic for the airport.
+Click [here](http://jsfiddle.net/fusioncharts/12vyv6L3/ "@@open-newtab") to edit the above map.
 
-## Use marker sheets
-
-In FusionCharts Suite XT, you can create any number of custom markers on a map. Additionally, you can create JSON based marker definitions of important cities for most major maps. You can find these marker definitions in the [Marker Data](https://www.fusioncharts.com/maps/marker-data/) section.
-
-### Follow marker structure in v3.4
-
-In FusionCharts v3.4, you need to create a `shapes` object and an `items` object, to build the marker structure. Use the `shapes` object to define the look of the marker, and the `items` object to specify all marker related information, such as the `x` and `y` coordinates, the unique `id` of the marker and other attributes for customization.
-
-> Note: If you use the XML data type, change the `items` object to the `<data>` tag.
-
-Refer to the structure of a typical marker sheet, given below:
-
-```
-
-{
-    "map": {},
-    "markers": {
-        "shapes": [{
-            "id": "myCustomShape",
-            "type": "circle",
-            "fillcolor": "FFFFFF,333333",
-            "fillpattern": "radial",
-            "showborder": "0",
-            "radius": "4"
-        }, {
-            "id": "newCustomShape",
-            "type": "circle",
-            "fillcolor": "FFFFFF,000099",
-            "fillpattern": "radial",
-            "showborder": "0",
-            "radius": "3"
-        }],
-        "items": [{
-            "id": "KA",
-            "shapeid": "myCustomShape",
-            "x": "388.77",
-            "y": "207.41",
-            "label": "Kabul",
-            "labelpos": "left"
-        }, {
-            "id": "01",
-            "shapeid": "newCustomShape",
-            "x": "358.11",
-            "y": "72.54",
-            "label": "Shir Khan"
-        }, {
-            "id": "02",
-            "shapeid": "newCustomShape",
-            "x": "364.24",
-            "y": "92.97",
-            "label": "Kondoz",
-            "labelpos": "left"
-        }, {
-            "id": "03",
-            "shapeid": "newCustomShape",
-            "x": "280.46",
-            "y": "95.02",
-            "label": "Mazar-e-Sharif",
-            "labelpos": "left"
-        }, {
-            "id": "04",
-            "shapeid": "newCustomShape",
-            "x": "403.07",
-            "y": "183.91",
-            "label": "Bagram",
-            "labelpos": "right"
-        }, {
-            "id": "05",
-            "shapeid": "newCustomShape",
-            "x": "434.74",
-            "y": "216.6",
-            "label": "Jalalabad",
-            "labelpos": "left"
-        }, {
-            "id": "06",
-            "shapeid": "newCustomShape",
-            "x": "321.33",
-            "y": "263.6",
-            "label": "Ghazni",
-            "labelpos": "right"
-        }, {
-            "id": "07",
-            "shapeid": "newCustomShape",
-            "x": "228.35",
-            "y": "390.3",
-            "label": "Kandahar",
-            "labelpos": "top"
-        }, {
-            "id": "08",
-            "shapeid": "newCustomShape",
-            "x": "62.83",
-            "y": "379.06",
-            "label": "Zaranj",
-            "labelpos": "left"
-        }, {
-            "id": "11",
-            "shapeid": "newCustomShape",
-            "x": "87.35",
-            "y": "165.52",
-            "label": "Towraghondi",
-            "labelpos": "left"
-        }, {
-            "id": "09",
-            "shapeid": "newCustomShape",
-            "x": "80.2",
-            "y": "242.15",
-            "label": "Shindand",
-            "labelpos": "left"
-        }, {
-            "id": "10",
-            "shapeid": "newCustomShape",
-            "x": "81.22",
-            "y": "199.23",
-            "label": "Herat",
-            "labelpos": "left"
-        }]
-    }
-}
-
-```
-
-Note: In the above marker structure, you can modify the `shapes` object with your own shape definition. Of course, if you are not using the markers as part of your map, you can simply delete it from the `markers` object.
-
-### Follow marker structure in v3.3 and earlier
-
-Before you get started with this section, remember that the following structures are supported in v3.3 and earlier versions of the product. This marker structure is not recommended for use with v3.4 or later.
-
-In this structure, you need to create `shapes`, `definition` and `application` objects. You can use the `shapes` object to specify how the marker should look. You can use the `definition` object to specify marker data, such as `x` and `y` coordinates, as well as a unique marker `id`. You also need to use the `application` object to specify which `shape` is to be used with which `definition` and also which markers are to be used in a particular instance of the map.
-
-Refer to the structure of a typical marker sheet, given below:
-
-```
-
-{
-    "map": {},
-    "markers": {
-        "shapes": [{
-            "id": "myCustomShape",
-            "type": "circle",
-            "fillcolor": "FFFFFF,333333",
-            "fillpattern": "radial",
-            "showborder": "0",
-            "radius": "4"
-        }, {
-            "id": "newCustomShape",
-            "type": "circle",
-            "fillcolor": "FFFFFF,000099",
-            "fillpattern": "radial",
-            "showborder": "0",
-            "radius": "3"
-        }],
-        "definition": [{
-            "id": "KA",
-            "x": "388.77",
-            "y": "207.41",
-            "label": "Kabul",
-            "labelpos": "left"
-        }, {
-            "id": "01",
-            "x": "358.11",
-            "y": "72.54",
-            "label": "Shir Khan"
-        }, {
-            "id": "02",
-            "x": "364.24",
-            "y": "92.97",
-            "label": "Kondoz",
-            "labelpos": "left"
-        }, {
-            "id": "03",
-            "x": "280.46",
-            "y": "95.02",
-            "label": "Mazar-e-Sharif",
-            "labelpos": "left"
-        }, {
-            "id": "04",
-            "x": "403.07",
-            "y": "183.91",
-            "label": "Bagram",
-            "labelpos": "right"
-        }, {
-            "id": "05",
-            "x": "434.74",
-            "y": "216.6",
-            "label": "Jalalabad",
-            "labelpos": "left"
-        }, {
-            "id": "06",
-            "x": "321.33",
-            "y": "263.6",
-            "label": "Ghazni",
-            "labelpos": "right"
-        }, {
-            "id": "07",
-            "x": "228.35",
-            "y": "390.3",
-            "label": "Kandahar",
-            "labelpos": "top"
-        }, {
-            "id": "08",
-            "x": "62.83",
-            "y": "379.06",
-            "label": "Zaranj",
-            "labelpos": "left"
-        }, {
-            "id": "11",
-            "x": "87.35",
-            "y": "165.52",
-            "label": "Towraghondi",
-            "labelpos": "left"
-        }, {
-            "id": "09",
-            "x": "80.2",
-            "y": "242.15",
-            "label": "Shindand",
-            "labelpos": "left"
-        }, {
-            "id": "10",
-            "x": "81.22",
-            "y": "199.23",
-            "label": "Herat",
-            "labelpos": "left"
-        }],
-        "application": [{
-            "id": "KA",
-            "shapeid": "myCustomShape"
-        }, {
-            "id": "01",
-            "shapeid": "newCustomShape"
-        }, {
-            "id": "02",
-            "shapeid": "newCustomShape"
-        }, {
-            "id": "03",
-            "shapeid": "newCustomShape"
-        }, {
-            "id": "04",
-            "shapeid": "newCustomShape"
-        }, {
-            "id": "05",
-            "shapeid": "newCustomShape"
-        }, {
-            "id": "06",
-            "shapeid": "newCustomShape"
-        }, {
-            "id": "07",
-            "shapeid": "newCustomShape"
-        }, {
-            "id": "08",
-            "shapeid": "newCustomShape"
-        }, {
-            "id": "11",
-            "shapeid": "newCustomShape"
-        }, {
-            "id": "09",
-            "shapeid": "newCustomShape"
-        }, {
-            "id": "10",
-            "shapeid": "newCustomShape"
-        }]
-    }
-}
-
-```
-
-Click [here](https://www.fusioncharts.com/maps/marker-data/) for a list of all the marker data files.
+> In the map above, the size of the marker is proportional to the total passenger traffic for the airport.

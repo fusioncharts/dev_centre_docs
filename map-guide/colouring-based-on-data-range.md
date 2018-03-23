@@ -4,7 +4,7 @@ description: A gradient scale allows you to specify colours associated with spec
 heading: Coloring Based on Data Range
 ---
 
-You have to use color ranges to define entity colors based on values, in order to set up a <<simple data driven map>>. Since the process of defining colors for individual data buckets is not scalable, you need to group data values under defined data range buckets. 
+You have to use color ranges to define entity colors based on values, in order to set up a [simple data driven map]({% site.baseurl %}/map-guide/simple-data-driven-maps '@@open-newtab'). Since the process of defining colors for individual data buckets is not scalable, you need to group data values under defined data range buckets. 
 
 Note that you need to denote entities within these buckets with the same color. Also, you need to define colors for each data range. This can become tedious if you have to deal with a large number of buckets. In that case, you can use a gradient scale to simplify this process.
 
@@ -32,222 +32,72 @@ Here's how you can build a map with a gradient scale:
 
 Refer to the code given below:
 
-```
-
+```json
 {
-
     "chart": {
-
         "caption": "Global Population Density",
-
         "theme": "fint",
-
         "showLabels": "1",
-
         "formatNumberScale": "0"
-
     },
-
     "colorrange": {
-
         "minvalue": "0",
-
         "startlabel": "Low",
-
         "endlabel": "High",
-
         "code": "#FF4411",
-
         "gradient": "1",
-
-        "color": [
-
-            {
-
-                "maxvalue": "25",
-
-                "code": "#FFDD44",
-
-                "displayValue": "Median"
-
-            },
-
-            {
-
-                "maxvalue": "100",
-
-                "code": "#6baa01"
-
-            }
-
-        ]
-
+        "color": [{
+            "maxvalue": "25",
+            "code": "#FFDD44",
+            "displayValue": "Median"
+        }, {
+            "maxvalue": "100",
+            "code": "#6baa01"
+        }]
     },
-
-    "data": [
-
-        {
-
-            "id": "NA",
-
-            "value": "22.1",
-
-            "showLabel": "1",
-
-            "displayValue": "Moderate"
-
-        },
-
-        {
-
-            "id": "SA",
-
-            "value": "22.0",
-
-            "showLabel": "1",
-
-            "displayValue": "Moderate"
-
-        },
-
-        {
-
-            "id": "AS",
-
-            "value": "95.0",
-
-            "showLabel": "1",
-
-            "displayValue": "Dense"
-
-        },
-
-        {
-
-            "id": "EU",
-
-            "value": "72.5",
-
-            "showLabel": "1",
-
-            "displayValue": "Dense"
-
-        },
-
-        {
-
-            "id": "AF",
-
-            "value": "33.7",
-
-            "showLabel": "1",
-
-            "displayValue": "Moderate"
-
-        },
-
-        {
-
-            "id": "AU",
-
-            "value": "3.2",
-
-            "showLabel": "1",
-
-            "displayValue": "Sparse"
-
-        }
-
-    ]
-
+    "data": [{
+        "id": "NA",
+        "value": "22.1",
+        "showLabel": "1",
+        "displayValue": "Moderate"
+    },
+    {
+        "id": "SA",
+        "value": "22.0",
+        "showLabel": "1",
+        "displayValue": "Moderate"
+    },
+    {
+        "id": "AS",
+        "value": "95.0",
+        "showLabel": "1",
+        "displayValue": "Dense"
+    },
+    {
+        "id": "EU",
+        "value": "72.5",
+        "showLabel": "1",
+        "displayValue": "Dense"
+    },
+    {
+        "id": "AF",
+        "value": "33.7",
+        "showLabel": "1",
+        "displayValue": "Moderate"
+    },
+    {
+        "id": "AU",
+        "value": "3.2",
+        "showLabel": "1",
+        "displayValue": "Sparse"
+    }]
 }
-
 ```
 
 The map will look as shown below:
 
-<map>
+{% embed_chart map-guide-coloring-based-on-data-range-example-1.js %}
 
-> Note: You can use only one color to draw the gradient scale. Here, the scale will appear starting from the darkest shade of the color (lower limit) to the brightest shade of the color (upper limit). The map will automatically decide the numeric range taking the lowest data value present as the lower limit and the highest data value as the upper limit. In this case, however, you cannot set the upper limit using the `maxValue` attribute.
+Click [here](http://jsfiddle.net/fusioncharts/r7L7xcv1/ "@@open-newtab") to edit the above map.
 
-To build the map shown above, refer to the HTML code given below:
-
-```
-
-<html>
-<head>
-    <title>A Data Driven Map</title>
-    <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
-<script>
-FusionCharts.ready(function() {
-    var salesMap = new FusionCharts({
-        type: 'maps/world',
-        renderAt: 'chart-container',
-        width: '600',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
-                "caption": "Global Population Density",
-                "theme": "fint",
-                "showLabels": "1",
-                "formatNumberScale": "0"
-            },
-            "colorrange": {
-                "minvalue": "0",
-                "startlabel": "Low",
-                "endlabel": "High",
-                "code": "#FF4411",
-                "gradient": "1",
-                "color": [{
-                    "maxvalue": "25",
-                    "code": "#FFDD44",
-                    "displayValue": "Median"
-                }, {
-                    "maxvalue": "100",
-                    "code": "#6baa01"
-                }]
-            },
-            "data": [{
-                "id": "NA",
-                "value": "22.1",
-                "showLabel": "1",
-                "displayValue": "Moderate"
-            }, {
-                "id": "SA",
-                "value": "22.0",
-                "showLabel": "1",
-                "displayValue": "Moderate"
-            }, {
-                "id": "AS",
-                "value": "95.0",
-                "showLabel": "1",
-                "displayValue": "Dense"
-            }, {
-                "id": "EU",
-                "value": "72.5",
-                "showLabel": "1",
-                "displayValue": "Dense"
-            }, {
-                "id": "AF",
-                "value": "33.7",
-                "showLabel": "1",
-                "displayValue": "Moderate"
-            }, {
-                "id": "AU",
-                "value": "3.2",
-                "showLabel": "1",
-                "displayValue": "Sparse"
-            }]
-        }
-    }).render();
-});
-</script>
-</head>
-<body>
-    <div id="chart-container">A world map will load here!</div>
-</body>
-</html>
-
-```
+> You can use only one color to draw the gradient scale. Here, the scale will appear starting from the darkest shade of the color (lower limit) to the brightest shade of the color (upper limit). The map will automatically decide the numeric range taking the lowest data value present as the lower limit and the highest data value as the upper limit. In this case, however, you cannot set the upper limit using the `maxValue` attribute.
