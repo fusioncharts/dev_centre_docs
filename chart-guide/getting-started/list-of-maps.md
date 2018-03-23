@@ -731,79 +731,79 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-[Hovedstaden]({% site.baseurl %}/maps/spec-sheets/yambol "@@soft-reload")|maps/hovedstaden|
-[Midtjylland]({% site.baseurl %}/maps/spec-sheets/yambol "@@soft-reload")|maps/midtjylland|
-[Nordjylland]({% site.baseurl %}/maps/spec-sheets/yambol "@@soft-reload")|maps/nordjylland|
-[Sjaelland (ac)]({% site.baseurl %}/maps/spec-sheets/yambol "@@soft-reload")|maps/sjaelland|
-[Syddanmark]({% site.baseurl %}/maps/spec-sheets/yambol "@@soft-reload")|maps/syddanmark|
+[Hovedstaden]({% site.baseurl %}/maps/spec-sheets/hovedstaden "@@soft-reload")|maps/hovedstaden|
+[Midtjylland]({% site.baseurl %}/maps/spec-sheets/midtjylland "@@soft-reload")|maps/midtjylland|
+[Nordjylland]({% site.baseurl %}/maps/spec-sheets/nordjylland "@@soft-reload")|maps/nordjylland|
+[Sjaelland (ac)]({% site.baseurl %}/maps/spec-sheets/sjaelland "@@soft-reload")|maps/sjaelland|
+[Syddanmark]({% site.baseurl %}/maps/spec-sheets/syddanmark "@@soft-reload")|maps/syddanmark|
 
 ### Hungary (7 Regions)
 
 Chart Type|JavaScript Alias|
 -|-
-Central Hungary|maps/centralhungary|
-Central Transdanubia|maps/centraltransdanubia|
-Northern Great Plain|maps/northerngreatplain|
-Northern Hungary|maps/northernhungary|
-Southern Great Plain|maps/southerngreatplain|
-Southern Transdanubia|maps/southerntransdanubia|
-Western Transdanubia|maps/westerntransdanubia|
+[Central Hungary]({% site.baseurl %}/maps/spec-sheets/centralhungary "@@soft-reload")|maps/centralhungary|
+[Central Transdanubia]({% site.baseurl %}/maps/spec-sheets/centraltransdanubia "@@soft-reload")|maps/centraltransdanubia|
+[Northern Great Plain]({% site.baseurl %}/maps/spec-sheets/northerngreatplain "@@soft-reload")|maps/northerngreatplain|
+[Northern Hungary]({% site.baseurl %}/maps/spec-sheets/northernhungary "@@soft-reload")|maps/northernhungary|
+[Southern Great Plain]({% site.baseurl %}/maps/spec-sheets/southerngreatplain "@@soft-reload")|maps/southerngreatplain|
+[Southern Transdanubia]({% site.baseurl %}/maps/spec-sheets/southerntransdanubia "@@soft-reload")|maps/southerntransdanubia|
+[Western Transdanubia]({% site.baseurl %}/maps/spec-sheets/westerntransdanubia "@@soft-reload")|maps/westerntransdanubia|
 
 ### Czech Republic (Main Districts)
 
 Chart Type|JavaScript Alias|
 -|-
-Czech Republic Districts|maps/czechrepublicdistricts|
+[Czech Republic Districts]({% site.baseurl %}/maps/spec-sheets/westerntransdanubia "@@soft-reload")|maps/czechrepublicdistricts|
 
 ### Albania (Counties)
 
 Chart Type|JavaScript Alias|
 -|-
-Berat|maps/berat|
-Diber|maps/diber|
-Durres|maps/durres|
-Elbasan|maps/elbasan|
-Fier|maps/fier|
-Gjirokaster|maps/gjirokaster|
-Korce|maps/korce|
-Kukes|maps/kukes|
-Lezhe|maps/lezhe|
-Shkoder|maps/shkoder|
-Tirana|maps/tirana|
-Vlore|maps/vlore|
+[Berat]({% site.baseurl %}/maps/spec-sheets/berat "@@soft-reload")|maps/berat|
+[Diber]({% site.baseurl %}/maps/spec-sheets/diber "@@soft-reload")|maps/diber|
+[Durres]({% site.baseurl %}/maps/spec-sheets/durres "@@soft-reload")|maps/durres|
+[Elbasan]({% site.baseurl %}/maps/spec-sheets/elbasan "@@soft-reload")|maps/elbasan|
+[Fier]({% site.baseurl %}/maps/spec-sheets/fier "@@soft-reload")|maps/fier|
+[Gjirokaster]({% site.baseurl %}/maps/spec-sheets/gjirokaster "@@soft-reload")|maps/gjirokaster|
+[Korce]({% site.baseurl %}/maps/spec-sheets/korce "@@soft-reload")|maps/korce|
+[Kukes]({% site.baseurl %}/maps/spec-sheets/kukes "@@soft-reload")|maps/kukes|
+[Lezhe]({% site.baseurl %}/maps/spec-sheets/lezhe "@@soft-reload")|maps/lezhe|
+[Shkoder]({% site.baseurl %}/maps/spec-sheets/shkoder "@@soft-reload")|maps/shkoder|
+[Tirana]({% site.baseurl %}/maps/spec-sheets/tirana "@@soft-reload")|maps/tirana|
+[Vlore]({% site.baseurl %}/maps/spec-sheets/vlore "@@soft-reload")|maps/vlore|
 
 ### Estonia (Countries)
 
 Chart Type|JavaScript Alias|
 -|-
-Harjumaa|maps/harjumaa|
-Hiiumaa|maps/hiiumaa|
-Ida-Virumaa|maps/idavirumaa|
-Jarvamaa|maps/jarvamaa|
-Jogevamaa|maps/jogevamaa|
-Laanemaa|maps/laanemaa|
-Laane-Virumaa|maps/laanevirumaa|
-Parnumaa|maps/parnumaa|
-Polvamaa|maps/polvamaa|
-Raplamaa|maps/raplamaa|
-Saaremaa|maps/saaremaa|
-Tartumaa|maps/tartumaa|
-Valgamaa|maps/valgamaa|
-Viljandimaa|maps/viljandimaa|
-Vorumaa|maps/vorumaa|
+[Harjumaa]({% site.baseurl %}/maps/spec-sheets/harjumaa "@@soft-reload")|maps/harjumaa|
+[Hiiumaa]({% site.baseurl %}/maps/spec-sheets/hiiumaa "@@soft-reload")|maps/hiiumaa|
+[Ida-Virumaa]({% site.baseurl %}/maps/spec-sheets/idavirumaa "@@soft-reload")|maps/idavirumaa|
+[Jarvamaa]({% site.baseurl %}/maps/spec-sheets/jarvamaa "@@soft-reload")|maps/jarvamaa|
+[Jogevamaa]({% site.baseurl %}/maps/spec-sheets/jogevamaa "@@soft-reload")|maps/jogevamaa|
+[Laanemaa]({% site.baseurl %}/maps/spec-sheets/laanemaa "@@soft-reload")|maps/laanemaa|
+[Laane-Virumaa]({% site.baseurl %}/maps/spec-sheets/laanevirumaa "@@soft-reload")|maps/laanevirumaa|
+[Parnumaa]({% site.baseurl %}/maps/spec-sheets/parnumaa "@@soft-reload")|maps/parnumaa|
+[Polvamaa]({% site.baseurl %}/maps/spec-sheets/polvamaa "@@soft-reload")|maps/polvamaa|
+[Raplamaa]({% site.baseurl %}/maps/spec-sheets/raplamaa "@@soft-reload")|maps/raplamaa|
+[Saaremaa]({% site.baseurl %}/maps/spec-sheets/saaremaa "@@soft-reload")|maps/saaremaa|
+[Tartumaa]({% site.baseurl %}/maps/spec-sheets/tartumaa "@@soft-reload")|maps/tartumaa|
+[Valgamaa]({% site.baseurl %}/maps/spec-sheets/valgamaa "@@soft-reload")|maps/valgamaa|
+[Viljandimaa]({% site.baseurl %}/maps/spec-sheets/viljandimaa "@@soft-reload")|maps/viljandimaa|
+[Vorumaa]({% site.baseurl %}/maps/spec-sheets/vorumaa "@@soft-reload")|maps/vorumaa|
 
 ### Romania (Regions)
 
 Chart Type|JavaScript Alias|
 -|-
-Bucuresti-Iifov|maps/bucurestiilfov|
-Centru|maps/centru|
-Nord-Est|maps/nordest|
-Nord-Vest|maps/nordvest|
-Sud-Est|maps/sudest|
-Sud-Muntenia|maps/sudmuntenia|
-Sud-Vest Oltenia|maps/sudvestoltenia|
-Vest|maps/vest|
+[Bucuresti-Iifov]({% site.baseurl %}/maps/spec-sheets/bucurestiilfov "@@soft-reload")|maps/bucurestiilfov|
+[Centru]({% site.baseurl %}/maps/spec-sheets/centru "@@soft-reload")|maps/centru|
+[Nord-Est]({% site.baseurl %}/maps/spec-sheets/nordest "@@soft-reload")|maps/nordest|
+[Nord-Vest]({% site.baseurl %}/maps/spec-sheets/nordvest "@@soft-reload")|maps/nordvest|
+[Sud-Est]({% site.baseurl %}/maps/spec-sheets/sudest "@@soft-reload")|maps/sudest|
+[Sud-Muntenia]({% site.baseurl %}/maps/spec-sheets/sudmuntenia "@@soft-reload")|maps/sudmuntenia|
+[Sud-Vest Oltenia]({% site.baseurl %}/maps/spec-sheets/sudvestoltenia "@@soft-reload")|maps/sudvestoltenia|
+[Vest]({% site.baseurl %}/maps/spec-sheets/vest "@@soft-reload")|maps/vest|
 
 ### Poland (Voivodeships)
 
