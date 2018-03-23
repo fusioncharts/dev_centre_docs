@@ -513,45 +513,45 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-Antwerp|maps/antwerp|
-Brussels|maps/brussels|
-East Flanders|maps/eastflanders|
-Flemish Brabant|maps/flemishbrabant|
-Hainaut|maps/hainaut|
-Liege|maps/liege|
-Limburg|maps/limburgbgomeenten|
-Luxembourg|maps/belgiumluxembourg|
-Namur|maps/namur|
-Walloon Brabant|maps/walloonbrabant|
-West Flanders|maps/westflanders|
+[Antwerp]({% site.baseurl %}/maps/spec-sheets/antwerp "@@soft-reload")|maps/antwerp|
+[Brussels]({% site.baseurl %}/maps/spec-sheets/brussels "@@soft-reload")|maps/brussels|
+[East Flanders]({% site.baseurl %}/maps/spec-sheets/eastflanders "@@soft-reload")|maps/eastflanders|
+[Flemish Brabant]({% site.baseurl %}/maps/spec-sheets/flemishbrabant "@@soft-reload")|maps/flemishbrabant|
+[Hainaut]({% site.baseurl %}/maps/spec-sheets/hainaut "@@soft-reload")|maps/hainaut|
+[Liege]({% site.baseurl %}/maps/spec-sheets/liege "@@soft-reload")|maps/liege|
+[Limburg]({% site.baseurl %}/maps/spec-sheets/limburgbgomeenten "@@soft-reload")|maps/limburgbgomeenten|
+[Luxembourg]({% site.baseurl %}/maps/spec-sheets/belgiumluxembourg "@@soft-reload")|maps/belgiumluxembourg|
+[Namur]({% site.baseurl %}/maps/spec-sheets/namur "@@soft-reload")|maps/namur|
+[Walloon Brabant]({% site.baseurl %}/maps/spec-sheets/walloonbrabant "@@soft-reload")|maps/walloonbrabant|
+[West Flanders]({% site.baseurl %}/maps/spec-sheets/westflanders "@@soft-reload")|maps/westflanders|
 
 ### Czech Republic (Regions)
 
 Chart Type|JavaScript Alias|
 -|-
-Central Bohemian|maps/centralbohemianregion|
-Hradec Kralove|maps/hradeckralove|
-Karlovy Vary|maps/karlovyvaryregion|
-Liberec Region|maps/liberec|
-Moravia-Silesia|maps/moraviasilesia|
-Olomouc|maps/olomoucregion|
-Pardubice|maps/pardubiceregion|
-Plzen|maps/plzen|
-Prague|maps/prague|
-South Bohemia|maps/southbohemia|
-South Moravia|maps/southmoravia|
-Usti nad Labem|maps/ustinadlabem|
-Vysocina|maps/vysocina|
-Zlin|maps/zlin|
+[Central Bohemian]({% site.baseurl %}/maps/spec-sheets/centralbohemianregion "@@soft-reload")|maps/centralbohemianregion|
+[Hradec Kralove]({% site.baseurl %}/maps/spec-sheets/hradeckralove "@@soft-reload")|maps/hradeckralove|
+[Karlovy Vary]({% site.baseurl %}/maps/spec-sheets/karlovyvaryregion "@@soft-reload")|maps/karlovyvaryregion|
+[Liberec Region]({% site.baseurl %}/maps/spec-sheets/liberec "@@soft-reload")|maps/liberec|
+[Moravia-Silesia]({% site.baseurl %}/maps/spec-sheets/moraviasilesia "@@soft-reload")|maps/moraviasilesia|
+[Olomouc]({% site.baseurl %}/maps/spec-sheets/olomoucregion "@@soft-reload")|maps/olomoucregion|
+[Pardubice]({% site.baseurl %}/maps/spec-sheets/pardubiceregion "@@soft-reload")|maps/pardubiceregion|
+[Plzen]({% site.baseurl %}/maps/spec-sheets/plzen "@@soft-reload")|maps/plzen|
+[Prague]({% site.baseurl %}/maps/spec-sheets/prague "@@soft-reload")|maps/prague|
+[South Bohemia]({% site.baseurl %}/maps/spec-sheets/southbohemia "@@soft-reload")|maps/southbohemia|
+[South Moravia]({% site.baseurl %}/maps/spec-sheets/southmoravia "@@soft-reload")|maps/southmoravia|
+[Usti nad Labem]({% site.baseurl %}/maps/spec-sheets/ustinadlabem "@@soft-reload")|maps/ustinadlabem|
+[Vysocina]({% site.baseurl %}/maps/spec-sheets/vysocina "@@soft-reload")|maps/vysocina|
+[Zlin]({% site.baseurl %}/maps/spec-sheets/zlin "@@soft-reload")|maps/zlin|
 
 ### France (Arrondisemants)
 
 Chart Type|JavaScript Alias|
 -|-
-Ile de France|maps/iledefrance|
-Paris|maps/paris|
-Lyon|maps/lyon|
-Marseille|maps/marseille|
+[Ile de France]({% site.baseurl %}/maps/spec-sheets/iledefrance "@@soft-reload")|maps/iledefrance|
+[Paris]({% site.baseurl %}/maps/spec-sheets/paris "@@soft-reload")|maps/paris|
+[Lyon]({% site.baseurl %}/maps/spec-sheets/lyon "@@soft-reload")|maps/lyon|
+[Marseille]({% site.baseurl %}/maps/spec-sheets/marseille "@@soft-reload")|maps/marseille|
 
 ### Germany (States)
 
