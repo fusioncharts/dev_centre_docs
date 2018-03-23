@@ -12,7 +12,7 @@
             "lowerLimit": "0",
             "upperLimit": "100",
             "numberSuffix": "%",
-            "dataStreamUrl": "http://static.fusioncharts.com/sampledata/php/serverLoad.php",
+            "dataStreamUrl": "https://static.fusioncharts.com/sampledata/php/serverLoad.php",
             "refreshInterval": "10",
             "theme": "fint"
         },

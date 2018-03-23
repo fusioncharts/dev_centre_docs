@@ -17,7 +17,7 @@
             "shapes": [{
                 "id": "myCustomShape",
                 "type": "image",
-                "url": "http://static.fusioncharts.com/docs/assets/airplane-99047_150.png",
+                "url": "https://static.fusioncharts.com/docs/assets/airplane-99047_150.png",
                 "xscale": "15",
                 "yscale": "15",
                 "labelPadding": "15"

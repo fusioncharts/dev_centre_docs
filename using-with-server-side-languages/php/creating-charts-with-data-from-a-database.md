@@ -523,9 +523,9 @@ if ($dbhandle->connect_error) {
 
     <head>
         <title>FusionCharts | Multi-Series Chart using PHP and MySQL</title>
-        <script src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
-        <script src="http://static.fusioncharts.com/code/latest/fusioncharts.charts.js"></script>
-        <script src="http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.zune.js"></script>
+        <script src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+        <script src="https://static.fusioncharts.com/code/latest/fusioncharts.charts.js"></script>
+        <script src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.zune.js"></script>
     </head>
 
     <body>

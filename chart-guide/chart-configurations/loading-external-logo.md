@@ -16,7 +16,7 @@ Refer to the code below:
 ```json
 {
     "chart": {
-        "logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png"
+        "logoURL": "https://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png"
     }
 }
 ```
@@ -42,7 +42,7 @@ Refer to the code below:
 ```json
 {
     "chart": {
-        "logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
+        "logoURL": "https://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
         "logoAlpha": "40",
         "logoScale": "80",
         "logoPosition": "TR"

@@ -147,7 +147,7 @@ var myDataSource = {
             "items": [{
                 "id": "butterFinger-icon",
                 "type": "image",
-                "url": "http://static.fusioncharts.com/sampledata/images/butterFinger.png", /** Path to the graphical element **/
+                "url": "https://static.fusioncharts.com/sampledata/images/butterFinger.png", /** Path to the graphical element **/
                 "x": "$xaxis.label.0.x - 30",
                 "y": "$canvasEndY - 169",
                 "xScale": "50",
@@ -155,7 +155,7 @@ var myDataSource = {
             }, {
                 "id": "tom-user-icon",
                 "type": "image",
-                "url": "http://static.fusioncharts.com/sampledata/images/snickrs.png",
+                "url": "https://static.fusioncharts.com/sampledata/images/snickrs.png",
                 "x": "$xaxis.label.1.x - 26",
                 "y": "$canvasEndY - 160",
                 "xScale": "48",
@@ -163,7 +163,7 @@ var myDataSource = {
             }, {
                 "id": "Milton-user-icon",
                 "type": "image",
-                "url": "http://static.fusioncharts.com/sampledata/images/coffee_crisp.png",
+                "url": "https://static.fusioncharts.com/sampledata/images/coffee_crisp.png",
                 "x": "$xaxis.label.2.x - 22",
                 "y": "$canvasEndY - 154",
                 "xScale": "43",
@@ -171,7 +171,7 @@ var myDataSource = {
             }, {
                 "id": "Brian-user-icon",
                 "type": "image",
-                "url": "http://static.fusioncharts.com/sampledata/images/100grand.png",
+                "url": "https://static.fusioncharts.com/sampledata/images/100grand.png",
                 "x": "$xaxis.label.3.x - 22",
                 "y": "$canvasEndY - 150",
                 "xScale": "43",

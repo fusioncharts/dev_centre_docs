@@ -12,7 +12,7 @@
             "xAxisName": "Month",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
+            "logoURL": "https://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
             "logoAlpha": "40",
             "logoScale": "90",
             "logoPosition": "TR",

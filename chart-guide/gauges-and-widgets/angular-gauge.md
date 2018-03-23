@@ -1756,7 +1756,7 @@ Refer to the code below:
 ```json
 {
     "chart": {
-        "dataStreamUrl": "http://static.fusioncharts.com/sampledata/php/serverLoad.php",
+        "dataStreamUrl": "https://static.fusioncharts.com/sampledata/php/serverLoad.php",
         "refreshInterval": "10"
     },
 }
@@ -1768,7 +1768,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/quqyc6va/ "@@open-newtab") to edit the above chart.
 
-In the above code, note that the value of the `dataStreamURL` attribute is set to `[http://static.fusioncharts.com/sampledata/php/serverLoad.php](http://static.fusioncharts.com/sampledata/php/serverLoad.php)` and the `refreshInterval` attribute to `10`. This means after every 10 seconds the chart will fetch data from the URL and update the dials.
+In the above code, note that the value of the `dataStreamURL` attribute is set to `[https://static.fusioncharts.com/sampledata/php/serverLoad.php](https://static.fusioncharts.com/sampledata/php/serverLoad.php)` and the `refreshInterval` attribute to `10`. This means after every 10 seconds the chart will fetch data from the URL and update the dials.
 
 For example, the `serverLoad.php` data provider will return two random values within 100% in the format shown below:
 
