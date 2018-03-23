@@ -8,7 +8,6 @@ All maps in FusionCharts Suite XT have predefined unique internal IDs to referen
 
 Consider the example dataset given in the table below. It shows the population numbers for the different continents. It also has columns for the "FusionCharts Internal ID" for each continent and a custom defined Desired ID.
 
-
 Continent|Desired ID|FusionCharts Internal ID|Population (in millions)|
 -|-|-|-
 North America|NAM|NA|515|
@@ -18,14 +17,11 @@ Africa|AFR|AF|885|
 Asia|ASI|AS|3875|
 Australia|AUS|AU|32|
 
-
-
 In this example, assume that you want to rename the internal ID for North America from `NA` to `NAM`, that of South America from `SA` to `SAM`, and so on. You can do this by defining new IDs for entities within the `entitydef` array as part of the `dataSource` of the map.
 
 Refer to the code given below:
 
-```
-
+```json
 {
     "chart": {
         "caption": "Global Population",
@@ -40,91 +36,75 @@ Refer to the code given below:
         {
             "internalId": "NA",
             "newId": "NAM"
-        },
-        {
+        }, {
             "internalId": "SA",
             "newId": "SAM"
-        },
-        {
+        }, {
             "internalId": "EU",
             "newId": "EUR"
-        },
-        {
+        }, {
             "internalId": "AS",
             "newId": "ASI"
-        },
-        {
+        }, {
             "internalId": "AF",
             "newId": "AFR"
-        },
-        {
+        }, {
             "internalId": "AU",
             "newId": "AUS"
         }
     ],
     "colorrange": {
-        "color": [
-            {
-                "minvalue": "0",
-                "maxvalue": "100",
-                "code": "#D1D9C5",
-                "displayValue": "< 100M"
-            },
-            {
-                "minvalue": "100",
-                "maxvalue": "500",
-                "code": "#C9DEA9",
-                "displayValue": "100-500M"
-            },
-            {
-                "minvalue": "500",
-                "maxvalue": "1000",
-                "code": "#91AF64",
-                "displayValue": "500M-1B"
-            },
-            {
-                "minvalue": "1000",
-                "maxvalue": "5000",
-                "code": "#5A9502",
-                "displayValue": "> 1B"
-            }
-        ]
+        "color": [{
+            "minvalue": "0",
+            "maxvalue": "100",
+            "code": "#D1D9C5",
+            "displayValue": "< 100M"
+        }, {
+            "minvalue": "100",
+            "maxvalue": "500",
+            "code": "#C9DEA9",
+            "displayValue": "100-500M"
+        }, {
+            "minvalue": "500",
+            "maxvalue": "1000",
+            "code": "#91AF64",
+            "displayValue": "500M-1B"
+        }, {
+            "minvalue": "1000",
+            "maxvalue": "5000",
+            "code": "#5A9502",
+            "displayValue": "> 1B"
+        }]
     },
-    "data": [
-        {
-            "id": "NAM",
-            "value": "515"
-        },
-        {
-            "id": "SAM",
-            "value": "373"
-        },
-        {
-            "id": "ASI",
-            "value": "3875"
-        },
-        {
-            "id": "EUR",
-            "value": "727"
-        },
-        {
-            "id": "AFR",
-            "value": "885"
-        },
-        {
-            "id": "AUS",
-            "value": "32"
-        }
-    ]
+    "data": [{
+        "id": "NAM",
+        "value": "515"
+    }, {
+        "id": "SAM",
+        "value": "373"
+    }, {
+        "id": "ASI",
+        "value": "3875"
+    }, {
+        "id": "EUR",
+        "value": "727"
+    }, {
+        "id": "AFR",
+        "value": "885"
+    }, {
+        "id": "AUS",
+        "value": "32"
+    }]
 }
-
 ```
 
 The map will look as shown below:
 
-<map>
+{% embed_chart map-guide-custom-entity-ids-example-1.js %}
 
-> Note: When defining new IDs for different entities on the map, ensure that you're referring to the right original internal ID. Also ensure that the entity IDs you redefine are unique.
+Click [here](http://jsfiddle.net/fusioncharts/9vqsaec4/ "@@open-newtab") to edit the above map.
+
+> When defining new IDs for different entities on the map, ensure that you're referring to the right original internal ID. Also ensure that the entity IDs you redefine are unique.
 
 To build the map shown above, do the following in the HTML code:
 
@@ -137,103 +117,3 @@ To build the map shown above, do the following in the HTML code:
 * Use the `colorrange` object to define progressive coloring associated with a numeric data range.
 
 * Specify the tabular data within the data array, referenced by the newly defined `newID`.
-
-Refer to the code given below:
-
-```
-
-<html>
-<head>
-    <title>A Data Driven Map</title>
-    <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
-<script>
-FusionCharts.ready(function() {
-    var populationMap = new FusionCharts({
-        type: 'maps/world',
-        renderAt: 'chart-container',
-        width: '600',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
-                "caption": "Global Population",
-                "theme": "fint",
-                "formatNumberScale": "0",
-                "numberSuffix": "M",
-                "showLabels": "1",
-                "useSNameInToolTip": "1",
-                "useSNameInLabels": "1"
-            },
-            "entityDef": [{
-                "internalId": "NA",
-                "newId": "NAM"
-            }, {
-                "internalId": "SA",
-                "newId": "SAM"
-            }, {
-                "internalId": "EU",
-                "newId": "EUR"
-            }, {
-                "internalId": "AS",
-                "newId": "ASI"
-            }, {
-                "internalId": "AF",
-                "newId": "AFR"
-            }, {
-                "internalId": "AU",
-                "newId": "AUS"
-            }],
-            "colorrange": {
-                "color": [{
-                    "minvalue": "0",
-                    "maxvalue": "100",
-                    "code": "#D0DFA3",
-                    "displayValue": "< 100M"
-                }, {
-                    "minvalue": "100",
-                    "maxvalue": "500",
-                    "code": "#B0BF92",
-                    "displayValue": "100-500M"
-                }, {
-                    "minvalue": "500",
-                    "maxvalue": "1000",
-                    "code": "#91AF64",
-                    "displayValue": "500M-1B"
-                }, {
-                    "minvalue": "1000",
-                    "maxvalue": "5000",
-                    "code": "#A9FF8D",
-                    "displayValue": "> 1B"
-                }]
-            },
-            "data": [{
-                "id": "NAM",
-                "value": "515"
-            }, {
-                "id": "SAM",
-                "value": "373"
-            }, {
-                "id": "ASI",
-                "value": "3875"
-            }, {
-                "id": "EUR",
-                "value": "727"
-            }, {
-                "id": "AFR",
-                "value": "885"
-            }, {
-                "id": "AUS",
-                "value": "32"
-            }]
-        }
-    }).render();
-});
-</script>
-</head>
-<body>
-    <div id="chart-container">A world map will load here!</div>
-</body>
-</html>
-
-```
