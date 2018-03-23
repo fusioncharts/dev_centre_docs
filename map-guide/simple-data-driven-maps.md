@@ -122,143 +122,56 @@ In the final step, you have to create an instance of the map, initialize it with
 Refer to the code below:
 
 ```json
-<script>
-FusionCharts.ready(function() {
-    var populationMap = new FusionCharts({
-        type: 'maps/world',
-        renderAt: 'chart-container',
-        width: '600',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
-                "caption": "Global Population",
-                "theme": "fint",
-                "formatNumberScale": "0",
-                "numberSuffix": "M"
-            },
-            "colorrange": {
-                "color": [{
-                    "minvalue": "0",
-                    "maxvalue": "100",
-                    "code": "#E0F0E0",
-                    "displayValue": "Below 100M"
-                }, {
-                    "minvalue": "100",
-                    "maxvalue": "500",
-                    "code": "#D0DFA3",
-                    "displayValue": "100-500M"
-                }, {
-                    "minvalue": "500",
-                    "maxvalue": "1000",
-                    "code": "#B0BF92",
-                    "displayValue": "500-1000M"
-                }, {
-                    "minvalue": "1000",
-                    "maxvalue": "5000",
-                    "code": "#91AF64",
-                    "displayValue": "Above 1B"
-                }]
-            },
-            "data": [{
-                "id": "NA",
-                "value": "515"
-            }, {
-                "id": "SA",
-                "value": "373"
-            }, {
-                "id": "AS",
-                "value": "3875"
-            }, {
-                "id": "EU",
-                "value": "727"
-            }, {
-                "id": "AF",
-                "value": "885"
-            }, {
-                "id": "AU",
-                "value": "32"
-            }]
-        }
-    }).render();
-});
-</script>
-```
-
-Refer to the full HTML code for the map, given below:
-
-```json
-<html>
-    <head>
-        <title>A Data Driven Map</title>
-        <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
-        <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
-    <script>
-    FusionCharts.ready(function () {
-        var populationMap = new FusionCharts({
-            type: 'maps/world',
-            renderAt: 'chart-container',
-            width: '600',
-            height: '400',
-            dataFormat: 'json',
-            dataSource: {
-                    "chart": {
-                    "caption": "Global Population",
-                    "theme": "fint",
-                    "formatNumberScale":"0",
-                    "numberSuffix":"M"
-                },
-                "colorrange": {
-                    "color": [{
-                        "minvalue": "0",
-                        "maxvalue": "100",
-                        "code": "#E0F0E0",
-                        "displayValue" : "Below 100M"
-                    }, {
-                        "minvalue": "100",
-                        "maxvalue": "500",
-                        "code": "#D0DFA3",
-                        "displayValue" : "100-500M"
-                    }, {
-                        "minvalue": "500",
-                        "maxvalue": "1000",
-                        "code": "#B0BF92",
-                        "displayValue" : "500-1000M"
-                    }, {
-                        "minvalue": "1000",
-                        "maxvalue": "5000",
-                        "code": "#91AF64",
-                        "displayValue" : "Above 1B"
-                    }]
-                },
-                "data": [{
-                    "id": "NA",
-                    "value": "515"
-                }, {
-                    "id": "SA",
-                    "value": "373"
-                }, {
-                    "id": "AS",
-                    "value": "3875"
-                }, {
-                    "id": "EU",
-                    "value": "727"
-                }, {
-                    "id": "AF",
-                    "value": "885"
-                }, {
-                    "id": "AU",
-                    "value": "32"
-                }]
-            }
-        }).render();
-    });
-    </script>
-    </head>
-    <body>
-    <div id="chart-container">A world map will load here!</div>
-    </body>
-</html>
+{
+    "chart": {
+        "caption": "Global Population",
+        "theme": "fint",
+        "formatNumberScale": "0",
+        "numberSuffix": "M"
+    },
+    "colorrange": {
+        "color": [{
+            "minvalue": "0",
+            "maxvalue": "100",
+            "code": "#E0F0E0",
+            "displayValue": "Below 100M"
+        }, {
+            "minvalue": "100",
+            "maxvalue": "500",
+            "code": "#D0DFA3",
+            "displayValue": "100-500M"
+        }, {
+            "minvalue": "500",
+            "maxvalue": "1000",
+            "code": "#B0BF92",
+            "displayValue": "500-1000M"
+        }, {
+            "minvalue": "1000",
+            "maxvalue": "5000",
+            "code": "#91AF64",
+            "displayValue": "Above 1B"
+        }]
+    },
+    "data": [{
+        "id": "NA",
+        "value": "515"
+    }, {
+        "id": "SA",
+        "value": "373"
+    }, {
+        "id": "AS",
+        "value": "3875"
+    }, {
+        "id": "EU",
+        "value": "727"
+    }, {
+        "id": "AF",
+        "value": "885"
+    }, {
+        "id": "AU",
+        "value": "32"
+    }]
+}
 ```
 
 ## Troubleshoot your map
