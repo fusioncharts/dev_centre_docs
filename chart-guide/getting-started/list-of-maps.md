@@ -809,69 +809,69 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-Dolnoslaskie|maps/dolnoslaskie|
-Kujawsko-Pomorskie|maps/kujawskopomorskie|
-Lodzkie|maps/lodzkie|
-Lubelskie|maps/lubelskie|
-Lubuskie|maps/lubuskie|
-Malopolskie|maps/malopolskie|
-Mazowieckie|maps/mazowieckie|
-Opolskie|maps/opolskie|
-Podkarpackie|maps/podkarpackie|
-Podlaskie|maps/podlaskie|
-Pomorskie|maps/pomorskie|
-Slaskie|maps/slaskie|
-Swietokrzyskie|maps/swietokrzyskie|
-Warminsko-Mazurskie|maps/warminskomazurskie|
-Wielkopolskie|maps/wielkopolskie|
-Zachodniopomorskie|maps/zachodniopomorskie|
+[Dolnoslaskie]({% site.baseurl %}/maps/spec-sheets/dolnoslaskie "@@soft-reload")|maps/dolnoslaskie|
+[Kujawsko-Pomorskie]({% site.baseurl %}/maps/spec-sheets/kujawskopomorskie "@@soft-reload")|maps/kujawskopomorskie|
+[Lodzkie]({% site.baseurl %}/maps/spec-sheets/lodzkie "@@soft-reload")|maps/lodzkie|
+[Lubelskie]({% site.baseurl %}/maps/spec-sheets/lubelskie "@@soft-reload")|maps/lubelskie|
+[Lubuskie]({% site.baseurl %}/maps/spec-sheets/lubuskie "@@soft-reload")|maps/lubuskie|
+[Malopolskie]({% site.baseurl %}/maps/spec-sheets/malopolskie "@@soft-reload")|maps/malopolskie|
+[Mazowieckie]({% site.baseurl %}/maps/spec-sheets/mazowieckie "@@soft-reload")|maps/mazowieckie|
+[Opolskie]({% site.baseurl %}/maps/spec-sheets/opolskie "@@soft-reload")|maps/opolskie|
+[Podkarpackie]({% site.baseurl %}/maps/spec-sheets/podkarpackie "@@soft-reload")|maps/podkarpackie|
+[Podlaskie]({% site.baseurl %}/maps/spec-sheets/podlaskie "@@soft-reload")|maps/podlaskie|
+[Pomorskie]({% site.baseurl %}/maps/spec-sheets/pomorskie "@@soft-reload")|maps/pomorskie|
+[Slaskie]({% site.baseurl %}/maps/spec-sheets/slaskie "@@soft-reload")|maps/slaskie|
+[Swietokrzyskie]({% site.baseurl %}/maps/spec-sheets/swietokrzyskie "@@soft-reload")|maps/swietokrzyskie|
+[Warminsko-Mazurskie]({% site.baseurl %}/maps/spec-sheets/warminskomazurskie "@@soft-reload")|maps/warminskomazurskie|
+[Wielkopolskie]({% site.baseurl %}/maps/spec-sheets/wielkopolskie "@@soft-reload")|maps/wielkopolskie|
+[Zachodniopomorskie]({% site.baseurl %}/maps/spec-sheets/zachodniopomorskie "@@soft-reload")|maps/zachodniopomorskie|
 
 ### Norway (Regions)
 
 Chart Type|JavaScript Alias|
 -|-
-Eastern Norway|maps/easternnorway|
-Northern Norway|maps/northernnorway|
-Southern Norway|maps/southernnorway|
-Trondelag|maps/trondelag|
-Western Norway|maps/westernnorway|
+[Eastern Norway]({% site.baseurl %}/maps/spec-sheets/easternnorway "@@soft-reload")|maps/easternnorway|
+[Northern Norway]({% site.baseurl %}/maps/spec-sheets/northernnorway "@@soft-reload")|maps/northernnorway|
+[Southern Norway]({% site.baseurl %}/maps/spec-sheets/southernnorway "@@soft-reload")|maps/southernnorway|
+[Trondelag]({% site.baseurl %}/maps/spec-sheets/trondelag "@@soft-reload")|maps/trondelag|
+[Western Norway]({% site.baseurl %}/maps/spec-sheets/westernnorway "@@soft-reload")|maps/westernnorway|
 
 ### Norway (Countries)
 
 Chart Type|JavaScript Alias|
 -|-
-Akershus|maps/akershus|
-Aust-Agder|maps/austagder|
-Buskerud|maps/buskerud|
-Finnmark|maps/finnmark|
-Hedmark|maps/hedmark|
-Hordaland|maps/hordaland|
-More og Romsdal|maps/moreogromsdal|
-Nord-Trondelag|maps/nordtrondelag|
-Nordland|maps/nordland|
-Oppland|maps/oppland|
-Oslo|maps/oslo|
-Rogaland|maps/rogaland|
-Sogn og Fjordane|maps/sognogfjordane|
-Sor-Trondelag|maps/sortrondelag|
-Telemark|maps/telemark|
-Troms|maps/troms|
-Vest-Agder|maps/vestagder|
-Vestfold|maps/vestfold|
-Ostfold|maps/ostfold|
+[Akershus]({% site.baseurl %}/maps/spec-sheets/akershus "@@soft-reload")|maps/akershus|
+[Aust-Agder]({% site.baseurl %}/maps/spec-sheets/austagder "@@soft-reload")|maps/austagder|
+[Buskerud]({% site.baseurl %}/maps/spec-sheets/buskerud "@@soft-reload")|maps/buskerud|
+[Finnmark]({% site.baseurl %}/maps/spec-sheets/finnmark "@@soft-reload")|maps/finnmark|
+[Hedmark]({% site.baseurl %}/maps/spec-sheets/hedmark "@@soft-reload")|maps/hedmark|
+[Hordaland]({% site.baseurl %}/maps/spec-sheets/hordaland "@@soft-reload")|maps/hordaland|
+[More og Romsdal]({% site.baseurl %}/maps/spec-sheets/moreogromsdal "@@soft-reload")|maps/moreogromsdal|
+[Nord-Trondelag]({% site.baseurl %}/maps/spec-sheets/nordtrondelag "@@soft-reload")|maps/nordtrondelag|
+[Nordland]({% site.baseurl %}/maps/spec-sheets/nordland "@@soft-reload")|maps/nordland|
+[Oppland]({% site.baseurl %}/maps/spec-sheets/oppland "@@soft-reload")|maps/oppland|
+[Oslo]({% site.baseurl %}/maps/spec-sheets/oslo "@@soft-reload")|maps/oslo|
+[Rogaland]({% site.baseurl %}/maps/spec-sheets/rogaland "@@soft-reload")|maps/rogaland|
+[Sogn og Fjordane]({% site.baseurl %}/maps/spec-sheets/sognogfjordane "@@soft-reload")|maps/sognogfjordane|
+[Sor-Trondelag]({% site.baseurl %}/maps/spec-sheets/sortrondelag "@@soft-reload")|maps/sortrondelag|
+[Telemark]({% site.baseurl %}/maps/spec-sheets/telemark "@@soft-reload")|maps/telemark|
+[Troms]({% site.baseurl %}/maps/spec-sheets/troms "@@soft-reload")|maps/troms|
+[Vest-Agder]({% site.baseurl %}/maps/spec-sheets/vestagder "@@soft-reload")|maps/vestagder|
+[Vestfold]({% site.baseurl %}/maps/spec-sheets/vestfold "@@soft-reload")|maps/vestfold|
+[Ostfold]({% site.baseurl %}/maps/spec-sheets/ostfold "@@soft-reload")|maps/ostfold|
 
 ### Slovakia (Regions)
 
 Chart Type|JavaScript Alias|
 -|-
-Banska Bystrica|maps/banskabystrica|
-Bratislava|maps/bratislava|
-Kosice|maps/kosice|
-Nitra|maps/nitra|
-Presov|maps/presov|
-Trencin|maps/trencin|
-Trnava|maps/trnava|
-Zilina|maps/zilina|
+[Banska Bystrica]({% site.baseurl %}/maps/spec-sheets/banskabystrica "@@soft-reload")|maps/banskabystrica|
+[Bratislava]({% site.baseurl %}/maps/spec-sheets/bratislava "@@soft-reload")|maps/bratislava|
+[Kosice]({% site.baseurl %}/maps/spec-sheets/kosice "@@soft-reload")|maps/kosice|
+[Nitra]({% site.baseurl %}/maps/spec-sheets/nitra "@@soft-reload")|maps/nitra|
+[Presov]({% site.baseurl %}/maps/spec-sheets/presov "@@soft-reload")|maps/presov|
+[Trencin]({% site.baseurl %}/maps/spec-sheets/trencin "@@soft-reload")|maps/trencin|
+[Trnava]({% site.baseurl %}/maps/spec-sheets/trnava "@@soft-reload")|maps/trnava|
+[Zilina]({% site.baseurl %}/maps/spec-sheets/zilina "@@soft-reload")|maps/zilina|
 
 ## Americas
 
@@ -879,70 +879,70 @@ Zilina|maps/zilina|
 
 Chart Type|JavaScript Alias|
 -|-
-Aguascalientes|maps/aguascalientes|
-Baja California|maps/bajacalifornia|
-Baja California Sur|maps/bajacaliforniasur|
-Campeche|maps/campeche|
-Colima|maps/colima|
-Mexico Distrito Federal|maps/mexicodistritofederal|
-Guanajuato|maps/guanajuato|
-Nayarit|maps/nayarit|
-Queretaro de Arteaga|maps/queretarodearteaga|
-Quintana Roo|maps/quintanaroo|
-Sonora|maps/sonora|
-Tamaulipas|maps/tamaulipas|
-Zacatecas|maps/zacatecas|
+[Aguascalientes]({% site.baseurl %}/maps/spec-sheets/aguascalientes "@@soft-reload")|maps/aguascalientes|
+[Baja California]({% site.baseurl %}/maps/spec-sheets/bajacalifornia "@@soft-reload")|maps/bajacalifornia|
+[Baja California Sur]({% site.baseurl %}/maps/spec-sheets/bajacaliforniasur "@@soft-reload")|maps/bajacaliforniasur|
+[Campeche]({% site.baseurl %}/maps/spec-sheets/campeche "@@soft-reload")|maps/campeche|
+[Colima]({% site.baseurl %}/maps/spec-sheets/colima "@@soft-reload")|maps/colima|
+[Mexico Distrito Federal]({% site.baseurl %}/maps/spec-sheets/mexicodistritofederal "@@soft-reload")|maps/mexicodistritofederal|
+[Guanajuato]({% site.baseurl %}/maps/spec-sheets/guanajuato "@@soft-reload")|maps/guanajuato|
+[Nayarit]({% site.baseurl %}/maps/spec-sheets/nayarit "@@soft-reload")|maps/nayarit|
+[Queretaro de Arteaga]({% site.baseurl %}/maps/spec-sheets/queretarodearteaga "@@soft-reload")|maps/queretarodearteaga|
+[Quintana Roo]({% site.baseurl %}/maps/spec-sheets/quintanaroo "@@soft-reload")|maps/quintanaroo|
+[Sonora]({% site.baseurl %}/maps/spec-sheets/sonora "@@soft-reload")|maps/sonora|
+[Tamaulipas]({% site.baseurl %}/maps/spec-sheets/tamaulipas "@@soft-reload")|maps/tamaulipas|
+[Zacatecas]({% site.baseurl %}/maps/spec-sheets/zacatecas "@@soft-reload")|maps/zacatecas|
 
 ### Brazil (States)
 
 Chart Type|JavaScript Alias|
 -|-
-Acre|maps/acre|
-Alagoas|maps/alagoas|
-Amapa|maps/amapa|
-Amazonas|maps/amazonas|
-Bahia|maps/bahia|
-Ceara|maps/ceara|
-Distrito Federal|maps/distritofederal|
-Espirito Santo|maps/espiritosanto|
-Goias|maps/goias|
-Maranhao|maps/maranhao|
-Mato Grosso|maps/matogrosso|
-Mato Grossodo Sul|maps/matogrossodosul|
-Minas Gerais|maps/minasgerais|
-Para|maps/para|
-Paraiba|maps/paraiba|
-Parana|maps/parana|
-Pernambuco|maps/pernambuco|
-Piaui|maps/piaui|
-Rio de Janeiro|maps/riodejaneiro|
-Rio Grande do Norte|maps/riograndedonorte|
-Rio Grande do Sul|maps/riograndedosul|
-Rondonia|maps/rondonia|
-Roraima|maps/roraima|
-Sao Paulo|maps/saopaulo|
-Santa Catarina|maps/santacatarina|
-Sergipe|maps/sergipe|
-Tocantins|maps/tocantins|
+[Acre]({% site.baseurl %}/maps/spec-sheets/acre "@@soft-reload")|maps/acre|
+[Alagoas]({% site.baseurl %}/maps/spec-sheets/alagoas "@@soft-reload")|maps/alagoas|
+[Amapa]({% site.baseurl %}/maps/spec-sheets/amapa "@@soft-reload")|maps/amapa|
+[Amazonas]({% site.baseurl %}/maps/spec-sheets/amazonas "@@soft-reload")|maps/amazonas|
+[Bahia]({% site.baseurl %}/maps/spec-sheets/bahia "@@soft-reload")|maps/bahia|
+[Ceara]({% site.baseurl %}/maps/spec-sheets/ceara "@@soft-reload")|maps/ceara|
+[Distrito Federal]({% site.baseurl %}/maps/spec-sheets/distritofederal "@@soft-reload")|maps/distritofederal|
+[Espirito Santo]({% site.baseurl %}/maps/spec-sheets/espiritosanto "@@soft-reload")|maps/espiritosanto|
+[Goias]({% site.baseurl %}/maps/spec-sheets/goias "@@soft-reload")|maps/goias|
+[Maranhao]({% site.baseurl %}/maps/spec-sheets/maranhao "@@soft-reload")|maps/maranhao|
+[Mato Grosso]({% site.baseurl %}/maps/spec-sheets/matogrosso "@@soft-reload")|maps/matogrosso|
+[Mato Grossodo Sul]({% site.baseurl %}/maps/spec-sheets/matogrossodosul "@@soft-reload")|maps/matogrossodosul|
+[Minas Gerais]({% site.baseurl %}/maps/spec-sheets/minasgerais "@@soft-reload")|maps/minasgerais|
+[Para]({% site.baseurl %}/maps/spec-sheets/para "@@soft-reload")|maps/para|
+[Paraiba]({% site.baseurl %}/maps/spec-sheets/paraiba "@@soft-reload")|maps/paraiba|
+[Parana]({% site.baseurl %}/maps/spec-sheets/parana "@@soft-reload")|maps/parana|
+[Pernambuco]({% site.baseurl %}/maps/spec-sheets/pernambuco "@@soft-reload")|maps/pernambuco|
+[Piaui]({% site.baseurl %}/maps/spec-sheets/piaui "@@soft-reload")|maps/piaui|
+[Rio de Janeiro]({% site.baseurl %}/maps/spec-sheets/riodejaneiro "@@soft-reload")|maps/riodejaneiro|
+[Rio Grande do Norte]({% site.baseurl %}/maps/spec-sheets/riograndedonorte "@@soft-reload")|maps/riograndedonorte|
+[Rio Grande do Sul]({% site.baseurl %}/maps/spec-sheets/riograndedosul "@@soft-reload")|maps/riograndedosul|
+[Rondonia]({% site.baseurl %}/maps/spec-sheets/rondonia "@@soft-reload")|maps/rondonia|
+[Roraima]({% site.baseurl %}/maps/spec-sheets/roraima "@@soft-reload")|maps/roraima|
+[Sao Paulo]({% site.baseurl %}/maps/spec-sheets/saopaulo "@@soft-reload")|maps/saopaulo|
+[Santa Catarina]({% site.baseurl %}/maps/spec-sheets/santacatarina "@@soft-reload")|maps/santacatarina|
+[Sergipe]({% site.baseurl %}/maps/spec-sheets/sergipe "@@soft-reload")|maps/sergipe|
+[Tocantins]({% site.baseurl %}/maps/spec-sheets/tocantins "@@soft-reload")|maps/tocantins|
 
 ### Caribbeans (Islands)
 
 Chart Type|JavaScript Alias|
 -|-
-Caribbean Regions|maps/caribbeansregion|
-Anguilla|maps/anguilla|
-Aruba|maps/aruba|
-Bonaire|maps/bonaire|
-British Virgin Island|maps/britishvirginisland|
-Curacao|maps/curacao|
-Guadaloupe|maps/guadaloupe|
-Martinique|maps/martinique|
-Montserrat|maps/montserrat|
-fSaint Barthelemy|maps/saintbarthelemy|
-Saint Eustatius|maps/sainteustatius|
-San Martin|maps/saintmartin|
-Turks and Caicos|maps/turksandcaicos|
-US Virgin Island|maps/usvirginisland|
+[Caribbean Regions]({% site.baseurl %}/maps/spec-sheets/caribbeansregion "@@soft-reload")|maps/caribbeansregion|
+[Anguilla]({% site.baseurl %}/maps/spec-sheets/anguilla "@@soft-reload")|maps/anguilla|
+[Aruba]({% site.baseurl %}/maps/spec-sheets/aruba "@@soft-reload")|maps/aruba|
+[Bonaire]({% site.baseurl %}/maps/spec-sheets/bonaire "@@soft-reload")|maps/bonaire|
+[British Virgin Island]({% site.baseurl %}/maps/spec-sheets/britishvirginisland "@@soft-reload")|maps/britishvirginisland|
+[Curacao]({% site.baseurl %}/maps/spec-sheets/curacao "@@soft-reload")|maps/curacao|
+[Guadaloupe]({% site.baseurl %}/maps/spec-sheets/guadaloupe "@@soft-reload")|maps/guadaloupe|
+[Martinique]({% site.baseurl %}/maps/spec-sheets/martinique "@@soft-reload")|maps/martinique|
+[Montserrat]({% site.baseurl %}/maps/spec-sheets/montserrat "@@soft-reload")|maps/montserrat|
+[Saint Barthelemy]({% site.baseurl %}/maps/spec-sheets/saintbarthelemy "@@soft-reload")|maps/saintbarthelemy|
+[Saint Eustatius]({% site.baseurl %}/maps/spec-sheets/sainteustatius "@@soft-reload")|maps/sainteustatius|
+[San Martin]({% site.baseurl %}/maps/spec-sheets/saintmartin "@@soft-reload")|maps/saintmartin|
+[Turks and Caicos]({% site.baseurl %}/maps/spec-sheets/turksandcaicos "@@soft-reload")|maps/turksandcaicos|
+[US Virgin Island]({% site.baseurl %}/maps/spec-sheets/usvirginisland "@@soft-reload")|maps/usvirginisland|
 
 ## Asia
 
@@ -950,42 +950,42 @@ US Virgin Island|maps/usvirginisland|
 
 Chart Type|JavaScript Alias|
 -|-
-Andaman and Nicobar|maps/andamanandnicobar|
-Andhra Pradesh|maps/andhrapradesh|
-Arunachal Pradesh|maps/arunachalpradesh|
-Assam|maps/assam|
-Bihar|maps/bihar|
-Chandigarh|maps/chandigarh|
-Chattisgarh|maps/chattisgarh|
-Dadra and Nagar Haveli|maps/dadraandnagarhaveli|
-Daman and Diu|maps/damananddiu|
-Delhi|maps/delhi|
-Goa|maps/goa|
-Gujarat|maps/gujarat|
-Haryana|maps/haryana|
-Himachal Pradesh|maps/himachalpradesh|
-Jammu and Kashmir|maps/jammuandkashmir|
-Jharkhand|maps/jharkhand|
-Karnataka|maps/karnataka|
-Kerala|maps/kerala|
-Lakshadweep|maps/lakshadweep|
-Madhya Pradesh|maps/madhyapradesh|
-Maharashtra|maps/maharashtra|
-Manipur|maps/manipur|
-Meghalaya|maps/meghalaya|
-Mizoram|maps/mizoram|
-Nagaland|maps/nagaland|
-Odisha|maps/odisha|
-Puducherry|maps/puducherry|
-Punjab|maps/punjab|
-Rajasthan|maps/rajasthan|
-Sikkim|maps/sikkim|
-Tamil Nadu|maps/tamilnadu|
-Telangana|maps/telangana|
-Tripura|maps/tripura|
-Uttarakhand|maps/uttarakhand|
-Uttar Pradesh|maps/uttarpradesh|
-West Bengal|maps/westbengal|
+[Andaman and Nicobar]({% site.baseurl %}/maps/spec-sheets/andamanandnicobar "@@soft-reload")|maps/andamanandnicobar|
+[Andhra Pradesh]({% site.baseurl %}/maps/spec-sheets/andhrapradesh "@@soft-reload")|maps/andhrapradesh|
+[Arunachal Pradesh]({% site.baseurl %}/maps/spec-sheets/arunachalpradesh "@@soft-reload")|maps/arunachalpradesh|
+[Assam]({% site.baseurl %}/maps/spec-sheets/assam "@@soft-reload")|maps/assam|
+[Bihar]({% site.baseurl %}/maps/spec-sheets/bihar "@@soft-reload")|maps/bihar|
+[Chandigarh]({% site.baseurl %}/maps/spec-sheets/chandigarh "@@soft-reload")|maps/chandigarh|
+[Chattisgarh]({% site.baseurl %}/maps/spec-sheets/assam "@@soft-reload")|maps/chattisgarh|
+[Dadra and Nagar Haveli]({% site.baseurl %}/maps/spec-sheets/assam "@@soft-reload")|maps/dadraandnagarhaveli|
+[Daman and Diu]({% site.baseurl %}/maps/spec-sheets/damananddiu "@@soft-reload")|maps/damananddiu|
+[Delhi]({% site.baseurl %}/maps/spec-sheets/delhi "@@soft-reload")|maps/delhi|
+[Goa]({% site.baseurl %}/maps/spec-sheets/goa "@@soft-reload")|maps/goa|
+[Gujarat]({% site.baseurl %}/maps/spec-sheets/gujarat "@@soft-reload")|maps/gujarat|
+[Haryana]({% site.baseurl %}/maps/spec-sheets/haryana "@@soft-reload")|maps/haryana|
+[Himachal Pradesh]({% site.baseurl %}/maps/spec-sheets/himachalpradesh "@@soft-reload")|maps/himachalpradesh|
+[Jammu and Kashmir]({% site.baseurl %}/maps/spec-sheets/jammuandkashmir "@@soft-reload")|maps/jammuandkashmir|
+[Jharkhand]({% site.baseurl %}/maps/spec-sheets/jharkhand "@@soft-reload")|maps/jharkhand|
+[Karnataka]({% site.baseurl %}/maps/spec-sheets/karnataka "@@soft-reload")|maps/karnataka|
+[Kerala]({% site.baseurl %}/maps/spec-sheets/kerala "@@soft-reload")|maps/kerala|
+[Lakshadweep]({% site.baseurl %}/maps/spec-sheets/lakshadweep "@@soft-reload")|maps/lakshadweep|
+[Madhya Pradesh]({% site.baseurl %}/maps/spec-sheets/madhyapradesh "@@soft-reload")|maps/madhyapradesh|
+[Maharashtra]({% site.baseurl %}/maps/spec-sheets/maharashtra "@@soft-reload")|maps/maharashtra|
+[Manipur]({% site.baseurl %}/maps/spec-sheets/manipur "@@soft-reload")|maps/manipur|
+[Meghalaya]({% site.baseurl %}/maps/spec-sheets/meghalaya "@@soft-reload")|maps/meghalaya|
+[Mizoram]({% site.baseurl %}/maps/spec-sheets/mizoram "@@soft-reload")|maps/mizoram|
+[Nagaland]({% site.baseurl %}/maps/spec-sheets/nagaland "@@soft-reload")|maps/nagaland|
+[Odisha]({% site.baseurl %}/maps/spec-sheets/odisha "@@soft-reload")|maps/odisha|
+[Puducherry]({% site.baseurl %}/maps/spec-sheets/puducherry "@@soft-reload")|maps/puducherry|
+[Punjab]({% site.baseurl %}/maps/spec-sheets/punjab "@@soft-reload")|maps/punjab|
+[Rajasthan]({% site.baseurl %}/maps/spec-sheets/rajasthan "@@soft-reload")|maps/rajasthan|
+[Sikkim]({% site.baseurl %}/maps/spec-sheets/sikkim "@@soft-reload")|maps/sikkim|
+[Tamil Nadu]({% site.baseurl %}/maps/spec-sheets/tamilnadu "@@soft-reload")|maps/tamilnadu|
+[Telangana]({% site.baseurl %}/maps/spec-sheets/telangana "@@soft-reload")|maps/telangana|
+[Tripura]({% site.baseurl %}/maps/spec-sheets/tripura "@@soft-reload")|maps/tripura|
+[Uttarakhand]({% site.baseurl %}/maps/spec-sheets/uttarakhand "@@soft-reload")|maps/uttarakhand|
+[Uttar Pradesh]({% site.baseurl %}/maps/spec-sheets/uttarpradesh "@@soft-reload")|maps/uttarpradesh|
+[West Bengal]({% site.baseurl %}/maps/spec-sheets/westbengal "@@soft-reload")|maps/westbengal|
 
 ## Asia (Regions)
 
