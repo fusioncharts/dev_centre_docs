@@ -1103,28 +1103,28 @@ Chart Type|JavaScript Alias|
 [Hyogo]({% site.baseurl %}/maps/spec-sheets/hyogo "@@soft-reload")|maps/hyogo|
 [Osaka]({% site.baseurl %}/maps/spec-sheets/osaka "@@soft-reload")|maps/osaka|
 [Shiga]({% site.baseurl %}/maps/spec-sheets/shiga "@@soft-reload")|maps/shiga|
-Mie|maps/mie|
-Aichi|maps/aichi|
-Shizuoka|maps/shizuoka|
-Gifu|maps/gifu|
-Nagano|maps/nagano|
-Yamanashi|maps/yamanashi|
-Fukui|maps/fukui|
-Toyama|maps/toyama|
-Niigata|maps/niigata|
-Kanagawa|maps/kanagawa|
-Tokyo|maps/tokyo|
-Chiba|maps/chiba|
-Saitama|maps/saitama|
-Gunma|maps/gunma|
-Tochigi|maps/tochigi|
-Ibaraki|maps/ibaraki|
-Fukushima|maps/fukushima|
-Yamagata|maps/yamagata|
-Akita|maps/akita|
-Miyagi|maps/miyagi|
-Iwate|maps/iwate|
-Aomori|maps/aomori|
+[Mie]({% site.baseurl %}/maps/spec-sheets/mie "@@soft-reload")|maps/mie|
+[Aichi]({% site.baseurl %}/maps/spec-sheets/aichi "@@soft-reload")|maps/aichi|
+[Shizuoka]({% site.baseurl %}/maps/spec-sheets/shizuoka "@@soft-reload")|maps/shizuoka|
+[Gifu]({% site.baseurl %}/maps/spec-sheets/gifu "@@soft-reload")|maps/gifu|
+[Nagano]({% site.baseurl %}/maps/spec-sheets/nagano "@@soft-reload")|maps/nagano|
+[Yamanashi]({% site.baseurl %}/maps/spec-sheets/yamanashi "@@soft-reload")|maps/yamanashi|
+[Fukui]({% site.baseurl %}/maps/spec-sheets/fukui "@@soft-reload")|maps/fukui|
+[Toyama]({% site.baseurl %}/maps/spec-sheets/toyama "@@soft-reload")|maps/toyama|
+[Niigata]({% site.baseurl %}/maps/spec-sheets/niigata "@@soft-reload")|maps/niigata|
+[Kanagawa]({% site.baseurl %}/maps/spec-sheets/kanagawa "@@soft-reload")|maps/kanagawa|
+[Tokyo]({% site.baseurl %}/maps/spec-sheets/tokyo "@@soft-reload")|maps/tokyo|
+[Chiba]({% site.baseurl %}/maps/spec-sheets/chiba "@@soft-reload")|maps/chiba|
+[Saitama]({% site.baseurl %}/maps/spec-sheets/saitama "@@soft-reload")|maps/saitama|
+[Gunma]({% site.baseurl %}/maps/spec-sheets/gunma "@@soft-reload")|maps/gunma|
+[Tochigi]({% site.baseurl %}/maps/spec-sheets/tochigi "@@soft-reload")|maps/tochigi|
+[Ibaraki]({% site.baseurl %}/maps/spec-sheets/ibaraki "@@soft-reload")|maps/ibaraki|
+[Fukushima]({% site.baseurl %}/maps/spec-sheets/fukushima "@@soft-reload")|maps/fukushima|
+[Yamagata]({% site.baseurl %}/maps/spec-sheets/yamagata "@@soft-reload")|maps/yamagata|
+[Akita]({% site.baseurl %}/maps/spec-sheets/akita "@@soft-reload")|maps/akita|
+[Miyagi]({% site.baseurl %}/maps/spec-sheets/miyagi "@@soft-reload")|maps/miyagi|
+[Iwate]({% site.baseurl %}/maps/spec-sheets/iwate "@@soft-reload")|maps/iwate|
+[Aomori]({% site.baseurl %}/maps/spec-sheets/aomori "@@soft-reload")|maps/aomori|
 
 ## Africa
 
@@ -1132,46 +1132,46 @@ Aomori|maps/aomori|
 
 Chart Type|JavaScript Alias|
 -|-
-Africa (All Regions)|maps/africaregion|
-Eastern Africa|maps/easternafrica|
-Central Africa|maps/centralafrica|
-Northern Africa|maps/northernafrica|
-Southern Africa|maps/southernafrica|
-Western Africa|maps/westernafrica|
+[Africa (All Regions)]({% site.baseurl %}/maps/spec-sheets/africaregion "@@soft-reload")|maps/africaregion|
+[Eastern Africa]({% site.baseurl %}/maps/spec-sheets/easternafrica "@@soft-reload")|maps/easternafrica|
+[Central Africa]({% site.baseurl %}/maps/spec-sheets/centralafrica "@@soft-reload")|maps/centralafrica|
+[Northern Africa]({% site.baseurl %}/maps/spec-sheets/northernafrica "@@soft-reload")|maps/northernafrica|
+[Southern Africa]({% site.baseurl %}/maps/spec-sheets/southernafrica "@@soft-reload")|maps/southernafrica|
+[Western Africa]({% site.baseurl %}/maps/spec-sheets/westernafrica "@@soft-reload")|maps/westernafrica|
 
 ### Egypt Maps
 
 Chart Type|JavaScript Alias|
 -|-
-6th October|maps/sixoctober|
-Al-minya|maps/alminya|
-Asyut|maps/asyut|
-Aswan|maps/aswan|
-Alexandria|maps/alexandria|
-Bahera|maps/bahera|
-Bani-swaif|maps/baniswaif|
-Cairo|maps/cairo|
-Daqahliya|maps/daqahliya|
-Domyat|maps/domyat|
-Fayoum|maps/fayoum|
-Gharbiya|maps/gharbiya|
-Giza|maps/giza|
-Helwan|maps/helwan|
-Ismailia|maps/ismailia|
-Kafr-Alsheikh|maps/kafralsheikh|
-Luxer|maps/luxer|
-Matrouh|maps/matrouh|
-Monofiya|maps/monofiya|
-North Sinai|maps/northsinai|
-Port Said|maps/portsaid|
-Qalyoubiya|maps/qalyoubiya|
-Qina|maps/qina|
-Red Sea|maps/redsea|
-Al-sharqeyah|maps/alsharqeyah|
-South Sinai|maps/southsinai|
-Suhaj|maps/suhaj|
-Suez|maps/suez|
-Wady Gadid|maps/wadygadid|
+[6th October]({% site.baseurl %}/maps/spec-sheets/sixoctober "@@soft-reload")|maps/sixoctober|
+[Al-minya]({% site.baseurl %}/maps/spec-sheets/alminya "@@soft-reload")|maps/alminya|
+[Asyut]({% site.baseurl %}/maps/spec-sheets/asyut "@@soft-reload")|maps/asyut|
+[Aswan]({% site.baseurl %}/maps/spec-sheets/aswan "@@soft-reload")|maps/aswan|
+[Alexandria]({% site.baseurl %}/maps/spec-sheets/alexandria "@@soft-reload")|maps/alexandria|
+[Bahera]({% site.baseurl %}/maps/spec-sheets/bahera "@@soft-reload")|maps/bahera|
+[Bani-swaif]({% site.baseurl %}/maps/spec-sheets/baniswaif "@@soft-reload")|maps/baniswaif|
+[Cairo]({% site.baseurl %}/maps/spec-sheets/cairo "@@soft-reload")|maps/cairo|
+[Daqahliya]({% site.baseurl %}/maps/spec-sheets/daqahliya "@@soft-reload")|maps/daqahliya|
+[Domyat]({% site.baseurl %}/maps/spec-sheets/domyat "@@soft-reload")|maps/domyat|
+[Fayoum]({% site.baseurl %}/maps/spec-sheets/fayoum "@@soft-reload")|maps/fayoum|
+[Gharbiya]({% site.baseurl %}/maps/spec-sheets/gharbiya "@@soft-reload")|maps/gharbiya|
+[Giza]({% site.baseurl %}/maps/spec-sheets/giza "@@soft-reload")|maps/giza|
+[Helwan]({% site.baseurl %}/maps/spec-sheets/helwan "@@soft-reload")|maps/helwan|
+[Ismailia]({% site.baseurl %}/maps/spec-sheets/ismailia "@@soft-reload")|maps/ismailia|
+[Kafr-Alsheikh]({% site.baseurl %}/maps/spec-sheets/kafralsheikh "@@soft-reload")|maps/kafralsheikh|
+[Luxer]({% site.baseurl %}/maps/spec-sheets/luxer "@@soft-reload")|maps/luxer|
+[Matrouh]({% site.baseurl %}/maps/spec-sheets/matrouh "@@soft-reload")|maps/matrouh|
+[Monofiya]({% site.baseurl %}/maps/spec-sheets/monofiya "@@soft-reload")|maps/monofiya|
+[North Sinai]({% site.baseurl %}/maps/spec-sheets/northsinai "@@soft-reload")|maps/northsinai|
+[Port Said]({% site.baseurl %}/maps/spec-sheets/portsaid "@@soft-reload")|maps/portsaid|
+[Qalyoubiya]({% site.baseurl %}/maps/spec-sheets/qalyoubiya "@@soft-reload")|maps/qalyoubiya|
+[Qina]({% site.baseurl %}/maps/spec-sheets/qina "@@soft-reload")|maps/qina|
+[Red Sea]({% site.baseurl %}/maps/spec-sheets/redsea "@@soft-reload")|maps/redsea|
+[Al-sharqeyah]({% site.baseurl %}/maps/spec-sheets/alsharqeyah "@@soft-reload")|maps/alsharqeyah|
+[South Sinai]({% site.baseurl %}/maps/spec-sheets/southsinai "@@soft-reload")|maps/southsinai|
+[Suhaj]({% site.baseurl %}/maps/spec-sheets/suhaj "@@soft-reload")|maps/suhaj|
+[Suez]({% site.baseurl %}/maps/spec-sheets/suez "@@soft-reload")|maps/suez|
+[Wady Gadid]({% site.baseurl %}/maps/spec-sheets/wadygadid "@@soft-reload")|maps/wadygadid|
 
 ## Oceania
 
@@ -1179,35 +1179,35 @@ Wady Gadid|maps/wadygadid|
 
 Chart Type|JavaScript Alias|
 -|-
-New South Wales (NSW)|maps/newsouthwales|
-Victoria (VIC)|maps/victoria|
-Northern Territory (NT)|maps/northernterritory|
-Western Australia (WA)|maps/westernaustralia|
-Queensland (QLD)|maps/queensland|
-Tasmania (TAS)|maps/tasmania|
-South Australia (SA)|maps/southaustralia|
-Australian Capital Territory|maps/australiancapitalterritory|
+[New South Wales (NSW)]({% site.baseurl %}/maps/spec-sheets/newsouthwales "@@soft-reload")|maps/newsouthwales|
+[Victoria (VIC)]({% site.baseurl %}/maps/spec-sheets/victoria "@@soft-reload")|maps/victoria|
+[Northern Territory (NT)]({% site.baseurl %}/maps/spec-sheets/northernterritory "@@soft-reload")|maps/northernterritory|
+[Western Australia (WA)]({% site.baseurl %}/maps/spec-sheets/westernaustralia "@@soft-reload")|maps/westernaustralia|
+[Queensland (QLD)]({% site.baseurl %}/maps/spec-sheets/queensland "@@soft-reload")|maps/queensland|
+[Tasmania (TAS)]({% site.baseurl %}/maps/spec-sheets/tasmania "@@soft-reload")|maps/tasmania|
+[South Australia (SA)]({% site.baseurl %}/maps/spec-sheets/southaustralia "@@soft-reload")|maps/southaustralia|
+[Australian Capital Territory]({% site.baseurl %}/maps/spec-sheets/australiancapitalterritory "@@soft-reload")|maps/australiancapitalterritory|
 
 ### New Zealand (Provinces)
 
 Chart Type|JavaScript Alias|
 -|-
-Auckland|maps/auckland|
-Bay of Plenty|maps/bayofplenty|
-Canterbury|maps/canterbury|
-Gisborne|maps/gisborne|
-Hawke's Bay|maps/hawkesbay|
-Manawatu-Wanganui|maps/manawatuwanganui|
-Marlborough|maps/marlborough|
-Nelson|maps/nelson|
-Northland|maps/northland|
-Otago|maps/otago|
-Southland|maps/southland|
-Taranaki|maps/taranaki|
-Tasman|maps/tasman|
-Waikato|maps/waikato|
-Wellington|maps/wellington|
-West Coast|maps/westcoast|
+[Auckland]({% site.baseurl %}/maps/spec-sheets/auckland "@@soft-reload")|maps/auckland|
+[Bay of Plenty]({% site.baseurl %}/maps/spec-sheets/bayofplenty "@@soft-reload")|maps/bayofplenty|
+[Canterbury]({% site.baseurl %}/maps/spec-sheets/canterbury "@@soft-reload")|maps/canterbury|
+[Gisborne]({% site.baseurl %}/maps/spec-sheets/gisborne "@@soft-reload")|maps/gisborne|
+[Hawke's Bay]({% site.baseurl %}/maps/spec-sheets/hawkesbay "@@soft-reload")|maps/hawkesbay|
+[Manawatu-Wanganui]({% site.baseurl %}/maps/spec-sheets/manawatuwanganui "@@soft-reload")|maps/manawatuwanganui|
+[Marlborough]({% site.baseurl %}/maps/spec-sheets/marlborough "@@soft-reload")|maps/marlborough|
+[Nelson]({% site.baseurl %}/maps/spec-sheets/nelson "@@soft-reload")|maps/nelson|
+[Northland]({% site.baseurl %}/maps/spec-sheets/northland "@@soft-reload")|maps/northland|
+[Otago]({% site.baseurl %}/maps/spec-sheets/otago "@@soft-reload")|maps/otago|
+[Southland]({% site.baseurl %}/maps/spec-sheets/southland "@@soft-reload")|maps/southland|
+[Taranaki]({% site.baseurl %}/maps/spec-sheets/taranaki "@@soft-reload")|maps/taranaki|
+[Tasman]({% site.baseurl %}/maps/spec-sheets/tasman "@@soft-reload")|maps/tasman|
+[Waikato]({% site.baseurl %}/maps/spec-sheets/waikato "@@soft-reload")|maps/waikato|
+[Wellington]({% site.baseurl %}/maps/spec-sheets/wellington "@@soft-reload")|maps/wellington|
+[West Coast]({% site.baseurl %}/maps/spec-sheets/westcoast "@@soft-reload")|maps/westcoast|
 
 ## USA
 
@@ -1215,150 +1215,152 @@ West Coast|maps/westcoast|
 
 Chart Type|JavaScript Alias|
 -|-
-Alabama Area Code|maps/alabamaareacode|
-Alaska Area Code|maps/alaskaareacode|
-Arizona Area Code|maps/arizonaareacode|
-Arkansas Area Code|maps/arkansasareacode|
-Boston Area Code|maps/bostonareacode|
-California Area Code|maps/californiaareacode|
-Chicago Area Code|maps/chicagoareacode|
-Colorado Area Code|maps/coloradoareacode|
-Connecticut Area Code|maps/connecticutareacode|
-Dallas Fort Worth Area Code|maps/dallasfortworthareacode|
-Delaware Area Code|maps/delawareareacode|
-Detroit Area Code|maps/detroitareacode|
-District of Columbia Area Code|maps/districtofcolumbiaareacode|
-Florida Area Code|maps/floridaareacode|
-Georgia Area Code|maps/georgiaareacode|
-Hawaii Area Code|maps/hawaiiareacode|
-Idaho Area Code|maps/idahoareacode|
-Illinois Area Code|maps/illinoisareacode|
-Indiana Area Code|maps/indianaareacode|
-Iowa Area Code|maps/iowaareacode|
-Kansas Area Code|maps/kansasareacode|
-Kentucky Area Code|maps/kentuckyareacode|
-Louisiana Area Code|maps/louisianaareacode|
-Maine Area Code|maps/maineareacode|
-Maryland Area Code|maps/marylandareacode|
-Massachusetts Area Code|maps/massachusettsareacode|
-Michigan Area Code|maps/michiganareacode|
-Minnesota Area Code|maps/minnesotaareacode|
-Mississippi Area Code|maps/mississippiareacode|
-Missouri Area Code|maps/missouriareacode|
-Montana Area Code|maps/montanaareacode|
-Nebraska Area Code|maps/nebraskaareacode|
-Nevada Area Code|maps/nevadaareacode|
-New Hampshire Area Code|maps/newhampshireareacode|
-New Jersey Area Code|maps/newjerseyareacode|
-New Mexico Area Code|maps/newmexicoareacode|
-New Yorkarea Area Code|maps/newyorkareaareacode|
-New York Area Code|maps/newyorkareacode|
-North Carolina Area Code|maps/northcarolinaareacode|
-North Dakota Area Code|maps/northdakotaareacode|
-Northern California Bay Area Code|maps/northerncaliforniabayareacode|
-Ohio Area Code|maps/ohioareacode|
-Oklahoma Area Code|maps/oklahomaareacode|
-Oregon Area Code|maps/oregonareacode|
-Pennsylvania Area Code|maps/pennsylvaniaareacode|
-Phoenix Area Code|maps/phoenixareacode|
-Rhode Island Area Code|maps/rhodeislandareacode|
-Seattle Area Code|maps/seattleareacode|
-South Carolina Area Code|maps/southcarolinaareacode|
-South Dakota Area Code|maps/southdakotaareacode|
-Southern California LA Area Code|maps/southerncalifornialaareacode|
-Tennessee Area Code|maps/tennesseeareacode|
-Texas Area Code|maps/texasareacode|
-Utah Area Code|maps/utahareacode|
-Vermont Area Code|maps/vermontareacode|
-Virginia Area Code|maps/virginiaareacode|
-Washington Area Code|maps/washingtonareacode|
-WestVirginia Area Code|maps/westvirginiaareacode|
-Wisconsin Area Code|maps/wisconsinareacode|
-Wyoming Area Code|maps/wyomingareacode|
+[Alabama Area Code]({% site.baseurl %}/maps/spec-sheets/alabamaareacode "@@soft-reload")|maps/alabamaareacode|
+[Alaska Area Code]({% site.baseurl %}/maps/spec-sheets/alaskaareacode "@@soft-reload")|maps/alaskaareacode|
+[Arizona Area Code]({% site.baseurl %}/maps/spec-sheets/arizonaareacode "@@soft-reload")|maps/arizonaareacode|
+[Arkansas Area Code]({% site.baseurl %}/maps/spec-sheets/arkansasareacode "@@soft-reload")|maps/arkansasareacode|
+[Boston Area Code]({% site.baseurl %}/maps/spec-sheets/bostonareacode "@@soft-reload")|maps/bostonareacode|
+[California Area Code]({% site.baseurl %}/maps/spec-sheets/californiaareacode "@@soft-reload")|maps/californiaareacode|
+[Chicago Area Code]({% site.baseurl %}/maps/spec-sheets/chicagoareacode "@@soft-reload")|maps/chicagoareacode|
+[Colorado Area Code]({% site.baseurl %}/maps/spec-sheets/coloradoareacode "@@soft-reload")|maps/coloradoareacode|
+[Connecticut Area Code]({% site.baseurl %}/maps/spec-sheets/connecticutareacode "@@soft-reload")|maps/connecticutareacode|
+[Dallas Fort Worth Area Code]({% site.baseurl %}/maps/spec-sheets/dallasfortworthareacode "@@soft-reload")|maps/dallasfortworthareacode|
+[Delaware Area Code]({% site.baseurl %}/maps/spec-sheets/delawareareacode "@@soft-reload")|maps/delawareareacode|
+[Detroit Area Code]({% site.baseurl %}/maps/spec-sheets/detroitareacode "@@soft-reload")|maps/detroitareacode|
+[District of Columbia Area Code]({% site.baseurl %}/maps/spec-sheets/districtofcolumbiaareacode "@@soft-reload")|maps/districtofcolumbiaareacode|
+[Florida Area Code]({% site.baseurl %}/maps/spec-sheets/floridaareacode "@@soft-reload")|maps/floridaareacode|
+[Georgia Area Code]({% site.baseurl %}/maps/spec-sheets/georgiaareacode "@@soft-reload")|maps/georgiaareacode|
+[Hawaii Area Code]({% site.baseurl %}/maps/spec-sheets/hawaiiareacode "@@soft-reload")|maps/hawaiiareacode|
+[Idaho Area Code]({% site.baseurl %}/maps/spec-sheets/idahoareacode "@@soft-reload")|maps/idahoareacode|
+[Illinois Area Code]({% site.baseurl %}/maps/spec-sheets/illinoisareacode "@@soft-reload")|maps/illinoisareacode|
+[Indiana Area Code]({% site.baseurl %}/maps/spec-sheets/indianaareacode "@@soft-reload")|maps/indianaareacode|
+[Iowa Area Code]({% site.baseurl %}/maps/spec-sheets/iowaareacode "@@soft-reload")|maps/iowaareacode|
+[Kansas Area Code]({% site.baseurl %}/maps/spec-sheets/kansasareacode "@@soft-reload")|maps/kansasareacode|
+[Kentucky Area Code]({% site.baseurl %}/maps/spec-sheets/kentuckyareacode "@@soft-reload")|maps/kentuckyareacode|
+[Louisiana Area Code]({% site.baseurl %}/maps/spec-sheets/louisianaareacode "@@soft-reload")|maps/louisianaareacode|
+[Maine Area Code]({% site.baseurl %}/maps/spec-sheets/maineareacode "@@soft-reload")|maps/maineareacode|
+[Maryland Area Code]({% site.baseurl %}/maps/spec-sheets/marylandareacode "@@soft-reload")|maps/marylandareacode|
+[Massachusetts Area Code]({% site.baseurl %}/maps/spec-sheets/massachusettsareacode "@@soft-reload")|maps/massachusettsareacode|
+[Michigan Area Code]({% site.baseurl %}/maps/spec-sheets/michiganareacode "@@soft-reload")|maps/michiganareacode|
+[Minnesota Area Code]({% site.baseurl %}/maps/spec-sheets/minnesotaareacode "@@soft-reload")|maps/minnesotaareacode|
+[Mississippi Area Code]({% site.baseurl %}/maps/spec-sheets/mississippiareacode "@@soft-reload")|maps/mississippiareacode|
+[Missouri Area Code]({% site.baseurl %}/maps/spec-sheets/missouriareacode "@@soft-reload")|maps/missouriareacode|
+[Montana Area Code]({% site.baseurl %}/maps/spec-sheets/montanaareacode "@@soft-reload")|maps/montanaareacode|
+[Nebraska Area Code]({% site.baseurl %}/maps/spec-sheets/nebraskaareacode "@@soft-reload")|maps/nebraskaareacode|
+[Nevada Area Code]({% site.baseurl %}/maps/spec-sheets/nevadaareacode "@@soft-reload")|maps/nevadaareacode|
+[New Hampshire Area Code]({% site.baseurl %}/maps/spec-sheets/newhampshireareacode "@@soft-reload")|maps/newhampshireareacode|
+[New Jersey Area Code]({% site.baseurl %}/maps/spec-sheets/newjerseyareacode "@@soft-reload")|maps/newjerseyareacode|
+[New Mexico Area Code]({% site.baseurl %}/maps/spec-sheets/newmexicoareacode "@@soft-reload")|maps/newmexicoareacode|
+[New Yorkarea Area Code]({% site.baseurl %}/maps/spec-sheets/newyorkareaareacode "@@soft-reload")|maps/newyorkareaareacode|
+[New York Area Code]({% site.baseurl %}/maps/spec-sheets/newyorkareacode "@@soft-reload")|maps/newyorkareacode|
+[North Carolina Area Code]({% site.baseurl %}/maps/spec-sheets/northcarolinaareacode "@@soft-reload")|maps/northcarolinaareacode|
+[North Dakota Area Code]({% site.baseurl %}/maps/spec-sheets/northdakotaareacode "@@soft-reload")|maps/northdakotaareacode|
+[Northern California Bay Area Code]({% site.baseurl %}/maps/spec-sheets/northerncaliforniabayareacode "@@soft-reload")|maps/northerncaliforniabayareacode|
+
+[Ohio Area Code]({% site.baseurl %}/maps/spec-sheets/ohioareacode "@@soft-reload")|maps/ohioareacode|
+[Oklahoma Area Code]({% site.baseurl %}/maps/spec-sheets/oklahomaareacode "@@soft-reload")|maps/oklahomaareacode|
+[Oregon Area Code]({% site.baseurl %}/maps/spec-sheets/oregonareacode "@@soft-reload")|maps/oregonareacode|
+[Pennsylvania Area Code]({% site.baseurl %}/maps/spec-sheets/pennsylvaniaareacode "@@soft-reload")|maps/pennsylvaniaareacode|
+[Phoenix Area Code]({% site.baseurl %}/maps/spec-sheets/phoenixareacode "@@soft-reload")|maps/phoenixareacode|
+[Rhode Island Area Code]({% site.baseurl %}/maps/spec-sheets/rhodeislandareacode "@@soft-reload")|maps/rhodeislandareacode|
+[Seattle Area Code]({% site.baseurl %}/maps/spec-sheets/seattleareacode "@@soft-reload")|maps/seattleareacode|
+[South Carolina Area Code]({% site.baseurl %}/maps/spec-sheets/southcarolinaareacode "@@soft-reload")|maps/southcarolinaareacode|
+[South Dakota Area Code]({% site.baseurl %}/maps/spec-sheets/southdakotaareacode "@@soft-reload")|maps/southdakotaareacode|
+[Southern California LA Area Code]({% site.baseurl %}/maps/spec-sheets/southerncalifornialaareacode "@@soft-reload")|maps/southerncalifornialaareacode|
+
+[Tennessee Area Code]({% site.baseurl %}/maps/spec-sheets/tennesseeareacode "@@soft-reload")|maps/tennesseeareacode|
+[Texas Area Code]({% site.baseurl %}/maps/spec-sheets/texasareacode "@@soft-reload")|maps/texasareacode|
+[Utah Area Code]({% site.baseurl %}/maps/spec-sheets/utahareacode "@@soft-reload")|maps/utahareacode|
+[Vermont Area Code]({% site.baseurl %}/maps/spec-sheets/vermontareacode "@@soft-reload")|maps/vermontareacode|
+[Virginia Area Code]({% site.baseurl %}/maps/spec-sheets/virginiaareacode "@@soft-reload")|maps/virginiaareacode|
+[Washington Area Code]({% site.baseurl %}/maps/spec-sheets/washingtonareacode "@@soft-reload")|maps/washingtonareacode|
+[WestVirginia Area Code]({% site.baseurl %}/maps/spec-sheets/westvirginiaareacode "@@soft-reload")|maps/westvirginiaareacode|
+[Wisconsin Area Code]({% site.baseurl %}/maps/spec-sheets/wisconsinareacode "@@soft-reload")|maps/wisconsinareacode|
+[Wyoming Area Code]({% site.baseurl %}/maps/spec-sheets/wyomingareacode "@@soft-reload")|maps/wyomingareacode|
 
 ### USA (Congressional)
 
 Chart Type|JavaScript Alias|
 -|-
-Alabama Congressional|maps/alabamacongressional|
-Alaska Congressional|maps/alaskacongressional|
-American Samoa Congressional|maps/americansamoacongressional|
-Arizona Congressional|maps/arizonacongressional|
-Arkansas Congressional|maps/arkansascongressional|
-California Congressional|maps/californiacongressional|
-Colorado Congressional|maps/coloradocongressional|
-Connecticut Congressional|maps/connecticutcongressional|
-Delaware Congressional|maps/delawarecongressional|
-District of Columbia Congressional|maps/districtofcolumbiacongressional|
-Florida Congressional|maps/floridacongressional|
-Georgia Congressional|maps/georgiacongressional|
-Guam Congressional|maps/guamcongressional|
-Hawaii Congressional|maps/hawaiicongressional|
-Idaho Congressional|maps/idahocongressional|
-Illinois Congressional|maps/illinoiscongressional|
-Indiana Congressional|maps/indianacongressional|
-Iowa Congressional|maps/iowacongressional|
-Kansas Congressional|maps/kansascongressional|
-Kentucky Congressional|maps/kentuckycongressional|
-Louisiana Congressional|maps/louisianacongressional|
-Maine Congressional|maps/mainecongressional|
-Maryland Congressional|maps/marylandcongressional|
-Massachusetts Congressional|maps/massachusettscongressional|
-Michigan Congressional|maps/michigancongressional|
-Minnesota Congressional|maps/minnesotacongressional|
-Mississippi Congressional|maps/mississippicongressional|
-Missouri Congressional|maps/missouricongressional|
-Montana Congressional|maps/montanacongressional|
-Nebraska Congressional|maps/nebraskacongressional|
-Nevada Congressional|maps/nevadacongressional|
-New Hampshire Congressional|maps/newhampshirecongressional|
-New Jersey Congressional|maps/newjerseycongressional|
-New Mexico Congressional|maps/newmexicocongressional|
-New York Congressional|maps/newyorkcongressional|
-North Carolina Congressional|maps/northcarolinacongressional|
-North Dakota Congressional|maps/northdakotacongressional|
-Ohio Congressional|maps/ohiocongressional|
-Oklahoma Congressional|maps/oklahomacongressional|
-Oregon Congressional|maps/oregoncongressional|
-Pennsylvania Congressional|maps/pennsylvaniacongressional|
-Puerto Rico Congressional|maps/puertoricocongressional|
-Rhode Island Congressional|maps/rhodeislandcongressional|
-South Carolina Congressional|maps/southcarolinacongressional|
-South Dakota Congressional|maps/southdakotacongressional|
-Tennessee Congressional|maps/tennesseecongressional|
-Texas Congressional|maps/texascongressional|
-US Virgin Islands Congressional|maps/usvirginislandscongressional|
-Utah Congressional|maps/utahcongressional|
-Vermont Congressional|maps/vermontcongressional|
-Virginia Congressional|maps/virginiacongressional|
-Washington Congressional|maps/washingtoncongressional|
-West Virginia Congressional|maps/westvirginiacongressional|
-Wisconsin Congressional|maps/wisconsincongressional|
-Wyoming Congressional|maps/wyomingcongressional|
+[Alabama Congressional]({% site.baseurl %}/maps/spec-sheets/alabamacongressional "@@soft-reload")|maps/alabamacongressional|
+[Alaska Congressional]({% site.baseurl %}/maps/spec-sheets/alaskacongressional "@@soft-reload")|maps/alaskacongressional|
+[American Samoa Congressional]({% site.baseurl %}/maps/spec-sheets/americansamoacongressional "@@soft-reload")|maps/americansamoacongressional|
+[Arizona Congressional]({% site.baseurl %}/maps/spec-sheets/arizonacongressional "@@soft-reload")|maps/arizonacongressional|
+[Arkansas Congressional]({% site.baseurl %}/maps/spec-sheets/arkansascongressional "@@soft-reload")|maps/arkansascongressional|
+[California Congressional]({% site.baseurl %}/maps/spec-sheets/californiacongressional "@@soft-reload")|maps/californiacongressional|
+[Colorado Congressional]({% site.baseurl %}/maps/spec-sheets/coloradocongressional "@@soft-reload")|maps/coloradocongressional|
+[Connecticut Congressional]({% site.baseurl %}/maps/spec-sheets/connecticutcongressional "@@soft-reload")|maps/connecticutcongressional|
+[Delaware Congressional]({% site.baseurl %}/maps/spec-sheets/delawarecongressional "@@soft-reload")|maps/delawarecongressional|
+[District of Columbia Congressional]({% site.baseurl %}/maps/spec-sheets/districtofcolumbiacongressional "@@soft-reload")|maps/districtofcolumbiacongressional|
+[Florida Congressional]({% site.baseurl %}/maps/spec-sheets/floridacongressional "@@soft-reload")|maps/floridacongressional|
+[Georgia Congressional]({% site.baseurl %}/maps/spec-sheets/georgiacongressional "@@soft-reload")|maps/georgiacongressional|
+[Guam Congressional]({% site.baseurl %}/maps/spec-sheets/guamcongressional "@@soft-reload")|maps/guamcongressional|
+[Hawaii Congressional]({% site.baseurl %}/maps/spec-sheets/hawaiicongressional "@@soft-reload")|maps/hawaiicongressional|
+[Idaho Congressional]({% site.baseurl %}/maps/spec-sheets/idahocongressional "@@soft-reload")|maps/idahocongressional|
+[Illinois Congressional]({% site.baseurl %}/maps/spec-sheets/illinoiscongressional "@@soft-reload")|maps/illinoiscongressional|
+[Indiana Congressional]({% site.baseurl %}/maps/spec-sheets/indianacongressional "@@soft-reload")|maps/indianacongressional|
+[Iowa Congressional]({% site.baseurl %}/maps/spec-sheets/iowacongressional "@@soft-reload")|maps/iowacongressional|
+[Kansas Congressional]({% site.baseurl %}/maps/spec-sheets/kansascongressional "@@soft-reload")|maps/kansascongressional|
+[Kentucky Congressional]({% site.baseurl %}/maps/spec-sheets/kentuckycongressional "@@soft-reload")|maps/kentuckycongressional|
+[Louisiana Congressional]({% site.baseurl %}/maps/spec-sheets/louisianacongressional "@@soft-reload")|maps/louisianacongressional|
+[Maine Congressional]({% site.baseurl %}/maps/spec-sheets/mainecongressional "@@soft-reload")|maps/mainecongressional|
+[Maryland Congressional]({% site.baseurl %}/maps/spec-sheets/marylandcongressional "@@soft-reload")|maps/marylandcongressional|
+[Massachusetts Congressional]({% site.baseurl %}/maps/spec-sheets/massachusettscongressional "@@soft-reload")|maps/massachusettscongressional|
+[Michigan Congressional]({% site.baseurl %}/maps/spec-sheets/michigancongressional "@@soft-reload")|maps/michigancongressional|
+[Minnesota Congressional]({% site.baseurl %}/maps/spec-sheets/minnesotacongressional "@@soft-reload")|maps/minnesotacongressional|
+[Mississippi Congressional]({% site.baseurl %}/maps/spec-sheets/mississippicongressional "@@soft-reload")|maps/mississippicongressional|
+[Missouri Congressional]({% site.baseurl %}/maps/spec-sheets/missouricongressional "@@soft-reload")|maps/missouricongressional|
+[Montana Congressional]({% site.baseurl %}/maps/spec-sheets/montanacongressional "@@soft-reload")|maps/montanacongressional|
+[Nebraska Congressional]({% site.baseurl %}/maps/spec-sheets/nebraskacongressional "@@soft-reload")|maps/nebraskacongressional|
+[Nevada Congressional]({% site.baseurl %}/maps/spec-sheets/nevadacongressional "@@soft-reload")|maps/nevadacongressional|
+[New Hampshire Congressional]({% site.baseurl %}/maps/spec-sheets/newhampshirecongressional "@@soft-reload")|maps/newhampshirecongressional|
+[New Jersey Congressional]({% site.baseurl %}/maps/spec-sheets/newjerseycongressional "@@soft-reload")|maps/newjerseycongressional|
+[New Mexico Congressional]({% site.baseurl %}/maps/spec-sheets/newmexicocongressional "@@soft-reload")|maps/newmexicocongressional|
+[New York Congressional]({% site.baseurl %}/maps/spec-sheets/newyorkcongressional "@@soft-reload")|maps/newyorkcongressional|
+[North Carolina Congressional]({% site.baseurl %}/maps/spec-sheets/northcarolinacongressional "@@soft-reload")|maps/northcarolinacongressional|
+[North Dakota Congressional]({% site.baseurl %}/maps/spec-sheets/northdakotacongressional "@@soft-reload")|maps/northdakotacongressional|
+[Ohio Congressional]({% site.baseurl %}/maps/spec-sheets/ohiocongressional "@@soft-reload")|maps/ohiocongressional|
+[Oklahoma Congressional]({% site.baseurl %}/maps/spec-sheets/oklahomacongressional "@@soft-reload")|maps/oklahomacongressional|
+[Oregon Congressional]({% site.baseurl %}/maps/spec-sheets/oregoncongressional "@@soft-reload")|maps/oregoncongressional|
+[Pennsylvania Congressional]({% site.baseurl %}/maps/spec-sheets/pennsylvaniacongressional "@@soft-reload")|maps/pennsylvaniacongressional|
+[Puerto Rico Congressional]({% site.baseurl %}/maps/spec-sheets/puertoricocongressional "@@soft-reload")|maps/puertoricocongressional|
+[Rhode Island Congressional]({% site.baseurl %}/maps/spec-sheets/rhodeislandcongressional "@@soft-reload")|maps/rhodeislandcongressional|
+[South Carolina Congressional]({% site.baseurl %}/maps/spec-sheets/southcarolinacongressional "@@soft-reload")|maps/southcarolinacongressional|
+[South Dakota Congressional]({% site.baseurl %}/maps/spec-sheets/southdakotacongressional "@@soft-reload")|maps/southdakotacongressional|
+[Tennessee Congressional]({% site.baseurl %}/maps/spec-sheets/tennesseecongressional "@@soft-reload")|maps/tennesseecongressional|
+[Texas Congressional]({% site.baseurl %}/maps/spec-sheets/texascongressional "@@soft-reload")|maps/texascongressional|
+[US Virgin Islands Congressional]({% site.baseurl %}/maps/spec-sheets/usvirginislandscongressional "@@soft-reload")|maps/usvirginislandscongressional|
+[Utah Congressional]({% site.baseurl %}/maps/spec-sheets/utahcongressional "@@soft-reload")|maps/utahcongressional|
+[Vermont Congressional]({% site.baseurl %}/maps/spec-sheets/vermontcongressional "@@soft-reload")|maps/vermontcongressional|
+[Virginia Congressional]({% site.baseurl %}/maps/spec-sheets/virginiacongressional "@@soft-reload")|maps/virginiacongressional|
+[Washington Congressional]({% site.baseurl %}/maps/spec-sheets/washingtoncongressional "@@soft-reload")|maps/washingtoncongressional|
+[West Virginia Congressional]({% site.baseurl %}/maps/spec-sheets/westvirginiacongressional "@@soft-reload")|maps/westvirginiacongressional|
+[Wisconsin Congressional]({% site.baseurl %}/maps/spec-sheets/wisconsincongressional "@@soft-reload")|maps/wisconsincongressional|
+[Wyoming Congressional]({% site.baseurl %}/maps/spec-sheets/wyomingcongressional "@@soft-reload")|maps/wyomingcongressional|
 
 ### USA (DMA)
 
 Chart Type|JavaScript Alias|
 -|-
-EastNorthCentral DMA|maps/eastnorthcentraldma|
-EastSouthCentral DMA|maps/eastsouthcentraldma|
-MiddleAtlantic DMA|maps/middleatlanticdma|
-Mountain DMA|maps/mountaindma|
-NewEngland DMA|maps/newenglanddma|
-Pacific DMA|maps/pacificdma|
-SouthAtlantic DMA|maps/southatlanticdma|
-USA DMA|maps/usadma|
-WestNorthCentral DMA|maps/westnorthcentraldma|
-WestSouthCentral DMA|maps/westsouthcentraldma|
+[EastNorthCentral DMA]({% site.baseurl %}/maps/spec-sheets/eastnorthcentraldma "@@soft-reload")|maps/eastnorthcentraldma|
+[EastSouthCentral DMA]({% site.baseurl %}/maps/spec-sheets/eastsouthcentraldma "@@soft-reload")|maps/eastsouthcentraldma|
+[MiddleAtlantic DMA]({% site.baseurl %}/maps/spec-sheets/middleatlanticdma "@@soft-reload")|maps/middleatlanticdma|
+[Mountain DMA]({% site.baseurl %}/maps/spec-sheets/mountaindma "@@soft-reload")|maps/mountaindma|
+[NewEngland DMA]({% site.baseurl %}/maps/spec-sheets/newenglanddma "@@soft-reload")|maps/newenglanddma|
+[Pacific DMA]({% site.baseurl %}/maps/spec-sheets/pacificdma "@@soft-reload")|maps/pacificdma|
+[SouthAtlantic DMA]({% site.baseurl %}/maps/spec-sheets/southatlanticdma "@@soft-reload")|maps/southatlanticdma|
+[USA DMA]({% site.baseurl %}/maps/spec-sheets/usadma "@@soft-reload")|maps/usadma|
+[WestNorthCentral DMA]({% site.baseurl %}/maps/spec-sheets/westnorthcentraldma "@@soft-reload")|maps/westnorthcentraldma|
+[WestSouthCentral DMA]({% site.baseurl %}/maps/spec-sheets/westsouthcentraldma "@@soft-reload")|maps/westsouthcentraldma|
 
 ### USA (MSA)
 
 Chart Type|JavaScript Alias|
 -|-
-USA (MSA)|maps/usamsa|
+[USA (MSA)]({% site.baseurl %}/maps/spec-sheets/usamsa "@@soft-reload")|maps/usamsa|
 
 ### USA TimeZone
 
 Chart Type|JavaScript Alias|
 -|-
-USA Time Zone|maps/usatimezone|
+[USA Time Zone]({% site.baseurl %}/maps/spec-sheets/usatimezone "@@soft-reload")|maps/usatimezone|
