@@ -1,9 +1,7 @@
 ---
-permalink: map-guide/custom-entity-ids.html
 title: Custom Entity IDs | FusionCharts
 description: All maps in FusionCharts Suite XT have pre defined unique internal IDs to reference each entity
 heading: Custom Entity IDs
-chartPresent: true
 ---
 
 All maps in FusionCharts Suite XT have predefined unique internal IDs to reference each entity. However, if you need to name these entities differently, you can do that by creating custom IDs for entities on a map. Apart from re-defining identities, you can also re-define the short name and long name of each identity, and use these as the label or tooltip of the map.

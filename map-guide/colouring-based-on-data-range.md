@@ -1,9 +1,7 @@
 ---
-permalink: map-guide/colouring-based-on-data-range.html
 title: Coloring Based on Data Range | FusionCharts
 description: A gradient scale allows you to specify colours associated with specific data points. This defines an automatic gradient scale across the data range.
 heading: Coloring Based on Data Range
-chartPresent: true
 ---
 
 You have to use color ranges to define entity colors based on values, in order to set up a <<simple data driven map>>. Since the process of defining colors for individual data buckets is not scalable, you need to group data values under defined data range buckets. 

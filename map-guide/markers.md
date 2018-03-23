@@ -1,9 +1,7 @@
 ---
-permalink: map-guide/adding-markers.html
 title: Adding Markers | FusionCharts
 description: You can add custom defined markers on any map. Markers can be used to represent locations like cities, junctions, houses, office locations, malls
 heading: Adding Markers
-chartPresent: true
 ---
 
 

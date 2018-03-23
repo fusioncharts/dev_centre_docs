@@ -1,3 +1,8 @@
+---
+title: Listening to Map Events | FusionCharts
+description: If you need to extend this further, you can tap into the JavaScript events raised by each map, and then build your custom behavior over it.
+heading: Listening to Map Events
+---
 
 You can use FusionCharts Suite XT to configure standard interactivity for items like markers, tooltips and legend, through the map attributes itself. However, if you need to extend this further, you can tap into the JavaScript events raised by each map, and then build your custom behavior over it. You can listen to events related to `entities `, `markers`, and `connectors`, which are specific to maps. You can also use these events to  tightly integrate maps with your own applications and add interactivity to your visualizations.
 

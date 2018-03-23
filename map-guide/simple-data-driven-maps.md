@@ -1,14 +1,14 @@
 ---
-permalink: map-guide/simple-data-driven-map.html
 title: Simple Data Driven Map | FusionCharts
 description: In this section we will learn how to create a simple map showing the population of the different continents in the world.
 heading: Simple Data Driven Map
-chartPresent: true
 ---
 
 In the map given below, you can see the populations of the different continents in the world. 
 
-<chart>
+{% embed_all map-guide-simple-data-driven-maps-example-1.js %}
+
+[here](http://jsfiddle.net/fusioncharts/5tajR/ "@@open-newtab")
 
 In the sections below, you will see how to build a map like the one above and customize it using different attributes.
 
@@ -20,166 +20,81 @@ There are 4 simple steps to building a map using FusionCharts Suite XT, as detai
 
 FusionCharts Suite XT accepts both JSON and XML data formats, and can read them as strings from a local or remote file. Refer to the code given below for the JSON/XML representation of the data you need, in order to build the map shown above.
 
-```
-
+```json
 {
-
     "chart": {
-
         "caption": "Global Population",
-
         "theme": "fint",
-
         "formatNumberScale": "0",
-
         "numberSuffix": "M"
-
     },
-
     "colorrange": {
-
-        "color": [
-
-            {
-
-                "minvalue": "0",
-
-                "maxvalue": "100",
-
-                "code": "#D0DFA3",
-
-                "displayValue": "< 100M"
-
-            },
-
-            {
-
-                "minvalue": "100",
-
-                "maxvalue": "500",
-
-                "code": "#B0BF92",
-
-                "displayValue": "100-500M"
-
-            },
-
-            {
-
-                "minvalue": "500",
-
-                "maxvalue": "1000",
-
-                "code": "#91AF64",
-
-                "displayValue": "500M-1B"
-
-            },
-
-            {
-
-                "minvalue": "1000",
-
-                "maxvalue": "5000",
-
-                "code": "#A9FF8D",
-
-                "displayValue": "> 1B"
-
-            }
-
-        ]
-
+        "color": [{
+            "minvalue": "0",
+            "maxvalue": "100",
+            "code": "#D0DFA3",
+            "displayValue": "< 100M"
+        }, {
+            "minvalue": "100",
+            "maxvalue": "500",
+            "code": "#B0BF92",
+            "displayValue": "100-500M"
+        }, {
+            "minvalue": "500",
+            "maxvalue": "1000",
+            "code": "#91AF64",
+            "displayValue": "500M-1B"
+        }, {
+            "minvalue": "1000",
+            "maxvalue": "5000",
+            "code": "#A9FF8D",
+            "displayValue": "> 1B"
+        }]
     },
-
-    "data": [
-
-        {
-
-            "id": "NA",
-
-            "value": "515"
-
-        },
-
-        {
-
-            "id": "SA",
-
-            "value": "373"
-
-        },
-
-        {
-
-            "id": "AS",
-
-            "value": "3875"
-
-        },
-
-        {
-
-            "id": "EU",
-
-            "value": "727"
-
-        },
-
-        {
-
-            "id": "AF",
-
-            "value": "885"
-
-        },
-
-        {
-
-            "id": "AU",
-
-            "value": "32"
-
-        }
-
-    ]
-
+    "data": [{
+        "id": "NA",
+        "value": "515"
+    }, {
+        "id": "SA",
+        "value": "373"
+    }, {
+        "id": "AS",
+        "value": "3875"
+    }, {
+        "id": "EU",
+        "value": "727"
+    }, {
+        "id": "AF",
+        "value": "885"
+    }, {
+        "id": "AU",
+        "value": "32"
+    }]
 }
-
 ```
 
 ### Include FusionCharts Suite XT library in your page
 
-To include the FusionCharts Suite XT JavaScript library in your HTML page, use the <script> tag as shown below. 
+To include the FusionCharts Suite XT JavaScript library in your HTML page, use the &lt;script&gt; tag as shown below. 
 
-```
-
+```html
 <head>
-
     <title>A Data Driven Map</title>
-
     <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
-
     <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
-
 </head>
-
 ```
 
-Note: The theme file included in the code snippet shown above is called `fint` (FusionCharts internal) and is present in the `themes` folder. You can use it to define chart cosmetics.
+> The theme file included in the code snippet shown above is called `fint` (FusionCharts internal) and is present in the `themes` folder. You can use it to define chart cosmetics.
 
 ### Create a container for your map in the web page
 
 Next, you need to create a container for your map in the form of a <div> element, as shown below:
 
-```
-
+```json
 <body>
-
-<div id="chart-container">A world map will load here!</div>
-
+    <div id="chart-container">A world map will load here!</div>
 </body>
-
 ```
 
 ### Create an instance of the map
@@ -206,302 +121,144 @@ In the final step, you have to create an instance of the map, initialize it with
 
 Refer to the code below:
 
-```
-
+```json
 <script>
-
 FusionCharts.ready(function() {
-
     var populationMap = new FusionCharts({
-
         type: 'maps/world',
-
         renderAt: 'chart-container',
-
         width: '600',
-
         height: '400',
-
         dataFormat: 'json',
-
         dataSource: {
-
             "chart": {
-
                 "caption": "Global Population",
-
                 "theme": "fint",
-
                 "formatNumberScale": "0",
-
                 "numberSuffix": "M"
-
             },
-
             "colorrange": {
-
                 "color": [{
-
                     "minvalue": "0",
-
                     "maxvalue": "100",
-
                     "code": "#E0F0E0",
-
                     "displayValue": "Below 100M"
-
                 }, {
-
                     "minvalue": "100",
-
                     "maxvalue": "500",
-
                     "code": "#D0DFA3",
-
                     "displayValue": "100-500M"
-
                 }, {
-
                     "minvalue": "500",
-
                     "maxvalue": "1000",
-
                     "code": "#B0BF92",
-
                     "displayValue": "500-1000M"
-
                 }, {
-
                     "minvalue": "1000",
-
                     "maxvalue": "5000",
-
                     "code": "#91AF64",
-
                     "displayValue": "Above 1B"
-
                 }]
-
             },
-
             "data": [{
-
                 "id": "NA",
-
                 "value": "515"
-
             }, {
-
                 "id": "SA",
-
                 "value": "373"
-
             }, {
-
                 "id": "AS",
-
                 "value": "3875"
-
             }, {
-
                 "id": "EU",
-
                 "value": "727"
-
             }, {
-
                 "id": "AF",
-
                 "value": "885"
-
             }, {
-
                 "id": "AU",
-
                 "value": "32"
-
             }]
-
         }
-
     }).render();
-
 });
-
 </script>
-
 ```
 
 Refer to the full HTML code for the map, given below:
 
-```
-
+```json
 <html>
-
-<head>
-
-    <title>A Data Driven Map</title>
-
-    <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
-
-    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
-
-<script>
-
-FusionCharts.ready(function () {
-
-    var populationMap = new FusionCharts({
-
-        type: 'maps/world',
-
-        renderAt: 'chart-container',
-
-        width: '600',
-
-        height: '400',
-
-        dataFormat: 'json',
-
-        dataSource: {
-
-                "chart": {
-
-                "caption": "Global Population",
-
-                "theme": "fint",
-
-                "formatNumberScale":"0",
-
-                "numberSuffix":"M"
-
-            },
-
-            "colorrange": {
-
-                "color": [
-
-                    {
-
+    <head>
+        <title>A Data Driven Map</title>
+        <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
+        <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
+    <script>
+    FusionCharts.ready(function () {
+        var populationMap = new FusionCharts({
+            type: 'maps/world',
+            renderAt: 'chart-container',
+            width: '600',
+            height: '400',
+            dataFormat: 'json',
+            dataSource: {
+                    "chart": {
+                    "caption": "Global Population",
+                    "theme": "fint",
+                    "formatNumberScale":"0",
+                    "numberSuffix":"M"
+                },
+                "colorrange": {
+                    "color": [{
                         "minvalue": "0",
-
                         "maxvalue": "100",
-
                         "code": "#E0F0E0",
-
                         "displayValue" : "Below 100M"
-
-                    },
-
-                    {
-
+                    }, {
                         "minvalue": "100",
-
                         "maxvalue": "500",
-
                         "code": "#D0DFA3",
-
                         "displayValue" : "100-500M"
-
-                    },
-
-                    {
-
+                    }, {
                         "minvalue": "500",
-
                         "maxvalue": "1000",
-
                         "code": "#B0BF92",
-
                         "displayValue" : "500-1000M"
-
-                    },
-
-                    {
-
+                    }, {
                         "minvalue": "1000",
-
                         "maxvalue": "5000",
-
                         "code": "#91AF64",
-
                         "displayValue" : "Above 1B"
-
-                    }
-
-                ]
-
-            },
-
-            "data": [
-
-                {
-
+                    }]
+                },
+                "data": [{
                     "id": "NA",
-
                     "value": "515"
-
-                },
-
-                {
-
+                }, {
                     "id": "SA",
-
                     "value": "373"
-
-                },
-
-                {
-
+                }, {
                     "id": "AS",
-
                     "value": "3875"
-
-                },
-
-                {
-
+                }, {
                     "id": "EU",
-
                     "value": "727"
-
-                },
-
-                {
-
+                }, {
                     "id": "AF",
-
                     "value": "885"
-
-                },
-
-                {
-
+                }, {
                     "id": "AU",
-
                     "value": "32"
-
-                }
-
-            ]
-
-        }
-
-    }).render();
-
-});
-
-</script>
-
-</head>
-
-<body>
-
-<div id="chart-container">A world map will load here!</div>
-
-</body>
-
+                }]
+            }
+        }).render();
+    });
+    </script>
+    </head>
+    <body>
+    <div id="chart-container">A world map will load here!</div>
+    </body>
 </html>
-
 ```
 
 ## Troubleshoot your map
@@ -530,29 +287,20 @@ FusionCharts Suite XT shows only the short names of the entities on the map by d
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
-        ...
-
         "showLabels": "1",
-
         "useSNameInLabels": "1"
-
     },
-
-   
-
+}
 ```
 
 The map will look as shown below:
 
 <map>
 
-Note: In the above map, each of the continents are entities and their full names are part of the label.
+> In the above map, each of the continents are entities and their full names are part of the label.
 
 ### Show values in labels
 
@@ -564,22 +312,13 @@ You can set the entity labels to show data values. Use the following attributes 
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
-       ...
-
         "labelSepChar": ": ",
-
         "includeValueInLabels": "1"
-
     },
-
-  
-
+}
 ```
 
 The map will look as shown below:
@@ -594,44 +333,23 @@ By default, a map displays labels for all entities. However, you can choose to d
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
-       ...
-
-    },
-
-    "colorrange": {
-
-        "color": [
-
-           ...
-
-        ]
-
-    },
-
-    "data": [
-
         ...
-
+    },
+    "colorrange": {
+        "color": [{
+            ...
+        }]
+    },
+    "data": [
+        ...
         {
-
-           ...
-
+            ...
             "showLabel": "1"
-
-        },
-
-      
-
-    ]
-
+    }]
 }
-
 ```
 
 The map will look as shown below:
@@ -646,42 +364,21 @@ You can display customized label text for each specific entity. Use the `display
 
 Refer to the code below:
 
-```
-
-```
-
+```json
 {
-
     "chart": {
-
-     ...
-
+        ...
     },
-
     "colorrange": {
-
-        "color": [
-
-           ...
-
-        ]
-
-    },
-
-    "data": [
-
-        {
-
+        "color": [{
             ...
-
-            "displayValue": "Moderate"
-
-        },
-
-    ]
-
+        }]
+    },
+    "data": [{
+        ...
+        "displayValue": "Moderate"
+    }]
 }
-
 ```
 
 The map will look as shown below:
@@ -704,48 +401,26 @@ You can customize font-related properties for each entity. Use the following att
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
-       ...
-
+        ...
     },
-
     "colorrange": {
-
-        "color": [
-
-          ...
-
-        ]
-
-    },
-
-    "data": [
-
-       ...
-
-        {
-
+        "color": [{
             ...
-
+        }]
+    },
+    "data": [
+        ...
+        {
             "Font": "Helvetica",
-
             "FontSize": "10",
-
             "FontColor": "#383838",
-
             "FontBold": "1"
-
         }
-
     ]
-
 }
-
 ```
 
 The map will look as shown below:
@@ -760,20 +435,12 @@ By default, tooltips in maps show the full name of the entity along with the val
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
-        ...
-
         "useSNameInToolTip": "1"
-
-        
-
     },
-
+}
 ```
 
 The map will look as shown below:
@@ -786,20 +453,12 @@ In FusionCharts Suite XT, tooltips are on by default. However, you can turn them
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
-        ...
-
         "showEntityToolTip": "0"
-
-        
-
     },
-
+}
 ```
 
 The map will look as shown below:
@@ -818,26 +477,14 @@ There are times when you may have to work with datasets, in which one or more en
 
 Refer to the code below:
 
-```
-
+```json
 {
-
     "chart": {
-
-        ...,
-
         "nullEntityColor": "#C2C2D6",
-
         "nullEntityAlpha": "50",
-
         "hoverOnNull": "0"
-
-        
-
     },
-
- 
-
+}
 ```
 
 The map will look as shown below:

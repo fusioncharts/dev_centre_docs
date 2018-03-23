@@ -1,14 +1,12 @@
 ---
-permalink: map-guide/setup.html
 title: Setup to Install Maps | FusionCharts
 description: Maps are installed as a part of FusionCharts Suite XT package. Once installed, ensure that fusioncharts.js and fusioncharts.maps.js files are present in folder
 heading: Setup
-chartPresent: false
 ---
 
 ## Install maps
 
-You install maps automatically, as part of the FusionCharts Suite XT package. For detailed instructions on installing FusionCharts Suite XT or FusionMaps XT, see (`/getting-started/installation`). Once installed, ensure that `fusioncharts.js` and `fusioncharts.maps.js` files are present in the `fusioncharts` folder. If you want to use any specific map, you also need to paste its definition files in the `fusioncharts/maps/folder`.
+You install maps automatically, as part of the FusionCharts Suite XT package. For detailed instructions on installing FusionCharts Suite XT or FusionMaps XT, click [here]({% site.baseurl %}/installation/client-side-frameworks/install-using-plainjs '@@open-newtab'). Once installed, ensure that `fusioncharts.js` and `fusioncharts.maps.js` files are present in the `fusioncharts` folder. If you want to use any specific map, you also need to paste its definition files in the `fusioncharts/maps/folder`.
 
 ## Install additional map files
 
