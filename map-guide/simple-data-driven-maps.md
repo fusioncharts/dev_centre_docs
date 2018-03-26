@@ -16,7 +16,7 @@ There are 4 simple steps to building a map using FusionCharts Suite XT, as detai
 
 ## Convert data to JSON/XML format
 
-FusionCharts Suite XT accepts both JSON and XML data formats, and can read them as strings from a local or remote file. Refer to the code given below for the JSON/XML representation of the data you need, in order to build the map shown above.
+FusionCharts Suite XT accepts both JSON and XML data formats and can read them as strings from a local or remote file. Refer to the code given below for the JSON/XML representation of the data you need, to build the map shown above.
 
 ```json
 {
@@ -73,7 +73,7 @@ FusionCharts Suite XT accepts both JSON and XML data formats, and can read them 
 
 ### Include FusionCharts Suite XT library in your page
 
-To include the FusionCharts Suite XT JavaScript library in your HTML page, use the &lt;script&gt; tag as shown below. 
+To include the FusionCharts Suite XT JavaScript library on your HTML page, use the `&lt;script&gt;` tag as shown below: 
 
 ```html
 <head>
@@ -87,7 +87,7 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, use t
 
 ## Create a container for your map in the web page
 
-Next, you need to create a container for your map in the form of a &lt;div&gt; element, as shown below:
+Next, you need to create a container for your map on the form of a `&lt;div&gt;` element, as shown below:
 
 ```json
 <body>
@@ -109,9 +109,9 @@ In the final step, you have to create an instance of the map, initialize it with
 
 * To specify the data format as JSON, set the `dataFormat` parameter to `json`.
 
-* The actual JSON data is embedded as string as value of the `dataSource` parameter. Configure the functional and cosmetic attributes of your map using the list of key-value pairs contained within the `chart` object.
+* The actual JSON data is embedded as string as the value of the `dataSource` parameter. Configure the functional and cosmetic attributes of your map using the list of key-value pairs contained within the `chart` object.
 
-* Use the `colorrange` object to define different numeric ranges, each associated with a color, in order to indicate progressive thresholds.
+* Use the `colorrange` object to define different numeric ranges, each associated with a color, to indicate progressive thresholds.
 
 * Set the values of `showLabels` and `includeValueInLabels` attributes to `1`, to display the names and values in each continent. Next, specify the suffix of the value to be million using the `numberSuffix` attribute set to `M`.
 
@@ -172,7 +172,7 @@ Refer to the code below:
 }
 ```
 
-Now that you know how to create a simple map, try customizing different map attributes. You can apply the following customizations to maps:
+Now that you know how to create a simple map try customizing different map attributes. You can apply the following customizations to maps:
 
 ## Show full names in map labels
 
@@ -199,7 +199,7 @@ The map will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/5Gr3N/ "@@open-newtab") to edit the above map.
 
-> In the above map, each of the continents are entities and their full names are part of the label.
+> In the above map, each of the continent is entities, and their full names are part of the label.
 
 ## Show values in labels
 
@@ -412,6 +412,6 @@ In case something goes wrong and you are unable to see the map, check for the fo
 
 * If the chart does not show up at all, but there are no JavaScript errors, check whether the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see whether `fusioncharts.js` has loaded properly.
 
-* If you get a **Loading data** or a **Error in loading data** message, check whether your JSON data structure is correct, and ensure there are no conflicts related to quotation marks in your code.
+* If you get a **Loading data** or an **Error in loading data** message, check whether your JSON data structure is correct, and ensure there are no conflicts related to quotation marks in your code.
 
 Click here for more information on [Troubleshooting]({% site.baseurl %}/troubleshooting/debugger '@@open-newtab').
