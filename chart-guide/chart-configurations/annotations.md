@@ -1284,7 +1284,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/pLvuerqt/ "@@open-newtab") to edit the above chart.
 
-> In the above chart, you can see how to use annotations to create a callout (using a rectangle, a polygon, and a text annotation, grouped together) above a column. The annotations are dynamically positioned using annotation macros. After the chart is rendered (when the `[renderComplete](https://docs.fusioncharts.com/archive/3.12.1/api/fusioncharts/fusioncharts-events.html#event-renderComplete)` event is triggered), the quarter with the highest revenue is determined and the annotation group is positioned over the data plot representing that quarter.
+> In the above chart, you can see how to use annotations to create a callout (using a rectangle, a polygon, and a text annotation, grouped together) above a column. The annotations are dynamically positioned using annotation macros. After the chart is rendered (when the `[renderComplete]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#rendercomplete-226 '@@open-newtab')` event is triggered), the quarter with the highest revenue is determined and the annotation group is positioned over the data plot representing that quarter.
 
 ### Provide more information about data plots
 
@@ -1524,7 +1524,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/uc91ftc1/ "@@open-newtab") to edit the above chart.
 
-> The above chart compares the footfall at two stores, Bakersfield Central and Los Angeles Topanga. When you hover the mouse pointer over a data plot, it triggers the `[dataplotRollover](https://docs.fusioncharts.com/archive/3.12.1/api/fusioncharts/fusioncharts-events.html#event-dataplotRollOver)` event. Consequently, an annotation group (containing a line, a label, and text annotation) is shown, which displays additional information about the data plot. When you hover the mouse pointer out of the data plot, it triggers the `[dataPlotRollOut](https://docs.fusioncharts.com/archive/3.12.1/api/fusioncharts/fusioncharts-events.html#event-dataplotRollOut)` event and the annotation group is hidden.
+> The above chart compares the footfall at two stores, Bakersfield Central and Los Angeles Topanga. When you hover the mouse pointer over a data plot, it triggers the `[dataplotRollover]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollover-247 '@@open-newtab')` event. Consequently, an annotation group (containing a line, a label, and text annotation) is shown, which displays additional information about the data plot. When you hover the mouse pointer out of the data plot, it triggers the `[dataPlotRollOut]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollout-249 '@@open-newtab')` event and the annotation group is hidden.
 
 Macro sub-tokens are used to position the annotation group with respect to the axes and datasets. The `hide()` method is used to hide the group.
 

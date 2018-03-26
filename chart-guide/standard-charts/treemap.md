@@ -208,7 +208,7 @@ A sample treemap with the gradient legend set to show only those nodes that have
 
 ![Treemap-GIF-3]({% site.baseurl %}/gif/standard-charts-treemap-gif-3.gif)
 
-Click [here]({% site.baseurl %}chart-attributes/?chart=treemap "@@open-newtab") for the complete list of attributes supported by the treemap.
+Click [here]({% site.baseurl %}/chart-attributes/?chart=treemap "@@open-newtab") for the complete list of attributes supported by the treemap.
 
 ## Set tiling algorithm for the treemap
 
@@ -317,7 +317,7 @@ The chart looks like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/buksebna/ "@@open-newtab") to edit the above chart.
 
-Click [here]({% site.baseurl %}chart-attributes/?chart=treemap "@@open-newtab") for the complete list of attributes supported by the treemap.
+Click [here]({% site.baseurl %}/chart-attributes/?chart=treemap "@@open-newtab") for the complete list of attributes supported by the treemap.
 
 ## Configure the Treemap
 
@@ -556,8 +556,6 @@ The chart will look as shown below:
 {% embed_chart standard-charts-treemap-example-11.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/5r3oa3r5/ "@@open-newtab") to edit the above chart.
-
-Click [here ](https://www.fusioncharts.com/dev/chart-attributes?chart=treeap)for the complete list of attributes supported by the treemap.
 
 ## Use events in the treemap
 
