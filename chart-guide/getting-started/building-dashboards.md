@@ -601,7 +601,7 @@ The HTML code to build this dashboard is given here:
     <div id='container'>
         <div id='header'>
             <div id='logoContainer'>
-                <img src="http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png" alt='Logo' />
+                <img src="https://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png" alt='Logo' />
                 <div>
                     <h2>Harry's Supermart</h2>
 
@@ -611,7 +611,7 @@ The HTML code to build this dashboard is given here:
                 </div>
             </div>
             <div id='userDetail'>
-                <img src="http://static.fusioncharts.com/sampledata/images/user_image.jpg" alt='Logo' />
+                <img src="https://static.fusioncharts.com/sampledata/images/user_image.jpg" alt='Logo' />
                 <div>
                     <p>Welcome John</p>
                     <p>Store Manager</p>

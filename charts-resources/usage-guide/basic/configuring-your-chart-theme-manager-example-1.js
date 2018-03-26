@@ -55,9 +55,9 @@
             // creating div for theme controllers
             var scriptElem, controllers = document.createElement('div'),
                 themeCollection = {
-                'zune': 'http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.zune.js',
-                'ocean': 'http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.ocean.js',
-                'carbon': 'http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.carbon.js'
+                'zune': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.zune.js',
+                'ocean': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.ocean.js',
+                'carbon': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.carbon.js'
             };
             for(var theme in themeCollection) {
                 scriptElem = document.createElement('script');

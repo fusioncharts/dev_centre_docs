@@ -38,7 +38,7 @@ There are two ways you can install FusionCharts JS library in your project
 Write a script tag in the section of the page where you want to add the source of the FusionCharts library link from the official CDN:
 
 ```html
-<script type="text/javascript" src="http://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+<script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
 
 ```
 

@@ -26,7 +26,7 @@
             "xAxisLineThickness": "1",
             "xAxisLineColor": "#999999",
             "canvasBgColor": "#ffffff",
-            "logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
+            "logoURL": "https://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
             "legendBorderAlpha": "0",
             "legendShadow": "0",
             "divlineAlpha": "100",
