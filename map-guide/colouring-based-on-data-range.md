@@ -1,6 +1,6 @@
 ---
 title: Coloring Based on Data Range | FusionCharts
-description: A gradient scale allows you to specify colours associated with specific data points. This defines an automatic gradient scale across the data range.
+description: A gradient scale allows you to specify colors associated with specific data points. This defines an automatic gradient scale across the data range.
 heading: Coloring Based on Data Range
 ---
 
@@ -8,13 +8,13 @@ You have to use color ranges to define entity colors based on values, in order t
 
 Note that you need to denote entities within these buckets with the same color. Also, you need to define colors for each data range. This can become tedious if you have to deal with a large number of buckets. In that case, you can use a gradient scale to simplify this process.
 
-Using a gradient scale, you can specify colours associated with specific data points. This defines an automatic gradient scale across the data range. Entities appear in unique colors as per the data value position on the gradient scale.
+Using a gradient scale, you can specify colors associated with specific data points. This defines an automatic gradient scale across the data range. Entities appear in unique colors as per the data value position on the gradient scale.
 
 ## Build a map with a gradient scale
 
 Here's how you can build a map with a gradient scale:
 
-* Set the `caption` of the map and apply the `fint` theme (FusionCharts Internal Theme) to control the cosmetic properties of the map. Use the `formatNumberScale` and `showLabels` attributes to specify the formatting on labels.
+* Set the `caption` of the map and apply the `fint` theme (FusionCharts Internal Theme) to control the cosmetic properties of the map. Use the `formatNumberScale` and `showLabels` attributes to specify the formatting of labels.
 
 * Use the `colorrange` object to define different numeric ranges of the gradient legend. Also, use the following attributes to define specific properties:
 

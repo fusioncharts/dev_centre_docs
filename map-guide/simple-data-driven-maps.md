@@ -73,7 +73,7 @@ FusionCharts Suite XT accepts both JSON and XML data formats and can read them a
 
 ### Include FusionCharts Suite XT library in your page
 
-To include the FusionCharts Suite XT JavaScript library on your HTML page, use the `&lt;script&gt;` tag as shown below: 
+To include the FusionCharts Suite XT JavaScript library on your HTML page, use the `<script>` tag as shown below: 
 
 ```html
 <head>
@@ -87,7 +87,7 @@ To include the FusionCharts Suite XT JavaScript library on your HTML page, use t
 
 ## Create a container for your map in the web page
 
-Next, you need to create a container for your map on the form of a `&lt;div&gt;` element, as shown below:
+Next, you need to create a container for your map on the form of a `<div>` element, as shown below:
 
 ```json
 <body>

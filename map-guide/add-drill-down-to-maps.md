@@ -300,7 +300,7 @@ The code given below ensures that whenever you click on an entity, a pop up wind
 
 Click [here](https://www.fusioncharts.com/getting-started/building-your-map) for Instructions on building the base US map and the data used. 
 
-Refer to the code snippet given below to configures the behaviour of the drill down as part of the entity:
+Refer to the code snippet given below to configures the behavior of the drill down as part of the entity:
 
 ```json
 {
@@ -318,9 +318,9 @@ Click [here](http://jsfiddle.net/fusioncharts/9ntbpevv/ "@@open-newtab") to edit
 
 > In the map given above, you are calling the `drillDownState` method and passing `DC|District of Columbia` to it as parameter.
 
-### Open a URL in the same page
+### Open a URL on the same page
 
-In the code snippet given below, you can see how, whenever you click on the entity labelled `DC`, the url specified in `link` will open up in the same page:
+In the code snippet given below, you can see how, whenever you click on the entity labeled `DC`, the url specified in `link` will open up in the same page:
 
 ```json
 {
@@ -332,7 +332,7 @@ In the code snippet given below, you can see how, whenever you click on the enti
 
 ### Open a URL in a new browser window
 
-In the code snippet given below, you can see how, whenever you click on the entity labelled `DC`, the url specified in `link` will open up in a new browser window:
+In the code snippet given below, you can see how, whenever you click on the entity labeled `DC`, the url specified in `link` will open up in a new browser window:
 
 ```json
 {
@@ -344,7 +344,7 @@ In the code snippet given below, you can see how, whenever you click on the enti
 
 ### Open a URL in a specified frame/iframe
 
-In the code snippet given below, you can see how, whenever you click on the entity labelled `DC`, the url specified in `link` will open up in a frame (or iframe) within the same browser window:
+In the code snippet given below, you can see how, whenever you click on the entity labeled `DC`, the url specified in `link` will open up in a frame (or iframe) within the same browser window:
 
 ```json
 {
@@ -356,7 +356,7 @@ In the code snippet given below, you can see how, whenever you click on the enti
 
 ### Open a URL in a pop-up window
 
-In the code snippet given below, you can see how, whenever you click on the entity labelled `DC`, the url specified in `link` will open up in a pop up window. Note that you can also configure the height, width, toolbar visibility and resizability of the pop up window.
+In the code snippet given below, you can see how, whenever you click on the entity labeled `DC`, the url specified in `link` will open up in a pop up window. Note that you can also configure the height, width, toolbar visibility and resizability of the pop up window.
 
 ```json
 {
@@ -370,7 +370,7 @@ In the code snippet given below, you can see how, whenever you click on the enti
 
 You can use `LinkedCharts` to insert reference to a new chart in the code, so that it opens whenever you click on a particular entity within a map. In these cases, you do not need to specify custom URLs or JavaScript methods to the `link` attribute. The new chart that opens is called dependent chart, and is a child of the parent chart.
 
-Note that all the links originate from a parent chart. The data of the parent chart contains data for all descendant charts, also called the linked data. You can configure the descendant charts to either replace the parent chart with an option to drill back up to the parent, or open them in new dialogs or frames. You need to configure the `link` for this behaviour, just the way shown in the previous section.
+Note that all the links originate from a parent chart. The data of the parent chart contains data for all descendant charts, also called the linked data. You can configure the descendant charts to either replace the parent chart with an option to drill back up to the parent, or open them in new dialogs or frames. You need to configure the `link` for this behavior, just the way shown in the previous section.
 
 ### Connect one map to another using `LinkedCharts`
 
@@ -382,7 +382,7 @@ Here's how you can build the map shown above:
 
 * Ensure that the link contains `newchart` followed by a hyphen (`-`) and the data format for the new chart. If you want to use JSON data, set it to `json`, whereas for XML data, set it to `xml`. If you use the data URL method, specify `xmlurl` or `jsonurl` as its value.
 
-* The rest of the value (after another hyphen) of the `link` attribute defines the data source. When you set `json` or `xml` as the data format, the data is taken from a specific id of a `linkeddata` element in the same JSON data. If you set it to `xmlurl` or `jsonurl`, it its taken from the path you specify.
+* The rest of the value (after another hyphen) of the `link` attribute defines the data source. When you set `json` or `xml` as the data format, the data is taken from a specific id of a `linkeddata` element in the same JSON data. If you set it to `xmlurl` or `jsonurl`, the data is taken from the path you specify.
 
 * Next, specify the complete data needed for the descendant charts in the `linkeddata` object of the parent chart. Each element of `linkeddata` is an object with two properties - `id` and `linkedchart`. You need to use the `id` property, to map data for each descendant chart with its parent chart. Note that `id` should be unique for each item. `linkedchart` attribute contains the full data for the specific descendant chart as string (JSON or XML).
 
@@ -710,7 +710,7 @@ Here's how you can build this map:
 
 * Ensure that the link contains `newchart` followed by a hyphen (`-`) and the data format for the new chart. If you want to use JSON data, set it to `json`, whereas for XML data, set it to `xml`. If you use the data URL method, specify `xmlurl` or `jsonurl` as its value.
 
-* The rest of the value (after another hyphen) of the `link` attribute defines the data source. When you set `json` or `xml` as the data format, the data is taken from a specific id of a `linkeddata` element in the same JSON data. If you set it to `xmlurl` or `jsonurl`, it its taken from the path you specify.
+* The rest of the value (after another hyphen) of the `link` attribute defines the data source. When you set `json` or `xml` as the data format, the data is taken from a specific id of a `linkeddata` element in the same JSON data. If you set it to `xmlurl` or `jsonurl`, the data is taken from the path you specify.
 
 * Next, specify the complete data needed for the descendant charts in the `linkeddata` object of the parent chart. Each element of `linkeddata` is an object with two properties - `id` and `linkedchart`. You need to use the `id` property, to map data for each descendant chart with its parent chart. Note that `id` should be unique for each item. `linkedchart` attribute contains the full data for the specific descendant chart as string (JSON or XML).
 
