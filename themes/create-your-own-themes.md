@@ -72,7 +72,7 @@ Given below is a stepwise procedure for creating this theme:
 
 * Map global properties for all maps in the application, to the `geo` tier.
 
-**Step 3**: Determine the structure for each tier by mapping the attributes to be defined with the objects they belong to, as listed below:
+**Step 3**: Determine the structure of each tier by mapping the attributes to be defined with the objects they belong to, as listed below:
 
 * Within the `base` tier:
 

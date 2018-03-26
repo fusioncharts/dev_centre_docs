@@ -10,9 +10,9 @@ heading: Introduction to Themes
 
 You can use FusionCharts Suite XT to create web applications that include multiple instances of the various [charts, gauges, and maps](https://www.fusioncharts.com/charts/). However, if you need to maintain a consistent look and feel across the web apps, then you can do that using themes. 
 
-You can manually set the cosmetic and functional attributes for each chart in the corresponding JSON/XML file. This can work if you deal with only a small number of charts. As the number of charts increases, so does your hassles. That is where the Theme Manager shipped with FusionCharts Suite XT comes in. You can use the Theme Manager to create centralized theme files (similar to CSS files) and then apply those themes to any number of charts.
+You can manually set the cosmetic and functional attributes for each chart in the corresponding JSON/XML file. This can work if you deal with only a small number of charts. As the number of charts increases so does your hassles. That is where the Theme Manager shipped with FusionCharts Suite XT comes in. You can use the Theme Manager to create centralized theme files (similar to CSS files) and then apply those themes to any number of charts.
 
-In a theme file, you can centralize the following aspects for a chart, gauge, or map:
+In a theme file, you can centralize the following aspects of a chart, gauge, or map:
 
 * Visual appearance (data plot color, font color, font size, etc.)
 
@@ -34,4 +34,4 @@ A column 2D chart showcasing the 3 themes mentioned above is given below:
 
 Click [here](http://jsfiddle.net/fusioncharts/0dtjw8a5/ '@@open-newtab') to edit the above chart.
 
-In the above chart, click any radio button and then the **Apply Theme** button, to see how the look and feel of the chart changes with each theme.
+In the above chart, click any radio button and then the **Apply Theme** button, to see how the look and feel of the chart change with each theme.
