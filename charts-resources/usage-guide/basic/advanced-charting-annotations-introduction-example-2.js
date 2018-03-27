@@ -29,7 +29,7 @@
           "items": [{
             "id": "butterFinger-icon",
             "type": "image",
-            "url": "http://static.fusioncharts.com/sampledata/images/butterFinger.png",
+            "url": "https://static.fusioncharts.com/sampledata/images/butterFinger.png",
             "x": "$dataset.0.set.0.CenterX - 28",
             "y": "$dataset.0.set.0.STARTY",
             "xScale": "50",
@@ -37,7 +37,7 @@
           }, {
             "id": "tom-user-icon",
             "type": "image",
-            "url": "http://static.fusioncharts.com/sampledata/images/snickrs.png",
+            "url": "https://static.fusioncharts.com/sampledata/images/snickrs.png",
             "x": "$dataset.0.set.1.CenterX - 25",
             "y": "$dataset.0.set.1.STARTY",
             "xScale": "50",
@@ -45,7 +45,7 @@
           }, {
             "id": "Milton-user-icon",
             "type": "image",
-            "url": "http://static.fusioncharts.com/sampledata/images/coffee_crisp.png",
+            "url": "https://static.fusioncharts.com/sampledata/images/coffee_crisp.png",
             "x": "$dataset.0.set.2.CenterX - 25",
             "y": "$dataset.0.set.2.STARTY",
             "xScale": "50",
@@ -53,7 +53,7 @@
           }, {
             "id": "Brian-user-icon",
             "type": "image",
-            "url": "http://static.fusioncharts.com/sampledata/images/100grand.png",
+            "url": "https://static.fusioncharts.com/sampledata/images/100grand.png",
             "x": "$dataset.0.set.3.CenterX - 25",
             "y": "$dataset.0.set.3.STARTY",
             "xScale": "50",

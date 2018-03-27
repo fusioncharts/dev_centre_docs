@@ -57,9 +57,9 @@ Click [here](http://jsfiddle.net/fusioncharts/u2q9Lte5/ "@@open-newtab") to edit
 
 ## Highlight a Data Series via the Legend
 
-Hover the mouse pointer over a legend text to highlight corresponding data plots in the chart. Whenever you do this, the chart reduces the opacity of the data plots belonging to other data series, making the one you clicked on stand out prominently. 
+Hover the mouse pointer over a legend text to highlight corresponding data plots in the chart. Whenever you do this, the chart reduces the opacity of the data plots belonging to other data series, making the one you hover on stand out prominently. 
 
-To enable this feature, set the `plotHighlightEffect` attribute to `fadeout` whenever the mouse pointer hovers over a data plot.
+To enable this feature, set the `plotHighlightEffect` attribute to `fadeout`.
 
 Refer to the code below:
 

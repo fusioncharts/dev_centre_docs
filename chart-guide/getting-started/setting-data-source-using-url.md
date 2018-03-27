@@ -116,7 +116,7 @@ FusionCharts.ready(function() {
         width: '500',
         height: '300',
         dataFormat: 'jsonurl',
-        dataSource: 'http://static.fusioncharts.com/sample/monthlyRevenue.json'
+        dataSource: 'https://static.fusioncharts.com/sample/monthlyRevenue.json'
     });
     fusioncharts.render();
 });
@@ -160,7 +160,7 @@ FusionCharts.ready(function() {
         "width": "500",
         "height": "300",
         "dataFormat": "xmlurl",
-        "dataSource": "http://static.fusioncharts.com/sample/monthlyRevenue.xml"
+        "dataSource": "https://static.fusioncharts.com/sample/monthlyRevenue.xml"
     });
     myChart.render();
 });

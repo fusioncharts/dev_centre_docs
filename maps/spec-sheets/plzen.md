@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/plzenregion
+#### JavaScript Alias: maps/plzen
 
-Map Name: Plzenregion
+Map Name: Plzen
 Dimensions (Width x Height): 370x430
 
 
 
-{% embed_spec_map plzenregion-map.js %}
+{% embed_spec_map plzen-map.js %}
 
 ### List of Entities
 

@@ -1,5 +1,5 @@
 {
-        type: 'maps/ukcounties',
+        type: 'maps/ukcountries',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
