@@ -5,7 +5,7 @@ heading: List of Maps
 breadcrumb: [["Home", "/"], ["List of Maps"]]
 ---
 
-FusionMaps XT offers interactive maps to plot geographical data like revenue by regions, population by state, survey and election results effectively. You can also drop markers on the map to pinpoint places like office locations and flight routes. It has over 1000 maps including all continents, major countries and, all the US states.
+FusionMaps XT offers interactive maps to plot geographical data like revenue by regions, population by state, survey and election results effectively. You can also drop markers on the map to pinpoint places like office locations and flight routes. It has over 1000 maps including all continents, major countries and all the US states.
 
 To render these maps, you need to download the map definition files from [here](https://www.fusioncharts.com/download/maps/definition) and copy-paste the maps folder within your fusioncharts directory.
 
