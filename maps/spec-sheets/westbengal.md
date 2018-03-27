@@ -4,7 +4,7 @@
 
 #### JavaScript Alias: maps/westbengal
 
-Map Name: Westbengal
+Map Name: West Bengal
 Dimensions (Width x Height): 270x410
 
 

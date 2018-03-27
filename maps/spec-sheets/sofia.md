@@ -4,7 +4,7 @@
 
 #### JavaScript Alias: maps/sofia
 
-Map Name: Sofia Province
+Map Name: Sofia
 Dimensions (Width x Height): 601x530
 
 

@@ -3265,8 +3265,8 @@
         "specSheet": "/maps/spec-sheets/asia"
     }, {
         "name": "Asia (No Middle-East)",
-        "alias": "asia3",
-        "specSheet": "/maps/spec-sheets/asia3"
+        "alias": "Asia-Middle-East",
+        "specSheet": "/maps/spec-sheets/Asia-Middle-East"
     }, {
         "name": "Countries",
         "members": [{
