@@ -376,9 +376,9 @@
                 "alias": "pardubiceregion",
                 "specSheet": "/maps/spec-sheets/pardubiceregion"
             }, {
-                "name": "Plzen Region",
-                "alias": "plzenregion",
-                "specSheet": "/maps/spec-sheets/plzenregion"
+                "name": "Plzen",
+                "alias": "plzen",
+                "specSheet": "/maps/spec-sheets/plzen"
             }, {
                 "name": "Prague",
                 "alias": "prague",
