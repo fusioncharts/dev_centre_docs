@@ -46,7 +46,7 @@ Chart Type|JavaScript Alias|
 [District of Columbia]({% site.baseurl %}/maps/spec-sheets/districtofcolumbia "@@soft-reload")|maps/districtofcolumbia|
 [Florida]({% site.baseurl %}/maps/spec-sheets/florida "@@soft-reload")|maps/florida|
 [Georgia]({% site.baseurl %}/maps/spec-sheets/georgia "@@soft-reload")|maps/georgia|
-[Hawaii]({% site.baseurl %}/dev/maps/spec-sheets/hawaii "@@soft-reload")|maps/hawaii|
+[Hawaii]({% site.baseurl %}/maps/spec-sheets/hawaii "@@soft-reload")|maps/hawaii|
 [Idaho]({% site.baseurl %}/maps/spec-sheets/idaho "@@soft-reload")|maps/idaho|
 [Illinois]({% site.baseurl %}/maps/spec-sheets/illinois "@@soft-reload")|maps/illinois|
 [Indiana]({% site.baseurl %}/maps/spec-sheets/indiana "@@soft-reload")|maps/indiana|
@@ -474,7 +474,7 @@ Chart Type|JavaScript Alias|
 [Guinea]({% site.baseurl %}/maps/spec-sheets/guinea "@@soft-reload")|maps/guinea|
 [Guinea-Bissau]({% site.baseurl %}/maps/spec-sheets/guineabissau "@@soft-reload")|maps/guineabissau|
 [Kenya]({% site.baseurl %}/maps/spec-sheets/kenya "@@soft-reload")|maps/kenya|
-[Lesotho]({% site.baseurl %}/maps/spec-sheets/esotho "@@soft-reload")|maps/esotho|
+[Lesotho]({% site.baseurl %}/maps/spec-sheets/lesotho "@@soft-reload")|maps/lesotho|
 [Liberia]({% site.baseurl %}/maps/spec-sheets/liberia "@@soft-reload")|maps/liberia|
 [Libya]({% site.baseurl %}/maps/spec-sheets/libya "@@soft-reload")|maps/libya|
 [Madagascar]({% site.baseurl %}/maps/spec-sheets/madagascar "@@soft-reload")|maps/madagascar|
