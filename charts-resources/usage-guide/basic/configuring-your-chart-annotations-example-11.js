@@ -20,31 +20,31 @@
                 "items": [{
                     "id": "jennifer-user-icon",
                     "type": "image",
-                    "url": "http://static.fusioncharts.com/sampledata/images/round-1.png",
+                    "url": "https://static.fusioncharts.com/sampledata/images/round-1.png",
                     "x": "$xaxis.label.0.x - 24",
                     "y": "$xaxis.label.0.y - 48"
                 }, {
                     "id": "tom-user-icon",
                     "type": "image",
-                    "url": "http://static.fusioncharts.com/sampledata/images/round-3.png",
+                    "url": "https://static.fusioncharts.com/sampledata/images/round-3.png",
                     "x": "$xaxis.label.1.x - 24",
                     "y": "$xaxis.label.1.y - 48"
                 }, {
                     "id": "Milton-user-icon",
                     "type": "image",
-                    "url": "http://static.fusioncharts.com/sampledata/images/round-4.png",
+                    "url": "https://static.fusioncharts.com/sampledata/images/round-4.png",
                     "x": "$xaxis.label.2.x - 24",
                     "y": "$xaxis.label.2.y - 48"
                 }, {
                     "id": "Brian-user-icon",
                     "type": "image",
-                    "url": "http://static.fusioncharts.com/sampledata/images/round-5.png",
+                    "url": "https://static.fusioncharts.com/sampledata/images/round-5.png",
                     "x": "$xaxis.label.3.x - 24",
                     "y": "$xaxis.label.3.y - 48"
                 }, {
                     "id": "Lynda-user-icon",
                     "type": "image",
-                    "url": "http://static.fusioncharts.com/sampledata/images/round-2.png",
+                    "url": "https://static.fusioncharts.com/sampledata/images/round-2.png",
                     "x": "$xaxis.label.4.x - 24",
                     "y": "$xaxis.label.4.y - 48"
                 }]

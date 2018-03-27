@@ -305,85 +305,85 @@
             {
                 "type": "String",
                 "range": "Character",
-                "description": "Sets a prefix for the numbers on the map \n\n For example, to represent all dollars figure on the map, set this attribute to __$__. The numbers will then be rendered as $40000, $50000. \n\n Click [here]{% linkTo tutorials/configuring-your-chart-basic/number-format.md %}{:target='_blank'} for more information.",
+                "description": "Sets a prefix for the numbers on the map \n\n For example, to represent all dollars figure on the map, set this attribute to __$__. The numbers will then be rendered as $40000, $50000. \n\n Click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab') for more information.",
                 "name": "numberPrefix"
             },
             {
                 "type": "String",
                 "range": "Character",
-                "description": "Sets a suffix for the numbers on the map \n\n For example, to represent all numbers quantified as per annum, set this attribute to ' /a'. The numbers will then be rendered as 40000/a, 50000/a and so on. \n\n Click [here]{% linkTo tutorials/configuring-your-chart-basic/number-format.md %}{:target='_blank'} for more information. ",
+                "description": "Sets a suffix for the numbers on the map \n\n For example, to represent all numbers quantified as per annum, set this attribute to ' /a'. The numbers will then be rendered as 40000/a, 50000/a and so on. \n\n Click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab') for more information. ",
                 "name": "numberSuffix"
             },
             {
                 "type": "String",
                 "range": "Character",
-                "description": "Sets the character to be used as the decimal separator for the numbers on the map \n\n Click [here]{% linkTo tutorials/configuring-your-chart-basic/number-format.md %}{:target='_blank'} for more information.",
+                "description": "Sets the character to be used as the decimal separator for the numbers on the map \n\n Click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab') for more information.",
                 "name": "decimalSeparator"
             },
             {
                 "type": "String",
                 "range": "Character",
-                "description": "Sets the character to be used as the thousand separator for the numbers on the map \n\n Click [here]{% linkTo tutorials/configuring-your-chart-basic/number-format.md %}{:target='_blank'} for more information.",
+                "description": "Sets the character to be used as the thousand separator for the numbers on the map \n\n Click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab') for more information.",
                 "name": "thousandSeparator"
             },
             {
                 "type": "List of comma separated Numbers",
                 "range": "",
-                "description": "Sets the number of digits after which the thousand separator should be positioned \n\n Click [here]{% linkTo tutorials/configuring-your-chart-basic/number-format.md %}{:target='_blank'} for more information.",
+                "description": "Sets the number of digits after which the thousand separator should be positioned \n\n Click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab') for more information.",
                 "name": "thousandSeparatorPosition"
             },
             {
                 "type": "String",
                 "range": "Character",
-                "description": "In some countries, commas are used as decimal separators and dots as thousand separators. If your chart data is in XML andyou specify such values, it returns an error while converting to number. So, FusionMaps XT accepts the input decimal and thousand separator from user, so that it can convert it accordingly into the required format. This attribute lets you input the decimal separator. \n\n Click [here]{% linkTo tutorials/configuring-your-chart-basic/number-format.md %}{:target='_blank'} for more information.",
+                "description": "In some countries, commas are used as decimal separators and dots as thousand separators. If your chart data is in XML andyou specify such values, it returns an error while converting to number. So, FusionMaps XT accepts the input decimal and thousand separator from user, so that it can convert it accordingly into the required format. This attribute lets you input the decimal separator. \n\n Click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab') for more information.",
                 "name": "inDecimalSeparator"
             },
             {
                 "type": "String",
                 "range": "Character",
-                "description": "In some countries, commas are used as decimal separators and dots as thousand separators. If your chart data is in XML andyou specify such values, it returns an error while converting to number. So, FusionMaps XT accepts the input decimal and thousand separator from user, so that it can convert it accordingly into the required format. This attribute lets you input the decimal separator. \n\n Click [here]{% linkTo tutorials/configuring-your-chart-basic/number-format.md %}{:target='_blank'} for more information.",
+                "description": "In some countries, commas are used as decimal separators and dots as thousand separators. If your chart data is in XML andyou specify such values, it returns an error while converting to number. So, FusionMaps XT accepts the input decimal and thousand separator from user, so that it can convert it accordingly into the required format. This attribute lets you input the decimal separator. \n\n Click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab') for more information.",
                 "name": "inThousandSeparator"
             },
             {
                 "type": "Boolean",
                 "range": "0/1",
-                "description": "Sets whether the suffix __K__ (for thousands) and __M__ (for millions) will be added to a number after it is truncated and rounded off. \n\n For example, when `formatNumberScale` is set to __1__, the number 1043 will be rendered as 1.04K (assuming `decimals` is set to __2__). \n\n Click [here]{% linkTo tutorials/configuring-your-chart-basic/number-format.md %}{:target='_blank'} for more information.",
+                "description": "Sets whether the suffix __K__ (for thousands) and __M__ (for millions) will be added to a number after it is truncated and rounded off. \n\n For example, when `formatNumberScale` is set to __1__, the number 1043 will be rendered as 1.04K (assuming `decimals` is set to __2__). \n\n Click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab') for more information.",
                 "name": "formatNumberScale"
             },
             {
                 "type": "String",
                 "range": "",
-                "description": "Sets the default unit of the numbers on the map \n\n Click [here]{% linkTo tutorials/configuring-your-chart-basic/number-format.md %}{:target='_blank'} for more information.",
+                "description": "Sets the default unit of the numbers on the map \n\n Click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab') for more information.",
                 "name": "defaultNumberScale"
             },
             {
                 "type": "String",
                 "range": "",
-                "description": "Sets the unit for each block of the number scale \n\n Click [here]{% linkTo tutorials/configuring-your-chart-basic/number-format.md %}{:target='_blank'} for more information.",
+                "description": "Sets the unit for each block of the number scale \n\n Click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab') for more information.",
                 "name": "numberScaleUnit"
             },
             {
                 "type": "String",
                 "range": "",
-                "description": "Sets the range for each block on the number scale \n\n Click [here]{% linkTo tutorials/configuring-your-chart-basic/number-format.md %}{:target='_blank'} for more information.",
+                "description": "Sets the range for each block on the number scale \n\n Click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab') for more information.",
                 "name": "numberScaleValue"
             },
             {
                 "type": "Boolean",
                 "range": "0/1",
-                "description": "Sets whether recursive scaling will be enabled for the numbers on the map \n\n Click [here]{% linkTo tutorials/configuring-your-chart-basic/number-format.md %}{:target='_blank'} for more information.",
+                "description": "Sets whether recursive scaling will be enabled for the numbers on the map \n\n Click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab') for more information.",
                 "name": "scaleRecursively"
             },
             {
                 "type": "Number",
                 "range": "",
-                "description": "Sets the number of recursions to complete during recusrive scaling \n\n Setting this attribute to __1__ completes the entire set of recursion \n\n Click [here]{% linkTo tutorials/configuring-your-chart-basic/number-format.md %}{:target='_blank'} for more information.",
+                "description": "Sets the number of recursions to complete during recusrive scaling \n\n Setting this attribute to __1__ completes the entire set of recursion \n\n Click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab') for more information.",
                 "name": "maxScaleRecursion"
             },
             {
                 "type": "String",
                 "range": "",
-                "description": "Sets the separator character for the scales generated after recursion \n\n Click [here]{% linkTo tutorials/configuring-your-chart-basic/number-format.md %}{:target='_blank'} for more information.",
+                "description": "Sets the separator character for the scales generated after recursion \n\n Click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab') for more information.",
                 "name": "scaleSeparator"
             }
         ],

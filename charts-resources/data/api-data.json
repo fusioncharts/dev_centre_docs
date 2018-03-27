@@ -29077,7 +29077,7 @@
           "access": "",
           "scope": "instance",
           "virtual": false,
-          "description": "Switches between the zoom mode and pin mode of a zoom line chart programmatically. \n\n >You can manually switch between the zoom mode and the pin mode by clicking a button in the top-right corner of the zoom line chart. Click [here]{% linkTo tutorials/chart-guide/zoom-line-chart/configuring-a-zoom-line-chart.md %} to read about how the zoom line chart works under each mode.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/194d0pc2/ '@@ btn link-underline')",
+          "description": "Switches between the zoom mode and pin mode of a zoom line chart programmatically. \n\n >You can manually switch between the zoom mode and the pin mode by clicking a button in the top-right corner of the zoom line chart. Click [here]({% site.baseurl %}/chart-guide/standard-charts/zoom-line-charts '@@open-newtab') to read about how the zoom line chart works under each mode.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/194d0pc2/ '@@ btn link-underline')",
           "examples": {},
           "params": {
             "yes": {
@@ -29197,7 +29197,7 @@
           "access": "",
           "scope": "instance",
           "virtual": false,
-          "description": "Exports a chart as an image or as a PDF document. \n\nTo enable exporting of a chart, the `exportEnabled` attribute (of the `chart` object) should be set to __1__. \n\n When exporting is done programmatically using this method, the export configuration is passed as parameters to this function. \n\n >The `exportChart` function remains undefined until the [loaded]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-loaded) event is triggered. The exporting process is initiated only after the [renderComplete]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-renderComplete) event is triggered.\n\n To read on how you can export charts using the export-related context menu, click [here]{% linkTo tutorials/exporting-charts/using-fc-export-server/server-side-export/introduction.md %}. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/73xgmacm/ '@@ btn link-underline')",
+          "description": "Exports a chart as an image or as a PDF document. \n\nTo enable exporting of a chart, the `exportEnabled` attribute (of the `chart` object) should be set to __1__. \n\n When exporting is done programmatically using this method, the export configuration is passed as parameters to this function. \n\n >The `exportChart` function remains undefined until the [loaded]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-loaded) event is triggered. The exporting process is initiated only after the [renderComplete]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-renderComplete) event is triggered.\n\n To read on how you can export charts using the export-related context menu, click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab'). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/73xgmacm/ '@@ btn link-underline')",
           "examples": {},
           "params": {
             "options": {

@@ -35,10 +35,6 @@
             "alias": "europewithcountries",
             "specSheet": "/maps/spec-sheets/europewithcountries"
         }, {
-            "name": "Europe (With UK as a single entity)",
-            "alias": "europewithcountries",
-            "specSheet": "/maps/spec-sheets/europewithcountries"
-        }, {
             "name": "Europe (All Islands)",
             "alias": "europe2",
             "specSheet": "/maps/spec-sheets/europe2"
@@ -605,6 +601,10 @@
                 "name": "Saarland",
                 "alias": "saarland",
                 "specSheet": "/maps/spec-sheets/saarland"
+            }, {
+                "name": "Sachsenanhalt",
+                "alias": "sachsenanhalt",
+                "specSheet": "/maps/spec-sheets/sachsenanhalt"
             }, {
                 "name": "Saxony",
                 "alias": "saxony",
@@ -1829,6 +1829,10 @@
             "alias": "uk7",
             "specSheet": "/maps/spec-sheets/uk7"
         }, {
+            "name": "Ukcountries",
+            "alias": "ukcountries",
+            "specSheet": "/maps/spec-sheets/ukcountries"
+        }, {
             "name": "Ukraine",
             "alias": "ukraine",
             "specSheet": "/maps/spec-sheets/ukraine",
@@ -1903,7 +1907,7 @@
         "specSheet": "/maps/spec-sheets/barbados",
         "markerData": "/maps/marker-data/barbados"
     }, {
-        "name": "Cayman Island",
+        "name": "Cayman Islands",
         "alias": "caymanislands",
         "specSheet": "/maps/spec-sheets/caymanislands",
         "markerData": "/maps/marker-data/caymanislands"
@@ -2644,6 +2648,10 @@
                 "alias": "seattleareacode",
                 "specSheet": "/maps/spec-sheets/seattleareacode"
             }, {
+                "name": "Southern California LA Area Code",
+                "alias": "southerncalifornialaareacode",
+                "specSheet": "/maps/spec-sheets/southerncalifornialaareacode"
+            }, {
                 "name": "South Carolina Area Code",
                 "alias": "southcarolinaareacode",
                 "specSheet": "/maps/spec-sheets/southcarolinaareacode"
@@ -2699,6 +2707,10 @@
                 "name": "Alabama Congressional",
                 "alias": "alabamacongressional",
                 "specSheet": "/maps/spec-sheets/alabamacongressional"
+            }, {
+                "name": "American Samoa Congressional",
+                "alias": "Americansamoacongressional",
+                "specSheet": "/maps/spec-sheets/Americansamoacongressional"
             }, {
                 "name": "Arizona Congressional",
                 "alias": "arizonacongressional",
@@ -2852,6 +2864,10 @@
                 "alias": "pennsylvaniacongressional",
                 "specSheet": "/maps/spec-sheets/pennsylvaniacongressional"
             }, {
+                "name": "Puerto Rico Congressional",
+                "alias": "puertoricocongressional",
+                "specSheet": "/maps/spec-sheets/puertoricocongressional"
+            }, {
                 "name": "Rhode Island Congressional",
                 "alias": "rhodeislandcongressional",
                 "specSheet": "/maps/spec-sheets/rhodeislandcongressional"
@@ -2899,6 +2915,10 @@
                 "name": "Wyoming Congressional",
                 "alias": "wyomingcongressional",
                 "specSheet": "/maps/spec-sheets/wyomingcongressional"
+            }, {
+                "name": "US Virgin Islands Congressional",
+                "alias": "usvirginislandscongressional",
+                "specSheet": "/maps/spec-sheets/usvirginislandscongressional"
             }]
         }, {
             "name": "DMA",
@@ -2919,6 +2939,10 @@
                 "name": "Middle Atlantic DMA",
                 "alias": "middleatlanticdma",
                 "specSheet": "/maps/spec-sheets/middleatlanticdma"
+            }, {
+                "name": "Mountain DMA",
+                "alias": "mountaindma",
+                "specSheet": "/maps/spec-sheets/mountaindma"
             }, {
                 "name": "New England DMA",
                 "alias": "newenglanddma",
@@ -3241,8 +3265,8 @@
         "specSheet": "/maps/spec-sheets/asia"
     }, {
         "name": "Asia (No Middle-East)",
-        "alias": "asia3",
-        "specSheet": "/maps/spec-sheets/asia3"
+        "alias": "Asia-Middle-East",
+        "specSheet": "/maps/spec-sheets/Asia-Middle-East"
     }, {
         "name": "Countries",
         "members": [{
@@ -5785,8 +5809,7 @@
     }, {
         "name": "Sudan",
         "alias": "sudan",
-        "specSheet": "/maps/spec-sheets/sudan",
-        "markerData": "/maps/marker-data/sudan"
+        "specSheet": "/maps/spec-sheets/sudan"
     }, {
         "name": "Sudan without South Sudan",
         "alias": "sudanwosouthsudan",

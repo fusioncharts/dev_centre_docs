@@ -590,7 +590,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/8a6Bx/ "@@open-newtab") to edit the above gauge.
 
-Note: In the linear gauge above, you can see the the number of major and minor tick marks explicitly set to 9 and 5, respectively.
+> In the linear gauge above, you can see the the number of major and minor tick marks explicitly set to 9 and 5, respectively.
 
 ## Configure cosmetics for tick marks
 

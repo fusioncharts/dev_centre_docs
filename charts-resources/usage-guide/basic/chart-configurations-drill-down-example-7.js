@@ -1,8 +1,8 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '500',
-    height: '350',
+    width: '400',
+    height: '300',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -90,8 +90,7 @@
                     "yaxisname": "Amount (In USD)",
                     "numberprefix": "$",
                     "theme": "fint",
-                    "rotateValues": "0",
-                    "link": "newchart-dataformat-datasource"
+                    "rotateValues": "0"
                 },
                 "data": [{
                     "label": "Q1",

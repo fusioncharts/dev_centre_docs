@@ -58,7 +58,7 @@
                 evt.sender.setChartAttribute('theme', 'carbon');
             }
             var themeCollection = {
-                'carbon': 'http://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.carbon.js'
+                'carbon': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.carbon.js'
             };
             for (var theme in themeCollection) {
                 scriptElem = document.createElement('script');

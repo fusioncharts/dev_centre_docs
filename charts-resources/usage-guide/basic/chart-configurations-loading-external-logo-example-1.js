@@ -13,7 +13,7 @@
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
             //External image url path for logo
-            "logoURL": "http://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
+            "logoURL": "https://static.fusioncharts.com/sampledata/images/Logo-HM-72x72.png",
             "logoScale": "80"
         },
 

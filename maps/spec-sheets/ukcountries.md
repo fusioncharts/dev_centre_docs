@@ -2,13 +2,13 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ukcounties
+#### JavaScript Alias: maps/ukcountries
 
-Map Name: Ukcounties
+Map Name: Ukcountries
 Dimensions (Width x Height): 351x592
 
 
-{% embed_spec_map ukcounties-map.js %}
+{% embed_spec_map ukcountries-map.js %}
 
 ### List of Entities
 
