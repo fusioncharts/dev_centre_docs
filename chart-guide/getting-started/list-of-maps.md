@@ -28,7 +28,7 @@ Chart Type|JavaScript Alias|
 [Oceania]({% site.baseurl %}/maps/spec-sheets/oceania "@@soft-reload")|maps/oceania|
 [Asia (no Middle-East)]({% site.baseurl %}/maps/spec-sheets/asia3 "@@soft-reload")|maps/asia3|
 [North America (no Central)]({% site.baseurl %}/maps/spec-sheets/northamericawocentral "@@soft-reload")|maps/northamericawocentral|
-[North America (with Carribeans)]({% site.baseurl %}/maps/spec-sheets/northamericawcaribbean "@@soft-reload")|maps/northamericawithcarribeans|
+[North America (with Caribbeans)]({% site.baseurl %}/maps/spec-sheets/northamericawcaribbean "@@soft-reload")|maps/northamericawithcaribbeans|
 
 ## US & Counties
 
