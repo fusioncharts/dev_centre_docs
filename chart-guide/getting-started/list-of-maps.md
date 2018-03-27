@@ -1256,7 +1256,6 @@ Chart Type|JavaScript Alias|
 [North Carolina Area Code]({% site.baseurl %}/maps/spec-sheets/northcarolinaareacode "@@soft-reload")|maps/northcarolinaareacode|
 [North Dakota Area Code]({% site.baseurl %}/maps/spec-sheets/northdakotaareacode "@@soft-reload")|maps/northdakotaareacode|
 [Northern California Bay Area Code]({% site.baseurl %}/maps/spec-sheets/northerncaliforniabayareacode "@@soft-reload")|maps/northerncaliforniabayareacode|
-
 [Ohio Area Code]({% site.baseurl %}/maps/spec-sheets/ohioareacode "@@soft-reload")|maps/ohioareacode|
 [Oklahoma Area Code]({% site.baseurl %}/maps/spec-sheets/oklahomaareacode "@@soft-reload")|maps/oklahomaareacode|
 [Oregon Area Code]({% site.baseurl %}/maps/spec-sheets/oregonareacode "@@soft-reload")|maps/oregonareacode|
@@ -1267,7 +1266,6 @@ Chart Type|JavaScript Alias|
 [South Carolina Area Code]({% site.baseurl %}/maps/spec-sheets/southcarolinaareacode "@@soft-reload")|maps/southcarolinaareacode|
 [South Dakota Area Code]({% site.baseurl %}/maps/spec-sheets/southdakotaareacode "@@soft-reload")|maps/southdakotaareacode|
 [Southern California LA Area Code]({% site.baseurl %}/maps/spec-sheets/southerncalifornialaareacode "@@soft-reload")|maps/southerncalifornialaareacode|
-
 [Tennessee Area Code]({% site.baseurl %}/maps/spec-sheets/tennesseeareacode "@@soft-reload")|maps/tennesseeareacode|
 [Texas Area Code]({% site.baseurl %}/maps/spec-sheets/texasareacode "@@soft-reload")|maps/texasareacode|
 [Utah Area Code]({% site.baseurl %}/maps/spec-sheets/utahareacode "@@soft-reload")|maps/utahareacode|

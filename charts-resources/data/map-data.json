@@ -35,10 +35,6 @@
             "alias": "europewithcountries",
             "specSheet": "/maps/spec-sheets/europewithcountries"
         }, {
-            "name": "Europe (With UK as a single entity)",
-            "alias": "europewithcountries",
-            "specSheet": "/maps/spec-sheets/europewithcountries"
-        }, {
             "name": "Europe (All Islands)",
             "alias": "europe2",
             "specSheet": "/maps/spec-sheets/europe2"
