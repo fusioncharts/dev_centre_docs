@@ -752,7 +752,7 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-[Czech Republic Districts]({% site.baseurl %}/maps/spec-sheets/westerntransdanubia "@@soft-reload")|maps/czechrepublicdistricts|
+[Czech Republic Districts]({% site.baseurl %}/maps/spec-sheets/czechrepublicdistricts "@@soft-reload")|maps/czechrepublicdistricts|
 
 ### Albania (Counties)
 
