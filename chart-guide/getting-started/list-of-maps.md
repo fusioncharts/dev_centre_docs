@@ -421,8 +421,8 @@ Chart Type|JavaScript Alias|
 [Beqaa]({% site.baseurl %}/maps/spec-sheets/beqaa "@@soft-reload")|maps/beqaa|
 [Mount Lebanon]({% site.baseurl %}/maps/spec-sheets/mountlebanon "@@soft-reload")|maps/mountlebanon|
 [Nabatieh]({% site.baseurl %}/maps/spec-sheets/tehran "@@soft-reload")|maps/nabatieh|
-[North Map]({% site.baseurl %}/maps/spec-sheets/tehran "@@soft-reload")|maps/northmap|
-[South Map]({% site.baseurl %}/maps/spec-sheets/southmap "@@soft-reload")|maps/southmap|
+[North Lebanon]({% site.baseurl %}/maps/spec-sheets/northlebanon "@@soft-reload")|maps/northlebanon|
+[South Lebanon]({% site.baseurl %}/maps/spec-sheets/southlebanon "@@soft-reload")|maps/southlebanon|
 
 ## Oceania
 
@@ -592,7 +592,6 @@ Chart Type|JavaScript Alias|
 [Sardinia]({% site.baseurl %}/maps/spec-sheets/sardinia "@@soft-reload")|maps/sardinia|
 [Sicily]({% site.baseurl %}/maps/spec-sheets/sicily "@@soft-reload")|maps/sicily|
 [Trentino Alto Adige]({% site.baseurl %}/maps/spec-sheets/trentinoaltoadige "@@soft-reload")|maps/trentinoaltoadige|
-[Sudtirol]({% site.baseurl %}/maps/spec-sheets/sudtirol "@@soft-reload")|maps/sudtirol|
 [Tuscany]({% site.baseurl %}/maps/spec-sheets/tuscany "@@soft-reload")|maps/tuscany|
 [Umbria]({% site.baseurl %}/maps/spec-sheets/umbria "@@soft-reload")|maps/umbria|
 [Valle d'Aosta]({% site.baseurl %}/maps/spec-sheets/valledaosta "@@soft-reload")|maps/valledaosta|
@@ -718,7 +717,7 @@ Chart Type|JavaScript Alias|
 [Sliven]({% site.baseurl %}/maps/spec-sheets/sliven "@@soft-reload")|maps/sliven|
 [Smolyan]({% site.baseurl %}/maps/spec-sheets/smolyan "@@soft-reload")|maps/smolyan|
 [Sofia City]({% site.baseurl %}/maps/spec-sheets/gradsofia "@@soft-reload")|maps/gradsofia|
-[Sofia Province]({% site.baseurl %}/maps/spec-sheets/sofiaprovince "@@soft-reload")|maps/sofiaprovince|
+[Sofia Province]({% site.baseurl %}/maps/spec-sheets/sofia "@@soft-reload")|maps/sofia|
 [Stara Zagora]({% site.baseurl %}/maps/spec-sheets/starazagora "@@soft-reload")|maps/starazagora|
 [Targovishte]({% site.baseurl %}/maps/spec-sheets/targovishte "@@soft-reload")|maps/targovishte|
 [Varna]({% site.baseurl %}/maps/spec-sheets/varna "@@soft-reload")|maps/varna|
@@ -1355,7 +1354,7 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-[USA (MSA)]({% site.baseurl %}/maps/spec-sheets/usamsa "@@soft-reload")|maps/usamsa|
+[US (MSA)]({% site.baseurl %}/maps/spec-sheets/usmsa "@@soft-reload")|maps/usmsa|
 
 ### USA TimeZone
 
