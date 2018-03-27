@@ -177,7 +177,7 @@ Chart Type|JavaScript Alias|
 Chart Type|JavaScript Alias|
 -|-
 [UK (With Islands)]({% site.baseurl %}/maps/spec-sheets/uk7 "@@soft-reload")|maps/uk7|
-[UK (With Counties)]({% site.baseurl %}/maps/spec-sheets/ukcounties "@@soft-reload")|maps/ukcounties|
+[UK (With Counties)]({% site.baseurl %}/maps/spec-sheets/ukcountries "@@soft-reload")|maps/ukcountries|
 [England (Region)]({% site.baseurl %}/maps/spec-sheets/englandregion "@@soft-reload")|maps/englandregion|
 [Scotland (Region)]({% site.baseurl %}/maps/spec-sheets/scotlandregion "@@soft-reload")|maps/scotlandregion|
 [Wales]({% site.baseurl %}/maps/spec-sheets/wales "@@soft-reload")|maps/wales|
