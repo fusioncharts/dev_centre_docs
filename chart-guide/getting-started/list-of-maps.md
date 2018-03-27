@@ -544,7 +544,7 @@ Chart Type|JavaScript Alias|
 [Vysocina]({% site.baseurl %}/maps/spec-sheets/vysocina "@@soft-reload")|maps/vysocina|
 [Zlin]({% site.baseurl %}/maps/spec-sheets/zlin "@@soft-reload")|maps/zlin|
 
-### France (Arrondisemants)
+### France (Arrondissemants)
 
 Chart Type|JavaScript Alias|
 -|-
