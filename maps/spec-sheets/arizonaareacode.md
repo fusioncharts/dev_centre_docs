@@ -4,7 +4,7 @@
 
 #### JavaScript Alias: maps/arizonaareacode
 
-Map Name: Arizonaareacode
+Map Name: Arizona Area Code
 Dimensions (Width x Height): 420x500
 
 

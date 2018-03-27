@@ -15,7 +15,7 @@ Dimensions (Width x Height): 879x500
 
 ID | Short label | Label
 ---|---|---|---
-AF|AF|Africa Testing worldwithantartica.md
+AF|AF|Africa Testing
 AT|AT|Antarctica
 AS|AS|Asia
 AU|AU|Australia

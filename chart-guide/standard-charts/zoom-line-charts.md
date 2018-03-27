@@ -25,6 +25,16 @@ To create a zoom line chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
+* Set the `compactDataMode` attribute to `1` to specify that the JSON data is in compact form.
+
+* Set the `pixelsPerPoint` attribute to specify the number of pixels that will be used to render a data point. A greater number of pixels will result in a higher quality display. This attribute is also used to set the distance between consecutive data plots.
+
+* Set the `pixelsPerLabel` attribute to specify the number of pixels that will be used to render a data label.
+
+* Specify the thickness of the line on the char using `lineThickness` attribute.
+
+> The anchors in the zoom-line chart is not clickable, because FusionCharts does not include the supporting API for defining an external URL for the data points.
+
 For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=zoomline "@@open-newtab") page of zoomline chart.
 
 The zoom line chart thus created looks like this:

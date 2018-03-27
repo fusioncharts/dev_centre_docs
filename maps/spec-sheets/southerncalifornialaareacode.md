@@ -4,7 +4,7 @@
 
 #### JavaScript Alias: maps/southerncalifornialaareacode
 
-Map Name: Southerncalifornialaareacode
+Map Name: Southern California LA Area Code
 Dimensions (Width x Height): 480x310
 
 

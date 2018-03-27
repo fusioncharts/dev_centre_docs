@@ -5,7 +5,7 @@ heading: List of Maps
 breadcrumb: [["Home", "/"], ["List of Maps"]]
 ---
 
-FusionMaps XT offers interactive maps to plot geographical data like revenue by regions, population by state, survey and election results effectively. You can also drop markers on the map to pinpoint places like office locations and flight routes. It has over 1000 maps including all continents, major countries and, all the US states.
+FusionMaps XT offers interactive maps to plot geographical data like revenue by regions, population by state, survey and election results effectively. You can also drop markers on the map to pinpoint places like office locations and flight routes. It has over 1000 maps including all continents, major countries and all the US states.
 
 To render these maps, you need to download the map definition files from [here](https://www.fusioncharts.com/download/maps/definition) and copy-paste the maps folder within your fusioncharts directory.
 
@@ -28,7 +28,7 @@ Chart Type|JavaScript Alias|
 [Oceania]({% site.baseurl %}/maps/spec-sheets/oceania "@@soft-reload")|maps/oceania|
 [Asia (no Middle-East)]({% site.baseurl %}/maps/spec-sheets/asia3 "@@soft-reload")|maps/asia3|
 [North America (no Central)]({% site.baseurl %}/maps/spec-sheets/northamericawocentral "@@soft-reload")|maps/northamericawocentral|
-[North America (with Carribeans)]({% site.baseurl %}/maps/spec-sheets/northamericawcaribbean "@@soft-reload")|maps/northamericawithcarribeans|
+[North America (with Caribbeans)]({% site.baseurl %}/maps/spec-sheets/northamericawcaribbean "@@soft-reload")|maps/northamericawithcaribbeans|
 
 ## US & Counties
 
@@ -46,7 +46,7 @@ Chart Type|JavaScript Alias|
 [District of Columbia]({% site.baseurl %}/maps/spec-sheets/districtofcolumbia "@@soft-reload")|maps/districtofcolumbia|
 [Florida]({% site.baseurl %}/maps/spec-sheets/florida "@@soft-reload")|maps/florida|
 [Georgia]({% site.baseurl %}/maps/spec-sheets/georgia "@@soft-reload")|maps/georgia|
-[Hawaii]({% site.baseurl %}/dev/maps/spec-sheets/hawaii "@@soft-reload")|maps/hawaii|
+[Hawaii]({% site.baseurl %}/maps/spec-sheets/hawaii "@@soft-reload")|maps/hawaii|
 [Idaho]({% site.baseurl %}/maps/spec-sheets/idaho "@@soft-reload")|maps/idaho|
 [Illinois]({% site.baseurl %}/maps/spec-sheets/illinois "@@soft-reload")|maps/illinois|
 [Indiana]({% site.baseurl %}/maps/spec-sheets/indiana "@@soft-reload")|maps/indiana|
@@ -177,7 +177,7 @@ Chart Type|JavaScript Alias|
 Chart Type|JavaScript Alias|
 -|-
 [UK (With Islands)]({% site.baseurl %}/maps/spec-sheets/uk7 "@@soft-reload")|maps/uk7|
-[UK (With Counties)]({% site.baseurl %}/maps/spec-sheets/ukcounties "@@soft-reload")|maps/ukcounties|
+[UK (With Counties)]({% site.baseurl %}/maps/spec-sheets/ukcountries "@@soft-reload")|maps/ukcountries|
 [England (Region)]({% site.baseurl %}/maps/spec-sheets/englandregion "@@soft-reload")|maps/englandregion|
 [Scotland (Region)]({% site.baseurl %}/maps/spec-sheets/scotlandregion "@@soft-reload")|maps/scotlandregion|
 [Wales]({% site.baseurl %}/maps/spec-sheets/wales "@@soft-reload")|maps/wales|
@@ -421,8 +421,8 @@ Chart Type|JavaScript Alias|
 [Beqaa]({% site.baseurl %}/maps/spec-sheets/beqaa "@@soft-reload")|maps/beqaa|
 [Mount Lebanon]({% site.baseurl %}/maps/spec-sheets/mountlebanon "@@soft-reload")|maps/mountlebanon|
 [Nabatieh]({% site.baseurl %}/maps/spec-sheets/tehran "@@soft-reload")|maps/nabatieh|
-[North Map]({% site.baseurl %}/maps/spec-sheets/tehran "@@soft-reload")|maps/northmap|
-[South Map]({% site.baseurl %}/maps/spec-sheets/southmap "@@soft-reload")|maps/southmap|
+[North Lebanon]({% site.baseurl %}/maps/spec-sheets/northlebanon "@@soft-reload")|maps/northlebanon|
+[South Lebanon]({% site.baseurl %}/maps/spec-sheets/southlebanon "@@soft-reload")|maps/southlebanon|
 
 ## Oceania
 
@@ -474,7 +474,7 @@ Chart Type|JavaScript Alias|
 [Guinea]({% site.baseurl %}/maps/spec-sheets/guinea "@@soft-reload")|maps/guinea|
 [Guinea-Bissau]({% site.baseurl %}/maps/spec-sheets/guineabissau "@@soft-reload")|maps/guineabissau|
 [Kenya]({% site.baseurl %}/maps/spec-sheets/kenya "@@soft-reload")|maps/kenya|
-[Lesotho]({% site.baseurl %}/maps/spec-sheets/esotho "@@soft-reload")|maps/esotho|
+[Lesotho]({% site.baseurl %}/maps/spec-sheets/lesotho "@@soft-reload")|maps/lesotho|
 [Liberia]({% site.baseurl %}/maps/spec-sheets/liberia "@@soft-reload")|maps/liberia|
 [Libya]({% site.baseurl %}/maps/spec-sheets/libya "@@soft-reload")|maps/libya|
 [Madagascar]({% site.baseurl %}/maps/spec-sheets/madagascar "@@soft-reload")|maps/madagascar|
@@ -544,7 +544,7 @@ Chart Type|JavaScript Alias|
 [Vysocina]({% site.baseurl %}/maps/spec-sheets/vysocina "@@soft-reload")|maps/vysocina|
 [Zlin]({% site.baseurl %}/maps/spec-sheets/zlin "@@soft-reload")|maps/zlin|
 
-### France (Arrondisemants)
+### France (Arrondissemants)
 
 Chart Type|JavaScript Alias|
 -|-
@@ -592,7 +592,6 @@ Chart Type|JavaScript Alias|
 [Sardinia]({% site.baseurl %}/maps/spec-sheets/sardinia "@@soft-reload")|maps/sardinia|
 [Sicily]({% site.baseurl %}/maps/spec-sheets/sicily "@@soft-reload")|maps/sicily|
 [Trentino Alto Adige]({% site.baseurl %}/maps/spec-sheets/trentinoaltoadige "@@soft-reload")|maps/trentinoaltoadige|
-[Sudtirol]({% site.baseurl %}/maps/spec-sheets/sudtirol "@@soft-reload")|maps/sudtirol|
 [Tuscany]({% site.baseurl %}/maps/spec-sheets/tuscany "@@soft-reload")|maps/tuscany|
 [Umbria]({% site.baseurl %}/maps/spec-sheets/umbria "@@soft-reload")|maps/umbria|
 [Valle d'Aosta]({% site.baseurl %}/maps/spec-sheets/valledaosta "@@soft-reload")|maps/valledaosta|
@@ -718,7 +717,7 @@ Chart Type|JavaScript Alias|
 [Sliven]({% site.baseurl %}/maps/spec-sheets/sliven "@@soft-reload")|maps/sliven|
 [Smolyan]({% site.baseurl %}/maps/spec-sheets/smolyan "@@soft-reload")|maps/smolyan|
 [Sofia City]({% site.baseurl %}/maps/spec-sheets/gradsofia "@@soft-reload")|maps/gradsofia|
-[Sofia Province]({% site.baseurl %}/maps/spec-sheets/sofiaprovince "@@soft-reload")|maps/sofiaprovince|
+[Sofia Province]({% site.baseurl %}/maps/spec-sheets/sofia "@@soft-reload")|maps/sofia|
 [Stara Zagora]({% site.baseurl %}/maps/spec-sheets/starazagora "@@soft-reload")|maps/starazagora|
 [Targovishte]({% site.baseurl %}/maps/spec-sheets/targovishte "@@soft-reload")|maps/targovishte|
 [Varna]({% site.baseurl %}/maps/spec-sheets/varna "@@soft-reload")|maps/varna|
@@ -753,7 +752,7 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-[Czech Republic Districts]({% site.baseurl %}/maps/spec-sheets/westerntransdanubia "@@soft-reload")|maps/czechrepublicdistricts|
+[Czech Republic Districts]({% site.baseurl %}/maps/spec-sheets/czechrepublicdistricts "@@soft-reload")|maps/czechrepublicdistricts|
 
 ### Albania (Counties)
 
@@ -1256,7 +1255,6 @@ Chart Type|JavaScript Alias|
 [North Carolina Area Code]({% site.baseurl %}/maps/spec-sheets/northcarolinaareacode "@@soft-reload")|maps/northcarolinaareacode|
 [North Dakota Area Code]({% site.baseurl %}/maps/spec-sheets/northdakotaareacode "@@soft-reload")|maps/northdakotaareacode|
 [Northern California Bay Area Code]({% site.baseurl %}/maps/spec-sheets/northerncaliforniabayareacode "@@soft-reload")|maps/northerncaliforniabayareacode|
-
 [Ohio Area Code]({% site.baseurl %}/maps/spec-sheets/ohioareacode "@@soft-reload")|maps/ohioareacode|
 [Oklahoma Area Code]({% site.baseurl %}/maps/spec-sheets/oklahomaareacode "@@soft-reload")|maps/oklahomaareacode|
 [Oregon Area Code]({% site.baseurl %}/maps/spec-sheets/oregonareacode "@@soft-reload")|maps/oregonareacode|
@@ -1267,7 +1265,6 @@ Chart Type|JavaScript Alias|
 [South Carolina Area Code]({% site.baseurl %}/maps/spec-sheets/southcarolinaareacode "@@soft-reload")|maps/southcarolinaareacode|
 [South Dakota Area Code]({% site.baseurl %}/maps/spec-sheets/southdakotaareacode "@@soft-reload")|maps/southdakotaareacode|
 [Southern California LA Area Code]({% site.baseurl %}/maps/spec-sheets/southerncalifornialaareacode "@@soft-reload")|maps/southerncalifornialaareacode|
-
 [Tennessee Area Code]({% site.baseurl %}/maps/spec-sheets/tennesseeareacode "@@soft-reload")|maps/tennesseeareacode|
 [Texas Area Code]({% site.baseurl %}/maps/spec-sheets/texasareacode "@@soft-reload")|maps/texasareacode|
 [Utah Area Code]({% site.baseurl %}/maps/spec-sheets/utahareacode "@@soft-reload")|maps/utahareacode|
@@ -1357,7 +1354,7 @@ Chart Type|JavaScript Alias|
 
 Chart Type|JavaScript Alias|
 -|-
-[USA (MSA)]({% site.baseurl %}/maps/spec-sheets/usamsa "@@soft-reload")|maps/usamsa|
+[US (MSA)]({% site.baseurl %}/maps/spec-sheets/usmsa "@@soft-reload")|maps/usmsa|
 
 ### USA TimeZone
 
