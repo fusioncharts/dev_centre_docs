@@ -23,7 +23,7 @@
             "useSameFillBgColor": "1",
 
             "chartBottomMargin": "20",
-            "dataStreamURL": "led-data.php",
+            "dataStreamURL": "dummy-url-led-data.php",
             "refreshInterval": "5",
             "theme": "fint"
         },

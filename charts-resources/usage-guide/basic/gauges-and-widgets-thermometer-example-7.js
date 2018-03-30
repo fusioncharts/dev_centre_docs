@@ -1,7 +1,6 @@
 {
     type: 'thermometer',
     renderAt: 'chart-container',
-    id: 'myThm-5',
     width: '240',
     height: '400',
     dataFormat: 'json',
