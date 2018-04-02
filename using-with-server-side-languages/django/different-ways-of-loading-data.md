@@ -233,13 +233,13 @@ Given below are a few tips that, although applicable while using FusionCharts, n
   
 {% embed_data using-with-server-side-languages-django-different-ways-of-loading-data-example-3.js %}
 
-For an example, click [here](/chart-guide/standard-charts/line-area-and-column-charts).
+For an example, click [here]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts).
     
 **Multi-series Chart**
   
 {% embed_data using-with-server-side-languages-django-different-ways-of-loading-data-example-4.js %}
 
-For an example, click [here](/chart-guide/standard-charts/multi-series-charts).
+For an example, click [here]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts).
  
 * Make sure that the XML strings are escaped properly, especially for instances where the data for the chart is enclosed in quotation marks. Also make sure that the entire string is enclosed in single quotes, while the attributes and corresponding values are enclosed in double quotes. Doing otherwise will break the code.
 
