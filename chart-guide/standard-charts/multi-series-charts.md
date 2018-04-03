@@ -15,9 +15,13 @@ The different types of multi-series charts available in the FusionCharts Suite X
 
 * Multi-series Column 3D Chart
 
+* Overlapped Column 2D Chart
+
 * Multi-series Bar 2D Chart
 
 * Multi-series Bar 3D Chart
+
+* Overlapped Bar 2D Chart
 
 * Multi-series Line 2D Chart
 
@@ -59,6 +63,10 @@ The multi-series column chart in 3D looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/3x4xcn70/ "@@open-newtab") to edit the above multi-series chart.
 
+## Overlapped Column 2D Chart
+
+
+
 ## Multi-series Bar 2D Chart
 
 Let's move ahead to create a multi-series bar chart in 2D which will show sales as per two major categories in different stores for last month.
@@ -84,6 +92,10 @@ The multi-series bar chart in 3D looks like:
 {% embed_all standard-charts-multi-series-charts-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/X9xPM/ "@@open-newtab") to edit the above multi-series chart.
+
+## Overlapped Bar 2D Chart
+
+
 
 ## Multi-series Line Chart
 

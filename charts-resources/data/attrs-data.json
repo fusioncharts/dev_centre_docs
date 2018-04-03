@@ -329,6 +329,13 @@
 		"xls": false
 	},
 	{
+		"name": "Multi-series Stacked Column 2D + Line Dual Y Axis",
+		"json": "OverlappedColumn2d",
+		"code": "xt-attr-overlappedcolumn2d.js",
+		"alias": "overlappedcolumn2d",
+		"xls": false
+	},
+	{
 		"name": "Pareto 2D",
 		"json": "Pareto2D",
 		"code": "xt-attr-pareto2d.js",
