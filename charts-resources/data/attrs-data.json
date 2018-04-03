@@ -329,10 +329,24 @@
 		"xls": false
 	},
 	{
-		"name": "Multi-series Stacked Column 2D + Line Dual Y Axis",
+		"name": "Multi-series Stacked Column 2D + Spline Dual Y Axis",
+		"json": "MSStackedColumn2DSplineDy",
+		"code": "xt-attr-msstackedcolumn2dsplinedy.js",
+		"alias": "msstackedcolumn2dsplinedy",
+		"xls": false
+	},
+	{
+		"name": "Overlapped Column 2D",
 		"json": "OverlappedColumn2d",
 		"code": "xt-attr-overlappedcolumn2d.js",
 		"alias": "overlappedcolumn2d",
+		"xls": false
+	},
+	{
+		"name": "Overlapped Bar 2D",
+		"json": "OverlappedBar2d",
+		"code": "xt-attr-overlappedbar2d.js",
+		"alias": "overlappedbar2d",
 		"xls": false
 	},
 	{
