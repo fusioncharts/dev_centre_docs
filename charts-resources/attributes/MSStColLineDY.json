@@ -2979,6 +2979,12 @@
         "path": "dataset",
         "attrs": [
             {
+                "description": "This attribute defines what the particular dataset will be plotted as. Valid values are COLUMN or LINE.",
+                "range": "COLUMN or LINE",
+                "type": "String",
+                "name": "renderAs"
+            },
+            {
                 "description": "This attribute sets the alpha (transparency) of the entire dataset.",
                 "range": "0 - 100 or Comma Separated List",
                 "type": "String",

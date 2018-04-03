@@ -2655,8 +2655,8 @@
         "path": "dataset",
         "attrs": [
             {
-                "description": "This attribute defines what the particular dataset will be plotted as. Valid values are COLUMN or LINE.",
-                "range": "COLUMN or LINE",
+                "description": "This attribute defines what the particular dataset will be plotted as. Valid values are COLUMN, LINE or SPLINE.",
+                "range": "COLUMN, LINE or SPLINE",
                 "type": "String",
                 "name": "renderAs"
             },
