@@ -404,7 +404,7 @@ Refer to the code below:
 ```json
 {
     "chart": {
-        "dataStreamURL": "../../../resources/php/gauge-and-widgets-guide-led-gauge-real-time-gauges-php-1.php",
+        "dataStreamURL": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-led-gauge-real-time-gauges-php-1.php",
         "refreshInterval": "5",
     }
 }
