@@ -13660,7 +13660,7 @@
                   "type": [
                     "number"
                   ],
-                  "description": "Position of the scroll when you started scrolling",
+                  "description": "Position of the scroll when you finish scrolling",
                   "defaultvalue": "",
                   "optional": "",
                   "nullable": "",
@@ -29164,7 +29164,19 @@
           "virtual": false,
           "description": "Scrolls the zoom-line chart to a particular position. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/6dLsruag/ '@@ btn link-underline')",
           "examples": {},
-          "params": {}
+          "params": {
+            "scrollPosition": {
+              "name": "scrollPosition",
+              "type": [
+                "Number"
+              ],
+              "description": "scrollTo is called to scroll the chart. \n\n __Range :__ 0 - 1",
+              "defaultvalue": "0",
+              "optional": "true",
+              "nullable": "",
+              "subparams": {}
+            }
+          }
         },
         "print": {
           "id": "print",
