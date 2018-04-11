@@ -13651,6 +13651,22 @@
                   "subparams": {}
                 }
               }
+            },
+            "dataObj": {
+              "name": "dataObj",
+              "subparams": {
+                "ScrollPosition": {
+                  "name": "ScrollPosition",
+                  "type": [
+                    "number"
+                  ],
+                  "description": "Position of the scroll when you started scrolling",
+                  "defaultvalue": "",
+                  "optional": "",
+                  "nullable": "",
+                  "subparams": {}
+                }
+              }
             }
           }
         },
