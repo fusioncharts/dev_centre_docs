@@ -6,6 +6,8 @@ heading: Handling Events Using jQuery
 chartPresent: true
 ---
 
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
 <p style="background:rgba(249, 249, 249, 1); padding:15px; border:1px solid #888; border-bottom-width:3px; border-radius:4px; text-align:center;">FusionCharts JQuery Helper can be downloaded from <a href="http://www.fusioncharts.com/jquery-charts" target="_blank">here</a>.</p>
 
 The FusionCharts jQuery helper enables you to bind FusionCharts events using the jQuery `bind`/`on` methods. The event handler needs to be attached to an HTML element containing the `FusionCharts` object.
