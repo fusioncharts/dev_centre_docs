@@ -2276,12 +2276,12 @@
                   "nullable": "",
                   "subparams": {}
                 },
-                "prevented": {
-                  "name": "prevented",
+                "defaultPrevented": {
+                  "name": "defaultPrevented",
                   "type": [
                     "boolean"
                   ],
-                  "description": "Boolean attribute that indicates whether the default action of the event was prevented; set to __true__ when `eventObj.preventDefault()` is called.",
+                  "description": "Boolean attribute that indicates whether the default action of the event was defaultPrevented; set to __true__ when `eventObj.preventDefault()` is called.",
                   "defaultvalue": "",
                   "optional": "",
                   "nullable": "",

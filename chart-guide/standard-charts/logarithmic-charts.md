@@ -11,11 +11,13 @@ Logarithmic charts are similar to normal charts except for the fact that logarit
 
 ## Types
 
-FusionCharts Suite XT offers two types of logarithmic charts:
+FusionCharts Suite XT offers three types of logarithmic charts:
 
 * Log Column 2D Chart
 
 * Log Line Chart
+
+* Logarithmic Multi-Series Reverse Column Chart
 
 ## Features
 
@@ -52,6 +54,18 @@ The log column 2D chart thus rendered looks like this:
 {% embed_all standard-charts-logarithmic-charts-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/kEeUR/ "@@open-newtab") to edit the log column 2D chart.
+
+## Logarithmic Multi-Series Reverse Column Chart
+
+Logarithmic multi-series reverse column chart renders the chart plots in vertically reverse order. To render the chart, change the value of the `type` attribute from `logmscolumn2d` to ``.
+
+<!-- For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=LogMSColumn2D "@@open-newtab") page of log column 2D chart.
+
+The log column 2D chart thus rendered looks like this:
+
+{% embed_all standard-charts-logarithmic-charts-example-1.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/kEeUR/ "@@open-newtab") to edit the log column 2D chart. -->
 
 ## Log Line 2D Chart
 
