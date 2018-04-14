@@ -39,7 +39,7 @@ To create a scroll column 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=scrollcolumn2d "@@open-newtab") page of scroll column 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollcolumn2d "@@open-newtab") page of scroll column 2D chart.
 
 The scroll column 2D chart for the above code looks like:
 
@@ -51,7 +51,7 @@ Click [here](http://jsfiddle.net/fusioncharts/nAa33/ "@@open-newtab") to edit th
 
 Now, let's create a scroll line 2D chart. To render a scroll line chart in 2D, change the value of the `type` attribute from `scrollColumn2d` to `scrollline2d`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=scrollline2d "@@open-newtab") page of scroll line 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollline2d "@@open-newtab") page of scroll line 2D chart.
 
 A single-series scroll line 2D chart looks like:
 
@@ -63,7 +63,7 @@ Click [here](http://jsfiddle.net/fusioncharts/Pm3nf/ "@@open-newtab") to edit th
 
 Let's create the scroll area 2D chart. To render a scroll area chart in 2D, change the value of the `type` attribute from `scrollline2d` to `scrollarea2d`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=scrollarea2d "@@open-newtab") page of scroll area 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollarea2d "@@open-newtab") page of scroll area 2D chart.
 
 A single-series scroll area 2D chart looks like:
 
@@ -77,7 +77,7 @@ Stacked charts are the multi-series charts with the plot datasets on top of each
 
  To render a scroll stacked column chart in 2D, change the value of the `type` attribute to `scrollstackedcolumn2d`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=scrollstackedcolumn2d "@@open-newtab") page of scroll stacked column 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollstackedcolumn2d "@@open-newtab") page of scroll stacked column 2D chart.
 
 A scroll stacked column 2D chart looks like:
 
@@ -91,7 +91,7 @@ Now, we will create a scroll combination 2D chart to plot the revenue and the pr
 
 To render a scroll combination 2D chart, change the value of the `type` attribute to `scrollcombi2d`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=scrollcombi2d "@@open-newtab") page of scroll combination 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollcombi2d "@@open-newtab") page of scroll combination 2D chart.
 
 A scroll combination 2D chart looks like:
 
@@ -103,7 +103,7 @@ Click [here](http://jsfiddle.net/fusioncharts/6Y3jt/ "@@open-newtab") to edit th
 
 To create a scroll combination 2D chart with a dual y-axis, change the value of the `type` attribute to `scrollcombidy2d`. Here we will plot the revenue and the profit earned, in dollars, and the profit percent for FY 2017-FY 2018.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=scrollcombidy2d "@@open-newtab") page of croll combination 2D dual y-axis chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollcombidy2d "@@open-newtab") page of croll combination 2D dual y-axis chart.
 
 The scroll combination 2D chart (dual Y) chart thus created looks like this:
 
