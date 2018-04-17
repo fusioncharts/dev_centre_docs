@@ -189,7 +189,7 @@ In the above chart, hover the mouse pointer over the trend-lines to see the tool
 
 Apart from the ones given above, you can use either the `$startDataValue` macro (which represents the formatted starting value of a trend-line/trend-zone) or the `$startValue` macro (which represents the unformatted starting value). If the starting value is 680000 and you use `$startDataValue`, then the chart will show $680k as the data value. On the other hand, if you use `$startValue`, then the chart will show 680000 as the data value.  
 
-Click here for the complete list of tooltip macros supported by FusionCharts Suite XT.
+Click [here]({% site.baseurl %}/chart-guide/chart-configurations/tool-tips#list-of-tooltip-macros-11) for the complete list of tooltip macros supported by FusionCharts Suite XT.
 
 ### Example 2: Tooltip Macros for Map Connectors
 
