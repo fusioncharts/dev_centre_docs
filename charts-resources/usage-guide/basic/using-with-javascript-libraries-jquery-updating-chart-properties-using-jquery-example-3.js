@@ -75,13 +75,16 @@
             }
         },
         'renderComplete': function(event) {
-            $('#caption').attr('value', $('#' + event.sender.id).attrFusionCharts('caption'));
 
-            $('#update').click(function() {
-                $('#' + event.sender.id).attrFusionCharts({
-                    'caption': document.getElementById('caption').value
+            var chartRef = event.sender;
+
+            document.getElementById("caption")
+                .setAttribute("value", chartRef.getChartAttribute("caption"));
+
+            document.getElementById("update")
+                .addEventListener("click", function(){
+                    chartRef.setChartAttribute("caption", document.getElementById('caption').value)
                 });
-            });
         }
     }
 }
