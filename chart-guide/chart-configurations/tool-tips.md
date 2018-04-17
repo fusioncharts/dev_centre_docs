@@ -227,8 +227,6 @@ In the chart above, you can see that the `connectorToolText` attribute has been 
 
 * Average number of shipments made every day for the last quarter, from the source to the destination
 
-Click here for the complete list of tooltip macros supported by FusionCharts Suite XT.|
-
 ### Example 3: Tooltip Macros for the Box and Whisker Chart
 
 Create and format the custom tooltip text for data plots using the `plotToolText` attribute. It accepts macros, plain text, and HTML tags, as strings.
@@ -273,7 +271,7 @@ Click [here](http://jsfiddle.net/fusioncharts/mgkhxywt/ "@@open-newtab") to edit
 
 In the chart shown above, tooltip macros for the box and whisker chart have been used to add the mean, quartile deviation, standard deviation, and mean deviation values to the tooltip text.
 
-> By default, the tooltip text for the data plots in a box and whisker chart includes the following values:
+By default, the tooltip text for the data plots in a box and whisker chart includes the following values:
 
 * Minimum value
 
@@ -282,8 +280,6 @@ In the chart shown above, tooltip macros for the box and whisker chart have been
 * Upper and lower quartile values
 
 * Median
-
-Click here for the complete list of tooltip macros supported by FusionCharts Suite XT.
 
 ## List of Tooltip Macros
 
