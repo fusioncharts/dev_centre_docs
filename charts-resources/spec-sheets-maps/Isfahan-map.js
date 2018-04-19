@@ -1,5 +1,5 @@
 {
-        type: 'maps/Kermanshah',
+        type: 'maps/Isfahan',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"IR.BK.HD","value":888},{"id":"IR.BK.IL","value":3538},{"id":"IR.BK.BK","value":584},{"id":"IR.BK.KZ","value":1936},{"id":"IR.BK.LO","value":2751},{"id":"IR.BK.MK","value":995}]
+            "data": [{"id":"IR.ES.BS","value":888},{"id":"IR.ES.CM","value":3538},{"id":"IR.ES.FA","value":584},{"id":"IR.ES.HG","value":1936},{"id":"IR.ES.ES","value":2751},{"id":"IR.ES.KB","value":995}]
         }
     }

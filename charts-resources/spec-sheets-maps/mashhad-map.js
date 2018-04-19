@@ -1,5 +1,5 @@
 {
-        type: 'maps/mashhad',
+        type: 'maps/Mashhad',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"IR.MS.KE","value":2932},{"id":"IR.MS.KS","value":2761},{"id":"IR.MS.KV","value":3021},{"id":"IR.MS.SB","value":1470},{"id":"IR.MS.KJ","value":3738},{"id":"IR.MS.YA","value":2492}]
+            "data": [{"id":"IR.MS.KE","value":888},{"id":"IR.MS.KS","value":3538},{"id":"IR.MS.KV","value":584},{"id":"IR.MS.SB","value":1936},{"id":"IR.MS.KJ","value":2751},{"id":"IR.MS.YA","value":995}]
         }
     }
