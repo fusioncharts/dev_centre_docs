@@ -1,5 +1,5 @@
 {
-    type: 'maps/Caqueta',
+    type: 'maps/Cesar',
     renderAt: 'chart-container',
     width: '700',
     height: '500',
@@ -32,6 +32,6 @@
             "gradient": "1",
             "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
         },
-        "data": [{"id":"CO.CQ.AL","value":1006},{"id":"CO.CQ.BE","value":644},{"id":"CO.CQ.CA","value":3578},{"id":"CO.CQ.CU","value":2438},{"id":"CO.CQ.ED","value":3044},{"id":"CO.CQ.CS","value":2776},{"id":"CO.CQ.FL","value":651},{"id":"CO.CQ.LM","value":2440},{"id":"CO.CQ.MI","value":1254},{"id":"CO.CQ.MO","value":2328},{"id":"CO.CQ.PR","value":4015},{"id":"CO.CQ.SJ","value":4050},{"id":"CO.CQ.SV","value":2133},{"id":"CO.CQ.SO","value":4188},{"id":"CO.CQ.ST","value":4170},{"id":"CO.CQ.VA","value":589}]
+        "data": [{"id":"CO.CE.AG","value":1006},{"id":"CO.CE.AS","value":644},{"id":"CO.CE.BE","value":3578},{"id":"CO.CE.BO","value":2438},{"id":"CO.CE.CC","value":3044},{"id":"CO.CE.CG","value":2776},{"id":"CO.CE.CO","value":651},{"id":"CO.CE.CU","value":2440},{"id":"CO.CE.EC","value":1254},{"id":"CO.CE.EP","value":2328},{"id":"CO.CE.GA","value":4015},{"id":"CO.CE.GO","value":4050},{"id":"CO.CE.LG","value":2133},{"id":"CO.CE.LJ","value":4188},{"id":"CO.CE.MA","value":4170},{"id":"CO.CE.PA","value":589},{"id":"CO.CE.PE","value":3731},{"id":"CO.CE.PB","value":4403},{"id":"CO.CE.RI","value":4062},{"id":"CO.CE.RP","value":1954},{"id":"CO.CE.SA","value":4000},{"id":"CO.CE.SD","value":4346},{"id":"CO.CE.SM","value":3875},{"id":"CO.CE.TA","value":2405},{"id":"CO.CE.VA","value":3158}]
     }
 }
