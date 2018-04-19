@@ -2,10 +2,10 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/france2016map
+#### JavaScript Alias: maps/France2016
 
-Map Name: France2016Map
-Dimensions (Width x Height): 567x561
+Map Name: France 2016 
+Dimensions (Width x Height): 610x570
 
 
 
@@ -15,16 +15,21 @@ Dimensions (Width x Height): 567x561
 
 ID | Short label | Label
 ---|---|---|---
-4|AL|Alsace Champagne-Ardenne Lorraine
-9|AQ|Aquitaine Limousin Poitou-Charentes
-10|AU|Auvergne-Rhône-Alpes
-8|BU|Bourgogne Franche-Comté
-5|BR|Bretagne
-7|CE|Centre Val de Loire
-13|CO|Corse
+1|NP|Hauts-de-France
+2|NO|Normandy
 3|IL|île-de-France
-11|LA|Languedoc-Roussillon Midi-Pyrénées
-1|NP|Nord-Pas-de-Calais Picardie
-2|NO|Normandie
+4|AL|Grand Est
+5|BR|Brittany
 6|PD|Pays de la Loire
-12|PR|Provence-Alpes Côte-d'Azur
+7|CE|Centre-Val de Loire
+8|BU|Bourgogne-Franche-Comté
+9|AQ|Nouvelle-Aquitaine
+10|AU|Auvergne-Rhône-Alpes
+11|LA|Occitania
+12|PR|Provence-Alpes-Côte-d'Azur
+13|CO|Corsica
+14|FG|French Guiana
+15|GD|Guadeloupe
+16|MN|Martinique
+17|MT|Mayotte
+18|RN|Réunion

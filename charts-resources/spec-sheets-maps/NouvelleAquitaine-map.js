@@ -1,5 +1,5 @@
 {
-        type: 'maps/france2016',
+        type: 'maps/NouvelleAquitaine',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"01","value":1213},{"id":"02","value":2069},{"id":"03","value":1633},{"id":"04","value":4257},{"id":"05","value":3081},{"id":"06","value":3524},{"id":"07","value":624},{"id":"08","value":999},{"id":"09","value":2052},{"id":"10","value":3168},{"id":"11","value":4068},{"id":"12","value":1922},{"id":"13","value":366},{"id":"14","value":4368},{"id":"15","value":1422},{"id":"16","value":566},{"id":"17","value":4422},{"id":"18","value":666}]
+            "data": [{"id":"FR.AQ.CT","value":888},{"id":"FR.AQ.CM","value":3538},{"id":"FR.AQ.CZ","value":584},{"id":"FR.AQ.CR","value":1936},{"id":"FR.AQ.DS","value":2751},{"id":"FR.AQ.DD","value":995},{"id":"FR.AQ.GI","value":3940},{"id":"FR.AQ.HV","value":4076},{"id":"FR.AQ.LD","value":2161},{"id":"FR.AQ.LG","value":1224},{"id":"FR.AQ.PA","value":988},{"id":"FR.AQ.VN","value":1538}]
         }
     }

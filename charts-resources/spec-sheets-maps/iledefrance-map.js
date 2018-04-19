@@ -1,5 +1,5 @@
 {
-        type: 'maps/iledefrance',
+        type: 'maps/IleDeFrance',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"FR.ES","value":714},{"id":"FR.HS","value":763},{"id":"FR.PA","value":1296},{"id":"FR.SM","value":2191},{"id":"FR.SD","value":869},{"id":"FR.VO","value":1010},{"id":"FR.VM","value":1213},{"id":"FR.YV","value":4514}]
+            "data": [{"id":"FR.IL.ES","value":888},{"id":"FR.IL.HD","value":3538},{"id":"FR.IL.SE","value":584},{"id":"FR.IL.SS","value":1936},{"id":"FR.IL.VM","value":2751},{"id":"FR.IL.VO","value":995},{"id":"FR.IL.VP","value":3940},{"id":"FR.IL.YV","value":4076}]
         }
     }

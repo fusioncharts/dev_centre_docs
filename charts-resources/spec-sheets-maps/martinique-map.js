@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"CA.MA","value":1993}]
+            "data": [{"id":"FR.MN.MN","value":1993}]
         }
     }

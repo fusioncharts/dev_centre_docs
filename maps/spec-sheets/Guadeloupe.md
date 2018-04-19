@@ -2,17 +2,17 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/FrenchGuiana
+#### JavaScript Alias: maps/Guadeloupe
 
-Map Name: French Guiana
+Map Name: Guadeloupe
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map frenchGuiana-map.js %}
+{% embed_spec_map Guadeloupe-map.js %}
 
 ### List of Entities
 
 ID | Short label | Label
 ---|---|---|---
-FR.FG.FG|FG|Guyane
+FR.GD.GD|GD|Guadeloupe

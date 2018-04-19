@@ -1,5 +1,5 @@
 {
-        type: 'maps/france2016',
+        type: 'maps/Occitanie',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"01","value":1213},{"id":"02","value":2069},{"id":"03","value":1633},{"id":"04","value":4257},{"id":"05","value":3081},{"id":"06","value":3524},{"id":"07","value":624},{"id":"08","value":999},{"id":"09","value":2052},{"id":"10","value":3168},{"id":"11","value":4068},{"id":"12","value":1922},{"id":"13","value":366},{"id":"14","value":4368},{"id":"15","value":1422},{"id":"16","value":566},{"id":"17","value":4422},{"id":"18","value":666}]
+            "data": [{"id":"FR.LA.AG","value":888},{"id":"FR.LA.AD","value":3538},{"id":"FR.LA.AV","value":584},{"id":"FR.LA.GA","value":1936},{"id":"FR.LA.GE","value":2751},{"id":"FR.LA.HG","value":995},{"id":"FR.LA.HP","value":3940},{"id":"FR.LA.HE","value":4076},{"id":"FR.LA.LO","value":2161},{"id":"FR.LA.LZ","value":1224},{"id":"FR.LA.PO","value":988},{"id":"FR.LA.TA","value":3038},{"id":"FR.LA.TG","value":784}]
         }
     }

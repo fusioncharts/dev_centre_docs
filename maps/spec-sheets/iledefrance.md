@@ -2,10 +2,10 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/iledefrance
+#### JavaScript Alias: maps/IleDeFrance
 
-Map Name: Iledefrance
-Dimensions (Width x Height): 530x440
+Map Name: Ile-De-France 
+Dimensions (Width x Height): 610x570
 
 
 
@@ -15,12 +15,11 @@ Dimensions (Width x Height): 530x440
 
 ID | Short label | Label
 ---|---|---|---
-FR.ES|ES|Essonne
-FR.HS|HS|Hauts de Seine
-FR.PA|PA|Paris
-FR.SM|SM|Seine et Marne
-FR.SD|SD|Seine Saint Denis
-FR.VO|VO|Val d'Oise
-FR.VM|VM|Val de Marne
-FR.YV|YV|Yvelines
-
+FR.IL.ES|ES|Essonne
+FR.IL.HD|HD|Hauts-de-Seine
+FR.IL.SE|SE|Seine-et-Marne
+FR.IL.SS|SS|Seine-Saint-Denis
+FR.IL.VM|VM|Val-de-Marne
+FR.IL.VO|VO|Val-d'Oise
+FR.IL.VP|VP|Paris
+FR.IL.YV|YV|Yvelines
