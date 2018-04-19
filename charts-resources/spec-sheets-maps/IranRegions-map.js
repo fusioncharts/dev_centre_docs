@@ -1,5 +1,5 @@
 {
-        type: 'maps/Kermanshah',
+        type: 'maps/IranRegions',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"IR.BK.HD","value":888},{"id":"IR.BK.IL","value":3538},{"id":"IR.BK.BK","value":584},{"id":"IR.BK.KZ","value":1936},{"id":"IR.BK.LO","value":2751},{"id":"IR.BK.MK","value":995}]
+            "data": [{"id":"IR.TE","value":888},{"id":"IR.ES","value":3538},{"id":"IR.TB","value":584},{"id":"IR.BK","value":1936},{"id":"IR.MS","value":2751}]
         }
     }

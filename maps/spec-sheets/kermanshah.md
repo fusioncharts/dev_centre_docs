@@ -2,10 +2,10 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/kermanshah
+#### JavaScript Alias: maps/Kermanshah
 
 Map Name: Kermanshah
-Dimensions (Width x Height): 420x390
+Dimensions (Width x Height): 610x570
 
 
 

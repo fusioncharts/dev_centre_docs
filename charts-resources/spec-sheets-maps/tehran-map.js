@@ -1,5 +1,5 @@
 {
-        type: 'maps/tehran',
+        type: 'maps/Tehran',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"IR.TE.AL","value":4034},{"id":"IR.TE.GO","value":342},{"id":"IR.TE.MN","value":3736},{"id":"IR.TE.QZ","value":2851},{"id":"IR.TE.QM","value":3642},{"id":"IR.TE.SM","value":3592},{"id":"IR.TE.TE","value":1126}]
+            "data": [{"id":"IR.TE.AL","value":888},{"id":"IR.TE.GO","value":3538},{"id":"IR.TE.MN","value":584},{"id":"IR.TE.QZ","value":1936},{"id":"IR.TE.QM","value":2751},{"id":"IR.TE.SM","value":995},{"id":"IR.TE.TE","value":3940}]
         }
     }
