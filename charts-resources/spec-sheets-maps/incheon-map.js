@@ -1,5 +1,5 @@
 {
-        type: 'maps/incheon',
+        type: 'maps/Incheon',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

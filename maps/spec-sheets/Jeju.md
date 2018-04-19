@@ -2,21 +2,18 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/Daejeon
+#### JavaScript Alias: maps/Jeju
 
-Map Name: Daejeon
+Map Name: Jeju
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map daejeon-map.js %}
+{% embed_spec_map Jeju-map.js %}
 
 ### List of Entities
 
 ID | Short label | Label
 ---|---|---|---
-01|DD|Daedeok
-02|DG|Dong
-03|JG|Jung
-04|SG|Seo
-05|YU|Yuseong
+01|JJ|Jeju
+02|SW|Seogwipo

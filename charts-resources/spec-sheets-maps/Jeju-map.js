@@ -1,5 +1,5 @@
 {
-        type: 'maps/Daejeon',
+        type: 'maps/Jeju',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"01","value":888},{"id":"02","value":3538},{"id":"03","value":584},{"id":"04","value":1936},{"id":"05","value":2751}]
+            "data": [{"id":"01","value":888},{"id":"02","value":3538}]
         }
     }

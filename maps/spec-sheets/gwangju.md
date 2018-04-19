@@ -2,10 +2,10 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/gwangju
+#### JavaScript Alias: maps/Gwangju
 
 Map Name: Gwangju
-Dimensions (Width x Height): 460x285
+Dimensions (Width x Height): 610x570
 
 
 
@@ -15,9 +15,8 @@ Dimensions (Width x Height): 460x285
 
 ID | Short label | Label
 ---|---|---|---
-01|BG|Buk-gu
-02|DG|Dong-gu
-03|GG|Gwangsan-gu
-04|NG|Nam-gu
-05|SG|Seo-gu
-
+01|BK|Buk
+02|DG|Dong
+03|GG|Gwangsan
+04|NM|Nam
+05|SO|Seo
