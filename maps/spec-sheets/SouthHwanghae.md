@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southhwangae
+#### JavaScript Alias: maps/SouthHwanghae
 
-Map Name: Southhwangae
-Dimensions (Width x Height): 586x415
+Map Name: South Hwanghae
+Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map southhwangae-map.js %}
+{% embed_spec_map SouthHwanghae-map.js %}
 
 ### List of Entities
 
@@ -35,4 +35,3 @@ KP.TT|TT|Taetan
 KP.UN|UN|Unchon
 KP.UR|UR|Unryul
 KP.YO|YO|Yonan
-

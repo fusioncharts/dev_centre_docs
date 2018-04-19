@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/northhamgyong
+#### JavaScript Alias: maps/NorthHamgyong
 
-Map Name: Northhamgyong
-Dimensions (Width x Height): 282x547
+Map Name: North Hamgyong
+Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map northhamgyong-map.js %}
+{% embed_spec_map northHamgyong-map.js %}
 
 ### List of Entities
 
@@ -31,4 +31,3 @@ KP.PU|PU|Puyun
 KP.SP|SP|Saepyol
 KP.UD|UD|Undok
 KP.YS|YS|Yonsa
-

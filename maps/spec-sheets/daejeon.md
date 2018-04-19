@@ -2,10 +2,10 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/daejeon
+#### JavaScript Alias: maps/Daejeon
 
 Map Name: Daejeon
-Dimensions (Width x Height): 232x244
+Dimensions (Width x Height): 610x570
 
 
 
@@ -15,9 +15,8 @@ Dimensions (Width x Height): 232x244
 
 ID | Short label | Label
 ---|---|---|---
-01|DD|Daedeok-gu
-02|DG|Dong-gu
-03|JG|Jung-gu
-04|SG|Seo-gu
-05|YU|Yuseong-gu
-
+01|DD|Daedeok
+02|DG|Dong
+03|JG|Jung
+04|SG|Seo
+05|YU|Yuseong

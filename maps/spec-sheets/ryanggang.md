@@ -2,10 +2,10 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/ryanggang
+#### JavaScript Alias: maps/Ryanggang
 
 Map Name: Ryanggang
-Dimensions (Width x Height): 477x485
+Dimensions (Width x Height): 610x570
 
 
 
@@ -27,4 +27,3 @@ KP.SA|SA|Samjiyon
 KP.SM|SM|Samsu
 KP.TA|TA|Taehongdan
 KP.UN|UN|Unhung
-

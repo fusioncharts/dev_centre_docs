@@ -1,5 +1,5 @@
 {
-        type: 'maps/chagang',
+        type: 'maps/Chagang',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"KP.CH","value":2864},{"id":"KP.HU","value":1938},{"id":"KP.HW","value":4187},{"id":"KP.JG","value":2501},{"id":"KP.JA","value":2860},{"id":"KP.JO","value":2773},{"id":"KP.JU","value":1338},{"id":"KP.KA","value":1832},{"id":"KP.KO","value":2273},{"id":"KP.MP","value":2353},{"id":"KP.RG","value":4177},{"id":"KP.RY","value":4540},{"id":"KP.SI","value":3125},{"id":"KP.SG","value":787},{"id":"KP.SW","value":3901},{"id":"KP.TS","value":4246},{"id":"KP.US","value":3470},{"id":"KP.WI","value":3016}]
+            "data": [{"id":"KP.CH","value":888},{"id":"KP.HU","value":3538},{"id":"KP.HW","value":584},{"id":"KP.JG","value":1936},{"id":"KP.JA","value":2751},{"id":"KP.JO","value":995},{"id":"KP.JU","value":3940},{"id":"KP.KA","value":4076},{"id":"KP.KO","value":2161},{"id":"KP.MP","value":1224},{"id":"KP.RG","value":788},{"id":"KP.RY","value":2538},{"id":"KP.SI","value":884},{"id":"KP.SG","value":1932},{"id":"KP.SW","value":2754},{"id":"KP.TS","value":895},{"id":"KP.US","value":3945},{"id":"KP.WI","value":40762}]
         }
     }

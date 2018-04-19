@@ -1,5 +1,5 @@
 {
-        type: 'maps/northpyongan',
+        type: 'maps/NorthPyongan',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"KP.BC","value":524},{"id":"KP.BY","value":2108},{"id":"KP.CH","value":2968},{"id":"KP.CL","value":596},{"id":"KP.CN","value":2582},{"id":"KP.DA","value":2124},{"id":"KP.DO","value":4024},{"id":"KP.HY","value":1909},{"id":"KP.JG","value":3699},{"id":"KP.KU","value":666},{"id":"KP.KS","value":2578},{"id":"KP.KW","value":1014},{"id":"KP.NY","value":1753},{"id":"KP.PI","value":4133},{"id":"KP.RY","value":2663},{"id":"KP.SA","value":1133},{"id":"KP.SI","value":1922},{"id":"KP.SO","value":763},{"id":"KP.TA","value":2730},{"id":"KP.TO","value":2714},{"id":"KP.UJ","value":703},{"id":"KP.UN","value":188},{"id":"KP.US","value":3976},{"id":"KP.YO","value":2155}]
+            "data": [{"id":"KP.BC","value":888},{"id":"KP.BY","value":3538},{"id":"KP.CH","value":584},{"id":"KP.CL","value":1936},{"id":"KP.CN","value":2751},{"id":"KP.DA","value":995},{"id":"KP.DO","value":3940},{"id":"KP.HY","value":4076},{"id":"KP.JG","value":2161},{"id":"KP.KU","value":1224},{"id":"KP.KS","value":788},{"id":"KP.KW","value":2538},{"id":"KP.NY","value":884},{"id":"KP.PI","value":1932},{"id":"KP.RY","value":2754},{"id":"KP.SA","value":895},{"id":"KP.SI","value":3945},{"id":"KP.SJ","value":40762},{"id":"KP.SO","value":8888},{"id":"KP.TA","value":3038},{"id":"KP.TO","value":5842},{"id":"KP.UJ","value":1036},{"id":"KP.UN","value":1751},{"id":"KP.US","value":9951},{"id":"KP.YO","value":3240}]
         }
     }
