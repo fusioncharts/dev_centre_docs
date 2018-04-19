@@ -1,5 +1,5 @@
 {
-    type: 'maps/Reunion',
+    type: 'maps/vichada',
     renderAt: 'chart-container',
     width: '700',
     height: '500',
@@ -32,6 +32,6 @@
             "gradient": "1",
             "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
         },
-        "data": [{"id":"FR.RN.RN","value":888}]
+        "data": [{"id":"CO.VD.CU","value":1006},{"id":"CO.VD.LP","value":644},{"id":"CO.VD.PC","value":3578},{"id":"CO.VD.SR","value":2438}]
     }
 }
