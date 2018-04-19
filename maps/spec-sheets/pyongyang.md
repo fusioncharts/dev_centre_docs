@@ -2,10 +2,10 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/pyongyang
+#### JavaScript Alias: maps/Pyongyang
 
 Map Name: Pyongyang
-Dimensions (Width x Height): 347x294
+Dimensions (Width x Height): 610x570
 
 
 
@@ -15,11 +15,7 @@ Dimensions (Width x Height): 347x294
 
 ID | Short label | Label
 ---|---|---|---
-KP.CH|CH|Chunghwa
 KP.JO|JO|Jong
 KP.KD|KD|Kangdong
-KP.KN|KN|Kangnam
 KP.PY|PY|Pyongyang
-KP.SW|SW|Sangwon
 KP.UN|UN|Unjong
-

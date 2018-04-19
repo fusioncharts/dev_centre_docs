@@ -1,5 +1,5 @@
 {
-        type: 'maps/SouthPyongan',
+        type: 'maps/NorthHwanghae',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"KP.AN","value":888},{"id":"KP.BK","value":3538},{"id":"KP.CM","value":584},{"id":"KP.CN","value":1936},{"id":"KP.DD","value":2751},{"id":"KP.DH","value":995},{"id":"KP.DO","value":3940},{"id":"KP.DU","value":4076},{"id":"KP.HO","value":2161},{"id":"KP.JU","value":1224},{"id":"KP.KA","value":788},{"id":"KP.MS","value":2538},{"id":"KP.MU","value":884},{"id":"KP.NW","value":1932},{"id":"KP.PY","value":2754},{"id":"KP.PS","value":895},{"id":"KP.SI","value":3945},{"id":"KP.SO","value":40762},{"id":"KP.SU","value":688},{"id":"KP.SC","value":6538},{"id":"KP.UN","value":684},{"id":"KP.YD","value":6936}]
+            "data": [{"id":"KP.BS","value":888},{"id":"KP.HW","value":3538},{"id":"KP.KS","value":584},{"id":"KP.KU","value":1936},{"id":"KP.PS","value":2751},{"id":"KP.RS","value":995},{"id":"KP.SW","value":3940},{"id":"KP.SI","value":4076},{"id":"KP.SP","value":2161},{"id":"KP.SO","value":1224},{"id":"KP.SG","value":788},{"id":"KP.SU","value":2538},{"id":"KP.TO","value":884},{"id":"KP.UN","value":1932},{"id":"KP.YS","value":2754},{"id":"KP.YT","value":895},{"id":"KP.CH","value":3945},{"id":"KP.KN","value":40762},{"id":"KP.SN","value":2354},{"id":"KP.JP","value":893},{"id":"KP.KA","value":3145},{"id":"KP.KG","value":40562},{"id":"KP.PM","value":10562}]
         }
     }

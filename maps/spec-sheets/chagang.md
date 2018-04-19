@@ -2,10 +2,10 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/chagang
+#### JavaScript Alias: maps/Chagang
 
 Map Name: Chagang
-Dimensions (Width x Height): 476x530
+Dimensions (Width x Height): 610x570
 
 
 
@@ -33,4 +33,3 @@ KP.SW|SW|Songwon
 KP.TS|TS|Tongsin
 KP.US|US|Usi
 KP.WI|WI|Wiwon
-
