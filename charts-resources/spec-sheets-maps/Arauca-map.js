@@ -1,5 +1,5 @@
 {
-    type: 'maps/Mayabeque',
+    type: 'maps/Arauca',
     renderAt: 'chart-container',
     width: '700',
     height: '500',
@@ -32,6 +32,6 @@
             "gradient": "1",
             "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
         },
-        "data": [{"id":"CU.MQ.BB","value":672},{"id":"CU.MQ.BE","value":701},{"id":"CU.MQ.GS","value":4398},{"id":"CU.MQ.JA","value":2078},{"id":"CU.MQ.MD","value":1878},{"id":"CU.MQ.MS","value":1976},{"id":"CU.MQ.NP","value":2478},{"id":"CU.MQ.QU","value":2128},{"id":"CU.MQ.SJ","value":2778},{"id":"CU.MQ.SN","value":2299},{"id":"CU.MQ.SC","value":1303}]
+        "data": [{"id":"CO.AR.AC","value":1304},{"id":"CO.AR.AQ","value":1434},{"id":"CO.AR.CN","value":1076},{"id":"CO.AR.FO","value":3839},{"id":"CO.AR.PR","value":611},{"id":"CO.AR.SA","value":2031},{"id":"CO.AR.TA","value":3077}]
     }
 }

@@ -32,6 +32,6 @@
             "gradient": "1",
             "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
         },
-        "data": ["data": [{"id":"CU.LT.AM","value":672},{"id":"CU.LT.CO","value":2342},{"id":"CU.LT.JM","value":572},{"id":"CU.LT.JO","value":3614},{"id":"CU.LT.LT","value":701},{"id":"CU.LT.MJ","value":4398},{"id":"CU.LT.MN","value":2078},{"id":"CU.LT.PP","value":1878}]
+        "data": [{"id":"CU.LT.AM","value":672},{"id":"CU.LT.CO","value":2342},{"id":"CU.LT.JM","value":572},{"id":"CU.LT.JO","value":3614},{"id":"CU.LT.LT","value":701},{"id":"CU.LT.MJ","value":4398},{"id":"CU.LT.MN","value":2078},{"id":"CU.LT.PP","value":1878}]
     }
 }

@@ -1,5 +1,5 @@
 {
-    type: 'maps/Mayabeque',
+    type: 'maps/Amazonas',
     renderAt: 'chart-container',
     width: '700',
     height: '500',
@@ -32,6 +32,6 @@
             "gradient": "1",
             "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
         },
-        "data": [{"id":"CU.MQ.BB","value":672},{"id":"CU.MQ.BE","value":701},{"id":"CU.MQ.GS","value":4398},{"id":"CU.MQ.JA","value":2078},{"id":"CU.MQ.MD","value":1878},{"id":"CU.MQ.MS","value":1976},{"id":"CU.MQ.NP","value":2478},{"id":"CU.MQ.QU","value":2128},{"id":"CU.MQ.SJ","value":2778},{"id":"CU.MQ.SN","value":2299},{"id":"CU.MQ.SC","value":1303}]
+        "data": [{"id":"CO.AM.LE","value":672},{"id":"CO.AM.PN","value":1272},{"id":"CO.AM.EE","value":1878},{"id":"CO.AM.LC","value":1976},{"id":"CO.AM.LP","value":2478},{"id":"CO.AM.LV","value":2128},{"id":"CO.AM.MI","value":2778},{"id":"CO.AM.AL","value":2299},{"id":"CO.AM.AR","value":1303},{"id":"CO.AM.PS","value":1903},{"id":"CO.AM.TA","value":2343}]
     }
 }

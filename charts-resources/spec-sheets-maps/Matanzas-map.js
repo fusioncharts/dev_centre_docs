@@ -32,6 +32,6 @@
             "gradient": "1",
             "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
         },
-        "data": ["data": [{"id":"CU.MA.CM","value":672},{"id":"CU.MA.CR","value":2342},{"id":"CU.MA.CZ","value":572},{"id":"CU.MA.CO","value":3614},{"id":"CU.MA.JG","value":701},{"id":"CU.MA.JO","value":4398},{"id":"CU.MA.LI","value":2078},{"id":"CU.MA.LA","value":1878},{"id":"CU.MA.MR","value":1976},{"id":"CU.MA.MT","value":2478},{"id":"CU.MA.PB","value":2128},{"id":"CU.MA.PE","value":2778},{"id":"CU.MA.UR","value":2299},{"id":"CU.MA.VA","value":1303}]
+        "data": [{"id":"CU.MA.CM","value":672},{"id":"CU.MA.CR","value":2342},{"id":"CU.MA.CZ","value":572},{"id":"CU.MA.CO","value":3614},{"id":"CU.MA.JG","value":701},{"id":"CU.MA.JO","value":4398},{"id":"CU.MA.LI","value":2078},{"id":"CU.MA.LA","value":1878},{"id":"CU.MA.MR","value":1976},{"id":"CU.MA.MT","value":2478},{"id":"CU.MA.PB","value":2128},{"id":"CU.MA.PE","value":2778},{"id":"CU.MA.UR","value":2299},{"id":"CU.MA.VA","value":1303}]
     }
 }

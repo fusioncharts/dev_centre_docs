@@ -32,6 +32,6 @@
             "gradient": "1",
             "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
         },
-        "data": ["data": [{"id":"CU.CA.BA","value":672},{"id":"CU.CA.BO","value":2342},{"id":"CU.CA.CH","value":1758},{"id":"CU.CA.CA","value":572},{"id":"CU.CA.CR","value":3614},{"id":"CU.CA.FL","value":701},{"id":"CU.CA.MA","value":4398},{"id":"CU.CA.MO","value":2078},{"id":"CU.CA.PE","value":3726},{"id":"CU.CA.VE","value":3741}]
+        "data": [{"id":"CU.CA.BA","value":672},{"id":"CU.CA.BO","value":2342},{"id":"CU.CA.CH","value":1758},{"id":"CU.CA.CA","value":572},{"id":"CU.CA.CR","value":3614},{"id":"CU.CA.FL","value":701},{"id":"CU.CA.MA","value":4398},{"id":"CU.CA.MO","value":2078},{"id":"CU.CA.PE","value":3726},{"id":"CU.CA.VE","value":3741}]
     }
 }

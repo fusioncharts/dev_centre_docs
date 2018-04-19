@@ -32,6 +32,6 @@
             "gradient": "1",
             "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
         },
-        "data": ["data": [{"id":"CU.IJ.IJ","value":672}]
+        "data": [{"id":"CU.IJ.IJ","value":672}]
     }
 }

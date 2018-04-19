@@ -32,6 +32,6 @@
             "gradient": "1",
             "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
         },
-        "data": ["data": [{"id":"CU.VC.CB","value":672},{"id":"CU.VC.CM","value":1272},{"id":"CU.VC.CI","value":1878},{"id":"CU.VC.CO","value":1976},{"id":"CU.VC.EN","value":2478},{"id":"CU.VC.MA","value":2128},{"id":"CU.VC.PL","value":2778},{"id":"CU.VC.QG","value":2299},{"id":"CU.VC.RA","value":1303},{"id":"CU.VC.RE","value":1903},{"id":"CU.VC.SG","value":2343},{"id":"CU.VC.SC","value":1793},{"id":"CU.VC.SD","value":2303}]
+        "data": [{"id":"CU.VC.CB","value":672},{"id":"CU.VC.CM","value":1272},{"id":"CU.VC.CI","value":1878},{"id":"CU.VC.CO","value":1976},{"id":"CU.VC.EN","value":2478},{"id":"CU.VC.MA","value":2128},{"id":"CU.VC.PL","value":2778},{"id":"CU.VC.QG","value":2299},{"id":"CU.VC.RA","value":1303},{"id":"CU.VC.RE","value":1903},{"id":"CU.VC.SG","value":2343},{"id":"CU.VC.SC","value":1793},{"id":"CU.VC.SD","value":2303}]
     }
 }
