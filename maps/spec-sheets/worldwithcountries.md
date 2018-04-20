@@ -34,9 +34,9 @@ ID | Short label | Label
 16|MX|Mexico
 17|NI|Nicaragua
 18|PA|Panama
-19|KN|St.Kitts & Nevis
-20|LC|St.Lucia
-21|VC|St.Vincent & the Grenadines
+19|KN|St. Kitts & Nevis
+20|LC|St. Lucia
+21|VC|St. Vincent & the Grenadines
 22|TT|Trinidad & Tobago
 23|US|United States
 24|GL|Greenland
@@ -65,8 +65,8 @@ ID | Short label | Label
 47|CP|Central African Republic
 48|TD|Chad
 49|KM|Comoros
-50|CI|Cote d'ivoire
-51|CD|Democratic Republic of the Congo
+50|CI|Ivory Coast
+51|CD|DR Congo
 52|DJ|Djibouti
 53|EG|Egypt
 54|GQ|Equatorial Guinea
@@ -96,7 +96,7 @@ ID | Short label | Label
 78|SL|Sierra Leone
 79|SO|Somalia
 80|ZA|South Africa
-81|SD|Sudan
+81|SD|Republic of Sudan
 82|SZ|Swaziland
 83|TZ|Tanzania
 84|TG|Togo
@@ -117,7 +117,7 @@ ID | Short label | Label
 99|MM|Burma (Myanmar)
 100|KH|Cambodia
 101|CN|China
-102|TP|East Timor
+102|TP|Timor-Leste
 103|GE|Georgia
 104|IN|India
 105|ID|Indonesia
@@ -160,7 +160,7 @@ ID | Short label | Label
 142|DE|Germany
 143|GR|Greece
 144|HU|Hungary
-145|IS|Iceland
+145|IC|Iceland
 146|IR|Ireland
 147|IT|Italy
 148|LV|Latvia
@@ -186,7 +186,7 @@ ID | Short label | Label
 168|CH|Switzerland
 169|UA|Ukraine
 170|UK|United Kingdom
-171|VA|Vatican City
+171|VA|Vatican City 
 172|CY|Cyprus
 173|TK|Turkey
 175|AU|Australia
@@ -196,7 +196,7 @@ ID | Short label | Label
 179|FM|Micronesia
 180|NR|Nauru
 181|NZ|New Zealand
-182|PW|Palau
+182|PW|Republic of Palau
 183|PG|Papua New Guinea
 184|WS|Samoa
 185|SB|Solomon Islands
@@ -206,7 +206,7 @@ ID | Short label | Label
 189|NC|New Caledonia
 190|BA|Bahrain
 191|IZ|Iraq
-192|IE|Israel
+192|IS|Israel
 193|JO|Jordan
 194|KU|Kuwait
 195|LB|Lebanon
@@ -214,7 +214,7 @@ ID | Short label | Label
 197|QA|Qatar
 198|SA|Saudi Arabia
 199|SY|Syria
-200|AE|United Arab Emirates
+200|AE|UnitedArabEmirates
 201|YM|Yemen
 202|PR|Puerto Rico
 203|KY|Cayman Islands
@@ -224,35 +224,42 @@ ID | Short label | Label
 207|AN|Anguilla
 208|AS|American Samoa
 209|BM|Bermuda
-210|CT|Christmas Island
+210|BU|BES Islands
 211|CC|Cocos (Keeling) Islands
 212|CK|Cook Islands
-213|FA|Faroe Islands
-214|FP|French Polynesia
-215|GS|Gaza Strip
-216|GI|Gibraltar
-217|GP|Guadeloupe
+213|CT|Christmas Island
+214|CW|Curacao
+215|FA|Faroe Islands
+216|FP|French Polynesia
+217|GI|Gibraltar
 218|GO|Guam
-219|GU|Guernsey
-220|JS|Jersey
-221|KS|Kingman Reef
-222|MD|Maldives
-223|IM|Isle of Man
-224|MQ|Martinique
-225|MP|Mayotte
+219|GP|Guadeloupe
+220|GS|Gaza Strip
+221|GU|Guernsey
+222|IM|Isle of Man
+223|JS|Jersey
+224|KS|Kingman Reef
+225|MD|Maldives
 226|ME|Montserrat
-227|BU|BES Islands
-228|CW|Curacao
-229|SF|Sint Maarten
-230|NU|Niue
-231|NF|Norfolk Island
-232|NM|Northern Mariana Islands
-233|PI|Pitcairn Islands
-234|RE|Reunion
+227|MP|Mayotte
+228|MQ|Martinique
+229|NF|Norfolk Island
+230|NM|Northern Mariana Islands
+231|NU|Niue
+232|PI|Pitcairn Islands
+233|RE|La Réunion
+234|SF|Sint Maarten
 235|SH|Saint Helena
 236|SP|Saint Pierre and Miquelon
 237|TC|Turks and Caicos Islands
 238|VK|Virgin Islands (UK)
 239|VS|Virgin Islands (US)
-240|WB|West Bank
+240|WE|Palestine
 241|WF|Wallis and Futuna
+242|WC|Cape Town
+243|LP|La Paz
+244|AB|Abkhazia
+245|NA|Netherlands Antilles
+246|NC|Northern Cyprus
+247|SV|Svalbard
+248|TK|Tokelau
