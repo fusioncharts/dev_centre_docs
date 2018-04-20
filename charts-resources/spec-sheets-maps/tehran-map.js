@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"IR.TE.AL","value":888},{"id":"IR.TE.GO","value":3538},{"id":"IR.TE.MN","value":584},{"id":"IR.TE.QZ","value":1936},{"id":"IR.TE.QM","value":2751},{"id":"IR.TE.SM","value":995},{"id":"IR.TE.TE","value":3940}]
+            "data": [{"id":"IR.TH.BA","value":888},{"id":"IR.TH.DA","value":3538},{"id":"IR.TH.FI","value":584},{"id":"IR.TH.ES","value":1936},{"id":"IR.TH.MA","value":2751},{"id":"IR.TH.PA","value":995},{"id":"IR.TH.PS","value":3940},{"id":"IR.TH.PI","value":4076},{"id":"IR.TH.QA","value":2161},{"id":"IR.TH.RO","value":1224},{"id":"IR.TH.RE","value":788},{"id":"IR.TH.ST","value":3338},{"id":"IR.TH.SR","value":534},{"id":"IR.TH.SQ","value":936}]
         }
     }

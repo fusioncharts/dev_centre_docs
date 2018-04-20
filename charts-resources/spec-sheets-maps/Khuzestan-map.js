@@ -1,5 +1,5 @@
 {
-        type: 'maps/Iran',
+        type: 'maps/Khuzestan',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"IR.AL","value":888},{"id":"IR.AR","value":3538},{"id":"IR.BS","value":584},{"id":"IR.CM","value":1936},{"id":"IR.EA","value":2751},{"id":"IR.ES","value":995},{"id":"IR.FA","value":3940},{"id":"IR.GI","value":4076},{"id":"IR.GO","value":2161},{"id":"IR.HD","value":1224},{"id":"IR.HG","value":788},{"id":"IR.IL","value":3338},{"id":"IR.KE","value":534},{"id":"IR.BK","value":936},{"id":"IR.KZ","value":1751},{"id":"IR.KB","value":595},{"id":"IR.KD","value":1940},{"id":"IR.LO","value":576},{"id":"IR.MK","value":3161},{"id":"IR.MN","value":1324},{"id":"IR.KS","value":1924},{"id":"IR.QZ","value":688},{"id":"IR.QM","value":3338},{"id":"IR.KV","value":784},{"id":"IR.SM","value":1836},{"id":"IR.SB","value":2551},{"id":"IR.KJ","value":1095},{"id":"IR.TH","value":3140},{"id":"IR.WA","value":3076},{"id":"IR.YA","value":1161},{"id":"IR.ZA","value":1214}]
+            "data": [{"id":"IR.KZ.AB","value":888},{"id":"IR.KZ.AH","value":3538},{"id":"IR.KZ.AK","value":584},{"id":"IR.KZ.AN","value":1936},{"id":"IR.KZ.BG","value":2751},{"id":"IR.KZ.BA","value":995},{"id":"IR.KZ.BE","value":3940},{"id":"IR.KZ.DA","value":4076},{"id":"IR.KZ.DE","value":2161},{"id":"IR.KZ.GU","value":1224},{"id":"IR.KZ.HA","value":788},{"id":"IR.KZ.HE","value":3338},{"id":"IR.KZ.HO","value":534},{"id":"IR.KZ.IZ","value":936},{"id":"IR.KZ.KH","value":1751},{"id":"IR.KZ.LA","value":595},{"id":"IR.KZ.MA","value":1940},{"id":"IR.KZ.MS","value":576},{"id":"IR.KZ.OM","value":3161},{"id":"IR.KZ.RA","value":1324},{"id":"IR.KZ.RS","value":1924},{"id":"IR.KZ.SD","value":688},{"id":"IR.KZ.SS","value":3338},{"id":"IR.KZ.ST","value":784}]
         }
     }
