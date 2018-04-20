@@ -2,10 +2,10 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/iran
+#### JavaScript Alias: maps/Iran
 
 Map Name: Iran
-Dimensions (Width x Height): 420x390
+Dimensions (Width x Height): 610x570
 
 
 
@@ -16,34 +16,33 @@ Dimensions (Width x Height): 420x390
 ID | Short label | Label
 ---|---|---|---
 IR.AL|AL|Alborz
-IR.AR|AR|Ardebil
+IR.AR|AR|Ardabil
 IR.BS|BS|Bushehr
-IR.CM|CM|Chahar Mahall and Bakhtiari
-IR.EA|EA|East Azarbaijan
-IR.ES|ES|Esfahan
+IR.CM|CM|Chahar Mahaal and Bakhtiari
+IR.EA|EA|Azerbaijan, East
+IR.ES|ES|Isfahan
 IR.FA|FA|Fars
 IR.GI|GI|Gilan
 IR.GO|GO|Golestan
 IR.HD|HD|Hamadan
-IR.HG|HG|Hormozgan
+IR.HG|HG|Hormozgān
 IR.IL|IL|Ilam
 IR.KE|KE|Kerman
 IR.BK|BK|Kermanshah
 IR.KZ|KZ|Khuzestan
-IR.KB|KB|Kohgiluyeh and Buyer Ahmed
-IR.KD|KD|Kordestan
+IR.KB|KB|Kohgiluyeh and Boyer-Ahmad
+IR.KD|KD|Kurdistan
 IR.LO|LO|Lorestan
 IR.MK|MK|Markazi
 IR.MN|MN|Mazandaran
-IR.KS|KS|North Khorasan
+IR.KS|KS|Khorasan, North
 IR.QZ|QZ|Qazvin
 IR.QM|QM|Qom
-IR.KV|KV|Razavi Khorasan
+IR.KV|KV|Khorasan, Razavi
 IR.SM|SM|Semnan
 IR.SB|SB|Sistan and Baluchestan
-IR.KJ|KJ|South Khorasan
+IR.KJ|KJ|Khorasan, South
 IR.TH|TH|Tehran
-IR.WA|WA|West Azarbaijan
+IR.WA|WA|Azerbaijan, West
 IR.YA|YA|Yazd
 IR.ZA|ZA|Zanjan
-
