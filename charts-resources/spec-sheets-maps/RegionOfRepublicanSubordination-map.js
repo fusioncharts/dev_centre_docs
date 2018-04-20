@@ -1,5 +1,5 @@
 {
-        type: 'maps/Tajikistan',
+        type: 'maps/RegionOfRepublicanSubordination',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"TJ.BK","value":888},{"id":"TJ.KL","value":3538},{"id":"TJ.RR","value":584},{"id":"TJ.LE","value":1936}]
+            "data": [{"id":"TJ.RR.TR","value":888},{"id":"TJ.RR.SH","value":3538},{"id":"TJ.RR.GI","value":584},{"id":"TJ.RR.VA","value":1936},{"id":"TJ.RR.KR","value":2751},{"id":"TJ.RR.GA","value":995},{"id":"TJ.RR.DZ","value":3940},{"id":"TJ.RR.LE","value":4076},{"id":"TJ.RR.FA","value":2161},{"id":"TJ.RR.RC","value":1224},{"id":"TJ.RR.DA","value":788},{"id":"TJ.RR.TJ","value":3138},{"id":"TJ.RR.TV","value":684}]
         }
     }
