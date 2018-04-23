@@ -1,5 +1,5 @@
 {
-    type: 'maps/AmharaRegion',
+    type: 'maps/afarregion',
     renderAt: 'chart-container',
     width: '700',
     height: '500',
@@ -32,6 +32,6 @@
             "gradient": "1",
             "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
         },
-        "data": [{"id":"ET.AM.DG","value":888},{"id":"ET.AM.WM","value":3538},{"id":"ET.AM.DW","value":584},{"id":"ET.AM.SG","value":1936},{"id":"ET.AM.SW","value":2751},{"id":"ET.AM.SS","value":995},{"id":"ET.AM.OR","value":3940},{"id":"ET.AM.BD","value":4076},{"id":"ET.AM.AW","value":2161},{"id":"ET.AM.WG","value":1224},{"id":"ET.AM.MB","value":1724}]
+        "data": [{"id":"ET.AF.ON","value":888},{"id":"ET.AF.TW","value":3538},{"id":"ET.AF.TH","value":584},{"id":"ET.AF.FO","value":1936},{"id":"FI","value":2751}]
     }
 }

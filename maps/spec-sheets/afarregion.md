@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/AfarRegion
+#### JavaScript Alias: maps/afarregion
 
 Map Name: Afar Region
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map AfarRegion-map.js %}
+{% embed_spec_map afarregion-map.js %}
 
 ### List of Entities
 
