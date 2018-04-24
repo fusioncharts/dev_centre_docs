@@ -1,5 +1,5 @@
 {
-        type: 'maps/Baoruco',
+        type: 'maps/baoruco',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

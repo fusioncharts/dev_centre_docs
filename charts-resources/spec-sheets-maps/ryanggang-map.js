@@ -1,5 +1,5 @@
 {
-        type: 'maps/Ryanggang',
+        type: 'maps/ryanggang',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

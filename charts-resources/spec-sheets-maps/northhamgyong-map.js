@@ -1,5 +1,5 @@
 {
-        type: 'maps/NorthHamgyong',
+        type: 'maps/northhamgyong',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

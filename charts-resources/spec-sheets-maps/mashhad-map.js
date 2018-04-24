@@ -1,5 +1,5 @@
 {
-        type: 'maps/Mashhad',
+        type: 'maps/mashhad',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

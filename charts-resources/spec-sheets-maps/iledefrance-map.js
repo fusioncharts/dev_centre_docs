@@ -1,5 +1,5 @@
 {
-        type: 'maps/IleDeFrance',
+        type: 'maps/iledefrance',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

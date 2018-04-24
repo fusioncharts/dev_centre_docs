@@ -1,5 +1,5 @@
 {
-        type: 'maps/Rason',
+        type: 'maps/rason',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

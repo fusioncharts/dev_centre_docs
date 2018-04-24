@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/valledelcauce
+#### JavaScript Alias: maps/valledelcauca
 
-Map Name: ValledelCauce
+Map Name: ValledelCauca
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map valledelcauce-map.js %}
+{% embed_spec_map valledelcauca-map.js %}
 
 ### List of Entities
 

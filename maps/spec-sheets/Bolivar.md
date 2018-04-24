@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/Bogota
+#### JavaScript Alias: maps/Bolivar
 
 Map Name: Bogota
 Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map Bogota-map.js %}
+{% embed_spec_map Bolivar-map.js %}
 
 ### List of Entities
 

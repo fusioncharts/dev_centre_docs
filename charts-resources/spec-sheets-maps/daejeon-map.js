@@ -1,5 +1,5 @@
 {
-        type: 'maps/Daejeon',
+        type: 'maps/daejeon',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

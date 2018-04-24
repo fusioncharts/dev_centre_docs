@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/Dajabon
+#### JavaScript Alias: maps/dajabon
 
 Map Name: Dajabon
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map Dajabon-map.js %}
+{% embed_spec_map dajabon-map.js %}
 
 ### List of Entities
 

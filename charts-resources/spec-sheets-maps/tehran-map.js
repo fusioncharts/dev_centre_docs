@@ -1,5 +1,5 @@
 {
-        type: 'maps/Tehran',
+        type: 'maps/tehran',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/BenishangulGumuzRegion
+#### JavaScript Alias: maps/benishangulgumuzregion
 
 Map Name: Benishangul-Gumuz Region
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map BenishangulGumuzRegion-map.js %}
+{% embed_spec_map benishangulgumuzregion-map.js %}
 
 ### List of Entities
 

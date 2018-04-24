@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/Qom
+#### JavaScript Alias: maps/qom
 
 Map Name: Qom
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map Qom-map.js %}
+{% embed_spec_map qom-map.js %}
 
 ### List of Entities
 

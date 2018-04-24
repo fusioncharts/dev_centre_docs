@@ -1,5 +1,5 @@
 {
-        type: 'maps/Tabriz',
+        type: 'maps/tabriz',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

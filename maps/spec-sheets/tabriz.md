@@ -2,7 +2,7 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/Tabriz
+#### JavaScript Alias: maps/tabriz
 
 Map Name: Tabriz
 Dimensions (Width x Height): 610x570

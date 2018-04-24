@@ -1,5 +1,5 @@
 {
-    type: 'maps/valledelcauce',
+    type: 'maps/valledelcauca',
     renderAt: 'chart-container',
     width: '700',
     height: '500',

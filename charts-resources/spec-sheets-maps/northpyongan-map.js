@@ -1,5 +1,5 @@
 {
-        type: 'maps/NorthPyongan',
+        type: 'maps/northpyongan',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

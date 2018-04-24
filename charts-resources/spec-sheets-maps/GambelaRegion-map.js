@@ -1,5 +1,5 @@
 {
-    type: 'maps/GambelaRegion',
+    type: 'maps/gambelaregion',
     renderAt: 'chart-container',
     width: '700',
     height: '500',

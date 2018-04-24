@@ -1,5 +1,5 @@
 {
-        type: 'maps/Iran',
+        type: 'maps/iran',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

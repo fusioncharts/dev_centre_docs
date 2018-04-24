@@ -1,5 +1,5 @@
 {
-    type: 'maps/Bogota',
+    type: 'maps/Bolivar',
     renderAt: 'chart-container',
     width: '700',
     height: '500',

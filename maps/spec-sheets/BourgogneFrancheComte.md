@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/BourgogneFrancheComte
+#### JavaScript Alias: maps/bourgognefranchecomte
 
 Map Name: Bourgogne Franche Comte
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map BourgogneFrancheComte-map.js %}
+{% embed_spec_map bourgognefranchecomte-map.js %}
 
 ### List of Entities
 

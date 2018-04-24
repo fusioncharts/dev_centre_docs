@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/Caqueta
+#### JavaScript Alias: maps/Caldas
 
-Map Name: Caqueta
+Map Name: Caldas
 Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map Caqueta-map.js %}
+{% embed_spec_map Caldas-map.js %}
 
 ### List of Entities
 

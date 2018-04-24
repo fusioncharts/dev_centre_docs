@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/NorthKorea
+#### JavaScript Alias: maps/northkorea
 
 Map Name: North Korea
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map northKorea-map.js %}
+{% embed_spec_map northkorea-map.js %}
 
 ### List of Entities
 

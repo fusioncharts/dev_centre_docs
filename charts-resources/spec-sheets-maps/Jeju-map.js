@@ -1,5 +1,5 @@
 {
-        type: 'maps/Jeju',
+        type: 'maps/jeju',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

@@ -1,5 +1,5 @@
 {
-        type: 'maps/SouthHwanghae',
+        type: 'maps/southhwanghae',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

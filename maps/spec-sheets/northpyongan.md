@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/NorthPyongan
+#### JavaScript Alias: maps/northpyongan
 
 Map Name: North Pyongan
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map northPyongan-map.js %}
+{% embed_spec_map northpyongan-map.js %}
 
 ### List of Entities
 

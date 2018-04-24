@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/Rason
+#### JavaScript Alias: maps/rason
 
 Map Name: Rason
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map Rason-map.js %}
+{% embed_spec_map rason-map.js %}
 
 ### List of Entities
 

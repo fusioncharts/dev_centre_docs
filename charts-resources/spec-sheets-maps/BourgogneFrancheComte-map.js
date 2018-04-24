@@ -1,5 +1,5 @@
 {
-        type: 'maps/BourgogneFrancheComte',
+        type: 'maps/bourgognefranchecomte',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

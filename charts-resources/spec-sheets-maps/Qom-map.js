@@ -1,5 +1,5 @@
 {
-        type: 'maps/Qom',
+        type: 'maps/qom',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

@@ -1,5 +1,5 @@
 {
-        type: 'maps/Nampo',
+        type: 'maps/nampo',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
