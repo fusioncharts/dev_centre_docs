@@ -1,5 +1,5 @@
 {
-    type: 'maps/Cesar',
+    type: 'maps/cesar',
     renderAt: 'chart-container',
     width: '700',
     height: '500',
