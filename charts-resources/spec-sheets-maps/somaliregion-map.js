@@ -1,5 +1,5 @@
 {
-    type: 'maps/sanctispiritus',
+    type: 'maps/somaliregion',
     renderAt: 'chart-container',
     width: '700',
     height: '500',
@@ -32,6 +32,6 @@
             "gradient": "1",
             "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
         },
-        "data": [{"id":"CU.SS.CA","value":672},{"id":"CU.SS.FO","value":1878},{"id":"CU.SS.JA","value":1976},{"id":"CU.SS.LS","value":2478},{"id":"CU.SS.SS","value":2128},{"id":"CU.SS.TA","value":2778},{"id":"CU.SS.TR","value":2299},{"id":"CU.SS.YA","value":1303}]
+        "data": [{"id":"ET.SO.SH","value":888},{"id":"ET.SO.JJ","value":3538},{"id":"ET.SO.FQ","value":584},{"id":"ET.SO.DE","value":1936},{"id":"ET.SO.WA","value":2751},{"id":"ET.SO.KO","value":995},{"id":"ET.SO.GD","value":3940},{"id":"ET.SO.AF","value":4076},{"id":"ET.SO.LI","value":2161}]
     }
 }
