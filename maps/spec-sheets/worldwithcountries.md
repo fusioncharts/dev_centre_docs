@@ -4,7 +4,7 @@
 
 #### JavaScript Alias: maps/worldwithcountries
 
-Map Name: Worldwithcountries
+Map Name: World with Countries
 Dimensions (Width x Height): 2194x1120
 
 
