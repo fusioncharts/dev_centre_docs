@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/MontePlata
+#### JavaScript Alias: maps/monteplata
 
 Map Name: Monte Plata
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map MontePlata-map.js %}
+{% embed_spec_map monteplata-map.js %}
 
 ### List of Entities
 

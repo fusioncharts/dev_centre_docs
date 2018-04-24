@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/LaRomana
+#### JavaScript Alias: maps/laromana
 
 Map Name: LaRomana
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map LaRomana-map.js %}
+{% embed_spec_map laromana-map.js %}
 
 ### List of Entities
 

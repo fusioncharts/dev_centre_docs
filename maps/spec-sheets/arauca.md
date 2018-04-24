@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/Arauca
+#### JavaScript Alias: maps/arauca
 
 Map Name: Arauca
 Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map Arauca-map.js %}
+{% embed_spec_map arauca-map.js %}
 
 ### List of Entities
 

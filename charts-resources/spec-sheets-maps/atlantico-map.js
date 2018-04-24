@@ -1,5 +1,5 @@
 {
-    type: 'maps/Arauca',
+    type: 'maps/atlantico',
     renderAt: 'chart-container',
     width: '700',
     height: '500',
@@ -32,6 +32,6 @@
             "gradient": "1",
             "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
         },
-        "data": [{"id":"CO.AR.AC","value":1304},{"id":"CO.AR.AQ","value":1434},{"id":"CO.AR.CN","value":1076},{"id":"CO.AR.FO","value":3839},{"id":"CO.AR.PR","value":611},{"id":"CO.AR.SA","value":2031},{"id":"CO.AR.TA","value":3077}]
+        "data": [{"id":"CO.AT.BO","value":672},{"id":"CO.AT.BQ","value":2342},{"id":"CO.AT.CC","value":1758},{"id":"CO.AT.CA","value":572},{"id":"CO.AT.GA","value":3614},{"id":"CO.AT.JU","value":701},{"id":"CO.AT.LU","value":4398},{"id":"CO.AT.ML","value":2078},{"id":"CO.AT.MN","value":3726},{"id":"CO.AT.PV","value":3741},{"id":"CO.AT.PI","value":1454},{"id":"CO.AT.PL","value":960},{"id":"CO.AT.PD","value":1584},{"id":"CO.AT.PC","value":2412},{"id":"CO.AT.RE","value":2100},{"id":"CO.AT.SG","value":1386},{"id":"CO.AT.SA","value":2492},{"id":"CO.AT.SL","value":2179},{"id":"CO.AT.ST","value":3667},{"id":"CO.AT.SO","value":4384},{"id":"CO.AT.SU","value":1291},{"id":"CO.AT.TU","value":2082},{"id":"CO.AT.US","value":1596}]
     }
 }

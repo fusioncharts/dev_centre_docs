@@ -2,18 +2,18 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/LaAltagracia
+#### JavaScript Alias: maps/pedernales
 
-Map Name: LaAltagracia
+Map Name: Pedernales
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map LaAltagracia-map.js %}
+{% embed_spec_map pedernales-map.js %}
 
 ### List of Entities
 
 ID | Short label | Label
 ---|---|---|---
-DO.AL.HI|HI|Higüey
-DO.AL.SR|SR|San Rafael del Yuma
+DO.PN.OV|OV|Oviedo
+DO.PN.PE|PE|Pedernales

@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/MonsenorNouel
+#### JavaScript Alias: maps/monsenornouel
 
 Map Name: Monsenor Nouel
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map MonsenorNouel-map.js %}
+{% embed_spec_map monsenornouel-map.js %}
 
 ### List of Entities
 

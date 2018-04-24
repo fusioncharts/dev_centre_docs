@@ -1,5 +1,5 @@
 {
-        type: 'maps/MontePlata',
+        type: 'maps/laaltagracia',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"DO.MP.BA","value":888},{"id":"DO.MP.MT","value":3538},{"id":"DO.MP.ES","value":584},{"id":"DO.MP.SG","value":1936},{"id":"DO.MP.YA","value":2751}]
+            "data": [{"id":"DO.AL.HI","value":888},{"id":"DO.AL.SR","value":3538}]
         }
     }

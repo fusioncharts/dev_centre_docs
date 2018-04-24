@@ -1,5 +1,5 @@
 {
-        type: 'maps/MonsenorNouel',
+        type: 'maps/montecristi',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"DO.MN.BO","value":888},{"id":"DO.MN.MA","value":3538},{"id":"DO.MN.PB","value":584}]
+            "data": [{"id":"DO.MC.CA","value":888},{"id":"DO.MC.GU","value":3538},{"id":"DO.MC.LM","value":584},{"id":"DO.MC.PS","value":1936},{"id":"DO.MC.SF","value":2751},{"id":"DO.MC.VV","value":995}]
         }
     }

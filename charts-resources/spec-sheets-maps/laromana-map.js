@@ -1,5 +1,5 @@
 {
-        type: 'maps/LaAltagracia',
+        type: 'maps/laromana',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"DO.AL.HI","value":888},{"id":"DO.AL.SR","value":3538}]
+            "data": [{"id":"DO.RO.GU","value":888},{"id":"DO.RO.LR","value":3538},{"id":"DO.RO.VH","value":584}]
         }
     }

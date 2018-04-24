@@ -1,5 +1,5 @@
 {
-        type: 'maps/LaVega',
+        type: 'maps/lavega',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

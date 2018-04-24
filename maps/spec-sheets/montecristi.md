@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/MonteCristi
+#### JavaScript Alias: maps/montecristi
 
 Map Name: Monte Cristi
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map MonteCristi-map.js %}
+{% embed_spec_map montecristi-map.js %}
 
 ### List of Entities
 
