@@ -1,5 +1,5 @@
 {
-        type: 'maps/centrevaldeLoire',
+        type: 'maps/centrevaldeloire',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

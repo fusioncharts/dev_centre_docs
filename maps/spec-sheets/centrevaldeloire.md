@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/centrevaldeLoire
+#### JavaScript Alias: maps/centrevaldeloire
 
 Map Name: CentreVal de Loire
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map centrevaldeLoire-map.js %}
+{% embed_spec_map centrevaldeloire-map.js %}
 
 ### List of Entities
 
