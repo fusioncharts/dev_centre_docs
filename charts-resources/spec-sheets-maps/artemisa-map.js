@@ -1,5 +1,5 @@
 {
-    type: 'maps/amazonas',
+    type: 'maps/artemisa',
     renderAt: 'chart-container',
     width: '700',
     height: '500',
@@ -32,6 +32,6 @@
             "gradient": "1",
             "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
         },
-        "data": [{"id":"CO.AM.LE","value":672},{"id":"CO.AM.PN","value":1272},{"id":"CO.AM.EE","value":1878},{"id":"CO.AM.LC","value":1976},{"id":"CO.AM.LP","value":2478},{"id":"CO.AM.LV","value":2128},{"id":"CO.AM.MI","value":2778},{"id":"CO.AM.AL","value":2299},{"id":"CO.AM.AR","value":1303},{"id":"CO.AM.PS","value":1903},{"id":"CO.AM.TA","value":2343}]
+        "data": [{"id":"CU.AR.AL","value":1860},{"id":"CU.AR.AR","value":4469},{"id":"CU.AR.BH","value":182},{"id":"CU.AR.BU","value":3529},{"id":"CU.AR.CM","value":2618},{"id":"CU.AR.CA","value":147},{"id":"CU.AR.GJ","value":3199},{"id":"CU.AR.GM","value":1701},{"id":"CU.AR.MR","value":3737},{"id":"CU.AR.SA","value":2844},{"id":"CU.AR.SC","value":3305}]
     }
 }

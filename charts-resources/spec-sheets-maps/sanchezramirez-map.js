@@ -1,5 +1,5 @@
 {
-        type: 'maps/SanchezRamirez',
+        type: 'maps/sanchezramirez',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

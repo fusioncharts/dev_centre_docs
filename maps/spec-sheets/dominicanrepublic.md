@@ -9,7 +9,7 @@ Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map dominicanRepublic-map.js %}
+{% embed_spec_map dominicanrepublic-map.js %}
 
 ### List of Entities
 

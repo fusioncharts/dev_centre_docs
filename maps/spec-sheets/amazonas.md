@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/Amazonas
+#### JavaScript Alias: maps/amazonas
 
 Map Name: Amazonas
 Dimensions (Width x Height): 510x400
 
 
 
-{% embed_spec_map Amazonas-map.js %}
+{% embed_spec_map amazonas-map.js %}
 
 ### List of Entities
 
