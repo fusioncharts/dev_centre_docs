@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/GornoBadakhshan
+#### JavaScript Alias: maps/gornobadakhshan
 
 Map Name: Gorno-Badakhshan
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map GornoBadakhshan-map.js %}
+{% embed_spec_map gornobadakhshan-map.js %}
 
 ### List of Entities
 

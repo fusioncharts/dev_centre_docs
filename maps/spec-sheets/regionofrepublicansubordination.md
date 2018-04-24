@@ -2,14 +2,14 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/RegionOfRepublicanSubordination
+#### JavaScript Alias: maps/regionofrepublicansubordination
 
 Map Name: Region Of Republican Subordination
 Dimensions (Width x Height): 610x570
 
 
 
-{% embed_spec_map RegionOfRepublicanSubordination-map.js %}
+{% embed_spec_map regionofrepublicansubordination-map.js %}
 
 ### List of Entities
 

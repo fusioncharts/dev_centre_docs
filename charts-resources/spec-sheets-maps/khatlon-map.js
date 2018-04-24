@@ -1,5 +1,5 @@
 {
-        type: 'maps/Khatlon',
+        type: 'maps/khatlon',
         renderAt: 'chart-container',
         width: '700',
         height: '500',

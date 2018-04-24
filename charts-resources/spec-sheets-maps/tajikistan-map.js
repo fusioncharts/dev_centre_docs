@@ -1,5 +1,5 @@
 {
-        type: 'maps/Tajikistan',
+        type: 'maps/tajikistan',
         renderAt: 'chart-container',
         width: '700',
         height: '500',
