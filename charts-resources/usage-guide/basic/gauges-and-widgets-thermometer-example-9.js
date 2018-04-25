@@ -35,7 +35,7 @@
         "value": "-6"
     },
     "events": {
-        "initialized": function(evt, arg) {
+        "rendered": function(evt, arg) {
             evt.sender.dataUpdate = setInterval(function() {
                 var value,
                     prevTemp = evt.sender.getData(),
