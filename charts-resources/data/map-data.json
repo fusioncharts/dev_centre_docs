@@ -5633,6 +5633,54 @@
             "specSheet": "/maps/spec-sheets/ethiopia",
             "markerData": "/maps/marker-data/ethiopia"
         }, {
+            "name": "Ethiopia Region",
+            "marker": false,
+            "members": [{
+                "name": "Addis Ababa City",
+                "alias": "addisababacity",
+                "specSheet": "/maps/spec-sheets/addisababacity"
+            }, {
+                "name": "Afar Region",
+                "alias": "afarregion",
+                "specSheet": "/maps/spec-sheets/afarregion"
+            }, {
+                "name": "Amhara Region",
+                "alias": "amhararegion",
+                "specSheet": "/maps/spec-sheets/amhararegion"
+            }, {
+                "name": "Benishangul-Gumuz Region",
+                "alias": "benishangulgumuzregion",
+                "specSheet": "/maps/spec-sheets/benishangulgumuzregion"
+            }, {
+                "name": "Dire Dawa City",
+                "alias": "diredawacity",
+                "specSheet": "/maps/spec-sheets/diredawacity"
+            }, {
+                "name": "Gambela Region",
+                "alias": "gambelaregion",
+                "specSheet": "/maps/spec-sheets/gambelaregion"
+            }, {
+                "name": "Harari Region",
+                "alias": "harariregion",
+                "specSheet": "/maps/spec-sheets/harariregion"
+            }, {
+                "name": "Oromia Region",
+                "alias": "oromiaregion",
+                "specSheet": "/maps/spec-sheets/oromiaregion"
+            }, {
+                "name": "Southern Nations, Nationalities, and Peoples' Region",
+                "alias": "snnpr",
+                "specSheet": "/maps/spec-sheets/snnpr"
+            }, {
+                "name": "Somali Region",
+                "alias": "somaliregion",
+                "specSheet": "/maps/spec-sheets/somaliregion"
+            }, {
+                "name": "Tigray Region",
+                "alias": "tigrayregion",
+                "specSheet": "/maps/spec-sheets/tigrayregion"
+            }]
+        }, {
             "name": "Gabon",
             "alias": "gabon",
             "specSheet": "/maps/spec-sheets/gabon",
