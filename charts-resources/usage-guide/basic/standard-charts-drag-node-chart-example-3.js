@@ -267,14 +267,14 @@
                     }
                     httpRequest.onreadystatechange = function() {
                         if (httpRequest.readyState === 4) {
-                            chartRef.setXMLUrl('../../resources/xml/chart-guide-drag-node-chart-introduction.xml');
+                            chartRef.setXMLUrl('https://static.fusioncharts.com/sample/dev2.0/chart-guide-drag-node-chart-introduction.xml');
                             alert("Data Restored");
                         } else if (httpRequest.readyState >= 400) {
                             alert("Data Restored Failed");
                         }
                     };
 
-                    httpRequest.open('GET', '../../resources/php/chart-guide-drag-node-chart-introduction-restore.php', true);
+                    httpRequest.open('GET', 'https://static.fusioncharts.com/sample/dev2.0/chart-guide-drag-node-chart-introduction-restore.php', true);
                     httpRequest.send(null);
                 };
 
