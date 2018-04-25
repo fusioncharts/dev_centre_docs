@@ -1927,6 +1927,78 @@
         "specSheet": "/maps/spec-sheets/dominicanrepublic",
         "markerData": "/maps/marker-data/dominicanrepublic"
     }, {
+        "name": "Dominican Republic (Separate Provinces)",
+        "marker": false,
+        "members": [{
+            "name": "Azua",
+            "alias": "azua",
+            "specSheet": "/maps/spec-sheets/azua"
+        }, {
+            "name": "Baoruco",
+            "alias": "baoruco",
+            "specSheet": "/maps/spec-sheets/baoruco"
+        }, {
+            "name": "Barahona",
+            "alias": "barahona",
+            "specSheet": "/maps/spec-sheets/barahona"
+        }, {
+            "name": "Dajabon",
+            "alias": "dajabon",
+            "specSheet": "/maps/spec-sheets/dajabon"
+        }, {
+            "name": "Distrito Nacional",
+            "alias": "distritonacional",
+            "specSheet": "/maps/spec-sheets/distritonacional"
+        }, {
+            "name": "Dominican Republic",
+            "alias": "dominicanrepublic",
+            "specSheet": "/maps/spec-sheets/dominicanrepublic"
+        }, {
+            "name": "Duarte",
+            "alias": "duarte",
+            "specSheet": "/maps/spec-sheets/duarte"
+        }, {
+            "name": "Elias Pina",
+            "alias": "eliaspina",
+            "specSheet": "/maps/spec-sheets/eliaspina"
+        }, {
+            "name": "",
+            "alias": "abcd",
+            "specSheet": "/maps/spec-sheets/abcd"
+        }, {
+            "name": "",
+            "alias": "abcd",
+            "specSheet": "/maps/spec-sheets/abcd"
+        }, {
+            "name": "",
+            "alias": "abcd",
+            "specSheet": "/maps/spec-sheets/abcd"
+        }, {
+            "name": "",
+            "alias": "abcd",
+            "specSheet": "/maps/spec-sheets/abcd"
+        }, {
+            "name": "",
+            "alias": "abcd",
+            "specSheet": "/maps/spec-sheets/abcd"
+        }, {
+            "name": "",
+            "alias": "abcd",
+            "specSheet": "/maps/spec-sheets/abcd"
+        }, {
+            "name": "",
+            "alias": "abcd",
+            "specSheet": "/maps/spec-sheets/abcd"
+        }, {
+            "name": "",
+            "alias": "abcd",
+            "specSheet": "/maps/spec-sheets/abcd"
+        }, {
+            "name": "",
+            "alias": "abcd",
+            "specSheet": "/maps/spec-sheets/abcd"
+        }]
+    }, {
         "name": "Greenland",
         "alias": "greenland",
         "specSheet": "/maps/spec-sheets/greenland",
