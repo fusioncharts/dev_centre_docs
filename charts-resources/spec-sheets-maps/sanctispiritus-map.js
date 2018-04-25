@@ -1,5 +1,5 @@
 {
-    type: 'maps/artemisa',
+    type: 'maps/sanctispiritus',
     renderAt: 'chart-container',
     width: '700',
     height: '500',
@@ -32,6 +32,6 @@
             "gradient": "1",
             "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
         },
-        "data": [{"id":"CU.AR.AL","value":672},{"id":"CU.AR.AR","value":2342},{"id":"CU.AR.BH","value":1758},{"id":"CU.AR.BU","value":572},{"id":"CU.AR.CM","value":3614},{"id":"CU.AR.CA","value":701},{"id":"CU.AR.GJ","value":4398},{"id":"CU.AR.GM","value":2078},{"id":"CU.AR.MR","value":3726},{"id":"CU.AR.SA","value":3741},{"id":"CU.AR.SC","value":1454}]
+        "data": [{"id":"CU.SS.CA","value":672},{"id":"CU.SS.FO","value":1878},{"id":"CU.SS.JA","value":1976},{"id":"CU.SS.LS","value":2478},{"id":"CU.SS.SS","value":2128},{"id":"CU.SS.TA","value":2778},{"id":"CU.SS.TR","value":2299},{"id":"CU.SS.YA","value":1303}]
     }
 }

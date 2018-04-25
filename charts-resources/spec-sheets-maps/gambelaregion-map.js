@@ -1,5 +1,5 @@
 {
-    type: 'maps/ethiopiaregion',
+    type: 'maps/gambelaregion',
     renderAt: 'chart-container',
     width: '700',
     height: '500',
@@ -32,6 +32,6 @@
             "gradient": "1",
             "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
         },
-        "data": [{"id":"ET.AA","value":888},{"id":"ET.AF","value":3538},{"id":"ET.AM","value":584},{"id":"ET.BE","value":1936},{"id":"ET.DD","value":2751},{"id":"ET.GA","value":995},{"id":"ET.HA","value":3940},{"id":"ET.OR","value":4076},{"id":"ET.SO","value":2161},{"id":"ET.SN","value":1224},{"id":"ET.TI","value":1724}]
+        "data": [{"id":"ET.GA.GO","value":888},{"id":"ET.GA.GT","value":3538},{"id":"ET.GA.GH","value":584},{"id":"ET.GA.GF","value":1936}]
     }
 }
