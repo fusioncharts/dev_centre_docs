@@ -446,7 +446,7 @@ Configure real-time updates from the server using the attributes given below:
 The JSON code looks as below:
 
 ```json
-"dataStreamURL": "../../resources/php/gauge-and-widgets-guide-bullet-chart-real-time-bullet-chart-php-1.php",
+"dataStreamURL": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-bullet-chart-real-time-bullet-chart-php-1.php",
         "refreshInterval": "10"
 ```
 
