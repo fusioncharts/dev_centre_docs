@@ -9,7 +9,7 @@
         "chart": {
             "caption": "Harry's Supermart",
             "subCaption": "Retail Store vs Online Transactions",
-            "dataStreamURL": "../../../resources/php/advance-charting-real-time-charts-multiple-datasets-and-updates-php-1.php",
+            "dataStreamURL": "https://static.fusioncharts.com/sample/dev2.0/advance-charting-real-time-charts-multiple-datasets-and-updates-php-1.php",
             "refreshInterval": "5",
             "yaxismaxvalue": "40",
             "numdisplaysets": "10",
