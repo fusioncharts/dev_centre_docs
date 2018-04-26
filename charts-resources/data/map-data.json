@@ -534,6 +534,86 @@
             "alias": "francedepartment",
             "specSheet": "/maps/spec-sheets/francedepartment"
         }, {
+            "name": "France (Department)",
+            "marker": false,
+            "members": [{
+                "name": "Auvergne Rhone Alpes",
+                "alias": "auvergnerhonealpes",
+                "specSheet": "/maps/spec-sheets/auvergnerhonealpes"
+            }, {
+                "name": "Bourgogne Franche Comte",
+                "alias": "bourgognefranchecomte",
+                "specSheet": "/maps/spec-sheets/bourgognefranchecomte"
+            }, {
+                "name": "Brittany",
+                "alias": "brittany",
+                "specSheet": "/maps/spec-sheets/brittany"
+            }, {
+                "name": "Centre Val de Loire",
+                "alias": "centrevaldeloire",
+                "specSheet": "/maps/spec-sheets/centrevaldeloire"
+            }, {
+                "name": "Corsica",
+                "alias": "corsica",
+                "specSheet": "/maps/spec-sheets/corsica"
+            }, {
+                "name": "France 2016",
+                "alias": "france2016",
+                "specSheet": "/maps/spec-sheets/france2016"
+            }, {
+                "name": "French Guiana",
+                "alias": "frenchguiana",
+                "specSheet": "/maps/spec-sheets/frenchguiana"
+            }, {
+                "name": "Grand Est",
+                "alias": "grandest",
+                "specSheet": "/maps/spec-sheets/grandest"
+            }, {
+                "name": "Guadeloupe",
+                "alias": "guadeloupe",
+                "specSheet": "/maps/spec-sheets/guadeloupe"
+            }, {
+                "name": "Hauts de France",
+                "alias": "hautsdefrance",
+                "specSheet": "/maps/spec-sheets/hautsdefrance"
+            }, {
+                "name": "Ile De France",
+                "alias": "iledefrance",
+                "specSheet": "/maps/spec-sheets/iledefrance"
+            }, {
+                "name": "Martinique",
+                "alias": "martinique",
+                "specSheet": "/maps/spec-sheets/martinique"
+            }, {
+                "name": "Mayotte",
+                "alias": "mayotte",
+                "specSheet": "/maps/spec-sheets/mayotte"
+            }, {
+                "name": "Normandy",
+                "alias": "normandy",
+                "specSheet": "/maps/spec-sheets/normandy"
+            }, {
+                "name": "Nouvelle Aquitaine",
+                "alias": "nouvelleaquitaine",
+                "specSheet": "/maps/spec-sheets/nouvelleaquitaine"
+            }, {
+                "name": "Occitanie",
+                "alias": "occitanie",
+                "specSheet": "/maps/spec-sheets/occitanie"
+            }, {
+                "name": "Pays De La Loire",
+                "alias": "paysdelaloire",
+                "specSheet": "/maps/spec-sheets/paysdelaloire"
+            }, {
+                "name": "Provence Alpes Cote d'Azur",
+                "alias": "provencealpescotedazur",
+                "specSheet": "/maps/spec-sheets/provencealpescotedazur"
+            }, {
+                "name": "Reunion",
+                "alias": "reunion",
+                "specSheet": "/maps/spec-sheets/reunion"
+            }]
+        }, {
             "name": "France (Arrondisemants)",
             "marker": false,
             "members": [{
