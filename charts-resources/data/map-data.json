@@ -5154,6 +5154,10 @@
                 "alias": "incheon",
                 "specSheet": "/maps/spec-sheets/incheon"
             }, {
+                "name": "Jedu",
+                "alias": "jedu",
+                "specSheet": "/maps/spec-sheets/jedu"
+            }, {
                 "name": "Jejudo",
                 "alias": "jejudo",
                 "specSheet": "/maps/spec-sheets/jejudo"
