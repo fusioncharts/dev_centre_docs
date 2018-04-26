@@ -6536,6 +6536,50 @@
             "specSheet": "/maps/spec-sheets/zambia",
             "markerData": "/maps/marker-data/zambia"
         }, {
+            "name": "Zambia (Provinces)",
+            "marker": false,
+            "members": [{
+                "name": "Central Zambia",
+                "alias": "centralzambia",
+                "specSheet": "/maps/spec-sheets/centralzambia"
+            }, {
+                "name": "Copperbelt",
+                "alias": "copperbelt",
+                "specSheet": "/maps/spec-sheets/copperbelt"
+            }, {
+                "name": "Eastern Zambia",
+                "alias": "easternzambia",
+                "specSheet": "/maps/spec-sheets/easternzambia"
+            }, {
+                "name": "Luapula",
+                "alias": "luapula",
+                "specSheet": "/maps/spec-sheets/luapula"
+            }, {
+                "name": "Lusaka",
+                "alias": "lusaka",
+                "specSheet": "/maps/spec-sheets/lusaka"
+            }, {
+                "name": "Muchinga",
+                "alias": "muchinga",
+                "specSheet": "/maps/spec-sheets/muchinga"
+            }, {
+                "name": "Northern Zambia",
+                "alias": "northernzambia",
+                "specSheet": "/maps/spec-sheets/northernzambia"
+            }, {
+                "name": "North Western Zambia",
+                "alias": "northwesternzambia",
+                "specSheet": "/maps/spec-sheets/northwesternzambia"
+            }, {
+                "name": "Southern Zambia",
+                "alias": "southernzambia",
+                "specSheet": "/maps/spec-sheets/southernzambia"
+            }, {
+                "name": "Western Zambia",
+                "alias": "westernzambia",
+                "specSheet": "/maps/spec-sheets/westernzambia"
+            }]
+        }, {
             "name": "Zimbabwe",
             "alias": "zimbabwe",
             "specSheet": "/maps/spec-sheets/zimbabwe",
