@@ -34,7 +34,7 @@
         }]
     },
     events: {
-        "beforeRender": function(evt, args) {
+        "rendered": function(evt, args) {
             var chartRef = evt.sender,
                 formatTime = function(time) {
                     (time < 10) ? (time = "0" + time) : (time = time);

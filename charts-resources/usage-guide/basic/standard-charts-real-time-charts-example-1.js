@@ -1,5 +1,4 @@
 {
-
     type: 'realtimeline',
     renderAt: 'chart-container',
     width: '500',
@@ -33,7 +32,7 @@
         }]
     },
     "events": {
-        "initialized": function(e, a) {
+        "rendered": function(e, a) {
 			var chartRef = e.sender;
             function addLeadingZero(num) {
                 return (num <= 9) ? ("0" + num) : num;
