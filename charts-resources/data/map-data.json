@@ -1917,6 +1917,74 @@
         "specSheet": "/maps/spec-sheets/cuba",
         "markerData": "/maps/marker-data/cuba"
     }, {
+        "name": "Cuba (Separate Provinces)",
+        "marker": false,
+        "members": [{
+            "name": "Artemisa",
+            "alias": "artemisa",
+            "specSheet": "/maps/spec-sheets/artemisa"
+        }, {
+            "name": "Camaguey",
+            "alias": "camaguey",
+            "specSheet": "/maps/spec-sheets/camaguey"
+        }, {
+            "name": "Ciego de Avila",
+            "alias": "ciegodeavila",
+            "specSheet": "/maps/spec-sheets/ciegodeavila"
+        }, {
+            "name": "Cienfuegos",
+            "alias": "cienfuegos",
+            "specSheet": "/maps/spec-sheets/cienfuegos"
+        }, {
+            "name": "Granma",
+            "alias": "granma",
+            "specSheet": "/maps/spec-sheets/granma"
+        }, {
+            "name": "Guantanamo",
+            "alias": "guantanamo",
+            "specSheet": "/maps/spec-sheets/guantanamo"
+        }, {
+            "name": "Havana",
+            "alias": "havana",
+            "specSheet": "/maps/spec-sheets/havana"
+        }, {
+            "name": "Holguin",
+            "alias": "holguin",
+            "specSheet": "/maps/spec-sheets/holguin"
+        }, {
+            "name": "Isla de la Juventud",
+            "alias": "isladelajuventud",
+            "specSheet": "/maps/spec-sheets/isladelajuventud"
+        }, {
+            "name": "Las Tunas",
+            "alias": "lastunas",
+            "specSheet": "/maps/spec-sheets/lastunas"
+        }, {
+            "name": "Matanzas",
+            "alias": "matanzas",
+            "specSheet": "/maps/spec-sheets/matanzas"
+        }, {
+            "name": "Mayabeque",
+            "alias": "mayabeque",
+            "specSheet": "/maps/spec-sheets/mayabeque"
+        }, {
+            "name": "Pinar del Rio",
+            "alias": "pinardelrio",
+            "specSheet": "/maps/spec-sheets/pinardelrio"
+        }, {
+            "name": "Sancti Spiritus",
+            "alias": "sanctispiritus",
+            "specSheet": "/maps/spec-sheets/sanctispiritus"
+        }, {
+            "name": "Santiago de Cuba",
+            "alias": "santiagodecuba",
+            "specSheet": "/maps/spec-sheets/santiagodecuba"
+        }, {
+            "name": "Villa Clara",
+            "alias": "villaclara",
+            "specSheet": "/maps/spec-sheets/villaclara"
+        }]
+    }, {
         "name": "Dominica",
         "alias": "dominica",
         "specSheet": "/maps/spec-sheets/dominica",
