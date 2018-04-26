@@ -4171,6 +4171,114 @@
             "specSheet": "/maps/spec-sheets/indonesia",
             "markerData": "/maps/marker-data/indonesia"
         }, {
+            "name": "Indonesia Provinces",
+            "marker": false,
+            "members": [{
+                "name": "Bali",
+                "alias": "bali",
+                "specSheet": "/maps/spec-sheets/bali"
+            }, {
+                "name": "Bangka Belitung Islands",
+                "alias": "bangkabelitungislands",
+                "specSheet": "/maps/spec-sheets/bangkabelitungislands"
+            }, {
+                "name": "Banten",
+                "alias": "banten",
+                "specSheet": "/maps/spec-sheets/banten"
+            }, {
+                "name": "Bengkulu",
+                "alias": "bengkulu",
+                "specSheet": "/maps/spec-sheets/bengkulu"
+            }, {
+                "name": "Central Java",
+                "alias": "centraljava",
+                "specSheet": "/maps/spec-sheets/centraljava"
+            }, {
+                "name": "Central Kalimantan",
+                "alias": "centralkalimantan",
+                "specSheet": "/maps/spec-sheets/centralkalimantan"
+            }, {
+                "name": "East Java",
+                "alias": "eastjava",
+                "specSheet": "/maps/spec-sheets/eastjava"
+            }, {
+                "name": "East Kalimantan",
+                "alias": "eastkalimantan",
+                "specSheet": "/maps/spec-sheets/eastkalimantan"
+            }, {
+                "name": "East Nusa Tenggara",
+                "alias": "eastnusatenggara",
+                "specSheet": "/maps/spec-sheets/eastnusatenggara"
+            }, {
+                "name": "Gorontalo",
+                "alias": "gorontalo",
+                "specSheet": "/maps/spec-sheets/gorontalo"
+            }, {
+                "name": "Jakarta Special Capital Region",
+                "alias": "jakartaspecialcapitalregion",
+                "specSheet": "/maps/spec-sheets/jakartaspecialcapitalregion"
+            }, {
+                "name": "Jambi",
+                "alias": "jambi",
+                "specSheet": "/maps/spec-sheets/jambi"
+            }, {
+                "name": "Lampung",
+                "alias": "lampung",
+                "specSheet": "/maps/spec-sheets/lampung"
+            }, {
+                "name": "North Kalimantan",
+                "alias": "northkalimantan",
+                "specSheet": "/maps/spec-sheets/northkalimantan"
+            }, {
+                "name": "North Maluku",
+                "alias": "northmaluku",
+                "specSheet": "/maps/spec-sheets/northmaluku"
+            }, {
+                "name": "North Sulawesi",
+                "alias": "northsulawesi",
+                "specSheet": "/maps/spec-sheets/northsulawesi"
+            }, {
+                "name": "North Sumatra",
+                "alias": "northsumatra",
+                "specSheet": "/maps/spec-sheets/northsumatra"
+            }, {
+                "name": "Riau",
+                "alias": "riau",
+                "specSheet": "/maps/spec-sheets/riau"
+            }, {
+                "name": "Southeast Sulawesi",
+                "alias": "southeastsulawesi",
+                "specSheet": "/maps/spec-sheets/southeastsulawesi"
+            }, {
+                "name": "South Kalimantan",
+                "alias": "southkalimantan",
+                "specSheet": "/maps/spec-sheets/southkalimantan"
+            }, {
+                "name": "Special Region of Aceh",
+                "alias": "specialregionofaceh",
+                "specSheet": "/maps/spec-sheets/specialregionofaceh"
+            }, {
+                "name": "Special Region of Yogyakarta",
+                "alias": "specialregionofyogyakarta",
+                "specSheet": "/maps/spec-sheets/specialregionofyogyakarta"
+            }, {
+                "name": "West Java",
+                "alias": "westjava",
+                "specSheet": "/maps/spec-sheets/westjava"
+            }, {
+                "name": "West Nusa Tenggara",
+                "alias": "westnusatenggara",
+                "specSheet": "/maps/spec-sheets/westnusatenggara"
+            }, {
+                "name": "West Sulawesi",
+                "alias": "westsulawesi",
+                "specSheet": "/maps/spec-sheets/westsulawesi"
+            }, {
+                "name": "West Sumatra",
+                "alias": "westsumatra",
+                "specSheet": "/maps/spec-sheets/westsumatra"
+            }]
+        }, {
             "name": "Japan",
             "alias": "japan",
             "specSheet": "/maps/spec-sheets/japan",
