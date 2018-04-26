@@ -4629,6 +4629,10 @@
                 "alias": "kumgangsan",
                 "specSheet": "/maps/spec-sheets/kumgangsan"
             }, {
+                "name": "Nompo",
+                "alias": "nampo",
+                "specSheet": "/maps/spec-sheets/nampo"
+            }, {
                 "name": "North Hamgyong",
                 "alias": "northhamgyong",
                 "specSheet": "/maps/spec-sheets/northhamgyong"
