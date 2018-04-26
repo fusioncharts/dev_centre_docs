@@ -5575,9 +5575,9 @@
             "name": "Iran (Regions)",
             "marker": false,
             "members": [{
-                "name": "Esfahan",
-                "alias": "esfahan",
-                "specSheet": "/maps/spec-sheets/esfahan"
+                "name": "Isfahan",
+                "alias": "isfahan",
+                "specSheet": "/maps/spec-sheets/isfahan"
             }, {
                 "name": "Kermanshah",
                 "alias": "kermanshah",
@@ -5594,6 +5594,134 @@
                 "name": "Tehran",
                 "alias": "tehran",
                 "specSheet": "/maps/spec-sheets/tehran"
+            }]
+        }, {
+            "name": "Iran (Separate Province Maps)",
+            "marker": false,
+            "members": [{
+                "name": "Alborz",
+                "alias": "alborz",
+                "specSheet": "/maps/spec-sheets/alborz"
+            }, {
+                "name": "Ardabil",
+                "alias": "ardabil",
+                "specSheet": "/maps/spec-sheets/ardabil"
+            }, {
+                "name": "Azerbaijan East",
+                "alias": "azerbaijaneast",
+                "specSheet": "/maps/spec-sheets/azerbaijaneast"
+            }, {
+                "name": "Azerbaijan West",
+                "alias": "azerbaijanwest",
+                "specSheet": "/maps/spec-sheets/azerbaijanwest"
+            }, {
+                "name": "Bushehr",
+                "alias": "bushehr",
+                "specSheet": "/maps/spec-sheets/bushehr"
+            }, {
+                "name": "Chahar Mahaal And Bakhtiari",
+                "alias": "chaharmahaalandbakhtiari",
+                "specSheet": "/maps/spec-sheets/chaharmahaalandbakhtiari"
+            }, {
+                "name": "Fars",
+                "alias": "fars",
+                "specSheet": "/maps/spec-sheets/fars"
+            }, {
+                "name": "Gilan",
+                "alias": "gilan",
+                "specSheet": "/maps/spec-sheets/gilan"
+            }, {
+                "name": "Golestan",
+                "alias": "golestan",
+                "specSheet": "/maps/spec-sheets/golestan"
+            }, {
+                "name": "Hamadan",
+                "alias": "hamadan",
+                "specSheet": "/maps/spec-sheets/hamadan"
+            }, {
+                "name": "Hormozgan",
+                "alias": "hormozgan",
+                "specSheet": "/maps/spec-sheets/hormozgan"
+            }, {
+                "name": "Ilam",
+                "alias": "ilam",
+                "specSheet": "/maps/spec-sheets/ilam"
+            }, {
+                "name": "Isfahan",
+                "alias": "isfahan",
+                "specSheet": "/maps/spec-sheets/isfahan"
+            }, {
+                "name": "Kerman",
+                "alias": "kerman",
+                "specSheet": "/maps/spec-sheets/kerman"
+            }, {
+                "name": "Kermanshah",
+                "alias": "kermanshah",
+                "specSheet": "/maps/spec-sheets/kermanshah"
+            }, {
+                "name": "Khorasan North",
+                "alias": "khorasannorth",
+                "specSheet": "/maps/spec-sheets/khorasannorth"
+            }, {
+                "name": "Khorasan Razavi",
+                "alias": "khorasanrazavi",
+                "specSheet": "/maps/spec-sheets/khorasanrazavi"
+            }, {
+                "name": "Khorasan South",
+                "alias": "khorasansouth",
+                "specSheet": "/maps/spec-sheets/khorasansouth"
+            }, {
+                "name": "Khuzestan",
+                "alias": "khuzestan",
+                "specSheet": "/maps/spec-sheets/khuzestan"
+            }, {
+                "name": "Kohgiluyeh And Boyer-Ahmad",
+                "alias": "kohgiluyehandboyerahmad",
+                "specSheet": "/maps/spec-sheets/kohgiluyehandboyerahmad"
+            }, {
+                "name": "Kurdistan",
+                "alias": "kurdistan",
+                "specSheet": "/maps/spec-sheets/kurdistan"
+            }, {
+                "name": "Lorestan",
+                "alias": "lorestan",
+                "specSheet": "/maps/spec-sheets/lorestan"
+            }, {
+                "name": "Markazi",
+                "alias": "markazi",
+                "specSheet": "/maps/spec-sheets/markazi"
+            }, {
+                "name": "Mazandaran",
+                "alias": "mazandaran",
+                "specSheet": "/maps/spec-sheets/mazandaran"
+            }, {
+                "name": "Qazvin",
+                "alias": "qazvin",
+                "specSheet": "/maps/spec-sheets/qazvin"
+            }, {
+                "name": "Qom",
+                "alias": "qom",
+                "specSheet": "/maps/spec-sheets/qom"
+            }, {
+                "name": "Semnan",
+                "alias": "semnan",
+                "specSheet": "/maps/spec-sheets/semnan"
+            }, {
+                "name": "Sistan and Baluchestan",
+                "alias": "sistanandbaluchestan",
+                "specSheet": "/maps/spec-sheets/sistanandbaluchestan"
+            }, {
+                "name": "Tehran",
+                "alias": "tehran",
+                "specSheet": "/maps/spec-sheets/tehran"
+            }, {
+                "name": "Yazd",
+                "alias": "yazd",
+                "specSheet": "/maps/spec-sheets/yazd"
+            }, {
+                "name": "Zanjan",
+                "alias": "zanjan",
+                "specSheet": "/maps/spec-sheets/zanjan"
             }]
         }, {
             "name": "Iraq",
