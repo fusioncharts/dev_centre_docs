@@ -5486,6 +5486,46 @@
             "alias": "vietnam",
             "specSheet": "/maps/spec-sheets/vietnam",
             "markerData": "/maps/marker-data/vietnam"
+        }, {
+            "name": "Vietnam (Administrative Region)",
+            "marker": false,
+            "members": [{
+                "name": "Central Highlands",
+                "alias": "centralhighlands",
+                "specSheet": "/maps/spec-sheets/centralhighlands"
+            }, {
+                "name": "Mekong River Delta",
+                "alias": "dekongriverdelta",
+                "specSheet": "/maps/spec-sheets/dekongriverdelta"
+            }, {
+                "name": "North Central",
+                "alias": "northcentral",
+                "specSheet": "/maps/spec-sheets/northcentral"
+            }, {
+                "name": "Northeast",
+                "alias": "northeast",
+                "specSheet": "/maps/spec-sheets/northeast"
+            }, {
+                "name": "Northwest",
+                "alias": "northwest",
+                "specSheet": "/maps/spec-sheets/northwest"
+            }, {
+                "name": "Red River Delta",
+                "alias": "redriverdelta",
+                "specSheet": "/maps/spec-sheets/redriverdelta"
+            }, {
+                "name": "South Central Coast",
+                "alias": "southcentralcoast",
+                "specSheet": "/maps/spec-sheets/southcentralcoast"
+            }, {
+                "name": "Southeast",
+                "alias": "southeast",
+                "specSheet": "/maps/spec-sheets/southeast"
+            }, {
+                "name": "Vietnam Region",
+                "alias": "vietnamregion",
+                "specSheet": "/maps/spec-sheets/vietnamregion"
+            }]
         }]
     }, {
         "name": "Regions",
