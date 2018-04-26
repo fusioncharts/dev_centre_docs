@@ -83,7 +83,7 @@
         }]
     },
     "events": {
-        "initialized": function(e) {
+        "rendered": function(e) {
 			var chartRef = e.sender;
             function formatTime(num) {
                 return (num <= 9) ? ("0" + num) : num;

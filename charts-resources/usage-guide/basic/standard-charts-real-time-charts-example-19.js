@@ -33,7 +33,7 @@
         }]
     },
     events: {
-        "beforeRender": function(evt, args) {
+        "rendered": function(evt, args) {
             var counter = 1,
                 chartRef = evt.sender,
                 formatTime = function(time) {

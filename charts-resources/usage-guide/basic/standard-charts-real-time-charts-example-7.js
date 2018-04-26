@@ -32,7 +32,7 @@
         }]
     },
     "events": {
-        "initialized": function(e) {
+        "rendered": function(e) {
 			var chartRef = e.sender;
             var flag = 0;
 
