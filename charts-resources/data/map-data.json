@@ -1950,10 +1950,6 @@
             "alias": "distritonacional",
             "specSheet": "/maps/spec-sheets/distritonacional"
         }, {
-            "name": "Dominican Republic",
-            "alias": "dominicanrepublic",
-            "specSheet": "/maps/spec-sheets/dominicanrepublic"
-        }, {
             "name": "Duarte",
             "alias": "duarte",
             "specSheet": "/maps/spec-sheets/duarte"
@@ -1962,41 +1958,105 @@
             "alias": "eliaspina",
             "specSheet": "/maps/spec-sheets/eliaspina"
         }, {
-            "name": "",
-            "alias": "abcd",
-            "specSheet": "/maps/spec-sheets/abcd"
+            "name": "El Seibo",
+            "alias": "eiseibo",
+            "specSheet": "/maps/spec-sheets/eiseibo"
         }, {
-            "name": "",
-            "alias": "abcd",
-            "specSheet": "/maps/spec-sheets/abcd"
+            "name": "Espaillat",
+            "alias": "espaillat",
+            "specSheet": "/maps/spec-sheets/espaillat"
         }, {
-            "name": "",
-            "alias": "abcd",
-            "specSheet": "/maps/spec-sheets/abcd"
+            "name": "Hato Mayor",
+            "alias": "hatomayor",
+            "specSheet": "/maps/spec-sheets/hatomayor"
         }, {
-            "name": "",
-            "alias": "abcd",
-            "specSheet": "/maps/spec-sheets/abcd"
+            "name": "Hermanas Mirabal",
+            "alias": "hermanasmirabal",
+            "specSheet": "/maps/spec-sheets/hermanasmirabal"
         }, {
-            "name": "",
-            "alias": "abcd",
-            "specSheet": "/maps/spec-sheets/abcd"
+            "name": "Independencia",
+            "alias": "independencia",
+            "specSheet": "/maps/spec-sheets/independencia"
         }, {
-            "name": "",
-            "alias": "abcd",
-            "specSheet": "/maps/spec-sheets/abcd"
+            "name": "La Altagracia",
+            "alias": "laaltagracia",
+            "specSheet": "/maps/spec-sheets/laaltagracia"
         }, {
-            "name": "",
-            "alias": "abcd",
-            "specSheet": "/maps/spec-sheets/abcd"
+            "name": "La Romana",
+            "alias": "laromana",
+            "specSheet": "/maps/spec-sheets/laromana"
         }, {
-            "name": "",
-            "alias": "abcd",
-            "specSheet": "/maps/spec-sheets/abcd"
+            "name": "La Vega",
+            "alias": "lavega",
+            "specSheet": "/maps/spec-sheets/lavega"
         }, {
-            "name": "",
-            "alias": "abcd",
-            "specSheet": "/maps/spec-sheets/abcd"
+            "name": "Maria Trinidad Sanchez",
+            "alias": "mariatrinidadsanchez",
+            "specSheet": "/maps/spec-sheets/mariatrinidadsanchez"
+        }, {
+            "name": "Monsenor Nouel",
+            "alias": "monsenornouel",
+            "specSheet": "/maps/spec-sheets/monsenornouel"
+        }, {
+            "name": "Monte Cristi",
+            "alias": "montecristi",
+            "specSheet": "/maps/spec-sheets/montecristi"
+        }, {
+            "name": "Monte Plata",
+            "alias": "monteplata",
+            "specSheet": "/maps/spec-sheets/monteplata"
+        }, {
+            "name": "Pedernales",
+            "alias": "pedernales",
+            "specSheet": "/maps/spec-sheets/pedernales"
+        }, {
+            "name": "Peravia",
+            "alias": "peravia",
+            "specSheet": "/maps/spec-sheets/peravia"
+        }, {
+            "name": "Puerto Plata",
+            "alias": "puertoplata",
+            "specSheet": "/maps/spec-sheets/puertoplata"
+        }, {
+            "name": "Samana",
+            "alias": "samana",
+            "specSheet": "/maps/spec-sheets/samana"
+        }, {
+            "name": "Sanchez Ramirez",
+            "alias": "sanchezramirez",
+            "specSheet": "/maps/spec-sheets/sanchezramirez"
+        }, {
+            "name": "San Cristobal",
+            "alias": "sancristobal",
+            "specSheet": "/maps/spec-sheets/sancristobal"
+        }, {
+            "name": "San Jose de Ocoa",
+            "alias": "sanjosedeocoa",
+            "specSheet": "/maps/spec-sheets/sanjosedeocoa"
+        }, {
+            "name": "San Juan",
+            "alias": "sanjuan",
+            "specSheet": "/maps/spec-sheets/sanjuan"
+        }, {
+            "name": "San Pedro de Macoris",
+            "alias": "sanpedrodemacoris",
+            "specSheet": "/maps/spec-sheets/sanpedrodemacoris"
+        }, {
+            "name": "Santiago",
+            "alias": "santiago",
+            "specSheet": "/maps/spec-sheets/santiago"
+        }, {
+            "name": "Santiago Rodriguez",
+            "alias": "santiagorodriguez",
+            "specSheet": "/maps/spec-sheets/santiagorodriguez"
+        }, {
+            "name": "Santo Domingo",
+            "alias": "santodomingo",
+            "specSheet": "/maps/spec-sheets/santodomingo"
+        }, {
+            "name": "Valverde",
+            "alias": "valverde",
+            "specSheet": "/maps/spec-sheets/valverde"
         }]
     }, {
         "name": "Greenland",
