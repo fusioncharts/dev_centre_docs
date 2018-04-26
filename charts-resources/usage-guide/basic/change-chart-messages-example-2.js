@@ -8,7 +8,7 @@
     width: '550',
     height: '350',
     dataFormat: 'xmlurl',
-    dataSource: '../../resources/php/https://static.fusioncharts.com/sample/dev2.0/how-to-guides-change-chart-messages-php-2.php',
+    dataSource: 'https://static.fusioncharts.com/sample/dev2.0/how-to-guides-change-chart-messages-php-2.php',
     events: {
         'beforeRender': function(evt, args) {
             if (!document.getElementById('controllersStyle')) {
