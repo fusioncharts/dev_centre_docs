@@ -67,7 +67,7 @@
         }]
     },
     events: {
-        "beforeRender": function(evt, args) {
+        "rendered": function(evt, args) {
             var chartRef = evt.sender,
                 //Format minutes, seconds by adding 0 prefix accordingly
                 formatTime = function(time) {
