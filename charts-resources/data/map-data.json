@@ -5955,6 +5955,30 @@
             "specSheet": "/maps/spec-sheets/tajikistan",
             "markerData": "/maps/marker-data/tajikistan"
         }, {
+            "name": "Tajikistan (Divisional Maps)",
+            "marker": false,
+            "members": [{
+                "name": "Gorno-Badakhshan",
+                "alias": "gornobadakhshan",
+                "specSheet": "/maps/spec-sheets/gornobadakhshan"
+            }, {
+                "name": "Khatlon",
+                "alias": "khatlon",
+                "specSheet": "/maps/spec-sheets/khatlon"
+            }, {
+                "name": "Region of Republican Subordination",
+                "alias": "regionofrepublicansubordination",
+                "specSheet": "/maps/spec-sheets/regionofrepublicansubordination"
+            }, {
+                "name": "Sughd",
+                "alias": "sughd",
+                "specSheet": "/maps/spec-sheets/sughd"
+            }, {
+                "name": "Tajikistan",
+                "alias": "tajikistan",
+                "specSheet": "/maps/spec-sheets/tajikistan"
+            }]
+        }, {
             "name": "Turkmenistan",
             "alias": "turkmenistan",
             "specSheet": "/maps/spec-sheets/turkmenistan",
