@@ -6584,6 +6584,50 @@
             "alias": "zimbabwe",
             "specSheet": "/maps/spec-sheets/zimbabwe",
             "markerData": "/maps/marker-data/zimbabwe"
+        }, {
+            "name": "Zimbabwe (Separate Provinces)",
+            "marker": false,
+            "members": [{
+                "name": "Bulawayo",
+                "alias": "bulawayo",
+                "specSheet": "/maps/spec-sheets/bulawayo"
+            }, {
+                "name": "Harare",
+                "alias": "harare",
+                "specSheet": "/maps/spec-sheets/harare"
+            }, {
+                "name": "Manicaland",
+                "alias": "manicaland",
+                "specSheet": "/maps/spec-sheets/manicaland"
+            }, {
+                "name": "Mashonaland Central",
+                "alias": "mashonalandcentral",
+                "specSheet": "/maps/spec-sheets/mashonalandcentral"
+            }, {
+                "name": "Mashonaland East",
+                "alias": "mashonalandeast",
+                "specSheet": "/maps/spec-sheets/mashonalandeast"
+            }, {
+                "name": "Mashonaland West",
+                "alias": "mashonalandwest",
+                "specSheet": "/maps/spec-sheets/mashonalandwest"
+            }, {
+                "name": "Masvingo",
+                "alias": "masvingo",
+                "specSheet": "/maps/spec-sheets/masvingo"
+            }, {
+                "name": "Matabeleland North",
+                "alias": "matabelelandnorth",
+                "specSheet": "/maps/spec-sheets/matabelelandnorth"
+            }, {
+                "name": "Matabeleland South",
+                "alias": "matabelelandsouth",
+                "specSheet": "/maps/spec-sheets/matabelelandsouth"
+            }, {
+                "name": "Midlands",
+                "alias": "midlands",
+                "specSheet": "/maps/spec-sheets/midlands"
+            }]
         }]
     }, {
         "name": "Madagascar",
