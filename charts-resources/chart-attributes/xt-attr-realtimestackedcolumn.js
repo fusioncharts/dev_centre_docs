@@ -91,7 +91,7 @@
                     // Build Data String in format &label=...&value=...
                     strData = "&label=" + label + "&value=" + randomValue + "|" + randomValue2;
                 // Feed it to chart.
-                chartRef.feedData(strData);
+                chartRef.feedData && chartRef.feedData(strData);
             }
 
             e.sender.interval = setInterval(function() {
