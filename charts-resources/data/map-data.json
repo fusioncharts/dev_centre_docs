@@ -6353,7 +6353,7 @@
             "specSheet": "/maps/spec-sheets/ethiopia",
             "markerData": "/maps/marker-data/ethiopia"
         }, {
-            "name": "Ethiopia Region",
+            "name": "Ethiopia (Zonal Divisions and Region)",
             "marker": false,
             "members": [{
                 "name": "Addis Ababa City",
@@ -6375,6 +6375,10 @@
                 "name": "Dire Dawa City",
                 "alias": "diredawacity",
                 "specSheet": "/maps/spec-sheets/diredawacity"
+            }, {
+                "name": "Ethiopia Region",
+                "alias": "ethiopiaregion",
+                "specSheet": "/maps/spec-sheets/ethiopiaregion"
             }, {
                 "name": "Gambela Region",
                 "alias": "gambelaregion",
