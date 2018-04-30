@@ -49,7 +49,7 @@
         	
             chartRef.chartInterval = setInterval(function() {
                 var num = (Math.floor(Math.random() * 55) * -1) - 5;
-                chartRef.feedData("&value=" + num);
+                chartRef.feedData && chartRef.feedData("&value=" + num);
             }, 10000);
         },
         "disposed": function(evt, arg) {

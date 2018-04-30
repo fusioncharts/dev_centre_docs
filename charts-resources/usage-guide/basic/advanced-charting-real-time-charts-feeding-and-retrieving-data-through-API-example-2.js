@@ -95,7 +95,7 @@
                 var footfall = Math.round(Math.random() * 15) + 5;
                 var strData = "&label=" + label + "&value=" + footfall;
                 //Feed it to chart.
-                chartRef.feedData(strData);
+                chartRef.feedData && chartRef.feedData(strData);
 
             }, 5000);
 

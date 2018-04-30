@@ -54,7 +54,7 @@
         	var chartRef = evtObj.sender;
             chartRef.intervalVar = setInterval(function() {
                 var prcnt = 65 + parseInt(Math.floor(Math.random() * 10), 10);
-                chartRef.feedData("value=" + prcnt);
+                chartRef.feedData && chartRef.feedData("value=" + prcnt);
             }, 5000);
 
             //Format minutes, seconds by adding 0 prefix accordingly

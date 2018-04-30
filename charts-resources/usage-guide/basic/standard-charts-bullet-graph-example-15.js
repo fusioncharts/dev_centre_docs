@@ -59,7 +59,7 @@
             chartRef.intervalVar = setInterval(function() {
                 i2 = i2 + parseInt(Math.floor(Math.random() * 400), 10);
                 if (i2 < 10970) {
-                    chartRef.feedData("value=" + i2 + "&target=10000");
+                    chartRef.feedData && chartRef.feedData("value=" + i2 + "&target=10000");
                 } else {
                     clearInterval(chartRef.intervalVar);
                 }

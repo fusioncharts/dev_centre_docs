@@ -54,7 +54,7 @@
                         chartRef.clearChart();
                     }
                     //Feed it to chart.
-                    chartRef.feedData(strData);
+                    chartRef.feedData && chartRef.feedData(strData);
                     //Increasing counter
                     counter += 1;
                 };

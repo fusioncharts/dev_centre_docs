@@ -113,7 +113,7 @@ Click [here](http://jsfiddle.net/fusioncharts/kdfX7/ "@@open-newtab") to edit th
 
 Now, let's create a real-time stacked area chart showcasing the number of live visitors in every 5 seconds interval.
 
-To create a real-time chart, set the `type` attribute to `realtimestackedarea`. 
+To create a real-time chart, set the `type` attribute to `realtimestackedarea`.
 
 For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=realtimestackedarea "@@open-newtab") page of real-time stacked area chart.
 
@@ -153,7 +153,7 @@ Click [here](http://jsfiddle.net/fusioncharts/bLUw5/ "@@open-newtab") to edit th
 
 ## Real Time Dual Y-axis Line chart
 
-To create a real-time dual y line chart, set the `type` attribute to `realtimelinedy`. 
+To create a real-time dual y line chart, set the `type` attribute to `realtimelinedy`.
 
 For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=realtimelinedy "@@open-newtab") page of real-time dual y-axis line chart.
 
@@ -559,15 +559,15 @@ Now, let's see how can the alert manager can be configured.
 
 Let's create a real-time chart, in which the alert manager is configured to call a JavaScript function. The container object for alerts is `alerts` property, which is a child of the `datasource` object.
 
-Now, for each alert range object, you need to define an alert array element as a child of the alerts object. The alert array elements can be configured using following points: 
+Now, for each alert range object, you need to define an alert array element as a child of the alerts object. The alert array elements can be configured using following points:
 
-* Set the `minValue` attribute to specify the minimum value for the threshold range. For example, to define an alert for the range 5-8, 5 is the minimum value. When real-time values are matched against the value for `minValue`, the value is inclusive. 
+* Set the `minValue` attribute to specify the minimum value for the threshold range. For example, to define an alert for the range 5-8, 5 is the minimum value. When real-time values are matched against the value for `minValue`, the value is inclusive.
 
 * Set the `maxValue` attribute to specify the maximum value for the threshold range. Like the minimum value, the maximum value is also inclusive during value checks.
 
 * Set the `action` attribute to define the action to be taken, when the chart value matches an alert range. Possible values for this attribute are:
 
-`CALLJS` – It calls a JavaScript function (specified using the `param` attribute – explained next) when the chart value matches against an alert range. To pass parameters to the JavaScript function, specify the exact function name and parameters in the `param` attribute – for example, `"param": "showAlert('Online Transaction above average');"` 
+`CALLJS` – It calls a JavaScript function (specified using the `param` attribute – explained next) when the chart value matches against an alert range. To pass parameters to the JavaScript function, specify the exact function name and parameters in the `param` attribute – for example, `"param": "showAlert('Online Transaction above average');"`
 `SHOWANNOTATION` – You can create custom annotations and annotation groups (with named IDs). This action lets you show a predefined annotation group in the chart. For example, you may define an annotation group of three circles, that represent three status indicators in the colors red, green, and yellow, and assign an annotation group ID for them. By default, you may hide all status indicators. Later, based on the chart's value, you may show an annotation. The group Id of the annotation to be shown is defined using the `param` attribute. When the chart value falls out of the alert range, the chart hides the annotation.
 
 * Set the `param` attribute to accept the parameter for an action, depending on the type of action specified using the `action` attribute. For the `CALLJS` action, it takes the name of the JavaScript function and for the `SHOWANNOTATION` action, it takes the ID of the annotation group in order to show the annotation.
@@ -679,7 +679,7 @@ The following two steps are involved in configuring and using the message logger
 
 To configure the message logger, follow the steps given below:
 
-* Set the value of `useMessageLog` attribute to `1` to specify the message logger for a real-time chart/gauge. 
+* Set the value of `useMessageLog` attribute to `1` to specify the message logger for a real-time chart/gauge.
 The message logger, however, will become visible only when it listens to the first message streamed from the server.
 
 * Set the value to `showRTMenuItem` attribute to `1` to specify the real-time update-related menu items in the chart's  context menu.
@@ -711,7 +711,7 @@ For a detailed list of attributes used to configure the functional and cosmetic 
 
 ### Stream Message
 
-Each real-time update of the chart can contain one message to be added to the message logger. The messages to be logged should be provided in the real-time data stream and not in the JSON/XML data. Real-time data stream refers to the data provided by the URL specified in the `dataStreamURL` attribute. 
+Each real-time update of the chart can contain one message to be added to the message logger. The messages to be logged should be provided in the real-time data stream and not in the JSON/XML data. Real-time data stream refers to the data provided by the URL specified in the `dataStreamURL` attribute.
 
 To log messages provided in the real-time data stream, follow the points given below:
 
@@ -721,10 +721,10 @@ To log messages provided in the real-time data stream, follow the points given b
 
 * Set the `megText` attribute to specify the message text.
 
-* Set the `msgtype` attribute to specify the message type. Possible values are `INFO`, `ERROR`, `LITERAL`, or `LINK`. 
+* Set the `msgtype` attribute to specify the message type. Possible values are `INFO`, `ERROR`, `LITERAL`, or `LINK`.
 Each message type is rendered using a different formatting style to aid instant interpretation. `INFO` messages are shown using normal font properties. `ERROR` messages are highlighted in a shade of red. `LITERAL` type messages are shown in code-like blocks. `LINK` messages serve as clickable links.
 
-* The messages streamed to the chart can either be displayed in the message log window or can be passed to JavaScript functions(which we'll see next). Set the value of `msgGoesToLog` attribute to `1` to specify the message to be logging in the built-in log window. 
+* The messages streamed to the chart can either be displayed in the message log window or can be passed to JavaScript functions(which we'll see next). Set the value of `msgGoesToLog` attribute to `1` to specify the message to be logging in the built-in log window.
 By default, this attribute takes its value from the `messageGoesToLog` attribute defined for the chart object.
 
 * Set the `msgGoesToJS` attribute to specify whether each message streamed from the server will be passed to the local JavaScript function. Setting this attribute to `1` will pass the message to the JavaScript function, setting it to `0` will show it in the built-in log window.

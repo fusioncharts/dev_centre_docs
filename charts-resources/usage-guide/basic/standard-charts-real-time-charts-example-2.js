@@ -82,7 +82,7 @@
                     "&value=" +
                     randomValue;
                 // Feed it to chart.
-                chartRef.feedData(strData);
+                chartRef.feedData && chartRef.feedData(strData);
             }
 
             chartRef.chartInterval =  setInterval(function() {

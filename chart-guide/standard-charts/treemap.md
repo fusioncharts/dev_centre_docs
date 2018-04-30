@@ -238,8 +238,6 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/myz9pjpw/ "@@open-newtab") to edit the above chart.
 
-> In the chart given above, you can compare the performances of top selling car manufacturers in Europe in the present year with that in the previous year. Click the rectangles to traverse through the chart and see how the chart view changes.
-
 ### Use the slice and dice algorithm
 
 In a treemap, the slice and dice tiling algorithm is one of the simplest algorithms and offers excellent stability, while preserving the ordering of data. The trade-off, however, lies in its high aspect ratio, resulting in the treemap being drawn as thin rectangles, which are difficult to compare.
@@ -278,6 +276,8 @@ The chart looks like as shown below:
 {% embed_chart standard-charts-treemap-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/LL6rqgk4/ "@@open-newtab") to edit the above chart.
+
+> In the chart given above, you can compare the performances of top selling car manufacturers in Europe in the present year with that in the previous year. Click the rectangles to traverse through the chart and see how the chart view changes.
 
 **Horizontal Mode**
 

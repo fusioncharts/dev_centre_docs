@@ -627,18 +627,6 @@
                 "range": "0/1",
                 "type": "Boolean",
                 "name": "subCaptionFontBold"
-            },
-            {
-                "description": "Whether the caption is aligned with the canvas. Else, it will be aligned with the entire chart area",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "alignCaptionWithCanvas"
-            },
-            {
-                "description": "If caption is not centre aligned, lets you configure the padding (in pixels) from either edge.\nWill be ignored if caption is centre aligned.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "captionHorizontalPadding"
             }
         ],
         "description": "These attributes let you configure the cosmetics of chart caption and sub-caption."

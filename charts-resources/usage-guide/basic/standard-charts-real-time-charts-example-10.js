@@ -85,7 +85,7 @@
                         strData = "&label=" + label + "&value=" + transactions;
 
                     //Feed it to chart.
-                    chartRef.feedData(strData);
+                    chartRef.feedData && chartRef.feedData(strData);
                 };
                 chartRef.intervalUpdate = setInterval(function() {
                     updateData();

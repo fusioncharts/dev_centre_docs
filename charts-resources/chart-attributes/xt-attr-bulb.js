@@ -52,7 +52,7 @@
         "rendered": function(evtObj, argObj) {
             evtObj.sender.interval = setInterval(function() {
                 var num = (Math.floor(Math.random() * 55) * -1) - 5;
-                evtObj.sender.feedData("&value=" + num);
+                evtObj.sender.feedData && evtObj.sender.feedData("&value=" + num);
             }, 10000);
         },
         "disposed": function(evtObj, argObj) {

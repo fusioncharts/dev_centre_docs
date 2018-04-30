@@ -28,7 +28,7 @@
                 (fuelVolume < 10) ? (fuelVolume = 110) : "";
                 var consVolume = fuelVolume - (Math.floor(Math.random() * 3));
                 // feed data to the cylinder gauge, fuelMeter
-                evtObj.sender.feedData("&value=" + consVolume);
+                evtObj.sender.feedData && evtObj.sender.feedData("&value=" + consVolume);
                 fuelVolume = consVolume;
             }, 1000); // set the refresh interval to 1000 ms
         },

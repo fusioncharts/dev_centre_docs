@@ -87,7 +87,7 @@
                     transactions = Math.round(Math.random() * 4) + 1,
                     strData = "&label=" + label + "&value=" + transactions;
                 //Feed it to chart.
-                chartRef.feedData(strData);
+                chartRef.feedData && chartRef.feedData(strData);
             }
             //Interval
             evt.sender.interval = setInterval(function() {
