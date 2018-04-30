@@ -316,7 +316,7 @@
             var controllers = document.createElement('div');
             controllers.setAttribute('id', 'controllers');
             controllers.style.display = "inline-block";
-            controllers.innerHTML = "<div id='tableView' style='width:500px;display:none;margin-left:0px;max-height:250px;overflow:scroll;border: 1px solid #CCCCCC;margin: 3px;float: left;display:none; color: #666666;font-family:'Arial','Helvetica';font-size: 12px;'></div>";
+            controllers.innerHTML = "<div id='tableView-1' style='width:500px;display:none;margin-left:0px;max-height:250px;overflow:scroll;border: 1px solid #CCCCCC;margin: 3px;float: left;display:none; color: #666666;font-family:'Arial','Helvetica';font-size: 12px;'></div>";
             //Display container div and write table
             argObj.container.parentNode.insertBefore(controllers, argObj.container.nextSibling);
             /*
@@ -324,7 +324,7 @@
              * tabular string from selection and
              * write in a div and display it.
              */
-            getDataFromChart = function() {
+            evtObj.sender.getDataFromChart = function() {
                 var i,
                     j,
                     str,
@@ -332,7 +332,7 @@
                     dataArr,
                     flagData = false,
                     objDataset = evtObj.sender.getJSONData && evtObj.sender.getJSONData().dataset,
-                    tableContainer = document.getElementById("tableView");
+                    tableContainer = document.getElementById("tableView-1");
 
                 //Form tabular string
                 str = "<div style='margin:3px;font-family:'Arial','Helvetica';font-size: 12px;'> Data is returned by the chart as Array. The data is converted into tabular format using JavaScript.</div>";
@@ -376,12 +376,12 @@
             }
         },
         "beforeDataSubmit": function(evtObj, argObj) {
-            getDataFromChart();
+			evtObj.sender.getDataFromChart();
 
         },
         "dataRestored": function(evtObj, argObj) {
-            document.getElementById("tableView").style.display = "none";
-            document.getElementById("tableView").innerHTML = "";
+            document.getElementById("tableView-1").style.display = "none";
+            document.getElementById("tableView-1").innerHTML = "";
         }
     }
 }

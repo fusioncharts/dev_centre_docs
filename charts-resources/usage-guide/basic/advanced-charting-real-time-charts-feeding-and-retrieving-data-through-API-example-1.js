@@ -59,7 +59,7 @@
                     //Build Data String in format &label=...&value=...
                     strData = "&label=" + label + "&value=" + randomValue;
                 //Feed it to chart.
-                chartRef.feedData(strData);
+                chartRef.feedData && chartRef.feedData(strData);
 
             }, 5000);
 

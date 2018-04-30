@@ -57,7 +57,7 @@
             chartRef.intervalVar = setInterval(function() {
                 i5 = i5 + parseInt(Math.floor(Math.random() * 50), 10);
                 if (i5 < 10120) {
-                    chartRef.feedData("value=" + i5 + "&target=10000");
+                    chartRef.feedData && chartRef.feedData("value=" + i5 + "&target=10000");
                 } else {
                     clearInterval(chartRef.intervalVar);
                 }

@@ -72,15 +72,14 @@
                 rowHeaderSamsung = " background-color: #6baa01;color: #fff; padding: 10px 5px; text-align: center;min-width: 70px;";
             tableContArea.setAttribute('id', 'tableContArea');
             tableContArea.setAttribute('style', 'padding-left: 10px; width: 470px;');
-            strHTML = "<table style='margin: 25px auto;border-collapse: collapse;border: 1px solid;border-bottom: 2px solid;'><tr><td style='border-top: 1px solid #fff; border-left: 1px solid #fff;'></td><th style='" + thStyle + "'>Q1</th><th style='" + thStyle + "'>Q2</th><th style='" + thStyle + "'>Q3(E)</th><th style='" + thStyle + "'>Q4(E)</th></tr><tr><td style='" + rowHeaderApple + "'>Apple</td><td id='area_1-1' style='" + tdStyleApple + "'>1200</td><td id='area_1-2' style='" + tdStyleApple + "'>1500</td><td id='area_1-3' style='" + tdStyleApple + "'>1300</td><td id='area_1-4' style='" + tdStyleApple + "'>900</td></tr><tr><td style='" + rowHeaderSamsung + "'>Samsung</td><td id='area_2-1' style='" + tdStyleSamsung + "'>600</td><td id='area_2-2' style='" + tdStyleSamsung + "'>850</td><td id='area_2-3' style='" + tdStyleSamsung + "'>1000</td><td id='area_2-4' style='" + tdStyleSamsung + "'>1200</td></tr></table><p align = 'center'> (E) indicates Estimated</p>";
+            strHTML = "<table style='margin: 25px auto;border-collapse: collapse;border: 1px solid;border-bottom: 2px solid;'><tr><td style='border-top: 1px solid #fff; border-left: 1px solid #fff;'></td><th style='" + thStyle + "'>Q1</th><th style='" + thStyle + "'>Q2</th><th style='" + thStyle + "'>Q3(E)</th><th style='" + thStyle + "'>Q4(E)</th></tr><tr><td style='" + rowHeaderApple + "'>Apple</td><td id='area_0-0' style='" + tdStyleApple + "'>1200</td><td id='area_0-1' style='" + tdStyleApple + "'>1500</td><td id='area_0-2' style='" + tdStyleApple + "'>1300</td><td id='area_0-3' style='" + tdStyleApple + "'>900</td></tr><tr><td style='" + rowHeaderSamsung + "'>Samsung</td><td id='area_1-0' style='" + tdStyleSamsung + "'>600</td><td id='area_1-1' style='" + tdStyleSamsung + "'>850</td><td id='area_1-2' style='" + tdStyleSamsung + "'>1000</td><td id='area_1-3' style='" + tdStyleSamsung + "'>1200</td></tr></table><p align = 'center'> (E) indicates Estimated</p>";
             tableContArea.innerHTML = strHTML;
             args.container.parentNode.insertBefore(tableContArea, args.container.nextSibling);
         },
         'dataplotdragend': function(evt, arg) {
             var dsIndx = arg && arg.datasetIndex,
                 dtIndx = arg && arg.dataIndex,
-                val = arg && parseInt(arg.endValue, 10);
-
+				val = arg && parseInt(arg.endValue, 10);
             document.getElementById("area_" + dsIndx + '-' + dtIndx).innerHTML = val;
 
         },

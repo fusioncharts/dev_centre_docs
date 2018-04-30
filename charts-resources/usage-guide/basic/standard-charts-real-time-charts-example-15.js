@@ -102,7 +102,7 @@
                     strData = "&label=" + label + "&value=" + footfall + "&msgTitle=Footfall at &msgText=" + label + " hrs is " + footfall + " Customers" + ((footfall < 9) ? " WARNING !!!&msgType=ERROR" : "");
 
                 //Feed it to chart.
-                chartRef.feedData(strData);
+                chartRef.feedData && chartRef.feedData(strData);
             }, 5000);
         },
         'disposed': function(evt, arg) {

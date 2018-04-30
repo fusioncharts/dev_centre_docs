@@ -62,7 +62,7 @@
                 var ggPrcnt = 60 + parseInt(Math.floor(Math.random() * 10), 10),
                     //Range 75-85%
                     bcPrcnt = 75 + parseInt(Math.floor(Math.random() * 10), 10);
-               	evtObj.sender.feedData("value=" + ggPrcnt + "|" + bcPrcnt);
+               	evtObj.sender.feedData && evtObj.sender.feedData("value=" + ggPrcnt + "|" + bcPrcnt);
             }, 5000);
         },
         "disposed": function(evtObj, argObj) {
