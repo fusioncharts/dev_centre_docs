@@ -1,6 +1,5 @@
 {
     type: 'angulargauge',
-    id: "myGauge",
     renderAt: 'chart-container',
     width: '400',
     height: '300',
@@ -124,7 +123,7 @@
                     if (speedScore && diff) {
                         speedScore += scoreArray[flag];
                         flag += 1;
-                        FusionCharts.items["myGauge"].feedData("value=" + speedScore);
+						evtObj.sender.feedData && evtObj.sender.feedData("value=" + speedScore);
 
                     }
                 }, 2000);

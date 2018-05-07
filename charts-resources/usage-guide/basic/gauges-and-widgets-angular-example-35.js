@@ -2,7 +2,7 @@
     type: 'angulargauge',
     renderAt: 'chart-container',
     width: '100%',
-    height: '400',
+    height: '300',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -117,10 +117,10 @@
     },
     events: {
         'beforeInitialize': function(evt, args) {
-           var chartContainer = document.getElementById(args.renderAt);
+			var chartContainer = document.getElementById("chart-container-35");
             //set default height and width for the container
             chartContainer.style.width = "400px";
-            chartContainer.style.height = "300px";
+            chartContainer.style.height = "450px";
         },
         'beforeRender': function(evt, args) {
             // Form controllers div

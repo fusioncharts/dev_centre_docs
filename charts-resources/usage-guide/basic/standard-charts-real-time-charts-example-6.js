@@ -83,7 +83,7 @@
         }]
     },
     "events": {
-        "initialized": function(e) {
+        "rendered": function(e) {
 			var chartRef = e.sender;
             function formatTime(num) {
                 return (num <= 9) ? ("0" + num) : num;
@@ -106,7 +106,7 @@
                     //Build Data String in format &label=...&value=...
                     strData = "&label=" + label + "&value=" + hrys + "|" + nyse;
                 //Feed it to chart.
-                chartRef.feedData(strData);
+                chartRef.feedData && chartRef.feedData(strData);
             }
             chartRef.chartInterval = setInterval(function() {
                 updateData();

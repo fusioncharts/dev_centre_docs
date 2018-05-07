@@ -67,7 +67,7 @@
         }]
     },
     events: {
-        "beforeRender": function(evt, args) {
+        "rendered": function(evt, args) {
             var chartRef = evt.sender,
                 //Format minutes, seconds by adding 0 prefix accordingly
                 formatTime = function(time) {
@@ -85,7 +85,7 @@
                         strData = "&label=" + label + "&value=" + transactions;
 
                     //Feed it to chart.
-                    chartRef.feedData(strData);
+                    chartRef.feedData && chartRef.feedData(strData);
                 };
                 chartRef.intervalUpdate = setInterval(function() {
                     updateData();

@@ -53,7 +53,7 @@
         "rendered": function(evtObj, argObj) {
             evtObj.sender.interval = setInterval(function() {
                 var prcnt = 65 + parseInt(Math.floor(Math.random() * 10), 10);
-                evtObj.sender.feedData("value=" + prcnt);
+                evtObj.sender.feedData && evtObj.sender.feedData("value=" + prcnt);
             }, 5000);
         },
         "disposed": function(evtObj, argObj) {

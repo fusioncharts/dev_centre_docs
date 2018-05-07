@@ -34,7 +34,7 @@
         }]
     },
     events: {
-        "beforeRender": function(evt, args) {
+        "rendered": function(evt, args) {
             var chartRef = evt.sender,
                 formatTime = function(time) {
                     (time < 10) ? (time = "0" + time) : (time = time);
@@ -50,7 +50,7 @@
                         footfall = (Math.round(Math.random() * 4) + 1),
                         strData = "&label=" + label + "&value=" + footfall;
                     //Feed it to chart.
-                    chartRef.feedData(strData);
+                    chartRef.feedData && chartRef.feedData(strData);
                 };
                 evt.sender.chartInterval = setInterval(function() {
                     updateData();

@@ -156,7 +156,7 @@ The angular gauge chart in the FusionCharts Suite XT offers configuration option
 
 ## Configure the gauge gradient fill
 
-An angular gauge is usually rendered with solid colors filled in the background. To enhance the visual representation of charts, use a gradient fill for the background. 
+An angular gauge is usually rendered with solid colors filled in the background. To enhance the visual representation of charts, use a gradient fill for the background.
 
 Use the following attributes to configure the gradient fill for the gauge:
 
@@ -168,7 +168,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
         "gaugeFillRatio": "15"
     },
@@ -189,7 +189,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "showGaugeBorder": "0"
     },
 }
@@ -217,7 +217,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
     },
     "colorRange": {
         "color": [{
@@ -248,7 +248,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "gaugeBorderColor": "#111111",
         "gaugeBorderThickness": "1",
         "gaugeBorderAlpha": "100"
@@ -270,7 +270,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "gaugeBorderColor": "{dark-30}"
     },
 }
@@ -294,7 +294,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "gaugeOuterRadius": "180",
         "gaugeInnerRadius": "120"
     },
@@ -309,7 +309,7 @@ Click [here](http://jsfiddle.net/fusioncharts/44E7B/ "@@open-newtab") to edit th
 
 ## Configure pivot properties
 
-Like the range scale and the border of the angular gauge, you can also configure the pivot that points to a data value on the range scale. 
+Like the range scale and the border of the angular gauge, you can also configure the pivot that points to a data value on the range scale.
 
 ### Set the pivot radius
 
@@ -319,7 +319,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": {     
+    "chart": {
         "pivotRadius": "10"
     },
 }
@@ -368,7 +368,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "pivotFillColor": "#5599CC",
         "pivotFillAlpha": "100"
     },
@@ -393,7 +393,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "pivotFillColor": "#1122CC",
         "pivotFillMix": "{dark-50},{light-30},{dark-40}",
         "pivotFillRatio": "70,30"
@@ -415,7 +415,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "pivotFillType": "linear"
     },
 }
@@ -559,7 +559,7 @@ Refer to the code below:
     "dials": {
         "dial": [{
             "baseWidth": "15",
-            "topWidth": "3"  
+            "topWidth": "3"
         }]
     }
 }
@@ -606,7 +606,7 @@ Refer to the code below:
             "bgHoverAlpha": "80",
             "BorderHoverColor": "#999999",
             "BorderHoverAlpha": "80",
-            "BorderHoverThickness": "2"  
+            "BorderHoverThickness": "2"
         }]
     }
 }
@@ -620,7 +620,7 @@ Click [here](http://jsfiddle.net/fusioncharts/jJM7e/ "@@open-newtab") to edit th
 
 ## Add custom tool-text for the dial
 
-Specify the text that will be rendered as the tooltip when you hover the mouse pointer over it, using the `tooltext` attribute. 
+Specify the text that will be rendered as the tooltip when you hover the mouse pointer over it, using the `tooltext` attribute.
 
 Refer to the code below:
 
@@ -636,7 +636,7 @@ Refer to the code below:
     },
     "dials": {
         "dial": [{
-            "tooltext": "Current customer satisfaction score is 67"   
+            "tooltext": "Current customer satisfaction score is 67"
         }]
     }
 }
@@ -665,7 +665,7 @@ Refer to the code below:
     "dials": {
         "dial": [{
             "value": "67",
-            "tooltext": "Current customer satisfaction score is $value"               
+            "tooltext": "Current customer satisfaction score is $value"
         }]
     }
 }
@@ -847,7 +847,7 @@ Refer to the code below:
     },
     "dials": {
         "dial": [{
-            "id": "Dial 1"              
+            "id": "Dial 1"
         }]
     }
 }
@@ -865,7 +865,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "showTickMarks": "0",
         "showTickValues": "0"
     },
@@ -890,7 +890,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "placeTicksInside": "1",
         "placeValuesInside": "1"
     },
@@ -915,7 +915,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "majorTMNumber": "9",
         "minorTMNumber": "4"
     },
@@ -973,13 +973,13 @@ Click [here](http://jsfiddle.net/fusioncharts/S89ML/ "@@open-newtab") to edit th
 
 ## Show every nth tick value
 
-You can choose to only show every n<sup>th</sup> tick mark on the angular gauge scale and hide all tick marks in between, by setting the value of the `tickValueStep` attribute to a whole number (n). 
+You can choose to only show every n<sup>th</sup> tick mark on the angular gauge scale and hide all tick marks in between, by setting the value of the `tickValueStep` attribute to a whole number (n).
 
 Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "tickValueStep": "2"
     },
 }
@@ -1003,7 +1003,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "tickValueDecimals": "1",
         "forceTickValueDecimals": "1"
     },
@@ -1024,13 +1024,13 @@ You can set the distance between tick values, using the following attributes:
 
 * Set the value of the `manageValueOverLapping` attribute to `1`, to automatically eliminate overlapping of tick values and trend values.
 
-* Set the value of the `autoAlignTickValues` attribute to `1`, to force the gauge to automatically place tick values. That way, you can reduce overlapping of the tick values with the gauge. 
+* Set the value of the `autoAlignTickValues` attribute to `1`, to force the gauge to automatically place tick values. That way, you can reduce overlapping of the tick values with the gauge.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "autoAlignTickValues": "1",
         "manageValueOverLapping": "1",
         "tickValueDistance": "25"
@@ -1192,7 +1192,7 @@ Refer to the code below:
     "trendpoints": {
         "point": [{
             "startValue": "80",
-            "endValue": "100"  
+            "endValue": "100"
         }]
     }
 }
@@ -1269,7 +1269,7 @@ Use the following attributes of the `chart` object to create charts of various a
 
 * Set the angle (between `-360` and `360`) at which the gauge will finish drawing, using the `gaugeEndAngle` attribute.
 
-* Manually specify the x - coordinate at which the center of the gauge will be placed, using the `gaugeOriginX` attribute. 
+* Manually specify the x - coordinate at which the center of the gauge will be placed, using the `gaugeOriginX` attribute.
 
 * Manually specify the y-coordinate at which the center of the gauge will be placed, using the `gaugeOriginY` attribute. Note that the `gaugeOriginX` and `gaugeOriginY` attributes are useful when you design gauges with small angles or use custom objects to draw certain objects, and need to set the exact center position.
 
@@ -1289,7 +1289,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "gaugeStartAngle": "0",
         "gaugeEndAngle": "90"
     },
@@ -1306,13 +1306,13 @@ Click [here](http://jsfiddle.net/fusioncharts/gfp1wve3/ "@@open-newtab") to edit
 
 ## Allow automatic positioning of gauge origins
 
-Based on the start and end angle measures of the gauge, the x and y center points (origins) of the gauge are automatically positioned. You can change the values of the startAngle and the endAngle attributes to alter the position of the origin for each gauge. 
+Based on the start and end angle measures of the gauge, the x and y center points (origins) of the gauge are automatically positioned. You can change the values of the startAngle and the endAngle attributes to alter the position of the origin for each gauge.
 
 Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "gaugeStartAngle": "45",
         "gaugeEndAngle": "135"
     },
@@ -1335,7 +1335,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "gaugeOriginY": "230"
     },
 }
@@ -1367,7 +1367,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "manageResize": "1"
     },
     "colorRange": {
@@ -1388,7 +1388,7 @@ Refer to the code below:
     "annotations": {
         "autoscale": "1",
         "groups": [{
-            ...                    
+            ...
         }]
     }
 }
@@ -1424,7 +1424,7 @@ However, you will see that when the dimensions of the initially rendered gauge a
 
 This may lead to either a cropped gauge or a gauge with lots of extra space, and even when you further resize the container, the gauge will not fit into the given space and will always remain cropped or spaced.
 
-To take care of this scenario, you need to pass the original width and height (as values to the attributes `origW` and `origH`, respectively) to the gauge. On receiving the original width and height, the gauge will check them against the current dimensions and scale everything accordingly. 
+To take care of this scenario, you need to pass the original width and height (as values to the attributes `origW` and `origH`, respectively) to the gauge. On receiving the original width and height, the gauge will check them against the current dimensions and scale everything accordingly.
 
 The `origW` and `origH`attributes function as follows:
 
@@ -1436,7 +1436,7 @@ Refer to the code below:
 
 ```json
 {
-    "chart": { 
+    "chart": {
         "origw": "390",
         "origh": "300",
         "gaugeOriginX": "195",
@@ -1585,7 +1585,7 @@ Refer to the code below:
                 if (speedScore && diff) {
                     speedScore += scoreArray[flag];
                     flag += 1;
-                    FusionCharts.items["myGauge"].feedData("value=" + speedScore);
+                    evtObj.sender.feedData && evtObj.sender.feedData("value=" + speedScore);
 
                 }
             }, 2000);
@@ -1854,7 +1854,7 @@ Refer to the code below:
                 if (speedScore && diff) {
                     speedScore += scoreArray[flag];
                     flag += 1;
-                    FusionCharts.items["myGauge"].feedData("value=" + speedScore);
+                    evtObj.sender.feedData && evtObj.sender.feedData("value=" + speedScore);
 
                 }
             }, 2000);
@@ -2120,7 +2120,7 @@ To render custom text as a link, set the `msgType` attribute to `INFO` and provi
 &value=84&msgTitle=24-07-2014 02:22:51&msgText=<A HREF='http://www.fusioncharts.com?id=34'><U>Server CPU Utilization : 84</U></A>&msgType=INFO
 ```
 
-After URL Encoding, the above example will look like the following: 
+After URL Encoding, the above example will look like the following:
 
 ```json
 &value=84&msgTitle=24-07-2014%2002:22:51&msgText=%3CA%20HREF='http://www.fusioncharts.com?id=34'%3E%3CU%3EServer%20CPU%20Utilization%20:%2084%3C/U%3E%3C/A%3E&msgType=INFO

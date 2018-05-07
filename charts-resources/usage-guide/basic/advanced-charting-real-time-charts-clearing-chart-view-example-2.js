@@ -51,7 +51,7 @@
                         footfall = (Math.round(Math.random() * 4) + 1),
                         strData = "&label=" + label + "&value=" + footfall;
                     //Feed it to chart.
-                    chartRef.feedData(strData);
+                    chartRef.feedData && chartRef.feedData(strData);
                 };
                 evt.sender.chartInterval = setInterval(function() {
                     updateData();

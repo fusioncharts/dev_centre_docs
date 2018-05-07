@@ -70,7 +70,7 @@
         ]
     },
     "events": {
-        "initialized": function(e) {
+        "rendered": function(e) {
 			var chartRef = e.sender;
             function addLeadingZero(num) {
                 return (num <= 9) ? ("0" + num) : num;
@@ -96,7 +96,7 @@
                     "&value=" +
                     randomValue + "|" + randomValue2;
                 // Feed it to chart.
-                chartRef.feedData(strData);
+                chartRef.feedData && chartRef.feedData(strData);
             }
 
             chartRef.chartInterval = setInterval(function() {

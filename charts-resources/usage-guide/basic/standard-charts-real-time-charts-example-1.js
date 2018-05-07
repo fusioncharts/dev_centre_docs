@@ -1,5 +1,4 @@
 {
-
     type: 'realtimeline',
     renderAt: 'chart-container',
     width: '500',
@@ -33,7 +32,7 @@
         }]
     },
     "events": {
-        "initialized": function(e, a) {
+        "rendered": function(e, a) {
 			var chartRef = e.sender;
             function addLeadingZero(num) {
                 return (num <= 9) ? ("0" + num) : num;
@@ -54,7 +53,7 @@
                     // Build Data String in format &label=...&value=...
                     strData = "&label=" + label + "&value=" + randomValue;
                 // Feed it to chart.
-                chartRef.feedData(strData);
+                chartRef.feedData && chartRef.feedData(strData);
             }
 
             e.sender.chartInterval = setInterval(function() {

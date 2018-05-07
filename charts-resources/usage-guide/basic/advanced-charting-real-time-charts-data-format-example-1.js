@@ -61,7 +61,7 @@
                     strData = "&label=" + label + "&value=" + randomValue + "&vline=1&vLineLabel=Price Checked&vLineColor=#666666&vLineThickness=2&vLineDashed=1";
                 }
                 // Feed it to chart.
-                chartRef.feedData(strData);
+                chartRef.feedData && chartRef.feedData(strData);
             }
 
             e.sender.chartInterval = setInterval(function() {

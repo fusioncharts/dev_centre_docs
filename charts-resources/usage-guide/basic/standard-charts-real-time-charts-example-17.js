@@ -33,7 +33,7 @@
         }]
     },
     events: {
-        "beforeRender": function(evt, args) {
+        "rendered": function(evt, args) {
             var counter = 1,
                 chartRef = evt.sender,
                 formatTime = function(time) {
@@ -54,7 +54,7 @@
                         strData += "&clear=1";
                     }
                     //Feed it to chart.
-                    chartRef.feedData(strData);
+                    chartRef.feedData && chartRef.feedData(strData);
                     //Increasing counter
                     counter += 1;
                 };

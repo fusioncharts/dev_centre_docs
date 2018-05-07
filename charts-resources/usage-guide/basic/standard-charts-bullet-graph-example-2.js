@@ -1,7 +1,6 @@
 {
     type: 'vbullet',
     renderAt: 'chart-container',
-    id: 'rev-bullet-2',
     width: '140',
     height: '500',
     dataFormat: 'json',
