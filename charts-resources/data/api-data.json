@@ -2322,7 +2322,7 @@
                 }
               }
             },
-            "dataObj": {
+            "<strike>dataObj</strike>": {
               "name": "dataObj",
               "subparams": {
                 "version": {
