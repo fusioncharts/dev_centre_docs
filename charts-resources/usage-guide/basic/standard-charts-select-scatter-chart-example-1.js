@@ -1,5 +1,6 @@
 {
     type: 'selectscatter',
+    id: 'chartId',
     renderAt: 'chart-container',
     width: '500',
     height: '350',

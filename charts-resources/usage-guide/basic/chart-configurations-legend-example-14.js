@@ -1,5 +1,5 @@
 {
-    type: 'mscolumn2d',
+    type: 'msline',
     renderAt: 'chart-container',
     width: '500',
     height: '300',
