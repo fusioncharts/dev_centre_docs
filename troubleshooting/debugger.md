@@ -133,22 +133,6 @@ FusionCharts.ready(function () {
 
 Including the above code snippet right after the inclusion of `fusioncharts.js` would create a small area on the top right corner of your page. This area would serve the purpose to show the output from debugger.
 
-#### Using Firebug Lite
-
-Internet Explorer 7 through 10 does not support inspecting objects logged to the console. This implies that the console may turn out to be pretty much useless for using the debugger with verbose output format. And the custom console that we previously implemented might become too complicated if we attempt to replicate all features of a JavaScript Console.
-
-The debugger allows you to circumvent these limitations by incorporating the ability to automatically add Firebug Lite into your page. Firebug Lite is very powerful for debugging on older Internet Explorer browsers and on mobile device browsers that do not have a JavaScript Console. (Visit http://getfirebug.com/firebuglite for more information on this very popular component.)
-
-To enable Firebug Lite, we need to replace the script block that we previously used to enable the debugger with one that instead uses (/api/fusioncharts/namespaces/debugger#static-enableFirebugLite) to the one below.
-
-```html
-<script type="text/javascript">
-FusionCharts['debugger'].enableFirebugLite();
-</script>
-```
-
-Firebug Lite component would appear as a tiny button in the bottom right corner of the page.
-
 #### Some useful references
 
 If you are new to debugging JavaScript, the following articles can help you learn about debugging in browsers.
