@@ -2319,33 +2319,33 @@
                   "optional": "",
                   "nullable": "",
                   "subparams": {}
-                }
-              }
-            },
-            "<strike>dataObj</strike>": {
-              "name": "dataObj",
-              "subparams": {
-                "version": {
-                  "name": "version",
-                  "type": [
-                    "array"
-                  ],
-                  "description": "FusionCharts framework version returned in the form of an array, equivalent to the array [version]({% site.baseurl %}/api/fusioncharts/fusioncharts-properties#static-version)",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
                 },
-                "now": {
-                  "name": "now",
-                  "type": [
-                    "boolean"
-                  ],
-                  "description": "Boolean attribute to indicate whether the event was triggered at the instant of the `window.ondomcontentloaded` event (`window.onload` for older browsers) or whether the window was already loaded and the event was fired to maintain integrity",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
+                "dataObj": {
+                  "name": "dataObj",
+                  "subparams": {
+                    "version": {
+                      "name": "version",
+                      "type": [
+                        "array"
+                      ],
+                      "description": "FusionCharts framework version returned in the form of an array, equivalent to the array [version]({% site.baseurl %}/api/fusioncharts/fusioncharts-properties#static-version)",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    },
+                    "now": {
+                      "name": "now",
+                      "type": [
+                        "boolean"
+                      ],
+                      "description": "Boolean attribute to indicate whether the event was triggered at the instant of the `window.ondomcontentloaded` event (`window.onload` for older browsers) or whether the window was already loaded and the event was fired to maintain integrity",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    }
+                  }
                 }
               }
             }
@@ -2468,88 +2468,88 @@
                   "optional": "",
                   "nullable": "",
                   "subparams": {}
-                }
-              }
-            },
-            "dataObj": {
-              "name": "dataObj",
-              "subparams": {
-                "type": {
-                  "name": "type",
-                  "type": [
-                    "string"
-                  ],
-                  "description": "Type of chart rendered",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
                 },
-                "renderAt": {
-                  "name": "renderAt",
-                  "type": [
-                    "string"
-                  ],
-                  "description": "Id of the HTML DOM element within which the chart is rendered",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "width": {
-                  "name": "width",
-                  "type": [
-                    "number"
-                  ],
-                  "description": "Chart width",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "height": {
-                  "name": "height",
-                  "type": [
-                    "number"
-                  ],
-                  "description": "Chart height",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "dataFormat": {
-                  "name": "dataFormat",
-                  "type": [
-                    "string"
-                  ],
-                  "description": "Type of data (__json__, __jsonurl__, __xml__, __xmlurl__) passed to the chart object",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "dataSource": {
-                  "name": "dataSource",
-                  "type": [
-                    "object"
-                  ],
-                  "description": "Object containing the source data for the chart",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "events": {
-                  "name": "events",
-                  "type": [
-                    "object"
-                  ],
-                  "description": "Object containing details of all events configured for the chart",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
+                "dataObj": {
+                  "name": "dataObj",
+                  "subparams": {
+                    "type": {
+                      "name": "type",
+                      "type": [
+                        "string"
+                      ],
+                      "description": "Type of chart rendered",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    },
+                    "renderAt": {
+                      "name": "renderAt",
+                      "type": [
+                        "string"
+                      ],
+                      "description": "Id of the HTML DOM element within which the chart is rendered",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    },
+                    "width": {
+                      "name": "width",
+                      "type": [
+                        "number"
+                      ],
+                      "description": "Chart width",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    },
+                    "height": {
+                      "name": "height",
+                      "type": [
+                        "number"
+                      ],
+                      "description": "Chart height",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    },
+                    "dataFormat": {
+                      "name": "dataFormat",
+                      "type": [
+                        "string"
+                      ],
+                      "description": "Type of data (__json__, __jsonurl__, __xml__, __xmlurl__) passed to the chart object",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    },
+                    "dataSource": {
+                      "name": "dataSource",
+                      "type": [
+                        "object"
+                      ],
+                      "description": "Object containing the source data for the chart",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    },
+                    "events": {
+                      "name": "events",
+                      "type": [
+                        "object"
+                      ],
+                      "description": "Object containing details of all events configured for the chart",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    }
+                  }
                 }
               }
             }
@@ -2672,88 +2672,88 @@
                   "optional": "",
                   "nullable": "",
                   "subparams": {}
-                }
-              }
-            },
-            "dataObj": {
-              "name": "dataObj",
-              "subparams": {
-                "type": {
-                  "name": "type",
-                  "type": [
-                    "string"
-                  ],
-                  "description": "Type of chart",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
                 },
-                "renderAt": {
-                  "name": "renderAt",
-                  "type": [
-                    "string"
-                  ],
-                  "description": "Id of the HTML DOM element within which the chart is rendered",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "width": {
-                  "name": "width",
-                  "type": [
-                    "number"
-                  ],
-                  "description": "Chart width",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "height": {
-                  "name": "height",
-                  "type": [
-                    "number"
-                  ],
-                  "description": "Chart height",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "dataFormat": {
-                  "name": "dataFormat",
-                  "type": [
-                    "string"
-                  ],
-                  "description": "Type of data (__json__, __jsonurl__, __xml__, __xmlurl__) passed to the chart object",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "dataSource": {
-                  "name": "dataSource",
-                  "type": [
-                    "object"
-                  ],
-                  "description": "Object containing the source data for the chart",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
-                },
-                "events": {
-                  "name": "events",
-                  "type": [
-                    "string"
-                  ],
-                  "description": "Object containing details of all events configured for the chart",
-                  "defaultvalue": "",
-                  "optional": "",
-                  "nullable": "",
-                  "subparams": {}
+                "dataObj": {
+                  "name": "dataObj",
+                  "subparams": {
+                    "type": {
+                      "name": "type",
+                      "type": [
+                        "string"
+                      ],
+                      "description": "Type of chart",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    },
+                    "renderAt": {
+                      "name": "renderAt",
+                      "type": [
+                        "string"
+                      ],
+                      "description": "Id of the HTML DOM element within which the chart is rendered",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    },
+                    "width": {
+                      "name": "width",
+                      "type": [
+                        "number"
+                      ],
+                      "description": "Chart width",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    },
+                    "height": {
+                      "name": "height",
+                      "type": [
+                        "number"
+                      ],
+                      "description": "Chart height",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    },
+                    "dataFormat": {
+                      "name": "dataFormat",
+                      "type": [
+                        "string"
+                      ],
+                      "description": "Type of data (__json__, __jsonurl__, __xml__, __xmlurl__) passed to the chart object",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    },
+                    "dataSource": {
+                      "name": "dataSource",
+                      "type": [
+                        "object"
+                      ],
+                      "description": "Object containing the source data for the chart",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    },
+                    "events": {
+                      "name": "events",
+                      "type": [
+                        "string"
+                      ],
+                      "description": "Object containing details of all events configured for the chart",
+                      "defaultvalue": "",
+                      "optional": "",
+                      "nullable": "",
+                      "subparams": {}
+                    }
+                  }
                 }
               }
             }
