@@ -7607,11 +7607,159 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the chart \n\n>Applicable only to the Gantt chart \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the chart \n\n>Applicable only to the Gantt chart \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageX": {
+                                            "name": "pageX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the page \n\n>Applicable only to the Gantt chart \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageY": {
+                                            "name": "pageY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the page \n\n>Applicable only to the Gantt chart. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "fromTaskId": {
+                                            "name": "fromTaskId",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "ID of the source task for the connector \n\n>Applicable only to the Gantt chart. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "toTaskId": {
+                                            "name": "toTaskId",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "ID of the destination task for the connector \n\n>Applicable only to the Gantt chart. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "fromTaskConnectStart": {
+                                            "name": "fromTaskConnectStart",
+                                            "type": [
+                                                "boolean"
+                                            ],
+                                            "description": "Position of the connector on the source task bar. Set to __1__ if the connector starts from the left edge of the task bar, set to __0__ if it starts from the right edge.  \n\n>Applicable only to the Gantt chart. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "toTaskConnectStart": {
+                                            "name": "toTaskConnectStart",
+                                            "type": [
+                                                "boolean"
+                                            ],
+                                            "description": "Position of the connector on the destination task bar. Set to __1__ if the connector ends at the left edge of the task bar, set to __0__ if it ends at the right edge.  \n\n>Applicable only to the Gantt chart. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "link": {
+                                            "name": "link",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL to which the user will be redirected, if the connector is clicked \n\n>Applicable only to the Gantt chart. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "sourceType": {
+                                            "name": "sourceType",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Type of the element that triggered the event. For the `connectorRollOut` event, it will be __connector__.  \n\n>Applicable only to the Gantt chart. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "fromMarkerId": {
+                                            "name": "fromMarkerId",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "ID of the source marker for the connector \n\n>Applicable only to maps. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "toMarkerId": {
+                                            "name": "toMarkerId",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "ID of the destination marker for the connector \n\n>Applicable only to maps. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "label": {
+                                            "name": "label",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Connector label, specified using the `label` attribute \n\n>Applicable only to maps. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "chartX": {
                                     "name": "chartX",
@@ -7877,11 +8025,159 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the chart \n\n>Applicable only to the Gantt chart \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the chart \n\n>Applicable only to the Gantt chart \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageX": {
+                                            "name": "pageX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the page \n\n>Applicable only to the Gantt chart \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageY": {
+                                            "name": "pageY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the page \n\n>Applicable only to the Gantt chart. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "fromTaskId": {
+                                            "name": "fromTaskId",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "ID of the source task for the connector \n\n>Applicable only to the Gantt chart. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "toTaskId": {
+                                            "name": "toTaskId",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "ID of the destination task for the connector \n\n>Applicable only to the Gantt chart. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "fromTaskConnectStart": {
+                                            "name": "fromTaskConnectStart",
+                                            "type": [
+                                                "boolean"
+                                            ],
+                                            "description": "Position of the connector on the source task bar. Set to __1__ if the connector starts from the left edge of the task bar, set to __0__ if it starts from the right edge.  \n\n>Applicable only to the Gantt chart. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "toTaskConnectStart": {
+                                            "name": "toTaskConnectStart",
+                                            "type": [
+                                                "boolean"
+                                            ],
+                                            "description": "Position of the connector on the destination task bar. Set to __1__ if the connector ends at the left edge of the task bar, set to __0__ if it ends at the right edge.  \n\n>Applicable only to the Gantt chart. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "link": {
+                                            "name": "link",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL to which the user will be redirected, if the connector is clicked \n\n>Applicable only to the Gantt chart. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "sourceType": {
+                                            "name": "sourceType",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Type of the element that triggered the event. For the `connectorClick` event, it will be __connector__.  \n\n>Applicable only to the Gantt chart. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "fromMarkerId": {
+                                            "name": "fromMarkerId",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "ID of the source marker for the connector \n\n>Applicable only to maps. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "toMarkerId": {
+                                            "name": "toMarkerId",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "ID of the destination marker for the connector \n\n>Applicable only to maps. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "label": {
+                                            "name": "label",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Connector label, specified using the `label` attribute \n\n>Applicable only to maps. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "chartX": {
                                     "name": "chartX",
@@ -8147,11 +8443,93 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "label": {
+                                            "name": "label",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Marker label",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "x": {
+                                            "name": "x",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Original x-coordinate of the marker",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "y": {
+                                            "name": "y",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Original y-coordinate of the marker",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "scaledX": {
+                                            "name": "scaledX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Scaled x-coordinate of the marker",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "scaledY": {
+                                            "name": "scaledY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Scaled y-coordinate of the marker",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the marker in to the top-left corner of the map canvas ",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the marker in to the top-left corner of the map canvas ",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "label": {
                                     "name": "label",
@@ -8351,11 +8729,93 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "label": {
+                                            "name": "label",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Marker label",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "x": {
+                                            "name": "x",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Original x-coordinate of the marker",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "y": {
+                                            "name": "y",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Original y-coordinate of the marker",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "scaledX": {
+                                            "name": "scaledX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Scaled x-coordinate of the marker",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "scaledY": {
+                                            "name": "scaledY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Scaled y-coordinate of the marker",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the marker in to the top-left corner of the map canvas ",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the marker in to the top-left corner of the map canvas ",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "label": {
                                     "name": "label",
@@ -8555,11 +9015,93 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "label": {
+                                            "name": "label",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Marker label",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "x": {
+                                            "name": "x",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Original x-coordinate of the marker",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "y": {
+                                            "name": "y",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Original y-coordinate of the marker",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "scaledX": {
+                                            "name": "scaledX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Scaled x-coordinate of the marker",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "scaledY": {
+                                            "name": "scaledY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Scaled y-coordinate of the marker",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the marker in to the top-left corner of the map canvas ",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the marker in to the top-left corner of the map canvas ",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "label": {
                                     "name": "label",
@@ -8787,11 +9329,38 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "startingAngle": {
+                                            "name": "startingAngle",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Measure of the angle from which the pie/doughnut chart starts rotating",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "changeInAngle": {
+                                            "name": "changeInAngle",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Difference between the angle measures at the start and at the end of rotation",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "startingAngle": {
                                     "name": "startingAngle",
@@ -8930,11 +9499,27 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "startingAngle": {
+                                            "name": "startingAngle",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Measure of the angle from which the pie/doughnut chart starts rotating",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "startingAngle": {
                                     "name": "startingAngle",
@@ -9062,11 +9647,106 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "width": {
+                                            "name": "width",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart width, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "height": {
+                                            "name": "height",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart height, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "container": {
+                                            "name": "container",
+                                            "type": [
+                                                "DOMElement"
+                                            ],
+                                            "description": "DOM element used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelWidth": {
+                                            "name": "pixelWidth",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Width of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelHeight": {
+                                            "name": "pixelHeight",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Height of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "id": {
+                                            "name": "id",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Chart ID",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "renderer": {
+                                            "name": "renderer",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Rendering engine used (__javascript__ or __flash__)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "centerLabelText": {
+                                            "name": "centerLabelText",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Text displayed as the center label",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "width": {
                                     "name": "width",
@@ -9273,11 +9953,106 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "width": {
+                                            "name": "width",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart width, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "height": {
+                                            "name": "height",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart height, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "container": {
+                                            "name": "container",
+                                            "type": [
+                                                "DOMElement"
+                                            ],
+                                            "description": "DOM element used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelWidth": {
+                                            "name": "pixelWidth",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Width of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelHeight": {
+                                            "name": "pixelHeight",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Height of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "id": {
+                                            "name": "id",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Chart ID",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "renderer": {
+                                            "name": "renderer",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Rendering engine used (__javascript__ or __flash__)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "centerLabelText": {
+                                            "name": "centerLabelText",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Text displayed as the center label",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "width": {
                                     "name": "width",
@@ -9484,11 +10259,106 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "width": {
+                                            "name": "width",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart width, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "height": {
+                                            "name": "height",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart height, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "container": {
+                                            "name": "container",
+                                            "type": [
+                                                "DOMElement"
+                                            ],
+                                            "description": "DOM element used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelWidth": {
+                                            "name": "pixelWidth",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Width of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelHeight": {
+                                            "name": "pixelHeight",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Height of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "id": {
+                                            "name": "id",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Chart ID",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "renderer": {
+                                            "name": "renderer",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Rendering engine used (__javascript__ or __flash__)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "centerLabelText": {
+                                            "name": "centerLabelText",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Text displayed as the center label",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "width": {
                                     "name": "width",
@@ -9695,11 +10565,106 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "width": {
+                                            "name": "width",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart width, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "height": {
+                                            "name": "height",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart height, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "container": {
+                                            "name": "container",
+                                            "type": [
+                                                "DOMElement"
+                                            ],
+                                            "description": "DOM element used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelWidth": {
+                                            "name": "pixelWidth",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Width of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelHeight": {
+                                            "name": "pixelHeight",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Height of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "id": {
+                                            "name": "id",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Chart ID",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "renderer": {
+                                            "name": "renderer",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Rendering engine used (__javascript__ or __flash__)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "centerLabelText": {
+                                            "name": "centerLabelText",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Text displayed as the center label",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "width": {
                                     "name": "width",
@@ -9912,11 +10877,139 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageX": {
+                                            "name": "pageX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageY": {
+                                            "name": "pageY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "width": {
+                                            "name": "width",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart width, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "height": {
+                                            "name": "height",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart height, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "container": {
+                                            "name": "container",
+                                            "type": [
+                                                "DOMElement"
+                                            ],
+                                            "description": "DOM element used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelWidth": {
+                                            "name": "pixelWidth",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Width of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelHeight": {
+                                            "name": "pixelHeight",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Height of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "id": {
+                                            "name": "id",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Chart ID",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "renderer": {
+                                            "name": "renderer",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Rendering engine used (__javascript__ or __flash__)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "chartX": {
                                     "name": "chartX",
@@ -10156,11 +11249,139 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageX": {
+                                            "name": "pageX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageY": {
+                                            "name": "pageY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "width": {
+                                            "name": "width",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart width, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "height": {
+                                            "name": "height",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart height, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "container": {
+                                            "name": "container",
+                                            "type": [
+                                                "DOMElement"
+                                            ],
+                                            "description": "DOM element used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelWidth": {
+                                            "name": "pixelWidth",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Width of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelHeight": {
+                                            "name": "pixelHeight",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Height of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "id": {
+                                            "name": "id",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Chart ID",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "renderer": {
+                                            "name": "renderer",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Rendering engine used (__javascript__ or __flash__)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "chartX": {
                                     "name": "chartX",
@@ -10406,11 +11627,139 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageX": {
+                                            "name": "pageX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageY": {
+                                            "name": "pageY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "width": {
+                                            "name": "width",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart width, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "height": {
+                                            "name": "height",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart height, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "container": {
+                                            "name": "container",
+                                            "type": [
+                                                "DOMElement"
+                                            ],
+                                            "description": "DOM element used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelWidth": {
+                                            "name": "pixelWidth",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Width of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelHeight": {
+                                            "name": "pixelHeight",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Height of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "id": {
+                                            "name": "id",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Chart ID",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "renderer": {
+                                            "name": "renderer",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Rendering engine used (__javascript__ or __flash__)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "chartX": {
                                     "name": "chartX",
@@ -10656,11 +12005,139 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageX": {
+                                            "name": "pageX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageY": {
+                                            "name": "pageY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "width": {
+                                            "name": "width",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart width, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "height": {
+                                            "name": "height",
+                                            "type": [
+                                                "number",
+                                                "percent"
+                                            ],
+                                            "description": "Chart height, in pixels or percentage",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "container": {
+                                            "name": "container",
+                                            "type": [
+                                                "DOMElement"
+                                            ],
+                                            "description": "DOM element used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelWidth": {
+                                            "name": "pixelWidth",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Width of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pixelHeight": {
+                                            "name": "pixelHeight",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Height of the DOM element, in pixels, used to render the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "id": {
+                                            "name": "id",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Chart ID",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "renderer": {
+                                            "name": "renderer",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Rendering engine used (__javascript__ or __flash__)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "chartX": {
                                     "name": "chartX",
@@ -10900,11 +12377,93 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "url": {
+                                            "name": "url",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL of the background image",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "bgImageAlpha": {
+                                            "name": "bgImageAlpha",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Transparency of the image",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "bgImageDisplayMode": {
+                                            "name": "bgImageDisplayMode",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Display mode set for the image",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "bgImageVAlign": {
+                                            "name": "bgImageVAlign",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Vertical alignment of the image",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "bgImageHAlign": {
+                                            "name": "bgImageHAlign",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Horizontal alignment of the image",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "imageWidth": {
+                                            "name": "imageWidth",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Image width",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "imageHeight": {
+                                            "name": "imageHeight",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Image height",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "url": {
                                     "name": "url",
@@ -11098,11 +12657,104 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "url": {
+                                            "name": "url",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL of the background image",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "bgImageAlpha": {
+                                            "name": "bgImageAlpha",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Transparency of the image",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "bgImageDisplayMode": {
+                                            "name": "bgImageDisplayMode",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Display mode set for the image",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "bgImageVAlign": {
+                                            "name": "bgImageVAlign",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Vertical alignment of the image",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "bgImageHAlign": {
+                                            "name": "bgImageHAlign",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Horizontal alignment of the image",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "imageWidth": {
+                                            "name": "imageWidth",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Image width",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "imageHeight": {
+                                            "name": "imageHeight",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Image height",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "error": {
+                                            "name": "error",
+                                            "type": [
+                                                "object"
+                                            ],
+                                            "description": "Error object passed to the event for debugging the JavaScript errors encountered",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "url": {
                                     "name": "url",
@@ -11307,11 +12959,115 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "id": {
+                                            "name": "id",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Chart ID",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageX": {
+                                            "name": "pageX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageY": {
+                                            "name": "pageY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "datasetName": {
+                                            "name": "datasetName",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Dataset to which the data plot belongs",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "dataIndex": {
+                                            "name": "dataIndex",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Index of the data plot, in the order of its definition in the dataset",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "visible": {
+                                            "name": "visible",
+                                            "type": [
+                                                "boolean"
+                                            ],
+                                            "description": "Visibility status of the legend item (__true__ if shown, __false__ if hidden)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "preventDefaults": {
+                                            "name": "preventDefaults",
+                                            "type": [
+                                                "function"
+                                            ],
+                                            "description": "",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "id": {
                                     "name": "id",
@@ -11527,11 +13283,104 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "id": {
+                                            "name": "id",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Chart ID",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageX": {
+                                            "name": "pageX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageY": {
+                                            "name": "pageY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "datasetName": {
+                                            "name": "datasetName",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Dataset to which the data plot belongs",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "dataIndex": {
+                                            "name": "dataIndex",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Index of the data plot, in the order of its definition in the dataset",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "visible": {
+                                            "name": "visible",
+                                            "type": [
+                                                "boolean"
+                                            ],
+                                            "description": "Visibility status of the legend item (__true__ if shown, __false__ if hidden)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "id": {
                                     "name": "id",
@@ -11736,11 +13585,104 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "id": {
+                                            "name": "id",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Chart ID",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageX": {
+                                            "name": "pageX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageY": {
+                                            "name": "pageY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "datasetName": {
+                                            "name": "datasetName",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Dataset to which the data plot belongs",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "dataIndex": {
+                                            "name": "dataIndex",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Index of the data plot, in the order of its definition in the dataset",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "visible": {
+                                            "name": "visible",
+                                            "type": [
+                                                "boolean"
+                                            ],
+                                            "description": "Visibility status of the legend item (__true__ if shown, __false__ if hidden)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "id": {
                                     "name": "id",
@@ -11945,11 +13887,115 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageX": {
+                                            "name": "pageX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageY": {
+                                            "name": "pageY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoURL": {
+                                            "name": "logoURL",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL of the logo image",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoAlpha": {
+                                            "name": "logoAlpha",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Transparency set for the logo",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoPosition": {
+                                            "name": "logoPosition",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Logo position (__tr__, __tl__, __br__, __bl__)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoScale": {
+                                            "name": "logoScale",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Logo image scaling value",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoLink": {
+                                            "name": "logoLink",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL to which the user will be redirected, if the logo is clicked",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "chartX": {
                                     "name": "chartX",
@@ -12165,11 +14211,115 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageX": {
+                                            "name": "pageX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageY": {
+                                            "name": "pageY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoURL": {
+                                            "name": "logoURL",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL of the logo image",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoAlpha": {
+                                            "name": "logoAlpha",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Transparency set for the logo",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoPosition": {
+                                            "name": "logoPosition",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Logo position (__tr__, __tl__, __br__, __bl__)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoScale": {
+                                            "name": "logoScale",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Logo image scaling value",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoLink": {
+                                            "name": "logoLink",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL to which the user will be redirected, if the logo is clicked",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "chartX": {
                                     "name": "chartX",
@@ -12385,11 +14535,115 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageX": {
+                                            "name": "pageX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageY": {
+                                            "name": "pageY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoURL": {
+                                            "name": "logoURL",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL of the logo image",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoAlpha": {
+                                            "name": "logoAlpha",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Transparency set for the logo",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoPosition": {
+                                            "name": "logoPosition",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Logo position (__tr__, __tl__, __br__, __bl__)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoScale": {
+                                            "name": "logoScale",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Logo image scaling value",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoLink": {
+                                            "name": "logoLink",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL to which the user will be redirected, if the logo is clicked",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "chartX": {
                                     "name": "chartX",
@@ -12605,11 +14859,71 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "logoURL": {
+                                            "name": "logoURL",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL of the logo image",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoAlpha": {
+                                            "name": "logoAlpha",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Transparency set for the logo",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoPosition": {
+                                            "name": "logoPosition",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Logo position (__tr__, __tl__, __br__, __bl__)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoScale": {
+                                            "name": "logoScale",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Logo image scaling value",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoLink": {
+                                            "name": "logoLink",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL to which the user will be redirected, if the logo is clicked",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "logoURL": {
                                     "name": "logoURL",
@@ -12781,11 +15095,82 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "logoURL": {
+                                            "name": "logoURL",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL of the logo image",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoAlpha": {
+                                            "name": "logoAlpha",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Transparency set for the logo",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoPosition": {
+                                            "name": "logoPosition",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Logo position (__tr__, __tl__, __br__, __bl__)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoScale": {
+                                            "name": "logoScale",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Logo image scaling value",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "logoLink": {
+                                            "name": "logoLink",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL to which the user will be redirected, if the logo is clicked",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "error": {
+                                            "name": "error",
+                                            "type": [
+                                                "object"
+                                            ],
+                                            "description": "Error object passed to the event for debugging the JavaScript errors encountered",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "logoURL": {
                                     "name": "logoURL",
@@ -12968,11 +15353,148 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "buttons": {
+                                            "name": "buttons",
+                                            "type": [
+                                                "object"
+                                            ],
+                                            "description": "Object containing the status of buttons on the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "bgColor": {
+                                            "name": "bgColor",
+                                            "type": [
+                                                "string  "
+                                            ],
+                                            "description": "Background color of the exported chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "bgAlpha": {
+                                            "name": "bgAlpha",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Transparency set for the exported chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exportaction": {
+                                            "name": "exportaction",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Action for exporting image/PDF. Set to __download__, if the exported image will be sent back to the client as a download, set to __save__ if it will be saved on the server.",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exportfilename": {
+                                            "name": "exportfilename",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Name (with extension) for the exported image/PDF",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exporthandler": {
+                                            "name": "exporthandler",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Path of the server-side export handler",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exportformat": {
+                                            "name": "exportformat",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Format in which the chart is exported (__jpg__, __png__, __pdf__)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exportparameters": {
+                                            "name": "exportparameters",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Additional parameters sent by the chart (defined using the `exportParameters` chart attribute)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exporttargetwindow": {
+                                            "name": "exporttargetwindow",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "In case of server-side exporting and when using download as action, this shows whether the exported image/PDF will opened in the same window (as an attachment for download), or it will open in a new window. \n\n>Applicable only for server-side exporting. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exportcallback": {
+                                            "name": "exportcallback",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Callback function executed after the chart is exported",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exportwithimages": {
+                                            "name": "exportwithimages",
+                                            "type": [
+                                                "boolean"
+                                            ],
+                                            "description": "Boolean attribute that indicates if the chart had external images that were also exported",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exportformats": {
+                                            "name": "exportformats",
+                                            "type": [
+                                                "object"
+                                            ],
+                                            "description": "Object containing all the export formats available",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "buttons": {
                                     "name": "buttons",
@@ -13221,11 +15743,93 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "DOMId": {
+                                            "name": "DOMId",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "ID of the chart exported",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "height": {
+                                            "name": "height",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Chart height",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "width": {
+                                            "name": "width",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Chart width",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "fileName": {
+                                            "name": "fileName",
+                                            "type": [
+                                                "string  "
+                                            ],
+                                            "description": "Name of the exported file and the path where it is saved",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "statusCode": {
+                                            "name": "statusCode",
+                                            "type": [
+                                                "boolean"
+                                            ],
+                                            "description": "Success status code of the export. Set to __1__ if the export is successful, set to __0__ if it fails.",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "statusMessage": {
+                                            "name": "statusMessage",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Message indicating success or failure",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "notice": {
+                                            "name": "notice",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Message indicating that the chart was previously exported in the same format. In this case, a suffix for the file is internally generated and added to the filename. \n\n > Configure your code to show the properties and their values for the `dataObj` parameter in the console. You can then see the suffix that is generated internally. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "DOMId": {
                                     "name": "DOMId",
@@ -13419,11 +16023,148 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "buttons": {
+                                            "name": "buttons",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Chart data as XML string",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "bgColor": {
+                                            "name": "bgColor",
+                                            "type": [
+                                                "string  "
+                                            ],
+                                            "description": "Background color of the exported chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "bgAlpha": {
+                                            "name": "bgAlpha",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Transparency set for the exported chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exportaction": {
+                                            "name": "exportaction",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Action for exporting image/PDF. Set to __download__, if the exported image will be sent back to the client as a download, set to __save__ if it will be saved on the server.",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exportfilename": {
+                                            "name": "exportfilename",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Name (with extension) for the exported image/PDF",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exporthandler": {
+                                            "name": "exporthandler",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Path of the server-side export handler",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exportformat": {
+                                            "name": "exportformat",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Format in which the chart is exported (__jpg__, __png__, __pdf__)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exportparameters": {
+                                            "name": "exportparameters",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Additional parameters sent by the chart (defined using the `exportParameters` chart attribute)",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exporttargetwindow": {
+                                            "name": "exporttargetwindow",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "In case of server-side exporting and when using download as action, this shows whether the exported image/PDF will open in the same window (as an attachment for download), or it will open in a new window. \n\n>Applicable only for server-side exporting. \n\n",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exportcallback": {
+                                            "name": "exportcallback",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Callback function executed after the chart is exported",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exportwithimages": {
+                                            "name": "exportwithimages",
+                                            "type": [
+                                                "boolean"
+                                            ],
+                                            "description": "Boolean attribute to indicate if the chart had external images that were also exported",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "exportformats": {
+                                            "name": "exportformats",
+                                            "type": [
+                                                "object"
+                                            ],
+                                            "description": "Object containing all the export formats available",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "buttons": {
                                     "name": "buttons",
@@ -14020,11 +16761,93 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageX": {
+                                            "name": "pageX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageY": {
+                                            "name": "pageY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "text": {
+                                            "name": "text",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Label text",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "dataIndex": {
+                                            "name": "dataIndex",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Index of the data plot, in order of its definition in the source data",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "link": {
+                                            "name": "link",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL to which the user will be redirected, if the data label is clicked",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "chartX": {
                                     "name": "chartX",
@@ -14218,11 +17041,93 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                                    "name": "dataObj",
+                                    "subparams": {
+                                        "chartX": {
+                                            "name": "chartX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "chartY": {
+                                            "name": "chartY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the chart",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageX": {
+                                            "name": "pageX",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "x-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "pageY": {
+                                            "name": "pageY",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "y-coordinate of the pointer, relative to the page",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "text": {
+                                            "name": "text",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "Label text",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "dataIndex": {
+                                            "name": "dataIndex",
+                                            "type": [
+                                                "number"
+                                            ],
+                                            "description": "Index of the data plot, in order of its definition in the source data",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
+                                        "link": {
+                                            "name": "link",
+                                            "type": [
+                                                "string"
+                                            ],
+                                            "description": "URL to which the user will be redirected, if the data label is clicked",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        }
+                                    }
                                 }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "chartX": {
                                     "name": "chartX",
