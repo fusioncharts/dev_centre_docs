@@ -20121,11 +20121,225 @@
                                     "optional": "",
                                     "nullable": "",
                                     "subparams": {}
+                                },
+                                "dataObj": {
+                            "name": "dataObj",
+                            "subparams": {
+                                "id": {
+                                    "name": "id",
+                                    "type": [
+                                        "string"
+                                    ],
+                                    "description": "Chart ID",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "sourceEvent": {
+                                    "name": "sourceEvent",
+                                    "type": [
+                                        "string"
+                                    ],
+                                    "description": "Event that caused the `chartUpdated` event to be triggered. For example, in a drag-node chart, if a node was dragged to shift its position, the source event will be `dataplotDragEnd`.",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "sourceType": {
+                                    "name": "sourceType",
+                                    "type": [
+                                        "string"
+                                    ],
+                                    "description": "Type of element that triggered this event",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "chartX": {
+                                    "name": "chartX",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "x-coordinate of the pointer, relative to the chart",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "chartY": {
+                                    "name": "chartY",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "y-coordinate of the pointer, relative to the chart",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "pageX": {
+                                    "name": "pageX",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "x-coordinate of the pointer, relative to the page",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "pageY": {
+                                    "name": "pageY",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "y-coordinate of the pointer, relative to the page",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "index": {
+                                    "name": "index",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "Index of the updated data plot, in the order of its definition in the source data",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "datasetIndex": {
+                                    "name": "datasetIndex",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "Index of the dataset, to which the updated data plot belongs, in the order of its definition in the source data",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "datasetName": {
+                                    "name": "datasetName",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "Name of the dataset, to which the updated data plot belongs",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "x": {
+                                    "name": "x",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "x-coordinate of the updated data plot \n\n >Applicable only to the drag-node chart. \n\n",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "y": {
+                                    "name": "y",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "y-coordinate of the updated data plot \n\n >Applicable only to the drag-node chart. \n\n",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "shape": {
+                                    "name": "shape",
+                                    "type": [
+                                        "string"
+                                    ],
+                                    "description": "Shape of the updated data plot \n\n >Applicable only to the drag-node chart. \n\n",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "width": {
+                                    "name": "width",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "Width of the updated data plot \n\n >Applicable only to the drag-node chart. \n\n",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "height": {
+                                    "name": "height",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "Height of the updated data plot \n\n >Applicable only to the drag-node chart. \n\n",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "radius": {
+                                    "name": "radius",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "Radius of the updated data plot \n\n >Applicable only to the drag-node chart. \n\n",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "sides": {
+                                    "name": "sides",
+                                    "type": [
+                                        "number"
+                                    ],
+                                    "description": "Number of sides the shape of the updated data plot has \n\n >Applicable only to the drag-node chart. \n\n",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "label": {
+                                    "name": "label",
+                                    "type": [
+                                        "string"
+                                    ],
+                                    "description": "Data label of the updated data plot",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
+                                },
+                                "toolText": {
+                                    "name": "toolText",
+                                    "type": [
+                                        "string"
+                                    ],
+                                    "description": "Tooltip text for the updated data plot",
+                                    "defaultvalue": "",
+                                    "optional": "",
+                                    "nullable": "",
+                                    "subparams": {}
                                 }
+                            }
+                        }
                             }
                         },
                         "dataObj": {
-                            "name": "dataObj",
+                            "name": "dataObj (Deprecated)",
                             "subparams": {
                                 "id": {
                                     "name": "id",
