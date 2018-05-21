@@ -36,8 +36,7 @@ December|$730,000|
 
 The JSON representation for the above table looks as shown below:
 
-```
-
+```json
 {
     "chart": {
         "caption": "Monthly",
@@ -98,8 +97,6 @@ The JSON representation for the above table looks as shown below:
         }]
     }]
 }
-}
-
 ```
 
 Copy this into a file, name it `monthlyRevenue.json`, and store it in the same folder as your HTML page.
