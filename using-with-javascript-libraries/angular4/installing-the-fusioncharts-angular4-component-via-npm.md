@@ -55,7 +55,7 @@ import { FusionChartsModule } from 'angular4-fusioncharts';
     ],
     imports: [
         BrowserModule,
-        FusionChartsModule.forRoot(FusionCharts, Charts, FintTheme)
+        FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme)
     ],
     providers: [],
     bootstrap: [AppComponent]
