@@ -102,6 +102,13 @@
                 "name": "rotateValues"
             },
             {
+                "description": "If you've opted to show data values on the chart, this attribute lets you adjust the vertical alignment of data values with respect to dataplots. By default, this attribute is set to AUTO mode in which the alignment of each data value is determined automatically based on the position of each plot point. In ABOVE mode, data values are displayed above the plot points unless a plot point is too close to the upper edge of the canvas while in BELOW mode, data values are displayed below the plot points unless a plot point is too close to the lower edge of the canvas.",
+                "range": "&quot;ABOVE&quot;, &quot;BELOW&quot;, &quot;AUTO&quot;",
+                "type": "String",
+                "versionsince": "3.2",
+                "name": "valuePosition"
+            },
+            {
                 "description": "Whether to show chart limit values. If not specified `showYAxisValues` attribute overrides this value.",
                 "range": "0/1",
                 "type": "Boolean",
@@ -2873,6 +2880,13 @@
                 "range": "",
                 "type": "Number",
                 "name": "value"
+            },
+            {
+                "description": "If you've opted to show a particular data value on the chart, this attribute lets you adjust the vertical alignment of individual data values with respect to dataplots. By default, this attribute is set to AUTO mode in which the alignment of a data value is determined automatically based on the position of its plot point. In ABOVE mode, a data value is displayed above the plot point unless a plot point is too close to the upper edge of the canvas while in BELOW mode, a data value is displayed below the plot point unless a plot point is too close to the lower edge of the canvas.",
+                "range": "&quot;ABOVE&quot;, &quot;BELOW&quot;, &quot;AUTO&quot;",
+                "type": "String",
+                "versionsince": "3.2",
+                "name": "valuePosition"
             },
             {
                 "description": "If instead of the numerical value of this data, you wish to display a custom string value, you can specify the same here. Examples are annotation for a data item etc.",
