@@ -849,7 +849,7 @@
                 "name": "gaugeOuterRadius"
             },
             {
-                "description": "Inner radius for color range scale. It can either be in exact pixels or in percentage of outer radius.",
+                "description": "Inner radius for color range scale. It can either be in exact pixels or in percentage of outer radius. For example, if the value of `gaugeOuterRadius` attribute is `10` and the value of `gaugeInnerRadius` attribute is set to `50%`, the value of `gaugeInnerRadius` will be calculated and set as 5px, i.e. 50% of 10.",
                 "range": "In pixels or in percentage",
                 "type": "Number",
                 "name": "gaugeInnerRadius"
