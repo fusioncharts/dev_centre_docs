@@ -49,16 +49,18 @@ import * as FintTheme from 'fusioncharts/themes/fusioncharts.theme.fint';
 import { AppComponent } from './app.component';
 import { FusionChartsModule } from 'angular4-fusioncharts';
 
+FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme)
+
 @NgModule({
-    declarations: [
-        AppComponent
-    ],
-    imports: [
-        BrowserModule,
-        FusionChartsModule.fcRoot(FusionCharts, Charts, FintTheme)
-    ],
-    providers: [],
-    bootstrap: [AppComponent]
+   declarations: [
+       AppComponent
+   ],
+   imports: [
+       BrowserModule,
+      FusionChartsModule
+   ],
+   providers: [],
+   bootstrap: [AppComponent]
 })
 export class AppModule {}
 ```
