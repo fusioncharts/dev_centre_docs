@@ -1091,7 +1091,7 @@
             {
                 "description": "When a gradient is used to set the color of the canvas background, this attribute sets the ratio of the colors. Example : If the value of the `canvasBgColor` attribute is set as `#FF5904, #FFFFFF`, `canvasBgRatio` can be used to specify their ratio in the background.",
                 "range": "0 - 100",
-                "type": "Number",
+                "type": "Numbers separated by comma",
                 "name": "canvasBgRatio"
             },
             {
