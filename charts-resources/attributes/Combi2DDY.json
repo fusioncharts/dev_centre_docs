@@ -1331,7 +1331,7 @@
                 "name": "showcanvasborder"
             },
             {
-                "description": "Sets Canvas background color. For Gradient effect, enter colors separated by comma.",
+                "description": "This attribute sets the background color for the chart canvas. You can set any hex color code as the value of this attribute. To specify a gradient as canvas background color, separate the hex color codes of each color in the gradient using comma. Example: #FF5904, #FFFFFF.",
                 "range": "Hex Color Code",
                 "type": "Color",
                 "name": "canvasBgColor"
