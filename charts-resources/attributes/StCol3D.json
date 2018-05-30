@@ -1107,7 +1107,7 @@
                 "name": "canvasBgColor"
             },
             {
-                "description": "Sets alpha for Canvas Background.",
+                "description": "This attribute sets the background transparency for the chart canvas. For gradient, separate the alpha value using comma. Example: 15, 50.",
                 "range": "0 - 100",
                 "type": "Number",
                 "name": "canvasBgAlpha"
