@@ -1478,20 +1478,20 @@
         "table": "Canvas Cosmetics",
         "attrs": [
             {
-                "description": "Sets Canvas background color. For Gradient effect, enter colors separated by comma.",
+                "description": "This attribute sets the background color for the chart canvas. You can set any hex color code as the value of this attribute. To specify a gradient as canvas background color, separate the hex color codes of each color in the gradient using comma. Example: #FF5904, #FFFFFF.",
                 "range": "Hex Color Code",
                 "type": "Color",
                 "name": "canvasBgColor"
             },
             {
-                "description": "Sets alpha for Canvas Background. For gradient, enter alpha list separated by commas.",
+                "description": "This attribute sets the background transparency for the chart canvas. For gradient, separate the alpha value using comma. Example: 15, 50.",
                 "range": "0 - 100",
                 "type": "Number",
                 "name": "canvasBgAlpha"
             },
             {
-                "description": "Helps you specify canvas background ratio for gradients.",
-                "range": "",
+                "description": "When a gradient is used to set the color of the canvas background, this attribute sets the ratio of the colors. Example : If the value of the `canvasBgColor` attribute is set as `#FF5904, #FFFFFF`, `canvasBgRatio` can be used to specify their ratio in the background.",
+                "range": "0 - 100",
                 "type": "Numbers separated by comma",
                 "name": "canvasBgRatio"
             },
