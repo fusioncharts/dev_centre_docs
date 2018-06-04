@@ -333,7 +333,7 @@ Example:
 $ fe -c single.json -t xlsx
 ```
 
-### quality (--quality, -q)
+### quality (--quality, -q) v1.0.0
 Specifies the quality of the output file.
 
 **Default:** `better`
@@ -374,7 +374,7 @@ Once done, run the following command:
 $ fe -c chart.json -b custom.js
 ```
 
-### template (--template, -T)
+### template (--template, -T) v1.0.0
 HTML file to be used for dashboard export.
 
 **Default:** `template.html`
@@ -505,10 +505,10 @@ To create the template, run the following command:
 $ fe -c multiple_charts_config.json -T template.html
 ```
 
-### resources (--resources, -r)
+### resources (--resources, -r) v1.0.0
 JSON file that contains all the resources that will be injected into the template while rendering charts.
 
-Default: **resources.json**
+**Default:** `resources.json`
 
 This option is not mandatory; it is required only when `--remote-export-enabled` option is set to `true`. Most resources that are mentioned in the template using the `<link>`, `<script>` or `<img>` tags, are found intelligently. If any additional fonts and links are present in CSS or if any dynamic links are included in the JavaScript file, you can specify them using the `--resources` option.
 
@@ -655,7 +655,7 @@ The supported log levels are:
 
 Both the number format and string format can be provided in this option.
 
-### host (--host, -S)
+### host (--host, -S) v1.0.0
 Host of FusionExport service.
 
 **Default:** `127.0.0.1`
@@ -668,7 +668,7 @@ You can provide the host using the following command:
 $ fe -c single.json -S 192.156.56.65
 ```
 
-### port (--port, -P)
+### port (--port, -P) v1.0.0
 Port of FusionExport service.
 
 **Default:** `1337`
@@ -681,7 +681,7 @@ You can provide the port using the following command:
 $ fe -c single.json -S 192.156.56.65 -P 3443
 ```
 
-### ftp-config (--ftp-config, -p)
+### ftp-config (--ftp-config, -p) v1.0.0
 Config file for FTP connection during FTP export.
 
 During FTP export, FTP configuration can be passed through this as a JSON file. The JSON structure looks like as follows:
