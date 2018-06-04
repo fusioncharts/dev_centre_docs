@@ -136,7 +136,7 @@ The supported export configurations are as follows:
 
 * `libraryDirectoryPath` - Sets the root path of fusionCharts Javascript library to use the licensed version of FusionCharts.
 
-* `asyncCapture` - It shows if the export process will wait for `CAPTURE_EXIT` event.
+* `asyncCapture` - Sets if the export process will wait for CAPTURE_EXIT event.
 
 * `maxWaitForCaptureExit` - Sets the maximum time FusionExport would wait for the CAPTURE_EXIT event to be triggered.
 
@@ -148,8 +148,12 @@ The supported export configurations are as follows:
 
 * `type` - Sets the format of the output file.
 
-* `exportFile` - Sets the output filename template, along with the path.
+* `quality` - Sets the quality of the output file. Provide either good, better or best.
+
+* `outputFile` - Sets the output filename template, along with the path.
+
+* `outputFileDefinition` - JS file defining functions or array to resolve output file names.
 
 * `exportAsZip` - Sets if the chart(s) will be exported as a zip file or as individual file(s).
 
-* `resourceFilePath` - JSON file having the dependencies of the template when `templateFilePath` is provided.
+* `resourceFilePath` - JSON file having the dependencies of the template when templateFilePath is provided.

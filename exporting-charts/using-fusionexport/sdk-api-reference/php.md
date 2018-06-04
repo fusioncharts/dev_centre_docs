@@ -2,11 +2,13 @@
 permalink: exporting-charts/using-fusionexport/sdk-api-reference/php.html
 title: PHP | FusionCharts
 description: Export from your desktop and web server using PHP SDKs. A complete list of API reference.
-heading: Class ExportManager
+heading: PHP
 chartPresent: False
 ---
 
-__ExportManager__ acts as a client, sending the chart exporting configurations to the __ExportServer__ and delivering the exported charts through the attached listeners.
+## Class ExportManager
+
+__ExportManager__ acts as a client, sending the chart exporting configurations to the __FusionExport Service__ and delivering the exported charts through the attached listeners.
 
 ### Constructors
 
@@ -17,7 +19,28 @@ Constructs an __ExportManager__ with the specified export server IP address and 
 ### Methods
 
 **public function export(ExportConfig $exportConfig, $exportDoneListener = null, $exportStateChangedListener = null)**
-Exports chart with specified configurations, __ExportDone__ listener and __ExportStateChanged__ listener and returns an __Exporter__ instance.
+Exports based on **exportConfig**, output and error is received through __exportDoneListener__ callback and states are received by __exportStateChangedListener__ callback.
+It returns an `Exporter` instance.
+
+**public static function saveExportedFiles($export, $dir = '.')**
+
+It is a helper function to save the whole `outputFileBag` in the specified directory. It can also take an enclosing directory path as the second parameter. The directory path will be appended with the output file paths before saving.
+
+**public static function getExportedFileNames($export)**
+
+It extracts all the __realPath__ from the `outputFileBag`
+
+### Callbacks
+
+**exportDoneListener($outputFileBag, $error)**
+
+**$outputFileBag:** It is an array of **outputBags**. Each **outputBag** has a **realName** and a **fileContent** value. **realName** is the path where the file needs to be saved with the resolved filename.
+
+**$error:** It the an error object sent only if error occurs during export.
+
+**exportStateChangedListener($state)**
+
+**$state: **It is a state object with **reporter**, **exportDone**, **uuid**, **customMsg** properties.
 
 ## Class Exporter
 
@@ -104,6 +127,12 @@ The supported export configurations are as follows:
 
 * `type` - Sets the format of the output file.
 
-* `exportFile` - Sets the output filename template, along with the path.
+* `quality` - Sets the quality of the output file. Provide either good, better or best.
+
+* `outputFile` - Sets the output filename template, along with the path.
+
+* `outputFileDefinition` - JS file defining functions or array to resolve output file names.
 
 * `exportAsZip` - Sets if the chart(s) will be exported as a zip file or as individual file(s).
+
+* `resourceFilePath` - JSON file having the dependencies of the template when templateFilePath is provided.
