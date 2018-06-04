@@ -171,7 +171,7 @@ Returns all export configurations in JSON format.
 
 ExportException is a subclass of the Exception class. It is thrown in case any error occurs during the export process.
 
-The supported export configurations are as follows:
+## Supported Export Configurations
 
 * `chartConfig` - Sets the configuration of a single chart or multiple charts in an array.
 

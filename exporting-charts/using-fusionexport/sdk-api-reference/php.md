@@ -103,7 +103,7 @@ Returns a new instance of ExportConfig with same contents as the current one.
 **public function getFormattedConfigs()**
 Returns all export configurations in JSON format.
 
-The supported export configurations are as follows:
+## Supported Export Configurations
 
 * `chartConfig` - Sets the configuration of a single chart or multiple charts in an array.
 
