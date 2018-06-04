@@ -12,7 +12,7 @@ FusionExport, allows you to export JavaScript chart as a static image, bulk expo
 
 FusionExport behaves similarly to a Database Servers like MySQL and MongoDB. In case of MySQL, you will get a MySQL server along with SDKs for C#, Node.js, Python and so on which can be used in the application. These SDKs further let you query MySQL server, help in preventing from SQL injection and provide Object-Relational Mapping. It also comes with a CLI utility where you can access the database via command line. FusionExport works in a similar way.
 
-![](null)
+![Package Structure]({% site.baseurl %}/images/package-structure.png)
 
 The three components of FusionExport are: 
 
@@ -37,6 +37,8 @@ There are three ways to implement FusionExport in your architecture -
 3. CLI based Architecture
 
 ### API based Architecture
+
+![API based Architecture]({% site.baseurl %}/images/api-based-architecture.png)
 
 This is the most common architecture which covers diverse scenarios like on-demand reports download, sending periodic emails via cron jobs, exporting dashboards and so on. 
 
@@ -88,6 +90,8 @@ Similar to API based architecture you will be using following FusionExport compo
 
 2. FusionExport Server SDK
 
+![Non API based Architecture]({% site.baseurl %}/images/non-api-based-architecture.png)
+
 In this scenario, you don't have to worry about building any Application Server. You can simply build a client and directly communicate with FusionExport Server using SDK - 
 
 1. **Client** - Client side application which will be used by the end user. It could be - 
@@ -117,6 +121,8 @@ Flow for such architecture would be as follows -
 * **On Demand Reports Download:** Since there is no Application Server in between it becomes difficult to provide public endpoints to send a request to export. Although, you can still create another server or client using SDKs and run it separately. We won't recommend it because it would expose FusionExport server to the public.
 
 ### CLI based Architecture
+
+![CLI based Architecture]({% site.baseurl %}/images/cli-based-architecture.png)
 
 In case if you don't want to write any implementation and use FusionExport internally, then you can also use the FusionCharts CLI where you don't have to write a single line of code. Use command line arguments specified in the FusionExport CLI and start using FusionExport in no time. 
 
