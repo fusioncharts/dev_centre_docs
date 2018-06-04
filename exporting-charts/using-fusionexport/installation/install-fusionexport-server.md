@@ -6,8 +6,6 @@ heading: Install FusionExport Server
 chartPresent: False
 ---
 
-# Install FusionExport Server
-
 FusionExport server accepts export requests from FusionExport CLI, SDK clients, and browsers.
 
 You can download FusionExport for your operating system from the following links:
