@@ -6,11 +6,11 @@ heading: Overview
 chartPresent: False
 ---
 
-FusionExport, allows you to export JavaScript chart as a static image, bulk export multiple charts as a zip file. The exported files can be used for sending emails, attachments and printable documents. You can convert charts into several image formats like PNG, JPEG, SVG, PDF, HTML and data formats CSV, XLS, XLSX. Also, convert dashboards into PNG, JPEG, PDF, HTML formats.
+__FusionExport__, allows you to export JavaScript chart as a static image, bulk export multiple charts as a zip file. The exported files can be used for sending emails, attachments and printable documents. You can convert charts into several image formats like PNG, JPEG, SVG, PDF, HTML and data formats CSV, XLS, XLSX. Also, convert dashboards into PNG, JPEG, PDF, HTML formats.
 
 ## Package Structure
 
-FusionExport behaves similarly to a Database Servers like MySQL and MongoDB. In case of MySQL, you will get a MySQL server along with SDKs for C#, Node.js, Python and so on which can be used in the application. These SDKs further let you query MySQL server, help in preventing from SQL injection and provide Object-Relational Mapping. It also comes with a CLI utility where you can access the database via command line. FusionExport works in a similar way.
+FusionExport behaves similarly to a Database Servers like __MySQL__ and __MongoDB__. In case of MySQL, you will get a MySQL server along with SDKs for C#, Node.js, Python and so on which can be used in the application. These SDKs further let you query MySQL server, help in preventing from SQL injection and provide Object-Relational Mapping. It also comes with a CLI utility where you can access the database via command line. FusionExport works in a similar way.
 
 ![Package Structure]({% site.baseurl %}/images/package-structure.png)
 
