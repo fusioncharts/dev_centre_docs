@@ -2,9 +2,11 @@
 permalink: exporting-charts/using-fusionexport/sdk-api-reference/java.html
 title: Java | FusionCharts
 description: Export from your desktop and web server using Java SDKs. A complete list of API reference.
-heading: Class ExportManager
+heading: Java
 chartPresent: False
 ---
+
+## Class ExportManager
 
 **ExportManager** acts as a client, sending the exports chart configuration to the __FusionExport Service__ and delivering the exported charts through the attached listeners.
 
