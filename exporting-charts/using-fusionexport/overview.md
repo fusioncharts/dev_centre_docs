@@ -10,7 +10,7 @@ __FusionExport__, allows you to export JavaScript chart as a static image, bulk 
 
 ## Package Structure
 
-FusionExport behaves similarly to a Database Servers like __MySQL__ and __MongoDB__. In case of MySQL, you will get a MySQL server along with SDKs for C#, Node.js, Python and so on which can be used in the application. These SDKs further let you query MySQL server, help in preventing from SQL injection and provide Object-Relational Mapping. It also comes with a CLI utility where you can access the database via command line. FusionExport works in a similar way.
+FusionExport behaves similarly to a Database Servers like __MySQL__ and __MongoDB__. In case of MySQL, you will get a MySQL server along with SDKs for C#, Node.js, Python and so on which can be used in the application. These SDKs further let you query MySQL server, help in preventing from SQL injection and provide Object-Relational Mapping. It also comes with a __CLI__ utility where you can access the database via command line. FusionExport works in a similar way.
 
 ![Package Structure]({% site.baseurl %}/images/package-structure.png)
 
@@ -144,8 +144,8 @@ In this case, you will be using following FusionExport components -
 
 ## Ready to Get Started?
 
-* Install FusionExport Server
+* [Install FusionExport Server]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server '@@open-newtab')
 
-* Install FusionExport Server SDKs
+* [Install FusionExport CLI]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-cli '@@open-newtab')
 
-* Install FusionExport CLI
+* [Install FusionExport Server SDKs]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks '@@open-newtab')
