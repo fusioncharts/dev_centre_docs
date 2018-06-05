@@ -20,11 +20,8 @@ You can download these from [here](https://nodejs.org/en/download/).
 
 ## Installing the FusionExport CLI
 
-### Steps
+If you are using MAC OS or Linux, open the terminal. If you are using a Windows system, open the command prompt. Run the following command to install the FusionExport CLI:
 
-* If you are using MAC OS or Linux, open the terminal. If you are using a Windows system, open the command prompt.
-
-* Run the following command to install the FusionExport CLI: 
 ```javascript
 npm i -g fusionexport-cli
 ```
