@@ -78,138 +78,122 @@ The `--async-capture-timeout` option takes input as milliseconds.
     
 <div class="tab nodejs-tab">
 <pre><code class="custom-hlc language-javascript">
-	const fs = require('fs');
+	// Async capture
 	const path = require('path');
 
-	// require fusionexport
-	const FusionExport = require('../');
+	// Require FusionExport
+	const {
+	    ExportManager,
+	    ExportConfig
+	} = require('../');
 
-	const chartConfig = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'scrollchart.json')).toString());
-	const host = '127.0.0.1';
-	const port = 1337;
+	// Instantiate ExportManager
+	const exportManager = new ExportManager();
 
-	// instantiate FusionExport
-	const fusion = new FusionExport({ host, port });
+	// Instantiate ExportConfig and add the required configurations
+	const exportConfig = new ExportConfig();
 
-	const exportConfig = {
-	  chartConfig,
-	  callbackFilePath: path.join(__dirname, 'expand_scroll.js'),
-	  asyncCapture: true,
-	};
+	exportConfig.set('chartConfig', path.join(__dirname, 'resources', 'single.json'));
+	exportConfig.set('callbackFilePath', path.join(__dirname, 'resources', 'expand_scroll.js'));
+	exportConfig.set('asyncCapture', true);
 
 	// provide the export config
-	fusion.export(exportConfig);
+	exportManager.export(exportConfig);
 
-	fusion.on('exportDone', (files) => {
-	  // files can be read from files array
-	  // e.g. [{tmpPath:"", realName: ""}]
+	// Called when export is done
+	exportManager.on('exportDone', (outputFileBag) => {
+	    outputFileBag.forEach((op) => {
+	        console.log(`DONE: ${op.realName}`);
+	    });
+
+	    ExportManager.saveExportedFiles(outputFileBag);
 	});
 
-	fusion.on('exportStateChange', (state) => {
-	  // called for export progress state change
+	// Called on each export state change
+	exportManager.on('exportStateChange', (state) => {
+	    console.log(`[${state.reporter}] ${state.customMsg}`);
 	});
 
-	fusion.on('error', (err) => {
-	  // catch error here
+	// Called on erroe
+	exportManager.on('error', (err) => {
+	    console.error(err);
 	});
-
 </code></pre>
 </div>
 <div class="tab java-tab">
 <pre><code class="custom-hlc language-java">
-	import java.io.ByteArrayOutputStream;
-	import java.io.File;
-	import java.io.FileInputStream;
-	import java.io.InputStream;
 	import com.fusioncharts.fusionexport.client.*; // import sdk
 
-	public class ExportChart implements ExportDoneListener, ExportStateChangedListener {
+	public class ExportChart {
+	    public static void main(String[] args) throws Exception {
 
-	    public static void main(String[] args) {
+	        String chartConfig = "fullPath/resources/static/scrollchart.json";
+	        String localJS = "fullPath/resources/static/expand_scroll.js";
 
 	        // Instantiate the ExportConfig class and add the required configurations
 	        ExportConfig config = new ExportConfig();
-	        config.set("chartConfig", readFile("fullpath/of/scrollchart.json"));
-	        config.set("callbackFilePath", "fullpath/of/expand_scroll.js");
+	        config.set("chartConfig", chartConfig);
+	        config.set("callbackFilePath", localJS);
 	        config.set("asyncCapture", "true");
 
 	        // Instantiate the ExportManager class
-	        ExportManager em = new ExportManager();
+	        ExportManager manager = new ExportManager(config);
 	        // Call the export() method with the export config and the respective callbacks
-	        em.export(config, new ExportChart(), new ExportChart());
-	    }
-
-	    @Override // Called when export is done
-	    public void exportDone(String result, ExportException error) {
-	        if (error != null) {
-	            System.out.println(error.getMessage());
-	        } else {
-	            System.out.println("DONE: " + result);
-	        }
-	    }
-
-	    @Override // Called on each export state change
-	    public void exportStateChanged(String state) {
-	        System.out.println("STATE: " + state);
-	    }
-
-	    private static String readFile(String file) {
-	        String fileContent = "";
-	        try {
-	            File f = new File(file);
-	            FileInputStream inp = new FileInputStream(f);
-	            byte[] bf = new byte[(int) f.length()];
-	            inp.read(bf);
-	            fileContent = new String(bf, "UTF-8");
-	        } catch (Exception e) {
-	            e.printStackTrace();
-	        }
-	        return fileContent;
+	        manager.export(new ExportDoneListener() {
+	                @Override
+	                public void exportDone(ExportDoneData result, ExportException error) {
+	                    if (error != null) {
+	                        System.out.println(error.getMessage());
+	                    } else {
+	                        ExportManager.saveExportedFiles("fullpath", result);
+	                    }
+	                }
+	            },
+	            new ExportStateChangedListener() {
+	                @Override
+	                public void exportStateChanged(ExportState state) {
+	                    System.out.println("STATE: " + state.reporter);
+	                }
+	            });
 	    }
 	}
-
 </code></pre>
 </div>
 <div class="tab csharp-tab">
 <pre><code class="custom-hlc language-c">
 	using System;
 	using System.IO;
+	using System.Linq;
 	using FusionCharts.FusionExport.Client; // Import sdk
 
-	namespace FusionExportTest
-	{
-	    class Program
-	    {
-	        static void Main(string[] args)
-	        {
+	namespace FusionExportTest {
+	    public static class AsyncCapture {
+	        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT) {
 	            // Instantiate the ExportConfig class and add the required configurations
 	            ExportConfig exportConfig = new ExportConfig();
-	            exportConfig.Set("chartConfig", File.ReadAllText("fullpath/of/scrollchart.json"));
-	            exportConfig.Set("callbackFilePath", "fullpath/of/expand_scroll.js");
+	            exportConfig.Set("chartConfig", File.ReadAllText("./resources/scrollchart.json"));
+	            exportConfig.Set("callbackFilePath", "./resources/expand_scroll.js");
 	            exportConfig.Set("asyncCapture", "true");
 
 	            // Instantiate the ExportManager class
-	            ExportManager em = new ExportManager();
+	            ExportManager em = new ExportManager(host: host, port: port);
 	            // Call the Export() method with the export config and the respective callbacks
 	            em.Export(exportConfig, OnExportDone, OnExportStateChanged);
 	        }
-	        
+
 	        // Called when export is done
-	        static void OnExportDone(string result, ExportException error)
-	        {
-	            if(error != null)
-	            {
+	        static void OnExportDone(ExportEvent ev, ExportException error) {
+	            if (error != null) {
 	                Console.WriteLine("Error: " + error);
-	            } else
-	            {   
-	                Console.WriteLine("Done: " + result); // export result
+	            } else {
+	                var fileNames = ExportManager.GetExportedFileNames(ev.exportedFiles);
+	                Console.WriteLine("Done: " + String.Join(", ", fileNames)); // export result
 	            }
 	        }
-	        
+
 	        // Called on each export state change
-	        static void OnExportStateChanged(string state)
-	        {
-	            Console.WriteLine("State: " + state);
+	        static void OnExportStateChanged(ExportEvent ev) {
+	            Console.WriteLine("State: " + ev.state.customMsg);
 	        }
 	    }
 	}
@@ -218,38 +202,33 @@ The `--async-capture-timeout` option takes input as milliseconds.
 <div class="tab php-tab">
 <pre><code class="custom-hlc language-php">
 	<?php
-
 	// Async capture
-
 	require __DIR__ . '/../vendor/autoload.php';
-
 	// Use the sdk
 	use FusionExport\ExportManager;
 	use FusionExport\ExportConfig;
-
 	// Instantiate the ExportConfig class and add the required configurations
 	$exportConfig = new ExportConfig();
-	$exportConfig->set('chartConfig', file_get_contents('resources/single.json'));
+	$exportConfig->set('chartConfig', realpath('resources/single.json'));
 	$exportConfig->set('callbackFilePath', realpath('resources/expand_scroll.js'));
 	$exportConfig->set('asyncCapture', 'true');
-
 	// Called on each export state change
-	$onStateChange = function ($state) {
-	  echo('STATE: [' . $state->reporter . '] ' . $state->customMsg . "\n");
+	$onStateChange = function ($event) {
+	    $state = $event->state;
+	    echo('STATE: [' . $state->reporter . '] ' . $state->customMsg . "\n");
 	};
-
 	// Called when export is done
-	$onDone = function ($export, $e) {
+	$onDone = function ($event, $e) {
+	    $export = $event->export;
 	    if ($e) {
 	        echo('ERROR: ' . $e->getMessage());
 	    } else {
 	        foreach ($export as $file) {
-	            echo('DONE: ' . $file->realName . "\n");
-	            copy($file->tmpPath, $file->realName);
+	            echo('DONE: ' . $file->realName. "\n");
 	        }
+	        ExportManager::saveExportedFiles($export);
 	    }
 	};
-
 	// Instantiate the ExportManager class
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
@@ -260,92 +239,82 @@ The `--async-capture-timeout` option takes input as milliseconds.
 <pre><code class="custom-hlc language-python">
 	#!/usr/bin/env python
 
-	from fusionexport import ExportManager, ExportConfig  # Import sdk
+	from fusionexport
+	import ExportManager, ExportConfig# Import sdk
 
 
 	def read_file(file_path):
 	    try:
-	        with open(file_path, "r") as f:
-	            return f.read()
-	    except Exception as e:
-	        print(e)
+	    with open(file_path, "r") as f:
+	    return f.read()
+	except Exception as e:
+	    print(e)
 
 
-	# Called when export is done
-	def on_export_done(result, error):
+	# Called when
+	export is done
+	def on_export_done(event, error):
 	    if error:
-	        print(error)
-	    else:
-	        print(result)
+	    print(error)
+	else :
+	    ExportManager.save_exported_files("exported_images", event["result"])
 
 
-	# Called on each export state change
-	def on_export_state_changed(state):
-	    print(state)
+	# Called on each
+	export state change
+	def on_export_state_changed(event):
+	    print(event["state"])
 
 
 	# Instantiate the ExportConfig class and add the required configurations
 	export_config = ExportConfig()
 	export_config["chartConfig"] = read_file("scrollchart.json")
-	export_config["callbackFilePath"] = "fullpath/of/expand_scroll.js"
+	export_config["callbackFilePath"] = "expand_scroll.js"
 	export_config["asyncCapture"] = True
 
+	# Provide port and host of FusionExport Service
+	export_server_host = "127.0.0.1"
+	export_server_port = 1337
+
 	# Instantiate the ExportManager class
-	em = ExportManager()
-	# Call the export() method with the export config and the respective callbacks
+	em = ExportManager(export_server_host, export_server_port)# Call the
+	export () method with the
+	export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
 </code></pre>
 </div>
 <div class="tab golang-tab">
 <pre><code class="custom-hlc language-javascript">
 	// Async capture
-
 	package main
 
 	import (
-	    "io/ioutil"
-	    "../FusionExport" // import the sdk
-	    "path/filepath"
 	    "fmt"
+
+	    "github.com/fusioncharts/fusionexport-go-client"
 	)
 
-	func saveFiles(fileBag []FusionExport.OutFileBag) {
-	    for _, file := range fileBag {
-	        fmt.Println(file.RealName)
-	        fileData, err := ioutil.ReadFile(file.TmpPath)
-	        check(err)
-	        err = ioutil.WriteFile(file.RealName, fileData, 0644)
-	        check(err)
-	    }
-	}
-
 	// Called when export is done
-	func onDone (outFileBag []FusionExport.OutFileBag, err error) {
+	func onDone(outFileBag[] FusionExport.OutFileBag, err error) {
 	    check(err)
-	    saveFiles(outFileBag)
+	    FusionExport.SaveExportedFiles(outFileBag)
 	}
 
 	// Called on each export state change
-	func onStateChange (event FusionExport.ExportEvent) {
+	func onStateChange(event FusionExport.ExportEvent) {
 	    fmt.Println("[" + event.Reporter + "] " + event.CustomMsg)
 	}
 
 	func main() {
 	    // Instantiate ExportConfig and add the required configurations
-	    exportConfig := FusionExport.NewExportConfig()
+	    exportConfig: = FusionExport.NewExportConfig()
 
-	    chartConfig, err := ioutil.ReadFile("resources/single.json")
-	    check(err)
-	    exportConfig.Set("chartConfig", string(chartConfig))
-
-	    callbackFilePath, err := filepath.Abs("resources/expand_scroll.js")
-	    check(err)
-	    exportConfig.Set("callbackFilePath", callbackFilePath)
-
-	    exportConfig.Set("asyncCapture", "true")
+	    exportConfig.Set("chartConfig", "example/resources/single.json")
+	    exportConfig.Set("callbackFilePath", "example/resources/expand_scroll.js")
+	    exportConfig.Set("asyncCapture", true)
 
 	    // Instantiate ExportManager
-	    exportManager := FusionExport.NewExportManager()
+	    exportManager: = FusionExport.NewExportManager()
 	    // Call the Export() method with the export config and the respective callbacks
 	    exportManager.Export(exportConfig, onDone, onStateChange)
 	}
