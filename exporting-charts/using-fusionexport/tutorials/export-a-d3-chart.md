@@ -167,74 +167,82 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 </code></pre></div>
     
 <div class="tab nodejs-tab">
-
 <pre><code class="custom-hlc language-javascript">
-	const fs = require('fs');
+	// D3 export
 	const path = require('path');
-	// require fusionexport
-	const FusionExport = require('fusionexport-node-client');
 
+	// Require FusionExport
+	const {
+	    ExportManager,
+	    ExportConfig
+	} = require('../');
 
+	// Instantiate ExportManager
+	const exportManager = new ExportManager();
 
-	const host = '127.0.0.1';
-	const port = 1337;
+	// Instantiate ExportConfig and add the required configurations
+	const exportConfig = new ExportConfig();
 
-	// instantiate FusionExport
-	const fusion = new FusionExport({ host, port });
-
-	const exportConfig = {
-	  templateFilePath: path.join(__dirname, '..', 'data', 'd3_exp', 'template.html'),
-	  asyncCapture: true,
-	  type: 'pdf'
-	};
+	exportConfig.set('templateFilePath', path.join(__dirname, 'resources', 'template_d3.html'));
+	exportConfig.set('type', 'jpg');
+	exportConfig.set('asyncCapture', true);
 
 	// provide the export config
-	fusion.export(exportConfig);
+	exportManager.export(exportConfig);
 
-	fusion.on('exportDone', (files) => {
-	  console.log(files);
+	// Called when export is done
+	exportManager.on('exportDone', (outputFileBag) => {
+	    outputFileBag.forEach((op) => {
+	        console.log(`DONE: ${op.realName}`);
+	    });
+
+	    ExportManager.saveExportedFiles(outputFileBag);
 	});
 
-	fusion.on('exportStateChange', (state) => {
-	  console.log(state);
+	// Called on each export state change
+	exportManager.on('exportStateChange', (state) => {
+	    console.log(`[${state.reporter}] ${state.customMsg}`);
 	});
 
-	fusion.on('error', (err) => {
-	  console.error(err)
-	})
+	// Called on erroe
+	exportManager.on('error', (err) => {
+	    console.error(err);
+	});
 </code></pre></div>
 <div class="tab java-tab">
 <pre><code class="custom-hlc language-java">
-	import com.fusioncharts.fusionexport.client.*; // import sdk
+	import com.fusioncharts.fusionexport.client.*;
 
-	public class ExportChart implements ExportDoneListener, ExportStateChangedListener {
+	public class d3_exp {
+	    public static void main(String[] args) throws Exception {
 
-	    public static void main(String[] args) {
-
-	        // Instantiate the ExportConfig class and add the required configurations
+	        String rootPath = System.getProperty("user.dir") + java.io.File.separator;
+	        String templateRelativePath = "src\\test\\resources\\static2\\resources\\template_d3.html".replace("\\", java.io.File.separator);
+	        String templateAbsolutePath = rootPath + templateRelativePath;
 	        ExportConfig config = new ExportConfig();
-	        config.set("templateFilePath", "fullpath/of/template.html");
-	        config.set("asyncCapture", "true");
+
+	        config.set("templateFilePath", templateAbsolutePath);
 	        config.set("type", "pdf");
+	        config.set("asyncCapture", true);
 
-	        // Instantiate the ExportManager class
-	        ExportManager em = new ExportManager();
-	        // Call the export() method with the export config and the respective callbacks
-	        em.export(config, new ExportChart(), new ExportChart());
-	    }
+	        ExportManager manager = new ExportManager(config);
+	        manager.export(new ExportDoneListener() {
+	                @Override
+	                public void exportDone(ExportDoneData result, ExportException error) {
+	                    if (error != null) {
+	                        System.out.println(error.getMessage());
+	                    } else {
+	                        ExportManager.saveExportedFiles(rootPath + "bin" + java.io.File.separator + "static2" + java.io.File.separator + "resources", result);
+	                    }
+	                }
+	            },
+	            new ExportStateChangedListener() {
+	                @Override
+	                public void exportStateChanged(ExportState state) {
+	                    System.out.println("STATE: " + state.customMsg);
+	                }
+	            });
 
-	    @Override // Called when export is done
-	    public void exportDone(String result, ExportException error) {
-	        if (error != null) {
-	            System.out.println(error.getMessage());
-	        } else {
-	            System.out.println("DONE: " + result);
-	        }
-	    }
-
-	    @Override // Called on each export state change
-	    public void exportStateChanged(String state) {
-	        System.out.println("STATE: " + state);
 	    }
 	}
 </code></pre></div>
@@ -242,42 +250,36 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 <pre><code class="custom-hlc language-c">
 	using System;
 	using System.IO;
+	using System.Linq;
 	using FusionCharts.FusionExport.Client; // Import sdk
 
-	namespace FusionExportTest
-	{
-	    class Program
-	    {
-	        static void Main(string[] args)
-	        {
+	namespace FusionExportTest {
+	    public static class D3_Exp {
+	        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT) {
 	            // Instantiate the ExportConfig class and add the required configurations
 	            ExportConfig exportConfig = new ExportConfig();
-	            exportConfig.Set("templateFilePath", "fullpath/of/template.html");
-	            exportConfig.Set("asyncCapture", "true");
-	            exportConfig.Set("type", "pdf");
-
+	            exportConfig.Set("templateFilePath", "./resources/template_d3.html");
+	            exportConfig.Set("type", "jpg");
+	            exportConfig.Set("asyncCapture", true);
 	            // Instantiate the ExportManager class
-	            ExportManager em = new ExportManager();
+	            ExportManager em = new ExportManager(host: host, port: port);
 	            // Call the Export() method with the export config and the respective callbacks
 	            em.Export(exportConfig, OnExportDone, OnExportStateChanged);
+	            Console.Read();
 	        }
-	        
 	        // Called when export is done
-	        static void OnExportDone(string result, ExportException error)
-	        {
-	            if(error != null)
-	            {
+	        static void OnExportDone(ExportEvent ev, ExportException error) {
+	            if (error != null) {
 	                Console.WriteLine("Error: " + error);
-	            } else
-	            {   
-	                Console.WriteLine("Done: " + result); // export result
+	            } else {
+	                var fileNames = ExportManager.GetExportedFileNames(ev.exportedFiles);
+	                Console.WriteLine("Done: " + String.Join(", ", fileNames)); // export result
 	            }
 	        }
-	        
+
 	        // Called on each export state change
-	        static void OnExportStateChanged(string state)
-	        {
-	            Console.WriteLine("State: " + state);
+	        static void OnExportStateChanged(ExportEvent ev) {
+	            Console.WriteLine("State: " + ev.state.customMsg);
 	        }
 	    }
 	}
@@ -285,38 +287,33 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 <div class="tab php-tab">
 <pre><code class="custom-hlc language-php">
 	<?php
-
 	// D3 export
-
 	require __DIR__ . '/../vendor/autoload.php';
-
 	// Use the sdk
 	use FusionExport\ExportManager;
 	use FusionExport\ExportConfig;
-
 	// Instantiate the ExportConfig class and add the required configurations
 	$exportConfig = new ExportConfig();
-	$exportConfig->set('templateFilePath', realpath('../data/d3_exp/template.html'));
-	$exportConfig->set('type', 'pdf');
+	$exportConfig->set('templateFilePath', realpath('resources/template_d3.html'));
+	$exportConfig->set('type', 'jpg');
 	$exportConfig->set('asyncCapture', 'true');
-
 	// Called on each export state change
-	$onStateChange = function ($state) {
-	  echo('STATE: [' . $state->reporter . '] ' . $state->customMsg . "\n");
+	$onStateChange = function ($event) {
+	    $state = $event->state;
+	    echo('STATE: [' . $state->reporter . '] ' . $state->customMsg . "\n");
 	};
-
 	// Called when export is done
-	$onDone = function ($export, $e) {
+	$onDone = function ($event, $e) {
+	    $export = $event->export;
 	    if ($e) {
 	        echo('ERROR: ' . $e->getMessage());
 	    } else {
 	        foreach ($export as $file) {
-	            echo('DONE: ' . $file->realName . "\n");
-	            copy($file->tmpPath, $file->realName);
+	            echo('DONE: ' . $file->realName. "\n");
 	        }
+	        ExportManager::saveExportedFiles($export);
 	    }
 	};
-
 	// Instantiate the ExportManager class
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
@@ -328,28 +325,39 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk
 
+	def read_file(file_path):
+	    try:
+	        with open(file_path, "r") as f:
+	            return f.read()
+	    except Exception as e:
+	        print(e)
+
 
 	# Called when export is done
-	def on_export_done(result, error):
+	def on_export_done(event, error):
 	    if error:
 	        print(error)
 	    else:
-	        print(result)
+	        ExportManager.save_exported_files("exported_images", event["result"])
 
 
 	# Called on each export state change
-	def on_export_state_changed(state):
-	    print(state)
+	def on_export_state_changed(event):
+	    print(event["state"])
 
 
 	# Instantiate the ExportConfig class and add the required configurations
 	export_config = ExportConfig()
-	export_config["templateFilePath"] = "fullpath/of/template.html"
-	export_config["asyncCapture"] = True
+	export_config["templateFilePath"] = "template_d3.html"
 	export_config["type"] = "pdf"
+	export_config["asyncCapture"] = "true"
+
+	# Provide port and host of FusionExport Service
+	export_server_host = "127.0.0.1"
+	export_server_port = 1337
 
 	# Instantiate the ExportManager class
-	em = ExportManager()
+	em = ExportManager(export_server_host, export_server_port)
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
 </code></pre></div>
@@ -360,54 +368,40 @@ It is possible to export D3-based visualizations with FusionExport. To demonstra
 	package main
 
 	import (
-	    "io/ioutil"
-	    ".." // import the sdk
-	    "path/filepath"
-	    "fmt"
+		"fmt"
+
+		"github.com/fusioncharts/fusionexport-go-client"
 	)
 
-	func saveFiles(fileBag []FusionExport.OutFileBag) {
-	    for _, file := range fileBag {
-	        fmt.Println(file.RealName)
-	        fileData, err := ioutil.ReadFile(file.TmpPath)
-	        check(err)
-	        err = ioutil.WriteFile(file.RealName, fileData, 0644)
-	        check(err)
-	    }
-	}
-
 	// Called when export is done
-	func onDone (outFileBag []FusionExport.OutFileBag, err error) {
-	    check(err)
-	    saveFiles(outFileBag)
+	func onDone(outFileBag []FusionExport.OutFileBag, err error) {
+		check(err)
+		FusionExport.SaveExportedFiles(outFileBag)
 	}
 
 	// Called on each export state change
-	func onStateChange (event FusionExport.ExportEvent) {
-	    fmt.Println("[" + event.Reporter + "] " + event.CustomMsg)
+	func onStateChange(event FusionExport.ExportEvent) {
+		fmt.Println("[" + event.Reporter + "] " + event.CustomMsg)
 	}
 
 	func main() {
-	    // Instantiate ExportConfig and add the required configurations
-	    exportConfig := FusionExport.NewExportConfig()
+		// Instantiate ExportConfig and add the required configurations
+		exportConfig := FusionExport.NewExportConfig()
 
-	    templateFilePath, err := filepath.Abs("../data/d3_exp/template.html")
-	    check(err)
-	    exportConfig.Set("templateFilePath", templateFilePath)
+		exportConfig.Set("templateFilePath", "example/resources/template_d3.html")
+		exportConfig.Set("type", "pdf")
+		exportConfig.Set("asyncCapture", true)
 
-	    exportConfig.Set("type", "pdf")
-	    exportConfig.Set("asyncCapture", "true")
-
-	    // Instantiate ExportManager
-	    exportManager := FusionExport.NewExportManager()
-	    // Call the Export() method with the export config and the respective callbacks
-	    exportManager.Export(exportConfig, onDone, onStateChange)
+		// Instantiate ExportManager
+		exportManager := FusionExport.NewExportManager()
+		// Call the Export() method with the export config and the respective callbacks
+		exportManager.Export(exportConfig, onDone, onStateChange)
 	}
 
 	func check(e error) {
-	    if e != nil {
-	        panic(e)
-	    }
+		if e != nil {
+			panic(e)
+		}
 	}
 </code></pre>
 </div>
