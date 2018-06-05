@@ -12,11 +12,9 @@ To directly save exported files into s3, you need to obtain below credentials fr
 * AccessKey
 * SecretAccessKey
 
-### Step 1
+To save the output file to S3, add the prefix `S3:` for output-file option and pass the S3 configs in the `S3-config` option.
 
-Navigate to `~/fusionexport_config` directory (for Mac OS and Linux) or  `C:\Users\<username>\fusionexport_config` (for Windows ).
-
-Now, edit the content of the file `s3.json`.
+Now, edit the content of the file `fusioncharts-config.json.json`.
 
 <div class="code-wrapper">
 <ul class="code-tabs">
@@ -27,32 +25,21 @@ Now, edit the content of the file `s3.json`.
 <div class="tab cli-tab active">
 <pre><code class="custom-hlc language-javascript">
 	{
-		"bucket": "",
-		"accessKey": "",
-		"secretAccessKey": ""
+	    "chart-config": "fusioncharts_chart.js",
+	    "output-file": "s3:fc-chart-<%= number(1) %>",
+	    "s3-config": {
+	        "bucket": "coolbucket",
+	        "accessKey": "ADFASDF#DDF$",
+	        "secretAccessKey": "dfasdAS$32rdsf$234rfdsaf"
+	    }
 	}
 </code></pre>
 </div>
 </div>
 </div>
 
-### Step 2
+Run the following command:
 
-Add the prefix `s3:` for `--output-file` option.
-
-<div class="code-wrapper">
-<ul class="code-tabs">
-    <li class="active"><a data-toggle="cli">CLI</a></li>
-</ul>
-
-<div class="tab-content">
-<div class="tab cli-tab active">
-<pre><code class="custom-hlc language-javascript">
-	{
-		"chart-config": "fusioncharts_chart.js",
-		"output-file": "s3:fc-chart-<%= number(1) %>"
-	}
-</code></pre>
-</div>
-</div>
-</div>
+```
+$ fe -c fusioncharts-config.json
+```
