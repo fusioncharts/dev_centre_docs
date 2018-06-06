@@ -62,7 +62,7 @@ The above command will complete all the dependencies missing for FusionExport Se
 
 > In order to use FusionExport Server, you have to either use Fusion Export Server SDKs in your application or use FusionExport CLI. 
 
-# What's next?
+## What's next?
 
 * [Install FusionExport CLI]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-cli '@@open-newtab')
 
