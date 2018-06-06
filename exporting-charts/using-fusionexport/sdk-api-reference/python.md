@@ -2,11 +2,13 @@
 permalink: exporting-charts/using-fusionexport/sdk-api-reference/python.html
 title: Python | FusionCharts
 description: Export from your desktop and web server using Python SDKs. A complete list of API reference.
-heading: Class ExportManager
+heading: Python
 chartPresent: False
 ---
 
-__ExportManager__ acts as a client, sending the export chart configuration to the __ExportServer__ and delivering the exported charts through the attached listeners.
+## Class ExportManager
+
+__ExportManager__ acts as a client, sending the export chart configuration to the __FusionExport Service__ and delivering the exported charts through the attached listeners.
 
 ### Constructor
 
@@ -17,8 +19,13 @@ __port:__ This is used to specify the export server port; if not specified, the 
 
 ### Methods
 
+**static save_exported_files(dir_path, exported_output)**
+Saves the exported images in the specified folder.
+
+**static get_exported_file_names(exported_output)**
+Returns the exported file names in a list.
+
 **port( [port] )**
-Exporter is responsible for any individual export request made by the ExportManager. Generally, the ExportManager uses this class internally to make chart exporting request to export server.
 If the port is given, then it updates the export server port with specified value. Otherwise it returns the current port.
 
 **host( [host] )**
@@ -49,35 +56,75 @@ __export_state_changed_listener:__ A callback function which is called with sing
 
 ### Methods
 
-**export_config()**
-Returns the associated export configurations.
+**export_config()** : Returns the associated export configurations.
 
-**export_done_listener()**
+**export_done_listener()** : 
 Returns the attached ExportDone listener.
 
-**export_state_changed_listener()**
+**export_state_changed_listener()** : 
 Returns the attached ExportStateChanged listener.
 
-**export_server_host()**
+**export_server_host()** : 
 Returns the export server host.
 
-**export_server_port()**
+**export_server_port()** : 
 Returns the export server port.
 
-**set_export_connection_config(host, port)**
+**set_export_connection_config(host, port)** : 
 Sets export server's IP address and port.
 
-**start()**
+**start()** : 
 Starts the chart exporting process according to the export configurations.
 
-**cancel()**
+**cancel()** : 
 Cancels the chart exporting request.
 
 ## Class ExportConfig
 
-__ExportConfig__ holds the configurations for exporting charts, like chart data, template file, dashboard config, etc. These configurations are sent to the __ExportServer__ by __ExportManager__ to export charts.
+__ExportConfig__ holds the configurations for exporting charts, like chart data, template file, dashboard config, etc. These configurations are sent to the __FusionExport Service__ by __ExportManager__ to export charts.
 
-The supported export configurations are as follows:
+### Constructor
+
+**ExportConfig(config_dict)** : 
+Initializes the __ExportConfig__ object with the specified configuration dictionary, if not given then an empty __ExportConfig__ object is created.
+
+### Methods
+
+**set(config_name, config_value)** : 
+Sets a single export configuration with the specified configuration value. Also you can use [ ] operator to set the configuration like dictionary.
+
+**get(config_name)** : 
+Returns config value for the specified configuration name. Also you can use [ ] operator to access the configuration value like dictionary.
+
+**remove(config_name)** : 
+Removes the specified configuration and returns True if config_name is found, otherwise returns False. Also you can use __del__ operator to delete a single configuration.
+
+**has(config_name)** : 
+Checks if the specified configuration is present, returning True if the config_name is found, otherwise returning False. Also you can use __in__ operator to check a configuration is set or not.
+
+**clear()** : 
+Clears all the export configurations added earlier.
+
+**count()** : 
+Returns the number of total export configurations added. Also you can use __len()__ function to get the total count of configurations added.
+
+**config_names()** : 
+Returns all configuration names as a list.
+
+**config_values()** : 
+Returns all configuration values as a list.
+
+**clone()** : 
+Returns a new instance of ExportConfig with same contents as the current one.
+
+**get_formatted_configs()** : 
+Returns all export configurations in JSON format.
+
+## Class ExportError
+
+__ExportError__ is a subclass of the __Exception__ class. It is thrown in case any error occurs during the export process.
+
+## Supported Export Configurations
 
 * `chartConfig` - Sets the configuration of a single chart or multiple charts in an array.
 
@@ -89,7 +136,7 @@ The supported export configurations are as follows:
 
 * `libraryDirectoryPath` - Sets the root path of fusionCharts Javascript library to use the licensed version of FusionCharts.
 
-* `asyncCapture` - It shows if the export process will wait for `CAPTURE_EXIT` event.
+* `asyncCapture` - Sets if the export process will wait for CAPTURE_EXIT event.
 
 * `maxWaitForCaptureExit` - Sets the maximum time FusionExport would wait for the CAPTURE_EXIT event to be triggered.
 
@@ -101,47 +148,12 @@ The supported export configurations are as follows:
 
 * `type` - Sets the format of the output file.
 
-* `exportFile` - Sets the output filename template, along with the path.
+* `quality` - Sets the quality of the output file. Provide either good, better or best.
+
+* `outputFile` - Sets the output filename template, along with the path.
+
+* `outputFileDefinition` - JS file defining functions or array to resolve output file names.
 
 * `exportAsZip` - Sets if the chart(s) will be exported as a zip file or as individual file(s).
 
-### Constructor
-
-**ExportConfig(config_dict)**
-Initializes the __ExportConfig__ object with the specified configuration dictionary, if not given then an empty __ExportConfig__ object is created.
-
-### Methods
-
-**set(config_name, config_value)**
-Sets a single export configuration with the specified configuration value. Also you can use [ ] operator to set the configuration like dictionary.
-
-**get(config_name)**
-Returns config value for the specified configuration name. Also you can use [ ] operator to access the configuration value like dictionary.
-
-**remove(config_name)**
-Removes the specified configuration and returns True if config_name is found, otherwise returns False. Also you can use __del__ operator to delete a single configuration.
-
-**has(config_name)**
-Checks if the specified configuration is present, returning True if the config_name is found, otherwise returning False. Also you can use __in__ operator to check a configuration is set or not.
-
-**clear()**
-Clears all the export configurations added earlier.
-
-**count()**
-Returns the number of total export configurations added. Also you can use __len()__ function to get the total count of configurations added.
-
-**config_names()**
-Returns all configuration names as a list.
-
-**config_values()**
-Returns all configuration values as a list.
-
-**clone()**
-Returns a new instance of ExportConfig with same contents as the current one.
-
-**get_formatted_configs()**
-Returns all export configurations in JSON format.
-
-## Class ExportError
-
-__ExportError__ is a subclass of the __Exception__ class. It is thrown in case any error occurs during the export process.
+* `resourceFilePath` - JSON file having the dependencies of the template when templateFilePath is provided.

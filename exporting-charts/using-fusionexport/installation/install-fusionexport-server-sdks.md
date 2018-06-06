@@ -1,12 +1,12 @@
 ---
-permalink: exporting-charts/using-fusionexport/installation/add-language-sdks.html
-title: Add Language SDKs | FusionCharts
+permalink: exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks.html
+title: Install FusionExport Server SDKs | FusionCharts
 description: This section is a language SDK installation guide
-heading: Add Language SDKs
+heading: Install FusionExport Server SDKs
 chartPresent: False
 ---
 
-The FusionExport Language SDKs are tools for creating and managing the FusionExport system from various supported languages for direct export integration in your application. It works with the FusionExport Desktop application (local export) based on simple APIs.
+The FusionExport Server SDKs are tools for interacting with FusionExport Server from various supported languages for direct export integration in your application. Internally, it communicates with FusionExport Server using APIs.
 
 ## Installation and basic usage guide for all the language SDKs
 
@@ -37,7 +37,7 @@ The FusionExport Language SDKs are tools for creating and managing the FusionExp
 
 <div class="tab csharp-tab">
 <strong>You can install the SDK using the NuGet package manager. To install, open the NuGet package manager console and run the following command:</strong>
-<pre><code class="language-cs">	$ Install-Package FusionExport -Version 1.0.0-beta</code></pre>
+<pre><code class="language-cs">	$ Install-Package FusionExport -Version 1.0.0-rc</code></pre>
 <strong>To use the SDK into your project:</strong>
 <pre><code class="language-cs">	using FusionCharts.FusionExport.Client; </code></pre>
 </div>
@@ -53,7 +53,7 @@ The FusionExport Language SDKs are tools for creating and managing the FusionExp
 <strong>Then, add this SDK as a dependency to your build.gradle file:</strong>
 <pre><code class="language-java">
 	dependencies {
-		Compile "com.fusioncharts.fusionexport:fusionexport:1.0.0-beta"
+		Compile "com.fusioncharts.fusionexport:fusionexport:1.0.0-rc"
 	}
 </code></pre>
 <p><strong>Using Maven</strong></p>
@@ -62,11 +62,11 @@ The FusionExport Language SDKs are tools for creating and managing the FusionExp
 	&lt;dependency&gt;
 		&lt;groupId&gt;com.fusioncharts.fusionexport&lt;/groupId&gt;
 		&lt;artifactId&gt;fusionexport&lt;/artifactId&gt;
-		&lt;version&gt;1.0.0-beta&lt;/version&gt;
+		&lt;version&gt;1.0.0-rc&lt;/version&gt;
 	&lt;/dependency&gt;
 </code></pre>
 <strong>To import the SDK into your project:</strong>
-<pre><code class="language-java">	import com.fusioncharts.fusionexport.client.*; </code></pre> </div>
+<pre><code class="language-java"> import com.fusioncharts.fusionexport.client.*; </code></pre> </div>
 <div class="tab golang-tab">
 <strong>To install the go package, simply use go get:</strong>
 <pre><code class="language-go">	go get github.com/fusioncharts/fusionexport-go-client </code></pre>
@@ -76,7 +76,7 @@ The FusionExport Language SDKs are tools for creating and managing the FusionExp
 
 <div class="tab php-tab">
 <strong>To install this package, simply use composer:</strong>
-<pre><code class="language-php">	composer require fusioncharts/fusionexport:1.0.0-beta</code></pre>
+<pre><code class="language-php"> composer require fusioncharts/fusionexport-php-client:1.0.0-rc </code></pre>
 <strong>To use the SDK in your project:</strong>
 <pre><code class="language-php">
 	use FusionExport\ExportManager;
@@ -85,3 +85,13 @@ The FusionExport Language SDKs are tools for creating and managing the FusionExp
 </div>
 </div>
 </div>
+
+## What’s next?
+
+* [Export Charts]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-chart-as-image '@@open-newtab')
+
+* [Export Dashboards]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard '@@open-newtab')
+
+* [Configure Charts]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart '@@open-newtab')
+
+* [Export Charts in Bulk]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk '@@open-newtab')

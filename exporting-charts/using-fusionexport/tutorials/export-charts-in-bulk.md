@@ -1,13 +1,15 @@
 ---
-permalink: exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip.html
-title: Export the output files as a zip | FusionCharts
-description: This article talks about the SDKs used for exporting output files as a zip.
-heading: Export the output files as a zip
+permalink: exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk.html
+title: Export charts in bulk | FusionCharts
+description: This article talks about the SDKs used for exporting charts in bulk.
+heading: Export charts in bulk
 chartPresent: False
 ---
 
-For exporting the output files as a zip, set `--export-as-zip` option to __true__.
-To do this, you can use the CLI or SDKs of the languages mentioned below, using the command given below:
+How about, instead of exporting a single chart at a time, you could export multiple charts at one go?
+Exporting charts in bulk is now easier than ever. In a JSON file, save the configurations of all the charts to be exported in an array. That means, each element in the array should hold one single chart's configuration.
+
+To export charts in bulk, you can use the CLI or SDKs of the languages mentioned below, using the command given below:
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
@@ -21,16 +23,27 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </ul>
 
 <div class="tab-content extra-tabs">
-    <div class="tab cli-tab active">
-    <div>If you want to export the files as a zip, set the <strong>--output-as-zip</strong> option to true as shown in the command below:</div>
+<div class="tab cli-tab active">
+<div>In a JSON file, save the configurations of all the charts to be exported in an array. That means, each element  in the array should hold one single chart configuration.</div>
+<p><strong>The file structure of such a JSON file will look as shown below:</strong></p>
 <pre><code class="custom-hlc language-bash">
-	$ fe -c multiple_charts_config.json -z true
+	[
+	    {
+	        // first chart config
+	    },
+	    {
+	        // second chart config
+	    }
+	]
+</code></pre>
+<p><strong>To export charts in bulk, execute the command given below:</strong></p>
+<pre><code class="custom-hlc language-text">
+	$ fe - c chart-config-file.json	
 </code></pre>
 </div>
-    
 <div class="tab nodejs-tab">
 <pre><code class="custom-hlc language-javascript">
-	// Exporting the Output Files as Zip
+	// Export in Bulk
 	const path = require('path');
 
 	// Require FusionExport
@@ -47,7 +60,6 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 
 	exportConfig.set('chartConfig', path.join(__dirname, 'resources', 'multiple.json'));
 	exportConfig.set('outputFile', 'export-<%= number(5) %>');
-	exportConfig.set('exportAsZip', true);
 
 	// provide the export config
 	exportManager.export(exportConfig);
@@ -79,12 +91,11 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	public class ExportChart {
 	    public static void main(String[] args) throws Exception {
 
-	        String configPath = "fullPath/multiple.json";
+	        String chartConfig = "fullpath/resources/static/bulk.json";
 
 	        // Instantiate the ExportConfig class and add the required configurations
 	        ExportConfig config = new ExportConfig();
-	        config.set("chartConfig", configPath);
-	        config.set("exportAsZip", "true");
+	        config.set("chartConfig", chartConfig);
 
 	        // Instantiate the ExportManager class
 	        ExportManager manager = new ExportManager(config);
@@ -95,7 +106,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	                    if (error != null) {
 	                        System.out.println(error.getMessage());
 	                    } else {
-	                        ExportManager.saveExportedFiles("fullPath", result);
+	                        ExportManager.saveExportedFiles("fullpath", result);
 	                    }
 	                }
 	            },
@@ -118,35 +129,33 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 
 	namespace FusionExportTest
 	{
-	    public static class OutputAsZip
+	    public static class BulkExport
 	    {
 	        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT)
 	        {
 	            // Instantiate the ExportConfig class and add the required configurations
 	            ExportConfig exportConfig = new ExportConfig();
 	            exportConfig.Set("chartConfig", File.ReadAllText("./resources/bulk.json"));
-	            exportConfig.Set("exportAsZip", "true");
 
 	            // Instantiate the ExportManager class
 	            ExportManager em = new ExportManager(host: host, port: port);
 	            // Call the Export() method with the export config and the respective callbacks
 	            em.Export(exportConfig, OnExportDone, OnExportStateChanged);
 	        }
-
+	        
 	        // Called when export is done
 	        static void OnExportDone(ExportEvent ev, ExportException error)
 	        {
-	            if (error != null)
+	            if(error != null)
 	            {
 	                Console.WriteLine("Error: " + error);
-	            }
-	            else
+	            } else
 	            {
 	                var fileNames = ExportManager.GetExportedFileNames(ev.exportedFiles);
 	                Console.WriteLine("Done: " + String.Join(", ", fileNames)); // export result
 	            }
 	        }
-
+	        
 	        // Called on each export state change
 	        static void OnExportStateChanged(ExportEvent ev)
 	        {
@@ -159,7 +168,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 <div class="tab php-tab">
 <pre><code class="custom-hlc language-php">
 	<?php
-	// Exporting the Output Files as Zip
+	// Export in Bulk
 	require __DIR__ . '/../vendor/autoload.php';
 	// Use the sdk
 	use FusionExport\ExportManager;
@@ -168,7 +177,6 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	$exportConfig = new ExportConfig();
 	$exportConfig->set('chartConfig', realpath('resources/multiple.json'));
 	$exportConfig->set('outputFile', 'php-export-<%= number(5) %>');
-	$exportConfig->set('exportAsZip', true);
 	// Called on each export state change
 	$onStateChange = function ($event) {
 	    $state = $event->state;
@@ -222,7 +230,6 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	# Instantiate the ExportConfig class and add the required configurations
 	export_config = ExportConfig()
 	export_config["chartConfig"] = read_file("bulk.json")
-	export_config["exportAsZip"] = True
 
 	# Provide port and host of FusionExport Service
 	export_server_host = "127.0.0.1"
@@ -236,7 +243,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </div>
 <div class="tab golang-tab">
 <pre><code class="custom-hlc language-go">
-	// Exporting the Output Files as Zip
+	// Export in Bulk
 
 	package main
 
@@ -263,7 +270,6 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 
 		exportConfig.Set("chartConfig", "example/resources/multiple.json")
 		exportConfig.Set("exportFile", "go-export-<%= number(5) %>")
-		exportConfig.Set("exportAsZip", true)
 
 		// Instantiate ExportManager
 		exportManager := FusionExport.NewExportManager()
@@ -283,6 +289,12 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 
 ## Related Resources
 
+* [Export the Output Files as a Zip]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip '@@open-newtab')
+
+* [Export a Dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard '@@open-newtab')
+
 * [Manipulate the Output Filename]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename '@@open-newtab')
 
-* [Save Exported Files to S3]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three '@@open-newtab')
+* [Export a D3 Chart]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart '@@open-newtab')
+
+* [Export in Bulk Using Multiple JSON Files]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files '@@open-newtab')
