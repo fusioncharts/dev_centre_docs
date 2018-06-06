@@ -48,3 +48,9 @@ Once done, run the following command:
 </div>
 </div>
 </div>
+
+## Related Resources
+
+* [Override the chart config]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/override-the-chart-config '@@open-newtab')
+
+* [Export in bulk using multiple JSON]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files '@@open-newtab')

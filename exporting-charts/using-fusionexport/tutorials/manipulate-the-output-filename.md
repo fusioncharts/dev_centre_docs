@@ -86,6 +86,4 @@ To create the final output filename, the `--output-file` option should be used. 
 
 * [Save Exported Files to S3]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three '@@open-newtab')
 
-* [Export Remotely]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server '@@open-newtab')
-
 * [Export the Output Files as a Zip]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip '@@open-newtab')
