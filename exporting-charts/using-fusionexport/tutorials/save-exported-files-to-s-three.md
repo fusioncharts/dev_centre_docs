@@ -46,6 +46,6 @@ $ fe -c fusioncharts-config.json
 
 ## Related Resources
 
-* [Save Exported Files to S3]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server '@@open-newtab')
+* [Manipulate the output filename]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename '@@open-newtab')
 
 * [Export the Output Files as a Zip]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip '@@open-newtab')
