@@ -32,3 +32,5 @@ During bulk export, you can override the height and width of all the charts usin
 * [Override the Chart Config]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/override-the-chart-config '@@open-newtab')
 
 * [Add a logo and heading to the dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard '@@open-newtab')
+
+* [Change the Export Quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality '@@open-newtab')
