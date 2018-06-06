@@ -6,7 +6,7 @@ heading: Overview
 chartPresent: False
 ---
 
-__FusionExport__, allows you to export JavaScript chart as a static image, bulk export multiple charts as a zip file. The exported files can be used for sending emails, attachments and printable documents. You can convert charts into several image formats like PNG, JPEG, SVG, PDF, HTML and data formats CSV, XLS, XLSX. Also, convert dashboards into PNG, JPEG, PDF, HTML formats.
+__FusionExport__, allows you to export JavaScript chart as a static image and export multiple charts as a zip file. The exported files can be used for sending emails, attachments and printable documents. You can convert charts into several image formats like PNG, JPEG, SVG, PDF, HTML and data formats CSV, XLS, XLSX. Also, convert dashboards into PNG, JPEG, PDF, HTML formats.
 
 ## Package Structure
 
