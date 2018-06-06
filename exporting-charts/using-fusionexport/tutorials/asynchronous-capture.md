@@ -328,3 +328,7 @@ The `--async-capture-timeout` option takes input as milliseconds.
 </div>
 </div>
 </div>
+
+## Related Resources
+
+* [Inject Extra Javascript while Exporting]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting '@@open-newtab')
