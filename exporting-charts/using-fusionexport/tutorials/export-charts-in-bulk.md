@@ -314,3 +314,5 @@ To export charts in bulk, you can use the CLI or SDKs of the languages mentioned
 * [Manipulate the Output Filename]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename '@@open-newtab')
 
 * [Export a D3 Chart]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart '@@open-newtab')
+
+* [Export in Bulk Using Multiple JSON Files]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files '@@open-newtab')
