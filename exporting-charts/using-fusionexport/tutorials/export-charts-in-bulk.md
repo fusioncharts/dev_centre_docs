@@ -38,7 +38,7 @@ To export charts in bulk, you can use the CLI or SDKs of the languages mentioned
 </code></pre>
 <p><strong>To export charts in bulk, execute the command given below:</strong></p>
 <pre><code class="custom-hlc language-text">
-	$ fe - c <chart-config-file.json>	
+	$ fe - c chart-config-file.json	
 </code></pre>
 </div>
 <div class="tab nodejs-tab">

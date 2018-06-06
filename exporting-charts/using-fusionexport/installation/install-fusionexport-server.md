@@ -21,7 +21,7 @@ Windows | MAC OS | LINUX | Docker
 Unzip the package and run **fusionexport** file. In MacOS or Linux based distribution, open the terminal and run the following commands: 
 
 ```
-$ chmod +x ./fusionexport|
+$ chmod +x ./fusionexport
 $ ./fusionexport -H 0.0.0.0 -P 8080
 ```
 

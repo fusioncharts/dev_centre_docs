@@ -7,7 +7,9 @@ chartPresent: False
 ---
 
 To export an image of the dashboard, create a template file as an HTML file, containing the layout and supporting static resources __(JS, CSS, images, and fonts)__.
+
 The template must contain the placeholder elements for the charts, preferably using `<div>`. The chart config array must contain the charts with the `renderAt` attribute that match the IDs of the elements stated above. 
+
 To export a dashboard, you can use the CLI or SDKs of the languages mentioned below, using the command given below:
 
 <div class="code-wrapper">
@@ -27,16 +29,16 @@ To export a dashboard, you can use the CLI or SDKs of the languages mentioned be
 <div class="mt-20 pb-10"><strong>The following code goes into the template.html file:</strong></div>
 <pre><code class="custom-hlc language-html">
 	<!DOCTYPE html>
-	<html>
-	  <head>
-	    <meta charset="utf-8">
-	    <title>Chart</title>
-	  </head>
-	  <body>
-	    <div id="pie_chart"></div>
-	    <div id="column_chart"></div>
-	  </body>
-	</html>
+	&lt;html&gt;
+	  &lt;head&gt;
+	    &lt;meta charset="utf-8"&gt;
+	    &lt;title&gt;Chart&lt;/title&gt;
+	  &lt;/head&gt;
+	  &lt;body&gt;
+	    &lt;div id="pie_chart"&gt;&lt;/div&gt;
+	    &lt;div id="column_chart"&gt;&lt;/div&gt;
+	  &lt;/body&gt;
+	&lt;/html&gt;
 </code></pre>
 <div class="mt-30 pb-10"><strong>The multiple_charts_config.json contains the configurations of the charts to be exported. The following code goes into the multiple_charts_config.json file: </strong></div>
 <pre><code class="custom-hlc language-json">

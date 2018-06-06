@@ -6,7 +6,7 @@ heading: Export the output files as a zip
 chartPresent: False
 ---
 
-For exporting the output files as a zip, set `--exportAsZip` option to __true__.
+For exporting the output files as a zip, set `--export-as-zip` option to __true__.
 To do this, you can use the CLI or SDKs of the languages mentioned below, using the command given below:
 
 <div class="code-wrapper">
@@ -24,7 +24,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
     <div class="tab cli-tab active">
     <div>If you want to export the files as a zip, set the <strong>--output-as-zip</strong> option to true as shown in the command below:</div>
 <pre><code class="custom-hlc language-bash">
-	$ fe -c multiple_charts_config.json -z false
+	$ fe -c multiple_charts_config.json -z true
 </code></pre>
 </div>
     
