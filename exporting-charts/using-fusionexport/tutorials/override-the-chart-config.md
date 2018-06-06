@@ -54,3 +54,5 @@ Once done, run the following command:
 * [Change the Export Type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type '@@open-newtab')
 
 * [Add a logo and Heading to the Dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard '@@open-newtab')
+
+* [Change the Export Quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality '@@open-newtab')
