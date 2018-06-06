@@ -18,7 +18,6 @@ chartPresent: False
 
 * Progress bar support.
 
-
 ### Improvements
 
 * SDKs and CLI can communicate with the same server.
