@@ -8,18 +8,6 @@ chartPresent: False
 
 How about, instead of exporting a single chart at a time, you could export multiple charts at one go?
 Exporting charts in bulk is now easier than ever. In a JSON file, save the configurations of all the charts to be exported in an array. That means, each element in the array should hold one single chart's configuration.
-The file structure of such a JSON file will look as shown below:
-
-```
-[
-	{
-		// first chart config
-	},
-	{
-		// second chart config
-	}
-]
-```
 
 To export charts in bulk, you can use the CLI or SDKs of the languages mentioned below, using the command given below:
 
@@ -36,27 +24,21 @@ To export charts in bulk, you can use the CLI or SDKs of the languages mentioned
 
 <div class="tab-content extra-tabs">
 <div class="tab cli-tab active">
-<div>Multiple JS or JSON files can be supplied to the <strong>--chart-config</strong> option, for a bulk export. You can give multiple files or directories or a combination of both in a space separated format or even a glob pattern.</div>
-<div>The CLI will find the common path for all the files, use that as a reference, and create a similar folder structure that is easily recognizable.</div>
-<div>In case of files containing more than one chart config, it will create a folder named after that filename and put all the exported images in it.</div>
-<p><strong>To do a bulk export, run the command given below:</strong></p>
+<div>In a JSON file, save the configurations of all the charts to be exported in an array. That means, each element  in the array should hold one single chart configuration.</div>
+<p><strong>The file structure of such a JSON file will look as shown below:</strong></p>
 <pre><code class="custom-hlc language-bash">
-	$ fe -c 'uat/resources/charts/file_1.json uat/resources/charts/file_2.json uat/resources/charts/sub_1/* uat/resources/charts/sub_2/*'}
+	[
+	    {
+	        // first chart config
+	    },
+	    {
+	        // second chart config
+	    }
+	]
 </code></pre>
-<p><strong>The above command, when executed, will create a folder structure as follows:</strong></p>
+<p><strong>To export charts in bulk, execute the command given below:</strong></p>
 <pre><code class="custom-hlc language-text">
-	fusioncharts_export
-	  sub_1
-	    mul_1
-	      export--4.png
-	      export--5.png
-	    export--3.png
-	  sub_2
-	    mul_1
-	      export--6.png
-	      export--7.png
-	  export--1.png
-	  export--2.png		
+	$ fe - c <chart-config-file.json>	
 </code></pre>
 </div>
 <div class="tab nodejs-tab">

@@ -22,7 +22,7 @@ Unzip the package and run **fusionexport** file. In MacOS or Linux based distrib
 
 ```
 $ chmod +x ./fusionexport|
-$ ./fusionexport -H 0.0.0.0 -P 8080|
+$ ./fusionexport -H 0.0.0.0 -P 8080
 ```
 
 
@@ -35,19 +35,19 @@ If you have a Windows machine then follow the given instructions for Powershell 
 #### PowerShell
 
 ```
-$ .\fusionexport.bat -H 0.0.0.0 -P 8080|
+$ .\fusionexport.bat -H 0.0.0.0 -P 8080
 ```
 
 #### Command Prompt
 
 ```
-$ start fusionexport.bat -H 0.0.0.0 -P 8080|
+$ start fusionexport.bat -H 0.0.0.0 -P 8080
 ```
 
 The above command starts the FusionExport server on port number 8080. For more help just pass -h option:
 
 ```
-$ ./fusionexport -h|
+$ ./fusionexport -h
 ```
 
 ## Docker
@@ -55,7 +55,7 @@ $ ./fusionexport -h|
 Run the following command in your favorite terminal to start the server in docker container:
 
 ```
-$ docker-compose up|
+$ docker-compose up
 ```
 
 The above command will complete all the dependencies missing for FusionExport Server. It will also include MySQL and RabbitMQ.
