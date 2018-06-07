@@ -36,7 +36,7 @@ fusioncharts_export
 	export--2.png
 ```
 
-## Related Resouces
+## Related Resources
 
 * [Export Charts in Bulk]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk '@@open-newtab')
 
