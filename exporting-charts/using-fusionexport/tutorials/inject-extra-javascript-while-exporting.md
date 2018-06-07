@@ -281,7 +281,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </div>
 </div>
 
-## Related Charts
+## Related Resources
 
 * [Asynchronous Capture]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/asynchronous-capture '@@open-newtab')
 
