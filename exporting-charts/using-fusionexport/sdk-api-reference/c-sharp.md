@@ -2,39 +2,48 @@
 permalink: exporting-charts/using-fusionexport/sdk-api-reference/c-sharp.html
 title: C# | FusionCharts
 description: Export from your desktop and web server using C# SDKs. A complete list of API reference.
-heading: Class ExportManager
+heading: C Sharp
 chartPresent: False
 ---
 
-**ExportManager** acts as a client, sending the exports chart configuration to the **ExportServer** and delivering the exported charts through the attached listeners.
+## Class ExportManager
+
+**ExportManager** acts as a client, sending the exports chart configuration to the **FusionExport Service** and delivering the exported charts through the attached listeners.
 
 ### Constructors
 
 **ExportManager()**
+
 Constructs an ExportManager with the default export server IP address and port.
 
 **ExportManager(string host, int port)** 
+
 Constructs an ExportManager with the specified export server IP address and port.
-
-**Properties**
-__string Host__
-Sets and gets the export server’s IP address.
-
-__int Port__
-Sets and gets the export server’s port.
 
 ### Methods
 
-**Exporter Export(ExportConfig config)**
+**static void SaveExportedFiles(string dirPath, ExportCompleteData exportedFiles)**
+
+Saves the exported images in the specified folder.
+
+**static string[] GetExportedFileNames(ExportCompleteData exportedFiles)**
+
+Returns the exported file names in a string Array.
+
+**Exporter Export(ExportConfig exportConfig)**
+
 Exports charts with the specified configurations and returns an Exporter instance.
 
 **Exporter Export(ExportConfig config, ExportDoneListener done)**
+
 Exports charts with the specified configurations and **ExportDone** listener, returning an Exporter instance.
 
 **Exporter Export(ExportConfig config, ExportStateChangedListener stateChanged)**
+
 Exports charts with the specified configurations and **ExportStateChanged** listener, returning an Exporter instance.
 
 **Exporter Export(ExportConfig config, ExportDoneListener done, ExportStateChangedListener stateChanged)**
+
 Exports charts with the specified configurations and **ExportStateChanged** listener, returning an Exporter instance.
 
 ## Delegate ExportDoneListener
@@ -51,49 +60,115 @@ Exporter is responsible for any individual export request made by the ExportMana
 ### Constructors
 
 **Exporter(ExportConfig config)**
+
 Constructs an Exporter with the specified export configurations.
 
 **Exporter(ExportConfig config, ExportDoneListener done)**
+
 Constructs an Exporter with the specified export configurations and ExportDone listener.
 
 **Exporter(ExportConfig config, ExportStateChangedListener stateChanged)**
+
 Constructs an Exporter with the specified export configurations and ExportStateChanged listener.
 
 **Exporter(ExportConfig config, ExportDoneListener done, ExportStateChangedListener stateChanged)**
+
 Constructs an Exporter with the specified export configurations, ExportDone listener and ExportStateChanged listener.
 
 ### Properties
 
 **ExportConfig ExportConfig**
+
 Returns the associated export configurations.
 
 **ExportDoneListener ExportDone**
+
 Returns the attached **ExportDone** listener.
 
 **ExportStateChangedListener ExportStateChanged**
+
 Returns the attached **ExportStateChanged** listener.
 
 **string ExportServerHost**
+
 Returns the export server host.
 
 **int ExportServerPort**
+
 Returns the export server port.
 
 ### Methods
 
 **void SetExportConnectionConfig(string exportServerHost, int exportServerPort)**
+
 Sets the export server’s IP address and port.
 
 **void Start()**
+
 Starts the chart exporting process according to the export configurations.
 
 **void Cancel()**
+
 Cancels the chart exporting request.
 
 ### Class ExportConfig
 **ExportConfig** holds the configurations for chart exporting like chart data, template file, dashboard config, and so on. **ExportManager** sends these configurations to the **ExportServer** for exporting charts.
 
-The supported export configurations are as follows:
+### Constructors
+
+**ExportConfig()**
+
+Constructs an ExportConfig object with empty export configurations.
+
+### Properties
+
+**int Count**
+
+Returns the total number of export configurations added.
+
+### Methods
+
+**void Set(string configName, string configValue)**
+
+Sets a single export configuration with the specified configuration value.
+
+**string Get(string configName)**
+
+Returns the configuration value for the specified configuration name.
+
+**bool Remove(string configName)**
+
+Removes the specified configuration and returns true if configName is found.
+
+**bool Has(string configName)**
+
+Checks if the specified configuration is present or not, returning true if the configName is found.
+
+**void Clear()**
+
+Clears all export configurations already added.
+
+**string[] ConfigNames()**
+
+Returns all configuration names in an array.
+
+**string[] ConfigValues()**
+
+Returns all configuration values in an array.
+
+**ExportConfig Clone()**
+
+Returns clone of the existing ExportConfig; that is, this new instance of ExportConfig has the same contents as the current one.
+
+**string GetFormattedConfigs()**
+
+Returns all export configurations in the JSON format.
+
+## Class ExportException
+
+**ExportException** is a subclass of the Exception class. It is thrown if an  error is encountered during the export process.
+
+## Supported Export Configurations
 
 * `chartConfig` - Sets the configuration of a single chart or multiple charts in an array.
 
@@ -117,49 +192,12 @@ The supported export configurations are as follows:
 
 * `type` - Sets the format of the output file.
 
-* `exportFile` - Sets the output filename template, along with the path.
+* `quality` - Sets the quality of the output file. Provide either good, better or best.
+
+* `outputFile` - Sets the output filename template, along with the path.
+
+* `outputFileDefinition` - JS file defining functions or array to resolve output file names.
 
 * `exportAsZip` - Sets if the chart(s) will be exported as a zip file or as individual file(s).
 
-### Constructors
-
-**ExportConfig()**
-Constructs an ExportConfig object with empty export configurations.
-
-### Properties
-
-**int Count**
-Returns the total number of export configurations added.
-
-### Methods
-
-**void Set(string configName, string configValue)**
-Sets a single export configuration with the specified configuration value.
-
-**string Get(string configName)**
-Returns the configuration value for the specified configuration name.
-
-**bool Remove(string configName)**
-Removes the specified configuration and returns true if configName is found.
-
-**bool Has(string configName)**
-Checks if the specified configuration is present or not, returning true if the configName is found.
-
-**void Clear()**
-Clears all export configurations already added.
-
-**string[] ConfigNames()**
-Returns all configuration names in an array.
-
-**string[] ConfigValues()**
-Returns all configuration values in an array.
-
-**ExportConfig Clone()**
-Returns clone of the existing ExportConfig; that is, this new instance of ExportConfig has the same contents as the current one.
-
-**string GetFormattedConfigs()**
-Returns all export configurations in the JSON format.
-
-## Class ExportException
-
-**ExportException** is a subclass of the Exception class. It is thrown if an  error is encountered during the export process.
+* `resourceFilePath` - JSON file having the dependencies of the template when templateFilePath is provided.

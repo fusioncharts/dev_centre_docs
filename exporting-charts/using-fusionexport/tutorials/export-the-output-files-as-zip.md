@@ -6,7 +6,7 @@ heading: Export the output files as a zip
 chartPresent: False
 ---
 
-For exporting the output files as a zip, set `--exportAsZip` option to __true__.
+For exporting the output files as a zip, set `--export-as-zip` option to __true__.
 To do this, you can use the CLI or SDKs of the languages mentioned below, using the command given below:
 
 <div class="code-wrapper">
@@ -24,96 +24,87 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
     <div class="tab cli-tab active">
     <div>If you want to export the files as a zip, set the <strong>--output-as-zip</strong> option to true as shown in the command below:</div>
 <pre><code class="custom-hlc language-bash">
-	$ fe -c multiple_charts_config.json -z false
+	$ fe -c multiple_charts_config.json -z true
 </code></pre>
 </div>
     
 <div class="tab nodejs-tab">
 <pre><code class="custom-hlc language-javascript">
-	const fs = require('fs');
+	// Exporting the Output Files as Zip
 	const path = require('path');
 
-	// require fusionexport
-	const FusionExport = require('../');
+	// Require FusionExport
+	const {
+	    ExportManager,
+	    ExportConfig
+	} = require('../');
 
-	const chartConfig = JSON.parse(fs.readFileSync(path.resolve(__dirname, 'bulk.json')).toString());
-	const host = '127.0.0.1';
-	const port = 1337;
+	// Instantiate ExportManager
+	const exportManager = new ExportManager();
 
-	// instantiate FusionExport
-	const fusion = new FusionExport({ host, port });
+	// Instantiate ExportConfig and add the required configurations
+	const exportConfig = new ExportConfig();
 
-	const exportConfig = {
-	  chartConfig,
-	  exportAsZip: 'true',
-	};
+	exportConfig.set('chartConfig', path.join(__dirname, 'resources', 'multiple.json'));
+	exportConfig.set('outputFile', 'export-<%= number(5) %>');
+	exportConfig.set('exportAsZip', true);
 
 	// provide the export config
-	fusion.export(exportConfig);
+	exportManager.export(exportConfig);
 
-	fusion.on('exportDone', (files) => {
-	  // files can be read from files array
-	  // e.g. [{tmpPath:"", realName: ""}]
+	// Called when export is done
+	exportManager.on('exportDone', (outputFileBag) => {
+	    outputFileBag.forEach((op) => {
+	        console.log(`DONE: ${op.realName}`);
+	    });
+
+	    ExportManager.saveExportedFiles(outputFileBag);
 	});
 
-	fusion.on('exportStateChange', (state) => {
-	  // called for export progress state change
+	// Called on each export state change
+	exportManager.on('exportStateChange', (state) => {
+	    console.log(`[${state.reporter}] ${state.customMsg}`);
 	});
 
-	fusion.on('error', (err) => {
-	  // catch error here
+	// Called on erroe
+	exportManager.on('error', (err) => {
+	    console.error(err);
 	});
 </code></pre>
 </div>
 <div class="tab java-tab">
 <pre><code class="custom-hlc language-java">
-	import java.io.ByteArrayOutputStream;
-	import java.io.File;
-	import java.io.FileInputStream;
-	import java.io.InputStream;
 	import com.fusioncharts.fusionexport.client.*; // import sdk
 
-	public class ExportChart implements ExportDoneListener, ExportStateChangedListener {
+	public class ExportChart {
+	    public static void main(String[] args) throws Exception {
 
-	    public static void main(String[] args) {
+	        String configPath = "fullPath/multiple.json";
 
 	        // Instantiate the ExportConfig class and add the required configurations
 	        ExportConfig config = new ExportConfig();
-	        config.set("chartConfig", readFile("fullpath/of/bulk.json"));
+	        config.set("chartConfig", configPath);
 	        config.set("exportAsZip", "true");
 
 	        // Instantiate the ExportManager class
-	        ExportManager em = new ExportManager();
+	        ExportManager manager = new ExportManager(config);
 	        // Call the export() method with the export config and the respective callbacks
-	        em.export(config, new ExportChart(), new ExportChart());
-	    }
-
-	    @Override // Called when export is done
-	    public void exportDone(String result, ExportException error) {
-	        if (error != null) {
-	            System.out.println(error.getMessage());
-	        } else {
-	            System.out.println("DONE: " + result);
-	        }
-	    }
-
-	    @Override // Called on each export state change
-	    public void exportStateChanged(String state) {
-	        System.out.println("STATE: " + state);
-	    }
-
-	    private static String readFile(String file) {
-	        String fileContent = "";
-	        try {
-	            File f = new File(file);
-	            FileInputStream inp = new FileInputStream(f);
-	            byte[] bf = new byte[(int) f.length()];
-	            inp.read(bf);
-	            fileContent = new String(bf, "UTF-8");
-	        } catch (Exception e) {
-	            e.printStackTrace();
-	        }
-	        return fileContent;
+	        manager.export(new ExportDoneListener() {
+	                @Override
+	                public void exportDone(ExportDoneData result, ExportException error) {
+	                    if (error != null) {
+	                        System.out.println(error.getMessage());
+	                    } else {
+	                        ExportManager.saveExportedFiles("fullPath", result);
+	                    }
+	                }
+	            },
+	            new ExportStateChangedListener() {
+	                @Override
+	                public void exportStateChanged(ExportState state) {
+	                    System.out.println("STATE: " + state.reporter);
+	                }
+	            });
 	    }
 	}
 </code></pre>
@@ -122,41 +113,44 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 <pre><code class="custom-hlc language-cs">
 	using System;
 	using System.IO;
+	using System.Linq;
 	using FusionCharts.FusionExport.Client; // Import sdk
 
 	namespace FusionExportTest
 	{
-	    class Program
+	    public static class OutputAsZip
 	    {
-	        static void Main(string[] args)
+	        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT)
 	        {
 	            // Instantiate the ExportConfig class and add the required configurations
 	            ExportConfig exportConfig = new ExportConfig();
-	            exportConfig.Set("chartConfig", File.ReadAllText("fullpath/of/bulk.json"));
+	            exportConfig.Set("chartConfig", File.ReadAllText("./resources/bulk.json"));
 	            exportConfig.Set("exportAsZip", "true");
 
 	            // Instantiate the ExportManager class
-	            ExportManager em = new ExportManager();
+	            ExportManager em = new ExportManager(host: host, port: port);
 	            // Call the Export() method with the export config and the respective callbacks
 	            em.Export(exportConfig, OnExportDone, OnExportStateChanged);
 	        }
-	        
+
 	        // Called when export is done
-	        static void OnExportDone(string result, ExportException error)
+	        static void OnExportDone(ExportEvent ev, ExportException error)
 	        {
-	            if(error != null)
+	            if (error != null)
 	            {
 	                Console.WriteLine("Error: " + error);
-	            } else
-	            {   
-	                Console.WriteLine("Done: " + result); // export result
+	            }
+	            else
+	            {
+	                var fileNames = ExportManager.GetExportedFileNames(ev.exportedFiles);
+	                Console.WriteLine("Done: " + String.Join(", ", fileNames)); // export result
 	            }
 	        }
-	        
+
 	        // Called on each export state change
-	        static void OnExportStateChanged(string state)
+	        static void OnExportStateChanged(ExportEvent ev)
 	        {
-	            Console.WriteLine("State: " + state);
+	            Console.WriteLine("State: " + ev.state.customMsg);
 	        }
 	    }
 	}
@@ -165,38 +159,33 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 <div class="tab php-tab">
 <pre><code class="custom-hlc language-php">
 	<?php
-
 	// Exporting the Output Files as Zip
-
 	require __DIR__ . '/../vendor/autoload.php';
-
 	// Use the sdk
 	use FusionExport\ExportManager;
 	use FusionExport\ExportConfig;
-
 	// Instantiate the ExportConfig class and add the required configurations
 	$exportConfig = new ExportConfig();
-	$exportConfig->set('chartConfig', file_get_contents('resources/multiple.json'));
-	$exportConfig->set('exportFile', 'php-export-<%= number(5) %>');
+	$exportConfig->set('chartConfig', realpath('resources/multiple.json'));
+	$exportConfig->set('outputFile', 'php-export-<%= number(5) %>');
 	$exportConfig->set('exportAsZip', true);
-
 	// Called on each export state change
-	$onStateChange = function ($state) {
-	  echo('STATE: [' . $state->reporter . '] ' . $state->customMsg . "\n");
+	$onStateChange = function ($event) {
+	    $state = $event->state;
+	    echo('STATE: [' . $state->reporter . '] ' . $state->customMsg . "\n");
 	};
-
 	// Called when export is done
-	$onDone = function ($export, $e) {
+	$onDone = function ($event, $e) {
+	    $export = $event->export;
 	    if ($e) {
 	        echo('ERROR: ' . $e->getMessage());
 	    } else {
 	        foreach ($export as $file) {
-	            echo('DONE: ' . $file->realName . "\n");
-	            copy($file->tmpPath, $file->realName);
+	            echo('DONE: ' . $file->realName. "\n");
 	        }
+	        ExportManager::saveExportedFiles($export);
 	    }
 	};
-
 	// Instantiate the ExportManager class
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
@@ -209,7 +198,6 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 
 	from fusionexport import ExportManager, ExportConfig  # Import sdk
 
-
 	def read_file(file_path):
 	    try:
 	        with open(file_path, "r") as f:
@@ -219,16 +207,16 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 
 
 	# Called when export is done
-	def on_export_done(result, error):
+	def on_export_done(event, error):
 	    if error:
 	        print(error)
 	    else:
-	        print(result)
+	        ExportManager.save_exported_files("exported_images", event["result"])
 
 
 	# Called on each export state change
-	def on_export_state_changed(state):
-	    print(state)
+	def on_export_state_changed(event):
+	    print(event["state"])
 
 
 	# Instantiate the ExportConfig class and add the required configurations
@@ -236,8 +224,12 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	export_config["chartConfig"] = read_file("bulk.json")
 	export_config["exportAsZip"] = True
 
+	# Provide port and host of FusionExport Service
+	export_server_host = "127.0.0.1"
+	export_server_port = 1337
+
 	# Instantiate the ExportManager class
-	em = ExportManager()
+	em = ExportManager(export_server_host, export_server_port)
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
 </code></pre>
@@ -249,54 +241,48 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	package main
 
 	import (
-	    "io/ioutil"
-	    "../FusionExport" // import the sdk
-	    "fmt"
+		"fmt"
+
+		"github.com/fusioncharts/fusionexport-go-client"
 	)
 
-	func saveFiles(fileBag []FusionExport.OutFileBag) {
-	    for _, file := range fileBag {
-	        fmt.Println(file.RealName)
-	        fileData, err := ioutil.ReadFile(file.TmpPath)
-	        check(err)
-	        err = ioutil.WriteFile(file.RealName, fileData, 0644)
-	        check(err)
-	    }
-	}
-
 	// Called when export is done
-	func onDone (outFileBag []FusionExport.OutFileBag, err error) {
-	    check(err)
-	    saveFiles(outFileBag)
+	func onDone(outFileBag []FusionExport.OutFileBag, err error) {
+		check(err)
+		FusionExport.SaveExportedFiles(outFileBag)
 	}
 
 	// Called on each export state change
-	func onStateChange (event FusionExport.ExportEvent) {
-	    fmt.Println("[" + event.Reporter + "] " + event.CustomMsg)
+	func onStateChange(event FusionExport.ExportEvent) {
+		fmt.Println("[" + event.Reporter + "] " + event.CustomMsg)
 	}
 
 	func main() {
-	    // Instantiate ExportConfig and add the required configurations
-	    exportConfig := FusionExport.NewExportConfig()
+		// Instantiate ExportConfig and add the required configurations
+		exportConfig := FusionExport.NewExportConfig()
 
-	    chartConfig, err := ioutil.ReadFile("resources/multiple.json")
-	    check(err)
-	    exportConfig.Set("chartConfig", string(chartConfig))
-	    exportConfig.Set("exportFile", "go-export-<%= number(5) %>")
-	    exportConfig.Set("exportAsZip", "true")
+		exportConfig.Set("chartConfig", "example/resources/multiple.json")
+		exportConfig.Set("exportFile", "go-export-<%= number(5) %>")
+		exportConfig.Set("exportAsZip", true)
 
-	    // Instantiate ExportManager
-	    exportManager := FusionExport.NewExportManager()
-	    // Call the Export() method with the export config and the respective callbacks
-	    exportManager.Export(exportConfig, onDone, onStateChange)
+		// Instantiate ExportManager
+		exportManager := FusionExport.NewExportManager()
+		// Call the Export() method with the export config and the respective callbacks
+		exportManager.Export(exportConfig, onDone, onStateChange)
 	}
 
 	func check(e error) {
-	    if e != nil {
-	        panic(e)
-	    }
+		if e != nil {
+			panic(e)
+		}
 	}
 </code></pre>
 </div>
 </div>
 </div>
+
+## Related Resources
+
+* [Manipulate the Output Filename]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename '@@open-newtab')
+
+* [Save Exported Files to S3]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three '@@open-newtab')

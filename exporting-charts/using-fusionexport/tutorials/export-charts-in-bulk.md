@@ -1,13 +1,15 @@
 ---
-permalink: exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting.html
-title: Inject extra JavaScript while exporting | FusionCharts
-description: This article talks about the SDKs used for injecting additional JavaScript whie exporting charts.
-heading: Inject extra JavaScript while exporting
+permalink: exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk.html
+title: Export charts in bulk | FusionCharts
+description: This article talks about the SDKs used for exporting charts in bulk.
+heading: Export charts in bulk
 chartPresent: False
 ---
 
-You can add a custom JavaScript file while exporting using the `--callbackFilePath` option. You can also use this option if you want to change the background style of the dashboard or resize the chart while exporting.
-To do this, you can use the CLI or SDKs of the languages mentioned below, using the commands given below:
+How about, instead of exporting a single chart at a time, you could export multiple charts at one go?
+Exporting charts in bulk is now easier than ever. In a JSON file, save the configurations of all the charts to be exported in an array. That means, each element in the array should hold one single chart's configuration.
+
+To export charts in bulk, you can use the CLI or SDKs of the languages mentioned below, using the command given below:
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
@@ -22,26 +24,33 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 
 <div class="tab-content extra-tabs">
 <div class="tab cli-tab active">
-<p>You can add a custom javascript file while exporting using the --callbacks, or -b, option. Here’s an example of a custom JavaScript that can be included while the export is happening.</p>
-<div class="mt-20 pb-10"><strong>The content of the custom.js file is as below:</strong></div>
-<pre><code class="custom-hlc language-javascript">
-	document.body.style.transform = "rotate(-10deg)";
-</code></pre>
-
-<div class="mt-20 pb-10"><strong>Once done, run the following command:</strong></div>
+<div>In a JSON file, save the configurations of all the charts to be exported in an array. That means, each element  in the array should hold one single chart configuration.</div>
+<p><strong>The file structure of such a JSON file will look as shown below:</strong></p>
 <pre><code class="custom-hlc language-bash">
-	$ fe -c chart.json -b custom.js
+	[
+	    {
+	        // first chart config
+	    },
+	    {
+	        // second chart config
+	    }
+	]
+</code></pre>
+<p><strong>To export charts in bulk, execute the command given below:</strong></p>
+<pre><code class="custom-hlc language-text">
+	$ fe - c chart-config-file.json	
 </code></pre>
 </div>
-    
 <div class="tab nodejs-tab">
 <pre><code class="custom-hlc language-javascript">
-	// Injecting custom JavaScript while exporting
-
+	// Export in Bulk
 	const path = require('path');
 
 	// Require FusionExport
-	const { ExportManager, ExportConfig } = require('../');
+	const {
+	    ExportManager,
+	    ExportConfig
+	} = require('../');
 
 	// Instantiate ExportManager
 	const exportManager = new ExportManager();
@@ -50,29 +59,28 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	const exportConfig = new ExportConfig();
 
 	exportConfig.set('chartConfig', path.join(__dirname, 'resources', 'multiple.json'));
-	exportConfig.set('templateFilePath', path.join(__dirname, 'resources', 'template.html'));
-	exportConfig.set('callbackFilePath', path.join(__dirname, 'resources', 'callback.js'));
+	exportConfig.set('outputFile', 'export-<%= number(5) %>');
 
 	// provide the export config
 	exportManager.export(exportConfig);
 
 	// Called when export is done
 	exportManager.on('exportDone', (outputFileBag) => {
-	  outputFileBag.forEach((op) => {
-	    console.log(`DONE: ${op.realName}`);
-	  });
+	    outputFileBag.forEach((op) => {
+	        console.log(`DONE: ${op.realName}`);
+	    });
 
-	  ExportManager.saveExportedFiles(outputFileBag);
+	    ExportManager.saveExportedFiles(outputFileBag);
 	});
 
 	// Called on each export state change
 	exportManager.on('exportStateChange', (state) => {
-	  console.log(`[${state.reporter}] ${state.customMsg}`);
+	    console.log(`[${state.reporter}] ${state.customMsg}`);
 	});
 
 	// Called on erroe
 	exportManager.on('error', (err) => {
-	  console.error(err);
+	    console.error(err);
 	});
 </code></pre>
 </div>
@@ -83,14 +91,11 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	public class ExportChart {
 	    public static void main(String[] args) throws Exception {
 
-	        String configPath = "fullPath/multiple.json";
-	        String templatePath = "fullPath/template.html";
+	        String chartConfig = "fullpath/resources/static/bulk.json";
 
 	        // Instantiate the ExportConfig class and add the required configurations
 	        ExportConfig config = new ExportConfig();
-	        config.set("chartConfig", configPath);
-	        config.set("templateFilePath", templatePath);
-	        config.set("callbackFilePath", "fullPath/callback.js");
+	        config.set("chartConfig", chartConfig);
 
 	        // Instantiate the ExportManager class
 	        ExportManager manager = new ExportManager(config);
@@ -101,7 +106,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	                    if (error != null) {
 	                        System.out.println(error.getMessage());
 	                    } else {
-	                        ExportManager.saveExportedFiles("fullPath", result);
+	                        ExportManager.saveExportedFiles("fullpath", result);
 	                    }
 	                }
 	            },
@@ -122,33 +127,38 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	using System.Linq;
 	using FusionCharts.FusionExport.Client; // Import sdk
 
-	namespace FusionExportTest {
-	    public static class InjectJsCallback {
-	        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT) {
+	namespace FusionExportTest
+	{
+	    public static class BulkExport
+	    {
+	        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT)
+	        {
 	            // Instantiate the ExportConfig class and add the required configurations
 	            ExportConfig exportConfig = new ExportConfig();
-	            exportConfig.Set("chartConfig", File.ReadAllText("./resources/dashboard_charts.json"));
-	            exportConfig.Set("templateFilePath", "./resources/template.html");
-	            exportConfig.Set("callbackFilePath", "./resources/callback.js");
+	            exportConfig.Set("chartConfig", File.ReadAllText("./resources/bulk.json"));
 
 	            // Instantiate the ExportManager class
 	            ExportManager em = new ExportManager(host: host, port: port);
 	            // Call the Export() method with the export config and the respective callbacks
 	            em.Export(exportConfig, OnExportDone, OnExportStateChanged);
 	        }
-
+	        
 	        // Called when export is done
-	        static void OnExportDone(ExportEvent ev, ExportException error) {
-	            if (error != null) {
+	        static void OnExportDone(ExportEvent ev, ExportException error)
+	        {
+	            if(error != null)
+	            {
 	                Console.WriteLine("Error: " + error);
-	            } else {
+	            } else
+	            {
 	                var fileNames = ExportManager.GetExportedFileNames(ev.exportedFiles);
 	                Console.WriteLine("Done: " + String.Join(", ", fileNames)); // export result
 	            }
 	        }
-
+	        
 	        // Called on each export state change
-	        static void OnExportStateChanged(ExportEvent ev) {
+	        static void OnExportStateChanged(ExportEvent ev)
+	        {
 	            Console.WriteLine("State: " + ev.state.customMsg);
 	        }
 	    }
@@ -158,7 +168,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 <div class="tab php-tab">
 <pre><code class="custom-hlc language-php">
 	<?php
-	// Injecting custom JavaScript while exporting
+	// Export in Bulk
 	require __DIR__ . '/../vendor/autoload.php';
 	// Use the sdk
 	use FusionExport\ExportManager;
@@ -166,8 +176,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	// Instantiate the ExportConfig class and add the required configurations
 	$exportConfig = new ExportConfig();
 	$exportConfig->set('chartConfig', realpath('resources/multiple.json'));
-	$exportConfig->set('templateFilePath', realpath('resources/template.html'));
-	$exportConfig->set('callbackFilePath', realpath('resources/callback.js'));
+	$exportConfig->set('outputFile', 'php-export-<%= number(5) %>');
 	// Called on each export state change
 	$onStateChange = function ($event) {
 	    $state = $event->state;
@@ -220,9 +229,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 
 	# Instantiate the ExportConfig class and add the required configurations
 	export_config = ExportConfig()
-	export_config["chartConfig"] = read_file("dashboard_charts.json")
-	export_config["templateFilePath"] = "template.html"
-	export_config["callbackFilePath"] = "callback.js"
+	export_config["chartConfig"] = read_file("bulk.json")
 
 	# Provide port and host of FusionExport Service
 	export_server_host = "127.0.0.1"
@@ -235,8 +242,8 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 </code></pre>
 </div>
 <div class="tab golang-tab">
-<pre><code class="custom-hlc language-javascript">
-	// Injecting custom JavaScript while exporting
+<pre><code class="custom-hlc language-go">
+	// Export in Bulk
 
 	package main
 
@@ -262,8 +269,7 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 		exportConfig := FusionExport.NewExportConfig()
 
 		exportConfig.Set("chartConfig", "example/resources/multiple.json")
-		exportConfig.Set("templateFilePath", "example/resources/template.html")
-		exportConfig.Set("callbackFilePath", "example/resources/callback.js")
+		exportConfig.Set("exportFile", "go-export-<%= number(5) %>")
 
 		// Instantiate ExportManager
 		exportManager := FusionExport.NewExportManager()
@@ -283,6 +289,12 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 
 ## Related Resources
 
-* [Asynchronous Capture]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/asynchronous-capture '@@open-newtab')
+* [Export the Output Files as a Zip]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip '@@open-newtab')
 
-* [Enable Logging]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/enabling-logging '@@open-newtab')
+* [Export a Dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard '@@open-newtab')
+
+* [Manipulate the Output Filename]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename '@@open-newtab')
+
+* [Export a D3 Chart]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-d3-chart '@@open-newtab')
+
+* [Export in Bulk Using Multiple JSON Files]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files '@@open-newtab')

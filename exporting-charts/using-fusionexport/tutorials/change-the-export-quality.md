@@ -1,13 +1,16 @@
 ---
-permalink: exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting.html
-title: Inject extra JavaScript while exporting | FusionCharts
-description: This article talks about the SDKs used for injecting additional JavaScript whie exporting charts.
-heading: Inject extra JavaScript while exporting
+permalink: exporting-charts/using-fusionexport/tutorials/change-the-export-quality.html
+title: Change the export quality | FusionCharts
+description: This article talks about the three qualitites in which charts can be exported
+heading: Change the export quality
 chartPresent: False
 ---
 
-You can add a custom JavaScript file while exporting using the `--callbackFilePath` option. You can also use this option if you want to change the background style of the dashboard or resize the chart while exporting.
-To do this, you can use the CLI or SDKs of the languages mentioned below, using the commands given below:
+FusionExport lets you export charts in three different qualities. The three qualities are differentiated as good, better or best. By default FusionExport exports chart in `better` quality.
+
+Use the `-q` or `--quality` option to customize the quality of the exported charts.
+
+To change the export qulaity, you can use the CLI or SDKs of the languages mentioned below, using the command given below:
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
@@ -20,28 +23,23 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
     <li><a data-toggle="golang">Golang</a></li>
 </ul>
 
-<div class="tab-content extra-tabs">
+<div class="tab-content">
 <div class="tab cli-tab active">
-<p>You can add a custom javascript file while exporting using the --callbacks, or -b, option. Here’s an example of a custom JavaScript that can be included while the export is happening.</p>
-<div class="mt-20 pb-10"><strong>The content of the custom.js file is as below:</strong></div>
-<pre><code class="custom-hlc language-javascript">
-	document.body.style.transform = "rotate(-10deg)";
-</code></pre>
-
-<div class="mt-20 pb-10"><strong>Once done, run the following command:</strong></div>
 <pre><code class="custom-hlc language-bash">
-	$ fe -c chart.json -b custom.js
+	$ fe -c column_chart_config.json -q best
 </code></pre>
 </div>
     
 <div class="tab nodejs-tab">
 <pre><code class="custom-hlc language-javascript">
-	// Injecting custom JavaScript while exporting
-
+	// Exporting a chart with best quality
 	const path = require('path');
 
 	// Require FusionExport
-	const { ExportManager, ExportConfig } = require('../');
+	const {
+	    ExportManager,
+	    ExportConfig
+	} = require('../');
 
 	// Instantiate ExportManager
 	const exportManager = new ExportManager();
@@ -49,68 +47,63 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	// Instantiate ExportConfig and add the required configurations
 	const exportConfig = new ExportConfig();
 
-	exportConfig.set('chartConfig', path.join(__dirname, 'resources', 'multiple.json'));
-	exportConfig.set('templateFilePath', path.join(__dirname, 'resources', 'template.html'));
-	exportConfig.set('callbackFilePath', path.join(__dirname, 'resources', 'callback.js'));
+	exportConfig.set('chartConfig', path.join(__dirname, 'resources', 'single.json'));
+	exportConfig.set('quality', 'best');
 
 	// provide the export config
 	exportManager.export(exportConfig);
 
 	// Called when export is done
 	exportManager.on('exportDone', (outputFileBag) => {
-	  outputFileBag.forEach((op) => {
-	    console.log(`DONE: ${op.realName}`);
-	  });
+	    outputFileBag.forEach((op) => {
+	        console.log(`DONE: ${op.realName}`);
+	    });
 
-	  ExportManager.saveExportedFiles(outputFileBag);
+	    ExportManager.saveExportedFiles(outputFileBag);
 	});
 
 	// Called on each export state change
 	exportManager.on('exportStateChange', (state) => {
-	  console.log(`[${state.reporter}] ${state.customMsg}`);
+	    console.log(`[${state.reporter}] ${state.customMsg}`);
 	});
 
 	// Called on erroe
 	exportManager.on('error', (err) => {
-	  console.error(err);
+	    console.error(err);
 	});
 </code></pre>
 </div>
 <div class="tab java-tab">
 <pre><code class="custom-hlc language-java">
-	import com.fusioncharts.fusionexport.client.*; // import sdk
+	import com.fusioncharts.fusionexport.client.*;
 
-	public class ExportChart {
+	public class quality {
 	    public static void main(String[] args) throws Exception {
 
-	        String configPath = "fullPath/multiple.json";
-	        String templatePath = "fullPath/template.html";
-
-	        // Instantiate the ExportConfig class and add the required configurations
+	        String rootPath = System.getProperty("user.dir") + java.io.File.separator;
+	        String configPath = rootPath + "examples" + java.io.File.separator + "chart-config-file.json";
 	        ExportConfig config = new ExportConfig();
 	        config.set("chartConfig", configPath);
-	        config.set("templateFilePath", templatePath);
-	        config.set("callbackFilePath", "fullPath/callback.js");
+	        config.set("quality", "best");
 
-	        // Instantiate the ExportManager class
 	        ExportManager manager = new ExportManager(config);
-	        // Call the export() method with the export config and the respective callbacks
 	        manager.export(new ExportDoneListener() {
 	                @Override
 	                public void exportDone(ExportDoneData result, ExportException error) {
 	                    if (error != null) {
 	                        System.out.println(error.getMessage());
 	                    } else {
-	                        ExportManager.saveExportedFiles("fullPath", result);
+	                        ExportManager.saveExportedFiles(rootPath + "bin" + java.io.File.separator + "static2" + java.io.File.separator + "resources", result);
 	                    }
 	                }
 	            },
 	            new ExportStateChangedListener() {
 	                @Override
 	                public void exportStateChanged(ExportState state) {
-	                    System.out.println("STATE: " + state.reporter);
+	                    System.out.println("STATE: " + state.customMsg);
 	                }
 	            });
+
 	    }
 	}
 </code></pre>
@@ -123,20 +116,17 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	using FusionCharts.FusionExport.Client; // Import sdk
 
 	namespace FusionExportTest {
-	    public static class InjectJsCallback {
+	    public static class Quality {
 	        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT) {
 	            // Instantiate the ExportConfig class and add the required configurations
 	            ExportConfig exportConfig = new ExportConfig();
-	            exportConfig.Set("chartConfig", File.ReadAllText("./resources/dashboard_charts.json"));
-	            exportConfig.Set("templateFilePath", "./resources/template.html");
-	            exportConfig.Set("callbackFilePath", "./resources/callback.js");
-
+	            exportConfig.Set("chartConfig", File.ReadAllText("./resources/single.json"));
+	            exportConfig.Set("quality", "best");
 	            // Instantiate the ExportManager class
 	            ExportManager em = new ExportManager(host: host, port: port);
 	            // Call the Export() method with the export config and the respective callbacks
 	            em.Export(exportConfig, OnExportDone, OnExportStateChanged);
 	        }
-
 	        // Called when export is done
 	        static void OnExportDone(ExportEvent ev, ExportException error) {
 	            if (error != null) {
@@ -158,16 +148,15 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 <div class="tab php-tab">
 <pre><code class="custom-hlc language-php">
 	<?php
-	// Injecting custom JavaScript while exporting
+	// Exporting a chart with best quality
 	require __DIR__ . '/../vendor/autoload.php';
 	// Use the sdk
 	use FusionExport\ExportManager;
 	use FusionExport\ExportConfig;
 	// Instantiate the ExportConfig class and add the required configurations
 	$exportConfig = new ExportConfig();
-	$exportConfig->set('chartConfig', realpath('resources/multiple.json'));
-	$exportConfig->set('templateFilePath', realpath('resources/template.html'));
-	$exportConfig->set('callbackFilePath', realpath('resources/callback.js'));
+	$exportConfig->set('chartConfig', realpath('resources/single.json'));
+	$exportConfig->set('quality', 'best');
 	// Called on each export state change
 	$onStateChange = function ($event) {
 	    $state = $event->state;
@@ -195,86 +184,88 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 <pre><code class="custom-hlc language-python">
 	#!/usr/bin/env python
 
-	from fusionexport import ExportManager, ExportConfig  # Import sdk
+	from fusionexport
+	import ExportManager, ExportConfig# Import sdk
 
 	def read_file(file_path):
 	    try:
-	        with open(file_path, "r") as f:
-	            return f.read()
-	    except Exception as e:
-	        print(e)
+	    with open(file_path, "r") as f:
+	    return f.read()
+	except Exception as e:
+	    print(e)
 
 
-	# Called when export is done
+	# Called when
+	export is done
 	def on_export_done(event, error):
 	    if error:
-	        print(error)
-	    else:
-	        ExportManager.save_exported_files("exported_images", event["result"])
+	    print(error)
+	else :
+	    ExportManager.save_exported_files("exported_images", event["result"])
 
 
-	# Called on each export state change
+	# Called on each
+	export state change
 	def on_export_state_changed(event):
 	    print(event["state"])
 
 
 	# Instantiate the ExportConfig class and add the required configurations
 	export_config = ExportConfig()
-	export_config["chartConfig"] = read_file("dashboard_charts.json")
-	export_config["templateFilePath"] = "template.html"
-	export_config["callbackFilePath"] = "callback.js"
+	export_config["chartConfig"] = read_file("chart-config-file.json")
+	export_config["quality"] = "best"
 
-	# Provide port and host of FusionExport Service
+	#
+	Provide port and host of FusionExport Service
 	export_server_host = "127.0.0.1"
 	export_server_port = 1337
 
 	# Instantiate the ExportManager class
-	em = ExportManager(export_server_host, export_server_port)
-	# Call the export() method with the export config and the respective callbacks
+	em = ExportManager(export_server_host, export_server_port)# Call the
+	export () method with the
+	export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
 </code></pre>
 </div>
 <div class="tab golang-tab">
-<pre><code class="custom-hlc language-javascript">
-	// Injecting custom JavaScript while exporting
-
+<pre><code class="custom-hlc language-go">
+	// Exporting a chart with best quality
 	package main
 
 	import (
-		"fmt"
+	    "fmt"
 
-		"github.com/fusioncharts/fusionexport-go-client"
+	    "github.com/fusioncharts/fusionexport-go-client"
 	)
 
 	// Called when export is done
-	func onDone(outFileBag []FusionExport.OutFileBag, err error) {
-		check(err)
-		FusionExport.SaveExportedFiles(outFileBag)
+	func onDone(outFileBag[] FusionExport.OutFileBag, err error) {
+	    check(err)
+	    FusionExport.SaveExportedFiles(outFileBag)
 	}
 
 	// Called on each export state change
 	func onStateChange(event FusionExport.ExportEvent) {
-		fmt.Println("[" + event.Reporter + "] " + event.CustomMsg)
+	    fmt.Println("[" + event.Reporter + "] " + event.CustomMsg)
 	}
 
 	func main() {
-		// Instantiate ExportConfig and add the required configurations
-		exportConfig := FusionExport.NewExportConfig()
+	    // Instantiate ExportConfig and add the required configurations
+	    exportConfig: = FusionExport.NewExportConfig()
 
-		exportConfig.Set("chartConfig", "example/resources/multiple.json")
-		exportConfig.Set("templateFilePath", "example/resources/template.html")
-		exportConfig.Set("callbackFilePath", "example/resources/callback.js")
+	    exportConfig.Set("chartConfig", "example/resources/single.json")
+	    exportConfig.Set("quality", "best")
 
-		// Instantiate ExportManager
-		exportManager := FusionExport.NewExportManager()
-		// Call the Export() method with the export config and the respective callbacks
-		exportManager.Export(exportConfig, onDone, onStateChange)
+	    // Instantiate ExportManager
+	    exportManager: = FusionExport.NewExportManager()
+	    // Call the Export() method with the export config and the respective callbacks
+	    exportManager.Export(exportConfig, onDone, onStateChange)
 	}
 
 	func check(e error) {
-		if e != nil {
-			panic(e)
-		}
+	    if e != nil {
+	        panic(e)
+	    }
 	}
 </code></pre>
 </div>
@@ -283,6 +274,10 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 
 ## Related Resources
 
-* [Asynchronous Capture]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/asynchronous-capture '@@open-newtab')
+* [Export Chart as Image]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-chart-as-image '@@open-newtab')
 
-* [Enable Logging]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/enabling-logging '@@open-newtab')
+* [Customize the Width and Height of an Exported Chart]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart '@@open-newtab')
+
+* [Override a Chart Config]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/override-the-chart-config '@@open-newtab')
+
+* [Change the Export Type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type '@@open-newtab')
