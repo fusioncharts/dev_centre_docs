@@ -37,7 +37,7 @@ The FusionExport Server SDKs are tools for interacting with FusionExport Server 
 
 <div class="tab csharp-tab">
 <strong>You can install the SDK using the NuGet package manager. To install, open the NuGet package manager console and run the following command:</strong>
-<pre><code class="language-cs">	$ Install-Package FusionExport -Version 1.0.0-rc</code></pre>
+<pre><code class="language-cs">	$ Install-Package FusionExport -Version 1.0.0-rc0</code></pre>
 <strong>To use the SDK into your project:</strong>
 <pre><code class="language-cs">	using FusionCharts.FusionExport.Client; </code></pre>
 </div>
