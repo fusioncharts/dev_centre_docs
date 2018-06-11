@@ -1603,17 +1603,6 @@
                                     "subparams": {}
                                 }
                             }
-                        },
-                        "static-enableFirebugLite": {
-                            "id": "static-enableFirebugLite",
-                            "name": "enableFirebugLite",
-                            "kind": "function",
-                            "access": "",
-                            "scope": "static",
-                            "virtual": false,
-                            "description": "*(experimental)* This method fetches FirebugLite component's code and adds it to current page. Subsequently, on load of the script it enables advanced console logging to it. This is very useful for debugging on older Internet Explorer browsers and on mobile device browsers that do not have a JavaScript debugging console.\n\nVisit http://getfirebug.com/firebuglite for more information on this very popular component. This function fetches the script from their latest stable release channel as mentioned in http://getfirebug.com/firebuglite#Stable",
-                            "examples": {},
-                            "params": {}
                         }
                     }
                 },
