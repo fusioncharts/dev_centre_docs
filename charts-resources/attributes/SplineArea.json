@@ -84,6 +84,13 @@
                 "name": "showValues"
             },
             {
+                "description": "If you've opted to show data values on the chart, this attribute lets you adjust the vertical alignment of data values with respect to dataplots. By default, this attribute is set to AUTO mode in which the alignment of each data value is determined automatically based on the position of each plot point. In ABOVE mode, data values are displayed above the plot points unless a plot point is too close to the upper edge of the canvas while in BELOW mode, data values are displayed below the plot points unless a plot point is too close to the lower edge of the canvas.",
+                "range": "&quot;ABOVE&quot;, &quot;BELOW&quot;, &quot;AUTO&quot;",
+                "type": "String",
+                "versionsince": "3.2",
+                "name": "valuePosition"
+            },
+            {
                 "description": "If you have opted to show data values, you can rotate them using this attribute.",
                 "range": "0/1",
                 "type": "Boolean",
@@ -1077,21 +1084,21 @@
                 "name": "showcanvasborder"
             },
             {
-                "description": "Sets Canvas background color. For Gradient effect, enter colors separated by comma.",
+                "description": "This attribute sets the background color for the chart canvas. You can set any hex color code as the value of this attribute. To specify a gradient as canvas background color, separate the hex color codes of each color in the gradient using comma. Example: #FF5904, #FFFFFF.",
                 "range": "Hex Color Code",
                 "type": "Color",
                 "name": "canvasBgColor"
             },
             {
-                "description": "Sets alpha for canvas background. For gradient, enter alpha list separated by commas.",
+                "description": "This attribute sets the background transparency for the chart canvas. For gradient, separate the alpha value using comma. Example: 15, 50.",
                 "range": "0 - 100",
                 "type": "Number",
                 "name": "canvasBgAlpha"
             },
             {
-                "description": "Helps you specify canvas background ratio for gradients.",
+                "description": "When a gradient is used to set the color of the canvas background, this attribute sets the ratio of the colors. Example : If the value of the `canvasBgColor` attribute is set as `#FF5904, #FFFFFF`, `canvasBgRatio` can be used to specify their ratio in the background.",
                 "range": "0 - 100",
-                "type": "Number",
+                "type": "Numbers separated by comma",
                 "name": "canvasBgRatio"
             },
             {
@@ -2206,6 +2213,13 @@
                 "name": "value"
             },
             {
+                "description": "If you've opted to show a particular data value on the chart, this attribute lets you adjust the vertical alignment of individual data values with respect to dataplots. By default, this attribute is set to AUTO mode in which the alignment of a data value is determined automatically based on the position of its plot point. In ABOVE mode, a data value is displayed above the plot point unless a plot point is too close to the upper edge of the canvas while in BELOW mode, a data value is displayed below the plot point unless a plot point is too close to the lower edge of the canvas.",
+                "range": "&quot;ABOVE&quot;, &quot;BELOW&quot;, &quot;AUTO&quot;",
+                "type": "String",
+                "versionsince": "3.2",
+                "name": "valuePosition"
+            },
+            {
                 "description": "If instead of the numerical value of this data, you wish to display a custom string value, you can specify the same here. Examples are annotation for a data item etc.",
                 "range": " ",
                 "type": "String",
@@ -2234,13 +2248,6 @@
                 "range": "0/1",
                 "type": "Boolean",
                 "name": "showValue"
-            },
-            {
-                "description": "If you have opted to show a particular data value on the chart, this attribute lets you adjust the vertical alignment of individual data values with respect to dataplots. By default, this attribute is set to AUTO mode in which the alignment of a data value is determined automatically based on the position of its plot point. In ABOVE mode, a data value is displayed above the plot point unless a plot point is too close to the upper edge of the canvas while in BELOW mode, a data value is displayed below the plot point unless a plot point is too close to the lower edge of the canvas.",
-                "range": "&quot;ABOVE&quot;, &quot;BELOW&quot;, &quot;AUTO&quot;",
-                "type": "String",
-                "versionsince": "3.2",
-                "name": "valuePosition"
             },
             {
                 "description": "If you want to configure data item specific anchor properties, this attribute lets you define the number of sides for the anchor of that particular data item.",

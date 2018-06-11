@@ -70,7 +70,7 @@ By default, the cross line animation is disabled. Set the `crossLineAnimation` a
 ```json
 {
     "chart": {
-        "crossLineAnimatiion": "1"
+        "crossLineAnimation": "1"
     }
 }
 ```

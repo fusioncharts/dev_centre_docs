@@ -68,7 +68,7 @@ import charts from 'fusioncharts/fusioncharts.charts';
 import ReactFC from 'react-fusioncharts';
 
 // Pass fusioncharts as a dependency of charts
-charts(FusionCharts)
+charts(fusioncharts)
 
 var chartConfigs = {
     type: "Column2D",
