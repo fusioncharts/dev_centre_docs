@@ -151,7 +151,7 @@ Name|Type|Defaults|Description
     <tr>
     	<td> `pool` </td>
     	<td> object </td>
-    	<td> {</br>	"max": 5,</br>	"min": 0,</br>	"acquire": 30000,</br>	"idle": 10000</br>	} </td>
+    	<td> {</br>	"max": `5`,</br>	"min": `0`,</br>	"acquire": `30000`,</br>	"idle": `10000`</br>	} </td>
     	<td> Database connection pool configs </td>
     </tr>
 
@@ -228,29 +228,44 @@ FusionExport Server also supports export from the browser using **Fusioncharts**
 
 ### API Endpoint Reference
 
-Name|Description
--|-
-Endpoint|/api/v1.0/export
-Http Method|POST
-Description|Export processing and returns the required files back to the client.
-Request Params|
-Param Name
-Defaults
-Description
-`stream_type`
-
-In this case where charts will be rendered and exported.
-CHART-DATA / SVG / IMAGE-DATA
-`stream`
-{}
-In case of svg, it contains the svg string.
-In case of image data, it contains the base64 string.
-In case of chart data, it may contain a JS or JSON stream containing an array of objects.
-`files`
-files.zip
-Template, callback, and resource files sent as zip.
-Example:
-resources/
+<table>
+	<tr>
+		<th> Name </th>
+		<th> Description </th>
+	</tr>
+	<tr>
+		<td> Endpoint </td>
+		<td> /api/v1.0/export </td>
+	</tr>
+	<tr>
+		<td>Http Method</td>
+		<td>POST</td>
+	</tr>
+	<tr>
+		<td>Description</td>
+		<td>Export processing and returns the required files back to the client.</td>
+	</tr>
+	<tr>
+		<td>Request Params</td>
+		<tr>
+			<th>Param Name</th>
+			<th>Defaults</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>`stream_type`</td>
+			<td></td>
+			<td>In this case where charts will be rendered and exported.</br></br>`CHART-DATA / SVG / IMAGE-DATA`</td>
+		</tr>
+		<tr>
+			<td>`stream`</td>
+			<td>{}</td>
+			<td>In case of **svg**, it contains the svg string.</br></br>In case of **image data**, it contains the base64 string.</br></br>In case of **chart data**, it may contain a JS or JSON stream containing an array of objects.</td>
+		</tr>
+		<tr>
+			<td>`files`</td>
+			<td>files.zip</td>
+			<td>Template, callback, and resource files sent as zip.</br></br>Example:</br></br>resources/
 ├── images/
 │ ├── owl.jpg
 │ ├── meow.png
@@ -264,59 +279,90 @@ resources/
 │ ├── glyphicons-halflings-regular.eot
 │ └── glyphicons-halflings-regular.woff
 ├── template.html
-└── callbacks.js
-
-`parameters`
-exportfilename=FusionCharts|exportformat=png|exportactionnew=save
-This contains the output filename, format, and the action to be performed.
-`meta_bgColor`
-#FFF
-Sets the background color.
-`meta_bgAlpha`
-
-Set the transparency(alpha) of the background.
-`meta_DOMId`
-
-DOM Id.
-`meta_width`
-
-The width of the chart.
-`meta_height`
-
-The height of the chart.
-`chart_caption`
-
-Caption or title.
-`chart_sub_caption`
-
-Sub-caption or subtitle.
-`async_capture`
-false
-Enables async capture.
-`dashboard_heading`
-
-Dashboard heading.
-`dashboard_subheading`
-
-Dashboard subheading.
-`is_single_export`
-
-Whether it is bulk, or a single export.
-`is_full_version`
-
-Whether it is a trial, or a paid version.
-`user_time_zone`
-
-User timezone.
-`log_enabled`
-true
-Whether logging is enabled.
-`version`
-
-Version.
-|
-
-
+└── callbacks.js</td>
+		</tr>
+		<tr>
+			<td>`parameters`</td>
+			<td>exportfilename=FusionCharts|exportformat=png|exportactionnew=save</td>
+			<td>This contains the output filename, format, and the action to be performed.</td>
+		</tr>
+		<tr>
+			<td>`meta_bgColor`</td>
+			<td>#ffffff</td>
+			<td>Sets the background color.</td>
+		</tr>
+		<tr>
+			<td>`meta_bgAlpha`</td>
+			<td></td>
+			<td>Set the transparency(alpha) of the background.</td>
+		</tr>
+		<tr>
+			<td>`meta_DOMId`</td>
+			<td></td>
+			<td>DOM Id.</td>
+		</tr>
+		<tr>
+			<td>`meta_width`</td>
+			<td></td>
+			<td>The width of the chart.</td>
+		</tr>
+		<tr>
+			<td>`meta_height`</td>
+			<td></td>
+			<td>The height of the chart.</td>
+		</tr>
+		<tr>
+			<td>`chart_caption`</td>
+			<td></td>
+			<td>Caption or title.</td>
+		</tr>
+		<tr>
+			<td>`chart_sub_caption`</td>
+			<td></td>
+			<td>Sub-caption or subtitle.</td>
+		</tr>
+		<tr>
+			<td>`async_capture`</td>
+			<td>false</td>
+			<td>Enables async capture.</td>
+		</tr>
+		<tr>
+			<td>`dashboard_heading`</td>
+			<td></td>
+			<td>Dashboard heading.</td>
+		</tr>
+		<tr>
+			<td>`dashboard_subheading`</td>
+			<td></td>
+			<td>Dashboard subheading.</td>
+		</tr>
+		<tr>
+			<td>`is_single_export`</td>
+			<td></td>
+			<td>Whether it is bulk, or a single export.</td>
+		</tr>
+		<tr>
+			<td>`is_full_version`</td>
+			<td></td>
+			<td>Whether it is a trial, or a paid version.</td>
+		</tr>
+		<tr>
+			<td>`user_time_zone`</td>
+			<td></td>
+			<td>User timezone.</td>
+		</tr>
+		<tr>
+			<td>`log_enabled`</td>
+			<td>true</td>
+			<td>Whether logging is enabled.</td>
+		</tr>
+		<tr>
+			<td>`version`</td>
+			<td></td>
+			<td>Version.</td>
+		</tr>
+	</tr>
+</table>
 
 
 Name|Description|
