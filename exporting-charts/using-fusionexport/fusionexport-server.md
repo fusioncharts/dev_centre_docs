@@ -247,7 +247,7 @@ FusionExport Server also supports export from the browser using **Fusioncharts**
 	</tr>
 	<tr>
 		<td><b>Request Params</b></td>
-		<td><tr>
+		<tr>
 			<th>Param Name</th>
 			<th>Defaults</th>
 			<th>Description</th>
@@ -361,7 +361,6 @@ FusionExport Server also supports export from the browser using **Fusioncharts**
 			<td></td>
 			<td>Version.</td>
 		</tr>
-		</td>
 	</tr>
 </table>
 
@@ -383,147 +382,195 @@ FusionExport Server also supports export from the browser using **Fusioncharts**
 		<td>Saves the logs data into the MySQL database.</td>
 	</tr>
 	<tr>
-		<td>Request Params</td>
-		<td>
-			<tr>
-				<th>Param Name</th>
-				<th>Default</th>
-				<th>Description</th>
-			</tr>
-			<tr>
-				<td>`chartType`</td>
-				<td></td>
-				<td>The type of chart rendered.</td>
-			</tr>
-			<tr>
-				<td>`chartCaption`</td>
-				<td></td>
-				<td>The primary caption of the chart.</td>
-			</tr>
-			<tr>
-				<td>`chartSubCaption`</td>
-				<td></td>
-				<td>Sub-caption of the chart.</td>
-			</tr>
-			<tr>
-				<td>`isSingleExport`</td>
-				<td></td>
-				<td>Boolean `true` will be passed for single chart export and 'false' for batch export.</td>
-			</tr>
-			<tr>
-				<td>`exportFileName`</td>
-				<td>FusionCharts</td>
-				<td>The name of the physical file.</td>
-			</tr>
-			<tr>
-				<td>`exportFormat`</td>
-				<td>png</td>
-				<td>Sets the  export format of the file.</td>
-			</tr>
-			<tr>
-				<td>`isFullVersion`</td>
-				<td></td>
-				<td>This attribute will hold the value true if the product is licensed otherwise false.</td>
-			</tr>
-			<tr>
-				<td>`userTimeZone`</td>
-				<td></td>
-				<td>Time Zone of the user will be passed through this attribute.</br></br>It is in minutes. i.e (330 for INDIA)</td>
-			</tr>
-			<tr>
-				<td>`userIPAddress`</td>
-				<td></td>
-				<td>IP Address of the User.</td>
-			</tr>
-			<tr>
-				<td>`exportAction`</td>
-				<td></td>
-				<td>`exportaction` attribute is used to depict Download & Save behaviour for the export functionality.</td>
-			</tr>
-			<tr>
-				<td>`version`</td>
-				<td></td>
-				<td>Version</td>
-			</tr>
-		</td>
+		<td><b>Request Params</b></td>
+		<tr>
+			<th>Param Name</th>
+			<th>Default</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>`chartType`</td>
+			<td></td>
+			<td>The type of chart rendered.</td>
+		</tr>
+		<tr>
+			<td>`chartCaption`</td>
+			<td></td>
+			<td>The primary caption of the chart.</td>
+		</tr>
+		<tr>
+			<td>`chartSubCaption`</td>
+			<td></td>
+			<td>Sub-caption of the chart.</td>
+		</tr>
+		<tr>
+			<td>`isSingleExport`</td>
+			<td></td>
+			<td>Boolean `true` will be passed for single chart export and 'false' for batch export.</td>
+		</tr>
+		<tr>
+			<td>`exportFileName`</td>
+			<td>FusionCharts</td>
+			<td>The name of the physical file.</td>
+		</tr>
+		<tr>
+			<td>`exportFormat`</td>
+			<td>png</td>
+			<td>Sets the  export format of the file.</td>
+		</tr>
+		<tr>
+			<td>`isFullVersion`</td>
+			<td></td>
+			<td>This attribute will hold the value true if the product is licensed otherwise false.</td>
+		</tr>
+		<tr>
+			<td>`userTimeZone`</td>
+			<td></td>
+			<td>Time Zone of the user will be passed through this attribute.</br></br>It is in minutes. i.e (330 for INDIA)</td>
+		</tr>
+		<tr>
+			<td>`userIPAddress`</td>
+			<td></td>
+			<td>IP Address of the User.</td>
+		</tr>
+		<tr>
+			<td>`exportAction`</td>
+			<td></td>
+			<td>`exportaction` attribute is used to depict Download & Save behaviour for the export functionality.</td>
+		</tr>
+		<tr>
+			<td>`version`</td>
+			<td></td>
+			<td>Version</td>
+		</tr>
 	</tr>
 </table>
 
-
-
-
-Name|Description|
--|-
-End Point|/api/v1.0/logs|
-Http Method|GET|
-Description|Query logs from MySQL database|
-Query String|
-Key Name
-Value
-Example
-`sorting`
-<column_name>:{desc/asc},<column_name>:{desc/asc}
- ?sorting=chartType:desc,userIpAdress:asc
-`limit`
-<value>
-?limit=40
-`offset`
-<value>
-?offset=43
-`search`
-<column_name>:<value1>,<value2>
-?userIpAdress=894.320.233.231,421.232.545.134
-|
-Response|
-Param Name
-Default
-Description
-`chartType`
-
-The type of chart rendered.
-`chartCaption`
-
-Primary caption of the chart.
-`chartSubCaption`
-
-Sub caption of the chart.
-`isSingleExport`
-
-Boolean `true` will be passed for single chart export and 'false' for batch export.
-`exportFileName`
-FusionCharts
-The name of the physical file.
-`exportFormat`
-png
-The export format of the file.
-`chartOriginUrl`
-
-This will contain the url of the origin host where the chart is embedded.
-If from CLI, then origin URL would be "CLI"
-`userAgent`
-
-Contains standard browser user agent information for browser identification.
-If from CLI, then userAgent URL would be "CLI".
-`isFullVersion`
-
-This attribute will hold the value true if the product is licensed otherwise false.
-`userTimeZone`
-
-Time Zone of the user will be passed through this attribute.
-It is in minutes. i.e (330 for INDIA)
-`userIPAddress`
-
-IP Address of the User.
-`userCountry`
-
-Country of the user.
-`serverDateTime`
-
-Server date time.
-`exportAction`
-
-'exportaction' attribute is used to depict `Download` & `Save`behavior for the export functionality.
-`version`
-
-Version.
-|
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>End Point</td>
+		<td>/api/v1.0/logs</td>
+	</tr>
+	<tr>
+		<td>Http Method</td>
+		<td>GET</td>
+	</tr>
+	<tr>
+		<td>Description</td>
+		<td>Query logs from MySQL database</td>
+	</tr>
+	<tr>
+		<td>Query String</td>
+		<tr>
+			<th>Key Name</th>
+			<th>Value</th>
+			<th>Example</th>
+		</tr>
+		<tr>
+			<td>`sorting`</td>
+			<td>&lt;column_name&gt;:{desc/asc},&lt;column_name&gt;:{desc/asc}</td>
+			<td>?sorting=chartType:desc,userIpAdress:asc</td>
+		</tr>
+		<tr>
+			<td>`limit`</td>
+			<td>&lt;value&gt;</td>
+			<td>?limit=40</td>
+		</tr>
+		<tr>
+			<td>`offset</td>
+			<td>&lt;value&gt;</td>
+			<td>?offset=43</td>
+		</tr>
+		<tr>
+			<td>`search`</td>
+			<td>&lt;column_name&gt;:&lt;value1&gt;,&lt;value2&gt;</td>
+			<td>?userIpAdress=894.320.233.231,421.232.545.134</td>
+		</tr>
+		<td>Response</td>
+		<tr>
+			<th>Param Name</th>
+			<th>Default</th>
+			<th>Description</th>
+		</tr>
+		<tr>
+			<td>`chartType`</td>
+			<td></td>
+			<td>The type of chart rendered.</td>
+		</tr>
+		<tr>
+			<td>`chartCaption`</td>
+			<td></td>
+			<td>Primary caption of the chart.</td>
+		</tr>
+		<tr>
+			<td>`chartSubCaption`</td>
+			<td></td>
+			<td>Sub caption of the chart.</td>
+		</tr>
+		<tr>
+			<td>`isSingleExport`</td>
+			<td></td>
+			<td>Boolean `true` will be passed for single chart export and 'false' for batch export.</td>
+		</tr>
+		<tr>
+			<td>`exportFileName`</td>
+			<td>FusionCharts</td>
+			<td>The name of the physical file.</td>
+		</tr>
+		<tr>
+			<td>`exportFormat`</td>
+			<td>png</td>
+			<td>The export format of the file.</td>
+		</tr>
+		<tr>
+			<td>`chartOriginUrl`</td>
+			<td></td>
+			<td>This will contain the url of the origin host where the chart is embedded.</br></br>If from CLI, then origin URL would be "CLI"</td>
+		</tr>
+		<tr>
+			<td>`userAgent`</td>
+			<td></td>
+			<td>Contains standard browser user agent information for browser identification.</br></br>If from CLI, then userAgent URL would be "CLI".</td>
+		</tr>
+		<tr>
+			<td>`isFullVersion`</td>
+			<td></td>
+			<td>This attribute will hold the value true if the product is licensed otherwise false.</td>
+		</tr>
+		<tr>
+			<td>`userTimeZone`</td>
+			<td></td>
+			<td>Time Zone of the user will be passed through this attribute.
+</br></br>It is in minutes. i.e (330 for INDIA)</td>
+		</tr>
+		<tr>
+			<td>`userIPAddress`</td>
+			<td></td>
+			<td>IP Address of the User.</td>
+		</tr>
+		<tr>
+			<td>`userCountry`</td>
+			<td></td>
+			<td>Country of the user.</td>
+		</tr>
+		<tr>
+			<td>`serverDateTime`</td>
+			<td></td>
+			<td>Server date time.</td>
+		</tr>
+		<tr>
+			<td>`exportAction`</td>
+			<td></td>
+			<td>'exportaction' attribute is used to depict `Download` & `Save`behavior for the export functionality.</td>
+		</tr>
+		<tr>
+			<td>`version`</td>
+			<td></td>
+			<td>Version</td>
+		</tr>
+	</tr>
+</table>
