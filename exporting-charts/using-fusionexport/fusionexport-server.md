@@ -481,7 +481,7 @@ FusionExport Server also supports export from the browser using **Fusioncharts**
 			<td>?limit=40</td>
 		</tr>
 		<tr>
-			<td>`offset</td>
+			<td>`offset`</td>
 			<td>&lt;value&gt;</td>
 			<td>?offset=43</td>
 		</tr>
