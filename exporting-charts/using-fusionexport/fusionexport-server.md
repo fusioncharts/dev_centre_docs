@@ -92,21 +92,70 @@ Name|Type|Defaults|Description
 
 ### Database Configs
 
-Name|Type|Defaults|Description
--|-|-|-
-`dialect`|string|mysql|Database type e.g. MySQL, Postgres, SQLite and Microsoft SQL Server
-`host`|string|localhost|Database host
-`port`|integer|3306|Database Port
-`database`|string|fusionexport|Database name where export logs would be stored
-`username`|string|root|Database username
-`password`|string|root|Database password
-`logging`|boolean|false|Whether to enable database logging or not for debugging purpose
-`pool`|object|{
-    "max": 5,
-    "min": 0,
-    "acquire": 30000,
-    "idle": 10000
-  }|Database connection pool configs
+<table>
+	<tr>
+        <th> Name </th>
+        <th> Type </th>
+        <th> Defaults </th>
+        <th> Description </th>
+    </tr>
+    <tr>
+    	<td> `dialect` </td>
+    	<td> string </td>
+    	<td> mysql </td>
+    	<td> Database type e.g. MySQL, Postgres, SQLite and Microsoft SQL Server </td>
+    </tr>
+
+    <tr>
+    	<td> `host` </td>
+    	<td> string </td>
+    	<td> localhost </td>
+    	<td> Database host </td>
+    </tr>
+
+    <tr>
+    	<td> `port` </td>
+    	<td> integer </td>
+    	<td> 3306 </td>
+    	<td> Database Port </td>
+    </tr>
+
+    <tr>
+    	<td> `database` </td>
+    	<td> string </td>
+    	<td> fusionexport </td>
+    	<td> Database name where export logs would be stored </td>
+    </tr>
+
+    <tr>
+    	<td> `username` </td>
+    	<td> string </td>
+    	<td> root </td>
+    	<td> Database username </td>
+    </tr>
+
+    <tr>
+    	<td> `password` </td>
+    	<td> string </td>
+    	<td> root </td>
+    	<td> Database password </td>
+    </tr>
+
+    <tr>
+    	<td> `logging` </td>
+    	<td> boolean </td>
+    	<td> false </td>
+    	<td> Whether to enable database logging or not for debugging purpose </td>
+    </tr>
+
+    <tr>
+    	<td> `pool` </td>
+    	<td> object </td>
+    	<td> {</br>	"max": 5,</br>	"min": 0,</br>	"acquire": 30000,</br>	"idle": 10000</br>	} </td>
+    	<td> Database connection pool configs </td>
+    </tr>
+
+</table>
 
 ### MessageQueue Configs
 
