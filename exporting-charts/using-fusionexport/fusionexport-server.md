@@ -1,5 +1,5 @@
 ---
-permalink: exporting-charts/using-fusionexport/cli-reference.html
+permalink: exporting-charts/using-fusionexport/fusionexport-server.html
 title: FusionExport Server | FusionCharts
 description: This article FusionExport Server. It accepts export requests from FusionExport CLI, SDK clients and browsers and provides exported images in return.
 heading: FusionExport Server
