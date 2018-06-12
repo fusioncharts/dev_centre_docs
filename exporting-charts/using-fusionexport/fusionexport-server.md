@@ -246,8 +246,8 @@ FusionExport Server also supports export from the browser using **Fusioncharts**
 		<td>Export processing and returns the required files back to the client.</td>
 	</tr>
 	<tr>
-		<td>Request Params</td>
-		<tr>
+		<td><b>Request Params</b></td>
+		<td><tr>
 			<th>Param Name</th>
 			<th>Defaults</th>
 			<th>Description</th>
@@ -283,7 +283,7 @@ FusionExport Server also supports export from the browser using **Fusioncharts**
 		</tr>
 		<tr>
 			<td>`parameters`</td>
-			<td>exportfilename=FusionCharts|exportformat=png|exportactionnew=save</td>
+			<td>exportfilename=FusionCharts|</br>exportformat=png|</br>exportactionnew=save</td>
 			<td>This contains the output filename, format, and the action to be performed.</td>
 		</tr>
 		<tr>
@@ -361,54 +361,93 @@ FusionExport Server also supports export from the browser using **Fusioncharts**
 			<td></td>
 			<td>Version.</td>
 		</tr>
+		</td>
 	</tr>
 </table>
 
-
-Name|Description|
--|-
-End point|/api/v1.0/logs|
-Http Method|POST|
-Description|Saves the logs data into the MySQL database.|
-Request Params|
-Param Name
-Default
-Description
-`chartType`
-
-The type of chart rendered.
-`chartCaption`
-
-The primary caption of the chart.
-`chartSubCaption`
-
-Sub-caption of the chart.
-`isSingleExport`
-
-Boolean `true` will be passed for single chart export and 'false' for batch export.
-`exportFileName`
-FusionCharts
-The name of the physical file.
-`exportFormat`
-png
-Sets the  export format of the file.
-`isFullVersion`
-
-This attribute will hold the value true if the product is licensed otherwise false.
-`userTimeZone`
-
-Time Zone of the user will be passed through this attribute.
-It is in minutes. i.e (330 for INDIA)
-`userIPAddress`
-
-IP Address of the User.
-`exportAction`
-
-`exportaction` attribute is used to depict Download & Save behaviour for the export functionality.
-`version`
-
-Version.
-|
+<table>
+	<tr>
+		<th>Name</th>
+		<th>Description</th>
+	</tr>
+	<tr>
+		<td>End point</td>
+		<td>/api/v1.0/logs</td>
+	</tr>
+	<tr>
+		<td>Http Method</td>
+		<td>POST</td>
+	</tr>
+	<tr>
+		<td>Description</td>
+		<td>Saves the logs data into the MySQL database.</td>
+	</tr>
+	<tr>
+		<td>Request Params</td>
+		<td>
+			<tr>
+				<th>Param Name</th>
+				<th>Default</th>
+				<th>Description</th>
+			</tr>
+			<tr>
+				<td>`chartType`</td>
+				<td></td>
+				<td>The type of chart rendered.</td>
+			</tr>
+			<tr>
+				<td>`chartCaption`</td>
+				<td></td>
+				<td>The primary caption of the chart.</td>
+			</tr>
+			<tr>
+				<td>`chartSubCaption`</td>
+				<td></td>
+				<td>Sub-caption of the chart.</td>
+			</tr>
+			<tr>
+				<td>`isSingleExport`</td>
+				<td></td>
+				<td>Boolean `true` will be passed for single chart export and 'false' for batch export.</td>
+			</tr>
+			<tr>
+				<td>`exportFileName`</td>
+				<td>FusionCharts</td>
+				<td>The name of the physical file.</td>
+			</tr>
+			<tr>
+				<td>`exportFormat`</td>
+				<td>png</td>
+				<td>Sets the  export format of the file.</td>
+			</tr>
+			<tr>
+				<td>`isFullVersion`</td>
+				<td></td>
+				<td>This attribute will hold the value true if the product is licensed otherwise false.</td>
+			</tr>
+			<tr>
+				<td>`userTimeZone`</td>
+				<td></td>
+				<td>Time Zone of the user will be passed through this attribute.</br></br>It is in minutes. i.e (330 for INDIA)</td>
+			</tr>
+			<tr>
+				<td>`userIPAddress`</td>
+				<td></td>
+				<td>IP Address of the User.</td>
+			</tr>
+			<tr>
+				<td>`exportAction`</td>
+				<td></td>
+				<td>`exportaction` attribute is used to depict Download & Save behaviour for the export functionality.</td>
+			</tr>
+			<tr>
+				<td>`version`</td>
+				<td></td>
+				<td>Version</td>
+			</tr>
+		</td>
+	</tr>
+</table>
 
 
 
