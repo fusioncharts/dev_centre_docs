@@ -2,7 +2,7 @@
 permalink: exporting-charts/using-fusionexport/fusionexport-server.html
 title: FusionExport Server | FusionCharts
 description: This article FusionExport Server. It accepts export requests from FusionExport CLI, SDK clients and browsers and provides exported images in return.
-heading: FusionExport Server
+heading: FusionExport Server Reference
 chartPresent: False
 ---
 
@@ -255,31 +255,12 @@ FusionExport Server also supports export from the browser using **Fusioncharts**
 		<tr>
 			<td>`stream_type`</td>
 			<td></td>
-			<td>In this case where charts will be rendered and exported.</br></br>`CHART-DATA / SVG / IMAGE-DATA`</td>
+			<td>In this case where charts will be rendered and exported.</br></br>`SVG / IMAGE-DATA`</td>
 		</tr>
 		<tr>
 			<td>`stream`</td>
 			<td>{}</td>
-			<td>In case of **svg**, it contains the svg string.</br></br>In case of **image data**, it contains the base64 string.</br></br>In case of **chart data**, it may contain a JS or JSON stream containing an array of objects.</td>
-		</tr>
-		<tr>
-			<td>`files`</td>
-			<td>files.zip</td>
-			<td>Template, callback, and resource files sent as zip.</br></br>Example:</br></br>resources/
-├── images/
-│ ├── owl.jpg
-│ ├── meow.png
-├── stylesheets/
-│ ├── bootstrap.css
-│ └── bootstrap.min.css
-├── javascripts/
-│ ├── bootstrap.js
-│ └── bootstrap.min.js
-├── fonts/
-│ ├── glyphicons-halflings-regular.eot
-│ └── glyphicons-halflings-regular.woff
-├── template.html
-└── callbacks.js</td>
+			<td>In case of **svg**, it contains the svg string.</br></br>In case of **image data**, it contains the base64 string.</td>
 		</tr>
 		<tr>
 			<td>`parameters`</td>
@@ -320,21 +301,6 @@ FusionExport Server also supports export from the browser using **Fusioncharts**
 			<td>`chart_sub_caption`</td>
 			<td></td>
 			<td>Sub-caption or subtitle.</td>
-		</tr>
-		<tr>
-			<td>`async_capture`</td>
-			<td>false</td>
-			<td>Enables async capture.</td>
-		</tr>
-		<tr>
-			<td>`dashboard_heading`</td>
-			<td></td>
-			<td>Dashboard heading.</td>
-		</tr>
-		<tr>
-			<td>`dashboard_subheading`</td>
-			<td></td>
-			<td>Dashboard subheading.</td>
 		</tr>
 		<tr>
 			<td>`is_single_export`</td>
