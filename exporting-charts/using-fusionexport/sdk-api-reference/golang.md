@@ -153,8 +153,6 @@ Returns all export configurations in JSON format.
 
 * `callbackFilePath` - Sets the path for a Javascript file that would be injected at the bottom of the page for each export.
 
-* `libraryDirectoryPath` - Sets the root path of fusionCharts Javascript library to use the licensed version of FusionCharts.
-
 * `asyncCapture` - Sets if the export process will wait for `CAPTURE_EXIT` event.
 
 * `maxWaitForCaptureExit` - Sets the maximum time FusionExport would wait for the CAPTURE_EXIT event to be triggered.
