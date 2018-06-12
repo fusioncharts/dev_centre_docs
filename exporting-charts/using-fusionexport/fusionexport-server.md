@@ -464,7 +464,7 @@ FusionExport Server also supports export from the browser using **Fusioncharts**
 		<td>Query logs from MySQL database</td>
 	</tr>
 	<tr>
-		<td>Query String</td>
+		<td><b>Query String</b></td>
 		<tr>
 			<th>Key Name</th>
 			<th>Value</th>
