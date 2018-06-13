@@ -20740,7 +20740,7 @@
                                             "type": [
                                                 "string"
                                             ],
-                                            "description": "Shape of the added node",
+                                            "description": "Shape of the added node. Example : Rectangle, Circle, Polygon",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -20751,7 +20751,7 @@
                                             "type": [
                                                 "number"
                                             ],
-                                            "description": "Width of the added node",
+                                            "description": "Sets the width of the added node only if the `shape` of the added node is rectangle.",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -20762,7 +20762,7 @@
                                             "type": [
                                                 "number"
                                             ],
-                                            "description": "Height of the added node",
+                                            "description": "Sets the height of the added node only if the `shape` of the added node is rectangle.",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -20773,7 +20773,7 @@
                                             "type": [
                                                 "number"
                                             ],
-                                            "description": "Radius of the added node",
+                                            "description": "Sets the radius of the added node only if the `shape` of the added node is either circle or polygon.",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -20784,7 +20784,7 @@
                                             "type": [
                                                 "number"
                                             ],
-                                            "description": "Number of sides configured for the added node",
+                                            "description": "Specifies the number of sides configured for the added node only if the `shape` of the added node is polygon.",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -21174,7 +21174,7 @@
                                             "type": [
                                                 "string"
                                             ],
-                                            "description": "Shape of the updated node",
+                                            "description": "Shape of the updated node. Example : Rectangle, Circle, Polygon",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -21185,7 +21185,7 @@
                                             "type": [
                                                 "number"
                                             ],
-                                            "description": "Width of the updated node",
+                                            "description": "Sets the width of the updated node only if the `shape` of the updated node is rectangle.",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -21196,7 +21196,7 @@
                                             "type": [
                                                 "number"
                                             ],
-                                            "description": "Height of the updated node",
+                                            "description": "Sets the height of the updated node only if the `shape` of the updated node is rectangle.",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -21207,7 +21207,7 @@
                                             "type": [
                                                 "number"
                                             ],
-                                            "description": "Radius of the updated node",
+                                            "description": "Sets the radius of the updated node only if the `shape` of the updated node is either circle or polygon.",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -21218,7 +21218,7 @@
                                             "type": [
                                                 "number"
                                             ],
-                                            "description": "Number of sides of the updated node",
+                                            "description": "Specifies the number of sides configured for the updated node only if the `shape` of the updated node is polygon.",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -21608,7 +21608,7 @@
                                             "type": [
                                                 "string"
                                             ],
-                                            "description": "Shape of the deleted node",
+                                            "description": "Shape of the deleted node. Example : Rectangle, Circle, Polygon",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -21619,7 +21619,7 @@
                                             "type": [
                                                 "number"
                                             ],
-                                            "description": "Width of the deleted node",
+                                            "description": "Sets the width of the deleted node only if the `shape` of the deleted node is rectangle.",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -21630,7 +21630,7 @@
                                             "type": [
                                                 "number"
                                             ],
-                                            "description": "Height of the deleted node",
+                                            "description": "Sets the height of the deleted node only if the `shape` of the deleted node is rectangle.",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -21641,7 +21641,7 @@
                                             "type": [
                                                 "number"
                                             ],
-                                            "description": "Radius of the deleted node",
+                                            "description": "Sets the radius of the deleted node only if the `shape` of the deleted node is either circle or polygon.",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -21652,7 +21652,7 @@
                                             "type": [
                                                 "number"
                                             ],
-                                            "description": "Number of sides of the deleted node",
+                                            "description": "Specifies the number of sides configured for the deleted node only if the `shape` of the deleted node is polygon.",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
