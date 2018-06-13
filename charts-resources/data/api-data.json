@@ -38266,28 +38266,6 @@
                     "examples": {},
                     "params": {}
                 },
-                "getXML": {
-                    "id": "getXML",
-                    "name": "getXML",
-                    "kind": "function",
-                    "access": "",
-                    "scope": "instance",
-                    "virtual": false,
-                    "description": "Returns the chart configuration and data in the XML format. \n\n >This method can be called only after the [loaded]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-loaded) event is triggered. Alternatively, the [getXMLData()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#getXMLData) method can be used, which does not have this limitation. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/9os6rxq6/ '@@ btn link-underline')",
-                    "examples": {},
-                    "params": {}
-                },
-                "setDataXML": {
-                    "id": "setDataXML",
-                    "name": "setDataXML",
-                    "kind": "function",
-                    "access": "",
-                    "scope": "instance",
-                    "virtual": false,
-                    "description": "Sets XML data for a chart, equivalent to the [setXMLData()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#setXMLData) or the [setChartData()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#setChartData) methods. \n\n This method can be called only after the [loaded]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-loaded) event is triggered. Alternatively, the [setXMLData()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#setXMLData) method can be used, which does not have this limitation. \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/a1bs0vc8/ '@@ btn link-underline')",
-                    "examples": {},
-                    "params": {}
-                },
                 "setDataURL": {
                     "id": "setDataURL",
                     "name": "setDataURL (Deprecated API)",
