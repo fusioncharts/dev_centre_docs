@@ -37586,6 +37586,16 @@
                     "scope": "static",
                     "description": "FusionCharts.options consists of many attributes that can be used to configure advanced options of the FusionCharts library.",
                     "params": {
+                        "defaultTheme": {
+                            "name": "defaultTheme",
+                            "type": [
+                                "string"
+                            ],
+                            "description": "Theme can be applied at global level (of a page) which sets a default theme for all the charts in a particular page.",
+                            "defaultvalue": "",
+                            "optional": "",
+                            "nullable": ""
+                        },
                         "preventTrackResize": {
                             "name": "preventTrackResize",
                             "type": [
