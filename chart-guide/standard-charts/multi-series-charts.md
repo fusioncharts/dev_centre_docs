@@ -73,9 +73,7 @@ For a detailed list of attributes, refer to the [chart attributes]({% site.baseu
 
 The overlapped column 2D chart looks like:
 
-{% embed_all standard-charts-multi-series-charts-example-2.js %}
-
-Click [here](http://jsfiddle.net/fusioncharts/3x4xcn70/ "@@open-newtab") to edit the above chart.
+{% embed_all standard-charts-multi-series-charts-example-7.js %}
 
 ## Multi-series Bar 2D Chart
 
@@ -113,9 +111,7 @@ For a detailed list of attributes, refer to the [chart attributes]({% site.baseu
 
 The overlapped bar 2D chart looks like:
 
-{% embed_all standard-charts-multi-series-charts-example-2.js %}
-
-Click [here](http://jsfiddle.net/fusioncharts/3x4xcn70/ "@@open-newtab") to edit the above chart.
+{% embed_all standard-charts-multi-series-charts-example-8.js %}
 
 ## Multi-series Line Chart
 

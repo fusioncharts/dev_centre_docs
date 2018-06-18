@@ -1,8 +1,8 @@
 {
-    type: 'msbar2d',
+    type: 'overlappedbar2d',
     renderAt: 'chart-container',
-    width: '450',
-    height: '420',
+    width: '550',
+    height: '500',
     dataFormat: 'json',
     dataSource: {
         "chart": {
