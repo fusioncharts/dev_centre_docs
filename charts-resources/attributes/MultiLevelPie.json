@@ -1318,7 +1318,7 @@
                 "name": "highlightChildPieSlices"
             }
         ],
-        "description": "If you wish to show a hightlight effect on the nodes (from parent node to child node and vice versa) when the user hovers his mouse over the parent node, these attributes lets you the highlight the hovered node and all its children till the leaves."
+        "description": "If you wish to show a hightlight effect on the nodes (from parent node to child node and vice versa) when the user hovers his mouse over the parent node, these attributes lets you highlight the hovered node and all its children till the leaves."
     },
     {
         "table": "Chart Padding & Margins",
