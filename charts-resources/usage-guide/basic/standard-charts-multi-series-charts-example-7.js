@@ -2,8 +2,8 @@
     type: 'overlappedcolumn2d',
     renderAt: 'chart-container',
     id: "myChart",
-    width: '550',
-    height: '350',
+    width: '500',
+    height: '300',
     dataFormat: 'json',
     dataSource: {
         "chart": {
