@@ -34,12 +34,6 @@
                 "name": "paletteThemeColor"
             },
             {
-                "description": "If you've defined any annotation groups over the chart, using this attribute you can set the duration after which they'll render on the chart. The timer starts from the time the chart has initialized.",
-                "range": "In seconds",
-                "type": "Number",
-                "name": "annRenderDelay"
-            },
-            {
                 "description": "Whether to show &quot;Print Chart&quot; item in the context menu of the chart? Even if you opt to hide the item in context menu, you can still opt to invoke `print()` JavaScript method of the chart to print the same.",
                 "range": "0/1",
                 "type": "Boolean",

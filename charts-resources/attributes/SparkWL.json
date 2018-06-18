@@ -41,12 +41,6 @@
                 "name": "paletteThemeColor"
             },
             {
-                "description": "If you've defined any annotation groups over the chart, using this attribute you can set the duration after which they'll render on the chart. The timer starts from the time the chart has initialized.",
-                "range": "In seconds",
-                "type": "Number",
-                "name": "annRenderDelay"
-            },
-            {
                 "description": "Whether to show the value of chart?",
                 "range": "0/1",
                 "type": "Boolean",

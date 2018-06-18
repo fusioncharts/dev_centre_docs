@@ -119,12 +119,6 @@
                 "name": "clickURLOverridesPlotLinks"
             },
             {
-                "description": "If you've defined any annotation groups to be rendered over the chart, using this attribute you can control the time duration after which they'll appear on the chart.",
-                "range": "In seconds",
-                "type": "Number",
-                "name": "annRenderDelay"
-            },
-            {
                 "description": "If you set this attribute as 1, the Gantt pane grid will take the same background and border properties as that of the last category (visual dateline) defined.",
                 "range": "0/1",
                 "type": "Boolean",
