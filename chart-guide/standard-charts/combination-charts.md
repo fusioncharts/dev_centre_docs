@@ -161,10 +161,6 @@ The chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/8d3px3xp/ "@@open-newtab") to edit the stacked column 2D line single y-axis chart.
 
-## Multi-series Stacked Column 2D + Spline Dual Y-Axis Chart
-
-
-
 Now, let's customize the appearance and properties of the combination charts.
 
 ## Plot Trend Elements

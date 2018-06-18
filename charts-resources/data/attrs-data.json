@@ -224,21 +224,21 @@
 		"xls": true
 	},
 	{
-		"name": "Multi-series 2D Dual Y Combination Chart (Column + Line + Area)",
+		"name": "Multi-series 2D Dual Y Combination Chart (Column + Line + Area + Spline)",
 		"json": "Combi2DDY",
 		"code": "xt-attr-mscombidy2d.js",
 		"alias": "mscombidy2d",
 		"xls": true
 	},
 	{
-		"name": "Multi-series 2D Single Y Combination Chart (Column + Line + Area)",
+		"name": "Multi-series 2D Single Y Combination Chart (Column + Line + Area + Spline)",
 		"json": "Combi2D",
 		"code": "xt-attr-mscombi2d.js",
 		"alias": "mscombi2d",
 		"xls": true
 	},
 	{
-		"name": "Multi-series 3D Single Y Combination Chart (Column + Line + Area)",
+		"name": "Multi-series 3D Single Y Combination Chart (Column + Line + Area + Spline)",
 		"json": "Combi3D",
 		"code": "xt-attr-combi3d.js",
 		"alias": "mscombi3d",
@@ -326,13 +326,6 @@
 		"json": "MSStColLineDY",
 		"code": "xt-attr-msstackedcolumn2dlinedy.js",
 		"alias": "msstackedcolumn2dlinedy",
-		"xls": false
-	},
-	{
-		"name": "Multi-series Stacked Column 2D + Spline Dual Y Axis",
-		"json": "MSStackedColumn2DSplineDy",
-		"code": "xt-attr-msstackedcolumn2dsplinedy.js",
-		"alias": "msstackedcolumn2dsplinedy",
 		"xls": false
 	},
 	{
