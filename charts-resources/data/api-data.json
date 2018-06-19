@@ -39446,6 +39446,17 @@
                             "optional": true,
                             "nullable": "",
                             "subparams": {}
+                        },
+                        "keepImages": {
+                            "name": "keepImages",
+                            "type": [
+                                "keepImages"
+                            ],
+                            "description": "To get the images present in the chart from the SVG string, set the parameter of `keepImages` object to `1`.",
+                            "defaultvalue": "",
+                            "optional": true,
+                            "nullable": "",
+                            "subparams": {}
                         }
                     }
                 },
