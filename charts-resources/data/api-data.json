@@ -37596,6 +37596,16 @@
                             "optional": "",
                             "nullable": ""
                         },
+                        "export.useSVGDeCanvo": {
+                            "name": "export.useSVGDeCanvo",
+                            "type": [
+                                "string"
+                            ],
+                            "description": "Custom fonts from client side export can now be exported using `useSVGDeCanvo` option. While exporting in SVG format, do include all the external resources in the page.",
+                            "defaultvalue": "False",
+                            "optional": "",
+                            "nullable": ""
+                        },
                         "preventTrackResize": {
                             "name": "preventTrackResize",
                             "type": [
