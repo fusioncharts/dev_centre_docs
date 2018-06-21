@@ -37,6 +37,8 @@ Chart Type|JavaScript Alias|
 [Multi-series Line 2D]({% site.baseurl %}/chart-attributes?chart=msline "@@soft-reload")|msline|
 [Multi-series Bar 2D]({% site.baseurl %}/chart-attributes?chart=msbar2d "@@soft-reload")|msbar2d|
 [Multi-series Bar 3D]({% site.baseurl %}/chart-attributes?chart=msbar3d "@@soft-reload")|msbar3d|
+[Overlapped Column 2D]({% site.baseurl %}/chart-attributes/?chart=overlappedcolumn2d "@@soft-reload")|overlappedcolumn2d|
+[Overlapped Bar 2D]({% site.baseurl %}/chart-attributes/?chart=overlappedbar2d "@@soft-reload")|overlappedbar2d|
 [Multi-series Area 2D]({% site.baseurl %}/chart-attributes?chart=MSArea "@@soft-reload")|msarea|
 [Marimekko]({% site.baseurl %}/chart-attributes?chart=marimekko "@@soft-reload")|marimekko|
 [Zoom Line]({% site.baseurl %}/chart-attributes?chart=zoomline "@@soft-reload")|zoomline|

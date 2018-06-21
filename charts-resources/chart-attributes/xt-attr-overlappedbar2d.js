@@ -1,60 +1,105 @@
 {
-    type: 'area2d',
+    type: 'overlappedbar2d',
     renderAt: 'chart-container',
     width: '100%',
     height: '100%',
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "caption": "Sales of Liquor",
-            "subCaption": "Last week",
-            "xAxisName": "Day",
-            "yAxisName": "Sales (In USD)",
+            "caption": "Split of Sales by Product Category",
+            "subCaption": "In top 5 stores last month",
+            "yAxisname": "Sales (In USD)",
             "numberPrefix": "$",
-            "paletteColors": "#0075c2",
+            "paletteColors": "#0075c2,#1aaf5d",
             "bgColor": "#ffffff",
             "showBorder": "0",
+            "showHoverEffect": "1",
             "showCanvasBorder": "0",
-            "plotBorderAlpha": "10",
             "usePlotGradientColor": "0",
-            "plotFillAlpha": "50",
+            "plotBorderAlpha": "10",
+            "legendBorderAlpha": "0",
+            "legendShadow": "0",
+            "placevaluesInside": "1",
+            "valueFontColor": "#ffffff",
             "showXAxisLine": "1",
-            "axisLineAlpha": "25",
-            "divLineAlpha": "10",
-            "showValues": "1",
-            "showAlternateHGridColor": "0",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
+            "xAxisLineColor": "#999999",
+            "divlineColor": "#999999",
+            "divLineIsDashed": "1",
+            "showAlternateVGridColor": "0",
             "subcaptionFontBold": "0",
-            "toolTipColor": "#ffffff",
-            "toolTipBorderThickness": "0",
-            "toolTipBgColor": "#000000",
-            "toolTipBgAlpha": "80",
-            "toolTipBorderRadius": "2",
-            "toolTipPadding": "5"
+            "subcaptionFontSize": "14"
         },
-
-        "data": [{
-            "label": "Mon",
-            "value": "4123"
-        }, {
-            "label": "Tue",
-            "value": "4633"
-        }, {
-            "label": "Wed",
-            "value": "5507"
-        }, {
-            "label": "Thu",
-            "value": "4910"
-        }, {
-            "label": "Fri",
-            "value": "5529"
-        }, {
-            "label": "Sat",
-            "value": "5803"
-        }, {
-            "label": "Sun",
-            "value": "6202"
+        "categories": [{
+            "category": [{
+                    "label": "Bakersfield Central"
+                },
+                {
+                    "label": "Garden Groove harbour"
+                },
+                {
+                    "label": "Los Angeles Topanga"
+                },
+                {
+                    "label": "Compton-Rancho Dom"
+                },
+                {
+                    "label": "Daly City Serramonte"
+                }
+            ]
+        }],
+        "dataset": [{
+                "seriesname": "Food Products",
+                "data": [{
+                        "value": "17000"
+                    },
+                    {
+                        "value": "19500"
+                    },
+                    {
+                        "value": "12500"
+                    },
+                    {
+                        "value": "14500"
+                    },
+                    {
+                        "value": "17500"
+                    }
+                ]
+            },
+            {
+                "seriesname": "Non-Food Products",
+                "data": [{
+                        "value": "25400"
+                    },
+                    {
+                        "value": "29800"
+                    },
+                    {
+                        "value": "21800"
+                    },
+                    {
+                        "value": "19500"
+                    },
+                    {
+                        "value": "11500"
+                    }
+                ]
+            }
+        ],
+        "trendlines": [{
+            "line": [{
+                    "startvalue": "15000",
+                    "color": "#0075c2",
+                    "valueOnRight": "1",
+                    "displayvalue": "Avg. for{br}Food"
+                },
+                {
+                    "startvalue": "22000",
+                    "color": "#1aaf5d",
+                    "valueOnRight": "1",
+                    "displayvalue": "Avg. for{br}Non-food"
+                }
+            ]
         }]
     }
 }
