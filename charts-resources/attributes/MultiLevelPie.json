@@ -971,6 +971,13 @@
                 "name": "pieRadius"
             },
             {
+                "description": "This attribute lets you explicitly set the inner radius of the chart. This attribute is useful if you want to enforce one of your own values.",
+                "range": "In Pixels",
+                "type": "Number",
+                "versionsince": "3.13.0",
+                "name": "innerRadius"
+            },
+            {
                 "description": "Set the border color of the pie. By default, it is set to 'FFFFFF'.",
                 "range": " ",
                 "type": "Hex code",
