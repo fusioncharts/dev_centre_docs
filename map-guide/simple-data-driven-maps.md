@@ -4,6 +4,8 @@ description: In this section we will learn how to create a simple map showing th
 heading: Simple Data Driven Maps
 ---
 
+> Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.
+
 In the map given below, you can see the populations of the different continents in the world. 
 
 {% embed_all map-guide-simple-data-driven-maps-example-1.js %}

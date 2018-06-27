@@ -4,6 +4,8 @@ description: All maps in FusionCharts Suite XT have pre defined unique internal 
 heading: Custom Entity IDs
 ---
 
+> Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.
+
 All maps in FusionCharts Suite XT have predefined unique internal IDs to reference each entity. However, if you need to name these entities differently, you can do that by creating custom IDs for entities on a map. Apart from re-defining identities, you can also re-define the short name and long name of each identity, and use these as the label or tooltip of the map.
 
 Consider the example dataset given in the table below. It shows the population numbers for the different continents. It also has columns for the "FusionCharts Internal ID" for each continent and a custom defined Desired ID.
