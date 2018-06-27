@@ -21,9 +21,14 @@ File Name|Description|
 `fusioncharts.charts.js`|This file is required to render all charts present under FusionCharts XT.|
 `fusioncharts.widgets.js`|This file is required to render all gauges present under FusionWidgets XT.|
 `fusioncharts.powercharts.js`|This file is required to render all charts present under PowerCharts XT.|
+`fusioncharts.vml.js`| This file is required to render the chart in VML browsers.
 `fusioncharts.gantt.js`|This file is required to render the Gantt chart, present under FusionWidgets XT.|
 `fusioncharts.treemap.js`|This file is required to render the Treemap, present under PowerCharts XT.|
 `fusioncharts.zoomscatter.js`|This file is required to render the Zoom scatter chart, present under FusionCharts XT.|
+`fusioncharts.zoomline.js`|This file is required to render the Zoom line charts, present under FusionCharts XT.
+`fusioncharts.msstackedcolumn2dsplinedy.js`|This file is required to render multi-series stacked column 2D Spline dual y-axis chart, present under FusionCharts XT.
+`fusioncharts.overlappedbar2d.js`|This file is required to render the Overlapped Bar 2D chart, present under FusionCharts XT.
+`fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT.
 `fusioncharts.maps.js`|This file is core map renderer file. The map definitions, however, are stored separately, as explained next.|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`.You can download definition of all the 965 maps offered by FusionMaps XT from here.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme (JSON) file. Refer each theme with their respective file names.|
@@ -58,13 +63,13 @@ By default, when you set up FusionCharts Suite XT on your web server or your loc
 
 * **FusionCharts XT**: Copy only `fusioncharts.js` and `fusioncharts.charts.js` files from your `js` folder to your working directory.
 
-* **FusionWidgets XT**: Copy only `fusioncharts.js`, `fusioncharts.widgets.js`, and `fusioncharts.gantt.js` files from your `js` folder to your working directory.
+* **FusionWidgets XT**: Copy only `fusioncharts.js`, `fusioncharts.widgets.js`, and files from your `js` folder to your working directory.
 
 * **PowerCharts XT**: Copy only `fusioncharts.js` and `fusioncharts.powercharts.js` files from your `js` folder to your working directory.
 
 * **FusionMaps XT**: Copy only `fusioncharts.maps.js` from your `js` folder and the specific map definition js files from the `maps` sub-folder to your working directory. You will need to download map definition files from [here](https://www.fusioncharts.com/download/maps/definition) and copy-paste the maps folder within your `fusioncharts` directory.
 
-> Include **fusioncharts.treemap.js**, **fusioncharts.zoomscatter.js** and **fusioncharts.gantt.js** to render the respective chart types.
+> Include **fusioncharts.treemap.js**, **fusioncharts.zoomscatter.js**, **fusioncharts.gantt.js** **fusioncharts.zoomline.js**, **fusioncharts.msstackedcolumn2dsplinedy.js**, **fusioncharts.overlappedbar2d.js** and **fusioncharts.overlappedcolumn2d.js**  to render the respective chart types.
 
 This method comes in handy when you have licensed only specific product(s) from FusionCharts Suite XT, and need to overwrite the evaluation version files with the licensed ones. In such a scenario, you will copy the licensed JavaScript files of the relevant product from the licensed download pack (provided after purchase) to your project folder and overwrite the existing evaluation files.
 
@@ -185,6 +190,34 @@ For some chart types, you need to include/exclude certain files and in a specifi
 <script src = "node_modules/fusioncharts/fusioncharts.gantt.js"> </script>
 ```
 
+* To render the Zoom line chart only the **fusioncharts.js** and the **fusioncharts.zoomline.js** files are needed.
+
+```
+<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
+<script src = "node_modules/fusioncharts/fusioncharts.zoomline.js"> </script>
+```
+
+* To render the Multi-Series stacked column 2D Spline dual y-axis chart only the **fusioncharts.js** and the **fusioncharts.msstackedcolumn2dsplinedy.js** files are needed.
+
+```
+<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
+<script src = "node_modules/fusioncharts/fusioncharts.msstackedcolumn2dsplinedy.js"> </script>
+```
+
+* To render the Overlapped Bar 2D chart only the **fusioncharts.js** and the **fusioncharts.overlappedbar2d.js** files are needed.
+
+```
+<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
+<script src = "node_modules/fusioncharts/fusioncharts.overlappedbar2d.js"> </script>
+```
+
+* To render the Overlapped Column 2D chart only the **fusioncharts.js** and the **fusioncharts.overlappedcolumn2d.js** files are needed.
+
+```
+<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
+<script src = "node_modules/fusioncharts/fusioncharts.overlappedcolumn2d.js"> </script>
+```
+
 ## Install via Bower
 
 This section talks about how to install the **fusioncharts** and the **fusionmaps** packages via **Bower** package management software.
@@ -298,6 +331,34 @@ Following are the chart types, and the corresponding files:
 ```
 <script src = "bower_components/fusioncharts/fusioncharts.js"> </script>  
 <script src = "bower_components/fusioncharts/fusioncharts.gantt.js"> </script>
+```
+
+* To render the Zoom line chart only the **fusioncharts.js** and the **fusioncharts.zoomline.js** files are needed.
+
+```
+<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
+<script src = "node_modules/fusioncharts/fusioncharts.zoomline.js"> </script>
+```
+
+* To render the Multi-Series stacked column 2D Spline dual y-axis chart only the **fusioncharts.js** and the **fusioncharts.msstackedcolumn2dsplinedy.js** files are needed.
+
+```
+<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
+<script src = "node_modules/fusioncharts/fusioncharts.msstackedcolumn2dsplinedy.js"> </script>
+```
+
+* To render the Overlapped Bar 2D chart only the **fusioncharts.js** and the **fusioncharts.overlappedbar2d.js** files are needed.
+
+```
+<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
+<script src = "node_modules/fusioncharts/fusioncharts.overlappedbar2d.js"> </script>
+```
+
+* To render the Overlapped Column 2D chart only the **fusioncharts.js** and the **fusioncharts.overlappedcolumn2d.js** files are needed.
+
+```
+<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
+<script src = "node_modules/fusioncharts/fusioncharts.overlappedcolumn2d.js"> </script>
 ```
 
 ## Further Links
