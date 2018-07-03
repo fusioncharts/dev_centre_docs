@@ -113,4 +113,4 @@ For more information on:
 
 * Registering components locally, refer to [Component Registration](https://vuejs.org/v2/guide/components-registration.html '@@open-newtab').
 
-Now that you have installed and resolved the dependencies, [create your first chart].
+Now that you have installed and resolved the dependencies, [create your first chart]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart '@@open-newtab').
