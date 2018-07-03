@@ -1,5 +1,5 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/introduction.html
+permalink: using-with-javascript-libraries/vuejs/installation.html
 title: Introduction to the FusionCharts VueJS Component | FusionCharts
 description: The Vue-FusionCharts component lets you include FusionCharts in your VueJS projects and add interactive JavaScript charts and graphs to your VueJS applications.
 heading: Installation
