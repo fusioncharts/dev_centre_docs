@@ -146,6 +146,8 @@ For more information on these attributes refer to [Creating a Chart Object]({% s
 
 For all illustrations in this document, the [HTML]() acts as a boilerplate and remains unchanged. 
 
+### Note
+
 In the JavaScript code, execution of `var app = new Vue({ })` creates a new Vue instance called app. Depending on the chart type, only two properties of the Vue instance vary mandatorily:
 
 * **`app.type`**: You must set it to the chart name you want to render. For a complete list of all charts and their types, refer to [Chart Gallery](https://www.fusioncharts.com/dev/demos/chart-gallery#Gallary) and explore the desired type in detail.
