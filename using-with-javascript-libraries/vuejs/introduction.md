@@ -70,7 +70,7 @@ If you are using package management systems like npm or bower, execute the follo
     * **npm** — npm install vue fusioncharts vue-fusioncharts 
     * **bower** — bower install vue fusioncharts vue-fusioncharts
 
-1. For more information on getting FusionCharts and associated packages using npm or bower, refer to the [NPM page for FusionCharts](https://www.npmjs.com/package/fusioncharts).
+For more information on getting FusionCharts and associated packages using npm or bower, refer to the [NPM page for FusionCharts](https://www.npmjs.com/package/fusioncharts).
 
 * In your JavaScript file: 
     * **Import** the installed dependencies.
