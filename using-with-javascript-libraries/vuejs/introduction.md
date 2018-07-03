@@ -2,100 +2,115 @@
 permalink: using-with-javascript-libraries/vuejs/introduction.html
 title: Introduction to the FusionCharts VueJS Component | FusionCharts
 description: The Vue-FusionCharts component lets you include FusionCharts in your VueJS projects and add interactive JavaScript charts and graphs to your VueJS applications.
-heading: Introduction to the FusionCharts VueJS Component
+heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT comes with an extensive range of [charts, gauges, and maps](http://www.fusioncharts.com/charts/) that can be used to plot static and real-time data.
+Vue-FusionCharts is an interface between vue.js and FusionCharts. Technically, it contains a component through which you can use FusionCharts in a Vue application.
 
-The Vue-FusionCharts component lets you include FusionCharts in your VueJS projects and add interactive JavaScript charts and graphs to your VueJS applications. Before we get into the installation process of the component, let’s take a look at what sets the VueJS component apart. 
+## List of Dependencies
 
-Some of the basic features of VueJS component are:
+Install the following dependencies:
 
-* Enables interactivity between more than one chart.
+* `vue.js` — Your favorite framework! We recommend using Vue 2.x.
 
-* Auto-updates the chart object when the data source is modified.
+* `fusioncharts.js` — The library for data visualization.
 
-* Can render charts using a JSON/XML URL or Props array binding.
+* `vue-fusioncharts` — The interface between Vue and FusionCharts.
 
-In this article, we will talk about how you can download and install the Vue-FusionCharts component on your system.
+## Modes of Installation
 
-## Downloading the component
+You can install the dependencies in your project using any one of the following:
 
-You can download the Vue-FusionCharts component from [here](https://www.fusioncharts.com/vue-fusioncharts/).
+* CDN
 
-## Installing the Vue-FusionCharts component
+* Compiled JavaScript and CSS
 
-To install the Vue-FusionCharts component for your applications, follow the steps given below:
+* Package Managers
 
-### Step 1: Include `fusioncharts.js` and `vue-fusioncharts.js`
+    * NPM
 
-In your HTML code, include the `fusioncharts.js` and `vue-fusioncharts.js` JavaScript files, as shown in the code below:
+    * Bower
+
+### CDN
 
 ```html
-<script type="text/javascript" src="https://unpkg.com/vue@2.3.3"></script>
-<script type="text/javascript" src="https://unpkg.com/fusioncharts/fusioncharts.js"></script>
-<script type="text/javascript" src="https://unpkg.com/fusioncharts/fusioncharts.charts.js"></script>
-<script type="text/javascript" src="https://unpkg.com/fusioncharts@3.12.1/themes/fusioncharts.theme.fint.js"></script>
-<script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <title>Vue - FusionCharts</title>
+    <!-- VUE -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <!-- FUSIONCHARTS -->
+    <script type="text/javascript" src="https://unpkg.com/fusioncharts/fusioncharts.js"></script>
+    <!-- VUE-FUSIONCHARTS -->
+    <script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"></script>
+</head>
 ```
 
->  It is mandatory to add the __vue-fusioncharts.js__ file __after__ all the other script files. </p>
+### Compiled JavaScript and CSS
 
-### Step 2: Define the chart configuration
-
-As shown in the code below, in your JavaScript code, define an object that contains the configuration for a FusionCharts Suite XT chart. Set the chart data source using the regular [FusionCharts JSON format](http://www.fusioncharts.com/charts/).
-
-```javascript
-data = {
-    type: 'column2d',
-    width: '500',
-    height: '300',
-    dataFormat: 'json',
-    dataSource: myDataSource
-}
+```html
+<head>
+    <meta charset="utf-8">
+    <title>Vue - FusionCharts</title>
+    <!-- VUE -->
+    <script type="text/javascript" src="path/to/local/vue.js"></script>
+    <!-- FUSIONCHARTS -->
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <!-- VUE-FUSIONCHARTS -->
+    <script type="text/javascript" src="path/to/local/vue-fusioncharts.min.js"></script>
+</head>
 ```
 
-### Step 3: Render the Chart
+### Package Managers
 
-To pass the chart configuration, we have added the code from step 2 to `Vue.use(VueFusionCharts)`. The combined code is shown below:
+If you are using package management systems like npm or bower, execute the following steps:
 
-```javascript
-Vue.use(VueFusionCharts);
+* **Install** the packages/dependencies.
+    * **npm** — npm install vue fusioncharts vue-fusioncharts 
+    * **bower** — bower install vue fusioncharts vue-fusioncharts
 
-const myDataSource = {
-};
+1. For more information on getting FusionCharts and associated packages using npm or bower, refer to the [NPM page for FusionCharts](https://www.npmjs.com/package/fusioncharts).
 
-const chart = new Vue({
-    el: '#app',
-    data: {
-        type: 'column2d',
-        width: '500', //to specify the width of the chart
-        height: '300', //to specify the height of the chart
-        dataFormat: 'json',
-        dataSource: myDataSource
-    }
-});
+* In your JavaScript file: 
+    * **Import** the installed dependencies.
+    * **Resolve** the dependency for *charts*.
+    * **Instruct** Vue to use VueFusionCharts.
+
+The import statement for vue-fusioncharts varies depending on whether you want to use the vue-fusioncharts plugin in your Vue application **globally**, or a specific component of it **locally**.
+
+### Global registration
+
+```
+// Global registration
+import Vue from 'vue';
+import FusionCharts from 'fusioncharts';
+import Charts from 'fusioncharts/fusioncharts.charts';
+import VueFusionCharts from 'vue-fusioncharts'; // For global usage
+// Resolve the dependency for charts
+Charts(FusionCharts);
+// Instruct Vue to use VueFusionCharts globally
+Vue.use(VueFusionCharts); // Use the Vue.use() global method
 ```
 
-The HTML template to render the chart is:
+### Local registration
 
-```javascript
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource"
-    ></fusioncharts>
-</div>
+```
+// Import the installed dependencies
+import Vue from 'vue';
+import FusionCharts from 'fusioncharts';
+import Charts from 'fusioncharts/fusioncharts.charts';
+import { FCComponent } from 'vue-fusioncharts'; // For local registration
+// Resolve the dependency for charts
+Charts(FusionCharts);
+// Instruct Vue to use VueFusionCharts locally
+Vue.component('fusioncharts', FCComponent); // Use the Vue.component() local method
 ```
 
+For more information on:
 
-Once the installation is complete, you will be ready to start creating and customizing your charts using the vue-fusioncharts component. The subsequent articles in this section will tell you how.
+* Using global methods, refer to [Plugins](https://vuejs.org/v2/guide/plugins.html#Using-a-Plugin).
 
+* Registering components locally, refer to [Component Registration](https://vuejs.org/v2/guide/components-registration.html).
 
-## Licensing
-
-Vue-FusionCharts is an open-source resource and distributed under the terms of the MIT/X11 License. You will still need to include FusionCharts in your page. This project provides no direct functionality. You can download a [free evaluation version](https://www.fusioncharts.com/download/) here. You will still need to purchase a FusionCharts license to use in a commercial environment ([FusionCharts is free for noncommercial and personal use](https://www.fusioncharts.com/download/free/)).
+Now that you have installed and resolved the dependencies, [create your first chart].
