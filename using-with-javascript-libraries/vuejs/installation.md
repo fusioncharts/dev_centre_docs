@@ -1,6 +1,6 @@
 ---
 permalink: using-with-javascript-libraries/vuejs/installation.html
-title: Introduction to the FusionCharts VueJS Component | FusionCharts
+title: Installation | FusionCharts
 description: The Vue-FusionCharts component lets you include FusionCharts in your VueJS projects and add interactive JavaScript charts and graphs to your VueJS applications.
 heading: Installation
 chartPresent: false
@@ -70,7 +70,7 @@ If you are using package management systems like npm or bower, execute the follo
     * **npm** — npm install vue fusioncharts vue-fusioncharts 
     * **bower** — bower install vue fusioncharts vue-fusioncharts
 
-For more information on getting FusionCharts and associated packages using npm or bower, refer to the [NPM page for FusionCharts](https://www.npmjs.com/package/fusioncharts).
+For more information on getting FusionCharts and associated packages using npm or bower, refer to the [NPM page for FusionCharts](https://www.npmjs.com/package/fusioncharts '@@open-newtab').
 
 * In your JavaScript file: 
     * **Import** the installed dependencies.
@@ -109,8 +109,8 @@ Vue.component('fusioncharts', FCComponent); // Use the Vue.component() local met
 
 For more information on:
 
-* Using global methods, refer to [Plugins](https://vuejs.org/v2/guide/plugins.html#Using-a-Plugin).
+* Using global methods, refer to [Plugins](https://vuejs.org/v2/guide/plugins.html#Using-a-Plugin '@@open-newtab').
 
-* Registering components locally, refer to [Component Registration](https://vuejs.org/v2/guide/components-registration.html).
+* Registering components locally, refer to [Component Registration](https://vuejs.org/v2/guide/components-registration.html '@@open-newtab').
 
 Now that you have installed and resolved the dependencies, [create your first chart].
