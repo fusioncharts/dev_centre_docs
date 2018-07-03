@@ -152,7 +152,7 @@ In the JavaScript code, execution of `var app = new Vue({ })` creates a new Vue 
 
 * **`app.type`**: You must set it to the chart name you want to render. For a complete list of all charts and their types, refer to [Chart Gallery](https://www.fusioncharts.com/dev/demos/chart-gallery#Gallary) and explore the desired type in detail.
 
-* **`app.dataSource`:** Each chart has its own data schema that defines the chart configuration and the source of data. Thus, this object varies significantly depending of the type of chart.
+* **`app.dataSource`**: Each chart has its own data schema that defines the chart configuration and the source of data. Thus, this object varies significantly depending of the type of chart.
 
 In the subsequent sections, only chart-specific changes made in the JavaScript code are discussed.
 
