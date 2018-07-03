@@ -126,7 +126,7 @@ var app = new Vue({
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart. 
 
-### Attributes of <fusioncharts></fusioncharts>
+### Attributes of &lt;fusioncharts&gt;&lt;/fusioncharts&gt;
 
 The attributes of the custom element/component `<fusioncharts></fusioncharts>` defines the visualization that will be rendered within the `<div id='app'></div>` element. 
 
@@ -144,7 +144,7 @@ Name|Type|Default Value|Description|
 
 For more information on these attributes refer to [Creating a Chart Object]({% site.baseurl %}fusioncharts#creating-a-chart-object-0 '@@open-newtab').
 
-For all illustrations in this document, the [HTML]() acts as a boilerplate and remains unchanged. 
+For all illustrations in this document, the [HTML]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart#html-3 '@@open-newtab') acts as a boilerplate and remains unchanged. 
 
 ### Note
 
@@ -183,7 +183,7 @@ var app = new Vue({
 
 To create the Angular Gauge:
 
-* Reuse the [HTML]().
+* Reuse the [HTML]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart#html-3 '@@open-newtab').
 
 * In the JavaScript file:
 
@@ -241,7 +241,7 @@ In this section, you will create a visualization using map of **USA**.
 
 To create the visualization:
 
-* Reuse the [HTML]().
+* Reuse the [HTML]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart#html-3 '@@open-newtab').
 
 * In the JavaScript file:
     * Modify `app.type` and set it to `maps/usa`.
