@@ -22,7 +22,7 @@ Direct JavaScript files|NPM|
 
 In order to install and start working with Vue-FusionCharts you need to:
 
-* [Download](https://vuejs.org/v2/guide/installation.html) the `Vue core` library.
+* [Download](https://vuejs.org/v2/guide/installation.html) the `Vue core library`.
 * [Download](https://www.fusioncharts.com/vue-fusioncharts/) the Vue-FusionCharts plugin which contains the `vue-fusioncharts.js` file.
 * [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files.
 
@@ -37,39 +37,40 @@ Following is the list of js files present in your fusioncharts folder:
 File Name|Description|
 -|-
 `fusioncharts.js`|This is the core FusionCharts library, which you need to import in all your pages where you want to generate a chart, gauge or a map.|
+
 `fusioncharts.charts.js`|This file is required to render all charts present under FusionCharts XT.
-
 Note: When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.charts.js`.|
+
 `fusioncharts.widgets.js`|This file is required to render all gauges present under FusionWidgets XT.
-
 Note: When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.widgets.js`.|
+
 `fusioncharts.powercharts.js`|This file is required to render all charts present under PowerCharts XT.
-
 Note: When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.powercharts.js`.|
+
 `fusioncharts.gantt.js`|This file is required to render the Gantt chart.
-
 Note: When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.gantt.js`.|
+
 `fusioncharts.treemap.js`|This file is required to render the Treemap.
-
 Note: When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.treemap.js`.|
+
 `fusioncharts.zoomscatter.js`|This file is required to render the Zoom scatter chart
-
 Note: When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.zoomscatter.js`.|
+
 `fusioncharts.zoomline.js`|This file is required to render the Zoom line charts.
-
 Note: When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.zoomline.js`.|
+
 `fusioncharts.overlappedbar2d.js`|This file is required to render the Overlapped Bar 2D chart.
-
 Note: When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedbar2d.js`.|
+
 `fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT.
-
 Note: When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js`.|
+
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next.
-
 Note: When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
-`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from here.
 
+`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from here.
 Note: Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
+
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files (JSON & CSS). Refer each theme with their respective `JavaScript` and `CSS` file names.|
 
 In order to install, create an HTML file and follow the steps below.
