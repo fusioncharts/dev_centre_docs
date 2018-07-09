@@ -222,6 +222,7 @@ To add chart dependency, execute the following command:
 
 ```Shell
 // FusionCharts.addDep(ChartType)
+
 FusionCharts.addDep(Charts);
 ```
 
@@ -239,6 +240,7 @@ To include the specific chart from `viz` folder, execute the following command:
 
 ```Shell
 // import ChartType from `fusioncharts/viz/[ChartType]`
+
 import Column2D from `fusioncharts/viz/column2d`;
 ```
 
@@ -246,6 +248,7 @@ To add chart dependency, execute the following command:
 
 ```Shell
 // FusionCharts.addDep(ChartType);
+
 FusionCharts.addDep(Column2D);
 ```
 
@@ -272,6 +275,7 @@ To add chart dependency, execute the following command:
 
 ```Shell
 // FusionCharts.addDep(ChartType);
+
 FusionCharts.addDep(Column2D);
 FusionCharts.addDep(Line2D);
 ```
@@ -306,6 +310,7 @@ To include the specific chart from `viz` folder, execute the following command:
 
 ```Shell
 // import ChartType from `fusioncharts/viz/[ChartType]`
+
 import Column2D from `fusioncharts/viz/column2d`;
 ```
 
@@ -313,6 +318,7 @@ To add chart dependency, execute the following command:
 
 ```Shell
 // FusionCharts.addDep(ChartType);
+
 FusionCharts.addDep(Column2D);
 ```
 
