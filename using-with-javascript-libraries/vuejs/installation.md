@@ -16,7 +16,12 @@ Some of the basic features of VueJS component are:
 
 In this article, we will show you how you can download and install the Vue-FusionCharts component and all the other dependencies on your system. You can use FusionCharts in your Vue project using any of the two modes given below:
 
-[Direct JavaScript files]({% site.baseurl %}/using-with-javascript-libraries/vuejs/installation#install-using-direct-javascript-files-1 '@@open-newtab')|[NPM]({% site.baseurl %}/using-with-javascript-libraries/vuejs/installation#install-fusioncharts-via-npm-4 '@@open-newtab')|
+<table>
+    <tr>
+        <td align="center">[Direct JavaScript files]({% site.baseurl %}/using-with-javascript-libraries/vuejs/installation#install-using-direct-javascript-files-1)</td>
+        <td align="center">[NPM]({% site.baseurl %}/using-with-javascript-libraries/vuejs/installation#install-fusioncharts-via-npm-4)</td>
+    </tr>
+</table>
 
 ## Install using Direct JavaScript files
 
