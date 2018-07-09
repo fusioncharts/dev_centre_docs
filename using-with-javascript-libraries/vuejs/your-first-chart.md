@@ -12,7 +12,7 @@ Before going through this article, please [install]({% site.baseurl %}/using-wit
 
 ## Create your first chart
 
-In this section, we will create a chart using `vue-fusioncharts`. We will use the **column2d** chart alias to create a **Column 2D** chart. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here](({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
+In this section, we will create a chart using `vue-fusioncharts`. We will use the **column2d** chart alias to create a **Column 2D** chart. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
 
 To create charts, the vue-fusioncharts component can be passed as a part of another VueJs component.
 
@@ -41,7 +41,7 @@ December|$730,000|
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
 
-> There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series](({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination](({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+> There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
 ```javascript
 {
@@ -121,7 +121,7 @@ Cosmetic attributes let you configure chart cosmetics like color, transparency, 
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
 * `numberPrefix` adds prefix to all the numbers visible on the chart.
 
-For the detailed list of attributes, click [here](({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
+For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
 ### Create an instance of the chart
 
@@ -151,7 +151,7 @@ const app = new Vue({
 In the above code:
 
 * We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using `width` and `height`.
-* To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format](({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
+* To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 
 The HTML template of the above sample is shown below:
@@ -170,14 +170,14 @@ The HTML template of the above sample is shown below:
 
 That's it! When you run this HTML page now, you should see a chart representing your data.
 
-See the complete list of [all possible attributes](({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
 
 In the JavaScript code, execution of `var app = new Vue({ })` creates a new Vue instance called app. Depending on the chart type, only two properties of the Vue instance vary mandatorily:
 
-* `app.type`: You must set it to the chart name you want to render. For a complete list of all charts and their types, refer to [Chart Gallery](({% site.baseurl %}/demos/chart-gallery#Gallary '@@open-newtab') and explore the desired type in detail.
+* `app.type`: You must set it to the chart name you want to render. For a complete list of all charts and their types, refer to [Chart Gallery]({% site.baseurl %}/demos/chart-gallery#Gallary '@@open-newtab') and explore the desired type in detail.
 * `app.dataSource`: Each chart has its own data schema that defines the chart configuration and the source of data. Thus, this object varies significantly depending of the type of chart.
 
-Now, go on and explore other 95+ chart types that we've in [FusionCharts](({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attribute](({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
+Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 
 ## Create your first gauge
 
@@ -277,7 +277,7 @@ The HTML template for the above sample is:
 </div>
 ```
 
-See the complete list of[ all possible attributes](({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
+See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
 
 ## Create your first map
 
@@ -532,9 +532,9 @@ The HTML template for the above sample is:
 </div>
 ```
 
-See the complete list of [all possible attributes](({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of usa. A list of states of USA, and their respective `id`, can be found at [here](({% site.baseurl %}/maps/spec-sheets/usa '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of usa. A list of states of USA, and their respective `id`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/usa '@@open-newtab').
 
-Get the **customization tips** for the chart, refer to [Building Your First Map](({% site.baseurl %}/chart-guide/getting-started/building-your-first-map '@@open-newtab').
+Get the **customization tips** for the chart, refer to [Building Your First Map]({% site.baseurl %}/chart-guide/getting-started/building-your-first-map '@@open-newtab').
 
 ## Problem rendering the chart?
 
