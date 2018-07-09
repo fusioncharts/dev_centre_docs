@@ -207,7 +207,8 @@ To include the fusioncharts class, execute the following command:
 import FusionCharts from `fusioncharts/core`;
 import Charts from `fusioncharts/charts`;
 
-**Note:** To use charts and gauges from PowerCharts and Widgets, import their respective modules using:
+Note: To use charts and gauges from PowerCharts and Widgets, import their respective modules using:
+
 import PowerCharts from `fusioncharts/powercharts`; (for PowerCharts)
 import Widgets from `fusioncharts/widgets`; (for Widgets)
 ```
@@ -348,13 +349,11 @@ To include the **map definition** file you want to render, execute the following
 import World from `fusioncharts/maps/es/fusioncharts.world`;
 ```
 
-> **Note:** If you want to render a map which is not in the fusioncharts package(world and USA), then you need to install **fusionmaps** which contains all the ES6 map definition:
+> If you want to render a map which is not in the fusioncharts package(world and USA), then you need to install **fusionmaps** which contains all the ES6 map definition:
+* npm install fusionmaps
+* ES-6 definitions can be found in node_modules/fusionmaps/maps/es/fusioncharts.[MAP-ALIAS].js
 
-> * npm install fusionmaps
-
-> * ES-6 definitions can be found in node_modules/fusionmaps/maps/es/fusioncharts.[MAP-ALIAS].js
-
-> **Note:** If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
+> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
 
 To add the map and definition as the dependency to the core, execute the following command:
 
