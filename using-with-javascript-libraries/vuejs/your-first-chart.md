@@ -6,7 +6,7 @@ heading: Your First Chart in Vue using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and Vue-FusionCharts plugin. We'll start with simple examples of creating a [chart](#heading=h.rygp38dxbsar), then a [gauge](#heading=h.ioz3askike0k) and a [map](https://docs.google.com/document/d/1p4aAZ4CeIg4Is1PtKikroClxnnoUyQxBzOs2GxxD48M/edit#heading=h.vzvffgrbwrks).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and Vue-FusionCharts plugin. We'll start with simple examples of creating a [chart]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart#create-your-first-gauge-7) and a [map]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart#create-your-first-map-10).
 
 Before going through this article, please [install]({% site.baseurl %}/using-with-javascript-libraries/vuejs/installation '@@open-newtab') `vue-fusioncharts` plugin, if not already installed.
 
@@ -187,7 +187,7 @@ To start with, we'll build a simple "Weekly Customer Satisfaction Index" gauge a
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-### The thresholds for his customer satisfaction score has been defined using the following range.
+The thresholds for his customer satisfaction score has been defined using the following range.
 
 Range|Color|Hex Code|
 -|-|-
