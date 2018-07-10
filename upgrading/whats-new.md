@@ -9,7 +9,10 @@ This section is for users who are using previous version of FusionCharts in thei
 
 ## Overlapped Column 2D and Bar 2D Chart
 
-With version 3.13.0, FusionCharts has come up with a clever and rather effective bar chart to display your data. In this chart, the two data series overlap. 
+With version 3.13.0, FusionCharts has come up with a clever and rather effective bar chart to display your data. 
+
+* Overlapped Column 2D Chart
+* Overlapped Bar 2D Chart
 
 The overlapped column 2D chart looks like:
 
@@ -21,7 +24,7 @@ The overlapped bar 2D chart looks like:
 
 ## Spline and Spline area charts in Combination Chart
 
-Spline and Spline area charts can now be built as a part of combination charts. To render spline or spline area in combination chart, set the value of one of the `renderAs` attribute to `spline` or `splineArea`.
+Spline and Spline area charts can now be built as a part of combination charts.
 
 A combination chart with a spline as a part of it looks like:
 
