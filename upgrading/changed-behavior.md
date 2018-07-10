@@ -19,7 +19,16 @@ Following is the list of attributes which have been replaced with new ones:
 
 Old Attribute|New Attribute
 --|--
-showFormBtn (deprecated)|`enableSubmit`
-formBtnTitle (deprecated)|`submitText`
-showRestoreBtn (deprecated)|`enableRestore`
-restoreBtnTitle (deprecated)|`restoreText`
+`showFormBtn` (deprecated)|`enableSubmit`
+`formBtnTitle` (deprecated)|`submitText`
+`showRestoreBtn` (deprecated)|`enableRestore`
+`restoreBtnTitle` (deprecated)|`restoreText`
+
+## Inversed Data Plot
+
+The inverse y-axis charts are similar to the normal column charts, except that the y-axis in these charts are inverted. The lower limit and upper limit value positions are swapped in the inverse y-axis chart. In v3.13.0 inverse chart comes with a new appearance, i.e., the data plots will now appear from the top of the canvas.
+
+The new visualization of the inverse chart looks like:
+
+{% embed_all standard-charts-inverse-charts-example-1.js %}
+
