@@ -63,18 +63,6 @@ The multi-series column chart in 3D looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/3x4xcn70/ "@@open-newtab") to edit the above multi-series chart.
 
-## Overlapped Column 2D Chart
-
-With version 3.13.0, FusionCharts has come up with a clever and rather effective bar chart to display your data. In this chart, the two data series overlap. The width of the plot for the data series differs which makes the chart easy to compare. 
-
-To render the overlapped column 2D chart, set the value of the `type` attribute to `OverlappedColumn2d`. The rest of the data structure remains the same.
-
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=overlappedcolumn2d "@@open-newtab") page of overlapped column 2D chart.
-
-The overlapped column 2D chart looks like:
-
-{% embed_all standard-charts-multi-series-charts-example-7.js %}
-
 ## Multi-series Bar 2D Chart
 
 Let's move ahead to create a multi-series bar chart in 2D which will show sales as per two major categories in different stores for last month.
@@ -100,18 +88,6 @@ The multi-series bar chart in 3D looks like:
 {% embed_all standard-charts-multi-series-charts-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/X9xPM/ "@@open-newtab") to edit the above multi-series chart.
-
-## Overlapped Bar 2D Chart
-
-With version 3.13.0, FusionCharts has come up with a clever and rather effective bar chart to display your data. In this chart, the two data series overlap. The width of the plot for the data series differs which makes the chart easy to compare. 
-
-To render the overlapped bar 2D chart, set the value of the `type` attribute to `OverlappedBar2d`. The rest of the data structure remains the same.
-
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=overlappedbar2d "@@open-newtab") page of overlapped bar 2D chart.
-
-The overlapped bar 2D chart looks like:
-
-{% embed_all standard-charts-multi-series-charts-example-8.js %}
 
 ## Multi-series Line Chart
 
