@@ -13,20 +13,23 @@ To upgrade, you must do the following:
 
 2. If you are using an __older__ trial version of FusionCharts Suite XT (earlier than v3.4) [the file names have changed]({% site.baseurl %}/migration/upgrading-from-previous-versions "@@open-newtab"). So, ensure that you have copied the following files from the `js` folder of your download:
 
-     * `fusioncharts.charts.js`
      * `fusioncharts.js`
+     * `fusioncharts.charts.js`
+     * `fusioncharts.widgets.js`
      * `fusioncharts.powercharts.js`
      * `fusioncharts.gantt.js`
      * `fusioncharts.treemap.js`
      * `fusioncharts.zoomscatter.js`
+     * `fusioncharts.zoomline.js`
+     * `fusioncharts.overlappedbar2d.js`
+     * `fusioncharts.overlappedcolumn2d.js`
      * `fusioncharts.maps.js`
-     * `fusioncharts.widgets.js`
 
 3. __You must clear your browser cache__. This a very important step.
 
 With that you have upgraded to the commercial version of FusionCharts. You will not see any watermarks on the charts when used with your application.
 
-#### Licensing only specific sub products
+## Licensing only specific sub products
 
 The following points must be kept in mind while upgrading only a specific sub product :
 

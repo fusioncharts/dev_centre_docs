@@ -1,8 +1,8 @@
 ---
-title: What's New in v3.12.2 | FusionCharts
-description: This section talks about the new features introduced in v3.12.2.
-heading: What's New in v3.12.2
-breadcrumb: [["Home", "/"], ["What's New in v3.12.2"]]
+title: What's New | FusionCharts
+description: This section talks about the new features introduced in latest version.
+heading: What's New
+breadcrumb: [["Home", "/"], ["What's New"]]
 ---
 
 * Improvement:

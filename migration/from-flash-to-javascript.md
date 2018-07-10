@@ -1,13 +1,13 @@
 ---
-title: Upgrade from Previous Versions | FusionCharts
-description: This section talks about how can a user upgrade his version from the previous one.
-heading: Upgrade from Previous Versions
-breadcrumb: [["Home", "/"], ["Upgrade from Previous Versions"]]
+title: From Flash to JavaScript | FusionCharts
+description: This section talks about how can a user upgrade to JavaScript version from the flash version.
+heading: From Flash to JavaScript
+breadcrumb: [["Home", "/"], ["From Flash to JavaScript"]]
 ---
 
 This section is for those who are using any version of FusionCharts older than v3.3.1 and upgrading to v3.4 or beyond.
 
-#### What's Changed?
+## What's Changed?
 
  * Starting v3.4, the file names and package structure of FusionCharts JavaScript library files have changed. Additionally, all file names are now in lower case to avoid conflicts on case-sensitive servers.
  * Huge performance increase in rendering charts and memory leak issues are fixed.
@@ -33,14 +33,17 @@ Do the following while upgrading:
 
 1. Copy the following files from the js folder of your download and replace the existing files in your application's fusioncharts folder:
 
-     * `fusioncharts.charts.js`
      * `fusioncharts.js`
+     * `fusioncharts.charts.js`
+     * `fusioncharts.widgets.js`
      * `fusioncharts.powercharts.js`
      * `fusioncharts.gantt.js`
      * `fusioncharts.treemap.js`
      * `fusioncharts.zoomscatter.js`
+     * `fusioncharts.zoomline.js`
+     * `fusioncharts.overlappedbar2d.js`
+     * `fusioncharts.overlappedcolumn2d.js`
      * `fusioncharts.maps.js`
-     * `fusioncharts.widgets.js`
 
 2. If you already have dashboards running, then you will need to rename the include path with the updated file name depending on the product you are using. Also note that filenames should NOT be renamed to the old names.
 
@@ -48,7 +51,7 @@ Do the following while upgrading:
 
 That's it ! You have upgraded to the latest version of FusionCharts.
 
-#### Upgrading only specific Individual products
+## Upgrade only specific Individual products
 
 The following points must be kept in mind while upgrading only a specific sub product :
 
