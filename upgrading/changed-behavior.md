@@ -19,7 +19,7 @@ Following is the list of attributes which have been replaced with new ones:
 
 Old Attribute|New Attribute
 --|--
-showFormBtn (deprecated)|enableSubmit
-formBtnTitle (deprecated)|submitText
-showRestoreBtn (deprecated)|enableRestore
-restoreBtnTitle (deprecated)|restoreText
+showFormBtn (deprecated)|`enableSubmit`
+formBtnTitle (deprecated)|`submitText`
+showRestoreBtn (deprecated)|`enableRestore`
+restoreBtnTitle (deprecated)|`restoreText`
