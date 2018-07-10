@@ -9,7 +9,7 @@ This section is for users who are using previous version of FusionCharts in thei
 
 ## Overlapped Column 2D and Bar 2D Chart
 
-With version 3.13.0, FusionCharts has come up with a clever and rather effective bar chart to display your data. 
+In version 3.13.0, FusionCharts has come up with a clever and rather effective bar chart to display your data. In these charts, the two data series overlap. The width of the plot for the data series differs which makes the chart easy to compare.  
 
 * Overlapped Column 2D Chart
 * Overlapped Bar 2D Chart
@@ -24,7 +24,7 @@ The overlapped bar 2D chart looks like:
 
 ## Spline and Spline area charts in Combination Chart
 
-Spline and Spline area charts can now be built as a part of combination charts.
+Spline and Spline area charts can now be built as a part of combination charts. To define any one of the dataset to spline or spline area, set the `renderAs` attribute to `spline` or `splineArea` respectively.
 
 A combination chart with spline and a splineArea as a part of it looks like:
 
@@ -50,21 +50,11 @@ A multi-level pie chart with inner radius set to `10` looks like:
 
 ## Export Multi-level pie chart in CSV or XLS formats
 
-With version 3.13.0, data from multi-level pie charts can be exported in CSV or XLS formats.
+In version 3.13.0, data from multi-level pie charts can be exported in CSV or XLS formats.
 
 Refer to the GIF shown below:
 
 GIF
-
-## Set the Limits of Zoomline Chart
-
-In zoomline charts, `maxPeakDataLimit` and `minPeakDataLimit` attributes set the upper and lower limit for peak data respectively.
-
-For the detailed desctiption of the attributes, click here
-
-The zoomline chart with above attributes look like:
-
-Sample 
 
 ## Secondard data plots overlap Primary data plots
 
@@ -73,3 +63,15 @@ From version 3.13.0 visualization of dual y-axis multi-series chart have been ch
 The multi-series chart with both the data plots set as column looks like:
 
 Sample
+
+## Set the Limits of Zoomline Chart
+
+In the zoomline chart, all the values are not plotted in the initial display of the chart. Some values are picked smartly from the entire data set to plot to show similar trend. If you want to visualize a particular segment of chart closely, you can zoom in and reveal all the plot points.
+
+`showPeakData` is set to define a condition for peak data, whereas `maxPeakDataLimit` and `minPeakDataLimit` attributes defines those conditions. Value greater than `maxPeakDataLimit` will be considered as peak data and is included in initial display of zoomline. Whereas value lower than `minPeakDataLimit` will also be included as peak data.
+
+For the detailed desctiption of the attributes, click here.
+
+The zoomline chart with above attributes look like:
+
+Sample 
