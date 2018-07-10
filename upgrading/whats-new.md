@@ -26,21 +26,16 @@ The overlapped bar 2D chart looks like:
 
 Spline and Spline area charts can now be built as a part of combination charts.
 
-A combination chart with a spline as a part of it looks like:
+A combination chart with spline and a splineArea as a part of it looks like:
 
-Sample
-
-A combination chart with a spline area as a part of it looks like:
-
-Sample
+{% embed_all standard-charts-combination-chart-example-12.js %}
 
 ## Highlight effect in Multi-level Pie chart
 
 `highlightParentPieSlices` and `highlightChildPieSlices` attributes have been introduced in multi-level pie chart to set the direction of the highlight effect of the plots when hovered. 
 
-A multi-level pic chart looks like:
+A multi-level pie chart with above attributes look like:
 
-Sample
+{% embed_all standard-charts-multi-level-pie-chart-example-2.js %}
 
 For the detailed description of the attributes, click here.
-
