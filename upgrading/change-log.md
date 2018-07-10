@@ -15,17 +15,17 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * A common [theme](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member-9) can now be applied to all charts in a page.
 
-* In multi-level pie chart, `[highlightParentPieSlices](https://www.fusioncharts.com/dev/chart-attributes/?chart=multilevelpie&attribute=chart_highlightparentpieslices)` and `[highlightChildPieSlices](https://www.fusioncharts.com/dev/chart-attributes/?chart=multilevelpie&attribute=chart_highlightChildPieSlices)` attributes have been introduced to determine the direction of the highlight effect. 
+* In multi-level pie chart, [highlightParentPieSlices](https://www.fusioncharts.com/dev/chart-attributes/?chart=multilevelpie&attribute=chart_highlightparentpieslices) and [highlightChildPieSlices](https://www.fusioncharts.com/dev/chart-attributes/?chart=multilevelpie&attribute=chart_highlightChildPieSlices) attributes have been introduced to determine the direction of the highlight effect. 
 
 * The inner radius of the multi-level pie chart can be configured explicitly using `innerRadius` attribute.
 
-* Custom fonts from client-side export can now be exported using `[useSVGDeCanvo](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member-9)` option.
+* Custom fonts from client-side export can now be exported using [useSVGDeCanvo](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member-9) option.
 
 * Data from Multi-level Pie charts can now be exported in CSV or XLS formats.
 
-* In zoomline chart, `[maxPeakDataLimit](https://www.fusioncharts.com/dev/chart-attributes/?chart=zoomline&attribute=chart_maxpeakdatalimit)` and `[minPeakDataLimit](https://www.fusioncharts.com/dev/chart-attributes/?chart=zoomline&attribute=chart_minpeakdatalimit)` attributes consider the limits as a range when both the attributes are used.
+* In zoomline chart, [maxPeakDataLimit](https://www.fusioncharts.com/dev/chart-attributes/?chart=zoomline&attribute=chart_maxpeakdatalimit) and [minPeakDataLimit](https://www.fusioncharts.com/dev/chart-attributes/?chart=zoomline&attribute=chart_minpeakdatalimit) attributes consider the limits as a range when both the attributes are used.
 
-* `[getSVGString](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#getsvgstring-95)` now accepts an object as the second parameter with a property named `keepImages`. It can now export the logo or any images (background images, etc.) present in the chart.
+* [getSVGString](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#getsvgstring-95) now accepts an object as the second parameter with a property named `keepImages`. It can now export the logo or any images (background images, etc.) present in the chart.
 
 * `fusioncharts.vml.js` file has been added to the package for VML browsers which contains all the VML related codes.
 
@@ -33,15 +33,15 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * For dual y-axis charts, the secondary data plots now overlaps the primary data plots if `renderAs` attribute is set as column. 
 
-* In order to free chart areas, the restore button in select-scatter and drag-able chart has been moved to `[options menu](https://www.fusioncharts.com/dev/chart-guide/standard-charts/drag-able-charts#dragable-column-d-chart-1)`. The list of attributes which have been added are as follows:
+* In order to free chart areas, the restore button in select-scatter and drag-able chart has been moved to [options menu](https://www.fusioncharts.com/dev/chart-guide/standard-charts/drag-able-charts#dragable-column-d-chart-1). The list of attributes which have been added are as follows:
 
-    * `[enableSubmit](https://www.fusioncharts.com/dev/chart-attributes/?chart=dragcolumn2d&attribute=chart_enablesubmit)`
+    * [enableSubmit](https://www.fusioncharts.com/dev/chart-attributes/?chart=dragcolumn2d&attribute=chart_enablesubmit)
 
-    * `[submitText](https://www.fusioncharts.com/dev/chart-attributes/?chart=dragcolumn2d&attribute=chart_submittext)`
+    * [submitText](https://www.fusioncharts.com/dev/chart-attributes/?chart=dragcolumn2d&attribute=chart_submittext)
 
-    * `[enableRestore](https://www.fusioncharts.com/dev/chart-attributes/?chart=dragcolumn2d&attribute=chart_enablerestore)`
+    * [enableRestore](https://www.fusioncharts.com/dev/chart-attributes/?chart=dragcolumn2d&attribute=chart_enablerestore)
 
-    * `[restoreText](https://www.fusioncharts.com/dev/chart-attributes/?chart=dragcolumn2d&attribute=chart_restoretext)`
+    * [restoreText](https://www.fusioncharts.com/dev/chart-attributes/?chart=dragcolumn2d&attribute=chart_restoretext)
 
 * Data plots in the [inverse chart](https://www.fusioncharts.com/dev/chart-guide/standard-charts/inverse-y-axis-chart#inverse-yaxis-chart-0) will now appear from the top of the canvas.
 
@@ -49,13 +49,13 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * The `defaultPrevented` property in the `eventObject` is used instead of the `prevented` property.
 
-* The `[onChangeCrossLine](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events#onchangecrossline-287)` event is fired when the mouse pointer is moved from one data plot to another.
+* The [onChangeCrossLine](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events#onchangecrossline-287) event is fired when the mouse pointer is moved from one data plot to another.
 
 * Gradient legend now sustains the state even on resize.
 
 * The chart names in theme files are now case insensitive.
 
-* `[render()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#render-111)` function will also be fired when updating the chart type.
+* [render()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#render-111) function will also be fired when updating the chart type.
 
 * The core maps package has been updated to:
 
