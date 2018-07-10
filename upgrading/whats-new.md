@@ -54,3 +54,22 @@ With version 3.13.0, data from multi-level pie charts can be exported in CSV or 
 
 Refer to the GIF shown below:
 
+GIF
+
+## Set the Limits of Zoomline Chart
+
+In zoomline charts, `maxPeakDataLimit` and `minPeakDataLimit` attributes set the upper and lower limit for peak data respectively.
+
+For the detailed desctiption of the attributes, click here
+
+The zoomline chart with above attributes look like:
+
+Sample 
+
+## Secondard data plots overlap Primary data plots
+
+From version 3.13.0 visualization of dual y-axis multi-series chart have been changed. Now, if the data plots for both the axes are set as column, the secondary plots overlaps the primary plots.
+
+The multi-series chart with both the data plots set as column looks like:
+
+Sample

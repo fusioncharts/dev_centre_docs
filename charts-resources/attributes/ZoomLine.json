@@ -1295,7 +1295,7 @@
                 "name": "maxPeakDataLimit"
             },
             {
-                "description": "Defines the upper limit for peak data. Any value greater than this value will be considered peak data. If the value of `maxPeakDataLimit` attribute is set less than `minPeakDataLimit` attribute, the values between the range will be considered as peak data.",
+                "description": "Defines the lower limit for peak data. Any value lower than this value will be considered peak data. If the value of `maxPeakDataLimit` attribute is set less than `minPeakDataLimit` attribute, the values between the range will be considered as peak data.",
                 "range": "",
                 "type": "Number",
                 "name": "minPeakDataLimit"
