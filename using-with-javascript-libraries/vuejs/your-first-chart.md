@@ -12,9 +12,9 @@ Before going through this article, please [install]({% site.baseurl %}/using-wit
 
 ## Create your first chart
 
-In this section, we will create a chart using `vue-fusioncharts`. We will use the **column2d** chart alias to create a **Column 2D** chart. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
+In this section, we will create a chart using `vue-fusioncharts`. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
 
-To create charts, the vue-fusioncharts component can be passed as a part of another VueJs component.
+To create charts, the `vue-fusioncharts` component can be passed as a part of another VueJs component.
 
 Let's start with a simple example of "Monthly revenue" chart, which we will plot in a Column 2D chart as shown below:
 
@@ -110,16 +110,17 @@ Functional attributes let you control a variety of functional elements on the ch
 
 * `showLabels` sets the  configuration whether the x-axis labels will be displayed or not.
 * `showValue` sets the configuration whether data values will be displayed along with the data plot on chart.
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
-
-#### Cosmetics Attributes
-
-Cosmetic attributes let you configure chart cosmetics like color, transparency, caption, name, etc. The list of cosmetic attributes used in the above code are:
-
 * `caption` sets the caption of the chart.
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
 * `numberPrefix` adds prefix to all the numbers visible on the chart.
+* Please note, we have used the `theme` attribute in the chart's JSON data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
+
+#### Cosmetics Attributes
+
+Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click here.
+
+
 
 For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
@@ -533,8 +534,6 @@ The HTML template for the above sample is:
 ```
 
 See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of usa. A list of states of USA, and their respective `id`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/usa '@@open-newtab').
-
-Get the **customization tips** for the chart, refer to [Building Your First Map]({% site.baseurl %}/chart-guide/getting-started/building-your-first-map '@@open-newtab').
 
 ## Problem rendering the chart?
 
