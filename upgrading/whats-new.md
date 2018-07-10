@@ -9,13 +9,13 @@ This section is for users who are using previous version of FusionCharts in thei
 
 ## Overlapped Column 2D and Bar 2D Chart
 
-With version 3.13.0, FusionCharts has come up with a clever and rather effective bar chart to display your data. In this chart, the two data series overlap. The width of the plot for the data series differs which makes the chart easy to compare.
+With version 3.13.0, FusionCharts has come up with a clever and rather effective bar chart to display your data. In this chart, the two data series overlap. 
 
-To render the overlapped column 2D chart, set the value of the `type` attribute to `OverlappedColumn2d`. The overlapped column 2D chart looks like:
+The overlapped column 2D chart looks like:
 
 {% embed_all standard-charts-overlapped-column2d-chart-example-1.js %}
 
-To render the overlapped bar 2D chart, set the value of the `type` attribute to `OverlappedBar2d`. The overlapped bar 2D chart looks like:
+The overlapped bar 2D chart looks like:
 
 {% embed_all standard-charts-overlapped-bar2d-chart-example-1.js %}
 
@@ -31,4 +31,13 @@ A combination chart with a spline area as a part of it looks like:
 
 Sample
 
-##
+## Highlight effect in Multi-level Pie chart
+
+`highlightParentPieSlices` and `highlightChildPieSlices` attributes have been introduced in multi-level pie chart to set the direction of the highlight effect of the plots when hovered. 
+
+A multi-level pic chart looks like:
+
+Sample
+
+For the detailed description of the attributes, click here.
+
