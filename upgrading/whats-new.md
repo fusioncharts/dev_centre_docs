@@ -39,3 +39,18 @@ A multi-level pie chart with above attributes look like:
 {% embed_all standard-charts-multi-level-pie-chart-example-2.js %}
 
 For the detailed description of the attributes, click here.
+
+## Configure Inner Radius of Multi-level Pie chart
+
+`InnerRadius` attribute has been introduced to multi-level pie chart which is useful if you want to enforce one of your own values. This attribute explicitly sets the inner radius of the chart.
+
+A multi-level pie chart with inner radius set to `10` looks like:
+
+{% embed_all standard-charts-multi-level-pie-chart-example-3.js %}
+
+## Export Multi-level pie chart in CSV or XLS formats
+
+With version 3.13.0, data from multi-level pie charts can be exported in CSV or XLS formats.
+
+Refer to the GIF shown below:
+
