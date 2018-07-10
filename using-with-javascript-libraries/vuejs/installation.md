@@ -11,10 +11,12 @@ The Vue-FusionCharts component lets you include FusionCharts in your VueJS proje
 Some of the basic features of VueJS component are:
 
 * Easily create charts in JavaScript using your Vue code.
-* Can render charts using a JSON/XML URL or props array binding.
+* Can render charts using a **JSON/XML** URL or props array binding.
 * Auto-updates the chart object when the data source is modified.
 
-In this article, we will show you how you can download and install the Vue-FusionCharts component and all the other dependencies on your system. You can use FusionCharts in your Vue project using any of the two modes given below:
+In this article, we will show you how you can download and install the `Vue-FusionCharts` component and all the other dependencies on your system. You can use FusionCharts in your Vue project using any of the two modes given below:
+
+## Choose your mode of installation:
 
 <table>
     <tr>
@@ -37,7 +39,7 @@ Installation of FusionCharts Suite XT merely involves copying and pasting the Ja
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
 
-Following is the list of js files present in your fusioncharts folder:
+Following is the list of JavaScript files present in your `fusioncharts > js` folder:
 
 File Name|Description|
 -|-
@@ -226,7 +228,7 @@ To add chart dependency, execute the following command:
 FusionCharts.addDep(Charts);
 ```
 
-**Register using specific charts:**
+**Include only specific chart modules:**
 
 To register using a specific chart type, import the specific chart instead of all the charts after importing the fusioncharts class. Also, you need to add the dependency for the specific chart type as shown in the code below:
 
@@ -396,7 +398,7 @@ import fusion from `fusioncharts/themes/es/fusioncharts.fusion`
 import css file from `fusioncharts/themes/es/fusioncharts.fusion.css`
 ```
 
-To add **ThemeEngine** and fint as dependency to the core, execute the following command:
+To add **ThemeEngine** and fusion as dependency to the core, execute the following command:
 
 ```Shell
 FusionCharts.addDep(ThemeEngine).  (ThemeEngine - reference from above)
