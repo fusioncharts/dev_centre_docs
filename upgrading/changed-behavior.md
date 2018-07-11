@@ -31,4 +31,3 @@ The inverse y-axis charts are similar to the normal column charts, except that t
 The new visualization of the inverse chart looks like:
 
 {% embed_all standard-charts-inverse-charts-example-1.js %}
-
