@@ -51,3 +51,41 @@ The overlapped bar 2D chart looks like:
 Click here to edit the above overlapped bar 2D chart.
 
 Now, let's customize the appearance and properties of the overlapped charts.
+
+## Plot Trend Elements
+
+The trend elements on a chart include trend-lines and trend-zones.
+
+Trend-lines are reference horizontal or vertical lines which aid in interpretation of data. They can be used to set context or define limits and targets. For example, while plotting quarterly sales of a company, you might want to use a trend-line to depict the target sales. Trend-zones are similar to trend-lines except that they mark out an entire zone rather than just a line.
+
+To plot a trend-line on a chart, follow the steps given below:
+
+* Create a `trendlines` object to render one or more than one trend-lines.
+
+* Create a `line` object for a particular trend-line.
+
+* In `line` object, set the `startValue` attribute to specify the starting value for the trend-line. Set the `endValue` to specify the end value for the trend-line.
+
+* Set the `color` attribute to specify the hex code for the color. Use this attribute to render the trend-line and its associated text.
+
+* Set the `displayValue` attribute to display a string caption with the trend-line.
+
+Given below is the JSON code to include trend-line on your chart:
+
+```json
+{
+	"chart": {
+		...
+	},
+	"data": [],
+	"trendlines": [{
+	    "line": [{
+	        "startvalue": "700000",
+	        "color": "#1aaf5d",
+	        "displayvalue": "Monthly Target"
+	    }]
+	}]
+}
+```
+
+A quarterly sales summary chart rendered with a trend-line to show the target value looks like this:

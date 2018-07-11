@@ -57,6 +57,14 @@ A 2D combination chart with a single y-axis looks like this:
 
 Click [here](http://jsfiddle.net/fusioncharts/4REJ5/ "@@open-newtab") to edit the single y combination chart in 2D.
 
+You can also build the above combination chart using Spline and Spline Area. To define any one of the dataset to spline or spline area, set the `renderAs` attribute to `spline` or `splineArea` respectively. 
+
+In the above sample, let's plot the **Projected Revenue** in `spline` and **Profit** in `splineArea`. With these changes, the chart looks like this:
+
+{% embed_all standard-charts-combination-chart-example-12.js %}
+
+Click here to edit the above chart.
+
 ## 3D Single Y-axis Combination Chart
 
 To render a single y-axis combination chart in 3D, change the value of the `type` attribute from `mscombi2d` to `mscombi3d`. The rest of the data structure remains the same.
