@@ -10,7 +10,7 @@ FusionCharts Suite XT includes the FusionCharts server-side JSP wrapper that let
 
 Some of the basic features of JSP are:
 
-* Easily create charts in JavaScript using your C#/VB code.
+* Easily create charts in JavaScript using your JSP code.
 * Can render charts using a **JSON/XML** URL.
 * Auto-updates the chart object when the data source is modified.
 
