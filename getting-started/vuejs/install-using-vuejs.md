@@ -101,7 +101,7 @@ The consolidated code looks like as shown below:
 </head>
 ```
 
-That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart '@@open-newtab').
+That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/vuejs/your-first-chart-using-vuejs '@@open-newtab').
 
 ### Installing FusionMaps (map visualizations) for your project
 

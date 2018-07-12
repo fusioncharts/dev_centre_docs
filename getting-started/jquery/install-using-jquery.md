@@ -1,7 +1,7 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/installation.html
+permalink: getting-started/jquery/install-using-jquery.html
 title: Installation | FusionCharts
-description: The Vue-FusionCharts component lets you include FusionCharts in your VueJS projects and add interactive JavaScript charts and graphs to your VueJS applications.
+description: The FusionCharts Suite XT jQuery helper allows you to use jQuery syntax to render and manipulate your charts and graphs seamlessly across all browsers and devices.
 heading: Installation
 chartPresent: false
 ---

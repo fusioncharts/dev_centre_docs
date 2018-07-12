@@ -6,9 +6,9 @@ heading: Your First Chart in Vue using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and Vue-FusionCharts plugin. We'll start with simple examples of creating a [chart]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart#create-your-first-gauge-7) and a [map]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart#create-your-first-map-10).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and Vue-FusionCharts plugin. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/vuejs/your-first-chart-using-vuejs#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/vuejs/your-first-chart-using-vuejs#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/vuejs/your-first-chart-using-vuejs#create-your-first-map-10).
 
-Before going through this article, please [install]({% site.baseurl %}/using-with-javascript-libraries/vuejs/installation '@@open-newtab') `vue-fusioncharts` plugin, if not already installed.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs '@@open-newtab') `vue-fusioncharts` plugin, if not already installed.
 
 ## Create your first chart
 
@@ -314,6 +314,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
         "numberScaleUnit": "K,M,B",
         "numberPrefix": "$",
         "showLabels": "1",
+        "theme": "fint"
     },
     // Aesthetics; ranges synced with the slider
     "colorrange": {

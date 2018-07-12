@@ -1,8 +1,8 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/including-interactivity-in-charts-using-vuejs.html
-title: Including Interactivity in Charts Using VueJS | FusionCharts
-description: This article focuses on how you can use the Vue-FusionCharts component to add annotations, change chart type at runtime, update chart data and attributes dynamically.
-heading: Including Interactivity in Charts Using VueJS
+permalink: getting-started/jquery/export-charts-using-jquery.html
+title: Exporting Charts | FusionCharts
+description: This article focuses on how you can export your chart in jQuery using FusionCharts.
+heading: Exporting Charts
 chartPresent: true
 ---
 

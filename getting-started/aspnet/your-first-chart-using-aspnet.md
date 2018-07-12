@@ -1,14 +1,14 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/your-first-chart.html
-title: Your First Chart in Vue using FusionCharts | FusionCharts
-description: This article outlines the steps to be executed for installing all the node modules via NPM and rendering charts using the vue-fusioncharts component.
-heading: Your First Chart in Vue using FusionCharts
+permalink: getting-started/aspnet/your-first-chart-using-aspnet.html
+title: Your First Chart in ASP.NET using FusionCharts | FusionCharts
+description: This article outlines the steps to be executed for creating your first chart using the asp.net.
+heading: Your First Chart in ASP.NET using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and Vue-FusionCharts plugin. We'll start with simple examples of creating a [chart]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart#create-your-first-gauge-7) and a [map]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart#create-your-first-map-10).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and ASP.NET wrapper. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/vuejs/your-first-chart#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/vuejs/your-first-chart#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/vuejs/your-first-chart#create-your-first-map-10).
 
-Before going through this article, please [install]({% site.baseurl %}/using-with-javascript-libraries/vuejs/installation '@@open-newtab') `vue-fusioncharts` plugin, if not already installed.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/aspnet/install-using-aspnet '@@open-newtab') `vue-fusioncharts` plugin, if not already installed.
 
 ## Create your first chart
 
@@ -120,33 +120,19 @@ Functional attributes let you control a variety of functional elements on the ch
 
 Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click here.
 
-
-
 For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
 ### Create an instance of the chart
 
 In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
 
-The code to render a chart by passing VueJS component is given below:
+The code to render a chart using `.aspx.cs` file is given below:
 
 ```javascript
-// Use the Vue.use() global method
-Vue.use(VueFusionCharts);
-const app = new Vue({
-    el: '#app',
-    data: {
-        type: 'column2d', // The chart type
-        width: '600', // Width of the chart
-        height: '400', // Height of the chart
-        dataFormat: 'json', // Data type
-        dataSource: {
-            chart: {
-                ...
-            }
-        }
-    }
-});
+//Create chart instance
+Chart chart = new Chart("column2d", "myChart", "600", "400", "json", DataSource);
+//Render chart
+Literal1.Text = chart.Render();
 ```
 
 In the above code:
@@ -158,25 +144,15 @@ In the above code:
 The HTML template of the above sample is shown below:
 
 ```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
+// .aspx code template
+<div style="text-align:center">
+    <asp:Literal ID="Literal1" runat="server"></asp:Literal>
 </div>
 ```
 
 That's it! When you run this HTML page now, you should see a chart representing your data.
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
-
-In the JavaScript code, execution of `var app = new Vue({ })` creates a new Vue instance called app. Depending on the chart type, only two properties of the Vue instance vary mandatorily:
-
-* `app.type`: You must set it to the chart name you want to render. For a complete list of all charts and their types, refer to [Chart Gallery]({% site.baseurl %}/demos/chart-gallery#Gallary '@@open-newtab') and explore the desired type in detail.
-* `app.dataSource`: Each chart has its own data schema that defines the chart configuration and the source of data. Thus, this object varies significantly depending of the type of chart.
 
 Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 
@@ -210,9 +186,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
         "subcaption": "Last week",
         "lowerLimit": "0",
         "upperLimit": "100",
-        "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
-        "gaugeFillRatio": "15",
-        "theme": "fint"
+        "theme": "fusion"
     },
     // Chart data
     "colorRange": {
@@ -242,39 +216,21 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
 
-The code to render a chart by passing VueJS component is given below:
+The code to render a chart using `.aspx.cs` file is given below:
 
 ```javascript
-// Use the vue.use() global method
-Vue.use(VueFusionCharts);
-const app = new Vue({
-    el: '#app',
-    data: {
-        type: 'angulargauge', // Chart type
-        renderAt: 'chart-container', // Container
-        width: '400', // Width of the chart
-        height: '250', // Height of the chart
-        dataFormat: 'json', // Data Type
-        dataSource: {
-            chart: {
-                ...
-            }
-        }
-    }
-});
+// Initialize gauge
+Chart gauge = new Chart("angulargauge", "mygauge", "600", "400", "json", DataSource);
+// Render the gauge
+Literal1.Text = gauge.Render();
 ```
 
 The HTML template for the above sample is:
 
 ```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
+// .aspx code template
+<div style="text-align:center">
+    <asp:Literal ID="Literal1" runat="server"></asp:Literal>
 </div>
 ```
 
@@ -316,6 +272,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
         "numberScaleUnit": "K,M,B",
         "numberPrefix": "$",
         "showLabels": "1",
+        "theme": "fint"
     },
     // Aesthetics; ranges synced with the slider
     "colorrange": {
@@ -497,39 +454,21 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 In this step, we will create an instance of the map type as **usa**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
 
-The code to render a chart by passing VueJS component is given below:
+The code to render a chart using `.aspx.cs` file is given below:
 
 ```javascript
-// USe the Vue.use() global method
-Vue.use(VueFusionCharts);
-const app = new Vue({
-    el: '#app',
-    data: {
-        type: 'usa', // Map type
-        renderAt: 'chart-container', // Container
-        width: '600', // Width of the chart
-        height: '400', // Height of the chart
-        dataFormat: 'json', // Data Type
-        dataSource: {
-            chart: {
-                ...
-            }
-        }
-    }
-});
+// Initialize map
+Chart maps = new Chart("usa", "myChart", "600", "400", "json", DataSource);
+// Render map
+Literal1.Text = maps.Render();
 ```
 
 The HTML template for the above sample is:
 
 ```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
+// .aspx code template
+<div style="text-align:center">
+    <asp:Literal ID="Literal1" runat="server"></asp:Literal>
 </div>
 ```
 
