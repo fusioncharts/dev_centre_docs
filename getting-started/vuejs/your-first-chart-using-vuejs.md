@@ -168,7 +168,7 @@ To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisf
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-The thresholds for his customer satisfaction score has been defined using the following range.
+The thresholds for the above sample has been defined using the following range.
 
 Range|Color|Hex Code|
 -|-|-
