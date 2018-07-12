@@ -1,7 +1,7 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/installation.html
+permalink: getting-started/react/install-using-react.html
 title: Installation | FusionCharts
-description: The Vue-FusionCharts component lets you include FusionCharts in your VueJS projects and add interactive JavaScript charts and graphs to your VueJS applications.
+description: The React-FusionCharts Component, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications.
 heading: Installation
 chartPresent: false
 ---

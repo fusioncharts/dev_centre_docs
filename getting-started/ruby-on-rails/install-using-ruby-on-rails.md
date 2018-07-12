@@ -1,7 +1,7 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/installation.html
+permalink: getting-started/ruby-on-rails/install-using-ruby-on-rails.html
 title: Installation | FusionCharts
-description: The Vue-FusionCharts component lets you include FusionCharts in your VueJS projects and add interactive JavaScript charts and graphs to your VueJS applications.
+description: In this section, you will be shown how you can create a simple chart using the FusionCharts and ruby on rails.
 heading: Installation
 chartPresent: false
 ---

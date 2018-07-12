@@ -1,8 +1,8 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/your-first-chart.html
-title: Your First Chart in Vue using FusionCharts | FusionCharts
-description: This article outlines the steps to be executed for installing all the node modules via NPM and rendering charts using the vue-fusioncharts component.
-heading: Your First Chart in Vue using FusionCharts
+permalink: getting-started/react/your-first-chart-using-react.html
+title: Your First Chart in React using FusionCharts | FusionCharts
+description: This article outlines the steps to be executed for creating your first chart using the react-fusioncharts component.
+heading: Your First Chart in React using FusionCharts
 chartPresent: false
 ---
 

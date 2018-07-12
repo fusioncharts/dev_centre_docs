@@ -1,5 +1,5 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/configure-your-chart-using-vuejs.html
+permalink: getting-started/vuejs/configure-your-chart-using-vuejs.html
 title: Configuring your Chart | FusionCharts
 description: This article focuses on different type of configurations possible using the Vue-FusionCharts component.
 heading: Configuring your Chart

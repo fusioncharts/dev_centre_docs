@@ -1,5 +1,5 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/export-charts-using-vuejs.html
+permalink: getting-started/vuejs/export-charts-using-vuejs.html
 title: Exporting Charts | FusionCharts
 description: This article focuses on how you can export your chart in vuejs using fusioncharts.
 heading: Exporting Charts

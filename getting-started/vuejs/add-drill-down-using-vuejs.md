@@ -1,5 +1,5 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/add-drill-down-using-vuejs.html
+permalink: getting-started/vuejs/add-drill-down-using-vuejs.html
 title: Adding Drill Down | FusionCharts
 description: This article focuses on drill down charts.
 heading: Adding Drill Down

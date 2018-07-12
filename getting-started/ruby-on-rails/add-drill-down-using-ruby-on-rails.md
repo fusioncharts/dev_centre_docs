@@ -1,10 +1,11 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component.html
-title: Creating Charts Using the FusionCharts VueJS Component | FusionCharts
-description: The Vue-FusionCharts component uses the FusionCharts component to create and configure charts using VueJS.
-heading: Creating Charts Using the FusionCharts VueJS Component
+permalink: getting-started/ruby-on-rails/add-drill-down-using-ruby-on-rails.html
+title: Adding Drill Down | FusionCharts
+description: This article focuses on drill down charts.
+heading: Adding Drill Down
 chartPresent: true
 ---
+
 The following examples use the vue-fusioncharts component to create and configure charts in VueJS application.
 
 This article talks about how you can:
