@@ -62,35 +62,23 @@ That completes the installation of FusionCharts in your application. To see how 
 
 ### Installing FusionMaps (map visualizations) for your project
 
+### Step 1
+
 In order to render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files and include them to your HTML as shown below:
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
 
-```
-<script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-<script type="text/javascript" src="path/to/local/fusioncharts.california.js"></script>
-```
+### Step 2
 
-The `fusioncharts.california.js` file includes path drawings of the map of **California**.
+[Download](https://www.fusioncharts.com/asp-net-charts/) the FusionCharts ASP.NET wrapper which contains:
+* `.cs` file if you download the ASP.NET C# wrapper
+* `.vb` file if you download the ASP.NET VB wrapper
 
-The consolidated code(which also includes the `vue.js`, `fusioncharts.js` and `vue-fusioncharts.js`)  looks like as shown below:
+You'll find the above files in `asp-net-wrapper/Src` folder. To add any of the above files in your project, drag and drop the file in `App_Code` folder inside your project.
 
-```html
-<head>
-    <meta charset="utf-8">
-    <title>Vue - FusionCharts</title>
-    <!-- vue -->
-    <script type="text/javascript" src="path/to/local/vue.js"></script>
-    <!-- FusionCharts -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-    <!-- Vue-FusionCharts -->
-    <script type="text/javascript" src="path/to/local/vue-fusioncharts.js"></script>
-    <!-- FusionMaps -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-    <!--usa -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.california.js"></script>
-</head>
-```
+You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. FusionCharts.dll is present in `asp-net-wrapper/Bin` folder.
+
+That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart '@@open-newtab').
 
 ### Themes
 
@@ -109,12 +97,6 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-To include a theme to your chart, include its corresponding JavaScript file in your HTML page and the CSS file for that theme as shown in the code below:
+To include a theme to your chart, include its corresponding JavaScript file to your project.
 
-```html
-<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.css"></script>
-```
-
-The `fusioncharts.theme.fusion.js` file sets the theme as **fusion**. 
+> The `fusioncharts.theme.fusion.js` file sets the theme as **fusion**. 
