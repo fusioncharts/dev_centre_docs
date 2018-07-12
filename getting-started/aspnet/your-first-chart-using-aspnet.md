@@ -127,7 +127,7 @@ In the above code:
 * To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 
-The HTML template of the above sample is shown below:
+The aspx template of the above sample is shown below:
 
 ```html
 // .aspx code template
@@ -136,7 +136,7 @@ The HTML template of the above sample is shown below:
 </div>
 ```
 
-That's it! When you run this HTML page now, you should see a chart representing your data.
+That's it! When you run this .aspx page now, you should see a chart representing your data.
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
 
@@ -220,7 +220,7 @@ Chart gauge = new Chart("angulargauge", "mygauge", "600", "350", "json", DataSou
 Literal1.Text = gauge.Render();
 ```
 
-The HTML template for the above sample is:
+The .aspx template for the above sample is:
 
 ```html
 // .aspx code template
@@ -652,7 +652,7 @@ Chart maps = new Chart("usa", "myChart", "600", "350", "json", DataSource);
 Literal1.Text = maps.Render();
 ```
 
-The HTML template for the above sample is:
+The .aspx template for the above sample is:
 
 ```html
 // .aspx code template
