@@ -1,5 +1,5 @@
 {
-    type: 'world',
+    type: 'map/world',
     renderAt: 'chart-container',
     width: '800',
     height: '550',
