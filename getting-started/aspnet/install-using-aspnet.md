@@ -51,12 +51,12 @@ File Name|Description|
 ### Step 2
 
 [Download](https://www.fusioncharts.com/asp-net-charts/) the FusionCharts ASP.NET wrapper which contains:
-* `.cs` file if you download the ASP.NET C# wrapper
-* `.vb` file if you download the ASP.NET VB wrapper
+* `.cs` file if you download the ASP.NET C# wrapper - You'll find the file in `asp-net-wrapper/Src` folder.
+* `.vb` file if you download the ASP.NET VB wrapper - You'll find the file in `asp-net-wrapper/Src` folder.
 
-You'll find the above files in `asp-net-wrapper/Src` folder. To add any of the above files in your project, drag and drop the file in `App_Code` folder inside your project.
+To add any of the above files in your project, drag and drop the file in `App_Code` folder inside your project.
 
-You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. FusionCharts.dll is present in `asp-net-wrapper/Bin` folder.
+> You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. FusionCharts.dll is present in `asp-net-wrapper/Bin` folder.
 
 That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart '@@open-newtab').
 
@@ -64,19 +64,19 @@ That completes the installation of FusionCharts in your application. To see how 
 
 ### Step 1
 
-In order to render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files and include them to your HTML as shown below:
+In order to render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files.
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
 
 ### Step 2
 
 [Download](https://www.fusioncharts.com/asp-net-charts/) the FusionCharts ASP.NET wrapper which contains:
-* `.cs` file if you download the ASP.NET C# wrapper
-* `.vb` file if you download the ASP.NET VB wrapper
+* `.cs` file if you download the ASP.NET C# wrapper - You'll find the file in `asp-net-wrapper/Src` folder.
+* `.vb` file if you download the ASP.NET VB wrapper - You'll find the file in `asp-net-wrapper/Src` folder.
 
-You'll find the above files in `asp-net-wrapper/Src` folder. To add any of the above files in your project, drag and drop the file in `App_Code` folder inside your project.
+To add any of the above files in your project, drag and drop the file in `App_Code` folder inside your project.
 
-You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. FusionCharts.dll is present in `asp-net-wrapper/Bin` folder.
+> You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. FusionCharts.dll is present in `asp-net-wrapper/Bin` folder.
 
 That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart '@@open-newtab').
 
