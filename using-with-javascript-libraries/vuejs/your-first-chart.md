@@ -238,7 +238,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-### Create an instance of the chart
+### Create an instance of the gauge
 
 In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
 
@@ -493,7 +493,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-### Create an instance of the chart
+### Create an instance of the map
 
 In this step, we will create an instance of the map type as **usa**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
 

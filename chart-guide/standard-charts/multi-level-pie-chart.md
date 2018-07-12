@@ -40,3 +40,11 @@ The multi-level pie chart thus rendered looks like this:
 {% embed_all standard-charts-multi-level-pie-chart-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/njjra2r4/ "@@open-newtab") to edit the multi-level pie chart.
+
+Now, let's customize the appearance and properties of the multi-level pie chart.
+
+## Highlight effect
+
+
+
+## Configure Inner Radius

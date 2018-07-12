@@ -39,7 +39,7 @@ Installation of FusionCharts Suite XT merely involves copying and pasting the Ja
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
 
-Following is the list of JavaScript files present in your `fusioncharts > js` folder:
+Following is the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
 
 File Name|Description|
 -|-
@@ -74,7 +74,7 @@ In order to install, create an HTML file and follow the steps below.
 **Step 3: Include the vue-fusioncharts module:**
 
 ```html
-<script type="text/javascript" src="path/to/local/vue-fusioncharts.min.js"></script>
+<script type="text/javascript" src="path/to/local/vue-fusioncharts.js"></script>
 ```
 
 **Step 4: Include the theme file and CSS:**
@@ -95,7 +95,7 @@ The consolidated code looks like as shown below:
     <!-- FusionCharts -->
     <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
     <!-- Vue-FusionCharts -->
-    <script type="text/javascript" src="path/to/local/vue-fusioncharts.min.js"></script>
+    <script type="text/javascript" src="path/to/local/vue-fusioncharts.js"></script>
     <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
 </head>
@@ -127,7 +127,7 @@ The consolidated code(which also includes the `vue.js`, `fusioncharts.js` and `v
     <!-- FusionCharts -->
     <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
     <!-- Vue-FusionCharts -->
-    <script type="text/javascript" src="path/to/local/vue-fusioncharts.min.js"></script>
+    <script type="text/javascript" src="path/to/local/vue-fusioncharts.js"></script>
     <!-- FusionMaps -->
     <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
     <!--usa -->
@@ -155,16 +155,16 @@ FusionCharts Suite XT ships with the following predefined themes:
 To include a theme to your chart, include its corresponding JavaScript file in your HTML page and the CSS file for that theme as shown in the code below:
 
 ```html
-<script type="text/javascript" src="js/fusioncharts.js"></script>
-<script type="text/javascript" src="js/themes/fusioncharts.theme.fusion.js"></script>
-<script type="text/javascript" src="js/themes/fusioncharts.theme.fusion.css"></script>
+<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.css"></script>
 ```
 
 The `fusioncharts.theme.fusion.js` file sets the theme as **fusion**. 
 
 ## Install FusionCharts via npm
 
-Now, let's discuss how to install the fusioncharts package via npm. The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
+Now, let's discuss how to install the fusioncharts module via npm. The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
 
 This section outlines the steps to be executed for installing all the node modules via NPM and rendering charts using the Vue-FusionCharts component.
 
@@ -176,7 +176,7 @@ To install the `fusioncharts` module, execute the following command in the termi
 npm install fusioncharts --save
 ```
 
-Step 2: Install the `vue-fusioncharts` wrapper framework via npm
+Step 2: Install the `vue-fusioncharts` module via npm
 
 To install the `vue-fusioncharts` module, execute the following command in the terminal:
 
@@ -190,7 +190,7 @@ You can also combine the above commands in a single line, as shown below:
 npm install fusioncharts vue-fusioncharts --save
 ```
 
-### Step 3: Register the fusioncharts module
+### Step 3: Include the fusioncharts module
 
 Once the installation is done, you need to register the fusioncharts module. You can register in multiple ways as per your requirement like:
 
@@ -199,31 +199,31 @@ Once the installation is done, you need to register the fusioncharts module. You
 To include the `vue` component, execute the following command:
 
 ```Shell
-import Vue from `vue`;
+import Vue from 'vue';
 ```
 
-To include the `vue-fusioncharts` component, execute the following command:
+To include the 'vue-fusioncharts' component, execute the following command:
 
 ```Shell
-import VueFusionCharts from `vue-fusioncharts`;
+import VueFusionCharts from 'vue-fusioncharts';
 ```
 
 To include the fusioncharts class, execute the following command:
 
 ```Shell
-import FusionCharts from `fusioncharts/core`;
-import Charts from `fusioncharts/charts`;
+import FusionCharts from 'fusioncharts/core';
+import Charts from 'fusioncharts/charts';
 
 Note: To use charts and gauges from PowerCharts and Widgets, import their respective modules using:
 
-import PowerCharts from `fusioncharts/powercharts`; (for PowerCharts)
-import Widgets from `fusioncharts/widgets`; (for Widgets)
+import PowerCharts from 'fusioncharts/powercharts'; // for PowerCharts
+import Widgets from 'fusioncharts/widgets'; // for Widgets
 ```
 
 To add chart dependency, execute the following command:
 
 ```Shell
-// FusionCharts.addDep(ChartType)
+// FusionCharts.addDep([ChartType])
 
 FusionCharts.addDep(Charts);
 ```
@@ -235,15 +235,15 @@ To register using a specific chart type, import the specific chart instead of al
 To include the fusioncharts class, execute the following command:
 
 ```Shell
-import FusionCharts from `fusioncharts/core`;
+import FusionCharts from 'fusioncharts/core';
 ```
 
 To include the specific chart from `viz` folder, execute the following command:
 
 ```Shell
-// import ChartType from `fusioncharts/viz/[ChartType]`
+// import ChartType from 'fusioncharts/viz/[ChartType]'
 
-import Column2D from `fusioncharts/viz/column2d`;
+import Column2D from 'fusioncharts/viz/column2d'
 ```
 
 To add chart dependency, execute the following command:
@@ -261,16 +261,16 @@ To register using multiple specific chart types, import the specific charts inst
 To include the fusioncharts class, execute the following command:
 
 ```Shell
-import FusionCharts from `fusioncharts/core`;
+import FusionCharts from 'fusioncharts/core';
 ```
 
 To include more than one chart from `viz` folder, execute the following command:
 
 ```Shell
-// import ChartType from `fusioncharts/viz/[ChartType]`
+// import ChartType from 'fusioncharts/viz/[ChartType]'
 
-import Column2D from `fusioncharts/viz/column2d`;
-import Line2D from `fusioncharts/viz/line2d`;
+import Column2D from 'fusioncharts/viz/column2d';
+import Line2D from 'fusioncharts/viz/line2d';
 ```
 
 To add chart dependency, execute the following command:
@@ -293,27 +293,27 @@ In your Javascript code, use the `Vue.use()` method to register the vue-fusionch
 To include the `vue` component, execute the following command:
 
 ```Shell
-import Vue from `vue`;
+import Vue from 'vue';
 ```
 
 To include the `vue-fusioncharts` component, execute the following command:
 
 ```Shell
-import VueFusionCharts from `vue-fusioncharts`;
+import VueFusionCharts from 'vue-fusioncharts';
 ```
 
 To include the fusioncharts class, execute the following command:
 
 ```Shell
-import FusionCharts from `fusioncharts/core`;
+import FusionCharts from 'fusioncharts/core';
 ```
 
 To include the specific chart from `viz` folder, execute the following command:
 
 ```Shell
-// import ChartType from `fusioncharts/viz/[ChartType]`
+// import ChartType from 'fusioncharts/viz/[ChartType]'
 
-import Column2D from `fusioncharts/viz/column2d`;
+import Column2D from 'fusioncharts/viz/column2d';
 ```
 
 To add chart dependency, execute the following command:
@@ -334,10 +334,10 @@ Vue.use(VueFusionCharts);
 
 Registering components globally makes sure that even if you want to stop using that component it will be a part of your final build. This results in an increase in JavaScript code that the users have to download. This is where you can register a component locally to avoid such scenarios. 
 
-In your Javascript code, use the Vue.component() method to register the vue-fusioncharts component locally. To register locally, use **Vue.component** instead of **Vue.use, **the rest of the code remains same. Refer to the code below:
+In your Javascript code, use the Vue.component() method to register the vue-fusioncharts component locally. To register locally, use **Vue.component()** instead of **Vue.use()**, the rest of the code remains same. Refer to the code below:
 
 ```Shell
-Vue.component(`fusioncharts`, FCComponent);
+Vue.component('fusioncharts', FCComponent);
 ```
 
 ### Include Maps via NPM
@@ -347,19 +347,19 @@ In your Javascript code, use the Vue.use() method to register the vue-fusionchar
 To include the core fusioncharts files, execute the following command:
 
 ```Shell
-import FusionCharts from `fusioncharts/core`
+import FusionCharts from 'fusioncharts/core'
 ```
 
 To include the **core map** files from maps, execute the following command:
 
 ```Shell
-import Maps from `fusioncharts/maps`;
+import Maps from 'fusioncharts/maps';
 ```
 
 To include the **map definition** file you want to render, execute the following command:
 
 ```Shell
-import World from `fusioncharts/maps/es/fusioncharts.world`;
+import World from 'fusioncharts/maps/es/fusioncharts.world';
 ```
 
 > If you want to render a map which is not in the fusioncharts package(world and USA), then you need to install **fusionmaps** which contains all the ES6 map definition:
@@ -382,20 +382,20 @@ In your Javascript code, use the **Vue.use()** method to register the vue-fusion
 To include the core fusioncharts files, execute the following command:
 
 ```Shell
-import FusionCharts from `fusioncharts/core`
+import FusionCharts from 'fusioncharts/core'
 ```
 
 To include the **theme engine extension**, execute the following command:
 
 ```Shell
-import ThemeEngine from `fusioncharts/features/theme-engine`;
+import ThemeEngine from 'fusioncharts/features/theme-engine';
 ```
 
 To include the theme file and CSS for the theme, execute the following command:
 
 ```Shell
-import fusion from `fusioncharts/themes/es/fusioncharts.fusion`
-import css file from `fusioncharts/themes/es/fusioncharts.fusion.css`
+import fusion from 'fusioncharts/themes/es/fusioncharts.fusion'
+import css file from 'fusioncharts/themes/es/fusioncharts.fusion.css'
 ```
 
 To add **ThemeEngine** and fusion as dependency to the core, execute the following command:
