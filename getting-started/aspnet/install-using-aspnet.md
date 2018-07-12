@@ -22,14 +22,19 @@ In this article, we will show you how you can download and install the `FusionCh
 
 In order to install and start working with FusionCharts ASP.NET wrapper you need to:
 
-* [Download](https://www.fusioncharts.com/asp-net-charts/) the FusionCharts ASP.NET wrapper which contains the `DLL` file.
+* [Download](https://www.fusioncharts.com/asp-net-charts/) the FusionCharts ASP.NET wrapper which contains:
+    * `.cs` file if you download the ASP.NET C# wrapper
+    * `.vb` file if you download the ASP.NET VB wrapper
+
+You'll find the above files in `asp-net-wrapper/Src` folder. To add any of the above files in your project, drag and drop the file in `App_Code` folder inside your project.
+
+> You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. FusionCharts.dll is present in `asp-net-wrapper/Bin` folder.
+
 * [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files.
 
 Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/images/js-folder-structure.png)
-
-After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
 
@@ -48,6 +53,8 @@ File Name|Description|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from here. </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files (JSON & CSS). Refer each theme with their respective `JavaScript` and `CSS` file names.|
+
+
 
 In order to install, create an HTML file and follow the steps below.
 
