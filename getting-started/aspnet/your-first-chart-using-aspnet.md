@@ -14,8 +14,6 @@ Before going through this article, please [install]({% site.getting-started/aspn
 
 In this section, we will create a chart using `FusionCharts ASP.NET` wrapper. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
 
-To create charts, the `vue-fusioncharts` component can be passed as a part of another VueJs component.
-
 Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
 
 {% embed_chart getting-started-your-first-chart.js %}
@@ -35,7 +33,7 @@ China|30|
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For APS.NET, we recommend JSON format. The converted format will look as shown below:
 
 > There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
@@ -164,7 +162,7 @@ So any score less than 50 is bad and is red. Any score between 50 and 75 is aver
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For ASP.NET, we recommend JSON format. The converted format will look as shown below:
 
 ```javascript
 {
@@ -252,7 +250,7 @@ Australia|AU|1.30|
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For ASP.NET, we recommend JSON format. The converted format will look as shown below:
 
 ```javascript
 {
