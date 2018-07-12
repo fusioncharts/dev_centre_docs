@@ -60,7 +60,7 @@ You can also add a reference to `FusionCharts.dll` in your project to work with 
 
 That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart '@@open-newtab').
 
-### Installing FusionMaps (map visualizations) for your project
+## Installing FusionMaps (map visualizations) for your project
 
 ### Step 1
 
@@ -80,7 +80,7 @@ You can also add a reference to `FusionCharts.dll` in your project to work with 
 
 That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart '@@open-newtab').
 
-### Themes
+## Themes
 
 Themes shipped with FusionCharts Suite XT allows you to create centralized theme files (similar to CSS files) and apply those themes to any number of charts.
 
