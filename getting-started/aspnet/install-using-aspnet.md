@@ -16,12 +16,13 @@ Some of the basic features of ASP.NET are:
 
 In this article, we will show you how you can download and install the `FusionCharts ASP.NET` wrapper and all the other dependencies on your system. You can use FusionCharts in your ASP.NET project using direct JavaScript files.
 
+> The FusionCharts ASP.NET server-side wrapper requires a .NET Framework 3.5 or higher.
+
 ## Install FusionCharts ASP.NET Wrapper
 
 In order to install and start working with FusionCharts ASP.NET wrapper you need to:
 
-* [Download](https://vuejs.org/v2/guide/installation.html) the `Vue core library`.
-* [Download](https://www.fusioncharts.com/vue-fusioncharts/) the Vue-FusionCharts plugin which contains the `vue-fusioncharts.js` file.
+* [Download](https://www.fusioncharts.com/asp-net-charts/) the FusionCharts ASP.NET wrapper which contains the `DLL` file.
 * [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files.
 
 Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. The folder structure is shown below:
