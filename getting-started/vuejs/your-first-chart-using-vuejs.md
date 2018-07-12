@@ -16,26 +16,22 @@ In this section, we will create a chart using `vue-fusioncharts`. We will create
 
 To create charts, the `vue-fusioncharts` component can be passed as a part of another VueJs component.
 
-Let's start with a simple example of "Monthly revenue" chart, which we will plot in a Column 2D chart as shown below:
+Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
 
 {% embed_chart getting-started-your-first-chart.js %}
 
 ### The data for this chart is represented in a table below:
 
-Month|Revenue|
+Country|No. of Oil Reserves|
 -|-
-January|$420,000|
-February|$810,000|
-March|$720,000|
-April|$550,000|
-May|$910,000|
-June|$510,000|
-July|$680,000|
-August|$620,000|
-September|$610,000|
-October|$490,000|
-November|$900,000|
-December|$730,000|
+Venezuela|290|
+Saudi|260|
+Canada|180|
+Iran|140|
+Russia|115|
+UAE|100|
+US|30|
+China|30|
 
 ### Convert tabular data into JSON format
 
@@ -47,52 +43,38 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 {
     // Chart Configuration
     "chart": {
-        "caption": "Monthly revenue for last year",
-        "subCaption": "Harry's SuperMart",
-        "xAxisName": "Month",
-        "yAxisName": "Revenues (In USD)",
-        "numberPrefix": "$",
-        "showLabel": "1",
-        "showValue": "1",
-        "theme": "fusion"
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion",
     },
     // Chart Data
     "data": [{
-        "label": "Jan",
-        "value": "420000"
+        "label": "Venezuela",
+        "value": "290"
     }, {
-        "label": "Feb",
-        "value": "810000"
+        "label": "Saudi",
+        "value": "260"
     }, {
-        "label": "Mar",
-        "value": "720000"
+        "label": "Canada",
+        "value": "180"
     }, {
-        "label": "Apr",
-        "value": "550000"
+        "label": "Iran",
+        "value": "140"
     }, {
-        "label": "May",
-        "value": "910000"
+        "label": "Russia",
+        "value": "115"
     }, {
-        "label": "Jun",
-        "value": "510000"
+        "label": "UAE",
+        "value": "100"
     }, {
-        "label": "Jul",
-        "value": "680000"
+        "label": "US",
+        "value": "30"
     }, {
-        "label": "Aug",
-        "value": "620000"
-    }, {
-        "label": "Sep",
-        "value": "610000"
-    }, {
-        "label": "Oct",
-        "value": "490000"
-    }, {
-        "label": "Nov",
-        "value": "900000"
-    }, {
-        "label": "Dec",
-        "value": "730000"
+        "label": "China",
+        "value": "30"
     }]
 }
 ```
@@ -120,8 +102,6 @@ Functional attributes let you control a variety of functional elements on the ch
 
 Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click here.
 
-
-
 For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
 ### Create an instance of the chart
@@ -137,7 +117,7 @@ const app = new Vue({
     el: '#app',
     data: {
         type: 'column2d', // The chart type
-        width: '600', // Width of the chart
+        width: '700', // Width of the chart
         height: '400', // Height of the chart
         dataFormat: 'json', // Data type
         dataSource: {
@@ -184,7 +164,7 @@ Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% sit
 
 Gauges are powerful tools that can showcase using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
 
-To start with, we'll build a simple "Weekly Customer Satisfaction Index" gauge as shown below:
+To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
@@ -192,9 +172,9 @@ The thresholds for his customer satisfaction score has been defined using the fo
 
 Range|Color|Hex Code|
 -|-|-
-0-50|Red|#e44a00|
-50-75|Yellow|#f8bd19|
-75-100|Green|#6baa01|
+0-50|Red|#F2726F|
+50-75|Yellow|#FFC533|
+75-100|Green|#62B58F|
 
 So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Scores above 75 mean good and is green.
 
@@ -204,33 +184,35 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 ```javascript
 {
-    // Configuration
+    // Chart Configuration
     "chart": {
-        "caption": "Customer Satisfaction Score",
-            "subcaption": "Last week",
-            "lowerLimit": "0",
-            "upperLimit": "100",
-            "theme": "fint"
+        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+        "lowerLimit": "0",
+        "upperLimit": "100",
+        "showValue": "1",
+        "numberSuffix": "%",
+        "theme": "fusion",
+        "showToolTip": "0"
     },
-    // Chart data
+    // Chart Data
     "colorRange": {
         "color": [{
             "minValue": "0",
             "maxValue": "50",
-            "code": "#e44a00"
+            "code": "#F2726F"
         }, {
             "minValue": "50",
             "maxValue": "75",
-            "code": "#f8bd19"
+            "code": "#FFC533"
         }, {
             "minValue": "75",
             "maxValue": "100",
-            "code": "#6baa01"
+            "code": "#62B58F"
         }]
     },
     "dials": {
         "dial": [{
-            "value": "67"
+            "value": "81"
         }]
     }
 }
@@ -250,7 +232,7 @@ const app = new Vue({
     data: {
         type: 'angulargauge', // Chart type
         renderAt: 'chart-container', // Container
-        width: '400', // Width of the chart
+        width: '450', // Width of the chart
         height: '250', // Height of the chart
         dataFormat: 'json', // Data Type
         dataSource: {

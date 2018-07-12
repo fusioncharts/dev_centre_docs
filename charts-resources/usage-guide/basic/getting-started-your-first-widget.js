@@ -1,35 +1,37 @@
 {
     type: 'angulargauge',
     renderAt: 'chart-container',
-    width: '400',
+    width: '450',
     height: '250',
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "caption": "Customer Satisfaction Score",
-            "subcaption": "Last week",
+            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
             "lowerLimit": "0",
             "upperLimit": "100",
-            "theme": "fint"
+            "showValue": "1",
+            "numberSuffix": "%",
+            "theme": "fusion",
+            "showToolTip": "0"
         },
         "colorRange": {
             "color": [{
                 "minValue": "0",
                 "maxValue": "50",
-                "code": "#e44a00"
+                "code": "#F2726F"
             }, {
                 "minValue": "50",
                 "maxValue": "75",
-                "code": "#f8bd19"
+                "code": "#FFC533"
             }, {
                 "minValue": "75",
                 "maxValue": "100",
-                "code": "#6baa01"
+                "code": "#62B58F"
             }]
         },
         "dials": {
             "dial": [{
-                "value": "67"
+                "value": "81"
             }]
         }
     }
