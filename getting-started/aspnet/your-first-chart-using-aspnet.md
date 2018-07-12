@@ -6,9 +6,9 @@ heading: Your First Chart in ASP.NET using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and ASP.NET wrapper. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/aspnet/your-first-chart#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/aspnet/your-first-chart#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/aspnet/your-first-chart#create-your-first-map-10).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and ASP.NET wrapper. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet#create-your-first-map-10).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/aspnet/install-using-aspnet '@@open-newtab') FusionCharts ASP.NET wrapper, if not already installed.
+Before going through this article, please [install]({% site.getting-started/aspnet/your-first-chart-using-aspnet#create-your-first-chart-1baseurl %}/getting-started/aspnet/install-using-aspnet '@@open-newtab') FusionCharts ASP.NET wrapper, if not already installed.
 
 ## Create your first chart
 
