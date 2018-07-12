@@ -1,5 +1,5 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/configuring-advanced-features-using-vuejs.html
+permalink: using-with-javascript-libraries/vuejs/configure-your-chart-using-vuejs.html
 title: Configuring Advanced Features Using VueJS | FusionCharts
 description: This article focuses on how you can use the Vue-FusionCharts component to add annotations, change chart type at runtime, update chart data and attributes dynamically.
 heading: Configuring Advanced Features Using VueJS

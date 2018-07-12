@@ -1,5 +1,5 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/your-first-chart.html
+permalink: using-with-javascript-libraries/vuejs/your-first-chart-using-vuejs.html
 title: Your First Chart in Vue using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for installing all the node modules via NPM and rendering charts using the vue-fusioncharts component.
 heading: Your First Chart in Vue using FusionCharts
@@ -207,12 +207,10 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
     // Configuration
     "chart": {
         "caption": "Customer Satisfaction Score",
-        "subcaption": "Last week",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
-        "gaugeFillRatio": "15",
-        "theme": "fint"
+            "subcaption": "Last week",
+            "lowerLimit": "0",
+            "upperLimit": "100",
+            "theme": "fint"
     },
     // Chart data
     "colorRange": {

@@ -1,5 +1,5 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component.html
+permalink: using-with-javascript-libraries/vuejs/add-drill-down-using-vuejs.html
 title: Creating Charts Using the FusionCharts VueJS Component | FusionCharts
 description: The Vue-FusionCharts component uses the FusionCharts component to create and configure charts using VueJS.
 heading: Creating Charts Using the FusionCharts VueJS Component
