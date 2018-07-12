@@ -56,9 +56,9 @@ Refer to the GIF shown below:
 
 GIF
 
-## Secondard data plots overlap Primary data plots
+## Secondary data plots overlap Primary data plots
 
-From version 3.13.0 visualization of dual y-axis multi-series chart have been changed. Now, if the data plots for both the axes are set as column, the secondary plots overlaps the primary plots.
+From version 3.13.0 visualization of dual y-axis multi-series chart is changed. Now, if the data plots for both the axes are set as column, the secondary plots overlaps the primary plots.
 
 The multi-series chart with both the data plots set as column looks like:
 
@@ -66,7 +66,7 @@ Sample
 
 ## Set the Limits of Zoomline Chart
 
-In the zoomline chart, all the values are not plotted in the initial display of the chart. Some values are picked smartly from the entire data set to plot to show similar trend. If you want to visualize a particular segment of chart closely, you can zoom in and reveal all the plot points.
+In the zoomline chart, all the values are not plotted in the initial display of the chart. Some values are picked smartly from the entire data set to show similar trend. If you want to visualize a particular segment of chart closely, you can zoom in and reveal all the plot points.
 
 `showPeakData` is set to define a condition for peak data, whereas `maxPeakDataLimit` and `minPeakDataLimit` attributes defines those conditions. Value greater than `maxPeakDataLimit` will be considered as peak data and is included in initial display of zoomline. Whereas value lower than `minPeakDataLimit` will also be included as peak data.
 
