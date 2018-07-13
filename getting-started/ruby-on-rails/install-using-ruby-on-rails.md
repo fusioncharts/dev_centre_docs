@@ -12,6 +12,8 @@ In this article, we will show you how you can download and install the `FusionCh
 
 ## Download FusionCharts Library
 
+### Step 1
+
 [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files.
 
 * Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. The folder structure is shown below:
