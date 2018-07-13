@@ -201,7 +201,7 @@ include("fusioncharts.php");
 
 //initialize the chart
 // gauge type, gauge Id, width, height, container id, data format, data source
-$map = new FusionCharts("usa", "map-1" , 800, 550, "map", "json", DataSource);
+$map = new FusionCharts("world", "map-1" , 800, 550, "map", "json", DataSource);
 
 // Render the map
 $map>render();
