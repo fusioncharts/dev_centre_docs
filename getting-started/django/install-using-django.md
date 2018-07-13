@@ -12,7 +12,7 @@ In this article, we will show you how you can download and install the `FusionCh
 
 > The FusionCharts Django wrapper requires Python 2.7 or higher version.
 
-## Install the Wrapper and Latest Library Files
+## Install the FusionCharts Django Wrapper
 
 In order to install and start working with FusionCharts Django wrapper you need to:
 
@@ -85,7 +85,7 @@ In order to render maps, you need to [download](https://www.fusioncharts.com/dow
 * Set your STATIC_ROOT path and run the command given below to update the static files:
 
 ```
-python manage.py collectstatic
+python manage.py collectserver
 ```
 
 ## Themes
@@ -105,6 +105,4 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-To include a theme to your chart, include its corresponding JavaScript file to your project.
-
-> The `fusioncharts.theme.fusion.js` file sets the theme as **fusion**. 
+> The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` file sets the theme as **fusion**. To add any other theme to your chart, include its corresponding JavaScript file to your project.

@@ -98,11 +98,7 @@ The code to render the chart is given below:
     "400", // Height of the chart
     "chart", // Chart Container
     "json", // Data Format
-    "DataSource": {
-        "chart": {
-            ...
-        }
-    }
+    DataSource
     );
 %>
 
@@ -178,11 +174,7 @@ The code to render the chart is given below:
     "250", // Height of the chart
     "gauge", // Chart Container
     "json", // Data Format
-    "DataSource": {
-        "chart": {
-            ...
-        }
-    }
+    DataSource
     );
 %>
 
@@ -227,7 +219,7 @@ Firstly, import FusionCharts reference to your `.jsp` page.
 <%@page import="fusioncharts.FusionCharts" %>
 ```
 
-*Step 2**
+**Step 2**
 
 Create a container using &lt;div&gt;, to render the chart.
 
@@ -247,11 +239,7 @@ The code to render the chart is given below:
     "550", // Height of the chart
     "map", // Chart Container
     "json", // Data Format
-    "DataSource": {
-        "chart": {
-            ...
-        }
-    }
+    DataSource
     );
 %>
 
