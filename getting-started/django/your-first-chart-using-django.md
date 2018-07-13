@@ -134,7 +134,7 @@ The code to create an object of the gauge is given below:
 ```javascript
 // Create an object
 // chart type, chart Id, width, height, container id, data format, data source
-column2D = FusionCharts("angulargauge", "ex1" , "450", "250", "chart-1", "json", DataSource);
+angularChart = FusionCharts("angulargauge", "ex1" , "450", "250", "chart-1", "json", DataSource);
 
 // Return complete JavaScript and HTML code, used to generate chart in the browser.
 return  render(request, 'index.html', {'output' : angularChart.render()})
@@ -182,7 +182,7 @@ The code to create an object of the gauge is given below:
 ```javascript
 // Create an object
 // chart type, chart Id, width, height, container id, data format, data source
-column2D = FusionCharts("maps/world", "ex1" , "800", "550", "chart-1", "json", DataSource);
+fusionmap = FusionCharts("maps/world", "ex1" , "800", "550", "chart-1", "json", DataSource);
 
 // Return complete JavaScript and HTML code, used to generate chart in the browser.
 return  render(request, 'index.html', {'output' : fusionMap.render()})
