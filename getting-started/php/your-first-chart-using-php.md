@@ -108,7 +108,7 @@ For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attri
 
 In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-Firstly, create a container using `&lt;div&gt;`, to render the chart.
+Firstly, create a container using &lt;div&gt;, to render the chart.
 
 ```HTML
 <div id="chart"></div>
@@ -205,7 +205,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-Firstly, create a container using `&lt;div&gt;`, to render the gauge.
+Firstly, create a container using &lt;div&gt;, to render the gauge.
 
 ```HTML
 <div id="gauge"></div>
@@ -634,7 +634,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 In this step, we will create an instance of the map type as **world**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-Firstly, create a container using `&lt;div&gt;`, to render the map.
+Firstly, create a container using &lt;div&gt;, to render the map.
 
 ```HTML
 <div id="map"></div>
