@@ -37,6 +37,8 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 > There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
+{% embed_data getting-started-your-first-chart.js %}
+
 ```javascript
 {
     // Chart Configuration
