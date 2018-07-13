@@ -6,13 +6,15 @@ heading: Your First Chart in PHP using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and PHP wrapper. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-map-10).
+FusionCharts Suite XT includes the FusionCharts PHP wrapper that lets you create interactive, data-driven charts in your PHP website without writing any JavaScript code.
+
+JavaScript and HTML code is used to generate charts in the browsers. The server-side PHP wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-map-10).
 
 Before going through this article, please [install]({% site.baseurl %}/getting-started/php/install-using-php '@@open-newtab') FusionCharts PHP wrapper, if not already installed.
 
 ## Create your first chart
 
-In this section, we will create a chart using `FusionCharts PHP` wrapper. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
+In this section, we will create a chart using `FusionCharts PHP` server-side wrapper. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
 
 Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
 
@@ -106,7 +108,7 @@ For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attri
 
 In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-Firstly, create a container using &lt;div&gt;, to render the chart.
+Firstly, create a container using `&lt;div&gt;`, to render the chart.
 
 ```HTML
 <div id="chart"></div>
@@ -203,7 +205,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-Firstly, create a container using &lt;div&gt;, to render the gauge.
+Firstly, create a container using `&lt;div&gt;`, to render the gauge.
 
 ```HTML
 <div id="gauge"></div>
@@ -632,7 +634,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 In this step, we will create an instance of the map type as **world**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-Firstly, create a container using &lt;div&gt;, to render the map.
+Firstly, create a container using `&lt;div&gt;`, to render the map.
 
 ```HTML
 <div id="map"></div>
