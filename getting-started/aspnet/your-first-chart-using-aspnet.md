@@ -94,16 +94,18 @@ The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 
 <div class='tab xml-tab'>
 <pre><code class="custom-hlc language-cv">
-    //Include fusioncharts reference in page
+    'Import fusioncharts reference in page
     ...
-    using FusionCharts.Charts;
-    ...
-    ...
-    //Create chart instance
-    // charttype, chartID, width, height, data format, data
-    Chart chart = new Chart("column2d", "myChart", "600", "400", "json", DataSource);
-    //Render chart
-    Literal1.Text = chart.Render();
+    Imports FusionCharts.Charts
+        ...
+        ...
+
+        ' Initialize chart
+    ' charttype, chartID, width, height, data format, data
+
+    Dim chart As New Chart("column2d", "myChart", "600", "350", "json", DataSource)
+    ' Render the chart
+    Literal1.Text = chart.Render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -207,17 +209,17 @@ The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 
 <div class='tab xml-tab'>
 <pre><code class="custom-hlc language-cv">
-    //Include fusioncharts reference in page
+    'Import fusioncharts reference in page
     ...
-    using FusionCharts.Charts;
+    Imports FusionCharts.Charts
     ...
     ...
 
-    // Initialize gauge
-    //gauge, gaugeID, width, height, data format, data
-    Chart gauge = new Chart("angulargauge", "mygauge", "600", "350", "json", DataSource);
-    // Render the gauge
-    Literal1.Text = gauge.Render();
+    ' Initialize gauge
+    ' gauge, gaugeID, width, height, data format, data
+    Dim gauge As New Chart("angulargauge", "myChart", "600", "350", "json", DataSource)
+    ' Render the gauge
+    Literal1.Text = gauge.Render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -311,18 +313,17 @@ The code to render a chart using `.aspx.cs` or `.aspx.vb` file is given below:
 
 <div class='tab xml-tab'>
 <pre><code class="custom-hlc language-cv">
-    //Include fusioncharts reference in page
+    'Import fusioncharts reference in page
     ...
-    using FusionCharts.Charts;
+    Imports FusionCharts.Charts
     ...
     ...
 
-    // Initialize map
-    // map, mapID, width, height, data format, data
-
-    Chart maps = new Chart("world", "myChart", "800", "550", "json", DataSource);
-    // Render the map
-    Literal1.Text = maps.Render();
+    ' Initialize map
+    ' map, mapID, width, height, data format, data
+    Dim map As New Chart("usa", "myChart", "600", "350", "json", DataSource)
+    ' Render the map
+    Literal1.Text = map.Render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
