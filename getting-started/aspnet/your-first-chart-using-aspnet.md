@@ -189,13 +189,13 @@ In this step, we will create an instance of the map type as **world**, set the w
 The code to render a chart using `.aspx.cs` or `.aspx.vb` file is given below:
 
 <div class="code-wrapper">
-    <ul class='code-tabs'>
-        <li class='active'><a data-toggle='json'>C#</a></li>
-        <li><a data-toggle='xml'>VB</a></li>
-    </ul>
-    <div class='tab-content'>
-        <div class='tab json-tab active'>
-            <pre><code class="custom-hlc language-cs">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>C#</a></li>
+  <li><a data-toggle='xml'>VB</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<pre><code class="custom-hlc language-cs">
     //Include fusioncharts reference in page
     ...
     using FusionCharts.Charts;
@@ -209,11 +209,11 @@ The code to render a chart using `.aspx.cs` or `.aspx.vb` file is given below:
     // Render the map
     Literal1.Text = maps.Render();
 </code></pre>
-            <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-        </div>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-        <div class='tab xml-tab'>
-            <pre><code class="custom-hlc language-cv">
+<div class='tab xml-tab'>
+<pre><code class="custom-hlc language-cv">
     //Include fusioncharts reference in page
     ...
     using FusionCharts.Charts;
@@ -227,37 +227,39 @@ The code to render a chart using `.aspx.cs` or `.aspx.vb` file is given below:
     // Render the map
     Literal1.Text = maps.Render();
 </code></pre>
-            <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-        </div>
-    </div>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
 </div>
 
 The .aspx template for the above sample is:
 
 <div class="code-wrapper">
-    <ul class='code-tabs'>
-        <li class='active'><a data-toggle='json'>C#</a></li>
-        <li><a data-toggle='xml'>VB</a></li>
-    </ul>
-    <div class='tab-content'>
-        <div class='tab json-tab active'>
-            <pre><code class="custom-hlc language-cs">
-            &lt;div style="text-align:center"&gt;
-                &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
-            &lt;/div&gt;
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>C#</a></li>
+  <li><a data-toggle='xml'>VB</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<pre><code class="custom-hlc language-cs">
+    &lt;div style="text-align:center"&gt;
+    &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+    &lt;/div&gt;
 </code></pre>
-            <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-        </div>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-        <div class='tab xml-tab'>
-            <pre><code class="custom-hlc language-cv">
-            &lt;div style="text-align:center"&gt;
-            &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
-            &lt;/div&gt;
+<div class='tab xml-tab'>
+<pre><code class="custom-hlc language-cv">
+    &lt;div style="text-align:center"&gt;
+    &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+    &lt;/div&gt;
 </code></pre>
-            <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-        </div>
-    </div>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
 </div>
 
 See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. The respective `id`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
