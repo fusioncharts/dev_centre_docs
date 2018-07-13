@@ -1,5 +1,5 @@
 ---
-permalink: using-with-javascript-libraries/django/install-using-django.html
+permalink: getting-started/django/install-using-django.html
 title: Installation | FusionCharts
 description: The FusionCharts Django wrapper is a Python framework which is responsible for quick web development.
 heading: Installation
