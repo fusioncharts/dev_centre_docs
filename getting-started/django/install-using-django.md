@@ -48,8 +48,8 @@ File Name|Description|
 
 ### Step 2
 
-    * Place the FusionCharts library inside the **"static/FusionCharts"** folder in your project.
-    * Insert the ``<script>`` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The ``<script>`` tag looks like as shown below:
+* Place the FusionCharts library inside the **"static/FusionCharts"** folder in your project.
+* Insert the ``<script>`` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The ``<script>`` tag looks like as shown below:
 
 ```html
 {% load static %} 
@@ -74,8 +74,8 @@ In order to render maps, you need to [download](https://www.fusioncharts.com/dow
 
 ### Step 2
 
-    * Place the FusionCharts library inside the **"static/FusionCharts"** folder in your project.
-    * Insert the ``<script>`` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The ``<script>`` tag looks like as shown below:
+* Place the FusionCharts library inside the **"static/FusionCharts"** folder in your project.
+* Insert the ``<script>`` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The ``<script>`` tag looks like as shown below:
 
 ```html
 {% load static %} 
