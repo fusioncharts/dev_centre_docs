@@ -232,7 +232,7 @@ The code to render the chart is given below:
 ```jsp
 //initialize chart
 <%
-    FusionCharts gauge= new FusionCharts(
+    FusionCharts map= new FusionCharts(
     "world", // Chart Type
     "map1", // Chart ID
     "800", // Width of the chart 

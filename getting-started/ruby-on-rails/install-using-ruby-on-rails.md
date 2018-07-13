@@ -20,11 +20,13 @@ In this article, we will show you how you can download and install the `FusionCh
 
 ![Js Folder Structure]({% site.baseurl %}/images/js-folder-structure.png)
 
+* Copy the JavaScript files from above and paste them in the vendor/assets/javascripts/fusioncharts/ folder.
+
 * Add the following code lines in the `app/assets/javascripts/application.js` file:
 
 ```
 //= require fusioncharts/fusioncharts
-//= require fusioncharts/fusioncharts.charts
+//= require fusioncharts/fusioncharts.widgets
 //= require fusioncharts/themes/fusioncharts.theme.fint
 ```
 
@@ -81,7 +83,14 @@ That completes the installation of FusionCharts in your application. To see how 
 
 ### Step 1
 
-In order to render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files.
+* In order to render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files. Place the downloaded map definition files in the same location where `fusioncharts.js` files are placed.
+
+* Add the following code lines in the `app/assets/javascripts/application.js` file:
+
+```
+//= require fusioncharts/fusioncharts.maps
+//= require fusioncharts/maps/fusioncharts.usa
+```
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
 
