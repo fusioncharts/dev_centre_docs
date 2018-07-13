@@ -5,6 +5,7 @@
     height: '400',
     dataFormat: 'json',
     dataSource: {
+        // Chart Configuration
         "chart": {
             "caption": "Countries With Most Oil Reserves [2017-18]",
             "subCaption": "In MMbbl = One Million barrels",
@@ -13,6 +14,7 @@
             "numberSuffix": "K",
             "theme": "fusion",
         },
+        // Chart Data
         "data": [{
             "label": "Venezuela",
             "value": "290"

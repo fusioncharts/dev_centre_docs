@@ -5,6 +5,7 @@
     height: '250',
     dataFormat: 'json',
     dataSource: {
+        // Chart Configuration
         "chart": {
             "caption": "Nordstorm's Customer Satisfaction Score for 2017",
             "lowerLimit": "0",
@@ -14,6 +15,7 @@
             "theme": "fusion",
             "showToolTip": "0"
         },
+        // Chart Data
         "colorRange": {
             "color": [{
                 "minValue": "0",
