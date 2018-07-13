@@ -56,7 +56,7 @@ Functional attributes let you control a variety of functional elements on the ch
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
 * `numberPrefix` adds prefix to all the numbers visible on the chart.
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
+* Please note, we have used the `theme` attribute in the chart's data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetics Attributes
 
@@ -66,37 +66,85 @@ For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attri
 
 ### Create an instance of the chart
 
-In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-The code to render a chart using `.aspx.cs` file is given below:
+The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 
-```javascript
-//Include fusioncharts reference in page
-...
-using FusionCharts.Charts;
-...
-...
-//Create chart instance
-// charttype, chartID, width, height, data format, data
-Chart chart = new Chart("column2d", "myChart", "600", "400", "json", DataSource);
-//Render chart
-Literal1.Text = chart.Render();
-```
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>C#</a></li>
+  <li><a data-toggle='xml'>VB</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<pre><code class="custom-hlc language-cs">
+    //Include fusioncharts reference in page
+    ...
+    using FusionCharts.Charts;
+    ...
+    ...
+    //Create chart instance
+    // charttype, chartID, width, height, data format, data
+    Chart chart = new Chart("column2d", "myChart", "600", "400", "json", DataSource);
+    //Render chart
+    Literal1.Text = chart.Render();
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab xml-tab'>
+<pre><code class="custom-hlc language-cv">
+    //Include fusioncharts reference in page
+    ...
+    using FusionCharts.Charts;
+    ...
+    ...
+    //Create chart instance
+    // charttype, chartID, width, height, data format, data
+    Chart chart = new Chart("column2d", "myChart", "600", "400", "json", DataSource);
+    //Render chart
+    Literal1.Text = chart.Render();
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 In the above code:
 
 * We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using `width` and `height`.
-* To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
-* The JSON data is embedded as the value of the `dataSource` parameter.
+* To specify the data format as JSON/XML, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
+* The JSON/XML data is embedded as the value of the `dataSource` parameter.
 
 The aspx template of the above sample is shown below:
 
-```html
-// .aspx code template
-<div style="text-align:center">
-    <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>C#</a></li>
+  <li><a data-toggle='xml'>VB</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<pre><code class="custom-hlc language-cs">
+    &lt;div style="text-align:center"&gt;
+        &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+    &lt;/div&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-```
+
+<div class='tab xml-tab'>
+<pre><code class="custom-hlc language-cv">
+    &lt;div style="text-align:center"&gt;
+        &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+    &lt;/div&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 That's it! When you run this .aspx page now, you should see a chart representing your data.
 
@@ -122,40 +170,89 @@ Range|Color|Hex Code|
 
 So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Scores above 75 mean good and is green.
 
-### Convert tabular data into JSON format
+### Convert tabular data into JSON/XML format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For ASP.NET, we recommend JSON format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON/XML format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
 
 {% embed_data getting-started-your-first-widget.js %}
 
 ### Create an instance of the gauge
 
-In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-The code to render a chart using `.aspx.cs` file is given below:
+The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 
-```javascript
-//Include fusioncharts reference in page
-...
-using FusionCharts.Charts;
-...
-...
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>C#</a></li>
+  <li><a data-toggle='xml'>VB</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<pre><code class="custom-hlc language-cs">
+    //Include fusioncharts reference in page
+    ...
+    using FusionCharts.Charts;
+    ...
+    ...
 
-// Initialize gauge
-//gauge, gaugeID, width, height, data format, data
-Chart gauge = new Chart("angulargauge", "mygauge", "600", "350", "json", DataSource);
-// Render the gauge
-Literal1.Text = gauge.Render();
-```
+    // Initialize gauge
+    //gauge, gaugeID, width, height, data format, data
+    Chart gauge = new Chart("angulargauge", "mygauge", "600", "350", "json", DataSource);
+    // Render the gauge
+    Literal1.Text = gauge.Render();
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab xml-tab'>
+<pre><code class="custom-hlc language-cv">
+    //Include fusioncharts reference in page
+    ...
+    using FusionCharts.Charts;
+    ...
+    ...
+
+    // Initialize gauge
+    //gauge, gaugeID, width, height, data format, data
+    Chart gauge = new Chart("angulargauge", "mygauge", "600", "350", "json", DataSource);
+    // Render the gauge
+    Literal1.Text = gauge.Render();
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 The .aspx template for the above sample is:
 
-```html
-// .aspx code template
-<div style="text-align:center">
-    <asp:Literal ID="Literal1" runat="server"></asp:Literal>
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>C#</a></li>
+  <li><a data-toggle='xml'>VB</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<pre><code class="custom-hlc language-cs">
+    &lt;div style="text-align:center"&gt;
+        &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+    &lt;/div&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-```
+
+<div class='tab xml-tab'>
+<pre><code class="custom-hlc language-cv">
+    &lt;div style="text-align:center"&gt;
+        &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+    &lt;/div&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
 
@@ -184,7 +281,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 ### Create an instance of the map
 
-In this step, we will create an instance of the map type as **world**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will create an instance of the map type as **world**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
 The code to render a chart using `.aspx.cs` or `.aspx.vb` file is given below:
 
@@ -244,7 +341,7 @@ The .aspx template for the above sample is:
 <div class='tab json-tab active'>
 <pre><code class="custom-hlc language-cs">
     &lt;div style="text-align:center"&gt;
-    &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+        &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
     &lt;/div&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -253,7 +350,7 @@ The .aspx template for the above sample is:
 <div class='tab xml-tab'>
 <pre><code class="custom-hlc language-cv">
     &lt;div style="text-align:center"&gt;
-    &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+        &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
     &lt;/div&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -272,4 +369,4 @@ In case something went wrong, and you are unable to see the chart, check for the
 
 * If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. Check if the path to `fusioncharts.js` file is correct and whether the file exists in that location.
 
-* If you get a Loading Data or Error in loading data message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+* If you get a Loading Data or Error in loading data message, check whether your JSON/XML data structure is correct, or there are conflicts related to quotation marks in your code.
