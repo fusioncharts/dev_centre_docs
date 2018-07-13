@@ -11,7 +11,7 @@ FusionCharts Suite XT includes the FusionCharts server-side ASP.NET wrapper that
 Some of the basic features of ASP.NET are:
 
 * Easily create charts in JavaScript using your C#/VB code.
-* Can render charts using a **JSON/XML** URL.
+* Can render charts using  **JSON/XML** data or JSON/XML data or url of **JSON/XML** data.
 * Auto-updates the chart object when the data source is modified.
 
 In this article, we will show you how you can download and install the `FusionCharts ASP.NET` wrapper and all the other dependencies on your system. You can use FusionCharts in your ASP.NET project using direct JavaScript files.
@@ -51,12 +51,12 @@ File Name|Description|
 ### Step 2
 
 [Download](https://www.fusioncharts.com/asp-net-charts/) the FusionCharts ASP.NET wrapper which contains:
-* `.cs` file if you download the ASP.NET C# wrapper - You'll find the file in `asp-net-wrapper/Src` folder.
-* `.vb` file if you download the ASP.NET VB wrapper - You'll find the file in `asp-net-wrapper/Src` folder.
+* `FusionCharts.cs` file if you download the ASP.NET C# wrapper - You'll find the file in `asp-net-wrapper/Src` folder.
+* `FusionCharts.vb` file if you download the ASP.NET VB wrapper - You'll find the file in `vb-net-wrapper-master/App_Code` folder.
 
 To add any of the above files in your project, drag and drop the file in `App_Code` folder inside your project.
 
-> You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. FusionCharts.dll is present in `asp-net-wrapper/Bin` folder.
+> You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. FusionCharts.dll is present in `asp-net-wrapper/Bin` folder or `vb-net-wrapper-master/DLLFile`.
 
 That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart '@@open-newtab').
 
