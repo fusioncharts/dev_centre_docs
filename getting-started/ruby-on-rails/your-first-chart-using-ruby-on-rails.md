@@ -22,7 +22,7 @@ Let's start with a simple example of "Countries With Most Oil Reserves" chart, w
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-### The data for this chart is represented in a table below:
+The data for this chart is represented in a table below:
 
 Country|No. of Oil Reserves|
 -|-
@@ -70,7 +70,7 @@ For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attri
 
 ### Create an instance of the chart
 
-In this step, we will create an instance of the chart type as **column2d** using FusionCharts class constructor, set the width and height (in pixels or %), and finally specify the data for the chart as JSON string format.
+In this step, we will create an instance of the chart type as `column2d` using FusionCharts class constructor, set the width and height (in pixels or %), and finally specify the data for the chart as JSON string format.
 
 The `fc_json` action is defined to create the column 2D chart
 
@@ -135,7 +135,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 ### Create an instance of the chart
 
-In this step, we will create an instance of the chart type as **angularGauge** using FusionCharts class constructor, set the width and height (in pixels or %), and finally specify the data for the chart as JSON string format.
+In this step, we will create an instance of the chart type as `angularGauge` using FusionCharts class constructor, set the width and height (in pixels or %), and finally specify the data for the chart as JSON string format.
 
 > The default name of the file is `app/controllers/examples_controller.rb`.
 
@@ -191,7 +191,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 ### Create an instance of the chart
 
-In this step, we will create an instance of the chart type as **world** using FusionCharts class constructor, set the width and height (in pixels or %), and finally specify the data for the chart as JSON string format.
+In this step, we will create an instance of the chart type as `world` using FusionCharts class constructor, set the width and height (in pixels or %), and finally specify the data for the chart as JSON string format.
 
 > The default name of the file is `app/controllers/examples_controller.rb`.
 

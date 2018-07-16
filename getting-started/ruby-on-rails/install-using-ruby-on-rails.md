@@ -54,7 +54,7 @@ File Name|Description|
 
 To install the Rails wrapper:
 
-1. Add this line to your application’s `Gemfile`:
+* Add this line to your application’s `Gemfile`:
 
 ```rb
 gem ‘fusioncharts-rails’
@@ -62,22 +62,20 @@ gem ‘fusioncharts-rails’
 
 RubyGems contain package information along with the files to install. To read more on gems, click [here](http://rubygems.org/gems/fusioncharts-rails).
 
-2. On the command line prompt, execute the following command:
+* On the command line prompt, execute the following command:
 
 ```bash
 $bundle
 ```
 This command will automatically install the `fusioncharts-rails` gem.
 
-You can also install the gem directly from the command line prompt, without making any edits to the Gemfile.
-
-To do this, use the code line given below:
+* You can also install the gem directly from the command line prompt, without making any edits to the Gemfile. To do this, use the code line given below:
 
 ```bash
 $gem install fusioncharts-rails
 ```
 
-That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails '@@open-newtab').
+That completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails '@@open-newtab').
 
 ## Installing FusionMaps (map visualizations) for your project
 
@@ -92,13 +90,13 @@ That completes the installation of FusionCharts in your application. To see how 
 //= require fusioncharts/maps/fusioncharts.usa
 ```
 
-> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
+> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
 ### Step 2
 
 To install the Rails wrapper:
 
-1. Add this line to your application’s `Gemfile`:
+* Add this line to your application’s `Gemfile`:
 
 ```rb
 gem ‘fusioncharts-rails’
@@ -106,16 +104,14 @@ gem ‘fusioncharts-rails’
 
 RubyGems contain package information along with the files to install. To read more on gems, click [here](http://rubygems.org/gems/fusioncharts-rails).
 
-2. On the command line prompt, execute the following command:
+* On the command line prompt, execute the following command:
 
 ```bash
 $bundle
 ```
 This command will automatically install the `fusioncharts-rails` gem.
 
-You can also install the gem directly from the command line prompt, without making any edits to the Gemfile.
-
-To do this, use the code line given below:
+* You can also install the gem directly from the command line prompt, without making any edits to the Gemfile. To do this, use the code line given below:
 
 ```bash
 $gem install fusioncharts-rails
