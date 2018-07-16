@@ -249,6 +249,72 @@ The code to render the chart is given below:
 
 See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
+The full HTML code is given below:
+
+```
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.util.*" %>
+<%@page import="fusioncharts.FusionCharts" %>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script src="fusioncharts.js"></script>
+        <script type="text/javascript" src="fusioncharts.theme.fusion.js"></script>
+    </head>
+    <body>
+        <div id="chart"></div>
+        <% String jsonData;
+        jsonData = "{
+            'chart': {
+                'caption': 'Countries With Most Oil Reserves [2017-18]',
+                'subCaption': 'In MMbbl = One Million barrels',
+                'xAxisName': 'Country',
+                'yAxisName': 'Reserves (MMbbl)',
+                'numberSuffix': 'K',
+                'theme': 'fusion'
+            },
+            'data': [{
+                'label': 'Venezuela',
+                'value': '290'        
+            }, {
+                'label': 'Saudi',
+                'value': '260'        
+            }, {
+                'label': 'Canada',
+                'value': '180'        
+            }, {
+                'label': 'Iran',
+                'value': '140'        
+            }, {
+                'label': 'Russia',
+                'value': '115'        
+            }, {
+                'label': 'UAE',
+                'value': '100'        
+            }, {
+                'label': 'US',
+                'value': '30'        
+            }, {
+                'label': 'China',
+                'value': '30'       
+            }]
+        }";
+        FusionCharts columnChart = new FusionCharts(
+            "column2d",
+            "chart1",
+            "700", 
+            "400",
+            "chart",
+            "json",
+            jsonData                    
+            );
+        %>
+    <%=columnChart.render()%>
+    </body>
+</html>
+```
+
 ## Problem rendering the chart?
 
 In case something went wrong, and you are unable to see the chart, check for the following:
