@@ -116,7 +116,7 @@ That's it! When you run this HTML page now, you should see a chart representing 
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
 
-The full HTML code is given below:
+The full .jsp code is given below:
 
 ```html
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -229,7 +229,7 @@ The code to render the chart is given below:
 
 See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
 
-The full HTML code is given below:
+The full .jsp code is given below:
 
 ```html
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -339,7 +339,7 @@ The code to render the chart is given below:
 
 See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
-The full HTML code is given below:
+The full .jsp code is given below:
 
 ```
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
