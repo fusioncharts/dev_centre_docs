@@ -68,7 +68,7 @@ For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attri
 
 In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-The code to render a chart using `.aspx.cs` nd `.aspx.vb` file is given below:
+The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 
 <div class="code-wrapper">
 <ul class='code-tabs'>
@@ -157,7 +157,7 @@ The full HTML code is given below:
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
     <li class="active"><a data-toggle="csharp">C#</a></li>
-    <li><a data-toggle="vb">Node.js</a></li>
+    <li><a data-toggle="vb">VB</a></li>
 </ul>
 <div class="tab-content extra-tabs">
 <div class="tab csharp-tab active">
