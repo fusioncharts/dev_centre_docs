@@ -11,7 +11,7 @@ FusionCharts Suite XT includes the FusionCharts server-side JSP wrapper that let
 Some of the basic features of JSP are:
 
 * Easily create charts in JavaScript using your JSP code.
-* Can render charts using a **JSON/XML** URL.
+* Can render charts using  **JSON/XML** data or JSON/XML data or url of **JSON/XML** data.
 * Auto-updates the chart object when the data source is modified.
 
 In this article, we will show you how to download and install the `FusionCharts JSP` wrapper and all the other dependencies on your system. You can use FusionCharts in your JSP project using direct JavaScript files.
@@ -62,11 +62,13 @@ That completes the installation of FusionCharts in your application. To see how 
 
 In order to render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files follow the steps below:
 
+> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
+
+### Step 2
+
 [Download](https://www.fusioncharts.com/asp-net-charts/) the FusionCharts JSP wrapper. Then follow the steps given below:
 *  Unzip the archive and move its contents to the `"/jsp-wrapper-master/src/java/fusioncharts/"` to get the `"FusionCharts.java"` main class file.
 * Include `"FusionCharts.java"` in your project.
-
-> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
 
 ## Themes
 

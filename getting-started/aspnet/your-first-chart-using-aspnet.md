@@ -68,7 +68,7 @@ For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attri
 
 In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
+The code to render a chart using `.aspx.cs` nd `.aspx.vb` file is given below:
 
 <div class="code-wrapper">
 <ul class='code-tabs'>
@@ -151,6 +151,100 @@ The aspx template of the above sample is shown below:
 That's it! When you run this .aspx page now, you should see a chart representing your data.
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
+
+The full HTML code is given below:
+
+<div class="code-wrapper">
+<ul class="code-tabs extra-tabs">
+    <li class="active"><a data-toggle="csharp">C#</a></li>
+    <li><a data-toggle="vb">Node.js</a></li>
+</ul>
+<div class="tab-content extra-tabs">
+<div class="tab csharp-tab active">
+<div><strong>.aspx</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    &lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="asp_test.index" %&gt;
+
+    &lt;!DOCTYPE html&gt;
+
+    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+
+    &lt;head runat="server"&gt;
+        &lt;title&gt;fusioncharts&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;script type="text/javascript" src="fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;div style="text-align:center"&gt;
+            &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+
+    &lt;/html&gt;
+</code></pre>
+</br>
+<div><strong>.aspx.cs</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    using System;
+using FusionCharts.Charts;
+
+namespace asp_test {
+    public partial class index: System.Web.UI.Page {
+        protected void Page_Load(object sender, EventArgs e) {
+            String jsonData;
+            jsonData = "{    'chart': {        'caption': 'Countries With Most Oil Reserves [2017-18]',        'subCaption': 'In MMbbl = One Million barrels',        'xAxisName': 'Country',        'yAxisName': 'Reserves (MMbbl)',        'numberSuffix': 'K',        'theme': 'fusion'    },    'data': [        {            'label': 'Venezuela',            'value': '290'        },        {            'label': 'Saudi',            'value': '260'        },        {            'label': 'Canada',            'value': '180'        },        {            'label': 'Iran',            'value': '140'        },        {            'label': 'Russia',            'value': '115'        },        {            'label': 'UAE',            'value': '100'        },        {            'label': 'US',            'value': '30'        },        {            'label': 'China',            'value': '30'        }    ]}";
+            Chart chart = new Chart("column2d", "mychart", "600", "400", "json", jsonData);
+            Literal1.Text = chart.Render();
+
+        }
+
+    }
+}
+</code></pre>
+</div>
+<div class="tab vb-tab">
+<div><strong>.aspx</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="index" %&gt;
+
+    &lt;!DOCTYPE html&gt;
+
+    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+
+    &lt;head runat="server"&gt;
+        &lt;title&gt;&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;script type="text/javascript" src="fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;form id="form1" runat="server"&gt;
+            &lt;div&gt;
+                &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/body&gt;
+
+    &lt;/html&gt;
+</code></pre>
+</br>
+<div><strong>.aspx.vb</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    Imports FusionCharts.Charts
+Partial Class index
+Inherits System.Web.UI.Page
+Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+Dim jsonData As String
+jsonData = "{    'chart': {        'caption': 'Countries With Most Oil Reserves [2017-18]',        'subCaption': 'In MMbbl = One Million barrels',        'xAxisName': 'Country',        'yAxisName': 'Reserves (MMbbl)',        'numberSuffix': 'K',        'theme': 'fusion'    },    'data': [        {            'label': 'Venezuela',            'value': '290'        },        {            'label': 'Saudi',            'value': '260'        },        {            'label': 'Canada',            'value': '180'        },        {            'label': 'Iran',            'value': '140'        },        {            'label': 'Russia',            'value': '115'        },        {            'label': 'UAE',            'value': '100'        },        {            'label': 'US',            'value': '30'        },        {            'label': 'China',            'value': '30'        }    ]}"
+Dim chart As New Chart("column2d", "myChart", "600", "350", "json", jsonData)
+Literal1.Text = chart.Render()
+End Sub
+End Class
+</code></pre>
+</div>
+</div>
+</div>
 
 Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 
