@@ -152,7 +152,7 @@ That's it! When you run this .aspx page now, you should see a chart representing
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
 
-The full HTML code is given below:
+The full code for the above sample is given below:
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
@@ -187,20 +187,20 @@ The full HTML code is given below:
 <div><strong>.aspx.cs</strong></div>
 <pre><code class="custom-hlc language-javascript">
     using System;
-using FusionCharts.Charts;
+    using FusionCharts.Charts;
 
-namespace asp_test {
-    public partial class index: System.Web.UI.Page {
-        protected void Page_Load(object sender, EventArgs e) {
-            String jsonData;
-            jsonData = "{    'chart': {        'caption': 'Countries With Most Oil Reserves [2017-18]',        'subCaption': 'In MMbbl = One Million barrels',        'xAxisName': 'Country',        'yAxisName': 'Reserves (MMbbl)',        'numberSuffix': 'K',        'theme': 'fusion'    },    'data': [        {            'label': 'Venezuela',            'value': '290'        },        {            'label': 'Saudi',            'value': '260'        },        {            'label': 'Canada',            'value': '180'        },        {            'label': 'Iran',            'value': '140'        },        {            'label': 'Russia',            'value': '115'        },        {            'label': 'UAE',            'value': '100'        },        {            'label': 'US',            'value': '30'        },        {            'label': 'China',            'value': '30'        }    ]}";
-            Chart chart = new Chart("column2d", "mychart", "600", "400", "json", jsonData);
-            Literal1.Text = chart.Render();
+    namespace asp_test {
+        public partial class index: System.Web.UI.Page {
+            protected void Page_Load(object sender, EventArgs e) {
+                String jsonData;
+                jsonData = "{    'chart': {        'caption': 'Countries With Most Oil Reserves [2017-18]',        'subCaption': 'In MMbbl = One Million barrels',        'xAxisName': 'Country',        'yAxisName': 'Reserves (MMbbl)',        'numberSuffix': 'K',        'theme': 'fusion'    },    'data': [        {            'label': 'Venezuela',            'value': '290'        },        {            'label': 'Saudi',            'value': '260'        },        {            'label': 'Canada',            'value': '180'        },        {            'label': 'Iran',            'value': '140'        },        {            'label': 'Russia',            'value': '115'        },        {            'label': 'UAE',            'value': '100'        },        {            'label': 'US',            'value': '30'        },        {            'label': 'China',            'value': '30'        }    ]}";
+                Chart chart = new Chart("column2d", "mychart", "600", "400", "json", jsonData);
+                Literal1.Text = chart.Render();
+
+            }
 
         }
-
     }
-}
 </code></pre>
 </div>
 <div class="tab vb-tab">
@@ -232,15 +232,15 @@ namespace asp_test {
 <div><strong>.aspx.vb</strong></div>
 <pre><code class="custom-hlc language-javascript">
     Imports FusionCharts.Charts
-Partial Class index
-Inherits System.Web.UI.Page
-Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-Dim jsonData As String
-jsonData = "{    'chart': {        'caption': 'Countries With Most Oil Reserves [2017-18]',        'subCaption': 'In MMbbl = One Million barrels',        'xAxisName': 'Country',        'yAxisName': 'Reserves (MMbbl)',        'numberSuffix': 'K',        'theme': 'fusion'    },    'data': [        {            'label': 'Venezuela',            'value': '290'        },        {            'label': 'Saudi',            'value': '260'        },        {            'label': 'Canada',            'value': '180'        },        {            'label': 'Iran',            'value': '140'        },        {            'label': 'Russia',            'value': '115'        },        {            'label': 'UAE',            'value': '100'        },        {            'label': 'US',            'value': '30'        },        {            'label': 'China',            'value': '30'        }    ]}"
-Dim chart As New Chart("column2d", "myChart", "600", "350", "json", jsonData)
-Literal1.Text = chart.Render()
-End Sub
-End Class
+    Partial Class index
+    Inherits System.Web.UI.Page
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Dim jsonData As String
+    jsonData = "{    'chart': {        'caption': 'Countries With Most Oil Reserves [2017-18]',        'subCaption': 'In MMbbl = One Million barrels',        'xAxisName': 'Country',        'yAxisName': 'Reserves (MMbbl)',        'numberSuffix': 'K',        'theme': 'fusion'    },    'data': [        {            'label': 'Venezuela',            'value': '290'        },        {            'label': 'Saudi',            'value': '260'        },        {            'label': 'Canada',            'value': '180'        },        {            'label': 'Iran',            'value': '140'        },        {            'label': 'Russia',            'value': '115'        },        {            'label': 'UAE',            'value': '100'        },        {            'label': 'US',            'value': '30'        },        {            'label': 'China',            'value': '30'        }    ]}"
+    Dim chart As New Chart("column2d", "myChart", "600", "350", "json", jsonData)
+    Literal1.Text = chart.Render()
+    End Sub
+    End Class
 </code></pre>
 </div>
 </div>
@@ -352,6 +352,101 @@ The .aspx template for the above sample is:
 
 See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
 
+The full code for the above sample is given below:
+
+<div class="code-wrapper">
+<ul class="code-tabs extra-tabs">
+    <li class="active"><a data-toggle="csharp">C#</a></li>
+    <li><a data-toggle="vb">VB</a></li>
+</ul>
+<div class="tab-content extra-tabs">
+<div class="tab csharp-tab active">
+<div><strong>.aspx</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    &lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="asp_test.index" %&gt;
+
+    &lt;!DOCTYPE html&gt;
+
+    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+
+    &lt;head runat="server"&gt;
+        &lt;title&gt;fusioncharts&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;script type="text/javascript" src="fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;div style="text-align:center"&gt;
+            &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+
+    &lt;/html&gt;
+</code></pre>
+</br>
+<div><strong>.aspx.cs</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    using System;
+    using FusionCharts.Charts;
+
+    namespace asp_test {
+        public partial class index: System.Web.UI.Page {
+            protected void Page_Load(object sender, EventArgs e) {
+
+                String jsonData;
+                jsonData = "{    'chart': {        'caption': 'Nordstorm\\'s Customer Satisfaction Score for 2017',        'lowerLimit': '0',        'upperLimit': '100',        'showValue': '1',        'numberSuffix': '%',        'theme': 'fusion',        'showToolTip': '0'    },    'colorRange': {        'color': [            {                'minValue': '0',                'maxValue': '50',                'code': '#F2726F'            },            {                'minValue': '50',                'maxValue': '75',                'code': '#FFC533'            },            {                'minValue': '75',                'maxValue': '100',                'code': '#62B58F'            }        ]    },    'dials': {        'dial': [            {                'value': '81'            }        ]    }}";
+                Chart gauge = new Chart("angulargauge", "mygauge", "600", "350", "json", jsonData);
+                Literal1.Text = gauge.Render();
+
+            }
+
+        }
+    }
+</code></pre>
+</div>
+<div class="tab vb-tab">
+<div><strong>.aspx</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="index" %&gt;
+
+    &lt;!DOCTYPE html&gt;
+
+    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+
+    &lt;head runat="server"&gt;
+        &lt;title&gt;&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;script type="text/javascript" src="fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;form id="form1" runat="server"&gt;
+            &lt;div&gt;
+                &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/body&gt;
+
+    &lt;/html&gt;
+</code></pre>
+</br>
+<div><strong>.aspx.vb</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    Imports FusionCharts.Charts
+    Partial Class index
+    Inherits System.Web.UI.Page
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Dim jsonData As String
+    jsonData = "{    'chart': {        'caption': 'Nordstorm\'s Customer Satisfaction Score for 2017',        'lowerLimit': '0',        'upperLimit': '100',        'showValue': '1',        'numberSuffix': '%',        'theme': 'fusion',        'showToolTip': '0'    },    'colorRange': {        'color': [            {                'minValue': '0',                'maxValue': '50',                'code': '#F2726F'            },            {                'minValue': '50',                'maxValue': '75',                'code': '#FFC533'            },            {                'minValue': '75',                'maxValue': '100',                'code': '#62B58F'            }        ]    },    'dials': {        'dial': [            {                'value': '81'            }        ]    }}"
+    Dim chart As New Chart("angulargauge", "mygauge", "600", "350", "json", jsonData)
+    Literal1.Text = chart.Render()
+    End Sub
+    End Class
+</code></pre>
+</div>
+</div>
+</div>
+
 ## Create your first map
 
 In this section, we will create a visualization using the map of **World**. Take a look at the map shown below:
@@ -455,6 +550,102 @@ The .aspx template for the above sample is:
 </div>
 
 See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. The respective `id`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+
+The full code for the above sample is given below:
+
+<div class="code-wrapper">
+<ul class="code-tabs extra-tabs">
+    <li class="active"><a data-toggle="csharp">C#</a></li>
+    <li><a data-toggle="vb">VB</a></li>
+</ul>
+
+<div class="tab-content extra-tabs">
+<div class="tab csharp-tab active">
+<div><strong>.aspx</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    &lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="asp_test.index" %&gt;
+
+    &lt;!DOCTYPE html&gt;
+
+    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+
+    &lt;head runat="server"&gt;
+        &lt;title&gt;fusioncharts&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;script type="text/javascript" src="fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;div style="text-align:center"&gt;
+            &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+        &lt;/div&gt;
+    &lt;/body&gt;
+
+    &lt;/html&gt;
+</code></pre>
+</br>
+<div><strong>.aspx.cs</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    using System;
+    using FusionCharts.Charts;
+
+    namespace asp_test {
+        public partial class index: System.Web.UI.Page {
+            protected void Page_Load(object sender, EventArgs e) {
+
+                String jsonData;
+                jsonData = "{    'chart': {        'caption': 'Average Annual Population Growth',        'subcaption': ' 1955-2015',        'numbersuffix': '%',        'includevalueinlabels': '1',        'labelsepchar': ': ',        'entityFillHoverColor': '#FFF9C4',        'theme': 'fusion'    },    'colorrange': {        'minvalue': '0',        'code': '#FFE0B2',        'gradient': '1',        'color': [            {                'minvalue': '0.5',                'maxvalue': '1.0',                'color': '#FFD74D'            },            {                'minvalue': '1.0',                'maxvalue': '2.0',                'color': '#FB8C00'            },            {                'minvalue': '2.0',                'maxvalue': '3.0',                'color': '#E65100'            }        ]    },    'data': [        {            'id': 'NA',            'value': '.82',            'showLabel': '1',            'link': 'newchart-json-NAM'        },        {            'id': 'SA',            'value': '2.04',            'showLabel': '1',            'link': 'newchart-json-SAM'        },        {            'id': 'AS',            'value': '1.78',            'showLabel': '1',            'link': 'newchart-json-ASI'        },        {            'id': 'EU',            'value': '.40',            'showLabel': '1',            'link': 'newchart-json-EUP'        },        {            'id': 'AF',            'value': '2.58',            'showLabel': '1',            'link': 'newchart-json-AFC'        },        {            'id': 'AU',            'value': '1.30',            'showLabel': '1',            'link': 'newchart-json-AUS'        }    ],    'linkeddata': [        {            'id': 'NAM',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - North America',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'paletteColors': 'FFD74D',                    'theme': 'hulk-light'                },                'data': [                    {                        'label': '1955',                        'value': '1.5078'                    },                    {                        'label': '1960',                        'value': '1.5502'                    },                    {                        'label': '1965',                        'value': '1.3121'                    },                    {                        'label': '1970',                        'value': '0.8648'                    },                    {                        'label': '1975',                        'value': '0.6402'                    },                    {                        'label': '1980',                        'value': '0.62'                    },                    {                        'label': '1985',                        'value': '0.6748'                    },                    {                        'label': '1990',                        'value': '0.6882'                    },                    {                        'label': '1995',                        'value': '0.6804'                    },                    {                        'label': '2000',                        'value': '0.5627'                    },                    {                        'label': '2005',                        'value': '0.5373'                    },                    {                        'label': '2010',                        'value': '0.5536'                    },                    {                        'label': '2015',                        'value': '0.4291'                    }                ]            }        },        {            'id': 'SAM',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - South America',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'paletteColors': 'E65100',                    'theme': 'hulk-light'                },                'data': [                    {                        'label': '1955',                        'value': '2.6275'                    },                    {                        'label': '1960',                        'value': '2.6995'                    },                    {                        'label': '1965',                        'value': '2.757'                    },                    {                        'label': '1970',                        'value': '2.5376'                    },                    {                        'label': '1975',                        'value': '2.3431'                    },                    {                        'label': '1980',                        'value': '2.3261'                    },                    {                        'label': '1985',                        'value': '2.2036'                    },                    {                        'label': '1990',                        'value': '1.9611'                    },                    {                        'label': '1995',                        'value': '1.7184'                    },                    {                        'label': '2000',                        'value': '1.5965'                    },                    {                        'label': '2005',                        'value': '1.4482'                    },                    {                        'label': '2010',                        'value': '1.2031'                    },                    {                        'label': '2015',                        'value': '1.0698'                    }                ]            }        },        {            'id': 'ASI',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Asia',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FB8C00'                },                'data': [                    {                        'label': '1955',                        'value': '1.9075'                    },                    {                        'label': '1960',                        'value': '1.8842'                    },                    {                        'label': '1965',                        'value': '2.1082'                    },                    {                        'label': '1970',                        'value': '2.4554'                    },                    {                        'label': '1975',                        'value': '2.3036'                    },                    {                        'label': '1980',                        'value': '1.9889'                    },                    {                        'label': '1985',                        'value': '1.9683'                    },                    {                        'label': '1990',                        'value': '2.0176'                    },                    {                        'label': '1995',                        'value': '1.6823'                    },                    {                        'label': '2000',                        'value': '1.3682'                    },                    {                        'label': '2005',                        'value': '1.2435'                    },                    {                        'label': '2010',                        'value': '1.1661'                    },                    {                        'label': '2015',                        'value': '1.0731'                    }                ]            }        },        {            'id': 'EUP',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Europe',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FFE0B2'                },                'data': [                    {                        'label': '1955',                        'value': '1.026'                    },                    {                        'label': '1960',                        'value': '1.0652'                    },                    {                        'label': '1965',                        'value': '0.9381'                    },                    {                        'label': '1970',                        'value': '0.6925'                    },                    {                        'label': '1975',                        'value': '0.54'                    },                    {                        'label': '1980',                        'value': '0.4218'                    },                    {                        'label': '1985',                        'value': '0.354'                    },                    {                        'label': '1990',                        'value': '0.2971'                    },                    {                        'label': '1995',                        'value': '0.0276'                    },                    {                        'label': '2000',                        'value': '-0.1301'                    },                    {                        'label': '2005',                        'value': '-0.1558'                    },                    {                        'label': '2010',                        'value': '-0.0576'                    },                    {                        'label': '2015',                        'value': '-0.0292'                    }                ]            }        },        {            'id': 'AFC',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Africa',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'E65100'                },                'data': [                    {                        'label': '1955',                        'value': '2.1242'                    },                    {                        'label': '1960',                        'value': '2.338'                    },                    {                        'label': '1965',                        'value': '2.5075'                    },                    {                        'label': '1970',                        'value': '2.5947'                    },                    {                        'label': '1975',                        'value': '2.7175'                    },                    {                        'label': '1980',                        'value': '2.8398'                    },                    {                        'label': '1985',                        'value': '2.8857'                    },                    {                        'label': '1990',                        'value': '2.8243'                    },                    {                        'label': '1995',                        'value': '2.6172'                    },                    {                        'label': '2000',                        'value': '2.5072'                    },                    {                        'label': '2005',                        'value': '2.4853'                    },                    {                        'label': '2010',                        'value': '2.5593'                    },                    {                        'label': '2015',                        'value': '2.6001'                    }                ]            }        },        {            'id': 'AUS',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Oceania',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FB8C00'                },                'data': [                    {                        'label': '1955',                        'value': '1.511'                    },                    {                        'label': '1960',                        'value': '1.6045'                    },                    {                        'label': '1965',                        'value': '1.5578'                    },                    {                        'label': '1970',                        'value': '1.455'                    },                    {                        'label': '1975',                        'value': '1.4727'                    },                    {                        'label': '1980',                        'value': '1.2404'                    },                    {                        'label': '1985',                        'value': '1.2398'                    },                    {                        'label': '1990',                        'value': '1.1853'                    },                    {                        'label': '1995',                        'value': '1.2006'                    },                    {                        'label': '2000',                        'value': '1.1244'                    },                    {                        'label': '2005',                        'value': '1.0724'                    },                    {                        'label': '2010',                        'value': '1.1255'                    },                    {                        'label': '2015',                        'value': '1.0397'                    }                ]            }        }    ]}";
+                Chart map = new Chart("world", "mychart", "800", "550", "json", jsonData);
+                Literal1.Text = map.Render();
+
+            }
+
+        }
+    }
+</code></pre>
+</div>
+<div class="tab vb-tab">
+<div><strong>.aspx</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="index" %&gt;
+
+    &lt;!DOCTYPE html&gt;
+
+    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+
+    &lt;head runat="server"&gt;
+        &lt;title&gt;&lt;/title&gt;
+    &lt;/head&gt;
+
+    &lt;body&gt;
+        &lt;script type="text/javascript" src="fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;form id="form1" runat="server"&gt;
+            &lt;div&gt;
+                &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+            &lt;/div&gt;
+        &lt;/form&gt;
+    &lt;/body&gt;
+
+    &lt;/html&gt;
+</code></pre>
+</br>
+<div><strong>.aspx.vb</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    Imports FusionCharts.Charts
+    Partial Class index
+    Inherits System.Web.UI.Page
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Dim jsonData As String
+    jsonData = "{    'chart': {        'caption': 'Average Annual Population Growth',        'subcaption': ' 1955-2015',        'numbersuffix': '%',        'includevalueinlabels': '1',        'labelsepchar': ': ',        'entityFillHoverColor': '#FFF9C4',        'theme': 'fusion'    },    'colorrange': {        'minvalue': '0',        'code': '#FFE0B2',        'gradient': '1',        'color': [            {                'minvalue': '0.5',                'maxvalue': '1.0',                'color': '#FFD74D'            },            {                'minvalue': '1.0',                'maxvalue': '2.0',                'color': '#FB8C00'            },            {                'minvalue': '2.0',                'maxvalue': '3.0',                'color': '#E65100'            }        ]    },    'data': [        {            'id': 'NA',            'value': '.82',            'showLabel': '1',            'link': 'newchart-json-NAM'        },        {            'id': 'SA',            'value': '2.04',            'showLabel': '1',            'link': 'newchart-json-SAM'        },        {            'id': 'AS',            'value': '1.78',            'showLabel': '1',            'link': 'newchart-json-ASI'        },        {            'id': 'EU',            'value': '.40',            'showLabel': '1',            'link': 'newchart-json-EUP'        },        {            'id': 'AF',            'value': '2.58',            'showLabel': '1',            'link': 'newchart-json-AFC'        },        {            'id': 'AU',            'value': '1.30',            'showLabel': '1',            'link': 'newchart-json-AUS'        }    ],    'linkeddata': [        {            'id': 'NAM',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - North America',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'paletteColors': 'FFD74D',                    'theme': 'hulk-light'                },                'data': [                    {                        'label': '1955',                        'value': '1.5078'                    },                    {                        'label': '1960',                        'value': '1.5502'                    },                    {                        'label': '1965',                        'value': '1.3121'                    },                    {                        'label': '1970',                        'value': '0.8648'                    },                    {                        'label': '1975',                        'value': '0.6402'                    },                    {                        'label': '1980',                        'value': '0.62'                    },                    {                        'label': '1985',                        'value': '0.6748'                    },                    {                        'label': '1990',                        'value': '0.6882'                    },                    {                        'label': '1995',                        'value': '0.6804'                    },                    {                        'label': '2000',                        'value': '0.5627'                    },                    {                        'label': '2005',                        'value': '0.5373'                    },                    {                        'label': '2010',                        'value': '0.5536'                    },                    {                        'label': '2015',                        'value': '0.4291'                    }                ]            }        },        {            'id': 'SAM',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - South America',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'paletteColors': 'E65100',                    'theme': 'hulk-light'                },                'data': [                    {                        'label': '1955',                        'value': '2.6275'                    },                    {                        'label': '1960',                        'value': '2.6995'                    },                    {                        'label': '1965',                        'value': '2.757'                    },                    {                        'label': '1970',                        'value': '2.5376'                    },                    {                        'label': '1975',                        'value': '2.3431'                    },                    {                        'label': '1980',                        'value': '2.3261'                    },                    {                        'label': '1985',                        'value': '2.2036'                    },                    {                        'label': '1990',                        'value': '1.9611'                    },                    {                        'label': '1995',                        'value': '1.7184'                    },                    {                        'label': '2000',                        'value': '1.5965'                    },                    {                        'label': '2005',                        'value': '1.4482'                    },                    {                        'label': '2010',                        'value': '1.2031'                    },                    {                        'label': '2015',                        'value': '1.0698'                    }                ]            }        },        {            'id': 'ASI',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Asia',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FB8C00'                },                'data': [                    {                        'label': '1955',                        'value': '1.9075'                    },                    {                        'label': '1960',                        'value': '1.8842'                    },                    {                        'label': '1965',                        'value': '2.1082'                    },                    {                        'label': '1970',                        'value': '2.4554'                    },                    {                        'label': '1975',                        'value': '2.3036'                    },                    {                        'label': '1980',                        'value': '1.9889'                    },                    {                        'label': '1985',                        'value': '1.9683'                    },                    {                        'label': '1990',                        'value': '2.0176'                    },                    {                        'label': '1995',                        'value': '1.6823'                    },                    {                        'label': '2000',                        'value': '1.3682'                    },                    {                        'label': '2005',                        'value': '1.2435'                    },                    {                        'label': '2010',                        'value': '1.1661'                    },                    {                        'label': '2015',                        'value': '1.0731'                    }                ]            }        },        {            'id': 'EUP',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Europe',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FFE0B2'                },                'data': [                    {                        'label': '1955',                        'value': '1.026'                    },                    {                        'label': '1960',                        'value': '1.0652'                    },                    {                        'label': '1965',                        'value': '0.9381'                    },                    {                        'label': '1970',                        'value': '0.6925'                    },                    {                        'label': '1975',                        'value': '0.54'                    },                    {                        'label': '1980',                        'value': '0.4218'                    },                    {                        'label': '1985',                        'value': '0.354'                    },                    {                        'label': '1990',                        'value': '0.2971'                    },                    {                        'label': '1995',                        'value': '0.0276'                    },                    {                        'label': '2000',                        'value': '-0.1301'                    },                    {                        'label': '2005',                        'value': '-0.1558'                    },                    {                        'label': '2010',                        'value': '-0.0576'                    },                    {                        'label': '2015',                        'value': '-0.0292'                    }                ]            }        },        {            'id': 'AFC',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Africa',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'E65100'                },                'data': [                    {                        'label': '1955',                        'value': '2.1242'                    },                    {                        'label': '1960',                        'value': '2.338'                    },                    {                        'label': '1965',                        'value': '2.5075'                    },                    {                        'label': '1970',                        'value': '2.5947'                    },                    {                        'label': '1975',                        'value': '2.7175'                    },                    {                        'label': '1980',                        'value': '2.8398'                    },                    {                        'label': '1985',                        'value': '2.8857'                    },                    {                        'label': '1990',                        'value': '2.8243'                    },                    {                        'label': '1995',                        'value': '2.6172'                    },                    {                        'label': '2000',                        'value': '2.5072'                    },                    {                        'label': '2005',                        'value': '2.4853'                    },                    {                        'label': '2010',                        'value': '2.5593'                    },                    {                        'label': '2015',                        'value': '2.6001'                    }                ]            }        },        {            'id': 'AUS',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Oceania',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FB8C00'                },                'data': [                    {                        'label': '1955',                        'value': '1.511'                    },                    {                        'label': '1960',                        'value': '1.6045'                    },                    {                        'label': '1965',                        'value': '1.5578'                    },                    {                        'label': '1970',                        'value': '1.455'                    },                    {                        'label': '1975',                        'value': '1.4727'                    },                    {                        'label': '1980',                        'value': '1.2404'                    },                    {                        'label': '1985',                        'value': '1.2398'                    },                    {                        'label': '1990',                        'value': '1.1853'                    },                    {                        'label': '1995',                        'value': '1.2006'                    },                    {                        'label': '2000',                        'value': '1.1244'                    },                    {                        'label': '2005',                        'value': '1.0724'                    },                    {                        'label': '2010',                        'value': '1.1255'                    },                    {                        'label': '2015',                        'value': '1.0397'                    }                ]            }        }    ]}"
+    Dim chart As New Chart("world", "myChart", "600", "350", "json", jsonData)
+    Literal1.Text = chart.Render()
+    End Sub
+    End Class
+</code></pre>
+</div>
+</div>
+</div>
 
 ## Problem rendering the chart?
 
