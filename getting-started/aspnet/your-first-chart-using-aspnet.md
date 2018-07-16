@@ -85,7 +85,7 @@ The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
     ...
     //Create chart instance
     // charttype, chartID, width, height, data format, data
-    Chart chart = new Chart("column2d", "myChart", "600", "400", "json", DataSource);
+    Chart chart = new Chart("column2d", "myChart", "700", "400", "json", DataSource);
     //Render chart
     Literal1.Text = chart.Render();
 </code></pre>
@@ -103,7 +103,7 @@ The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
         ' Initialize chart
     ' charttype, chartID, width, height, data format, data
 
-    Dim chart As New Chart("column2d", "myChart", "600", "350", "json", DataSource)
+    Dim chart As New Chart("column2d", "myChart", "700", "400", "json", DataSource)
     ' Render the chart
     Literal1.Text = chart.Render()
 </code></pre>
