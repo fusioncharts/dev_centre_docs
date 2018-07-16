@@ -1,7 +1,7 @@
 ---
 permalink: troubleshooting/quickly-check-chart-performance.html
 title: Quickly check Chart Performance | FusionCharts
-description: When building charts with FusionCharts Suite XT, if you run into errors, you can use our troubleshooting to trace such errors
+description: The time it takes for a chart to be rendered properly can be measured to gauge the performance of the chart. This page shows how.
 heading: Quickly check Chart Performance
 chartPresent: false
 ---

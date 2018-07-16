@@ -1,7 +1,7 @@
 ---
 permalink: troubleshooting/export-charts-using-private-export-server.html
 title: Export Charts using a Private Export Server | FusionCharts
-description: When building charts with FusionCharts Suite XT, if you run into errors, you can use our troubleshooting to trace such errors
+description: Charts built using FusionCharts suite can be exported using a private server. This page describes how.
 heading: Export Charts using a Private Export Server
 chartPresent: false
 ---

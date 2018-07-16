@@ -1,7 +1,7 @@
 ---
 permalink: troubleshooting/unable-to-retrieve-data-from-database-and-render-chart-with-fc.html
 title: Unable to retrieve data from a Database and render a Chart with FC | FusionCharts
-description: When building charts with FusionCharts Suite XT, if you run into errors, you can use our troubleshooting to trace such errors
+description: Data stored in a database can be retrieved to render a chart, using FusionCharts. This page shows how to do that correctly.
 heading: Unable to retrieve data from a Database and render a Chart with FC
 chartPresent: false
 ---

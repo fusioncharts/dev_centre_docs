@@ -1,7 +1,7 @@
 ---
 permalink: troubleshooting/unable-to-restrict-y-axis-values-in-a-chart.html
 title: Unable to restrict Y-axis values in a Chart | FusionCharts
-description: When building charts with FusionCharts Suite XT, if you run into errors, you can use our troubleshooting to trace such errors
+description: Minimum and maximum values on the Y-axis of a chart can be restricted using FusionCharts. This page states how.
 heading: Unable to restrict Y-axis values in a Chart
 chartPresent: false
 ---

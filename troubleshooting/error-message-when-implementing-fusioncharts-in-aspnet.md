@@ -1,7 +1,7 @@
 ---
 permalink: troubleshooting/error-message-when-implementing-fusioncharts-in-aspnet.html
 title: Error Message when implementing FusionCharts in ASP.Net | FusionCharts
-description: When building charts with FusionCharts Suite XT, if you run into errors, you can use our troubleshooting to trace such errors
+description: An error message may appear when FusionCharts is being implemented in ASP.Net. This article shows how to deal with it.
 heading: Error Message when implementing FusionCharts in ASP.Net
 chartPresent: false
 ---

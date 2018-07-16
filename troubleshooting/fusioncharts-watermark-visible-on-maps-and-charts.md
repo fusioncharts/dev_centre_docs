@@ -1,7 +1,7 @@
 ---
 permalink: troubleshooting/fusioncharts-watermark-visible-on-maps-and-charts.html
 title: FusionCharts Watermark visible on Maps and Charts | FusionCharts
-description: When building charts with FusionCharts Suite XT, if you run into errors, you can use our troubleshooting to trace such errors
+description: A watermark appears on charts built using the trial version of FusionCharts. This page shows how to remove the watermark.
 heading: FusionCharts Watermark visible on Maps and Charts
 chartPresent: false
 ---

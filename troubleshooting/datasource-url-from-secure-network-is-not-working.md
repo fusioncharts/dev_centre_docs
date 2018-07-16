@@ -1,7 +1,7 @@
 ---
 permalink: troubleshooting/datasource-url-from-secure-network-is-not-working.html
 title: Datasource URL from a Secure Network is not working | FusionCharts
-description: When building charts with FusionCharts Suite XT, if you run into errors, you can use our troubleshooting to trace such errors
+description: When the URL of the data source is present within a secured network, FusionCharts may not always be able to access it. This page shows how to solve the problem.
 heading: Datasource URL from a Secure Network is not working
 chartPresent: false
 ---
