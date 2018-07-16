@@ -148,10 +148,6 @@ The aspx template of the above sample is shown below:
 </div>
 </div>
 
-That's it! When you run this .aspx page now, you should see a chart representing your data.
-
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
-
 The full code for the above sample is given below:
 
 <div class="code-wrapper">
@@ -245,6 +241,10 @@ The full code for the above sample is given below:
 </div>
 </div>
 </div>
+
+That's it! When you run this .aspx page now, you should see a chart representing your data.
+
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
 
 Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 
@@ -350,8 +350,6 @@ The .aspx template for the above sample is:
 </div>
 </div>
 
-See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
-
 The full code for the above sample is given below:
 
 <div class="code-wrapper">
@@ -446,6 +444,8 @@ The full code for the above sample is given below:
 </div>
 </div>
 </div>
+
+See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
 
 ## Create your first map
 
@@ -549,8 +549,6 @@ The .aspx template for the above sample is:
 </div>
 </div>
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. The respective `id`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
-
 The full code for the above sample is given below:
 
 <div class="code-wrapper">
@@ -646,6 +644,8 @@ The full code for the above sample is given below:
 </div>
 </div>
 </div>
+
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. The respective `id`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
 ## Problem rendering the chart?
 

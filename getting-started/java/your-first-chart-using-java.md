@@ -112,10 +112,6 @@ In the above code:
 * To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 
-That's it! When you run this HTML page now, you should see a chart representing your data.
-
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
-
 The full code for the above sample is given below:
 
 ```html
@@ -160,6 +156,10 @@ The full code for the above sample is given below:
 
             </html>
 ```
+
+That's it! When you run this HTML page now, you should see a chart representing your data.
+
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
 
 Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 
@@ -227,8 +227,6 @@ The code to render the chart is given below:
 <%=gauge.render()%>
 ```
 
-See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
-
 The full code for the above sample is given below:
 
 ```html
@@ -273,6 +271,8 @@ The full code for the above sample is given below:
 
             </html>
 ```
+
+See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
 
 ## Create your first map
 
@@ -337,8 +337,6 @@ The code to render the chart is given below:
 <%=map.render()%>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
-
 The full code for the above sample is given below:
 
 ```
@@ -383,6 +381,8 @@ The full code for the above sample is given below:
 
             </html>
 ```
+
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
 ## Problem rendering the chart?
 
