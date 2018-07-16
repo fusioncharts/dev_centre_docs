@@ -46,7 +46,7 @@ File Name|Description|
 
 [Download](https://www.fusioncharts.com/php-charts/) the FusionCharts PHP wrapper which contains the main class file `fusioncharts.php` in `wrappers2/php-wrapper` folder.
 
-That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart '@@open-newtab').
+That completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php '@@open-newtab').
 
 ## Installing FusionMaps (map visualizations) for your project
 
@@ -54,13 +54,13 @@ That completes the installation of FusionCharts in your application. To see how 
 
 In order to render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files.
 
-> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
+> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
 ### Step 2
 
 [Download](https://www.fusioncharts.com/php-charts/) the FusionCharts PHP wrapper which contains the main class file `fusioncharts.php` in `wrappers2/php-wrapper/` folder.
 
-That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/vuejs/your-first-chart-using-vuejs '@@open-newtab').
+That completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-map-10 '@@open-newtab').
 
 ## Themes
 

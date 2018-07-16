@@ -8,9 +8,9 @@ chartPresent: false
 
 FusionCharts Suite XT includes the FusionCharts JSP wrapper that lets you create interactive, data-driven charts.
 
-JavaScript and HTML code is used to generate charts in the browsers. The server-side JSP wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/jsp/your-first-chart-using-jsp#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/jsp/your-first-chart-using-jsp#create-your-first-map-10).
+JavaScript and HTML code is used to generate charts in the browsers. The server-side JSP wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-map-10).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/jsp/install-using-jsp '@@open-newtab') FusionCharts JSP wrapper, if not already installed.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/java/install-using-java '@@open-newtab') FusionCharts JSP wrapper, if not already installed.
 
 ## Create your first chart
 
@@ -20,7 +20,7 @@ Let's start with a simple example of "Countries With Most Oil Reserves" chart, w
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-### The data for this chart is represented in a table below:
+The data for this chart is represented in a table below:
 
 Country|No. of Oil Reserves|
 -|-
@@ -78,7 +78,7 @@ Firstly, import FusionCharts reference to your `.jsp` page.
 <%@page import="fusioncharts.FusionCharts" %>
 ```
 
-*Step 2**
+**Step 2**
 
 Create a container using &lt;div&gt;, to render the chart.
 
@@ -189,7 +189,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 ### Create an instance of the gauge
 
-In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
+In this step, we will create an instance of the chart type as `angularGauge`, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
 **Step 1**
 
@@ -199,7 +199,7 @@ Firstly, import FusionCharts reference to your `.jsp` page.
 <%@page import="fusioncharts.FusionCharts" %>
 ```
 
-*Step 2**
+**Step 2**
 
 Create a container using &lt;div&gt;, to render the chart.
 
@@ -299,7 +299,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 ### Create an instance of the map
 
-In this step, we will create an instance of the map type as **world**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
+In this step, we will create an instance of the map type as `world`, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
 **Step 1**
 

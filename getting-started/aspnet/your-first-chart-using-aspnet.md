@@ -18,7 +18,7 @@ Let's start with a simple example of "Countries With Most Oil Reserves" chart, w
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-### The data for this chart is represented in a table below:
+The data for this chart is represented in a table below:
 
 Country|No. of Oil Reserves|
 -|-
@@ -66,7 +66,7 @@ For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attri
 
 ### Create an instance of the chart
 
-In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
+In this step, we will create an instance of the chart type as `column2d`, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
 The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 
@@ -274,7 +274,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 ### Create an instance of the gauge
 
-In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
+In this step, we will create an instance of the chart type as `angulargauge`, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
 The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 
@@ -472,7 +472,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 ### Create an instance of the map
 
-In this step, we will create an instance of the map type as **world**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
+In this step, we will create an instance of the map type as `world`, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
 The code to render a chart using `.aspx.cs` or `.aspx.vb` file is given below:
 

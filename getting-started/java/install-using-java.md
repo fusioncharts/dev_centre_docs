@@ -1,5 +1,5 @@
 ---
-permalink: getting-started/jsp/install-using-jsp.html
+permalink: getting-started/java/install-using-java.html
 title: Installation | FusionCharts
 description: This article talks about how you can install FusionCharts JSP wrapper.
 heading: Installation
@@ -50,19 +50,19 @@ File Name|Description|
 
 ### Step 2
 
-[Download](https://www.fusioncharts.com/asp-net-charts/) the FusionCharts JSP wrapper. Then follow the steps given below:
-*  Unzip the archive and move its contents to the `"/jsp-wrapper-master/src/java/fusioncharts/"` to get the `"FusionCharts.java"` main class file.
+[Download](https://www.fusioncharts.com/jsp-charts/) the FusionCharts JSP wrapper. Then follow the steps given below:
+*  Unzip the archive and move its content to the `"/jsp-wrapper-master/src/java/fusioncharts/"` to get the `"FusionCharts.java"` main class file.
 * Include `"FusionCharts.java"` in your project.
 
-That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart '@@open-newtab').
+That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java '@@open-newtab').
 
 ## Installing FusionMaps (map visualizations) for your project
 
 ### Step 1
 
-In order to render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files follow the steps below:
+In order to render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files.
 
-> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
+> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
 ### Step 2
 
