@@ -146,14 +146,39 @@ export class AppComponent {
     constructor() {
         this.dataSource = {
             chart: {
-                theme:'ocean'
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
             },
-            data: [
-                {value: 500},
-                {value: 400},
-                {value: 300},
-                {value: 500}
-            ]
+            // Chart Data
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
         }; // end of this.dataSource
     } // end of constructor
 } // end of class AppComponent
@@ -234,44 +259,90 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-### Create an instance of the gauge
+### Setup the main module
 
-In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will setup the main module to create the **angularGauge** chart. The code is given below:
 
-The code to render a chart by passing VueJS component is given below:
 
-```javascript
-// Use the vue.use() global method
-Vue.use(VueFusionCharts);
-const app = new Vue({
-    el: '#app',
-    data: {
-        type: 'angulargauge', // Chart type
-        renderAt: 'chart-container', // Container
-        width: '450', // Width of the chart
-        height: '250', // Height of the chart
-        dataFormat: 'json', // Data Type
-        dataSource: {
-            chart: {
-                ...
-            }
-        }
-    }
-});
+```
+import { FusionChartsModule } from 'angular-fusioncharts';
+import * as FusionCharts from 'fusioncharts';
+import * as Widgets from 'fusioncharts/fusioncharts.widgets; // Charts
+
+@NgModule({
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule,
+        FusionChartsModule.forRoot(FusionCharts, Widgets), // Note this line  
+    ],
+    providers: [],
+    bootstrap: [ AppComponent ]
+})
+export class AppModule {
+}
 ```
 
-The HTML template for the above sample is:
+### Add data to `app.component.ts`
+
+Add the following code to `app.component.ts`:
+
+```
+import {Component} from '@angular/core';
+@Component({
+    selector: 'app',
+    templateUrl: './app.component.html',
+})
+export class AppComponent {
+    dataSource: Object;
+    constructor() {
+        this.dataSource = {
+            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+            "lowerLimit": "0",
+            "upperLimit": "100",
+            "showValue": "1",
+            "numberSuffix": "%",
+            "theme": "fusion",
+            "showToolTip": "0"
+        },
+        // Chart Data
+        "colorRange": {
+            "color": [{
+                "minValue": "0",
+                "maxValue": "50",
+                "code": "#F2726F"
+            }, {
+                "minValue": "50",
+                "maxValue": "75",
+                "code": "#FFC533"
+            }, {
+                "minValue": "75",
+                "maxValue": "100",
+                "code": "#62B58F"
+            }]
+        },
+        "dials": {
+            "dial": [{
+                "value": "81"
+            }]
+        }
+    }; // end of this.dataSource
+} // end of constructor
+} // end of class AppComponent
+```
+
+### Add data to `app.component.html`
+
+Add the following code to `app.component.html`:
 
 ```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
-</div>
+<fusioncharts
+    width="450"
+    height="250"
+    type="angularGauge"
+    [dataSource]="dataSource">
+</fusioncharts>
 ```
 
 See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
