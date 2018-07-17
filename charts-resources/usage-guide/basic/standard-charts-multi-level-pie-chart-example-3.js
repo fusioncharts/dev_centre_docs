@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
       "chart": {
-        "caption": "Split of Top Products Sold",
+        "caption": "Sales Breakup - Top Product Categories",
         "subCaption": "Last Quarter",
         "captionFontSize": "14",
         "subcaptionFontSize": "14",

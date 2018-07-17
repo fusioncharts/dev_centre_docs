@@ -43,8 +43,70 @@ Click [here](http://jsfiddle.net/fusioncharts/njjra2r4/ "@@open-newtab") to edit
 
 Now, let's customize the appearance and properties of the multi-level pie chart.
 
-## Highlight effect
+## Configure highlight effect
 
+Set the direction of the highlight effect of the plots, when hovered over, using the `highlightParentPieSlices` and `highlightChildPieSlices` attributes. For instance:
 
+* Set the value of `highlightParentPieSlices` to `0` to prevent child pie slices from getting highlighted, when you hover over the parent slices.
 
-## Configure Inner Radius
+* Set the value of `highlightChildPieSlices` to `1` to automatically also highlight parent slices when you hover over the child pie slices.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+    	...
+        "highlightParentPieSlices": "0",
+        "highlightChildPieSlices": "1"
+    },
+}
+```
+
+The chart will look as shown below:
+
+{% embed_chart standard-charts-multi-level-pie-chart-example-2.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/xcjhaz28/ "@@open-newtab") to edit the multi-level pie chart.
+
+## Configure inner radius
+
+Use the `InnerRadius` attribute to explicitly set the inner radius of the pie chart to a value of your choosing.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+    	...
+        "innerRadius": "10"
+    },
+}
+```
+
+The chart will look as shown below:
+
+{% embed_chart standard-charts-multi-level-pie-chart-example-3.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/yw2mf0rj/ "@@open-newtab") to edit the multi-level pie chart.
+
+## Export Multi-level pie chart in CSV or XLS formats
+
+In version 3.13.0, you can export data from multi-level pie charts in CSV or XLS formats. Set the value of the `enableExport` attribute to `1` to do so.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+    	...
+        "enableExport": "1"
+    },
+}
+```
+
+The chart will look as shown below:
+
+{% embed_chart standard-charts-multi-level-pie-chart-example-4.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/pcmz12Lv/ "@@open-newtab") to edit the multi-level pie chart.

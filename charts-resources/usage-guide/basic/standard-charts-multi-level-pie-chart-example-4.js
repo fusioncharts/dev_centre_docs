@@ -29,7 +29,8 @@
         "numberPrefix": "$",
         "plotTooltext": "$label, $$valueK, $percentValue",
         "highlightParentPieSlices": "0",
-        "highlightChildPieSlices": "1"
+        "highlightChildPieSlices": "1",
+        "enableExport": "1"
       },
       "category": [{
         "label": "Sales by category",
