@@ -14,7 +14,7 @@ Some of the basic features of VueJS component are:
 * Can render charts using a **JSON/XML** URL or props array binding.
 * Auto-updates the chart object when the data source is modified.
 
-In this article, we will show you how you can download and install the `Vue-FusionCharts` component and all the other dependencies on your system. You can use FusionCharts in your Vue project using any of the two modes given below:
+In this article, we will show you how you can download and install the `Vue-FusionCharts` component and all the other dependencies on your system. You can install FusionCharts in your Vue project using any of the two modes given below:
 
 ## Choose your mode of installation:
 

@@ -5,15 +5,11 @@ heading: Installation
 chartPresent: false
 ---
 
-The Vue-FusionCharts component lets you include FusionCharts in your VueJS projects and adds interactive JavaScript charts and graphs to your VueJS applications. Before we get into the installation process of the component, let's take a look at what sets the VueJS component apart.
+FusionCharts Suite XT includes an extensive range of charts, gauges, and maps that you can use to plot all types of static and real-time data.
 
-Some of the basic features of VueJS component are:
+The Angular2-FusionCharts directive, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single Angular2 directive.
 
-* Easily create charts in JavaScript using your Vue code.
-* Can render charts using a **JSON/XML** URL or props array binding.
-* Auto-updates the chart object when the data source is modified.
-
-In this article, we will show you how you can download and install the `Vue-FusionCharts` component and all the other dependencies on your system. You can use FusionCharts in your Vue project using any of the two modes given below:
+In this article, we will show you how you can download and install the `Angular2-FusionCharts` directive and all the other dependencies on your system. You can install FusionCharts in your application using any of the two modes given below:
 
 ## Choose your mode of installation:
 
