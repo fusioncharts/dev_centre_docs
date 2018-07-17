@@ -807,7 +807,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * In Stacked charts that included line, such as Stacked Column 2D Line, multiple line series were considered as stacked, which led to improper axis limits.
 
-* In Gantt charts, data table and process label column was getting displaced when their widths were adjusted by dragging.
+* In Gantt charts, data table and process label column was getting displaced when their width was adjusted by dragging.
 
 * In Pie and Doughnut charts 3D, `dataIndex` was giving wrong values from data-plot events.
 
