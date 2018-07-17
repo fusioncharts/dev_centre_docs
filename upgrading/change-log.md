@@ -27,7 +27,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * [getSVGString](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#getsvgstring-95) now accepts an object as the second parameter with a property named `keepImages`. It can now export the logo or any images (background images, etc.) present in the chart.
 
-* `fusioncharts.vml.js` file has been added to the package for VML browsers which contains all the VML related codes.
+* `fusioncharts.vml.js` file has been added to the package for VML browsers which contains all the VML related codes. 
 
 ## Improvements
 
