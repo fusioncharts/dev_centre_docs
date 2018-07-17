@@ -5,11 +5,11 @@ heading: What's New
 breadcrumb: [["Home", "/"], ["What's New"]]
 ---
 
-This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the new featured introduced in v3.13.0.
+This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the new features introduced in v3.13.0.
 
 ## Overlapped Column 2D and Bar 2D Chart
 
-In version 3.13.0, FusionCharts has come up with a clever and rather effective bar chart to display your data. In these charts, the two data series overlap. The width of the plot for the data series differs which makes the chart easy to compare.  
+In version 3.13.0, FusionCharts has come up with overlapped bar and overlapped column charts to display your data. In these charts, the two data series overlap. The width of the plot for the data series differs which makes the chart easy to compare.  
 
 * Overlapped Column 2D Chart
 * Overlapped Bar 2D Chart
