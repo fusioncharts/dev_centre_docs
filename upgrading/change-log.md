@@ -1,7 +1,7 @@
 ---
-title: Change Log | FusionCharts
+title: Changelog | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
-heading: Change Log
+heading: Changelog
 breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
@@ -33,7 +33,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * For dual y-axis charts, the secondary data plots now overlaps the primary data plots if `renderAs` attribute is set as column. 
 
-* In order to free chart areas, the restore button in select-scatter and drag-able chart has been moved to [options menu](https://www.fusioncharts.com/dev/chart-guide/standard-charts/drag-able-charts#dragable-column-d-chart-1). The list of attributes which have been added are as follows:
+* In order to free chart area, the restore button in select-scatter and drag-able chart has been moved to [options menu](https://www.fusioncharts.com/dev/chart-guide/standard-charts/drag-able-charts#dragable-column-d-chart-1). The list of attributes which have been added are as follows:
 
     * [enableSubmit](https://www.fusioncharts.com/dev/chart-attributes/?chart=dragcolumn2d&attribute=chart_enablesubmit)
 
@@ -799,7 +799,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * Y-axis values were getting cropped when `yAxisMaxValue` attribute value was set in decimals.
 
-* In Treemap charts, label texts were overflowing and was accumulating at the corners of the chart.
+* In Treemap charts, label text were overflowing and was accumulating at the corners of the chart.
 
 * In Real-time charts, request for updated data was being sent to data source immediately after the chart was rendered, bypassing the specified update interval.
 
