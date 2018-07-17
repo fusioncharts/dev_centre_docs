@@ -121,10 +121,10 @@ FusionCharts Suite XT ships with the following predefined themes:
 To include the definition files placed in **fusioncharts/themes**, execute the following command:
 
 ```Shell
-import * as Fusion from "fusioncharts/themes/fusioncharts.theme.fusion";
-import * as Zune from "fusioncharts/themes/fusioncharts.theme.zune";
-import * as Ocean from "fusioncharts/themes/fusioncharts.theme.ocean";
-import * as Carbon from "fusioncharts/themes/fusioncharts.theme.carbon";
+import * as Fusion from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import * as Zune from 'fusioncharts/themes/fusioncharts.theme.zune';
+import * as Ocean from 'fusioncharts/themes/fusioncharts.theme.ocean';
+import * as Carbon from 'fusioncharts/themes/fusioncharts.theme.carbon';
 ```
 
 > The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` file sets the theme as **fusion**. To add any other theme to your chart, include its corresponding JavaScript file to your project.
@@ -165,7 +165,7 @@ You can add all the dependencies to the angular environment in the main module, 
 
 To add other dependencies to the enviroment, replace the **FusionChartsModule.forRoot(FusionCharts, Charts)** command with:
 
-* **FusionChartsModule.forRoot(FusionCharts, Charts, Widgets, FusionTheme)**: to import charts, widgets and themes.
+* **FusionChartsModule.forRoot(FusionCharts, Charts, Widgets, FusionTheme)**: To import charts, widgets and themes.
 
 * **FusionChartsModule.forRoot(FusionCharts, Charts, Widgets, Fusion)**: To import charts, widgets and themes.
 
