@@ -13,11 +13,7 @@ In this article, we will show you how you can download and install the `Angular2
 
 ## Install FusionCharts via npm
 
-In order to install and start working with angular2-FusionCharts component, firstly let's look at the folder structure of the FusionCharts library files:
-
-![Js Folder Structure]({% site.baseurl %}/images/js-folder-structure.png)
-
-Following is the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
+Before installing and start working with angular2-FusionCharts component, let's checkout the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
 
 File Name|Description|
 -|-
