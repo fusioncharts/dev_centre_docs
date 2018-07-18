@@ -1,9 +1,8 @@
 {
     type: 'overlappedbar2d',
     renderAt: 'chart-container',
-    id: "myChart",
     width: '500',
-    height: '300',
+    height: '500',
     dataFormat: 'json',
     dataSource: {
         "chart": {
