@@ -376,7 +376,16 @@ FusionCharts.addDep(World). (World - reference from above)
 
 ### Include Themes via NPM
 
-In your Javascript code, use the **Vue.use()** method to register the vue-fusioncharts component.
+FusionCharts Suite XT ships with the following predefined themes:
+
+* `fusion`
+* `zune`
+* `ocean`
+* `carbon`
+
+> The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` file sets the theme as **fusion**. To add any other theme to your chart, include its corresponding JavaScript file to your project.
+
+In your Javascript code, use the `Vue.use()` method to register the vue-fusioncharts component.
 
 To include the core fusioncharts files, execute the following command:
 
