@@ -6,534 +6,742 @@ heading: Your First Chart in React using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and Vue-FusionCharts plugin. We'll start with simple examples of creating a [chart]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart#create-your-first-gauge-7) and a [map]({% site.baseurl %}/using-with-javascript-libraries/vuejs/your-first-chart#create-your-first-map-10).
+# Your First Chart in React using FusionCharts
 
-Before going through this article, please [install]({% site.baseurl %}/using-with-javascript-libraries/vuejs/installation '@@open-newtab') `vue-fusioncharts` plugin, if not already installed.
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and React-FusionCharts plugin. We'll start with simple examples of creating a [chart](http://34.201.209.197:4000/getting-started/vuejs/your-first-chart-using-vuejs#create-your-first-chart-1), then a [gauge](http://34.201.209.197:4000/getting-started/vuejs/your-first-chart-using-vuejs#create-your-first-gauge-7) and a [map](http://34.201.209.197:4000/getting-started/vuejs/your-first-chart-using-vuejs#create-your-first-map-10).
+
+Before going through this article, please [install](https://www.fusioncharts.com/react-charts) react-fusioncharts plugin, if not already installed.
 
 ## Create your first chart
 
-In this section, we will create a chart using `vue-fusioncharts`. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
+In this section, we will create a chart using react-fusioncharts. We will create a Column 2D chart, which has the column2d chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here](http://34.201.209.197:4000/chart-guide/getting-started/list-of-charts).
 
-To create charts, the `vue-fusioncharts` component can be passed as a part of another VueJs component.
+Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
 
-Let's start with a simple example of "Monthly revenue" chart, which we will plot in a Column 2D chart as shown below:
+[chart goes here]
 
-{% embed_chart getting-started-your-first-chart.js %}
+The data for this chart is represented in a table below:
 
-### The data for this chart is represented in a table below:
 
-Month|Revenue|
+Country|No. of Oil Reserves|
 -|-
-January|$420,000|
-February|$810,000|
-March|$720,000|
-April|$550,000|
-May|$910,000|
-June|$510,000|
-July|$680,000|
-August|$620,000|
-September|$610,000|
-October|$490,000|
-November|$900,000|
-December|$730,000|
+Venezuela|290|
+Saudi|260|
+Canada|180|
+Iran|140|
+Russia|115|
+UAE|100|
+US|30|
+China|30|
+
+
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For React, we recommend JSON format. The converted format will look as shown below:
 
-> There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+There are different formats of JSON for different groups of charts in FusionCharts - e.g. single-series (which you're seeing here), [multi-series](http://34.201.209.197:4000/chart-guide/standard-charts/multi-series-charts), [combination](http://34.201.209.197:4000/chart-guide/standard-charts/combination-charts), etc.
 
-```javascript
+```
+
 {
     // Chart Configuration
     "chart": {
-        "caption": "Monthly revenue for last year",
-        "subCaption": "Harry's SuperMart",
-        "xAxisName": "Month",
-        "yAxisName": "Revenues (In USD)",
-        "numberPrefix": "$",
-        "showLabel": "1",
-        "showValue": "1",
-        "theme": "fusion"
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion",
     },
     // Chart Data
     "data": [{
-        "label": "Jan",
-        "value": "420000"
+        "label": "Venezuela",
+        "value": "290"
     }, {
-        "label": "Feb",
-        "value": "810000"
+        "label": "Saudi",
+        "value": "260"
     }, {
-        "label": "Mar",
-        "value": "720000"
+        "label": "Canada",
+        "value": "180"
     }, {
-        "label": "Apr",
-        "value": "550000"
+        "label": "Iran",
+        "value": "140"
     }, {
-        "label": "May",
-        "value": "910000"
+        "label": "Russia",
+        "value": "115"
     }, {
-        "label": "Jun",
-        "value": "510000"
+        "label": "UAE",
+        "value": "100"
     }, {
-        "label": "Jul",
-        "value": "680000"
+        "label": "US",
+        "value": "30"
     }, {
-        "label": "Aug",
-        "value": "620000"
-    }, {
-        "label": "Sep",
-        "value": "610000"
-    }, {
-        "label": "Oct",
-        "value": "490000"
-    }, {
-        "label": "Nov",
-        "value": "900000"
-    }, {
-        "label": "Dec",
-        "value": "730000"
+        "label": "China",
+        "value": "30"
     }]
 }
+
 ```
 
 In the above JSON we have:
 
-* Created the chart object to define the elements of the `chart`.
-* Then, each row of the tabular data is present within the `data` array to specify the labels and their corresponding values.
+* Created the chart object to define the elements of the chart.
 
-Both the `chart` object and the `data` array contains a set of key-value pairs known as attributes. These attributes are used to set the functional and cosmetic properties of the chart as defined below:
+* Then, each row of the tabular data is present within the data array to specify the labels and their corresponding values.
+
+Both the chart object and the data array contains a set of key-value pairs known as attributes. These attributes are used to set the functional and cosmetic properties of the chart as defined below:
 
 #### Functional Attributes
 
 Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties. The list of functional attributes used in the above code are:
 
-* `showLabels` sets the  configuration whether the x-axis labels will be displayed or not.
+* `showLabels` sets the configuration whether the x-axis labels will be displayed or not.
+
 * `showValue` sets the configuration whether data values will be displayed along with the data plot on chart.
+
 * `caption` sets the caption of the chart.
+
 * `subcaption` sets the sub-caption of the chart.
+
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
+
 * `numberPrefix` adds prefix to all the numbers visible on the chart.
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
+
+* Please note, we have used the theme attribute in the chart's JSON data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetics Attributes
 
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click here.
+Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the fusion theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click here.
 
-
-
-For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
+For the detailed list of attributes, click [here](http://34.201.209.197:4000/chart-attributes/?chart=area2d).
 
 ### Create an instance of the chart
 
-In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will create an instance of the chart type as `column2d`, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
 
-The code to render a chart by passing VueJS component is given below:
+First, store the configurations as JSON object in a variable as below:
 
-```javascript
-// Use the Vue.use() global method
-Vue.use(VueFusionCharts);
-const app = new Vue({
-    el: '#app',
-    data: {
-        type: 'column2d', // The chart type
-        width: '600', // Width of the chart
-        height: '400', // Height of the chart
-        dataFormat: 'json', // Data type
-        dataSource: {
-            chart: {
-                ...
-            }
-        }
-    }
-});
+```
+
+var chartConfigs = {
+
+   type: 'column2d', // The chart type
+   width: '700', // Width of the chart
+   height: '400', // Height of the chart
+   dataFormat: 'json', // Data type
+   dataSource: {
+    chart: {
+            ...
+           }
+   }
+
+};
+
+```
+
+To render the chart, the react-fusioncharts component can be:
+
+* Passed directly to the `ReactDOM.render()` method
+
+OR
+
+* Passed as a part of another ReactJS component
+
+#### Passed directly to the ReactDOM.render() method:
+
+```
+
+ReactDOM.render(
+
+    <ReactFC {...chartConfigs} />,
+
+    document.getElementById('chart-container')
+
+);
+
+```
+
+#### Passed as a part of another ReactJS component:
+
+```
+
+class App extends React.Component {
+
+  render() {
+
+    return (
+
+        / **FusionCharts Component** /
+
+        <ReactFC {...chartConfigs} />
+
+        /** Other ReactJS component(s) **/
+
+        <..... />
+
+        <..... />
+
+    )
+
+  }
+
+}
+
 ```
 
 In the above code:
 
-* We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using `width` and `height`.
-* To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
+* We have created an instance of the column2d chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using width and height.
+
+* To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format ](http://34.201.209.197:4000/chart-guide/getting-started/using-xml-as-data-format).
+
 * The JSON data is embedded as the value of the `dataSource` parameter.
-
-The HTML template of the above sample is shown below:
-
-```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
-</div>
-```
 
 That's it! When you run this HTML page now, you should see a chart representing your data.
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
+See the complete list of [all possible attributes ](http://34.201.209.197:4000/chart-attributes/?chart=column2d)(the keys in the dataSource object) for a column 2D chart.
 
-In the JavaScript code, execution of `var app = new Vue({ })` creates a new Vue instance called app. Depending on the chart type, only two properties of the Vue instance vary mandatorily:
+Depending on the chart type, only two properties of the React component can vary mandatorily:
 
-* `app.type`: You must set it to the chart name you want to render. For a complete list of all charts and their types, refer to [Chart Gallery]({% site.baseurl %}/demos/chart-gallery#Gallary '@@open-newtab') and explore the desired type in detail.
+* `app.type`: You must set it to the chart name you want to render. For a complete list of all charts and their types, refer to [Chart Gallery ](http://34.201.209.197:4000/demos/chart-gallery#Gallary)and explore the desired type in detail.
+
 * `app.dataSource`: Each chart has its own data schema that defines the chart configuration and the source of data. Thus, this object varies significantly depending of the type of chart.
 
-Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
+Now, go on and explore other 95+ chart types that we've in [FusionCharts](http://34.201.209.197:4000/chart-guide/getting-started/list-of-charts) or explore the configuration [attribute](http://34.201.209.197:4000/chart-attributes/?chart=area2d) for the charts.
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
+Gauges are powerful tools that can showcase using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an Angular Gauge.
 
-To start with, we'll build a simple "Weekly Customer Satisfaction Index" gauge as shown below:
+To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
 
-{% embed_chart getting-started-your-first-widget.js %}
+[chart goes here]
 
-The thresholds for his customer satisfaction score has been defined using the following range.
+The thresholds for the above sample has been defined using the following range.
+
 
 Range|Color|Hex Code|
 -|-|-
-0-50|Red|#e44a00|
-50-75|Yellow|#f8bd19|
-75-100|Green|#6baa01|
+0-50|Red|#F2726F|
+50-75|Yellow|#FFC533|
+75-100|Green|#62B58F|
+
+
 
 So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Scores above 75 mean good and is green.
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For React, we recommend JSON format. The converted format will look as shown below:
 
-```javascript
+```
+
 {
-    // Configuration
+    // Chart Configuration
     "chart": {
-        "caption": "Customer Satisfaction Score",
-        "subcaption": "Last week",
+        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
         "lowerLimit": "0",
         "upperLimit": "100",
-        "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
-        "gaugeFillRatio": "15",
-        "theme": "fint"
+        "showValue": "1",
+        "numberSuffix": "%",
+        "theme": "fusion",
+        "showToolTip": "0"
     },
-    // Chart data
+    // Chart Data
     "colorRange": {
         "color": [{
             "minValue": "0",
             "maxValue": "50",
-            "code": "#e44a00"
+            "code": "#F2726F"
         }, {
             "minValue": "50",
             "maxValue": "75",
-            "code": "#f8bd19"
+            "code": "#FFC533"
         }, {
             "minValue": "75",
             "maxValue": "100",
-            "code": "#6baa01"
+            "code": "#62B58F"
         }]
     },
     "dials": {
         "dial": [{
-            "value": "67"
+            "value": "81"
         }]
     }
 }
+
 ```
 
 ### Create an instance of the gauge
 
-In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will create an instance of the chart type as `angulargauge`, set the **width** and **height** (in pixels or %), and finally specify the JSON data for the chart as string.
 
-The code to render a chart by passing VueJS component is given below:
-
-```javascript
-// Use the vue.use() global method
-Vue.use(VueFusionCharts);
-const app = new Vue({
-    el: '#app',
-    data: {
-        type: 'angulargauge', // Chart type
-        renderAt: 'chart-container', // Container
-        width: '400', // Width of the chart
-        height: '250', // Height of the chart
-        dataFormat: 'json', // Data Type
-        dataSource: {
-            chart: {
-                ...
-            }
-        }
-    }
-});
 ```
 
-The HTML template for the above sample is:
+var chartConfigs = {
 
-```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
-</div>
+   type: 'angulargauge', // The chart type
+   width: '450', // Width of the chart
+   height: '250', // Height of the chart
+   dataFormat: 'json', // Data type
+   dataSource: {
+    chart: {
+            ...
+           }
+   }
+
+};
+
+ReactDOM.render(
+
+    <ReactFC {...chartConfigs} />,
+
+    document.getElementById('chart-container')
+
+);
+
 ```
 
-See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
+See the complete list of [all possible attributes](http://34.201.209.197:4000/chart-attributes/?chart=angulargauge) for a angular gauge.
 
 ## Create your first map
 
-In this section, we will create a visualization using the map of **USA**. Take a look at the map shown below:
+In this section, we will create a visualization using the map of World. Take a look at the map shown below:
 
-{% embed_chart getting-started-your-first-map.js %}
+[map goes here]
 
 The data for this chart is represented in a table below:
 
-State|Entity Name|Revenue|
+
+State|Entity Name|Value|
 -|-|-
-Alabama|AL|$75,873M|
-Alaska|AK|$58,911M|
-Arizona|AZ|$41,588M|
-Arkansas|AR|$34,497M|
-California|CA|$61,861M|
-...|...|...|
-...|...|...|
-West Virginia|WV|$95,890M|
-Wisconsin|WI|$42,382M|
-Wyoning|WY|$78,835M|
+North America|NA|82|
+South America|SA|2.04|
+Asia|AS|1.78|
+Europe|EU|40|
+Africa|AF|2.58|
+Australia|AU|1.30|
+
+
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For React, we recommend JSON format. The converted format will look as shown below:
 
-```javascript
+```
+
 {
-    // Configuration
+    //Map Configuration
     "chart": {
-        "caption": "Annual Sales by State",
-        "subcaption": "Last year",
-        "entityFillHoverColor": "#cccccc",
-        "numberScaleValue": "1,1000,1000",
-        "numberScaleUnit": "K,M,B",
-        "numberPrefix": "$",
-        "showLabels": "1",
+        "caption": "Average Annual Population Growth",
+        "subcaption": " 1955-2015",
+        "numbersuffix": "%",
+        "includevalueinlabels": "1",
+        "labelsepchar": ": ",
+        "entityFillHoverColor": "#FFF9C4",
+        "theme": "fusion"
     },
     // Aesthetics; ranges synced with the slider
     "colorrange": {
         "minvalue": "0",
-        "startlabel": "Low",
-        "endlabel": "High",
-        "code": "#e44a00",
+        "code": "#FFE0B2",
         "gradient": "1",
-        "color": [ // Specific to slider
-            {
-                "maxvalue": "56580",
-                "displayvalue": "Average",
-                "code": "#f8bd19"
-            }, {
-                "maxvalue": "100000",
-                "code": "#6baa01"
-            }
-        ]
+        "color": [{ // Specific to slider
+            "minvalue": "0.5",
+            "maxvalue": "1.0",
+            "color": "#FFD74D"
+        }, {
+            "minvalue": "1.0",
+            "maxvalue": "2.0",
+            "color": "#FB8C00"
+        }, {
+            "minvalue": "2.0",
+            "maxvalue": "3.0",
+            "color": "#E65100"
+        }]
     },
     // Source data as JSON --> id represents states of USA.
     "data": [{
-        "id": "HI",
-        "value": "3189"
+        "id": "NA",
+        "value": ".82",
+        "showLabel": "1",
+        "link": "newchart-json-NAM"
     }, {
-        "id": "DC",
-        "value": "2879"
+        "id": "SA",
+        "value": "2.04",
+        "showLabel": "1",
+        "link": "newchart-json-SAM"
     }, {
-        "id": "MD",
-        "value": "920"
+        "id": "AS",
+        "value": "1.78",
+        "showLabel": "1",
+        "link": "newchart-json-ASI"
     }, {
-        "id": "DE",
-        "value": "4607"
+        "id": "EU",
+        "value": ".40",
+        "showLabel": "1",
+        "link": "newchart-json-EUP"
     }, {
-        "id": "RI",
-        "value": "4890"
+        "id": "AF",
+        "value": "2.58",
+        "showLabel": "1",
+        "link": "newchart-json-AFC"
     }, {
-        "id": "WA",
-        "value": "34927"
+        "id": "AU",
+        "value": "1.30",
+        "showLabel": "1",
+        "link": "newchart-json-AUS"
+    }],
+    "linkeddata": [{
+        "id": "NAM",
+        "linkedchart": {
+            "chart": {
+                "caption": "Average Annual Population Growth - North America",
+                "subcaption": "1955 - 2015",
+                "yAxisName": "Growth",
+                "numberSuffix": "%",
+                "paletteColors": "FFD74D",
+                "theme": "hulk-light"
+            },
+            "data": [{
+                "label": "1955",
+                "value": "1.5078"
+            }, {
+                "label": "1960",
+                "value": "1.5502"
+            }, {
+                "label": "1965",
+                "value": "1.3121"
+            }, {
+                "label": "1970",
+                "value": "0.8648"
+            }, {
+                "label": "1975",
+                "value": "0.6402"
+            }, {
+                "label": "1980",
+                "value": "0.62"
+            }, {
+                "label": "1985",
+                "value": "0.6748"
+            }, {
+                "label": "1990",
+                "value": "0.6882"
+            }, {
+                "label": "1995",
+                "value": "0.6804"
+            }, {
+                "label": "2000",
+                "value": "0.5627"
+            }, {
+                "label": "2005",
+                "value": "0.5373"
+            }, {
+                "label": "2010",
+                "value": "0.5536"
+            }, {
+                "label": "2015",
+                "value": "0.4291"
+            }]
+        }
     }, {
-        "id": "OR",
-        "value": "65798"
+        "id": "SAM",
+        "linkedchart": {
+            "chart": {
+                "caption": "Average Annual Population Growth - South America",
+                "subcaption": "1955 - 2015",
+                "yAxisName": "Growth",
+                "numberSuffix": "%",
+                "paletteColors": "E65100",
+                "theme": "hulk-light"
+            },
+            "data": [{
+                "label": "1955",
+                "value": "2.6275"
+            }, {
+                "label": "1960",
+                "value": "2.6995"
+            }, {
+                "label": "1965",
+                "value": "2.757"
+            }, {
+                "label": "1970",
+                "value": "2.5376"
+            }, {
+                "label": "1975",
+                "value": "2.3431"
+            }, {
+                "label": "1980",
+                "value": "2.3261"
+            }, {
+                "label": "1985",
+                "value": "2.2036"
+            }, {
+                "label": "1990",
+                "value": "1.9611"
+            }, {
+                "label": "1995",
+                "value": "1.7184"
+            }, {
+                "label": "2000",
+                "value": "1.5965"
+            }, {
+                "label": "2005",
+                "value": "1.4482"
+            }, {
+                "label": "2010",
+                "value": "1.2031"
+            }, {
+                "label": "2015",
+                "value": "1.0698"
+            }]
+        }
     }, {
-        "id": "CA",
-        "value": "61861"
+        "id": "ASI",
+        "linkedchart": {
+            "chart": {
+                "caption": "Average Annual Population Growth - Asia",
+                "subcaption": "1955 - 2015",
+                "yAxisName": "Growth",
+                "numberSuffix": "%",
+                "theme": "hulk-light",
+                "paletteColors": "FB8C00",
+            },
+            "data": [{
+                "label": "1955",
+                "value": "1.9075"
+            }, {
+                "label": "1960",
+                "value": "1.8842"
+            }, {
+                "label": "1965",
+                "value": "2.1082"
+            }, {
+                "label": "1970",
+                "value": "2.4554"
+            }, {
+                "label": "1975",
+                "value": "2.3036"
+            }, {
+                "label": "1980",
+                "value": "1.9889"
+            }, {
+                "label": "1985",
+                "value": "1.9683"
+            }, {
+                "label": "1990",
+                "value": "2.0176"
+            }, {
+                "label": "1995",
+                "value": "1.6823"
+            }, {
+                "label": "2000",
+                "value": "1.3682"
+            }, {
+                "label": "2005",
+                "value": "1.2435"
+            }, {
+                "label": "2010",
+                "value": "1.1661"
+            }, {
+                "label": "2015",
+                "value": "1.0731"
+            }]
+        }
     }, {
-        "id": "AK",
-        "value": "58911"
+        "id": "EUP",
+        "linkedchart": {
+            "chart": {
+                "caption": "Average Annual Population Growth - Europe",
+                "subcaption": "1955 - 2015",
+                "yAxisName": "Growth",
+                "numberSuffix": "%",
+                "theme": "hulk-light",
+                "paletteColors": "FFE0B2",
+            },
+            "data": [{
+                "label": "1955",
+                "value": "1.026"
+            }, {
+                "label": "1960",
+                "value": "1.0652"
+            }, {
+                "label": "1965",
+                "value": "0.9381"
+            }, {
+                "label": "1970",
+                "value": "0.6925"
+            }, {
+                "label": "1975",
+                "value": "0.54"
+            }, {
+                "label": "1980",
+                "value": "0.4218"
+            }, {
+                "label": "1985",
+                "value": "0.354"
+            }, {
+                "label": "1990",
+                "value": "0.2971"
+            }, {
+                "label": "1995",
+                "value": "0.0276"
+            }, {
+                "label": "2000",
+                "value": "-0.1301"
+            }, {
+                "label": "2005",
+                "value": "-0.1558"
+            }, {
+                "label": "2010",
+                "value": "-0.0576"
+            }, {
+                "label": "2015",
+                "value": "-0.0292"
+            }]
+        }
     }, {
-        "id": "ID",
-        "value": "42662"
+        "id": "AFC",
+        "linkedchart": {
+            "chart": {
+                "caption": "Average Annual Population Growth - Africa",
+                "subcaption": "1955 - 2015",
+                "yAxisName": "Growth",
+                "numberSuffix": "%",
+                "theme": "hulk-light",
+                "paletteColors": "E65100",
+            },
+            "data": [{
+                "label": "1955",
+                "value": "2.1242"
+            }, {
+                "label": "1960",
+                "value": "2.338"
+            }, {
+                "label": "1965",
+                "value": "2.5075"
+            }, {
+                "label": "1970",
+                "value": "2.5947"
+            }, {
+                "label": "1975",
+                "value": "2.7175"
+            }, {
+                "label": "1980",
+                "value": "2.8398"
+            }, {
+                "label": "1985",
+                "value": "2.8857"
+            }, {
+                "label": "1990",
+                "value": "2.8243"
+            }, {
+                "label": "1995",
+                "value": "2.6172"
+            }, {
+                "label": "2000",
+                "value": "2.5072"
+            }, {
+                "label": "2005",
+                "value": "2.4853"
+            }, {
+                "label": "2010",
+                "value": "2.5593"
+            }, {
+                "label": "2015",
+                "value": "2.6001"
+            }]
+        }
     }, {
-        "id": "NV",
-        "value": "78041"
-    }, {
-        "id": "AZ",
-        "value": "41558"
-    }, {
-        "id": "MT",
-        "value": "62942"
-    }, {
-        "id": "WY",
-        "value": "78834"
-    }, {
-        "id": "UT",
-        "value": "50512"
-    }, {
-        "id": "CO",
-        "value": "73026"
-    }, {
-        "id": "NM",
-        "value": "78865"
-    }, {
-        "id": "ND",
-        "value": "50554"
-    }, {
-        "id": "SD",
-        "value": "35922"
-    }, {
-        "id": "NE",
-        "value": "43736"
-    }, {
-        "id": "KS",
-        "value": "32681"
-    }, {
-        "id": "OK",
-        "value": "79038"
-    }, {
-        "id": "TX",
-        "value": "75425"
-    }, {
-        "id": "MN",
-        "value": "43485"
-    }, {
-        "id": "IA",
-        "value": "46515"
-    }, {
-        "id": "MO",
-        "value": "63715"
-    }, {
-        "id": "AR",
-        "value": "34497"
-    }, {
-        "id": "LA",
-        "value": "70706"
-    }, {
-        "id": "WI",
-        "value": "42382"
-    }, {
-        "id": "IL",
-        "value": "73202"
-    }, {
-        "id": "KY",
-        "value": "79118"
-    }, {
-        "id": "TN",
-        "value": "44657"
-    }, {
-        "id": "MS",
-        "value": "66205"
-    }, {
-        "id": "AL",
-        "value": "75873"
-    }, {
-        "id": "GA",
-        "value": "76895"
-    }, {
-        "id": "MI",
-        "value": "67695"
-    }, {
-        "id": "IN",
-        "value": "33592"
-    }, {
-        "id": "OH",
-        "value": "32960"
-    }, {
-        "id": "PA",
-        "value": "54346"
-    }, {
-        "id": "NY",
-        "value": "42828"
-    }, {
-        "id": "VT",
-        "value": "77411"
-    }, {
-        "id": "NH",
-        "value": "51403"
-    }, {
-        "id": "ME",
-        "value": "64636"
-    }, {
-        "id": "MA",
-        "value": "51767"
-    }, {
-        "id": "CT",
-        "value": "57353"
-    }, {
-        "id": "NJ",
-        "value": "80788"
-    }, {
-        "id": "WV",
-        "value": "95890"
-    }, {
-        "id": "VA",
-        "value": "83140"
-    }, {
-        "id": "NC",
-        "value": "97344"
-    }, {
-        "id": "SC",
-        "value": "88234"
-    }, {
-        "id": "FL",
-        "value": "88234"
+        "id": "AUS",
+        "linkedchart": {
+            "chart": {
+                "caption": "Average Annual Population Growth - Oceania",
+                "subcaption": "1955 - 2015",
+                "yAxisName": "Growth",
+                "numberSuffix": "%",
+                "theme": "hulk-light",
+                "paletteColors": "FB8C00",
+            },
+            "data": [{
+                "label": "1955",
+                "value": "1.511"
+            }, {
+                "label": "1960",
+                "value": "1.6045"
+            }, {
+                "label": "1965",
+                "value": "1.5578"
+            }, {
+                "label": "1970",
+                "value": "1.455"
+            }, {
+                "label": "1975",
+                "value": "1.4727"
+            }, {
+                "label": "1980",
+                "value": "1.2404"
+            }, {
+                "label": "1985",
+                "value": "1.2398"
+            }, {
+                "label": "1990",
+                "value": "1.1853"
+            }, {
+                "label": "1995",
+                "value": "1.2006"
+            }, {
+                "label": "2000",
+                "value": "1.1244"
+            }, {
+                "label": "2005",
+                "value": "1.0724"
+            }, {
+                "label": "2010",
+                "value": "1.1255"
+            }, {
+                "label": "2015",
+                "value": "1.0397"
+            }]
+        }
     }]
 }
+
 ```
 
 ### Create an instance of the map
 
-In this step, we will create an instance of the map type as **usa**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will create an instance of the map type as usa, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
 
-The code to render a chart by passing VueJS component is given below:
-
-```javascript
-// USe the Vue.use() global method
-Vue.use(VueFusionCharts);
-const app = new Vue({
-    el: '#app',
-    data: {
-        type: 'usa', // Map type
-        renderAt: 'chart-container', // Container
-        width: '600', // Width of the chart
-        height: '400', // Height of the chart
-        dataFormat: 'json', // Data Type
-        dataSource: {
-            chart: {
-                ...
-            }
-        }
-    }
-});
 ```
 
-The HTML template for the above sample is:
+var chartConfigs = {
 
-```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
-</div>
+   type: 'world', // The chart type
+   width: 800, // Width of the chart
+   height: 550', // Height of the chart
+   dataFormat: 'json', // Data type
+   dataSource: {
+    chart: {
+            ...
+           }
+   }
+
+};
+
+
+ReactDOM.render(
+
+    <ReactFC {...chartConfigs} />,
+
+    document.getElementById('chart-container')
+
+);
+
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of usa. A list of states of USA, and their respective `id`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/usa '@@open-newtab').
+See the complete list of [all possible attributes](http://34.201.209.197:4000/maps/attribute-reference) (the keys in the dataSource object) for the map of usa. The respective id, can be found [here](http://34.201.209.197:4000/maps/spec-sheets/world).
 
 ## Problem rendering the chart?
 
