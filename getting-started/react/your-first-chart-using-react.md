@@ -6,8 +6,6 @@ heading: Your First Chart in React using FusionCharts
 chartPresent: false
 ---
 
-# Your First Chart in React using FusionCharts
-
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and React-FusionCharts plugin. We'll start with simple examples of creating a [chart](http://34.201.209.197:4000/getting-started/vuejs/your-first-chart-using-vuejs#create-your-first-chart-1), then a [gauge](http://34.201.209.197:4000/getting-started/vuejs/your-first-chart-using-vuejs#create-your-first-gauge-7) and a [map](http://34.201.209.197:4000/getting-started/vuejs/your-first-chart-using-vuejs#create-your-first-map-10).
 
 Before going through this article, please [install](https://www.fusioncharts.com/react-charts) react-fusioncharts plugin, if not already installed.
