@@ -76,7 +76,7 @@ The consolidated code looks like as shown below:
 
 That completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript '@@open-newtab').
 
-## Package-specific Dependencies
+### Package-specific Dependencies
 
 * To render a chart belonging to the PowerCharts package, load the PowerCharts module:
 
@@ -92,7 +92,7 @@ That completes the installation of FusionCharts in your application. To see how 
 
 > To know which chart belongs to which package, refer the **[list of charts](https://www.fusioncharts.com/dev/getting-started/list-of-charts.html)**.
 
-## Chart-specific Dependencies
+### Chart-specific Dependencies
 
 For some chart types, you need to include/exclude certain files and in a specific order. Following  are the chart types, and the corresponding files:
 
@@ -147,7 +147,7 @@ For some chart types, you need to include/exclude certain files and in a specifi
 <script src = "node_modules/fusioncharts/fusioncharts.overlappedcolumn2d.js"> </script>
 ```
 
-## Installing FusionMaps (map visualizations) for your project
+### Installing FusionMaps (map visualizations) for your project
 
 In order to render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files and include them to your HTML as shown below:
 
@@ -175,7 +175,7 @@ The consolidated code looks like as shown below:
 </head>
 ```
 
-## Themes
+### Themes
 
 Themes shipped with FusionCharts Suite XT allows you to create centralized theme files (similar to CSS files) and apply those themes to any number of charts.
 
@@ -208,7 +208,7 @@ Now, let's discuss how to install the fusioncharts package via npm. The fusionch
 
 This section outlines the steps to be executed for installing all the node package via NPM and rendering charts using the Vue-FusionCharts component.
 
-### Step 1: Install the fusioncharts package via npm
+**Step 1: Install the fusioncharts package via npm**
 
 To install the `fusioncharts` package, execute the following command in the terminal:
 
@@ -216,7 +216,7 @@ To install the `fusioncharts` package, execute the following command in the term
 npm install fusioncharts
 ```
 
-### Step 2: Load FusionCharts module
+**Step 2: Load FusionCharts module**
 
 To load the FusionCharts module, add the following code to your html file:
 
@@ -224,9 +224,9 @@ To load the FusionCharts module, add the following code to your html file:
 <script src="node_modules/fusioncharts/fusioncharts.js"></script>
 ```
 
-## Include Maps via NPM
+### Include Maps via NPM
 
-### Step 1: Install FusionMaps package
+**Step 1: Install FusionMaps package**
 
 To install the FusionMaps package, execute the following command:
 
@@ -234,7 +234,7 @@ To install the FusionMaps package, execute the following command:
 npm install fusionmaps
 ```
 
-### Step 2: Load FusionCharts module
+**Step 2: Load FusionCharts module**
 
 To load the FusionCharts module, add the following code to your html file:
 
@@ -242,7 +242,7 @@ To load the FusionCharts module, add the following code to your html file:
 <script src="node_modules/fusionmaps/fusioncharts.js"></script>
 ```
 
-### Step 3: Load the maps module
+**Step 3: Load the maps module**
 
 To load the maps module, add the folliwing code to your html file:
 
@@ -250,7 +250,7 @@ To load the maps module, add the folliwing code to your html file:
 <script src="node_modules/fusionmaps/fusioncharts.maps.js"></script>
 ```
 
-### Step 4: Load Map Definition Files
+**Step 4: Load Map Definition Files**
 
 Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.<MAP_ALIAS>**. Replace **MAP_ALIAS** by the map's JavaScript alias. Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. Include map definition files for all maps to render in the application.
 
