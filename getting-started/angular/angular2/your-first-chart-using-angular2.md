@@ -7,7 +7,7 @@ chartPresent: false
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and angular-FusionCharts Component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angular2/your-first-chart-using-angular2#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/angular/angular2/your-first-chart-using-angular2#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/angular/angular2/your-first-chart-using-angular2#create-your-first-map-10).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/angular/angular2/install-using-angular2 '@@open-newtab') `vue-fusioncharts` plugin, if not already installed.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/angular/angular2/install-using-angular2 '@@open-newtab') `angular-fusioncharts` plugin, if not already installed.
 
 ## Create your first chart
 
@@ -34,7 +34,7 @@ China|30|
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
 
 > There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
@@ -221,7 +221,7 @@ So any score less than 50 is bad and is red. Any score between 50 and 75 is aver
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
 
 ```javascript
 {
@@ -366,7 +366,7 @@ Australia|AU|1.30|
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
 
 ```javascript
 {

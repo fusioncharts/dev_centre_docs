@@ -36,7 +36,7 @@ December|$730,000|
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
 
 > There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
@@ -151,7 +151,7 @@ Specify a unique ID for the `<div>` container within the web page. The unique ID
 
 In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
 
-The code to render a chart by passing VueJS component is given below:
+The code to render a chart is given below:
 
 ```javascript
 FusionCharts.ready(function() {
@@ -298,7 +298,7 @@ So any score less than 50 is bad and is red. Any score between 50 and 75 is aver
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
 
 ```javascript
 {
@@ -340,7 +340,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
 
-The code to render a chart by passing VueJS component is given below:
+The code to render a chart is given below:
 
 ```javascript
 FusionCharts.ready(function() {
@@ -463,7 +463,7 @@ Wyoning|WY|$78,835M|
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
 
 ```javascript
 {
@@ -657,7 +657,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 In this step, we will create an instance of the map type as **world**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
 
-The code to render a chart by passing VueJS component is given below:
+The code to render a chart is given below:
 
 ```javascript
 FusionCharts.ready(  function  () { 
