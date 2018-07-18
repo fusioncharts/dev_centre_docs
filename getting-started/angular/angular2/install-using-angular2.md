@@ -1,19 +1,19 @@
 ---
 title: Installation | FusionCharts
-description: This article outlines the steps to install fusioncharts and fusioncharts angular4 component to create charts.
+description: This article outlines the steps to install fusioncharts and fusioncharts angular2 component to create charts.
 heading: Installation
 chartPresent: false
 ---
 
 FusionCharts Suite XT includes an extensive range of charts, gauges, and maps that you can use to plot all types of static and real-time data.
 
-The Angular2-FusionCharts component, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single Angular2 component.
+The Angular-FusionCharts component, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single Angular component.
 
-In this article, we will show you how you can download and install the `Angular2-FusionCharts` component and all the other dependencies on your system. You can install FusionCharts in your application using NPM.
+In this article, we will show you how you can download and install the `Angular-FusionCharts` component and all the other dependencies on your system. You can install FusionCharts in your application using NPM.
 
 ## Install FusionCharts via npm
 
-Before installing and start working with angular2-FusionCharts component, let's checkout the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
+Before installing and start working with Angular-FusionCharts component, let's checkout the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
 
 File Name|Description|
 -|-

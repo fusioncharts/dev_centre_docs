@@ -1,19 +1,19 @@
 ---
 title: Your First Chart in Angular2 using FusionCharts | FusionCharts
-description: This article outlines the steps to create your first chart, widget and map using the fusionCharts Angular4 component.
+description: This article outlines the steps to create your first chart, widget and map using the fusionCharts Angular2 component.
 heading: Your First Chart in Angular2 using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and angular2-FusionCharts Component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angular2/your-first-chart-using-angular2#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/angular/angular2/your-first-chart-using-angular2#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/angular/angular2/your-first-chart-using-angular2#create-your-first-map-10).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and angular-FusionCharts Component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angular2/your-first-chart-using-angular2#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/angular/angular2/your-first-chart-using-angular2#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/angular/angular2/your-first-chart-using-angular2#create-your-first-map-10).
 
 Before going through this article, please [install]({% site.baseurl %}/getting-started/angular/angular2/install-using-angular2 '@@open-newtab') `vue-fusioncharts` plugin, if not already installed.
 
 ## Create your first chart
 
-In this section, we will create a chart using `angular2-fusioncharts` component. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
+In this section, we will create a chart using `angular-fusioncharts` component. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
 
-To create charts, the `angular2-fusioncharts` component can be passed as a part of another angular2 component.
+To create charts, the `angular-fusioncharts` component can be passed as a part of another angular component.
 
 Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
 
