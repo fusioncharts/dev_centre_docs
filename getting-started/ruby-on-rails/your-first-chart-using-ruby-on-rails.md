@@ -77,14 +77,13 @@ The `fc_json` action is defined to create the column 2D chart
 The code of the instance of the chart is given below:
 
 ```javascript
-@chart = Fusioncharts::Chart.new({
+chart = Fusioncharts::Chart.new({
     width: "700",
     height: "400",
     type: "column2d",
     renderAt: "chartContainer",
-    dataSource: @chartData
+    dataSource: chartJSONDataStr
 })
-end
 ```
 
 In the above code:
@@ -92,6 +91,52 @@ In the above code:
 * We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using `width` and `height`.
 * To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON data is embedded as the value of the `dataSource` parameter.
+
+The full code for the above sample is:
+
+```
+// Chart appearance configuration
+chartAppearancesConfigObj = Hash.new
+chartAppearancesConfigObj = {
+    "caption" => "Countries With Most Oil Reserves [2017-18]",
+    "subCaption" => "In MMbbl = One Million barrels",
+    "xAxisName" => "Country",
+    "yAxisName" => "Reserves (MMbbl)",
+    "numberSuffix" => "K",
+    "theme" => "fusion"
+}
+      
+// An array of hash objects which stores data
+chartDataObj = [
+    {"Venezuela" => "290"},
+    {"Saudi" => "260"},
+    {"Canada" => "180"},
+    {"Iran" => "140"},
+    {"Russia" => "115"},
+    {"UAE" => "100"},
+    {"US" => "30"},
+    {"China" => "30"}
+]
+      
+// Chart data template to store data in "Label" & "Value" format
+labelValueTemplate = "{ \"label\": \"%s\", \"value\": \"%s\" },"
+      
+// Chart data as JSON string
+labelValueJSONStr = ""
+chartDataObj.each {|item|
+    data = labelValueTemplate % [item.keys[0], item[item.keys[0]]]
+    labelValueJSONStr.concat(data)
+}
+
+// Removing trailing comma character
+labelValueJSONStr = labelValueJSONStr.chop
+
+// Chart JSON data template
+chartJSONDataTemplate = "{ \"chart\": %s, \"data\": [%s] }"
+
+// Final Chart JSON data from template
+chartJSONDataStr = chartJSONDataTemplate % [chartAppearancesConfigObj.to_json, labelValueJSONStr]
+```
 
 The template of the above sample is shown below:
 
@@ -144,14 +189,64 @@ The `fc_json` action is defined to create the angular gauge.
 The code of the instance of the chart is given below:
 
 ```javascript
-@widget = Fusioncharts::Chart.new({
-    width: "450",
+widget = Fusioncharts::Chart.new({
+    width: "400",
     height: "250",
-    type: "angularGauge",
+    type: "angulargauge",
     renderAt: "widgetContainer",
-    dataSource: @widgetData
+    dataSource: widgetJSONStr
 })
-end
+```
+
+The full code for the above sample is:
+
+```
+// Widget appearance configuration
+widgetAppearancesConfigObj = {
+    "caption" => "Nordstorm's Customer Satisfaction Score for 2017",
+    "lowerLimit" => "0",
+    "upperLimit" => "100",
+    "showValue" => "1",
+    "numberSuffix" => "%",
+    "theme" => "fusion",
+    "showToolTip" => "0"
+}
+
+// Widget color range data
+colorDataObj = {"color" => [
+    {"minValue" => "0", "maxValue" => "50", "code" => "#F2726F"},
+    {"minValue" => "50", "maxValue" => "75", "code" => "#FFC533"},
+    {"minValue" => "75", "maxValue" => "100", "code" => "#62B58F"}
+]}
+      
+// Widget dial data in array format, multiple values can be separated by comma e.g. ["81", "23", "45",...]
+widgetDialDataArray = ["81"]
+      
+// Dial value in JSON format
+widgetDialDataStr = ""
+      
+// Template for dial value
+widgetDialDataTemplate = "{ \"value\": \"%s\" },"
+
+// Iterates dial data array and converts them proper data format
+widgetDialDataArray.each {|item|
+    data = widgetDialDataTemplate % [item]
+    widgetDialDataStr.concat(data)
+}
+
+// Removing trailing comma
+widgetDialDataStr = widgetDialDataStr.chop
+      
+// Formats dial value(s)
+widgetDialTemplate = "{ \"dial\": [%s]}"
+widgetDialStr = ""
+widgetDialStr = widgetDialTemplate % [widgetDialDataStr]
+
+// Final Widget JSON template
+widgetJSONTemplate = "{ \"chart\": %s, \"colorRange\": %s,  \"dials\": %s}"
+      
+// Final Widget JSON data from template
+widgetJSONStr = widgetJSONTemplate % [widgetAppearancesConfigObj.to_json, colorDataObj.to_json, widgetDialStr]      
 ```
 
 The template of the above sample is shown below:
@@ -200,14 +295,68 @@ The `fc_json` action is defined to create the world map.
 The code of the instance of the chart is given below:
 
 ```javascript
-@map = Fusioncharts::Chart.new({
-    width: "800",
-    height: "550",
+map = Fusioncharts::Chart.new({
+    width: "600",
+    height: "400",
     type: "maps/world",
     renderAt: "mapContainer",
-    dataSource: @mapData
+    dataSource: mapJSONStr
 })
-end
+```
+
+The full code of the sample is:
+
+```
+// Map appearance configuration
+mapAppearancesConfigObj = {
+    "caption" => "Average Annual Population Growth",
+    "subcaption" => " 1955-2015",
+    "numbersuffix" => "%",
+    "includevalueinlabels" => "1",
+    "labelsepchar" => ": ",
+    "entityFillHoverColor" => "#FFF9C4",
+    "theme" => "fusion"
+}
+
+// Map color range data
+colorDataObj = { "minvalue" => "0", "code" => "#FFE0B2", "gradient" => "1",
+    "color" => [
+        {"minValue" => "0.5", "maxValue" => "1", "code" => "#FFD74D"},
+        {"minValue" => "1.0", "maxValue" => "2.0", "code" => "#FB8C00"},
+        {"minValue" => "2.0", "maxValue" => "3.0", "code" => "#E65100"}
+    ]
+}
+      
+// Map data array
+mapDataArray = [
+    ["NA", ".82", "1"],
+    ["SA", "2.04", "1"],
+    ["AS", "1.78", "1"],
+    ["EU", ".40", "1"],
+    ["AF", "2.58", "1"],
+    ["AU", "1.30", "1"]
+]
+
+// Map data template
+mapDataTemplate = "{ \"id\": \"%s\", \"value\": \"%s\", \"showLabel\": \"%s\" },"
+      
+// Map data as JSON string
+mapDataJSONStr = ""
+      
+// Iterate all data in mapDataArray and converts it to actual data format
+mapDataArray.each {|item|
+    data = mapDataTemplate % [item[0], item[1], item[2]]
+    mapDataJSONStr.concat(data)
+}
+
+// Removing trailing comma
+mapDataJSONStr = mapDataJSONStr.chop
+
+// Map JSON data template
+mapJSONTemplate = "{ \"chart\": %s, \"colorRange\": %s,  \"data\": [%s]}"
+
+// Map JSON data after combining all parts
+mapJSONStr = mapJSONTemplate % [mapAppearancesConfigObj.to_json, colorDataObj.to_json, mapDataJSONStr]
 ```
 
 The template of the above sample is shown below:
