@@ -1,19 +1,19 @@
 ---
 title: Installation | FusionCharts
-description: This article outlines the steps to install fusioncharts and fusioncharts angular2 component to create charts.
+description: This article outlines the steps to install fusioncharts and fusioncharts angular component to create charts.
 heading: Installation
 chartPresent: false
 ---
 
 FusionCharts Suite XT includes an extensive range of charts, gauges, and maps that you can use to plot all types of static and real-time data.
 
-The Angular-FusionCharts component, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single Angular component.
+The angular-fusionCharts component, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single Angular component.
 
-In this article, we will show you how you can download and install the `Angular-FusionCharts` component and all the other dependencies on your system. You can install FusionCharts in your application using NPM.
+In this article, we will show you how you can download and install the `angular-fusionCharts` component and all the other dependencies on your system. You can install FusionCharts in your application using NPM.
 
 ## Install FusionCharts via npm
 
-Before installing and start working with Angular-FusionCharts component, let's checkout the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
+Before installing and start working with angular-fusionCharts wrapper, let's checkout the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
 
 File Name|Description|
 -|-
@@ -33,7 +33,7 @@ File Name|Description|
 
 Now, let's discuss how to install the fusioncharts module via npm. The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
 
-This section outlines the steps to be executed for installing all the node modules via NPM and rendering charts using the angular2-FusionCharts component.
+This section outlines the steps to be executed for installing all the node modules via NPM and rendering charts using the angular-FusionCharts wrapper.
 
 ### Step 1: Install `angular-fusioncharts` wrapper
 
@@ -94,7 +94,7 @@ import * as Maps from 'fusioncharts/fusioncharts.maps'; // Maps
 To include the **map definition** file you want to render, execute the following command:
 
 ```Shell
-import * as World from 'fusioncharts/maps/fusioncharts.World'
+import * as World from 'fusioncharts/maps/fusioncharts.world'
 ```
 
 ## Include Themes via NPM
@@ -159,10 +159,10 @@ You can add all the dependencies to the angular environment in the main module, 
 }
 ```
 
-To add other dependencies to the enviroment, replace the **FusionChartsModule.forRoot(FusionCharts, Charts)** command with:
-
-* **FusionChartsModule.forRoot(FusionCharts, Charts, Widgets, FusionTheme)**: To import charts, widgets and themes.
+To add more than one dependencies to the enviroment, replace the **FusionChartsModule.forRoot(FusionCharts, Charts)** line similar to the line shown below:
 
 * **FusionChartsModule.forRoot(FusionCharts, Charts, Widgets, Fusion)**: To import charts, widgets and themes.
 
-* **FusionChartsModule.forRoot(FusionCharts, Maps, Usa)**: To import charts, maps and world map.
+* **FusionChartsModule.forRoot(FusionCharts, Charts, Widgets, PowerCharts)**: To import charts, widgets and powercharts.
+
+* **FusionChartsModule.forRoot(FusionCharts, Maps, world)**: To import charts, maps and world map.

@@ -54,7 +54,7 @@ In version 3.13.0, data from multi-level pie charts can be exported in CSV or XL
 
 Refer to the GIF shown below:
 
-GIF
+![Multi-Level Pie Chart]({% site.baseurl %}/gif/export-feature-in-multi-level-pie.gif)
 
 ## Secondary data plots overlap Primary data plots
 
