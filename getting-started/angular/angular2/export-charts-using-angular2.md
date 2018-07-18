@@ -1,8 +1,7 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/including-interactivity-in-charts-using-vuejs.html
-title: Including Interactivity in Charts Using VueJS | FusionCharts
+title: Including Interactivity in Charts Using Angular2 | FusionCharts
 description: This article focuses on how you can use the Vue-FusionCharts component to add annotations, change chart type at runtime, update chart data and attributes dynamically.
-heading: Including Interactivity in Charts Using VueJS
+heading: Including Interactivity in Charts Using Angular2
 chartPresent: true
 ---
 

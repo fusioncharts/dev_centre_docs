@@ -1,8 +1,7 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component.html
-title: Creating Charts Using the FusionCharts VueJS Component | FusionCharts
-description: The Vue-FusionCharts component uses the FusionCharts component to create and configure charts using VueJS.
-heading: Creating Charts Using the FusionCharts VueJS Component
+title: Creating Charts Using the FusionCharts Angular2 Component | FusionCharts
+description: The Angular2-FusionCharts component uses the FusionCharts component to create and configure charts using Angular2.
+heading: Creating Charts Using the FusionCharts Angular2 Component
 chartPresent: true
 ---
 The following examples use the vue-fusioncharts component to create and configure charts in VueJS application.
