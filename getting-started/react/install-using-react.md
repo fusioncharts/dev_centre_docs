@@ -274,7 +274,7 @@ You can include the fusioncharts class and React FusionCharts plugin using any o
 </div>
 </div>
 
-### Include oonly Specific Modules
+### Include only Specific Modules
 
 To register using a specific chart type, import the the fusioncharts class and then the specific chart (instead of all the charts). Also, you need to add the dependency for the specific chart type as shown in the code below:
 
