@@ -21,7 +21,12 @@ In this article, we will show you how you to download and install the React-Fusi
 ## Choose your mode of installation:
 
 
-Direct JavaScript files|NPM|
+<table>
+    <tr>
+        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-using-direct-javascript-files-2)</td>
+        <td align="center">[NPM]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-fusioncharts-via-npm-5)</td>
+    </tr>
+</table>
 
 
 
@@ -44,32 +49,21 @@ After that, you can include the FusionCharts JavaScript library in your web appl
 Following is the list of JavaScript files present in your fusioncharts-suite-xt folder:
 
 
-File Name|Description||
--|-|-
-fusioncharts.js|This is the core FusionCharts library, which you need to import in all your pages where you want to generate a chart, gauge or a map.||
-fusioncharts.charts.js|This file is required to render all charts present under FusionCharts XT. 
-Note: When you include fusioncharts.js file in your page, you do not need to include this file separately, as fusioncharts.js internally loads fusioncharts.charts.js.||
-fusioncharts.widgets.js|This file is required to render all gauges present under FusionWidgets XT. 
-Note: When you include fusioncharts.js file in your page, you do not need to include this file separately, as fusioncharts.js internally loads fusioncharts.widgets.js.||
-fusioncharts.powercharts.js|This file is required to render all charts present under PowerCharts XT. 
-Note: When you include fusioncharts.js file in your page, you do not need to include this file separately, as fusioncharts.js internally loads fusioncharts.powercharts.js.||
-fusioncharts.gantt.js|This file is required to render the Gantt chart. 
-Note: When you include fusioncharts.js file in your page, you do not need to include this file separately, as fusioncharts.js internally loads fusioncharts.gantt.js.||
-fusioncharts.treemap.js|This file is required to render the Treemap. 
-Note: When you include fusioncharts.js file in your page, you do not need to include this file separately, as fusioncharts.js internally loads fusioncharts.treemap.js.||
-fusioncharts.zoomscatter.js|This file is required to render the Zoom scatter chart. 
-Note: When you include fusioncharts.js file in your page, you do not need to include this file separately, as fusioncharts.js internally loads fusioncharts.zoomscatter.js.||
-fusioncharts.zoomline.js|This file is required to render the Zoom line charts. 
-Note: When you include fusioncharts.js file in your page, you do not need to include this file separately, as fusioncharts.js internally loads fusioncharts.zoomline.js.||
-fusioncharts.overlappedbar2d.js|This file is required to render the Overlapped Bar 2D chart. 
-Note: When you include fusioncharts.js file in your page, you do not need to include this file separately, as fusioncharts.js internally loads fusioncharts.overlappedbar2d.js.||
-fusioncharts.overlappedcolumn2d.js|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. 
-Note: When you include fusioncharts.js file in your page, you do not need to include this file separately, as fusioncharts.js internally loads fusioncharts.overlappedcolumn2d.js.||
-fusioncharts.maps.js|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. 
-Note: When you include fusioncharts.js file in your page, you do not need to include this file separately, as fusioncharts.js internally loads fusioncharts.maps.js.||
-maps/*|This folder contains path data required by each map to be rendered by fusioncharts.maps.js. To keep the download package size small, it contains only 2 maps - fusioncharts.world.js and fusioncharts.usa.js. You can download definition of all the 1000+ maps offered by FusionMaps XT from here. 
-Note: Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.||
-themes/*|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files (JSON & CSS). Refer each theme with their respective JavaScript and CSS file names.||
+File Name|Description|
+-|-
+`fusioncharts.js`|This is the core FusionCharts library, which you need to import in all your pages where you want to generate a chart, gauge or a map.|
+`fusioncharts.charts.js`|This file is required to render all charts present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.charts.js`.|
+`fusioncharts.widgets.js`|This file is required to render all gauges present under FusionWidgets XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.widgets.js`.|
+`fusioncharts.powercharts.js`|This file is required to render all charts present under PowerCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.powercharts.js`.|
+`fusioncharts.gantt.js`|This file is required to render the Gantt chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.gantt.js`.|
+`fusioncharts.treemap.js`|This file is required to render the Treemap. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.treemap.js`.|
+`fusioncharts.zoomscatter.js`|This file is required to render the Zoom scatter chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.zoomscatter.js`.|
+`fusioncharts.zoomline.js`|This file is required to render the Zoom line charts. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.zoomline.js`.|
+`fusioncharts.overlappedbar2d.js`|This file is required to render the Overlapped Bar 2D chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedbar2d.js`.|
+`fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js`.|
+`fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
+`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from here. </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
+`themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files (JSON & CSS). Refer each theme with their respective `JavaScript` and `CSS` file names.|
 
 
 
@@ -77,25 +71,34 @@ In order to install, create an HTML file and follow the steps below.
 
 ### **Step 1: Include React core library:**
 
+```html
 <script type="text/javascript" src="path/to/local/react.js"></script>
 
 <script type="text/javascript" src="path/to/local/react-dom.js"></script>
+```
 
 ### **Step 2: Include the FusionCharts package:**
 
+```html
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+```
 
 ### **Step 3: Include the react-fusioncharts module:**
 
+```html
 <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
+```
 
 ### **Step 4: Include the theme file and CSS:**
 
+```html
 <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
 <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
+```
 
 The consolidated code looks like as shown below:
 
+```html
 <head>
     <meta charset="utf-8">
     <title>React - FusionCharts</title>
@@ -110,19 +113,22 @@ The consolidated code looks like as shown below:
     <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
 </head>
+```
 
-That completes the installation of FusionCharts in your application. To see how to create a chart, [click here](http://34.201.209.197:4000/using-with-javascript-libraries/vuejs/your-first-chart).
+That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/vuejs/your-first-chart-using-vuejs '@@open-newtab').
 
-### **Installing FusionMaps (map visualizations) for your project**
+### Installing FusionMaps (map visualizations) for your project
 
 In order to render maps, you need to [download ](https://www.fusioncharts.com/download/maps/definition/)the map definition files and include them to your HTML as shown below:
 
-If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
+> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
 
+```
 <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
 <script type="text/javascript" src="path/to/local/fusioncharts.california.js"></script>
+```
 
-The fusioncharts.california.js file includes path drawings of the map of California.
+The `fusioncharts.california.js` file includes path drawings of the map of **California**.
 
 The consolidated code (which also includes the react.js, fusioncharts.js and react-fusioncharts.js) looks like as shown below:
 
