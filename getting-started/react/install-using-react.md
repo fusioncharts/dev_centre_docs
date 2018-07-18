@@ -228,17 +228,17 @@ You can include the fusioncharts class and React FusionCharts plugin using any o
 <div class='tab-content'>
 <div class='tab json-tab active'>
 <div><strong>To include the fusioncharts class:</strong></div>
-<pre><code class="custom-hlc language-cs">
+<pre><code class="custom-hlc language-javascript">
     import FusionCharts from 'fusioncharts';
     import Charts from 'fusioncharts/fusioncharts.charts';
 </code></pre>
 <div><strong>To use charts and gauges from PowerCharts and Widgets, import their respective modules using:</strong></div>
-<pre><code class="custom-hlc language-cs">
+<pre><code class="custom-hlc language-javascript">
     import PowerCharts from 'fusioncharts/fusioncharts.powercharts'; // For PowerCharts
     import Widgets from 'fusioncharts/fusioncharts.widgets'; // For Widgets
 </code></pre>
 <div><strong>To include React FusionCharts plugin:</strong></div>
-<pre><code class="custom-hlc language-cs">
+<pre><code class="custom-hlc language-javascript">
     import ReactFC from 'react-fusioncharts';
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -246,25 +246,25 @@ You can include the fusioncharts class and React FusionCharts plugin using any o
 
 <div class='tab xml-tab'>
 <div><strong>To include the fusioncharts class:</strong></div>
-<pre><code class="custom-hlc language-cv">
+<pre><code class="custom-hlc language-javascript">
     let FusionCharts = require('fusioncharts');
     let Charts = require('fusioncharts/fusioncharts.charts');
 </code></pre>
 <div><strong>To use charts and gauges from PowerCharts and Widgets, import their respective modules using:</strong></div>
-<pre><code class="custom-hlc language-cv">
+<pre><code class="custom-hlc language-javascript">
     let PowerCharts = require('fusioncharts/fusioncharts.powercharts'); // For PowerCharts
     let Widgets = require('fusioncharts/fusioncharts.widgets'); // For Widgets
 </code></pre>
 <div><strong>To include React FusionCharts plugin:</strong></div>
-<pre><code class="custom-hlc language-cv">
+<pre><code class="custom-hlc language-javascript">
     let ReactFC = require('react-fusioncharts').default;
 </code></pre>
 <div><strong>To add chart dependency:</strong></div>
-<pre><code class="custom-hlc language-cv">
+<pre><code class="custom-hlc language-javascript">
     ReactFC.fcRoot(FusionCharts, Charts);
 </code></pre>
 <div><strong>To add charts, powercharts and widgets dependencies:</strong></div>
-<pre><code class="custom-hlc language-cv">
+<pre><code class="custom-hlc language-javascript">
     // ReactFC.fcRoot(FusionCharts, Charts, [Module]);
     ReactFC.fcRoot(FusionCharts, Charts, PowerCharts, Widgets);
 </code></pre>
@@ -274,99 +274,223 @@ You can include the fusioncharts class and React FusionCharts plugin using any o
 </div>
 </div>
 
-
-
-
-
-
-
-
-To add chart dependency:
-
-```
-ReactFusionCharts.fcRoot(FusionCharts, Charts);
-```
-
-To add charts, powercharts and widgets dependencies:
-
-```
-// ReactFusionCharts.fcRoot(FusionCharts, Charts, [Module]);
-
-ReactFusionCharts.fcRoot(FusionCharts, Charts, PowerCharts, Widgets);
-```
-
-**Include only specific chart modules:**
+### Include oonly Specific Modules
 
 To register using a specific chart type, import the the fusioncharts class and then the specific chart (instead of all the charts). Also, you need to add the dependency for the specific chart type as shown in the code below:
 
-To include the fusioncharts class:
-
-```
-import FusionCharts from 'fusioncharts/core'
-
-To include the specific chart from viz folder:
-
-// import ChartType from 'fusioncharts/viz/[ChartType]'
-
-import Column2D from 'fusioncharts/viz/column2d'
-
-To add chart dependency:
-
-// ReactFusionCharts.fcRoot(FusionCharts, [ChartType]);
-
-ReactFusionCharts.fcRoot(FusionCharts, Column2D);
-
-```
-
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>Import</a></li>
+  <li><a data-toggle='xml'>Require</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<div><strong>To include the core fusioncharts class:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import FusionCharts from 'fusioncharts/core';
+</code></pre>
+<div><strong>To include the specific chart from viz folder:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    // import ChartType from 'fusioncharts/viz/[ChartType]';
+    import Column2D from 'fusioncharts/viz/column2d';
+</code></pre>
+<div><strong>To include React FusionCharts plugin:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import ReactFC from 'react-fusioncharts';
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
 <div class='tab xml-tab'>
-<pre><code class="custom-hlc language-cv">
+<div><strong>To include the core fusioncharts class:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let FusionCharts = require('fusioncharts/core').default;
+</code></pre>
+<div><strong>To include the specific chart from viz folder:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    // let ChartType = require('fusioncharts/viz/[ChartType]').default;
+    let Column2D = require('fusioncharts/viz/column2d').default;
+</code></pre>
+<div><strong>To include React FusionCharts plugin:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let ReactFC = require('react-fusioncharts').default;
+</code></pre>
+<div><strong>To add chart dependency:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    // ReactFC.fcRoot(FusionCharts, [ChartType]);
+    ReactFC.fcRoot(FusionCharts, Column2D);
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
+</div>
+</div>
 
-
-**Register using multiple specific chart types:**
+### Register using multiple specific chart types
 
 To register using multiple specific chart types, import the specific charts instead of all the charts after importing the fusioncharts class. Also, you need to add the dependency for all the specific chart types as shown in the code below:
 
-```
-import FusionCharts from 'fusioncharts/core'
-```
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>Import</a></li>
+  <li><a data-toggle='xml'>Require</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<div><strong>To include the core fusioncharts class:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import FusionCharts from 'fusioncharts/core';
+</code></pre>
+<div><strong>To include the specific chart from viz folder:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    // import ChartType from 'fusioncharts/viz/[ChartType]';    
+    import Column2D from 'fusioncharts/viz/column2d';
+    import AngularGauge from 'fusioncharts/viz/angulargauge';
+</code></pre>
+<div><strong>To include React FusionCharts plugin:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import ReactFC from 'react-fusioncharts';
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-To include more than one chart from viz folder:
+<div class='tab xml-tab'>
+<div><strong>To include the core fusioncharts class:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let FusionCharts = require('fusioncharts/core').default;
+</code></pre>
+<div><strong>To include the specific chart from viz folder:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    // let ChartType = require('fusioncharts/viz/[ChartType]').default;
+    let Column2D = require('fusioncharts/viz/column2d').default;
+    let AngularGauge = require('fusioncharts/viz/angulargauge').default;
+</code></pre>
+<div><strong>To include React FusionCharts plugin:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let ReactFC = require('react-fusioncharts').default;
+</code></pre>
+<div><strong>To add chart dependency:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    // ReactFC.fcRoot(FusionCharts, [ChartType]);
+    ReactFC.fcRoot(FusionCharts, Column2D, AngularGauge);
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-```
-// import ChartType from 'fusioncharts/viz/[ChartType]'
-import Column2D from 'fusioncharts/viz/column2d'
-import Line2D from 'fusioncharts/viz/line2d'
-```
+</div>
+</div>
 
-To add chart dependency:
+## Include Maps via NPM
 
-```
-// ReactFusionCharts.fcRoot(FusionCharts, [ChartType]);
-ReactFusionCharts.fcRoot(FusionCharts, Column2D, Line2D);
+You can include the map files via **ES5** using any of the following process:
 
-```
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>Import</a></li>
+  <li><a data-toggle='xml'>Require</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<div><strong>To include the fusioncharts files:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import FusionCharts from 'fusioncharts';
+</code></pre>
+<div><strong>To include the core map files from maps:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import Maps from 'fusioncharts/fusioncharts.maps';
+</code></pre>
+<div><strong>To include the map definition file you want to render:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import World from 'fusioncharts/maps/fusioncharts.world';
+</code></pre>
+<div><strong>To include React FusionCharts plugin:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import ReactFC from 'react-fusioncharts';
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-### Include Maps via NPM
+<div class='tab xml-tab'>
+<div><strong>To include the fusioncharts class:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let FusionCharts = require('fusioncharts');
+</code></pre>
+<div><strong>To include the core map files from maps:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let Maps = require('fusioncharts/fusioncharts.maps');
+</code></pre>
+<div><strong>To include the map definition file you want to render:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let World = require('fusioncharts/maps/fusioncharts.world');
+</code></pre>
+<div><strong>To include React FusionCharts plugin:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let ReactFC = require('react-fusioncharts').default;
+</code></pre>
+<div><strong>To add the map and definition as the dependency to the core:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    ReactFC.fcRoot(FusionCharts, Maps, World);   // Maps -  reference from above
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-To include the core fusioncharts files:
+</div>
+</div>
 
-```
-import FusionCharts from 'fusioncharts/core'
-```
+You can include the map files via **ES6** using any of the following process:
 
-To include the core map files from maps:
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>Import</a></li>
+  <li><a data-toggle='xml'>Require</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<div><strong>To include the core fusioncharts files:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import FusionCharts from 'fusioncharts/core';
+</code></pre>
+<div><strong>To include the core map files from maps:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import Maps from 'fusioncharts/fusioncharts.maps';
+</code></pre>
+<div><strong>To include the map definition file you want to render:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import World from 'fusioncharts/maps/es/fusioncharts.world';
+</code></pre>
+<div><strong>To include React FusionCharts plugin:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import ReactFC from 'react-fusioncharts';
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-```
-import Maps from 'fusioncharts/maps'
-```
+<div class='tab xml-tab'>
+<div><strong>To include the core fusioncharts class:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let FusionCharts = require('fusioncharts/core').default;
+</code></pre>
+<div><strong>To include the core map files from maps:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let Maps = require('fusioncharts/fusioncharts.maps');
+</code></pre>
+<div><strong>To include the map definition file you want to render:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let World = require('fusioncharts/maps/es/fusioncharts.world').default;
+</code></pre>
+<div><strong>To include React FusionCharts plugin:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let ReactFC = require('react-fusioncharts').default;
+</code></pre>
+<div><strong>To add the map and definition as the dependency to the core:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    ReactFC.fcRoot(FusionCharts, Maps, World);   // Maps -  reference from above
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-To include the map definition file you want to render:
-
-```
-import World from 'fusioncharts/maps/es/fusioncharts.world'
-```
+</div>
+</div>
 
 If you want to render a map which is not in the fusioncharts package(world and USA), then you need to install **fusionmaps** which contain all the ES6 map definition:
 
@@ -396,28 +520,108 @@ FusionCharts Suite XT ships with the following predefined themes:
 
 > The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` file sets the theme as **fusion**. To add any other theme to your chart, include its corresponding JavaScript file to your project.
 
-To include the core fusioncharts files:
+You can include the themes via **ES5** using any of the following process:
 
-```
-import FusionCharts from 'fusioncharts/core'
-```
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>Import</a></li>
+  <li><a data-toggle='xml'>Require</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<div><strong>To include the fusioncharts files:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import FusionCharts from 'fusioncharts';
+</code></pre>
+<div><strong>To include the theme file and CSS for the theme:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import Fusion from 'fusioncharts/themes/fusioncharts.fusion';
+    import css from 'fusioncharts/themes/fusioncharts.fusion.css';
+</code></pre>
+<div><strong>To include React FusionCharts plugin:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import ReactFC from 'react-fusioncharts';
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-To include the theme engine extension:
+<div class='tab xml-tab'>
+<div><strong>To include the fusioncharts class:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let FusionCharts = require('fusioncharts');
+</code></pre>
+<div><strong>To include the theme file and CSS for the theme:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let Fusion = 'fusioncharts/themes/fusioncharts.fusion';
+    let css = require('fusioncharts/themes/fusioncharts.fusion.css');
+</code></pre>
+<div><strong>To include React FusionCharts plugin:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let ReactFC = require('react-fusioncharts').default;
+</code></pre>
+<div><strong>To add Fusion as dependency to the core:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    ReactFC.fcRoot(FusionCharts, Fusion);
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-```
-import ThemeEngine from 'fusioncharts/features/theme-engine'
-```
+</div>
+</div>
 
-To include the theme file and CSS for the theme:
+You can include the themes via **ES6** using any of the following process:
 
-```
-import fusion from 'fusioncharts/themes/es/fusioncharts.fusion'
-import css file from 'fusioncharts/themes/es/fusioncharts.fusion.css'
-```
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>Import</a></li>
+  <li><a data-toggle='xml'>Require</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<div><strong>To include the core fusioncharts files:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import FusionCharts from 'fusioncharts/core';
+</code></pre>
+<div><strong>To include the theme engine extension:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import ThemeEngine from 'fusioncharts/features/theme-engine';
+</code></pre>
+<div><strong>To include the theme file and CSS for the theme:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import Fusion from 'fusioncharts/themes/fusioncharts.fusion';
+    import css from 'fusioncharts/themes/fusioncharts.fusion.css';
+</code></pre>
+<div><strong>To include React FusionCharts plugin:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import ReactFC from 'react-fusioncharts';
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-To add ThemeEngine and fusion as dependency to the core:
-```
-ReactFusionCharts.fcRoot(FusionCharts, ThemeEngine);   // TThemeEngine - Rreference from above
-ReactFusionCharts.fcRoot(FusionCharts, fusion);   // Ffusion - reference from above
-```
+<div class='tab xml-tab'>
+<div><strong>To include the core fusioncharts class:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let FusionCharts = require('fusioncharts/core').default;
+</code></pre>
+<div><strong>To include the theme engine extension:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let ThemeEngine = require('fusioncharts/features/theme-engine').default;
+</code></pre>
+<div><strong>To include the theme file and CSS for the theme:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let Fusion = 'fusioncharts/themes/fusioncharts.fusion';
+    let css = require('fusioncharts/themes/fusioncharts.fusion.css');
+</code></pre>
+<div><strong>To include React FusionCharts plugin:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let ReactFC = require('react-fusioncharts').default;
+</code></pre>
+<div><strong>To add ThemeEngine and Fusion as dependency to the core:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    ReactFC.fcRoot(FusionCharts, ThemeEngine, Fusion);
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
+</div>
+</div>
