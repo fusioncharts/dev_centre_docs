@@ -167,15 +167,15 @@ In a theme file, you can centrally customize the following aspects of a chart, g
 
 FusionCharts Suite XT ships with the following predefined themes:
 
-* fusion
+* `fusion`
 
-* zune
+* `zune`
 
-* ocean
+* `ocean`
 
-* carbon
+* `carbon`
 
-To include a theme to your chart, include its corresponding JavaScript file in your HTML page and the CSS file for that theme as shown in the code below:
+> To include a theme to your chart, include its corresponding JavaScript file in your HTML page and the CSS file for that theme as shown in the code below:
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
