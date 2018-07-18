@@ -37,33 +37,27 @@
         "data": [{
                 "id": "NA",
                 "value": ".82",
-                "showLabel": "1",
-                "link": "newchart-json-NAM"
+                "showLabel": "1"
             }, {
                 "id": "SA",
                 "value": "2.04",
-                "showLabel": "1",
-                "link": "newchart-json-SAM"
+                "showLabel": "1"
             }, {
                 "id": "AS",
                 "value": "1.78",
-                "showLabel": "1",
-                "link": "newchart-json-ASI"
+                "showLabel": "1"
             }, {
                 "id": "EU",
                 "value": ".40",
-                "showLabel": "1",
-                "link": "newchart-json-EUP"
+                "showLabel": "1"
             }, {
                 "id": "AF",
                 "value": "2.58",
-                "showLabel": "1",
-                "link": "newchart-json-AFC"
+                "showLabel": "1"
             }, {
                 "id": "AU",
                 "value": "1.30",
-                "showLabel": "1",
-                "link": "newchart-json-AUS"
+                "showLabel": "1"
             }
         ]
     }
