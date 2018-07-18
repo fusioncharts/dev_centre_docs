@@ -1,5 +1,4 @@
 ---
-permalink: getting-started/vuejs/install-using-vuejs.html
 title: Installation | FusionCharts
 description: The Vue-FusionCharts component lets you include FusionCharts in your VueJS projects and add interactive JavaScript charts and graphs to your VueJS applications.
 heading: Installation
@@ -111,10 +110,10 @@ In order to render maps, you need to [download](https://www.fusioncharts.com/dow
 
 ```
 <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-<script type="text/javascript" src="path/to/local/fusioncharts.california.js"></script>
+<script type="text/javascript" src="path/to/local/fusioncharts.world.js"></script>
 ```
 
-The `fusioncharts.california.js` file includes path drawings of the map of **California**.
+The `fusioncharts.world.js` file includes path drawings of the map of **world**.
 
 The consolidated code(which also includes the `vue.js`, `fusioncharts.js` and `vue-fusioncharts.js`)  looks like as shown below:
 
@@ -130,8 +129,8 @@ The consolidated code(which also includes the `vue.js`, `fusioncharts.js` and `v
     <script type="text/javascript" src="path/to/local/vue-fusioncharts.js"></script>
     <!-- FusionMaps -->
     <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-    <!--usa -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.california.js"></script>
+    <!--world -->
+    <script type="text/javascript" src="path/to/local/fusioncharts.world.js"></script>
 </head>
 ```
 

@@ -1,5 +1,4 @@
 ---
-permalink: getting-started/vuejs/your-first-chart-using-vuejs.html
 title: Your First Chart in Vue using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the vue-fusioncharts component.
 heading: Your First Chart in Vue using FusionCharts
