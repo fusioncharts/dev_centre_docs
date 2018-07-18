@@ -66,7 +66,7 @@ The consolidated code looks like as shown below:
 ```html
 <head>
     <meta charset="utf-8">
-    <title>Vue - FusionCharts</title>
+    <title>FusionCharts</title>
     <!-- FusionCharts -->
     <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
     <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
@@ -205,8 +205,6 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 ## Install FusionCharts via npm
 
 Now, let's discuss how to install the fusioncharts package via npm. The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
-
-This section outlines the steps to be executed for installing all the node package via NPM and rendering charts using the Vue-FusionCharts component.
 
 **Step 1: Install the fusioncharts package via npm**
 
