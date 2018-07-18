@@ -69,20 +69,25 @@ In order to install, create an HTML file and follow the steps below.
 <script type="text/javascript" src="path/to/local/react.js"></script>
 <script type="text/javascript" src="path/to/local/react-dom.js"></script>
 ```
+### **Step 2: Include Babel for JSX transpiling:**
 
-### **Step 2: Include the FusionCharts package:**
+```html
+<script type="text/javascript" src="path/to/local/babel-core.js"></script>
+```
+
+### **Step 3: Include the FusionCharts package:**
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-### **Step 3: Include the react-fusioncharts module:**
+### **Step 4: Include the react-fusioncharts module:**
 
 ```html
 <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
 ```
 
-### **Step 4: Include the theme file and CSS:**
+### **Step 5: Include the theme file and CSS:**
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
@@ -95,10 +100,11 @@ The consolidated code looks like as shown below:
 <head>
     <meta charset="utf-8">
     <title>React - FusionCharts</title>
-    <!-- react -->
+    <!-- React -->
     <script type="text/javascript" src="path/to/local/react.js"></script>
-
     <script type="text/javascript" src="path/to/local/react-dom.js"></script>
+    <!-- Babel -->
+    <script type="text/javascript" src="path/to/local/babel-core.js"></script>
     <!-- FusionCharts -->
     <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
     <!-- React-FusionCharts -->
@@ -141,7 +147,7 @@ The consolidated code (which also includes the `react.js`, `fusioncharts.js` and
 
     <!-- FusionMaps -->
     <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-    <!--usa -->
+    <!--world -->
     <script type="text/javascript" src="path/to/local/fusioncharts.world.js"></script>
 </head>
 ```
@@ -212,19 +218,83 @@ Once the installation is done, you need to register the fusioncharts module. You
 
 **Register using all charts:**
 
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='import'>using import</a></li>
+  <li><a data-toggle='require'>using require</a></li>
+</ul>
+
+<div class='tab-content'>
+<div class='tab import active'>
+<pre><code class="custom-hlc language-cs">
+
 To include the fusioncharts class:
 
 ```
-import FusionCharts from 'fusioncharts'
-import Charts from 'fusioncharts/charts'
+import FusionCharts from 'fusioncharts';
+import Charts from 'fusioncharts/fusioncharts.charts';
 ```
 
 **Note**: To use charts and gauges from PowerCharts and Widgets, import their respective modules using:
 
 ```
-import PowerCharts from 'fusioncharts/powercharts' // for PowerCharts
-import Widgets from 'fusioncharts/widgets'; // for Widgets
+import PowerCharts from 'fusioncharts/fusioncharts.powercharts'; // for PowerCharts
+import Widgets from 'fusioncharts/fusioncharts.widgets'; // for Widgets
 ```
+
+To include React FusionCharts plugin:
+
+```
+import ReactFC from 'react-fusioncharts';
+```
+
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab require-tab'>
+<pre><code class="custom-hlc language-cv">
+
+To include the fusioncharts class:
+
+```
+let FusionCharts = require('fusioncharts');
+let Charts = require('fusioncharts/fusioncharts.charts');
+
+```
+
+**Note:** To use charts and gauges from PowerCharts and Widgets, import their respective modules using:
+
+```
+let PowerCharts = require('fusioncharts/fusioncharts.powercharts'); // for PowerCharts
+let Widgets = require('fusioncharts/fusioncharts.widgets'); // for Widgets
+```
+
+To include React FusionCharts plugin:
+
+```
+let ReactFC = require('react-fusioncharts').default;
+```
+
+To add chart dependency:
+
+```
+ReactFC.fcRoot(FusionCharts, Charts);
+```
+
+To add charts, powercharts and widgets dependencies:
+
+```
+// ReactFC.fcRoot(FusionCharts, Charts, [Module]);
+
+ReactFC.fcRoot(FusionCharts, Charts, PowerCharts, Widgets);
+```
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 To add chart dependency:
 
@@ -260,7 +330,14 @@ To add chart dependency:
 // ReactFusionCharts.fcRoot(FusionCharts, [ChartType]);
 
 ReactFusionCharts.fcRoot(FusionCharts, Column2D);
+
 ```
+
+
+<div class='tab xml-tab'>
+<pre><code class="custom-hlc language-cv">
+
+
 
 **Register using multiple specific chart types:**
 
