@@ -147,7 +147,7 @@ For some chart types, you need to include/exclude certain files and in a specifi
 <script src = "node_modules/fusioncharts/fusioncharts.overlappedcolumn2d.js"> </script>
 ```
 
-### Installing FusionMaps (map visualizations) for your project
+## Installing FusionMaps (map visualizations) for your project
 
 In order to render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files and include them to your HTML as shown below:
 
@@ -175,7 +175,7 @@ The consolidated code looks like as shown below:
 </head>
 ```
 
-### Themes
+## Themes
 
 Themes shipped with FusionCharts Suite XT allows you to create centralized theme files (similar to CSS files) and apply those themes to any number of charts.
 
