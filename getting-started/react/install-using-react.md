@@ -20,34 +20,30 @@ In this article, we will show you how you to download and install the React-Fusi
 
 ## Choose your mode of installation:
 
-
 <table>
     <tr>
-        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-using-direct-javascript-files-2)</td>
-        <td align="center">[NPM]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-fusioncharts-via-npm-5)</td>
+        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/react/install-using-react#install-using-direct-javascript-files-2)</td>
+        <td align="center">[NPM]({% site.baseurl %}/getting-started/react/install-using-react#install-fusioncharts-via-npm-5)</td>
     </tr>
 </table>
-
-
 
 ## Install using Direct JavaScript files
 
 In order to install and start working with React-FusionCharts, you need to:
 
-* [Download ](https://reactjs.org/docs/getting-started.html)the React core library.
+* [Download](https://reactjs.org/docs/getting-started.html)the React core library.
 
-* [Download ](https://www.fusioncharts.com/react-charts)the React-FusionCharts plugin which contains the react-fusioncharts.js file.
+* [Download](https://www.fusioncharts.com/react-charts)the React-FusionCharts plugin which contains the react-fusioncharts.js file.
 
-* [Download ](https://www.fusioncharts.com/download/)the FusionCharts Suite XT which contains the necessary JavaScript files.
+* [Download](https://www.fusioncharts.com/download/)the FusionCharts Suite XT which contains the necessary JavaScript files.
 
 Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. The folder structure is shown below:
 
-![](FC-React_images/image_0.png)
+![Js Folder Structure]({% site.baseurl %}/images/js-folder-structure.png)
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
 
 Following is the list of JavaScript files present in your fusioncharts-suite-xt folder:
-
 
 File Name|Description|
 -|-
@@ -65,15 +61,12 @@ File Name|Description|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from here. </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files (JSON & CSS). Refer each theme with their respective `JavaScript` and `CSS` file names.|
 
-
-
 In order to install, create an HTML file and follow the steps below.
 
 ### **Step 1: Include React core library:**
 
 ```html
 <script type="text/javascript" src="path/to/local/react.js"></script>
-
 <script type="text/javascript" src="path/to/local/react-dom.js"></script>
 ```
 
@@ -115,7 +108,7 @@ The consolidated code looks like as shown below:
 </head>
 ```
 
-That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/vuejs/your-first-chart-using-vuejs '@@open-newtab').
+That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/react/your-first-chart-using-react '@@open-newtab').
 
 ### Installing FusionMaps (map visualizations) for your project
 
@@ -125,10 +118,10 @@ In order to render maps, you need to [download ](https://www.fusioncharts.com/do
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-<script type="text/javascript" src="path/to/local/fusioncharts.california.js"></script>
+<script type="text/javascript" src="path/to/local/fusioncharts.world.js"></script>
 ```
 
-The `fusioncharts.california.js` file includes path drawings of the map of **California**.
+The `fusioncharts.world.js` file includes path drawings of the map of **world**.
 
 The consolidated code (which also includes the `react.js`, `fusioncharts.js` and `react-fusioncharts.js`) looks like as shown below:
 
@@ -149,7 +142,7 @@ The consolidated code (which also includes the `react.js`, `fusioncharts.js` and
     <!-- FusionMaps -->
     <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
     <!--usa -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.california.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.world.js"></script>
 </head>
 ```
 
