@@ -20,8 +20,8 @@ In this article, we will show you how you can download and install the `Vue-Fusi
 
 <table>
     <tr>
-        <td align="center">[Direct JavaScript files]({% site.baseurl %}/using-with-javascript-libraries/vuejs/installation#install-using-direct-javascript-files-1)</td>
-        <td align="center">[NPM]({% site.baseurl %}/using-with-javascript-libraries/vuejs/installation#install-fusioncharts-via-npm-4)</td>
+        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-using-direct-javascript-files-2)</td>
+        <td align="center">[NPM]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-fusioncharts-via-npm-5)</td>
     </tr>
 </table>
 

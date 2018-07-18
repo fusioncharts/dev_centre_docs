@@ -1,5 +1,4 @@
 ---
-permalink: getting-started/jquery/install-using-jquery.html
 title: Installation | FusionCharts
 description: The FusionCharts Suite XT jQuery helper allows you to use jQuery syntax to render and manipulate your charts and graphs seamlessly across all browsers and devices.
 heading: Installation
