@@ -273,16 +273,21 @@ ReactFusionCharts.fcRoot(FusionCharts, Column2D);
 
 To register using multiple specific chart types, import the specific charts instead of all the charts after importing the fusioncharts class. Also, you need to add the dependency for all the specific chart types as shown in the code below:
 
-```import FusionCharts from 'fusioncharts/core'
+```
+import FusionCharts from 'fusioncharts/core'
+```
 
 To include more than one chart from viz folder:
 
+```
 // import ChartType from 'fusioncharts/viz/[ChartType]'
 import Column2D from 'fusioncharts/viz/column2d'
 import Line2D from 'fusioncharts/viz/line2d'
+```
 
 To add chart dependency:
 
+```
 // ReactFusionCharts.fcRoot(FusionCharts, [ChartType]);
 ReactFusionCharts.fcRoot(FusionCharts, Column2D, Line2D);
 
@@ -298,7 +303,8 @@ import FusionCharts from 'fusioncharts/core'
 
 To include the core map files from maps:
 
-```import Maps from 'fusioncharts/maps'
+```
+import Maps from 'fusioncharts/maps'
 ```
 
 To include the map definition file you want to render:
