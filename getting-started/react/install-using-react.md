@@ -21,7 +21,12 @@ In this article, we will show you how you to download and install the React-Fusi
 ## Choose your mode of installation:
 
 
-Direct JavaScript files|NPM|
+<table>
+    <tr>
+        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-using-direct-javascript-files-2)</td>
+        <td align="center">[NPM]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-fusioncharts-via-npm-5)</td>
+    </tr>
+</table>
 
 
 
