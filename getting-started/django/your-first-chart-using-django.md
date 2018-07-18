@@ -90,9 +90,18 @@ In the above code:
 The HTML template of the above sample is shown below:
 
 ```HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FC-python wrapper</title>
+    {% load static %}
+  <script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
+  <script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fint.js" %}"></script>
+</head>
 <body>
     <div id="chart-1">{{ output|safe }}</div>
 </body>
+</html>
 ```
 
 That's it! When you run this HTML page now, you should see a chart representing your data.

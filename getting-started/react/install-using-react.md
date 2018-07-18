@@ -216,85 +216,70 @@ npm install fusioncharts react-fusioncharts --save
 
 Once the installation is done, you need to register the fusioncharts module. You can register in multiple ways as per your requirement like:
 
-**Register using all charts:**
+### Register using all charts
+
+You can include the fusioncharts class and React FusionCharts plugin using any of the following process:
 
 <div class="code-wrapper">
 <ul class='code-tabs'>
-  <li class='active'><a data-toggle='import'>using import</a></li>
-  <li><a data-toggle='require'>using require</a></li>
+  <li class='active'><a data-toggle='json'>Import</a></li>
+  <li><a data-toggle='xml'>Require</a></li>
 </ul>
-
 <div class='tab-content'>
-<div class='tab import active'>
+<div class='tab json-tab active'>
+<div><strong>To include the fusioncharts class:</strong></div>
 <pre><code class="custom-hlc language-cs">
-
-To include the fusioncharts class:
-
-```
-import FusionCharts from 'fusioncharts';
-import Charts from 'fusioncharts/fusioncharts.charts';
-```
-
-**Note**: To use charts and gauges from PowerCharts and Widgets, import their respective modules using:
-
-```
-import PowerCharts from 'fusioncharts/fusioncharts.powercharts'; // for PowerCharts
-import Widgets from 'fusioncharts/fusioncharts.widgets'; // for Widgets
-```
-
-To include React FusionCharts plugin:
-
-```
-import ReactFC from 'react-fusioncharts';
-```
-
+    import FusionCharts from 'fusioncharts';
+    import Charts from 'fusioncharts/fusioncharts.charts';
+</code></pre>
+<div><strong>To use charts and gauges from PowerCharts and Widgets, import their respective modules using:</strong></div>
+<pre><code class="custom-hlc language-cs">
+    import PowerCharts from 'fusioncharts/fusioncharts.powercharts'; // For PowerCharts
+    import Widgets from 'fusioncharts/fusioncharts.widgets'; // For Widgets
+</code></pre>
+<div><strong>To include React FusionCharts plugin:</strong></div>
+<pre><code class="custom-hlc language-cs">
+    import ReactFC from 'react-fusioncharts';
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
-<div class='tab require-tab'>
+<div class='tab xml-tab'>
+<div><strong>To include the fusioncharts class:</strong></div>
 <pre><code class="custom-hlc language-cv">
-
-To include the fusioncharts class:
-
-```
-let FusionCharts = require('fusioncharts');
-let Charts = require('fusioncharts/fusioncharts.charts');
-
-```
-
-**Note:** To use charts and gauges from PowerCharts and Widgets, import their respective modules using:
-
-```
-let PowerCharts = require('fusioncharts/fusioncharts.powercharts'); // for PowerCharts
-let Widgets = require('fusioncharts/fusioncharts.widgets'); // for Widgets
-```
-
-To include React FusionCharts plugin:
-
-```
-let ReactFC = require('react-fusioncharts').default;
-```
-
-To add chart dependency:
-
-```
-ReactFC.fcRoot(FusionCharts, Charts);
-```
-
-To add charts, powercharts and widgets dependencies:
-
-```
-// ReactFC.fcRoot(FusionCharts, Charts, [Module]);
-
-ReactFC.fcRoot(FusionCharts, Charts, PowerCharts, Widgets);
-```
+    let FusionCharts = require('fusioncharts');
+    let Charts = require('fusioncharts/fusioncharts.charts');
+</code></pre>
+<div><strong>To use charts and gauges from PowerCharts and Widgets, import their respective modules using:</strong></div>
+<pre><code class="custom-hlc language-cv">
+    let PowerCharts = require('fusioncharts/fusioncharts.powercharts'); // For PowerCharts
+    let Widgets = require('fusioncharts/fusioncharts.widgets'); // For Widgets
+</code></pre>
+<div><strong>To include React FusionCharts plugin:</strong></div>
+<pre><code class="custom-hlc language-cv">
+    let ReactFC = require('react-fusioncharts').default;
+</code></pre>
+<div><strong>To add chart dependency:</strong></div>
+<pre><code class="custom-hlc language-cv">
+    ReactFC.fcRoot(FusionCharts, Charts);
+</code></pre>
+<div><strong>To add charts, powercharts and widgets dependencies:</strong></div>
+<pre><code class="custom-hlc language-cv">
+    // ReactFC.fcRoot(FusionCharts, Charts, [Module]);
+    ReactFC.fcRoot(FusionCharts, Charts, PowerCharts, Widgets);
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 </div>
 </div>
+
+
+
+
+
+
+
 
 To add chart dependency:
 
