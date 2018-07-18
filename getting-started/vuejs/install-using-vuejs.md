@@ -363,7 +363,7 @@ import World from 'fusioncharts/maps/es/fusioncharts.world';
 
 > If you want to render a map which is not in the fusioncharts package(world and USA), then you need to install **fusionmaps** which contains all the ES6 map definition:
 * npm install fusionmaps
-* ES-6 definitions can be found in node_modules/fusionmaps/maps/es/fusioncharts.[MAP-ALIAS].js
+* ES-6 definitions can be found in `node_modules/fusionmaps/maps/es/fusioncharts.[MAP-ALIAS].js`
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
 
@@ -376,7 +376,16 @@ FusionCharts.addDep(World). (World - reference from above)
 
 ### Include Themes via NPM
 
-In your Javascript code, use the **Vue.use()** method to register the vue-fusioncharts component.
+FusionCharts Suite XT ships with the following predefined themes:
+
+* `fusion`
+* `zune`
+* `ocean`
+* `carbon`
+
+> The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` file sets the theme as **fusion**. To add any other theme to your chart, include its corresponding JavaScript file to your project.
+
+In your Javascript code, use the `Vue.use()` method to register the vue-fusioncharts component.
 
 To include the core fusioncharts files, execute the following command:
 

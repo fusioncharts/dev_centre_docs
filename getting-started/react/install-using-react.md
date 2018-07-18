@@ -123,15 +123,16 @@ In order to render maps, you need to [download ](https://www.fusioncharts.com/do
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
 
-```
+```html
 <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
 <script type="text/javascript" src="path/to/local/fusioncharts.california.js"></script>
 ```
 
 The `fusioncharts.california.js` file includes path drawings of the map of **California**.
 
-The consolidated code (which also includes the react.js, fusioncharts.js and react-fusioncharts.js) looks like as shown below:
+The consolidated code (which also includes the `react.js`, `fusioncharts.js` and `react-fusioncharts.js`) looks like as shown below:
 
+```html
 <head>
 
     <meta charset="utf-8">
@@ -150,8 +151,9 @@ The consolidated code (which also includes the react.js, fusioncharts.js and rea
     <!--usa -->
     <script type="text/javascript" src="path/to/local/fusioncharts.california.js"></script>
 </head>
+```
 
-### **Themes**
+### Themes
 
 Themes shipped with FusionCharts Suite XT allows you to create centralized theme files (similar to CSS files) and apply those themes to any number of charts.
 
@@ -165,19 +167,21 @@ In a theme file, you can centrally customize the following aspects of a chart, g
 
 FusionCharts Suite XT ships with the following predefined themes:
 
-* fusion
+* `fusion`
 
-* zune
+* `zune`
 
-* ocean
+* `ocean`
 
-* carbon
+* `carbon`
 
-To include a theme to your chart, include its corresponding JavaScript file in your HTML page and the CSS file for that theme as shown in the code below:
+> To include a theme to your chart, include its corresponding JavaScript file in your HTML page and the CSS file for that theme as shown in the code below:
 
+```html
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.css"></script>
+```
 
 The fusioncharts.theme.fusion.js file sets the theme as fusion.
 
@@ -185,56 +189,71 @@ The fusioncharts.theme.fusion.js file sets the theme as fusion.
 
 This section outlines the steps to be executed for installing all the node modules via NPM and rendering charts using the React-FusionCharts component.
 
-### **The fusioncharts package installed by npm contains files for all charts and widgets and only two map definition files - for the World map and the USA map.**
+> **The fusioncharts package installed by npm contains files for all charts and widgets and only two map definition files - for the World map and the USA map.**
 
-### **Step 1: Install the fusioncharts module via npm**
+**Step 1: Install the fusioncharts module via npm**
 
 To install the fusioncharts module, execute the following command in the terminal:
 
+```
 npm install fusioncharts --save
+```
 
-### **Step 2: Install the react-fusioncharts module via npm**
+**Step 2: Install the react-fusioncharts module via npm**
 
 To install the react-fusioncharts module, execute the following command in the terminal:
 
+```
 npm install react-fusioncharts --save
+```
 
 You can also combine the above commands in a single line, as shown below:
 
+```
 npm install fusioncharts react-fusioncharts --save
+```
 
-### **Step 3: Include the fusioncharts module**
+**Step 3: Include the fusioncharts module**
 
 Once the installation is done, you need to register the fusioncharts module. You can register in multiple ways as per your requirement like:
 
-#### **Register using all charts:**
+**Register using all charts:**
 
 To include the fusioncharts class:
 
+```
 import FusionCharts from 'fusioncharts'
 import Charts from 'fusioncharts/charts'
+```
 
 **Note**: To use charts and gauges from PowerCharts and Widgets, import their respective modules using:
 
+```
 import PowerCharts from 'fusioncharts/powercharts' // for PowerCharts
 import Widgets from 'fusioncharts/widgets'; // for Widgets
+```
 
 To add chart dependency:
 
+```
 ReactFusionCharts.fcRoot(FusionCharts, Charts);
+```
 
 To add charts, powercharts and widgets dependencies:
 
+```
 // ReactFusionCharts.fcRoot(FusionCharts, Charts, [Module]);
 
 ReactFusionCharts.fcRoot(FusionCharts, Charts, PowerCharts, Widgets);
+```
 
-#### **Include only specific chart modules:**
+**Include only specific chart modules:**
 
 To register using a specific chart type, import the the fusioncharts class and then the specific chart (instead of all the charts). Also, you need to add the dependency for the specific chart type as shown in the code below:
 
 To include the fusioncharts class:
 
+```
 import FusionCharts from 'fusioncharts/core'
 
 To include the specific chart from viz folder:
@@ -248,88 +267,102 @@ To add chart dependency:
 // ReactFusionCharts.fcRoot(FusionCharts, [ChartType]);
 
 ReactFusionCharts.fcRoot(FusionCharts, Column2D);
+```
 
-#### **Register using multiple specific chart types:**
+**Register using multiple specific chart types:**
 
 To register using multiple specific chart types, import the specific charts instead of all the charts after importing the fusioncharts class. Also, you need to add the dependency for all the specific chart types as shown in the code below:
 
-To include the fusioncharts class:
-
+```
 import FusionCharts from 'fusioncharts/core'
+```
 
 To include more than one chart from viz folder:
 
+```
 // import ChartType from 'fusioncharts/viz/[ChartType]'
 import Column2D from 'fusioncharts/viz/column2d'
 import Line2D from 'fusioncharts/viz/line2d'
+```
 
 To add chart dependency:
 
+```
 // ReactFusionCharts.fcRoot(FusionCharts, [ChartType]);
 ReactFusionCharts.fcRoot(FusionCharts, Column2D, Line2D);
 
-### **Step 4: Define the Chart Configuration**
+```
 
-As shown in the code below, in your JavaScript code, define an object that contains the configuration for a FusionCharts Suite XT chart. Set the chart data source using the regular FusionCharts JSON format.
-
-var chartConfigs = {
-    type: "Column2D",
-    className: "fc-column2d", // ReactJS attribute-name for DOM classes
-    dataFormat: "JSON",
-    dataSource: {
-        chart:{},
-        data: [{value: 500}, {value: 600}, {value: 700}]
-    }
-};
-
-### **Step 5: Render the Chart**
-
-<ReactFC {...chartConfigs} />
-
-### **Include Maps via NPM**
+### Include Maps via NPM
 
 To include the core fusioncharts files:
 
+```
 import FusionCharts from 'fusioncharts/core'
+```
 
 To include the core map files from maps:
 
+```
 import Maps from 'fusioncharts/maps'
+```
 
 To include the map definition file you want to render:
 
+```
 import World from 'fusioncharts/maps/es/fusioncharts.world'
+```
 
 If you want to render a map which is not in the fusioncharts package(world and USA), then you need to install **fusionmaps** which contain all the ES6 map definition:
 
-* npm install fusionmaps
+```
+npm install fusionmaps
+```
 
-ES-6 definitions can be found in node_modules/fusionmaps/maps/es/fusioncharts.[MAP-ALIAS].js
+ES-6 definitions can be found in `node_modules/fusionmaps/maps/es/fusioncharts.[MAP-ALIAS].js`
 
 If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
 
 To add the map and definition as the dependency to the core:
 
-### **ReactFusionCharts.fcRoot(FusionCharts, Maps);   // Maps -  reference from above
-ReactFusionCharts.fcRoot(FusionCharts, World);  // World - reference from above**
+```
+ReactFusionCharts.fcRoot(FusionCharts, Maps);   // Maps -  reference from above
+ReactFusionCharts.fcRoot(FusionCharts, World);  // World - reference from above
+```
 
-### **Include Themes via NPM**
+### Include Themes via NPM
+
+FusionCharts Suite XT ships with the following predefined themes:
+
+* `fusion`
+* `zune`
+* `ocean`
+* `carbon`
+
+> The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` file sets the theme as **fusion**. To add any other theme to your chart, include its corresponding JavaScript file to your project.
 
 To include the core fusioncharts files:
 
+```
 import FusionCharts from 'fusioncharts/core'
+```
 
 To include the theme engine extension:
 
+```
 import ThemeEngine from 'fusioncharts/features/theme-engine'
+```
 
 To include the theme file and CSS for the theme:
 
+```
 import fusion from 'fusioncharts/themes/es/fusioncharts.fusion'
 import css file from 'fusioncharts/themes/es/fusioncharts.fusion.css'
+```
 
 To add ThemeEngine and fusion as dependency to the core:
-
+```
 ReactFusionCharts.fcRoot(FusionCharts, ThemeEngine);   // TThemeEngine - Rreference from above
 ReactFusionCharts.fcRoot(FusionCharts, fusion);   // Ffusion - reference from above
+```
 
