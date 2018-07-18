@@ -78,15 +78,56 @@ The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 <div class='tab-content'>
 <div class='tab json-tab active'>
 <pre><code class="custom-hlc language-cs">
-    //Include fusioncharts reference in page
-    ...
+    //use fusionchart reference
     using FusionCharts.Charts;
     ...
     ...
+    //store label-value pair
+    var dataValuePair = new List < KeyValuePair < string,
+        double >> ();
+
+    dataValuePair.Add(new KeyValuePair < string, double > ("Venezuela", 290));
+    dataValuePair.Add(new KeyValuePair < string, double > ("Saudi", 260));
+    dataValuePair.Add(new KeyValuePair < string, double > ("Canada", 180));
+    dataValuePair.Add(new KeyValuePair < string, double > ("Iran", 140));
+    dataValuePair.Add(new KeyValuePair < string, double > ("Russia", 115));
+    dataValuePair.Add(new KeyValuePair < string, double > ("UAE", 100));
+    dataValuePair.Add(new KeyValuePair < string, double > ("US", 30));
+    dataValuePair.Add(new KeyValuePair < string, double > ("China", 30));
+
+    StringBuilder jsonData = new StringBuilder();
+    StringBuilder data = new StringBuilder();
+    // store chart config name-config value pair
+
+    Dictionary < string, string > chartConfig = new Dictionary < string, string > ();
+    chartConfig.Add("caption", "Countries With Most Oil Reserves [2017-18]");
+    chartConfig.Add("subCaption", "In MMbbl = One Million barrels");
+    chartConfig.Add("xAxisName", "Country");
+    chartConfig.Add("yAxisName", "Reserves (MMbbl)");
+    chartConfig.Add("numberSuffix", "k");
+    chartConfig.Add("theme", "fusion");
+
+    // json data to use as chart data source
+    jsonData.Append("{'chart':{");
+    foreach(var config in chartConfig) {
+        jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
+    }
+    jsonData.Replace(",", "},", jsonData.Length - 1, 1);
+
+    // build  data object from label-value pair
+    data.Append("'data':[");
+
+    foreach(KeyValuePair < string, double > pair in dataValuePair) {
+        data.AppendFormat("{{'label':'{0}','value':'{1}'}},", pair.Key, pair.Value);
+    }
+    data.Replace(",", "]", data.Length - 1, 1);
+
+    jsonData.Append(data.ToString());
+    jsonData.Append("}");
     //Create chart instance
     // charttype, chartID, width, height, data format, data
-    firstChart = new Chart("column2d", "myChart", "700", "400", "json", DataSource);
-    //Render chart
+
+    Chart chart = new Chart("column2d", "mychart", "800", "550", "json", jsonData.ToString());
     Literal1.Text = chart.Render();
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -94,17 +135,57 @@ The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 
 <div class='tab xml-tab'>
 <pre><code class="custom-hlc language-cv">
-    'Import fusioncharts reference in page
-    ...
+    //Import fusionchart reference
     Imports FusionCharts.Charts
         ...
         ...
+        'store label-value pair
+    Dim dataValuePair As New Dictionary(Of String, Double)
+    dataValuePair.Add("Venezuela", 290)
+    dataValuePair.Add("Saudi", 260)
+    dataValuePair.Add("Canada", 180)
+    dataValuePair.Add("Iran", 140)
+    dataValuePair.Add("Russia", 115)
+    dataValuePair.Add("UAE", 100)
+    dataValuePair.Add("US", 30)
+    dataValuePair.Add("China", 30)
 
-        ' Initialize chart
+    Dim jsonData As New StringBuilder
+    Dim data As New StringBuilder
+
+        ' store chart config name-config value pair
+    Dim chartConfig As New Dictionary(Of String, String)
+    chartConfig.Add("caption", "Countries With Most Oil Reserves [2017-18]")
+    chartConfig.Add("subCaption", "In MMbbl = One Million barrels")
+    chartConfig.Add("xAxisName", "Country")
+    chartConfig.Add("yAxisName", "Reserves (MMbbl)")
+    chartConfig.Add("numberSuffix", "k")
+    chartConfig.Add("theme", "fusion")
+
+    ' json data to use as chart data source
+    jsonData.Append("{'chart':{")
+    For Each config In chartConfig
+    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value)
+    Next
+
+
+    jsonData.Replace(",", "},", jsonData.Length - 1, 1)
+
+    ' build  data object from label-value pair
+    data.Append("'data':[")
+
+    For Each pair In dataValuePair
+    data.AppendFormat("{{'label':'{0}','value':'{1}'}},", pair.Key, pair.Value)
+    Next
+
+
+    data.Replace(",", "]", data.Length - 1, 1)
+
+    jsonData.Append(data.ToString())
+    jsonData.Append("}")
+    ' Create chart instance
     ' charttype, chartID, width, height, data format, data
-
-    Dim chart As New Chart("column2d", "myChart", "700", "400", "json", DataSource)
-    ' Render the chart
+    Dim chart As New Chart("column2d", "first_chart", "600", "350", "json", jsonData.ToString())
     Literal1.Text = chart.Render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -183,16 +264,62 @@ The full code for the above sample is given below:
 <div><strong>.aspx.cs</strong></div>
 <pre><code class="custom-hlc language-javascript">
     using System;
+    using System.Collections.Generic;
+    using System.Text;
     using FusionCharts.Charts;
 
     namespace asp_test {
         public partial class index: System.Web.UI.Page {
-            protected void Page_Load(object sender, EventArgs e) {
-                String DataSource;
-                DataSource = "{    'chart': {        'caption': 'Countries With Most Oil Reserves [2017-18]',        'subCaption': 'In MMbbl = One Million barrels',        'xAxisName': 'Country',        'yAxisName': 'Reserves (MMbbl)',        'numberSuffix': 'K',        'theme': 'fusion'    },    'data': [        {            'label': 'Venezuela',            'value': '290'        },        {            'label': 'Saudi',            'value': '260'        },        {            'label': 'Canada',            'value': '180'        },        {            'label': 'Iran',            'value': '140'        },        {            'label': 'Russia',            'value': '115'        },        {            'label': 'UAE',            'value': '100'        },        {            'label': 'US',            'value': '30'        },        {            'label': 'China',            'value': '30'        }    ]}";
-                firstChart = new Chart("column2d", "mychart", "600", "400", "json", DataSource);
-                Literal1.Text = chart.Render();
 
+            protected void Page_Load(object sender, EventArgs e) {
+                //store label-value pair
+                var dataValuePair = new List < KeyValuePair < string,
+                    double >> ();
+
+                dataValuePair.Add(new KeyValuePair < string, double > ("Venezuela", 290));
+                dataValuePair.Add(new KeyValuePair < string, double > ("Saudi", 260));
+                dataValuePair.Add(new KeyValuePair < string, double > ("Canada", 180));
+                dataValuePair.Add(new KeyValuePair < string, double > ("Iran", 140));
+                dataValuePair.Add(new KeyValuePair < string, double > ("Russia", 115));
+                dataValuePair.Add(new KeyValuePair < string, double > ("UAE", 100));
+                dataValuePair.Add(new KeyValuePair < string, double > ("US", 30));
+                dataValuePair.Add(new KeyValuePair < string, double > ("China", 30));
+
+                StringBuilder jsonData = new StringBuilder();
+                StringBuilder data = new StringBuilder();
+                // store chart config name-config value pair
+
+                Dictionary < string, string > chartConfig = new Dictionary < string, string > ();
+                chartConfig.Add("caption", "Countries With Most Oil Reserves [2017-18]");
+                chartConfig.Add("subCaption", "In MMbbl = One Million barrels");
+                chartConfig.Add("xAxisName", "Country");
+                chartConfig.Add("yAxisName", "Reserves (MMbbl)");
+                chartConfig.Add("numberSuffix", "k");
+                chartConfig.Add("theme", "fusion");
+
+                // json data to use as chart data source
+                jsonData.Append("{'chart':{");
+                foreach(var config in chartConfig) {
+                    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
+                }
+                jsonData.Replace(",", "},", jsonData.Length - 1, 1);
+
+                // build  data object from label-value pair
+                data.Append("'data':[");
+
+                foreach(KeyValuePair < string, double > pair in dataValuePair) {
+                    data.AppendFormat("{{'label':'{0}','value':'{1}'}},", pair.Key, pair.Value);
+                }
+                data.Replace(",", "]", data.Length - 1, 1);
+
+                jsonData.Append(data.ToString());
+                jsonData.Append("}");
+                //Create chart instance
+                // charttype, chartID, width, height, data format, data
+
+                Chart chart = new Chart("column2d", "first_chart", "800", "550", "json", jsonData.ToString());
+                // render chart
+                Literal1.Text = chart.Render();
             }
 
         }
@@ -228,12 +355,55 @@ The full code for the above sample is given below:
 <div><strong>.aspx.vb</strong></div>
 <pre><code class="custom-hlc language-javascript">
     Imports FusionCharts.Charts
-    Partial Class index
+    Partial Class first_chart
     Inherits System.Web.UI.Page
-    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    Dim DataSource As String
-    DataSource = "{    'chart': {        'caption': 'Countries With Most Oil Reserves [2017-18]',        'subCaption': 'In MMbbl = One Million barrels',        'xAxisName': 'Country',        'yAxisName': 'Reserves (MMbbl)',        'numberSuffix': 'K',        'theme': 'fusion'    },    'data': [        {            'label': 'Venezuela',            'value': '290'        },        {            'label': 'Saudi',            'value': '260'        },        {            'label': 'Canada',            'value': '180'        },        {            'label': 'Iran',            'value': '140'        },        {            'label': 'Russia',            'value': '115'        },        {            'label': 'UAE',            'value': '100'        },        {            'label': 'US',            'value': '30'        },        {            'label': 'China',            'value': '30'        }    ]}"
-    Dim chart As New Chart("column2d", "myChart", "600", "350", "json", DataSource)
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load 'store label-value pair
+    Dim dataValuePair As New Dictionary(Of String, Double)
+    dataValuePair.Add("Venezuela", 290)
+    dataValuePair.Add("Saudi", 260)
+    dataValuePair.Add("Canada", 180)
+    dataValuePair.Add("Iran", 140)
+    dataValuePair.Add("Russia", 115)
+    dataValuePair.Add("UAE", 100)
+    dataValuePair.Add("US", 30)
+    dataValuePair.Add("China", 30)
+
+    Dim jsonData As New StringBuilder
+    Dim data As New StringBuilder
+
+        'store chart config name-config value pair
+    Dim chartConfig As New Dictionary(Of String, String)
+    chartConfig.Add("caption", "Countries With Most Oil Reserves [2017-18]")
+    chartConfig.Add("subCaption", "In MMbbl = One Million barrels")
+    chartConfig.Add("xAxisName", "Country")
+    chartConfig.Add("yAxisName", "Reserves (MMbbl)")
+    chartConfig.Add("numberSuffix", "k")
+    chartConfig.Add("theme", "fusion")
+
+    ' json data to use as chart data source
+    jsonData.Append("{'chart':{")
+    For Each config In chartConfig
+    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value)
+    Next
+
+
+    jsonData.Replace(",", "},", jsonData.Length - 1, 1)
+
+    ' build  data object from label-value pair
+    data.Append("'data':[")
+
+    For Each pair In dataValuePair
+    data.AppendFormat("{{'label':'{0}','value':'{1}'}},", pair.Key, pair.Value)
+    Next
+
+
+    data.Replace(",", "]", data.Length - 1, 1)
+
+    jsonData.Append(data.ToString())
+    jsonData.Append("}")
+    ' Create chart instance
+    ' charttype, chartID, width, height, data format, data
+    Dim chart As New Chart("column2d", "first_chart", "600", "350", "json", jsonData.ToString())
     Literal1.Text = chart.Render()
     End Sub
     End Class
@@ -456,11 +626,86 @@ The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
     using FusionCharts.Charts;
     ...
     ...
+    //Create colorRange class
+    //It will store Min range Max range and specific color code for each range
+    class colorRange {
+        public int Min {
+            get;
+            set;
+        }
+        public int Max {
+            get;
+            set;
+        }
+        public string ColorCode {
+            get;
+            set;
+        }
 
-    // Initialize gauge
-    //gauge, gaugeID, width, height, data format, data
-    Chart gauge = new Chart("angulargauge", "mygauge", "600", "350", "json", DataSource);
-    // Render the gauge
+        public colorRange(int min, int max, string code) {
+            Min = min;
+            Max = max;
+            ColorCode = code;
+        }
+    }
+
+
+    // store chart config name-config value pair
+
+    Dictionary < string, string > chartConfig = new Dictionary < string, string > ();
+    chartConfig.Add("caption", "Nordstorm\\'s Customer Satisfaction Score for 2017");
+    chartConfig.Add("lowerLimit", "0");
+    chartConfig.Add("upperLimit", "100");
+    chartConfig.Add("showValue", "1");
+    chartConfig.Add("numberSuffix", "%");
+    chartConfig.Add("theme", "fusion");
+    chartConfig.Add("showToolTip", "0");
+    // colorRange class is our defined class
+    List < colorRange > color = new List < colorRange > ();
+    color.Add(new colorRange(0, 50, "#F2726F"));
+    color.Add(new colorRange(50, 75, "#FFC533"));
+    color.Add(new colorRange(75, 100, "#62B58F"));
+
+    //store dial configuration
+
+    var dial = new List < KeyValuePair < string,
+        string >> ();
+    dial.Add(new KeyValuePair < string, string > ("value", "81"));
+
+    // json data to use as chart data source
+    StringBuilder jsonData = new StringBuilder();
+    //build chart config object
+    jsonData.Append("{'chart':{");
+    foreach(var config in chartConfig) {
+        jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
+    }
+    jsonData.Replace(",", "},", jsonData.Length - 1, 1);
+
+    StringBuilder range = new StringBuilder();
+    //build colorRange object
+    range.Append("'colorRange':{");
+    range.Append("'color':[");
+    foreach(colorRange clr in color) {
+        range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode);
+    }
+    range.Replace(",", "]},", range.Length - 1, 1);
+    //build dials object
+    StringBuilder dials = new StringBuilder();
+    dials.Append("'dials':{");
+    dials.Append("'dial':[");
+    foreach(var dialCnf in dial) {
+        dials.AppendFormat("{{'{0}':'{1}'}},", dialCnf.Key, dialCnf.Value);
+    }
+    dials.Replace(",", "]}", dials.Length - 1, 1);
+
+    jsonData.Append(range.ToString());
+    jsonData.Append(dials.ToString());
+    jsonData.Append("}");
+
+    //Create gauge instance
+    // charttype, chartID, width, height, data format, data
+
+    Chart gauge = new Chart("angulargauge", "first_gauge", "400", "350", "json", jsonData.ToString());
     Literal1.Text = gauge.Render();
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -471,13 +716,111 @@ The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
     'Import fusioncharts reference in page
     ...
     Imports FusionCharts.Charts
-    ...
-    ...
+        ...
+        ...
+        'Create colorRange class
+    'It will store Min range Max range And specific color code for each range
+    Class ColorRange
+    Private lowerLimit As Integer
+    Private upprLimit As Integer
+    Private code As String
+        'lower value of range set as property
+    Property Min() As Integer
+    Get
+    Return lowerLimit
 
-    ' Initialize gauge
-    ' gauge, gaugeID, width, height, data format, data
-    Dim gauge As New Chart("angulargauge", "myChart", "600", "350", "json", DataSource)
-    ' Render the gauge
+    End Get
+    Set(value As Integer)
+    lowerLimit = value
+    End Set
+    End Property
+        'upper value of range set as property
+    Property Max() As Integer
+    Get
+    Return upprLimit
+
+    End Get
+    Set(value As Integer)
+    upprLimit = value
+    End Set
+    End Property
+        ' specific color code for this range
+    Property ColorCode() As String
+    Get
+    Return code
+
+    End Get
+    Set(value As String)
+    code = value
+    End Set
+    End Property
+        'constructor
+    Public Sub New(ByVal lowerLimit As Integer, ByVal upperLimit As Integer, ByVal code As String)
+    Min = lowerLimit
+    Max = upperLimit
+    ColorCode = code
+    End Sub
+
+    End Class
+        'store chart config name-config value pair
+
+    Dim chartConfig As New Dictionary(Of String, String)
+    chartConfig.Add("caption", "Nordstorm\'s Customer Satisfaction Score for 2017")
+    chartConfig.Add("lowerLimit", "0")
+    chartConfig.Add("upperLimit", "100")
+    chartConfig.Add("showValue", "1")
+    chartConfig.Add("numberSuffix", "%")
+    chartConfig.Add("theme", "fusion")
+    chartConfig.Add("showToolTip", "0")
+
+    Dim color As New List(Of ColorRange)
+    color.Add(New ColorRange(0, 50, "#F2726F"))
+    color.Add(New ColorRange(50, 75, "#FFC533"))
+    color.Add(New ColorRange(75, 100, "#62B58F"))
+
+    'store dial configuration
+
+    Dim dial As New Dictionary(Of String, String)
+    dial.Add("value", "81")
+    'json data to use as chart data source
+    Dim jsonData As New StringBuilder
+        'build chart config object
+    jsonData.Append("{'chart':{")
+
+    For Each config In chartConfig
+    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value)
+    Next
+
+    jsonData.Replace(",", "},", jsonData.Length - 1, 1)
+
+    Dim range As New StringBuilder
+        'build colorRange object
+    range.Append("'colorRange':{")
+    range.Append("'color':[")
+    For Each clr In color
+
+    range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode)
+    Next
+    range.Replace(",", "]},", range.Length - 1, 1)
+    'build dials object
+    Dim dials As New StringBuilder
+    dials.Append("'dials':{")
+    dials.Append("'dial':[")
+    For Each dialCnf In dial
+
+    dials.AppendFormat("{{'{0}':'{1}'}},", dialCnf.Key, dialCnf.Value)
+    Next
+    dials.Replace(",", "]}", dials.Length - 1, 1)
+
+    jsonData.Append(range.ToString())
+    jsonData.Append(dials.ToString())
+    jsonData.Append("}")
+
+    'Create gauge instance
+    'charttype, chartID, width, height, data format, data
+
+    Dim gauge As New Chart("angulargauge", "first_gauge", "400", "350", "json", jsonData.ToString())
+    'render gauge
     Literal1.Text = gauge.Render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -550,19 +893,95 @@ The full code for the above sample is given below:
 <div><strong>.aspx.cs</strong></div>
 <pre><code class="custom-hlc language-javascript">
     using System;
+    using System.Collections.Generic;
+    using System.Text;
     using FusionCharts.Charts;
 
     namespace asp_test {
-        public partial class index: System.Web.UI.Page {
-            protected void Page_Load(object sender, EventArgs e) {
+        public partial class gauge: System.Web.UI.Page {
+            class ColorRange {
+                public int Min {
+                    get;
+                    set;
+                }
+                public int Max {
+                    get;
+                    set;
+                }
+                public string ColorCode {
+                    get;
+                    set;
+                }
 
-                String DataSource;
-                DataSource = "{    'chart': {        'caption': 'Nordstorm\\'s Customer Satisfaction Score for 2017',        'lowerLimit': '0',        'upperLimit': '100',        'showValue': '1',        'numberSuffix': '%',        'theme': 'fusion',        'showToolTip': '0'    },    'colorRange': {        'color': [            {                'minValue': '0',                'maxValue': '50',                'code': '#F2726F'            },            {                'minValue': '50',                'maxValue': '75',                'code': '#FFC533'            },            {                'minValue': '75',                'maxValue': '100',                'code': '#62B58F'            }        ]    },    'dials': {        'dial': [            {                'value': '81'            }        ]    }}";
-                Chart gauge = new Chart("angulargauge", "mygauge", "600", "350", "json", DataSource);
+                public ColorRange(int min, int max, string code) {
+                    Min = min;
+                    Max = max;
+                    ColorCode = code;
+                }
+            }
+            protected void Page_Load(object sender, EventArgs e) {
+                // store chart config name-config value pair
+
+                Dictionary < string, string > chartConfig = new Dictionary < string, string > ();
+                chartConfig.Add("caption", "Nordstorm\\'s Customer Satisfaction Score for 2017");
+                chartConfig.Add("lowerLimit", "0");
+                chartConfig.Add("upperLimit", "100");
+                chartConfig.Add("showValue", "1");
+                chartConfig.Add("numberSuffix", "%");
+                chartConfig.Add("theme", "fusion");
+                chartConfig.Add("showToolTip", "0");
+
+                List < ColorRange > color = new List < ColorRange > ();
+                color.Add(new ColorRange(0, 50, "#F2726F"));
+                color.Add(new ColorRange(50, 75, "#FFC533"));
+                color.Add(new ColorRange(75, 100, "#62B58F"));
+
+                //store dial configuration
+
+                var dial = new List < KeyValuePair < string,
+                    string >> ();
+                dial.Add(new KeyValuePair < string, string > ("value", "81"));
+
+                // json data to use as chart data source
+                StringBuilder jsonData = new StringBuilder();
+                //build chart config object
+                jsonData.Append("{'chart':{");
+                foreach(var config in chartConfig) {
+                    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
+                }
+                jsonData.Replace(",", "},", jsonData.Length - 1, 1);
+
+                StringBuilder range = new StringBuilder();
+                //build colorRange object
+                range.Append("'colorRange':{");
+                range.Append("'color':[");
+                foreach(ColorRange clr in color) {
+                    range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode);
+                }
+                range.Replace(",", "]},", range.Length - 1, 1);
+                //build dials object
+                StringBuilder dials = new StringBuilder();
+                dials.Append("'dials':{");
+                dials.Append("'dial':[");
+                foreach(var dialCnf in dial) {
+                    dials.AppendFormat("{{'{0}':'{1}'}},", dialCnf.Key, dialCnf.Value);
+                }
+                dials.Replace(",", "]}", dials.Length - 1, 1);
+
+                jsonData.Append(range.ToString());
+                jsonData.Append(dials.ToString());
+                jsonData.Append("}");
+
+                //Create gauge instance
+                // charttype, chartID, width, height, data format, data
+
+                Chart gauge = new Chart("angulargauge", "first_gauge", "400", "350", "json", jsonData.ToString());
+                //render gauge
                 Literal1.Text = gauge.Render();
 
-            }
 
+
+            }
         }
     }
 </code></pre>
@@ -596,13 +1015,112 @@ The full code for the above sample is given below:
 <div><strong>.aspx.vb</strong></div>
 <pre><code class="custom-hlc language-javascript">
     Imports FusionCharts.Charts
-    Partial Class index
-    Inherits System.Web.UI.Page
-    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    Dim DataSource As String
-    DataSource = "{    'chart': {        'caption': 'Nordstorm\'s Customer Satisfaction Score for 2017',        'lowerLimit': '0',        'upperLimit': '100',        'showValue': '1',        'numberSuffix': '%',        'theme': 'fusion',        'showToolTip': '0'    },    'colorRange': {        'color': [            {                'minValue': '0',                'maxValue': '50',                'code': '#F2726F'            },            {                'minValue': '50',                'maxValue': '75',                'code': '#FFC533'            },            {                'minValue': '75',                'maxValue': '100',                'code': '#62B58F'            }        ]    },    'dials': {        'dial': [            {                'value': '81'            }        ]    }}"
-    Dim chart As New Chart("angulargauge", "mygauge", "600", "350", "json", DataSource)
-    Literal1.Text = chart.Render()
+
+    Partial Class gauge
+    Inherits System.Web.UI.Page 'Create colorRange class
+    'It will store Min range Max range And specific color code for each range
+    Class ColorRange
+    Private lowerLimit As Integer
+    Private upprLimit As Integer
+    Private code As String
+        'lower value of range set as property
+    Property Min() As Integer
+    Get
+    Return lowerLimit
+
+    End Get
+    Set(value As Integer)
+    lowerLimit = value
+    End Set
+    End Property
+        'upper value of range set as property
+    Property Max() As Integer
+    Get
+    Return upprLimit
+
+    End Get
+    Set(value As Integer)
+    upprLimit = value
+    End Set
+    End Property
+        ' specific color code for this range
+    Property ColorCode() As String
+    Get
+    Return code
+
+    End Get
+    Set(value As String)
+    code = value
+    End Set
+    End Property
+        'constructor
+    Public Sub New(ByVal lowerLimit As Integer, ByVal upperLimit As Integer, ByVal code As String)
+    Min = lowerLimit
+    Max = upperLimit
+    ColorCode = code
+    End Sub
+
+    End Class
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load 'store chart config name-config value pair
+
+    Dim chartConfig As New Dictionary(Of String, String)
+    chartConfig.Add("caption", "Nordstorm\'s Customer Satisfaction Score for 2017")
+    chartConfig.Add("lowerLimit", "0")
+    chartConfig.Add("upperLimit", "100")
+    chartConfig.Add("showValue", "1")
+    chartConfig.Add("numberSuffix", "%")
+    chartConfig.Add("theme", "fusion")
+    chartConfig.Add("showToolTip", "0")
+
+    Dim color As New List(Of ColorRange)
+    color.Add(New ColorRange(0, 50, "#F2726F"))
+    color.Add(New ColorRange(50, 75, "#FFC533"))
+    color.Add(New ColorRange(75, 100, "#62B58F"))
+
+    'store dial configuration
+
+    Dim dial As New Dictionary(Of String, String)
+    dial.Add("value", "81")
+    'json data to use as chart data source
+    Dim jsonData As New StringBuilder
+        'build chart config object
+    jsonData.Append("{'chart':{")
+
+    For Each config In chartConfig
+    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value)
+    Next
+
+    jsonData.Replace(",", "},", jsonData.Length - 1, 1)
+
+    Dim range As New StringBuilder
+        'build colorRange object
+    range.Append("'colorRange':{")
+    range.Append("'color':[")
+    For Each clr In color
+
+    range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode)
+    Next
+    range.Replace(",", "]},", range.Length - 1, 1)
+    'build dials object
+    Dim dials As New StringBuilder
+    dials.Append("'dials':{")
+    dials.Append("'dial':[")
+    For Each dialCnf In dial
+
+    dials.AppendFormat("{{'{0}':'{1}'}},", dialCnf.Key, dialCnf.Value)
+    Next
+    dials.Replace(",", "]}", dials.Length - 1, 1)
+
+    jsonData.Append(range.ToString())
+    jsonData.Append(dials.ToString())
+    jsonData.Append("}")
+
+    'Create gauge instance
+    'charttype, chartID, width, height, data format, data
+
+    Dim gauge As New Chart("angulargauge", "first_gauge", "400", "350", "json", jsonData.ToString())
+    'render gauge
+    Literal1.Text = gauge.Render()
     End Sub
     End Class
 </code></pre>
@@ -654,13 +1172,114 @@ The code to render a chart using `.aspx.cs` or `.aspx.vb` file is given below:
     using FusionCharts.Charts;
     ...
     ...
+    //Create colorRange class
+    //It will store Min range Max range and specific color code for each range
 
-    // Initialize map
-    // map, mapID, width, height, data format, data
+    class colorRange {
+        public double Min {
+            get;
+            set;
+        }
+        public double Max {
+            get;
+            set;
+        }
+        public string ColorCode {
+            get;
+            set;
+        }
 
-    Chart maps = new Chart("world", "myChart", "800", "550", "json", DataSource);
-    // Render the map
-    Literal1.Text = maps.Render();
+        public colorRange(double min, double max, string code) {
+            Min = min;
+            Max = max;
+            ColorCode = code;
+        }
+    }
+    //Create countryData class
+    //It will store id, value and show label for each country
+
+    class countryData {
+        public string ID {
+            get;
+            set;
+        }
+        public double Value {
+            get;
+            set;
+        }
+        public int ShowLabel {
+            get;
+            set;
+        }
+
+        public countryData(string id, double value, int showLabel) {
+            ID = id;
+            Value = value;
+            ShowLabel = showLabel;
+
+        }
+
+    }
+
+    // store chart config name-config value pair
+    Dictionary < string, string > chartConfig = new Dictionary < string, string > ();
+    chartConfig.Add("caption", "Average Annual Population Growth");
+    chartConfig.Add("subCaption", " 1955-2015");
+    chartConfig.Add("includevalueinlabels", "1");
+    chartConfig.Add("labelsepchar", ": ");
+    chartConfig.Add("numberSuffix", "%");
+    chartConfig.Add("entityFillHoverColor", "#FFF9C4");
+    chartConfig.Add("theme", "fusion");
+
+    // store color code for different range
+    List < colorRange > color = new List < colorRange > ();
+    color.Add(new colorRange(0.5, 1.0, "#FFD74D"));
+    color.Add(new colorRange(1.0, 2.0, "#FB8C00"));
+    color.Add(new colorRange(2.0, 3.0, "#E65100"));
+
+    // store country data
+    List < countryData > countries = new List < countryData > ();
+    countries.Add(new countryData("NA", .82, 1));
+    countries.Add(new countryData("SA", 2.04, 1));
+    countries.Add(new countryData("AS", 1.78, 1));
+    countries.Add(new countryData("EU", .40, 1));
+    countries.Add(new countryData("AF", 2.58, 1));
+    countries.Add(new countryData("AU", 1.30, 1));
+
+    // json data to use as chart data source
+    StringBuilder jsonData = new StringBuilder();
+    //build chart config object
+    jsonData.Append("{'chart':{");
+    foreach(var config in chartConfig) {
+        jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
+    }
+    jsonData.Replace(",", "},", jsonData.Length - 1, 1);
+
+    StringBuilder range = new StringBuilder();
+    //build colorRange object
+    range.Append("'colorRange':{");
+    range.Append("'color':[");
+    foreach(colorRange clr in color) {
+        range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode);
+    }
+    range.Replace(",", "]},", range.Length - 1, 1);
+
+    // build data object
+    StringBuilder data = new StringBuilder();
+    data.Append("'data':[");
+    foreach(countryData country in countries) {
+        data.AppendFormat("{{'id':'{0}','value':'{1}','showLabel':'{2}'}},", country.ID, country.Value, country.ShowLabel);
+    }
+    data.Replace(",", "]", data.Length - 1, 1);
+    jsonData.Append(range);
+    jsonData.Append(data);
+    jsonData.Append("}");
+    //Create map instance
+    // map type, mapid, width, height, data format, data
+
+    Chart map = new Chart("world", "first_map", "800", "500", "json", jsonData.ToString());
+    //render map
+    Literal1.Text = map.Render();
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -670,13 +1289,159 @@ The code to render a chart using `.aspx.cs` or `.aspx.vb` file is given below:
     'Import fusioncharts reference in page
     ...
     Imports FusionCharts.Charts
-    ...
-    ...
+        ...
+        ...
 
-    ' Initialize map
-    ' map, mapID, width, height, data format, data
-    Dim map As New Chart("usa", "myChart", "600", "350", "json", DataSource)
-    ' Render the map
+        'Create colorRange class
+    'It will store Min range Max range And specific color code for each range
+    Class ColorRange
+    Private lowerLimit As Double
+
+    Private upprLimit As Double
+    Private code As String
+        'lower value of range set as property
+    Property Min() As Double
+    Get
+    Return lowerLimit
+
+    End Get
+    Set(value As Double)
+    lowerLimit = value
+    End Set
+    End Property
+        'upper value of range set as property
+    Property Max() As Double
+    Get
+    Return upprLimit
+
+    End Get
+    Set(value As Double)
+    upprLimit = value
+    End Set
+    End Property
+        ' specific color code for this range
+    Property ColorCode() As String
+    Get
+    Return code
+
+    End Get
+    Set(value As String)
+    code = value
+    End Set
+    End Property
+        'constructor
+    Public Sub New(ByVal lowerLimit As Double, ByVal upperLimit As Double, ByVal code As String)
+    Min = lowerLimit
+    Max = upperLimit
+    ColorCode = code
+    End Sub
+
+    End Class
+        'Create countryData class
+    'It will store id, value And show label for each country
+    Class CountryData
+    Private cid As String
+    Private cvalue As Double
+    Private label As Integer
+        'country id set as a property
+    Property ID() As String
+    Get
+    Return cid
+
+    End Get
+    Set(value As String)
+    cid = value
+    End Set
+    End Property
+        'data value for a country set as property
+    Property Value() As Double
+    Get
+    Return cvalue
+
+    End Get
+    Set(value As Double)
+    cvalue = value
+    End Set
+    End Property
+        ' whether show label or not
+    Property ShowLabel() As Integer
+    Get
+    Return label
+
+    End Get
+    Set(value As Integer)
+    label = value
+    End Set
+    End Property
+        'constructor
+    Public Sub New(ByVal cntryid As String, ByVal val As Double, ByVal lbl As Integer)
+    ID = cntryid
+    Value = val
+    ShowLabel = lbl
+    End Sub
+
+    End Class
+        ' store chart config name-config value pair
+    Dim chartConfig As New Dictionary(Of String, String)
+    chartConfig.Add("caption", "Average Annual Population Growth")
+    chartConfig.Add("subCaption", " 1955-2015")
+    chartConfig.Add("includevalueinlabels", "1")
+    chartConfig.Add("labelsepchar", ": ")
+    chartConfig.Add("numberSuffix", "%")
+    chartConfig.Add("entityFillHoverColor", "#FFF9C4")
+    chartConfig.Add("theme", "fusion")
+
+    'store color code for different range
+    Dim color As New List(Of ColorRange)
+    color.Add(New ColorRange(0.5, 1.0, "#FFD74D"))
+    color.Add(New ColorRange(1.0, 2.0, "#FB8C00"))
+    color.Add(New ColorRange(2.0, 3.0, "#E65100"))
+
+    'store country data
+    Dim countries As New List(Of CountryData)
+    countries.Add(New CountryData("NA", 0.82, 1))
+    countries.Add(New CountryData("SA", 2.04, 1))
+    countries.Add(New CountryData("AS", 1.78, 1))
+    countries.Add(New CountryData("EU", 0.4, 1))
+    countries.Add(New CountryData("AF", 2.58, 1))
+    countries.Add(New CountryData("AU", 1.3, 1))
+
+    'json data to use as chart data source
+    Dim jsonData As New StringBuilder
+        'build chart config object
+    jsonData.Append("{'chart':{")
+    For Each config In chartConfig
+
+    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value)
+    Next
+    jsonData.Replace(",", "},", jsonData.Length - 1, 1)
+
+    Dim range As New StringBuilder
+        'build colorRange object
+    range.Append("'colorRange':{")
+    range.Append("'color':[")
+    For Each clr In color
+
+    range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode)
+    Next
+    range.Replace(",", "]},", range.Length - 1, 1)
+
+    'build data object
+    Dim data As New StringBuilder
+    data.Append("'data':[")
+    For Each country In countries
+
+    data.AppendFormat("{{'id':'{0}','value':'{1}','showLabel':'{2}'}},", country.ID, country.Value, country.ShowLabel)
+    Next
+    data.Replace(",", "]", data.Length - 1, 1)
+    jsonData.Append(range)
+    jsonData.Append(data)
+    jsonData.Append("}")
+    'Create map instance
+    'map type, mapid, width, height, data format, data
+
+    Dim map As New Chart("world", "first_map", "800", "500", "json", jsonData.ToString())
+    'render map
     Literal1.Text = map.Render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -750,19 +1515,120 @@ The full code for the above sample is given below:
 <div><strong>.aspx.cs</strong></div>
 <pre><code class="custom-hlc language-javascript">
     using System;
+    using System.Collections.Generic;
+    using System.Text;
     using FusionCharts.Charts;
-
     namespace asp_test {
-        public partial class index: System.Web.UI.Page {
-            protected void Page_Load(object sender, EventArgs e) {
+        public partial class map: System.Web.UI.Page {
+            //Create colorRange class
+            //It will store Min range Max range and specific color code for each range
 
-                String DataSource;
-                DataSource = "{    'chart': {        'caption': 'Average Annual Population Growth',        'subcaption': ' 1955-2015',        'numbersuffix': '%',        'includevalueinlabels': '1',        'labelsepchar': ': ',        'entityFillHoverColor': '#FFF9C4',        'theme': 'fusion'    },    'colorrange': {        'minvalue': '0',        'code': '#FFE0B2',        'gradient': '1',        'color': [            {                'minvalue': '0.5',                'maxvalue': '1.0',                'color': '#FFD74D'            },            {                'minvalue': '1.0',                'maxvalue': '2.0',                'color': '#FB8C00'            },            {                'minvalue': '2.0',                'maxvalue': '3.0',                'color': '#E65100'            }        ]    },    'data': [        {            'id': 'NA',            'value': '.82',            'showLabel': '1',            'link': 'newchart-json-NAM'        },        {            'id': 'SA',            'value': '2.04',            'showLabel': '1',            'link': 'newchart-json-SAM'        },        {            'id': 'AS',            'value': '1.78',            'showLabel': '1',            'link': 'newchart-json-ASI'        },        {            'id': 'EU',            'value': '.40',            'showLabel': '1',            'link': 'newchart-json-EUP'        },        {            'id': 'AF',            'value': '2.58',            'showLabel': '1',            'link': 'newchart-json-AFC'        },        {            'id': 'AU',            'value': '1.30',            'showLabel': '1',            'link': 'newchart-json-AUS'        }    ],    'linkeddata': [        {            'id': 'NAM',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - North America',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'paletteColors': 'FFD74D',                    'theme': 'hulk-light'                },                'data': [                    {                        'label': '1955',                        'value': '1.5078'                    },                    {                        'label': '1960',                        'value': '1.5502'                    },                    {                        'label': '1965',                        'value': '1.3121'                    },                    {                        'label': '1970',                        'value': '0.8648'                    },                    {                        'label': '1975',                        'value': '0.6402'                    },                    {                        'label': '1980',                        'value': '0.62'                    },                    {                        'label': '1985',                        'value': '0.6748'                    },                    {                        'label': '1990',                        'value': '0.6882'                    },                    {                        'label': '1995',                        'value': '0.6804'                    },                    {                        'label': '2000',                        'value': '0.5627'                    },                    {                        'label': '2005',                        'value': '0.5373'                    },                    {                        'label': '2010',                        'value': '0.5536'                    },                    {                        'label': '2015',                        'value': '0.4291'                    }                ]            }        },        {            'id': 'SAM',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - South America',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'paletteColors': 'E65100',                    'theme': 'hulk-light'                },                'data': [                    {                        'label': '1955',                        'value': '2.6275'                    },                    {                        'label': '1960',                        'value': '2.6995'                    },                    {                        'label': '1965',                        'value': '2.757'                    },                    {                        'label': '1970',                        'value': '2.5376'                    },                    {                        'label': '1975',                        'value': '2.3431'                    },                    {                        'label': '1980',                        'value': '2.3261'                    },                    {                        'label': '1985',                        'value': '2.2036'                    },                    {                        'label': '1990',                        'value': '1.9611'                    },                    {                        'label': '1995',                        'value': '1.7184'                    },                    {                        'label': '2000',                        'value': '1.5965'                    },                    {                        'label': '2005',                        'value': '1.4482'                    },                    {                        'label': '2010',                        'value': '1.2031'                    },                    {                        'label': '2015',                        'value': '1.0698'                    }                ]            }        },        {            'id': 'ASI',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Asia',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FB8C00'                },                'data': [                    {                        'label': '1955',                        'value': '1.9075'                    },                    {                        'label': '1960',                        'value': '1.8842'                    },                    {                        'label': '1965',                        'value': '2.1082'                    },                    {                        'label': '1970',                        'value': '2.4554'                    },                    {                        'label': '1975',                        'value': '2.3036'                    },                    {                        'label': '1980',                        'value': '1.9889'                    },                    {                        'label': '1985',                        'value': '1.9683'                    },                    {                        'label': '1990',                        'value': '2.0176'                    },                    {                        'label': '1995',                        'value': '1.6823'                    },                    {                        'label': '2000',                        'value': '1.3682'                    },                    {                        'label': '2005',                        'value': '1.2435'                    },                    {                        'label': '2010',                        'value': '1.1661'                    },                    {                        'label': '2015',                        'value': '1.0731'                    }                ]            }        },        {            'id': 'EUP',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Europe',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FFE0B2'                },                'data': [                    {                        'label': '1955',                        'value': '1.026'                    },                    {                        'label': '1960',                        'value': '1.0652'                    },                    {                        'label': '1965',                        'value': '0.9381'                    },                    {                        'label': '1970',                        'value': '0.6925'                    },                    {                        'label': '1975',                        'value': '0.54'                    },                    {                        'label': '1980',                        'value': '0.4218'                    },                    {                        'label': '1985',                        'value': '0.354'                    },                    {                        'label': '1990',                        'value': '0.2971'                    },                    {                        'label': '1995',                        'value': '0.0276'                    },                    {                        'label': '2000',                        'value': '-0.1301'                    },                    {                        'label': '2005',                        'value': '-0.1558'                    },                    {                        'label': '2010',                        'value': '-0.0576'                    },                    {                        'label': '2015',                        'value': '-0.0292'                    }                ]            }        },        {            'id': 'AFC',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Africa',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'E65100'                },                'data': [                    {                        'label': '1955',                        'value': '2.1242'                    },                    {                        'label': '1960',                        'value': '2.338'                    },                    {                        'label': '1965',                        'value': '2.5075'                    },                    {                        'label': '1970',                        'value': '2.5947'                    },                    {                        'label': '1975',                        'value': '2.7175'                    },                    {                        'label': '1980',                        'value': '2.8398'                    },                    {                        'label': '1985',                        'value': '2.8857'                    },                    {                        'label': '1990',                        'value': '2.8243'                    },                    {                        'label': '1995',                        'value': '2.6172'                    },                    {                        'label': '2000',                        'value': '2.5072'                    },                    {                        'label': '2005',                        'value': '2.4853'                    },                    {                        'label': '2010',                        'value': '2.5593'                    },                    {                        'label': '2015',                        'value': '2.6001'                    }                ]            }        },        {            'id': 'AUS',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Oceania',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FB8C00'                },                'data': [                    {                        'label': '1955',                        'value': '1.511'                    },                    {                        'label': '1960',                        'value': '1.6045'                    },                    {                        'label': '1965',                        'value': '1.5578'                    },                    {                        'label': '1970',                        'value': '1.455'                    },                    {                        'label': '1975',                        'value': '1.4727'                    },                    {                        'label': '1980',                        'value': '1.2404'                    },                    {                        'label': '1985',                        'value': '1.2398'                    },                    {                        'label': '1990',                        'value': '1.1853'                    },                    {                        'label': '1995',                        'value': '1.2006'                    },                    {                        'label': '2000',                        'value': '1.1244'                    },                    {                        'label': '2005',                        'value': '1.0724'                    },                    {                        'label': '2010',                        'value': '1.1255'                    },                    {                        'label': '2015',                        'value': '1.0397'                    }                ]            }        }    ]}";
-                Chart map = new Chart("world", "mychart", "800", "550", "json", DataSource);
-                Literal1.Text = map.Render();
+            class ColorRange {
+                public double Min {
+                    get;
+                    set;
+                }
+                public double Max {
+                    get;
+                    set;
+                }
+                public string ColorCode {
+                    get;
+                    set;
+                }
+
+                public ColorRange(double min, double max, string code) {
+                    Min = min;
+                    Max = max;
+                    ColorCode = code;
+                }
+            }
+            //Create countryData class
+            //It will store id, value and show label for each country
+
+            class countryData {
+                public string ID {
+                    get;
+                    set;
+                }
+                public double Value {
+                    get;
+                    set;
+                }
+                public int ShowLabel {
+                    get;
+                    set;
+                }
+
+                public countryData(string id, double value, int showLabel) {
+                    ID = id;
+                    Value = value;
+                    ShowLabel = showLabel;
+
+                }
 
             }
+            protected void Page_Load(object sender, EventArgs e) {
+                // store chart config name-config value pair
+                Dictionary < string, string > chartConfig = new Dictionary < string, string > ();
+                chartConfig.Add("caption", "Average Annual Population Growth");
+                chartConfig.Add("subCaption", " 1955-2015");
+                chartConfig.Add("includevalueinlabels", "1");
+                chartConfig.Add("labelsepchar", ": ");
+                chartConfig.Add("numberSuffix", "%");
+                chartConfig.Add("entityFillHoverColor", "#FFF9C4");
+                chartConfig.Add("theme", "fusion");
 
+                // store color code for different range
+                List < ColorRange > color = new List < ColorRange > ();
+                color.Add(new ColorRange(0.5, 1.0, "#FFD74D"));
+                color.Add(new ColorRange(1.0, 2.0, "#FB8C00"));
+                color.Add(new ColorRange(2.0, 3.0, "#E65100"));
+
+                // store country data
+                List < countryData > countries = new List < countryData > ();
+                countries.Add(new countryData("NA", .82, 1));
+                countries.Add(new countryData("SA", 2.04, 1));
+                countries.Add(new countryData("AS", 1.78, 1));
+                countries.Add(new countryData("EU", .40, 1));
+                countries.Add(new countryData("AF", 2.58, 1));
+                countries.Add(new countryData("AU", 1.30, 1));
+
+                // json data to use as chart data source
+                StringBuilder jsonData = new StringBuilder();
+                //build chart config object
+                jsonData.Append("{'chart':{");
+                foreach(var config in chartConfig) {
+                    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
+                }
+                jsonData.Replace(",", "},", jsonData.Length - 1, 1);
+
+                StringBuilder range = new StringBuilder();
+                //build colorRange object
+                range.Append("'colorRange':{");
+                range.Append("'color':[");
+                foreach(ColorRange clr in color) {
+                    range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode);
+                }
+                range.Replace(",", "]},", range.Length - 1, 1);
+
+                // build data object
+                StringBuilder data = new StringBuilder();
+                data.Append("'data':[");
+                foreach(countryData country in countries) {
+                    data.AppendFormat("{{'id':'{0}','value':'{1}','showLabel':'{2}'}},", country.ID, country.Value, country.ShowLabel);
+                }
+                data.Replace(",", "]", data.Length - 1, 1);
+                jsonData.Append(range);
+                jsonData.Append(data);
+                jsonData.Append("}");
+                //Create map instance
+                // map type, mapid, width, height, data format, data
+
+                Chart map = new Chart("world", "first_map", "800", "500", "json", jsonData.ToString());
+                //render map
+                Literal1.Text = map.Render();
+            }
         }
     }
 </code></pre>
@@ -796,14 +1662,160 @@ The full code for the above sample is given below:
 <div><strong>.aspx.vb</strong></div>
 <pre><code class="custom-hlc language-javascript">
     Imports FusionCharts.Charts
-    Partial Class index
-    Inherits System.Web.UI.Page
-    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-    Dim DataSource As String
-    DataSource = "{    'chart': {        'caption': 'Average Annual Population Growth',        'subcaption': ' 1955-2015',        'numbersuffix': '%',        'includevalueinlabels': '1',        'labelsepchar': ': ',        'entityFillHoverColor': '#FFF9C4',        'theme': 'fusion'    },    'colorrange': {        'minvalue': '0',        'code': '#FFE0B2',        'gradient': '1',        'color': [            {                'minvalue': '0.5',                'maxvalue': '1.0',                'color': '#FFD74D'            },            {                'minvalue': '1.0',                'maxvalue': '2.0',                'color': '#FB8C00'            },            {                'minvalue': '2.0',                'maxvalue': '3.0',                'color': '#E65100'            }        ]    },    'data': [        {            'id': 'NA',            'value': '.82',            'showLabel': '1',            'link': 'newchart-json-NAM'        },        {            'id': 'SA',            'value': '2.04',            'showLabel': '1',            'link': 'newchart-json-SAM'        },        {            'id': 'AS',            'value': '1.78',            'showLabel': '1',            'link': 'newchart-json-ASI'        },        {            'id': 'EU',            'value': '.40',            'showLabel': '1',            'link': 'newchart-json-EUP'        },        {            'id': 'AF',            'value': '2.58',            'showLabel': '1',            'link': 'newchart-json-AFC'        },        {            'id': 'AU',            'value': '1.30',            'showLabel': '1',            'link': 'newchart-json-AUS'        }    ],    'linkeddata': [        {            'id': 'NAM',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - North America',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'paletteColors': 'FFD74D',                    'theme': 'hulk-light'                },                'data': [                    {                        'label': '1955',                        'value': '1.5078'                    },                    {                        'label': '1960',                        'value': '1.5502'                    },                    {                        'label': '1965',                        'value': '1.3121'                    },                    {                        'label': '1970',                        'value': '0.8648'                    },                    {                        'label': '1975',                        'value': '0.6402'                    },                    {                        'label': '1980',                        'value': '0.62'                    },                    {                        'label': '1985',                        'value': '0.6748'                    },                    {                        'label': '1990',                        'value': '0.6882'                    },                    {                        'label': '1995',                        'value': '0.6804'                    },                    {                        'label': '2000',                        'value': '0.5627'                    },                    {                        'label': '2005',                        'value': '0.5373'                    },                    {                        'label': '2010',                        'value': '0.5536'                    },                    {                        'label': '2015',                        'value': '0.4291'                    }                ]            }        },        {            'id': 'SAM',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - South America',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'paletteColors': 'E65100',                    'theme': 'hulk-light'                },                'data': [                    {                        'label': '1955',                        'value': '2.6275'                    },                    {                        'label': '1960',                        'value': '2.6995'                    },                    {                        'label': '1965',                        'value': '2.757'                    },                    {                        'label': '1970',                        'value': '2.5376'                    },                    {                        'label': '1975',                        'value': '2.3431'                    },                    {                        'label': '1980',                        'value': '2.3261'                    },                    {                        'label': '1985',                        'value': '2.2036'                    },                    {                        'label': '1990',                        'value': '1.9611'                    },                    {                        'label': '1995',                        'value': '1.7184'                    },                    {                        'label': '2000',                        'value': '1.5965'                    },                    {                        'label': '2005',                        'value': '1.4482'                    },                    {                        'label': '2010',                        'value': '1.2031'                    },                    {                        'label': '2015',                        'value': '1.0698'                    }                ]            }        },        {            'id': 'ASI',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Asia',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FB8C00'                },                'data': [                    {                        'label': '1955',                        'value': '1.9075'                    },                    {                        'label': '1960',                        'value': '1.8842'                    },                    {                        'label': '1965',                        'value': '2.1082'                    },                    {                        'label': '1970',                        'value': '2.4554'                    },                    {                        'label': '1975',                        'value': '2.3036'                    },                    {                        'label': '1980',                        'value': '1.9889'                    },                    {                        'label': '1985',                        'value': '1.9683'                    },                    {                        'label': '1990',                        'value': '2.0176'                    },                    {                        'label': '1995',                        'value': '1.6823'                    },                    {                        'label': '2000',                        'value': '1.3682'                    },                    {                        'label': '2005',                        'value': '1.2435'                    },                    {                        'label': '2010',                        'value': '1.1661'                    },                    {                        'label': '2015',                        'value': '1.0731'                    }                ]            }        },        {            'id': 'EUP',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Europe',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FFE0B2'                },                'data': [                    {                        'label': '1955',                        'value': '1.026'                    },                    {                        'label': '1960',                        'value': '1.0652'                    },                    {                        'label': '1965',                        'value': '0.9381'                    },                    {                        'label': '1970',                        'value': '0.6925'                    },                    {                        'label': '1975',                        'value': '0.54'                    },                    {                        'label': '1980',                        'value': '0.4218'                    },                    {                        'label': '1985',                        'value': '0.354'                    },                    {                        'label': '1990',                        'value': '0.2971'                    },                    {                        'label': '1995',                        'value': '0.0276'                    },                    {                        'label': '2000',                        'value': '-0.1301'                    },                    {                        'label': '2005',                        'value': '-0.1558'                    },                    {                        'label': '2010',                        'value': '-0.0576'                    },                    {                        'label': '2015',                        'value': '-0.0292'                    }                ]            }        },        {            'id': 'AFC',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Africa',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'E65100'                },                'data': [                    {                        'label': '1955',                        'value': '2.1242'                    },                    {                        'label': '1960',                        'value': '2.338'                    },                    {                        'label': '1965',                        'value': '2.5075'                    },                    {                        'label': '1970',                        'value': '2.5947'                    },                    {                        'label': '1975',                        'value': '2.7175'                    },                    {                        'label': '1980',                        'value': '2.8398'                    },                    {                        'label': '1985',                        'value': '2.8857'                    },                    {                        'label': '1990',                        'value': '2.8243'                    },                    {                        'label': '1995',                        'value': '2.6172'                    },                    {                        'label': '2000',                        'value': '2.5072'                    },                    {                        'label': '2005',                        'value': '2.4853'                    },                    {                        'label': '2010',                        'value': '2.5593'                    },                    {                        'label': '2015',                        'value': '2.6001'                    }                ]            }        },        {            'id': 'AUS',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Oceania',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FB8C00'                },                'data': [                    {                        'label': '1955',                        'value': '1.511'                    },                    {                        'label': '1960',                        'value': '1.6045'                    },                    {                        'label': '1965',                        'value': '1.5578'                    },                    {                        'label': '1970',                        'value': '1.455'                    },                    {                        'label': '1975',                        'value': '1.4727'                    },                    {                        'label': '1980',                        'value': '1.2404'                    },                    {                        'label': '1985',                        'value': '1.2398'                    },                    {                        'label': '1990',                        'value': '1.1853'                    },                    {                        'label': '1995',                        'value': '1.2006'                    },                    {                        'label': '2000',                        'value': '1.1244'                    },                    {                        'label': '2005',                        'value': '1.0724'                    },                    {                        'label': '2010',                        'value': '1.1255'                    },                    {                        'label': '2015',                        'value': '1.0397'                    }                ]            }        }    ]}"
-    Dim chart As New Chart("world", "myChart", "600", "350", "json", DataSource)
-    Literal1.Text = chart.Render()
+    Partial Class map
+    Inherits System.Web.UI.Page 'Create colorRange class
+    'It will store Min range Max range And specific color code for each range
+    Class ColorRange
+    Private lowerLimit As Double
+
+    Private upprLimit As Double
+    Private code As String
+        'lower value of range set as property
+    Property Min() As Double
+    Get
+    Return lowerLimit
+
+    End Get
+    Set(value As Double)
+    lowerLimit = value
+    End Set
+    End Property
+        'upper value of range set as property
+    Property Max() As Double
+    Get
+    Return upprLimit
+
+    End Get
+    Set(value As Double)
+    upprLimit = value
+    End Set
+    End Property
+        ' specific color code for this range
+    Property ColorCode() As String
+    Get
+    Return code
+
+    End Get
+    Set(value As String)
+    code = value
+    End Set
+    End Property
+        'constructor
+    Public Sub New(ByVal lowerLimit As Double, ByVal upperLimit As Double, ByVal code As String)
+    Min = lowerLimit
+    Max = upperLimit
+    ColorCode = code
     End Sub
+
+    End Class
+        'Create countryData class
+    'It will store id, value And show label for each country
+    Class CountryData
+    Private cid As String
+    Private cvalue As Double
+    Private label As Integer
+        'country id set as a property
+    Property ID() As String
+    Get
+    Return cid
+
+    End Get
+    Set(value As String)
+    cid = value
+    End Set
+    End Property
+        'data value for a country set as property
+    Property Value() As Double
+    Get
+    Return cvalue
+
+    End Get
+    Set(value As Double)
+    cvalue = value
+    End Set
+    End Property
+        ' whether show label or not
+    Property ShowLabel() As Integer
+    Get
+    Return label
+
+    End Get
+    Set(value As Integer)
+    label = value
+    End Set
+    End Property
+        'constructor
+    Public Sub New(ByVal cntryid As String, ByVal val As Double, ByVal lbl As Integer)
+    ID = cntryid
+    Value = val
+    ShowLabel = lbl
+    End Sub
+
+    End Class
+    Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load ' store chart config name-config value pair
+    Dim chartConfig As New Dictionary(Of String, String)
+    chartConfig.Add("caption", "Average Annual Population Growth")
+    chartConfig.Add("subCaption", " 1955-2015")
+    chartConfig.Add("includevalueinlabels", "1")
+    chartConfig.Add("labelsepchar", ": ")
+    chartConfig.Add("numberSuffix", "%")
+    chartConfig.Add("entityFillHoverColor", "#FFF9C4")
+    chartConfig.Add("theme", "fusion")
+
+    'store color code for different range
+    Dim color As New List(Of ColorRange)
+    color.Add(New ColorRange(0.5, 1.0, "#FFD74D"))
+    color.Add(New ColorRange(1.0, 2.0, "#FB8C00"))
+    color.Add(New ColorRange(2.0, 3.0, "#E65100"))
+
+    'store country data
+    Dim countries As New List(Of CountryData)
+    countries.Add(New CountryData("NA", 0.82, 1))
+    countries.Add(New CountryData("SA", 2.04, 1))
+    countries.Add(New CountryData("AS", 1.78, 1))
+    countries.Add(New CountryData("EU", 0.4, 1))
+    countries.Add(New CountryData("AF", 2.58, 1))
+    countries.Add(New CountryData("AU", 1.3, 1))
+
+    'json data to use as chart data source
+    Dim jsonData As New StringBuilder
+        'build chart config object
+    jsonData.Append("{'chart':{")
+    For Each config In chartConfig
+
+    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value)
+    Next
+    jsonData.Replace(",", "},", jsonData.Length - 1, 1)
+
+    Dim range As New StringBuilder
+        'build colorRange object
+    range.Append("'colorRange':{")
+    range.Append("'color':[")
+    For Each clr In color
+
+    range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode)
+    Next
+    range.Replace(",", "]},", range.Length - 1, 1)
+
+    'build data object
+    Dim data As New StringBuilder
+    data.Append("'data':[")
+    For Each country In countries
+
+    data.AppendFormat("{{'id':'{0}','value':'{1}','showLabel':'{2}'}},", country.ID, country.Value, country.ShowLabel)
+    Next
+    data.Replace(",", "]", data.Length - 1, 1)
+    jsonData.Append(range)
+    jsonData.Append(data)
+    jsonData.Append("}")
+    'Create map instance
+    'map type, mapid, width, height, data format, data
+
+    Dim map As New Chart("world", "first_map", "800", "500", "json", jsonData.ToString())
+    'render map
+    Literal1.Text = map.Render()
+    End Sub
+
     End Class
 </code></pre>
 </div>
