@@ -369,8 +369,7 @@ The code to render the chart is given below:
 The full code for the above sample is given below:
 
 ```jsp
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@page import="java.util.*" %>
 <%@page import="fusioncharts.FusionCharts" %>
 <%!
@@ -625,8 +624,7 @@ FusionCharts map = new FusionCharts(
 The full code for the above sample is given below:
 
 ```jsp
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@page import="java.util.*" %>
 <%@page import="fusioncharts.FusionCharts" %>
 <%!
