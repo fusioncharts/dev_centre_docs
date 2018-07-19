@@ -78,21 +78,20 @@ The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 <div class='tab-content'>
 <div class='tab json-tab active'>
 <pre><code class="custom-hlc language-cs">
-     //Create chart instance
-    // charttype, chartID, width, height, data format, data
-
-    Chart MyFirstChart = new Chart("column2d", "MyFirstChart", "800", "550", "json", jsonData.ToString());
-    Literal1.Text = MyFirstChart.Render();
+//Create chart instance
+// charttype, chartID, width, height, data format, data
+Chart MyFirstChart = new Chart("column2d", "MyFirstChart", "600", "400", "json", jsonData.ToString());
+Literal1.Text = MyFirstChart.Render();
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab xml-tab'>
 <pre><code class="custom-hlc language-cv">
-    ' Create chart instance
-    ' charttype, chartID, width, height, data format, data
-    Dim MyFirstChart As New Chart("column2d", "first_chart", "600", "350", "json", jsonData.ToString())
-    Literal1.Text = MyFirstChart.Render()
+' Create chart instance
+' charttype, chartID, width, height, data format, data
+Dim MyFirstChart As New Chart("column2d", "first_chart", "600", "350", "json", jsonData.ToString())
+Literal1.Text = MyFirstChart.Render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -106,7 +105,7 @@ In the above code:
 * To specify the data format as JSON/XML, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON/XML data is embedded as the value of the `dataSource` parameter.
 
-The full code for the above sample is given below:
+The full code and the common aspx template for the above sample is given below:
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
@@ -115,7 +114,7 @@ The full code for the above sample is given below:
 </ul>
 <div class="tab-content extra-tabs">
 <div class="tab csharp-tab active">
-<div><strong>.aspx</strong></div>
+<div><strong>.aspx (template)</strong></div>
 <pre><code class="custom-hlc language-javascript">
     &lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="asp_test.index" %&gt;
 
@@ -138,7 +137,7 @@ The full code for the above sample is given below:
     &lt;/html&gt;
 </code></pre>
 </br>
-<div><strong>.aspx.cs</strong></div>
+<div><strong>.aspx.cs (full code)</strong></div>
 <pre><code class="custom-hlc language-javascript">
     using System;
     using System.Collections.Generic;
