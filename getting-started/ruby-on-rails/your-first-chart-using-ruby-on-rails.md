@@ -74,7 +74,7 @@ For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attri
 
 In this step, we will create an instance of the chart type as `column2d` using FusionCharts class constructor, set the width and height (in pixels or %), and finally specify the data for the chart as JSON string format.
 
-The `fc_json` action is defined to create the column 2D chart
+The `firstchart` action is defined to create the column 2D chart
 
 The code of the instance of the chart is given below:
 
@@ -176,7 +176,6 @@ The HTML template of the above sample is shown below:
 
 ```HTML
 <!-- Filename: app/views/examples/firstchart.html.erb -->
-
 <h3>My Chart</h3>
 <div id="chartContainer"></div>
 <%=@myChart.render() %>
@@ -212,11 +211,11 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 {% embed_data getting-started-your-first-widget.js %}
 
-### Create an instance of the chart
+### Create an instance of the gauge
 
 In this step, we will create an instance of the chart type as `angularGauge` using FusionCharts class constructor, set the width and height (in pixels or %), and finally specify the data for the chart as JSON string format.
 
-For this example, we have created a controller named `examples` and view named `firstchart`. To keep things simple we have placed all the chart rendering logics in the `examples` controller only.
+For this example, we have created a controller named `examples` and view named `firstwidget`. To keep things simple we have placed all the chart rendering logics in the `examples` controller only.
 
 > The example controller we created is `app/controllers/examples_controller.rb`.
 
@@ -332,7 +331,6 @@ The template of the above sample is shown below:
 
 ```HTML
 <<!-- Filename: app/views/examples/firstwidget.html.erb -->
-
 <h3>My Widget</h3>
 <div id="widgetContainer"></div>
 <%=@myWidget.render() %>
@@ -367,7 +365,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 In this step, we will create an instance of the chart type as `world` using FusionCharts class constructor, set the width and height (in pixels or %), and finally specify the data for the chart as JSON string format.
 
-For this example, we have created a controller named `examples` and view named `firstchart`. To keep things simple we have placed all the chart rendering logics in the `examples` controller only.
+For this example, we have created a controller named `examples` and view named `firstmap`. To keep things simple we have placed all the chart rendering logics in the `examples` controller only.
 
 > The example controller we created is `app/controllers/examples_controller.rb`.
 
@@ -488,10 +486,7 @@ end
 The template of the above sample is shown below:
 
 ```HTML
-<!-- Filename: `app/views/examples/fc_json.html.erb` -->
-<!-- **Step 3:** Render the chart**  **-->
 <!-- Filename: app/views/examples/firstwidget.html.erb -->
-
 <h3>My Map</h3>
 <div id="mapContainer"></div>
 <%=@myMap.render() %>
