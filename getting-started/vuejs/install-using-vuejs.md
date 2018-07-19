@@ -19,8 +19,8 @@ In this article, we will show you how you can download and install the `Vue-Fusi
 
 <table>
     <tr>
-        <td align="center">[NPM]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-fusioncharts-via-npm-5)</td>
-        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-using-direct-javascript-files-2)</td>
+        <td align="center">[NPM]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-fusioncharts-via-npm-2)</td>
+        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-using-direct-javascript-files-8)</td>
     </tr>
 </table>
 
@@ -281,8 +281,9 @@ FusionCharts.addDep(fusion). (fusion - reference from above)
 In order to install and start working with Vue-FusionCharts you need to:
 
 * [Download](https://vuejs.org/v2/guide/installation.html) the `Vue core library`.
-* [Download](https://www.fusioncharts.com/vue-fusioncharts/) the Vue-FusionCharts plugin which contains the `vue-fusioncharts.js` file.
-* [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files.
+* [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files and the `vue-fusioncharts` plugin folder.
+
+> Post version 3.13.0, `vuejs` plugin is provided in the download package. Look for the `vue` folder under **fusioncharts-suite-xt/integrations/frontend-plugins** in downloaded package.
 
 Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. The folder structure is shown below:
 
