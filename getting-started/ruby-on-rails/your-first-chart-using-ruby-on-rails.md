@@ -16,7 +16,9 @@ Before going through this article, please [install]({% site.baseurl %}/getting-s
 
 In this section, we will create a chart using `FusionCharts Rails` server-side wrapper. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'). To create a column 2D chart, we need the chart data to be passed in JSON string format.
 
-> The default name of the file is `app/controllers/examples_controller.rb`.
+For this example and to keep it simple, we have created a controller named 'examples' and view named 'firstchart' and keeping all chart rendering logic in 'examples' controller only, this will help us to understand it better.
+
+> The example controller we created is `app/controllers/examples_controller.rb`.
 
 Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
 
@@ -76,14 +78,14 @@ The `fc_json` action is defined to create the column 2D chart
 
 The code of the instance of the chart is given below:
 
-```javascript
-chart = Fusioncharts::Chart.new({
-    width: "700",
+```chart = Fusioncharts::Chart.new({
+    width: "600",
     height: "400",
     type: "column2d",
     renderAt: "chartContainer",
     dataSource: chartJSONDataStr
 })
+
 ```
 
 In the above code:
@@ -95,7 +97,13 @@ In the above code:
 The full code for the above sample is:
 
 ```
-// Chart appearance configuration
+#
+Filename: app / controllers / examples_controller.rb
+class ExamplesController < ApplicationController
+
+def getChart
+
+# Chart appearance configuration
 chartAppearancesConfigObj = Hash.new
 chartAppearancesConfigObj = {
     "caption" => "Countries With Most Oil Reserves [2017-18]",
@@ -105,47 +113,85 @@ chartAppearancesConfigObj = {
     "numberSuffix" => "K",
     "theme" => "fusion"
 }
-      
-// An array of hash objects which stores data
-chartDataObj = [
-    {"Venezuela" => "290"},
-    {"Saudi" => "260"},
-    {"Canada" => "180"},
-    {"Iran" => "140"},
-    {"Russia" => "115"},
-    {"UAE" => "100"},
-    {"US" => "30"},
-    {"China" => "30"}
+
+#
+An array of hash objects which stores data
+chartDataObj = [{
+        "Venezuela" => "290"
+    },
+    {
+        "Saudi" => "260"
+    },
+    {
+        "Canada" => "180"
+    },
+    {
+        "Iran" => "140"
+    },
+    {
+        "Russia" => "115"
+    },
+    {
+        "UAE" => "100"
+    },
+    {
+        "US" => "30"
+    },
+    {
+        "China" => "30"
+    }
 ]
-      
-// Chart data template to store data in "Label" & "Value" format
+
+# Chart data template to store data in "Label" & "Value"
+format
 labelValueTemplate = "{ \"label\": \"%s\", \"value\": \"%s\" },"
-      
-// Chart data as JSON string
+
+#
+Chart data as JSON string
 labelValueJSONStr = ""
-chartDataObj.each {|item|
-    data = labelValueTemplate % [item.keys[0], item[item.keys[0]]]
+
+chartDataObj.each { | item |
+        data = labelValueTemplate % [item.keys[0], item[item.keys[0]]]
     labelValueJSONStr.concat(data)
 }
 
-// Removing trailing comma character
+#
+Removing trailing comma character
 labelValueJSONStr = labelValueJSONStr.chop
 
-// Chart JSON data template
+# Chart JSON data template
 chartJSONDataTemplate = "{ \"chart\": %s, \"data\": [%s] }"
 
-// Final Chart JSON data from template
+#
+Final Chart JSON data from template
 chartJSONDataStr = chartJSONDataTemplate % [chartAppearancesConfigObj.to_json, labelValueJSONStr]
+
+# Chart rendering
+chart = Fusioncharts::Chart.new({
+    width: "600",
+    height: "400",
+    type: "column2d",
+    renderAt: "chartContainer",
+    dataSource: chartJSONDataStr
+})
+
+end
+
+def firstchart
+@myChart = getChart
+end
+
+end
 ```
 
 The template of the above sample is shown below:
 
 ```HTML
-<!-- Filename: `app/views/examples/fc_json.html.erb` -->
-<!-- **Step 2:** Render the chart**  **-->
+<!-- Filename: app/views/examples/firstchart.html.erb -->
+
 <h3>My Chart</h3>
 <div id="chartContainer"></div>
-<%= @first_chart.render() %>
+<%=@myChart.render() %>
 ```
 
 That's it! When you run this HTML page now, you should see a chart representing your data.
