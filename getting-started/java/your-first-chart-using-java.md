@@ -6,7 +6,7 @@ heading: Your First Chart in Java using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the FusionCharts JSP wrapper that lets you create interactive, data-driven charts.
+FusionCharts Suite XT includes the **FusionCharts JSP** wrapper that lets you create interactive, data-driven charts.
 
 JavaScript and HTML code is used to generate charts in the browsers. The server-side JSP wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-map-10).
 
@@ -50,7 +50,7 @@ Both the `chart` object and the `data` array contains a set of key-value pairs k
 
 #### Functional Attributes
 
-Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties. The list of functional attributes used in the above code are:
+Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or, data values. You can also set chart limits and extended properties. The list of functional attributes used in the above code are:
 
 * `showLabels` sets the  configuration whether the x-axis labels will be displayed or not.
 * `showValue` sets the configuration whether data values will be displayed along with the data plot on chart.
@@ -60,7 +60,7 @@ Functional attributes let you control a variety of functional elements on the ch
 * `numberPrefix` adds prefix to all the numbers visible on the chart.
 * Please note, we have used the `theme` attribute in the chart's data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 
-#### Cosmetics Attributes
+#### Cosmetic Attributes
 
 Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click here.
 
@@ -94,7 +94,7 @@ In the above code:
 * To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 
-Create a container using &lt;div&gt;, to render the chart.
+Create a container using &lt;div&gt; to render the chart.
 
 ```HTML
 <div id="chart"></div>
@@ -186,13 +186,13 @@ Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% sit
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
+Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
 
 To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-The thresholds for the above sample has been defined using the following range.
+The thresholds for the above sample have been defined using the following range.
 
 Range|Color|Hex Code|
 -|-|-
@@ -230,7 +230,7 @@ To create the instance of the chart follow the code below:
 <%= gauge.render() %>
 ```
 
-Create a container using &lt;div&gt;, to render the chart.
+Create a container using &lt;div&gt; to render the chart.
 
 ```HTML
 <div id="gauge"></div>
