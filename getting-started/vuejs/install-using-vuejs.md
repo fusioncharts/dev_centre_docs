@@ -1,6 +1,6 @@
 ---
 title: Installation | FusionCharts
-description: The Vue-FusionCharts component lets you include FusionCharts in your VueJS projects and add interactive JavaScript charts and graphs to your VueJS applications.
+description: The **Vue-FusionCharts** component lets you include FusionCharts in your VueJS projects and add interactive JavaScript charts and graphs to your VueJS applications.
 heading: Installation
 chartPresent: false
 ---
@@ -19,18 +19,18 @@ In this article, we will show you how you can download and install the `Vue-Fusi
 
 <table>
     <tr>
-        <td align="center">[NPM]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-fusioncharts-via-npm-2)</td>
-        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-using-direct-javascript-files-8)</td>
+        <td align="center">[npm]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-fusioncharts-via-npm-2)</td>
+        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-using-direct-JavaScript-files-8)</td>
     </tr>
 </table>
 
 ## Install FusionCharts via npm
 
-Now, let's discuss how to install the fusioncharts module via npm. The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
+Now, let's discuss how to install the fusioncharts module via npm. The FusionCharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
 
-This section outlines the steps to be executed for installing all the node modules via NPM and rendering charts using the Vue-FusionCharts component.
+This section outlines the steps to be executed for installing all the node modules via npm and rendering charts using the **Vue-FusionCharts** component.
 
-### Step 1: Install the fusioncharts module via npm
+### Step 1: Install the `fusioncharts` module via npm
 
 To install the `fusioncharts` module, execute the following command in the terminal:
 
@@ -70,7 +70,7 @@ To include the 'vue-fusioncharts' component, execute the following command:
 import VueFusionCharts from 'vue-fusioncharts';
 ```
 
-To include the fusioncharts class, execute the following command:
+To include the `fusioncharts` class, execute the following command:
 
 ```Shell
 import FusionCharts from 'fusioncharts/core';
@@ -92,9 +92,9 @@ FusionCharts.addDep(Charts);
 
 **Include only specific chart modules:**
 
-To register using a specific chart type, import the specific chart instead of all the charts after importing the fusioncharts class. Also, you need to add the dependency for the specific chart type as shown in the code below:
+To register using a specific chart type, import the specific chart instead of all the charts after importing the `fusioncharts` class. Also, you need to add dependencies for the specific chart type as shown in the code below:
 
-To include the fusioncharts class, execute the following command:
+To include the `fusioncharts` class, execute the following command:
 
 ```Shell
 import FusionCharts from 'fusioncharts/core';
@@ -118,9 +118,9 @@ FusionCharts.addDep(Column2D);
 
 **Register using multiple specific chart types:**
 
-To register using multiple specific chart types, import the specific charts instead of all the charts after importing the fusioncharts class. Also, you need to add the dependency for all the specific chart types as shown in the code below:
+To register using multiple specific chart types, import the specific charts instead of all the charts after importing the `fusioncharts` class. Also, you need to add the dependency for all the specific chart types as shown in the code below:
 
-To include the fusioncharts class, execute the following command:
+To include the `fusioncharts` class, execute the following command:
 
 ```Shell
 import FusionCharts from 'fusioncharts/core';
@@ -150,7 +150,7 @@ Once the fusioncharts module is registered you need to register the `vue-compone
 
 **Globally**
 
-In your Javascript code, use the `Vue.use()` method to register the vue-fusioncharts component globally. Registering the Vue component globally allows you to use them in the template of any root Vue instance created after registration.
+In your JavaScript code, use the `Vue.use()` method to register the `vue-fusioncharts` component globally. Registering the Vue component globally allows you to use them in the template of any root Vue instance created after registration.
 
 To include the `vue` component, execute the following command:
 
@@ -164,7 +164,7 @@ To include the `vue-fusioncharts` component, execute the following command:
 import VueFusionCharts from 'vue-fusioncharts';
 ```
 
-To include the fusioncharts class, execute the following command:
+To include the `fusioncharts` class, execute the following command:
 
 ```Shell
 import FusionCharts from 'fusioncharts/core';
@@ -194,19 +194,19 @@ Vue.use(VueFusionCharts);
 
 **Locally**
 
-Registering components globally makes sure that even if you want to stop using that component it will be a part of your final build. This results in an increase in JavaScript code that the users have to download. This is where you can register a component locally to avoid such scenarios. 
+Registering components globally ensures that even if you want to stop using that component it will be a part of your final build. This results in an increase in JavaScript code that the users have to download. This is where you can register a component locally and avoid such scenarios. 
 
-In your Javascript code, use the Vue.component() method to register the vue-fusioncharts component locally. To register locally, use **Vue.component()** instead of **Vue.use()**, the rest of the code remains same. Refer to the code below:
+In your JavaScript code, use the `Vue.component()` method to register the `vue-fusioncharts` component locally. To register locally, use `Vue.component()` instead of `Vue.use()`, the rest of the code remains same. Refer to the code below:
 
 ```Shell
 Vue.component('fusioncharts', FCComponent);
 ```
 
-### Include Maps via NPM
+### Include Maps via npm
 
-In your Javascript code, use the Vue.use() method to register the vue-fusioncharts component.
+In your JavaScript code, use the `Vue.use()` method to register the `vue-fusioncharts` component.
 
-To include the core fusioncharts files, execute the following command:
+To include the core FusionCharts files, execute the following command:
 
 ```Shell
 import FusionCharts from 'fusioncharts/core'
@@ -224,11 +224,11 @@ To include the **map definition** file you want to render, execute the following
 import World from 'fusioncharts/maps/es/fusioncharts.world';
 ```
 
-> If you want to render a map which is not in the fusioncharts package(world and USA), then you need to install **fusionmaps** which contains all the ES6 map definition:
+> If you want to render a map which is not in the fusioncharts package (World and USA), then you need to install **fusionmaps**, which contains all the ES6 map definitions:
 * npm install fusionmaps
 * ES-6 definitions can be found in `node_modules/fusionmaps/maps/es/fusioncharts.[MAP-ALIAS].js`
 
-> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
+> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({}).
 
 To add the map and definition as the dependency to the core, execute the following command:
 
@@ -237,7 +237,7 @@ FusionCharts.addDep(Maps). (Maps -  reference from above)
 FusionCharts.addDep(World). (World - reference from above)
 ```
 
-### Include Themes via NPM
+### Include Themes via npm
 
 FusionCharts Suite XT ships with the following predefined themes:
 
@@ -246,11 +246,11 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-> The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` file sets the theme as **fusion**. To add any other theme to your chart, include its corresponding JavaScript file to your project.
+> The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` file sets the theme as `fusion`. To add any other theme to your chart, include its corresponding JavaScript file to your project.
 
-In your Javascript code, use the `Vue.use()` method to register the vue-fusioncharts component.
+In your JavaScript code, use the `Vue.use()` method to register the `vue-fusioncharts` component.
 
-To include the core fusioncharts files, execute the following command:
+To include the core FusionCharts files, execute the following command:
 
 ```Shell
 import FusionCharts from 'fusioncharts/core'
@@ -269,7 +269,7 @@ import fusion from 'fusioncharts/themes/es/fusioncharts.fusion'
 import css file from 'fusioncharts/themes/es/fusioncharts.fusion.css'
 ```
 
-To add **ThemeEngine** and fusion as dependency to the core, execute the following command:
+To add **ThemeEngine** and `fusion` as dependencies to the core, execute the following command:
 
 ```Shell
 FusionCharts.addDep(ThemeEngine).  (ThemeEngine - reference from above)
@@ -280,7 +280,6 @@ FusionCharts.addDep(fusion). (fusion - reference from above)
 
 In order to install and start working with Vue-FusionCharts you need to:
 
-* [Download](https://vuejs.org/v2/guide/installation.html) the `Vue core library`.
 * [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files and the `vue-fusioncharts` plugin folder.
 
 > Post version 3.13.0, `vuejs` plugin is provided in the download package. Look for the `vue` folder under **fusioncharts-suite-xt/integrations/frontend-plugins** in downloaded package.
@@ -314,26 +313,26 @@ In order to install, create an HTML file and follow the steps below.
 **Step 1: Include Vue core library:**
 
 ```html
-<script type="text/javascript" src="path/to/local/vue.js"></script>
+<script type="text/JavaScript" src="path/to/local/vue.js"></script>
 ```
 
 **Step 2: Include the FusionCharts package:**
 
 ```html
-<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+<script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
 ```
 
 **Step 3: Include the vue-fusioncharts module:**
 
 ```html
-<script type="text/javascript" src="path/to/local/vue-fusioncharts.js"></script>
+<script type="text/JavaScript" src="path/to/local/vue-fusioncharts.js"></script>
 ```
 
 **Step 4: Include the theme file and CSS:**
 
 ```html
-<script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
-<script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
+<script type="text/JavaScript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
+<script type="text/JavaScript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
 ```
 
 The consolidated code looks like as shown below:
@@ -343,13 +342,13 @@ The consolidated code looks like as shown below:
     <meta charset="utf-8">
     <title>Vue - FusionCharts</title>
     <!-- vue -->
-    <script type="text/javascript" src="path/to/local/vue.js"></script>
+    <script type="text/JavaScript" src="path/to/local/vue.js"></script>
     <!-- FusionCharts -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
     <!-- Vue-FusionCharts -->
-    <script type="text/javascript" src="path/to/local/vue-fusioncharts.js"></script>
-    <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
-    <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
+    <script type="text/JavaScript" src="path/to/local/vue-fusioncharts.js"></script>
+    <script type="text/JavaScript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
+    <script type="text/JavaScript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
 </head>
 ```
 
@@ -362,8 +361,8 @@ In order to render maps, you need to [download](https://www.fusioncharts.com/dow
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
 ```
-<script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-<script type="text/javascript" src="path/to/local/fusioncharts.world.js"></script>
+<script type="text/JavaScript" src="path/to/local/fusioncharts.maps.js"></script>
+<script type="text/JavaScript" src="path/to/local/fusioncharts.world.js"></script>
 ```
 
 The `fusioncharts.world.js` file includes path drawings of the map of **world**.
@@ -375,15 +374,15 @@ The consolidated code(which also includes the `vue.js`, `fusioncharts.js` and `v
     <meta charset="utf-8">
     <title>Vue - FusionCharts</title>
     <!-- vue -->
-    <script type="text/javascript" src="path/to/local/vue.js"></script>
+    <script type="text/JavaScript" src="path/to/local/vue.js"></script>
     <!-- FusionCharts -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
     <!-- Vue-FusionCharts -->
-    <script type="text/javascript" src="path/to/local/vue-fusioncharts.js"></script>
+    <script type="text/JavaScript" src="path/to/local/vue-fusioncharts.js"></script>
     <!-- FusionMaps -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
+    <script type="text/JavaScript" src="path/to/local/fusioncharts.maps.js"></script>
     <!--world -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.world.js"></script>
+    <script type="text/JavaScript" src="path/to/local/fusioncharts.world.js"></script>
 </head>
 ```
 
@@ -407,9 +406,9 @@ FusionCharts Suite XT ships with the following predefined themes:
 To include a theme to your chart, include its corresponding JavaScript file in your HTML page and the CSS file for that theme as shown in the code below:
 
 ```html
-<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.css"></script>
+<script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
+<script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+<script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.css"></script>
 ```
 
 > The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` file sets the theme as **fusion**. To add any other theme to your chart, include its corresponding JavaScript file to your project.

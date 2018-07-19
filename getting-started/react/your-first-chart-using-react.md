@@ -11,9 +11,9 @@ Before going through this article, please [install](https://www.fusioncharts.com
 
 ## Create your first chart
 
-In this section, we will create a chart using react-fusioncharts. We will create a Column 2D chart, which has the column2d chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts).
+In this section, we will create a chart using **react-fusioncharts**. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts).
 
-Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
+Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a **Column 2D** chart as shown below:
 
 {% embed_chart getting-started-your-first-chart.js %}
 
@@ -32,9 +32,9 @@ China|30|
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For React, we recommend JSON format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For React, we recommend JSON format. There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({}), [combination]({}), etc. The converted format will look as shown below:
 
-There are different formats of JSON for different groups of charts in FusionCharts - e.g. single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts), etc.
+There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts), etc.
 
 ```javascript
 {
@@ -104,7 +104,7 @@ Functional attributes let you control a variety of functional elements on the ch
 
 #### Cosmetics Attributes
 
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the fusion theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click here.
+Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click [here]({}).
 
 For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d).
 
@@ -128,13 +128,13 @@ var chartConfigs = {
 };
 ```
 
-To render the chart, the react-fusioncharts component can be:
+To render the chart, the `react-fusioncharts` component can be:
 
 * Passed directly to the `ReactDOM.render()` method
 
 OR
 
-* Passed as a part of another ReactJS component
+* Passed as a part of another **ReactJS** component
 
 #### Passed directly to the ReactDOM.render() method:
 
@@ -163,33 +163,33 @@ class App extends React.Component {
 
 In the above code:
 
-* We have created an instance of the column2d chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using width and height.
+* We have created an instance of the `column2d` chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using width and height.
 
-* To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format ]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format).
+* To specify the data format as JSON, we have set the `dataFormat` parameter to `json`. You can also provide the data in [XML format ]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format).
 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 
 That's it! When you run this HTML page now, you should see a chart representing your data.
 
-See the complete list of [all possible attributes ]({% site.baseurl %}/chart-attributes/?chart=column2d)(the keys in the dataSource object) for a column 2D chart.
+See the complete list of [all possible attributes ]({% site.baseurl %}/chart-attributes/?chart=column2d)(the keys in the `dataSource` object) for a column 2D chart.
 
 Depending on the chart type, only two properties of the React component can vary mandatorily:
 
-* `app.type`: You must set it to the chart name you want to render. For a complete list of all charts and their types, refer to [Chart Gallery ]({% site.baseurl %}/demos/chart-gallery#Gallary)and explore the desired type in detail.
+* `app.type`: You must set it to the chart type that you want to render. For a complete list of all charts and their types, refer to [Chart Gallery ]({% site.baseurl %}/demos/chart-gallery#Gallary)and explore the desired type in detail.
 
-* `app.dataSource`: Each chart has its own data schema that defines the chart configuration and the source of data. Thus, this object varies significantly depending of the type of chart.
+* `app.dataSource`: Each chart has its own data schema that defines the chart configuration and the source of data. Therefore, this object varies significantly, depending on the type of chart.
 
 Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts) or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d) for the charts.
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an Angular Gauge.
+Gauges are powerful tools that can showcase information using a radial scale to display data, while a dial is used to indicate the value. In this section, we will create an Angular Gauge.
 
-To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
+To start with, we'll build a simple gauge showcasing Nordstrom's Customer Satisfaction Score as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-The thresholds for the above sample has been defined using the following range.
+The thresholds for the above sample have been defined using the following range.
 
 Range|Color|Hex Code|
 -|-|-
@@ -197,7 +197,7 @@ Range|Color|Hex Code|
 50-75|Yellow|#FFC533|
 75-100|Green|#62B58F|
 
-So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Scores above 75 mean good and is green.
+So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Scores above 75 mean good and are green.
 
 ### Convert tabular data into JSON format
 
@@ -207,7 +207,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 {
     // Chart Configuration
     "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
         "lowerLimit": "0",
         "upperLimit": "100",
         "showValue": "1",
@@ -346,7 +346,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 ### Create an instance of the map
 
-In this step, we will create an instance of the map type as usa, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will create an instance of the map type as USA, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
 
 ```javascript
 var chartConfigs = {
@@ -366,7 +366,7 @@ ReactDOM.render(
 );
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference) (the keys in the dataSource object) for the map of usa. The respective id, can be found [here]({% site.baseurl %}/maps/spec-sheets/world).
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference) (the keys in the dataSource object) for the map of USA. The respective id can be found [here]({% site.baseurl %}/maps/spec-sheets/world).
 
 ## Problem rendering the chart?
 

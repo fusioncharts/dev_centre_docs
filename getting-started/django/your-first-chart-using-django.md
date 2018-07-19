@@ -6,7 +6,7 @@ heading: Your First Chart in Django using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the FusionCharts Django wrapper that lets you create interactive, data-driven charts. You can create a simple chart using the FusionCharts server-side Django wrapper without writing any JavaScript code.
+FusionCharts Suite XT includes the **FusionCharts Django** wrapper that lets you create interactive, data-driven charts. You can create a simple chart using the FusionCharts server-side Django wrapper without writing any JavaScript code.
 
 The server-side Django wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/django/your-first-chart-using-django#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/django/your-first-chart-using-django#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/django/your-first-chart-using-django#create-your-first-map-10).
 
@@ -16,7 +16,7 @@ Before going through this article, please [install]({% site.baseurl %}/getting-s
 
 In this section, we will create a chart using `FusionCharts Django` server-side wrapper. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
 
-For this example, we have created a view named `views.py`. To keep things simple we have placed all the chart rendering logics in the `views.py` view only.
+For this example, we have created a view named `views.py`. To keep things simple, we have placed all the chart rendering logics in the `views.py` view only.
 
 > The example view we created is `app_name/views.py`.
 
@@ -54,7 +54,7 @@ Both the `chart` object and the `data` array contains a set of key-value pairs k
 
 #### Functional Attributes
 
-Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties. The list of functional attributes used in the above code are:
+Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or, data values. You can also set chart limits and extended properties. The functional attributes used in the above code are:
 
 * `showLabels` sets the  configuration whether the x-axis labels will be displayed or not.
 * `showValue` sets the configuration whether data values will be displayed along with the data plot on chart.
@@ -64,7 +64,7 @@ Functional attributes let you control a variety of functional elements on the ch
 * `numberPrefix` adds prefix to all the numbers visible on the chart.
 * Please note, we have used the `theme` attribute in the chart's data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 
-#### Cosmetics Attributes
+#### Cosmetic Attributes
 
 Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click here.
 
@@ -176,13 +176,13 @@ That's it! When you run this HTML page now, you should see a chart representing 
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
 
-Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
+Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
+Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
 
-For this example, we have created a view named `views.py`. To keep things simple we have placed all the chart rendering logics in the `views.py` view only.
+For this example, we have created a view named `views.py`. To keep things simple, we have placed all the chart rendering logics in the `views.py` view only.
 
 > The example view we created is `app_name/views.py`.
 
@@ -314,7 +314,7 @@ See the complete list of [all possible attributes]({% site.baseurl %}/chart-attr
 
 ## Create your first map
 
-For this example, we have created a view named `views.py`. To keep things simple we have placed all the chart rendering logics in the `views.py` view only.
+For this example, we have created a view named `views.py`. To keep things simple, we have placed all the chart rendering logics in the `views.py` view only.
 
 > The example view we created is `app_name/views.py`.
 

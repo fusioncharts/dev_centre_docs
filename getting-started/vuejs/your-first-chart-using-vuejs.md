@@ -154,14 +154,14 @@ See the complete list of [all possible attributes]({% site.baseurl %}/chart-attr
 
 In the JavaScript code, execution of `var app = new Vue({ })` creates a new Vue instance called app. Depending on the chart type, only two properties of the Vue instance vary mandatorily:
 
-* `app.type`: You must set it to the chart name you want to render. For a complete list of all charts and their types, refer to [Chart Gallery]({% site.baseurl %}/demos/chart-gallery#Gallary '@@open-newtab') and explore the desired type in detail.
-* `app.dataSource`: Each chart has its own data schema that defines the chart configuration and the source of data. Thus, this object varies significantly depending of the type of chart.
+* `app.type`: You must set it to the chart type you want to render. For a complete list of all charts and their types, refer to [Chart Gallery]({% site.baseurl %}/demos/chart-gallery#Gallary '@@open-newtab') and explore the desired type in detail.
+* `app.dataSource`: Each chart has its own data schema that defines the chart configuration and the source of data. Therefore, this object varies significantly, depending of the type of chart.
 
 Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
+Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
 
 To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
 
