@@ -355,6 +355,11 @@ To register using multiple specific chart types, import the specific charts inst
 <pre><code class="custom-hlc language-javascript">
     import ReactFC from 'react-fusioncharts';
 </code></pre>
+<div><strong>To add chart dependency:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    // ReactFC.fcRoot(FusionCharts, [ChartType]);
+    ReactFC.fcRoot(FusionCharts, Column2D, AngularGauge);
+</code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
