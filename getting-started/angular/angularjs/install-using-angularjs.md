@@ -162,11 +162,16 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 <div class='tab xml-tab'>
 <div class="pb-10">require your map module</div>
 <pre><code class="custom-hlc language-cv">
-    const Charts = require('fusioncharts/maps.fusioncharts.world'); // World Map
-    const Widgets = require('fusioncharts/maps.fusioncharts.usa'); // Map of USA
+    const Maps = require('fusioncharts/fusioncharts.maps.js');
+    const World = require('fusioncharts/maps/fusioncharts.world.js');
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
+<div class="pb-10">Pass the FusionCharts module to the Maps Modules</div>
+<pre><code class="custom-hlc language-cv">
+    Maps(FusionCharts);
+    World(FusionCharts);
+</code></pre> 
 
 </div>
 </div>
@@ -205,13 +210,19 @@ FusionCharts Suite XT ships with the following predefined themes:
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-
 <div class='tab xml-tab'>
 <div class="pb-10">require your themes</div>
 <pre><code class="custom-hlc language-cv">
-    const Charts = require('fusioncharts/fusioncharts.charts'); // Fusion Theme
-    const Widgets = require('fusioncharts/fusioncharts.widgets'); // Widgetss
+    const Fusion = require('fusioncharts/themes/fusioncharts.fusion.js');
+    const Fint = require('fusioncharts/themes/fusioncharts.fint.js');
+    const Ocean = require('fusioncharts/themes/fusioncharts.ocean.js');
 </code></pre>
+<div class="pb-10">Pass the FusionCharts module to the Theme Modules</div>
+<pre><code class="custom-hlc language-cv">
+    Fusion(FusionCharts);
+    Fint(FusionCharts);
+    Ocean(FusionCharts);
+</code></pre> 
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
