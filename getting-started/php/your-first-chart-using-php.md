@@ -73,58 +73,129 @@ In this step, we will create an instance of the chart type as **column2d**, set 
 Firstly, create a container using &lt;div&gt;, to render the chart.
 
 ```HTML
-<div id="chart"></div>
+<div id="chart-container">Chart will render here!</div>
 ```
 
 The code to initialize and render the chart is given below:
 
 ```php
 <?php
+$arrChartConfig = array(
+    "chart" => array(
+    "caption" => "Countries With Most Oil Reserves [2017-18]",
+    "subCaption" => "In MMbbl = One Million barrels",
+    "xAxisName" => "Country",
+    "yAxisName" => "Reserves (MMbbl)",
+    "numberSuffix" => "K",
+    "theme" => "fusion"
+    )
+);
 
-//include fusioncharts wrapper file
-include("fusioncharts.php");
+// An array of hash objects which stores data
+$arrChartData = array(
+    ["Venezuela", "290"],
+    ["Saudi", "260"],
+    ["Canada", "180"],
+    ["Iran", "140"],
+    ["Russia", "115"],
+    ["UAE", "100"],
+    ["US", "30"],
+    ["China", "30"]
+);
 
-//initialize the chart
-// chart type, chart Id, width, height, container id, data format, data source
-$chart = new FusionCharts("column2d", "chart-1" , 700, 400, "chart", "json", DataSource);
+$arrLabelValueData = array();
+
+// Pushing labels and values
+for($i = 0; $i < count($arrChartData); $i++) {
+    array_push($arrLabelValueData, array(
+        "label" => $arrChartData[$i][0], "value" => $arrChartData[$i][1]
+    ));
+}
+
+$arrChartConfig["data"] = $arrLabelValueData;
+
+// JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
+$jsonEncodedData = json_encode($arrChartConfig);
+
+// chart object
+$Chart = new FusionCharts("column2d", "MyFirstChart" , "700", "400", "chart-container", "json", $jsonEncodedData);
 
 // Render the chart
-$chart->render();
+$Chart->render();
 ?>
 ```
 
 In the above code:
 
-* We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using `width` and `height`.
-* To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
-* The JSON data is embedded as the value of the `dataSource` parameter.
+* We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 700x400 pixels using `width` and `height`.
+* The array data is embedded as the value of the `jsonEncodedData` parameter.
 
 The full code for the above sample is given below:
 
 ```html
-<!DOCTYPE html>
+<?php
+
+   /* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.*/
+   include("includes/fusioncharts.php");
+?>
 <html>
 
 <head>
-    <script type="text/javascript" src="fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts.theme.fusion.js"></script>
-
+    <title>FusionCharts | My First Chart</title>
+    <script src="../FusionCharts/fusioncharts.js"></script>
+    <script src="../FusionCharts/fusioncharts.charts.js"></script>
+    <script src="../FusionCharts/themes/fusioncharts.theme.zune.js"></script>
 </head>
 
 <body>
-    <div id="chart"></div>
     <?php
+    $arrChartConfig = array(
+        "chart" => array(
+            "caption" => "Countries With Most Oil Reserves [2017-18]",
+            "subCaption" => "In MMbbl = One Million barrels",
+            "xAxisName" => "Country",
+            "yAxisName" => "Reserves (MMbbl)",
+            "numberSuffix" => "K",
+            "theme" => "fusion"
+        )
+    );
 
-include("fusioncharts.php");
+    // An array of hash objects which stores data
+    $arrChartData = array(
+        ["Venezuela", "290"],
+        ["Saudi", "260"],
+        ["Canada", "180"],
+        ["Iran", "140"],
+        ["Russia", "115"],
+        ["UAE", "100"],
+        ["US", "30"],
+        ["China", "30"]
+    );
 
-$jsonData = "{    'chart': {        'caption': 'Countries With Most Oil Reserves [2017-18]',        'subCaption': 'In MMbbl = One Million barrels',        'xAxisName': 'Country',        'yAxisName': 'Reserves (MMbbl)',        'numberSuffix': 'K',        'theme': 'fusion'    },    'data': [        {            'label': 'Venezuela',            'value': '290'        },        {            'label': 'Saudi',            'value': '260'        },        {            'label': 'Canada',            'value': '180'        },        {            'label': 'Iran',            'value': '140'        },        {            'label': 'Russia',            'value': '115'        },        {            'label': 'UAE',            'value': '100'        },        {            'label': 'US',            'value': '30'        },        {            'label': 'China',            'value': '30'        }    ]}";
+    $arrLabelValueData = array();
 
-$chart = new FusionCharts("column2d", "chart-1" , 700, 400, "chart", "json", $jsonData);
+    // Pushing labels and values
+    for($i = 0; $i < count($arrChartData); $i++) {
+        array_push($arrLabelValueData, array(
+            "label" => $arrChartData[$i][0], "value" => $arrChartData[$i][1]
+        ));
+    }
 
-$chart->render();
-?>
+    $arrChartConfig["data"] = $arrLabelValueData;
 
+    // JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
+    $jsonEncodedData = json_encode($arrChartConfig);
 
+    // chart object
+    $Chart = new FusionCharts("column2d", "MyFirstChart" , "600", "350", "chart-container", "json", $jsonEncodedData);
+
+    // Render the chart
+    $Chart->render();
+    ?>
+
+    <center>
+        <div id="chart-container">Chart will render here!</div>
+    </center>
 </body>
 
 </html>
@@ -167,54 +238,120 @@ In this step, we will create an instance of the chart type as **angulargauge**, 
 Firstly, create a container using &lt;div&gt;, to render the gauge.
 
 ```HTML
-<div id="gauge"></div>
+<div id="widget-container">Widget will render here!</div>
 ```
 
 The code to initialize and render the chart is given below:
 
 ```php
 <?php
+// Widget appearance configuration
+$arrChartConfig = array(
+    "chart" => array(
+        "caption" => "Nordstorm's Customer Satisfaction Score for 2017",
+        "lowerLimit" => "0",
+        "upperLimit" => "100",
+        "showValue" => "1",
+        "numberSuffix" => "%",
+        "theme" => "fusion",
+        "showToolTip" => "0"
+    )
+);
 
-//include fusioncharts wrapper file
-include("fusioncharts.php");
+// Widget color range data
+$colorDataObj = array("color" => array(
+    ["minValue" => "0", "maxValue" => "50", "code" => "#F2726F"],
+    ["minValue" => "50", "maxValue" => "75", "code" => "#FFC533"],
+    ["minValue" => "75", "maxValue" => "100", "code" => "#62B58F"]
+));
 
-//initialize the chart
-// gauge type, gauge Id, width, height, container id, data format, data source
-$gauge = new FusionCharts("AngularGauge", "gauge-1" , 450, 250, "gauge", "json", DataSource);
+// Dial array    
+$dial = array();
+  
+// Widget dial data in array format, multiple values can be separated by comma e.g. ["81", "23", "45",...]
+$widgetDialDataArray = array("81");
+for($i = 0; $i < count($widgetDialDataArray); $i++) {
+    array_push($dial,array("value" => $widgetDialDataArray[$i]));
+}
 
-// Render the gauge
-$gauge>render();
+$arrChartConfig["colorRange"] = $colorDataObj;
+$arrChartConfig["dials"] = array( "dial" => $dial);
+
+// JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
+$jsonEncodedData = json_encode($arrChartConfig);
+
+// Widget object
+$Widget = new FusionCharts("angulargauge", "MyFirstWidget" , "400", "250", "widget-container", "json", $jsonEncodedData);
+
+// Render the Widget
+$Widget->render();
 ?>
 ```
 
 The full code for the above sample is given below:
 
 ```html
-<!DOCTYPE html>
-<html>
-
-<head>
-    <script type="text/javascript" src="fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts.theme.fusion.js"></script>
-</head>
-
-<body>
-    <div id="gauge"></div>
-    <?php
-    
-    include("fusioncharts.php");
-	
-	$jsonData = "{    'chart': {        'caption': 'Nordstorm\'s Customer Satisfaction Score for 2017',        'lowerLimit': '0',        'upperLimit': '100',        'showValue': '1',        'numberSuffix': '%',        'theme': 'fusion',        'showToolTip': '0'    },    'colorRange': {        'color': [            {                'minValue': '0',                'maxValue': '50',                'code': '#F2726F'            },            {                'minValue': '50',                'maxValue': '75',                'code': '#FFC533'            },            {                'minValue': '75',                'maxValue': '100',                'code': '#62B58F'            }        ]    },    'dials': {        'dial': [            {                'value': '81'            }        ]    }}";
-
-	$gauge = new FusionCharts("AngularGauge", "gauge-1" , 450, 250, "gauge", "json", $jsonData);
-
-	
-	$gauge>render();
+<?php
+    /* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.*/
+    include("includes/fusioncharts.php");
 ?>
+<html>
+    <head>
+        <title>FusionCharts | My First Widget</title>
+        <script src="../FusionCharts/fusioncharts.js"></script>
+        <script src="../FusionCharts/fusioncharts.charts.js"></script>
+        <script src="../FusionCharts/themes/fusioncharts.theme.zune.js"></script>
+    </head>
+    <body>
+<?php
+    // Widget appearance configuration
+    $arrChartConfig = array(
+        "chart" => array(
+            "caption" => "Nordstorm's Customer Satisfaction Score for 2017",
+            "lowerLimit" => "0",
+            "upperLimit" => "100",
+            "showValue" => "1",
+            "numberSuffix" => "%",
+            "theme" => "fusion",
+            "showToolTip" => "0"
+        )
+    );
 
+    // Widget color range data
+    $colorDataObj = array("color" => array(
+        ["minValue" => "0", "maxValue" => "50", "code" => "#F2726F"],
+        ["minValue" => "50", "maxValue" => "75", "code" => "#FFC533"],
+        ["minValue" => "75", "maxValue" => "100", "code" => "#62B58F"]
+    ));
+
+    // Dial array    
+    $dial = array();
+                  
+    // Widget dial data in array format, multiple values can be separated by comma e.g. ["81", "23", "45",...]
+    $widgetDialDataArray = array("81");
+    for($i = 0; $i < count($widgetDialDataArray); $i++) {
+        array_push($dial,array("value" => $widgetDialDataArray[$i]));
+    }
+
+    $arrChartConfig["colorRange"] = $colorDataObj;
+    $arrChartConfig["dials"] = array( "dial" => $dial);
+
+    // JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
+    $jsonEncodedData = json_encode($arrChartConfig);
+
+    // Widget object
+    $Widget = new FusionCharts("angulargauge", "MyFirstWidget" , "400", "250", "widget-container", "json", $jsonEncodedData);
+
+    // Render the Widget
+    $Widget->render();
+?>
+    <center>
+        <div id="widget-container">Widget will render here!</div>
+    </center>
 </body>
 
 </html>
+
 ```
 
 See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
@@ -249,53 +386,133 @@ In this step, we will create an instance of the map type as **world**, set the w
 Firstly, create a container using &lt;div&gt;, to render the map.
 
 ```HTML
-<div id="map"></div>
+<div id="map-container">Map will render here!</div>
 ```
 
 The code to initialize and render the chart is given below:
 
 ```php
 <?php
+// Widget appearance configuration
+$arrMapConfig = array(
+    "chart" => array(
+        "caption" => "Average Annual Population Growth",
+        "subcaption" => " 1955-2015",
+        "numbersuffix" => "%",
+        "includevalueinlabels" => "1",
+        "labelsepchar" => ": ",
+        "entityFillHoverColor" => "#FFF9C4",
+        "theme" => "fusion"
+    )
+);
 
-//include fusioncharts wrapper file
-include("fusioncharts.php");
+// Widget color range data
+$colorDataObj = array("minvalue" => "0", "code" => "#FFE0B2", "gradient" => "1",
+"color" => array(
+    ["minValue" => "0", "maxValue" => "50", "code" => "#F2726F"],
+    ["minValue" => "50", "maxValue" => "75", "code" => "#FFC533"],
+    ["minValue" => "75", "maxValue" => "100", "code" => "#62B58F"]
+));
 
-//initialize the chart
-// gauge type, gauge Id, width, height, container id, data format, data source
-$map = new FusionCharts("world", "map-1" , 800, 550, "map", "json", DataSource);
+// Map data array
+$mapDataArray = array(
+    ["NA", ".82", "1"],
+    ["SA", "2.04", "1"],
+    ["AS", "1.78", "1"],
+    ["EU", ".40", "1"],
+    ["AF", "2.58", "1"],
+    ["AU", "1.30", "1"]
+);
 
-// Render the map
-$map>render();
+$mapData = array();
+
+for($i = 0; $i < count($mapDataArray); $i++) {
+    array_push($mapData,array("id" => $mapDataArray[$i][0], "value" => $mapDataArray[$i][1], "showLabel" => $mapDataArray[$i][2]));
+}
+
+$arrMapConfig["colorRange"] = $colorDataObj;
+$arrMapConfig["data"] = $mapData;
+
+// JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
+$jsonEncodedData = json_encode($arrMapConfig);
+
+// Map object
+$Map = new FusionCharts("maps/world", "MyFirstMap" , "800", "500", "map-container", "json", $jsonEncodedData);
+
+// Render the Map
+$Map->render();
 ?>
 ```
 
 The full code for the above sample is given below:
 
 ```html
-<!DOCTYPE html>
-<html>
-
-<head>
-    <script type="text/javascript" src="fusioncharts.js">
-    </script>
-    <script type="text/javascript" src="fusioncharts.theme.fusion.js">
-    </script>
-</head>
-
-<body>
-    <div id="map">
-    </div>
-    <?php
-include("fusioncharts.php");
-
-$jsonData = "{    'chart': {        'caption': 'Average Annual Population Growth',        'subcaption': ' 1955-2015',        'numbersuffix': '%',        'includevalueinlabels': '1',        'labelsepchar': ': ',        'entityFillHoverColor': '#FFF9C4',        'theme': 'fusion'    },    'colorrange': {        'minvalue': '0',        'code': '#FFE0B2',        'gradient': '1',        'color': [            {                'minvalue': '0.5',                'maxvalue': '1.0',                'color': '#FFD74D'            },            {                'minvalue': '1.0',                'maxvalue': '2.0',                'color': '#FB8C00'            },            {                'minvalue': '2.0',                'maxvalue': '3.0',                'color': '#E65100'            }        ]    },    'data': [        {            'id': 'NA',            'value': '.82',            'showLabel': '1',            'link': 'newchart-json-NAM'        },        {            'id': 'SA',            'value': '2.04',            'showLabel': '1',            'link': 'newchart-json-SAM'        },        {            'id': 'AS',            'value': '1.78',            'showLabel': '1',            'link': 'newchart-json-ASI'        },        {            'id': 'EU',            'value': '.40',            'showLabel': '1',            'link': 'newchart-json-EUP'        },        {            'id': 'AF',            'value': '2.58',            'showLabel': '1',            'link': 'newchart-json-AFC'        },        {            'id': 'AU',            'value': '1.30',            'showLabel': '1',            'link': 'newchart-json-AUS'        }    ],    'linkeddata': [        {            'id': 'NAM',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - North America',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'paletteColors': 'FFD74D',                    'theme': 'hulk-light'                },                'data': [                    {                        'label': '1955',                        'value': '1.5078'                    },                    {                        'label': '1960',                        'value': '1.5502'                    },                    {                        'label': '1965',                        'value': '1.3121'                    },                    {                        'label': '1970',                        'value': '0.8648'                    },                    {                        'label': '1975',                        'value': '0.6402'                    },                    {                        'label': '1980',                        'value': '0.62'                    },                    {                        'label': '1985',                        'value': '0.6748'                    },                    {                        'label': '1990',                        'value': '0.6882'                    },                    {                        'label': '1995',                        'value': '0.6804'                    },                    {                        'label': '2000',                        'value': '0.5627'                    },                    {                        'label': '2005',                        'value': '0.5373'                    },                    {                        'label': '2010',                        'value': '0.5536'                    },                    {                        'label': '2015',                        'value': '0.4291'                    }                ]            }        },        {            'id': 'SAM',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - South America',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'paletteColors': 'E65100',                    'theme': 'hulk-light'                },                'data': [                    {                        'label': '1955',                        'value': '2.6275'                    },                    {                        'label': '1960',                        'value': '2.6995'                    },                    {                        'label': '1965',                        'value': '2.757'                    },                    {                        'label': '1970',                        'value': '2.5376'                    },                    {                        'label': '1975',                        'value': '2.3431'                    },                    {                        'label': '1980',                        'value': '2.3261'                    },                    {                        'label': '1985',                        'value': '2.2036'                    },                    {                        'label': '1990',                        'value': '1.9611'                    },                    {                        'label': '1995',                        'value': '1.7184'                    },                    {                        'label': '2000',                        'value': '1.5965'                    },                    {                        'label': '2005',                        'value': '1.4482'                    },                    {                        'label': '2010',                        'value': '1.2031'                    },                    {                        'label': '2015',                        'value': '1.0698'                    }                ]            }        },        {            'id': 'ASI',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Asia',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FB8C00'                },                'data': [                    {                        'label': '1955',                        'value': '1.9075'                    },                    {                        'label': '1960',                        'value': '1.8842'                    },                    {                        'label': '1965',                        'value': '2.1082'                    },                    {                        'label': '1970',                        'value': '2.4554'                    },                    {                        'label': '1975',                        'value': '2.3036'                    },                    {                        'label': '1980',                        'value': '1.9889'                    },                    {                        'label': '1985',                        'value': '1.9683'                    },                    {                        'label': '1990',                        'value': '2.0176'                    },                    {                        'label': '1995',                        'value': '1.6823'                    },                    {                        'label': '2000',                        'value': '1.3682'                    },                    {                        'label': '2005',                        'value': '1.2435'                    },                    {                        'label': '2010',                        'value': '1.1661'                    },                    {                        'label': '2015',                        'value': '1.0731'                    }                ]            }        },        {            'id': 'EUP',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Europe',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FFE0B2'                },                'data': [                    {                        'label': '1955',                        'value': '1.026'                    },                    {                        'label': '1960',                        'value': '1.0652'                    },                    {                        'label': '1965',                        'value': '0.9381'                    },                    {                        'label': '1970',                        'value': '0.6925'                    },                    {                        'label': '1975',                        'value': '0.54'                    },                    {                        'label': '1980',                        'value': '0.4218'                    },                    {                        'label': '1985',                        'value': '0.354'                    },                    {                        'label': '1990',                        'value': '0.2971'                    },                    {                        'label': '1995',                        'value': '0.0276'                    },                    {                        'label': '2000',                        'value': '-0.1301'                    },                    {                        'label': '2005',                        'value': '-0.1558'                    },                    {                        'label': '2010',                        'value': '-0.0576'                    },                    {                        'label': '2015',                        'value': '-0.0292'                    }                ]            }        },        {            'id': 'AFC',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Africa',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'E65100'                },                'data': [                    {                        'label': '1955',                        'value': '2.1242'                    },                    {                        'label': '1960',                        'value': '2.338'                    },                    {                        'label': '1965',                        'value': '2.5075'                    },                    {                        'label': '1970',                        'value': '2.5947'                    },                    {                        'label': '1975',                        'value': '2.7175'                    },                    {                        'label': '1980',                        'value': '2.8398'                    },                    {                        'label': '1985',                        'value': '2.8857'                    },                    {                        'label': '1990',                        'value': '2.8243'                    },                    {                        'label': '1995',                        'value': '2.6172'                    },                    {                        'label': '2000',                        'value': '2.5072'                    },                    {                        'label': '2005',                        'value': '2.4853'                    },                    {                        'label': '2010',                        'value': '2.5593'                    },                    {                        'label': '2015',                        'value': '2.6001'                    }                ]            }        },        {            'id': 'AUS',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Oceania',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FB8C00'                },                'data': [                    {                        'label': '1955',                        'value': '1.511'                    },                    {                        'label': '1960',                        'value': '1.6045'                    },                    {                        'label': '1965',                        'value': '1.5578'                    },                    {                        'label': '1970',                        'value': '1.455'                    },                    {                        'label': '1975',                        'value': '1.4727'                    },                    {                        'label': '1980',                        'value': '1.2404'                    },                    {                        'label': '1985',                        'value': '1.2398'                    },                    {                        'label': '1990',                        'value': '1.1853'                    },                    {                        'label': '1995',                        'value': '1.2006'                    },                    {                        'label': '2000',                        'value': '1.1244'                    },                    {                        'label': '2005',                        'value': '1.0724'                    },                    {                        'label': '2010',                        'value': '1.1255'                    },                    {                        'label': '2015',                        'value': '1.0397'                    }                ]            }        }    ]}";
-$map = new FusionCharts("world", "map-1" , 800, 550, "map", "json", $jsonData);
-
-$map->render();
+<?php
+    // Include the `../src/fusioncharts.php` file that contains functions to embed the charts.
+    include("includes/fusioncharts.php");
 ?>
+<html>
+    <head>
+        <title>FusionCharts | My First Map</title>
+        <script src="../FusionCharts/fusioncharts.js"></script>
+        <script src="../FusionCharts/fusioncharts.charts.js"></script>
+        <script src="../FusionCharts/themes/fusioncharts.theme.zune.js"></script>
+    </head>
+    <body>
+        <?php
+        // Widget appearance configuration
+        $arrMapConfig = array(
+            "chart" => array(
+                "caption" => "Average Annual Population Growth",
+                "subcaption" => " 1955-2015",
+                "numbersuffix" => "%",
+                "includevalueinlabels" => "1",
+                "labelsepchar" => ": ",
+                "entityFillHoverColor" => "#FFF9C4",
+                "theme" => "fusion"
+            )
+        );
 
-</body>
+        // Widget color range data
+        $colorDataObj = array("minvalue" => "0", "code" => "#FFE0B2", "gradient" => "1",
+        "color" => array(
+            ["minValue" => "0", "maxValue" => "50", "code" => "#F2726F"],
+            ["minValue" => "50", "maxValue" => "75", "code" => "#FFC533"],
+            ["minValue" => "75", "maxValue" => "100", "code" => "#62B58F"]
+        ));
 
+        // Map data array
+        $mapDataArray = array(
+            ["NA", ".82", "1"],
+            ["SA", "2.04", "1"],
+            ["AS", "1.78", "1"],
+            ["EU", ".40", "1"],
+            ["AF", "2.58", "1"],
+            ["AU", "1.30", "1"]
+        );
+                      
+        $mapData = array();
+
+        for($i = 0; $i < count($mapDataArray); $i++) {
+            array_push($mapData,array("id" => $mapDataArray[$i][0], "value" => $mapDataArray[$i][1], "showLabel" => $mapDataArray[$i][2]));
+        }
+
+        $arrMapConfig["colorRange"] = $colorDataObj;
+        $arrMapConfig["data"] = $mapData;
+
+        // JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
+        $jsonEncodedData = json_encode($arrMapConfig);
+
+        // Map object
+        $Map = new FusionCharts("maps/world", "MyFirstMap" , "800", "500", "map-container", "json", $jsonEncodedData);
+
+        // Render the Map
+        $Map->render();
+        ?>
+        <center>
+            div id="map-container">Map will render here!</div>
+        </center>
+    </body>
 </html>
 ```
 
