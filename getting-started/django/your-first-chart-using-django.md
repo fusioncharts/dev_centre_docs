@@ -16,6 +16,10 @@ Before going through this article, please [install]({% site.baseurl %}/getting-s
 
 In this section, we will create a chart using `FusionCharts Django` server-side wrapper. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
 
+For this example, we have created a view named `views.py`. To keep things simple we have placed all the chart rendering logics in the `view.py` view only.
+
+> The example view we created is `app_name/views.py`.
+
 Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
 
 {% embed_chart getting-started-your-first-chart.js %}
@@ -66,19 +70,14 @@ Cosmetic attributes let you configure chart cosmetics like color, transparency, 
 
 For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
-### Create an object for the chart
+### Create an instance for the chart
 
 In this step, we will create an object for the chart type as **column2d** using FusionCharts class constructor, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
 The code to create an object of the chart is given below:
 
 ```javascript
-// Create an object
-// chart type, chart Id, width, height, container id, data format, data source
-column2D = FusionCharts("column2d", "ex1" , "700", "400", "chart-1", "json", DataSource);
-
-// Return complete JavaScript and HTML code, used to generate chart in the browser.
-return  render(request, 'index.html', {'output' : column2D.render()})
+column2D = FusionCharts("column2d", "myFirstChart" , "600", "400", "myFirstChartContainer", "json", dataSource)
 ```
 
 In the above code:
@@ -87,20 +86,99 @@ In the above code:
 * To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 
+The full code for the above sample is:
+
+```
+from django.shortcuts
+import render
+from django.http
+import HttpResponse
+from collections
+import OrderedDict
+
+# Include the `fusioncharts.py`
+file that contains functions to embed the charts.
+from fusioncharts
+import FusionCharts
+
+def myFirstChart(request):
+
+	#Chart data is passed to the `dataSource`
+	parameter, as dictionary in the form of key - value pairs.
+	dataSource = OrderedDict()
+
+	# The `chartConfig`
+	dict contains key - value pairs data
+	for chart attribute
+	chartConfig = OrderedDict()
+	chartConfig["caption"] = "Countries With Most Oil Reserves [2017-18]"
+	chartConfig["subCaption"] = "In MMbbl = One Million barrels"
+	chartConfig["xAxisName"] = "Country"
+	chartConfig["yAxisName"] = "Reserves (MMbbl)"
+	chartConfig["numberSuffix"] = "K"
+	chartConfig["theme"] = "fusion"
+
+	#
+	The `chartData`
+	dict contains key - value pairs data
+	chartData = OrderedDict()
+	chartData["Venezuela"] = 290
+	chartData["Saudi"] = 260
+	chartData["Canada"] = 180
+	chartData["Iran"] = 140
+	chartData["Russia"] = 115
+	chartData["UAE"] = 100
+	chartData["US"] = 30
+	chartData["China"] = 30
+
+	dataSource["chart"] = chartConfig
+	dataSource["data"] = []
+
+	# Convert the data in the `chartData`
+	array into a format that can be consumed by FusionCharts.#The data
+	for the chart should be in an array wherein each element of the array is a JSON object# having the `label`
+	and `value`
+	as keys.
+
+	#Iterate through the data in `chartData`
+	and insert in to the `dataSource['data']`
+	list.
+	for key, value in chartData.items():
+	    data = {}
+	data["label"] = key
+	data["value"] = value
+	dataSource["data"].append(data)
+
+
+# Create an object
+for the column 2 D chart using the FusionCharts class constructor# The chart data is passed to the `dataSource`
+parameter.
+column2D = FusionCharts("column2d", "myFirstChart", "600", "400", "myFirstChartContainer", "json", dataSource)
+
+return render(request, 'index.html', {
+    'output': column2D.render()
+})
+
+```
+
 The HTML template of the above sample is shown below:
 
 ```HTML
+<!-- Filename: app_name/templates/index.html -->
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>FC-python wrapper</title>
     {% load static %}
-  <script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
-  <script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fint.js" %}"></script>
+    <script type="text/javascript" src="{% static " fusioncharts/fusioncharts.js " %}"></script>
+    <script type="text/javascript" src="{% static " fusioncharts/themes/fusioncharts.theme.fint.js " %}"></script>
 </head>
+
 <body>
-    <div id="chart-1">{{ output|safe }}</div>
+    <div id="myFirstChartContainer">{{ output|safe }}</div>
 </body>
+
 </html>
 ```
 
