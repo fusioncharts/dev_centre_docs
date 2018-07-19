@@ -347,7 +347,7 @@ To register using multiple specific chart types, import the specific charts inst
 </code></pre>
 <div><strong>To include the specific chart from viz folder:</strong></div>
 <pre><code class="custom-hlc language-javascript">
-    // import ChartType from 'fusioncharts/viz/[ChartType]';    
+        
     import Column2D from 'fusioncharts/viz/column2d';
     import AngularGauge from 'fusioncharts/viz/angulargauge';
 </code></pre>
