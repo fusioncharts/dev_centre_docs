@@ -22,15 +22,9 @@ In this article, we will show you how you can download and install the `jQuery h
 
 ## Install using Direct JavaScript files
 
-In order to install and start working with Vue-FusionCharts you need to:
+In order to install and start working with Vue-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files and the `jquery` helper folder.
 
-* [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files.
-* Look for the `jQuery helper` in the downloaded package post v3.13.0.
-
-> 
-
-
-For all plugins that we're now providing in download package, instead of asking to download, ask them to look in package. And if not available in package, download v3.13.0 or later.
+> Post version 3.13.0, `jquery` helper is provided in the download package. Look for the `jquery` folder under **fusioncharts-suite-xt/integrations/frontend-plugins** in downloaded package.
 
 Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. The folder structure is shown below:
 
@@ -55,6 +49,17 @@ File Name|Description|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from here. </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files (JSON & CSS). Refer each theme with their respective `JavaScript` and `CSS` file names.|
+
+To set up the FusionCharts jQuery plugin, follow the steps given below:
+
+* Include jquery.min.js to enable jQuery in your project:
+
+```html
+<script type="text/javascript" src="jquery.min.js"></script>
+```
+
+
+
 
 In order to install, create an HTML file and follow the steps below.
 
