@@ -6,12 +6,12 @@ heading: Installation
 chartPresent: false
 ---
 
-The FusionCharts Django server-side wrapper lets you create charts in your website without writing any JavaScript code.
+The **FusionCharts Django** server-side wrapper lets you create charts in your website without writing any JavaScript code.
 Conventionally, FusionCharts Suite XT uses JavaScript and HTML to generate charts in the browser. The Django wrapper lets you generate the required JavaScript and HTML code as a string on the server. This string is then used to render charts on a browser page.
 
-In this article, we will show you how you can download and install the `FusionCharts Django` wrapper and all the other dependencies on your system.
+In this article, we will show you how you can download and install the **FusionCharts Django** wrapper and all the other dependencies on your system.
 
-> The FusionCharts Django wrapper requires Python 2.7 or higher version.
+> The **FusionCharts Django** wrapper requires Python 2.7 or higher version.
 
 ## Install the FusionCharts Django Wrapper
 
