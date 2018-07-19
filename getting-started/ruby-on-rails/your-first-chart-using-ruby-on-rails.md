@@ -97,7 +97,7 @@ In the above code:
 The full code for the above sample is:
 
 ```
-\#Filename: app / controllers / examples_controller.rb
+# Filename: app/controllers/examples_controller.rb
 class ExamplesController < ApplicationController
 
 def getChart
@@ -113,30 +113,22 @@ chartAppearancesConfigObj = {
     "theme" => "fusion"
 }
 
-#
-An array of hash objects which stores data
+# An array of hash objects which stores data
 chartDataObj = [{
         "Venezuela" => "290"
-    },
-    {
+    }, {
         "Saudi" => "260"
-    },
-    {
+    }, {
         "Canada" => "180"
-    },
-    {
+    }, {
         "Iran" => "140"
-    },
-    {
+    }, {
         "Russia" => "115"
-    },
-    {
+    }, {
         "UAE" => "100"
-    },
-    {
+    }, {
         "US" => "30"
-    },
-    {
+    }, {
         "China" => "30"
     }
 ]
@@ -145,8 +137,7 @@ chartDataObj = [{
 format
 labelValueTemplate = "{ \"label\": \"%s\", \"value\": \"%s\" },"
 
-#
-Chart data as JSON string
+# Chart data as JSON string
 labelValueJSONStr = ""
 
 chartDataObj.each { | item |
@@ -154,15 +145,13 @@ chartDataObj.each { | item |
     labelValueJSONStr.concat(data)
 }
 
-#
-Removing trailing comma character
+# Removing trailing comma character
 labelValueJSONStr = labelValueJSONStr.chop
 
 # Chart JSON data template
 chartJSONDataTemplate = "{ \"chart\": %s, \"data\": [%s] }"
 
-#
-Final Chart JSON data from template
+# Final Chart JSON data from template
 chartJSONDataStr = chartJSONDataTemplate % [chartAppearancesConfigObj.to_json, labelValueJSONStr]
 
 # Chart rendering
@@ -177,7 +166,7 @@ chart = Fusioncharts::Chart.new({
 end
 
 def firstchart
-@myChart = getChart
+    @myChart = getChart
 end
 
 end
