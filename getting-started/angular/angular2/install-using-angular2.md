@@ -142,7 +142,7 @@ export class AppComponent {
 
 ## Add Dependencies to the Environment
 
-You can add all the dependencies to the angular environment in the main module, i.e., `app.module.ts` using **forRoot(FusionCharts, [Comma separated dependencies])** function of the FusionCharts module:
+You can add all the dependencies to the angular environment in the main module, i.e., `app.module.ts` using **fcRoot(FusionCharts, [Comma separated dependencies])** function of the FusionCharts module:
 
 ```
 @NgModule({
@@ -151,7 +151,7 @@ You can add all the dependencies to the angular environment in the main module, 
     ],
     imports: [
         BrowserModule,
-        FusionChartsModule.forRoot(FusionCharts, Charts)  // FusionCharts and Charts,
+        FusionChartsModule.fcRoot(FusionCharts, Charts)  // FusionCharts and Charts,
     providers: [],
     bootstrap: [ AppComponent ]
 })
@@ -159,10 +159,10 @@ You can add all the dependencies to the angular environment in the main module, 
 }
 ```
 
-To add more than one dependencies to the enviroment, replace the **FusionChartsModule.forRoot(FusionCharts, Charts)** line similar to the line shown below:
+To add more than one dependencies to the enviroment, replace the **FusionChartsModule.fcRoot(FusionCharts, Charts)** line similar to the line shown below:
 
-* **FusionChartsModule.forRoot(FusionCharts, Charts, Widgets, Fusion)**: To import charts, widgets and themes.
+* **FusionChartsModule.fcRoot(FusionCharts, Charts, Widgets, Fusion)**: To import charts, widgets and themes.
 
-* **FusionChartsModule.forRoot(FusionCharts, Charts, Widgets, PowerCharts)**: To import charts, widgets and powercharts.
+* **FusionChartsModule.fcRoot(FusionCharts, Charts, Widgets, PowerCharts)**: To import charts, widgets and powercharts.
 
-* **FusionChartsModule.forRoot(FusionCharts, Maps, world)**: To import charts, maps and world map.
+* **FusionChartsModule.fcRoot(FusionCharts, Maps, world)**: To import charts, maps and world map.

@@ -119,7 +119,7 @@ import * as Charts from 'fusioncharts/fusioncharts.charts'; // Charts
     ],
     imports: [
         BrowserModule,
-        FusionChartsModule.forRoot(FusionCharts, Charts),  
+        FusionChartsModule.fcRoot(FusionCharts, Charts),  
     ],
     providers: [],
     bootstrap: [ AppComponent ]
@@ -275,7 +275,7 @@ import * as Widgets from 'fusioncharts/fusioncharts.widgets; // Widgets
     ],
     imports: [
         BrowserModule,
-        FusionChartsModule.forRoot(FusionCharts, Widgets), // Note this line  
+        FusionChartsModule.fcRoot(FusionCharts, Widgets), // Note this line  
     ],
     providers: [],
     bootstrap: [ AppComponent ]
