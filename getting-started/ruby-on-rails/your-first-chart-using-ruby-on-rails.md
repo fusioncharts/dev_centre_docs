@@ -216,13 +216,16 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 In this step, we will create an instance of the chart type as `angularGauge` using FusionCharts class constructor, set the width and height (in pixels or %), and finally specify the data for the chart as JSON string format.
 
-> The default name of the file is `app/controllers/examples_controller.rb`.
+For this example, we have created a controller named `examples` and view named `firstchart`. To keep things simple we have placed all the chart rendering logics in the `examples` controller only.
+
+> The example controller we created is `app/controllers/examples_controller.rb`.
 
 The `fc_json` action is defined to create the angular gauge.
 
 The code of the instance of the chart is given below:
 
 ```javascript
+#Rendering the widget
 widget = Fusioncharts::Chart.new({
     width: "400",
     height: "250",
@@ -235,62 +238,104 @@ widget = Fusioncharts::Chart.new({
 The full code for the above sample is:
 
 ```
-// Widget appearance configuration
-widgetAppearancesConfigObj = {
-    "caption" => "Nordstorm's Customer Satisfaction Score for 2017",
-    "lowerLimit" => "0",
-    "upperLimit" => "100",
-    "showValue" => "1",
-    "numberSuffix" => "%",
-    "theme" => "fusion",
-    "showToolTip" => "0"
-}
+#Filename: app / controllers / examples_controller.rb
+class ExamplesController < ApplicationController
 
-// Widget color range data
-colorDataObj = {"color" => [
-    {"minValue" => "0", "maxValue" => "50", "code" => "#F2726F"},
-    {"minValue" => "50", "maxValue" => "75", "code" => "#FFC533"},
-    {"minValue" => "75", "maxValue" => "100", "code" => "#62B58F"}
-]}
-      
-// Widget dial data in array format, multiple values can be separated by comma e.g. ["81", "23", "45",...]
-widgetDialDataArray = ["81"]
-      
-// Dial value in JSON format
-widgetDialDataStr = ""
-      
-// Template for dial value
-widgetDialDataTemplate = "{ \"value\": \"%s\" },"
+def getWidget
 
-// Iterates dial data array and converts them proper data format
-widgetDialDataArray.each {|item|
-    data = widgetDialDataTemplate % [item]
-    widgetDialDataStr.concat(data)
-}
+    # Widget appearance configuration
+    widgetAppearancesConfigObj = {
+        "caption" => "Nordstorm's Customer Satisfaction Score for 2017",
+        "lowerLimit" => "0",
+        "upperLimit" => "100",
+        "showValue" => "1",
+        "numberSuffix" => "%",
+        "theme" => "fusion",
+        "showToolTip" => "0"
+    }
 
-// Removing trailing comma
-widgetDialDataStr = widgetDialDataStr.chop
-      
-// Formats dial value(s)
-widgetDialTemplate = "{ \"dial\": [%s]}"
-widgetDialStr = ""
-widgetDialStr = widgetDialTemplate % [widgetDialDataStr]
+    #
+    Widget color range data
+    colorDataObj = {
+        "color" => [{
+                "minValue" => "0",
+                "maxValue" => "50",
+                "code" => "#F2726F"
+            },
+            {
+                "minValue" => "50",
+                "maxValue" => "75",
+                "code" => "#FFC533"
+            },
+            {
+                "minValue" => "75",
+                "maxValue" => "100",
+                "code" => "#62B58F"
+            }
+        ]
+    }
 
-// Final Widget JSON template
-widgetJSONTemplate = "{ \"chart\": %s, \"colorRange\": %s,  \"dials\": %s}"
-      
-// Final Widget JSON data from template
-widgetJSONStr = widgetJSONTemplate % [widgetAppearancesConfigObj.to_json, colorDataObj.to_json, widgetDialStr]      
+    #
+    Widget dial data in array format, multiple values can be separated by comma e.g. ["81", "23", "45", ...]
+    widgetDialDataArray = ["81"]
+
+    # Dial value in JSON format
+    widgetDialDataStr = ""
+
+    #
+    Template
+    for dial value
+    widgetDialDataTemplate = "{ \"value\": \"%s\" },"
+
+    #
+    Iterates dial data array and converts them proper data format
+    widgetDialDataArray.each { | item |
+            data = widgetDialDataTemplate % [item]
+        widgetDialDataStr.concat(data)
+    }
+
+    #
+    Removing trailing comma
+    widgetDialDataStr = widgetDialDataStr.chop
+
+    # Formats dial value(s)
+    widgetDialTemplate = "{ \"dial\": [%s]}"
+    widgetDialStr = ""
+    widgetDialStr = widgetDialTemplate % [widgetDialDataStr]
+
+    # Final Widget JSON template
+    widgetJSONTemplate = "{ \"chart\": %s, \"colorRange\": %s,  \"dials\": %s}"
+
+    #
+    Final Widget JSON data from template
+    widgetJSONStr = widgetJSONTemplate % [widgetAppearancesConfigObj.to_json, colorDataObj.to_json, widgetDialStr]
+
+    # Rendering the widget
+    widget = Fusioncharts::Chart.new({
+        width: "400",
+        height: "250",
+        type: "angulargauge",
+        renderAt: "widgetContainer",
+        dataSource: widgetJSONStr
+    })
+
+    end
+
+def firstwidget
+@myWidget = getWidget
+end
+
+end      
 ```
 
 The template of the above sample is shown below:
 
 ```HTML
-<!-- Filename: `app/views/examples/fc_json.html.erb` -->
-<!-- **Step 3:** Render the chart**  **-->
+<<!-- Filename: app/views/examples/firstwidget.html.erb -->
+
 <h3>My Widget</h3>
 <div id="widgetContainer"></div>
-<%= @first_widget.render() %>
+<%=@myWidget.render() %>
 ```
 
 See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
@@ -318,79 +363,126 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 {% embed_data getting-started-your-first-map.js %}
 
-### Create an instance of the chart
+### Create an instance of the map
 
 In this step, we will create an instance of the chart type as `world` using FusionCharts class constructor, set the width and height (in pixels or %), and finally specify the data for the chart as JSON string format.
 
-> The default name of the file is `app/controllers/examples_controller.rb`.
+For this example, we have created a controller named `examples` and view named `firstchart`. To keep things simple we have placed all the chart rendering logics in the `examples` controller only.
 
-The `fc_json` action is defined to create the world map.
+> The example controller we created is `app/controllers/examples_controller.rb`.
 
 The code of the instance of the chart is given below:
 
 ```javascript
-map = Fusioncharts::Chart.new({
-    width: "600",
-    height: "400",
-    type: "maps/world",
-    renderAt: "mapContainer",
-    dataSource: mapJSONStr
-})
+# Rendering the Map
+       map = Fusioncharts::Chart.new({
+           width: "600",
+           height: "400",
+           type: "maps/world",
+           renderAt: "mapContainer",
+           dataSource: mapJSONStr
+       })
+
 ```
 
 The full code of the sample is:
 
 ```
-// Map appearance configuration
-mapAppearancesConfigObj = {
-    "caption" => "Average Annual Population Growth",
-    "subcaption" => " 1955-2015",
-    "numbersuffix" => "%",
-    "includevalueinlabels" => "1",
-    "labelsepchar" => ": ",
-    "entityFillHoverColor" => "#FFF9C4",
-    "theme" => "fusion"
-}
+#
+Filename: app / controllers / examples_controller.rb
+class ExamplesController < ApplicationController
 
-// Map color range data
-colorDataObj = { "minvalue" => "0", "code" => "#FFE0B2", "gradient" => "1",
-    "color" => [
-        {"minValue" => "0.5", "maxValue" => "1", "code" => "#FFD74D"},
-        {"minValue" => "1.0", "maxValue" => "2.0", "code" => "#FB8C00"},
-        {"minValue" => "2.0", "maxValue" => "3.0", "code" => "#E65100"}
+def getMap
+
+    # Map appearance configuration
+    mapAppearancesConfigObj = {
+        "caption" => "Average Annual Population Growth",
+        "subcaption" => " 1955-2015",
+        "numbersuffix" => "%",
+        "includevalueinlabels" => "1",
+        "labelsepchar" => ": ",
+        "entityFillHoverColor" => "#FFF9C4",
+        "theme" => "fusion"
+    }
+
+    #
+    Map color range data
+    colorDataObj = {
+        "minvalue" => "0",
+        "code" => "#FFE0B2",
+        "gradient" => "1",
+        "color" => [{
+                "minValue" => "0.5",
+                "maxValue" => "1",
+                "code" => "#FFD74D"
+            },
+            {
+                "minValue" => "1.0",
+                "maxValue" => "2.0",
+                "code" => "#FB8C00"
+            },
+            {
+                "minValue" => "2.0",
+                "maxValue" => "3.0",
+                "code" => "#E65100"
+            }
+        ]
+    }
+
+    #
+    Map data array
+    mapDataArray = [
+        ["NA", ".82", "1"],
+        ["SA", "2.04", "1"],
+        ["AS", "1.78", "1"],
+        ["EU", ".40", "1"],
+        ["AF", "2.58", "1"],
+        ["AU", "1.30", "1"]
     ]
-}
-      
-// Map data array
-mapDataArray = [
-    ["NA", ".82", "1"],
-    ["SA", "2.04", "1"],
-    ["AS", "1.78", "1"],
-    ["EU", ".40", "1"],
-    ["AF", "2.58", "1"],
-    ["AU", "1.30", "1"]
-]
 
-// Map data template
-mapDataTemplate = "{ \"id\": \"%s\", \"value\": \"%s\", \"showLabel\": \"%s\" },"
-      
-// Map data as JSON string
-mapDataJSONStr = ""
-      
-// Iterate all data in mapDataArray and converts it to actual data format
-mapDataArray.each {|item|
-    data = mapDataTemplate % [item[0], item[1], item[2]]
-    mapDataJSONStr.concat(data)
-}
+    # Map data template
+    mapDataTemplate = "{ \"id\": \"%s\", \"value\": \"%s\", \"showLabel\": \"%s\" },"
 
-// Removing trailing comma
-mapDataJSONStr = mapDataJSONStr.chop
+    #
+    Map data as JSON string
+    mapDataJSONStr = ""
 
-// Map JSON data template
-mapJSONTemplate = "{ \"chart\": %s, \"colorRange\": %s,  \"data\": [%s]}"
+    #
+    Iterate all data in mapDataArray and converts it to actual data format
+    mapDataArray.each { | item |
+            data = mapDataTemplate % [item[0], item[1], item[2]]
+        mapDataJSONStr.concat(data)
+    }
 
-// Map JSON data after combining all parts
-mapJSONStr = mapJSONTemplate % [mapAppearancesConfigObj.to_json, colorDataObj.to_json, mapDataJSONStr]
+    #
+    Removing trailing comma
+    mapDataJSONStr = mapDataJSONStr.chop
+
+    # Map JSON data template
+    mapJSONTemplate = "{ \"chart\": %s, \"colorRange\": %s,  \"data\": [%s]}"
+
+    #
+    Map JSON data after combining all parts
+    mapJSONStr = mapJSONTemplate % [mapAppearancesConfigObj.to_json, colorDataObj.to_json, mapDataJSONStr]
+
+    # Rendeing the Map
+    map = Fusioncharts::Chart.new({
+        width: "600",
+        height: "400",
+        type: "maps/world",
+        renderAt: "mapContainer",
+        dataSource: mapJSONStr
+    })
+
+
+
+    end
+
+def firstmap
+@myMap = getMap
+end
+
+end
 ```
 
 The template of the above sample is shown below:
@@ -398,9 +490,12 @@ The template of the above sample is shown below:
 ```HTML
 <!-- Filename: `app/views/examples/fc_json.html.erb` -->
 <!-- **Step 3:** Render the chart**  **-->
+<!-- Filename: app/views/examples/firstwidget.html.erb -->
+
 <h3>My Map</h3>
 <div id="mapContainer"></div>
-<%= @first_map.render() %>
+<%=@myMap.render() %>
+
 ```
 
 See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').

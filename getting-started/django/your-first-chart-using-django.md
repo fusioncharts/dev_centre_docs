@@ -216,7 +216,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 {% embed_data getting-started-your-first-widget.js %}
 
-### Create an instance for the chart
+### Create an instance for the gauge
 
 In this step, we will create an object for the chart type as **angularGauge** using FusionCharts class constructor, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
@@ -362,7 +362,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 {% embed_data getting-started-your-first-map.js %}
 
-### Create an instance for the chart
+### Create an instance for the map
 
 In this step, we will create an object for the map type as **world** using FusionCharts class constructor, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
