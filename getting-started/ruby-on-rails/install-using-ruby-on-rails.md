@@ -6,9 +6,9 @@ heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the FusionCharts Ruby on Rails wrapper that lets you create interactive, data-driven charts. It lets you generate the required JavaScript and HTML code as a string on the server, which is then used to render charts on a browser page.
+FusionCharts Suite XT includes the **FusionCharts Ruby on Rails** wrapper that lets you create interactive, data-driven charts. It lets you generate the required JavaScript and HTML code as a string on the server, which is then used to render charts on a browser page.
 
-In this article, we will show you how you can download and install the `FusionCharts Ruby on Rails` wrapper and all the other dependencies on your system.
+In this article, we will show you how you can download and install the **FusionCharts Ruby on Rails** wrapper and all the other dependencies on your system.
 
 ## Download FusionCharts Library
 
@@ -20,9 +20,9 @@ In this article, we will show you how you can download and install the `FusionCh
 
 ![Js Folder Structure]({% site.baseurl %}/images/js-folder-structure.png)
 
-* Copy the JavaScript files from above and paste them in the `vendor/assets/javascripts/fusioncharts/` folder.
+* Copy the JavaScript files from above and paste them in the **vendor/assets/javascripts/fusioncharts/** folder.
 
-* Add the following code lines in the `app/assets/javascripts/application.js` file:
+* Add the following code lines in the **app/assets/javascripts/application.js** file:
 
 ```
 //= require fusioncharts/fusioncharts
@@ -47,7 +47,7 @@ File Name|Description|
 `fusioncharts.overlappedbar2d.js`|This file is required to render the Overlapped Bar 2D chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedbar2d.js`.|
 `fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js`.|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
-`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from here. </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
+`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definitions of all the 1000+ maps offered by FusionMaps XT from [here]({}). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files (JSON & CSS). Refer each theme with their respective `JavaScript` and `CSS` file names.|
 
 ### Step 2
@@ -69,7 +69,7 @@ $bundle
 ```
 This command will automatically install the `fusioncharts-rails` gem.
 
-* You can also install the gem directly from the command line prompt, without making any edits to the Gemfile. To do this, use the code line given below:
+* You can also install the gem directly from the command line prompt, without making any edits to the **Gemfile**. To do this, use the code line given below:
 
 ```bash
 $gem install fusioncharts-rails
