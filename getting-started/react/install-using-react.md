@@ -243,6 +243,11 @@ You can include the fusioncharts class and React FusionCharts plugin using any o
 <pre><code class="custom-hlc language-javascript">
     import ReactFC from 'react-fusioncharts';
 </code></pre>
+<div><strong>To add charts, powercharts and widgets dependencies:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    // ReactFC.fcRoot(FusionCharts, Charts, [Module]);
+    ReactFC.fcRoot(FusionCharts, Charts, PowerCharts, Widgets);
+</code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
@@ -301,6 +306,11 @@ To register using a specific chart type, import the the fusioncharts class and t
 <div><strong>To include React FusionCharts plugin:</strong></div>
 <pre><code class="custom-hlc language-javascript">
     import ReactFC from 'react-fusioncharts';
+</code></pre>
+<div><strong>To add chart dependency:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    // ReactFC.fcRoot(FusionCharts, [ChartType]);
+    ReactFC.fcRoot(FusionCharts, Column2D);
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -416,6 +426,11 @@ You can include the map files via **ES5** using any of the following process:
 <pre><code class="custom-hlc language-javascript">
     import ReactFC from 'react-fusioncharts';
 </code></pre>
+<div><strong>To add the map and definition as the dependency to the core:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    // Maps -  reference from above
+    ReactFC.fcRoot(FusionCharts, Maps, World);   
+</code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
@@ -438,7 +453,8 @@ You can include the map files via **ES5** using any of the following process:
 </code></pre>
 <div><strong>To add the map and definition as the dependency to the core:</strong></div>
 <pre><code class="custom-hlc language-javascript">
-    ReactFC.fcRoot(FusionCharts, Maps, World);   // Maps -  reference from above
+    // Maps -  reference from above
+    ReactFC.fcRoot(FusionCharts, Maps, World);
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -471,6 +487,11 @@ You can include the map files via **ES6** using any of the following process:
 <pre><code class="custom-hlc language-javascript">
     import ReactFC from 'react-fusioncharts';
 </code></pre>
+<div><strong>To add the map and definition as the dependency to the core:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    // Maps -  reference from above
+    ReactFC.fcRoot(FusionCharts, Maps, World);
+</code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
@@ -493,7 +514,8 @@ You can include the map files via **ES6** using any of the following process:
 </code></pre>
 <div><strong>To add the map and definition as the dependency to the core:</strong></div>
 <pre><code class="custom-hlc language-javascript">
-    ReactFC.fcRoot(FusionCharts, Maps, World);   // Maps -  reference from above
+    // Maps -  reference from above
+    ReactFC.fcRoot(FusionCharts, Maps, World);
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -551,6 +573,10 @@ You can include the themes via **ES5** using any of the following process:
 <pre><code class="custom-hlc language-javascript">
     import ReactFC from 'react-fusioncharts';
 </code></pre>
+<div><strong>To add Fusion as dependency to the core:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    ReactFC.fcRoot(FusionCharts, Fusion);
+</code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
@@ -603,6 +629,10 @@ You can include the themes via **ES6** using any of the following process:
 <div><strong>To include React FusionCharts plugin:</strong></div>
 <pre><code class="custom-hlc language-javascript">
     import ReactFC from 'react-fusioncharts';
+</code></pre>
+<div><strong>To add ThemeEngine and Fusion as dependency to the core:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    ReactFC.fcRoot(FusionCharts, ThemeEngine, Fusion);
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
