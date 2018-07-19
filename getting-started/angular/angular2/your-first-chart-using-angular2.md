@@ -432,7 +432,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 ### Setup the main module
 
-In this step, we will setup the main module to create the **angularGauge** chart. The code is given below:
+In this step, we will setup the main module to create the **world** map. The code is given below:
 
 
 ```
