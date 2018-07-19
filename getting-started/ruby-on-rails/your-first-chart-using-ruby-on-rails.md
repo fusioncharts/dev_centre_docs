@@ -94,6 +94,15 @@ In the above code:
 * To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 
+The HTML template of the above sample is shown below:
+
+```HTML
+<!-- Filename: app/views/examples/firstchart.html.erb -->
+<h3>My Chart</h3>
+<div id="chartContainer"></div>
+<%=@myChart.render() %>
+```
+
 The full code for the above sample is:
 
 ```
@@ -170,15 +179,6 @@ def getChart
     end
 
 end
-```
-
-The HTML template of the above sample is shown below:
-
-```HTML
-<!-- Filename: app/views/examples/firstchart.html.erb -->
-<h3>My Chart</h3>
-<div id="chartContainer"></div>
-<%=@myChart.render() %>
 ```
 
 That's it! When you run this HTML page now, you should see a chart representing your data.
@@ -262,8 +262,7 @@ def getWidget
         "showToolTip" => "0"
     }
 
-    #
-    Widget color range data
+    # Widget color range data
     colorDataObj = {
         "color" => [{
                 "minValue" => "0",
@@ -283,27 +282,23 @@ def getWidget
         ]
     }
 
-    #
-    Widget dial data in array format, multiple values can be separated by comma e.g. ["81", "23", "45", ...]
+    # Widget dial data in array format, multiple values can be separated by comma e.g. ["81", "23", "45", ...]
     widgetDialDataArray = ["81"]
 
     # Dial value in JSON format
     widgetDialDataStr = ""
 
-    #
-    Template
+    # Template
     for dial value
     widgetDialDataTemplate = "{ \"value\": \"%s\" },"
 
-    #
-    Iterates dial data array and converts them proper data format
+    # Iterates dial data array and converts them proper data format
     widgetDialDataArray.each { | item |
             data = widgetDialDataTemplate % [item]
         widgetDialDataStr.concat(data)
     }
 
-    #
-    Removing trailing comma
+    # Removing trailing comma
     widgetDialDataStr = widgetDialDataStr.chop
 
     # Formats dial value(s)
@@ -314,8 +309,7 @@ def getWidget
     # Final Widget JSON template
     widgetJSONTemplate = "{ \"chart\": %s, \"colorRange\": %s,  \"dials\": %s}"
 
-    #
-    Final Widget JSON data from template
+    # Final Widget JSON data from template
     widgetJSONStr = widgetJSONTemplate % [widgetAppearancesConfigObj.to_json, colorDataObj.to_json, widgetDialStr]
 
     # Rendering the widget
@@ -396,8 +390,7 @@ The template of the above sample is shown below:
 The full code of the sample is:
 
 ```
-#
-Filename: app / controllers / examples_controller.rb
+# Filename: app / controllers / examples_controller.rb
 class ExamplesController < ApplicationController
 
 def getMap
@@ -413,8 +406,7 @@ def getMap
         "theme" => "fusion"
     }
 
-    #
-    Map color range data
+    # Map color range data
     colorDataObj = {
         "minvalue" => "0",
         "code" => "#FFE0B2",
@@ -437,8 +429,7 @@ def getMap
         ]
     }
 
-    #
-    Map data array
+    # Map data array
     mapDataArray = [
         ["NA", ".82", "1"],
         ["SA", "2.04", "1"],
@@ -451,26 +442,22 @@ def getMap
     # Map data template
     mapDataTemplate = "{ \"id\": \"%s\", \"value\": \"%s\", \"showLabel\": \"%s\" },"
 
-    #
-    Map data as JSON string
+    # Map data as JSON string
     mapDataJSONStr = ""
 
-    #
-    Iterate all data in mapDataArray and converts it to actual data format
+    # Iterate all data in mapDataArray and converts it to actual data format
     mapDataArray.each { | item |
             data = mapDataTemplate % [item[0], item[1], item[2]]
         mapDataJSONStr.concat(data)
     }
 
-    #
-    Removing trailing comma
+    # Removing trailing comma
     mapDataJSONStr = mapDataJSONStr.chop
 
     # Map JSON data template
     mapJSONTemplate = "{ \"chart\": %s, \"colorRange\": %s,  \"data\": [%s]}"
 
-    #
-    Map JSON data after combining all parts
+    # Map JSON data after combining all parts
     mapJSONStr = mapJSONTemplate % [mapAppearancesConfigObj.to_json, colorDataObj.to_json, mapDataJSONStr]
 
     # Rendeing the Map
