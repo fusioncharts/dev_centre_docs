@@ -133,18 +133,15 @@ The consolidated code (which also includes the `react.js`, `fusioncharts.js` and
 
 ```html
 <head>
-
     <meta charset="utf-8">
     <title>React - FusionCharts</title>
     <!-- react -->
     <script type="text/javascript" src="path/to/local/react.js"></script>
-
     <script type="text/javascript" src="path/to/local/react-dom.js"></script>
     <!-- FusionCharts -->
     <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
     <!-- React-FusionCharts -->
     <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
-
     <!-- FusionMaps -->
     <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
     <!--world -->
