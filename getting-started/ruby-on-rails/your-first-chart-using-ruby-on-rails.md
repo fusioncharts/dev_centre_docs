@@ -78,14 +78,14 @@ The `fc_json` action is defined to create the column 2D chart
 
 The code of the instance of the chart is given below:
 
-```chart = Fusioncharts::Chart.new({
+```
+chart = Fusioncharts::Chart.new({
     width: "600",
     height: "400",
     type: "column2d",
     renderAt: "chartContainer",
     dataSource: chartJSONDataStr
 })
-
 ```
 
 In the above code:
@@ -97,8 +97,7 @@ In the above code:
 The full code for the above sample is:
 
 ```
-#
-Filename: app / controllers / examples_controller.rb
+\#Filename: app / controllers / examples_controller.rb
 class ExamplesController < ApplicationController
 
 def getChart
