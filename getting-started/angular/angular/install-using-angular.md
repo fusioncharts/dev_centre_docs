@@ -79,7 +79,7 @@ import * as Overlappedbar2d from 'fusioncharts/fusioncharts.overlapped2d'; //Ove
 import * as Overlappedcolumn2d from 'fusioncharts/fusioncharts.overlappedcolumn2d'; //Overlapped Column 2D
 ```
 
-That completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular2/your-first-chart-using-angular2 '@@open-newtab').
+That completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular '@@open-newtab').
 
 ## Include Maps via NPM
 
