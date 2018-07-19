@@ -78,115 +78,21 @@ The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 <div class='tab-content'>
 <div class='tab json-tab active'>
 <pre><code class="custom-hlc language-cs">
-    //use fusionchart reference
-    using FusionCharts.Charts;
-    ...
-    ...
-    //store label-value pair
-    var dataValuePair = new List < KeyValuePair < string,
-        double >> ();
-
-    dataValuePair.Add(new KeyValuePair < string, double > ("Venezuela", 290));
-    dataValuePair.Add(new KeyValuePair < string, double > ("Saudi", 260));
-    dataValuePair.Add(new KeyValuePair < string, double > ("Canada", 180));
-    dataValuePair.Add(new KeyValuePair < string, double > ("Iran", 140));
-    dataValuePair.Add(new KeyValuePair < string, double > ("Russia", 115));
-    dataValuePair.Add(new KeyValuePair < string, double > ("UAE", 100));
-    dataValuePair.Add(new KeyValuePair < string, double > ("US", 30));
-    dataValuePair.Add(new KeyValuePair < string, double > ("China", 30));
-
-    StringBuilder jsonData = new StringBuilder();
-    StringBuilder data = new StringBuilder();
-    // store chart config name-config value pair
-
-    Dictionary < string, string > chartConfig = new Dictionary < string, string > ();
-    chartConfig.Add("caption", "Countries With Most Oil Reserves [2017-18]");
-    chartConfig.Add("subCaption", "In MMbbl = One Million barrels");
-    chartConfig.Add("xAxisName", "Country");
-    chartConfig.Add("yAxisName", "Reserves (MMbbl)");
-    chartConfig.Add("numberSuffix", "k");
-    chartConfig.Add("theme", "fusion");
-
-    // json data to use as chart data source
-    jsonData.Append("{'chart':{");
-    foreach(var config in chartConfig) {
-        jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
-    }
-    jsonData.Replace(",", "},", jsonData.Length - 1, 1);
-
-    // build  data object from label-value pair
-    data.Append("'data':[");
-
-    foreach(KeyValuePair < string, double > pair in dataValuePair) {
-        data.AppendFormat("{{'label':'{0}','value':'{1}'}},", pair.Key, pair.Value);
-    }
-    data.Replace(",", "]", data.Length - 1, 1);
-
-    jsonData.Append(data.ToString());
-    jsonData.Append("}");
-    //Create chart instance
+     //Create chart instance
     // charttype, chartID, width, height, data format, data
 
-    Chart chart = new Chart("column2d", "mychart", "800", "550", "json", jsonData.ToString());
-    Literal1.Text = chart.Render();
+    Chart MyFirstChart = new Chart("column2d", "MyFirstChart", "800", "550", "json", jsonData.ToString());
+    Literal1.Text = MyFirstChart.Render();
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab xml-tab'>
 <pre><code class="custom-hlc language-cv">
-    //Import fusionchart reference
-    Imports FusionCharts.Charts
-        ...
-        ...
-        'store label-value pair
-    Dim dataValuePair As New Dictionary(Of String, Double)
-    dataValuePair.Add("Venezuela", 290)
-    dataValuePair.Add("Saudi", 260)
-    dataValuePair.Add("Canada", 180)
-    dataValuePair.Add("Iran", 140)
-    dataValuePair.Add("Russia", 115)
-    dataValuePair.Add("UAE", 100)
-    dataValuePair.Add("US", 30)
-    dataValuePair.Add("China", 30)
-
-    Dim jsonData As New StringBuilder
-    Dim data As New StringBuilder
-
-        ' store chart config name-config value pair
-    Dim chartConfig As New Dictionary(Of String, String)
-    chartConfig.Add("caption", "Countries With Most Oil Reserves [2017-18]")
-    chartConfig.Add("subCaption", "In MMbbl = One Million barrels")
-    chartConfig.Add("xAxisName", "Country")
-    chartConfig.Add("yAxisName", "Reserves (MMbbl)")
-    chartConfig.Add("numberSuffix", "k")
-    chartConfig.Add("theme", "fusion")
-
-    ' json data to use as chart data source
-    jsonData.Append("{'chart':{")
-    For Each config In chartConfig
-    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value)
-    Next
-
-
-    jsonData.Replace(",", "},", jsonData.Length - 1, 1)
-
-    ' build  data object from label-value pair
-    data.Append("'data':[")
-
-    For Each pair In dataValuePair
-    data.AppendFormat("{{'label':'{0}','value':'{1}'}},", pair.Key, pair.Value)
-    Next
-
-
-    data.Replace(",", "]", data.Length - 1, 1)
-
-    jsonData.Append(data.ToString())
-    jsonData.Append("}")
     ' Create chart instance
     ' charttype, chartID, width, height, data format, data
-    Dim chart As New Chart("column2d", "first_chart", "600", "350", "json", jsonData.ToString())
-    Literal1.Text = chart.Render()
+    Dim MyFirstChart As New Chart("column2d", "first_chart", "600", "350", "json", jsonData.ToString())
+    Literal1.Text = MyFirstChart.Render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -199,35 +105,6 @@ In the above code:
 * We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using `width` and `height`.
 * To specify the data format as JSON/XML, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON/XML data is embedded as the value of the `dataSource` parameter.
-
-The aspx template of the above sample is shown below:
-
-<div class="code-wrapper">
-<ul class='code-tabs'>
-  <li class='active'><a data-toggle='json'>C#</a></li>
-  <li><a data-toggle='xml'>VB</a></li>
-</ul>
-<div class='tab-content'>
-<div class='tab json-tab active'>
-<pre><code class="custom-hlc language-cs">
-    &lt;div style="text-align:center"&gt;
-        &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
-    &lt;/div&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-<div class='tab xml-tab'>
-<pre><code class="custom-hlc language-cv">
-    &lt;div style="text-align:center"&gt;
-        &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
-    &lt;/div&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-</div>
-</div>
 
 The full code for the above sample is given below:
 
@@ -317,9 +194,9 @@ The full code for the above sample is given below:
                 //Create chart instance
                 // charttype, chartID, width, height, data format, data
 
-                Chart chart = new Chart("column2d", "first_chart", "800", "550", "json", jsonData.ToString());
+                Chart MyFirstChart = new Chart("column2d", "first_chart", "800", "550", "json", jsonData.ToString());
                 // render chart
-                Literal1.Text = chart.Render();
+                Literal1.Text = MyFirstChart.Render();
             }
 
         }
@@ -403,8 +280,8 @@ The full code for the above sample is given below:
     jsonData.Append("}")
     ' Create chart instance
     ' charttype, chartID, width, height, data format, data
-    Dim chart As New Chart("column2d", "first_chart", "600", "350", "json", jsonData.ToString())
-    Literal1.Text = chart.Render()
+    Dim MyFirstChart As New Chart("column2d", "first_chart", "600", "350", "json", jsonData.ToString())
+    Literal1.Text = MyFirstChart.Render()
     End Sub
     End Class
 </code></pre>
@@ -621,236 +498,23 @@ The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 <div class='tab-content'>
 <div class='tab json-tab active'>
 <pre><code class="custom-hlc language-cs">
-    //Include fusioncharts reference in page
-    ...
-    using FusionCharts.Charts;
-    ...
-    ...
-    //Create colorRange class
-    //It will store Min range Max range and specific color code for each range
-    class colorRange {
-        public int Min {
-            get;
-            set;
-        }
-        public int Max {
-            get;
-            set;
-        }
-        public string ColorCode {
-            get;
-            set;
-        }
-
-        public colorRange(int min, int max, string code) {
-            Min = min;
-            Max = max;
-            ColorCode = code;
-        }
-    }
-
-
-    // store chart config name-config value pair
-
-    Dictionary < string, string > chartConfig = new Dictionary < string, string > ();
-    chartConfig.Add("caption", "Nordstorm\\'s Customer Satisfaction Score for 2017");
-    chartConfig.Add("lowerLimit", "0");
-    chartConfig.Add("upperLimit", "100");
-    chartConfig.Add("showValue", "1");
-    chartConfig.Add("numberSuffix", "%");
-    chartConfig.Add("theme", "fusion");
-    chartConfig.Add("showToolTip", "0");
-    // colorRange class is our defined class
-    List < colorRange > color = new List < colorRange > ();
-    color.Add(new colorRange(0, 50, "#F2726F"));
-    color.Add(new colorRange(50, 75, "#FFC533"));
-    color.Add(new colorRange(75, 100, "#62B58F"));
-
-    //store dial configuration
-
-    var dial = new List < KeyValuePair < string,
-        string >> ();
-    dial.Add(new KeyValuePair < string, string > ("value", "81"));
-
-    // json data to use as chart data source
-    StringBuilder jsonData = new StringBuilder();
-    //build chart config object
-    jsonData.Append("{'chart':{");
-    foreach(var config in chartConfig) {
-        jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
-    }
-    jsonData.Replace(",", "},", jsonData.Length - 1, 1);
-
-    StringBuilder range = new StringBuilder();
-    //build colorRange object
-    range.Append("'colorRange':{");
-    range.Append("'color':[");
-    foreach(colorRange clr in color) {
-        range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode);
-    }
-    range.Replace(",", "]},", range.Length - 1, 1);
-    //build dials object
-    StringBuilder dials = new StringBuilder();
-    dials.Append("'dials':{");
-    dials.Append("'dial':[");
-    foreach(var dialCnf in dial) {
-        dials.AppendFormat("{{'{0}':'{1}'}},", dialCnf.Key, dialCnf.Value);
-    }
-    dials.Replace(",", "]}", dials.Length - 1, 1);
-
-    jsonData.Append(range.ToString());
-    jsonData.Append(dials.ToString());
-    jsonData.Append("}");
-
-    //Create gauge instance
+     //Create gauge instance
     // charttype, chartID, width, height, data format, data
 
-    Chart gauge = new Chart("angulargauge", "first_gauge", "400", "350", "json", jsonData.ToString());
-    Literal1.Text = gauge.Render();
+    Chart MyFirstGauge = new Chart("angulargauge", "first_gauge", "400", "350", "json", jsonData.ToString());
+    Literal1.Text = MyFirstGauge.Render();
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab xml-tab'>
 <pre><code class="custom-hlc language-cv">
-    'Import fusioncharts reference in page
-    ...
-    Imports FusionCharts.Charts
-        ...
-        ...
-        'Create colorRange class
-    'It will store Min range Max range And specific color code for each range
-    Class ColorRange
-    Private lowerLimit As Integer
-    Private upprLimit As Integer
-    Private code As String
-        'lower value of range set as property
-    Property Min() As Integer
-    Get
-    Return lowerLimit
-
-    End Get
-    Set(value As Integer)
-    lowerLimit = value
-    End Set
-    End Property
-        'upper value of range set as property
-    Property Max() As Integer
-    Get
-    Return upprLimit
-
-    End Get
-    Set(value As Integer)
-    upprLimit = value
-    End Set
-    End Property
-        ' specific color code for this range
-    Property ColorCode() As String
-    Get
-    Return code
-
-    End Get
-    Set(value As String)
-    code = value
-    End Set
-    End Property
-        'constructor
-    Public Sub New(ByVal lowerLimit As Integer, ByVal upperLimit As Integer, ByVal code As String)
-    Min = lowerLimit
-    Max = upperLimit
-    ColorCode = code
-    End Sub
-
-    End Class
-        'store chart config name-config value pair
-
-    Dim chartConfig As New Dictionary(Of String, String)
-    chartConfig.Add("caption", "Nordstorm\'s Customer Satisfaction Score for 2017")
-    chartConfig.Add("lowerLimit", "0")
-    chartConfig.Add("upperLimit", "100")
-    chartConfig.Add("showValue", "1")
-    chartConfig.Add("numberSuffix", "%")
-    chartConfig.Add("theme", "fusion")
-    chartConfig.Add("showToolTip", "0")
-
-    Dim color As New List(Of ColorRange)
-    color.Add(New ColorRange(0, 50, "#F2726F"))
-    color.Add(New ColorRange(50, 75, "#FFC533"))
-    color.Add(New ColorRange(75, 100, "#62B58F"))
-
-    'store dial configuration
-
-    Dim dial As New Dictionary(Of String, String)
-    dial.Add("value", "81")
-    'json data to use as chart data source
-    Dim jsonData As New StringBuilder
-        'build chart config object
-    jsonData.Append("{'chart':{")
-
-    For Each config In chartConfig
-    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value)
-    Next
-
-    jsonData.Replace(",", "},", jsonData.Length - 1, 1)
-
-    Dim range As New StringBuilder
-        'build colorRange object
-    range.Append("'colorRange':{")
-    range.Append("'color':[")
-    For Each clr In color
-
-    range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode)
-    Next
-    range.Replace(",", "]},", range.Length - 1, 1)
-    'build dials object
-    Dim dials As New StringBuilder
-    dials.Append("'dials':{")
-    dials.Append("'dial':[")
-    For Each dialCnf In dial
-
-    dials.AppendFormat("{{'{0}':'{1}'}},", dialCnf.Key, dialCnf.Value)
-    Next
-    dials.Replace(",", "]}", dials.Length - 1, 1)
-
-    jsonData.Append(range.ToString())
-    jsonData.Append(dials.ToString())
-    jsonData.Append("}")
-
     'Create gauge instance
     'charttype, chartID, width, height, data format, data
 
-    Dim gauge As New Chart("angulargauge", "first_gauge", "400", "350", "json", jsonData.ToString())
+    Dim MyFirstGauge As New Chart("angulargauge", "first_gauge", "400", "350", "json", jsonData.ToString())
     'render gauge
-    Literal1.Text = gauge.Render()
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-</div>
-</div>
-
-The .aspx template for the above sample is:
-
-<div class="code-wrapper">
-<ul class='code-tabs'>
-  <li class='active'><a data-toggle='json'>C#</a></li>
-  <li><a data-toggle='xml'>VB</a></li>
-</ul>
-<div class='tab-content'>
-<div class='tab json-tab active'>
-<pre><code class="custom-hlc language-cs">
-    &lt;div style="text-align:center"&gt;
-        &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
-    &lt;/div&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-<div class='tab xml-tab'>
-<pre><code class="custom-hlc language-cv">
-    &lt;div style="text-align:center"&gt;
-        &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
-    &lt;/div&gt;
+    Literal1.Text = MyFirstGauge.Render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -975,9 +639,9 @@ The full code for the above sample is given below:
                 //Create gauge instance
                 // charttype, chartID, width, height, data format, data
 
-                Chart gauge = new Chart("angulargauge", "first_gauge", "400", "350", "json", jsonData.ToString());
+                Chart MyFirstGauge = new Chart("angulargauge", "first_gauge", "400", "350", "json", jsonData.ToString());
                 //render gauge
-                Literal1.Text = gauge.Render();
+                Literal1.Text = MyFirstGauge.Render();
 
 
 
@@ -1118,9 +782,9 @@ The full code for the above sample is given below:
     'Create gauge instance
     'charttype, chartID, width, height, data format, data
 
-    Dim gauge As New Chart("angulargauge", "first_gauge", "400", "350", "json", jsonData.ToString())
+    Dim MyFirstGauge As New Chart("angulargauge", "first_gauge", "400", "350", "json", jsonData.ToString())
     'render gauge
-    Literal1.Text = gauge.Render()
+    Literal1.Text = MyFirstGauge.Render()
     End Sub
     End Class
 </code></pre>
@@ -1167,311 +831,21 @@ The code to render a chart using `.aspx.cs` or `.aspx.vb` file is given below:
 <div class='tab-content'>
 <div class='tab json-tab active'>
 <pre><code class="custom-hlc language-cs">
-    //Include fusioncharts reference in page
-    ...
-    using FusionCharts.Charts;
-    ...
-    ...
-    //Create colorRange class
-    //It will store Min range Max range and specific color code for each range
-
-    class colorRange {
-        public double Min {
-            get;
-            set;
-        }
-        public double Max {
-            get;
-            set;
-        }
-        public string ColorCode {
-            get;
-            set;
-        }
-
-        public colorRange(double min, double max, string code) {
-            Min = min;
-            Max = max;
-            ColorCode = code;
-        }
-    }
-    //Create countryData class
-    //It will store id, value and show label for each country
-
-    class countryData {
-        public string ID {
-            get;
-            set;
-        }
-        public double Value {
-            get;
-            set;
-        }
-        public int ShowLabel {
-            get;
-            set;
-        }
-
-        public countryData(string id, double value, int showLabel) {
-            ID = id;
-            Value = value;
-            ShowLabel = showLabel;
-
-        }
-
-    }
-
-    // store chart config name-config value pair
-    Dictionary < string, string > chartConfig = new Dictionary < string, string > ();
-    chartConfig.Add("caption", "Average Annual Population Growth");
-    chartConfig.Add("subCaption", " 1955-2015");
-    chartConfig.Add("includevalueinlabels", "1");
-    chartConfig.Add("labelsepchar", ": ");
-    chartConfig.Add("numberSuffix", "%");
-    chartConfig.Add("entityFillHoverColor", "#FFF9C4");
-    chartConfig.Add("theme", "fusion");
-
-    // store color code for different range
-    List < colorRange > color = new List < colorRange > ();
-    color.Add(new colorRange(0.5, 1.0, "#FFD74D"));
-    color.Add(new colorRange(1.0, 2.0, "#FB8C00"));
-    color.Add(new colorRange(2.0, 3.0, "#E65100"));
-
-    // store country data
-    List < countryData > countries = new List < countryData > ();
-    countries.Add(new countryData("NA", .82, 1));
-    countries.Add(new countryData("SA", 2.04, 1));
-    countries.Add(new countryData("AS", 1.78, 1));
-    countries.Add(new countryData("EU", .40, 1));
-    countries.Add(new countryData("AF", 2.58, 1));
-    countries.Add(new countryData("AU", 1.30, 1));
-
-    // json data to use as chart data source
-    StringBuilder jsonData = new StringBuilder();
-    //build chart config object
-    jsonData.Append("{'chart':{");
-    foreach(var config in chartConfig) {
-        jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
-    }
-    jsonData.Replace(",", "},", jsonData.Length - 1, 1);
-
-    StringBuilder range = new StringBuilder();
-    //build colorRange object
-    range.Append("'colorRange':{");
-    range.Append("'color':[");
-    foreach(colorRange clr in color) {
-        range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode);
-    }
-    range.Replace(",", "]},", range.Length - 1, 1);
-
-    // build data object
-    StringBuilder data = new StringBuilder();
-    data.Append("'data':[");
-    foreach(countryData country in countries) {
-        data.AppendFormat("{{'id':'{0}','value':'{1}','showLabel':'{2}'}},", country.ID, country.Value, country.ShowLabel);
-    }
-    data.Replace(",", "]", data.Length - 1, 1);
-    jsonData.Append(range);
-    jsonData.Append(data);
-    jsonData.Append("}");
-    //Create map instance
+     //Create map instance
     // map type, mapid, width, height, data format, data
 
-    Chart map = new Chart("world", "first_map", "800", "500", "json", jsonData.ToString());
+    Chart MyFirstMap = new Chart("world", "first_map", "800", "500", "json", jsonData.ToString());
     //render map
-    Literal1.Text = map.Render();
+    Literal1.Text = MyFirstMap.Render();
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab xml-tab'>
 <pre><code class="custom-hlc language-cv">
-    'Import fusioncharts reference in page
-    ...
-    Imports FusionCharts.Charts
-        ...
-        ...
-
-        'Create colorRange class
-    'It will store Min range Max range And specific color code for each range
-    Class ColorRange
-    Private lowerLimit As Double
-
-    Private upprLimit As Double
-    Private code As String
-        'lower value of range set as property
-    Property Min() As Double
-    Get
-    Return lowerLimit
-
-    End Get
-    Set(value As Double)
-    lowerLimit = value
-    End Set
-    End Property
-        'upper value of range set as property
-    Property Max() As Double
-    Get
-    Return upprLimit
-
-    End Get
-    Set(value As Double)
-    upprLimit = value
-    End Set
-    End Property
-        ' specific color code for this range
-    Property ColorCode() As String
-    Get
-    Return code
-
-    End Get
-    Set(value As String)
-    code = value
-    End Set
-    End Property
-        'constructor
-    Public Sub New(ByVal lowerLimit As Double, ByVal upperLimit As Double, ByVal code As String)
-    Min = lowerLimit
-    Max = upperLimit
-    ColorCode = code
-    End Sub
-
-    End Class
-        'Create countryData class
-    'It will store id, value And show label for each country
-    Class CountryData
-    Private cid As String
-    Private cvalue As Double
-    Private label As Integer
-        'country id set as a property
-    Property ID() As String
-    Get
-    Return cid
-
-    End Get
-    Set(value As String)
-    cid = value
-    End Set
-    End Property
-        'data value for a country set as property
-    Property Value() As Double
-    Get
-    Return cvalue
-
-    End Get
-    Set(value As Double)
-    cvalue = value
-    End Set
-    End Property
-        ' whether show label or not
-    Property ShowLabel() As Integer
-    Get
-    Return label
-
-    End Get
-    Set(value As Integer)
-    label = value
-    End Set
-    End Property
-        'constructor
-    Public Sub New(ByVal cntryid As String, ByVal val As Double, ByVal lbl As Integer)
-    ID = cntryid
-    Value = val
-    ShowLabel = lbl
-    End Sub
-
-    End Class
-        ' store chart config name-config value pair
-    Dim chartConfig As New Dictionary(Of String, String)
-    chartConfig.Add("caption", "Average Annual Population Growth")
-    chartConfig.Add("subCaption", " 1955-2015")
-    chartConfig.Add("includevalueinlabels", "1")
-    chartConfig.Add("labelsepchar", ": ")
-    chartConfig.Add("numberSuffix", "%")
-    chartConfig.Add("entityFillHoverColor", "#FFF9C4")
-    chartConfig.Add("theme", "fusion")
-
-    'store color code for different range
-    Dim color As New List(Of ColorRange)
-    color.Add(New ColorRange(0.5, 1.0, "#FFD74D"))
-    color.Add(New ColorRange(1.0, 2.0, "#FB8C00"))
-    color.Add(New ColorRange(2.0, 3.0, "#E65100"))
-
-    'store country data
-    Dim countries As New List(Of CountryData)
-    countries.Add(New CountryData("NA", 0.82, 1))
-    countries.Add(New CountryData("SA", 2.04, 1))
-    countries.Add(New CountryData("AS", 1.78, 1))
-    countries.Add(New CountryData("EU", 0.4, 1))
-    countries.Add(New CountryData("AF", 2.58, 1))
-    countries.Add(New CountryData("AU", 1.3, 1))
-
-    'json data to use as chart data source
-    Dim jsonData As New StringBuilder
-        'build chart config object
-    jsonData.Append("{'chart':{")
-    For Each config In chartConfig
-
-    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value)
-    Next
-    jsonData.Replace(",", "},", jsonData.Length - 1, 1)
-
-    Dim range As New StringBuilder
-        'build colorRange object
-    range.Append("'colorRange':{")
-    range.Append("'color':[")
-    For Each clr In color
-
-    range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode)
-    Next
-    range.Replace(",", "]},", range.Length - 1, 1)
-
-    'build data object
-    Dim data As New StringBuilder
-    data.Append("'data':[")
-    For Each country In countries
-
-    data.AppendFormat("{{'id':'{0}','value':'{1}','showLabel':'{2}'}},", country.ID, country.Value, country.ShowLabel)
-    Next
-    data.Replace(",", "]", data.Length - 1, 1)
-    jsonData.Append(range)
-    jsonData.Append(data)
-    jsonData.Append("}")
-    'Create map instance
-    'map type, mapid, width, height, data format, data
-
-    Dim map As New Chart("world", "first_map", "800", "500", "json", jsonData.ToString())
+    Dim MyFirstMap As New Chart("world", "first_map", "800", "500", "json", jsonData.ToString())
     'render map
-    Literal1.Text = map.Render()
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-</div>
-</div>
-
-The .aspx template for the above sample is:
-
-<div class="code-wrapper">
-<ul class='code-tabs'>
-  <li class='active'><a data-toggle='json'>C#</a></li>
-  <li><a data-toggle='xml'>VB</a></li>
-</ul>
-<div class='tab-content'>
-<div class='tab json-tab active'>
-<pre><code class="custom-hlc language-cs">
-    &lt;div style="text-align:center"&gt;
-        &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
-    &lt;/div&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-<div class='tab xml-tab'>
-<pre><code class="custom-hlc language-cv">
-    &lt;div style="text-align:center"&gt;
-        &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
-    &lt;/div&gt;
+    Literal1.Text = MyFirstMap.Render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -1625,9 +999,9 @@ The full code for the above sample is given below:
                 //Create map instance
                 // map type, mapid, width, height, data format, data
 
-                Chart map = new Chart("world", "first_map", "800", "500", "json", jsonData.ToString());
+                Chart MyFirstMap = new Chart("world", "first_map", "800", "500", "json", jsonData.ToString());
                 //render map
-                Literal1.Text = map.Render();
+                Literal1.Text = MyFirstMap.Render();
             }
         }
     }
@@ -1811,9 +1185,9 @@ The full code for the above sample is given below:
     'Create map instance
     'map type, mapid, width, height, data format, data
 
-    Dim map As New Chart("world", "first_map", "800", "500", "json", jsonData.ToString())
+    Dim MyFirstMap As New Chart("world", "first_map", "800", "500", "json", jsonData.ToString())
     'render map
-    Literal1.Text = map.Render()
+    Literal1.Text = MyFirstMap.Render()
     End Sub
 
     End Class
