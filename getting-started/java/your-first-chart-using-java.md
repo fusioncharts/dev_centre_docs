@@ -70,67 +70,9 @@ For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attri
 
 In this step, we will create an instance of the chart type as **column2d**. Import FusionCharts reference to your page, add &lt;div&gt; to render the chart and set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-**Step 1**
-
-Firstly, import FusionCharts reference to your `.jsp` page.
-
-```
-<%@page import="fusioncharts.FusionCharts" %>
-```
-
-**Step 2**
-
-Create a container using &lt;div&gt;, to render the chart.
-
-```HTML
-<div id="chart"></div>
-```
-
-The code to render the chart is given below:
+Create the instance for the chart as shown below:
 
 ```jsp
-// store chart config name-config value pair
-Map < String, String > chartConfig = new HashMap < String, String > ();
-chartConfig.put("caption", "Countries With Most Oil Reserves [2017-18]");
-chartConfig.put("subCaption", "In MMbbl = One Million barrels");
-chartConfig.put("xAxisName", "Country");
-chartConfig.put("yAxisName", "Reserves (MMbbl)");
-chartConfig.put("numberSuffix", "k");
-chartConfig.put("theme", "fusion");
-
-//store label-value pair
-Map < String, Integer > dataValuePair = new HashMap < String, Integer > ();
-dataValuePair.put("Venezuela", 290);
-dataValuePair.put("Saudi", 260);
-dataValuePair.put("Canada", 180);
-dataValuePair.put("Iran", 140);
-dataValuePair.put("Russia", 115);
-dataValuePair.put("UAE", 100);
-dataValuePair.put("US", 30);
-dataValuePair.put("China", 30);
-
-StringBuilder jsonData = new StringBuilder();
-StringBuilder data = new StringBuilder();
-// json data to use as chart data source
-jsonData.append("{'chart':{");
-for (Map.Entry conf: chartConfig.entrySet()) {
-    jsonData.append("'" + conf.getKey() + "':'" + conf.getValue() + "',");
-}
-
-jsonData.replace(jsonData.length() - 1, jsonData.length(), "},");
-
-// build  data object from label-value pair
-data.append("'data':[");
-
-for (Map.Entry pair: dataValuePair.entrySet()) {
-    data.append("{'label':'" + pair.getKey() + "','value':'" + pair.getValue() + "'},");
-}
-data.replace(data.length() - 1, data.length(), "]");
-
-jsonData.append(data.toString());
-jsonData.append("}");
-
-
 //Create chart instance
 // charttype, chartID, width, height,containerid, data format, data
 FusionCharts firstChart = new FusionCharts(
@@ -151,6 +93,12 @@ In the above code:
 * We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 700x400 pixels using `width` and `height`.
 * To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON data is embedded as the value of the `dataSource` parameter.
+
+Create a container using &lt;div&gt;, to render the chart.
+
+```HTML
+<div id="chart"></div>
+```
 
 The full code for the above sample is given below:
 
@@ -264,95 +212,11 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 In this step, we will create an instance of the chart type as `angularGauge`, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-**Step 1**
-
-Firstly, import FusionCharts reference to your `.jsp` page.
-
-```
-<%@page import="fusioncharts.FusionCharts" %>
-```
-
-**Step 2**
-
-Create a container using &lt;div&gt;, to render the chart.
-
-```HTML
-<div id="gauge"></div>
-```
-
-The code to render the chart is given below:
+To create the instance of the chart follow the code below:
 
 ```jsp
-<%!
-    //Create colorRange class
-    //It will store Min range Max range and specific color code for each range
-    private class ColorRange
-    {
-        public  int min,max;
-        public  String colorCode;
-        public ColorRange(int min,int max, String code)
-        {
-            this.min = min;
-            this.max = max;
-            this.colorCode = code;
-        }
-        
-    }
-%>
-<%
-    //store chart config name-config value pair
-    Map<String, String> chartConfig = new HashMap<String, String>();
-    chartConfig.put("caption", "Nordstorms Customer Satisfaction Score for 2017");
-    chartConfig.put("lowerLimit", "0");
-    chartConfig.put("upperLimit", "100");
-    chartConfig.put("showValue", "1");
-    chartConfig.put("numberSuffix", "%");
-    chartConfig.put("theme", "fusion");
-    chartConfig.put("showToolTip", "0");
-    //store dial value config
-    Map<String,String> dial = new HashMap<String,String>();
-    dial.put("value","81");
-    //store color range-color
-    ArrayList<ColorRange> color = new ArrayList<ColorRange>();
-    color.add(new ColorRange(0,50,"#F2726F"));
-    color.add(new ColorRange(50,75,"#FFC533"));
-    color.add(new ColorRange(75,100,"#62B58F"));
-
-    //json data to use as chart data source
-    StringBuilder jsonData = new StringBuilder();
-    //build chart config object
-    jsonData.append("{'chart':{");
-    for(Map.Entry conf:chartConfig.entrySet())
-    {
-        jsonData.append("'" + conf.getKey()+"':'"+conf.getValue() + "',");
-    }
-    jsonData.replace(jsonData.length() - 1, jsonData.length() ,"},");
-
-    StringBuilder range = new StringBuilder();
-    //build colorRange object
-    range.append("'colorRange':{");
-    range.append("'color':[");
-    for(int i =0; i< color.size(); i++)
-    {
-        range.append("{'minValue':'" + color.get(i).min + "','maxValue':'" + color.get(i).max + "','code':'" + color.get(i).colorCode +"'},");
-    }
-    range.replace(range.length() - 1, range.length(),"]},");
-    //build dials object
-    StringBuilder dials = new StringBuilder();
-    dials.append("'dials':{");
-    dials.append("'dial':[");
-    for(Map.Entry dialCnf:dial.entrySet())
-    {
-        dials.append("{'" + dialCnf.getKey() + "':'" + dialCnf.getValue() +"'},");
-    }
-    dials.replace(dials.length() - 1, dials.length(),"]}");
-
-    jsonData.append(range.toString());
-    jsonData.append(dials.toString());
-    jsonData.append("}");
-
     //Create gauge instance
-    // charttype, chartID, width, height,container id, data format, data
+    // gaugetype, gaugeID, width, height,container id, data format, data
     FusionCharts gauge = new FusionCharts(
         "angularGauge", 
         "first_gauge", 
@@ -364,6 +228,12 @@ The code to render the chart is given below:
     );
 %>
 <%= gauge.render() %>
+```
+
+Create a container using &lt;div&gt;, to render the chart.
+
+```HTML
+<div id="gauge"></div>
 ```
 
 The full code for the above sample is given below:
@@ -450,7 +320,7 @@ The full code for the above sample is given below:
             jsonData.append("}");
 
             //Create gauge instance
-            // charttype, chartID, width, height,container id, data format, data
+            // gaugetype, gaugeID, width, height,container id, data format, data
             FusionCharts gauge = new FusionCharts(
                 "angularGauge", 
                 "first_gauge", 
@@ -495,120 +365,11 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 In this step, we will create an instance of the map type as `world`, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-**Step 1**
-
-Firstly, import FusionCharts reference to your `.jsp` page.
-
-```
-<%@page import="fusioncharts.FusionCharts" %>
-```
-
-**Step 2**
-
-Create a container using &lt;div&gt;, to render the chart.
-
-```HTML
-<div id="map"></div>
-```
-
-The code to render the chart is given below:
+To create the map instance follow the ecode given below:
 
 ```jsp
-<%!
- //Create colorRange class
-   //It will store Min range Max range and specific color code for each range
-
-   class ColorRange
-   {
-       public double min;
-       public double max;
-       public String colorCode;
-
-       public ColorRange(double min, double max, String code)
-       {
-           this.min = min;
-           this.max = max;
-           this.colorCode = code;
-       }
-   }
-   //Create countryData class
-   //It will store id, value and show label for each country
-
-   class CountryData
-   {
-       public String id;
-       public double value;
-       public int showLabel;
-       
-       public CountryData(String id,  double value, int showLabel)
-       {
-           this.id = id;
-           this.value = value;
-           this.showLabel = showLabel;
-
-       }
-
-   }
-   %>
-    <%
-// store chart config name-config value pair
-Map<String, String> chartConfig = new HashMap<String, String>();
-chartConfig.put("caption", "Average Annual Population Growth");
-chartConfig.put("subCaption", " 1955-2015");
-chartConfig.put("includevalueinlabels", "1");
-chartConfig.put("labelsepchar", ": ");
-chartConfig.put("numberSuffix", "%");
-chartConfig.put("entityFillHoverColor", "#FFF9C4");
-chartConfig.put("theme", "fusion");
-
-// store color code for different range
-ArrayList<ColorRange> color = new ArrayList<ColorRange>();
-color.add(new ColorRange(0.5, 1.0, "#FFD74D"));
-color.add(new ColorRange(1.0, 2.0, "#FB8C00"));
-color.add(new ColorRange(2.0, 3.0, "#E65100"));
-
-// store country data
-ArrayList<CountryData> countries = new ArrayList<CountryData>();
-countries.add(new CountryData("NA", .82, 1));
-countries.add(new CountryData("SA", 2.04, 1));
-countries.add(new CountryData("AS", 1.78, 1));
-countries.add(new CountryData("EU", .40, 1));
-countries.add(new CountryData("AF", 2.58, 1));
-countries.add(new CountryData("AU", 1.30, 1));
-
-// json data to use as chart data source
-StringBuilder jsonData = new StringBuilder();
-//build chart config object
-jsonData.append("{'chart':{");
-for(Map.Entry cnf :chartConfig.entrySet())
-{
-    jsonData.append("'" + cnf.getKey() + "':'" + cnf.getValue() +"',");
-}
-jsonData.replace(jsonData.length() - 1, jsonData.length(),"},");
-
-StringBuilder range = new StringBuilder();
-//build colorRange object
-range.append("'colorRange':{");
-range.append("'color':[");
-for(int i = 0 ; i < color.size();i++)
-{
-    range.append("{'minValue':'"+ color.get(i).min +"','maxValue':'"+ color.get(i).max +"','code':'"+ color.get(i).colorCode +"'},");
-}
-range.replace(range.length() - 1, range.length(),"]},");
-
-// build data object
-StringBuilder data = new StringBuilder();
-data.append("'data':[");
-for(int i =0; i < countries.size(); i++)
-{
-    data.append("{'id':'" + countries.get(i).id + "','value':'" + countries.get(i).value +"','showLabel':'" +countries.get(i).showLabel+ "'},");
-}
-data.replace(data.length() - 1, data.length(),"]");
-jsonData.append(range);
-jsonData.append(data);
-jsonData.append("}");
-//Create gauge instance
-// charttype, chartID, width, height,container id, data format, data
+//Create map instance
+// maptype, mapID, width, height,container id, data format, data
 FusionCharts map = new FusionCharts(
     "world", 
     "first_map", 
@@ -619,6 +380,12 @@ FusionCharts map = new FusionCharts(
     jsonData.toString()
 );
 %>
+```
+
+Create a container using &lt;div&gt;, to render the chart.
+
+```HTML
+<div id="map"></div>
 ```
 
 The full code for the above sample is given below:
@@ -727,8 +494,8 @@ The full code for the above sample is given below:
             jsonData.append(range);
             jsonData.append(data);
             jsonData.append("}");
-            //Create gauge instance
-            // charttype, chartID, width, height,container id, data format, data
+            //Create map instance
+            // maptype, mapID, width, height,container id, data format, data
             FusionCharts map = new FusionCharts(
                 "world", 
                 "first_map", 
