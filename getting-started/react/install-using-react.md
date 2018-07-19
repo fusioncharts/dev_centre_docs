@@ -6,7 +6,7 @@ heading: Installation
 chartPresent: false
 ---
 
-The **React-FusionCharts** component lets you include **FusionCharts** in your **React** projects and adds interactive JavaScript charts and graphs to your React applications. Before we get into the installation process of the component, let's take a look at what sets the React-FusionCharts component apart.
+The **React-FusionCharts** component lets you include **FusionCharts** in your **React** projects and adds interactive JavaScript charts and graphs to your React applications. Before we get into the installation process of the component, let's take a look at what sets the **React-FusionCharts** component apart.
 
 Some of the basic features of the React component are:
 
@@ -23,17 +23,15 @@ In this article, we will show you how you to download and install the React-Fusi
 <table>
     <tr>
         <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/react/install-using-react#install-using-direct-javascript-files-2)</td>
-        <td align="center">[NPM]({% site.baseurl %}/getting-started/react/install-using-react#install-fusioncharts-via-npm-5)</td>
+        <td align="center">[npm]({% site.baseurl %}/getting-started/react/install-using-react#install-fusioncharts-via-npm-5)</td>
     </tr>
 </table>
 
 ## Install using Direct JavaScript files
 
-In order to install and start working with React-FusionCharts, you need to:
+In order to install and start working with **React-FusionCharts**, you need to:
 
-* [Download](https://reactjs.org/docs/getting-started.html)the React core library.
-
-* [Download](https://www.fusioncharts.com/react-charts)the React-FusionCharts plugin which contains the react-fusioncharts.js file.
+* [Download](https://www.fusioncharts.com/react-charts)the **React-FusionCharts** plugin which contains the react-fusioncharts.js file.
 
 * [Download](https://www.fusioncharts.com/download/)the FusionCharts Suite XT which contains the necessary JavaScript files.
 
@@ -43,7 +41,7 @@ Installation of FusionCharts Suite XT merely involves copying and pasting the Ja
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
 
-Following is the list of JavaScript files present in your fusioncharts-suite-xt folder:
+Following is the list of JavaScript files present in your **fusioncharts-suite-xt** folder:
 
 File Name|Description|
 -|-
@@ -58,7 +56,7 @@ File Name|Description|
 `fusioncharts.overlappedbar2d.js`|This file is required to render the Overlapped Bar 2D chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedbar2d.js`.|
 `fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js`.|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
-`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from here. </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
+`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definitions of all the 1000+ maps offered by FusionMaps XT from [here]({}). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files (JSON & CSS). Refer each theme with their respective `JavaScript` and `CSS` file names.|
 
 In order to install, create an HTML file and follow the steps below.
@@ -183,7 +181,7 @@ The fusioncharts.theme.fusion.js file sets the theme as fusion.
 
 ## Install FusionCharts via npm
 
-This section outlines the steps to be executed for installing all the node modules via NPM and rendering charts using the React-FusionCharts component.
+This section outlines the steps to be executed for installing all the node modules via npm and rendering charts using the React-FusionCharts component.
 
 > **The fusioncharts package installed by npm contains files for all charts and widgets and only two map definition files - for the World map and the USA map.**
 
@@ -280,9 +278,9 @@ You can include the fusioncharts class and React FusionCharts plugin using any o
 </div>
 </div>
 
-### Include only Specific Modules
+### Include only specific modules
 
-To register using a specific chart type, import the the fusioncharts class and then the specific chart (instead of all the charts). Also, you need to add the dependency for the specific chart type as shown in the code below:
+To register using a specific chart type, import the `fusioncharts` class and then the specific chart (instead of all the charts). Also, you need to add the dependency for the specific chart type as shown in the code below:
 
 <div class="code-wrapper">
 <ul class='code-tabs'>
@@ -339,7 +337,7 @@ To register using a specific chart type, import the the fusioncharts class and t
 
 ### Register using multiple specific chart types
 
-To register using multiple specific chart types, import the specific charts instead of all the charts after importing the fusioncharts class. Also, you need to add the dependency for all the specific chart types as shown in the code below:
+To register using multiple specific chart types, import the specific charts instead of all the charts after importing the `fusioncharts` class. Also, you need to add the dependency for all the specific chart types as shown in the code below:
 
 <div class="code-wrapper">
 <ul class='code-tabs'>
@@ -396,7 +394,7 @@ To register using multiple specific chart types, import the specific charts inst
 </div>
 </div>
 
-## Include Maps via NPM
+## Include Maps via npm
 
 You can include the map files via **ES5** using any of the following process:
 
@@ -520,13 +518,13 @@ You can include the map files via **ES6** using any of the following process:
 </div>
 </div>
 
-If you want to render a map which is not in the fusioncharts package(world and USA), then you need to install **fusionmaps** which contain all the ES6 map definition:
+If you want to render a map which is not in the **fusioncharts** package (World and USA), then you need to install **fusionmaps** which contain all the ES6 map definition:
 
 ```
 npm install fusionmaps
 ```
 
-ES-6 definitions can be found in `node_modules/fusionmaps/maps/fusioncharts.[MAP-ALIAS].js`
+ES6 definitions can be found in `node_modules/fusionmaps/maps/fusioncharts.[MAP-ALIAS].js`
 
 If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
 
@@ -537,7 +535,7 @@ ReactFusionCharts.fcRoot(FusionCharts, Maps);   // Maps -  reference from above
 ReactFusionCharts.fcRoot(FusionCharts, World);  // World - reference from above
 ```
 
-### Include Themes via NPM
+### Include Themes via npm
 
 FusionCharts Suite XT ships with the following predefined themes:
 

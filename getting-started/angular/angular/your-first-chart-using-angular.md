@@ -5,7 +5,7 @@ heading: Your First Chart in Angular using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and angular-FusionCharts Component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-gauge-9) and a [map]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-map-14).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and **angular-FusionCharts** component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-gauge-9) and a [map]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-map-14).
 
 Before going through this article, please [install]({% site.baseurl %}/getting-started/angular/angular/install-using-angular '@@open-newtab') `angular-fusioncharts` plugin, if not already installed.
 
@@ -87,9 +87,9 @@ Both the `chart` object and the `data` array contains a set of key-value pairs k
 
 #### Functional Attributes
 
-Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties. The list of functional attributes used in the above code are:
+Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The functional attributes used in the above code are:
 
-* `showLabels` sets the  configuration whether the x-axis labels will be displayed or not.
+* `showLabels` sets the configuration whether the x-axis labels will be displayed or not.
 * `showValue` sets the configuration whether data values will be displayed along with the data plot on chart.
 * `caption` sets the caption of the chart.
 * `subcaption` sets the sub-caption of the chart.
@@ -99,7 +99,7 @@ Functional attributes let you control a variety of functional elements on the ch
 
 #### Cosmetics Attributes
 
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click here.
+Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's look and feel, no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click [here]({}).
 
 For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
@@ -129,8 +129,8 @@ export class AppModule {
 }
 ```
 
-> &lt;fusioncharts&gt;&lt;/fusioncharts&gt; component is available to use in any component throughout your app.
-> We will render our first chart in the main app.component.
+> &lt;fusioncharts&gt;&lt;/fusioncharts&gt; component is available for use in any component throughout your app.
+> We will render our first chart in the main `app.component`.
 
 ### Add data to `app.component.ts`
 
@@ -200,17 +200,17 @@ Add the following code to `app.component.html`:
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
 
-Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
+Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'), or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
+Gauges are powerful tools that can showcase information using a radial scale to display data, while a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
 
-To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
+To start with, we'll build a simple gauge showcasing Nordstrom's Customer Satisfaction Score as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-The thresholds for the above sample has been defined using the following range.
+The thresholds for the above sample have been defined using the following range.
 
 Range|Color|Hex Code|
 -|-|-
@@ -228,7 +228,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 {
     // Chart Configuration
     "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
         "lowerLimit": "0",
         "upperLimit": "100",
         "showValue": "1",
@@ -300,7 +300,7 @@ export class AppComponent {
     dataSource: Object;
     constructor() {
         this.dataSource = {
-            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+            "caption": "Nordstrom's Customer Satisfaction Score for 2017",
             "lowerLimit": "0",
             "upperLimit": "100",
             "showValue": "1",
@@ -546,7 +546,7 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of usa. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of USA. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
 ## Problem rendering the chart?
 
