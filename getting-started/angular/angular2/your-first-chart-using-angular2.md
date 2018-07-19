@@ -113,13 +113,14 @@ import { FusionChartsModule } from 'angular-fusioncharts';
 import * as FusionCharts from 'fusioncharts';
 import * as Charts from 'fusioncharts/fusioncharts.charts'; // Charts
 
+FusionChartsModule.fcRoot(FusionCharts, Charts);
 @NgModule({
     declarations: [
         AppComponent
     ],
     imports: [
-        BrowserModule,
-        FusionChartsModule.fcRoot(FusionCharts, Charts),  
+        BrowserModule, 
+        FusionChartsModule 
     ],
     providers: [],
     bootstrap: [ AppComponent ]
@@ -267,15 +268,16 @@ In this step, we will setup the main module to create the **angularGauge** chart
 ```
 import { FusionChartsModule } from 'angular-fusioncharts';
 import * as FusionCharts from 'fusioncharts';
-import * as Widgets from 'fusioncharts/fusioncharts.widgets; // Widgets
+import * as Widgets from 'fusioncharts/fusioncharts.widgets'; // Widgets
 
+FusionChartsModule.fcRoot(FusionCharts, Widgets);
 @NgModule({
     declarations: [
         AppComponent
     ],
     imports: [
-        BrowserModule,
-        FusionChartsModule.fcRoot(FusionCharts, Widgets), // Note this line  
+        BrowserModule, 
+        FusionChartsModule 
     ],
     providers: [],
     bootstrap: [ AppComponent ]
@@ -425,6 +427,33 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
         "value": "1.30",
         "showLabel": "1"
     }]
+}
+```
+
+### Setup the main module
+
+In this step, we will setup the main module to create the **angularGauge** chart. The code is given below:
+
+
+```
+import { FusionChartsModule } from 'angular-fusioncharts';
+import * as FusionCharts from 'fusioncharts';
+import * as Maps from 'fusioncharts/fusioncharts.maps'; // maps
+import * as World from 'fusioncharts/maps/fusioncharts.world'; // world
+
+FusionChartsModule.fcRoot(FusionCharts, Maps, World);
+@NgModule({
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule, 
+        FusionChartsModule 
+    ],
+    providers: [],
+    bootstrap: [ AppComponent ]
+})
+export class AppModule {
 }
 ```
 

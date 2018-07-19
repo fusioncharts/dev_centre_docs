@@ -145,13 +145,15 @@ export class AppComponent {
 You can add all the dependencies to the angular environment in the main module, i.e., `app.module.ts` using **fcRoot(FusionCharts, [Comma separated dependencies])** function of the FusionCharts module:
 
 ```
+FusionChartsModule.fcRoot(FusionCharts, Charts)  // FusionCharts and Charts
 @NgModule({
     declarations: [
         AppComponent
     ],
     imports: [
         BrowserModule,
-        FusionChartsModule.fcRoot(FusionCharts, Charts)  // FusionCharts and Charts,
+        FusionChartsModule
+    ],
     providers: [],
     bootstrap: [ AppComponent ]
 })
