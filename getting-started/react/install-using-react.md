@@ -477,7 +477,7 @@ You can include the map files via **ES6** using any of the following process:
 </code></pre>
 <div><strong>To include the core map files from maps:</strong></div>
 <pre><code class="custom-hlc language-javascript">
-    import Maps from 'fusioncharts/fusioncharts.maps';
+    import Maps from 'fusioncharts/maps';
 </code></pre>
 <div><strong>To include the map definition file you want to render:</strong></div>
 <pre><code class="custom-hlc language-javascript">
@@ -502,7 +502,7 @@ You can include the map files via **ES6** using any of the following process:
 </code></pre>
 <div><strong>To include the core map files from maps:</strong></div>
 <pre><code class="custom-hlc language-javascript">
-    let Maps = require('fusioncharts/fusioncharts.maps');
+    let Maps = require('fusioncharts/maps').default;
 </code></pre>
 <div><strong>To include the map definition file you want to render:</strong></div>
 <pre><code class="custom-hlc language-javascript">
@@ -529,7 +529,7 @@ If you want to render a map which is not in the fusioncharts package(world and U
 npm install fusionmaps
 ```
 
-ES-6 definitions can be found in `node_modules/fusionmaps/maps/es/fusioncharts.[MAP-ALIAS].js`
+ES-6 definitions can be found in `node_modules/fusionmaps/maps/fusioncharts.[MAP-ALIAS].js`
 
 If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
 
@@ -587,7 +587,7 @@ You can include the themes via **ES5** using any of the following process:
 </code></pre>
 <div><strong>To include the theme file and CSS for the theme:</strong></div>
 <pre><code class="custom-hlc language-javascript">
-    let Fusion = 'fusioncharts/themes/fusioncharts.fusion';
+    let Fusion = require('fusioncharts/themes/fusioncharts.fusion');
     let css = require('fusioncharts/themes/fusioncharts.fusion.css');
 </code></pre>
 <div><strong>To include React FusionCharts plugin:</strong></div>
@@ -648,7 +648,7 @@ You can include the themes via **ES6** using any of the following process:
 </code></pre>
 <div><strong>To include the theme file and CSS for the theme:</strong></div>
 <pre><code class="custom-hlc language-javascript">
-    let Fusion = 'fusioncharts/themes/fusioncharts.fusion';
+    let Fusion = require('fusioncharts/themes/fusioncharts.fusion');
     let css = require('fusioncharts/themes/fusioncharts.fusion.css');
 </code></pre>
 <div><strong>To include React FusionCharts plugin:</strong></div>
