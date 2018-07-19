@@ -26,7 +26,7 @@ Installation of FusionCharts Suite XT merely involves copying and pasting the Ja
 
 ![Js Folder Structure]({% site.baseurl %}/images/js-folder-structure.png)
 
-After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
+After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. 
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
 
@@ -43,7 +43,7 @@ File Name|Description|
 `fusioncharts.overlappedbar2d.js`|This file is required to render the Overlapped Bar 2D chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedbar2d.js`.|
 `fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js`.|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
-`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from here. </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
+`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1000+ maps offered by FusionMaps XT from here. </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files (JSON & CSS). Refer each theme with their respective `JavaScript` and `CSS` file names.|
 
 In order to install, create an HTML file and follow the steps below.
@@ -204,11 +204,11 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 
 ## Install FusionCharts via npm
 
-Now, let's discuss how to install the fusioncharts package via npm. The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
+Now, let's discuss how to install the FusionCharts package via npm. The Fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
 
 **Step 1: Install the fusioncharts package via npm**
 
-To install the `fusioncharts` package, execute the following command in the terminal:
+To install the `FusionCharts` package, execute the following command in the terminal:
 
 ```Shell
 npm install fusioncharts
@@ -216,7 +216,7 @@ npm install fusioncharts
 
 **Step 2: Load FusionCharts module**
 
-To load the FusionCharts module, add the following code to your html file:
+To load the FusionCharts module, add the following code to your HTML file:
 
 ```html
 <script src="node_modules/fusioncharts/fusioncharts.js"></script>
@@ -234,7 +234,7 @@ npm install fusionmaps
 
 **Step 2: Load FusionCharts module**
 
-To load the FusionCharts module, add the following code to your html file:
+To load the FusionCharts module, add the following code to your HTML file:
 
 ```html
 <script src="node_modules/fusionmaps/fusioncharts.js"></script>
@@ -242,7 +242,7 @@ To load the FusionCharts module, add the following code to your html file:
 
 **Step 3: Load the maps module**
 
-To load the maps module, add the folliwing code to your html file:
+To load the maps module, add the folliwing code to your HTML file:
 
 ```html
 <script src="node_modules/fusionmaps/fusioncharts.maps.js"></script>

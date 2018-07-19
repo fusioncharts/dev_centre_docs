@@ -11,7 +11,7 @@ Before going through this article, please [install]({% site.baseurl %}/getting-s
 
 ## Create your first chart
 
-In this section, we will create a chart using fusioncharts. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
+In this section, we will create a chart using FusionCharts. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
 
 Let's start with a simple example of "Monthly revenue" chart, which we will plot in a Column 2D chart as shown below:
 
@@ -103,7 +103,7 @@ Both the `chart` object and the `data` array contains a set of key-value pairs k
 
 #### Functional Attributes
 
-Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties. The list of functional attributes used in the above code are:
+Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The list of functional attributes used in the above code are:
 
 * `showLabels` sets the  configuration whether the x-axis labels will be displayed or not.
 * `showValue` sets the configuration whether data values will be displayed along with the data plot on chart.
@@ -111,7 +111,7 @@ Functional attributes let you control a variety of functional elements on the ch
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
 * `numberPrefix` adds prefix to all the numbers visible on the chart.
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
+* Please note, we have used the `theme` attribute in the chart's JSON data and provided fusion (default theme) as its value. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetics Attributes
 
@@ -280,7 +280,7 @@ Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% sit
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
+Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
 
 To start with, we'll build a simple "Weekly Customer Satisfaction Index" gauge as shown below:
 
