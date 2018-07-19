@@ -35,7 +35,13 @@ Now, let's discuss how to install the fusioncharts module via npm. The fusioncha
 
 This section outlines the steps to be executed for installing all the node modules via NPM and rendering charts using the angular-FusionCharts wrapper.
 
-### Step 1: Install `angular-fusioncharts` wrapper
+### Step 1: Install fusioncharts
+
+```shell
+npm install fusioncharts --save
+```
+
+### Step 2: Install `angular-fusioncharts` wrapper
 
 To install the `angular-fusioncharts` wrapper, execute the following command in the terminal:
 
@@ -43,7 +49,7 @@ To install the `angular-fusioncharts` wrapper, execute the following command in 
 npm install angular-fusioncharts --save
 ```
 
-### Step 2: Import **FusionChartsModule**
+### Step 3: Import **FusionChartsModule**
 
 To import fusioncharts module in `app.module.ts`(in your application),execute the following command:
 
@@ -51,7 +57,7 @@ To import fusioncharts module in `app.module.ts`(in your application),execute th
 import { FusionChartsModule } from 'angular-fusioncharts';
 ```
 
-### Step 3: Import FusionCharts library via npm
+### Step 4: Import FusionCharts library via npm
 
 To import the `fusioncharts` library in `app.module.ts`(in your application), execute the following command:
 
@@ -59,7 +65,7 @@ To import the `fusioncharts` library in `app.module.ts`(in your application), ex
 import * as FusionCharts from 'fusioncharts';
 ```
 
-### Step 4: Import other charts
+### Step 5: Import other charts
 
 To use charts and gauges from PowerCharts and Widgets, import their respective modules using:
 
