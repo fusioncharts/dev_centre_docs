@@ -16,7 +16,7 @@ Before going through this article, please [install]({% site.baseurl %}/getting-s
 
 In this section, we will create a chart using `FusionCharts Rails` server-side wrapper. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'). To create a column 2D chart, we need the chart data to be passed in JSON string format.
 
-For this example and to keep it simple, we have created a controller named 'examples' and view named 'firstchart' and keeping all chart rendering logic in 'examples' controller only, this will help us to understand it better.
+For this example, we have created a controller named `examples` and view named `firstchart`. To keep things simple we have placed all the chart rendering logics in the `examples` controller only.
 
 > The example controller we created is `app/controllers/examples_controller.rb`.
 
@@ -102,77 +102,77 @@ class ExamplesController < ApplicationController
 
 def getChart
 
-# Chart appearance configuration
-chartAppearancesConfigObj = Hash.new
-chartAppearancesConfigObj = {
-    "caption" => "Countries With Most Oil Reserves [2017-18]",
-    "subCaption" => "In MMbbl = One Million barrels",
-    "xAxisName" => "Country",
-    "yAxisName" => "Reserves (MMbbl)",
-    "numberSuffix" => "K",
-    "theme" => "fusion"
-}
-
-# An array of hash objects which stores data
-chartDataObj = [{
-        "Venezuela" => "290"
-    }, {
-        "Saudi" => "260"
-    }, {
-        "Canada" => "180"
-    }, {
-        "Iran" => "140"
-    }, {
-        "Russia" => "115"
-    }, {
-        "UAE" => "100"
-    }, {
-        "US" => "30"
-    }, {
-        "China" => "30"
+    # Chart appearance configuration
+    chartAppearancesConfigObj = Hash.new
+    chartAppearancesConfigObj = {
+        "caption" => "Countries With Most Oil Reserves [2017-18]",
+        "subCaption" => "In MMbbl = One Million barrels",
+        "xAxisName" => "Country",
+        "yAxisName" => "Reserves (MMbbl)",
+        "numberSuffix" => "K",
+        "theme" => "fusion"
     }
-]
 
-# Chart data template to store data in "Label" & "Value"
-format
-labelValueTemplate = "{ \"label\": \"%s\", \"value\": \"%s\" },"
+    # An array of hash objects which stores data
+    chartDataObj = [{
+            "Venezuela" => "290"
+        }, {
+            "Saudi" => "260"
+        }, {
+            "Canada" => "180"
+        }, {
+            "Iran" => "140"
+        }, {
+            "Russia" => "115"
+        }, {
+            "UAE" => "100"
+        }, {
+            "US" => "30"
+        }, {
+            "China" => "30"
+        }
+    ]
 
-# Chart data as JSON string
-labelValueJSONStr = ""
+    # Chart data template to store data in "Label" & "Value"
+    format
+    labelValueTemplate = "{ \"label\": \"%s\", \"value\": \"%s\" },"
 
-chartDataObj.each { | item |
-        data = labelValueTemplate % [item.keys[0], item[item.keys[0]]]
-    labelValueJSONStr.concat(data)
-}
+    # Chart data as JSON string
+    labelValueJSONStr = ""
 
-# Removing trailing comma character
-labelValueJSONStr = labelValueJSONStr.chop
+    chartDataObj.each { | item |
+            data = labelValueTemplate % [item.keys[0], item[item.keys[0]]]
+        labelValueJSONStr.concat(data)
+    }
 
-# Chart JSON data template
-chartJSONDataTemplate = "{ \"chart\": %s, \"data\": [%s] }"
+    # Removing trailing comma character
+    labelValueJSONStr = labelValueJSONStr.chop
 
-# Final Chart JSON data from template
-chartJSONDataStr = chartJSONDataTemplate % [chartAppearancesConfigObj.to_json, labelValueJSONStr]
+    # Chart JSON data template
+    chartJSONDataTemplate = "{ \"chart\": %s, \"data\": [%s] }"
 
-# Chart rendering
-chart = Fusioncharts::Chart.new({
-    width: "600",
-    height: "400",
-    type: "column2d",
-    renderAt: "chartContainer",
-    dataSource: chartJSONDataStr
-})
+    # Final Chart JSON data from template
+    chartJSONDataStr = chartJSONDataTemplate % [chartAppearancesConfigObj.to_json, labelValueJSONStr]
 
-end
+    # Chart rendering
+    chart = Fusioncharts::Chart.new({
+        width: "600",
+        height: "400",
+        type: "column2d",
+        renderAt: "chartContainer",
+        dataSource: chartJSONDataStr
+    })
 
-def firstchart
-    @myChart = getChart
-end
+    end
+
+    def firstchart
+        @myChart = getChart
+    end
 
 end
 ```
 
-The template of the above sample is shown below:
+The HTML template of the above sample is shown below:
 
 ```HTML
 <!-- Filename: app/views/examples/firstchart.html.erb -->
