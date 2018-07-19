@@ -139,7 +139,6 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 </div>
 </div>
 
-
 ## Include Maps via NPM
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
@@ -165,13 +164,13 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
     const Maps = require('fusioncharts/fusioncharts.maps.js');
     const World = require('fusioncharts/maps/fusioncharts.world.js');
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
 <div class="pb-10">Pass the FusionCharts module to the Maps Modules</div>
 <pre><code class="custom-hlc language-cv">
     Maps(FusionCharts);
     World(FusionCharts);
 </code></pre> 
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
 </div>
 </div>
