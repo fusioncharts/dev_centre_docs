@@ -5,22 +5,18 @@ heading: Installation
 chartPresent: false
 ---
 
-The Vue-FusionCharts component lets you include FusionCharts in your VueJS projects and adds interactive JavaScript charts and graphs to your VueJS applications. Before we get into the installation process of the component, let's take a look at what sets the VueJS component apart.
+The FusionCharts Suite XT jQuery helper allows you to use jQuery syntax to render and manipulate your charts and graphs seamlessly across all browsers and devices.
 
-Some of the basic features of VueJS component are:
+It helps you add interactive JavaScript charts to your web and mobile applications, combining the delight and comprehensiveness of the FusionCharts Suite XT with the easy-to-use jQuery syntax. 
 
-* Easily create charts in JavaScript using your Vue code.
-* Can render charts using a **JSON/XML** URL or props array binding.
-* Auto-updates the chart object when the data source is modified.
-
-In this article, we will show you how you can download and install the `Vue-FusionCharts` component and all the other dependencies on your system. You can use FusionCharts in your Vue project using any of the two modes given below:
+In this article, we will show you how you can download and install the `jQuery helper` and all the other dependencies on your system. You can use FusionCharts in your Vue project using any of the two modes given below:
 
 ## Choose your mode of installation:
 
 <table>
     <tr>
-        <td align="center">[Direct JavaScript files]({% site.baseurl %}/using-with-javascript-libraries/vuejs/installation#install-using-direct-javascript-files-1)</td>
-        <td align="center">[NPM]({% site.baseurl %}/using-with-javascript-libraries/vuejs/installation#install-fusioncharts-via-npm-4)</td>
+        <td align="center">[Direct JavaScript files]({% site.baseurl %}/using-with-javascript-libraries/jquery/installation#install-using-direct-javascript-files-1)</td>
+        <td align="center">[NPM]({% site.baseurl %}/using-with-javascript-libraries/jquery/installation#install-fusioncharts-via-npm-4)</td>
     </tr>
 </table>
 
@@ -28,9 +24,13 @@ In this article, we will show you how you can download and install the `Vue-Fusi
 
 In order to install and start working with Vue-FusionCharts you need to:
 
-* [Download](https://vuejs.org/v2/guide/installation.html) the `Vue core library`.
-* [Download](https://www.fusioncharts.com/vue-fusioncharts/) the Vue-FusionCharts plugin which contains the `vue-fusioncharts.js` file.
 * [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files.
+* Look for the `jQuery helper` in the downloaded package post v3.13.0.
+
+> 
+
+
+For all plugins that we're now providing in download package, instead of asking to download, ask them to look in package. And if not available in package, download v3.13.0 or later.
 
 Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. The folder structure is shown below:
 
