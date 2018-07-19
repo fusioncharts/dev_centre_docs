@@ -89,21 +89,61 @@ Create a container using &lt;div&gt;, to render the chart.
 The code to render the chart is given below:
 
 ```jsp
-//initialize chart
-<%
-    FusionCharts columnChart= new FusionCharts(
-    "column2d", // Chart Type
-    "chart1", // Chart ID
-    "700", // Width of the chart 
-    "400", // Height of the chart
-    "chart", // Chart Container
-    "json", // Data Format
-    DataSource
-    );
-%>
+// store chart config name-config value pair
+Map < String, String > chartConfig = new HashMap < String, String > ();
+chartConfig.put("caption", "Countries With Most Oil Reserves [2017-18]");
+chartConfig.put("subCaption", "In MMbbl = One Million barrels");
+chartConfig.put("xAxisName", "Country");
+chartConfig.put("yAxisName", "Reserves (MMbbl)");
+chartConfig.put("numberSuffix", "k");
+chartConfig.put("theme", "fusion");
 
-//render chart
-<%=columnChart.render()%>
+//store label-value pair
+Map < String, Integer > dataValuePair = new HashMap < String, Integer > ();
+dataValuePair.put("Venezuela", 290);
+dataValuePair.put("Saudi", 260);
+dataValuePair.put("Canada", 180);
+dataValuePair.put("Iran", 140);
+dataValuePair.put("Russia", 115);
+dataValuePair.put("UAE", 100);
+dataValuePair.put("US", 30);
+dataValuePair.put("China", 30);
+
+StringBuilder jsonData = new StringBuilder();
+StringBuilder data = new StringBuilder();
+// json data to use as chart data source
+jsonData.append("{'chart':{");
+for (Map.Entry conf: chartConfig.entrySet()) {
+    jsonData.append("'" + conf.getKey() + "':'" + conf.getValue() + "',");
+}
+
+jsonData.replace(jsonData.length() - 1, jsonData.length(), "},");
+
+// build  data object from label-value pair
+data.append("'data':[");
+
+for (Map.Entry pair: dataValuePair.entrySet()) {
+    data.append("{'label':'" + pair.getKey() + "','value':'" + pair.getValue() + "'},");
+}
+data.replace(data.length() - 1, data.length(), "]");
+
+jsonData.append(data.toString());
+jsonData.append("}");
+
+
+//Create chart instance
+// charttype, chartID, width, height,containerid, data format, data
+FusionCharts firstChart = new FusionCharts(
+    "column2d",
+    "first_chart",
+    "800",
+    "550",
+    "chart",
+    "json",
+    jsonData.toString()
+); %
+>
+<%= firstChart.render() %>
 ```
 
 In the above code:
@@ -114,47 +154,80 @@ In the above code:
 
 The full code for the above sample is given below:
 
-```html
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-    <%@page import="java.util.*" %>
-        <%@page import="fusioncharts.FusionCharts" %>
+```jsp
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@page import="java.util.*" %>
+<%@page import="fusioncharts.FusionCharts" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Insert title here</title>
+        <script src="fusioncharts.js"></script>
+    </head>
+    <body>
+        <div id="chart"></div>
+        <%
+            // store chart config name-config value pair
+            Map<String, String> chartConfig = new HashMap<String, String>();
+            chartConfig.put("caption", "Countries With Most Oil Reserves [2017-18]");
+            chartConfig.put("subCaption", "In MMbbl = One Million barrels");
+            chartConfig.put("xAxisName", "Country");
+            chartConfig.put("yAxisName", "Reserves (MMbbl)");
+            chartConfig.put("numberSuffix", "k");
+            chartConfig.put("theme", "fusion");
 
-            <!DOCTYPE html>
-            <html>
+            //store label-value pair
+            Map<String, Integer> dataValuePair = new HashMap<String, Integer>();
+            dataValuePair.put("Venezuela", 290);
+            dataValuePair.put("Saudi", 260);
+            dataValuePair.put("Canada", 180);
+            dataValuePair.put("Iran", 140);
+            dataValuePair.put("Russia", 115);
+            dataValuePair.put("UAE", 100);
+            dataValuePair.put("US", 30);
+            dataValuePair.put("China", 30);
 
-            <head>
-                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            StringBuilder jsonData = new StringBuilder();
+            StringBuilder data = new StringBuilder();
+            
+            // json data to use as chart data source
+            jsonData.append("{'chart':{");
+            for(Map.Entry conf:chartConfig.entrySet())
+            {
+                jsonData.append("'" + conf.getKey()+"':'"+conf.getValue() + "',");
+            }
 
-                <script src="fusioncharts.js"></script>
-                <script type="text/javascript" src="fusioncharts.theme.fusion.js"></script>
+            jsonData.replace(jsonData.length() - 1, jsonData.length() ,"},");
 
-            </head>
+            // build  data object from label-value pair
+            data.append("'data':[");
 
-            <body>
+            for(Map.Entry pair:dataValuePair.entrySet())
+            {
+                data.append("{'label':'" + pair.getKey() + "','value':'" + pair.getValue() +"'},");
+            }
+            data.replace(data.length() - 1, data.length(),"]");
 
-                <div id="chart"></div>
+            jsonData.append(data.toString());
+            jsonData.append("}");
 
-                <%
-        String jsonData;
-        jsonData = "{    'chart': {        'caption': 'Countries With Most Oil Reserves [2017-18]',        'subCaption': 'In MMbbl = One Million barrels',        'xAxisName': 'Country',        'yAxisName': 'Reserves (MMbbl)',        'numberSuffix': 'K',        'theme': 'fusion'    },    'data': [        {            'label': 'Venezuela',            'value': '290'        },        {            'label': 'Saudi',            'value': '260'        },        {            'label': 'Canada',            'value': '180'        },        {            'label': 'Iran',            'value': '140'        },        {            'label': 'Russia',            'value': '115'        },        {            'label': 'UAE',            'value': '100'        },        {            'label': 'US',            'value': '30'        },        {            'label': 'China',            'value': '30'        }    ]}";
-        
-        FusionCharts columnChart = new FusionCharts(
-                  "column2d",
-                  "chart1",
-                  "700", 
-                  "400",
-                  "chart",
-                  "json",
-                  jsonData                    
-                );
+
+            // Create chart instance
+            // charttype, chartID, width, height,containerid, data format, data
+            FusionCharts firstChart = new FusionCharts(
+                "column2d", 
+                "first_chart", 
+                "800",
+                "550", 
+                "chart",
+                "json", 
+                jsonData.toString()
+            );
         %>
-
-                    <%=columnChart.render()%>
-
-
-            </body>
-
-            </html>
+        <%= firstChart.render() %>
+    </body>
+</html>
 ```
 
 That's it! When you run this HTML page now, you should see a chart representing your data.
@@ -210,66 +283,187 @@ Create a container using &lt;div&gt;, to render the chart.
 The code to render the chart is given below:
 
 ```jsp
-//initialize chart
+<%!
+    //Create colorRange class
+    //It will store Min range Max range and specific color code for each range
+    private class ColorRange
+    {
+        public  int min,max;
+        public  String colorCode;
+        public ColorRange(int min,int max, String code)
+        {
+            this.min = min;
+            this.max = max;
+            this.colorCode = code;
+        }
+        
+    }
+%>
 <%
-    FusionCharts gauge= new FusionCharts(
-    "angularGauge", // Chart Type
-    "gauge1", // Chart ID
-    "450", // Width of the chart 
-    "250", // Height of the chart
-    "gauge", // Chart Container
-    "json", // Data Format
-    DataSource
+    //store chart config name-config value pair
+    Map<String, String> chartConfig = new HashMap<String, String>();
+    chartConfig.put("caption", "Nordstorms Customer Satisfaction Score for 2017");
+    chartConfig.put("lowerLimit", "0");
+    chartConfig.put("upperLimit", "100");
+    chartConfig.put("showValue", "1");
+    chartConfig.put("numberSuffix", "%");
+    chartConfig.put("theme", "fusion");
+    chartConfig.put("showToolTip", "0");
+    //store dial value config
+    Map<String,String> dial = new HashMap<String,String>();
+    dial.put("value","81");
+    //store color range-color
+    ArrayList<ColorRange> color = new ArrayList<ColorRange>();
+    color.add(new ColorRange(0,50,"#F2726F"));
+    color.add(new ColorRange(50,75,"#FFC533"));
+    color.add(new ColorRange(75,100,"#62B58F"));
+
+    //json data to use as chart data source
+    StringBuilder jsonData = new StringBuilder();
+    //build chart config object
+    jsonData.append("{'chart':{");
+    for(Map.Entry conf:chartConfig.entrySet())
+    {
+        jsonData.append("'" + conf.getKey()+"':'"+conf.getValue() + "',");
+    }
+    jsonData.replace(jsonData.length() - 1, jsonData.length() ,"},");
+
+    StringBuilder range = new StringBuilder();
+    //build colorRange object
+    range.append("'colorRange':{");
+    range.append("'color':[");
+    for(int i =0; i< color.size(); i++)
+    {
+        range.append("{'minValue':'" + color.get(i).min + "','maxValue':'" + color.get(i).max + "','code':'" + color.get(i).colorCode +"'},");
+    }
+    range.replace(range.length() - 1, range.length(),"]},");
+    //build dials object
+    StringBuilder dials = new StringBuilder();
+    dials.append("'dials':{");
+    dials.append("'dial':[");
+    for(Map.Entry dialCnf:dial.entrySet())
+    {
+        dials.append("{'" + dialCnf.getKey() + "':'" + dialCnf.getValue() +"'},");
+    }
+    dials.replace(dials.length() - 1, dials.length(),"]}");
+
+    jsonData.append(range.toString());
+    jsonData.append(dials.toString());
+    jsonData.append("}");
+
+    //Create gauge instance
+    // charttype, chartID, width, height,container id, data format, data
+    FusionCharts gauge = new FusionCharts(
+        "angularGauge", 
+        "first_gauge", 
+        "400",
+        "350", 
+        "gauge",
+        "json", 
+        jsonData.toString()
     );
 %>
-
-//render chart
-<%=gauge.render()%>
+<%= gauge.render() %>
 ```
 
 The full code for the above sample is given below:
 
-```html
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-    <%@page import="java.util.*" %>
-        <%@page import="fusioncharts.FusionCharts" %>
+```jsp
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@page import="java.util.*" %>
+<%@page import="fusioncharts.FusionCharts" %>
+<%!
+    //Create colorRange class
+    //It will store Min range Max range and specific color code for each range
+    private class ColorRange
+    {
+        public  int min,max;
+        public  String colorCode;
+        public ColorRange(int min,int max, String code)
+        {
+            this.min = min;
+            this.max = max;
+            this.colorCode = code;
+        }
+    }
+%>
 
-            <!DOCTYPE html>
-            <html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Insert title here</title>
+        <script src="fusioncharts.js"></script>
+    </head>
+    <body>
+        <div id="gauge"></div>
+        <%
+            //store chart config name-config value pair
+            Map<String, String> chartConfig = new HashMap<String, String>();
+            chartConfig.put("caption", "Nordstorms Customer Satisfaction Score for 2017");
+            chartConfig.put("lowerLimit", "0");
+            chartConfig.put("upperLimit", "100");
+            chartConfig.put("showValue", "1");
+            chartConfig.put("numberSuffix", "%");
+            chartConfig.put("theme", "fusion");
+            chartConfig.put("showToolTip", "0");
+            //store dial value config
+            Map<String,String> dial = new HashMap<String,String>();
+            dial.put("value","81");
+            //store color range-color
+            ArrayList<ColorRange> color = new ArrayList<ColorRange>();
+            color.add(new ColorRange(0,50,"#F2726F"));
+            color.add(new ColorRange(50,75,"#FFC533"));
+            color.add(new ColorRange(75,100,"#62B58F"));
 
-            <head>
-                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            //json data to use as chart data source
+            StringBuilder jsonData = new StringBuilder();
+            //build chart config object
+            jsonData.append("{'chart':{");
+            for(Map.Entry conf:chartConfig.entrySet())
+            {
+                jsonData.append("'" + conf.getKey()+"':'"+conf.getValue() + "',");
+            }
+            jsonData.replace(jsonData.length() - 1, jsonData.length() ,"},");
 
-                <script src="fusioncharts.js"></script>
-                <script type="text/javascript" src="fusioncharts.theme.fusion.js"></script>
+            StringBuilder range = new StringBuilder();
+            //build colorRange object
+            range.append("'colorRange':{");
+            range.append("'color':[");
+            for(int i =0; i< color.size(); i++)
+            {
+                range.append("{'minValue':'" + color.get(i).min + "','maxValue':'" + color.get(i).max + "','code':'" + color.get(i).colorCode +"'},");
+            }
+            range.replace(range.length() - 1, range.length(),"]},");
+            //build dials object
+            StringBuilder dials = new StringBuilder();
+            dials.append("'dials':{");
+            dials.append("'dial':[");
+            for(Map.Entry dialCnf:dial.entrySet())
+            {
+                dials.append("{'" + dialCnf.getKey() + "':'" + dialCnf.getValue() +"'},");
+            }
+            dials.replace(dials.length() - 1, dials.length(),"]}");
 
-            </head>
+            jsonData.append(range.toString());
+            jsonData.append(dials.toString());
+            jsonData.append("}");
 
-            <body>
-
-                <div id="gauge"></div>
-
-                <%
-        String jsonData;
-        jsonData = "{    \"chart\": {        \"caption\": \"Nordstorm's Customer Satisfaction Score for 2017\",        \"lowerLimit\": \"0\",        \"upperLimit\": \"100\",        \"showValue\": \"1\",        \"numberSuffix\": \"%\",        \"theme\": \"fusion\",        \"showToolTip\": \"0\"    },    \"colorRange\": {        \"color\": [            {                \"minValue\": \"0\",                \"maxValue\": \"50\",                \"code\": \"#F2726F\"            },            {                \"minValue\": \"50\",                \"maxValue\": \"75\",                \"code\": \"#FFC533\"            },            {                \"minValue\": \"75\",                \"maxValue\": \"100\",                \"code\": \"#62B58F\"            }        ]    },    \"dials\": {        \"dial\": [            {                \"value\": \"81\"            }        ]    }}";
-        
-        FusionCharts gauge = new FusionCharts(
-                  "angularGauge",
-                  "gauge1",
-                  "450", 
-                  "250",
-                  "gauge",
-                  "json",
-                  jsonData                    
-                );
+            //Create gauge instance
+            // charttype, chartID, width, height,container id, data format, data
+            FusionCharts gauge = new FusionCharts(
+                "angularGauge", 
+                "first_gauge", 
+                "400",
+                "350", 
+                "gauge",
+                "json", 
+                jsonData.toString()
+            );
         %>
-
-                    <%=gauge.render()%>
-
-
-            </body>
-
-            </html>
+        <%= gauge.render() %>
+    </body>
+</html>
 ```
 
 See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
@@ -320,66 +514,234 @@ Create a container using &lt;div&gt;, to render the chart.
 The code to render the chart is given below:
 
 ```jsp
-//initialize chart
-<%
-    FusionCharts map= new FusionCharts(
-    "world", // Chart Type
-    "map1", // Chart ID
-    "800", // Width of the chart 
-    "550", // Height of the chart
-    "map", // Chart Container
-    "json", // Data Format
-    DataSource
-    );
-%>
+<%!
+ //Create colorRange class
+   //It will store Min range Max range and specific color code for each range
 
-//render chart
-<%=map.render()%>
+   class ColorRange
+   {
+       public double min;
+       public double max;
+       public String colorCode;
+
+       public ColorRange(double min, double max, String code)
+       {
+           this.min = min;
+           this.max = max;
+           this.colorCode = code;
+       }
+   }
+   //Create countryData class
+   //It will store id, value and show label for each country
+
+   class CountryData
+   {
+       public String id;
+       public double value;
+       public int showLabel;
+       
+       public CountryData(String id,  double value, int showLabel)
+       {
+           this.id = id;
+           this.value = value;
+           this.showLabel = showLabel;
+
+       }
+
+   }
+   %>
+    <%
+// store chart config name-config value pair
+Map<String, String> chartConfig = new HashMap<String, String>();
+chartConfig.put("caption", "Average Annual Population Growth");
+chartConfig.put("subCaption", " 1955-2015");
+chartConfig.put("includevalueinlabels", "1");
+chartConfig.put("labelsepchar", ": ");
+chartConfig.put("numberSuffix", "%");
+chartConfig.put("entityFillHoverColor", "#FFF9C4");
+chartConfig.put("theme", "fusion");
+
+// store color code for different range
+ArrayList<ColorRange> color = new ArrayList<ColorRange>();
+color.add(new ColorRange(0.5, 1.0, "#FFD74D"));
+color.add(new ColorRange(1.0, 2.0, "#FB8C00"));
+color.add(new ColorRange(2.0, 3.0, "#E65100"));
+
+// store country data
+ArrayList<CountryData> countries = new ArrayList<CountryData>();
+countries.add(new CountryData("NA", .82, 1));
+countries.add(new CountryData("SA", 2.04, 1));
+countries.add(new CountryData("AS", 1.78, 1));
+countries.add(new CountryData("EU", .40, 1));
+countries.add(new CountryData("AF", 2.58, 1));
+countries.add(new CountryData("AU", 1.30, 1));
+
+// json data to use as chart data source
+StringBuilder jsonData = new StringBuilder();
+//build chart config object
+jsonData.append("{'chart':{");
+for(Map.Entry cnf :chartConfig.entrySet())
+{
+    jsonData.append("'" + cnf.getKey() + "':'" + cnf.getValue() +"',");
+}
+jsonData.replace(jsonData.length() - 1, jsonData.length(),"},");
+
+StringBuilder range = new StringBuilder();
+//build colorRange object
+range.append("'colorRange':{");
+range.append("'color':[");
+for(int i = 0 ; i < color.size();i++)
+{
+    range.append("{'minValue':'"+ color.get(i).min +"','maxValue':'"+ color.get(i).max +"','code':'"+ color.get(i).colorCode +"'},");
+}
+range.replace(range.length() - 1, range.length(),"]},");
+
+// build data object
+StringBuilder data = new StringBuilder();
+data.append("'data':[");
+for(int i =0; i < countries.size(); i++)
+{
+    data.append("{'id':'" + countries.get(i).id + "','value':'" + countries.get(i).value +"','showLabel':'" +countries.get(i).showLabel+ "'},");
+}
+data.replace(data.length() - 1, data.length(),"]");
+jsonData.append(range);
+jsonData.append(data);
+jsonData.append("}");
+//Create gauge instance
+// charttype, chartID, width, height,container id, data format, data
+FusionCharts map = new FusionCharts(
+    "world", 
+    "first_map", 
+    "800",
+    "650", 
+    "map",
+    "json", 
+    jsonData.toString()
+);
+%>
 ```
 
 The full code for the above sample is given below:
 
-```
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-    <%@page import="java.util.*" %>
-        <%@page import="fusioncharts.FusionCharts" %>
+```jsp
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
+<%@page import="java.util.*" %>
+<%@page import="fusioncharts.FusionCharts" %>
+<%!
+    //Create colorRange class
+    //It will store Min range Max range and specific color code for each range
 
-            <!DOCTYPE html>
-            <html>
+    class ColorRange {
+        public double min;
+        public double max;
+        public String colorCode;
 
-            <head>
-                <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        public ColorRange(double min, double max, String code)
+        {
+            this.min = min;
+            this.max = max;
+            this.colorCode = code;
+        }
+    }
+   
+    //Create countryData class
+    //It will store id, value and show label for each country
 
-                <script src="fusioncharts.js"></script>
-                <script type="text/javascript" src="fusioncharts.theme.fusion.js"></script>
+    class CountryData {
+        public String id;
+        public double value;
+        public int showLabel;
 
-            </head>
+        public CountryData(String id,  double value, int showLabel)
+        {
+            this.id = id;
+            this.value = value;
+            this.showLabel = showLabel;
+        }
+    }
+%>
 
-            <body>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+        <title>Insert title here</title>
+        <script src="fusioncharts.js"></script>
+    </head>
+    <body>
+        <div id="map"></div>
+        <%
+            // store chart config name-config value pair
+            Map<String, String> chartConfig = new HashMap<String, String>();
+            chartConfig.put("caption", "Average Annual Population Growth");
+            chartConfig.put("subCaption", " 1955-2015");
+            chartConfig.put("includevalueinlabels", "1");
+            chartConfig.put("labelsepchar", ": ");
+            chartConfig.put("numberSuffix", "%");
+            chartConfig.put("entityFillHoverColor", "#FFF9C4");
+            chartConfig.put("theme", "fusion");
 
-                <div id="map"></div>
+            // store color code for different range
+            ArrayList<ColorRange> color = new ArrayList<ColorRange>();
+            color.add(new ColorRange(0.5, 1.0, "#FFD74D"));
+            color.add(new ColorRange(1.0, 2.0, "#FB8C00"));
+            color.add(new ColorRange(2.0, 3.0, "#E65100"));
 
-                <%
-        String jsonData;
-        jsonData = "{    'chart': {        'caption': 'Average Annual Population Growth',        'subcaption': ' 1955-2015',        'numbersuffix': '%',        'includevalueinlabels': '1',        'labelsepchar': ': ',        'entityFillHoverColor': '#FFF9C4',        'theme': 'fusion'    },    'colorrange': {        'minvalue': '0',        'code': '#FFE0B2',        'gradient': '1',        'color': [            {                'minvalue': '0.5',                'maxvalue': '1.0',                'color': '#FFD74D'            },            {                'minvalue': '1.0',                'maxvalue': '2.0',                'color': '#FB8C00'            },            {                'minvalue': '2.0',                'maxvalue': '3.0',                'color': '#E65100'            }        ]    },    'data': [        {            'id': 'NA',            'value': '.82',            'showLabel': '1',            'link': 'newchart-json-NAM'        },        {            'id': 'SA',            'value': '2.04',            'showLabel': '1',            'link': 'newchart-json-SAM'        },        {            'id': 'AS',            'value': '1.78',            'showLabel': '1',            'link': 'newchart-json-ASI'        },        {            'id': 'EU',            'value': '.40',            'showLabel': '1',            'link': 'newchart-json-EUP'        },        {            'id': 'AF',            'value': '2.58',            'showLabel': '1',            'link': 'newchart-json-AFC'        },        {            'id': 'AU',            'value': '1.30',            'showLabel': '1',            'link': 'newchart-json-AUS'        }    ],    'linkeddata': [        {            'id': 'NAM',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - North America',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'paletteColors': 'FFD74D',                    'theme': 'hulk-light'                },                'data': [                    {                        'label': '1955',                        'value': '1.5078'                    },                    {                        'label': '1960',                        'value': '1.5502'                    },                    {                        'label': '1965',                        'value': '1.3121'                    },                    {                        'label': '1970',                        'value': '0.8648'                    },                    {                        'label': '1975',                        'value': '0.6402'                    },                    {                        'label': '1980',                        'value': '0.62'                    },                    {                        'label': '1985',                        'value': '0.6748'                    },                    {                        'label': '1990',                        'value': '0.6882'                    },                    {                        'label': '1995',                        'value': '0.6804'                    },                    {                        'label': '2000',                        'value': '0.5627'                    },                    {                        'label': '2005',                        'value': '0.5373'                    },                    {                        'label': '2010',                        'value': '0.5536'                    },                    {                        'label': '2015',                        'value': '0.4291'                    }                ]            }        },        {            'id': 'SAM',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - South America',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'paletteColors': 'E65100',                    'theme': 'hulk-light'                },                'data': [                    {                        'label': '1955',                        'value': '2.6275'                    },                    {                        'label': '1960',                        'value': '2.6995'                    },                    {                        'label': '1965',                        'value': '2.757'                    },                    {                        'label': '1970',                        'value': '2.5376'                    },                    {                        'label': '1975',                        'value': '2.3431'                    },                    {                        'label': '1980',                        'value': '2.3261'                    },                    {                        'label': '1985',                        'value': '2.2036'                    },                    {                        'label': '1990',                        'value': '1.9611'                    },                    {                        'label': '1995',                        'value': '1.7184'                    },                    {                        'label': '2000',                        'value': '1.5965'                    },                    {                        'label': '2005',                        'value': '1.4482'                    },                    {                        'label': '2010',                        'value': '1.2031'                    },                    {                        'label': '2015',                        'value': '1.0698'                    }                ]            }        },        {            'id': 'ASI',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Asia',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FB8C00'                },                'data': [                    {                        'label': '1955',                        'value': '1.9075'                    },                    {                        'label': '1960',                        'value': '1.8842'                    },                    {                        'label': '1965',                        'value': '2.1082'                    },                    {                        'label': '1970',                        'value': '2.4554'                    },                    {                        'label': '1975',                        'value': '2.3036'                    },                    {                        'label': '1980',                        'value': '1.9889'                    },                    {                        'label': '1985',                        'value': '1.9683'                    },                    {                        'label': '1990',                        'value': '2.0176'                    },                    {                        'label': '1995',                        'value': '1.6823'                    },                    {                        'label': '2000',                        'value': '1.3682'                    },                    {                        'label': '2005',                        'value': '1.2435'                    },                    {                        'label': '2010',                        'value': '1.1661'                    },                    {                        'label': '2015',                        'value': '1.0731'                    }                ]            }        },        {            'id': 'EUP',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Europe',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FFE0B2'                },                'data': [                    {                        'label': '1955',                        'value': '1.026'                    },                    {                        'label': '1960',                        'value': '1.0652'                    },                    {                        'label': '1965',                        'value': '0.9381'                    },                    {                        'label': '1970',                        'value': '0.6925'                    },                    {                        'label': '1975',                        'value': '0.54'                    },                    {                        'label': '1980',                        'value': '0.4218'                    },                    {                        'label': '1985',                        'value': '0.354'                    },                    {                        'label': '1990',                        'value': '0.2971'                    },                    {                        'label': '1995',                        'value': '0.0276'                    },                    {                        'label': '2000',                        'value': '-0.1301'                    },                    {                        'label': '2005',                        'value': '-0.1558'                    },                    {                        'label': '2010',                        'value': '-0.0576'                    },                    {                        'label': '2015',                        'value': '-0.0292'                    }                ]            }        },        {            'id': 'AFC',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Africa',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'E65100'                },                'data': [                    {                        'label': '1955',                        'value': '2.1242'                    },                    {                        'label': '1960',                        'value': '2.338'                    },                    {                        'label': '1965',                        'value': '2.5075'                    },                    {                        'label': '1970',                        'value': '2.5947'                    },                    {                        'label': '1975',                        'value': '2.7175'                    },                    {                        'label': '1980',                        'value': '2.8398'                    },                    {                        'label': '1985',                        'value': '2.8857'                    },                    {                        'label': '1990',                        'value': '2.8243'                    },                    {                        'label': '1995',                        'value': '2.6172'                    },                    {                        'label': '2000',                        'value': '2.5072'                    },                    {                        'label': '2005',                        'value': '2.4853'                    },                    {                        'label': '2010',                        'value': '2.5593'                    },                    {                        'label': '2015',                        'value': '2.6001'                    }                ]            }        },        {            'id': 'AUS',            'linkedchart': {                'chart': {                    'caption': 'Average Annual Population Growth - Oceania',                    'subcaption': '1955 - 2015',                    'yAxisName': 'Growth',                    'numberSuffix': '%',                    'theme': 'hulk-light',                    'paletteColors': 'FB8C00'                },                'data': [                    {                        'label': '1955',                        'value': '1.511'                    },                    {                        'label': '1960',                        'value': '1.6045'                    },                    {                        'label': '1965',                        'value': '1.5578'                    },                    {                        'label': '1970',                        'value': '1.455'                    },                    {                        'label': '1975',                        'value': '1.4727'                    },                    {                        'label': '1980',                        'value': '1.2404'                    },                    {                        'label': '1985',                        'value': '1.2398'                    },                    {                        'label': '1990',                        'value': '1.1853'                    },                    {                        'label': '1995',                        'value': '1.2006'                    },                    {                        'label': '2000',                        'value': '1.1244'                    },                    {                        'label': '2005',                        'value': '1.0724'                    },                    {                        'label': '2010',                        'value': '1.1255'                    },                    {                        'label': '2015',                        'value': '1.0397'                    }                ]            }        }    ]}";
-        
-        FusionCharts map = new FusionCharts(
-                  "world",
-                  "map1",
-                  "800", 
-                  "550",
-                  "map",
-                  "json",
-                  jsonData                    
-                );
+            // store country data
+            ArrayList<CountryData> countries = new ArrayList<CountryData>();
+            countries.add(new CountryData("NA", .82, 1));
+            countries.add(new CountryData("SA", 2.04, 1));
+            countries.add(new CountryData("AS", 1.78, 1));
+            countries.add(new CountryData("EU", .40, 1));
+            countries.add(new CountryData("AF", 2.58, 1));
+            countries.add(new CountryData("AU", 1.30, 1));
+
+            // json data to use as chart data source
+            StringBuilder jsonData = new StringBuilder();
+            //build chart config object
+            jsonData.append("{'chart':{");
+            for(Map.Entry cnf :chartConfig.entrySet())
+            {
+                jsonData.append("'" + cnf.getKey() + "':'" + cnf.getValue() +"',");
+            }
+            jsonData.replace(jsonData.length() - 1, jsonData.length(),"},");
+
+            StringBuilder range = new StringBuilder();
+            //build colorRange object
+            range.append("'colorRange':{");
+            range.append("'color':[");
+            for(int i =0 ;i <color.size();i++)
+            {
+                range.append("{'minValue':'"+ color.get(i).min +"','maxValue':'"+ color.get(i).max +"','code':'"+ color.get(i).colorCode +"'},");
+            }
+            range.replace(range.length() - 1, range.length(),"]},");
+
+            // build data object
+            StringBuilder data = new StringBuilder();
+            data.append("'data':[");
+            for(int i =0 ;i <countries.size();i++)
+            {
+                data.append("{'id':'" + countries.get(i).id + "','value':'" + countries.get(i).value +"','showLabel':'" +countries.get(i).showLabel+ "'},");
+            }
+            data.replace(data.length() - 1, data.length(),"]");
+            jsonData.append(range);
+            jsonData.append(data);
+            jsonData.append("}");
+            //Create gauge instance
+            // charttype, chartID, width, height,container id, data format, data
+            FusionCharts map = new FusionCharts(
+                "world", 
+                "first_map", 
+                "800",
+                "650", 
+                "map",
+                "json", 
+                jsonData.toString()
+            );
         %>
-
-                    <%=map.render()%>
-
-
-            </body>
-
-            </html>
+        <%= map.render() %>
+    </body>
+</html>
 ```
 
 See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
