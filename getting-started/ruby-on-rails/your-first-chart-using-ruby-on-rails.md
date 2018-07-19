@@ -6,11 +6,11 @@ heading: Your First Chart in Ruby using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the FusionCharts Rails wrapper that lets you create interactive, data-driven charts. You can create a simple chart using the FusionCharts server-side Rails wrapper without writing any JavaScript code.
+FusionCharts Suite XT includes the **FusionCharts Rails** wrapper that lets you create interactive, data-driven charts. You can create a simple chart using the FusionCharts server-side Rails wrapper without writing any JavaScript code.
 
 The server-side Rails wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails#create-your-first-map-10).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/ruby-on-rails/install-using-ruby-on-rails '@@open-newtab') FusionCharts Rails wrapper, if not already installed.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/ruby-on-rails/install-using-ruby-on-rails '@@open-newtab') **FusionCharts Rails** wrapper, if not already installed.
 
 ## Create your first chart
 
@@ -54,7 +54,7 @@ Both the `chart` object and the `data` array contains a set of key-value pairs k
 
 #### Functional Attributes
 
-Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties. The list of functional attributes used in the above code are:
+Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The functional attributes used in the above code are:
 
 * `showLabels` sets the  configuration whether the x-axis labels will be displayed or not.
 * `showValue` sets the configuration whether data values will be displayed along with the data plot on chart.
@@ -185,13 +185,13 @@ That's it! When you run this HTML page now, you should see a chart representing 
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
 
-Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
+Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 
 ## Create your first gauge
 
 Gauges are powerful tools that can showcase using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
 
-To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
+To start with, we'll build a simple gauge showcasing Nordstrom's Customer Satisfaction Score as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
@@ -253,7 +253,7 @@ def getWidget
 
     # Widget appearance configuration
     widgetAppearancesConfigObj = {
-        "caption" => "Nordstorm's Customer Satisfaction Score for 2017",
+        "caption" => "Nordstrom's Customer Satisfaction Score for 2017",
         "lowerLimit" => "0",
         "upperLimit" => "100",
         "showValue" => "1",
