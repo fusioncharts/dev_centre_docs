@@ -272,7 +272,6 @@ The full code and the common aspx template for the above sample is given below:
     data.AppendFormat("{{'label':'{0}','value':'{1}'}},", pair.Key, pair.Value)
     Next
 
-
     data.Replace(",", "]", data.Length - 1, 1)
 
     jsonData.Append(data.ToString())
@@ -641,9 +640,6 @@ The full code for the above sample is given below:
                 Chart MyFirstGauge = new Chart("angulargauge", "first_gauge", "400", "350", "json", jsonData.ToString());
                 //render gauge
                 Literal1.Text = MyFirstGauge.Render();
-
-
-
             }
         }
     }

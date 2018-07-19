@@ -219,7 +219,7 @@ For this example, we have created a controller named `examples` and view named `
 
 > The example controller we created is `app/controllers/examples_controller.rb`.
 
-The `fc_json` action is defined to create the angular gauge.
+The `firstwidget` action is defined to create the angular gauge.
 
 The code of the instance of the chart is given below:
 
@@ -232,6 +232,15 @@ widget = Fusioncharts::Chart.new({
     renderAt: "widgetContainer",
     dataSource: widgetJSONStr
 })
+```
+
+The template of the above sample is shown below:
+
+```HTML
+<<!-- Filename: app/views/examples/firstwidget.html.erb -->
+<h3>My Widget</h3>
+<div id="widgetContainer"></div>
+<%=@myWidget.render() %>
 ```
 
 The full code for the above sample is:
@@ -327,15 +336,6 @@ end
 end      
 ```
 
-The template of the above sample is shown below:
-
-```HTML
-<<!-- Filename: app/views/examples/firstwidget.html.erb -->
-<h3>My Widget</h3>
-<div id="widgetContainer"></div>
-<%=@myWidget.render() %>
-```
-
 See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
 
 ## Create your first map
@@ -380,6 +380,16 @@ The code of the instance of the chart is given below:
            renderAt: "mapContainer",
            dataSource: mapJSONStr
        })
+
+```
+
+The template of the above sample is shown below:
+
+```HTML
+<!-- Filename: app/views/examples/firstwidget.html.erb -->
+<h3>My Map</h3>
+<div id="mapContainer"></div>
+<%=@myMap.render() %>
 
 ```
 
@@ -481,16 +491,6 @@ def firstmap
 end
 
 end
-```
-
-The template of the above sample is shown below:
-
-```HTML
-<!-- Filename: app/views/examples/firstwidget.html.erb -->
-<h3>My Map</h3>
-<div id="mapContainer"></div>
-<%=@myMap.render() %>
-
 ```
 
 See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
