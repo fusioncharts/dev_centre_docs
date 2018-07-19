@@ -234,8 +234,10 @@ You can include the fusioncharts class and React FusionCharts plugin using any o
 </code></pre>
 <div><strong>To use charts and gauges from PowerCharts and Widgets, import their respective modules using:</strong></div>
 <pre><code class="custom-hlc language-javascript">
-    import PowerCharts from 'fusioncharts/fusioncharts.powercharts'; // For PowerCharts
-    import Widgets from 'fusioncharts/fusioncharts.widgets'; // For Widgets
+    // For PowerCharts
+    import PowerCharts from 'fusioncharts/fusioncharts.powercharts';
+    // For Widgets 
+    import Widgets from 'fusioncharts/fusioncharts.widgets'; 
 </code></pre>
 <div><strong>To include React FusionCharts plugin:</strong></div>
 <pre><code class="custom-hlc language-javascript">
@@ -252,8 +254,10 @@ You can include the fusioncharts class and React FusionCharts plugin using any o
 </code></pre>
 <div><strong>To use charts and gauges from PowerCharts and Widgets, import their respective modules using:</strong></div>
 <pre><code class="custom-hlc language-javascript">
-    let PowerCharts = require('fusioncharts/fusioncharts.powercharts'); // For PowerCharts
-    let Widgets = require('fusioncharts/fusioncharts.widgets'); // For Widgets
+    // For PowerCharts
+    let PowerCharts = require('fusioncharts/fusioncharts.powercharts'); 
+    // For Widgets
+    let Widgets = require('fusioncharts/fusioncharts.widgets'); 
 </code></pre>
 <div><strong>To include React FusionCharts plugin:</strong></div>
 <pre><code class="custom-hlc language-javascript">
