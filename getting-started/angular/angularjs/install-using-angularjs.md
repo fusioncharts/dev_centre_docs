@@ -44,32 +44,32 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<div><strong>Install angular(1.x) package:</strong></div>
+<div class="mt-10 pb-10">Install angular(1.x) package:</div>
 <pre><code class="custom-hlc language-cs">
     npm install angular@1.7.2 --save
 </code></pre>
-<div><strong>Install fusioncharts package:</strong></div>
+<div class="mt-10 pb-10">Install fusioncharts package:</div>
 <pre><code class="custom-hlc language-cs">
     npm install fusioncharts --save
 </code></pre>
-<div><strong>Install angularjs-fusioncharts wrapper:</strong></div>
+<div class="mt-10 pb-10">Install angularjs-fusioncharts wrapper:</div>
 <pre><code class="custom-hlc language-cs">
     npm install angularjs-fusioncharts --save
 </code></pre>
-<div><strong>In your index.html, include all the script tags</strong></div>
+<div class="mt-10 pb-10">In your index.html, include all the script tags:</div>
 <pre><code class="custom-hlc language-cs">
     &lt;script src="node_modules/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/angular/angular.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/angular-fusioncharts/dist/angular-fusioncharts.min.js"&gt;
     &lt;/script&gt;
 </code></pre>
-<div><strong>In scripts.js, add the dependency</strong></div>
+<div class="mt-10 pb-10">In scripts.js, add the dependency:</div>
 <pre><code class="custom-hlc language-cs">
     angular.module('your-app-name', ["ng-fusioncharts"]);
 </code></pre>
-<div><strong>Now fusioncharts directive as a attribute as well as tag is available in your app.</strong></div>
-<div>Other required files</div>
-<div><strong>Include charts in script tag</strong></div>
+<div class="pb-10">Now fusioncharts directive as a attribute as well as tag is available in your app.</div>
+<div class="mt-10 pb-10">Other required files</div>
+<div class="mt-10 pb-10">Include charts in script tag:</div>
 <pre><code class="custom-hlc language-cs">
     &lt;script src="node_modules/fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/fusioncharts.widgets.js"&gt;&lt;/script&gt;
@@ -86,24 +86,24 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 </div>
 
 <div class='tab xml-tab'>
-<div><strong>Install fusioncharts package</strong></div>
+<div class="mt-10 pb-10">Install fusioncharts package:</div>
 <pre><code class="custom-hlc language-cv">
     npm install fusioncharts --save
 </code></pre>
-<div><strong>Install angularjs-fusioncharts wrapper</strong></div>
+<div class="mt-10 pb-10">Install angularjs-fusioncharts wrapper:</div>
 <pre><code class="custom-hlc language-cv">
     npm install angularjs-fusioncharts --save
 </code></pre>
-<div><strong>In your script.js file:</strong></div>
-<div>require <strong>angular</strong></div>
+<div class="mt-10 pb-10">In your script.js file:</div>
+<div class="pb-10">1. require <strong>angular</strong></div>
 <pre><code class="custom-hlc language-cv">
     const angular = require('angular');
 </code></pre>
-<div>require <strong>fusioncharts</strong></div>
+<div class="pb-10">2. require <strong>fusioncharts</strong></div>
 <pre><code class="custom-hlc language-cv">
     const FusionCharts = require('fusioncharts');
 </code></pre>
-<div>require your chart module</div>
+<div class="pb-10">3. require your chart module</div>
 <pre><code class="custom-hlc language-cv">
     const Charts = require('fusioncharts/fusioncharts.charts'); // Charts
     const Widgets = require('fusioncharts/fusioncharts.widgets'); // Widgets
@@ -116,11 +116,11 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
     const Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');
 </code></pre>
 <div><strong>Note: </strong>Include the needed chart module</div>
-<div>Require the <strong>angularjs-fusioncharts</strong> module</div>
+<div class="pb-10">4. Require the <strong>angularjs-fusioncharts</strong> module</div>
 <pre><code class="custom-hlc language-cv">
     require('angularjs-fusioncharts');
 </code></pre> 
-<div>Pass the FusionCharts module to the Charts Modules</div>
+<div class="pb-10">5. Pass the FusionCharts module to the Charts Modules</div>
 <pre><code class="custom-hlc language-cv">
     Charts(FusionCharts);
     Widgets(FusionCharts);
@@ -151,7 +151,7 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<div><strong>Include map definitions in script tag</strong></div>
+<div class="mt-10 pb-10">Include map definitions in script tag:</div>
 <pre><code class="custom-hlc language-cs">
     &lt;script src="node_modules/fusioncharts/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/maps/fusioncharts.usa.js"&gt;&lt;/script&gt;
@@ -160,7 +160,7 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 </div>
 
 <div class='tab xml-tab'>
-<div>require your map module</div>
+<div class="pb-10">require your map module</div>
 <pre><code class="custom-hlc language-cv">
     const Charts = require('fusioncharts/maps.fusioncharts.world'); // World Map
     const Widgets = require('fusioncharts/maps.fusioncharts.usa'); // Map of USA
@@ -188,7 +188,14 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-<div><strong>To include theme definition in script tag</strong></div>
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>Script Tags</a></li>
+  <li><a data-toggle='xml'>Require</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<div class="mt-10 pb-10">To include theme definition in script tag:</div>
 <pre><code class="custom-hlc language-cs">
     &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.ocean.js"&gt;&lt;/script&gt;
@@ -196,5 +203,20 @@ FusionCharts Suite XT ships with the following predefined themes:
     &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.fint.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.carbon.js"&gt;&lt;/script&gt;
 </code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab xml-tab'>
+<div class="pb-10">require your themes</div>
+<pre><code class="custom-hlc language-cv">
+    const Charts = require('fusioncharts/fusioncharts.charts'); // Fusion Theme
+    const Widgets = require('fusioncharts/fusioncharts.widgets'); // Widgetss
+</code></pre>
+
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 > The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` file sets the theme as **fusion**. To add any other theme to your chart, include its corresponding JavaScript file to your project.
