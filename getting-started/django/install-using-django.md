@@ -6,7 +6,8 @@ heading: Installation
 chartPresent: false
 ---
 
-The FusionCharts Django wrapper is a Python framework which is responsible for quick web development. It is basically a subroutine within a software library whose job is to call another subroutine with minimum amount of coding. It lets you generate the required JavaScript and HTML code as a string on the server, which is then used to render charts on a browser page.
+The FusionCharts Django server-side wrapper lets you create charts in your website without writing any JavaScript code.
+Conventionally, FusionCharts Suite XT uses JavaScript and HTML to generate charts in the browser. The Django wrapper lets you generate the required JavaScript and HTML code as a string on the server. This string is then used to render charts on a browser page.
 
 In this article, we will show you how you can download and install the `FusionCharts Django` wrapper and all the other dependencies on your system.
 
@@ -24,7 +25,7 @@ In order to install and start working with FusionCharts Django wrapper you need 
 
 [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files.
 
-Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. The folder structure is shown below:
+Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the downloaded package into your project folder. The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/images/js-folder-structure.png)
 
