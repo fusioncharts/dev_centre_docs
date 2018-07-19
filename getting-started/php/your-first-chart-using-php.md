@@ -70,59 +70,12 @@ For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attri
 
 In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-Firstly, create a container using &lt;div&gt;, to render the chart.
-
-```HTML
-<div id="chart-container">Chart will render here!</div>
-```
-
 The code to initialize and render the chart is given below:
 
 ```php
-<?php
-$arrChartConfig = array(
-    "chart" => array(
-    "caption" => "Countries With Most Oil Reserves [2017-18]",
-    "subCaption" => "In MMbbl = One Million barrels",
-    "xAxisName" => "Country",
-    "yAxisName" => "Reserves (MMbbl)",
-    "numberSuffix" => "K",
-    "theme" => "fusion"
-    )
-);
-
-// An array of hash objects which stores data
-$arrChartData = array(
-    ["Venezuela", "290"],
-    ["Saudi", "260"],
-    ["Canada", "180"],
-    ["Iran", "140"],
-    ["Russia", "115"],
-    ["UAE", "100"],
-    ["US", "30"],
-    ["China", "30"]
-);
-
-$arrLabelValueData = array();
-
-// Pushing labels and values
-for($i = 0; $i < count($arrChartData); $i++) {
-    array_push($arrLabelValueData, array(
-        "label" => $arrChartData[$i][0], "value" => $arrChartData[$i][1]
-    ));
-}
-
-$arrChartConfig["data"] = $arrLabelValueData;
-
-// JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
-$jsonEncodedData = json_encode($arrChartConfig);
-
 // chart object
 $Chart = new FusionCharts("column2d", "MyFirstChart" , "700", "400", "chart-container", "json", $jsonEncodedData);
 
-// Render the chart
-$Chart->render();
-?>
 ```
 
 In the above code:
@@ -130,6 +83,11 @@ In the above code:
 * We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 700x400 pixels using `width` and `height`.
 * The array data is embedded as the value of the `jsonEncodedData` parameter.
 
+Then, create a container using `&lt;div&gt;`, to render the chart.
+
+```HTML
+<div id="chart-container">Chart will render here!</div>
+```
 The full code for the above sample is given below:
 
 ```html
@@ -235,57 +193,18 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-Firstly, create a container using &lt;div&gt;, to render the gauge.
-
-```HTML
-<div id="widget-container">Widget will render here!</div>
-```
-
 The code to initialize and render the chart is given below:
 
 ```php
-<?php
-// Widget appearance configuration
-$arrChartConfig = array(
-    "chart" => array(
-        "caption" => "Nordstorm's Customer Satisfaction Score for 2017",
-        "lowerLimit" => "0",
-        "upperLimit" => "100",
-        "showValue" => "1",
-        "numberSuffix" => "%",
-        "theme" => "fusion",
-        "showToolTip" => "0"
-    )
-);
-
-// Widget color range data
-$colorDataObj = array("color" => array(
-    ["minValue" => "0", "maxValue" => "50", "code" => "#F2726F"],
-    ["minValue" => "50", "maxValue" => "75", "code" => "#FFC533"],
-    ["minValue" => "75", "maxValue" => "100", "code" => "#62B58F"]
-));
-
-// Dial array    
-$dial = array();
-  
-// Widget dial data in array format, multiple values can be separated by comma e.g. ["81", "23", "45",...]
-$widgetDialDataArray = array("81");
-for($i = 0; $i < count($widgetDialDataArray); $i++) {
-    array_push($dial,array("value" => $widgetDialDataArray[$i]));
-}
-
-$arrChartConfig["colorRange"] = $colorDataObj;
-$arrChartConfig["dials"] = array( "dial" => $dial);
-
-// JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
-$jsonEncodedData = json_encode($arrChartConfig);
-
 // Widget object
 $Widget = new FusionCharts("angulargauge", "MyFirstWidget" , "400", "250", "widget-container", "json", $jsonEncodedData);
 
-// Render the Widget
-$Widget->render();
-?>
+```
+
+Then, create a container using &lt;div&gt;, to render the gauge.
+
+```HTML
+<div id="widget-container">Widget will render here!</div>
 ```
 
 The full code for the above sample is given below:
@@ -383,65 +302,16 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 In this step, we will create an instance of the map type as **world**, set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
-Firstly, create a container using &lt;div&gt;, to render the map.
-
-```HTML
-<div id="map-container">Map will render here!</div>
-```
-
 The code to initialize and render the chart is given below:
 
 ```php
-<?php
-// Widget appearance configuration
-$arrMapConfig = array(
-    "chart" => array(
-        "caption" => "Average Annual Population Growth",
-        "subcaption" => " 1955-2015",
-        "numbersuffix" => "%",
-        "includevalueinlabels" => "1",
-        "labelsepchar" => ": ",
-        "entityFillHoverColor" => "#FFF9C4",
-        "theme" => "fusion"
-    )
-);
-
-// Widget color range data
-$colorDataObj = array("minvalue" => "0", "code" => "#FFE0B2", "gradient" => "1",
-"color" => array(
-    ["minValue" => "0", "maxValue" => "50", "code" => "#F2726F"],
-    ["minValue" => "50", "maxValue" => "75", "code" => "#FFC533"],
-    ["minValue" => "75", "maxValue" => "100", "code" => "#62B58F"]
-));
-
-// Map data array
-$mapDataArray = array(
-    ["NA", ".82", "1"],
-    ["SA", "2.04", "1"],
-    ["AS", "1.78", "1"],
-    ["EU", ".40", "1"],
-    ["AF", "2.58", "1"],
-    ["AU", "1.30", "1"]
-);
-
-$mapData = array();
-
-for($i = 0; $i < count($mapDataArray); $i++) {
-    array_push($mapData,array("id" => $mapDataArray[$i][0], "value" => $mapDataArray[$i][1], "showLabel" => $mapDataArray[$i][2]));
-}
-
-$arrMapConfig["colorRange"] = $colorDataObj;
-$arrMapConfig["data"] = $mapData;
-
-// JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
-$jsonEncodedData = json_encode($arrMapConfig);
-
 // Map object
 $Map = new FusionCharts("maps/world", "MyFirstMap" , "800", "500", "map-container", "json", $jsonEncodedData);
+```
+Then, create a container using &lt;div&gt;, to render the map.
 
-// Render the Map
-$Map->render();
-?>
+```HTML
+<div id="map-container">Map will render here!</div>
 ```
 
 The full code for the above sample is given below:
