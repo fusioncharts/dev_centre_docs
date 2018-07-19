@@ -6,7 +6,7 @@ heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the FusionCharts PHP wrapper that lets you create interactive, data-driven charts in your PHP website without writing any JavaScript code. JavaScript and HTML code is used to generate charts in the browsers. The server-side PHP wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts.
+FusionCharts Suite XT includes the **FusionCharts PHP wrapper** that lets you create interactive, data-driven charts in your PHP website without writing any JavaScript code. JavaScript and HTML code is used to generate charts in the browsers. The server-side PHP wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts.
 
 In this article, we will show you how you can download and install the `FusionCharts PHP` wrapper and all the other dependencies on your system.
 
@@ -39,12 +39,12 @@ File Name|Description|
 `fusioncharts.overlappedbar2d.js`|This file is required to render the Overlapped Bar 2D chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedbar2d.js`.|
 `fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js`.|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
-`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from here. </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
+`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition of all the 1000+ maps offered by FusionMaps XT from here. </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files (JSON & CSS). Refer each theme with their respective `JavaScript` and `CSS` file names.|
 
 ### Step 2
 
-[Download](https://www.fusioncharts.com/php-charts/) the FusionCharts PHP wrapper which contains the main class file `fusioncharts.php` in `php-wrapper` folder, then copy and paste this class file in to “Includes” folder of your project.
+[Download](https://www.fusioncharts.com/php-charts/) the **FusionCharts PHP** wrapper which contains the main class file `fusioncharts.php` in `php-wrapper` folder, then copy and paste this class file into the “Includes” folder of your project.
 
 That completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php '@@open-newtab').
 
@@ -64,7 +64,7 @@ That completes the installation of FusionCharts in your application. To see how 
 
 ## Themes
 
-Themes shipped with FusionCharts Suite XT allows you to create centralized theme files (similar to CSS files) and apply those themes to any number of charts.
+Themes shipped with FusionCharts Suite XT allow you to create centralized theme files (similar to CSS files) and apply those themes to any number of charts.
 
 In a theme file, you can centralize the following aspects of a chart, gauge, or map:
 
