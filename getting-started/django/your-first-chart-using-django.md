@@ -155,7 +155,8 @@ The HTML template of the above sample is shown below:
     <title>FC-python wrapper</title>
     {% load static %}
     <script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
-    <script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fint.js" %}"></script>
+    <script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>
+    <script type="text/JavaScript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.css" %></script>
 </head>
 
 <body>
@@ -457,7 +458,8 @@ The HTML template of the above sample is shown below:
     <title>FC-python wrapper</title>
     {% load static %}
     <script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
-    <script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fint.js" %}"></script>
+    <script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>
+    <script type="text/JavaScript" src="{% static "fusioncharts.theme.fusion.css" %}"></script>
 </head>
 
 <body>
@@ -602,7 +604,8 @@ The HTML template of the above sample is shown below:
     <title>FC-python wrapper</title>
     {% load static %}
     <script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
-    <script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fint.js" %}"></script>
+    <script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>
+    <script type="text/JavaScript" src="{% static "fusioncharts.theme.fusion.css" %}"></script>
 </head>
 
 <body>
