@@ -36,7 +36,7 @@ An overlapped column 2D chart looks like:
 
 {% embed_all standard-charts-overlapped-column2d-chart-example-1.js %}
 
-Click here to edit the above overlapped column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/yaqert65/ "@@open-newtab") to edit the above overlapped column 2D chart.
 
 ## Overlapped Bar 2D Chart
 
@@ -48,6 +48,6 @@ The overlapped bar 2D chart looks like:
 
 {% embed_all standard-charts-overlapped-bar2d-chart-example-1.js %}
 
-Click here to edit the above overlapped bar 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/6k7zoes8/ "@@open-newtab") to edit the above overlapped bar 2D chart.
 
 Costomization of the Overlapped Bar & Column charts are same as [Combination Charts]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab').
