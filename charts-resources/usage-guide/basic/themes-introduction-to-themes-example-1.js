@@ -11,6 +11,7 @@
             "subCaption": "Harry's SuperMart",
             "xAxisName": "Month",
             "yAxisName": "Revenue",
+            "theme": "fusion"
         },
         "data": [{
             "label": "Jan",

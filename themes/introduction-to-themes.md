@@ -22,13 +22,13 @@ In a theme file, you can centralize the following aspects of a chart, gauge, or 
 
 FusionCharts Suite XT ships with the following predefined themes:
 
-* fusion (since v3.13.0)
+* `fusion` (since v3.13.0)
 
-* zune
+* `zune`
 
-* ocean
+* `ocean`
 
-* carbon
+* `carbon`
 
 A column 2D chart showcasing the 3 themes mentioned above is given below:
 
