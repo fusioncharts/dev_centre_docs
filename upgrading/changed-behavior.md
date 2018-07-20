@@ -45,3 +45,31 @@ The multi-series chart with both the data plots set as column looks like:
 {% embed_all changed-behavior-multi-series-example-2.js %}
 
 > If you like to view the chart as in older version (3.12.2), contact [support@fusioncharts.com](support@fusioncharts.com).
+
+## npm Package Updated for Angular
+
+From v3.13.0, following packages for angular has been remaned:
+
+* `angular-fusioncharts` has been renamed to `angularjs-fusioncharts`.
+
+Install `angularjs-fusioncharts` wrapper using following command:
+
+```
+npm install angularjs-fusioncharts --save
+```
+
+* `angular2-fusioncharts` has been renamed to `angular-fusioncharts`.
+
+Install `angular-fusioncharts` wrapper using following command:
+
+```
+npm install angular-fusioncharts --save
+```
+
+* `angular4-fusioncharts` has been renamed to `angular-fusioncharts`.
+
+Install `angular-fusioncharts` wrapper using following command:
+
+```
+npm install angular-fusioncharts --save
+```
