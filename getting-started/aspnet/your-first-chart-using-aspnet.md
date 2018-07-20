@@ -50,8 +50,6 @@ Both the `chart` object and the `data` array contains a set of key-value pairs k
 
 Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or, data values. You can also set chart limits and extended properties. The functional attributes used in the above code are:
 
-* `showLabels` sets the  configuration whether the x-axis labels will be displayed or not.
-* `showValue` sets the configuration whether data values will be displayed along with the data plot on chart.
 * `caption` sets the caption of the chart.
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
@@ -289,11 +287,13 @@ The full code and the common aspx template for the above sample is given below:
 
 That's it! When you run this .aspx page now, you should see a chart representing your data.
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a Column 2D chart.
 
 Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 
 ## The FusionCharts Chart Class
+
+A list of available parameters is given in the table below:
 
 ### Constructor Parameters
 

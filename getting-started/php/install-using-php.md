@@ -20,7 +20,7 @@ In order to install and start working with FusionCharts PHP wrapper you need to:
 
 [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files.
 
-Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. The folder structure is shown below:
+Installation of FusionCharts Suite XT involves copying and pasting the JavaScript files from the downloaded package into your project folder. The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/images/js-folder-structure.png)
 

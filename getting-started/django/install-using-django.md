@@ -15,7 +15,7 @@ In this article, we will show you how you can download and install the **FusionC
 
 ## Install the FusionCharts Django Wrapper
 
-In order to install and start working with FusionCharts Django wrapper you need to:
+To install and start working with FusionCharts Django wrapper you need to:
 
 * Include the `FusionCharts.py` (present in the [django-wrapper](https:/github.com/fusioncharts/django-wrapper/blob/master/fusioncharts/fusioncharts.py '@@open-newtab') repository) file into your project. Once done, you can start rendering the charts using the classes and methods under the FusionCharts namespace.
 
@@ -33,7 +33,7 @@ Following is the list of JavaScript files present in your `fusioncharts-suite-xt
 
 File Name|Description|
 -|-
-`fusioncharts.js`|This is the core FusionCharts library, which you need to import in all your pages where you want to generate a chart, gauge or a map.|
+`fusioncharts.js`|This is the core FusionCharts library, which you need to import in all your pages where you want to generate a chart, gauge, or a map.|
 `fusioncharts.charts.js`|This file is required to render all charts present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.charts.js`.|
 `fusioncharts.widgets.js`|This file is required to render all gauges present under FusionWidgets XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.widgets.js`.|
 `fusioncharts.powercharts.js`|This file is required to render all charts present under PowerCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.powercharts.js`.|
@@ -80,7 +80,7 @@ In order to render maps, you need to [download](https://www.fusioncharts.com/dow
 
 ```html
 {% load static %} 
-<script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
+<script type="text/javascript" src="{% static "fusioncharts/fusionmaps.js" %}"></script>
 ```
 
 * Set your STATIC_ROOT path and run the command given below to update the static files:

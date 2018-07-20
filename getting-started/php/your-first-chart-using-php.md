@@ -52,8 +52,6 @@ Both the `chart` object and the `data` array contains a set of key-value pairs k
 
 Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or, data values. You can also set chart limits and extended properties. The functional attributes used in the above code are:
 
-* `showLabels` sets the  configuration whether the x-axis labels will be displayed or not.
-* `showValue` sets the configuration whether data values will be displayed along with the data plot on chart.
 * `caption` sets the caption of the chart.
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
@@ -62,7 +60,7 @@ Functional attributes let you control a variety of functional elements on the ch
 
 #### Cosmetic Attributes
 
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click here.
+Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the `fusion`theme to customize the chart's aesthitics no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click here.
 
 For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
@@ -163,7 +161,171 @@ That's it! When you run this HTML page now, you should see a chart representing 
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
 
-Now, go on and explore other 95+ chart types that we haveve in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
+Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
+
+## The FusionCharts Chart Class
+
+A list of available parameters is given in the table below:
+
+### Constructor Parameters
+
+The syntax of the `Chart` class constructor used to initialize the chart object is:
+
+```vb.net
+Chart <object name> = new Chart (chartType, chartId, chartWidth, chartHeight, dataFormat, dataSource, bgColor, bgOpacity)
+
+```
+
+Given below is a brief description of the constructor parameters:
+
+<table>
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>`chartType`
+</td>
+    <td>String</td>
+    <td>It is used to specify the type of chart to be rendered.</td>
+  </tr>
+  <tr>
+    <td>`chartId`</td>
+    <td>String</td>
+    <td>It is used to specify a unique identifier for the chart. If multiple charts are rendered on the same HTML page, each chart is referred to using its unique ID.</td>
+  </tr>
+  <tr>
+    <td>`chartWidth`</td>
+    <td>String</td>
+    <td>It is used to specify the width of the chart, in pixels.</td>
+  </tr>
+  <tr>
+    <td>`chartHeight`</td>
+    <td>String</td>
+    <td>It is used to specify the height of the chart, in pixels.</td>
+  </tr>
+  <tr>
+    <td>`dataFormat`</td>
+    <td>String</td>
+    <td>It is used to specify the type of data that will be passed to the chart. This attribute takes the following values: `json`, `xml`, `jsonurl`, `xmlurl`. </td>
+  </tr>
+  <tr>
+    <td>`dataSource`</td>
+    <td>String</td>
+    <td>It specifies the source from where the data will be fetched, depending on the value passed to the `dataFormat` attribute.</td>
+  </tr>
+  <tr>
+    <td>`bgColor`</td>
+    <td>String</td>
+    <td>It is used to specify the hex code for the background color of the chart.</td>
+  </tr>
+  <tr>
+    <td>`bgOpacity`</td>
+    <td>String</td>
+    <td>It is used to specify the background opacity for the chart. This attribute takes values between 0 (transparent) and 100 (opaque).</td>
+  </tr>
+</table>
+
+
+>  It is not necessary that you assign values for all parameters during initialization. The order of parameters, however, needs to be preserved. Also, you need to make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before you run the application. If not, either the chart will not render at all or it will not render the way you want it to. </p>
+
+### Methods under the Chart Class
+
+Given below is a brief description of the methods in the `Chart` class:
+
+<table>
+  <tr>
+    <th>Method Name</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>`SetChartParameter`</td>
+    <td>It is used to set or modify the values for chart parameters like `chartType`, `chartWidth`, `chartHeight`, etc. This method takes the following parameters:
+
+`param`:
+Type: enum
+Description: It is used to specify the name of the chart parameter that you want to set/modify. For example, `Chart.ChartParameter.chartType`
+
+`value`:
+Type: String
+Description: It is used to specify the value for the chart parameter. For example, `column2d`.</td>
+  </tr>
+  <tr>
+    <td>`GetChartParameter`</td>
+    <td>It is used to get the value of any chart parameter. This method takes the following parameters:
+
+`param`:
+Type: enum
+Description: It is used to specify the name of the chart parameter whose value you want to get. For example, `Chart.ChartParameter.chartType`</td>
+  </tr>
+  <tr>
+    <td>`SetData`</td>
+    <td>It is used to set the data source for the chart. This method takes the following parameters:
+
+`dataSource`:
+Type: String
+Description: It is used to specify the data for the chart. For example, `data/data.xml`.
+
+`format`:
+Type: enum
+Description: It is used to specify the format of the data source. This is an optional parameter.</td>
+  </tr>
+</table>
+
+
+## The Render() Method
+
+Given below is a brief description of the parameters that can be passed using this method:
+
+<table>
+  <tr>
+    <th>Parameter</th>
+    <th>Type</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>`chartType`
+</td>
+    <td>String</td>
+    <td>It is used to specify the type of chart to be rendered.</td>
+  </tr>
+  <tr>
+    <td>`chartId`</td>
+    <td>String</td>
+    <td>It is used to specify a unique identifier for the chart. If multiple charts are rendered on the same HTML page, each chart is referred to using its unique ID.</td>
+  </tr>
+  <tr>
+    <td>`chartWidth`</td>
+    <td>String</td>
+    <td>It is used to specify the width of the chart, in pixels.</td>
+  </tr>
+  <tr>
+    <td>`chartHeight`</td>
+    <td>String</td>
+    <td>It is used to specify the height of the chart, in pixels.</td>
+  </tr>
+  <tr>
+    <td>`dataFormat`</td>
+    <td>String</td>
+    <td>It is used to specify the type of data that will be passed to the chart. This attribute takes the following values: `json`, `xml`, `jsonurl`, and `xmlurl`. </td>
+  </tr>
+  <tr>
+    <td>`dataSource`</td>
+    <td>String</td>
+    <td>It specifies the source from where the data will be fetched, depending on the value passed to the `dataFormat` attribute.</td>
+  </tr>
+  <tr>
+    <td>`bgColor`</td>
+    <td>String</td>
+    <td>It is used to specify the hex code for the background color of the chart.</td>
+  </tr>
+  <tr>
+    <td>`bgOpacity`</td>
+    <td>String</td>
+    <td>It is used to specify the background opacity for the chart. This attribute takes values between 0 (transparent) and 100 (opaque).</td>
+  </tr>
+</table>
 
 ## Create your first gauge
 
@@ -201,7 +363,7 @@ $Widget = new FusionCharts("angulargauge", "MyFirstWidget" , "400", "250", "widg
 
 ```
 
-Then, create a container using &lt;div&gt;, to render the gauge.
+Then, create a container using &lt;div&gt; to render the gauge.
 
 ```HTML
 <div id="widget-container">Widget will render here!</div>
@@ -219,7 +381,8 @@ The full code for the above sample is given below:
         <title>FusionCharts | My First Widget</title>
         <script src="../FusionCharts/fusioncharts.js"></script>
         <script src="../FusionCharts/fusioncharts.charts.js"></script>
-        <script src="../FusionCharts/themes/fusioncharts.theme.zune.js"></script>
+        <script src="../FusionCharts/themes/fusioncharts.theme.fusion.js"></script>
+        <script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.css"></script>
     </head>
     <body>
 <?php
@@ -326,7 +489,8 @@ The full code for the above sample is given below:
         <title>FusionCharts | My First Map</title>
         <script src="../FusionCharts/fusioncharts.js"></script>
         <script src="../FusionCharts/fusioncharts.charts.js"></script>
-        <script src="../FusionCharts/themes/fusioncharts.theme.zune.js"></script>
+        <script src="../FusionCharts/themes/fusioncharts.theme.fusion.js"></script>
+        <script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.css"></script>
     </head>
     <body>
         <?php
@@ -396,4 +560,4 @@ In case something went wrong, and you are unable to see the chart, check for the
 
 * If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. Check if the path to `fusioncharts.js` file is correct and whether the file exists in that location.
 
-* If you get a Loading Data or Error in loading data message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

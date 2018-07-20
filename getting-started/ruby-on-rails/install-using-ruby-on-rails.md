@@ -6,7 +6,7 @@ heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the **FusionCharts Ruby on Rails** wrapper that lets you create interactive, data-driven charts. It lets you generate the required JavaScript and HTML code as a string on the server, which is then used to render charts on a browser page.
+FusionCharts Suite XT includes the **FusionCharts Ruby on Rails** wrapper that lets you create interactive, data-driven charts. It lets you generate the required JavaScript and HTML code as a string on the server, which is then used to render charts on a browser.
 
 In this article, we will show you how you can download and install the **FusionCharts Ruby on Rails** wrapper and all the other dependencies on your system.
 
@@ -16,7 +16,7 @@ In this article, we will show you how you can download and install the **FusionC
 
 * [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files.
 
-* Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. The folder structure is shown below:
+* Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the downloaded package into your project folder. The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/images/js-folder-structure.png)
 
@@ -30,7 +30,7 @@ In this article, we will show you how you can download and install the **FusionC
 //= require fusioncharts/themes/fusioncharts.theme.fint
 ```
 
-> Ensure that the **config.assets.debug** flag in the **development.rb** file (config/environments/development.rb) is enabled (set to **true**)
+> Ensure that the **config.assets.debug** flag in the **development.rb** file (config/environments/development.rb) is enabled (set to **true**).
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
 

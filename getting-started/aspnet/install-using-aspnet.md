@@ -26,7 +26,7 @@ In order to install and start working with FusionCharts ASP.NET wrapper you need
 
 [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files.
 
-Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. The folder structure is shown below:
+Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the downloaded package into your project folder. The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/images/js-folder-structure.png)
 
@@ -56,7 +56,7 @@ File Name|Description|
 
 To add any of the above files in your project, drag and drop the file in `App_Code` folder inside your project.
 
-> You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. FusionCharts.dll is present in `asp.net-cs-wrapper/Bin` folder or `asp.net-vb-wrapper/DLLFile`.
+> You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. `FusionCharts.dll` is present in `asp.net-cs-wrapper/Bin` folder or `asp.net-vb-wrapper/DLLFile`.
 
 That completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet '@@open-newtab').
 
