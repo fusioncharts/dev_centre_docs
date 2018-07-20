@@ -318,7 +318,7 @@ Refer to the code below:
     "chart": {
         ...
         "showPeakData": "1",
-        "maxPeakDataLimit": "1500"
+        "maxPeakDataLimit": "1000"
 
     },
 }
@@ -330,7 +330,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/chrgodxw/ "@@open-newtab") to configure the above attributes.
 
-> In the above chart, all plots having values less than 1500 are automatically detected and included.
+> In the above chart, all plots having values less than 1000 are automatically detected and included.
 
 **Scenario 2**
 
@@ -346,7 +346,7 @@ Refer to the code below:
     "chart": {
         ...
         "showPeakData": "1",
-        "minPeakDataLimit": "100"    
+        "minPeakDataLimit": "900"    
     },
 }
 ```
@@ -357,7 +357,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/0d9cqh3u/ "@@open-newtab") to configure the above attributes.
 
-> In the above chart, all plots having values more than 100 are automatically detected and included.
+> In the above chart, all plots having values more than 900 are automatically detected and included.
 
 **Scenario 3**
 
@@ -374,8 +374,8 @@ Refer to the code below:
     "chart": {
         ...
         "showPeakData": "1",
-        "minPeakDataLimit": "100",
-        "maxPeakDataLimit": "1500"
+        "minPeakDataLimit": "900",
+        "maxPeakDataLimit": "1000"
     },
 }
 ```
@@ -386,7 +386,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/qondx6r8/ "@@open-newtab") to configure the above attributes.
 
-> In the above chart, all plots having values more than 100 and less than 1500 are automatically detected and included.
+> In the above chart, all plots having values more than 900 and less than 1000 are automatically detected and included.
 
 **Scenario 4**
 
@@ -408,7 +408,7 @@ Refer to the code below:
         ...
         "showPeakData": "1",
         "minPeakDataLimit": "1000",
-        "maxPeakDataLimit": "500"
+        "maxPeakDataLimit": "900"
     },
 }
 ```
@@ -419,4 +419,4 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/fe5gcodr/ "@@open-newtab") to configure the above attributes.
 
-> In the above chart, all values in the range 500-1000 will be included in the initial display. 
+> In the above chart, all values in the range 900-1000 will be included in the initial display. 
