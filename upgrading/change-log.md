@@ -11,7 +11,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * Spline and Spline Area charts are now part of both FusionCharts XT and PowerCharts XT. 
 
-* Spline and Spline Area charts can now be built as part of combination charts, using the `renderAs` attribute. 
+* Spline and Spline Area charts can now be built as part of combination charts, using the `renderAs` attribute. For example, `"renderAs": "spline"`.
 
 * A common [theme](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member-9) can now be applied to all charts in a page.
 

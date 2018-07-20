@@ -32,6 +32,10 @@ The new visualization of the inverse chart looks like:
 
 {% embed_all changed-behavior-inverse-charts-example-1.js %}
 
+> If you like to view the chart as in older version (3.12.2), contact [support@fusioncharts.com](support@fusioncharts.com).
+
+> To view the chart as in older version(3.12.2)
+
 ## Secondary data plots overlap Primary data plots
 
 From version 3.13.0 visualization of dual y-axis multi-series chart is changed. Now, if the data plots for both the axes are set as column, the secondary plots overlaps the primary plots.
@@ -39,3 +43,5 @@ From version 3.13.0 visualization of dual y-axis multi-series chart is changed. 
 The multi-series chart with both the data plots set as column looks like:
 
 {% embed_all changed-behavior-multi-series-example-2.js %}
+
+> If you like to view the chart as in older version (3.12.2), contact [support@fusioncharts.com](support@fusioncharts.com).
