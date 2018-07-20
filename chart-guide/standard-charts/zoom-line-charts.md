@@ -398,7 +398,7 @@ To display all values less than a particular value in the chart, do the followin
 
 * Set the value of `showPeakData` to `1`.
 * Set the value of `minPeakDataLimit` to `1000`.
-* Set the value of `maxPeakDataLimit` to `500`.
+* Set the value of `maxPeakDataLimit` to `900`.
 
 Refer to the code below:
 
