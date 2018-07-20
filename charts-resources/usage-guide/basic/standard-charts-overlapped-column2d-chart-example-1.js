@@ -29,7 +29,7 @@
             }]
         }],
         "dataset": [{
-            "seriesname": "Healthcare Expenses per capita (in USD) in Public sector",
+            "seriesname": "Public",
             "data": [{
                 "value": "5038"
             }, {
@@ -44,7 +44,7 @@
                 "value": "1702"
             }]
         }, {
-            "seriesname": "Healthcare Expenses per capita (in USD) in Private sector",
+            "seriesname": "Private",
             "data": [{
                 "value": "2881"
             }, {
