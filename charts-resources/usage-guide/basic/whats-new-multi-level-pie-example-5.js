@@ -28,8 +28,6 @@
         "showPercentInTooltip": "0",
         "numberPrefix": "$",
         "plotTooltext": "$label, $$valueK, $percentValue",
-        "highlightParentPieSlices": "0",
-        "highlightChildPieSlices": "1",
         "innerRadius": "10"
       },
       "category": [{
