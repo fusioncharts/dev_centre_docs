@@ -28,7 +28,7 @@ Spline and Spline area charts can now be built as a part of combination charts. 
 
 A combination chart with spline and a splineArea as a part of it looks like:
 
-{% embed_all whats-new-overlapped-chart-example-3.js %}
+{% embed_all whats-new-combination-spline-chart-example-3.js %}
 
 ## Highlight effect in Multi-level Pie chart
 
@@ -36,7 +36,7 @@ A combination chart with spline and a splineArea as a part of it looks like:
 
 A multi-level pie chart with above attributes look like:
 
-{% embed_all whats-new-overlapped-chart-example-4.js %}
+{% embed_all whats-new-multi-level-pie-example-4.js %}
 
 For the detailed description of the attributes, click here.
 
@@ -46,7 +46,7 @@ For the detailed description of the attributes, click here.
 
 A multi-level pie chart with inner radius set to `10` looks like:
 
-{% embed_all whats-new-overlapped-chart-example-5.js %}
+{% embed_all whats-new-multi-level-pie-example-5.js %}
 
 ## Export Multi-level pie chart in CSV or XLS formats
 
@@ -68,4 +68,4 @@ For the detailed desctiption of the attributes, click [here]({% site.baseurl %}/
 
 The zoomline chart with above attributes look like:
 
-{% embed_chart whats-new-overlapped-chart-example-6.js %}
+{% embed_chart whats-new-zoomline-chart-example-6.js %}

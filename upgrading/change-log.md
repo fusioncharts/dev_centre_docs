@@ -31,7 +31,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 ## Improvements
 
-* For dual y-axis charts, the secondary data plots now overlaps the primary data plots if `renderAs` attribute is set as column. If you would like the old behavior, click [here] to know more.
+* For dual y-axis charts, the secondary data plots now overlaps the primary data plots if `renderAs` attribute is set as column. If you would like the old behavior, click [here]({% site.baseurl %}/upgrading/changed-behavior#secondary-data-plots-overlap-primary-data-plots-3 '@@open-newtab') to know more.
 
 * In order to free chart area, the restore button in select-scatter and drag-able chart has been moved to [options menu](https://www.fusioncharts.com/dev/chart-guide/standard-charts/drag-able-charts#dragable-column-d-chart-1). The list of attributes which have been added are as follows:
 
