@@ -5,7 +5,7 @@ heading: Your First Chart in Angular using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and **angular-FusionCharts** component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-gauge-9) and a [map]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-map-14).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and **angular-FusionCharts** component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-gauge-9) and a [map]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-map-14).
 
 Before going through this article, please [install]({% site.baseurl %}/getting-started/angular/angular/install-using-angular '@@open-newtab') `angular-fusioncharts` plugin, if not already installed.
 
@@ -89,8 +89,6 @@ Both the `chart` object and the `data` array contains a set of key-value pairs k
 
 Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The functional attributes used in the above code are:
 
-* `showLabels` sets the configuration whether the x-axis labels will be displayed or not.
-* `showValue` sets the configuration whether data values will be displayed along with the data plot on chart.
 * `caption` sets the caption of the chart.
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
@@ -127,7 +125,7 @@ export class AppModule {
 }
 ```
 
-> &lt;fusioncharts&gt;&lt;/fusioncharts&gt; component is available for use in any component throughout your app.
+> The `&lt;fusioncharts&gt;&lt;/fusioncharts&gt;` component is available for use in any component throughout your app.
 > We will render our first chart in the main `app.component`.
 
 ### Add data to `app.component.ts`
@@ -196,7 +194,7 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a Column 2D chart.
 
 Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'), or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 

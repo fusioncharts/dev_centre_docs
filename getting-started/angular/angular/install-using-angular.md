@@ -13,7 +13,7 @@ In this article, we will show you how you can download and install the `angular-
 
 ## Install FusionCharts via npm
 
-Before installing and starting work with **angular-fusionCharts** wrapper, let's check out the list of JavaScript files present in your **fusioncharts-suite-xt** folder:
+Before installing and starting work with **angular-fusionCharts** wrapper, let's get familiar with the list of JavaScript files present in your **fusioncharts-suite-xt** folder:
 
 File Name|Description|
 -|-
@@ -43,7 +43,7 @@ npm install fusioncharts --save
 
 ### Step 2: Install `angular-fusioncharts` wrapper
 
-To install the `angular-fusioncharts` wrapper, execute the following command in the terminal:
+To install the `angular-fusioncharts` wrapper, do t he following in the terminal:
 
 ```shell
 npm install angular-fusioncharts --save
@@ -51,7 +51,7 @@ npm install angular-fusioncharts --save
 
 ### Step 3: Import **FusionChartsModule**
 
-To import fusioncharts module in `app.module.ts`(in your application),execute the following command:
+To import fusioncharts module in `app.module.ts` (in your application), do the following:
 
 ```shell
 import { FusionChartsModule } from 'angular-fusioncharts';
@@ -59,7 +59,7 @@ import { FusionChartsModule } from 'angular-fusioncharts';
 
 ### Step 4: Import FusionCharts library via npm
 
-To import the `fusioncharts` library in `app.module.ts`(in your application), execute the following command:
+To import the `fusioncharts` library in `app.module.ts`(in your application), do t he following:
 
 ```shell
 import * as FusionCharts from 'fusioncharts';
@@ -74,7 +74,7 @@ import * as Widgets from 'fusioncharts/fusioncharts.widgets'; // Widgets
 import * as Powercharts from 'fusioncharts/fusioncharts.powercharts'; //PowerCharts
 ```
 
-Note: To import specific charts,using the following commands:
+Note: To import specific charts, include the following import statements in your code:
 
 ```shell
 import * as Gantt from 'fusioncharts/fusioncharts.gantt'; // Gantt
@@ -91,13 +91,13 @@ That completes the installation of FusionCharts in your application. To see how 
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
-To include the map definition files placed in **fusioncharts/maps**, execute the following command:
+To include the map definition files placed in **fusioncharts/maps**, do t he following:
 
 ```Shell
 import * as Maps from 'fusioncharts/fusioncharts.maps'; // Maps
 ```
 
-To include the **map definition** file you want to render, execute the following command:
+To include the **map definition** file you want to render, do t he following:
 
 ```Shell
 import * as World from 'fusioncharts/maps/fusioncharts.world'
@@ -120,7 +120,7 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-To include the definition files placed in **fusioncharts/themes**, execute the following command:
+To include the definition files placed in **fusioncharts/themes**, do t he following:
 
 ```Shell
 import * as Fusion from 'fusioncharts/themes/fusioncharts.theme.fusion';
@@ -167,10 +167,10 @@ FusionChartsModule.fcRoot(FusionCharts, Charts)  // FusionCharts and Charts
 }
 ```
 
-To add more than one dependency to the environment, replace the **FusionChartsModule.fcRoot(FusionCharts, Charts)** line with one of the lines shown below:
+To add more than one dependency to the environment, replace the `FusionChartsModule.fcRoot(FusionCharts, Charts)` line with one of the lines shown below:
 
-* **FusionChartsModule.fcRoot(FusionCharts, Charts, Widgets, Fusion)**: To import charts, widgets and themes.
+* `FusionChartsModule.fcRoot(FusionCharts, Charts, Widgets, Fusion)`: To import charts, widgets and themes.
 
-* **FusionChartsModule.fcRoot(FusionCharts, Charts, Widgets, PowerCharts)**: To import charts, widgets and PowerCharts.
+* `FusionChartsModule.fcRoot(FusionCharts, Charts, Widgets, PowerCharts)`: To import charts, widgets and PowerCharts.
 
-* **FusionChartsModule.fcRoot(FusionCharts, Maps, world)**: To import charts, maps and World map.
+* `FusionChartsModule.fcRoot(FusionCharts, Maps, world)`: To import charts, maps and World map.
