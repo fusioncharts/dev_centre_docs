@@ -47,3 +47,27 @@ If the watermark shows up for your licensed files, even after overwriting, check
 
   * Are you copying the correct JavaScript files and overwriting at the right location?
   * Have you cleared your browser cache?
+
+## Disable Watermark from Chart Canvas
+
+FusionCharts Licensed Version user can now disable watermark from the chart canvas when downloading the package from npm.
+
+**To disable watermark globally, refer to the code below:**
+
+```javascript
+// Global Configuration
+FusionCharts.options.creditLabel = false;
+```
+
+**To disable the watermark for a particular chart, refer to the code below:**
+
+```javascript
+chartObj = new FusionCharts({
+    type: 'column2d',
+    // Disable credit label
+    creditLabel: false,
+    width: '700',
+    height: '500',
+    dataFormat: 'json'
+});
+```
