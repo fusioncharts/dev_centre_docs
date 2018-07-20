@@ -287,3 +287,128 @@ The configured zoom line chart looks like:
 {% embed_chart standard-charts-zoom-line-charts-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/65jv5ohb/ "@@open-newtab") to configure the above attributes.
+
+## Customize the Peak Data Limits
+
+Zoomline chart shows large number of datasets. For instance, you can use it to plot daily revenue of two or more departments for the last 10 years.
+
+However, you cannot see all data values plotted in the initial display of the chart. Instead, you see a number of values selected smartly from the dataset. This way, you can quickly identify a trend in the values. The process also reduces resource consumption and improves chart performance. For a deeper look into the data, simply zoom in to focus on individual plot points.
+
+> FusionCharts employs its own logic to smartly determine the plots shown in the initial display. As such, it may remove outliers or peak points. So, try to notice whether some values are exceeding the expected result. For instance, if the revenue drops drastically or increases beyond expectation for a month before returning to normal, look for outliers.
+
+In situations like the one discussed above, you can use 3 attributes in Zoomline charts:
+
+* `showPeakData`: Takes **boolean** value
+* `maxPeakDataLimit`: Takes **number** as the value
+* `minPeakDataLimit`: Takes **number** as the value
+
+The first attribute informs the chart that you want to define a condition for peak data, while the other two attributes define the condition. Any value greater than the `maxPeakDataLimit` (which you provide) is considered as peak data and included in the initial display of zoomline chart, while `minPeakDataLimit` defines the opposite condition.
+
+**Scenario 1**
+
+To display all values greater than a particular value in the chart, do the following:
+
+* Set the value of `showPeakData` to `1`.
+* Set the value of `maxPeakDataLimit` to the minimum value of plots that should be displayed on the chart.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        ...
+        "showPeakData": "1",
+        "maxPeakDataLimit": "1500"
+
+    },
+}
+```
+
+The chart will look as shown below:
+
+<<Insert chart>>
+
+> In the above chart, all plots having values less than 1500 are automatically detected and included.
+
+**Scenario 2**
+
+To display all values less than a particular value in the chart, do the following:
+
+* Set the value of `showPeakData` to `1`.
+* Set the value of `minPeakDataLimit` to the maximum value of plots that should be displayed on the chart.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        ...
+        "showPeakData": "1",
+        "minPeakDataLimit": "100"    
+    },
+}
+```
+
+The chart will look as shown below:
+
+<<Insert chart>>
+
+> In the above chart, all plots having values more than 100 are automatically detected and included.
+
+**Scenario 3**
+
+To display all values less than a particular value in the chart, do the following:
+
+* Set the value of `showPeakData` to `1`.
+* Set the value of `minPeakDataLimit` to the maximum value of plots that should be displayed on the chart.
+* Set the value of `maxPeakDataLimit` to the minimum value of plots that should be displayed on the chart.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        ...
+        "showPeakData": "1",
+        "minPeakDataLimit": "100",
+        "maxPeakDataLimit": "1500"
+    },
+}
+```
+
+The chart will look as shown below:
+
+<<Insert chart>>
+
+> In the above chart, all plots having values more than 100 and less than 1500 are automatically detected and included.
+
+**Scenario 4**
+
+There may be situations, where a particular range of value is more important to you than specific outliers. For example - you may need to include all values within range 500-1000 in the initially displayed zoomline chart, along with the smartly detected values.
+
+As of FusionCharts v3.12.1, there's no way to achieve this. However v3.13.0 onwards, FusionCharts supports a new feature, where you can reverse the min-max condition, by setting the  **min value** greater than the **max value**. The chart will then include all values within the range. For instance, in v3.13.0, to include all values inside the range 500-1000, do the following:
+
+To display all values less than a particular value in the chart, do the following:
+
+* Set the value of `showPeakData` to `1`.
+* Set the value of `minPeakDataLimit` to `1000`.
+* Set the value of `maxPeakDataLimit` to `500`.
+
+Refer to the code below:
+
+```json
+{
+    "chart": {
+        ...
+        "showPeakData": "1",
+        "minPeakDataLimit": "1000",
+        "maxPeakDataLimit": "500"
+    },
+}
+```
+
+The chart will look as shown below:
+
+<<Insert chart>>
+
+> In the above chart, all values in the range 500-1000 will be included in the initial display. 
