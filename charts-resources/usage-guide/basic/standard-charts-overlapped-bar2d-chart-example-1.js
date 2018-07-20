@@ -6,7 +6,7 @@
     "dataFormat": "json",
     "dataSource": {
         "chart": {
-            "caption": "MLB Scorecard",
+            "caption": "Major League Baseball - Season Rankings",
             "subCaption": "Teams in the Lead",
             "xAxisName": "Team",
             "yAxisName": "Position",
