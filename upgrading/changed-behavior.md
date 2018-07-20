@@ -13,7 +13,7 @@ The restore button in select-scatter and drag-able chart has been moved to optio
 
 The options menu looks like shown below:
 
-GIF
+![Change Axis Limits]({% site.baseurl %}/gif/standard-charts-drag-able-charts-gif-1.gif)
 
 Following is the list of attributes which have been replaced with new ones:
 
