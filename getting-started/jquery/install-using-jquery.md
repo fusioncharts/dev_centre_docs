@@ -260,22 +260,26 @@ You can include the fusioncharts class and jquery-fusioncharts module using any 
 <pre><code class="custom-hlc language-cv">
     let FusionCharts = require('jquery-fusioncharts');
 </code></pre>
-<div><strong>To add chart dependency:</strong></div>
-<pre><code class="custom-hlc language-cv">
-    Charts(FusionCharts);
-</code></pre>
-<div><strong>To add charts, powercharts and widgets dependencies:</strong></div>
-<pre><code class="custom-hlc language-cv">
-    // [Module](FusionCharts);
-    Charts(FusionCharts);
-    PowerCharts(FusionCharts);
-    Widgets(FusionCharts);
-</code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 </div>
 </div>
+
+**To add chart dependency:**
+
+```
+Charts(FusionCharts);
+```
+
+**To add charts, powercharts and widgets dependencies:**
+
+```
+// [Module](FusionCharts);
+Charts(FusionCharts);
+PowerCharts(FusionCharts);
+Widgets(FusionCharts);
+```
 
 ## Include Maps via NPM
 
@@ -324,16 +328,18 @@ You an include the map files using any of the following process:
 <pre><code class="custom-hlc language-cv">
     let FusionCharts = require('jquery-fusioncharts');
 </code></pre>
-<div><strong>To add the map and definition as the dependency to the core:</strong></div>
-<pre><code class="custom-hlc language-cv">
-    Maps(FusionCharts);
-    World(FusionCharts);
-</code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 </div>
 </div>
+
+**To add the map and definition as the dependency to the core:**
+
+```
+Maps(FusionCharts);
+World(FusionCharts);
+```
 
 > If you want to render a map which is not in the fusioncharts package(world and USA), then you need to install **fusionmaps** which contains all the ES6 map definition:
 * npm install fusionmaps

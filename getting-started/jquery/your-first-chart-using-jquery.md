@@ -32,7 +32,7 @@ China|30|
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For React, we recommend JSON format. There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts), etc. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts), etc. The converted format will look as shown below:
 
 
 ```javascript
@@ -119,41 +119,47 @@ jQuery('document').ready(function() {
 
     // Render the chart using `insertFusionCharts` method
     jQuery("#chart-container").insertFusionCharts({
-        // Chart Configuration
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion",
-        },
-        // Chart Data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
+        type: "column2d",
+        width: "500",
+        height: "300",
+        dataFormat: "json",
+        dataSource: {
+            // Chart Configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+            },
+            // Chart Data
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
+        }
     });
 });
 ```
@@ -252,44 +258,50 @@ var jQuery = require('jquery');
 var FusionCharts = require('jquery-fusioncharts');
 // Load charts module to render Column2D chart
 var Charts = require('fusioncharts/fusioncharts.charts');
-
+ 
 jQuery('document').ready(function() {
     // Once the window with a document is ready, execute the Chart module
     // and pass FusionCharts as a dependency
     Charts(FusionCharts);
-
+ 
     // Render the chart using `insertFusionCharts` method
     jQuery("#chart-container").insertFusionCharts({
-        // Chart Configuration
-        "chart": {
-            "caption": "Nordstrom's Customer Satisfaction Score for 2017",
-            "lowerLimit": "0",
-            "upperLimit": "100",
-            "showValue": "1",
-            "numberSuffix": "%",
-            "theme": "fusion",
-            "showToolTip": "0"
-        },
-        // Chart Data
-        "colorRange": {
-            "color": [{
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#F2726F"
-            }, {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#FFC533"
-            }, {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#62B58F"
-            }]
-        },
-        "dials": {
-            "dial": [{
-                "value": "81"
-            }]
+        type: "angulargauge",
+        width: "500",
+        height: "300",
+        dataFormat: "json",
+        dataSource: {
+            // Chart Configuration
+            "chart": {
+                "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+                "lowerLimit": "0",
+                "upperLimit": "100",
+                "showValue": "1",
+                "numberSuffix": "%",
+                "theme": "fusion",
+                "showToolTip": "0"
+            },
+            // Chart Data
+            "colorRange": {
+                "color": [{
+                    "minValue": "0",
+                    "maxValue": "50",
+                    "code": "#F2726F"
+                }, {
+                    "minValue": "50",
+                    "maxValue": "75",
+                    "code": "#FFC533"
+                }, {
+                    "minValue": "75",
+                    "maxValue": "100",
+                    "code": "#62B58F"
+                }]
+            },
+            "dials": {
+                "dial": [{
+                    "value": "81"
+                }]
+            }
         }
     });
 });
@@ -403,69 +415,75 @@ var jQuery = require('jquery');
 var FusionCharts = require('jquery-fusioncharts');
 // Load charts module to render Column2D chart
 var Charts = require('fusioncharts/fusioncharts.charts');
-
+ 
 jQuery('document').ready(function() {
     // Once the window with a document is ready, execute the Chart module
     // and pass FusionCharts as a dependency
     Charts(FusionCharts);
-
+ 
     // Render the chart using `insertFusionCharts` method
     jQuery("#chart-container").insertFusionCharts({
-    // Map Configuration
-        "chart": {
-            "caption": "Average Annual Population Growth",
-            "subcaption": " 1955-2015",
-            "numbersuffix": "%",
-            "includevalueinlabels": "1",
-            "labelsepchar": ": ",
-            "entityFillHoverColor": "#FFF9C4",
-            "theme": "fusion"
-        },
-        // Aesthetics; ranges synced with the slider
-        "colorrange": {
-            "minvalue": "0",
-            "code": "#FFE0B2",
-            "gradient": "1",
-            "color": [{
-                "minvalue": "0.5",
-                "maxvalue": "1.0",
-                "color": "#FFD74D"
+        type: "world",
+        width: "500",
+        height: "300",
+        dataFormat: "json",
+        dataSource: {
+            // Map Configuration
+            "chart": {
+                "caption": "Average Annual Population Growth",
+                "subcaption": " 1955-2015",
+                "numbersuffix": "%",
+                "includevalueinlabels": "1",
+                "labelsepchar": ": ",
+                "entityFillHoverColor": "#FFF9C4",
+                "theme": "fusion"
+            },
+            // Aesthetics; ranges synced with the slider
+            "colorrange": {
+                "minvalue": "0",
+                "code": "#FFE0B2",
+                "gradient": "1",
+                "color": [{
+                    "minvalue": "0.5",
+                    "maxvalue": "1.0",
+                    "color": "#FFD74D"
+                }, {
+                    "minvalue": "1.0",
+                    "maxvalue": "2.0",
+                    "color": "#FB8C00"
+                }, {
+                    "minvalue": "2.0",
+                    "maxvalue": "3.0",
+                    "color": "#E65100"
+                }]
+            },
+            // Source data as JSON --> id represents countries of world.
+            "data": [{
+                "id": "NA",
+                "value": ".82",
+                "showLabel": "1"
             }, {
-                "minvalue": "1.0",
-                "maxvalue": "2.0",
-                "color": "#FB8C00"
+                "id": "SA",
+                "value": "2.04",
+                "showLabel": "1"
             }, {
-                "minvalue": "2.0",
-                "maxvalue": "3.0",
-                "color": "#E65100"
+                "id": "AS",
+                "value": "1.78",
+                "showLabel": "1"
+            }, {
+                "id": "EU",
+                "value": ".40",
+                "showLabel": "1"
+            }, {
+                "id": "AF",
+                "value": "2.58",
+                "showLabel": "1"
+            }, {
+                "id": "AU",
+                "value": "1.30",
+                "showLabel": "1"
             }]
-        },
-        // Source data as JSON --> id represents countries of world.
-        "data": [{
-            "id": "NA",
-            "value": ".82",
-            "showLabel": "1"
-        }, {
-            "id": "SA",
-            "value": "2.04",
-            "showLabel": "1"
-        }, {
-            "id": "AS",
-            "value": "1.78",
-            "showLabel": "1"
-        }, {
-            "id": "EU",
-            "value": ".40",
-            "showLabel": "1"
-        }, {
-            "id": "AF",
-            "value": "2.58",
-            "showLabel": "1"
-        }, {
-            "id": "AU",
-            "value": "1.30",
-            "showLabel": "1"
-        }]
+        }
     });
 });
 ```
