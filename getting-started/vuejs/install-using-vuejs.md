@@ -21,7 +21,7 @@ In this article, we will demonstrate how to download and install the `Vue-Fusion
 
 <table>
     <tr>
-        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-using-direct-JavaScript-files-2)</td>
+        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-using-direct-javascript-files-2)</td>
         <td align="center">[npm]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-fusioncharts-via-npm-5)</td>
     </tr>
 </table>
@@ -40,7 +40,7 @@ The folder structure is shown below:
 
 > It is recommended that you copy the **js** folder from within fusioncharts-suite-xt to your project's JavaScript folder.
 
-* The download package also contains `vue-fusioncharts.js` file under **fusioncharts-suite-xt > integrations > frontend-plugins > vue** folder. This folder will also contain Vue-FusionCharts specific Export Handlers. The folder structure is shown below:
+* The download package also contains `vue-fusioncharts.js` file under **fusioncharts-suite-xt > integrations > frontend-plugins > vue** folder. This folder will also contain Vue-FusionCharts native Export Handlers. The folder structure is shown below:
 
 ![Vue Js Folder]({% site.baseurl %}/gif/vue-folder-structure.gif)
 

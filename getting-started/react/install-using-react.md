@@ -31,17 +31,27 @@ In this article, we will show you how you to download and install the React-Fusi
 
 ## Install using Direct JavaScript files
 
-In order to install and start working with **React-FusionCharts**, you need to:
+In order to install and start working with React-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT download package which contains:
 
-* [Download](https://www.fusioncharts.com/react-charts)the **React-FusionCharts** plugin which contains the `react-fusioncharts.js` file.
+* JavaScript files to render Charts, Widgets and powerCharts under the **js** folder.
+* JavaScript files to render maps under **js > maps** folder.
+* JavaScript files to include themes under **js > themes** folder.
 
-* [Download](https://www.fusioncharts.com/download/)the FusionCharts Suite XT which contains the necessary JavaScript files.
+The folder structure is shown below:
 
-Installation of FusionCharts Suite XT involves copying and pasting the JavaScript files from the downloaded package into your project folder. The folder structure is shown below:
+![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-![Js Folder Structure]({% site.baseurl %}/images/js-folder-structure.png)
+> It is recommended that you copy the **js** folder from within fusioncharts-suite-xt to your project's JavaScript folder.
 
-> It is recommended that you copy the highlighted "js" folder from within fusioncharts-suite-xt to your project's JavaScript folder, and rename the copied folder to "fusioncharts" - just like you would do for any other 3rd party JavaScript library.
+* The download package also contains `react-fusioncharts.js` file under **fusioncharts-suite-xt > integrations > frontend-plugins > react** folder. This folder will also contain React-FusionCharts native Export Handlers. The folder structure is shown below:
+
+![React Js Folder]({% site.baseurl %}/gif/react-folder-structure.gif)
+
+> If you are using 3.12.2 or older versions, download v3.13.0 to get the **react** folder in the FusionCharts Suite XT package. 
+
+> It is recommended that you copy the **react** folder from within **fusioncharts-suite-xt > integrations > frontend-plugins > react** to your project's JavaScript folder.
+
+Installation of FusionCharts Suite XT involves copying and pasting the JavaScript files from the downloaded package into your project folder.
 
 After that, you can include the FusionCharts JavaScript library in the web applications and start building your charts, gauges, and maps.
 
