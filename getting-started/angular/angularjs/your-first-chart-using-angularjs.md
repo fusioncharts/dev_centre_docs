@@ -5,7 +5,7 @@ heading: Your First Chart in AngularJS using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and angularjs-fusioncharts wrapper. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angular#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angular#create-your-first-gauge-9) and a [map]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angular#create-your-first-map-14).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and the `angularjs-fusioncharts` wrapper. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angular#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angular#create-your-first-gauge-9) and a [map]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angular#create-your-first-map-14).
 
 Before going through this article, please [install]({% site.baseurl %}/getting-started/angular/angularjs/install-using-angularjs '@@open-newtab') `angularjs-fusioncharts` plugin, if not already installed.
 
@@ -89,15 +89,13 @@ Both the `chart` object and the `data` array contains a set of key-value pairs k
 
 Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties. The list of functional attributes used in the above code are:
 
-* `showLabels` sets the  configuration whether the x-axis labels will be displayed or not.
-* `showValue` sets the configuration whether data values will be displayed along with the data plot on chart.
 * `caption` sets the caption of the chart.
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
 * `numberPrefix` adds prefix to all the numbers visible on the chart.
 * Please note, we have used the `theme` attribute in the chart's JSON data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 
-#### Cosmetics Attributes
+#### Cosmetic Attributes
 
 Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
@@ -156,7 +154,7 @@ myApp.controller('MyController', ['$scope', function($scope) {
 }])
 ```
 
-Now, use the fusioncharts directive in a template. The code for the `index.html` file is given below:
+Now, use the `fusioncharts` directive in a template. The code for the `index.html` file is given below:
 
 ```html
 <!DOCTYPE html>
@@ -496,7 +494,7 @@ Now, use the fusioncharts directive in a template. The code for the `index.html`
 </body>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of **world**. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
 ## Problem rendering the chart?
 

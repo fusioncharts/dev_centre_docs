@@ -7,13 +7,13 @@ chartPresent: false
 
 FusionCharts Suite XT includes an extensive range of charts, gauges, and maps that you can use to plot all types of static and real-time data.
 
-The angularjs-fusioncharts wrapper, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single AngularJS component.
+The `angularjs-fusioncharts` wrapper, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single AngularJS component.
 
 In this article, we will show you how you can download and install the `angularjs-fusioncharts` wrapper and all the other dependencies on your system. You can install FusionCharts in your application using NPM.
 
 ## Install FusionCharts via npm
 
-Before installing and start working with angularjs-fusioncharts wrapper, let's checkout the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
+Before you install and start working with angularjs-fusioncharts wrapper, let's get familiar with the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
 
 File Name|Description|
 -|-
@@ -31,9 +31,9 @@ File Name|Description|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files (JSON & CSS). Refer each theme with their respective `JavaScript` and `CSS` file names.|
 
-Now, let's discuss how to install the fusioncharts module via npm. The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
+Now, let's discuss how to install the `fusioncharts` module via **npm**. The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
 
-This section outlines the steps to be executed for installing all the node modules via NPM and rendering charts using the angularjs-Fusioncharts wrapper.
+This section outlines the steps to be executed for installing all the node modules via **npm** and rendering charts using the angularjs-Fusioncharts wrapper.
 
 You can install `angularjs fusioncharts` wrapper using any of the following steps:
 
@@ -159,12 +159,12 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 </div>
 
 <div class='tab xml-tab'>
-<div class="pb-10">require your map module</div>
+<div class="pb-10">// require your map module</div>
 <pre><code class="custom-hlc language-cv">
     const Maps = require('fusioncharts/fusioncharts.maps.js');
     const World = require('fusioncharts/maps/fusioncharts.world.js');
 </code></pre>
-<div class="pb-10">Pass the FusionCharts module to the Maps Modules</div>
+<div class="pb-10">// Pass the FusionCharts module to the Maps Modules</div>
 <pre><code class="custom-hlc language-cv">
     Maps(FusionCharts);
     World(FusionCharts);
@@ -199,7 +199,7 @@ FusionCharts Suite XT ships with the following predefined themes:
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<div class="mt-10 pb-10">To include theme definition in script tag:</div>
+<div class="mt-10 pb-10">// To include theme definition in script tag:</div>
 <pre><code class="custom-hlc language-cs">
     &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.ocean.js"&gt;&lt;/script&gt;
@@ -209,14 +209,14 @@ FusionCharts Suite XT ships with the following predefined themes:
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 <div class='tab xml-tab'>
-<div class="pb-10">require your themes</div>
+<div class="pb-10">// require your themes</div>
 <pre><code class="custom-hlc language-cv">
     const Fusion = require('fusioncharts/themes/fusioncharts.fusion.js');
     const Zune = require('fusioncharts/themes/fusioncharts.zune.js');
     const Ocean = require('fusioncharts/themes/fusioncharts.ocean.js');
     const Carbon = require('fusioncharts/themes/fusioncharts.carbon.js');
 </code></pre>
-<div class="pb-10">Pass the FusionCharts module to the Theme Modules</div>
+<div class="pb-10">// Pass the FusionCharts module to the Theme Modules</div>
 <pre><code class="custom-hlc language-cv">
     Fusion(FusionCharts);
     Zune(FusionCharts);
