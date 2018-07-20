@@ -69,6 +69,8 @@ The chart below shows a zoom-line dual y-axis chart created to compare unique fo
 
 Click [here](http://jsfiddle.net/fusioncharts/mvsjs4ag/ "@@open-newtab") to edit the zoom line dual y-axis chart.
 
+Now, let's customize the appearance and properties of the charts.
+
 ## Limit the Number of Data Labels
 
 By default, the zoom line chart displays as many data labels as can be accommodated without causing a clutter. 
