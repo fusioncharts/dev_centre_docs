@@ -43,7 +43,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
     * [restoreText]({% site.baseurl %}/chart-attributes/?chart=dragcolumn2d&attribute=chart_restoretext)
 
-* Data plots in the [inverse chart]({% site.baseurl %}/chart-guide/standard-charts/inverse-y-axis-chart) will now appear from the top of the canvas.
+* Data plots in the [inverse chart]({% site.baseurl %}/chart-guide/standard-charts/inverse-y-axis-chart) will now appear from the top of the canvas. If you would like the old behavior, click here to know more.
 
 * The hyphen ( - ) character is now supported in the parameter of the JavaScript function of `link` attribute.
 

@@ -1,8 +1,8 @@
 {
     "type": "mscombidy2d",
     "renderAt": "chartContainer",
-    "width": "100%",
-    "height": "100%",
+    "width": "700",
+    "height": "400",
     "dataFormat": "json",
     "dataSource": {
         "chart": {
