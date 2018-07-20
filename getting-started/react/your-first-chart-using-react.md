@@ -5,7 +5,7 @@ heading: Your First Chart in React using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and React-FusionCharts plugin. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-map-10).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and React-FusionCharts plugin. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-map-10).
 
 Before going through this article, please [install](https://www.fusioncharts.com/react-charts) react-fusioncharts plugin, if not already installed.
 
@@ -74,21 +74,17 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-In the above JSON we have:
+In the above JSON, we have:
 
 * Created the chart object to define the elements of the chart.
 
 * Then, each row of the tabular data is present within the data array to specify the labels and their corresponding values.
 
-Both the chart object and the data array contains a set of key-value pairs known as attributes. These attributes are used to set the functional and cosmetic properties of the chart as defined below:
+Both the `chart` object and the `data` array contains a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart as defined below:
 
 #### Functional Attributes
 
 Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties. The list of functional attributes used in the above code are:
-
-* `showLabels` sets the configuration whether the x-axis labels will be displayed or not.
-
-* `showValue` sets the configuration whether data values will be displayed along with the data plot on chart.
 
 * `caption` sets the caption of the chart.
 
@@ -100,13 +96,13 @@ Functional attributes let you control a variety of functional elements on the ch
 
 * Please note, we have used the theme attribute in the chart's JSON data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 
-#### Cosmetics Attributes
+#### Cosmetic Attributes
 
 Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click [here]({% site.baseurl %}/chart-attributes/?chart=area2d).
 
 ### Create an instance of the chart
 
-In this step, we will create an instance of the chart type as `column2d`, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will create an instance of the chart type as `column2d`, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
 
 First, store the configurations as JSON object in a variable as below:
 
@@ -159,7 +155,7 @@ class App extends React.Component {
 
 In the above code:
 
-* We have created an instance of the `column2d` chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using width and height.
+* We have created an instance of the `column2d` chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 700x400 pixels using width and height.
 
 * To specify the data format as JSON, we have set the `dataFormat` parameter to `json`. You can also provide the data in [XML format ]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format).
 
@@ -168,12 +164,6 @@ In the above code:
 That's it! When you run this HTML page now, you should see a chart representing your data.
 
 See the complete list of [all possible attributes ]({% site.baseurl %}/chart-attributes/?chart=column2d)(the keys in the `dataSource` object) for a column 2D chart.
-
-Depending on the chart type, only two properties of the React component can vary mandatorily:
-
-* `app.type`: You must set it to the chart type that you want to render. For a complete list of all charts and their types, refer to [Chart Gallery ]({% site.baseurl %}/demos/chart-gallery#Gallary)and explore the desired type in detail.
-
-* `app.dataSource`: Each chart has its own data schema that defines the chart configuration and the source of data. Therefore, this object varies significantly, depending on the type of chart.
 
 Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts) or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d) for the charts.
 
@@ -366,7 +356,7 @@ See the complete list of [all possible attributes]({% site.baseurl %}/maps/attri
 
 ## Problem rendering the chart?
 
-In case something went wrong, and you are unable to see the chart, check for the following:
+In case something is wrong, and you are unable to see the chart, check for the following:
 
 * If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
 
