@@ -152,8 +152,8 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 <div class='tab json-tab active'>
 <div class="mt-10 pb-10">Include map definitions in script tag:</div>
 <pre><code class="custom-hlc language-cs">
+&lt;script src="node_modules/fusioncharts/fusioncharts.maps.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/maps/fusioncharts.usa.js"&gt;&lt;/script&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
