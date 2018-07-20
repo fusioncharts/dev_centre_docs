@@ -17,7 +17,7 @@ Some of the basic features of jQuery plugin are:
 * Customize the look and feel of all elements on the chart.
 * Plot charts from data contained in HTML tables.
 
-In this article, we will show you how you can download and install the `jQuery helper` and all the other dependencies on your system. You can use FusionCharts in your Vue project using any of the two modes given below:
+In this article, we will show you how you can download and install the `jQuery helper` and all the other dependencies on your system. You can use FusionCharts in your jquery project using any of the two modes given below:
 
 ## Choose your mode of installation:
 
@@ -30,7 +30,7 @@ In this article, we will show you how you can download and install the `jQuery h
 
 ## Install using Direct JavaScript files
 
-In order to install and start working with Vue-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files and the `jquery` helper folder.
+In order to install and start working with jquery-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files and the `jquery` helper folder.
 
 > Post version 3.13.0, `jquery` helper is provided in the download package. Look for the `jquery` folder under **fusioncharts-suite-xt/integrations/frontend-plugins** in downloaded package.
 
