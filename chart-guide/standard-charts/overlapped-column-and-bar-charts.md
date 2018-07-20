@@ -46,7 +46,7 @@ For a detailed list of attributes, refer to the [chart attributes]({% site.baseu
 
 The overlapped bar 2D chart looks like:
 
-{% embed_all standard-charts-overlapped-bar2d-chart-example-1.js %}
+{% embed_all standard-charts-overlapped-bar2d-chart-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/6k7zoes8/ "@@open-newtab") to edit the above overlapped bar 2D chart.
 
