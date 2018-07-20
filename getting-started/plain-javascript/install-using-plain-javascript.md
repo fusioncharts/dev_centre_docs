@@ -22,9 +22,11 @@ In this article, we will show you how you can download and install the `FusionCh
 
 FusionCharts Suite XT is a JavaScript library that runs on your desktop and mobile web browsers. Click [here](https://www.fusioncharts.com/download/ '@@open-newtab') to download the library.
 
-Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. The folder structure is shown below:
+Installation of FusionCharts Suite XT involves copying and pasting the JavaScript files from the downloaded package into your project folder. The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/images/js-folder-structure.png)
+
+> It is recommended that you copy the highlighted "js" folder from within fusioncharts-suite-xt to your project's JavaScript folder, and rename the copied folder to "fusioncharts" - just like you would do for any other 3rd party JavaScript library.
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. 
 
@@ -46,7 +48,7 @@ File Name|Description|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files (JSON & CSS). Refer each theme with their respective `JavaScript` and `CSS` file names.|
 
-In order to install, create an HTML file and follow the steps below.
+In order to install, create an HTML file and follow the steps given below:
 
 **Step 1: Include the FusionCharts package:**
 
@@ -61,7 +63,7 @@ In order to install, create an HTML file and follow the steps below.
 <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
 ```
 
-The consolidated code looks like as shown below:
+The consolidated code is shown below:
 
 ```html
 <head>
@@ -81,13 +83,13 @@ That completes the installation of FusionCharts in your application. To see how 
 * To render a chart belonging to the PowerCharts package, load the PowerCharts module:
 
 ```
-<script src="node_modules/fusioncharts/fusioncharts.powercharts.js"> </script>
+<script src="path/to/local/fusioncharts/fusioncharts.powercharts.js"> </script>
 ```
 
 * To render a chart belonging to the FusionWidgets package, load the FusionWidgets module:
 
 ```
-<script src="node_modules/fusioncharts/fusioncharts.fusionwidgets.js"> </script>
+<script src="path/to/local/fusioncharts/fusioncharts.fusionwidgets.js"> </script>
 ```
 
 > To know which chart belongs to which package, refer the **[list of charts](https://www.fusioncharts.com/dev/getting-started/list-of-charts.html)**.
@@ -96,55 +98,55 @@ That completes the installation of FusionCharts in your application. To see how 
 
 For some chart types, you need to include/exclude certain files and in a specific order. Following  are the chart types, and the corresponding files:
 
-* To render the zoom-scatter chart, it is necessary to include the **fusioncharts.js** and **fusioncharts.charts.js** files before the **fusioncharts.zoomscatter.js** file.
+* To render the **Zoom-Scatter** chart, it is necessary to include the `fusioncharts.js` and `fusioncharts.charts.js` files before the `fusioncharts.zoomscatter.js` file.
 
 ```
-<script src = "node_modules/fusioncharts/fusioncharts.js"> </script> 
-<script src = "node_modules/fusioncharts/fusioncharts.charts.js"> </script>  
-<script src = "node_modules/fusioncharts/fusioncharts.zoomscatter.js"> </script>
+<script src = "path/to/local/fusioncharts/fusioncharts.js"> </script> 
+<script src = "path/to/local/fusioncharts/fusioncharts.charts.js"> </script>  
+<script src = "path/to/local/fusioncharts/fusioncharts.zoomscatter.js"> </script>
 ```
 
 * To render the treemap chart, include the **fusioncharts.js** and **fusioncharts.powercharts.js** files before the **fusioncharts.treemap.js** file.
 
 ```
-<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
-<script src = "node_modules/fusioncharts/fusioncharts.powercharts.js"> </script>  
-<script src = "node_modules/fusioncharts/fusioncharts.treemap.js"> </script>
+<script src = "path/to/local/fusioncharts/fusioncharts.js"> </script>  
+<script src = "path/to/local/fusioncharts/fusioncharts.powercharts.js"> </script>  
+<script src = "path/to/local/fusioncharts/fusioncharts.treemap.js"> </script>
 ```
 
 * To render the SS Grid chart only the **fusioncharts.js** and the **fusioncharts.ssgrid.js** files are needed.
 
 ```
-<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
-<script src = "node_modules/fusioncharts/fusioncharts.ssgrid.js"> </script>
+<script src = "path/to/local/fusioncharts/fusioncharts.js"> </script>  
+<script src = "path/to/local/fusioncharts/fusioncharts.ssgrid.js"> </script>
 ```
 
 * To render the Gantt chart only the **fusioncharts.js** and the **fusioncharts.gantt.js** files are needed.
 
 ```
-<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
-<script src = "node_modules/fusioncharts/fusioncharts.gantt.js"> </script>
+<script src = "path/to/local/fusioncharts/fusioncharts.js"> </script>  
+<script src = "path/to/local/fusioncharts/fusioncharts.gantt.js"> </script>
 ```
 
 * To render the Zoom line chart only the **fusioncharts.js** and the **fusioncharts.zoomline.js** files are needed.
 
 ```
-<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
-<script src = "node_modules/fusioncharts/fusioncharts.zoomline.js"> </script>
+<script src = "path/to/local/fusioncharts/fusioncharts.js"> </script>  
+<script src = "path/to/local/fusioncharts/fusioncharts.zoomline.js"> </script>
 ```
 
 * To render the Overlapped Bar 2D chart only the **fusioncharts.js** and the **fusioncharts.overlappedbar2d.js** files are needed.
 
 ```
-<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
-<script src = "node_modules/fusioncharts/fusioncharts.overlappedbar2d.js"> </script>
+<script src = "path/to/local/fusioncharts/fusioncharts.js"> </script>  
+<script src = "path/to/local/fusioncharts/fusioncharts.overlappedbar2d.js"> </script>
 ```
 
 * To render the Overlapped Column 2D chart only the **fusioncharts.js** and the **fusioncharts.overlappedcolumn2d.js** files are needed.
 
 ```
-<script src = "node_modules/fusioncharts/fusioncharts.js"> </script>  
-<script src = "node_modules/fusioncharts/fusioncharts.overlappedcolumn2d.js"> </script>
+<script src = "path/to/local/fusioncharts/fusioncharts.js"> </script>  
+<script src = "path/to/local/fusioncharts/fusioncharts.overlappedcolumn2d.js"> </script>
 ```
 
 ### Installing FusionMaps (map visualizations) for your project
@@ -202,11 +204,11 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 
 > The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` file sets the theme as **fusion**. To add any other theme to your chart, include its corresponding JavaScript file to your project.
 
-## Install FusionCharts via npm
+## Install FusionCharts via **npm**
 
-Now, let's discuss how to install the FusionCharts package via npm. The Fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
+Let's discuss how to install the FusionCharts package via npm. The FusionCharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
 
-**Step 1: Install the fusioncharts package via npm**
+**Step 1: Install the `fusioncharts` package via **npm**
 
 To install the `FusionCharts` package, execute the following command in the terminal:
 
@@ -214,30 +216,30 @@ To install the `FusionCharts` package, execute the following command in the term
 npm install fusioncharts
 ```
 
-**Step 2: Load FusionCharts module**
+**Step 2: Load `fusioncharts` module**
 
-To load the FusionCharts module, add the following code to your HTML file:
+To load the `fusioncharts` module, add the following code to your HTML file:
 
 ```html
-<script src="node_modules/fusioncharts/fusioncharts.js"></script>
+<script src="path/to/local/fusioncharts/fusioncharts.js"></script>
 ```
 
 ### Include Maps via NPM
 
-**Step 1: Install FusionMaps package**
+**Step 1: Install `fusionmaps` module**
 
-To install the FusionMaps package, execute the following command:
+To install the `fusionmaps` module, execute the following command:
 
 ```Shell
 npm install fusionmaps
 ```
 
-**Step 2: Load FusionCharts module**
+**Step 2: Load `fusioncharts` module**
 
 To load the FusionCharts module, add the following code to your HTML file:
 
 ```html
-<script src="node_modules/fusionmaps/fusioncharts.js"></script>
+<script src="path/to/local/fusionmaps/fusioncharts.js"></script>
 ```
 
 **Step 3: Load the maps module**
@@ -245,17 +247,19 @@ To load the FusionCharts module, add the following code to your HTML file:
 To load the maps module, add the folliwing code to your HTML file:
 
 ```html
-<script src="node_modules/fusionmaps/fusioncharts.maps.js"></script>
+<script src="path/to/local/fusionmaps/fusioncharts.maps.js"></script>
 ```
 
 **Step 4: Load Map Definition Files**
 
-Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.<MAP_ALIAS>**. Replace **MAP_ALIAS** by the map's JavaScript alias. Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. Include map definition files for all maps to render in the application.
+Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.<MAP_ALIAS>**. 
+
+Replace **MAP_ALIAS** by the map's JavaScript alias. Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. Include map definition files for all maps to render in the application.
 
 Therefore, assuming that you need to render the world map, the alias name **world** replaces **MAP_ALIAS** in the format.
 
 ```
-<script src="node_modules/fusionmaps/maps/fusioncharts.world.js"></script>
+<script src="path/to/local/fusionmaps/maps/fusioncharts.world.js"></script>
 ```
 
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are fetched from there.

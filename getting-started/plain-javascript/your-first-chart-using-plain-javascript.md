@@ -5,9 +5,9 @@ heading: Your First Chart using FusionCharts
 chartPresent: false
 ---
 
-Let's build our first chart using FusionCharts Suite XT! FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-map-10).
+Let's build our first chart using FusionCharts Suite XT! FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-map-10).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript '@@open-newtab') fusioncharts package, if not already installed.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript '@@open-newtab') the `fusioncharts` package, if not already installed.
 
 ## Create your first chart
 
@@ -36,9 +36,9 @@ December|$730,000|
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
+FusionCharts accepts data in JSON or XML format. In this section, we will convert the tabular data into JSON format. The converted format is shown below:
 
-> There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+> There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (illustrated here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
 ```javascript
 {
@@ -105,17 +105,15 @@ Both the `chart` object and the `data` array contains a set of key-value pairs k
 
 Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The list of functional attributes used in the above code are:
 
-* `showLabels` sets the  configuration whether the x-axis labels will be displayed or not.
-* `showValue` sets the configuration whether data values will be displayed along with the data plot on chart.
 * `caption` sets the caption of the chart.
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
 * `numberPrefix` adds prefix to all the numbers visible on the chart.
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided fusion (default theme) as its value. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
+* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` (default theme) as its value. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetics Attributes
 
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click here.
+Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click here.
 
 For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
@@ -198,8 +196,8 @@ The full HTML code is shown below:
 
 <head>
     <title>My first chart using FusionCharts Suite XT</title>
-    <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="path/to/local/js/fusioncharts.js"></script>
+    <script type="text/javascript" src="path/to/local/js/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
@@ -276,7 +274,7 @@ The full HTML code is shown below:
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
 
-Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
+Now, go on and explore other 95+ chart types that we've at [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'), or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 
 ## Create your first gauge
 
@@ -298,7 +296,7 @@ So any score less than 50 is bad and is red. Any score between 50 and 75 is aver
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format is shown below:
 
 ```javascript
 {
@@ -310,7 +308,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
         "upperLimit": "100",
         "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
         "gaugeFillRatio": "15",
-        "theme": "fint"
+        "theme": "fusion"
     },
     // Chart data
     "colorRange": {
@@ -338,9 +336,13 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 ### Create an instance of the gauge
 
-In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will:
 
-The code to render a chart is given below:
+* Create an instance of the gauge type as **angulargauge**.
+* Set the width and height (in pixels or %).
+* Finally specify the JSON data for the chart as string.
+
+The code to render a guage is given below:
 
 ```javascript
 FusionCharts.ready(function() {
@@ -644,7 +646,7 @@ The full HTML code is given below:
 </head>
 
 <body>
-    <div id="chartContainer">FusionMaps XT will load s map here!</div>
+    <div id="chartContainer">FusionMaps XT will load map here!</div>
 </body>
 
 </html>
@@ -654,7 +656,7 @@ See the complete list of [all possible attributes]({% site.baseurl %}/maps/attri
 
 ## Problem rendering the chart?
 
-In case something went wrong, and you are unable to see the chart, check for the following:
+In case something is wrong, and you are unable to see the chart, check for the following:
 
 * If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
 
