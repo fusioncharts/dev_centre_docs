@@ -34,7 +34,7 @@ In order to install and start working with jquery-FusionCharts you need to [down
 
 > Post version 3.13.0, `jquery` helper is provided in the download package. Look for the `jquery` folder under **fusioncharts-suite-xt/integrations/frontend-plugins** in downloaded package.
 
-Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the download package into your project folder. The folder structure is shown below:
+Installation of FusionCharts Suite XT involves copying and pasting the JavaScript files from the downloaded package into your project folder. The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/images/js-folder-structure.png)
 
@@ -205,7 +205,7 @@ npm install fusioncharts jquery-fusioncharts --save
 
 **Step 3: Include the fusioncharts module**
 
-Once the installation is done, you need to register the fusioncharts module. You can register in multiple ways as per your requirement like:
+Once the installation is done, you need to register the `fusioncharts` module. You can register in multiple ways as per your requirement like:
 
 **Register using all charts:**
 
@@ -342,8 +342,8 @@ World(FusionCharts);
 ```
 
 > If you want to render a map which is not in the fusioncharts package(world and USA), then you need to install **fusionmaps** which contains all the ES6 map definition:
-* npm install fusionmaps
-* ES-6 definitions can be found in node_modules/fusionmaps/maps/fusioncharts.[MAP-ALIAS].js
+* `npm install fusionmaps`
+* ES-6 definitions can be found in `node_modules/fusionmaps/maps/fusioncharts.[MAP-ALIAS].js`
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
