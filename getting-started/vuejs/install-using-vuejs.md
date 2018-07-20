@@ -279,17 +279,27 @@ FusionCharts.addDep(fusion); (fusion - reference from above)
 
 ## Install using Direct JavaScript files
 
-In order to install and start working with Vue-FusionCharts you need to:
+In order to install and start working with Vue-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT download package which contains:
 
-* [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files and the `vue-fusioncharts` plugin folder.
+* JavaScript files to render Charts, Widgets and powerCharts under the **js** folder.
+* JavaScript files to render maps under **js > maps** folder.
+* JavaScript files to include themes under **js > themes** folder.
 
-> Post version 3.13.0, `vuejs` plugin is provided in the download package. Look for the `vue` folder under **fusioncharts-suite-xt/integrations/frontend-plugins** in downloaded package.
+The folder structure is shown below:
 
-Installation of FusionCharts Suite XT involves copying and pasting the JavaScript files from the downloaded package into your project folder. The folder structure is shown below:
+![Js Folder Structure]({% site.baseurl %}/images/.png)
 
-![Js Folder Structure]({% site.baseurl %}/images/js-folder-structure.png)
+> It is recommended that you copy the **js** folder from within fusioncharts-suite-xt to your project's JavaScript folder.
 
-> It is recommended that you copy the highlighted "js" folder from within fusioncharts-suite-xt to your project's JavaScript folder, and rename the copied folder to "fusioncharts" - just like you would do for any other 3rd party JavaScript library.    
+* The download package also contains `vue-fusioncharts.js` file under **fusioncharts-suite-xt > integrations > frontend-plugins > vue** folder. This folder will also contain Vue-FusionCharts specific Export Handlers. The folder structure is shown below:
+
+![Vue Js Folder]({% site.baseurl %}/images/.png)
+
+> If you are using 3.12.2 or older versions, download v3.13.0 to get the **vue** folder in the FusionCharts Suite XT package. 
+
+> It is recommended that you copy the **vue** folder from within **fusioncharts-suite-xt > integrations > frontend-plugins > vue** to your project's JavaScript folder.
+
+Installation of FusionCharts Suite XT involves copying and pasting the JavaScript files from the downloaded package into your project folder. 
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
 
