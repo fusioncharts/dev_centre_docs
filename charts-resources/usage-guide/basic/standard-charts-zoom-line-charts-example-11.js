@@ -27,7 +27,7 @@
             "legendItemFontSize": "10",
             "showPeakData": "1",
             "minPeakDataLimit": "1000",
-            "maxPeakDataLimit": "500",
+            "maxPeakDataLimit": "900",
             "theme": "fusion"
         },
         "categories": [{

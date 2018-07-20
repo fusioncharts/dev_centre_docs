@@ -26,7 +26,7 @@
             "scrollColor": "#cccccc",
             "legendItemFontSize": "10",
             "showPeakData": "1",
-            "minPeakDataLimit": "100",
+            "minPeakDataLimit": "900",
             "theme": "fusion"
         },
         "categories": [{
