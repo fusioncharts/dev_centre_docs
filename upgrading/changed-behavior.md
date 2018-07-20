@@ -73,3 +73,27 @@ Install `angular-fusioncharts` wrapper using following command:
 ```
 npm install angular-fusioncharts --save
 ```
+
+## Disable Watermark from Chart Canvas
+
+FusionCharts Licensed Version user can now disable watermark from the chart canvas when downloading the package from npm.
+
+**To disable watermark globally, refer to the code below:**
+
+```javascript
+// Global Configuration
+FusionCharts.options.creditLabel = false;
+```
+
+**To disable the watermark for a particular chart, refer to the code below:**
+
+```javascript
+chartObj = new FusionCharts({
+    type: 'column2d',
+    // Disable credit label
+    creditLabel: false,
+    width: '700',
+    height: '500',
+    dataFormat: 'json'
+});
+```
