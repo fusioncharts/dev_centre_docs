@@ -30,7 +30,7 @@ The inverse y-axis charts are similar to the normal column charts, except that t
 
 The new visualization of the inverse chart looks like:
 
-{% embed_all standard-charts-inverse-charts-example-1.js %}
+{% embed_all changed-behavior-inverse-charts-example-1.js %}
 
 ## Secondary data plots overlap Primary data plots
 
@@ -38,4 +38,4 @@ From version 3.13.0 visualization of dual y-axis multi-series chart is changed. 
 
 The multi-series chart with both the data plots set as column looks like:
 
-Sample
+{% embed_all changed-behavior-multi-series-example-2.js %}
