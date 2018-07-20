@@ -21,8 +21,8 @@ In this article, we will demonstrate how to download and install the `Vue-Fusion
 
 <table>
     <tr>
-        <td align="center">[npm]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-using-direct-JavaScript-files-2)</td>
-        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-fusioncharts-via-npm-8)</td>
+        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-using-direct-JavaScript-files-2)</td>
+        <td align="center">[npm]({% site.baseurl %}/getting-started/vuejs/install-using-vuejs#install-fusioncharts-via-npm-5)</td>
     </tr>
 </table>
 
