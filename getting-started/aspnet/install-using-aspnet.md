@@ -20,15 +20,31 @@ In this article, we will show you how you can download and install the `FusionCh
 
 ## Install FusionCharts ASP.NET Wrapper
 
-In order to install and start working with FusionCharts ASP.NET wrapper you need to:
+In order to install and start working with FusionCharts ASP.NET wrapper you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT download package which contains:
 
-### Step 1
+* JavaScript files to render Charts, Widgets and powerCharts under the **js** folder.
+* JavaScript files to render maps under **js > maps** folder.
+* JavaScript files to include themes under **js > themes** folder.
 
-[Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT which contains the necessary JavaScript files.
+The folder structure is shown below:
 
-Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the downloaded package into your project folder. The folder structure is shown below:
+![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-![Js Folder Structure]({% site.baseurl %}/images/js-folder-structure.png)
+> It is recommended that you copy the **js** folder from within fusioncharts-suite-xt to your project's JavaScript folder.
+
+* The download package also contains `.aspx.vb` file under **fusioncharts-suite-xt > integrations > serverside-extensions > asp.net > asp.net-vb** folder.
+
+* The download package also contains `.aspx.cs` file under **fusioncharts-suite-xt > integrations > serverside-extensions > asp.net > asp.net-cs** folder. 
+
+This folder will also contain FusionCharts ASP.NET's native Export Handlers. The folder structure is shown below:
+
+![ASP.NET Folder Structure]({% site.baseurl %}/gif/aspnet-folder-structure.gif)
+
+> If you are using 3.12.2 or older versions, download v3.13.0 to get the **asp.net-vb** and **asp.net-cs** folders in the FusionCharts Suite XT package. 
+
+> It is recommended that you copy the above folders from within **fusioncharts-suite-xt > integrations > serverside-extensions > asp.net** to your project's JavaScript folder.
+
+Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the downloaded package into your project folder.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
 
@@ -48,13 +64,7 @@ File Name|Description|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
 
-### Step 2
-
-[Download](https://www.fusioncharts.com/asp-net-charts/) the FusionCharts ASP.NET wrapper which contains:
-* `FusionCharts.cs` file if you download the ASP.NET C# wrapper - You'll find the file in `asp.net-cs-wrapper/Src` folder.
-* `FusionCharts.vb` file if you download the ASP.NET VB wrapper - You'll find the file in `asp.net-vb-wrapper/Src` folder.
-
-To add any of the above files in your project, drag and drop the file in `App_Code` folder inside your project.
+To add any of the files in your project, drag and drop the file in `App_Code` folder inside your project.
 
 > You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. `FusionCharts.dll` is present in `asp.net-cs-wrapper/Bin` folder or `asp.net-vb-wrapper/DLLFile`.
 
@@ -67,12 +77,6 @@ That completes the installation of FusionCharts in your application. To see how 
 In order to render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files.
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
-
-### Step 2
-
-[Download](https://www.fusioncharts.com/asp-net-charts/) the FusionCharts ASP.NET wrapper which contains:
-* `FusionCharts.cs` file if you download the ASP.NET C# wrapper - You'll find the file in `asp-net-wrapper/Src` folder.
-* `FusionCharts.vb` file if you download the ASP.NET VB wrapper - You'll find the file in `vb-net-wrapper-master/App_Code` folder.
 
 To add any of the above files in your project, drag and drop the file in `App_Code` folder inside your project.
 
