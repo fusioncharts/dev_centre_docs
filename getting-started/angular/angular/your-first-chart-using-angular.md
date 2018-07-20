@@ -99,9 +99,7 @@ Functional attributes let you control a variety of functional elements on the ch
 
 #### Cosmetics Attributes
 
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's look and feel, no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click [here]({}).
-
-For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
+Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's look and feel, no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
 ### Setup the main module
 
@@ -504,7 +502,7 @@ export class AppComponent {
             "color": "#E65100"
         }]
     },
-    // Source data as JSON --> id represents states of USA.
+    // Source data as JSON --> id represents states of WORLD.
     "data": [{
         "id": "NA",
         "value": ".82",
@@ -546,7 +544,7 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of USA. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of WORLD. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
 ## Problem rendering the chart?
 

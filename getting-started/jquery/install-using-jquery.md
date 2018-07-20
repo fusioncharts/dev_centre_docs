@@ -339,7 +339,7 @@ You an include the map files using any of the following process:
 * npm install fusionmaps
 * ES-6 definitions can be found in node_modules/fusionmaps/maps/fusioncharts.[MAP-ALIAS].js
 
-> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this here.
+> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
 ### Include Themes via NPM
 
