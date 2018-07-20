@@ -109,7 +109,6 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, use t
     <title>My first chart using FusionCharts Suite XT</title>
     <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
     <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
-    <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
 </head>
 </html>
 ```
@@ -328,7 +327,6 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, use t
     <title>My first gauge using FusionCharts Suite XT</title>
     <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
     <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
-    <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
 </head>
 </html>
 ```
@@ -412,7 +410,6 @@ The full HTML code is given below:
     <title>My first gauge using FusionWidgets XT</title>
     <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
     <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fusion.js"></script>
-    <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
             var csatGauge = new FusionCharts({
@@ -635,7 +632,6 @@ The full HTML code is given below:
     <title>My First map using FusionCharts Suite XT</title>
     <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
     <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fusion.js"></script>
-    <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
             var salesByState = new FusionCharts({

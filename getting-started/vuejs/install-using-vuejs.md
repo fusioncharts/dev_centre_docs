@@ -248,7 +248,7 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-> The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` files set the theme as `fusion`. To add any other theme to your chart, include only its corresponding JavaScript file to your project.
+> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion`. To add any other theme to your chart, include its corresponding JavaScript file to your project.
 
 In your JavaScript code, use the `Vue.use()` method to register the `vue-fusioncharts` component.
 
@@ -264,11 +264,10 @@ To include the **theme engine extension**, do the following:
 import ThemeEngine from 'fusioncharts/features/theme-engine';
 ```
 
-To include the theme file and CSS for the theme, do the following:
+To include the theme file, do the following:
 
 ```Shell
 import fusion from 'fusioncharts/themes/es/fusioncharts.fusion'
-import css file from 'fusioncharts/themes/es/fusioncharts.fusion.css'
 ```
 
 To add `ThemeEngine` and `fusion` as dependencies to the core, do the following:
@@ -310,7 +309,7 @@ File Name|Description|
 `fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js`.|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
-`themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files (JSON & CSS). Refer each theme with their respective `JavaScript` and `CSS` file names.|
+`themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
 
 In order to install, create an HTML file and follow the steps given below:
 
@@ -332,11 +331,10 @@ In order to install, create an HTML file and follow the steps given below:
 <script type="text/JavaScript" src="path/to/local/vue-fusioncharts.js"></script>
 ```
 
-**Step 4: Include the theme file and CSS:**
+**Step 4: Include the theme file:**
 
 ```html
 <script type="text/JavaScript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
-<script type="text/JavaScript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
 ```
 
 The consolidated code looks like as shown below:
@@ -352,7 +350,6 @@ The consolidated code looks like as shown below:
     <!-- Vue-FusionCharts -->
     <script type="text/JavaScript" src="path/to/local/vue-fusioncharts.js"></script>
     <script type="text/JavaScript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
-    <script type="text/JavaScript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
 </head>
 ```
 
@@ -392,7 +389,7 @@ The consolidated code(which also includes the `vue.js`, `fusioncharts.js` and `v
 
 ### Themes
 
-Themes shipped with FusionCharts Suite XT allows you to create centralized theme files (similar to CSS files) and apply those themes to any number of charts.
+Themes shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
 
 In a theme file, you can centralize the following aspects of a chart, gauge, or map:
 
@@ -407,12 +404,11 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-To include a theme to your chart, include its corresponding JavaScript file in your HTML page and the CSS file for that theme as shown in the code below:
+To include a theme to your chart, include its corresponding JavaScript file in your HTML page for that theme as shown in the code below:
 
 ```html
 <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
 <script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-<script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.css"></script>
 ```
 
-> The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` file sets the theme as **fusion**. To add any other theme to your chart, include its corresponding JavaScript file to your project.
+> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion`. To add any other theme to your chart, include its corresponding JavaScript file to your project.

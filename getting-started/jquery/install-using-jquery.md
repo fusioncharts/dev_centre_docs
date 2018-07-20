@@ -56,7 +56,7 @@ File Name|Description|
 `fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js`.|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
-`themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files (JSON & CSS). Refer each theme with their respective `JavaScript` and `CSS` file names.|
+`themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
 
 **Step 1: Include jQuery core library**
 
@@ -82,13 +82,12 @@ To include the jQuery-fusioncharts module, add the following &lt;script&gt; tag 
 <script type="text/javascript" src="path/to/local/jquery-fusioncharts.js"></script>
 ```
 
-Step 4: Include the theme file and CSS
+Step 4: Include the theme file
 
-To include `Fusion` theme and its corrosponding CSS file, add the following &lt;script&gt; tag to your html file:
+To include `Fusion` theme, add the following &lt;script&gt; tag to your html file:
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
-<script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
 ```
 
 The consolidated code looks like as shown below:
@@ -139,7 +138,6 @@ The consolidated code (which also includes the `jquery.js, fusioncharts.js` and 
         <!-- jQuery-FusionCharts -->
         <script type="text/javascript" src="path/to/local/jquery-fusioncharts.js"></script>
         <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
-        <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
         <!-- FusionMaps -->
         <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
         <!--WORLD -->
@@ -150,7 +148,7 @@ The consolidated code (which also includes the `jquery.js, fusioncharts.js` and 
 
 ### Themes
 
-Themes shipped with FusionCharts Suite XT allows you to create centralized theme files (similar to CSS files) and apply those themes to any number of charts.
+Themes shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
 
 In a theme file, you can centralize the following aspects of a chart, gauge, or map:
 
@@ -165,15 +163,14 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-To include a theme to your chart, include its corresponding JavaScript file in your HTML page and the CSS file for that theme as shown in the code below:
+To include a theme to your chart, include its corresponding JavaScript file in your HTML page for that theme as shown in the code below:
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.css"></script>
 ```
 
-> The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` file sets the theme as **fusion**. To add any other theme to your chart, include its corresponding JavaScript file to your project.
+> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion`. To add any other theme to your chart, include its corresponding JavaScript file to your project.
 
 ## Install FusionCharts via npm
 
@@ -356,7 +353,7 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-> The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` file sets the theme as fusion. To add any other theme to your chart, include its corresponding JavaScript file to your project.
+> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion`. To add any other theme to your chart, include its corresponding JavaScript file to your project.
 
 You can include the themes using any of the following process:
 
@@ -371,10 +368,9 @@ You can include the themes using any of the following process:
 <pre><code class="custom-hlc language-cs">
     import jQuery from 'jquery';
 </code></pre>
-<div><strong>To include the theme file and CSS for the theme:</strong></div>
+<div><strong>To include the theme file:</strong></div>
 <pre><code class="custom-hlc language-cs">
     import Fusion from 'fusioncharts/themes/fusioncharts.fusion';
-    import css from 'fusioncharts/themes/fusioncharts.fusion.css';
 </code></pre>
 <div><strong>To include jQuery FusionCharts plugin:</strong></div>
 <pre><code class="custom-hlc language-cs">
@@ -388,10 +384,9 @@ You can include the themes using any of the following process:
 <pre><code class="custom-hlc language-cv">
     let jQuery = require('jquery');
 </code></pre>
-<div><strong>To include the theme file and CSS for the theme:</strong></div>
+<div><strong>To include the theme file:</strong></div>
 <pre><code class="custom-hlc language-cv">
     let Fusion = require('fusioncharts/themes/fusioncharts.fusion');
-    let css = require('fusioncharts/themes/fusioncharts.fusion.css');
 </code></pre>
 <div><strong>To include jQuery FusionCharts plugin:</strong></div>
 <pre><code class="custom-hlc language-cv">

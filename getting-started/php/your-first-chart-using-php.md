@@ -382,7 +382,6 @@ The full code for the above sample is given below:
         <script src="../FusionCharts/fusioncharts.js"></script>
         <script src="../FusionCharts/fusioncharts.charts.js"></script>
         <script src="../FusionCharts/themes/fusioncharts.theme.fusion.js"></script>
-        <script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.css"></script>
     </head>
     <body>
 <?php
@@ -490,7 +489,6 @@ The full code for the above sample is given below:
         <script src="../FusionCharts/fusioncharts.js"></script>
         <script src="../FusionCharts/fusioncharts.charts.js"></script>
         <script src="../FusionCharts/themes/fusioncharts.theme.fusion.js"></script>
-        <script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.css"></script>
     </head>
     <body>
         <?php

@@ -156,7 +156,6 @@ The HTML template of the above sample is shown below:
     {% load static %}
     <script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
     <script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>
-    <script type="text/JavaScript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.css" %></script>
 </head>
 
 <body>
@@ -459,7 +458,6 @@ The HTML template of the above sample is shown below:
     {% load static %}
     <script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
     <script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>
-    <script type="text/JavaScript" src="{% static "fusioncharts.theme.fusion.css" %}"></script>
 </head>
 
 <body>
@@ -605,7 +603,6 @@ The HTML template of the above sample is shown below:
     {% load static %}
     <script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
     <script type="text/javascript" src="{% static "fusioncharts/themes/fusioncharts.theme.fusion.js" %}"></script>
-    <script type="text/JavaScript" src="{% static "fusioncharts.theme.fusion.css" %}"></script>
 </head>
 
 <body>

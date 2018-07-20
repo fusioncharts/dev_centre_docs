@@ -29,7 +29,7 @@ File Name|Description|
 `fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js`.|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definitions of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
-`themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files (JSON & CSS). Refer each theme with their respective `JavaScript` and `CSS` file names.|
+`themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
 
 Now, let's discuss how to install the `fusioncharts` module via npm. The `fusioncharts` package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
 
@@ -105,7 +105,7 @@ import * as World from 'fusioncharts/maps/fusioncharts.world'
 
 ## Include Themes via npm
 
-Themes shipped with FusionCharts Suite XT allows you to create centralized theme files (similar to CSS files) and apply those themes to any number of charts.
+Themes shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
 
 In a theme file, you can centralize the following aspects of a chart, gauge, or map:
 
@@ -129,22 +129,7 @@ import * as Ocean from 'fusioncharts/themes/fusioncharts.theme.ocean';
 import * as Carbon from 'fusioncharts/themes/fusioncharts.theme.carbon';
 ```
 
-> The `fusioncharts.theme.fusion.js` and `fusioncharts.theme.fusion.css` file sets the theme as **fusion**. To add any other theme to your chart, include its corresponding JavaScript file to your project.
-
-To add the `fusion.css` file in the global styles for the main component, add the following steps to **app.component.ts**:
-
-```
-import {Component, ViewEncapsulation} from '@angular/core';
-
-@Component({
-    selector: 'app',
-    styleUrls: ['./path/to/fusion.css'], // Note this line
-    encapsulation:ViewEncapsulation.None, // <- important
-    templateUrl: './app.component.html'
-})
-export class AppComponent {
-}
-```
+> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion`. To add any other theme to your chart, include its corresponding JavaScript file to your project.
 
 ## Add Dependencies to the Environment
 
