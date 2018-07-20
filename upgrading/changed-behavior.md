@@ -99,6 +99,6 @@ chartObj = new FusionCharts({
 ```
 ## Updated FusionCharts Suite XT Download Package 
 
-Since, v3.13.0 the FusionCharts Suite XT download package folder structure is updated. The downloaded package will now contain a folder named **integrations**. This folder consists all the front end and server side plugins and wrappers under respective folders with their native export handlers if applicable. The folder structure of the downloaded package is shown below:
+Since, v3.13.0 the FusionCharts Suite XT download package folder structure is updated. The downloaded package will now contain a folder named **integrations**. This folder consists all the front end and server side wrappers under respective folders with their native export handlers if applicable. The folder structure of the downloaded package is shown below:
 
- 
+![Folder Structure]({% site.baseurl %}/gif/upgrading-plugins.gif)
