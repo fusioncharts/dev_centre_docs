@@ -165,12 +165,6 @@ That's it! When you run this HTML page now, you should see a chart representing 
 
 See the complete list of [all possible attributes ]({% site.baseurl %}/chart-attributes/?chart=column2d)(the keys in the `dataSource` object) for a column 2D chart.
 
-Depending on the chart type, only two properties of the React component can vary mandatorily:
-
-* `app.type`: You must set it to the chart type that you want to render. For a complete list of all charts and their types, refer to [Chart Gallery ]({% site.baseurl %}/demos/chart-gallery#Gallary)and explore the desired type in detail.
-
-* `app.dataSource`: Each chart has its own data schema that defines the chart configuration and the source of data. Therefore, this object varies significantly, depending on the type of chart.
-
 Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts) or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d) for the charts.
 
 ## Create your first gauge
