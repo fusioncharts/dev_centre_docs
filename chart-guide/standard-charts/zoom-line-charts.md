@@ -326,7 +326,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-<<Insert chart>>
+{% embed_chart standard-charts-zoom-line-charts-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/chrgodxw/ "@@open-newtab") to configure the above attributes.
 
 > In the above chart, all plots having values less than 1500 are automatically detected and included.
 
@@ -351,7 +353,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-<<Insert chart>>
+{% embed_chart standard-charts-zoom-line-charts-example-9.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/0d9cqh3u/ "@@open-newtab") to configure the above attributes.
 
 > In the above chart, all plots having values more than 100 are automatically detected and included.
 
@@ -378,7 +382,9 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-<<Insert chart>>
+{% embed_chart standard-charts-zoom-line-charts-example-10.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/qondx6r8/ "@@open-newtab") to configure the above attributes.
 
 > In the above chart, all plots having values more than 100 and less than 1500 are automatically detected and included.
 
@@ -409,6 +415,8 @@ Refer to the code below:
 
 The chart will look as shown below:
 
-<<Insert chart>>
+{% embed_chart standard-charts-zoom-line-charts-example-11.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/fe5gcodr/ "@@open-newtab") to configure the above attributes.
 
 > In the above chart, all values in the range 500-1000 will be included in the initial display. 
