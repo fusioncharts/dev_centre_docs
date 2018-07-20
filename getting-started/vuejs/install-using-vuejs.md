@@ -287,13 +287,13 @@ In order to install and start working with Vue-FusionCharts you need to [downloa
 
 The folder structure is shown below:
 
-![Js Folder Structure]({% site.baseurl %}/images/.png)
+![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
 > It is recommended that you copy the **js** folder from within fusioncharts-suite-xt to your project's JavaScript folder.
 
 * The download package also contains `vue-fusioncharts.js` file under **fusioncharts-suite-xt > integrations > frontend-plugins > vue** folder. This folder will also contain Vue-FusionCharts specific Export Handlers. The folder structure is shown below:
 
-![Vue Js Folder]({% site.baseurl %}/images/.png)
+![Vue Js Folder]({% site.baseurl %}/gif/vue-folder-structure.gif)
 
 > If you are using 3.12.2 or older versions, download v3.13.0 to get the **vue** folder in the FusionCharts Suite XT package. 
 
