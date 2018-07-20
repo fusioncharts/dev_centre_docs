@@ -27,7 +27,7 @@ In this article, we will show you how you can download and install the **FusionC
 ```
 //= require fusioncharts/fusioncharts
 //= require fusioncharts/fusioncharts.widgets
-//= require fusioncharts/themes/fusioncharts.theme.fint
+//= require fusioncharts/themes/fusioncharts.theme.fusion
 ```
 
 > Ensure that the **config.assets.debug** flag in the **development.rb** file (config/environments/development.rb) is enabled (set to **true**).
