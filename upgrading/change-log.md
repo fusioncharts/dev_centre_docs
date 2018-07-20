@@ -31,19 +31,19 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 ## Improvements
 
-* For dual y-axis charts, the secondary data plots now overlaps the primary data plots if `renderAs` attribute is set as column. 
+* For dual y-axis charts, the secondary data plots now overlaps the primary data plots if `renderAs` attribute is set as column. If you would like the old behavior, click [here] to know more.
 
 * In order to free chart area, the restore button in select-scatter and drag-able chart has been moved to [options menu](https://www.fusioncharts.com/dev/chart-guide/standard-charts/drag-able-charts#dragable-column-d-chart-1). The list of attributes which have been added are as follows:
 
-    * [enableSubmit](https://www.fusioncharts.com/dev/chart-attributes/?chart=dragcolumn2d&attribute=chart_enablesubmit)
+    * [enableSubmit]({% site.baseurl %}/chart-attributes/?chart=dragcolumn2d&attribute=chart_enablesubmit)
 
-    * [submitText](https://www.fusioncharts.com/dev/chart-attributes/?chart=dragcolumn2d&attribute=chart_submittext)
+    * [submitText]({% site.baseurl %}/chart-attributes/?chart=dragcolumn2d&attribute=chart_submittext)
 
-    * [enableRestore](https://www.fusioncharts.com/dev/chart-attributes/?chart=dragcolumn2d&attribute=chart_enablerestore)
+    * [enableRestore]({% site.baseurl %}/chart-attributes/?chart=dragcolumn2d&attribute=chart_enablerestore)
 
-    * [restoreText](https://www.fusioncharts.com/dev/chart-attributes/?chart=dragcolumn2d&attribute=chart_restoretext)
+    * [restoreText]({% site.baseurl %}/chart-attributes/?chart=dragcolumn2d&attribute=chart_restoretext)
 
-* Data plots in the [inverse chart](https://www.fusioncharts.com/dev/chart-guide/standard-charts/inverse-y-axis-chart#inverse-yaxis-chart-0) will now appear from the top of the canvas.
+* Data plots in the [inverse chart]({% site.baseurl %}/chart-guide/standard-charts/inverse-y-axis-chart) will now appear from the top of the canvas.
 
 * The hyphen ( - ) character is now supported in the parameter of the JavaScript function of `link` attribute.
 
