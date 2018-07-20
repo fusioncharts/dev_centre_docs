@@ -11,28 +11,24 @@ Before going through this article, please [install]({% site.baseurl %}/getting-s
 
 ## Create your first chart
 
-In this section, we will create a chart using FusionCharts. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
+In this section, we will create a chart using **jquery-fusioncharts**. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
 
-Let's start with a simple example of "Monthly revenue" chart, which we will plot in a Column 2D chart as shown below:
+Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a **Column 2D** chart as shown below:
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-### The data for this chart is represented in a table below:
+The data for this chart is represented in a table below:
 
-Month|Revenue|
+Country|No. of Oil Reserves|
 -|-
-January|$420,000|
-February|$810,000|
-March|$720,000|
-April|$550,000|
-May|$910,000|
-June|$510,000|
-July|$680,000|
-August|$620,000|
-September|$610,000|
-October|$490,000|
-November|$900,000|
-December|$730,000|
+Venezuela|290|
+Saudi|260|
+Canada|180|
+Iran|140|
+Russia|115|
+UAE|100|
+US|30|
+China|30|
 
 ### Convert tabular data into JSON format
 
@@ -44,52 +40,38 @@ FusionCharts accepts data in JSON or XML format. In this section, we will conver
 {
     // Chart Configuration
     "chart": {
-        "caption": "Monthly revenue for last year",
-        "subCaption": "Harry's SuperMart",
-        "xAxisName": "Month",
-        "yAxisName": "Revenues (In USD)",
-        "numberPrefix": "$",
-        "showLabel": "1",
-        "showValue": "1",
-        "theme": "fusion"
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion",
     },
     // Chart Data
     "data": [{
-        "label": "Jan",
-        "value": "420000"
+        "label": "Venezuela",
+        "value": "290"
     }, {
-        "label": "Feb",
-        "value": "810000"
+        "label": "Saudi",
+        "value": "260"
     }, {
-        "label": "Mar",
-        "value": "720000"
+        "label": "Canada",
+        "value": "180"
     }, {
-        "label": "Apr",
-        "value": "550000"
+        "label": "Iran",
+        "value": "140"
     }, {
-        "label": "May",
-        "value": "910000"
+        "label": "Russia",
+        "value": "115"
     }, {
-        "label": "Jun",
-        "value": "510000"
+        "label": "UAE",
+        "value": "100"
     }, {
-        "label": "Jul",
-        "value": "680000"
+        "label": "US",
+        "value": "30"
     }, {
-        "label": "Aug",
-        "value": "620000"
-    }, {
-        "label": "Sep",
-        "value": "610000"
-    }, {
-        "label": "Oct",
-        "value": "490000"
-    }, {
-        "label": "Nov",
-        "value": "900000"
-    }, {
-        "label": "Dec",
-        "value": "730000"
+        "label": "China",
+        "value": "30"
     }]
 }
 ```
@@ -113,11 +95,11 @@ Functional attributes let you control a variety of functional elements on the ch
 
 #### Cosmetics Attributes
 
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click here.
+Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics no cosmetic attributes are used in this sample.
 
 For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
-## Include FusionCharts Suite XT library
+### Include FusionCharts Suite XT library
 
 To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called `fusion`, and it is present in the `themes` folder of your download. Refer to the code below:
 
@@ -132,7 +114,7 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, use t
 </html>
 ```
 
-## Create a container for the chart
+### Create a container for the chart
 
 Each chart in the page needs a container to reside in. A `<div>` element works well as a container for the chart, as defined below:
 
@@ -160,7 +142,41 @@ FusionCharts.ready(function() {
         dataFormat: 'json', // Data type
         dataSource: {
             chart: {
-                ...
+                // Chart Configuration
+                "chart": {
+                    "caption": "Countries With Most Oil Reserves [2017-18]",
+                    "subCaption": "In MMbbl = One Million barrels",
+                    "xAxisName": "Country",
+                    "yAxisName": "Reserves (MMbbl)",
+                    "numberSuffix": "K",
+                    "theme": "fusion",
+                },
+                // Chart Data
+                "data": [{
+                    "label": "Venezuela",
+                    "value": "290"
+                }, {
+                    "label": "Saudi",
+                    "value": "260"
+                }, {
+                    "label": "Canada",
+                    "value": "180"
+                }, {
+                    "label": "Iran",
+                    "value": "140"
+                }, {
+                    "label": "Russia",
+                    "value": "115"
+                }, {
+                    "label": "UAE",
+                    "value": "100"
+                }, {
+                    "label": "US",
+                    "value": "30"
+                }, {
+                    "label": "China",
+                    "value": "30"
+                }]
             }
         }
     }
@@ -173,20 +189,6 @@ In the above code:
 * To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 
-The HTML template of the above sample is shown below:
-
-```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
-</div>
-```
-
 That's it! When you run this HTML page now, you should see a chart representing your data.
 
 The full HTML code is shown below:
@@ -196,79 +198,61 @@ The full HTML code is shown below:
 
 <head>
     <title>My first chart using FusionCharts Suite XT</title>
-    <script type="text/javascript" src="path/to/local/js/fusioncharts.js"></script>
-    <script type="text/javascript" src="path/to/local/js/themes/fusioncharts.theme.fusion.js"></script>
-    <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
+    <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
+    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
             var revenueChart = new FusionCharts({
                 "type": "column2d",
                 "renderAt": "chartContainer",
-                "width": "500",
-                "height": "300",
+                "width": "600",
+                "height": "400",
                 "dataFormat": "json",
                 "dataSource": {
                     // Chart Configuration
                     "chart": {
-                        "caption": "Monthly revenue for last year",
-                        "subCaption": "Harry's SuperMart",
-                        "xAxisName": "Month",
-                        "yAxisName": "Revenues (In USD)",
-                        "numberPrefix": "$",
-                        "showLabel": "1",
-                        "showValue": "1",
-                        "theme": "fusion"
+                        "caption": "Countries With Most Oil Reserves [2017-18]",
+                        "subCaption": "In MMbbl = One Million barrels",
+                        "xAxisName": "Country",
+                        "yAxisName": "Reserves (MMbbl)",
+                        "numberSuffix": "K",
+                        "theme": "fusion",
                     },
                     // Chart Data
                     "data": [{
-                        "label": "Jan",
-                        "value": "420000"
+                        "label": "Venezuela",
+                        "value": "290"
                     }, {
-                        "label": "Feb",
-                        "value": "810000"
+                        "label": "Saudi",
+                        "value": "260"
                     }, {
-                        "label": "Mar",
-                        "value": "720000"
+                        "label": "Canada",
+                        "value": "180"
                     }, {
-                        "label": "Apr",
-                        "value": "550000"
+                        "label": "Iran",
+                        "value": "140"
                     }, {
-                        "label": "May",
-                        "value": "910000"
+                        "label": "Russia",
+                        "value": "115"
                     }, {
-                        "label": "Jun",
-                        "value": "510000"
+                        "label": "UAE",
+                        "value": "100"
                     }, {
-                        "label": "Jul",
-                        "value": "680000"
+                        "label": "US",
+                        "value": "30"
                     }, {
-                        "label": "Aug",
-                        "value": "620000"
-                    }, {
-                        "label": "Sep",
-                        "value": "610000"
-                    }, {
-                        "label": "Oct",
-                        "value": "490000"
-                    }, {
-                        "label": "Nov",
-                        "value": "900000"
-                    }, {
-                        "label": "Dec",
-                        "value": "730000"
+                        "label": "China",
+                        "value": "30"
                     }]
                 }
-
             });
             revenueChart.render();
         })
     </script>
 </head>
-
 <body>
     <div id="chartContainer">FusionCharts XT will load here!</div>
 </body>
-
 </html>
 ```
 
@@ -278,7 +262,7 @@ Now, go on and explore other 95+ chart types that we've at [FusionCharts]({% sit
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
+Gauges are powerful tools that can showcase using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
 
 To start with, we'll build a simple "Weekly Customer Satisfaction Index" gauge as shown below:
 
@@ -288,51 +272,79 @@ The thresholds for his customer satisfaction score has been defined using the fo
 
 Range|Color|Hex Code|
 -|-|-
-0-50|Red|#e44a00|
-50-75|Yellow|#f8bd19|
-75-100|Green|#6baa01|
+0-50|Red|#F2726F|
+50-75|Yellow|#FFC533|
+75-100|Green|#62B58F|
 
 So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Scores above 75 mean good and is green.
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format is shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
 
 ```javascript
 {
-    // Configuration
+    // Chart Configuration
     "chart": {
-        "caption": "Customer Satisfaction Score",
-        "subcaption": "Last week",
+        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
         "lowerLimit": "0",
         "upperLimit": "100",
-        "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
-        "gaugeFillRatio": "15",
-        "theme": "fusion"
+        "showValue": "1",
+        "numberSuffix": "%",
+        "theme": "fusion",
+        "showToolTip": "0"
     },
-    // Chart data
+    // Chart Data
     "colorRange": {
         "color": [{
             "minValue": "0",
             "maxValue": "50",
-            "code": "#e44a00"
+            "code": "#F2726F"
         }, {
             "minValue": "50",
             "maxValue": "75",
-            "code": "#f8bd19"
+            "code": "#FFC533"
         }, {
             "minValue": "75",
             "maxValue": "100",
-            "code": "#6baa01"
+            "code": "#62B58F"
         }]
     },
     "dials": {
         "dial": [{
-            "value": "67"
+            "value": "81"
         }]
     }
 }
 ```
+
+### Include FusionCharts Suite XT library
+
+To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the gauge. The theme is called `fusion`, and it is present in the `themes` folder of your download. Refer to the code below:
+
+```
+<html>
+<head>
+    <title>My first gauge using FusionCharts Suite XT</title>
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.css"></script>
+</head>
+</html>
+```
+
+### Create a container for the gauge
+
+Each gauge in the page needs a container to reside in. A `<div>` element works well as a container for the gauge, as defined below:
+
+```
+<body>
+  <div id="chartContainer">FusionCharts XT will load here!</div>
+</body>
+
+```
+
+Specify a unique ID for the `<div>` container within the web page. The unique ID is used in the chart initialization code to refer to the container.
 
 ### Create an instance of the gauge
 
@@ -349,30 +361,46 @@ FusionCharts.ready(function() {
     var csatGauge = new FusionCharts({
         type: 'angulargauge', // Chart type
         renderAt: 'chart-container', // Container
-        width: '400', // Width of the chart
+        width: '450', // Width of the chart
         height: '250', // Height of the chart
         dataFormat: 'json', // Data Type
         dataSource: {
             chart: {
-                ...
+                // Chart Configuration
+                "chart": {
+                    "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+                    "lowerLimit": "0",
+                    "upperLimit": "100",
+                    "showValue": "1",
+                    "numberSuffix": "%",
+                    "theme": "fusion",
+                    "showToolTip": "0"
+                },
+                // Chart Data
+                "colorRange": {
+                    "color": [{
+                        "minValue": "0",
+                        "maxValue": "50",
+                        "code": "#F2726F"
+                    }, {
+                        "minValue": "50",
+                        "maxValue": "75",
+                        "code": "#FFC533"
+                    }, {
+                        "minValue": "75",
+                        "maxValue": "100",
+                        "code": "#62B58F"
+                    }]
+                },
+                "dials": {
+                    "dial": [{
+                        "value": "81"
+                    }]
+                }
             }
         }
     }
 });
-```
-
-The HTML template for the above sample is:
-
-```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
-</div>
 ```
 
 The full HTML code is given below:
@@ -394,38 +422,36 @@ The full HTML code is given below:
                 "height": "250",
                 "dataFormat": "json",
                 "dataSource": {
+                    // Chart Configuration
                     "chart": {
-                        // Configuration
-                        "chart": {
-                            "caption": "Customer Satisfaction Score",
-                            "subcaption": "Last week",
-                            "lowerLimit": "0",
-                            "upperLimit": "100",
-                            "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
-                            "gaugeFillRatio": "15",
-                            "theme": "fint"
-                        },
-                        // Chart data
-                        "colorRange": {
-                            "color": [{
-                                "minValue": "0",
-                                "maxValue": "50",
-                                "code": "#e44a00"
-                            }, {
-                                "minValue": "50",
-                                "maxValue": "75",
-                                "code": "#f8bd19"
-                            }, {
-                                "minValue": "75",
-                                "maxValue": "100",
-                                "code": "#6baa01"
-                            }]
-                        },
-                        "dials": {
-                            "dial": [{
-                                "value": "67"
-                            }]
-                        }
+                        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+                        "lowerLimit": "0",
+                        "upperLimit": "100",
+                        "showValue": "1",
+                        "numberSuffix": "%",
+                        "theme": "fusion",
+                        "showToolTip": "0"
+                    },
+                    // Chart Data
+                    "colorRange": {
+                        "color": [{
+                            "minValue": "0",
+                            "maxValue": "50",
+                            "code": "#F2726F"
+                        }, {
+                            "minValue": "50",
+                            "maxValue": "75",
+                            "code": "#FFC533"
+                        }, {
+                            "minValue": "75",
+                            "maxValue": "100",
+                            "code": "#62B58F"
+                        }]
+                    },
+                    "dials": {
+                        "dial": [{
+                            "value": "81"
+                        }]
                     }
                 }
             csatGauge.render();
@@ -444,24 +470,20 @@ See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attr
 
 ## Create your first map
 
-In this section, we will create a visualization using the map of **world**. Take a look at the map shown below:
+In this section, we will create a visualization using the map of **WORLD**. Take a look at the map shown below:
 
 {% embed_chart getting-started-your-first-map.js %}
 
 The data for this chart is represented in a table below:
 
-State|Entity Name|Revenue|
+State|Entity Name|Value|
 -|-|-
-Alabama|AL|$75,873M|
-Alaska|AK|$58,911M|
-Arizona|AZ|$41,588M|
-Arkansas|AR|$34,497M|
-California|CA|$61,861M|
-...|...|...|
-...|...|...|
-West Virginia|WV|$95,890M|
-Wisconsin|WI|$42,382M|
-Wyoning|WY|$78,835M|
+North America|NA|82|
+South America|SA|2.04|
+Asia|AS|1.78|
+Europe|EU|40|
+Africa|AF|2.58|
+Australia|AU|1.30|
 
 ### Convert tabular data into JSON format
 
@@ -543,25 +565,65 @@ FusionCharts.ready(  function  () {
         dataFormat: 'json', // Data Type
         dataSource: {
             chart: {
-                ...
+                // Map Configuration
+                "chart": {
+                    "caption": "Average Annual Population Growth",
+                    "subcaption": " 1955-2015",
+                    "numbersuffix": "%",
+                    "includevalueinlabels": "1",
+                    "labelsepchar": ": ",
+                    "entityFillHoverColor": "#FFF9C4",
+                    "theme": "fusion"
+                },
+                // Aesthetics; ranges synced with the slider
+                "colorrange": {
+                    "minvalue": "0",
+                    "code": "#FFE0B2",
+                    "gradient": "1",
+                    "color": [{
+                        "minvalue": "0.5",
+                        "maxvalue": "1.0",
+                        "color": "#FFD74D"
+                    }, {
+                        "minvalue": "1.0",
+                        "maxvalue": "2.0",
+                        "color": "#FB8C00"
+                    }, {
+                        "minvalue": "2.0",
+                        "maxvalue": "3.0",
+                        "color": "#E65100"
+                    }]
+                },
+                // Source data as JSON --> id represents countries of world.
+                "data": [{
+                    "id": "NA",
+                    "value": ".82",
+                    "showLabel": "1"
+                }, {
+                    "id": "SA",
+                    "value": "2.04",
+                    "showLabel": "1"
+                }, {
+                    "id": "AS",
+                    "value": "1.78",
+                    "showLabel": "1"
+                }, {
+                    "id": "EU",
+                    "value": ".40",
+                    "showLabel": "1"
+                }, {
+                    "id": "AF",
+                    "value": "2.58",
+                    "showLabel": "1"
+                }, {
+                    "id": "AU",
+                    "value": "1.30",
+                    "showLabel": "1"
+                }]
             }
         }
     }
 });
-```
-
-The HTML template for the above sample is:
-
-```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
-</div>
 ```
 
 The full HTML code is given below:
