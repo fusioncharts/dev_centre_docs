@@ -78,11 +78,47 @@ The code of the instance of the chart is given below:
 
 ```
 chart = Fusioncharts::Chart.new({
-    width: "600",
+    width: "700",
     height: "400",
     type: "column2d",
     renderAt: "chartContainer",
-    dataSource: chartJSONDataStr
+    dataSource: {
+        // Chart Configuration
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion",
+        },
+        // Chart Data
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    }
 })
 ```
 
@@ -163,7 +199,7 @@ def getChart
 
     # Chart rendering
     chart = Fusioncharts::Chart.new({
-        width: "600",
+        width: "700",
         height: "400",
         type: "column2d",
         renderAt: "chartContainer",
@@ -295,7 +331,6 @@ Description: It is used to specify the format of the data source. This is an opt
   </tr>
 </table>
 
-
 ## The Render() Method
 
 Given below is a brief description of the parameters that can be passed using this method:
@@ -388,11 +423,43 @@ The code of the instance of the chart is given below:
 ```javascript
 #Rendering the widget
 widget = Fusioncharts::Chart.new({
-    width: "400",
+    width: "450",
     height: "250",
     type: "angulargauge",
     renderAt: "widgetContainer",
-    dataSource: widgetJSONStr
+    dataSource: {
+        // Chart Configuration
+        "chart": {
+            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+            "lowerLimit": "0",
+            "upperLimit": "100",
+            "showValue": "1",
+            "numberSuffix": "%",
+            "theme": "fusion",
+            "showToolTip": "0"
+        },
+        // Chart Data
+        "colorRange": {
+            "color": [{
+                "minValue": "0",
+                "maxValue": "50",
+                "code": "#F2726F"
+            }, {
+                "minValue": "50",
+                "maxValue": "75",
+                "code": "#FFC533"
+            }, {
+                "minValue": "75",
+                "maxValue": "100",
+                "code": "#62B58F"
+            }]
+        },
+        "dials": {
+            "dial": [{
+                "value": "81"
+            }]
+        }
+    }
 })
 ```
 
@@ -476,7 +543,7 @@ def getWidget
 
     # Rendering the widget
     widget = Fusioncharts::Chart.new({
-        width: "400",
+        width: "450",
         height: "250",
         type: "angulargauge",
         renderAt: "widgetContainer",
@@ -529,13 +596,72 @@ The code of the instance of the chart is given below:
 
 ```javascript
 # Rendering the Map
-       map = Fusioncharts::Chart.new({
-           width: "600",
-           height: "400",
-           type: "maps/world",
-           renderAt: "mapContainer",
-           dataSource: mapJSONStr
-       })
+map = Fusioncharts::Chart.new({
+    width: "800",
+    height: "550",
+    type: "maps/world",
+    renderAt: "mapContainer",
+    dataSource: {
+        // Map Configuration
+        "chart": {
+            "caption": "Average Annual Population Growth",
+            "subcaption": " 1955-2015",
+            "numbersuffix": "%",
+            "includevalueinlabels": "1",
+            "labelsepchar": ": ",
+            "entityFillHoverColor": "#FFF9C4",
+            "theme": "fusion"
+        },
+        // Aesthetics; ranges synced with the slider
+        "colorrange": {
+            "minvalue": "0",
+            "code": "#FFE0B2",
+            "gradient": "1",
+            "color": [
+                {
+                    "minvalue": "0.5",
+                    "maxvalue": "1.0",
+                    "color": "#FFD74D"
+                }, {
+                    "minvalue": "1.0",
+                    "maxvalue": "2.0",
+                    "color": "#FB8C00"
+                }, {
+                    "minvalue": "2.0",
+                    "maxvalue": "3.0",
+                    "color": "#E65100"
+                }
+            ]
+        },
+        // Source data as JSON --> id represents countries of world.
+        "data": [{
+                "id": "NA",
+                "value": ".82",
+                "showLabel": "1"
+            }, {
+                "id": "SA",
+                "value": "2.04",
+                "showLabel": "1"
+            }, {
+                "id": "AS",
+                "value": "1.78",
+                "showLabel": "1"
+            }, {
+                "id": "EU",
+                "value": ".40",
+                "showLabel": "1"
+            }, {
+                "id": "AF",
+                "value": "2.58",
+                "showLabel": "1"
+            }, {
+                "id": "AU",
+                "value": "1.30",
+                "showLabel": "1"
+            }
+        ]
+    }
+})
 
 ```
 
