@@ -13,7 +13,6 @@ The **Vue-FusionCharts** component lets you include FusionCharts in your VueJS p
     - JSON
     - XML
     - An URI pointing to a file containing JSON/XML data. However, each chart/map expects data to be formatted in a specific manner, and the data you provide must comply with the required format.
-* Auto-updates the chart object when the data source is modified.
 
 In this article, we will demonstrate how to download and install the `Vue-FusionCharts` component and all the other dependencies on your system. You can install FusionCharts in your Vue project using any of the two modes given below:
 

@@ -11,8 +11,7 @@ FusionCharts Suite XT includes the FusionCharts server-side ASP.NET wrapper that
 Some of the basic features of the ASP.NET wrapper are:
 
 * Easily create charts in JavaScript using your C#/VB code.
-* Can render charts using  **JSON/XML** data or JSON/XML data or url of **JSON/XML** data.
-* Auto-updates the chart object when the data source is modified.
+* Can render charts using **JSON/XML** data or URL.
 
 In this article, we will show you how you can download and install the `FusionCharts ASP.NET` wrapper and all the other dependencies on your system. You can use FusionCharts in your ASP.NET project using direct JavaScript files.
 
