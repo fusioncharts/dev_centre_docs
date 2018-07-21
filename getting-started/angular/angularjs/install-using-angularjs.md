@@ -11,9 +11,44 @@ The `angularjs-fusioncharts` wrapper, along with FusionCharts Suite XT, lets you
 
 In this article, we will show you how you can download and install the `angularjs-fusioncharts` wrapper and all the other dependencies on your system. You can install FusionCharts in your application using NPM.
 
-## Install FusionCharts via npm
+You can install FusionCharts in your angularjs project using any of the two modes given below:
 
-Before you install and start working with angularjs-fusioncharts wrapper, let's get familiar with the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
+## Choose your mode of installation:
+
+<table>
+    <tr>
+        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/angularjs/install-using-angularjs#install-using-direct-javascript-files-2)</td>
+        <td align="center">[npm]({% site.baseurl %}/getting-started/angularjs/install-using-angularjs#install-fusioncharts-via-npm-5)</td>
+    </tr>
+</table>
+
+## Install using Direct JavaScript files
+
+In order to install and start working with Angularjs-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
+
+* JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
+* JavaScript files to render maps under `js > maps` folder.
+* JavaScript files to include themes under `js > themes` folder.
+
+The folder structure is shown below:
+
+![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
+
+> It is recommended that you copy the `js` folder from within fusioncharts-suite-xt to your project's JavaScript folder.
+
+* The download package also contains **angularjs-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > frontend-plugins > angularjs` folder. This folder will also contain Angularjs-FusionCharts native Export Handlers. The folder structure is shown below:
+
+![AngularJS Js Folder]({% site.baseurl %}/gif/angularjs-folder-structure.gif)
+
+> If you are using 3.12.2 or older versions, download v3.13.0 to get the `angularjs` folder in the FusionCharts Suite XT package. 
+
+> It is recommended that you copy the `angularjs` folder from within `fusioncharts-suite-xt > integrations > frontend-plugins > angularjs` to your project's JavaScript folder.
+
+Installation of FusionCharts Suite XT involves copying and pasting the JavaScript files from the downloaded package into your project folder. 
+
+After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
+
+Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
 
 File Name|Description|
 -|-
@@ -31,9 +66,152 @@ File Name|Description|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript`file names.|
 
+In order to install, create an HTML file and follow the steps given below:
+
+**Step 1: Include AngularJS file:**
+
+```html
+<script type="text/javascript" src="/path/to/angularjs.js"></script>
+```
+
+**Step 2: Include the FusionCharts package:**
+
+```html
+<script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
+```
+
+**Step 3: Include the angularjs-fusioncharts module:**
+
+```html
+<script type="text/javascript" src="/path/to/angular-fusioncharts.js"></script>
+```
+
+### Include ng-fusioncharts
+
+Include the ng-fusioncharts as a dependency in the application. Search for the call to angular.module to add the dependency.
+
+```
+angular.module("myApp", ["ng-fusioncharts"])
+```
+
+### Add the Directive
+
+Add the `<div>` with a **fc-chart** directive in your HTML file, assuming that it is inside a `MyController` controller.
+
+```
+<div ng-controller="MyController">
+    <div fusioncharts
+        width="600"
+        height="400"
+        type="column2d"
+        dataSource="" >
+    </div>
+</div>
+```
+
+Now, this is bound to a datasource with the `myDataSource` scope object.
+
+## Populate the required variables
+
+Previously, we have bound to the undefined scope variable myDataSource.
+
+Set the `DataSource` like a regular FusionCharts JSON format DataSource inside the controller. Refer to the code below:
+
+```
+app.controller('MyController', function($scope) {
+    $scope.myDataSource = {
+        chart: {
+            caption: "Harry's SuperMart",
+            subCaption: "Top 5 stores in last month by revenue",
+        },
+        data: [{
+                label: "Bakersfield Central",
+                value: "880000"
+            },
+            {
+                label: "Garden Groove harbour",
+                value: "730000"
+            },
+            {
+                label: "Los Angeles Topanga",
+                value: "590000"
+            },
+            {
+                label: "Compton-Rancho Dom",
+                value: "520000"
+            },
+            {
+                label: "Daly City Serramonte",
+                value: "330000"
+            }
+        ]
+    };
+});
+```
+
+### Installing FusionMaps (map visualizations) for your project
+
+To render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files and include them to your HTML as shown below:
+
+> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
+
+```
+<script type="text/JavaScript" src="path/to/local/fusioncharts.maps.js"></script>
+<script type="text/JavaScript" src="path/to/local/fusioncharts.world.js"></script>
+```
+
+The `fusioncharts.world.js` file includes path drawings of the map of **world**.
+
+The consolidated code(which also includes the `angularjs.js`, `fusioncharts.js` and `angularjs-fusioncharts.js`)  looks like as shown below:
+
+```html
+<head>
+    <meta charset="utf-8">
+    <title>AngularJS - FusionCharts</title>
+    <!-- AngularJS -->
+    <script type="text/JavaScript" src="path/to/local/angularjs.js"></script>
+    <!-- FusionCharts -->
+    <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
+    <!-- AngularJS-FusionCharts -->
+    <script type="text/JavaScript" src="path/to/local/angularjs-fusioncharts.js"></script>
+    <!-- FusionMaps -->
+    <script type="text/JavaScript" src="path/to/local/fusioncharts.maps.js"></script>
+    <!--world -->
+    <script type="text/JavaScript" src="path/to/local/fusioncharts.world.js"></script>
+</head>
+```
+
+### Themes
+
+Themes shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
+
+In a theme file, you can centralize the following aspects of a chart, gauge, or map:
+
+* Visual appearance (data plot color, font color, font size, etc.)
+* Behavior (hover effects for data plots)
+* Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme)
+
+FusionCharts Suite XT ships with the following predefined themes:
+
+* `fusion`
+* `zune`
+* `ocean`
+* `carbon`
+
+To include a theme to your chart, include its corresponding JavaScript file in your HTML page for that theme as shown in the code below:
+
+```html
+<script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
+<script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+```
+
+> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion`. To add any other theme to your chart, include its corresponding JavaScript file to your project.
+
+## Install FusionCharts via **npm**
+
 Now, let's discuss how to install the `fusioncharts` module via **npm**. The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
 
-This section outlines the steps to be executed for installing all the node modules via **npm** and rendering charts using the angularjs-Fusioncharts wrapper.
+This section outlines the steps to be executed for installing all the node modules via **npm** and rendering charts using the `angularjs-Fusioncharts` wrapper.
 
 You can install `angularjs fusioncharts` wrapper using any of the following steps:
 
