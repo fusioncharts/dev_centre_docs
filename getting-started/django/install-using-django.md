@@ -27,7 +27,7 @@ The folder structure is shown below:
 
 > It is recommended that you copy the `js` folder from within fusioncharts-suite-xt to your project's JavaScript folder.
 
-* The download package also contains **django-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > serverside-extensions > django` folder. This folder will also contain Django-FusionCharts native Export Handlers. The folder structure is shown below:
+* The download package also contains **manage.py** file under `fusioncharts-suite-xt > integrations > serverside-extensions > django` folder. This folder will also contain Django-FusionCharts native Export Handlers. The folder structure is shown below:
 
 ![Django Js Folder]({% site.baseurl %}/gif/django-folder-structure.gif)
 
