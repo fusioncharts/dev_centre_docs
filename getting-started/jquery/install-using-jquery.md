@@ -30,25 +30,25 @@ In this article, we will show you how you can download and install the `jQuery h
 
 ## Install using Direct JavaScript files
 
-In order to install and start working with jQuery-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT download package which contains:
+In order to install and start working with jQuery-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
-* JavaScript files to render Charts, Widgets and powerCharts under the **js** folder.
-* JavaScript files to render maps under **js > maps** folder.
-* JavaScript files to include themes under **js > themes** folder.
+* JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
+* JavaScript files to render maps under `js > maps` folder.
+* JavaScript files to include themes under `js > themes` folder.
 
 The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the **js** folder from within fusioncharts-suite-xt to your project's JavaScript folder.
+> It is recommended that you copy the `js` folder from within fusioncharts-suite-xt to your project's JavaScript folder.
 
-* The download package also contains `jquery-fusioncharts.js` file under **fusioncharts-suite-xt > integrations > frontend-plugins > jquery** folder. This folder will also contain jQuery-FusionCharts native Export Handlers. The folder structure is shown below:
+* The download package also contains **jquery-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > frontend-plugins > jquery` folder. This folder will also contain jQuery-FusionCharts native Export Handlers. The folder structure is shown below:
 
 ![jQuery Js Folder]({% site.baseurl %}/gif/jquery-folder-structure.gif)
 
-> If you are using 3.12.2 or older versions, download v3.13.0 to get the **jquery** folder in the FusionCharts Suite XT package. 
+> If you are using 3.12.2 or older versions, download v3.13.0 to get the `jquery` folder in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the **jquery** folder from within **fusioncharts-suite-xt > integrations > frontend-plugins > jquery** to your project's JavaScript folder.
+> It is recommended that you copy the `jquery` folder from within `fusioncharts-suite-xt > integrations > frontend-plugins > jquery` to your project's JavaScript folder.
 
 Installation of FusionCharts Suite XT involves copying and pasting the JavaScript files from the downloaded package into your project folder.
 

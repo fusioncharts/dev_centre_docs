@@ -12,27 +12,27 @@ In this article, we will show you how you can download and install the **FusionC
 
 ## Download FusionCharts Library
 
-In order to install and start working with Ruby on Rails and FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT download package which contains:
+In order to install and start working with Ruby on Rails and FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
-* JavaScript files to render Charts, Widgets and powerCharts under the **js** folder.
-* JavaScript files to render maps under **js > maps** folder.
-* JavaScript files to include themes under **js > themes** folder.
+* JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
+* JavaScript files to render maps under `js > maps` folder.
+* JavaScript files to include themes under `js > themes` folder.
 
 The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the **js** folder from within fusioncharts-suite-xt to your project's JavaScript folder.
+> It is recommended that you copy the `js` folder from within fusioncharts-suite-xt to your project's JavaScript folder.
 
-* The download package also contains `fusioncharts-rails` file under **fusioncharts-suite-xt > integrations > serverside-extensions > ror** folder. This folder will also contain Ruby on Rails FusionCharts native Export Handlers. The folder structure is shown below:
+* The download package also contains `fusioncharts-rails` file under `fusioncharts-suite-xt > integrations > serverside-extensions > ror` folder. This folder will also contain Ruby on Rails FusionCharts native Export Handlers. The folder structure is shown below:
 
 ![Ruby on Rails Js Folder]({% site.baseurl %}/gif/ror-folder-structure.gif)
 
-> If you are using 3.12.2 or older versions, download v3.13.0 to get the **ror** folder in the FusionCharts Suite XT package. 
+> If you are using 3.12.2 or older versions, download v3.13.0 to get the `ror` folder in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the **ror** folder from within **fusioncharts-suite-xt > integrations > serverside-extensions > ror** to your project's JavaScript folder.
+> It is recommended that you copy the `ror` folder from within `fusioncharts-suite-xt > integrations > serverside-extensions > ror` to your project's JavaScript folder.
 
-Copy the JavaScript files from above and paste them in the **vendor/assets/javascripts/fusioncharts/** folder.
+Copy the JavaScript files from above and paste them in the `vendor/assets/javascripts/fusioncharts/` folder.
 
 Add the following code lines in the **app/assets/javascripts/application.js** file:
 

@@ -19,29 +19,29 @@ In this article, we will show you how you can download and install the `FusionCh
 
 ## Install FusionCharts ASP.NET Wrapper
 
-In order to install and start working with FusionCharts ASP.NET wrapper you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT download package which contains:
+In order to install and start working with FusionCharts ASP.NET wrapper you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
-* JavaScript files to render Charts, Widgets and powerCharts under the **js** folder.
-* JavaScript files to render maps under **js > maps** folder.
-* JavaScript files to include themes under **js > themes** folder.
+* JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
+* JavaScript files to render maps under `js > maps` folder.
+* JavaScript files to include themes under `js > themes` folder.
 
 The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the **js** folder from within fusioncharts-suite-xt to your project's JavaScript folder.
+> It is recommended that you copy the `js` folder from within fusioncharts-suite-xt to your project's JavaScript folder.
 
-* The download package also contains `.aspx.vb` file under **fusioncharts-suite-xt > integrations > serverside-extensions > asp.net > asp.net-vb** folder.
+* The download package also contains **.aspx.vb** file under `fusioncharts-suite-xt > integrations > serverside-extensions > asp.net > asp.net-vb` folder.
 
-* The download package also contains `.aspx.cs` file under **fusioncharts-suite-xt > integrations > serverside-extensions > asp.net > asp.net-cs** folder. 
+* The download package also contains **.aspx.cs** file under `fusioncharts-suite-xt > integrations > serverside-extensions > asp.net > asp.net-cs` folder. 
 
 This folder will also contain FusionCharts ASP.NET's native Export Handlers. The folder structure is shown below:
 
 ![ASP.NET Folder Structure]({% site.baseurl %}/gif/aspnet-folder-structure.gif)
 
-> If you are using 3.12.2 or older versions, download v3.13.0 to get the **asp.net-vb** and **asp.net-cs** folders in the FusionCharts Suite XT package. 
+> If you are using 3.12.2 or older versions, download v3.13.0 to get the `asp.net-vb` and `asp.net-cs` folders in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the above folders from within **fusioncharts-suite-xt > integrations > serverside-extensions > asp.net** to your project's JavaScript folder.
+> It is recommended that you copy the above folders from within `fusioncharts-suite-xt > integrations > serverside-extensions > asp.net` to your project's JavaScript folder.
 
 Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the downloaded package into your project folder.
 
