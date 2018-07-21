@@ -5,7 +5,7 @@ heading: Your First Chart in AngularJS using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and the `angularjs-fusioncharts` wrapper. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angular#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angular#create-your-first-gauge-9) and a [map]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angular#create-your-first-map-14).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and the `angularjs-fusioncharts` wrapper. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#create-your-first-map-10).
 
 Before going through this article, please [install]({% site.baseurl %}/getting-started/angular/angularjs/install-using-angularjs '@@open-newtab') `angularjs-fusioncharts` plugin, if not already installed.
 

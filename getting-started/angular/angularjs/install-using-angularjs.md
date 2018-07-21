@@ -9,7 +9,7 @@ FusionCharts Suite XT includes an extensive range of charts, gauges, and maps th
 
 The `angularjs-fusioncharts` wrapper, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single AngularJS component.
 
-In this article, we will show you how you can download and install the `angularjs-fusioncharts` wrapper and all the other dependencies on your system. You can install FusionCharts in your application using NPM.
+In this article, we will show you how you can download and install the `angularjs-fusioncharts` wrapper and all the other dependencies on your system. 
 
 You can install FusionCharts in your angularjs project using any of the two modes given below:
 
@@ -101,7 +101,7 @@ Add the `<div>` with a **fc-chart** directive in your HTML file, assuming that i
 ```
 <div ng-controller="MyController">
     <div fusioncharts
-        width="600"
+        width="700"
         height="400"
         type="column2d"
         dataSource="" >
@@ -121,30 +121,9 @@ Set the `DataSource` like a regular FusionCharts JSON format DataSource inside t
 app.controller('MyController', function($scope) {
     $scope.myDataSource = {
         chart: {
-            caption: "Harry's SuperMart",
-            subCaption: "Top 5 stores in last month by revenue",
+            ...
         },
-        data: [{
-                label: "Bakersfield Central",
-                value: "880000"
-            },
-            {
-                label: "Garden Groove harbour",
-                value: "730000"
-            },
-            {
-                label: "Los Angeles Topanga",
-                value: "590000"
-            },
-            {
-                label: "Compton-Rancho Dom",
-                value: "520000"
-            },
-            {
-                label: "Daly City Serramonte",
-                value: "330000"
-            }
-        ]
+        data: [ ... ]
     };
 });
 ```

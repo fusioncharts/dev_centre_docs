@@ -73,31 +73,31 @@ File Name|Description|
 
 Create an HTML file and follow the steps below.
 
-### **Step 1: Include React core library:**
+**Step 1: Include React core library:**
 
 ```html
 <script type="text/javascript" src="path/to/local/react.js"></script>
 <script type="text/javascript" src="path/to/local/react-dom.js"></script>
 ```
-### **Step 2: Include Babel for JSX transpiling:**
+**Step 2: Include Babel for JSX transpiling:**
 
 ```html
 <script type="text/javascript" src="path/to/local/babel-core.js"></script>
 ```
 
-### **Step 3: Include the FusionCharts package:**
+**Step 3: Include the FusionCharts package:**
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-### **Step 4: Include the react-fusioncharts module:**
+**Step 4: Include the react-fusioncharts module:**
 
 ```html
 <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
 ```
 
-### **Step 5: Include the theme file:**
+**Step 5: Include the theme file:**
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>

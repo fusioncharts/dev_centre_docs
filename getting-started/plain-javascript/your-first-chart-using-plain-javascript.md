@@ -5,13 +5,13 @@ heading: Your First Chart using FusionCharts
 chartPresent: false
 ---
 
-Let's build our first chart using FusionCharts Suite XT! FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-map-10).
+Let's build our first chart using FusionCharts Suite XT! FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-gauge-8) and a [map]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-map-13).
 
 Before going through this article, please [install]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript '@@open-newtab') the `fusioncharts` package, if not already installed.
 
 ## Create your first chart
 
-In this section, we will create a chart using **jquery-fusioncharts**. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
+In this section, we will create a chart using fusioncharts library. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
 
 Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a **Column 2D** chart as shown below:
 
@@ -136,7 +136,7 @@ The code to render a chart is given below:
 FusionCharts.ready(function() {
     var revenueChart = new FusionCharts({
         type: 'column2d', // The chart type
-        width: '600', // Width of the chart
+        width: '700', // Width of the chart
         height: '400', // Height of the chart
         dataFormat: 'json', // Data type
         dataSource: {
@@ -204,7 +204,7 @@ The full HTML code is shown below:
             var revenueChart = new FusionCharts({
                 "type": "column2d",
                 "renderAt": "chartContainer",
-                "width": "600",
+                "width": "700",
                 "height": "400",
                 "dataFormat": "json",
                 "dataSource": {
