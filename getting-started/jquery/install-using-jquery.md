@@ -170,12 +170,16 @@ In a theme file, you can centralize the following aspects of a chart, gauge, or 
 * Behavior (hover effects for data plots)
 * Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme)
 
-FusionCharts Suite XT ships with the following predefined themes:
+The FusionCharts Suite download package also contains the theme files under `fusioncharts-suite-xt > js > themes` folder. The predefined themes are:
 
 * `fusion`
 * `zune`
 * `ocean`
 * `carbon`
+
+The folder structure is shown below:
+
+![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
 To include a theme to your chart, include its corresponding JavaScript file in your HTML page for that theme as shown in the code below:
 
