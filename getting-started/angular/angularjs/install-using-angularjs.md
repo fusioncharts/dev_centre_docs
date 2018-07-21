@@ -17,8 +17,8 @@ You can install FusionCharts in your angularjs project using any of the two mode
 
 <table>
     <tr>
-        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/angularjs/install-using-angularjs#install-using-direct-javascript-files-2)</td>
-        <td align="center">[npm]({% site.baseurl %}/getting-started/angularjs/install-using-angularjs#install-fusioncharts-via-npm-5)</td>
+        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/angular/angularjs/install-using-angularjs#install-using-direct-javascript-files-2)</td>
+        <td align="center">[npm]({% site.baseurl %}/getting-started/angular/angularjs/install-using-angularjs#install-fusioncharts-via-npm-8)</td>
     </tr>
 </table>
 
