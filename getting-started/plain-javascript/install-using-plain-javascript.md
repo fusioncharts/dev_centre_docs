@@ -20,17 +20,17 @@ In this article, we will show you how you can download and install the `FusionCh
 
 ## Install using Direct JavaScript files
 
-[Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT download package which contains:
+[Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
-* JavaScript files to render Charts, Widgets and powerCharts under the **js** folder.
-* JavaScript files to render maps under **js > maps** folder.
-* JavaScript files to include themes under **js > themes** folder.
+* JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
+* JavaScript files to render maps under `js > maps` folder.
+* JavaScript files to include themes under `js > themes` folder.
 
 The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the **js** folder from within fusioncharts-suite-xt to your project's JavaScript folder.
+> It is recommended that you copy the `js` folder from within fusioncharts-suite-xt to your project's JavaScript folder.
 
 Installation of FusionCharts Suite XT involves copying and pasting the JavaScript files from the downloaded package into your project folder.
 
