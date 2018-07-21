@@ -8,7 +8,7 @@ chartPresent: false
 
 FusionCharts Suite XT includes the **FusionCharts PHP** wrapper that lets you create interactive, data-driven charts in your PHP website without writing any JavaScript code.
 
-JavaScript and HTML code is used to generate charts in the browsers. The server-side PHP wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-map-10).
+JavaScript and HTML code is used to generate charts in the browsers. The server-side PHP wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-gauge-10) and a [map]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-map-13).
 
 Before going through this article, please [install]({% site.baseurl %}/getting-started/php/install-using-php '@@open-newtab') FusionCharts PHP wrapper, if not already installed.
 

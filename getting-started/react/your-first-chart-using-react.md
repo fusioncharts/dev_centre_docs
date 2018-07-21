@@ -5,7 +5,7 @@ heading: Your First Chart in React using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and React-FusionCharts plugin. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-map-10).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and React-FusionCharts plugin. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-gauge-8) and a [map]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-map-11).
 
 Before going through this article, please [install](https://www.fusioncharts.com/react-charts) react-fusioncharts plugin, if not already installed.
 
@@ -32,7 +32,11 @@ China|30|
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For React, we recommend JSON format. There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts), etc. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For React, we recommend JSON format. 
+
+> There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts), etc.
+
+The converted format will look as shown below:
 
 ```javascript
 {
@@ -106,7 +110,7 @@ In this step, we will create an instance of the chart type as `column2d`, set th
 
 First, store the configurations as JSON object in a variable as below:
 
-```javascript
+```json
 var chartConfigs = {
     type: 'column2d', // The chart type
     width: '700', // Width of the chart
@@ -394,7 +398,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 In this step, we will create an instance of the map type as WORLD, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
 
-```javascript
+```json
 var chartConfigs = {
     type: 'world', // The chart type
     width: 800, // Width of the chart

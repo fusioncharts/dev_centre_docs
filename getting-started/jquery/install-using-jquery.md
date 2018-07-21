@@ -54,7 +54,7 @@ Installation of FusionCharts Suite XT involves copying and pasting the JavaScrip
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
 
-Following is the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
+Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
 
 File Name|Description|
 -|-

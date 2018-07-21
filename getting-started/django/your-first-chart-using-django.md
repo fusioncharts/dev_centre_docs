@@ -8,7 +8,7 @@ chartPresent: false
 
 FusionCharts Suite XT includes the **FusionCharts Django** wrapper that lets you create interactive, data-driven charts. You can create a simple chart using the FusionCharts server-side Django wrapper without writing any JavaScript code.
 
-The server-side Django wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/django/your-first-chart-using-django#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/django/your-first-chart-using-django#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/django/your-first-chart-using-django#create-your-first-map-10).
+The server-side Django wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/django/your-first-chart-using-django#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/django/your-first-chart-using-django#create-your-first-gauge-11) and a [map]({% site.baseurl %}/getting-started/django/your-first-chart-using-django#create-your-first-map-14).
 
 Before going through this article, please [install]({% site.baseurl %}/getting-started/django/install-using-django '@@open-newtab') FusionCharts Django wrapper, if not already installed.
 

@@ -19,7 +19,7 @@ Let's start with a simple example of "Countries With Most Oil Reserves" chart, w
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-### The data for this chart is represented in a table below:
+**The data for this chart is represented in a table below:**
 
 Country|No. of Oil Reserves|
 -|-

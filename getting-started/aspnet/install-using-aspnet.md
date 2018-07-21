@@ -45,7 +45,7 @@ This folder will also contain FusionCharts ASP.NET's native Export Handlers. The
 
 Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the downloaded package into your project folder.
 
-Following is the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
+Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
 
 File Name|Description|
 -|-
