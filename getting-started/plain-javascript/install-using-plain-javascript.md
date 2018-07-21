@@ -14,7 +14,7 @@ In this article, we will show you how you can download and install the `FusionCh
 <table>
     <tr>
         <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#install-using-direct-javascript-files-2)</td>
-        <td align="center">[NPM]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#install-fusioncharts-via-npm-5)</td>
+        <td align="center">[NPM]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#install-fusioncharts-via-npm-7)</td>
     </tr>
 </table>
 
@@ -215,7 +215,7 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 
 Let's discuss how to install the FusionCharts package via npm. The FusionCharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
 
-**Step 1: Install the `fusioncharts` package via **npm**
+**Step 1: Install the `fusioncharts` package via npm**
 
 To install the `FusionCharts` package, execute the following command in the terminal:
 
@@ -259,7 +259,7 @@ To load the maps module, add the folliwing code to your HTML file:
 
 **Step 4: Load Map Definition Files**
 
-Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.<MAP_ALIAS>**. 
+Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**. 
 
 Replace **MAP_ALIAS** by the map's JavaScript alias. Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. Include map definition files for all maps to render in the application.
 
