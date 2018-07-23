@@ -199,7 +199,7 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
   <li><a data-toggle='xml'>Script Tags</a></li>
 </ul>
 <div class='tab-content'>
-<div class='tab xml-tab'>
+<div class='tab json-tab active'>
 <div class="mt-10 pb-10">Install fusioncharts package:</div>
 <pre><code class="custom-hlc language-cv">
     npm install fusioncharts --save
@@ -246,9 +246,11 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
     OverlappedBar2d(FusionCharts);
     Overlappedcolumn2d(FusionCharts);
 </code></pre> 
+
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-<div class='tab json-tab active'>
+
+<div class='tab xml-tab'>
 <div class="mt-10 pb-10">Install angularJS package:</div>
 <pre><code class="custom-hlc language-cs">
     npm install angular@1.7.2 --save
@@ -299,20 +301,11 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 
 <div class="code-wrapper">
 <ul class='code-tabs'>
-  <li class='active'><a data-toggle='json'>Script Tags</a></li>
-  <li><a data-toggle='xml'>Require</a></li>
+  <li class='active'><a data-toggle='json'>Require</a></li>
+  <li><a data-toggle='xml'>Script Tags</a></li>
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<div class="mt-10 pb-10">Include map definitions in script tag:</div>
-<pre><code class="custom-hlc language-cs">
-&lt;script src="node_modules/fusioncharts/fusioncharts.maps.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-<div class='tab xml-tab'>
 <div class="pb-10">// require your map module</div>
 <pre><code class="custom-hlc language-cv">
     const Maps = require('fusioncharts/fusioncharts.maps.js');
@@ -323,6 +316,15 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
     Maps(FusionCharts);
     World(FusionCharts);
 </code></pre> 
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab xml-tab'>
+<div class="mt-10 pb-10">Include map definitions in script tag:</div>
+<pre><code class="custom-hlc language-cs">
+&lt;script src="node_modules/fusioncharts/fusioncharts.maps.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
+</code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
@@ -348,21 +350,11 @@ FusionCharts Suite XT ships with the following predefined themes:
 
 <div class="code-wrapper">
 <ul class='code-tabs'>
-  <li class='active'><a data-toggle='json'>Script Tags</a></li>
-  <li><a data-toggle='xml'>Require</a></li>
+  <li class='active'><a data-toggle='json'>Require</a></li>
+  <li><a data-toggle='xml'>Script Tags</a></li>
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<div class="mt-10 pb-10">// To include theme definition in script tag:</div>
-<pre><code class="custom-hlc language-cs">
-    &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.ocean.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.zune.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.carbon.js"&gt;&lt;/script&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-<div class='tab xml-tab'>
 <div class="pb-10">// require your themes</div>
 <pre><code class="custom-hlc language-cv">
     const Fusion = require('fusioncharts/themes/fusioncharts.fusion.js');
@@ -378,6 +370,16 @@ FusionCharts Suite XT ships with the following predefined themes:
     Carbon(FusionCharts);
 </code></pre> 
 
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+<div class='tab xml-tab'>
+<div class="mt-10 pb-10">// To include theme definition in script tag:</div>
+<pre><code class="custom-hlc language-cs">
+    &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.ocean.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.zune.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.carbon.js"&gt;&lt;/script&gt;
+</code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
