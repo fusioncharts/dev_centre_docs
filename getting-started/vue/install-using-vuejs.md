@@ -5,7 +5,7 @@ heading: Installation
 chartPresent: false
 ---
 
-The `Vue-FusionCharts` wrapper lets you include FusionCharts in your VueJS projects and adds interactive JavaScript charts and graphs to your VueJS applications. Before we start the installation process of the wrapper, some of the salient features of `Vue-FusionCharts` are:
+The `Vue-FusionCharts` wrapper lets you include FusionCharts in your Vue projects and adds interactive JavaScript charts and graphs to your Vue applications. Before we start the installation process of the wrapper, some of the salient features of `Vue-FusionCharts` are:
 
 * Easily create charts in JavaScript using your Vue code.
 * Can render charts using "props" binding. There are more than 50 props that you can use.
@@ -14,7 +14,7 @@ The `Vue-FusionCharts` wrapper lets you include FusionCharts in your VueJS proje
     - XML
     - An URI pointing to a file containing JSON/XML data. However, each chart/map expects data to be formatted in a specific manner, and the data you provide must comply with the required format.
 
-In this article, we will demonstrate how to download and install the `Vue-FusionCharts` wrapper and all the other dependencies on your system. You can install FusionCharts in your VueJS project using any of the two modes given below:
+In this article, we will demonstrate how to download and install the `Vue-FusionCharts` wrapper and all the other dependencies on your system. You can install FusionCharts in your Vue project using any of the two modes given below:
 
 ## Choose your mode of installation:
 
@@ -39,15 +39,19 @@ The folder structure is shown below:
 
 > It is recommended to copy the `js` folder from the FusionCharts Suite XT download package to your project's JavaScript folder.
 
-* The download package also contains files of the `Vue-FusionCharts` wrapper under `fusioncharts-suite-xt > integrations > vue`. The folder structure is shown below:
+* The download package also contains files of the `Vue-FusionCharts` wrapper under `fusioncharts-suite-xt > integrations > vue` folder.
+
+The folder structure is shown below:
 
 ![Vue Js Folder]({% site.baseurl %}/gif/vue-folder-structure.gif)
+
+Both the minified (compressed) and source (uncompressed) copies of Vue files are available in the folder. The uncompressed file `vue-fusioncharts.js` is used during development or debugging, whereas the compressed file `vue-fusioncharts.min.js` saves bandwidth and improves performance in production. The folder also contains the sourcemap file `vue-fusioncharts.js.map` for use, when debugging with a compressed file.
 
 > If you are using 3.12.2 or older versions, download v3.13.0 to get the `vue` folder in the FusionCharts Suite XT package. 
 
 > It is recommended to copy the `vue` folder from `fusioncharts-suite-xt > integrations` to your project's JavaScript folder.
 
-Following is the list of files present in your `fusioncharts-suite-xt` folder:
+Following is the list of files present in your `fusioncharts-suite-xt/js` folder:
 
 File Name|Description|
 -|-
@@ -62,11 +66,8 @@ File Name|Description|
 `fusioncharts.overlappedbar2d.js`|This file is required to render the Overlapped Bar 2D chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedbar2d.js`.|
 `fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js`.|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
-`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
+`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definitions of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
-`vue-fusioncharts.js`|This file is the vue source file, which is required when you want to work with `Vue-FusionCharts` wrapper.|
-`vue-fusioncharts.js.map`|This file is the vue source file of maps, which is required when your want to render maps using `Vue-FusionCharts` wrapper.|
-`vue-fusioncharts.min.js`|This file is the minified source file.|
 
 Installation of FusionCharts Suite XT involves copying and pasting the files from the downloaded package into your project folder. 
 
