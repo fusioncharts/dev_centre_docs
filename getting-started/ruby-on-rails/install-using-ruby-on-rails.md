@@ -22,7 +22,7 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the `js` folder from within fusioncharts-suite-xt to your project's JavaScript folder.
+> It is recommended that you copy the `js` folder from fusioncharts-suite-xt to your project's JavaScript folder.
 
 * The download package also contains `fusioncharts-rails` file under `fusioncharts-suite-xt > integrations > ror` folder. This folder will also contain Ruby on Rails FusionCharts native Export Handlers. The folder structure is shown below:
 
@@ -30,7 +30,7 @@ The folder structure is shown below:
 
 > If you are using 3.12.2 or older versions, download v3.13.0 to get the `ror` folder in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the `ror` folder from within `fusioncharts-suite-xt > integrations > ror` to your project's JavaScript folder.
+> It is recommended that you copy the `ror` folder from `fusioncharts-suite-xt > integrations > ror` to your project's JavaScript folder.
 
 Copy the JavaScript files from above and paste them in the `vendor/assets/javascripts/fusioncharts/` folder.
 

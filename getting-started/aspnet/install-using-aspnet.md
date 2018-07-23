@@ -29,19 +29,19 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the `js` folder from within fusioncharts-suite-xt to your project's JavaScript folder.
+> It is recommended that you copy the `js` folder from fusioncharts-suite-xt to your project's JavaScript folder.
 
-* The download package also contains **.aspx.vb** file under `fusioncharts-suite-xt > integrations > serverside-extensions > asp.net > asp.net-vb` folder.
+* The download package also contains **.aspx.vb** file under `fusioncharts-suite-xt > integrations > asp-vb` folder.
 
-* The download package also contains **.aspx.cs** file under `fusioncharts-suite-xt > integrations > serverside-extensions > asp.net > asp.net-cs` folder. 
+* The download package also contains **.aspx.cs** file under `fusioncharts-suite-xt > integrations > asp` folder. 
 
-This folder will also contain FusionCharts ASP.NET's native Export Handlers. The folder structure is shown below:
+The above folders will also contain FusionCharts ASP.NET's native Export Handlers. The folder structure is shown below:
 
 ![ASP.NET Folder Structure]({% site.baseurl %}/gif/aspnet-folder-structure.gif)
 
-> If you are using 3.12.2 or older versions, download v3.13.0 to get the `asp.net-vb` and `asp.net-cs` folders in the FusionCharts Suite XT package. 
+> If you are using 3.12.2 or older versions, download v3.13.0 to get the `asp-vb` and `asp` folders in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the above folders from within `fusioncharts-suite-xt > integrations > serverside-extensions > asp.net` to your project's JavaScript folder.
+> It is recommended that you copy the above folders from `fusioncharts-suite-xt > integrations` to your project's JavaScript folder.
 
 Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the downloaded package into your project folder.
 
@@ -70,8 +70,6 @@ To add any of the files in your project, drag and drop the file in `App_Code` fo
 That completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet '@@open-newtab').
 
 ## Installing FusionMaps (map visualizations) for your project
-
-### Step 1
 
 In order to render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files.
 

@@ -34,7 +34,7 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the `js` folder from within fusioncharts-suite-xt to your project's JavaScript folder.
+> It is recommended that you copy the `js` folder from fusioncharts-suite-xt to your project's JavaScript folder.
 
 * The download package also contains **angularjs-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > angularjs` folder. This folder will also contain Angularjs-FusionCharts native Export Handlers. The folder structure is shown below:
 
@@ -42,7 +42,7 @@ The folder structure is shown below:
 
 > If you are using 3.12.2 or older versions, download v3.13.0 to get the `angularjs` folder in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the `angularjs` folder from within `fusioncharts-suite-xt > integrations > angularjs` to your project's JavaScript folder.
+> It is recommended that you copy the `angularjs` folder from `fusioncharts-suite-xt > integrations > angularjs` to your project's JavaScript folder.
 
 Installation of FusionCharts Suite XT involves copying and pasting the JavaScript files from the downloaded package into your project folder. 
 
