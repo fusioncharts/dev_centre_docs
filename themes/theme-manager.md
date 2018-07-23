@@ -12,7 +12,7 @@ Refer to the code snippet given below:
 
 ```html
 <script type="text/javascript" src="js/fusioncharts.js"></script>
-<script type="text/javascript" src="js/themes/fusioncharts.theme.carbon.js"></script>
+<script type="text/javascript" src="js/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
 > The installation routine of a theme relies on the code in the fusioncharts.js file. Therefore, make sure that this file is always included before the JavaScript file for the theme.
@@ -30,17 +30,17 @@ In the following code snippet, you can see how to use the `theme` attribute to a
 ```json
 {
     chart: {
-        "theme": "carbon", //Set the value of the `theme` attribute to the name of the required theme
+        "theme": "fusion", //Set the value of the `theme` attribute to the name of the required theme
         ...
     }
 }
 ```
 
-You can see a column 2D chart configured using the carbon theme, given below:
+You can see a column 2D chart configured using the fusion theme, given below:
 
-**<chart>**
+{% embed_chart getting-started-your-first-chart.js %}
 
-> If you are using the XML data format for the chart, you can use the theme attribute within the <chart> element. For example, <chart theme="carbon">
+> If you are using the XML data format for the chart, you can use the theme attribute within the <chart> element. For example, <chart theme="fusion">
 
 ### Use the setChartAttribute() method
 
@@ -61,7 +61,7 @@ FusionCharts.ready(function () {
         }
     });
     revenueChart.render();
-    revenueChart.setChartAttribute("theme", "carbon"); //The attribute name and its value are passed as parameters to this method.
+    revenueChart.setChartAttribute("theme", "fusion"); //The attribute name and its value are passed as parameters to this method.
 });
 ```
 
