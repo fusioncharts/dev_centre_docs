@@ -1,11 +1,11 @@
 ---
 title: Installation | FusionCharts
-description: The **Vue-FusionCharts** component lets you include FusionCharts in your VueJS projects and add interactive JavaScript charts and graphs to your VueJS applications.
+description: The Vue-FusionCharts wrapper lets you include FusionCharts in your VueJS projects and add interactive JavaScript charts and graphs to your VueJS applications.
 heading: Installation
 chartPresent: false
 ---
 
-The **Vue-FusionCharts** component lets you include FusionCharts in your VueJS projects and adds interactive JavaScript charts and graphs to your VueJS applications. Before we start the installation process of the component, some of the salient features of **Vue-FusionCharts** are:
+The `Vue-FusionCharts` wrapper lets you include FusionCharts in your VueJS projects and adds interactive JavaScript charts and graphs to your VueJS applications. Before we start the installation process of the wrapper, some of the salient features of `Vue-FusionCharts` are:
 
 * Easily create charts in JavaScript using your Vue code.
 * Can render charts using "props" binding. There are more than 50 props that you can use.
@@ -14,7 +14,7 @@ The **Vue-FusionCharts** component lets you include FusionCharts in your VueJS p
     - XML
     - An URI pointing to a file containing JSON/XML data. However, each chart/map expects data to be formatted in a specific manner, and the data you provide must comply with the required format.
 
-In this article, we will demonstrate how to download and install the `Vue-FusionCharts` component and all the other dependencies on your system. You can install FusionCharts in your Vue project using any of the two modes given below:
+In this article, we will demonstrate how to download and install the `Vue-FusionCharts` wrapper and all the other dependencies on your system. You can install FusionCharts in your VueJS project using any of the two modes given below:
 
 ## Choose your mode of installation:
 
@@ -27,7 +27,7 @@ In this article, we will demonstrate how to download and install the `Vue-Fusion
 
 ## Install using Direct JavaScript files
 
-In order to install and start working with Vue-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
+In order to install and start working with `Vue-FusionCharts` you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
 * JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
 * JavaScript files to render maps under `js > maps` folder.
@@ -37,21 +37,17 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the `js` folder from fusioncharts-suite-xt to your project's JavaScript folder.
+> It is recommended to copy the `js` folder from the FusionCharts Suite XT download package to your project's JavaScript folder.
 
-* The download package also contains **vue-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > vue` folder. The folder structure is shown below:
+* The download package also contains files of the `Vue-FusionCharts` wrapper under `fusioncharts-suite-xt > integrations > vue`. The folder structure is shown below:
 
 ![Vue Js Folder]({% site.baseurl %}/gif/vue-folder-structure.gif)
 
 > If you are using 3.12.2 or older versions, download v3.13.0 to get the `vue` folder in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the `vue` folder from `fusioncharts-suite-xt > integrations > vue` to your project's JavaScript folder.
+> It is recommended to copy the `vue` folder from `fusioncharts-suite-xt > integrations` to your project's JavaScript folder.
 
-Installation of FusionCharts Suite XT involves copying and pasting the JavaScript files from the downloaded package into your project folder. 
-
-After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
-
-Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
+Following is the list of files present in your `fusioncharts-suite-xt` folder:
 
 File Name|Description|
 -|-
@@ -68,8 +64,13 @@ File Name|Description|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
+`vue-fusioncharts.js`|This file is the vue source file, which is required when you want to work with `Vue-FusionCharts` wrapper.|
+`vue-fusioncharts.js.map`|This file is the vue source file of maps, which is required when your want to render maps using `Vue-FusionCharts` wrapper.|
+`vue-fusioncharts.min.js`|This file is the minified source file.|
 
-In order to install, create an HTML file and follow the steps given below:
+Installation of FusionCharts Suite XT involves copying and pasting the files from the downloaded package into your project folder. 
+
+After that, you can include the file in your web applications and start building your charts, gauges, and maps. In order to include, create an HTML file and follow the steps given below:
 
 **Step 1: Include Vue core library:**
 
