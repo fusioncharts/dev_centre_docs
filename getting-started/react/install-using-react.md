@@ -41,7 +41,7 @@ The folder structure is shown below:
 
 > It is recommended that you copy the `js` folder from fusioncharts-suite-xt to your project's JavaScript folder.
 
-* The download package also contains **react-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > react` folder. This folder will also contain React-FusionCharts native Export Handlers. The folder structure is shown below:
+* The download package also contains **react-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > react` folder. The folder structure is shown below:
 
 ![React Js Folder]({% site.baseurl %}/gif/react-folder-structure.gif)
 

@@ -39,7 +39,7 @@ The folder structure is shown below:
 
 > It is recommended that you copy the `js` folder from fusioncharts-suite-xt to your project's JavaScript folder.
 
-* The download package also contains **vue-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > vue` folder. This folder will also contain Vue-FusionCharts native Export Handlers. The folder structure is shown below:
+* The download package also contains **vue-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > vue` folder. The folder structure is shown below:
 
 ![Vue Js Folder]({% site.baseurl %}/gif/vue-folder-structure.gif)
 
