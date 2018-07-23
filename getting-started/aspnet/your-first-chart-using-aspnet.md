@@ -118,7 +118,7 @@ The full code and the common aspx template for the above sample is given below:
 
     &lt;!DOCTYPE html&gt;
 
-    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;html xmlns="http://www.w3.org/1999/xhtml" &gt;
 
     &lt;head runat="server"&gt;
         &lt;title&gt;fusioncharts&lt;/title&gt;

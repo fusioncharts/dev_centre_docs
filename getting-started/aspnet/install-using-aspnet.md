@@ -39,7 +39,7 @@ The above folders will also contain FusionCharts ASP.NET's native Export Handler
 
 ![ASP.NET Folder Structure]({% site.baseurl %}/gif/aspnet-folder-structure.gif)
 
-> If you are using 3.12.2 or older versions, download v3.13.0 to get the `asp-vb` and `asp` folders in the FusionCharts Suite XT package. 
+> If you are using 3.12.2 or older versions, download v3.13.0 to get the `asp.net-vb` and `asp.net-cs` folders in the FusionCharts Suite XT package. 
 
 > It is recommended that you copy the above folders from `fusioncharts-suite-xt > integrations` to your project's JavaScript folder.
 
