@@ -195,52 +195,10 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 
 <div class="code-wrapper">
 <ul class='code-tabs'>
-  <li class='active'><a data-toggle='json'>Script Tags</a></li>
-  <li><a data-toggle='xml'>Require</a></li>
+  <li class='active'><a data-toggle='json'>Require</a></li>
+  <li><a data-toggle='xml'>Script Tags</a></li>
 </ul>
 <div class='tab-content'>
-<div class='tab json-tab active'>
-<div class="mt-10 pb-10">Install angular(1.x) package:</div>
-<pre><code class="custom-hlc language-cs">
-    npm install angular@1.7.2 --save
-</code></pre>
-<div class="mt-10 pb-10">Install fusioncharts package:</div>
-<pre><code class="custom-hlc language-cs">
-    npm install fusioncharts --save
-</code></pre>
-<div class="mt-10 pb-10">Install angularjs-fusioncharts wrapper:</div>
-<pre><code class="custom-hlc language-cs">
-    npm install angularjs-fusioncharts --save
-</code></pre>
-<div class="mt-10 pb-10">In your index.html, include all the script tags:</div>
-<pre><code class="custom-hlc language-cs">
-    &lt;script src="node_modules/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/angular/angular.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/angular-fusioncharts/dist/angular-fusioncharts.min.js"&gt;
-    &lt;/script&gt;
-</code></pre>
-<div class="mt-10 pb-10">In scripts.js, add the dependency:</div>
-<pre><code class="custom-hlc language-cs">
-    angular.module('your-app-name', ["ng-fusioncharts"]);
-</code></pre>
-<div class="pb-10">Now fusioncharts directive as a attribute as well as tag is available in your app.</div>
-<div class="mt-10 pb-10">Other required files</div>
-<div class="mt-10 pb-10">Include charts in script tag:</div>
-<pre><code class="custom-hlc language-cs">
-    &lt;script src="node_modules/fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.widgets.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.powercharts.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.gantt.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.treemap.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.zoomscatter.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.zoomline.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.overlappedbar2d.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.overlappedcolumn2d.js"&gt;&lt;/script&gt;
-</code></pre>
-
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
 <div class='tab xml-tab'>
 <div class="mt-10 pb-10">Install fusioncharts package:</div>
 <pre><code class="custom-hlc language-cv">
@@ -288,6 +246,46 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
     OverlappedBar2d(FusionCharts);
     Overlappedcolumn2d(FusionCharts);
 </code></pre> 
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+<div class='tab json-tab active'>
+<div class="mt-10 pb-10">Install angularJS package:</div>
+<pre><code class="custom-hlc language-cs">
+    npm install angular@1.7.2 --save
+</code></pre>
+<div class="mt-10 pb-10">Install fusioncharts package:</div>
+<pre><code class="custom-hlc language-cs">
+    npm install fusioncharts --save
+</code></pre>
+<div class="mt-10 pb-10">Install angularjs-fusioncharts wrapper:</div>
+<pre><code class="custom-hlc language-cs">
+    npm install angularjs-fusioncharts --save
+</code></pre>
+<div class="mt-10 pb-10">In your index.html, include all the script tags:</div>
+<pre><code class="custom-hlc language-cs">
+    &lt;script src="node_modules/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/angular/angular.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/angular-fusioncharts/dist/angular-fusioncharts.min.js"&gt;
+    &lt;/script&gt;
+</code></pre>
+<div class="mt-10 pb-10">In scripts.js, add the dependency:</div>
+<pre><code class="custom-hlc language-cs">
+    angular.module('your-app-name', ["ng-fusioncharts"]);
+</code></pre>
+<div class="pb-10">Now fusioncharts directive as a attribute as well as tag is available in your app.</div>
+<div class="mt-10 pb-10">Other required files</div>
+<div class="mt-10 pb-10">Include charts in script tag:</div>
+<pre><code class="custom-hlc language-cs">
+    &lt;script src="node_modules/fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts/fusioncharts.widgets.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts/fusioncharts.powercharts.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts/fusioncharts.gantt.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts/fusioncharts.treemap.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts/fusioncharts.zoomscatter.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts/fusioncharts.zoomline.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts/fusioncharts.overlappedbar2d.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts/fusioncharts.overlappedcolumn2d.js"&gt;&lt;/script&gt;
+</code></pre>
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
