@@ -30,13 +30,13 @@ The folder structure is shown below:
 
 > It is recommended that you copy the `js` folder from within fusioncharts-suite-xt to your project's JavaScript folder.
 
-* The download package also contains **php-fusioncharts.php** file under `fusioncharts-suite-xt > integrations > serverside-extensions > php` folder. This folder will also contain PHP-FusionCharts native Export Handlers. The folder structure is shown below:
+* The download package also contains **php-fusioncharts.php** file under `fusioncharts-suite-xt > integrations > php` folder. This folder will also contain PHP-FusionCharts native Export Handlers. The folder structure is shown below:
 
 ![PHP Js Folder]({% site.baseurl %}/gif/php-folder-structure.gif)
 
 > If you are using 3.12.2 or older versions, download v3.13.0 to get the `php` folder in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the `php` folder from within `fusioncharts-suite-xt > integrations > serverside-extensions > php` to your project's JavaScript folder.
+> It is recommended that you copy the `php` folder from within `fusioncharts-suite-xt > integrations > php` to your project's JavaScript folder.
 
 Installation of FusionCharts Suite XT involves copying and pasting the JavaScript files from the downloaded package into your project folder.
 

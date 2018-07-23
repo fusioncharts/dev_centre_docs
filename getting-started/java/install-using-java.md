@@ -30,13 +30,13 @@ The folder structure is shown below:
 
 > It is recommended that you copy the `js` folder from within fusioncharts-suite-xt to your project's JavaScript folder.
 
-* The download package also contains **jsp-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > serverside-extensions > jsp` folder. This folder will also contain JSP-FusionCharts native Export Handlers. The folder structure is shown below:
+* The download package also contains **jsp-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > jsp` folder. This folder will also contain JSP-FusionCharts native Export Handlers. The folder structure is shown below:
 
 ![JSP Js Folder]({% site.baseurl %}/gif/jsp-folder-structure.gif)
 
 > If you are using 3.12.2 or older versions, download v3.13.0 to get the `jsp` folder in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the `jsp` folder from within `fusioncharts-suite-xt > integrations > serverside-extensions > jsp` to your project's JavaScript folder.
+> It is recommended that you copy the `jsp` folder from within `fusioncharts-suite-xt > integrations > jsp` to your project's JavaScript folder.
 
 Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the downloaded package into your project folder.
 
