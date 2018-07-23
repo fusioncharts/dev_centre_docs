@@ -31,9 +31,9 @@ The folder structure is shown below:
 
 > It is recommended that you copy the `js` folder from fusioncharts-suite-xt to your project's JavaScript folder.
 
-* The download package also contains **.aspx.vb** file under `fusioncharts-suite-xt > integrations > asp-vb` folder.
+* The download package also contains **.aspx.vb** file under `fusioncharts-suite-xt > integrations > asp.net-vb` folder.
 
-* The download package also contains **.aspx.cs** file under `fusioncharts-suite-xt > integrations > asp` folder. 
+* The download package also contains **.aspx.cs** file under `fusioncharts-suite-xt > integrations > asp.net-cs` folder. 
 
 The above folders will also contain FusionCharts ASP.NET's native Export Handlers. The folder structure is shown below:
 
@@ -65,7 +65,7 @@ File Name|Description|
 
 To add any of the files in your project, drag and drop the file in `App_Code` folder inside your project.
 
-> You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. `FusionCharts.dll` is present in `asp.net-cs-wrapper/Bin` folder or `asp.net-vb-wrapper/DLLFile`.
+> You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. `FusionCharts.dll` is present in `asp/Bin` folder or `asp-vb/DLLFile`.
 
 That completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet '@@open-newtab').
 
