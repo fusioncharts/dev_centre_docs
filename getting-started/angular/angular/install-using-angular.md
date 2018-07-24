@@ -103,7 +103,7 @@ To include the **map definition** file you want to render, copy the following li
 import * as World from 'fusioncharts/maps/fusioncharts.world' // World Map
 ```
 
-## Include Themes via npm
+## Include Themes via **npm**
 
 Themes shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
 
@@ -126,7 +126,7 @@ import * as Ocean from 'fusioncharts/themes/fusioncharts.theme.ocean';
 import * as Carbon from 'fusioncharts/themes/fusioncharts.theme.carbon';
 ```
 
-> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion`. To add any other theme to your chart, include its corresponding JavaScript file to your project and set the theme attribute to the correct name. Which could be `zune`, `carbon`, `ocean`.
+> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion`. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
 
 ## Add Dependencies to the Environment
 

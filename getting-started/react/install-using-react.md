@@ -183,7 +183,7 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion`. To add any other theme to your chart, include its corresponding JavaScript file to your project and set the theme attribute to the correct name. Which could be `zune`, `carbon`, `ocean`.
+> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion`. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
 
 ## Install FusionCharts via npm
 
@@ -554,7 +554,7 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion`. To add any other theme to your chart, include its corresponding JavaScript file to your project and set the theme attribute to the correct name. Which could be `zune`, `carbon`, `ocean`.
+> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion`. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
 
 You can include the themes via **ES5** using any of the following process:
 
