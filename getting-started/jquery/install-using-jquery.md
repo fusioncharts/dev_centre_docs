@@ -25,8 +25,8 @@ You can use FusionCharts in your jquery project using any of the two modes given
 
 <table>
     <tr>
-        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/jquery/install-using-jquery#install-using-direct-javascript-files-2)</td>
-        <td align="center">[NPM]({% site.baseurl %}/getting-started/jquery/install-using-jquery#install-fusioncharts-via-npm-5)</td>
+        <td align="center" style="border: none !important; background-color:#f3f6f9"><a href="{% site.baseurl %}/getting-started/jquery/install-using-jquery#install-using-direct-javascript-files-2"><img width="100px" height="100px" src="{% site.baseurl %}/images/Icons_JS.svg"></a></td>
+        <td align="center" style="border: none !important; background-color:#f3f6f9"><a href="{% site.baseurl %}/getting-started/jquery/install-using-jquery#install-fusioncharts-via-npm-5"><img width="100px" height="100px" src="{% site.baseurl %}/images/Icons_NPM.svg"></a></td>
     </tr>
 </table>
 

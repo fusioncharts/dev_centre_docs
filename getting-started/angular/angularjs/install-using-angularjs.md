@@ -17,8 +17,8 @@ You can install FusionCharts in your angularjs project using any of the two mode
 
 <table>
     <tr>
-        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/angular/angularjs/install-using-angularjs#install-using-direct-javascript-files-2)</td>
-        <td align="center">[npm]({% site.baseurl %}/getting-started/angular/angularjs/install-using-angularjs#install-fusioncharts-via-npm-8)</td>
+        <td align="center" style="border: none !important; background-color:#f3f6f9"><a href="{% site.baseurl %}/getting-started/angular/angularjs/install-using-angularjs#install-using-direct-javascript-files-2"><img width="100px" height="100px" src="{% site.baseurl %}/images/Icons_JS.svg"></a></td>
+        <td align="center" style="border: none !important; background-color:#f3f6f9"><a href="{% site.baseurl %}/getting-started/angular/angularjs/install-using-angularjs#include-fusioncharts-via-npm-8"><img width="100px" height="100px" src="{% site.baseurl %}/images/Icons_NPM.svg"></a></td>
     </tr>
 </table>
 
@@ -186,7 +186,7 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 
 > Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion`. To add any other theme to your chart, include its corresponding JavaScript file to your project and set the theme attribute to the correct name. Which could be `zune`, `carbon`, `ocean`.
 
-## Install FusionCharts via **npm**
+## Include FusionCharts via **npm**
 
 Now, let's discuss how to install the `fusioncharts` module via **npm**. The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
 
