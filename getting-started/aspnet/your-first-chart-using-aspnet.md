@@ -125,8 +125,8 @@ The full code and the common aspx template for the above sample is given below:
     &lt;/head&gt;
 
     &lt;body&gt;
-        &lt;script type="text/javascript" src="fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
         &lt;div style="text-align:center"&gt;
             &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
         &lt;/div&gt;
@@ -214,8 +214,8 @@ The full code and the common aspx template for the above sample is given below:
     &lt;/head&gt;
 
     &lt;body&gt;
-        &lt;script type="text/javascript" src="fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
         &lt;form id="form1" runat="server"&gt;
             &lt;div&gt;
                 &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
@@ -542,8 +542,8 @@ The full code for the above sample is given below:
     &lt;/head&gt;
 
     &lt;body&gt;
-        &lt;script type="text/javascript" src="fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
         &lt;div style="text-align:center"&gt;
             &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
         &lt;/div&gt;
@@ -659,8 +659,8 @@ The full code for the above sample is given below:
     &lt;/head&gt;
 
     &lt;body&gt;
-        &lt;script type="text/javascript" src="fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
         &lt;form id="form1" runat="server"&gt;
             &lt;div&gt;
                 &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
@@ -806,6 +806,8 @@ Europe|EU|40|
 Africa|AF|2.58|
 Australia|AU|1.30|
 
+> In the above table, the column **Entity Name** represents the geographical entities represnted in the map, whose full names are given in the **State** column in this example. However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id`s of the map you want to create.
+
 ### Convert tabular data into JSON/XML format
 
 Now that you have the tabular data ready, it's time to convert it into JSON/XML format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
@@ -871,8 +873,8 @@ The full code for the above sample is given below:
     &lt;/head&gt;
 
     &lt;body&gt;
-        &lt;script type="text/javascript" src="fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
         &lt;div style="text-align:center"&gt;
             &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
         &lt;/div&gt;
@@ -1016,8 +1018,8 @@ The full code for the above sample is given below:
     &lt;/head&gt;
 
     &lt;body&gt;
-        &lt;script type="text/javascript" src="fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
         &lt;form id="form1" runat="server"&gt;
             &lt;div&gt;
                 &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
@@ -1196,6 +1198,8 @@ See the complete list of [all possible attributes]({% site.baseurl %}/maps/attri
 ## Problem rendering the chart?
 
 In case something went wrong, and you are unable to see the chart, check for the following:
+
+* If you don't see the chart getting rendered on the browser, it might be because some browsers does not allow JavaScript files to be loaded and run from the local filesystem. In such cases, either try with a different browser, or create a local/remote server and server the webpages containing the charts from the server.
 
 * If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
 

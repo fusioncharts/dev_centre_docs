@@ -1,7 +1,7 @@
 ---
 title: Your First Chart using FusionCharts and Plain JS | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the plain javascript.
-heading: Your First Chart using FusionCharts
+heading: Your First Chart using FusionCharts  and Plain JS
 chartPresent: false
 ---
 

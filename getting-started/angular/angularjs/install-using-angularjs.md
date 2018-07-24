@@ -5,8 +5,6 @@ heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes an extensive range of charts, gauges, and maps that you can use to plot all types of static and real-time data.
-
 The `angularjs-fusioncharts` wrapper **(Angular 1)**, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single AngularJS component.
 
 In this article, we will show you how you can download and install the `angularjs-fusioncharts` wrapper and all the other dependencies on your system. 
