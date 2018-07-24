@@ -17,9 +17,11 @@ Some of the basic features of jQuery plugin are:
 * Customize the look and feel of all elements on the chart.
 * Plot charts from data contained in HTML tables.
 
-In this article, we will show you how you can download and install the `jQuery helper` and all the other dependencies on your system. You can use FusionCharts in your jquery project using any of the two modes given below:
+In this article, we will show you how you can download and install the `jQuery helper` and all the other dependencies on your system. 
 
 ## Choose your mode of installation:
+
+You can use FusionCharts in your jquery project using any of the two modes given below:
 
 <table>
     <tr>

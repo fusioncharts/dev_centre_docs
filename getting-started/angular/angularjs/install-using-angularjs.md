@@ -11,9 +11,9 @@ The `angularjs-fusioncharts` wrapper **(Angular 1)**, along with FusionCharts Su
 
 In this article, we will show you how you can download and install the `angularjs-fusioncharts` wrapper and all the other dependencies on your system. 
 
-You can install FusionCharts in your angularjs project using any of the two modes given below:
-
 ## Choose your mode of installation:
+
+You can install FusionCharts in your angularjs project using any of the two modes given below:
 
 <table>
     <tr>

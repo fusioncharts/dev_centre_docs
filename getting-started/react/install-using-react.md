@@ -16,9 +16,11 @@ The **React-FusionCharts** component lets you include **FusionCharts** in your *
     - XML
     - An URI pointing to a file containing JSON/XML data. However, each chart/map expects data to be formatted in a specific manner, and the data you provide must comply with the required format.
 
-In this article, we will show you how you to download and install the React-FusionCharts component and all the other dependencies on your system. You can use FusionCharts in your React project using any of the two modes given below:
+In this article, we will show you how you to download and install the React-FusionCharts component and all the other dependencies on your system. 
 
 ## Choose your mode of installation:
+
+You can use FusionCharts in your React project using any of the two modes given below:
 
 <table>
     <tr>
