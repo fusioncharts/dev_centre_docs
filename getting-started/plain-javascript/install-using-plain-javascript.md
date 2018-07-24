@@ -67,7 +67,7 @@ In order to install, create an HTML file and follow the steps given below:
 **Step 2: Include the theme file:**
 
 ```html
-<script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
+<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
 The consolidated code is shown below:
@@ -78,7 +78,7 @@ The consolidated code is shown below:
     <title>FusionCharts</title>
     <!-- FusionCharts -->
     <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-    <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 </head>
 ```
 
@@ -124,13 +124,6 @@ For some chart types, you need to include/exclude certain files and in a specifi
 <script src = "path/to/local/fusioncharts/fusioncharts.treemap.js"> </script>
 ```
 
-* To render the SS Grid chart only the **fusioncharts.js** and the **fusioncharts.ssgrid.js** files are needed.
-
-```html
-<script src = "path/to/local/fusioncharts/fusioncharts.js"> </script>  
-<script src = "path/to/local/fusioncharts/fusioncharts.ssgrid.js"> </script>
-```
-
 * To render the Gantt chart only the **fusioncharts.js** and the **fusioncharts.gantt.js** files are needed.
 
 ```html
@@ -161,25 +154,27 @@ For some chart types, you need to include/exclude certain files and in a specifi
 
 ### Installing FusionMaps (map visualizations) for your project
 
-FusionCharts can provide more than 1000 maps that cater to all your map visualization requirements. But to keep the library lightweight, by default it ships only with two maps - the **world** map, and the **map of the USA**. To render rest of the maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files and include them in to your HTML as shown below:
+FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. To render a map, you need the FusionMaps library, included in this package, and map definition file (which contains rendering path for each country, state, region etc.). 
+
+In this zip file, you’ll find only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files here, when you need to plot maps of those countries/regions.
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
-```html
+To render a map using FusionCharts, you first need to include `fusioncharts.maps.js` and then the relevant map definition file, as below.
+
 <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-<script type="text/javascript" src="path/to/local/fusioncharts.world.js"></script>
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
 
-<!-- The next line describes the format for more map definition files -->
-<script type="text/javascript" src="path/to/local/[MAP_ALIAS].js"></script>
-```
+In the above example, we’ve include the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
 
-The `fusioncharts.world.js` file includes path drawings of the map of **world**.
+To use another map from the 1000+ maps, once you’ve downloaded the map definition files, copy those map files to your current `/maps` folder. The map definition files are named in the format `[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. Then you’ll need to include that map file as under:
 
-Replace **MAP_ALIAS** by the map's JavaScript alias. Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. Include map definition files for all maps to render in the application.
+<script type="text/javascript" src="path/to/local/maps/[MAP_ALIAS].js"></script>
+
+Click here to explore all the maps available in FusionMaps XT.
 
 The consolidated code looks like as shown below:
 
-```html
 <head>
     <meta charset="utf-8">
     <title>FusionCharts</title>
@@ -188,9 +183,8 @@ The consolidated code looks like as shown below:
     <!-- FusionMaps -->
     <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
     <!--world -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.world.js"></script>
+    <script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
 </head>
-```
 
 ### Themes
 
@@ -289,28 +283,7 @@ Using `<script></script>` tags in the head of HTML file:
 
 If you have installed `fusionmaps` and is about to use it in your project, most likely it is because your map visualization requirements are not fulfilled by the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package by default.
 
-However, to be able to include the map-specific definition files, you must include the module `fusioncharts.maps.js`
-
-Using `require()`:
-
-```javascript
-require('path/to/local/node_modules/fusionmaps');
-```
-
-Using `import` statements:
-
-```javascript
-import FusionMaps from 'path/to/local/node_modules/fusionmaps');
-```
-
-Using `<script></script>` tags in the head of HTML file:
-
-```html
-<script src="path/to/local/node_modules/fusionmaps/fusioncharts.maps.js"></script>
-```
-> We don't recommend this method if you installed the package using `npm`.
-
-**Step 4: Load Map Definition Files**
+However, to be able to include the map-specific definition files, you must include the module `fusioncharts.maps.js`.
 
 Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.
 
@@ -318,23 +291,27 @@ Replace **MAP_ALIAS** by the map's JavaScript alias. Click [here](https://www.fu
 
 Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. You can do it using any one of the following three methods:
 
-Using `require()`:
+**Using `require()`:**
 
 ```javascript
+require('path/to/local/node_modules/fusionmaps');
 require('path/to/local/node_modules/fusionmaps/maps/fusioncharts.california.js');
 ```
 
-Using `import` statements:
+**Using `import` statements:**
 
 ```javascript
-import California from 'path/to/local/node_modules/fusionmaps/maps/fusioncharts.california.js');
+import FusionMaps from 'path/to/local/node_modules/fusionmaps';
+import California from 'path/to/local/node_modules/fusionmaps/maps/fusioncharts.california.js';
 ```
 
-Using `<script></script>` tags in the head of HTML file:
+**Using `<script></script>` tags in the head of HTML file:**
+
+> We don't recommend this method if you installed the package using `npm`.
 
 ```html
+<script src="path/to/local/node_modules/fusionmaps/fusioncharts.maps.js"></script>
 <script src="path/to/local/node_modules/fusionmaps/fusioncharts.california.js"></script>
 ```
-> We don't recommend this method if you installed the package using `npm`.
 
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are fetched from there.
