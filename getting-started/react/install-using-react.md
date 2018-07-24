@@ -169,23 +169,21 @@ Themes shipped with FusionCharts Suite XT allows you to create centralized theme
 In a theme file, you can centrally customize the following aspects of a chart, gauge, or map:
 
 * Visual appearance (data plot color, font color, font size, etc.)
-
 * Behavior (hover effects for data plots)
-
 * Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme)
 
 The FusionCharts Suite download package also contains the predefined theme files under `fusioncharts-suite-xt > js > themes` folder. The folder structure is shown below:
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
-> To include a theme to your chart, include its corresponding JavaScript file in your HTML page for that theme as shown in the code below:
+To include a theme to your chart, include its corresponding JavaScript file in your HTML page for that theme as shown in the code below:
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-The `fusioncharts.theme.fusion.js` file sets the theme as fusion.
+> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion`. To add any other theme to your chart, include its corresponding JavaScript file to your project and set the theme attribute to the correct name. Which could be `zune`, `carbon`, `ocean`.
 
 ## Install FusionCharts via npm
 
