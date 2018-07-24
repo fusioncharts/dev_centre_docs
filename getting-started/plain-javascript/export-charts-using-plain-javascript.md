@@ -1,304 +1,67 @@
 ---
-permalink: getting-started/plain-javascript/export-charts-using-plain-javascript.html
 title: Exporting Charts | FusionCharts
 description: This article focuses on how you can export your chart using plain javascript.
 heading: Exporting Charts
 chartPresent: true
 ---
 
-VueJS is a progressive JavaScript framework for building user interfaces. So far, we’ve seen how you can create a simple chart using the vue-fusioncharts component as well as how you can add advanced configurations for your charts. 
+FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG and VML. A prominent feature of the suite is the ability to export the rendered charts in the JPG, PNG, SVG, PDF formats and export chart data aswell.
 
-In this article, we’ll look at how you can use the VueJS and FusionCharts binding to include interactivity in the charts. 
+In this section we will discuss how to:
 
-Let's say Harry has a dashboard with a pie2d and a column2d chart to plot sales data. The pie 2D chart plots collective sales for the retail and wholesale stores; the column 2D chart plots sales for individual stores. Harry wants his charts to be interactive in a way that when the pie slice representing retail stores is clicked, the column 2D chart shows data only for all retail stores, and likewise for the wholesale stores.
+* Export Charts as Image and PDF
+* Export Chart Data
 
-The dashboard looks like as shown below:
+## Export Charts as Image and PDF
 
-{% embed_chart using-with-javascript-libraries-reactjs-including-interactivity-in-charts-using-vuejs-example-1.js %}
+The export is done using a server-side helper library that converts the SVG to the required format. VML can also be exported as it is converted to SVG internally before exporting. During the export process, the data to be exported is sent to the FusionCharts servers for processing and generating the output in the required format.
 
->  The complete code for this dashboard is given at the end of this article, after all steps have been explained. </p>
+When charts are exported on the client side, the entire exporting process is carried out using the user’s browser. The chart’s SVG is converted into the selected export format and download using the HTML5 `download` attribute.
 
-The following three steps describe in detail, with code samples, how you can establish data interactivity between charts:
+>  You must have an active internet connection for this feature to work. </p>
 
-### Step 1: Creating the data
+To enable chart exporting, the `chart` level attribute `exportEnabled` is set to __1__. The <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button is then visible in the top-right corner of the chart. Click/hover over this menu button to see the dropdown menu with the export options, as shown in the image below:
 
-The data we want to showcase in the dashboard can be in any format. FusionCharts supports the JSON and XML data formats; for our sample, we’ll use data in the JSON format, as given below:
+![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-menu.jpg)
 
-```javascript
-var completeData = [{
-        label: "Bakersfield Central",
-        category: "Retail",
-        value: "880000",
-        city: "NYC"
-    },
-    {
-        label: "Garden Groove harbour",
-        category: "General",
-        value: "730000",
-        city: "London"
-    },
-    {
-        label: "Los Angeles Topanga",
-        value: "590000",
-        category: "Retail",
-        city: "NYC"
-    },
-    {
-        label: "Compton-Rancho Dom",
-        value: "520000",
-        category: "Retail",
-        city: "NYC"
-    },
-    {
-        label: "Daly City Serramonte",
-        value: "330000",
-        category: "General",
-        city: "Mumbai"
-    }
-];
+From the menu rendered, select the required format; the chart is downloaded to your machine in the selected format.
 
-/** Column Chart's 'dataSource' **/
-var revenueChartDataSource = {
-    chart: {
-        caption: "Harry's SuperMart",
-        subCaption: "Top 5 stores in last month by revenue",
-        theme: "fint"
-    },
-    data: completeData
-};
+A column 2D chart with export enabled is shown below. Click the <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button and select a format to export the chart.
 
-/** Pie Chart's 'dataSource' **/
-var categoryChartDataSource = {
-    chart: {
-        caption: "Categories of Harry's SuperMart",
-        theme: "fint",
-        enablemultislicing: "0"
-    },
-    data: [{
-            label: "General",
-            value: 0
-        },
-        {
-            label: "Retail",
-            value: 0
-        }
-    ]
-};
+{% embed_all exporting-as-image-and-pdf-introduction-example-1.js %}
 
-/** Building data for Pie Chart based on the category of the mart stores **/
-for (var i = 0, len = completeData.length; i < len; i++) {
-    if (completeData[i].category === "General") {
-        categoryChartDataSource.data[0].value += 1;
-    } else {
-        categoryChartDataSource.data[1].value += 1;
-    }
-}
-```
+### Modes of Export
 
-### Step 2: Defining an Event’s Behavior for a Filter
+FusionCharts Suite XT supports the following three modes of export:
 
-Next, we’ll configure the `slicingStart` event to be triggered when a pie slice is clicked and the slice starts __slicing out__. In response to the event being triggered, the column chart will be re-rendered to show data only for the store type corresponding to the pie slice clicked. 
+* Server-side export
+* Client-side export
+* Auto export
 
-The code to do this is given below:
+By default, charts are exported using the auto export feature. 
 
-```javascript
-var revenueChartOptions = {
-    /** FusionCharts Configs **/
-};
+The `exportMode` attribute is used to switch betwen the modes of export.
 
-function handleUserInput(filterValue) {
-    if (filterValue.length !== 0) {
-        const rows = [];
-        completeData.forEach(function(mart) {
-            if (mart.category === filterValue) {
-                rows.push(mart);
-            }
-        });
-        return rows;
-    } else {
-        return completeData;
-    }
-}
+>  Starting v3.12.1, the `exportMode` attribute __replaces__ the `exportAtClientSide` attribute. </p>
 
-var categoryChartOptions = {
+The subsequent articles in this section cover the features of each export mode and the `exportMode` attribute in detail.
 
-    /** FusionCharts Configs **/
+>  To process the export data on your own server, you can configure one of the export handlers by following the [Setup Private Export Server]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net '@@open-newtab') guide. </p>
 
-    events: {
+## Export Chart Data
 
-        /***
-         ** Slicing event of Pie Chart
-         ***/
-        slicingStart: function(evtObj, argObj) {
-            if (!argObj.slicedState) {
-                revenueChartOptions.dataSource.data = handleUserInput(argObj.data.categoryLabel);
-            } else {
-                revenueChartOptions.dataSource.data = handleUserInput('');
-            }
-        }
-    }
-};
-```
+FusionCharts lets you export the rendered charts in the JPG, PNG, SVG, and PDF formats. Starting v3.11.0, FusionCharts Suite XT introduces exporting chart data in the XLS format (as an Excel spreadsheet).
 
-### Step 3: Render the chart
+To enable chart exporting, the chart level attribute `exportEnabled` is set to __1__. The <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button is then visible in the top-right corner of the chart. Click/hover over this menu button to see the dropdown menu with the export options, as shown in the image below:
 
-The HTML code to create the sample is given below:
+![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-menu.jpg)
 
-```html
-<div id="app">
-    <fusioncharts :options="categoryChartOptions"></fusioncharts>
-    <br/>
-    <br/>
-    <fusioncharts :options="revenueChartOptions"></fusioncharts>
-</div> 
-```
+To export chart data, select the __Export as XLS__ option. The XLS file with the chart data gets downloaded to your machine.
 
-The VueJS code for the sample chart is given below:
+A column 2D chart with export enabled is shown below. Click the <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> menu button and select the __Export as XLS__ option to export the chart data.
 
-```javascript
-Vue.use(VueFusionCharts);
+{% embed_all exporting-as-image-and-pdf-introduction-example-2.js %}
 
-const app = new Vue({
-    el: '#app',
-    data: {
-        revenueChartOptions: revenueChartOptions,
-        categoryChartOptions: categoryChartOptions
-    }
-});
-```
+> To export a chart in the XLS format using server-side exporting, it is mandatory that the exporting server has the latest code, which is available in the FusionCharts package. Alternatively, the FusionCharts export link, `export.api3.fusioncharts.com`, can also be used. For client-side exporting, the exporting chart data feature is supported only by modern browsers with canvas support (except Safari and IE9).
 
-The complete source code to render the above dashboard is given below:
-
-```javascript
-var completeData = [{
-        label: "Bakersfield Central",
-        category: "Retail",
-        value: "880000",
-        city: "NYC"
-    },
-    {
-        label: "Garden Groove harbour",
-        category: "General",
-        value: "730000",
-        city: "London"
-    },
-    {
-        label: "Los Angeles Topanga",
-        value: "590000",
-        category: "Retail",
-        city: "NYC"
-    },
-    {
-        label: "Compton-Rancho Dom",
-        value: "520000",
-        category: "Retail",
-        city: "NYC"
-    },
-    {
-        label: "Daly City Serramonte",
-        value: "330000",
-        category: "General",
-        city: "Mumbai"
-    }
-];
-
-/** Column Chart's 'dataSource' **/
-var revenueChartDataSource = {
-    chart: {
-        caption: "Harry's SuperMart",
-        subCaption: "Top 5 stores in last month by revenue",
-        theme: "fint"
-    },
-    data: completeData
-};
-
-/** Pie Chart's 'dataSource' **/
-var categoryChartDataSource = {
-    chart: {
-        caption: "Categories of Harry's SuperMart",
-        theme: "fint",
-        enablemultislicing: "0"
-    },
-    data: [{
-            label: "General",
-            value: 0
-        },
-        {
-            label: "Retail",
-            value: 0
-        }
-    ]
-};
-
-/** Building data for Pie Chart based on the category of the mart stores **/
-for (var i = 0, len = completeData.length; i < len; i++) {
-    if (completeData[i].category === "General") {
-        categoryChartDataSource.data[0].value += 1;
-    } else {
-        categoryChartDataSource.data[1].value += 1;
-    }
-}
-
-var revenueChartOptions = {
-    width: 500,
-    height: 300,
-    type: "column2d",
-    dataFormat: "json",
-    dataSource: revenueChartDataSource
-};
-
-function handleUserInput(filterValue) {
-    if (filterValue.length !== 0) {
-        const rows = [];
-        completeData.forEach(function(mart) {
-            if (mart.category === filterValue) {
-                rows.push(mart);
-            }
-        });
-        return rows;
-    } else {
-        return completeData;
-    }
-}
-
-var categoryChartOptions = {
-    width: 500,
-    height: 300,
-    type: "pie2d",
-    dataFormat: "json",
-    dataSource: categoryChartDataSource,
-
-    events: {
-        /** Slicing event of Pie Chart **/
-        slicingStart: function(evtObj, argObj) {
-            if (!argObj.slicedState) {
-                revenueChartOptions.dataSource.data = handleUserInput(argObj.data.categoryLabel);
-            } else {
-                revenueChartOptions.dataSource.data = handleUserInput('');
-            }
-        }
-    }
-};
-
-Vue.use(VueFusionCharts);
-
-const app = new Vue({
-    el: '#app',
-    data: {
-        revenueChartOptions: revenueChartOptions,
-        categoryChartOptions: categoryChartOptions
-    }
-});
-```
-
-## Was there a problem rendering the chart?
-
-In case something went wrong and you are unable to see the chart, check for the following:
-
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
-
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if fusioncharts.js was loaded. Check if the path to fusioncharts.js file is correct, and whether the file exists in that location.
-
-* If you get a Loading Data or Error in loading data message, check whether your JSON data structure is correct, and there are no conflicts related to quotation marks in your code.
-
-Click here for more information on [Troubleshooting](https://www.fusioncharts.com/dev/troubleshooting/debugger.html)
+> To process the export data on your own server, you can configure one of the export handlers by following the [Setup Private Export Server](/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net) guide.

@@ -1,354 +1,431 @@
 ---
-permalink: getting-started/plain-javascript/add-drill-down-using-plain-javascript.html
 title: Adding Drill Down | FusionCharts
 description: This article focuses on drill down charts.
 heading: Adding Drill Down
 chartPresent: true
 ---
 
-The following examples use the vue-fusioncharts component to create and configure charts in VueJS application.
+In FusionCharts, you can create unlimited levels of drill-down charts with a single data source. The parent chart contains all chart data—for the parent chart as well as all levels of descendant (child, grandchild) charts. The links to all descendant charts are also defined in the parent chart.
 
-This article talks about how you can:
+You can drill-down into the descendant charts by clicking the data plot items of the parent chart. The descendant charts can either replace the parent chart, with an option to drill-up, or they can open in new windows or frames.
 
-* <a href="/using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component#create-a-simple-chart-using-the-vue-fusioncharts-component" class="smoth-scroll">Create a simple chart using the Vue-FusionCharts component</a>
+Create linked charts by following the steps given below:
 
-* <a href="/using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component#provide-chart-attributes-using-separate-objects" class="smoth-scroll">Provide chart attributes using separate objects</a>
+1. Create the JSON/XML data for the parent chart. This is called the parent data source.
 
-* <a href="/using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component#fetch-chart-data-from-an-external-file" class="smoth-scroll">Fetch chart data from an external file</a>
+2. Append the data string or the data URL for the descendant charts within the parent data source. If you append the data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
 
+Once you implement the steps above, the FusionCharts JavaScript class takes care of the rest.
 
-## Create a simple chart using the vue-fusioncharts component
+### Features of the FusionCharts JavaScript Class
 
-To create charts, the vue-fusioncharts component can be passed as a part of another VueJs component.
+* It automatically creates and shows a detailed descendant chart, when you click on the corresponding data plot item link in the parent chart.
 
-Take a look at the column 2D chart shown below:
+* It clones all chart configuration settings from the parent chart to create the descendant charts.
 
-{% embed_chart using-with-javascript-libraries-vuejs-creating-charts-using-the-vue-fusioncharts-component-example-1.js %}
+* It accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods.html#configureLink) function.
 
-The chart data will be passed as shown below:
+* It uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed.
 
-```javascript
-var myDataSource = {
-    chart: {
-        caption: "Harry's SuperMart",
-        subCaption: "Top 5 stores in last month by revenue",
-        numberPrefix: "$",
-        theme: "fint"
+* It supports drill-down to an unlimited number of levels.
+
+As an example here, we will consider a simple scenario of a parent chart with the single level of drill-down.
+
+The parent chart is a column 2D chart that shows the yearly sales of the top three juice flavors, for the last year. When you click on the data plot for a particular flavor of juice, it drills-down to show a descendant column 2D chart that shows the quarterly sales figures for that flavor.
+
+The above chart, when rendered, looks like the following:
+
+{% embed_chart chart-configurations-drill-down-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/wvpzfz5g/ "@@open-newtab") to edit the above chart.
+
+### Create linked charts using Data URL method
+
+Specify the `link` attribute (which belongs to the data object) for each data plot, to link charts using the data URL method. Every time you click on a data plot, the corresponding linked chart will be rendered. 
+
+The syntax for the link attribute is:
+
+```json
+{
+    "chart": {
+        "link": "newchart-dataformat-datasource"        
+    }
+}
+```
+
+The above chart, when rendered, looks like the following:
+
+{% embed_chart chart-configurations-drill-down-example-7.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/v76phqq5/ "@@open-newtab") to edit the above chart.
+
+Here, newchart is constant.For the data URL method, assign `jsonurl` (if the data for the descendant chart is in a .json file) or `xmlurl` (if the data for the descendant chart is in a .xml file) as the value of `dataformat`. Specify the URL of the .json/.xml file as the value of the `datasource` attribute.
+
+The data structure needed to render the parent chart given above using the data URL method is given below:
+
+```json
+{
+    "chart": {
+        "caption": "Top 3 Juice Flavors",
+        "subcaption": "Last year",
+        "xaxisname": "Flavor",
+        "yaxisname": "Amount (In USD)",
+        "numberprefix": "$",
+        "theme": "fint",
+        "plottooltext": "$label, $dataValue,  $percentValue"
     },
-    data: [{
-        label: "Bakersfield Central",
-        value: "880000"
+    "data": [{
+        "label": "Apple",
+        "value": "810000",
+        "link": "newchart-jsonurl-apple.json"
     }, {
-        label: "Garden Groove harbour",
-        value: "730000"
+        "label": "Cranberry",
+        "value": "620000",
+        "link": "newchart-jsonurl-cranberry.json"
     }, {
-        label: "Los Angeles Topanga",
-        value: "590000"
+        "label": "Grapes",
+        "value": "350000",
+        "link": "newchart-jsonurl-grapes.json"
+    }]
+}
+```
+From the data shown above, you can understand that when the user clicks the first data plot, the chart sources the data to render the subsequent linked chart from the **apple.json** file. Similarly, when you click on the other two data plots, the chart renders the respective linked charts from the data are given in the cranberry.json and grapes.json files.
+
+The **apple.json** file contains the data to plot a column 2D chart showing the quarterly sales figures of apple juice for the last year. The data structure for the **apple.json** file is given below:
+
+```json
+{
+    "chart": {
+        "caption": "Apple Juice - Quarterly Sales",
+        "subcaption": "Last year",
+        "numberprefix": "$",
+        "theme": "fint",
+        "plottooltext": "$label, $dataValue,  $percentValue"
+    },
+    "data": [{
+        "label": "Q1",
+        "value": "157000"
     }, {
-        label: "Compton-Rancho Dom",
-        value: "520000"
+        "label": "Q2",
+        "value": "172000"
     }, {
-        label: "Daly City Serramonte",
-        value: "330000"
+        "label": "Q3",
+        "value": "206000"
+    }, {
+        "label": "Q4",
+        "value": "275000"
     }]
 }
 ```
 
-To render a chart by passing VueJS component, copy the following code:
+Similarly, the cranberry.json and the grapes.json files contain the data to plot column 2D charts showing the quarterly sales figures for the cranberry juice and grape juice, respectively.
 
-```javascript
-Vue.use(VueFusionCharts);
-
-const app = new Vue({
-  el: '#app',
-  data: {
-    type: 'column2d',
-    width: '600',
-    height: '400',
-    dataFormat: 'json',
-    dataSource: myDataSource
-  }
-});
-```
-
-The HTML template for the above sample is:
+If you are using XML data for the chart, refer to the data structure for the parent chart given below:
 
 ```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
-</div>
+<chart caption="Top 3 Juice Flavors" subcaption="Last year" xaxisname="Flavor" yaxisname="Amount (In USD)" numberprefix="$" theme="fint" plottooltext="$label, $dataValue,  $percentValue" animation="0">
+
+<set label="Apple" value="810000" link="newchart-xmlurl-apple.xml" />
+<set label="Cranberry" value="620000" link="newchart-xmlurl-cranberry.xml" />
+<set label="Grapes" value="350000" link="newchart-xmlurl-grapes.xml" />
+</chart>
 ```
 
-## Provide chart attributes using separate objects
+Similarly, the data structure for the **apple.xml** file is given below:
 
-An alternate way to create charts using the Vue-FusionCharts component is by creating separate objects for the chart, categories, and dataset configurations. Separate objects are useful when we want to create a chart using more than one dataset, which can be a multi-series or a combination chart.
+```html
+<chart caption="Apple Juice - Quarterly Sales" subcaption="Last year" numberprefix="$" theme="fint" plottooltext="$label, $dataValue,  $percentValue">
 
-Take a look at the combination chart shown below:
+<set label="Q1" value="157000" />
+<set label="Q2" value="172000" />
+<set label="Q3" value="206000" />
+<set label="Q4" value="275000" />
+</chart>
+```
 
-{% embed_chart using-with-javascript-libraries-vuejs-creating-charts-using-the-vue-fusioncharts-component-example-2.js %}
+Likewise, you can create the **cranberry.xml** and the **grapes.xml** files to create linked charts.
 
-The code to render the above chart, is given below:
+### Create linked charts using data string method
 
-```javascript
-var myDataSource = {
+For the data string method, `dataformat` accepts either `json` (if the JSON data for the descendant chart is embedded inside the parent chart data) or `xml` (if the XML data for the descendant chart is embedded inside parent chart data) as values. `datasource` takes the value of the unique identifier that refers to the data embedded inside the `linkeddata` array (which in turn contains the JSON data for descendant charts) or the `<linkeddata>` node (which contains the XML data for the descendant charts) in the parent data source.
+
+Refer to the code below:
+
+```json
+{
     "chart": {
-        "caption": "Actual Revenues, Targeted Revenues & Profits",
+        "caption": "Top 3 Juice Flavors",
         "subcaption": "Last year",
-        "xaxisname": "Month",
-        "yaxisname": "Amount (In USD)",
-        "numberprefix": "$",
-        "theme": "ocean"
+        "xaxisName": "Flavor",
+        "yaxisName": "Amount (In USD)",
+        "numberPrefix": "$",
+        "theme": "fint",
+        "rotateValues": "0"
     },
-    "categories": [{
-        "category": [{
-                "label": "Jan"
-            },
-            {
-                "label": "Feb"
-            },
-            {
-                "label": "Mar"
-            },
-            {
-                "label": "Apr"
-            },
-            {
-                "label": "May"
-            },
-            {
-                "label": "Jun"
-            },
-            {
-                "label": "Jul"
-            },
-            {
-                "label": "Aug"
-            },
-            {
-                "label": "Sep"
-            },
-            {
-                "label": "Oct"
-            },
-            {
-                "label": "Nov"
-            },
-            {
-                "label": "Dec"
+    "data": [
+        {
+            "label": "Apple",
+            "value": "810000",
+            "link": "newchart-xml-apple"
+        },
+        {
+            "label": "Cranberry",
+            "value": "620000",
+            "link": "newchart-xml-cranberry"
+        },
+        {
+            "label": "Grapes",
+            "value": "350000",
+            "link": "newchart-xml-grapes"
+        }
+    ],
+    "linkeddata": [
+        {
+            "id": "apple",
+            "linkedchart": {
+                "chart": {
+                    "caption": "Apple Juice - Quarterly Sales",
+                    "subcaption": "Last year",
+                    "xaxisname": "Quarter",
+                    "yaxisname": "Amount (In USD)",
+                    "numberprefix": "$",
+                    "theme": "fint",
+                    "rotateValues": "0"
+                },
+                "data": [
+                    {
+                        "label": "Q1",
+                        "value": "157000"
+                    },
+                    {
+                        "label": "Q2",
+                        "value": "172000"
+                    },
+                    {
+                        "label": "Q3",
+                        "value": "206000"
+                    },
+                    {
+                        "label": "Q4",
+                        "value": "275000",
+                        "rotateValues": "0"
+                    }
+                ]
             }
-        ]
-    }],
-    "dataset": [{
-            "seriesname": "Actual Revenue",
-            "data": [{
-                    "value": "16000"
-                },
-                {
-                    "value": "20000"
-                },
-                {
-                    "value": "18000"
-                },
-                {
-                    "value": "19000"
-                },
-                {
-                    "value": "15000"
-                },
-                {
-                    "value": "21000"
-                },
-                {
-                    "value": "16000"
-                },
-                {
-                    "value": "20000"
-                },
-                {
-                    "value": "17000"
-                },
-                {
-                    "value": "25000"
-                },
-                {
-                    "value": "19000"
-                },
-                {
-                    "value": "23000"
-                }
-            ]
         },
         {
-            "seriesname": "Projected Revenue",
-            "renderas": "line",
-            "showvalues": "0",
-            "data": [{
-                    "value": "15000"
+            "id": "cranberry",
+            "linkedchart": {
+                "chart": {
+                    "caption": "Cranberry Juice - Quarterly Sales",
+                    "subcaption": "Last year",
+                    "xaxisname": "Quarter",
+                    "yaxisname": "Amount (In USD)",
+                    "numberprefix": "$",
+                    "theme": "fint",
+                    "rotateValues": "0"
                 },
-                {
-                    "value": "16000"
-                },
-                {
-                    "value": "17000"
-                },
-                {
-                    "value": "18000"
-                },
-                {
-                    "value": "19000"
-                },
-                {
-                    "value": "19000"
-                },
-                {
-                    "value": "19000"
-                },
-                {
-                    "value": "19000"
-                },
-                {
-                    "value": "20000"
-                },
-                {
-                    "value": "21000"
-                },
-                {
-                    "value": "22000"
-                },
-                {
-                    "value": "23000"
-                }
-            ]
+                "data": [
+                    {
+                        "label": "Q1",
+                        "value": "102000"
+                    },
+                    {
+                        "label": "Q2",
+                        "value": "142000"
+                    },
+                    {
+                        "label": "Q3",
+                        "value": "187000"
+                    },
+                    {
+                        "label": "Q4",
+                        "value": "189000"
+                    }
+                ]
+            }
         },
         {
-            "seriesname": "Profit",
-            "renderas": "area",
-            "showvalues": "0",
-            "data": [{
-                    "value": "4000"
+            "id": "grapes",
+            "linkedchart": {
+                "chart": {
+                    "caption": "Grape Juice - Quarterly Sales",
+                    "subcaption": "Last year",
+                    "xaxisname": "Quarter",
+                    "yaxisname": "Amount (In USD)",
+                    "numberprefix": "$",
+                    "theme": "fint",
+                    "rotateValues": "0"
                 },
-                {
-                    "value": "5000"
-                },
-                {
-                    "value": "3000"
-                },
-                {
-                    "value": "4000"
-                },
-                {
-                    "value": "1000"
-                },
-                {
-                    "value": "7000"
-                },
-                {
-                    "value": "1000"
-                },
-                {
-                    "value": "4000"
-                },
-                {
-                    "value": "1000"
-                },
-                {
-                    "value": "8000"
-                },
-                {
-                    "value": "2000"
-                },
-                {
-                    "value": "7000"
-                }
-            ]
+                "data": [
+                    {
+                        "label": "Q1",
+                        "value": "45000"
+                    },
+                    {
+                        "label": "Q2",
+                        "value": "72000"
+                    },
+                    {
+                        "label": "Q3",
+                        "value": "95000"
+                    },
+                    {
+                        "label": "Q4",
+                        "value": "108000"
+                    }
+                ]
+            }
         }
     ]
 }
-
-Vue.use(VueFusionCharts);
-
-const app = new Vue({
-    el: '#app',
-    data: {
-        type: 'mscombi2d',
-        width: 600,
-        height: 400,
-        dataFormat: 'json',
-        dataSource: myDataSource
-    }
-});
 ```
 
-The HTML template for the above sample is:
+### Configure events for linked charts
 
-```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
-</div>
+The FusionCharts JavaScript class includes events raised when you open or close linked items, as detailed below:
+
+* `beforeLinkedItemOpen` is fired every time a linked item is about to open, right after you click the link in the parent chart.
+
+* `linkedItemOpened` is fired every time a linked (descendant) chart is rendered.
+
+* `beforeLinkedItemClosed` is fired every time the linked chart is closed and the parent chart is rendered. This happens whenever you navigate back to the parent chart by clicking on the Back button at the top right corner of the linked chart.
+
+* `linkedItemClosed` is fired every time a linked chart is closed, and before the parent chart is reopened.
+
+A chart utilizing these events is given below:
+
+{% embed_chart chart-configurations-drill-down-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/sknyboh5/ "@@open-newtab") to edit the above chart.
+
+Configure the `addEventListener()` method for the parent chart to listen to these events. The data structure that shows how to implement these events is given below:
+
+```json
+{
+    "chart": {
+        "caption": "Top 3 Juice Flavors",
+        "subcaption": "Last year",
+        "xaxisname": "Flavor",
+        "yaxisname": "Amount (In USD)",
+        "numberprefix": "$",
+        "theme": "fint",
+        "rotateValues": "0"
+    },
+    "data": [
+        {
+            "label": "Apple",
+            "value": "810000",
+            "link": "newchart-xml-apple"
+        },
+        {
+            "label": "Cranberry",
+            "value": "620000",
+            "link": "newchart-xml-cranberry"
+        },
+        {
+            "label": "Grapes",
+            "value": "350000",
+            "link": "newchart-xml-grapes"
+        }
+    ],
+    "linkeddata": [
+        {
+            "id": "apple",
+            "linkedchart": {
+                "chart": {
+                    "caption": "Apple Juice - Quarterly Sales",
+                    "subcaption": "Last year",
+                    "numberprefix": "$",
+                    "theme": "fint",
+                    "rotateValues": "0",
+                    "plottooltext": "$label, $dataValue,  $percentValue"
+                },
+                "data": [
+                    {
+                        "label": "Q1",
+                        "value": "157000"
+                    },
+                    {
+                        "label": "Q2",
+                        "value": "172000"
+                    },
+                    {
+                        "label": "Q3",
+                        "value": "206000"
+                    },
+                    {
+                        "label": "Q4",
+                        "value": "275000"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cranberry",
+            "linkedchart": {
+                "chart": {
+                    "caption": "Cranberry Juice - Quarterly Sales",
+                    "subcaption": "Last year",
+                    "numberprefix": "$",
+                    "theme": "fint",
+                    "plottooltext": "$label, $dataValue,  $percentValue"
+                },
+                "data": [
+                    {
+                        "label": "Q1",
+                        "value": "102000"
+                    },
+                    {
+                        "label": "Q2",
+                        "value": "142000"
+                    },
+                    {
+                        "label": "Q3",
+                        "value": "187000"
+                    },
+                    {
+                        "label": "Q4",
+                        "value": "189000"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "grapes",
+            "linkedchart": {
+                "chart": {
+                    "caption": "Grapes Juice - Quarterly Sales",
+                    "subcaption": "Last year",
+                    "numberprefix": "$",
+                    "theme": "fint",
+                    "rotateValues": "0",
+                    "plottooltext": "$label, $dataValue,  $percentValue"
+                },
+                "data": [
+                    {
+                        "label": "Q1",
+                        "value": "45000"
+                    },
+                    {
+                        "label": "Q2",
+                        "value": "72000"
+                    },
+                    {
+                        "label": "Q3",
+                        "value": "95000"
+                    },
+                    {
+                        "label": "Q4"
+                        "value": "108000"
+                    }
+                ]
+            }
+        }
+    ]
+}
 ```
 
-To know how a combination chart can be created using the conventional JSON code, click [here](https://www.fusioncharts.com/dev/chart-guide/combination-charts/creating-combination-charts.html).
+Use the events object (under the dataSource object) to configure the events raised for a chart.
 
-## Fetch chart data from an external file
-
-The FusionCharts component can be used to fetch chart data stored in an external .json or .xml file. To do this, specify the relative path to the external source file in the HTML code for the chart.
-
-The attributes used to specify the type and URL of the external file are:
-
-<table>
-  <tr>
-    <th>Attribute</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>`dataformat`</td>
-    <td>Specifies the type of data (JSON or XML) that will be fetched to render the chart. If JSON data is used,  set this attribute to __jsonurl__. If XML data is used, set it to __xmlurl__.</td>
-  </tr>
-  <tr>
-    <td>`datasource`</td>
-    <td>Specifies the relative path of the source file, from which chart data will be fetched.</td>
-  </tr>
-</table>
-
-The code to render a chart from an external __.json__ file is given below:
-
-```javascript
-Vue.use(VueFusionCharts);
-
-const app = new Vue({
-    el: '#app',
-    data: {
-        type: 'mscombi2d',
-        width: 600,
-        height: 400,
-        dataFormat: 'jsonurl',
-        dataSource: 'data.json'
-    }
-});
-```
-
-The HTML template for the above sample is:
-
-```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
-</div>
-```
+> The FusionCharts.addEventListener() static function can be used to trap events globally—for all charts. For detailed descriptions of the LinkedChart events, refer to the [FusionCharts API Reference](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events.html).
