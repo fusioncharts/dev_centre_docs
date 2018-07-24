@@ -1,17 +1,19 @@
 ---
-title: Your First Chart using FusionCharts | FusionCharts
+title: Your First Chart using FusionCharts and Plain JS | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the plain javascript.
 heading: Your First Chart using FusionCharts
 chartPresent: false
 ---
 
-Let's build our first chart using FusionCharts Suite XT! FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-gauge-8) and a [map]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-map-13).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. Let's build our first chart using FusionCharts Suite XT!
+
+We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-gauge-8) and a [map]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-map-13).
 
 Before going through this article, please [install]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript '@@open-newtab') the `fusioncharts` package, if not already installed.
 
 ## Create your first chart
 
-In this section, we will create a chart using fusioncharts library. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
+In this section, we will create a chart using the FusionCharts Suite XT library. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
 
 Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a **Column 2D** chart as shown below:
 
@@ -103,7 +105,7 @@ For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attri
 
 To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called `fusion`, and it is present in the `themes` folder of your download. Refer to the code below:
 
-```
+```html
 <html>
 <head>
     <title>My first chart using FusionCharts Suite XT</title>
@@ -117,7 +119,7 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, use t
 
 Each chart in the page needs a container to reside in. A `<div>` element works well as a container for the chart, as defined below:
 
-```
+```html
 <body>
   <div id="chartContainer">FusionCharts XT will load here!</div>
 </body>
@@ -255,7 +257,7 @@ The full HTML code is shown below:
 </html>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a Column 2D chart.
 
 Now, go on and explore other 95+ chart types that we've at [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'), or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 
@@ -321,7 +323,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the gauge. The theme is called `fusion`, and it is present in the `themes` folder of your download. Refer to the code below:
 
-```
+```html
 <html>
 <head>
     <title>My first gauge using FusionCharts Suite XT</title>
@@ -335,11 +337,10 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, use t
 
 Each gauge in the page needs a container to reside in. A `<div>` element works well as a container for the gauge, as defined below:
 
-```
+```html
 <body>
   <div id="chartContainer">FusionCharts XT will load here!</div>
 </body>
-
 ```
 
 Specify a unique ID for the `<div>` container within the web page. The unique ID is used in the chart initialization code to refer to the container.
@@ -467,7 +468,7 @@ See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attr
 
 ## Create your first map
 
-In this section, we will create a visualization using the map of **WORLD**. Take a look at the map shown below:
+In this section, we will create a visualization using the map of **World**. Take a look at the map shown below:
 
 {% embed_chart getting-started-your-first-map.js %}
 
@@ -481,6 +482,8 @@ Asia|AS|1.78|
 Europe|EU|40|
 Africa|AF|2.58|
 Australia|AU|1.30|
+
+> In the above table, the column **Entity Name** represents the geographical entities represnted in the map, whose full names are given in the **State** column in this example. However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id`s of the map you want to create.
 
 ### Convert tabular data into JSON format
 
@@ -715,6 +718,8 @@ See the complete list of [all possible attributes]({% site.baseurl %}/maps/attri
 ## Problem rendering the chart?
 
 In case something is wrong, and you are unable to see the chart, check for the following:
+
+* If you don't see the chart getting rendered on the browser, it might be because some browsers does not allow JavaScript files to be loaded and run from the local filesystem. In such cases, either try with a different browser, or create a local/remote server and server the webpages containing the charts from the server.
 
 * If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
 
