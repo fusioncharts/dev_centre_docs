@@ -80,7 +80,7 @@ In order to install, create an HTML file and follow the steps given below:
 <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-**Step 3: Include the angularjs-fusioncharts module:**
+**Step 3: Include the angularjs-fusioncharts wrapper:**
 
 ```html
 <script type="text/javascript" src="/path/to/angular-fusioncharts.js"></script>

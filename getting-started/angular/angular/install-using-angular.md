@@ -43,7 +43,7 @@ npm install fusioncharts --save
 
 ### Step 2: Install `angular-fusioncharts` wrapper
 
-To install the `angular-fusioncharts` wrapper, do t he following in the terminal:
+To install the `angular-fusioncharts` wrapper, copy the following line of code:
 
 ```shell
 npm install angular-fusioncharts --save
@@ -51,7 +51,7 @@ npm install angular-fusioncharts --save
 
 ### Step 3: Import **FusionChartsModule**
 
-To import fusioncharts module in `app.module.ts` (in your application), do the following:
+To import fusioncharts module in `app.module.ts` (in your application), copy the following line of code:
 
 ```shell
 import { FusionChartsModule } from 'angular-fusioncharts';
@@ -85,7 +85,7 @@ import * as Overlappedbar2d from 'fusioncharts/fusioncharts.overlapped2d'; //Ove
 import * as Overlappedcolumn2d from 'fusioncharts/fusioncharts.overlappedcolumn2d'; //Overlapped Column 2D
 ```
 
-That completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular '@@open-newtab').
+This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular '@@open-newtab').
 
 ## Include Maps via npm
 

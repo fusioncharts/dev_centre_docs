@@ -62,7 +62,7 @@ Unzip the archive and move its content to the `"/jsp-wrapper-master/src/java/fus
 
 > Include `"FusionCharts.java"` in your project.
 
-That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java '@@open-newtab').
+This completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java '@@open-newtab').
 
 ## Installing FusionMaps (map visualizations) for your project
 

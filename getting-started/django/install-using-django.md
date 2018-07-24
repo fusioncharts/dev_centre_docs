@@ -70,7 +70,7 @@ Insert the ``<script>`` tag where you want to include the source of the FusionCh
 python manage.py collectstatic
 ```
 
-That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/django/your-first-chart-using-django '@@open-newtab').
+This completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/django/your-first-chart-using-django '@@open-newtab').
 
 ## Installing FusionMaps (map visualizations) for your project
 

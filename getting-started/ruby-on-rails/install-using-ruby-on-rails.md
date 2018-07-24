@@ -87,7 +87,7 @@ This command will automatically install the `fusioncharts-rails` gem.
 $gem install fusioncharts-rails
 ```
 
-That completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails '@@open-newtab').
+This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails '@@open-newtab').
 
 ## Installing FusionMaps (map visualizations) for your project
 

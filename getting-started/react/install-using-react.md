@@ -122,7 +122,7 @@ The consolidated code looks like as shown below:
 </head>
 ```
 
-That completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/react/your-first-chart-using-react '@@open-newtab').
+This completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/react/your-first-chart-using-react '@@open-newtab').
 
 ### Installing FusionMaps (map visualizations) for your project
 

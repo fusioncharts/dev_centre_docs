@@ -62,7 +62,7 @@ File Name|Description|
 
 [Download](https://www.fusioncharts.com/php-charts/) the **FusionCharts PHP** wrapper which contains the main class file `fusioncharts.php` in `php-wrapper` folder, then copy and paste this class file into the “Includes” folder of your project.
 
-That completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php '@@open-newtab').
+This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php '@@open-newtab').
 
 ## Installing FusionMaps (map visualizations) for your project
 
@@ -76,7 +76,7 @@ In order to render maps, you need to [download](https://www.fusioncharts.com/dow
 
 [Download](https://www.fusioncharts.com/php-charts/) the FusionCharts PHP wrapper which contains the main class file `fusioncharts.php` in `php-wrapper/` folder, then copy and paste this class file in to “Includes” folder of your project.
 
-That completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-map-10 '@@open-newtab').
+This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-map-10 '@@open-newtab').
 
 ## Themes
 
