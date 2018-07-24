@@ -39,7 +39,7 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended to copy the `js` folder from the FusionCharts Suite XT download package to your project folder.
+> It is recommended that you copy the files of the `js` folder from fusioncharts-suite-xt to your project folder.
 
 * The download package also contains files of the `Vue-FusionCharts` wrapper under `fusioncharts-suite-xt > integrations > vue` folder.
 
@@ -51,7 +51,7 @@ Both the minified (compressed) and source (uncompressed) copies of Vue files are
 
 > If you are using 3.12.2 or older versions, download v3.13.0 to get the `vue` folder in the FusionCharts Suite XT package. 
 
-> It is recommended to copy the `vue` folder from `fusioncharts-suite-xt > integrations` to your project folder.
+> It is recommended that you copy the JavaScript files of the `vue` folder from `fusioncharts-suite-xt > integrations > vue > js` to your project folder.
 
 Following is the list of files present in your `fusioncharts-suite-xt/js` folder:
 

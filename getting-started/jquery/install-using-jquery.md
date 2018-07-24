@@ -42,7 +42,7 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the `js` folder from fusioncharts-suite-xt to your project's JavaScript folder.
+> It is recommended that you copy the files of the `js` folder from fusioncharts-suite-xt to your project folder.
 
 * The download package also contains **jquery-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > jquery` folder. The folder structure is shown below:
 
@@ -50,7 +50,7 @@ The folder structure is shown below:
 
 > If you are using 3.12.2 or older versions, download v3.13.0 to get the `jquery` folder in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the `jquery` folder from `fusioncharts-suite-xt > integrations > jquery` to your project's JavaScript folder.
+> It is recommended that you copy the JavaScript files of the `jquery` folder from `fusioncharts-suite-xt > integrations > jquery > js` to your project folder.
 
 Installation of FusionCharts Suite XT is simply copying and pasting the JavaScript files from the downloaded package into your project folder.
 
