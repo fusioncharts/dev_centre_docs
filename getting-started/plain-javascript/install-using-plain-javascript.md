@@ -15,6 +15,13 @@ You can include FusionCharts in your project using any of the two modes given be
 
 <table>
     <tr>
+        <td align="center"><a href="{% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#install-using-direct-javascript-files-2"><img src="{% site.baseurl %}/images/Icons_JS.svg"></a></td>
+        <td align="center"><a href="{% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#install-fusioncharts-via-npm-7"><img src="{% site.baseurl %}/images/Icons_NPM.svg"></a></td>
+    </tr>
+</table>
+
+<table>
+    <tr>
         <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#install-using-direct-javascript-files-2)</td>
         <td align="center">[NPM]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#install-fusioncharts-via-npm-7)</td>
     </tr>
