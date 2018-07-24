@@ -13,7 +13,7 @@ In this article, we will show you how you can download and install the `FusionCh
 
 You can include FusionCharts in your project using any of the two modes given below:
 
-<table>
+<table border-color="#f3f6f9">
     <tr border="0">
         <td align="center" border="0" bgcolor="#f3f6f9"><a href="{% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#install-using-direct-javascript-files-2"><img width="100px" height="100px" src="{% site.baseurl %}/images/Icons_JS.svg"></a></td>
         <td align="center" border="0" bgcolor="#f3f6f9"><a href="{% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#include-fusioncharts-via-npm-7"><img width="100px" height="100px" src="{% site.baseurl %}/images/Icons_NPM.svg"></a></td>
