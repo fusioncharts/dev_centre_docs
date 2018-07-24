@@ -66,15 +66,11 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ## Installing FusionMaps (map visualizations) for your project
 
-### Step 1
-
-In order to render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files.
+FusionCharts can provide more than 1000 maps that cater to all your map visualization requirements. But to keep the library lightweight, by default it ships only with two maps - the **world** map, and the **map of the USA**. To render rest of the maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files.
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
-### Step 2
-
-[Download](https://www.fusioncharts.com/php-charts/) the FusionCharts PHP wrapper which contains the main class file `fusioncharts.php` in `php-wrapper/` folder, then copy and paste this class file in to “Includes” folder of your project.
+Once you have downloaded the map definition files, [download](https://www.fusioncharts.com/php-charts/) the FusionCharts PHP wrapper which contains the main class file `fusioncharts.php` in `php-wrapper/` folder, then copy and paste this class file in to “Includes” folder of your project.
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-map-10 '@@open-newtab').
 

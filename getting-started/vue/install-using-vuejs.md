@@ -119,13 +119,16 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ### Installing FusionMaps (map visualizations) for your project
 
-To render maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files and include them to your HTML as shown below:
+FusionCharts can provide more than 1000 maps that cater to all your map visualization requirements. But to keep the library lightweight, by default it ships only with two maps - the **world** map, and the **map of the USA**. To render rest of the maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files and include them in to your HTML as shown below:
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
 ```
 <script type="text/JavaScript" src="path/to/local/fusioncharts.maps.js"></script>
 <script type="text/JavaScript" src="path/to/local/fusioncharts.world.js"></script>
+
+!-- The next line describes the format for more map definition files -->
+<script type="text/javascript" src="path/to/local/[MAP_ALIAS].js"></script>
 ```
 
 The `fusioncharts.world.js` file includes path drawings of the map of **world**.

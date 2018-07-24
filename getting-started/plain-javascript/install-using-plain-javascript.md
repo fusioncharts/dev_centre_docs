@@ -34,7 +34,7 @@ The folder structure is shown below:
 
 > It is recommended that you copy the `js` folder from fusioncharts-suite-xt to your project's JavaScript folder.
 
-Installation of FusionCharts Suite XT involves copying and pasting the JavaScript files from the downloaded package into your project folder.
+Installation of FusionCharts Suite XT is simply copying and pasting the JavaScript files from the downloaded package into your project folder.
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
 
@@ -170,7 +170,7 @@ FusionCharts can provide more than 1000 maps that cater to all your map visualiz
 <script type="text/javascript" src="path/to/local/fusioncharts.world.js"></script>
 
 <!-- The next line describes the format for more map definition files -->
-<!-- script type="text/javascript" src="path/to/local/[MAP_ALIAS].js"></script>
+<script type="text/javascript" src="path/to/local/[MAP_ALIAS].js"></script>
 ```
 
 The `fusioncharts.world.js` file includes path drawings of the map of **world**.

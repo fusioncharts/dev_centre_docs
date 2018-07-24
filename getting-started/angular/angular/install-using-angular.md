@@ -59,7 +59,7 @@ import { FusionChartsModule } from 'angular-fusioncharts';
 
 ### Step 4: Import FusionCharts library via npm
 
-To import the `fusioncharts` library in `app.module.ts`(in your application), do t he following:
+To import the `fusioncharts` library in `app.module.ts`(in your application), copy the following line of code:
 
 ```shell
 import * as FusionCharts from 'fusioncharts';
@@ -89,18 +89,18 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ## Include Maps via npm
 
-> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
+FusionCharts can provide more than 1000 maps that cater to all your map visualization requirements. But to keep the library lightweight, by default it ships only with two maps - the **world** map, and the **map of the USA**. To render rest of the maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files. To include the downloaded map definition files, copy the following line of code:
 
-To include the map definition files placed in **fusioncharts/maps**, do t he following:
+> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
 ```Shell
 import * as Maps from 'fusioncharts/fusioncharts.maps'; // Maps
 ```
 
-To include the **map definition** file you want to render, do t he following:
+To include the **map definition** file you want to render, copy the following line of code:
 
 ```Shell
-import * as World from 'fusioncharts/maps/fusioncharts.world'
+import * as World from 'fusioncharts/maps/fusioncharts.world' // World Map
 ```
 
 ## Include Themes via npm
@@ -120,7 +120,7 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-To include the definition files placed in **fusioncharts/themes**, do t he following:
+To include the definition files placed in **fusioncharts/themes**, copy the following line of code:
 
 ```Shell
 import * as Fusion from 'fusioncharts/themes/fusioncharts.theme.fusion';
