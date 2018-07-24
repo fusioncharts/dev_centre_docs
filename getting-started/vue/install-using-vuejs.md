@@ -267,9 +267,9 @@ To add chart dependency, copy the following line of code:
 FusionCharts.addDep(Column2D);
 ```
 
-**Register using multiple specific chart types:**
+**Register using multiple chart types:**
 
-To register using multiple specific chart types, import the specific charts instead of all the charts after importing the `fusioncharts` class. Also, you need to add the dependency for all the specific chart types as shown in the code below:
+To register using multiple chart types, import the specific charts instead of all the charts after importing the `fusioncharts` class. Also, you need to add the dependency for all the specific chart types as shown in the code below:
 
 To include the `fusioncharts` class, copy the following line of code:
 
