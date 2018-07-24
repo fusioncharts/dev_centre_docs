@@ -164,6 +164,7 @@ Now, use the `fusioncharts` directive in a template. The code for the `index.htm
     <title>Document</title>
     <script src="node_modules/fusioncharts/fusioncharts.js"></script>
     <script src="node_modules/fusioncharts/fusioncharts.charts.js"></script>
+    <script src="node_modules/fusioncharts/fusioncharts.theme.fusion.js"></script>
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-fusioncharts/dist/angular-fusioncharts.[min].js"></script>
 </head>

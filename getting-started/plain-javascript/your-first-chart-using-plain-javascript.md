@@ -110,7 +110,7 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, use t
 <head>
     <title>My first chart using FusionCharts Suite XT</title>
     <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-    <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 </head>
 </html>
 ```
