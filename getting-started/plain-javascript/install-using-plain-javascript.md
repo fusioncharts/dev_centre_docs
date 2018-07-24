@@ -13,7 +13,7 @@ In this article, we will show you how you can download and install the `FusionCh
 
 <table>
     <tr>
-        <td align="center">[({% site.baseurl %}/images/Icons_JS.svg)]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#install-using-direct-javascript-files-2)</td>
+        <td align="center">[Direct JavaScript files]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#install-using-direct-javascript-files-2)</td>
         <td align="center">[NPM]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#install-fusioncharts-via-npm-7)</td>
     </tr>
 </table>
