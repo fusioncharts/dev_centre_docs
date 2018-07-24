@@ -152,7 +152,7 @@ FusionChartsModule.fcRoot(FusionCharts, Charts)  // FusionCharts and Charts
 }
 ```
 
-To add more than one dependency to the environment, replace the `FusionChartsModule.fcRoot(FusionCharts, Charts)` line with one of the lines shown below:
+To add more than one dependency to the environment, replace the `FusionChartsModule.fcRoot(FusionCharts, Charts)`. For example:
 
 * `FusionChartsModule.fcRoot(FusionCharts, Charts, Widgets, Fusion)`: To import charts, widgets and themes.
 
