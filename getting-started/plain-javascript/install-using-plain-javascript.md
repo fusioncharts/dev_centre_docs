@@ -15,8 +15,8 @@ You can include FusionCharts in your project using any of the two modes given be
 
 <table>
     <tr>
-        <td align="center" border-top="0px" bgcolor="#f3f6f9"><a href="{% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#install-using-direct-javascript-files-2"><img width="100px" height="100px" src="{% site.baseurl %}/images/Icons_JS.svg"></a></td>
-        <td align="center" border-top="0px" bgcolor="#f3f6f9"><a href="{% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#include-fusioncharts-via-npm-7"><img width="100px" height="100px" src="{% site.baseurl %}/images/Icons_NPM.svg"></a></td>
+        <td align="center" style="border: none !important; background-color:#f3f6f9"><a href="{% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#install-using-direct-javascript-files-2"><img width="100px" height="100px" src="{% site.baseurl %}/images/Icons_JS.svg"></a></td>
+        <td align="center" style="border: none !important; background-color:#f3f6f9"><a href="{% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#include-fusioncharts-via-npm-7"><img width="100px" height="100px" src="{% site.baseurl %}/images/Icons_NPM.svg"></a></td>
     </tr>
 </table>
 
