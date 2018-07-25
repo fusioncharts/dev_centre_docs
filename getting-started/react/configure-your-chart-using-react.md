@@ -403,8 +403,6 @@ ReactDOM.render(
 
 
 
-{% embed_chart configure-charts-using-react-example-3.js %}
-
 The code to render the above chart is given below:
 
 ```
