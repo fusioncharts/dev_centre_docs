@@ -1,10 +1,9 @@
 ---
-title: Adding Drill Down | FusionCharts
+title: Adding Drill Down using React | FusionCharts
 description: This article focuses on drill down charts.
-heading: Adding Drill Down
+heading: Adding Drill Down using React
 chartPresent: true
 ---
-
 
 In FusionCharts, you can create unlimited levels of drill-down charts with a single data source. The parent chart contains all chart data—for the parent chart as well as all levels of descendant (child, grandchild) charts. The links to all descendant charts are also defined in the parent chart.
 
@@ -38,4 +37,4 @@ The above chart, when rendered, looks like the following:
 
 {% embed_chart add-drill-down-using-react-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/wvpzfz5g/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/k7mn6j5s/ "@@open-newtab") to edit the above chart.
