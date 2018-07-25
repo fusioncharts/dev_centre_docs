@@ -313,21 +313,21 @@ The installation of both the module is shown below:
 <div class='tab xml-tab'>
 <div><strong>Step 1: Install the fusioncharts package via npm</strong></div>
 <div>To include the fusioncharts package as shown below:</div>
-<pre><code class="custom-hlc language-cv">
+<pre><code class="custom-hlc language-bash">
     npm install fusioncharts
 </code></pre>
 <div><strong>Step 2: Load the fusioncharts module</strong></div>
 <div>After you have installed fusioncharts via npm, you can include it in one of the three ways:</div>
 <div><strong>Using require():</strong></div>
-<pre><code class="custom-hlc language-cv">
+<pre><code class="custom-hlc language-bash">
     require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
 </code></pre>
 <div><strong>Using import statements:</strong></div>
-<pre><code class="custom-hlc language-cv">
+<pre><code class="custom-hlc language-bash">
     import FusionCharts from 'path/to/local/node_modules/fusioncharts/fusioncharts.js';
 </code></pre>
 <div><strong>Using &lt;script&gt;&lt;/script&gt; tags in the head of HTML file:</strong></div>
-<pre><code class="custom-hlc language-cv">
+<pre><code class="custom-hlc language-bash">
     &lt;script src="path/to/local/node_modules/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
 </code></pre>
 
