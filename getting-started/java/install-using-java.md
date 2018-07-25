@@ -1,24 +1,24 @@
 ---
 title: Installation | FusionCharts
-description: This article talks about how you can install FusionCharts JSP wrapper.
+description: This article talks about how you can install FusionCharts Java wrapper.
 heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the FusionCharts server-side JSP wrapper that lets you create interactive, data-driven charts. FusionCharts uses JavaScript and HTML code to generate charts in the browser. Using the JSP wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page for generating charts. Before we get into the installation process of the wrapper, let's take a look at what sets the JSP wrapper apart.
+FusionCharts Suite XT includes the FusionCharts server-side Java wrapper that lets you create interactive, data-driven charts. FusionCharts uses JavaScript and HTML code to generate charts in the browser. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page for generating charts. Before we get into the installation process of the wrapper, let's take a look at what sets the wrapper apart.
 
-Some of the basic features of JSP are:
+Some of the basic features of Java are:
 
-* Easily create charts in JavaScript using your JSP code.
+* Easily create charts in JavaScript using your Java code.
 * Can render charts using **JSON/XML** data or URL.
 
-In this article, we will show you how to download and install the `FusionCharts JSP` wrapper and all the other dependencies on your system. You can use FusionCharts in your JSP project using direct JavaScript files.
+In this article, we will show you how to download and install the `FusionCharts Java` wrapper and all the other dependencies on your system. You can use FusionCharts in your JSP project using direct JavaScript files.
 
-> The FusionCharts JSP server-side wrapper requires JAVA 6 or higher.
+> The FusionCharts Java server-side wrapper requires JAVA 6 or higher.
 
-## Install FusionCharts JSP Wrapper
+## Install FusionCharts Java Wrapper
 
-In order to install and start working with JSP-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
+In order to install and start working with FusionCharts-Java you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
 * JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
 * JavaScript files to render maps under `js > maps` folder.
@@ -30,13 +30,13 @@ The folder structure is shown below:
 
 > It is recommended that you copy the files of the `js` folder from fusioncharts-suite-xt to your project folder.
 
-* The download package also contains **jsp-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > jsp` folder. This folder will also contain JSP-FusionCharts native Export Handlers. The folder structure is shown below:
+* The download package also contains **fusioncharts.java** file under `fusioncharts-suite-xt > integrations > java` folder. This folder will also contain FusionCharts-Java native Export Handlers. The folder structure is shown below:
 
 ![JSP Js Folder]({% site.baseurl %}/gif/jsp-folder-structure.gif)
 
-> If you are using 3.12.2 or older versions, download v3.13.0 to get the `jsp` folder in the FusionCharts Suite XT package. 
+> If you are using 3.12.2 or older versions, download v3.13.0 to get the `java` folder in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the `jsp` folder from `fusioncharts-suite-xt > integrations > jsp` to your project's JavaScript folder.
+> It is recommended that you copy the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > java > fusioncharts-wrapper` to your project's folder.
 
 Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the downloaded package into your project folder.
 
@@ -58,10 +58,6 @@ File Name|Description|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective file names.|
 
-Unzip the archive and move its content to the `"/jsp-wrapper-master/src/java/fusioncharts/"` to get the `"FusionCharts.java"` main class file.
-
-> Include `"FusionCharts.java"` in your project.
-
 This completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java '@@open-newtab').
 
 ## Installing FusionMaps (map visualizations) for your project
@@ -70,9 +66,9 @@ FusionCharts can provide more than 1000 maps that cater to all your map visualiz
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
-Once you have downloaded the map definition files, [download](https://www.fusioncharts.com/asp-net-charts/) the FusionCharts JSP wrapper. Then follow the steps given below:
-*  Unzip the archive and move its contents to the `"/jsp-wrapper-master/src/java/fusioncharts/"` to get the `"FusionCharts.java"` main class file.
-* Include `"FusionCharts.java"` in your project.
+Once you have downloaded the map definition files, [download](https://www.fusioncharts.com/asp-net-charts/) the FusionCharts-Java wrapper. Then follow the steps given below:
+
+* Include `"FusionCharts.java"` file from `fusioncharts-suite-xt > integrations > java > fusioncharts-wrapper` in your project.
 
 ## Themes
 
