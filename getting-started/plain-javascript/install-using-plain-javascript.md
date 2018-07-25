@@ -218,7 +218,7 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 
 The `fusioncharts` package for `npm` can now be installed using two different modules:
 
-* FusionCharts ES module - From v3.13.0 we are providing the FusionCharts library as ES modules within the `fusioncharts` npm package. This package let's you selectively add modules as per your requirement. For example - You only need the angular guage, pie chart and the column chart. The FusionCharts ES module allows you to cherry pick only these visualizations and use in your application. 
+* **FusionCharts ES module** - From v3.13.0 we are providing the FusionCharts library as ES modules within the `fusioncharts` npm package. This package let's you selectively add modules as per your requirement. For example - You only need the angular guage, pie chart and the column chart. The FusionCharts ES module allows you to cherry pick only these visualizations and use in your application. 
  
  Similarly, you can also select specific features to be used in your application. For example - You can opt only to show trendlines. The folders of the module is shown in the table below:
 
@@ -296,7 +296,7 @@ The `fusioncharts` package for `npm` can now be installed using two different mo
     </tr>
 </table>
 
-* FusionCharts CJS module (deprecated) - This module is the traditional FusionCharts library which doea not allow you to selectively load charts and features. If you want to use an angular gauge you have to include the entire `fusionwidgets` module. 
+* **FusionCharts CJS module (`deprecated`)** - This module is the traditional FusionCharts library which doea not allow you to selectively load charts and features. If you want to use an angular gauge you have to include the entire `fusionwidgets` module. 
 
 The installation of both the module is shown below:
 
