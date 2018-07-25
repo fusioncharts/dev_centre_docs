@@ -39,17 +39,17 @@ Following is the list of JavaScript files present in your `fusioncharts-suite-xt
 File Name|Description|
 -|-
 `fusioncharts.js`|This is the core FusionCharts library, which you need to import in all your pages where you want to generate a chart, gauge or a map.|
-`fusioncharts.charts.js` (optional)|This file is required to render all charts present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.charts.js`.|
-`fusioncharts.widgets.js`|This file is required to render all gauges present under FusionWidgets XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.widgets.js`.|
-`fusioncharts.powercharts.js`|This file is required to render all charts present under PowerCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.powercharts.js`.|
-`fusioncharts.gantt.js`|This file is required to render the Gantt chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.gantt.js`.|
-`fusioncharts.treemap.js`|This file is required to render the Treemap. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.treemap.js`.|
-`fusioncharts.zoomscatter.js`|This file is required to render the Zoom scatter chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.zoomscatter.js`.|
-`fusioncharts.zoomline.js`|This file is required to render the Zoom line charts. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.zoomline.js`.|
-`fusioncharts.overlappedbar2d.js`|This file is required to render the Overlapped Bar 2D chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedbar2d.js`.|
-`fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js`.|
-`fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
-`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
+`fusioncharts.charts.js`|This file is required to render all charts present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.charts.js` provided they are in the same folder.|
+`fusioncharts.widgets.js`|This file is required to render all gauges present under FusionWidgets XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.widgets.js` provided they are in the same folder.|
+`fusioncharts.powercharts.js`|This file is required to render all charts present under PowerCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.powercharts.js` provided they are in the same folder.|
+`fusioncharts.gantt.js`|This file is required to render the Gantt chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.gantt.js` provided they are in the same folder.|
+`fusioncharts.treemap.js`|This file is required to render the Treemap. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.treemap.js` provided they are in the same folder.|
+`fusioncharts.zoomscatter.js`|This file is required to render the Zoom scatter chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.zoomscatter.js` provided they are in the same folder.|
+`fusioncharts.zoomline.js`|This file is required to render the Zoom line charts. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.zoomline.js` provided they are in the same folder.|
+`fusioncharts.overlappedbar2d.js`|This file is required to render the Overlapped Bar 2D chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedbar2d.js` provided they are in the same folder.|
+`fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js` provided they are in the same folder.|
+`fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js` provided they are in the same folder.|
+`maps/*`|This folder contains Map Definition files required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
 
 Installation of FusionCharts Suite XT is simply copying and pasting the JavaScript files from the downloaded package into your project folder.
@@ -285,48 +285,7 @@ The installation of both the module is shown below:
     import IgnoreCaseExt from 'fusioncharts/features/ignore-case-ext';
     FusionCharts.addDep(IgnoreCaseExt);
 </code></pre>
-<div class="mt-20"><strong>alertmanager</strong></div>
-<div class="pb-10">Extension is required if you want to display alerts on real time updates You can get the details here: https://www.fusioncharts.com/dev/chart-guide/standard-charts/real-time-charts#set-alert-manager <br/> Adding extension is same as adding any other dependency:</div>
-<pre><code class="custom-hlc language-javascript">
-    import AlertManager from 'fusioncharts/features/alertmanager';
-    FusionCharts.addDep(AlertManager);
-</code></pre>
-<div class="mt-20"><strong>center-label-extension</strong></div>
-<div class="pb-10">Sets the center label in Doughnut 2D chart. The label cosmetics are configurable via the second optional parameter, which accepts a host of related properties.</div>
-<pre><code class="custom-hlc language-javascript">
-    import CenterLabelExtension from 'fusioncharts/features/center-label-extension';
-    FusionCharts.addDep(CenterLabelExtension);
-</code></pre>
-<div class="mt-20"><strong>crossline-adapter</strong></div>
-<div class="pb-10">Draw crossline when crossline is enabled.</div>
-<pre><code class="custom-hlc language-javascript">
-    import CrosslineAdapter from 'fusioncharts/features/crossline-adapter';
-    FusionCharts.addDep(CrosslineAdapter);
-</code></pre>
-<div class="mt-20"><strong>csv-transcoder</strong></div>
-<div class="pb-10">Get the data as csv , avail getDataAsCsv() in FusionCharts instance.</div>
-<pre><code class="custom-hlc language-javascript">
-    import CsvTranscoder from 'fusioncharts/features/csv-transcoder';
-    FusionCharts.addDep(CsvTranscoder);
-</code></pre>
-<div class="mt-20"><strong>data-skipping</strong></div>
-<div class="pb-10">Add data skipping features for charts Read more here: https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts#data-skipping.</div>
-<pre><code class="custom-hlc language-javascript">
-    import DataSkipping from 'fusioncharts/features/data-skipping';
-    FusionCharts.addDep(DataSkipping);
-</code></pre>
-<div class="mt-20"><strong>default-theme</strong></div>
-<div class="pb-10">Add default theme to charts and canvas.</div>
-<pre><code class="custom-hlc language-javascript">
-    import DefaultTheme from 'fusioncharts/features/default-theme';
-    FusionCharts.addDep(DefaultTheme);
-</code></pre>
-<div class="mt-20"><strong>exports-module</strong></div>
-<div class="pb-10">Exports a chart to image or PDF document using this function. The function can be configured to export a chart and present it as a file download. Exporting of a chart is not enabled by default. The chart's data must have the exportEnabled chart attribute explicitly set to 1.</div>
-<pre><code class="custom-hlc language-javascript">
-    import ExportsModule from 'fusioncharts/features/exports-module';
-    FusionCharts.addDep(ExportsModule);
-</code></pre>
+<div class="mt-30"><strong>Similarly, you can also import the other optional features (mentioned in the above table).</strong></div>
 </div>
 
 <div class="tab cjs-tab">
@@ -439,7 +398,17 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 * Behavior (hover effects for data plots)
 * Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme)
 
-To include the definition files placed in **fusioncharts/themes**, copy the following line of code:
+To include the definition files placed in **fusioncharts/themes**, follow any of the two ways shown below:
+
+**Using `require()`:**
+
+```javascript
+require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
+require('path/to/local/node_modules/features/theme-engine');
+require('path/to/local/node_modules/fusioncharts/themes/fusioncharts.fusion.js');
+```
+
+**Using `import` statements:**
 
 ```Shell
 import FusionCharts from 'fusioncharts/core'
