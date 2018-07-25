@@ -329,6 +329,33 @@ The installation of both the module is shown below:
 </code></pre>
 </div>
 
+<div class="tab cjs-tab">
+<div class="pb-10"><strong>Step 1: Install the fusioncharts package via npm</strong></div>
+<pre><code class="custom-hlc language-bash">
+    npm install fusioncharts
+</code></pre>
+<div class="mt-20"><strong>Step 2: Load the fusioncharts module</strong></div>
+<div class="pb-10">After you have installed fusioncharts via npm, you can include it in one of the three ways:</div>
+<div class="mt-20"><strong>Using require():</strong></div>
+<pre><code class="custom-hlc language-json">
+    require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
+</code></pre>
+<div class="mt-30 pb-10"><strong>Using import statements:</strong></div>
+<pre><code class="custom-hlc language-json">
+    import FusionCharts from 'path/to/local/node_modules/fusioncharts/fusioncharts.js';
+</code></pre>
+
+<div class="mt-20pb-10"><strong>Using &lt;script&gt;&lt;/script&gt; tags in the head of HTML file:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    &lt;script src="path/to/local/node_modules/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
+
 ### Include Maps via `npm`
 
 When installed via `npm`, the `fusioncharts` package contains only two map definitions in `node_modules/fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
