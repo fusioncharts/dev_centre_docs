@@ -333,6 +333,7 @@ import FusionCharts from 'path/to/local/node_modules/fusioncharts/fusioncharts.j
 **Using `require()`:**
 
 ```javascript
+require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
 require('path/to/local/node_modules/fusionmaps');
 require('path/to/local/node_modules/fusionmaps/maps/fusioncharts.world.js');
 ```
@@ -340,6 +341,7 @@ require('path/to/local/node_modules/fusionmaps/maps/fusioncharts.world.js');
 **Using `import` statements:**
 
 ```javascript
+import FusionCharts from 'path/to/local/node_modules/fusioncharts/fusioncharts.js';
 import FusionMaps from 'path/to/local/node_modules/fusionmaps';
 import California from 'path/to/local/node_modules/fusionmaps/maps/fusioncharts.world.js';
 ```
@@ -356,6 +358,7 @@ Therefore, assuming that you need to render the map of California, the alias nam
 **Using `require()`:**
 
 ```javascript
+require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
 require('path/to/local/node_modules/fusionmaps');
 require('path/to/local/node_modules/fusionmaps/maps/fusioncharts.california.js');
 ```
@@ -363,6 +366,7 @@ require('path/to/local/node_modules/fusionmaps/maps/fusioncharts.california.js')
 **Using `import` statements:**
 
 ```javascript
+import FusionCharts from 'path/to/local/node_modules/fusioncharts/fusioncharts.js';
 import FusionMaps from 'path/to/local/node_modules/fusionmaps';
 import California from 'path/to/local/node_modules/fusionmaps/maps/fusioncharts.california.js';
 ```
