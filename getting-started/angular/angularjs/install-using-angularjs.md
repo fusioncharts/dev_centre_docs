@@ -5,7 +5,7 @@ heading: Installation
 chartPresent: false
 ---
 
-The `angularjs-fusioncharts` wrapper **(Angular 1)**, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single AngularJS component.
+The `angularjs-fusioncharts` wrapper **(v1.x)**, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single AngularJS component.
 
 In this article, we will show you how you can download and install the `angularjs-fusioncharts` wrapper and all the other dependencies on your system. 
 
@@ -42,34 +42,32 @@ The folder structure is shown below:
 
 > It is recommended that you copy the JavaScript files of the `angularjs` folder from `fusioncharts-suite-xt > integrations > angularjs > js` to your project folder.
 
-Installation of FusionCharts Suite XT is simply copying and pasting the files from the downloaded package into your project folder. 
-
-After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
-
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
 
 File Name|Description|
 -|-
 `fusioncharts.js`|This is the core FusionCharts library, which you need to import in all your pages where you want to generate a chart, gauge or a map.|
-`fusioncharts.charts.js`|This file is required to render all charts present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.charts.js`.|
-`fusioncharts.widgets.js`|This file is required to render all gauges present under FusionWidgets XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.widgets.js`.|
-`fusioncharts.powercharts.js`|This file is required to render all charts present under PowerCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.powercharts.js`.|
-`fusioncharts.gantt.js`|This file is required to render the Gantt chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.gantt.js`.|
-`fusioncharts.treemap.js`|This file is required to render the Treemap. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.treemap.js`.|
-`fusioncharts.zoomscatter.js`|This file is required to render the Zoom scatter chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.zoomscatter.js`.|
-`fusioncharts.zoomline.js`|This file is required to render the Zoom line charts. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.zoomline.js`.|
-`fusioncharts.overlappedbar2d.js`|This file is required to render the Overlapped Bar 2D chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedbar2d.js`.|
-`fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js`.|
-`fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
-`maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
+`fusioncharts.charts.js`|This file is required to render all charts present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.charts.js` provided they are in the same folder.|
+`fusioncharts.widgets.js`|This file is required to render all gauges present under FusionWidgets XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.widgets.js` provided they are in the same folder.|
+`fusioncharts.powercharts.js`|This file is required to render all charts present under PowerCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.powercharts.js` provided they are in the same folder.|
+`fusioncharts.gantt.js`|This file is required to render the Gantt chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.gantt.js` provided they are in the same folder.|
+`fusioncharts.treemap.js`|This file is required to render the Treemap. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.treemap.js` provided they are in the same folder.|
+`fusioncharts.zoomscatter.js`|This file is required to render the Zoom scatter chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.zoomscatter.js` provided they are in the same folder.|
+`fusioncharts.zoomline.js`|This file is required to render the Zoom line charts. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.zoomline.js` provided they are in the same folder.|
+`fusioncharts.overlappedbar2d.js`|This file is required to render the Overlapped Bar 2D chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedbar2d.js` provided they are in the same folder.|
+`fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js` provided they are in the same folder.|
+`fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js` provided they are in the same folder.|
+`maps/*`|This folder contains map definition files required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective file names.|
 
-In order to install, create an HTML file and follow the steps given below:
+Installation of FusionCharts Suite XT is simply copying and pasting the files from the downloaded package into your project folder. 
+
+After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. Create an HTML file and follow the steps given below:
 
 **Step 1: Include AngularJS file:**
 
 ```html
-<script type="text/javascript" src="/path/to/angularjs.js"></script>
+<script type="text/javascript" src="/path/to/local/angularjs.js"></script>
 ```
 
 **Step 2: Include the FusionCharts package:**
@@ -128,19 +126,28 @@ app.controller('MyController', function($scope) {
 
 ### Installing FusionMaps (map visualizations) for your project
 
-FusionCharts can provide more than 1000 maps that cater to all your map visualization requirements. But to keep the library lightweight, by default it ships only with two maps - the **world** map, and the **map of the USA**. To render rest of the maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files and include them in to your HTML as shown below:
+FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. To render a map, you need the `fusioncharts.maps.js`, and the map definition files. 
+
+In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
-```html
-<script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-<script type="text/javascript" src="path/to/local/fusioncharts.world.js"></script>
+To render a map using FusionCharts, you first need to include `fusioncharts.maps.js` and then the relevant map definition file, as below.
 
-<!-- The next line describes the format for more map definition files -->
-<script type="text/javascript" src="path/to/local/[MAP_ALIAS].js"></script>
+```
+<script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
 ```
 
-The `fusioncharts.world.js` file includes path drawings of the map of **world**.
+In the above example, we’ve include the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
+
+To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, tnen copy those map files to your current `/maps` folder. The map definition files are named in the format `[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. Then include the respective map file as under:
+
+```
+<script type="text/javascript" src="path/to/local/maps/[MAP_ALIAS].js"></script>
+```
+
+Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
 If you have specifically included all the files your head section should look like this:
 
@@ -149,11 +156,11 @@ If you have specifically included all the files your head section should look li
     <meta charset="utf-8">
     <title>AngularJS - FusionCharts</title>
     <!-- AngularJS -->
-    <script type="text/JavaScript" src="path/to/local/angularjs.js"></script>
+    <script type="text/JavaScript" src="path/to/local/angular.js"></script>
     <!-- FusionCharts -->
     <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
     <!-- AngularJS-FusionCharts -->
-    <script type="text/JavaScript" src="path/to/local/angularjs-fusioncharts.js"></script>
+    <script type="text/JavaScript" src="path/to/local/angular-fusioncharts.js"></script>
     <!-- FusionMaps -->
     <script type="text/JavaScript" src="path/to/local/fusioncharts.maps.js"></script>
     <!--world -->
@@ -268,10 +275,10 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 <pre><code class="custom-hlc language-cs">
     &lt;script src="node_modules/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/angular/angular.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/angular-fusioncharts/dist/angular-fusioncharts.min.js"&gt;
+    &lt;script src="node_modules/angular-fusioncharts.js"&gt;
     &lt;/script&gt;
 </code></pre>
-<div class="mt-10 pb-10">In scripts.js, add the dependency:</div>
+<div class="mt-10 pb-10">In **scripts.js**, add the dependency:</div>
 <pre><code class="custom-hlc language-cs">
     angular.module('your-app-name', ["ng-fusioncharts"]);
 </code></pre>
@@ -287,7 +294,7 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
     &lt;script src="node_modules/fusioncharts/fusioncharts.zoomscatter.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/fusioncharts.zoomline.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/fusioncharts.overlappedbar2d.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.overlappedcolumn2d.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts<br/>/fusioncharts.overlappedcolumn2d.js"&gt;&lt;/script&gt;
 </code></pre>
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
