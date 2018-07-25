@@ -1,7 +1,7 @@
 ---
-title: Configuring your Chart | FusionCharts
+title: Configuring your Chart using React | FusionCharts
 description: This article focuses on different type of configurations possible using the react.
-heading: Configuring your Chart
+heading: Configuring your Chart using React
 chartPresent: true
 ---
 
