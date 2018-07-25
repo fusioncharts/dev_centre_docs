@@ -290,16 +290,52 @@ The `fusioncharts` package for `npm` can now be installed using two different mo
             </ul>
         </td>
     </tr>
-    
-    
-    
-    
-    
 </table>
 
 * **FusionCharts CJS module (`deprecated`)** - This module is the traditional FusionCharts library which does not allow you to selectively load charts and features. If you want to use an angular gauge you have to include the entire `fusionwidgets` module. 
 
 The installation of both the module is shown below:
+
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>ES6</a></li>
+  <li><a data-toggle='xml'>CJS</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<div><strong>.aspx</strong></div>
+<pre><code class="custom-hlc language-cs">
+    CODE
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab xml-tab'>
+<div><strong>Step 1: Install the fusioncharts package via npm</strong></div>
+<p>To include the fusioncharts package as shown below:</p>
+<pre><code class="custom-hlc language-cv">
+    npm install fusioncharts
+</code></pre>
+<div><strong>Step 2: Load the fusioncharts module</strong></div>
+<p>After you have installed fusioncharts via npm, you can include it in one of the three ways:</p>
+<p><strong>Using require():</strong></p>
+<pre><code class="custom-hlc language-cv">
+    require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
+</code></pre>
+<p><strong>Using import statements:</strong></p>
+<pre><code class="custom-hlc language-cv">
+    import FusionCharts from 'path/to/local/node_modules/fusioncharts/fusioncharts.js';
+</code></pre>
+<p><strong>Using &lt;script&gt;&lt;/script&gt; tags in the head of HTML file:</strong></p>
+<pre><code class="custom-hlc language-cv">
+    &lt;script src="path/to/local/node_modules/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
+</code></pre>
+
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 
 
