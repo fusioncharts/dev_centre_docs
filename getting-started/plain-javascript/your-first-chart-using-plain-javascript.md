@@ -1,5 +1,5 @@
 ---
-title: Your First Chart using FusionCharts and Plain JS | FusionCharts
+title: Your First Chart using Plain JS | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the plain javascript.
 heading: Your First Chart using FusionCharts  and Plain JS
 chartPresent: false
@@ -257,7 +257,7 @@ The full HTML code is shown below:
 </html>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a Column 2D chart.
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') for a Column 2D chart.
 
 Now, go on and explore other 95+ chart types that we've at [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'), or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 
@@ -277,7 +277,7 @@ Range|Color|Hex Code|
 50-75|Yellow|#FFC533|
 75-100|Green|#62B58F|
 
-So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 meansgood and is green.
+So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and is green.
 
 ### Convert tabular data into JSON format
 
@@ -351,7 +351,7 @@ In this step, we will:
 
 * Create an instance of the gauge type as **angulargauge**.
 * Set the width and height (in pixels or %).
-* Finally specify the JSON data for the chart as string.
+* Finally, specify the JSON data for the chart as string.
 
 The code to render a guage is given below:
 
@@ -468,11 +468,11 @@ See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attr
 
 ## Create your first map
 
-In this section, we will create a visualization using the map of **World**. Take a look at the map shown below:
+In this section, we will create a visualization using the map of **World** showing the **Average annual population growth** across all continents. Take a look at the map shown below:
 
 {% embed_chart getting-started-your-first-map.js %}
 
-The data for this chart is represented in a table below:
+The data for the map is represented in a table below:
 
 State|Entity Name|Value|
 -|-|-
@@ -483,7 +483,13 @@ Europe|EU|40|
 Africa|AF|2.58|
 Australia|AU|1.30|
 
-> In the above table, the column **Entity Name** represents the geographical entities represnted in the map, whose full names are given in the **State** column in this example. However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id`s of the map you want to create.
+> In the above table, the column **Entity Name** represents the geographical entities represnted in the map, whose full names are given in the **State** column in this example. 
+
+However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). 
+
+For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. 
+
+We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id`s of the map you want to create.
 
 ### Convert tabular data into JSON format
 
@@ -634,6 +640,7 @@ The full HTML code is given below:
 <head>
     <title>My First map using FusionCharts Suite XT</title>
     <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
     <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
