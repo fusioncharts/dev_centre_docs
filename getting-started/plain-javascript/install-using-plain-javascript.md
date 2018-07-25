@@ -82,74 +82,6 @@ The consolidated code is shown below:
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript '@@open-newtab').
 
-### Package-specific Dependencies
-
-All package-specific charts are dependent on the `fusioncharts.js`. Therefore, whenever you include a package-specific chart in your project, it must be preceded by inclusion of `fusioncharts.js`.
-
-* To render the charts specific to the PowerCharts package, include only `powercharts.js` along with `fusioncharts.js`:
-
-```html
-<script src="path/to/local/fusioncharts.js"> </script>
-<script src="path/to/local/fusioncharts.powercharts.js"> </script>
-```
-
-* To render only the widgets specific to the FusionWidgets package, include the `fusionwidgets.js along with `fusioncharts.js`:
-
-```html
-<script src="path/to/local/fusioncharts.js"> </script>
-<script src="path/to/local/fusioncharts.widgets.js"> </script>
-```
-
-> To know which chart belongs to which package, refer to **[list of charts](https://www.fusioncharts.com/dev/getting-started/list-of-charts.html)**.
-
-### Chart-specific Dependencies
-
-For some chart types, you need to include/exclude certain files and in a specific order. Following  are the chart types, and the corresponding files:
-
-* To render the **Zoom-Scatter** chart, it is necessary to include the `fusioncharts.js` and `fusioncharts.charts.js` files before the `fusioncharts.zoomscatter.js` file.
-
-```html
-<script src = "path/to/local/fusioncharts/fusioncharts.js"> </script> 
-<script src = "path/to/local/fusioncharts/fusioncharts.charts.js"> </script>  
-<script src = "path/to/local/fusioncharts/fusioncharts.zoomscatter.js"> </script>
-```
-
-* To render the treemap chart, include the **fusioncharts.js** and **fusioncharts.powercharts.js** files before the **fusioncharts.treemap.js** file.
-
-```html
-<script src = "path/to/local/fusioncharts/fusioncharts.js"> </script>  
-<script src = "path/to/local/fusioncharts/fusioncharts.powercharts.js"> </script>  
-<script src = "path/to/local/fusioncharts/fusioncharts.treemap.js"> </script>
-```
-
-* To render the Gantt chart only the **fusioncharts.js** and the **fusioncharts.gantt.js** files are needed.
-
-```html
-<script src = "path/to/local/fusioncharts/fusioncharts.js"> </script>  
-<script src = "path/to/local/fusioncharts/fusioncharts.gantt.js"> </script>
-```
-
-* To render the Zoom line chart only the **fusioncharts.js** and the **fusioncharts.zoomline.js** files are needed.
-
-```html
-<script src = "path/to/local/fusioncharts/fusioncharts.js"> </script>  
-<script src = "path/to/local/fusioncharts/fusioncharts.zoomline.js"> </script>
-```
-
-* To render the Overlapped Bar 2D chart only the **fusioncharts.js** and the **fusioncharts.overlappedbar2d.js** files are needed.
-
-```html
-<script src = "path/to/local/fusioncharts/fusioncharts.js"> </script>  
-<script src = "path/to/local/fusioncharts/fusioncharts.overlappedbar2d.js"> </script>
-```
-
-* To render the Overlapped Column 2D chart only the **fusioncharts.js** and the **fusioncharts.overlappedcolumn2d.js** files are needed.
-
-```html
-<script src = "path/to/local/fusioncharts/fusioncharts.js"> </script>  
-<script src = "path/to/local/fusioncharts/fusioncharts.overlappedcolumn2d.js"> </script>
-```
-
 ### Installing FusionMaps (map visualizations) for your project
 
 FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. To render a map, you need the `fusioncharts.maps.js`, and the map definition files. 
@@ -337,8 +269,6 @@ The installation of both the module is shown below:
 </div>
 </div>
 
-
-
 **Step 1: Install the `fusioncharts` package via `npm`**
 
 To install the `fusioncharts` package as shown below:
@@ -398,7 +328,6 @@ Using `import` statements:
 import FusionCharts from 'path/to/local/node_modules/fusioncharts/fusioncharts.js';
 ```
 
-
 **Step 3: Load the `fusionmaps` module** and the map definition file in any one of the two modes:
 
 **Using `require()`:**
@@ -439,3 +368,37 @@ import California from 'path/to/local/node_modules/fusionmaps/maps/fusioncharts.
 ```
 
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are fetched from there.
+
+### Include Themes via **npm**
+
+Themes shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
+
+In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
+
+* Visual appearance (data plot color, font color, font size, etc.)
+* Behavior (hover effects for data plots)
+* Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme)
+
+The FusionCharts Suite download package also contains the predefined theme files under `fusioncharts-suite-xt > js > themes` folder. The folder structure is shown below:
+
+![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
+
+To include the definition files placed in **fusioncharts/themes**, copy the following line of code:
+
+```Shell
+import FusionCharts from 'fusioncharts/core'
+```
+
+To include the **theme engine extension**, copy the following line of code:
+
+```Shell
+import ThemeEngine from 'fusioncharts/features/theme-engine';
+```
+
+To include the theme file, copy the following line of code:
+
+```Shell
+import fusion from 'fusioncharts/themes/es/fusioncharts.fusion'
+```
+
+> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
