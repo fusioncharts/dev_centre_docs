@@ -335,19 +335,19 @@ The installation of both the module is shown below:
     npm install fusioncharts
 </code></pre>
 <div class="mt-20"><strong>Step 2: Load the fusioncharts module</strong></div>
-<div class="pb-10">After you have installed fusioncharts via npm, you can include it in one of the three ways:</div>
-<div class="mt-20"><strong>Using require():</strong></div>
+<div class="pb-10">After you have installed fusioncharts via npm, you can include <strong>using require():</strong> </div>
 <pre><code class="custom-hlc language-json">
     require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
 </code></pre>
-<div class="mt-30 pb-10"><strong>Using import statements:</strong></div>
+<div class="mt-20"><strong>To include PowerCharts using require();</strong></div>
 <pre><code class="custom-hlc language-json">
-    import FusionCharts from 'path/to/local/node_modules/fusioncharts/fusioncharts.js';
+    require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
+    require('path/to/local/node_modules/fusioncharts/fusioncharts.powercharts.js');
 </code></pre>
-
-<div class="mt-20pb-10"><strong>Using &lt;script&gt;&lt;/script&gt; tags in the head of HTML file:</strong></div>
-<pre><code class="custom-hlc language-javascript">
-    &lt;script src="path/to/local/node_modules/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
+<div class="mt-20"><strong>To include FusionWidgets using require();</strong></div>
+<pre><code class="custom-hlc language-json">
+    require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
+    require('path/to/local/node_modules/fusioncharts/fusioncharts.widgets.js');
 </code></pre>
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
