@@ -363,7 +363,7 @@ import FusionCharts from 'path/to/local/node_modules/fusioncharts/fusioncharts.j
 ```
 
 
-**Step 3: Load the `fusionmaps` module** in any one of the two modes:
+**Step 3: Load the `fusionmaps` module** and the map in any one of the two modes:
 
 **Using `require()`:**
 
