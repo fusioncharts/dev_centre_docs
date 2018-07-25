@@ -31,10 +31,46 @@ class App extends React.Component {
 
         this.state = {
             type: 'column2d',
-            width: '600',
+            width: '700',
             height: '400',
             dataFormat: 'json',
-            dataSource: { /* see data tab */ },
+            dataSource: {
+                // Chart Configuration
+                "chart": {
+                    "caption": "Countries With Most Oil Reserves [2017-18]",
+                    "subCaption": "In MMbbl = One Million barrels",
+                    "xAxisName": "Country",
+                    "yAxisName": "Reserves (MMbbl)",
+                    "numberSuffix": "K",
+                    "theme": "fusion",
+                },
+                // Chart Data
+                "data": [{
+                    "label": "Venezuela",
+                    "value": "290"
+                }, {
+                    "label": "Saudi",
+                    "value": "260"
+                }, {
+                    "label": "Canada",
+                    "value": "180"
+                }, {
+                    "label": "Iran",
+                    "value": "140"
+                }, {
+                    "label": "Russia",
+                    "value": "115"
+                }, {
+                    "label": "UAE",
+                    "value": "100"
+                }, {
+                    "label": "US",
+                    "value": "30"
+                }, {
+                    "label": "China",
+                    "value": "30"
+                }]
+            },
         };
 
         this.updateData = this.updateData.bind(this);
@@ -89,10 +125,46 @@ class App extends React.Component {
 
         this.state = {
             type: 'column2d',
-            width: '600',
+            width: '700',
             height: '400',
             dataFormat: 'json',
-            dataSource: { /* see data tab */ },
+            dataSource: {
+                // Chart Configuration
+                "chart": {
+                    "caption": "Countries With Most Oil Reserves [2017-18]",
+                    "subCaption": "In MMbbl = One Million barrels",
+                    "xAxisName": "Country",
+                    "yAxisName": "Reserves (MMbbl)",
+                    "numberSuffix": "K",
+                    "theme": "fusion",
+                },
+                // Chart Data
+                "data": [{
+                    "label": "Venezuela",
+                    "value": "290"
+                }, {
+                    "label": "Saudi",
+                    "value": "260"
+                }, {
+                    "label": "Canada",
+                    "value": "180"
+                }, {
+                    "label": "Iran",
+                    "value": "140"
+                }, {
+                    "label": "Russia",
+                    "value": "115"
+                }, {
+                    "label": "UAE",
+                    "value": "100"
+                }, {
+                    "label": "US",
+                    "value": "30"
+                }, {
+                    "label": "China",
+                    "value": "30"
+                }]
+            },
         };
 
         this.updateData = this.updateData.bind(this);
@@ -115,21 +187,232 @@ class App extends React.Component {
             dataSource: prevDs,
         });
     }
-
-    render() {
-        return (
-            <div>
-            <ReactFC {...this.state} />
-            <br />
-            <br />
-            <center><button style={{ padding: '5px 10px', background: '#fbfbfb' }} onClick={this.updateData}>Change Chart Data</button></center>
-            </div>
-        );
-    }
 }
 
 ReactDOM.render( <
     App / > ,
     document.getElementById('root'),
 );
+```
+
+## Update Chart Attributes
+
+A chart, configured to update the **chart caption** and **sub-caption** alignment dynamically, is shown below (click any one of the radio buttons shown below the chart to change the caption and sub-caption alignment):
+
+{% embed_chart configure-charts-using-react-example-2.js %}
+
+The code to render the above chart is given below:
+
+```
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+        type: 'column2d',
+        width: '700',
+        height: '400',
+        dataFormat: 'json',
+        dataSource: {
+                // Chart Configuration
+                "chart": {
+                    "caption": "Countries With Most Oil Reserves [2017-18]",
+                    "subCaption": "In MMbbl = One Million barrels",
+                    "xAxisName": "Country",
+                    "yAxisName": "Reserves (MMbbl)",
+                    "numberSuffix": "K",
+                    "theme": "fusion",
+                },
+                // Chart Data
+                "data": [{
+                    "label": "Venezuela",
+                    "value": "290"
+                }, {
+                    "label": "Saudi",
+                    "value": "260"
+                }, {
+                    "label": "Canada",
+                    "value": "180"
+                }, {
+                    "label": "Iran",
+                    "value": "140"
+                }, {
+                    "label": "Russia",
+                    "value": "115"
+                }, {
+                    "label": "UAE",
+                    "value": "100"
+                }, {
+                    "label": "US",
+                    "value": "30"
+                }, {
+                    "label": "China",
+                    "value": "30"
+                }]
+            },
+        };
+
+        this.changeBackgroundColor = this.changeBackgroundColor.bind(this);
+        this.changeCaptionTextAlignment = this.changeCaptionTextAlignment.bind(this);
+    }
+
+    // Handler for 'Change Background' button.
+    // Changes the chart background color.
+    changeBackgroundColor() {
+        const prevDs = Object.assign({}, this.dataSource);
+        prevDs.chart.bgColor = '#efefef';
+        this.setState({
+            dataSource: prevDs,
+        });
+    }
+
+    // Handler for 'Change CaptionAlignment' button.
+    // Changes the caption alignment to left.
+    changeCaptionTextAlignment() {
+        const prevDs = Object.assign({}, this.dataSource);
+        prevDs.chart.captionAlignment = 'left';
+        this.setState({
+            dataSource: prevDs,
+        });
+    }
+```
+
+The full code of the above sample is given below:
+
+```
+import React from 'react';
+import ReactDOM from 'react-dom';
+import FusionCharts from 'fusioncharts';
+import Charts from 'fusioncharts/fusioncharts.charts';
+import ReactFC from 'react-fusioncharts';
+import FusionTime from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+ReactFC.fcRoot(FusionCharts, Charts, FusionTime);
+
+class App extends React.Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+        type: 'column2d',
+        width: '700',
+        height: '400',
+        dataFormat: 'json',
+        dataSource: {
+                // Chart Configuration
+                "chart": {
+                    "caption": "Countries With Most Oil Reserves [2017-18]",
+                    "subCaption": "In MMbbl = One Million barrels",
+                    "xAxisName": "Country",
+                    "yAxisName": "Reserves (MMbbl)",
+                    "numberSuffix": "K",
+                    "theme": "fusion",
+                },
+                // Chart Data
+                "data": [{
+                    "label": "Venezuela",
+                    "value": "290"
+                }, {
+                    "label": "Saudi",
+                    "value": "260"
+                }, {
+                    "label": "Canada",
+                    "value": "180"
+                }, {
+                    "label": "Iran",
+                    "value": "140"
+                }, {
+                    "label": "Russia",
+                    "value": "115"
+                }, {
+                    "label": "UAE",
+                    "value": "100"
+                }, {
+                    "label": "US",
+                    "value": "30"
+                }, {
+                    "label": "China",
+                    "value": "30"
+                }]
+            },
+        };
+
+        this.changeBackgroundColor = this.changeBackgroundColor.bind(this);
+        this.changeCaptionTextAlignment = this.changeCaptionTextAlignment.bind(this);
+    }
+
+    // Handler for 'Change Background' button.
+    // Changes the chart background color.
+    changeBackgroundColor() {
+        const prevDs = Object.assign({}, this.dataSource);
+        prevDs.chart.bgColor = '#efefef';
+        this.setState({
+            dataSource: prevDs,
+        });
+    }
+
+    // Handler for 'Change CaptionAlignment' button.
+    // Changes the caption alignment to left.
+    changeCaptionTextAlignment() {
+        const prevDs = Object.assign({}, this.dataSource);
+        prevDs.chart.captionAlignment = 'left';
+        this.setState({
+            dataSource: prevDs,
+        });
+    }
+
+    render() {
+        return (
+            <div>
+                <ReactFC {...this.state} />
+                <br />
+                <br />
+                <center>
+                    <form>Change Caption Alignment
+                        <input type="radio" name="Left" value="male" checked> Left<br>
+                        <input type="radio" name="Center" value="female"> Center<br>
+                        <input type="radio" name="Right" value="other"> Right  
+                    </form> 
+                </center>
+            </div>
+        );
+    }
+}
+
+ReactDOM.render(
+    <App />,
+    document.getElementById('root'),
+);
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{% embed_chart configure-charts-using-react-example-3.js %}
+
+The code to render the above chart is given below:
+
+```
+
+```
+
+The full code of the above sample is given below:
+
+```
+
 ```

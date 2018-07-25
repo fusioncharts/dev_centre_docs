@@ -40,7 +40,7 @@
             "label": "China",
             "value": "30"
         }]
-    }
+    },
     events: {
         "beforeRender": function(evt, args) {
             var controls = document.createElement('div'),
