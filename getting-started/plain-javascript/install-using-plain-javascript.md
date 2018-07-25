@@ -228,16 +228,32 @@ The `fusioncharts` package for `npm` can now be installed using two different mo
         <th>Description</th>
     </tr>
     <tr>
-        <td>`charts`</td>
-        <td>Include this to include all charts (similar to `fusioncharts.charts.js`)</td>
-    </tr>
-    <tr>
         <td>`core`</td>
-        <td>Core  module, will be used to extend functionalities</td>
+        <td>Contains the FusionCharts constructor.</td>
     </tr>
     <tr>
-        <td>`es`</td>
-        <td>Entire fusioncharts available as **es6** module excluding map definitions</td>
+        <td>`viz`</td>
+        <td>Contains all the individual vizualizations (Charts , PowerCharts, Widgets)</td>
+    </tr>
+    <tr>
+        <td>`charts`</td>
+        <td>Contains all the vizualizations of the **Charts** package. (similar to `fusioncharts.charts.js`)</td>
+    </tr>
+    <tr>
+        <td>`powercharts`</td>
+        <td>Contains all the vizualizations of the **PowerCharts** package.</td>
+    </tr>
+    <tr>
+        <td>`widgets`</td>
+        <td>Contains all the vizualizations of the **FusionWidgets** package.</td>
+    </tr>
+    <tr>
+        <td>`maps`</td>
+        <td>Contains the map renderer and the map definition files of **World** and **USA**</td>
+    </tr>
+    <tr>
+        <td>`themes`</td>
+        <td>Contaians all the theme files. </td>
     </tr>
     <tr>
         <td>`features`</td>
@@ -274,29 +290,14 @@ The `fusioncharts` package for `npm` can now be installed using two different mo
             </ul>
         </td>
     </tr>
-    <tr>
-        <td>`maps`</td>
-        <td>Included Demo Maps</td>
-    </tr>
-    <tr>
-        <td>`powercharts`</td>
-        <td>Included reference to all powercharts</td>
-    </tr>
-    <tr>
-        <td>`themes`</td>
-        <td>Included all the theme files </td>
-    </tr>
-    <tr>
-        <td>`viz`</td>
-        <td>Included all the individual charts (Charts , PowerCharts, Widgets)</td>
-    </tr>
-    <tr>
-        <td>`widgets`</td>
-        <td>Included reference to all widgets</td>
-    </tr>
+    
+    
+    
+    
+    
 </table>
 
-* **FusionCharts CJS module (`deprecated`)** - This module is the traditional FusionCharts library which doea not allow you to selectively load charts and features. If you want to use an angular gauge you have to include the entire `fusionwidgets` module. 
+* **FusionCharts CJS module (`deprecated`)** - This module is the traditional FusionCharts library which does not allow you to selectively load charts and features. If you want to use an angular gauge you have to include the entire `fusionwidgets` module. 
 
 The installation of both the module is shown below:
 
@@ -347,7 +348,7 @@ npm install fusionmaps
 
 **Step 2: Load `fusioncharts` module**
 
-The `fusionmaps` package has dependency on the `fusioncharts` package. Therefore, to use `fusionmaps`, it is necessary to first include `fusioncharts` in your project in any one of the three ways:
+The `fusionmaps` package has dependency on the `fusioncharts` package. Therefore, to use `fusionmaps`, it is necessary to first include `fusioncharts` in your project in any one of the two ways:
 
 Using `require()`:
 
@@ -361,14 +362,26 @@ Using `import` statements:
 import FusionCharts from 'path/to/local/node_modules/fusioncharts/fusioncharts.js';
 ```
 
-Using `<script></script>` tags in the head of HTML file:
 
-```html
-<script src="path/to/local/node_modules/fusioncharts/fusioncharts.js"></script>
+**Step 3: Load the `fusionmaps` module** in any one of the two modes:
+
+**Using `require()`:**
+
+```javascript
+require('path/to/local/node_modules/fusionmaps');
+require('path/to/local/node_modules/fusionmaps/maps/fusioncharts.world.js');
 ```
-> We don't recommend this method if you installed the package using `npm`.
 
-**Step 3: Load the `fusionmaps` module**
+**Using `import` statements:**
+
+```javascript
+import FusionMaps from 'path/to/local/node_modules/fusionmaps';
+import California from 'path/to/local/node_modules/fusionmaps/maps/fusioncharts.california.js';
+```
+
+
+
+To load the `fusionmaps` module 
 
 If you have installed `fusionmaps` and is about to use it in your project, most likely it is because your map visualization requirements are not fulfilled by the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package by default.
 
@@ -380,19 +393,7 @@ Replace **MAP_ALIAS** by the map's JavaScript alias. Click [here](https://www.fu
 
 Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. You can do it using any one of the following three methods:
 
-**Using `require()`:**
 
-```javascript
-require('path/to/local/node_modules/fusionmaps');
-require('path/to/local/node_modules/fusionmaps/maps/fusioncharts.california.js');
-```
-
-**Using `import` statements:**
-
-```javascript
-import FusionMaps from 'path/to/local/node_modules/fusionmaps';
-import California from 'path/to/local/node_modules/fusionmaps/maps/fusioncharts.california.js';
-```
 
 **Using `<script></script>` tags in the head of HTML file:**
 
