@@ -229,76 +229,105 @@ The `fusioncharts` package for `npm` can now be installed using two different mo
 The installation of both the module is shown below:
 
 <div class="code-wrapper">
-<ul class='code-tabs'>
-  <li class='active'><a data-toggle='json'>ES6</a></li>
-  <li><a data-toggle='xml'>CJS</a></li>
+<ul class="code-tabs extra-tabs">
+    <li class="active"><a data-toggle="es6">ES6</a></li>
+    <li><a data-toggle="cjs">CJS</a></li>
 </ul>
-<div class='tab-content'>
-<div class='tab json-tab active'>
-<div><strong>.aspx</strong></div>
-<pre><code class="custom-hlc language-cs">
-    CODE
+<div class="tab-content extra-tabs">
+<div class="tab es6-tab active">
+<div class="mt-10 pb-10"><strong>How to use ES6 to render a chart?</strong></div>
+<div><strong>Step 1</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    // Include the core fusioncharts file from core  -
+    import FusionCharts from 'fusioncharts/core';
+    
+    // Include the chart from viz folder
+    import ChartType from fusioncharts/viz/[ChartType]
+    
+    // E.g. import Pie2d from 'fusioncharts/viz/pie2d';
+    // Add the chart as dependency
+    FusionCharts.addDep(ChartType);
+    
+    // E.g. FusionCharts.addDep(Pie2d) -( Pie2d from above )
+    // Create an Instance with chart options
+    var chartInstance = new FusionCharts({
+        type: 'chartType',
+        ...allOtherAttributes
+    });
+    // Render
+    chartInstance.render()
 </code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-<div class='tab xml-tab'>
-<div><strong>Step 1: Install the fusioncharts package via npm</strong></div>
-<div>To include the fusioncharts package as shown below:</div>
+<div class="mt-30"><strong>Using optional features</strong></div>
+<div class="pb-10">Optional features reside inside the features folder <strong>node_modules/fusioncharts/features/</strong></div>
+<div class="mt-20"><strong>ignore-case-ext</strong></div>
+<div class="pb-10">Extension is required if you want all the attributes's case to be ignored , Otherwise the attributes provided must be in lowercase as shown below:</div>
 <pre><code class="custom-hlc language-bash">
-    npm install fusioncharts
+    var gantt = new FusionCharts({
+        type:'column2d',
+        width: '700',
+        height: '400',
+        dataFormat: 'json',
+        dataSource: dataSourceList.gantt
+    }) .render('gantt');
 </code></pre>
-<div><strong>Step 2: Load the fusioncharts module</strong></div>
-<div>After you have installed fusioncharts via npm, you can include it in one of the three ways:</div>
-<div><strong>Using require():</strong></div>
+<div class="pb-10">Above example work with the ignore-case-ext, if we don't add the extension we have to choose lowercase version shown below:</div>
 <pre><code class="custom-hlc language-bash">
-    require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
+    var gantt = new FusionCharts({
+        type:'gantt',
+        width: '750',
+        height: '500',
+        dataformat: 'json',
+        datasource: dataSourceList.gantt
+    }) .render('gantt');
 </code></pre>
-<div><strong>Using import statements:</strong></div>
-<pre><code class="custom-hlc language-bash">
-    import FusionCharts from 'path/to/local/node_modules/fusioncharts/fusioncharts.js';
+<div class="pb-10">Adding extension is same as adding any other dependency</div>
+<pre><code class="custom-hlc language-json">
+    import IgnoreCaseExt from 'fusioncharts/features/ignore-case-ext';
+    FusionCharts.addDep(IgnoreCaseExt);
 </code></pre>
-<div><strong>Using &lt;script&gt;&lt;/script&gt; tags in the head of HTML file:</strong></div>
-<pre><code class="custom-hlc language-bash">
-    &lt;script src="path/to/local/node_modules/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
+<div class="mt-20"><strong>alertmanager</strong></div>
+<div class="pb-10">Extension is required if you want to display alerts on real time updates You can get the details here: https://www.fusioncharts.com/dev/chart-guide/standard-charts/real-time-charts#set-alert-manager <br/> Adding extension is same as adding any other dependency:</div>
+<pre><code class="custom-hlc language-javascript">
+    import AlertManager from 'fusioncharts/features/alertmanager';
+    FusionCharts.addDep(AlertManager);
 </code></pre>
-
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+<div class="mt-20"><strong>center-label-extension</strong></div>
+<div class="pb-10">Sets the center label in Doughnut 2D chart. The label cosmetics are configurable via the second optional parameter, which accepts a host of related properties.</div>
+<pre><code class="custom-hlc language-javascript">
+    import CenterLabelExtension from 'fusioncharts/features/center-label-extension';
+    FusionCharts.addDep(CenterLabelExtension);
+</code></pre>
+<div class="mt-20"><strong>crossline-adapter</strong></div>
+<div class="pb-10">Draw crossline when crossline is enabled.</div>
+<pre><code class="custom-hlc language-javascript">
+    import CrosslineAdapter from 'fusioncharts/features/crossline-adapter';
+    FusionCharts.addDep(CrosslineAdapter);
+</code></pre>
+<div class="mt-20"><strong>csv-transcoder</strong></div>
+<div class="pb-10">Get the data as csv , avail getDataAsCsv() in FusionCharts instance.</div>
+<pre><code class="custom-hlc language-javascript">
+    import CsvTranscoder from 'fusioncharts/features/csv-transcoder';
+    FusionCharts.addDep(CsvTranscoder);
+</code></pre>
+<div class="mt-20"><strong>data-skipping</strong></div>
+<div class="pb-10">Add data skipping features for charts Read more here: https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts#data-skipping.</div>
+<pre><code class="custom-hlc language-javascript">
+    import DataSkipping from 'fusioncharts/features/data-skipping';
+    FusionCharts.addDep(DataSkipping);
+</code></pre>
+<div class="mt-20"><strong>default-theme</strong></div>
+<div class="pb-10">Add default theme to charts and canvas.</div>
+<pre><code class="custom-hlc language-javascript">
+    import DefaultTheme from 'fusioncharts/features/default-theme';
+    FusionCharts.addDep(DefaultTheme);
+</code></pre>
+<div class="mt-20"><strong>exports-module</strong></div>
+<div class="pb-10">Exports a chart to image or PDF document using this function. The function can be configured to export a chart and present it as a file download. Exporting of a chart is not enabled by default. The chart's data must have the exportEnabled chart attribute explicitly set to 1.</div>
+<pre><code class="custom-hlc language-javascript">
+    import ExportsModule from 'fusioncharts/features/exports-module';
+    FusionCharts.addDep(ExportsModule);
+</code></pre>
 </div>
-
-</div>
-</div>
-
-**Step 1: Install the `fusioncharts` package via `npm`**
-
-To install the `fusioncharts` package as shown below:
-
-```Shell
-npm install fusioncharts
-```
-
-**Step 2: Load the `fusioncharts` module**
-
-After you have installed `fusioncharts` via `npm`, you can include it in one of the three ways:
-
-Using `require()`:
-
-```javascript
-require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
-```
-
-Using `import` statements:
-
-```javascript
-import FusionCharts from 'path/to/local/node_modules/fusioncharts/fusioncharts.js';
-```
-
-Using `<script></script>` tags in the head of HTML file:
-
-```html
-<script src="path/to/local/node_modules/fusioncharts/fusioncharts.js"></script>
-```
-> We don't recommend this method if you installed the package using `npm`.
 
 ### Include Maps via `npm`
 
