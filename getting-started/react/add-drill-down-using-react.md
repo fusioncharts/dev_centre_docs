@@ -9,14 +9,6 @@ In FusionCharts, you can create unlimited levels of drill-down charts with a sin
 
 You can drill-down into the descendant charts by clicking the data plot items of the parent chart. The descendant charts can either replace the parent chart, with an option to drill-up, or they can open in new windows or frames.
 
-Create linked charts by following the steps given below:
-
-1. Create the JSON/XML data for the parent chart. This is called the parent data source.
-
-2. Append the data string or the data URL for the descendant charts within the parent data source. If you append the data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
-
-Once you implement the steps above, the FusionCharts JavaScript class takes care of the rest.
-
 ### Features of the FusionCharts JavaScript Class
 
 * It automatically creates and shows a detailed descendant chart, when you click on the corresponding data plot item link in the parent chart.
@@ -28,6 +20,16 @@ Once you implement the steps above, the FusionCharts JavaScript class takes care
 * It uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed.
 
 * It supports drill-down to an unlimited number of levels.
+
+## Create drill down 
+
+To create drill down charts follow the steps given below:
+
+1. Create the JSON/XML data for the parent chart. This is called the parent data source.
+
+2. Append the data string or the data URL for the descendant charts within the parent data source. If you append the data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
+
+Once you implement the steps above, the FusionCharts JavaScript class takes care of the rest. Let's see the steps in details.
 
 As an example here, we will consider a simple scenario of a parent chart with the single level of drill-down.
 
