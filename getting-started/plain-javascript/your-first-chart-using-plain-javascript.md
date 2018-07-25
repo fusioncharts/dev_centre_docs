@@ -199,8 +199,8 @@ The full HTML code is shown below:
 
 <head>
     <title>My first chart using FusionCharts Suite XT</title>
-    <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fint.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
             var revenueChart = new FusionCharts({
@@ -409,8 +409,8 @@ The full HTML code is given below:
 
 <head>
     <title>My first gauge using FusionWidgets XT</title>
-    <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
             var csatGauge = new FusionCharts({
@@ -485,7 +485,7 @@ Australia|AU|1.30|
 
 > In the above table, the column **Entity Name** represents the geographical entities represnted in the map, whose full names are given in the **State** column in this example. 
 
-However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). 
+However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (refer to the `json` data in the next section). 
 
 For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. 
 
@@ -557,7 +557,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 ### Create an instance of the map
 
-In this step, we will create an instance of the map type as **world**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will create an instance of the map type as **world**, set the **width** and the **height** (in pixels or %), and finally specify the JSON data for the chart as string.
 
 The code to render a chart is given below:
 
@@ -639,9 +639,9 @@ The full HTML code is given below:
 
 <head>
     <title>My First map using FusionCharts Suite XT</title>
-    <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
     <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
             var salesByState = new FusionCharts({
@@ -720,7 +720,7 @@ The full HTML code is given below:
 </html>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. A list of countries of WORLD, and their respective `id`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') for the map of world. A list of countries of WORLD, and their respective `id`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
 ## Problem rendering the chart?
 
