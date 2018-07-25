@@ -84,16 +84,16 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ### Package-specific Dependencies
 
-All package-specific charts are dependent on the `fusioncharts.js` core module. Therefore, whenever you include a package-specific chart in your project, it must be preceded by inclusion of `fusioncharts.js`.
+All package-specific charts are dependent on the `fusioncharts.js`. Therefore, whenever you include a package-specific chart in your project, it must be preceded by inclusion of `fusioncharts.js`.
 
-* To render a chart belonging to the PowerCharts package, load the PowerCharts module:
+* To render the charts specific to the PowerCharts package, include only `powercharts.js` along with `fusioncharts.js`:
 
 ```html
 <script src="path/to/local/fusioncharts.js"> </script>
 <script src="path/to/local/fusioncharts.powercharts.js"> </script>
 ```
 
-* To render a chart belonging to the FusionWidgets package, load the FusionWidgets module:
+* To render only the widgets specific to the FusionWidgets package, include the `fusionwidgets.js along with `fusioncharts.js`:
 
 ```html
 <script src="path/to/local/fusioncharts.js"> </script>
@@ -152,27 +152,32 @@ For some chart types, you need to include/exclude certain files and in a specifi
 
 ### Installing FusionMaps (map visualizations) for your project
 
-FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. To render a map, you need the FusionMaps library, included in this package, and map definition file (which contains rendering path for each country, state, region etc.). 
+FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. To render a map, you need the FusionMaps library, included in the FusionCharts Suite XT downloaded package and the map definition files. 
 
-In this zip file, you’ll find only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files here, when you need to plot maps of those countries/regions.
+In the downloaded package, you’ll find only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
 To render a map using FusionCharts, you first need to include `fusioncharts.maps.js` and then the relevant map definition file, as below.
 
+```
 <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
+```
 
 In the above example, we’ve include the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
 
-To use another map from the 1000+ maps, once you’ve downloaded the map definition files, copy those map files to your current `/maps` folder. The map definition files are named in the format `[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. Then you’ll need to include that map file as under:
+To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, tnen copy those map files to your current `/maps` folder. The map definition files are named in the format `[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. Then include the respective map file as under:
 
+```
 <script type="text/javascript" src="path/to/local/maps/[MAP_ALIAS].js"></script>
+```
 
-Click here to explore all the maps available in FusionMaps XT.
+Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
 The consolidated code looks like as shown below:
 
+```
 <head>
     <meta charset="utf-8">
     <title>FusionCharts</title>
@@ -183,6 +188,7 @@ The consolidated code looks like as shown below:
     <!--world -->
     <script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
 </head>
+```
 
 ### Themes
 
