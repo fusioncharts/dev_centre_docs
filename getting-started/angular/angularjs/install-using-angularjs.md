@@ -208,24 +208,24 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 </ul>
 <div class='tab-content'>
 <div class='tab json-tab active'>
-<div class="mt-10 pb-10">Install fusioncharts package:</div>
+<div class="mt-10 pb-10">Install `fusioncharts` package:</div>
 <pre><code class="custom-hlc language-cv">
     npm install fusioncharts --save
 </code></pre>
-<div class="mt-10 pb-10">Install angularjs-fusioncharts wrapper:</div>
+<div class="mt-10 pb-10">Install `angularjs-fusioncharts` wrapper:</div>
 <pre><code class="custom-hlc language-cv">
     npm install angularjs-fusioncharts --save
 </code></pre>
-<div class="mt-10 pb-10">In your script.js file:</div>
+<div class="mt-10 pb-10">In your **script.js** file:</div>
 <div class="pb-10">1. require <strong>angular</strong></div>
 <pre><code class="custom-hlc language-cv">
     const angular = require('angular');
 </code></pre>
-<div class="pb-10">2. require <strong>fusioncharts</strong></div>
+<div class="pb-10">2. `require` <strong>fusioncharts</strong></div>
 <pre><code class="custom-hlc language-cv">
     const FusionCharts = require('fusioncharts');
 </code></pre>
-<div class="pb-10">3. require your chart module</div>
+<div class="pb-10">3. `require` your chart module</div>
 <pre><code class="custom-hlc language-cv">
     const Charts = require('fusioncharts/fusioncharts.charts'); // Charts
     const Widgets = require('fusioncharts/fusioncharts.widgets'); // Widgets
@@ -237,8 +237,8 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
     const OverlappedBar2d = require('fusioncharts/fusioncharts.overlappedbar2d');
     const Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');
 </code></pre>
-<div><strong>Note: </strong>Include the needed chart module</div>
-<div class="pb-10">4. Require the <strong>angularjs-fusioncharts</strong> module</div>
+<div><strong>Note: </strong>Include the chart module needed</div>
+<div class="pb-10">4. `require` the <strong>angularjs-fusioncharts</strong> module</div>
 <pre><code class="custom-hlc language-cv">
     require('angularjs-fusioncharts');
 </code></pre> 
@@ -282,9 +282,8 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 <pre><code class="custom-hlc language-cs">
     angular.module('your-app-name', ["ng-fusioncharts"]);
 </code></pre>
-<div class="pb-10">Now fusioncharts directive as a attribute as well as tag is available in your app.</div>
-<div class="mt-10 pb-10">Other required files</div>
-<div class="mt-10 pb-10">Include charts in script tag:</div>
+<div class="pb-10">Now the fusioncharts directive is available in your app both as an attribute as well as a tag .</div>
+<div class="mt-10 pb-10">Include charts other required files in script tag:</div>
 <pre><code class="custom-hlc language-cs">
     &lt;script src="node_modules/fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/fusioncharts.widgets.js"&gt;&lt;/script&gt;
@@ -294,7 +293,7 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
     &lt;script src="node_modules/fusioncharts/fusioncharts.zoomscatter.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/fusioncharts.zoomline.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/fusioncharts.overlappedbar2d.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts<br/>/fusioncharts.overlappedcolumn2d.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts/fusioncharts.overlappedcolumn2d.js"&gt;&lt;/script&gt;
 </code></pre>
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -304,6 +303,8 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 </div>
 
 ## Include Maps via NPM
+
+When installed via `npm`, the `fusioncharts` package contains only two map definitions in `node_modules/fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
@@ -339,6 +340,47 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 </div>
 </div>
 
+**Load other map definition files**
+
+You can use the other map definition files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package by default. To do so, follow the steps below:
+
+* First include the module `fusioncharts.maps.js`.
+* Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.  Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
+
+Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. You can do it using any one of the following two methods:
+
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>Require</a></li>
+  <li><a data-toggle='xml'>Script Tags</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<div class="pb-10">// require your map module</div>
+<pre><code class="custom-hlc language-cv">
+    const Maps = require('fusioncharts/fusioncharts.maps.js');
+    const World = require('fusioncharts/maps/fusioncharts.california.js');
+</code></pre>
+<div class="pb-10">// Pass the FusionCharts module to the Maps Modules</div>
+<pre><code class="custom-hlc language-cv">
+    Maps(FusionCharts);
+    World(FusionCharts);
+</code></pre> 
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab xml-tab'>
+<div class="mt-10 pb-10">Include map definitions in script tag:</div>
+<pre><code class="custom-hlc language-cs">
+&lt;script src="node_modules/fusioncharts/fusioncharts.maps.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts/maps/fusioncharts.california.js"&gt;&lt;/script&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
+
 ## Include Themes via NPM
 
 Themes shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
@@ -347,14 +389,9 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 
 * Visual appearance (data plot color, font color, font size, etc.)
 * Behavior (hover effects for data plots)
-* Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme)
+* Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme).
 
-FusionCharts Suite XT ships with the following predefined themes:
-
-* `fusion`
-* `zune`
-* `ocean`
-* `carbon`
+To include the definition files placed in **fusioncharts/themes**, follow any of the two ways shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs'>
