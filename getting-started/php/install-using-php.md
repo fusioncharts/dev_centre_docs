@@ -24,7 +24,7 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the files of the `js` folder from fusioncharts-suite-xt to your project folder.
+> Copy the files of the `js` folder from fusioncharts-suite-xt to your project folder.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
 
@@ -44,17 +44,13 @@ File Name|Description|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective file names.|
 
-Installation of FusionCharts Suite XT is simply copying and pasting the JavaScript files from the downloaded package into your project folder.
-
 * The download package also contains `fusioncharts.php` file under `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` folder. This folder will also contain FusionCharts PHP native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/php '@@open-newtab')**. The folder structure is shown below:
 
 ![PHP Js Folder]({% site.baseurl %}/gif/php-folder-structure.gif)
 
 > If you are using 3.12.2 or older versions, download v3.13.0 to get the `php` folder in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the `fusioncharts.php` file from `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` to your project's folder.
-
-[Download](https://www.fusioncharts.com/php-charts/) the **FusionCharts PHP** wrapper which contains the main class file `fusioncharts.php` in `php-wrapper` folder, then copy and paste this class file into the “Includes” folder of your project.
+To use **FusionCharts PHP wrapper** in your project `include` the `fusioncharts.php` file from `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` to your project's folder.
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php '@@open-newtab').
 
@@ -63,8 +59,6 @@ This completes the installation of FusionCharts in your application. To see how 
 FusionCharts can provide more than 1000 maps that cater to all your map visualization requirements. But to keep the library lightweight, by default it ships only with two maps - the **world** map, and the **map of the USA**. To render rest of the maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files.
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
-
-Once you have downloaded the map definition files, [download](https://www.fusioncharts.com/php-charts/) the FusionCharts PHP wrapper which contains the main class file `fusioncharts.php` in `php-wrapper/` folder, then copy and paste this class file in to “Includes” folder of your project.
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-map-10 '@@open-newtab').
 
