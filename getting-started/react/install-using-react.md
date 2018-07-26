@@ -215,11 +215,42 @@ Once the installation is done, you need to register the `fusioncharts` module. Y
 You can include the fusioncharts class and React FusionCharts plugin using any of the following process:
 
 <div class="code-wrapper">
-<ul class='code-tabs'>
+<ul class="code-tabs extra-tabs">
+    <li class="active"><a data-toggle="import">Import</a></li>
+    <li><a data-toggle="require">Require</a></li>
+</ul>
+<div class="tab-content extra-tabs">
+<div class="tab require-tab active">
+<div class="mt-30"><strong>require your `map` module:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    const Maps = require('fusioncharts/fusioncharts.maps.js');
+    const World = require('fusioncharts/maps/fusioncharts.world.js');
+</code></pre>
+<div class="mt-30"><strong>Pass the `fusioncharts` module to the `maps` module:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    Maps(FusionCharts);
+    World(FusionCharts);
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+<div class="tab scripttags-tab">
+<div class="mt-30"><strong>Include map definitions in **&lt;script&gt;** tag:</strong></div>
+<pre><code class="custom-hlc language-html">
+    &lt;script src="node_modules/fusioncharts/fusioncharts.maps.js"&gt;&lt;/script&gt;
+    &lt;script src="node_modules/fusioncharts/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
   <li class='active'><a data-toggle='import'>Import</a></li>
   <li><a data-toggle='require'>Require</a></li>
 </ul>
-<div class='tab-content'>
+<div class='tab-content extra-tabs'>
 <div class='tab import-tab active'>
 <div class="mt-30"><strong>To include the fusioncharts class:</strong></div>
 <pre><code class="custom-hlc language-javascript">
