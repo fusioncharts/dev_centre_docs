@@ -389,7 +389,7 @@ The `fusioncharts` package contains only two map definitions in `fusioncharts/ma
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab es6-tab active'>
-<div><strong>Using `import` statements:</strong></div>
+<div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
     // Include the core fusioncharts file from core 
     import FusionCharts from 'fusioncharts/core';
@@ -418,11 +418,85 @@ The `fusioncharts` package contains only two map definitions in `fusioncharts/ma
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab es6-tab active'>
-<div><strong>Using `import` statements:</strong></div>
+<div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
     import FusionCharts from 'fusioncharts/core';
     import FusionMaps from 'fusioncharts/maps';
     import World from 'fusioncharts/maps/es/fusioncharts.world';
+
+    // Add the chart as dependency
+    // E.g. FusionCharts.addDep(ChartType)
+    FusionCharts.addDep(Column2D);
+        
+    // Create an Instance with map options
+    var salesByState =   new  FusionCharts({
+        type: 'world', // Map type
+        renderAt: 'chart-container', // Container
+        width: '800', // Width of the chart
+        height: '550', // Height of the chart
+        dataFormat: 'json', // Data Type
+        dataSource: {
+        chart: {
+            // Map Configuration
+            "chart": {
+                "caption": "Average Annual Population Growth",
+                "subcaption": " 1955-2015",
+                "numbersuffix": "%",
+                "includevalueinlabels": "1",
+                "labelsepchar": ": ",
+                "entityFillHoverColor": "#FFF9C4",
+                "theme": "fusion"
+            },
+            // Aesthetics; ranges synced with the slider
+            "colorrange": {
+                "minvalue": "0",
+                "code": "#FFE0B2",
+                "gradient": "1",
+                "color": [{
+                    "minvalue": "0.5",
+                    "maxvalue": "1.0",
+                    "color": "#FFD74D"
+                }, {
+                    "minvalue": "1.0",
+                    "maxvalue": "2.0",
+                    "color": "#FB8C00"
+                }, {
+                    "minvalue": "2.0",
+                    "maxvalue": "3.0",
+                    "color": "#E65100"
+                }]
+            },
+            // Source data as JSON --> id represents countries of world.
+            "data": [{
+                "id": "NA",
+                "value": ".82",
+                "showLabel": "1"
+            }, {
+                "id": "SA",
+                "value": "2.04",
+                "showLabel": "1"
+            }, {
+                "id": "AS",
+                "value": "1.78",
+                "showLabel": "1"
+            }, {
+                "id": "EU",
+                "value": ".40",
+                "showLabel": "1"
+            }, {
+                "id": "AF",
+                "value": "2.58",
+                "showLabel": "1"
+            }, {
+                "id": "AU",
+                "value": "1.30",
+                "showLabel": "1"
+            }]
+        }
+    }
+});
+// Render
+chartInstance.render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -442,7 +516,7 @@ The `fusioncharts` package contains only two map definitions in `fusioncharts/ma
 
 **Load other map definition files**
 
-You can use the other map definition files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, follow the steps below:
+You can use the other map definition files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the other map definition files as shown below:
 
 **Install `fusionmaps` package**
 
@@ -461,7 +535,7 @@ The `fusionmaps` package has dependency on the `fusioncharts` package. Therefore
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab es6-tab active'>
-<div><strong>Using `import` statements:</strong></div>
+<div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
     import FusionCharts from 'fusioncharts/core';
 </code></pre>
@@ -486,7 +560,7 @@ Therefore, assuming that you need to render the map of California, the alias nam
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab es6-tab active'>
-<div><strong>Using `import` statements:</strong></div>
+<div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
     import FusionCharts from 'fusioncharts/core';
     import FusionMaps from 'fusioncharts/maps';
@@ -530,7 +604,7 @@ To include the definition files placed in **fusioncharts/themes**, follow any of
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab es6-tab active'>
-<div><strong>Using `import` statements:</strong></div>
+<div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
     import FusionCharts from 'fusioncharts/core'
 </code></pre>
