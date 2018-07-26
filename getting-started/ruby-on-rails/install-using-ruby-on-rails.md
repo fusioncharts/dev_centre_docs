@@ -1,14 +1,13 @@
 ---
-permalink: getting-started/ruby-on-rails/install-using-ruby-on-rails.html
 title: Installation | FusionCharts
 description: In this section, you will be shown how you can create a simple chart using the FusionCharts and ruby on rails.
 heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the **FusionCharts Ruby on Rails** wrapper that lets you create interactive, data-driven charts. It lets you generate the required JavaScript and HTML code as a string on the server, which is then used to render charts on a browser.
+FusionCharts Suite XT includes the **FusionCharts Rails gem** wrapper that lets you create interactive, data-driven charts. It receives the parameter which automatically generates the JavaScript and HTML code required to render the chart.
 
-In this article, we will show you how you can download and install the **FusionCharts Ruby on Rails** wrapper and all the other dependencies on your system.
+In this article, we will show you how you can download and install the **FusionCharts Rails gem** wrapper and all the other dependencies on your system.
 
 ## Download FusionCharts Library
 
@@ -22,31 +21,9 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the files of the `js` folder from fusioncharts-suite-xt to your project folder.
+> It is recommended that you copy the files of the `js` folder from fusioncharts-suite-xt to your projects in `vendor/assets/javascripts/fusioncharts/` folder.
 
-* The download package also contains `fusioncharts-rails` file under `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` folder. This folder will also contain Ruby on Rails FusionCharts native **Export Handlers**. The folder structure is shown below:
-
-![Ruby on Rails Js Folder]({% site.baseurl %}/gif/ror-folder-structure.gif)
-
-> If you are using 3.12.2 or older versions, download v3.13.0 to get the `rubyonrails` folder in the FusionCharts Suite XT package. 
-
-> It is recommended that you copy the `fusioncharts-rails.rb` file from `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` to your project folder.
-
-Copy the JavaScript files from above and paste them in the `vendor/assets/javascripts/fusioncharts/` folder.
-
-Add the following code lines in the **app/assets/javascripts/application.js** file:
-
-```
-//= require fusioncharts/fusioncharts
-//= require fusioncharts/fusioncharts.widgets
-//= require fusioncharts/themes/fusioncharts.theme.fusion
-```
-
-> Ensure that the **config.assets.debug** flag in the **development.rb** file (config/environments/development.rb) is enabled (set to **true**).
-
-Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the downloaded package into your project folder.
-
-Following is the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
+Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
 
 File Name|Description|
 -|-
@@ -63,6 +40,26 @@ File Name|Description|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definitions of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective file names.|
+
+* The download package also contains `fusioncharts-gem` under `fusioncharts-suite-xt > integrations > ror > fusioncharts-wrapper` folder. This folder will also contain native RoR FusionCharts **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/ruby-on-rails '@@open-newtab')**. The folder structure is shown below:
+
+Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the downloaded package into your project folder.
+
+![Ruby on Rails Js Folder]({% site.baseurl %}/gif/ror-folder-structure.gif)
+
+> If you are using 3.12.2 or older versions, download v3.13.0 to get the `ror` folder in the FusionCharts Suite XT package. 
+
+> It is recommended that you copy the `fusioncharts-rails.rb` file from `fusioncharts-suite-xt > integrations > ror > fusioncharts-wrapper` to your project folder.
+
+Add the following code lines in the **app/assets/javascripts/application.js** file:
+
+```
+//= require fusioncharts/fusioncharts
+//= require fusioncharts/fusioncharts.widgets
+//= require fusioncharts/themes/fusioncharts.theme.fusion
+```
+
+> Ensure that the **config.assets.debug** flag in the **development.rb** file (config/environments/development.rb) is enabled (set to **true**).
 
 Now, To install the Rails wrapper:
 
