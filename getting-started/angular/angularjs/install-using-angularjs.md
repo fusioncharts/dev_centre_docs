@@ -22,7 +22,7 @@ You can install FusionCharts in your angularjs project using any of the two mode
 
 ## Install using Direct JavaScript files
 
-In order to install and start working with Angularjs-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
+In order to install and start working with **Angularjs-FusionCharts** you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
 * JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
 * JavaScript files to render maps under `js > maps` folder.
@@ -32,15 +32,15 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the files of the `js` folder from fusioncharts-suite-xt to your project folder.
+> It is recommended that you copy the files of the `js` folder from `fusioncharts-suite-xt` to your project folder.
 
-* The download package also contains **angularjs-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > angularjs` folder. The folder structure is shown below:
+* The download package also contains **angular-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > angularjs > js` folder. The folder structure is shown below:
 
 ![AngularJS Js Folder]({% site.baseurl %}/gif/angularjs-folder-structure.gif)
 
 > If you are using 3.12.2 or older versions, download v3.13.0 to get the `angularjs` folder in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the JavaScript files of the `angularjs` folder from `fusioncharts-suite-xt > integrations > angularjs > js` to your project folder.
+> It is recommended that you copy the JavaScript files of the `angular-fusioncharts.js` file from `fusioncharts-suite-xt > integrations > angularjs > js` to your project folder.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
 
@@ -126,13 +126,13 @@ app.controller('MyController', function($scope) {
 
 ### Installing FusionMaps (map visualizations) for your project
 
-FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. To render a map, you need the `fusioncharts.maps.js`, and the map definition files. 
+FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. 
 
 In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
-To render a map using FusionCharts, you first need to include `fusioncharts.maps.js` and then the relevant map definition file, as below.
+To render a map, you need the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files as shown below:
 
 ```
 <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
@@ -140,6 +140,8 @@ To render a map using FusionCharts, you first need to include `fusioncharts.maps
 ```
 
 In the above example, we’ve include the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
+
+**Load other map definition files**
 
 To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, tnen copy those map files to your current `/maps` folder. The map definition files are named in the format `[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. Then include the respective map file as under:
 
