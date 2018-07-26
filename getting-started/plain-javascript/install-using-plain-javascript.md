@@ -314,7 +314,7 @@ The installation of both the module is shown below:
         }
     });
     // Render
-    chartInstance.render()
+    chartInstance.render();
 </code></pre>
 <div class="mt-30"><strong>Using optional features</strong></div>
 <div class="pb-10">Optional features reside inside the features folder <strong>fusioncharts/features/</strong></div>
@@ -353,19 +353,75 @@ The installation of both the module is shown below:
     npm install fusioncharts
 </code></pre>
 <div class="mt-20"><strong>Step 2: Load the fusioncharts module</strong></div>
-<div class="pb-10">After you have installed fusioncharts via npm, you can include <strong>using require():</strong> </div>
+<div class="pb-10">After you have installed fusioncharts via npm, include <strong>using require():</strong> </div>
 <pre><code class="custom-hlc language-json">
     var FusionCharts = require('fusioncharts');
+</code></pre>
+<pre><code class="custom-hlc language-json">
+    var FusionCharts = require('fusioncharts');
+    var Charts = require('fusioncharts/fusioncharts.charts');
+    Charts(FusionCharts);
+
+    // Create an Instance with chart options
+    var chartInstance = new FusionCharts({
+        type: 'Column2D',
+        width: '700', // Width of the chart
+        height: '400', // Height of the chart
+        dataFormat: 'json', // Data type
+        dataSource: {
+            chart: {
+                // Chart Configuration
+                "chart": {
+                    "caption": "Countries With Most Oil Reserves [2017-18]",
+                    "subCaption": "In MMbbl = One Million barrels",
+                    "xAxisName": "Country",
+                    "yAxisName": "Reserves (MMbbl)",
+                    "numberSuffix": "K",
+                    "theme": "fusion",
+                },
+                // Chart Data
+                "data": [{
+                    "label": "Venezuela",
+                    "value": "290"
+                }, {
+                    "label": "Saudi",
+                    "value": "260"
+                }, {
+                    "label": "Canada",
+                    "value": "180"
+                }, {
+                    "label": "Iran",
+                    "value": "140"
+                }, {
+                    "label": "Russia",
+                    "value": "115"
+                }, {
+                    "label": "UAE",
+                    "value": "100"
+                }, {
+                    "label": "US",
+                    "value": "30"
+                }, {
+                    "label": "China",
+                    "value": "30"
+                }]
+            }
+        }
+    });
+    // Render
+    chartInstance.render();
 </code></pre>
 <div class="mt-20"><strong>To include PowerCharts using require();</strong></div>
 <pre><code class="custom-hlc language-json">
    var FusionCharts = require('fusioncharts');
    var PowerCharts = require('fusioncharts/fusioncharts.powercharts');
+   PowerCharts(FusionCharts);
 </code></pre>
 <div class="mt-20"><strong>To include FusionWidgets using require();</strong></div>
 <pre><code class="custom-hlc language-json">
  var FusionCharts = require('fusioncharts');
- var FusionWidgets = require('fusioncharts/fusioncharts.widgets');
+ var Widgets = require('fusioncharts/fusioncharts.widgets');
+ Widgets(FusionCharts);
 </code></pre>
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
