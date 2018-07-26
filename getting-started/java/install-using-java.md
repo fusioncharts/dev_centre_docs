@@ -1,6 +1,6 @@
 ---
 title: Installation | FusionCharts
-description: This article talks about how you can install FusionCharts Java wrapper.
+description: This article talks about how you can install FusionCharts JSP wrapper.
 heading: Installation
 chartPresent: false
 ---
