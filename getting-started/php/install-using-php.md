@@ -6,7 +6,7 @@ heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the **FusionCharts PHP wrapper** that lets you create interactive, data-driven charts in your PHP website without writing any JavaScript code. JavaScript and HTML code is used to generate charts in the browsers. The wrapper receives the parameter which automatically generates the JavaScript and HTML code required to render the chart.
+FusionCharts Suite XT includes the FusionCharts server-side PHP wrapper that lets you create interactive, data-driven charts. FusionCharts uses JavaScript and HTML code to generate charts in the browser. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page for generating charts. Before we get into the installation process of the wrapper, let's take a look at what sets the wrapper apart.
 
 In this article, we will show you how you can download and install the `FusionCharts PHP` wrapper and all the other dependencies on your system.
 
