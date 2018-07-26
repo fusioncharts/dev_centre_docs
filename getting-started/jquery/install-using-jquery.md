@@ -362,14 +362,13 @@ World(FusionCharts);
 
 ### Include Themes via NPM
 
-FusionCharts Suite XT ships with the following predefined themes:
+Themes shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
 
-* `fusion`
-* `zune`
-* `ocean`
-* `carbon`
+In a theme file, we can centralize the following aspects of all the charts, gauges and maps:
 
-> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+* Visual appearance (data plot color, font color, font size, etc.)
+* Behavior (hover effects for data plots)
+* Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme)
 
 You can include the themes using any of the following process:
 
@@ -413,3 +412,5 @@ You can include the themes using any of the following process:
 
 </div>
 </div>
+
+> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
