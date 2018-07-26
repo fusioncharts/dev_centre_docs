@@ -409,7 +409,7 @@ The `fusioncharts` package contains only two map definitions in `fusioncharts/ma
 </div>
 
 
-**Step 2: Load the `fusionmaps` module** and the map definition file:
+**Step 2:** Load the `FusionMaps` renderer and the map definition file:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -422,7 +422,7 @@ The `fusioncharts` package contains only two map definitions in `fusioncharts/ma
 <pre><code class="custom-hlc language-javascript">
     import FusionCharts from 'fusioncharts/core';
     import FusionMaps from 'fusioncharts/maps';
-    import California from 'fusioncharts/maps/es/fusioncharts.world';
+    import World from 'fusioncharts/maps/es/fusioncharts.world';
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -442,22 +442,40 @@ The `fusioncharts` package contains only two map definitions in `fusioncharts/ma
 
 **Load other map definition files**
 
-You can use the other map definition files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package by default. To do so, follow the steps below:
+You can use the other map definition files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, follow the steps below:
 
 **Install `fusionmaps` package**
 
-Install the `fusionmaps` module as shown below:
-
 ```Shell
-npm install fusionmaps
+$ npm install fusionmaps
 ```
-The fusionmaps package has dependency on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project in any one of the two ways:
 
+Once the fusionmaps package is innstalled you will find all the map definition files in `fusionmaps/maps/es`. 
 
+The `fusionmaps` package has dependency on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project.
 
-* Include the 
-* First include the module `fusioncharts.maps.js`.
-* Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.  Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+  <li class='active'><a data-toggle='es6'>ES6</a></li>
+  <li><a data-toggle='cjs'>CJS</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab es6-tab active'>
+<div><strong>Using `import` statements:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import FusionCharts from 'fusioncharts/core';
+</code></pre>
+</div>
+<div class='tab cjs-tab'>
+<div><strong>Using `require()`:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    require('fusioncharts/fusioncharts.js');
+</code></pre>
+</div>
+</div>
+</div>
+
+Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.  Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
 
 Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. You can do it using any one of the following two methods:
 
