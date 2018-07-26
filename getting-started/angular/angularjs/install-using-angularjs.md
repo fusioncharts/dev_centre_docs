@@ -314,12 +314,12 @@ When installed via `npm`, the `fusioncharts` package contains only two map defin
 <div class="tab-content extra-tabs">
 <div class="tab require-tab active">
 <div class="mt-30"><strong>require your `map` module:</strong></div>
-<pre><code class="custom-hlc language-bash">
+<pre><code class="custom-hlc language-javascript">
     const Maps = require('fusioncharts/fusioncharts.maps.js');
     const World = require('fusioncharts/maps/fusioncharts.world.js');
 </code></pre>
 <div class="mt-30"><strong>Pass the `fusioncharts` module to the `maps` module:</strong></div>
-<pre><code class="custom-hlc language-bash">
+<pre><code class="custom-hlc language-javascript">
     Maps(FusionCharts);
     World(FusionCharts);
 </code></pre>
@@ -327,7 +327,7 @@ When installed via `npm`, the `fusioncharts` package contains only two map defin
 </div>
 <div class="tab scripttags-tab">
 <div class="mt-30"><strong>Include map definitions in &lt;script&gt;&lt;/script&gt; tag:</strong></div>
-<pre><code class="custom-hlc language-bash">
+<pre><code class="custom-hlc language-html">
     &lt;script src="node_modules/fusioncharts/fusioncharts.maps.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
 </code></pre>
@@ -347,29 +347,28 @@ You can use the other map definition files other than the **World Map** and the 
 Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. You can do it using any one of the following two methods:
 
 <div class="code-wrapper">
-<ul class='code-tabs'>
-  <li class='active'><a data-toggle='json'>Require</a></li>
-  <li><a data-toggle='xml'>Script Tags</a></li>
+<ul class="code-tabs extra-tabs">
+    <li class="active"><a data-toggle="require">Require</a></li>
+    <li><a data-toggle="scripttags">Script Tags</a></li>
 </ul>
-<div class='tab-content'>
-<div class='tab json-tab active'>
-<div class="pb-10">// require your map module</div>
-<pre><code class="custom-hlc language-cv">
+<div class="tab-content extra-tabs">
+<div class="tab require-tab active">
+<div class="mt-30"><strong>require your `map` module:</strong></div>
+<pre><code class="custom-hlc language-javascript">
     const Maps = require('fusioncharts/fusioncharts.maps.js');
     const World = require('fusioncharts/maps/fusioncharts.california.js');
 </code></pre>
-<div class="pb-10">// Pass the FusionCharts module to the Maps Modules</div>
-<pre><code class="custom-hlc language-cv">
+<div class="mt-30"><strong>Pass the `fusioncharts` module to the `maps` module:</strong></div>
+<pre><code class="custom-hlc language-javascript">
     Maps(FusionCharts);
     World(FusionCharts);
-</code></pre> 
+</code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-
-<div class='tab xml-tab'>
-<div class="mt-10 pb-10">Include map definitions in script tag:</div>
-<pre><code class="custom-hlc language-cs">
-&lt;script src="node_modules/fusioncharts/fusioncharts.maps.js"&gt;&lt;/script&gt;
+<div class="tab scripttags-tab">
+<div class="mt-30"><strong>Include map definitions in &lt;script&gt;&lt;/script&gt; tag:</strong></div>
+<pre><code class="custom-hlc language-html">
+    &lt;script src="node_modules/fusioncharts/fusioncharts.maps.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/maps/fusioncharts.california.js"&gt;&lt;/script&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -390,33 +389,33 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 
 To include the definition files placed in **fusioncharts/themes**, follow any of the two ways shown below:
 
+
 <div class="code-wrapper">
-<ul class='code-tabs'>
-  <li class='active'><a data-toggle='json'>Require</a></li>
-  <li><a data-toggle='xml'>Script Tags</a></li>
+<ul class="code-tabs extra-tabs">
+    <li class="active"><a data-toggle="require">Require</a></li>
+    <li><a data-toggle="scripttags">Script Tags</a></li>
 </ul>
-<div class='tab-content'>
-<div class='tab json-tab active'>
-<div class="pb-10">// require your themes</div>
-<pre><code class="custom-hlc language-cv">
+<div class="tab-content extra-tabs">
+<div class="tab require-tab active">
+<div class="mt-30"><strong>require your `themes`:</strong></div>
+<pre><code class="custom-hlc language-javascript">
     const Fusion = require('fusioncharts/themes/fusioncharts.fusion.js');
     const Zune = require('fusioncharts/themes/fusioncharts.zune.js');
     const Ocean = require('fusioncharts/themes/fusioncharts.ocean.js');
     const Carbon = require('fusioncharts/themes/fusioncharts.carbon.js');
 </code></pre>
-<div class="pb-10">// Pass the FusionCharts module to the Theme Modules</div>
-<pre><code class="custom-hlc language-cv">
+<div class="mt-30"><strong>Pass the `fusioncharts` module to the `theme` module:</strong></div>
+<pre><code class="custom-hlc language-javascript">
     Fusion(FusionCharts);
     Zune(FusionCharts);
     Ocean(FusionCharts);
     Carbon(FusionCharts);
-</code></pre> 
-
+</code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-<div class='tab xml-tab'>
-<div class="mt-10 pb-10">// To include theme definition in script tag:</div>
-<pre><code class="custom-hlc language-cs">
+<div class="tab scripttags-tab">
+<div class="mt-30"><strong>Include the theme files in &lt;script&gt;&lt;/script&gt; tag:</strong></div>
+<pre><code class="custom-hlc language-html">
     &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.ocean.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.zune.js"&gt;&lt;/script&gt;
