@@ -101,10 +101,16 @@ In the above example, we’ve included the World Map, whose map definition (path
 
 **Load other map definition files**
 
-To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. Then include the respective map file as shown below:
+To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. 
 
 ```
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
+```
+
+Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
+
+```
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"></script>
 ```
 
 Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
@@ -120,7 +126,7 @@ The consolidated code looks like as shown below:
     <!-- FusionMaps -->
     <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
     <!--world -->
-    <script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
+    <script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"></script>
     <script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 </head>
 ```
