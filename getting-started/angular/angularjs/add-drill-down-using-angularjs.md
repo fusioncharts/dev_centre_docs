@@ -37,7 +37,7 @@ The parent chart is a column 2D chart that shows the yearly sales of the top thr
 
 The above chart, when rendered, looks like the following:
 
-{% embed_chart add-drill-down-using-angularjs-example-1.js %}
+{% embed_chart add-drill-down-using-angular-example-1.js %}
 
 The JSON data to render the above chart:
 
@@ -143,10 +143,21 @@ The JSON data to render the above chart:
 }
 ```
 
-The full code of the above sample is given below:
+Now, create module and controller for the template. The code for the `js` file is given below:
 
 ```
 
 ```
 
-Click [here](http://jsfiddle.net/fusioncharts/k7mn6j5s/ "@@open-newtab") to edit the above chart.
+Now, use the `fusioncharts` directive in a template. The code for the ``html` file is given below:
+
+```
+<div fusioncharts
+    width="600" 
+    height="400"
+    type="msline"
+    chart="{{attrs}}"
+    categories="{{categories}}"
+    dataset="{{dataset}}"
+></div>
+```
