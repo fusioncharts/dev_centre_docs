@@ -199,11 +199,13 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
+
+
 ## Update Chart Attributes
 
 A chart, configured to update the **chart caption** and **sub-caption** alignment dynamically, is shown below (click any one of the radio buttons shown below the chart to change the caption and sub-caption alignment):
 
-{% embed_chart configure-charts-using-angular-example-2.js %}
+{% embed_chart configure-charts-using-react-example-2.js %}
 
 The JSON data to render the above chart is given below:
 
@@ -245,4 +247,135 @@ The JSON data to render the above chart is given below:
         "value": "30"
     }]
 },
+```
+
+### Setup the Main Module
+
+In this step, we will setup the main module to create the column2d chart. The code is given below:
+
+```
+// Setup needed in app.module.ts
+import {
+    NgModule,
+    enableProdMode
+} from '@angular/core'
+import {
+    AppComponent
+} from './app.component';
+import {
+    BrowserModule
+} from '@angular/platform-browser';
+import {
+    FusionChartsModule
+} from 'angular-fusioncharts';
+
+// Load FusionCharts
+import * as FusionCharts from 'fusioncharts';
+// Load Charts module
+import * as Charts from 'fusioncharts/fusioncharts.charts';
+// Load fusion theme
+import * as Fusion from 'fusioncharts/themes/fusioncharts.theme.fusion'
+
+// Add dependencies to FusionChartsModule
+FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion)
+
+@NgModule({
+    declarations: [
+        AppComponent,
+    ],
+    imports: [
+        BrowserModule,
+        FusionChartsModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
+
+> The `<fusioncharts></fusioncharts>` component is available for use in any component throughout your app. We will render our first chart in the main `app.component`.
+
+### Add data to `app.component.ts`
+
+Add the following code to `app.component.ts`:
+
+```
+// in app.component.ts
+import {
+    Component
+} from '@angular/core';
+
+@Component({
+    selector: 'app',
+    templateUrl: 'app.component.html',
+
+})
+
+export class AppComponent {
+
+    dataSource = {
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion",
+        },
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    };
+
+    changeBackgroundColor = function() {
+        this.dataSource.chart.bgColor = "#efefef";
+    };
+
+    changeCaptionTextAlignment = function() {
+        this.dataSource.chart.captionAlignment = "left";
+    };
+
+    constructor() {
+    }
+}
+```
+
+### Add data to `app.component.html`
+
+Add the following code to `app.component.html`:
+
+```
+<!-- in app.component.html -->
+<fusioncharts
+    width="700" 
+    height="400"
+    type="column2d"
+    [dataSource]="dataSource" >
+</fusioncharts>
+
+<p><a class="btn btn-default" (click)="changeBackgroundColor()">Change chart background color</a>
+    <a class="btn btn-default" (click)="changeCaptionTextAlignment()">Make Caption text left-aligned</a>
+</p>
 ```
