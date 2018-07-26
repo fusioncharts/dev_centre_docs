@@ -206,7 +206,7 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
     <li class="active"><a data-toggle="require">Require</a></li>
-    <li><a data-toggle="script">Script Tags</a></li>
+    <li><a data-toggle="scripttags">Script Tags</a></li>
 </ul>
 <div class="tab-content extra-tabs">
 <div class="tab require-tab active">
@@ -258,7 +258,7 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 
-<div class="tab script-tab">
+<div class="tab scripttags-tab">
 <div class="mt-30"><strong>Include `angularjs` package:</strong></div>
 <pre><code class="custom-hlc language-bash">
     npm install angular@1.7.2 --save
