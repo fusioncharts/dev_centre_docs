@@ -9,8 +9,8 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 This article focuses on how you can configure the following using `vue-fusioncharts` component:
 
-* [Update Chart Data]({% site.baseurl %}/getting-started/vue/configure-your-chart-using-vue#update-chart-data-1)
-* [Update Chart Attributes]({% site.baseurl %}/getting-started/vue/configure-your-chart-using-vue#update-chart-attributes-2)
+* [Update Chart Data]({% site.baseurl %}/getting-started/vue/configure-your-chart-using-vuejs#update-chart-data-1)
+* [Update Chart Attributes]({% site.baseurl %}/getting-started/vue/configure-your-chart-using-vuejs#update-chart-attributes-2)
 
 ## Update Chart Data
 

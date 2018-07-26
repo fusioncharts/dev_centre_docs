@@ -37,7 +37,7 @@ The parent chart is a column 2D chart that shows the yearly sales of the top thr
 
 The above chart, when rendered, looks like the following:
 
-{% embed_chart add-drill-down-using-vue-example-1.js %}
+{% embed_chart add-drill-down-using-angular-example-1.js %}
 
 The JSON data to render the above chart:
 
@@ -143,10 +143,62 @@ The JSON data to render the above chart:
 }
 ```
 
-The full code of the above sample is given below:
+In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
+
+The code to render a chart is given below:
 
 ```
+FusionCharts.ready(function() {
 
+    Vue.use(VueFusionCharts);
+
+    // Load datasource from data.json
+    var dataSource = getDataSource();
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            width: '600',
+            height: '400',
+            type: 'column2d',
+            dataFormat: 'json',
+            dataSource: dataSource
+        },
+        methods: {
+            configureLink: function(chart) {
+                this.chartInstance = chart; // Save it for further use
+
+                // Configure Drilldown attributes 
+                // See this : https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configureLink
+                this.chartInstance.configureLink({
+                    type: "pie2d",
+                    overlayButton: {
+                        message: 'Back',
+                        fontColor: '880000',
+                        bgColor: 'FFEEEE',
+                        borderColor: '660000'
+                    }
+                }, 0)
+            }
+        },
+        mounted: function() {
+            this.configureLink(this.$refs.fc.chartObj); // this.$refs.fc gets the vue-fusionchart component
+        }
+    });
+});
 ```
 
-Click [here](http://jsfiddle.net/fusioncharts/k7mn6j5s/ "@@open-newtab") to edit the above chart.
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
+
+```
+<div id="app">
+    <fusioncharts
+    :type="type"
+    :width="width"
+    :height="height"
+    :dataFormat="dataFormat"
+    :dataSource="dataSource"
+    ref="fc"
+    ></fusioncharts>
+</div>
+```
