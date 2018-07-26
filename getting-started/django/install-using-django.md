@@ -52,21 +52,15 @@ Installation of FusionCharts Suite XT merely involves copying and pasting the Ja
 
 > If you are using 3.12.2 or older versions, download v3.13.0 to get the `django` folder in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the `fusioncharts.py` file from `fusioncharts-suite-xt > integrations > django > fusioncharts-wrapper` to your project's folder.
+> It is recommended that you copy the `fusioncharts.py` file from `fusioncharts-suite-xt > integrations > django > fusioncharts-wrapper` to the `STATIC` folder in your project's folder.
 
-Now, place the FusionCharts library inside the **"static/FusionCharts"** folder in your project.
+Assuming that you have already configured your `STATIC_ROOT` path, place the FusionCharts library inside the **"static/FusionCharts"** folder in your project.
 
 Insert the ``<script>`` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The ``<script>`` tag looks like as shown below:
 
 ```html
 {% load static %} 
 <script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
-```
-
-* Set your STATIC_ROOT path and run the command given below to update the static files:
-
-```
-python manage.py collectstatic
 ```
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/django/your-first-chart-using-django '@@open-newtab').
@@ -85,12 +79,6 @@ FusionCharts can provide more than 1000 maps that cater to all your map visualiz
 ```html
 {% load static %} 
 <script type="text/javascript" src="{% static "fusioncharts/fusionmaps.js" %}"></script>
-```
-
-* Set your STATIC_ROOT path and run the command given below to update the static files:
-
-```
-python manage.py collectserver
 ```
 
 ## Themes
