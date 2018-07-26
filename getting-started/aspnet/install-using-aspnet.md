@@ -66,6 +66,33 @@ OR
 
 You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. `FusionCharts.dll` is present in `asp.net-cs/fusioncharts-wrapper-assembly` folder or `asp.net-vb/fusioncharts-wrapper-assembly`.
 
+Follow the steps given below to include the files in `fusioncharts-suite-xt/js` folder:
+
+**Step 1: Include the FusionCharts package:**
+
+```html
+<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+```
+
+**Step 2: Include the theme file. This step is optional, the chart will render with the default theme even if the theme is not applied.:**
+
+```html
+<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+```
+
+The consolidated code is shown below:
+
+```html
+<head>
+    <meta charset="utf-8">
+    <title>FusionCharts</title>
+    <!-- FusionCharts -->
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+    <!-- FusionCharts ASP.NET Wrapper -->
+</head>
+```
+
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet '@@open-newtab').
 
 ## Installing FusionMaps (map visualizations) for your project
@@ -81,6 +108,50 @@ Drag and drop the class (C#/VB) file from `asp.net-cs/fusioncharts-wrapper-sourc
 OR
 
 You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. `FusionCharts.dll` is present in `asp.net-cs/fusioncharts-wrapper-assembly` folder or `asp.net-vb/fusioncharts-wrapper-assembly`.
+
+To render a map, you need the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files as shown below:
+
+```
+<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+<script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
+```
+
+In the above example, we’ve included the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
+
+**Load other map definition files**
+
+To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. 
+
+```
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
+```
+
+Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
+
+```
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"></script>
+```
+
+Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
+
+The consolidated code looks like as shown below:
+
+```
+<head>
+    <meta charset="utf-8">
+    <title>FusionCharts</title>
+    <!-- FusionCharts -->
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <!-- FusionMaps -->
+    <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
+    <!--world -->
+    <script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"></script>
+    <!--Theme -->
+    <script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+    <!--FusionCharts ASP.NET Wrapper -->
+</head>
+```
 
 ## Themes
 

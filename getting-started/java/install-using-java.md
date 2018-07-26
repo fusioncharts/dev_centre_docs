@@ -56,6 +56,34 @@ File Name|Description|
 
 To use **FusionCharts JSP wrapper** in your project `include` the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project's folder.
 
+Follow the steps given below to include the files in `fusioncharts-suite-xt/js` folder:
+
+**Step 1: Include the FusionCharts package:**
+
+```html
+<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+```
+
+**Step 2: Include the theme file. This step is optional, the chart will render with the default theme even if the theme is not applied.:**
+
+```html
+<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+```
+
+The consolidated code is shown below:
+
+```html
+<head>
+    <meta charset="utf-8">
+    <title>FusionCharts</title>
+    <!-- FusionCharts -->
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+    <!-- FusionCharts JSP Wrapper -->
+    <script type="text/javascript" src="path/to/local/fusioncharts.java"></script>
+</head>
+```
+
 This completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java '@@open-newtab').
 
 ## Installing FusionMaps (map visualizations) for your project
@@ -64,7 +92,52 @@ FusionCharts can provide more than 1000 maps that cater to all your map visualiz
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
-Include `"FusionCharts.java"` file from `fusioncharts-suite-xt > integrations > java > fusioncharts-wrapper` in your project.
+Include `"fusiioncharts.java"` file from `fusioncharts-suite-xt > integrations > java > fusioncharts-wrapper` in your project.
+
+To render a map, you need the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files as shown below:
+
+```
+<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+<script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
+```
+
+In the above example, we’ve included the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
+
+**Load other map definition files**
+
+To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. 
+
+```
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
+```
+
+Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
+
+```
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"></script>
+```
+
+Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
+
+The consolidated code looks like as shown below:
+
+```
+<head>
+    <meta charset="utf-8">
+    <title>FusionCharts</title>
+    <!-- FusionCharts -->
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <!-- FusionMaps -->
+    <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
+    <!--world -->
+    <script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"></script>
+    <!--Theme -->
+    <script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+    <!--FusionCharts JSP Wrapper -->
+    <script type="text/JavaScript" src="path/to/local/fusioncharts.java"></script>
+</head>
+```
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/jsp/your-first-chart-using-jsp#create-your-first-map-10 '@@open-newtab').
 
