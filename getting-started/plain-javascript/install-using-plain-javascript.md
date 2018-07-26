@@ -156,7 +156,7 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 
 ## Install FusionCharts via **npm**
 
-To install the `fusioncharts` package via  npm package copy the command below:
+To install the `fusioncharts` package via  npm package run the command below:
 
 ```
 $ npm install fusioncharts
@@ -164,9 +164,10 @@ $ npm install fusioncharts
 
 The `fusioncharts` package for `npm` can now be used in two different ways:
 
-* **FusionCharts ES module** - From v3.13.0 we are providing the FusionCharts library as ES modules within the `fusioncharts` npm package. This package let's you selectively add modules as per your requirement. For example - You only need the angular guage, pie chart and the column chart. The FusionCharts ES module allows you to cherry pick only these visualizations and use in your application. 
+* **FusionCharts ES module** - From v3.13.0 we are providing the FusionCharts library as ES (ECMAScript) modules within the `fusioncharts` npm package. This package let's you selectively add modules as per your requirement. For example - You need to render the **angular guage**, **pie chart** and the **column chart**. The FusionCharts ES module allows you to cherry pick only these visualizations and use in your application. 
  
- Similarly, you can also select specific features to be used in your application. For example - You can opt only to show trendlines. The folders of the module is shown in the table below:
+ Similarly, you can also select specific features to be used in your application. For example - You can opt only to show **crosslines** for `zoomline` charts. The folders of the module is shown in the table below:
+
 
  <table>
     <tr>
@@ -194,11 +195,11 @@ The `fusioncharts` package for `npm` can now be used in two different ways:
         <td>Contains all the vizualizations of the **FusionWidgets** package.</td>
     </tr>
     <tr>
-        <td>`maps`</td>
+        <td>`maps/es`</td>
         <td>Contains the map renderer and the map definition files of **World** and **USA**</td>
     </tr>
     <tr>
-        <td>`themes`</td>
+        <td>`themes/es`</td>
         <td>Contaians all the theme files. </td>
     </tr>
     <tr>
@@ -232,7 +233,6 @@ The `fusioncharts` package for `npm` can now be used in two different ways:
                 <li>Highlighter</li>
                 <li>Legend-event-manager-linker</li>
                 <li>Multicanvas-crossline-manager</li>
-                <li>vml</li>
             </ul>
         </td>
     </tr>
@@ -253,22 +253,65 @@ The installation of both the module is shown below:
 <pre><code class="custom-hlc language-javascript">
     //Install `fusioncharts` package`
     $ npm install fusioncharts
-
+    </code></pre>
+<div><strong>Step 2</strong></div>
+<pre><code class="custom-hlc language-javascript">
     // Include the core fusioncharts file from core  -
     import FusionCharts from 'fusioncharts/core';
     
     // Include the chart from viz folder
-    import ChartType from fusioncharts/viz/[ChartType]
-    
-    // E.g. import Pie2d from 'fusioncharts/viz/pie2d';
+    // E.g. - import ChartType from fusioncharts/viz/[ChartType]
+    import Column2D from 'fusioncharts/viz/column2d';
+        
     // Add the chart as dependency
-    FusionCharts.addDep(ChartType);
-    
-    // E.g. FusionCharts.addDep(Pie2d) -( Pie2d from above )
+    // E.g. FusionCharts.addDep(ChartType)
+    FusionCharts.addDep(Column2D);
+        
     // Create an Instance with chart options
     var chartInstance = new FusionCharts({
-        type: 'chartType',
-        ...allOtherAttributes
+        type: 'Column2D',
+        width: '700', // Width of the chart
+        height: '400', // Height of the chart
+        dataFormat: 'json', // Data type
+        dataSource: {
+            chart: {
+                // Chart Configuration
+                "chart": {
+                    "caption": "Countries With Most Oil Reserves [2017-18]",
+                    "subCaption": "In MMbbl = One Million barrels",
+                    "xAxisName": "Country",
+                    "yAxisName": "Reserves (MMbbl)",
+                    "numberSuffix": "K",
+                    "theme": "fusion",
+                },
+                // Chart Data
+                "data": [{
+                    "label": "Venezuela",
+                    "value": "290"
+                }, {
+                    "label": "Saudi",
+                    "value": "260"
+                }, {
+                    "label": "Canada",
+                    "value": "180"
+                }, {
+                    "label": "Iran",
+                    "value": "140"
+                }, {
+                    "label": "Russia",
+                    "value": "115"
+                }, {
+                    "label": "UAE",
+                    "value": "100"
+                }, {
+                    "label": "US",
+                    "value": "30"
+                }, {
+                    "label": "China",
+                    "value": "30"
+                }]
+            }
+        }
     });
     // Render
     chartInstance.render()
