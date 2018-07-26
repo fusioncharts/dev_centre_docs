@@ -307,29 +307,28 @@ When installed via `npm`, the `fusioncharts` package contains only two map defin
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
 <div class="code-wrapper">
-<ul class='code-tabs'>
-  <li class='active'><a data-toggle='json'>Require</a></li>
-  <li><a data-toggle='xml'>Script Tags</a></li>
+<ul class="code-tabs extra-tabs">
+    <li class="active"><a data-toggle="require">Require</a></li>
+    <li><a data-toggle="scripttags">Script Tags</a></li>
 </ul>
-<div class='tab-content'>
-<div class='tab json-tab active'>
-<div class="pb-10">// require your map module</div>
-<pre><code class="custom-hlc language-cv">
+<div class="tab-content extra-tabs">
+<div class="tab require-tab active">
+<div class="mt-30"><strong>require your `map` module:</strong></div>
+<pre><code class="custom-hlc language-bash">
     const Maps = require('fusioncharts/fusioncharts.maps.js');
     const World = require('fusioncharts/maps/fusioncharts.world.js');
 </code></pre>
-<div class="pb-10">// Pass the FusionCharts module to the Maps Modules</div>
-<pre><code class="custom-hlc language-cv">
+<div class="mt-30"><strong>Pass the `fusioncharts` module to the `maps` module:</strong></div>
+<pre><code class="custom-hlc language-bash">
     Maps(FusionCharts);
     World(FusionCharts);
-</code></pre> 
+</code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-
-<div class='tab xml-tab'>
-<div class="mt-10 pb-10">Include map definitions in script tag:</div>
-<pre><code class="custom-hlc language-cs">
-&lt;script src="node_modules/fusioncharts/fusioncharts.maps.js"&gt;&lt;/script&gt;
+<div class="tab scripttags-tab">
+<div class="mt-30"><strong>Include map definitions in &lt;script&gt;&lt;/script&gt; tag:</strong></div>
+<pre><code class="custom-hlc language-bash">
+    &lt;script src="node_modules/fusioncharts/fusioncharts.maps.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
