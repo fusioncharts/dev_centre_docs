@@ -7,10 +7,10 @@ chartPresent: true
 
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization easy. These features include chart update, annotations, trend-lines, and events.
 
-This article focuses on how you can configure the following using `react-fusioncharts` component:
+This article focuses on how you can configure the following using `angular-fusioncharts` component:
 
-* [Update Chart Data]({% site.baseurl %}/getting-started/angular/angular/configure-your-chart-using-angular#update-chart-data-1 '@@open-newtab')
-* [Update Chart Attributes]({% site.baseurl %}/getting-started/angular/angular/configure-your-chart-using-angular#update-chart-attributes-5 '@@open-newtab')
+* [Update Chart Data]({% site.baseurl %}/getting-started/angular/angular/configure-your-chart-using-angular#update-chart-data-1)
+* [Update Chart Attributes]({% site.baseurl %}/getting-started/angular/angular/configure-your-chart-using-angular#update-chart-attributes-5)
 
 ## Update Chart Data
 
@@ -59,8 +59,6 @@ The JSON data to render the above chart is given below:
     }]
 },
 ```
-
-
 
 ### Setup the Main Module
 
@@ -197,8 +195,6 @@ Add the following code to `app.component.html`:
     [dataSource]=dataSource >
 </fusioncharts>
 ```
-
-
 
 ## Update Chart Attributes
 

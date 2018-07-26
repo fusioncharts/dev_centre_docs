@@ -37,7 +37,7 @@ The parent chart is a column 2D chart that shows the yearly sales of the top thr
 
 The above chart, when rendered, looks like the following:
 
-{% embed_chart add-drill-down-using-angularjs-example-1.js %}
+{% embed_chart add-drill-down-using-angular-example-1.js %}
 
 The JSON data to render the above chart:
 
@@ -143,10 +143,154 @@ The JSON data to render the above chart:
 }
 ```
 
-The full code of the above sample is given below:
+Now, create module and controller for the template. The code for the `js` file is given below:
 
 ```
+var DataSource = {
+    "chart": {
+        "caption": "Top 3 Juice Flavors",
+        "subcaption": "Last year",
+        "xaxisname": "Flavor",
+        "yaxisname": "Amount (In USD)",
+        "numberprefix": "$",
+        "theme": "fusion",
+        "rotateValues": "0",
+        "id": "myChart"
+    },
+    "data": [{
+            "label": "Apple",
+            "value": "810000",
+            "link": "newchart-xml-apple"
+        },
+        {
+            "label": "Cranberry",
+            "value": "620000",
+            "link": "newchart-xml-cranberry"
+        },
+        {
+            "label": "Grapes",
+            "value": "350000",
+            "link": "newchart-xml-grapes"
+        }
+    ],
+    "linkeddata": [{
+            "id": "apple",
+            "linkedchart": {
+                "chart": {
+                    "caption": "Apple Juice - Quarterly Sales",
+                    "subcaption": "Last year",
+                    "numberprefix": "$",
+                    "theme": "fusion",
+                    "rotateValues": "0",
+                    "plottooltext": "$label, $dataValue,  $percentValue"
+                },
+                "data": [{
+                        "label": "Q1",
+                        "value": "157000"
+                    },
+                    {
+                        "label": "Q2",
+                        "value": "172000"
+                    },
+                    {
+                        "label": "Q3",
+                        "value": "206000"
+                    },
+                    {
+                        "label": "Q4",
+                        "value": "275000"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "cranberry",
+            "linkedchart": {
+                "chart": {
+                    "caption": "Cranberry Juice - Quarterly Sales",
+                    "subcaption": "Last year",
+                    "numberprefix": "$",
+                    "theme": "fusion",
+                    "plottooltext": "$label, $dataValue,  $percentValue"
+                },
+                "data": [{
+                        "label": "Q1",
+                        "value": "102000"
+                    },
+                    {
+                        "label": "Q2",
+                        "value": "142000"
+                    },
+                    {
+                        "label": "Q3",
+                        "value": "187000"
+                    },
+                    {
+                        "label": "Q4",
+                        "value": "189000"
+                    }
+                ]
+            }
+        },
+        {
+            "id": "grapes",
+            "linkedchart": {
+                "chart": {
+                    "caption": "Grapes Juice - Quarterly Sales",
+                    "subcaption": "Last year",
+                    "numberprefix": "$",
+                    "theme": "fusion",
+                    "rotateValues": "0",
+                    "plottooltext": "$label, $dataValue,  $percentValue"
+                },
+                "data": [{
+                        "label": "Q1",
+                        "value": "45000"
+                    },
+                    {
+                        "label": "Q2",
+                        "value": "72000"
+                    },
+                    {
+                        "label": "Q3",
+                        "value": "95000"
+                    },
+                    {
+                        "label": "Q4",
+                        "value": "108000"
+                    }
+                ]
+            }
+        }
+    ]
+};
+$scope.myDataSource = DataSource;
 
+$scope.events = {
+    renderComplete: function(e, a) {
+        e.sender.configureLink({
+            type: "pie2d",
+            renderAt: "myChart",
+            overlayButton: {
+                message: 'close',
+                fontColor: '880000',
+                bgColor: 'FFEEEE',
+                borderColor: '660000'
+            }
+        }, 0)
+    }
+};
 ```
 
-Click [here](http://jsfiddle.net/fusioncharts/k7mn6j5s/ "@@open-newtab") to edit the above chart.
+Now, use the `fusioncharts` directive in a template. The code for the ``html` file is given below:
+
+```
+<div fusioncharts
+    width="600" 
+    height="400"
+    type="msline"
+    chart="{{attrs}}"
+    categories="{{categories}}"
+    dataset="{{dataset}}"
+></div>
+```
