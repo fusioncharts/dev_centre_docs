@@ -105,7 +105,7 @@ FusionCharts.ready(function() {
 
 Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
-```
+```html
 <div id="app">
     <fusioncharts
     :type="type"
@@ -201,7 +201,7 @@ FusionCharts.ready(function() {
 
 Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
-```
+```html
 <div id="app">
     <fusioncharts
     :type="type"

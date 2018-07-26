@@ -184,7 +184,7 @@ $('#chart-container').bind('fusionchartsrendered', function(event, args) {
 
 The HTML template of the above sample is shown below:
 
-```
+```html
 <div id='chart-container'>
     FusionCharts will render here
 </div>

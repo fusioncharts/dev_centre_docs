@@ -110,7 +110,7 @@ FusionCharts.ready(function() {
 
 The HTML template of the above sample is shown below:
 
-```
+```html
 <div id='chart-container'>
     FusionCharts will render here
 </div>
@@ -207,7 +207,7 @@ FusionCharts.ready(function() {
 
 The HTML template of the above sample is shown below:
 
-```
+```html
 <div id='chart-container'>
     FusionCharts will render here
 </div>
