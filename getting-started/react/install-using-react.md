@@ -133,6 +133,8 @@ To render a map, you need the core FusionCharts library `fusioncharts.js` along 
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
 <script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 
+```
+
 In the above example, we’ve included the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
 
 **Load other map definition files**
