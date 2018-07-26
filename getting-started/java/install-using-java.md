@@ -48,7 +48,7 @@ File Name|Description|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective file names.|
 
-* The download package also contains **fusioncharts.java** file under `fusioncharts-suite-xt > integrations > java` folder. This folder will also contain FusionCharts-Java native Export Handlers. The folder structure is shown below:
+* The download package also contains **fusioncharts.java** file under `fusioncharts-suite-xt > integrations > java` folder. This folder will also contain FusionCharts-Java native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/java '@@open-newtab')**. The folder structure is shown below:
 
 ![JSP Js Folder]({% site.baseurl %}/gif/jsp-folder-structure.gif)
 
