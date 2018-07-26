@@ -317,7 +317,7 @@ The installation of both the module is shown below:
     chartInstance.render()
 </code></pre>
 <div class="mt-30"><strong>Using optional features</strong></div>
-<div class="pb-10">Optional features reside inside the features folder <strong>node_modules/fusioncharts/features/</strong></div>
+<div class="pb-10">Optional features reside inside the features folder <strong>fusioncharts/features/</strong></div>
 <div class="mt-20"><strong>ignore-case-ext</strong></div>
 <div class="pb-10">Extension is required if you want all the attributes's case to be ignored , Otherwise the attributes provided must be in lowercase as shown below:</div>
 <pre><code class="custom-hlc language-bash">
@@ -341,7 +341,7 @@ The installation of both the module is shown below:
 </code></pre>
 <div class="pb-10">Adding extension is same as adding any other dependency</div>
 <pre><code class="custom-hlc language-json">
-    import IgnoreCaseExt from 'node_modules/fusioncharts/features/ignore-case-ext';
+    import IgnoreCaseExt from 'fusioncharts/features/ignore-case-ext';
     FusionCharts.addDep(IgnoreCaseExt);
 </code></pre>
 <div class="mt-30"><strong>Similarly, you can also import the other optional features (mentioned in the above table).</strong></div>
@@ -374,9 +374,11 @@ The installation of both the module is shown below:
 </div>
 </div>
 
-### Include Maps via `npm`
+That's it. 
 
-When installed via `npm`, the `fusioncharts` package contains only two map definitions in `node_modules/fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
+## Include Maps via `npm`
+
+When installed via `npm`, the `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
 
 **Step 1: Install `fusionmaps` package**
 
@@ -393,31 +395,32 @@ The `fusionmaps` package has dependency on the `fusioncharts` package. Therefore
 Using `require()`:
 
 ```javascript
-require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
+require('path/to/local/fusioncharts/fusioncharts.js');
 ```
 
 Using `import` statements:
 
 ```javascript
-import FusionCharts from 'path/to/local/node_modules/fusioncharts/fusioncharts.js';
+// Include the core fusioncharts file from core 
+    import FusionCharts from 'fusioncharts/core';
 ```
 
-**Step 3: Load the `fusionmaps` module** and the map definition file in any one of the two modes:
+**Step 3: Load the `fusionmaps` module** and the map definition file:
 
 **Using `require()`:**
 
 ```javascript
-require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
-require('path/to/local/node_modules/fusionmaps');
-require('path/to/local/node_modules/fusionmaps/maps/fusioncharts.world.js');
+require('path/to/local/fusioncharts/fusioncharts.js');
+require('path/to/local/fusionmaps');
+require('path/to/local/fusionmaps/maps/fusioncharts.world.js');
 ```
 
 **Using `import` statements:**
 
 ```javascript
-import FusionCharts from 'path/to/local/node_modules/fusioncharts/fusioncharts.js';
-import FusionMaps from 'path/to/local/node_modules/fusionmaps';
-import California from 'path/to/local/node_modules/fusionmaps/maps/fusioncharts.world.js';
+import FusionCharts from 'fusioncharts/core';
+import FusionMaps from 'fusioncharts/maps';
+import California from 'fusioncharts/maps/es/fusioncharts.world';
 ```
 
 **Load other map definition files**
@@ -432,17 +435,17 @@ Therefore, assuming that you need to render the map of California, the alias nam
 **Using `require()`:**
 
 ```javascript
-require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
-require('path/to/local/node_modules/fusionmaps');
-require('path/to/local/node_modules/fusionmaps/maps/fusioncharts.california.js');
+require('path/to/local/fusioncharts/fusioncharts.js');
+require('path/to/local/fusionmaps');
+require('path/to/local/fusionmaps/maps/fusioncharts.california.js');
 ```
 
 **Using `import` statements:**
 
 ```javascript
-import FusionCharts from 'path/to/local/node_modules/fusioncharts/fusioncharts.js';
-import FusionMaps from 'path/to/local/node_modules/fusionmaps';
-import California from 'path/to/local/node_modules/fusionmaps/maps/fusioncharts.california.js';
+import FusionCharts from 'fusioncharts/core';
+import FusionMaps from 'fusioncharts/maps';
+import California from 'fusionmaps/maps/es/fusioncharts.california';
 ```
 
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are fetched from there.
@@ -462,9 +465,9 @@ To include the definition files placed in **fusioncharts/themes**, follow any of
 **Using `require()`:**
 
 ```javascript
-require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
-require('path/to/local/node_modules/features/theme-engine');
-require('path/to/local/node_modules/fusioncharts/themes/fusioncharts.fusion.js');
+require('path/to/local/fusioncharts/fusioncharts.js');
+require('path/to/local/features/theme-engine');
+require('path/to/local/fusioncharts/themes/fusioncharts.fusion.js');
 ```
 
 **Using `import` statements:**
