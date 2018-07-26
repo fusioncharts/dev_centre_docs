@@ -9,9 +9,8 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 This article focuses on how you can configure the following using `react-fusioncharts` component:
 
-* Update Chart Data
-* Update Chart Attributes
-* Add Annotations
+* [Update Chart Data]({% site.baseurl %}/getting-started/angular/angular/configure-your-chart-using-angular#update-chart-data-1 '@@open-newtab')
+* [Update Chart Attributes]({% site.baseurl %}/getting-started/angular/angular/configure-your-chart-using-angular#update-chart-attributes-5 '@@open-newtab')
 
 ## Update Chart Data
 

@@ -392,36 +392,63 @@ npm install fusionmaps
 
 The `fusionmaps` package has dependency on the `fusioncharts` package. Therefore, to use `fusionmaps`, it is necessary to first include `fusioncharts` in your project in any one of the two ways:
 
-Using `require()`:
-
-```javascript
-require('path/to/local/fusioncharts/fusioncharts.js');
-```
-
-Using `import` statements:
-
-```javascript
-// Include the core fusioncharts file from core 
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+  <li class='active'><a data-toggle='es6'>ES6</a></li>
+  <li><a data-toggle='cjs'>CJS</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab es6-tab active'>
+<div><strong>Using `import` statements:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    // Include the core fusioncharts file from core 
     import FusionCharts from 'fusioncharts/core';
-```
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab cjs-tab'>
+<div><strong>Using `require()`:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    require('path/to/local/fusioncharts/fusioncharts.js');
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
+
 
 **Step 3: Load the `fusionmaps` module** and the map definition file:
 
-**Using `require()`:**
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+  <li class='active'><a data-toggle='es6'>ES6</a></li>
+  <li><a data-toggle='cjs'>CJS</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab es6-tab active'>
+<div><strong>Using `import` statements:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import FusionCharts from 'fusioncharts/core';
+    import FusionMaps from 'fusioncharts/maps';
+    import California from 'fusioncharts/maps/es/fusioncharts.world';
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-```javascript
-require('path/to/local/fusioncharts/fusioncharts.js');
-require('path/to/local/fusionmaps');
-require('path/to/local/fusionmaps/maps/fusioncharts.world.js');
-```
+<div class='tab cjs-tab'>
+<div><strong>Using `require()`:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    require('path/to/local/fusioncharts/fusioncharts.js');
+    require('path/to/local/fusionmaps');
+    require('path/to/local/fusionmaps/maps/fusioncharts.world.js');
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-**Using `import` statements:**
-
-```javascript
-import FusionCharts from 'fusioncharts/core';
-import FusionMaps from 'fusioncharts/maps';
-import California from 'fusioncharts/maps/es/fusioncharts.world';
-```
+</div>
+</div>
 
 **Load other map definition files**
 
@@ -432,21 +459,34 @@ You can use the other map definition files other than the **World Map** and the 
 
 Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. You can do it using any one of the following two methods:
 
-**Using `require()`:**
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+  <li class='active'><a data-toggle='es6'>ES6</a></li>
+  <li><a data-toggle='cjs'>CJS</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab es6-tab active'>
+<div><strong>Using `import` statements:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import FusionCharts from 'fusioncharts/core';
+    import FusionMaps from 'fusioncharts/maps';
+    import California from 'fusionmaps/maps/es/fusioncharts.california';
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-```javascript
-require('path/to/local/fusioncharts/fusioncharts.js');
-require('path/to/local/fusionmaps');
-require('path/to/local/fusionmaps/maps/fusioncharts.california.js');
-```
+<div class='tab cjs-tab'>
+<div><strong>Using `require()`:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    require('path/to/local/fusioncharts/fusioncharts.js');
+    require('path/to/local/fusionmaps');
+    require('path/to/local/fusionmaps/maps/fusioncharts.california.js');
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-**Using `import` statements:**
-
-```javascript
-import FusionCharts from 'fusioncharts/core';
-import FusionMaps from 'fusioncharts/maps';
-import California from 'fusionmaps/maps/es/fusioncharts.california';
-```
+</div>
+</div>
 
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are fetched from there.
 
@@ -462,30 +502,40 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 
 To include the definition files placed in **fusioncharts/themes**, follow any of the two ways shown below:
 
-**Using `require()`:**
 
-```javascript
-require('path/to/local/fusioncharts/fusioncharts.js');
-require('path/to/local/features/theme-engine');
-require('path/to/local/fusioncharts/themes/fusioncharts.fusion.js');
-```
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+  <li class='active'><a data-toggle='es6'>ES6</a></li>
+  <li><a data-toggle='cjs'>CJS</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab es6-tab active'>
+<div><strong>Using `import` statements:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import FusionCharts from 'fusioncharts/core'
+</code></pre>
+<div><strong>To include the `theme engine extension`, copy the following line of code:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import ThemeEngine from 'fusioncharts/features/theme-engine';
+</code></pre>
+<div><strong>To include the theme file, copy the following line of code:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    import fusion from 'fusioncharts/themes/es/fusioncharts.fusion'
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-**Using `import` statements:**
+<div class='tab cjs-tab'>
+<div><strong>Using `require()`:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    require('path/to/local/fusioncharts/fusioncharts.js');
+    require('path/to/local/features/theme-engine');
+    require('path/to/local/fusioncharts/themes/fusioncharts.fusion.js');
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-```Shell
-import FusionCharts from 'fusioncharts/core'
-```
-
-To include the **theme engine extension**, copy the following line of code:
-
-```Shell
-import ThemeEngine from 'fusioncharts/features/theme-engine';
-```
-
-To include the theme file, copy the following line of code:
-
-```Shell
-import fusion from 'fusioncharts/themes/es/fusioncharts.fusion'
-```
+</div>
+</div>
 
 > Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
