@@ -574,7 +574,7 @@ World(FusionCharts);
 
 **Load other map definition files**
 
-You can use the other map definition files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the other map definition files as shown below:
+You can use rest of the map definition files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:
 
 **Install `fusionmaps` package**
 
@@ -603,6 +603,8 @@ The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, 
 <div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
 var FusionCharts = require('fusioncharts');
+var FusionMaps = require('fusionmaps');
+FusionMaps(FusionCharts);
 </code></pre>
 </div>
 </div>
@@ -626,8 +628,11 @@ Therefore, assuming that you need to render the map of California, the alias nam
     import FusionCharts from 'fusioncharts/core';
     import FusionMaps from 'fusioncharts/maps';
     import California from 'fusionmaps/maps/es/fusioncharts.california';
+</code></pre>
 
+<pre><code class="custom-hlc language-javascript">
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps/es** directory and are fetched from there.
+</code></pre>
 
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -641,8 +646,11 @@ var FusionMaps = require('fusionmaps');
 var California = require('fusionmaps/maps/fusioncharts.california');
 FusonMaps(FusionCharts);
 California(FusionCharts);
+</code></pre>
 
+<pre><code class="custom-hlc language-javascript">
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are fetched from there.
+</code></pre>
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -689,8 +697,8 @@ To include the definition files placed in **fusioncharts/themes**, follow any of
 <div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
  var FusionCharts = require('fusioncharts');
- var FusionCharts = require('features/theme-engine');
- var FusionCharts = require('fusioncharts/themes/fusioncharts.fusion');
+ var Themes = require('features/theme-engine');
+ var Fusion = require('fusioncharts/themes/fusioncharts.fusion');
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
