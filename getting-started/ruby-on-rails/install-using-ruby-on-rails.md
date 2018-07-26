@@ -41,17 +41,15 @@ File Name|Description|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definitions of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective file names.|
 
-* The download package also contains `fusioncharts-gem` under `fusioncharts-suite-xt > integrations > ror > fusioncharts-wrapper` folder. This folder will also contain native RoR FusionCharts **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/ruby-on-rails '@@open-newtab')**. The folder structure is shown below:
-
 Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the downloaded package into your project folder.
+
+* The download package also contains FusionCharts gem under `fusioncharts-suite-xt > integrations > ror > fusioncharts-wrapper` folder. This folder will also contain native RoR FusionCharts **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/ruby-on-rails '@@open-newtab')**. The folder structure is shown below:
 
 ![Ruby on Rails Js Folder]({% site.baseurl %}/gif/ror-folder-structure.gif)
 
 > If you are using 3.12.2 or older versions, download v3.13.0 to get the `ror` folder in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the `fusioncharts-rails.rb` file from `fusioncharts-suite-xt > integrations > ror > fusioncharts-wrapper` to your project folder.
-
-Add the following code lines in the **app/assets/javascripts/application.js** file:
+To include FusionCharts library in your project add the following code of lines in the **app/assets/javascripts/application.js** file:
 
 ```
 //= require fusioncharts/fusioncharts
@@ -61,28 +59,38 @@ Add the following code lines in the **app/assets/javascripts/application.js** fi
 
 > Ensure that the **config.assets.debug** flag in the **development.rb** file (config/environments/development.rb) is enabled (set to **true**).
 
-Now, To install the Rails wrapper:
+Now, To add the FusionCharts Rails wrapper, use any of the following process:
 
-* Add this line to your application’s `Gemfile`:
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+  <li class='active'><a data-toggle='rubygems'>RubyGems</a></li>
+  <li><a data-toggle='manual'>Manual</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab rubygems-tab active'>
+<div><strong>Add this line to your application’s `Gemfile`:</strong></div>
+<pre><code class="custom-hlc language-rb">
+	gem ‘fusioncharts-rails’
+</code></pre>
+<div><strong>RubyGems contain package information along with the files to install. On the command line prompt, execute the following command:</strong></div>
+<pre><code class="custom-hlc language-rb">
+	$bundle
+</code></pre>
+<div><strong>This command will automatically install the `fusioncharts-rails` gem. You can also install the gem directly from the command line prompt, without making any edits to the `Gemfile`. To do this, use the code line given below:</strong></div>
+<pre><code class="custom-hlc language-rb">
+	$gem install fusioncharts-rails
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-```rb
-gem ‘fusioncharts-rails’
-```
+<div class='tab manual-tab'>
+<div><strong>Step 1:</strong>Copy the files under `fusioncharts-suite-xt > integrations > ror > fusioncharts-wrapper` folder.</div>
+<div><strong>Step 2:</strong>Add the copied files to the `lib` folder in your project</div>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-RubyGems contain package information along with the files to install. To read more on gems, click [here](http://rubygems.org/gems/fusioncharts-rails).
-
-* On the command line prompt, execute the following command:
-
-```bash
-$bundle
-```
-This command will automatically install the `fusioncharts-rails` gem.
-
-* You can also install the gem directly from the command line prompt, without making any edits to the **Gemfile**. To do this, use the code line given below:
-
-```bash
-$gem install fusioncharts-rails
-```
+</div>
+</div>
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails '@@open-newtab').
 
