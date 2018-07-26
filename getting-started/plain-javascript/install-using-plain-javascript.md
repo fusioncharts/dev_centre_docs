@@ -251,7 +251,7 @@ The installation of both the module is shown below:
 <div class="tab es6-tab active">
 <div><strong>Step 1</strong></div>
 <pre><code class="custom-hlc language-javascript">
-    //Install `fusioncharts` package`
+    // Install `fusioncharts` package
     $ npm install fusioncharts
     </code></pre>
 <div><strong>Step 2</strong></div>
@@ -378,19 +378,9 @@ That's it.
 
 ## Include Maps via `npm`
 
-When installed via `npm`, the `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
+The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
 
-**Step 1: Install `fusionmaps` package**
-
-Install the `fusionmaps` module as shown below:
-
-```Shell
-npm install fusionmaps
-```
-
-**Step 2: Load `fusioncharts` module**
-
-The `fusionmaps` package has dependency on the `fusioncharts` package. Therefore, to use `fusionmaps`, it is necessary to first include `fusioncharts` in your project in any one of the two ways:
+**Step 1: Load `fusioncharts` module**
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -419,7 +409,7 @@ The `fusionmaps` package has dependency on the `fusioncharts` package. Therefore
 </div>
 
 
-**Step 3: Load the `fusionmaps` module** and the map definition file:
+**Step 2: Load the `fusionmaps` module** and the map definition file:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -454,6 +444,18 @@ The `fusionmaps` package has dependency on the `fusioncharts` package. Therefore
 
 You can use the other map definition files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package by default. To do so, follow the steps below:
 
+**Install `fusionmaps` package**
+
+Install the `fusionmaps` module as shown below:
+
+```Shell
+npm install fusionmaps
+```
+The fusionmaps package has dependency on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project in any one of the two ways:
+
+
+
+* Include the 
 * First include the module `fusioncharts.maps.js`.
 * Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.  Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
 
