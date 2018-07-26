@@ -133,6 +133,8 @@ To render a map, you need the core FusionCharts library `fusioncharts.js` along 
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
 <script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 
+```
+
 In the above example, we’ve included the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
 
 **Load other map definition files**
@@ -142,16 +144,18 @@ To use any other map (except world and USA) from the 1000+ maps, [download](http
 ```
 <!-- The next line describes the format for more map definition files -->
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
+
 ```
 
-Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
+Therefore, assuming that you need to render the map of **California**, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
 
 ```
 <!-- The next line describes the format for more map definition files -->
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"></script>
+
 ```
 
-Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
+> Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
 The consolidated code (which also includes the `react.js`, `fusioncharts.js` and `react-fusioncharts.js`) is as shown below:
 
