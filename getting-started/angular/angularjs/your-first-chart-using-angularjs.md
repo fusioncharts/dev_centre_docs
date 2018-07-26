@@ -320,7 +320,7 @@ Now, use the fusioncharts directive in a template. The code for the `index.html`
 
 ## Create your first map
 
-In this section, we will create a visualization using the map of **World**. Take a look at the map shown below:
+In this section, we will create a visualization using the map of **World** showing the **Average annual population growth** across all continents.. Take a look at the map shown below:
 
 {% embed_chart getting-started-your-first-map.js %}
 
