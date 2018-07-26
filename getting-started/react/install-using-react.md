@@ -43,17 +43,13 @@ The folder structure is shown below:
 
 > It is recommended that you copy the files of the `js` folder from fusioncharts-suite-xt to your project folder.
 
-* The download package also contains **react-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > react` folder. The folder structure is shown below:
+* The download package also contains **react-fusioncharts.js** file from `fusioncharts-suite-xt > integrations > react > js` folder. The folder structure is shown below:
 
 ![React Js Folder]({% site.baseurl %}/gif/react-folder-structure.gif)
 
 > If you are using 3.12.2 or older versions, download v3.13.0 to get the `react` folder in the FusionCharts Suite XT package. 
 
-> It is recommended that you copy the JavaScript files of the `react` folder from `fusioncharts-suite-xt > integrations > react > js` to your project folder.
-
-Installation of FusionCharts Suite XT is simply copying and pasting the JavaScript files from the downloaded package into your project folder.
-
-After that, you can include the FusionCharts JavaScript library in the web applications and start building your charts, gauges, and maps.
+> It is recommended that you copy the JavaScript files of the `react-fusioncharts.js` file from `fusioncharts-suite-xt > integrations > react > js` to your project folder.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
 
@@ -73,7 +69,9 @@ File Name|Description|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definitions of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective file names.|
 
-In order to create charts with FusionCharts react component, create an HTML file and follow the steps below:
+Installation of FusionCharts Suite XT is simply copying and pasting the JavaScript files from the downloaded package into your project folder.
+
+After that, you can include the FusionCharts JavaScript library in the web applications and start building your charts, gauges, and maps. Create an HTML file and follow the steps below:
 
 **Step 1: Include React core library:**
 
