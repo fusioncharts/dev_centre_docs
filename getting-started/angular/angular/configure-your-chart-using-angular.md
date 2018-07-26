@@ -7,11 +7,11 @@ chartPresent: true
 
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization easy. These features include chart update, annotations, trend-lines, and events.
 
-This article focuses on how you can configure the following:use the React `props` object and `react-fusioncharts` component to:
+This article focuses on how you can configure the following using `react-fusioncharts` component:
 
-* Update Chart Data (using React `Props` object)
-* Update Chart Attributes (using React `Props` object)
-* Add Annotations (using `react-fusioncharts` component)
+* Update Chart Data
+* Update Chart Attributes
+* Add Annotations
 
 ## Update Chart Data
 
@@ -61,10 +61,140 @@ The JSON data to render the above chart is given below:
 },
 ```
 
-The full code of the above sample is given below:
+### Setup the Main Module
+
+In this step, we will setup the main module to create the column2d chart. The code is given below:
 
 ```
-CODE
+// Setup needed in app.module.ts
+import {
+    NgModule,
+    enableProdMode
+} from '@angular/core'
+import {
+    AppComponent
+} from './app.component';
+import {
+    BrowserModule
+} from '@angular/platform-browser';
+import {
+    FusionChartsModule
+} from 'angular-fusioncharts';
+
+// Load FusionCharts
+import * as FusionCharts from 'fusioncharts';
+// Load Charts module
+import * as Charts from 'fusioncharts/fusioncharts.charts';
+// Load fusion theme
+import * as Fusion from 'fusioncharts/themes/fusioncharts.theme.fusion'
+
+// Add dependencies to FusionChartsModule
+FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion)
+
+@NgModule({
+    declarations: [
+        AppComponent,
+    ],
+    imports: [
+        BrowserModule,
+        FusionChartsModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+})
+export class AppModule {}
+```
+
+> The `<fusioncharts></fusioncharts>` component is available for use in any component throughout your app. We will render our first chart in the main `app.component`.
+
+
+### Add data to `app.component.ts`
+
+Add the following code to `app.component.ts`:
+
+```
+// in app.component.ts
+import {
+    Component
+} from '@angular/core';
+
+@Component({
+    selector: 'app',
+    templateUrl: 'app.component.html'
+})
+
+export class AppComponent {
+
+    type = "Column2D";
+    width = "600";
+    height = "300";
+    dataFormat = "json";
+    dataSource: any = {
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion",
+            "updateAnimDuration": "0.4"
+        },
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    };
+
+    getRandomNumber = function() {
+        var max = 290,
+            min = 30;
+        return Math.round(((max - min) * Math.random()) + min);
+    }
+    updateMyChartData() {
+        this.dataSource.data[2].value = this.getRandomNumber();
+        this.dataSource.data[3].value = this.getRandomNumber();
+    }
+
+    constructor() {
+
+    }
+}
+```
+
+### Add data to `app.component.html`
+
+Add the following code to `app.component.html`:
+
+```
+<!-- in app.component.html -->
+<fusioncharts
+    width={{width}}
+    height={{height}}
+    type={{type}}
+    dataFormat={{dataFormat}}
+    [dataSource]=dataSource >
+</fusioncharts>
 ```
 
 ## Update Chart Attributes
@@ -115,101 +245,135 @@ The JSON data to render the above chart is given below:
 },
 ```
 
-The full code of the above sample is given below:
+### Setup the Main Module
+
+In this step, we will setup the main module to create the column2d chart. The code is given below:
 
 ```
-CODE
+// Setup needed in app.module.ts
+import {
+    NgModule,
+    enableProdMode
+} from '@angular/core'
+import {
+    AppComponent
+} from './app.component';
+import {
+    BrowserModule
+} from '@angular/platform-browser';
+import {
+    FusionChartsModule
+} from 'angular-fusioncharts';
+
+// Load FusionCharts
+import * as FusionCharts from 'fusioncharts';
+// Load Charts module
+import * as Charts from 'fusioncharts/fusioncharts.charts';
+// Load fusion theme
+import * as Fusion from 'fusioncharts/themes/fusioncharts.theme.fusion'
+
+// Add dependencies to FusionChartsModule
+FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion)
+
+@NgModule({
+    declarations: [
+        AppComponent,
+    ],
+    imports: [
+        BrowserModule,
+        FusionChartsModule,
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
+})
+export class AppModule {}
 ```
 
-## Add Annotations
+> The `<fusioncharts></fusioncharts>` component is available for use in any component throughout your app. We will render our first chart in the main `app.component`.
 
-Annotations are graphical elements (different types of shapes, custom text, and so on) that you can render on your chart to make it more informative, while making it visually appealing.
 
-A spline chart using annotations to highlight a particular anchor along with text is shown below:
+### Add data to `app.component.ts`
 
-{% embed_chart configure-charts-using-angular-example-3.js %}
-
-The JSON data to render the above chart is given below:
+Add the following code to `app.component.ts`:
 
 ```
-{
-    "chart": {
-        "caption": "Average Monthly Temperature in Texas",
-        "yAxisName": "Average Monthly Temperature",
-        "anchorradius": "5",
-        "plotToolText": "Average temperature in $label is <b>$dataValue</b>",
-        "showHoverEffect": "1",
-        "showvalues": "0",
-        "numberSuffix": "°C",
-        "theme": "fusion",
-        "anchorBgColor": "#72D7B2",
-        "paletteColors": "#72D7B2"
-    },
-    "annotations": {
-        "groups": [{
-            "id": "anchor-highlight",
-            "items": [{
-                "id": "high-star",
-                "type": "circle",
-                "x": "$dataset.0.set.7.x",
-                "y": "$dataset.0.set.7.y",
-                "radius": "12",
-                "color": "#cc0000",
-                "border": "2",
-                "borderColor": "#0075c2"
-            }, {
-                "id": "label",
-                "type": "text",
-                "text": "Hottest Month",
-                "fillcolor": "#0075c2",
-                "rotate": "90",
-                "x": "$dataset.0.set.7.x+75",
-                "y": "$dataset.0.set.7.y-2"
-            }]
+// in app.component.ts
+import {
+    Component
+} from '@angular/core';
+
+@Component({
+    selector: 'app',
+    templateUrl: 'app.component.html',
+
+})
+
+export class AppComponent {
+
+    dataSource = {
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion",
+        },
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
         }]
-    },
-    "data": [{
-        "label": "Jan",
-        "value": "1"
-    }, {
-        "label": "Feb",
-        "value": "5"
-    }, {
-        "label": "Mar",
-        "value": "10"
-    }, {
-        "label": "Apr",
-        "value": "12"
-    }, {
-        "label": "May",
-        "value": "14"
-    }, {
-        "label": "Jun",
-        "value": "16"
-    }, {
-        "label": "Jul",
-        "value": "20"
-    }, {
-        "label": "Aug",
-        "value": "22"
-    }, {
-        "label": "Sep",
-        "value": "20"
-    }, {
-        "label": "Oct",
-        "value": "16"
-    }, {
-        "label": "Nov",
-        "value": "7"
-    }, {
-        "label": "Dec",
-        "value": "2"
-    }]
-},
+    };
+
+    changeBackgroundColor = function() {
+        this.dataSource.chart.bgColor = "#efefef";
+    };
+
+    changeCaptionTextAlignment = function() {
+        this.dataSource.chart.captionAlignment = "left";
+    };
+
+    constructor() {
+    }
+}
 ```
 
-The full code of the above sample is given below:
+### Add data to `app.component.html`
+
+Add the following code to `app.component.html`:
 
 ```
-CODE
+<!-- in app.component.html -->
+<fusioncharts
+    width="700" 
+    height="400"
+    type="column2d"
+    [dataSource]="dataSource" >
+</fusioncharts>
+
+<p><a class="btn btn-default" (click)="changeBackgroundColor()">Change chart background color</a>
+    <a class="btn btn-default" (click)="changeCaptionTextAlignment()">Make Caption text left-aligned</a>
+</p>
+
 ```
