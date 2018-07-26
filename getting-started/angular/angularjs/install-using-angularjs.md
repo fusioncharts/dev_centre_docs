@@ -256,6 +256,7 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
     OverlappedBar2d(FusionCharts);
     Overlappedcolumn2d(FusionCharts);
 </code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 
 <div class="tab script-tab">
 <div class="mt-30"><strong>Include `angularjs` package:</strong></div>
