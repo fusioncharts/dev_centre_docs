@@ -697,8 +697,8 @@ To include the definition files placed in **fusioncharts/themes**, follow any of
 <div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
  var FusionCharts = require('fusioncharts');
- var Themes = require('features/theme-engine');
- var Fusion = require('fusioncharts/themes/fusioncharts.fusion');
+ var FusionTheme = require('fusioncharts/themes/fusioncharts.fusion');
+ FusionTheme(FusionCharts);
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
