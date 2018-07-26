@@ -6,17 +6,13 @@ heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the **FusionCharts PHP wrapper** that lets you create interactive, data-driven charts in your PHP website without writing any JavaScript code. JavaScript and HTML code is used to generate charts in the browsers. The server-side PHP wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts.
+FusionCharts Suite XT includes the **FusionCharts PHP wrapper** that lets you create interactive, data-driven charts in your PHP website without writing any JavaScript code. JavaScript and HTML code is used to generate charts in the browsers. The wrapper receives the parameter which automatically generates the JavaScript and HTML code required to render the chart.
 
 In this article, we will show you how you can download and install the `FusionCharts PHP` wrapper and all the other dependencies on your system.
 
 > The FusionCharts PHP server-side wrapper requires PHP 5 or higher.
 
 ## Install FusionCharts PHP Wrapper
-
-In order to install and start working with FusionCharts PHP wrapper you need to:
-
-### Step 1
 
 In order to install and start working with PHP-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
@@ -29,16 +25,6 @@ The folder structure is shown below:
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
 > It is recommended that you copy the files of the `js` folder from fusioncharts-suite-xt to your project folder.
-
-* The download package also contains **fusioncharts.php** file under `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` folder. This folder will also contain PHP-FusionCharts native Export Handlers. The folder structure is shown below:
-
-![PHP Js Folder]({% site.baseurl %}/gif/php-folder-structure.gif)
-
-> If you are using 3.12.2 or older versions, download v3.13.0 to get the `php` folder in the FusionCharts Suite XT package. 
-
-> It is recommended that you copy the `fusioncharts.php` file from `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` to your project's folder.
-
-Installation of FusionCharts Suite XT is simply copying and pasting the JavaScript files from the downloaded package into your project folder.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
 
@@ -58,7 +44,15 @@ File Name|Description|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective file names.|
 
-### Step 2
+Installation of FusionCharts Suite XT is simply copying and pasting the JavaScript files from the downloaded package into your project folder.
+
+* The download package also contains `fusioncharts.php` file under `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` folder. This folder will also contain FusionCharts PHP native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/php '@@open-newtab')**. The folder structure is shown below:
+
+![PHP Js Folder]({% site.baseurl %}/gif/php-folder-structure.gif)
+
+> If you are using 3.12.2 or older versions, download v3.13.0 to get the `php` folder in the FusionCharts Suite XT package. 
+
+> It is recommended that you copy the `fusioncharts.php` file from `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` to your project's folder.
 
 [Download](https://www.fusioncharts.com/php-charts/) the **FusionCharts PHP** wrapper which contains the main class file `fusioncharts.php` in `php-wrapper` folder, then copy and paste this class file into the “Includes” folder of your project.
 
