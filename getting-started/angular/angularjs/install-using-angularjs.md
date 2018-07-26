@@ -257,7 +257,7 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
     Overlappedcolumn2d(FusionCharts);
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-
+</div>
 <div class="tab scripttags-tab">
 <div class="mt-30"><strong>Include `angularjs` package:</strong></div>
 <pre><code class="custom-hlc language-bash">
@@ -283,7 +283,7 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
     angular.module('your-app-name', ["ng-fusioncharts"]);
 </code></pre>
 <div class="mt-30 pb-10">Now the fusioncharts directive is available in your app both as an attribute as well as a tag. Include charts other required files in &lt;script&gt;&lt;/script&gt; tag:</div>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="custom-hlc language-html">
     &lt;script src="node_modules/fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/fusioncharts.widgets.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/fusioncharts.powercharts.js"&gt;&lt;/script&gt;
