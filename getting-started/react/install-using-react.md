@@ -214,28 +214,28 @@ You can include the fusioncharts class and React FusionCharts plugin using any o
 
 <div class="code-wrapper">
 <ul class='code-tabs'>
-  <li class='active'><a data-toggle='json'>Import</a></li>
-  <li><a data-toggle='xml'>Require</a></li>
+  <li class='active'><a data-toggle='import'>Import</a></li>
+  <li><a data-toggle='require'>Require</a></li>
 </ul>
 <div class='tab-content'>
-<div class='tab json-tab active'>
-<div><strong>To include the fusioncharts class:</strong></div>
+<div class='tab import-tab active'>
+<div class="mt-30"><strong>To include the fusioncharts class:</strong></div>
 <pre><code class="custom-hlc language-javascript">
     import FusionCharts from 'fusioncharts';
     import Charts from 'fusioncharts/fusioncharts.charts';
 </code></pre>
-<div><strong>To use charts and gauges from PowerCharts and Widgets, import their respective modules using:</strong></div>
+<div class="mt-30"><strong>To use charts and gauges from PowerCharts and Widgets, import their respective modules using:</strong></div>
 <pre><code class="custom-hlc language-javascript">
     // For PowerCharts
     import PowerCharts from 'fusioncharts/fusioncharts.powercharts';
     // For Widgets 
     import Widgets from 'fusioncharts/fusioncharts.widgets'; 
 </code></pre>
-<div><strong>To include React FusionCharts plugin:</strong></div>
+<div class="mt-30"><strong>To include React FusionCharts plugin:</strong></div>
 <pre><code class="custom-hlc language-javascript">
     import ReactFC from 'react-fusioncharts';
 </code></pre>
-<div><strong>To add charts, powercharts and widgets dependencies:</strong></div>
+<div class="mt-30"><strong>To add charts, powercharts and widgets dependencies:</strong></div>
 <pre><code class="custom-hlc language-javascript">
     // ReactFC.fcRoot(FusionCharts, Charts, [Module]);
     ReactFC.fcRoot(FusionCharts, Charts, PowerCharts, Widgets);
@@ -243,28 +243,28 @@ You can include the fusioncharts class and React FusionCharts plugin using any o
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
-<div class='tab xml-tab'>
-<div><strong>To include the fusioncharts class:</strong></div>
+<div class='tab require-tab'>
+<div class="mt-30"><strong>To include the fusioncharts class:</strong></div>
 <pre><code class="custom-hlc language-javascript">
     let FusionCharts = require('fusioncharts');
     let Charts = require('fusioncharts/fusioncharts.charts');
 </code></pre>
-<div><strong>To use charts and gauges from PowerCharts and Widgets, include their respective modules using:</strong></div>
+<div class="mt-30"><strong>To use charts and gauges from PowerCharts and Widgets, include their respective modules using:</strong></div>
 <pre><code class="custom-hlc language-javascript">
     // For PowerCharts
     let PowerCharts = require('fusioncharts/fusioncharts.powercharts'); 
     // For Widgets
     let Widgets = require('fusioncharts/fusioncharts.widgets'); 
 </code></pre>
-<div><strong>To include React FusionCharts plugin:</strong></div>
+<div class="mt-30"><strong>To include React FusionCharts plugin:</strong></div>
 <pre><code class="custom-hlc language-javascript">
     let ReactFC = require('react-fusioncharts').default;
 </code></pre>
-<div><strong>To add chart dependency only:</strong></div>
+<div class="mt-30"><strong>To add chart dependency only:</strong></div>
 <pre><code class="custom-hlc language-javascript">
     ReactFC.fcRoot(FusionCharts, Charts);
 </code></pre>
-<div><strong>To add charts, powercharts and widgets dependencies:</strong></div>
+<div class="mt-30"><strong>To add charts, powercharts and widgets dependencies:</strong></div>
 <pre><code class="custom-hlc language-javascript">
     // ReactFC.fcRoot(FusionCharts, Charts, [Module]);
     ReactFC.fcRoot(FusionCharts, Charts, PowerCharts, Widgets);
