@@ -271,7 +271,7 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 <pre><code class="custom-hlc language-bash">
     npm install angularjs-fusioncharts --save
 </code></pre>
-<div class="mt-30 pb-10">In your `index.html`, include all the &lt;script&gt; tags:</div>
+<div class="mt-30 pb-10">In your `index.html`, include all the &lt;script&gt;&lt;/script&gt; tags:</div>
 <pre><code class="custom-hlc language-html">
     &lt;script src="node_modules/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/angular/angular.js"&gt;&lt;/script&gt;
@@ -282,7 +282,7 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 <pre><code class="custom-hlc language-javascript">
     angular.module('your-app-name', ["ng-fusioncharts"]);
 </code></pre>
-<div class="mt-30 pb-10">Now the fusioncharts directive is available in your app both as an attribute as well as a tag. Include charts other required files in &lt;script&gt; tag:</div>
+<div class="mt-30 pb-10">Now the fusioncharts directive is available in your app both as an attribute as well as a tag. Include charts other required files in &lt;script&gt;&lt;/script&gt; tag:</div>
 <pre><code class="custom-hlc language-javascript">
     &lt;script src="node_modules/fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
     &lt;script src="node_modules/fusioncharts/fusioncharts.widgets.js"&gt;&lt;/script&gt;
