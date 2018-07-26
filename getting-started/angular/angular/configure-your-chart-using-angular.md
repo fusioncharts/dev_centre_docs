@@ -61,6 +61,8 @@ The JSON data to render the above chart is given below:
 },
 ```
 
+
+
 ### Setup the Main Module
 
 In this step, we will setup the main module to create the column2d chart. The code is given below:
@@ -197,11 +199,13 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
+
+
 ## Update Chart Attributes
 
 A chart, configured to update the **chart caption** and **sub-caption** alignment dynamically, is shown below (click any one of the radio buttons shown below the chart to change the caption and sub-caption alignment):
 
-{% embed_chart configure-charts-using-angular-example-2.js %}
+{% embed_chart configure-charts-using-react-example-2.js %}
 
 The JSON data to render the above chart is given below:
 
@@ -291,7 +295,6 @@ export class AppModule {}
 
 > The `<fusioncharts></fusioncharts>` component is available for use in any component throughout your app. We will render our first chart in the main `app.component`.
 
-
 ### Add data to `app.component.ts`
 
 Add the following code to `app.component.ts`:
@@ -375,5 +378,4 @@ Add the following code to `app.component.html`:
 <p><a class="btn btn-default" (click)="changeBackgroundColor()">Change chart background color</a>
     <a class="btn btn-default" (click)="changeCaptionTextAlignment()">Make Caption text left-aligned</a>
 </p>
-
 ```
