@@ -314,7 +314,7 @@ The installation of both the module is shown below:
         }
     });
     // Render
-    chartInstance.render()
+    chartInstance.render();
 </code></pre>
 <div class="mt-30"><strong>Using optional features</strong></div>
 <div class="pb-10">Optional features reside inside the features folder <strong>fusioncharts/features/</strong></div>
@@ -350,22 +350,78 @@ The installation of both the module is shown below:
 <div class="tab cjs-tab">
 <div class="pb-10"><strong>Step 1: Install the fusioncharts package via npm</strong></div>
 <pre><code class="custom-hlc language-bash">
-    npm install fusioncharts
+$ npm install fusioncharts
 </code></pre>
 <div class="mt-20"><strong>Step 2: Load the fusioncharts module</strong></div>
-<div class="pb-10">After you have installed fusioncharts via npm, you can include <strong>using require():</strong> </div>
+<div class="pb-10">After you have installed fusioncharts via npm, include <strong>using require():</strong> </div>
 <pre><code class="custom-hlc language-json">
-    require('fusioncharts/fusioncharts.js');
+    var FusionCharts = require('fusioncharts');
+</code></pre>
+<pre><code class="custom-hlc language-json">
+    var FusionCharts = require('fusioncharts');
+    var Charts = require('fusioncharts/fusioncharts.charts');
+    Charts(FusionCharts);
+
+    // Create an Instance with chart options
+    var chartInstance = new FusionCharts({
+        type: 'Column2D',
+        width: '700', // Width of the chart
+        height: '400', // Height of the chart
+        dataFormat: 'json', // Data type
+        dataSource: {
+            chart: {
+                // Chart Configuration
+                "chart": {
+                    "caption": "Countries With Most Oil Reserves [2017-18]",
+                    "subCaption": "In MMbbl = One Million barrels",
+                    "xAxisName": "Country",
+                    "yAxisName": "Reserves (MMbbl)",
+                    "numberSuffix": "K",
+                    "theme": "fusion",
+                },
+                // Chart Data
+                "data": [{
+                    "label": "Venezuela",
+                    "value": "290"
+                }, {
+                    "label": "Saudi",
+                    "value": "260"
+                }, {
+                    "label": "Canada",
+                    "value": "180"
+                }, {
+                    "label": "Iran",
+                    "value": "140"
+                }, {
+                    "label": "Russia",
+                    "value": "115"
+                }, {
+                    "label": "UAE",
+                    "value": "100"
+                }, {
+                    "label": "US",
+                    "value": "30"
+                }, {
+                    "label": "China",
+                    "value": "30"
+                }]
+            }
+        }
+    });
+    // Render
+    chartInstance.render();
 </code></pre>
 <div class="mt-20"><strong>To include PowerCharts using require();</strong></div>
 <pre><code class="custom-hlc language-json">
-    require('fusioncharts/fusioncharts.js');
-    require('fusioncharts/fusioncharts.powercharts.js');
+   var FusionCharts = require('fusioncharts');
+   var PowerCharts = require('fusioncharts/fusioncharts.powercharts');
+   PowerCharts(FusionCharts);
 </code></pre>
 <div class="mt-20"><strong>To include FusionWidgets using require();</strong></div>
 <pre><code class="custom-hlc language-json">
-    require('fusioncharts/fusioncharts.js');
-    require('fusioncharts/fusioncharts.widgets.js');
+ var FusionCharts = require('fusioncharts');
+ var Widgets = require('fusioncharts/fusioncharts.widgets');
+ Widgets(FusionCharts);
 </code></pre>
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -376,7 +432,7 @@ The installation of both the module is shown below:
 
 That's it. 
 
-## Include Maps via `npm`
+## Include Maps via **npm**
 
 The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
 
@@ -398,9 +454,9 @@ The `fusioncharts` package contains only two map definitions in `fusioncharts/ma
 </div>
 
 <div class='tab cjs-tab'>
-<div><strong>Using `require()`:</strong></div>
+<div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
-    require('path/to/local/fusioncharts/fusioncharts.js');
+var FusionCharts = require('fusioncharts');
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -502,11 +558,13 @@ chartInstance.render()
 </div>
 
 <div class='tab cjs-tab'>
-<div><strong>Using `require()`:</strong></div>
+<div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
-    require('path/to/local/fusioncharts/fusioncharts.js');
-    require('path/to/local/fusionmaps');
-    require('path/to/local/fusionmaps/maps/fusioncharts.world.js');
+var FusionCharts = require('fusioncharts');
+var FusionMaps = require('fusionmaps');
+var World = require('fusionmaps/maps/fusioncharts.world');
+FusionMaps(FusionCharts);
+World(FusionCharts);
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -524,9 +582,9 @@ You can use the other map definition files other than the **World Map** and the 
 $ npm install fusionmaps
 ```
 
-Once the fusionmaps package is innstalled you will find all the map definition files in `fusionmaps/maps/es`. 
+Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder. 
 
-The `fusionmaps` package has dependency on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project.
+The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -538,20 +596,23 @@ The `fusionmaps` package has dependency on the `fusioncharts` package. Therefore
 <div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
     import FusionCharts from 'fusioncharts/core';
+    import FusionMaps from 'fusioncharts/maps';
 </code></pre>
 </div>
 <div class='tab cjs-tab'>
-<div><strong>Using `require()`:</strong></div>
+<div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
-    require('fusioncharts/fusioncharts.js');
+var FusionCharts = require('fusioncharts');
 </code></pre>
 </div>
 </div>
 </div>
 
-Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.  Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
+Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.  
 
-Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. You can do it using any one of the following two methods:
+Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
+
+Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -565,16 +626,23 @@ Therefore, assuming that you need to render the map of California, the alias nam
     import FusionCharts from 'fusioncharts/core';
     import FusionMaps from 'fusioncharts/maps';
     import California from 'fusionmaps/maps/es/fusioncharts.california';
+
+> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps/es** directory and are fetched from there.
+
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab cjs-tab'>
-<div><strong>Using `require()`:</strong></div>
+<div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
-    require('path/to/local/fusioncharts/fusioncharts.js');
-    require('path/to/local/fusionmaps');
-    require('path/to/local/fusionmaps/maps/fusioncharts.california.js');
+var FusionCharts = require('fusioncharts');
+var FusionMaps = require('fusionmaps');
+var California = require('fusionmaps/maps/fusioncharts.california');
+FusonMaps(FusionCharts);
+California(FusionCharts);
+
+> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are fetched from there.
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -582,9 +650,7 @@ Therefore, assuming that you need to render the map of California, the alias nam
 </div>
 </div>
 
-> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are fetched from there.
-
-### Include Themes via **npm**
+## Include Themes via **npm**
 
 Themes shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
 
@@ -620,11 +686,11 @@ To include the definition files placed in **fusioncharts/themes**, follow any of
 </div>
 
 <div class='tab cjs-tab'>
-<div><strong>Using `require()`:</strong></div>
+<div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
-    require('path/to/local/fusioncharts/fusioncharts.js');
-    require('path/to/local/features/theme-engine');
-    require('path/to/local/fusioncharts/themes/fusioncharts.fusion.js');
+ var FusionCharts = require('fusioncharts');
+ var FusionCharts = require('features/theme-engine');
+ var FusionCharts = require('fusioncharts/themes/fusioncharts.fusion');
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
