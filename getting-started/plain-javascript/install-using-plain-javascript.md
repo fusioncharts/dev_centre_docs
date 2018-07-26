@@ -26,7 +26,7 @@ You can include FusionCharts in your project using any of the two modes given be
 
 * JavaScript files to render **Charts**, **Widgets**, and **PowerCharts** under the `js` folder.
 * JavaScript files to render maps under `js > maps` folder.
-* JavaScript files to include themes under `js > themes` folder.
+* JavaScript files to apply themes under `js > themes` folder.
 
 The folder structure is shown below:
 
@@ -50,7 +50,7 @@ File Name|Description|
 `fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js` provided they are in the same folder.|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js` provided they are in the same folder.|
 `maps/*`|This folder contains Map Definition files required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
-`themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
+`themes/*`|This folder contains pre-packaged themes that can be applied to charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
 
 Installation of FusionCharts Suite XT is simply copying and pasting the JavaScript files from the downloaded package into your project folder.
 
@@ -62,7 +62,7 @@ After that, you can include the FusionCharts JavaScript library in your web appl
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-**Step 2: Include the theme file:**
+**Step 2: Include the theme file. This step is optional, the chart will render with the default theme even if the theme is not applied.:**
 
 ```html
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
@@ -84,7 +84,7 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ### Installing FusionMaps (map visualizations) for your project
 
-FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. To render a map, you need the `fusioncharts.maps.js`, and the map definition files. 
+FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files. 
 
 In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
 
@@ -93,16 +93,17 @@ In the downloaded package, you’ll find the `fusioncharts.maps.js` file and onl
 To render a map using FusionCharts, you first need to include `fusioncharts.maps.js` and then the relevant map definition file, as below.
 
 ```
+<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
 ```
 
-In the above example, we’ve include the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
+In the above example, we’ve included the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
 
-To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. Then include the respective map file as under:
+To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. Then include the respective map file as shown below:
 
 ```
-<script type="text/javascript" src="path/to/local/maps/[MAP_ALIAS].js"></script>
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
 ```
 
 Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
@@ -148,7 +149,13 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 
 ## Install FusionCharts via **npm**
 
-The `fusioncharts` package for `npm` can now be installed using two different modules:
+To install the `fusioncharts` package via  npm package copy the command below:
+
+```
+$ npm install fusioncharts
+```
+
+The `fusioncharts` package for `npm` can now be used in two different ways:
 
 * **FusionCharts ES module** - From v3.13.0 we are providing the FusionCharts library as ES modules within the `fusioncharts` npm package. This package let's you selectively add modules as per your requirement. For example - You only need the angular guage, pie chart and the column chart. The FusionCharts ES module allows you to cherry pick only these visualizations and use in your application. 
  
@@ -235,9 +242,11 @@ The installation of both the module is shown below:
 </ul>
 <div class="tab-content extra-tabs">
 <div class="tab es6-tab active">
-<div class="mt-10 pb-10"><strong>How to use ES6 to render a chart?</strong></div>
 <div><strong>Step 1</strong></div>
 <pre><code class="custom-hlc language-javascript">
+    //Install `fusioncharts` package`
+    $ npm install fusioncharts
+
     // Include the core fusioncharts file from core  -
     import FusionCharts from 'fusioncharts/core';
     
@@ -282,7 +291,7 @@ The installation of both the module is shown below:
 </code></pre>
 <div class="pb-10">Adding extension is same as adding any other dependency</div>
 <pre><code class="custom-hlc language-json">
-    import IgnoreCaseExt from 'fusioncharts/features/ignore-case-ext';
+    import IgnoreCaseExt from 'node_modules/fusioncharts/features/ignore-case-ext';
     FusionCharts.addDep(IgnoreCaseExt);
 </code></pre>
 <div class="mt-30"><strong>Similarly, you can also import the other optional features (mentioned in the above table).</strong></div>
@@ -296,17 +305,17 @@ The installation of both the module is shown below:
 <div class="mt-20"><strong>Step 2: Load the fusioncharts module</strong></div>
 <div class="pb-10">After you have installed fusioncharts via npm, you can include <strong>using require():</strong> </div>
 <pre><code class="custom-hlc language-json">
-    require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
+    require('fusioncharts/fusioncharts.js');
 </code></pre>
 <div class="mt-20"><strong>To include PowerCharts using require();</strong></div>
 <pre><code class="custom-hlc language-json">
-    require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
-    require('path/to/local/node_modules/fusioncharts/fusioncharts.powercharts.js');
+    require('fusioncharts/fusioncharts.js');
+    require('fusioncharts/fusioncharts.powercharts.js');
 </code></pre>
 <div class="mt-20"><strong>To include FusionWidgets using require();</strong></div>
 <pre><code class="custom-hlc language-json">
-    require('path/to/local/node_modules/fusioncharts/fusioncharts.js');
-    require('path/to/local/node_modules/fusioncharts/fusioncharts.widgets.js');
+    require('fusioncharts/fusioncharts.js');
+    require('fusioncharts/fusioncharts.widgets.js');
 </code></pre>
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
