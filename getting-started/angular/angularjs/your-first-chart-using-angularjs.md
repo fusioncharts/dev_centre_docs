@@ -97,7 +97,9 @@ Functional attributes let you control a variety of functional elements on the ch
 
 #### Cosmetic Attributes
 
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
+Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. 
+
+For a detailed list of attributes click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
 ### Setup the main module
 
@@ -154,6 +156,8 @@ myApp.controller('MyController', ['$scope', function($scope) {
 }])
 ```
 
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
+
 Now, use the `fusioncharts` directive in a template. The code for the `index.html` file is given below:
 
 ```html
@@ -162,11 +166,11 @@ Now, use the `fusioncharts` directive in a template. The code for the `index.htm
 
 <head>
     <title>Document</title>
-    <script src="node_modules/fusioncharts/fusioncharts.js"></script>
-    <script src="node_modules/fusioncharts/fusioncharts.charts.js"></script>
-    <script src="node_modules/fusioncharts/fusioncharts.theme.fusion.js"></script>
-    <script src="node_modules/angular/angular.js"></script>
-    <script src="node_modules/angular-fusioncharts/dist/angular-fusioncharts.[min].js"></script>
+    <script src="path/to/local/node_modules/fusioncharts/fusioncharts.js"></script>
+    <script src="path/to/local/node_modules/fusioncharts/fusioncharts.charts.js"></script>
+    <script src="path/to/local/node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
+    <script src="path/to/local/node_modules/angular/angular.js"></script>
+    <script src="path/to/local/node_modules/angular-fusioncharts/js/angular-fusioncharts.js"></script>
 </head>
 
 <body ng-app="my-app">
@@ -184,9 +188,6 @@ Now, use the `fusioncharts` directive in a template. The code for the `index.htm
 
 </html>
 ```
-
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
-
 Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 
 ## Create your first gauge
@@ -246,6 +247,8 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
     }
 }
 ```
+
+See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for an angular gauge.
 
 ### Setup the main module
 
@@ -315,8 +318,6 @@ Now, use the fusioncharts directive in a template. The code for the `index.html`
 </body>
 ```
 
-See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
-
 ## Create your first map
 
 In this section, we will create a visualization using the map of **World**. Take a look at the map shown below:
@@ -334,7 +335,13 @@ Europe|EU|40|
 Africa|AF|2.58|
 Australia|AU|1.30|
 
-> In the above table, the column **Entity Name** represents the geographical entities represnted in the map, whose full names are given in the **State** column in this example. However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id`s of the map you want to create.
+> In the above table, the column **Entity Name** represents the geographical entities represnted in the map, whose full names are given in the **State** column in this example. 
+
+However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). 
+
+For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. 
+
+We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id`s of the map you want to create.
 
 ### Convert tabular data into JSON format
 

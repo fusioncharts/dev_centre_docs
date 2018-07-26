@@ -84,13 +84,12 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ### Installing FusionMaps (map visualizations) for your project
 
-FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files. 
-
+FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. 
 In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
-To render a map using FusionCharts, you first need to include `fusioncharts.maps.js` and then the relevant map definition file, as below.
+To render a map, you need the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files as shown below:
 
 ```
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
@@ -99,6 +98,8 @@ To render a map using FusionCharts, you first need to include `fusioncharts.maps
 ```
 
 In the above example, we’ve included the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
+
+**Load other map definition files**
 
 To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. Then include the respective map file as shown below:
 
