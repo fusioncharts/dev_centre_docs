@@ -66,6 +66,8 @@ FusionCharts can provide more than 1000 maps that cater to all your map visualiz
 
 Include `"FusionCharts.java"` file from `fusioncharts-suite-xt > integrations > java > fusioncharts-wrapper` in your project.
 
+This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/jsp/your-first-chart-using-jsp#create-your-first-map-10 '@@open-newtab').
+
 ## Themes
 
 Themes shipped with FusionCharts Suite XT allow you to create centralized theme files and apply those themes to any number of charts.
