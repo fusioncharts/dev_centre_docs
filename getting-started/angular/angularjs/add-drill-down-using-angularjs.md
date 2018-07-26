@@ -282,7 +282,7 @@ $scope.events = {
 };
 ```
 
-Now, use the `fusioncharts` directive in a template. The code for the ``html` file is given below:
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
 ```
 <div fusioncharts

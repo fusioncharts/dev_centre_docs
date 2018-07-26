@@ -9,8 +9,8 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 This article focuses on how you can configure the following using `angularjs-fusioncharts` component:
 
-* [Update Chart Data]({% site.baseurl %}/getting-started/angular/angularjs/configure-your-chart-using-angular#update-chart-data-1)
-* [Update Chart Attributes]({% site.baseurl %}/getting-started/angular/angularjs/configure-your-chart-using-angular#update-chart-attributes-5)
+* [Update Chart Data]({% site.baseurl %}/getting-started/angular/angularjs/configure-your-chart-using-angularjs#update-chart-data-1)
+* [Update Chart Attributes]({% site.baseurl %}/getting-started/angular/angularjs/configure-your-chart-using-angularjs#update-chart-attributes-2)
 
 ## Update Chart Data
 
@@ -63,13 +63,6 @@ The JSON data to render the above chart is given below:
 Now, create module and controller for the template. The code for the `js` file is given below:
 
 ```
-let getRandomNumber = function() {
-    var max = 290,
-        min = 30;
-    return Math.round(((max - min) * Math.random()) + min);
-}
-
-
 $scope.dataSource = {
     "chart": {
         "caption": "Countries With Most Oil Reserves [2017-18]",
@@ -115,13 +108,19 @@ $scope.dataSource = {
     ]
 };
 
+let getRandomNumber = function() {
+    var max = 290,
+        min = 30;
+    return Math.round(((max - min) * Math.random()) + min);
+}
+
 $scope.updateMyChartData = function() {
     $scope.dataSource.data[2].value = getRandomNumber();
     $scope.dataSource.data[3].value = getRandomNumber();
 };
 ```
 
-Now, use the `fusioncharts` directive in a template. The code for the ``html` file is given below:
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
 ```
 <div fusioncharts
@@ -238,7 +237,7 @@ $scope.changeCaptionTextAlignment = function() {
 };
 ```
 
-Now, use the `fusioncharts` directive in a template. The code for the ``html` file is given below:
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
 ```
 <div fusioncharts

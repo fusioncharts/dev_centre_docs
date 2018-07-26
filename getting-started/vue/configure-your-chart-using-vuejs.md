@@ -7,17 +7,16 @@ chartPresent: true
 
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization easy. These features include chart update, annotations, trend-lines, and events.
 
-This article focuses on how you can configure the following:use the React `props` object and `react-fusioncharts` component to:
+This article focuses on how you can configure the following using `vue-fusioncharts` component:
 
-* Update Chart Data (using React `Props` object)
-* Update Chart Attributes (using React `Props` object)
-* Add Annotations (using `react-fusioncharts` component)
+* [Update Chart Data]({% site.baseurl %}/getting-started/vue/configure-your-chart-using-vue#update-chart-data-1)
+* [Update Chart Attributes]({% site.baseurl %}/getting-started/vue/configure-your-chart-using-vue#update-chart-attributes-2)
 
 ## Update Chart Data
 
 A chart, configured to update data values dynamically, is shown below (click **Update chart** data to update the chart data):
 
-{% embed_chart configure-charts-using-vue-example-1.js %}
+{% embed_chart configure-charts-using-angular-example-1.js %}
 
 The JSON data to render the above chart is given below:
 
@@ -61,17 +60,69 @@ The JSON data to render the above chart is given below:
 },
 ```
 
-The full code of the above sample is given below:
+In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
+
+The code to render a chart is given below:
 
 ```
-CODE
+FusionCharts.ready(function() {
+
+    Vue.use(VueFusionCharts);
+
+    // Load datasource from data.json
+    var dataSource = getDataSource();
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            type: 'column2d',
+            width: '400',
+            height: '350',
+            dataFormat: 'json',
+            dataSource: dataSource
+        },
+        methods: {
+            // Updates the chart data
+            updateData: function() {
+                const data = Object.assign({}, this.dataSource); //clones data
+                data.data[2].label = 'This Label is Updated';
+                data.data[2].value = this.getRandomNumber();
+
+                data.data[3].label = 'This is updated as well';
+                data.data[3].value = this.getRandomNumber();
+                this.dataSource = data;
+            },
+            // Generates a random number between min and max
+            getRandomNumber: function() {
+                var max = 300,
+                    min = 50;
+                return Math.round(((max - min) * Math.random()) + min);
+            }
+        },
+    });
+});
+```
+
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
+
+```
+<div id="app">
+    <fusioncharts
+    :type="type"
+    :width="width"
+    :height="height"
+    :dataFormat="dataFormat"
+    :dataSource="dataSource"
+    ></fusioncharts>
+    <button @click="updateData">Click to Update Data</button>
+</div>
 ```
 
 ## Update Chart Attributes
 
 A chart, configured to update the **chart caption** and **sub-caption** alignment dynamically, is shown below (click any one of the radio buttons shown below the chart to change the caption and sub-caption alignment):
 
-{% embed_chart configure-charts-using-vue-example-2.js %}
+{% embed_chart configure-charts-using-react-example-2.js %}
 
 The JSON data to render the above chart is given below:
 
@@ -115,101 +166,50 @@ The JSON data to render the above chart is given below:
 },
 ```
 
-The full code of the above sample is given below:
+In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
+
+The code to render a chart is given below:
 
 ```
-CODE
+FusionCharts.ready(function() {
+
+    Vue.use(VueFusionCharts);
+    
+    // Load datasource from data.json
+    var dataSource = getDataSource(); 
+
+    var app = new Vue({
+        el: '#app',
+        data: {
+            width: '700',
+            height: '400',
+            type: 'column2d',
+            dataFormat: 'json',
+            dataSource: dataSource
+        },
+        methods:{
+            // Changes chart background
+            changeBackground: function(){
+                const data = Object.assign({}, this.dataSource); //copy of object
+                data.chart.bgColor = '#efefef';
+                this.dataSource = data;
+            }
+        }
+    });
+});
 ```
 
-## Add Annotations
-
-Annotations are graphical elements (different types of shapes, custom text, and so on) that you can render on your chart to make it more informative, while making it visually appealing.
-
-A spline chart using annotations to highlight a particular anchor along with text is shown below:
-
-{% embed_chart configure-charts-using-vue-example-3.js %}
-
-The JSON data to render the above chart is given below:
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
 ```
-{
-    "chart": {
-        "caption": "Average Monthly Temperature in Texas",
-        "yAxisName": "Average Monthly Temperature",
-        "anchorradius": "5",
-        "plotToolText": "Average temperature in $label is <b>$dataValue</b>",
-        "showHoverEffect": "1",
-        "showvalues": "0",
-        "numberSuffix": "°C",
-        "theme": "fusion",
-        "anchorBgColor": "#72D7B2",
-        "paletteColors": "#72D7B2"
-    },
-    "annotations": {
-        "groups": [{
-            "id": "anchor-highlight",
-            "items": [{
-                "id": "high-star",
-                "type": "circle",
-                "x": "$dataset.0.set.7.x",
-                "y": "$dataset.0.set.7.y",
-                "radius": "12",
-                "color": "#cc0000",
-                "border": "2",
-                "borderColor": "#0075c2"
-            }, {
-                "id": "label",
-                "type": "text",
-                "text": "Hottest Month",
-                "fillcolor": "#0075c2",
-                "rotate": "90",
-                "x": "$dataset.0.set.7.x+75",
-                "y": "$dataset.0.set.7.y-2"
-            }]
-        }]
-    },
-    "data": [{
-        "label": "Jan",
-        "value": "1"
-    }, {
-        "label": "Feb",
-        "value": "5"
-    }, {
-        "label": "Mar",
-        "value": "10"
-    }, {
-        "label": "Apr",
-        "value": "12"
-    }, {
-        "label": "May",
-        "value": "14"
-    }, {
-        "label": "Jun",
-        "value": "16"
-    }, {
-        "label": "Jul",
-        "value": "20"
-    }, {
-        "label": "Aug",
-        "value": "22"
-    }, {
-        "label": "Sep",
-        "value": "20"
-    }, {
-        "label": "Oct",
-        "value": "16"
-    }, {
-        "label": "Nov",
-        "value": "7"
-    }, {
-        "label": "Dec",
-        "value": "2"
-    }]
-},
-```
-
-The full code of the above sample is given below:
-
-```
-CODE
+<div id="app">
+    <fusioncharts
+    :type="type"
+    :width="width"
+    :height="height"
+    :dataFormat="dataFormat"
+    :dataSource="dataSource"
+    ></fusioncharts>
+    <button @click="changeBackground">Change Chart Background</button>
+</div>
 ```
