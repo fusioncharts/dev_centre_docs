@@ -225,11 +225,11 @@ Once the installation is done, you need to register the `fusioncharts` module. Y
 You can include the fusioncharts class and jquery-fusioncharts module using any of the following process:
 
 <div class="code-wrapper">
-<ul class='code-tabs'>
+<ul class='code-tabs extra-tabs'>
   <li class='active'><a data-toggle='json'>Import</a></li>
   <li><a data-toggle='xml'>Require</a></li>
 </ul>
-<div class='tab-content'>
+<div class='tab-content extra-tabs'>
 <div class='tab json-tab active'>
 <div><strong>To include jQuery:</strong></div>
 <pre><code class="custom-hlc language-cs">
@@ -299,11 +299,11 @@ Widgets(FusionCharts);
 You an include the map files using any of the following process:
 
 <div class="code-wrapper">
-<ul class='code-tabs'>
+<ul class='code-tabs extra-tabs'>
   <li class='active'><a data-toggle='json'>Import</a></li>
   <li><a data-toggle='xml'>Require</a></li>
 </ul>
-<div class='tab-content'>
+<div class='tab-content extra-tabs'>
 <div class='tab json-tab active'>
 <div><strong>To include jQuery:</strong></div>
 <pre><code class="custom-hlc language-cs">
@@ -374,11 +374,11 @@ FusionCharts Suite XT ships with the following predefined themes:
 You can include the themes using any of the following process:
 
 <div class="code-wrapper">
-<ul class='code-tabs'>
+<ul class='code-tabs extra-tabs'>
   <li class='active'><a data-toggle='json'>Import</a></li>
   <li><a data-toggle='xml'>Require</a></li>
 </ul>
-<div class='tab-content'>
+<div class='tab-content extra-tabs'>
 <div class='tab json-tab active'>
 <div><strong>To include jQuery:</strong></div>
 <pre><code class="custom-hlc language-cs">
