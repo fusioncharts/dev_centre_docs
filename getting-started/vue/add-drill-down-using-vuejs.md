@@ -158,7 +158,7 @@ FusionCharts.ready(function() {
     var app = new Vue({
         el: '#app',
         data: {
-            width: '600',
+            width: '700',
             height: '400',
             type: 'column2d',
             dataFormat: 'json',

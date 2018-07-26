@@ -37,7 +37,7 @@ The parent chart is a column 2D chart that shows the yearly sales of the top thr
 
 The above chart, when rendered, looks like the following:
 
-{% embed_chart add-drill-down-using-jquery-example-1.js %}
+{% embed_chart add-drill-down-using-angular-example-1.js %}
 
 The JSON data to render the above chart:
 
@@ -143,10 +143,49 @@ The JSON data to render the above chart:
 }
 ```
 
-The full code of the above sample is given below:
+In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+
+The code to render a chart using `require` is given below:
 
 ```
+let FusionCharts = require('fusioncharts');
+let Charts = require('fusioncharts/fusioncharts.charts');
+let FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+let $ = require('jquery');
+let jQFc = require('jquery-fusioncharts');
 
+Charts(FusionCharts);
+FusionTheme(FusionCharts);
+
+$('#chart-container').insertFusionCharts({
+    id: 'drill-down-chart',
+    type: 'column2d',
+    width: '700',
+    height: '400',
+    dataFormat: 'json',
+    dataSource: {/* see data tab */ },
+});
+
+// Trigerred when chart is rendered.
+// Configures the linked charts.
+$('#chart-container').bind('fusionchartsrendered', function(event, args) {
+    FusionCharts.items['drill-down-chart'].configureLink({
+        type: 'pie2d',
+        width: '500',
+        overlayButton: {
+          message: 'Back',
+          fontColor: '880000',
+          bgColor: 'FFEEEE',
+          borderColor: '660000',
+        },
+    }, 0);
+});
 ```
 
-Click [here](http://jsfiddle.net/fusioncharts/k7mn6j5s/ "@@open-newtab") to edit the above chart.
+The HTML template of the above sample is shown below:
+
+```
+<div id='chart-container'>
+    FusionCharts will render here
+</div>
+```
