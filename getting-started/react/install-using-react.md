@@ -213,37 +213,6 @@ Once the installation is done, you need to register the `fusioncharts` module. Y
 You can include the fusioncharts class and React FusionCharts plugin using any of the following process:
 
 <div class="code-wrapper">
-<ul class="code-tabs extra-tabs">
-    <li class="active"><a data-toggle="import">Import</a></li>
-    <li><a data-toggle="require">Require</a></li>
-</ul>
-<div class="tab-content extra-tabs">
-<div class="tab require-tab active">
-<div class="mt-30"><strong>require your `map` module:</strong></div>
-<pre><code class="custom-hlc language-javascript">
-    const Maps = require('fusioncharts/fusioncharts.maps.js');
-    const World = require('fusioncharts/maps/fusioncharts.world.js');
-</code></pre>
-<div class="mt-30"><strong>Pass the `fusioncharts` module to the `maps` module:</strong></div>
-<pre><code class="custom-hlc language-javascript">
-    Maps(FusionCharts);
-    World(FusionCharts);
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-<div class="tab scripttags-tab">
-<div class="mt-30"><strong>Include map definitions in **&lt;script&gt;** tag:</strong></div>
-<pre><code class="custom-hlc language-html">
-    &lt;script src="node_modules/fusioncharts/fusioncharts.maps.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-</div>
-</div>
-
-<div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
   <li class='active'><a data-toggle='import'>Import</a></li>
   <li><a data-toggle='require'>Require</a></li>
@@ -315,11 +284,11 @@ To register using a specific chart type you have to:
 Refer to the code below:
 
 <div class="code-wrapper">
-<ul class='code-tabs'>
+<ul class='code-tabs extra-tabs'>
   <li class='active'><a data-toggle='json'>Import</a></li>
   <li><a data-toggle='xml'>Require</a></li>
 </ul>
-<div class='tab-content'>
+<div class='tab-content extra-tabs'>
 <div class='tab json-tab active'>
 <div><strong>To include the core fusioncharts class:</strong></div>
 <pre><code class="custom-hlc language-javascript">
@@ -372,11 +341,11 @@ Refer to the code below:
 To register using multiple chart types, import the specific charts instead of all the charts after importing the `fusioncharts` class. Also, you need to add the dependencies for all the specific chart types as shown in the code below:
 
 <div class="code-wrapper">
-<ul class='code-tabs'>
+<ul class='code-tabs extra-tabs'>
   <li class='active'><a data-toggle='json'>Import</a></li>
   <li><a data-toggle='xml'>Require</a></li>
 </ul>
-<div class='tab-content'>
+<div class='tab-content extra-tabs'>
 <div class='tab json-tab active'>
 <div><strong>To include the core fusioncharts class:</strong></div>
 <pre><code class="custom-hlc language-javascript">
@@ -431,11 +400,11 @@ To register using multiple chart types, import the specific charts instead of al
 You can include the map files via **ES5** using any of the following process:
 
 <div class="code-wrapper">
-<ul class='code-tabs'>
+<ul class='code-tabs extra-tabs'>
   <li class='active'><a data-toggle='json'>Import</a></li>
   <li><a data-toggle='xml'>Require</a></li>
 </ul>
-<div class='tab-content'>
+<div class='tab-content extra-tabs'>
 <div class='tab json-tab active'>
 <div><strong>To include the fusioncharts files:</strong></div>
 <pre><code class="custom-hlc language-javascript">
@@ -492,11 +461,11 @@ You can include the map files via **ES5** using any of the following process:
 You can include the map files via **ES6** using any of the following process:
 
 <div class="code-wrapper">
-<ul class='code-tabs'>
+<ul class='code-tabs extra-tabs'>
   <li class='active'><a data-toggle='json'>Import</a></li>
   <li><a data-toggle='xml'>Require</a></li>
 </ul>
-<div class='tab-content'>
+<div class='tab-content extra-tabs'>
 <div class='tab json-tab active'>
 <div><strong>To include the core fusioncharts files:</strong></div>
 <pre><code class="custom-hlc language-javascript">
@@ -580,11 +549,11 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 You can include the themes via **ES5** using any of the following process:
 
 <div class="code-wrapper">
-<ul class='code-tabs'>
+<ul class='code-tabs extra-tabs'>
   <li class='active'><a data-toggle='json'>Import</a></li>
   <li><a data-toggle='xml'>Require</a></li>
 </ul>
-<div class='tab-content'>
+<div class='tab-content extra-tabs'>
 <div class='tab json-tab active'>
 <div><strong>To include the fusioncharts files:</strong></div>
 <pre><code class="custom-hlc language-javascript">
@@ -631,11 +600,11 @@ You can include the themes via **ES5** using any of the following process:
 You can include the themes via **ES6** using any of the following process:
 
 <div class="code-wrapper">
-<ul class='code-tabs'>
+<ul class='code-tabs extra-tabs'>
   <li class='active'><a data-toggle='json'>Import</a></li>
   <li><a data-toggle='xml'>Require</a></li>
 </ul>
-<div class='tab-content'>
+<div class='tab-content extra-tabs'>
 <div class='tab json-tab active'>
 <div><strong>To include the core fusioncharts files:</strong></div>
 <pre><code class="custom-hlc language-javascript">
