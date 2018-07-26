@@ -1,5 +1,4 @@
 ---
-permalink: getting-started/django/install-using-django.html
 title: Installation | FusionCharts
 description: The FusionCharts Django wrapper is a Python framework which is responsible for quick web development.
 heading: Installation
@@ -7,7 +6,7 @@ chartPresent: false
 ---
 
 The **FusionCharts Django** server-side wrapper lets you create charts in your website without writing any JavaScript code.
-Conventionally, FusionCharts Suite XT uses JavaScript and HTML to generate charts in the browser. The Django wrapper lets you generate the required JavaScript and HTML code as a string on the server. This string is then used to render charts on a browser page.
+Conventionally, FusionCharts Suite XT uses JavaScript and HTML to generate charts in the browser. The wrapper receives the parameter which automatically generates the JavaScript and HTML code required to render the chart.
 
 In this article, we will show you how you can download and install the **FusionCharts Django** wrapper and all the other dependencies on your system.
 
@@ -27,16 +26,6 @@ The folder structure is shown below:
 
 > It is recommended that you copy the files of the `js` folder from fusioncharts-suite-xt to your project folder.
 
-* The download package also contains **fusioncharts.py** file under `fusioncharts-suite-xt > integrations > django > fusioncharts-wrapper` folder. The folder structure is shown below:
-
-![Django Js Folder]({% site.baseurl %}/gif/django-folder-structure.gif)
-
-> If you are using 3.12.2 or older versions, download v3.13.0 to get the `django` folder in the FusionCharts Suite XT package. 
-
-> It is recommended that you copy the `fusioncharts.py` file from `fusioncharts-suite-xt > integrations > django > fusioncharts-wrapper` to your project's folder.
-
-Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the downloaded package into your project folder. The folder structure is shown below:
-
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
 
 File Name|Description|
@@ -54,6 +43,16 @@ File Name|Description|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js`.|
 `maps/*`|This folder contains path data required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download definition of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be used by charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective file names.|
+
+Installation of FusionCharts Suite XT merely involves copying and pasting the JavaScript files from the downloaded package into your project folder. 
+
+* The download package also contains **fusioncharts.py** file under `fusioncharts-suite-xt > integrations > django > fusioncharts-wrapper` folder. The folder structure is shown below:
+
+![Django Js Folder]({% site.baseurl %}/gif/django-folder-structure.gif)
+
+> If you are using 3.12.2 or older versions, download v3.13.0 to get the `django` folder in the FusionCharts Suite XT package. 
+
+> It is recommended that you copy the `fusioncharts.py` file from `fusioncharts-suite-xt > integrations > django > fusioncharts-wrapper` to your project's folder.
 
 Now, place the FusionCharts library inside the **"static/FusionCharts"** folder in your project.
 
