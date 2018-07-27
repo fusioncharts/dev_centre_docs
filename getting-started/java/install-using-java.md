@@ -12,13 +12,13 @@ Some of the basic features of Java are:
 * Easily create charts in JavaScript using your Java code.
 * Can render charts using **JSON/XML** data or URL.
 
-In this article, we will show you how to download and install the `FusionCharts Java` wrapper and all the other dependencies on your system. You can use FusionCharts in your JSP project using direct JavaScript files.
+In this article, we will show you how to download and install the `FusionCharts Java` wrapper and all the other dependencies on your system. You can use FusionCharts in your Java project using direct JavaScript files.
 
 > The FusionCharts Java server-side wrapper requires JAVA 6 or higher.
 
 ## Install FusionCharts Java Wrapper
 
-In order to install and start working with FusionCharts-Java you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
+In order to install and start working with FusionCharts - Java Wrapper you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
 * JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
 * JavaScript files to render maps under `js > maps` folder.
@@ -70,7 +70,7 @@ After that, you can include the FusionCharts JavaScript library in your web appl
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-**Step 3:** To use **FusionCharts JSP wrapper** in your project `include` the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project's folder.
+**Step 3:** To use **FusionCharts - Java wrapper** in your project `include` the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project's folder.
 
 The consolidated code is shown below:
 
