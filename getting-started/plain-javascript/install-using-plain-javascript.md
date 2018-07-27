@@ -630,9 +630,8 @@ Therefore, assuming that you need to render the map of California, the alias nam
     import California from 'fusionmaps/maps/es/fusioncharts.california';
 </code></pre>
 
-<pre><code class="custom-hlc language-javascript">
-> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps/es** directory and are fetched from there.
-</code></pre>
+<div class="mt-30"> <strong>It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.</strong>
+</div>
 
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -648,10 +647,8 @@ FusonMaps(FusionCharts);
 California(FusionCharts);
 </code></pre>
 
-<pre><code class="custom-hlc language-javascript">
-> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the **fusioncharts** directory, all map definition files are stored in the **maps** directory and are fetched from there.
-</code></pre>
-</code></pre>
+<div class="mt-30"><strong> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.</strong>
+</div>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
