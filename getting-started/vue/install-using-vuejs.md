@@ -53,7 +53,7 @@ Both the minified (compressed) and source (uncompressed) copies of Vue files are
 
 > It is recommended that you copy the JavaScript files of the `vue` folder from `fusioncharts-suite-xt > integrations > vue > js` to your project folder.
 
-Following is the list of files present in your `fusioncharts-suite-xt > js` folder:
+Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
 File Name|Description|
 -|-
@@ -119,19 +119,35 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ### Installing FusionMaps (map visualizations) for your project
 
-FusionCharts can provide more than 1000 maps that cater to all your map visualization requirements. But to keep the library lightweight, by default it ships only with two maps - the **world** map, and the **map of the USA**. To render rest of the maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files and include them in to your HTML as shown below:
+FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. 
+In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
-> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
+To render a map, you need the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, `vue.js`, and the map definition files as shown below:
 
 ```
-<script type="text/JavaScript" src="path/to/local/fusioncharts.maps.js"></script>
-<script type="text/JavaScript" src="path/to/local/fusioncharts.world.js"></script>
-
-!-- The next line describes the format for more map definition files -->
-<script type="text/javascript" src="path/to/local/[MAP_ALIAS].js"></script>
+<script type="text/JavaScript" src="path/to/local/vue.js"></script>
+<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+<script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
 ```
 
-The `fusioncharts.world.js` file includes path drawings of the map of **world**.
+In the above example, we’ve included the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
+
+**Load other map definition files**
+
+To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. 
+
+```
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
+```
+
+Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
+
+```
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"></script>
+```
+
+Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
 The consolidated code(which also includes the `vue.js`, `fusioncharts.js` and `vue-fusioncharts.js`)  looks like as shown below:
 
@@ -166,14 +182,14 @@ The FusionCharts Suite download package also contains the predefined theme files
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
-To include a theme to your chart, include its corresponding JavaScript file in your HTML page for that theme as shown in the code below:
+To include a theme to your chart, include its corresponding JavaScript file in your HTML page as shown in the code below:
 
 ```html
 <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
 <script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme you have to set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
 
 ## Include FusionCharts via **npm**
 
