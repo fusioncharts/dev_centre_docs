@@ -1,13 +1,13 @@
 ---
 title: Installation | FusionCharts
-description: This article outlines the steps to install fusioncharts and fusioncharts angularjs directive to create charts.
+description: This article outlines the steps to install fusioncharts and fusioncharts angularjs module to create charts.
 heading: Installation
 chartPresent: false
 ---
 
-The `angularjs-fusioncharts` directive for **FusionCharts Suite XT**, lets you add interactive JavaScript charts to your **AngularJS (v1.x)** web and mobile applications.
+The `angularjs-fusioncharts` module for **FusionCharts Suite XT**, lets you add interactive JavaScript charts to your **AngularJS (v1.x)** web and mobile applications.
 
-In this article, we will show you how to download and install the `angularjs-fusioncharts` directive and all the other dependencies. 
+In this article, we will show you how to download and install the `angularjs-fusioncharts` module and all the other dependencies. 
 
 ## Choose your mode of installation:
 
@@ -76,7 +76,7 @@ After that, you can include the FusionCharts JavaScript library in your web appl
 <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-**Step 3: Include the angularjs-fusioncharts directive:**
+**Step 3: Include the angularjs-fusioncharts module:**
 
 ```html
 <script type="text/javascript" src="/path/to/local/angular-fusioncharts.js"></script>
@@ -90,9 +90,9 @@ Include the ng-fusioncharts as a dependency in the application. Call `angular.mo
 angular.module("myApp", ["ng-fusioncharts"])
 ```
 
-### Add the Directive
+### Add the module
 
-Add the `<div>` with an **fc-chart** directive in your HTML, assuming that it is inside a controller named `MyController`.
+Add the `<div>` with an **fc-chart** module in your HTML, assuming that it is inside a controller named `MyController`.
 
 ```
 <div ng-controller='MyController'>
@@ -225,34 +225,48 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 
 ## Install AngularJS-FusionCharts via **npm**
 
-Now, let's discuss how to install the `angularjs-fusioncharts` module via **npm**. 
+Now, let's discuss how to install the `angularjs-fusioncharts` package via **npm**. 
 
-The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**. So, first we will install the core `fusioncharts` module as shown below:
-
-```shell
-$ npm install fusioncharts
-``` 
+The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**. 
 
 > If you are not aware about the different files of FusionCharts package and its purpose, refer [here]({% site.baseurl %}/getting-started/angular/angularjs/install-using-angularjs#install-using-direct-javascript-files-2 '@@open-newtab').
 
 Now, to install the AngularJS-FusionCharts follow the steps given below:
 
-**Step 1**: Install `angularjs-fusioncharts` directive:
+**Step 1**: Install `angularjs` core librar:
 ```
-   $ npm install angularjs-fusioncharts --save
+  $ npm install angular
+
+
+**Step 2**: Install angularjs-fusioncharts 
 ```
-**Step 2** : Include `angular` core library using `require`
+   $ npm install angularjs-fusioncharts
 ```
- var angular = require('angular');
+**Step 3**: Install `fusioncharts` package:
 ```
-**Step 3**: Include `fusioncharts` core library using `require`:
+    $ npm install fusioncharts
 ```
-    var FusionCharts = require('fusioncharts');
+**Step 4:** Include `angularjs` core library using `require`:
 ```
-**Step 3:** Include the `charts` module using `require`:
+var Angular = require('angular');
+
 ```
+**Step 5:** Include `fusioncharts` core library using `require`:
+
+```
+var FusionCharts = require('fusioncharts');
+
+```
+**Step 6:** Include `angularjs-fusioncharts` module using `require`:
+```
+require('angularjs-fusioncharts');
+```
+**Step 7:** Include the `charts` module using `require`:
+```
+    var Angular = require('angular');
     var FusionCharts = require('fusioncharts');
     var Charts = require('fusioncharts/fusioncharts.charts');
+    require('angularjs-fusioncharts');
     Charts(FusionCharts);
 
     // Create an Instance with chart options
