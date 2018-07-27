@@ -26,7 +26,7 @@ The folder structure is shown below:
 
 > Copy the files of the `js` folder from fusioncharts-suite-xt to your project folder.
 
-Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
+Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
 File Name|Description|
 -|-
@@ -54,7 +54,7 @@ Installation of FusionCharts Suite XT is simply copying and pasting the JavaScri
 
 To use **FusionCharts PHP wrapper** in your project `include` the `fusioncharts.php` file from `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` to your project's folder.
 
-Follow the steps given below to include the files in `fusioncharts-suite-xt/js` folder:
+Follow the steps given below to include the files in `fusioncharts-suite-xt > js` folder:
 
 **Step 1: Include the FusionCharts package:**
 

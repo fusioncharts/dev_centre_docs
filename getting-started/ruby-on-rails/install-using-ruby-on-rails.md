@@ -23,7 +23,7 @@ The folder structure is shown below:
 
 > Copy the files of the `js` folder from fusioncharts-suite-xt to your project application in `vendor/assets/javascripts/fusioncharts/` folder.
 
-Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
+Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
 File Name|Description|
 -|-

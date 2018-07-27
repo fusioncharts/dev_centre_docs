@@ -53,7 +53,7 @@ Both the minified (compressed) and source (uncompressed) copies of Vue files are
 
 > It is recommended that you copy the JavaScript files of the `vue` folder from `fusioncharts-suite-xt > integrations > vue > js` to your project folder.
 
-Following is the list of files present in your `fusioncharts-suite-xt/js` folder:
+Following is the list of files present in your `fusioncharts-suite-xt > js` folder:
 
 File Name|Description|
 -|-
