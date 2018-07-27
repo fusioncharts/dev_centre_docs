@@ -21,7 +21,13 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> Copy the files of the `js` folder from fusioncharts-suite-xt to your project application in `vendor/assets/javascripts/fusioncharts/` folder.
+> It is recommended that you copy the files of the `js` folder from `fusioncharts-suite-xt` download package to your project application in `vendor/assets/javascripts/fusioncharts/` folder.
+
+* The download package also contains FusionCharts gem under `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` folder. This folder will also contain native RoR FusionCharts **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/ruby-on-rails '@@open-newtab')**. The folder structure is shown below:
+
+![Ruby on Rails Js Folder]({% site.baseurl %}/gif/ror-folder-structure.gif)
+
+> If you are using 3.12.2 or older versions, download v3.13.0 to get the `rubyonrails` folder in the FusionCharts Suite XT package. 
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
@@ -43,17 +49,21 @@ File Name|Description|
 
 Installation of FusionCharts Suite XT is simply copying and pasting the JavaScript files from the downloaded package into your project folder.
 
-* The download package also contains FusionCharts gem under `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` folder. This folder will also contain native RoR FusionCharts **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/ruby-on-rails '@@open-newtab')**. The folder structure is shown below:
+After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. To include FusionCharts library files, follow the steps gievn below:
 
-![Ruby on Rails Js Folder]({% site.baseurl %}/gif/ror-folder-structure.gif)
+**Step 1: Include the FusionCharts package**
 
-> If you are using 3.12.2 or older versions, download v3.13.0 to get the `rubyonrails` folder in the FusionCharts Suite XT package. 
-
-To include FusionCharts library in your project add the following code of lines in the **app/assets/javascripts/application.js** file:
+To include core `fusioncharts` library in your project add the following line in the **app/assets/javascripts/application.js** file:
 
 ```
 //= require fusioncharts/fusioncharts
-//= require fusioncharts/fusioncharts.widgets
+```
+
+**Step 2: Include the Theme file**
+
+This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
+
+```
 //= require fusioncharts/themes/fusioncharts.theme.fusion
 ```
 
@@ -96,11 +106,14 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ## Installing FusionMaps (map visualizations) for your project
 
-FusionCharts can provide more than 1000 maps that cater to all your map visualization requirements. But to keep the library lightweight, by default it ships only with two maps - the **world** map, and the **map of the USA**. To render rest of the maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files. Place the downloaded map definition files in the same location where `fusioncharts.js` files are placed.
+FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. 
+In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
-To include FusionCharts library in your project add the following code of lines in the **app/assets/javascripts/application.js** file:
+To render a map, you need to:
+
+To include FusionCharts library in your project add the following code of lines in the **app/assets/javascripts/application.js** file.
 
 ```
 //= require fusioncharts/fusioncharts.maps
@@ -139,6 +152,18 @@ Now, To add the FusionMaps, use any of the following process:
 
 </div>
 </div>
+
+**Load other Map Definition files**
+
+To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name.
+
+To include map definition files in your project add the following code of lines in the **app/assets/javascripts/application.js** file. Assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
+
+```
+//= require fusioncharts/maps/fusioncharts.california
+```
+
+Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
 ## Themes
 
