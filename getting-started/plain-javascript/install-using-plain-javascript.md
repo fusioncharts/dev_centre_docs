@@ -423,13 +423,33 @@ $ npm install fusioncharts
  var Widgets = require('fusioncharts/fusioncharts.widgets');
  Widgets(FusionCharts);
 </code></pre>
+<div class="mt-30"><strong>To include specific chart types individually using `require`:</strong></div>
+<div class="mt-20"><strong>To render Gantt Chart:</strong></div>
 <pre><code class="custom-hlc language-json">
     var Gantt = require('fusioncharts/fusioncharts.gantt'); // Gantt
+    Gantt(FusionCharts);
+</code></pre>
+<div class="mt-20"><strong>To render Treemap Chart:</strong></div>
+<pre><code class="custom-hlc language-json">
     var Treemap = require('fusioncharts/fusioncharts.treemap'); // Treemap
-    var Zoomscatter = require('fusioncharts/fusioncharts.zoomscatter'); //ZS
-    var Zoomline = require('fusioncharts/fusioncharts.zoomline'); //zoomline
+    Treemap(FusionCharts);
+</code></pre>
+<div class="mt-20"><strong>To render Zoomscatter Chart:</strong></div>
+<pre><code class="custom-hlc language-json">
+    var Zoomscatter = require('fusioncharts/fusioncharts.zoomscatter'); //Zoom Scatter
+    Zoomscatter(FusionCharts);
+</code></pre>
+<div class="mt-20"><strong>To render Zoomline Chart:</strong></div>
+<pre><code class="custom-hlc language-json">
+    var Zoomline = require('fusioncharts/fusioncharts.zoomline'); // Zoomline
+    Zoomline(FusionCharts);
+</code></pre>
+<div class="mt-20"><strong>To render Ovelapped Bar and Column charts:</strong></div>
+<pre><code class="custom-hlc language-json">
     var OverlappedBar2d = require('fusioncharts/fusioncharts.overlappedbar2d');
     var Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');
+    OverlappedBar2d(FusionCharts);
+    Overlappedcolumn2d(FusionCharts);
 </code></pre>
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
