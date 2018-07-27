@@ -42,7 +42,7 @@ The folder structure is shown below:
 
 > It is recommended that you copy the JavaScript files of the `angular-fusioncharts.js` file from `fusioncharts-suite-xt > integrations > angularjs > js` to your project folder.
 
-Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
+Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
 
 File Name|Description|
 -|-
@@ -64,10 +64,10 @@ Installation of FusionCharts Suite XT is simply copying and pasting the JavaScri
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. Create an HTML file and follow the steps given below:
 
-**Step 1: Include AngularJS file:**
+**Step 1: [Download](https://angularjs.org/ '@@open-newtab') the AngularJS core libraary and include the AngularJS file as shown below:**
 
 ```html
-<script type="text/javascript" src="/path/to/local/angularjs.js"></script>
+<script type="text/javascript" src="/path/to/local/angular.js"></script>
 ```
 
 **Step 2: Include the FusionCharts package:**
@@ -116,11 +116,41 @@ Set the `DataSource` to a JSON following the FusionChart's JSON format. Please r
 ```
 app.controller('MyController', function($scope) {
     $scope.myDataSource = {
-        chart: {
-            ...
-        },
-        data: [ ... ]
-    };
+        "chart": {
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion",
+    },
+    // Chart Data
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
+}
 });
 ```
 
@@ -143,10 +173,10 @@ In the above example, we’ve include the World Map, whose map definition (path)
 
 **Load other map definition files**
 
-To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, tnen copy those map files to your current `/maps` folder. The map definition files are named in the format `[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. Then include the respective map file as under:
+To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, tnen copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. Then include the respective map file as under:
 
 ```
-<script type="text/javascript" src="path/to/local/maps/[MAP_ALIAS].js"></script>
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
 ```
 
 Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') to explore all the maps available in FusionMaps XT.
@@ -193,189 +223,189 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 
 > Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
 
-## Include FusionCharts via **npm**
+## Install AngularJS-FusionCharts via **npm**
 
-Now, let's discuss how to install the `fusioncharts` module via **npm**. The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
+Now, let's discuss how to install the `angularjs-fusioncharts` module via **npm**. 
+
+The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**. So, first we will install the core `fusioncharts` module as shown below:
+
+```shell
+$ npm install fusionmaps
+``` 
 
 > If you are not aware about the different files of FusionCharts package and its purpose, refer [here]({% site.baseurl %}/getting-started/angular/angularjs/install-using-angularjs#install-using-direct-javascript-files-2 '@@open-newtab').
 
-This section outlines the steps to be executed for installing all the node modules via **npm** and rendering charts using the `angularjs-Fusioncharts` wrapper.
+Now, to install the AngularJS-FusionCharts follow the steps given below:
 
-You can install `angularjs fusioncharts` wrapper using any of the following steps:
-
-<div class="code-wrapper">
-<ul class="code-tabs extra-tabs">
-    <li class="active"><a data-toggle="require">Require</a></li>
-    <li><a data-toggle="scripttags">Script Tags</a></li>
-</ul>
-<div class="tab-content extra-tabs">
-<div class="tab require-tab active">
-<div class="mt-30"><strong>Include `fusioncharts` package:</strong></div>
-<pre><code class="custom-hlc language-bash">
-    npm install fusioncharts --save
-</code></pre>
-<div class="mt-30"><strong>Include `angularjs-fusioncharts` wrapper:</strong></div>
-<pre><code class="custom-hlc language-bash">
-    npm install angular-fusioncharts --save
-</code></pre>
-<div class="mt-30 pb-10">In your <strong>script.js</strong> file:</div>
-<div class="mt-20">1. require <strong>angular</strong>:</div>
-<pre><code class="custom-hlc language-javascript">
-    const angular = require('angular');
-</code></pre>
-<div class="mt-20">2. require <strong>fusioncharts</strong>:</div>
-<pre><code class="custom-hlc language-javascript">
-    const FusionCharts = require('fusioncharts');
-</code></pre>
-<div class="mt-20">3. require your chart module:</div>
-<pre><code class="custom-hlc language-javascript">
-    const Charts = require('fusioncharts/fusioncharts.charts'); // Charts
-    const Widgets = require('fusioncharts/fusioncharts.widgets'); // Widgets
-    const Powercharts = require('fusioncharts/fusioncharts.powercharts');//PC
-    const Gantt = require('fusioncharts/fusioncharts.gantt'); // Gantt
-    const Treemap = require('fusioncharts/fusioncharts.treemap'); // Treemap
-    const Zoomscatter = require('fusioncharts/fusioncharts.zoomscatter'); //ZS
-    const Zoomline = require('fusioncharts/fusioncharts.zoomline'); //zoomline
-    const OverlappedBar2d = require('fusioncharts/fusioncharts.overlappedbar2d');
-    const Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');
-</code></pre>
-<div class="mt-30 pb-10"><strong>Note: </strong>Include the chart module needed</div>
-<div class="mt-20">4. require the <strong>angularjs-fusioncharts</strong> module:</div>
-<pre><code class="custom-hlc language-javascript">
-    require('angularjs-fusioncharts');
-</code></pre>
-<div class="mt-20">5. Pass the FusionCharts module to the Charts Modules:</div>
-<pre><code class="custom-hlc language-javascript">
+**Step 1**: Include `angularjs-fusioncharts` wrapper:
+```
+   $ npm install angular-fusioncharts --save
+```
+**Step 2** : import `angular` using `require`
+```
+ var angular = require('angular');
+```
+**Step 3**: import `fusioncharts` using `require`:
+```
+    var FusionCharts = require('fusioncharts');
+```
+**Step 3:** import the `charts` module using `require`:
+```
+    var FusionCharts = require('fusioncharts');
+    var Charts = require('fusioncharts/fusioncharts.charts');
     Charts(FusionCharts);
-    Widgets(FusionCharts);
-    Powercharts(FusionCharts);
+
+    // Create an Instance with chart options
+    var chartInstance = new FusionCharts({
+        type: 'Column2D',
+        width: '700', // Width of the chart
+        height: '400', // Height of the chart
+        dataFormat: 'json', // Data type
+        dataSource: {
+            chart: {
+                // Chart Configuration
+                "chart": {
+                    "caption": "Countries With Most Oil Reserves [2017-18]",
+                    "subCaption": "In MMbbl = One Million barrels",
+                    "xAxisName": "Country",
+                    "yAxisName": "Reserves (MMbbl)",
+                    "numberSuffix": "K",
+                    "theme": "fusion",
+                },
+                // Chart Data
+                "data": [{
+                    "label": "Venezuela",
+                    "value": "290"
+                }, {
+                    "label": "Saudi",
+                    "value": "260"
+                }, {
+                    "label": "Canada",
+                    "value": "180"
+                }, {
+                    "label": "Iran",
+                    "value": "140"
+                }, {
+                    "label": "Russia",
+                    "value": "115"
+                }, {
+                    "label": "UAE",
+                    "value": "100"
+                }, {
+                    "label": "US",
+                    "value": "30"
+                }, {
+                    "label": "China",
+                    "value": "30"
+                }]
+            }
+        }
+    });
+    // Render
+    chartInstance.render();
+```
+
+**To include PowerCharts using `require`:**
+```
+   var FusionCharts = require('fusioncharts');
+   var PowerCharts = require('fusioncharts/fusioncharts.powercharts');
+   PowerCharts(FusionCharts);
+```
+
+**To include FusionWidgets using `require`:**
+```
+ var FusionCharts = require('fusioncharts');
+ var Widgets = require('fusioncharts/fusioncharts.widgets');
+ Widgets(FusionCharts);
+```
+
+**To include specific chart types individually using `require`:**
+
+**To render Gantt Chart:**
+```
+    var Gantt = require('fusioncharts/fusioncharts.gantt'); // Gantt
     Gantt(FusionCharts);
+```
+**To render Treemap Chart:**
+```
+    var Treemap = require('fusioncharts/fusioncharts.treemap'); // Treemap
     Treemap(FusionCharts);
+```
+**To render Zoomscatter chart:**
+```
+    var Zoomscatter = require('fusioncharts/fusioncharts.zoomscatter'); //ZS
     Zoomscatter(FusionCharts);
+```
+**To render Zoomline chart:**
+```
+    var Zoomline = require('fusioncharts/fusioncharts.zoomline'); //zoomline
     Zoomline(FusionCharts);
+```
+**To render Ovelapped Bar and Column charts:**
+    var OverlappedBar2d = require('fusioncharts/fusioncharts.overlappedbar2d');
+    var Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');
     OverlappedBar2d(FusionCharts);
     Overlappedcolumn2d(FusionCharts);
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-<div class="tab scripttags-tab">
-<div class="mt-30"><strong>Include `angularjs` package:</strong></div>
-<pre><code class="custom-hlc language-bash">
-    npm install angular@1.7.2 --save
-</code></pre>
-<div class="mt-30"><strong>Include `fusioncharts` package:</strong></div>
-<pre><code class="custom-hlc language-bash">
-    npm install fusioncharts --save
-</code></pre>
-<div class="mt-30"><strong>Include `angularjs-fusioncharts` wrapper:</strong></div>
-<pre><code class="custom-hlc language-bash">
-    npm install angularjs-fusioncharts --save
-</code></pre>
-<div class="mt-30 pb-10">In your `index.html`, include all the **&lt;script&gt;** tags:</div>
-<pre><code class="custom-hlc language-html">
-    &lt;script src="node_modules/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/angular/angular.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/angular-fusioncharts.js"&gt;
-    &lt;/script&gt;
-</code></pre>
-<div class="mt-30 pb-10">In `scripts.js`, add the dependency:</div>
-<pre><code class="custom-hlc language-javascript">
-    angular.module('your-app-name', ["ng-fusioncharts"]);
-</code></pre>
-<div class="mt-30 pb-10">Now the fusioncharts directive is available in your app both as an attribute as well as a tag. Include charts other required files in **&lt;script&gt;** tag:</div>
-<pre><code class="custom-hlc language-html">
-    &lt;script src="node_modules/fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.widgets.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.powercharts.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.gantt.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.treemap.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.zoomscatter.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.zoomline.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.overlappedbar2d.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/fusioncharts.overlappedcolumn2d.js"&gt;&lt;/script&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
+```
+## Include Maps via **npm**
 
-</div>
-</div>
-
-## Include Maps via NPM
-
-When installed via `npm`, the `fusioncharts` package contains only two map definitions in `node_modules/fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
+The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
-<div class="code-wrapper">
-<ul class="code-tabs extra-tabs">
-    <li class="active"><a data-toggle="require">Require</a></li>
-    <li><a data-toggle="scripttags">Script Tags</a></li>
-</ul>
-<div class="tab-content extra-tabs">
-<div class="tab require-tab active">
-<div class="mt-30"><strong>require your `map` module:</strong></div>
-<pre><code class="custom-hlc language-javascript">
-    const Maps = require('fusioncharts/fusioncharts.maps.js');
-    const World = require('fusioncharts/maps/fusioncharts.world.js');
-</code></pre>
-<div class="mt-30"><strong>Pass the `fusioncharts` module to the `maps` module:</strong></div>
-<pre><code class="custom-hlc language-javascript">
-    Maps(FusionCharts);
-    World(FusionCharts);
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-<div class="tab scripttags-tab">
-<div class="mt-30"><strong>Include map definitions in **&lt;script&gt;** tag:</strong></div>
-<pre><code class="custom-hlc language-html">
-    &lt;script src="node_modules/fusioncharts/fusioncharts.maps.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
+**Step 1: Load `fusioncharts` module**:
 
-</div>
-</div>
+```
+// Include the core fusioncharts file from core 
+var FusionCharts = require('fusioncharts');
+```
+**Step 2:** Load the `FusionMaps` renderer and the map definition file:
+
+```
+var FusionCharts = require('fusioncharts');
+var FusionMaps = require('fusionmaps');
+var World = require('fusionmaps/maps/fusioncharts.world');
+FusionMaps(FusionCharts);
+World(FusionCharts);
+
+```
 
 **Load other map definition files**
 
-You can use the other map definition files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package by default. To do so, follow the steps below:
+You can use rest of the map definition files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:
 
-* First include the module `fusioncharts.maps.js`.
-* Load the map definition file(s) for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.  Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
+**Install `fusionmaps` package**
 
-Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. You can do it using any one of the following two methods:
+```Shell
+$ npm install fusionmaps
+```
 
-<div class="code-wrapper">
-<ul class="code-tabs extra-tabs">
-    <li class="active"><a data-toggle="require">Require</a></li>
-    <li><a data-toggle="scripttags">Script Tags</a></li>
-</ul>
-<div class="tab-content extra-tabs">
-<div class="tab require-tab active">
-<div class="mt-30"><strong>require your `map` module:</strong></div>
-<pre><code class="custom-hlc language-javascript">
-    const Maps = require('fusioncharts/fusioncharts.maps.js');
-    const World = require('fusioncharts/maps/fusioncharts.california.js');
-</code></pre>
-<div class="mt-30"><strong>Pass the `fusioncharts` module to the `maps` module:</strong></div>
-<pre><code class="custom-hlc language-javascript">
-    Maps(FusionCharts);
-    World(FusionCharts);
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-<div class="tab scripttags-tab">
-<div class="mt-30"><strong>Include map definitions in **&lt;script&gt;** tag:</strong></div>
-<pre><code class="custom-hlc language-html">
-    &lt;script src="node_modules/fusioncharts/fusioncharts.maps.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/maps/fusioncharts.california.js"&gt;&lt;/script&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
+Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps` folder. 
 
-</div>
-</div>
+The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:
+
+```
+var FusionCharts = require('fusioncharts');
+var FusionMaps = require('fusionmaps');
+FusionMaps(FusionCharts);
+```
+
+Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.  
+
+Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
+
+Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
+
+```
+var FusionCharts = require('fusioncharts');
+var FusionMaps = require('fusionmaps');
+var California = require('fusionmaps/maps/fusioncharts.california');
+FusonMaps(FusionCharts);
+California(FusionCharts);
+```
+
+> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.
+
 
 ## Include Themes via NPM
 
@@ -387,44 +417,10 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 * Behavior (hover effects for data plots)
 * Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme).
 
-To include the definition files placed in **fusioncharts/themes**, follow any of the two ways shown below:
+To include the definition files placed in **fusioncharts/themes**, follow the steps below:
 
-
-<div class="code-wrapper">
-<ul class="code-tabs extra-tabs">
-    <li class="active"><a data-toggle="require">Require</a></li>
-    <li><a data-toggle="scripttags">Script Tags</a></li>
-</ul>
-<div class="tab-content extra-tabs">
-<div class="tab require-tab active">
-<div class="mt-30"><strong>require your `themes`:</strong></div>
-<pre><code class="custom-hlc language-javascript">
-    const Fusion = require('fusioncharts/themes/fusioncharts.fusion.js');
-    const Zune = require('fusioncharts/themes/fusioncharts.zune.js');
-    const Ocean = require('fusioncharts/themes/fusioncharts.ocean.js');
-    const Carbon = require('fusioncharts/themes/fusioncharts.carbon.js');
-</code></pre>
-<div class="mt-30"><strong>Pass the `fusioncharts` module to the `theme` module:</strong></div>
-<pre><code class="custom-hlc language-javascript">
+```
+    var Fusion = require('fusioncharts/themes/fusioncharts.fusion');
     Fusion(FusionCharts);
-    Zune(FusionCharts);
-    Ocean(FusionCharts);
-    Carbon(FusionCharts);
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-<div class="tab scripttags-tab">
-<div class="mt-30"><strong>Include the theme files in **&lt;script&gt;** tag:</strong></div>
-<pre><code class="custom-hlc language-html">
-    &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.ocean.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.zune.js"&gt;&lt;/script&gt;
-    &lt;script src="node_modules/fusioncharts/theme/fusioncharts.theme.carbon.js"&gt;&lt;/script&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-</div>
-</div>
-
+```
 > Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').

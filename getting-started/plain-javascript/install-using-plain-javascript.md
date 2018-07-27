@@ -353,7 +353,7 @@ The installation of both the module is shown below:
 $ npm install fusioncharts
 </code></pre>
 <div class="mt-20"><strong>Step 2: Load the fusioncharts module</strong></div>
-<div class="pb-10">After you have installed fusioncharts via npm, include <strong>using require():</strong> </div>
+<div class="pb-10">After you have installed fusioncharts via npm, include the `fusioncharts` module<strong>using require():</strong> </div>
 <pre><code class="custom-hlc language-json">
     var FusionCharts = require('fusioncharts');
 </code></pre>
@@ -423,14 +423,20 @@ $ npm install fusioncharts
  var Widgets = require('fusioncharts/fusioncharts.widgets');
  Widgets(FusionCharts);
 </code></pre>
+<pre><code class="custom-hlc language-json">
+    var Gantt = require('fusioncharts/fusioncharts.gantt'); // Gantt
+    var Treemap = require('fusioncharts/fusioncharts.treemap'); // Treemap
+    var Zoomscatter = require('fusioncharts/fusioncharts.zoomscatter'); //ZS
+    var Zoomline = require('fusioncharts/fusioncharts.zoomline'); //zoomline
+    var OverlappedBar2d = require('fusioncharts/fusioncharts.overlappedbar2d');
+    var Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');
+</code></pre>
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 </div>
 </div>
-
-That's it. 
 
 ## Include Maps via **npm**
 
