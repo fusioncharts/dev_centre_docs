@@ -5,7 +5,7 @@ heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the FusionCharts server-side RoR wrapper that lets you create interactive, data-driven charts. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page for generating charts. Before we get into the installation process of the wrapper, let's take a look at what sets the wrapper apart.
+FusionCharts Suite XT includes the **FusionCharts server-side RoR wrapper** that lets you create interactive, data-driven charts. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page for generating charts. Before we get into the installation process of the wrapper, let's take a look at what sets the wrapper apart.
 
 In this article, we will show you how you can download and install the **FusionCharts Rails gem** wrapper and all the other dependencies on your system.
 
@@ -27,7 +27,7 @@ The folder structure is shown below:
 
 ![Ruby on Rails Js Folder]({% site.baseurl %}/gif/ror-folder-structure.gif)
 
-> If you are using 3.12.2 or older versions, download v3.13.0 to get the `rubyonrails` folder in the FusionCharts Suite XT package. 
+> If you are using 3.12.2 or older versions, download v3.13.0 to get the `ror` folder in the FusionCharts Suite XT package. 
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
