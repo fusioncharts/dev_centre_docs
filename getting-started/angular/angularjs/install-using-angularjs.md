@@ -261,7 +261,13 @@ var FusionCharts = require('fusioncharts');
 ```
 require('angularjs-fusioncharts');
 ```
-**Step 7:** Add the <div> with an fc-chart directive in your HTML, assuming that it is inside a controller named MyController
+**Step 7:** Include the ng-fusioncharts as a dependency in the application. Call `angular.module()` to add the dependency.
+
+```
+angular.module("myApp", ["ng-fusioncharts"])
+``` 
+
+Add the &lt;div&gt; with an **fc-chart** directive in your HTML, assuming that it is inside a controller named `MyController`.
 ```
 <div ng-controller='MyController'>
     <div fusioncharts
