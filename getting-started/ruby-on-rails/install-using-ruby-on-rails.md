@@ -167,7 +167,7 @@ Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open
 
 ## Themes
 
-Themes shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
+[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to apply centralized themes to any number of charts.
 
 In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
 
