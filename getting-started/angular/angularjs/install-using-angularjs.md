@@ -236,7 +236,7 @@ Now, to install the AngularJS-FusionCharts follow the steps given below:
 **Step 1**: Install `angularjs` core librar:
 ```
   $ npm install angular
-
+```
 
 **Step 2**: Install angularjs-fusioncharts 
 ```
