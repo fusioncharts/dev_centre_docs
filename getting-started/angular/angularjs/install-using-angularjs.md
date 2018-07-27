@@ -5,13 +5,13 @@ heading: Installation
 chartPresent: false
 ---
 
-The `angularjs-fusioncharts` directive for **FusionCharts Suite XT**, lets you add interactive JavaScript charts to your web and mobile applications using **AngularJS (v1.x)**.
+The `angularjs-fusioncharts` directive for **FusionCharts Suite XT**, lets you add interactive JavaScript charts to your **AngularJS (v1.x)** web and mobile applications using.
 
 In this article, we will show you how you can download and install the `angularjs-fusioncharts` directive and all the other dependencies on your system. 
 
 ## Choose your mode of installation:
 
-You can install FusionCharts in your angularjs project using any of the two modes given below:
+You can install `angularjs-fusionCharts` in your **AngularJS** project using any of the two modes given below:
 
 <table>
     <tr>
