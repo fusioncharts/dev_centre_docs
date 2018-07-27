@@ -55,7 +55,7 @@ After that, you can include the FusionCharts JavaScript library in your web appl
 
 To include core `fusioncharts` library in your project add the following line in the **app/assets/javascripts/application.js** file:
 
-```
+```Ruby
 //= require fusioncharts/fusioncharts
 ```
 
@@ -63,7 +63,7 @@ To include core `fusioncharts` library in your project add the following line in
 
 This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
 
-```
+```Ruby
 //= require fusioncharts/themes/fusioncharts.theme.fusion
 ```
 
@@ -79,15 +79,15 @@ Now, To add the FusionCharts Rails wrapper, use any of the following process:
 <div class='tab-content extra-tabs'>
 <div class='tab rubygems-tab active'>
 <div><strong>Add this line to your application’s `Gemfile`:</strong></div>
-<pre><code class="custom-hlc language-rb">
+<pre><code class="custom-hlc language-ruby">
 	gem ‘fusioncharts-rails’
 </code></pre>
 <div><strong>RubyGems contain package information along with the files to install. On the command line prompt, execute the following command:</strong></div>
-<pre><code class="custom-hlc language-rb">
+<pre><code class="custom-hlc language-ruby">
 	$bundle
 </code></pre>
 <div><strong>This command will automatically install the `fusioncharts-rails` gem. You can also install the gem directly from the command line prompt, without making any edits to the `Gemfile`. To do this, use the code line given below:</strong></div>
-<pre><code class="custom-hlc language-rb">
+<pre><code class="custom-hlc language-ruby">
 	$gem install fusioncharts-rails
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -115,7 +115,7 @@ To render a map, you need to:
 
 To include FusionCharts library in your project add the following code of lines in the **app/assets/javascripts/application.js** file.
 
-```
+```Ruby
 //= require fusioncharts/fusioncharts.maps
 //= require fusioncharts/maps/fusioncharts.world
 ```
@@ -130,15 +130,15 @@ Now, To add the FusionMaps, use any of the following process:
 <div class='tab-content extra-tabs'>
 <div class='tab rubygems-tab active'>
 <div><strong>Add this line to your application’s `Gemfile`:</strong></div>
-<pre><code class="custom-hlc language-rb">
+<pre><code class="custom-hlc language-ruby">
 	gem ‘fusioncharts-rails’
 </code></pre>
 <div><strong>RubyGems contain package information along with the files to install. On the command line prompt, execute the following command:</strong></div>
-<pre><code class="custom-hlc language-rb">
+<pre><code class="custom-hlc language-ruby">
 	$bundle
 </code></pre>
 <div><strong>This command will automatically install the `fusioncharts-rails` gem. You can also install the gem directly from the command line prompt, without making any edits to the `Gemfile`. To do this, use the code line given below:</strong></div>
-<pre><code class="custom-hlc language-rb">
+<pre><code class="custom-hlc language-ruby">
 	$gem install fusioncharts-rails
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -159,7 +159,7 @@ To use any other map (except world and USA) from the 1000+ maps, [download](http
 
 To include map definition files in your project add the following code of lines in the **app/assets/javascripts/application.js** file. Assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
 
-```
+```Ruby
 //= require fusioncharts/maps/fusioncharts.california
 ```
 
