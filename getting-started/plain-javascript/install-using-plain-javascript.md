@@ -273,6 +273,7 @@ The installation of both the module is shown below:
         width: '700', // Width of the chart
         height: '400', // Height of the chart
         dataFormat: 'json', // Data type
+        renderAt:'chart-container' //container where the chart will render
         dataSource: {
             chart: {
                 // Chart Configuration
@@ -315,6 +316,10 @@ The installation of both the module is shown below:
     });
     // Render
     chartInstance.render();
+</code></pre>
+<div><strong>Step 3</strong></div>
+<pre><code class="custom-hlc language-javascript">
+&gt;div id="chart-conatiner"&lt;FusionCharts XT will load here!&gt;/div&lt;
 </code></pre>
 <div class="mt-30"><strong>Using optional features</strong></div>
 <div class="pb-10">Optional features reside inside the features folder <strong>fusioncharts/features/</strong></div>
