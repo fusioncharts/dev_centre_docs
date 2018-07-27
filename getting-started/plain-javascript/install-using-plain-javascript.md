@@ -438,8 +438,6 @@ $ npm install fusioncharts
 </div>
 </div>
 
-That's it. 
-
 ## Include Maps via **npm**
 
 The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
