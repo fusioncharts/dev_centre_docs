@@ -216,7 +216,7 @@ You can install `angularjs fusioncharts` wrapper using any of the following step
 </code></pre>
 <div class="mt-30"><strong>Include `angularjs-fusioncharts` wrapper:</strong></div>
 <pre><code class="custom-hlc language-bash">
-    npm install angularjs-fusioncharts --save
+    npm install angular-fusioncharts --save
 </code></pre>
 <div class="mt-30 pb-10">In your <strong>script.js</strong> file:</div>
 <div class="mt-20">1. require <strong>angular</strong>:</div>
