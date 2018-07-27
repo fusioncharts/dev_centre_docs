@@ -36,7 +36,7 @@ China|30|
 
 FusionCharts accepts data in JSON or XML format. In this section, we will convert the tabular data into JSON format. The converted format is shown below:
 
-> There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (illustrated here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+> There are different formats of JSON for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
 ```javascript
 {
@@ -87,7 +87,7 @@ Both the `chart` object and the `data` array contains a set of key-value pairs k
 
 #### Functional Attributes
 
-Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The list of functional attributes used in the above code are:
+Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The list of functional attributes used in the above JSON are:
 
 * `caption` sets the caption of the chart.
 * `subcaption` sets the sub-caption of the chart.
@@ -95,9 +95,9 @@ Functional attributes let you control a variety of functional elements on the ch
 * `numberPrefix` adds prefix to all the numbers visible on the chart.
 * Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` (default theme) as its value. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 
-#### Cosmetics Attributes
+#### Cosmetic Attributes
 
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics no cosmetic attributes are used in this sample.
+These attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics no cosmetic attributes are used in this sample.
 
 For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
@@ -199,8 +199,8 @@ The full HTML code is shown below:
 
 <head>
     <title>My first chart using FusionCharts Suite XT</title>
-    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fint.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
             var revenueChart = new FusionCharts({
@@ -409,8 +409,8 @@ The full HTML code is given below:
 
 <head>
     <title>My first gauge using FusionWidgets XT</title>
-    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
             var csatGauge = new FusionCharts({
@@ -639,9 +639,9 @@ The full HTML code is given below:
 
 <head>
     <title>My First map using FusionCharts Suite XT</title>
-    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-    <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.maps.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
             var salesByState = new FusionCharts({

@@ -64,7 +64,7 @@ Installation of FusionCharts Suite XT is simply copying and pasting the JavaScri
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. Create an HTML file and follow the steps given below:
 
-**Step 1: [Download](https://angularjs.org/ '@@open-newtab') the AngularJS core libraary and include the AngularJS file as shown below:**
+**Step 1: [Download](https://angularjs.org/ '@@open-newtab') the AngularJS core library and include the AngularJS file as shown below:**
 
 ```html
 <script type="text/javascript" src="/path/to/local/angular.js"></script>

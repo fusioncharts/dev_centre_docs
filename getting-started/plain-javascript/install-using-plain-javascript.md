@@ -56,13 +56,13 @@ Installation of FusionCharts Suite XT is simply copying and pasting the JavaScri
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. Create an HTML file and follow the steps given below:
 
-**Step 1: Include the `fusioncharts.js` (FusionCharts core library) file. This file is required to render any **chart, widget and map**.**
+**Step 1:** Include the `fusioncharts.js` (FusionCharts core library) file. This file is required to render any **chart, widget and map.**
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-**Step 2: Include the theme file. This step is optional, the chart will render with the default theme even if the theme is not included:**
+**Step 2:** Include the theme file. This step is optional, the chart will render with the default theme even if the theme file is not included.
 
 ```html
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
@@ -82,7 +82,7 @@ The consolidated code is shown below:
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript '@@open-newtab').
 
-### Installing FusionMaps (map visualizations) for your project
+## Installing FusionMaps (map visualizations) for your project
 
 FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. 
 In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
@@ -131,7 +131,7 @@ The consolidated code looks like as shown below:
 </head>
 ```
 
-### Themes
+## Themes
 
 Themes shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
 
