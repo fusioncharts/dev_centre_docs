@@ -1,13 +1,13 @@
 ---
 title: Installation | FusionCharts
-description: This article outlines the steps to install fusioncharts and fusioncharts angularjs directive to create charts.
+description: This article outlines the steps to install fusioncharts and fusioncharts angularjs module to create charts.
 heading: Installation
 chartPresent: false
 ---
 
-The `angularjs-fusioncharts` directive for **FusionCharts Suite XT**, lets you add interactive JavaScript charts to your **AngularJS (v1.x)** web and mobile applications.
+The `angularjs-fusioncharts` module for **FusionCharts Suite XT**, lets you add interactive JavaScript charts to your **AngularJS (v1.x)** web and mobile applications.
 
-In this article, we will show you how to download and install the `angularjs-fusioncharts` directive and all the other dependencies. 
+In this article, we will show you how to download and install the `angularjs-fusioncharts` module and all the other dependencies. 
 
 ## Choose your mode of installation:
 
@@ -76,7 +76,7 @@ After that, you can include the FusionCharts JavaScript library in your web appl
 <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-**Step 3: Include the angularjs-fusioncharts directive:**
+**Step 3: Include the angularjs-fusioncharts module:**
 
 ```html
 <script type="text/javascript" src="/path/to/local/angular-fusioncharts.js"></script>
@@ -90,7 +90,7 @@ Include the ng-fusioncharts as a dependency in the application. Call `angular.mo
 angular.module("myApp", ["ng-fusioncharts"])
 ```
 
-### Add the Directive
+### Add the module
 
 Add the `<div>` with an **fc-chart** directive in your HTML, assuming that it is inside a controller named `MyController`.
 
@@ -202,7 +202,7 @@ If you have specifically included all the files your head section should look li
 
 ### Themes
 
-[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
+[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to apply centralized themes to any number of charts.
 
 In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
 
@@ -225,88 +225,112 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 
 ## Install AngularJS-FusionCharts via **npm**
 
-Now, let's discuss how to install the `angularjs-fusioncharts` module via **npm**. 
+Now, let's discuss how to install the `angularjs-fusioncharts` package via **npm**. 
 
-The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**. So, first we will install the core `fusioncharts` module as shown below:
-
-```shell
-$ npm install fusioncharts
-``` 
+The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**. 
 
 > If you are not aware about the different files of FusionCharts package and its purpose, refer [here]({% site.baseurl %}/getting-started/angular/angularjs/install-using-angularjs#install-using-direct-javascript-files-2 '@@open-newtab').
 
 Now, to install the AngularJS-FusionCharts follow the steps given below:
 
-**Step 1**: Install `angularjs-fusioncharts` directive:
+**Step 1**: Install `angularjs` core library:
 ```
-   $ npm install angularjs-fusioncharts --save
-```
-**Step 2** : Include `angular` core library using `require`
-```
- var angular = require('angular');
-```
-**Step 3**: Include `fusioncharts` core library using `require`:
-```
-    var FusionCharts = require('fusioncharts');
-```
-**Step 3:** Include the `charts` module using `require`:
-```
-    var FusionCharts = require('fusioncharts');
-    var Charts = require('fusioncharts/fusioncharts.charts');
-    Charts(FusionCharts);
-
-    // Create an Instance with chart options
-    var chartInstance = new FusionCharts({
-        type: 'Column2D',
-        width: '700', // Width of the chart
-        height: '400', // Height of the chart
-        dataFormat: 'json', // Data type
-        dataSource: {
-            chart: {
-                // Chart Configuration
-                "chart": {
-                    "caption": "Countries With Most Oil Reserves [2017-18]",
-                    "subCaption": "In MMbbl = One Million barrels",
-                    "xAxisName": "Country",
-                    "yAxisName": "Reserves (MMbbl)",
-                    "numberSuffix": "K",
-                    "theme": "fusion",
-                },
-                // Chart Data
-                "data": [{
-                    "label": "Venezuela",
-                    "value": "290"
-                }, {
-                    "label": "Saudi",
-                    "value": "260"
-                }, {
-                    "label": "Canada",
-                    "value": "180"
-                }, {
-                    "label": "Iran",
-                    "value": "140"
-                }, {
-                    "label": "Russia",
-                    "value": "115"
-                }, {
-                    "label": "UAE",
-                    "value": "100"
-                }, {
-                    "label": "US",
-                    "value": "30"
-                }, {
-                    "label": "China",
-                    "value": "30"
-                }]
-            }
-        }
-    });
-    // Render
-    chartInstance.render();
+  $ npm install angular
 ```
 
+**Step 2**: Install `angularjs-fusioncharts`:
+```
+   $ npm install angularjs-fusioncharts
+```
+**Step 3**: Install `fusioncharts` package:
+```
+    $ npm install fusioncharts
+```
+**Step 4:** Include `angularjs` core library using `require`:
+```
+var Angular = require('angular');
+
+```
+**Step 5:** Include `fusioncharts` core library using `require`:
+
+```
+var FusionCharts = require('fusioncharts');
+
+```
+**Step 6:** Include `angularjs-fusioncharts` module using `require`:
+```
+require('angularjs-fusioncharts');
+```
+**Step 7:** Include the ng-fusioncharts as a dependency in the application. Call `angular.module()` to add the dependency.
+
+```
+angular.module("myApp", ["ng-fusioncharts"])
+``` 
+
+Add the &lt;div&gt; with an **fc-chart** directive in your HTML, assuming that it is inside a controller named `MyController`.
+```
+<div ng-controller='MyController'>
+    <div fusioncharts
+        width='700'
+        height='400'
+        type='column2d'
+        dataSource='{{myDataSource}}' >
+    </div>
+</div>
+```
+
+Now, this is bound to a datasource with the `myDataSource` scope object.
+
+**Populate the required variables**
+
+Previously, we have bounded the scope variable `myDataSource`.
+
+Set the `myDataSource` to a JSON following the FusionChart's JSON data format. Please refer [here]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#convert-tabular-data-into-json-format-3 '@@open-newtab') for the basic JSON structure.
+
+```
+app.controller('MyController', function($scope) {
+    $scope.myDataSource = {
+        "chart": {
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion",
+    },
+    // Chart Data
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
+}
+});
+```
 **To include PowerCharts using `require`:**
 ```
+   var Angular = require('angular');
+   require('angularjs-fusioncharts');
    var FusionCharts = require('fusioncharts');
    var PowerCharts = require('fusioncharts/fusioncharts.powercharts');
    PowerCharts(FusionCharts);
@@ -314,6 +338,8 @@ Now, to install the AngularJS-FusionCharts follow the steps given below:
 
 **To include FusionWidgets using `require`:**
 ```
+ var Angular = require('angular');
+ require('angularjs-fusioncharts');
  var FusionCharts = require('fusioncharts');
  var Widgets = require('fusioncharts/fusioncharts.widgets');
  Widgets(FusionCharts);
@@ -323,26 +349,41 @@ Now, to install the AngularJS-FusionCharts follow the steps given below:
 
 **Gantt Chart:**
 ```
+    var Angular = require('angular');
+    require('angularjs-fusioncharts');
+    var FusionCharts = require('fusioncharts');
     var Gantt = require('fusioncharts/fusioncharts.gantt'); // Gantt
     Gantt(FusionCharts);
 ```
 **Treemap Chart:**
 ```
+    var Angular = require('angular');
+    require('angularjs-fusioncharts');
+    var FusionCharts = require('fusioncharts');
     var Treemap = require('fusioncharts/fusioncharts.treemap'); // Treemap
     Treemap(FusionCharts);
 ```
 **Zoomscatter chart:**
 ```
+    var Angular = require('angular');
+    require('angularjs-fusioncharts');
+    var FusionCharts = require('fusioncharts');
     var Zoomscatter = require('fusioncharts/fusioncharts.zoomscatter'); //ZS
     Zoomscatter(FusionCharts);
 ```
 **Zoomline chart:**
 ```
+    var Angular = require('angular');
+    require('angularjs-fusioncharts');
+    var FusionCharts = require('fusioncharts');
     var Zoomline = require('fusioncharts/fusioncharts.zoomline'); //zoomline
     Zoomline(FusionCharts);
 ```
 **Ovelapped Bar and Column charts:**
 ```JavaScript
+    var Angular = require('angular');
+    require('angularjs-fusioncharts');
+    var FusionCharts = require('fusioncharts');
     var OverlappedBar2d = require('fusioncharts/fusioncharts.overlappedbar2d');
     var Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');
     OverlappedBar2d(FusionCharts);
@@ -410,7 +451,7 @@ California(FusionCharts);
 
 ## Include Themes via NPM
 
-Themes shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
+[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to apply centralized themes to any number of charts.
 
 In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
 
