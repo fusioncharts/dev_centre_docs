@@ -15,19 +15,19 @@ In order to install and start working with Ruby on Rails and FusionCharts you ne
 
 * JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
 * JavaScript files to render maps under `js > maps` folder.
-* JavaScript files to include themes under `js > themes` folder.
+* JavaScript files to apply themes under `js > themes` folder.
 
 The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the files of the `js` folder from `fusioncharts-suite-xt` download package to your project application in `vendor/assets/javascripts/fusioncharts/` folder.
+> It is recommended that you copy the files/folders from `fusioncharts-suite-xt > js` to your project application in `vendor/assets/javascripts/fusioncharts/` folder.
 
 * The download package also contains FusionCharts gem under `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` folder. This folder will also contain native RoR FusionCharts **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/ruby-on-rails '@@open-newtab')**. The folder structure is shown below:
 
 ![Ruby on Rails Js Folder]({% site.baseurl %}/gif/ror-folder-structure.gif)
 
-> If you are using 3.12.2 or older versions, download v3.13.0 to get the `ror` folder in the FusionCharts Suite XT package. 
+> The `ror` folder in the FusionCharts Suite XT package is available from v3.13.0.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 

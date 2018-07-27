@@ -22,19 +22,19 @@ In order to install and start working with FusionCharts - Java Wrapper you need 
 
 * JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
 * JavaScript files to render maps under `js > maps` folder.
-* JavaScript files to include themes under `js > themes` folder.
+* JavaScript files to apply themes under `js > themes` folder.
 
 The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the files of the `js` folder from fusioncharts-suite-xt download package to your project folder.
+> It is recommended that you copy the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
 * The download package also contains **fusioncharts.java** file under `fusioncharts-suite-xt > integrations > java > fusioncharts-wrapper` folder. This folder will also contain FusionCharts-Java native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/java '@@open-newtab')**. The folder structure is shown below:
 
 ![JSP Js Folder]({% site.baseurl %}/gif/jsp-folder-structure.gif)
 
-> If you are using 3.12.2 or older versions, download v3.13.0 to get the `java` folder in the FusionCharts Suite XT package.
+The `java` folder in the FusionCharts Suite XT package is available from v3.13.0.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 

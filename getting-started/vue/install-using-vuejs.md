@@ -14,7 +14,7 @@ The `Vue-FusionCharts` wrapper lets you include FusionCharts in your Vue project
     - XML
     - An URI pointing to a file containing JSON/XML data. However, each chart/map expects data to be formatted in a specific manner, and the data you provide must comply with the required format.
 
-In this article, we will demonstrate how to download and install the `Vue-FusionCharts` wrapper and all the other dependencies on your system. 
+In this article, we will show you how to download and install the `Vue-FusionCharts` wrapper and all the other dependencies on your system. 
 
 ## Choose your mode of installation:
 
@@ -33,13 +33,13 @@ In order to install and start working with `Vue-FusionCharts` you need to [downl
 
 * JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
 * JavaScript files to render maps under `js > maps` folder.
-* JavaScript files to include themes under `js > themes` folder.
+* JavaScript files to apply themes under `js > themes` folder.
 
 The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the files of the `js` folder from fusioncharts-suite-xt to your project folder.
+> It is recommended that you copy the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
 * The download package also contains files of the `Vue-FusionCharts` wrapper under `fusioncharts-suite-xt > integrations > vue` folder.
 
@@ -49,7 +49,7 @@ The folder structure is shown below:
 
 Both the minified (compressed) and source (uncompressed) copies of Vue files are available in the folder. The uncompressed file `vue-fusioncharts.js` is used during development or debugging, whereas the compressed file `vue-fusioncharts.min.js` saves bandwidth and improves performance in production. The folder also contains the sourcemap file `vue-fusioncharts.js.map` for use, when debugging with a compressed file.
 
-> If you are using 3.12.2 or older versions, download v3.13.0 to get the `vue` folder in the FusionCharts Suite XT package. 
+> The `vue` folder in the FusionCharts Suite XT package is available from v3.13.0.
 
 > It is recommended that you copy the JavaScript files of the `vue` folder from `fusioncharts-suite-xt > integrations > vue > js` to your project folder.
 

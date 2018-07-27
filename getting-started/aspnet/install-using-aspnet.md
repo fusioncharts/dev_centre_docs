@@ -22,13 +22,13 @@ In order to install and start working with FusionCharts ASP.NET wrapper you need
 
 * JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
 * JavaScript files to render maps under `js > maps` folder.
-* JavaScript files to include themes under `js > themes` folder.
+* JavaScript files to apply themes under `js > themes` folder.
 
 The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the files of the `js` folder from fusioncharts-suite-xt download package to your project folder.
+> It is recommended that you copy the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
 * The download package also contains ASP.NET (VB) wrapper under `fusioncharts-suite-xt > integrations > asp.net-vb` folder.
 
@@ -38,7 +38,7 @@ The above folders will also contain FusionCharts ASP.NET's native **[Export Hand
 
 ![ASP.NET Folder Structure]({% site.baseurl %}/gif/aspnet-folder-structure.gif)
 
-> If you are using 3.12.2 or older versions, download v3.13.0 to get the `asp.net-vb` and `asp.net-cs` folders in the FusionCharts Suite XT package. 
+> The `asp.net-vb` and `asp.net-cs` folders in the FusionCharts Suite XT package are available from v3.13.0.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
