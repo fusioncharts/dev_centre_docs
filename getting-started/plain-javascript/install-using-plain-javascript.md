@@ -133,7 +133,7 @@ The consolidated code looks like as shown below:
 
 ## Themes
 
-Themes shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
+[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to apply centralized themes to any number of charts.
 
 In a theme file, we can centralize the following aspects of all the charts, gauges and maps:
 
@@ -514,7 +514,8 @@ var FusionCharts = require('fusioncharts');
 
     // Add the chart as dependency
     // E.g. FusionCharts.addDep(ChartType)
-    FusionCharts.addDep(Column2D);
+    FusionCharts.addDep(FusionMaps);
+    FusionCharts.addDep(World);
         
     // Create an Instance with map options
     var salesByState =   new  FusionCharts({
@@ -594,9 +595,79 @@ chartInstance.render()
 <pre><code class="custom-hlc language-javascript">
     var FusionCharts = require('fusioncharts');
     var FusionMaps = require('fusioncharts/fusioncharts.maps');
-    var World = require('fusionmaps/maps/fusioncharts.world');
+    var World = require('fusioncharts/maps/fusioncharts.world');
     FusionMaps(FusionCharts);
     World(FusionCharts);
+
+    // Create an Instance with map options
+    var salesByState =   new  FusionCharts({
+        type: 'world', // Map type
+        renderAt: 'chart-container', // Container
+        width: '800', // Width of the chart
+        height: '550', // Height of the chart
+        dataFormat: 'json', // Data Type
+        dataSource: {
+        chart: {
+            // Map Configuration
+            "chart": {
+                "caption": "Average Annual Population Growth",
+                "subcaption": " 1955-2015",
+                "numbersuffix": "%",
+                "includevalueinlabels": "1",
+                "labelsepchar": ": ",
+                "entityFillHoverColor": "#FFF9C4",
+                "theme": "fusion"
+            },
+            // Aesthetics; ranges synced with the slider
+            "colorrange": {
+                "minvalue": "0",
+                "code": "#FFE0B2",
+                "gradient": "1",
+                "color": [{
+                    "minvalue": "0.5",
+                    "maxvalue": "1.0",
+                    "color": "#FFD74D"
+                }, {
+                    "minvalue": "1.0",
+                    "maxvalue": "2.0",
+                    "color": "#FB8C00"
+                }, {
+                    "minvalue": "2.0",
+                    "maxvalue": "3.0",
+                    "color": "#E65100"
+                }]
+            },
+            // Source data as JSON --> id represents countries of world.
+            "data": [{
+                "id": "NA",
+                "value": ".82",
+                "showLabel": "1"
+            }, {
+                "id": "SA",
+                "value": "2.04",
+                "showLabel": "1"
+            }, {
+                "id": "AS",
+                "value": "1.78",
+                "showLabel": "1"
+            }, {
+                "id": "EU",
+                "value": ".40",
+                "showLabel": "1"
+            }, {
+                "id": "AF",
+                "value": "2.58",
+                "showLabel": "1"
+            }, {
+                "id": "AU",
+                "value": "1.30",
+                "showLabel": "1"
+            }]
+        }
+    }
+});
+// Render
+chartInstance.render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -629,13 +700,14 @@ The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, 
 <pre><code class="custom-hlc language-javascript">
     import FusionCharts from 'fusioncharts/core';
     import FusionMaps from 'fusioncharts/maps';
+    FusionCharts.addDep(FusionMaps);
 </code></pre>
 </div>
 <div class='tab cjs-tab'>
 <div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
     var FusionCharts = require('fusioncharts');
-    var FusionMaps = require('fusionmaps');
+    var FusionMaps = require('fusioncharts/fusioncharts.maps');
     FusionMaps(FusionCharts);
 </code></pre>
 </div>
@@ -660,6 +732,8 @@ Therefore, assuming that you need to render the map of California, the alias nam
     import FusionCharts from 'fusioncharts/core';
     import FusionMaps from 'fusioncharts/maps';
     import California from 'fusionmaps/maps/es/fusioncharts.california';
+    FusionCharts.addDep(FusionMaps);
+    FusionCharts.addDep(California);
 </code></pre>
 
 <div class="mt-30"> <strong>It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.</strong>
@@ -673,9 +747,9 @@ Therefore, assuming that you need to render the map of California, the alias nam
 <div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
     var FusionCharts = require('fusioncharts');
-    var FusionMaps = require('fusionmaps');
+    var FusionMaps = require('fusioncharts/fusiocharts.maps');
     var California = require('fusionmaps/maps/fusioncharts.california');
-    FusonMaps(FusionCharts);
+    FusionMaps(FusionCharts);
     California(FusionCharts);
 </code></pre>
 
@@ -689,7 +763,7 @@ Therefore, assuming that you need to render the map of California, the alias nam
 
 ## Include Themes via **npm**
 
-Themes shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
+[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to apply centralized themes to any number of charts.
 
 In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
 
@@ -717,7 +791,7 @@ To include the definition files placed in **fusioncharts/themes**, follow any of
 </code></pre>
 <div><strong>To include the theme file, copy the following line of code:</strong></div>
 <pre><code class="custom-hlc language-javascript">
-    import fusion from 'fusioncharts/themes/es/fusioncharts.fusion'
+    import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion'
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
