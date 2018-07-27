@@ -64,13 +64,13 @@ Installation of FusionCharts Suite XT is simply copying and pasting the JavaScri
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. Create an HTML file and follow the steps given below:
 
-**Step 1: [Download](https://angularjs.org/ '@@open-newtab') the AngularJS core library and include the AngularJS file as shown below:**
+**Step 1:** [Download](https://angularjs.org/ '@@open-newtab') the AngularJS core library and include the AngularJS file as shown below:
 
 ```html
 <script type="text/javascript" src="path/to/local/angular.js"></script>
 ```
 
-**Step 2: Include the `fusioncharts.js` (FusionCharts core library) file. This file is required to render any **chart, widget and map.**
+**Step 2:** Include the `fusioncharts.js` (FusionCharts core library) file. This file is required to render any **chart, widget and map.**
 
 ```html
 <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
@@ -111,7 +111,7 @@ Now, this is bound to a datasource with the `myDataSource` scope object.
 
 Previously, we have bound to the undefined scope variable myDataSource.
 
-Set the `DataSource` to a JSON following the FusionChart's JSON format. Please refer [here]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#convert-tabular-data-into-json-format-3 '@@open-newtab') for the basic JSON structure.
+Set the `myDataSource` to a JSON following the FusionChart's JSON format. Please refer [here]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#convert-tabular-data-into-json-format-3 '@@open-newtab') for the basic JSON structure.
 
 ```
 app.controller('MyController', function($scope) {
