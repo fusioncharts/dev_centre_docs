@@ -321,27 +321,28 @@ Now, to install the AngularJS-FusionCharts follow the steps given below:
 
 **To include specific chart types individually using `require`:**
 
-**To render Gantt Chart:**
+**Gantt Chart:**
 ```
     var Gantt = require('fusioncharts/fusioncharts.gantt'); // Gantt
     Gantt(FusionCharts);
 ```
-**To render Treemap Chart:**
+**Treemap Chart:**
 ```
     var Treemap = require('fusioncharts/fusioncharts.treemap'); // Treemap
     Treemap(FusionCharts);
 ```
-**To render Zoomscatter chart:**
+**Zoomscatter chart:**
 ```
     var Zoomscatter = require('fusioncharts/fusioncharts.zoomscatter'); //ZS
     Zoomscatter(FusionCharts);
 ```
-**To render Zoomline chart:**
+**Zoomline chart:**
 ```
     var Zoomline = require('fusioncharts/fusioncharts.zoomline'); //zoomline
     Zoomline(FusionCharts);
 ```
-**To render Ovelapped Bar and Column charts:**
+**Ovelapped Bar and Column charts:**
+```
     var OverlappedBar2d = require('fusioncharts/fusioncharts.overlappedbar2d');
     var Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');
     OverlappedBar2d(FusionCharts);
