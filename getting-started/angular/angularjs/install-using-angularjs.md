@@ -261,7 +261,9 @@ var FusionCharts = require('fusioncharts');
 ```
 require('angularjs-fusioncharts');
 ```
-**Step 7:** <div ng-controller='MyController'>
+**Step 7:** Add the <div> with an fc-chart directive in your HTML, assuming that it is inside a controller named MyController
+```
+<div ng-controller='MyController'>
     <div fusioncharts
         width='700'
         height='400'
@@ -273,7 +275,7 @@ require('angularjs-fusioncharts');
 
 Now, this is bound to a datasource with the `myDataSource` scope object.
 
-## Populate the required variables
+**Populate the required variables**
 
 Previously, we have bounded the scope variable `myDataSource`.
 
