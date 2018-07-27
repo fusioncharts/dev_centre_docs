@@ -586,11 +586,11 @@ chartInstance.render()
 <div class='tab cjs-tab'>
 <div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
-var FusionCharts = require('fusioncharts');
-var FusionMaps = require('fusionmaps');
-var World = require('fusionmaps/maps/fusioncharts.world');
-FusionMaps(FusionCharts);
-World(FusionCharts);
+    var FusionCharts = require('fusioncharts');
+    var FusionMaps = require('fusionmaps');
+    var World = require('fusionmaps/maps/fusioncharts.world');
+    FusionMaps(FusionCharts);
+    World(FusionCharts);
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -628,9 +628,9 @@ The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, 
 <div class='tab cjs-tab'>
 <div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
-var FusionCharts = require('fusioncharts');
-var FusionMaps = require('fusionmaps');
-FusionMaps(FusionCharts);
+    var FusionCharts = require('fusioncharts');
+    var FusionMaps = require('fusionmaps');
+    FusionMaps(FusionCharts);
 </code></pre>
 </div>
 </div>
@@ -666,11 +666,11 @@ Therefore, assuming that you need to render the map of California, the alias nam
 <div class='tab cjs-tab'>
 <div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
-var FusionCharts = require('fusioncharts');
-var FusionMaps = require('fusionmaps');
-var California = require('fusionmaps/maps/fusioncharts.california');
-FusonMaps(FusionCharts);
-California(FusionCharts);
+    var FusionCharts = require('fusioncharts');
+    var FusionMaps = require('fusionmaps');
+    var California = require('fusionmaps/maps/fusioncharts.california');
+    FusonMaps(FusionCharts);
+    California(FusionCharts);
 </code></pre>
 
 <div class="mt-30"><strong> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.</strong>
@@ -719,9 +719,9 @@ To include the definition files placed in **fusioncharts/themes**, follow any of
 <div class='tab cjs-tab'>
 <div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
- var FusionCharts = require('fusioncharts');
- var FusionTheme = require('fusioncharts/themes/fusioncharts.fusion');
- FusionTheme(FusionCharts);
+    var FusionCharts = require('fusioncharts');
+    var FusionTheme = require('fusioncharts/themes/fusioncharts.fusion');
+    FusionTheme(FusionCharts);
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
