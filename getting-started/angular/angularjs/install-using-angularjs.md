@@ -92,7 +92,7 @@ angular.module("myApp", ["ng-fusioncharts"])
 
 ### Add the module
 
-Add the `<div>` with an **fc-chart** module in your HTML, assuming that it is inside a controller named `MyController`.
+Add the `<div>` with an **fc-chart** directive in your HTML, assuming that it is inside a controller named `MyController`.
 
 ```
 <div ng-controller='MyController'>
@@ -233,12 +233,12 @@ The fusioncharts package contains files for all charts and widgets and only two 
 
 Now, to install the AngularJS-FusionCharts follow the steps given below:
 
-**Step 1**: Install `angularjs` core librar:
+**Step 1**: Install `angularjs` core library:
 ```
   $ npm install angular
 ```
 
-**Step 2**: Install angularjs-fusioncharts 
+**Step 2**: Install `angularjs-fusioncharts`:
 ```
    $ npm install angularjs-fusioncharts
 ```
@@ -261,64 +261,64 @@ var FusionCharts = require('fusioncharts');
 ```
 require('angularjs-fusioncharts');
 ```
-**Step 7:** Include the `charts` module using `require`:
-```
-    var Angular = require('angular');
-    var FusionCharts = require('fusioncharts');
-    var Charts = require('fusioncharts/fusioncharts.charts');
-    require('angularjs-fusioncharts');
-    Charts(FusionCharts);
-
-    // Create an Instance with chart options
-    var chartInstance = new FusionCharts({
-        type: 'Column2D',
-        width: '700', // Width of the chart
-        height: '400', // Height of the chart
-        dataFormat: 'json', // Data type
-        dataSource: {
-            chart: {
-                // Chart Configuration
-                "chart": {
-                    "caption": "Countries With Most Oil Reserves [2017-18]",
-                    "subCaption": "In MMbbl = One Million barrels",
-                    "xAxisName": "Country",
-                    "yAxisName": "Reserves (MMbbl)",
-                    "numberSuffix": "K",
-                    "theme": "fusion",
-                },
-                // Chart Data
-                "data": [{
-                    "label": "Venezuela",
-                    "value": "290"
-                }, {
-                    "label": "Saudi",
-                    "value": "260"
-                }, {
-                    "label": "Canada",
-                    "value": "180"
-                }, {
-                    "label": "Iran",
-                    "value": "140"
-                }, {
-                    "label": "Russia",
-                    "value": "115"
-                }, {
-                    "label": "UAE",
-                    "value": "100"
-                }, {
-                    "label": "US",
-                    "value": "30"
-                }, {
-                    "label": "China",
-                    "value": "30"
-                }]
-            }
-        }
-    });
-    // Render
-    chartInstance.render();
+**Step 7:** <div ng-controller='MyController'>
+    <div fusioncharts
+        width='700'
+        height='400'
+        type='column2d'
+        dataSource='{{myDataSource}}' >
+    </div>
+</div>
 ```
 
+Now, this is bound to a datasource with the `myDataSource` scope object.
+
+## Populate the required variables
+
+Previously, we have bounded the scope variable `myDataSource`.
+
+Set the `myDataSource` to a JSON following the FusionChart's JSON data format. Please refer [here]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#convert-tabular-data-into-json-format-3 '@@open-newtab') for the basic JSON structure.
+
+```
+app.controller('MyController', function($scope) {
+    $scope.myDataSource = {
+        "chart": {
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion",
+    },
+    // Chart Data
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
+}
+});
+```
 **To include PowerCharts using `require`:**
 ```
    var FusionCharts = require('fusioncharts');
