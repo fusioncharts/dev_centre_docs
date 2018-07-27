@@ -92,7 +92,7 @@ angular.module("myApp", ["ng-fusioncharts"])
 
 ### Add the Directive
 
-Add the `<div>` with a **fc-chart** directive in your HTML file, assuming that it is inside a controller named `MyController`.
+Add the `<div>` with an **fc-chart** directive in your HTML, assuming that it is inside a controller named `MyController`.
 
 ```
 <div ng-controller='MyController'>
@@ -109,9 +109,9 @@ Now, this is bound to a datasource with the `myDataSource` scope object.
 
 ## Populate the required variables
 
-Previously, we have bound to the undefined scope variable myDataSource.
+Previously, we have bounded the scope variable `myDataSource`.
 
-Set the `myDataSource` to a JSON following the FusionChart's JSON format. Please refer [here]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#convert-tabular-data-into-json-format-3 '@@open-newtab') for the basic JSON structure.
+Set the `myDataSource` to a JSON following the FusionChart's JSON data format. Please refer [here]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#convert-tabular-data-into-json-format-3 '@@open-newtab') for the basic JSON structure.
 
 ```
 app.controller('MyController', function($scope) {
@@ -230,26 +230,26 @@ Now, let's discuss how to install the `angularjs-fusioncharts` module via **npm*
 The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**. So, first we will install the core `fusioncharts` module as shown below:
 
 ```shell
-$ npm install fusionmaps
+$ npm install fusioncharts
 ``` 
 
 > If you are not aware about the different files of FusionCharts package and its purpose, refer [here]({% site.baseurl %}/getting-started/angular/angularjs/install-using-angularjs#install-using-direct-javascript-files-2 '@@open-newtab').
 
 Now, to install the AngularJS-FusionCharts follow the steps given below:
 
-**Step 1**: Include `angularjs-fusioncharts` directive:
+**Step 1**: Install `angularjs-fusioncharts` directive:
 ```
-   $ npm install angular-fusioncharts --save
+   $ npm install angularjs-fusioncharts --save
 ```
-**Step 2** : import `angular` using `require`
+**Step 2** : Include `angular` core library using `require`
 ```
  var angular = require('angular');
 ```
-**Step 3**: import `fusioncharts` using `require`:
+**Step 3**: Include `fusioncharts` core library using `require`:
 ```
     var FusionCharts = require('fusioncharts');
 ```
-**Step 3:** import the `charts` module using `require`:
+**Step 3:** Include the `charts` module using `require`:
 ```
     var FusionCharts = require('fusioncharts');
     var Charts = require('fusioncharts/fusioncharts.charts');
