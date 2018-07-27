@@ -42,7 +42,7 @@ The folder structure is shown below:
 
 > It is recommended that you copy the JavaScript files of the `angular-fusioncharts.js` file from `fusioncharts-suite-xt > integrations > angularjs > js` to your project folder.
 
-Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
+Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
 File Name|Description|
 -|-

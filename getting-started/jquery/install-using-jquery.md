@@ -54,7 +54,7 @@ The folder structure is shown below:
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
 
-Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
+Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
 File Name|Description|
 -|-

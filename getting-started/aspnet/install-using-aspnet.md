@@ -30,7 +30,7 @@ The folder structure is shown below:
 
 > Copy the files of the `js` folder from fusioncharts-suite-xt to your project folder.
 
-Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
+Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
 File Name|Description|
 -|-
@@ -68,7 +68,7 @@ OR
 
 You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. `FusionCharts.dll` is present in `asp.net-cs/fusioncharts-wrapper-assembly` folder or `asp.net-vb/fusioncharts-wrapper-assembly`.
 
-Follow the steps given below to include the files in `fusioncharts-suite-xt/js` folder:
+Follow the steps given below to include the files in `fusioncharts-suite-xt > js` folder:
 
 **Step 1: Include the FusionCharts package:**
 
