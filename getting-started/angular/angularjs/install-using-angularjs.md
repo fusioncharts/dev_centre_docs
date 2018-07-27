@@ -329,6 +329,8 @@ app.controller('MyController', function($scope) {
 ```
 **To include PowerCharts using `require`:**
 ```
+   var Angular = require('angular');
+   require('angularjs-fusioncharts');
    var FusionCharts = require('fusioncharts');
    var PowerCharts = require('fusioncharts/fusioncharts.powercharts');
    PowerCharts(FusionCharts);
@@ -336,6 +338,8 @@ app.controller('MyController', function($scope) {
 
 **To include FusionWidgets using `require`:**
 ```
+ var Angular = require('angular');
+ require('angularjs-fusioncharts');
  var FusionCharts = require('fusioncharts');
  var Widgets = require('fusioncharts/fusioncharts.widgets');
  Widgets(FusionCharts);
@@ -345,26 +349,41 @@ app.controller('MyController', function($scope) {
 
 **Gantt Chart:**
 ```
+    var Angular = require('angular');
+    require('angularjs-fusioncharts');
+    var FusionCharts = require('fusioncharts');
     var Gantt = require('fusioncharts/fusioncharts.gantt'); // Gantt
     Gantt(FusionCharts);
 ```
 **Treemap Chart:**
 ```
+    var Angular = require('angular');
+    require('angularjs-fusioncharts');
+    var FusionCharts = require('fusioncharts');
     var Treemap = require('fusioncharts/fusioncharts.treemap'); // Treemap
     Treemap(FusionCharts);
 ```
 **Zoomscatter chart:**
 ```
+    var Angular = require('angular');
+    require('angularjs-fusioncharts');
+    var FusionCharts = require('fusioncharts');
     var Zoomscatter = require('fusioncharts/fusioncharts.zoomscatter'); //ZS
     Zoomscatter(FusionCharts);
 ```
 **Zoomline chart:**
 ```
+    var Angular = require('angular');
+    require('angularjs-fusioncharts');
+    var FusionCharts = require('fusioncharts');
     var Zoomline = require('fusioncharts/fusioncharts.zoomline'); //zoomline
     Zoomline(FusionCharts);
 ```
 **Ovelapped Bar and Column charts:**
 ```JavaScript
+    var Angular = require('angular');
+    require('angularjs-fusioncharts');
+    var FusionCharts = require('fusioncharts');
     var OverlappedBar2d = require('fusioncharts/fusioncharts.overlappedbar2d');
     var Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');
     OverlappedBar2d(FusionCharts);
