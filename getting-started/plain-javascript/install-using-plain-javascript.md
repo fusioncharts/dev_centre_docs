@@ -593,7 +593,7 @@ chartInstance.render()
 <div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
     var FusionCharts = require('fusioncharts');
-    var FusionMaps = require('fusionmaps');
+    var FusionMaps = require('fusioncharts/fusioncharts.maps');
     var World = require('fusionmaps/maps/fusioncharts.world');
     FusionMaps(FusionCharts);
     World(FusionCharts);

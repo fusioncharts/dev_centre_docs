@@ -77,31 +77,31 @@ After that, you can include the file in your web applications and start building
 
 **Step 1: Include Vue core library:**
 
-```html
+```HTML
 <script type="text/JavaScript" src="path/to/local/vue.js"></script>
 ```
 
 **Step 2: Include the FusionCharts package:**
 
-```html
+```HTML
 <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
 ```
 
 **Step 3: Include the vue-fusioncharts module:**
 
-```html
+```HTML
 <script type="text/JavaScript" src="path/to/local/vue-fusioncharts.js"></script>
 ```
 
 **Step 4: Include the theme file:**
 
-```html
+```HTML
 <script type="text/JavaScript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
 ```
 
 The consolidated code looks like as shown below:
 
-```html
+```HTML
 <head>
     <meta charset="utf-8">
     <title>Vue - FusionCharts</title>
@@ -124,7 +124,7 @@ In the downloaded package, you’ll find the `fusioncharts.maps.js` file and onl
 
 To render a map, you need the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, `vue.js`, and the map definition files as shown below:
 
-```
+```HTML
 <script type="text/JavaScript" src="path/to/local/vue.js"></script>
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
@@ -137,13 +137,13 @@ In the above example, we’ve included the World Map, whose map definition (path
 
 To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. 
 
-```
+```HTML
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
 ```
 
 Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
 
-```
+```HTML
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"></script>
 ```
 
@@ -151,7 +151,7 @@ Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open
 
 The consolidated code(which also includes the `vue.js`, `fusioncharts.js` and `vue-fusioncharts.js`)  looks like as shown below:
 
-```html
+```HTML
 <head>
     <meta charset="utf-8">
     <title>Vue - FusionCharts</title>
@@ -184,7 +184,7 @@ The FusionCharts Suite download package also contains the predefined theme files
 
 To include a theme to your chart, include its corresponding JavaScript file in your HTML page as shown in the code below:
 
-```html
+```HTML
 <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
 <script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
@@ -195,28 +195,28 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 
 The `fusioncharts` package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
 
-This section outlines the steps to be executed for installing all the node modules via npm and rendering charts using the **Vue-FusionCharts** component.
+This section outlines the steps to be executed for installing all the node modules via npm and rendering charts using the **vue-fusioncharts** component.
 
-### Step 1: Install the `fusioncharts` module via npm
+### Step 1: Install `fusioncharts` package
 
-To install the `fusioncharts` module, execute the following command in the terminal:
+To install the `fusioncharts` package via npm package, run the command below:
 
-```Shell
-npm install fusioncharts --save
+```PowerShell
+$ npm install fusioncharts --save
 ```
 
 ### Step 2: Install the `vue-fusioncharts` module via npm
 
-To install the `vue-fusioncharts` module, execute the following command in the terminal:
+To install the `vue-fusioncharts` module via npm package, run the command below:
 
-```Shell
-npm install vue-fusioncharts --save
+```PowerShell
+$ npm install vue-fusioncharts --save
 ```
 
-You can also combine the above commands in a single line, as shown below:
+You can also combine the above commands (to install `fusioncharts` and `vue-fusioncharts`) in a single line, as shown below:
 
-```Shell
-npm install fusioncharts vue-fusioncharts --save
+```PowerShell
+$ npm install fusioncharts vue-fusioncharts --save
 ```
 
 ### Step 3: Include the fusioncharts module
@@ -227,19 +227,19 @@ Once the installation is done, you need to register the `fusioncharts` module. Y
 
 To include the `vue` component, copy the following line of code:
 
-```Shell
+```JavaScript
 import Vue from 'vue';
 ```
 
 To include the 'vue-fusioncharts' component, copy the following line of code:
 
-```Shell
+```JavaScript
 import VueFusionCharts from 'vue-fusioncharts';
 ```
 
 To include the `fusioncharts` class, copy the following line of code:
 
-```Shell
+```JavaScript
 import FusionCharts from 'fusioncharts/core';
 import Charts from 'fusioncharts/charts';
 
@@ -251,7 +251,7 @@ import Widgets from 'fusioncharts/widgets'; // for Widgets
 
 To add chart dependency, copy the following line of code:
 
-```Shell
+```JavaScript
 // FusionCharts.addDep([ChartType])
 
 FusionCharts.addDep(Charts);
@@ -263,13 +263,13 @@ To register using a specific chart type, import the specific chart instead of al
 
 To include the `fusioncharts` class, copy the following line of code:
 
-```Shell
+```JavaScript
 import FusionCharts from 'fusioncharts/core';
 ```
 
 To include the specific chart from `viz` folder, copy the following line of code:
 
-```Shell
+```JavaScript
 // import ChartType from 'fusioncharts/viz/[ChartType]'
 
 import Column2D from 'fusioncharts/viz/column2d'
@@ -277,7 +277,7 @@ import Column2D from 'fusioncharts/viz/column2d'
 
 To add chart dependency, copy the following line of code:
 
-```Shell
+```JavaScript
 // FusionCharts.addDep(ChartType);
 
 FusionCharts.addDep(Column2D);
@@ -289,13 +289,13 @@ To register using multiple chart types, import the specific charts instead of al
 
 To include the `fusioncharts` class, copy the following line of code:
 
-```Shell
+```JavaScript
 import FusionCharts from 'fusioncharts/core';
 ```
 
 To include more than one chart from `viz` folder, copy the following line of code:
 
-```Shell
+```JavaScript
 // import ChartType from 'fusioncharts/viz/[ChartType]'
 
 import Column2D from 'fusioncharts/viz/column2d';
@@ -304,7 +304,7 @@ import Line2D from 'fusioncharts/viz/line2d';
 
 To add chart dependency, copy the following line of code:
 
-```Shell
+```JavaScript
 // FusionCharts.addDep(ChartType);
 
 FusionCharts.addDep(Column2D);
@@ -321,25 +321,25 @@ In your JavaScript code, use the `Vue.use()` method to register the `vue-fusionc
 
 To include the `vue` component, copy the following line of code:
 
-```Shell
+```JavaScript
 import Vue from 'vue';
 ```
 
 To include the `vue-fusioncharts` component, copy the following line of code:
 
-```Shell
+```JavaScript
 import VueFusionCharts from 'vue-fusioncharts';
 ```
 
 To include the `fusioncharts` class, copy the following line of code:
 
-```Shell
+```JavaScript
 import FusionCharts from 'fusioncharts/core';
 ```
 
 To include the specific chart from `viz` folder, copy the following line of code:
 
-```Shell
+```JavaScript
 // import ChartType from 'fusioncharts/viz/[ChartType]'
 
 import Column2D from 'fusioncharts/viz/column2d';
@@ -347,7 +347,7 @@ import Column2D from 'fusioncharts/viz/column2d';
 
 To add chart dependency, copy the following line of code:
 
-```Shell
+```JavaScript
 // FusionCharts.addDep(ChartType);
 
 FusionCharts.addDep(Column2D);
@@ -355,7 +355,7 @@ FusionCharts.addDep(Column2D);
 
 To register the **VueFusionCharts** component globally, copy the following line of code:
 
-```Shell
+```JavaScript
 Vue.use(VueFusionCharts);
 ```
 
@@ -365,79 +365,181 @@ Registering components globally ensures that even if you want to stop using that
 
 In your JavaScript code, use the `Vue.component()` method to register the `vue-fusioncharts` component locally. To register locally, use `Vue.component()` instead of `Vue.use()`, the rest of the code remains same. Refer to the code below:
 
-```Shell
+```JavaScript
 Vue.component('fusioncharts', FCComponent);
 ```
 
 ### Include Maps via npm
 
-In your JavaScript code, use the `Vue.use()` method to register the `vue-fusioncharts` component.
+The `fusioncharts` package contains only two map definition in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files, follow the steps given below:
 
-To include the core FusionCharts files, copy the following line of code:
+**Step 1: Load `fusioncharts` module**
 
-```Shell
+```JavaScript
 import FusionCharts from 'fusioncharts/core'
 ```
 
-To include the **core map** files from maps, copy the following line of code:
+**Step 2: Load the `FusionMaps` renderer and the map definition file**
 
-```Shell
-import Maps from 'fusioncharts/maps';
+
+```JavaScript
+    import FusionCharts from 'fusioncharts/core'
+    import FusionMaps from 'fusioncharts/maps';
+    import World from 'fusioncharts/maps/es/fusioncharts.world';
+
+    // Add the chart as dependency
+    // E.g. FusionCharts.addDep(ChartType)
+    FusionCharts.addDep(Column2D);
+        
+    // Create an Instance with map options
+    var salesByState =   new  FusionCharts({
+        type: 'world', // Map type
+        renderAt: 'chart-container', // Container
+        width: '800', // Width of the chart
+        height: '550', // Height of the chart
+        dataFormat: 'json', // Data Type
+        dataSource: {
+            chart: {
+                // Map Configuration
+                "chart": {
+                    "caption": "Average Annual Population Growth",
+                    "subcaption": " 1955-2015",
+                    "numbersuffix": "%",
+                    "includevalueinlabels": "1",
+                    "labelsepchar": ": ",
+                    "entityFillHoverColor": "#FFF9C4",
+                    "theme": "fusion"
+                },
+                // Aesthetics; ranges synced with the slider
+                "colorrange": {
+                    "minvalue": "0",
+                    "code": "#FFE0B2",
+                    "gradient": "1",
+                    "color": [{
+                        "minvalue": "0.5",
+                        "maxvalue": "1.0",
+                        "color": "#FFD74D"
+                    }, {
+                        "minvalue": "1.0",
+                        "maxvalue": "2.0",
+                        "color": "#FB8C00"
+                    }, {
+                        "minvalue": "2.0",
+                        "maxvalue": "3.0",
+                        "color": "#E65100"
+                    }]
+                },
+                // Source data as JSON --> id represents countries of world.
+                "data": [{
+                    "id": "NA",
+                    "value": ".82",
+                    "showLabel": "1"
+                }, {
+                    "id": "SA",
+                    "value": "2.04",
+                    "showLabel": "1"
+                }, {
+                    "id": "AS",
+                    "value": "1.78",
+                    "showLabel": "1"
+                }, {
+                    "id": "EU",
+                    "value": ".40",
+                    "showLabel": "1"
+                }, {
+                    "id": "AF",
+                    "value": "2.58",
+                    "showLabel": "1"
+                }, {
+                    "id": "AU",
+                    "value": "1.30",
+                    "showLabel": "1"
+                }]
+            }
+        }
+    });
+    // Render
+    chartInstance.render()
 ```
 
-To include the **map definition** file you want to render, following:
+**Load other map definition files**
+
+You can use rest of the map files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:
+
+**Install `fusionmaps` package**
 
 ```Shell
-import World from 'fusioncharts/maps/es/fusioncharts.world';
+$ npm install fusionmaps
 ```
 
-> If you want to render a map which is not in the `fusioncharts` package (World and USA), then you need to install **fusionmaps**, which contains all the ES6 map definitions:
-* npm install fusionmaps
-* ES-6 definitions can be found in `node_modules/fusionmaps/maps/es/fusioncharts.[MAP-ALIAS].js`
+Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder. 
 
-> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
+The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:
 
-To add the map and definition as the dependency to the core, copy the following line of code:
-
-```Shell
-FusionCharts.addDep(Maps); (Maps -  reference from above)
-FusionCharts.addDep(World); (World - reference from above)
+```JavaScript
+import FusionCharts from 'fusioncharts/core'
+import FusionMaps from 'fusioncharts/maps';
 ```
+
+Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.  
+
+Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
+
+Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
+
+```JavaScript
+import FusionCharts from 'fusioncharts/core';
+import FusionMaps from 'fusioncharts/maps';
+import California from 'fusionmaps/maps/es/fusioncharts.california';
+```
+
+To add `FusionMaps` and `California` as dependencies to the core, copy the following line of code:
+
+```JavaScript
+FusionCharts.addDep(FusionMaps);  (FusionMaps - reference from above)
+FusionCharts.addDep(California); (California - reference from above)
+```
+
+> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.
 
 ### Include Themes via npm
 
-FusionCharts Suite XT ships with the following predefined themes:
+Themes shipped with FusionCharts Suite XT allows you to create centralized theme files and apply those themes to any number of charts.
 
-* `fusion`
-* `zune`
-* `ocean`
-* `carbon`
+In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
 
-> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+* Visual appearance (data plot color, font color, font size, etc.)
+* Behavior (hover effects for data plots)
+* Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme)
+
+To include the definition files placed in **fusioncharts/themes**, follow the steps shown below:
+
 
 In your JavaScript code, use the `Vue.use()` method to register the `vue-fusioncharts` component.
 
 To include the core FusionCharts files, copy the following line of code:
 
-```Shell
+```JavaScript
 import FusionCharts from 'fusioncharts/core'
 ```
 
-To include the **theme engine extension**, copy the following line of code:
+To include the `theme engine extension`, copy the following line of code:
 
-```Shell
+```JavaScript
 import ThemeEngine from 'fusioncharts/features/theme-engine';
 ```
 
 To include the theme file, copy the following line of code:
 
-```Shell
+```JavaScript
 import fusion from 'fusioncharts/themes/es/fusioncharts.fusion'
 ```
 
 To add `ThemeEngine` and `fusion` as dependencies to the core, copy the following line of code:
 
-```Shell
+```JavaScript
 FusionCharts.addDep(ThemeEngine);  (ThemeEngine - reference from above)
 FusionCharts.addDep(fusion); (fusion - reference from above)
 ```
+
+> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
