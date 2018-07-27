@@ -1,13 +1,13 @@
 ---
 title: Installation | FusionCharts
-description: This article outlines the steps to install fusioncharts and fusioncharts angularjs component to create charts.
+description: This article outlines the steps to install fusioncharts and fusioncharts angularjs directive to create charts.
 heading: Installation
 chartPresent: false
 ---
 
-The `angularjs-fusioncharts` wrapper **(v1.x)**, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single AngularJS component.
+The `angularjs-fusioncharts` directive for **FusionCharts Suite XT**, lets you add interactive JavaScript charts to your web and mobile applications using **AngularJS (v1.x)**.
 
-In this article, we will show you how you can download and install the `angularjs-fusioncharts` wrapper and all the other dependencies on your system. 
+In this article, we will show you how you can download and install the `angularjs-fusioncharts` directive and all the other dependencies on your system. 
 
 ## Choose your mode of installation:
 
@@ -76,7 +76,7 @@ After that, you can include the FusionCharts JavaScript library in your web appl
 <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-**Step 3: Include the angularjs-fusioncharts wrapper:**
+**Step 3: Include the angularjs-fusioncharts directive:**
 
 ```html
 <script type="text/javascript" src="/path/to/angular-fusioncharts.js"></script>
@@ -237,7 +237,7 @@ $ npm install fusionmaps
 
 Now, to install the AngularJS-FusionCharts follow the steps given below:
 
-**Step 1**: Include `angularjs-fusioncharts` wrapper:
+**Step 1**: Include `angularjs-fusioncharts` directive:
 ```
    $ npm install angular-fusioncharts --save
 ```

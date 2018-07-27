@@ -319,7 +319,8 @@ The installation of both the module is shown below:
 </code></pre>
 <div><strong>Step 3</strong></div>
 <pre><code class="custom-hlc language-javascript">
-&gt;div id="chart-conatiner"&lt;FusionCharts XT will load here!&gt;/div&lt;
+&lt;!-- Create an element to render the chart with id as chart-container --&gt;
+&lt;div id="chart-conatiner"&gt;FusionCharts XT will load here!&lt;/div&gt;
 </code></pre>
 <div class="mt-30"><strong>Using optional features</strong></div>
 <div class="pb-10">Optional features reside inside the features folder <strong>fusioncharts/features/</strong></div>
