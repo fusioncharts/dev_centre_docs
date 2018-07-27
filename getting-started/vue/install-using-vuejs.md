@@ -14,7 +14,7 @@ The `Vue-FusionCharts` wrapper lets you include FusionCharts in your Vue project
     - XML
     - An URI pointing to a file containing JSON/XML data. However, each chart/map expects data to be formatted in a specific manner, and the data you provide must comply with the required format.
 
-In this article, we will demonstrate how to download and install the `Vue-FusionCharts` wrapper and all the other dependencies on your system. 
+In this article, we will show you how to download and install the `Vue-FusionCharts` wrapper and all the other dependencies on your system. 
 
 ## Choose your mode of installation:
 
@@ -33,7 +33,7 @@ In order to install and start working with `Vue-FusionCharts` you need to [downl
 
 * JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
 * JavaScript files to render maps under `js > maps` folder.
-* JavaScript files to include themes under `js > themes` folder.
+* JavaScript files to apply themes under `js > themes` folder.
 
 The folder structure is shown below:
 
