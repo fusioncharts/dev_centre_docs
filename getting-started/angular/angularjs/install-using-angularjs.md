@@ -42,7 +42,7 @@ The folder structure is shown below:
 
 > It is recommended that you copy the JavaScript files of the `angular-fusioncharts.js` file from `fusioncharts-suite-xt > integrations > angularjs > js` to your project folder.
 
-Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
+Following is the list of JavaScript files present in your `fusioncharts-suite-xt/js` folder:
 
 File Name|Description|
 -|-
@@ -241,87 +241,112 @@ Now, to install the AngularJS-FusionCharts follow the steps given below:
 ```
    $ npm install angular-fusioncharts --save
 ```
-**Script 2** : import `angular` using `require`
+**Step 2** : import `angular` using `require`
 ```
  var angular = require('angular');
 ```
-<div class="mt-20">2. require <strong>fusioncharts</strong>:</div>
-<pre><code class="custom-hlc language-javascript">
+**Step 3**: import `fusioncharts` using `require`:
+```
     var FusionCharts = require('fusioncharts');
-</code></pre>
-<div class="mt-20">3. require your chart module:</div>
-<pre><code class="custom-hlc language-javascript">
-    var Charts = require('fusioncharts/fusioncharts.charts'); // Charts
-    var Widgets = require('fusioncharts/fusioncharts.widgets'); // Widgets
-    var Powercharts = require('fusioncharts/fusioncharts.powercharts');//PC
+```
+**Step 3:** import the `charts` module using `require`:
+```
+    var FusionCharts = require('fusioncharts');
+    var Charts = require('fusioncharts/fusioncharts.charts');
+    Charts(FusionCharts);
+
+    // Create an Instance with chart options
+    var chartInstance = new FusionCharts({
+        type: 'Column2D',
+        width: '700', // Width of the chart
+        height: '400', // Height of the chart
+        dataFormat: 'json', // Data type
+        dataSource: {
+            chart: {
+                // Chart Configuration
+                "chart": {
+                    "caption": "Countries With Most Oil Reserves [2017-18]",
+                    "subCaption": "In MMbbl = One Million barrels",
+                    "xAxisName": "Country",
+                    "yAxisName": "Reserves (MMbbl)",
+                    "numberSuffix": "K",
+                    "theme": "fusion",
+                },
+                // Chart Data
+                "data": [{
+                    "label": "Venezuela",
+                    "value": "290"
+                }, {
+                    "label": "Saudi",
+                    "value": "260"
+                }, {
+                    "label": "Canada",
+                    "value": "180"
+                }, {
+                    "label": "Iran",
+                    "value": "140"
+                }, {
+                    "label": "Russia",
+                    "value": "115"
+                }, {
+                    "label": "UAE",
+                    "value": "100"
+                }, {
+                    "label": "US",
+                    "value": "30"
+                }, {
+                    "label": "China",
+                    "value": "30"
+                }]
+            }
+        }
+    });
+    // Render
+    chartInstance.render();
+```
+
+**To include PowerCharts using `require`:**
+```
+   var FusionCharts = require('fusioncharts');
+   var PowerCharts = require('fusioncharts/fusioncharts.powercharts');
+   PowerCharts(FusionCharts);
+```
+
+**To include FusionWidgets using `require`:**
+```
+ var FusionCharts = require('fusioncharts');
+ var Widgets = require('fusioncharts/fusioncharts.widgets');
+ Widgets(FusionCharts);
+```
+
+**To include specific chart types individually using `require`:**
+
+**To render Gantt Chart:**
+```
     var Gantt = require('fusioncharts/fusioncharts.gantt'); // Gantt
+    Gantt(FusionCharts);
+```
+**To render Treemap Chart:**
+```
     var Treemap = require('fusioncharts/fusioncharts.treemap'); // Treemap
+    Treemap(FusionCharts);
+```
+**To render Zoomscatter chart:**
+```
     var Zoomscatter = require('fusioncharts/fusioncharts.zoomscatter'); //ZS
+    Zoomscatter(FusionCharts);
+```
+**To render Zoomline chart:**
+```
     var Zoomline = require('fusioncharts/fusioncharts.zoomline'); //zoomline
+    Zoomline(FusionCharts);
+```
+**To render Ovelapped Bar and Column charts:**
     var OverlappedBar2d = require('fusioncharts/fusioncharts.overlappedbar2d');
     var Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');
-</code></pre>
-<div class="mt-30 pb-10"><strong>Note: </strong>Include the chart module needed</div>
-<div class="mt-20">4. require the <strong>angularjs-fusioncharts</strong> module:</div>
-<pre><code class="custom-hlc language-javascript">
-    require('angularjs-fusioncharts');
-</code></pre>
-<div class="mt-20">5. Pass the FusionCharts module to the Charts Modules:</div>
-<pre><code class="custom-hlc language-javascript">
-    Charts(FusionCharts);
-    Widgets(FusionCharts);
-    Powercharts(FusionCharts);
-    Gantt(FusionCharts);
-    Treemap(FusionCharts);
-    Zoomscatter(FusionCharts);
-    Zoomline(FusionCharts);
     OverlappedBar2d(FusionCharts);
     Overlappedcolumn2d(FusionCharts);
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-<div class="tab scripttags-tab">
-<div class="mt-30"><strong>Include `angularjs` package:</strong></div>
-<pre><code class="custom-hlc language-bash">
-    npm install angular@1.7.2 --save
-</code></pre>
-<div class="mt-30"><strong>Include `fusioncharts` package:</strong></div>
-<pre><code class="custom-hlc language-bash">
-    npm install fusioncharts --save
-</code></pre>
-<div class="mt-30"><strong>Include `angularjs-fusioncharts` wrapper:</strong></div>
-<pre><code class="custom-hlc language-bash">
-    npm install angularjs-fusioncharts --save
-</code></pre>
-<div class="mt-30 pb-10">In your `index.html`, include all the **&lt;script&gt;** tags:</div>
-<pre><code class="custom-hlc language-html">
-    &lt;script src="fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script src="angular/angular.js"&gt;&lt;/script&gt;
-    &lt;script src="angular-fusioncharts.js"&gt;
-    &lt;/script&gt;
-</code></pre>
-<div class="mt-30 pb-10">In `scripts.js`, add the dependency:</div>
-<pre><code class="custom-hlc language-javascript">
-    angular.module('your-app-name', ["ng-fusioncharts"]);
-</code></pre>
-<div class="mt-30 pb-10">Now the fusioncharts directive is available in your app both as an attribute as well as a tag. Include charts other required files in **&lt;script&gt;** tag:</div>
-<pre><code class="custom-hlc language-html">
-    &lt;script src="fusioncharts/fusioncharts.charts.js"&gt;&lt;/script&gt;
-    &lt;script src="fusioncharts/fusioncharts.widgets.js"&gt;&lt;/script&gt;
-    &lt;script src="fusioncharts/fusioncharts.powercharts.js"&gt;&lt;/script&gt;
-    &lt;script src="fusioncharts/fusioncharts.gantt.js"&gt;&lt;/script&gt;
-    &lt;script src="fusioncharts/fusioncharts.treemap.js"&gt;&lt;/script&gt;
-    &lt;script src="fusioncharts/fusioncharts.zoomscatter.js"&gt;&lt;/script&gt;
-    &lt;script src="fusioncharts/fusioncharts.zoomline.js"&gt;&lt;/script&gt;
-    &lt;script src="fusioncharts/fusioncharts.overlappedbar2d.js"&gt;&lt;/script&gt;
-    &lt;script src="fusioncharts/fusioncharts.overlappedcolumn2d.js"&gt;&lt;/script&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-</div>
-</div>
-
+```
 ## Include Maps via NPM
 
 When installed via `npm`, the `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
