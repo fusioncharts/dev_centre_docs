@@ -47,7 +47,7 @@ The folder structure is shown below:
 
 ![React Js Folder]({% site.baseurl %}/gif/react-folder-structure.gif)
 
-The `react` folder in the FusionCharts Suite XT package is available from v3.13.0.
+> The `react` folder in the FusionCharts Suite XT package is available from v3.13.0.
 
 > It is recommended that you copy the JavaScript files of the `react-fusioncharts.js` file from `fusioncharts-suite-xt > integrations > react > js` to your project folder.
 
@@ -75,31 +75,39 @@ After that, you can include the FusionCharts JavaScript library in the web appli
 
 **Step 1: Include React core library:**
 
-```html
+```HTML
 <script type="text/javascript" src="path/to/local/react.js"></script>
 <script type="text/javascript" src="path/to/local/react-dom.js"></script>
 ```
 **Step 2: Include Babel for JSX transpiling:**
 
-```html
+```HTML
 <script type="text/javascript" src="path/to/local/babel-core.js"></script>
 ```
 
 **Step 3: Include the FusionCharts package:**
 
-```html
+```HTML
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 ```
 
 **Step 4: Include the react-fusioncharts module:**
 
-```html
+```HTML
 <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
+```
+
+**Step 5: Include the theme file:**
+
+This step is optional, the chart will render with the default theme even if the theme file is not included.
+
+```HTML
+<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
 The consolidated code looks like as shown below:
 
-```html
+```HTML
 <head>
     <meta charset="utf-8">
     <title>React - FusionCharts</title>
@@ -112,6 +120,8 @@ The consolidated code looks like as shown below:
     <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
     <!-- React-FusionCharts -->
     <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
+    <!-- Fusion Theme -->
+    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 </head>
 ```
 
@@ -119,15 +129,13 @@ This completes the installation process. To see how to create a chart, [click he
 
 ### Installing FusionMaps (map visualizations) for your project
 
-FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps.
-
-In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions.
+FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions.
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
 To render a map, you need the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files as shown below:
 
-```html
+```HTML
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
@@ -155,11 +163,9 @@ Therefore, assuming that you need to render the map of **California**, the alias
 
 ```
 
-> Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
-
 The consolidated code (which also includes the `react.js`, `fusioncharts.js` and `react-fusioncharts.js`) is as shown below:
 
-```html
+```HTML
 <head>
     <meta charset="utf-8">
     <title>React - FusionCharts</title>
@@ -172,11 +178,14 @@ The consolidated code (which also includes the `react.js`, `fusioncharts.js` and
     <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
     <!-- FusionMaps -->
     <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-    <!--world -->
+    <!--California -->
     <script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"></script>
+    <!-- Fusion Theme -->
     <script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 </head>
 ```
+
+> Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
 ### Themes
 
@@ -194,36 +203,36 @@ The FusionCharts Suite download package also contains the predefined theme files
 
 To include a theme to your chart, include its corresponding JavaScript file in your HTML page for that theme as shown in the code below:
 
-```html
+```HTML
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme you have to set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
 
 ## Install FusionCharts via npm
 
-This section outlines the steps to be executed for installing all the node modules via npm and rendering charts using the React-FusionCharts component.
+The `fusioncharts` package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
 
-> The fusioncharts package installed by npm contains files for all charts and widgets, and only two map definition files - for the World map and the USA map.
+This section outlines the steps to be executed for installing all the node modules via npm and rendering charts using **react-fusioncharts** component.
 
-**Step 1: Install the fusioncharts module via npm**
+**Step 1: Install `fusioncharts` package**
 
-To install the fusioncharts module, execute the following command in the terminal:
+To install the `fusioncharts` package via npm package, run the command below:
 
-```
-npm install fusioncharts --save
+```PowerShell
+$ npm install fusioncharts --save
 ```
 
 **Step 2: Install the react-fusioncharts module via npm**
 
-To install the react-fusioncharts module, execute the following command in the terminal:
+To install the react-fusioncharts module via npm package, run the command below:
 
 ```
 npm install react-fusioncharts --save
 ```
 
-You can also combine the above commands in a single line, as shown below:
+You can also combine the above commands (to install `fusioncharts` and `react-fusioncharts`) in a single line, as shown below:
 
 ```
 npm install fusioncharts react-fusioncharts --save
