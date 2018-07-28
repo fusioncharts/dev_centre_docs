@@ -11,8 +11,6 @@ In this article, we will show you how you can download and install the `angular-
 
 > Unlike, other tech stacks **Angular-FusionCharts** can only be used via `npm`. Since, **Angular2** and onward does not support direct `<script>` inclusion of files this page shows only the steps to install via `npm`.
 
-## Install FusionCharts via npm
-
 Before installing and starting to work with **angular-fusionCharts** wrapper, let's get familiar with the list of JavaScript files present in the **angular-fuioncharts** package:
 
 File Name|Description|
@@ -35,17 +33,16 @@ File Name|Description|
 
 This section outlines the steps to be executed for installing **angular-fusioncharts** via npm:
 
-### Step 1: Install fusioncharts
-
-```shell
-$ npm install fusioncharts --save
-```
-
-### Step 2: Install `angular-fusioncharts`:
+### Step 1: Install `angular-fusioncharts`:
 
 ```shell
 $ npm install angular-fusioncharts --save
 ```
+### Step 2: Install fusioncharts
+
+```shell
+$ npm install fusioncharts --save
+``` 
 
 ### Step 3: Import FusionCharts library via npm in `app.module.ts`(in your application)
 
