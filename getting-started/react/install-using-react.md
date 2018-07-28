@@ -73,31 +73,31 @@ Installation of FusionCharts Suite XT is simply copying and pasting the JavaScri
 
 After that, you can include the FusionCharts JavaScript library in the web applications and start building your charts, gauges, and maps. Create an HTML file and follow the steps below:
 
-**Step 1: Include React core library:**
+**Step 1:** Include React core library
 
 ```HTML
 <script type="text/javascript" src="path/to/local/react.js"></script>
 <script type="text/javascript" src="path/to/local/react-dom.js"></script>
 ```
-**Step 2: Include Babel for JSX transpiling:**
+**Step 2:** Include Babel for JSX transpiling
 
 ```HTML
 <script type="text/javascript" src="path/to/local/babel-core.js"></script>
 ```
 
-**Step 3: Include the FusionCharts package:**
+**Step 3:** Include the FusionCharts package
 
 ```HTML
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-**Step 4: Include the react-fusioncharts module:**
+**Step 4:** Include the react-fusioncharts module
 
 ```HTML
 <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
 ```
 
-**Step 5: Include the theme file:**
+**Step 5:** Include the theme file
 
 This step is optional, the chart will render with the default theme even if the theme file is not included.
 
@@ -216,7 +216,7 @@ The `fusioncharts` package contains files for all charts and widgets and only tw
 
 This section outlines the steps to be executed for installing all the node modules via npm and rendering charts using **react-fusioncharts** component.
 
-**Step 1: Install `fusioncharts` package**
+**Step 1:** Install `fusioncharts` package
 
 To install the `fusioncharts` package via npm, run the command below:
 
@@ -224,7 +224,7 @@ To install the `fusioncharts` package via npm, run the command below:
 $ npm install fusioncharts --save
 ```
 
-**Step 2: Install the `react-fusioncharts` module**
+**Step 2:** Install the `react-fusioncharts` module
 
 To install the react-fusioncharts module via npm, run the command below:
 
@@ -238,7 +238,7 @@ You can also combine the above commands (to install `fusioncharts` and `react-fu
 $ npm install fusioncharts react-fusioncharts --save
 ```
 
-**Step 3: Include the `fusioncharts` module**
+**Step 3:** Include the `fusioncharts` module
 
 Once the installation is done, you need to register the `fusioncharts` module. You can register by following the steps given below:
 
