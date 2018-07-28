@@ -13,7 +13,7 @@ In this article, we will show you how you can download and install the `angular-
 
 ## Install FusionCharts via npm
 
-Before installing and starting to work with **angular-fusionCharts** wrapper, let's get familiar with the list of JavaScript files present folder:
+Before installing and starting to work with **angular-fusionCharts** wrapper, let's get familiar with the list of JavaScript files present in the **angular-fuioncharts** package:
 
 File Name|Description|
 -|-
@@ -31,9 +31,9 @@ File Name|Description|
 `maps/*`|This folder contains Map Definition files required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1000+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be applied to charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
 
-Now, let's discuss how to install the `fusioncharts` module via npm. The `fusioncharts` package contains files for all charts, powercharts, widgets and only two map definition files, for the **World map** and the **USA map**.
+## Install Angular-FusionCharts via npm
 
-This section outlines the steps to be executed for installing all the node modules via npm and rendering charts using the `angular-FusionCharts` wrapper.
+This section outlines the steps to be executed for installing **angular-fusioncharts** via npm:
 
 ### Step 1: Install fusioncharts
 
@@ -41,51 +41,67 @@ This section outlines the steps to be executed for installing all the node modul
 npm install fusioncharts --save
 ```
 
-### Step 2: Install `angular-fusioncharts` wrapper
-
-To install the `angular-fusioncharts` wrapper, copy the following line of code:
+### Step 2: Install `angular-fusioncharts`:
 
 ```shell
 npm install angular-fusioncharts --save
 ```
 
-### Step 3: Import **FusionChartsModule**
+### Step 3: Import FusionCharts library via npm in `app.module.ts`(in your application)
 
-To import fusioncharts module in `app.module.ts` (in your application), copy the following line of code:
-
-```shell
-import { FusionChartsModule } from 'angular-fusioncharts';
-```
-
-### Step 4: Import FusionCharts library via npm
-
-To import the `fusioncharts` library in `app.module.ts`(in your application), copy the following line of code:
+To import the `fusioncharts` library , copy the following line of code:
 
 ```shell
 import * as FusionCharts from 'fusioncharts';
 ```
 
-### Step 5: Import other charts
-
-To use charts and gauges from **PowerCharts** and **Widgets**, import their respective modules using:
+### Step 4: Import **FusionChartsModule** in `app.module.ts` (in your application):
 
 ```shell
-import * as Widgets from 'fusioncharts/fusioncharts.widgets'; // Widgets
+import { FusionChartsModule } from 'angular-fusioncharts';
+```
+
+### Step 5: Import PowerCharts module:
+
+
+```shell
 import * as Powercharts from 'fusioncharts/fusioncharts.powercharts'; //PowerCharts
+```
+**Import FusionWidgets module:
+```shell
+import * as Widgets from 'fusioncharts/fusioncharts.widgets'; // Widgets
 ```
 
 Note: To import specific charts, include the following import statements in your code:
 
+**Gantt Chart:**
+
 ```shell
 import * as Gantt from 'fusioncharts/fusioncharts.gantt'; // Gantt
+```
+**Treemap**
+
+```shell
 import * as Treemap from 'fusioncharts/fusioncharts.treemap'; // Treemap
+```
+**Zoomscatter**
+
+```shell
 import * as Zoomscatter from 'fusioncharts/fusioncharts.zoomscatter'; //Zoom Scatter
+```
+**Zoomline**
+
+```shell
 import * as Zoomline from 'fusioncharts/fusioncharts.zoomline'; //Zoom Line
+```
+**Overlapped Bar2D and Column2D charts
+
+```shell
 import * as Overlappedbar2d from 'fusioncharts/fusioncharts.overlapped2d'; //Overlapped Bar 2D
 import * as Overlappedcolumn2d from 'fusioncharts/fusioncharts.overlappedcolumn2d'; //Overlapped Column 2D
 ```
 
-This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular '@@open-newtab').
+The above steps completes the installation process. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular '@@open-newtab').
 
 ## Include Maps via npm
 
