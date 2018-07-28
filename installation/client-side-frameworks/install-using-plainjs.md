@@ -59,7 +59,7 @@ FusionCharts Suite XT consists of 4 products:
 
 * **FusionMaps XT** - It offers interactive maps to plot geographical data like revenue by regions, population by state, survey and election results effectively. You can also drop markers on the map to pinpoint places like office locations and flight routes. It has over 1000 maps including all continents, major countries, and all US states.
 
-By default, when you set up FusionCharts Suite XT on your web server or your local file system, you can create all the 90+ charts and 1000+ maps (after downloading the map definition files separately). However, if you need to use just a specific FusionCharts Suite XT product, you need to do the following:
+By default, when you set up FusionCharts Suite XT on your web server or your local file system, you can create all the 90+ charts and 1400+ maps (after downloading the map definition files separately). However, if you need to use just a specific FusionCharts Suite XT product, you need to do the following:
 
 * **FusionCharts XT**: Copy only `fusioncharts.js` and `fusioncharts.charts.js` files from your `js` folder to your working directory.
 

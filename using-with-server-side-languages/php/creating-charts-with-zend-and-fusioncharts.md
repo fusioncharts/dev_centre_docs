@@ -18,7 +18,7 @@ Zend Framework is a cluster of professional PHP packages that can be used to dev
 
 In this tutorial, we will be creating JavaScript charts using Zend and FusionCharts.
 
-FusionCharts is a comprehensive JavaScript charting library packed with 90+ charts and 1000+ maps. 
+FusionCharts is a comprehensive JavaScript charting library packed with 90+ charts and 1400+ maps. 
 
 One chart type can’t be used for visualising all types of data. FusionCharts offers a wide range of charts to choose from, depending on the type of data to be plotted and the type of analysis to be done. The package includes basic charts like the column chart, pie chart, doughnut chart, and so on; domain-specific power charts like the logarithmic charts, spline charts, error charts, and so on; gauges and widgets like the angular gauge, bulb gauge, thermometer gauge, and funnel and pyramid charts, and so on; and maps for all continents, major countries, and all US states.
 
