@@ -33,12 +33,13 @@ File Name|Description|
 
 This section outlines the steps to be executed for installing **angular-fusioncharts** via npm:
 
-### Step 1: Install `angular-fusioncharts`:
+**Step 1:** Install `angular-fusioncharts`
 
 ```PowerShell
 $ npm install angular-fusioncharts --save
 ```
-### Step 2: Install fusioncharts
+
+**Step 2:** Install fusioncharts
 
 ```PowerShell
 $ npm install fusioncharts --save
@@ -50,6 +51,7 @@ $ npm install fusioncharts --save
   <li><a data-toggle='angular2'>Angular 2</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
+<div class='tab angular4-tab active'>
 <div><strong>To include the core fusioncharts class:</strong></div>
 <pre><code class="custom-hlc language-javascript">
     let FusionCharts = require('fusioncharts/core').default;
@@ -75,15 +77,15 @@ $ npm install fusioncharts --save
 
 <div class='tab angular2-tab'>
 <div class='tab angular4-tab active'>
-<div class="mt-30"><strong>Step 3:</strong>Import <strong>FusionChartsModule</strong> in `in the root @NgModule` (in your application)</div>
+<div class="mt-30"><strong>Step 3: </strong>Import <strong>FusionChartsModule</strong> in `in the root @NgModule` (in your application)</div>
 <pre><code class="custom-hlc language-javascript">
     import { FusionChartsModule } from 'angular-fusioncharts';
 </code></pre>
-<div class="mt-30"><strong>Step 4:</strong>Import FusionCharts library via npm in `in the root @NgModule`(in your application)</div>
+<div class="mt-30"><strong>Step 4: </strong>Import FusionCharts library via npm in `in the root @NgModule`(in your application)</div>
 <pre><code class="custom-hlc language-javascript">
     import * as FusionCharts from 'fusioncharts';
 </code></pre>
-<div class="mt-30"><strong>Step 5:</strong>Import Specific modules</div>
+<div class="mt-30"><strong>Step 5: </strong>Import Specific modules</div>
 <div class="mt-20"><strong>Import Charts</strong></div>
 <pre><code class="custom-hlc language-javascript">
 import * as Charts from 'fusioncharts/fusioncharts.charts';    
