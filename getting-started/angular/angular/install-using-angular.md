@@ -54,11 +54,11 @@ $ npm install fusioncharts --save
 <div class='tab angular4-tab active'>
 <div class="mt-30"><strong>Step 3: </strong>Import <strong>FusionChartsModule</strong> in the root `@NgModule` (in your application)</div>
 <pre><code class="custom-hlc language-javascript">
-    import { FusionChartsModule } from 'angular-fusioncharts';
+import { FusionChartsModule } from 'angular-fusioncharts';
 </code></pre>
 <div class="mt-30"><strong>Step 4: </strong>Import FusionCharts library in the root `@NgModule`(in your application)</div>
 <pre><code class="custom-hlc language-javascript">
-    import FusionCharts from 'fusioncharts/core';
+import FusionCharts from 'fusioncharts/core';
 </code></pre>
 <div class="mt-30"><strong>Step 5: </strong>Import Specific modules</div>
 <pre><code class="custom-hlc language-javascript">
@@ -130,11 +130,11 @@ import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion'
 <div class='tab angular2-tab'>
 <div class="mt-30"><strong>Step 3: </strong>Import <strong>FusionChartsModule</strong> in the root `@NgModule` (in your application)</div>
 <pre><code class="custom-hlc language-javascript">
-    import { FusionChartsModule } from 'angular-fusioncharts';
+import { FusionChartsModule } from 'angular-fusioncharts';
 </code></pre>
 <div class="mt-30"><strong>Step 4: </strong>Import FusionCharts library in the root `@NgModule`(in your application)</div>
 <pre><code class="custom-hlc language-javascript">
-    import * as FusionCharts from 'fusioncharts';
+import \* as FusionCharts from 'fusioncharts';
 </code></pre>
 <div class="mt-30"><strong>Step 5: </strong>Import Specific modules</div>
 <div class="mt-20"><strong>Import Charts</strong></div>
