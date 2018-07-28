@@ -76,7 +76,6 @@ $ npm install fusioncharts --save
 </div>
 
 <div class='tab angular2-tab'>
-<div class='tab angular4-tab active'>
 <div class="mt-30"><strong>Step 3: </strong>Import <strong>FusionChartsModule</strong> in `in the root @NgModule` (in your application)</div>
 <pre><code class="custom-hlc language-javascript">
     import { FusionChartsModule } from 'angular-fusioncharts';
