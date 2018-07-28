@@ -222,9 +222,9 @@ import \* as FusionCharts from 'fusioncharts'
 </code></pre>
 <div class="mt-20"><strong>Step 2: </strong>Include the theme file</div>
 <pre><code class="custom-hlc language-javascript">
-import FusionTheme from 'fusioncharts/themes/fusioncharts.fusion'
+import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.fusion'
 </code></pre>
-<div class="mt-10">Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').</div>
+<div class="mt-10">Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click <a href="{% site.baseurl %}/themes/introduction-to-themes" target="_blank">here</a>.</div>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
