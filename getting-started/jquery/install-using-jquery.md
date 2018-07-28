@@ -248,64 +248,40 @@ Once the installation is done, you need to register the `fusioncharts` module. Y
 
 You can include the fusioncharts class and jquery-fusioncharts module using any of the following process:
 
-jQuery FusionCharts Helper
+**Include jQuery FusionCharts Helper**
 
 ```JavaScript
-import jQuery from 'jquery';
+let jQuery = require('jquery');
 ```
 
-</code></pre>
-<div><strong>To include all charts from FusionCharts:</strong></div>
-<pre><code class="custom-hlc language-cs">
-    import Charts from 'fusioncharts/fusioncharts.charts';
-</code></pre>
-<div><strong>To use charts and gauges from PowerCharts and Widgets, import their respective modules using:</strong></div>
-<pre><code class="custom-hlc language-cs">
-    // For PowerCharts
-    import PowerCharts from 'fusioncharts/fusioncharts.powercharts';
-    // For Widgets
-    import Widgets from 'fusioncharts/fusioncharts.widgets';
-</code></pre>
-<div><strong>To include jQuery FusionCharts plugin:</strong></div>
-<pre><code class="custom-hlc language-cs">
-    import FusionCharts from 'jquery-fusioncharts';
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
+**Include all charts from FusionCharts**
 
-<div class='tab xml-tab'>
-<div><strong>To include jQuery:</strong></div>
-<pre><code class="custom-hlc language-cv">
-    let jQuery = require('jquery');
-</code></pre>
-<div><strong>To include all charts from FusionCharts:</strong></div>
-<pre><code class="custom-hlc language-cv">
-    let Charts = require('fusioncharts/fusioncharts.charts');
-</code></pre>
-<div><strong>To use charts and gauges from PowerCharts and Widgets, import their respective modules using:</strong></div>
-<pre><code class="custom-hlc language-cv">
-    // For PowerCharts
-    let PowerCharts = require('fusioncharts/fusioncharts.powercharts');
-    // For Widgets
-    let Widgets = require('fusioncharts/fusioncharts.widgets');
-</code></pre>
-<div><strong>To include jQuery FusionCharts plugin:</strong></div>
-<pre><code class="custom-hlc language-cv">
-    let FusionCharts = require('jquery-fusioncharts');
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-</div>
-</div>
-
-**To add chart dependency:**
-
-```
-Charts(FusionCharts);
+```JavaScript
+let Charts = require('fusioncharts');
+let Charts = require('fusioncharts/fusioncharts.charts');
 ```
 
-**To add charts, powercharts and widgets dependencies:**
+**Include PowerCharts**
+
+```JavaScript
+// For PowerCharts
+let PowerCharts = require('fusioncharts/fusioncharts.powercharts');
+```
+
+**Include FusionWidgets**
+
+```JavaScript
+// For Widgets
+let Widgets = require('fusioncharts/fusioncharts.widgets');
+```
+
+**Include jQuery FusionCharts plugin**
+
+```JavaScript
+let FusionCharts = require('jquery-fusioncharts');
+```
+
+**Add charts, powercharts and widgets dependencies:**
 
 ```
 // [Module](FusionCharts);
@@ -313,6 +289,8 @@ Charts(FusionCharts);
 PowerCharts(FusionCharts);
 Widgets(FusionCharts);
 ```
+
+To import specific charts, include the following require statements
 
 ## Include Maps via NPM
 

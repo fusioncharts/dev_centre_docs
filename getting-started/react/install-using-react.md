@@ -280,7 +280,7 @@ import Widgets from 'fusioncharts/fusioncharts.widgets';
 ReactFC.fcRoot(FusionCharts, Charts, PowerCharts, Widgets);
 ```
 
-To import specific charts, include the following import statments in your code:
+To import specific charts, include the following import statements in your code:
 
 **Gantt Chart**
 
