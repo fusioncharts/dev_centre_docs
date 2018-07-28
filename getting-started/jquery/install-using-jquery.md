@@ -310,17 +310,17 @@ let Treemap = require('fusioncharts/fusioncharts.treemap');
 let ZoomScatter = require('fusioncharts/fusioncharts.zoomscatter');
 ```
 
-**Zoomline Chart**
+**ZoomLine Chart**
 
 ```JavaScript
-let Zoomline = require('fusioncharts/fusioncharts.zoomline');
+let ZoomLine = require('fusioncharts/fusioncharts.zoomline');
 ```
 
 **Overlapped Bar2D and Column2D Charts**
 
 ```JavaScript
-let Overlappedbar2d = require('fusioncharts/fusioncharts.overlappedbar2d');
-let Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');
+let OverlappedBar2D = require('fusioncharts/fusioncharts.overlappedbar2d');
+let OverlappedColumn2D = require('fusioncharts/fusioncharts.overlappedcolumn2d');
 ```
 
 ## Include Maps via NPM

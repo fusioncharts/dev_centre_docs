@@ -234,41 +234,49 @@ The fusioncharts package contains files for all charts and widgets and only two 
 Now, to install the AngularJS-FusionCharts follow the steps given below:
 
 **Step 1**: Install `angularjs` core library:
-```
-  $ npm install angular
+
+```PowerShell
+$ npm install angular
 ```
 
 **Step 2**: Install `angularjs-fusioncharts`:
+
+```PowerShell
+$ npm install angularjs-fusioncharts
 ```
-   $ npm install angularjs-fusioncharts
-```
+
 **Step 3**: Install `fusioncharts` package:
-```
-    $ npm install fusioncharts
+
+```PowerShell
+$ npm install fusioncharts
 ```
 **Step 4:** Include `angularjs` core library using `require`:
-```
-var Angular = require('angular');
 
+```JavaScript
+var Angular = require('angular');
 ```
+
 **Step 5:** Include `fusioncharts` core library using `require`:
 
-```
+```JavaScript
 var FusionCharts = require('fusioncharts');
+```
 
-```
 **Step 6:** Include `angularjs-fusioncharts` module using `require`:
-```
+
+```JavaScript
 require('angularjs-fusioncharts');
 ```
+
 **Step 7:** Include the ng-fusioncharts as a dependency in the application. Call `angular.module()` to add the dependency.
 
-```
+```JavaScript
 angular.module("myApp", ["ng-fusioncharts"])
 ``` 
 
 Add the &lt;div&gt; with an **fc-chart** directive in your HTML, assuming that it is inside a controller named `MyController`.
-```
+
+```HTML
 <div ng-controller='MyController'>
     <div fusioncharts
         width='700'
@@ -287,7 +295,7 @@ Previously, we have bounded the scope variable `myDataSource`.
 
 Set the `myDataSource` to a JSON following the FusionChart's JSON data format. Please refer [here]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#convert-tabular-data-into-json-format-3 '@@open-newtab') for the basic JSON structure.
 
-```
+```json
 app.controller('MyController', function($scope) {
     $scope.myDataSource = {
         "chart": {
@@ -297,98 +305,110 @@ app.controller('MyController', function($scope) {
         "yAxisName": "Reserves (MMbbl)",
         "numberSuffix": "K",
         "theme": "fusion",
-    },
-    // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
-}
+        },
+        // Chart Data
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    }
 });
 ```
 **To include PowerCharts using `require`:**
-```
-   var Angular = require('angular');
-   require('angularjs-fusioncharts');
-   var FusionCharts = require('fusioncharts');
-   var PowerCharts = require('fusioncharts/fusioncharts.powercharts');
-   PowerCharts(FusionCharts);
+
+```JavaScript
+var Angular = require('angular');
+require('angularjs-fusioncharts');
+var FusionCharts = require('fusioncharts');
+var PowerCharts = require('fusioncharts/fusioncharts.powercharts');
+PowerCharts(FusionCharts);
 ```
 
 **To include FusionWidgets using `require`:**
-```
- var Angular = require('angular');
- require('angularjs-fusioncharts');
- var FusionCharts = require('fusioncharts');
- var Widgets = require('fusioncharts/fusioncharts.widgets');
- Widgets(FusionCharts);
+
+```JavaScript
+var Angular = require('angular');
+require('angularjs-fusioncharts');
+var FusionCharts = require('fusioncharts');
+var Widgets = require('fusioncharts/fusioncharts.widgets');
+Widgets(FusionCharts);
 ```
 
 **To include specific chart types individually using `require`:**
 
 **Gantt Chart:**
-```
-    var Angular = require('angular');
-    require('angularjs-fusioncharts');
-    var FusionCharts = require('fusioncharts');
-    var Gantt = require('fusioncharts/fusioncharts.gantt'); // Gantt
-    Gantt(FusionCharts);
-```
-**Treemap Chart:**
-```
-    var Angular = require('angular');
-    require('angularjs-fusioncharts');
-    var FusionCharts = require('fusioncharts');
-    var Treemap = require('fusioncharts/fusioncharts.treemap'); // Treemap
-    Treemap(FusionCharts);
-```
-**Zoomscatter chart:**
-```
-    var Angular = require('angular');
-    require('angularjs-fusioncharts');
-    var FusionCharts = require('fusioncharts');
-    var Zoomscatter = require('fusioncharts/fusioncharts.zoomscatter'); //ZS
-    Zoomscatter(FusionCharts);
-```
-**Zoomline chart:**
-```
-    var Angular = require('angular');
-    require('angularjs-fusioncharts');
-    var FusionCharts = require('fusioncharts');
-    var Zoomline = require('fusioncharts/fusioncharts.zoomline'); //zoomline
-    Zoomline(FusionCharts);
-```
-**Ovelapped Bar and Column charts:**
+
 ```JavaScript
-    var Angular = require('angular');
-    require('angularjs-fusioncharts');
-    var FusionCharts = require('fusioncharts');
-    var OverlappedBar2d = require('fusioncharts/fusioncharts.overlappedbar2d');
-    var Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');
-    OverlappedBar2d(FusionCharts);
-    Overlappedcolumn2d(FusionCharts);
+var Angular = require('angular');
+require('angularjs-fusioncharts');
+var FusionCharts = require('fusioncharts');
+var Gantt = require('fusioncharts/fusioncharts.gantt'); // Gantt
+Gantt(FusionCharts);
 ```
+
+**Treemap Chart:**
+
+```JavaScript
+var Angular = require('angular');
+require('angularjs-fusioncharts');
+var FusionCharts = require('fusioncharts');
+var Treemap = require('fusioncharts/fusioncharts.treemap'); // Treemap
+Treemap(FusionCharts);
+```
+
+**ZoomScatter chart:**
+
+```JavaScript
+var Angular = require('angular');
+require('angularjs-fusioncharts');
+var FusionCharts = require('fusioncharts');
+var ZoomScatter = require('fusioncharts/fusioncharts.zoomscatter'); //ZoomScatter
+ZoomScatter(FusionCharts);
+```
+
+**ZoomLine chart:**
+
+```JavaScript
+var Angular = require('angular');
+require('angularjs-fusioncharts');
+var FusionCharts = require('fusioncharts');
+var ZoomLine = require('fusioncharts/fusioncharts.zoomline'); //zoomline
+ZoomLine(FusionCharts);
+```
+
+**Ovelapped Bar and Column charts:**
+
+```JavaScript
+var Angular = require('angular');
+require('angularjs-fusioncharts');
+var FusionCharts = require('fusioncharts');
+var OverlappedBar2D = require('fusioncharts/fusioncharts.overlappedbar2d');
+var OverlappedColumn2D = require('fusioncharts/fusioncharts.overlappedcolumn2d');
+OverlappedBar2D(FusionCharts);
+OverlappedColumn2D(FusionCharts);
+```
+
 ## Include Maps via **npm**
 
 The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:

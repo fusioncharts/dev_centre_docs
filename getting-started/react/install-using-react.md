@@ -300,17 +300,17 @@ import Treemap from 'fusioncharts/fusioncharts.treemap';
 import ZoomScatter from 'fusioncharts/fusioncharts.zoomscatter';
 ```
 
-**Zoomline Chart**
+**ZoomLine Chart**
 
 ```JavaScript
-import Zoomline from 'fusioncharts/fusioncharts.zoomline';
+import ZoomLine from 'fusioncharts/fusioncharts.zoomline';
 ```
 
 **Overlapped Bar2D and Column2D Charts**
 
 ```JavaScript
-import Overlappedbar2d from 'fusioncharts/fusioncharts.overlappedbar2d';
-import Overlappedcolumn2d from 'fusioncharts/fusioncharts.overlappedcolumn2d';
+import OverlappedBar2D from 'fusioncharts/fusioncharts.overlappedbar2d';
+import OverlappedColumn2D from 'fusioncharts/fusioncharts.overlappedcolumn2d';
 ```
 
 ### Include only specific modules

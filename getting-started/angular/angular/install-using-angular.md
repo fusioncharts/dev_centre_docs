@@ -5,7 +5,7 @@ heading: Installation
 chartPresent: false
 ---
 
-The **angular-fusionCharts** component, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single Angular component.
+The **angular-fusioncharts** component, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single Angular component.
 
 In this article, we will show you how you can download and install the `angular-fusionCharts` component and all the other dependencies on your system. You can install FusionCharts in your application using npm.
 
@@ -35,225 +35,145 @@ This section outlines the steps to be executed for installing **angular-fusionch
 
 ### Step 1: Install `angular-fusioncharts`:
 
-```shell
+```PowerShell
 $ npm install angular-fusioncharts --save
 ```
 ### Step 2: Install fusioncharts
 
-```shell
+```PowerShell
 $ npm install fusioncharts --save
-``` 
-
-### Step 3: Import FusionCharts library via npm in `app.module.ts`(in your application)
-
-To import the `fusioncharts` library , copy the following line of code:
-
-```shell
-import * as FusionCharts from 'fusioncharts';
 ```
 
-### Step 4: Import **FusionChartsModule** in `app.module.ts` (in your application):
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+  <li class='active'><a data-toggle='angular4'>Angular 4 onwards</a></li>
+  <li><a data-toggle='angular2'>Angular 2</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div><strong>To include the core fusioncharts class:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let FusionCharts = require('fusioncharts/core').default;
+</code></pre>
+<div><strong>To include the theme engine extension:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let ThemeEngine = require('fusioncharts/features/theme-engine').default;
+</code></pre>
+<div><strong>To include the theme file:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let Fusion = require('fusioncharts/themes/fusioncharts.fusion');
+</code></pre>
+<div><strong>To include React FusionCharts plugin:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    let ReactFC = require('react-fusioncharts').default;
+</code></pre>
+<div><strong>To add ThemeEngine and Fusion as dependency to the core:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+    ReactFC.fcRoot(FusionCharts, ThemeEngine, Fusion);
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-```shell
-import { FusionChartsModule } from 'angular-fusioncharts';
-```
-
-### Step 5: Import Specific modules:
-
-**PowerCharts**
-
-```shell
-import * as Powercharts from 'fusioncharts/fusioncharts.powercharts'; //PowerCharts
-```
-**FusionWidgets:**
-```shell
+<div class='tab angular2-tab'>
+<div class='tab angular4-tab active'>
+<div class="mt-30"><strong>Step 3:</strong>Import <strong>FusionChartsModule</strong> in `in the root @NgModule` (in your application)</div>
+<pre><code class="custom-hlc language-javascript">
+    import { FusionChartsModule } from 'angular-fusioncharts';
+</code></pre>
+<div class="mt-30"><strong>Step 4:</strong>Import FusionCharts library via npm in `in the root @NgModule`(in your application)</div>
+<pre><code class="custom-hlc language-javascript">
+    import * as FusionCharts from 'fusioncharts';
+</code></pre>
+<div class="mt-30"><strong>Step 5:</strong>Import Specific modules</div>
+<div class="mt-20"><strong>Import Charts</strong></div>
+<pre><code class="custom-hlc language-javascript">
+import * as Charts from 'fusioncharts/fusioncharts.charts';    
+</code></pre>
+<div class="mt-20"><strong>PowerCharts</strong></div>
+<pre><code class="custom-hlc language-javascript">
+import * as PowerCharts from 'fusioncharts/fusioncharts.powercharts'; //PowerCharts
+</code></pre>
+<div class="mt-20"><strong>FusionWidgets</strong></div>
+<pre><code class="custom-hlc language-javascript">
 import * as Widgets from 'fusioncharts/fusioncharts.widgets'; // Widgets
-```
-
-Note: To import specific charts, include the following import statements in your code:
-
-**Gantt Chart:**
-
-```shell
+</code></pre>
+<div class="mt-10"><strong>Note: </strong>To import specific charts, include the following import statements in your code:</div>
+<div class="mt-20"><strong>Gantt Chart</strong></div>
+<pre><code class="custom-hlc language-javascript">
 import * as Gantt from 'fusioncharts/fusioncharts.gantt'; // Gantt
-```
-**Treemap**
-
-```shell
+</code></pre>
+<div class="mt-20"><strong>Treemap</strong></div>
+<pre><code class="custom-hlc language-javascript">
 import * as Treemap from 'fusioncharts/fusioncharts.treemap'; // Treemap
-```
-**Zoomscatter**
+</code></pre>
+<div class="mt-20"><strong>ZoomScatter</strong></div>
+<pre><code class="custom-hlc language-javascript">
+import * as ZoomScatter from 'fusioncharts/fusioncharts.zoomscatter'; //Zoom Scatter
+</code></pre>
+<div class="mt-20"><strong>ZoomLine</strong></div>
+<pre><code class="custom-hlc language-javascript">
+import * as ZoomLine from 'fusioncharts/fusioncharts.zoomline'; //Zoom Line
+</code></pre>
+<div class="mt-20"><strong>Overlapped Bar2D and Column2D Charts</strong></div>
+<pre><code class="custom-hlc language-javascript">
+import * as OverlappedBar2D from 'fusioncharts/fusioncharts.overlapped2d'; //Overlapped Bar 2D
+import * as OverlappedColumn2D from 'fusioncharts/fusioncharts.overlappedcolumn2d'; //Overlapped Column 2D
+</code></pre>
+<div class="mt-30">The above steps completes the installation process. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular '@@open-newtab').</div>
 
-```shell
-import * as Zoomscatter from 'fusioncharts/fusioncharts.zoomscatter'; //Zoom Scatter
-```
-**Zoomline**
-
-```shell
-import * as Zoomline from 'fusioncharts/fusioncharts.zoomline'; //Zoom Line
-```
-**Overlapped Bar2D and Column2D charts**
-
-```shell
-import * as Overlappedbar2d from 'fusioncharts/fusioncharts.overlapped2d'; //Overlapped Bar 2D
-import * as Overlappedcolumn2d from 'fusioncharts/fusioncharts.overlappedcolumn2d'; //Overlapped Column 2D
-```
-
-The above steps completes the installation process. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular '@@open-newtab').
-
-## Include Maps via npm
-
-The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
-
-**Step 1**: Include the core FusionCharts library:
-```shell
- import * as FusionCharts from 'fusioncharts/core';
- ```
- **Step 2:** Load the `FusionMaps` renderer and the map definition file:
-
-```Shell
-import * as FusionCharts from 'fusioncharts/core';
+<h2>Include Maps via npm</h2>
+<div class="mt-30">The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the <strong>World Map</strong>, and the <strong>Map of USA</strong>. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:</div>
+<div class="mt-20"><strong>Step 1: </strong>Include the core FusionCharts library</div>
+<pre><code class="custom-hlc language-javascript">
+import * as FusionCharts from 'fusioncharts';
+</code></pre>
+<div class="mt-20"><strong>Step 2: </strong>Load the `FusionMaps` renderer and the map definition file</div>
+<pre><code class="custom-hlc language-javascript">
+import * as FusionCharts from 'fusioncharts';
 import * as Maps from 'fusioncharts/fusioncharts.maps'; // Maps
-import * as World from 'fusioncharts/maps/es/fusioncharts.world' // World Map
-
-// Add the chart as dependency
-// E.g. FusionCharts.addDep(ChartType)
-FusionCharts.addDep(FusionMaps);
-FusionCharts.addDep(World);
-
-// Create an Instance with map options
-    var salesByState =   new  FusionCharts({
-        type: 'world', // Map type
-        renderAt: 'chart-container', // Container
-        width: '800', // Width of the chart
-        height: '550', // Height of the chart
-        dataFormat: 'json', // Data Type
-        dataSource: {
-        chart: {
-            // Map Configuration
-            "chart": {
-                "caption": "Average Annual Population Growth",
-                "subcaption": " 1955-2015",
-                "numbersuffix": "%",
-                "includevalueinlabels": "1",
-                "labelsepchar": ": ",
-                "entityFillHoverColor": "#FFF9C4",
-                "theme": "fusion"
-            },
-            // Aesthetics; ranges synced with the slider
-            "colorrange": {
-                "minvalue": "0",
-                "code": "#FFE0B2",
-                "gradient": "1",
-                "color": [{
-                    "minvalue": "0.5",
-                    "maxvalue": "1.0",
-                    "color": "#FFD74D"
-                }, {
-                    "minvalue": "1.0",
-                    "maxvalue": "2.0",
-                    "color": "#FB8C00"
-                }, {
-                    "minvalue": "2.0",
-                    "maxvalue": "3.0",
-                    "color": "#E65100"
-                }]
-            },
-            // Source data as JSON --> id represents countries of world.
-            "data": [{
-                "id": "NA",
-                "value": ".82",
-                "showLabel": "1"
-            }, {
-                "id": "SA",
-                "value": "2.04",
-                "showLabel": "1"
-            }, {
-                "id": "AS",
-                "value": "1.78",
-                "showLabel": "1"
-            }, {
-                "id": "EU",
-                "value": ".40",
-                "showLabel": "1"
-            }, {
-                "id": "AF",
-                "value": "2.58",
-                "showLabel": "1"
-            }, {
-                "id": "AU",
-                "value": "1.30",
-                "showLabel": "1"
-            }]
-        }
-    }
-});
-// Render
-chartInstance.render()
-```
-
-**Load other map definition files**
-
-You can use rest of the map definition files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:
-
-
-```Shell
+import * as World from 'fusioncharts/maps/fusioncharts.world' // World Map
+</code></pre>
+<div class="mt-30"><strong>Load other map definition files</strong></div>
+<div class="mt-20">You can use rest of the map definition files other than the <strong>World Map</strong> and the <strong>Map of USA</strong> that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:</div>
+<pre><code class="custom-hlc language-javascript">
 $ npm install fusionmaps
-```
-Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder. 
+</code></pre>
+<div class="mt-20">Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps` folder.</div>
+<div class="mt-20">The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:</div>
+<pre><code class="custom-hlc language-javascript">
+import * as FusionCharts from 'fusioncharts';
+import * as FusionMaps from 'fusioncharts/fusioncharts.maps';
+</code></pre>
+<div class="mt-20">Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: <strong>fusioncharts.&lt;MAP_ALIAS&gt;</strong>.</div>
+<div class="mt-20">Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files.</div>
+<div class="mt-20">Therefore, assuming that you need to render the map of California, the alias name <strong>california</strong> replaces <strong>MAP_ALIAS</strong> in the format. So, the complete format will be `fusioncharts.california`.</div>
+<pre><code class="custom-hlc language-javascript">
+import * as FusionCharts from 'fusioncharts';
+import * as FusionMaps from 'fusioncharts/fusioncharts.maps';
+import * as California from 'fusionmaps/maps/fusioncharts.california';
+</code></pre>
+<div clas="mt-10">It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.</div>
 
-The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:
+<h2>Include Themes via `npm`</h2>
+<div class="mt-30">[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to apply centralized themes to any number of charts.</div>
+<div class="mt-20">In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
+    <ul>
+        <li>Visual appearance (data plot color, font color, font size, etc.)</li>
+        <li>Behavior (hover effects for data plots)</li>
+        <li>Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme).</li>
+    </ul>
+</div>
+<div class="mt-30"><strong>To include themes follow the steps below:</strong></div>
+<div class="mt-20"><strong>Step 1: </strong>Import FusionCharts core library</div>
+<pre><code class="custom-hlc language-javascript">
+import * asFusionCharts from 'fusioncharts'
+</code></pre>
+<div class="mt-20"><strong>Step 2: </strong>Include the theme file</div>
+<pre><code class="custom-hlc language-javascript">
+import FusionTheme from 'fusioncharts/themes/fusioncharts.fusion'
+</code></pre>
+<div class="mt-10">Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').</div>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-```shell
-import * as FusionCharts from 'fusioncharts/core';
-import * as FusionMaps from 'fusioncharts/maps';
-FusionCharts.addDep(FusionMaps);
-```
-Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.  
-
-Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
-
-Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
-
-```shell
-import * as FusionCharts from 'fusioncharts/core';
-import * as FusionMaps from 'fusioncharts/maps';
-import * as California from 'fusionmaps/maps/es/fusioncharts.california';
-FusionCharts.addDep(FusionMaps);
-FusionCharts.addDep(California);
-```
-> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.
-
-## Include Themes via **npm**
-
-[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to apply centralized themes to any number of charts.
-
-In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
-
-* Visual appearance (data plot color, font color, font size, etc.)
-* Behavior (hover effects for data plots)
-* Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme).
-
-To include themes follow the steps below:
-
-**Step 1**: Import FusionCharts core library:
-
-```shell
-import * asFusionCharts from 'fusioncharts/core'
-```
-
-**Step 2**: Import the theme engine
-
-```shell
-import * as ThemeEngine from 'fusioncharts/features/theme-engine';
-FusionCharts.addDep(ThemeEngine);
-```
-
-**Step 3**: Include the theme file:
-
-```shell
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion'
-FusionCharts.addDep(FusionTheme);
-```
-
-> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+</div>
+</div>
