@@ -337,29 +337,15 @@ let jQuery = require('jquery');
 
 ```JavaScript
 let Charts = require('fusioncharts');
-let Charts = require('fusioncharts/fusioncharts.charts');
+let Maps = require('fusioncharts/fusioncharts.maps');
+let World = require('fusioncharts/maps/fusioncharts.world');
 ```
 
+**Include jQuery FusionCharts Helper**
 
-
-</code></pre>
-<div><strong>To include the core map files from maps:</strong></div>
-<pre><code class="custom-hlc language-cv">
-    let Maps = require('fusioncharts/fusioncharts.maps');
-</code></pre>
-<div><strong>To include the map definition file you want to render:</strong></div>
-<pre><code class="custom-hlc language-cv">
-    let World = require('fusioncharts/maps/fusioncharts.world');
-</code></pre>
-<div><strong>To include jQuery FusionCharts plugin:</strong></div>
-<pre><code class="custom-hlc language-cv">
-    let FusionCharts = require('jquery-fusioncharts');
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-</div>
-</div>
+```JavaScript
+let FusionCharts = require('jquery-fusioncharts');
+```
 
 **To add the map and definition as the dependency to the core:**
 
@@ -368,11 +354,40 @@ Maps(FusionCharts);
 World(FusionCharts);
 ```
 
-> If you want to render a map which is not in the fusioncharts package(world and USA), then you need to install **fusionmaps** which contains all the ES6 map definition:
-* `npm install fusionmaps`
-* ES-6 definitions can be found in `node_modules/fusionmaps/maps/fusioncharts.[MAP-ALIAS].js`
+**Load other map definition files**
 
-> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
+You can use rest of the map definition files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:
+
+```PowerShell
+$ npm install fusionmaps
+```
+
+Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder. 
+
+The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:
+
+```JavaScript
+let Charts = require('fusioncharts');
+let Maps = require('fusioncharts/fusioncharts.maps');
+Maps(FusionCharts);
+```
+
+Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.  
+
+Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
+
+Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
+
+
+```JavaScript
+let Charts = require('fusioncharts');
+let Maps = require('fusioncharts/fusioncharts.maps');
+let Maps = require('fusioncharts/maps/fusioncharts.california');
+Maps(FusionCharts);
+California(FusionCharts);
+```
+
+> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.
 
 ### Include Themes via NPM
 
@@ -384,47 +399,31 @@ In a theme file, we can centralize the following aspects of all the charts, gaug
 * Behavior (hover effects for data plots)
 * Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme)
 
-You can include the themes using any of the following process:
+To include themes, follow the steps below:
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-  <li class='active'><a data-toggle='json'>Import</a></li>
-  <li><a data-toggle='xml'>Require</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab json-tab active'>
-<div><strong>To include jQuery:</strong></div>
-<pre><code class="custom-hlc language-cs">
-    import jQuery from 'jquery';
-</code></pre>
-<div><strong>To include the theme file:</strong></div>
-<pre><code class="custom-hlc language-cs">
-    import Fusion from 'fusioncharts/themes/fusioncharts.fusion';
-</code></pre>
-<div><strong>To include jQuery FusionCharts plugin:</strong></div>
-<pre><code class="custom-hlc language-cs">
-    import FusionCharts from 'jquery-fusioncharts';
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
+**Step 1:** Include jQuery helper
 
-<div class='tab xml-tab'>
-<div><strong>To include jQuery:</strong></div>
-<pre><code class="custom-hlc language-cv">
-    let jQuery = require('jquery');
-</code></pre>
-<div><strong>To include the theme file:</strong></div>
-<pre><code class="custom-hlc language-cv">
-    let Fusion = require('fusioncharts/themes/fusioncharts.fusion');
-</code></pre>
-<div><strong>To include jQuery FusionCharts plugin:</strong></div>
-<pre><code class="custom-hlc language-cv">
-    let FusionCharts = require('jquery-fusioncharts');
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
+```JavaScript
+let jQuery = require('jquery');
+```
 
-</div>
-</div>
+**Step 2:** Include the theme engine
+
+```JavaScript
+let Fusion = require('fusioncharts/features/theme-engine');
+```
+
+**Step 3:** Include the theme file
+
+```JavaScript
+let Fusion = require('fusioncharts/themes/fusioncharts.fusion');
+Fusion(FusionCharts);
+```
+
+**Step 4:** Include jQuery FusionCharts Helper
+
+```JavaScript
+let FusionCharts = require('jquery-fusioncharts');
+```
 
 > Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
