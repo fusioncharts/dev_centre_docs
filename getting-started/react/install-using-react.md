@@ -396,7 +396,7 @@ import Maps from 'fusioncharts/maps';
 import World from 'fusioncharts/maps/es/fusioncharts.world';
 ```
 
-**Step 3:** Include Reat FusionCharts plugin
+**Step 3:** Include React FusionCharts plugin
 
 ```JavaScript
 import ReactFC from 'react-fusioncharts';

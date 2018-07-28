@@ -290,42 +290,58 @@ PowerCharts(FusionCharts);
 Widgets(FusionCharts);
 ```
 
-To import specific charts, include the following require statements
+To include specific charts, include the following require statements in your code:
+
+**Gantt Chart**
+
+```JavaScript
+let Gantt = require('fusioncharts/fusioncharts.gantt');
+```
+
+**Treemap**
+
+```JavaScript
+let Treemap = require('fusioncharts/fusioncharts.treemap');
+```
+
+**Zoom Scatter Chart**
+
+```JavaScript
+let ZoomScatter = require('fusioncharts/fusioncharts.zoomscatter');
+```
+
+**Zoomline Chart**
+
+```JavaScript
+let Zoomline = require('fusioncharts/fusioncharts.zoomline');
+```
+
+**Overlapped Bar2D and Column2D Charts**
+
+```JavaScript
+let Overlappedbar2d = require('fusioncharts/fusioncharts.overlappedbar2d');
+let Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');
+```
 
 ## Include Maps via NPM
 
-You an include the map files using any of the following process:
+The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-  <li class='active'><a data-toggle='json'>Import</a></li>
-  <li><a data-toggle='xml'>Require</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab json-tab active'>
-<div><strong>To include jQuery:</strong></div>
-<pre><code class="custom-hlc language-cs">
-    import jQuery from 'jquery';
-</code></pre>
-<div><strong>To include the core map files from maps:</strong></div>
-<pre><code class="custom-hlc language-cs">
-    import Maps from 'fusioncharts/fusioncharts.maps';
-</code></pre>
-<div><strong>To include the map definition file you want to render:</strong></div>
-<pre><code class="custom-hlc language-cs">
-    import World from 'fusioncharts/maps/fusioncharts.world';
-</code></pre>
-<div><strong>To include jQuery FusionCharts plugin:</strong></div>
-<pre><code class="custom-hlc language-cs">
-    import FusionCharts from 'jquery-fusioncharts';
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
+**Include jQuery FusionCharts Helper**
 
-<div class='tab xml-tab'>
-<div><strong>To include jQuery:</strong></div>
-<pre><code class="custom-hlc language-cv">
-    let jQuery = require('jquery');
+```JavaScript
+let jQuery = require('jquery');
+```
+
+**Load the `FusionMaps` renderer and the map definition file**
+
+```JavaScript
+let Charts = require('fusioncharts');
+let Charts = require('fusioncharts/fusioncharts.charts');
+```
+
+
+
 </code></pre>
 <div><strong>To include the core map files from maps:</strong></div>
 <pre><code class="custom-hlc language-cv">
