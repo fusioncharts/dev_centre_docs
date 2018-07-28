@@ -38,13 +38,13 @@ This section outlines the steps to be executed for installing **angular-fusionch
 ### Step 1: Install fusioncharts
 
 ```shell
-npm install fusioncharts --save
+$ npm install fusioncharts --save
 ```
 
 ### Step 2: Install `angular-fusioncharts`:
 
 ```shell
-npm install angular-fusioncharts --save
+$ npm install angular-fusioncharts --save
 ```
 
 ### Step 3: Import FusionCharts library via npm in `app.module.ts`(in your application)
@@ -105,19 +105,126 @@ The above steps completes the installation process. To see how to create a chart
 
 ## Include Maps via npm
 
-FusionCharts can provide more than 1000 maps that cater to all your map visualization requirements. But to keep the library lightweight, by default it ships only with two maps - the **world** map, and the **map of the USA**. To render rest of the maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files. To include the downloaded map definition files, copy the following line of code:
+The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
 
-> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
+**Step 1**: Include the core FusionCharts library:
+```shell
+ import * as FusionCharts from 'fusioncharts/core';
+ ```
+ **Step 2:** Load the `FusionMaps` renderer and the map definition file:
 
 ```Shell
+import * as FusionCharts from 'fusioncharts/core';
 import * as Maps from 'fusioncharts/fusioncharts.maps'; // Maps
+import * as World from 'fusioncharts/maps/es/fusioncharts.world' // World Map
+
+// Add the chart as dependency
+// E.g. FusionCharts.addDep(ChartType)
+FusionCharts.addDep(FusionMaps);
+FusionCharts.addDep(World);
+
+// Create an Instance with map options
+    var salesByState =   new  FusionCharts({
+        type: 'world', // Map type
+        renderAt: 'chart-container', // Container
+        width: '800', // Width of the chart
+        height: '550', // Height of the chart
+        dataFormat: 'json', // Data Type
+        dataSource: {
+        chart: {
+            // Map Configuration
+            "chart": {
+                "caption": "Average Annual Population Growth",
+                "subcaption": " 1955-2015",
+                "numbersuffix": "%",
+                "includevalueinlabels": "1",
+                "labelsepchar": ": ",
+                "entityFillHoverColor": "#FFF9C4",
+                "theme": "fusion"
+            },
+            // Aesthetics; ranges synced with the slider
+            "colorrange": {
+                "minvalue": "0",
+                "code": "#FFE0B2",
+                "gradient": "1",
+                "color": [{
+                    "minvalue": "0.5",
+                    "maxvalue": "1.0",
+                    "color": "#FFD74D"
+                }, {
+                    "minvalue": "1.0",
+                    "maxvalue": "2.0",
+                    "color": "#FB8C00"
+                }, {
+                    "minvalue": "2.0",
+                    "maxvalue": "3.0",
+                    "color": "#E65100"
+                }]
+            },
+            // Source data as JSON --> id represents countries of world.
+            "data": [{
+                "id": "NA",
+                "value": ".82",
+                "showLabel": "1"
+            }, {
+                "id": "SA",
+                "value": "2.04",
+                "showLabel": "1"
+            }, {
+                "id": "AS",
+                "value": "1.78",
+                "showLabel": "1"
+            }, {
+                "id": "EU",
+                "value": ".40",
+                "showLabel": "1"
+            }, {
+                "id": "AF",
+                "value": "2.58",
+                "showLabel": "1"
+            }, {
+                "id": "AU",
+                "value": "1.30",
+                "showLabel": "1"
+            }]
+        }
+    }
+});
+// Render
+chartInstance.render()
 ```
 
-To include the **map definition** file you want to render, copy the following line of code:
+**Load other map definition files**
+
+You can use rest of the map definition files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:
+
 
 ```Shell
-import * as World from 'fusioncharts/maps/fusioncharts.world' // World Map
+$ npm install fusionmaps
 ```
+Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder. 
+
+The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:
+
+```shell
+import * as FusionCharts from 'fusioncharts/core';
+import * as FusionMaps from 'fusioncharts/maps';
+FusionCharts.addDep(FusionMaps);
+```
+Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.  
+
+Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
+
+Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
+
+```shell
+import * as FusionCharts from 'fusioncharts/core';
+import * as FusionMaps from 'fusioncharts/maps';
+import * as California from 'fusionmaps/maps/es/fusioncharts.california';
+FusionCharts.addDep(FusionMaps);
+FusionCharts.addDep(California);
+```
+> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.
 
 ## Include Themes via **npm**
 
@@ -127,48 +234,28 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 
 * Visual appearance (data plot color, font color, font size, etc.)
 * Behavior (hover effects for data plots)
-* Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme)
+* Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme).
 
-The FusionCharts Suite download package also contains the predefined theme files under `fusioncharts-suite-xt > js > themes` folder. The folder structure is shown below:
+To include themes follow the steps below:
 
-![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
+**Step 1**: Import FusionCharts core library:
 
-To include the definition files placed in **fusioncharts/themes**, copy the following line of code:
+```shell
+import * asFusionCharts from 'fusioncharts/core'
+```
 
-```Shell
-import * as Fusion from 'fusioncharts/themes/fusioncharts.theme.fusion';
-import * as Zune from 'fusioncharts/themes/fusioncharts.theme.zune';
-import * as Ocean from 'fusioncharts/themes/fusioncharts.theme.ocean';
-import * as Carbon from 'fusioncharts/themes/fusioncharts.theme.carbon';
+**Step 2**: Import the theme engine
+
+```shell
+import * as ThemeEngine from 'fusioncharts/features/theme-engine';
+FusionCharts.addDep(ThemeEngine);
+```
+
+**Step 3**: Include the theme file:
+
+```shell
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion'
+FusionCharts.addDep(FusionTheme);
 ```
 
 > Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
-
-## Add Dependencies to the Environment
-
-You can add all the dependencies to the angular environment in the main module, i.e., `app.module.ts` using **fcRoot(FusionCharts, [Comma separated dependencies])** function of the FusionCharts module:
-
-```
-FusionChartsModule.fcRoot(FusionCharts, Charts)  // FusionCharts and Charts
-@NgModule({
-    declarations: [
-        AppComponent
-    ],
-    imports: [
-        BrowserModule,
-        FusionChartsModule
-    ],
-    providers: [],
-    bootstrap: [ AppComponent ]
-})
-    export class AppModule {
-}
-```
-
-In the above code, we have added only `Charts` as the dependency to the environment. To add multiple dependencies, such as, Widgets, Maps, etc., include them within `FusionChartsModule.fcRoot(FusionCharts, ...)`. For example:
-
-* `FusionChartsModule.fcRoot(FusionCharts, Charts, Widgets, Fusion)`: To import charts, widgets and themes.
-
-* `FusionChartsModule.fcRoot(FusionCharts, Charts, Widgets, PowerCharts)`: To import charts, widgets and PowerCharts.
-
-* `FusionChartsModule.fcRoot(FusionCharts, Maps, world)`: To import charts, maps and World map.
