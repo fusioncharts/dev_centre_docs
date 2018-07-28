@@ -52,8 +52,6 @@ The folder structure is shown below:
 
 > It is recommended that you copy the JavaScript files of the `jquery` folder from `fusioncharts-suite-xt > integrations > jquery > js` to your project folder.
 
-After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
-
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
 File Name|Description|
@@ -74,7 +72,9 @@ File Name|Description|
 
 Installation of FusionCharts Suite XT is simply copying and pasting the JavaScript files from the downloaded package into your project folder.
 
-**Step 1: Include jQuery core library**
+After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. Creat an HTML file and follow the steps below:
+
+**Step 1:** Include jQuery core library
 
 To include the jQuery library, add the following &lt;script&gt; tag to your html file:
 
@@ -82,7 +82,7 @@ To include the jQuery library, add the following &lt;script&gt; tag to your html
 <script type="text/javascript" src="path/to/local/jquery.min.js"></script>
 ```
 
-**Step 2: Include the FusionCharts package**
+**Step 2:** Include the FusionCharts package
 
 To include the FusionCharts package, add the following &lt;script&gt; tag to your html file:
 
@@ -90,7 +90,7 @@ To include the FusionCharts package, add the following &lt;script&gt; tag to you
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-**Step 3: Include the jQuery-fusioncharts module**
+**Step 3:** Include the jQuery-fusioncharts module
 
 To include the jQuery-fusioncharts module, add the following &lt;script&gt; tag to your html file:
 
@@ -99,6 +99,8 @@ To include the jQuery-fusioncharts module, add the following &lt;script&gt; tag 
 ```
 
 Step 4: Include the theme file
+
+This step is optional, the chart will render with the default theme even if the theme file is not included.
 
 To include `Fusion` theme, add the following &lt;script&gt; tag to your html file:
 
@@ -128,21 +130,41 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ### Installing FusionMaps (map visualizations) for your project
 
-FusionCharts can provide more than 1000 maps that cater to all your map visualization requirements. But to keep the library lightweight, by default it ships only with two maps - the **world** map, and the **map of the USA**. To render rest of the maps, you need to [download](https://www.fusioncharts.com/download/maps/definition/) the map definition files and include them in to your HTML as shown below:
+FusionCharts Suite XT provides over `1000+` data-driven maps under the product FusionMaps. In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions.
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
-```html
-<script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-<script type="text/javascript" src="path/to/local/fusioncharts.world.js"></script>
+To render a map, you need the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files as shown below:
 
-<!-- The next line describes the format for more map definition files -->
-<script type="text/javascript" src="path/to/local/[MAP_ALIAS].js"></script>
+```HTML
+<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+<script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
+<script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+
 ```
 
-The `fusioncharts.world.js` file includes path drawings of the map of **world**.
+In the above example, we’ve included the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
 
-The consolidated code (which also includes the `jquery.js, fusioncharts.js` and `jquery-fusioncharts.js`) looks like as shown below:
+**Load other map definition files**
+
+To use any other map (except world and USA) from the 1000+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where `MAP_ALIAS` represents the country, state or region name.
+
+```
+<!-- The next line describes the format for more map definition files -->
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
+
+```
+
+Therefore, assuming that you need to render the map of **California**, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
+
+```
+<!-- The next line describes the format for more map definition files -->
+<script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"></script>
+
+```
+
+The consolidated code (which also includes the `react.js`, `fusioncharts.js` and `react-fusioncharts.js`) is as shown below:
 
 ```html
 <!DOCTYPE html>
@@ -164,6 +186,8 @@ The consolidated code (which also includes the `jquery.js, fusioncharts.js` and 
     </head>
 </html>
 ```
+
+> Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
 ### Themes
 
@@ -190,35 +214,35 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 
 ## Install FusionCharts via npm
 
-Now, let's discuss how to install the fusioncharts module via npm. The fusioncharts package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
+The `fusioncharts` package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
 
 This section outlines the steps to be executed for installing all the node modules via NPM and rendering charts using the FusionCharts jQuery helpers.
 
-**Step 1: Install the fusioncharts module via npm**
+**Step 1:** Install the `FusionCharts` package
 
-To install the `fusioncharts` module, execute the following command in the terminal:
+To install the `fusioncharts` package via npm, run the command below:
 
-```Shell
-npm install fusioncharts --save
+```PowerShell
+$ npm install fusioncharts --save
 ```
 
-**Step 2: Install the `jquery-fusioncharts` module via npm**
+**Step 2:** Install the `jquery-fusioncharts` module
 
-To install the `jquery-fusioncharts` module, execute the following command in the terminal:
+To install the `jquery-fusioncharts` module via npm, run the command below:
 
-```Shell
-npm install jquery-fusioncharts --save
+```PowerShell
+$ npm install jquery-fusioncharts --save
 ```
 
-You can also combine the above commands in a single line, as shown below:
+You can also combine the above commands (to install `fusioncharts` and `jquery-fusioncharts`) in a single line, as shown below:
 
-```Shell
+```PowerShell
 npm install fusioncharts jquery-fusioncharts --save
 ```
 
-**Step 3: Include the fusioncharts module**
+**Step 3: Include the `fusioncharts` module**
 
-Once the installation is done, you need to register the `fusioncharts` module. You can register in multiple ways as per your requirement like:
+Once the installation is done, you need to register the `fusioncharts` module. You can register by following the steps given below:
 
 **Register using all charts:**
 
