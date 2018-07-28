@@ -61,13 +61,14 @@ import * as FusionCharts from 'fusioncharts';
 import { FusionChartsModule } from 'angular-fusioncharts';
 ```
 
-### Step 5: Import PowerCharts module:
+### Step 5: Import Specific modules:
 
+**PowerCharts**
 
 ```shell
 import * as Powercharts from 'fusioncharts/fusioncharts.powercharts'; //PowerCharts
 ```
-**Import FusionWidgets module:
+**FusionWidgets:**
 ```shell
 import * as Widgets from 'fusioncharts/fusioncharts.widgets'; // Widgets
 ```
@@ -94,7 +95,7 @@ import * as Zoomscatter from 'fusioncharts/fusioncharts.zoomscatter'; //Zoom Sca
 ```shell
 import * as Zoomline from 'fusioncharts/fusioncharts.zoomline'; //Zoom Line
 ```
-**Overlapped Bar2D and Column2D charts
+**Overlapped Bar2D and Column2D charts**
 
 ```shell
 import * as Overlappedbar2d from 'fusioncharts/fusioncharts.overlapped2d'; //Overlapped Bar 2D
