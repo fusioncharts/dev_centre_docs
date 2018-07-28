@@ -139,37 +139,37 @@ import \* as FusionCharts from 'fusioncharts';
 <div class="mt-30"><strong>Step 5: </strong>Import Specific modules</div>
 <div class="mt-20"><strong>Import Charts</strong></div>
 <pre><code class="custom-hlc language-javascript">
-import * as Charts from 'fusioncharts/fusioncharts.charts';    
+import \* as Charts from 'fusioncharts/fusioncharts.charts';    
 </code></pre>
 <div class="mt-20"><strong>PowerCharts</strong></div>
 <pre><code class="custom-hlc language-javascript">
-import * as PowerCharts from 'fusioncharts/fusioncharts.powercharts'; //PowerCharts
+import \* as PowerCharts from 'fusioncharts/fusioncharts.powercharts';
 </code></pre>
 <div class="mt-20"><strong>FusionWidgets</strong></div>
 <pre><code class="custom-hlc language-javascript">
-import * as Widgets from 'fusioncharts/fusioncharts.widgets'; // Widgets
+import \* as Widgets from 'fusioncharts/fusioncharts.widgets'; // Widgets
 </code></pre>
 <div class="mt-10"><strong>Note: </strong>To import specific charts, include the following import statements in your code:</div>
 <div class="mt-20"><strong>Gantt Chart</strong></div>
 <pre><code class="custom-hlc language-javascript">
-import * as Gantt from 'fusioncharts/fusioncharts.gantt'; // Gantt
+import \* as Gantt from 'fusioncharts/fusioncharts.gantt'; // Gantt
 </code></pre>
 <div class="mt-20"><strong>Treemap</strong></div>
 <pre><code class="custom-hlc language-javascript">
-import * as Treemap from 'fusioncharts/fusioncharts.treemap'; // Treemap
+import \* as Treemap from 'fusioncharts/fusioncharts.treemap'; // Treemap
 </code></pre>
 <div class="mt-20"><strong>ZoomScatter</strong></div>
 <pre><code class="custom-hlc language-javascript">
-import * as ZoomScatter from 'fusioncharts/fusioncharts.zoomscatter'; //Zoom Scatter
+import \* as ZoomScatter from 'fusioncharts/fusioncharts.zoomscatter'; //Zoom Scatter
 </code></pre>
 <div class="mt-20"><strong>ZoomLine</strong></div>
 <pre><code class="custom-hlc language-javascript">
-import * as ZoomLine from 'fusioncharts/fusioncharts.zoomline'; //Zoom Line
+import \* as ZoomLine from 'fusioncharts/fusioncharts.zoomline'; //Zoom Line
 </code></pre>
 <div class="mt-20"><strong>Overlapped Bar2D and Column2D Charts</strong></div>
 <pre><code class="custom-hlc language-javascript">
-import * as OverlappedBar2D from 'fusioncharts/fusioncharts.overlapped2d'; //Overlapped Bar 2D
-import * as OverlappedColumn2D from 'fusioncharts/fusioncharts.overlappedcolumn2d'; //Overlapped Column 2D
+import \* as OverlappedBar2D from 'fusioncharts/fusioncharts.overlapped2d'; //Overlapped Bar 2D
+import \* as OverlappedColumn2D from 'fusioncharts/fusioncharts.overlappedcolumn2d'; //Overlapped Column 2D
 </code></pre>
 <div class="mt-30">The above steps completes the installation process. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular '@@open-newtab').</div>
 
@@ -177,13 +177,13 @@ import * as OverlappedColumn2D from 'fusioncharts/fusioncharts.overlappedcolumn2
 <div class="mt-30">The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the <strong>World Map</strong>, and the <strong>Map of USA</strong>. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:</div>
 <div class="mt-20"><strong>Step 1: </strong>Include the core FusionCharts library</div>
 <pre><code class="custom-hlc language-javascript">
-import * as FusionCharts from 'fusioncharts';
+import \* as FusionCharts from 'fusioncharts';
 </code></pre>
 <div class="mt-20"><strong>Step 2: </strong>Load the `FusionMaps` renderer and the map definition file</div>
 <pre><code class="custom-hlc language-javascript">
-import * as FusionCharts from 'fusioncharts';
-import * as Maps from 'fusioncharts/fusioncharts.maps'; // Maps
-import * as World from 'fusioncharts/maps/fusioncharts.world' // World Map
+import \* as FusionCharts from 'fusioncharts';
+import \* as Maps from 'fusioncharts/fusioncharts.maps'; // Maps
+import \* as World from 'fusioncharts/maps/fusioncharts.world' // World Map
 </code></pre>
 <div class="mt-30"><strong>Load other map definition files</strong></div>
 <div class="mt-20">You can use rest of the map definition files other than the <strong>World Map</strong> and the <strong>Map of USA</strong> that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:</div>
@@ -193,16 +193,16 @@ $ npm install fusionmaps
 <div class="mt-20">Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps` folder.</div>
 <div class="mt-20">The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:</div>
 <pre><code class="custom-hlc language-javascript">
-import * as FusionCharts from 'fusioncharts';
-import * as FusionMaps from 'fusioncharts/fusioncharts.maps';
+import \* as FusionCharts from 'fusioncharts';
+import \* as FusionMaps from 'fusioncharts/fusioncharts.maps';
 </code></pre>
 <div class="mt-20">Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: <strong>fusioncharts.&lt;MAP_ALIAS&gt;</strong>.</div>
 <div class="mt-20">Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files.</div>
 <div class="mt-20">Therefore, assuming that you need to render the map of California, the alias name <strong>california</strong> replaces <strong>MAP_ALIAS</strong> in the format. So, the complete format will be `fusioncharts.california`.</div>
 <pre><code class="custom-hlc language-javascript">
-import * as FusionCharts from 'fusioncharts';
-import * as FusionMaps from 'fusioncharts/fusioncharts.maps';
-import * as California from 'fusionmaps/maps/fusioncharts.california';
+import \* as FusionCharts from 'fusioncharts';
+import \* as FusionMaps from 'fusioncharts/fusioncharts.maps';
+import \* as California from 'fusionmaps/maps/fusioncharts.california';
 </code></pre>
 <div clas="mt-10">It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.</div>
 
@@ -218,7 +218,7 @@ import * as California from 'fusionmaps/maps/fusioncharts.california';
 <div class="mt-30"><strong>To include themes follow the steps below:</strong></div>
 <div class="mt-20"><strong>Step 1: </strong>Import FusionCharts core library</div>
 <pre><code class="custom-hlc language-javascript">
-import * as FusionCharts from 'fusioncharts'
+import \* as FusionCharts from 'fusioncharts'
 </code></pre>
 <div class="mt-20"><strong>Step 2: </strong>Include the theme file</div>
 <pre><code class="custom-hlc language-javascript">
