@@ -106,21 +106,25 @@ The code to render a chart using **require** is given below:
 
 ```javascript
 var jQuery = require('jquery');
-var FusionCharts = require('jquery-fusioncharts');
+var FusionCharts = require('fusioncharts');
+var jqueryFusionCharts = require('jquery-fusioncharts');
 // Load charts module to render Column2D chart
 var Charts = require('fusioncharts/fusioncharts.charts');
+// Include Fusion theme
+var FusionTheme = require('fusioncharts/theme/fusioncharts.fusion');
 
 jQuery('document').ready(function() {
     // Once the window with a document is ready, execute the Chart module
     // and pass FusionCharts as a dependency
     Charts(FusionCharts);
+    FusionTheme(FusionCharts);
 
     // Render the chart using `insertFusionCharts` method
-    jQuery("#chart-container").insertFusionCharts({
-        type: "column2d",
-        width: "500",
-        height: "300",
-        dataFormat: "json",
+    jQuery('#chart-container').insertFusionCharts({
+        type: 'column2d',
+        width: '700',
+        height: '400',
+        dataFormat: 'json',
         dataSource: {
             // Chart Configuration
             "chart": {
@@ -245,21 +249,25 @@ The code to render a chart using **require** is given below:
 
 ```javascript
 var jQuery = require('jquery');
-var FusionCharts = require('jquery-fusioncharts');
+var FusionCharts = require('fusioncharts');
+var jQueryFusionCharts = require('jquery-fusioncharts');
 // Load charts module to render Column2D chart
 var Charts = require('fusioncharts/fusioncharts.charts');
+// Include Fusion theme
+var FusionTheme = require('fusioncharts/theme/fusioncharts.fusion');
  
 jQuery('document').ready(function() {
     // Once the window with a document is ready, execute the Chart module
     // and pass FusionCharts as a dependency
     Charts(FusionCharts);
+    FusionTheme(FusionCharts);
  
     // Render the chart using `insertFusionCharts` method
-    jQuery("#chart-container").insertFusionCharts({
-        type: "angulargauge",
-        width: "500",
-        height: "300",
-        dataFormat: "json",
+    jQuery('#chart-container').insertFusionCharts({
+        type: 'angulargauge',
+        width: '450',
+        height: '250',
+        dataFormat: 'json',
         dataSource: {
             // Chart Configuration
             "chart": {
@@ -396,21 +404,27 @@ The code to render a chart using **require** is given below:
 
 ```javascript
 var jQuery = require('jquery');
-var FusionCharts = require('jquery-fusioncharts');
-// Load charts module to render Column2D chart
-var Charts = require('fusioncharts/fusioncharts.charts');
- 
+var FusionCharts = require('fusioncharts');
+var jQueryFusionCharts = require('jquery-fusioncharts');
+// Load map renderer and map definition to render World Map
+var FusionMaps = require('fusioncharts/fusioncharts.maps');
+var World = require('fusioncharts/maps/fusioncharts.world');
+// Include Fusion theme
+var FusionTheme = require('fusioncharts/theme/fusioncharts.fusion');
+
 jQuery('document').ready(function() {
     // Once the window with a document is ready, execute the Chart module
     // and pass FusionCharts as a dependency
-    Charts(FusionCharts);
+    FusionMaps(FusionCharts);
+    World(FusionCharts);
+    FusionTheme(FusionCharts);
  
     // Render the chart using `insertFusionCharts` method
-    jQuery("#chart-container").insertFusionCharts({
-        type: "world",
-        width: "500",
-        height: "300",
-        dataFormat: "json",
+    jQuery('#chart-container').insertFusionCharts({
+        type: 'world',
+        width: '800',
+        height: '550',
+        dataFormat: 'json',
         dataSource: {
             // Map Configuration
             "chart": {

@@ -39,7 +39,7 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
+> It is recommended that you copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
 * The download package also contains files of the `Vue-FusionCharts` wrapper under `fusioncharts-suite-xt > integrations > vue` folder.
 
@@ -47,7 +47,7 @@ The folder structure is shown below:
 
 ![Vue Js Folder]({% site.baseurl %}/gif/vue-folder-structure.gif)
 
-Both the minified (compressed) and source (uncompressed) copies of Vue files are available in the folder. The uncompressed file `vue-fusioncharts.js` is used during development or debugging, whereas the compressed file `vue-fusioncharts.min.js` saves bandwidth and improves performance in production. The folder also contains the sourcemap file `vue-fusioncharts.js.map` for use, when debugging with a compressed file.
+Both the minified (compressed) and source (uncompressed) copies of Vue files are available in the folder. The uncompressed file `vue-fusioncharts.js` is used during development or debugging, whereas the compressed file `vue-fusioncharts.min.js` saves bandwidth and improves performance in production. The folder also contains the source map file `vue-fusioncharts.js.map` for use, when debugging with a compressed file.
 
 > The `vue` folder in the FusionCharts Suite XT package is available from v3.13.0.
 

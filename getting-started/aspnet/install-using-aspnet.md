@@ -28,7 +28,7 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
+> It is recommended that you copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
 * The download package also contains ASP.NET (VB and C#) wrapper under `fusioncharts-suite-xt > integrations > asp.net-vb` and `asp.net-cs` folder respectively.
 

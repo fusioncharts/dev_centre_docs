@@ -42,11 +42,13 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
+> It is recommended that you copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
 * The download package also contains **jquery-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > jquery` folder. The folder structure is shown below:
 
 ![jQuery Js Folder]({% site.baseurl %}/gif/jquery-folder-structure.gif)
+
+Both the minified (compressed) and source (uncompressed) copies of jQuery files are available in the folder. The uncompressed file `jquery-fusioncharts.js` is used during development or debugging, whereas the compressed file `jquery-fusioncharts.min.js` saves bandwidth and improves performance in production. The folder also contains the source map file `jquery-fusioncharts.js.map` for use, when debugging with a compressed file.
 
 > The `jquery` folder in the FusionCharts Suite XT package is available from v3.13.0. 
 
@@ -74,9 +76,9 @@ Installation of FusionCharts Suite XT is simply copying and pasting the JavaScri
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. Creat an HTML file and follow the steps below:
 
-**Step 1:** Include jQuery core library
+**Step 1:** Include [jQuery](https://jquery.com '@@open-newtab') core library
 
-To include the jQuery library, add the following &lt;script&gt; tag to your html file:
+Download the jQuery library from [here](https://jquery.com/download/ '@@open-newtab') and include it in your project by adding the following &lt;script&gt; tag to your html file:
 
 ```html
 <script type="text/javascript" src="path/to/local/jquery.min.js"></script>
@@ -90,9 +92,9 @@ To include the FusionCharts package, add the following &lt;script&gt; tag to you
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-**Step 3:** Include the jQuery-fusioncharts module
+**Step 3:** Include the `jquery-fusioncharts` module
 
-To include the jQuery-fusioncharts module, add the following &lt;script&gt; tag to your html file:
+To include the `jquery-fusioncharts` module, add the following &lt;script&gt; tag to your html file:
 
 ```html
 <script type="text/javascript" src="path/to/local/jquery-fusioncharts.js"></script>
@@ -166,7 +168,7 @@ Therefore, assuming that you need to render the map of **California**, the alias
 
 ```
 
-The consolidated code (which also includes the `react.js`, `fusioncharts.js` and `react-fusioncharts.js`) is as shown below:
+The consolidated code (which also includes the `jquery.min.js`, `fusioncharts.js` and `jquery-fusioncharts.js`) is as shown below:
 
 ```html
 <!DOCTYPE html>
@@ -180,6 +182,7 @@ The consolidated code (which also includes the `react.js`, `fusioncharts.js` and
         <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
         <!-- jQuery-FusionCharts -->
         <script type="text/javascript" src="path/to/local/jquery-fusioncharts.js"></script>
+        <!-- Fusion Theme -->
         <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
         <!-- FusionMaps -->
         <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
@@ -220,20 +223,20 @@ The `fusioncharts` package contains files for all charts and widgets and only tw
 
 This section outlines the steps to be executed for installing all the node modules via NPM and rendering charts using the FusionCharts jQuery helpers.
 
-**Step 1:** Install the `FusionCharts` package
-
-To install the `fusioncharts` package via npm, run the command below:
-
-```PowerShell
-$ npm install fusioncharts --save
-```
-
-**Step 2:** Install the `jquery-fusioncharts` module
+**Step 1:** Install the `jquery-fusioncharts` package
 
 To install the `jquery-fusioncharts` module via npm, run the command below:
 
 ```PowerShell
 $ npm install jquery-fusioncharts --save
+```
+
+**Step 2:** Install the `fusioncharts` package
+
+To install the `fusioncharts` package via npm, run the command below:
+
+```PowerShell
+$ npm install fusioncharts --save
 ```
 
 You can also combine the above commands (to install `fusioncharts` and `jquery-fusioncharts`) in a single line, as shown below:
@@ -248,44 +251,44 @@ Once the installation is done, you need to register the `fusioncharts` module. Y
 
 **Register using all charts:**
 
-You can include the fusioncharts class and jquery-fusioncharts module using any of the following process:
+You can include the fusioncharts class and `jquery-fusioncharts` module using any of the following process:
 
 **Include jQuery FusionCharts Helper**
 
 ```JavaScript
-let jQuery = require('jquery');
+var jQuery = require('jquery');
 ```
 
 **Include all charts from FusionCharts**
 
 ```JavaScript
-let Charts = require('fusioncharts');
-let Charts = require('fusioncharts/fusioncharts.charts');
+var FusionCharts = require('fusioncharts');
+var Charts = require('fusioncharts/fusioncharts.charts');
 ```
 
 **Include PowerCharts**
 
 ```JavaScript
 // For PowerCharts
-let PowerCharts = require('fusioncharts/fusioncharts.powercharts');
+var PowerCharts = require('fusioncharts/fusioncharts.powercharts');
 ```
 
 **Include FusionWidgets**
 
 ```JavaScript
 // For Widgets
-let Widgets = require('fusioncharts/fusioncharts.widgets');
+var Widgets = require('fusioncharts/fusioncharts.widgets');
 ```
 
 **Include jQuery FusionCharts plugin**
 
 ```JavaScript
-let FusionCharts = require('jquery-fusioncharts');
+var jQueryFusionCharts = require('jquery-fusioncharts');
 ```
 
 **Add charts, powercharts and widgets dependencies:**
 
-```
+```JavaScript
 // [Module](FusionCharts);
 Charts(FusionCharts);
 PowerCharts(FusionCharts);
@@ -297,32 +300,32 @@ To include specific charts, include the following require statements in your cod
 **Gantt Chart**
 
 ```JavaScript
-let Gantt = require('fusioncharts/fusioncharts.gantt');
+var Gantt = require('fusioncharts/fusioncharts.gantt');
 ```
 
 **Treemap**
 
 ```JavaScript
-let Treemap = require('fusioncharts/fusioncharts.treemap');
+var Treemap = require('fusioncharts/fusioncharts.treemap');
 ```
 
 **Zoom Scatter Chart**
 
 ```JavaScript
-let ZoomScatter = require('fusioncharts/fusioncharts.zoomscatter');
+var ZoomScatter = require('fusioncharts/fusioncharts.zoomscatter');
 ```
 
 **ZoomLine Chart**
 
 ```JavaScript
-let ZoomLine = require('fusioncharts/fusioncharts.zoomline');
+var ZoomLine = require('fusioncharts/fusioncharts.zoomline');
 ```
 
 **Overlapped Bar2D and Column2D Charts**
 
 ```JavaScript
-let OverlappedBar2D = require('fusioncharts/fusioncharts.overlappedbar2d');
-let OverlappedColumn2D = require('fusioncharts/fusioncharts.overlappedcolumn2d');
+var OverlappedBar2D = require('fusioncharts/fusioncharts.overlappedbar2d');
+var OverlappedColumn2D = require('fusioncharts/fusioncharts.overlappedcolumn2d');
 ```
 
 ## Include Maps via NPM
@@ -332,27 +335,27 @@ The `fusioncharts` package contains only two map definitions in `fusioncharts/ma
 **Include jQuery FusionCharts Helper**
 
 ```JavaScript
-let jQuery = require('jquery');
+var jQuery = require('jquery');
 ```
 
 **Load the `FusionMaps` renderer and the map definition file**
 
 ```JavaScript
-let Charts = require('fusioncharts');
-let Maps = require('fusioncharts/fusioncharts.maps');
-let World = require('fusioncharts/maps/fusioncharts.world');
+var Charts = require('fusioncharts');
+var FusionMaps = require('fusioncharts/fusioncharts.maps');
+var World = require('fusioncharts/maps/fusioncharts.world');
 ```
 
 **Include jQuery FusionCharts Helper**
 
 ```JavaScript
-let FusionCharts = require('jquery-fusioncharts');
+var jQueryFusionCharts = require('jquery-fusioncharts');
 ```
 
 **To add the map and definition as the dependency to the core:**
 
 ```
-Maps(FusionCharts);
+FusionMaps(FusionCharts);
 World(FusionCharts);
 ```
 
@@ -369,8 +372,8 @@ Once the fusionmaps package is installed you will find all the map definition fi
 The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:
 
 ```JavaScript
-let Charts = require('fusioncharts');
-let Maps = require('fusioncharts/fusioncharts.maps');
+var Charts = require('fusioncharts');
+var FusionMaps = require('fusioncharts/fusioncharts.maps');
 Maps(FusionCharts);
 ```
 
@@ -382,10 +385,10 @@ Therefore, assuming that you need to render the map of California, the alias nam
 
 
 ```JavaScript
-let Charts = require('fusioncharts');
-let Maps = require('fusioncharts/fusioncharts.maps');
-let Maps = require('fusioncharts/maps/fusioncharts.california');
-Maps(FusionCharts);
+var Charts = require('fusioncharts');
+var FusionMaps = require('fusioncharts/fusioncharts.maps');
+var California = require('fusioncharts/maps/fusioncharts.california');
+FusionMaps(FusionCharts);
 California(FusionCharts);
 ```
 
@@ -406,20 +409,20 @@ To include themes, follow the steps below:
 **Step 1:** Include jQuery helper
 
 ```JavaScript
-let jQuery = require('jquery');
+var jQuery = require('jquery');
 ```
 
 **Step 2:** Include the theme file
 
 ```JavaScript
-let Fusion = require('fusioncharts/themes/fusioncharts.fusion');
-Fusion(FusionCharts);
+var FusionTheme = require('fusioncharts/themes/fusioncharts.fusion');
+FusionTheme(FusionCharts);
 ```
 
-**Step 4:** Include jQuery FusionCharts Helper
+**Step 3:** Include jQuery FusionCharts Helper
 
 ```JavaScript
-let FusionCharts = require('jquery-fusioncharts');
+var jQueryFusionCharts = require('jquery-fusioncharts');
 ```
 
 > Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
