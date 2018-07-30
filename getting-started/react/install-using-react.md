@@ -214,190 +214,66 @@ The `fusioncharts` package contains files for all charts and widgets and only tw
 
 This section outlines the steps to be executed for installing all the node modules via npm and rendering charts using **react-fusioncharts** component.
 
-**Step 1:** Install `fusioncharts` package
-
-To install the `fusioncharts` package via npm, run the command below:
-
-```PowerShell
-$ npm install fusioncharts --save
-```
-
-**Step 2:** Install the `react-fusioncharts` module
-
-To install the react-fusioncharts module via npm, run the command below:
+**Step 1:** Install the `react-fusioncharts` module:
 
 ```PowerShell
 $ npm install react-fusioncharts --save
 ```
 
-You can also combine the above commands (to install `fusioncharts` and `react-fusioncharts`) in a single line, as shown below:
+**Step 2:** Install `fusioncharts` package:
 
 ```PowerShell
-$ npm install fusioncharts react-fusioncharts --save
+$ npm install fusioncharts --save
 ```
+**Step 3:** Include the `fusioncharts` library:
 
-**Step 3:** Include the `fusioncharts` module
-
-Once the installation is done, you need to register the `fusioncharts` module. You can register by following the steps given below:
-
-### Register using all charts
-
-You can include the fusioncharts class and React FusionCharts plugin using the following process:
-
-**React FusionCharts plugin:**
-
-```JavaScript
-import ReactFC from 'react-fusioncharts';
 ```
-
-**FusionCharts class:**
-
-```JavaSript
-import FusionCharts from 'fusioncharts';
-import Charts from 'fusioncharts/fusioncharts.charts';
-```
-
-**PowerCharts:**
-
-```JavaScript
-// For PowerCharts
-import PowerCharts from 'fusioncharts/fusioncharts.powercharts';
-```
-
-**FusionWidgets**
-
-```JavaScript
-// For Widgets 
-import Widgets from 'fusioncharts/fusioncharts.widgets';
-```
-
-**To add chart (charts, powercharts, widgets) dependencies:
-
-```JavaScript
-// ReactFC.fcRoot(FusionCharts, Charts, [Module]);
-ReactFC.fcRoot(FusionCharts, Charts, PowerCharts, Widgets);
-```
-
-To import specific charts, include the following import statements in your code:
-
-**Gantt Chart**
-
-```JavaScript
-import Gantt from 'fusioncharts/fusioncharts.gantt';
-```
-
-**Treemap**
-
-```JavaScript
-import Treemap from 'fusioncharts/fusioncharts.treemap';
-```
-
-**Zoom Scatter Chart**
-
-```JavaScript
-import ZoomScatter from 'fusioncharts/fusioncharts.zoomscatter';
-```
-
-**ZoomLine Chart**
-
-```JavaScript
-import ZoomLine from 'fusioncharts/fusioncharts.zoomline';
-```
-
-**Overlapped Bar2D and Column2D Charts**
-
-```JavaScript
-import OverlappedBar2D from 'fusioncharts/fusioncharts.overlappedbar2d';
-import OverlappedColumn2D from 'fusioncharts/fusioncharts.overlappedcolumn2d';
-```
-
-### Include only specific modules
-
-To register using a specific chart type you have to:
-
-* Import the `fusioncharts` class and then the specific chart (instead of all the charts). 
-* Add the dependency for the specific chart type.
-
-Refer to the code below:
-
-**Include the `fusioncharts` class:**
-
-```JavaScript
 import FusionCharts from 'fusioncharts/core';
+
 ```
-
-**Include the specific chart from `viz` folder:**
-
-```Javascript
-// import ChartType from 'fusioncharts/viz/[ChartType]';
-import Column2D from 'fusioncharts/viz/column2d';
-```
-
-**Include React FusionCharts plugin:**
+**Step 4**: Include `React-FusionCharts`:
 
 ```JavaScript
 import ReactFC from 'react-fusioncharts';
 ```
 
-**Add Chart Dependency**
-
-```JavaScript
-// ReactFC.fcRoot(FusionCharts, [ChartType]);
-ReactFC.fcRoot(FusionCharts, Column2D);
+**Step 5** : Include specific modules:
 ```
-
-### Register using multiple chart types
-
-To register using multiple chart types, import the specific charts instead of all the charts after importing the `fusioncharts` class. Also, you need to add the dependencies for all the specific chart types as shown in the code below:
-
-**Include the `fusioncharts` class:**
-
-```JavaScript
-import FusionCharts from 'fusioncharts/core';
-```
-
-**Include the specific chart from `viz` folder:**
-
-```JavaScript
+// E.g. - import ChartType from fusioncharts/viz/[ChartType]
 import Column2D from 'fusioncharts/viz/column2d';
-import AngularGauge from 'fusioncharts/viz/angulargauge';
-```
 
-**Include React FusionCharts plugin:**
-
-```JavaScript
-import ReactFC from 'react-fusioncharts';
-```
-
-**Add Chart Dependency:**
-
-```JavaScript
-// ReactFC.fcRoot(FusionCharts, [ChartType]);
-ReactFC.fcRoot(FusionCharts, Column2D, AngularGauge);
+/ Add the chart as dependency
+    // E.g. FusionCharts.addDep(ChartType)
+    FusionCharts.addDep(Column2D);
 ```
 
 ## Include Maps via npm
 
 The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
 
-**Step 1:** Include the core FusionCharts library
+**Step 1:** Include React FusionCharts plugin
+
+```JavaScript
+import ReactFC from 'react-fusioncharts';
+```
+
+**Step 2:** Include the core FusionCharts library
 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core';
 ```
 
-**Step 2:** Load the `FusionMaps` renderer and the map definition file
+**Step 3:** Load the `FusionMaps` renderer and the map definition file
 
 ```JavaScript
-import FusionCharts from 'fusioncharts';
-import Maps from 'fusioncharts/maps';
-import World from 'fusioncharts/maps/es/fusioncharts.world';
-```
+import FusionCharts from 'fusioncharts/core';
+    import FusionMaps from 'fusioncharts/maps';
+    import World from 'fusioncharts/maps/es/fusioncharts.world';
 
-**Step 3:** Include React FusionCharts plugin
-
-```JavaScript
-import ReactFC from 'react-fusioncharts';
+    // Add the map as dependency
+    // E.g. FusionCharts.addDep(ChartType)
+    FusionCharts.addDep(FusionMaps);
+    FusionCharts.addDep(World);
 ```
 
 **Step 4:** Add the map and definition as the dependency to the core
@@ -470,7 +346,7 @@ import ThemeEngine from 'fusioncharts/features/theme-engine';
 **Step 3:** Import the theme file
 
 ```JavaScript
-import Fusion from 'fusioncharts/themes/fusioncharts.fusion';
+import Fusion from 'fusioncharts/themes/es/fusioncharts.fusion';
 ```
 
 **Step 4:** Add ThemeEngine and Fusion as dependency to the core

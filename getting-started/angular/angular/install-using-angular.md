@@ -72,7 +72,7 @@ import Column2D from 'fusioncharts/viz/column2d';
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 <div class='tab angular2-tab'>
-<div class="mt-30"><strong>Step 1: </strong>Import <strong>FusionChartsModule</strong> in the root `@NgModule` (in your application)</div>
+<div class="mt-30"><strong>Step 1: </strong>Import <strong>FusionCharts Module</strong> in the root `@NgModule` (in your application)</div>
 <pre><code class="custom-hlc language-javascript">
 import { FusionChartsModule } from 'angular-fusioncharts';
 </code></pre>
