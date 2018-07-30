@@ -104,9 +104,9 @@ Functional attributes let you control a variety of functional elements on the ch
 
 Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click [here]({% site.baseurl %}/chart-attributes/?chart=area2d).
 
-### Create an instance of the chart
+### Render the Chart
 
-In this step, we will create an instance of the chart type as `column2d`, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
+In this step, we will set the chart type as `column2d`, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
 
 First, store the configurations as JSON object in a variable as below:
 
@@ -261,9 +261,9 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-### Create an instance of the gauge
+### Render the Gauge
 
-In this step, we will create an instance of the chart type as `angulargauge`, set the **width** and **height** (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will set the chart type as `angulargauge`, set the **width** and **height** (in pixels or %), and finally specify the JSON data for the chart as string.
 
 ```javascript
 var chartConfigs = {
@@ -396,9 +396,9 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-### Create an instance of the map
+### Render a Map
 
-In this step, we will create an instance of the map type as WORLD, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will set the map type as WORLD, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
 
 ```json
 var chartConfigs = {

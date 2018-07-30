@@ -125,20 +125,13 @@ Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open
 
 The consolidated code looks like as shown below:
 
-```
-<head>
-    <meta charset="utf-8">
-    <title>FusionCharts</title>
-    <!-- FusionCharts -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-    <!-- FusionMaps -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-    <!--world -->
-    <script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"></script>
-    <script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-    <!--FusionCharts PHP Wrapper -->
-    <script type="text/JavaScript" src="path/to/local/fusioncharts.php"></script>
-</head>
+```HTML
+<!DOCTYPE html>
+<?php
+    /* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.*/
+    include("../includes/fusioncharts.php");
+?>
+<html>
 ```
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-map-10 '@@open-newtab').
