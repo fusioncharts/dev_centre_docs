@@ -241,14 +241,31 @@ import Column2D from 'fusioncharts/viz/column2d';
 
 **Globally**
 
+In your JavaScript code, use the `Vue.use()` method to register the vue-fusioncharts component globally. Registering the component globally allows you to use them in the template of any root Vue instance created after registration.
+
 ```JavaScript
 Vue.use(VueFusionCharts, FusionCharts, Column2D);
 ```
 
 **Locally**
 
+Registering components globally ensures that even if you want to stop using that component, it will be a part of your final build. This results in an increase in JavaScript code that the users have to download. To avoid bloated code, we recommend registering the component locally.
+
+In your JavaScript code, use the `Vue.component()` method to register the vue-fusioncharts component locally. To register locally, use `Vue.component()` instead of `Vue.use()`, the rest of the code remains same. Refer to the code below:
+
 ```JavaScript
 Vue.component('fusioncharts', VueFusionCharts, FusionCharts, Column2D);
+```
+
+The consolidated code looks like as shown below:
+
+```JavaScript
+import Vue from 'vue';
+import VueFusionCharts from 'vue-fusioncharts';
+import FusionCharts from 'fusioncharts/core';
+import Column2D from 'fusioncharts/viz/column2d';
+Vue.use(VueFusionCharts, FusionCharts, Column2D); // Globally
+Vue.component('fusioncharts', VueFusionCharts, FusionCharts, Column2D); //Locally
 ```
 
 ### Include Maps via npm
@@ -304,16 +321,31 @@ Register the **VueFusionCharts** component:
 
 **Globally**
 
+In your JavaScript code, use the `Vue.use()` method to register the vue-fusioncharts component globally. Registering the component globally allows you to use them in the template of any root Vue instance created after registration.
+
 ```JavaScript
 Vue.use(VueFusionCharts, FusionCharts, FusionMaps, California);
 ```
 
 **Locally**
 
+Registering components globally ensures that even if you want to stop using that component, it will be a part of your final build. This results in an increase in JavaScript code that the users have to download. To avoid bloated code, we recommend registering the component locally.
+
+In your JavaScript code, use the `Vue.component()` method to register the vue-fusioncharts component locally. To register locally, use `Vue.component()` instead of `Vue.use()`, the rest of the code remains same. Refer to the code below:
+
 ```JavaScript
 Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionMaps, California);
 ```
 
+The consolidated code looks like as shown below:
+
+```JavaScript
+import FusionCharts from 'fusioncharts/core';
+import FusionMaps from 'fusioncharts/maps';
+import California from 'fusionmaps/maps/es/fusioncharts.california';
+Vue.use(VueFusionCharts, FusionCharts, FusionMaps, California); // Globally
+Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionMaps, California); // Locally
+```
 
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.
 
