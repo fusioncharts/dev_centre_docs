@@ -34,7 +34,7 @@ The folder structure is shown below:
 
 ![JSP Js Folder]({% site.baseurl %}/gif/jsp-folder-structure.gif)
 
-The `java` folder in the FusionCharts Suite XT package is available from v3.13.0.
+> The `java` folder in the FusionCharts Suite XT package is available from v3.13.0.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
@@ -54,9 +54,9 @@ File Name|Description|
 `maps/*`|This folder contains Map Definition files required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1400+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be applied to charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
 
-Installation of FusionCharts Suite XT is simply copying and pasting the JavaScript files from the downloaded package into your project folder.
+Once you have copied FusionCharts Suite XT into your project as explained above, you can now include the FusionCharts JavaScript library in your web page and start building your charts, gauges, and maps.
 
-After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. Create an HTML file and follow the steps given below:
+Create a JSP file and follow the steps given below:
 
 **Step 1: Include the FusionCharts package:**
 
@@ -94,6 +94,10 @@ FusionCharts Suite XT provides over `1400+` data-driven maps under the product F
 In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
+
+**To use FusionCharts Java wrapper in your project:**
+
+`Include` the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project's folder.
 
 To render a map, you need to `include`the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. Once done, insert the ``<script>`` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The ``<script>`` tag looks like as shown below:
 
