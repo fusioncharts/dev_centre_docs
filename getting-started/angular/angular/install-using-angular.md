@@ -66,7 +66,6 @@ import FusionCharts from 'fusioncharts/core';
 // E.g. - import ChartType from fusioncharts/viz/[ChartType]
 import Column2D from 'fusioncharts/viz/column2d';  
 </code></pre>
-<div class="mt-30">The above steps completes the installation process. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular '@@open-newtab').</div>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 <div class='tab angular2-tab'>
@@ -113,16 +112,17 @@ import \* as ZoomLine from 'fusioncharts/fusioncharts.zoomline'; //Zoom Line
 import \* as OverlappedBar2D from 'fusioncharts/fusioncharts.overlapped2d'; //Overlapped Bar 2D
 import \* as OverlappedColumn2D from 'fusioncharts/fusioncharts.overlappedcolumn2d'; //Overlapped Column 2D
 </code></pre>
-<div class="mt-30">The above steps completes the installation process. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular '@@open-newtab').</div>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 </div>
 </div>
 
+The above steps completes the installation process. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular '@@open-newtab').
+
 ## Include Map via `npm`
 
-The `fusioncharts` package contains only two map definitions in `fusioncharts/maps/es` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
+The `fusioncharts` package contains only two map definitions - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -144,7 +144,6 @@ import World from 'fusioncharts/maps/es/fusioncharts.world' // World Map
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 <div class='tab angular2-tab'>
-<div class="mt-30">The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the <strong>World Map</strong>, and the <strong>Map of USA</strong>. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:</div>
 <div class="mt-20"><strong>Step 1: </strong>Include the core FusionCharts library</div>
 <pre><code class="custom-hlc language-javascript">
 import \* as FusionCharts from 'fusioncharts';
@@ -199,7 +198,7 @@ import \* as FusionMaps from 'fusioncharts/fusioncharts.maps';
 </div>
 </div>
 
-Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: <strong>fusioncharts.&lt;MAP_ALIAS&gt;.
+Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.
 
 Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files.
 
