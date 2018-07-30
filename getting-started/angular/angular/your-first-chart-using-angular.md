@@ -455,7 +455,7 @@ export class AppModule {
 }
 ```
 
-### Add data to `app.component,ts`
+### Add data to `app.component.ts`
 
 In this step, we will setup the main module to create the **world** map. The code is given below:
 
