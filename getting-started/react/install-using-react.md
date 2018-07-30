@@ -336,25 +336,31 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 
 To include themes, follow the steps below:
 
-**Step 1:** Import FusionCharts core library
+**Step 1**: Include `React-FusionCharts`:
+
+```JavaScript
+import ReactFC from 'react-fusioncharts';
+```
+
+**Step 2:** Import FusionCharts core library
 
 ```javaScript
 import FusionCharts from 'fusioncharts/core';
 ```
 
-**Step 2:** Import the theme engine
+**Step 3:** Import the theme engine
 
 ```JavaScript
 import ThemeEngine from 'fusioncharts/features/theme-engine';
 ```
 
-**Step 3:** Import the theme file
+**Step 4:** Import the theme file
 
 ```JavaScript
 import Fusion from 'fusioncharts/themes/es/fusioncharts.fusion';
 ```
 
-**Step 4:** Add ThemeEngine and Fusion as dependency to the core
+**Step 5:** Add ThemeEngine and Fusion as dependency to the core
 
 ```JavaScript
 ReactFC.fcRoot(FusionCharts, ThemeEngine, Fusion);
