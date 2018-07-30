@@ -29,7 +29,7 @@ File Name|Description|
 `maps/*`|This folder contains Map Definition files required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1400+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be applied to charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
 
-## Install Angular-FusionCharts via npm
+## Install Angular-FusionCharts via `npm`
 
 This section outlines the steps to be executed for installing **angular-fusioncharts** via npm:
 
@@ -52,91 +52,32 @@ $ npm install fusioncharts --save
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab angular4-tab active'>
-<div class="mt-30"><strong>Step 3: </strong>Import <strong>FusionChartsModule</strong> in the root `@NgModule` (in your application)</div>
+<div class="mt-30"><strong>Step 1: </strong>Import <strong>FusionChartsModule</strong> in the root `@NgModule` (in your application)</div>
 <pre><code class="custom-hlc language-javascript">
 import { FusionChartsModule } from 'angular-fusioncharts';
 </code></pre>
-<div class="mt-30"><strong>Step 4: </strong>Import FusionCharts library in the root `@NgModule`(in your application)</div>
+<div class="mt-30"><strong>Step 2: </strong>Import FusionCharts library in the root `@NgModule`(in your application)</div>
 <pre><code class="custom-hlc language-javascript">
 import FusionCharts from 'fusioncharts/core';
 </code></pre>
-<div class="mt-30"><strong>Step 5: </strong>Import Specific modules</div>
+<div class="mt-30"><strong>Step 3: </strong>Import Specific modules</div>
 <pre><code class="custom-hlc language-javascript">
 // Include the chart from viz folder
 // E.g. - import ChartType from fusioncharts/viz/[ChartType]
 import Column2D from 'fusioncharts/viz/column2d';  
 </code></pre>
-<div class="mt-30">The above steps completes the installation process. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular '@@open-newtab').</div>
-
-<h2>Include Maps via npm</h2>
-<div class="mt-30">The `fusioncharts` package contains only two map definitions in `fusioncharts/maps/es` directory - the <strong>World Map</strong>, and the <strong>Map of USA</strong>. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:</div>
-<div class="mt-20"><strong>Step 1: </strong>Include the core FusionCharts library</div>
-<pre><code class="custom-hlc language-javascript">
-import FusionCharts from 'fusioncharts/core';
-</code></pre>
-<div class="mt-20"><strong>Step 2: </strong>Load the `FusionMaps` renderer and the map definition file</div>
-<pre><code class="custom-hlc language-javascript">
-import FusionCharts from 'fusioncharts/core';
-import Maps from 'fusioncharts/maps'; // Maps
-import World from 'fusioncharts/maps/es/fusioncharts.world' // World Map
-</code></pre>
-<div class="mt-30"><strong>Load other map definition files</strong></div>
-<div class="mt-20">You can use rest of the map definition files other than the <strong>World Map</strong> and the <strong>Map of USA</strong> that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:</div>
-<pre><code class="custom-hlc language-javascript">
-$ npm install fusionmaps
-</code></pre>
-<div class="mt-20">Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder.</div>
-<div class="mt-20">The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:</div>
-<pre><code class="custom-hlc language-javascript">
-import FusionCharts from 'fusioncharts/core';
-import FusionMaps from 'fusioncharts/maps';
-</code></pre>
-<div class="mt-20">Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: <strong>fusioncharts.&lt;MAP_ALIAS&gt;</strong>.</div>
-<div class="mt-20">Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files.</div>
-<div class="mt-20">Therefore, assuming that you need to render the map of California, the alias name <strong>california</strong> replaces <strong>MAP_ALIAS</strong> in the format. So, the complete format will be `fusioncharts.california`.</div>
-<pre><code class="custom-hlc language-javascript">
-import FusionCharts from 'fusioncharts/core';
-import FusionMaps from 'fusioncharts/maps';
-import California from 'fusionmaps/maps/es/fusioncharts.california';
-</code></pre>
-<div clas="mt-10">It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.</div>
-
-<h2>Include Themes via `npm`</h2>
-<div class="mt-30">[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to apply centralized themes to any number of charts.</div>
-<div class="mt-20">In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
-    <ul>
-        <li>Visual appearance (data plot color, font color, font size, etc.)</li>
-        <li>Behavior (hover effects for data plots)</li>
-        <li>Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme).</li>
-    </ul>
-</div>
-<div class="mt-30"><strong>To include themes follow the steps below:</strong></div>
-<div class="mt-20"><strong>Step 1: </strong>Import FusionCharts core library</div>
-<pre><code class="custom-hlc language-javascript">
-import FusionCharts from 'fusioncharts/core'
-</code></pre>
-<div class="mt-20"><strong>Step 2: </strong>Import the theme engine</div>
-<pre><code class="custom-hlc language-javascript">
-import ThemeEngine from 'fusioncharts/features/theme-engine'
-</code></pre>
-<div class="mt-20"><strong>Step 3: </strong>Include the theme file</div>
-<pre><code class="custom-hlc language-javascript">
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion'
-</code></pre>
-<div class="mt-10">Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').</div>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-
 <div class='tab angular2-tab'>
-<div class="mt-30"><strong>Step 3: </strong>Import <strong>FusionChartsModule</strong> in the root `@NgModule` (in your application)</div>
+<div class="mt-30"><strong>Step 1: </strong>Import <strong>FusionChartsModule</strong> in the root `@NgModule` (in your application)</div>
 <pre><code class="custom-hlc language-javascript">
 import { FusionChartsModule } from 'angular-fusioncharts';
 </code></pre>
-<div class="mt-30"><strong>Step 4: </strong>Import FusionCharts library in the root `@NgModule`(in your application)</div>
+<div class="mt-30"><strong>Step 2: </strong>Import FusionCharts library in the root `@NgModule`(in your application)</div>
 <pre><code class="custom-hlc language-javascript">
 import \* as FusionCharts from 'fusioncharts';
 </code></pre>
-<div class="mt-30"><strong>Step 5: </strong>Import Specific modules</div>
+<div class="mt-30"><strong>Step 3: </strong>Import Specific modules</div>
 <div class="mt-20"><strong>Import Charts</strong></div>
 <pre><code class="custom-hlc language-javascript">
 import \* as Charts from 'fusioncharts/fusioncharts.charts';    
@@ -171,10 +112,38 @@ import \* as ZoomLine from 'fusioncharts/fusioncharts.zoomline'; //Zoom Line
 import \* as OverlappedBar2D from 'fusioncharts/fusioncharts.overlapped2d'; //Overlapped Bar 2D
 import \* as OverlappedColumn2D from 'fusioncharts/fusioncharts.overlappedcolumn2d'; //Overlapped Column 2D
 </code></pre>
-<div class="mt-30">The above steps completes the installation process. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular '@@open-newtab').</div>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-<h2>Include Maps via npm</h2>
-<div class="mt-30">The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the <strong>World Map</strong>, and the <strong>Map of USA</strong>. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:</div>
+</div>
+</div>
+
+The above steps completes the installation process. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular '@@open-newtab').
+
+## Include Map via `npm`
+
+The `fusioncharts` package contains only two map definitions - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+  <li class='active'><a data-toggle='angular4'>Angular 4 onwards</a></li>
+  <li><a data-toggle='angular2'>Angular 2</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab angular4-tab active'>
+<div class="mt-20"><strong>Step 1: </strong>Include the core FusionCharts library</div>
+<pre><code class="custom-hlc language-javascript">
+import FusionCharts from 'fusioncharts/core';
+</code></pre>
+<div class="mt-20"><strong>Step 2: </strong>Load the `FusionMaps` renderer and the map definition file</div>
+<pre><code class="custom-hlc language-javascript">
+import FusionCharts from 'fusioncharts/core';
+import Maps from 'fusioncharts/maps'; // Maps
+import World from 'fusioncharts/maps/es/fusioncharts.world' // World Map
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+<div class='tab angular2-tab'>
 <div class="mt-20"><strong>Step 1: </strong>Include the core FusionCharts library</div>
 <pre><code class="custom-hlc language-javascript">
 import \* as FusionCharts from 'fusioncharts';
@@ -185,8 +154,35 @@ import \* as FusionCharts from 'fusioncharts';
 import \* as Maps from 'fusioncharts/fusioncharts.maps'; // Maps
 import \* as World from 'fusioncharts/maps/fusioncharts.world' // World Map
 </code></pre>
-<div class="mt-30"><strong>Load other map definition files</strong></div>
-<div class="mt-20">You can use rest of the map definition files other than the <strong>World Map</strong> and the <strong>Map of USA</strong> that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:</div>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
+
+**Load other map definition files**
+
+You can use rest of the map definition files other than the <strong>World Map</strong> and the <strong>Map of USA</strong> that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+  <li class='active'><a data-toggle='angular4'>Angular 4 onwards</a></li>
+  <li><a data-toggle='angular2'>Angular 2</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab angular4-tab active'>
+<pre><code class="custom-hlc language-javascript">
+$ npm install fusionmaps
+</code></pre>
+<div class="mt-20">Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder.</div>
+<div class="mt-20">The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:</div>
+<pre><code class="custom-hlc language-javascript">
+import FusionCharts from 'fusioncharts/core';
+import FusionMaps from 'fusioncharts/maps';
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+<div class='tab angular2-tab'>
 <pre><code class="custom-hlc language-javascript">
 $ npm install fusionmaps
 </code></pre>
@@ -196,26 +192,80 @@ $ npm install fusionmaps
 import \* as FusionCharts from 'fusioncharts';
 import \* as FusionMaps from 'fusioncharts/fusioncharts.maps';
 </code></pre>
-<div class="mt-20">Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: <strong>fusioncharts.&lt;MAP_ALIAS&gt;</strong>.</div>
-<div class="mt-20">Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files.</div>
-<div class="mt-20">Therefore, assuming that you need to render the map of California, the alias name <strong>california</strong> replaces <strong>MAP_ALIAS</strong> in the format. So, the complete format will be `fusioncharts.california`.</div>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
+
+Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.
+
+Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files.
+
+Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+  <li class='active'><a data-toggle='angular4'>Angular 4 onwards</a></li>
+  <li><a data-toggle='angular2'>Angular 2</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab angular4-tab active'>
+<pre><code class="custom-hlc language-javascript">
+import FusionCharts from 'fusioncharts/core';
+import FusionMaps from 'fusioncharts/maps';
+import California from 'fusionmaps/maps/es/fusioncharts.california';
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+<div class='tab angular2-tab'>
 <pre><code class="custom-hlc language-javascript">
 import \* as FusionCharts from 'fusioncharts';
 import \* as FusionMaps from 'fusioncharts/fusioncharts.maps';
 import \* as California from 'fusionmaps/maps/fusioncharts.california';
 </code></pre>
-<div clas="mt-10">It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.</div>
-
-<h2>Include Themes via `npm`</h2>
-<div class="mt-30">[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to apply centralized themes to any number of charts.</div>
-<div class="mt-20">In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
-    <ul>
-        <li>Visual appearance (data plot color, font color, font size, etc.)</li>
-        <li>Behavior (hover effects for data plots)</li>
-        <li>Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme).</li>
-    </ul>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-<div class="mt-30"><strong>To include themes follow the steps below:</strong></div>
+
+</div>
+</div>
+
+It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.
+
+## Include Themes via `npm`
+
+[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to apply centralized themes to any number of charts.
+
+In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
+
+* Visual appearance (data plot color, font color, font size, etc.)
+* Behavior (hover effects for data plots)
+* Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme).
+
+To include themes follow the steps below:
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+  <li class='active'><a data-toggle='angular4'>Angular 4 onwards</a></li>
+  <li><a data-toggle='angular2'>Angular 2</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab angular4-tab active'>
+<div class="mt-20"><strong>Step 1: </strong>Import FusionCharts core library</div>
+<pre><code class="custom-hlc language-javascript">
+import FusionCharts from 'fusioncharts/core'
+</code></pre>
+<div class="mt-20"><strong>Step 2: </strong>Import the theme engine</div>
+<pre><code class="custom-hlc language-javascript">
+import ThemeEngine from 'fusioncharts/features/theme-engine'
+</code></pre>
+<div class="mt-20"><strong>Step 3: </strong>Include the theme file</div>
+<pre><code class="custom-hlc language-javascript">
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion'
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+<div class='tab angular2-tab'>
 <div class="mt-20"><strong>Step 1: </strong>Import FusionCharts core library</div>
 <pre><code class="custom-hlc language-javascript">
 import \* as FusionCharts from 'fusioncharts'
@@ -224,9 +274,10 @@ import \* as FusionCharts from 'fusioncharts'
 <pre><code class="custom-hlc language-javascript">
 import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.fusion'
 </code></pre>
-<div class="mt-10">Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').</div>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 </div>
 </div>
+
+Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
