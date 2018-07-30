@@ -225,20 +225,22 @@ $ npm install react-fusioncharts --save
 ```PowerShell
 $ npm install fusioncharts --save
 ```
-**Step 3:** Include the `fusioncharts` library:
 
-```
-import FusionCharts from 'fusioncharts/core';
-
-```
-**Step 4**: Include `React-FusionCharts`:
+**Step 3**: Include `React-FusionCharts`:
 
 ```JavaScript
 import ReactFC from 'react-fusioncharts';
 ```
 
-**Step 5** : Include specific modules:
+**Step 4:** Include the `fusioncharts` library:
+
+```JavaScript
+import FusionCharts from 'fusioncharts/core';
 ```
+
+**Step 5** : Include specific modules:
+
+```JavaScript
 // E.g. - import ChartType from fusioncharts/viz/[ChartType]
 import Column2D from 'fusioncharts/viz/column2d';
 ```
@@ -246,7 +248,6 @@ import Column2D from 'fusioncharts/viz/column2d';
 **Step 6** : Add the charts as the dependency to the core:
 
 ```JavaScript
-// Charts -  reference from above
 ReactFC.fcRoot(FusionCharts, Column2D);
 ```
 
@@ -318,7 +319,7 @@ import ReactFC from 'react-fusioncharts';
 import FusionCharts from 'fusioncharts/core';
 import FusionMaps from 'fusioncharts/maps';
 import California from 'fusionmaps/maps/es/fusioncharts.california';
-ReactFC.fcRoot(FusionCharts, Maps, California);   // Maps & California -  reference from above
+ReactFC.fcRoot(FusionCharts, FusionMaps, California);   // Maps & California
 ```
 
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.
@@ -357,7 +358,7 @@ import ThemeEngine from 'fusioncharts/features/theme-engine';
 **Step 4:** Import the theme file
 
 ```JavaScript
-import Fusion from 'fusioncharts/themes/es/fusioncharts.fusion';
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion';
 ```
 
 **Step 5:** Add ThemeEngine and Fusion as dependency to the core

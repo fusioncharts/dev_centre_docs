@@ -436,10 +436,10 @@ In this step, we will setup the main module to create the **world** map. The cod
 ```
 import { FusionChartsModule } from 'angular-fusioncharts';
 import FusionCharts from 'fusioncharts/core';
-import Maps from 'fusioncharts/maps'; // maps
+import FusionMaps from 'fusioncharts/maps'; // maps
 import World from 'fusioncharts/maps/es/fusioncharts.world'; // world
 
-FusionChartsModule.fcRoot(FusionCharts, Maps, World);
+FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World);
 @NgModule({
     declarations: [
         AppComponent

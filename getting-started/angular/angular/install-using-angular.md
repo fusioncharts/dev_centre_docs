@@ -141,7 +141,7 @@ import FusionCharts from 'fusioncharts/core';
 <div class="mt-20"><strong>Step 2: </strong>Load the `FusionMaps` renderer and the map definition file</div>
 <pre><code class="custom-hlc language-javascript">
 import FusionCharts from 'fusioncharts/core';
-import Maps from 'fusioncharts/maps'; // Maps
+import FusionMaps from 'fusioncharts/maps'; // Maps
 import World from 'fusioncharts/maps/es/fusioncharts.world' // World Map
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -154,7 +154,7 @@ import \* as FusionCharts from 'fusioncharts';
 <div class="mt-20"><strong>Step 2: </strong>Load the `FusionMaps` renderer and the map definition file</div>
 <pre><code class="custom-hlc language-javascript">
 import \* as FusionCharts from 'fusioncharts';
-import \* as Maps from 'fusioncharts/fusioncharts.maps'; // Maps
+import \* as FusionMaps from 'fusioncharts/fusioncharts.maps'; // Maps
 import \* as World from 'fusioncharts/maps/fusioncharts.world' // World Map
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
