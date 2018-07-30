@@ -23,11 +23,11 @@ The folder structure is shown below:
 
 > It is recommended that you copy the files/folders from `fusioncharts-suite-xt > js` to your project application in `vendor/assets/javascripts/fusioncharts/` folder.
 
-* The download package also contains FusionCharts gem under `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` folder. This folder will also contain native RoR FusionCharts **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/ruby-on-rails '@@open-newtab')**. The folder structure is shown below:
+* The download package contains FusionCharts gem under `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` folder. This folder will also contain native RoR FusionCharts **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/ruby-on-rails '@@open-newtab')**. The folder structure is shown below:
 
 ![Ruby on Rails Js Folder]({% site.baseurl %}/gif/ror-folder-structure.gif)
 
-> The `ror` folder in the FusionCharts Suite XT package is available from v3.13.0.
+> The `rubyonrails` folder in the FusionCharts Suite XT package is available from v3.13.0.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
@@ -66,8 +66,6 @@ This step is optional, the chart will render with the default theme (`fusion`) e
 ```Ruby
 //= require fusioncharts/themes/fusioncharts.theme.fusion
 ```
-
-> Ensure that the **config.assets.debug** flag in the **development.rb** file (config/environments/development.rb) is enabled (set to **true**).
 
 Now, To add the FusionCharts Rails wrapper, use any of the following process:
 
@@ -116,6 +114,7 @@ To render a map, you need to:
 To include FusionCharts library in your project add the following code of lines in the **app/assets/javascripts/application.js** file.
 
 ```Ruby
+//= require fusioncharts/fusioncharts
 //= require fusioncharts/fusioncharts.maps
 //= require fusioncharts/maps/fusioncharts.world
 ```
@@ -178,5 +177,7 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 The FusionCharts Suite download package also contains the predefined theme files under `fusioncharts-suite-xt > js > themes` folder. The folder structure is shown below:
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
+
+Include the theme files in the `vendor/assets/javascripts/fusioncharts/` folder in the Static folder of your project. This step is optional, the chart will render with the default theme (fusion) even if the theme is not applied.   
 
 > Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
