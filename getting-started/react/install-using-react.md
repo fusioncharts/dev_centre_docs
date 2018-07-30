@@ -238,6 +238,7 @@ import ReactFC from 'react-fusioncharts';
 ```
 
 **Step 5** : Include specific modules:
+```
 // E.g. - import ChartType from fusioncharts/viz/[ChartType]
 import Column2D from 'fusioncharts/viz/column2d';
 
