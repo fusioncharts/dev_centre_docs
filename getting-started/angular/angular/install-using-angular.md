@@ -44,7 +44,7 @@ $ npm install angular-fusioncharts --save
 ```PowerShell
 $ npm install fusioncharts --save
 ```
-
+The above steps completes the installation of `angualr-fusioncharts`. To start using follow the steps below:
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
   <li class='active'><a data-toggle='angular4'>Angular 4 onwards</a></li>
