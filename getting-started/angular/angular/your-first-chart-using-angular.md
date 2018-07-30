@@ -7,7 +7,7 @@ chartPresent: false
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and **angular-FusionCharts** component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-gauge-9) and a [map]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-map-14).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/angular/angular/install-using-angular '@@open-newtab') `angular-fusioncharts` plugin, if not already installed.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/angular/angular/install-using-angular '@@open-newtab') `angular-fusioncharts` package, if not already installed.
 
 ## Create your first chart
 
@@ -99,17 +99,17 @@ Functional attributes let you control a variety of functional elements on the ch
 
 Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's look and feel, no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
-### Setup the main module
+### Import FusionCharts module
 
-In this step, we will setup the main module to create the **column2d** chart. The code is given below:
+In this step, we will import FusionCharts module  in the root `@NgModule` to create the **column2d** chart. The code is given below:
 
 
-```
+```JavaScript
 import { FusionChartsModule } from 'angular-fusioncharts';
-import * as FusionCharts from 'fusioncharts';
-import * as Charts from 'fusioncharts/fusioncharts.charts'; // Charts
+import FusionCharts from 'fusioncharts/core';
+import Column2D from 'fusioncharts/viz/column2d'; // Column2D chart
 
-FusionChartsModule.fcRoot(FusionCharts, Charts);
+FusionChartsModule.fcRoot(FusionCharts, Column2D);
 @NgModule({
     declarations: [
         AppComponent
@@ -263,10 +263,10 @@ In this step, we will setup the main module to create the **angularGauge** chart
 
 ```
 import { FusionChartsModule } from 'angular-fusioncharts';
-import * as FusionCharts from 'fusioncharts';
-import * as Widgets from 'fusioncharts/fusioncharts.widgets'; // Widgets
+import FusionCharts from 'fusioncharts/core';
+import AngularGauge from 'fusioncharts/viz/angulargauge'; // AngularGauge
 
-FusionChartsModule.fcRoot(FusionCharts, Widgets);
+FusionChartsModule.fcRoot(FusionCharts, AngularGauge);
 @NgModule({
     declarations: [
         AppComponent
@@ -338,7 +338,7 @@ Add the following code to `app.component.html`:
 <fusioncharts
     width="450"
     height="250"
-    type="angularGauge"
+    type="AngularGauge"
     [dataSource]="dataSource">
 </fusioncharts>
 ```
@@ -435,9 +435,9 @@ In this step, we will setup the main module to create the **world** map. The cod
 
 ```
 import { FusionChartsModule } from 'angular-fusioncharts';
-import * as FusionCharts from 'fusioncharts';
-import * as Maps from 'fusioncharts/fusioncharts.maps'; // maps
-import * as World from 'fusioncharts/maps/fusioncharts.world'; // world
+import FusionCharts from 'fusioncharts/core';
+import Maps from 'fusioncharts/maps'; // maps
+import World from 'fusioncharts/maps/es/fusioncharts.world'; // world
 
 FusionChartsModule.fcRoot(FusionCharts, Maps, World);
 @NgModule({
