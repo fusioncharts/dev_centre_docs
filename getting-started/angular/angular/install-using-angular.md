@@ -44,7 +44,8 @@ $ npm install angular-fusioncharts --save
 ```PowerShell
 $ npm install fusioncharts --save
 ```
-The above steps completes the installation of `angualr-fusioncharts`. To start using follow the steps below:
+The above steps completes the installation of `angular-fusioncharts`. FusionCharts ES module is using **dynamic import** which is an advanced ES6 feature. This feature is not supported in `typescript` **v2.2.0** which is used by `Angular 2`. So the syntax for `Angular 4` onwards is different from `Angular 2` as shown below: 
+
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
   <li class='active'><a data-toggle='angular4'>Angular 4 onwards</a></li>
