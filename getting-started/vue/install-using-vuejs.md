@@ -234,7 +234,7 @@ import FusionCharts from 'fusioncharts/core';
 **Step 6:** Include specific chart modules
 
 ```JavaScript
-import Charts from 'fusioncharts/charts';
+import Column2D from 'fusioncharts/viz/column2d';
 ```
 
 **Step 7:** Register the **VueFusionCharts** component:
