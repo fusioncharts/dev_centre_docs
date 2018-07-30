@@ -409,13 +409,7 @@ To include themes, follow the steps below:
 let jQuery = require('jquery');
 ```
 
-**Step 2:** Include the theme engine
-
-```JavaScript
-let Fusion = require('fusioncharts/features/theme-engine');
-```
-
-**Step 3:** Include the theme file
+**Step 2:** Include the theme file
 
 ```JavaScript
 let Fusion = require('fusioncharts/themes/fusioncharts.fusion');

@@ -349,22 +349,16 @@ import ReactFC from 'react-fusioncharts';
 import FusionCharts from 'fusioncharts/core';
 ```
 
-**Step 3:** Import the theme engine
-
-```JavaScript
-import ThemeEngine from 'fusioncharts/features/theme-engine';
-```
-
-**Step 4:** Import the theme file
+**Step 3:** Import the theme file
 
 ```JavaScript
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion';
 ```
 
-**Step 5:** Add ThemeEngine and Fusion as dependency to the core
+**Step 4:** Add Fusion Theme as dependency to the core
 
 ```JavaScript
-ReactFC.fcRoot(FusionCharts, ThemeEngine, Fusion);
+ReactFC.fcRoot(FusionCharts, Fusion);
 ```
 
 > Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').

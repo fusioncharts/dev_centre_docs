@@ -721,11 +721,6 @@ To include the definition files placed in **fusioncharts/themes**, follow any of
 <pre><code class="custom-hlc language-javascript">
     import FusionCharts from 'fusioncharts/core'
 </code></pre>
-<div><strong>To include the `theme engine extension`, copy the following line of code:</strong></div>
-<pre><code class="custom-hlc language-javascript">
-    import ThemeEngine from 'fusioncharts/features/theme-engine';
-    FusionCharts.addDep(ThemeEngine);
-</code></pre>
 <div><strong>To include the theme file, copy the following line of code:</strong></div>
 <pre><code class="custom-hlc language-javascript">
     import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion'

@@ -337,30 +337,24 @@ In your JavaScript code, use the `Vue.use()` method to register the `vue-fusionc
 import FusionCharts from 'fusioncharts/core'
 ```
 
-**Step 2:** Include the `theme engine extension`
-
-```JavaScript
-import ThemeEngine from 'fusioncharts/features/theme-engine';
-```
-
-**Step 3:** Include the theme file
+**Step 2:** Include the theme file
 
 ```JavaScript
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion'
 ```
 
-**Step 4:** Register the **VueFusionCharts** component:
+**Step 3:** Register the **VueFusionCharts** component:
 
 **Globally**
 
 ```JavaScript
-Vue.use(VueFusionCharts, FusionCharts, ThemeEngine, FusionTheme);
+Vue.use(VueFusionCharts, FusionCharts, FusionTheme);
 ```
 
 **Locally**
 
 ```JavaScript
-Vue.component('fusioncharts', VueFusionCharts, FusionCharts, ThemeEngine, FusionTheme);
+Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionTheme);
 ```
 
 > Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').

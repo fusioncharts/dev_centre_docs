@@ -258,11 +258,7 @@ To include themes follow the steps below:
 <pre><code class="custom-hlc language-javascript">
 import FusionCharts from 'fusioncharts/core'
 </code></pre>
-<div class="mt-20"><strong>Step 2: </strong>Import the theme engine</div>
-<pre><code class="custom-hlc language-javascript">
-import ThemeEngine from 'fusioncharts/features/theme-engine'
-</code></pre>
-<div class="mt-20"><strong>Step 3: </strong>Include the theme file</div>
+<div class="mt-20"><strong>Step 2: </strong>Include the theme file</div>
 <pre><code class="custom-hlc language-javascript">
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion'
 </code></pre>
