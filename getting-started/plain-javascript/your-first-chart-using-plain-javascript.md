@@ -714,7 +714,7 @@ The full HTML code is given below:
 </head>
 
 <body>
-    <div id="chart-conatiner">FusionMaps XT will load map here!</div>
+    <div id="chart-container">FusionMaps XT will load map here!</div>
 </body>
 
 </html>
