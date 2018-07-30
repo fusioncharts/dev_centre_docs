@@ -47,7 +47,7 @@ $ npm install fusioncharts --save
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-  <li class='active'><a data-toggle='angular4'>Angular 4 and Above</a></li>
+  <li class='active'><a data-toggle='angular4'>Angular 4 onwards</a></li>
   <li><a data-toggle='angular2'>Angular 2</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
