@@ -75,6 +75,7 @@ In this step, we will create an object for the chart type as **column2d** using 
 The code to create an object of the chart is given below:
 
 ```javascript
+# dataSource = “JSON data of the chart”
 column2D = FusionCharts("column2d", "myFirstChart" , "600", "400", "myFirstChartContainer", "json", dataSource)
 ```
 
@@ -271,6 +272,7 @@ In this step, we will create an object for the chart type as **angularGauge** us
 The code to create an instance of the gauge is given below:
 
 ```javascript
+# dataSource = “JSON data of the gauge”
 angulargaugeWidget = FusionCharts("angulargauge", "myFirstWidget", "100%", "200", "myFirstWidgetContainer", "json", dataSource)
 ```
 
@@ -405,6 +407,7 @@ In this step, we will create an object for the map type as **world** using Fusio
 The code to create an object of the gauge is given below:
 
 ```javascript
+# dataSource = “JSON data of the map”
 fusionMap = FusionCharts("maps/world", "myFirstMap" , "650", "450", "myFirstMapContainer", "json", dataSource)
 ```
 The full code for the above sample is:

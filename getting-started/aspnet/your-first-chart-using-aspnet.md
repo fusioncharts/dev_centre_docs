@@ -77,8 +77,9 @@ The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 <div class='tab json-tab active'>
 <pre><code class="custom-hlc language-cs">
 //Create chart instance
+// jsonData = “JSON data of the chart”
 // charttype, chartID, width, height, data format, data
-Chart MyFirstChart = new Chart("column2d", "MyFirstChart", "600", "400", "json", jsonData.ToString());
+Chart MyFirstChart = new Chart("column2d", "MyFirstChart", "700", "400", "json", jsonData.ToString());
 Literal1.Text = MyFirstChart.Render();
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -87,8 +88,9 @@ Literal1.Text = MyFirstChart.Render();
 <div class='tab xml-tab'>
 <pre><code class="custom-hlc language-cv">
 ' Create chart instance
+'jsonData = “JSON data of the chart”
 ' charttype, chartID, width, height, data format, data
-Dim MyFirstChart As New Chart("column2d", "first_chart", "600", "350", "json", jsonData.ToString())
+Dim MyFirstChart As New Chart("column2d", "first_chart", "700", "400", "json", jsonData.ToString())
 Literal1.Text = MyFirstChart.Render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -206,7 +208,7 @@ The full code and the common aspx template for the above sample is given below:
 
     &lt;!DOCTYPE html&gt;
 
-    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;html xmlns="http://www.w3.org/1999/xhtml" &gt;
 
     &lt;head runat="server"&gt;
         &lt;title&gt;&lt;/title&gt;
@@ -496,6 +498,7 @@ The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 <div class='tab json-tab active'>
 <pre><code class="custom-hlc language-cs">
      //Create gauge instance
+     // jsonData = “JSON data of the gauge"
     // charttype, chartID, width, height, data format, data
 
     Chart MyFirstGauge = new Chart("angulargauge", "first_gauge", "450", "250", "json", jsonData.ToString());
@@ -507,6 +510,7 @@ The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 <div class='tab xml-tab'>
 <pre><code class="custom-hlc language-cv">
     'Create gauge instance
+    'jsonData = “JSON data of the gauge"
     'charttype, chartID, width, height, data format, data
 
     Dim MyFirstGauge As New Chart("angulargauge", "first_gauge", "400", "350", "json", jsonData.ToString())
@@ -534,7 +538,7 @@ The full code for the above sample is given below:
 
     &lt;!DOCTYPE html&gt;
 
-    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;html xmlns="http://www.w3.org/1999/xhtml" &gt;
 
     &lt;head runat="server"&gt;
         &lt;title&gt;fusioncharts&lt;/title&gt;
@@ -651,7 +655,7 @@ The full code for the above sample is given below:
 
     &lt;!DOCTYPE html&gt;
 
-    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;html xmlns="http://www.w3.org/1999/xhtml" &gt;
 
     &lt;head runat="server"&gt;
         &lt;title&gt;&lt;/title&gt;
@@ -828,6 +832,7 @@ The code to render a chart using `.aspx.cs` or `.aspx.vb` file is given below:
 <div class='tab json-tab active'>
 <pre><code class="custom-hlc language-cs">
      //Create map instance
+     // jsonData = “JSON data of the map”
     // map type, mapid, width, height, data format, data
 
     Chart MyFirstMap = new Chart("maps/world", "first_map", "800", "500", "json", jsonData.ToString());
@@ -839,6 +844,9 @@ The code to render a chart using `.aspx.cs` or `.aspx.vb` file is given below:
 
 <div class='tab xml-tab'>
 <pre><code class="custom-hlc language-cv">
+    'Create map instance
+    'jsonData = “JSON data of the chart”
+    'map type, mapid, width, height, data format, data
     Dim MyFirstMap As New Chart("maps/world", "first_map", "800", "500", "json", jsonData.ToString())
     'render map
     Literal1.Text = MyFirstMap.Render()
@@ -865,7 +873,7 @@ The full code for the above sample is given below:
 
     &lt;!DOCTYPE html&gt;
 
-    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;html xmlns="http://www.w3.org/1999/xhtml" &gt;
 
     &lt;head runat="server"&gt;
         &lt;title&gt;fusioncharts&lt;/title&gt;
@@ -1011,7 +1019,7 @@ The full code for the above sample is given below:
 
     &lt;!DOCTYPE html&gt;
 
-    &lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+    &lt;html xmlns="http://www.w3.org/1999/xhtml" &gt;
 
     &lt;head runat="server"&gt;
         &lt;title&gt;&lt;/title&gt;
