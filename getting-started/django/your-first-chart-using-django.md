@@ -181,7 +181,6 @@ The syntax of the `Chart` class constructor used to initialize the chart object 
 
 ```vb.net
 Chart <object name> = new Chart (chartType, chartId, chartWidth, chartHeight, dataFormat, dataSource, bgColor, bgOpacity)
-
 ```
 
 Given below is a brief description of the constructor parameters:
@@ -235,105 +234,7 @@ Given below is a brief description of the constructor parameters:
   </tr>
 </table>
 
-
 >  It is not necessary that you assign values for all parameters during initialization. The order of parameters, however, needs to be preserved. Also, you need to make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before you run the application. If not, either the chart will not render at all or it will not render the way you want it to. </p>
-
-### Methods under the Chart Class
-
-Given below is a brief description of the methods in the `Chart` class:
-
-<table>
-  <tr>
-    <th>Method Name</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>`SetChartParameter`</td>
-    <td>It is used to set or modify the values for chart parameters like `chartType`, `chartWidth`, `chartHeight`, etc. This method takes the following parameters:
-
-`param`:
-Type: enum
-Description: It is used to specify the name of the chart parameter that you want to set/modify. For example, `Chart.ChartParameter.chartType`
-
-`value`:
-Type: String
-Description: It is used to specify the value for the chart parameter. For example, `column2d`.</td>
-  </tr>
-  <tr>
-    <td>`GetChartParameter`</td>
-    <td>It is used to get the value of any chart parameter. This method takes the following parameters:
-
-`param`:
-Type: enum
-Description: It is used to specify the name of the chart parameter whose value you want to get. For example, `Chart.ChartParameter.chartType`</td>
-  </tr>
-  <tr>
-    <td>`SetData`</td>
-    <td>It is used to set the data source for the chart. This method takes the following parameters:
-
-`dataSource`:
-Type: String
-Description: It is used to specify the data for the chart. For example, `data/data.xml`.
-
-`format`:
-Type: enum
-Description: It is used to specify the format of the data source. This is an optional parameter.</td>
-  </tr>
-</table>
-
-
-## The Render() Method
-
-Given below is a brief description of the parameters that can be passed using this method:
-
-<table>
-  <tr>
-    <th>Parameter</th>
-    <th>Type</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>`chartType`
-</td>
-    <td>String</td>
-    <td>It is used to specify the type of chart to be rendered.</td>
-  </tr>
-  <tr>
-    <td>`chartId`</td>
-    <td>String</td>
-    <td>It is used to specify a unique identifier for the chart. If multiple charts are rendered on the same HTML page, each chart is referred to using its unique ID.</td>
-  </tr>
-  <tr>
-    <td>`chartWidth`</td>
-    <td>String</td>
-    <td>It is used to specify the width of the chart, in pixels.</td>
-  </tr>
-  <tr>
-    <td>`chartHeight`</td>
-    <td>String</td>
-    <td>It is used to specify the height of the chart, in pixels.</td>
-  </tr>
-  <tr>
-    <td>`dataFormat`</td>
-    <td>String</td>
-    <td>It is used to specify the type of data that will be passed to the chart. This attribute takes the following values: `json`, `xml`, `jsonurl`, and `xmlurl`. </td>
-  </tr>
-  <tr>
-    <td>`dataSource`</td>
-    <td>String</td>
-    <td>It specifies the source from where the data will be fetched, depending on the value passed to the `dataFormat` attribute.</td>
-  </tr>
-  <tr>
-    <td>`bgColor`</td>
-    <td>String</td>
-    <td>It is used to specify the hex code for the background color of the chart.</td>
-  </tr>
-  <tr>
-    <td>`bgOpacity`</td>
-    <td>String</td>
-    <td>It is used to specify the background opacity for the chart. This attribute takes values between 0 (transparent) and 100 (opaque).</td>
-  </tr>
-</table>
 
 ## Create your first gauge
 
@@ -428,7 +329,6 @@ def myFirstWidget(request):
 	dataSource["chart"] = widgetConfig
 	dataSource["colorRange"] = colorRangeData
 	dataSource["dials"] = dialData
-
 
 	# Iterate through the data in `dialValues` and insert in to the `dialData["dial"]` list.
 	# The data for the `dial`should be in an array wherein each element of the 
@@ -604,6 +504,7 @@ The HTML template of the above sample is shown below:
     <title>FC-python wrapper</title>
     {% load static %}
     <script type="text/javascript" src="{% static "path/to/local/fusioncharts.js" %}"></script>
+    <script type="text/javascript" src="{% static "path/to/local/maps/fusioncharts.world.js" %}"></script>
     <script type="text/javascript" src="{% static "path/to/local/themes/fusioncharts.theme.fusion.js" %}"></script>
 </head>
 
