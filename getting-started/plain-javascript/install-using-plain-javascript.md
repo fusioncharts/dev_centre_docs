@@ -7,7 +7,7 @@ chartPresent: false
 
 FusionCharts Suite XT — the industry's most comprehensive JavaScript charting solution — is all about easing the whole process of data visualization through charts.
 
-In this article, we will show you how you can download and install the `FusionCharts Suite XT` library and all the other dependencies on your system.
+In this article, we will show you how to download and install the `FusionCharts Suite XT` library and all the other dependencies on your system.
 
 ## Choose Your Mode of Installation:
 
@@ -32,7 +32,7 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
+> We recommend that you copy the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
@@ -84,7 +84,7 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ## Installing FusionMaps (map visualizations) for your project
 
-FusionCharts Suite XT provides over `1400+` data-driven maps under the product FusionMaps. 
+FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. 
 In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
