@@ -241,10 +241,13 @@ import ReactFC from 'react-fusioncharts';
 ```
 // E.g. - import ChartType from fusioncharts/viz/[ChartType]
 import Column2D from 'fusioncharts/viz/column2d';
+```
 
-/ Add the chart as dependency
-    // E.g. FusionCharts.addDep(ChartType)
-    FusionCharts.addDep(Column2D);
+**Step 6** : Add the charts as the dependency to the core:
+
+```JavaScript
+// Charts -  reference from above
+ReactFC.fcRoot(FusionCharts, Column2D);
 ```
 
 ## Include Maps via npm
@@ -267,13 +270,8 @@ import FusionCharts from 'fusioncharts/core';
 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core';
-    import FusionMaps from 'fusioncharts/maps';
-    import World from 'fusioncharts/maps/es/fusioncharts.world';
-
-    // Add the map as dependency
-    // E.g. FusionCharts.addDep(ChartType)
-    FusionCharts.addDep(FusionMaps);
-    FusionCharts.addDep(World);
+import FusionMaps from 'fusioncharts/maps';
+import World from 'fusioncharts/maps/es/fusioncharts.world';
 ```
 
 **Step 4:** Add the map and definition as the dependency to the core

@@ -32,7 +32,7 @@ You can use FusionCharts in your jquery project using any of the two modes given
 
 ## Install using Direct JavaScript files
 
-In order to install and start working with jQuery-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
+[Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
 * JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
 * JavaScript files to render maps under `js > maps` folder.
@@ -50,7 +50,7 @@ The folder structure is shown below:
 
 > The `jquery` folder in the FusionCharts Suite XT package is available from v3.13.0. 
 
-> It is recommended that you copy the JavaScript files of the `jquery` folder from `fusioncharts-suite-xt > integrations > jquery > js` to your project folder.
+> It is recommended that you copy the files/folders of the `jquery` folder from `fusioncharts-suite-xt > integrations > jquery > js` to your project folder.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
@@ -122,6 +122,8 @@ The consolidated code looks like as shown below:
         <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
         <!-- jQuery-FusionCharts -->
         <script type="text/javascript" src="path/to/local/jquery-fusioncharts.js"></script>
+        <!-- Fusion Theme -->
+        <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
     </head>
 </html>
 ```
@@ -130,7 +132,7 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ### Installing FusionMaps (map visualizations) for your project
 
-FusionCharts Suite XT provides over `1400+` data-driven maps under the product FusionMaps. In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions.
+FusionCharts Suite XT provides over **1400+** data-driven maps under the product FusionMaps. In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions.
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files with the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
