@@ -265,83 +265,8 @@ import FusionCharts from 'fusioncharts/core'
 
 
 ```JavaScript
-    import FusionCharts from 'fusioncharts/core'
-    import FusionMaps from 'fusioncharts/maps';
-    import World from 'fusioncharts/maps/es/fusioncharts.world';
-
-    // Add the chart as dependency
-    // E.g. FusionCharts.addDep(ChartType)
-    FusionCharts.addDep(Column2D);
-        
-    // Create an Instance with map options
-    var salesByState =   new  FusionCharts({
-        type: 'world', // Map type
-        renderAt: 'chart-container', // Container
-        width: '800', // Width of the chart
-        height: '550', // Height of the chart
-        dataFormat: 'json', // Data Type
-        dataSource: {
-            chart: {
-                // Map Configuration
-                "chart": {
-                    "caption": "Average Annual Population Growth",
-                    "subcaption": " 1955-2015",
-                    "numbersuffix": "%",
-                    "includevalueinlabels": "1",
-                    "labelsepchar": ": ",
-                    "entityFillHoverColor": "#FFF9C4",
-                    "theme": "fusion"
-                },
-                // Aesthetics; ranges synced with the slider
-                "colorrange": {
-                    "minvalue": "0",
-                    "code": "#FFE0B2",
-                    "gradient": "1",
-                    "color": [{
-                        "minvalue": "0.5",
-                        "maxvalue": "1.0",
-                        "color": "#FFD74D"
-                    }, {
-                        "minvalue": "1.0",
-                        "maxvalue": "2.0",
-                        "color": "#FB8C00"
-                    }, {
-                        "minvalue": "2.0",
-                        "maxvalue": "3.0",
-                        "color": "#E65100"
-                    }]
-                },
-                // Source data as JSON --> id represents countries of world.
-                "data": [{
-                    "id": "NA",
-                    "value": ".82",
-                    "showLabel": "1"
-                }, {
-                    "id": "SA",
-                    "value": "2.04",
-                    "showLabel": "1"
-                }, {
-                    "id": "AS",
-                    "value": "1.78",
-                    "showLabel": "1"
-                }, {
-                    "id": "EU",
-                    "value": ".40",
-                    "showLabel": "1"
-                }, {
-                    "id": "AF",
-                    "value": "2.58",
-                    "showLabel": "1"
-                }, {
-                    "id": "AU",
-                    "value": "1.30",
-                    "showLabel": "1"
-                }]
-            }
-        }
-    });
-    // Render
-    chartInstance.render()
+import FusionMaps from 'fusioncharts/maps';
+import World from 'fusioncharts/maps/es/fusioncharts.world';
 ```
 
 **Load other map definition files**
@@ -375,12 +300,20 @@ import FusionMaps from 'fusioncharts/maps';
 import California from 'fusionmaps/maps/es/fusioncharts.california';
 ```
 
-To add `FusionMaps` and `California` as dependencies to the core, copy the following line of code:
+Register the **VueFusionCharts** component:
+
+**Globally**
 
 ```JavaScript
-FusionCharts.addDep(FusionMaps);  (FusionMaps - reference from above)
-FusionCharts.addDep(California); (California - reference from above)
+Vue.use(VueFusionCharts, FusionCharts, FusionMaps, California);
 ```
+
+**Locally**
+
+```JavaScript
+Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionMaps, California);
+```
+
 
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.
 
@@ -396,32 +329,38 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 
 To include the definition files placed in **fusioncharts/themes**, follow the steps shown below:
 
-
 In your JavaScript code, use the `Vue.use()` method to register the `vue-fusioncharts` component.
 
-To include the core FusionCharts files, copy the following line of code:
+**Step 1:** Include the core FusionCharts files
 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core'
 ```
 
-To include the `theme engine extension`, copy the following line of code:
+**Step 2:** Include the `theme engine extension`
 
 ```JavaScript
 import ThemeEngine from 'fusioncharts/features/theme-engine';
 ```
 
-To include the theme file, copy the following line of code:
+**Step 3:** Include the theme file
 
 ```JavaScript
-import fusion from 'fusioncharts/themes/es/fusioncharts.fusion'
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion'
 ```
 
-To add `ThemeEngine` and `fusion` as dependencies to the core, copy the following line of code:
+**Step 4:** Register the **VueFusionCharts** component:
+
+**Globally**
 
 ```JavaScript
-FusionCharts.addDep(ThemeEngine);  (ThemeEngine - reference from above)
-FusionCharts.addDep(fusion); (fusion - reference from above)
+Vue.use(VueFusionCharts, FusionCharts, ThemeEngine, FusionTheme);
+```
+
+**Locally**
+
+```JavaScript
+Vue.component('fusioncharts', VueFusionCharts, FusionCharts, ThemeEngine, FusionTheme);
 ```
 
 > Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
