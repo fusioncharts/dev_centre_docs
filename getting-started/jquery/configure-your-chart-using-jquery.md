@@ -216,9 +216,9 @@ The HTML template of the above sample is shown below:
 </center>
 ```
 
-{% embed_chart using-with-javascript-libraries-jquery-selecting-charts-using-jquery-example-1.js %}
+{% embed_chart configure-charts-using-jquery-example-3.js %}
 
-{% embed_chart using-with-javascript-libraries-jquery-selecting-charts-using-jquery-example-2.js %}
+{% embed_chart configure-charts-using-jquery-example-4.js %}
 
 The code snippet for selecting all charts is shown below:
 
@@ -262,7 +262,7 @@ In this section, you will be shown how you can work with the FusionCharts events
 
 A chart with the `dataPlotClick` event configured using the jQuery helper looks like this:
 
-{% embed_chart using-with-javascript-libraries-jquery-handling-events-using-jquery-example-1.js %}
+{% embed_chart configure-charts-using-jquery-example-5.js %}
 
 <div id='messageView' style='width:250px; text-align:center; font-size:12px; color:#333; padding:10px; margin:20px 100px'>Click on a data plot to trigger event</div>
 
