@@ -250,6 +250,15 @@ import Column2D from 'fusioncharts/viz/column2d';
 ReactFC.fcRoot(FusionCharts, Column2D);
 ```
 
+The consolidated code is shown below:
+
+```JavaScript
+import ReactFC from 'react-fusioncharts';
+import FusionCharts from 'fusioncharts/core';
+import Column2D from 'fusioncharts/viz/column2d';
+ReactFC.fcRoot(FusionCharts, Column2D);
+```
+
 ## Include Maps via npm
 
 The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
@@ -269,7 +278,6 @@ import FusionCharts from 'fusioncharts/core';
 **Step 3:** Load the `FusionMaps` renderer and the map definition file
 
 ```JavaScript
-import FusionCharts from 'fusioncharts/core';
 import FusionMaps from 'fusioncharts/maps';
 import World from 'fusioncharts/maps/es/fusioncharts.world';
 ```
@@ -296,7 +304,6 @@ The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core';
 import FusionMaps from 'fusioncharts/maps';
-FusionCharts.addDep(FusionMaps);
 ```
 
 Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.  
@@ -307,11 +314,11 @@ Therefore, assuming that you need to render the map of California, the alias nam
 
 
 ```JavaScript
+import ReactFC from 'react-fusioncharts';
 import FusionCharts from 'fusioncharts/core';
 import FusionMaps from 'fusioncharts/maps';
 import California from 'fusionmaps/maps/es/fusioncharts.california';
-ReactFusionCharts.fcRoot(FusionCharts, Maps);   // Maps -  reference from above
-ReactFusionCharts.fcRoot(FusionCharts, California);  // California - reference from above
+ReactFC.fcRoot(FusionCharts, Maps, California);   // Maps & California -  reference from above
 ```
 
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.
