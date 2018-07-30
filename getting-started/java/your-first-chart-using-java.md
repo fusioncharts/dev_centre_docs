@@ -66,22 +66,23 @@ For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attri
 
 ### Create an instance of the chart
 
-In this step, we will create an instance of the chart type as **column2d**. Import FusionCharts reference to your page, add &lt;div&gt; to render the chart and set the width and height (in pixels or %), and finally specify the data for the chart as string.
+In this step, we will create an instance of the chart type as **column2d**. Import FusionCharts reference to your page, add `<div>` to render the chart and set the width and height (in pixels or %), and finally specify the data for the chart as string.
 
 Create the instance for the chart as shown below:
 
 ```jsp
-//Create chart instance
+// Create chart instance
+// jsonData = “JSON data for the chart”
 // charttype, chartID, width, height,containerid, data format, data
 FusionCharts firstChart = new FusionCharts(
     "column2d",
     "first_chart",
-    "800",
-    "550",
+    "700",
+    "400",
     "chart",
     "json",
     jsonData.toString()
-); %
+);
 >
 <%= firstChart.render() %>
 ```
@@ -92,7 +93,7 @@ In the above code:
 * To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 
-Create a container using &lt;div&gt; to render the chart.
+Create a container using `<div>` to render the chart.
 
 ```HTML
 <div id="chart"></div>
@@ -193,7 +194,6 @@ The syntax of the `Chart` class constructor used to initialize the chart object 
 
 ```vb.net
 Chart <object name> = new Chart (chartType, chartId, chartWidth, chartHeight, dataFormat, dataSource, bgColor, bgOpacity)
-
 ```
 
 Given below is a brief description of the constructor parameters:
@@ -281,22 +281,21 @@ In this step, we will create an instance of the chart type as `angularGauge`, se
 To create the instance of the chart follow the code below:
 
 ```jsp
-    //Create gauge instance
-    // gaugetype, gaugeID, width, height,container id, data format, data
-    FusionCharts gauge = new FusionCharts(
-        "angularGauge", 
-        "first_gauge", 
-        "400",
-        "350", 
-        "gauge",
-        "json", 
-        jsonData.toString()
-    );
-%>
-<%= gauge.render() %>
+// Create gauge instance
+// jsonData = “JSON data for the gauge"
+// gaugetype, gaugeID, width, height,container id, data format, data
+FusionCharts gauge = new FusionCharts(
+    "angularGauge", 
+    "first_gauge", 
+    "400",
+    "350", 
+    "gauge",
+    "json", 
+    jsonData.toString()
+);
 ```
 
-Create a container using &lt;div&gt; to render the chart.
+Create a container using `<div>` to render the chart.
 
 ```HTML
 <div id="gauge"></div>
@@ -437,7 +436,8 @@ In this step, we will create an instance of the map type as `world`, set the wid
 To create the map instance follow the ecode given below:
 
 ```jsp
-//Create map instance
+// Create map instance
+// jsonData = “JSON data for the chart”
 // maptype, mapID, width, height,container id, data format, data
 FusionCharts map = new FusionCharts(
     "maps/world", 
@@ -448,10 +448,9 @@ FusionCharts map = new FusionCharts(
     "json", 
     jsonData.toString()
 );
-%>
 ```
 
-Create a container using &lt;div&gt;, to render the chart.
+Create a container using `<div>`, to render the chart.
 
 ```HTML
 <div id="map"></div>
