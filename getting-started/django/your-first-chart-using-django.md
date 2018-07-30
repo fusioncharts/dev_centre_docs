@@ -439,7 +439,7 @@ def myFirstWidget(request):
     })
    # Create an object for the angular-gauge using the FusionCharts class constructor
    # The widget data is passed to the `dataSource` parameter.
-   # angulargaugeWidget = FusionCharts("angulargauge", "myFirstWidget", "100%", "200", "myFirstWidgetContainer", "json", dataSource)
+   angulargaugeWidget = FusionCharts("angulargauge", "myFirstWidget", "100%", "200", "myFirstWidgetContainer", "json", dataSource)
 
    # returning complete JavaScript and HTML code, which is used to generate widget in the browsers.
    return render(request, 'index.html', {'output' : angulargaugeWidget.render()})
