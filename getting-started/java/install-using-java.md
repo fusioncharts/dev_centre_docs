@@ -75,15 +75,16 @@ Create a JSP file and follow the steps given below:
 The consolidated code is shown below:
 
 ```html
-<head>
-    <meta charset="utf-8">
-    <title>FusionCharts</title>
-    <!-- FusionCharts -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-    <!-- FusionCharts JSP Wrapper -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.java"></script>
-</head>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+   pageEncoding="ISO-8859-1"%>
+   <%@page import="java.util.*" %>
+<%@page import="fusioncharts.FusionCharts" %>
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+   pageEncoding="ISO-8859-1"%>
+   <%@page import="java.util.*" %>
+<%@page import="fusioncharts.FusionCharts" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
 ```
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java '@@open-newtab').
