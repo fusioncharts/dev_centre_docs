@@ -70,16 +70,13 @@ Create a PHP file and follow the steps given below:
 
 The consolidated code is shown below:
 
-```html
-<head>
-    <meta charset="utf-8">
-    <title>FusionCharts</title>
-    <!-- FusionCharts -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-    <!-- FusionCharts PHP Wrapper -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.php"></script>
-</head>
+```HTML
+<!DOCTYPE html>
+<?php
+    /* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.*/
+    include("../includes/fusioncharts.php");
+?>
+<html>
 ```
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php '@@open-newtab').
