@@ -108,3 +108,5 @@ $("#dataTable").convertToFusionCharts({
 The `convertToFusionCharts` method is used to convert the data contained in the table to the JSON/XML format, in which data is consumed by the chart. It is important to provide a valid chart container in the `renderAt` parameter in the chart configuration. If `renderAt` is not provided then the chart will be drawn next to the table. The return value of the function is a jQuery object containing all the newly created instances of FusionCharts.
 
 Refer [here]({% site.baseurl %}/using-with-javascript-libraries/jquery/api-reference "@@open-newtab") for more details on this method.
+
+<script pagespeed_no_defer="" type="text/javascript" data-chart='true' src='{% site.baseurl %}/js/rendering-charts-from-html-tables.js'></script>
