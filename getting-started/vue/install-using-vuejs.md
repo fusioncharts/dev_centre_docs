@@ -238,32 +238,19 @@ To include the `fusioncharts` class, copy the following line of code:
 ```JavaScript
 import FusionCharts from 'fusioncharts/core';
 import Charts from 'fusioncharts/charts';
-
-Note: To use charts and gauges from PowerCharts and Widgets, import their respective modules using:
-
-import PowerCharts from 'fusioncharts/powercharts'; // for PowerCharts
-import Widgets from 'fusioncharts/widgets'; // for Widgets
-```
-
-To add chart dependency, copy the following line of code:
-
-```JavaScript
-// FusionCharts.addDep([ChartType])
-
-FusionCharts.addDep(Charts);
 ```
 
 **Include only specific chart modules:**
 
 To register using a specific chart type, import the specific chart instead of all the charts after importing the `fusioncharts` class. Also, you need to add dependencies for the specific chart type, as shown in the code below:
 
-To include the `fusioncharts` class, copy the following line of code:
+**Step 1:** Include the `fusioncharts` class
 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core';
 ```
 
-To include the specific chart from `viz` folder, copy the following line of code:
+**Step 2:** Include the specific chart from `viz` folder
 
 ```JavaScript
 // import ChartType from 'fusioncharts/viz/[ChartType]'
@@ -271,98 +258,18 @@ To include the specific chart from `viz` folder, copy the following line of code
 import Column2D from 'fusioncharts/viz/column2d'
 ```
 
-To add chart dependency, copy the following line of code:
-
-```JavaScript
-// FusionCharts.addDep(ChartType);
-
-FusionCharts.addDep(Column2D);
-```
-
-**Register using multiple chart types:**
-
-To register using multiple chart types, import the specific charts instead of all the charts after importing the `fusioncharts` class. Also, you need to add the dependency for all the specific chart types as shown in the code below:
-
-To include the `fusioncharts` class, copy the following line of code:
-
-```JavaScript
-import FusionCharts from 'fusioncharts/core';
-```
-
-To include more than one chart from `viz` folder, copy the following line of code:
-
-```JavaScript
-// import ChartType from 'fusioncharts/viz/[ChartType]'
-
-import Column2D from 'fusioncharts/viz/column2d';
-import Line2D from 'fusioncharts/viz/line2d';
-```
-
-To add chart dependency, copy the following line of code:
-
-```JavaScript
-// FusionCharts.addDep(ChartType);
-
-FusionCharts.addDep(Column2D);
-FusionCharts.addDep(Line2D);
-```
-
-### Step 4: Register the vue-component
-
-Once the `fusioncharts` class is registered you need to register the `vue-component`. You can do this in two modes:
+**Step 3:** Register the **VueFusionCharts** component:
 
 **Globally**
 
-In your JavaScript code, use the `Vue.use()` method to register the `vue-fusioncharts` component globally. Registering the component globally allows you to use them in the template of any root Vue instance created after registration.
-
-To include the `vue` component, copy the following line of code:
-
 ```JavaScript
-import Vue from 'vue';
-```
-
-To include the `vue-fusioncharts` component, copy the following line of code:
-
-```JavaScript
-import VueFusionCharts from 'vue-fusioncharts';
-```
-
-To include the `fusioncharts` class, copy the following line of code:
-
-```JavaScript
-import FusionCharts from 'fusioncharts/core';
-```
-
-To include the specific chart from `viz` folder, copy the following line of code:
-
-```JavaScript
-// import ChartType from 'fusioncharts/viz/[ChartType]'
-
-import Column2D from 'fusioncharts/viz/column2d';
-```
-
-To add chart dependency, copy the following line of code:
-
-```JavaScript
-// FusionCharts.addDep(ChartType);
-
-FusionCharts.addDep(Column2D);
-```
-
-To register the **VueFusionCharts** component globally, copy the following line of code:
-
-```JavaScript
-Vue.use(VueFusionCharts);
+Vue.use(VueFusionCharts, FusionCharts, Column2D);
 ```
 
 **Locally**
 
-Registering components globally ensures that even if you want to stop using that component, it will be a part of your final build. This results in an increase in JavaScript code that the users have to download. To avoid bloated code, we recommend registering the component locally. 
-
-In your JavaScript code, use the `Vue.component()` method to register the `vue-fusioncharts` component locally. To register locally, use `Vue.component()` instead of `Vue.use()`, the rest of the code remains same. Refer to the code below:
-
 ```JavaScript
-Vue.component('fusioncharts', FCComponent);
+Vue.component('fusioncharts', VueFusionCharts, FusionCharts, Column2D);
 ```
 
 ### Include Maps via npm
