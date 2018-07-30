@@ -23,7 +23,7 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
+> It is recommended that you copy the files/folders from `fusioncharts-suite-xt > js` folder to the STATIC folder of your application.
 
 * The download package also contains **fusioncharts.py** file under `fusioncharts-suite-xt > integrations > django > fusioncharts-wrapper` folder. The folder structure is shown below:
 
@@ -59,6 +59,14 @@ After that, you can include the FusionCharts JavaScript library in your web appl
 
 **Step 2:** Include the theme files in the `static > FusionCharts` folder in your project. This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
 
+Add the following code to `templates > index.html` file:
+
+```HTML
+{% load static %}
+<script type="text/javascript" src="{% static "path/to/local/fusioncharts.js" %}"></script>
+<script type="text/javascript" src="{% static "path/to/local/themes/fusioncharts.theme.fusion.js" %}"></script>
+```
+
 This completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/django/your-first-chart-using-django '@@open-newtab').
 
 ## Installing FusionMaps (map visualizations) for your project
@@ -70,11 +78,12 @@ In the downloaded package, you’ll find the `fusioncharts.maps.js` file and onl
 
 To render a map, you need to:
 
-* Place the `fusioncharts.js` file (core FusionCHarts library) inside the `static > FusionCharts` folder in your project.
-* Insert the ``<script>`` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The ``<script>`` tag looks like as shown below:
+* Place the `fusioncharts.js` file (core FusionCharts library) inside the `static > FusionCharts` folder in your project.
+* Insert the following line of code to the `templates > index.html` file:
 
 ```html
 {% load static %} 
+<script type="text/javascript" src="{% static "fusioncharts/fusioncharts.js" %}"></script>
 <script type="text/javascript" src="{% static "fusioncharts/fusionmaps.js" %}"></script>
 <script type="text/javascript" src="{% static "fusioncharts/maps/fusioncharts.world.js" %}"></script>
 ```
@@ -113,6 +122,6 @@ The FusionCharts Suite download package also contains the predefined theme files
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
-Include the theme files in the `static > FusionCharts` folder in your project. This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
+Include the theme files in the `static > FusionCharts` folder in the STATIC folder of your project. This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
 
 > Including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme you have to set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
