@@ -76,13 +76,13 @@ After that, you can include the FusionCharts JavaScript library in the web appli
 **Step 1:** Include React core library
 
 ```HTML
-<script type="text/javascript" src="path/to/local/react.js"></script>
-<script type="text/javascript" src="path/to/local/react-dom.js"></script>
+<script type="text/javascript" src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+<script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
 ```
 **Step 2:** Include Babel for JSX transpiling
 
 ```HTML
-<script type="text/javascript" src="path/to/local/babel-core.js"></script>
+<script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
 ```
 
 **Step 3:** Include the FusionCharts package
