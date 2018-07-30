@@ -81,16 +81,16 @@ After that, you can include the file in your web applications and start building
 <script type="text/JavaScript" src="path/to/local/vue.js"></script>
 ```
 
-**Step 2:** Include the vue-fusioncharts module:
-
-```HTML
-<script type="text/JavaScript" src="path/to/local/vue-fusioncharts.js"></script>
-```
-
-**Step 3:** Include the FusionCharts package:
+**Step 2** Include the FusionCharts package:
 
 ```HTML
 <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
+```
+
+**Step 3:** Include the vue-fusioncharts module:
+
+```HTML
+<script type="text/JavaScript" src="path/to/local/vue-fusioncharts.js"></script>
 ```
 
 **Step 4:** Include the theme file. This step is optional, the chart will render with the default theme even if the theme file is not included.
@@ -111,6 +111,7 @@ The consolidated code looks like as shown below:
     <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
     <!-- Vue-FusionCharts -->
     <script type="text/JavaScript" src="path/to/local/vue-fusioncharts.js"></script>
+    <!-- Fusion Theme -->
     <script type="text/JavaScript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
 </head>
 ```
@@ -300,7 +301,6 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 * Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme)
 
 To include the definition files placed in **fusioncharts/themes**, follow the steps shown below:
-
 
 In your JavaScript code, use the `Vue.use()` method to register the `vue-fusioncharts` component.
 
