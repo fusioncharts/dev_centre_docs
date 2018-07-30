@@ -11,7 +11,7 @@ btn.addEventListener("click", function(){
         var salesChart = new FusionCharts({
             type: 'mscolumn2d',
             renderAt: 'chart-container',
-            width: '500',
+            width: '700',
             height: '400',
             dataFormat: 'json',
             dataSource: {
@@ -20,7 +20,7 @@ btn.addEventListener("click", function(){
         "xaxisname": "Month",
         "yaxisname": "Units",
         "bgcolor": "FFFFFF",
-        "theme": "fint"
+        "theme": "fusion"
     },
     "categories": [
         {
