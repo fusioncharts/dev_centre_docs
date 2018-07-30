@@ -77,48 +77,13 @@ The `firstchart` action is defined to create the column 2D chart
 The code of the instance of the chart is given below:
 
 ```
+# Chart rendering
 chart = Fusioncharts::Chart.new({
-    width: "700",
-    height: "400",
-    type: "column2d",
-    renderAt: "chartContainer",
-    dataSource: {
-        // Chart Configuration
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion",
-        },
-        // Chart Data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    }
+    width: “700”,
+    height: “400",
+    type: “column2d”,
+    renderAt: “chartContainer”,
+    dataSource: chartJSONDataStr # Variable which has chart data in JSON format
 })
 ```
 
@@ -285,104 +250,7 @@ Given below is a brief description of the constructor parameters:
   </tr>
 </table>
 
-
->  It is not necessary that you assign values for all parameters during initialization. The order of parameters, however, needs to be preserved. Also, you need to make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before you run the application. If not, either the chart will not render at all or it will not render the way you want it to. </p>
-
-### Methods under the Chart Class
-
-Given below is a brief description of the methods in the `Chart` class:
-
-<table>
-  <tr>
-    <th>Method Name</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>`SetChartParameter`</td>
-    <td>It is used to set or modify the values for chart parameters like `chartType`, `chartWidth`, `chartHeight`, etc. This method takes the following parameters:
-
-`param`:
-Type: enum
-Description: It is used to specify the name of the chart parameter that you want to set/modify. For example, `Chart.ChartParameter.chartType`
-
-`value`:
-Type: String
-Description: It is used to specify the value for the chart parameter. For example, `column2d`.</td>
-  </tr>
-  <tr>
-    <td>`GetChartParameter`</td>
-    <td>It is used to get the value of any chart parameter. This method takes the following parameters:
-
-`param`:
-Type: enum
-Description: It is used to specify the name of the chart parameter whose value you want to get. For example, `Chart.ChartParameter.chartType`</td>
-  </tr>
-  <tr>
-    <td>`SetData`</td>
-    <td>It is used to set the data source for the chart. This method takes the following parameters:
-
-`dataSource`:
-Type: String
-Description: It is used to specify the data for the chart. For example, `data/data.xml`.
-
-`format`:
-Type: enum
-Description: It is used to specify the format of the data source. This is an optional parameter.</td>
-  </tr>
-</table>
-
-## The Render() Method
-
-Given below is a brief description of the parameters that can be passed using this method:
-
-<table>
-  <tr>
-    <th>Parameter</th>
-    <th>Type</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>`chartType`
-</td>
-    <td>String</td>
-    <td>It is used to specify the type of chart to be rendered.</td>
-  </tr>
-  <tr>
-    <td>`chartId`</td>
-    <td>String</td>
-    <td>It is used to specify a unique identifier for the chart. If multiple charts are rendered on the same HTML page, each chart is referred to using its unique ID.</td>
-  </tr>
-  <tr>
-    <td>`chartWidth`</td>
-    <td>String</td>
-    <td>It is used to specify the width of the chart, in pixels.</td>
-  </tr>
-  <tr>
-    <td>`chartHeight`</td>
-    <td>String</td>
-    <td>It is used to specify the height of the chart, in pixels.</td>
-  </tr>
-  <tr>
-    <td>`dataFormat`</td>
-    <td>String</td>
-    <td>It is used to specify the type of data that will be passed to the chart. This attribute takes the following values: `json`, `xml`, `jsonurl`, and `xmlurl`. </td>
-  </tr>
-  <tr>
-    <td>`dataSource`</td>
-    <td>String</td>
-    <td>It specifies the source from where the data will be fetched, depending on the value passed to the `dataFormat` attribute.</td>
-  </tr>
-  <tr>
-    <td>`bgColor`</td>
-    <td>String</td>
-    <td>It is used to specify the hex code for the background color of the chart.</td>
-  </tr>
-  <tr>
-    <td>`bgOpacity`</td>
-    <td>String</td>
-    <td>It is used to specify the background opacity for the chart. This attribute takes values between 0 (transparent) and 100 (opaque).</td>
-  </tr>
-</table>
+> It is not necessary that you assign values for all parameters during initialization. The order of parameters, however, needs to be preserved. Also, you need to make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before you run the application. If not, either the chart will not render at all or it will not render the way you want it to. </p>
 
 ## Create your first gauge
 
@@ -418,48 +286,16 @@ For this example, we have created a controller named `examples` and view named `
 
 The `firstwidget` action is defined to create the angular gauge.
 
-The code of the instance of the chart is given below:
+The code of the instance of the gauge is given below:
 
 ```javascript
-#Rendering the widget
+# Rendering the gauge
 widget = Fusioncharts::Chart.new({
-    width: "450",
-    height: "250",
-    type: "angulargauge",
-    renderAt: "widgetContainer",
-    dataSource: {
-        // Chart Configuration
-        "chart": {
-            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-            "lowerLimit": "0",
-            "upperLimit": "100",
-            "showValue": "1",
-            "numberSuffix": "%",
-            "theme": "fusion",
-            "showToolTip": "0"
-        },
-        // Chart Data
-        "colorRange": {
-            "color": [{
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#F2726F"
-            }, {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#FFC533"
-            }, {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#62B58F"
-            }]
-        },
-        "dials": {
-            "dial": [{
-                "value": "81"
-            }]
-        }
-    }
+    width: “450”,
+    height: “250",
+    type: “angulargauge”,
+    renderAt: “widgetContainer”,
+    dataSource: widgetJSONStr # Variable which has gauge data in JSON format
 })
 ```
 
@@ -552,10 +388,9 @@ def getWidget
 
     end
 
-def firstwidget
-@myWidget = getWidget
-end
-
+    def firstwidget
+        @myWidget = getWidget
+    end
 end      
 ```
 
@@ -597,74 +432,14 @@ For this example, we have created a controller named `examples` and view named `
 The code of the instance of the chart is given below:
 
 ```javascript
-# Rendering the Map
+# Rendeing the Map
 map = Fusioncharts::Chart.new({
-    width: "800",
-    height: "550",
-    type: "maps/world",
-    renderAt: "mapContainer",
-    dataSource: {
-        // Map Configuration
-        "chart": {
-            "caption": "Average Annual Population Growth",
-            "subcaption": " 1955-2015",
-            "numbersuffix": "%",
-            "includevalueinlabels": "1",
-            "labelsepchar": ": ",
-            "entityFillHoverColor": "#FFF9C4",
-            "theme": "fusion"
-        },
-        // Aesthetics; ranges synced with the slider
-        "colorrange": {
-            "minvalue": "0",
-            "code": "#FFE0B2",
-            "gradient": "1",
-            "color": [
-                {
-                    "minvalue": "0.5",
-                    "maxvalue": "1.0",
-                    "color": "#FFD74D"
-                }, {
-                    "minvalue": "1.0",
-                    "maxvalue": "2.0",
-                    "color": "#FB8C00"
-                }, {
-                    "minvalue": "2.0",
-                    "maxvalue": "3.0",
-                    "color": "#E65100"
-                }
-            ]
-        },
-        // Source data as JSON --> id represents countries of world.
-        "data": [{
-                "id": "NA",
-                "value": ".82",
-                "showLabel": "1"
-            }, {
-                "id": "SA",
-                "value": "2.04",
-                "showLabel": "1"
-            }, {
-                "id": "AS",
-                "value": "1.78",
-                "showLabel": "1"
-            }, {
-                "id": "EU",
-                "value": ".40",
-                "showLabel": "1"
-            }, {
-                "id": "AF",
-                "value": "2.58",
-                "showLabel": "1"
-            }, {
-                "id": "AU",
-                "value": "1.30",
-                "showLabel": "1"
-            }
-        ]
-    }
+    width: “600”,
+    height: “400",
+    type: “maps/world”,
+    renderAt: “mapContainer”,
+    dataSource: mapJSONStr # Variable which has Map data in JSON format
 })
-
 ```
 
 The template of the above sample is shown below:
@@ -760,10 +535,9 @@ def getMap
     })
     end
 
-def firstmap
-@myMap = getMap
-end
-
+    def firstmap
+        @myMap = getMap
+    end
 end
 ```
 
