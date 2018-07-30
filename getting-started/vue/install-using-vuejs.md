@@ -111,6 +111,7 @@ The consolidated code looks like as shown below:
     <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
     <!-- Vue-FusionCharts -->
     <script type="text/JavaScript" src="path/to/local/vue-fusioncharts.js"></script>
+    <!-- Fusion Theme -->
     <script type="text/JavaScript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
 </head>
 ```
@@ -191,26 +192,23 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 
 > Including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme you have to set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
 
-## Include FusionCharts via **npm**
+## Include FusionCharts via npm
 
 The `fusioncharts` package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
 
 This section outlines the steps to be executed for installing all the node modules via npm and rendering charts using the **vue-fusioncharts** component.
 
-### Step 1: Install `fusioncharts` package
 
-To install the `fusioncharts` package via npm package, run the command below:
-
-```PowerShell
-$ npm install fusioncharts --save
-```
-
-### Step 2: Install the `vue-fusioncharts` module via npm
-
-To install the `vue-fusioncharts` module via npm package, run the command below:
+**Step 1:** Install the `vue-fusioncharts` module via npm
 
 ```PowerShell
 $ npm install vue-fusioncharts --save
+```
+
+**Step 2:** Install `fusioncharts` package
+
+```PowerShell
+$ npm install fusioncharts --save
 ```
 
 You can also combine the above commands (to install `fusioncharts` and `vue-fusioncharts`) in a single line, as shown below:
@@ -219,11 +217,7 @@ You can also combine the above commands (to install `fusioncharts` and `vue-fusi
 $ npm install fusioncharts vue-fusioncharts --save
 ```
 
-### Step 3: Include the fusioncharts module
-
-Once the installation is done, you need to register the `fusioncharts` module. You can register in multiple ways like:
-
-**Register using all charts:**
+**Step 3:** Include the fusioncharts module
 
 To include the `vue` component, copy the following line of code:
 
