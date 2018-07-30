@@ -73,16 +73,16 @@ Installation of FusionCharts Suite XT is simply copying and pasting the JavaScri
 
 After that, you can include the FusionCharts JavaScript library in the web applications and start building your charts, gauges, and maps. Create an HTML file and follow the steps below:
 
-**Step 1:** Include React core library
+**Step 1:** Include [React](https://reactjs.org/ '@@open-newtab') core library:
 
 ```HTML
-<script type="text/javascript" src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-<script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+<script type="text/javascript" src="path/to/local/react.js"></script>
+<script type="text/javascript" src="path/to/local/react-dom.js"></script>
 ```
-**Step 2:** Include Babel for JSX transpiling
+**Step 2:** Include [Babel](https://babeljs.io/ '@@open-newtab') for [JSX](https://reactjs.org/docs/introducing-jsx.html '@@open-newtab') transpiling
 
 ```HTML
-<script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+<script type="text/javascript" src="path/to/local/babel-core.js"></script>
 ```
 
 **Step 3:** Include the FusionCharts package
@@ -97,9 +97,7 @@ After that, you can include the FusionCharts JavaScript library in the web appli
 <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
 ```
 
-**Step 5:** Include the theme file
-
-This step is optional, the chart will render with the default theme even if the theme file is not included.
+**Step 5:** Include the theme file. This step is optional, the chart will render with the default theme even if the theme file is not included.
 
 ```HTML
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
