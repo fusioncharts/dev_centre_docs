@@ -109,7 +109,8 @@ The full code for the above sample is given below:
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <title>Insert title here</title>
-        <script src="fusioncharts.js"></script>
+        <script src="path/to/local/fusioncharts.js"></script>
+        <script src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
     </head>
     <body>
         <div id="chart"></div>
@@ -425,7 +426,8 @@ The full code for the above sample is given below:
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <title>Insert title here</title>
-        <script src="fusioncharts.js"></script>
+        <script src="path/to/local/fusioncharts.js"></script>
+        <script src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
     </head>
     <body>
         <div id="gauge"></div>
@@ -535,7 +537,7 @@ To create the map instance follow the ecode given below:
 //Create map instance
 // maptype, mapID, width, height,container id, data format, data
 FusionCharts map = new FusionCharts(
-    "world", 
+    "maps/world", 
     "first_map", 
     "800",
     "650", 
@@ -597,7 +599,9 @@ The full code for the above sample is given below:
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <title>Insert title here</title>
-        <script src="fusioncharts.js"></script>
+        <script src="path/to/local/fusioncharts.js"></script>
+        <script src="path/to/local/maps/fusioncharts.world.js"></script>
+        <script src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
     </head>
     <body>
         <div id="map"></div>
@@ -661,7 +665,7 @@ The full code for the above sample is given below:
             //Create map instance
             // maptype, mapID, width, height,container id, data format, data
             FusionCharts map = new FusionCharts(
-                "world", 
+                "maps/world", 
                 "first_map", 
                 "800",
                 "650", 

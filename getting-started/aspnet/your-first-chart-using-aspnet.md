@@ -147,8 +147,7 @@ The full code and the common aspx template for the above sample is given below:
 
             protected void Page_Load(object sender, EventArgs e) {
                 //store label-value pair
-                var dataValuePair = new List < KeyValuePair < string,
-                    double >> ();
+                var dataValuePair = new List < KeyValuePair < string, double >> ();
 
                 dataValuePair.Add(new KeyValuePair < string, double > ("Venezuela", 290));
                 dataValuePair.Add(new KeyValuePair < string, double > ("Saudi", 260));
@@ -831,7 +830,7 @@ The code to render a chart using `.aspx.cs` or `.aspx.vb` file is given below:
      //Create map instance
     // map type, mapid, width, height, data format, data
 
-    Chart MyFirstMap = new Chart("world", "first_map", "800", "500", "json", jsonData.ToString());
+    Chart MyFirstMap = new Chart("maps/world", "first_map", "800", "500", "json", jsonData.ToString());
     //render map
     Literal1.Text = MyFirstMap.Render();
 </code></pre>
@@ -840,7 +839,7 @@ The code to render a chart using `.aspx.cs` or `.aspx.vb` file is given below:
 
 <div class='tab xml-tab'>
 <pre><code class="custom-hlc language-cv">
-    Dim MyFirstMap As New Chart("world", "first_map", "800", "500", "json", jsonData.ToString())
+    Dim MyFirstMap As New Chart("maps/world", "first_map", "800", "500", "json", jsonData.ToString())
     'render map
     Literal1.Text = MyFirstMap.Render()
 </code></pre>
@@ -874,6 +873,7 @@ The full code for the above sample is given below:
 
     &lt;body&gt;
         &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
         &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
         &lt;div style="text-align:center"&gt;
             &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
@@ -1019,6 +1019,7 @@ The full code for the above sample is given below:
 
     &lt;body&gt;
         &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
         &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
         &lt;form id="form1" runat="server"&gt;
             &lt;div&gt;
@@ -1034,7 +1035,8 @@ The full code for the above sample is given below:
 <pre><code class="custom-hlc language-javascript">
     Imports FusionCharts.Charts
     Partial Class map
-    Inherits System.Web.UI.Page 'Create colorRange class
+    Inherits System.Web.UI.Page
+    'Create colorRange class
     'It will store Min range Max range And specific color code for each range
     Class ColorRange
     Private lowerLimit As Double
