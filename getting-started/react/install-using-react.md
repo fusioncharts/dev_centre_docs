@@ -299,24 +299,99 @@ import Column2D from 'fusioncharts/viz/column2d';
 
 The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
 
-**Step 1:** Include the core FusionCharts library
+**Step 1:** Include React FusionCharts plugin
+
+```JavaScript
+import ReactFC from 'react-fusioncharts';
+```
+
+**Step 2:** Include the core FusionCharts library
 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core';
 ```
 
-**Step 2:** Load the `FusionMaps` renderer and the map definition file
+**Step 3:** Load the `FusionMaps` renderer and the map definition file
 
 ```JavaScript
-import FusionCharts from 'fusioncharts';
-import Maps from 'fusioncharts/maps';
-import World from 'fusioncharts/maps/es/fusioncharts.world';
-```
+import FusionCharts from 'fusioncharts/core';
+    import FusionMaps from 'fusioncharts/maps';
+    import World from 'fusioncharts/maps/es/fusioncharts.world';
 
-**Step 3:** Include React FusionCharts plugin
-
-```JavaScript
-import ReactFC from 'react-fusioncharts';
+    // Add the chart as dependency
+    // E.g. FusionCharts.addDep(ChartType)
+    FusionCharts.addDep(FusionMaps);
+    FusionCharts.addDep(World);
+        
+    // Create an Instance with map options
+    var salesByState =   new  FusionCharts({
+        type: 'world', // Map type
+        renderAt: 'chart-container', // Container
+        width: '800', // Width of the chart
+        height: '550', // Height of the chart
+        dataFormat: 'json', // Data Type
+        dataSource: {
+        chart: {
+            // Map Configuration
+            "chart": {
+                "caption": "Average Annual Population Growth",
+                "subcaption": " 1955-2015",
+                "numbersuffix": "%",
+                "includevalueinlabels": "1",
+                "labelsepchar": ": ",
+                "entityFillHoverColor": "#FFF9C4",
+                "theme": "fusion"
+            },
+            // Aesthetics; ranges synced with the slider
+            "colorrange": {
+                "minvalue": "0",
+                "code": "#FFE0B2",
+                "gradient": "1",
+                "color": [{
+                    "minvalue": "0.5",
+                    "maxvalue": "1.0",
+                    "color": "#FFD74D"
+                }, {
+                    "minvalue": "1.0",
+                    "maxvalue": "2.0",
+                    "color": "#FB8C00"
+                }, {
+                    "minvalue": "2.0",
+                    "maxvalue": "3.0",
+                    "color": "#E65100"
+                }]
+            },
+            // Source data as JSON --> id represents countries of world.
+            "data": [{
+                "id": "NA",
+                "value": ".82",
+                "showLabel": "1"
+            }, {
+                "id": "SA",
+                "value": "2.04",
+                "showLabel": "1"
+            }, {
+                "id": "AS",
+                "value": "1.78",
+                "showLabel": "1"
+            }, {
+                "id": "EU",
+                "value": ".40",
+                "showLabel": "1"
+            }, {
+                "id": "AF",
+                "value": "2.58",
+                "showLabel": "1"
+            }, {
+                "id": "AU",
+                "value": "1.30",
+                "showLabel": "1"
+            }]
+        }
+    }
+});
+// Render
+chartInstance.render()
 ```
 
 **Step 4:** Add the map and definition as the dependency to the core
@@ -389,7 +464,7 @@ import ThemeEngine from 'fusioncharts/features/theme-engine';
 **Step 3:** Import the theme file
 
 ```JavaScript
-import Fusion from 'fusioncharts/themes/fusioncharts.fusion';
+import Fusion from 'fusioncharts/themes/es/fusioncharts.fusion';
 ```
 
 **Step 4:** Add ThemeEngine and Fusion as dependency to the core
