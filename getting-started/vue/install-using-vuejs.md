@@ -213,12 +213,6 @@ $ npm install vue-fusioncharts --save
 $ npm install fusioncharts --save
 ```
 
-You can also combine the above commands (to install `fusioncharts` and `vue-fusioncharts`) in a single line, as shown below:
-
-```PowerShell
-$ npm install fusioncharts vue-fusioncharts --save
-```
-
 **Step 3:** Include the `vue` component
 
 ```JavaScript
@@ -231,15 +225,13 @@ import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
 ```
 
-
-
 **Step 5:** Include `fusioncharts` core library
 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core';
 ```
 
-**Step 6:** include specific chart modules
+**Step 6:** Include specific chart modules
 
 ```JavaScript
 import Charts from 'fusioncharts/charts';
