@@ -102,7 +102,7 @@ Now, To add the FusionCharts Rails wrapper, use any of the following process:
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails '@@open-newtab').
 
-## Installing FusionMaps (map visualizations) for your project
+## Installing FusionMaps for your project
 
 FusionCharts Suite XT provides over `1400+` data-driven maps under the product FusionMaps. 
 In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 

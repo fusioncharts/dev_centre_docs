@@ -82,7 +82,7 @@ The consolidated code is shown below:
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript '@@open-newtab').
 
-## Installing FusionMaps (map visualizations) for your project
+## Installing FusionMaps for your project
 
 FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. 
 In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
@@ -166,10 +166,9 @@ The `fusioncharts` package for `npm` can now be used in two different ways:
 
 * **FusionCharts ES module** - From v3.13.0 we are providing the FusionCharts library as ES (ECMAScript) modules within the `fusioncharts` npm package. This package let's you selectively add modules as per your requirement. For example - You need to render the **angular guage**, **pie chart** and the **column chart**. The FusionCharts ES module allows you to cherry pick only these visualizations and use in your application. 
  
- Similarly, you can also select specific features to be used in your application. For example - You can opt only to show **crosslines** for `zoomline` charts. The folders of the module is shown in the table below:
+The folders of the module is shown in the table below:
 
-
- <table>
+<table>
     <tr>
         <th>Folder</th>
         <th>Description</th>
@@ -202,43 +201,9 @@ The `fusioncharts` package for `npm` can now be used in two different ways:
         <td>`themes/es`</td>
         <td>Contaians all the theme files. </td>
     </tr>
-    <tr>
-        <td>`features`</td>
-        <td>
-            Included optional Features. The optional features are as listed below:
-            <ul>
-                <li>Ignore-case-ext</li>
-                <li>Alert manager</li>
-                <li>Center-label-extension</li>
-                <li>Crossline-adapter</li>
-                <li>csv-transcoder</li>
-                <li>Data-skipping</li>
-                <li>Default-theme</li>
-                <li>Exports-module</li>
-                <li>Input-ext</li>
-                <li>json-url-transcoder</li>
-                <li>Linkedcharts</li>
-                <li>Logo</li>
-                <li>Messagelogger</li>
-                <li>Regression-extension</li>
-                <li>Theme-engine</li>
-                <li>Tooltip-controller</li>
-                <li>xml-transcoder</li>
-                <li>Xml-url-transcoder</li>
-                <li>annotation-ext</li>
-                <li>Batch export</li>
-                <li>Consolidated-tooltip</li>
-                <li>Crossline-zoomline</li>
-                <li>Debugger</li>
-                <li>Highlighter</li>
-                <li>Legend-event-manager-linker</li>
-                <li>Multicanvas-crossline-manager</li>
-            </ul>
-        </td>
-    </tr>
 </table>
 
-* **FusionCharts CJS module (`deprecated`)** - This module is the traditional FusionCharts library which does not allow you to selectively load charts and features. If you want to use an angular gauge you have to include the entire `fusionwidgets` module. 
+* **FusionCharts CJS module (`deprecated`)** - This module is the traditional FusionCharts library which does not allow you to selectively load charts. If you want to use an angular gauge you have to include the entire `fusionwidgets` module. 
 
 The installation of both the module is shown below:
 
@@ -322,35 +287,6 @@ The installation of both the module is shown below:
 &lt;!-- Create an element to render the chart with id as chart-container --&gt;
 &lt;div id="chart-conatiner"&gt;FusionCharts XT will load here!&lt;/div&gt;
 </code></pre>
-<div class="mt-30"><strong>Using optional features</strong></div>
-<div class="pb-10">Optional features reside inside the features folder <strong>fusioncharts/features/</strong></div>
-<div class="mt-20"><strong>ignore-case-ext</strong></div>
-<div class="pb-10">Extension is required if you want all the attributes's case to be ignored , Otherwise the attributes provided must be in lowercase as shown below:</div>
-<pre><code class="custom-hlc language-bash">
-    var gantt = new FusionCharts({
-        type:'column2d',
-        width: '700',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: dataSourceList.gantt
-    }) .render('gantt');
-</code></pre>
-<div class="pb-10">Above example work with the ignore-case-ext, if we don't add the extension we have to choose lowercase version shown below:</div>
-<pre><code class="custom-hlc language-bash">
-    var gantt = new FusionCharts({
-        type:'gantt',
-        width: '750',
-        height: '500',
-        dataformat: 'json',
-        datasource: dataSourceList.gantt
-    }) .render('gantt');
-</code></pre>
-<div class="pb-10">Adding extension is same as adding any other dependency</div>
-<pre><code class="custom-hlc language-json">
-    import IgnoreCaseExt from 'fusioncharts/features/ignore-case-ext';
-    FusionCharts.addDep(IgnoreCaseExt);
-</code></pre>
-<div class="mt-30"><strong>Similarly, you can also import the other optional features (mentioned in the above table).</strong></div>
 </div>
 
 <div class="tab cjs-tab">

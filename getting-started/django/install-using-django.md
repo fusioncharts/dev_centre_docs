@@ -69,7 +69,7 @@ Add the following code to `templates > index.html` file:
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/django/your-first-chart-using-django '@@open-newtab').
 
-## Installing FusionMaps (map visualizations) for your project
+## Installing FusionMaps for your project
 
 FusionCharts Suite XT provides over `1400+` data-driven maps under the product FusionMaps. 
 In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 

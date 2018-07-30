@@ -154,7 +154,7 @@ app.controller('MyController', function($scope) {
 });
 ```
 
-### Installing FusionMaps (map visualizations) for your project
+### Installing FusionMaps for your project
 
 FusionCharts Suite XT provides over `1400+` data-driven maps under the product FusionMaps. 
 
