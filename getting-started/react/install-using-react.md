@@ -214,166 +214,85 @@ The `fusioncharts` package contains files for all charts and widgets and only tw
 
 This section outlines the steps to be executed for installing all the node modules via npm and rendering charts using **react-fusioncharts** component.
 
-**Step 1:** Install `fusioncharts` package
-
-To install the `fusioncharts` package via npm, run the command below:
-
-```PowerShell
-$ npm install fusioncharts --save
-```
-
-**Step 2:** Install the `react-fusioncharts` module
-
-To install the react-fusioncharts module via npm, run the command below:
+**Step 1:** Install the `react-fusioncharts` module:
 
 ```PowerShell
 $ npm install react-fusioncharts --save
 ```
 
-You can also combine the above commands (to install `fusioncharts` and `react-fusioncharts`) in a single line, as shown below:
+**Step 2:** Install `fusioncharts` package:
 
 ```PowerShell
-$ npm install fusioncharts react-fusioncharts --save
+$ npm install fusioncharts --save
 ```
+**Step 3:** Include the `fusioncharts` library:
 
-**Step 3:** Include the `fusioncharts` module
-
-Once the installation is done, you need to register the `fusioncharts` module. You can register by following the steps given below:
-
-### Register using all charts
-
-You can include the fusioncharts class and React FusionCharts plugin using the following process:
-
-**React FusionCharts plugin:**
-
-```JavaScript
-import ReactFC from 'react-fusioncharts';
 ```
-
-**FusionCharts class:**
-
-```JavaSript
-import FusionCharts from 'fusioncharts';
-import Charts from 'fusioncharts/fusioncharts.charts';
-```
-
-**PowerCharts:**
-
-```JavaScript
-// For PowerCharts
-import PowerCharts from 'fusioncharts/fusioncharts.powercharts';
-```
-
-**FusionWidgets**
-
-```JavaScript
-// For Widgets 
-import Widgets from 'fusioncharts/fusioncharts.widgets';
-```
-
-**To add chart (charts, powercharts, widgets) dependencies:
-
-```JavaScript
-// ReactFC.fcRoot(FusionCharts, Charts, [Module]);
-ReactFC.fcRoot(FusionCharts, Charts, PowerCharts, Widgets);
-```
-
-To import specific charts, include the following import statements in your code:
-
-**Gantt Chart**
-
-```JavaScript
-import Gantt from 'fusioncharts/fusioncharts.gantt';
-```
-
-**Treemap**
-
-```JavaScript
-import Treemap from 'fusioncharts/fusioncharts.treemap';
-```
-
-**Zoom Scatter Chart**
-
-```JavaScript
-import ZoomScatter from 'fusioncharts/fusioncharts.zoomscatter';
-```
-
-**ZoomLine Chart**
-
-```JavaScript
-import ZoomLine from 'fusioncharts/fusioncharts.zoomline';
-```
-
-**Overlapped Bar2D and Column2D Charts**
-
-```JavaScript
-import OverlappedBar2D from 'fusioncharts/fusioncharts.overlappedbar2d';
-import OverlappedColumn2D from 'fusioncharts/fusioncharts.overlappedcolumn2d';
-```
-
-### Include only specific modules
-
-To register using a specific chart type you have to:
-
-* Import the `fusioncharts` class and then the specific chart (instead of all the charts). 
-* Add the dependency for the specific chart type.
-
-Refer to the code below:
-
-**Include the `fusioncharts` class:**
-
-```JavaScript
 import FusionCharts from 'fusioncharts/core';
+
 ```
-
-**Include the specific chart from `viz` folder:**
-
-```Javascript
-// import ChartType from 'fusioncharts/viz/[ChartType]';
-import Column2D from 'fusioncharts/viz/column2d';
-```
-
-**Include React FusionCharts plugin:**
+**Step 4**: Include `React-FusionCharts`:
 
 ```JavaScript
 import ReactFC from 'react-fusioncharts';
 ```
 
-**Add Chart Dependency**
-
-```JavaScript
-// ReactFC.fcRoot(FusionCharts, [ChartType]);
-ReactFC.fcRoot(FusionCharts, Column2D);
-```
-
-### Register using multiple chart types
-
-To register using multiple chart types, import the specific charts instead of all the charts after importing the `fusioncharts` class. Also, you need to add the dependencies for all the specific chart types as shown in the code below:
-
-**Include the `fusioncharts` class:**
-
-```JavaScript
-import FusionCharts from 'fusioncharts/core';
-```
-
-**Include the specific chart from `viz` folder:**
-
-```JavaScript
+**Step 5** : Include specific modules:
+// E.g. - import ChartType from fusioncharts/viz/[ChartType]
 import Column2D from 'fusioncharts/viz/column2d';
-import AngularGauge from 'fusioncharts/viz/angulargauge';
-```
 
-**Include React FusionCharts plugin:**
-
-```JavaScript
-import ReactFC from 'react-fusioncharts';
-```
-
-**Add Chart Dependency:**
-
-```JavaScript
-// ReactFC.fcRoot(FusionCharts, [ChartType]);
-ReactFC.fcRoot(FusionCharts, Column2D, AngularGauge);
+/ Add the chart as dependency
+    // E.g. FusionCharts.addDep(ChartType)
+    FusionCharts.addDep(Column2D);
+// Create an Instance with chart options
+    var chartInstance = new FusionCharts({
+        type: 'Column2D',
+        width: '700', // Width of the chart
+        height: '400', // Height of the chart
+        dataFormat: 'json', // Data type
+        renderAt:'chart-container' //container where the chart will render
+        dataSource: {
+            chart: {
+                // Chart Configuration
+                "chart": {
+                    "caption": "Countries With Most Oil Reserves [2017-18]",
+                    "subCaption": "In MMbbl = One Million barrels",
+                    "xAxisName": "Country",
+                    "yAxisName": "Reserves (MMbbl)",
+                    "numberSuffix": "K",
+                    "theme": "fusion",
+                },
+                // Chart Data
+                "data": [{
+                    "label": "Venezuela",
+                    "value": "290"
+                }, {
+                    "label": "Saudi",
+                    "value": "260"
+                }, {
+                    "label": "Canada",
+                    "value": "180"
+                }, {
+                    "label": "Iran",
+                    "value": "140"
+                }, {
+                    "label": "Russia",
+                    "value": "115"
+                }, {
+                    "label": "UAE",
+                    "value": "100"
+                }, {
+                    "label": "US",
+                    "value": "30"
+                }, {
+                    "label": "China",
+                    "value": "30"
+                }]
+            }
+        }
+    });
+    // Render
+    chartInstance.render();
 ```
 
 ## Include Maps via npm
