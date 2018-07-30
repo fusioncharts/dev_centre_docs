@@ -10,9 +10,8 @@
             "subCaption": "Last year",
             "numberPrefix": "$",
             "showPercentInTooltip": "0",
-            "decimals": "1"
-            //Theme
-
+            "decimals": "1",
+            "theme": "fusion" //Theme
         },
         "data": [{
             "label": "Food",
