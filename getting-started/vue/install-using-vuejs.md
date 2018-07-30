@@ -219,46 +219,33 @@ You can also combine the above commands (to install `fusioncharts` and `vue-fusi
 $ npm install fusioncharts vue-fusioncharts --save
 ```
 
-**Step 3:** Include the fusioncharts module
-
-To include the `vue` component, copy the following line of code:
+**Step 3:** Include the `vue` component
 
 ```JavaScript
 import Vue from 'vue';
 ```
 
-To include the 'vue-fusioncharts' component, copy the following line of code:
+**Step 4:** Include 'vue-fusioncharts' component
 
 ```JavaScript
 import VueFusionCharts from 'vue-fusioncharts';
 ```
 
-To include the `fusioncharts` class, copy the following line of code:
+
+
+**Step 5:** Include `fusioncharts` core library
 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core';
+```
+
+**Step 6:** include specific chart modules
+
+```JavaScript
 import Charts from 'fusioncharts/charts';
 ```
 
-**Include only specific chart modules:**
-
-To register using a specific chart type, import the specific chart instead of all the charts after importing the `fusioncharts` class. Also, you need to add dependencies for the specific chart type, as shown in the code below:
-
-**Step 1:** Include the `fusioncharts` class
-
-```JavaScript
-import FusionCharts from 'fusioncharts/core';
-```
-
-**Step 2:** Include the specific chart from `viz` folder
-
-```JavaScript
-// import ChartType from 'fusioncharts/viz/[ChartType]'
-
-import Column2D from 'fusioncharts/viz/column2d'
-```
-
-**Step 3:** Register the **VueFusionCharts** component:
+**Step 7:** Register the **VueFusionCharts** component:
 
 **Globally**
 
