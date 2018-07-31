@@ -55,25 +55,21 @@ chartPresent: false
         <td>This method is an added feature of the jQuery helper and can convert a table containing numeric data to a multi-series chart. In effect, the html table acts as the `dataSource` for the chart that is rendered. The return value is a jQuery object containing all the newly created instances of FusionCharts.<br/>
         The first parameter passed to this method is the chart configuration object. The jQuery selector here corresponds to the table element and, therefore, it is important to provide a valid `renderAt` in the chart configuration. If `renderAt` is not provided then the chart will be drawn next to the table. The `dataFormat` to be provided in the chart configuration is `htmltable`.<br/>
         The optional second parameter passed to this method is the `conversion options` object.<br/>
-
-| Conversion Options | Description |
-| ------------- | ---------- |
-| `chartAttributes` | An object that contains the attribute name and value pairs meant for the resulting chart, like `caption`, `xAxisName` etc. |
-| `major` | A string whose value can be 'row' or 'column'. Most tables, when converted to charts, would yield multi-series charts (unless there is only one row/column) where each row or each column is a separate dataset. This property specifies whether datasets pertain to individual rows or columns. Default value is __row__. |
-| `useLabels` | A boolean value which, when set to true, means that one of the rows or columns (depending on the value of `major`) contains the labels for the chart `categories`. Default value is __true__. |
-| `useLegend` | A boolean value that is similar to `useLabels`. If true, it means that the table has a row or column containing text that will be used for naming each dataset. Default value is __true__. |
-| `labelSource` | A number that maps to a particular row or column in the table. <br>The value is a numeric index starting from __1__, indicating the row or column that has to be parsed to fetch the labels. Therefore, the value __1__ implies the first row, __2__ implies the second row and so on.This option also takes negative values, wherein __-1__ implies the last row, __-2__ implies the second from last row, and so on. <br>The default value is __0__ and in this case the converter module checks if `useLabels` is set to __true__. If yes, the converter module traverses through the table and automatically picks up the row or column to be used. If no row or column is found, the `labels` property is used to provide the labels. |
-| `legendSource` | A number that maps to a particular row or column in the table to mark it as the source of names of the datasets. The usage is similar to `labelSource`. |
-| `ignoreRows` | An array of indices of all the rows that should be ignored while doing the table-to-chart conversion. |
-| `ignoreCols` | An array of indices of all the columns that should be ignored while doing the table-to-chart conversion. |
-| `showLabels` | A boolean value indicating whether the labels will be shown in the final chart output or not. |
-| `showLegend` | A boolean value indicating whether the legend will be shown in the final chart output or not.|
-|`seriesColors` | An array of hexadecimal color values (e.g. FF0000 or AABB55) that should be assigned to the datasets using one-to-one mapping. |
-| `convertBlankTo` | A number that should be used to convert all blank data cells in the table to valid data. Default value is __0__. |
-| `hideTable` | A boolean value indicating whether to hide the table, once the chart is ready, or keep it as is. Default is `false`. |
-| `labels` | An array of strings that corresponds to the labels to be used while rendering the chart. Among all the ways of specifying labels for the chart, this user-generated array gets the highest preference.  |
-| `legend` | An array of strings that correspond to the dataset names to be used while rendering the chart. Similar to `labels`. |
-
+        `chartAttributes`: An object that contains the attribute name and value pairs meant for the resulting chart, like `caption`, `xAxisName` etc.<br/>
+        `major`: A string whose value can be 'row' or 'column'. Most tables, when converted to charts, would yield multi-series charts (unless there is only one row/column) where each row or each column is a separate dataset. This property specifies whether datasets pertain to individual rows or columns. Default value is __row__.<br/>
+        `useLabels`: A boolean value which, when set to true, means that one of the rows or columns (depending on the value of `major`) contains the labels for the chart `categories`. Default value is __true__.<br/>
+        `useLegend`: A boolean value that is similar to `useLabels`. If true, it means that the table has a row or column containing text that will be used for naming each dataset. Default value is __true__.<br/>
+        `labelSource`: A number that maps to a particular row or column in the table. <br>The value is a numeric index starting from __1__, indicating the row or column that has to be parsed to fetch the labels. Therefore, the value __1__ implies the first row, __2__ implies the second row and so on.This option also takes negative values, wherein __-1__ implies the last row, __-2__ implies the second from last row, and so on. <br>The default value is __0__ and in this case the converter module checks if `useLabels` is set to __true__. If yes, the converter module traverses through the table and automatically picks up the row or column to be used. If no row or column is found, the `labels` property is used to provide the labels.<br/> 
+        `legendSource`: A number that maps to a particular row or column in the table to mark it as the source of names of the datasets. The usage is similar to `labelSource`.<br/>
+        `ignoreRows`: An array of indices of all the rows that should be ignored while doing the table-to-chart conversion.<br/>
+        `ignoreCols`: An array of indices of all the columns that should be ignored while doing the table-to-chart conversion.<br/>
+        `showLabels`: A boolean value indicating whether the labels will be shown in the final chart output or not.<br/>
+        `showLegend`: A boolean value indicating whether the legend will be shown in the final chart output or not.<br/>
+        `seriesColors`: An array of hexadecimal color values (e.g. FF0000 or AABB55) that should be assigned to the datasets using one-to-one mapping.<br/>
+        `convertBlankTo`: A number that should be used to convert all blank data cells in the table to valid data. Default value is __0__.<br/>
+        `hideTable`: A boolean value indicating whether to hide the table, once the chart is ready, or keep it as is. Default is `false`.<br/>
+        `labels`: An array of strings that corresponds to the labels to be used while rendering the chart. Among all the ways of specifying labels for the chart, this user-generated array gets the highest preference.<br/>
+        `legend`: An array of strings that correspond to the dataset names to be used while rendering the chart. Similar to `labels`.<br/>
         </td>
     </tr>
     <tr>
