@@ -89,7 +89,7 @@ The consolidated code is shown below:
 <html>
 ```
 
-This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java '@@open-newtab').
+This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java'@@open-newtab').
 
 ## Installing FusionMaps for your project
 
