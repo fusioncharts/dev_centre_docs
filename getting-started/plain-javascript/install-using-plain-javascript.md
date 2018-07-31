@@ -56,7 +56,7 @@ Installation of FusionCharts Suite XT is simply copying and pasting the JavaScri
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. Create an HTML file and follow the steps given below:
 
-**Step 1:** Include the `fusioncharts.js` (FusionCharts core library) file. This file is required to render any **chart, widget and map.**
+**Step 1:** Include the `fusioncharts.js` (FusionCharts core library) file. This file is required to render any **chart, widget and map.
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
@@ -133,7 +133,7 @@ The consolidated code is shown below:
 
 ## Themes
 
-[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to apply centralized themes to any number of charts.
+[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allow you to apply centralized themes to any number of charts.
 
 In a theme file, we can centralize the following aspects of all the charts, gauges and maps:
 
@@ -699,7 +699,7 @@ Therefore, assuming that you need to render the map of California, the alias nam
 
 ## Include Themes via **npm**
 
-[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to apply centralized themes to any number of charts.
+[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allow you to apply centralized themes to any number of charts.
 
 In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
 

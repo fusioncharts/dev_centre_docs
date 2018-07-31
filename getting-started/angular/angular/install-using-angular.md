@@ -237,7 +237,7 @@ It is mandatory to include the map definition files for all maps that you want t
 
 ## Include Themes via `npm`
 
-[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to apply centralized themes to any number of charts.
+[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allow you to apply centralized themes to any number of charts.
 
 In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
 

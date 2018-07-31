@@ -173,7 +173,7 @@ The consolidated code(which also includes the `vue.js`, `fusioncharts.js` and `v
 
 ### Themes
 
-[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to apply centralized themes to any number of charts.
+[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allow you to apply centralized themes to any number of charts.
 
 In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
 
@@ -351,7 +351,7 @@ Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionMaps, Califor
 
 ### Include Themes via npm
 
-[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allows you to apply centralized themes to any number of charts.
+[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allow you to apply centralized themes to any number of charts.
 
 In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
 
