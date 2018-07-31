@@ -5,9 +5,9 @@ heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the **FusionCharts server-side RoR wrapper** that lets you create interactive, data-driven charts. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page for generating charts. Before we get into the installation process of the wrapper, let's take a look at what sets the wrapper apart.
+FusionCharts Suite XT includes the **FusionCharts server-side RoR wrapper** that lets you create interactive, data-driven charts. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page for generating charts.
 
-In this article, we will show you how you can download and install the **FusionCharts Rails gem** wrapper and all the other dependencies on your system.
+In this article, we will show you how to download and install the **FusionCharts Rails gem** wrapper and all the other dependencies on your system.
 
 ## Download FusionCharts Library
 
@@ -21,7 +21,7 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy all the files/folders from `fusioncharts-suite-xt > js` to your project application in `vendor/assets/javascripts/fusioncharts/` folder.
+> You need to copy all the files/folders from `fusioncharts-suite-xt > js` to your project application in `vendor/assets/javascripts/fusioncharts/` folder.
 
 * The download package contains FusionCharts gem under `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` folder. This folder will also contain native RoR FusionCharts **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/ruby-on-rails '@@open-newtab')**. The folder structure is shown below:
 
@@ -104,12 +104,12 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ## Installing FusionMaps for your project
 
-FusionCharts Suite XT provides over `1400+` data-driven maps under the product FusionMaps. 
-In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
+FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. 
+To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest the of map definition files, when you need to plot maps of those countries/regions.
 
 > If you are using version v3.12.2 or older, [donwload](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace to upgrade the latest map definition files.
 
-To render a map, you need to include FusionCharts library in your project add the following code of lines in the **app/assets/javascripts/application.js** file.
+To render a map, you need to include FusionCharts library in your project. Add the following code of lines in the **app/assets/javascripts/application.js** file.
 
 ```Ruby
 //= require fusioncharts/fusioncharts
@@ -176,6 +176,6 @@ The FusionCharts Suite download package also contains the predefined theme files
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
-Include the theme files in the `vendor/assets/javascripts/fusioncharts/` folder in the Static folder of your project. This step is optional, the chart will render with the default theme (fusion) even if the theme is not applied.   
+Include the theme files in the `vendor/assets/javascripts/fusioncharts/` folder in the `Static` folder of your project. This step is optional, the chart will render with the default theme (fusion) even if the theme is not applied.   
 
 > Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
