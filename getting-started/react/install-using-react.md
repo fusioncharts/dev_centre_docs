@@ -256,10 +256,62 @@ ReactFC.fcRoot(FusionCharts, Column2D);
 The consolidated code is shown below:
 
 ```JavaScript
-import ReactFC from 'react-fusioncharts';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import FusionCharts from 'fusioncharts/core';
 import Column2D from 'fusioncharts/viz/column2d';
-ReactFC.fcRoot(FusionCharts, Column2D);
+import ReactFC from 'react-fusioncharts';
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+
+const chartConfigs = {
+    type: 'column2d',
+    width: '700',
+    height: '400',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion"
+        },
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    },
+};
+
+ReactDOM.render(
+    <ReactFC {...chartConfigs} />,
+    document.getElementById('root'),
+);
+
 ```
 
 ## Include Maps via npm
@@ -315,13 +367,84 @@ Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html)
 
 Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
 
+The consolidated code to render a **world** map is:
 
 ```JavaScript
-import ReactFC from 'react-fusioncharts';
+import React from 'react';
+import ReactDOM from 'react-dom';
 import FusionCharts from 'fusioncharts/core';
-import FusionMaps from 'fusioncharts/maps';
-import California from 'fusionmaps/maps/es/fusioncharts.california';
-ReactFC.fcRoot(FusionCharts, FusionMaps, California);   // Maps & California
+import FusionMaps from 'fusioncharts/fusioncharts.maps';
+import World from 'fusioncharts/maps/es/fusioncharts.world';
+import ReactFC from 'react-fusioncharts';
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+ReactFC.fcRoot(FusionCharts, Maps, World, FusionTheme);
+
+const chartConfigs = {
+    type: 'world',
+    width: '800',
+    height: '5500',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "caption": "Average Annual Population Growth",
+            "subcaption": " 1955-2015",
+            "numbersuffix": "%",
+            "includevalueinlabels": "1",
+            "labelsepchar": ": ",
+            "entityFillHoverColor": "#FFF9C4",
+            "theme": "fusion"
+        },
+        "colorrange": {
+            "minvalue": "0",
+            "code": "#FFE0B2",
+            "gradient": "1",
+            "color": [{
+                "minvalue": "0.5",
+                "maxvalue": "1.0",
+                "color": "#FFD74D"
+            }, {
+                "minvalue": "1.0",
+                "maxvalue": "2.0",
+                "color": "#FB8C00"
+            }, {
+                "minvalue": "2.0",
+                "maxvalue": "3.0",
+                "color": "#E65100"
+            }]
+        },
+        "data": [{
+            "id": "NA",
+            "value": ".82",
+            "showLabel": "1"
+        }, {
+            "id": "SA",
+            "value": "2.04",
+            "showLabel": "1"
+        }, {
+            "id": "AS",
+            "value": "1.78",
+            "showLabel": "1"
+        }, {
+            "id": "EU",
+            "value": ".40",
+            "showLabel": "1"
+        }, {
+            "id": "AF",
+            "value": "2.58",
+            "showLabel": "1"
+        }, {
+            "id": "AU",
+            "value": "1.30",
+            "showLabel": "1"
+        }]
+    },
+};
+
+ReactDOM.render(
+    <ReactFC {...chartConfigs} />,
+    document.getElementById('root'),
+);
 ```
 
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.
