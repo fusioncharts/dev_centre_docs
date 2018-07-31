@@ -156,9 +156,7 @@ app.controller('MyController', function($scope) {
 
 ### Installing FusionMaps for your project
 
-FusionCharts Suite XT provides over `1400+` data-driven maps under the product FusionMaps. 
-
-In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
+To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest the of map definition files, when you need to plot maps of those countries/regions.
 
 > If you are using version v3.12.2 or older, [donwload](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace to upgrade the latest map definition files.
 
@@ -231,7 +229,7 @@ The fusioncharts package contains files for all charts and widgets and only two 
 
 > If you are not aware about the different files of FusionCharts package and its purpose, refer [here]({% site.baseurl %}/getting-started/angular/angularjs/install-using-angularjs#install-using-direct-javascript-files-2 '@@open-newtab').
 
-Now, to install the AngularJS-FusionCharts follow the steps given below:
+Now, to install the **AngularJS-FusionCharts** follow the steps given below:
 
 **Step 1**: Install `angularjs` core library:
 

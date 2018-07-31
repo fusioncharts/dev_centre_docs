@@ -29,7 +29,7 @@ File Name|Description|
 `maps/*`|This folder contains Map Definition files required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1400+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be applied to charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
 
-## Install Angular-FusionCharts via `npm`
+## Install Angular-FusionCharts via npm
 
 This section outlines the steps to be executed for installing **angular-fusioncharts** via npm:
 
@@ -39,7 +39,7 @@ This section outlines the steps to be executed for installing **angular-fusionch
 $ npm install angular-fusioncharts --save
 ```
 
-**Step 2:** Install fusioncharts
+**Step 2:** Install `fusioncharts` core library
 
 ```PowerShell
 $ npm install fusioncharts --save
@@ -121,11 +121,9 @@ import \* as OverlappedColumn2D from 'fusioncharts/fusioncharts.overlappedcolumn
 </div>
 </div>
 
-The above steps completes the installation process. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular '@@open-newtab').
+## Include Map via npm
 
-## Include Map via `npm`
-
-The `fusioncharts` package contains only two map definitions - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
+To reduce the size of the download package, the `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. To use any of these two map definition files, follow the steps given below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -233,7 +231,7 @@ import \* as California from 'fusionmaps/maps/fusioncharts.california';
 </div>
 </div>
 
-It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.
+> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.
 
 ## Include Themes via `npm`
 

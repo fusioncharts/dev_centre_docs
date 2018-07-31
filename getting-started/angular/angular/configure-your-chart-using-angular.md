@@ -62,7 +62,7 @@ The JSON data to render the above chart is given below:
 
 ### Setup the Main Module
 
-In this step, we will setup the main module to create the column2d chart. The code is given below:
+In this step, we will setup the main module to create the **Column 2d** chart. The code is given below:
 
 ```
 // Setup needed in app.module.ts
@@ -246,7 +246,7 @@ The JSON data to render the above chart is given below:
 
 ### Setup the Main Module
 
-In this step, we will setup the main module to create the column2d chart. The code is given below:
+In this step, we will setup the main module to create the **Column 2d** chart. The code is given below:
 
 ```
 // Setup needed in app.module.ts

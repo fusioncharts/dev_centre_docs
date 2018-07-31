@@ -41,17 +41,17 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
+> We recommend that you copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
 * The download package also contains **react-fusioncharts.js** file from `fusioncharts-suite-xt > integrations > react > js` folder. The folder structure is shown below:
 
 ![React Js Folder]({% site.baseurl %}/gif/react-folder-structure.gif)
 
-Both the minified (compressed) and source (uncompressed) copies of React files are available in the folder. The uncompressed file `react-fusioncharts.js` is used during development or debugging, whereas the compressed file `react-fusioncharts.min.js` saves bandwidth and improves performance in production. The folder also contains the source map file `react-fusioncharts.js.map` for use, when debugging with a compressed file.
+> Both the minified (compressed) and source (uncompressed) copies of React files are available in the folder. The uncompressed file `react-fusioncharts.js` is used during development or debugging, whereas the compressed file `react-fusioncharts.min.js` saves bandwidth and improves performance in production. The folder also contains the source map file `react-fusioncharts.js.map` for use, when debugging with a compressed file.
 
 > The `react` folder in the FusionCharts Suite XT package is available from v3.13.0.
 
-> It is recommended that you copy the JavaScript files of the `react-fusioncharts.js` file from `fusioncharts-suite-xt > integrations > react > js` to your project folder.
+> We recommend that you copy the JavaScript files of the `react-fusioncharts.js` file from `fusioncharts-suite-xt > integrations > react > js` to your project folder.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt` folder:
 
@@ -129,7 +129,8 @@ This completes the installation process. To see how to create a chart, [click he
 
 ### Installing FusionMaps for your project
 
-FusionCharts Suite XT provides over **1400+** data-driven maps under the product FusionMaps. In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions.
+FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. 
+To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest the of map definition files, when you need to plot maps of those countries/regions.
 
 > If you are using version v3.12.2 or older, [donwload](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace to upgrade the latest map definition files.
 
@@ -337,7 +338,7 @@ import FusionMaps from 'fusioncharts/maps';
 import World from 'fusioncharts/maps/es/fusioncharts.world';
 ```
 
-**Step 4:** Add the map and definition as the dependency to the core
+**Step 4:** Add the map as the dependency to the core
 
 ```JavaScript
 // Maps -  reference from above
@@ -468,19 +469,19 @@ To include themes, follow the steps below:
 import ReactFC from 'react-fusioncharts';
 ```
 
-**Step 2:** Import FusionCharts core library
+**Step 2:** Import `fusioncharts` core library:
 
 ```javaScript
 import FusionCharts from 'fusioncharts/core';
 ```
 
-**Step 3:** Import the theme file
+**Step 3:** Import the theme file:
 
 ```JavaScript
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion';
 ```
 
-**Step 4:** Add Fusion Theme as dependency to the core
+**Step 4:** Add `fusion` theme as dependency to the core:
 
 ```JavaScript
 ReactFC.fcRoot(FusionCharts, Fusion);
