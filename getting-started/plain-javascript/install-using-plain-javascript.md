@@ -5,9 +5,9 @@ heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT — the industry's most comprehensive JavaScript charting solution — is all about easing the whole process of data visualization through charts.
+**FusionCharts Suite XT** — the industry's most comprehensive JavaScript charting solution — is all about easing the whole process of data visualization through charts.
 
-In this article, we will show you how to download and install the `FusionCharts Suite XT` library and all the other dependencies on your system.
+In this article, we will show you how to download and install the **FusionCharts Suite XT**  library and all the other dependencies on your system.
 
 ## Choose Your Mode of Installation:
 
@@ -85,9 +85,9 @@ This completes the installation of FusionCharts in your application. To see how 
 ## Installing FusionMaps for your project
 
 FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. 
-To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA. However, you can download the rest the of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
+To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest the of map definition files, when you need to plot maps of those countries/regions. 
 
-> If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files to the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
+> If you are using version v3.12.2 or older, [donwload](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace to upgrade the latest map definition files.
 
 To render a map, you need the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files as shown below:
 
