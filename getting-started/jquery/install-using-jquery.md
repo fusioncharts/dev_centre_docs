@@ -11,7 +11,7 @@ It helps you add interactive JavaScript charts to your web and mobile applicatio
 
 Some of the basic features of jQuery plugin are:
 
-* It lets you render jQuery charts that work across PCs(including IE6/7/8), Macs, iPads, iPhones, and Android devices seamlessly.
+* It lets you render jQuery charts that work across PCs (including IE6/7/8), Macs, iPads, iPhones, and Android devices seamlessly.
 * Update chart type, data, and individual cosmetic properties at run-time.
 * Insert, prepend, and append multiple charts in an existing chart container.
 * Customize the look and feel of all elements on the chart.
