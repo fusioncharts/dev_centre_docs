@@ -109,7 +109,7 @@ To reduce the size of the download package, we have included the `fusioncharts.m
 
 > If you are using version v3.12.2 or older, [donwload](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace to upgrade the latest map definition files.
 
-To render a map, you need to include FusionCharts library in your project. Add the following code of lines in the **app/assets/javascripts/application.js** file.
+To render a map, you need to include FusionCharts library in your project. Add the following code in the **app/assets/javascripts/application.js** file.
 
 ```Ruby
 //= require fusioncharts/fusioncharts
@@ -154,7 +154,7 @@ Now, To add the FusionMaps, use any of the following process:
 
 To use any other map (except world and USA) from the 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name.
 
-To include map definition files in your project add the following code of lines in the **app/assets/javascripts/application.js** file. Assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
+To include map definition files in your project add the following code in the **app/assets/javascripts/application.js** file. Assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
 
 ```Ruby
 //= require fusioncharts/maps/fusioncharts.california
@@ -178,7 +178,7 @@ The FusionCharts Suite download package also contains the predefined theme files
 
 Include the theme files in the `vendor/assets/javascripts/fusioncharts/` folder of your project. This step is optional, the chart will render with the default theme (fusion) even if the theme is not applied.  
 
-Add the following code of lines in the app/assets/javascripts/application.js file as shown below:
+Add the following code in the `app/assets/javascripts/application.js` file as shown below:
 
 ```
 //= require fusioncharts/fusioncharts
