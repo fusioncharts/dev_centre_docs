@@ -362,7 +362,10 @@ Europe|EU|40|
 Africa|AF|2.58|
 Australia|AU|1.30|
 
-> In the above table, the column **Entity Name** represents the geographical entities represnted in the map, whose full names are given in the **State** column in this example. However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id`s of the map you want to create.
+> In the above table, the column **Entity Name** represents the geographical entities represnted in the map, whose full names are given in the **State** column in this example. However, when you convert the data in a format acceptable by 
+FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). 
+
+For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id`s of the map you want to create.
 
 ### Convert tabular data into JSON format
 
@@ -548,12 +551,12 @@ See the complete list of [all possible attributes]({% site.baseurl %}/maps/attri
 
 ## Problem rendering the chart?
 
-In case something went wrong, and you are unable to see the chart, check for the following:
+In case there is an error and you are unable to see the chart, check for the following:
 
-* If you don't see the chart getting rendered on the browser, it might be because some browsers does not allow JavaScript files to be loaded and run from the local filesystem. In such cases, either try with a different browser, or create a local/remote server and server the webpages containing the charts from the server.
+* If you don't see the chart rendered on your browser, it might be because some browsers do not allow JavaScript files to be loaded and run from the local file system. In such cases, either try a different browser, or create a local/remote server and provide the webpages containing the charts from the server.
 
 * If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. Check if the path to `fusioncharts.js` file is correct and whether the file exists in that location.
+* If the chart does not show up, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. Check if the path to `fusioncharts.js` file is correct and whether the file exists in that location.
 
-* If you get a Loading Data or Error in loading data message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+* If you get a `Loading Data` or `Error in Loading Data` message, check whether your JSON data structure is correct, or if there are conflicts related to quotation marks in your code.
