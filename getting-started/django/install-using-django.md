@@ -125,7 +125,7 @@ The FusionCharts Suite download package also contains the predefined theme files
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
-Include the theme files in the `static > FusionCharts` folder in the `STATIC` folder of your project. This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
+Include the theme files in the `static > FusionCharts` folder in the `STATIC` folder of your project. 
 
 Add the following code to the `templates > index.html` file:
 
