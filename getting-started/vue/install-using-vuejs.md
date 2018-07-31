@@ -411,9 +411,9 @@ Vue.use(VueFusionCharts, FusionCharts, Maps, World)
 var app = new Vue({
     el: '#app',
     data: {
-        width: '700',
-        height: '400',
-        type: 'column2d',
+        width: '800',
+        height: '550',
+        type: 'world',
         dataFormat: 'json',
         dataSource: {
             // Map Configuration
