@@ -50,17 +50,19 @@ File Name|Description|
 `maps/*`|This folder contains Map Definition files required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1400+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be applied to charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
 
-Installation of FusionCharts Suite XT is simply copying and pasting the JavaScript files from the downloaded package into your project folder. Once you have copied FusionCharts Suite XT into your project, you can now include the FusionCharts JavaScript library in your web page and start building your charts, gauges, and maps.
+Installation of FusionCharts Suite XT is simply copying and pasting the JavaScript files from the downloaded package into your project folder. 
+
+Once you have copied FusionCharts Suite XT into your project, you can now include the FusionCharts JavaScript library in your web page and start building your charts, gauges, and maps.
 
 Create a PHP file and follow the steps given below:
 
-**Step 1: Include the FusionCharts package:**
+**Step 1:** Include the FusionCharts package:
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-**Step 2 (optional): Include the theme file**
+**Step 2 (optional):** Include the theme file:
 
 This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
 
@@ -73,8 +75,9 @@ This step is optional, the chart will render with the default theme (`fusion`) e
 ```HTML
 <!DOCTYPE html>
 <?php
-   	/ *Include the `../src/fusioncharts.php` file that contains functions to embed the charts.*/
-   	include(“../includes/fusioncharts.php”);
+   	/ *Include the `fusioncharts.php` file that contains functions to embed the charts.*/
+
+   	include(“path/to/local/fusioncharts.php”);
 ?>
 <html>
 ```
@@ -92,7 +95,9 @@ In the downloaded package, you’ll find the `fusioncharts.maps.js` file and onl
 
 Copy/Paste the `fusioncharts.php` file from `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` to your project’s folder, and include it to your PHP page.
 
-To render a map, you need to `include`the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. Once done, insert the ``<script>`` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The ``<script>`` tag is shown below:
+To render a map, you need to `include`the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. 
+
+Once done, insert the ``<script>`` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The ``<script>`` tag is shown below:
 
 ```
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
