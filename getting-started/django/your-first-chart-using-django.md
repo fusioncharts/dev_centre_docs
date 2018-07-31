@@ -522,7 +522,9 @@ See the complete list of [all possible attributes]({% site.baseurl %}/maps/attri
 
 ## Problem rendering the chart?
 
-In case something is wrong, and you are unable to see the chart, check for the following:
+In the above table, the column Entity Name represents the geographical entities represented in the map, whose full names are given in the State column. However, when you convert the data into a format supported by FusionCharts, the entities are denoted by the id key in the data object (see the code snippet of the next section). For any map visualization, it is important to provide the correct value for the id keys. For example, if you want to denote Africa, the value for the corresponding id must be AF and not AFR. 
+We have a detailed Map Specification Sheet for all the maps that can be rendered using FusionCharts, where you can find the correct ids of the maps you want to create.
+In case there is an error, and you are unable to see the chart, check for the following:
 
 * If you don't see the chart getting rendered on the browser, it might be because some browsers does not allow JavaScript files to be loaded and run from the local filesystem. In such cases, either try with a different browser, or create a local/remote server and server the webpages containing the charts from the server.
 

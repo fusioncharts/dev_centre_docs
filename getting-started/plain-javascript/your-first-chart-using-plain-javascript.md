@@ -558,9 +558,13 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 ### Create an instance of the map
 
-In this step, we will create an instance of the map type as **world**, set the **width** and the **height** (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will:
 
-The code to render a chart is given below:
+* Create an instance of the map type as **world**.
+* Set the **width** and the **height** (in pixels or %).
+* Finally specify the JSON data for the chart as string.
+
+The code to render a map is given below:
 
 ```javascript
 FusionCharts.ready(  function  () { 
@@ -721,16 +725,16 @@ The full HTML code is given below:
 </html>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') for the map of world. A list of countries of WORLD, and their respective `id`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') for the **World Map**. A list of countries of WORLD, and their respective `id`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
 ## Problem rendering the chart?
 
-In case something is wrong, and you are unable to see the chart, check for the following:
+In case there is an error and you are unable to see the chart, check for the following:
 
-* If you don't see the chart getting rendered on the browser, it might be because some browsers does not allow JavaScript files to be loaded and run from the local filesystem. In such cases, either try with a different browser, or create a local/remote server and server the webpages containing the charts from the server.
+* If you don't see the chart rendered on your browser, it might be because some browsers do not allow JavaScript files to be loaded and run from the local file system. In such cases, either try a different browser, or create a local/remote server and provide the webpages containing the charts from the server.
 
 * If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. Check if the path to `fusioncharts.js` file is correct and whether the file exists in that location.
+* If the chart does not show up, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. Check if the path to `fusioncharts.js` file is correct and whether the file exists in that location.
 
-* If you get a Loading Data or Error in loading data message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+* If you get a `Loading Data` or `Error in Loading Data` message, check whether your JSON data structure is correct, or if there are conflicts related to quotation marks in your code.
