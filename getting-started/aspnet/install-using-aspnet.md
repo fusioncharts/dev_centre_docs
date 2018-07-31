@@ -9,7 +9,7 @@ FusionCharts Suite XT includes the **FusionCharts server-side ASP.NET wrapper** 
 
 Some of the basic features of the ASP.NET wrapper are:
 
-* Easily create charts in JavaScript using your C#/VB code.
+* Easily create charts in JavaScript using your **C#** or **VB** code.
 * Can render charts using **JSON/XML** data or URL.
 
 In this article, we will show you how you can download and install the `FusionCharts ASP.NET` wrapper and all the other dependencies on your system. You can use FusionCharts in your ASP.NET project using direct JavaScript files.
@@ -28,7 +28,7 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
+> You need to copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
 * The download package also contains ASP.NET (VB and C#) wrapper under `fusioncharts-suite-xt > integrations > asp.net-vb` and `asp.net-cs` folder respectively.
 
@@ -58,15 +58,15 @@ File Name|Description|
 
 Once you have copied FusionCharts Suite XT into your project as explained above, you can now include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps.
 
-Create an ASPX file and follow the steps given below:
+Create an `ASPX` file and follow the steps given below:
 
-**Step 1: Include the FusionCharts package:**
+**Step 1:** Include the FusionCharts package:
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-**Step 2: Include the theme file. This step is optional, the chart will render with the default theme even if the theme is not applied.:**
+**Step 2:** Include the theme file. This step is optional, the chart will render with the default theme even if the theme is not applied:
 
 ```html
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
@@ -74,11 +74,11 @@ Create an ASPX file and follow the steps given below:
 
 **To add FusionCharts ASP.NET wrapper in your project:**
 
-Drag and drop the class (C#/VB) file from `asp.net-cs/fusioncharts-wrapper-source` (for C#) or `asp.net-vb/fusioncharts-wrapper-source` (for VB) to `App_Code` folder inside your project.
+Copy the `FusionCharts.cs` or `FusionCharts.vb` class (C#/VB) file from `integrations > asp.net-cs >fusioncharts-wrapper-source` (for C#) or `integration > asp.net-vb > fusioncharts-wrapper-source` (for VB) to `App_Code` folder inside your project.
 
 OR
 
-You can also add a reference to `FusionCharts.dll` in your project to work with either VB or C#. `FusionCharts.dll` is present in `asp.net-cs/fusioncharts-wrapper-assembly` folder or `asp.net-vb/fusioncharts-wrapper-assembly`.
+You can also add a reference to `FusionCharts.dll` in your project to work with either **VB** or **C#**. `FusionCharts.dll` is present in `integrations > asp.net-cs > fusioncharts-wrapper-assembly` folder or `integrations > asp.net-vb > fusioncharts-wrapper-assembly`.
 
 The consolidated code is shown below:
 
