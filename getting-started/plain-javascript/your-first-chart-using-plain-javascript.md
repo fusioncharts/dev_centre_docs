@@ -9,7 +9,7 @@ FusionCharts is a JavaScript charting library that enables you to create interac
 
 We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-gauge-8) and a [map]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-map-13).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript '@@open-newtab') the `fusioncharts` package, if not already installed.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript '@@open-newtab') the `fusioncharts` package, if you haven’t installed it already.
 
 ## Create your first chart
 
@@ -87,23 +87,23 @@ Both the `chart` object and the `data` array contains a set of key-value pairs k
 
 #### Functional Attributes
 
-Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The list of functional attributes used in the above JSON are:
+Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The functional attributes used in the above JSON are:
 
 * `caption` sets the caption of the chart.
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
-* `numberPrefix` adds prefix to all the numbers visible on the chart.
+* `numberPrefix` adds a prefix to all the numbers visible on the chart.
 * Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` (default theme) as its value. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetic Attributes
 
-These attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics no cosmetic attributes are used in this sample.
+These attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics, no cosmetic attributes are used in this sample.
 
 For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
 ### Include FusionCharts Suite XT library
 
-To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called `fusion`, and it is present in the `themes` folder of your download. Refer to the code below:
+To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme used here is called `fusion`, and it is present in the `themes` folder of the downloaded package. Refer to the code below:
 
 ```html
 <html>
@@ -187,7 +187,7 @@ FusionCharts.ready(function() {
 In the above code:
 
 * We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using `width` and `height`.
-* To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
+* To specify the data format as JSON, we have set the `dataFormat` parameter to `json`. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 
 That's it! When you run this HTML page now, you should see a chart representing your data.
@@ -259,11 +259,11 @@ The full HTML code is shown below:
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') for a Column 2D chart.
 
-Now, go on and explore other 95+ chart types that we've at [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'), or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
+Now, go on and explore other 95+ chart types that we have at [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for different charts.
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
+Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
 
 To start with, we'll build a simple "Weekly Customer Satisfaction Index" gauge as shown below:
 
@@ -277,7 +277,7 @@ Range|Color|Hex Code|
 50-75|Yellow|#FFC533|
 75-100|Green|#62B58F|
 
-So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and is green.
+So, any score less than 50 is bad and is shown in red. Any score between 50 and 75 is average and is represented yellow. Any score above 75 means good and appears as green.
 
 ### Convert tabular data into JSON format
 
@@ -321,7 +321,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 ### Include FusionCharts Suite XT library
 
-To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the gauge. The theme is called `fusion`, and it is present in the `themes` folder of your download. Refer to the code below:
+To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the gauge. The theme used here is called `fusion`, and it is present in the `themes` folder of the downloaded package. Refer to the code below:
 
 ```html
 <html>
@@ -353,7 +353,7 @@ In this step, we will:
 * Set the width and height (in pixels or %).
 * Finally, specify the JSON data for the chart as string.
 
-The code to render a guage is given below:
+The code to render a gauge is given below:
 
 ```javascript
 FusionCharts.ready(function() {
@@ -464,7 +464,7 @@ The full HTML code is given below:
 </html>
 ```
 
-See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
+See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for an angular gauge.
 
 ## Create your first map
 
@@ -472,7 +472,7 @@ In this section, we will create a visualization using the map of **World** showi
 
 {% embed_chart getting-started-your-first-map.js %}
 
-The data for the map is represented in a table below:
+The data for the map is represented in the table below:
 
 State|Entity Name|Value|
 -|-|-
@@ -483,13 +483,14 @@ Europe|EU|40|
 Africa|AF|2.58|
 Australia|AU|1.30|
 
-> In the above table, the column **Entity Name** represents the geographical entities represnted in the map, whose full names are given in the **State** column in this example. 
+> In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column. 
 
-However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (refer to the `json` data in the next section). 
+However, when you convert the data into a format supported by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). 
 
-For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. 
+For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
 
-We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id`s of the map you want to create.
+We have a detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts, where you can find the correct `id`s of the maps you want to create.
+
 
 ### Convert tabular data into JSON format
 

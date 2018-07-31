@@ -10,7 +10,7 @@ FusionCharts Suite XT includes the **FusionCharts PHP** wrapper that lets you cr
 
 JavaScript and HTML code is used to generate charts in the browsers. The server-side PHP wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-gauge-10) and a [map]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-map-13).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/php/install-using-php '@@open-newtab') FusionCharts PHP wrapper, if not already installed.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/php/install-using-php '@@open-newtab') FusionCharts PHP wrapper, if you haven’t installed it already.
 
 ## Create your first chart
 
@@ -55,7 +55,7 @@ Functional attributes let you control a variety of functional elements on the ch
 * `caption` sets the caption of the chart.
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
-* `numberPrefix` adds prefix to all the numbers visible on the chart.
+* `numberPrefix` adds a prefix to all the numbers visible on the chart.
 * Please note, we have used the `theme` attribute in the chart's data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetic Attributes

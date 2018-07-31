@@ -7,7 +7,7 @@ chartPresent: false
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and React-FusionCharts plugin. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-gauge-8) and a [map]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-map-11).
 
-Before going through this article, please [install](https://www.fusioncharts.com/react-charts) react-fusioncharts plugin, if not already installed.
+Before going through this article, please [install](https://www.fusioncharts.com/react-charts) react-fusioncharts plugin, if you haven’t installed it already.
 
 ## Create your first chart
 
@@ -96,7 +96,7 @@ Functional attributes let you control a variety of functional elements on the ch
 
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
 
-* `numberPrefix` adds prefix to all the numbers visible on the chart.
+* `numberPrefix` adds a prefix to all the numbers visible on the chart.
 
 * Please note, we have used the theme attribute in the chart's JSON data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 

@@ -7,7 +7,7 @@ chartPresent: false
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and **angular-FusionCharts** component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-gauge-9) and a [map]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-map-14).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/angular/angular/install-using-angular '@@open-newtab') `angular-fusioncharts` package, if not already installed.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/angular/angular/install-using-angular '@@open-newtab') `angular-fusioncharts` package, if you haven’t installed it already.
 
 ## Create your first chart
 
@@ -92,7 +92,7 @@ Functional attributes let you control a variety of functional elements on the ch
 * `caption` sets the caption of the chart.
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
-* `numberPrefix` adds prefix to all the numbers visible on the chart.
+* `numberPrefix` adds a prefix to all the numbers visible on the chart.
 * Please note, we have used the `theme` attribute in the chart's JSON data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetics Attributes

@@ -8,7 +8,7 @@ chartPresent: false
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and ASP.NET wrapper. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet#create-your-first-gauge-10) and a [map]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet#create-your-first-map-13).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/aspnet/install-using-aspnet '@@open-newtab') FusionCharts ASP.NET wrapper, if not already installed.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/aspnet/install-using-aspnet '@@open-newtab') FusionCharts ASP.NET wrapper, if you haven’t installed it already.
 
 ## Create your first chart
 
@@ -53,7 +53,7 @@ Functional attributes let you control a variety of functional elements on the ch
 * `caption` sets the caption of the chart.
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
-* `numberPrefix` adds prefix to all the numbers visible on the chart.
+* `numberPrefix` adds a prefix to all the numbers visible on the chart.
 * Please note, we have used the `theme` attribute in the chart's data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetic Attributes
