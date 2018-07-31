@@ -54,7 +54,7 @@ File Name|Description|
 `maps/*`|This folder contains Map Definition files required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1400+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be applied to charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
 
-Once you have copied FusionCharts Suite XT into your project as explained above, you can now include the FusionCharts JavaScript library in your web page and start building your charts, gauges, and maps.
+Once you have copied FusionCharts Suite XT into your project, you can now include the FusionCharts JavaScript library in your web page and start building your charts, gauges, and maps.
 
 Create a JSP file and follow the steps given below:
 
@@ -72,36 +72,21 @@ This step is optional, the chart will render with the default theme (`fusion`) e
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-**Step 3:** To use **FusionCharts - Java wrapper** in your project `include` the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project's folder.
-
-The consolidated code is shown below:
-
-```HTML
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-   pageEncoding="ISO-8859-1"%>
-   <%@page import="java.util.*" %>
-<%@page import="fusioncharts.FusionCharts" %>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-   pageEncoding="ISO-8859-1"%>
-   <%@page import="java.util.*" %>
-<%@page import="fusioncharts.FusionCharts" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-```
+To use **FusionCharts-Java wrapper** in your project copy/paste the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project’s folder.
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java '@@open-newtab').
 
 ## Installing FusionMaps for your project
 
-FusionCharts Suite XT provides over **1400+** data-driven maps under the product FusionMaps. To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
+FusionCharts Suite XT provides over **1400+** data-driven maps under the product FusionMaps. To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest of map definition files here, when you need to plot maps of those countries/regions. 
 
 > If you are using version v3.12.2 or older, [donwload](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace to upgrade the latest map definition files.
 
 **To use FusionCharts Java wrapper in your project:**
 
-`Include` the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project's folder.
+Copy/Paste the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project’s folder, and **import** it to your JSP page.
 
-To render a map, you need to `include`the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. Once done, insert the `<script>` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The `<script>` tag is shown below:
+To render a map, you need to `include` the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. Once done, insert the `<script>` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The `<script>` tag is shown below:
 
 ```
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
@@ -128,21 +113,6 @@ Therefore, assuming that you need to render the map of California, the alias nam
 ```
 
 Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
-
-The consolidated code is shown below:
-
-```HTML
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-   pageEncoding="ISO-8859-1"%>
-   <%@page import="java.util.*" %>
-<%@page import="fusioncharts.FusionCharts" %>
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-   pageEncoding="ISO-8859-1"%>
-   <%@page import="java.util.*" %>
-<%@page import="fusioncharts.FusionCharts" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-```
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/jsp/your-first-chart-using-jsp#create-your-first-map-10 '@@open-newtab').
 
