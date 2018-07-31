@@ -60,7 +60,7 @@ Create a PHP file and follow the steps given below:
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-**Step 2: Include the theme file**
+**Step 2 (optional): Include the theme file**
 
 This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
 

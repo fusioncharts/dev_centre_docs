@@ -99,7 +99,9 @@ After that, you can include the FusionCharts JavaScript library in the web appli
 <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
 ```
 
-**Step 5:** Include the theme file. This step is optional, the chart will render with the default theme even if the theme file is not included.
+**Step 5 (optional):** Include the theme file.
+
+This step is optional, the chart will render with the default theme even if the theme file is not included.
 
 ```HTML
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>

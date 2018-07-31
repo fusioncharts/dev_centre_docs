@@ -93,7 +93,9 @@ After that, you can include the file in your web applications and start building
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-**Step 4:** Include the theme file.
+**Step 4 (optional):** Include the theme file.
+
+This step is optional, the chart will render with the default theme even if the theme file is not included.
 
 ```HTML
 <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
