@@ -99,7 +99,7 @@ After that, you can include the file in your web applications and start building
 <script type="text/JavaScript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
 ```
 
-The consolidated code looks like as shown below:
+The consolidated code is shown below:
 
 ```HTML
 <head>
@@ -152,7 +152,7 @@ Therefore, assuming that you need to render the map of California, the alias nam
 
 Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
-The consolidated code(which also includes the `vue.js`, `fusioncharts.js` and `vue-fusioncharts.js`)  looks like as shown below:
+The consolidated code(which also includes the `vue.js`, `fusioncharts.js` and `vue-fusioncharts.js`)  is shown below:
 
 ```HTML
 <head>
@@ -257,7 +257,7 @@ In your JavaScript code, use the `Vue.component()` method to register the vue-fu
 Vue.component('fusioncharts', VueFusionCharts, FusionCharts, Column2D);
 ```
 
-The consolidated code looks like as shown below:
+The consolidated code is shown below:
 
 ```JavaScript
 import Vue from 'vue';
@@ -337,7 +337,7 @@ In your JavaScript code, use the `Vue.component()` method to register the vue-fu
 Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionMaps, California);
 ```
 
-The consolidated code looks like as shown below:
+The consolidated code is shown below:
 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core';

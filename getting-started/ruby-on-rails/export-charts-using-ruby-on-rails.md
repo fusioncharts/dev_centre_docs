@@ -12,7 +12,7 @@ In this article, we’ll look at how you can use the VueJS and FusionCharts bind
 
 Let's say Harry has a dashboard with a pie2d and a column2d chart to plot sales data. The pie 2D chart plots collective sales for the retail and wholesale stores; the column 2D chart plots sales for individual stores. Harry wants his charts to be interactive in a way that when the pie slice representing retail stores is clicked, the column 2D chart shows data only for all retail stores, and likewise for the wholesale stores.
 
-The dashboard looks like as shown below:
+The dashboard is shown below:
 
 {% embed_chart using-with-javascript-libraries-reactjs-including-interactivity-in-charts-using-vuejs-example-1.js %}
 

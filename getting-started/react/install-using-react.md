@@ -105,7 +105,7 @@ After that, you can include the FusionCharts JavaScript library in the web appli
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-The consolidated code looks like as shown below:
+The consolidated code is shown below:
 
 ```HTML
 <head>

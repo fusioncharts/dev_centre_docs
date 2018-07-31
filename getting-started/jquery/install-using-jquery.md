@@ -110,7 +110,7 @@ To include `Fusion` theme, add the following &lt;script&gt; tag to your html fil
 <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
 ```
 
-The consolidated code looks like as shown below:
+The consolidated code is shown below:
 
 ```html
 <!DOCTYPE html>
