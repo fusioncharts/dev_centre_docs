@@ -1,5 +1,4 @@
 ---
-permalink: getting-started/java/add-drill-down-using-java.html
 title: Adding Drill Down | FusionCharts
 description: This article focuses on drill down charts.
 heading: Adding Drill Down

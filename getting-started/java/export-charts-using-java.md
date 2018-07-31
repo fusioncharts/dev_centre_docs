@@ -1,5 +1,4 @@
 ---
-permalink: getting-started/java/export-charts-using-java.html
 title: Exporting Charts | FusionCharts
 description: This article focuses on how you can export your chart FusionCharts JSP wrapper.
 heading: Exporting Charts

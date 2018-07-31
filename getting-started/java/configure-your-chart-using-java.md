@@ -1,5 +1,4 @@
 ---
-permalink: getting-started/java/configure-your-chart-using-java.html
 title: Configuring your Chart | FusionCharts
 description: This article focuses on different type of configurations possible using FusionCharts JSP wrapper.
 heading: Configuring your Chart
