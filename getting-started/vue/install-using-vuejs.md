@@ -120,8 +120,7 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ### Installing FusionMaps for your project
 
-FusionCharts Suite XT provides over **1400+** data-driven maps under the product FusionMaps. 
-In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions.
+FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest the of map definition files, when you need to plot maps of those countries/regions. 
 
 > If you are using version v3.12.2 or older, [donwload](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace to upgrade the latest map definition files.
 
@@ -138,7 +137,7 @@ In the above example, we’ve included the World Map, whose map definition (path
 
 **Load other map definition files**
 
-To use any other map (except world and USA) from the 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. 
+To use any other map (except world and USA) from the **1400+** maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. 
 
 ```HTML
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
