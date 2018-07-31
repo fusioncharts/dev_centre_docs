@@ -199,8 +199,8 @@ The full HTML code is shown below:
 
 <head>
     <title>My first chart using FusionCharts Suite XT</title>
-    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
-    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
             var revenueChart = new FusionCharts({
@@ -409,8 +409,8 @@ The full HTML code is given below:
 
 <head>
     <title>My first gauge using FusionWidgets XT</title>
-    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
-    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
             var csatGauge = new FusionCharts({
@@ -644,9 +644,9 @@ The full HTML code is given below:
 
 <head>
     <title>My First map using FusionCharts Suite XT</title>
-    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
-    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.maps.js"></script>
-    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
+    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
             var annualPopulation = new FusionCharts({
