@@ -28,7 +28,7 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
+> You need to copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
 * The download package also contains **fusioncharts.java** file under `fusioncharts-suite-xt > integrations > java > fusioncharts-wrapper` folder. This folder will also contain FusionCharts-Java native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/java '@@open-newtab')**. The folder structure is shown below:
 

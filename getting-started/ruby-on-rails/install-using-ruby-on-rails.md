@@ -21,7 +21,7 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> You need to copy all the files/folders from `fusioncharts-suite-xt > js` to your project application in `vendor/assets/javascripts/fusioncharts/` folder.
+> You need to copy all the files/folders from `fusioncharts-suite-xt > js` to `vendor/assets/javascripts/fusioncharts/` folder of your Rails application.
 
 * The download package contains FusionCharts gem under `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` folder. This folder will also contain native RoR FusionCharts **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/ruby-on-rails '@@open-newtab')**. The folder structure is shown below:
 
