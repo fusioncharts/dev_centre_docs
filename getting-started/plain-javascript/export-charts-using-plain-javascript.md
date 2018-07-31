@@ -38,7 +38,6 @@ FusionCharts Suite XT supports the following three modes of export:
 * Client-side export
 * Auto-export
 
-
 By default, charts are exported using the auto-export feature. 
 
 The `exportMode` attribute is used to switch between the different modes of export.

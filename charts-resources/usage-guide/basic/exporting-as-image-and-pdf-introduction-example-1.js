@@ -1,59 +1,45 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '500',
-    height: '300',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
+        // Chart Configuration
         "chart": {
-            "caption": "Monthly Revenue",
-            "subCaption": "Last year",
-            "xAxisName": "Month",
-            "yAxisName": "Amount (In USD)",
-            "numberPrefix": "$",
-            "canvasBgAlpha": "0",
-            "bgColor": "#DDDDDD",
-            "bgAlpha": "50",
-            "theme": "fint",
-            "exportEnabled": "1"
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "exportEnabled": "1",
+            "theme": "fusion",
         },
-
+        // Chart Data
         "data": [{
-            "label": "Jan",
-            "value": "420000"
+            "label": "Venezuela",
+            "value": "290"
         }, {
-            "label": "Feb",
-            "value": "810000"
+            "label": "Saudi",
+            "value": "260"
         }, {
-            "label": "Mar",
-            "value": "720000"
+            "label": "Canada",
+            "value": "180"
         }, {
-            "label": "Apr",
-            "value": "550000"
+            "label": "Iran",
+            "value": "140"
         }, {
-            "label": "May",
-            "value": "910000"
+            "label": "Russia",
+            "value": "115"
         }, {
-            "label": "Jun",
-            "value": "510000"
+            "label": "UAE",
+            "value": "100"
         }, {
-            "label": "Jul",
-            "value": "680000"
+            "label": "US",
+            "value": "30"
         }, {
-            "label": "Aug",
-            "value": "620000"
-        }, {
-            "label": "Sep",
-            "value": "610000"
-        }, {
-            "label": "Oct",
-            "value": "490000"
-        }, {
-            "label": "Nov",
-            "value": "900000"
-        }, {
-            "label": "Dec",
-            "value": "730000"
+            "label": "China",
+            "value": "30"
         }]
     }
 }
