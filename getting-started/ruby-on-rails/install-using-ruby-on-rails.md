@@ -23,7 +23,7 @@ The folder structure is shown below:
 
 > You need to copy all the files/folders from `fusioncharts-suite-xt > js` to `vendor/assets/javascripts/fusioncharts/` folder of your Rails application.
 
-* The download package contains FusionCharts gem under `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` folder. This folder will also contain native RoR FusionCharts **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/ruby-on-rails '@@open-newtab')**. The folder structure is shown below:
+* The download package contains FusionCharts gem under `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` folder. The `rubyonrails` folder will also contain native RoR FusionCharts **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/ruby-on-rails '@@open-newtab')**. The folder structure is shown below: 
 
 ![Ruby on Rails Js Folder]({% site.baseurl %}/gif/ror-folder-structure.gif)
 
@@ -59,7 +59,7 @@ To include core `fusioncharts` library in your project add the following line in
 //= require fusioncharts/fusioncharts
 ```
 
-**Step 2: Include the Theme file**
+**Step 2: Include the Theme file (optional)**
 
 This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
 
@@ -67,7 +67,7 @@ This step is optional, the chart will render with the default theme (`fusion`) e
 //= require fusioncharts/themes/fusioncharts.theme.fusion
 ```
 
-Now, To add the FusionCharts Rails wrapper, use any of the following process:
+To add the FusionCharts Rails wrapper, use any of the following process:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -117,7 +117,7 @@ To render a map, you need to include FusionCharts library in your project. Add t
 //= require fusioncharts/maps/fusioncharts.world
 ```
 
-Now, To add the FusionMaps, use any of the following process:
+To add FusionMaps, use any of the following process:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
