@@ -271,7 +271,7 @@ The code to create an instance of the gauge is given below:
 
 ```javascript
 # dataSource = “JSON data of the gauge”
-angulargaugeWidget = FusionCharts("angulargauge", "myFirstWidget", "100%", "200", "myFirstWidgetContainer", "json", dataSource)
+angulargaugeWidget = FusionCharts("angulargauge", "myFirstWidget", "100%", "200", "myFirstwidget-container", "json", dataSource)
 ```
 
 The full code for the above sample is:
@@ -339,7 +339,7 @@ def myFirstWidget(request):
     })
    # Create an object for the angular-gauge using the FusionCharts class constructor
    # The widget data is passed to the `dataSource` parameter.
-   angulargaugeWidget = FusionCharts("angulargauge", "myFirstWidget", "100%", "200", "myFirstWidgetContainer", "json", dataSource)
+   angulargaugeWidget = FusionCharts("angulargauge", "myFirstWidget", "100%", "200", "myFirstwidget-container", "json", dataSource)
 
    # returning complete JavaScript and HTML code, which is used to generate widget in the browsers.
    return render(request, 'index.html', {'output' : angulargaugeWidget.render()})
@@ -361,7 +361,7 @@ The HTML template of the above sample is shown below:
 </head>
 
 <body>
-    <div id="myFirstWidgetContainer">{{ output|safe }}</div>
+    <div id="myFirstwidget-container">{{ output|safe }}</div>
 </body>
 
 </html>
@@ -404,7 +404,7 @@ The code to create an object of the gauge is given below:
 
 ```javascript
 # dataSource = “JSON data of the map”
-fusionMap = FusionCharts("maps/world", "myFirstMap" , "650", "450", "myFirstMapContainer", "json", dataSource)
+fusionMap = FusionCharts("maps/world", "myFirstMap" , "650", "450", "myFirstmap-container", "json", dataSource)
 ```
 The full code for the above sample is:
 
@@ -483,7 +483,7 @@ def myFirstMap(request):
 
 # Create an object for the world map using the FusionCharts class constructor
 # The chart data is passed to the `dataSource` parameter.
-fusionMap = FusionCharts("maps/world", "myFirstMap", "650", "450", "myFirstMapContainer", "json", dataSource)
+fusionMap = FusionCharts("maps/world", "myFirstMap", "650", "450", "myFirstmap-container", "json", dataSource)
 
 # returning complete JavaScript and HTML code, which is used to generate map in the browsers.
 return render(request, 'index.html', {
@@ -508,7 +508,7 @@ The HTML template of the above sample is shown below:
 </head>
 
 <body>
-    <div id="myFirstMapContainer">{{ output|safe }}</div>
+    <div id="myFirstmap-container">{{ output|safe }}</div>
 </body>
 
 </html>
