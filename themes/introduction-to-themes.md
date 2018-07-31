@@ -15,19 +15,16 @@ You can manually set the cosmetic and functional attributes for each chart in th
 In a theme file, you can centralize the following aspects of a chart, gauge, or map:
 
 * Visual appearance (data plot color, font color, font size, etc.)
-
 * Behavior (hover effects for data plots)
-
 * Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme)
 
 FusionCharts Suite XT ships with the following predefined themes:
 
 * `fusion` (since v3.13.0)
-
+* `gammel` (since v3.13.0)
+* `candy` (since v3.13.0)
 * `zune`
-
 * `ocean`
-
 * `carbon`
 
 A column 2D chart showcasing the 3 themes mentioned above is given below:

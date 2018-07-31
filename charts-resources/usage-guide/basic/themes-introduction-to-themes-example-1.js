@@ -1,8 +1,8 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '500',
-    height: '300',
+    width: '700',
+    height: '400',
     id: "rev-fc-chart",
     dataFormat: 'json',
     dataSource: {
@@ -57,6 +57,8 @@
             var scriptElem, controllers = document.createElement('div'),
                 themeCollection = {
                     'fusion': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fusion.js',
+                    'gammel': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.gammel.js',
+                    'candy': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.candy.js',
                     'zune': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.zune.js',
                     'ocean': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.ocean.js',
                     'carbon': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.carbon.js'
