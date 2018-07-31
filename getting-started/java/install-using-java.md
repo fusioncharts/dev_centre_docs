@@ -12,7 +12,7 @@ Some of the basic features of Java are:
 * Easily create charts in JavaScript using your Java code.
 * Can render charts using **JSON/XML** data or URL.
 
-In this article, we will show you how to download and install the `FusionCharts Java` wrapper and all the other dependencies on your system. You can use FusionCharts in your Java project using direct JavaScript files.
+In this article, we will show you how to download and install the `FusionCharts Java` wrapper and all the other dependencies on your system.
 
 > The FusionCharts Java server-side wrapper requires JAVA 6 or higher.
 
@@ -65,6 +65,8 @@ Create a JSP file and follow the steps given below:
 ```
 
 **Step 2: Include the theme file**
+
+This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
 
 ```html
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>

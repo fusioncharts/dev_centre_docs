@@ -57,7 +57,9 @@ After that, you can include the FusionCharts JavaScript library in your web appl
 
 **Step 1:** Assuming that you have already configured your `STATIC_ROOT` path, place the FusionChart library inside the `static > FusionCharts` folder in your project.
 
-**Step 2:** Include the theme files in the `static > FusionCharts` folder in your project. This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
+**Step 2:** Include the theme files in the `static > FusionCharts` folder in your project.
+
+This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
 
 Add the following code to `templates > index.html` file:
 
