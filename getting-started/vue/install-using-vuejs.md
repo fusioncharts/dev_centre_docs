@@ -368,12 +368,12 @@ Load the map definition file(s) from the `fusionmaps` package for the map(s) to 
 
 Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
 
-Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
+Therefore, assuming that you need to render the map of World, the alias name **world** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.world`.
 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core';
 import FusionMaps from 'fusioncharts/maps';
-import California from 'fusionmaps/maps/es/fusioncharts.california';
+import World from 'fusionmaps/maps/es/fusioncharts.world';
 ```
 
 Register the **VueFusionCharts** component:
@@ -383,7 +383,7 @@ Register the **VueFusionCharts** component:
 In your JavaScript code, use the `Vue.use()` method to register the vue-fusioncharts component globally. Registering the component globally allows you to use them in the template of any root Vue instance created after registration.
 
 ```JavaScript
-Vue.use(VueFusionCharts, FusionCharts, FusionMaps, California);
+Vue.use(VueFusionCharts, FusionCharts, FusionMaps, World);
 ```
 
 **Locally**
@@ -393,7 +393,7 @@ Registering components globally ensures that even if you want to stop using that
 In your JavaScript code, use the `Vue.component()` method to register the vue-fusioncharts component locally. To register locally, use `Vue.component()` instead of `Vue.use()`, the rest of the code remains same. Refer to the code below:
 
 ```JavaScript
-Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionMaps, California);
+Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionMaps, World);
 ```
 
 The consolidated code to render **world** is shown below:
