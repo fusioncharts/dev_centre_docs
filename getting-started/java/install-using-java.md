@@ -100,7 +100,7 @@ In the downloaded package, you’ll find the `fusioncharts.maps.js` file and onl
 
 `Include` the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project's folder.
 
-To render a map, you need to `include`the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. Once done, insert the ``<script>`` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The ``<script>`` tag is shown below:
+To render a map, you need to `include`the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. Once done, insert the `<script>` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The `<script>` tag is shown below:
 
 ```
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
@@ -158,5 +158,12 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 The FusionCharts Suite download package also contains the predefined theme files under `fusioncharts-suite-xt > js > themes` folder. The folder structure is shown below:
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
+
+To apply theme, you need to insert the `<script>` tag where you want to apply the theme. The `<script>` tag is shown below:
+
+```HTML
+<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+```
 
 > Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
