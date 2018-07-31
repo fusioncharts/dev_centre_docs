@@ -178,7 +178,7 @@ You can use rest of the map definition files other than the <strong>World Map</s
 $ npm install fusionmaps
 </code></pre>
 <div class="mt-20">Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder.</div>
-<div class="mt-20">The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:</div>
+<div class="mt-20">> The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:</div>
 <pre><code class="custom-hlc language-javascript">
 import FusionCharts from 'fusioncharts/core';
 import FusionMaps from 'fusioncharts/maps';
@@ -190,7 +190,7 @@ import FusionMaps from 'fusioncharts/maps';
 $ npm install fusionmaps
 </code></pre>
 <div class="mt-20">Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps` folder.</div>
-<div class="mt-20">The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:</div>
+<div class="mt-20">> The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:</div>
 <pre><code class="custom-hlc language-javascript">
 import \* as FusionCharts from 'fusioncharts';
 import \* as FusionMaps from 'fusioncharts/fusioncharts.maps';

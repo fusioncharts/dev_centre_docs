@@ -164,9 +164,9 @@ $ npm install fusioncharts
 
 The `fusioncharts` package for `npm` can now be used in two different ways:
 
-* **FusionCharts ES module** - From v3.13.0 we are providing the FusionCharts library as ES (ECMAScript) modules within the `fusioncharts` npm package. This package let's you selectively add modules as per your requirement. For example - You need to render the **angular guage**, **pie chart** and the **column chart**. The FusionCharts ES module allows you to cherry pick only these visualizations and use in your application. 
+* **FusionCharts ES module** - From v3.13.0 we are providing the FusionCharts library as ES (ECMAScript) modules within the `fusioncharts` npm package. This package lets you selectively add modules as per your requirement. For example - You need to render the **angular gauge**, **pie chart** and the **column chart**. The FusionCharts ES module allows you to cherry-pick only these visualizations and use in your application. 
  
-The folders of the module is shown in the table below:
+The folders of the module are shown in the table below:
 
 <table>
     <tr>
@@ -203,9 +203,9 @@ The folders of the module is shown in the table below:
     </tr>
 </table>
 
-* **FusionCharts CJS module (`deprecated`)** - This module is the traditional FusionCharts library which does not allow you to selectively load charts. If you want to use an angular gauge you have to include the entire `fusionwidgets` module. 
+* **FusionCharts CJS module (`deprecated`)** - This module is the traditional FusionCharts library which does not allow you to load charts and features selectively. If you want to use an angular gauge, you have to include the entire `fusionwidgets` module. 
 
-The installation of both the module is shown below:
+The installation steps for both the module are shown below:
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
@@ -402,9 +402,9 @@ $ npm install fusioncharts
 
 ## Include Maps via **npm**
 
-The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
+The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files, follow the steps given below:
 
-**Step 1: Load `fusioncharts` module**
+**Step 1: Load the `fusioncharts` module**:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -623,7 +623,7 @@ $ npm install fusionmaps
 
 Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder. 
 
-The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:
+> The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -701,7 +701,7 @@ Therefore, assuming that you need to render the map of California, the alias nam
 
 [Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allow you to apply centralized themes to any number of charts.
 
-In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
+In a theme file, we can centralize the following aspects of all of your charts, gauges, and maps:
 
 * Visual appearance (data plot color, font color, font size, etc.)
 * Behavior (hover effects for data plots)

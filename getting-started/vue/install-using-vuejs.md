@@ -298,7 +298,7 @@ $ npm install fusionmaps
 
 Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder. 
 
-The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:
+> The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:
 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core'
