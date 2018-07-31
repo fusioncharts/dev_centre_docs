@@ -70,7 +70,7 @@ The data structure needed to render the parent chart given above using the data 
         "xaxisname": "Flavor",
         "yaxisname": "Amount (In USD)",
         "numberprefix": "$",
-        "theme": "fint",
+        "theme": "fusion",
         "plottooltext": "$label, $dataValue,  $percentValue"
     },
     "data": [{
@@ -98,7 +98,7 @@ The `apple.json` file contains the data to plot a column 2D chart showing the qu
         "caption": "Apple Juice - Quarterly Sales",
         "subcaption": "Last year",
         "numberprefix": "$",
-        "theme": "fint",
+        "theme": "fusion",
         "plottooltext": "$label, $dataValue,  $percentValue"
     },
     "data": [{
@@ -122,7 +122,7 @@ Similarly, the `cranberry.json` and the `grapes.json` files contain the data to 
 If you are using XML data for the chart, refer to the data structure for the parent chart given below:
 
 ```html
-<chart caption="Top 3 Juice Flavors" subcaption="Last year" xaxisname="Flavor" yaxisname="Amount (In USD)" numberprefix="$" theme="fint" plottooltext="$label, $dataValue,  $percentValue" animation="0">
+<chart caption="Top 3 Juice Flavors" subcaption="Last year" xaxisname="Flavor" yaxisname="Amount (In USD)" numberprefix="$" theme="fusion" plottooltext="$label, $dataValue,  $percentValue" animation="0">
 
 <set label="Apple" value="810000" link="newchart-xmlurl-apple.xml" />
 <set label="Cranberry" value="620000" link="newchart-xmlurl-cranberry.xml" />
@@ -133,7 +133,7 @@ If you are using XML data for the chart, refer to the data structure for the par
 Similarly, the data structure for the **apple.xml** file is given below:
 
 ```html
-<chart caption="Apple Juice - Quarterly Sales" subcaption="Last year" numberprefix="$" theme="fint" plottooltext="$label, $dataValue,  $percentValue">
+<chart caption="Apple Juice - Quarterly Sales" subcaption="Last year" numberprefix="$" theme="fusion" plottooltext="$label, $dataValue,  $percentValue">
 
 <set label="Q1" value="157000" />
 <set label="Q2" value="172000" />
@@ -158,7 +158,7 @@ Refer to the code below:
         "xaxisName": "Flavor",
         "yaxisName": "Amount (In USD)",
         "numberPrefix": "$",
-        "theme": "fint",
+        "theme": "fusion",
         "rotateValues": "0"
     },
     "data": [
@@ -188,7 +188,7 @@ Refer to the code below:
                     "xaxisname": "Quarter",
                     "yaxisname": "Amount (In USD)",
                     "numberprefix": "$",
-                    "theme": "fint",
+                    "theme": "fusion",
                     "rotateValues": "0"
                 },
                 "data": [
@@ -221,7 +221,7 @@ Refer to the code below:
                     "xaxisname": "Quarter",
                     "yaxisname": "Amount (In USD)",
                     "numberprefix": "$",
-                    "theme": "fint",
+                    "theme": "fusion",
                     "rotateValues": "0"
                 },
                 "data": [
@@ -253,7 +253,7 @@ Refer to the code below:
                     "xaxisname": "Quarter",
                     "yaxisname": "Amount (In USD)",
                     "numberprefix": "$",
-                    "theme": "fint",
+                    "theme": "fusion",
                     "rotateValues": "0"
                 },
                 "data": [
@@ -308,7 +308,7 @@ Configure the `addEventListener()` method for the parent chart to listen to thes
         "xaxisname": "Flavor",
         "yaxisname": "Amount (In USD)",
         "numberprefix": "$",
-        "theme": "fint",
+        "theme": "fusion",
         "rotateValues": "0"
     },
     "data": [
@@ -336,7 +336,7 @@ Configure the `addEventListener()` method for the parent chart to listen to thes
                     "caption": "Apple Juice - Quarterly Sales",
                     "subcaption": "Last year",
                     "numberprefix": "$",
-                    "theme": "fint",
+                    "theme": "fusion",
                     "rotateValues": "0",
                     "plottooltext": "$label, $dataValue,  $percentValue"
                 },
@@ -367,7 +367,7 @@ Configure the `addEventListener()` method for the parent chart to listen to thes
                     "caption": "Cranberry Juice - Quarterly Sales",
                     "subcaption": "Last year",
                     "numberprefix": "$",
-                    "theme": "fint",
+                    "theme": "fusion",
                     "plottooltext": "$label, $dataValue,  $percentValue"
                 },
                 "data": [
@@ -397,7 +397,7 @@ Configure the `addEventListener()` method for the parent chart to listen to thes
                     "caption": "Grapes Juice - Quarterly Sales",
                     "subcaption": "Last year",
                     "numberprefix": "$",
-                    "theme": "fint",
+                    "theme": "fusion",
                     "rotateValues": "0",
                     "plottooltext": "$label, $dataValue,  $percentValue"
                 },
