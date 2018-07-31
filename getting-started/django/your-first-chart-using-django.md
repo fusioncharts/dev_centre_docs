@@ -375,8 +375,6 @@ See the complete list of [all possible attributes]({% site.baseurl %}/chart-attr
 
 For this example, we have created a view named `views.py`. To keep things simple, we have placed all the chart rendering logics in the `views.py` view only.
 
-> The example view we created is `app_name/views.py`.
-
 In this section, we will create a visualization using the map of **World**. Take a look at the map shown below:
 
 {% embed_chart getting-started-your-first-map.js %}
