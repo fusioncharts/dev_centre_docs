@@ -15,7 +15,7 @@ This article explains how you can set the chart data using the URL of the corres
 
 Let's build the same revenue chart which we built in the [first example]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript '@@open-newtab') using JSON, and use a .json file as the data source.
 
-{% embed_all plain-js-setting-data-using-url-example-1.js %}
+{% embed_chart plain-js-setting-data-using-url-example-1.js %}
 
 The data for this chart is represented in a table below:
 
