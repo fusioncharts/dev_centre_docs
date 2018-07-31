@@ -88,7 +88,7 @@ The data structure needed to render the parent chart given above using the data 
     }]
 }
 ```
-From the data shown above, it's clears that when the user clicks on the first data plot, the chart automatically sources the data to render the subsequent linked chart from the **apple.json** file. Similarly, when you click on the other two data plots, the chart renders the respective linked charts from the data are given in the `cranberry.json` and `grapes.json` files.
+From the data shown above, it's clear that when the user clicks on the first data plot, the chart automatically sources the data to render the subsequent linked chart from the **apple.json** file. Similarly, when you click on the other two data plots, the chart renders the respective linked charts from the data are given in the `cranberry.json` and `grapes.json` files.
 
 The `apple.json` file contains the data to plot a column 2D chart showing the quarterly sales figures of apple juice for the last one year. The data structure for the `apple.json` file is given below:
 
@@ -117,7 +117,7 @@ The `apple.json` file contains the data to plot a column 2D chart showing the qu
 }
 ```
 
-Similarly, the `cranberry.json` and the `grapes.json` files contain the data to plot column 2D charts showing the quarterly sales figures for cranberry and grape juice, respectively.
+The `cranberry.json` and the `grapes.json` files contain the data to plot column 2D charts showing the quarterly sales figures for cranberry and grape juice, respectively.
 
 If you are using XML data for the chart, refer to the data structure for the parent chart given below:
 
@@ -130,7 +130,7 @@ If you are using XML data for the chart, refer to the data structure for the par
 </chart>
 ```
 
-Similarly, the data structure for the **apple.xml** file is given below:
+The data structure for the **apple.xml** file is given below:
 
 ```html
 <chart caption="Apple Juice - Quarterly Sales" subcaption="Last year" numberprefix="$" theme="fusion" plottooltext="$label, $dataValue,  $percentValue">

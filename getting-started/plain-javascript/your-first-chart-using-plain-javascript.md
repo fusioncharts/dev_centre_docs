@@ -568,7 +568,7 @@ The code to render a map is given below:
 
 ```javascript
 FusionCharts.ready(  function  () { 
-    var  salesByState =   new  FusionCharts({
+    var  salesByContinent =   new  FusionCharts({
         type: 'world', // Map type
         renderAt: 'chart-container', // Container
         width: '800', // Width of the chart
@@ -649,7 +649,7 @@ The full HTML code is given below:
     <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
-            var salesByState = new FusionCharts({
+            var salesByContinent = new FusionCharts({
                 "type": "maps/world",
                 "renderAt": "chart-conatiner",
                 "width": "800",
@@ -713,7 +713,7 @@ The full HTML code is given below:
                     }]
                 }
             });
-            salesByState.render();
+            salesByContinent.render();
         });
     </script>
 </head>
