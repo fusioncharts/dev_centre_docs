@@ -300,5 +300,3 @@ In case something went wrong and you are unable to see the chart, check for the 
 * If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if fusioncharts.js was loaded. Check if the path to fusioncharts.js file is correct, and whether the file exists in that location.
 
 * If you get a Loading Data or Error in loading data message, check whether your JSON data structure is correct, and there are no conflicts related to quotation marks in your code.
-
-Click here for more information on [Troubleshooting](https://www.fusioncharts.com/dev/troubleshooting/debugger.html)
