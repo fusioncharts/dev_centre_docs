@@ -76,7 +76,7 @@
             controllers.setAttribute('id', 'controllers');
 
             // setting css styles for controllers div
-            controllers.style.cssText = "font-family:'Helvetica Neue', Arial; font-size:14px; margin-left:30px;";
+            controllers.style.cssText = "font-family:'Helvetica Neue', Arial; font-size:14px; margin-left:40px;";
 
             // setting css styles for labels inside controllers div
             var labels = controllers.getElementsByTagName('label');
