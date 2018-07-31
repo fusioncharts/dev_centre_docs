@@ -39,7 +39,7 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
+> We recommend to copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
 * The download package also contains files of the `Vue-FusionCharts` wrapper under `fusioncharts-suite-xt > integrations > vue` folder.
 
@@ -51,7 +51,7 @@ Both the minified (compressed) and source (uncompressed) copies of Vue files are
 
 > The `vue` folder in the FusionCharts Suite XT package is available from v3.13.0.
 
-> It is recommended that you copy the JavaScript files of the `vue` folder from `fusioncharts-suite-xt > integrations > vue > js` to your project folder.
+> We recommend to copy the JavaScript files of the `vue` folder from `fusioncharts-suite-xt > integrations > vue > js` to your project folder.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
@@ -75,7 +75,7 @@ Installation of FusionCharts Suite XT is simply copying and pasting the JavaScri
 
 After that, you can include the file in your web applications and start building your charts, gauges, and maps. In order to include, create an HTML file and follow the steps given below:
 
-**Step 1: Include [Vue](https://vuejs.org/ `@@open-newtab`) core library:
+**Step 1:** Include [Vue](https://vuejs.org/ `@@open-newtab`) core library:
 
 ```HTML
 <script type="text/javascript" src="path/to/local/vue.js"></script>
@@ -153,7 +153,7 @@ Therefore, assuming that you need to render the map of California, the alias nam
 
 Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
-The consolidated code(which also includes the `vue.js`, `fusioncharts.js` and `vue-fusioncharts.js`)  is shown below:
+The consolidated code (which also includes the `vue.js`, `fusioncharts.js` and `vue-fusioncharts.js`)  is shown below:
 
 ```HTML
 <head>
@@ -333,52 +333,20 @@ The HTML template to render the chart is given below:
 
 The `fusioncharts` package contains only two map definition in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files, follow the steps given below:
 
-**Step 1: Load `fusioncharts` module**
+**Step 1:** Load `fusioncharts` module
 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core'
 ```
 
-**Step 2: Load the `FusionMaps` renderer and the map definition file**
+**Step 2:** Load the `FusionMaps` renderer and the map definition file
 
 
 ```JavaScript
 import FusionMaps from 'fusioncharts/maps';
 import World from 'fusioncharts/maps/es/fusioncharts.world';
 ```
-
-**Load other map definition files**
-
-You can use rest of the map files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:
-
-**Install `fusionmaps` package**
-
-```Shell
-$ npm install fusionmaps
-```
-
-Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder. 
-
-> The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:
-
-```JavaScript
-import FusionCharts from 'fusioncharts/core'
-import FusionMaps from 'fusioncharts/maps';
-```
-
-Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.  
-
-Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
-
-Therefore, assuming that you need to render the map of World, the alias name **world** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.world`.
-
-```JavaScript
-import FusionCharts from 'fusioncharts/core';
-import FusionMaps from 'fusioncharts/maps';
-import World from 'fusionmaps/maps/es/fusioncharts.world';
-```
-
-Register the **VueFusionCharts** component:
+**Step 3:** Register the **VueFusionCharts** component:
 
 **Globally**
 
@@ -398,7 +366,8 @@ In your JavaScript code, use the `Vue.component()` method to register the vue-fu
 Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionMaps, World);
 ```
 
-The consolidated code to render **world** is shown below:
+
+The consolidated code to render the **World** map is shown below:
 
 ```JavaScript
 import Vue from 'vue';
@@ -490,6 +459,57 @@ The HTML template to render the map is given below:
     :dataSource="dataSource"
     ></fusioncharts>
 </div>
+```
+
+**Load other map definition files**
+
+You can use rest of the map files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:
+
+**Install `fusionmaps` package**
+
+```Shell
+$ npm install fusionmaps
+```
+
+Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder. 
+
+> The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:
+
+```JavaScript
+import FusionCharts from 'fusioncharts/core'
+import FusionMaps from 'fusioncharts/maps';
+```
+
+Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.  
+
+Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
+
+Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
+
+```JavaScript
+import FusionCharts from 'fusioncharts/core';
+import FusionMaps from 'fusioncharts/maps';
+import California from 'fusionmaps/maps/es/fusioncharts.california';
+```
+
+Register the **VueFusionCharts** component:
+
+**Globally**
+
+In your JavaScript code, use the `Vue.use()` method to register the vue-fusioncharts component globally. Registering the component globally allows you to use them in the template of any root Vue instance created after registration.
+
+```JavaScript
+Vue.use(VueFusionCharts, FusionCharts, FusionMaps, California);
+```
+
+**Locally**
+
+Registering components globally ensures that even if you want to stop using that component, it will be a part of your final build. This results in an increase in JavaScript code that the users have to download. To avoid bloated code, we recommend registering the component locally.
+
+In your JavaScript code, use the `Vue.component()` method to register the vue-fusioncharts component locally. To register locally, use `Vue.component()` instead of `Vue.use()`, the rest of the code remains same. Refer to the code below:
+
+```JavaScript
+Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionMaps, California);
 ```
 
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.
