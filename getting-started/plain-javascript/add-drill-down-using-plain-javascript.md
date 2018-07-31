@@ -54,7 +54,7 @@ The syntax for the link attribute is:
 
 The above chart, when rendered, looks like the following:
 
-{% embed_chart chart-configurations-drill-down-example-7.js %}
+{% embed_chart chart-configurations-drill-down-example-11.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/v76phqq5/ "@@open-newtab") to edit the above chart.
 
