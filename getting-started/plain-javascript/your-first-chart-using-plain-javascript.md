@@ -121,7 +121,7 @@ Each chart in the page needs a container to reside in. A `<div>` element works w
 
 ```html
 <body>
-  <div id="chart-conatiner">FusionCharts XT will load here!</div>
+  <div id="chart-container">FusionCharts XT will load here!</div>
 </body>
 
 ```
@@ -205,7 +205,7 @@ The full HTML code is shown below:
         FusionCharts.ready(function() {
             var revenueChart = new FusionCharts({
                 "type": "column2d",
-                "renderAt": "chart-conatiner",
+                "renderAt": "chart-container",
                 "width": "700",
                 "height": "400",
                 "dataFormat": "json",
@@ -252,7 +252,7 @@ The full HTML code is shown below:
     </script>
 </head>
 <body>
-    <div id="chart-conatiner">FusionCharts XT will load here!</div>
+    <div id="chart-container">FusionCharts XT will load here!</div>
 </body>
 </html>
 ```
@@ -339,7 +339,7 @@ Each gauge in the page needs a container to reside in. A `<div>` element works w
 
 ```html
 <body>
-  <div id="chart-conatiner">FusionCharts XT will load here!</div>
+  <div id="chart-container">FusionCharts XT will load here!</div>
 </body>
 ```
 
@@ -651,7 +651,7 @@ The full HTML code is given below:
         FusionCharts.ready(function() {
             var salesByContinent = new FusionCharts({
                 "type": "maps/world",
-                "renderAt": "chart-conatiner",
+                "renderAt": "chart-container",
                 "width": "800",
                 "height": "550",
                 "dataFormat": "json",

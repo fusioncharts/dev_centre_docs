@@ -572,7 +572,7 @@ The HTML code for the above sample is:
         $(document).ready(function() {
             $('#chart-container').insertFusionCharts({
                 "type": "maps/World",
-                // "renderAt": "chart-conatiner",
+                // "renderAt": "chart-container",
                 "width": "800",
                 "height": "550",
                 "dataFormat": "json",

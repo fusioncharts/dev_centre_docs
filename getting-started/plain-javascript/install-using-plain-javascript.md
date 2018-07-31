@@ -285,7 +285,7 @@ The installation steps for both the modules are shown below:
 <div><strong>Step 3</strong></div>
 <pre><code class="custom-hlc language-javascript">
 &lt;!-- Create an element to render the chart with id as chart-container --&gt;
-&lt;div id="chart-conatiner"&gt;FusionCharts XT will load here!&lt;/div&gt;
+&lt;div id="chart-container"&gt;FusionCharts XT will load here!&lt;/div&gt;
 </code></pre>
 </div>
 
