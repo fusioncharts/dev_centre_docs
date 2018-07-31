@@ -47,7 +47,7 @@ The folder structure is shown below:
 
 ![Vue Js Folder]({% site.baseurl %}/gif/vue-folder-structure.gif)
 
-Both the minified (compressed) and source (uncompressed) copies of Vue files are available in the folder. The uncompressed file `vue-fusioncharts.js` is used during development or debugging, whereas the compressed file `vue-fusioncharts.min.js` saves bandwidth and improves performance in production. The folder also contains the source map file `vue-fusioncharts.js.map` for use, when debugging with a compressed file.
+Both the minified (compressed) and source (uncompressed) copies of Vue files are available in the folder. The uncompressed file `vue-fusioncharts.js` is used during development or debugging, whereas the compressed file `vue-fusioncharts.min.js` saves bandwidth and improves performance in production.
 
 > The `vue` folder in the FusionCharts Suite XT package is available from v3.13.0.
 
@@ -78,25 +78,25 @@ After that, you can include the file in your web applications and start building
 **Step 1: Include [Vue](https://vuejs.org/ `@@open-newtab`) core library:
 
 ```HTML
-<script type="text/JavaScript" src="path/to/local/vue.js"></script>
+<script type="text/javascript" src="path/to/local/vue.js"></script>
 ```
 
 **Step 2:** Include the vue-fusioncharts module:
 
 ```HTML
-<script type="text/JavaScript" src="path/to/local/vue-fusioncharts.js"></script>
+<script type="text/javascript" src="path/to/local/vue-fusioncharts.js"></script>
 ```
 
 **Step 3:** Include the FusionCharts package:
 
 ```HTML
-<script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
+<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 ```
 
 **Step 4:** Include the theme file.
 
 ```HTML
-<script type="text/JavaScript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
+<script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
 ```
 
 The consolidated code is shown below:
@@ -106,13 +106,13 @@ The consolidated code is shown below:
     <meta charset="utf-8">
     <title>Vue - FusionCharts</title>
     <!-- vue -->
-    <script type="text/JavaScript" src="path/to/local/vue.js"></script>
+    <script type="text/javascript" src="path/to/local/vue.js"></script>
     <!-- FusionCharts -->
-    <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
     <!-- Vue-FusionCharts -->
-    <script type="text/JavaScript" src="path/to/local/vue-fusioncharts.js"></script>
+    <script type="text/javascript" src="path/to/local/vue-fusioncharts.js"></script>
     <!-- Fusion Theme -->
-    <script type="text/JavaScript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
 </head>
 ```
 
@@ -127,7 +127,7 @@ FusionCharts Suite XT provides **1400+** data-driven maps as a part of the produ
 To render a map, you need the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, `vue.js`, and the map definition files as shown below:
 
 ```HTML
-<script type="text/JavaScript" src="path/to/local/vue.js"></script>
+<script type="text/javascript" src="path/to/local/vue.js"></script>
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
@@ -158,15 +158,15 @@ The consolidated code(which also includes the `vue.js`, `fusioncharts.js` and `v
     <meta charset="utf-8">
     <title>Vue - FusionCharts</title>
     <!-- vue -->
-    <script type="text/JavaScript" src="path/to/local/vue.js"></script>
+    <script type="text/javascript" src="path/to/local/vue.js"></script>
     <!-- FusionCharts -->
-    <script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
     <!-- Vue-FusionCharts -->
-    <script type="text/JavaScript" src="path/to/local/vue-fusioncharts.js"></script>
+    <script type="text/javascript" src="path/to/local/vue-fusioncharts.js"></script>
     <!-- FusionMaps -->
-    <script type="text/JavaScript" src="path/to/local/fusioncharts.maps.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
     <!--world -->
-    <script type="text/JavaScript" src="path/to/local/fusioncharts.world.js"></script>
+    <script type="text/javascript" src="path/to/local/fusioncharts.world.js"></script>
 </head>
 ```
 
@@ -187,8 +187,8 @@ The FusionCharts Suite download package also contains the predefined theme files
 To include a theme to your chart, include its corresponding JavaScript file in your HTML page as shown in the code below:
 
 ```HTML
-<script type="text/JavaScript" src="path/to/local/fusioncharts.js"></script>
-<script type="text/JavaScript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
 > Including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme you have to set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
@@ -262,9 +262,69 @@ The consolidated code is shown below:
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d';
-Vue.use(VueFusionCharts, FusionCharts, Column2D); // Globally
-Vue.component('fusioncharts', VueFusionCharts, FusionCharts, Column2D); //Locally
+import Column2D from 'fusioncharts/viz/column2d'
+
+// Register VueFusionCharts component
+Vue.use(VueFusionCharts, FusionCharts, Column2D)
+
+var app = new Vue({
+    el: '#app',
+    data: {
+        width: '700',
+        height: '400',
+        type: 'column2d',
+        dataFormat: 'json',
+        dataSource: {
+          "chart": {
+              "caption": "Countries With Most Oil Reserves [2017-18]",
+              "subCaption": "In MMbbl = One Million barrels",
+              "xAxisName": "Country",
+              "yAxisName": "Reserves (MMbbl)",
+              "numberSuffix": "K",
+              "theme": "fusion"
+          },
+          "data": [{
+              "label": "Venezuela",
+              "value": "290"
+          }, {
+              "label": "Saudi",
+              "value": "260"
+          }, {
+              "label": "Canada",
+              "value": "180"
+          }, {
+              "label": "Iran",
+              "value": "140"
+          }, {
+              "label": "Russia",
+              "value": "115"
+          }, {
+              "label": "UAE",
+              "value": "100"
+          }, {
+              "label": "US",
+              "value": "30"
+          }, {
+              "label": "China",
+              "value": "30"
+          }]
+      }
+    }
+});
+```
+
+The HTML template to render the chart is given below:
+
+```HTML
+<div id="app">
+    <fusioncharts
+    :type="type"
+    :width="width"
+    :height="height"
+    :dataFormat="dataFormat"
+    :dataSource="dataSource"
+    ></fusioncharts>
+</div>
 ```
 
 ### Include Maps via npm
@@ -336,14 +396,98 @@ In your JavaScript code, use the `Vue.component()` method to register the vue-fu
 Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionMaps, California);
 ```
 
-The consolidated code is shown below:
+The consolidated code to render **world** is shown below:
 
 ```JavaScript
+import Vue from 'vue';
+import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts/core';
 import FusionMaps from 'fusioncharts/maps';
-import California from 'fusionmaps/maps/es/fusioncharts.california';
-Vue.use(VueFusionCharts, FusionCharts, FusionMaps, California); // Globally
-Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionMaps, California); // Locally
+import World from 'fusionmaps/maps/es/fusioncharts.world';
+
+// Register VueFusionCharts component
+Vue.use(VueFusionCharts, FusionCharts, Maps, World)
+
+var app = new Vue({
+    el: '#app',
+    data: {
+        width: '700',
+        height: '400',
+        type: 'column2d',
+        dataFormat: 'json',
+        dataSource: {
+            // Map Configuration
+            "chart": {
+                "caption": "Average Annual Population Growth",
+                "subcaption": " 1955-2015",
+                "numbersuffix": "%",
+                "includevalueinlabels": "1",
+                "labelsepchar": ": ",
+                "entityFillHoverColor": "#FFF9C4",
+                "theme": "fusion"
+            },
+            // Aesthetics; ranges synced with the slider
+            "colorrange": {
+                "minvalue": "0",
+                "code": "#FFE0B2",
+                "gradient": "1",
+                "color": [{
+                    "minvalue": "0.5",
+                    "maxvalue": "1.0",
+                    "color": "#FFD74D"
+                }, {
+                    "minvalue": "1.0",
+                    "maxvalue": "2.0",
+                    "color": "#FB8C00"
+                }, {
+                    "minvalue": "2.0",
+                    "maxvalue": "3.0",
+                    "color": "#E65100"
+                }]
+            },
+            // Source data as JSON --> id represents countries of world.
+            "data": [{
+                "id": "NA",
+                "value": ".82",
+                "showLabel": "1"
+            }, {
+                "id": "SA",
+                "value": "2.04",
+                "showLabel": "1"
+            }, {
+                "id": "AS",
+                "value": "1.78",
+                "showLabel": "1"
+            }, {
+                "id": "EU",
+                "value": ".40",
+                "showLabel": "1"
+            }, {
+                "id": "AF",
+                "value": "2.58",
+                "showLabel": "1"
+            }, {
+                "id": "AU",
+                "value": "1.30",
+                "showLabel": "1"
+            }]
+        }
+    }
+});
+```
+
+The HTML template to render the map is given below:
+
+```HTML
+<div id="app">
+    <fusioncharts
+    :type="type"
+    :width="width"
+    :height="height"
+    :dataFormat="dataFormat"
+    :dataSource="dataSource"
+    ></fusioncharts>
+</div>
 ```
 
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.
