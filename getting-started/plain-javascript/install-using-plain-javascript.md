@@ -85,7 +85,7 @@ This completes the installation of FusionCharts in your application. To see how 
 ## Installing FusionMaps for your project
 
 FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. 
-In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest the of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
+To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA. However, you can download the rest the of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
 
 > If you're an existing user of FusionMaps (v3.12.2 or older), you'll need to upgrade the map definition files to the latest files. Read more on this [here]({% site.baseurl %}/upgrading/change-log#improvements-2 '@@open-newtab').
 
@@ -139,7 +139,7 @@ In a theme file, we can centralize the following aspects of all the charts, gaug
 
 * Visual appearance (data plot color, font color, font size, etc.)
 * Behavior (hover effects for data plots)
-* Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme)
+* Intelligence (applying different colors to the positive and negative data plots that uses the theme)
 
 The FusionCharts Suite download package also contains the predefined theme files under `fusioncharts-suite-xt > js > themes` folder. The folder structure is shown below:
 
@@ -166,7 +166,7 @@ The `fusioncharts` package for `npm` can now be used in two different ways:
 
 * **FusionCharts ES module** - From v3.13.0 we are providing the FusionCharts library as ES (ECMAScript) modules within the `fusioncharts` npm package. This package lets you selectively add modules as per your requirement. For example - You need to render the **angular gauge**, **pie chart** and the **column chart**. The FusionCharts ES module allows you to cherry-pick only these visualizations and use in your application. 
  
-The folders of the module are shown in the table below:
+The folders of the `fusioncharts` npm package are shown in the table below:
 
 <table>
     <tr>
@@ -402,7 +402,7 @@ $ npm install fusioncharts
 
 ## Include Maps via **npm**
 
-The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files, follow the steps given below:
+To reduce the size of the download package, the `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. To use any of these two map definition files, follow the steps given below:
 
 **Step 1: Load the `fusioncharts` module**:
 
@@ -454,7 +454,7 @@ var FusionCharts = require('fusioncharts');
     FusionCharts.addDep(World);
         
     // Create an Instance with map options
-    var salesByState =   new  FusionCharts({
+    var salesByContinent =   new  FusionCharts({
         type: 'world', // Map type
         renderAt: 'chart-container', // Container
         width: '800', // Width of the chart
@@ -536,7 +536,7 @@ chartInstance.render()
     World(FusionCharts);
 
     // Create an Instance with map options
-    var salesByState =   new  FusionCharts({
+    var salesByContinent =   new  FusionCharts({
         type: 'world', // Map type
         renderAt: 'chart-container', // Container
         width: '800', // Width of the chart

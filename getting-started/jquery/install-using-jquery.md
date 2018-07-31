@@ -330,7 +330,7 @@ var OverlappedColumn2D = require('fusioncharts/fusioncharts.overlappedcolumn2d')
 
 ## Include Maps via NPM
 
-The `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files follow the steps given below:
+To reduce the size of the download package, the `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. To use any of these two map definition files follow the steps given below:
 
 **Include jQuery FusionCharts Helper**
 
