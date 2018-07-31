@@ -15,91 +15,64 @@ This article explains how you can set the chart data using the URL of the corres
 
 Let's build the same revenue chart which we built in the [first example](https://www.fusioncharts.com/dev/getting-started/building-your-first-chart.html) using JSON, and use a .json file as the data source.
 
-<CHART>
+{% embed_all plain-js-setting-data-using-url-example-1.js %}
 
-The data for this chart is shown in the table below:
+The data for this chart is represented in a table below:
 
-Month|Revenue|
+Country|No. of Oil Reserves|
 -|-
-January|$420,000|
-February|$810,000|
-March|$720,000|
-April|$550,000|
-May|$910,000|
-June|$510,000|
-July|$680,000|
-August|$620,000|
-September|$610,000|
-October|$490,000|
-November|$900,000|
-December|$730,000|
+Venezuela|290|
+Saudi|260|
+Canada|180|
+Iran|140|
+Russia|115|
+UAE|100|
+US|30|
+China|30|
 
 The JSON representation for the above table looks as shown below:
 
-```json
+```javascript
 {
+    // Chart Configuration
     "chart": {
-        "caption": "Monthly",
-        "xaxisname": "Month",
-        "yaxisname": "Revenue",
-        "numberprefix": "$",
-        "showvalues": "1",
-        "animation": "1"
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion",
     },
+    // Chart Data
     "data": [{
-        "label": "Jan",
-        "value": "420000"
+        "label": "Venezuela",
+        "value": "290"
     }, {
-        "label": "Feb",
-        "value": "810000"
+        "label": "Saudi",
+        "value": "260"
     }, {
-        "label": "Mar",
-        "value": "720000"
+        "label": "Canada",
+        "value": "180"
     }, {
-        "label": "Apr",
-        "value": "550000"
+        "label": "Iran",
+        "value": "140"
     }, {
-        "label": "May",
-        "value": "910000"
+        "label": "Russia",
+        "value": "115"
     }, {
-        "label": "Jun",
-        "value": "510000"
+        "label": "UAE",
+        "value": "100"
     }, {
-        "label": "Jul",
-        "value": "680000"
+        "label": "US",
+        "value": "30"
     }, {
-        "label": "Aug",
-        "value": "620000"
-    }, {
-        "label": "Sep",
-        "value": "610000"
-    }, {
-        "label": "Oct",
-        "value": "490000"
-    }, {
-        "label": "Nov",
-        "value": "900000"
-    }, {
-        "label": "Dec",
-        "value": "730000"
-    }],
-    "trendlines": [{
-        "line": [{
-            "startvalue": "700000",
-            "istrendzone": "1",
-            "valueonright": "1",
-            "tooltext": "AYAN",
-            "endvalue": "900000",
-            "color": "009933",
-            "displayvalue": "Target",
-            "showontop": "1",
-            "thickness": "5"
-        }]
+        "label": "China",
+        "value": "30"
     }]
 }
 ```
 
-Copy this into a file, name it `monthlyRevenue.json`, and store it in the same folder as your HTML page.
+Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your HTML page.
 
 > If you are using multi-lingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
 
@@ -110,10 +83,10 @@ FusionCharts.ready(function() {
     var fusioncharts = new FusionCharts({
         type: 'column2d',
         renderAt: 'chart-container',
-        width: '500',
-        height: '300',
+        width: '700',
+        height: '400',
         dataFormat: 'jsonurl',
-        dataSource: 'https://static.fusioncharts.com/sample/monthlyRevenue.json'
+        dataSource: 'https://static.fusioncharts.com/sample/oilReserves.json'
     });
     fusioncharts.render();
 });
@@ -143,7 +116,7 @@ The XML representation for the above chart looks as shown below:
 </chart>
 
 ```
-Copy this into a file called `monthlyRevenue.xml` and store it in the same folder as your HTML page.
+Copy this into a file called `oilReserves.xml` and store it in the same folder as your HTML page.
 
 > If you are using multilingual characters in your XML, make sure you save the XML data with UTF-8 encoding.
 
@@ -154,12 +127,11 @@ FusionCharts.ready(function() {
     var myChart = new FusionCharts({
         "type": "column2d",
         "renderAt": "chartContainer",
-        "width": "500",
-        "height": "300",
+        "width": "700",
+        "height": "400",
         "dataFormat": "xmlurl",
-        "dataSource": "https://static.fusioncharts.com/sample/monthlyRevenue.xml"
+        "dataSource": "https://static.fusioncharts.com/sample/oilReserves.xml"
     });
     myChart.render();
 });
-
 ```
