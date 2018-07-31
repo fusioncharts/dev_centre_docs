@@ -481,7 +481,7 @@ import FusionCharts from 'fusioncharts/core';
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion';
 ```
 
-**Step 4:** Add Fusion Theme as dependency to the core:
+**Step 4:** Add `fusion` theme as dependency to the core:
 
 ```JavaScript
 ReactFC.fcRoot(FusionCharts, Fusion);
