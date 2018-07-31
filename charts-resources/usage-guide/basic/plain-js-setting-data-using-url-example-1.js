@@ -1,4 +1,4 @@
-plain-js-setting-data-using-url-example-1.js{
+{
     type: 'column2d',
     renderAt: 'chart-container',
     width: '700',
