@@ -176,6 +176,13 @@ The FusionCharts Suite download package also contains the predefined theme files
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
-Include the theme files in the `vendor/assets/javascripts/fusioncharts/` folder in the `Static` folder of your project. This step is optional, the chart will render with the default theme (fusion) even if the theme is not applied.   
+Include the theme files in the `vendor/assets/javascripts/fusioncharts/` folder of your project. This step is optional, the chart will render with the default theme (fusion) even if the theme is not applied.  
+
+Add the following code of lines in the app/assets/javascripts/application.js file as shown below:
+
+```
+//= require fusioncharts/fusioncharts
+//= require fusioncharts/themes/fusioncharts.theme.fusion
+``` 
 
 > Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').

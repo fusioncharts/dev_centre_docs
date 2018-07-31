@@ -79,7 +79,8 @@ To reduce the size of the download package, we have included the `fusioncharts.m
 To render a map, you need to:
 
 * Place the `fusioncharts.js` file (core FusionCharts library) inside the `static > FusionCharts` folder in your project.
-* Insert the following line of code to the `templates > index.html` file:
+* Include the `fusionmaps.js` file to the `templates > index.html` file.
+* Include the `fusioncharts.world.js` file to the `templates > index.html` file.
 
 ```html
 {% load static %} 
