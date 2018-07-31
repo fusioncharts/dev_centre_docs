@@ -42,7 +42,7 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> It is recommended that you copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
+> We recommend that you copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
 * The download package also contains **jquery-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > jquery` folder. The folder structure is shown below:
 
@@ -52,7 +52,7 @@ Both the minified (compressed) and source (uncompressed) copies of jQuery files 
 
 > The `jquery` folder in the FusionCharts Suite XT package is available from v3.13.0. 
 
-> It is recommended that you copy the files/folders of the `jquery` folder from `fusioncharts-suite-xt > integrations > jquery > js` to your project folder.
+> We recommend that you copy the files/folders of the `jquery` folder from `fusioncharts-suite-xt > integrations > jquery > js` to your project folder.
 
 Following is the list of JavaScript files present in your `fusioncharts-suite-xt > js` folder:
 
@@ -86,25 +86,17 @@ Download the jQuery library from [here](https://jquery.com/download/ '@@open-new
 
 **Step 2:** Include the FusionCharts package
 
-To include the FusionCharts package, add the following &lt;script&gt; tag to your html file:
-
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 ```
 
 **Step 3:** Include the `jquery-fusioncharts` module
 
-To include the `jquery-fusioncharts` module, add the following &lt;script&gt; tag to your html file:
-
 ```html
 <script type="text/javascript" src="path/to/local/jquery-fusioncharts.js"></script>
 ```
 
-Step 4: Include the theme file
-
-This step is optional, the chart will render with the default theme even if the theme file is not included.
-
-To include `Fusion` theme, add the following &lt;script&gt; tag to your html file:
+**Step 4:** Include the theme file. This step is optional, the chart will render with the default theme even if the theme file is not included.
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
@@ -134,7 +126,8 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ### Installing FusionMaps for your project
 
-FusionCharts Suite XT provides over **1400+** data-driven maps under the product FusionMaps. In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions.
+FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. 
+To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest the of map definition files, when you need to plot maps of those countries/regions.
 
 > If you are using version v3.12.2 or older, [donwload](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace to upgrade the latest map definition files.
 
@@ -225,41 +218,24 @@ This section outlines the steps to be executed for installing all the node modul
 
 **Step 1:** Install the `jquery-fusioncharts` package
 
-To install the `jquery-fusioncharts` module via npm, run the command below:
-
 ```PowerShell
 $ npm install jquery-fusioncharts --save
 ```
 
 **Step 2:** Install the `fusioncharts` package
 
-To install the `fusioncharts` package via npm, run the command below:
-
 ```PowerShell
 $ npm install fusioncharts --save
 ```
 
-You can also combine the above commands (to install `fusioncharts` and `jquery-fusioncharts`) in a single line, as shown below:
-
-```PowerShell
-$ npm install fusioncharts jquery-fusioncharts --save
-```
-
-**Step 3: Include the `fusioncharts` module**
-
-Once the installation is done, you need to register the `fusioncharts` module. You can register by following the steps given below:
-
-**Register using all charts:**
-
-You can include the fusioncharts class and `jquery-fusioncharts` module using any of the following process:
-
-**Include jQuery FusionCharts Helper**
+**Step 3:** Include the `fusioncharts` module and `jquery` Helper
 
 ```JavaScript
+var FusionCharts = require('fusioncharts');
 var jQuery = require('jquery');
 ```
 
-**Include all charts from FusionCharts**
+**Step 4:** Include all charts from FusionCharts
 
 ```JavaScript
 var FusionCharts = require('fusioncharts');
