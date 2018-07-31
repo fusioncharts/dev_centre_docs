@@ -67,7 +67,7 @@ Add the following code to `templates > index.html` file:
 <script type="text/javascript" src="{% static "path/to/local/themes/fusioncharts.theme.fusion.js" %}"></script>
 ```
 
-This completes the installation of FusionCharts in your application. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/django/your-first-chart-using-django '@@open-newtab').
+This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/django/your-first-chart-using-django '@@open-newtab').
 
 ## Installing FusionMaps for your project
 

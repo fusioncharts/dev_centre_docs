@@ -125,7 +125,7 @@ The consolidated code is shown below:
 </head>
 ```
 
-This completes the installation process. To see how to create a chart, [click here]({% site.baseurl %}/getting-started/react/your-first-chart-using-react '@@open-newtab').
+This completes the installation process. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/react/your-first-chart-using-react '@@open-newtab').
 
 ### Installing FusionMaps for your project
 
