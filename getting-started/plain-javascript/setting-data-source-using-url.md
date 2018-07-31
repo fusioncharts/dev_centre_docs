@@ -121,7 +121,7 @@ To initialize the chart and instruct it using XML URL, use the following code:
 FusionCharts.ready(function() {
     var myChart = new FusionCharts({
         "type": "column2d",
-        "renderAt": "chartContainer",
+        "renderAt": "chart-container",
         "width": "700",
         "height": "400",
         "dataFormat": "xmlurl",

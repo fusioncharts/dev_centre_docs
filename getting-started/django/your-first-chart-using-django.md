@@ -74,7 +74,7 @@ The code to create an object of the chart is given below:
 
 ```javascript
 # dataSource = “JSON data of the chart”
-column2D = FusionCharts("column2d", "myFirstChart" , "600", "400", "myFirstChartContainer", "json", dataSource)
+column2D = FusionCharts("column2d", "myFirstChart" , "600", "400", "myFirstchart-container", "json", dataSource)
 ```
 
 In the above code:
@@ -135,7 +135,7 @@ def myFirstChart(request):
 
 # Create an object for the column 2D chart using the FusionCharts class constructor
 # The chart data is passed to the `dataSource` parameter.
-column2D = FusionCharts("column2d", "myFirstChart", "600", "400", "myFirstChartContainer", "json", dataSource)
+column2D = FusionCharts("column2d", "myFirstChart", "600", "400", "myFirstchart-container", "json", dataSource)
 
 return render(request, 'index.html', {
     'output': column2D.render()
@@ -158,7 +158,7 @@ The HTML template of the above sample is shown below:
 </head>
 
 <body>
-    <div id="myFirstChartContainer">{{ output|safe }}</div>
+    <div id="myFirstchart-container">{{ output|safe }}</div>
 </body>
 
 </html>

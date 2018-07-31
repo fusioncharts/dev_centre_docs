@@ -80,7 +80,7 @@ chart = Fusioncharts::Chart.new({
     width: “700”,
     height: “400",
     type: “column2d”,
-    renderAt: “chartContainer”,
+    renderAt: “chart-container”,
     dataSource: chartJSONDataStr # Variable which has chart data in JSON format
 })
 ```
@@ -96,7 +96,7 @@ The HTML template of the above sample is shown below:
 ```HTML
 <!-- Filename: app/views/examples/firstchart.html.erb -->
 <h3>My Chart</h3>
-<div id="chartContainer"></div>
+<div id="chart-container"></div>
 <%=@myChart.render() %>
 ```
 
@@ -165,7 +165,7 @@ def getChart
         width: "700",
         height: "400",
         type: "column2d",
-        renderAt: "chartContainer",
+        renderAt: "chart-container",
         dataSource: chartJSONDataStr
     })
 
