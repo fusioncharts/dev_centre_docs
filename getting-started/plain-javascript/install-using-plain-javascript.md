@@ -205,7 +205,7 @@ The folders of the `fusioncharts` npm package are shown in the table below:
 
 * **FusionCharts CJS module (`deprecated`)** - This module is the traditional FusionCharts library which does not allow you to load charts and features selectively. If you want to use an angular gauge, you have to include the entire `fusionwidgets` module. 
 
-The installation steps for both the module are shown below:
+The installation steps for both the modules are shown below:
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">

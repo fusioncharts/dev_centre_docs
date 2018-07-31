@@ -431,7 +431,7 @@ FusionMaps(FusionCharts);
 World(FusionCharts);
 
 // Create an Instance with map options
-    var salesByState =   new  FusionCharts({
+    var salesByContinent =   new  FusionCharts({
         type: 'world', // Map type
         renderAt: 'chart-container', // Container
         width: '800', // Width of the chart
