@@ -38,7 +38,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 The converted format will look as shown below:
 
-```javascript
+```json
 {
     // Chart Configuration
     "chart": {
@@ -225,7 +225,7 @@ So any score less than 50 is bad and is red. Any score between 50 and 75 is aver
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For React, we recommend JSON format. The converted format will look as shown below:
 
-```javascript
+```json
 {
     // Chart Configuration
     "chart": {
@@ -265,7 +265,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 In this step, we will set the chart type as `angulargauge`, set the **width** and **height** (in pixels or %), and finally specify the JSON data for the chart as string.
 
-```javascript
+```json
 var chartConfigs = {
     type: 'angulargauge', // The chart type
     width: '450', // Width of the chart
@@ -330,13 +330,15 @@ Europe|EU|40|
 Africa|AF|2.58|
 Australia|AU|1.30|
 
-> In the above table, the column **Entity Name** represents the geographical entities represnted in the map, whose full names are given in the **State** column in this example. However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id`s of the map you want to create.
+> In the above table, the column **Entity Name** represents the geographical entities represnted in the map, whose full names are given in the **State** column in this example. However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section).
+
+For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id`s of the map you want to create.
 
 ### Convert tabular data into JSON format
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For React, we recommend JSON format. The converted format will look as shown below:
 
-```javascript
+```json
 {
     // Map Configuration
     "chart": {
@@ -403,8 +405,8 @@ In this step, we will set the map type as WORLD, set the width and height (in pi
 ```json
 var chartConfigs = {
     type: 'world', // The chart type
-    width: 800, // Width of the chart
-    height: 550', // Height of the chart
+    width: '800', // Width of the chart
+    height: '550', // Height of the chart
     dataFormat: 'json', // Data type
     dataSource: {
         // Map Configuration
@@ -474,8 +476,6 @@ See the complete list of [all possible attributes]({% site.baseurl %}/maps/attri
 
 ## Problem rendering the chart?
 
-In the above table, the column Entity Name represents the geographical entities represented in the map, whose full names are given in the State column. However, when you convert the data into a format supported by FusionCharts, the entities are denoted by the id key in the data object (see the code snippet of the next section). For any map visualization, it is important to provide the correct value for the id keys. For example, if you want to denote Africa, the value for the corresponding id must be AF and not AFR. 
-We have a detailed Map Specification Sheet for all the maps that can be rendered using FusionCharts, where you can find the correct ids of the maps you want to create.
 In case there is an error, and you are unable to see the chart, check for the following:
 
 * If you don't see the chart getting rendered on the browser, it might be because some browsers does not allow JavaScript files to be loaded and run from the local filesystem. In such cases, either try with a different browser, or create a local/remote server and server the webpages containing the charts from the server.
