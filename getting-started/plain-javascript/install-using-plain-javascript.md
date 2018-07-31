@@ -156,7 +156,7 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 
 ## Install FusionCharts via **npm**
 
-To install the `fusioncharts` package via  npm package run the command below:
+To install the `fusioncharts` package via  npm run the command below:
 
 ```
 $ npm install fusioncharts

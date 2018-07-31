@@ -5,9 +5,9 @@ heading: Adding Drill Down
 chartPresent: true
 ---
 
-In FusionCharts, you can create unlimited levels of drill-down charts with a single data source. The parent chart contains all chart data—for the parent chart as well as all levels of descendant (child, grandchild) charts. The links to all descendant charts are also defined in the parent chart.
+With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
 
-You can drill-down into the descendant charts by clicking the data plot items of the parent chart. The descendant charts can either replace the parent chart, with an option to drill-up, or they can open in new windows or frames.
+You can drill-down to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
 
 Create linked charts by following the steps given below:
 
@@ -15,23 +15,22 @@ Create linked charts by following the steps given below:
 
 2. Append the data string or the data URL for the descendant charts within the parent data source. If you append the data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
 
-Once you implement the steps above, the FusionCharts JavaScript class takes care of the rest.
+Once you implement these steps, the FusionCharts JavaScript class takes care of the rest.
 
 ### Features of the FusionCharts JavaScript Class
 
-* It automatically creates and shows a detailed descendant chart, when you click on the corresponding data plot item link in the parent chart.
+* Automatically creates and shows a detailed descendant chart when you click on the corresponding data plot item linked in the parent chart
 
-* It clones all chart configuration settings from the parent chart to create the descendant charts.
+* Clones all chart configuration settings from the parent chart to create the descendant charts
 
-* It accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods.html#configureLink) function.
+* Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods.html#configureLink) function
+* Uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed
 
-* It uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed.
+* Supports drill-down to an unlimited number of levels
 
-* It supports drill-down to an unlimited number of levels.
+As an example, we will consider a simple scenario of a parent chart with a single level of drill-down.
 
-As an example here, we will consider a simple scenario of a parent chart with the single level of drill-down.
-
-The parent chart is a column 2D chart that shows the yearly sales of the top three juice flavors, for the last year. When you click on the data plot for a particular flavor of juice, it drills-down to show a descendant column 2D chart that shows the quarterly sales figures for that flavor.
+The parent chart here is a **Column 2D** chart showing yearly sales for the top three juice flavors over the last one year. When you click on the data plot for a particular flavor, it drills-down to show a descendant **Column 2D** chart with quarterly sales figures for that flavor.
 
 The above chart, when rendered, looks like the following:
 
@@ -41,7 +40,7 @@ Click [here](http://jsfiddle.net/fusioncharts/wvpzfz5g/ "@@open-newtab") to edit
 
 ### Create linked charts using Data URL method
 
-Specify the `link` attribute (which belongs to the data object) for each data plot, to link charts using the data URL method. Every time you click on a data plot, the corresponding linked chart will be rendered. 
+Specify the `link` attribute (which belongs to the data object) for each data plot to link charts using the data URL method. Every time you click on a data plot, the corresponding linked chart will be rendered. 
 
 The syntax for the link attribute is:
 
@@ -59,7 +58,7 @@ The above chart, when rendered, looks like the following:
 
 Click [here](http://jsfiddle.net/fusioncharts/v76phqq5/ "@@open-newtab") to edit the above chart.
 
-Here, newchart is constant.For the data URL method, assign `jsonurl` (if the data for the descendant chart is in a .json file) or `xmlurl` (if the data for the descendant chart is in a .xml file) as the value of `dataformat`. Specify the URL of the .json/.xml file as the value of the `datasource` attribute.
+Here, `newchart` is constant.For the data URL method, assign `jsonurl` (if the data for the descendant chart is in a .json file) or `xmlurl` (if the data for the descendant chart is in a .xml file) as the value of `dataformat`. Specify the URL of the `.json` or `.xml` file as the value of the `datasource` attribute.
 
 The data structure needed to render the parent chart given above using the data URL method is given below:
 
@@ -89,9 +88,9 @@ The data structure needed to render the parent chart given above using the data 
     }]
 }
 ```
-From the data shown above, you can understand that when the user clicks the first data plot, the chart sources the data to render the subsequent linked chart from the **apple.json** file. Similarly, when you click on the other two data plots, the chart renders the respective linked charts from the data are given in the cranberry.json and grapes.json files.
+From the data shown above, it's clears that when the user clicks on the first data plot, the chart automatically sources the data to render the subsequent linked chart from the **apple.json** file. Similarly, when you click on the other two data plots, the chart renders the respective linked charts from the data are given in the `cranberry.json` and `grapes.json` files.
 
-The **apple.json** file contains the data to plot a column 2D chart showing the quarterly sales figures of apple juice for the last year. The data structure for the **apple.json** file is given below:
+The `apple.json` file contains the data to plot a column 2D chart showing the quarterly sales figures of apple juice for the last one year. The data structure for the `apple.json` file is given below:
 
 ```json
 {
@@ -118,7 +117,7 @@ The **apple.json** file contains the data to plot a column 2D chart showing the 
 }
 ```
 
-Similarly, the cranberry.json and the grapes.json files contain the data to plot column 2D charts showing the quarterly sales figures for the cranberry juice and grape juice, respectively.
+Similarly, the `cranberry.json` and the `grapes.json` files contain the data to plot column 2D charts showing the quarterly sales figures for cranberry and grape juice, respectively.
 
 If you are using XML data for the chart, refer to the data structure for the parent chart given below:
 
@@ -283,13 +282,13 @@ Refer to the code below:
 
 ### Configure events for linked charts
 
-The FusionCharts JavaScript class includes events raised when you open or close linked items, as detailed below:
+The FusionCharts JavaScript class includes events raised when you open or close linked items, as explained below:
 
 * `beforeLinkedItemOpen` is fired every time a linked item is about to open, right after you click the link in the parent chart.
 
 * `linkedItemOpened` is fired every time a linked (descendant) chart is rendered.
 
-* `beforeLinkedItemClosed` is fired every time the linked chart is closed and the parent chart is rendered. This happens whenever you navigate back to the parent chart by clicking on the Back button at the top right corner of the linked chart.
+* `beforeLinkedItemClosed` is fired every time the linked chart is closed, and the parent chart is rendered. This happens whenever you navigate back to the parent chart by clicking on the **Back** button at the top right corner of the linked chart.
 
 * `linkedItemClosed` is fired every time a linked chart is closed, and before the parent chart is reopened.
 
@@ -426,6 +425,6 @@ Configure the `addEventListener()` method for the parent chart to listen to thes
 }
 ```
 
-Use the events object (under the dataSource object) to configure the events raised for a chart.
+Use the events object (under the `dataSource` object) to configure the events raised for a chart.
 
-> The FusionCharts.addEventListener() static function can be used to trap events globally—for all charts. For detailed descriptions of the LinkedChart events, refer to the [FusionCharts API Reference](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events.html).
+> The `FusionCharts.addEventListener()` static function can be used to trap events globally — i.e. for all charts. For detailed descriptions of the `LinkedChart` events, refer to the [FusionCharts API Reference](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events.html).

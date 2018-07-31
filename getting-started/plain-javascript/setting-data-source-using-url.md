@@ -5,15 +5,15 @@ heading: Setting Data Source Using URL
 breadcrumb: [["Home", "/"], ["Setting Data Source using URL"]]
 ---
 
-FusionCharts lets you pass the complete JSON/XML chart data as a static string to the `dataSource` attribute. Alternatively, you can also save the chart data in a .json/.xml file and then pass the relative URL of this file as value to the `dataSource` attribute. 
+FusionCharts lets you pass the complete JSON/XML chart data as a static string to the `dataSource` attribute. Alternatively, you can also save the chart data in a `.json` or `.xml` file and then pass the relative URL of this file as value to the `dataSource` attribute. 
 
-The only difference between the two methods is the value will be passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes json or xml as values, depending on the chart data. For the second method, the values will be `jsonurl` and `xmlurl`.
+The only difference between the two methods is the value that is passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes `json` or `xml` as values, depending on the chart data. For the second method, the values will be `jsonurl` and `xmlurl`.
 
 This article explains how you can set the chart data using the URL of the corresponding file.
 
 ## Load data using JSON as URL
 
-Let's build the same revenue chart, which we built in the [first example](https://www.fusioncharts.com/dev/getting-started/building-your-first-chart.html) using JSON, and use a .json file as the data source in this example.
+Let's build the same revenue chart which we built in the [first example](https://www.fusioncharts.com/dev/getting-started/building-your-first-chart.html) using JSON, and use a .json file as the data source.
 
 <CHART>
 
@@ -120,7 +120,7 @@ FusionCharts.ready(function() {
 
 ```
 
-> While rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive due to security restrictions enforced by most modern browsers.
+> When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
 ## Load data using XML as URL
 
@@ -145,9 +145,9 @@ The XML representation for the above chart looks as shown below:
 ```
 Copy this into a file called `monthlyRevenue.xml` and store it in the same folder as your HTML page.
 
-> If you are using multi-lingual characters in your XML, make sure that you save the XML data with UTF-8 encoding.
+> If you are using multilingual characters in your XML, make sure you save the XML data with UTF-8 encoding.
 
-To initialize the chart and to instruct it using XML URL, use the following code:
+To initialize the chart and instruct it using XML URL, use the following code:
 
 ```
 FusionCharts.ready(function() {
@@ -163,15 +163,3 @@ FusionCharts.ready(function() {
 });
 
 ```
-
-## Problem rendering the chart?
-
-In case something went wrong and you are unable to see the chart, check for the following:
-
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
-
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. Check if the path to `fusioncharts.js` file is correct and whether the file exists in that location.
-
-* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON/XML data structure is correct, and there are no conflicts related to quotation marks in your code.
-
-Click here for more information on [Troubleshooting](https://www.fusioncharts.com/dev/troubleshooting/debugger.html).

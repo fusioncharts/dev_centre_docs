@@ -5,21 +5,21 @@ heading: Adding Drill Down using Vue
 chartPresent: true
 ---
 
-In FusionCharts, you can create unlimited levels of drill-down charts with a single data source. The parent chart contains all chart data—for the parent chart as well as all levels of descendant (child, grandchild) charts. The links to all descendant charts are also defined in the parent chart.
+With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
 
-You can drill-down into the descendant charts by clicking the data plot items of the parent chart. The descendant charts can either replace the parent chart, with an option to drill-up, or they can open in new windows or frames.
+You can drill-down to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
 
 ### Features of the FusionCharts JavaScript Class
 
-* It automatically creates and shows a detailed descendant chart, when you click on the corresponding data plot item link in the parent chart.
+* Automatically creates and shows a detailed descendant chart when you click on the corresponding data plot item linked in the parent chart
 
-* It clones all chart configuration settings from the parent chart to create the descendant charts.
+* Clones all chart configuration settings from the parent chart to create the descendant charts
 
-* It accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods.html#configureLink) function.
+* Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods.html#configureLink) function
 
-* It uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed.
+* Uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed
 
-* It supports drill-down to an unlimited number of levels.
+* Supports drill-down to an unlimited number of levels
 
 ## Create drill down 
 
@@ -29,7 +29,7 @@ To create drill down charts follow the steps given below:
 
 2. Append the data string or the data URL for the descendant charts within the parent data source. If you append the data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
 
-Once you implement the steps above, the FusionCharts JavaScript class takes care of the rest. Let's see the steps in details.
+Once you implement these steps, the FusionCharts JavaScript class takes care of the rest. Let's see the steps in details.
 
 As an example here, we will consider a simple scenario of a parent chart with the single level of drill-down.
 
