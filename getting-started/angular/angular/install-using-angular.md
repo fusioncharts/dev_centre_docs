@@ -258,7 +258,7 @@ import FusionCharts from 'fusioncharts/core'
 </code></pre>
 <div class="mt-20"><strong>Step 2: </strong>Include the theme file</div>
 <pre><code class="custom-hlc language-javascript">
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion'
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -269,7 +269,7 @@ import \* as FusionCharts from 'fusioncharts'
 </code></pre>
 <div class="mt-20"><strong>Step 2: </strong>Include the theme file</div>
 <pre><code class="custom-hlc language-javascript">
-import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.fusion'
+import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>

@@ -371,7 +371,7 @@ import FusionCharts from 'fusioncharts/core'
 **Step 2:** Include the theme file
 
 ```JavaScript
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion'
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
 ```
 
 **Step 3:** Register the **VueFusionCharts** component:

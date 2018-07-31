@@ -550,7 +550,7 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 To include the definition files placed in **fusioncharts/themes**, follow the steps below:
 
 ```JavaScript
-    var FusionTheme = require('fusioncharts/themes/fusioncharts.fusion');
+    var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
     FusionTheme(FusionCharts);
 ```
 > Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').

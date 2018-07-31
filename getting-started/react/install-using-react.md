@@ -478,7 +478,7 @@ import FusionCharts from 'fusioncharts/core';
 **Step 3:** Import the theme file:
 
 ```JavaScript
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion';
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 ```
 
 **Step 4:** Add `fusion` theme as dependency to the core:

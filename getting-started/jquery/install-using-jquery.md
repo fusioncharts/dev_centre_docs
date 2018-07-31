@@ -391,7 +391,7 @@ var jQuery = require('jquery');
 **Step 2:** Include the theme file
 
 ```JavaScript
-var FusionTheme = require('fusioncharts/themes/fusioncharts.fusion');
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 FusionTheme(FusionCharts);
 ```
 

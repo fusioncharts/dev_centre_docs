@@ -723,7 +723,7 @@ To include the definition files placed in **fusioncharts/themes**, follow any of
 </code></pre>
 <div><strong>To include the theme file, copy the following line of code:</strong></div>
 <pre><code class="custom-hlc language-javascript">
-    import FusionTheme from 'fusioncharts/themes/es/fusioncharts.fusion'
+    import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
     FusionCharts.addDep(FusionTheme);
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -733,7 +733,7 @@ To include the definition files placed in **fusioncharts/themes**, follow any of
 <div><strong></strong></div>
 <pre><code class="custom-hlc language-javascript">
     var FusionCharts = require('fusioncharts');
-    var FusionTheme = require('fusioncharts/themes/fusioncharts.fusion');
+    var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
     FusionTheme(FusionCharts);
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
