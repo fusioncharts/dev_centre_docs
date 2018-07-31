@@ -13,7 +13,7 @@ This article explains how you can set the chart data using the URL of the corres
 
 ## Load data using JSON as URL
 
-Let's build the same revenue chart which we built in the [first example](https://www.fusioncharts.com/dev/getting-started/building-your-first-chart.html) using JSON, and use a .json file as the data source.
+Let's build the same revenue chart which we built in the [first example]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript '@@open-newtab') using JSON, and use a .json file as the data source.
 
 {% embed_all plain-js-setting-data-using-url-example-1.js %}
 
