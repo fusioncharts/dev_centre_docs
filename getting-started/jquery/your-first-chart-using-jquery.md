@@ -105,20 +105,7 @@ In this step, we will create an instance of the chart type as **column2d**, set 
 The code to render a chart using **require** is given below:
 
 ```javascript
-var jQuery = require('jquery');
-var FusionCharts = require('fusioncharts');
-var jqueryFusionCharts = require('jquery-fusioncharts');
-// Load charts module to render Column2D chart
-var Charts = require('fusioncharts/fusioncharts.charts');
-// Include Fusion theme
-var FusionTheme = require('fusioncharts/theme/fusioncharts.fusion');
-
 jQuery('document').ready(function() {
-    // Once the window with a document is ready, execute the Chart module
-    // and pass FusionCharts as a dependency
-    Charts(FusionCharts);
-    FusionTheme(FusionCharts);
-
     // Render the chart using `insertFusionCharts` method
     jQuery('#chart-container').insertFusionCharts({
         type: 'column2d',
@@ -171,10 +158,68 @@ In the above code:
 * We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart.
 * To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 
-The HTML template of the above sample is shown below:
+The HTML code for the above sample is:
 
 ```html
-<div id="chart-container">FusionCharts will render here...</div>
+<html>
+<head>
+    <title>My First Chart using FusionCharts Suite XT</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.jqueryplugin.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#chart-container').insertFusionCharts({
+                type: 'column2d',
+                width: '700',
+                height: '400',
+                dataFormat: 'json',
+                dataSource: {
+                    // Chart Configuration
+                    "chart": {
+                        "caption": "Countries With Most Oil Reserves [2017-18]",
+                        "subCaption": "In MMbbl = One Million barrels",
+                        "xAxisName": "Country",
+                        "yAxisName": "Reserves (MMbbl)",
+                        "numberSuffix": "K",
+                        "theme": "fusion",
+                    },
+                    // Chart Data
+                    "data": [{
+                        "label": "Venezuela",
+                        "value": "290"
+                    }, {
+                        "label": "Saudi",
+                        "value": "260"
+                    }, {
+                        "label": "Canada",
+                        "value": "180"
+                    }, {
+                        "label": "Iran",
+                        "value": "140"
+                    }, {
+                        "label": "Russia",
+                        "value": "115"
+                    }, {
+                        "label": "UAE",
+                        "value": "100"
+                    }, {
+                        "label": "US",
+                        "value": "30"
+                    }, {
+                        "label": "China",
+                        "value": "30"
+                    }]
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="chart-container">FusionMaps XT will load chart here!</div>
+</body>
+</html>
 ```
 
 That's it! When you run this HTML page now, you should see a chart representing your data.
@@ -248,20 +293,7 @@ In this step, we will create an instance of the chart type as **angulargauge**, 
 The code to render a chart using **require** is given below:
 
 ```javascript
-var jQuery = require('jquery');
-var FusionCharts = require('fusioncharts');
-var jQueryFusionCharts = require('jquery-fusioncharts');
-// Load charts module to render Column2D chart
-var Charts = require('fusioncharts/fusioncharts.charts');
-// Include Fusion theme
-var FusionTheme = require('fusioncharts/theme/fusioncharts.fusion');
- 
 jQuery('document').ready(function() {
-    // Once the window with a document is ready, execute the Chart module
-    // and pass FusionCharts as a dependency
-    Charts(FusionCharts);
-    FusionTheme(FusionCharts);
- 
     // Render the chart using `insertFusionCharts` method
     jQuery('#chart-container').insertFusionCharts({
         type: 'angulargauge',
@@ -305,10 +337,64 @@ jQuery('document').ready(function() {
 });
 ```
 
-The HTML template for the above sample is:
+The HTML code for the above sample is:
 
-```html
-<div id="chart-container">FusionCharts will render here...</div>
+```HTML
+<html>
+<head>
+    <title>My First Gauge using FusionCharts Suite XT</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.jqueryplugin.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#chart-container').insertFusionCharts({
+                type: 'angulargauge',
+                width: '450',
+                height: '250',
+                dataFormat: 'json',
+                dataSource: {
+                    // Chart Configuration
+                    "chart": {
+                        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+                        "lowerLimit": "0",
+                        "upperLimit": "100",
+                        "showValue": "1",
+                        "numberSuffix": "%",
+                        "theme": "fusion",
+                        "showToolTip": "0"
+                    },
+                    // Chart Data
+                    "colorRange": {
+                        "color": [{
+                            "minValue": "0",
+                            "maxValue": "50",
+                            "code": "#F2726F"
+                        }, {
+                            "minValue": "50",
+                            "maxValue": "75",
+                            "code": "#FFC533"
+                        }, {
+                            "minValue": "75",
+                            "maxValue": "100",
+                            "code": "#62B58F"
+                        }]
+                    },
+                    "dials": {
+                        "dial": [{
+                            "value": "81"
+                        }]
+                    }
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="chart-container">FusionMaps XT will load gauge here!</div>
+</body>
+</html>
 ```
 
 See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
@@ -403,22 +489,7 @@ In this step, we will create an instance of the map type as **world**, set the w
 The code to render a chart using **require** is given below:
 
 ```javascript
-var jQuery = require('jquery');
-var FusionCharts = require('fusioncharts');
-var jQueryFusionCharts = require('jquery-fusioncharts');
-// Load map renderer and map definition to render World Map
-var FusionMaps = require('fusioncharts/fusioncharts.maps');
-var World = require('fusioncharts/maps/fusioncharts.world');
-// Include Fusion theme
-var FusionTheme = require('fusioncharts/theme/fusioncharts.fusion');
-
 jQuery('document').ready(function() {
-    // Once the window with a document is ready, execute the Chart module
-    // and pass FusionCharts as a dependency
-    FusionMaps(FusionCharts);
-    World(FusionCharts);
-    FusionTheme(FusionCharts);
- 
     // Render the chart using `insertFusionCharts` method
     jQuery('#chart-container').insertFusionCharts({
         type: 'world',
@@ -486,10 +557,90 @@ jQuery('document').ready(function() {
 });
 ```
 
-The HTML template for the above sample is:
+The HTML code for the above sample is:
 
-```html
-<div id="chart-container">FusionCharts will render here...</div>
+```HTML
+<html>
+<head>
+    <title>My First Map using FusionCharts Suite XT</title>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.jqueryplugin.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/fusioncharts.maps.js"></script>
+    <script type="text/javascript" src="https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fusion.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#chart-container').insertFusionCharts({
+                "type": "maps/World",
+                // "renderAt": "chart-conatiner",
+                "width": "800",
+                "height": "550",
+                "dataFormat": "json",
+                "dataSource": {
+                    // Map Configuration
+                    "chart": {
+                        "caption": "Average Annual Population Growth",
+                        "subcaption": " 1955-2015",
+                        "numbersuffix": "%",
+                        "includevalueinlabels": "1",
+                        "labelsepchar": ": ",
+                        "entityFillHoverColor": "#FFF9C4",
+                        "theme": "fusion"
+                    },
+                    // Aesthetics; ranges synced with the slider
+                    "colorrange": {
+                        "minvalue": "0",
+                        "code": "#FFE0B2",
+                        "gradient": "1",
+                        "color": [{
+                            "minvalue": "0.5",
+                            "maxvalue": "1.0",
+                            "color": "#FFD74D"
+                        }, {
+                            "minvalue": "1.0",
+                            "maxvalue": "2.0",
+                            "color": "#FB8C00"
+                        }, {
+                            "minvalue": "2.0",
+                            "maxvalue": "3.0",
+                            "color": "#E65100"
+                        }]
+                    },
+                    // Source data as JSON --> id represents countries of world.
+                    "data": [{
+                        "id": "NA",
+                        "value": ".82",
+                        "showLabel": "1"
+                    }, {
+                        "id": "SA",
+                        "value": "2.04",
+                        "showLabel": "1"
+                    }, {
+                        "id": "AS",
+                        "value": "1.78",
+                        "showLabel": "1"
+                    }, {
+                        "id": "EU",
+                        "value": ".40",
+                        "showLabel": "1"
+                    }, {
+                        "id": "AF",
+                        "value": "2.58",
+                        "showLabel": "1"
+                    }, {
+                        "id": "AU",
+                        "value": "1.30",
+                        "showLabel": "1"
+                    }]
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="chart-container">FusionMaps XT will load map here!</div>
+</body>
+</html>
 ```
 
 See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. A list of countries of WORLD, and their respective `id`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
