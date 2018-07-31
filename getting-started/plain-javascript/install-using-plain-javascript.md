@@ -216,7 +216,7 @@ The installation steps for both the module are shown below:
 <div class="tab es6-tab active">
 <div><strong>Step 1</strong></div>
 <pre><code class="custom-hlc language-javascript">
-    // Install `fusioncharts` package
+    // Install fusioncharts package
     $ npm install fusioncharts
     </code></pre>
 <div><strong>Step 2</strong></div>
