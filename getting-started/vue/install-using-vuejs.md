@@ -196,7 +196,7 @@ To add a theme to your chart, include its corresponding JavaScript file in your 
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-> To set the value of `theme` attribute to `fusion` theme, include the `fusioncharts.theme.fusion.js` file. To add any other theme to your chart, simply include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Including only the `fusioncharts.theme.fusion.js` file will not apply the theme. to apply the theme, set the value of `theme` attribute to the respective `theme` name. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
 
 ## Include FusionCharts via npm
 
@@ -557,4 +557,4 @@ Vue.use(VueFusionCharts, FusionCharts, FusionTheme);
 Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionTheme);
 ```
 
-> To set the value of `theme` attribute to `fusion` theme, include the `fusioncharts.theme.fusion.js` file. To add any other theme to your chart, simply include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Including only the `fusioncharts.theme.fusion.js` file will not apply the theme. to apply the theme, set the value of `theme` attribute to the respective `theme` name. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
