@@ -234,7 +234,7 @@ Now, go on and explore other 95+ chart types that we have at [FusionCharts]({% s
 
 Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial to indicate the value. In this section, we will create an **Angular Gauge.**
 
-To start with, we'll build a simple "Weekly Customer Satisfaction Index" gauge as shown below:
+To start with, we'll build a simple "Nordstrom Customer Satisfaction Index" gauge as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
@@ -246,7 +246,7 @@ Range|Color|Hex Code|
 50-75|Yellow|#FFC533|
 75-100|Green|#62B58F|
 
-So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 meansgood and is green.
+So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and is green.
 
 ### Convert tabular data into JSON format
 
@@ -418,7 +418,13 @@ Europe|EU|40|
 Africa|AF|2.58|
 Australia|AU|1.30|
 
-> In the above table, the column **Entity Name** represents the geographical entities represnted in the map, whose full names are given in the **State** column in this example. However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id`s of the map you want to create.
+> In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column. 
+
+However, when you convert the data into a format supported by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). 
+
+For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
+
+We have a detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts, where you can find the correct `id`s of the maps you want to create.
 
 ### Convert tabular data into JSON format
 
@@ -486,7 +492,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 ### Create an instance of the map
 
-In this step, we will create an instance of the map type as **world**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will create an instance of the map type as **world**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
 
 The code to render a chart using **require** is given below:
 
@@ -645,7 +651,7 @@ The HTML code for the above sample is:
 </html>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. A list of countries of WORLD, and their respective `id`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. A list of countries of World, and their respective `ids`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
 ## Problem rendering the chart?
 

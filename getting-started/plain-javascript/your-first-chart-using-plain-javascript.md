@@ -130,7 +130,7 @@ Specify a unique ID for the `<div>` container within the web page. The unique ID
 
 ### Create an instance of the chart
 
-In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
 
 The code to render a chart is given below:
 
@@ -265,7 +265,7 @@ Now, go on and explore other 95+ chart types that we have at [FusionCharts]({% s
 
 Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
 
-To start with, we'll build a simple "Weekly Customer Satisfaction Index" gauge as shown below:
+To start with, we'll build a simple "Nordstrom Customer Satisfaction Index" gauge as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
