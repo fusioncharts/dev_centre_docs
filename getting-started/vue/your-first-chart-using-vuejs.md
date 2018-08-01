@@ -93,15 +93,15 @@ Functional attributes let you control a variety of functional elements on the ch
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
 * `numberPrefix` adds a prefix to all the numbers visible on the chart.
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided fusion (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
+* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` (default theme) as its value. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetic Attributes
 
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics no cosmetic attributes are used in this sample. For the detailed list of cosmetic attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
+Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics, no cosmetic attributes are used in this sample. For the detailed list of cosmetic attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
 ### Create an instance of the chart
 
-In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
+In this step, we will create an instance of the chart type as **Column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
 
 The code to render a chart is given below:
 
@@ -159,7 +159,7 @@ const app = new Vue({
 In the above code:
 
 * We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 700x400 pixels using `width` and `height`.
-* To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
+* To specify the data format as JSON, we have set the `dataFormat` parameter to `json`. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 
 The HTML template of the above sample is shown below:
@@ -180,19 +180,19 @@ That's it! When you run this HTML page now, you should see a chart representing 
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a Column 2D chart.
 
-In the JavaScript code, execution of `const app = new Vue({ })` creates a new Vue instance called app. 
+In the JavaScript code, execution of `const app = new Vue({ })` creates a new Vue instance called **app**. 
 
-Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
+Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for different charts.
 
 ## Create your first gauge
 
 Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
 
-To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
+To start with, we'll build a simple gauge showcasing Nordstrom's Customer Satisfaction Score as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-The thresholds for the above sample has been defined using the following range.
+The thresholds for the above sample have been defined using the following range.
 
 Range|Color|Hex Code|
 -|-|-
@@ -310,7 +310,7 @@ The HTML template for the above sample is:
 </div>
 ```
 
-See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
+See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for an angular gauge.
 
 ## Create your first map
 
@@ -318,7 +318,7 @@ In this section, we will create a visualization using the map of **World**. Take
 
 {% embed_chart getting-started-your-first-map.js %}
 
-The data for this chart is represented in a table below:
+The data for this chart is represented in the table below:
 
 State|Entity Name|Value|
 -|-|-
@@ -329,7 +329,14 @@ Europe|EU|40|
 Africa|AF|2.58|
 Australia|AU|1.30|
 
-> In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column in this example. However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id` of the map you want to create.
+> In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column. 
+
+However, when you convert the data into a format supported by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). 
+
+For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
+
+We have a detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
+
 
 ### Convert tabular data into JSON format
 
@@ -399,7 +406,7 @@ It's time to convert it into JSON format, as FusionCharts accepts data in JSON o
 
 In this step, we will create an instance of the map type as **world**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
 
-The code to render a chart by passing VueJS component is given below:
+The code to render a chart by passing the VueJS component is given below:
 
 ```javascript
 // USe the Vue.use() global method
@@ -487,7 +494,7 @@ The HTML template for the above sample is:
 </div>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the **World** map. The respective `id` can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
 ## Problem rendering the chart?
 

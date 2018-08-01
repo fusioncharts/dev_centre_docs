@@ -14,7 +14,7 @@ This article focuses on how you can configure the following using `vue-fusioncha
 
 ## Update Chart Data
 
-A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to see changes):
+A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to start):
 
 {% embed_chart configure-charts-using-angular-example-1.js %}
 

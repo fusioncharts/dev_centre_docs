@@ -21,17 +21,17 @@ You can drill-down to descendant charts by simply clicking the data plot items o
 
 * Supports drill-down to an unlimited number of levels
 
-## Create drill down 
+## Create drill-down 
 
-To create drill down charts follow the steps given below:
+To create drill-down charts, follow the steps given below:
 
 1. Create the JSON/XML data for the parent chart. This is called the parent data source.
 
-2. Append the data string or the data URL for the descendant charts within the parent data source. If you append the data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
+2. Append the data string or the data URL for the descendant charts within the parent data source. If you append a string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
 
 Once you implement these steps, the FusionCharts JavaScript class takes care of the rest. Let's see the steps in details.
 
-As an example here, we will consider a simple scenario of a parent chart with the single level of drill-down.
+As an example, we will consider a simple scenario of a parent chart with the single level of drill-down.
 
 The parent chart is a column 2D chart that shows the yearly sales of the top three juice flavors, for the last year. When you click on the data plot for a particular flavor of juice, it drills-down to show a pie 2D chart that shows the quarterly sales figures for that flavor.
 
