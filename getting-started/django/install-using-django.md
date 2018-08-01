@@ -5,7 +5,7 @@ heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the **FusionCharts server-side Django wrapper** that lets you create interactive, data-driven charts. FusionCharts uses JavaScript and HTML code to generate charts in the browser. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page for generating charts.
+FusionCharts Suite XT includes the **FusionCharts server-side Django** wrapper that lets you create interactive, data-driven charts. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page for generating charts.
 
 In this article, we will show you how you can download and install the **FusionCharts Django** wrapper and all the other dependencies on your system.
 
@@ -13,9 +13,9 @@ In this article, we will show you how you can download and install the **FusionC
 
 ## Install the FusionCharts Django Wrapper
 
-In order to install and start working with Django-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
+In order to install and start working with Django-FusionCharts, you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
-* JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
+* JavaScript files to render **Charts**, **Widgets**, and **PowerCharts** under the `js` folder.
 * JavaScript files to render maps under the `js > maps` folder.
 * JavaScript files to apply themes under the `js > themes` folder.
 
@@ -55,7 +55,7 @@ To install FusionCharts Suite XT, simply copy and paste the JavaScript files fro
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. Configure your `STATIC_ROOT` path and follow the steps given below:
 
-**Step 1:** Assuming that you have already configured your `STATIC_ROOT` path, place the FusionChart library inside the `static > FusionCharts` folder in your project.
+**Step 1:** Assuming you have already configured your `STATIC_ROOT` path, place the FusionChart library inside the `static > FusionCharts` folder in your project.
 
 **Step 2 (optional):** Include the theme files in the `static > FusionCharts` folder in your project.
 
@@ -73,8 +73,7 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ## Installing FusionMaps for your project
 
-FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. 
-To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest the of map definition files to plot maps of those countries/regions. 
+FusionCharts Suite XT provides **1400+** data-driven maps under the product FusionMaps. To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **Map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the remaining map definition files to plot maps of those countries/regions.
 
 > If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace for upgrading to the latest map definition files.
 
@@ -97,9 +96,9 @@ In the above example, we’ve included the World Map, whose map definition (path
 
 **Load other Map Definition files**
 
-To use any other map (except world and USA) from the 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name.
+To use any other map (except World and USA) from the 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name.
 
-Insert the `<script>` tag in `templates > index.html` file to include the map defination file. The `<script>` tag is shown below:
+Insert the `<script>` tag in `templates > index.html` file to include the map definition file. The `<script>` tag is shown below:
 
 ```HTMl
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
@@ -117,7 +116,7 @@ Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open
 
 [Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allow you to apply centralized themes to any number of charts.
 
-In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
+In a theme file, we can centralize the following aspects of all of your charts, gauges, and maps:
 
 * Visual appearance (data plot color, font color, font size, etc.)
 * Behavior (hover effects for data plots)
@@ -137,4 +136,4 @@ Add the following code to the `templates > index.html` file:
 <script type="text/javascript" src="{% static "path/to/local/themes/fusioncharts.theme.fusion.js" %}"></script>
 ```
 
-> Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective theme name. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
