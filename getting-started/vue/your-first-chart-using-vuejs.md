@@ -5,9 +5,9 @@ heading: Your First Chart in Vue using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps, and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and the Vue-FusionCharts component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/vue/your-first-chart-using-vuejs#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/vue/your-first-chart-using-vuejs#create-your-first-gauge-6) and a [map]({% site.baseurl %}/getting-started/vue/your-first-chart-using-vuejs#create-your-first-map-9).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps, and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and the `Vue-FusionCharts` component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/vue/your-first-chart-using-vuejs#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/vue/your-first-chart-using-vuejs#create-your-first-gauge-6) and a [map]({% site.baseurl %}/getting-started/vue/your-first-chart-using-vuejs#create-your-first-map-9).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/vue/install-using-vuejs '@@open-newtab') the `vue-fusioncharts` plugin, if you haven’t installed it already.
+Before going through this article, [install]({% site.baseurl %}/getting-started/vue/install-using-vuejs '@@open-newtab') the `vue-fusioncharts` plugin, if you haven’t installed it already.
 
 ## Create your first chart
 
@@ -36,7 +36,7 @@ China|30|
 
 It's time to convert it into JSON format, as FusionCharts accepts data in either JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
 
-> There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+> There are different JSON formats for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
 ```javascript
 {
