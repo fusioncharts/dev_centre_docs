@@ -91,17 +91,17 @@ Both the `chart` object and the `data` array contain a set of key-value pairs kn
 
 Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The functional attributes used in the above JSON are:
 
-* `caption` sets the caption of the chart
-* `subcaption` sets the sub-caption of the chart
-* `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis
-* `numberPrefix` adds a prefix to all the numbers visible on the chart
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` (default theme) as its value. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
+* `caption` sets the caption of the chart.
+* `subcaption` sets the sub-caption of the chart.
+* `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
+* `numberPrefix` adds a prefix to all the numbers visible on the chart.
+* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` (default theme) as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetic Attributes
 
-These attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics, no cosmetic attributes are used in this sample.
+Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample.
 
-For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
+For a detailed list of attributes click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
 ### Setup the main module
 

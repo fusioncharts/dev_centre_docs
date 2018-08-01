@@ -94,7 +94,7 @@ Functional attributes let you control a variety of functional elements on the ch
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
 * `numberPrefix` adds a prefix to all the numbers visible on the chart.
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` (default theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
+* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` (default theme) as the value of it. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetics Attributes
 
@@ -158,7 +158,7 @@ jQuery('document').ready(function() {
 In the above code:
 
 * We have created an instance of the **Column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart.
-* To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
+* To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in XML format. 
 
 The HTML code for the above sample is:
 
