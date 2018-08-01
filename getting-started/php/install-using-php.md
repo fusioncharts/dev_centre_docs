@@ -75,7 +75,6 @@ This step is optional, the chart will render with the default theme (`fusion`) e
 ```PHP
 <?php
    	/* Include the `fusioncharts.php` file that contains functions to embed the charts. */
-
    	include(“path/to/local/fusioncharts.php”);
 ?>
 ```
@@ -85,7 +84,7 @@ This completes the installation of FusionCharts in your application. To see how 
 ## Installing FusionMaps for your project
 
 FusionCharts Suite XT provides over **1400+** data-driven maps under the product FusionMaps. 
-In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the **world map**, and **map of the USA** - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
+In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the **world map**, and **map of the USA** - to reduce the download size. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest of map definition files, when you need to plot maps of those countries/regions. 
 
 > If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace for upgrading to the latest map definition files.
 
