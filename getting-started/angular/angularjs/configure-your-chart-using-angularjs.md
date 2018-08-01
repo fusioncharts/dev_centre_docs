@@ -1,5 +1,5 @@
 ---
-title: Configuring your Chart using AngularJS | FusionCharts
+title: Configuring your Chart Using AngularJS | FusionCharts
 description: This article focuses on different type of configurations possible using AngularJS.
 heading: Configuring your Chart using AngularJS
 chartPresent: true
@@ -14,7 +14,7 @@ This article focuses on how you can configure the following using `angularjs-fus
 
 ## Update Chart Data
 
-A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to see changes):
+A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to start):
 
 {% embed_chart configure-charts-using-angular-example-1.js %}
 
@@ -60,7 +60,7 @@ The JSON data to render the above chart is given below:
 },
 ```
 
-Now, create module and controller for the template. The code for the `js` file is given below:
+Now, create the module and the controller for the template. The code for the `js` file is given below:
 
 ```
 $scope.dataSource = {
@@ -181,7 +181,7 @@ The JSON data to render the above chart is given below:
 },
 ```
 
-Now, create module and controller for the template. The code for the `js` file is given below:
+Now, create the module and the controller for the template. The code for the `js` file is given below:
 
 ```
 $scope.dataSource = {

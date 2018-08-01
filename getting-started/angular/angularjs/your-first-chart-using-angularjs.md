@@ -208,7 +208,7 @@ Range|Color|Hex Code|
 50-75|Yellow|#FFC533|
 75-100|Green|#62B58F|
 
-So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and is green.
+So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
 ### Convert tabular data into JSON format
 
@@ -254,9 +254,9 @@ See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attr
 
 ### Setup the main module
 
-In this step, we will setup the main module to create the **angularGauge** chart. 
+In this step, we will setup the main module to create the **Angular Gauge**. 
 
-Create module and controller for the template. The code for the `script.js` file is given below:
+Create the module and the controller for the template. The code for the `script.js` file is given below:
 
 ```
 /*
@@ -304,7 +304,7 @@ myApp.controller('MyController', ['$scope', function($scope) {
 }])
 ```
 
-Now, use the fusioncharts directive in a template. The code for the `index.html` file is given below:
+Now, use the `fusioncharts` directive in a template. The code for the `index.html` file is given below:
 
 ```html
 <body ng-app="my-app">
@@ -322,7 +322,7 @@ Now, use the fusioncharts directive in a template. The code for the `index.html`
 
 ## Create your first map
 
-In this section, we will create a visualization using the map of **World** showing the **Average annual population growth** across all continents. Take a look at the map shown below:
+In this section, we will create a visualization using the map of **World Map** showing the **Average annual population growth** across all continents. Take a look at the map shown below:
 
 {% embed_chart getting-started-your-first-map.js %}
 
@@ -343,7 +343,7 @@ However, when you convert the data in a format acceptable by FusionCharts, the e
 
 For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. 
 
-We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id` of the map you want to create.
+We have detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - refer to them for the correct `id` of the map you want to create.
 
 ### Convert tabular data into JSON format
 
@@ -411,9 +411,9 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 ### Setup the main module
 
-In this step, we will setup the main module to create the **world** map. 
+In this step, we will setup the main module to create the **World Map**. 
 
-Create module and controller for the template. The code for the `script.js` file is given below:
+Create the module and the controller for the template. The code for the `script.js` file is given below:
 
 ```
 /*
@@ -490,7 +490,7 @@ myApp.controller('MyController', ['$scope', function($scope) {
 }]);
 ```
 
-Now, use the fusioncharts directive in a template. The code for the `index.html` file is given below:
+Now, use the `fusioncharts` directive in a template. The code for the `index.html` file is given below:
 
 ```html
 <body ng-app="my-app">
@@ -506,7 +506,7 @@ Now, use the fusioncharts directive in a template. The code for the `index.html`
 </body>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of **world**. The respective `ids`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of **World Map**. The respective `id` can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
 ## Problem rendering the chart?
 
