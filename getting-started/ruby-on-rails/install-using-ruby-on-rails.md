@@ -185,4 +185,4 @@ Add the following code in the `app/assets/javascripts/application.js` file as sh
 //= require fusioncharts/themes/fusioncharts.theme.fusion
 ``` 
 
-> Including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme you have to set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> To set the value of `theme` attribute to `fusion` theme, include the `fusioncharts.theme.fusion.js` file. To add any other theme to your chart, simply include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
