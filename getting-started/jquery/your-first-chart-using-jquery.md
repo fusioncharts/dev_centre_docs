@@ -651,7 +651,7 @@ The HTML code for the above sample is:
 </html>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the Map of World. A list of countries of World, and their respective `ids`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the Map of World. A list of countries of World, and their respective `ids`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
 ## Problem rendering the chart?
 
