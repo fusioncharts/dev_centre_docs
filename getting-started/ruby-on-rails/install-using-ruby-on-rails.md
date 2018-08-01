@@ -107,7 +107,7 @@ This completes the installation of FusionCharts in your application. To see how 
 FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. 
 To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest the of map definition files, when you need to plot maps of those countries/regions.
 
-> If you are using version v3.12.2 or older, [donwload](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace to upgrade the latest map definition files.
+> If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace for upgrading to the latest map definition files.
 
 To render a map, you need to include FusionCharts library in your project. Add the following code in the **app/assets/javascripts/application.js** file.
 
@@ -185,4 +185,4 @@ Add the following code in the `app/assets/javascripts/application.js` file as sh
 //= require fusioncharts/themes/fusioncharts.theme.fusion
 ``` 
 
-> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme you have to set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').

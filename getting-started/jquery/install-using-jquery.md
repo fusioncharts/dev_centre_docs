@@ -11,17 +11,18 @@ It helps you add interactive JavaScript charts to your web and mobile applicatio
 
 Some of the basic features of jQuery plugin are:
 
-* It lets you render jQuery charts that work across PCs (including IE6/7/8), Macs, iPads, iPhones, and Android devices seamlessly.
+* Render jQuery charts that work across PCs (including IE6/7/8), Macs, iPads, iPhones, and Android devices seamlessly.
 * Update chart type, data, and individual cosmetic properties at run-time.
 * Insert, prepend, and append multiple charts in an existing chart container.
 * Customize the look and feel of all elements on the chart.
 * Plot charts from data contained in HTML tables.
 
+
 In this article, we will show you how you can download and install the `jQuery helper` and all the other dependencies on your system. 
 
 ## Choose your mode of installation:
 
-You can use FusionCharts in your jquery project using any of the two modes given below:
+You can use FusionCharts in your jQuery project using any of the two modes given below:
 
 <table>
     <tr>
@@ -34,21 +35,21 @@ You can use FusionCharts in your jquery project using any of the two modes given
 
 [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
-* JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
-* JavaScript files to render maps under `js > maps` folder.
-* JavaScript files to apply themes under `js > themes` folder.
+* JavaScript files to render **Charts**, **Widgets**, and **PowerCharts** under the `js` folder.
+* JavaScript files to render maps under the `js > maps` folder.
+* JavaScript files to apply themes under the `js > themes` folder.
 
 The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> We recommend that you copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
+> We recommend that you copy all the files/folders from the `fusioncharts-suite-xt > js` folder to your project folder.
 
-* The download package also contains **jquery-fusioncharts.js** file under `fusioncharts-suite-xt > integrations > jquery` folder. The folder structure is shown below:
+* The download package also contains the **jquery-fusioncharts.js** file under the `fusioncharts-suite-xt > integrations > jquery` folder. The folder structure is shown below:
 
 ![jQuery Js Folder]({% site.baseurl %}/gif/jquery-folder-structure.gif)
 
-Both the minified (compressed) and source (uncompressed) copies of jQuery files are available in the folder. The uncompressed file `jquery-fusioncharts.js` is used during development or debugging, whereas the compressed file `jquery-fusioncharts.min.js` saves bandwidth and improves performance in production. The folder also contains the source map file `jquery-fusioncharts.js.map` for use, when debugging with a compressed file.
+Both the minified (compressed) and source (uncompressed) copies of jQuery files are available here. The uncompressed file `jquery-fusioncharts.js` is used during development or debugging, whereas the compressed file `jquery-fusioncharts.min.js` saves bandwidth and improves performance in production. The folder also contains the source map file `jquery-fusioncharts.js.map` for use, when debugging with a compressed file.
 
 > The `jquery` folder in the FusionCharts Suite XT package is available from v3.13.0. 
 
@@ -74,11 +75,11 @@ File Name|Description|
 
 Installation of FusionCharts Suite XT is simply copying and pasting the JavaScript files from the downloaded package into your project folder.
 
-After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. Creat an HTML file and follow the steps below:
+After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. Create an HTML file and follow the steps below:
 
-**Step 1:** Include [jQuery](https://jquery.com '@@open-newtab') core library
+**Step 1:** Include the [jQuery](https://jquery.com '@@open-newtab') core library
 
-Download the jQuery library from [here](https://jquery.com/download/ '@@open-newtab') and include it in your project by adding the following &lt;script&gt; tag to your html file:
+Download the jQuery library from [here](https://jquery.com/download/ '@@open-newtab') and include it in your project by adding the following &lt;script&gt; tag to your HTML file:
 
 ```html
 <script type="text/javascript" src="path/to/local/jquery.min.js"></script>
@@ -131,7 +132,7 @@ This completes the installation of FusionCharts in your application. To see how 
 FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. 
 To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest the of map definition files, when you need to plot maps of those countries/regions.
 
-> If you are using version v3.12.2 or older, [donwload](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace to upgrade the latest map definition files.
+> If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace for upgrading to the latest map definition files.
 
 To render a map, you need the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files as shown below:
 
@@ -143,11 +144,11 @@ To render a map, you need the core FusionCharts library `fusioncharts.js` along 
 
 ```
 
-In the above example, we’ve included the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
+In the above example, we’ve included the **World Map** whose map definition (path) is contained in `maps/fusioncharts.world.js`.
 
 **Load other map definition files**
 
-To use any other map (except world and USA) from the 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where `MAP_ALIAS` represents the country, state or region name.
+To use any other map (except **World** and **USA**) from the 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where `MAP_ALIAS` represents the country, state, or region name.
 
 ```
 <!-- The next line describes the format for more map definition files -->
@@ -163,7 +164,7 @@ Therefore, assuming that you need to render the map of **California**, the alias
 
 ```
 
-The consolidated code (which also includes the `jquery.min.js`, `fusioncharts.js` and `jquery-fusioncharts.js`) is as shown below:
+The consolidated code (including the `jquery.min.js`, `fusioncharts.js` and `jquery-fusioncharts.js`) is as shown below:
 
 ```html
 <!DOCTYPE html>
@@ -199,7 +200,7 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 * Behavior (hover effects for data plots)
 * Intelligence (applying different colors to the positive and negative data plots in all column 2D charts that use the theme)
 
-The FusionCharts Suite download package also contains the predefined theme files under `fusioncharts-suite-xt > js > themes` folder. The folder structure is shown below:
+The FusionCharts Suite download package also contains predefined theme files under `fusioncharts-suite-xt > js > themes` folder. The folder structure is shown below:
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
@@ -210,7 +211,7 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme you have to set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
 
 ## Install FusionCharts via npm
 
@@ -403,4 +404,4 @@ FusionTheme(FusionCharts);
 var jQueryFusionCharts = require('jquery-fusioncharts');
 ```
 
-> Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme you have to set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
