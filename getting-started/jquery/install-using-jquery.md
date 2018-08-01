@@ -376,7 +376,7 @@ FusionMaps(FusionCharts);
 California(FusionCharts);
 ```
 
-> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.
+> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.
 
 ### Include Themes via NPM
 
@@ -390,7 +390,7 @@ In a theme file, we can centralize the following aspects of all the charts, gaug
 
 To include themes, follow the steps below:
 
-**Step 1:** Include jQuery helper
+**Step 1:** Include jQuery Helper
 
 ```JavaScript
 var jQuery = require('jquery');
