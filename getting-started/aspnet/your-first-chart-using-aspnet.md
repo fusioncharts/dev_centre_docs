@@ -6,7 +6,7 @@ heading: Your First Chart in ASP.NET using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and ASP.NET wrapper. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet#create-your-first-gauge-10) and a [map]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet#create-your-first-map-13).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps, and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and the ASP.NET wrapper. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet#create-your-first-gauge-10) and a [map]({% site.baseurl %}/getting-started/aspnet/your-first-chart-using-aspnet#create-your-first-map-13).
 
 Before going through this article, please [install]({% site.baseurl %}/getting-started/aspnet/install-using-aspnet '@@open-newtab') FusionCharts ASP.NET wrapper, if you haven’t installed it already.
 
@@ -35,7 +35,7 @@ China|30|
 
 Now that you have the tabular data ready, it's time to convert it into JSON/XML format, as FusionCharts accepts data in JSON or XML format. The converted data will look as shown below:
 
-> There are different formats of JSON/XML for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts '@@open-newtab') (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+> There are different JSON/XML formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts '@@open-newtab') (which you see here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
 {% embed_data getting-started-your-first-chart.js %}
 
@@ -54,7 +54,7 @@ Functional attributes let you control a variety of functional elements on the ch
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
 * `numberPrefix` adds a prefix to all the numbers visible on the chart.
-* Please note, we have used the `theme` attribute in the chart's data and provided `fusion` (default theme) as its value. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
+* Please note, we have used the `theme` attribute in the chart's data and provided `fusion` (default theme) as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetic Attributes
 
@@ -103,7 +103,7 @@ In the above code:
 * To specify the data format as JSON/XML, we have set the `dataFormat` parameter to json. You can also provide the data in XML format. 
 * The JSON/XML data is embedded as the value of the `dataSource` parameter.
 
-The full code and the common aspx template for the above sample is given below:
+The full code and the common ASPX template for the above sample is given below:
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
@@ -292,18 +292,13 @@ Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% s
 
 ## The FusionCharts Chart Class
 
-A list of available parameters is given in the table below:
-
-### Constructor Parameters
-
 The syntax of the `Chart` class constructor used to initialize the chart object is:
 
 ```vb.net
 Chart <object name> = new Chart (chartType, chartId, chartWidth, chartHeight, dataFormat, dataSource, bgColor, bgOpacity)
-
 ```
 
-Given below is a brief description of the constructor parameters:
+A list of available constructor parameters are given in the table below:
 
 <table>
   <tr>
@@ -463,7 +458,7 @@ For a working sample, you can use the **asp-net-wrapper.zip** included in the do
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
+Gauges are powerful tools that can showcase information using a radial scale to display data and a dial to indicate the value. In this section, we will create an **Angular Gauge.**
 
 To start with, we'll build a simple gauge showcasing Nordstrom's Customer Satisfaction Score as shown below:
 
@@ -796,7 +791,7 @@ See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attr
 
 ## Create your first map
 
-In this section, we will create a visualization using the map of **World**. Take a look at the map shown below:
+In this section, we will create a visualization using the **World Map**. Take a look at the map shown below:
 
 {% embed_chart getting-started-your-first-map.js %}
 

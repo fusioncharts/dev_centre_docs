@@ -5,20 +5,20 @@ heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the **FusionCharts server-side ASP.NET wrapper** that lets you create interactive, data-driven charts. FusionCharts uses JavaScript and HTML code to generate charts in the browser. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page for generating charts. Before we get into the installation process of the wrapper, let's take a look at what sets the wrapper apart.
+FusionCharts Suite XT includes the **FusionCharts server-side ASP.NET wrapper** that lets you create interactive, data-driven charts. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated in the server as a string and inserted in the web page for generating charts. Before we get into the installation process of the wrapper, let's take a look at what sets the wrapper apart.
 
 Some of the basic features of the ASP.NET wrapper are:
 
-* Easily create charts in JavaScript using your **C#** or **VB** code.
+* Lets you create charts in JavaScript easilys using your **C#** or **VB** code.
 * Can render charts using **JSON/XML** data or URL.
 
-In this article, we will show you how you can download and install the `FusionCharts ASP.NET` wrapper and all the other dependencies on your system. You can use FusionCharts in your ASP.NET project using direct JavaScript files.
+In this article, we will show you how to download and install the `FusionCharts ASP.NET` wrapper and all the other dependencies on your system. You can use FusionCharts in your ASP.NET project using direct JavaScript files.
 
-> The FusionCharts ASP.NET server-side wrapper requires a .NET Framework 3.5 or higher.
+> The FusionCharts ASP.NET server-side wrapper requires .NET Framework 3.5 or higher.
 
 ## Install FusionCharts ASP.NET Wrapper
 
-In order to install and start working with FusionCharts ASP.NET wrapper you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
+In order to install and start working with FusionCharts ASP.NET wrapper, you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
 * JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
 * JavaScript files to render maps under the `js > maps` folder.
@@ -100,12 +100,11 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ## Installing FusionMaps for your project
 
-FusionCharts Suite XT provides over `1400+` data-driven maps under the product FusionMaps. 
-In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the world map, and the map of the USA - to reduce the download size. However, you can download the rest of map definition files [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'), when you need to plot maps of those countries/regions. 
+FusionCharts Suite XT provides **1400+** data-driven maps under the product FusionMaps. To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **Map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the remaining map definition files to plot maps of those countries/regions.
 
 > If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace for upgrading to the latest map definition files.
 
-**To add FusionCharts ASP.NET wrapper in your project:**
+**To add the FusionCharts ASP.NET wrapper in your project:**
 
 Copy the `FusionCharts.cs` or `FusionCharts.vb` class (C#/VB) file from `integrations > asp.net-cs >fusioncharts-wrapper-source` (for C#) or `integration > asp.net-vb > fusioncharts-wrapper-source` (for VB) to `App_Code` folder inside your project.
 
@@ -121,11 +120,11 @@ To render a map, you need to `include` the core FusionCharts library `fusionchar
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
 ```
 
-In the above example, we’ve included the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
+In the above example, we’ve included the **World Map**, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
 
 **Load other map definition files**
 
-To use any other map (except world and USA) from the 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name.
+To use any other map (except World and USA) from our **1400+** maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name.
 
 Insert the `<script>` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The `<script>` tag is shown below:
 
@@ -165,7 +164,7 @@ This completes the installation of FusionCharts in your application. To see how 
 
 [Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allow you to apply centralized themes to any number of charts.
 
-In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
+In a theme file, we can centralize the following aspects of all of your charts, gauges, and maps:
 
 * Visual appearance (data plot color, font color, font size, etc.)
 * Behavior (hover effects for data plots)
@@ -175,7 +174,7 @@ The FusionCharts Suite download package also contains predefined theme files und
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
-To apply theme, you need to insert the `<script>` tag where you want to apply the theme. The `<script>` tag is shown below:
+To apply a theme, you need to insert the `<script>` tag where you want to apply the theme. The `<script>` tag is shown below:
 
 ```HTML
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
