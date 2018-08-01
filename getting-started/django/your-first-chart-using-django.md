@@ -255,7 +255,7 @@ Range|Color|Hex Code|
 50-75|Yellow|#FFC533|
 75-100|Green|#62B58F|
 
-So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 meansgood and is green.
+So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and is green.
 
 ### Convert tabular data into JSON/XML format
 

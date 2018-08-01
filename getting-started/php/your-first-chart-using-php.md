@@ -140,7 +140,7 @@ The full code for the above sample is given below:
     $jsonEncodedData = json_encode($arrChartConfig);
 
     // chart object
-    $Chart = new FusionCharts("column2d", "MyFirstChart" , "600", "350", "chart-container", "json", $jsonEncodedData);
+    $Chart = new FusionCharts("column2d", "MyFirstChart" , "700", "400", "chart-container", "json", $jsonEncodedData);
 
     // Render the chart
     $Chart->render();
@@ -162,18 +162,13 @@ Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% s
 
 ## The FusionCharts Chart Class
 
-A list of available parameters is given in the table below:
-
-### Constructor Parameters
-
 The syntax of the `Chart` class constructor used to initialize the chart object is:
 
 ```vb.net
 Chart <object name> = new Chart (chartType, chartId, chartWidth, chartHeight, dataFormat, dataSource, bgColor, bgOpacity)
-
 ```
 
-Given below is a brief description of the constructor parameters:
+A list of available constructor parameters are given in the table below:
 
 <table>
   <tr>
@@ -243,7 +238,7 @@ Range|Color|Hex Code|
 50-75|Yellow|#FFC533|
 75-100|Green|#62B58F|
 
-So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 meansgood and is green.
+So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and is green.
 
 ### Convert tabular data into JSON/XML format
 
