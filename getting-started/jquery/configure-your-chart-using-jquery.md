@@ -5,7 +5,7 @@ heading: Configuring your Chart using jQuery
 chartPresent: true
 ---
 
-FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization easy. These features include chart update, annotations, trend-lines, and events.
+FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, annotations, trend-lines, and events.
 
 This article focuses on how you can configure the following using `jquery-fusioncharts` component:
 
@@ -14,7 +14,7 @@ This article focuses on how you can configure the following using `jquery-fusion
 
 ## Update Chart Data
 
-A chart, configured to update data values dynamically, is shown below (click **Update chart** data to update the chart data):
+A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to see changes):
 
 {% embed_chart configure-charts-using-angular-example-1.js %}
 
@@ -60,7 +60,7 @@ The JSON data to render the above chart is given below:
 },
 ```
 
-In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
 
 The code to render a chart using `require` is given below:
 
@@ -165,7 +165,7 @@ The JSON data to render the above chart is given below:
 },
 ```
 
-In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
 
 The code to render a chart using `require` is given below:
 
@@ -258,7 +258,7 @@ $('.selectorExample’).attrFusionCharts({"theme": "fusion"});
 
 The FusionCharts jQuery helper enables you to bind FusionCharts events using the jQuery `bind`/`on` methods. The event handler needs to be attached to an HTML element containing the `FusionCharts` object.
 
-In this section, you will be shown how you can work with the FusionCharts events using the jQuery helper.
+In this section, you will learn how to work with FusionCharts events using the jQuery helper.
 
 A chart with the `dataPlotClick` event configured using the jQuery helper looks like this:
 
@@ -266,7 +266,7 @@ A chart with the `dataPlotClick` event configured using the jQuery helper looks 
 
 <div id='messageView' style='width:250px; text-align:center; font-size:12px; color:#333; padding:10px; margin:20px 100px'>Click on a data plot to trigger event</div>
 
-When a data plot on the chart is clicked, `dataPlotClick` event is fired and the event listener displays the corresponding message in the div container.
+When a data plot on the chart is clicked, the `dataPlotClick` event is fired and the event listener displays the corresponding message in the div container.
 
 The code snippet for this chart is shown below:
 

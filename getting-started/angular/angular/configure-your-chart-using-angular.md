@@ -5,7 +5,7 @@ heading: Configuring your Chart using Angular
 chartPresent: true
 ---
 
-FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization easy. These features include chart update, annotations, trend-lines, and events.
+FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, annotations, trend-lines, and events.
 
 This article focuses on how you can configure the following using `angular-fusioncharts` component:
 
@@ -14,7 +14,7 @@ This article focuses on how you can configure the following using `angular-fusio
 
 ## Update Chart Data
 
-A chart, configured to update data values dynamically, is shown below (click **Update chart** data to update the chart data):
+A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to see changes):
 
 {% embed_chart configure-charts-using-angular-example-1.js %}
 
