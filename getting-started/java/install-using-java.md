@@ -5,11 +5,11 @@ heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the **FusionCharts server-side Java wrapper** that lets you create interactive, data-driven charts. FusionCharts uses JavaScript and HTML code to generate charts in the browser. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page for generating charts. Before we get into the installation process of the wrapper, let's take a look at what sets the wrapper apart.
+FusionCharts Suite XT includes the **FusionCharts server-side Java** wrapper that lets you create interactive, data-driven charts. Using this wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page for generating charts. Before we get into the installation process of the wrapper, let's take a look at what sets the wrapper apart.
 
-Some of the basic features of Java are:
+Some of the basic features of the Java wrapper are:
 
-* Easily create charts in JavaScript using your Java code.
+* LEts you easily create charts in JavaScript using your Java code.
 * Can render charts using **JSON/XML** data or URL.
 
 In this article, we will show you how to download and install the `FusionCharts Java` wrapper and all the other dependencies on your system.
@@ -21,8 +21,8 @@ In this article, we will show you how to download and install the `FusionCharts 
 In order to install and start working with FusionCharts - Java Wrapper you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
 * JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
-* JavaScript files to render maps under `js > maps` folder.
-* JavaScript files to apply themes under `js > themes` folder.
+* JavaScript files to render maps under the `js > maps` folder.
+* JavaScript files to apply themes under the `js > themes` folder.
 
 The folder structure is shown below:
 
@@ -72,7 +72,7 @@ This step is optional, the chart will render with the default theme (`fusion`) e
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-To use **FusionCharts-Java wrapper** in your project copy/paste the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project’s folder.
+To use **FusionCharts-Java wrapper** in your project, copy/paste the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project’s folder.
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java '@@open-newtab').
 
