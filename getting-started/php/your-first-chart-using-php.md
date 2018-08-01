@@ -452,7 +452,7 @@ See the complete list of [all possible attributes]({% site.baseurl %}/maps/attri
 
 In case something went wrong, and you are unable to see the chart, check for the following:
 
-* If you don't see the chart getting rendered on the browser, it might be because some browsers does not allow JavaScript files to be loaded and run from the local filesystem. In such cases, either try with a different browser, or create a local/remote server and server the webpages containing the charts from the server.
+* If you don't see the chart getting rendered on the browser, it might be because some browsers does not allow JavaScript files to be loaded and run from the local filesystem. In such cases, either try a different browser, or create a local/remote server and provide the webpages containing the charts from the server.
 
 * If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
 
