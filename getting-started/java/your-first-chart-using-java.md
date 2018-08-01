@@ -86,8 +86,8 @@ FusionCharts firstChart = new FusionCharts(
 
 In the above code:
 
-* We have created an instance of the **Column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 800x550 pixels using `width` and `height`.
-* To specify the data format as JSON, we have set the `dataFormat` parameter to **json**. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
+* We have created an instance of the **Column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 700x400 pixels using `width` and `height`.
+* To specify the data format as JSON, we have set the `dataFormat` parameter to **json**. You can also provide the data in XML format. 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 
 Create a container using `<div>` to render the chart.
@@ -183,17 +183,13 @@ Now, go on and explore other 95+ chart types that we have at [FusionCharts]({% s
 
 ## The FusionCharts Chart Class
 
-A list of available parameters is given in the table below:
-
-### Constructor Parameters
-
 The syntax of the `Chart` class constructor used to initialize the chart object is:
 
 ```vb.net
 Chart <object name> = new Chart (chartType, chartId, chartWidth, chartHeight, dataFormat, dataSource, bgColor, bgOpacity)
 ```
 
-Given below is a brief description of the constructor parameters:
+A list of available constructor parameters are given in the table below:
 
 <table>
   <tr>
@@ -245,7 +241,7 @@ Given below is a brief description of the constructor parameters:
 </table>
 
 
->  It is not necessary to assign values for all parameters during initialization. However, keep in mind the following:
+It is not necessary to assign values for all parameters during initialization. However, keep in mind the following:
 
 * The order of parameters, needs to be preserved.
 * Make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before running the application.
@@ -407,7 +403,7 @@ See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attr
 
 ## Create your first map
 
-In this section, we will create a visualization using the map of **World**. Take a look at the map shown below:
+In this section, we will create a visualization using the **World Map**. Take a look at the map shown below:
 
 {% embed_chart getting-started-your-first-map.js %}
 

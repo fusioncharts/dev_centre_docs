@@ -219,7 +219,7 @@ A list of available constructor parameters are given in the table below:
   </tr>
 </table>
 
->  It is not necessary to assign values for all parameters during initialization. However, keep in mind the following:
+It is not necessary to assign values for all parameters during initialization. However, keep in mind the following:
 
 * The order of parameters, needs to be preserved.
 * Make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before running the application.
