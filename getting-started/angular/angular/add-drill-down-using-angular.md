@@ -20,9 +20,9 @@ You can drill-down to descendant charts by simply clicking the data plot items o
 
 * Supports drill-down to an unlimited number of levels
 
-## Create drill down 
+## Create drill-down charts 
 
-To create drill down charts follow the steps given below:
+To create drill-down charts follow the steps given below:
 
 1. Create the JSON/XML data for the parent chart. This is called the parent data source.
 

@@ -31,7 +31,7 @@ File Name|Description|
 
 ## Install Angular-FusionCharts via npm
 
-This section outlines the steps to be executed for installing **angular-fusioncharts** via npm:
+This section outlines the steps for installing **angular-fusioncharts** via npm:
 
 **Step 1:** Install `angular-fusioncharts`
 
@@ -44,7 +44,7 @@ $ npm install angular-fusioncharts --save
 ```PowerShell
 $ npm install fusioncharts --save
 ```
-The above steps completes the installation of `angular-fusioncharts`. FusionCharts ES module is using **dynamic import** which is an advanced ES6 feature. This feature is supported from `typescript` **v2.4.0**, but, `Angular 2` uses **v2.2.0**. So the FusisonCharts ES module is not supported in `Angualr 2`. 
+The above steps complete the installation of `angular-fusioncharts`. The FusionCharts ES module uses **dynamic import** which is an advanced ES6 feature. This feature is supported from `typescript` **v2.4.0**. However, `Angular 2` uses **v2.2.0**. So, the FusionCharts ES module is not supported in `Angualr 2`. 
 
 To start using `angular-fusioncharts` follow the steps below: 
 
@@ -123,7 +123,7 @@ import \* as OverlappedColumn2D from 'fusioncharts/fusioncharts.overlappedcolumn
 
 ## Include Map via npm
 
-To reduce the size of the download package, the `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. To use any of these two map definition files, follow the steps given below:
+FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. To reduce the size of the download package, the `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. To use any of these two map definition files, follow the steps given below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -163,7 +163,7 @@ import \* as World from 'fusioncharts/maps/fusioncharts.world' // World Map
 
 **Load other map definition files**
 
-You can use rest of the map definition files other than the <strong>World Map</strong> and the <strong>Map of USA</strong> that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:
+To use any other map (except world and USA) from the 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -203,7 +203,7 @@ Load the map definition file(s) from the `fusionmaps` package for the map(s) to 
 
 Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files.
 
-Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
+Therefore, assuming you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -237,13 +237,13 @@ import \* as California from 'fusionmaps/maps/fusioncharts.california';
 
 [Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allow you to apply centralized themes to any number of charts.
 
-In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
+In a theme file, we can centralize the following aspects of all of your charts, gauges, and maps:
 
 * Visual appearance (data plot color, font color, font size, etc.)
 * Behavior (hover effects for data plots)
-* Intelligence (applying different colors to the positive and negative data plots in all charts that use the theme).
+* Intelligence (applying different colors to the positive and negative data plots in all charts that use the theme)
 
-To include themes follow the steps below:
+To include themes, follow the steps given below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -277,4 +277,4 @@ import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'
 </div>
 </div>
 
-Include the `fusioncharts.theme.fusion.js` file, if you want to set the value of `theme` attribute to `fusion` theme. To add any other theme to your chart, include its corresponding JavaScript file to your project and apply the theme using the `theme` attribute. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').

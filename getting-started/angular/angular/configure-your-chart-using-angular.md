@@ -5,16 +5,16 @@ heading: Configuring your Chart using Angular
 chartPresent: true
 ---
 
-FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, annotations, trend-lines, and events.
+FusionCharts Suite XT includes advanced features that let you add more context to your charts and make data visualization simpler. These features include chart updates, annotations, trend-lines, and events.
 
-This article focuses on how you can configure the following using `angular-fusioncharts` component:
+This article focuses on how you can configure the following using the `angular-fusioncharts` component:
 
 * [Update Chart Data]({% site.baseurl %}/getting-started/angular/angular/configure-your-chart-using-angular#update-chart-data-1)
 * [Update Chart Attributes]({% site.baseurl %}/getting-started/angular/angular/configure-your-chart-using-angular#update-chart-attributes-5)
 
 ## Update Chart Data
 
-A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to see changes):
+A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to start):
 
 {% embed_chart configure-charts-using-angular-example-1.js %}
 
@@ -104,7 +104,7 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion)
 export class AppModule {}
 ```
 
-> The `<fusioncharts></fusioncharts>` component is available for use in any component throughout your app. We will render our first chart in the main `app.component`.
+> The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
 
 ### Add data to `app.component.ts`
@@ -288,7 +288,7 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion)
 export class AppModule {}
 ```
 
-> The `<fusioncharts></fusioncharts>` component is available for use in any component throughout your app. We will render our first chart in the main `app.component`.
+> The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
 ### Add data to `app.component.ts`
 
