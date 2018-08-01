@@ -21,7 +21,7 @@
             "alternateHGridColor": "#f4fbff",
             "alternateVGridAlpha": "30",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "data": [{

@@ -19,7 +19,7 @@
             //Gauge Configuration
             "showGaugeBorder": "0",
 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

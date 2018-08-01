@@ -14,7 +14,7 @@
             "gaugeOuterRadius": "180",
             "gaugeInnerRadius": "75%",
             "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

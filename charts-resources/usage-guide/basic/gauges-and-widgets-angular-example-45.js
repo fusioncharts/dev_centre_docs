@@ -13,7 +13,7 @@
             "showValue": "1",
             "valueBelowPivot": "1",
             "tickValueDistance": "25",
-            "theme": "fint",
+            "theme": "fusion",
             "dataStreamUrl": "https://static.fusioncharts.com/sampledata/php/streamErrorMessages.php",
             "refreshInterval": "10",
             "useMessageLog": "1",

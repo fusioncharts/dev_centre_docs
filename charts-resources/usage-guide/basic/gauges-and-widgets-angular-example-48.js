@@ -13,7 +13,7 @@
             "showValue": "1",
             "valueBelowPivot": "1",
             "tickValueDistance": "15",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": { // color range to 
             "color": [{

@@ -17,7 +17,7 @@
             //Configure no.of visible plots
             "numVisiblePlot": "12",
 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

@@ -19,7 +19,7 @@
             "bgImageAlpha": "25",
             "bgImageDisplayMode": "stretch",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Apple",

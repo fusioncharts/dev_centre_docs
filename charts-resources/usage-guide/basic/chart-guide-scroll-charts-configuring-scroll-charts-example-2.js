@@ -17,7 +17,7 @@
             //Configure of gradient scrollbar
             "flatScrollBars": "0",
 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

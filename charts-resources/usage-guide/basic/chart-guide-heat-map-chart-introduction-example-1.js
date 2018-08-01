@@ -18,7 +18,7 @@
             "baseFont": "Helvetica Neue,Arial",
             "toolTipBorderRadius": "2",
             "toolTipPadding": "5",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "dataset": [{
             "data": [{

@@ -26,7 +26,7 @@
             //Inverse Y axis
             "invertYAxis": "1",
 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

@@ -11,7 +11,7 @@
             "xAxisName": "Managers",
             "yAxisName": "Revenue (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "LabelPadding": "50"
         },
         "annotations": {

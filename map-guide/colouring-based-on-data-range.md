@@ -16,7 +16,7 @@ Using a gradient scale, you can specify colors associated with specific data poi
 
 Here's how you can build a map with a gradient scale:
 
-* Set the `caption` of the map and apply the `fint` theme (FusionCharts Internal Theme) to control the cosmetic properties of the map. Use the `formatNumberScale` and `showLabels` attributes to specify the formatting of labels.
+* Set the `caption` of the map and apply the `fusion` theme (FusionCharts Internal Theme) to control the cosmetic properties of the map. Use the `formatNumberScale` and `showLabels` attributes to specify the formatting of labels.
 
 * Use the `colorrange` object to define different numeric ranges of the gradient legend. Also, use the following attributes to define specific properties:
 
@@ -38,7 +38,7 @@ Refer to the code given below:
 {
     "chart": {
         "caption": "Global Population Density",
-        "theme": "fint",
+        "theme": "fusion",
         "showLabels": "1",
         "formatNumberScale": "0"
     },

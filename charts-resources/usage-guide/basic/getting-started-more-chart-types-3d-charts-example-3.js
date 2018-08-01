@@ -13,7 +13,7 @@
             "plotTooltext": "Success : $percentOfPrevValue",
             //To show the values in percentage
             "showPercentValues": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Unique Website Visits",

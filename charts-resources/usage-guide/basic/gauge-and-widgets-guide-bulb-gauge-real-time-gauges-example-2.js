@@ -21,7 +21,7 @@
             "dataStreamURL": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-bulb-gauge-real-time-gauges-php-1.php",
             "refreshInterval": "5",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
 
 
         },

@@ -22,7 +22,7 @@
             //Hiding alternate horizontal grid
             "showAlternateHGridColor": "0",
             "bgColor": "#eeeeee",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Jan",

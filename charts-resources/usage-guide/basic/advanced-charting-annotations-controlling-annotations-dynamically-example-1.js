@@ -11,7 +11,7 @@
             "xAxisName": "Day",
             "yAxisName": "No. of Visitors",
             "showValues": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "annotations": {
             "origw": "400",

@@ -8,7 +8,7 @@
         "chart": {
             "caption": "Busiest Routes from Heathrow Airport",
             "subcaption": "For the year 2014",
-            "theme": "fint",
+            "theme": "fusion",
             "markerBgColor": "#FF0000",
             "markerRadius": "10",
             "connectorColor": "#0CB2B0",

@@ -19,7 +19,7 @@
             "scrollColor": "#1aaf5d",
             "scrollHeight": "12",
             "scrollPadding": "2",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

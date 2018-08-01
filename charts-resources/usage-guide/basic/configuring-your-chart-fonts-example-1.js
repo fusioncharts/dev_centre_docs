@@ -16,7 +16,7 @@
             "baseFontSize": "11",
             "baseFontColor": "#0066cc",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "data": [{

@@ -11,7 +11,7 @@
             "subCaptionFontSize": "12",
             "xAxisName": "Quarter",
             "yAxisName": "No. of Units",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

@@ -10,7 +10,7 @@
         "chart": {
             "caption": "Power Generator",
             "xaxisname": "Time",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

@@ -19,7 +19,7 @@
             "viewMode": "0",
             "showPlotBorder": "1",
             "plotBorderThickness": "4",
-            "theme": "fint",
+            "theme": "fusion",
             "showCanvasBorder": "1",
             "canvasBorderAlpha": "20"
         },

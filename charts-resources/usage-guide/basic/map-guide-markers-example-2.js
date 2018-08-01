@@ -8,7 +8,7 @@
         "chart": {
             "caption": "Top 5 Airports in the World",
             "subcaption": "Based on Passenger Traffic",
-            "theme": "fint",
+            "theme": "fusion",
             "showMarkerLabels": "1",
             "entityFillColor": "#A8A8A8",
             "entityFillHoverColor": "#E5E5E9"

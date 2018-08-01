@@ -15,7 +15,7 @@
             //Show alternative horizontal grid color
             "showAlternateHGridColor": "1",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "data": [{

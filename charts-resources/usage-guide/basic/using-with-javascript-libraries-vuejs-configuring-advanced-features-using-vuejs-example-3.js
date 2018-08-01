@@ -10,7 +10,7 @@
             "caption": "Top 5 stores in last month by revenue",
             "subCaption": "Harry's SuperMart",
             "numberPrefix": "$",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Bakersfield Central",
@@ -39,7 +39,7 @@
                         "caption": "Top 5 stores in last month by revenue",
                         "subCaption": "Harry's SuperMart",
                         "numberPrefix": "$",
-                        "theme": "fint"
+                        "theme": "fusion"
                     },
                     "data": [{
                         "label": "Bakersfield Central",

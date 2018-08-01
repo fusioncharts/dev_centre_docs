@@ -11,7 +11,7 @@
             "xAxisname": "Quarter",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             //Set legend to appear at right side of chart
             "legendPosition": "right",
             //Set a text caption for legend

@@ -12,7 +12,7 @@
              "showPercentValues": "1",
              "showTooltip": "0",
              "decimals": "1",
-             "theme": "fint"
+             "theme": "fusion"
          },
          "data": [{
              "label": "Teenage",

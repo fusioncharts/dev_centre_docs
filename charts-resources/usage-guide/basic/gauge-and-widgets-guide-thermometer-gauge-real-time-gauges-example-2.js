@@ -22,7 +22,7 @@
             "thmOriginX": "100",
             "dataStreamURL": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-thermometer-gauge-real-time-gauges-php-1.php",
             "refreshInterval": "5",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "value": "-6"
     }

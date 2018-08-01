@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Employee late arrivals by reported cause",
             "subCaption": "Last month",
             "xAxisName": "Reported Cause",

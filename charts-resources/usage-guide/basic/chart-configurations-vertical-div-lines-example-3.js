@@ -21,7 +21,7 @@
             "vDivLineDashLen": "5",
             "vDivLineDashGap": "3",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Mon",

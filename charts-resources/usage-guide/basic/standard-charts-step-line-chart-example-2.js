@@ -15,7 +15,7 @@
             "palettecolors": "#6baa01, #d35400",
             //Without vertical joins
             "drawVerticalJoins": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

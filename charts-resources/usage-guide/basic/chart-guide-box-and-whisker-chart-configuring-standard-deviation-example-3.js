@@ -11,7 +11,7 @@
             "xAxisName": "Pay Grades",
             "YAxisName": "Salaries (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "showValues": "0",
             "SDIconSides": "5",
             "drawSDConnector": "1"

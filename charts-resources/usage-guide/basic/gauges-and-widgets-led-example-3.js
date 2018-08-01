@@ -16,7 +16,7 @@
             "valueFontSize": "12",
             "showhovereffect": "1",
             "chartBottomMargin": "20",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

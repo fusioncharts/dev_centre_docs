@@ -16,7 +16,7 @@
             "numVDivLines": "5",
             "showAlternateVGridColor": "1",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "data": [{

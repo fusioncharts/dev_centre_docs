@@ -27,7 +27,7 @@ Refer to the code given below:
 {
     "chart": {
         "caption": "Global Population",
-        "theme": "fint",
+        "theme": "fusion",
         "formatNumberScale": "0",
         "numberSuffix": "M",
         "showLabels": "1",
@@ -112,7 +112,7 @@ To build the map shown above, do the following in the HTML code:
 
 * Create a map instance of type `maps/world` in the `populationMap` variable. Set the height and width of this map. Also, set the value of `dataType` to `json`.
 
-* Set the caption of the map to "Global Population" and apply the `fint` (FusionCharts Internal) theme to control the cosmetic properties of the map. Use the attributes `formatNumberScale`, `showLabels` and `numberSuffixattributes` to specify the formatting of the labels.
+* Set the caption of the map to "Global Population" and apply the `fusion` (FusionCharts Internal) theme to control the cosmetic properties of the map. Use the attributes `formatNumberScale`, `showLabels` and `numberSuffixattributes` to specify the formatting of the labels.
 
 * Use the `entityDef` object to specify a `newID` for each `internaID`.
 

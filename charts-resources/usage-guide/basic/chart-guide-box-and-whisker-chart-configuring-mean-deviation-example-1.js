@@ -11,7 +11,7 @@
             "xAxisName": "Pay Grades",
             "YAxisName": "Salaries (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "usePlotGradientColor": "",
             "showValues": "0",
             //To show the icon representing the mean deviation

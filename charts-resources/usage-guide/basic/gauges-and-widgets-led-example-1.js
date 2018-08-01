@@ -19,7 +19,7 @@
             "ledSize": "3",
             "ledGap": "2",
             "manageResize": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         //All annotations are grouped under this element
         "annotations": {

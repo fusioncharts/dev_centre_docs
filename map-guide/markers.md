@@ -14,7 +14,7 @@ To build a map specifying the world's 5 busiest airports, with a triangle denoti
 
 * Set the `caption` of the map.
 
-* Apply the `fint` (FusionCharts Internal) theme to control the cosmetic properties of the map.
+* Apply the `fusion` (FusionCharts Internal) theme to control the cosmetic properties of the map.
 
 * Set the value of the `markerBgColor` attribute to `red` and that of the `markerRadius` attribute to `10`.
 
@@ -39,7 +39,7 @@ Refer to the JSON code given below:
     "chart": {
         "caption": "Top 5 Busiest Airports in the World",
         "subcaption": "Based on Passenger Traffic",
-        "theme": "fint",
+        "theme": "fusion",
         "markerBgColor": "#FF0000",
         "markerRadius": "10",
         "showMarkerLabels": "1",
@@ -104,7 +104,7 @@ In the map above, you used predefined shapes to build markers. However, you can 
 
 Here's how you can build the same map as the one above, but with airplane icons for the markers:
 
-* Create a map as shown in the above code and set its theme to `fint`. 
+* Create a map as shown in the above code and set its theme to `fusion`. 
 
 * Create a `shapes` object within the `markers` object and specify a unique `id` for this shape as `myCustomShape`.
 
@@ -121,7 +121,7 @@ Refer to the JSON code given below:
     "chart": {
         "caption": "Top 5 Airports in the World",
         "subcaption": "Based on Passenger Traffic",
-        "theme": "fint",
+        "theme": "fusion",
         "showMarkerLabels": "1",
         "entityFillColor": "#A8A8A8",
         "entityFillHoverColor": "#E5E5E9"
@@ -191,7 +191,7 @@ In FusionCharts Suite XT, you can connect any two defined markers on the map usi
 
 For example, build a map showing the busiest air routes from the Heathrow airport in London, and connect the individual airports using connectors.
 
-* Create the map as shown in the sections above, set its theme to `fint`, and specify marker related attributes.
+* Create the map as shown in the sections above, set its theme to `fusion`, and specify marker related attributes.
 
 * Use the `connectorColor` attribute to specify the color of the connector line. Also, use the `connectorHoverColor` attribute to specify the color of the connector line on hover. Note that if you declare these attributes at chart level, they will be applied to all connectors. You can, however, override them for specific markers, by defining their values within the `connector` object. 
 
@@ -208,7 +208,7 @@ Refer to the JSON code below:
     "chart": {
         "caption": "Busiest Routes from Heathrow Airport",
         "subcaption": "2018",
-        "theme": "fint",
+        "theme": "fusion",
         "markerBgColor": "#FF0000",
         "markerRadius": "10",
         "showMarkerLabels": "1",
@@ -290,7 +290,7 @@ Click [here](http://jsfiddle.net/fusioncharts/j922xqta/ "@@open-newtab") to edit
 
 In FusionCharts Suite XT, you can define marker sizes based on associated data values. Building on the earlier examples, you can configure the size of the marker to be defined by the data value associated with the marker. To do so, follow the steps given below:
 
-* Set the `caption` of the map and apply the `fint` theme (FusionCharts Internal Theme) to control the cosmetic properties of the map. Use the `useValuesForMarkers` attribute to display data driven markers.
+* Set the `caption` of the map and apply the `fusion` theme (FusionCharts Internal Theme) to control the cosmetic properties of the map. Use the `useValuesForMarkers` attribute to display data driven markers.
 
 * Set the value of the `markerBgColor` attribute to `light blue` at chart level, to apply it to all markers on the map. You can later override it if you want, by specifying a different value for one or more specific markers within the `markers` object.
 
@@ -311,7 +311,7 @@ Refer to the JSON code below:
     "chart": {
         "caption": "Top 5 Busiest Airports in the World",
         "subcaption": "Based on Passenger Traffic in 2014",
-        "theme": "fint",
+        "theme": "fusion",
         "markerBgColor": "#3399FF",
         "entityFillColor": "#A8A8A8",
         "entityFillHoverColor": "#E5E5E9",

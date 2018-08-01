@@ -14,7 +14,7 @@
         "xaxismaxvalue": "95",
         "ynumberprefix": "$",
         "xnumbersuffix": "&deg; F",
-        "theme": "fint"
+        "theme": "fusion"
     },
     "categories": [
         {

@@ -16,7 +16,7 @@
             "outCnvBaseFontSize": "11",
             "outCnvBaseFontColor": "#55AA00",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "data": [{

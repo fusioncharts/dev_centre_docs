@@ -19,7 +19,7 @@
             "numberPrefix": "$",
             "showRealTimeValue": "1",
             "xAxisNamePadding": "30",
-            "theme": "fint",
+            "theme": "fusion",
             "realTimeValuePadding": "50"
 
         },

@@ -21,7 +21,7 @@
             //Single Fill color
             "useSameFillColor": "1",
             "chartBottomMargin": "20",
-            "theme": "fint"
+            "theme": "fusion"
         },
         //All annotations are grouped under this element
         "annotations": {

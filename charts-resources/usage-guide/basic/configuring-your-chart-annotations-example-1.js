@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Bakersfield Central - Total footfalls",
             "subCaption": "Last week",
             "xAxisName": "Day",

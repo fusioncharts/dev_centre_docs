@@ -17,7 +17,7 @@
             //Values as percentage of previous value
             "percentOfPrevious": "1",
 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Unique Website Visits",

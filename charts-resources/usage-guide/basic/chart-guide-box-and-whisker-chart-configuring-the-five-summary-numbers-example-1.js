@@ -11,7 +11,7 @@
             "xAxisName": "Pay Grades",
             "YAxisName": "Salaries (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "showValues": "1",
             //To show or hide the lower quartile value
             "showQ1Values": "0",

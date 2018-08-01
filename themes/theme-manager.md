@@ -87,7 +87,7 @@ You need to write theme definitions using a tier-based structure. You can use ea
 
 * Use the `<mapName>` tier to extend or override theme settings in the `geo` tier, as well as the settings in the `base` tier, for specific map types. The tier name will be the value used for the `type` attribute in the JSON data for the map. For example, all attributes you define under the `world` tier will be applicable only to the world map in your application.
 
-Partial definition of the `fusion` theme, as contained in the `fusioncharts.theme.fusion.js` file, is given below:
+Partial definition of the `zune` theme, as contained in the `fusioncharts.theme.zune.js` file, is given below:
 
 ```json
 FusionCharts.register('theme', {

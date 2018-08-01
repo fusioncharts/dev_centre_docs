@@ -12,7 +12,7 @@
             "xaxisname": "Quarter",
             "yaxisname": "Amount (In USD)",
             "numberprefix": "$",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Q1",

@@ -12,7 +12,7 @@
             "xAxisName": "Pay Grades",
             "YAxisName": "Salaries (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "showValues": "1",
             //color of the upper whisker set to red
             "upperWhiskerColor": "ff0000",

@@ -13,7 +13,7 @@
             "yAxisName": "Amount (In USD)",
             "yaxismaxvalue": "2720000",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "placeValuesInside": "0",
             "rotateValues": "0",
             //Changing font

@@ -7,7 +7,7 @@
     dataSource: {
         "chart": {
             "caption": "Global Sales Tracker",
-            "theme": "fint",
+            "theme": "fusion",
             "formatNumberScale": "0",
             "numberSuffix": "M",
             "showLabels": "1",

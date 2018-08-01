@@ -12,7 +12,7 @@
             "xaxisname": "\"Month\"",
             "yaxisname": "'Amount'",
             "numberprefix": "¥",
-            "theme": "fint",
+            "theme": "fusion",
             "rotatevalues": "1",
             "exportenabled": "1",
             "showlegend": "1",

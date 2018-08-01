@@ -9,7 +9,7 @@
             "caption": "Budget Analysis",
             "subCaption": "Current month",
             "numberPreffix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "radarfillcolor": "#ffffff"
         },
         "categories": [{

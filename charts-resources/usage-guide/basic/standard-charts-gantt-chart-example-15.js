@@ -10,7 +10,7 @@
             "caption": "Social Media Optimization",
             "captionFontSize": "16",
             "subcaption": "Project Plan",
-            "theme": "fint",
+            "theme": "fusion",
             "canvasBorderAlpha": "30"
         },
         "datatable": {

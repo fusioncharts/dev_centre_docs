@@ -20,7 +20,7 @@
             "placeValuesInside": "1",
 
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
 
 
         },

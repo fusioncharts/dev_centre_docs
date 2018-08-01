@@ -10,7 +10,7 @@
             "outputdateformat": "hh:mn",
             "caption": "Development Division - Work Schedule",
             "canvasBorderAlpha": "30",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

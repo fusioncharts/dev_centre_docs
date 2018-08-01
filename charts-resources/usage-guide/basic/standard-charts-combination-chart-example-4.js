@@ -15,7 +15,7 @@
             "sNumberSuffix": "%",
             "sYAxisMaxValue": "50",
             "numDivLines": "3",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

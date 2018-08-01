@@ -19,7 +19,7 @@
             //Configure hover effect
             "showHoverEffect": "1",
 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorrange": {
             "color": [{

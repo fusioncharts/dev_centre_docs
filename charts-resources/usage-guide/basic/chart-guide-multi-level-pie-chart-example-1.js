@@ -18,7 +18,7 @@
             "numberprefix": "$",
             "plottooltext": "$label, $$valueK, $percentValue",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "category": [{
             "label": "Products",

@@ -17,7 +17,7 @@
             "captionOnTop": "0",
             "captionAlignment": "right",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Jan",

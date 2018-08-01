@@ -31,7 +31,7 @@
             "quadrantLabelTR": "High Price / High Sale",
             "quadrantLabelBL": "Low Price / Low Sale",
             "quadrantLabelBR": "High Price / Low Sale",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

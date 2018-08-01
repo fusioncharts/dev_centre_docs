@@ -8,7 +8,7 @@
         "chart": {
             "caption": "World Population Density",
             "subcaption": "Number of people per Square Mile",
-            "theme": "fint",
+            "theme": "fusion",
             "formatNumberScale": "0",
             "showLabels": "1",
             "nullEntityColor": "#C2C2D6",
@@ -73,7 +73,7 @@
                     "showLabels": "1",
                     "entityFillColor": "#A8A8A8",
                     "entityFillHoverColor": "#E5E5E9",
-                    "theme": "fint",
+                    "theme": "fusion",
                     "showBorder": "1",
                     "bordercolor": "#FFFFFF",
                     "entityborderThickness": "3"

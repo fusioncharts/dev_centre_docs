@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Distribution of Marks for Students",
             "subcaption": "Bell Curve Grading",
             "xAxisName": "Subjects",

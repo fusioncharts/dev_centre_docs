@@ -16,7 +16,7 @@
             //Disable Smart Labels
             "enableSmartLabels": "0",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Food",

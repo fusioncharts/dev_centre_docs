@@ -11,7 +11,7 @@
             "xAxisname": "Quarter",
             "yAxisName": "Revenue (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             //Increasing scale of legend icons
             "legendIconScale": "2"
         },

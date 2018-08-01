@@ -14,7 +14,7 @@
             //Border
             "showBorder": "1",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Jan",
