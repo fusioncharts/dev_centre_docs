@@ -345,7 +345,7 @@ World(FusionCharts);
 
 **Load other map definition files**
 
-You can use rest of the map definition files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:
+You can also use the remaining map definition files, other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:
 
 ```PowerShell
 $ npm install fusionmaps
