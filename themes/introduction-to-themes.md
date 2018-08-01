@@ -27,7 +27,7 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-A column 2D chart showcasing the 3 themes mentioned above is given below:
+A Column 2D chart showcasing the 6 themes mentioned above is given below:
 
 {% embed_all themes-introduction-to-themes-example-1.js %}
 
