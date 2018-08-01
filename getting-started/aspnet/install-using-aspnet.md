@@ -171,7 +171,7 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 * Behavior (hover effects for data plots)
 * Intelligence (applying different colors to the positive and negative data plots in all charts that use the theme)
 
-The FusionCharts Suite download package also contains the predefined theme files under `fusioncharts-suite-xt > js > themes` folder. The folder structure is shown below:
+The FusionCharts Suite download package also contains predefined theme files under `fusioncharts-suite-xt > js > themes` folder. The folder structure is shown below:
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
