@@ -1,5 +1,5 @@
 ---
-title: Adding Drill Down using AngularJS | FusionCharts
+title: Adding Drill Down Using AngularJS | FusionCharts
 description: This article focuses on drill down charts.
 heading: Adding Drill Down using AngularJS
 chartPresent: true
@@ -7,7 +7,7 @@ chartPresent: true
 
 With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
 
-You can drill-down to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
+You can drill-down to the descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
 
 ### Features of the FusionCharts JavaScript Class
 
@@ -20,9 +20,9 @@ You can drill-down to descendant charts by simply clicking the data plot items o
 
 * Supports drill-down to an unlimited number of levels
 
-## Create drill down 
+## Create drill-down charts
 
-To create drill down charts follow the steps given below:
+To create drill-down charts, follow the steps given below:
 
 1. Create the JSON/XML data for the parent chart. This is called the parent data source.
 
@@ -30,11 +30,11 @@ To create drill down charts follow the steps given below:
 
 Once you implement these steps, the FusionCharts JavaScript class takes care of the rest. Let's see the steps in details.
 
-As an example, we will consider a simple scenario of a parent chart with a single level of drill-down.
+As an example, Let's consider a simple scenario of a parent chart with a single level of drill-down.
 
-The parent chart is a column 2D chart that shows the yearly sales of the top three juice flavors, for the last year. When you click on the data plot for a particular flavor of juice, it drills-down to show a pie 2D chart that shows the quarterly sales figures for that flavor.
+The parent chart is a column 2D chart that shows yearly sales of the top three juice flavors, for the last one year. When you click on the data plot for a particular flavor of juice, it drills-down to show a pie 2D chart showing quarterly sales figures for that specific flavor.
 
-The above chart, when rendered, looks like the following:
+The above chart looks like this when rendered:
 
 {% embed_chart add-drill-down-using-angular-example-1.js %}
 
@@ -142,7 +142,7 @@ The JSON data to render the above chart:
 }
 ```
 
-Now, create module and controller for the template. The code for the `js` file is given below:
+Now, create the module and the controller for the template. The code for the `js` file is given below:
 
 ```
 var DataSource = {
