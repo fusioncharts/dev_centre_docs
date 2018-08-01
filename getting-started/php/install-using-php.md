@@ -73,13 +73,11 @@ This step is optional, the chart will render with the default theme (`fusion`) e
 **Step 3:** To use **FusionCharts PHP wrapper** in your project include the `fusioncharts.php` wrapper to your PHP page:
 
 ```PHP
-<!DOCTYPE html>
 <?php
    	/* Include the `fusioncharts.php` file that contains functions to embed the charts. */
 
    	include(“path/to/local/fusioncharts.php”);
 ?>
-<html>
 ```
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php '@@open-newtab').
