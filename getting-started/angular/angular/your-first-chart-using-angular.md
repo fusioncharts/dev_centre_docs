@@ -204,7 +204,7 @@ Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% s
 
 Gauges are powerful tools that can showcase information using a radial scale to display data, while a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
 
-To start with, we'll build a simple gauge showcasing Nordstrom's Customer Satisfaction Score as shown below:
+To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
@@ -226,7 +226,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 {
     // Chart Configuration
     "chart": {
-        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
         "lowerLimit": "0",
         "upperLimit": "100",
         "showValue": "1",
@@ -298,7 +298,7 @@ export class AppComponent {
     dataSource: Object;
     constructor() {
         this.dataSource = {
-            "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
             "lowerLimit": "0",
             "upperLimit": "100",
             "showValue": "1",

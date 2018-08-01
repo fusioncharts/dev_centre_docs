@@ -256,7 +256,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 {
     // Chart Configuration
     "chart": {
-        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
         "lowerLimit": "0",
         "upperLimit": "100",
         "showValue": "1",
@@ -305,7 +305,7 @@ jQuery('document').ready(function() {
         dataSource: {
             // Chart Configuration
             "chart": {
-                "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
                 "lowerLimit": "0",
                 "upperLimit": "100",
                 "showValue": "1",
@@ -359,7 +359,7 @@ The HTML code for the above sample is:
                 dataSource: {
                     // Chart Configuration
                     "chart": {
-                        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
+                        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
                         "lowerLimit": "0",
                         "upperLimit": "100",
                         "showValue": "1",

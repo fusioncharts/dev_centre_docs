@@ -258,7 +258,7 @@ Given below is a brief description of the constructor parameters:
 
 Gauges are powerful tools that can showcase information using a radial scale to display data and a dial to indicate the value. In this section, we will create an **Angular Gauge.**
 
-To start with, we'll build a simple gauge showcasing Nordstrom's Customer Satisfaction Score as shown below:
+To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
@@ -320,7 +320,7 @@ def getWidget
 
     # Widget appearance configuration
     widgetAppearancesConfigObj = {
-        "caption" => "Nordstrom's Customer Satisfaction Score for 2017",
+        "caption" => "Nordstorm's Customer Satisfaction Score for 2017",
         "lowerLimit" => "0",
         "upperLimit" => "100",
         "showValue" => "1",

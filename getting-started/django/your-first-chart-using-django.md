@@ -247,7 +247,7 @@ For this example, we have created a view named `views.py`. To keep things simple
 
 > The example view we created is `app_name/views.py`.
 
-To start with, we'll build a simple gauge showcasing Nordstrom's Customer Satisfaction Score as shown below:
+To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
@@ -298,7 +298,7 @@ def myFirstWidget(request):
 
 	# The `widgetConfig` dict contains key - value pairs data for widget attribute
 	widgetConfig = OrderedDict()
-	widgetConfig["caption"] = "Nordstrom's Customer Satisfaction Score for 2017"
+	widgetConfig["caption"] = "Nordstorm's Customer Satisfaction Score for 2017"
 	widgetConfig["lowerLimit"] = "0"
 	widgetConfig["upperLimit"] = "100"
 	widgetConfig["showValue"] = "1"
