@@ -10,7 +10,7 @@ FusionCharts Suite XT includes the **FusionCharts server-side PHP wrapper** that
 
 In this article, we will show you how you can download and install the `FusionCharts PHP` wrapper and all the other dependencies on your system.
 
-> The FusionCharts PHP server-side wrapper requires PHP 5 or higher.
+> The FusionCharts PHP server-side wrapper requires **PHP 5** or higher.
 
 ## Install FusionCharts PHP Wrapper
 
