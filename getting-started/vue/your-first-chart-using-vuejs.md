@@ -210,7 +210,7 @@ It's time to convert it into JSON format, as FusionCharts accepts data in JSON o
 {
     // Chart Configuration
     "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+        "caption": "Nordstrom's Customer Satisfaction Score for 2017",
         "lowerLimit": "0",
         "upperLimit": "100",
         "showValue": "1",
@@ -262,7 +262,7 @@ const app = new Vue({
         dataSource: {
             // Chart Configuration
             "chart": {
-                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                "caption": "Nordstrom's Customer Satisfaction Score for 2017",
                 "lowerLimit": "0",
                 "upperLimit": "100",
                 "showValue": "1",
@@ -494,7 +494,7 @@ The HTML template for the above sample is:
 </div>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the **World** map. The respective `id` can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the **World** map. The respective `ids` can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
 ## Problem rendering the chart?
 

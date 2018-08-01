@@ -247,11 +247,11 @@ For this example, we have created a view named `views.py`. To keep things simple
 
 > The example view we created is `app_name/views.py`.
 
-To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
+To start with, we'll build a simple gauge showcasing Nordstrom's Customer Satisfaction Score as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-The thresholds for the above sample has been defined using the following range.
+The thresholds for the above sample have been defined using the following range.
 
 Range|Color|Hex Code|
 -|-|-
@@ -259,7 +259,7 @@ Range|Color|Hex Code|
 50-75|Yellow|#FFC533|
 75-100|Green|#62B58F|
 
-So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and is green.
+So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and is green.
 
 ### Convert tabular data into JSON/XML format
 
@@ -298,7 +298,7 @@ def myFirstWidget(request):
 
 	# The `widgetConfig` dict contains key - value pairs data for widget attribute
 	widgetConfig = OrderedDict()
-	widgetConfig["caption"] = "Nordstorm's Customer Satisfaction Score for 2017"
+	widgetConfig["caption"] = "Nordstrom's Customer Satisfaction Score for 2017"
 	widgetConfig["lowerLimit"] = "0"
 	widgetConfig["upperLimit"] = "100"
 	widgetConfig["showValue"] = "1"
@@ -371,7 +371,7 @@ The HTML template of the above sample is shown below:
 </html>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for an angular gauge.
 
 ## Create your first map
 
@@ -518,7 +518,7 @@ The HTML template of the above sample is shown below:
 </html>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the Map of World. The respective `ids`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
 ## Problem rendering the chart?
 

@@ -227,13 +227,13 @@ A list of available constructor parameters are given in the table below:
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
+Gauges are powerful tools that can showcase information using a radial scale to display data and a dial to indicate the value. In this section, we will create an **Angular Gauge.**
 
-To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
+To start with, we'll build a simple gauge showcasing Nordstrom's Customer Satisfaction Score as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 
-The thresholds for the above sample has been defined using the following range.
+The thresholds for the above sample have been defined using the following range.
 
 Range|Color|Hex Code|
 -|-|-
@@ -241,7 +241,7 @@ Range|Color|Hex Code|
 50-75|Yellow|#FFC533|
 75-100|Green|#62B58F|
 
-So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and is green.
+So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and is green.
 
 ### Convert tabular data into JSON/XML format
 
@@ -286,7 +286,7 @@ The full code for the above sample is given below:
     // Widget appearance configuration
     $arrChartConfig = array(
         "chart" => array(
-            "caption" => "Nordstorm's Customer Satisfaction Score for 2017",
+            "caption" => "Nordstrom's Customer Satisfaction Score for 2017",
             "lowerLimit" => "0",
             "upperLimit" => "100",
             "showValue" => "1",
@@ -333,7 +333,7 @@ The full code for the above sample is given below:
 
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for a angular gauge.
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for an angular gauge.
 
 ## Create your first map
 
@@ -449,7 +449,7 @@ The full code for the above sample is given below:
 </html>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of world. The respective `id`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the Map of World. The respective `ids`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
 ## Problem rendering the chart?
 

@@ -311,11 +311,11 @@ ReactDOM.render(
 );
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge) for a angular gauge.
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge) for an angular gauge.
 
 ## Create your first map
 
-In this section, we will create a visualization using the map of World. Take a look at the map shown below:
+In this section, we will create a visualization using the Map of World. Take a look at the map shown below:
 
 {% embed_chart getting-started-your-first-map.js %}
 
@@ -470,7 +470,7 @@ ReactDOM.render(
 );
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference) (the keys in the dataSource object) for the map of WORLD. The respective id can be found [here]({% site.baseurl %}/maps/spec-sheets/world).
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference) (the keys in the dataSource object) for the Map of World. The respective id can be found [here]({% site.baseurl %}/maps/spec-sheets/world).
 
 ## Problem rendering the chart?
 
