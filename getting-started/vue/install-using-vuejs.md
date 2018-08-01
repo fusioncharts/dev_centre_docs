@@ -73,7 +73,9 @@ File Name|Description|
 
 To install FusionCharts Suite XT, simply copy and paste the JavaScript files from the downloaded package into your project folder.
 
-After that, you can include the file in your web applications and start building your charts, gauges, and maps. In order to include, create an HTML file and follow the steps given below:
+After that, you can include the file in your web applications and start building your charts, gauges, and maps.
+
+Create an HTML file and follow the steps given below:
 
 **Step 1:** Include [Vue](https://vuejs.org/ `@@open-newtab`) core library:
 
@@ -81,7 +83,7 @@ After that, you can include the file in your web applications and start building
 <script type="text/javascript" src="path/to/local/vue.js"></script>
 ```
 
-**Step 2:** Include the vue-fusioncharts module:
+**Step 2:** Include the `vue-fusioncharts` module:
 
 ```HTML
 <script type="text/javascript" src="path/to/local/vue-fusioncharts.js"></script>
@@ -122,7 +124,8 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ### Installing FusionMaps for your project
 
-FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest the of map definition files, when you need to plot maps of those countries/regions. 
+FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. 
+To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest the of map definition files, when you need to plot maps of those countries/regions. 
 
 > If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace for upgrading to the latest map definition files.
 
@@ -135,17 +138,17 @@ To render a map, you need the core FusionCharts library `fusioncharts.js` along 
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
 ```
 
-In the above example, we’ve included the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
+In the above example, we’ve included the **World Map** whose map definition (path) is contained in `maps/fusioncharts.world.js`.
 
 **Load other map definition files**
 
-To use any other map (except world and USA) from the **1400+** maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. 
+To use any other map (except **World** and **USA**) from the **1400+** maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state, or region name. 
 
 ```HTML
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
 ```
 
-Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
+Therefore, assuming you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
 
 ```HTML
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"></script>
@@ -153,7 +156,7 @@ Therefore, assuming that you need to render the map of California, the alias nam
 
 Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
-The consolidated code (which also includes the `vue.js`, `fusioncharts.js` and `vue-fusioncharts.js`)  is shown below:
+The consolidated code (including the `vue.js`, `fusioncharts.js` and `vue-fusioncharts.js`)  is shown below:
 
 ```HTML
 <head>
@@ -186,7 +189,7 @@ The FusionCharts Suite download package also contains the predefined theme files
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
-To include a theme to your chart, include its corresponding JavaScript file in your HTML page as shown in the code below:
+To add a theme to your chart, include its corresponding JavaScript file in your HTML page as shown in the code below:
 
 ```HTML
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
@@ -242,7 +245,7 @@ import Column2D from 'fusioncharts/viz/column2d';
 
 **Globally**
 
-In your JavaScript code, use the `Vue.use()` method to register the vue-fusioncharts component globally. Registering the component globally allows you to use them in the template of any root Vue instance created after registration.
+In your JavaScript code, use the `Vue.use()` method to register the vue-fusioncharts component globally. This allows you to use them in the template of any root Vue instance created after registration.
 
 ```JavaScript
 Vue.use(VueFusionCharts, FusionCharts, Column2D);
@@ -252,7 +255,7 @@ Vue.use(VueFusionCharts, FusionCharts, Column2D);
 
 Registering components globally ensures that even if you want to stop using that component, it will be a part of your final build. This results in an increase in JavaScript code that the users have to download. To avoid bloated code, we recommend registering the component locally.
 
-In your JavaScript code, use the `Vue.component()` method to register the vue-fusioncharts component locally. To register locally, use `Vue.component()` instead of `Vue.use()`, the rest of the code remains same. Refer to the code below:
+In your JavaScript code, use the `Vue.component()` method to register the `vue-fusioncharts` component locally. Use `Vue.component()` instead of `Vue.use()`, the rest of the code remains same. Refer to the code below:
 
 ```JavaScript
 Vue.component('fusioncharts', VueFusionCharts, FusionCharts, Column2D);
@@ -331,7 +334,7 @@ The HTML template to render the chart is given below:
 
 ### Include Maps via npm
 
-The `fusioncharts` package contains only two map definition in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files, follow the steps given below:
+The `fusioncharts` package contains only two map definition files in `fusioncharts/maps` directory, the **World Map** and the **Map of USA**. This is done to keep the package lightweight. To use any of these two map definition files, follow the steps given below:
 
 **Step 1:** Load `fusioncharts` module
 
@@ -463,17 +466,17 @@ The HTML template to render the map is given below:
 
 **Load other map definition files**
 
-You can use rest of the map files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:
+You can use the remaining map files, other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do this, install the `fusionmaps` package which containing all the map definition files, as shown below:
 
-**Install `fusionmaps` package**
+**Install the `fusionmaps` package**
 
 ```Shell
 $ npm install fusionmaps
 ```
 
-Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder. 
+Once the `fusionmaps` package is installed you will find all the map definition files in `fusionmaps/maps/es` folder. 
 
-> The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include `fusioncharts` in your project and the map renderer as shown below:
+> The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use FusionMaps, it is necessary to first include `fusioncharts` and the map renderer as shown below:
 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core'
@@ -484,7 +487,7 @@ Load the map definition file(s) from the `fusionmaps` package for the map(s) to 
 
 Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html) to get the alias names for all map definition files. 
 
-Therefore, assuming that you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
+Therefore, assuming you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core';
@@ -496,7 +499,7 @@ Register the **VueFusionCharts** component:
 
 **Globally**
 
-In your JavaScript code, use the `Vue.use()` method to register the vue-fusioncharts component globally. Registering the component globally allows you to use them in the template of any root Vue instance created after registration.
+In your JavaScript code, use the `Vue.use()` method to register the `vue-fusioncharts` component globally. This allows you to use them in the template of any root Vue instance created after registration.
 
 ```JavaScript
 Vue.use(VueFusionCharts, FusionCharts, FusionMaps, California);
@@ -504,9 +507,9 @@ Vue.use(VueFusionCharts, FusionCharts, FusionMaps, California);
 
 **Locally**
 
-Registering components globally ensures that even if you want to stop using that component, it will be a part of your final build. This results in an increase in JavaScript code that the users have to download. To avoid bloated code, we recommend registering the component locally.
+Registering components globally ensures that even if you want to stop using that component, it will be a part of your final build. This increases the JavaScript code that users have to download. To avoid bloated code, we recommend registering the component locally.
 
-In your JavaScript code, use the `Vue.component()` method to register the vue-fusioncharts component locally. To register locally, use `Vue.component()` instead of `Vue.use()`, the rest of the code remains same. Refer to the code below:
+In your JavaScript code, use the `Vue.component()` method to register the `vue-fusioncharts` component locally. Use `Vue.component()` instead of `Vue.use()`, the rest of the code remains same. Refer to the code below:
 
 ```JavaScript
 Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionMaps, California);
