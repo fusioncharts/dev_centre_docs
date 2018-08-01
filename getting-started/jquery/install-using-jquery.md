@@ -204,14 +204,14 @@ The FusionCharts Suite download package also contains predefined theme files und
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
-To include a theme to your chart, include its corresponding JavaScript file in your HTML page for that theme as shown in the code below:
+To add a theme to your chart, include its corresponding JavaScript file in your HTML page for that theme as shown in the code below:
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-> Including only the `fusioncharts.theme.fusion.js` file will not apply the theme. to apply the theme, set the value of `theme` attribute to the respective `theme` name. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
 
 ## Install FusionCharts via npm
 
@@ -409,4 +409,4 @@ FusionTheme(FusionCharts);
 var jQueryFusionCharts = require('jquery-fusioncharts');
 ```
 
-> Including only the `fusioncharts.theme.fusion.js` file will not apply the theme. to apply the theme, set the value of `theme` attribute to the respective `theme` name. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').

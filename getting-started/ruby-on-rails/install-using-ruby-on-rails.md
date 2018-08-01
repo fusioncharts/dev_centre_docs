@@ -184,4 +184,4 @@ Add the following code in the `app/assets/javascripts/application.js` file as sh
 //= require fusioncharts/themes/fusioncharts.theme.fusion
 ``` 
 
-> Including only the `fusioncharts.theme.fusion.js` file will not apply the theme. to apply the theme, set the value of `theme` attribute to the respective `theme` name. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').

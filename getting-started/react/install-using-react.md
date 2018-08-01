@@ -146,11 +146,11 @@ To render a map, you need the core FusionCharts library `fusioncharts.js` along 
 
 ```
 
-In the above example, we’ve included the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
+In the above example, we’ve included the **World Map** whose map definition (path) is contained in `maps/fusioncharts.world.js`.
 
 **Load other map definition files**
 
-To use any other map (except world and USA) from the 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where `MAP_ALIAS` represents the country, state or region name.
+To use any other map (except world and USA) from our 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where `MAP_ALIAS` represents the country, state, or region name.
 
 ```
 <!-- The next line describes the format for more map definition files -->
@@ -158,7 +158,7 @@ To use any other map (except world and USA) from the 1400+ maps, [download](http
 
 ```
 
-Therefore, assuming that you need to render the map of **California**, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
+Therefore, assuming you need to render the map of **California**, the alias name **california** replaces **MAP_ALIAS** in the format as shown below:
 
 ```
 <!-- The next line describes the format for more map definition files -->
@@ -204,14 +204,14 @@ The FusionCharts Suite download package also contains predefined theme files und
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
-To include a theme to your chart, include its corresponding JavaScript file in your HTML page for that theme as shown in the code below:
+To add a theme to your chart, include its corresponding JavaScript file in your HTML page for that theme as shown in the code below:
 
 ```HTML
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-> Including only the `fusioncharts.theme.fusion.js` file will not apply the theme. to apply the theme, set the value of `theme` attribute to the respective `theme` name. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
 
 ## Install FusionCharts via npm
 
@@ -489,4 +489,4 @@ import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 ReactFC.fcRoot(FusionCharts, Fusion);
 ```
 
-> Including only the `fusioncharts.theme.fusion.js` file will not apply the theme. to apply the theme, set the value of `theme` attribute to the respective `theme` name. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').

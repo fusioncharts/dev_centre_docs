@@ -137,4 +137,4 @@ Add the following code to the `templates > index.html` file:
 <script type="text/javascript" src="{% static "path/to/local/themes/fusioncharts.theme.fusion.js" %}"></script>
 ```
 
-> Including only the `fusioncharts.theme.fusion.js` file will not apply the theme. to apply the theme, set the value of `theme` attribute to the respective `theme` name. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
