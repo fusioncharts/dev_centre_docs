@@ -58,11 +58,11 @@ Functional attributes let you control a variety of functional elements on the ch
 
 #### Cosmetic Attributes
 
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
+Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
 ### Create an instance of the chart
 
-In this step, we will create an instance of the chart type as `column2d`, set the width and height (in pixels or %), and finally specify the data for the chart as string.
+In this step, we will create an instance of the chart type as `column2d`, set the width and height (in pixels or %), and finally specify the data for the chart as a string.
 
 The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 
@@ -483,7 +483,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 ### Create an instance of the gauge
 
-In this step, we will create an instance of the chart type as `angulargauge`, set the width and height (in pixels or %), and finally specify the data for the chart as string.
+In this step, we will create an instance of the chart type as `angulargauge`, set the width and height (in pixels or %), and finally specify the data for the chart as a string.
 
 The code to render a chart using `.aspx.cs` and `.aspx.vb` file is given below:
 
@@ -817,7 +817,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 ### Create an instance of the map
 
-In this step, we will create an instance of the map type as `world`, set the width and height (in pixels or %), and finally specify the data for the chart as string.
+In this step, we will create an instance of the map type as `world`, set the width and height (in pixels or %), and finally specify the data for the chart as a string.
 
 The code to render a chart using `.aspx.cs` or `.aspx.vb` file is given below:
 
