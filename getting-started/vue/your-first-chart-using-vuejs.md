@@ -83,11 +83,11 @@ In the above JSON we have:
 * Created the chart object to define the elements of the `chart`.
 * Then, each row of the tabular data is present within the `data` array to specify the labels and their corresponding values.
 
-Both the `chart` object and the `data` array contains a set of key-value pairs known as attributes. These attributes are used to set the functional and cosmetic properties of the chart, as defined below:
+Both the `chart` object and the `data` array contain a set of key-value pairs known as attributes. These attributes are used to set the functional and cosmetic properties of the chart, as defined below:
 
 #### Functional Attributes
 
-Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values, etc. You can also set chart limits and extended properties. The list of functional attributes used in the above code are:
+Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The functional attributes used in the above JSON are:
 
 * `caption` sets the caption of the chart.
 * `subcaption` sets the sub-caption of the chart.
