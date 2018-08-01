@@ -56,7 +56,7 @@ Installation of FusionCharts Suite XT is simply copying and pasting the JavaScri
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. Create an HTML file and follow the steps given below:
 
-**Step 1:** Include the `fusioncharts.js` (FusionCharts core library) file. This file is required to render any **chart, widget and map.
+**Step 1:** Include the `fusioncharts.js` (FusionCharts core library) file. This file is required to render any **chart, widget and map**.
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
