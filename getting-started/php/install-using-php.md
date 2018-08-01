@@ -6,9 +6,9 @@ heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the **FusionCharts server-side PHP wrapper** that lets you create interactive, data-driven charts. FusionCharts uses JavaScript and HTML code to generate charts in the browser. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page for generating charts.
+FusionCharts Suite XT includes the **FusionCharts server-side PHP** wrapper that lets you create interactive, data-driven charts. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in your web page to generate charts.
 
-In this article, we will show you how you can download and install the `FusionCharts PHP` wrapper and all the other dependencies on your system.
+In this article, we will show you how to download and install the `FusionCharts PHP` wrapper and all the other dependencies on your system.
 
 > The FusionCharts PHP server-side wrapper requires **PHP 5** or higher.
 
@@ -16,9 +16,9 @@ In this article, we will show you how you can download and install the `FusionCh
 
 In order to install and start working with PHP-FusionCharts you need to [download](https://www.fusioncharts.com/download/ '@@open-newtab') the FusionCharts Suite XT package which contains:
 
-* JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
-* JavaScript files to render maps under `js > maps` folder.
-* JavaScript files to apply themes under `js > themes` folder.
+* JavaScript files to render **Charts**, **Widgets**, and **PowerCharts** under the `js` folder.
+* JavaScript files to render maps under the `js > maps` folder.
+* JavaScript files to apply themes under the `js > themes` folder.
 
 The folder structure is shown below:
 
@@ -26,7 +26,7 @@ The folder structure is shown below:
 
 > You need to copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
-* The download package also contains `fusioncharts.php` file under `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` folder. This folder will also contain FusionCharts PHP native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/php '@@open-newtab')**. The folder structure is shown below:
+* The download package also contains `fusioncharts.php` file under the `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` folder. This also contains FusionCharts PHP native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/php '@@open-newtab')**. The folder structure is shown below:
 
 ![PHP Js Folder]({% site.baseurl %}/gif/php-folder-structure.gif)
 
@@ -70,7 +70,7 @@ This step is optional, the chart will render with the default theme (`fusion`) e
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-**Step 3:** To use **FusionCharts PHP wrapper** in your project include the `fusioncharts.php` wrapper to your PHP page:
+**Step 3:** To use **FusionCharts PHP wrapper** in your project, include the `fusioncharts.php` wrapper to your PHP page:
 
 ```PHP
 <?php
@@ -83,14 +83,13 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ## Installing FusionMaps for your project
 
-FusionCharts Suite XT provides over **1400+** data-driven maps under the product FusionMaps. 
-In the downloaded package, you’ll find the `fusioncharts.maps.js` file and only two map definition files - the **world map**, and **map of the USA** - to reduce the download size. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest of map definition files, when you need to plot maps of those countries/regions. 
+FusionCharts Suite XT provides **1400+** data-driven maps under the product FusionMaps. To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **Map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest the of map definition files to plot maps of those countries/regions.
 
 > If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace for upgrading to the latest map definition files.
 
 **To add FusionCharts PHP wrapper in your project:**
 
-Copy/Paste the `fusioncharts.php` file from `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` to your project’s folder, and include it to your PHP page.
+Copy/Paste the `fusioncharts.php` file from `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` to your project’s folder and include it to your PHP page.
 
 To render a map, you need to `include` the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. 
 
@@ -102,11 +101,11 @@ Once done, insert the ``<script>`` tag where you want to include the source of t
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
 ```
 
-In the above example, we’ve included the World Map, whose map definition (path) is in `maps/fusioncharts.world.js`.
+In the above example, we’ve included the **World Map**, whose map definition (path) is in `maps/fusioncharts.world.js`.
 
 **Load other map definition files**
 
-To use any other map (except world and USA) from the **1400+** maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files and copy those map files to your current `maps` folder. The map definition files are named in `fusioncharts.[MAP_ALIAS].js` format, where MAP_ALIAS represents the country, state or region name.
+To use any other map (except **World** and **USA**) from our **1400+** maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files and copy them to your current `maps` folder. The map definition files are named in `fusioncharts.[MAP_ALIAS].js` format, where MAP_ALIAS represents the country, state, or region name.
 
 Insert the `<script>` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The `<script>` tag is shown below:
 
@@ -122,7 +121,7 @@ Therefore, assuming that you want to render the map of California, the alias nam
 
 Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
-This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-map-10 '@@open-newtab').
+This completes the installation of FusionMaps in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-map-10 '@@open-newtab').
 
 ## Themes
 
@@ -134,7 +133,7 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 * Behavior (hover effects for data plots)
 * Intelligence (applying different colors to the positive and negative data plots in all charts that use the theme)
 
-The FusionCharts Suite download package also contains the predefined theme files under `fusioncharts-suite-xt > js > themes` folder. The folder structure is shown below:
+The FusionCharts Suite download package also contains predefined theme files under `fusioncharts-suite-xt > js > themes` folder. The folder structure is shown below:
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
