@@ -16,7 +16,7 @@
             //Configuring slicing distance
             "slicingDistance ": "10",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Food",

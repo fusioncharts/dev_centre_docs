@@ -17,7 +17,7 @@
             "showPercentValues": "1",
             "showPercentInTooltip": "0",
             "plotTooltext": "Age group : $label<br>Total visit : $datavalue",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Teenage",

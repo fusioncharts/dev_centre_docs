@@ -18,7 +18,7 @@
             "lineAlpha": "1",
             "anchorAlpha": "100",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "July",

@@ -40,14 +40,14 @@ For example, when you convert the data in the table above to JSON/XML format, it
 
 ## Include FusionCharts Suite XT library
 
-To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called `fint` (FusionCharts internal), and it is present in the `themes` folder of your download. Refer to the code below:
+To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called `fusion`, and it is present in the `themes` folder of your download. Refer to the code below:
 
 ```
 <html>
 <head>
   <title>My first chart using FusionCharts Suite XT</title>
   <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
-  <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
+  <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fusion.js"></script>
 </head>
 </html>
 ```
@@ -85,7 +85,7 @@ FusionCharts.ready(function() {
                 "subCaption": "Harry's SuperMart",
                 "xAxisName": "Month",
                 "yAxisName": "Revenues (In USD)",
-                "theme": "fint"
+                "theme": "fusion"
             },
             "data": [{
                     "label": "Jan",
@@ -156,7 +156,7 @@ In the above code:
 
 * The `chart` object contains a list of key-value pairs that you can use to configure the functional and cosmetic attributes of your chart. For example, you can set the chart caption using `"caption": "Harry's SuperMart"`. Each row of the tabular data is present within the `data` array, with the name of the month with key as `label`, and revenue with key as `value`.
 
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fint` (FusionCharts Suite XT Internal theme) as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application. FusionCharts Suite XT is shipped with three default themes - `ocean`, `zune`, and `carbon`. You can also create your themes, as detailed in a later section.
+* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` as the value of it. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application. FusionCharts Suite XT is shipped with three default themes - `ocean`, `zune`, and `carbon`. You can also create your themes, as detailed in a later section.
 
 * Call the `render` method to draw the chart in the `chartContainer` defined using the `<div>` element.
 
@@ -170,7 +170,7 @@ The full HTML code is shown below:
 <head>
     <title>My first chart using FusionCharts Suite XT</title>
     <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
+    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
             var revenueChart = new FusionCharts({
@@ -185,7 +185,7 @@ The full HTML code is shown below:
                         "subCaption": "Harry's SuperMart",
                         "xAxisName": "Month",
                         "yAxisName": "Revenues (In USD)",
-                        "theme": "fint"
+                        "theme": "fusion"
                     },
                     "data": [{
                             "label": "Jan",

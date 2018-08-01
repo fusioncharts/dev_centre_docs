@@ -11,7 +11,7 @@
             //Place tick marks and values inside gauge
             "placeTicksInside": "1",
             "placeValuesInside": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

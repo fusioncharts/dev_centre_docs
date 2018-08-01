@@ -12,7 +12,7 @@
             "xAxisName": "Month",
             "yAxisName": "Revenue",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "trendValueFontBold": "1",
             "trendValueBorderColor": "#123456",
             "trendValueBorderDashed": "1",

@@ -6,13 +6,13 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Bakersfield Central - Total footfalls",
             "subCaption": "Last week",
             "xAxisName": "Day",
             "yAxisName": "No. of Visitors (In 1000s)",
             "showValues": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "annotations": {
             "groups": [{

@@ -11,7 +11,7 @@
             "xAxisName": "Flavor",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "clickURL": "n-http://www.fusioncharts.com"
         },
         "data": [{

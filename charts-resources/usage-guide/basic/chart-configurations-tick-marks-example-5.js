@@ -12,7 +12,7 @@
             "numberSuffix": "%",
             //Configuring ticks to appear above gauge
             "ticksBelowGauge": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorrange": {
             "color": [{

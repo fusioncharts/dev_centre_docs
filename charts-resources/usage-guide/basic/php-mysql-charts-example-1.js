@@ -10,7 +10,7 @@
         "xAxisName": "Player",
         "yAxisName": "Wickets Taken",
         "rotatevalues": "1",
-        "theme": "fint",
+        "theme": "fusion",
       },
 
       "data": [{

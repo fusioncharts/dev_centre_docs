@@ -20,7 +20,7 @@
             "anchorSides": "3",
             "anchorBgColor": "#d3f7ff",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
 
         },
         "data": [{

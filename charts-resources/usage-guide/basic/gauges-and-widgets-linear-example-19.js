@@ -7,7 +7,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Server CPU Utilization",
             "subcaption": "food.hsm.com",
             "lowerLimit": "0",

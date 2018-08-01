@@ -35,7 +35,7 @@
             "yAxisNameBorderDashGap": "2",
 
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Q1",

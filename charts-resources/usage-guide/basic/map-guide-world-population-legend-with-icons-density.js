@@ -9,7 +9,7 @@
             "caption": "Global Population Density",
             "showBorder": "1",
             "borderThickness": "3",
-            "theme": "fint",
+            "theme": "fusion",
             "formatNumberScale": "0"
         },
         "colorrange": {

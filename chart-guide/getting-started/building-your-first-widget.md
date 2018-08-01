@@ -33,7 +33,7 @@ Here is the JSON/XML representation of the above data table to build this gauge:
 
 ### Include FusionCharts Suite XT library
 
-To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called fint (FusionCharts internal) and its .js file is present in the themes folder of your download. Refer to the code below:
+To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called fusion and its .js file is present in the themes folder of your download. Refer to the code below:
 
 ```
 <html>
@@ -41,7 +41,7 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, use t
 <head>
     <title>My first gauge using FusionWidgets XT</title>
     <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
+    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
 </head>
 
 </html>
@@ -80,7 +80,7 @@ In the final step, create an instance of an angular gauge, initialize it with th
                     "subcaption" :  "Last week",
                     "lowerLimit" :  "0",
                     "upperLimit" :  "100",
-                    "theme" :  "fint"
+                    "theme" :  "fusion"
                 },
                 "colorRange" :  {
                     "color" :  [{
@@ -130,7 +130,7 @@ In the above code:
 
 * The `dial` element specifies the properties and value for the dial.
 
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fint`(FusionCharts Suite XT Internal theme) as the value of it. Themes let you centralize your cosmetic and functional properties across various charts in your web application. FusionCharts Suite XT is shipped with three default themes - `ocean`, `zune` and `carbon`. You can also create your own themes, which we will learn in [Theme Manager]({% site.baseurl %}/themes/introduction-to-themes "@@open-newtab").
+* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` as the value of it. Themes let you centralize your cosmetic and functional properties across various charts in your web application. FusionCharts Suite XT is shipped with three default themes - `ocean`, `zune` and `carbon`. You can also create your own themes, which we will learn in [Theme Manager]({% site.baseurl %}/themes/introduction-to-themes "@@open-newtab").
 
 * Call the `render` method to draw the gauge in chart-container `<div>` element.
 
@@ -144,7 +144,7 @@ The full HTML code is shown below:
 <head>
     <title>My first gauge using FusionWidgets XT</title>
     <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
+    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(  function  () { 
             var  csatGauge =   new  FusionCharts({
@@ -159,7 +159,7 @@ The full HTML code is shown below:
                         "subcaption" :  "Last week",
                         "lowerLimit" :  "0",
                         "upperLimit" :  "100",
-                        "theme" :  "fint"
+                        "theme" :  "fusion"
                     },
                     "colorRange" :  {
                         "color" :  [{

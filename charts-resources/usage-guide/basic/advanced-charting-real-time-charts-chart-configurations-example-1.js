@@ -18,7 +18,7 @@
             "showValues": "0",
             "numberSuffix": " %",
             "showRealTimeValue": "0",
-            "theme": "fint"
+            "theme": "fusion"
 
         },
         "categories": [{

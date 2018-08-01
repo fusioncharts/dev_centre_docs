@@ -24,7 +24,7 @@ The code given below ensures that whenever you click on an entity, a pop up wind
         "entityFillHoverColor": "#cccccc",
         "numberPrefix": "$",
         "showLabels": "1",
-        "theme": "fint"
+        "theme": "fusion"
     },
     "colorrange": {
         "minvalue": "920000",
@@ -397,7 +397,7 @@ Refer to the data structure of the map, given below:
     "chart": {
         "caption": "World Population Density",
         "subcaption": "Number of people per Square Mile",
-        "theme": "fint",
+        "theme": "fusion",
         "formatNumberScale": "0",
         "showLabels": "1",
         "nullEntityColor": "#C2C2D6",
@@ -463,7 +463,7 @@ Refer to the data structure of the map, given below:
                 "entityFillHoverColor": "#E5E5E9",
                 "showLabels": "1",
                 "entityFillColor": "#A8A8A8",
-                "theme": "fint",
+                "theme": "fusion",
                 "showBorder": "1",
                 "bordercolor": "#FFFFFF",
                 "entityborderThickness": "3"
@@ -723,7 +723,7 @@ Refer to the data structure given below:
 ```json
 {
     "map": {
-        "theme": "fint",
+        "theme": "fusion",
         "caption": "Shipping Volume and Costs",
         "subcaption": "Distribution Network - Last Month",
         "numberSuffix": "%",
@@ -1330,7 +1330,7 @@ Refer to the data structure given below:
                 "slantLabel": "1",
                 "formatNumberScale": "0",
                 "sNumberPrefix": "$",
-                "theme": "fint"
+                "theme": "fusion"
             },
             "categories": [{
                 "category": [{
@@ -1401,7 +1401,7 @@ Refer to the data structure given below:
                 "slantLabel": "1",
                 "formatNumberScale": "0",
                 "sNumberPrefix": "$",
-                "theme": "fint"
+                "theme": "fusion"
             },
             "categories": [{
                 "category": [{
@@ -1519,7 +1519,7 @@ Refer to the data structure given below:
                 "slantLabel": "1",
                 "formatNumberScale": "0",
                 "sNumberPrefix": "$",
-                "theme": "fint"
+                "theme": "fusion"
             },
             "categories": [{
                 "category": [{

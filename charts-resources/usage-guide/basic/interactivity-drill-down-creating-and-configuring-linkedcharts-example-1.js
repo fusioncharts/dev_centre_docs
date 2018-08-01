@@ -11,7 +11,7 @@
             "xaxisName": "Flavor",
             "yaxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "rotateValues": "0"
         },
         "data": [{
@@ -36,7 +36,7 @@
                     "xaxisname": "Quarter",
                     "yaxisname": "Amount (In USD)",
                     "numberprefix": "$",
-                    "theme": "fint",
+                    "theme": "fusion",
                     "rotateValues": "0"
                 },
                 "data": [{
@@ -63,7 +63,7 @@
                     "xaxisname": "Quarter",
                     "yaxisname": "Amount (In USD)",
                     "numberprefix": "$",
-                    "theme": "fint",
+                    "theme": "fusion",
                     "rotateValues": "0"
                 },
                 "data": [{
@@ -89,7 +89,7 @@
                     "xaxisname": "Quarter",
                     "yaxisname": "Amount (In USD)",
                     "numberprefix": "$",
-                    "theme": "fint",
+                    "theme": "fusion",
                     "rotateValues": "0"
                 },
                 "data": [{

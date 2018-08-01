@@ -12,7 +12,7 @@
             "yAxisName": "Visits",
             "showValues": "0",
             "lineThickness": "5",
-            "theme": "fint",
+            "theme": "fusion",
             //Converting to dashed div line
             "divLineDashed": "1",
             //Customizing div lines dash length in pixel

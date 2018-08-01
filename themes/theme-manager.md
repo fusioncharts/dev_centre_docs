@@ -12,7 +12,7 @@ Refer to the code snippet given below:
 
 ```html
 <script type="text/javascript" src="js/fusioncharts.js"></script>
-<script type="text/javascript" src="js/themes/fusioncharts.theme.fusion.js"></script>
+<script type="text/javascript" src="js/themes/fusioncharts.theme.zune.js"></script>
 ```
 
 > The installation routine of a theme relies on the code in the `fusioncharts.js` file. Therefore, make sure that this file is always included before the JavaScript file for the theme.
@@ -30,17 +30,17 @@ In the following code snippet, you can see how to use the `theme` attribute to a
 ```json
 {
     chart: {
-        "theme": "fusion", //Set the value of the `theme` attribute to the name of the required theme
+        "theme": "zune", //Set the value of the `theme` attribute to the name of the required theme
         ...
     }
 }
 ```
 
-You can see a Column 2D chart configured using the `fusion` theme, given below:
+You can see a Column 2D chart configured using the `zune` theme, given below:
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-> If you are using the XML data format for the chart, you can use the theme attribute within the `<chart>` element. For example, `<chart theme="fusion"`>
+> If you are using the XML data format for the chart, you can use the theme attribute within the `<chart>` element. For example, `<chart theme="zune"`>
 
 ### Use the setChartAttribute() method
 
@@ -61,7 +61,7 @@ FusionCharts.ready(function () {
         }
     });
     revenueChart.render();
-    revenueChart.setChartAttribute("theme", "fusion"); //The attribute name and its value are passed as parameters to this method.
+    revenueChart.setChartAttribute("theme", "zune"); //The attribute name and its value are passed as parameters to this method.
 });
 ```
 
@@ -70,10 +70,10 @@ FusionCharts.ready(function () {
 To apply multiple themes for a chart, specify the theme names as a comma-separated list. For example, if you are using the theme attribute, this is how you specify all the themes that you want to apply:
 
 ```json
-"theme": "fusion, gammel"
+"theme": "zune, ocean"
 ```
 
-Values of all attributes that you set across these themes will be applied to the chart. In case of overlapping attributes, the values you specify for the rightmost theme will take precedence. For example, if you specify the `captionFontSize` attribute for both themes, its value for the `gammel` theme will be applied to the caption.
+Values of all attributes that you set across these themes will be applied to the chart. In case of overlapping attributes, the values you specify for the rightmost theme will take precedence. For example, if you specify the `captionFontSize` attribute for both themes, its value for the `ocean` theme will be applied to the caption.
 
 ### Understand the theme structure
 
@@ -87,7 +87,7 @@ You need to write theme definitions using a tier-based structure. You can use ea
 
 * Use the `<mapName>` tier to extend or override theme settings in the `geo` tier, as well as the settings in the `base` tier, for specific map types. The tier name will be the value used for the `type` attribute in the JSON data for the map. For example, all attributes you define under the `world` tier will be applicable only to the world map in your application.
 
-Partial definition of the `fusion` theme, as contained in the `fusioncharts.theme.fusion.js` file, is given below:
+Partial definition of the `zune` theme, as contained in the `fusioncharts.theme.zune.js` file, is given below:
 
 ```json
 FusionCharts.register('theme', {

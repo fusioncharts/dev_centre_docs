@@ -15,7 +15,7 @@
             //Canvas padding
             "canvasPadding": "30",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "First Quarter",

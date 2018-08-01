@@ -20,7 +20,7 @@
             "is3D": "0",
 
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
 
 
         },

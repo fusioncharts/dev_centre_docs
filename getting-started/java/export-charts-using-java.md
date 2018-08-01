@@ -61,7 +61,7 @@ var revenueChartDataSource = {
     chart: {
         caption: "Harry's SuperMart",
         subCaption: "Top 5 stores in last month by revenue",
-        theme: "fint"
+        theme: "fusion"
     },
     data: completeData
 };
@@ -70,7 +70,7 @@ var revenueChartDataSource = {
 var categoryChartDataSource = {
     chart: {
         caption: "Categories of Harry's SuperMart",
-        theme: "fint",
+        theme: "fusion",
         enablemultislicing: "0"
     },
     data: [{
@@ -206,7 +206,7 @@ var revenueChartDataSource = {
     chart: {
         caption: "Harry's SuperMart",
         subCaption: "Top 5 stores in last month by revenue",
-        theme: "fint"
+        theme: "fusion"
     },
     data: completeData
 };
@@ -215,7 +215,7 @@ var revenueChartDataSource = {
 var categoryChartDataSource = {
     chart: {
         caption: "Categories of Harry's SuperMart",
-        theme: "fint",
+        theme: "fusion",
         enablemultislicing: "0"
     },
     data: [{

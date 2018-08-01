@@ -17,7 +17,7 @@
             "bgratio": "60,40",
             "bgAlpha": "70,80",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
 
         },
 

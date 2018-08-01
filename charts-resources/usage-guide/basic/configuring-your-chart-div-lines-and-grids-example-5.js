@@ -17,7 +17,7 @@
             "alternateHGridColor": "#99ccff",
             "alternateHGridAlpha": "30",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Q1",

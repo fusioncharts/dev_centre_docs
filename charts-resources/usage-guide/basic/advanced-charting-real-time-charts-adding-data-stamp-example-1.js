@@ -19,7 +19,7 @@
             "numberSuffix": " %",
             "showRealTimeValue": "0",
             "dataStamp": "13:43:45",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

@@ -19,7 +19,7 @@
                 "plotTooltext": "<div id='valueDiv'><b>$seriesName</b>, Admission rate % : <b>$xDataValue</b>, Return % : <b>$yDataValue</b></div>",
                 "showRegressionLine": "1", //render the chart with regression lines
                 "showYOnX": "0", //draw regression lines in the X on Y mode
-                "theme": "fint"
+                "theme": "fusion"
         },
         "dataset": [
                 {

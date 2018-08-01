@@ -23,7 +23,7 @@
             "legendIconBorderThickness": "3",
             "legendIconSides": "5",
             "legendIconStartAngle": "60",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

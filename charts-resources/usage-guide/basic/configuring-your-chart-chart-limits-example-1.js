@@ -12,7 +12,7 @@
             "xAxisName": "Quarter",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             //Manually setting y-axis upper and lower limit
             "yAxisMaxValue": "2500000",
             "yAxisMinValue": "1000000"

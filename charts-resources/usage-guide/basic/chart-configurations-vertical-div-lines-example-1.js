@@ -15,7 +15,7 @@
             //Vertical divline configuration
             "numVDivLines": "5",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Mon",

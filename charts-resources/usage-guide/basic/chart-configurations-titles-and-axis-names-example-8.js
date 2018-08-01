@@ -28,7 +28,7 @@
             "sYAxisNameFontBold": "1",
             "sYAxisNameFontItalic": "1",
             "sYAxisNameAlpha": "50",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

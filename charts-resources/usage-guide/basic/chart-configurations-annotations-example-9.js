@@ -11,7 +11,7 @@
             "subCaption": "Bakersfield Central vs Los Angeles Topanga",
             "xAxisName": "Day",
             "yAxisName": "No. of Visitors",
-            "theme": "fint",
+            "theme": "fusion",
             "animation": "0",
             "showValues": "0",
             "showTooltip": "0"

@@ -11,7 +11,7 @@
             "xAxisName": "Quarter",
             "yAxisName": "Sales (In USD)",
             "numberPrefix": "$",
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "categories": [{

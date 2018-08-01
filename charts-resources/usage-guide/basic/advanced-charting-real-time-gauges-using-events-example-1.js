@@ -22,7 +22,7 @@
             "thmOriginX": "100",
             "chartBottomMargin": "20",
             "valueFontColor": "#000000",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "value": "-6",
         //All annotations are grouped under this element

@@ -42,7 +42,7 @@ Here is the JSON/XML representation of the data you will use to build this map
 
 ## Include FusionCharts Suite XT library
 
-To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called `fint` (FusionCharts internal) and, it is present in `themes` folder of your download.
+To include the FusionCharts Suite XT JavaScript library in your HTML page, use the `<script>` tag. Next, include a theme file to style the chart. The theme is called `fusion`, present in `themes` folder of your download.
 
 ```
 <html>
@@ -50,7 +50,7 @@ To include the FusionCharts Suite XT JavaScript library in your HTML page, use t
 <head>
     <title>My First map using FusionMaps XT</title>
     <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
+    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
 </head>
 
 </html>
@@ -90,7 +90,7 @@ The final step is to create an instance of the map, initialize with the correct 
                     "numberScaleUnit" :  "K,M,B",
                     "numberPrefix" :  "$",
                     "showLabels" :  "1",
-                    "theme" :  "fint"
+                    "theme" :  "fusion"
                 },
                 "colorrange" :  {
                     "minvalue" :  "0",
@@ -350,7 +350,7 @@ The full HTML code is shwon below:
 <head>
     <title>My First map using FusionCharts Suite XT</title>
     <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
+    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
             var salesByState = new FusionCharts({
@@ -368,7 +368,7 @@ The full HTML code is shwon below:
                         "numberScaleUnit": "K,M,B",
                         "numberPrefix": "$",
                         "showLabels": "1",
-                        "theme": "fint"
+                        "theme": "fusion"
                     },
                     "colorrange": {
                         "minvalue": "0",

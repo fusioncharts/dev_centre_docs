@@ -11,7 +11,7 @@
             "dateformat": "mm/dd/yyyy hh:mm:ss",
             "outputDateFormat": "ddds mnl, yyyy hh12:mn ampm",
             "canvasBorderAlpha": "30",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

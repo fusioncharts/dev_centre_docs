@@ -7,7 +7,7 @@
     dataSource: {
         "chart": {
             //Theme
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Products Sold vs. Price points",
             "subcaption": "Harry's SuperMart - Last Week",
             "yaxisname": "Quantity Sold",

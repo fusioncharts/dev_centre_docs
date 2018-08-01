@@ -72,7 +72,7 @@
 
             }
             // form radio buttons inside div
-            controllers.innerHTML = '<label><input type="radio" name="theme-options" value="fusion"> Fusion</label><label><input type="radio" name="theme-options" value="gammel"> Gammel</label><label><input type="radio" name="theme-options" value="candy"> Candy</label><label><input type="radio" name="theme-options" id="fint-chckbx" value="zune"> Zune</label><label><input type="radio" name="theme-options" value="ocean"> Ocean</label><label><input type="radio" name="theme-options" value="carbon"> Carbon</label><label><input type="button" value="Apply Theme" id="set-theme"></label>';
+            controllers.innerHTML = '<label><input type="radio" name="theme-options" value="fusion"> Fusion</label><label><input type="radio" name="theme-options" value="gammel"> Gammel</label><label><input type="radio" name="theme-options" value="candy"> Candy</label><label><input type="radio" name="theme-options" id="fusion-chckbx" value="zune"> Zune</label><label><input type="radio" name="theme-options" value="ocean"> Ocean</label><label><input type="radio" name="theme-options" value="carbon"> Carbon</label><label><input type="button" value="Apply Theme" id="set-theme"></label>';
             controllers.setAttribute('id', 'controllers');
 
             // setting css styles for controllers div

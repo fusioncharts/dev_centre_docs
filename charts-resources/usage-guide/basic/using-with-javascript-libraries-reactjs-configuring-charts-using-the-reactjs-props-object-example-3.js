@@ -12,7 +12,7 @@
             "numberPrefix": "$",
             "showValues": "0",
             "canvasBorderThickness": "3",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Q1",

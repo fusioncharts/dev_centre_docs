@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Top Smartphone Ratings",
             "subCaption": "By Features",
             "xAxisName": "Features",

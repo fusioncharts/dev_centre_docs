@@ -16,7 +16,7 @@
             "placeValuesInside": "0",
             "valueFontColor": "#333333",
             "rotateValues": "0",
-            "theme": "fint"
+            "theme": "fusion"
 
         },
         "categories": [{

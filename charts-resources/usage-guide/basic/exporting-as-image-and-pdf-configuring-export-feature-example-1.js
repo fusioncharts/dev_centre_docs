@@ -14,7 +14,7 @@
             "canvasBgAlpha": "0",
             "bgColor": "#DDDDDD",
             "bgAlpha": "50",
-            "theme": "fint",
+            "theme": "fusion",
             "exportEnabled": "1",
             "exportFormats": "PNG=Export as High Quality Image|PDF=Export as Printable|XLS=Export Chart Data",
             "exportTargetWindow": "_self",

@@ -11,7 +11,7 @@
             "xAxisName": "Month",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             //Configure x-axis labels to display in staggered mode
             "labelDisplay": "stagger",
             "staggerLines": "3"

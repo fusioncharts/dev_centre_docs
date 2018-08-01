@@ -12,7 +12,7 @@
             "yAxisName": "No. of Units",
             "snapToDiv": "1",
             "snapToDivRelaxation": "5",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

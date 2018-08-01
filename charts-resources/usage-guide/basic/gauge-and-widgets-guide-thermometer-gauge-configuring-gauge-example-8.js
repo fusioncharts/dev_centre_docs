@@ -18,7 +18,7 @@
 
             //Add hover effect
             "showhovereffect": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "value": "-6"
     },

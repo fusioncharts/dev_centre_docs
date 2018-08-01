@@ -99,7 +99,7 @@ The full HTML code of the example is given here
 	<head>
 	<title>My first chart using FusionCharts Suite XT</title>
 	<script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
-	<script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
+	<script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
 	<script>
 	FusionCharts.ready(function () {
 	    // This data will be used to both render the chart and grid, since
@@ -111,7 +111,7 @@ The full HTML code of the example is given here
 	            "xAxisName": "Month",
 	            "yAxisName": "Amount",
 	            "numberPrefix": "$",
-	            "theme": "fint"
+	            "theme": "fusion"
 	        },
 	        "data": [{
 	            "label": "Jan",

@@ -11,7 +11,7 @@
             "xAxisname": "Quarter",
             "yAxisName": "Revenue (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             //Cosmetics for legend
             "legendPosition": "right",
 

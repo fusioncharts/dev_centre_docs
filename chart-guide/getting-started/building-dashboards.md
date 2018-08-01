@@ -174,7 +174,7 @@ The HTML code to build this dashboard is given here:
         }
     </style>
     <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
+    <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fusion.js"></script>
     <script type="text/javascript">
         FusionCharts.ready(function() {
 
@@ -192,7 +192,7 @@ The HTML code to build this dashboard is given here:
                         "yaxisname": "Revenue (In USD)",
                         "numberprefix": "$",
                         "showvalues": "0",
-                        "theme": "fint"
+                        "theme": "fusion"
                     },
                     "data": [{
                             "label": "14 May",
@@ -295,7 +295,7 @@ The HTML code to build this dashboard is given here:
                         "xaxisname": "Date",
                         "yaxisname": "No. of Transactions",
                         "showvalues": "0",
-                        "theme": "fint"
+                        "theme": "fusion"
                     },
                     "data": [{
                             "label": "14 May",
@@ -398,7 +398,7 @@ The HTML code to build this dashboard is given here:
                         "xaxisname": "Date",
                         "yaxisname": "No. of Footfalls",
                         "showvalues": "0",
-                        "theme": "fint"
+                        "theme": "fusion"
                     },
 
                     "data": [{
@@ -503,7 +503,7 @@ The HTML code to build this dashboard is given here:
                         "yaxisname": "Customer Satisfaction Index",
                         "yaxismaxvalue": "5",
                         "showvalues": "0",
-                        "theme": "fint"
+                        "theme": "fusion"
                     },
                     "data": [{
                             "label": "14 May",

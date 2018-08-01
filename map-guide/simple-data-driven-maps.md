@@ -24,7 +24,7 @@ FusionCharts Suite XT accepts both JSON and XML data formats and can read them a
 {
     "chart": {
         "caption": "Global Population",
-        "theme": "fint",
+        "theme": "fusion",
         "formatNumberScale": "0",
         "numberSuffix": "M"
     },
@@ -81,11 +81,11 @@ To include the FusionCharts Suite XT JavaScript library on your HTML page, use t
 <head>
     <title>A Data Driven Map</title>
     <script type="text/javascript" src="fusioncharts/fusioncharts.js"></script>
-    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fint.js"></script>
+    <script type="text/javascript" src="fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
 </head>
 ```
 
-> The theme file included in the code snippet shown above is called `fint` (FusionCharts internal) and is present in the `themes` folder. You can use it to define chart cosmetics.
+> The theme file included in the code snippet shown above is called `fusion` (FusionCharts internal) and is present in the `themes` folder. You can use it to define chart cosmetics.
 
 ## Create a container for your map in the web page
 
@@ -125,7 +125,7 @@ Refer to the code below:
 {
     "chart": {
         "caption": "Global Population",
-        "theme": "fint",
+        "theme": "fusion",
         "formatNumberScale": "0",
         "numberSuffix": "M"
     },

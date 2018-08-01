@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Top 4 US Cities",
             "subcaption": "Average temperature (°F) in seasons (2013-14)",
             "xAxisName": "Seasons",

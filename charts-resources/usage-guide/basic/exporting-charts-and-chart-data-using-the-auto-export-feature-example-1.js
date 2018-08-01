@@ -18,7 +18,7 @@
         "exportEnabled": "1",
         //Enabling auto-side export
         "exportMode": "auto",
-        "theme": "fint"
+        "theme": "fusion"
     },
     "data": [
         {

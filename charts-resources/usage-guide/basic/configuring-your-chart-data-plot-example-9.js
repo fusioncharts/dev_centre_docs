@@ -12,7 +12,7 @@
             "xAxisName": "Quarter",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             //Additional plot hover cosmetics attributes
             "plotHoverEffect": "1",
             "plotBorderHoverThickness": "1",

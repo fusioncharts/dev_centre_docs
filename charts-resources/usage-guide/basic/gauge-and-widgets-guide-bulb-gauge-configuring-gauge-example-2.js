@@ -25,7 +25,7 @@
 
 
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
 
 
         },

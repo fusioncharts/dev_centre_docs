@@ -17,7 +17,7 @@
             "canvasBorderThickness": "4",
             "canvasBorderAlpha": "80",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Jan",

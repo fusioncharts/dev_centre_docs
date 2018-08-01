@@ -14,7 +14,7 @@
             "decimals": "1",
             "useDataPlotColorForLabels": "1",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Food",

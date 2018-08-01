@@ -23,7 +23,7 @@
             "forceDecimals": "1",
             "forceYAxisDecimals": "1",
             "yAxisValueDecimals": "2",
-            "theme": "fint"
+            "theme": "fusion"
 
         },
         "categories": [{

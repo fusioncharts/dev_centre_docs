@@ -15,7 +15,7 @@
             "valueBgHoverAlpha": "60",
             "valueFontSize": "13",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Teenage",

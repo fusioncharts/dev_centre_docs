@@ -17,7 +17,7 @@
             "exportEnabled": "1",
             "logEnabled": "1",
             "logMode": "auto",
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "data": [{

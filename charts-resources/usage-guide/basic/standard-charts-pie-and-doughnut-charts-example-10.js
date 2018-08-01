@@ -18,7 +18,7 @@
             "labelDistance": "5",
             "smartLabelClearance": "5",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Food",

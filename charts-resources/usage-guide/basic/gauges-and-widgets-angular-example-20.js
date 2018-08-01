@@ -21,7 +21,7 @@
             "valueBorderDashGap": "2",
             "valueBorderDashLen": "5",
             "gaugeFillMix": "{dark-40},{light-40},{dark-20}",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

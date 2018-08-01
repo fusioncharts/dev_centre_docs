@@ -14,7 +14,7 @@
             "showBorder": "1",
             "showTooltip": "0",
             "formatNumberScale": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "annotations": {
             "origw": "400",

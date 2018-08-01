@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Sales Analysis of Shoe Brands",
             "subcaption": "Last Quarter",
             "xAxisMinValue": "0",

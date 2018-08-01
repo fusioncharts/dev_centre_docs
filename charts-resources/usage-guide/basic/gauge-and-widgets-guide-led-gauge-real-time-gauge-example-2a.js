@@ -25,7 +25,7 @@
             "chartBottomMargin": "20",
             "dataStreamURL": "https://static.fusioncharts.com/sample/dev2.0/gauge-and-widgets-guide-led-gauge-real-time-gauges-php-2.php",
             "refreshInterval": "5",
-            "theme": "fint"
+            "theme": "fusion"
         },
         //All annotations are grouped under this element
         "annotations": {

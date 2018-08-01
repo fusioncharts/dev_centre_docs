@@ -13,7 +13,7 @@
             "yaxisname": "Amount (In USD)",
             "numberprefix": "$",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Q1",

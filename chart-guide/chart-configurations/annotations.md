@@ -664,7 +664,7 @@ Refer to the code below::
         "subCaption": "Bakersfield Central vs Los Angeles Topanga",
         "xAxisName": "Day",
         "yAxisName": "No. of Visitors",
-        "theme": "fint",
+        "theme": "fusion",
         "animation": "0",
         "showValues": "0",
         "showTooltip": "0"
@@ -1070,7 +1070,7 @@ Refer to the code below:
         "yAxisName": "No. of Visitors",
         "showTooltip": "0",
         "formatNumberScale": "0",
-        "theme": "fint"
+        "theme": "fusion"
     },
     "annotations": {
         "origw": "400",
@@ -1174,7 +1174,7 @@ Refer to the code below:
         "xAxisName": "Day",
         "yAxisName": "No. of Visitors",
         "showValues": "1",
-        "theme": "fint"
+        "theme": "fusion"
     },
     "annotations": {
         "origw": "400",
@@ -1233,7 +1233,7 @@ Refer to the code below:
         "showValues": "0",
         "showTooltip": "0",
         "animation": "0",
-        "theme": "fint"
+        "theme": "fusion"
     },
     "data": [{
         "label": "Q1",
@@ -1299,7 +1299,7 @@ Refer to the code below:
         "yAxisName": "No. of visitors",
         "yAxisNamePadding": "100",
         "showYAxisValues": "0",
-        "theme": "fint",
+        "theme": "fusion",
         "showValues": "0",
         "showTooltip": "0"
     },
@@ -1539,7 +1539,7 @@ Refer to the code below:
         "subCaption": "Last week",
         "xAxisName": "Day",
         "yAxisName": "No. of Visitors",
-        "theme": "fint"
+        "theme": "fusion"
     },
     "annotations": {
         "origw": "400",
@@ -1649,7 +1649,7 @@ Refer to the code below:
         "caption": "Customer Satisfaction Score",
         "subcaption": "Los Angeles Topanga",
         "plotToolText": "Current Score: $value",
-        "theme": "fint",
+        "theme": "fusion",
         "chartBottomMargin": "50",
         "showValue": "1"
     },
@@ -1775,7 +1775,7 @@ Refer to the code below:
         "yAxisName": "Amount (In USD)",
         "yAxisMaxValue": "120000",
         "numberPrefix": "$",
-        "theme": "fint",
+        "theme": "fusion",
         "PlotfillAlpha": "0",
         "placeValuesInside": "0",
         "rotateValues": "0",

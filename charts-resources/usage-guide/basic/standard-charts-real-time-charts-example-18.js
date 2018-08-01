@@ -17,7 +17,7 @@
             "numbersuffix": " Transactions",
             "showRealTimeValue": "0",
             "clearChartInterval": "50",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

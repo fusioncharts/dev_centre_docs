@@ -11,7 +11,7 @@
                 "xAxisname": "Quarter",
                 "yAxisName": "Amount (In USD)",
                 "numberPrefix": "$",
-                "theme": "fint",
+                "theme": "fusion",
                 "legendItemFontBold" : "0",
                 "legendItemFont": "Arial",
                 "legendItemFontSize": "11",

@@ -10,7 +10,7 @@
             "formatnumberscale": "0",
             "showBorder": "0",
             "showLegend": "1",
-            "theme": "fint",
+            "theme": "fusion",
             "showPercentValues": "1",
             "showPercentInToolTip": "0",
             //Setting legend to appear on right side

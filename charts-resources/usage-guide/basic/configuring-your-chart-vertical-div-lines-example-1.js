@@ -19,7 +19,7 @@
             "vDivLineAlpha": "50",
             "vDivLineDashed": "0",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Mon",

@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
     "chart": {
-        "theme": "fint",
+        "theme": "fusion",
         "caption": "Sales of Beer & Ice-cream vs Temperature",
         "subCaption": "Los Angeles Topanga",
         "xAxisName": "Average Day Temperature",

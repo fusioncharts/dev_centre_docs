@@ -16,7 +16,7 @@
             "tickValueDistance": "25",
             "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
             "gaugeFillRatio": "15",
-            "theme": "fint",
+            "theme": "fusion",
             "valueFontSize": "14"
         },
         "colorRange": {
