@@ -14,7 +14,7 @@ In this article, we will show you how you can download and install the `FusionCh
 
 ## Install FusionCharts PHP Wrapper
 
-In order to install and start working with PHP-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
+In order to install and start working with PHP-FusionCharts you need to [download](https://www.fusioncharts.com/download/ '@@open-newtab') the FusionCharts Suite XT package which contains:
 
 * JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
 * JavaScript files to render maps under `js > maps` folder.
@@ -72,10 +72,10 @@ This step is optional, the chart will render with the default theme (`fusion`) e
 
 **Step 3:** To use **FusionCharts PHP wrapper** in your project include the `fusioncharts.php` wrapper to your PHP page:
 
-```HTML
+```PHP
 <!DOCTYPE html>
 <?php
-   	/ *Include the `fusioncharts.php` file that contains functions to embed the charts.*/
+   	/* Include the `fusioncharts.php` file that contains functions to embed the charts. */
 
    	include(“path/to/local/fusioncharts.php”);
 ?>
