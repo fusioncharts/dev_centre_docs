@@ -234,7 +234,7 @@ Now, go on and explore other 95+ chart types that we have at [FusionCharts]({% s
 
 Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial to indicate the value. In this section, we will create an **Angular Gauge.**
 
-To start with, we'll build a simple "Nordstrom Customer Satisfaction Index" gauge as shown below:
+To start with, we'll build a simple "Nordstorm Customer Satisfaction Index" gauge as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 

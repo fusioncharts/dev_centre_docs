@@ -56,7 +56,7 @@ To install FusionCharts Suite XT, simply copy and paste the JavaScript files fro
 
 After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. Create an HTML file and follow the steps given below:
 
-**Step 1:** Include the `fusioncharts.js` (FusionCharts core library) file. This file is required to render any **chart, widget and map**.
+**Step 1:** Include the `fusioncharts.js` (FusionCharts core library) file. This file is required to render any **charts**, **widgets** and **map**.
 
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
@@ -86,7 +86,7 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ## Installing FusionMaps for your project
 
-FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. 
+FusionCharts Suite XT provides **1400+** data-driven maps as a part of the FusionMaps product. 
 To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest the of map definition files to plot maps of those countries/regions. 
 
 > If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace to upgrade the latest map definition files.
@@ -103,7 +103,7 @@ In the above example, we’ve included the World Map, whose map definition (path
 
 **Load other map definition files**
 
-To use any other map (except world and USA) from the 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. 
+To use any other map (except world and USA) from the **1400+** maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `maps` folder. The map definition files are named in the `fusioncharts.[MAP_ALIAS].js` format, where MAP_ALIAS represents the country, state or region name. 
 
 ```
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
@@ -674,7 +674,7 @@ Therefore, assuming that you need to render the map of California, the alias nam
     FusionCharts.addDep(California);
 </code></pre>
 
-<div class="mt-30"> <strong>It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.</strong>
+<div class="mt-30"> <strong>Note: </strong>It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.
 </div>
 
 </code></pre>
@@ -691,7 +691,7 @@ Therefore, assuming that you need to render the map of California, the alias nam
     California(FusionCharts);
 </code></pre>
 
-<div class="mt-30"><strong> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.</strong>
+<div class="mt-30"><strong>Note: </strong>It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.
 </div>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>

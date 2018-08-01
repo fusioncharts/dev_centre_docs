@@ -585,7 +585,7 @@ The full code for the above sample is given below:
                 // store chart config name-config value pair
 
                 Dictionary < string, string > chartConfig = new Dictionary < string, string > ();
-                chartConfig.Add("caption", "Nordstrom\\'s Customer Satisfaction Score for 2017");
+                chartConfig.Add("caption", "Nordstorm\\'s Customer Satisfaction Score for 2017");
                 chartConfig.Add("lowerLimit", "0");
                 chartConfig.Add("upperLimit", "100");
                 chartConfig.Add("showValue", "1");
@@ -723,7 +723,7 @@ The full code for the above sample is given below:
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load 'store chart config name-config value pair
 
     Dim chartConfig As New Dictionary(Of String, String)
-    chartConfig.Add("caption", "Nordstrom\'s Customer Satisfaction Score for 2017")
+    chartConfig.Add("caption", "Nordstorm\'s Customer Satisfaction Score for 2017")
     chartConfig.Add("lowerLimit", "0")
     chartConfig.Add("upperLimit", "100")
     chartConfig.Add("showValue", "1")

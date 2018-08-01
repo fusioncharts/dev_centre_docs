@@ -186,7 +186,7 @@ FusionCharts.ready(function() {
 
 In the above code:
 
-* We have created an instance of the **Column 2D** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using `width` and `height`.
+* We have created an instance of the **Column 2D** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 700x400 pixels using `width` and `height`.
 * To specify the data format as JSON, we have set the `dataFormat` parameter to `json`. You can also provide the data in XML format. 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 
@@ -265,7 +265,7 @@ Now, go on and explore other 95+ chart types that we have at [FusionCharts]({% s
 
 Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
 
-To start with, we'll build a simple "Nordstrom Customer Satisfaction Index" gauge as shown below:
+To start with, we'll build a simple "Nordstorm Customer Satisfaction Index" gauge as shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
 

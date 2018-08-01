@@ -123,7 +123,7 @@ import \* as OverlappedColumn2D from 'fusioncharts/fusioncharts.overlappedcolumn
 
 ## Include Map via npm
 
-FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. To reduce the size of the download package, the `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. To use any of these two map definition files, follow the steps given below:
+FusionCharts Suite XT provides **1400+** data-driven maps as a part of the FusionMaps product. To reduce the size of the download package, the `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. To use any of these two map definition files, follow the steps given below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -163,7 +163,7 @@ import \* as World from 'fusioncharts/maps/fusioncharts.world' // World Map
 
 **Load other map definition files**
 
-To use any other map (except world and USA) from the 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name.
+To use any other map (except world and USA) from the **1400+** maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `maps` folder. The map definition files are named in the `fusioncharts.[MAP_ALIAS].js` format, where MAP_ALIAS represents the country, state or region name.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>

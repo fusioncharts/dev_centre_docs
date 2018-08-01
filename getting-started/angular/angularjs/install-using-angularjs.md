@@ -156,7 +156,7 @@ app.controller('MyController', function($scope) {
 
 ### Installing FusionMaps for your project
 
-FusionCharts Suite XT provides **1400+** data-driven maps as a part of the product FusionMaps. 
+FusionCharts Suite XT provides **1400+** data-driven maps as a part of the FusionMaps product. 
 To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest the of map definition files to plot maps of those countries/regions.
 
 > If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace for upgrading to the latest map definition files.
@@ -172,7 +172,7 @@ In the above example, we’ve included the **World Map**, whose map definition (
 
 **Load other map definition files**
 
-To use any other map (except world and USA) from the 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, tnen copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name. Then include the respective map file as under:
+To use any other map (except world and USA) from the **1400+** maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, tnen copy those map files to your current `maps` folder. The map definition files are named in the `fusioncharts.[MAP_ALIAS].js` format, where MAP_ALIAS represents the country, state or region name. Then include the respective map file as under:
 
 ```
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
@@ -535,7 +535,7 @@ FusonMaps(FusionCharts);
 California(FusionCharts);
 ```
 
-> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `/maps` directory and are fetched from there.
+> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.
 
 
 ## Include Themes via NPM

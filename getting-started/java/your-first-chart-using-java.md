@@ -333,7 +333,7 @@ The full code for the above sample is given below:
         <%
             //store chart config name-config value pair
             Map<String, String> chartConfig = new HashMap<String, String>();
-            chartConfig.put("caption", "Nordstroms Customer Satisfaction Score for 2017");
+            chartConfig.put("caption", "Nordstorms Customer Satisfaction Score for 2017");
             chartConfig.put("lowerLimit", "0");
             chartConfig.put("upperLimit", "100");
             chartConfig.put("showValue", "1");

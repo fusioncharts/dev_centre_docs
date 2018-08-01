@@ -78,7 +78,7 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ## Installing FusionMaps for your project
 
-FusionCharts Suite XT provides **1400+** data-driven maps under the product FusionMaps. To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **Map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the remaining map definition files here to plot maps of those countries/regions. 
+FusionCharts Suite XT provides **1400+** data-driven maps as a part of the FusionMaps product. To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **Map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the remaining map definition files here to plot maps of those countries/regions. 
 
 > If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace to upgrade to the latest map definition files.
 
