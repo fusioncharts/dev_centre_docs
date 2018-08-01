@@ -7,7 +7,7 @@ chartPresent: true
 
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, annotations, trend-lines, and events.
 
-This article focuses on how you can configure the following:use the React `props` object and `react-fusioncharts` component to:
+This article focuses on how you can configure using the React `props` object and `react-fusioncharts` component to:
 
 * Update Chart Data (using React `Props` object)
 * Update Chart Attributes (using React `Props` object)
@@ -15,7 +15,7 @@ This article focuses on how you can configure the following:use the React `props
 
 ## Update Chart Data
 
-A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to see changes):
+A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to start):
 
 {% embed_chart configure-charts-using-react-example-1.js %}
 
