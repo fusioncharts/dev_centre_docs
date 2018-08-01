@@ -15,7 +15,7 @@ You can drill-down to descendant charts by simply clicking the data plot items o
 
 * Clones all chart configuration settings from the parent chart to create the descendant charts
 
-* Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods.html#configureLink) function.
+* Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configurelink-21) function.
 
 * Uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed
 

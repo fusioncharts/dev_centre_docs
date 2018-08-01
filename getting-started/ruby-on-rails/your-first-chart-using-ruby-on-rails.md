@@ -8,7 +8,7 @@ chartPresent: false
 
 FusionCharts Suite XT includes the **FusionCharts Rails** wrapper that lets you create interactive, data-driven charts. You can create a simple chart using the FusionCharts server-side Rails wrapper without writing any JavaScript code.
 
-The server-side Rails wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails#create-your-first-gauge-10) and a [map]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails#create-your-first-map-13).
+The server-side Rails wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails#create-your-first-map-10).
 
 Before going through this article, please [install]({% site.baseurl %}/getting-started/ruby-on-rails/install-using-ruby-on-rails '@@open-newtab') **FusionCharts Rails** wrapper, if you haven’t installed it already.
 
