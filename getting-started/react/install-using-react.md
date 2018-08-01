@@ -6,7 +6,7 @@ heading: Installation
 chartPresent: false
 ---
 
-The **React-FusionCharts** component lets you include **FusionCharts** in your **React** projects and add interactive JavaScript charts and graphs to your React applications. Before we get into the installation process, let's take a look at the features of **React-FusionCharts** component:
+The **react-fusioncharts** component lets you include **FusionCharts** in your **React** projects and add interactive JavaScript charts and graphs to your React applications. Before we get into the installation process, let's take a look at the features of **react-fusioncharts** component:
 
 * Easily create charts in JavaScript using your React code.
 
@@ -16,7 +16,7 @@ The **React-FusionCharts** component lets you include **FusionCharts** in your *
     - XML
     - A URI pointing to a file containing the JSON/XML data. However, each chart/map expects data to be formatted in JSON data structure and the data you provide must comply with the required format.
 
-In this article, we will show you how you to download and install the **React-FusionCharts** component and all the other dependencies on your system. 
+In this article, we will show you how you to download and install the **react-fusioncharts** component and all the other dependencies on your system. 
 
 ## Choose your mode of installation:
 
@@ -31,11 +31,11 @@ You can use FusionCharts in your React project using any of the two modes given 
 
 ## Install using Direct JavaScript files
 
-In order to install and start working with React-FusionCharts you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
+In order to install and start working with **react-fusioncharts**, you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
-* JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
-* JavaScript files to render maps under `js > maps` folder.
-* JavaScript files to apply themes under `js > themes` folder.
+* JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder
+* JavaScript files to render maps under the `js > maps` folder
+* JavaScript files to apply themes under the `js > themes` folder
 
 The folder structure is shown below:
 
