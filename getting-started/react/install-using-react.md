@@ -47,7 +47,7 @@ The folder structure is shown below:
 
 ![React Js Folder]({% site.baseurl %}/gif/react-folder-structure.gif)
 
-> Both the minified (compressed) and source (uncompressed) copies of React files are available in the folder. The uncompressed file `react-fusioncharts.js` is used during development or debugging, whereas the compressed file `react-fusioncharts.min.js` saves bandwidth and improves performance in production. The folder also contains the source map file `react-fusioncharts.js.map` for use, when debugging with a compressed file.
+> Both the minified (compressed) and source (uncompressed) copies of React files are available in the folder. The uncompressed file `react-fusioncharts.js` is used during development or debugging, whereas the compressed file `react-fusioncharts.min.js` saves bandwidth and improves performance in production. The folder also contains the source map file `react-fusioncharts.js.map`, for use when debugging with a compressed file.
 
 > The `react` folder in the FusionCharts Suite XT package is available from v3.13.0.
 
@@ -73,9 +73,9 @@ File Name|Description|
 
 To install FusionCharts Suite XT, simply copy and paste the JavaScript files from the downloaded package into your project folder.
 
-After that, you can include the FusionCharts JavaScript library in the web applications and start building your charts, gauges, and maps. Create an HTML file and follow the steps below:
+After that, you can include the FusionCharts JavaScript library in web applications and start building your charts, gauges, and maps. Create an HTML file and follow the steps below:
 
-**Step 1:** Include [React](https://reactjs.org/ '@@open-newtab') core library:
+**Step 1:** Include the [React](https://reactjs.org/ '@@open-newtab') core library:
 
 ```HTML
 <script type="text/javascript" src="path/to/local/react.js"></script>
@@ -87,13 +87,13 @@ After that, you can include the FusionCharts JavaScript library in the web appli
 <script type="text/javascript" src="path/to/local/babel-core.js"></script>
 ```
 
-**Step 3:** Include the FusionCharts package
+**Step 3:** Include the **FusionCharts** package
 
 ```HTML
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
 ```
 
-**Step 4:** Include the react-fusioncharts module
+**Step 4:** Include the `react-fusioncharts` module
 
 ```HTML
 <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
