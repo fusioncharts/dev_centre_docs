@@ -84,7 +84,7 @@ Literal1.Text = MyFirstChart.Render();
 </div>
 
 <div class='tab xml-tab'>
-<pre><code class="custom-hlc language-cv">
+<pre><code class="custom-hlc language-vb">
 ' Create chart instance
 'jsonData = “JSON data of the chart”
 ' charttype, chartID, width, height, data format, data
@@ -99,7 +99,7 @@ Literal1.Text = MyFirstChart.Render()
 
 In the above code:
 
-* We have created an instance of the **Column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using `width` and `height`.
+* We have created an instance of the **Column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 700x400 pixels using `width` and `height`.
 * To specify the data format as JSON/XML, we have set the `dataFormat` parameter to json. You can also provide the data in XML format. 
 * The JSON/XML data is embedded as the value of the `dataSource` parameter.
 
