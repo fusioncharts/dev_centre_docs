@@ -76,7 +76,7 @@ $Chart = new FusionCharts("column2d", "MyFirstChart" , "700", "400", "chart-cont
 
 In the above code:
 
-* We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 700x400 pixels using `width` and `height`.
+* We have created an instance of the **Column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 700x400 pixels using `width` and `height`.
 * The array data is embedded as the value of the `jsonEncodedData` parameter.
 
 Then, create a container using `<div>`, to render the chart.
@@ -156,7 +156,7 @@ The full code for the above sample is given below:
 
 That's it! When you run this HTML page now, you should see a chart representing your data.
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a Column 2D chart.
 
 Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for the charts.
 
@@ -219,8 +219,11 @@ A list of available constructor parameters are given in the table below:
   </tr>
 </table>
 
+>  It is not necessary to assign values for all parameters during initialization. However, keep in mind the following:
 
->  It is not necessary that you assign values for all parameters during initialization. The order of parameters, however, needs to be preserved. Also, you need to make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before you run the application. If not, either the chart will not render at all or it will not render the way you want it to. </p>
+* The order of parameters, needs to be preserved.
+* Make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before running the application.
+* If not, either the chart will not render at all or it will not render the way you want it to. </p>
 
 ## Create your first gauge
 

@@ -87,7 +87,7 @@ chart = Fusioncharts::Chart.new({
 
 In the above code:
 
-* We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using `width` and `height`.
+* We have created an instance of the **Column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using `width` and `height`.
 * To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 
@@ -248,7 +248,11 @@ Given below is a brief description of the constructor parameters:
   </tr>
 </table>
 
-> It is not necessary that you assign values for all parameters during initialization. The order of parameters, however, needs to be preserved. Also, you need to make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before you run the application. If not, either the chart will not render at all or it will not render the way you want it to. </p>
+> It is not necessary to assign values for all parameters during initialization. However, keep in mind the following:
+
+* The order of parameters, needs to be preserved.
+* Make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before running the application.
+* If not, either the chart will not render at all or it will not render the way you want it to. </p>
 
 ## Create your first gauge
 

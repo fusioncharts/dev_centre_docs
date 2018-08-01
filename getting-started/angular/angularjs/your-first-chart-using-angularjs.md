@@ -158,7 +158,7 @@ myApp.controller('MyController', ['$scope', function($scope) {
 }])
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a column 2D chart.
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a Column 2D chart.
 
 Now, use the `fusioncharts` directive in a template. The code for the `index.html` file is given below:
 

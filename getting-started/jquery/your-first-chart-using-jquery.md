@@ -157,7 +157,7 @@ jQuery('document').ready(function() {
 
 In the above code:
 
-* We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart.
+* We have created an instance of the **Column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart.
 * To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 
 The HTML code for the above sample is:

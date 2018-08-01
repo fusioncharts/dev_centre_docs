@@ -186,7 +186,7 @@ FusionCharts.ready(function() {
 
 In the above code:
 
-* We have created an instance of the **column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using `width` and `height`.
+* We have created an instance of the **Column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using `width` and `height`.
 * To specify the data format as JSON, we have set the `dataFormat` parameter to `json`. You can also provide the data in [XML format]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format '@@open-newtab'). 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 

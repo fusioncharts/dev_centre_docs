@@ -199,7 +199,7 @@ In the above code:
 
 That's it! When you run this HTML page now, you should see a chart representing your data.
 
-See the complete list of [all possible attributes ]({% site.baseurl %}/chart-attributes/?chart=column2d)(the keys in the `dataSource` object) for a column 2D chart.
+See the complete list of [all possible attributes ]({% site.baseurl %}/chart-attributes/?chart=column2d)(the keys in the `dataSource` object) for a Column 2D chart.
 
 Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts) or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d) for the charts.
 
