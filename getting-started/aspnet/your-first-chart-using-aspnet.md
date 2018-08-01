@@ -18,7 +18,7 @@ Let's start with a simple example of "Countries With Most Oil Reserves" chart, w
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-The data for this chart is represented in a table below:
+The data for this chart is represented in the table below:
 
 Country|No. of Oil Reserves|
 -|-
@@ -796,7 +796,7 @@ In this section, we will create a visualization using the map of **World**. Take
 
 {% embed_chart getting-started-your-first-map.js %}
 
-The data for this chart is represented in a table below:
+The data for this chart is represented in the table below:
 
 State|Entity Name|Value|
 -|-|-

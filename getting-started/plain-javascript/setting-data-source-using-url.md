@@ -17,7 +17,7 @@ Let's build the same revenue chart which we built in the [first example]({% site
 
 {% embed_chart plain-js-setting-data-using-url-example-1.js %}
 
-The data for this chart is represented in a table below:
+The data for this chart is represented in the table below:
 
 Country|No. of Oil Reserves|
 -|-
