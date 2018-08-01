@@ -5,9 +5,11 @@ heading: Your First Chart in jQuery using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and jquery-fusioncharts plugin. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/jquery/your-first-chart-using-jquery#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/jquery/your-first-chart-using-jquery#create-your-first-gauge-6) and a [map]({% site.baseurl %}/getting-started/jquery/your-first-chart-using-jquery#create-your-first-map-9).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and the `jquery-fusioncharts` plugin. 
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/jquery/install-using-jquery '@@open-newtab') `jquery-fusioncharts` plugin, if you haven’t installed it already.
+We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/jquery/your-first-chart-using-jquery#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/jquery/your-first-chart-using-jquery#create-your-first-gauge-6) and a [map]({% site.baseurl %}/getting-started/jquery/your-first-chart-using-jquery#create-your-first-map-9).
+
+Before going through this article, please [install]({% site.baseurl %}/getting-started/jquery/install-using-jquery '@@open-newtab') the `jquery-fusioncharts` plugin, if you haven’t installed it already.
 
 ## Create your first chart
 
@@ -32,7 +34,9 @@ China|30|
 
 ### Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts), etc. The converted format will look as shown below:
+FusionCharts accepts data in JSON or XML format. In this section, we will convert the tabular data into JSON format. The converted format is shown below:
+
+> There are different formats of JSON for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
 
 ```javascript
@@ -75,16 +79,16 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-In the above JSON we have:
+In the above JSON, we have:
 
 * Created the chart object to define the elements of the `chart`.
 * Then, each row of the tabular data is present within the `data` array to specify the labels and their corresponding values.
 
-Both the `chart` object and the `data` array contains a set of key-value pairs known as attributes. These attributes are used to set the functional and cosmetic properties of the chart as defined below:
+Both the `chart` object and the `data` array contain a set of key-value pairs known as attributes. These attributes are used to set the functional and cosmetic properties of the chart as defined below:
 
 #### Functional Attributes
 
-Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels, data values. You can also set chart limits and extended properties. The list of functional attributes used in the above code are:
+Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The functional attributes used in the above JSON are:
 
 * `caption` sets the caption of the chart.
 * `subcaption` sets the sub-caption of the chart.
