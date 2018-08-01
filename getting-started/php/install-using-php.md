@@ -89,7 +89,7 @@ FusionCharts Suite XT provides **1400+** data-driven maps under the product Fusi
 
 **To add FusionCharts PHP wrapper in your project:**
 
-Copy/Paste the `fusioncharts.php` file from `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` to your project’s folder and include it to your PHP page.
+Copy/paste the `fusioncharts.php` file from `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` to your project’s folder and include it to your PHP page.
 
 To render a map, you need to `include` the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. 
 

@@ -72,19 +72,19 @@ This step is optional, the chart will render with the default theme (`fusion`) e
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-To use **FusionCharts-Java wrapper** in your project, copy/paste the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project’s folder.
+To use **FusionCharts-Java wrapper** in your project, Copy/paste the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project’s folder.
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java '@@open-newtab').
 
 ## Installing FusionMaps for your project
 
-FusionCharts Suite XT provides **1400+** data-driven maps under the product FusionMaps. To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest of map definition files here, when you need to plot maps of those countries/regions. 
+FusionCharts Suite XT provides **1400+** data-driven maps under the product FusionMaps. To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **Map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the remaining map definition files here to plot maps of those countries/regions. 
 
-> If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace for upgrading to the latest map definition files.
+> If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace to upgrade to the latest map definition files.
 
 **To use FusionCharts Java wrapper in your project:**
 
-Copy/Paste the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project’s folder, and **import** it to your JSP page.
+Copy/paste the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project’s folder and **import** it to your JSP page.
 
 To render a map, you need to `include` the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. Once done, insert the `<script>` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The `<script>` tag is shown below:
 
@@ -94,11 +94,11 @@ To render a map, you need to `include` the core FusionCharts library `fusionchar
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
 ```
 
-In the above example, we’ve included the World Map, whose map definition (path) is contained in `maps/fusioncharts.world.js`.
+In the above example, we’ve included the **World Map** whose map definition (path) is contained in `maps/fusioncharts.world.js`.
 
 **Load other map definition files**
 
-To use any other map (except world and USA) from the 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name.
+To use any other map (except **World** and **USA**) from our 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name.
 
 Insert the `<script>` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The `<script>` tag is shown below:
 
@@ -114,7 +114,7 @@ Therefore, assuming that you need to render the map of California, the alias nam
 
 Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
-This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/jsp/your-first-chart-using-jsp#create-your-first-map-10 '@@open-newtab').
+This completes the installation of FusionMaps in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/jsp/your-first-chart-using-jsp#create-your-first-map-10 '@@open-newtab').
 
 ## Themes
 
