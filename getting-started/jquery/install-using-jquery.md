@@ -217,7 +217,7 @@ To include a theme to your chart, include its corresponding JavaScript file in y
 
 The `fusioncharts` package contains files for all charts and widgets and only two map definition files, for the **World map** and the **USA map**.
 
-This section outlines the steps to be executed for installing all the node modules via NPM and rendering charts using the FusionCharts jQuery helpers.
+This section outlines the steps to be executed for installing all the node modules via npm and rendering charts using the FusionCharts jQuery helpers.
 
 **Step 1:** Install the `jquery-fusioncharts` package
 
@@ -237,8 +237,13 @@ $ npm install fusioncharts --save
 var FusionCharts = require('fusioncharts');
 var jQuery = require('jquery');
 ```
+**Step 4**: **Include jQuery-FusionCharts**
 
-**Step 4:** Include all charts from FusionCharts
+```JavaScript
+var jQueryFusionCharts = require('jquery-fusioncharts');
+```
+
+**Step 5:** Include all charts from FusionCharts
 
 ```JavaScript
 var FusionCharts = require('fusioncharts');
@@ -307,17 +312,17 @@ var OverlappedBar2D = require('fusioncharts/fusioncharts.overlappedbar2d');
 var OverlappedColumn2D = require('fusioncharts/fusioncharts.overlappedcolumn2d');
 ```
 
-## Include Maps via NPM
+## Include Maps via npm
 
-To reduce the size of the download package, the `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. To use any of these two map definition files follow the steps given below:
+To reduce the size of the download package, the `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. To use any of these two map definition files, follow the steps given below:
 
-**Include jQuery FusionCharts Helper**
+**Include jQuery Helper**:
 
 ```JavaScript
 var jQuery = require('jquery');
 ```
 
-**Load the `FusionMaps` renderer and the map definition file**
+**Load the `FusionMaps` renderer and the map definition file**:
 
 ```JavaScript
 var Charts = require('fusioncharts');
@@ -325,7 +330,7 @@ var FusionMaps = require('fusioncharts/fusioncharts.maps');
 var World = require('fusioncharts/maps/fusioncharts.world');
 ```
 
-**Include jQuery FusionCharts Helper**
+**Include jQuery-FusionCharts**
 
 ```JavaScript
 var jQueryFusionCharts = require('jquery-fusioncharts');
@@ -346,9 +351,9 @@ You can use rest of the map definition files other than the **World Map** and th
 $ npm install fusionmaps
 ```
 
-Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder. 
+Once the `fusionmaps` package is installed, you will find all the map definition files in `fusionmaps/maps/es` folder. 
 
-> The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include fusioncharts in your project and map renderer as shown below:
+> The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include `fusioncharts` in your project and the map renderer as shown below:
 
 ```JavaScript
 var Charts = require('fusioncharts');
