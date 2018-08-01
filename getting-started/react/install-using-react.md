@@ -243,14 +243,14 @@ import ReactFC from 'react-fusioncharts';
 import FusionCharts from 'fusioncharts/core';
 ```
 
-**Step 5** : Include specific modules:
+**Step 5:** Include specific modules:
 
 ```JavaScript
 // E.g. - import ChartType from fusioncharts/viz/[ChartType]
 import Column2D from 'fusioncharts/viz/column2d';
 ```
 
-**Step 6** : Add the charts as the dependency to the core:
+**Step 6** : Add the charts as a dependency to the core:
 
 ```JavaScript
 ReactFC.fcRoot(FusionCharts, Column2D);
@@ -319,28 +319,40 @@ ReactDOM.render(
 
 ## Include Maps via npm
 
-To reduce the size of the download package, the `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. To use any of these two map definition files follow the steps given below:
+To reduce the size of the download package, the `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map** and the **Map of USA**. To use any of these two map definition files follow the steps given below:
 
-**Step 1:** Include React FusionCharts plugin
+**Step 1:** Install the `react-fusioncharts` module:
+
+```PowerShell
+$ npm install react-fusioncharts --save
+```
+
+**Step 2:** Install `fusioncharts` package:
+
+```PowerShell
+$ npm install fusioncharts --save
+```
+
+**Step 3:** Include `react-fusionCharts` plugin:
 
 ```JavaScript
 import ReactFC from 'react-fusioncharts';
 ```
 
-**Step 2:** Include the core FusionCharts library
+**Step 4:** Include the core FusionCharts library
 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core';
 ```
 
-**Step 3:** Load the `FusionMaps` renderer and the map definition file
+**Step 5:** Load the `FusionMaps` renderer and the map definition file
 
 ```JavaScript
 import FusionMaps from 'fusioncharts/maps';
 import World from 'fusioncharts/maps/es/fusioncharts.world';
 ```
 
-**Step 4:** Add the map as the dependency to the core
+**Step 6:** Add the map as the dependency to the core
 
 ```JavaScript
 // Maps -  reference from above
@@ -349,15 +361,15 @@ ReactFC.fcRoot(FusionCharts, Maps, World);
 
 **Load other map definition files**
 
-You can use rest of the map definition files other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:
+You can also use the remaining map definition files, other than the **World Map** and the **Map of USA** that are shipped with the `fusioncharts` package. To do so, install `fusionmaps` package which contains all the map definition files as shown below:
 
 ```PowerShell
 $ npm install fusionmaps
 ```
 
-Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder. 
+Once the `fusionmaps` package is installed you will find all the map definition files in the `fusionmaps/maps/es` folder. 
 
-> The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include `fusioncharts` in your project and the map renderer as shown below:
+> The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use `fusionmaps`, it is necessary to first include `fusioncharts` and the map renderer as shown below:
 
 ```JavaScript
 import FusionCharts from 'fusioncharts/core';
@@ -483,7 +495,7 @@ import FusionCharts from 'fusioncharts/core';
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 ```
 
-**Step 4:** Add `fusion` theme as dependency to the core:
+**Step 4:** Add `fusion` theme as a dependency to the core:
 
 ```JavaScript
 ReactFC.fcRoot(FusionCharts, Fusion);
