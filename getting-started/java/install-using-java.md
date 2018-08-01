@@ -9,7 +9,7 @@ FusionCharts Suite XT includes the **FusionCharts server-side Java** wrapper tha
 
 Some of the basic features of the Java wrapper are:
 
-* LEts you easily create charts in JavaScript using your Java code.
+* Lets you easily create charts in JavaScript using your Java code.
 * Can render charts using **JSON/XML** data or URL.
 
 In this article, we will show you how to download and install the `FusionCharts Java` wrapper and all the other dependencies on your system.
@@ -30,7 +30,7 @@ The folder structure is shown below:
 
 > You need to copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
-* The download package also contains **fusioncharts.java** file under `fusioncharts-suite-xt > integrations > java > fusioncharts-wrapper` folder. This folder will also contain FusionCharts-Java native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/java '@@open-newtab')**. The folder structure is shown below:
+* The download package also contains **fusioncharts.java** file under `fusioncharts-suite-xt > integrations > java > fusioncharts-wrapper` folder. This folder will also contain FusionCharts Java native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/java '@@open-newtab')**. The folder structure is shown below:
 
 ![JSP Js Folder]({% site.baseurl %}/gif/jsp-folder-structure.gif)
 
@@ -72,7 +72,7 @@ This step is optional, the chart will render with the default theme (`fusion`) e
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-To use **FusionCharts-Java wrapper** in your project, Copy/paste the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project’s folder.
+To use **FusionCharts-Java wrapper** in your project, copy/paste the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project’s folder.
 
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java '@@open-newtab').
 
@@ -98,7 +98,7 @@ In the above example, we’ve included the **World Map** whose map definition (p
 
 **Load other map definition files**
 
-To use any other map (except **World** and **USA**) from our 1400+ maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `/maps` folder. The map definition files are named in the format `fusioncharts.[MAP_ALIAS].js`, where MAP_ALIAS represents the country, state or region name.
+To use any other map (except **World** and **USA**) from our **1400+** maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files, then copy those map files to your current `maps` folder. The map definition files are named in the `fusioncharts.[MAP_ALIAS].js` format, where **MAP_ALIAS** represents the country, state or region name.
 
 Insert the `<script>` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The `<script>` tag is shown below:
 
@@ -114,7 +114,7 @@ Therefore, assuming that you need to render the map of California, the alias nam
 
 Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
-This completes the installation of FusionMaps in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/jsp/your-first-chart-using-jsp#create-your-first-map-10 '@@open-newtab').
+This completes the installation of FusionMaps in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-map-13 '@@open-newtab').
 
 ## Themes
 

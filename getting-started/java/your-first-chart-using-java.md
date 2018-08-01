@@ -7,7 +7,7 @@ chartPresent: false
 
 FusionCharts Suite XT includes the **FusionCharts JSP** wrapper that lets you create interactive, data-driven charts.
 
-JavaScript and HTML code is used to generate charts in the browsers. The server-side JSP wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-gauge-10) and a [map]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-map-13).
+JavaScript and HTML code is used to generate charts in the browsers. The server-side JSP wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-gauge-9) and a [map]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-map-12).
 
 Before going through this article, please [install]({% site.baseurl %}/getting-started/java/install-using-java '@@open-newtab') FusionCharts JSP wrapper, if you haven’t installed it already.
 
@@ -19,7 +19,7 @@ Let's start with a simple example of "Countries With Most Oil Reserves" chart, w
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-The data for this chart is represented in the table below:
+#### The data for this chart is represented in the table below:
 
 Country|No. of Oil Reserves|
 -|-
