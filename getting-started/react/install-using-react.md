@@ -6,17 +6,17 @@ heading: Installation
 chartPresent: false
 ---
 
-The **React-FusionCharts** component lets you include **FusionCharts** in your **React** projects and adds interactive JavaScript charts and graphs to your React applications. Before we get into the installation process of the component, let's take a look at the salient features of **React-FusionCharts** component:
+The **React-FusionCharts** component lets you include **FusionCharts** in your **React** projects and add interactive JavaScript charts and graphs to your React applications. Before we get into the installation process, let's take a look at the features of **React-FusionCharts** component:
 
 * Easily create charts in JavaScript using your React code.
 
-* Can render charts using **props** binding. There are more than 50 props that you can use.
+* Render charts using **props** binding (there are more than 50 props that you can use).
 * Accepts data in three formats:
     - JSON
     - XML
-    - An URI pointing to a file containing JSON/XML data. However, each chart/map expects data to be formatted in JSON data structure, and the data you provide must comply with the required format.
+    - A URI pointing to a file containing the JSON/XML data. However, each chart/map expects data to be formatted in JSON data structure and the data you provide must comply with the required format.
 
-In this article, we will show you how you to download and install the React-FusionCharts component and all the other dependencies on your system. 
+In this article, we will show you how you to download and install the **React-FusionCharts** component and all the other dependencies on your system. 
 
 ## Choose your mode of installation:
 
