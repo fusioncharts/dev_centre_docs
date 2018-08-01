@@ -105,6 +105,7 @@ The full code for the above sample is:
 ```
 # Filename: app/controllers/examples_controller.rb
 class ExamplesController < ApplicationController
+require ‘fusioncharts-rails’
 
 def getChart
 
@@ -315,6 +316,7 @@ The full code for the above sample is:
 ```
 #Filename: app / controllers / examples_controller.rb
 class ExamplesController < ApplicationController
+require ‘fusioncharts-rails’
 
 def getWidget
 
@@ -459,6 +461,7 @@ The full code of the sample is:
 ```
 # Filename: app / controllers / examples_controller.rb
 class ExamplesController < ApplicationController
+require ‘fusioncharts-rails’
 
 def getMap
 

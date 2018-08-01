@@ -100,6 +100,14 @@ To add the FusionCharts Rails wrapper, use any of the following process:
 </div>
 </div>
 
+**Include the FusionCharts Rails wrapper**
+
+To include the FusionCharts Rails wrapper in your controller:
+
+```
+require ‘fusioncharts-rails’
+```
+
 This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails '@@open-newtab').
 
 ## Installing FusionMaps for your project
