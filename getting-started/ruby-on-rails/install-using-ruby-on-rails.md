@@ -5,7 +5,7 @@ heading: Installation
 chartPresent: false
 ---
 
-FusionCharts Suite XT includes the **FusionCharts server-side RoR wrapper** that lets you create interactive, data-driven charts. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page to generate charts.
+FusionCharts Suite XT includes the **FusionCharts server-side RoR** wrapper that lets you create interactive, data-driven charts. Using the wrapper, you can create charts in your browsers without writing any JavaScript code. The required JavaScript and HTML code is generated as a string in the server and inserted in the web page to generate charts.
 
 In this article, we will show you how to download and install the **FusionCharts Rails gem** wrapper and all the other dependencies on your system.
 
@@ -21,9 +21,9 @@ The folder structure is shown below:
 
 ![Js Folder Structure]({% site.baseurl %}/gif/js-folder-structure.gif)
 
-> You need to copy all the files/folders from `fusioncharts-suite-xt > js` to `vendor/assets/javascripts/fusioncharts/` folder of your Rails application.
+> You need to copy all the files/folders from `fusioncharts-suite-xt > js` to the `vendor/assets/javascripts/fusioncharts/` folder of your Rails application.
 
-* The download package contains FusionCharts gem under `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` folder. This folder also contains native RoR FusionCharts **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/ruby-on-rails '@@open-newtab')**. The folder structure is shown below: 
+* The download package contains FusionCharts gem under the  `fusioncharts-suite-xt > integrations > rubyonrails > fusioncharts-wrapper` folder. This also contains the native RoR FusionCharts **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/ruby-on-rails '@@open-newtab')**. The folder structure is shown below: 
 
 ![Ruby on Rails Js Folder]({% site.baseurl %}/gif/ror-folder-structure.gif)
 
@@ -49,11 +49,11 @@ File Name|Description|
 
 To install FusionCharts Suite XT, simply copy and paste the JavaScript files from the downloaded package into your project folder.
 
-After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. To include FusionCharts library files, follow the steps gievn below:
+After that, you can include the FusionCharts JavaScript library in your web applications and start building your charts, gauges, and maps. To include FusionCharts library files, follow the steps given below:
 
 **Step 1: Include the FusionCharts package**
 
-To include core `fusioncharts` library in your project add the following line in the **app/assets/javascripts/application.js** file:
+To include the core FusionCharts library in your project add the following line in the **app/assets/javascripts/application.js** file:
 
 ```Ruby
 //= require fusioncharts/fusioncharts
@@ -67,7 +67,7 @@ This step is optional, the chart will render with the default theme (`fusion`) e
 //= require fusioncharts/themes/fusioncharts.theme.fusion
 ```
 
-To add the FusionCharts Rails wrapper, use any of the following process:
+To add the FusionCharts Rails wrapper, use any of the following processes:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -112,11 +112,11 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ## Installing FusionMaps for your project
 
-FusionCharts Suite XT provides **1400+** data-driven maps under the product FusionMaps. To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **Map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the rest the of map definition files to plot maps of those countries/regions.
+FusionCharts Suite XT provides **1400+** data-driven maps under the product FusionMaps. To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **Map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the remaining map definition files to plot maps of those countries/regions.
 
 > If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace for upgrading to the latest map definition files.
 
-To render a map, you need to include FusionCharts library in your project. Add the following code in the **app/assets/javascripts/application.js** file.
+To render a map, you need to include the FusionCharts library in your project. Add the following code in the **app/assets/javascripts/application.js** file.
 
 ```Ruby
 //= require fusioncharts/fusioncharts
@@ -173,7 +173,7 @@ Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open
 
 [Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allow you to apply centralized themes to any number of charts.
 
-In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
+In a theme file, we can centralize the following aspects of all of your charts, gauges, and maps:
 
 * Visual appearance (data plot color, font color, font size, etc.)
 * Behavior (hover effects for data plots)
@@ -192,4 +192,4 @@ Add the following code in the `app/assets/javascripts/application.js` file as sh
 //= require fusioncharts/themes/fusioncharts.theme.fusion
 ``` 
 
-> Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective theme name. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').

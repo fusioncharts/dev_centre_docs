@@ -221,7 +221,7 @@ A list of available constructor parameters are given in the table below:
 
 It is not necessary to assign values for all parameters during initialization. However, keep in mind the following:
 
-* The order of parameters, needs to be preserved.
+* The order of parameters needs to be preserved.
 * Make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before running the application.
 * If not, either the chart will not render at all or it will not render the way you want it to. </p>
 
@@ -251,7 +251,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 ### Create an instance of the gauge
 
-In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the data for the chart as a string.
+In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the data for the chart as a string format.
 
 The code to initialize and render the chart is given below:
 

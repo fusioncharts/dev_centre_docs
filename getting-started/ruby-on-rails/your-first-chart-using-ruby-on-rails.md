@@ -16,7 +16,7 @@ Before going through this article, please [install]({% site.baseurl %}/getting-s
 
 In this section, we will create a chart using `FusionCharts Rails` server-side wrapper. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'). To create a Column 2D chart, we need the chart data to be passed in JSON string format.
 
-For this example, we have created a controller named `examples` and view named `firstchart`. To keep things simple we have placed all the chart rendering logics in the `examples` controller only.
+For this example, we have created a controller named `examples` and a view named `firstchart`. To keep things simple, we have placed all the chart rendering logics in the `examples` controller only.
 
 > The example controller we created is `app/controllers/examples_controller.rb`.
 
@@ -41,7 +41,7 @@ China|30|
 
 Now that you have the tabular data ready, it's time to convert it into JSON/XML format, as FusionCharts accepts data in JSON or XML format. The converted format is shown below:
 
-> There are different JSON/XML formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts '@@open-newtab') (which you see here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+> There are JSON/XML formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts '@@open-newtab') (which you see here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
 {% embed_data getting-started-your-first-chart.js %}
 
@@ -64,7 +64,7 @@ Functional attributes let you control a variety of functional elements on the ch
 
 #### Cosmetic Attributes
 
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
+Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's look and feel, no cosmetic attributes are used in this sample. For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
 ### Create an instance of the chart
 
@@ -87,7 +87,7 @@ chart = Fusioncharts::Chart.new({
 
 In the above code:
 
-* We have created an instance of the **Column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using `width` and `height`.
+* We have created an instance of the **Column 2D** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 600x400 pixels using `width` and `height`.
 * To specify the data format as JSON, we have set the `dataFormat` parameter to json. You can also provide the data in XML format. 
 * The JSON data is embedded as the value of the `dataSource` parameter.
 
@@ -187,18 +187,13 @@ Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% s
 
 ## The FusionCharts Chart Class
 
-A list of available parameters is given in the table below:
-
-### Constructor Parameters
-
 The syntax of the `Chart` class constructor used to initialize the chart object is:
 
 ```vb.net
 Chart <object name> = new Chart (chartType, chartId, chartWidth, chartHeight, dataFormat, dataSource, bgColor, bgOpacity)
-
 ```
 
-Given below is a brief description of the constructor parameters:
+A list of available constructor parameters are given in the table below:
 
 <table>
   <tr>
@@ -402,7 +397,7 @@ See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attr
 
 ## Create your first map
 
-In this section, we will create a visualization using the map of **World**. Take a look at the map shown below:
+In this section, we will create a visualization using the **World Map**. Take a look at the map shown below:
 
 {% embed_chart getting-started-your-first-map.js %}
 
@@ -417,7 +412,7 @@ Europe|EU|40|
 Africa|AF|2.58|
 Australia|AU|1.30|
 
-> In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column in this example. However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id` of the map you want to create.
+In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column in this example. However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id` of the map you want to create.
 
 ### Convert tabular data into JSON/XML format
 
@@ -429,7 +424,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
 
 In this step, we will create an instance of the chart type as `world` using FusionCharts class constructor, set the width and height (in pixels or %), and finally specify the data for the chart as JSON string format.
 
-For this example, we have created a controller named `examples` and view named `firstmap`. To keep things simple we have placed all the chart rendering logics in the `examples` controller only.
+For this example, we have created a controller named `examples` and a view named `firstmap`. To keep things simple we have placed all the chart rendering logics in the `examples` controller only.
 
 > The example controller we created is `app/controllers/examples_controller.rb`.
 
@@ -546,7 +541,7 @@ def getMap
 end
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the Map of World. The respective `ids`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the World Map. The respective `ids`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
 
 ## Problem rendering the chart?
 
