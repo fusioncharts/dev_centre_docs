@@ -1,11 +1,11 @@
 ---
-title: Your First Chart in AngularJS using FusionCharts | FusionCharts
+title: Your First Chart in AngularJS Using FusionCharts | FusionCharts
 description: This article outlines the steps to create your first chart, widget and map using the fusionCharts AngularJS component.
 heading: Your First Chart in AngularJS using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and the `angularjs-fusioncharts` wrapper. 
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps, and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and the `angularjs-fusioncharts` wrapper. 
 
 We'll start with a simple example of creating a [chart]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#create-your-first-map-10).
 
@@ -13,9 +13,9 @@ Before going through this article, please [install]({% site.baseurl %}/getting-s
 
 ## Create your first chart
 
-In this section, we will create a chart using `angularjs-fusioncharts` component. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
+In this section, we will create a chart using the `angularjs-fusioncharts` component. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
 
-To create charts, the `angularjs-fusioncharts` component can be passed as a part of another angularjs component.
+To create charts, the `angularjs-fusioncharts` component can be passed as a part of another `angularjs` component.
 
 Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
 
@@ -38,7 +38,7 @@ China|30|
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
 
-> There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
 ```javascript
 {
@@ -91,17 +91,17 @@ Both the `chart` object and the `data` array contain a set of key-value pairs kn
 
 Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The functional attributes used in the above JSON are:
 
-* `caption` sets the caption of the chart.
-* `subcaption` sets the sub-caption of the chart.
-* `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
-* `numberPrefix` adds a prefix to all the numbers visible on the chart.
+* `caption` sets the caption of the chart
+* `subcaption` sets the sub-caption of the chart
+* `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis
+* `numberPrefix` adds a prefix to all the numbers visible on the chart
 * Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` (default theme) as its value. Using themes, you can centralize your cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetic Attributes
 
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. 
+These attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics, no cosmetic attributes are used in this sample.
 
-For a detailed list of attributes click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
+For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
 
 ### Setup the main module
 
@@ -190,11 +190,11 @@ Now, use the `fusioncharts` directive in a template. The code for the `index.htm
 
 </html>
 ```
-Now, go on and explore other 95+ chart types that we have at [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for different charts.
+Now, go on and explore other 95+ chart types that we have at [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for different charts
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase information using a radial scale to display data and a dial to indicate the value. In this section, we will create an **Angular Gauge.**
+Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial to indicate the value. In this section, we will create an **Angular Gauge.**
 
 To start with, we'll build a simple gauge showcasing Nordstrom's Customer Satisfaction Score as shown below:
 
