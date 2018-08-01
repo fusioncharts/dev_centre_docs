@@ -5,9 +5,9 @@ heading: Your First Chart in React using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and React-FusionCharts plugin. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-gauge-8) and a [map]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-map-11).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and `react-fusionCharts` plugin. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-gauge-8) and a [map]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-map-11).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/react/install-using-react '@@open-newtab') react-fusioncharts plugin, if you haven’t installed it already.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/react/install-using-react '@@open-newtab') the `react-fusioncharts` plugin, if you haven’t installed it already.
 
 ## Create your first chart
 
@@ -34,7 +34,7 @@ China|30|
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For React, we recommend JSON format. 
 
-> There are different formats of JSON for different groups of charts in FusionCharts - e.g., single-series (which you're seeing here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts), etc.
+> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
 The converted format will look as shown below:
 
@@ -84,7 +84,7 @@ In the above JSON, we have:
 
 * Then, each row of the tabular data is present within the data array to specify the labels and their corresponding values.
 
-Both the `chart` object and the `data` array contains a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart as defined below:
+Both the `chart` object and the `data` array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart as defined below:
 
 #### Functional Attributes
 
@@ -102,13 +102,13 @@ Functional attributes let you control a variety of functional elements on the ch
 
 #### Cosmetic Attributes
 
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click [here]({% site.baseurl %}/chart-attributes/?chart=area2d).
+Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's look and feel, no cosmetic attributes are used in this sample. For a detailed list of cosmetic attributes click [here]({% site.baseurl %}/chart-attributes/?chart=area2d).
 
 ### Render the Chart
 
 In this step, we will set the chart type as `column2d`, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
 
-First, store the configurations as JSON object in a variable as below:
+First, store the configurations as a JSON object in a variable as below:
 
 ```json
 var chartConfigs = {
@@ -162,7 +162,7 @@ To render the chart, the `react-fusioncharts` component can be:
 
 OR
 
-* Passed as a part of another **ReactJS** component
+* Passed as part of another **ReactJS** component
 
 #### Passed directly to the ReactDOM.render() method:
 
@@ -191,7 +191,7 @@ class App extends React.Component {
 
 In the above code:
 
-* We have created an instance of the `column2d` chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 700x400 pixels using width and height.
+* We have created an instance of the **Column 2D** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 700x400 pixels using width and height.
 
 * To specify the data format as JSON, we have set the `dataFormat` parameter to `json`. You can also provide the data in [XML format ]({% site.baseurl %}/chart-guide/getting-started/using-xml-as-data-format).
 
@@ -219,7 +219,7 @@ Range|Color|Hex Code|
 50-75|Yellow|#FFC533|
 75-100|Green|#62B58F|
 
-So any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
+So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
 ### Convert tabular data into JSON format
 
@@ -263,7 +263,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 ### Render the Gauge
 
-In this step, we will set the chart type as `angulargauge`, set the **width** and **height** (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will set the chart type as `angulargauge`, set the **width** and **height** (in pixels or %), and finally specify the JSON data for the chart as a string.
 
 ```json
 var chartConfigs = {
@@ -315,7 +315,7 @@ See the complete list of [all possible attributes]({% site.baseurl %}/chart-attr
 
 ## Create your first map
 
-In this section, we will create a visualization using the Map of World. Take a look at the map shown below:
+In this section, we will create a visualization using the **World Map**. Take a look at the map shown below:
 
 {% embed_chart getting-started-your-first-map.js %}
 
@@ -330,7 +330,13 @@ Europe|EU|40|
 Africa|AF|2.58|
 Australia|AU|1.30|
 
-> In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column in this example. However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. We have detailed [Map Specification Sheet]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - please refer to them for the correct `id` of the map you want to create.
+> In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column. 
+
+However, when you convert the data into a format supported by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). 
+
+For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
+
+We have a detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
 
 ### Convert tabular data into JSON format
 
@@ -398,7 +404,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 ### Render a Map
 
-In this step, we will set the map type as WORLD, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+In this step, we will set the map type as `world`, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
 
 ```json
 var chartConfigs = {
@@ -470,7 +476,7 @@ ReactDOM.render(
 );
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference) (the keys in the dataSource object) for the Map of World. The respective id can be found [here]({% site.baseurl %}/maps/spec-sheets/world).
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference) (the keys in the dataSource object) for the **World Map**. The respective id can be found [here]({% site.baseurl %}/maps/spec-sheets/world).
 
 ## Problem rendering the chart?
 
