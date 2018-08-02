@@ -841,14 +841,6 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
     * `Annrenderdelay`
 
-    * `showFormBtn` (deprecated)
-
-    * `formBtnTitle` (deprecated)
-
-    * `showRestoreBtn` (deprecated)
-
-    * `restoreBtnTitle` (deprecated)
-
     * `btnTextColor`
 
     * `btnFontSize`
@@ -869,7 +861,17 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
     * `restoreBtnBgColor`
 
-* The deprecated methods `getXML()` & `setDataXML()` have been removed.
+    * The deprecated methods `getXML()` & `setDataXML()` have been removed.
 
-* The deprecated method `setCurrentRenderer` has been removed.
+    * The deprecated method `setCurrentRenderer` has been removed.
+
+## Deprecated
+
+    * `showFormBtn` (deprecated)
+
+    * `formBtnTitle` (deprecated)
+
+    * `showRestoreBtn` (deprecated)
+
+    * `restoreBtnTitle` (deprecated)
 
