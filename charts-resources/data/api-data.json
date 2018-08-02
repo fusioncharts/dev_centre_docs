@@ -30760,7 +30760,7 @@
                 },
                 "dataXMLInvalid": {
                     "id": "event-dataXMLInvalid",
-                    "name": "dataXMLInvalid",
+                    "name": "dataXMLInvalid (Deprecated)",
                     "kind": "event",
                     "access": "",
                     "scope": "instance",
@@ -35127,13 +35127,24 @@
                                 "dataObj": {
                                     "name": "dataObj",
                                     "subparams": {
+                                        "id": {
+                                            "name": "id",
+                                            "type": [
+                                                "String"
+                                            ],
+                                            "description": "",
+                                            "defaultvalue": "",
+                                            "optional": "",
+                                            "nullable": "",
+                                            "subparams": {}
+                                        },
                                         "width": {
                                             "name": "width",
                                             "type": [
                                                 "number",
                                                 "percent"
                                             ],
-                                            "description": "Chart width, after resize",
+                                            "description": "Chart ID",
                                             "defaultvalue": "",
                                             "optional": "",
                                             "nullable": "",
@@ -37483,12 +37494,12 @@
                 },
                 "ref": {
                     "id": "ref",
-                    "name": "ref",
+                    "name": "ref (Deprecated)",
                     "kind": "member",
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Every instance of FusionCharts, when rendered within a container element (provided by the `renderAt` parameter,) creates a `<span>` element within which a chart is rendered. As such, the user-provided container element is not polluted by the DOM elements created by a chart.",
+                    "description": "Every instance of FusionCharts, when rendered within a container element (provided by the `renderAt` parameter,) creates a `<span>` element within which a chart is rendered. As such, the user-provided container element is not polluted by the DOM elements created by a chart. </br> This property is `deprecated`. Use `getObjectReference` instead.",
                     "type": {
                         "names": [
                             "DOMElement"
@@ -38455,7 +38466,7 @@
                 },
                 "setTransparent": {
                     "id": "setTransparent",
-                    "name": "setTransparent",
+                    "name": "setTransparent (Deprecated)",
                     "kind": "function",
                     "access": "",
                     "scope": "instance",
@@ -40175,54 +40186,6 @@
                             "command": "fe -e fusioncharts_export.json"
                         }
                     }
-                }
-            }
-        }
-    },
-    "methods": {
-        "getChartFromId": {
-            "id": "getChartFromId",
-            "name": "getChartFromId",
-            "kind": "function",
-            "access": "",
-            "scope": "global",
-            "virtual": false,
-            "description": "This function gives access to the HTMLDOMElement that has been created inside the chart container by FusionCharts. Note that this does not return the container element specified during FusionCharts#render of the chart. It is rather the element inside the container element that is created by FusionCharts to hold a chart.",
-            "examples": {},
-            "params": {
-                "id": {
-                    "name": "id",
-                    "type": [
-                        "string"
-                    ],
-                    "description": "The chart Id whose internal DOM element is needed.",
-                    "defaultvalue": "",
-                    "optional": "",
-                    "nullable": "",
-                    "subparams": {}
-                }
-            }
-        },
-        "getMapFromId": {
-            "id": "getMapFromId",
-            "name": "getMapFromId",
-            "kind": "function",
-            "access": "",
-            "scope": "global",
-            "virtual": false,
-            "description": "This function gives access to the HTMLDOMElement that has been created inside the chart container by FusionCharts. Note that this does not return the container element specified during FusionCharts#render of the chart. It is rather the element inside the container element that is created by FusionCharts to hold a chart.",
-            "examples": {},
-            "params": {
-                "id": {
-                    "name": "id",
-                    "type": [
-                        "string"
-                    ],
-                    "description": "The chart Id whose internal DOM element is needed.",
-                    "defaultvalue": "",
-                    "optional": "",
-                    "nullable": "",
-                    "subparams": {}
                 }
             }
         }
