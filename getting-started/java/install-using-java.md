@@ -116,7 +116,8 @@ Therefore, assuming that you need to render the map of California, the alias nam
 
 Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
-This completes the installation of FusionMaps in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-map-11 '@@open-newtab').
+This completes the installation of FusionMaps in your application. To see how to create a map,
+* JavaScript files to apply themes in the `js > themes` folder. click [here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-map-11 '@@open-newtab').
 
 ## Themes
 
