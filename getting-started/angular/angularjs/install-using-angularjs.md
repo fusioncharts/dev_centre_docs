@@ -24,9 +24,9 @@ You can install `angularjs-fusionCharts` in your **AngularJS** project using any
 
 In order to install and start working with `angularjs-fusionCharts` you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
-* JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder
-* JavaScript files to render maps under the `js > maps` folder
-* JavaScript files to apply themes under the `js > themes` folder
+* JavaScript files to render **Charts**, **Widgets** and **PowerCharts** in the `js` folder
+* JavaScript files to render maps in the `js > maps` folder
+* JavaScript files to apply themes in the `js > themes` folder
 
 The folder structure is shown below:
 
@@ -34,7 +34,7 @@ The folder structure is shown below:
 
 > We recommend that you copy all the files/folders from the `fusioncharts-suite-xt > js` folder to your project folder.
 
-* The download package also contains **angular-fusioncharts.js** file under the `fusioncharts-suite-xt > integrations > angularjs > js` folder. The folder structure is shown below:
+* The download package also contains **angular-fusioncharts.js** file in the `fusioncharts-suite-xt > integrations > angularjs > js` folder. The folder structure is shown below:
 
 ![AngularJS Js Folder]({% site.baseurl %}/gif/angularjs-folder-structure.gif)
 

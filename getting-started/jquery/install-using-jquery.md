@@ -45,7 +45,7 @@ The folder structure is shown below:
 
 > We recommend that you copy all the files/folders from the `fusioncharts-suite-xt > js` folder to your project folder.
 
-* The download package also contains the **jquery-fusioncharts.js** file under the `fusioncharts-suite-xt > integrations > jquery` folder. The folder structure is shown below:
+* The download package also contains the **jquery-fusioncharts.js** file in the `fusioncharts-suite-xt > integrations > jquery` folder. The folder structure is shown below:
 
 ![jQuery Js Folder]({% site.baseurl %}/gif/jquery-folder-structure.gif)
 
