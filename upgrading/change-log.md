@@ -883,6 +883,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
     * `restoreBtnTitle` (deprecated)
 
-    * `setTransparent()` method is deprecated. Use `containerBackgroundOpacity()` instead.
+    * `setTransparent()` method is deprecated. Use `containerBackgroundOpacity` instead.
 
     * `ref` property is deprecated. Use `getObjectReference()` instead.
+
+    * `dataXMLInvalid` event is deprecated. Use `dataInvalid` instead.
