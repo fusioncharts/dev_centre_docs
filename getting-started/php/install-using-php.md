@@ -26,7 +26,7 @@ The folder structure is shown below:
 
 > You need to copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
-* The download package also contains `fusioncharts.php` file under the `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` folder. This also contains FusionCharts PHP native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/php '@@open-newtab')**. The folder structure is shown below:
+* The download package also contains `fusioncharts.php` file under the `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` folder and the FusionCharts PHP native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/php '@@open-newtab')**. The folder structure is shown below:
 
 ![PHP Js Folder]({% site.baseurl %}/gif/php-folder-structure.gif)
 
