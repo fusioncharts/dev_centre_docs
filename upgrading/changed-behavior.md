@@ -79,3 +79,55 @@ npm install angular-fusioncharts --save
 Since, v3.13.0 the FusionCharts Suite XT download package folder structure is updated. The downloaded package will now contain a folder named **integrations**. This folder consists all the front end and server side wrappers under respective folders with their native export handlers if applicable. The folder structure of the downloaded package is shown below:
 
 ![Folder Structure]({% site.baseurl %}/gif/upgrading-plugins.gif)
+
+## Removed attributes and methods
+
+ Following are the list of attributes which have been removed from the FusionCharts XT Suite:
+
+    * `Annrenderdelay`
+
+    * `btnTextColor`
+
+    * `btnFontSize`
+
+    * `formBtnWidth`
+
+    * `formBtnBorderColor`
+
+    * `formBtnBgColor`
+
+    * `btnPadding`
+
+    * `btnSpacing`
+
+    * `restoreBtnWidth`
+
+    * `restoreBtnBorderColor`
+
+    * `restoreBtnBgColor`
+
+    * `clickBubbles`
+
+    * The deprecated methods `getXML()` & `setDataXML()` have been removed.
+
+    * The deprecated method `setCurrentRenderer()` has been removed.
+
+    * The method `getChartFromId()` has been removed. Use `getObjectReference()` instead.
+
+    * The method `getMapFromId()` has been removed.  Use `getObjectReference()` instead.
+
+## Deprecated Attributes and methods
+
+    * `showFormBtn` (deprecated)
+
+    * `formBtnTitle` (deprecated)
+
+    * `showRestoreBtn` (deprecated)
+
+    * `restoreBtnTitle` (deprecated)
+
+    * `setTransparent()` method is deprecated. Use `containerBackgroundOpacity` instead.
+
+    * `ref` property is deprecated. Use `getObjectReference()` instead.
+
+    * `dataXMLInvalid` event is deprecated. Use `dataInvalid` instead.

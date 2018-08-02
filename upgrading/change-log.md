@@ -873,7 +873,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
     * The method `getMapFromId()` has been removed.  Use `getObjectReference()` instead.
 
-## Deprecated Attributes
+## Deprecated
 
     * `showFormBtn` (deprecated)
 
