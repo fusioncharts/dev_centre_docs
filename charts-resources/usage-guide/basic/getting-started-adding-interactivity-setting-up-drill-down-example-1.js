@@ -11,7 +11,7 @@
             "xAxisName": "Quarter (Click to drill down)",
             "yAxisName": "Revenue (In USD)",
             "numberPrefix": "$",
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "data": [{
@@ -41,7 +41,7 @@
                     "xAxisName": "Month",
                     "yAxisName": "Revenue (In USD)",
                     "numberPrefix": "$",
-                    "theme": "fint"
+                    "theme": "fusion"
                 },
                 "data": [{
                     "label": "Jan",
@@ -63,7 +63,7 @@
                     "xAxisName": "Month",
                     "yAxisName": "Revenue (In USD)",
                     "numberPrefix": "$",
-                    "theme": "fint"
+                    "theme": "fusion"
                 },
                 "data": [{
                     "label": "Apr",
@@ -85,7 +85,7 @@
                     "xAxisName": "Month",
                     "yAxisName": "Revenue (In USD)",
                     "numberPrefix": "$",
-                    "theme": "fint"
+                    "theme": "fusion"
                 },
                 "data": [{
                     "label": "Jul",
@@ -107,7 +107,7 @@
                     "xAxisName": "Month",
                     "yAxisName": "Revenue (In USD)",
                     "numberPrefix": "$",
-                    "theme": "fint"
+                    "theme": "fusion"
                 },
                 "data": [{
                     "label": "Oct",

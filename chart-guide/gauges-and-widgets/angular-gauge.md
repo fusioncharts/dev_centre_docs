@@ -119,7 +119,7 @@ Refer to the code below:
         "upperLimitDisplay": "Good",
         "showValue": "1",
         "valueBelowPivot": "1",
-        "theme": "fint"
+        "theme": "fusion"
     },
     "colorRange": {
         "color": [{
@@ -201,7 +201,7 @@ The gauge will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/qmfofgwk/ "@@open-newtab") to edit the above chart.
 
-> In the above sample, the shadow has been hidden through the use of the `fint` theme. Shadows might interfere with the border color.
+> In the above sample, the shadow has been hidden through the use of the `fusion` theme. Shadows might interfere with the border color.
 
 ## Configure border cosmetics for each color range
 
@@ -786,7 +786,7 @@ Refer to the code below:
         "valueBorderDashGap": "2",
         "valueBorderDashLen": "5",
         "gaugeFillMix": "{dark-40},{light-40},{dark-20}",
-        "theme": "fint"
+        "theme": "fusion"
     },
     "colorRange": {
         "color": [{

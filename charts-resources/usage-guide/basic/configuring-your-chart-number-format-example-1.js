@@ -19,7 +19,7 @@
             //Rouending to 2 decimal places
             "decimals": "2",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Quarter 1",

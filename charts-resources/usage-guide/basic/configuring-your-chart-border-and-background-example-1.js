@@ -17,7 +17,7 @@
             "borderThickness": "4",
             "borderAlpha": "80",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Jan",

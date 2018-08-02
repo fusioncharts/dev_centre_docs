@@ -14,7 +14,7 @@
             "numberPrefix": "$",
             "sNumberSuffix": "%",
             "sYAxisMaxValue": "50",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

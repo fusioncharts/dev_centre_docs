@@ -5,7 +5,7 @@
 #### JavaScript Alias: maps/rason
 
 Map Name: Rason
-Dimensions (Width x Height): 199x242
+Dimensions (Width x Height): 610x570
 
 
 
@@ -17,4 +17,3 @@ ID | Short label | Label
 ---|---|---|---
 KP.RJ|RJ|Rajin
 KP.SB|SB|Sonbong
-

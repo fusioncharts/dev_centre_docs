@@ -29,7 +29,7 @@
             "yAxisNameFontAlpha": "50",
             "yAxisNameBorderPadding": "10",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Q1",

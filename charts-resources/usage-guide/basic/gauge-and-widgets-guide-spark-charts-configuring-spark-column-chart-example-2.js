@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Revenue by Month",
             "subcaption": "Last year",
             "subCaptionFontSize": "11",

@@ -21,7 +21,7 @@
             "showValues": "1",
             "showTrendlineLabels": "0",
             "plotTooltext": "$name : Profit Contribution - $zvalue%",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

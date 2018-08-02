@@ -204,7 +204,7 @@
             },
             {
                 "description": "This attribute changes the theme of the chart. There are 4 types of themes which have been made according to the different color combinations.",
-                "range": "‘carbon’, ‘fint’, ‘ocean’, ‘zune’",
+                "range": "‘carbon’, ‘fusion’, ‘ocean’, ‘zune’",
                 "type": "String",
                 "name": "theme"
             }
@@ -2978,6 +2978,12 @@
         "table": "The dataset Object",
         "path": "dataset",
         "attrs": [
+            {
+                "description": "This attribute defines what the particular dataset will be plotted as. Valid values are COLUMN or LINE.",
+                "range": "COLUMN or LINE",
+                "type": "String",
+                "name": "renderAs"
+            },
             {
                 "description": "This attribute sets the alpha (transparency) of the entire dataset.",
                 "range": "0 - 100 or Comma Separated List",

@@ -11,7 +11,7 @@
             "xAxisName": "Quarter",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             //Plot border properties
             "showPlotBorder": "1",
             "plotBorderThickness": "1",

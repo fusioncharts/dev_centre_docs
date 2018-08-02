@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Bobby Fischer (vs. Spassky)",
             "subcaption": "World Chess Championship 1972",
             "showValue": "0",

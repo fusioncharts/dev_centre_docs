@@ -11,7 +11,7 @@
             "xAxisName": "Pay Grades",
             "YAxisName": "Salaries (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "showValues": "1",
             //The color of the upper quartile set to Red
             "upperQuartileColor": "ff0000",

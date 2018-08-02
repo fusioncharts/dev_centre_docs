@@ -16,7 +16,7 @@
             //Dynamic tool-tip using HTML and macro variables
             "plottooltext": "<div id='nameDiv'>$label :</div>{br}No. Of Visitors : <b>$dataValue</b> of the total <b>$sum</b> visitors{br}In Percentage : <b>$percentValue</b>",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Teenage",

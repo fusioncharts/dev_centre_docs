@@ -11,7 +11,7 @@
             "xAxisname": "Quarter",
             "yAxisName": "Amount",
             "numberPrefix": "$",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

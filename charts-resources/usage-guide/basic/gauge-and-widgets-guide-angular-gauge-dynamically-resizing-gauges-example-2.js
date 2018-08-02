@@ -23,7 +23,7 @@
             "valueFontSize": "16",
             "majorTMHeight": "10",
             "minorTMHeight": "5",
-            "theme": "fint",
+            "theme": "fusion",
             "showValue": "1"
         },
         "colorRange": {

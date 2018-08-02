@@ -18,7 +18,7 @@
             //No Sum Value
             "showSum": "0",
 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

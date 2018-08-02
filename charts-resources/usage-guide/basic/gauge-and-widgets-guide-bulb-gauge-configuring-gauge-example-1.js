@@ -23,7 +23,7 @@
             "gaugeBorderAlpha": "100",
 
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
 
 
         },

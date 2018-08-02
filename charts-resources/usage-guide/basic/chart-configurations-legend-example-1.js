@@ -12,7 +12,7 @@
             "yAxisName": "Revenue (In USD)",
             "numberPrefix": "$",
             "showLegend": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

@@ -1,68 +1,63 @@
 {
     type: 'maps/world',
     renderAt: 'chart-container',
-    width: '600',
-    height: '400',
+    width: '800',
+    height: '550',
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "caption": "Global Population Density",
-            "showBorder": "1",
-            "borderThickness": "3",
-            "theme": "fint",
-            "formatNumberScale": "0"
+            "caption": "World's Two Most Populous Continents",
+            "theme": "fusion",
+            "formatNumberScale": "0",
+            "numberSuffix": "M",
+            "useSNameInLabels": "0"
         },
         "colorrange": {
             "color": [{
                 "minvalue": "0",
-                "maxvalue": "10",
-                "code": "#A9FF8D",
-                "displayValue": "Sparse"
-            }, {
-                "minvalue": "10",
-                "maxvalue": "35",
-                "code": "#D0DFA3",
-                "displayValue": "Moderate"
-            }, {
-                "minvalue": "35",
                 "maxvalue": "100",
+                "code": "#D0DFA3",
+                "displayValue": "< 100M"
+            }, {
+                "minvalue": "100",
+                "maxvalue": "500",
+                "code": "#B0BF92",
+                "displayValue": "100-500M"
+            }, {
+                "minvalue": "500",
+                "maxvalue": "1000",
                 "code": "#91AF64",
-                "displayValue": "Dense"
+                "displayValue": "500M-1B"
+            }, {
+                "minvalue": "1000",
+                "maxvalue": "5000",
+                "code": "#A9FF8D",
+                "displayValue": "> 1B"
             }]
         },
 
         "data": [{
             "id": "NA",
-            "value": "22.1",
-            "showLabel": "1",
-            "displayValue": "Moderate"
+            "value": "515"
 
 
         }, {
             "id": "SA",
-            "value": "22.0",
-            "showLabel": "1",
-            "displayValue": "Moderate"
+            "value": "373"
         }, {
             "id": "AS",
-            "value": "95.0",
-            "showLabel": "1",
-            "displayValue": "Dense"
+            "value": "3875",
+            "showLabel": "1"
         }, {
             "id": "EU",
-            "value": "72.5",
-            "showLabel": "1",
-            "displayValue": "Dense"
+            "value": "727"
         }, {
             "id": "AF",
-            "value": "33.7",
-            "showLabel": "1",
-            "displayValue": "Moderate"
+            "value": "885",
+            "showLabel": "1"
         }, {
             "id": "AU",
-            "value": "3.2",
-            "showLabel": "1",
-            "displayValue": "Sparse"
+            "value": "32"
         }]
     }
 }

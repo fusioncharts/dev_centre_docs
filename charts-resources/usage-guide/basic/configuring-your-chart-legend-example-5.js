@@ -11,7 +11,7 @@
             "xAxisname": "Quarter",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             //Hiding the legend
             "showLegend": "0"
         },

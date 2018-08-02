@@ -10,7 +10,7 @@
             "subCaption": "Last year",
             "xAxisName": "Quarter",
             "yAxisName": "Amount (In USD)",
-            "theme": "fint",
+            "theme": "fusion",
             "numberPrefix": "$",
             //Removing default gradient fill from columns
             "usePlotGradientColor": "1"

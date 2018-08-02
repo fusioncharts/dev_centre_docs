@@ -224,21 +224,21 @@
 		"xls": true
 	},
 	{
-		"name": "Multi-series 2D Dual Y Combination Chart (Column + Line + Area)",
+		"name": "Multi-series 2D Dual Y Combination Chart (Column + Line + Area + Spline)",
 		"json": "Combi2DDY",
 		"code": "xt-attr-mscombidy2d.js",
 		"alias": "mscombidy2d",
 		"xls": true
 	},
 	{
-		"name": "Multi-series 2D Single Y Combination Chart (Column + Line + Area)",
+		"name": "Multi-series 2D Single Y Combination Chart (Column + Line + Area + Spline)",
 		"json": "Combi2D",
 		"code": "xt-attr-mscombi2d.js",
 		"alias": "mscombi2d",
 		"xls": true
 	},
 	{
-		"name": "Multi-series 3D Single Y Combination Chart (Column + Line + Area)",
+		"name": "Multi-series 3D Single Y Combination Chart (Column + Line + Area + Spline)",
 		"json": "Combi3D",
 		"code": "xt-attr-combi3d.js",
 		"alias": "mscombi3d",
@@ -326,6 +326,20 @@
 		"json": "MSStColLineDY",
 		"code": "xt-attr-msstackedcolumn2dlinedy.js",
 		"alias": "msstackedcolumn2dlinedy",
+		"xls": false
+	},
+	{
+		"name": "Overlapped Column 2D",
+		"json": "OverlappedColumn2d",
+		"code": "xt-attr-overlappedcolumn2d.js",
+		"alias": "overlappedcolumn2d",
+		"xls": false
+	},
+	{
+		"name": "Overlapped Bar 2D",
+		"json": "OverlappedBar2d",
+		"code": "xt-attr-overlappedbar2d.js",
+		"alias": "overlappedbar2d",
 		"xls": false
 	},
 	{

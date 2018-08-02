@@ -19,7 +19,7 @@
             //Gauge fill color
             "gaugeFillColor": "#444444",
 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

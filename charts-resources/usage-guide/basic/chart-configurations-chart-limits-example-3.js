@@ -17,7 +17,7 @@
             "pYAxisMaxValue": "25000",
             "sYAxisMinValue": "1400",
             "sYAxisMaxValue": "1700",
-            "theme": "fint",
+            "theme": "fusion",
             "showValues": "0"
         },
         "categories": [{

@@ -14,7 +14,7 @@
             "showLegend": "1",
             "legendPosition": "right",
             "legendAllowDrag": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

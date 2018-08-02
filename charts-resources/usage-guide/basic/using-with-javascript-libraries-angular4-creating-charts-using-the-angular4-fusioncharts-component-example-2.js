@@ -11,7 +11,7 @@
             "xaxisname": "Month",
             "yaxisname": "Amount (In USD)",
             "numberprefix": "$",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

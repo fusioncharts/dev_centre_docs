@@ -19,7 +19,7 @@ ID | Short label | Label
 02|ANT|Antioquia
 03|ARA|Arauca
 04|ATL|Atlántico
-34|DC|Bogotá (Distrito Capital)
+34|DC|Bogotá
 35|BOL|Bolívar
 36|BOY|Boyacá
 37|CAL|Caldas
@@ -28,8 +28,8 @@ ID | Short label | Label
 09|CAU|Cauca
 10|CES|Cesar
 11|CHO|Chocó
-33|CUN|Cundinamarca
 12|COR|Córdoba
+33|CUN|Cundinamarca
 15|GUA|Guainía
 14|GUV|Guaviare
 16|HUI|Huila
@@ -41,11 +41,10 @@ ID | Short label | Label
 22|PUT|Putumayo
 23|QUI|Quindío
 24|RIS|Risaralda
-25|SAP|San Andrés and Providencia
+25|SAP|San Andrés, Providencia and Santa Catalina
 26|SAN|Santander
 27|SUC|Sucre
 28|TOL|Tolima
 29|VAC|Valle del Cauca
 30|VAU|Vaupés
 31|CID|Vichada
-

@@ -5,7 +5,7 @@
 #### JavaScript Alias: maps/ulsan
 
 Map Name: Ulsan
-Dimensions (Width x Height): 308x298
+Dimensions (Width x Height): 610x570
 
 
 
@@ -15,9 +15,8 @@ Dimensions (Width x Height): 308x298
 
 ID | Short label | Label
 ---|---|---|---
-01|BK|Buk-gu
-02|DG|Dong-gu
-03|JU|Jung-gu
-04|NM|Nam-gu
-05|UL|Ulju-gun
-
+01|BK|Buk
+02|DG|Dong
+03|JU|Jung
+04|NM|Nam
+05|UL|Ulju

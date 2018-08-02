@@ -14,7 +14,7 @@
             "showBorder": "1",
             "showTooltip": "0",
             "formatNumberScale": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "annotations": {
             "groups": [{

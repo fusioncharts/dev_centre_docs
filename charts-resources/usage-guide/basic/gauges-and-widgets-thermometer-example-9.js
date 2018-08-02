@@ -15,7 +15,7 @@
             "showhovereffect": "1",
             "gaugeFillColor": "#008ee4",
             "thmOriginX": "100",
-            "theme": "fint",
+            "theme": "fusion",
             "chartBottomMargin": "20",
             "majorTMNumber": "6",
             "majorTMHeight": "12",

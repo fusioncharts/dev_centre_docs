@@ -13,7 +13,7 @@
             "anchorRadius": "5",
             "showValues": "0",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Mon",

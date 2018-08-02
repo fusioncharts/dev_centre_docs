@@ -18,7 +18,7 @@
             "exportEnabled": "1",
             //Enabling server-side export
             "exportMode": "server",
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "data": [{

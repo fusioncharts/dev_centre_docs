@@ -10,7 +10,7 @@
             "subcaption": "Average shipping volume (last quarter)",
             "captionFontSize": "14",
             "subCaptionFontSize": "14",
-            "theme": "fint",
+            "theme": "fusion",
             "showLabels": "1",
             "showMarkerLabels": "0",
             "connectorColor": "#90e501",

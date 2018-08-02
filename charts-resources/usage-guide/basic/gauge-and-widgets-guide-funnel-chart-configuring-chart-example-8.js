@@ -25,7 +25,7 @@
             "plotBorderHoverAlpha": "60",
             "plotBorderHoverThickness": "2",
 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Unique Website Visits",

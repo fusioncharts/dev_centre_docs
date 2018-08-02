@@ -5,7 +5,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Server CPU Utilization",
             "subcaptionFontBold": "0",
             "lowerLimit": "0",

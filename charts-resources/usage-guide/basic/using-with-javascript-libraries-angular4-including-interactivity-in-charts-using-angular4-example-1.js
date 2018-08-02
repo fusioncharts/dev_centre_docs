@@ -8,7 +8,7 @@
         "chart": {
             "caption": "Store Categories",
             "subCaption": "Harry's SuperMart",
-            "theme": "fint",
+            "theme": "fusion",
             "showValues": "0"
         },
         "data": [{
@@ -34,7 +34,7 @@
                             "chart": {
                                 "caption": "Store Categories",
                                 "subCaption": "Harry's SuperMart",
-                                "theme": "fint"
+                                "theme": "fusion"
                             },
                             "data": [{
                                 "label": "Bakersfield Central",
@@ -68,7 +68,7 @@
                             "chart": {
                                 "caption": "Store Categories",
                                 "subCaption": "Harry's SuperMart",
-                                "theme": "fint"
+                                "theme": "fusion"
                             },
                             "data": [{
                                 "label": "Garden Groove Harbour",
@@ -90,7 +90,7 @@
                             "chart": {
                                 "caption": "Store Categories",
                                 "subCaption": "Harry's SuperMart",
-                                "theme": "fint"
+                                "theme": "fusion"
                             },
                             "data": [{
                                 "label": "Bakersfield Central",
@@ -123,7 +123,7 @@
                                 "chart": {
                                     "caption": "Store Categories",
                                         "subCaption": "Harry's SuperMart",
-                                        "theme": "fint"
+                                        "theme": "fusion"
                                 },
                                     "data": [{
                                     "label": "Bakersfield Central",
@@ -148,7 +148,7 @@
                                 "chart": {
                                     "caption": "Store Categories",
                                         "subCaption": "Harry's SuperMart",
-                                        "theme": "fint"
+                                        "theme": "fusion"
                                 },
                                     "data": [{
                                     "label": "Bakersfield Central",

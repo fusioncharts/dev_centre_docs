@@ -32,14 +32,15 @@ ID | Short label | Label
 180|NO|Nome
 185|NS|North Slope
 188|NA|Northwest Arctic
-164|PL|Peninsula And Lake
-201|PW|Prince Of Wales-Outer Ketchika
+164|PL|Peninsula and Lake
 220|SI|Sitka
-232|SH|Skagway-Hoonah-Angoon
 240|SF|Southeast Fairbanks
 261|VC|Valdez-Cordova
-270|WH|Wade Hampton
-280|WP|Wrangell-Petersburg
 282|YA|Yakutat
 290|YK|Yukon-Koyukuk
-
+158|KU|Kusilvak
+195|PE|Petersburg
+105|HO|Hoonah-Angoon
+198|PH|Prince of Wales-Hyder
+230|SK|Skagway
+275|WR|Wrangell

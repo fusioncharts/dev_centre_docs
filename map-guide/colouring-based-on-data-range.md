@@ -4,6 +4,8 @@ description: A gradient scale allows you to specify colors associated with speci
 heading: Coloring Based on Data Range
 ---
 
+> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/) while upgrading to __v3.13.0__.
+
 You have to use color ranges to define entity colors based on values, in order to set up a [simple data driven map]({% site.baseurl %}/map-guide/simple-data-driven-maps '@@open-newtab'). Since the process of defining colors for individual data buckets is not scalable, you need to group data values under defined data range buckets. 
 
 Note that you need to denote entities within these buckets with the same color. Also, you need to define colors for each data range. This can become tedious if you have to deal with a large number of buckets. In that case, you can use a gradient scale to simplify this process.
@@ -14,7 +16,7 @@ Using a gradient scale, you can specify colors associated with specific data poi
 
 Here's how you can build a map with a gradient scale:
 
-* Set the `caption` of the map and apply the `fint` theme (FusionCharts Internal Theme) to control the cosmetic properties of the map. Use the `formatNumberScale` and `showLabels` attributes to specify the formatting of labels.
+* Set the `caption` of the map and apply the `fusion` theme (FusionCharts Internal Theme) to control the cosmetic properties of the map. Use the `formatNumberScale` and `showLabels` attributes to specify the formatting of labels.
 
 * Use the `colorrange` object to define different numeric ranges of the gradient legend. Also, use the following attributes to define specific properties:
 
@@ -36,7 +38,7 @@ Refer to the code given below:
 {
     "chart": {
         "caption": "Global Population Density",
-        "theme": "fint",
+        "theme": "fusion",
         "showLabels": "1",
         "formatNumberScale": "0"
     },

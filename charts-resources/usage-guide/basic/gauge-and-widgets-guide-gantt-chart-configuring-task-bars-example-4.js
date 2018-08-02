@@ -8,7 +8,7 @@
         "chart": {
             "dateformat": "mm/dd/yyyy",
             "caption": "Social Media Optimization",
-            "theme": "fint",
+            "theme": "fusion",
             "canvasBorderAlpha": "40"
         },
         "datatable": {

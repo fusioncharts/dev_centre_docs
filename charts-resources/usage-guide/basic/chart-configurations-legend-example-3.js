@@ -13,7 +13,7 @@
             "numberPrefix": "$",
             "showLegend": "1",
             "plotHighlightEffect": "fadeout",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

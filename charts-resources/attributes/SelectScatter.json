@@ -201,7 +201,7 @@
             },
             {
                 "description": "This attribute changes the theme of the chart. There are 4 types of themes which have been made according to the different color combinations.",
-                "range": "‘carbon’, ‘fint’, ‘ocean’, ‘zune’",
+                "range": "‘carbon’, ‘fusion’, ‘ocean’, ‘zune’",
                 "type": "String",
                 "name": "theme"
             }
@@ -683,34 +683,16 @@
                 "name": "formMethod"
             },
             {
-                "description": "If you do not want to use the form method (and instead use the JavaScript method), you can hide this button by setting this attribute to 0.",
+                "description": "If you want the user to be able to submit the data as form, you need to set this attribute to 1. If you are using JavaScript methods to get the data from chart, you can hide this option by setting this attribute to 0.",
                 "range": "0/1",
                 "type": "Boolean",
-                "name": "showFormBtn"
+                "name": "enableSubmit"
             },
             {
-                "description": "Lets you configure the width of the submit button.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "formBtnWidth"
-            },
-            {
-                "description": "Lets you configure the text for the submit button. By default, it's &quot;Submit&quot;",
+                "description": "Lets you configure the text for the submit option. By default, it is &quot;Submit&quot;.",
                 "range": " ",
                 "type": "String",
-                "name": "formBtnTitle"
-            },
-            {
-                "description": "Border color for the submit button",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "formBtnBorderColor"
-            },
-            {
-                "description": "Background color for the submit button.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "formBtnBgColor"
+                "name": "submitText"
             },
             {
                 "description": "When the __Submit__ button in drag-able charts is clicked, instead of setting a new URL or a new tab for data values, this attribute (when set to `1`) updates the data in the existing page internally. \n\n __Note__: If `submitFormUsingAjax` is set to `1`, the `formTarget` attribute will not work.",
@@ -719,29 +701,16 @@
                 "name": "submitFormUsingAjax"
             },
             {
-                "description": "Padding for the button.",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "btnPadding"
-            },
-            {
-                "description": "Color of the button text.",
-                "range": "Hex Color Code",
-                "type": "Color",
-                "name": "btnTextColor"
-            },
-            {
-                "description": "Sets the button font size in pixels",
-                "range": "In Pixels",
-                "type": "Number",
-                "name": "btnFontSize"
-            },
-            {
-                "description": "Spacing between buttons. This attribute is applicable only for JavaScript charts.",
+                "description": "Whether to add the restore option in the menu.",
                 "range": "0/1",
                 "type": "Boolean",
-                "versionsince": "3.2.1",
-                "name": "btnSpacing"
+                "name": "enableRestore"
+            },
+            {
+                "description": "Lets you configure the text for the restore option. By default, it's &quot;Restore&quot;",
+                "range": " ",
+                "type": "String",
+                "name": "restoreText"
             }
         ],
         "description": "From the select scatter chart, you can return the selected data as form data or to JavaScript functions. If you intend to return data as form data, you can use the following elements to configure the form. "

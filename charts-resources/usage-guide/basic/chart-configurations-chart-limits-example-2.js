@@ -12,7 +12,7 @@
             "xAxisName": "Quarter",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             //Setting adaptive y-axis min
             "setAdaptiveYMin": "1"
         },

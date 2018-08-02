@@ -9,7 +9,7 @@
             "dateformat": "mm/dd/yyyy",
             "caption": "Social Media Optimization",
             "captionFontSize": "16",
-            "theme": "fint",
+            "theme": "fusion",
             "canvasBorderAlpha": "40"
         },
         "datatable": {

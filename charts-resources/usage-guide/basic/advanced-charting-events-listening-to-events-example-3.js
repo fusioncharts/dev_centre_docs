@@ -12,7 +12,7 @@
             "yAxisName": "Revenues (In USD)",
             "numberPrefix": "$",
             "exportEnabled": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "data": [{

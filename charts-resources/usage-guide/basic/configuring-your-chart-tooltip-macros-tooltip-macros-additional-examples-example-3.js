@@ -11,7 +11,7 @@
             "xAxisName": "Pay Grades",
             "yAxisName": "Salaries (In USD)", 
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "showValues": "0",
             "plotToolText": "$seriesName Teachers-$label  <br> <br> Max value: $maxDataValue <br> Min value: $minDataValue <br> <br> Q3: $Q3 <br> Median: $median <br> Q1: $Q1 <br> <br> Mean: $mean <br> <br> Standard deviation: $SD <br> Quartile Deviation: $QD <br> Mean Deviation: $MD",
             "plotSpacePercent": "50"

@@ -10,7 +10,7 @@
             "subcaption": "Actual vs Expected",
             "lowerLimit": "0",
             "upperLimit": "100",
-            "theme": "fint",
+            "theme": "fusion",
             "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
             "gaugeFillRatio": "15",
             "chartBottomMargin": "25",

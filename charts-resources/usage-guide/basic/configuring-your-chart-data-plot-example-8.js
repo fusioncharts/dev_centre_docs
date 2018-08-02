@@ -11,7 +11,7 @@
             "xAxisName": "Quarter",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             //Applying round edges and glass fill effect for data plots
             "useRoundEdges": "1"
         },

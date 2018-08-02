@@ -5,7 +5,7 @@
 #### JavaScript Alias: maps/tajikistan
 
 Map Name: Tajikistan
-Dimensions (Width x Height): 320x240
+Dimensions (Width x Height): 610x570
 
 
 
@@ -15,8 +15,7 @@ Dimensions (Width x Height): 320x240
 
 ID | Short label | Label
 ---|---|---|---
-TJ.BK|BK|Badakhshoni Kuni
+TJ.BK|BK|Gorno-Badakhshan
 TJ.KL|KL|Khatlon
-TJ.RR|RR|Regions of Republican Subordination
-TJ.LE|LE|Sogd
-
+TJ.RR|RR|Region of Republican Subordination
+TJ.LE|LE|Sughd

@@ -95,7 +95,7 @@
             },
             {
                 "description": "This attribute changes the theme of the chart. There are 4 types of themes which have been made according to the different color combinations.",
-                "range": "‘carbon’, ‘fint’, ‘ocean’, ‘zune’",
+                "range": "‘carbon’, ‘fusion’, ‘ocean’, ‘zune’",
                 "type": "String",
                 "name": "theme"
             }
@@ -971,6 +971,13 @@
                 "name": "pieRadius"
             },
             {
+                "description": "This attribute lets you explicitly set the inner radius of the chart. This attribute is useful if you want to enforce one of your own values.",
+                "range": "In Pixels",
+                "type": "Number",
+                "versionsince": "3.13.0",
+                "name": "innerRadius"
+            },
+            {
                 "description": "Set the border color of the pie. By default, it is set to 'FFFFFF'.",
                 "range": " ",
                 "type": "Hex code",
@@ -1298,7 +1305,27 @@
                 "name": "hoverFillColor"
             }
         ],
-        "description": "If you wish to show an effect on the data plot (column, line anchor, pie etc.) when the user hovers his mouse over the data plot, these attributes let you configure the cosmetics of the hover for all data plots in the chart."
+        "description": "If you wish to show an effect on the data plot when the user hovers his mouse over the data plot, these attributes let you configure the cosmetics of the hover for all data plots in the chart."
+    },
+    {
+        "table": "Highlight Effect",
+        "attrs": [
+            {
+                "description": "This attribute sets the direction of highlighting plots when hovered. The default value of this attribute is `1`, by which the plots are highlighted from the current node to its parent node. When this attribute is set to `0`, all the leaf node will be highlighted from the current hovered node.",
+                "range": "0/1",
+                "type": "Boolean",
+                "Versionsince": "3.13.0",
+                "name": "highlightParentPieSlices"
+            },
+            {
+                "description": "This attribute sets the direction of highlighting plots when hovered. The default value of this attribute is `0`, by which the plots are highlighted from the current node to its leaf node. When this attribute is set to `1`, the direction of the highlight gets reversed, i.e., all the leaf node will be highlighted from the current hovered node.",
+                "range": "0/1",
+                "type": "Boolean",
+                "Versionsince": "3.13.0",
+                "name": "highlightChildPieSlices"
+            }
+        ],
+        "description": "If you wish to show a hightlight effect on the nodes (from parent node to child node and vice versa) when the user hovers his mouse over the parent node, these attributes lets you highlight the hovered node and all its children till the leaves."
     },
     {
         "table": "Chart Padding & Margins",

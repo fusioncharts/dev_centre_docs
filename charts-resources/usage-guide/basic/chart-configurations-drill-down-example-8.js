@@ -11,7 +11,7 @@
             "xaxisname": "Flavor",
             "yaxisname": "Amount (In USD)",
             "numberprefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "rotateValues": "0"
         },
         "data": [{
@@ -34,7 +34,7 @@
                     "caption": "Apple Juice - Quarterly Sales",
                     "subcaption": "Last year",
                     "numberprefix": "$",
-                    "theme": "fint",
+                    "theme": "fusion",
                     "rotateValues": "0",
                     "plottooltext": "$label, $dataValue,  $percentValue"
                 },
@@ -59,7 +59,7 @@
                     "caption": "Cranberry Juice - Quarterly Sales",
                     "subcaption": "Last year",
                     "numberprefix": "$",
-                    "theme": "fint",
+                    "theme": "fusion",
                     "plottooltext": "$label, $dataValue,  $percentValue"
                 },
                 "data": [{
@@ -83,7 +83,7 @@
                     "caption": "Grapes Juice - Quarterly Sales",
                     "subcaption": "Last year",
                     "numberprefix": "$",
-                    "theme": "fint",
+                    "theme": "fusion",
                     "rotateValues": "0",
                     "plottooltext": "$label, $dataValue,  $percentValue"
                 },

@@ -13,7 +13,7 @@
             "connectordashed": "1",
             //Specifying the name of the column
             "sumlabel": "Total {br} Profit",
-            "theme": "fint",
+            "theme": "fusion",
             "positiveColor": "#1aaf5d",
             "negativeColor": "#c02d00",
             //Not show sum at the end

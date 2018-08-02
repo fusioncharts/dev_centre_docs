@@ -17,7 +17,7 @@
             "anchorRadius": "6",
             "anchorBorderThickness": "2",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
 
         },
         "data": [{

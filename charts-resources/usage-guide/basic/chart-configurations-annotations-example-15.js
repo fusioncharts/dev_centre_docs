@@ -13,7 +13,7 @@
             "yAxisName": "No. of visitors",
             "yAxisNamePadding": "100",
             "showYAxisValues": "0",
-            "theme": "fint",
+            "theme": "fusion",
             "showValues": "0",
             "showTooltip": "0"
         },

@@ -1,8 +1,8 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '500',
-    height: '300',
+    width: '700',
+    height: '400',
     id: "rev-fc-chart",
     dataFormat: 'json',
     dataSource: {
@@ -11,6 +11,7 @@
             "subCaption": "Harry's SuperMart",
             "xAxisName": "Month",
             "yAxisName": "Revenue",
+            "theme": "fusion"
         },
         "data": [{
             "label": "Jan",
@@ -55,11 +56,14 @@
             // creating div for theme controllers
             var scriptElem, controllers = document.createElement('div'),
                 themeCollection = {
-                'zune': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.zune.js',
-                'ocean': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.ocean.js',
-                'carbon': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.carbon.js'
-            };
-            for(var theme in themeCollection) {
+                    'fusion': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.fusion.js',
+                    'gammel': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.gammel.js',
+                    'candy': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.candy.js',
+                    'zune': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.zune.js',
+                    'ocean': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.ocean.js',
+                    'carbon': 'https://static.fusioncharts.com/code/latest/themes/fusioncharts.theme.carbon.js'
+                };
+            for (var theme in themeCollection) {
                 scriptElem = document.createElement('script');
                 scriptElem.setAttribute('type', 'text/javascript');
                 scriptElem.setAttribute('src', themeCollection[theme]);
@@ -68,11 +72,11 @@
 
             }
             // form radio buttons inside div
-            controllers.innerHTML = '<label><input type="radio" name="theme-options" id="fint-chckbx" value="zune"> Zune</label><label><input type="radio" name="theme-options" value="ocean"> Ocean</label><label><input type="radio" name="theme-options" value="carbon"> Carbon</label><label><input type="button" value="Apply Theme" id="set-theme"></label>';
+            controllers.innerHTML = '<label><input type="radio" name="theme-options" value="fusion"> Fusion</label><label><input type="radio" name="theme-options" value="gammel"> Gammel</label><label><input type="radio" name="theme-options" value="candy"> Candy</label><label><input type="radio" name="theme-options" id="fusion-chckbx" value="zune"> Zune</label><label><input type="radio" name="theme-options" value="ocean"> Ocean</label><label><input type="radio" name="theme-options" value="carbon"> Carbon</label><label><input type="button" value="Apply Theme" id="set-theme"></label>';
             controllers.setAttribute('id', 'controllers');
 
             // setting css styles for controllers div
-            controllers.style.cssText = "font-family:'Helvetica Neue', Arial; font-size:14px; margin-left:90px;";
+            controllers.style.cssText = "font-family:'Helvetica Neue', Arial; font-size:14px; margin-left:40px;";
 
             // setting css styles for labels inside controllers div
             var labels = controllers.getElementsByTagName('label');
@@ -98,7 +102,7 @@
                     }
                 }
             }
-            
+
         }
     }
 }

@@ -14,7 +14,7 @@
             "valueBelowPivot": "1",
             "tickValueStep": "2",
             "gaugeFillMix": "{dark-40},{light-40},{dark-20}",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

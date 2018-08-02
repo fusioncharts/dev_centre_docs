@@ -13,7 +13,7 @@
             "numberSuffix": "%",
             "showTickMarks": "1",
             "showTickValues": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorrange": {
             "color": [{

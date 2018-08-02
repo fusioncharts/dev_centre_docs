@@ -13,7 +13,7 @@
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
             "numDivLines": "2",
-            "theme": "fint",
+            "theme": "fusion",
             //Hiding all data values to show value of a specific data plot
             "showValues": "0"
         },

@@ -4,13 +4,15 @@ description: If you need to extend this further, you can tap into the JavaScript
 heading: Listening to Map Events
 ---
 
+> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/) while upgrading to __v3.13.0__.
+
 You can use FusionCharts Suite XT to configure standard interactivity for items like markers, tooltips and legend, through the map attributes itself. However, if you need to extend this further, you can tap into the JavaScript events raised by each map, and then build your custom behavior over it. You can listen to events related to `entities `, `markers`, and `connectors`, which are specific to maps. You can also use these events to  tightly integrate maps with your own applications and add interactivity to your visualizations.
 
 ## Listen to entity events
 
 Entities in FusionCharts Suite XT can raise 3 events - `entityRollOver`, `entityRollOut`, and `entityClicked`. Here's how you can use them:
 
-* Create a World Population map, just like you did earlier in the <Simple Data Driven Maps> section, and set its theme to `fint`.
+* Create a World Population map, just like you did earlier in the <Simple Data Driven Maps> section, and set its theme to `fusion`.
 
 * Define event listeners in an `events` object as part of the `FusionCharts()` constructor to listen to 3 events. This is the quickest way to define event listeners for a map. Alternatively, you can use the `addEventListener()` method on specific map instances, or on all maps globally, to listen to events.
 
@@ -34,7 +36,7 @@ Refer to the data structure given below:
 {
     "chart": {
         "caption": "Global Population",
-        "theme": "fint",
+        "theme": "fusion",
         "formatNumberScale": "0",
         "numberSuffix": "M",
         "showLabels": "1",
@@ -99,7 +101,7 @@ Click [here](http://jsfiddle.net/fusioncharts/twp9sypv/ "@@open-newtab") to edit
 
 You can use markers and connectors to raise events on mouse interactions, such as roll over, roll out and click, just like entities. Build the following map to try them out:
 
-* Create an Airport Traffic map and set its theme to `fint`.
+* Create an Airport Traffic map and set its theme to `fusion`.
 
 * Define event listeners in an `events` object as part of the `FusionCharts()` constructor to listen to 3 events each for connectors and markers. Alternatively, you can use the `addEventListener()` method on specific map instances.
 
@@ -124,7 +126,7 @@ Refer to the data structure given below:
     "chart": {
         "caption": "Busiest Routes from Heathrow Airport",
         "subcaption": "For the year 2014",
-        "theme": "fint",
+        "theme": "fusion",
         "markerBgColor": "#FF0000",
         "markerRadius": "10",
         "connectorColor": "#0CB2B0",

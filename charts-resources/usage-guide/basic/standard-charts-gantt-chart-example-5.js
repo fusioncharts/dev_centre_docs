@@ -10,7 +10,7 @@
             "caption": "Social Media Optimization",
             "subcaption": "Typical Steps Involved",
             "showTaskLabels": "1",
-            "theme": "fint",
+            "theme": "fusion",
             "canvasBorderAlpha": "40"
         },
         "categories": [{

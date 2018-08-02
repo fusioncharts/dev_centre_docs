@@ -17,7 +17,7 @@
             "gaugeFillRatio": "15",
             "valueBelowPivot": "1",
             "useMessageLog": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{
