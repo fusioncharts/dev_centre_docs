@@ -29,6 +29,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * `fusioncharts.vml.js` file has been added to the package for VML browsers which contains all the VML related codes. This file is used only when the chart will be rendered in the VML browers(IE8 and older).
 
+* In `resized` event the `id` of the chart is added under the `dataObject`.
+
 ## Improvements
 
 * `Angular-FusionCharts` plugin has been renamed to `AngularJS-Fusioncharts`.
@@ -861,9 +863,15 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
     * `restoreBtnBgColor`
 
+    * `clickBubbles`
+
     * The deprecated methods `getXML()` & `setDataXML()` have been removed.
 
-    * The deprecated method `setCurrentRenderer` has been removed.
+    * The deprecated method `setCurrentRenderer()` has been removed.
+
+    * The method `getChartFromId()` has been removed. Use `getObjectReference()` instead.
+
+    * The method `getMapFromId()` has been removed.  Use `getObjectReference()` instead.
 
 ## Deprecated Attributes
 
@@ -875,3 +883,6 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
     * `restoreBtnTitle` (deprecated)
 
+    * `setTransparent()` method is deprecated. Use `containerBackgroundOpacity()` instead.
+
+    * `ref` property is deprecated. Use `getObjectReference()` instead.

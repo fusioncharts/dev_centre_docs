@@ -11,7 +11,6 @@ FusionCharts Suite XT supports 3 ways of getting references to the chart object 
 
 * Using the FusionCharts constructor
 * Using the items object
-* Using the getChartFromId function
 
 This reference comes in handy if you want to perform operations on the chart like change its properties or chart type once the chart is rendered.
 
@@ -79,37 +78,3 @@ FusionCharts.ready(function() {
 </body>
 </html>
 ```
-
-## Using the getChartFromId Function
-
-The `getChartFromId` function returns an object reference to the `id` of the chart passed to it.
-
-The following code snippet shows how to get a reference of the chart using this method
-
-
-```html
-<html>
-<head>
-<script>
-FusionCharts.ready(function() {
-    var revenueChart = new FusionCharts({
-        id: 'revenue-chart',
-        type: 'column2d',
-        renderAt: 'chart-container',
-        dataFormat: 'json'
-        dataSource: {
-              // Chart data goes here
-        }
-        });
-    revenueChart.render();
-    revenueChart = getChartFromId('revenue-chart');
-});
-</script>
-</head>
-<body>
-<div id="chart-container">FusionCharts will render here</div>
-</body>
-</html>
-```
-
-Here the `revenueChart` variable contains a reference to the chart object.
