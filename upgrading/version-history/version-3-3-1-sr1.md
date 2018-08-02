@@ -5,8 +5,60 @@ heading: Version 3.3.1 SR1
 breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-## New Features
+#### 18th April, 2013
 
-## Improvements
+## FusionCharts XT
 
-## Fixes
+### New Features
+
+* Ability to convert HTML Table to chart using jQuery plugin.
+
+### Improvements
+
+* Optimized rendering of line charts.
+
+### Fixes
+
+* Hot-fix in VML Rendering Library.
+
+* Trendline labels for Secondary Y-Axis are now positioned correctly.
+
+## FusionWidgets XT
+
+### New Features
+
+* Added two new events taskClicked and connectorClicked for JavaScript Gantt chart.
+
+### Improvements
+
+* Optimized rendering of line charts.
+
+### Fixes
+
+* Hot-fix in VML Rendering Library.
+
+* Trendline labels for Secondary Y-Axis are now positioned correctly.
+
+## PowerCharts XT
+
+### New Features
+
+* Ability to convert HTML Table to chart using jQuery plugin.
+
+### Improvements
+
+* Optimized rendering of line charts.
+
+### Fixes
+
+* Hot-fix in VML Rendering Library.
+
+* Trendline labels for Secondary Y-Axis are now positioned correctly.
+
+* Trendzones are now correctly drawn in inverse charts.
+
+## FusionMaps XT
+
+### Fixes
+
+* Hot-fix in VML Rendering Library.
