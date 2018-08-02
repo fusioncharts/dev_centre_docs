@@ -5,8 +5,18 @@ heading: Version 3.10.1
 breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
+#### 21st January, 2016
+
 ## New Features
+
+* The attribute `showChildLabels` has been introduced to control the visibility of the node labels in a treemap chart. 
+
+* By default, the labels are hidden.
 
 ## Improvements
 
+* 'Squarified' is now the default tiling algorithm for the treemap chart. (Therefore, by default, `algorithm=squarified`).
+
 ## Fixes
+
+* For pie and doughnut charts that have one data value close to 100% of the total of all values, distorted rendering of the chart when smart lines are dragged has been fixed.

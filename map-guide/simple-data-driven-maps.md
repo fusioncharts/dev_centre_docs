@@ -20,58 +20,7 @@ There are 4 simple steps to building a map using FusionCharts Suite XT, as detai
 
 FusionCharts Suite XT accepts both JSON and XML data formats and can read them as strings from a local or remote file. Refer to the code given below for the JSON/XML representation of the data you need, to build the map shown above.
 
-```json
-{
-    "chart": {
-        "caption": "Global Population",
-        "theme": "fusion",
-        "formatNumberScale": "0",
-        "numberSuffix": "M"
-    },
-    "colorrange": {
-        "color": [{
-            "minvalue": "0",
-            "maxvalue": "100",
-            "code": "#D0DFA3",
-            "displayValue": "< 100M"
-        }, {
-            "minvalue": "100",
-            "maxvalue": "500",
-            "code": "#B0BF92",
-            "displayValue": "100-500M"
-        }, {
-            "minvalue": "500",
-            "maxvalue": "1000",
-            "code": "#91AF64",
-            "displayValue": "500M-1B"
-        }, {
-            "minvalue": "1000",
-            "maxvalue": "5000",
-            "code": "#A9FF8D",
-            "displayValue": "> 1B"
-        }]
-    },
-    "data": [{
-        "id": "NA",
-        "value": "515"
-    }, {
-        "id": "SA",
-        "value": "373"
-    }, {
-        "id": "AS",
-        "value": "3875"
-    }, {
-        "id": "EU",
-        "value": "727"
-    }, {
-        "id": "AF",
-        "value": "885"
-    }, {
-        "id": "AU",
-        "value": "32"
-    }]
-}
-```
+{% embed_data map-guide-simple-data-driven-maps-example-1.js %}
 
 ### Include FusionCharts Suite XT library in your page
 
@@ -121,57 +70,67 @@ In the final step, you have to create an instance of the map, initialize it with
 
 Refer to the code below:
 
-```json
-{
-    "chart": {
-        "caption": "Global Population",
-        "theme": "fusion",
-        "formatNumberScale": "0",
-        "numberSuffix": "M"
-    },
-    "colorrange": {
-        "color": [{
-            "minvalue": "0",
-            "maxvalue": "100",
-            "code": "#E0F0E0",
-            "displayValue": "Below 100M"
-        }, {
-            "minvalue": "100",
-            "maxvalue": "500",
-            "code": "#D0DFA3",
-            "displayValue": "100-500M"
-        }, {
-            "minvalue": "500",
-            "maxvalue": "1000",
-            "code": "#B0BF92",
-            "displayValue": "500-1000M"
-        }, {
-            "minvalue": "1000",
-            "maxvalue": "5000",
-            "code": "#91AF64",
-            "displayValue": "Above 1B"
-        }]
-    },
-    "data": [{
-        "id": "NA",
-        "value": "515"
-    }, {
-        "id": "SA",
-        "value": "373"
-    }, {
-        "id": "AS",
-        "value": "3875"
-    }, {
-        "id": "EU",
-        "value": "727"
-    }, {
-        "id": "AF",
-        "value": "885"
-    }, {
-        "id": "AU",
-        "value": "32"
-    }]
-}
+```javascript
+FusionCharts.ready(function() {
+    var populationMap = new FusionCharts({
+        type: 'maps/world',
+        renderAt: 'chart-container',
+        width: '800',
+        height: '550',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "caption": "Global Population",
+                "theme": "fusion",
+                "formatNumberScale": "0",
+                "numberSuffix": "M"
+            },
+            "colorrange": {
+                "color": [{
+                    "minvalue": "0",
+                    "maxvalue": "100",
+                    "code": "#D0DFA3",
+                    "displayValue": "< 100M"
+                }, {
+                    "minvalue": "100",
+                    "maxvalue": "500",
+                    "code": "#B0BF92",
+                    "displayValue": "100-500M"
+                }, {
+                    "minvalue": "500",
+                    "maxvalue": "1000",
+                    "code": "#91AF64",
+                    "displayValue": "500M-1B"
+                }, {
+                    "minvalue": "1000",
+                    "maxvalue": "5000",
+                    "code": "#A9FF8D",
+                    "displayValue": "> 1B"
+                }]
+            },
+            "data": [{
+                "id": "NA",
+                "value": "515"
+            }, {
+                "id": "SA",
+                "value": "373"
+            }, {
+                "id": "AS",
+                "value": "3875"
+            }, {
+                "id": "EU",
+                "value": "727"
+            }, {
+                "id": "AF",
+                "value": "885"
+            }, {
+                "id": "AU",
+                "value": "32"
+            }]
+        }
+    });
+    populationMap.render();
+});
 ```
 
 Now that you know how to create a simple map try customizing different map attributes. You can apply the following customizations to maps:
