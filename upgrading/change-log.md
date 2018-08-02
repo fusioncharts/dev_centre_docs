@@ -865,7 +865,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
     * The deprecated method `setCurrentRenderer` has been removed.
 
-## Deprecated
+## Deprecated Attributes
 
     * `showFormBtn` (deprecated)
 
