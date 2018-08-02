@@ -7,11 +7,11 @@ breadcrumb: [["Home", "/"], ["Tooltips"]]
 
 A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information such as:
 
-* It denotes the name and data value in single series charts.
+* Name and data value in single series charts.
 
-* It denotes name and value/percentage in pie and doughnut charts.
+* Name and value/percentage in pie and doughnut charts.
 
-* It denotes a series name, category name, and data value for multi-series and combination charts.
+* A series name, category name, and data value for multi-series and combination charts.
 
 ![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-1.png)
 
