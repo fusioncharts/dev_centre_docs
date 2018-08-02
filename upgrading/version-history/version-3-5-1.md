@@ -5,8 +5,6 @@ heading: Version 3.5.1
 breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-## New Features
+3rd December, 2014
 
-## Improvements
-
-## Fixes
+This release re-introduces the Developer License and introduces a new Team license. No major software updates were done post the previous release.
