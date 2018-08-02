@@ -12,7 +12,7 @@
                 "yAxisName": "Amount (In USD)",
                 "plottooltext": "<div><b>$label</b><br/> <b>Year: </b>$seriesname<br/><b>Sale: </b>$$value<br/></div>",
                 "numberPrefix": "$",
-                "theme": "fint",
+                "theme": "fusion",
                 "legendItemFontBold" : "0",
                 "legendItemFont": "Arial",
                 "legendItemFontSize": "11",

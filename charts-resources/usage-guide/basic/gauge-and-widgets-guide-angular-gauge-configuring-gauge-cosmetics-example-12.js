@@ -19,7 +19,7 @@
             "pivotFillMix": "{light-40},{dark-60}",
             "pivotFillRatio": "",
             "valueBelowPivot": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

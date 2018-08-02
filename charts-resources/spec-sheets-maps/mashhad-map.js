@@ -18,7 +18,7 @@
                 "legendbordercolor": "ffffff",
                 "legendallowdrag": "0",
                 "legendshadow": "0",
-                "caption": "Website Visits for the month of Jan 2014",
+                "caption": "Website Visits for the month of March 2018",
                 "connectorcolor": "000000",
                 "fillalpha": "80",
                 "hovercolor": "CCCCCC",
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"IR.MS.KE","value":2932},{"id":"IR.MS.KS","value":2761},{"id":"IR.MS.KV","value":3021},{"id":"IR.MS.SB","value":1470},{"id":"IR.MS.KJ","value":3738},{"id":"IR.MS.YA","value":2492}]
+            "data": [{"id":"IR.MS.KE","value":888},{"id":"IR.MS.KS","value":3538},{"id":"IR.MS.KV","value":584},{"id":"IR.MS.SB","value":1936},{"id":"IR.MS.KJ","value":2751},{"id":"IR.MS.YA","value":995}]
         }
     }

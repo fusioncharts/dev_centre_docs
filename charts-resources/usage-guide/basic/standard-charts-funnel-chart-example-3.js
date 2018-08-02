@@ -16,7 +16,7 @@
             "showLabelsAtCenter": "1",
 
             "plotFillAlpha": "70",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
                 "label": "Unique Website Visits",

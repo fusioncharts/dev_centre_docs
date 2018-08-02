@@ -13,7 +13,7 @@
             //Making the chart export enabled in various formats
             "exportEnabled": "1",
             "numberPrefix": "$",
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "data": [{

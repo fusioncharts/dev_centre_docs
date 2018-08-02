@@ -7,7 +7,7 @@
     dataSource: {
         "chart": {
             "caption": "World's Two Most Populous Continents",
-            "theme": "fint",
+            "theme": "fusion",
             "formatNumberScale": "0",
             "numberSuffix": "M",
             "useSNameInLabels": "0"

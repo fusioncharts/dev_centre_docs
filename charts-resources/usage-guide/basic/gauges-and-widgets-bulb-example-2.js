@@ -18,7 +18,7 @@
             //Tooltext
             "plottooltext": "<span id='headerdiv' style='font-family:\"Arial\", \"Helvetica\";font-size: 13px;font-weight: bold;'>Current Temperature:</span>{br}<div id='valueDiv' style=' color: #EEEEEE; text-align:center;font-size: 25px; padding: 10px;  margin-top:5px; font-family:\"Arial\", \"Helvetica\"; font-weight: bold;'>$value°C</div>",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorrange": {
             "color": [{

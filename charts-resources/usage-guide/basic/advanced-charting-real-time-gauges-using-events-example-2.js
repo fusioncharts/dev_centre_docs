@@ -21,7 +21,7 @@
             "thmOriginX": "100",
             "dataStreamURL": "dummy-url-thermometerData.php",
             "refreshInterval": "5",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "value": "-6"
     },

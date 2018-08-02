@@ -13,7 +13,7 @@
             "pyaxisname": "Price",
             "vyaxisname": "Volume (In Millions)",
             "showVolumeChart": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

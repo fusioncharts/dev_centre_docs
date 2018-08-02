@@ -21,7 +21,7 @@
             "subcaptionFontColor": "#993300",
             "subcaptionFontBold": "0",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Q1",

@@ -15,7 +15,7 @@
             "yNumberPrefix": "$",
             "xNumberSuffix": "&deg; F",
             "showYAxisLine": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "verticalLineDashed": "1",

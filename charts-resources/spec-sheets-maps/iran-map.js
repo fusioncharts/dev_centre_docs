@@ -18,7 +18,7 @@
                 "legendbordercolor": "ffffff",
                 "legendallowdrag": "0",
                 "legendshadow": "0",
-                "caption": "Website Visits for the month of Jan 2014",
+                "caption": "Website Visits for the month of March 2018",
                 "connectorcolor": "000000",
                 "fillalpha": "80",
                 "hovercolor": "CCCCCC",
@@ -32,6 +32,6 @@
                 "gradient": "1",
                 "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
             },
-            "data": [{"id":"IR.AL","value":2063},{"id":"IR.AR","value":2645},{"id":"IR.BS","value":2897},{"id":"IR.CM","value":3798},{"id":"IR.EA","value":1240},{"id":"IR.ES","value":2467},{"id":"IR.FA","value":3554},{"id":"IR.GI","value":639},{"id":"IR.GO","value":2406},{"id":"IR.HD","value":4124},{"id":"IR.HG","value":2991},{"id":"IR.IL","value":509},{"id":"IR.KE","value":648},{"id":"IR.BK","value":2388},{"id":"IR.KZ","value":3198},{"id":"IR.KB","value":538},{"id":"IR.KD","value":4327},{"id":"IR.LO","value":1426},{"id":"IR.MK","value":4290},{"id":"IR.MN","value":1918},{"id":"IR.KS","value":3785},{"id":"IR.QZ","value":4206},{"id":"IR.QM","value":2584},{"id":"IR.KV","value":617},{"id":"IR.SM","value":1838},{"id":"IR.SB","value":4400},{"id":"IR.KJ","value":2437},{"id":"IR.TH","value":2012},{"id":"IR.WA","value":1357},{"id":"IR.YA","value":1672},{"id":"IR.ZA","value":1799}]
+            "data": [{"id":"IR.AL","value":888},{"id":"IR.AR","value":3538},{"id":"IR.BS","value":584},{"id":"IR.CM","value":1936},{"id":"IR.EA","value":2751},{"id":"IR.ES","value":995},{"id":"IR.FA","value":3940},{"id":"IR.GI","value":4076},{"id":"IR.GO","value":2161},{"id":"IR.HD","value":1224},{"id":"IR.HG","value":788},{"id":"IR.IL","value":3338},{"id":"IR.KE","value":534},{"id":"IR.BK","value":936},{"id":"IR.KZ","value":1751},{"id":"IR.KB","value":595},{"id":"IR.KD","value":1940},{"id":"IR.LO","value":576},{"id":"IR.MK","value":3161},{"id":"IR.MN","value":1324},{"id":"IR.KS","value":1924},{"id":"IR.QZ","value":688},{"id":"IR.QM","value":3338},{"id":"IR.KV","value":784},{"id":"IR.SM","value":1836},{"id":"IR.SB","value":2551},{"id":"IR.KJ","value":1095},{"id":"IR.TH","value":3140},{"id":"IR.WA","value":3076},{"id":"IR.YA","value":1161},{"id":"IR.ZA","value":1214}]
         }
     }

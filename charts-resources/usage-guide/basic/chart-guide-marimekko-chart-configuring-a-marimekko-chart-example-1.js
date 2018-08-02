@@ -19,7 +19,7 @@
             // No percentage distribution
             "usePercentDistribution": "0",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

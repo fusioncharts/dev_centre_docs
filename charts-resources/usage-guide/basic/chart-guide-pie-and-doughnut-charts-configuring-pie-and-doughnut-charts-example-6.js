@@ -16,7 +16,7 @@
             //Radius
             "pieRadius": "75",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Food",

@@ -16,7 +16,7 @@
             //Add hover effect
             "showhovereffect": "1",
 
-            "theme": "fint",
+            "theme": "fusion",
             "ledSize": "4"
         },
         "colorRange": {

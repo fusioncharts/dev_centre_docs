@@ -5,7 +5,7 @@
 #### JavaScript Alias: maps/martinique
 
 Map Name: Martinique
-Dimensions (Width x Height): 280x320
+Dimensions (Width x Height): 610x570
 
 
 
@@ -15,5 +15,4 @@ Dimensions (Width x Height): 280x320
 
 ID | Short label | Label
 ---|---|---|---
-CA.MA|MA|Martinique
-
+FR.MN.MN|MN|Martinique

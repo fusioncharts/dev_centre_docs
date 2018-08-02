@@ -24,7 +24,7 @@
           "legendCaptionFontSize": "10",
           "subcaption": "Year Till Date",
           "legendCaption": "Growth in sales - Compared to previous year",
-          "theme": "fint",
+          "theme": "fusion",
           "labelFont": "Arial",
           "labelFontColor": "#408000",
           "labelFontBold": "1",

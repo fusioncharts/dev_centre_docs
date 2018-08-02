@@ -18,7 +18,7 @@
             //Hide the value
             "showValue": "0",
             "thmOriginX": "100",
-            "theme": "fint",
+            "theme": "fusion",
             "chartBottomMargin": "20"
         },
         "value": "-6"

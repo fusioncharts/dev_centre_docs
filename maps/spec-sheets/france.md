@@ -18,23 +18,28 @@ ID | Short label | Label
 002|AL|Alsace
 003|AQ|Aquitaine
 004|AU|Auvergne
-017|NR|Basse-Normandie
-006|BU|Bourgogne
-005|BR|Bretagne
-007|CE|Centre
+005|BR|Brittany
+006|BU|Burgundy
+007|CE|Centre-Val de Loire
 008|CH|Champagne-Ardenne
-009|CO|Corse
+009|CO|Corsica
 010|FR|Franche-Comté
-023|HN|Haute-Normandie
-011|LL|Ile-de-France
+011|LL|Île-de-France
 012|LA|Languedoc-Roussillon
 013|LI|Limousin
 014|LO|Lorraine
 015|MI|Midi-Pyrénées
 016|NO|Nord-Pas-de-Calais
+017|NR|Lower Normandy
 018|PD|Pays de la Loire
-019|PI|Picardie
+019|PI|Picardy
 020|PC|Poitou-Charentes
-021|PR|Provence-Alpes-Côte D'Azur
+021|PR|PACA (Provence-Alpes-Côte D'Azur)
 022|RH|Rhône-Alpes
+023|HN|Upper Normandy
+024|FG|French|Guiana
+025|GD|Guadeloupe
+026|MN|Martinique
+027|MT|Mayotte
+028|RN|Réunion
 

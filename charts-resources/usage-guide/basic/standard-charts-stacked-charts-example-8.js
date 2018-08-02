@@ -21,7 +21,7 @@
             //Value font color
             "valueFontColor": "#ffffff",
 
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "categories": [{

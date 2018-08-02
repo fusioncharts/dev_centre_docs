@@ -22,7 +22,7 @@
             "thmOriginX": "100",
             "dataStreamURL": "resources/php/dummyUrl.php",
             "refreshInterval": "5",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "value": "-6"
     },

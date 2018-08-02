@@ -12,7 +12,7 @@
             "yAxisName": "Amount (In USD)",
             "yAxisMaxValue": "120000",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "chartBottomMargin": "70",
             "PlotfillAlpha": "0",
             "placeValuesInside": "0",

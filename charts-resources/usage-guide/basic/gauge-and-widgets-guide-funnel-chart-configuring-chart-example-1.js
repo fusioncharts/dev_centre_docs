@@ -12,7 +12,7 @@
             "labelDistance": "15",
             "plotTooltext": "Success : $percentOfPrevValue",
             "showPercentValues": "1",
-            "theme": "fint",
+            "theme": "fusion",
 
             //Draw 2D chart
             "is2D": "1",

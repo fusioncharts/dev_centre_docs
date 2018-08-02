@@ -182,7 +182,7 @@ By default, all the data labels are displayed. You can opt to hide specific data
         "xAxisName": "Quarter",
         "yAxisName": "Amount (In USD)",
         "numberPrefix": "$",
-        "theme": "fint",
+        "theme": "fusison",
         "showLabels": "0"
     },
     "data": [{
@@ -225,7 +225,7 @@ Specify the space between the canvas border and first (& last data plots) using 
         "yAxisName": "Amount (In USD)",
         "numberPrefix": "$",
         "canvasPadding": "30",
-        "theme": "fint"
+        "theme": "fusison"
     }
 }
 ```

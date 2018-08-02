@@ -14,7 +14,7 @@
             //Log Base
             "base": "5",
 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

@@ -18,7 +18,7 @@
             "labeldisplay": "rotate",
             "showValues": "0",
             "showRealTimeValue": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

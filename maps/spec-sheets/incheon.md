@@ -5,8 +5,7 @@
 #### JavaScript Alias: maps/incheon
 
 Map Name: Incheon
-Dimensions (Width x Height): 936x849
-
+Dimensions (Width x Height): 610x570
 
 
 

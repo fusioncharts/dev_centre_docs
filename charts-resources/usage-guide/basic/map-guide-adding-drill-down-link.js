@@ -11,7 +11,7 @@
             "entityFillHoverColor": "#cccccc",
             "numberPrefix": "$",
             "showLabels": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorrange": {
             "minvalue": "920000",

@@ -7,7 +7,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Target CSAT Index",
             "lowerLimit": "0",
             "upperLimit": "100",

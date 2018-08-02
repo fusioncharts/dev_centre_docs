@@ -18,7 +18,7 @@
             "ledSize": "5",
             "ledGap": "1",
             "ChartBottomMargin": "20",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

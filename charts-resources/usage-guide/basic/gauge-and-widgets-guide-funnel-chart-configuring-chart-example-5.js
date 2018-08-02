@@ -15,7 +15,7 @@
             "showPercentValues": "1",
             //Use same slant angle
             "useSameSlantAngle": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Unique Website Visits",

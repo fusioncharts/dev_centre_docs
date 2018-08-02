@@ -12,7 +12,7 @@
             "xAxisName": "الشهر",
             "yAxisName": "كمية",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "rotateValues": "1",
             "exportEnabled": "1"
         },

@@ -10,7 +10,7 @@
             "subcaption": "Last 12 weeks",
             "xAxisName": "Week of Year",
             "showValues": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

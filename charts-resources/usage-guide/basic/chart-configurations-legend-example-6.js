@@ -13,7 +13,7 @@
             "numberPrefix": "$",
             "showLegend": "1",
             "legendIconScale": "2",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

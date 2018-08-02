@@ -10,7 +10,7 @@
             "subCaption": "Last week Vs This week",
             "xAxisName": "Day",
             "yAxisName": "No. of Visitors",
-            "theme": "fint",
+            "theme": "fusion",
             "showValues": "0",
             //Setting automatic calculation of div lines to off
             "adjustDiv": "0",

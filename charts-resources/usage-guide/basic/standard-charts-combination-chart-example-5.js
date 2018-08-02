@@ -16,7 +16,7 @@
             "sYAxisMaxValue": "50",
             "numDivLines": "3",
             "primaryAxisOnLeft": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

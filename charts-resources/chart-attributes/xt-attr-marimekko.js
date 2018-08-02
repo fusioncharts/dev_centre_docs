@@ -20,7 +20,7 @@
             "showsum": "1",
             //Custom tool-text string built using a combination of HTML and chart macro variables
             "plottooltext": "<div id='nameDiv' style='font-size: 14px; border-bottom: 1px dashed #666666; font-weight:bold; padding-bottom: 3px; margin-bottom: 5px; display: inline-block;'>$label :</div>{br}State: <b>$seriesName</b>{br}Sales : <b>$dataValue</b>{br}Market share in $seriesName : <b>$percentValue</b>{br}Overall market share of $label: <b>$xAxisPercentValue</b>",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

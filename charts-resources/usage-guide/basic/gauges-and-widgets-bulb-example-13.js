@@ -21,7 +21,7 @@
             "dataStreamURL": "dummy-url-bulbData.php",
             "refreshInterval": "5",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
 
 
         },

@@ -12,7 +12,7 @@
             "yAxisName": "Sales (In USD)",
             "numberPrefix": "$",
             "showValues": "1",
-            "theme": "fint"
+            "theme": "fusion"
             },
         "data": [{
           "label": "Bakersfield Central",

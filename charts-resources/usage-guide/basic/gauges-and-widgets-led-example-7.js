@@ -20,7 +20,7 @@
             "gaugeBorderColor": "#AAAAAA",
             "gaugeBorderThickness": "7",
             "gaugeBorderAlpha": "70",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

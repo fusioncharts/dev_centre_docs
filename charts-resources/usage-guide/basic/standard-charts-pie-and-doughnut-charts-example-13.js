@@ -20,7 +20,7 @@
             "pieRadius": "50",
             "startingAngle": "45",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Food",

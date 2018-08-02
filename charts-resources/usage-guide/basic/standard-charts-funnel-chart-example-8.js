@@ -13,7 +13,7 @@
             "labelDistance": "15",
             "plotTooltext": "Success : $percentOfPrevValue",
             "showPercentValues": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Unique Website Visits",

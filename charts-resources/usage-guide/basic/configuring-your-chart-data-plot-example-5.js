@@ -12,7 +12,7 @@
             "yAxisName": "Revenues (In USD)",
             "numberPrefix": "$",
             "plotFillAlpha": "90",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

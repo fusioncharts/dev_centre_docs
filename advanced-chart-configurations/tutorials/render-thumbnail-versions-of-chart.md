@@ -230,7 +230,7 @@ The JavaScript code to show the above effect is given below:
             "xAxisName": "Month",
             "yAxisName": "Amount",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "rotateValues": "1",
             "exportEnabled": "1"
         },

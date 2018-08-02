@@ -16,7 +16,7 @@
             //Customizing anchor properties
             "drawAnchors": "0",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
 
         },
         "data": [{

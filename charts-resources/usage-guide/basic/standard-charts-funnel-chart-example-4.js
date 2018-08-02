@@ -16,7 +16,7 @@
             "showLegend": "1",
             "showLabels": "0",
 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Unique Website Visits",

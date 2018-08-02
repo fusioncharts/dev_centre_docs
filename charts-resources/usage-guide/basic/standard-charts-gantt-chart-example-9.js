@@ -11,7 +11,7 @@
             "subcaption": "Typical Steps Involved",
             "showHoverEffect": "0",
             "showHoverBand": "0",
-            "theme": "fint",
+            "theme": "fusion",
             "canvasBorderAlpha": "40"
         },
         "datatable": {

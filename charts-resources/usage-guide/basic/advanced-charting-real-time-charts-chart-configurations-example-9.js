@@ -16,7 +16,7 @@
             "showValues": "0",
             "numbersuffix": " Transactions",
             "showRealTimeValue": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

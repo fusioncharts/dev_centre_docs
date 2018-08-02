@@ -9,7 +9,7 @@
             "caption": "Customer Satisfaction Score",
             "subcaption": "Los Angeles Topanga",
             "plotToolText": "Current Score: $value",
-            "theme": "fint",
+            "theme": "fusion",
             "chartBottomMargin": "50",
             "showValue": "1"
         },

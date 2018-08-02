@@ -17,7 +17,7 @@
                 "xaxismaxvalue": "100",                                                                                                                                                                                         
                 "yaxismaxvalue": "100",
                 //Theme
-                "theme" : "fint"
+                "theme" : "fusion"
             },
             "dataset": [
                 {

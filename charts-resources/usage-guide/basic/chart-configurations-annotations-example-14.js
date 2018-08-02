@@ -18,7 +18,7 @@
             "showTooltip": "0",
             "animation": "0",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Q1",

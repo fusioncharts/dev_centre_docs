@@ -215,7 +215,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/stht1u4c/ "@@open-newtab") to edit the above chart.
 
-## Add Aashed Trend Lines
+## Add Dashed Trend Lines
 
 Use the attributes given below to render a dashed trend line instead of the continuous line:
 

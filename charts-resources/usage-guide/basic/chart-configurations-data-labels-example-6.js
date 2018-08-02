@@ -11,7 +11,7 @@
             "xAxisName": "Month",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "labelDisplay": "stagger",
             "staggerLines": "4"
         },

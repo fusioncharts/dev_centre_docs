@@ -38,7 +38,6 @@
             "placevaluesinside": "1",
             "pivotfillmix": "",
             "showpivotborder": "1",
-            "annrenderdelay": "0",
             "gaugeoriginx": "160",
             "gaugeoriginy": "160",
             "showborder": "0"

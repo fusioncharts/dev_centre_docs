@@ -12,7 +12,7 @@
             "pYAxisName": "No. of Occurrence",
             "sYAxisname": "Cumulative Percentage",
             "showHoverEffect": "1",
-            "theme": "fint"
+            "theme": "fusion"
 
         },
         "data": [{

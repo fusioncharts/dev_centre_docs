@@ -31,6 +31,8 @@ The combination charts available in the FusionCharts Suite XT are:
 
 * Multi Series Stacked Column 2D + Line Dual Y-axis Chart
 
+* Multi-series Stacked Column 2D + Spline Dual Y-Axis Chart
+
 ## 2D Single Y-axis Combination Chart
 
 Let's create our first combination chart to showcase the comparison of actual revenue, projected revenue and the profit earned for each month of the last year. All three metrics have been plotted using different chart types - the actual revenue earned is plotted using a column chart, the projected revenue is plotted using a line chart, and the profit earned is plotted using an area chart.
@@ -54,6 +56,14 @@ A 2D combination chart with a single y-axis looks like this:
 {% embed_all standard-charts-combination-chart-example-1.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/4REJ5/ "@@open-newtab") to edit the single y combination chart in 2D.
+
+You can also build the above combination chart using Spline and Spline Area. To define any one of the dataset to spline or spline area, set the `renderAs` attribute to `spline` or `splineArea` respectively. 
+
+In the above sample, let's plot the **Projected Revenue** in `spline` and **Profit** in `splineArea`. With these changes, the chart looks like this:
+
+{% embed_all standard-charts-combination-chart-example-12.js %}
+
+Click here to edit the above chart.
 
 ## 3D Single Y-axis Combination Chart
 

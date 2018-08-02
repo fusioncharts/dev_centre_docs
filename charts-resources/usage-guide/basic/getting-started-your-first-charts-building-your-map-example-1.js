@@ -13,7 +13,7 @@
             "numberScaleUnit": "K,M,B",
             "numberPrefix": "$",
             "showLabels": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorrange": {
             "minvalue": "0",

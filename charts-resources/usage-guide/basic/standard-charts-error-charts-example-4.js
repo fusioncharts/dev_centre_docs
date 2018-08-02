@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "xaxisname": "Systems",
             "yaxisname": "Life Span (years)",
             "caption": "Systems Life Span - Top 3 stores",

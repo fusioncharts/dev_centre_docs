@@ -5,7 +5,7 @@
 #### JavaScript Alias: maps/kermanshah
 
 Map Name: Kermanshah
-Dimensions (Width x Height): 420x390
+Dimensions (Width x Height): 610x570
 
 
 
@@ -15,9 +15,17 @@ Dimensions (Width x Height): 420x390
 
 ID | Short label | Label
 ---|---|---|---
-IR.BK.HD|HD|Hamadan Province
-IR.BK.IL|IL|Ilam Province
-IR.BK.BK|BK|Kermanshah Province
-IR.BK.KZ|KZ|Khuzestan Province
-IR.BK.LO|LO|Lorestan Province
-IR.BK.MK|MK|Markazi Province
+IR.BK.DA|DA|Dalaho County
+IR.BK.GG|GG|Gilan-e-gharb County
+IR.BK.HA|HA|Harsin County
+IR.BK.IS|IS|Islamabad-e-gharb County
+IR.BK.JA|JA|Javanrud County
+IR.BK.KA|KA|Kangavar County
+IR.BK.KE|KE|Kermanshah County
+IR.BK.PA|PA|Paveh County
+IR.BK.QS|QS|Qasr-e-Shirin County
+IR.BK.RA|RA|Ravansar county
+IR.BK.SA|SA|Sahneh County
+IR.BK.SZ|SZ|Sarpol-e-Zahab County
+IR.BK.SB|SB|Solas-e-Babajani County
+IR.BK.SO|SO|Sonqor County

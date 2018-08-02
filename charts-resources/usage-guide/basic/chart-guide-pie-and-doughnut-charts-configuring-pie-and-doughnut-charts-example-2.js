@@ -14,7 +14,7 @@
             "defaultCenterLabel": "Total revenue: $60K",
             "centerLabel": "Revenue from $label: $value",
             "useDataPlotColorForLabels": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Food",

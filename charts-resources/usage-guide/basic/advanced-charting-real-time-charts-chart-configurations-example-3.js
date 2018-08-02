@@ -20,7 +20,7 @@
             "showRealTimeValue": "0",
             "xAxisNamePadding": "30",
             "canvasLeftMargin": "100",
-            "theme": "fint"
+            "theme": "fusion"
 
         },
         "categories": [{

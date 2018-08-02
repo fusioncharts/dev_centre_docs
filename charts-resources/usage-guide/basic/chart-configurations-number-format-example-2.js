@@ -19,7 +19,7 @@
             //Allow to add trailing zeros in decimal part
             "forceDecimals": "1",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Week 1",

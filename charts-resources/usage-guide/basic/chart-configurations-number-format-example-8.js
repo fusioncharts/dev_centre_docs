@@ -18,7 +18,7 @@
             //Format numbar scale
             "formatNumberScale": "1",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Q1",

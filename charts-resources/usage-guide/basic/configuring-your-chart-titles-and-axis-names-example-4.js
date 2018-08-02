@@ -14,7 +14,7 @@
             "rotateYAxisName": "0",
             "numberPrefix": "$",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Q1",

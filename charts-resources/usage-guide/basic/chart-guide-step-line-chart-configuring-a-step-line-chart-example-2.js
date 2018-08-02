@@ -15,7 +15,7 @@
             "palettecolors": "#6baa01, #d35400",
             //Use Forward steps
             "useForwardSteps": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

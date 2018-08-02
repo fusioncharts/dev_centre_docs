@@ -19,7 +19,7 @@
             "smartLabelClearance": "5",
             "pieRadius": "50",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Food",

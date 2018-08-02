@@ -14,7 +14,7 @@
             "vyaxisname": "Volume (In Millions)",
             "plotPriceAs": "line",
             "plotClosingPrice": "0",
-            "theme": "fint",
+            "theme": "fusion",
         },
         "categories": [{
             "category": [{

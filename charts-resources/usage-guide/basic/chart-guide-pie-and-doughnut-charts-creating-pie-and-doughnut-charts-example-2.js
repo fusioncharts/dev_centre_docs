@@ -22,7 +22,7 @@
             "showTooltip": "0",
             "decimals": "0",
             "useDataPlotColorForLabels": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Food",

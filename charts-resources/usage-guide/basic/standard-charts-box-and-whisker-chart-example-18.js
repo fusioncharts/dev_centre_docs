@@ -12,7 +12,7 @@
             "xAxisName": "Pay Grades",
             "YAxisName": "Salaries (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "showValues": "1",
             "showQD": "1",
             "qdIconRadius": "5",

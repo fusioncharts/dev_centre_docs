@@ -24,7 +24,7 @@
             "vZeroPlaneAlpha": "90",
 
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "dataset": [{
             "drawline": "0",

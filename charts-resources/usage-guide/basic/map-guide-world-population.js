@@ -6,7 +6,7 @@
     dataSource: {
         "chart": {
             "caption": "Global Population",
-            "theme": "fint",
+            "theme": "fusion",
             "formatNumberScale": "0",
             "numberSuffix": "M",
             "showLabels": "1",

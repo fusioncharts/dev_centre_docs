@@ -23,7 +23,7 @@
             "gaugeBorderAlpha": "60",
 
             "thmOriginX": "100",
-            "theme": "fint",
+            "theme": "fusion",
             "chartBottomMargin": "20"
         },
         "value": "-6"

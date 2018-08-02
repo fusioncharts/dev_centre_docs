@@ -7,7 +7,7 @@ breadcrumb: [["Home", "/"], ["Inverse Y-axis Charts"]]
 
 > These chart types belong to **PowerCharts XT**.
 
-The inverse y-axis charts are similar to the normal column charts, except that the y-axis in these charts is inverted. The lower limit and upper limit value positions are swapped in an inverse y-axis chart.
+The inverse y-axis charts are similar to the normal column charts, except that the y-axis and the data plots in these charts are inverted. The lower limit and upper limit value positions are swapped in the inverse y-axis chart.
 
 The FusionCharts Suite XT includes the following three types of inverse axis charts:
 
@@ -19,7 +19,7 @@ The FusionCharts Suite XT includes the following three types of inverse axis cha
 
 ## Inverse Y-axis Column Chart 
 
-Let's create an inverse y-axis chart with two radio buttons: **Inverse Column 2D Chart** and **Column 2D Chart**. Select the first radio button to render the chart with an inverse y-axis; select the second radio button to render the chart with a normal y-axis. Observe that when you render the inverse y-axis chart, the lower limit value is rendered at the top and the upper limit value is rendered at the bottom - inverse of how it is rendered for a normal y-axis chart.
+Let's create an inverse y-axis chart showcasing Average page load time of hsm.com. In the sample you will observe that when you render the chart, the lower limit value is rendered at the top and the upper limit value is rendered at the bottom - which renders the inverse data plots.
 
 To create an inverse y-axis chart follow the steps given below: 
 
@@ -35,7 +35,7 @@ To create an inverse y-axis chart follow the steps given below:
 
 For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=InverseMSColumn2D "@@open-newtab") page of inverse y-axis column chart.
 
-The chart below shows you the difference between a normal and an inverse y-axis chart:
+The inverse y-axis chart looks like a shown below:
 
 {% embed_all standard-charts-inverse-charts-example-1.js %}
 

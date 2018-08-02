@@ -12,7 +12,7 @@
             "lowerLimit": "0",
             "upperLimit": "100",
             "numberSuffix": "%",
-            "theme": "fint",
+            "theme": "fusion",
             "gaugeFillMix": "{dark-30},{light-60},{dark-10}",
             "gaugeFillRatio": "15",
             "chartBottomMargin": "25",

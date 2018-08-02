@@ -11,7 +11,7 @@
             "caption": "Development Division - Time Shifts",
             "subCaption": "At Bakersfield Central",
             "canvasBorderAlpha": "30",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{
