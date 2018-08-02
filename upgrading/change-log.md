@@ -31,6 +31,10 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 ## Improvements
 
+* `Angular-FusionCharts` plugin has been renamed to `AngularJS-Fusioncharts`.
+* `Angular 2` and `Angular 4` plugins have been renamed to `Angular-FusionCharts`.
+* The folder structure of the download package is modified. A new folder as `integrations` is added which contains all the **client-side** and **server-side** tech stacks. For more details click [here](https://www.fusioncharts.com/dev/upgrading/changed-behavior#updated-fusioncharts-suite-xt-download-package-5). 
+
 * For dual y-axis charts, the secondary data plots now overlaps the primary data plots if `renderAs` attribute is set as column. If you would like the old behavior, click [here]({% site.baseurl %}/upgrading/changed-behavior#secondary-data-plots-overlap-primary-data-plots-3 '@@open-newtab') to know more.
 
 * In order to free chart area, the restore button in select-scatter and drag-able chart has been moved to [options menu](https://www.fusioncharts.com/dev/chart-guide/standard-charts/drag-able-charts#dragable-column-d-chart-1). The list of attributes which have been added are as follows:
