@@ -354,39 +354,44 @@ $ npm install fusioncharts
 </code></pre>
 <div class="mt-20"><strong>To include PowerCharts using require();</strong></div>
 <pre><code class="custom-hlc language-json">
-   var FusionCharts = require('fusioncharts');
-   var PowerCharts = require('fusioncharts/fusioncharts.powercharts');
-   PowerCharts(FusionCharts);
+    var FusionCharts = require('fusioncharts');
+    var PowerCharts = require('fusioncharts/fusioncharts.powercharts');
+    PowerCharts(FusionCharts);
 </code></pre>
 <div class="mt-20"><strong>To include FusionWidgets using require();</strong></div>
 <pre><code class="custom-hlc language-json">
- var FusionCharts = require('fusioncharts');
- var Widgets = require('fusioncharts/fusioncharts.widgets');
- Widgets(FusionCharts);
+    var FusionCharts = require('fusioncharts');
+    var Widgets = require('fusioncharts/fusioncharts.widgets');
+    Widgets(FusionCharts);
 </code></pre>
 <div class="mt-30"><strong>To include specific chart types individually using `require`:</strong></div>
 <div class="mt-20"><strong>To render Gantt Chart:</strong></div>
 <pre><code class="custom-hlc language-json">
+    var FusionCharts = require('fusioncharts');
     var Gantt = require('fusioncharts/fusioncharts.gantt'); // Gantt
     Gantt(FusionCharts);
 </code></pre>
 <div class="mt-20"><strong>To render Treemap Chart:</strong></div>
 <pre><code class="custom-hlc language-json">
+    var FusionCharts = require('fusioncharts');
     var Treemap = require('fusioncharts/fusioncharts.treemap'); // Treemap
     Treemap(FusionCharts);
 </code></pre>
 <div class="mt-20"><strong>To render Zoomscatter Chart:</strong></div>
 <pre><code class="custom-hlc language-json">
+    var FusionCharts = require('fusioncharts');
     var Zoomscatter = require('fusioncharts/fusioncharts.zoomscatter'); //Zoom Scatter
     Zoomscatter(FusionCharts);
 </code></pre>
 <div class="mt-20"><strong>To render Zoomline Chart:</strong></div>
 <pre><code class="custom-hlc language-json">
+    var FusionCharts = require('fusioncharts');
     var Zoomline = require('fusioncharts/fusioncharts.zoomline'); // Zoomline
     Zoomline(FusionCharts);
 </code></pre>
 <div class="mt-20"><strong>To render Ovelapped Bar and Column charts:</strong></div>
 <pre><code class="custom-hlc language-json">
+    var FusionCharts = require('fusioncharts');
     var OverlappedBar2d = require('fusioncharts/fusioncharts.overlappedbar2d');
     var Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');
     OverlappedBar2d(FusionCharts);
@@ -519,7 +524,7 @@ var FusionCharts = require('fusioncharts');
     }
 });
 // Render
-chartInstance.render()
+annualPopulation.render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -600,7 +605,7 @@ chartInstance.render()
     }
 });
 // Render
-chartInstance.render()
+annualPopulation.render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
