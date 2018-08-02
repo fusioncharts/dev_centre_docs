@@ -5,6 +5,8 @@ heading: Version 3.12.0
 breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
+#### 10th March, 2017
+
 ## New Features:
 
 * FusionCharts Suite XT introduces data skipping starting version 3.12.0. In case of huge data, data skipping draws only those plots in the canvas that actually create a data trend.

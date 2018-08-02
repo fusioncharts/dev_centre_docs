@@ -5,6 +5,8 @@ heading: Version 3.12.2
 chartPresent: false
 ---
 
+#### 13th October, 2017
+
 ## Improvement
 
 * TypeScript definition files added to npm package of FusionCharts (fusioncharts & fusionmaps). Previously, the definition files were added from the `definitelytyped` repository.

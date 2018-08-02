@@ -5,6 +5,8 @@ heading: Version 3.12.1
 breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
+#### 3rd July, 2017
+
 ## New Features
 
 * The FusionCharts export servers have been reconfigured to introduce the following features:
