@@ -16,9 +16,9 @@ In this article, we will show you how to download and install the `FusionCharts 
 
 In order to install and start working with PHP-FusionCharts you need to [download](https://www.fusioncharts.com/download/ '@@open-newtab') the FusionCharts Suite XT package which contains:
 
-* JavaScript files to render **Charts**, **Widgets**, and **PowerCharts** under the `js` folder.
-* JavaScript files to render maps under the `js > maps` folder.
-* JavaScript files to apply themes under the `js > themes` folder.
+* JavaScript files to render **Charts**, **Widgets**, and **PowerCharts** in the `js` folder.
+* JavaScript files to render maps in the `js > maps` folder.
+* JavaScript files to apply themes in the `js > themes` folder.
 
 The folder structure is shown below:
 
@@ -26,7 +26,7 @@ The folder structure is shown below:
 
 > You need to copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
-* The download package also contains `fusioncharts.php` file under the `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` folder. This also contains FusionCharts PHP native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/php '@@open-newtab')**. The folder structure is shown below:
+* The download package also contains `fusioncharts.php` file under the `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` folder and the FusionCharts PHP native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/php '@@open-newtab')**. The folder structure is shown below:
 
 ![PHP Js Folder]({% site.baseurl %}/gif/php-folder-structure.gif)
 
@@ -91,7 +91,7 @@ To install FusionMaps follow the steps given below:
 
 **Step 1:** Copy/paste the `fusioncharts.php` file from `fusioncharts-suite-xt > integrations > php > fusioncharts-wrapper` to your project’s folder and include it to your PHP page.
 
-**Step 2:** To render a map, you need to `include` the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. 
+**Step 2:** To render a map, you need to include the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. 
 
 **Step 3:** Once done, insert the `<script>` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The `<script>` tag is shown below:
 
@@ -121,7 +121,8 @@ Therefore, assuming that you want to render the map of California, the alias nam
 
 Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
-This completes the installation of FusionMaps in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-map-10 '@@open-newtab').
+This completes the installation of FusionMaps in your application. To see how to create a map,
+* JavaScript files to apply themes in the `js > themes` folder. click [here]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-map-10 '@@open-newtab').
 
 ## Themes
 

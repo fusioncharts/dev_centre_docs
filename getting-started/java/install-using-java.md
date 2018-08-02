@@ -30,7 +30,7 @@ The folder structure is shown below:
 
 > You need to copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
-* The download package also contains **fusioncharts.java** file under `fusioncharts-suite-xt > integrations > java > fusioncharts-wrapper` folder. This folder will also contain FusionCharts Java native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/java '@@open-newtab')**. The folder structure is shown below:
+* The download package also contains **fusioncharts.java** file under `fusioncharts-suite-xt > integrations > java > fusioncharts-wrapper` folder and the FusionCharts Java native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/java '@@open-newtab')**. The folder structure is shown below:
 
 ![JSP Js Folder]({% site.baseurl %}/gif/jsp-folder-structure.gif)
 
@@ -82,11 +82,13 @@ FusionCharts Suite XT provides **1400+** data-driven maps as a part of the Fusio
 
 > If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace to upgrade to the latest map definition files.
 
-**To use FusionCharts Java wrapper in your project:**
+To install FusionMaps follow the steps given below:
 
-Copy/paste the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project’s folder and **import** it to your JSP page.
+**Step 1:** Copy/paste the `fusioncharts.java` file from `fusioncharts-suite-xt > integrations > jsp > fusioncharts-wrapper` to your project’s folder and **import** it to your JSP page.
 
-To render a map, you need to `include` the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. Once done, insert the `<script>` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The `<script>` tag is shown below:
+**Step 2:** To render a map, you need to include the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. 
+
+**Step 3:** Once done, insert the `<script>` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The `<script>` tag is shown below:
 
 ```
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
@@ -114,7 +116,8 @@ Therefore, assuming that you need to render the map of California, the alias nam
 
 Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
 
-This completes the installation of FusionMaps in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-map-11 '@@open-newtab').
+This completes the installation of FusionMaps in your application. To see how to create a map,
+* JavaScript files to apply themes in the `js > themes` folder. click [here]({% site.baseurl %}/getting-started/java/your-first-chart-using-java#create-your-first-map-11 '@@open-newtab').
 
 ## Themes
 

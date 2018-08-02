@@ -35,9 +35,9 @@ You can use FusionCharts in your jQuery project using any of the two modes given
 
 [Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
-* JavaScript files to render **Charts**, **Widgets**, and **PowerCharts** under the `js` folder.
-* JavaScript files to render maps under the `js > maps` folder.
-* JavaScript files to apply themes under the `js > themes` folder.
+* JavaScript files to render **Charts**, **Widgets**, and **PowerCharts** in the `js` folder.
+* JavaScript files to render maps in the `js > maps` folder.
+* JavaScript files to apply themes in the `js > themes` folder.
 
 The folder structure is shown below:
 
@@ -45,7 +45,7 @@ The folder structure is shown below:
 
 > We recommend that you copy all the files/folders from the `fusioncharts-suite-xt > js` folder to your project folder.
 
-* The download package also contains the **jquery-fusioncharts.js** file under the `fusioncharts-suite-xt > integrations > jquery` folder. The folder structure is shown below:
+* The download package also contains the **jquery-fusioncharts.js** file in the `fusioncharts-suite-xt > integrations > jquery` folder. The folder structure is shown below:
 
 ![jQuery Js Folder]({% site.baseurl %}/gif/jquery-folder-structure.gif)
 
