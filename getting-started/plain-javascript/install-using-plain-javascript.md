@@ -524,7 +524,7 @@ var FusionCharts = require('fusioncharts');
     }
 });
 // Render
-chartInstance.render()
+annualPopulation.render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -605,7 +605,7 @@ chartInstance.render()
     }
 });
 // Render
-chartInstance.render()
+annualPopulation.render()
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
