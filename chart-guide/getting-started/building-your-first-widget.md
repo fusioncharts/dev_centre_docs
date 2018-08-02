@@ -212,7 +212,7 @@ In case something went wrong, and you are unable to see the gauge, check the fol
 
 * If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, and there are no conflicts related to quotation marks in your code.
 
-Click here for more information on [Troubleshooting](https://www.fusioncharts.com/dev/troubleshooting/debugger.html).
+
 
 Now that Harry can monitor his weekly customer satisfaction score using this gauge let's build a map to plot his sales across various states in the US.
 

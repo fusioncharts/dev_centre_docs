@@ -266,6 +266,6 @@ In case something went wrong, and you are unable to see the chart, check for the
 
 * If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
 
-Click here for more information on [Troubleshooting](https://www.fusioncharts.com/dev/troubleshooting/debugger.html).
+
 
 Now that Harry can monitor his monthly revenues using this interactive charts let's build a gauge to show him the customer satisfaction score in the next section.
