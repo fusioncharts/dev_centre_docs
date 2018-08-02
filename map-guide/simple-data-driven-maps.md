@@ -75,8 +75,8 @@ FusionCharts.ready(function() {
     var populationMap = new FusionCharts({
         type: 'maps/world',
         renderAt: 'chart-container',
-        width: '600',
-        height: '400',
+        width: '800',
+        height: '550',
         dataFormat: 'json',
         dataSource: {
             "chart": {
