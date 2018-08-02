@@ -70,59 +70,67 @@ In the final step, you have to create an instance of the map, initialize it with
 
 Refer to the code below:
 
-{% embed_all map-guide-simple-data-driven-maps-example-1.js %}
-
-```json
-{
-    "chart": {
-        "caption": "Global Population",
-        "theme": "fusion",
-        "formatNumberScale": "0",
-        "numberSuffix": "M"
-    },
-    "colorrange": {
-        "color": [{
-            "minvalue": "0",
-            "maxvalue": "100",
-            "code": "#E0F0E0",
-            "displayValue": "Below 100M"
-        }, {
-            "minvalue": "100",
-            "maxvalue": "500",
-            "code": "#D0DFA3",
-            "displayValue": "100-500M"
-        }, {
-            "minvalue": "500",
-            "maxvalue": "1000",
-            "code": "#B0BF92",
-            "displayValue": "500-1000M"
-        }, {
-            "minvalue": "1000",
-            "maxvalue": "5000",
-            "code": "#91AF64",
-            "displayValue": "Above 1B"
-        }]
-    },
-    "data": [{
-        "id": "NA",
-        "value": "515"
-    }, {
-        "id": "SA",
-        "value": "373"
-    }, {
-        "id": "AS",
-        "value": "3875"
-    }, {
-        "id": "EU",
-        "value": "727"
-    }, {
-        "id": "AF",
-        "value": "885"
-    }, {
-        "id": "AU",
-        "value": "32"
-    }]
-}
+```javascript
+FusionCharts.ready(function() {
+    var populationMap = new FusionCharts({
+        type: 'maps/world',
+        renderAt: 'chart-container',
+        width: '600',
+        height: '400',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "caption": "Global Population",
+                "theme": "fusion",
+                "formatNumberScale": "0",
+                "numberSuffix": "M"
+            },
+            "colorrange": {
+                "color": [{
+                    "minvalue": "0",
+                    "maxvalue": "100",
+                    "code": "#D0DFA3",
+                    "displayValue": "< 100M"
+                }, {
+                    "minvalue": "100",
+                    "maxvalue": "500",
+                    "code": "#B0BF92",
+                    "displayValue": "100-500M"
+                }, {
+                    "minvalue": "500",
+                    "maxvalue": "1000",
+                    "code": "#91AF64",
+                    "displayValue": "500M-1B"
+                }, {
+                    "minvalue": "1000",
+                    "maxvalue": "5000",
+                    "code": "#A9FF8D",
+                    "displayValue": "> 1B"
+                }]
+            },
+            "data": [{
+                "id": "NA",
+                "value": "515"
+            }, {
+                "id": "SA",
+                "value": "373"
+            }, {
+                "id": "AS",
+                "value": "3875"
+            }, {
+                "id": "EU",
+                "value": "727"
+            }, {
+                "id": "AF",
+                "value": "885"
+            }, {
+                "id": "AU",
+                "value": "32"
+            }]
+        }
+    });
+    populationMap.render();
+});
 ```
 
 Now that you know how to create a simple map try customizing different map attributes. You can apply the following customizations to maps:
