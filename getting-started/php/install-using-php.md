@@ -137,7 +137,7 @@ The FusionCharts Suite download package also contains predefined theme files und
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
-To apply theme, you need to insert the `<script>` tag where you want to apply the theme. The `<script>` tag is shown below:
+To add any theme, you need to include the `.js` file of the theme in the `<script>` tag as shown below:
 
 ```HTML
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
