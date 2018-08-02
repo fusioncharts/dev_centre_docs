@@ -168,7 +168,7 @@ You can set the entity labels to show data values. Use the following attributes 
 
 * Set the value of the `includeValueInLabels` attribute to `1`, to display data values as part of the entity labels.
 
-* Use the `labelSepChar` attribute to specify the character, which is to work as the separator between the data value and the label name. Note that this character is prefixed to the data value in the label.
+* Set the `labelSepChar` attribute to specify the character which works as a separator between the data value and the label name. Note that this character is prefixed to the data value in the label.
 
 Refer to the code below:
 
@@ -374,5 +374,3 @@ In case something goes wrong and you are unable to see the map, check for the fo
 * If the chart does not show up at all, but there are no JavaScript errors, check whether the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see whether `fusioncharts.js` has loaded properly.
 
 * If you get a **Loading data** or an **Error in loading data** message, check whether your JSON data structure is correct, and ensure there are no conflicts related to quotation marks in your code.
-
-Click here for more information on [Troubleshooting]({% site.baseurl %}/troubleshooting/debugger '@@open-newtab').

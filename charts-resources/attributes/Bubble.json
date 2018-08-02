@@ -28,12 +28,6 @@
                 "name": "paletteColors"
             },
             {
-                "description": "If bigger bubbles are placed on the edges of the chart, they might extend beyond the canvas. However, you can opt to clip those bubble edges so that they are contained within the canvas by setting this attribute to 1.",
-                "range": "0/1",
-                "type": "Boolean",
-                "name": "clipBubbles"
-            },
-            {
                 "description": "You can opt to color all bubbles with a negative Z value on the chart with a single color, which can be specified for this attribute.",
                 "range": "Hex Color Code",
                 "type": "Color",
