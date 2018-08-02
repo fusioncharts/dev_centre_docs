@@ -249,7 +249,7 @@ The installation steps for both the modules are shown below:
                 "xAxisName": "Country",
                 "yAxisName": "Reserves (MMbbl)",
                 "numberSuffix": "K",
-                "theme": "fusion",
+                "theme": "fusion"
             },
             // Chart Data
             "data": [{
@@ -311,43 +311,41 @@ $ npm install fusioncharts
         height: '400', // Height of the chart
         dataFormat: 'json', // Data type
         dataSource: {
-            chart: {
-                // Chart Configuration
-                "chart": {
-                    "caption": "Countries With Most Oil Reserves [2017-18]",
-                    "subCaption": "In MMbbl = One Million barrels",
-                    "xAxisName": "Country",
-                    "yAxisName": "Reserves (MMbbl)",
-                    "numberSuffix": "K",
-                    "theme": "fusion",
-                },
-                // Chart Data
-                "data": [{
-                    "label": "Venezuela",
-                    "value": "290"
-                }, {
-                    "label": "Saudi",
-                    "value": "260"
-                }, {
-                    "label": "Canada",
-                    "value": "180"
-                }, {
-                    "label": "Iran",
-                    "value": "140"
-                }, {
-                    "label": "Russia",
-                    "value": "115"
-                }, {
-                    "label": "UAE",
-                    "value": "100"
-                }, {
-                    "label": "US",
-                    "value": "30"
-                }, {
-                    "label": "China",
-                    "value": "30"
-                }]
-            }
+            // Chart Configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion"
+            },
+            // Chart Data
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
         }
     });
     // Render
@@ -454,14 +452,13 @@ var FusionCharts = require('fusioncharts');
     FusionCharts.addDep(World);
         
     // Create an Instance with map options
-    var salesByContinent =   new  FusionCharts({
+    var annualPopulation =   new  FusionCharts({
         type: 'world', // Map type
         renderAt: 'chart-container', // Container
         width: '800', // Width of the chart
         height: '550', // Height of the chart
         dataFormat: 'json', // Data Type
         dataSource: {
-        chart: {
             // Map Configuration
             "chart": {
                 "caption": "Average Annual Population Growth",
@@ -536,14 +533,13 @@ chartInstance.render()
     World(FusionCharts);
 
     // Create an Instance with map options
-    var salesByContinent =   new  FusionCharts({
+    var annualPopulation =   new  FusionCharts({
         type: 'world', // Map type
         renderAt: 'chart-container', // Container
         width: '800', // Width of the chart
         height: '550', // Height of the chart
         dataFormat: 'json', // Data Type
         dataSource: {
-        chart: {
             // Map Configuration
             "chart": {
                 "caption": "Average Annual Population Growth",
