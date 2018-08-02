@@ -20,9 +20,9 @@ In this article, we will show you how to download and install the `FusionCharts 
 
 In order to install and start working with FusionCharts ASP.NET wrapper, you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
 
-* JavaScript files to render **Charts**, **Widgets** and **PowerCharts** under the `js` folder.
-* JavaScript files to render maps under the `js > maps` folder.
-* JavaScript files to apply themes under the `js > themes` folder.
+* JavaScript files to render **Charts**, **Widgets** and **PowerCharts** in the `js` folder.
+* JavaScript files to render maps in the `js > maps` folder.
+* JavaScript files to apply themes in the `js > themes` folder.
 
 The folder structure is shown below:
 
@@ -30,7 +30,7 @@ The folder structure is shown below:
 
 > You need to copy all the files/folders from `fusioncharts-suite-xt > js` folder to your project folder.
 
-* The download package also contains ASP.NET (VB and C#) wrapper under `fusioncharts-suite-xt > integrations > asp.net-vb` and `asp.net-cs` folder respectively.
+* The download package also contains ASP.NET (VB and C#) wrapper in `fusioncharts-suite-xt > integrations > asp.net-vb` and `asp.net-cs` folder respectively.
 
 The above folders will also contain FusionCharts ASP.NET's native **[Export Handler]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net '@@open-newtab')**. The folder structure is shown below:
 
@@ -106,13 +106,15 @@ FusionCharts Suite XT provides **1400+** data-driven maps as a part of the Fusio
 
 **To add the FusionCharts ASP.NET wrapper in your project:**
 
-Copy the `FusionCharts.cs` or `FusionCharts.vb` class (C#/VB) file from `integrations > asp.net-cs >fusioncharts-wrapper-source` (for C#) or `integration > asp.net-vb > fusioncharts-wrapper-source` (for VB) to `App_Code` folder inside your project.
+**Step 1:** Copy the `FusionCharts.cs` or `FusionCharts.vb` class (C#/VB) file from `integrations > asp.net-cs >fusioncharts-wrapper-source` (for C#) or `integration > asp.net-vb > fusioncharts-wrapper-source` (for VB) to `App_Code` folder inside your project.
 
 OR
 
 You can also add a reference to `FusionCharts.dll` in your project to work with either **VB** or **C#**. `FusionCharts.dll` is present in `integrations > asp.net-cs > fusioncharts-wrapper-assembly` folder or `integrations > asp.net-vb > fusioncharts-wrapper-assembly`.
 
-To render a map, you need to `include` the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. Once done, insert the `<script>` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The ``<script>`` tag is shown below:
+**Step 2:** To render a map, you need to include the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, and the map definition files to your project's folder. 
+
+**Step 3:** Once done, insert the `<script>` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The `<script>` tag is shown below:
 
 ```
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>

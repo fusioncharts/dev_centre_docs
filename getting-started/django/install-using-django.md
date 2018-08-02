@@ -25,7 +25,7 @@ The folder structure is shown below:
 
 > You need to copy all the files/folders from `fusioncharts-suite-xt > js` folder to the STATIC folder of your application.
 
-* The download package also contains **fusioncharts.py** file under `fusioncharts-suite-xt > integrations > django > fusioncharts-wrapper` folder. The folder structure is shown below:
+* The download package also contains **fusioncharts.py** file in the `fusioncharts-suite-xt > integrations > django > fusioncharts-wrapper` folder. The folder structure is shown below:
 
 ![Django Js Folder]({% site.baseurl %}/gif/django-folder-structure.gif)
 
