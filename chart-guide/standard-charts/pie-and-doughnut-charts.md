@@ -141,7 +141,7 @@ Refer to the code given below:
 {
   "chart": {
     "defaultCenterLabel": "Total revenue: $60K",
-    "centerLabel": "Revenue from $label: $value"
+    "centerLabel": "$value"
   },
 }
 ```
@@ -156,7 +156,7 @@ Click [here](http://jsfiddle.net/fusioncharts/wYj95/ "@@open-newtab") to edit th
 
 By default, the pie and doughnut charts allow you to slice out multiple pie/doughnut slices at one time. You can, however, opt to enable slicing-out only one slice at a time.
 
-By default, single slicing is enabled. To stop the single slicing set the `enableMultiSlicing` attribute to `0`. 
+By default, multiple slicing is enabled. To stop the multiple slicing set the `enableMultiSlicing` attribute to `0`. 
 
 Refer to the code given below:
 
