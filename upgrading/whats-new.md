@@ -38,7 +38,7 @@ A multi-level pie chart with above attributes look like:
 
 {% embed_all whats-new-multi-level-pie-example-4.js %}
 
-For the detailed description of the attributes, click here.
+For the detailed description of the attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=multilevelpie '@@open-newtab').
 
 ## Configure Inner Radius of Multi-level Pie chart
 
@@ -68,4 +68,4 @@ For the detailed desctiption of the attributes, click [here]({% site.baseurl %}/
 
 The zoomline chart with above attributes look like:
 
-{% embed_chart whats-new-zoomline-chart-example-6.js %}
+{% embed_all whats-new-zoomline-chart-example-6.js %}

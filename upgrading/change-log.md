@@ -7,7 +7,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 ## New Features
 
-* FusionCharts Suite XT v3.13.0 introduces two new chart types: **[overlapped column](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts#overlapped-column-d-chart-3)** chart and **[overlapped bar](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts#overlapped-bar-d-chart-6)** chart.
+* FusionCharts Suite XT v3.13.0 introduces two new chart types: **[Overlapped column](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts#overlapped-column-d-chart-3)** chart and **[Overlapped bar](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts#overlapped-bar-d-chart-6)** chart.
 
 * Spline and Spline Area charts are now part of both FusionCharts XT and PowerCharts XT. 
 
@@ -19,7 +19,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * The inner radius of the multi-level pie chart can be configured explicitly using `innerRadius` attribute.
 
-* Custom fonts from client-side export can now be exported using [useSVGDeCanvo](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member-9) option.
+* Custom fonts from client-side export can now be exported using [useCanvas](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member-9) option.
 
 * Data from Multi-level Pie charts can now be exported in CSV or XLS formats.
 
@@ -875,16 +875,16 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 ## Deprecated
 
-    * `showFormBtn` (deprecated)
+* `showFormBtn` (deprecated)
 
-    * `formBtnTitle` (deprecated)
+* `formBtnTitle` (deprecated)
 
-    * `showRestoreBtn` (deprecated)
+* `showRestoreBtn` (deprecated)
 
-    * `restoreBtnTitle` (deprecated)
+* `restoreBtnTitle` (deprecated)
 
-    * `setTransparent()` method is deprecated. Use `containerBackgroundOpacity` instead.
+* `setTransparent()` method is deprecated. Use `containerBackgroundOpacity` instead.
 
-    * `ref` property is deprecated. Use `getObjectReference()` instead.
+* `ref` property is deprecated. Use `getObjectReference()` instead.
 
-    * `dataXMLInvalid` event is deprecated. Use `dataInvalid` instead.
+* `dataXMLInvalid` event is deprecated. Use `dataInvalid` instead.
