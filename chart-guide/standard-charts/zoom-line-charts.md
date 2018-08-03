@@ -319,7 +319,6 @@ Refer to the code below:
         ...
         "showPeakData": "1",
         "maxPeakDataLimit": "1000"
-
     },
 }
 ```
