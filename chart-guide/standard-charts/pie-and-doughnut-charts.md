@@ -367,7 +367,6 @@ Refer to the code given below:
 {
   "chart": {
     "use3DLighting": "1",
-    "radius3D": "5"
   },
 }
 ```
