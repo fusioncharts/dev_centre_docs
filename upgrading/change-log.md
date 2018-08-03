@@ -875,13 +875,15 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 ## Deprecated
 
-* `showFormBtn` (deprecated)
+* Following are the list of deprecated attributes:
 
-* `formBtnTitle` (deprecated)
+    * `showFormBtn`
 
-* `showRestoreBtn` (deprecated)
+    * `formBtnTitle`
 
-* `restoreBtnTitle` (deprecated)
+    * `showRestoreBtn`
+
+    * `restoreBtnTitle`
 
 * `setTransparent()` method is deprecated. Use `containerBackgroundOpacity` instead.
 
