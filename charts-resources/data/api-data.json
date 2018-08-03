@@ -26,7 +26,7 @@
                                 "type": [
                                     "string"
                                 ],
-                                "description": "Provide the name of the chart type to be rendered. Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab') for the complete list of charts in FusionCharts Suite XT.\n\nThis parameter controls what chart will be rendered. The data passed to the chart has to be compatible with the chart type specified here.\n\nAlternatively, you can also call [chartType]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#chartType) on the chart instance to provide the chart type.",
+                                "description": "Provide the name of the chart type to be rendered. Click [here]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab') for the complete list of charts in FusionCharts Suite XT.\n\nThis parameter controls what chart will be rendered. The data passed to the chart has to be compatible with the chart type specified here.\n\nAlternatively, you can also call [chartType]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#chartType) on the chart instance to provide the chart type.",
                                 "defaultvalue": "",
                                 "optional": true,
                                 "nullable": false,
@@ -37550,12 +37550,12 @@
                             "optional": "",
                             "nullable": ""
                         },
-                        "export.useSVGDeCanvo": {
-                            "name": "export.useSVGDeCanvo",
+                        "export.useCanvas": {
+                            "name": "export.useCanvas",
                             "type": [
                                 "string"
                             ],
-                            "description": "Custom fonts from client side export can now be exported using `useSVGDeCanvo` option. While exporting in SVG format, do include all the external resources in the page.",
+                            "description": "Custom fonts from client side export can now be exported using `useCanvas` option. While exporting in SVG format, do include all the external resources in the page.",
                             "defaultvalue": "False",
                             "optional": "",
                             "nullable": ""

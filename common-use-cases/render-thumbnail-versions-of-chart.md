@@ -1,10 +1,8 @@
 ---
-permalink: advanced-chart-configurations/tutorials/render-thumbnail-versions-of-chart.html
 title: Render Thumbnail Versions of Charts | FusionCharts
 description: This section talks about render a chart in thumbnail version, which is use when space is a limitation.
 heading: Render Thumbnail Versions of Charts
 chartPresent: true
-layout: page
 ---
 
 FusionCharts Suite XT gives you an option to render your charts as thumbnail versions, which is useful when space is a limitation. It may be required at times to show only thumbnail versions of charts. These thumbnails when clicked will expand to render a chart.

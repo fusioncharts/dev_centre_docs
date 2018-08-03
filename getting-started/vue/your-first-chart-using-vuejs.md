@@ -11,7 +11,7 @@ Before going through this article, [install]({% site.baseurl %}/getting-started/
 
 ## Create your first chart
 
-In this section, we will create a chart using `vue-fusioncharts`. Let's create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
+In this section, we will create a chart using `vue-fusioncharts`. Let's create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab').
 
 To create charts, the `vue-fusioncharts` component can be passed as part of another VueJs component.
 
@@ -36,7 +36,7 @@ China|30|
 
 It's time to convert it into JSON format, as FusionCharts accepts data in either JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
 
-> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts '@@open-newtab'), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
 ```javascript
 {
@@ -93,7 +93,7 @@ Functional attributes let you control a variety of functional elements on the ch
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
 * `numberPrefix` adds a prefix to all the numbers visible on the chart.
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` (default theme) as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
+* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` theme as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetic Attributes
 
@@ -182,7 +182,7 @@ See the complete list of [all possible attributes]({% site.baseurl %}/chart-attr
 
 In the JavaScript code, execution of `const app = new Vue({ })` creates a new Vue instance called **app**. 
 
-Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for different charts.
+Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for different charts.
 
 ## Create your first gauge
 

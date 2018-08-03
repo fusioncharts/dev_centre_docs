@@ -100,7 +100,7 @@ Refer to the code below:
 {
     "chart": {
     	...
-        "enableExport": "1"
+        "exportEnabled": "1"
     },
 }
 ```

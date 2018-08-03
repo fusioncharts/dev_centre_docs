@@ -47,7 +47,7 @@ File Name|Description|
 `fusioncharts.overlappedbar2d.js`|This file is required to render the Overlapped Bar 2D chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedbar2d.js` provided they are in the same folder.|
 `fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js` provided they are in the same folder.|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js` provided they are in the same folder.|
-`maps/*`|This folder contains Map Definition files required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1400+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
+`maps/*`|This folder contains Map Definition files required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1400+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/map-definition-files '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be applied to charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
 
 To install FusionCharts Suite XT, simply copy and paste the JavaScript files from the downloaded package into your project folder. 
@@ -63,8 +63,6 @@ Create a PHP file and follow the steps given below:
 ```
 
 **Step 2 (optional):** Include the theme file:
-
-This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
 
 ```html
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
@@ -83,9 +81,9 @@ This completes the installation of FusionCharts in your application. To see how 
 
 ## Installing FusionMaps for your project
 
-FusionCharts Suite XT provides **1400+** data-driven maps as a part of the FusionMaps product. To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **Map of USA**. However, you can [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the remaining map definition files to plot maps of those countries/regions.
+FusionCharts Suite XT provides **1400+** data-driven maps as a part of the FusionMaps product. To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **Map of USA**. However, you can [download](https://www.fusioncharts.com/download/map-definition-files '@@open-newtab') the remaining map definition files to plot maps of those countries/regions.
 
-> If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the latest version and replace for upgrading to the latest map definition files.
+> If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/map-definition-files '@@open-newtab') the latest version and replace for upgrading to the latest map definition files.
 
 To install FusionMaps follow the steps given below:
 
@@ -105,7 +103,7 @@ In the above example, we’ve included the **World Map**, whose map definition (
 
 **Load other map definition files**
 
-To use any other map (except **World** and **USA**) from our **1400+** maps, [download](https://www.fusioncharts.com/download/maps/definition/ '@@open-newtab') the map definition files and copy them to your current `maps` folder. The map definition files are named in `fusioncharts.[MAP_ALIAS].js` format, where MAP_ALIAS represents the country, state, or region name.
+To use any other map (except **World** and **USA**) from our **1400+** maps, [download](https://www.fusioncharts.com/download/map-definition-files '@@open-newtab') the map definition files and copy them to your current `maps` folder. The map definition files are named in `fusioncharts.[MAP_ALIAS].js` format, where MAP_ALIAS represents the country, state, or region name.
 
 Insert the `<script>` tag where you want to include the source of the FusionCharts library link from the specific local folder in the project. The `<script>` tag is shown below:
 

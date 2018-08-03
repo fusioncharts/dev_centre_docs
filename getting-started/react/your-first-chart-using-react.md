@@ -11,7 +11,7 @@ Before going through this article, please [install]({% site.baseurl %}/getting-s
 
 ## Create your first chart
 
-In this section, we will create a chart using **react-fusioncharts**. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
+In this section, we will create a chart using **react-fusioncharts**. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab').
 
 Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a **Column 2D** chart as shown below:
 
@@ -34,7 +34,7 @@ China|30|
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For React, we recommend JSON format. 
 
-> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts '@@open-newtab'), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
 The converted format will look as shown below:
 
@@ -98,7 +98,7 @@ Functional attributes let you control a variety of functional elements on the ch
 
 * `numberPrefix` adds a prefix to all the numbers visible on the chart.
 
-* Please note, we have used the theme attribute in the chart's JSON data and provided `fusion` (default theme) as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
+* Please note, we have used the theme attribute in the chart's JSON data and provided `fusion` theme as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetic Attributes
 
@@ -201,7 +201,7 @@ That's it! When you run this HTML page now, you should see a chart representing 
 
 See the complete list of [all possible attributes ]({% site.baseurl %}/chart-attributes/?chart=column2d)(the keys in the `dataSource` object) for a Column 2D chart.
 
-Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts) or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d) for the charts.
+Now, go on and explore other 95+ chart types that we've in [FusionCharts]({% site.baseurl %}/chart-guide/list-of-charts) or explore the configuration [attribute]({% site.baseurl %}/chart-attributes/?chart=area2d) for the charts.
 
 ## Create your first gauge
 

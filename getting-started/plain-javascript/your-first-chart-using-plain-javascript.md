@@ -13,7 +13,7 @@ Before going through this article, please [install]({% site.baseurl %}/getting-s
 
 ## Create your first chart
 
-In this section, we will create a chart using the FusionCharts Suite XT library. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
+In this section, we will create a chart using the FusionCharts Suite XT library. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab').
 
 Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a **Column 2D** chart as shown below:
 
@@ -36,7 +36,7 @@ China|30|
 
 FusionCharts accepts data in JSON or XML format. In this section, we will convert the tabular data into JSON format. The converted format is shown below:
 
-> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts '@@open-newtab'), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
 ```javascript
 {
@@ -93,7 +93,7 @@ Functional attributes let you control a variety of functional elements on the ch
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
 * `numberPrefix` adds a prefix to all the numbers visible on the chart.
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` (default theme) as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
+* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` theme as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetic Attributes
 
@@ -138,47 +138,46 @@ The code to render a chart is given below:
 FusionCharts.ready(function() {
     var revenueChart = new FusionCharts({
         type: 'column2d', // The chart type
+        renderAt: 'chart-container', // Container of the chart
         width: '700', // Width of the chart
         height: '400', // Height of the chart
         dataFormat: 'json', // Data type
         dataSource: {
-            chart: {
-                // Chart Configuration
-                "chart": {
-                    "caption": "Countries With Most Oil Reserves [2017-18]",
-                    "subCaption": "In MMbbl = One Million barrels",
-                    "xAxisName": "Country",
-                    "yAxisName": "Reserves (MMbbl)",
-                    "numberSuffix": "K",
-                    "theme": "fusion",
-                },
-                // Chart Data
-                "data": [{
-                    "label": "Venezuela",
-                    "value": "290"
-                }, {
-                    "label": "Saudi",
-                    "value": "260"
-                }, {
-                    "label": "Canada",
-                    "value": "180"
-                }, {
-                    "label": "Iran",
-                    "value": "140"
-                }, {
-                    "label": "Russia",
-                    "value": "115"
-                }, {
-                    "label": "UAE",
-                    "value": "100"
-                }, {
-                    "label": "US",
-                    "value": "30"
-                }, {
-                    "label": "China",
-                    "value": "30"
-                }]
-            }
+            // Chart Configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+            },
+            // Chart Data
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
         }
     }
 });
@@ -259,7 +258,7 @@ The full HTML code is shown below:
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') for a Column 2D chart.
 
-Now, go on and explore other 95+ chart types that we have at [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for different charts.
+Now, go on and explore other 95+ chart types that we have at [FusionCharts]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for different charts.
 
 ## Create your first gauge
 
@@ -364,42 +363,40 @@ FusionCharts.ready(function() {
         height: '250', // Height of the chart
         dataFormat: 'json', // Data Type
         dataSource: {
-            chart: {
-                // Chart Configuration
-                "chart": {
-                    "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-                    "lowerLimit": "0",
-                    "upperLimit": "100",
-                    "showValue": "1",
-                    "numberSuffix": "%",
-                    "theme": "fusion",
-                    "showToolTip": "0"
-                },
-                // Chart Data
-                "colorRange": {
-                    "color": [{
-                        "minValue": "0",
-                        "maxValue": "50",
-                        "code": "#F2726F"
-                    }, {
-                        "minValue": "50",
-                        "maxValue": "75",
-                        "code": "#FFC533"
-                    }, {
-                        "minValue": "75",
-                        "maxValue": "100",
-                        "code": "#62B58F"
-                    }]
-                },
-                "dials": {
-                    "dial": [{
-                        "value": "81"
-                    }]
-                }
+            // Chart Configuration
+            "chart": {
+                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                "lowerLimit": "0",
+                "upperLimit": "100",
+                "showValue": "1",
+                "numberSuffix": "%",
+                "theme": "fusion",
+                "showToolTip": "0"
+            },
+            // Chart Data
+            "colorRange": {
+                "color": [{
+                    "minValue": "0",
+                    "maxValue": "50",
+                    "code": "#F2726F"
+                }, {
+                    "minValue": "50",
+                    "maxValue": "75",
+                    "code": "#FFC533"
+                }, {
+                    "minValue": "75",
+                    "maxValue": "100",
+                    "code": "#62B58F"
+                }]
+            },
+            "dials": {
+                "dial": [{
+                    "value": "81"
+                }]
             }
         }
-    }
-});
+    });
+}
 ```
 
 The full HTML code is given below:
@@ -452,8 +449,9 @@ The full HTML code is given below:
                         }]
                     }
                 }
-            csatGauge.render();
-        });
+                csatGauge.render();
+            });
+        }
     </script>
 </head>
 
@@ -567,7 +565,7 @@ In this step, we will:
 The code to render a map is given below:
 
 ```javascript
-FusionCharts.ready(  function  () { 
+FusionCharts.ready(function () { 
     var  annualPopulation =   new  FusionCharts({
         type: 'world', // Map type
         renderAt: 'chart-container', // Container
@@ -575,66 +573,64 @@ FusionCharts.ready(  function  () {
         height: '550', // Height of the chart
         dataFormat: 'json', // Data Type
         dataSource: {
-            chart: {
-                // Map Configuration
-                "chart": {
-                    "caption": "Average Annual Population Growth",
-                    "subcaption": " 1955-2015",
-                    "numbersuffix": "%",
-                    "includevalueinlabels": "1",
-                    "labelsepchar": ": ",
-                    "entityFillHoverColor": "#FFF9C4",
-                    "theme": "fusion"
-                },
-                // Aesthetics; ranges synced with the slider
-                "colorrange": {
-                    "minvalue": "0",
-                    "code": "#FFE0B2",
-                    "gradient": "1",
-                    "color": [{
-                        "minvalue": "0.5",
-                        "maxvalue": "1.0",
-                        "color": "#FFD74D"
-                    }, {
-                        "minvalue": "1.0",
-                        "maxvalue": "2.0",
-                        "color": "#FB8C00"
-                    }, {
-                        "minvalue": "2.0",
-                        "maxvalue": "3.0",
-                        "color": "#E65100"
-                    }]
-                },
-                // Source data as JSON --> id represents countries of world.
-                "data": [{
-                    "id": "NA",
-                    "value": ".82",
-                    "showLabel": "1"
+            // Map Configuration
+            "chart": {
+                "caption": "Average Annual Population Growth",
+                "subcaption": " 1955-2015",
+                "numbersuffix": "%",
+                "includevalueinlabels": "1",
+                "labelsepchar": ": ",
+                "entityFillHoverColor": "#FFF9C4",
+                "theme": "fusion"
+            },
+            // Aesthetics; ranges synced with the slider
+            "colorrange": {
+                "minvalue": "0",
+                "code": "#FFE0B2",
+                "gradient": "1",
+                "color": [{
+                    "minvalue": "0.5",
+                    "maxvalue": "1.0",
+                    "color": "#FFD74D"
                 }, {
-                    "id": "SA",
-                    "value": "2.04",
-                    "showLabel": "1"
+                    "minvalue": "1.0",
+                    "maxvalue": "2.0",
+                    "color": "#FB8C00"
                 }, {
-                    "id": "AS",
-                    "value": "1.78",
-                    "showLabel": "1"
-                }, {
-                    "id": "EU",
-                    "value": ".40",
-                    "showLabel": "1"
-                }, {
-                    "id": "AF",
-                    "value": "2.58",
-                    "showLabel": "1"
-                }, {
-                    "id": "AU",
-                    "value": "1.30",
-                    "showLabel": "1"
+                    "minvalue": "2.0",
+                    "maxvalue": "3.0",
+                    "color": "#E65100"
                 }]
-            }
+            },
+            // Source data as JSON --> id represents countries of world.
+            "data": [{
+                "id": "NA",
+                "value": ".82",
+                "showLabel": "1"
+            }, {
+                "id": "SA",
+                "value": "2.04",
+                "showLabel": "1"
+            }, {
+                "id": "AS",
+                "value": "1.78",
+                "showLabel": "1"
+            }, {
+                "id": "EU",
+                "value": ".40",
+                "showLabel": "1"
+            }, {
+                "id": "AF",
+                "value": "2.58",
+                "showLabel": "1"
+            }, {
+                "id": "AU",
+                "value": "1.30",
+                "showLabel": "1"
+            }]
         }
-    }
-});
+    });
+}
 ```
 
 The full HTML code is given below:

@@ -107,7 +107,7 @@ With FusionCharts Suite XT, you can set and retrieve the charts' upper and lower
 
 * `getUpperLimit()` - Set this attribute to return the current upper limit of the chart.
 
-* `setLowerLimit` - Set this attribute to return the current lower limit of the chart.
+* `getLowerLimit()` - Set this attribute to return the current lower limit of the chart.
 
 > Provide a callback Function if `asyncRender` is set to `1` (default) where you get the output of this function as a parameter of the callback function. The callback implementation does not require to listen to the `renderComplete` event.
 
@@ -322,6 +322,6 @@ Thus, the array returned by the `getData()` function is a two-dimensional array 
 
 A drag-column chart configured to retrieve data using the `getData()` method looks like this:
 
-{% embed_charts standard-charts-drag-able-charts-example-8.js %}
+{% embed_chart standard-charts-drag-able-charts-example-8.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/qzm79rsv/ "@@open-newtab") to edit the above drag-able chart.

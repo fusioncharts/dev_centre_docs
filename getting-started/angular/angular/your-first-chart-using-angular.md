@@ -11,7 +11,7 @@ Before going through this article, please [install]({% site.baseurl %}/getting-s
 
 ## Create your first chart
 
-In this section, we will create a chart using the `angular-fusioncharts` component. We will create a **Column 2D** chart which has the alias `column2d` in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
+In this section, we will create a chart using the `angular-fusioncharts` component. We will create a **Column 2D** chart which has the alias `column2d` in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list [here]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab').
 
 To create charts, the `angular-fusioncharts` component can be passed as a part of another angular component.
 
@@ -36,7 +36,7 @@ China|30|
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
 
-> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts '@@open-newtab'), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
 
 ```javascript
 {
@@ -93,7 +93,7 @@ Functional attributes let you control a variety of functional elements on the ch
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, while `yAxisName` sets the name of the y-axis.
 * `numberPrefix` adds a prefix to all the numbers visible on the chart.
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` (default theme) as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
+* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` theme as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetics Attributes
 
@@ -198,7 +198,7 @@ Add the following code to `app.component.html`:
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a Column 2D chart.
 
-Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for different charts.
+Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for different charts.
 
 ## Create your first gauge
 

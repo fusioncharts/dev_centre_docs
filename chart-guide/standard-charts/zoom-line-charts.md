@@ -361,7 +361,7 @@ Click [here](http://jsfiddle.net/fusioncharts/0d9cqh3u/ "@@open-newtab") to conf
 
 **Scenario 3**
 
-To display all values less than a particular value in the chart, do the following:
+To display all values less than the minimum limit and more than the maximum limit, do the following:
 
 * Set the value of `showPeakData` to `1`.
 * Set the value of `minPeakDataLimit` to the maximum value of plots that should be displayed on the chart.
@@ -394,7 +394,7 @@ There may be situations, where a particular range of value is more important to 
 
 As of FusionCharts v3.12.1, there's no way to achieve this. However v3.13.0 onwards, FusionCharts supports a new feature, where you can reverse the min-max condition, by setting the  **min value** greater than the **max value**. The chart will then include all values within the range. For instance, in v3.13.0, to include all values inside the range 500-1000, do the following:
 
-To display all values less than a particular value in the chart, do the following:
+To display all values more than the minimum limit and less than the maximum limit, do the following:
 
 * Set the value of `showPeakData` to `1`.
 * Set the value of `minPeakDataLimit` to `1000`.

@@ -14,6 +14,6 @@ You install maps automatically, as part of the FusionCharts Suite XT package. Fo
 
 The FusionCharts Suite XT download package contains only the USA and World maps as part of the package. To work with other maps, you need the definition files for them. A map definition file contains all the data necessary to create and render a map. You can download the additional map definition files from [here](https://www.fusioncharts.com/download/maps/definition).
 
-Note that the definition files you download will yield maps in extremely high resolutions. If you do not need such high resolution maps, send in a [request for custom resolution maps](https://www.fusioncharts.com/download/maps/definition/) to our Customer Support team.
+Note that the definition files you download will yield maps in extremely high resolutions. If you do not need such high resolution maps, send in a [request for custom resolution maps](https://www.fusioncharts.com/download/map-definition-files) to our Customer Support team.
 
 Once you download the map definition package, locate the `maps` folder in the package. Copy the relevant map definition files from the `maps` folder of the download package to the `fusioncharts/maps` folder to start using them. For example, if you need to render the California map, copy the `fusioncharts.california.js` file from the maps folder of the download package and paste it into the `fusioncharts/maps/` folder.
