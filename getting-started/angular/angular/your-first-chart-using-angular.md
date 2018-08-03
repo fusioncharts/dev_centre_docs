@@ -11,7 +11,7 @@ Before going through this article, please [install]({% site.baseurl %}/getting-s
 
 ## Create your first chart
 
-In this section, we will create a chart using the `angular-fusioncharts` component. We will create a **Column 2D** chart which has the alias `column2d` in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list [here]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab').
+In this section, we will create a chart using the `angular-fusioncharts` component. We will create a **Column 2D** chart which has the alias `column2d` in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list [here]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab').
 
 To create charts, the `angular-fusioncharts` component can be passed as a part of another angular component.
 
@@ -198,7 +198,7 @@ Add the following code to `app.component.html`:
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a Column 2D chart.
 
-Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/getting-started/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for different charts.
+Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for different charts.
 
 ## Create your first gauge
 
