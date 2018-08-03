@@ -257,8 +257,15 @@
     },
     "events": {
         "beforeRender": function(e) {
+            //Configure the second level chart's properties
             e.sender.configureLink({
-                "type": "maps/usa"
+                type: "mscombidy2d",
+                overlayButton: {
+                    message: 'Back',
+                    fontColor: '880000',
+                    bgColor: 'FFEEEE',
+                    borderColor: '660000'
+                }
             }, 0);
         }
     }
