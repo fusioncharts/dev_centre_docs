@@ -19,7 +19,7 @@
             "gaugeBorderThickness": "2",
             "gaugeBorderAlpha": "30",
             "thmOriginX": "100",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "value": "-6"
     },

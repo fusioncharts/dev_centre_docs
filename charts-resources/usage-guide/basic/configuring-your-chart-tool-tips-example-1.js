@@ -17,7 +17,7 @@
             "toolTipBgColor": "#666666",
             "toolTipBgAlpha": "80",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Q1",

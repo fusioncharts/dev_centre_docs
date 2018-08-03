@@ -15,7 +15,7 @@
             "tickValueDecimals": "1",
             "forceTickValueDecimals": "1",
             "gaugeFillMix": "{dark-40},{light-40},{dark-20}",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

@@ -10,7 +10,7 @@
             "subcaption": "Los Angeles Topanga",
             "plotToolText": "Current Score: $value",
             "gaugeFillMix": "{dark-40},{light-40},{dark-20}",
-            "theme": "fint",
+            "theme": "fusion",
             "gaugeOriginY": "230",
             "showValue": "1"
         },

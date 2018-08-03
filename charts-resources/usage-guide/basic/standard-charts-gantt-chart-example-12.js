@@ -9,7 +9,7 @@
             "dateformat": "mm/dd/yyyy",
             "caption": "Social Media Optimization",
             "taskBarRoundRadius": "6",
-            "theme": "fint",
+            "theme": "fusion",
             "canvasBorderAlpha": "40"
         },
         "categories": [{

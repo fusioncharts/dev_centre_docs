@@ -18,7 +18,7 @@
                 "rotateYAxisName": "1",
                 "plotTooltext": "<div id='valueDiv'><b>$seriesName</b>, Admission rate % : <b>$xDataValue</b>, Return % : <b>$yDataValue</b></div>",
                 "showRegressionLine": "1", //render the chart with regression lines
-                "theme": "fint"
+                "theme": "fusion"
         },
         "dataset": [
                 {

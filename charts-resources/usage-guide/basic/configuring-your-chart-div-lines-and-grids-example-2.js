@@ -10,7 +10,7 @@
             "subCaption": "Last week Vs This week",
             "xAxisName": "Day",
             "yAxisName": "No. of Visitors",
-            "theme": "fint",
+            "theme": "fusion",
             //Divisional line cosmetics
             "divLineColor": "#6699cc",
             "divLineAlpha": "60",

@@ -8,7 +8,7 @@
         "chart": {
             "caption": "Monthly Revenue",
             "subCaption": "Last year",
-            "theme": "fint",
+            "theme": "fusion",
             "xAxisName": "Month",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",

@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "AMC payable",
             "subcaption": "For cooling units",
             "xaxisname": "Unit",

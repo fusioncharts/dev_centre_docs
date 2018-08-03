@@ -2,10 +2,10 @@
 # Front matter (even empty) required for Jekyll to process
 ---
 
-#### JavaScript Alias: maps/southpyongan
+#### JavaScript Alias: maps/southpyongan 
 
-Map Name: Southpyongan
-Dimensions (Width x Height): 535x522
+Map Name: South Pyongan 
+Dimensions (Width x Height): 610x570
 
 
 
@@ -16,31 +16,24 @@ Dimensions (Width x Height): 535x522
 ID | Short label | Label
 ---|---|---|---
 KP.AN|AN|Anju
-KP.BK|BK|Bukchang
+KP.BK|BK|Bukchangl
 KP.CM|CM|Chollima
 KP.CN|CN|Chongnam
-KP.DN|DN|Daean
 KP.DD|DD|Daedong
 KP.DH|DH|Daehung
 KP.DO|DO|Dokchon
 KP.DU|DU|Dukjang
-KP.HG|HG|Hanggu
 KP.HO|HO|Hoichang
 KP.JU|JU|Jungsan
 KP.KA|KA|Kaechon
-KP.KS|KS|Kangso
 KP.MS|MS|Maengsan
 KP.MU|MU|Mundok
 KP.NW|NW|Nyongwon
-KP.OC|OC|Onchon
-KP.PS|PS|Pyongsong
 KP.PY|PY|Pyongwon
-KP.RY|RY|Ryonggang
+KP.PS|PS|Pyongsong
 KP.SI|SI|Sinyang
 KP.SO|SO|Songchon
 KP.SU|SU|Sukchon
 KP.SC|SC|Sunchon
 KP.UN|UN|Unsan
-KP.WA|WA|Waudo
 KP.YD|YD|Yangdok
-

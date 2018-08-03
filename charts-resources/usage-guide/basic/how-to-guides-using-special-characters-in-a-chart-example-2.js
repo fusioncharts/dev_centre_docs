@@ -12,7 +12,7 @@
             "xAxisName": "Month",
             "yAxisName": "Amount",
             "numberPrefix": "¥",
-            "theme": "fint",
+            "theme": "fusion",
             "rotateValues": "1",
             "exportEnabled": "1"
         },

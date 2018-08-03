@@ -7,7 +7,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Diesel Level in Generator",
             "subcaption": "Bakersfield Central",
             "lowerLimit": "0",

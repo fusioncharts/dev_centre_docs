@@ -13,7 +13,7 @@
             "xAxisName": "Month",
             "yAxisName": "Revenue",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             //Attributes to configure Trend Values
             "trendValueBgColor": "000000",
             "trendValueBgAlpha": "70"

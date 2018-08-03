@@ -9,7 +9,7 @@
             "dateformat": "mm/dd/yyyy",
             "caption": "Social Media Optimization",
             "subcaption": "Project Plan",
-            "theme": "fint",
+            "theme": "fusion",
             "useVerticalScrolling": "0",
             "canvasBorderAlpha": "40"
         },

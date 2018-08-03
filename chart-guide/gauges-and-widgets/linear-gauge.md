@@ -111,7 +111,7 @@ Refer to the code below:
 ```json
 {
     "chart": {
-        "theme": "fint",
+        "theme": "fusion",
         "caption": "Server CPU Utilization",
         "subcaption": "food.hsm.com",
         "lowerLimit": "0",

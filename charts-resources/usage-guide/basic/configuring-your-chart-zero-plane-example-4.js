@@ -12,7 +12,7 @@
             "xAxisName": "Week",
             "yAxisName": "Growth",
             "numberSuffix": "%",
-            "theme": "fint",
+            "theme": "fusion",
             "showValues": "0",
             "showZeroPlane": "1",
             "zeroPlaneColor": "#003366",

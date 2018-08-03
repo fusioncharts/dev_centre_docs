@@ -12,10 +12,10 @@ Refer to the code snippet given below:
 
 ```html
 <script type="text/javascript" src="js/fusioncharts.js"></script>
-<script type="text/javascript" src="js/themes/fusioncharts.theme.carbon.js"></script>
+<script type="text/javascript" src="js/themes/fusioncharts.theme.zune.js"></script>
 ```
 
-> The installation routine of a theme relies on the code in the fusioncharts.js file. Therefore, make sure that this file is always included before the JavaScript file for the theme.
+> The installation routine of a theme relies on the code in the `fusioncharts.js` file. Therefore, make sure that this file is always included before the JavaScript file for the theme.
 
 Once you include the theme file, you can apply the theme using the:
 
@@ -30,21 +30,21 @@ In the following code snippet, you can see how to use the `theme` attribute to a
 ```json
 {
     chart: {
-        "theme": "carbon", //Set the value of the `theme` attribute to the name of the required theme
+        "theme": "zune", //Set the value of the `theme` attribute to the name of the required theme
         ...
     }
 }
 ```
 
-You can see a column 2D chart configured using the carbon theme, given below:
+You can see a Column 2D chart configured using the `zune` theme, given below:
 
-**<chart>**
+{% embed_chart getting-started-your-first-chart.js %}
 
-> If you are using the XML data format for the chart, you can use the theme attribute within the <chart> element. For example, <chart theme="carbon">
+> If you are using the XML data format for the chart, you can use the theme attribute within the `<chart>` element. For example, `<chart theme="zune">`
 
 ### Use the setChartAttribute() method
 
-In the following code snippet, you can see how to use the setChartAttribute() API method to apply a theme:
+In the following code snippet, you can see how to use the `setChartAttribute()` API method to apply a theme:
 
 ```json
 FusionCharts.ready(function () {
@@ -61,7 +61,7 @@ FusionCharts.ready(function () {
         }
     });
     revenueChart.render();
-    revenueChart.setChartAttribute("theme", "carbon"); //The attribute name and its value are passed as parameters to this method.
+    revenueChart.setChartAttribute("theme", "zune"); //The attribute name and its value are passed as parameters to this method.
 });
 ```
 
@@ -70,12 +70,10 @@ FusionCharts.ready(function () {
 To apply multiple themes for a chart, specify the theme names as a comma-separated list. For example, if you are using the theme attribute, this is how you specify all the themes that you want to apply:
 
 ```json
-"theme": "zune,zune-v1"
+"theme": "zune, ocean"
 ```
 
-> `zune-v1` is a user-defined theme. To find out how to create user-defined themes, refer to the Create New Themes section.
-
-Values of all attributes that you set across these themes will be applied to the chart. In case of overlapping attributes, the values you specify for the rightmost theme will take precedence. For example, if you specify the `captionFontSize` attribute for both themes, its value for the `zune-v1` theme will be applied to the caption.
+Values of all attributes that you set across these themes will be applied to the chart. In case of overlapping attributes, the values you specify for the rightmost theme will take precedence. For example, if you specify the `captionFontSize` attribute for both themes, its value for the `ocean` theme will be applied to the caption.
 
 ### Understand the theme structure
 

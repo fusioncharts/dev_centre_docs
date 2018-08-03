@@ -18,7 +18,7 @@
             //Tooltext
             "plottooltext": "Current Temperature:$value°C",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
 
 
         },

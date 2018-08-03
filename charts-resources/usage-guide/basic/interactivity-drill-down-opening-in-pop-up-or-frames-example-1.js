@@ -12,7 +12,7 @@
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
             "placevaluesInside": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "data": [{

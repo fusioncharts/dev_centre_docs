@@ -7,7 +7,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "The Global Wealth Pyramid",
             "captionOnTop": "0",
             "captionPadding": "25",

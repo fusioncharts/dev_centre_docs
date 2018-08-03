@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Job Happiness Index By Roles",
             "subCaption": "Harry's Supermart",
             "showValues": "1",

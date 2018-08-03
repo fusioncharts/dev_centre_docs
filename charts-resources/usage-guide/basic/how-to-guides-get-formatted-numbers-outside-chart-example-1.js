@@ -13,7 +13,7 @@
             "yAxisName": "No. of Units",
             "showRestoreBtn": "0",
             "allowAxisChange": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

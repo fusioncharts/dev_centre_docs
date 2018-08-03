@@ -11,7 +11,7 @@
             "xAxisName": "Quarter",
             "yAxisName": "Revenue",
             "numberPrefix": "$",
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "data": [{

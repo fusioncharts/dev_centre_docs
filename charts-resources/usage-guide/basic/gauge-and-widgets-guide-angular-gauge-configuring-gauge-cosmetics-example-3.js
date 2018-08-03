@@ -13,7 +13,7 @@
             "gaugeBorderThickness": "5",
             "showValue": "1",
             "valueBelowPivot": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

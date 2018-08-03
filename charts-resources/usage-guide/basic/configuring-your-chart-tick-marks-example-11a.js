@@ -16,7 +16,7 @@
             "minorTMNumber": "4",
             //Show tick value for every 2nd major tick mark
             "tickValueStep": "2",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorrange": {
             "color": [{

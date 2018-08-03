@@ -11,7 +11,7 @@
             "xAxisName": "Month",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             //Attributes to configure rotated label display
             "labelDisplay": "rotate",
             "slantLabels": "1"

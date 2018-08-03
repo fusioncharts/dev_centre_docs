@@ -11,7 +11,7 @@
             "yAxisName": "Revenue",
             "numberPrefix": "$",
             "showValues": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Q1",

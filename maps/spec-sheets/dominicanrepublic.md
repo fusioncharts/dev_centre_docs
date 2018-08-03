@@ -4,8 +4,8 @@
 
 #### JavaScript Alias: maps/dominicanrepublic
 
-Map Name: Dominicanrepublic
-Dimensions (Width x Height): 400x280
+Map Name: DominicanRepublic
+Dimensions (Width x Height): 610x570
 
 
 
@@ -15,8 +15,8 @@ Dimensions (Width x Height): 400x280
 
 ID | Short label | Label
 ---|---|---|---
-01|AZ|?zua
-02|BR|Bahoruco
+01|AZ|Azua
+02|BR|Baoruco
 03|BH|Barahona
 04|DA|Dajabón
 34|NC|Distrito Nacional
@@ -36,7 +36,7 @@ ID | Short label | Label
 16|PN|Pedernales
 35|PV|Peravia
 18|PP|Puerto Plata
-19|SC|Salcedo
+19|SC|Hermanas Mirabal
 20|SM|Samaná
 33|CR|San Cristóbal
 36|JO|San José de Ocoa
@@ -47,4 +47,3 @@ ID | Short label | Label
 37|SD|Santo Domingo
 21|SZ|Sánchez Ramírez
 27|VA|Valverde
-

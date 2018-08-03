@@ -18,7 +18,7 @@
             "showxaxispercentvalues": "0",
             "showsum": "1",
 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

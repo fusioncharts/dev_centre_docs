@@ -1,5 +1,4 @@
 {
-
     type: 'msbar2d',
     renderAt: 'chart-container',
     width: '450',

@@ -24,7 +24,7 @@
             //Canvas  border enabled
             "showCanvasBorder": "1",
             "bgColor": "#eeeeee",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Jan",

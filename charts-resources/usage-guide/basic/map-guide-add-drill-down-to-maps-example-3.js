@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "map": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Shipping Volume and Costs",
             "subcaption": "Distribution Network - Last Month",
             "numberSuffix": "%",
@@ -535,7 +535,7 @@
                     "slantLabel": "1",
                     "formatNumberScale": "0",
                     "sNumberPrefix": "$",
-                    "theme": "fint"
+                    "theme": "fusion"
                 },
                 "categories": [{
                     "category": [{
@@ -605,7 +605,7 @@
                     "slantLabel": "1",
                     "formatNumberScale": "0",
                     "sNumberPrefix": "$",
-                    "theme": "fint"
+                    "theme": "fusion"
                 },
                 "categories": [{
                     "category": [{
@@ -723,7 +723,7 @@
                     "slantLabel": "1",
                     "formatNumberScale": "0",
                     "sNumberPrefix": "$",
-                    "theme": "fint"
+                    "theme": "fusion"
                 },
                 "categories": [{
                     "category": [{

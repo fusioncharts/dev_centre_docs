@@ -7,7 +7,7 @@
     dataSource: {
         "chart": {
             "caption": "Global Population Density",
-            "theme": "fint",
+            "theme": "fusion",
             "showLabels": "1",
             "formatNumberScale": "0"
         },

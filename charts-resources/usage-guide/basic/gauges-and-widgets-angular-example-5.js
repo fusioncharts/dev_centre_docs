@@ -10,7 +10,7 @@
             "lowerLimit": "0",
             "upperLimit": "100",
             "showGaugeBorder": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

@@ -15,15 +15,14 @@ Dimensions (Width x Height): 801x391
 
 ID | Short label | Label
 ---|---|---|---
-WS.AA|AA|Aana
+WS.AA|AA|A'ana
 WS.AL|AL|Aiga-i-le-Tai
 WS.AT|AT|Atua
-WS.FA|FA|Faasaleleaga
-WS.GE|GE|Gagaemauga
-WS.GI|GI|Gagaifomauga
+WS.FA|FA|Fa'asaleleaga
+WS.GE|GE|Gaga'emauga
+WS.GI|GI|Gaga'ifomauga
 WS.PA|PA|Palauli
-WS.SA|SA|Satupaitea
+WS.SA|SA|Satupa'itea
 WS.TU|TU|Tuamasaga
-WS.VF|VF|Vaao Fonoti
+WS.VF|VF|Va'a-o-Fonoti
 WS.VS|VS|Vaisigano
-

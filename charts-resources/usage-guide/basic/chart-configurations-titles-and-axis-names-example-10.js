@@ -33,7 +33,7 @@
             "sYAxisNameBorderDashLen": "4",
             "sYAxisNameBorderDashGap": "2",
             //Theme 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

@@ -12,7 +12,7 @@
             "yAxisName": "Sales",
             "yAxisMaxValue": "120000",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "plotfillAlpha": "100",
             "placeValuesInside": "0",
             "rotateValues": "0",

@@ -24,7 +24,7 @@
             "minorTMAlpha": "100",
             "minorTMHeight": "6",
             "minorTMThickness": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorrange": {
             "color": [{

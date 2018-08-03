@@ -10,7 +10,7 @@
             "subCaption": "Last week",
             "xAxisName": "Day",
             "yAxisName": "No. of Visitors",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "annotations": {
             "origw": "400",

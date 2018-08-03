@@ -11,7 +11,7 @@
             "subCaptionFontSize": "12",
             "xAxisName": "Quarter",
             "yAxisName": "No. of Units",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{
@@ -29,9 +29,11 @@
             "valuePosition": "ABOVE",
             "allowDrag": "0",
             "data": [{
-                "value": "1200"
+                "value": "1200",
+                "allowDrag": "0"
             }, {
                 "value": "1500",
+                "allowDrag": "0",
                 "dashed": "1"
             }, {
                 "value": "1300",
@@ -46,10 +48,12 @@
             "seriesname": "Samsung",
             "allowDrag": "0",
             "data": [{
-                "value": "600"
+                "value": "600",
+                "allowDrag": "0"
             }, {
                 "value": "850",
-                "dashed": "1"
+                "dashed": "1",
+                "allowDrag": "0"
             }, {
                 "value": "1000",
                 "allowDrag": "1",

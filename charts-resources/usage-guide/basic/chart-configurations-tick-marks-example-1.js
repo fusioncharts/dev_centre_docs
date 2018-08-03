@@ -13,7 +13,7 @@
             "showTickValues": "1",
             //Hiding tick marks                
             "showTickMarks": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorrange": {
             "color": [{

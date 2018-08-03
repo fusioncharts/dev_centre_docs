@@ -12,7 +12,7 @@
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
             "palettecolors": "FF5904,0372AB,FF0000",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Jan",

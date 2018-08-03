@@ -8,7 +8,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Quarterly Revenue",
             "subcaption": "Last year",
             "xAxisName": "Quarter",

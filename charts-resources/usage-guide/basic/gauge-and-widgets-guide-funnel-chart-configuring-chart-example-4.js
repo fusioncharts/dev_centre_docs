@@ -16,7 +16,7 @@
             "isSliced": "1",
             "labelDistance": "15",
             "plotTooltext": "Success : $percentOfPrevValue",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Unique Website Visits",

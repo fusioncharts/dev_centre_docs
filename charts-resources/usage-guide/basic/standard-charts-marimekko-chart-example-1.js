@@ -14,7 +14,7 @@
             "numberprefix": "$",
             "showPlotBorder": "1",
             "plotBorderThickness": "0.25",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

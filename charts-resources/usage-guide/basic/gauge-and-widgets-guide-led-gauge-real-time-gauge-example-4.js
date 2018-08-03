@@ -24,7 +24,7 @@
             "chartBottomMargin": "20",
             "dataStreamURL": "dummy-url-led-data.php",
             "refreshInterval": "5",
-            "theme": "fint"
+            "theme": "fusion"
         },
         //All annotations are grouped under this element
         "annotations": {

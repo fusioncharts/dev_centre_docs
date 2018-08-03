@@ -10,7 +10,7 @@
             "subCaption": "Last year",
             "xAxisName": "Month",
             "yAxisName": "Amount (In USD)",
-            "theme": "fint",
+            "theme": "fusion",
             "numberPrefix": "$",
             "placevaluesInside": "1",
             "rotatevalues": "1",

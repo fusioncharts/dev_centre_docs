@@ -14,7 +14,7 @@
             "numberSuffix": "%",
             "dataStreamUrl": "https://static.fusioncharts.com/sample/dev2.0/advanced-charting-real-time-gauges-setting-up-real-time-gauges-php-1.php",
             "refreshInterval": "5",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

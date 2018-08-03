@@ -12,7 +12,7 @@
             "xAxisName": "Month",
             "yAxisName": "Amount",
             "numberPrefix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "rotateValues": "1",
             // make this attribute 0, if discontinuity is needed
             // "connectNullData": "1"

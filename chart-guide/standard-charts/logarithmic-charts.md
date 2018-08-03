@@ -11,7 +11,7 @@ Logarithmic charts are similar to normal charts except for the fact that logarit
 
 ## Types
 
-FusionCharts Suite XT offers two types of logarithmic charts:
+FusionCharts Suite XT offers three types of logarithmic charts:
 
 * Log Column 2D Chart
 

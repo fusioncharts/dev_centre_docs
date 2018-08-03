@@ -20,7 +20,7 @@
             "yAxisValueDecimals": "2",
             "xAxisValueDecimals": "3",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Quarter 1",

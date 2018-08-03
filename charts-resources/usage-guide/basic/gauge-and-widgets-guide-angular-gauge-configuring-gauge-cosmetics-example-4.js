@@ -15,7 +15,7 @@
             "gaugeBorderAlpha": "100",
             "showValue": "1",
             "valueBelowPivot": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

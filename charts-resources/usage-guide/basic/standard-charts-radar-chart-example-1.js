@@ -9,7 +9,7 @@
             "caption": "Store rating across parameters",
             "subCaption": "Based on customer feedback survey",
             "numberPreffix": "$",
-            "theme": "fint",
+            "theme": "fusion",
             "radarfillcolor": "#ffffff",
         },
         "categories": [{

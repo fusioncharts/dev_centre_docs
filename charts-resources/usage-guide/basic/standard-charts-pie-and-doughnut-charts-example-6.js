@@ -12,9 +12,9 @@
             "startingAngle": "310",
             "decimals": "0",
             "defaultCenterLabel": "Total revenue: $60K",
-            "centerLabel": "Revenue from $label: $value",
+            "centerLabel": "$value",
             "useDataPlotColorForLabels": "1",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Food",

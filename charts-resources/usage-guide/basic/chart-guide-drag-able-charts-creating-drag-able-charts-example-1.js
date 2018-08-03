@@ -10,7 +10,7 @@
             "subCaption": "Top 5 Food items",
             "xAxisName": "Food Item",
             "yAxisName": "No. of Units",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

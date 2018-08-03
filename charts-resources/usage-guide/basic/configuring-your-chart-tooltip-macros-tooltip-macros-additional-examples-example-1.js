@@ -14,7 +14,7 @@
             "showValues": "1",
             "plotToolText": "Store location: $label <br> Sales (YTD): $dataValue <br> $displayValue",
             "trendlineToolText": "$displayValue: $startDataValue",
-            "theme": "fint"
+            "theme": "fusion"
             },
         "data": [{
           "label": "Bakersfield Central",

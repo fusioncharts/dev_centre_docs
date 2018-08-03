@@ -4,8 +4,8 @@
 
 #### JavaScript Alias: maps/northhamgyong
 
-Map Name: Northhamgyong
-Dimensions (Width x Height): 282x547
+Map Name: North Hamgyong
+Dimensions (Width x Height): 610x570
 
 
 
@@ -31,4 +31,3 @@ KP.PU|PU|Puyun
 KP.SP|SP|Saepyol
 KP.UD|UD|Undok
 KP.YS|YS|Yonsa
-

@@ -12,7 +12,7 @@
             "numberSuffix": "%",
             //Hiding limits
             "showLimits": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorrange": {
             "color": [{

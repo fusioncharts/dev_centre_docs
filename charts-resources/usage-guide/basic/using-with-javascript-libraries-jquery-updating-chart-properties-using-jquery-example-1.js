@@ -11,7 +11,7 @@
             "xAxisName": "Month",
             "yAxisName": "Revenue (In USD)",
             "numberPrefix": "$",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Jan",

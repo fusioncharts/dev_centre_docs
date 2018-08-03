@@ -15,7 +15,7 @@
             //Minor divlines
             "numMinorDivLines": "4",
 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

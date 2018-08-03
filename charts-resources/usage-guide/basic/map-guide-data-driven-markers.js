@@ -8,7 +8,7 @@
         "chart": {
             "caption": "Top 5 Busiest Airports in the World",
             "subcaption": "Based on Passenger Traffic in 2014",
-            "theme": "fint",
+            "theme": "fusion",
             "markerBgColor": "#3399FF",
 
             "entityFillColor": "#A8A8A8",

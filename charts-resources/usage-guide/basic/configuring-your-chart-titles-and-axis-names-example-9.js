@@ -29,7 +29,7 @@
             "sYAxisNameBorderPadding": "6",
             "sYAxisNameFontAlpha": "50",
             //Theme 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

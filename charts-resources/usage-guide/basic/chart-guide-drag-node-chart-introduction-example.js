@@ -21,7 +21,7 @@
             "viewmode": "0",
             "showplotborder": "1",
             "plotborderthickness": "4",
-            "theme": "fint",
+            "theme": "fusion",
             "showcanvasborder": "1",
             "canvasborderalpha": "20",
             "animation": "0"

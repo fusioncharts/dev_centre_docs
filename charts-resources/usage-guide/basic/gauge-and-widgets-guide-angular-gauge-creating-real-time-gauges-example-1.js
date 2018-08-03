@@ -14,7 +14,7 @@
             "numberSuffix": "%",
             "dataStreamUrl": "https://static.fusioncharts.com/sampledata/php/serverLoad.php",
             "refreshInterval": "10",
-            "theme": "fint"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

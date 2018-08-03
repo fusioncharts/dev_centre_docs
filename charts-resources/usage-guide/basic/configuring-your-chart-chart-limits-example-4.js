@@ -17,7 +17,7 @@
             //Setting both axes to synchronize the limits
             "syncAxisLimits": "1",
             //Theme 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

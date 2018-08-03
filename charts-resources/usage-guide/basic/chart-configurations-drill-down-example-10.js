@@ -11,7 +11,7 @@
             "xAxisName": "Flavor",
             "yAxisName": "Amount",
             "numberPrefix": "$",
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "data": [{

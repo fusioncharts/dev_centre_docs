@@ -23,7 +23,7 @@
             //Since all data is provided in seconds, default scale is seconds
             "defaultNumberScale": " seconds",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "00:00",

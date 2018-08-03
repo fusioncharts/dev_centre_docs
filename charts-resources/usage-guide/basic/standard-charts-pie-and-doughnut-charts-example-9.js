@@ -20,7 +20,7 @@
             "smartLineAlpha": "75",
             "isSmartLineSlanted": "0",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Food",

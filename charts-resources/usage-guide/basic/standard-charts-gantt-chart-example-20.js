@@ -13,7 +13,7 @@
             "outputdateformat": "ddds mns",
             "showCanvasBorder": "1",
             "canvasBorderAlpha": "30",
-            "theme": "fint"
+            "theme": "fusion"
 
         },
         "categories": [{

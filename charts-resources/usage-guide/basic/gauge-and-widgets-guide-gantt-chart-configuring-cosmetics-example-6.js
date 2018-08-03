@@ -11,7 +11,7 @@
             "subcaption": "Typical Steps Involved",
             "hoverBandColor": "#BEFFFF",
             "hoverBandAlpha": "40",
-            "theme": "fint",
+            "theme": "fusion",
             "canvasBorderAlpha": "40"
         },
         "datatable": {

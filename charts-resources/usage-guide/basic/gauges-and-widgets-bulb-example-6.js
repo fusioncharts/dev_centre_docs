@@ -22,7 +22,7 @@
             "gaugeRadius": "105",
 
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
 
 
         },

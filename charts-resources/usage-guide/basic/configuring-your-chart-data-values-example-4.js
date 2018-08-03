@@ -15,7 +15,7 @@
             //Place the value inside the plots
             "placevaluesInside": "1",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Q1",

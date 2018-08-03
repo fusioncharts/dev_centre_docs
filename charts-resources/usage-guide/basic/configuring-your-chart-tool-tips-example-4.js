@@ -10,7 +10,7 @@
             "subcaption": "By Gender",
             "xAxisName": "Pay Grades",
             "YAxisName": "Salaries (In USD)",
-            "theme": "fint",
+            "theme": "fusion",
             "showValues": "0",
             "numberPrefix": "$",
             "legendPosition": "right",

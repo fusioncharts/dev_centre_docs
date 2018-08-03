@@ -534,6 +534,86 @@
             "alias": "francedepartment",
             "specSheet": "/maps/spec-sheets/francedepartment"
         }, {
+            "name": "France (Department)",
+            "marker": false,
+            "members": [{
+                "name": "Auvergne Rhone Alpes",
+                "alias": "auvergnerhonealpes",
+                "specSheet": "/maps/spec-sheets/auvergnerhonealpes"
+            }, {
+                "name": "Bourgogne Franche Comte",
+                "alias": "bourgognefranchecomte",
+                "specSheet": "/maps/spec-sheets/bourgognefranchecomte"
+            }, {
+                "name": "Brittany",
+                "alias": "brittany",
+                "specSheet": "/maps/spec-sheets/brittany"
+            }, {
+                "name": "Centre Val de Loire",
+                "alias": "centrevaldeloire",
+                "specSheet": "/maps/spec-sheets/centrevaldeloire"
+            }, {
+                "name": "Corsica",
+                "alias": "corsica",
+                "specSheet": "/maps/spec-sheets/corsica"
+            }, {
+                "name": "France 2016",
+                "alias": "france2016",
+                "specSheet": "/maps/spec-sheets/france2016"
+            }, {
+                "name": "French Guiana",
+                "alias": "frenchguiana",
+                "specSheet": "/maps/spec-sheets/frenchguiana"
+            }, {
+                "name": "Grand Est",
+                "alias": "grandest",
+                "specSheet": "/maps/spec-sheets/grandest"
+            }, {
+                "name": "Guadeloupe",
+                "alias": "guadeloupe",
+                "specSheet": "/maps/spec-sheets/guadeloupe"
+            }, {
+                "name": "Hauts de France",
+                "alias": "hautsdefrance",
+                "specSheet": "/maps/spec-sheets/hautsdefrance"
+            }, {
+                "name": "Ile De France",
+                "alias": "iledefrance",
+                "specSheet": "/maps/spec-sheets/iledefrance"
+            }, {
+                "name": "Martinique",
+                "alias": "martinique",
+                "specSheet": "/maps/spec-sheets/martinique"
+            }, {
+                "name": "Mayotte",
+                "alias": "mayotte",
+                "specSheet": "/maps/spec-sheets/mayotte"
+            }, {
+                "name": "Normandy",
+                "alias": "normandy",
+                "specSheet": "/maps/spec-sheets/normandy"
+            }, {
+                "name": "Nouvelle Aquitaine",
+                "alias": "nouvelleaquitaine",
+                "specSheet": "/maps/spec-sheets/nouvelleaquitaine"
+            }, {
+                "name": "Occitanie",
+                "alias": "occitanie",
+                "specSheet": "/maps/spec-sheets/occitanie"
+            }, {
+                "name": "Pays De La Loire",
+                "alias": "paysdelaloire",
+                "specSheet": "/maps/spec-sheets/paysdelaloire"
+            }, {
+                "name": "Provence Alpes Cote d'Azur",
+                "alias": "provencealpescotedazur",
+                "specSheet": "/maps/spec-sheets/provencealpescotedazur"
+            }, {
+                "name": "Reunion",
+                "alias": "reunion",
+                "specSheet": "/maps/spec-sheets/reunion"
+            }]
+        }, {
             "name": "France (Arrondisemants)",
             "marker": false,
             "members": [{
@@ -1917,6 +1997,74 @@
         "specSheet": "/maps/spec-sheets/cuba",
         "markerData": "/maps/marker-data/cuba"
     }, {
+        "name": "Cuba (Separate Provinces)",
+        "marker": false,
+        "members": [{
+            "name": "Artemisa",
+            "alias": "artemisa",
+            "specSheet": "/maps/spec-sheets/artemisa"
+        }, {
+            "name": "Camaguey",
+            "alias": "camaguey",
+            "specSheet": "/maps/spec-sheets/camaguey"
+        }, {
+            "name": "Ciego de Avila",
+            "alias": "ciegodeavila",
+            "specSheet": "/maps/spec-sheets/ciegodeavila"
+        }, {
+            "name": "Cienfuegos",
+            "alias": "cienfuegos",
+            "specSheet": "/maps/spec-sheets/cienfuegos"
+        }, {
+            "name": "Granma",
+            "alias": "granma",
+            "specSheet": "/maps/spec-sheets/granma"
+        }, {
+            "name": "Guantanamo",
+            "alias": "guantanamo",
+            "specSheet": "/maps/spec-sheets/guantanamo"
+        }, {
+            "name": "Havana",
+            "alias": "havana",
+            "specSheet": "/maps/spec-sheets/havana"
+        }, {
+            "name": "Holguin",
+            "alias": "holguin",
+            "specSheet": "/maps/spec-sheets/holguin"
+        }, {
+            "name": "Isla de la Juventud",
+            "alias": "isladelajuventud",
+            "specSheet": "/maps/spec-sheets/isladelajuventud"
+        }, {
+            "name": "Las Tunas",
+            "alias": "lastunas",
+            "specSheet": "/maps/spec-sheets/lastunas"
+        }, {
+            "name": "Matanzas",
+            "alias": "matanzas",
+            "specSheet": "/maps/spec-sheets/matanzas"
+        }, {
+            "name": "Mayabeque",
+            "alias": "mayabeque",
+            "specSheet": "/maps/spec-sheets/mayabeque"
+        }, {
+            "name": "Pinar del Rio",
+            "alias": "pinardelrio",
+            "specSheet": "/maps/spec-sheets/pinardelrio"
+        }, {
+            "name": "Sancti Spiritus",
+            "alias": "sanctispiritus",
+            "specSheet": "/maps/spec-sheets/sanctispiritus"
+        }, {
+            "name": "Santiago de Cuba",
+            "alias": "santiagodecuba",
+            "specSheet": "/maps/spec-sheets/santiagodecuba"
+        }, {
+            "name": "Villa Clara",
+            "alias": "villaclara",
+            "specSheet": "/maps/spec-sheets/villaclara"
+        }]
+    }, {
         "name": "Dominica",
         "alias": "dominica",
         "specSheet": "/maps/spec-sheets/dominica",
@@ -1926,6 +2074,138 @@
         "alias": "dominicanrepublic",
         "specSheet": "/maps/spec-sheets/dominicanrepublic",
         "markerData": "/maps/marker-data/dominicanrepublic"
+    }, {
+        "name": "Dominican Republic (Separate Provinces)",
+        "marker": false,
+        "members": [{
+            "name": "Azua",
+            "alias": "azua",
+            "specSheet": "/maps/spec-sheets/azua"
+        }, {
+            "name": "Baoruco",
+            "alias": "baoruco",
+            "specSheet": "/maps/spec-sheets/baoruco"
+        }, {
+            "name": "Barahona",
+            "alias": "barahona",
+            "specSheet": "/maps/spec-sheets/barahona"
+        }, {
+            "name": "Dajabon",
+            "alias": "dajabon",
+            "specSheet": "/maps/spec-sheets/dajabon"
+        }, {
+            "name": "Distrito Nacional",
+            "alias": "distritonacional",
+            "specSheet": "/maps/spec-sheets/distritonacional"
+        }, {
+            "name": "Duarte",
+            "alias": "duarte",
+            "specSheet": "/maps/spec-sheets/duarte"
+        }, {
+            "name": "Elias Pina",
+            "alias": "eliaspina",
+            "specSheet": "/maps/spec-sheets/eliaspina"
+        }, {
+            "name": "El Seibo",
+            "alias": "eiseibo",
+            "specSheet": "/maps/spec-sheets/eiseibo"
+        }, {
+            "name": "Espaillat",
+            "alias": "espaillat",
+            "specSheet": "/maps/spec-sheets/espaillat"
+        }, {
+            "name": "Hato Mayor",
+            "alias": "hatomayor",
+            "specSheet": "/maps/spec-sheets/hatomayor"
+        }, {
+            "name": "Hermanas Mirabal",
+            "alias": "hermanasmirabal",
+            "specSheet": "/maps/spec-sheets/hermanasmirabal"
+        }, {
+            "name": "Independencia",
+            "alias": "independencia",
+            "specSheet": "/maps/spec-sheets/independencia"
+        }, {
+            "name": "La Altagracia",
+            "alias": "laaltagracia",
+            "specSheet": "/maps/spec-sheets/laaltagracia"
+        }, {
+            "name": "La Romana",
+            "alias": "laromana",
+            "specSheet": "/maps/spec-sheets/laromana"
+        }, {
+            "name": "La Vega",
+            "alias": "lavega",
+            "specSheet": "/maps/spec-sheets/lavega"
+        }, {
+            "name": "Maria Trinidad Sanchez",
+            "alias": "mariatrinidadsanchez",
+            "specSheet": "/maps/spec-sheets/mariatrinidadsanchez"
+        }, {
+            "name": "Monsenor Nouel",
+            "alias": "monsenornouel",
+            "specSheet": "/maps/spec-sheets/monsenornouel"
+        }, {
+            "name": "Monte Cristi",
+            "alias": "montecristi",
+            "specSheet": "/maps/spec-sheets/montecristi"
+        }, {
+            "name": "Monte Plata",
+            "alias": "monteplata",
+            "specSheet": "/maps/spec-sheets/monteplata"
+        }, {
+            "name": "Pedernales",
+            "alias": "pedernales",
+            "specSheet": "/maps/spec-sheets/pedernales"
+        }, {
+            "name": "Peravia",
+            "alias": "peravia",
+            "specSheet": "/maps/spec-sheets/peravia"
+        }, {
+            "name": "Puerto Plata",
+            "alias": "puertoplata",
+            "specSheet": "/maps/spec-sheets/puertoplata"
+        }, {
+            "name": "Samana",
+            "alias": "samana",
+            "specSheet": "/maps/spec-sheets/samana"
+        }, {
+            "name": "Sanchez Ramirez",
+            "alias": "sanchezramirez",
+            "specSheet": "/maps/spec-sheets/sanchezramirez"
+        }, {
+            "name": "San Cristobal",
+            "alias": "sancristobal",
+            "specSheet": "/maps/spec-sheets/sancristobal"
+        }, {
+            "name": "San Jose de Ocoa",
+            "alias": "sanjosedeocoa",
+            "specSheet": "/maps/spec-sheets/sanjosedeocoa"
+        }, {
+            "name": "San Juan",
+            "alias": "sanjuan",
+            "specSheet": "/maps/spec-sheets/sanjuan"
+        }, {
+            "name": "San Pedro de Macoris",
+            "alias": "sanpedrodemacoris",
+            "specSheet": "/maps/spec-sheets/sanpedrodemacoris"
+        }, {
+            "name": "Santiago",
+            "alias": "santiago",
+            "specSheet": "/maps/spec-sheets/santiago"
+        }, {
+            "name": "Santiago Rodriguez",
+            "alias": "santiagorodriguez",
+            "specSheet": "/maps/spec-sheets/santiagorodriguez"
+        }, {
+            "name": "Santo Domingo",
+            "alias": "santodomingo",
+            "specSheet": "/maps/spec-sheets/santodomingo"
+        }, {
+            "name": "Valverde",
+            "alias": "valverde",
+            "specSheet": "/maps/spec-sheets/valverde"
+        }]
     }, {
         "name": "Greenland",
         "alias": "greenland",
@@ -3212,6 +3492,138 @@
         "specSheet": "/maps/spec-sheets/colombia",
         "markerData": "/maps/marker-data/colombia"
     }, {
+        "name": "Colombia (Separate Departments)",
+        "marker": false,
+        "members": [{
+            "name": "Amazonas",
+            "alias": "amazonas",
+            "specSheet": "/maps/spec-sheets/amazonas"
+        }, {
+            "name": "Antioquia",
+            "alias": "antioquia",
+            "specSheet": "/maps/spec-sheets/antioquia"
+        }, {
+            "name": "Arauca",
+            "alias": "arauca",
+            "specSheet": "/maps/spec-sheets/arauca"
+        }, {
+            "name": "Atlantico",
+            "alias": "atlantico",
+            "specSheet": "/maps/spec-sheets/atlantico"
+        }, {
+            "name": "Bogota",
+            "alias": "bogota",
+            "specSheet": "/maps/spec-sheets/bogota"
+        }, {
+            "name": "Bolivar",
+            "alias": "bolivar",
+            "specSheet": "/maps/spec-sheets/bolivar"
+        }, {
+            "name": "Boyaca",
+            "alias": "boyaca",
+            "specSheet": "/maps/spec-sheets/boyaca"
+        }, {
+            "name": "Caldas",
+            "alias": "caldas",
+            "specSheet": "/maps/spec-sheets/caldas"
+        }, {
+            "name": "Caqueta",
+            "alias": "caqueta",
+            "specSheet": "/maps/spec-sheets/caqueta"
+        }, {
+            "name": "Casanare",
+            "alias": "casanare",
+            "specSheet": "/maps/spec-sheets/casanare"
+        }, {
+            "name": "Cauca",
+            "alias": "cauca",
+            "specSheet": "/maps/spec-sheets/cauca"
+        }, {
+            "name": "Cesar",
+            "alias": "cesar",
+            "specSheet": "/maps/spec-sheets/cesar"
+        }, {
+            "name": "Choco",
+            "alias": "choco",
+            "specSheet": "/maps/spec-sheets/choco"
+        }, {
+            "name": "Cordoba",
+            "alias": "cordoba",
+            "specSheet": "/maps/spec-sheets/cordoba"
+        }, {
+            "name": "Cundinamarca",
+            "alias": "cundinamarca",
+            "specSheet": "/maps/spec-sheets/cundinamarca"
+        }, {
+            "name": "Guainia",
+            "alias": "guainia",
+            "specSheet": "/maps/spec-sheets/guainia"
+        }, {
+            "name": "Huila",
+            "alias": "huila",
+            "specSheet": "/maps/spec-sheets/huila"
+        }, {
+            "name": "La Guajira",
+            "alias": "laguajira",
+            "specSheet": "/maps/spec-sheets/laguajira"
+        }, {
+            "name": "Magdalena",
+            "alias": "magdalena",
+            "specSheet": "/maps/spec-sheets/magdalena"
+        }, {
+            "name": "Meta",
+            "alias": "meta",
+            "specSheet": "/maps/spec-sheets/meta"
+        }, {
+            "name": "Narino",
+            "alias": "narino",
+            "specSheet": "/maps/spec-sheets/narino"
+        }, {
+            "name": "Norte de Santander",
+            "alias": "nortedesantander",
+            "specSheet": "/maps/spec-sheets/nortedesantander"
+        }, {
+            "name": "Putumayo",
+            "alias": "putumayo",
+            "specSheet": "/maps/spec-sheets/putumayo"
+        }, {
+            "name": "Quindio",
+            "alias": "quindio",
+            "specSheet": "/maps/spec-sheets/quindio"
+        }, {
+            "name": "Risaralda",
+            "alias": "risaralda",
+            "specSheet": "/maps/spec-sheets/risaralda"
+        }, {
+            "name": "San Andres Providencia and Santa Catalina",
+            "alias": "sanandresprovidenciaandsantacatalina",
+            "specSheet": "/maps/spec-sheets/sanandresprovidenciaandsantacatalina"
+        }, {
+            "name": "Santander",
+            "alias": "santander",
+            "specSheet": "/maps/spec-sheets/santander"
+        }, {
+            "name": "Sucre",
+            "alias": "sucre",
+            "specSheet": "/maps/spec-sheets/sucre"
+        }, {
+            "name": "Tolima",
+            "alias": "tolima",
+            "specSheet": "/maps/spec-sheets/tolima"
+        }, {
+            "name": "ValledelCauca",
+            "alias": "valledelcauca",
+            "specSheet": "/maps/spec-sheets/valledelcauca"
+        }, {
+            "name": "Vaupes",
+            "alias": "vaupes",
+            "specSheet": "/maps/spec-sheets/vaupes"
+        }, {
+            "name": "Vichada",
+            "alias": "vichada",
+            "specSheet": "/maps/spec-sheets/vichada"
+        }]
+    }, {
         "name": "Ecuador",
         "alias": "ecuador",
         "specSheet": "/maps/spec-sheets/ecuador",
@@ -3759,6 +4171,114 @@
             "specSheet": "/maps/spec-sheets/indonesia",
             "markerData": "/maps/marker-data/indonesia"
         }, {
+            "name": "Indonesia Provinces",
+            "marker": false,
+            "members": [{
+                "name": "Bali",
+                "alias": "bali",
+                "specSheet": "/maps/spec-sheets/bali"
+            }, {
+                "name": "Bangka Belitung Islands",
+                "alias": "bangkabelitungislands",
+                "specSheet": "/maps/spec-sheets/bangkabelitungislands"
+            }, {
+                "name": "Banten",
+                "alias": "banten",
+                "specSheet": "/maps/spec-sheets/banten"
+            }, {
+                "name": "Bengkulu",
+                "alias": "bengkulu",
+                "specSheet": "/maps/spec-sheets/bengkulu"
+            }, {
+                "name": "Central Java",
+                "alias": "centraljava",
+                "specSheet": "/maps/spec-sheets/centraljava"
+            }, {
+                "name": "Central Kalimantan",
+                "alias": "centralkalimantan",
+                "specSheet": "/maps/spec-sheets/centralkalimantan"
+            }, {
+                "name": "East Java",
+                "alias": "eastjava",
+                "specSheet": "/maps/spec-sheets/eastjava"
+            }, {
+                "name": "East Kalimantan",
+                "alias": "eastkalimantan",
+                "specSheet": "/maps/spec-sheets/eastkalimantan"
+            }, {
+                "name": "East Nusa Tenggara",
+                "alias": "eastnusatenggara",
+                "specSheet": "/maps/spec-sheets/eastnusatenggara"
+            }, {
+                "name": "Gorontalo",
+                "alias": "gorontalo",
+                "specSheet": "/maps/spec-sheets/gorontalo"
+            }, {
+                "name": "Jakarta Special Capital Region",
+                "alias": "jakartaspecialcapitalregion",
+                "specSheet": "/maps/spec-sheets/jakartaspecialcapitalregion"
+            }, {
+                "name": "Jambi",
+                "alias": "jambi",
+                "specSheet": "/maps/spec-sheets/jambi"
+            }, {
+                "name": "Lampung",
+                "alias": "lampung",
+                "specSheet": "/maps/spec-sheets/lampung"
+            }, {
+                "name": "North Kalimantan",
+                "alias": "northkalimantan",
+                "specSheet": "/maps/spec-sheets/northkalimantan"
+            }, {
+                "name": "North Maluku",
+                "alias": "northmaluku",
+                "specSheet": "/maps/spec-sheets/northmaluku"
+            }, {
+                "name": "North Sulawesi",
+                "alias": "northsulawesi",
+                "specSheet": "/maps/spec-sheets/northsulawesi"
+            }, {
+                "name": "North Sumatra",
+                "alias": "northsumatra",
+                "specSheet": "/maps/spec-sheets/northsumatra"
+            }, {
+                "name": "Riau",
+                "alias": "riau",
+                "specSheet": "/maps/spec-sheets/riau"
+            }, {
+                "name": "Southeast Sulawesi",
+                "alias": "southeastsulawesi",
+                "specSheet": "/maps/spec-sheets/southeastsulawesi"
+            }, {
+                "name": "South Kalimantan",
+                "alias": "southkalimantan",
+                "specSheet": "/maps/spec-sheets/southkalimantan"
+            }, {
+                "name": "Special Region of Aceh",
+                "alias": "specialregionofaceh",
+                "specSheet": "/maps/spec-sheets/specialregionofaceh"
+            }, {
+                "name": "Special Region of Yogyakarta",
+                "alias": "specialregionofyogyakarta",
+                "specSheet": "/maps/spec-sheets/specialregionofyogyakarta"
+            }, {
+                "name": "West Java",
+                "alias": "westjava",
+                "specSheet": "/maps/spec-sheets/westjava"
+            }, {
+                "name": "West Nusa Tenggara",
+                "alias": "westnusatenggara",
+                "specSheet": "/maps/spec-sheets/westnusatenggara"
+            }, {
+                "name": "West Sulawesi",
+                "alias": "westsulawesi",
+                "specSheet": "/maps/spec-sheets/westsulawesi"
+            }, {
+                "name": "West Sumatra",
+                "alias": "westsumatra",
+                "specSheet": "/maps/spec-sheets/westsumatra"
+            }]
+        }, {
             "name": "Japan",
             "alias": "japan",
             "specSheet": "/maps/spec-sheets/japan",
@@ -4297,6 +4817,10 @@
                 "alias": "kumgangsan",
                 "specSheet": "/maps/spec-sheets/kumgangsan"
             }, {
+                "name": "Nompo",
+                "alias": "nampo",
+                "specSheet": "/maps/spec-sheets/nampo"
+            }, {
                 "name": "North Hamgyong",
                 "alias": "northhamgyong",
                 "specSheet": "/maps/spec-sheets/northhamgyong"
@@ -4818,6 +5342,10 @@
                 "alias": "incheon",
                 "specSheet": "/maps/spec-sheets/incheon"
             }, {
+                "name": "Jedu",
+                "alias": "jedu",
+                "specSheet": "/maps/spec-sheets/jedu"
+            }, {
                 "name": "Jejudo",
                 "alias": "jejudo",
                 "specSheet": "/maps/spec-sheets/jejudo"
@@ -4958,6 +5486,46 @@
             "alias": "vietnam",
             "specSheet": "/maps/spec-sheets/vietnam",
             "markerData": "/maps/marker-data/vietnam"
+        }, {
+            "name": "Vietnam (Administrative Region)",
+            "marker": false,
+            "members": [{
+                "name": "Central Highlands",
+                "alias": "centralhighlands",
+                "specSheet": "/maps/spec-sheets/centralhighlands"
+            }, {
+                "name": "Mekong River Delta",
+                "alias": "dekongriverdelta",
+                "specSheet": "/maps/spec-sheets/dekongriverdelta"
+            }, {
+                "name": "North Central",
+                "alias": "northcentral",
+                "specSheet": "/maps/spec-sheets/northcentral"
+            }, {
+                "name": "Northeast",
+                "alias": "northeast",
+                "specSheet": "/maps/spec-sheets/northeast"
+            }, {
+                "name": "Northwest",
+                "alias": "northwest",
+                "specSheet": "/maps/spec-sheets/northwest"
+            }, {
+                "name": "Red River Delta",
+                "alias": "redriverdelta",
+                "specSheet": "/maps/spec-sheets/redriverdelta"
+            }, {
+                "name": "South Central Coast",
+                "alias": "southcentralcoast",
+                "specSheet": "/maps/spec-sheets/southcentralcoast"
+            }, {
+                "name": "Southeast",
+                "alias": "southeast",
+                "specSheet": "/maps/spec-sheets/southeast"
+            }, {
+                "name": "Vietnam Region",
+                "alias": "vietnamregion",
+                "specSheet": "/maps/spec-sheets/vietnamregion"
+            }]
         }]
     }, {
         "name": "Regions",
@@ -5155,9 +5723,9 @@
             "name": "Iran (Regions)",
             "marker": false,
             "members": [{
-                "name": "Esfahan",
-                "alias": "esfahan",
-                "specSheet": "/maps/spec-sheets/esfahan"
+                "name": "Isfahan",
+                "alias": "isfahan",
+                "specSheet": "/maps/spec-sheets/isfahan"
             }, {
                 "name": "Kermanshah",
                 "alias": "kermanshah",
@@ -5174,6 +5742,134 @@
                 "name": "Tehran",
                 "alias": "tehran",
                 "specSheet": "/maps/spec-sheets/tehran"
+            }]
+        }, {
+            "name": "Iran (Separate Province Maps)",
+            "marker": false,
+            "members": [{
+                "name": "Alborz",
+                "alias": "alborz",
+                "specSheet": "/maps/spec-sheets/alborz"
+            }, {
+                "name": "Ardabil",
+                "alias": "ardabil",
+                "specSheet": "/maps/spec-sheets/ardabil"
+            }, {
+                "name": "Azerbaijan East",
+                "alias": "azerbaijaneast",
+                "specSheet": "/maps/spec-sheets/azerbaijaneast"
+            }, {
+                "name": "Azerbaijan West",
+                "alias": "azerbaijanwest",
+                "specSheet": "/maps/spec-sheets/azerbaijanwest"
+            }, {
+                "name": "Bushehr",
+                "alias": "bushehr",
+                "specSheet": "/maps/spec-sheets/bushehr"
+            }, {
+                "name": "Chahar Mahaal And Bakhtiari",
+                "alias": "chaharmahaalandbakhtiari",
+                "specSheet": "/maps/spec-sheets/chaharmahaalandbakhtiari"
+            }, {
+                "name": "Fars",
+                "alias": "fars",
+                "specSheet": "/maps/spec-sheets/fars"
+            }, {
+                "name": "Gilan",
+                "alias": "gilan",
+                "specSheet": "/maps/spec-sheets/gilan"
+            }, {
+                "name": "Golestan",
+                "alias": "golestan",
+                "specSheet": "/maps/spec-sheets/golestan"
+            }, {
+                "name": "Hamadan",
+                "alias": "hamadan",
+                "specSheet": "/maps/spec-sheets/hamadan"
+            }, {
+                "name": "Hormozgan",
+                "alias": "hormozgan",
+                "specSheet": "/maps/spec-sheets/hormozgan"
+            }, {
+                "name": "Ilam",
+                "alias": "ilam",
+                "specSheet": "/maps/spec-sheets/ilam"
+            }, {
+                "name": "Isfahan",
+                "alias": "isfahan",
+                "specSheet": "/maps/spec-sheets/isfahan"
+            }, {
+                "name": "Kerman",
+                "alias": "kerman",
+                "specSheet": "/maps/spec-sheets/kerman"
+            }, {
+                "name": "Kermanshah",
+                "alias": "kermanshah",
+                "specSheet": "/maps/spec-sheets/kermanshah"
+            }, {
+                "name": "Khorasan North",
+                "alias": "khorasannorth",
+                "specSheet": "/maps/spec-sheets/khorasannorth"
+            }, {
+                "name": "Khorasan Razavi",
+                "alias": "khorasanrazavi",
+                "specSheet": "/maps/spec-sheets/khorasanrazavi"
+            }, {
+                "name": "Khorasan South",
+                "alias": "khorasansouth",
+                "specSheet": "/maps/spec-sheets/khorasansouth"
+            }, {
+                "name": "Khuzestan",
+                "alias": "khuzestan",
+                "specSheet": "/maps/spec-sheets/khuzestan"
+            }, {
+                "name": "Kohgiluyeh And Boyer-Ahmad",
+                "alias": "kohgiluyehandboyerahmad",
+                "specSheet": "/maps/spec-sheets/kohgiluyehandboyerahmad"
+            }, {
+                "name": "Kurdistan",
+                "alias": "kurdistan",
+                "specSheet": "/maps/spec-sheets/kurdistan"
+            }, {
+                "name": "Lorestan",
+                "alias": "lorestan",
+                "specSheet": "/maps/spec-sheets/lorestan"
+            }, {
+                "name": "Markazi",
+                "alias": "markazi",
+                "specSheet": "/maps/spec-sheets/markazi"
+            }, {
+                "name": "Mazandaran",
+                "alias": "mazandaran",
+                "specSheet": "/maps/spec-sheets/mazandaran"
+            }, {
+                "name": "Qazvin",
+                "alias": "qazvin",
+                "specSheet": "/maps/spec-sheets/qazvin"
+            }, {
+                "name": "Qom",
+                "alias": "qom",
+                "specSheet": "/maps/spec-sheets/qom"
+            }, {
+                "name": "Semnan",
+                "alias": "semnan",
+                "specSheet": "/maps/spec-sheets/semnan"
+            }, {
+                "name": "Sistan and Baluchestan",
+                "alias": "sistanandbaluchestan",
+                "specSheet": "/maps/spec-sheets/sistanandbaluchestan"
+            }, {
+                "name": "Tehran",
+                "alias": "tehran",
+                "specSheet": "/maps/spec-sheets/tehran"
+            }, {
+                "name": "Yazd",
+                "alias": "yazd",
+                "specSheet": "/maps/spec-sheets/yazd"
+            }, {
+                "name": "Zanjan",
+                "alias": "zanjan",
+                "specSheet": "/maps/spec-sheets/zanjan"
             }]
         }, {
             "name": "Iraq",
@@ -5258,6 +5954,30 @@
             "alias": "tajikistan",
             "specSheet": "/maps/spec-sheets/tajikistan",
             "markerData": "/maps/marker-data/tajikistan"
+        }, {
+            "name": "Tajikistan (Divisional Maps)",
+            "marker": false,
+            "members": [{
+                "name": "Gorno-Badakhshan",
+                "alias": "gornobadakhshan",
+                "specSheet": "/maps/spec-sheets/gornobadakhshan"
+            }, {
+                "name": "Khatlon",
+                "alias": "khatlon",
+                "specSheet": "/maps/spec-sheets/khatlon"
+            }, {
+                "name": "Region of Republican Subordination",
+                "alias": "regionofrepublicansubordination",
+                "specSheet": "/maps/spec-sheets/regionofrepublicansubordination"
+            }, {
+                "name": "Sughd",
+                "alias": "sughd",
+                "specSheet": "/maps/spec-sheets/sughd"
+            }, {
+                "name": "Tajikistan",
+                "alias": "tajikistan",
+                "specSheet": "/maps/spec-sheets/tajikistan"
+            }]
         }, {
             "name": "Turkmenistan",
             "alias": "turkmenistan",
@@ -5633,6 +6353,58 @@
             "specSheet": "/maps/spec-sheets/ethiopia",
             "markerData": "/maps/marker-data/ethiopia"
         }, {
+            "name": "Ethiopia (Zonal Divisions and Region)",
+            "marker": false,
+            "members": [{
+                "name": "Addis Ababa City",
+                "alias": "addisababacity",
+                "specSheet": "/maps/spec-sheets/addisababacity"
+            }, {
+                "name": "Afar Region",
+                "alias": "afarregion",
+                "specSheet": "/maps/spec-sheets/afarregion"
+            }, {
+                "name": "Amhara Region",
+                "alias": "amhararegion",
+                "specSheet": "/maps/spec-sheets/amhararegion"
+            }, {
+                "name": "Benishangul-Gumuz Region",
+                "alias": "benishangulgumuzregion",
+                "specSheet": "/maps/spec-sheets/benishangulgumuzregion"
+            }, {
+                "name": "Dire Dawa City",
+                "alias": "diredawacity",
+                "specSheet": "/maps/spec-sheets/diredawacity"
+            }, {
+                "name": "Ethiopia Region",
+                "alias": "ethiopiaregion",
+                "specSheet": "/maps/spec-sheets/ethiopiaregion"
+            }, {
+                "name": "Gambela Region",
+                "alias": "gambelaregion",
+                "specSheet": "/maps/spec-sheets/gambelaregion"
+            }, {
+                "name": "Harari Region",
+                "alias": "harariregion",
+                "specSheet": "/maps/spec-sheets/harariregion"
+            }, {
+                "name": "Oromia Region",
+                "alias": "oromiaregion",
+                "specSheet": "/maps/spec-sheets/oromiaregion"
+            }, {
+                "name": "Southern Nations, Nationalities, and Peoples' Region",
+                "alias": "snnpr",
+                "specSheet": "/maps/spec-sheets/snnpr"
+            }, {
+                "name": "Somali Region",
+                "alias": "somaliregion",
+                "specSheet": "/maps/spec-sheets/somaliregion"
+            }, {
+                "name": "Tigray Region",
+                "alias": "tigrayregion",
+                "specSheet": "/maps/spec-sheets/tigrayregion"
+            }]
+        }, {
             "name": "Gabon",
             "alias": "gabon",
             "specSheet": "/maps/spec-sheets/gabon",
@@ -5792,10 +6564,98 @@
             "specSheet": "/maps/spec-sheets/zambia",
             "markerData": "/maps/marker-data/zambia"
         }, {
+            "name": "Zambia (Provinces)",
+            "marker": false,
+            "members": [{
+                "name": "Central Zambia",
+                "alias": "centralzambia",
+                "specSheet": "/maps/spec-sheets/centralzambia"
+            }, {
+                "name": "Copperbelt",
+                "alias": "copperbelt",
+                "specSheet": "/maps/spec-sheets/copperbelt"
+            }, {
+                "name": "Eastern Zambia",
+                "alias": "easternzambia",
+                "specSheet": "/maps/spec-sheets/easternzambia"
+            }, {
+                "name": "Luapula",
+                "alias": "luapula",
+                "specSheet": "/maps/spec-sheets/luapula"
+            }, {
+                "name": "Lusaka",
+                "alias": "lusaka",
+                "specSheet": "/maps/spec-sheets/lusaka"
+            }, {
+                "name": "Muchinga",
+                "alias": "muchinga",
+                "specSheet": "/maps/spec-sheets/muchinga"
+            }, {
+                "name": "Northern Zambia",
+                "alias": "northernzambia",
+                "specSheet": "/maps/spec-sheets/northernzambia"
+            }, {
+                "name": "North Western Zambia",
+                "alias": "northwesternzambia",
+                "specSheet": "/maps/spec-sheets/northwesternzambia"
+            }, {
+                "name": "Southern Zambia",
+                "alias": "southernzambia",
+                "specSheet": "/maps/spec-sheets/southernzambia"
+            }, {
+                "name": "Western Zambia",
+                "alias": "westernzambia",
+                "specSheet": "/maps/spec-sheets/westernzambia"
+            }]
+        }, {
             "name": "Zimbabwe",
             "alias": "zimbabwe",
             "specSheet": "/maps/spec-sheets/zimbabwe",
             "markerData": "/maps/marker-data/zimbabwe"
+        }, {
+            "name": "Zimbabwe (Separate Provinces)",
+            "marker": false,
+            "members": [{
+                "name": "Bulawayo",
+                "alias": "bulawayo",
+                "specSheet": "/maps/spec-sheets/bulawayo"
+            }, {
+                "name": "Harare",
+                "alias": "harare",
+                "specSheet": "/maps/spec-sheets/harare"
+            }, {
+                "name": "Manicaland",
+                "alias": "manicaland",
+                "specSheet": "/maps/spec-sheets/manicaland"
+            }, {
+                "name": "Mashonaland Central",
+                "alias": "mashonalandcentral",
+                "specSheet": "/maps/spec-sheets/mashonalandcentral"
+            }, {
+                "name": "Mashonaland East",
+                "alias": "mashonalandeast",
+                "specSheet": "/maps/spec-sheets/mashonalandeast"
+            }, {
+                "name": "Mashonaland West",
+                "alias": "mashonalandwest",
+                "specSheet": "/maps/spec-sheets/mashonalandwest"
+            }, {
+                "name": "Masvingo",
+                "alias": "masvingo",
+                "specSheet": "/maps/spec-sheets/masvingo"
+            }, {
+                "name": "Matabeleland North",
+                "alias": "matabelelandnorth",
+                "specSheet": "/maps/spec-sheets/matabelelandnorth"
+            }, {
+                "name": "Matabeleland South",
+                "alias": "matabelelandsouth",
+                "specSheet": "/maps/spec-sheets/matabelelandsouth"
+            }, {
+                "name": "Midlands",
+                "alias": "midlands",
+                "specSheet": "/maps/spec-sheets/midlands"
+            }]
         }]
     }, {
         "name": "Madagascar",

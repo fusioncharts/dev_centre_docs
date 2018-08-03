@@ -8,7 +8,7 @@
         "chart": {
             "caption": "World Population Density",
             "subcaption": "Number of people per Square Mile",
-            "theme": "fint",
+            "theme": "fusion",
             "formatNumberScale": "0",
             "showLabels": "1",
             "nullEntityColor": "#C2C2D6",
@@ -73,7 +73,7 @@
                     "showLabels": "1",
                     "entityFillColor": "#A8A8A8",
                     "entityFillHoverColor": "#E5E5E9",
-                    "theme": "fint",
+                    "theme": "fusion",
                     "showBorder": "1",
                     "bordercolor": "#FFFFFF",
                     "entityborderThickness": "3"
@@ -257,8 +257,15 @@
     },
     "events": {
         "beforeRender": function(e) {
+            //Configure the second level chart's properties
             e.sender.configureLink({
-                "type": "maps/usa"
+                type: "mscombidy2d",
+                overlayButton: {
+                    message: 'Back',
+                    fontColor: '880000',
+                    bgColor: 'FFEEEE',
+                    borderColor: '660000'
+                }
             }, 0);
         }
     }

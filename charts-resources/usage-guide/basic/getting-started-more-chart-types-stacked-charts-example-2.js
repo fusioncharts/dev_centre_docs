@@ -14,7 +14,7 @@
             //To show revenue stack in Percentage distribution
             "stack100Percent": "1",
             "decimals": "0",
-            "theme": "fint"
+            "theme": "fusion"
         },
 
         "categories": [{

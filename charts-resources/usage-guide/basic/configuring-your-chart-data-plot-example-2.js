@@ -15,7 +15,7 @@
             //Pallatte Colors
             "paletteColors": "#EED17F,#97CBE7,#074868,#B0D67A,#2C560A,#DD9D82",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
 
         },
         "categories": [{

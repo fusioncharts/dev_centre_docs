@@ -15,7 +15,7 @@
             //Y axis value step
             "yAxisValuesStep": "2",
             //Theme
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Q1",

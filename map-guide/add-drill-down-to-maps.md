@@ -4,6 +4,8 @@ description: Maps as part of FusionCharts Suite XT support two types of drill do
 heading: Add Drill Down to Maps
 ---
 
+> Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/) while upgrading to __v3.13.0__.
+
 Using the simple drill down method, you can specify custom URLs or JavaScript methods to be invoked for each entity or marker on your map. When you click on the respective entity, the map will invoke that method, or redirect to the specific URL. If it's a URL, you can configure whether to open the URL in the same page, a new window, a pop-up, or a frame.
 
 You can use simple links with your maps in one of the following ways:
@@ -22,7 +24,7 @@ The code given below ensures that whenever you click on an entity, a pop up wind
         "entityFillHoverColor": "#cccccc",
         "numberPrefix": "$",
         "showLabels": "1",
-        "theme": "fint"
+        "theme": "fusion"
     },
     "colorrange": {
         "minvalue": "920000",
@@ -395,7 +397,7 @@ Refer to the data structure of the map, given below:
     "chart": {
         "caption": "World Population Density",
         "subcaption": "Number of people per Square Mile",
-        "theme": "fint",
+        "theme": "fusion",
         "formatNumberScale": "0",
         "showLabels": "1",
         "nullEntityColor": "#C2C2D6",
@@ -461,7 +463,7 @@ Refer to the data structure of the map, given below:
                 "entityFillHoverColor": "#E5E5E9",
                 "showLabels": "1",
                 "entityFillColor": "#A8A8A8",
-                "theme": "fint",
+                "theme": "fusion",
                 "showBorder": "1",
                 "bordercolor": "#FFFFFF",
                 "entityborderThickness": "3"
@@ -721,7 +723,7 @@ Refer to the data structure given below:
 ```json
 {
     "map": {
-        "theme": "fint",
+        "theme": "fusion",
         "caption": "Shipping Volume and Costs",
         "subcaption": "Distribution Network - Last Month",
         "numberSuffix": "%",
@@ -1328,7 +1330,7 @@ Refer to the data structure given below:
                 "slantLabel": "1",
                 "formatNumberScale": "0",
                 "sNumberPrefix": "$",
-                "theme": "fint"
+                "theme": "fusion"
             },
             "categories": [{
                 "category": [{
@@ -1399,7 +1401,7 @@ Refer to the data structure given below:
                 "slantLabel": "1",
                 "formatNumberScale": "0",
                 "sNumberPrefix": "$",
-                "theme": "fint"
+                "theme": "fusion"
             },
             "categories": [{
                 "category": [{
@@ -1517,7 +1519,7 @@ Refer to the data structure given below:
                 "slantLabel": "1",
                 "formatNumberScale": "0",
                 "sNumberPrefix": "$",
-                "theme": "fint"
+                "theme": "fusion"
             },
             "categories": [{
                 "category": [{

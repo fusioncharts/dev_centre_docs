@@ -131,10 +131,6 @@ Given below is the classification of the rest of the events.
 * [zoomed]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#zoomed-143)
 * [zoomModeChanged]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#zoommodechanged-145)
 
-### Event for the SSGrid Chart
-
-* [pageNavigated]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#pagenavigated-68)
-
 ## Map-related Events
 
 * [entityRollOut]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#entityrollout-45)

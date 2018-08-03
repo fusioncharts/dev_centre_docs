@@ -25,7 +25,7 @@
             //Character used to separate scale
             "scaleSeparator": " ",
             //Theme 
-            "theme": "fint"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Sunday",

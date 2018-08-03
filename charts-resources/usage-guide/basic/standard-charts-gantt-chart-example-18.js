@@ -9,7 +9,7 @@
             "dateformat": "mm/dd/yyyy",
             "caption": "Social Media Optimization",
             "subcaption": "Project Plan",
-            "theme": "fint",
+            "theme": "fusion",
             "canvasBorderAlpha": "30",
             "ganttPaneDuration": "3",
             "ganttPaneDurationUnit": "m",

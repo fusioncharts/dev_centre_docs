@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "caption": "Argentina (Last 10 Matches)",
             "subcaption": "2014 FIFA World Cup",
             "subCaptionFontSize": "11",

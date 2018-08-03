@@ -7,7 +7,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "fint",
+            "theme": "fusion",
             "lowerLimit": "0",
             "subCaptionFontSize": "11",
             "upperLimit": "120",
