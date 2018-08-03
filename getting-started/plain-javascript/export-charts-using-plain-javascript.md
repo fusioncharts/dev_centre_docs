@@ -44,7 +44,7 @@ The `exportMode` attribute is used to switch between the different modes of expo
 
 >  Starting from version v3.12.1, the `exportMode` attribute __replaces__ the `exportAtClientSide` attribute.
 
-To process the export data on your own server, configure one of the export handlers by following the [Setup Private Export Server]({% site.baseurl %}/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net '@@open-newtab') guide. </p>
+To process the export data on your own server, configure one of the export handlers by following the [Setup Private Export Server]({% site.baseurl %}/exporting-charts/using-fc-export-server/configuring-the-export-feature '@@open-newtab') guide.
 
 ## Export Chart Data
 
@@ -62,4 +62,4 @@ A column 2D chart with export enabled is shown below. Click the <span> ![image](
 
 > To export a chart in the XLS format using server-side exporting, it is mandatory that the exporting server has the latest code, available in the FusionCharts package. Alternatively, you can also use the FusionCharts export link, `export.api3.fusioncharts.com`. For client-side exporting, the exporting chart data feature is supported only by modern browsers with canvas support (except Safari and IE9). You can still export your charts, without including the configurable data.
 
-> To process the export data on your own server, configure one of the export handlers by following the [Setup Private Export Server](/exporting-charts/using-fc-export-server/server-side-export/setup-private-export-server/asp-net) guide.
+> To process the export data on your own server, configure one of the export handlers by following the [Setup Private Export Server]({% site.baseurl %}/exporting-charts/using-fc-export-server/configuring-the-export-feature '@@open-newtab') guide.

@@ -14,7 +14,7 @@ The **react-fusioncharts** component lets you include **FusionCharts** in your *
 * Accepts data in three formats:
     - JSON
     - XML
-    - A URI pointing to a file containing the JSON/XML data. However, each chart/map expects data to be formatted in JSON data structure and the data you provide must comply with the required format.
+    - A URL pointing to a file containing the JSON/XML data. However, each chart/map expects data to be formatted in JSON data structure and the data you provide must comply with the required format.
 
 In this article, we will show you how you to download and install the **react-fusioncharts** component and all the other dependencies on your system. 
 
