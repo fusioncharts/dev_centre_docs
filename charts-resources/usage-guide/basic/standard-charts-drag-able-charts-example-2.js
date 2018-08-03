@@ -32,7 +32,7 @@
                 "value": "1200",
                 "allowDrag": "0"
             }, {
-                "value": "1500",,
+                "value": "1500",
                 "allowDrag": "0",
                 "dashed": "1"
             }, {
