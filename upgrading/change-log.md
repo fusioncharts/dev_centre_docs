@@ -875,7 +875,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 ## Deprecated
 
-* Following are the list of deprecated attributes:
+* Following is the list of deprecated attributes:
 
     * `showFormBtn`
 
