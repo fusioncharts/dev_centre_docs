@@ -90,7 +90,7 @@ Refer to the code given below:
 }
 ```
 
-A pie chart configured to animate in the clockwise direction is shown below. Click the **Refresh** button in the **bottom-right corner** of the chart to see the animation direction.
+A pie chart configured to animate in the clockwise direction is shown below.
 
 ![Pie chart]({% site.baseurl %}/gif/standard-charts-pie-gif-1.gif)
 
