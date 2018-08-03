@@ -1,10 +1,8 @@
 ---
-permalink: advanced-chart-configurations/tutorials/change-chart-messages.html
 title: Configure Chart Messages | FusionCharts
 description: This section talks about the messeges which are displayed at the time of rendering of the chart. You can add cosmetics for those messages as well.
 heading: Configure Chart Messages
 chartPresent: true
-layout: page
 ---
 
 You can change the text and style of the chart status messages that appear throughout the life cycle of the chart.

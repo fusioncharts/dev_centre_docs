@@ -61,8 +61,6 @@ To include the core FusionCharts library in your project add the following line 
 
 **Step 2: Include the Theme file (optional)**
 
-This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
-
 ```Ruby
 //= require fusioncharts/themes/fusioncharts.theme.fusion
 ```
@@ -183,7 +181,7 @@ The FusionCharts Suite download package also contains predefined theme files und
 
 ![Theme Folder Structure]({% site.baseurl %}/gif/theme-folder-structure.gif)
 
-Include the theme files in the `vendor/assets/javascripts/fusioncharts/` folder of your project. This step is optional, the chart will render with the default theme (fusion) even if the theme is not applied.  
+Include the theme files in the `vendor/assets/javascripts/fusioncharts/` folder of your project.
 
 Add the following code in the `app/assets/javascripts/application.js` file as shown below:
 

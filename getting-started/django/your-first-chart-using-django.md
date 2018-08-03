@@ -60,7 +60,7 @@ Functional attributes let you control a variety of functional elements on the ch
 * `subcaption` sets the sub-caption of the chart.
 * `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
 * `numberPrefix` adds a prefix to all the numbers visible on the chart.
-* Please note, we have used the `theme` attribute in the chart's data and provided `fusion` (default theme) as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
+* Please note, we have used the `theme` attribute in the chart's data and provided `fusion` theme as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetic Attributes
 

@@ -64,8 +64,6 @@ After that, you can include the FusionCharts JavaScript library in your web appl
 
 **Step 2 (optional):** Include the theme file.
 
-This step is optional, the chart will render with the default theme even if the theme file is not included.
-
 ```html
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```

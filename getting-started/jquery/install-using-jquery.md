@@ -99,8 +99,6 @@ Download the jQuery library from [here](https://jquery.com/download/ '@@open-new
 
 **Step 4 (optional):** Include the theme file.
 
-This step is optional, the chart will render with the default theme even if the theme file is not included.
-
 ```html
 <script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"></script>
 ```

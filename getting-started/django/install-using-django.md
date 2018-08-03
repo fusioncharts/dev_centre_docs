@@ -59,8 +59,6 @@ After that, you can include the FusionCharts JavaScript library in your web appl
 
 **Step 2 (optional):** Include the theme files in the `static > FusionCharts` folder in your project.
 
-This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
-
 Add the following code to `templates > index.html` file:
 
 ```HTML

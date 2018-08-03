@@ -68,8 +68,6 @@ Create an `ASPX` file and follow the steps given below:
 
 **Step 2 (optional):** Include the theme file.
 
-This step is optional, the chart will render with the default theme (`fusion`) even if the theme is not applied.
-
 ```html
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```

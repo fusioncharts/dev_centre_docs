@@ -98,7 +98,7 @@ Functional attributes let you control a variety of functional elements on the ch
 
 * `numberPrefix` adds a prefix to all the numbers visible on the chart.
 
-* Please note, we have used the theme attribute in the chart's JSON data and provided `fusion` (default theme) as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
+* Please note, we have used the theme attribute in the chart's JSON data and provided `fusion` theme as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
 
 #### Cosmetic Attributes
 
