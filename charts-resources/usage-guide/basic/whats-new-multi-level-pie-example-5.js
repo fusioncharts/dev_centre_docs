@@ -31,7 +31,6 @@
         "innerRadius": "10"
       },
       "category": [{
-        "label": "Sales by category",
         "color": "#ffffff",
         "value": "150",
         "category": [{
