@@ -519,8 +519,7 @@ var FusionCharts = require('fusioncharts');
                 "showLabel": "1"
             }]
         }
-    }
-});
+    });
 // Render
 annualPopulation.render()
 </code></pre>
