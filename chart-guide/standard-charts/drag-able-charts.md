@@ -322,6 +322,6 @@ Thus, the array returned by the `getData()` function is a two-dimensional array 
 
 A drag-column chart configured to retrieve data using the `getData()` method looks like this:
 
-{% embed_charts standard-charts-drag-able-charts-example-8.js %}
+{% embed_chart standard-charts-drag-able-charts-example-8.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/qzm79rsv/ "@@open-newtab") to edit the above drag-able chart.
