@@ -60,10 +60,6 @@ Refer to the GIF shown below:
 
 In version 3.13.0, behavior for `maxPeakDataLimit` and `minPeakDataLimit` attributes in zoomline charts have been updated. Value greater than `maxPeakDataLimit` will be considered as peak data and is included in initial display of zoomline. Whereas value lower than `minPeakDataLimit` will also be included as peak data.
 
-In the zoomline chart, all the values are not plotted in the initial display of the chart. Some values are picked smartly from the entire data set to show similar trend. If you want to visualize a particular segment of chart closely, you can zoom in and reveal all the plot points.
-
-`showPeakData` is set to define a condition for peak data, whereas `maxPeakDataLimit` and `minPeakDataLimit` attributes defines those conditions. Value greater than `maxPeakDataLimit` will be considered as peak data and is included in initial display of zoomline. Whereas value lower than `minPeakDataLimit` will also be included as peak data.
-
 For the detailed desctiption of the attributes, click [here]({% site.baseurl %}/chart-guide/standard-charts/zoom-line-charts#customize-the-peak-data-limits-8 '@@open-newtab').
 
 The zoomline chart with above attributes look like:
