@@ -8,7 +8,7 @@ chartPresent: False
 
 FusionExport server accepts export requests from FusionExport CLI, SDK clients, and browsers.
 
-Download FusionExport from [here]("https://fusioncharts.com/download/fusionexport").
+Download FusionExport from [here]("").
 
 ## Usage
 
