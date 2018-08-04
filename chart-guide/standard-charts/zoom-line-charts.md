@@ -321,6 +321,7 @@ Refer to the code below:
         "maxPeakDataLimit": "1000"
     },
 }
+
 ```
 
 The chart will look as shown below:
