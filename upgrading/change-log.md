@@ -7,25 +7,25 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 ## New Features
 
-* FusionCharts Suite XT v3.13.0 introduces two new chart types: **[Overlapped column](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts#overlapped-column-d-chart-3)** chart and **[Overlapped bar](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts#overlapped-bar-d-chart-6)** chart.
+* FusionCharts Suite XT v3.13.0 introduces two new chart types: **[Overlapped column]({% site.baseurl %}/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-column-d-chart-1 '@@open-newtab')** chart and **[Overlapped bar]({% site.baseurl %}/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-bar-d-chart-2 '@@open-newtab')** chart.
 
 * Spline and Spline Area charts are now part of both FusionCharts XT and PowerCharts XT. 
 
 * Spline and Spline Area charts can now be built as part of combination charts, using the `renderAs` attribute. For example, `"renderAs": "spline"`.
 
-* A common [theme](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member-9) can now be applied to all charts in a page.
+* A common [theme]({% site.baseurl %}/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member-9) can now be applied to all charts in a page.
 
-* In multi-level pie chart, [highlightParentPieSlices](https://www.fusioncharts.com/dev/chart-attributes/?chart=multilevelpie&attribute=chart_highlightparentpieslices) and [highlightChildPieSlices](https://www.fusioncharts.com/dev/chart-attributes/?chart=multilevelpie&attribute=chart_highlightChildPieSlices) attributes have been introduced to determine the direction of the highlight effect. 
+* In multi-level pie chart, [highlightParentPieSlices]({% site.baseurl %}/chart-attributes/?chart=multilevelpie&attribute=chart_highlightparentpieslices) and [highlightChildPieSlices]({% site.baseurl %}/chart-attributes/?chart=multilevelpie&attribute=chart_highlightChildPieSlices) attributes have been introduced to determine the direction of the highlight effect. 
 
 * The inner radius of the multi-level pie chart can be configured explicitly using `innerRadius` attribute.
 
-* Custom fonts from client-side export can now be exported using [useCanvas](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member-9) option.
+* Custom fonts from client-side export can now be exported using [useCanvas]({% site.baseurl %}/api/fusioncharts/fusioncharts-properties#fusionchartsoptionsstatic-member-9) option.
 
 * Data from Multi-level Pie charts can now be exported in CSV or XLS formats.
 
-* In zoomline chart, [maxPeakDataLimit](https://www.fusioncharts.com/dev/chart-attributes/?chart=zoomline&attribute=chart_maxpeakdatalimit) and [minPeakDataLimit](https://www.fusioncharts.com/dev/chart-attributes/?chart=zoomline&attribute=chart_minpeakdatalimit) attributes consider the limits as a range when both the attributes are used.
+* In zoomline chart, [maxPeakDataLimit]({% site.baseurl %}/chart-attributes/?chart=zoomline&attribute=chart_maxpeakdatalimit) and [minPeakDataLimit]({% site.baseurl %}/chart-attributes/?chart=zoomline&attribute=chart_minpeakdatalimit) attributes consider the limits as a range when both the attributes are used.
 
-* [getSVGString](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#getsvgstring-95) now accepts an object as the second parameter with a property named `keepImages`. It can now export the logo or any images (background images, etc.) present in the chart.
+* [getSVGString]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#getsvgstring-95) now accepts an object as the second parameter with a property named `keepImages`. It can now export the logo or any images (background images, etc.) present in the chart.
 
 * `fusioncharts.vml.js` file has been added to the package for VML browsers which contains all the VML related codes. This file is used only when the chart will be rendered in the VML browers(IE8 and older).
 
@@ -35,11 +35,11 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * `Angular-FusionCharts` plugin has been renamed to `AngularJS-Fusioncharts`.
 * `Angular 2` and `Angular 4` plugins have been renamed to `Angular-FusionCharts`.
-* The folder structure of the download package is modified. A new folder as `integrations` is added which contains all the **client-side** and **server-side** tech stacks. For more details click [here](https://www.fusioncharts.com/dev/upgrading/changed-behavior#updated-fusioncharts-suite-xt-download-package-5). 
+* The folder structure of the download package is modified. A new folder as `integrations` is added which contains all the **client-side** and **server-side** tech stacks. For more details click [here]({% site.baseurl %}/upgrading/changed-behavior#updated-fusioncharts-suite-xt-download-package-5). 
 
 * For dual y-axis charts, the secondary data plots now overlaps the primary data plots if `renderAs` attribute is set as column. If you would like the old behavior, click [here]({% site.baseurl %}/upgrading/changed-behavior#secondary-data-plots-overlap-primary-data-plots-3 '@@open-newtab') to know more.
 
-* In order to free chart area, the restore button in select-scatter and drag-able chart has been moved to [options menu](https://www.fusioncharts.com/dev/chart-guide/standard-charts/drag-able-charts#dragable-column-d-chart-1). The list of attributes which have been added are as follows:
+* In order to free chart area, the restore button in select-scatter and drag-able chart has been moved to [options menu]({% site.baseurl %}/chart-guide/standard-charts/drag-able-charts#dragable-column-d-chart-1). The list of attributes which have been added are as follows:
 
     * [enableSubmit]({% site.baseurl %}/chart-attributes/?chart=dragcolumn2d&attribute=chart_enablesubmit)
 
@@ -55,13 +55,13 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * The `defaultPrevented` property in the `eventObject` is used instead of the `prevented` property.
 
-* The [onChangeCrossLine](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-events#onchangecrossline-287) event is fired when the mouse pointer is moved from one data plot to another.
+* The [onChangeCrossLine]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#onchangecrossline-287) event is fired when the mouse pointer is moved from one data plot to another.
 
 * Gradient legend now sustains the state even on resize.
 
 * The chart names in theme files are now case insensitive.
 
-* [render()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#render-111) function will also be fired when updating the chart type.
+* [render()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#render-111) function will also be fired when updating the chart type.
 
 * The core maps package has been updated to:
 
