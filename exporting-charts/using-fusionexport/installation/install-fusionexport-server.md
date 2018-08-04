@@ -8,11 +8,7 @@ chartPresent: False
 
 FusionExport server accepts export requests from FusionExport CLI, SDK clients, and browsers.
 
-Download FusionExport from [here]("https://fusioncharts.com/download/fusionexport").
-
-Windows | MAC OS | LINUX | Docker
---- | --- | --- | ---
-<a class="downloadLinks" target="_blank" href="https://fusionexport.fusioncharts.com/download/fusionexport/fusionexport-win_x64-latest.zip" download onclick="ga('send', 'event', 'FExp DevC Download Popup Form', 'FExp DevC Win Form Filled',  'FExp Window PoPup Form')"> Download Link </a>  | <a class="downloadLinks" target="_blank" href="https://fusionexport.fusioncharts.com/download/fusionexport/fusionexport-mac-latest.zip" download onclick="ga('send', 'event', 'FExp DevC Download Popup Form', 'FExp DevC Mac Form Filled',  'FExp Mac PoPup Form')"> Download Link </a> | <a class="downloadLinks" target="_blank" href="https://fusionexport.fusioncharts.com/download/fusionexport/fusionexport-linux_x64-latest.zip" download onclick="ga('send', 'event', 'FExp DevC Download Popup Form', 'FExp DevC Linux Form Filled',  'FExp Linux PoPup Form')"> Download Link </a> | <a class="downloadLinks" target="_blank" href="https://fusionexport.fusioncharts.com/download/fusionexport/fusionexport-docker.zip" download onclick="ga('send', 'event', 'FExp DevC Download Popup Form', 'FExp DevC Linux Form Filled',  'FExp Linux PoPup Form')"> Download Link </a>
+Download FusionExport from [here](https://fusioncharts.com/download/fusionexport).
 
 ## Usage
 
