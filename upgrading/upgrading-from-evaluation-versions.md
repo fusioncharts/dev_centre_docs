@@ -11,7 +11,7 @@ To upgrade, you must do the following:
 
 1. Replace the JavaScript files from the evaluation version, with the ones you received during purchase (can be found in the `js` folder of your download).
 
-2. If you are using an __older__ trial version of FusionCharts Suite XT (earlier than v3.4) [the file names have changed]({% site.baseurl %}/migration/upgrading-from-previous-versions "@@open-newtab"). So, ensure that you have copied the following files from the `js` folder of your download:
+2. If you are using an __older__ trial version of FusionCharts Suite XT (earlier than v3.4) [the file names have changed]({% site.baseurl %}/upgrading/from-flash-to-javascript "@@open-newtab"). So, ensure that you have copied the following files from the `js` folder of your download:
 
      * `fusioncharts.js`
      * `fusioncharts.charts.js`
