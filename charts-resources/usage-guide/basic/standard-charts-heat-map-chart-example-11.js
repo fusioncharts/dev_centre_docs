@@ -1,8 +1,8 @@
 {
     type: 'heatmap',
     renderAt: 'chart-container',
-    width: '550',
-    height: '270',
+    width: '700',
+    height: '350',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -14,30 +14,14 @@
             "xAxisLabelsOnTop": "1",
             //Configuring the tooltip using macros
             "plottooltext": "<div id='nameDiv' style='font-size: 12px; border-bottom: 1px dashed #666666; font-weight:bold; padding-bottom: 3px; margin-bottom: 5px; display: inline-block; color: #888888;' >$rowLabel :</div>{br}Rating : <b>$dataValue</b>{br}$columnLabel : <b>$tlLabel</b>{br}<b>$trLabel</b>",
-
-            //Cosmetics
-            "baseFontColor": "#333333",
-            "baseFont": "Helvetica Neue,Arial",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
-            "subcaptionFontBold": "0",
-            "showBorder": "0",
-            "bgColor": "#ffffff",
-            "showShadow": "0",
-            "canvasBgColor": "#ffffff",
-            "canvasBorderAlpha": "0",
-            "legendBgAlpha": "0",
-            "legendBorderAlpha": "0",
-            "legendShadow": "0",
-            "legendItemFontSize": "10",
-            "legendItemFontColor": "#666666",
+            "showValues": "1",
             "toolTipColor": "#ffffff",
             "toolTipBorderThickness": "0",
             "toolTipBgColor": "#000000",
             "toolTipBgAlpha": "80",
             "toolTipBorderRadius": "2",
             "toolTipPadding": "5",
-
+            "theme": "fusion",
         },
         "rows": {
             "row": [{
