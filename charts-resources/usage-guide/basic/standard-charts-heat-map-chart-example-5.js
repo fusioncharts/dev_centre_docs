@@ -1,8 +1,8 @@
 {
     type: 'heatmap',
     renderAt: 'chart-container',
-    width: '550',
-    height: '270',
+    width: '700',
+    height: '350',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -11,6 +11,7 @@
             "subcaption": "By Features",
             "xAxisName": "Features",
             "yAxisName": "Model",
+            "showValues": "1",
             "showPlotBorder": "1"
         },
         "rows": {

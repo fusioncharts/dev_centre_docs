@@ -1,8 +1,8 @@
 {
     type: 'scatter',
     renderAt: 'chart-container',
-    width: '550',
-    height: '350',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
