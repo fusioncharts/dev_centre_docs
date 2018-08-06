@@ -1,20 +1,14 @@
 ---
 title: Version 3.4.x | FusionCharts
-description: This section talks about the new features, improvements and fixes for v3.4.1.
+description: This section talks about the new features, improvements and fixes for v3.4.x.
 heading: Version 3.4.x
 ---
 
-## Version 3.4.1
+<h2 class="sub-heading">Version 3.4.1</h2>
+18th November, 2013
 
-#### FusionCharts XT (18th November, 2013)
-
-#### Improvements
-
-
-
-<p class="release-date"> 26th September, 2014 </p>
-
-## Improvements
+<h4 class="sub-heading">Improvements</h4>
+26th September, 2014
 
 * Zero JavaScript memory leak while disposing a chart.
 
@@ -24,7 +18,7 @@ heading: Version 3.4.x
 
 * Addition of the newly formed Telangana (India) state map.
 
-## Fixes
+<h4>Fixes</h4>
 
 * Support added for exporting charts having radial gradients in VML browsers.
 
@@ -70,12 +64,11 @@ heading: Version 3.4.x
 
 * FusionCharts is now compatible with AMD based module loaders like RequireJS.
 
-heading: Version 3.4.0
----
+<h2>Version 3.4.0</h2>
+16th June, 2014
 
-<p class="release-date"> 16th June, 2014 </p>
+<h4 class="sub-heading">Key Changes</h4>
 
-## Key Changes
 * Rendering supported in Javascript only, support for rendering in Flash deprecated.
 
 * Significant improvement in chart rendering time.
@@ -100,7 +93,7 @@ heading: Version 3.4.0
 
 * New JavaScript helper methods added.
 
-## Improvements
+<h4>Improvements</h4>
 
 * Cleaner legend keys across all charts.
 
@@ -128,7 +121,7 @@ heading: Version 3.4.0
 
 * Aesthetics of axis, data plot, anchors etc.
 
-## Fixes
+<h4>Fixes</h4>
 
 * The `*divlinealpha*` attribute now works in Google Chrome
 
