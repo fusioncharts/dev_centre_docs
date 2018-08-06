@@ -1,6 +1,6 @@
 ---
 title: Version 3.7.x | FusionCharts
-description: This section talks about the new features, improvements and fixes for v3.7.1.
+description: This section talks about the new features, improvements and fixes for v3.7.x.
 heading: Version 3.7.x
 ---
 
@@ -16,6 +16,7 @@ Latest version of Firefox (37.0.1) introduced two bugs which were fixed in this 
 * Line segments in all line and area-based charts are now visible.
 
 <h2>Version 3.7.0</h2>
+25th March, 2015
 
 <h4 class="sub-heading">New Features</h4>
 
