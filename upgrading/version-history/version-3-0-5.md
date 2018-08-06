@@ -2,12 +2,10 @@
 title: Version 3.0.5 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.0.5.
 heading: Version 3.0.5
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 22nd December, 2007
-
 ## FusionCharts
+**22nd December, 2007**
 
 * **New:** Image saving feature to allow export of charts as images.
 
@@ -23,9 +21,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * **Bug Fix:** Minor external interface bug fix in all charts.
 
-#### 24th December, 2007
-
 ## PowerCharts
+**24th December, 2007**
 
 * **New:** Image saving feature to allow export of charts as images.
 
@@ -33,9 +30,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * **Bug Fix:** Security fix that restricts XSS attacks. FusionCharts now loads data from only relative URLs. Absolute URLs are not allowed.
 
-#### 10th April, 2008
-
 ## FusionMaps
+**10th April, 2008**
 
 * **New:** Ability to save maps as images and to invoke this functionality from JavaScript.
 

@@ -2,12 +2,10 @@
 title: Version 3.1.1 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.1.1.
 heading: Version 3.1.1
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 10th April, 2009
-
 ## FusionCharts
+**10th April, 2009**
 
 * Optimizations in FusionCharts Export Handlers (Server-side).
 
@@ -17,9 +15,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * **Fix:** `seriesNameInToolTip` bug fixed.
 
-#### April 9th, 2009
-
 ## FusionWidgets
+**April 9th, 2009**
 
 * Improved: FusionCharts Server Side Export Handlers.
 
@@ -29,9 +26,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * **Fix:** In data-streaming charts, clear chart was not removing text-fields.
 
-#### 25th February, 2009
-
 ## PowerCharts
+**25th February, 2009**
 
 * **New:** Ability to export charts as PNG/JPG/PDF at client side or server side. We've also devised a batch export mechanism at client side, which allows you to export all the charts in a page as a single image/PDF using one-click.
 

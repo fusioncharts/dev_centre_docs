@@ -2,12 +2,10 @@
 title: Version 3.0.3 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.0.3.
 heading: Version 3.0.3
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 12th February, 2007
-
 ## FusionCharts
+**12th February, 2007**
 
 * **New:** Added Horizontal Bar 3D Chart, Stacked Horizontal Bar 3D Chart, Scroll Stacked Column 2D Chart, Scroll Combination 2D Chart, Scroll Combination (Dual Y) 2D Chart.
 
@@ -19,9 +17,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * **Bug Fix:** `showLabels` attribute wasn't working in Pie 2D Chart.
 
-#### 6th March, 2007
-
 ## FusionMaps
+**6th March, 2007**
 
 * **New:** Added following new flash maps, taking the total count to 181 maps.
 

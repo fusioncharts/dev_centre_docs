@@ -2,12 +2,10 @@
 title: Version 3.0.4 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.0.4.
 heading: Version 3.0.4
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 1st August, 2007
-
-## FusionCharts 
+## FusionCharts
+**1st August, 2007**
 
 * **Improvement:** FusionCharts JavaScript class now implements methods to detect end user's Flash Player version and then show appropriate messages.
 
@@ -21,9 +19,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * **Bug Fix:** Tool tip position bug fixed (when chart is loaded inside nested movie clips in another Flash movie).
 
-#### 2nd August, 2007
-
-## PowerCharts 
+## PowerCharts
+**2nd August, 2007**
 
 * **Improvement:** Better printing support using the Context Menu "Print Chart" option.
 
@@ -37,9 +34,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * **Bug Fix:** In candlestick charts, when there were too few columns, they were getting out of canvas. It has been fixed.
 
-#### 20th June, 2007
-
 ## FusionMaps
+**20th June, 2007**
 
 * Renamed product to FusionMaps (from PowerMaps).
 

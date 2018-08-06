@@ -2,12 +2,10 @@
 title: Version 3.1.0 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.1.0.
 heading: Version 3.1.0
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 24th February, 2009
-
 ## FusionCharts
+**24th February, 2009**
 
 * **New:** Ability to export charts as PNG/JPG/PDF at client side or server side. We've also devised a batch export mechanism at client side, which allows you to export all the charts in a page as a single image/PDF using one-click.
 
@@ -31,9 +29,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * Bug Fixes: In all charts pertaining axis limits and true 3D chart.
 
-#### March 6th, 2009
-
 ## FusionWidgets
+**March 6th, 2009**
 
 * **New:** Ability to export charts as PNG/JPG/PDF at client side or server side. We've also devised a batch export mechanism at client side, which allows you to export all the charts in a page as a single image/PDF using one-click.
 
@@ -47,9 +44,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * **Improved:** More control over chart using JavaScript - many new APIs and events exposed by chart.
 
-#### 10th April, 2009
-
 ## FusionMaps
+**10th April, 2009**
 
 * **New:** Ability to export maps as PNG/JPG/PDF at client side or server side. We've also devised a batch export mechanism at client side, which allows you to export all the maps in a page as a single image/PDF using one-click.
 

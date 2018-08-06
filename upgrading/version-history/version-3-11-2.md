@@ -4,8 +4,7 @@ description: This section talks about the new features, improvements and fixes f
 heading: Version 3.11.2
 breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
-
-#### 16th September, 2016
+**16th September, 2016**
 
 ## New Features
 
