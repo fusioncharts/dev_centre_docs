@@ -4,16 +4,17 @@ description: This section talks about the new features, improvements and fixes f
 heading: Version 3.12.x
 ---
 
-<h2 class="sub-heading">Version 3.12.2 </h2>13th October, 2017
+<h2 class="sub-heading">Version 3.12.2 </h2>
+13th October, 2017
 
 <h4 class="sub-heading">Improvement</h4>
 
 * TypeScript definition files added to npm package of FusionCharts (fusioncharts & fusionmaps). Previously, the definition files were added from the `definitelytyped` repository.
 
-<h2 class="sub-heading">Version 3.12.1</h2>
-**3rd July, 2017**
+<h2>Version 3.12.1</h2>
+3rd July, 2017
 
-#### New Features
+<h4 class="sub-heading">New Features</h4>
 
 * The FusionCharts export servers have been reconfigured to introduce the following features:
 
@@ -23,7 +24,7 @@ heading: Version 3.12.x
 
     * The `exportAction` attribute has been reconfigured to take one more value, download-save (in addition to the existing values save and download), to send the exported file as a download to the client as well as save a copy on the server.
 
-#### Improvements
+<h4>Improvements</h4>
 
 * Touch devices now support the swipe gesture for scrolling through the chart area.
 
@@ -317,7 +318,7 @@ heading: Version 3.12.x
 
     * Add 19 specification sheets for administrative regions in Philippines.
 
-#### Fixes
+<h4>Fixes</h4>
 
 * The `labelLink` attribute is now working as expected.
 
@@ -459,10 +460,10 @@ heading: Version 3.12.x
 
 * In maps, when the entity value is set to 0, tooltips no longer show the entity value as undefined; the entity value in the tooltip is shown as 0.
 
-<h2 class="sub-heading">Version 3.12.0</h2>
-**10th March, 2017**
+<h2>Version 3.12.0</h2>
+10th March, 2017
 
-#### New Features
+<h4 class="sub-heading">New Features</h4>
 
 * FusionCharts Suite XT introduces data skipping starting version 3.12.0. In case of huge data, data skipping draws only those plots in the canvas that actually create a data trend.
 
@@ -490,7 +491,7 @@ heading: Version 3.12.x
 
 * The `asyncRender` property has been introduced to enable/disable this feature.
 
-#### Improvements:
+<h4>Improvements</h4>
 
 * Tooltip interaction in error charts has been improved to show cumulative plot values when the cursor is hovered upon the upper and lower limits of the error bars. The `cumulativeValueOnErrorBar` attribute has been introduced to enable (or disable) this feature.
 
@@ -1002,7 +1003,7 @@ heading: Version 3.12.x
 
         * Remove Shariff Kabunsuan from the list of entities.
 
-#### Fixes:
+<h4>Fixes</h4>
 
 * For bar charts, the `showLabels` attribute is now working as expected. Previously, when set to `0`, this attribute was not hiding the x-axis labels while updating the chart.
 
