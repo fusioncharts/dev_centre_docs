@@ -4,14 +4,14 @@ description: This section talks about the new features, improvements and fixes f
 heading: Version 3.11.x
 ---
 
-## Version 3.11.3
-**1st November, 2016**
+<h2 class="sub-heading">Version 3.11.3</h2>
+1st November, 2016
 
-## Key Change
+<h4 class="sub-heading">Key Change</h4>
 
 * The current pricing plan has been changed to an annual model, based on the number of developers.For more details, please visit our [pricing](https://www.fusioncharts.com/buy/) page.
 
-## New Features
+<h4>New Features</h4>
 
 * Toolbars can now be customized using the following attributes:
 
@@ -21,7 +21,7 @@ heading: Version 3.11.x
     * `toolbarYAlign`
     * `toolbarPosition`
 
-## Improvements
+<h4>Improvements</h4>
 
 * The message font and font color can now be customized when the `showChartMessage()` method is used to set custom chart messages.
 
@@ -47,7 +47,7 @@ heading: Version 3.11.x
 
         * Add Republic of Altay, Crimea, and Sevastopol City to the list of entities
 
-## Fixes
+<h4>Fixes</h4>
 
 * Behavioral issues encountered when the `clickURL` attribute and the export event are used together have been fixed. Previously, the events would be triggered together resulting in chart export and redirection happening at the same time.
 
@@ -85,8 +85,8 @@ heading: Version 3.11.x
 
 * Markers no longer become unclickable when overlapped by labels.
 
-## Version 3.11.2
-**16th September, 2016**
+<h2>Version 3.11.2</h2>
+16th September, 2016
 
 * FusionCharts Suite XT(trial version) can be installed via NPM and Bower. The product is available in two different packages:
 
@@ -94,7 +94,7 @@ heading: Version 3.11.x
 
     * The fusionmaps package, in addition to all charts and widgets, includes all map definition files.
 
-## Improvements
+<h4>Improvements</h4>
 
 * Chart performance has been improved thereby significantly improving the chart rendering speed.
 
@@ -106,7 +106,7 @@ heading: Version 3.11.x
 
 * The `feedData` method is now working as expected. Previously, this method was escaping characters for encoding. This issue has now been fixed.
 
-## Fixes
+<h4>Fixes</h4>
 
 * In the zoom scatter chart, the regression line is now working as expected. Previously, it was getting extended upto the width of the canvas. This issue has been fixed.
 
@@ -142,10 +142,10 @@ heading: Version 3.11.x
 
 * In real-time charts, using `updateInterval` the real-time data gets rendered at expected time.
 
-## Version 3.11.0
-**1st July, 2016**
+<h2>Version 3.11.0</h2>
+1st July, 2016
 
-## New Features
+<h4 class="sub-heading">New Features</h4>
 
 * A new interaction model has been introduced for the treemap chart. The newly introduced navigation bar helps to stay in context of the overall hierarchy of data while we focus on details at a certain level of the hierarchical data. The navigation bar is also interactive; clicking a node on the bar shows the subtree for which the clicked node is the root node.
 
@@ -167,7 +167,7 @@ heading: Version 3.11.x
 
 * The `alphaAnimation` attribute has been introduced to let users enforce initial animation via alpha transition.
 
-## Improvements
+<h4>Improvements</h4>
 
 * Like the scatter chart, now the zoom-scatter chart also supports category on x-axis.
 
@@ -211,7 +211,7 @@ heading: Version 3.11.x
 
     * Updated the specification sheet for East Timor to rename Ambeno to Oecusse.
 
-## Fixes
+<h4>Fixes</h4>
 
 * Category labels in the chart data are now rendered correctly irrespective of the number of labels and the chart size. Previously, for a large number, the labels were rendered only when the chart size was significantly increased.
 
