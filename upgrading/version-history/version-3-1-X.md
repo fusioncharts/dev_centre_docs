@@ -4,7 +4,7 @@ description: This section talks about the new features, improvements and fixes f
 heading: Version 3.1.x
 ---
 
-<span class="release-date"> <h2>Version 3.1.1</h2></span>
+## Version 3.1.1
 
 #### FusionCharts (10th April, 2009)
 
