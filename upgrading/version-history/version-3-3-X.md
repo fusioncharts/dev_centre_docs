@@ -4,10 +4,11 @@ description: This section talks about the new features, improvements and fixes f
 heading: Version 3.3.1 SR3
 ---
 
-## FusionCharts XT
-**18th November, 2013**
+## Version 3.3.1 SR3
 
-### Improvements
+#### FusionCharts XT (18th November, 2013)
+
+#### Improvements
 
 * FusionCharts export servers are now SSL enabled to allow seamless exporting of charts rendered inside SSL secured pages.
 
@@ -17,7 +18,7 @@ heading: Version 3.3.1 SR3
 
 * Legends in pie charts, when placed on right, is now aligned with the center of the pie.
 
-### Fixes
+#### Fixes
 
 * Fixed issues with unexpected thick borders and other graphic artefacts appearing on Chrome version 29 and above.
 
@@ -47,10 +48,9 @@ heading: Version 3.3.1 SR3
 
 * Plugged memory leakage caused while managing text wrapping when charts are repeatedly resized.
 
-## FusionWidgets XT
-**18th November, 2013**
+#### FusionWidgets XT (18th November, 2013)
 
-### Improvements
+#### Improvements
 
 * FusionCharts export servers are now SSL enabled to allow seamless exporting of charts rendered inside SSL secured pages.
 
@@ -60,7 +60,7 @@ heading: Version 3.3.1 SR3
 
 * Unify behavior to not include color range limits while calculating the scale limits in any gauge.
 
-### Fixes
+#### Fixes
 
 * Fixed issues with unexpected thick borders and other graphic artefacts appearing on Chrome version 29 and above.
 
@@ -80,16 +80,15 @@ heading: Version 3.3.1 SR3
 
 * Data value label alignment issue related to the left margin of the chart is rectified in Cylinder and Thermometer gauges.
 
-## PowerCharts XT
-**18th November, 2013**
+#### PowerCharts XT (18th November, 2013)
 
-### Improvements
+#### Improvements
 
 * FusionCharts export servers are now SSL enabled to allow seamless exporting of charts rendered inside SSL secured pages.
 
 * Gradient legend is now more responsive to user interactivity on touch devices.
 
-### Fixed
+#### Fixed
 
 * Fixed issues with unexpected and thick borders and other graphic artefacts appearing on Chrome version 29 and above.
 
@@ -119,16 +118,15 @@ heading: Version 3.3.1 SR3
 
 * Fixed the runtime error on edit of axis limits in drag-able charts.
 
-## FusionMaps XT
-**18th November, 2013**
+#### FusionMaps XT (18th November, 2013)
 
-### Improvements
+#### Improvements
 
 * FusionCharts export servers are now SSL enabled to allow seamless exporting of maps rendered inside SSL secured pages.
 
 * Gradient legend is now more responsive to user interactivity on touch devices.
 
-### Fixes
+#### Fixes
 
 * Fixed issues with unexpected and thick borders and other graphic artefacts appearing on Chrome version 29 and above.
 
@@ -139,3 +137,453 @@ heading: Version 3.3.1 SR3
 * Plugged memory leakage caused while managing text wrapping when maps are repeatedly resized.
 
 * Removed custom id validations as it was not adding any significant value to the id management. Maintaining the validity and uniqueness of custom id is now the user's responsibility.
+
+## Version 3.3.1 SR2
+
+## FusionCharts XT (28th May, 2013)
+
+#### Fixes
+
+* Fixed runtime error in Stacked charts with `null` values
+
+* Minor fix in visualization of Pie 2D chart with thick plot border
+
+* External images are no longer included in the export stream
+
+* Minor fix while exporting charts to PDF in Internet Explorer 9+
+
+* Pie and Doughnut charts now correctly invoke legend-click event
+
+* Slice index order for `togglePieSlice()` in Pie and Doughnut charts is corrected
+
+* Terminal data labels are now visible in 3D Stacked column charts in all dimensions
+
+* Tooltip now correctly shows category labels when `showLabel='0'` is set to `<category>`
+
+* Pie and Doughnut charts no longer crashes when insignificant values are passed as data
+
+* The positive sense of rotation for `startingAngle` in Pie 2D and Doughnut 2D charts is corrected
+
+* Caption and sub-caption are now centrally aligned with respect to chart's background in Pie and Doughnut
+
+#### FusionWidgets XT (28th May, 2013)
+
+#### Fixes
+
+* Fix related to the visibility of Message Logger
+
+* Fixed runtime error in Stacked charts with `null` values
+
+* External images are no longer included in the export stream
+
+* Minor fix while exporting charts to PDF in Internet Explorer 9+
+
+* Fixed runtime error in Angular gauge when trendline marker tooltip is defined
+
+* Tooltip now correctly shows category labels when `showLabel='0'` is set to `<category>`
+
+#### PowerCharts XT (28th May, 2013)
+
+#### Fixed
+
+* Dataplot links now works as expected in Kagi chart
+
+* External images are no more included in the export stream
+
+* Minor fix related to visibility of Radar plot in Internet Explorer
+
+* Minor fix related to displacement of line when dragged in DragLine chart
+
+* Minor fix while exporting charts and gauges to PDF in Internet Explorer 9+
+
+* Tooltip now correctly shows category labels when `showLabel='0'` is set to `<category>`
+
+#### FusionMaps XT (28th May, 2013)
+
+#### Fixes
+
+* External images are no more included in the export stream
+
+* Minor fix while exporting maps to PDF in Internet Explorer 9+
+
+## Version 3.3.1 SR1
+
+## FusionCharts XT (18th April, 2013)
+
+#### New Features
+
+* Ability to convert HTML Table to chart using jQuery plugin.
+
+### Improvements
+
+* Optimized rendering of line charts.
+
+#### Fixes (18th April, 2013)
+
+* Hot-fix in VML Rendering Library.
+
+* Trendline labels for Secondary Y-Axis are now positioned correctly.
+
+#### FusionWidgets XT (18th April, 2013)
+
+#### New Features
+
+* Added two new events taskClicked and connectorClicked for JavaScript Gantt chart.
+
+#### Improvements
+
+* Optimized rendering of line charts.
+
+#### Fixes
+
+* Hot-fix in VML Rendering Library.
+
+* Trendline labels for Secondary Y-Axis are now positioned correctly.
+
+#### PowerCharts XT (18th April, 2013)
+
+#### New Features
+
+* Ability to convert HTML Table to chart using jQuery plugin.
+
+#### Improvements
+
+* Optimized rendering of line charts.
+
+#### Fixes
+
+* Hot-fix in VML Rendering Library.
+
+* Trendline labels for Secondary Y-Axis are now positioned correctly.
+
+* Trendzones are now correctly drawn in inverse charts.
+
+## FusionMaps XT (18th April, 2013)
+
+#### Fixes
+
+* Hot-fix in VML Rendering Library.
+
+## Version 3.3.1
+
+#### FusionCharts XT (4th April, 2013)
+
+#### New Features
+
+* JavaScript Pie and Doughnut 3D Charts no longer crash on Blackberry OS 10.
+
+* `displayValue` attribute now works within `<set>` element of JavaScript Bubble chart.
+
+* Minor fix in rendering of canvas shadow while using `useRoundEdges='1'` in VML Browsers.
+
+* Minor fix for shadow not being clipped during initial animation of JavaScript Stacked Area charts.
+
+* `showPercentInTooltip` attribute now displays percent value in tooltip when set as 1 in JavaScript Stacked charts.
+
+* `manageLabelOverflow` attribute will now work properly when set along with `baseFontSize`, in JavaScript charts.
+
+* Fixed runtime error of JavaScript Bar charts with certain combination of `maxLabelWidthPercent` attribute and long data labels.
+
+#### Improvements
+
+* Improved pin feature for JavaScript ZoomLine chart.
+
+#### Fixes
+
+* JavaScript Pie and Doughnut 3D Charts no longer crash on Blackberry OS 10.
+
+* `displayValue` attribute now works within `<set>` element of JavaScript Bubble chart.
+
+* Minor fix in rendering of canvas shadow while using `useRoundEdges='1'` in VML Browsers.
+
+* Minor fix for shadow not being clipped during initial animation of JavaScript Stacked Area charts.
+
+* `showPercentInTooltip` attribute now displays percent value in tooltip when set as 1 in JavaScript Stacked charts.
+
+* `manageLabelOverflow` attribute will now work properly when set along with `baseFontSize`, in JavaScript charts.
+
+* Fixed runtime error of JavaScript Bar charts with certain combination of `maxLabelWidthPercent` attribute and long data labels.
+
+#### FusionWidgets XT (4th April, 2013)
+
+#### New Features
+
+* Support for JavaScript variant of Gantt Chart having new features like:
+
+    * Vertical scrolling.
+
+    * Mouse hover or touch effect on tasks, connectors, processes, categories.
+
+* Support for Message logger in JavaScript Realtime charts and gauges.
+
+* Added `showOnTop` attribute to display the trendline on top or bottom of the dataplots in Flash Spark Column/Line charts.
+
+#### Fixes
+
+* Minor fix in `taskDatePadding` attribute of Flash Gantt chart.
+
+* Minor fix in `width` attribute within `<process>` element of Flash Gantt chart.
+
+* Font cosmetics can now be applied to start and end date within `<tasks>` and `<task>` element of Flash Gantt chart.
+
+* Minor fix in rendering of annotations in iPad.
+
+* Minor fix in data plot representation when `<set>` element has zero value in JavaScript Funnel and Pyramid chart.
+
+* Minor fix for shadow not being clipped during initial animation of JavaScript Real-time Stacked Area charts.
+
+* JavaScript Realtime charts now updates after its container is re-sized.
+
+* Minor fix in rendering of canvas shadow while using `useRoundEdges='1'` in VML Browsers.
+
+* Unspecified values are no longer displayed in JavaScript Win/Loss chart.
+
+* `manageLabelOverflow` attribute now works properly when set along with `baseFontSize`, in JavaScript charts.
+
+#### PowerCharts XT (4th April, 2013)
+
+#### Improvements
+
+* Improved X-Axis calculation in Flash Candlestick chart.
+
+* Better positioning of min and max values in JavaScript BoxAndWhisker2D chart.
+
+#### Fixes
+
+* `legendPosition='right'` now works in Flash Candlestick chart.
+
+* `showYAxisValues='1'` now enables Y-Axis values in JavaScript Drag-node chart.
+
+* Label text does not display `undefined` while deleting a label in JavaScript Drag-node chart.
+
+* `plotBorderColor` attribute now works in Spline Area and MSSpline Area charts.
+
+* Minor fix related to rendering of plot in JavaScript Spline charts.
+
+* Long captions are now aligned properly in Flash charts.
+
+* `manageLabelOverflow` attribute now works properly when set along with `baseFontSize`, in JavaScript charts.
+
+* Minor fix in legend icon color when legend position is right in JavaScript BoxAndWhisker2D chart.
+
+* Minor fix in positioning of data values in JavaScript BoxAndWhisker chart.
+
+* Minor fix in data plots when `useRoundEdges='1'` in JavaScript Logarithmic charts.
+
+* Minor fix in the drawing of Trendzone in JavaScript Inverse charts.
+
+* Trendline `displayValue` no longer dislocates on using `endValue` attribute in JavaScript Inverse charts.
+
+* Minor fix in rendering of canvas shadow while using `useRoundEdges='1'` in VML Browsers.
+
+#### FusionMaps XT (4th April, 2013)
+
+#### Improvements
+
+* Improved legend interactivity in JavaScript maps.
+
+* Better label management for marker labels in Flash Maps.
+
+#### Fixes
+
+* Minor fix in rendering of tooltip and hover event related issues in JavaScript Maps.
+
+* Minor fix in the functioning of `scale` attribute when `radius` is provided within `<shape>` element of JavaScript Maps.
+
+* JavaScript functions as links for entities are no longer invoked twice when entity labels having connector lines are clicked.
+
+* Corrected entity id for 'Cuyuni-Mazaruni' (GY.CU) regions of Guyana map and 'Central' (ZM.CE) province of Zambia map.
+
+* Fixed runtime errors in VML browsers when shadow is enabled in JavaScript Maps.
+
+* Minor fix in markers when shape type is `arc` in JavaScript Maps.
+
+* Inner radius of `arc` shape is fixed within `<marker>` element in JavaScript Maps.
+
+* `manageLabelOverflow` attribute now works properly when set along with `baseFontSize`, in JavaScript maps.
+
+## Version 3.3.0
+
+#### FusionCharts XT (30th January, 2013)
+
+#### New Features
+
+* Links are no more invoked in drag events for Flash charts.
+
+* Common alpha can be set on gradient colors in Flash charts.
+
+* Minor fix in displaying thin slices of JavaScript Pie 3D and Pie 2D charts.
+
+* Minor fix related to displacement of data plot in JavaScript Line and Area charts.
+
+* Minor fix related to `maxLabelWidthPercent` attribute in JavaScript Bar charts.
+
+* Summation values are now positioned correctly in JavaScript MSStacked charts.
+
+* Fix related to tooltip of Zoomline chart being displayed outside the canvas in Flash.
+
+* Minor fix related to `numVisiblePlot` in Flash Scroll Combination Dual Y 2D chart.
+
+* Minor fix in displaying data labels and tooltip when null values are passed to JavaScript Marimekko charts.
+
+* `getSVGString()` and `exportChart()` can now be invoked multiple times in JavaScript charts.
+
+#### Improvements
+
+* Better and crisp visualization of JavaScript charts.
+
+* Added support to customize export related context-menu items of JavaScript charts.
+
+* Improvement in dataset order for JavaScript MSBar2D and MSBar3D charts.
+
+* JavaScript SSGrid chart now supports export feature.
+
+#### Fixes
+
+* JavaScript Pie and Doughnut 3D Charts no longer crash on Blackberry OS 10.
+
+* `displayValue` attribute now works within `<set>` element of JavaScript Bubble chart.
+
+* Minor fix in rendering of canvas shadow while using `useRoundEdges='1'` in VML Browsers.
+
+* Minor fix for shadow not being clipped during initial animation of JavaScript Stacked Area charts.
+
+* `showPercentInTooltip` attribute now displays percent value in tooltip when set as 1 in JavaScript Stacked charts.
+
+* `manageLabelOverflow` attribute will now work properly when set along with `baseFontSize`, in JavaScript charts.
+
+* Fixed runtime error of JavaScript Bar charts with certain combination of `maxLabelWidthPercent` attribute and long data labels.
+
+#### FusionWidgets XT (30th January, 2013)
+
+#### New Features
+
+* Exported JavaScript charts and gauges can now be saved to a server (using PHP and JAVA).
+
+#### Improvements
+
+* Better and crisp visualization of JavaScript charts and gauges.
+
+* Improved display of low and high anchors in Spark Line chart.
+
+* Added support to customize export related context-menu items of JavaScript charts and gauges.
+
+* Default value of `refreshInterval` attribute for Real-Time charts is set to 1 second.
+
+#### Fixes
+
+* Links are no more invoked in drag events for Flash charts and gauges.
+
+* Common alpha can be set on gradient colors in Flash charts and gauges.
+
+* Minor fix for `yAxisMinValue` in Flash Real-time Stacked charts.
+
+* Minor fix in overlapping of divisional line labels for Flash Real-time charts.
+
+* Minor fix for `sFormatNumberScale` in Flash Real-time Dual Y-Axis charts.
+
+* `showFullDataTable='1'` now works correctly in `<process>` element of Flash Gantt chart.
+
+* Trendlines now appear behind the data plots when `showOnTop='0'` in JavaScript Real-time charts.
+
+* Minor fix related to displacement of data plot in JavaScript Real-time Line and Real-time Area charts.
+
+* `getSVGString()` and `exportChart()` can now be invoked multiple times in JavaScript charts and gauges.
+
+* Chart API and context menu items are now functioning as expected after exporting in JavaScript Real-Time charts.
+
+#### PowerCharts XT (30th January, 2013)
+
+#### New Features
+
+* Exported JavaScript charts can now be saved to a server (using PHP and JAVA).
+
+* Ability to show X-Axis labels on top of the chart canvas in Heat Map chart.
+
+#### Improvements
+
+* Better and crisp visualization of JavaScript charts.
+
+* Major improvement in the visualization of JavaScript CandleStick chart.
+
+* Improved drawing of JavaScript LogMSColumn2D chart in inverse mode.
+
+* Added support to customize export related context-menu items of JavaScript charts.
+
+#### Fixes
+
+* Links are no more invoked in drag events for Flash charts.
+
+* Common alpha can be set on gradient colors in Flash charts.
+
+* Minor fix in axis number formatting of Flash Multi-Axis Line chart.
+
+* Minor fix related to visibility of nodes in Flash Drag-node chart.
+
+* `bgColor` of label now occupies the whole node in Flash Drag-node chart.
+
+* Minor fix in displaying upper limit values of JavaScript Drag-able charts.
+
+* Minor fix in the position of data values in JavaScript LogMSColumn2D chart.
+
+* Font Style can now be applied to data labels in JavaScript Multi-Level Pie chart.
+
+* Minor fix related to displacement of data plot in JavaScript Line and Area charts.
+
+* Minor fix in padding attribute in the `<label>` node of JavaScript Drag-node chart.
+
+* Dashed styles can now be applied to individual plots of JavaScript Multi-Axis Line chart.
+
+* Minor fix in determining the max or min value of the color range in JavaScript Heat Map chart.
+
+* Tooltip box does not appear any more when category value is null in JavaScript MultiLevelPie chart.
+
+* `getSVGString()` and `exportChart()` can now be invoked multiple times in JavaScript charts.
+
+#### FusionMaps XT (30th January, 2013)
+
+#### New Features
+
+* 430 new maps added.
+
+* Four new additional packs.
+
+* New attributes to configure marker cosmetics in Flash map:
+
+    * `markerFillColor`
+
+    * `markerFillAlpha`
+
+    * `markerFillRatio`
+
+    * `markerFillAngle`
+
+    * `markerBorderAlpha`
+
+* Support for radius and shapeId attributes in marker definition node in Flash maps.
+
+* Markers can now be auto-scaled when a Flash map is resized setting `autoScaleMarkers='1'`.
+
+* Exported JavaScript maps can now be saved to a server (using PHP and JAVA).
+
+#### Improvements
+
+* `displayValue` and `maxValue` attributes are now calculated from `<colorRange>` element when single color gradient is used in Flash Maps.
+
+* Added support to customize export related context-menu items of JavaScript maps.
+
+#### Fixes
+
+* Minor fix in space management for legend in Flash maps.
+
+* Flash maps now displays entity names properly in Apple Mac.
+
+* Entity labels are now click-able to allow drill-down in Flash maps.
+
+* Minor fix related to the position of `Gradient-Legend` pointer in Flash charts.
+
+* `exportChart()` can now be invoked multiple times in JavaScript maps.
+
+* Fix related to disparity between Flash maps and JavaScript maps with respect to their boundaries.
+
+* Flash World with Countries map no more returns `"Null"` as the DOMId through `FC_Rendered event`.
