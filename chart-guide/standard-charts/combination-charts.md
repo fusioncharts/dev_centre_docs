@@ -189,7 +189,7 @@ To plot a trend-lines on a chart, follow the steps given below:
 
 * Specify the `isTrendZone` attribute to set whether a chart will be rendered with a trend-line or a trend-zone. The default value for this attribute is `1`, which renders the trend-zone. Setting it to `0` will render a trend-line.
 
-> **Note:** This attribute belongs to the line object, which in turn belongs to the trendlines object.
+> This attribute belongs to the line object, which in turn belongs to the trendlines object.
 
 FusionCharts Suite XT includes several options to customize trend elements. To know more about the trend elements in a single y-axis chart, click here. To know more about the dual y-axis chart, click here.
 
