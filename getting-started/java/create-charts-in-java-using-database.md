@@ -1,12 +1,9 @@
 ---
-permalink: using-with-server-side-languages/java/creating-charts-with-data-from-a-database.html
-title: Creating Charts in Java using a Database | FusionCharts
+title: Create Charts in Java using Database | FusionCharts
 description: In addition to specifying the chart data directly in the JSON/XML code, you can also fetch data for the chart from a database.
-heading: Creating Charts in Java using a Database
+heading: Create Charts in Java using Database
 chartPresent: true
 ---
-
-<p style="background:rgba(249, 249, 249, 1); padding:15px; border:1px solid #888; border-bottom-width:3px; border-radius:4px; text-align:center;">FusionCharts JSP Wrapper can be downloaded from <a href="http://www.fusioncharts.com/jsp-charts/" target="_blank">here</a>.</p>
 
 In addition to specifying the chart data (or the URL for the file in which the chart data is stored) directly in the JSON/XML code, you can also fetch data for the chart from a database.
 

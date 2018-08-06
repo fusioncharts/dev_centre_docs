@@ -1,12 +1,9 @@
 ---
-permalink: using-with-server-side-languages/ruby-on-rails/creating-charts-with-data-from-a-database.html
-title: Creating Charts in Ruby using a Database | FusionCharts
+title: Create Charts in Ruby using Database | FusionCharts
 description: This section showcases how you can do this using the FusionCharts Ruby on Rails wrapper.
-heading: Creating Charts in Ruby using a Database
+heading: Create Charts in Ruby using Database
 chartPresent: true
 ---
-
-<p style="background:rgba(249, 249, 249, 1); padding:15px; border:1px solid #888; border-bottom-width:3px; border-radius:4px; text-align:center;">FusionCharts Ruby on Rails Wrapper can be downloaded from <a href="http://www.fusioncharts.com/ruby-on-rails-charts/" target="_blank">here</a>.</p>
 
 In addition to directly specifying the chart data (or the URL for the file in which the chart data is stored) directly in the JSON/XML code, you can also fetch data for the chart from a database.
 

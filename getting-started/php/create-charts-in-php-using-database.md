@@ -5,8 +5,6 @@ heading: Create Charts in PHP using Database
 chartPresent: true
 ---
 
-<p style="background:rgba(249, 249, 249, 1); padding:15px; border:1px solid #888; border-bottom-width:3px; border-radius:4px; text-align:center;">FusionCharts PHP Wrapper can be downloaded from <a rel="nofollow" href="http://www.fusioncharts.com/php-charts/" target="_blank">here</a>.</p>
-
 In addition to directly specifying the chart data (or the URL for the file in which the chart data is stored) directly in the JSON/XML code, you can also fetch data for the chart from a database.
 
 This section showcases how you can do this using the FusionCharts PHP wrapper.
