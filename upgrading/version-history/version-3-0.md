@@ -2,14 +2,12 @@
 title: Version 3.0 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.0.
 heading: Version 3.0
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 9th November, 2006
-
 ## FusionCharts
+**9th November, 2006**
 
-### New Chart Types
+#### New Chart Types
 
 FusionCharts v3 introduces a lot of new chart types like:
 
@@ -55,39 +53,39 @@ FusionCharts v3 introduces a lot of new chart types like:
 
 Few of the the above listed charts are not in the standard FusionCharts v3 pack. e.g., Spline, Logarithmic & Drag-able charts are part of PowerCharts pack, which can be purchased separately.
 
-### Easy yet powerful AJAX/JavaScript integration
+#### Easy yet powerful AJAX/JavaScript integration
 
 FusionCharts v3 offers advanced options to integrate charts with AJAX applications or JavaScript modules. You can update charts on client side, invoke JavaScript functions as hotspot links, or make dynamic calls for XML data without involving any page refreshes. You can also specify a DOMId for each chart and have it register with JavaScript. The chart can then keep JavaScript functions posted about its activities.
 
-### Visual XML Generator Utility
+#### Visual XML Generator Utility
 
 FusionCharts v3 introduces a new visual XML and chart Generator utility, which helps you easily build your XML data for the charts. You can manually enter data in a grid to form XML or convert your existing data from spreadsheets / CSV Files / tables into XML data.
 
-### Maps Supported
+#### Maps Supported
 
 FusionCharts v3 introduces maps in PowerMaps pack. The PowerMaps Pack is a collection of 466 Flash based vector maps used to show different types of data related to geographical divisions. Suitable for use in websites and applications, each map exposes its properties using an XML API. Setting up a map for use barely takes a few minutes and doesn't involve any modification of source code. All you need to do is feed the data in XML file and you're ready to go.
 
-### STYLE Element
+#### STYLE Element
 
 FusionCharts v3 introduces Styles to help you apply font, effects and animations to various objects of the chart. Styles lends a simple mechanism, using which you can easily control the visual layout of charts.
 
-### Built in Adobe Flash 8 using ActionScript 2
+#### Built in Adobe Flash 8 using ActionScript 2
 
 FusionCharts v3 is coded in Flash 8 and ActionScript 2 to fully utilize the new and advanced features of Flash 8 like dynamic tweening, filters, better speed, advanced OOP structures etc.
 
-### New Debug Mode
+#### New Debug Mode
 
 FusionCharts v3 introduces a debug mode for each chart. The debug mode helps you to look into what's happening in the chart behind the scenes. You can see how the chart is initializing, getting its data and interacting with JavaScripts. Various errors generated are also shown in this. So, whenever you see an error on the chart now, all you need to do is switch to debug mode and fix it up.
 
-### Gradient Support
+#### Gradient Support
 
 FusionCharts v3 supports gradients for most of chart objects like background, canvas, data plot etc. Many new charts support a single attribute use3DLighting to allow advanced lighting and gradient effects on the chart for better visuals.
 
-### Palette Support
+#### Palette Support
 
 FusionCharts v3 introduces Palettes to help you quickly select colors themes for your chart. Starting v3, you can select one of the five pre-defined palettes to change look of your chart. You wouldn't need to specify any hex color codes when using palettes.
 
-### Dashed Line Support
+#### Dashed Line Support
 
 Starting FusionCharts v3, you can use dashed lines to plot:
 
@@ -101,43 +99,42 @@ Starting FusionCharts v3, you can use dashed lines to plot:
 
 You can also specify the dash properties like dash length, gap etc.
 
-### Multiple display modes for data labels
+#### Multiple display modes for data labels
 
 In FusionCharts v3, a lot of options have been introduced to allow for better x-axis label control. You can now WRAP, STAGGER or ROTATE the x-axis labels.
 
-### Rotated value boxes & dynamic placement options
+#### Rotated value boxes & dynamic placement options
 
 The data value text fields can now be rotated to avoid cluttering. Also, in case of column charts, you can select whether to place the value textboxes inside the columns or outside. If there is no space, FusionCharts v3 will automatically adjust positions.
 
-### Number scale support
+#### Number scale support
 
 FusionCharts v3 introduces number scaling and better control over number formatting.
 
-### Better printing support
+#### Better printing support
 
 The context menu of the chart now includes a new item "Print Chart", which offers standard cross-browser printing support.
 
-### Advanced pie and doughnut charts
+#### Advanced pie and doughnut charts
 
 The pie and doughnut charts of FusionCharts v3 offers advanced end-user interactivity options like dynamic slicing, rotation, links etc. Also, Smart Labels have now been introduced in pie/doughnut charts.
 
-### Advanced drill down features
+#### Advanced drill down features
 
 The chart items can now link to new window, pop-up, frames or self window.
 
-### Entire chart as a hotspot
+#### Entire chart as a hotspot
 
 Starting v3, the entire chart can now act as a single hotspot.
 
-### Custom tool tip for each data plot item
+#### Custom tool tip for each data plot item
 
 You can now set your own tool tip text for each data plot item.
 
-#### 17th August, 2007
-
 ## FusionWidgets
+**17th August, 2007**
 
-### Core Changes
+#### Core Changes
 
 * 7 new charts:
 
@@ -193,7 +190,7 @@ You can now set your own tool tip text for each data plot item.
 
 * In real-time charts - ability to add a data stamp (similar to timestamp) at the end of real-time data stream URL - for easy tracking of "what value was last sent to chart?" No need to use registers, sessions or database fields to control this. Use this simple and effective technique over stateless environment.
 
-### Data-streaming chart specific changes
+#### Data-streaming chart specific changes
 
 * Axis updates each time to reflect the limits from data in current view
 
@@ -215,7 +212,7 @@ You can now set your own tool tip text for each data plot item.
 
 * Ability to specify different updateInterval and clearInterval (apart from refreshInterval) - helps you specify when data is retrieved and queued - and when chart is refreshed to show new data. Also, you can set pre-defined clear intervals to clear the chart.
 
-### Angular Gauge specific changes
+#### Angular Gauge specific changes
 
 * Gauge can now be drawn in any angle and any direction
 
@@ -241,7 +238,7 @@ You can now set your own tool tip text for each data plot item.
 
 * Rear-extension supported for each dial to render more realistic gauges
 
-### Gantt chart specific changes
+#### Gantt chart specific changes
 
 * Supports both date & time now.
 
@@ -267,7 +264,7 @@ You can now set your own tool tip text for each data plot item.
 
 * Ability to define annotations over the Gantt chart to show further information.
 
-### Funnel Chart specific changes
+#### Funnel Chart specific changes
 
 * Ability to draw the same data as either streamlined funnel chart or as section funnel chart
 
@@ -291,7 +288,7 @@ You can now set your own tool tip text for each data plot item.
 
 * Custom tool text for each funnel slice
 
-### Pyramid Chart specific changes
+#### Pyramid Chart specific changes
 
 * Interactive pyramid slices, when clicked can separate from the main pyramid.
 
@@ -307,7 +304,7 @@ You can now set your own tool tip text for each data plot item.
 
 * Custom tool text for each pyramid slice
 
-### Linear Gauge specific changes
+#### Linear Gauge specific changes
 
 * Multiple pointers supported
 
@@ -325,19 +322,19 @@ You can now set your own tool tip text for each data plot item.
 
 * Option to create trend-lines/zones
 
-### LED Gauge specific changes
+#### LED Gauge specific changes
 
 * Better control over tick marks & values
 
 * Single color fill supported for entire LED
 
-### Thermometer Gauge specific changes
+#### Thermometer Gauge specific changes
 
 * 2D/3D fill mode.
 
 * Better control over tick marks & values.
 
-### Cylinder Gauge specific changes
+#### Cylinder Gauge specific changes
 
 * Enhanced and realistic 3D look
 
@@ -345,7 +342,7 @@ You can now set your own tool tip text for each data plot item.
 
 * Animation supported for fill
 
-### Bulb Gauge specific changes
+#### Bulb Gauge specific changes
 
 * Ability to show value inside or outside the bulb
 

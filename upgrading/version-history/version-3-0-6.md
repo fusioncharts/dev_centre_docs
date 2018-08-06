@@ -2,12 +2,10 @@
 title: Version 3.0.6 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.0.6.
 heading: Version 3.0.6
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 4th February, 2008
-
 ## FusionCharts
+**4th February, 2008**
 
 * **New:** Ability to invoke Image saving feature from JavaScript.
 
@@ -23,9 +21,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * **Bug Fix:** In Pie 2D, Pie 3D, Doughnut 2D and Doughnut 3D Charts, image saving routine was not called once data had been manipulated using JavaScript.
 
-#### 16th February, 2008
-
 ## PowerCharts
+**16th February, 2008**
 
 * **New:** Ability to invoke Image saving feature from JavaScript.
 
@@ -39,9 +36,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * **Bug Fix:** In Multi-axis line chart, any datasets belonging to imaginary axis were not positioned properly.
 
-#### 21st April, 2008
-
 ## FusionMaps
+**21st April, 2008**
 
 * **Improvement:** Added another option to specify JavaScript links that works in IE 6/7.
 

@@ -2,10 +2,8 @@
 title: Version 3.10.1 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.10.1.
 heading: Version 3.10.1
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
-
-#### 21st January, 2016
+**21st January, 2016**
 
 ## New Features
 

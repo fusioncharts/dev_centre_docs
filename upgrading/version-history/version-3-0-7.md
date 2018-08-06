@@ -2,12 +2,10 @@
 title: Version 3.0.7 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.0.7.
 heading: Version 3.0.7
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 23rd September, 2008
-
 ## FusionCharts
+**23rd September, 2008**
 
 * **New:** True 3D Combination Chart (MSCombi3D.swf) that supports dynamic rotation.
 

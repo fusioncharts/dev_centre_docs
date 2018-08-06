@@ -2,12 +2,10 @@
 title: Version 3.0.2 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.0.2.
 heading: Version 3.0.2
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 27th December, 2006
-
 ## FusionCharts
+**27th December, 2006**
 
 * **New:** Added following charts - Scroll Column 2D, Scroll Line 2D & Scroll Area 2D.
 
@@ -29,9 +27,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * **Bug Fix:** In ColdFusion code examples and blueprint application, renderChart method in FusionCharts.cfm has been updated to render 1,0 instead of true,false in output JavaScript code (to embed the chart).
 
-#### March 31st, 2008
-
 ## FusionWidgets
+**March 31st, 2008**
 
 * **Product name changed from FusionGadgets to FusionWidgets.**
 
@@ -47,9 +44,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * **Bug Fix:** Minor bug fix in PHP image saving script.
 
-#### 9th January, 2007
-
 ## PowerCharts
+**9th January, 2007**
 
 * **New:** Added multi-axes line chart, drag-able area chart & Waterfall (cascade) chart
 
@@ -59,9 +55,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * **Bug Fix:** Drag Line Chart - If the number of data points in a dataset were more than number of categories, dragging the last point of that dataset created an extra line on the chart.
 
-#### 22nd December, 2006
-
 ## FusionMaps
+**22nd December, 2006**
 
 * **New:** Added following new flash maps, taking the total count to 151 maps.
 
