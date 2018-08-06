@@ -4,10 +4,6 @@ description: This section talks about the new features, improvements and fixes f
 heading: Version 3.7.0
 ---
 
-<p class="release-date"> 25th March, 2015 </p>
-
-## New Features
-
 * Chart loading messages can now include images, instead of just plain text.
 
 * New attributes for customization of quadrant labels in bubble chart.
