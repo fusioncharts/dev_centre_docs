@@ -9,8 +9,7 @@ In addition to directly specifying the chart data (or the URL for the file in wh
 
 This section showcases how you can do this using the FusionCharts PHP wrapper.
 
-> Before you proceed, make sure you have [ installed and set up the plugin correctly]({% site.baseurl %}/using-with-server-side-languages/php/introduction "@@open-newtab"). Although you can create all kinds of charts using this method, in this section we will focus on only these two examples.
-
+> Before you proceed, make sure you have [ installed and set up the plugin correctly]({% site.baseurl %}/getting-started/php/install-using-php "@@open-newtab"). Although you can create all kinds of charts using this method, in this section we will focus on only these two examples.
 
 ## Creating a Column 2D Chart
 
