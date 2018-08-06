@@ -2,12 +2,10 @@
 title: Version 3.3.1 SR2 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.3.1 SR2.
 heading: Version 3.3.1 SR2
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-####  28th May, 2013
-
 ## FusionCharts XT
+**28th May, 2013**
 
 ### Fixes
 
@@ -34,6 +32,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 * Caption and sub-caption are now centrally aligned with respect to chart's background in Pie and Doughnut
 
 ## FusionWidgets XT
+**28th May, 2013**
 
 ### Fixes
 
@@ -50,6 +49,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 * Tooltip now correctly shows category labels when `showLabel='0'` is set to `<category>`
 
 ## PowerCharts XT
+**28th May, 2013**
 
 ### Fixed
 

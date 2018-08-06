@@ -2,12 +2,10 @@
 title: Version 3.3.0 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.3.0.
 heading: Version 3.3.0
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 30th January, 2013
-
 ## FusionCharts XT
+**30th January, 2013**	
 
 ### New Features
 
@@ -58,6 +56,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 * Fixed runtime error of JavaScript Bar charts with certain combination of `maxLabelWidthPercent` attribute and long data labels.
 
 ## FusionWidgets XT
+**30th January, 2013**
 
 ### New Features
 
@@ -96,6 +95,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 * Chart API and context menu items are now functioning as expected after exporting in JavaScript Real-Time charts.
 
 ## PowerCharts XT
+**30th January, 2013**
 
 ### New Features
 
@@ -144,6 +144,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 * `getSVGString()` and `exportChart()` can now be invoked multiple times in JavaScript charts.
 
 ## FusionMaps XT
+**30th January, 2013**
 
 ### New Features
 

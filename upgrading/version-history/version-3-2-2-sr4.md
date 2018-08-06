@@ -2,12 +2,10 @@
 title: Version 3.2.2 SR4 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.2.2 SR4.
 heading: Version 3.2.2 SR4
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 6th August, 2012
-
 ## FusionCharts
+**6th August, 2012**
 
 ### New Features
 

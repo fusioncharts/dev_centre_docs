@@ -2,10 +2,9 @@
 title: Version 3.4.0 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.4.0.
 heading: Version 3.4.0
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 16th June, 2014
+<p class="release-date"> 16th June, 2014 </p>
 
 ## Key Changes
 

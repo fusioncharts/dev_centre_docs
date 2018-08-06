@@ -5,7 +5,7 @@ heading: Version 3.9.0
 breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 28th September, 2015
+<p class="release-date"> 28th September, 2015 </p>
 
 ## New Features
 
