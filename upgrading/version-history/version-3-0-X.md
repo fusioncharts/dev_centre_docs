@@ -5,9 +5,9 @@ heading: Version 3.0.x
 ---
 
 ## Version 3.0.7
-**23rd September, 2008**
 
-#### FusionCharts
+
+#### FusionCharts (23rd September, 2008)
 
 * **New:** True 3D Combination Chart (MSCombi3D.swf) that supports dynamic rotation.
 
@@ -27,8 +27,7 @@ heading: Version 3.0.x
 
 ## Version 3.0.6
 
-#### FusionCharts
-**4th February, 2008**
+#### FusionCharts (4th February, 2008)
 
 * **New:** Ability to invoke Image saving feature from JavaScript.
 
@@ -44,8 +43,7 @@ heading: Version 3.0.x
 
 * **Bug Fix:** In Pie 2D, Pie 3D, Doughnut 2D and Doughnut 3D Charts, image saving routine was not called once data had been manipulated using JavaScript.
 
-#### PowerCharts
-**16th February, 2008**
+#### PowerCharts (16th February, 2008)
 
 * **New:** Ability to invoke Image saving feature from JavaScript.
 
@@ -59,8 +57,7 @@ heading: Version 3.0.x
 
 * **Bug Fix:** In Multi-axis line chart, any datasets belonging to imaginary axis were not positioned properly.
 
-#### FusionMaps
-**21st April, 2008**
+#### FusionMaps (21st April, 2008)
 
 * **Improvement:** Added another option to specify JavaScript links that works in IE 6/7.
 
@@ -70,8 +67,7 @@ heading: Version 3.0.x
 
 ## Version 3.0.5
 
-#### FusionCharts
-**22nd December, 2007**
+#### FusionCharts (22nd December, 2007)
 
 * **New:** Image saving feature to allow export of charts as images.
 
@@ -87,8 +83,7 @@ heading: Version 3.0.x
 
 * **Bug Fix:** Minor external interface bug fix in all charts.
 
-#### PowerCharts
-**24th December, 2007**
+#### PowerCharts (24th December, 2007)
 
 * **New:** Image saving feature to allow export of charts as images.
 
@@ -96,8 +91,7 @@ heading: Version 3.0.x
 
 * **Bug Fix:** Security fix that restricts XSS attacks. FusionCharts now loads data from only relative URLs. Absolute URLs are not allowed.
 
-#### FusionMaps
-**10th April, 2008**
+#### FusionMaps (10th April, 2008)
 
 * **New:** Ability to save maps as images and to invoke this functionality from JavaScript.
 
@@ -125,8 +119,7 @@ heading: Version 3.0.x
 
 ## Version 3.0.4
 
-#### FusionCharts
-**1st August, 2007**
+#### FusionCharts (1st August, 2007)
 
 * **Improvement:** FusionCharts JavaScript class now implements methods to detect end user's Flash Player version and then show appropriate messages.
 
@@ -140,8 +133,7 @@ heading: Version 3.0.x
 
 * **Bug Fix:** Tool tip position bug fixed (when chart is loaded inside nested movie clips in another Flash movie).
 
-#### PowerCharts
-**2nd August, 2007**
+#### PowerCharts (2nd August, 2007)
 
 * **Improvement:** Better printing support using the Context Menu "Print Chart" option.
 
@@ -155,8 +147,7 @@ heading: Version 3.0.x
 
 * **Bug Fix:** In candlestick charts, when there were too few columns, they were getting out of canvas. It has been fixed.
 
-#### FusionMaps
-**20th June, 2007**
+#### FusionMaps (20th June, 2007)
 
 * Renamed product to FusionMaps (from PowerMaps).
 
@@ -186,8 +177,7 @@ heading: Version 3.0.x
 
 ## Version 3.0.3
 
-#### FusionCharts
-**12th February, 2007**
+#### FusionCharts (12th February, 2007)
 
 * **New:** Added Horizontal Bar 3D Chart, Stacked Horizontal Bar 3D Chart, Scroll Stacked Column 2D Chart, Scroll Combination 2D Chart, Scroll Combination (Dual Y) 2D Chart.
 
@@ -199,8 +189,7 @@ heading: Version 3.0.x
 
 * **Bug Fix:** `showLabels` attribute wasn't working in Pie 2D Chart.
 
-#### FusionMaps
-**6th March, 2007**
+#### FusionMaps (6th March, 2007)
 
 * **New:** Added following new flash maps, taking the total count to 181 maps.
 
@@ -232,8 +221,7 @@ heading: Version 3.0.x
 
 ## Version 3.0.2
 
-#### FusionCharts
-**27th December, 2006**
+#### FusionCharts (27th December, 2006)
 
 * **New:** Added following charts - Scroll Column 2D, Scroll Line 2D & Scroll Area 2D.
 
@@ -255,8 +243,7 @@ heading: Version 3.0.x
 
 * **Bug Fix:** In ColdFusion code examples and blueprint application, renderChart method in FusionCharts.cfm has been updated to render 1,0 instead of true,false in output JavaScript code (to embed the chart).
 
-#### FusionWidgets
-**March 31st, 2008**
+#### FusionWidgets (March 31st, 2008)
 
 * **Product name changed from FusionGadgets to FusionWidgets.**
 
@@ -272,8 +259,7 @@ heading: Version 3.0.x
 
 * **Bug Fix:** Minor bug fix in PHP image saving script.
 
-#### PowerCharts
-**9th January, 2007**
+#### PowerCharts (9th January, 2007)
 
 * **New:** Added multi-axes line chart, drag-able area chart & Waterfall (cascade) chart
 
@@ -283,8 +269,7 @@ heading: Version 3.0.x
 
 * **Bug Fix:** Drag Line Chart - If the number of data points in a dataset were more than number of categories, dragging the last point of that dataset created an extra line on the chart.
 
-#### FusionMaps
-**22nd December, 2006**
+#### FusionMaps (22nd December, 2006)
 
 * **New:** Added following new flash maps, taking the total count to 151 maps.
 
@@ -320,15 +305,13 @@ heading: Version 3.0.x
 
 ## Version 3.0.1
 
-#### FusionCharts
-**17th November, 2006**
+#### FusionCharts (17th November, 2006)
 
 * **Bug Fix:** JavaScript error fixed. ExternalInterface was registering the function even when registerWithJS was set to 0.
 
 * **Bug Fix:** Multi-series stacked column + line dual Y combination chart was not rendering anchors.
 
-#### FusionWidgets
-**31st March, 2008**
+#### FusionWidgets (31st March, 2008)
 
 * **New:** Image saving feature to allow export of charts as images.
 
@@ -338,15 +321,13 @@ heading: Version 3.0.x
 
 * **Bug Fix:** External Interface bug fix that was raising JavaScript errors when chart was placed inside a FORM.
 
-#### PowerCharts
-**17th November, 2006**
+#### PowerCharts (17th November, 2006)
 
 * **New:** Added Multi-level Pie Chart
 
 * **Bug Fix:** JavaScript error fixed. ExternalInterface was registering the function even when registerWithJS was set to 0.
 
-#### FusionMaps
-**17th November, 2006**
+#### FusionMaps (17th November, 2006)
 
 * **New:** Added flash maps of all US counties (barring DC).
 
@@ -356,8 +337,7 @@ heading: Version 3.0.x
 
 ## Version 3.0
 
-#### FusionCharts
-**9th November, 2006**
+#### FusionCharts (9th November, 2006)
 
 **New Chart Types**
 
@@ -483,8 +463,7 @@ Starting v3, the entire chart can now act as a single hotspot.
 
 You can now set your own tool tip text for each data plot item.
 
-#### FusionWidgets
-**17th August, 2007**
+#### FusionWidgets (17th August, 2007)
 
 **Core Changes**
 

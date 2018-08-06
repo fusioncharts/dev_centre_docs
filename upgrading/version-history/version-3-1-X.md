@@ -6,8 +6,7 @@ heading: Version 3.1.x
 
 <span class="release-date"> <h2>Version 3.1.1</h2></span>
 
-#### FusionCharts
-**10th April, 2009**
+#### FusionCharts (10th April, 2009)
 
 * Optimizations in FusionCharts Export Handlers (Server-side).
 
@@ -17,8 +16,7 @@ heading: Version 3.1.x
 
 * **Fix:** `seriesNameInToolTip` bug fixed.
 
-#### FusionWidgets
-**April 9th, 2009**
+#### FusionWidgets (April 9th, 2009)
 
 * Improved: FusionCharts Server Side Export Handlers.
 
@@ -28,8 +26,7 @@ heading: Version 3.1.x
 
 * **Fix:** In data-streaming charts, clear chart was not removing text-fields.
 
-#### PowerCharts
-**25th February, 2009**
+#### PowerCharts (25th February, 2009)
 
 * **New:** Ability to export charts as PNG/JPG/PDF at client side or server side. We've also devised a batch export mechanism at client side, which allows you to export all the charts in a page as a single image/PDF using one-click.
 
@@ -51,8 +48,7 @@ heading: Version 3.1.x
 
 ## Version 3.1.0
 
-#### FusionCharts
-**24th February, 2009**
+#### FusionCharts (24th February, 2009)
 
 * **New:** Ability to export charts as PNG/JPG/PDF at client side or server side. We've also devised a batch export mechanism at client side, which allows you to export all the charts in a page as a single image/PDF using one-click.
 
@@ -76,8 +72,7 @@ heading: Version 3.1.x
 
 * Bug Fixes: In all charts pertaining axis limits and true 3D chart.
 
-#### FusionWidgets
-**March 6th, 2009**
+#### FusionWidgets (March 6th, 2009)
 
 * **New:** Ability to export charts as PNG/JPG/PDF at client side or server side. We've also devised a batch export mechanism at client side, which allows you to export all the charts in a page as a single image/PDF using one-click.
 
@@ -91,8 +86,7 @@ heading: Version 3.1.x
 
 * **Improved:** More control over chart using JavaScript - many new APIs and events exposed by chart.
 
-#### FusionMaps
-**10th April, 2009**
+#### FusionMaps (10th April, 2009)
 
 * **New:** Ability to export maps as PNG/JPG/PDF at client side or server side. We've also devised a batch export mechanism at client side, which allows you to export all the maps in a page as a single image/PDF using one-click.
 
