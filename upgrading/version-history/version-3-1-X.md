@@ -1,12 +1,12 @@
 ---
-title: Version 3.1.1 | FusionCharts
-description: This section talks about the new features, improvements and fixes for v3.1.1.
+title: Version 3.1.x | FusionCharts
+description: This section talks about the new features, improvements and fixes for v3.1.x.
 heading: Version 3.1.x
 ---
 
-## Version 3.1.1
+<h2 class="sub-heading">Version 3.1.1</h2>
 
-#### FusionCharts (10th April, 2009)
+<h4 class="sub-heading">FusionCharts (10th April, 2009)</h4>
 
 * Optimizations in FusionCharts Export Handlers (Server-side).
 
@@ -16,7 +16,7 @@ heading: Version 3.1.x
 
 * **Fix:** `seriesNameInToolTip` bug fixed.
 
-#### FusionWidgets (April 9th, 2009)
+<h4>FusionWidgets (April 9th, 2009)</h4>
 
 * Improved: FusionCharts Server Side Export Handlers.
 
@@ -26,7 +26,7 @@ heading: Version 3.1.x
 
 * **Fix:** In data-streaming charts, clear chart was not removing text-fields.
 
-#### PowerCharts (25th February, 2009)
+<h4>PowerCharts (25th February, 2009)</h4>
 
 * **New:** Ability to export charts as PNG/JPG/PDF at client side or server side. We've also devised a batch export mechanism at client side, which allows you to export all the charts in a page as a single image/PDF using one-click.
 
@@ -46,9 +46,9 @@ heading: Version 3.1.x
 
 * **Improved:** More control over chart using JavaScript - many new APIs and events exposed by chart.
 
-## Version 3.1.0
+<h2>Version 3.1.0</h2>
 
-#### FusionCharts (24th February, 2009)
+<h4 class="sub-heading">FusionCharts (24th February, 2009)</h4>
 
 * **New:** Ability to export charts as PNG/JPG/PDF at client side or server side. We've also devised a batch export mechanism at client side, which allows you to export all the charts in a page as a single image/PDF using one-click.
 
@@ -72,7 +72,7 @@ heading: Version 3.1.x
 
 * Bug Fixes: In all charts pertaining axis limits and true 3D chart.
 
-#### FusionWidgets (March 6th, 2009)
+<h4>FusionWidgets (March 6th, 2009)</h4>
 
 * **New:** Ability to export charts as PNG/JPG/PDF at client side or server side. We've also devised a batch export mechanism at client side, which allows you to export all the charts in a page as a single image/PDF using one-click.
 
@@ -86,7 +86,7 @@ heading: Version 3.1.x
 
 * **Improved:** More control over chart using JavaScript - many new APIs and events exposed by chart.
 
-#### FusionMaps (10th April, 2009)
+<h4>FusionMaps (10th April, 2009)</h4>
 
 * **New:** Ability to export maps as PNG/JPG/PDF at client side or server side. We've also devised a batch export mechanism at client side, which allows you to export all the maps in a page as a single image/PDF using one-click.
 
