@@ -1,14 +1,14 @@
 ---
-title: Version 3.2.2 SR5 | FusionCharts
-description: This section talks about the new features, improvements and fixes for v3.2.2 SR5.
-heading: Version 3.2.2 SR5
+title: Version 3.2.x | FusionCharts
+description: This section talks about the new features, improvements and fixes for v3.2.x.
+heading: Version 3.2.x
 ---
 
-## Version 3.2.2 SR5
+<h2 class="sub-heading">Version 3.2.2 SR5</h2>
 
-#### FusionCharts XT (1st November, 2012)
+<h4 class="sub-heading">FusionCharts XT (1st November, 2012)</h4>
 
-**New Features**
+<h4 class="sub-heading">New Features</h4>
 
 * JavaScript Zoom Line chart now supports Log Axis.
 
@@ -18,7 +18,7 @@ heading: Version 3.2.2 SR5
 
 * Ability to turn off url-decoding of links using the `unescapeLinks` attribute in JavaScript charts.
 
-**Improvements**
+<h4>Improvements</h4>
 
 * Long tool tips in Flash Zoom Line chart are now wrapped automatically.
 
@@ -32,7 +32,7 @@ heading: Version 3.2.2 SR5
 
 * Better handling of quotes in `FusionCharts.php`.
 
-**Fixes**
+<h4>Fixes</h4>
 
 * jQuery 1.8 compatibility issues.
 
@@ -68,17 +68,17 @@ heading: Version 3.2.2 SR5
 
 * `showZeroPlaneValue='0'` now hides the zero value even when zero plane is not explicitly drawn in Flash Zoom Line and MSCombi3D charts.
 
-## Version 3.2.2 SR4
+<h2>Version 3.2.2 SR4</h2>
 
-#### FusionCharts (6th August, 2012)
+<h4 class="sub-heading">FusionCharts (6th August, 2012)</h4>
 
-**New Features**
+<h4 class="sub-heading">New Features</h4>
 
 * JavaScript Pie and Doughnut charts slices move in or out when respective labels and connector lines are clicked.
 
 * Stacked charts now can display data values in percentage using the `showPercentValues` and `showPercentinTooltip` attributes.
 
-**Improvements**
+<h4>Improvements</h4>
 
 * Anchors in Flash charts turn circle when anchor sides are less than 3.
 
@@ -88,7 +88,7 @@ heading: Version 3.2.2 SR5
 
 * Drawing improvement for all JavaScript 3D charts.
 
-**Fixes**
+<h4>Fixes</h4>
 
 * Unable to set a custom thousands separator for Flash charts.
 
@@ -158,11 +158,11 @@ heading: Version 3.2.2 SR5
 
 * Minor rendering issue with Multi-series Column 3D chart.
 
-## Version 3.2.2 SR3
+<h2>Version 3.2.2 SR3</h2>
 
-#### FusionCharts (12th March, 2012)
+<h4 class="sub-heading">FusionCharts (12th March, 2012)</h4>
 
-**New Features**
+<h4 class="sub-heading">New Features</h4>
 
 * Support for JavaScript Pie 3D and Doughnut 3D charts
 
@@ -170,7 +170,7 @@ heading: Version 3.2.2 SR5
 
 * Support for recursive number scaling to display the chart data better
 
-**Improvements**
+<h4>Improvements</h4>
 
 * Considerable reduction of memory leaks upon resize, data-update and disposal of charts
 
@@ -188,7 +188,7 @@ heading: Version 3.2.2 SR5
 
     * Icons for Zoom-Out, Reset and Pin Mode
 
-**Fixes**
+<h4>Fixes</h4>
 
 * `ExportReady` event not being raised in advanced event model
 
@@ -208,17 +208,17 @@ heading: Version 3.2.2 SR5
 
 * plotBorderDashed not being effective on JavaScript Pareto charts
 
-## Version 3.2.2 SR4
+<h2>Version 3.2.2 SR4</h2>
 
-#### FusionCharts (6th August, 2012)
+<h4 class="sub-heading">FusionCharts (6th August, 2012)</h4>
 
-**New Features**
+<h4 class="sub-heading">New Features</h4>
 
 * JavaScript Pie and Doughnut charts slices move in or out when respective labels and connector lines are clicked.
 
 * Stacked charts now can display data values in percentage using the `showPercentValues` and `showPercentinTooltip` attributes.
 
-**Improvements**
+<h4>Improvements</h4>
 
 * Anchors in Flash charts turn circle when anchor sides are less than 3.
 
@@ -228,7 +228,7 @@ heading: Version 3.2.2 SR5
 
 * Drawing improvement for all JavaScript 3D charts.
 
-**Fixes**
+<h4>Fixes</h4>
 
 * Unable to set a custom thousands separator for Flash charts.
 
@@ -298,11 +298,11 @@ heading: Version 3.2.2 SR5
 
 * Minor rendering issue with Multi-series Column 3D chart.
 
-## Version 3.2.2 SR2
+<h2>Version 3.2.2 SR2</h2>
 
-#### FusionCharts (25th January, 2012)
+<h4 class="sub-heading">FusionCharts (25th January, 2012)</h4>
 
-**Improvements**
+<h4 class="sub-heading">Improvements</h4>
 
 * Style support added for legend items. (Limited to font color and size only)
 
@@ -318,11 +318,11 @@ heading: Version 3.2.2 SR5
 
 * Resolved compatibility issues in tool-tip positioning and gradient rendering caused by jQuery 1.7.1
 
-**Modifications**
+<h4>Modifications</h4>
 
 * Setting `labelDisplay='none'` turns off x-axis value stepping and allows labels to overlap.
 
-**Fixes**
+<h4>Fixes</h4>
 
 * Drawing issue on 3D stacked column charts where a point had "zero" value.
 
@@ -334,9 +334,9 @@ heading: Version 3.2.2 SR5
 
 * Pie and Donut charts getting clipped by half when it had a single data-point.
 
-#### FusionWidgets (1st November, 2012)
+<h4>FusionWidgets (1st November, 2012)</h4>
 
-**New Features**
+<h4 class="sub-heading">New Features</h4>
 
 * JavaScript Real-time charts now show context menu to start, stop and clear chart updates.
 
@@ -344,7 +344,7 @@ heading: Version 3.2.2 SR5
 
 * Ability to turn off url-decoding of links using the `unescapeLinks` attribute in JavaScript charts.
 
-**Improvements**
+<h4>Improvements</h4>
 
 * Normalized the default font sizes of caption and sub-caption in Flash Funnel, Pyramid and Real-time charts.
 
@@ -352,7 +352,7 @@ heading: Version 3.2.2 SR5
 
 * Enhanced management of the open, close, high and low anchors in Spark Line chart.
 
-**Fixes**
+<h4>Fixes</h4>
 
 * jQuery 1.8 compatibility issues.
 
@@ -390,11 +390,11 @@ heading: Version 3.2.2 SR5
 
 * Flash Real-time charts can now display multiple `vLines`.
 
-## Version 3.2.2 SR1
+<h2>Version 3.2.2 SR1</h2>
 
-#### FusionCharts (25th November, 2011)
+<h4 class="sub-heading">FusionCharts (25th November, 2011)</h4>
 
-**Fixes**
+<h4 class="sub-heading">Fixes</h4>
 
 * Data loading and rendering issues specific to Internet Explorer 6/7/8
 
@@ -412,9 +412,9 @@ heading: Version 3.2.2 SR5
 
 * Minor fix in .NET wrapper (FusionCharts.dll)
 
-#### FusionWidgets (April 24th, 2012)
+<h4>FusionWidgets (April 24th, 2012)</h4>
 
-**New Features**
+<h4 class="sub-heading">New Features</h4>
 
 * Support for real-time JavaScript charts that include
 
@@ -432,19 +432,19 @@ heading: Version 3.2.2 SR5
 
 * Ability to control number formatting for [Indian and East Asian thousand/lac separation formats](http://docs.fusioncharts.com/widgets/Contents/Advanced/NumberFormat/Basics.html#thousandSeparatorPosition)
 
-**Improvements**
+<h4>Improvements</h4>
 
 * Considerable reduction of memory leaks upon resize, data-update and dispose of charts
 
 * Text-selection (I-beam) cursor does not appear when hovered over text
 
-**Fixes:**
+<h4>Fixes</h4>
 
 * ExportReady event not being raised in advanced event model
 
-#### PowerCharts (1st November, 2012)
+<h4>PowerCharts (1st November, 2012)</h4>
 
-#### New Features
+<h4 class="sub-heading">New Features</h4>
 
 * JavaScript Multi-axis Line chart now supports shifting of axes upon clicking.
 
@@ -458,7 +458,7 @@ heading: Version 3.2.2 SR5
 
 * Ability to turn off url-decoding of links using the `unescapeLinks` attribute in JavaScript charts.
 
-#### Improvements
+<h4>Improvements</h4>
 
 * Enhanced label management in Radar chart.
 
@@ -474,7 +474,7 @@ heading: Version 3.2.2 SR5
 
 * JavaScript Multi-axis Line chart now supports axis check-boxes and the `allowSelection` attribute to control the check-boxes.
 
-#### Fixes
+<h4>Fixes</h4>
 
 * jQuery 1.8 compatibility issues.
 
@@ -530,13 +530,13 @@ heading: Version 3.2.2 SR5
 
 * Dataplots now correctly associate with corresponding icon legends with respect to legend interactivity in Flash Heat Map chart.
 
-#### FusionMaps (16th November, 2012)
+<h4>FusionMaps (16th November, 2012)</h4>
 
-#### New Features
+<h4 class="sub-heading">New Features</h4>
 
 * Ability to turn off url-decoding of links using the `unescapeLinks` attribute in JavaScript maps.
 
-### Improvements
+<h4>Improvements</h4>
 
 * Kosovo added in World with Countries, Europe and Europe (With islands) maps.
 
@@ -546,7 +546,7 @@ heading: Version 3.2.2 SR5
 
 * Correction of entity definitions for numerous maps.
 
-#### Fixes
+<h4>Fixes</h4>
 
 * jQuery 1.8 compatibility issues.
 
@@ -566,9 +566,9 @@ heading: Version 3.2.2 SR5
 
 * JavaScript maps now export the current state of the maps.
 
-## Version 3.2.1
+<h2>Version 3.2.1</h2>
 
-#### FusionCharts (6th October, 2010)
+<h4 class="sub-heading">FusionCharts (6th October, 2010)</h4>
 
 * Added `useEllipsesWhenOverflow` attribute to <chart> element that controls whether ellipses are to be used in chart labels
 
@@ -590,9 +590,9 @@ heading: Version 3.2.2 SR5
 
     * Additional cosmetic changes when using JavaScript rendering
 
-#### PowerCharts (30th July, 2012)
+<h4>PowerCharts (30th July, 2012)</h4>
 
-#### Fixes
+<h4 class="sub-heading">Fixes</h4>
 
 * `ExportReady` event not being raised in advanced event model.
 
@@ -604,7 +604,7 @@ heading: Version 3.2.2 SR5
 
 * Disappearing 'close' button in LinkedCharts (JavaScript chart).
 
-#### Improvements
+<h4>Improvements</h4>
 
 * JavaScript Multi-level pie, Multi-axis line, Candlestick, Waterfall charts are improved.
 
@@ -616,7 +616,7 @@ heading: Version 3.2.2 SR5
 
 * Text wrapping for labels in JavaScript charts.
 
-#### New Features
+<h4>New Features</h4>
 
 * All the charts now render in pure JavaScript also. New charts in JavaScript include:
 
@@ -648,9 +648,9 @@ heading: Version 3.2.2 SR5
 
 * jQuery plugin to render and manage charts using jQuery syntax.
 
-## Version 3.2.0
+<h2>Version 3.2.0</h2>
 
-#### FusionCharts (6th October, 2010)
+<h4 class="sub-heading">FusionCharts (6th October, 2010)</h4>
 
 * Automatic rendering of JavaScript charts on devices (like iPad and iPhone) where Flash player is not supported
 
@@ -700,7 +700,7 @@ heading: Version 3.2.2 SR5
 
 * Charts now support % based sizes along with dynamic resizing
 
-#### FusionWidgets (January 24th, 2012)
+<h4>FusionWidgets (January 24th, 2012)</h4>
 
 * Automatic rendering of JavaScript charts (except Gantt and Real-time charts) and gauges on devices where Flash player is not supported (like iPad and iPhone)
 
@@ -736,7 +736,7 @@ heading: Version 3.2.2 SR5
 
 * Added option to set round edge effect to all charts having columns
 
-#### PowerCharts (14th January, 2011)
+<h4>PowerCharts (14th January, 2011)</h4>
 
 * Maximum value of all the Color Ranges is now included in the highest Color Range
 
@@ -744,7 +744,7 @@ heading: Version 3.2.2 SR5
 
 * Entity Definition does not change short name or long name when same `internalId` and `newId` is provided
 
-#### Deprecated
+<h4>Deprecated</h4>
 
 * Use of `FusionMaps.js` as the JavaScript Wrapper class to render map. 
 
@@ -760,9 +760,9 @@ heading: Version 3.2.2 SR5
 
 * Use of various XML and JavaScript APIs as listed [here](http://docs.fusioncharts.com/maps/Contents/?introduction/UpgradingXT.html#deprecatedxt).
 
-#### FusionMaps (30th July, 2012)
+<h4>FusionMaps (30th July, 2012)</h4>
 
-#### Fixes
+<h4 class="sub-heading">Fixes</h4>
 
 * `ExportReady` event not being raised in advanced event model.
 
@@ -774,7 +774,7 @@ heading: Version 3.2.2 SR5
 
 * Disappearing 'close' button in LinkedCharts (JavaScript chart).
 
-#### Improvements
+<h4>Improvements</h4>
 
 * `FCMap_Netherland.swf` is renamed to `FCMap_Netherlands.swf`
 
@@ -808,7 +808,7 @@ heading: Version 3.2.2 SR5
 
 * "China-2" map has been renamed to "China (With Direct-controlled municipalities and Special administrative regions)"
 
-#### New Features
+<h4>New Features</h4>
 
 * Automatic rendering of JavaScript maps on devices (like iPad and iPhone) where Flash player is not supported
 
