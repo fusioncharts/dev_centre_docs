@@ -7,7 +7,7 @@ heading: Version 3.12.x
 <h2 class="sub-heading">Version 3.12.2 </h2>
 **13th October, 2017**
 
-#### Improvement
+<h4 class="sub-heading">Improvement</h4>
 
 * TypeScript definition files added to npm package of FusionCharts (fusioncharts & fusionmaps). Previously, the definition files were added from the `definitelytyped` repository.
 
