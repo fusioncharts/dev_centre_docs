@@ -4,8 +4,7 @@ description: This section talks about the new features, improvements and fixes f
 heading: Version 3.12.x
 ---
 
-<h2 class="sub-heading">Version 3.12.2 </h2>
-**13th October, 2017**
+<h2 class="sub-heading">Version 3.12.2 </h2>13th October, 2017
 
 <h4 class="sub-heading">Improvement</h4>
 
