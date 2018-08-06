@@ -2,10 +2,9 @@
 title: Version 3.6.0 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.6.0.
 heading: Version 3.6.0
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 14th January, 2015
+<p class="release-date"> 14th January, 2015 </p>
 
 ## Improvements
 

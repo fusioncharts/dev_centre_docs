@@ -2,12 +2,10 @@
 title: Version 3.3.1 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.3.1.
 heading: Version 3.3.1
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 4th April, 2013
-
 ## FusionCharts XT
+**4th April, 2013**
 
 ### New Features
 
@@ -46,6 +44,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 * Fixed runtime error of JavaScript Bar charts with certain combination of `maxLabelWidthPercent` attribute and long data labels.
 
 ## FusionWidgets XT
+**4th April, 2013**
 
 ### New Features
 
@@ -82,6 +81,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 * `manageLabelOverflow` attribute now works properly when set along with `baseFontSize`, in JavaScript charts.
 
 ## PowerCharts XT
+**4th April, 2013**
 
 ### Improvements
 
@@ -118,6 +118,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 * Minor fix in rendering of canvas shadow while using `useRoundEdges='1'` in VML Browsers.
 
 ## FusionMaps XT
+**4th April, 2013**
 
 ### Improvements
 

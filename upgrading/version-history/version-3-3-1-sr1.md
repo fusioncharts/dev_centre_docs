@@ -5,9 +5,8 @@ heading: Version 3.3.1 SR1
 breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 18th April, 2013
-
 ## FusionCharts XT
+**18th April, 2013**
 
 ### New Features
 
@@ -40,6 +39,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 * Trendline labels for Secondary Y-Axis are now positioned correctly.
 
 ## PowerCharts XT
+**18th April, 2013**
 
 ### New Features
 
@@ -58,6 +58,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 * Trendzones are now correctly drawn in inverse charts.
 
 ## FusionMaps XT
+**18th April, 2013**
 
 ### Fixes
 

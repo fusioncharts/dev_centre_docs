@@ -2,12 +2,10 @@
 title: Version 3.3.1 SR3 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.3.1 SR3.
 heading: Version 3.3.1 SR3
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 18th November, 2013
-
 ## FusionCharts XT
+**18th November, 2013**
 
 ### Improvements
 
@@ -50,6 +48,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 * Plugged memory leakage caused while managing text wrapping when charts are repeatedly resized.
 
 ## FusionWidgets XT
+**18th November, 2013**
 
 ### Improvements
 
@@ -82,6 +81,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 * Data value label alignment issue related to the left margin of the chart is rectified in Cylinder and Thermometer gauges.
 
 ## PowerCharts XT
+**18th November, 2013**
 
 ### Improvements
 
@@ -120,6 +120,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 * Fixed the runtime error on edit of axis limits in drag-able charts.
 
 ## FusionMaps XT
+**18th November, 2013**
 
 ### Improvements
 

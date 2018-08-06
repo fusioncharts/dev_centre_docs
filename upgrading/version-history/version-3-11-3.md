@@ -4,7 +4,7 @@ description: This section talks about the new features, improvements and fixes f
 heading: Version 3.11.3
 ---
 
-**1st November, 2016**
+<p class="release-date"> 1st November, 2016 </p>
 
 ## Key Change
 

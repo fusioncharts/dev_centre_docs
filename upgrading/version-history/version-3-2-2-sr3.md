@@ -2,12 +2,10 @@
 title: Version 3.2.2 SR3 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.2.2 SR3.
 heading: Version 3.2.2 SR3
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 12th March, 2012
-
 ## FusionCharts
+**12th March, 2012**
 
 ### New Features
 

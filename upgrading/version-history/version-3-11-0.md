@@ -3,7 +3,8 @@ title: Version 3.11.0 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.11.0.
 heading: Version 3.11.0
 ---
-**1st July, 2016**
+
+<p class="release-date"> 1st July, 2016 </p>
 
 ## New Features
 
