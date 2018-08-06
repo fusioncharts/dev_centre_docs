@@ -7,7 +7,6 @@ heading: Version 3.4.0
 <p class="release-date"> 16th June, 2014 </p>
 
 ## Key Changes
-
 * Rendering supported in Javascript only, support for rendering in Flash deprecated.
 
 * Significant improvement in chart rendering time.
