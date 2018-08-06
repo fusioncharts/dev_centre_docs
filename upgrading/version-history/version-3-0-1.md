@@ -5,7 +5,7 @@ heading: Version 3.0.1
 breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 17th November, 2006
+**17th November, 2006**
 
 ## FusionCharts
 
@@ -25,7 +25,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * **Bug Fix:** External Interface bug fix that was raising JavaScript errors when chart was placed inside a FORM.
 
-#### 17th November, 2006
+**17th November, 2006**
 
 ## PowerCharts
 
