@@ -1,8 +1,8 @@
 {
     type: 'stackedcolumn3d',
     renderAt: 'chart-container',
-    width: '500',
-    height: '300',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -11,9 +11,9 @@
             "xAxisname": "Quarter",
             "yAxisName": "Revenues (In USD)",
             "numberPrefix": "$",
+            "showValues": "1",
             "theme": "fusion"
         },
-
         "categories": [{
             "category": [{
                 "label": "Q1"
