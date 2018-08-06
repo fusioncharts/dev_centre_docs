@@ -2,9 +2,9 @@
 title: Version 3.11.2 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.11.2.
 heading: Version 3.11.2
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
-**16th September, 2016**
+
+<p class="release-date"> 16th September, 2016 </p>
 
 ## New Features
 

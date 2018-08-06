@@ -5,9 +5,8 @@ heading: Version 3.2.1
 breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 6th October, 2010
-
 ## FusionCharts
+**6th October, 2010**
 
 * Added `useEllipsesWhenOverflow` attribute to <chart> element that controls whether ellipses are to be used in chart labels
 
@@ -29,9 +28,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
     * Additional cosmetic changes when using JavaScript rendering
 
-#### 30th July, 2012
-
 ## PowerCharts
+**30th July, 2012**
 
 ### Fixes
 

@@ -5,9 +5,8 @@ heading: Version 3.2.2 SR1
 breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 25th November, 2011
-
 ## FusionCharts
+**25th November, 2011**
 
 ### Fixes
 
@@ -27,9 +26,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * Minor fix in .NET wrapper (FusionCharts.dll)
 
-#### April 24th, 2012
-
 ## FusionWidgets
+**April 24th, 2012**
 
 ### New Features
 
@@ -59,9 +57,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * ExportReady event not being raised in advanced event model
 
-#### 1st November, 2012
-
 ## PowerCharts
+**1st November, 2012**
 
 ### New Features
 
@@ -149,9 +146,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * Dataplots now correctly associate with corresponding icon legends with respect to legend interactivity in Flash Heat Map chart.
 
-#### 16th November, 2012
-
 ## FusionMaps
+**16th November, 2012**
 
 ### New Features
 
