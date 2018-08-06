@@ -71,7 +71,7 @@ A doughnut chart in 3D looks like :
 
 {% embed_all standard-charts-pie-and-doughnut-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/wYj95/2965/ "@@open-newtab") to edit the doughnut 3D chart.
+Click [here](https://jsfiddle.net/fusioncharts/wYj95/ "@@open-newtab") to edit the doughnut 3D chart.
 
 Now, let's customize the appearance and properties of pie and doughnut charts.
 
