@@ -5,9 +5,8 @@ heading: Version 3.2.2 SR2
 breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 25th January, 2012
-
 ## FusionCharts
+**25th January, 2012**
 
 ### Improvements
 
@@ -41,9 +40,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * Pie and Donut charts getting clipped by half when it had a single data-point.
 
-#### 1st November, 2012
-
 ## FusionWidgets
+**1st November, 2012**
 
 ### New Features
 

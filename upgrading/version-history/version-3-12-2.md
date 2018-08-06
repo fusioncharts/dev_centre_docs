@@ -2,10 +2,9 @@
 title: Version 3.12.2 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.12.2.
 heading: Version 3.12.2
-chartPresent: false
 ---
 
-#### 13th October, 2017
+**13th October, 2017**
 
 ## Improvement
 

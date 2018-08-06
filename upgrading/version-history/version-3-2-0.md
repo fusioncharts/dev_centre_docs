@@ -2,12 +2,10 @@
 title: Version 3.2.0 | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.2.0.
 heading: Version 3.2.0
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
-#### 6th October, 2010
-
 ## FusionCharts
+**6th October, 2010**
 
 * Automatic rendering of JavaScript charts on devices (like iPad and iPhone) where Flash player is not supported
 
@@ -57,9 +55,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * Charts now support % based sizes along with dynamic resizing
 
-#### January 24th, 2012
-
 ## FusionWidgets
+**January 24th, 2012**
 
 * Automatic rendering of JavaScript charts (except Gantt and Real-time charts) and gauges on devices where Flash player is not supported (like iPad and iPhone)
 
@@ -95,9 +92,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * Added option to set round edge effect to all charts having columns
 
-#### 14th January, 2011
-
 ## PowerCharts
+**14th January, 2011**
 
 * Maximum value of all the Color Ranges is now included in the highest Color Range
 
@@ -121,9 +117,8 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * Use of various XML and JavaScript APIs as listed [here](http://docs.fusioncharts.com/maps/Contents/?introduction/UpgradingXT.html#deprecatedxt).
 
-#### 30th July, 2012
-
 ## FusionMaps
+**30th July, 2012**
 
 ### Fixes
 
