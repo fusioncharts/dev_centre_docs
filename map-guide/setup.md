@@ -12,7 +12,7 @@ You install maps automatically, as part of the FusionCharts Suite XT package. Fo
 
 ## Install additional map files
 
-The FusionCharts Suite XT download package contains only the USA and World maps as part of the package. To work with other maps, you need the definition files for them. A map definition file contains all the data necessary to create and render a map. You can download the additional map definition files from [here](https://www.fusioncharts.com/download/maps/definition).
+The FusionCharts Suite XT download package contains only the USA and World maps as part of the package. To work with other maps, you need the definition files for them. A map definition file contains all the data necessary to create and render a map. You can download the additional map definition files from [here](https://www.fusioncharts.com/download/map-definition-files).
 
 Note that the definition files you download will yield maps in extremely high resolutions. If you do not need such high resolution maps, send in a [request for custom resolution maps](https://www.fusioncharts.com/download/map-definition-files) to our Customer Support team.
 
