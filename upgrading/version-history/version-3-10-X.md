@@ -1,30 +1,30 @@
 ---
-title: Version 3.10.1 | FusionCharts
+title: Version 3.10.x | FusionCharts
 description: This section talks about the new features, improvements and fixes for v3.10.1.
 heading: Version 3.10.x
 ---
 
-## Version 3.10.1
-**21st January, 2016**
+<h2 class="sub-heading">Version 3.10.1</h2>
+21st January, 2016
 
-## New Features
+<h4 class="sub-heading">New Features</h4>
 
 * The attribute `showChildLabels` has been introduced to control the visibility of the node labels in a treemap chart. 
 
 * By default, the labels are hidden.
 
-## Improvements
+<h4>Improvements</h4>
 
 * 'Squarified' is now the default tiling algorithm for the treemap chart. (Therefore, by default, `algorithm=squarified`).
 
-## Fixes
+<h4>Fixes</h4>
 
 * For pie and doughnut charts that have one data value close to 100% of the total of all values, distorted rendering of the chart when smart lines are dragged has been fixed.
 
-## Version 3.10.0
-**5th January, 2016**
+<h2>Version 3.10.0</h2>
+5th January, 2016
 
-## New Features
+<h4 class="sub-heading">New Features</h4>
 
 * FusionCharts Suite XT v3.10.0 introduces support for three new chart types: the treemap chart, the zoom-scatter chart, the zoom-line dual y-axis chart.
 
@@ -56,7 +56,7 @@ heading: Version 3.10.x
 
 * Corresponding data plots are now highlighted when the mouse pointer is hovered over a legend item. Along with enhancing the visualization, this new feature also enables establishing a relation between the data plots and legends.
 
-## Improvements
+<h4>Improvements</h4>
 
 * Chart legend can now extend beyond the canvas width if a chart is used to plot data for a large number of data series. 
 
@@ -106,7 +106,7 @@ heading: Version 3.10.x
 
     * Specification sheet updated for Zambia for original IDs and adding a new entity
 
-## Fixes
+<h4>Fixes</h4>
 
 * Large trend-line values in the angular gauge are now displayed within the canvas.
 
