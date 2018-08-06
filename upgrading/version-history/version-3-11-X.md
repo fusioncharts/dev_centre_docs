@@ -1,6 +1,6 @@
 ---
 title: Version 3.11.x | FusionCharts
-description: This section talks about the new features, improvements and fixes for v3.11.3.
+description: This section talks about the new features, improvements and fixes for v3.11.x.
 heading: Version 3.11.x
 ---
 
