@@ -2,7 +2,6 @@
 title: Chart Palettes | FusionCharts
 description: FusionCharts Suite XT provides five chart color palettes. Palette theme configures colors of these chart elements.
 heading: Chart Palettes
-breadcrumb: [["Home", "/"], ["Chart Palettes"]]
 ---
 
 FusionCharts Suite XT has five chart color palettes which configure these chart elements: chart background and border, canvas border and background, fonts, div lines, tooltips, anchors, and the legend.
@@ -33,4 +32,4 @@ Shown below is the same chart with the other four predefined palettes applied to
 
 {% embed_chart chart-configurations-chart-palettes-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/umb4jjwp/ "@@open-newtab") to update the palettes on your own.
+Click [here](http://jsfiddle.net/fusioncharts/umb4jjwp/) to update the palettes on your own.

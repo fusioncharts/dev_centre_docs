@@ -31,6 +31,6 @@ A Column 2D chart showcasing the 6 themes mentioned above is given below:
 
 {% embed_all themes-introduction-to-themes-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/0dtjw8a5/ '@@open-newtab') to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/0dtjw8a5/) to edit the above chart.
 
 In the above chart, click any radio button and then the **Apply Theme** button, to see how the look and feel of the chart change with each theme.

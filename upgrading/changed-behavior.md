@@ -2,7 +2,6 @@
 title: Changed Behavior | FusionCharts
 description: This section talks about the change in behavior of the charts with the latest released version.
 heading: Changed Behavior
-breadcrumb: [["Home", "/"], ["Changed Behavior"]]
 ---
 
 This section is for users who are using previous version of FusionCharts in their application. Here we'll talk about the change in behavior of the charts after v3.13.0.
@@ -80,52 +79,52 @@ Since, v3.13.0 the FusionCharts Suite XT download package folder structure is up
 
 ## Removed attributes and methods
 
- Following are the list of attributes which have been removed from the FusionCharts XT Suite:
+Following are the list of attributes which have been removed from the FusionCharts XT Suite:
 
-    * `Annrenderdelay`
+* `Annrenderdelay`
 
-    * `btnTextColor`
+* `btnTextColor`
 
-    * `btnFontSize`
+* `btnFontSize`
 
-    * `formBtnWidth`
+* `formBtnWidth`
 
-    * `formBtnBorderColor`
+* `formBtnBorderColor`
 
-    * `formBtnBgColor`
+* `formBtnBgColor`
 
-    * `btnPadding`
+* `btnPadding`
 
-    * `btnSpacing`
+* `btnSpacing`
 
-    * `restoreBtnWidth`
+* `restoreBtnWidth`
 
-    * `restoreBtnBorderColor`
+* `restoreBtnBorderColor`
 
-    * `restoreBtnBgColor`
+* `restoreBtnBgColor`
 
-    * `clickBubbles`
+* `clickBubbles`
 
-    * The deprecated methods `getXML()` & `setDataXML()` have been removed.
+* The deprecated methods `getXML()` & `setDataXML()` have been removed.
 
-    * The deprecated method `setCurrentRenderer()` has been removed.
+* The deprecated method `setCurrentRenderer()` has been removed.
 
-    * The method `getChartFromId()` has been removed. Use `getObjectReference()` instead.
+* The method `getChartFromId()` has been removed. Use `getObjectReference()` instead.
 
-    * The method `getMapFromId()` has been removed.  Use `getObjectReference()` instead.
+* The method `getMapFromId()` has been removed.  Use `getObjectReference()` instead.
 
 ## Deprecated Attributes and methods
 
-    * `showFormBtn` (deprecated)
+* `showFormBtn` (deprecated)
 
-    * `formBtnTitle` (deprecated)
+* `formBtnTitle` (deprecated)
 
-    * `showRestoreBtn` (deprecated)
+* `showRestoreBtn` (deprecated)
 
-    * `restoreBtnTitle` (deprecated)
+* `restoreBtnTitle` (deprecated)
 
-    * `setTransparent()` method is deprecated. Use `containerBackgroundOpacity` instead.
+* `setTransparent()` method is deprecated. Use `containerBackgroundOpacity` instead.
 
-    * `ref` property is deprecated. Use `getObjectReference()` instead.
+* `ref` property is deprecated. Use `getObjectReference()` instead.
 
-    * `dataXMLInvalid` event is deprecated. Use `dataInvalid` instead.
+* `dataXMLInvalid` event is deprecated. Use `dataInvalid` instead.

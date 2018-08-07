@@ -12,7 +12,7 @@ You can use the cylinder gauge shown below, to monitor the diesel level in the g
 
 {% embed_all gauges-and-widgets-cylinder-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/MWnVr/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/MWnVr/) to edit the above gauge.
 
 ## Elements of cylinder gauges
 
@@ -86,7 +86,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/MWnVr/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/MWnVr/) to edit the above gauge.
 
 > The cylinder gauge shown above has a maximum capacity of 120 liters, and is configured to show that 75 liters of diesel is left in the generator.
 
@@ -110,7 +110,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/QseLf/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/QseLf/) to edit the above gauge.
 
 > If you do not customize the fill color, the cylinder gauge will use the default color as the fill color instead.
 
@@ -143,7 +143,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/AN44L/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/AN44L/) to edit the above gauge.
 
 > If you don't customize the origin, radius, and height, the cylinder gauge will automatically calculate the best-fit coordinates and size for the cylinder. 
 
@@ -165,7 +165,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ZWTxT/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/ZWTxT/) to edit the above gauge.
 
 > By default, the attribute takes `1` as the value, and displays data values below the gauge. 
 
@@ -192,7 +192,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/T85UH/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/T85UH/) to edit the above gauge.
 
 ## Position tick marks and tick values
 
@@ -212,7 +212,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/L3Hs4/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/L3Hs4/) to edit the above gauge.
 
 > By default, the tick marks and tick values are rendered to the right of the gauge.
 
@@ -239,7 +239,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9BJrS/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/9BJrS/) to edit the above gauge.
 
 ## Disable auto adjustment of tick marks
 
@@ -259,7 +259,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/qtk9z/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/qtk9z/) to edit the above gauge.
 
 > Unless you manually disable the automatic distribution of tick marks, the cylinder gauge can automatically calculate and display the best feasible number of major tick marks.
 
@@ -281,7 +281,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/LNxHB/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/LNxHB/) to edit the above gauge.
 
 > The cylinder gauge always displays the upper and lower limits of the scale.
 
@@ -329,7 +329,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/em5cg/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/em5cg/) to edit the above gauge.
 
 ## Apply hover effects
 
@@ -354,7 +354,7 @@ The gauge will look like as shown below:
 
 ![Cylinder]({% site.baseurl %}/gif/gauges-and-widgets-cylinder.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/cSkE3/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/cSkE3/) to edit the above gauge.
 
 ## Build a real-time cylinder gauge
 
@@ -409,7 +409,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/77kv6s1h/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/77kv6s1h/) to edit the above gauge.
 
 ## Configure real time updates using server-side script
 
@@ -437,7 +437,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-13.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/wcb7b8g3/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/wcb7b8g3/) to edit the above gauge.
 
 ## Stop/restart updates
 
@@ -493,7 +493,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-14.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/389fyhdg/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/389fyhdg/) to edit the above gauge.
 
 ## Configure real time events
 
@@ -560,7 +560,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-15.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/beo34buz/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/beo34buz/) to edit the above gauge.
 
 ### Use the `realTimeUpdateError` event
 
@@ -607,7 +607,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-cylinder-example-16.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9d8e05pb/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/9d8e05pb/) to edit the above gauge.
 
 ## Troubleshoot real time gauges
 

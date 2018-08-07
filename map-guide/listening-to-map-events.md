@@ -93,7 +93,7 @@ The map will look as shown below:
 
 {% embed_chart map-guide-listening-to-map-events-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/twp9sypv/ "@@open-newtab") to edit the above map.
+Click [here](http://jsfiddle.net/fusioncharts/twp9sypv/) to edit the above map.
 
 > The map shown above that captures data from the entity events and displays it in a message box below the map. You can hover on individual continents to see the population of only that specific continent.
 
@@ -205,6 +205,6 @@ The map will look as shown below:
 
 {% embed_chart map-guide-listening-to-map-events-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/t226vxnp/ "@@open-newtab") to edit the above map.
+Click [here](http://jsfiddle.net/fusioncharts/t226vxnp/) to edit the above map.
 
-For a list of all parameters for each of these events, refer to the [API Reference for events]({% site.baseurl %}/api/fusioncharts/fusioncharts-events "@@open-newtab").
+For a list of all parameters for each of these events, refer to the [API Reference for events]({% site.baseurl %}/api/fusioncharts/fusioncharts-events).

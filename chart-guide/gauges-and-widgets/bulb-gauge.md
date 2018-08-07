@@ -16,7 +16,7 @@ A simple bulb gauge rendered to indicate the temperature status of deep freezers
 
 {% embed_all gauges-and-widgets-bulb-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/VpXyL/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/VpXyL/) to edit the above chart.
 
 The gauge is defined by minimum and maximum values. Within that scale you can create various ranges to classify your data. Depending on the range that the data value belongs, the bulb color will change and display the value set accordingly.
 
@@ -50,7 +50,7 @@ In our first bulb gauge, we will be plotting Attrition Rate from 0-100%. The fin
 
 {% embed_chart gauges-and-widgets-bulb-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/VpXyL/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/VpXyL/) to edit the above chart.
 
 To create a bulb gauge:
 
@@ -90,7 +90,7 @@ Also set the number suffix character (the character which will show up at the en
 }
 ```
 
-There are other attributes of the `<chart>` element which we will not be delving into now, because of this being a really basic gauge. For a detailed list you can check the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bulb "@@open-newtab") page of bulb gauge.
+There are other attributes of the `<chart>` element which we will not be delving into now, because of this being a really basic gauge. For a detailed list you can check the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bulb) page of bulb gauge.
 
 ## Define the color range
 
@@ -142,7 +142,7 @@ The chart bulb gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-bulb-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/j8C6H/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/j8C6H/) to edit the above chart.
 
 Now that we have created our first bulb gauge, let's see how to configure some of the properties of the bulb gauge.  
 
@@ -161,13 +161,13 @@ To configure the border of the bulb gauge refer to the code below:
 }
 ```
 
-For a detailed list of attributes refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bulb "@@open-newtab") page of the bulb gauge.
+For a detailed list of attributes refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bulb) page of the bulb gauge.
 
 The bulb gauge will look as shown in the image below:
 
 {% embed_chart gauges-and-widgets-bulb-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5Cn5W/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/5Cn5W/) to edit the above chart.
 
 ## Use gradient fill mix for the border
 
@@ -189,7 +189,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-bulb-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/tpq8mLk3/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/tpq8mLk3/) to edit the above chart.
 
 ## Configure the origin and the radius
 
@@ -219,7 +219,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-bulb-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Gk7q7/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/Gk7q7/) to edit the above chart.
 
 ## Render the bulb gauge in 2D
 
@@ -239,7 +239,7 @@ The gauge will look  like as shown below:
 
 {% embed_chart gauges-and-widgets-bulb-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/56f6C/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/56f6C/) to edit the above chart.
 
 ## Place the value inside the gauge
 
@@ -259,7 +259,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-bulb-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/BM6ZH/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/BM6ZH/) to edit the above chart.
 
 ## Render the range name as gauge label
 
@@ -279,7 +279,7 @@ The gauge will look  like as shown below:
 
 {% embed_chart gauges-and-widgets-bulb-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/rNCL6/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/rNCL6/) to edit the above chart.
 
 ## Configure the hover effect
 
@@ -297,7 +297,7 @@ The gauge will look  like as shown below:
 
 ![Bulb]({% site.baseurl %}/gif/gauges-and-widgets-bulb-gif.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/0ehkf2sx/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/0ehkf2sx/) to edit the above chart.
 
 ## Real-time Bulb Gauge
 
@@ -331,11 +331,11 @@ Here, the output is a single value, 34. So, when FusionWidgets XT will read this
 
 {% embed_chart gauges-and-widgets-bulb-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/xn8591nn/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/xn8591nn/) to edit the above chart.
 
 For a detailed list of JavaScript API used to configure real-time updates refer to the API reference page.
 
-> You can also configure using  server-side scripts. For a detailed list of attributes refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bulb "@@open-newtab") page.
+> You can also configure using  server-side scripts. For a detailed list of attributes refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=bulb) page.
 
 ## Stop/Restart updates
 
@@ -353,7 +353,7 @@ After stopping the update, it can be restarted either using user interaction (ri
 
 {% embed_chart gauges-and-widgets-bulb-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/kx978uey/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/kx978uey/) to edit the above chart.
 
 ## Configure real-time events
 
@@ -363,13 +363,13 @@ A real-time bulb gauge configured to listen to the `realTimeUpdateComplete` even
 
 {% embed_chart gauges-and-widgets-bulb-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9zphu0hq/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/9zphu0hq/) to edit the above chart.
 
 A bulb gauge configured to listen to the `realTimeUpdateError` event looks like this:
 
 {% embed_chart gauges-and-widgets-bulb-example-13.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/37geybvf/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/37geybvf/) to edit the above chart.
 
 ## Troubleshoot real-time gauges
 

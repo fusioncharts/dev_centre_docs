@@ -2,7 +2,6 @@
 title: Customizing the Tooltips | FusionCharts
 description: A tooltip is displayed when the mouse is hovered over a particular data point. This article talk about customizing the tooltip.
 heading: Tooltips
-breadcrumb: [["Home", "/"], ["Tooltips"]]
 ---
 
 A tooltip is displayed when the mouse cursor hovers over a particular data point. It denotes valuable information such as:
@@ -57,7 +56,7 @@ The chart will look as shown below:
 
 ![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-2.png)
 
-Click [here](http://jsfiddle.net/fusioncharts/df92k3t5/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/df92k3t5/) to edit the above chart.
 
 ## Display Multiline Tooltip Text
 
@@ -79,7 +78,7 @@ The chart will look as shown below:
 
 ![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-3.png)
 
-Click [here](http://jsfiddle.net/fusioncharts/13a8664h/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/13a8664h/) to edit the above chart.
 
 ## Introduction to Macros
 
@@ -123,7 +122,7 @@ The chart will look like as shown below:
 
 ![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-4.png)
 
-Click [here](http://jsfiddle.net/fusioncharts/j1327y7v/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/j1327y7v/) to edit the above chart.
 
 > In the chart above, if the data plot value is 750000 and you use `$value`, `750000` will be rendered as the value. However, if you use `$dataValue`, then `$750K` will be rendered as the value.
 
@@ -183,7 +182,7 @@ The chart will look like as shown below:
 
 ![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-5.png)
 
-Click [here](http://jsfiddle.net/fusioncharts/67Lzs1fq/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/67Lzs1fq/) to edit the above chart.
 
 In the above chart, hover the mouse pointer over the trend-lines to see the tooltip text. You can find the description of the `trendlineToolText` attribute, in the Other attributes you can use section. 
 
@@ -217,7 +216,7 @@ The chart will look as shown below:
 
 ![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-6.png)
 
-Click [here](http://jsfiddle.net/fusioncharts/0dwyegdw/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/0dwyegdw/) to edit the above chart.
 
 In the chart above, you can see that the `connectorToolText` attribute has been used to configure a tooltip for the average shipping volume of a distribution network. The tooltip includes:
 
@@ -267,7 +266,7 @@ The chart will look as shown below:
 
 ![Tooltips]({% site.baseurl %}/images/chart-configurations-tooltip-image-7.png)
 
-Click [here](http://jsfiddle.net/fusioncharts/mgkhxywt/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/mgkhxywt/) to edit the above chart.
 
 In the chart shown above, tooltip macros for the box and whisker chart have been used to add the mean, quartile deviation, standard deviation, and mean deviation values to the tooltip text.
 

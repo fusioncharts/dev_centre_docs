@@ -2,7 +2,6 @@
 title: Configure Legend | FusionCharts
 description: A legend is a chart element that is used to display the series name of each dataset in multi-series/combination charts
 heading: Legend
-breadcrumb: [["Home", "/"], ["Legends"]]
 ---
 
 A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.
@@ -31,7 +30,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/gdu2539p/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/gdu2539p/) to edit the above chart.
 
 In the chart shown above, when you click the legend icon for **Last Year**, all data plots in blue, (showing the quarterly revenue for the last year) are hidden.
 
@@ -53,7 +52,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/u2q9Lte5/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/u2q9Lte5/) to edit the above chart.
 
 ## Highlight a Data Series via the Legend
 
@@ -75,7 +74,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/sf0owgb4/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/sf0owgb4/) to edit the above chart.
 
 In the chart shown above, when the mouse pointer hovers over the legend text **This Year**, the data plots in blue (corresponding to **Last Year**) fade out, and the data plots in green (corresponding to **This Year**) are highlighted.
 
@@ -107,7 +106,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/dy42jqc3/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/dy42jqc3/) to edit the above chart.
 
 In the above chart, when you hover the mouse pointer over the legend text **This Year**, data plots belonging to the **Last Year** data series are grayed out.
 
@@ -134,7 +133,7 @@ Refer to the code below:
 
 {% embed_chart chart-configurations-legend-example-13.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/v39dnw63/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/v39dnw63/) to edit the above chart.
 
 Use the following attributes to customize the background of the anchor:
 
@@ -154,7 +153,7 @@ Refer to the code below:
 
 {% embed_chart chart-configurations-legend-example-14.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/kLk72vnz/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/kLk72vnz/) to edit the above chart.
 
 The attributes to customize the values of highlight effect are:
 
@@ -177,7 +176,7 @@ Refer to the code below:
 
 {% embed_chart chart-configurations-legend-example-15.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/kj9bofzm/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/kj9bofzm/) to edit the above chart.
 
 ## Set the Legend Position
 
@@ -202,7 +201,7 @@ The chart will look as shown below:
 
 ![Drag Legend]({% site.baseurl %}/gif/configurations-legend-gif-2.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/5smv4kg4/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/5smv4kg4/) to edit the above chart.
 
 ## Configure Legend Icon Size
 
@@ -222,7 +221,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/0ca9wu47/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/0ca9wu47/) to edit the above chart.
 
 ## Draw a Custom Legend Icon Shape
 
@@ -283,7 +282,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/x8182enw/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/x8182enw/) to edit the above chart.
 
 ## Customize Legend Scroll Bar
 
@@ -308,7 +307,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8qzuqa1m/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/8qzuqa1m/) to edit the above chart.
 
 ## Reverse Legend Order
 
@@ -328,7 +327,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Lgq5tcko/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/Lgq5tcko/) to edit the above chart.
 
 ## Hide Data Series upon Loading
 
@@ -351,7 +350,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/vhydr4f9/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/vhydr4f9/) to edit the above chart.
 
 ## Customize Legend Appearance
 
@@ -412,7 +411,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Laqyo45v/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/Laqyo45v/) to edit the above chart.
 
 ## Customize Legend Font Cosmetics
 
@@ -479,4 +478,4 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-legend-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/zyw5z2za/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/zyw5z2za/) to edit the above chart.

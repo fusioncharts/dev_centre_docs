@@ -96,7 +96,7 @@ The map will look as shown below:
 
 {% embed_all map-guide-markers-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/p70nsf03/ "@@open-newtab") to edit the above map.
+Click [here](http://jsfiddle.net/fusioncharts/p70nsf03/) to edit the above map.
 
 ## Use images/icons as markers
 
@@ -183,7 +183,7 @@ The map will look as shown below:
 
 {% embed_all map-guide-markers-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/f87te3v5/ "@@open-newtab") to edit the above map.
+Click [here](http://jsfiddle.net/fusioncharts/f87te3v5/) to edit the above map.
 
 ## Use connectors between markers
 
@@ -284,7 +284,7 @@ The map looks ike as shown below:
 
 {% embed_all map-guide-markers-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/j922xqta/ "@@open-newtab") to edit the above map.
+Click [here](http://jsfiddle.net/fusioncharts/j922xqta/) to edit the above map.
 
 ## Use data driven markers
 
@@ -376,6 +376,6 @@ The map will look as shown below:
 
 {% embed_all map-guide-markers-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/12vyv6L3/ "@@open-newtab") to edit the above map.
+Click [here](http://jsfiddle.net/fusioncharts/12vyv6L3/) to edit the above map.
 
 > In the map above, the size of the marker is proportional to the total passenger traffic for the airport.

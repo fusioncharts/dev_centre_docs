@@ -8,11 +8,11 @@ heading: Setup
 
 > Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/) while upgrading to __v3.13.0__.
 
-You install maps automatically, as part of the FusionCharts Suite XT package. For detailed instructions on installing FusionCharts Suite XT or FusionMaps XT, click [here]({% site.baseurl %}/installation/client-side-frameworks/install-using-plainjs '@@open-newtab'). Once installed, ensure that `fusioncharts.js` and `fusioncharts.maps.js` files are present in the `fusioncharts` folder. If you want to use any specific map, you also need to paste its definition files in the `fusioncharts/maps/folder`.
+You install maps automatically, as part of the FusionCharts Suite XT package. For detailed instructions on installing FusionCharts Suite XT or FusionMaps XT, click [here]({% site.baseurl %}/installation/client-side-frameworks/install-using-plainjs). Once installed, ensure that `fusioncharts.js` and `fusioncharts.maps.js` files are present in the `fusioncharts` folder. If you want to use any specific map, you also need to paste its definition files in the `fusioncharts/maps/folder`.
 
 ## Install additional map files
 
-The FusionCharts Suite XT download package contains only the USA and World maps as part of the package. To work with other maps, you need the definition files for them. A map definition file contains all the data necessary to create and render a map. You can download the additional map definition files from [here](https://www.fusioncharts.com/download/maps/definition).
+The FusionCharts Suite XT download package contains only the USA and World maps as part of the package. To work with other maps, you need the definition files for them. A map definition file contains all the data necessary to create and render a map. You can download the additional map definition files from [here](https://www.fusioncharts.com/download/map-definition-files).
 
 Note that the definition files you download will yield maps in extremely high resolutions. If you do not need such high resolution maps, send in a [request for custom resolution maps](https://www.fusioncharts.com/download/map-definition-files) to our Customer Support team.
 

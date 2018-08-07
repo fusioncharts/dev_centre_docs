@@ -2,7 +2,6 @@
 title: Select-scatter Chart | FusionCharts
 description: The select-scatter chart is a special type of chart that allows users to visually select a subset of data from the given data points.
 heading: Select-scatter Chart
-breadcrumb: [["Home", "/"], ["Select-scatter Chart"]]
 ---
 
 > This chart type belongs to **PowerCharts XT**.
@@ -23,13 +22,13 @@ To create a select-scatter chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=selectscatter "@@open-newtab") page of select-scatter chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=selectscatter) page of select-scatter chart.
 
 The select-scatter chart thus created looks like this:
 
 {% embed_all standard-charts-select-scatter-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3JjL8/ "@@open-newtab") to edit the select-scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/3JjL8/) to edit the select-scatter chart.
 
 ## Select Set of Points
 
@@ -101,7 +100,7 @@ A select-scatter chart configured to show how the selected data is retrieved and
 
 {% embed_chart standard-charts-select-scatter-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/0e8vwaud/ "@@open-newtab") to edit the select-scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/0e8vwaud/) to edit the select-scatter chart.
 
 Now, let's customize the appearance and properties of drawing regression lines in the select-scatter chart.
 
@@ -126,7 +125,7 @@ A select-scatter chart rendered with a regression line is shown below:
 
 {% embed_chart standard-charts-select-scatter-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/0yL7zfps/ "@@open-newtab") to edit the select-scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/0yL7zfps/) to edit the select-scatter chart.
 
 ### Modes of Regression
 
@@ -165,7 +164,7 @@ The chart looks like:
 
 {% embed_chart standard-charts-select-scatter-chart-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7yhqp2oq/ "@@open-newtab") to edit the select-scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/7yhqp2oq/) to edit the select-scatter chart.
 
 > The formula used to draw the regression lines for both the modes are given below: 
 

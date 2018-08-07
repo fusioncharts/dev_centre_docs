@@ -282,4 +282,4 @@ ReactDOM.render(
 
 ```
 
-Click [here](http://jsfiddle.net/fusioncharts/k7mn6j5s/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/k7mn6j5s/) to edit the above chart.

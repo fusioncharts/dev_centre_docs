@@ -2,7 +2,6 @@
 title: Radar Chart | FusionCharts
 description: A radar chart is a visual interpretation of data bearing multiple dimensions, the radial grid like structure,the chart displays different categories values
 heading: Radar Chart
-breadcrumb: [["Home", "/"], ["Radar Chart"]]
 ---
 
 > This chart type belongs to **PowerCharts XT**.
@@ -39,13 +38,13 @@ To create a radar chart follow the steps given below:
 
 * Specify the name of the series for a dataset using the `seriesname` attribute. This attribute belongs to the `dataset` object.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=radar "@@open-newtab") page of multi-series radar chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=radar) page of multi-series radar chart.
 
 The radar chart created will look like as  shown below:
 
 {% embed_all standard-charts-radar-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/64v13yyy/ "@@open-newtab") to edit the radar chart.
+Click [here](http://jsfiddle.net/fusioncharts/64v13yyy/) to edit the radar chart.
 
 Now, we will create a multi-series radar chart for the budget analysis for the current month for the five key departments at a store. For each department, we will plot the allocated budget and the actual cost. This will help to determine how accurate the budget estimation at the beginning of the month was - whether the budget was over-allocated, under-allocated, or correctly allocated. 
 
@@ -55,4 +54,4 @@ The multi-series radar chart thus created looks like this:
 
 {% embed_all standard-charts-radar-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/gqLerkph/ "@@open-newtab") to edit the multi-series radar chart.
+Click [here](http://jsfiddle.net/fusioncharts/gqLerkph/) to edit the multi-series radar chart.

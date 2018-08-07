@@ -1,8 +1,8 @@
 {
     type: 'heatmap',
     renderAt: 'chart-container',
-    width: '550',
-    height: '300',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -12,6 +12,7 @@
             "xAxisName": "Seasons",
             "yAxisName": "Cities",
             "showPlotBorder": "1",
+            "theme": "fusion",
             "mapByCategory": "1"
         },
         "rows": {

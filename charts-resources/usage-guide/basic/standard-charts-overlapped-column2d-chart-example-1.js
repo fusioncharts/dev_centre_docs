@@ -1,6 +1,6 @@
 {
     type: "overlappedColumn2d",
-    renderAt: "chartContainer",
+    renderAt: "chart-container",
     width: "700",
     height: "400",
     dataFormat: "json",

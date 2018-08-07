@@ -2,7 +2,6 @@
 title: Zoom Line Chart | FusionCharts
 description: The FusionCharts Suite XT zoom line chart is a special type of multi-series line chart that allows analysis of data at macroscopic and microscopic levels.
 heading: Zoom Line Chart
-breadcrumb: [["Home", "/"], ["Zoom Line Chart"]]
 ---
 
 > These chart types belong to **FusionCharts XT**.
@@ -35,13 +34,13 @@ To create a zoom line chart follow the steps given below:
 
 > The anchors in the zoom-line chart is not clickable, because FusionCharts does not include the supporting API for defining an external URL for the data points.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=zoomline "@@open-newtab") page of zoomline chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=zoomline) page of zoomline chart.
 
 The zoom line chart thus created looks like this:
 
 {% embed_all standard-charts-zoom-line-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/JU3Ud/ "@@open-newtab") to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/JU3Ud/) to edit the zoomline chart.
 
 As seen in the chart above, at the time of rendering, the zoom line chart displays a macroscopic view of the data. The data is neatly compressed so that all of it fits into the width of the chart. When the user selects a segment of the line plot by dragging the mouse cursor across the canvas, the selected portion expands to occupy the entire width of the chart. 
 
@@ -61,13 +60,13 @@ Another advantage of using the zoom-line dual y-axis chart is when you want to c
 
 To create a zoom-line dual y-axis chart, set the `type` attribute to `zoomlinedy`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=zoomlinedy "@@open-newtab") page of zoomlinedy chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=zoomlinedy) page of zoomlinedy chart.
 
 The chart below shows a zoom-line dual y-axis chart created to compare unique footfall with the sales (in dollars), for each day of the previous year.
 
 {% embed_all standard-charts-zoom-line-charts-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/mvsjs4ag/ "@@open-newtab") to edit the zoom line dual y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/mvsjs4ag/) to edit the zoom line dual y-axis chart.
 
 Now, let's customize the appearance and properties of the charts.
 
@@ -91,7 +90,7 @@ A zoom line chart with the maximum number of labels limited looks like this:
 
 {% embed_chart standard-charts-zoom-line-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/t19c4y4e/ "@@open-newtab") to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/t19c4y4e/) to edit the zoomline chart.
 
 > **numVisibleLabels** attribute only limits the number of visible data labels; it does not affect the number of visible data points.
 
@@ -115,7 +114,7 @@ A zoom line chart with the distance between the consecutive data plots configure
 
 {% embed_chart standard-charts-zoom-line-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/v60znb4c/ "@@open-newtab") to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/v60znb4c/) to edit the zoomline chart.
 
 ## Set the Criteria for Anchor Display
 
@@ -139,7 +138,7 @@ A zoom line chart with the criteria for anchor display defined looks like this:
 
 {% embed_chart standard-charts-zoom-line-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9nkgfaho/ "@@open-newtab") to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/9nkgfaho/) to edit the zoomline chart.
 
 ## Pre-select the Number of Visible Data Plots
 
@@ -166,7 +165,7 @@ A zoom line chart rendered with pre-selected number of data plots looks like thi
 
 {% embed_chart standard-charts-zoom-line-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/2fqud5w1/ "@@open-newtab") to edit the zoomline chart.
+Click [here](http://jsfiddle.net/fusioncharts/2fqud5w1/) to edit the zoomline chart.
 
 ## Customize the Appearance of a Zoom-line Chart
 
@@ -286,7 +285,7 @@ The configured zoom line chart looks like:
 
 {% embed_chart standard-charts-zoom-line-charts-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/65jv5ohb/ "@@open-newtab") to configure the above attributes.
+Click [here](http://jsfiddle.net/fusioncharts/65jv5ohb/) to configure the above attributes.
 
 ## Customize the Peak Data Limits
 
@@ -328,7 +327,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-zoom-line-charts-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/chrgodxw/ "@@open-newtab") to configure the above attributes.
+Click [here](http://jsfiddle.net/fusioncharts/chrgodxw/) to configure the above attributes.
 
 > In the above chart, all plots having values less than 1000 are automatically detected and included.
 
@@ -355,7 +354,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-zoom-line-charts-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/0d9cqh3u/ "@@open-newtab") to configure the above attributes.
+Click [here](http://jsfiddle.net/fusioncharts/0d9cqh3u/) to configure the above attributes.
 
 > In the above chart, all plots having values more than 900 are automatically detected and included.
 
@@ -384,7 +383,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-zoom-line-charts-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/qondx6r8/ "@@open-newtab") to configure the above attributes.
+Click [here](http://jsfiddle.net/fusioncharts/qondx6r8/) to configure the above attributes.
 
 > In the above chart, all plots having values more than 900 and less than 1000 are automatically detected and included.
 
@@ -417,6 +416,6 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-zoom-line-charts-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/fe5gcodr/ "@@open-newtab") to configure the above attributes.
+Click [here](http://jsfiddle.net/fusioncharts/fe5gcodr/) to configure the above attributes.
 
 > In the above chart, all values in the range 900-1000 will be included in the initial display. 

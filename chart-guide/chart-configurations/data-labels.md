@@ -2,7 +2,6 @@
 title: Data Labels | FusionCharts
 description: Data labels are the names of the data points that are displayed on the x-axis of a chart. Label Management for line and area charts in possible.
 heading: Data Labels
-breadcrumb: [["Home", "/"], ["Data Labels"]]
 ---
 
 Data labels are the names of the data points that are displayed on the x-axis of a chart. 
@@ -36,7 +35,7 @@ The chart will look like as shown in the image below:
 
 {% embed_chart chart-configurations-data-labels-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/h5d6xwyo/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/h5d6xwyo/) to edit the above chart.
 
 ### Wrap Mode
 
@@ -54,7 +53,7 @@ The chart with wrapped labels will look like as shown below:
 
 {% embed_chart chart-configurations-data-labels-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/uofvvvv3/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/uofvvvv3/) to edit the above chart.
 
 > In horizontal bar charts, you can specify the maximum % of available width for data labels with the `maxLabelWidthPercent`attribute. This attribute takes a value between `5` and `80`.
 
@@ -74,7 +73,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-labels-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/11umogjk/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/11umogjk/) to edit the above chart.
 
 While viewing the labels in the rotate mode you can also slant the labels for better visibility if required. Set the `slantLabel` attribute to `1` and the axis labels will be slanted to 45 degrees.
 
@@ -95,7 +94,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-labels-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/mxceLe0k/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/mxceLe0k/) to edit the above chart.
 
 > In case of Scatter and Bubble charts, when the attribute** `xAxisLabelMode`** is set to `auto`, slanting of the X-axis labels is not applicable.
 
@@ -115,7 +114,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-labels-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/z7L18vvh/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/z7L18vvh/) to edit the above chart.
 
 To change the distribution levels (default is 2) specify the level using the `staggerLines` attribute. Refer to the code below:
 
@@ -132,7 +131,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-labels-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/pdbq2gmr/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/pdbq2gmr/) to edit the above chart.
 
 ### N-th Label Mode
 
@@ -150,7 +149,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-labels-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Lsrdd84a/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/Lsrdd84a/) to edit the above chart.
 
 ## Show/Hide Data for all Labels
 
@@ -168,7 +167,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-labels-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/fe1awqLn/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/fe1awqLn/) to edit the above chart.
 
 ## Hide Specific Data Labels
 
@@ -200,7 +199,7 @@ In the above code, we have set the `showLabel` attribute for **Quarter 2** to `0
 
 {% embed_chart chart-configurations-data-labels-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/bv5f703k/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/bv5f703k/) to edit the above chart.
 
 ## Label Management: Line and Area Charts
 
@@ -212,7 +211,7 @@ To accommodate long labels, the chart automatically adjusts the right and left c
 
 {% embed_chart chart-configurations-data-labels-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3qoyzms4/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/3qoyzms4/) to edit the above chart.
 
 Specify the space between the canvas border and first (& last data plots) using the `canvasPadding` attribute. Refer to the code below:
 
@@ -236,7 +235,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-labels-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/m11nsrja/ "@@open-newtab") to edit the above chart
+Click [here](http://jsfiddle.net/fusioncharts/m11nsrja/) to edit the above chart
 
 Advanced x-axis label management has been implemented to achieve the following objectives:
 
@@ -291,7 +290,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-labels-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/jcd7wv2x/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/jcd7wv2x/) to edit the above chart.
 
 ### Border properties
 
@@ -334,7 +333,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-labels-example-13.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/qvjdz1Lw/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/qvjdz1Lw/) to edit the above chart.
 
 ### Background Properties
 
@@ -360,7 +359,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-labels-example-14.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/usa7yuo1/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/usa7yuo1/) to edit the above chart.
 
 ## Configure Height of the Data Label
 
@@ -383,7 +382,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-labels-example-15.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/0zufrdbb/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/0zufrdbb/) to edit the above chart.
 
 ## Add Links to Data Labels
 
@@ -402,4 +401,4 @@ The chart with data label linked will look like as shown below:
 
 {% embed_chart chart-configurations-data-labels-example-16.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ferd2app/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ferd2app/) to edit the above chart.

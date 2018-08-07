@@ -1,13 +1,18 @@
 ---
-title: Version 3.5.0 | FusionCharts
-description: This section talks about the new features, improvements and fixes for v3.5.0.
-heading: Version 3.5.0
-breadcrumb: [["Home", "/"], ["Change Log"]]
+title: Version 3.5.x | FusionCharts
+description: This section talks about the new features, improvements and fixes for v3.5.x.
+heading: Version 3.5.x
 ---
 
-#### 6th November, 2014
+<h2 class="sub-heading">Version 3.5.1</h2>
+3rd December, 2014
 
-## Improvements
+This release re-introduces the Developer License and introduces a new Team license. No major software updates were done post the previous release.
+
+<h2 class="sub-heading">Version 3.5.0</h2>
+6th November, 2014
+
+<h4 class="sub-heading">Improvements</h4>
 
 * Added support for self hosted export servers in PHP and ASP.NET.
 
@@ -19,7 +24,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * Support for specifying process height in gantt chart.
 
-## Fixes
+<h4>Fixes</h4>
 
 * Zoomline's `cross-hair` now supports number formatting.
 

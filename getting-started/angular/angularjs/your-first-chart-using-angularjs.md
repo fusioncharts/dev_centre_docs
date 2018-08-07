@@ -9,11 +9,11 @@ FusionCharts is a JavaScript charting library that enables you to create interac
 
 We'll start with a simple example of creating a [chart]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#create-your-first-gauge-7) and a [map]({% site.baseurl %}/getting-started/angular/angularjs/your-first-chart-using-angularjs#create-your-first-map-10).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/angular/angularjs/install-using-angularjs '@@open-newtab') `angularjs-fusioncharts` plugin, if you haven’t installed it already.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/angular/angularjs/install-using-angularjs) `angularjs-fusioncharts` plugin, if you haven’t installed it already.
 
 ## Create your first chart
 
-In this section, we will create a chart using the `angularjs-fusioncharts` component. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab').
+In this section, we will create a chart using the `angularjs-fusioncharts` component. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/list-of-charts).
 
 To create charts, the `angularjs-fusioncharts` component can be passed as a part of another `angularjs` component.
 
@@ -38,7 +38,7 @@ China|30|
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
 
-> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts '@@open-newtab'), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts), etc.
 
 ```javascript
 {
@@ -101,7 +101,7 @@ Functional attributes let you control a variety of functional elements on the ch
 
 Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's look and feel no cosmetic attributes are used in this sample.
 
-For a detailed list of attributes click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
+For a detailed list of attributes click [here]({% site.baseurl %}/chart-attributes/?chart=area2d).
 
 ### Setup the main module
 
@@ -158,7 +158,7 @@ myApp.controller('MyController', ['$scope', function($scope) {
 }])
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a Column 2D chart.
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d) (the keys in the `dataSource` object) for a Column 2D chart.
 
 Now, use the `fusioncharts` directive in a template. The code for the `index.html` file is given below:
 
@@ -190,7 +190,7 @@ Now, use the `fusioncharts` directive in a template. The code for the `index.htm
 
 </html>
 ```
-Now, go on and explore other 95+ chart types that we have at [FusionCharts]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for different charts
+Now, go on and explore other 95+ chart types that we have at [FusionCharts]({% site.baseurl %}/chart-guide/list-of-charts), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d) for different charts
 
 ## Create your first gauge
 
@@ -250,7 +250,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for an angular gauge.
+See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge) for an angular gauge.
 
 ### Setup the main module
 
@@ -343,7 +343,7 @@ However, when you convert the data in a format acceptable by FusionCharts, the e
 
 For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. 
 
-We have detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts - refer to them for the correct `id` of the map you want to create.
+We have detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts - refer to them for the correct `id` of the map you want to create.
 
 ### Convert tabular data into JSON format
 
@@ -506,7 +506,7 @@ Now, use the `fusioncharts` directive in a template. The code for the `index.htm
 </body>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the map of **World Map**. The respective `id` can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference) (the keys in the `dataSource` object) for the map of **World Map**. The respective `id` can be found [here]({% site.baseurl %}/maps/spec-sheets/world).
 
 ## Problem rendering the chart?
 

@@ -1,14 +1,15 @@
 {
     type: 'heatmap',
     renderAt: 'chart-container',
-    width: '550',
-    height: '270',
+    width: '700',
+    height: '350',
     dataFormat: 'json',
     dataSource: {
         "chart": {
             "theme": "fusion",
             "caption": "Top Smartphone Ratings",
             "subCaption": "By Features",
+            "showValues": "1",
             "xAxisName": "Features",
             "yAxisName": "Model",
             "showPlotBorder": "1"

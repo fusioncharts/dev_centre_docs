@@ -2,7 +2,6 @@
 title: Bullet Graph | FusionCharts
 description: A bullet graph is a variation of a bar graph and serves as a light weight replacement for dashboard gauges and meters.
 heading: Introduction to Bullet Graph
-breadcrumb: [["Home", "/dev"], ["Bullet graph"]]
 ---
 
 > These chart types belong to **FusionWidgets XT**.
@@ -19,11 +18,11 @@ You can orient bullet graphs horizontally or vertically. You can even stack mult
 
 {% embed_all standard-charts-bullet-graph-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/jGgrU/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/jGgrU/) to edit the above chart.
 
 {% embed_all standard-charts-bullet-graph-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Cn6bt/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/Cn6bt/) to edit the above chart.
 
 In the above charts, the filled bar represents the actual value and the line represents the target value.
 
@@ -89,7 +88,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-bullet-graph-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/yskgsb97/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/yskgsb97/) to edit the above chart.
 
 > To render the above chart as a vertical bullet graph, change the value of the `type` attribute to `vBullet`.
 
@@ -124,7 +123,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-bullet-graph-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/joyr91g7/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/joyr91g7/) to edit the above chart.
 
 ## Customize border cosmetics
 
@@ -155,7 +154,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-bullet-graph-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/710b7267/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/710b7267/) to edit the above chart.
 
 ## Customize the plot and target width/height
 
@@ -180,7 +179,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-bullet-graph-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/mefby40r/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/mefby40r/) to edit the above chart.
 
 ## Configure color
 
@@ -216,7 +215,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-bullet-graph-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/uxhr8wnk/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/uxhr8wnk/) to edit the above chart.
 
 > To render the bullet graph in 2D, set the `colorRangeFillMix` attribute to an empty value, like this `colorRangeFillMix`.
 
@@ -237,7 +236,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-bullet-graph-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/jgk1xjtx/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/jgk1xjtx/) to edit the above chart.
 
 ## Customize tick/value visibility and position
 
@@ -265,7 +264,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-bullet-graph-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/cot6n25d/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/cot6n25d/) to edit the above chart.
 
 > The above chart is rendered with three check boxes: 
 
@@ -321,7 +320,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-bullet-graph-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ma7ndkhg/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ma7ndkhg/) to edit the above chart.
 
 ## Render a dot as the plot instead of a filled bar
 
@@ -340,7 +339,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-bullet-graph-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/2vopy2jm/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/2vopy2jm/) to edit the above chart.
 
 ## Show/hide chart value
 
@@ -360,7 +359,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-bullet-graph-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/2gd2htrt/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/2gd2htrt/) to edit the above chart.
 
 Note: The chart above is rendered with a "Show Value?" check box. Select this check box to show the chart value, or deselect it to hide the value.
 
@@ -405,7 +404,7 @@ The chart will look as shown below:
 
 ![Bullet-Graph-GIF-1]({% site.baseurl %}/gif/standard-charts-bullet-graph-gif-1.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/tfmv5km3/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/tfmv5km3/) to edit the above chart.
 
 ## Real-time Bullet Graph
 
@@ -429,7 +428,7 @@ A bullet graph configured for real-time updates using JavaScript API looks like 
 <p>{% embed_chart standard-charts-bullet-graph-example-18.js %}</p>
 </div></div></br>
 
-Click [here](http://jsfiddle.net/fusioncharts/tqndwy20/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/tqndwy20/) to edit the above chart.
 
 As you can see above, 5 real-time horizontal charts are rendered at a time to showcase a Daily Sales Tracker of salesperson for Stereo Exchange Ltd, New York.
 

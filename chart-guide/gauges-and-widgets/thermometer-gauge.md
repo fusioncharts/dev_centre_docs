@@ -14,7 +14,7 @@ You can use the thermometer gauge shown below as a real-time temperature monitor
 
 {% embed_all gauges-and-widgets-thermometer-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3BNH3/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/3BNH3/) to edit the above gauge.
 
 ## Elements of thermometer gauges
 
@@ -86,7 +86,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-thermometer-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/LZWyr/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/LZWyr/) to edit the above gauge.
 
 ## Customize the gauge fill
 
@@ -111,7 +111,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-thermometer-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6UFzr/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/6UFzr/) to edit the above gauge.
 
 ## Customize the gauge borders
 
@@ -142,7 +142,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-thermometer-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8r7RV/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/8r7RV/) to edit the above gauge.
 
 ## Manually set the thermometer radius and height
 
@@ -167,7 +167,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-thermometer-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/gpX6k/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/gpX6k/) to edit the above gauge.
 
 ## Hide the temperature value
 
@@ -187,7 +187,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-thermometer-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/V73nQ/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/V73nQ/) to edit the above gauge.
 
 ## Show/hide tick marks and tick values
 
@@ -212,7 +212,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-thermometer-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/tQ985/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/tQ985/) to edit the above gauge.
 
 ## Configure tick marks and tick values
 
@@ -258,7 +258,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-thermometer-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/JZ36w/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/JZ36w/) to edit the above gauge.
 
 ## Customize tick marks
 
@@ -295,7 +295,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-thermometer-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/uHBcn/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/uHBcn/) to edit the above gauge.
 
 ## Configure hover effects
 
@@ -315,7 +315,7 @@ The gauge will look like as shown below:
 
 ![Thermometer]({% site.baseurl %}/gif/gauges-and-widgets-thermometer.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/hyvLk5d8/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/hyvLk5d8/) to edit the above gauge.
 
 ## Configure real-time updates using JavaScript API
 
@@ -379,7 +379,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-thermometer-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/gfqnj2oc/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/gfqnj2oc/) to edit the above gauge.
 
 ## Configure real time updates using server-side script
 
@@ -406,7 +406,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-thermometer-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/zc2Ldvjs/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/zc2Ldvjs/) to edit the above gauge.
 
 ## Stop/restart updates
 
@@ -459,7 +459,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-thermometer-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/pt2t929n/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/pt2t929n/) to edit the above gauge.
 
 ## Configure real time events
 
@@ -542,7 +542,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-thermometer-example-13.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/hmx9wxtg/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/hmx9wxtg/) to edit the above gauge.
 
 ### Use the `realTimeUpdateError` event
 
@@ -584,7 +584,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-thermometer-example-14.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/16nftft4/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/16nftft4/) to edit the above gauge.
 
 ## Troubleshoot real time gauges
 

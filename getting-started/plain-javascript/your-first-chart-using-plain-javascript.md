@@ -9,11 +9,11 @@ FusionCharts is a JavaScript charting library that enables you to create interac
 
 We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-gauge-8) and a [map]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-map-13).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript '@@open-newtab') the `fusioncharts` package, if you haven’t installed it already.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript) the `fusioncharts` package, if you haven’t installed it already.
 
 ## Create your first chart
 
-In this section, we will create a chart using the FusionCharts Suite XT library. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab').
+In this section, we will create a chart using the FusionCharts Suite XT library. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/list-of-charts).
 
 Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a **Column 2D** chart as shown below:
 
@@ -36,7 +36,7 @@ China|30|
 
 FusionCharts accepts data in JSON or XML format. In this section, we will convert the tabular data into JSON format. The converted format is shown below:
 
-> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts '@@open-newtab'), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts), etc.
 
 ```javascript
 {
@@ -99,7 +99,7 @@ Functional attributes let you control a variety of functional elements on the ch
 
 These attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics, no cosmetic attributes are used in this sample.
 
-For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
+For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d).
 
 ### Include FusionCharts Suite XT library
 
@@ -179,7 +179,7 @@ FusionCharts.ready(function() {
                 "value": "30"
             }]
         }
-    }
+    });
 });
 ```
 
@@ -256,9 +256,9 @@ The full HTML code is shown below:
 </html>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') for a Column 2D chart.
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d) for a Column 2D chart.
 
-Now, go on and explore other 95+ chart types that we have at [FusionCharts]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for different charts.
+Now, go on and explore other 95+ chart types that we have at [FusionCharts]({% site.baseurl %}/chart-guide/list-of-charts), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d) for different charts.
 
 ## Create your first gauge
 
@@ -462,7 +462,7 @@ The full HTML code is given below:
 </html>
 ```
 
-See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for an angular gauge.
+See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge) for an angular gauge.
 
 ## Create your first map
 
@@ -487,7 +487,7 @@ However, when you convert the data into a format supported by FusionCharts, the 
 
 For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
 
-We have a detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
+We have a detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
 
 
 ### Convert tabular data into JSON format
@@ -721,7 +721,7 @@ The full HTML code is given below:
 </html>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') for the **World Map**. A list of countries of WORLD, and their respective `id`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference) for the **World Map**. A list of countries of WORLD, and their respective `id`, can be found at [here]({% site.baseurl %}/maps/spec-sheets/world).
 
 ## Problem rendering the chart?
 

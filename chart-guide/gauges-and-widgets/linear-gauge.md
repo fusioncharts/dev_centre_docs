@@ -14,7 +14,7 @@ A simple linear gauge looks like the following:
 
 {% embed_all gauges-and-widgets-linear-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/R8fe6/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/R8fe6/) to edit the above gauge.
 
 You can use a linear gauge to display a specific data point, using a pointer. The pointer moves on a horizontal named color scale to indicate whether the monitored data is within the defined limits.
 
@@ -191,7 +191,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/R8fe6/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/R8fe6/) to edit the above gauge.
 
 You can configure the functional and cosmetic properties of the linear gauge to improve its visual representation.
 
@@ -242,7 +242,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6a9Tb/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/6a9Tb/) to edit the above gauge.
 
 ## Add tool text and a link to the pointer
 
@@ -279,7 +279,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/VLRJ2/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/VLRJ2/) to edit the above gauge.
 
 ## Adding Multiple Pointers
 
@@ -287,7 +287,7 @@ A linear gauge rendered with two pointers, showing the server CPU utilization fo
 
 {% embed_chart gauges-and-widgets-linear-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/K99bA/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/K99bA/) to edit the above gauge.
 
 To add multiple pointers, you only need to create multiple instances of the `pointer` object, which belongs to the `pointers` object.
 
@@ -327,7 +327,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Mn2d5/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/Mn2d5/) to edit the above gauge.
 
 > The gauge shown above is rendered with two check boxes below it: **Show Value** and **Place Value Above Pointer**. If you select the **Show Value** checkbox, the value of the pointer is shown; if you clear it, the value is hidden. If you select the **Place Value Above Pointer** checkbox, the value is placed above the pointer; if you clear it, the value is shown below.
 
@@ -349,7 +349,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ZVKw9/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/ZVKw9/) to edit the above gauge.
 
 The gauge shown above is rendered with two check boxes below it: **Pointer on Top** and **Pointer at Bottom**. If you select the **Pointer on Top** check box, the pointer is shown along the top edge of the gauge; if you select the **Pointer at Bottom** checkbox, the pointer is shown along the bottom edge of the gauge.
 
@@ -376,7 +376,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Uen3g/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/Uen3g/) to edit the above gauge.
 
 ## Configure gauge borders
 
@@ -407,7 +407,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ZN6df/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/ZN6df/) to edit the above gauge.
 
 ## Hide gauge labels
 
@@ -427,7 +427,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/fCLZ3/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/fCLZ3/) to edit the above gauge.
 
 Look at the **Show Labels?** checkbox rendered below the above linear gauge. If you select this check box, you can see the label for each color range on the gauge scale. If you clear the check box, the labels are hidden.
 
@@ -471,7 +471,7 @@ The gauge will look like as shown below:
 
 ![Linear]({% site.baseurl %}/gif/gauges-and-widgets-linear-gauge.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/5zu86/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/5zu86/) to edit the above gauge.
 
 Using FusionCharts Suite XT, you can configure several functional and cosmetic properties for tick marks and tick values.
 
@@ -498,7 +498,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5YYkT/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/5YYkT/) to edit the above gauge.
 
 ## Configure tick values
 
@@ -528,7 +528,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/pVKYU/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/pVKYU/) to edit the above gauge.
 
 ## Configure positions of tick marks and tick values
 
@@ -558,7 +558,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-13.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Zy3ku/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/Zy3ku/) to edit the above gauge.
 
 ## Configure the number of major and minor tick marks
 
@@ -588,7 +588,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-14.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8a6Bx/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/8a6Bx/) to edit the above gauge.
 
 > In the linear gauge above, you can see the the number of major and minor tick marks explicitly set to 9 and 5, respectively.
 
@@ -633,7 +633,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-15.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/rd45T/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/rd45T/) to edit the above gauge.
 
 ## Configure tick mark and tick value padding
 
@@ -658,7 +658,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-16.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8swzd/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/8swzd/) to edit the above gauge.
 
 ## Trend points
 
@@ -716,7 +716,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-17.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/LH9pn/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/LH9pn/) to edit the above gauge.
 
 ## Add a trend point with a marker
 
@@ -762,7 +762,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-18.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/rRN2s/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/rRN2s/) to edit the above gauge.
 
 ## Add trend zones to a linear gauge
 
@@ -808,7 +808,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-19.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/fkY6g/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/fkY6g/) to edit the above gauge.
 
 ## Create an editable linear gauge
 
@@ -829,7 +829,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-20.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/QTEg7/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/QTEg7/) to edit the above gauge.
 
 > If a gauge has multiple pointers and all have them have to be made editable, the **editMode** attribute is defined for the `chart` object. If a gauge has multiple pointers and only specific ones have to be made editable, the `editMode` attribute is defined as a part of the `pointer` object, which belongs to the `pointers` object.
 
@@ -893,7 +893,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-21.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/r3onjpnt/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/r3onjpnt/) to edit the above gauge.
 
 ### Update multiple pointers
 
@@ -933,7 +933,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-22.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/czrprd22/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/czrprd22/) to edit the above gauge.
 
 ### Update pointer(s) using the named ID
 
@@ -1015,7 +1015,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-23.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/p7Lausdw/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/p7Lausdw/) to edit the above gauge.
 
 > Call the JavaScript APIs of a chart only after it has rendered.
 
@@ -1100,7 +1100,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-24.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ee9711vk/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/ee9711vk/) to edit the above gauge.
 
 ### Retrieve data using server-side script
 
@@ -1127,7 +1127,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-25.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/yy0bp783/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/yy0bp783/) to edit the above gauge.
 
 ## Stop/restart updates
 
@@ -1188,7 +1188,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-26.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/px5muLjh/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/px5muLjh/) to edit the above gauge.
 
 ## Configure Real-time Events
 
@@ -1259,7 +1259,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-linear-example-27.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/uq7r85ob/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/uq7r85ob/) to edit the above gauge.
 
 ## Troubleshooting
 

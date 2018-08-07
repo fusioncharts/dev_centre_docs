@@ -1,353 +1,278 @@
 ---
-permalink: using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component.html
-title: Creating Charts Using the FusionCharts VueJS Component | FusionCharts
-description: The Vue-FusionCharts component uses the FusionCharts component to create and configure charts using VueJS.
-heading: Creating Charts Using the FusionCharts VueJS Component
+title: Adding Drill Down using ASP.NET | FusionCharts
+description: This article focuses on drill down charts.
+heading: Adding Drill Down using ASP.NET
 chartPresent: true
 ---
-The following examples use the vue-fusioncharts component to create and configure charts in VueJS application.
 
-This article talks about how you can:
+With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
 
-* <a href="/using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component#create-a-simple-chart-using-the-vue-fusioncharts-component" class="smoth-scroll">Create a simple chart using the Vue-FusionCharts component</a>
+You can drill-down to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
 
-* <a href="/using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component#provide-chart-attributes-using-separate-objects" class="smoth-scroll">Provide chart attributes using separate objects</a>
+### Features of the FusionCharts JavaScript Class
 
-* <a href="/using-with-javascript-libraries/vuejs/creating-charts-using-the-fusioncharts-vuejs-component#fetch-chart-data-from-an-external-file" class="smoth-scroll">Fetch chart data from an external file</a>
+* Automatically creates and shows a detailed descendant chart when you click on the corresponding data plot item linked in the parent chart
 
+* Clones all chart configuration settings from the parent chart to create the descendant charts
 
-## Create a simple chart using the vue-fusioncharts component
+* Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configurelink-21) function
+* Uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed
 
-To create charts, the vue-fusioncharts component can be passed as a part of another VueJs component.
+* Supports drill-down to an unlimited number of levels
 
-Take a look at the column 2D chart shown below:
+## Create drill down 
 
-{% embed_chart using-with-javascript-libraries-vuejs-creating-charts-using-the-vue-fusioncharts-component-example-1.js %}
+To create drill-down charts follow the steps given below:
 
-The chart data will be passed as shown below:
+1. Create the JSON/XML data for the parent chart. This is called the parent data source.
 
-```javascript
-var myDataSource = {
-    chart: {
-        caption: "Harry's SuperMart",
-        subCaption: "Top 5 stores in last month by revenue",
-        numberPrefix: "$",
-        theme: "fusion"
+2. Append the data string or the data URL for the descendant charts within the parent data source. If you append the data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
+
+Once you implement these steps, the FusionCharts JavaScript class takes care of the rest. Let's see the steps in details.
+
+As an example, we will consider a simple scenario of a parent chart with a single level of drill-down.
+
+The parent chart here is a **Column 2D** chart showing yearly sales for the top three juice flavors over the last one year. When you click on the data plot for a particular flavor, it drills-down to show a descendant **Column 2D** chart with quarterly sales figures for that flavor.
+
+The above chart, when rendered, looks like the following:
+
+{% embed_chart add-drill-down-using-angular-example-1.js %}
+
+The JSON data to render the above chart:
+
+```json
+{
+    "chart": {
+        "caption": "Top 3 Juice Flavors",
+        "subcaption": "Last year",
+        "xaxisname": "Flavor",
+        "yaxisname": "Amount (In USD)",
+        "numberprefix": "$",
+        "theme": "fusion",
+        "rotateValues": "0"
     },
-    data: [{
-        label: "Bakersfield Central",
-        value: "880000"
+    "data": [{
+        "label": "Apple",
+        "value": "810000",
+        "link": "newchart-xml-apple"
     }, {
-        label: "Garden Groove harbour",
-        value: "730000"
+        "label": "Cranberry",
+        "value": "620000",
+        "link": "newchart-xml-cranberry"
     }, {
-        label: "Los Angeles Topanga",
-        value: "590000"
+        "label": "Grapes",
+        "value": "350000",
+        "link": "newchart-xml-grapes"
+    }],
+    "linkeddata": [{
+        "id": "apple",
+        "linkedchart": {
+            "chart": {
+                "caption": "Apple Juice - Quarterly Sales",
+                "subcaption": "Last year",
+                "numberprefix": "$",
+                "theme": "fusion",
+                "rotateValues": "0",
+                "plottooltext": "$label, $dataValue,  $percentValue"
+            },
+            "data": [{
+                "label": "Q1",
+                "value": "157000"
+            }, {
+                "label": "Q2",
+                "value": "172000"
+            }, {
+                "label": "Q3",
+                "value": "206000"
+            }, {
+                "label": "Q4",
+                "value": "275000"
+            }]
+        }
     }, {
-        label: "Compton-Rancho Dom",
-        value: "520000"
+        "id": "cranberry",
+        "linkedchart": {
+            "chart": {
+                "caption": "Cranberry Juice - Quarterly Sales",
+                "subcaption": "Last year",
+                "numberprefix": "$",
+                "theme": "fusion",
+                "plottooltext": "$label, $dataValue,  $percentValue"
+            },
+            "data": [{
+                "label": "Q1",
+                "value": "102000"
+            }, {
+                "label": "Q2",
+                "value": "142000"
+            }, {
+                "label": "Q3",
+                "value": "187000"
+            }, {
+                "label": "Q4",
+                "value": "189000"
+            }]
+        }
     }, {
-        label: "Daly City Serramonte",
-        value: "330000"
+        "id": "grapes",
+        "linkedchart": {
+            "chart": {
+                "caption": "Grapes Juice - Quarterly Sales",
+                "subcaption": "Last year",
+                "numberprefix": "$",
+                "theme": "fusion",
+                "rotateValues": "0",
+                "plottooltext": "$label, $dataValue,  $percentValue"
+            },
+            "data": [{
+                "label": "Q1",
+                "value": "45000"
+            }, {
+                "label": "Q2",
+                "value": "72000"
+            }, {
+                "label": "Q3",
+                "value": "95000"
+            }, {
+                "label": "Q4",
+                "value": "108000"
+            }]
+        }
     }]
 }
 ```
 
-To render a chart by passing VueJS component, copy the following code:
+In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
 
-```javascript
-Vue.use(VueFusionCharts);
+The data structure that goes into the **../DrillDownExample/Default.aspx** file is given below:
 
-const app = new Vue({
-  el: '#app',
-  data: {
-    type: 'column2d',
-    width: '600',
-    height: '400',
-    dataFormat: 'json',
-    dataSource: myDataSource
-  }
-});
-```
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>C#</a></li>
+  <li><a data-toggle='xml'>VB</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<pre><code class="custom-hlc language-cs">
+    &lt;%@ Page Language=&quot;C#&quot; AutoEventWireup=&quot;true&quot; CodeFile=&quot;Default.aspx.cs&quot; Inherits=&quot;DB_DrillDown_Default&quot; %&gt;
 
-The HTML template for the above sample is:
-
-```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
+    &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot; &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;
+    &lt;html&gt;
+        &lt;head&gt;
+          &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=utf-8&quot; /&gt;
+          &lt;title&gt;FusionCharts - Simple&lt;/title&gt;
+          &lt;!-- FusionCharts script tag --&gt;
+          &lt;script type=&quot;text/javascript&quot; src=&quot;../fusioncharts/fusioncharts.js&quot;&gt;&lt;/script&gt;
+          &lt;!-- End --&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+          &lt;div style=&quot;text-align:center&quot;&gt;
+                &lt;asp:Literal ID=&quot;Literal1&quot; runat=&quot;server&quot;&gt;&lt;/asp:Literal&gt;
+          &lt;/div&gt;
+        &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-```
 
-## Provide chart attributes using separate objects
+<div class='tab xml-tab'>
+<pre><code class="custom-hlc language-vb">
+    &lt;%@ Page Language=&quot;VB&quot; AutoEventWireup=&quot;false&quot; CodeFile=&quot;Default.aspx.vb&quot; Inherits=&quot;Samples_DrillDownExample_Default&quot; %&gt;
 
-An alternate way to create charts using the Vue-FusionCharts component is by creating separate objects for the chart, categories, and dataset configurations. Separate objects are useful when we want to create a chart using more than one dataset, which can be a multi-series or a combination chart.
+    &lt;!DOCTYPE html&gt;
+    &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;
+    &lt;head runat=&quot;server&quot;&gt;
+        &lt;title&gt;FusionCharts - DrillDownExample&lt;/title&gt;
+        &lt;!-- FusionCharts script tag --&gt;
+        &lt;script type=&quot;text/javascript&quot; src=&quot;../../fusioncharts/fusioncharts.js&quot;&gt;&lt;/script&gt;
+        &lt;!-- End --&gt; 
+    &lt;/head&gt;
+    &lt;body&gt;
+        Fusioncharts will render below
+        &lt;div style=&quot;text-align:center&quot;&gt;
+            &lt;asp:Literal ID=&quot;Literal1&quot; runat=&quot;server&quot;&gt;&lt;/asp:Literal&gt;           
+        &lt;/div&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-Take a look at the combination chart shown below:
+</div>
+</div>
 
-{% embed_chart using-with-javascript-libraries-vuejs-creating-charts-using-the-vue-fusioncharts-component-example-2.js %}
+The data structure that goes into the code behind **../DrillDownExample/Default.aspx.cs** file is given below:
 
-The code to render the above chart, is given below:
+<div class="code-wrapper">
+<ul class='code-tabs'>
+  <li class='active'><a data-toggle='json'>C#</a></li>
+  <li><a data-toggle='xml'>VB</a></li>
+</ul>
+<div class='tab-content'>
+<div class='tab json-tab active'>
+<pre><code class="custom-hlc language-cs">
+    using System;
+    using System.Collections;
+    using System.Configuration;
+    using System.Data;
+    using System.Web;
+    using System.Web.Security;
+    using System.Web.UI;
+    using System.Web.UI.HtmlControls;
+    using System.Web.UI.WebControls;
+    using System.Web.UI.WebControls.WebParts;
 
-```javascript
-var myDataSource = {
-    "chart": {
-        "caption": "Actual Revenues, Targeted Revenues & Profits",
-        "subcaption": "Last year",
-        "xaxisname": "Month",
-        "yaxisname": "Amount (In USD)",
-        "numberprefix": "$",
-        "theme": "ocean"
-    },
-    "categories": [{
-        "category": [{
-                "label": "Jan"
-            },
-            {
-                "label": "Feb"
-            },
-            {
-                "label": "Mar"
-            },
-            {
-                "label": "Apr"
-            },
-            {
-                "label": "May"
-            },
-            {
-                "label": "Jun"
-            },
-            {
-                "label": "Jul"
-            },
-            {
-                "label": "Aug"
-            },
-            {
-                "label": "Sep"
-            },
-            {
-                "label": "Oct"
-            },
-            {
-                "label": "Nov"
-            },
-            {
-                "label": "Dec"
-            }
-        ]
-    }],
-    "dataset": [{
-            "seriesname": "Actual Revenue",
-            "data": [{
-                    "value": "16000"
-                },
-                {
-                    "value": "20000"
-                },
-                {
-                    "value": "18000"
-                },
-                {
-                    "value": "19000"
-                },
-                {
-                    "value": "15000"
-                },
-                {
-                    "value": "21000"
-                },
-                {
-                    "value": "16000"
-                },
-                {
-                    "value": "20000"
-                },
-                {
-                    "value": "17000"
-                },
-                {
-                    "value": "25000"
-                },
-                {
-                    "value": "19000"
-                },
-                {
-                    "value": "23000"
-                }
-            ]
-        },
-        {
-            "seriesname": "Projected Revenue",
-            "renderas": "line",
-            "showvalues": "0",
-            "data": [{
-                    "value": "15000"
-                },
-                {
-                    "value": "16000"
-                },
-                {
-                    "value": "17000"
-                },
-                {
-                    "value": "18000"
-                },
-                {
-                    "value": "19000"
-                },
-                {
-                    "value": "19000"
-                },
-                {
-                    "value": "19000"
-                },
-                {
-                    "value": "19000"
-                },
-                {
-                    "value": "20000"
-                },
-                {
-                    "value": "21000"
-                },
-                {
-                    "value": "22000"
-                },
-                {
-                    "value": "23000"
-                }
-            ]
-        },
-        {
-            "seriesname": "Profit",
-            "renderas": "area",
-            "showvalues": "0",
-            "data": [{
-                    "value": "4000"
-                },
-                {
-                    "value": "5000"
-                },
-                {
-                    "value": "3000"
-                },
-                {
-                    "value": "4000"
-                },
-                {
-                    "value": "1000"
-                },
-                {
-                    "value": "7000"
-                },
-                {
-                    "value": "1000"
-                },
-                {
-                    "value": "4000"
-                },
-                {
-                    "value": "1000"
-                },
-                {
-                    "value": "8000"
-                },
-                {
-                    "value": "2000"
-                },
-                {
-                    "value": "7000"
-                }
-            ]
+    // Use the `FusionCharts.Charts` namespace to be able to use classes and methods required to create charts.
+    // using FusionCharts.Charts;
+
+    public partial class DB_DrillDown_Default: System.Web.UI.Page {
+        protected void Page_Load(object sender, EventArgs e) {
+            // The data for the sample drill-down chart is stored in the DrillDownSSData.json file.
+            // To create this chart, chart data will be loaded from the `.json` file.
+
+            // Initialize the chart.
+            Chart sales = new Chart(&quot;column2d&quot;, &quot;myChart&quot;, &quot;600&quot;, &quot;350&quot;, &quot;jsonurl&quot;, &quot;../Data/DrillDownSSData.json&quot;);
+
+            // Render the chart.
+            Literal1.Text = sales.Render();
         }
-    ]
-}
-
-Vue.use(VueFusionCharts);
-
-const app = new Vue({
-    el: '#app',
-    data: {
-        type: 'mscombi2d',
-        width: 600,
-        height: 400,
-        dataFormat: 'json',
-        dataSource: myDataSource
     }
-});
-```
-
-The HTML template for the above sample is:
-
-```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-```
 
-To know how a combination chart can be created using the conventional JSON code, click [here](https://www.fusioncharts.com/dev/chart-guide/combination-charts/creating-combination-charts.html).
+<div class='tab xml-tab'>
+<pre><code class="custom-hlc language-vb">
+    Imports System.Collections
+    Imports System.Configuration
+    Imports System.Data
+    Imports System.Web
+    Imports System.Web.Security
+    Imports System.Web.UI
+    Imports System.Web.UI.HtmlControls
+    Imports System.Web.UI.WebControls
+    Imports System.Web.UI.WebControls.WebParts
 
-## Fetch chart data from an external file
+    ' Use the `FusionCharts.Charts` namespace to be able to use classes and methods required to // create charts.
+    Imports FusionCharts.Charts
+    Partial Class Samples_DrillDownExample_Default
+        Inherits System.Web.UI.Page
+        Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+            ' This page demonstrates the ease of generating charts using FusionCharts.
+            ' For this chart, we've used a pre-defined DrillDownSSData.json (contained in /Data/ folder)
+            ' Ideally, you would NOT use a physical data file. Instead you'll have 
+            ' your own ASP.NET scripts virtually relay the JSON / XML data document.
+            ' For a head-start, we've kept this example very simple.
 
-The FusionCharts component can be used to fetch chart data stored in an external .json or .xml file. To do this, specify the relative path to the external source file in the HTML code for the chart.
-
-The attributes used to specify the type and URL of the external file are:
-
-<table>
-  <tr>
-    <th>Attribute</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>`dataformat`</td>
-    <td>Specifies the type of data (JSON or XML) that will be fetched to render the chart. If JSON data is used,  set this attribute to __jsonurl__. If XML data is used, set it to __xmlurl__.</td>
-  </tr>
-  <tr>
-    <td>`datasource`</td>
-    <td>Specifies the relative path of the source file, from which chart data will be fetched.</td>
-  </tr>
-</table>
-
-The code to render a chart from an external __.json__ file is given below:
-
-```javascript
-Vue.use(VueFusionCharts);
-
-const app = new Vue({
-    el: '#app',
-    data: {
-        type: 'mscombi2d',
-        width: 600,
-        height: 400,
-        dataFormat: 'jsonurl',
-        dataSource: 'data.json'
-    }
-});
-```
-
-The HTML template for the above sample is:
-
-```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
+            ' Initialize chart - Column 2D Chart with data from Data/DrillDownSSData.json
+            Dim sales As New Chart(&quot;column2d&quot;, &quot;myChart&quot;, &quot;600&quot;, &quot;350&quot;, &quot;jsonurl&quot;, &quot;../../Data/DrillDownSSData.json&quot;)
+            ' Render the chart
+            Literal1.Text = sales.Render()
+        End Sub
+    End Class
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-```
+
+</div>
+</div>

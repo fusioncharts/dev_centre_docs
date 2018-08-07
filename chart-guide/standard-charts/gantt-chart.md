@@ -2,7 +2,6 @@
 title: Gantt Chart | FusionCharts
 description: The Gantt chart is a specialized chart used for displaying various timelines like project timelines, development timelines, etc.
 heading: Gantt Chart
-breadcrumb: [["Home", "/dev"], ["Gantt Chart"]]
 ---
 
 > These chart types belong to **FusionWidgets XT**.
@@ -17,7 +16,7 @@ A typical FusionCharts Suite XT Gantt chart looks like the following:
 
 {% embed_chart standard-charts-gantt-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/avLb04cs/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/avLb04cs/) to edit the above chart.
 
 ## Features of the Gantt Chart
 
@@ -151,13 +150,13 @@ The Gantt chart is a specialized chart that you can use to monitor the progress 
 
 As an example, see how you can create a Gantt chart that monitors the various processes and tasks involved in optimizing the reach of an organization on social media.
 
-> In order to render Gantt chart, include fusioncharts.Gantt.js in the project folder with rest of the .js files, as mentioned **[here]({% site.baseurl %}/installation/client-side-frameworks/install-using-plainjs "@@open-newtab")**.
+> In order to render Gantt chart, include fusioncharts.Gantt.js in the project folder with rest of the .js files, as mentioned **[here]({% site.baseurl %}/installation/client-side-frameworks/install-using-plainjs)**.
 
 A Gantt chart that you build to track the progress of a Social Media Optimization project looks like the following:
 
 {% embed_chart standard-charts-gantt-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/z79b74k3/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/z79b74k3/) to edit the above chart.
 
 To create a Gantt chart, you need to:
 
@@ -192,7 +191,7 @@ The Social Media Optimization Gantt chart rendered with multiple categories look
 
 {% embed_chart standard-charts-gantt-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/z0sLtqu7/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/z0sLtqu7/) to edit the above chart.
 
 ## Define and show/hide task labels
 
@@ -249,7 +248,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/q9n2fe0d/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/q9n2fe0d/) to edit the above chart.
 
 ## Show/Hide Task Start and End Dates
 
@@ -303,7 +302,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/q9n2fe0d/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/q9n2fe0d/) to edit the above chart.
 
 ## Add and customize the process header
 
@@ -367,7 +366,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/y0objesp/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/y0objesp/) to edit the above chart.
 
 ## Add more columns to the data table
 
@@ -379,7 +378,7 @@ The above Gantt chart rendered with an additional "Owner" column looks like the 
 
 {% embed_chart standard-charts-gantt-chart-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/bt4sp3rp/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/bt4sp3rp/) to edit the above chart.
 
 Since the chart width is relatively small here, a scroll bar comes up to help you scroll through the data table. To increase the width of the data table:
 
@@ -417,7 +416,7 @@ The chart will look as shown below:
 
 ![Gantt-Chart-GIF-1]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-1.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/6w30L5x1/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/6w30L5x1/) to edit the above chart.
 
 ### Customize hover effect for processes
 
@@ -465,7 +464,7 @@ The chart will look as shown below:
 
 ![Gantt-Chart-GIF-2]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-2.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/gkxkwru0/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/gkxkwru0/) to edit the above chart.
 
 ### Customize hover effect for categories
 
@@ -514,7 +513,7 @@ The chart will look as shown below:
 
 ![Gantt-Chart-GIF-3]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-3.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/20Lhm9e9/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/20Lhm9e9/) to edit the above chart.
 
 ## Disable hover effects
 
@@ -539,7 +538,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/xzf4qd0k/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/xzf4qd0k/) to edit the above chart.
 
 ## Configure task bars
 
@@ -602,7 +601,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/xeeactrr/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/xeeactrr/) to edit the above chart.
 
 ### Customize the hover effect for tasks
 
@@ -675,7 +674,7 @@ The chart will look as shown below:
 
 ![Gantt-Chart-GIF-4]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-4.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/df36h963/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/df36h963/) to edit the above chart.
 
 ### Customize hover effect for slacks
 
@@ -742,7 +741,7 @@ The chart will look as shown below:
 
 ![Gantt-Chart-GIF-5]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-5.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/cgqe3esp/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/cgqe3esp/) to edit the above chart.
 
 ### Create task bars that look like task groups
 
@@ -802,7 +801,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/2mj0quk2/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/2mj0quk2/) to edit the above chart.
 
 ### Draw task bars with rounded corners
 
@@ -822,7 +821,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/dehy0557/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/dehy0557/) to edit the above chart.
 
 ### Customize tool text for task bars
 
@@ -847,7 +846,7 @@ The chart will look as shown below:
 
 ![Gantt-Chart-GIF-1]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-6.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/n89ey0z9/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/n89ey0z9/) to edit the above chart.
 
 ### Add macros to tooltip variables
 
@@ -905,7 +904,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-13.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/03a0az67/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/03a0az67/) to edit the above chart.
 
 ### Set Input Time Format
 
@@ -993,7 +992,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-14.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8vsdf0fw/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/8vsdf0fw/) to edit the above chart.
 
 ### Enable scroll for the data table
 
@@ -1020,7 +1019,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-15.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7tpLp7La/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/7tpLp7La/) to edit the above chart.
 
 ### Enable scrolling for the gantt pane
 
@@ -1059,7 +1058,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-16.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/abqs6hra/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/abqs6hra/) to edit the above chart.
 
 > Note: If the duration specified by you is more than the actual time span of the chart, the scroll bar for the Gantt pane is not displayed.
 
@@ -1099,7 +1098,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-17.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/2g6pffz5/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/2g6pffz5/) to edit the above chart.
 
 > If you do not find this attribute in the data do not be surprised, as this attribute is set in the theme we are using for the fiddles.
 
@@ -1121,7 +1120,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-18.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/wtgt049h/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/wtgt049h/) to edit the above chart.
 
 ## Add Multiple Tasks to a Process
 
@@ -1221,7 +1220,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-19.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9vq3pum8/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/9vq3pum8/) to edit the above chart.
 
 ### Show Projected vs Actual Dates
 
@@ -1229,7 +1228,7 @@ You can follow the technique of allocating multiple tasks to show the projected 
 
 {% embed_chart standard-charts-gantt-chart-example-20.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/u5c0taws/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/u5c0taws/) to edit the above chart.
 
 In the above chart, you can see the time required by various tasks in a construction process. The projected time required is rendered in blue and the actual time required is rendered in gray.
 
@@ -1291,7 +1290,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-21.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/24hkmdn2/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/24hkmdn2/) to edit the above chart.
 
 ## Create Time-based Charts
 
@@ -1336,7 +1335,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-22.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6tcmp7oq/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/6tcmp7oq/) to edit the above chart.
 
 > Note that if you're using only time-based charts, you can specify 23:59:59 as 24:00:00 for ease of usage.
 
@@ -1348,7 +1347,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-23.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/d71yd3m0/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/d71yd3m0/) to edit the above chart.
 
 ## Add milestones to a chart
 
@@ -1409,7 +1408,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-24.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/4633o8kt/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/4633o8kt/) to edit the above chart.
 
 In the chart above, you can see milestones added to the "Social Media Optimization" Gantt chart, to show the completion of development and the successful completion of the campaign.
 
@@ -1488,7 +1487,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-25.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/u8nm6b2w/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/u8nm6b2w/) to edit the above chart.
 
 ## Connect Tasks on Chart
 
@@ -1556,7 +1555,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-26.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/x87o9gms/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/x87o9gms/) to edit the above chart.
 
 For our "Social Media Optimization" Gantt chart, we can connect tasks in the following ways:
 
@@ -1598,7 +1597,7 @@ The chart will look as shown below:
 
 ![Gantt-Chart-GIF-7]({% site.baseurl %}/gif/standard-charts-gantt-chart-gif-7.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/Lgocm9pu/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/Lgocm9pu/) to edit the above chart.
 
 ## Add Trend-lines
 
@@ -1657,7 +1656,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-27.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/rww0qmmk/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/rww0qmmk/) to edit the above chart.
 
 ### Create a trend-zone
 
@@ -1715,7 +1714,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-gantt-chart-example-28.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/j2bnxcnn/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/j2bnxcnn/) to edit the above chart.
 
 ## Events in Gantt chart
 
@@ -1751,4 +1750,4 @@ The chart will look as shown below:
 
 {% embed_all standard-charts-gantt-chart-example-29.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/wcpqhtr6/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/wcpqhtr6/) to edit the above chart.

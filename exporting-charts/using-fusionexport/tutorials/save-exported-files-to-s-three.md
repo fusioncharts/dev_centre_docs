@@ -46,6 +46,6 @@ $ fe -c fusioncharts-config.json
 
 ## Related Resources
 
-* [Manipulate the output filename]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename '@@open-newtab')
+* [Manipulate the output filename]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename)
 
-* [Export the Output Files as a Zip]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip '@@open-newtab')
+* [Export the Output Files as a Zip]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip)

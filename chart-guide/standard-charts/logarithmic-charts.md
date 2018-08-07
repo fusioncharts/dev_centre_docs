@@ -2,7 +2,6 @@
 title: Logarithmic Chart | FusionCharts
 description: Logarithmic charts are similar to normal charts except for the fact that logarithmic charts use a logarithmic axis instead of a linear axis.
 heading: Logarithmic Chart
-breadcrumb: [["Home", "/"], ["Logarithmic Charts"]]
 ---
 
 > These chart types belong to **PowerCharts XT**.
@@ -45,25 +44,25 @@ To create a log column 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=LogMSColumn2D "@@open-newtab") page of log column 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=LogMSColumn2D) page of log column 2D chart.
 
 The log column 2D chart thus rendered looks like this:
 
 {% embed_all standard-charts-logarithmic-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/kEeUR/ "@@open-newtab") to edit the log column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/kEeUR/) to edit the log column 2D chart.
 
 ## Log Line 2D Chart
 
 Now, let's create a log line 2D chart that compares the store footfalls with the online visits for one year. To render a log line 2D chart, change the value of the `type` attribute from `logmscolumn2d` to `logmsline`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=LogMSLine "@@open-newtab") page of log line 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=LogMSLine) page of log line 2D chart.
 
 The log line chart thus rendered looks like this:
 
 {% embed_all standard-charts-logarithmic-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/LSdTC/ "@@open-newtab") to add the log line 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/LSdTC/) to add the log line 2D chart.
 
 FusionCharts Suite XT allows you to configure the functional aspects of logarithmic charts. Now, let's customize the appearance and properties of the charts. 
 
@@ -85,7 +84,7 @@ A log column chart with the base set to 5 looks like this:
 
 {% embed_chart standard-charts-logarithmic-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/dfdc2f9p/ "@@open-newtab") to edit the log column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/dfdc2f9p/) to edit the log column 2D chart.
 
 ## Inverse Axis Support
 
@@ -104,7 +103,7 @@ A log column 2D chart rendered with an inverted y-axis looks like this:
 
 {% embed_chart standard-charts-logarithmic-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/rr92f6Lm/ "@@open-newtab") to edit the log column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/rr92f6Lm/) to edit the log column 2D chart.
 
 ## Custom Selection of Minor Divisional Lines
 
@@ -126,4 +125,4 @@ A log column chart with the number of minor divisional lines explicitly specifie
 
 {% embed_chart standard-charts-logarithmic-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8yx8gfaj/ "@@open-newtab") to edit the log column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/8yx8gfaj/) to edit the log column 2D chart.
