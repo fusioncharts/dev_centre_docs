@@ -1,9 +1,8 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    
-    width: '450',
-    height: '300',
+    width: '500',
+    height: '350',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -13,10 +12,9 @@
             "xAxisName": "Quarter",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "placeValuesInside": "0",
-            "rotateValues": "0",
+            "showValues": "1",
             "valueFont": "Arial",
-            "valueFontColor": "#6699cc",
+            "valueFontColor": "#5d62b5",
             "valueFontSize": "12",
             "valueFontBold": "1",
             "valueFontItalic": "0",
