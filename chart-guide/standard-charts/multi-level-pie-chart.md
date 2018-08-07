@@ -2,7 +2,6 @@
 title: Multi-level Pie Chart | FusionCharts
 description: The multi-level pie chart is a special type of chart that allows you to show symmetrical/asymmetrical tree structures in a consolidated pie-like structure
 heading: Multi-level Pie Chart
-breadcrumb: [["Home", "/"], ["Multi-level Pie Chart"]]
 ---
 
 > This chart type belongs to **PowerCharts XT**.
@@ -33,13 +32,13 @@ To create a multi-level pie chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=multilevelpie "@@open-newtab") page of multi-level pie chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=multilevelpie) page of multi-level pie chart.
 
 The multi-level pie chart thus rendered looks like this:
 
 {% embed_all standard-charts-multi-level-pie-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/njjra2r4/ "@@open-newtab") to edit the multi-level pie chart.
+Click [here](http://jsfiddle.net/fusioncharts/njjra2r4/) to edit the multi-level pie chart.
 
 Now, let's customize the appearance and properties of the multi-level pie chart.
 
@@ -67,7 +66,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-multi-level-pie-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/xcjhaz28/ "@@open-newtab") to edit the multi-level pie chart.
+Click [here](http://jsfiddle.net/fusioncharts/xcjhaz28/) to edit the multi-level pie chart.
 
 ## Configure inner radius
 
@@ -88,7 +87,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-multi-level-pie-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/yw2mf0rj/ "@@open-newtab") to edit the multi-level pie chart.
+Click [here](http://jsfiddle.net/fusioncharts/yw2mf0rj/) to edit the multi-level pie chart.
 
 ## Export Multi-level pie chart in CSV or XLS formats
 
@@ -109,4 +108,4 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-multi-level-pie-chart-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/pcmz12Lv/ "@@open-newtab") to edit the multi-level pie chart.
+Click [here](http://jsfiddle.net/fusioncharts/pcmz12Lv/) to edit the multi-level pie chart.

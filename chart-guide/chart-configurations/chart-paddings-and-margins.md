@@ -2,7 +2,6 @@
 title: Chart Paddings and Margins | FusionCharts
 description: FusionCharts Suite XT lets you manage the space around the canvas and within the chart by configuring chart paddings and margins.
 heading: Chart Paddings and Margins
-breadcrumb: [["Home", "/"], ["Chart Paddings and Margins"]]
 ---
 
 FusionCharts Suite XT lets you manage the space around the canvas and within the **chart** by configuring **chart paddings** and **margins**.
@@ -36,7 +35,7 @@ The chart will look like as shown in the image below:
 
 {% embed_chart chart-configurations-chart-paddings-and-margins-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/nzz8pwv4/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/nzz8pwv4/) to edit the above chart.
 
 ## Set Padding for Caption
 
@@ -54,7 +53,7 @@ The chart will look like as shown in the image below:
 
 {% embed_chart chart-configurations-chart-paddings-and-margins-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8jfb6ozx/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/8jfb6ozx/) to edit the above chart.
 
 ## Set Padding for Axes Names
 
@@ -79,7 +78,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-chart-paddings-and-margins-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/o618rzq3/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/o618rzq3/) to edit the above chart.
 
 ## Set Padding for Axis Values
 
@@ -98,7 +97,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-chart-paddings-and-margins-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/dq73doa6/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/dq73doa6/) to edit the above chart.
 
 ## Set Padding for Data Label
 
@@ -118,7 +117,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-chart-paddings-and-margins-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/xz890my7/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/xz890my7/) to edit the above chart.
 
 ## Set Padding for Data Value
 
@@ -138,7 +137,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-chart-paddings-and-margins-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/eozmehL3/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/eozmehL3/) to edit the above chart.
 
 ## Set Canvas Padding
 
@@ -158,4 +157,4 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-chart-paddings-and-margins-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/v0d46ngb/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/v0d46ngb/) to edit the above chart.

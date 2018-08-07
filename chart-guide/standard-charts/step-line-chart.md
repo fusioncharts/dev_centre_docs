@@ -2,7 +2,6 @@
 title: Step Line Chart | FusionCharts
 description: It is a specialized line chart which, unlike the usual line charts, does not use the shortest distance to connect two data points
 heading: Step Line Chart
-breadcrumb: [["Home", "/"], ["Step Line Chart"]]
 ---
 
 > This chart type belongs to **PowerCharts XT**.
@@ -25,7 +24,7 @@ To create a multi-series step line chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=msstepline "@@open-newtab") page of step-line chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=msstepline) page of step-line chart.
 
 A multi-series step line chart looks like this:
 
@@ -33,7 +32,7 @@ A multi-series step line chart looks like this:
 
 > The data structure above is similar to that of any multi-series chart in the FusionCharts Suite XT, except for the **type** attribute.
 
-Click [here](http://jsfiddle.net/fusioncharts/DeFSs/ "@@open-newtab") to edit the step line chart.
+Click [here](http://jsfiddle.net/fusioncharts/DeFSs/) to edit the step line chart.
 
 ## Hide the Vertical Lines
 
@@ -54,7 +53,7 @@ A step line chart rendered without the vertical joins looks like this:
 
 {% embed_chart standard-charts-step-line-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5dm09d7y/ "@@open-newtab") to edit the step line chart.
+Click [here](http://jsfiddle.net/fusioncharts/5dm09d7y/) to edit the step line chart.
 
 ## Use Forward Steps
 
@@ -73,6 +72,6 @@ A step line chart rendered with the forward progressive mode disabled looks like
 
 {% embed_chart standard-charts-step-line-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/sdhbwv98/ "@@open-newtab") to edit the step line chart.
+Click [here](http://jsfiddle.net/fusioncharts/sdhbwv98/) to edit the step line chart.
 
 > Compare this chart with the step line chart shown above and see the difference in how each is rendered.

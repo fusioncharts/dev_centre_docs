@@ -2,7 +2,6 @@
 title: Vertical Div Lines | FusionCharts
 description: Vertical div lines are vertical lines running through the canvas in a chart. These lines help in relating the data to its respective label
 heading: Vertical Div Lines
-breadcrumb: [["Home", "/"], ["Vertical Div Lines"]]
 ---
 
 Vertical divisional (or div) lines are vertical lines running through the canvas in a chart. They help in relating the data to its respective label when there a is large amount of data.
@@ -31,7 +30,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-vertical-div-lines-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/43ayL5uf/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/43ayL5uf/) to edit the above chart.
 
 ## Customize the Visuals of Vertical Divisional Lines 
 
@@ -60,7 +59,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-vertical-div-lines-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/vq1jvvze/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/vq1jvvze/) to edit the above chart.
 
 ### Dashed Divisional Lines
 
@@ -92,7 +91,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-vertical-div-lines-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/4d4z0htq/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/4d4z0htq/) to edit the above chart.
 
 ## Show Vertical Grid Bands
 
@@ -113,7 +112,7 @@ A line chart with alternate vertical grid bands enabled is shown below:
 
 {% embed_chart chart-configurations-vertical-div-lines-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/30wLwwmj/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/30wLwwmj/) to edit the above chart.
 
 ### Customize the Visuals Vertical Grid Bands
 
@@ -138,4 +137,4 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-vertical-div-lines-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/be3ap4du/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/be3ap4du/) to edit the above chart.

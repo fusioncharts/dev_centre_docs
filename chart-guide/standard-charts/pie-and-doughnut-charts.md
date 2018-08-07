@@ -2,7 +2,6 @@
 title: Pie and Doughnut Charts | FusionCharts
 description: This section talks about pie and doughtnut charts. Pie and doughnut charts are used to plot data that needs to be shown as a percent of the whole
 heading: Pie and Doughnut Charts
-breadcrumb: [["Home", "/"], ["Pie and Doughnut Charts"]]
 ---
 
 > These chart types belong to **FusionCharts XT**.
@@ -25,25 +24,25 @@ To create a pie 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pie2d "@@open-newtab") page of multi-series pie 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pie2d) page of multi-series pie 2D chart.
 
 The pie 2D chart for the above code looks like:
 
 {% embed_all standard-charts-pie-and-doughnut-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/hLhjhft8/ "@@open-newtab") to edit the pie 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/hLhjhft8/) to edit the pie 2D chart.
 
 ## Pie 3D Chart
 
 To render a pie chart in 3D, change the value of the `type` attribute from `pie2D` to `pie3D`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pie3d "@@open-newtab") page of multi-series pie 3D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pie3d) page of multi-series pie 3D chart.
 
 A pie chart in 3D looks like :
 
 {% embed_all standard-charts-pie-and-doughnut-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/uq2muq97/ "@@open-newtab") to edit the pie 3D chart.
+Click [here](http://jsfiddle.net/fusioncharts/uq2muq97/) to edit the pie 3D chart.
 
 ## Doughnut 2D Chart
 
@@ -53,25 +52,25 @@ Let's create our first doughnut 2D chart showcasing the same use case for the pi
 
 To create a doughnut 2D chart, set the `type` attribute to `doughnut2d`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=doughnut2d "@@open-newtab") page of multi-series doughnut 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=doughnut2d) page of multi-series doughnut 2D chart.
 
 The doughnut 2D chart for the above code looks like:
 
 {% embed_all standard-charts-pie-and-doughnut-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/wYj95/ "@@open-newtab") to edit the doughnut 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/wYj95/) to edit the doughnut 2D chart.
 
 ## Doughnut 3D Chart
 
 To render a doughnut chart in 3D, change the value of the `type` attribute from `doughnut2D` to `doughnut3D`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=doughnut3d "@@open-newtab") page of multi-series doughnut 3D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=doughnut3d) page of multi-series doughnut 3D chart.
 
 A doughnut chart in 3D looks like :
 
 {% embed_all standard-charts-pie-and-doughnut-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/wYj95/2965/ "@@open-newtab") to edit the doughnut 3D chart.
+Click [here](https://jsfiddle.net/fusioncharts/wYj95/) to edit the doughnut 3D chart.
 
 Now, let's customize the appearance and properties of pie and doughnut charts.
 
@@ -94,7 +93,7 @@ A pie chart configured to animate in the clockwise direction is shown below.
 
 ![Pie chart]({% site.baseurl %}/gif/standard-charts-pie-gif-1.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/g4bdb3f2/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/g4bdb3f2/) to edit the above chart.
 
 ## Show Percent Values and Actual Values
 
@@ -123,7 +122,7 @@ A pie2D chart configured to show percent values on the chart looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/hLhjhft8/ "@@open-newtab") to edit the pie 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/hLhjhft8/) to edit the pie 2D chart.
 
 ## Customize the Center Label for a Doughnut Chart
 
@@ -150,7 +149,7 @@ A doughnut chart with the center label customized looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/wYj95/ "@@open-newtab") to edit the doughnut 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/wYj95/) to edit the doughnut 2D chart.
 
 ## Enable Single-Slice Slicing
 
@@ -172,7 +171,7 @@ A doughnut chart with single-slicing enabled looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/jg4k7eny/ "@@open-newtab") to edit the doughnut 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/jg4k7eny/) to edit the doughnut 2D chart.
 
 ## Disable Smart Labels and Lines
 
@@ -194,7 +193,7 @@ A pie chart with smart labels disabled looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/tom7289j/ "@@open-newtab") to edit the pie 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/tom7289j/) to edit the pie 2D chart.
 
 > If smart labels are disabled then, in case of a large number of labels, the labels might overlap each other.
 
@@ -227,7 +226,7 @@ A pie chart with the cosmetic properties of smart lines customized looks like th
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5xoz8qh1/ "@@open-newtab") to edit the pie 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/5xoz8qh1/) to edit the pie 2D chart.
 
 ## Configuring the Label Distance and Clearance
 
@@ -255,7 +254,7 @@ Refer to the code given below:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/dmyqomdp/ "@@open-newtab") to edit the pie 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/dmyqomdp/) to edit the pie 2D chart.
 
 ## Skip Overlap Labels
 
@@ -291,7 +290,7 @@ A pie chart with the outer radius customized looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/rds15mvs/ "@@open-newtab") to edit the pie 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/rds15mvs/) to edit the pie 2D chart.
 
 ## Set the Starting Angle
 
@@ -311,7 +310,7 @@ A pie chart with the starting angle set to 45° looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-13.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/fnpr73jw/ "@@open-newtab") to edit the pie 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/fnpr73jw/) to edit the pie 2D chart.
 
 ## Slice a Pie/Doughnut
 
@@ -333,7 +332,7 @@ A pie chart rendered with one slice sliced-out looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-14.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/mcozko5a/ "@@open-newtab") to edit the pie 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/mcozko5a/) to edit the pie 2D chart.
 
 ## Configure the Slicing Distance
 
@@ -353,7 +352,7 @@ A chart with the slicing distance configured looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-15.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/c5oybzc2/ "@@open-newtab") to edit the pie 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/c5oybzc2/) to edit the pie 2D chart.
 
 ## Configure the Bevel Effect
 
@@ -375,6 +374,6 @@ A pie chart configured for the bevel effect looks like this:
 
 {% embed_chart standard-charts-pie-and-doughnut-charts-example-16.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/n0xz9x8h/ "@@open-newtab") to edit the pie 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/n0xz9x8h/) to edit the pie 2D chart.
 
 > For all the samples shown above, if you want to see how each attribute works for the doughnut chart, just change the value of the **type** attribute from **pie2D**/**pie3D** to **doughnut2D**/**doughnut3D**

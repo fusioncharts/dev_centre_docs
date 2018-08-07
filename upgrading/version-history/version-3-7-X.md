@@ -1,13 +1,24 @@
 ---
-title: Version 3.7.0 | FusionCharts
-description: This section talks about the new features, improvements and fixes for v3.7.0.
-heading: Version 3.7.0
-breadcrumb: [["Home", "/"], ["Change Log"]]
+title: Version 3.7.x | FusionCharts
+description: This section talks about the new features, improvements and fixes for v3.7.x.
+heading: Version 3.7.x
 ---
 
-#### 25th March, 2015
+<h2 class="sub-heading">Version 3.7.1</h2>
+22nd May, 2015
 
-## New Features
+<h4 class="sub-heading">Fixes</h4>
+
+Latest version of Firefox (37.0.1) introduced two bugs which were fixed in this release:
+
+* Data plot border in column 2D charts is now visible.
+
+* Line segments in all line and area-based charts are now visible.
+
+<h2>Version 3.7.0</h2>
+25th March, 2015
+
+<h4 class="sub-heading">New Features</h4>
 
 * Chart loading messages can now include images, instead of just plain text.
 
@@ -17,7 +28,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * Peak data can be selectively shown on the first render of a zoom-line chart.
 
-## Improvements
+<h4>Improvements</h4>
 
 * Text rendering for Right To Left (RTL) text improved.
 
@@ -29,7 +40,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
 * Divisional lines (on the axes) /tick marks (on gauge scales) are now visible when the difference between user-specified limits is a prime number.
 
-## Fixes
+<h4>Fixes</h4>
 
 * Spline charts now don't spill out of the canvas for certain curve characteristics.
 

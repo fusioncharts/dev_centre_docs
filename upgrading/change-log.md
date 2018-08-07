@@ -1,13 +1,14 @@
 ---
 title: Changelog | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
-heading: Changelog
-breadcrumb: [["Home", "/"], ["Change Log"]]
+heading: Version 3.13.0
 ---
+
+<p class="release-date"> 3rd August, 2018 </p>
 
 ## New Features
 
-* FusionCharts Suite XT v3.13.0 introduces two new chart types: **[Overlapped column]({% site.baseurl %}/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-column-d-chart-1 '@@open-newtab')** chart and **[Overlapped bar]({% site.baseurl %}/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-bar-d-chart-2 '@@open-newtab')** chart.
+* FusionCharts Suite XT v3.13.0 introduces two new chart types: **[Overlapped column]({% site.baseurl %}/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-column-d-chart-1)** chart and **[Overlapped bar]({% site.baseurl %}/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-bar-d-chart-2)** chart.
 
 * Spline and Spline Area charts are now part of both FusionCharts XT and PowerCharts XT. 
 
@@ -37,7 +38,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 * `Angular 2` and `Angular 4` plugins have been renamed to `Angular-FusionCharts`.
 * The folder structure of the download package is modified. A new folder as `integrations` is added which contains all the **client-side** and **server-side** tech stacks. For more details click [here]({% site.baseurl %}/upgrading/changed-behavior#updated-fusioncharts-suite-xt-download-package-5). 
 
-* For dual y-axis charts, the secondary data plots now overlaps the primary data plots if `renderAs` attribute is set as column. If you would like the old behavior, click [here]({% site.baseurl %}/upgrading/changed-behavior#secondary-data-plots-overlap-primary-data-plots-3 '@@open-newtab') to know more.
+* For dual y-axis charts, the secondary data plots now overlaps the primary data plots if `renderAs` attribute is set as column. If you would like the old behavior, click [here]({% site.baseurl %}/upgrading/changed-behavior#secondary-data-plots-overlap-primary-data-plots-3) to know more.
 
 * In order to free chart area, the restore button in select-scatter and drag-able chart has been moved to [options menu]({% site.baseurl %}/chart-guide/standard-charts/drag-able-charts#dragable-column-d-chart-1). The list of attributes which have been added are as follows:
 
@@ -49,7 +50,7 @@ breadcrumb: [["Home", "/"], ["Change Log"]]
 
     * [restoreText]({% site.baseurl %}/chart-attributes/?chart=dragcolumn2d&attribute=chart_restoretext)
 
-* Data plots in the [inverse chart]({% site.baseurl %}/chart-guide/standard-charts/inverse-y-axis-chart) will now appear from the top of the canvas. If you would like the old behavior, click [here]({% site.baseurl %}/upgrading/changed-behavior#inversed-data-plot-2 '@@open-newtab') to know more.
+* Data plots in the [inverse chart]({% site.baseurl %}/chart-guide/standard-charts/inverse-y-axis-chart) will now appear from the top of the canvas. If you would like the old behavior, click [here]({% site.baseurl %}/upgrading/changed-behavior#inversed-data-plot-2) to know more.
 
 * The hyphen ( - ) character is now supported in the parameter of the JavaScript function of `link` attribute.
 

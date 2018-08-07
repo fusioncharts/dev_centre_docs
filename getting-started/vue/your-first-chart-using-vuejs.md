@@ -7,11 +7,11 @@ chartPresent: false
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps, and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and the `Vue-FusionCharts` component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/vue/your-first-chart-using-vuejs#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/vue/your-first-chart-using-vuejs#create-your-first-gauge-6) and a [map]({% site.baseurl %}/getting-started/vue/your-first-chart-using-vuejs#create-your-first-map-9).
 
-Before going through this article, [install]({% site.baseurl %}/getting-started/vue/install-using-vuejs '@@open-newtab') the `vue-fusioncharts` plugin, if you haven’t installed it already.
+Before going through this article, [install]({% site.baseurl %}/getting-started/vue/install-using-vuejs) the `vue-fusioncharts` plugin, if you haven’t installed it already.
 
 ## Create your first chart
 
-In this section, we will create a chart using `vue-fusioncharts`. Let's create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab').
+In this section, we will create a chart using `vue-fusioncharts`. Let's create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/list-of-charts).
 
 To create charts, the `vue-fusioncharts` component can be passed as part of another VueJs component.
 
@@ -36,7 +36,7 @@ China|30|
 
 It's time to convert it into JSON format, as FusionCharts accepts data in either JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
 
-> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts '@@open-newtab'), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts), etc.
 
 ```javascript
 {
@@ -97,7 +97,7 @@ Functional attributes let you control a variety of functional elements on the ch
 
 #### Cosmetic Attributes
 
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics, no cosmetic attributes are used in this sample. For the detailed list of cosmetic attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab').
+Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics, no cosmetic attributes are used in this sample. For the detailed list of cosmetic attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d).
 
 ### Create an instance of the chart
 
@@ -178,11 +178,11 @@ The HTML template of the above sample is shown below:
 
 That's it! When you run this HTML page now, you should see a chart representing your data.
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d '@@open-newtab') (the keys in the `dataSource` object) for a Column 2D chart.
+See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d) (the keys in the `dataSource` object) for a Column 2D chart.
 
 In the JavaScript code, execution of `const app = new Vue({ })` creates a new Vue instance called **app**. 
 
-Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab'), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d '@@open-newtab') for different charts.
+Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/list-of-charts), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d) for different charts.
 
 ## Create your first gauge
 
@@ -310,7 +310,7 @@ The HTML template for the above sample is:
 </div>
 ```
 
-See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge '@@open-newtab') for an angular gauge.
+See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge) for an angular gauge.
 
 ## Create your first map
 
@@ -335,7 +335,7 @@ However, when you convert the data into a format supported by FusionCharts, the 
 
 For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
 
-We have a detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
+We have a detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
 
 
 ### Convert tabular data into JSON format
@@ -494,7 +494,7 @@ The HTML template for the above sample is:
 </div>
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference '@@open-newtab') (the keys in the `dataSource` object) for the **World** map. The respective `ids` can be found [here]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab').
+See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference) (the keys in the `dataSource` object) for the **World** map. The respective `ids` can be found [here]({% site.baseurl %}/maps/spec-sheets/world).
 
 ## Problem rendering the chart?
 

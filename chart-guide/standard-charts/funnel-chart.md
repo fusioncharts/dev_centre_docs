@@ -2,7 +2,6 @@
 title: Funnel Chart | FusionCharts
 description: A funnel chart is used to plot streamlined data. For example, it can be used to plot the sales data for a sales pipeline analysis.
 heading: Funnel Chart
-breadcrumb: [["Home", "/dev"], ["Funnel Chart"]]
 ---
 
 > These chart types belong to **FusionWidgets XT**.
@@ -70,7 +69,7 @@ A streamline funnel chart to show the purchase-conversion analysis looks like th
 
 {% embed_all standard-charts-funnel-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8sJdx/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/8sJdx/) to edit the above chart.
 
 With FusionCharts Suite XT, you can configure several cosmetic and functional properties for the funnel chart.
 
@@ -108,7 +107,7 @@ The chart will look like the one given below:
 
 {% embed_chart standard-charts-funnel-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/4JfYt/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/4JfYt/) to edit the above chart.
 
 ## Show labels at the center of the chart
 
@@ -131,7 +130,7 @@ The chart will look like the one given below:
 
 {% embed_chart standard-charts-funnel-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5rV6H/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/5rV6H/) to edit the above chart.
 
 ## Show Labels in the Legend
 
@@ -156,7 +155,7 @@ The chart will look like the one given below:
 
 {% embed_chart standard-charts-funnel-chart-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/mmxwek55/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/mmxwek55/) to edit the above chart.
 
 ## Configure the position of the legend box
 
@@ -178,7 +177,7 @@ The chart will look like the one given below:
 
 {% embed_chart standard-charts-funnel-chart-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6wjnfz2m/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/6wjnfz2m/) to edit the above chart.
 
 ## Draw Filled Funnel Slices (in 3D Mode)
 
@@ -198,7 +197,7 @@ The chart will look like the one given below:
 
 {% embed_chart standard-charts-funnel-chart-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/rjqgfxwf/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/rjqgfxwf/) to edit the above chart.
 
 ## Draw all slices with the same slant angle
 
@@ -217,7 +216,7 @@ The chart will look like the one given below:
 
 {% embed_chart standard-charts-funnel-chart-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7vtkkb4n/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/7vtkkb4n/) to edit the above chart.
 
 ## Show values as percentage of the previous value
 
@@ -241,7 +240,7 @@ The chart will look like the one given below:
 
 {% embed_chart standard-charts-funnel-chart-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/zh4w2z7r/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/zh4w2z7r/) to edit the above chart.
 
 ## Slice Out Individual Funnel Slices
 
@@ -268,7 +267,7 @@ The chart will look like the one given below:
 
 {% embed_chart standard-charts-funnel-chart-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/vknfqok4/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/vknfqok4/) to edit the above chart.
 
 ## Configure Hover Effects
 
@@ -308,4 +307,4 @@ The chart with hover effects enabled will look like the following:
 
 ![funnel]({% site.baseurl %}/gif/standard-charts-funnel-gif-1.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/ecrjq9jz/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ecrjq9jz/) to edit the above chart.

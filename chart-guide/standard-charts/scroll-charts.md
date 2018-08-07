@@ -2,7 +2,6 @@
 title: Scroll Chart | FusionCharts
 description: Charts with scrolls allows you to plot large quantities of data. They are also used to avoid cluttering of plots.
 heading: Scroll Chart
-breadcrumb: [["Home", "/"], ["Scroll Chart"]]
 ---
 
 > These chart types belong to **FusionCharts XT**.
@@ -39,37 +38,37 @@ To create a scroll column 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollcolumn2d "@@open-newtab") page of scroll column 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollcolumn2d) page of scroll column 2D chart.
 
 The scroll column 2D chart for the above code looks like:
 
 {% embed_all standard-charts-scroll-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/nAa33/ "@@open-newtab") to edit the scroll column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/nAa33/) to edit the scroll column 2D chart.
 
 ## Scroll Line 2D Chart
 
 Now, let's create a scroll line 2D chart. To render a scroll line chart in 2D, change the value of the `type` attribute from `scrollColumn2d` to `scrollline2d`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollline2d "@@open-newtab") page of scroll line 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollline2d) page of scroll line 2D chart.
 
 A single-series scroll line 2D chart looks like:
 
 {% embed_all standard-charts-scroll-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Pm3nf/ "@@open-newtab") to edit the scroll line 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/Pm3nf/) to edit the scroll line 2D chart.
 
 ## Scroll Area 2D Chart
 
 Let's create the scroll area 2D chart. To render a scroll area chart in 2D, change the value of the `type` attribute from `scrollline2d` to `scrollarea2d`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollarea2d "@@open-newtab") page of scroll area 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollarea2d) page of scroll area 2D chart.
 
 A single-series scroll area 2D chart looks like:
 
 {% embed_all standard-charts-scroll-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7neLV/ "@@open-newtab") to edit the scroll area 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/7neLV/) to edit the scroll area 2D chart.
 
 ## Scroll Stacked Column 2D Chart
 
@@ -77,13 +76,13 @@ Stacked charts are the multi-series charts with the plot datasets on top of each
 
  To render a scroll stacked column chart in 2D, change the value of the `type` attribute to `scrollstackedcolumn2d`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollstackedcolumn2d "@@open-newtab") page of scroll stacked column 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollstackedcolumn2d) page of scroll stacked column 2D chart.
 
 A scroll stacked column 2D chart looks like:
 
 {% embed_all standard-charts-scroll-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/t3SKj/ "@@open-newtab") to edit the scroll stacked column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/t3SKj/) to edit the scroll stacked column 2D chart.
 
 ## Scroll Combination 2D Chart
 
@@ -91,25 +90,25 @@ Now, we will create a scroll combination 2D chart to plot the revenue and the pr
 
 To render a scroll combination 2D chart, change the value of the `type` attribute to `scrollcombi2d`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollcombi2d "@@open-newtab") page of scroll combination 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollcombi2d) page of scroll combination 2D chart.
 
 A scroll combination 2D chart looks like:
 
 {% embed_all standard-charts-scroll-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6Y3jt/ "@@open-newtab") to edit the scroll stacked column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/6Y3jt/) to edit the scroll stacked column 2D chart.
 
 ## Scroll Combination 2D Dual Y-axis Chart
 
 To create a scroll combination 2D chart with a dual y-axis, change the value of the `type` attribute to `scrollcombidy2d`. Here we will plot the revenue and the profit earned, in dollars, and the profit percent for FY 2017-FY 2018.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollcombidy2d "@@open-newtab") page of croll combination 2D dual y-axis chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes/?chart=scrollcombidy2d) page of croll combination 2D dual y-axis chart.
 
 The scroll combination 2D chart (dual Y) chart thus created looks like this:
 
 {% embed_all standard-charts-scroll-charts-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/cVXNg/ "@@open-newtab") to edit the scroll combination 2D chart with a dual y-axis.
+Click [here](http://jsfiddle.net/fusioncharts/cVXNg/) to edit the scroll combination 2D chart with a dual y-axis.
 
 Now, let's customize the appearance and properties of the charts. 
 
@@ -131,7 +130,7 @@ A scroll chart with the number of visible data plots set to twelve looks like th
 
 {% embed_chart standard-charts-scroll-charts-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/15tzb20e/ "@@open-newtab") to edit the scroll column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/15tzb20e/) to edit the scroll column 2D chart.
 
 ## Render a Scroll Bar with Gradient Effect
 
@@ -150,7 +149,7 @@ A scroll chart with a gradient scroll bar looks like this:
 
 {% embed_chart standard-charts-scroll-charts-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ssfngtce/ "@@open-newtab") to edit the scroll column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/ssfngtce/) to edit the scroll column 2D chart.
 
 ## Customizing the Scroll Bar
 
@@ -178,4 +177,4 @@ A scroll chart with the cosmetic properties of the scroll bar customized looks l
 
 {% embed_chart standard-charts-scroll-charts-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/guawyxge/ "@@open-newtab") to edit the scroll column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/guawyxge/) to edit the scroll column 2D chart.

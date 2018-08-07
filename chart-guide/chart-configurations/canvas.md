@@ -2,7 +2,6 @@
 title: Canvas | FusionCharts
 description: With FusionCharts Suite XT, you can customize the canvas area of your chart. Chart canvas refers to the area in which the chart data is plotted.
 heading: Canvas
-breadcrumb: [["Home", "/"], ["Canvas"]]
 ---
 
 Chart canvas refers to the area in which the chart data is plotted, excluding the area where titles, legends, and axis names are rendered.
@@ -11,7 +10,7 @@ The blue colored area shown in the chart below is the canvas area:
 
 {% embed_chart chart-configurations-canvas-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ssaacvmj/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ssaacvmj/) to edit the above chart.
 
 We will learn how to customize different properties of the canvas.
 
@@ -41,7 +40,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-canvas-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/qx1djybc/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/qx1djybc/) to edit the above chart.
 
 ## Hide Canvas Border
 
@@ -61,7 +60,7 @@ The chart with canvas border will look like as shown below:
 
 {% embed_chart chart-configurations-canvas-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/wt2r9cox/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/wt2r9cox/) to edit the above chart.
 
 ## Customize Canvas Border
 
@@ -89,7 +88,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-canvas-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ju5dvkoh/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ju5dvkoh/) to edit the above chart.
 
 ## Use Gradient Fill
 
@@ -120,7 +119,7 @@ Below is a sample chart with a gradient filled chart canvas:
 
 {% embed_chart chart-configurations-canvas-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/yngu2v81/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/yngu2v81/) to edit the above chart.
 
 ## Configure the 3D Effect
 
@@ -155,4 +154,4 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-canvas-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/xmtdue42/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/xmtdue42/) to edit the above chart.

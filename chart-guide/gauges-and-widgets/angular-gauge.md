@@ -14,7 +14,7 @@ A simple angular gauge looks like the following:
 
 {% embed_all gauges-and-widgets-angular-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/qaemety9/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/qaemety9/) to edit the above chart.
 
 As you can see in the example given above, you can create a gauge by defining the minimum and maximum values (referred to as lower limit and upper limit). Within that scale, you can create various qualitative ranges (color ranges) to classify your data. The purpose is to classify a value as belonging to a predetermined range. For example, you may define a range called "Best" that consists of values between 60 and 100. Or you might create a range called "Weak" that consists of values between 30 and 60. For each range, you can define a color, to visually distinguish the ranges from each other.
 
@@ -58,7 +58,7 @@ Take a look at a standard angular gauge enlisting the various basic components:
 
 {% embed_all gauges-and-widgets-angular-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/77QP6/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/77QP6/) to edit the above chart.
 
 ## Simple angular gauge example
 
@@ -150,7 +150,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/qaemety9/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/qaemety9/) to edit the above chart.
 
 The angular gauge chart in the FusionCharts Suite XT offers configuration options that you can use to improve the visual representation of the gauge.
 
@@ -179,7 +179,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/577w5/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/577w5/) to edit the above chart.
 
 ## Show/hide the gauge border
 
@@ -199,7 +199,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/qmfofgwk/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/qmfofgwk/) to edit the above chart.
 
 > In the above sample, the shadow has been hidden through the use of the `fusion` theme. Shadows might interfere with the border color.
 
@@ -232,7 +232,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ACBTf/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ACBTf/) to edit the above chart.
 
 ## Configure the entire border for the gauge at once
 
@@ -260,7 +260,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/B2g8Q/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/B2g8Q/) to edit the above chart.
 
 ## Set the border color as a derivative of the fill color
 
@@ -280,7 +280,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/PwP4L/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/PwP4L/) to edit the above chart.
 
 ## Configure outer and inner radius
 
@@ -305,7 +305,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/44E7B/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/44E7B/) to edit the above chart.
 
 ## Configure pivot properties
 
@@ -329,7 +329,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/C2rW2/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/C2rW2/) to edit the above chart.
 
 ## Configure pivot border cosmetics
 
@@ -354,7 +354,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/hqC87/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/hqC87/) to edit the above chart.
 
 ## Configure pivot fill cosmetics
 
@@ -379,7 +379,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/56cXa/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/56cXa/) to edit the above chart.
 
 ## Configure the pivot fill color with a gradient fill mix
 
@@ -405,7 +405,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-13.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8MzDD/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/8MzDD/) to edit the above chart.
 
 ## Configure the pivot fill with a linear gradient
 
@@ -425,7 +425,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-14.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/neAZZ/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/neAZZ/) to edit the above chart.
 
 ## Configure dials
 
@@ -469,7 +469,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-15.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6FXdq/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/6FXdq/) to edit the above chart.
 
 ## Configure the Background
 
@@ -499,7 +499,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-16.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/VbvM4/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/VbvM4/) to edit the above chart.
 
 ## Configure the radius and the rear extension
 
@@ -534,7 +534,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-17.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/B9Q68/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/B9Q68/) to edit the above chart.
 
 ## Configure base and top widths
 
@@ -569,7 +569,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-18.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/E2rz2/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/E2rz2/) to edit the above chart.
 
 ## Configure hover effects
 
@@ -616,7 +616,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-51.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/jJM7e/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/jJM7e/) to edit the above chart.
 
 ## Add custom tool-text for the dial
 
@@ -646,7 +646,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-49.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/zc72rux0/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/zc72rux0/) to edit the above chart.
 
 > Note: You can only get a gauge with configured tooltip text (like the one shown above) when the gauge does not receive real time updates. In case of real time updates, the data value will change at specific intervals of time and, therefore, you will need to update the tooltip text accordingly. You can use macros to do this.
 
@@ -675,11 +675,11 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-50.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/RXe47/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/RXe47/) to edit the above chart.
 
 The above sample replaces the hard-coded value with the macro $value. Now, whenever you roll the mouse pointer over the dial, the current value of the dial will be displayed along with the text set in the `tooltext` attribute of the `dial` element.
 
-To see a detailed list of available macros, please refer to [this]({% site.baseurl %}/chart-guide/chart-configurations/tool-tips#introduction-to-macros-4 "@@open-newtab") link.
+To see a detailed list of available macros, please refer to [this]({% site.baseurl %}/chart-guide/chart-configurations/tool-tips#introduction-to-macros-4) link.
 
 ## Add multiple dials on the gauge
 
@@ -722,7 +722,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-19.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7L2PT/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/7L2PT/) to edit the above chart.
 
 ## Customize dial values
 
@@ -827,7 +827,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-20.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6qz8g6w9/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/6qz8g6w9/) to edit the above chart.
 
 ## Update dials using id
 
@@ -876,7 +876,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-21.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/mT4uH/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/mT4uH/) to edit the above chart.
 
 ## Place tick marks and tick values inside gauge
 
@@ -901,7 +901,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-22.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/GySkt/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/GySkt/) to edit the above chart.
 
 ## Configure the number of major and minor tick marks
 
@@ -926,7 +926,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-23.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/sq4RC/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/sq4RC/) to edit the above chart.
 
 ### Configure cosmetics for major and minor tick marks
 
@@ -969,7 +969,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-24.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/S89ML/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/S89ML/) to edit the above chart.
 
 ## Show every nth tick value
 
@@ -989,7 +989,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-25.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/n3qt2/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/n3qt2/) to edit the above chart.
 
 ## Set decimals for tick values
 
@@ -1014,7 +1014,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-26.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/cPR9z/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/cPR9z/) to edit the above chart.
 
 ## Set tick value distance
 
@@ -1042,7 +1042,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-27.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/hh646/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/hh646/) to edit the above chart.
 
 ## Add trend points
 
@@ -1112,7 +1112,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-28.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/M5u7c/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/M5u7c/) to edit the above chart.
 
 ## Show trend markers
 
@@ -1162,7 +1162,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-29.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/MEtf5/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/MEtf5/) to edit the above chart.
 
 ## Create a trend arc
 
@@ -1202,7 +1202,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-30.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/CLRvS/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/CLRvS/) to edit the above chart.
 
 ## Customize a trend arc
 
@@ -1255,7 +1255,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-31.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/dc4kX/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/dc4kX/) to edit the above chart.
 
 ## Configure angles and origins
 
@@ -1300,7 +1300,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-32.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/gfp1wve3/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/gfp1wve3/) to edit the above chart.
 
 > When specifying the start and end angles for gauges, always make sure the difference between start and end angle is not more than 360 degrees. Otherwise, the gauge will not behave as intended.
 
@@ -1323,7 +1323,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-33.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/dh2h5drx/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/dh2h5drx/) to edit the above chart.
 
 > Along with positioning the origins, a JavaScript angular gauge also scales itself to best-fit within the available space.
 
@@ -1345,7 +1345,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-34.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/o4cfv31a/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/o4cfv31a/) to edit the above chart.
 
 > In the above example, only the `gaugeOriginY` attribute has been modified, to shift the origin upward, you can do similar adjustments with `gaugeOriginX` also.
 
@@ -1398,7 +1398,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-35.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/wLLzwssf/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/wLLzwssf/) to edit the above chart.
 
 In the above example, you can see the chart's size set in percentage and the `manageResize` attribute set to `1` (true) in the chart object of the JSON data. These make the gauge capable of re-calculating the space available and adjusting to its new surroundings, whenever you modify the dimensions of the parent container.
 
@@ -1408,7 +1408,7 @@ Two input fields have been rendered with the gauge to enter the target width and
 
 ## Dynamically resize gauges with manual values for elements
 
-You can configure the various functional and cosmetic properties of gauge elements by manually specifying values for each, in order to dynamically resize them. For example, you can configure the gauge [radius]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#configure-dials-22 "@@open-newtab"), the [dial radius]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#configure-dials-22 "@@open-newtab"), the [tick value distance]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#showhide-tick-marks-and-tick-values-32 "@@open-newtab"), the [gauge origin]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#configure-angles-and-origins-43 "@@open-newtab"), etc. Ideally, you should set these values based on specific width and height dimensions for the gauge. You can name these dimensions as the original width and the original height of the gauge.
+You can configure the various functional and cosmetic properties of gauge elements by manually specifying values for each, in order to dynamically resize them. For example, you can configure the gauge [radius]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#configure-dials-22), the [dial radius]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#configure-dials-22), the [tick value distance]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#showhide-tick-marks-and-tick-values-32), the [gauge origin]({% site.baseurl %}/chart-guide/gauges-and-widgets/angular-gauge#configure-angles-and-origins-43), etc. Ideally, you should set these values based on specific width and height dimensions for the gauge. You can name these dimensions as the original width and the original height of the gauge.
 
 By default, a gauge set with manually-specified positions and size, when rendered initially, draws itself with all the elements based on the values provided in the JSON/XML. It does not scale its coordinates and other gauge elements. When you resize the gauge, it scales the manually specified values or coordinates based on the dimensions of the initially rendered gauge, that is, the width and the height of the gauge when rendered for the first time. Thus, scaling of the various manually configured elements of a gauge will vary and may create problems when the initial dimensions of the gauge are different from the original width and height of the gauge.
 
@@ -1521,7 +1521,7 @@ An angular gauge configured to do this is shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-48.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/k6he33en/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/k6he33en/) to edit the above chart.
 
 The container element for `alert` is `alerts`, which is a child of the `chart` element. `alert` is an array of objects where every object defines a threshold range (alert range). One of the following actions can be specified with any alert range:
 
@@ -1601,7 +1601,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-37.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/aesajvL0/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/aesajvL0/) to edit the above chart.
 
 ## Create an editable angular gauge
 
@@ -1625,7 +1625,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-38.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6benn62w/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/6benn62w/) to edit the above chart.
 
 To make only one of the dials editable, refer to the code below:
 
@@ -1657,7 +1657,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-39.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/zdf4kym8/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/zdf4kym8/) to edit the above chart.
 
 ## Create an editable gauge in the earlier versions
 
@@ -1766,7 +1766,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-40.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/quqyc6va/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/quqyc6va/) to edit the above chart.
 
 In the above code, note that the value of the `dataStreamURL` attribute is set to `[https://static.fusioncharts.com/sampledata/php/serverLoad.php](https://static.fusioncharts.com/sampledata/php/serverLoad.php)` and the `refreshInterval` attribute to `10`. This means after every 10 seconds the chart will fetch data from the URL and update the dials.
 
@@ -1870,7 +1870,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-41.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/vqef0be2/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/vqef0be2/) to edit the above chart.
 
 ## Configure events associated with real time updates
 
@@ -1960,7 +1960,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-42.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/bmpxxz4v/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/bmpxxz4v/) to edit the above chart.
 
 ## Troubleshoot problems with real time updates
 
@@ -2032,7 +2032,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-43.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/zqz1apsr/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/zqz1apsr/) to edit the above chart.
 
 > Note: In the above gauge, you will see a small icon menu appear at the bottom-left of the gauge. The message logger, which does not appear by default, appears when you click this icon and select the `Show Log` option from the menu rendered. To close the message logger window, click the close button in the top-right corner of the window or click anywhere outside the window.
 
@@ -2069,7 +2069,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-44.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6cr4u10t/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/6cr4u10t/) to edit the above chart.
 
 > The messages to be logged should be provided in the real time data stream and not in the JSON data. real time data stream refers to the data provided by the URL specified in the `dataStreamURL` attribute.
 
@@ -2098,7 +2098,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-angular-example-45.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/uvp6nLwb/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/uvp6nLwb/) to edit the above chart.
 
 ### Create messages with an external link
 
@@ -2154,7 +2154,7 @@ A real time angular gauge configured to handle messages using custom JavaScript 
 
 {% embed_chart gauges-and-widgets-angular-example-46.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8oz1e2tq/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/8oz1e2tq/) to edit the above chart.
 
 A simple implementation of the `myFunction` is as follows:
 
@@ -2184,7 +2184,7 @@ A real time angular gauge with its message logger configured using JavaScript AP
 
 {% embed_chart gauges-and-widgets-angular-example-47.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ng37L2qx/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ng37L2qx/) to edit the above chart.
 
 In order to manipulate the message logger using JavaScript API you need to get a reference of the gauge. Once you get the reference, you can use any of API methods on the logger of the gauge (provided you set it to `on`).
 

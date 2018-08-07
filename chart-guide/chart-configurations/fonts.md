@@ -2,7 +2,6 @@
 title: Configure Font Properties for a Chart | FusionCharts
 description: Font properties for a chart include the font family, font size, and font color for the text rendered inside and outside the chart canvas.
 heading: Fonts
-breadcrumb: [["Home", "/"], ["Fonts"]]
 ---
 
 Font properties include the font family, size, and color for the text rendered inside and outside the chart canvas. 
@@ -33,7 +32,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-fonts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/fyczLffy/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/fyczLffy/) to edit the above chart.
 
 ## Outside Canvas Base Font Group
 
@@ -60,6 +59,6 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-fonts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/61h06pfo/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/61h06pfo/) to edit the above chart.
 
 > Note that `outCanvasBaseFont` group overrides the setting of the `baseFont` group.

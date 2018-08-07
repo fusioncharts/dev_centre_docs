@@ -2,7 +2,6 @@
 title: Drag-able Charts | FusionCharts
 description: Drag-able charts are special types of charts that allow you to visually update data on the chart and understand how the estimated data values affect the whole chart.
 heading: Drag-able Charts
-breadcrumb: [["Home", "/"], ["Drag-able Charts"]]
 ---
 
 > These chart types belong to **PowerCharts XT**.
@@ -35,13 +34,13 @@ To create a drag-able column 2D chart follow the steps given below:
 
 * Set the `allowDrag` attribute to specify whether the data plots representing a dataset will be drag-able. Set this attribute to `0` to disable the data plots from being drag-able, and set it to `1` (default) to enable them to be drag-able. This attribute belongs to the `dataset` object and makes all data plots for a dataset drag-able.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=dragcolumn2d "@@open-newtab") page of drag-able column 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=dragcolumn2d) page of drag-able column 2D chart.
 
 The drag-able column 2D chart for the above code looks like:
 
 {% embed_all standard-charts-drag-able-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8JNRQ/ "@@open-newtab") to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/8JNRQ/) to edit the above drag-able chart.
 
 In the above chart, the data plots representing the estimated value are drag-able.
 
@@ -57,25 +56,25 @@ To render a drag-able line 2D chart, change the value of the `type` attribute fr
 
 This sample will showcase the quarterly sales for Apple and Samsung. The anchors will represent the sales estimates for Apple and Samsung for Q3 and Q4 are drag-able. Recall that in the above drag-able column 2D chart we have configured all the data plots for one dataset to be drag-able. In this chart, however, we have made only selected data points of all datasets drag-able.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=dragline "@@open-newtab") page of drag-able line 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=dragline) page of drag-able line 2D chart.
 
 A drag-able line 2D chart created to plot the quarterly sales for Apple and Samsung looks like:
 
 {% embed_all standard-charts-drag-able-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8Fq44/ "@@open-newtab") to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/8Fq44/) to edit the above drag-able chart.
 
 ## Drag-able Area 2D Chart
 
 To render a drag-able area 2D chart, change the value of the `type` attribute from `dragline` to `dragarea`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=dragarea "@@open-newtab") page of drag-able area 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=dragarea) page of drag-able area 2D chart.
 
 A drag-able area 2D chart thus created looks like:
 
 {% embed_all standard-charts-drag-able-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/2atfY/ "@@open-newtab") to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/2atfY/) to edit the above drag-able chart.
 
 Now, let's customize the appearance and properties of the charts. 
 
@@ -186,7 +185,7 @@ A drag-able area chart configured to manage chart limits using JavaScript API lo
 
 {% embed_chart standard-charts-drag-able-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/r8fgby9g/ "@@open-newtab") to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/r8fgby9g/) to edit the above drag-able chart.
 
 ## Snap to the Nearest Divisional Lines
 
@@ -218,7 +217,7 @@ A drag-able column chart configured for snapping to the nearest div interval loo
 
 {% embed_chart standard-charts-drag-able-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/oq5vqv7n/ "@@open-newtab") to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/oq5vqv7n/) to edit the above drag-able chart.
 
 ## Retrieve a Dataset
 
@@ -228,7 +227,7 @@ The chart retrieving datasets looks like this:
 
 {% embed_chart standard-charts-drag-able-charts-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/d6cLm0em/ "@@open-newtab") to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/d6cLm0em/) to edit the above drag-able chart.
 
 A drag-able column 2D chart can also be configured to retrieve a data in XML and CSV format. The function to retrieve them are:
 
@@ -246,7 +245,7 @@ A drag-able column chart configured to retrieve data using the `getDataWithID()`
 
 {% embed_chart standard-charts-drag-able-charts-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/cvcn499t/ "@@open-newtab") to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/cvcn499t/) to edit the above drag-able chart.
 
 The data returned by the `getDataWithID()` function is without any editing.
 
@@ -324,4 +323,4 @@ A drag-column chart configured to retrieve data using the `getData()` method loo
 
 {% embed_chart standard-charts-drag-able-charts-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/qzm79rsv/ "@@open-newtab") to edit the above drag-able chart.
+Click [here](http://jsfiddle.net/fusioncharts/qzm79rsv/) to edit the above drag-able chart.

@@ -2,7 +2,6 @@
 title: Anchors and Lines | FusionCharts
 description: Anchors help to identify the data point better in the chart. They also show a tooltip showing the data plot details when the mouse is hovered over them
 heading: Anchors and Lines
-breadcrumb: [["Home", "/"], ["Anchors and Lines"]]
 ---
 
 Each data point in a line/spline/area chart is represented by an anchor. Anchors help to identify the data point in the chart easily. Anchors show a tooltip showing the data plot details when the mouse is hovered over them and can be linked to other pages as well. In this article, we will discuss different configurations of the anchors.
@@ -25,7 +24,7 @@ A line chart with anchors hidden looks like as shown below:
 
 {% embed_chart chart-configurations-anchors-and-lines-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5tajR/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/5tajR/) to edit the above chart.
 
 ## Customize Anchor Properties
 
@@ -61,7 +60,7 @@ A line chart with customized anchors looks like as shown below:
 
 {% embed_chart chart-configurations-anchors-and-lines-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/QnFW2/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/QnFW2/) to edit the above chart.
 
 ## Customize Anchors for specific Data Points
 
@@ -98,7 +97,7 @@ A line chart with anchors of specific data points customized looks as below:
 
 {% embed_chart chart-configurations-anchors-and-lines-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/w9ZWt/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/w9ZWt/) to edit the above chart.
 
 ## Add External Images
 
@@ -172,4 +171,4 @@ A line chart with external images in the anchors looks as below:
 
 {% embed_chart chart-configurations-anchors-and-lines-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ZBZKS/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ZBZKS/) to edit the above chart.

@@ -2,7 +2,6 @@
 title: Zoom Scatter Chart | FusionCharts
 description: The  zoom-scatter chart is primarily used to find correlations between datasets. Correlations in the chart can be determined by visual patterns in the data.
 heading: Zoom Scatter Chart
-breadcrumb: [["Home", "/"], ["Zoom Scatter Chart"]]
 ---
 
 > This chart type belongs to **FusionCharts XT**.
@@ -37,13 +36,13 @@ Some of the attributes used to create a zoom scatter chart are:
 
 > The above attributes belong to the `data` object (child of the dataset object).
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=zoomscatter "@@open-newtab") page of zoom scatter chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=zoomscatter) page of zoom scatter chart.
 
 Take a look at the sample zoom-scatter chart shown below:
 
 {% embed_chart standard-charts-zoom-scatter-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/t1d4dmgp/ "@@open-newtab") to edit the zoom-scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/t1d4dmgp/) to edit the zoom-scatter chart.
 
 Drag the cursor over the chart to select and zoom into a subset of data points.
 
@@ -98,7 +97,7 @@ A zoom-scatter chart rendered with regression lines is shown below:
 
 {% embed_chart standard-charts-zoom-scatter-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/08jkhjn9/ "@@open-newtab") to edit the zoom scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/08jkhjn9/) to edit the zoom scatter chart.
 
 ### Modes of Regression
 
@@ -124,7 +123,7 @@ The chart will look like as shown below:
 
 {% embed_chart standard-charts-zoom-scatter-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/jm8rfp7h/ "@@open-newtab") to edit the zoom scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/jm8rfp7h/) to edit the zoom scatter chart.
 
 > The formulae used to draw the regression lines for both the modes are given below: 
 

@@ -2,7 +2,6 @@
 title: Pyramid Chart | FusionCharts
 description: Pyramid charts are used for comparison of data. This section indroduces some basics of pyramid chart with some of its silent features
 heading: Introduction to Pyramid Chart
-breadcrumb: [["Home", "/dev"], ["Pyramid Chart"]]
 ---
 
 > These chart types belong to **FusionWidgets XT**.
@@ -60,7 +59,7 @@ The Global Wealth Pyramid chart you get by using the above code will look like t
 
 {% embed_all standard-charts-pyramid-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/pktoL7o4/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/pktoL7o4/) to edit the above chart.
 
 You can configure several functional and cosmetic properties for pyramid charts.
 
@@ -98,7 +97,7 @@ The chart will look like the following:
 
 {% embed_all standard-charts-pyramid-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/oy87kg3f/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/oy87kg3f/) to edit the above chart.
 
 ## Show labels at the center of the chart
 
@@ -118,7 +117,7 @@ The chart will look like the following:
 
 {% embed_all standard-charts-pyramid-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6u7e72co/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/6u7e72co/) to edit the above chart.
 
 ## Show labels in the legend of the chart
 
@@ -143,7 +142,7 @@ The chart will look like the following:
 
 {% embed_all standard-charts-pyramid-chart-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/c9t3ya49/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/c9t3ya49/) to edit the above chart.
 
 ## Configure the position of the legend box
 
@@ -163,7 +162,7 @@ The chart will look like the following:
 
 {% embed_all standard-charts-pyramid-chart-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/cLah09x0/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/cLah09x0/) to edit the above chart.
 
 ## Show data values as percentage
 
@@ -183,7 +182,7 @@ The chart will look like the following:
 
 {% embed_all standard-charts-pyramid-chart-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Lj8x9scr/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/Lj8x9scr/) to edit the above chart.
 
 ## Slice Out Individual Pyramid Slices
 
@@ -203,7 +202,7 @@ The chart will look like the following:
 
 {% embed_all standard-charts-pyramid-chart-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/bwwct623/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/bwwct623/) to edit the above chart.
 
 ## Configure Hover Effects 
  
@@ -240,4 +239,4 @@ The chart will look like the following:
 
 ![pyramid]({% site.baseurl %}/gif/standard-charts-pyramid-gif-1.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/q9ujc5hd/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/q9ujc5hd/) to edit the above chart.

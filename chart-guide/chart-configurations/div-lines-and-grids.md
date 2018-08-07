@@ -2,7 +2,6 @@
 title: Div Lines and Grids | FusionCharts
 description: Divisional lines are horizontal lines running along the canvas enabling easier visual reference of plot values against the y-axis
 heading: Div Lines and Grids
-breadcrumb: [["Home", "/"], ["Div Lines and Grids"]]
 ---
 
 Divisional lines are horizontal lines running along the canvas. They enable easier visual reference of plot values against the y-axis and help compare data points. In scatter and bubble charts, there are additional vertical divisional lines for better visualization.
@@ -40,7 +39,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-div-lines-and-grids-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ovbtuvkk/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ovbtuvkk/) to edit the above chart.
 
 ## Customize the Display of Divisional Lines
 
@@ -68,7 +67,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-div-lines-and-grids-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/y3r1w0tk/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/y3r1w0tk/) to edit the above chart.
 
 ## Dashed Divisional Lines
 
@@ -96,7 +95,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-div-lines-and-grids-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5q05dmw1/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/5q05dmw1/) to edit the above chart.
 
 ## Customize Horizontal Grid Bands
 
@@ -120,7 +119,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-div-lines-and-grids-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/1buopbat/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/1buopbat/) to edit the above chart.
 
 ### Customize Horizontal Grid Bands
 
@@ -145,4 +144,4 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-div-lines-and-grids-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/fu4ajL43/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/fu4ajL43/) to edit the above chart.

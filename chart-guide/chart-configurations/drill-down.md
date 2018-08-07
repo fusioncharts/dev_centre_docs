@@ -2,7 +2,6 @@
 title: Drill-down Charts | FusionCharts
 description: Using FusionCharts Suite XT, you can create endless levels of drilldown. It has been kept very generic to accommodate all types of requirements.
 heading: Drill-down
-breadcrumb: [["Home", "/"], ["Drill-down Charts"]]
 ---
 
 You can use FusionCharts Suite XT to create drill-down charts. All charts (except for the Zoom line chart) support the drill-down interactivity for data elements - that is, for each chart type, the data plots in a chart (columns in column charts, pie slices in pie charts, etc.) can act as hot-spots. You can create endless levels of drill-down, based on your requirements. 
@@ -48,7 +47,7 @@ The chart when configured using above feature, looks like as shown below:
 
 {% embed_chart chart-configurations-drill-down-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/L7vLc9n2/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/L7vLc9n2/) to edit the above chart.
 
 > If you have special characters (**?**, **&**, etc.), in your link, make sure that your link is in the URL Encoded format. Every time you click a data plot, FusionCharts Suite XT decodes the link and invokes the URL. All server-side scripting languages provide a generic function to URL Encode any string - for example, the `server.URLEncode(strURL)` method in ASP and ASP.NET.
 
@@ -87,7 +86,7 @@ The chart when configured using above feature, looks like as shown below:
 
 {% embed_chart chart-configurations-drill-down-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/hs7rz3k1/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/hs7rz3k1/) to edit the above chart.
 
 Note that, internally, the chart decodes the URL that you set as the link. Before invoking the link, it again encodes the URL. If you pass multilingual characters via a URL or do not want this decode-encode mechanism to be handled by the chart, you can use the `unescapeLinks` attribute as shown in the code snippet below:
 
@@ -173,7 +172,7 @@ The chart when configured using above feature, looks like as shown below:
 
 {% embed_chart chart-configurations-drill-down-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/28nqcyu7/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/28nqcyu7/) to edit the above chart.
 
 ### In a frame
 
@@ -210,7 +209,7 @@ The chart when configured using above feature, looks like as shown below:
 
 {% embed_chart chart-configurations-drill-down-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/28ru7erc/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/28ru7erc/) to edit the above chart.
 
 > You can provide `_parent` as the name of the frame. The URL will get loaded in the frame or browser window which is the parent of the current window. Typically, the main browser space becomes the parent frame that contains all the other frames. Hence, if you wish to remove all frames and load the URL freshly in the same location, you can use `_parent` as the name of the frame.
 
@@ -245,7 +244,7 @@ The chart when configured using above feature, looks like as shown below:
 
 {% embed_chart chart-configurations-drill-down-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3q9qzo8h/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/3q9qzo8h/) to edit the above chart.
 
 > Note that if you set the entire chart as hotspot, the other links on the chart (individual links for data plots) will not work.
 
@@ -265,7 +264,7 @@ In the above chart, when you click the hotspot, the maximized version of the cha
 
 {% embed_chart chart-configurations-drill-down-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/pj9u9ym2/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/pj9u9ym2/) to edit the above chart.
 
 ## Chart links (Linked Charts)
 
@@ -305,7 +304,7 @@ The above chart, when rendered, looks like the following:
 
 {% embed_chart chart-configurations-drill-down-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/wvpzfz5g/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/wvpzfz5g/) to edit the above chart.
 
 ### Create linked charts using Data URL method
 
@@ -325,7 +324,7 @@ The above chart, when rendered, looks like the following:
 
 {% embed_chart chart-configurations-drill-down-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/v76phqq5/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/v76phqq5/) to edit the above chart.
 
 Here, newchart is constant.For the data URL method, assign `jsonurl` (if the data for the descendant chart is in a .json file) or `xmlurl` (if the data for the descendant chart is in a .xml file) as the value of `dataformat`. Specify the URL of the .json/.xml file as the value of the `datasource` attribute.
 
@@ -565,7 +564,7 @@ A chart utilizing these events is given below:
 
 {% embed_chart chart-configurations-drill-down-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/sknyboh5/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/sknyboh5/) to edit the above chart.
 
 Configure the `addEventListener()` method for the parent chart to listen to these events. The data structure that shows how to implement these events is given below:
 
@@ -728,7 +727,7 @@ The chart looks like as shown below:
 
 {% embed_chart chart-configurations-drill-down-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/cgLLusuL/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/cgLLusuL/) to edit the above chart.
 
 Following is the HTML code:
 
@@ -757,7 +756,7 @@ An example of a drill-down chart and its corresponding code, that implements lin
 
 {% embed_chart chart-configurations-drill-down-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/z7vnp56d/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/z7vnp56d/) to edit the above chart.
 
 Similar to the above example, the showAlert function is defined to show an alert message that contains the clicked data plot label and value.
 

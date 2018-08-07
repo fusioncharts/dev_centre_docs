@@ -2,7 +2,6 @@
 title: Kagi Chart | FusionCharts
 description: Kagi chart uses a series of vertical lines to illustrate general levels of supply and demand for certain assets. These charts are independent of time
 heading: Kagi Chart
-breadcrumb: [["Home", "/"], ["Kagi Chart"]]
 ---
 
 > This chart type belongs to **PowerCharts XT**.
@@ -27,13 +26,13 @@ To create a Kagi chart, follow the steps given below:
 
 * Specify the value for a data item using the `value` attribute within the `data` object.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=kagi "@@open-newtab") page of kagi chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=kagi) page of kagi chart.
 
 A simple Kagi chart looks like:
 
 {% embed_all standard-charts-kagi-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/JRZ36/ "@@open-newtab") to edit the kagi chart.
+Click [here](http://jsfiddle.net/fusioncharts/JRZ36/) to edit the kagi chart.
 
 These charts are independent of time and only change direction once a predefined reversal amount is reached. This reversal value could be configured either as a percentage of range value or absolute value.
 

@@ -68,7 +68,7 @@ File Name|Description|
 `fusioncharts.overlappedbar2d.js`|This file is required to render the Overlapped Bar 2D chart. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedbar2d.js` provided they are in the same folder.|
 `fusioncharts.overlappedcolumn2d.js`|This file is required to render the Overlapped Column 2D chart, present under FusionCharts XT. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.overlappedcolumn2d.js` provided they are in the same folder.|
 `fusioncharts.maps.js`|This file is the core map renderer file. The map definitions, however, are stored separately, as explained next. </br>**Note:** When you include `fusioncharts.js` file in your page, you do not need to include this file separately, as `fusioncharts.js` internally loads `fusioncharts.maps.js` provided they are in the same folder.|
-`maps/*`|This folder contains Map Definition files required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1400+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/map-definition-files '@@open-newtab'). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
+`maps/*`|This folder contains Map Definition files required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1400+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/map-definition-files). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be applied to charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
 
 To install FusionCharts Suite XT, simply copy and paste the JavaScript files from the downloaded package into your project folder.
@@ -118,14 +118,14 @@ The consolidated code is shown below:
 </head>
 ```
 
-This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/vue/your-first-chart-using-vuejs '@@open-newtab').
+This completes the installation of FusionCharts in your application. To see how to create a chart, click [here]({% site.baseurl %}/getting-started/vue/your-first-chart-using-vuejs).
 
 ### Installing FusionMaps for your project
 
 FusionCharts Suite XT provides **1400+** data-driven maps as a part of the FusionMaps product. 
-To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/map-definition-files '@@open-newtab') the rest the of map definition files to plot maps of those countries/regions. 
+To reduce the size of the download package, we have included the `fusioncharts.maps.js` file and only two map definition files - the **World Map**, and the **map of USA**. However, you can [download](https://www.fusioncharts.com/download/map-definition-files) the rest the of map definition files to plot maps of those countries/regions. 
 
-> If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/map-definition-files '@@open-newtab') the latest version and replace for upgrading to the latest map definition files.
+> If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/map-definition-files) the latest version and replace for upgrading to the latest map definition files.
 
 To render a map, you need the core FusionCharts library `fusioncharts.js` along with `fusioncharts.maps.js`, `vue.js`, and the map definition files as shown below:
 
@@ -140,7 +140,7 @@ In the above example, we’ve included the **World Map** whose map definition (p
 
 **Load other map definition files**
 
-To use any other map (except **World** and **USA**) from the **1400+** maps, [download](https://www.fusioncharts.com/download/map-definition-files '@@open-newtab') the map definition files, then copy those map files to your current `maps` folder. The map definition files are named in the `fusioncharts.[MAP_ALIAS].js` format, where MAP_ALIAS represents the country, state, or region name. 
+To use any other map (except **World** and **USA**) from the **1400+** maps, [download](https://www.fusioncharts.com/download/map-definition-files) the map definition files, then copy those map files to your current `maps` folder. The map definition files are named in the `fusioncharts.[MAP_ALIAS].js` format, where MAP_ALIAS represents the country, state, or region name. 
 
 ```HTML
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
@@ -152,7 +152,7 @@ Therefore, assuming you need to render the map of California, the alias name **c
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"></script>
 ```
 
-Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps '@@open-newtab') to explore all the maps available in FusionMaps XT.
+Click [here]({% site.baseurl %}/chart-guide/getting-started/list-of-maps) to explore all the maps available in FusionMaps XT.
 
 The consolidated code (including the `vue.js`, `fusioncharts.js` and `vue-fusioncharts.js`)  is shown below:
 
@@ -175,7 +175,7 @@ The consolidated code (including the `vue.js`, `fusioncharts.js` and `vue-fusion
 
 ### Themes
 
-[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allow you to apply centralized themes to any number of charts.
+[Themes]({% site.baseurl %}/themes/introduction-to-themes) shipped with FusionCharts Suite XT allow you to apply centralized themes to any number of charts.
 
 In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
 
@@ -194,7 +194,7 @@ To add a theme to your chart, include its corresponding JavaScript file in your 
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
 ```
 
-> Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes).
 
 ## Include FusionCharts via npm
 
@@ -517,7 +517,7 @@ Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionMaps, Califor
 
 ### Include Themes via npm
 
-[Themes]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab') shipped with FusionCharts Suite XT allow you to apply centralized themes to any number of charts.
+[Themes]({% site.baseurl %}/themes/introduction-to-themes) shipped with FusionCharts Suite XT allow you to apply centralized themes to any number of charts.
 
 In a theme file, we can centralize the following aspects of all of your charts, gauges and maps:
 
@@ -555,4 +555,4 @@ Vue.use(VueFusionCharts, FusionCharts, FusionTheme);
 Vue.component('fusioncharts', VueFusionCharts, FusionCharts, FusionTheme);
 ```
 
-> Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes '@@open-newtab').
+> Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes).

@@ -316,12 +316,12 @@ To export charts as images, you can use the CLI or SDKs of the languages mention
 
 ## Related Resources
 
-* [Change the Export Type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type '@@open-newtab')
+* [Change the Export Type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
 
-* [Export Charts in Bulk]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk '@@open-newtab')
+* [Export Charts in Bulk]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk)
 
-* [Export in Bulk Using Multiple JSON Files]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files '@@open-newtab')
+* [Export in Bulk Using Multiple JSON Files]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files)
 
-* [Export a Dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard '@@open-newtab')
+* [Export a Dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
 
-* [Convert an SVG Image to PNG/JPEG/PDF]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/convert-an-svg-image-to-png-jpeg-pdf '@@open-newtab')
+* [Convert an SVG Image to PNG/JPEG/PDF]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/convert-an-svg-image-to-png-jpeg-pdf)

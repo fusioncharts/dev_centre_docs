@@ -55,4 +55,4 @@ The second parameter accepts an object of number formatting configurations, here
 
 The API returns a string of the formatted number.
 
-Read more about the FusionCharts Suite Number Format options at [Number Format]({% site.baseurl %}/chart-guide/chart-configurations/number-format "@@open-newtab").
+Read more about the FusionCharts Suite Number Format options at [Number Format]({% site.baseurl %}/chart-guide/chart-configurations/number-format).

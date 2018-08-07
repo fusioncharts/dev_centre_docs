@@ -2,7 +2,6 @@
 title: Treemap | FusionCharts
 description: Treemapping is a visual representation of an information tree created using the tree data structure displayed as 2D nested rectangles,representing the nodes
 heading: Treemap
-breadcrumb: [["Home", "/dev"], ["Treemap"]]
 ---
 
 > This chart type belongs to **PowerCharts XT**.
@@ -13,7 +12,7 @@ A simple treemap will look like as shown below:
 
 {% embed_all standard-charts-treemap-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/dhauz809/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/dhauz809/) to edit the above chart.
 
 Click the rectangles in the treemap shown above and see how you can traverse through the leaf nodes.
 
@@ -134,7 +133,7 @@ The Treemap will look like as shown below:
 
 {% embed_all standard-charts-treemap-example-1a.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/dhauz809/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/dhauz809/) to edit the above chart.
 
 > The treemap shown above compares the sales team's performance in the present year with their performance in the previous year. Click on a rectangle to replace the node with the current root node. For example, click on any rectangle (node) in the Northern Region to change the chart view as shown in the image below:
 
@@ -208,7 +207,7 @@ A sample treemap with the gradient legend set to show only those nodes that have
 
 ![Treemap-GIF-3]({% site.baseurl %}/gif/standard-charts-treemap-gif-3.gif)
 
-Click [here]({% site.baseurl %}/chart-attributes/?chart=treemap "@@open-newtab") for the complete list of attributes supported by the treemap.
+Click [here]({% site.baseurl %}/chart-attributes/?chart=treemap) for the complete list of attributes supported by the treemap.
 
 ## Set tiling algorithm for the treemap
 
@@ -236,7 +235,7 @@ The chart will look like as shown below:
 
 {% embed_chart standard-charts-treemap-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/myz9pjpw/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/myz9pjpw/) to edit the above chart.
 
 ### Use the slice and dice algorithm
 
@@ -275,7 +274,7 @@ The chart looks like as shown below:
 
 {% embed_chart standard-charts-treemap-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/LL6rqgk4/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/LL6rqgk4/) to edit the above chart.
 
 > In the chart given above, you can compare the performances of top selling car manufacturers in Europe in the present year with that in the previous year. Click the rectangles to traverse through the chart and see how the chart view changes.
 
@@ -296,7 +295,7 @@ The chart looks like as shown below:
 
 {% embed_chart standard-charts-treemap-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/2xoeqm8j/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/2xoeqm8j/) to edit the above chart.
 
 **Alternate Mode**
 
@@ -315,9 +314,9 @@ The chart looks like as shown below:
 
 {% embed_chart standard-charts-treemap-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/buksebna/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/buksebna/) to edit the above chart.
 
-Click [here]({% site.baseurl %}/chart-attributes/?chart=treemap "@@open-newtab") for the complete list of attributes supported by the treemap.
+Click [here]({% site.baseurl %}/chart-attributes/?chart=treemap) for the complete list of attributes supported by the treemap.
 
 ## Configure the Treemap
 
@@ -355,7 +354,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-treemap-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/uL36xvxx/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/uL36xvxx/) to edit the above chart.
 
 The treemap above shows the global population by continent as of 2015 with their literacy rate.
 
@@ -404,7 +403,7 @@ The treemap will look like as shown in the image below:
 
 {% embed_chart standard-charts-treemap-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/x336y7ej/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/x336y7ej/) to edit the above chart.
 
 > The data plot color in the sample treemap used so far has been assigned using the `colorRange` object. Use `colorRange` object to define the numeric ranges for the gradient legend. Then you can assign a color to a data plot, based on where the value of the `sValue` attribute falls within the numeric range.
 
@@ -456,7 +455,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-treemap-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/4av9kLrc/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/4av9kLrc/) to edit the above chart.
 
 ## Customize chart text
 
@@ -486,7 +485,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-treemap-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/4pnjj3c9/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/4pnjj3c9/) to edit the above chart.
 
 ## Customize data labels
 
@@ -522,7 +521,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-treemap-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/mbze14ch/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/mbze14ch/) to edit the above chart.
 
 ## Apply a glow effect to data labels
 
@@ -555,7 +554,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-treemap-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5r3oa3r5/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/5r3oa3r5/) to edit the above chart.
 
 ## Use events in the treemap
 
@@ -592,4 +591,4 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-treemap-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/d36cqn7s/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/d36cqn7s/) to edit the above chart.

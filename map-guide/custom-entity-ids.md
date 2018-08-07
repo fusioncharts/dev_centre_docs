@@ -104,7 +104,7 @@ The map will look as shown below:
 
 {% embed_chart map-guide-custom-entity-ids-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9vqsaec4/ "@@open-newtab") to edit the above map.
+Click [here](http://jsfiddle.net/fusioncharts/9vqsaec4/) to edit the above map.
 
 > When defining new IDs for different entities on the map, ensure that you're referring to the right original internal ID. Also, ensure that the entity IDs you redefine are unique.
 

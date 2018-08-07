@@ -2,7 +2,6 @@
 title: Error Charts | FusionCharts
 description: An error chart is used to show the extent of uncertainty in information relative to an average value.
 heading: Error Charts
-breadcrumb: [["Home", "/"], ["Error Charts"]]
 ---
 
 > These chart types belong to **PowerCharts XT**.
@@ -63,25 +62,25 @@ To create an error bar chart follow the steps given below:
 
 * Set the `errorValue` attribute to specify error value that will be plotted as the error bar on the chart. This attribute belongs to the `data` object, which belongs to the `dataset` object.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=errorbar2d "@@open-newtab") page of error bar chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=errorbar2d) page of error bar chart.
 
 An error bar chart thus created looks like this:
 
 {% embed_all standard-charts-error-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7Z4Ha/ "@@open-newtab") to edit the above error bar chart.
+Click [here](http://jsfiddle.net/fusioncharts/7Z4Ha/) to edit the above error bar chart.
 
 ## Error Line Chart
 
 Now, let's create an **error line** chart that compares the estimated procurement from two suppliers. To render an error line chart, change the value of the `type` attribute from `errorbar2d` to `errorline`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=errorline "@@open-newtab") page of error line chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=errorline) page of error line chart.
 
 An error line chart thus created looks like:
 
 {% embed_all standard-charts-error-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/qutLzs7m/ "@@open-newtab") to edit the above error line chart.
+Click [here](http://jsfiddle.net/fusioncharts/qutLzs7m/) to edit the above error line chart.
 
 ## Error Scatter Chart
 
@@ -99,13 +98,13 @@ To render an error scatter chart, follow the steps given below:
 
 * Set the `verticalErrorValue` to specify the range of possible vertical deviation values that will be plotted as the error bar on the chart. This attribute also belongs to the `data` object, which belongs to the `dataset` object.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=errorscatter "@@open-newtab") page of error scatter chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=errorscatter) page of error scatter chart.
 
 The error scatter chart will look like:
 
 {% embed_all standard-charts-error-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/uV3cB/ "@@open-newtab") to edit the above error scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/uV3cB/) to edit the above error scatter chart.
 
 Now, let's customize the appearance and properties of the charts.
 
@@ -140,7 +139,7 @@ An error bar chart, after customizing the error bars, looks like this:
 
 {% embed_chart standard-charts-error-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/fumzvpw3/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/fumzvpw3/) to edit the above chart.
 
 > The configurations for the error line chart is same as that of the error bars chart.
 
@@ -178,4 +177,4 @@ An error scatter chart, after customizing the error bars, looks like:
 
 {% embed_chart standard-charts-error-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/e4rvjc37/ "@@open-newtab") to edit the above error scatter chart.
+Click [here](http://jsfiddle.net/fusioncharts/e4rvjc37/) to edit the above error scatter chart.

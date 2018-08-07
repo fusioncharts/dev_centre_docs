@@ -88,10 +88,10 @@ The FusionExport Server SDKs are tools for interacting with FusionExport Server 
 
 ## What’s next?
 
-* [Export Charts]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-chart-as-image '@@open-newtab')
+* [Export Charts]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-chart-as-image)
 
-* [Export Dashboards]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard '@@open-newtab')
+* [Export Dashboards]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
 
-* [Configure Charts]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart '@@open-newtab')
+* [Configure Charts]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/customize-the-width-and-height-of-an-exported-chart)
 
-* [Export Charts in Bulk]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk '@@open-newtab')
+* [Export Charts in Bulk]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk)

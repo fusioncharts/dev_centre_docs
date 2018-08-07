@@ -2,12 +2,11 @@
 title: Stacked Charts | FusionCharts
 description: In stacked chart plot datasets are on top of each other. They help in displaying the cumlative magnitude of two or more data series.
 heading: Stacked Charts
-breadcrumb: [["Home", "/"], ["Stacked Charts"]]
 ---
 
 > These chart types belong to **FusionCharts XT**.
 
-Stacked charts are similar to [multi-series charts]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts "@@open-newtab"), but plot datasets on top of each other, instead of the clustered side-by-side placement adopted by multi-series charts. Stacked charts help in displaying the cumulative magnitude of two or more data series. They help in representing a data value as a sum of two or more values. Each data series can be distinguished by the color of its section in the stack.
+Stacked charts are similar to [multi-series charts]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), but plot datasets on top of each other, instead of the clustered side-by-side placement adopted by multi-series charts. Stacked charts help in displaying the cumulative magnitude of two or more data series. They help in representing a data value as a sum of two or more values. Each data series can be distinguished by the color of its section in the stack.
 
 The FusionCharts Suite XT includes the following types of stacked charts:
 
@@ -37,63 +36,63 @@ To create a stacked column chart in 2D follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedcolumn2d "@@open-newtab") page of stacked column 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedcolumn2d) page of stacked column 2D chart.
 
 The stacked column 2D chart thus created looks like this:
 
 {% embed_all standard-charts-stacked-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/15zbv887/ "@@open-newtab") to edit the stacked column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/15zbv887/) to edit the stacked column 2D chart.
 
 ## Stacked Column 3D Chart
 
 To render a stacked column chart in 3D, change the value of the `type` attribute from `stackedcolumn2d` to `stackedcolumn3d`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedcolumn3d "@@open-newtab") page of stacked column 3D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedcolumn3d) page of stacked column 3D chart.
 
 A stacked column chart in 3D looks like:
 
 {% embed_all standard-charts-stacked-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/z14fubaq/ "@@open-newtab") to edit the stacked column 3D chart.
+Click [here](http://jsfiddle.net/fusioncharts/z14fubaq/) to edit the stacked column 3D chart.
 
 ## Stacked Area 2D Chart
 
 To render a stacked area chart in 2D, change the value of the `type` attribute from `stackedcolumn3d` to `stackedarea2d`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedarea2d "@@open-newtab") page of stacked area 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedarea2d) page of stacked area 2D chart.
 
 A stacked area chart in 2D looks like:
 
 {% embed_all standard-charts-stacked-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3RYK6/ "@@open-newtab") to edit the stacked area 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/3RYK6/) to edit the stacked area 2D chart.
 
 ## Stacked Bar 2D Chart
 
 To render a stacked bar chart in 2D, change the value of the `type` attribute from `stackedarea2d` to `stackedbar2d`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedbar2d "@@open-newtab") page of stacked bar 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedbar2d) page of stacked bar 2D chart.
 
 A stacked bar chart in 2D looks like:
 
 {% embed_all standard-charts-stacked-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/obga4uw9/ "@@open-newtab") to edit the stacked bar 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/obga4uw9/) to edit the stacked bar 2D chart.
 
 ## Stacked Bar 3D Chart
 
 To render a stacked bar chart in 3D, change the value of the `type` attribute from `stackedbar2d` to `stackedbar3d`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedbar3d "@@open-newtab") page of stacked bar 3D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedbar3d) page of stacked bar 3D chart.
 
 A stacked bar chart in 3D looks like:
 
 {% embed_all standard-charts-stacked-charts-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/L6gg6ow3/ "@@open-newtab") to edit the stacked bar 3D chart.
+Click [here](http://jsfiddle.net/fusioncharts/L6gg6ow3/) to edit the stacked bar 3D chart.
 
-> Some of the other stacked charts are shown in [combination charts]({% site.baseurl %}/chart-guide/standard-charts/combination-charts "@@open-newtab") and [scroll charts]({% site.baseurl %}/chart-guide/standard-charts/scroll-charts "@@open-newtab") section.
+> Some of the other stacked charts are shown in [combination charts]({% site.baseurl %}/chart-guide/standard-charts/combination-charts) and [scroll charts]({% site.baseurl %}/chart-guide/standard-charts/scroll-charts) section.
 
 Now, let's customize the appearance and properties of the charts. 
 
@@ -114,7 +113,7 @@ A stacked column 2D chart with the cumulative sum rendered above its correspondi
 
 {% embed_chart standard-charts-stacked-charts-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/15zbv887/ "@@open-newtab") to edit the above stacked column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/15zbv887/) to edit the above stacked column 2D chart.
 
 ## Create 100% Stacked Charts
 
@@ -136,7 +135,7 @@ A 100% stacked column 2D chart looks like this:
 
 {% embed_chart standard-charts-stacked-charts-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/pcgxjcLb/ "@@open-newtab") to edit the above stacked column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/pcgxjcLb/) to edit the above stacked column 2D chart.
 
 ## Show Percent Values in Tool-Tips
 
@@ -155,4 +154,4 @@ A stacked column chart configured to show percent values in tool-tips looks like
 
 {% embed_chart standard-charts-stacked-charts-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/dwu9w555/ "@@open-newtab") to edit the above stacked column 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/dwu9w555/) to edit the above stacked column 2D chart.

@@ -6,7 +6,7 @@ heading: Coloring Based on Data Range
 
 > Replace the map definition files (of v3.12.2 or older) with the latest files available in [download package](https://www.fusioncharts.com/download/) while upgrading to __v3.13.0__.
 
-You have to use color ranges to define entity colors based on values, in order to set up a [simple data driven map]({% site.baseurl %}/map-guide/simple-data-driven-maps '@@open-newtab'). Since the process of defining colors for individual data buckets is not scalable, you need to group data values under defined data range buckets. 
+You have to use color ranges to define entity colors based on values, in order to set up a [simple data driven map]({% site.baseurl %}/map-guide/simple-data-driven-maps). Since the process of defining colors for individual data buckets is not scalable, you need to group data values under defined data range buckets. 
 
 Note that you need to denote entities within these buckets with the same color. Also, you need to define colors for each data range. This can become tedious if you have to deal with a large number of buckets. In that case, you can use a gradient scale to simplify this process.
 
@@ -100,6 +100,6 @@ The map will look as shown below:
 
 {% embed_chart map-guide-coloring-based-on-data-range-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/r7L7xcv1/ "@@open-newtab") to edit the above map.
+Click [here](http://jsfiddle.net/fusioncharts/r7L7xcv1/) to edit the above map.
 
 > You can use only one color to draw the gradient scale. Here, the scale will appear starting from the darkest shade of the color (lower limit) to the brightest shade of the color (upper limit). The map will automatically decide the numeric range taking the lowest data value present as the lower limit and the highest data value as the upper limit. In this case, however, you cannot set the upper limit using the `maxValue` attribute.

@@ -1,8 +1,8 @@
 {
     type: 'heatmap',
     renderAt: 'chart-container',
-    width: '550',
-    height: '300',
+    width: '700',
+    height: '350',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -11,6 +11,7 @@
             "subcaption": "Bell Curve Grading",
             "xAxisName": "Subjects",
             "yAxisName": "Student Name",
+            "showValues": "1",
             "showPlotBorder": "1",
             "valueFontColor": "#ffffff",
             "plotTooltext": "Grading : $value"

@@ -18,13 +18,13 @@ A horizontal LED gauge rendered to indicate fuel levels looks like the following
 
 {% embed_all gauges-and-widgets-led-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3w4pm/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/3w4pm/) to edit the above gauge.
 
 A vertical LED gauge rendered to indicate fuel levels looks like the following:
 
 {% embed_all gauges-and-widgets-led-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5Bd2f/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/5Bd2f/) to edit the above gauge.
 
 ## Elements of LED gauges
 
@@ -90,7 +90,7 @@ The chart with `type` attribute set to `vled` will look as shown below:
 
 {% embed_chart gauges-and-widgets-led-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5Bd2f/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/5Bd2f/) to edit the above gauge.
 
 ## Specify the background color
 
@@ -110,7 +110,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-led-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/hcdL2h1q/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/hcdL2h1q/) to edit the above gauge.
 
 ## Use a single color for LED fill and background
 
@@ -137,7 +137,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-led-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/BabW7/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/BabW7/) to edit the above gauge.
 
 ## Show/Hide the gauge border
 
@@ -157,7 +157,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-led-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/UZuye/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/UZuye/) to edit the above gauge.
 
 ## Customize gauge border properties
 
@@ -185,7 +185,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-led-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Z547j/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/Z547j/) to edit the above gauge.
 
 ## Configure LED bar size and gap
 
@@ -210,7 +210,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-led-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/bq9gM/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/bq9gM/) to edit the above gauge.
 
 > To make the LEDs appear continuous, you can set `ledGap` to `0`.
 
@@ -232,7 +232,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-led-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/A5EWt/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/A5EWt/) to edit the above gauge.
 
 ## Show/hide tick marks and tick values
 
@@ -257,7 +257,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-led-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/94uyv/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/94uyv/) to edit the above gauge.
 
 ## Configure tick marks and tick values
 
@@ -305,7 +305,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-led-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/hduMV/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/hduMV/) to edit the above gauge.
 
 ## Configure tick mark and tick value cosmetics
 
@@ -345,7 +345,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-led-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/zHfPX/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/zHfPX/) to edit the above gauge.
 
 ## Configure hover effects
 
@@ -365,7 +365,7 @@ The gauge will look like as shown below:
 
 ![Led]({% site.baseurl %}/gif/gauges-and-widgets-led.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/ah36v6e0/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/ah36v6e0/) to edit the above gauge.
 
 ## Real time LED gauge
 
@@ -414,7 +414,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-led-example-13.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/abb2xdL4/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/abb2xdL4/) to edit the above gauge.
 
 ## Stop/restart updates
 
@@ -474,7 +474,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-led-example-14.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/q32kuqm4/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/q32kuqm4/) to edit the above gauge.
 
 ## Configure real time events
 
@@ -560,7 +560,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-led-example-15.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/uas6cu6L/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/uas6cu6L/) to edit the above gauge.
 
 ### Use the `realTimeUpdateError` event
 
@@ -605,7 +605,7 @@ The gauge will look like as shown below:
 
 {% embed_chart gauges-and-widgets-led-example-16.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/60ubophr/ "@@open-newtab") to edit the above gauge.
+Click [here](http://jsfiddle.net/fusioncharts/60ubophr/) to edit the above gauge.
 
 ## Troubleshoot real time gauges
 
