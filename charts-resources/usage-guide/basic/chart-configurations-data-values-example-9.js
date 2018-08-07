@@ -1,9 +1,8 @@
 {
     type: 'column2d',
-    renderAt: 'chart-container',
-    
-    width: '450',
-    height: '300',
+    renderAt: 'chart-container',    
+    width: '500',
+    height: '350',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -16,7 +15,7 @@
             "placeValuesInside": "0",
             "rotateValues": "0",
             "valueFont": "Arial",
-            "valueFontColor": "#6699cc",
+            "valueFontColor": "#5d62b5",
             "valueFontSize": "12",
             "valueBorderColor": "#666666",
             "valueBorderAlpha": "100",

@@ -188,7 +188,7 @@ Refer to the code below:
         "placeValuesInside": "0",
         "rotateValues": "0",
         "valueFont": "Arial",
-        "valueFontColor": "#6699cc",
+        "valueFontColor": "#5d62b5",
         "valueFontSize": "12",
         "valueFontBold": "1",
         "valueFontItalic": "0",
