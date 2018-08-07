@@ -1,13 +1,12 @@
 ---
-title: Bubble and XY Charts | FusionCharts
+title: XY Charts | FusionCharts
 description: XY are used for plotting data that is defined in terms of two numeric parameters.
-heading: Bubble and XY Charts
-breadcrumb: [["Home", "/"], ["Bubble and XY Charts"]]
+heading: XY Charts
 ---
 
 > These chart types belong to **FusionCharts XT**.
 
-Bubble and XY charts are used for plotting data that can be defined in terms of multiple numeric parameters. In these charts, the x and y axes are numeric. So, the position of a data point is an indicator of two distinct numeric values.
+XY charts are used for plotting data that can be defined in terms of multiple numeric parameters. In these charts, the x and y axes are numeric. So, the position of a data point is an indicator of two distinct numeric values.
 
 The XY charts available in the FusionCharts Suite XT are:
 
