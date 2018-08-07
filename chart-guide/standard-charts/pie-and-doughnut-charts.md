@@ -2,7 +2,6 @@
 title: Pie and Doughnut Charts | FusionCharts
 description: This section talks about pie and doughtnut charts. Pie and doughnut charts are used to plot data that needs to be shown as a percent of the whole
 heading: Pie and Doughnut Charts
-breadcrumb: [["Home", "/"], ["Pie and Doughnut Charts"]]
 ---
 
 > These chart types belong to **FusionCharts XT**.

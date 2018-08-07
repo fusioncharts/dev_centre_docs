@@ -2,7 +2,6 @@
 title: Overlapped Column and Bar Charts | FusionCharts
 description: In overlapped charts, the two data series overlap. The width of the plot for the data series differs which makes the chart easy to compare.
 heading: Overlapped Column and Bar Charts
-breadcrumb: [["Home", "/"], ["Overlapped Column and Bar Charts"]]
 ---
 
 > These chart types belong to **FusionCharts XT**.

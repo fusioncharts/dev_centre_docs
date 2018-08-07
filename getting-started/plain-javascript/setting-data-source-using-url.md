@@ -2,7 +2,6 @@
 title: Setting Data Source Using URL | FusionCharts
 description: FusionCharts lets you pass the complete JSON/XML chart data using a JSON file or a URL without losing any functionality
 heading: Setting Data Source Using URL
-breadcrumb: [["Home", "/"], ["Setting Data Source using URL"]]
 ---
 
 FusionCharts lets you pass the complete JSON/XML chart data as a static string to the `dataSource` attribute. Alternatively, you can also save the chart data in a `.json` or `.xml` file and then pass the relative URL of this file as value to the `dataSource` attribute. 

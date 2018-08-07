@@ -2,7 +2,6 @@
 title: Spark Charts | FusionCharts
 description: Spark charts are data-intensive, design-simple, word-sized graphics charts for embedding in a context of words, numbers and images.
 heading: Spark Chart
-breadcrumb: [["Home", "/dev"], ["Spark Charts"]]
 ---
 
 > These chart types belong to **FusionWidgets XT**.

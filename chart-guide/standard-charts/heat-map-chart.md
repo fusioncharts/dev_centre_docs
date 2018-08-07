@@ -2,7 +2,6 @@
 title: Heat Map Chart | FusionCharts
 description: A heat map chart is a specialized chart that uses colors to represent data values in a table. It is mostly used to plot large and complex data.
 heading: Heat Map Chart
-breadcrumb: [["Home", "/dev"], ["Heat Map Chart"]]
 ---
 
 > This chart type belongs to **PowerCharts XT**.

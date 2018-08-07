@@ -2,7 +2,6 @@
 title: Changelog | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
 heading: Changelog
-breadcrumb: [["Home", "/"], ["Change Log"]]
 ---
 
 ## New Features

@@ -2,7 +2,6 @@
 title: Configure Legend | FusionCharts
 description: A legend is a chart element that is used to display the series name of each dataset in multi-series/combination charts
 heading: Legend
-breadcrumb: [["Home", "/"], ["Legends"]]
 ---
 
 A legend is a chart element used to display the series name for each dataset, in case of multi-series or combination charts. Legends are used to correlate a data plot to its series name using its color.

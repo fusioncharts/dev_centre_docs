@@ -2,7 +2,6 @@
 title: Select-scatter Chart | FusionCharts
 description: The select-scatter chart is a special type of chart that allows users to visually select a subset of data from the given data points.
 heading: Select-scatter Chart
-breadcrumb: [["Home", "/"], ["Select-scatter Chart"]]
 ---
 
 > This chart type belongs to **PowerCharts XT**.

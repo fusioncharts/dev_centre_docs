@@ -2,7 +2,6 @@
 title: Inverse Y-axis Chart | FusionCharts
 description: In inverse y-axis charts, y-axis in inverse, the lower limit and upper limit value positions are swapped in an inverse y-axis chart
 heading: Inverse Y-axis Chart
-breadcrumb: [["Home", "/"], ["Inverse Y-axis Charts"]]
 ---
 
 > These chart types belong to **PowerCharts XT**.

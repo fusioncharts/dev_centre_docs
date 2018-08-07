@@ -2,7 +2,6 @@
 title: Error Charts | FusionCharts
 description: An error chart is used to show the extent of uncertainty in information relative to an average value.
 heading: Error Charts
-breadcrumb: [["Home", "/"], ["Error Charts"]]
 ---
 
 > These chart types belong to **PowerCharts XT**.

@@ -2,7 +2,6 @@
 title: Step Line Chart | FusionCharts
 description: It is a specialized line chart which, unlike the usual line charts, does not use the shortest distance to connect two data points
 heading: Step Line Chart
-breadcrumb: [["Home", "/"], ["Step Line Chart"]]
 ---
 
 > This chart type belongs to **PowerCharts XT**.

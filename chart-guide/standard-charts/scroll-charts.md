@@ -2,7 +2,6 @@
 title: Scroll Chart | FusionCharts
 description: Charts with scrolls allows you to plot large quantities of data. They are also used to avoid cluttering of plots.
 heading: Scroll Chart
-breadcrumb: [["Home", "/"], ["Scroll Chart"]]
 ---
 
 > These chart types belong to **FusionCharts XT**.

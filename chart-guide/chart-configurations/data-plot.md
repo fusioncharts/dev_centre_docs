@@ -2,7 +2,6 @@
 title: Configuring Data Plot | FusionCharts
 description: Data plot is column in column chart, line in line chart. You can enhance the way your data plot looks with the help of colors, gradients and hover effects
 heading: Data Plot
-breadcrumb: [["Home", "/"], ["Data Plot"]]
 ---
 
 Data plot refers to the columns of the column chart, lines in a line chart, pie/doughnut slices in a pie/doughnut chart. You can enhance the way your data plot looks using colors, gradients and hover effects. 

@@ -2,7 +2,6 @@
 title: Candlestick Chart | FusionCharts
 description: The FusionCharts Suite XT candlestick chart offers you a powerful and interactive interface to plot your stock data.
 heading: Candlestick Chart
-breadcrumb: [["Home", "/"], ["Candlestick Charts"]]
 ---
 
 > This chart type belongs to **PowerCharts XT**.

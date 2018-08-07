@@ -2,7 +2,6 @@
 title: Zoom Line Chart | FusionCharts
 description: The FusionCharts Suite XT zoom line chart is a special type of multi-series line chart that allows analysis of data at macroscopic and microscopic levels.
 heading: Zoom Line Chart
-breadcrumb: [["Home", "/"], ["Zoom Line Chart"]]
 ---
 
 > These chart types belong to **FusionCharts XT**.

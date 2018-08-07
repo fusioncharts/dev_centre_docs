@@ -2,7 +2,6 @@
 title: Anchors and Lines | FusionCharts
 description: Anchors help to identify the data point better in the chart. They also show a tooltip showing the data plot details when the mouse is hovered over them
 heading: Anchors and Lines
-breadcrumb: [["Home", "/"], ["Anchors and Lines"]]
 ---
 
 Each data point in a line/spline/area chart is represented by an anchor. Anchors help to identify the data point in the chart easily. Anchors show a tooltip showing the data plot details when the mouse is hovered over them and can be linked to other pages as well. In this article, we will discuss different configurations of the anchors.

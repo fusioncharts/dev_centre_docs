@@ -2,7 +2,6 @@
 title: Gantt Chart | FusionCharts
 description: The Gantt chart is a specialized chart used for displaying various timelines like project timelines, development timelines, etc.
 heading: Gantt Chart
-breadcrumb: [["Home", "/dev"], ["Gantt Chart"]]
 ---
 
 > These chart types belong to **FusionWidgets XT**.

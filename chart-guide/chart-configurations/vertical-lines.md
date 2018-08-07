@@ -2,7 +2,6 @@
 title: Vertical Lines | FusionCharts
 description: Vertical separator lines or vlines are elements that can differentiate between data blocks in a chart. They can be placed between any two data points
 heading: Vertical Lines
-breadcrumb: [["Home", "/"], ["Vertical Lines"]]
 ---
 
 Vertical (or horizontal in case of bar charts) separator lines or `vlines` are elements that can help differentiate between data blocks in a chart. They can be placed between any two data points, or aligned to specific data points.

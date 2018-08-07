@@ -2,7 +2,6 @@
 title: Multi-axis Line Chart | FusionCharts
 description: A multi-axis line chart, as the name suggests, is an interactive line chart that can be configured for multiple axes.
 heading: Multi-axis Line Chart
-breadcrumb: [["Home", "/"], ["Multi-axis Line Chart"]]
 ---
 
 > This chart type belongs to **PowerCharts XT**.

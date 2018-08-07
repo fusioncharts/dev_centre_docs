@@ -2,7 +2,6 @@
 title: From Flash to JavaScript | FusionCharts
 description: This section talks about how can a user upgrade to JavaScript version from the flash version.
 heading: From Flash to JavaScript
-breadcrumb: [["Home", "/"], ["From Flash to JavaScript"]]
 ---
 
 This section is for those who are using any version of FusionCharts older than v3.3.1 and upgrading to v3.4 or beyond.
