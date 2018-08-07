@@ -171,12 +171,12 @@ OR
 To add `js` code within the `<script>` tag in HTML page, add `type="text/jsx"`.
 
 ```
-<script type="text/jsx">
+&lt;script type="text/jsx"&gt;
 ReactDOM.render(
     <ReactFC {...chartConfigs} />,
     document.getElementById('chart-container')
 );
-</script>
+&lt;/script&gt;
 ```
 
 #### Passed as a part of another ReactJS component:
@@ -328,12 +328,12 @@ OR
 To add `js` code within the `<script>` tag in HTML page, add `type="text/jsx"`.
 
 ```
-<script type="text/jsx">
+&lt;script type="text/jsx"&gt;
 ReactDOM.render(
     <ReactFC {...chartConfigs} />,
     document.getElementById('chart-container')
 );
-</script>
+&lt;/script&gt;
 ```
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge) for an angular gauge.
@@ -512,12 +512,12 @@ OR
 To add `js` code within the `<script>` tag in HTML page, add `type="text/jsx"`.
 
 ```
-<script type="text/jsx">
+&lt;script type="text/jsx"&gt;
 ReactDOM.render(
     <ReactFC {...chartConfigs} />,
     document.getElementById('chart-container')
 );
-</script>
+&lt;/script&gt;
 ```
 
 See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference) (the keys in the dataSource object) for the **World Map**. The respective id can be found [here]({% site.baseurl %}/maps/spec-sheets/world).
