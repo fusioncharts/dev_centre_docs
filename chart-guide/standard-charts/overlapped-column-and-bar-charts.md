@@ -15,9 +15,9 @@ The different types of overlapped charts available in the FusionCharts Suite XT 
 
 ## Overlapped Column 2D Chart
 
-In this sample let's create a overlapped column 2D chart showcasing...
+In this sample let's create an **Overlapped Column 2D** chart comparing the "Healthcare Expenditure per capita" between public and private sectors.
 
-To create a overlapped column 2D chart follow the steps given below:
+To create an **Overlapped Column 2D** chart follow the steps given below:
 
 * In the JSON data, set the attributes and their corresponding values in `"<attributeName>": "<value>"` format.
 
