@@ -10,10 +10,10 @@ chartPresent: false
 
 To modify the look and feel of the tooltip, use the `plotToolText` attribute at the chart level which supports HTML elements. For these HTML elements, you can define your own CSS.
 
-You can use the same CSS to modify the font inside tooltip as well. Please refer to this sample [fiddle](http://jsfiddle.net/fusioncharts/4m5xn7ep/ '@@open-newtab').
+You can use the same CSS to modify the font inside tooltip as well. Please refer to this sample [fiddle](http://jsfiddle.net/fusioncharts/4m5xn7ep/).
 
 ## For maps:
 
-In case of map, use the `entityToolText` attribute to define your CSS via HTML elements. Refer to this sample [fiddle](http://jsfiddle.net/fusioncharts/gcL37k98/ '@@open-newtab').
+In case of map, use the `entityToolText` attribute to define your CSS via HTML elements. Refer to this sample [fiddle](http://jsfiddle.net/fusioncharts/gcL37k98/).
 
-Click [here](https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tool-tips '@@open-newtab') to know more about tooltip customization.
+Click [here](https://www.fusioncharts.com/dev/chart-guide/chart-configurations/tool-tips) to know more about tooltip customization.

@@ -7,11 +7,11 @@ chartPresent: false
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and `react-fusionCharts` plugin. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-gauge-8) and a [map]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#create-your-first-map-11).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/react/install-using-react '@@open-newtab') the `react-fusioncharts` plugin, if you haven’t installed it already.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/react/install-using-react) the `react-fusioncharts` plugin, if you haven’t installed it already.
 
 ## Create your first chart
 
-In this section, we will create a chart using **react-fusioncharts**. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab').
+In this section, we will create a chart using **react-fusioncharts**. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/list-of-charts).
 
 Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a **Column 2D** chart as shown below:
 
@@ -34,7 +34,7 @@ China|30|
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For React, we recommend JSON format. 
 
-> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts '@@open-newtab'), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts '@@open-newtab'), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab'), etc.
+> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts), etc.
 
 The converted format will look as shown below:
 
@@ -336,7 +336,7 @@ However, when you convert the data into a format supported by FusionCharts, the 
 
 For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
 
-We have a detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world '@@open-newtab') for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
+We have a detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
 
 ### Convert tabular data into JSON format
 

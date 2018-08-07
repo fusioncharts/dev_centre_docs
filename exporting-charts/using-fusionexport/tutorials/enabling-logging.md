@@ -32,4 +32,4 @@ The different log levels are described in the [CLI reference section]({% site.ba
 
 ## Related Resources
 
-* [Inject extra JavaScript while Exporting]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting '@@open-newtab')
+* [Inject extra JavaScript while Exporting]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/inject-extra-javascript-while-exporting)

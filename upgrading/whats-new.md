@@ -37,7 +37,7 @@ A multi-level pie chart with above attributes look like:
 
 {% embed_all whats-new-multi-level-pie-example-4.js %}
 
-For the detailed description of the attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=multilevelpie '@@open-newtab').
+For the detailed description of the attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=multilevelpie).
 
 ## Configure Inner Radius of Multi-level Pie chart
 
@@ -59,7 +59,7 @@ Refer to the GIF shown below:
 
 In version 3.13.0, behavior for `maxPeakDataLimit` and `minPeakDataLimit` attributes in zoomline charts have been updated. Value greater than `maxPeakDataLimit` will be considered as peak data and is included in initial display of zoomline. Whereas value lower than `minPeakDataLimit` will also be included as peak data.
 
-For the detailed desctiption of the attributes, click [here]({% site.baseurl %}/chart-guide/standard-charts/zoom-line-charts#customize-the-peak-data-limits-8 '@@open-newtab').
+For the detailed desctiption of the attributes, click [here]({% site.baseurl %}/chart-guide/standard-charts/zoom-line-charts#customize-the-peak-data-limits-8).
 
 The zoomline chart with above attributes look like:
 

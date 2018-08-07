@@ -405,10 +405,10 @@ To export a dashboard, you can use the CLI or SDKs of the languages mentioned be
 
 ## Related Resources
 
-* [Export Charts in Bulk]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk '@@open-newtab')
+* [Export Charts in Bulk]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk)
 
-* [Add a logo or a heading to the dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard '@@open-newtab')
+* [Add a logo or a heading to the dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard)
 
-* [Manipulate the output filename]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename '@@open-newtab')
+* [Manipulate the output filename]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename)
 
-* [Save exported files to S3]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three '@@open-newtab')
+* [Save exported files to S3]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three)

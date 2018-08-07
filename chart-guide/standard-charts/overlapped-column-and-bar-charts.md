@@ -49,4 +49,4 @@ The overlapped bar 2D chart looks like:
 
 Click [here](http://jsfiddle.net/fusioncharts/6k7zoes8/ "@@open-newtab") to edit the above overlapped bar 2D chart.
 
-Costomization of the Overlapped Bar & Column charts are same as [Combination Charts]({% site.baseurl %}/chart-guide/standard-charts/combination-charts '@@open-newtab').
+Costomization of the Overlapped Bar & Column charts are same as [Combination Charts]({% site.baseurl %}/chart-guide/standard-charts/combination-charts).

@@ -60,6 +60,6 @@ The above command will complete all the dependencies missing for FusionExport Se
 
 ## What's next?
 
-* [Install FusionExport CLI]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-cli '@@open-newtab')
+* [Install FusionExport CLI]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-cli)
 
-* [Install FusionExport Server SDKs]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks '@@open-newtab')
+* [Install FusionExport Server SDKs]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)

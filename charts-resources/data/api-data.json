@@ -26,7 +26,7 @@
                                 "type": [
                                     "string"
                                 ],
-                                "description": "Provide the name of the chart type to be rendered. Click [here]({% site.baseurl %}/chart-guide/list-of-charts '@@open-newtab') for the complete list of charts in FusionCharts Suite XT.\n\nThis parameter controls what chart will be rendered. The data passed to the chart has to be compatible with the chart type specified here.\n\nAlternatively, you can also call [chartType]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#chartType) on the chart instance to provide the chart type.",
+                                "description": "Provide the name of the chart type to be rendered. Click [here]({% site.baseurl %}/chart-guide/list-of-charts) for the complete list of charts in FusionCharts Suite XT.\n\nThis parameter controls what chart will be rendered. The data passed to the chart has to be compatible with the chart type specified here.\n\nAlternatively, you can also call [chartType]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#chartType) on the chart instance to provide the chart type.",
                                 "defaultvalue": "",
                                 "optional": true,
                                 "nullable": false,
@@ -17895,7 +17895,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time a zoom-line/zoom-scatter chart is reset to its original values (when the zooming history is cleared). \r\r >[Try It Yourself! (zoom-line chart)](http://jsfiddle.net/fusioncharts/5tajR/ '@@open-newtab')\r\r \n\n \r\r >[Try It Yourself! (zoom-scatter chart)](http://jsfiddle.net/fusioncharts/qyjwq3un/ '@@open-newtab') \r\r",
+                    "description": "Triggered every time a zoom-line/zoom-scatter chart is reset to its original values (when the zooming history is cleared). \r\r >[Try It Yourself! (zoom-line chart)](http://jsfiddle.net/fusioncharts/5tajR/)\r\r \n\n \r\r >[Try It Yourself! (zoom-scatter chart)](http://jsfiddle.net/fusioncharts/qyjwq3un/) \r\r",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -18011,7 +18011,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time a zoom-line/zoom-scatter chart is zoomed out. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/356h97t9/ '@@open-newtab') \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/ysvfd1kj/ '@@open-newtab') \r\r",
+                    "description": "Triggered every time a zoom-line/zoom-scatter chart is zoomed out. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/356h97t9/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/ysvfd1kj/) \r\r",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -18247,7 +18247,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time a zoom-line/zoom-scatter chart is zoomed in. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/f00L0jep/ '@@open-newtab') \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/zLoofks2/ '@@open-newtab') \r\r",
+                    "description": "Triggered every time a zoom-line/zoom-scatter chart is zoomed in. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/f00L0jep/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/zLoofks2/) \r\r",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -18483,7 +18483,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time a zoom-line/zoom-scatter chart is zoomed in or zoomed out. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/pp7fs0r5/ '@@open-newtab') \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/mo96L209/ '@@open-newtab') \r\r",
+                    "description": "Triggered every time a zoom-line/zoom-scatter chart is zoomed in or zoomed out. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/pp7fs0r5/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/mo96L209/) \r\r",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -18719,7 +18719,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time a zoom-line/zoom-scatter chart switches between the pin mode and the zoom mode. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/n86ar6bu/ '@@open-newtab') \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/bxz90nv7/ '@@open-newtab') \r\r",
+                    "description": "Triggered every time a zoom-line/zoom-scatter chart switches between the pin mode and the zoom mode. \r\r >[__Try It Yourself! (zoom-line chart)__](http://jsfiddle.net/fusioncharts/n86ar6bu/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/bxz90nv7/) \r\r",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -23497,7 +23497,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when you start drawing a selection box on a select-scatter/zoom-scatter chart. \r\r >[__Try It Yourself! (select-scatter chart)__](http://jsfiddle.net/fusioncharts/51t1gz2a/ '@@open-newtab') \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/thf9fxbg/ '@@open-newtab') \r\r",
+                    "description": "Triggered when you start drawing a selection box on a select-scatter/zoom-scatter chart. \r\r >[__Try It Yourself! (select-scatter chart)__](http://jsfiddle.net/fusioncharts/51t1gz2a/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/thf9fxbg/) \r\r",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -23843,7 +23843,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered when you complete drawing a selection box on a select-scatter/zoom-scatter chart. \r\r >[__Try It Yourself! (select-scatter chart)__](http://jsfiddle.net/fusioncharts/xL5yegvv/ '@@open-newtab') \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/6Lays0wo/ '@@open-newtab') \r\r",
+                    "description": "Triggered when you complete drawing a selection box on a select-scatter/zoom-scatter chart. \r\r >[__Try It Yourself! (select-scatter chart)__](http://jsfiddle.net/fusioncharts/xL5yegvv/) \r\r \n\n \r\r >[__Try It Yourself! (zoom-scatter chart)__](http://jsfiddle.net/fusioncharts/6Lays0wo/) \r\r",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -31923,7 +31923,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Triggered every time there is an error in updating chart data in real-time,  using the `dataStreamURL` attribute. \n\n .[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ugtf9jjh/ '@@open-newtab') \n\n",
+                    "description": "Triggered every time there is an error in updating chart data in real-time,  using the `dataStreamURL` attribute. \n\n .[__Try It Yourself!__](http://jsfiddle.net/fusioncharts/ugtf9jjh/) \n\n",
                     "examples": {},
                     "params": {
                         "eventObj": {
@@ -38909,7 +38909,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Switches between the zoom mode and pin mode of a zoom line chart programmatically. \n\n >You can manually switch between the zoom mode and the pin mode by clicking a button in the top-right corner of the zoom line chart. Click [here]({% site.baseurl %}/chart-guide/standard-charts/zoom-line-charts '@@open-newtab') to read about how the zoom line chart works under each mode.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/194d0pc2/ '@@ btn link-underline')",
+                    "description": "Switches between the zoom mode and pin mode of a zoom line chart programmatically. \n\n >You can manually switch between the zoom mode and the pin mode by clicking a button in the top-right corner of the zoom line chart. Click [here]({% site.baseurl %}/chart-guide/standard-charts/zoom-line-charts) to read about how the zoom line chart works under each mode.\n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/194d0pc2/ '@@ btn link-underline')",
                     "examples": {},
                     "params": {
                         "yes": {
@@ -39041,7 +39041,7 @@
                     "access": "",
                     "scope": "instance",
                     "virtual": false,
-                    "description": "Exports a chart as an image or as a PDF document. \n\nTo enable exporting of a chart, the `exportEnabled` attribute (of the `chart` object) should be set to __1__. \n\n When exporting is done programmatically using this method, the export configuration is passed as parameters to this function. \n\n >The `exportChart` function remains undefined until the [loaded]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-loaded) event is triggered. The exporting process is initiated only after the [renderComplete]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-renderComplete) event is triggered.\n\n To read on how you can export charts using the export-related context menu, click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf '@@open-newtab'). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/73xgmacm/ '@@ btn link-underline')",
+                    "description": "Exports a chart as an image or as a PDF document. \n\nTo enable exporting of a chart, the `exportEnabled` attribute (of the `chart` object) should be set to __1__. \n\n When exporting is done programmatically using this method, the export configuration is passed as parameters to this function. \n\n >The `exportChart` function remains undefined until the [loaded]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-loaded) event is triggered. The exporting process is initiated only after the [renderComplete]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#event-renderComplete) event is triggered.\n\n To read on how you can export charts using the export-related context menu, click [here]({% site.baseurl %}/exporting-charts/using-fc-export-server/exporting-charts-as-image-and-pdf). \n\n [__Try It Yourself!__](http://jsfiddle.net/fusioncharts/73xgmacm/ '@@ btn link-underline')",
                     "examples": {},
                     "params": {
                         "options": {
