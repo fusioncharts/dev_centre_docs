@@ -15,13 +15,9 @@ The different types of multi-series charts available in the FusionCharts Suite X
 
 * Multi-series Column 3D Chart
 
-* Overlapped Column 2D Chart
-
 * Multi-series Bar 2D Chart
 
 * Multi-series Bar 3D Chart
-
-* Overlapped Bar 2D Chart
 
 * Multi-series Line 2D Chart
 
