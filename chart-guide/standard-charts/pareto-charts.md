@@ -2,7 +2,6 @@
 title: Pareto Chart | FusionCharts
 description: In this section of Pareto chart you will be introduced to the basics of the Pareto chart and how you can create a simple one.
 heading: Pareto Chart
-breadcrumb: [["Home", "/"], ["Pareto Chart"]]
 ---
 
 > These chart types belong to **FusionCharts XT**.

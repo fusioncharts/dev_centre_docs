@@ -2,7 +2,6 @@
 title: Configure Zero Plane for X-Axis | FusionCharts
 description: Zero plane is a plane separating the positive/negative numbers on the y-axis. The zero plane appears in the column, line, scatter, bubble charts.
 heading: Zero Plane
-breadcrumb: [["Home", "/"], ["Zero Plane"]]
 ---
 
 Zero plane is a plane separating the positive and negative numbers on the y-axis of a chart. It is rendered by default in any chart that plots both negative and positive values.

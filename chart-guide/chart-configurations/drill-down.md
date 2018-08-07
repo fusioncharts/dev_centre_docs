@@ -2,7 +2,6 @@
 title: Drill-down Charts | FusionCharts
 description: Using FusionCharts Suite XT, you can create endless levels of drilldown. It has been kept very generic to accommodate all types of requirements.
 heading: Drill-down
-breadcrumb: [["Home", "/"], ["Drill-down Charts"]]
 ---
 
 You can use FusionCharts Suite XT to create drill-down charts. All charts (except for the Zoom line chart) support the drill-down interactivity for data elements - that is, for each chart type, the data plots in a chart (columns in column charts, pie slices in pie charts, etc.) can act as hot-spots. You can create endless levels of drill-down, based on your requirements. 

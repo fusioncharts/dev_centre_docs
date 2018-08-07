@@ -2,7 +2,6 @@
 title: Div Lines and Grids | FusionCharts
 description: Divisional lines are horizontal lines running along the canvas enabling easier visual reference of plot values against the y-axis
 heading: Div Lines and Grids
-breadcrumb: [["Home", "/"], ["Div Lines and Grids"]]
 ---
 
 Divisional lines are horizontal lines running along the canvas. They enable easier visual reference of plot values against the y-axis and help compare data points. In scatter and bubble charts, there are additional vertical divisional lines for better visualization.

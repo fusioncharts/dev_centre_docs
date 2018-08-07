@@ -2,7 +2,6 @@
 title: Line, Area and Column charts | FusionCharts
 description: The FusionCharts Suite XT standard charts are simple charts used to plot single-series data.
 heading: Line, Area and Column charts
-breadcrumb: [["Home", "/"], ["Line, Area and Column Charts"]]
 ---
 
 > These chart types belong to **FusionCharts XT**.

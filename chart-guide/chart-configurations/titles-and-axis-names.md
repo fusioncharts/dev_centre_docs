@@ -2,7 +2,6 @@
 title: Titles and Axis Names | FusionCharts
 description: This section talks about titles and axis names on the charts. One can insert caption, sub-caption, x-axis name and y-axis name in a chart
 heading: Titles and Axis Names
-breadcrumb: [["Home", "/"], ["Titles and Axis names"]]
 ---
 
 The caption (also called the chart title) is the heading of your chart, whereas a sub-caption is the text that appears just below the caption. In the sections below, you can see how to add a caption, subcaption, x-axis name, and y-axis name to your charts, as well as configure their font properties.

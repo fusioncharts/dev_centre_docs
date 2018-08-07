@@ -2,7 +2,6 @@
 title: Number Format | FusionCharts
 description: The section talks about basics of number formatting/scaling. Examples for configuring decimal places by rounding off with trailing zeroes is also possible
 heading: Number Format
-breadcrumb: [["Home", "/"], ["Number Format"]]
 ---
 
 FusionCharts Suite XT offers multiple options to format numbers on the chart. You can configure number prefixes and suffixes, decimal places, and scale numbers based on a predefined scale.

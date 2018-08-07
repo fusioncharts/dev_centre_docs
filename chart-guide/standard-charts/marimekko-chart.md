@@ -2,7 +2,6 @@
 title: Marimekko Chart | FusionCharts
 description: Marimekko charts are stacked column charts with columns of variable width. They are primarily used for marketing analysis.
 heading: Marimekko Chart
-breadcrumb: [["Home", "/"], ["Marimekko Chart"]]
 ---
 
 > This chart type belongs to **FusionCharts XT**.

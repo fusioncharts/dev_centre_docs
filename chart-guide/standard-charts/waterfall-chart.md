@@ -2,7 +2,6 @@
 title: Waterfall Chart | FusionCharts
 description: A waterfall chart, a type of column chart, used to show how an initial value is increased/decreased by a series of intermediate values, to a final value
 heading: Waterfall Chart
-breadcrumb: [["Home", "/"], ["Waterfall Chart"]]
 ---
 
 > This chart type belongs to **PowerCharts XT**.

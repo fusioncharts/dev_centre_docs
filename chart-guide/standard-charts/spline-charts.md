@@ -2,7 +2,6 @@
 title: Spline Charts Guide | FusionCharts
 description: Spline charts are a specialized form of line charts that display smooth curves through the different data points.
 heading: Spline Charts
-breadcrumb: [["Home", "/"], ["Spline Charts"]]
 ---
 
 > These chart types belong to **PowerCharts XT**.

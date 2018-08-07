@@ -2,7 +2,6 @@
 title: Radar Chart | FusionCharts
 description: A radar chart is a visual interpretation of data bearing multiple dimensions, the radial grid like structure,the chart displays different categories values
 heading: Radar Chart
-breadcrumb: [["Home", "/"], ["Radar Chart"]]
 ---
 
 > This chart type belongs to **PowerCharts XT**.

@@ -2,7 +2,6 @@
 title: Configure Tick Marks in a Gauge| FusionCharts
 description: Tick marks in gauges are calibration marks to help interpret reading. One show/hide tick marks,show tick mark values in decimals or show nth tick mark value
 heading: Tick Marks
-breadcrumb: [["Home", "/"], ["Tick marks"]]
 ---
 
 Tick marks, an element of gauges in FusionChart Suite XT, are calibration marks on the scale to help interpret readings. There are two types of tick marks:

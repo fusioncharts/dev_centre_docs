@@ -2,7 +2,6 @@
 title: Multi-level Pie Chart | FusionCharts
 description: The multi-level pie chart is a special type of chart that allows you to show symmetrical/asymmetrical tree structures in a consolidated pie-like structure
 heading: Multi-level Pie Chart
-breadcrumb: [["Home", "/"], ["Multi-level Pie Chart"]]
 ---
 
 > This chart type belongs to **PowerCharts XT**.

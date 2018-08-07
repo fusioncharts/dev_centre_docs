@@ -2,7 +2,6 @@
 title: Basic Annotations | FusionCharts
 description: Annotations are user-defined objects or shapes drawn on a chart. Annotations are often required to make interpretation of the chart easy for the end user.
 heading: Annotations
-breadcrumb: [["Home", "/"], ["Annotations"]]
 ---
 
 Annotations are user-defined objects or shapes drawn on a chart. You can use annotations to increase the visual appeal of your charts and make them more informative. Annotations help end users interpret charts better. You can create different shapes, images, and text annotations for use with your chart.

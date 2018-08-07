@@ -2,7 +2,6 @@
 title: Combination Charts | FusionCharts
 description: Combination charts allow you to plot multiple datasets on the same chart. But an added advantage with using combination charts is that you can also plot multiple chart types on the same chart.
 heading: Combination Charts
-breadcrumb: [["Home", "/"], ["Combination Charts"]]
 ---
 
 > These chart types belong to **FusionCharts XT**.

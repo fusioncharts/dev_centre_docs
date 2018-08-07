@@ -2,7 +2,6 @@
 title: Logarithmic Chart | FusionCharts
 description: Logarithmic charts are similar to normal charts except for the fact that logarithmic charts use a logarithmic axis instead of a linear axis.
 heading: Logarithmic Chart
-breadcrumb: [["Home", "/"], ["Logarithmic Charts"]]
 ---
 
 > These chart types belong to **PowerCharts XT**.

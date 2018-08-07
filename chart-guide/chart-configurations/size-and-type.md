@@ -2,7 +2,6 @@
 title: Changing the Size and Type | FusionCharts
 description: FusionCharts Suite XT lets you specify the dimensions of charts either in pixels or in percentage. You can also create a chart which resizes automatically.
 heading: Changing the Size and Type
-breadcrumb: [["Home", "/"], ["Changing the size and type"]]
 ---
 
 Integrate multiple charts on a single page to get a consolidated view. To do this, modify the dimensions of each chart so that it fits on the page.

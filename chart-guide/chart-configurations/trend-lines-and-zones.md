@@ -2,7 +2,6 @@
 title: Trend Lines and Zones | FusionCharts
 description: Trend lines are customisable reference horizontal or vertical lines which aid in interpretation of data. Section talks about trend lines and zones
 heading: Trend Lines and Zones
-breadcrumb: [["Home", "/"], ["Trendlines and zones"]]
 ---
 
 Trend lines are reference horizontal or vertical lines which help to interpret data. They are customizable and can be used to set context or define limits and targets. For example, while plotting quarterly sales of a company, you might want to use a trendline to depict the target sales.

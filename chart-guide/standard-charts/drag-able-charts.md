@@ -2,7 +2,6 @@
 title: Drag-able Charts | FusionCharts
 description: Drag-able charts are special types of charts that allow you to visually update data on the chart and understand how the estimated data values affect the whole chart.
 heading: Drag-able Charts
-breadcrumb: [["Home", "/"], ["Drag-able Charts"]]
 ---
 
 > These chart types belong to **PowerCharts XT**.
