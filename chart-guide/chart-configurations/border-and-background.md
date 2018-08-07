@@ -25,7 +25,7 @@ The chart without border will look like as shown below:
 
 {% embed_chart chart-configurations-border-and-background-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/b58ma056/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/b58ma056/) to edit the above chart.
 
 ## Customize Chart Borders
 
@@ -53,7 +53,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-border-and-background-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5vj22scs/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/5vj22scs/) to edit the above chart.
 
 ### Customize Chart Background
 
@@ -78,7 +78,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-border-and-background-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/c5o8spm5/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/c5o8spm5/) to edit the above chart.
 
 ## Use Gradient Background
 
@@ -117,7 +117,7 @@ The chart will look like as shown in the image below:
 
 {% embed_chart chart-configurations-border-and-background-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/73h05m4q/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/73h05m4q/) to edit the above chart.
 
 ## Use External Image
 
@@ -135,7 +135,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-border-and-background-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ceqLLtwk/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ceqLLtwk/) to edit the above chart.
 
 ## Customize Background Image
 
@@ -168,6 +168,6 @@ The chart will look like as shown in the image below:
 
 {% embed_chart chart-configurations-border-and-background-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/gyjd7y46/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/gyjd7y46/) to edit the above chart.
 
 > Note that alignment attributes are ignored for `center` and `stretch` display modes and `bgImageScale` attribute works only for `none`, `center` and `tile` display modes.

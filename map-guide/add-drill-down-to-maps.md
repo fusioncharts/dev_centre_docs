@@ -316,7 +316,7 @@ The map will look as shown below:
 
 {% embed_all map-guide-add-drill-down-to-maps-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9ntbpevv/ "@@open-newtab") to edit the above map.
+Click [here](http://jsfiddle.net/fusioncharts/9ntbpevv/) to edit the above map.
 
 > In the map given above, you are calling the `drillDownState` method and passing `DC|District of Columbia` to it as parameter.
 
@@ -696,7 +696,7 @@ The map looks like shown below:
 
 {% embed_all map-guide-add-drill-down-to-maps-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/dcfc6o86/ "@@open-newtab") to edit the above map.
+Click [here](http://jsfiddle.net/fusioncharts/dcfc6o86/) to edit the above map.
 
 ### Connect a map to a chart using `LinkedCharts`
 
@@ -1649,6 +1649,6 @@ For instance, look at the map given below:
 
 {% embed_all map-guide-add-drill-down-to-maps-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/wcg1c8rr/ "@@open-newtab") to edit the above map.
+Click [here](http://jsfiddle.net/fusioncharts/wcg1c8rr/) to edit the above map.
 
 That's it! You have just configured a map to drill down into a chart when you click on an entity.

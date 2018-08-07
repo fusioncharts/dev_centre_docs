@@ -28,7 +28,7 @@ Refer to the example below:
 </div>
 </div>
 
-The different log levels are described in the [CLI reference section]({% site.baseurl %}/exporting-charts/using-fusionexport/cli-reference "@@open-newtab").
+The different log levels are described in the [CLI reference section]({% site.baseurl %}/exporting-charts/using-fusionexport/cli-reference).
 
 ## Related Resources
 

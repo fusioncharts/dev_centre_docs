@@ -55,13 +55,13 @@ Ensure that you set the parent container of the chart in a way that allows its d
 
 After you initialize a chart, you can change the dimensions dynamically, at client-side, through the JavaScript API `resizeTo()`.
 
-Recreate the same chart you created earlier (as described in the [Your first chart]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart "@@open-newtab") article), using the same data. To resize the chart dynamically, invoke the `resizeTo()` method, specifying the new width and height of your chart (in pixels). You can call this method anytime after the chart has finished rendering.
+Recreate the same chart you created earlier (as described in the [Your first chart]({% site.baseurl %}/chart-guide/getting-started/building-your-first-chart) article), using the same data. To resize the chart dynamically, invoke the `resizeTo()` method, specifying the new width and height of your chart (in pixels). You can call this method anytime after the chart has finished rendering.
 
 Take a look at an example below, along with the code:
 
 {% embed_chart chart-configurations-size-and-type-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5Lpu0hrt/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/5Lpu0hrt/) to edit the above chart.
 
 ## Dynamically Change Chart Type 
 
@@ -73,7 +73,7 @@ Shown below is an example, along with the code:
 
 {% embed_chart chart-configurations-size-and-type-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/txyb6ss4/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/txyb6ss4/) to edit the above chart.
 
 You can also provide a new data source and format as an optional second parameter of `chartType (chartType, options)` method, to change the data along with the chart.
 

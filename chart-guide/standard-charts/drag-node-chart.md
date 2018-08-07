@@ -42,7 +42,7 @@ A sample drag-node chart is given below:
 
 {% embed_all standard-charts-drag-node-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/022jggxr/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/022jggxr/) to edit the above chart.
 
 Now, let's customize the appearance and properties of the chart.
 
@@ -68,7 +68,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-drag-node-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/hLjr3bve/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/hLjr3bve/) to edit the above chart.
 
 ### Switch between modes
 
@@ -88,7 +88,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-drag-node-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/pwnjtgvz/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/pwnjtgvz/) to edit the above chart.
 
 ## Add and edit nodes
 
@@ -98,7 +98,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-drag-node-chart-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ed9wo03u/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ed9wo03u/) to edit the above chart.
 
 The above chart shows the US Subway Map and uses draggable nodes to mark locations on the map.
 
@@ -240,7 +240,7 @@ A sample chart will look like the following:
 
 {% embed_chart standard-charts-drag-node-chart-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3pv7xvng/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/3pv7xvng/) to edit the above chart.
 
 The above chart shows the US Subway Map and uses drag-able nodes to mark locations on the map.
 
@@ -374,7 +374,7 @@ To understand this, the sample chart that we will use looks like this:
 
 {% embed_chart standard-charts-drag-node-chart-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/yLzuxLdz/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/yLzuxLdz/) to edit the above chart.
 
 The above chart shows the US Subway Map and uses draggable nodes to mark locations on the map.
 
@@ -560,7 +560,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-drag-node-chart-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/5oq3z9wg/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/5oq3z9wg/) to edit the above chart.
 
 Now, make the following updates to this drag-node chart:
 

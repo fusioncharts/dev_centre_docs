@@ -100,6 +100,6 @@ The map will look as shown below:
 
 {% embed_chart map-guide-coloring-based-on-data-range-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/r7L7xcv1/ "@@open-newtab") to edit the above map.
+Click [here](http://jsfiddle.net/fusioncharts/r7L7xcv1/) to edit the above map.
 
 > You can use only one color to draw the gradient scale. Here, the scale will appear starting from the darkest shade of the color (lower limit) to the brightest shade of the color (upper limit). The map will automatically decide the numeric range taking the lowest data value present as the lower limit and the highest data value as the upper limit. In this case, however, you cannot set the upper limit using the `maxValue` attribute.

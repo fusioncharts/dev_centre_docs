@@ -36,13 +36,13 @@ Using FusionCharts Suite XT, you can build two types of heat map charts. Use the
 
 {% embed_all standard-charts-heat-map-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/LsSU9/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/LsSU9/) to edit the above chart.
 
 ### Category based heat map chart
 
 {% embed_all standard-charts-heat-map-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/4qg2v27x/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/4qg2v27x/) to edit the above chart.
 
 ## Legends in heat map charts
 
@@ -95,7 +95,7 @@ The chart will look as shown below:
 
 {% embed_all standard-charts-heat-map-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9mngxv1s/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/9mngxv1s/) to edit the above chart.
 
 ## Define the order of rows and columns
 
@@ -170,7 +170,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-heat-map-chart-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ty6y2sya/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ty6y2sya/) to edit the above chart.
 
 ## Configure colors for individual cells
 
@@ -218,7 +218,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-heat-map-chart-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/n3o2ycc0/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/n3o2ycc0/) to edit the above chart.
 
 > In the above data, the `color` attribute is present in two data elements and applies different colors for the first two cells of the chart. These two colors are different from the colors defined in the `colorRange` element. You can also control the transparency of the cell using the `alpha` attribute with the `data` object.
 
@@ -311,7 +311,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-heat-map-chart-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/m0bkumqw/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/m0bkumqw/) to edit the above chart.
 
 In the category based heat map chart given above, you can see the average temperature, across various seasons, for the top four cities in the U.S. Note that you can only define a single color for a particular category. Any data set to that category will appear in the color specified for that particular group. You cannot use gradient colors in a category based heat map chart.
 
@@ -369,7 +369,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-heat-map-chart-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ou00rdwd/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ou00rdwd/) to edit the above chart.
 
 ### Use interactivity of icon legends
 
@@ -434,7 +434,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-heat-map-chart-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9jfkcnmc/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/9jfkcnmc/) to edit the above chart.
 
 ### Configure a single-color gradient legend
 
@@ -476,7 +476,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-heat-map-chart-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/48sa9jfw/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/48sa9jfw/) to edit the above chart.
 
 ### Use interactivity of a gradient legend
 
@@ -549,7 +549,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-heat-map-chart-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/jjpkt7zt/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/jjpkt7zt/) to edit the above chart.
 
 ### Configure tooltips
 
@@ -601,7 +601,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-heat-map-chart-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3wsay8rt/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/3wsay8rt/) to edit the above chart.
 
 ## Handle out-of-range data
 
@@ -641,7 +641,7 @@ Refer to the code below:
 
 {% embed_chart standard-charts-heat-map-chart-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/py94vcko/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/py94vcko/) to edit the above chart.
 
 To avoid such blank data plots, you can enable percentage mapping for heat map charts.
 
@@ -685,7 +685,7 @@ The chart will look as shown below:
 
 {% embed_chart standard-charts-heat-map-chart-example-13.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/a0bz875q/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/a0bz875q/) to edit the above chart.
 
 > When you use percentage mapping, the lowest data value from the JSON data is considered to be the lower limit and displayed as 0%. The highest data value, on the other hand, is considered as the upper limit and is displayed as 100%. Also, you need to create color ranges with 0 as the lower limit and 100 as the upper limit. You can enable percentage mapping even if all your data values fall within the defined range. 
 

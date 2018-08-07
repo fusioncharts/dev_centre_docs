@@ -26,7 +26,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-zero-plane-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/pxxsdfe0/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/pxxsdfe0/) to edit the above chart.
 
 ## Customize Zero Plane in 2D chart
 
@@ -56,7 +56,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-zero-plane-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ydxdrozz/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ydxdrozz/) to edit the above chart.
 
 ## Customize Zero Plane in 3D chart
 
@@ -89,7 +89,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-zero-plane-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/z6mqxka9/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/z6mqxka9/) to edit the above chart.
 
 ## Vertical Zero Plane
 
@@ -109,7 +109,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-zero-plane-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/1u4f1jpy/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/1u4f1jpy/) to edit the above chart.
 
 To configure the vertical zero plane use the following attributes:
 
@@ -136,7 +136,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-zero-plane-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8qqeL31d/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/8qqeL31d/) to edit the above chart.
 
 ## Show/Hide the Zero Plane Value
 
@@ -156,7 +156,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-zero-plane-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/tqr0yapk/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/tqr0yapk/) to edit the above chart.
 
 In dual y-axis charts, `showPZeroPlaneValue` (primary y-axis) and `showSZeroPlaneValue` (secondary y-axis) attributes are used to hide the zero plane values for the primary and secondary axis respectively.
 
@@ -175,4 +175,4 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-zero-plane-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/q364f9az/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/q364f9az/) to edit the above chart.

@@ -18,7 +18,7 @@ Now, see how the same chart will look, when rendered using annotations:
 
 {% embed_chart chart-configurations-annotations-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/49dJJ/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/49dJJ/) to edit the above chart.
 
 Looks much better, doesn't it? The chocolate bars shown in this chart are image annotations.
 
@@ -221,7 +221,7 @@ The column 2D chart rendered using text annotations looks like as shown below:
 
 {% embed_chart chart-configurations-annotations-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9xj50enk/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/9xj50enk/) to edit the above chart.
 
 ## Create Image Annotations
 
@@ -282,7 +282,7 @@ The column 2D charts with image annotations looks like:
 
 {% embed_chart chart-configurations-annotations-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/49dJJ/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/49dJJ/) to edit the above chart.
 
 ## Create Shape Annotations
 
@@ -358,7 +358,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-annotations-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9xj50enk/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/9xj50enk/) to edit the above chart.
 
 The rectangle around the text is a shape annotation.
 
@@ -512,7 +512,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-annotations-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/an9hfrch/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/an9hfrch/) to edit the above chart.
 
 ## Positioning Annotations 
 
@@ -581,7 +581,7 @@ A spline chart with a rectangle annotation and a text annotation positioned at t
 
 {% embed_chart chart-configurations-annotations-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ufgt8a10/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ufgt8a10/) to edit the above chart.
 
 ## Use Macros 
 
@@ -634,7 +634,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-annotations-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/jnkfyu5d/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/jnkfyu5d/) to edit the above chart.
 
 > In the chart above, the annotation items (a rectangle and a text label) showing the total footfall at Bakersfield Central are positioned at the top-right corner of the canvas. The values of the attributes `x`, `y`, `toX`, and `toY` are specified with respect to the canvas start and end position, using annotation macros.
 
@@ -772,7 +772,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-annotations-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/sxp10xpd/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/sxp10xpd/) to edit the above chart.
 
 > In the chart above, the annotation items (the horizontal dashed line, a text label on a rectangle at extreme left of the dashed line, and the label with the store name and the total number of visitors on the extreme right side of the line) are dynamically positioned, so that they appear when you hover the mouse pointer over the corresponding anchor. You can use annotation macros to do this, simply by specifying values for the `x`, `y`, `tox` and `toy` attributes with respect to the dataset position.
 
@@ -919,7 +919,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-annotations-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/bhqg0p4e/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/bhqg0p4e/) to edit the above chart.
 
 > In the above chart, the annotation items, showing the low, moderate, and high footfall ranges, are dynamically positioned over the y-axis using annotation sub-token macros.
 
@@ -1048,7 +1048,7 @@ The chart will look as follows:
 
 {% embed_chart chart-configurations-annotations-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/p6t4g981/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/p6t4g981/) to edit the above chart.
 
 In the spline chart given above, you can see the total number of footfalls for each week created as an annotation group. A rectangle and a text annotation are grouped together to show the total number of footfalls. Note that if you have to change the position of the text and rectangle annotation from the spline chart above, you would have to first reposition the rectangle annotation and then re-position the text annotation. Instead, if you manipulate them as a group, you only have to change the group's position.
 
@@ -1127,7 +1127,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-annotations-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/zfvp8ffp/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/zfvp8ffp/) to edit the above chart.
 
 > In the above spline chart, you can control whether the total number of footfalls will be shown or hidden, by manipulating attributes as a group.
 
@@ -1209,7 +1209,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-annotations-example-13.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/a39kuoj5/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/a39kuoj5/) to edit the above chart.
 
 ## Real life use cases
 
@@ -1281,7 +1281,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-annotations-example-14.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/pLvuerqt/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/pLvuerqt/) to edit the above chart.
 
 > In the above chart, you can see how to use annotations to create a callout (using a rectangle, a polygon, and a text annotation, grouped together) above a column. The annotations are dynamically positioned using annotation macros. After the chart is rendered (when the `[renderComplete]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#rendercomplete-226)` event is triggered), the quarter with the highest revenue is determined and the annotation group is positioned over the data plot representing that quarter.
 
@@ -1521,7 +1521,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-annotations-example-15.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/uc91ftc1/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/uc91ftc1/) to edit the above chart.
 
 > The above chart compares the footfall at two stores, Bakersfield Central and Los Angeles Topanga. When you hover the mouse pointer over a data plot, it triggers the `[dataplotRollover]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollover-247)` event. Consequently, an annotation group (containing a line, a label, and text annotation) is shown, which displays additional information about the data plot. When you hover the mouse pointer out of the data plot, it triggers the `[dataPlotRollOut]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollout-249)` event and the annotation group is hidden.
 
@@ -1634,7 +1634,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-annotations-example-16.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ov9kx01n/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ov9kx01n/) to edit the above chart.
 
 > The above chart showcases annotations positioned dynamically, with respect to the y-axis, using macros. The annotations are used to mark three different ranges - low, moderate and high, with three different colors.
 
@@ -1757,7 +1757,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-annotations-example-17.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/gkwnc4q3/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/gkwnc4q3/) to edit the above chart.
 
 > The above gauge shows the customer satisfaction score with some significant data like, the state average and the national average, using annotation shapes and text elements.
 
@@ -1844,7 +1844,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-annotations-example-18.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/rpsrtk8a/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/rpsrtk8a/) to edit the above chart.
 
 > In the above chart, images of brands are shown instead of the conventional 2D column data plots. Using these annotations makes the chart more intuitive while also increasing its visual appeal. Imagine how easy it becomes for your audience to read data in a chart like this, especially if the data is for a large number of brands.
 
@@ -1932,7 +1932,7 @@ The chart will look as shown below:
 
 {% embed_chart chart-configurations-annotations-example-19.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3Lnm59z6/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/3Lnm59z6/) to edit the above chart.
 
 > In the above chart, you can see how to use events on annotation items. If you hover the mouse pointer on the Weekend zone (represented by a green rectangle on the chart), it triggers the events **annotationRollOver** and **annotationRollOut**, which show the total footfall on Saturday and Sunday.
 

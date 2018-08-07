@@ -24,7 +24,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-loading-external-logo-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/xwmrw80q/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/xwmrw80q/) to edit the above chart.
 
 ## Configure the External Logo
 
@@ -53,7 +53,7 @@ The chart will look like as shownn below:
 
 {% embed_chart chart-configurations-loading-external-logo-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/za1a6xer/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/za1a6xer/) to edit the above chart.
 
 ## Link Logo to an External URL
 
@@ -75,4 +75,4 @@ The chart will look like as shown below:
 
 In the above chart, click on the logo to visit the external link.
 
-Click [here](http://jsfiddle.net/fusioncharts/s0shLfau/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/s0shLfau/) to edit the above chart.

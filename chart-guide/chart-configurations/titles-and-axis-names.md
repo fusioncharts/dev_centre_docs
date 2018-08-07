@@ -31,7 +31,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-titles-and-axis-names-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ubw094z3/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ubw094z3/) to edit the above chart.
 
 ## Customize Font Properties 
 
@@ -85,7 +85,7 @@ The chart with customized caption and subcaption looks like as shown below:
 
 {% embed_chart chart-configurations-titles-and-axis-names-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/o4xhvc0g/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/o4xhvc0g/) to edit the above chart.
 
 ## Configure Caption Alignment
 
@@ -116,7 +116,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-titles-and-axis-names-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/bbsmmt84/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/bbsmmt84/) to edit the above chart.
 
 ## Setting Axes Names
 
@@ -141,7 +141,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-titles-and-axis-names-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9y23m8vq/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/9y23m8vq/) to edit the above chart.
 
 ## Configure Font Cosmetic Properties 
 
@@ -201,7 +201,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-titles-and-axis-names-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7o7qpcL2/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/7o7qpcL2/) to edit the above chart.
 
 ## Configure Cosmetic Properties of Borders of the Names
 
@@ -279,7 +279,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-titles-and-axis-names-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/js1h6pgm/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/js1h6pgm/) to edit the above chart.
 
 ## Configure the Font Opacity and Background
 
@@ -345,7 +345,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-titles-and-axis-names-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/4q55b6z5/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/4q55b6z5/) to edit the above chart.
 
 ## Configure Font Properties for Y-axis Names
 
@@ -392,7 +392,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-titles-and-axis-names-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/pfsytcca/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/pfsytcca/) to edit the above chart.
 
 ## Configure Background Properties of Y-axis Names
 
@@ -427,7 +427,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-titles-and-axis-names-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/999f2Lbw/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/999f2Lbw/) to edit the above chart.
 
 ## Configure the Border Properties of Y-axis Names
 
@@ -478,4 +478,4 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-titles-and-axis-names-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/d09622mw/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/d09622mw/) to edit the above chart.

@@ -32,25 +32,25 @@ To create a pareto chart in 2D follow the steps given below: set the `type` attr
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pareto2d "@@open-newtab") page of multi-series pareto 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pareto2d) page of multi-series pareto 2D chart.
 
 The pareto chart in 2D for the above code looks like:
 
 {% embed_all standard-charts-pareto-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/Qc4Gp/ "@@open-newtab") to edit the pareto 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/Qc4Gp/) to edit the pareto 2D chart.
 
 ## Pareto 3D
 
 To render a pareto chart in 3D, change the value of the `type` attribute from `pareto2D` to `pareto3D`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pareto3d "@@open-newtab") page of multi-series pareto 3D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pareto3d) page of multi-series pareto 3D chart.
 
 A simple Pareto 3D chart looks like this:
 
 {% embed_all standard-charts-pareto-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/qEc4w/ "@@open-newtab") to edit the pareto 3D chart.
+Click [here](http://jsfiddle.net/fusioncharts/qEc4w/) to edit the pareto 3D chart.
 
 > The data for the above two charts is single series. Values provided are only for the column plots. The percentage values for the line are automatically calculated and added to the chart.
 
@@ -74,7 +74,7 @@ A pareto chart configured to render the percentage values for the line chart loo
 
 {% embed_chart standard-charts-pareto-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/zr2mdz3t/ "@@open-newtab") to edit the pareto 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/zr2mdz3t/) to edit the pareto 2D chart.
 
 ## Customize the Line Dataset
 
@@ -110,7 +110,7 @@ A pareto chart with the line segments customized looks like this:
 
 {% embed_chart standard-charts-pareto-chart-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/nmf6af24/ "@@open-newtab") to edit the pareto 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/nmf6af24/) to edit the pareto 2D chart.
 
 ## Hide Secondary Axis Values
 
@@ -134,4 +134,4 @@ A pareto chart with hidden secondary y-axis looks like:
 
 {% embed_chart standard-charts-pareto-chart-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/zm25ufqu/ "@@open-newtab") to edit the pareto 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/zm25ufqu/) to edit the pareto 2D chart.

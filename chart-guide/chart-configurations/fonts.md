@@ -32,7 +32,7 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-fonts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/fyczLffy/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/fyczLffy/) to edit the above chart.
 
 ## Outside Canvas Base Font Group
 
@@ -59,6 +59,6 @@ The chart will look like as shown below:
 
 {% embed_chart chart-configurations-fonts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/61h06pfo/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/61h06pfo/) to edit the above chart.
 
 > Note that `outCanvasBaseFont` group overrides the setting of the `baseFont` group.

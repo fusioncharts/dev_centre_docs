@@ -36,13 +36,13 @@ To create a single-series spline 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=spline "@@open-newtab") page of single-series spline 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=spline) page of single-series spline 2D chart.
 
 A simple single-series spline 2D chart looks like this:
 
 {% embed_all standard-charts-spline-charts-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/9C9pj/ "@@open-newtab") to edit the single-series spline 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/9C9pj/) to edit the single-series spline 2D chart.
 
 ## Multi-Series Spline Chart
 
@@ -52,13 +52,13 @@ To render a multi-series spline chart:
 
 * Use the `seriesname` attribute and the `data` object, which belong to the `dataset` object, to specify multiple datasets.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=msspline "@@open-newtab") page of multi-series spline 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=msspline) page of multi-series spline 2D chart.
 
 A multi-series spline chart looks like:
 
 {% embed_all standard-charts-spline-charts-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/tnt27/ "@@open-newtab") to edit the multi-series spline chart.
+Click [here](http://jsfiddle.net/fusioncharts/tnt27/) to edit the multi-series spline chart.
 
 ## Multi-Series Spline Area 2D
 
@@ -70,24 +70,24 @@ To render a multi-series spline area 2D chart:
 
 * Use the `seriesname` attribute and the `data` object, which belong to the `dataset` object, to specify multiple datasets.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=mssplinearea "@@open-newtab") page of multi-series spline area 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=mssplinearea) page of multi-series spline area 2D chart.
 
 A simple multi-series spline area 2D chart looks like this:
 
 {% embed_all standard-charts-spline-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/W9Bn6/ "@@open-newtab") to edit the multi-series spline area 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/W9Bn6/) to edit the multi-series spline area 2D chart.
 
 ## Single-Series Spline Area 2D Chart
 
 To render a single-series spline area chart, set the `type` attribute to `splinearea`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=splinearea "@@open-newtab") page of single-series spline area 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=splinearea) page of single-series spline area 2D chart.
 
 A simple single-series spline area 2D chart looks like this:
 
 {% embed_all standard-charts-spline-charts-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/gwRWL/ "@@open-newtab") to edit the single-series spline area 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/gwRWL/) to edit the single-series spline area 2D chart.
 
 > Spline and spline area charts do not support joining of empty data points in the chart. That means, if your chart does not contain data at a particular point, the data points cannot be connected to each other and will appear as a broken dataset.

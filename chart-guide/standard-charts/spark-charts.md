@@ -166,7 +166,7 @@ The chart will look like the following:
 
 {% embed_all standard-charts-spark-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/wrm46/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/wrm46/) to edit the above chart.
 
 Configure the functional and cosmetic properties of a spark line chart in many ways, using FusionCharts Suite XT.
 
@@ -196,7 +196,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/D2C4q/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/D2C4q/) to edit the above chart.
 
 ## Configure open, close, high, and low points
 
@@ -229,7 +229,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6ZVkb/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/6ZVkb/) to edit the above chart.
 
 ## Show selective points
 
@@ -260,7 +260,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7rtvb/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/7rtvb/) to edit the above chart.
 
 Notice that the chart is rendered with four checkboxes below the chart: **Show Open Anchor**, **Show Close Anchor**, **Show High Anchor**, and **Show Low Anchor**. Select the checkboxes to show the respective anchor points, or clear them to hide the respective anchor points.
 
@@ -291,7 +291,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/LWhcS/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/LWhcS/) to edit the above chart.
 
 Notice that the chart is rendered with four checkboxes below the chart: **Show Open Value**, **Show Close Value**, **Show High Value**, and **Show Low Value**. Select the checkboxes to show the respective anchor values, or clear them to hide the values.
 
@@ -322,7 +322,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/KEE66/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/KEE66/) to edit the above chart.
 
 ## Configure anchor cosmetics
 
@@ -356,7 +356,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/745Az/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/745Az/) to edit the above chart.
 
 ## Show only points but no lines
 
@@ -376,7 +376,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8975mgsx/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/8975mgsx/) to edit the above chart.
 
 ### Add trend lines/trend zones
 
@@ -413,7 +413,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/KRZ9W/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/KRZ9W/) to edit the above chart.
 
 ### Customize trend-lines
 
@@ -460,7 +460,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/aFE6Q/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/aFE6Q/) to edit the above chart.
 
 ### Add trend-zones
 
@@ -502,7 +502,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/mLGD3/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/mLGD3/) to edit the above chart.
 
 ### Configure hover effects
 
@@ -533,7 +533,7 @@ The chart will look like the following:
 
 ![Spark-Charts-GIF-1]({% site.baseurl %}/gif/standard-charts-spark-charts-gif-1.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/fwaL5/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/fwaL5/) to edit the above chart.
 
 ## Create a spark column chart
 
@@ -543,7 +543,7 @@ The chart will look like the following:
 
 {% embed_all standard-charts-spark-chart-example-13.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/nbTf9/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/nbTf9/) to edit the above chart.
 
 Customize several cosmetic and functional properties of the spark column chart, using FusionCharts Suite XT.
 
@@ -573,7 +573,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-14.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/3MMH2/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/3MMH2/) to edit the above chart.
 
 ## Configure the high and low columns
 
@@ -598,7 +598,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-15.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/TQ6pv/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/TQ6pv/) to edit the above chart.
 
 ## Add Trend-lines
 
@@ -633,7 +633,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-16.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/ZLhAG/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/ZLhAG/) to edit the above chart.
 
 ## Customize trend-lines
 
@@ -680,7 +680,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-17.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8WKu4/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/8WKu4/) to edit the above chart.
 
 ## Add trend-zones
 
@@ -721,7 +721,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-18.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/TZ3tB/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/TZ3tB/) to edit the above chart.
 
 ## Configure hover effects for the chart
 
@@ -747,7 +747,7 @@ The chart will look like the following:
 
 ![Spark-Charts-GIF-2]({% site.baseurl %}/gif/standard-charts-spark-charts-gif-2.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/UhMzX/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/UhMzX/) to edit the above chart.
 
 ## Create spark win/loss charts
 
@@ -807,7 +807,7 @@ The chart will look like the following:
 
 {% embed_all standard-charts-spark-chart-example-20.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/nn5hx/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/nn5hx/) to edit the above chart.
 
 Configure the functional and cosmetic properties of spark win-loss charts, using FusionCharts Suite XT.
 
@@ -837,7 +837,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-21.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/6c5hbzLn/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/6c5hbzLn/) to edit the above chart.
 
 > When configuring period blocks, ensure that the period length is always less than the number of data points that you have specified, as period length is directly numbered on data points.
 
@@ -867,7 +867,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-22.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/RAVML/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/RAVML/) to edit the above chart.
 
 ## Configure colors to show scoreless matches
 
@@ -887,7 +887,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-12.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/q6m35/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/q6m35/) to edit the above chart.
 
 ## Show/hide chart values
 
@@ -907,7 +907,7 @@ The chart will look like the following:
 
 {% embed_chart standard-charts-spark-chart-example-19.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/U3Qkj/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/U3Qkj/) to edit the above chart.
 
 ## Configure hover effects
 
@@ -938,4 +938,4 @@ The chart will look like the following:
 
 ![Spark-Charts-GIF-3]({% site.baseurl %}/gif/standard-charts-spark-charts-gif-3.gif)
 
-Click [here](http://jsfiddle.net/fusioncharts/8myGp/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/8myGp/) to edit the above chart.

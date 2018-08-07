@@ -22,7 +22,7 @@ The drag-node chart below shows the implementation of the toolbar:
 
 {% embed_chart chart-configurations-toolbar-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/bvzjqkoq/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/bvzjqkoq/) to edit the above chart.
 
 The multi-axis line chart below shows the **current implementation of the checkboxes** used to show/hide the axes lines. This implementation uses pure SVG exportable checkboxes while the previous implementation used HTML checkboxes.
 
@@ -40,6 +40,6 @@ Refer to the code below:
 
 {% embed_chart chart-configurations-toolbar-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/hzg6mn18/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/hzg6mn18/) to edit the above chart.
 
 The difference between the current and previous implementation of the checkboxes in the multi-axis line chart is that you can configure the current checkboxes to set a custom checkbox color.

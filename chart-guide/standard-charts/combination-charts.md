@@ -6,7 +6,7 @@ heading: Combination Charts
 
 > These chart types belong to **FusionCharts XT**.
 
-Combination charts are similar to [multi-series charts]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts "@@open-newtab"). They allow you to plot multiple datasets on the same chart. But an added advantage of using combination charts is that you can also plot multiple chart types on the same chart. For example, you can show the column, line, and area chart on the same chart canvas.
+Combination charts are similar to [multi-series charts]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts). They allow you to plot multiple datasets on the same chart. But an added advantage of using combination charts is that you can also plot multiple chart types on the same chart. For example, you can show the column, line, and area chart on the same chart canvas.
 
 > Combination charts can be rendered in either 2D or 3D, can have single or dual y-axes, and can be stacked or multi series in nature.
 
@@ -48,13 +48,13 @@ To create a single y-axis combination chart in 2D follow the steps below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=mscombi2d "@@open-newtab") page of single y-axis combination chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=mscombi2d) page of single y-axis combination chart.
 
 A 2D combination chart with a single y-axis looks like this:
 
 {% embed_all standard-charts-combination-chart-example-1.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/4REJ5/ "@@open-newtab") to edit the single y combination chart in 2D.
+Click [here](http://jsfiddle.net/fusioncharts/4REJ5/) to edit the single y combination chart in 2D.
 
 You can also build the above combination chart using Spline and Spline Area. To define any one of the dataset to spline or spline area, set the `renderAs` attribute to `spline` or `splineArea` respectively. 
 
@@ -68,13 +68,13 @@ Click here to edit the above chart.
 
 To render a single y-axis combination chart in 3D, change the value of the `type` attribute from `mscombi2d` to `mscombi3d`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=mscombi3d "@@open-newtab") page of 3D single y-axis combination chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=mscombi3d) page of 3D single y-axis combination chart.
 
 A single y-axis combination chart in 3D looks like:
 
 {% embed_all standard-charts-combination-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/rjy87gfy/ "@@open-newtab") to edit the single y combination chart in 2D.
+Click [here](http://jsfiddle.net/fusioncharts/rjy87gfy/) to edit the single y combination chart in 2D.
 
 ## 2D Dual Y-axis Combination Chart
 
@@ -84,19 +84,19 @@ In this chart, we will show a comparison between the revenue, profit, and the pr
 
 Therefore, we've plotted the amount in USD on the primary y-axis (the one on the left) and the profit % on the secondary y-axis (the one on the right).
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=mscombidy2d "@@open-newtab") page of 2D dual y-axis combination chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=mscombidy2d) page of 2D dual y-axis combination chart.
 
 A 2D combination chart with dual y-axis looks like this:
 
 {% embed_all standard-charts-combination-chart-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/S52bN/ "@@open-newtab") to edit the dual y-axis combination chart in 2D.
+Click [here](http://jsfiddle.net/fusioncharts/S52bN/) to edit the dual y-axis combination chart in 2D.
 
 ## Column 3D + Line Single Y-axis Chart
 
 Now, let's create a column and line multi-series chart in 3D. For this, set the value of the `type` attribute to `mscolumnline3d`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=mscolumnline3d "@@open-newtab") page of column 3D + line single y-axis chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=mscolumnline3d) page of column 3D + line single y-axis chart.
 
 The following chart will showcase the comparsion between the fixed cost, variable cost and the budgeted cost for a year. The fixed cost and the variable cost will be shown in column and the budgeted cost will be shown by a line.
 
@@ -104,25 +104,25 @@ The above multi-series series chart looks like:
 
 {% embed_all standard-charts-combination-chart-example-6.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/s585beou/ "@@open-newtab") to edit the column 3D + line single y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/s585beou/) to edit the column 3D + line single y-axis chart.
 
 ## Column 3D + Line Dual Y-axis Chart
 
 To render a column 3D and line multi-series chart with dual y-axis, change the value of the `type` attribute from `mscolumnline3d` to `mscolumn3dlinedy`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=mscolumn3dlinedy "@@open-newtab") page of column 3D + line dual y-axis chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=mscolumn3dlinedy) page of column 3D + line dual y-axis chart.
 
 The chart looks like as shown below:
 
 {% embed_all standard-charts-combination-chart-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/MSDV4/ "@@open-newtab") to edit the column 3D + line dual y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/MSDV4/) to edit the column 3D + line dual y-axis chart.
 
 ## Stacked Column 2D Line Single Y-axis Chart
 
 Now, let's create a combination of stacked column and a line chart in 2D. For this, set the value of `type` attribute to `stackedcolumn2dline`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedcolumn2dline "@@open-newtab") page of stacked column 2D line single y-axis chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedcolumn2dline) page of stacked column 2D line single y-axis chart.
 
 The following chart will showcase the comparison between the revenue of food products and non-food products of Harry's SuperMart. With that profit for it will be shown using a line chart.
 
@@ -130,43 +130,43 @@ The above chart looks like:
 
 {% embed_all standard-charts-combination-chart-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/4uz2u8yd/ "@@open-newtab") to edit the stacked column 2D line single y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/4uz2u8yd/) to edit the stacked column 2D line single y-axis chart.
 
 ## Stacked Column 3D Line Single Y-axis Chart
 
 To render the stacked column 3D and line chart with single y-axis, change the value of the `type` attribute from `stackedcolumn2dline` to `stackedcolumn3dline`. Rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedcolumn3dline "@@open-newtab") page of stacked column 2D line single y-axis chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedcolumn3dline) page of stacked column 2D line single y-axis chart.
 
 The above stacked column 3D line looks like:
 
 {% embed_all standard-charts-combination-chart-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/gu8jk5yj/ "@@open-newtab") to edit the stacked column 2D line single y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/gu8jk5yj/) to edit the stacked column 2D line single y-axis chart.
 
 ## Stacked Column 3D Line Dual Y-axis Chart
 
 To render the stacked column 3D and line chart with dual y-axis, change the value of the `type` attribute from `stackedcolumn3dline` to `stackedcolumn3dlinedy`. Rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedcolumn3dlinedy "@@open-newtab") page of stacked column 2D line single y-axis chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=stackedcolumn3dlinedy) page of stacked column 2D line single y-axis chart.
 
 The above stacked column 3D line looks like:
 
 {% embed_all standard-charts-combination-chart-example-10.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/7chax01w/ "@@open-newtab") to edit the stacked column 2D line single y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/7chax01w/) to edit the stacked column 2D line single y-axis chart.
 
 ## Multi Series Stacked Column 2D + Line Dual Y-axis Chart
 
 To render the multi-series stacked column + line dual y-axis chart in 2D, set the value of `type` attribute to `msstackedcolumn2dlinedy`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=msstackedcolumn2dlinedy "@@open-newtab") page of multi-series stacked column 2D line dual y-axis chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=msstackedcolumn2dlinedy) page of multi-series stacked column 2D line dual y-axis chart.
 
 The chart looks like:
 
 {% embed_all standard-charts-combination-chart-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8d3px3xp/ "@@open-newtab") to edit the stacked column 2D line single y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/8d3px3xp/) to edit the stacked column 2D line single y-axis chart.
 
 Now, let's customize the appearance and properties of the combination charts.
 
@@ -220,7 +220,7 @@ A combination chart rendered with two trend-lines looks like this:
 
 {% embed_chart standard-charts-combination-chart-example-4.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/pj4koo6s/ "@@open-newtab") to edit the combination chart.
+Click [here](http://jsfiddle.net/fusioncharts/pj4koo6s/) to edit the combination chart.
 
 ## Placing the Secondary Axis on the Left
 
@@ -240,4 +240,4 @@ A combination chart rendered with the positions of the axes swapped looks like t
 
 {% embed_chart standard-charts-combination-chart-example-5.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/b0jw9h1L/ "@@open-newtab") to edit the combination chart.
+Click [here](http://jsfiddle.net/fusioncharts/b0jw9h1L/) to edit the combination chart.

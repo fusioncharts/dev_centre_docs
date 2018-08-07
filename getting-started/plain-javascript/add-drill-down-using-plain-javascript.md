@@ -36,7 +36,7 @@ The above chart, when rendered, looks like the following:
 
 {% embed_chart chart-configurations-drill-down-example-7.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/wvpzfz5g/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/wvpzfz5g/) to edit the above chart.
 
 ### Create linked charts using Data URL method
 
@@ -56,7 +56,7 @@ The above chart, when rendered, looks like the following:
 
 {% embed_chart chart-configurations-drill-down-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/v76phqq5/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/v76phqq5/) to edit the above chart.
 
 Here, `newchart` is constant.For the data URL method, assign `jsonurl` (if the data for the descendant chart is in a .json file) or `xmlurl` (if the data for the descendant chart is in a .xml file) as the value of `dataformat`. Specify the URL of the `.json` or `.xml` file as the value of the `datasource` attribute.
 
@@ -296,7 +296,7 @@ A chart utilizing these events is given below:
 
 {% embed_chart chart-configurations-drill-down-example-8.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/sknyboh5/ "@@open-newtab") to edit the above chart.
+Click [here](http://jsfiddle.net/fusioncharts/sknyboh5/) to edit the above chart.
 
 Configure the `addEventListener()` method for the parent chart to listen to these events. The data structure that shows how to implement these events is given below:
 
