@@ -179,7 +179,7 @@ FusionCharts.ready(function() {
                 "value": "30"
             }]
         }
-    }
+    });
 });
 ```
 
