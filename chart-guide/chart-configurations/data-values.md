@@ -40,6 +40,7 @@ Instead of displaying numeric data values, you can use text labels to denote dat
     ]
 }
 ```
+
 The chart will look like as shown below:
 
 {% embed_chart chart-configurations-data-values-example-1.js %}
@@ -74,12 +75,12 @@ Click [here](http://jsfiddle.net/fusioncharts/c8co0Lgv/ "@@open-newtab") to edit
 
 ## Display Data Values outside Columns
 
-By default, the data values are displayed within the column data plots. Set the `placeValuesInside` attribute to `0` and display the data values outside the column data plots. Refer to the code below:
+By default, the data values are displayed within the column data plots. Set the `placeValuesInside` attribute to `1` and display the data values inside the column data plots. Refer to the code below:
 
 ```json
 {
     "chart": {
-        "placeValuesInside": "0"
+        "placeValuesInside": "1"
     }
 }
 ```

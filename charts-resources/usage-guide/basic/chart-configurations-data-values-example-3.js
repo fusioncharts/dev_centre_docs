@@ -1,10 +1,8 @@
 {
-
     type: 'column2d',
-    renderAt: 'chart-container',
-    
-    width: '450',
-    height: '300',
+    renderAt: 'chart-container',   
+    width: '500',
+    height: '350',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -14,6 +12,7 @@
             "xAxisName": "Quarter",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
+            "showValues": "1",
             "rotateValues": "0"
         },
         "data": [{
