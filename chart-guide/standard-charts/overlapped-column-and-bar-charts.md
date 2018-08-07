@@ -48,5 +48,3 @@ The overlapped bar 2D chart looks like:
 {% embed_all standard-charts-overlapped-bar2d-chart-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/6k7zoes8/) to edit the above overlapped bar 2D chart.
-
-Costomization of the Overlapped Bar & Column charts are same as [Combination Charts]({% site.baseurl %}/chart-guide/standard-charts/combination-charts).

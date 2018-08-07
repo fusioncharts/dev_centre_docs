@@ -1,8 +1,10 @@
 ---
 title: Changelog | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
-heading: Changelog
+heading: Version 3.13.0
 ---
+
+<p class="release-date"> 3rd August, 2018 </p>
 
 ## New Features
 
