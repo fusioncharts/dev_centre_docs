@@ -178,7 +178,7 @@ To use any other map (except world and USA) from the **1400+** maps, [download](
 <script type="text/javascript" src="path/to/local/maps/fusioncharts.[MAP_ALIAS].js"></script>
 ```
 
-Click [here]({% site.baseurl %}/chart-guide/list-of-charts) to explore all the maps available in FusionMaps XT.
+Click [here]({% site.baseurl %}/map-guide/list-of-maps) to explore all the maps available in FusionMaps XT.
 
 Once you have specifically included all the files, your HTML head section should look like this:
 
