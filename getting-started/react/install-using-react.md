@@ -353,8 +353,8 @@ import World from 'fusioncharts/maps/es/fusioncharts.world';
 **Step 6:** Add the map as the dependency to the core
 
 ```JavaScript
-// Maps -  reference from above
-ReactFC.fcRoot(FusionCharts, Maps, World);
+// FusionMaps -  reference from above
+ReactFC.fcRoot(FusionCharts, FusionMaps, World);
 ```
 
 **Load other map definition files**

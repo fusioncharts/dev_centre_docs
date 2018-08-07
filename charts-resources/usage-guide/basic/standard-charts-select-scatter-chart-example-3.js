@@ -1,8 +1,8 @@
 {
     type: 'selectscatter',
     renderAt: 'chart-container',
-    width: '500',
-    height: '350',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {

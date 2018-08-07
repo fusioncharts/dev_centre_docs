@@ -111,49 +111,51 @@ In this step, we will set the chart type as `column2d`, set the width and height
 First, store the configurations as a JSON object in a variable as below:
 
 ```json
-var chartConfigs = {
-    type: 'column2d', // The chart type
-    width: '700', // Width of the chart
-    height: '400', // Height of the chart
-    dataFormat: 'json', // Data type
-    dataSource: {
-        // Chart Configuration
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion",
-        },
-        // Chart Data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    }
-};
+<script type="text/javascript">
+    var chartConfigs = {
+        type: 'column2d', // The chart type
+        width: '700', // Width of the chart
+        height: '400', // Height of the chart
+        dataFormat: 'json', // Data type
+        dataSource: {
+            // Chart Configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+            },
+            // Chart Data
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
+        }
+    };
+</script>
 ```
 
 To render the chart, the `react-fusioncharts` component can be:
@@ -166,11 +168,15 @@ OR
 
 #### Passed directly to the ReactDOM.render() method:
 
+To add `js` code within the `<script>` tag in HTML page, add `type="text/jsx"`.
+
 ```
+<script type="text/jsx">
 ReactDOM.render(
     <ReactFC {...chartConfigs} />,
     document.getElementById('chart-container')
 );
+</script>
 ```
 
 #### Passed as a part of another ReactJS component:
@@ -266,49 +272,68 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 In this step, we will set the chart type as `angulargauge`, set the **width** and **height** (in pixels or %), and finally specify the JSON data for the chart as a string.
 
 ```json
-var chartConfigs = {
-    type: 'angulargauge', // The chart type
-    width: '450', // Width of the chart
-    height: '250', // Height of the chart
-    dataFormat: 'json', // Data type
-    dataSource: {
-        // Chart Configuration
-        "chart": {
-            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-            "lowerLimit": "0",
-            "upperLimit": "100",
-            "showValue": "1",
-            "numberSuffix": "%",
-            "theme": "fusion",
-            "showToolTip": "0"
-        },
-        // Chart Data
-        "colorRange": {
-            "color": [{
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#F2726F"
-            }, {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#FFC533"
-            }, {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#62B58F"
-            }]
-        },
-        "dials": {
-            "dial": [{
-                "value": "81"
-            }]
+<script type="text/javascript">
+    var chartConfigs = {
+        type: 'angulargauge', // The chart type
+        width: '450', // Width of the chart
+        height: '250', // Height of the chart
+        dataFormat: 'json', // Data type
+        dataSource: {
+            // Chart Configuration
+            "chart": {
+                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                "lowerLimit": "0",
+                "upperLimit": "100",
+                "showValue": "1",
+                "numberSuffix": "%",
+                "theme": "fusion",
+                "showToolTip": "0"
+            },
+            // Chart Data
+            "colorRange": {
+                "color": [{
+                    "minValue": "0",
+                    "maxValue": "50",
+                    "code": "#F2726F"
+                }, {
+                    "minValue": "50",
+                    "maxValue": "75",
+                    "code": "#FFC533"
+                }, {
+                    "minValue": "75",
+                    "maxValue": "100",
+                    "code": "#62B58F"
+                }]
+            },
+            "dials": {
+                "dial": [{
+                    "value": "81"
+                }]
+            }
         }
-    }
-};
+    };
+</script>
+```
+
+To render the chart, the `react-fusioncharts` component can be:
+
+* Passed directly to the `ReactDOM.render()` method
+
+OR
+
+* Passed as part of another **ReactJS** component
+
+#### Passed directly to the ReactDOM.render() method:
+
+To add `js` code within the `<script>` tag in HTML page, add `type="text/jsx"`.
+
+```
+<script type="text/jsx">
 ReactDOM.render(
     <ReactFC {...chartConfigs} />,
     document.getElementById('chart-container')
 );
+</script>
 ```
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge) for an angular gauge.
@@ -407,73 +432,92 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 In this step, we will set the map type as `world`, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
 
 ```json
-var chartConfigs = {
-    type: 'world', // The chart type
-    width: '800', // Width of the chart
-    height: '550', // Height of the chart
-    dataFormat: 'json', // Data type
-    dataSource: {
-        // Map Configuration
-        "chart": {
-            "caption": "Average Annual Population Growth",
-            "subcaption": " 1955-2015",
-            "numbersuffix": "%",
-            "includevalueinlabels": "1",
-            "labelsepchar": ": ",
-            "entityFillHoverColor": "#FFF9C4",
-            "theme": "fusion"
-        },
-        // Aesthetics; ranges synced with the slider
-        "colorrange": {
-            "minvalue": "0",
-            "code": "#FFE0B2",
-            "gradient": "1",
-            "color": [{
-                "minvalue": "0.5",
-                "maxvalue": "1.0",
-                "color": "#FFD74D"
+<script type="text/javascript">
+    var chartConfigs = {
+        type: 'world', // The chart type
+        width: '800', // Width of the chart
+        height: '550', // Height of the chart
+        dataFormat: 'json', // Data type
+        dataSource: {
+            // Map Configuration
+            "chart": {
+                "caption": "Average Annual Population Growth",
+                "subcaption": " 1955-2015",
+                "numbersuffix": "%",
+                "includevalueinlabels": "1",
+                "labelsepchar": ": ",
+                "entityFillHoverColor": "#FFF9C4",
+                "theme": "fusion"
+            },
+            // Aesthetics; ranges synced with the slider
+            "colorrange": {
+                "minvalue": "0",
+                "code": "#FFE0B2",
+                "gradient": "1",
+                "color": [{
+                    "minvalue": "0.5",
+                    "maxvalue": "1.0",
+                    "color": "#FFD74D"
+                }, {
+                    "minvalue": "1.0",
+                    "maxvalue": "2.0",
+                    "color": "#FB8C00"
+                }, {
+                    "minvalue": "2.0",
+                    "maxvalue": "3.0",
+                    "color": "#E65100"
+                }]
+            },
+            // Source data as JSON --> id represents countries of world.
+            "data": [{
+                "id": "NA",
+                "value": ".82",
+                "showLabel": "1"
             }, {
-                "minvalue": "1.0",
-                "maxvalue": "2.0",
-                "color": "#FB8C00"
+                "id": "SA",
+                "value": "2.04",
+                "showLabel": "1"
             }, {
-                "minvalue": "2.0",
-                "maxvalue": "3.0",
-                "color": "#E65100"
+                "id": "AS",
+                "value": "1.78",
+                "showLabel": "1"
+            }, {
+                "id": "EU",
+                "value": ".40",
+                "showLabel": "1"
+            }, {
+                "id": "AF",
+                "value": "2.58",
+                "showLabel": "1"
+            }, {
+                "id": "AU",
+                "value": "1.30",
+                "showLabel": "1"
             }]
-        },
-        // Source data as JSON --> id represents countries of world.
-        "data": [{
-            "id": "NA",
-            "value": ".82",
-            "showLabel": "1"
-        }, {
-            "id": "SA",
-            "value": "2.04",
-            "showLabel": "1"
-        }, {
-            "id": "AS",
-            "value": "1.78",
-            "showLabel": "1"
-        }, {
-            "id": "EU",
-            "value": ".40",
-            "showLabel": "1"
-        }, {
-            "id": "AF",
-            "value": "2.58",
-            "showLabel": "1"
-        }, {
-            "id": "AU",
-            "value": "1.30",
-            "showLabel": "1"
-        }]
-    }
-};
+        }
+    };
+</script>
+```
+
+To render the chart, the `react-fusioncharts` component can be:
+
+* Passed directly to the `ReactDOM.render()` method
+
+OR
+
+* Passed as part of another **ReactJS** component
+
+#### Passed directly to the ReactDOM.render() method:
+
+To add `js` code within the `<script>` tag in HTML page, add `type="text/jsx"`.
+
+```
+<script type="text/jsx">
 ReactDOM.render(
     <ReactFC {...chartConfigs} />,
     document.getElementById('chart-container')
 );
+</script>
 ```
 
 See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference) (the keys in the dataSource object) for the **World Map**. The respective id can be found [here]({% site.baseurl %}/maps/spec-sheets/world).
