@@ -2,7 +2,6 @@
 title: Box and Whisker Chart | FusionCharts
 description: In this section, you will be introduced to the basics of a box and whisker chart, features of a box and whisker chart and five-number summary principle for plotting data on the box and whisker chart.
 heading: Box and Whisker Chart
-breadcrumb: [["Home", "/"], ["Box and Whisker Chart"]]
 ---
 
 > This chart type belongs to **PowerCharts XT**.
