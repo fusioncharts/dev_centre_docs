@@ -24,7 +24,7 @@ To create a pie 2D chart follow the steps given below:
 
 * Set the type of data (JSON/XML) you want to pass to the chart object using `dataFormat` attribute.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pie2d) page of multi-series pie 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pie2d) page of the pie 2D chart.
 
 The pie 2D chart for the above code looks like:
 
@@ -36,7 +36,7 @@ Click [here](http://jsfiddle.net/fusioncharts/hLhjhft8/) to edit the pie 2D char
 
 To render a pie chart in 3D, change the value of the `type` attribute from `pie2D` to `pie3D`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pie3d) page of multi-series pie 3D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=pie3d) page of the pie 3D chart.
 
 A pie chart in 3D looks like :
 
@@ -52,7 +52,7 @@ Let's create our first doughnut 2D chart showcasing the same use case for the pi
 
 To create a doughnut 2D chart, set the `type` attribute to `doughnut2d`.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=doughnut2d) page of multi-series doughnut 2D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=doughnut2d) page of the doughnut 2D chart.
 
 The doughnut 2D chart for the above code looks like:
 
@@ -64,7 +64,7 @@ Click [here](http://jsfiddle.net/fusioncharts/wYj95/) to edit the doughnut 2D ch
 
 To render a doughnut chart in 3D, change the value of the `type` attribute from `doughnut2D` to `doughnut3D`. The rest of the data structure remains the same.
 
-For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=doughnut3d) page of multi-series doughnut 3D chart.
+For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=doughnut3d) page of the doughnut 3D chart.
 
 A doughnut chart in 3D looks like :
 
