@@ -60,8 +60,6 @@ In the above sample, let's plot the **Projected Revenue** in `spline` and **Prof
 
 {% embed_all standard-charts-combination-chart-example-12.js %}
 
-Click here to edit the above chart.
-
 ## 3D Single Y-axis Combination Chart
 
 To render a single y-axis combination chart in 3D, change the value of the `type` attribute from `mscombi2d` to `mscombi3d`. The rest of the data structure remains the same.
@@ -72,7 +70,7 @@ A single y-axis combination chart in 3D looks like:
 
 {% embed_all standard-charts-combination-chart-example-2.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/rjy87gfy/) to edit the single y combination chart in 2D.
+Click [here](http://jsfiddle.net/fusioncharts/rjy87gfy/) to edit the single y combination chart in 3D.
 
 ## 2D Dual Y-axis Combination Chart
 
@@ -140,7 +138,7 @@ The above stacked column 3D line looks like:
 
 {% embed_all standard-charts-combination-chart-example-9.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/gu8jk5yj/) to edit the stacked column 2D line single y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/gu8jk5yj/) to edit the stacked column 3D line single y-axis chart.
 
 ## Stacked Column 3D Line Dual Y-axis Chart
 
@@ -164,7 +162,7 @@ The chart looks like:
 
 {% embed_all standard-charts-combination-chart-example-11.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/8d3px3xp/) to edit the stacked column 2D line single y-axis chart.
+Click [here](http://jsfiddle.net/fusioncharts/8d3px3xp/) to edit the stacked column 2D line dual y-axis chart.
 
 Now, let's customize the appearance and properties of the combination charts.
 
@@ -188,7 +186,7 @@ To plot a trend-lines on a chart, follow the steps given below:
 
 > This attribute belongs to the line object, which in turn belongs to the trendlines object.
 
-FusionCharts Suite XT includes several options to customize trend elements. To know more about the trend elements in a single y-axis chart, click here. To know more about the dual y-axis chart, click here.
+FusionCharts Suite XT includes several options to customize trend elements. To know more about the trend elements in a single y-axis chart, click [here]({% site.baseurl %}/chart-guide/chart-configurations/trend-lines-and-zones). To know more about the dual y-axis chart, click [here]({% site.baseurl %}/chart-guide/chart-configurations/trend-lines-and-zones#add-trend-lines-for-a-dual-yaxis-chart-8).
 
 Refer to the code given below:
 
