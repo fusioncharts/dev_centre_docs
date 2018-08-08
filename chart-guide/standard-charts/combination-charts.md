@@ -30,8 +30,6 @@ The combination charts available in the FusionCharts Suite XT are:
 
 * Multi Series Stacked Column 2D + Line Dual Y-axis Chart
 
-* Multi-series Stacked Column 2D + Spline Dual Y-Axis Chart
-
 ## 2D Single Y-axis Combination Chart
 
 Let's create our first combination chart to showcase the comparison of actual revenue, projected revenue and the profit earned for each month of the last year. All three metrics have been plotted using different chart types - the actual revenue earned is plotted using a column chart, the projected revenue is plotted using a line chart, and the profit earned is plotted using an area chart.
