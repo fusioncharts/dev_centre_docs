@@ -25,9 +25,9 @@ Old Attribute|New Attribute
 
 ## Inversed Data Plot
 
-The inverse y-axis charts are similar to the normal column charts, except that the y-axis in these charts are inverted. The lower limit and upper limit value positions are swapped in the inverse y-axis chart. In v3.13.0 inverse chart comes with a new appearance, i.e., the data plots will now appear from the top of the canvas.
+The inverse y-axis charts are similar to the normal column charts, except that the y-axis in these charts are inverted. The lower limit and upper limit value positions are swapped in the inverse y-axis chart. In v3.13.0 inverse chart comes with a new appearance, i.e., the data plots (column and area) will now appear from the top of the canvas.
 
-> The inverse data plots will be applicable to the charts with positive y-axis range (> = 0).  
+> The inverse data plots (column and area) will be applicable to the charts with positive y-axis range (> = 0).  
 
 The new visualization of the inverse chart looks like:
 
