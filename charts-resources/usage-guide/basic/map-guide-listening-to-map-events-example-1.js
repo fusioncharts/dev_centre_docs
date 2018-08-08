@@ -7,6 +7,7 @@
     dataSource: {
         "chart": {
             "caption": "Global Population",
+            "subcaption": "6.3 Billion",
             "theme": "fusion",
             "formatNumberScale": "0",
             "numberSuffix": "M",
@@ -63,8 +64,8 @@
             textArea.setAttribute("id", "message");
             textArea.setAttribute("rows", "4");
             textArea.setAttribute("cols", "35");
-            textArea.style.cssText = "margin-left:15px;text-align:center;display:block;";
-            textArea.innerHTML = "Total World Population 6.3 Billion (Hover on individual continents to see the population)";
+            textArea.style.cssText = "margin-left:185px;text-align:center;display:block;";
+            textArea.innerHTML = "Hover on respective continents to see the population";
             args.container.appendChild(textArea);
         },
         "entityRollover": function(evt, data) {
@@ -72,7 +73,7 @@
         },
         "entityRollout": function(evt, data) {
             document.getElementById('message').value =
-                "Total World Population - 6.3 Billion";
+                "Hover on respective continents to see the population";
         },
         "entityClick": function(evt, data) {
             alert("You have clicked on " + data.label + ".");
