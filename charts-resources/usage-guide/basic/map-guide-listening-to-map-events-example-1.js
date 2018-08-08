@@ -63,7 +63,7 @@
             var textArea = document.createElement("textarea");
             textArea.setAttribute("id", "message");
             textArea.setAttribute("rows", "4");
-            textArea.setAttribute("cols", "35");
+            textArea.setAttribute("cols", "50");
             textArea.style.cssText = "margin-left:185px;text-align:center;display:block;";
             textArea.innerHTML = "Hover on respective continents to see the population";
             args.container.appendChild(textArea);
