@@ -6,8 +6,6 @@ heading: Vertical Div Lines
 
 Vertical divisional (or div) lines are vertical lines running through the canvas in a chart.
 
-> Vertical div lines are applicable only for the line, area, spline, splineArea, and XY type charts.
-
 The image below shows vertical div lines rendered in a line chart:
 
 ![Vertical divisional lines]({% site.baseurl %}/images/chart-configurations-vertical-div-lines-image-1.png)
