@@ -28,7 +28,7 @@ To create a scatter chart follow the steps given below:
 
 For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=scatter) page of scatter chart.
 
-A scatter chart for the above code looks like:
+A scatter chart looks like:
 
 {% embed_all standard-charts-bubble-and-xy-charts-example-1.js %}
 
