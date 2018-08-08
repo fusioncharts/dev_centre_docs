@@ -81,7 +81,7 @@ After that, you can include the FusionCharts JavaScript library in web applicati
 <script type="text/javascript" src="path/to/local/react.js"></script>
 <script type="text/javascript" src="path/to/local/react-dom.js"></script>
 ```
-**Step 2:** Include [Babel](https://babeljs.io/) for [JSX](https://reactjs.org/docs/introducing-jsx.html) transpiling
+**Step 2:** Include [Babel](https://babeljs.io/) for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.
 
 ```HTML
 <script type="text/javascript" src="path/to/local/babel-core.js"></script>
