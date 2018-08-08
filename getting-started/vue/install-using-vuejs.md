@@ -77,7 +77,7 @@ After that, you can include the file in your web applications and start building
 
 Create an HTML file and follow the steps given below:
 
-**Step 1:** Include [Vue](https://vuejs.org/ `@@open-newtab`) core library:
+**Step 1:** Include [Vue](https://vuejs.org) core library:
 
 ```HTML
 <script type="text/javascript" src="path/to/local/vue.js"></script>
