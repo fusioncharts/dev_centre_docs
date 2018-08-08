@@ -24,6 +24,7 @@
             //which shows the properties of categories element defined
             "xAxisLabelMode": "CATEGORIES",
             "showTrendlineLabels": "0",
+            "valueFontSize": "10",
             "plotTooltext": "$name : Profit Contribution - $zvalue%"
         },
         "categories": [{

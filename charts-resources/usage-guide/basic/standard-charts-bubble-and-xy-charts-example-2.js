@@ -12,9 +12,6 @@
                 "xAxisMaxValue": "100",
                 "yAxisMinValue": "0",
                 "yAxisMaxValue": "30000",
-                "plotFillAlpha": "70",
-                "plotFillHoverColor": "#6baa01",
-                "showPlotBorder": "0",
                 "xAxisName": "Average Price",
                 "yAxisName": "Units Sold",
                 "numDivlines": "2",
@@ -37,7 +34,6 @@
                 "xAxisLineThickness" : "1",
                 "xAxisLineColor" : "#999999",
                 "theme" : "fusion"
-                
             },
         "categories": [{
             "category": [{

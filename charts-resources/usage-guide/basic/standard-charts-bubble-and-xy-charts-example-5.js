@@ -21,6 +21,7 @@
             "numDivlines": "2",
             "xNumberPrefix": "$",
             "showValues": "1",
+            "valueFontSize": "10",
             //Setting x-axis label mode to "AUTO"
             //which ignores the properties of categories element defined
             "xAxisLabelMode": "AUTO",

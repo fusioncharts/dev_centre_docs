@@ -20,6 +20,7 @@
             "yAxisName": "Units Sold",
             "numDivlines": "2",
             "showValues": "1",
+            "valueFontSize": "10",
             "plotTooltext": "$name : Profit Contribution - $zvalue%"
         },
         //x-axis segmented into categorical zone (Average Price) 

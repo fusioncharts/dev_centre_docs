@@ -1,5 +1,4 @@
 {
-
     type: 'bubble',
     renderAt: 'chart-container',
     width: '550',
@@ -7,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "zune",
+            "theme": "fusion",
             "caption": "Sales Analysis of Shoe Brands",
             "subcaption": "Last Quarter",
             "xAxisMinValue": "0",
@@ -22,7 +21,8 @@
             "drawQuadrant": "1",
             "showcanvasborder": "0",
             "quadrantLineAlpha": "50",
-            "quadrantLineThickness": "2"
+            "quadrantLineThickness": "2",
+            "valueFontSize": "10"
         },
         "categories": [{
             "category": [{

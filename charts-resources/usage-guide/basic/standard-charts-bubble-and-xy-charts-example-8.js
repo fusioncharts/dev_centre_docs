@@ -6,7 +6,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "zune",
+            "theme": "fusion",
             "caption": "Sales Analysis of Shoe Brands",
             "subcaption": "Last Quarter",
             "xAxisMinValue": "0",
@@ -35,7 +35,8 @@
             "vDivlineDashGap": "3",
             "showAlternateVGridColor": "1",
             "alternateVGridColor": "0ffff0",
-            "alternateVGridAlpha": "40"
+            "alternateVGridAlpha": "40",
+            "valueFontSize": "10"
         },
         "categories": [{
             "category": [{
