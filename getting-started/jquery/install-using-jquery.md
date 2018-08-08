@@ -33,7 +33,7 @@ You can use FusionCharts in your jQuery project using any of the two modes given
 
 ## Install using Direct JavaScript files
 
-[Download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
+[Download](https://www.fusioncharts.com/download/fusioncharts-suite) the FusionCharts Suite XT package which contains:
 
 * JavaScript files to render **Charts**, **Widgets**, and **PowerCharts** in the `js` folder.
 * JavaScript files to render maps in the `js > maps` folder.

@@ -6,7 +6,9 @@ heading: Inverse Y-axis Chart
 
 > These chart types belong to **PowerCharts XT**.
 
-The inverse y-axis charts are similar to the normal column charts, except that the y-axis and the data plots in these charts are inverted. The lower limit and upper limit value positions are swapped in the inverse y-axis chart.
+The inverse y-axis charts are similar to the normal column charts, except that the y-axis and the data plots (column and area) in these charts are inverted. The lower limit and upper limit value positions are swapped in the inverse y-axis chart.
+
+> The inverse data plots (column and area) will be applicable to the charts with positive y-axis range (> = 0).
 
 The FusionCharts Suite XT includes the following three types of inverse axis charts:
 

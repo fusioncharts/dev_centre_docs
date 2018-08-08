@@ -71,7 +71,7 @@ end
             : xAxisname => 'Quarter',
             : yAxisName => 'Amount ($)',
             : numberPrefix => '$',
-            : theme => 'fint',
+            : theme => 'fusion',
         },
         # The data in the array of hashes is now stored in the `top_ten_populous_countries`
         # variable in the FusionCharts consumable format.
@@ -110,7 +110,7 @@ end
             : xAxisname => 'Quarter',
             : yAxisName => 'Amount ($)',
             : numberPrefix => '$',
-            : theme => 'fint',
+            : theme => 'fusion',
         },
         : data => top_ten_populous_cities
     }

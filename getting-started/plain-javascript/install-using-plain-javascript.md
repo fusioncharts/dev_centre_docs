@@ -22,7 +22,7 @@ You can include FusionCharts in your project using any of the two modes given be
 
 ## Install using Direct JavaScript files
 
-[Download](https://www.fusioncharts.com/download/) the `fusioncharts-suite-xt` package which contains:
+[Download](https://www.fusioncharts.com/download/fusioncharts-suite) the `fusioncharts-suite-xt` package which contains:
 
 * JavaScript files to render **Charts**, **Widgets**, and **PowerCharts** in the `js` folder.
 * JavaScript files to render maps in the `js > maps` folder.

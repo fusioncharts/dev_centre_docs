@@ -1,8 +1,8 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '500',
-    height: '350',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -11,7 +11,7 @@
             "xAxisName": "Month",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "palettecolors": "FF5904,0372AB,FF0000",
+            "palettecolors":"5d62b5,29c3be,f2726f",
             "theme": "fusion"
         },
         "data": [{

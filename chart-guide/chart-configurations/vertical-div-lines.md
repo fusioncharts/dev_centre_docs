@@ -4,7 +4,7 @@ description: Vertical div lines are vertical lines running through the canvas in
 heading: Vertical Div Lines
 ---
 
-Vertical divisional (or div) lines are vertical lines running through the canvas in a chart. They help in relating the data to its respective label when there a is large amount of data.
+Vertical divisional (or div) lines are vertical lines running through the canvas in a chart.
 
 > Vertical div lines are applicable only for the line, area, spline, splineArea, and XY type charts.
 

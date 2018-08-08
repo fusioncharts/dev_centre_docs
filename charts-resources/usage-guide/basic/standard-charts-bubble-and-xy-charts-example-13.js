@@ -26,7 +26,8 @@
             //Setting y quadrant value to 12000
             "quadrantYVal": "12000",
             "quadrantLineAlpha": "50",
-            "quadrantLineThickness": "2"
+            "quadrantLineThickness": "2",
+            "valueFontSize": "10"
         },
         "categories": [{
             "category": [{

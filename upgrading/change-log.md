@@ -50,7 +50,7 @@ heading: Version 3.13.0
 
     * [restoreText]({% site.baseurl %}/chart-attributes/?chart=dragcolumn2d&attribute=chart_restoretext)
 
-* Data plots in the [inverse chart]({% site.baseurl %}/chart-guide/standard-charts/inverse-y-axis-chart) will now appear from the top of the canvas. If you would like the old behavior, click [here]({% site.baseurl %}/upgrading/changed-behavior#inversed-data-plot-2) to know more.
+* Data plots (column and area) in the [inverse chart]({% site.baseurl %}/chart-guide/standard-charts/inverse-y-axis-chart) will now appear from the top of the canvas. If you would like the old behavior, click [here]({% site.baseurl %}/upgrading/changed-behavior#inversed-data-plot-2) to know more.
 
 * The hyphen ( - ) character is now supported in the parameter of the JavaScript function of `link` attribute.
 

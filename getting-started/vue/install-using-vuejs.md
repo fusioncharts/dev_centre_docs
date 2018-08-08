@@ -29,7 +29,7 @@ You can install FusionCharts in your Vue project using any of the two modes give
 
 ## Install using Direct JavaScript files
 
-In order to install and start working with `Vue-FusionCharts` you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
+In order to install and start working with `Vue-FusionCharts` you need to [download](https://www.fusioncharts.com/download/fusioncharts-suite) the FusionCharts Suite XT package which contains:
 
 * JavaScript files to render **Charts**, **Widgets** and **PowerCharts** in the `js` folder.
 * JavaScript files to render maps in the `js > maps` folder.
@@ -77,7 +77,7 @@ After that, you can include the file in your web applications and start building
 
 Create an HTML file and follow the steps given below:
 
-**Step 1:** Include [Vue](https://vuejs.org/ `@@open-newtab`) core library:
+**Step 1:** Include [Vue](https://vuejs.org) core library:
 
 ```HTML
 <script type="text/javascript" src="path/to/local/vue.js"></script>

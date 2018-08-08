@@ -98,7 +98,7 @@ Click [here](http://jsfiddle.net/fusioncharts/43fJn/) to edit the real-time line
 
 ## Real Time Area chart
 
-To create a real-time area chart, set the `type` attribute to `realtimeareachart`. The rest of the data structure remains the same.
+To create a real-time area chart, set the `type` attribute to `realtimearea` chart. The rest of the data structure remains the same.
 
 For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=realtimearea) page of real-time area chart.
 

@@ -26,6 +26,7 @@
             //and the explicitly defined x-axis labels simultaneously
             "xAxisLabelMode": "MIXED",
             "showTrendlineLabels": "0",
+            "valueFontSize": "10",
             "plotTooltext": "$name : Profit Contribution - $zvalue%"
         },
         "categories": [{

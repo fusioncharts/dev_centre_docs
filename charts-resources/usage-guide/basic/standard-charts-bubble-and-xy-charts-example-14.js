@@ -20,6 +20,7 @@
             "yAxisName": "Units Sold",
             "numDivlines": "2",
             "showValues": "1",
+            "valueFontSize": "10",
             "showTrendlineLabels": "0",
             "plotTooltext": "$name : Profit Contribution - $zvalue%",
             //Drawing quadrants on chart

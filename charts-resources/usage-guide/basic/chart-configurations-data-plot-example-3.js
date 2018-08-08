@@ -1,8 +1,8 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '450',
-    height: '300',
+    width: '500',
+    height: '350',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -17,20 +17,16 @@
         },
         "data": [{
             "label": "Q1",
-            "value": "1950000",
-            "color": "#008ee4"
+            "value": "1950000"
         }, {
             "label": "Q2",
-            "value": "1450000",
-            "color": "#9b59b6"
+            "value": "1450000"
         }, {
             "label": "Q3",
-            "value": "1730000",
-            "color": "#6baa01"
+            "value": "1730000"
         }, {
             "label": "Q4",
-            "value": "2120000",
-            "color": "#e44a00"
+            "value": "2120000"
         }]
     },
     "events": {
