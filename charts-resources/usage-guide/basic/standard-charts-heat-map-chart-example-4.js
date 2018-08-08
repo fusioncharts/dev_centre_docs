@@ -2,7 +2,7 @@
     type: 'heatmap',
     renderAt: 'chart-container',
     width: '700',
-    height: '350',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {

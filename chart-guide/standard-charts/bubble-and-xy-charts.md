@@ -1,18 +1,12 @@
 ---
-title: XY Charts | FusionCharts
-description: XY are used for plotting data that is defined in terms of two numeric parameters.
-heading: XY Charts
+title: Bubble and Scatter Charts | FusionCharts
+description: Bubble and Scatter are used for plotting data that is defined in terms of two numeric parameters.
+heading: Bubble and Scatter Charts
 ---
 
 > These chart types belong to **FusionCharts XT**.
 
-XY charts are used for plotting data that can be defined in terms of multiple numeric parameters. In these charts, the x and y axes are numeric. So, the position of a data point is an indicator of two distinct numeric values.
-
-The XY charts available in the FusionCharts Suite XT are:
-
-* Scatter Chart
-
-* Bubble Chart
+Bubble and Scatter charts are used for plotting data that can be defined in terms of multiple numeric parameters. In these charts, the x and y axes are numeric. So, the position of a data point is an indicator of two distinct numeric values.
 
 ## Scatter Chart
 
@@ -34,7 +28,7 @@ To create a scatter chart follow the steps given below:
 
 For a detailed list of attributes, refer to the [chart attributes]({% site.baseurl %}/chart-attributes?chart=scatter) page of scatter chart.
 
-A scatter chart for the above code looks like:
+A scatter chart looks like:
 
 {% embed_all standard-charts-bubble-and-xy-charts-example-1.js %}
 

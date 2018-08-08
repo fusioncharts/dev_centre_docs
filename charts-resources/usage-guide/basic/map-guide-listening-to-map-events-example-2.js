@@ -89,8 +89,8 @@
             var textArea = document.createElement("textarea");
             textArea.setAttribute("id", "message-marker");
             textArea.setAttribute("rows", "4");
-            textArea.setAttribute("cols", "54");
-            textArea.style.cssText = "margin-left:15px;text-align:center;display:block;";
+            textArea.setAttribute("cols", "50");
+            textArea.style.cssText = "margin-left:185px;text-align:center;display:block;";
             textArea.innerHTML = "Rollover or click on a marker or connector";
             args.container.appendChild(textArea);
         },

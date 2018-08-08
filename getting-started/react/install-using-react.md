@@ -31,7 +31,7 @@ You can use FusionCharts in your React project using any of the two modes given 
 
 ## Install using Direct JavaScript files
 
-In order to install and start working with **react-fusioncharts**, you need to [download](https://www.fusioncharts.com/download/) the FusionCharts Suite XT package which contains:
+In order to install and start working with **react-fusioncharts**, you need to [download](https://www.fusioncharts.com/download/fusioncharts-suite) the FusionCharts Suite XT package which contains:
 
 * JavaScript files to render **Charts**, **Widgets** and **PowerCharts** in the `js` folder
 * JavaScript files to render maps in the `js > maps` folder
@@ -81,7 +81,7 @@ After that, you can include the FusionCharts JavaScript library in web applicati
 <script type="text/javascript" src="path/to/local/react.js"></script>
 <script type="text/javascript" src="path/to/local/react-dom.js"></script>
 ```
-**Step 2:** Include [Babel](https://babeljs.io/) for [JSX](https://reactjs.org/docs/introducing-jsx.html) transpiling
+**Step 2:** Include [Babel](https://babeljs.io/) for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.
 
 ```HTML
 <script type="text/javascript" src="path/to/local/babel-core.js"></script>

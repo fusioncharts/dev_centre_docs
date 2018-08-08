@@ -25,7 +25,7 @@ The overlapped bar 2D chart looks like:
 
 Spline and Spline area charts can now be built as a part of combination charts. To define any one of the dataset to spline or spline area, set the `renderAs` attribute to `spline` or `splineArea` respectively.
 
-A combination chart with spline and a splineArea as a part of it looks like:
+A combination chart with spline and Spline Area as a part of it looks like:
 
 {% embed_all whats-new-combination-spline-chart-example-3.js %}
 

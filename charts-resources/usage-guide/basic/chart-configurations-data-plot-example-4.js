@@ -12,6 +12,7 @@
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
             "theme": "fusion",
+            "showValues": "1",
             "showshadow": "1",
             //Using plot gradient color
             "usePlotGradientColor": "1",
@@ -20,7 +21,8 @@
             //Applying fill angle for plots
             "plotFillAngle": "0",
             //Applying fill ratio for plots
-            "plotFillRatio": "0,100"
+            "plotFillRatio": "90,100",
+            "plotFillAlpha": "60"
         },
         "data": [{
             "label": "Q1",

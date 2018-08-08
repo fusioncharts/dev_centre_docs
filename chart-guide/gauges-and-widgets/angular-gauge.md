@@ -64,7 +64,7 @@ Click [here](http://jsfiddle.net/fusioncharts/77QP6/) to edit the above chart.
 
 As an example, create an angular gauge that indicates the customer satisfaction score for the last week at Harry's SuperMart. To create the angular gauge by plotting the customer satisfaction score, do the following:
 
-* Specify the type using the `type` attribute. To render Angular gauge, set `angular`.
+* Specify the type using the `type` attribute. To render Angular gauge, set `angulargauge`.
 
 * Set the container object using `renderAt` attribute.
 

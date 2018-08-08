@@ -18,7 +18,7 @@ We will learn how to customize different properties of the canvas.
 
 To customize the canvas fill color, the following attributes are used:
 
-* Specify the hex code of the canvas background color using the `showCanvasBorder` attribute.
+* Specify the hex code of the canvas background color using the `canvasbgColor` attribute.
 
 * Set the transparency of the canvas background using the `canvasBgAlpha` attribute.
 

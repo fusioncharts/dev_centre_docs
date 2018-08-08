@@ -7,7 +7,7 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "theme": "zune",
+            "theme": "fusion",
             "caption": "Sales Analysis of Shoe Brands",
             "subcaption": "Last Quarter",
             "xAxisMinValue": "0",

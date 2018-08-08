@@ -8,7 +8,7 @@ This section is for users who are using previous version of FusionCharts in thei
 
 ## Updated Options Menu
 
-The restore button in select-scatter and drag-able chart has been moved to options menu. From v3.13.0 if you want to restore your chart, search for the restore option in the options menu at the top right corner of the canvas.
+The **restore** and **submit** button in select-scatter and drag-able chart has been moved to options menu. From v3.13.0 if you want to restore or submit your chart, click on the respective option in the options menu at the top right corner of the canvas.
 
 The options menu looks like shown below:
 
@@ -25,7 +25,9 @@ Old Attribute|New Attribute
 
 ## Inversed Data Plot
 
-The inverse y-axis charts are similar to the normal column charts, except that the y-axis in these charts are inverted. The lower limit and upper limit value positions are swapped in the inverse y-axis chart. In v3.13.0 inverse chart comes with a new appearance, i.e., the data plots will now appear from the top of the canvas.
+The inverse y-axis charts are similar to the normal column charts, except that the y-axis in these charts are inverted. The lower limit and upper limit value positions are swapped in the inverse y-axis chart. In v3.13.0 inverse chart comes with a new appearance, i.e., the data plots (column and area) will now appear from the top of the canvas.
+
+> The inverse data plots (column and area) will be applicable to the charts with positive y-axis range (> = 0).  
 
 The new visualization of the inverse chart looks like:
 
@@ -33,7 +35,7 @@ The new visualization of the inverse chart looks like:
 
 > If you like to view the chart as in older version (3.12.2), contact [support@fusioncharts.com](support@fusioncharts.com).
 
-## Secondary data plots overlap Primary data plots
+## Secondary Data Plots overlap Primary Data Plots
 
 From version 3.13.0 visualization of dual y-axis multi-series chart is changed. Now, if the data plots for both the axes are set as column, the secondary plots overlaps the primary plots.
 
@@ -77,7 +79,7 @@ Since, v3.13.0 the FusionCharts Suite XT download package folder structure is up
 
 ![Folder Structure]({% site.baseurl %}/gif/upgrading-plugins.gif)
 
-## Removed attributes and methods
+## Removed Attributes and Methods
 
 Following are the list of attributes which have been removed from the FusionCharts XT Suite:
 
@@ -113,7 +115,7 @@ Following are the list of attributes which have been removed from the FusionChar
 
 * The method `getMapFromId()` has been removed.  Use `getObjectReference()` instead.
 
-## Deprecated Attributes and methods
+## Deprecated Attributes and Methods
 
 * `showFormBtn` (deprecated)
 

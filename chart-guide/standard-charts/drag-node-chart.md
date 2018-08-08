@@ -32,7 +32,7 @@ Using a drag-node chart, you can:
 
 * Visually edit existing or newly created nodes and connectors at runtime
 
-* Filter the links dynamically at runtime to show only the _n_ strongest links, using JavaScript.
+* Filter the links dynamically at runtime to show only the **n** strongest links, using JavaScript.
 
 * Using JavaScript, Retrieve updated positions of nodes using JavaScript.
 
