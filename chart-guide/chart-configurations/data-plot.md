@@ -20,63 +20,42 @@ Refer to the code below:
     "data": [
         {
             "label": "Jan",
-            "value": "420000",
-            "color": "#008ee4"
-        },
-        {
+            "value": "420000"
+        }, {
             "label": "Feb",
-            "value": "810000",
-            "color": "#008ee4"
-        },
-        {
+            "value": "810000"
+        }, {
             "label": "Mar",
-            "value": "720000",
-            "color": "#008ee4"
-        },
-        {
+            "value": "720000"
+        }, {
             "label": "Apr",
-            "value": "550000",
-            "color": "#9b59b6"
-        },
-        {
+            "value": "550000"
+        }, {
             "label": "May",
             "value": "910000",
-            "color": "#9b59b6"
-        },
-        {
+            "color": "#9b59b6" //Custom Color
+        }, {
             "label": "Jun",
-            "value": "510000",
-            "color": "#9b59b6"
-        },
-        {
+            "value": "510000"
+        }, {
             "label": "Jul",
-            "value": "680000",
-            "color": "#6baa01"
-        },
-        {
+            "value": "680000"
+        }, {
             "label": "Aug",
-            "value": "620000",
-            "color": "#6baa01"
-        },
-        {
+            "value": "620000"
+        }, {
             "label": "Sep",
-            "value": "610000",
-            "color": "#6baa01"
-        },
-        {
+            "value": "610000"
+        }, {
             "label": "Oct",
-            "value": "490000",
-            "color": "#e44a00"
-        },
-        {
+            "value": "490000"
+        }, {
             "label": "Nov",
             "value": "900000",
-            "color": "#e44a00"
-        },
-        {
+            "color": "#e44a00"  //Custom Color
+        }, {
             "label": "Dec",
-            "value": "730000",
-            "color": "#e44a00"
+            "value": "730000"
         }
     ]
 }
@@ -151,8 +130,8 @@ Refer to the code below:
         "usePlotGradientColor": "1",
         "plotGradientColor": "#003366",
         "plotFillAngle": "0",
-        "plotFillAlpha": "90",
-        "plotFillRatio": "0,100"
+        "plotFillAlpha": "60",
+        "plotFillRatio": "90,100"
     }
 }
 ```
