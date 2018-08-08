@@ -13,7 +13,7 @@
             "numberPrefix": "$",
             "theme": "fusion",
             //Hiding plot borders
-            "showPlotBorder": "1"
+            "showPlotBorder": "0"
         },
         "data": [{
             "label": "Q1",

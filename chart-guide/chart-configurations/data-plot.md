@@ -76,7 +76,7 @@ Specify your custom palette for data plots by providing a list of hex colors usi
 ```json
 {
     "chart":{
-        "palettecolors":"FF5904,0372AB,FF0000"
+        "palettecolors":"5d62b5,29c3be,f2726f"
     }
 }
 ```
