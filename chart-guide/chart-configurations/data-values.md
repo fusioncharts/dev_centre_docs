@@ -263,7 +263,6 @@ Refer to the code below:
     "chart": {
         "valueBgColor": "#666666",
         "valueBgAlpha": "100",
-        "valueBgHoverAlpha": "5"
     }
 }
 ```

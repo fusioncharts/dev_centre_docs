@@ -17,8 +17,7 @@
             "valueFontColor": "#ffffff",
             "valueFontSize": "12",
             "valueBgColor": "#666666",
-            "valueBgAlpha": "90",
-            "valueBgHoverAlpha": "5"
+            "valueBgAlpha": "90"
         },
         "data": [{
             "label": "Q1",
