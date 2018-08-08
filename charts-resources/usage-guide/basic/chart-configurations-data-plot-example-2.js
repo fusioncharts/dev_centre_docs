@@ -11,7 +11,7 @@
             "xAxisName": "Month",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "palettecolors":"5d62b5,29c3be,f2726f"
+            "palettecolors":"5d62b5,29c3be,f2726f",
             "theme": "fusion"
         },
         "data": [{
