@@ -17,7 +17,6 @@
             "valueFontColor": "#333333",
             "rotateValues": "0",
             "theme": "fusion"
-
         },
         "categories": [{
             "category": [{
