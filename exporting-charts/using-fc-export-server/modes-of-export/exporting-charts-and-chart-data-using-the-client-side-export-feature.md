@@ -67,8 +67,8 @@ How do you know if the export was done on the client-side? The images below show
 		<th style="width: 90%"> <center> Network tab in the browser console: Server-side export </center> </th>		
 	</tr>
 	<tr>
-		<td style="width: 90"> <span> ![image alt text Network tab: Client-side export]({% site.baseurl %}/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-2.jpg) </span> {: .center-align .table-img} </td>
-		<td style="width: 90%"> <span> ![image alt text Network tab: Server-side export]({% site.baseurl %}/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-3.jpg) </span> {: .center-align .table-img} </td>
+		<td style="width: 90"> <span> ![image alt text Network tab: Client-side export]({% site.baseurl %}/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-2.jpg) </span></td>
+		<td style="width: 90%"> <span> ![image alt text Network tab: Server-side export]({% site.baseurl %}/images/getting-started-adding-interactivity-exporting-to-images-or-pdf-client-side-exporting-image-3.jpg) </span> </td>
 	</tr>
 </table>
 
