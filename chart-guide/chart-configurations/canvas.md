@@ -42,7 +42,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/qx1djybc/) to edit the above chart.
 
-## Hide Canvas Border
+## Show Canvas Border
 
 By default, the canvas border is not visible. To show the canvas border, set the `showCanvasBorder` attribute to `1`.
 
