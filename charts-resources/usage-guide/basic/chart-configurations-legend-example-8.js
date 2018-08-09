@@ -18,8 +18,7 @@
             //Caption for legend
             "legendCaption": "Alphabet Used: ",
             //Customization for legend scroll bar cosmetics
-            "legendScrollBgColor": "#f0000f",
-            "legendScrollBarColor": "#ffffff"
+            "legendScrollBgColor": "#f0000f"
         },
         "data": [{
             "label": "A",

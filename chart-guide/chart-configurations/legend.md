@@ -286,19 +286,14 @@ Click [here](http://jsfiddle.net/fusioncharts/x8182enw/) to edit the above chart
 
 ## Customize Legend Scroll Bar
 
-If you have multiple data items in a multi-series chart, the legend automatically displays a scroll bar. Use the following attributes to customize cosmetic properties of the scroll bar:
-
-* Specify the background color of the scroll bar using the `legendScrollBgColor`attribute, which accepts hex codes as values.
-
-* Specify the color of the scroll bar using the `legendScrollBarColor`attribute, which accepts hex codes as values.
+If you have multiple data items in a multi-series chart, the legend automatically displays a scroll bar. Use the `legendScrollBgColor` attribute to specify the background color of the scroll bar.
 
 Refer to the code below:
 
 ```json
 {
     "chart": {
-        "legendScrollBgColor": "#f0000f",
-        "legendScrollBarColor": "#ffffff"
+        "legendScrollBgColor": "#f0000f"
     }
 }
 ```
