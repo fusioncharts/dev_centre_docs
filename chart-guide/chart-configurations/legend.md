@@ -297,8 +297,8 @@ Refer to the code below:
 ```json
 {
     "chart": {
-        "legendScrollBgColor": "#cccccc",
-        "legendScrollBarColor": "#999999"
+        "legendScrollBgColor": "#f0000f",
+        "legendScrollBarColor": "#ffffff"
     }
 }
 ```
