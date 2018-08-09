@@ -16,7 +16,10 @@
             "valuePosition": "below",
             "numDivlines": "5",
             "lineAlpha": "100",
+            // Anchors
             "anchorAlpha": "100",
+            "anchorImageAlpha": "100",
+            "anchorImageScale": "90"
             //Theme
             "theme": "fusion"
         },
