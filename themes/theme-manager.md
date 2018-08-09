@@ -38,7 +38,7 @@ In the following code snippet, you can see how to use the `theme` attribute to a
 
 You can see a Column 2D chart configured using the `zune` theme, given below:
 
-{% embed_chart getting-started-your-first-chart.js %}
+{% embed_chart theme-manager-first-chart-zune-theme.js %}
 
 > If you are using the XML data format for the chart, you can use the theme attribute within the `<chart>` element. For example, `<chart theme="zune">`
 

@@ -151,7 +151,7 @@ The chart will look like as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/Lsrdd84a/) to edit the above chart.
 
-## Show/Hide Data for all Labels
+## Show/Hide Labels for all Dataplots
 
 To hide the data labels set the `showLabels` attribute to `0` within the `chart` object. Refer to the code below:
 
