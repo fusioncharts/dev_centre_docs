@@ -1,8 +1,8 @@
 {
     type: 'mscombi3d',
     renderAt: 'chart-container',
-    width: '600',
-    height: '300',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -11,32 +11,17 @@
             "xAxisname": "Month",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            "showBorder": "0",
-            "showValues": "0",
-            "paletteColors": "#0075c2,#1aaf5d,#f2c500",
-            "bgColor": "#ffffff",
-            "showCanvasBorder": "0",
-            "canvasBgColor": "#ffffff",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
-            "subcaptionFontBold": "0",
             "divlineColor": "#999999",
             "divLineIsDashed": "1",
             "divLineDashLen": "1",
             "divLineGapLen": "1",
-            "showAlternateHGridColor": "0",
-            "usePlotGradientColor": "0",
             "toolTipColor": "#ffffff",
             "toolTipBorderThickness": "0",
             "toolTipBgColor": "#000000",
             "toolTipBgAlpha": "80",
             "toolTipBorderRadius": "2",
             "toolTipPadding": "5",
-            "legendBgColor": "#ffffff",
-            "legendBorderAlpha": '0',
-            "legendShadow": '0',
-            "legendItemFontSize": '10',
-            "legendItemFontColor": '#666666'
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

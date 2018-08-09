@@ -22,7 +22,7 @@ Click [here](http://jsfiddle.net/fusioncharts/49dJJ/) to edit the above chart.
 
 Looks much better, doesn't it? The chocolate bars shown in this chart are image annotations.
 
-Take a look at this video of a [collaboration dashboard](https://www.fusioncharts.com/dashboards/collaboration/) created to help a sales team unify their analysis and discussion. Notice the **callouts** shown above the columns for April and August. These callouts are **shape** annotations and the **numbers** shown next to the callouts are text annotations. Click these callouts and see how the annotations work!
+Take a look at this video of a [collaboration dashboard](https://www.fusioncharts.com/dashboards/sales-and-collaboration-dashboard/) created to help a sales team unify their analysis and discussion. Notice the **callouts** shown above the columns for April and August. These callouts are **shape** annotations and the **numbers** shown next to the callouts are text annotations. Click these callouts and see how the annotations work!
 
 In addition to creating annotations, you can:
 
@@ -227,7 +227,7 @@ Click [here](http://jsfiddle.net/fusioncharts/9xj50enk/) to edit the above chart
 
 Use the following attributes to create image annotations:
 
-* Specify a unique identification string for each annotation item using the `id`.attribute.
+* Specify a unique identification string for each annotation item using the `id` attribute.
 
 * Specify the type of annotation using the `id`.attribute. In this instance, set it to `image`.
 
@@ -310,7 +310,7 @@ Use the following attributes to create shape annotations:
 
 * Set the transparency of the annotation using the `alpha` attribute, which accepts values between `0` (transparent) and `100` (opaque, default).
 
-* Specify whether a border will be shown around the annotation, by setting the `alpha` attribute to `1`.
+* Specify whether a border will be shown around the annotation, by setting the `showBorder` attribute to `1`.
 
 * Specify the color for the annotation border using the `borderColor` attribute, which accepts color hex codes as value. Note that this attribute doesn't apply to the line annotation.
 

@@ -14,9 +14,6 @@
     <li>
         <a data-toggle='old-json'>Old JSON Format</a>
     </li>
-    <li>
-        <a data-toggle='old-xml'>Old XML Format</a>
-    </li>
 </ul>
 <div class='tab-content'>
 <div class='tab new-json-tab active'>

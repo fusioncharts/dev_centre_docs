@@ -115,7 +115,9 @@ Following are the list of attributes which have been removed from the FusionChar
 
 * The method `getMapFromId()` has been removed.  Use `getObjectReference()` instead.
 
-## Deprecated Attributes and Methods
+## Deprecated
+
+* The **Fusioncharts CJS** module for npm has been deprecated.
 
 * `showFormBtn` (deprecated)
 

@@ -1,7 +1,6 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    
     width: '500',
     height: '350',
     dataFormat: 'json',
@@ -13,8 +12,7 @@
             "xAxisName": "Quarter",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
-            //Hiding the upper and lower limits of y-axis in chart
-            "showLimits": "1",
+            "showValues": "1",
             "showYAxisValues": "0"
         },
         "data": [{

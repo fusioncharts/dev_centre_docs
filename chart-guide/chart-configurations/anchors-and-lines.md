@@ -109,16 +109,15 @@ You can add external images in place of anchors for line and area charts. This a
 
 * Set the scale of the image using the `anchorImageScale` attribute.
 
-* Set the scale of the image when the cursor is hovered on it using the `anchorImageHoverScale` attribute. 
-
-* Set the transparency of the image when the cursor is hovered on it using the `anchorImageHoverAlpha` attribute.
-
 Refer to the code below:
 
 ```json
 {
     "chart": {
         ...
+        "anchorAlpha": "100",
+        "anchorImageAlpha": "100",
+        "anchorImageScale": "90"
     },
     "data": [
         {
