@@ -44,12 +44,12 @@
                         "id": "dyn-label",
                         "type": "text",
                         "fillcolor": "#000000",
-                        "fontsize": "11",
+                        "fontsize": "13",
                         "text": "Promotional activities for Butterfinger made it surpass Snickers, the highest selling brand for 3 years",
                         "bold": "1",
                         "wrap": "1",
                         "wrapWidth": "350",
-                        "x": "$canvasEndY-72",
+                        "x": "$canvasEndY-20",
                         "y": "$canvasEndY + 60",
                     }
                 ]
