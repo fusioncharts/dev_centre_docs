@@ -310,7 +310,7 @@ Use the following attributes to create shape annotations:
 
 * Set the transparency of the annotation using the `alpha` attribute, which accepts values between `0` (transparent) and `100` (opaque, default).
 
-* Specify whether a border will be shown around the annotation, by setting the `alpha` attribute to `1`.
+* Specify whether a border will be shown around the annotation, by setting the `showBorder` attribute to `1`.
 
 * Specify the color for the annotation border using the `borderColor` attribute, which accepts color hex codes as value. Note that this attribute doesn't apply to the line annotation.
 
