@@ -1,8 +1,8 @@
 {
     type: 'msstackedcolumn2dlinedy',
     renderAt: 'chart-container',
-    width: '500',
-    height: '350',
+    width: '600',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
