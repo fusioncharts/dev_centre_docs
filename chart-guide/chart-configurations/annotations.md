@@ -227,7 +227,7 @@ Click [here](http://jsfiddle.net/fusioncharts/9xj50enk/) to edit the above chart
 
 Use the following attributes to create image annotations:
 
-* Specify a unique identification string for each annotation item using the `id`.attribute.
+* Specify a unique identification string for each annotation item using the `id` attribute.
 
 * Specify the type of annotation using the `id`.attribute. In this instance, set it to `image`.
 

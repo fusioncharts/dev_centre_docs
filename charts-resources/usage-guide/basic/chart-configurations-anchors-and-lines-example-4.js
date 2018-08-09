@@ -15,7 +15,7 @@
             "yAxisValuesPadding": "15",
             "valuePosition": "below",
             "numDivlines": "5",
-            "lineAlpha": "1",
+            "lineAlpha": "100",
             "anchorAlpha": "100",
             //Theme
             "theme": "fusion"

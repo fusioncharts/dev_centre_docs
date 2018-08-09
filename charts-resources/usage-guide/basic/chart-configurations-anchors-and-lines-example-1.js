@@ -1,7 +1,6 @@
 {
     type: 'line',
     renderAt: 'chart-container',
-    
     width: '500',
     height: '300',
     dataFormat: 'json',
@@ -17,7 +16,6 @@
             "drawAnchors": "0",
             //Theme
             "theme": "fusion"
-
         },
         "data": [{
             "label": "Mon",
