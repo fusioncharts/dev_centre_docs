@@ -20,8 +20,8 @@
             
         },
         "annotations": {
-            "width": "500",
-            "height": "300",
+            "width": "550",
+            "height": "350",
             "autoScale": "1",
             "groups": [
                 {
