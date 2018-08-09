@@ -64,6 +64,12 @@ heading: Version 3.13.0
 
 * [render()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#render-111) function will also be fired when updating the chart type.
 
+* Starting 3.13.0, Map specification sheets should be available based on the version
+    * Older Map files are supported till 3.12.2
+    * Latest Map files are supported starting 3.13.0
+
+> If you are using version v3.12.2 or older, [download](https://www.fusioncharts.com/download/map-definition-files) the latest version and replace for upgrading to the latest map definition files.
+
 * The core maps package has been updated to:
 
     * Updated the specification sheet for 12 cities and regions under Ethiopia Zonal Divisions and Region maps:
@@ -875,6 +881,8 @@ heading: Version 3.13.0
     * The method `getMapFromId()` has been removed.  Use `getObjectReference()` instead.
 
 ## Deprecated
+
+* The **Fusioncharts CJS** module for npm has been deprecated.
 
 * Following is the list of deprecated attributes:
 
