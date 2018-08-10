@@ -309,6 +309,12 @@ You can also apply hover effects for individual data plots instead of applying t
 
 * `borderHoverDashGap` - Set the gap between two consecutive dashes for all data plots on hover(in pixels).
 
+* `hoverGradientColor` - Set the gradient color of the data plot on hover (in pixels). For example, if you've specified individual colors and now you want hover color that ends in white, You need to specify it.
+
+* `hoverRatio` - Set the ratio of the gradient color for data plots on hover.
+
+* `hoverAngle` - Set the angle of the gradient color for data plots on hover.
+
 > All the above attributes will work only if `plotHoverEffect` is set to `1` under the chart object.
 
 Refer to the code below:
