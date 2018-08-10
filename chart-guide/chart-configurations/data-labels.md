@@ -176,21 +176,21 @@ By default, all the data labels are displayed. You can opt to hide specific data
 ```json
 {
     "chart": {
-        "caption": "Quarterly Revenue",
+        "caption": "Monthly Revenue",
         "subCaption": "Last year",
-        "xAxisName": "Quarter",
+        "xAxisName": "Month",
         "yAxisName": "Amount (In USD)",
         "numberPrefix": "$",
-        "theme": "fusison",
-        "showLabels": "0"
+        "theme": "fusion",
+        "showlabels": "0"
     },
     "data": [{
-        "label": "Quarter 1",
-        "value": "1950000"
+        "label": "January",
+        "value": "420000",
+        "showLabel": "1"
     }, {
-        "label": "Quarter 2",
-        "value": "1450000",
-        "showLabel": "0"
+        "label": "February",
+        "value": "810000"
     }]
 }
 ```

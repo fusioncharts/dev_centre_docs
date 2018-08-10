@@ -313,7 +313,7 @@ You can also apply hover effects for individual data plots instead of applying t
 
 * `hoverRatio` - Set the ratio of the gradient color for data plots on hover.
 
-* `hoverAngle` - 
+* `hoverAngle` - Set the angle of the gradient color for data plots on hover.
 
 > All the above attributes will work only if `plotHoverEffect` is set to `1` under the chart object.
 
