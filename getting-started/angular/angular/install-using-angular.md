@@ -11,7 +11,7 @@ In this article, we will show you how to download and install the `angular-fusio
 
 > Unlike other tech stacks **angular-fusioncharts** can only be used via `npm`. Since, **Angular2** and onward do not support direct `<script>` inclusion of files, this page shows only the steps to install via `npm`.
 
-Before installing and starting to work with **angular-fusioncharts** wrapper, let's get familiar with the JavaScript files present in the **angular-fusioncharts** package:
+Before installing and starting to work with **angular-fusioncharts** wrapper, let's get familiar with the JavaScript files present in the **FusionCharts** package:
 
 File Name|Description|
 -|-
@@ -112,7 +112,7 @@ import \* as ZoomLine from 'fusioncharts/fusioncharts.zoomline'; //Zoom Line
 </code></pre>
 <div class="mt-20"><strong>Overlapped Bar2D and Column2D Charts</strong></div>
 <pre><code class="custom-hlc language-javascript">
-import \* as OverlappedBar2D from 'fusioncharts/fusioncharts.overlapped2d'; //Overlapped Bar 2D
+import \* as OverlappedBar2D from 'fusioncharts/fusioncharts.overlappedbar2d'; //Overlapped Bar 2D
 import \* as OverlappedColumn2D from 'fusioncharts/fusioncharts.overlappedcolumn2d'; //Overlapped Column 2D
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>

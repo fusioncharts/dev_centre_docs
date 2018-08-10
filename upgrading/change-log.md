@@ -1,12 +1,40 @@
 ---
 title: Changelog | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
-heading: Version 3.13.0
+heading: Version 3.13.x
 ---
 
-<p class="release-date"> 3rd August, 2018 </p>
+<h2 class="sub-heading">Version 3.13.1</h2>
+10th August, 2018
 
-## New Features
+<h4 class="sub-heading">Fixes</h4>
+
+* Chart was throwing runtime error while changing the `chartType`.
+
+* When map alias was prefixed with a path (e.g. ‘maps/’) drill down chart failed to render the maps.
+
+* The attribute `displayValue` set as `" "` (blank space), is now working for trend line when the start value is `0`.
+
+* Problem related to rendering FusionCharts in old IE browsers (VML) has been rectified.
+
+* Changing theme using `setChartAttribute` has been fixed for Funnel and Pyramid chart.
+
+* Application of palette colors on changing theme is rectified for Pie 3D charts.
+
+* Legend icons are now properly updated on changing theme, for Multi-Axis Line chart.
+
+* Crossline color is now properly updated on changing theme, for Stacked Column chart.
+
+* The background color of the Thermometer graph is now properly updated for themes `Fusion`, `Gammel` or `Candy`.
+
+* Consolidated tooltip can now safely use `<div>` element to define tooltext.
+
+* `animateClockwise` is now working for Pie/Doughnut charts.
+
+<h2>Version 3.13.0</h2>
+3rd August, 2018
+
+<h4 class="sub-heading">New Features</h4>
 
 * FusionCharts Suite XT v3.13.0 introduces two new chart types: **[Overlapped column]({% site.baseurl %}/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-column-d-chart-1)** chart and **[Overlapped bar]({% site.baseurl %}/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-bar-d-chart-2)** chart.
 
@@ -28,11 +56,9 @@ heading: Version 3.13.0
 
 * [getSVGString]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#getsvgstring-95) now accepts an object as the second parameter with a property named `keepImages`. It can now export the logo or any images (background images, etc.) present in the chart.
 
-* `fusioncharts.vml.js` file has been added to the package for VML browsers which contains all the VML related codes. This file is used only when the chart will be rendered in the VML browers(IE8 and older).
-
 * In `resized` event the `id` of the chart is added under the `dataObject`.
 
-## Improvements
+<h4>Improvements</h4>
 
 * `Angular-FusionCharts` plugin has been renamed to `AngularJS-Fusioncharts`.
 * `Angular 2` and `Angular 4` plugins have been renamed to `Angular-FusionCharts`.
@@ -804,7 +830,7 @@ heading: Version 3.13.0
 
     * The entry for Khatlon district has been added to the main map.
 
-## Fixed
+<h4>Fixes</h4>
 
 * In touch devices, tooltip was not hiding on touch outside the chart.
 
@@ -846,7 +872,11 @@ heading: Version 3.13.0
 
 * Experimental API `enableFirebugLite` has been removed from the Suite, as most of the browsers now have their own debugger.
 
-* Following are the list of attributes which have been removed from the FusionCharts XT Suite:
+<h4> Removed </h4>
+
+* Single Series grid support is removed.
+
+Following are the list of attributes which have been removed from the FusionCharts XT Suite:
 
     * `Annrenderdelay`
 
@@ -880,7 +910,7 @@ heading: Version 3.13.0
 
     * The method `getMapFromId()` has been removed.  Use `getObjectReference()` instead.
 
-## Deprecated
+<h4>Deprecated</h4>
 
 * The **Fusioncharts CJS** module for npm has been deprecated.
 
