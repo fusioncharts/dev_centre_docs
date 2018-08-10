@@ -17,7 +17,7 @@ heading: Version 3.13.x
 
 * Problem related to rendering FusionCharts in old IE browsers (VML) has been rectified.
 
-* Changing theme through `setChart` attribute has been fixed for Funnel and Pyramid chart.
+* Changing theme using `setChartAttribute` has been fixed for Funnel and Pyramid chart.
 
 * Application of palette colours on changing theme is rectified for Pie 3D charts.
 
