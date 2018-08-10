@@ -188,7 +188,7 @@ app.import('bower_components/fusioncharts/maps/fusioncharts.california.js');
 
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.
 
-## Include Themes via `npm`
+## Include Themes via npm
 
 [Themes]({% site.baseurl %}/themes/introduction-to-themes) shipped with FusionCharts Suite XT allow you to apply centralized themes to any number of charts.
 
