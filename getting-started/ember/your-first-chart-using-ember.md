@@ -5,7 +5,7 @@ heading: Your First Chart in Ember using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and **ember-FusionCharts** component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-gauge-9), and a [map]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-map-14).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and **ember-FusionCharts** component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/ember/your-first-chart-using-ember#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/ember/your-first-chart-using-ember#create-your-first-gauge-10), and a [map]({% site.baseurl %}/getting-started/ember/your-first-chart-using-ember#create-your-first-map-16).
 
 Before going through this article, please [install]({% site.baseurl %}/getting-started/ember/install-using-ember) `ember-fusioncharts` package, if you haven’t installed it already.
 
