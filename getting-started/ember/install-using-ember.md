@@ -37,18 +37,29 @@ This section outlines the steps for installing **ember-fusioncharts** via npm:
 
 You can install `ember-fusioncharts` component for any of the following CLI:
 
-**Modern Ember CLI**
-
-```PowerShell
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+  <li class='active'><a data-toggle='modern'>Modern Ember CLI</a></li>
+  <li><a data-toggle='earlier'>Earlier Ember CLI</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab modern-tab active'>
+<pre><code class="custom-hlc language-javascript">
 $ ember install ember-fusioncharts
-```
+</code></pre>
 
-**Earlier Ember CLI (and addon developers)**
-
-```PowerShell
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+<div class='tab earlier-tab'>
+<pre><code class="custom-hlc language-javascript">
 $ npm install ember-fusioncharts --save-dev
 $ ember g ember-fusioncharts
-```
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 **Step 2:** Install `fusioncharts` core library
 
