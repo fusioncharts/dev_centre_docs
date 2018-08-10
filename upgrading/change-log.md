@@ -7,9 +7,23 @@ heading: Version 3.13.x
 <h2 class="sub-heading">Version 3.13.1</h2>
 10th August, 2018
 
-<h4 class="sub-heading">Improvement</h4>
+<h4 class="sub-heading">Fixed</h4>
 
-<h4>Fixed</h4>
+* Chart was throwing runtime error while changing the `chartType`.
+
+* When map alias was prefixed with 'maps/', drill down chart failed to render files from the map folder.
+
+* The attribute `displayValue` set as `" "` (blank space), was not working for trend line when the start value is `0`.
+
+* `fusioncharts.vml.js` file has been added to the package for VML browsers which contains all the VML related codes. This file is used only when the chart will be rendered in the VML browers (IE8 and older).
+
+* On changing theme using `setChartAttribute`, `hoverEffect` was not updated in `Funnel` and `Pyramid` charts.
+
+* The background color of the Thermometer graph was not updating for themes updated `Fusion`, `Gammel` or `Candy`.
+
+* Padding was getting applied at the bottom of the consolidated tooltip when the value of the `plotToolText` attribute was set within a `<div>`.
+
+* `animateClockwise` was not working for `Pie/Doughnut` charts.
 
 <h2>Version 3.13.0</h2>
 3rd August, 2018
@@ -35,8 +49,6 @@ heading: Version 3.13.x
 * In zoomline chart, [maxPeakDataLimit]({% site.baseurl %}/chart-attributes/?chart=zoomline&attribute=chart_maxpeakdatalimit) and [minPeakDataLimit]({% site.baseurl %}/chart-attributes/?chart=zoomline&attribute=chart_minpeakdatalimit) attributes consider the limits as a range when both the attributes are used.
 
 * [getSVGString]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#getsvgstring-95) now accepts an object as the second parameter with a property named `keepImages`. It can now export the logo or any images (background images, etc.) present in the chart.
-
-* `fusioncharts.vml.js` file has been added to the package for VML browsers which contains all the VML related codes. This file is used only when the chart will be rendered in the VML browers(IE8 and older).
 
 * In `resized` event the `id` of the chart is added under the `dataObject`.
 
