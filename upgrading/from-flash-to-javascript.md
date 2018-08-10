@@ -8,11 +8,12 @@ This section is for those who are using any version of FusionCharts older than v
 
 ## What's Changed?
 
- * Starting v3.4, the file names and package structure of FusionCharts JavaScript library files have changed. Additionally, all file names are now in lower case to avoid conflicts on case-sensitive servers.
- * Huge performance increase in rendering charts and memory leak issues are fixed.
- * All charts now rendered in JavaScript only. Flash Charts are deprecated, and you will no longer need to explicitly specify the renderer as Flash or JavaScript. If you have explicitly set the renderer to flash, it needs to be removed.
- * `<style>` element is now deprecated, and is replaced with `<chart>` element attributes
- * Dependency on jQuery has been removed.
+* To define the type of the datasource (JSON, XML, XMLURL, etc), use the `dataFormat` attribute. The default value of the `dataFormat` attribute is `JSON`.
+* Starting v3.4, the file names and package structure of FusionCharts JavaScript library files have changed. Additionally, all file names are now in lower case to avoid conflicts on case-sensitive servers.
+* Huge performance increase in rendering charts and memory leak issues are fixed.
+* All charts now rendered in JavaScript only. Flash Charts are deprecated, and you will no longer need to explicitly specify the renderer as Flash or JavaScript. If you have explicitly set the renderer to flash, it needs to be removed.
+* `<style>` element is now deprecated, and is replaced with `<chart>` element attributes
+* Dependency on jQuery has been removed.
 
 Old File names| New File names
 ------|-------
