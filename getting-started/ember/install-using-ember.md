@@ -161,7 +161,9 @@ To use any other map (except world and USA) from the **1400+** maps, [download](
 
 **Install FusionMaps**
 
+```PowerShell
 $ npm install fusionmaps
+```
 
 Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps` folder.
 
