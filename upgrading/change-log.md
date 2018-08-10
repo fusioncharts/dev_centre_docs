@@ -1,12 +1,20 @@
 ---
 title: Changelog | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
-heading: Version 3.13.0
+heading: Version 3.13.X
 ---
 
-<p class="release-date"> 3rd August, 2018 </p>
+<h2 class="sub-heading">Version 3.13.1</h2>
+10th August, 2018
 
-## New Features
+<h4 class="sub-heading">Improvement</h4>
+
+<h4>Fixed</h4>
+
+<h2 class="sub-heading">Version 3.13.0</h2>
+3rd August, 2018
+
+<h4 class="sub-heading">New Features</h4>
 
 * FusionCharts Suite XT v3.13.0 introduces two new chart types: **[Overlapped column]({% site.baseurl %}/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-column-d-chart-1)** chart and **[Overlapped bar]({% site.baseurl %}/chart-guide/standard-charts/overlapped-column-and-bar-charts#overlapped-bar-d-chart-2)** chart.
 
@@ -32,7 +40,7 @@ heading: Version 3.13.0
 
 * In `resized` event the `id` of the chart is added under the `dataObject`.
 
-## Improvements
+<h4>Improvements</h4>
 
 * `Angular-FusionCharts` plugin has been renamed to `AngularJS-Fusioncharts`.
 * `Angular 2` and `Angular 4` plugins have been renamed to `Angular-FusionCharts`.
@@ -804,7 +812,7 @@ heading: Version 3.13.0
 
     * The entry for Khatlon district has been added to the main map.
 
-## Fixed
+<h4>Fixed</h4>
 
 * In touch devices, tooltip was not hiding on touch outside the chart.
 
@@ -880,7 +888,7 @@ heading: Version 3.13.0
 
     * The method `getMapFromId()` has been removed.  Use `getObjectReference()` instead.
 
-## Deprecated
+<h4>Deprecated</h4>
 
 * The **Fusioncharts CJS** module for npm has been deprecated.
 
