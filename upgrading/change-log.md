@@ -11,7 +11,7 @@ heading: Version 3.13.x
 
 * Chart was throwing runtime error while changing the `chartType`.
 
-* When map alias was prefixed with a path (e.g. ‘maps/’) drill down chart failed to render files from the map folder.
+* When map alias was prefixed with a path (e.g. ‘maps/’) drill down chart failed to render the maps.
 
 * The attribute `displayValue` set as `" "` (blank space), is now working for trend line when the start value is `0`.
 
@@ -23,11 +23,11 @@ heading: Version 3.13.x
 
 * Legend icons are now properly updated on changing theme, for Multi-Axis Line chart.
 
-* Crossline color is now properly updated, for Stacked Column chart.
+* Crossline color is now properly updated on changing theme, for Stacked Column chart.
 
 * The background color of the Thermometer graph is now properly updated for themes `Fusion`, `Gammel` or `Candy`.
 
-* Padding of the consolidated tooltip is now applied properly when the value of the `plotToolText` attribute is set within a `<div>`.
+* Consolidated tooltip can now safely use `<div>` element to define tooltext.
 
 * `animateClockwise` is now working for Pie/Doughnut charts.
 
