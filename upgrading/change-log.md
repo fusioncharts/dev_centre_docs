@@ -1,7 +1,7 @@
 ---
 title: Changelog | FusionCharts
 description: This section talks about the change in features and attributes with latest released version.
-heading: Version 3.13.X
+heading: Version 3.13.x
 ---
 
 <h2 class="sub-heading">Version 3.13.1</h2>
@@ -11,7 +11,7 @@ heading: Version 3.13.X
 
 <h4>Fixed</h4>
 
-<h2 class="sub-heading">Version 3.13.0</h2>
+<h2>Version 3.13.0</h2>
 3rd August, 2018
 
 <h4 class="sub-heading">New Features</h4>
