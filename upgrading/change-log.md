@@ -19,11 +19,21 @@ heading: Version 3.13.x
 
 * On changing theme using `setChartAttribute`, `hoverEffect` was not updated in `Funnel` and `Pyramid` charts.
 
+* In Pie 3D chart, if the theme was changed the palette colours were not applied till hovered on the slices.
+
+* In Multi-Axis Line chart, if the theme was changed, the legend icons were not updated properly.
+
+* For Stacked Column chart, if the theme was changed **crossline** colour was not updated.
+
 * The background color of the Thermometer graph was not updating for themes updated `Fusion`, `Gammel` or `Candy`.
 
 * Padding was getting applied at the bottom of the consolidated tooltip when the value of the `plotToolText` attribute was set within a `<div>`.
 
 * `animateClockwise` was not working for `Pie/Doughnut` charts.
+
+<h4>Removed</h4>
+
+* Single Series grid support is removed.
 
 <h2>Version 3.13.0</h2>
 3rd August, 2018
