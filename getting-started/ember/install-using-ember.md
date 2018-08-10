@@ -163,7 +163,7 @@ To use any other map (except world and USA) from the **1400+** maps, [download](
 
 $ npm install fusionmaps
 
-Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps` folder.</div>
+Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps` folder.
 
 **Note:** The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include `fusioncharts` in your project and the map renderer as shown below:
 
