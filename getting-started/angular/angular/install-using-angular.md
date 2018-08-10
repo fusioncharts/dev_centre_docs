@@ -112,7 +112,7 @@ import \* as ZoomLine from 'fusioncharts/fusioncharts.zoomline'; //Zoom Line
 </code></pre>
 <div class="mt-20"><strong>Overlapped Bar2D and Column2D Charts</strong></div>
 <pre><code class="custom-hlc language-javascript">
-import \* as OverlappedBar2D from 'fusioncharts/fusioncharts.overlapped2d'; //Overlapped Bar 2D
+import \* as OverlappedBar2D from 'fusioncharts/fusioncharts.overlappedbar2d'; //Overlapped Bar 2D
 import \* as OverlappedColumn2D from 'fusioncharts/fusioncharts.overlappedcolumn2d'; //Overlapped Column 2D
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>

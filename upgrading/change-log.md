@@ -11,6 +11,8 @@ heading: Version 3.13.x
 
 <h4>Fixed</h4>
 
+* The `displayValue` attribute was not working, when set to `" "` (blank space) for trend line.
+
 <h2>Version 3.13.0</h2>
 3rd August, 2018
 

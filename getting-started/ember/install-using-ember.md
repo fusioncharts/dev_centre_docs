@@ -60,7 +60,7 @@ The above steps complete the installation of `ember-fusioncharts`.
 
 To start using `ember-fusioncharts` component, import fusioncharts library and it modules to your `ember-cli-build.js` file:
 
-**Step 1:** Import **FusionChartsModule** in the `ember-cli-build.js`
+**Step 1:** Import FusionCharts module
 
 ```PowerShell
 /* eslint-env node */
@@ -79,85 +79,98 @@ module.exports = function(defaults) {
 };
 ```
 
-DISCUSSION
+**Step 2:** Import Specific Modules
+
+**Charts**
+
+```JavaScript
+app.import('bower_components/fusioncharts/fusioncharts.charts.js');
+```
+
+**PowerCharts**
+
+```JavaScript
+app.import('bower_components/fusioncharts/fusioncharts.powercharts.js');
+```
+
+**FusionWidgets**
+
+```JavaScript
+app.import('bower_components/fusioncharts/fusioncharts.widgets.js');
+```
+
+**Note:** To import specific charts, include the following import statements in your code:
+
+**Gantt Chart**
+
+```JavaScript
+app.import('bower_components/fusioncharts/fusioncharts.gantt.js');
+```
+
+**Treemap**
+
+```JavaScript
+app.import('bower_components/fusioncharts/fusioncharts.treemap.js');
+```
+
+**ZoomScatter**
+
+```JavaScript
+app.import('bower_components/fusioncharts/fusioncharts.zoomscatter.js');
+```
+
+**ZoomLine**
+
+```JavaScript
+app.import('bower_components/fusioncharts/fusioncharts.zoomline.js');
+```
+
+**Overlapped Bar2D Chart**
+
+```JavaScript
+app.import('bower_components/fusioncharts/fusioncharts.overlappedbar2d.js');
+```
+
+**Overlapped Bar2D Chart**
+
+```JavaScript
+app.import('bower_components/fusioncharts/fusioncharts.overlappedcolumn2d.js');
+```
 
 ## Include Map via npm
 
 FusionCharts Suite XT provides **1400+** data-driven maps as a part of the FusionMaps product. To reduce the size of the download package, the `fusioncharts` package contains only two map definitions in `fusioncharts/maps` directory - the **World Map**, and the **Map of USA**. To use any of these two map definition files, follow the steps given below:
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-  <li class='active'><a data-toggle='angular4'>Angular 4 onwards</a></li>
-  <li><a data-toggle='angular2'>Angular 2</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab angular4-tab active'>
-<div class="mt-20"><strong>Step 1: </strong>Include the core FusionCharts library</div>
-<pre><code class="custom-hlc language-javascript">
-import FusionCharts from 'fusioncharts/core';
-</code></pre>
-<div class="mt-20"><strong>Step 2: </strong>Load the `FusionMaps` renderer and the map definition file</div>
-<pre><code class="custom-hlc language-javascript">
-import FusionCharts from 'fusioncharts/core';
-import FusionMaps from 'fusioncharts/maps'; // Maps
-import World from 'fusioncharts/maps/es/fusioncharts.world' // World Map
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-<div class='tab angular2-tab'>
-<div class="mt-20"><strong>Step 1: </strong>Include the core FusionCharts library</div>
-<pre><code class="custom-hlc language-javascript">
-import \* as FusionCharts from 'fusioncharts';
-</code></pre>
-<div class="mt-20"><strong>Step 2: </strong>Load the `FusionMaps` renderer and the map definition file</div>
-<pre><code class="custom-hlc language-javascript">
-import \* as FusionCharts from 'fusioncharts';
-import \* as FusionMaps from 'fusioncharts/fusioncharts.maps'; // Maps
-import \* as World from 'fusioncharts/maps/fusioncharts.world' // World Map
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
+**Step 1:** Include the core FusionCharts library
 
-</div>
-</div>
+```JavaScript
+app.import('bower_components/fusioncharts/fusioncharts.js');
+```
+
+**Step 2:** Load the `FusionMaps` renderer and the map definition file
+
+```JavaScript
+app.import('bower_components/fusioncharts/fusioncharts.js');
+app.import('bower_components/fusioncharts/fusioncharts.maps.js');
+app.import('bower_components/fusioncharts/maps/fusioncharts.world.js');
+```
 
 **Load other map definition files**
 
 To use any other map (except world and USA) from the **1400+** maps, [download](https://www.fusioncharts.com/download/map-definition-files) the map definition files, then copy those map files to your current `maps` folder. The map definition files are named in the `fusioncharts.[MAP_ALIAS].js` format, where MAP_ALIAS represents the country, state or region name.
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-  <li class='active'><a data-toggle='angular4'>Angular 4 onwards</a></li>
-  <li><a data-toggle='angular2'>Angular 2</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab angular4-tab active'>
-<pre><code class="custom-hlc language-javascript">
-$ npm install fusionmaps
-</code></pre>
-<div class="mt-20">Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps/es` folder.</div>
-<div class="mt-20"><strong>Note:</strong> The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include `fusioncharts` in your project and the map renderer as shown below:</div>
-<pre><code class="custom-hlc language-javascript">
-import FusionCharts from 'fusioncharts/core';
-import FusionMaps from 'fusioncharts/maps';
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-<div class='tab angular2-tab'>
-<pre><code class="custom-hlc language-javascript">
-$ npm install fusionmaps
-</code></pre>
-<div class="mt-20">Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps` folder.</div>
-<div class="mt-20"><strong>Note:</strong> The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include `fusioncharts` in your project and the map renderer as shown below:</div>
-<pre><code class="custom-hlc language-javascript">
-import \* as FusionCharts from 'fusioncharts';
-import \* as FusionMaps from 'fusioncharts/fusioncharts.maps';
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
+**Install FusionMaps**
 
-</div>
-</div>
+$ npm install fusionmaps
+
+Once the fusionmaps package is installed you will find all the map definition files in `fusionmaps/maps` folder.</div>
+
+**Note:** The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include `fusioncharts` in your project and the map renderer as shown below:
+
+```JavaScript
+app.import('bower_components/fusioncharts/fusioncharts.js');
+app.import('bower_components/fusioncharts/fusioncharts.maps.js');
+```
 
 Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.
 
@@ -165,33 +178,13 @@ Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html)
 
 Therefore, assuming you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-  <li class='active'><a data-toggle='angular4'>Angular 4 onwards</a></li>
-  <li><a data-toggle='angular2'>Angular 2</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab angular4-tab active'>
-<pre><code class="custom-hlc language-javascript">
-import FusionCharts from 'fusioncharts/core';
-import FusionMaps from 'fusioncharts/maps';
-import California from 'fusionmaps/maps/es/fusioncharts.california';
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-<div class='tab angular2-tab'>
-<pre><code class="custom-hlc language-javascript">
-import \* as FusionCharts from 'fusioncharts';
-import \* as FusionMaps from 'fusioncharts/fusioncharts.maps';
-import \* as California from 'fusionmaps/maps/fusioncharts.california';
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
+```JavaScript
+app.import('bower_components/fusioncharts/fusioncharts.js');
+app.import('bower_components/fusioncharts/fusioncharts.maps.js');
+app.import('bower_components/fusioncharts/maps/fusioncharts.california.js');
+```
 
-</div>
-</div>
-
-> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps/es` directory and are fetched from there.
+> It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.
 
 ## Include Themes via `npm`
 
@@ -205,36 +198,16 @@ In a theme file, we can centralize the following aspects of all of your charts, 
 
 To include themes, follow the steps given below:
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-  <li class='active'><a data-toggle='angular4'>Angular 4 onwards</a></li>
-  <li><a data-toggle='angular2'>Angular 2</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab angular4-tab active'>
-<div class="mt-20"><strong>Step 1: </strong>Import FusionCharts core library</div>
-<pre><code class="custom-hlc language-javascript">
-import FusionCharts from 'fusioncharts/core'
-</code></pre>
-<div class="mt-20"><strong>Step 2: </strong>Include the theme file</div>
-<pre><code class="custom-hlc language-javascript">
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-<div class='tab angular2-tab'>
-<div class="mt-20"><strong>Step 1: </strong>Import FusionCharts core library</div>
-<pre><code class="custom-hlc language-javascript">
-import \* as FusionCharts from 'fusioncharts'
-</code></pre>
-<div class="mt-20"><strong>Step 2: </strong>Include the theme file</div>
-<pre><code class="custom-hlc language-javascript">
-import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
+**Step 1:** Import FusionCharts core library
 
-</div>
-</div>
+```JavaScript
+app.import('bower_components/fusioncharts/fusioncharts.js');
+```
+
+**Step 2:** Include the theme file
+
+```JavaScript
+app.import('bower_components/themes/fusioncharts.theme.fusion.js');
+```
 
 > Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes).
