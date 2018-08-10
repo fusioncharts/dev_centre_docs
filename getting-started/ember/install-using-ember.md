@@ -1,17 +1,17 @@
 ---
 title: Installation | FusionCharts
-description: This article outlines the steps to install fusioncharts and fusioncharts angular component to create charts.
+description: This article outlines the steps to install fusioncharts and fusioncharts ember component to create charts.
 heading: Installation
 chartPresent: false
 ---
 
-The **angular-fusioncharts** component, along with FusionCharts Suite XT, lets you add interactive JavaScript charts and graphs to your web and mobile applications using only a single Angular component.
+The **ember-fusioncharts** component, provides bindings for FusionCharts JavaScript charting library. It lets you add interactive JavaScript charts and graphs to your web and mobile applications using EmberJS component.
 
-In this article, we will show you how to download and install the `angular-fusionCharts` component and all the other dependencies on your system.
+In this article, we will show you how to download and install the `ember-fusionCharts` component and all the other dependencies on your system.
 
-> Unlike other tech stacks **angular-fusioncharts** can only be used via `npm`. Since, **Angular2** and onward do not support direct `<script>` inclusion of files, this page shows only the steps to install via `npm`.
+> Unlike other tech stacks **ember-fusioncharts** can only be used via `npm`.
 
-Before installing and starting to work with **angular-fusioncharts** wrapper, let's get familiar with the JavaScript files present in the **angular-fusioncharts** package:
+Before installing and starting to work with **ember-fusioncharts** component, let's get familiar with the JavaScript files present in the **ember-fusioncharts** package:
 
 File Name|Description|
 -|-
@@ -29,14 +29,25 @@ File Name|Description|
 `maps/*`|This folder contains Map Definition files required by each map to be rendered by `fusioncharts.maps.js`. To keep the download package size small, it contains only 2 maps - `fusioncharts.world.js` and `fusioncharts.usa.js`. You can download the definition files of all the 1400+ maps offered by FusionMaps XT from [here](https://www.fusioncharts.com/download/map-definition-files). </br>**Note:** Replace the map definition files (of v3.12.2 or older) with the latest files available in download package while upgrading to v3.13.0.|
 `themes/*`|This folder contains pre-packaged themes that can be applied to charts, gauges, and maps to style them through a central FusionCharts theme files. Refer each theme with their respective `JavaScript` file names.|
 
-## Install Angular-FusionCharts via npm
+## Install Ember-FusionCharts via npm
 
-This section outlines the steps for installing **angular-fusioncharts** via npm:
+This section outlines the steps for installing **ember-fusioncharts** via npm:
 
-**Step 1:** Install `angular-fusioncharts`
+**Step 1:** Install `ember-fusioncharts`
+
+You can install `ember-fusioncharts` component for any of the following CLI:
+
+**Modern Ember CLI**
 
 ```PowerShell
-$ npm install angular-fusioncharts --save
+$ ember install ember-fusioncharts
+```
+
+**Earlier Ember CLI (and addon developers)**
+
+```PowerShell
+$ npm install ember-fusioncharts --save-dev
+$ ember g ember-fusioncharts
 ```
 
 **Step 2:** Install `fusioncharts` core library
@@ -44,82 +55,31 @@ $ npm install angular-fusioncharts --save
 ```PowerShell
 $ npm install fusioncharts --save
 ```
-The above steps complete the installation of `angular-fusioncharts`. The FusionCharts ES module uses **dynamic import** which is an advanced ES6 feature. This feature is supported from `typescript` **v2.4.0**. However, `Angular 2` uses **v2.2.0**. So, the FusionCharts ES module is not supported in `Angular 2`. 
 
-To start using `angular-fusioncharts` follow the steps below: 
+The above steps complete the installation of `ember-fusioncharts`.
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-  <li class='active'><a data-toggle='angular4'>Angular 4 onwards</a></li>
-  <li><a data-toggle='angular2'>Angular 2</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab angular4-tab active'>
-<div class="mt-30"><strong>Step 1: </strong>Import <strong>FusionChartsModule</strong> in the root `@NgModule` (in your application)</div>
-<pre><code class="custom-hlc language-javascript">
-import { FusionChartsModule } from 'angular-fusioncharts';
-</code></pre>
-<div class="mt-30"><strong>Step 2: </strong>Import FusionCharts library in the root `@NgModule`(in your application)</div>
-<pre><code class="custom-hlc language-javascript">
-import FusionCharts from 'fusioncharts/core';
-</code></pre>
-<div class="mt-30"><strong>Step 3: </strong>Import Specific modules</div>
-<pre><code class="custom-hlc language-javascript">
-// Include the chart from viz folder
-// E.g. - import ChartType from fusioncharts/viz/[ChartType]
-import Column2D from 'fusioncharts/viz/column2d';  
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-<div class='tab angular2-tab'>
-<div class="mt-30"><strong>Step 1: </strong>Import <strong>FusionCharts Module</strong> in the root `@NgModule` (in your application)</div>
-<pre><code class="custom-hlc language-javascript">
-import { FusionChartsModule } from 'angular-fusioncharts';
-</code></pre>
-<div class="mt-30"><strong>Step 2: </strong>Import FusionCharts library in the root `@NgModule`(in your application)</div>
-<pre><code class="custom-hlc language-javascript">
-import \* as FusionCharts from 'fusioncharts';
-</code></pre>
-<div class="mt-30"><strong>Step 3: </strong>Import Specific modules</div>
-<div class="mt-20"><strong>Import Charts</strong></div>
-<pre><code class="custom-hlc language-javascript">
-import \* as Charts from 'fusioncharts/fusioncharts.charts';    
-</code></pre>
-<div class="mt-20"><strong>PowerCharts</strong></div>
-<pre><code class="custom-hlc language-javascript">
-import \* as PowerCharts from 'fusioncharts/fusioncharts.powercharts';
-</code></pre>
-<div class="mt-20"><strong>FusionWidgets</strong></div>
-<pre><code class="custom-hlc language-javascript">
-import \* as Widgets from 'fusioncharts/fusioncharts.widgets'; // Widgets
-</code></pre>
-<div class="mt-10"><strong>Note: </strong>To import specific charts, include the following import statements in your code:</div>
-<div class="mt-20"><strong>Gantt Chart</strong></div>
-<pre><code class="custom-hlc language-javascript">
-import \* as Gantt from 'fusioncharts/fusioncharts.gantt'; // Gantt
-</code></pre>
-<div class="mt-20"><strong>Treemap</strong></div>
-<pre><code class="custom-hlc language-javascript">
-import \* as Treemap from 'fusioncharts/fusioncharts.treemap'; // Treemap
-</code></pre>
-<div class="mt-20"><strong>ZoomScatter</strong></div>
-<pre><code class="custom-hlc language-javascript">
-import \* as ZoomScatter from 'fusioncharts/fusioncharts.zoomscatter'; //Zoom Scatter
-</code></pre>
-<div class="mt-20"><strong>ZoomLine</strong></div>
-<pre><code class="custom-hlc language-javascript">
-import \* as ZoomLine from 'fusioncharts/fusioncharts.zoomline'; //Zoom Line
-</code></pre>
-<div class="mt-20"><strong>Overlapped Bar2D and Column2D Charts</strong></div>
-<pre><code class="custom-hlc language-javascript">
-import \* as OverlappedBar2D from 'fusioncharts/fusioncharts.overlapped2d'; //Overlapped Bar 2D
-import \* as OverlappedColumn2D from 'fusioncharts/fusioncharts.overlappedcolumn2d'; //Overlapped Column 2D
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
+To start using `ember-fusioncharts` component, import fusioncharts library and it modules to your `ember-cli-build.js` file:
 
-</div>
-</div>
+**Step 1:** Import **FusionChartsModule** in the `ember-cli-build.js`
+
+```PowerShell
+/* eslint-env node */
+'use strict';
+
+const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+
+module.exports = function(defaults) {
+    let app = new EmberApp(defaults, {
+    // Add options here
+    });
+
+    // Import fusioncharts library
+    app.import('bower_components/fusioncharts/fusioncharts.js');
+    return app.toTree();
+};
+```
+
+DISCUSSION
 
 ## Include Map via npm
 
