@@ -5,7 +5,7 @@ heading: Installation
 chartPresent: false
 ---
 
-The **ember-fusioncharts** component, provides bindings for FusionCharts JavaScript charting library. It lets you add interactive JavaScript charts and graphs to your web and mobile applications using EmberJS component.
+The **ember-fusioncharts** component, provide bindings for FusionCharts JavaScript charting library. It lets you add interactive JavaScript charts and graphs to your web and mobile applications using EmberJS component.
 
 In this article, we will show you how to download and install the `ember-fusionCharts` component and all the other dependencies on your system.
 
@@ -74,7 +74,7 @@ module.exports = function(defaults) {
     });
 
     // Import fusioncharts library
-    app.import('bower_components/fusioncharts/fusioncharts.js');
+    app.import('node_modules/fusioncharts/fusioncharts.js');
     return app.toTree();
 };
 ```
@@ -84,19 +84,19 @@ module.exports = function(defaults) {
 **Charts**
 
 ```JavaScript
-app.import('bower_components/fusioncharts/fusioncharts.charts.js');
+app.import('node_modules/fusioncharts/fusioncharts.charts.js');
 ```
 
 **PowerCharts**
 
 ```JavaScript
-app.import('bower_components/fusioncharts/fusioncharts.powercharts.js');
+app.import('node_modules/fusioncharts/fusioncharts.powercharts.js');
 ```
 
 **FusionWidgets**
 
 ```JavaScript
-app.import('bower_components/fusioncharts/fusioncharts.widgets.js');
+app.import('node_modules/fusioncharts/fusioncharts.widgets.js');
 ```
 
 **Note:** To import specific charts, include the following import statements in your code:
@@ -104,37 +104,37 @@ app.import('bower_components/fusioncharts/fusioncharts.widgets.js');
 **Gantt Chart**
 
 ```JavaScript
-app.import('bower_components/fusioncharts/fusioncharts.gantt.js');
+app.import('node_modules/fusioncharts/fusioncharts.gantt.js');
 ```
 
 **Treemap**
 
 ```JavaScript
-app.import('bower_components/fusioncharts/fusioncharts.treemap.js');
+app.import('node_modules/fusioncharts/fusioncharts.treemap.js');
 ```
 
 **ZoomScatter**
 
 ```JavaScript
-app.import('bower_components/fusioncharts/fusioncharts.zoomscatter.js');
+app.import('node_modules/fusioncharts/fusioncharts.zoomscatter.js');
 ```
 
 **ZoomLine**
 
 ```JavaScript
-app.import('bower_components/fusioncharts/fusioncharts.zoomline.js');
+app.import('node_modules/fusioncharts/fusioncharts.zoomline.js');
 ```
 
 **Overlapped Bar2D Chart**
 
 ```JavaScript
-app.import('bower_components/fusioncharts/fusioncharts.overlappedbar2d.js');
+app.import('node_modules/fusioncharts/fusioncharts.overlappedbar2d.js');
 ```
 
 **Overlapped Bar2D Chart**
 
 ```JavaScript
-app.import('bower_components/fusioncharts/fusioncharts.overlappedcolumn2d.js');
+app.import('node_modules/fusioncharts/fusioncharts.overlappedcolumn2d.js');
 ```
 
 ## Include Map via npm
@@ -144,15 +144,15 @@ FusionCharts Suite XT provides **1400+** data-driven maps as a part of the Fusio
 **Step 1:** Include the core FusionCharts library
 
 ```JavaScript
-app.import('bower_components/fusioncharts/fusioncharts.js');
+app.import('node_modules/fusioncharts/fusioncharts.js');
 ```
 
 **Step 2:** Load the `FusionMaps` renderer and the map definition file
 
 ```JavaScript
-app.import('bower_components/fusioncharts/fusioncharts.js');
-app.import('bower_components/fusioncharts/fusioncharts.maps.js');
-app.import('bower_components/fusioncharts/maps/fusioncharts.world.js');
+app.import('node_modules/fusioncharts/fusioncharts.js');
+app.import('node_modules/fusioncharts/fusioncharts.maps.js');
+app.import('node_modules/fusioncharts/maps/fusioncharts.world.js');
 ```
 
 **Load other map definition files**
@@ -170,8 +170,8 @@ Once the fusionmaps package is installed you will find all the map definition fi
 **Note:** The `fusionmaps` package is dependent on the `fusioncharts` package. Therefore, to use fusionmaps, it is necessary to first include `fusioncharts` in your project and the map renderer as shown below:
 
 ```JavaScript
-app.import('bower_components/fusioncharts/fusioncharts.js');
-app.import('bower_components/fusioncharts/fusioncharts.maps.js');
+app.import('node_modules/fusioncharts/fusioncharts.js');
+app.import('node_modules/fusioncharts/fusioncharts.maps.js');
 ```
 
 Load the map definition file(s) from the `fusionmaps` package for the map(s) to be rendered using the format: **fusioncharts.&lt;MAP_ALIAS&gt;**.
@@ -181,9 +181,9 @@ Click [here](https://www.fusioncharts.com/dev/getting-started/list-of-maps.html)
 Therefore, assuming you need to render the map of California, the alias name **california** replaces **MAP_ALIAS** in the format. So, the complete format will be `fusioncharts.california`.
 
 ```JavaScript
-app.import('bower_components/fusioncharts/fusioncharts.js');
-app.import('bower_components/fusioncharts/fusioncharts.maps.js');
-app.import('bower_components/fusioncharts/maps/fusioncharts.california.js');
+app.import('node_modules/fusioncharts/fusioncharts.js');
+app.import('node_modules/fusioncharts/fusioncharts.maps.js');
+app.import('node_modules/fusioncharts/maps/fusioncharts.california.js');
 ```
 
 > It is mandatory to include the map definition files for all maps that you want to render in your application. Unlike the core files that are stored in the `fusioncharts` directory, all map definition files are stored in the `maps` directory and are fetched from there.
@@ -203,13 +203,13 @@ To include themes, follow the steps given below:
 **Step 1:** Import FusionCharts core library
 
 ```JavaScript
-app.import('bower_components/fusioncharts/fusioncharts.js');
+app.import('node_modules/fusioncharts/fusioncharts.js');
 ```
 
 **Step 2:** Include the theme file
 
 ```JavaScript
-app.import('bower_components/themes/fusioncharts.theme.fusion.js');
+app.import('node_modules/themes/fusioncharts.theme.fusion.js');
 ```
 
 > Only including the `fusioncharts.theme.fusion.js` file will not apply the theme. To apply the theme, set the value of `theme` attribute to the respective name of the theme. For more details click [here]({% site.baseurl %}/themes/introduction-to-themes).
