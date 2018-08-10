@@ -31,6 +31,10 @@ heading: Version 3.13.x
 
 * `animateClockwise` was not working for `Pie/Doughnut` charts.
 
+<h4>Removed</h4>
+
+* Single Series grid support is removed.
+
 <h2>Version 3.13.0</h2>
 3rd August, 2018
 
