@@ -7,33 +7,29 @@ heading: Version 3.13.x
 <h2 class="sub-heading">Version 3.13.1</h2>
 10th August, 2018
 
-<h4 class="sub-heading">Fixed</h4>
+<h4 class="sub-heading">Fixes</h4>
 
 * Chart was throwing runtime error while changing the `chartType`.
 
-* When map alias was prefixed with 'maps/', drill down chart failed to render files from the map folder.
+* When map alias was prefixed with a path (e.g. ‘maps/’) drill down chart failed to render files from the map folder.
 
-* The attribute `displayValue` set as `" "` (blank space), was not working for trend line when the start value is `0`.
+* The attribute `displayValue` set as `" "` (blank space), is now working for trend line when the start value is `0`.
 
-* `fusioncharts.vml.js` file has been added to the package for VML browsers which contains all the VML related codes. This file is used only when the chart will be rendered in the VML browers (IE8 and older).
+* Problem related to rendering FusionCharts in old IE browsers (VML) has been rectified.
 
-* On changing theme using `setChartAttribute`, `hoverEffect` was not updated in `Funnel` and `Pyramid` charts.
+* Changing theme using `setChartAttribute` has been fixed for Funnel and Pyramid chart.
 
-* In Pie 3D chart, if the theme was changed the palette colours were not applied till hovered on the slices.
+* Application of palette colours on changing theme is rectified for Pie 3D charts.
 
-* In Multi-Axis Line chart, if the theme was changed, the legend icons were not updated properly.
+* Legend icons are now properly updated on changing theme, for Multi-Axis Line chart.
 
-* For Stacked Column chart, if the theme was changed **crossline** colour was not updated.
+* Crossline color is now properly updated, for Stacked Column chart.
 
-* The background color of the Thermometer graph was not updating for themes updated `Fusion`, `Gammel` or `Candy`.
+* The background color of the Thermometer graph is now properly updated for themes `Fusion`, `Gammel` or `Candy`.
 
-* Padding was getting applied at the bottom of the consolidated tooltip when the value of the `plotToolText` attribute was set within a `<div>`.
+* Padding of the consolidated tooltip is now applied properly when the value of the `plotToolText` attribute is set within a `<div>`.
 
-* `animateClockwise` was not working for `Pie/Doughnut` charts.
-
-<h4>Removed</h4>
-
-* Single Series grid support is removed.
+* `animateClockwise` is now working for Pie/Doughnut charts.
 
 <h2>Version 3.13.0</h2>
 3rd August, 2018
@@ -834,7 +830,7 @@ heading: Version 3.13.x
 
     * The entry for Khatlon district has been added to the main map.
 
-<h4>Fixed</h4>
+<h4>Fixes</h4>
 
 * In touch devices, tooltip was not hiding on touch outside the chart.
 
@@ -876,7 +872,11 @@ heading: Version 3.13.x
 
 * Experimental API `enableFirebugLite` has been removed from the Suite, as most of the browsers now have their own debugger.
 
-* Following are the list of attributes which have been removed from the FusionCharts XT Suite:
+<h4> Removed </h4>
+
+* Single Series grid support is removed.
+
+Following are the list of attributes which have been removed from the FusionCharts XT Suite:
 
     * `Annrenderdelay`
 
