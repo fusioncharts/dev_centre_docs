@@ -101,6 +101,29 @@ These attributes let you configure chart cosmetics like color, transparency, fon
 
 For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d).
 
+### Import `fusioncharts` library
+
+To create a **Column2D** chart, import the following files to your `ember-build.js` build file:
+
+```JavaScript
+/* eslint-env node */
+'use strict';
+
+const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+
+module.exports = function(defaults) {
+    let app = new EmberApp(defaults, {
+    // Add options here
+    });
+
+    // Import fusioncharts library
+    app.import('node_modules/fusioncharts/fusioncharts.js');
+    app.import('node_modules/fusioncharts/fusioncharts.charts.js');
+    app.import('node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js');
+    return app.toTree();
+};
+```
+
 ### Create component
 
 Create a simple component (e.g. chart-viewer) to render your chart using:
@@ -249,6 +272,29 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
         }]
     }
 }
+```
+
+### Import `fusioncharts` library
+
+To create a **Angular Gauge**, import the following files to your `ember-build.js` build file:
+
+```JavaScript
+/* eslint-env node */
+'use strict';
+
+const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+
+module.exports = function(defaults) {
+    let app = new EmberApp(defaults, {
+    // Add options here
+    });
+
+    // Import fusioncharts library
+    app.import('node_modules/fusioncharts/fusioncharts.js');
+    app.import('node_modules/fusioncharts/fusioncharts.widgets.js');
+    app.import('node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js');
+    return app.toTree();
+};
 ```
 
 ### Create component
@@ -425,6 +471,30 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
         "showLabel": "1"
     }]
 }
+```
+
+### Import `fusioncharts` library
+
+To create a **World Map**, import the following files to your `ember-build.js` build file:
+
+```JavaScript
+/* eslint-env node */
+'use strict';
+
+const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+
+module.exports = function(defaults) {
+    let app = new EmberApp(defaults, {
+    // Add options here
+    });
+
+    // Import fusioncharts library
+    app.import('node_modules/fusioncharts/fusioncharts.js');
+    app.import('node_modules/fusioncharts/fusioncharts.maps.js');
+    app.import('node_modules/fusioncharts/maps/fusioncharts.world.js');
+    app.import('node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js');
+    return app.toTree();
+};
 ```
 
 ### Create component

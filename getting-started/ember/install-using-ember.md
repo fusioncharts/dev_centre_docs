@@ -62,7 +62,7 @@ To start using `ember-fusioncharts` component, import fusioncharts library and i
 
 **Step 1:** Import FusionCharts module
 
-```PowerShell
+```JavaScript
 /* eslint-env node */
 'use strict';
 
