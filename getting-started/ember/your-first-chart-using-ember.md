@@ -1,19 +1,19 @@
 ---
-title: Your First Chart in Angular using FusionCharts | FusionCharts
-description: This article outlines the steps to create your first chart, widget and map using the fusionCharts Angular component.
-heading: Your First Chart in Angular using FusionCharts
+title: Your First Chart in Ember using FusionCharts | FusionCharts
+description: This article outlines the steps to create your first chart, widget and map using the fusionCharts Ember component.
+heading: Your First Chart in Ember using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and **angular-FusionCharts** component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-gauge-9), and a [map]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-map-14).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and **ember-FusionCharts** component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/ember/your-first-chart-using-ember#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/ember/your-first-chart-using-ember#create-your-first-gauge-10), and a [map]({% site.baseurl %}/getting-started/ember/your-first-chart-using-ember#create-your-first-map-16).
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/angular/angular/install-using-angular) `angular-fusioncharts` package, if you haven’t installed it already.
+Before going through this article, please [install]({% site.baseurl %}/getting-started/ember/install-using-ember) `ember-fusioncharts` package, if you haven’t installed it already.
 
 ## Create your first chart
 
-In this section, we will create a chart using the `angular-fusioncharts` component. We will create a **Column 2D** chart which has the alias `column2d` in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list [here]({% site.baseurl %}/chart-guide/list-of-charts).
+In this section, we will create a chart using the `ember-fusioncharts` component. We will create a **Column 2D** chart which has the alias `column2d` in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list [here]({% site.baseurl %}/chart-guide/list-of-charts).
 
-To create charts, the `angular-fusioncharts` component can be passed as a part of another angular component.
+To create charts, the `ember-fusioncharts` component can be passed as a part of another ember component.
 
 Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
 
@@ -101,99 +101,92 @@ These attributes let you configure chart cosmetics like color, transparency, fon
 
 For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d).
 
-### Import FusionCharts module
+### Create component
 
-In this step, we will import the `FusionCharts` module into the root `@NgModule` to create the **Column 2D** chart. The code is given below:
+Create a simple component (e.g. chart-viewer) to render your chart using:
 
-
-```JavaScript
-import { FusionChartsModule } from 'angular-fusioncharts';
-import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d'; // Column2D chart
-
-FusionChartsModule.fcRoot(FusionCharts, Column2D);
-@NgModule({
-    declarations: [
-        AppComponent
-    ],
-    imports: [
-        BrowserModule, 
-        FusionChartsModule 
-    ],
-    providers: [],
-    bootstrap: [ AppComponent ]
-})
-export class AppModule {
-}
+```PowerShell
+$ ember g component chart-viewer
 ```
 
-> The `<fusioncharts></fusioncharts>` component is available for use in any component throughout your app.
-> We will render our first chart in the main `app.component`.
+### Add data to `chart-viewer.js` file
 
-### Add data to `app.component.ts`
-
-Add the following code to `app.component.ts`:
+Add the following code to `chart-viewer.js`:
 
 ```
-import {Component} from '@angular/core';
-@Component({
-    selector: 'app',
-    templateUrl: './app.component.html',
-})
-export class AppComponent {
-    dataSource: Object;
-    constructor() {
-        this.dataSource = {
-            chart: {
-                "caption": "Countries With Most Oil Reserves [2017-18]",
-                "subCaption": "In MMbbl = One Million barrels",
-                "xAxisName": "Country",
-                "yAxisName": "Reserves (MMbbl)",
-                "numberSuffix": "K",
-                "theme": "fusion",
-            },
-            // Chart Data
-            "data": [{
-                "label": "Venezuela",
-                "value": "290"
-            }, {
-                "label": "Saudi",
-                "value": "260"
-            }, {
-                "label": "Canada",
-                "value": "180"
-            }, {
-                "label": "Iran",
-                "value": "140"
-            }, {
-                "label": "Russia",
-                "value": "115"
-            }, {
-                "label": "UAE",
-                "value": "100"
-            }, {
-                "label": "US",
-                "value": "30"
-            }, {
-                "label": "China",
-                "value": "30"
-            }]
-        }; // end of this.dataSource
-    } // end of constructor
-} // end of class AppComponent
+import Component from '@ember/component';
+
+const myDataSource = {
+    chart: {
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion",
+    },
+    // Chart Data
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
+}; // end of this.dataSource
+
+export default Component.extend({
+    title: 'Ember FusionCharts Sample',
+    width: 700,
+    height: 400,
+    type: 'column2d',
+    dataFormat: 'json',
+    dataSource: myDataSource
+});
 ```
 
-### Add data to `app.component.html`
+### Add data to `chart-viewer.hbs`
 
-Add the following code to `app.component.html`:
+Add `fusioncharts` component to your `chart-viewer.hbs` template to render the chart:
 
-```html
-<fusioncharts
-    width="700"
-    height="400"
-    type="Column2d"
-    [dataSource]="dataSource">
-</fusioncharts>
+```
+<h1>{{ title }}</h1>
+
+{{fusioncharts-xt
+    width=width
+    height=height
+    type=type
+    dataFormat=dataFormat
+    dataSource=dataSource
+}}
+```
+
+### Add data to `application.hbs`
+
+Add `chart-viewer` component to your `application.hbs` template:
+
+```
+{{chart-viewer}}
+
+{{outlet}}
 ```
 
 See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d) (the keys in the `dataSource` object) for a Column 2D chart.
@@ -258,91 +251,89 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-### Setup the main module
+### Create component
 
-In this step, we will setup the main module to create the **angularGauge** chart. The code is given below:
+Create a simple component (e.g. chart-viewer) to render your chart using:
 
-
-```
-import { FusionChartsModule } from 'angular-fusioncharts';
-import FusionCharts from 'fusioncharts/core';
-import AngularGauge from 'fusioncharts/viz/angulargauge'; // AngularGauge
-
-FusionChartsModule.fcRoot(FusionCharts, AngularGauge);
-@NgModule({
-    declarations: [
-        AppComponent
-    ],
-    imports: [
-        BrowserModule, 
-        FusionChartsModule 
-    ],
-    providers: [],
-    bootstrap: [ AppComponent ]
-})
-export class AppModule {
-}
+```PowerShell
+$ ember g component chart-viewer
 ```
 
-### Add data to `app.component.ts`
+### Add data to `chart-viewer.js` file
 
-Add the following code to `app.component.ts`:
+Add the following code to `chart-viewer.js`:
 
 ```
-import {Component} from '@angular/core';
-@Component({
-    selector: 'app',
-    templateUrl: './app.component.html',
-})
-export class AppComponent {
-    dataSource: Object;
-    constructor() {
-        this.dataSource = {
-            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-            "lowerLimit": "0",
-            "upperLimit": "100",
-            "showValue": "1",
-            "numberSuffix": "%",
-            "theme": "fusion",
-            "showToolTip": "0"
-        },
-        // Chart Data
-        "colorRange": {
-            "color": [{
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#F2726F"
-            }, {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#FFC533"
-            }, {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#62B58F"
-            }]
-        },
-        "dials": {
-            "dial": [{
-                "value": "81"
-            }]
-        }
-    }; // end of this.dataSource
-} // end of constructor
-} // end of class AppComponent
+import Component from '@ember/component';
+
+const myDataSource = {
+    // Chart Configuration
+    "chart": {
+        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+        "lowerLimit": "0",
+        "upperLimit": "100",
+        "showValue": "1",
+        "numberSuffix": "%",
+        "theme": "fusion",
+        "showToolTip": "0"
+    },
+    // Chart Data
+    "colorRange": {
+        "color": [{
+            "minValue": "0",
+            "maxValue": "50",
+            "code": "#F2726F"
+        }, {
+            "minValue": "50",
+            "maxValue": "75",
+            "code": "#FFC533"
+        }, {
+            "minValue": "75",
+            "maxValue": "100",
+            "code": "#62B58F"
+        }]
+    },
+    "dials": {
+        "dial": [{
+            "value": "81"
+        }]
+    }
+}; // end of this.dataSource
+
+export default Component.extend({
+    title: 'Ember FusionCharts Sample',
+    width: 450,
+    height: 250,
+    type: 'angulargauge',
+    dataFormat: 'json',
+    dataSource: myDataSource
+});
 ```
 
-### Add data to `app.component.html`
+### Add data to `chart-viewer.hbs`
 
-Add the following code to `app.component.html`:
+Add `fusioncharts` component to your `chart-viewer.hbs` template to render the chart:
 
-```html
-<fusioncharts
-    width="450"
-    height="250"
-    type="AngularGauge"
-    [dataSource]="dataSource">
-</fusioncharts>
+```
+<h1>{{ title }}</h1>
+
+{{fusioncharts-xt
+    width=width
+    height=height
+    type=type
+    dataFormat=dataFormat
+    dataSource=dataSource
+}}
+```
+
+### Add data to `application.hbs`
+
+Add `chart-viewer` component to your `application.hbs` template:
+
+```
+{{chart-viewer}}
+
+{{outlet}}
 ```
 
 See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge) for an angular gauge.
@@ -436,52 +427,22 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-### Setup the main module
+### Create component
 
-In this step, we will setup the main module to create the **World Map**. The code is given below:
+Create a simple component (e.g. chart-viewer) to render your chart using:
 
-
-```
-import { FusionChartsModule } from 'angular-fusioncharts';
-import FusionCharts from 'fusioncharts/core';
-import FusionMaps from 'fusioncharts/maps'; // maps
-import World from 'fusioncharts/maps/es/fusioncharts.world'; // world
-
-FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World);
-@NgModule({
-    declarations: [
-        AppComponent
-    ],
-    imports: [
-        BrowserModule, 
-        FusionChartsModule 
-    ],
-    providers: [],
-    bootstrap: [ AppComponent ]
-})
-export class AppModule {
-}
+```PowerShell
+$ ember g component chart-viewer
 ```
 
-### Add data to `app.component.ts`
+### Add data to `chart-viewer.js` file
 
-In this step, we will setup the main module to create the **World Map**. The code is given below:
-
+Add the following code to `chart-viewer.js`:
 
 ```
-import {
-    Component
-} from '@angular/core';
+import Component from '@ember/component';
 
-@Component({
-    selector: 'app',
-    templateUrl: './app.component.html'
-})
-export class AppComponent {
-    dataSource: Object;
-    constructor() {
-        this.dataSource = {
-    //Map Configuration
+const myDataSource = {
     "chart": {
         "caption": "Average Annual Population Growth",
         "subcaption": " 1955-2015",
@@ -491,12 +452,11 @@ export class AppComponent {
         "entityFillHoverColor": "#FFF9C4",
         "theme": "fusion"
     },
-    // Aesthetics; ranges synced with the slider
     "colorrange": {
         "minvalue": "0",
         "code": "#FFE0B2",
         "gradient": "1",
-        "color": [{ // Specific to slider
+        "color": [{
             "minvalue": "0.5",
             "maxvalue": "1.0",
             "color": "#FFD74D"
@@ -510,7 +470,6 @@ export class AppComponent {
             "color": "#E65100"
         }]
     },
-    // Source data as JSON --> id represents states of WORLD.
     "data": [{
         "id": "NA",
         "value": ".82",
@@ -536,20 +495,42 @@ export class AppComponent {
         "value": "1.30",
         "showLabel": "1"
     }]
-}
+}; // end of this.dataSource
+
+export default Component.extend({
+    title: 'Ember FusionCharts Sample',
+    width: 800,
+    height: 550,
+    type: 'world',
+    dataFormat: 'json',
+    dataSource: myDataSource
+});
 ```
 
-### Add data to `app.component.html`
+### Add data to `chart-viewer.hbs`
 
-Add the following code to `app.component.html`:
+Add `fusioncharts` component to your `chart-viewer.hbs` template to render the chart:
 
-```html
-<fusioncharts
-    width="800"
-    height="550"
-    type="world"
-    [dataSource]="dataSource">
-</fusioncharts>
+```
+<h1>{{ title }}</h1>
+
+{{fusioncharts-xt
+    width=width
+    height=height
+    type=type
+    dataFormat=dataFormat
+    dataSource=dataSource
+}}
+```
+
+### Add data to `application.hbs`
+
+Add `chart-viewer` component to your `application.hbs` template:
+
+```
+{{chart-viewer}}
+
+{{outlet}}
 ```
 
 See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference) (the keys in the `dataSource` object) for the Map of World. The respective `ids`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world).
