@@ -19,7 +19,7 @@ heading: Version 3.13.x
 
 * Changing theme using `setChartAttribute` has been fixed for Funnel and Pyramid chart.
 
-* Application of palette colours on changing theme is rectified for Pie 3D charts.
+* Application of palette colors on changing theme is rectified for Pie 3D charts.
 
 * Legend icons are now properly updated on changing theme, for Multi-Axis Line chart.
 
