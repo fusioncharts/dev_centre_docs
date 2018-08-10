@@ -75,6 +75,7 @@ module.exports = function(defaults) {
 
     // Import fusioncharts library
     app.import('node_modules/fusioncharts/fusioncharts.js');
+    // Use `app.import` to import additional libraries/files
     return app.toTree();
 };
 ```
