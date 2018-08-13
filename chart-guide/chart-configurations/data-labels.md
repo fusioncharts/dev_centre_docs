@@ -41,9 +41,12 @@ Click [here](http://jsfiddle.net/fusioncharts/h5d6xwyo/) to edit the above chart
 
 In this mode, you can wrap long x-axis labels into multiple lines. If enough space is not available in a chart, this mode will automatically trim labels, add ellipses at the end, and show tooltips for such labels. To wrap the data labels, set the `labelDisplay` attribute as `wrap`. Refer to the code below:
 
+> To set the `labelDisplay` as `wrap`, disable the `rotateLabels` attribute.
+
 ```json
 {
     "chart": {
+        "rotateLabels": "0",
         "labelDisplay": "wrap"
     }
 }

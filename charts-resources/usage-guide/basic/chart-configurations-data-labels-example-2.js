@@ -12,6 +12,7 @@
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
             "theme": "fusion",
+            "rotateLabels": "0",
             "labelDisplay": "wrap"
         },
         "data": [{
