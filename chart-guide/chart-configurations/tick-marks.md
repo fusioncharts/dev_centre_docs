@@ -128,7 +128,7 @@ Refer to the code below:
 ```json
 {
     "chart": {
-        "ticksOnRight": "1"
+        "ticksOnRight": "0"
     }
 }
 ```
