@@ -18,8 +18,10 @@
             "yAxisMaxvalue": "35000",
             "yAxisMinValue": "5000",
             //Setting number of divisional lines to 9
+            "divLineDashed": "1",
             "numDivLines": "9",
             "divLineDashLen": "5",
+            "divLineAlpha": "100",
             "divLineDashGap": "6"
         },
         "categories": [{
