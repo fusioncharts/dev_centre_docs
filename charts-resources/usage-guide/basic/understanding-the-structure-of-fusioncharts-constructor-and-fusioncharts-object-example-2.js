@@ -32,7 +32,7 @@
         borderThickness:3,
 
         //theme
-        theme: "fusion"
+        theme: "fusion",
 
       },
       data:[

@@ -1,10 +1,8 @@
 ---
-permalink: api/tutorials/get-formatted-numbers-outside-chart.html
 title: Get Formatted Numbers Outside Chart | FusionCharts
 description: FusionCharts number formatter module lets you format data, you can get this data even outside the chart area.
 heading: Get Formatted Numbers Outside Chart
 chartPresent: true
-layout: page
 ---
 
 FusionCharts `number formatter module` lets you format data, you can get this data even outside the chart area.
