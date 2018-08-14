@@ -71,7 +71,7 @@
                 args.container.parentNode.insertBefore(scriptElem, args.container.nextSibling);
             }
             // form radio buttons inside div
-            controllers.innerHTML = '<form name="radioBtn"><label><input type="radio" name="themeOptions" value="fusion"> Fusion</label><label><input type="radio" name="themeOptions" value="gammel"> Gammel</label><label><input type="radio" name="themeOptions" value="candy"> Candy</label><label><input type="radio" name="themeOptions" id="fint-chckbx" value="zune"> Zune</label><label><input type="radio" name="themeOptions" value="ocean"> Ocean</label><label><input type="radio" name="themeOptions" value="carbon"> Carbon</label></form>';
+            controllers.innerHTML = '<form name="radioBtn"><label><input type="radio" name="themeOptions" checked value="fusion"> Fusion</label><label><input type="radio" name="themeOptions" value="gammel"> Gammel</label><label><input type="radio" name="themeOptions" value="candy"> Candy</label><label><input type="radio" name="themeOptions" id="fint-chckbx" value="zune"> Zune</label><label><input type="radio" name="themeOptions" value="ocean"> Ocean</label><label><input type="radio" name="themeOptions" value="carbon"> Carbon</label></form>';
             controllers.setAttribute('id', 'controllers');
 
             // setting css styles for controllers div
