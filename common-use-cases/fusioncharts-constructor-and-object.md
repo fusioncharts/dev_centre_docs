@@ -301,4 +301,4 @@ So, if there are two charts to be rendered one after the other, calling the `ren
 * Draw the graphics for chart 1
 * Draw the graphics for chart 2
 
-In order to incorporate this feature, some of the [APIs]({% site.baseurl %}https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods) are now given a callback function that is executed when `asyncRender` is set to `1`.
+In order to incorporate this feature, some of the [APIs]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods) are now given a callback function that is executed when `asyncRender` is set to `1`.
