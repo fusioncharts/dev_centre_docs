@@ -16,9 +16,9 @@
             //60 minutes = 1 hour, 60 seconds = 1 minute
             "numberScaleValue": "60",
             //Converts seconds to Minutes, Hours
-            "numberScaleUnit": " Min",
+            "numberScaleUnit": " Mins",
             //Since all data is provided in seconds
-            "defaultNumberScale": " Seconds",
+            "defaultNumberScale": " Secs",
             "scaleRecursively": "1",
             //Recurse for all provided units/values
             "maxScaleRecursion": "-1",
