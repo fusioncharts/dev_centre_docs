@@ -10,14 +10,14 @@ The zero plane applies to column, line, scatter, bubble and the area charts. Add
 
 ## Show/Hide the Zero Plane
 
-By default, the zero plane is rendered in any chart that plots both negative and positive values.  To hide the zero plane, set the `showZeroPlane	` attribute to `0`. 
+By default, the zero plane is rendered in any chart that plots both negative and positive values.  To hide the zero plane, set the `showZeroPlane` attribute to `0`. 
 
 Refer to the code below:
 
 ```json
 {
     "chart": {
-        "showZeroPlane": "1"
+        "showZeroPlane": "0"
     }
 }
 ```
