@@ -22,6 +22,9 @@
         //disabling 3D effects on the pies in the chart
         use3DLighting:0,
 
+        //theme
+        theme: "fusion",
+
         //color of the border
         "borderColor": "#EEEEEE",
 
