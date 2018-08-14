@@ -1,8 +1,8 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '450',
-    height: '300',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -13,6 +13,7 @@
             "yAxisMaxValue": "90",
             "labelDisplay": "rotate",
             "slantlabels": "1",
+            "showValues": "1",
 
             //Attributes to configure scale                    
             "formatNumberScale": "1",

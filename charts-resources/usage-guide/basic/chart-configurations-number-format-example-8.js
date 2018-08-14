@@ -14,6 +14,7 @@
             "numberPrefix": "$",
             "placeValuesInside": "0",
             "rotateValues": "0",
+            "showValues": "1",
             "valueFontColor": "#000000",
             //Format numbar scale
             "formatNumberScale": "1",
