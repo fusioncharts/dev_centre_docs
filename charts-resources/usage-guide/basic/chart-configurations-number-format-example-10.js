@@ -20,9 +20,9 @@
             //Set scale to 60 (60 seconds: 1 minute)
             "numberScaleValue": "60",
             //Set the scale unit to minutes
-            "numberScaleUnit": " minutes",
+            "numberScaleUnit": " mins",
             //Since all data is provided in seconds, default scale is seconds
-            "defaultNumberScale": " seconds",
+            "defaultNumberScale": " secs",
             //Theme
             "theme": "fusion"
         },
