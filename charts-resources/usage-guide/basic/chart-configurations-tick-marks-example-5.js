@@ -1,7 +1,6 @@
 {
     type: 'hled',
     renderAt: 'chart-container',
-    
     width: '500',
     height: '150',
     dataFormat: 'json',
@@ -11,7 +10,7 @@
             "subCaption": "Footfall vs Conversion ratio",
             "numberSuffix": "%",
             //Configuring ticks to appear above gauge
-            "ticksBelowGauge": "0",
+            "ticksBelowGauge": "1",
             "theme": "fusion"
         },
         "colorrange": {

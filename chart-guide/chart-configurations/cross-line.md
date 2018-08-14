@@ -79,7 +79,7 @@ If you have enabled animation, set the animation duration for the cross line of 
 ```json
 {
     "chart": {
-        "crossLineAnimatiionDuration": "10"
+        "crossLineAnimatiionDuration": "0.5"
     }
 }
 ```
@@ -133,7 +133,7 @@ Specify the hex code of the tooltip background color using the `toolTipBgColor` 
 ```json
 {
     "chart": {
-        "toolTipBgColor": "#323232"
+        "toolTipBgColor": "#ffffff"
     }
 }
 ```
@@ -194,7 +194,7 @@ By default, the tooltip shadow is visible. To hide the tooltip shadow set the `s
 ```json
 {
     "chart": {
-        "showTooltipShadow": "1"
+        "showTooltipShadow": "0"
     }
 }
 ```

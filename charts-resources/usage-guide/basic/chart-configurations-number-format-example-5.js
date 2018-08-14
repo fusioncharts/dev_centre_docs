@@ -23,7 +23,8 @@
             "decimalSeparator": ",",
             //Defining custom thousand separator
             "thousandSeparator": ".",
-            "yaxismaxvalue": "22000"
+            "yaxismaxvalue": "22000",
+            "showValues": "1"
         },
         "data": [{
             "label": "Q1",

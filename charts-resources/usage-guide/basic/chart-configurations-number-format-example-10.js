@@ -1,8 +1,8 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '450',
-    height: '300',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -13,15 +13,16 @@
             "yAxisMaxValue": "90",
             "labelDisplay": "rotate",
             "slantlabels": "1",
+            "showValues": "1",
 
             //Attributes to configure scale                    
             "formatNumberScale": "1",
             //Set scale to 60 (60 seconds: 1 minute)
             "numberScaleValue": "60",
             //Set the scale unit to minutes
-            "numberScaleUnit": " minutes",
+            "numberScaleUnit": " mins",
             //Since all data is provided in seconds, default scale is seconds
-            "defaultNumberScale": " seconds",
+            "defaultNumberScale": " secs",
             //Theme
             "theme": "fusion"
         },

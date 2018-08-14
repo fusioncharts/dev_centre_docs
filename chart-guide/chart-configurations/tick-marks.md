@@ -121,14 +121,14 @@ Click [here](http://jsfiddle.net/fusioncharts/vqdccxk4/) to edit the above chart
 
 To customize the position of tick marks and tick values of a vertical gauge use the following attributes:
 
-* Set the `ticksOnRight` to `1` to view the tick marks at the right of the gauge. In case of the vertical gauge, the tick marks get rendered above the gauge.
+* Set the `ticksOnRight` to `0` to view the tick marks at the left of the gauge. In case of the vertical gauge, the tick marks get rendered above the gauge.
 
 Refer to the code below:
 
 ```json
 {
     "chart": {
-        "ticksOnRight": "1"
+        "ticksOnRight": "0"
     }
 }
 ```

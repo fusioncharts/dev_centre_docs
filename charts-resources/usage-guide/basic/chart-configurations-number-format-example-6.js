@@ -1,7 +1,7 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '450',
+    width: '500',
     height: '300',
     dataFormat: 'json',
     dataSource: {
@@ -13,6 +13,7 @@
             "yaxisname": "Amount (In INR)",
             "numberPrefix": "INR ",
             "formatNumberScale": "0",
+            "showValues": "1",
             "rotateValues": "0",
             "placeValuesInside": "0",
             "valueFontColor": "#000000",

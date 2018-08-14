@@ -11,6 +11,7 @@
             "xaxisname": "Quarter",
             "yaxisname": "Amount (In USD)",
             "yAxisMaxValue": "20000",
+            "showValues": "1",
             //Deviation from theme
             "placeValuesInside": "0",
             "rotateValues": "0",

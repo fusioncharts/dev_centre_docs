@@ -10,11 +10,12 @@
             "xAxisName": "Quarter",
             "yAxisName": "Amount",
             "yaxismaxvalue": "2720000",
+            "showValues": "1",
             "numberPrefix": "$",
             //Outside canvas base font configuration
             "outCnvBaseFont": "Arial",
-            "outCnvBaseFontSize": "11",
-            "outCnvBaseFontColor": "#633563",
+            "outCnvBaseFontSize": "10",
+            "outCnvBaseFontColor": "#5d62b5",
             //Theme
             "theme": "fusion"
         },

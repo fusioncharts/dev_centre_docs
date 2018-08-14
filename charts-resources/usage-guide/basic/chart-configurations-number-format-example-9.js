@@ -14,6 +14,7 @@
             "numberPrefix": "$",
             "formatNumberScale": "1",
             "placeValuesInside": "0",
+            "showValues": "1",
             "rotateValues": "0",
             "valueFontColor": "#000000",
             "valueBgColor": "#FFFFFF",

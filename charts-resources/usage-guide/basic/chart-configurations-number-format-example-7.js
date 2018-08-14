@@ -12,6 +12,7 @@
             "xaxisname": "Unit",
             "yaxisname": "Amount payable (In USD)",
             "rotateValues": "0",
+            "showValues": "1",
             "placeValuesInside": "0",
             "valueFontColor": "#000000",
             "valueBgColor": "#FFFFFF",

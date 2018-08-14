@@ -1,15 +1,13 @@
 {
     type: 'column3d',
     renderAt: 'chart-container',
-    
-    width: '450',
+    width: '520',
     height: '300',
     dataFormat: 'json',
     dataSource: {
         "chart": {
             "caption": "Website Visitors WoW Growth",
             "subcaption": "Last 10 weeks",
-            "xAxisName": "Week",
             "yAxisName": "Growth",
             "numberSuffix": "%",
             "theme": "fusion",
@@ -19,6 +17,8 @@
             "zeroPlaneColor": "#99ccff",
             "zeroPlaneAlpha": "100",
             "zeroPlaneThickness": "3",
+            "zeroPlaneShowBorder": "1",
+            "zeroPlaneBorderColor": "#5d62b5",
             "divLineDashed": "0",
             "divLineAlpha": "40"
         },
