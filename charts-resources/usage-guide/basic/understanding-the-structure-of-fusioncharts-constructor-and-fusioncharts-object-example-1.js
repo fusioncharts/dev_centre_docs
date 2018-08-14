@@ -23,7 +23,7 @@
         use3DLighting:0,
 
         //Theme
-        theme: "fusion"
+        theme: "fusion",
 
         //color of the border
         "borderColor": "#EEEEEE",
