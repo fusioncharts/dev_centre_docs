@@ -79,7 +79,7 @@ If you have enabled animation, set the animation duration for the cross line of 
 ```json
 {
     "chart": {
-        "crossLineAnimatiionDuration": "10"
+        "crossLineAnimatiionDuration": "0.5"
     }
 }
 ```
