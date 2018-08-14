@@ -284,7 +284,7 @@ Refer to the code below:
         "labelFontSize": "15",
         "labelFontBold":"1",
         "lableFontItalic":"1",
-        "labelFontAlpha":"70"
+        "labelAlpha":"70"
     }
 }
 ```
