@@ -133,7 +133,7 @@ Specify the hex code of the tooltip background color using the `toolTipBgColor` 
 ```json
 {
     "chart": {
-        "toolTipBgColor": "#323232"
+        "toolTipBgColor": "#ffffff"
     }
 }
 ```
