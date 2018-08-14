@@ -14,22 +14,22 @@
         bgColor:"EEEEEE,CCCCCC",
 
         //transperancy of each color
-        bgAlpha : "70,80",
+        bgAlpha: "70,80",
 
         //contribution of each color to the gradient of the background
         bgRatio:"60, 40",
 
-        //colors to be used to fill the pie's in the chart
-        paletteColors: "#0075c2,#1aaf5d,#f2c500,#f45b00,#8e0000",
-
         //disabling 3D effects on the pies in the chart
         use3DLighting:0,
 
+        //theme
+        theme: "fusion",
+
         //color of the border
-        borderColor: "#EEEEEE",
+        "borderColor": "#EEEEEE",
 
         //thickness of the border
-        borderThickness:3,
+        "borderThickness": "3",
 
       },
       data:[

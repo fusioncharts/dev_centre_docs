@@ -327,3 +327,9 @@ Refer to the code below:
     }]
 }
 ```
+
+The chart will look like as shown below:
+
+{% embed_chart chart-configurations-trend-lines-and-zones-example-8.js %}
+
+Click [here](http://jsfiddle.net/fusioncharts/Loxc6eak/) to edit the above chart.

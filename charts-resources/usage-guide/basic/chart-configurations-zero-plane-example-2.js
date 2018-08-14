@@ -1,8 +1,7 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    
-    width: '450',
+    width: '520',
     height: '300',
     dataFormat: 'json',
     dataSource: {
@@ -15,7 +14,7 @@
             "theme": "fusion",
             "showValues": "0",
             //Zero plane configuration
-            "showZeroPlane": "1",
+            "showZeroPlane": "0",
         },
         "data": [{
             "label": "Week 1",

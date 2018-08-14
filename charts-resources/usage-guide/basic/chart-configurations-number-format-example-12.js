@@ -1,8 +1,8 @@
 {
     type: 'line',
     renderAt: 'chart-container',
-    width: '450',
-    height: '300',
+    width: '600',
+    height: '350',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -12,6 +12,7 @@
             "yaxisname": "Free Storage Volume",
             "yAxisMaxValue": "4096",
             "rotatevalues": "1",
+            "showValues": "1",
             "numdivlines": "4",
             //Setting scaling parameters
             "formatNumberScale": "1",

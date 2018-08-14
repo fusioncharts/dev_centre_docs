@@ -16,7 +16,8 @@
             "placeValuesInside": "0",
             "numberPrefix": "$",
             "labelFont": "Arial",
-            "labelFontColor": "0075c2",
+            "labelFontColor": "5d62b5",
+            "labelAlpha": "70",
             "labelFontSize": "15"
         },
         "data": [{

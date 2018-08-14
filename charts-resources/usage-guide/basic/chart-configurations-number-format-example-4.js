@@ -14,10 +14,11 @@
             "numberPrefix": "$",
             //Deviation from theme
             "placeValuesInside": "0",
-            "rotateValues": "0",
+            "showValues": "1",
             "valueFontColor": "#000000",
             "valueBgColor": "#FFFFFF",
-            "valueBgAlpha": "50"
+            "valueBgAlpha": "50",
+            "formatNumber": "0"
         },
         "data": [{
             "label": "Q1",

@@ -10,11 +10,12 @@
             "xAxisName": "Quarter",
             "yAxisName": "Amount",
             "yaxismaxvalue": "2720000",
+            "showValues": "1",
             "numberPrefix": "$",
             //Base font configuration
             "baseFont": "Verdana",
-            "baseFontSize": "11",
-            "baseFontColor": "#0066cc",
+            "baseFontSize": "15",
+            "baseFontColor": "#5d62b5",
             //Theme
             "theme": "fusion"
         },
