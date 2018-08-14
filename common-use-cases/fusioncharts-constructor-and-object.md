@@ -2,7 +2,6 @@
 title: FusionCharts Constructor and Object | FusionCharts
 description: All of the charts and maps are constructed using the constructor provided by FusionCharts which accepts a JSON object of chart properties.
 heading: FusionCharts Constructor and Object
-chartPresent: true
 ---
 
 FusionCharts Suite XT provides huge library of JavaScript charts and maps. All of these charts and maps are constructed using the constructor provided by FusionCharts which accepts a JSON object of chart properties. So it's important to understand the following to use the library effectively: 
@@ -145,12 +144,12 @@ sampleChart.render();
 Rendering the above constructed chart results in following chart (JSFiddle link [here](http://jsfiddle.net/uhnanqgv/8/)):
 
 {% embed_chart understanding-the-structure-of-fusioncharts-constructor-and-fusioncharts-object-example-1.js %}
+
 ## Accessing already created chart using FusionCharts Constructor
 
 We saw above how to build a FusionCharts object by passing a JSON object of chart properties to its constructor. What if we have already constructed the FusionCharts object and want to refer to that same object? Let us see how this works by considering a simple example:
 
 Let's create a button to print the chart's actual data. The html code for this example is given below:
-
 
 ```html
 <div id="chart-container">FusionCharts will render here</div>
