@@ -6,33 +6,33 @@
   dataFormat:"json", //format of the data passed to the dataSource property
  //chart appearance properties are defined within dataSource.
   dataSource: {
-      chart:{
+      "chart":{
         //caption of the chart
-        caption:"Aggregate distribution in class of 70 students",
+        "caption":"Aggregate distribution in class of 70 students",
 
         //hex code of the colors to be used for the background
-        bgColor:"EEEEEE,CCCCCC",
+        "bgColor":"EEEEEE,CCCCCC",
 
         //transperancy of each color
-        bgAlpha : "70,80",
+        "bgAlpha" : "70,80",
 
         //contribution of each color to the gradient of the background
-        bgRatio:"60, 40",
-
-        //colors to be used to fill the pie's in the chart
-        paletteColors: "#0075c2,#1aaf5d,#f2c500,#f45b00,#8e0000",
+        "bgRatio":"60, 40",
 
         //disabling 3D effects on the pies in the chart
-        use3DLighting:0,
+        "use3DLighting":0,
 
         //color of the border
-        borderColor: "#EEEEEE",
+        "borderColor": "#EEEEEE",
 
         //thickness of the border
-        borderThickness:3,
+        "borderThickness": "3",
+
+        //Theme
+        "theme": "fusion"
 
       },
-      data:[
+      "data":[
         {label:">90", value:"10"},
         {label:"70-80", value:"30"},
         {label:"50-70", value:"20"},

@@ -31,6 +31,9 @@
         //thickness of the border
         borderThickness:3,
 
+        //Theme
+        theme: "fusion"
+
       },
       data:[
         {label:">90", value:"10"},

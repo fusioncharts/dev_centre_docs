@@ -1,12 +1,9 @@
 ---
-permalink: apihtml
 title: FusionCharts Constructor and Object | FusionCharts
 description: All of the charts and maps are constructed using the constructor provided by FusionCharts which accepts a JSON object of chart properties.
 heading: FusionCharts Constructor and Object
 chartPresent: true
-layout: page
 ---
-
 
 FusionCharts Suite XT provides huge library of JavaScript charts and maps. All of these charts and maps are constructed using the constructor provided by FusionCharts which accepts a JSON object of chart properties. So it's important to understand the following to use the library effectively: 
 
@@ -25,7 +22,6 @@ In this article we are going to cover:
 ## Creating charts using the FusionCharts Constructor
 
 The FusionCharts constructor accepts a JSON object whose properties are as follows:
-
 
 - Properties like _id, dimensions, event listeners, chart type, data format, data source_
 - Appearance properties like background color, border, canvas background, canvas border and others
@@ -52,7 +48,6 @@ Here is how the structure looks:
 
 Let us step-by-step build the properties JSON object by considering the above 3 classifications. First are the properties that define the chart like id, dimensions, chart type, data format. All the available properties can be found [here]({% site.baseurl %}/api/fusioncharts):
 
-
 ```javascript
 
 var propertiesObject = {
@@ -72,11 +67,9 @@ var propertiesObject = {
   //format of the data passed to the dataSource property
   dataFormat:"json", 
 }
-
 ```
 
 Next are the properties which modify the appearance of the chart like background color, border color, border thickness, caption, plot appearance. These properties vary with the type of the chart. Different properties available against each chart type can be found [here]({% site.baseurl %}/chart-attributes/?chart=area2d). And these properties are defined within the dataSource property of the JSON object:
-
 
 ```javascript
 
@@ -114,14 +107,12 @@ dataSource: {
     }
   }
 }
-
 ```
 
 Finally comes the property that provides data to the chart. This property, named as data, is defined within the `dataSource` property of the JSON object as shown below:
 
 
 ```javascript
-
 var propertiesObject = {
 // properties defined in the first code snippet
  
@@ -282,6 +273,7 @@ function changeChartBorder(chartId, borderColor){
 In the function `changeChartBorder` we are making use of another API `setChartAttribute` which accepts the JSON object of the properties to be modified. Loading the HTML in the browser and clicking on "Change Chart Border" button results in chart as shown below (JSFiddle link [here](http://jsfiddle.net/uhnanqgv/6/)):
 
 {% embed_chart understanding-the-structure-of-fusioncharts-constructor-and-fusioncharts-object-example-4.js %}
+
 ## Managing Synchronization when Rendering Multiple Charts
 
 When the `render()` function is called to render a chart on a page, it sets into motion the following actions for each chart:
