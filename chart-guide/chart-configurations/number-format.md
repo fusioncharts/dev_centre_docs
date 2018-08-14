@@ -73,7 +73,7 @@ The chart will look as shown below:
 
 Click [here](http://jsfiddle.net/fusioncharts/2g4ne3xf/) to edit the above chart.
 
-## Disable Automatic Formatting of Numbers
+## Enable/Disable Automatic Formatting of Numbers
 
 FusionCharts XT automatically formats numbers displayed on charts. Use the following attributes to disable automatic number formatting:
 

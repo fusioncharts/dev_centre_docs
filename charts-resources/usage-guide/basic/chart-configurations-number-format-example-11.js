@@ -1,8 +1,8 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '450',
-    height: '300',
+    width: '800',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -14,9 +14,9 @@
             "showValues": "1",
             "formatNumberScale": "1",
             //60 minutes = 1 hour, 60 seconds = 1 minute
-            "numberScaleValue": "60,60",
+            "numberScaleValue": "60",
             //Converts seconds to Minutes, Hours
-            "numberScaleUnit": " Min, Hrs",
+            "numberScaleUnit": " Min",
             //Since all data is provided in seconds
             "defaultNumberScale": " Seconds",
             "scaleRecursively": "1",
