@@ -31,9 +31,9 @@ Refer to the code below:
 
 To customize the tooltip use the following attributes:
 
-* Specify the hex code for the tooltip background color using the `toolTipBGColor` attribute. Example - #000ffa.
+* Specify the hex code for the tooltip background color using the `toolTipBGColor` attribute. Example - #efefef.
 
-* Specify the hex code for the tooltip border color using the `toolTipBorderColor` attribute. Example - #ffaffa.
+* Specify the hex code for the tooltip border color using the `toolTipBorderColor` attribute. Example - #666666.
 
 * By default, the character used to separate the name and the value within the tooltip is set as `,`. Set a different separator character using the `ToolTipSepChar` attribute. This attribute accepts any string, e.g. `:`.
 
@@ -44,8 +44,8 @@ Refer to the code below:
 ```json
 {
     "chart": {
-        "toolTipBorderColor": "#FFFFFF",
-        "toolTipBgColor": "#666666",
+        "toolTipBorderColor": "#666666",
+        "toolTipBgColor": "#efefef",
         "toolTipBgAlpha": "80",
         "showToolTipShadow": "1"
     }
