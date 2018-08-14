@@ -62,7 +62,9 @@ Refer to the code below:
 ```json
 {
     "chart": {
-        "forceDecimals": "1"
+        "forceDecimals": "1",
+        "forceYAxisValueDecimals": "1",
+        "forceXAxisValueDecimals": "1"
     }
 }
 ```
