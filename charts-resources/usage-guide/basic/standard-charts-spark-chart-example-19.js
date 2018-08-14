@@ -9,7 +9,7 @@
             "theme": "fusion",
             "caption": "Bobby Fischer (vs. Spassky)",
             "subcaption": "World Chess Championship 1972",
-            "showValue": "0",
+            "showValue": "1",
             "subCaptionFontSize": "11",
             "numberPrefix": "$",
             "chartBottomMargin": "20"
