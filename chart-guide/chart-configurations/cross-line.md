@@ -194,7 +194,7 @@ By default, the tooltip shadow is visible. To hide the tooltip shadow set the `s
 ```json
 {
     "chart": {
-        "showTooltipShadow": "1"
+        "showTooltipShadow": "0"
     }
 }
 ```
