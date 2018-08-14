@@ -80,7 +80,7 @@ Refer to the code below:
         "zeroPlaneColor": "#99ccff",
         "zeroPlaneAlpha": "100",
         "zeroPlaneShowBorder": "1",
-        "zeroPlaneBorderColor": "1"
+        "zeroPlaneBorderColor": "#5d62b5"
     }
 }
 ```
@@ -157,22 +157,3 @@ The chart will look like as shown below:
 {% embed_chart chart-configurations-zero-plane-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/tqr0yapk/) to edit the above chart.
-
-In dual y-axis charts, `showPZeroPlaneValue` (primary y-axis) and `showSZeroPlaneValue` (secondary y-axis) attributes are used to hide the zero plane values for the primary and secondary axis respectively.
-
-Refer to the code below:
-
-```json
-{
-    "chart": {
-        "showPZeroPlaneValue": "0",
-        "showSZeroPlaneValue": "0"
-    }
-}
-```
-
-The chart will look as shown below:
-
-{% embed_chart chart-configurations-zero-plane-example-7.js %}
-
-Click [here](http://jsfiddle.net/fusioncharts/q364f9az/) to edit the above chart.
