@@ -2926,6 +2926,12 @@
                 "range": "0 - 100",
                 "type": "Number",
                 "name": "trendlineAlpha"
+            },
+            {
+                "description": "Sets the tooltip text of the trend-line. It accepts macros, plain text, and HTML tags, as string.",
+                "range": "",
+                "type": "String",
+                "name": "trendLineToolText"
             }
         ],
         "description": "Trend-lines are horizontal lines that aid in interpretation of data with respect to some pre-determined value. For example, if you are plotting the sales data for the current year, you might want to show the previous year's average monthly sales as a trend indicator for ease of comparison. Cosmetics for all the trend-lines rendered can be attained using this set of attributes.\n\nAlthough there are set of attributes of the `line object`, used to create and customize trend-lines, these set of attributes effect all the trend-lines rendered in your chart."

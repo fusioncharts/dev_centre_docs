@@ -8,19 +8,7 @@
       "chart": {
         "caption": "Sales Breakup - Top Product Categories",
         "subCaption": "Last Quarter",
-        "captionFontSize": "14",
-        "subcaptionFontSize": "14",
-        "baseFontColor": "#333333",
-        "baseFont": "Helvetica Neue,Arial",
-        "basefontsize": "9",
-        "subcaptionFontBold": "0",
-        "bgColor": "#ffffff",
-        "canvasBgColor": "#ffffff",
-        "showBorder": "0",
-        "showShadow": "0",
-        "showCanvasBorder": "0",
         "pieFillAlpha": "60",
-        "pieBorderThickness": "2",
         "hoverFillColor": "#cccccc",
         "pieBorderColor": "#ffffff",
         "useHoverColor": "1",
@@ -28,8 +16,8 @@
         "showPercentInTooltip": "0",
         "numberPrefix": "$",
         "plotTooltext": "$label, $$valueK, $percentValue",
-        "highlightParentPieSlices": "0",
-        "highlightChildPieSlices": "1"
+        "innerRadius": "10",
+        "theme": "fusion"
       },
       "category": [{
         "label": "Sales by category",

@@ -27,7 +27,7 @@
             }, {
                 "vline": "true",
                 "lineposition": "0",
-                "color": "#0075c2",
+                "color": "#6267b7",
                 "labelHAlign": "right",
                 "labelPosition": "0",
                 "label": "National holiday"

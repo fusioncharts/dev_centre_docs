@@ -106,11 +106,11 @@ The above chart shows the US Subway Map and uses draggable nodes to mark locatio
 
 Follow the steps given below to add a new node to the above subway map chart.
 
-* From the bottom-left corner of the chart, click the <span> ![image add-node-image-1]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-1.jpg) </span> button. Note that a menu is rendered.
+* From the bottom-left corner of the chart, click the <span> ![image add-node-image-1]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-1.png) </span> option. Note that a menu is rendered.
 
 * From the menu, select **Add a node**.
 
-![image add-node-image-2]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-2.jpg)
+![image add-node-image-2]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-2.png)
 
 You will see a node properties dialog box, as shown in the image below:
 
@@ -250,11 +250,11 @@ In the above chart, the "My Edited Location" node does not have any connectors c
 
 To add a connector:
 
-* From the bottom-left corner of the chart, click the <span>![Drag-node-image]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-1.jpg)</span> button. A menu will be rendered.
+* From the bottom-left corner of the chart, click the <span> ![image add-node-image-1]({% site.baseurl %}/images/standard-charts-drag-node-chart-connector-image-25.png) </span> option. A menu will be rendered.
 
 * From the menu, select **Add a Connector**.
 
-![image add-connector-image-1]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-9.jpg)
+![image add-connector-image-1]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-9.png)
 
 The connector properties dialog box, as seen in the image below, will appear:
 
@@ -382,7 +382,7 @@ The above chart shows the US Subway Map and uses draggable nodes to mark locatio
 
 To add a new text label:
 
-* From the bottom-left corner of the chart, click the <span>![Drag-node-image]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-1.jpg)</span> button. A menu is rendered.
+* From the bottom-left corner of the chart, click the <span>![Drag-node-image]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-26.png)</span> option. A menu is rendered.
 
 * From the menu, select **Add a Label**. The label properties dialog box, as seen in the image below, will appear:
 
@@ -429,7 +429,7 @@ When you create a new label, a JavaScript event named `labelAdded` is raised. Yo
 The code snippet required to trap this event is given below:
 
 ```json
-chartInstance.addEventListener(labeladded, function(e, a) {
+chartInstance.addEventListener("labeladded", function(e, a) {
     //Your code here
 });
 ```
@@ -472,23 +472,19 @@ In the following section, you will see how to update chart data using server-sid
 
 To enable data submission to server-side script, you need to make sure that the **Submit** button is not hidden on your form.
 
-Use the following code snippet to show the **Submit** button:
+Use the following code snippet to add the **Submit** option to your menu:
 
 ```json
 {
     "chart": {
-        "showFormBtn": "1"
+        "enableSubmit": "1"
     }
 }
 ```
 
-This will add a submit button to your chart, as shown below:
+Use the following attributes to show/hide and define the form properties for the **Submit** option:
 
-![set-the-form]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-20.jpg)
-
-Use the following attributes to show/hide and define the form properties for the **Submit** button:
-
-* Specify whether the **Submit** button will be rendered on the chart by setting the value of the `showFormBtn` attribute to `1`. Note that if you use JavaScript methods to get data from the chart, you can hide this button.
+* Specify whether the **Submit** option will be rendered on the chart by setting the value of the `enableSubmit` attribute to `1`. Note that if you use JavaScript methods to get data from the chart, you can hide the option.
 
 * Specify the URL of the server-side script to which you want to submit the updated data, using the `formAction` attribute. You can specify either the relative or the absolute path. You also need to use the `strXML` form variable on this page.
 
@@ -496,15 +492,7 @@ Use the following attributes to show/hide and define the form properties for the
 
 * Specify the target page where the response received after form data submission will be rendered, using the `formTarget` attribute, which takes `_blank` or `_self` as value.
 
-* Specify the text label for the Submit button using the `formBtnTitle` attribute.
-
-* Specify the hex code of the color for the Submit button using the `btnTextColor` attribute.
-
-* Specify the width (in pixels) of the Submit button, using the `formBtnWidth` attribute.
-
-* Specify the hex code of the border color for the Submit button, using the `formBtnBorderColor` attribute.
-
-* Specify the hex code of the background color for the Submit button, using the `formBtnBngColor` attribute.
+* Specify the text label for the Submit option using the `submitText` attribute.
 
 You can see how the server-side PHP script is used to submit data, in the code snippet given below:
 
