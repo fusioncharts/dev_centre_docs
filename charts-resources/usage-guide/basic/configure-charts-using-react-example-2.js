@@ -46,7 +46,7 @@
             var rdoCont = document.createElement('div'),
                 str = 'Change Caption Alignment:<input id="left" type="radio" name="captionalignment" > Left </input><input id="center" type="radio" name="captionalignment" checked="1"> Center </input><input id="right" type="radio" name="captionalignment"> Right </input>';
             rdoCont.setAttribute('id', 'rdoCont');
-            rdoCont.style.cssText = "width: 600px; margin: 10px; margin-left: 0px;";
+            rdoCont.style.cssText = "width: 600px; margin: 10px; margin-left: 3px;";
 
             rdoCont.innerHTML = str;
 
