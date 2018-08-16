@@ -250,11 +250,11 @@ In the above chart, the "My Edited Location" node does not have any connectors c
 
 To add a connector:
 
-* From the bottom-left corner of the chart, click the <span> ![image add-node-image-1]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-1.png) </span> option. A menu will be rendered.
+* From the bottom-left corner of the chart, click the <span> ![image add-node-image-1]({% site.baseurl %}/images/standard-charts-drag-node-chart-connector-image-1.png) </span> option. A menu will be rendered.
 
 * From the menu, select **Add a Connector**.
 
-![image add-connector-image-1]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-9.jpg)
+![image add-connector-image-1]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-9.png)
 
 The connector properties dialog box, as seen in the image below, will appear:
 
