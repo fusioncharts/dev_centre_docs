@@ -9,7 +9,6 @@
             "theme": "fusion",
             "caption": "Visitors to website",
             "subCaption": "Last week",
-            "xAxisName": "Day",
             "yAxisName": "Visits",
             "showValues": "0"
         },
@@ -35,9 +34,10 @@
             //Defining vline position to match with Friday
             "linePosition": "0",
             //Setting vline label text
-            "label": "Weekdays",
+            "label": "Weekend Start",
             "labelPosition": "0",
-            "color": "#6da81e",
+            "linePosition": "0.5",
+            "color": "#53cfcb",
             "thickness": "1",
             "alpha": "50",
             //vline label vertically aligned to middle

@@ -32,7 +32,7 @@
                     "type": "rectangle",
                     "x": "$xaxis.label.6.x",
                     "y": "$canvasEndY",
-                    "tox": "$xaxis.label.7.x",
+                    "tox": "$xaxis.label.0.x",
                     "toy": "$canvasStartY",
                     "color": "#6baa01",
                     "alpha": "20",
@@ -41,10 +41,10 @@
                     "type": "text",
                     "text": "Weekend",
                     "fillcolor": "#666666",
-                    "fontSize": "10",
+                    "fontSize": "12",
                     "bold": "1",
-                    "x": "$xaxis.label.7.x - 25",
-                    "y": "$canvasEndY - 35"
+                    "x": "$xaxis.label.7.x + 350",
+                    "y": "$canvasEndY - 20"
                 }]
 
             }]

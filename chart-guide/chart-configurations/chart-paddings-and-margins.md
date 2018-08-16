@@ -89,7 +89,7 @@ Refer  to the code below:
 ```json
 {
     "chart": {
-        "yAxisValuePadding": "10"
+        "yAxisValuesPadding": "20"
     }
 }
 ```
