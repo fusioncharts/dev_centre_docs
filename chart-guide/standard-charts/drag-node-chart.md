@@ -250,7 +250,7 @@ In the above chart, the "My Edited Location" node does not have any connectors c
 
 To add a connector:
 
-* From the bottom-left corner of the chart, click the <span> ![image add-node-image-1]({% site.baseurl %}/images/standard-charts-drag-node-chart-connector-image-25.png) </span> option. A menu will be rendered.
+* From the bottom-left corner of the chart, click the Add Connector option. A menu will be rendered.
 
 * From the menu, select **Add a Connector**.
 
@@ -382,7 +382,7 @@ The above chart shows the US Subway Map and uses draggable nodes to mark locatio
 
 To add a new text label:
 
-* From the bottom-left corner of the chart, click the <span>![Drag-node-image]({% site.baseurl %}/images/standard-charts-drag-node-chart-image-26.jpg)</span> option. A menu is rendered.
+* From the bottom-left corner of the chart, click the Add Label option. A menu is rendered.
 
 * From the menu, select **Add a Label**. The label properties dialog box, as seen in the image below, will appear:
 
