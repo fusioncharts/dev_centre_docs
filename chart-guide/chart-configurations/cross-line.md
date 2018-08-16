@@ -33,7 +33,7 @@ Specify the hex code of the cross line color using the `crossLineColor` attribut
 ```json
 {
     "chart": {
-        "crosslinecolor": "cc3300"
+        "crosslinecolor": "#ccbb7a"
     }
 }
 ```
@@ -51,7 +51,7 @@ Set the opacity of the crossline using the `crossLineAlpha` attribute. Refer to 
 ```json
 {
     "chart": {
-        "crossLineAlpha": "20"
+        "crossLineAlpha": "50"
     }
 }
 ```
@@ -79,7 +79,7 @@ If you have enabled animation, set the animation duration for the cross line of 
 ```json
 {
     "chart": {
-        "crossLineAnimatiionDuration": "0.5"
+        "crossLineAnimatiionDuration": "0.7"
     }
 }
 ```
@@ -117,7 +117,7 @@ Set `tooltipGrayOutColor` attribute to specify the color of the unfocused plot i
 ```json
 {
     "chart": {
-        "tooltipGrayOutColor": "#3377ff"
+        "tooltipGrayOutColor": "#ff0000"
     }
 }
 ```
