@@ -1,8 +1,8 @@
 {
     type: 'dragnode',
     renderAt: 'chart-container',
-    width: '800',
-    height: '600',
+    width: '700',
+    height: '550',
     dataFormat: 'json',
     dataSource: {
         "chart": {
