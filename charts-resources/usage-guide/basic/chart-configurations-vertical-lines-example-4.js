@@ -9,11 +9,9 @@
             "theme": "fusion",
             "caption": "Visitors to website",
             "subCaption": "Last week",
-            "xAxisName": "Day",
             "yAxisName": "Visits",
             "showValues": "0",
-            //Hiding label borders for all vertical lines
-            "showVLineLabelBorder": "0"
+            "showVLineLabelBorder": "1"
         },
         "data": [{
             "label": "Mon",
@@ -38,9 +36,7 @@
             "labelHAlign": "left",
             "labelVAlign": "top",
             "color": "#6da81e",
-            "alpha": "50",
-            //(Optionally) Hiding vline label border from vline element
-            "showLabelBorder": "1"
+            "alpha": "50"
         }, {
             "label": "Sat",
             "value": "5803"

@@ -88,7 +88,7 @@ heading: Version 3.13.x
 
 * The chart names in theme files are now case insensitive.
 
-* [render()]({% site.baseurl %}/api/fusioncharts/fusioncharts-methods#render-111) function will also be fired when updating the chart type.
+* [rendered]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#rendered-222) event will also be fired when updating the chart type.
 
 * Starting 3.13.0, Map specification sheets should be available based on the version
     * Older Map files are supported till 3.12.2

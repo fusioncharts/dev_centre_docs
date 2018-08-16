@@ -640,7 +640,7 @@ Click [here](http://jsfiddle.net/fusioncharts/jnkfyu5d/) to edit the above chart
 
 ### Position annotations with respect to datasets
 
-Use the $dataset macro to add the position information of the plots in a dataset to the annotation. You can apply the "dataset_index [separator] set [separator] set_index [separator] position_key" sub token to the macro. 
+Use the `$dataset` macro to add the position information of the plots in a dataset to the annotation. You can apply the "dataset_index [separator] set [separator] set_index [separator] position_key" sub token to the macro. 
 
 Possible values you can assign to the position_key include `X`, `Y`, `STARTX`, `STARTY`, `ENDX`, `ENDY`, `CENTERX`, and `CENTERY`. 
 
@@ -678,7 +678,7 @@ Refer to the code below::
         }, {
             "vline": "true",
             "lineposition": "0",
-            "color": "#0075c2",
+            "color": "#6267b7",
             "labelHAlign": "right",
             "labelPosition": "0",
             "label": "National holiday"
@@ -1881,19 +1881,19 @@ Refer to the code below:
                 "type": "rectangle",
                 "x": "$xaxis.label.6.x",
                 "y": "$canvasEndY",
-                "tox": "$xaxis.label.7.x",
+                "tox": "$xaxis.label.0.x",
                 "toy": "$canvasStartY",
                 "color": "#6baa01",
-                "alpha": "20"
+                "alpha": "20",
             }, {
                 "id": "label",
                 "type": "text",
                 "text": "Weekend",
                 "fillcolor": "#666666",
-                "fontSize": "10",
+                "fontSize": "12",
                 "bold": "1",
-                "x": "$xaxis.label.7.x - 25",
-                "y": "$canvasEndY - 35"
+                "x": "$xaxis.label.7.x + 350",
+                "y": "$canvasEndY - 20"
             }]
         }]
     },

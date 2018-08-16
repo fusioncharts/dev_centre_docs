@@ -1,8 +1,8 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '500',
-    height: '300',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -12,8 +12,7 @@
             "xAxisName": "Month",
             "yAxisName": "Amount (In USD)",
             "yAxisMaxValue": "1200000",
-            "rotateValues": "0",
-            "placeValuesInside": "0",
+            "showValues": "1",
             "numberPrefix": "$",
             "valueFontColor": "#333333",
             //Adding value padding for data values (vertical space between columns and data values)
