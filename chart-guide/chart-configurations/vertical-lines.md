@@ -111,8 +111,8 @@ Refer to the code below:
     {
         "vline": "true",
         "label": "Weekend Start",
-        "linePosition": "0.7",
-        "labelPosition": "0.5",
+        "linePosition": "0.5",
+        "labelPosition": "0",
         "labelVAlign": "middle",
         "labelHAlign": "right"
     },

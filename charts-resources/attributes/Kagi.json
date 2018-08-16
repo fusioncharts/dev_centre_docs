@@ -2722,6 +2722,12 @@
                 "name": "trendlineAlpha"
             },
             {
+                "description": "Sets the tooltip text of the trend-line. It accepts macros, plain text, and HTML tags, as string.",
+                "range": "",
+                "type": "String",
+                "name": "trendLineToolText"
+            },
+            {
                 "description": "Whether all the trend line/zone will be displayed over data plots or under them.",
                 "range": "0/1",
                 "type": "Boolean",

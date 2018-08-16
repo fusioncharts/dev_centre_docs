@@ -21,7 +21,7 @@
             "crossLineColor": "#bebec5",
             "crossLineAlpha": "100",
             "crossLineAnimatiion": "1",
-            "crossLineAnimatiionDuration": "0.5",
+            "crossLineAnimationDuration": "0.7",
             "theme": "fusion"
         },
         "categories": [{

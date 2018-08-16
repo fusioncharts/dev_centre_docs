@@ -52,32 +52,6 @@
                 "tooltext": "cloth.hsm.com : $value",
                 "rearExtension": "15"
             }]
-        },
-        "annotations": {
-            "origw": "400",
-            "origh": "300",
-            "autoscale": "1",
-
-            "groups": [{
-                "id": "valueBG",
-                "items": [{
-                    "id": "food-val-bg",
-                    "type": "rectangle",
-                    "x": "220",
-                    "y": "275",
-                    "tox": "290",
-                    "toy": "300",
-                    "fillcolor": "#0075c2"
-                }, {
-                    "id": "cloth-val-bg",
-                    "type": "rectangle",
-                    "x": "120",
-                    "y": "275",
-                    "tox": "190",
-                    "toy": "300",
-                    "fillcolor": "#1aaf5d"
-                }]
-            }]
         }
     }
 }

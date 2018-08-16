@@ -12,12 +12,10 @@
             "xAxisName": "Month",
             "yAxisName": "Amount (In USD)",
             "yAxisMaxValue": "1200000",
-            "rotateValues": "0",
-            "placeValuesInside": "0",
             "numberPrefix": "$",
             "valueFontColor": "#333333",
             //Adding value padding for y-axis data values
-            "yAxisValuePadding": "10",
+            "yAxisValuesPadding": "20",
         },
         "data": [{
             "label": "Jan",
