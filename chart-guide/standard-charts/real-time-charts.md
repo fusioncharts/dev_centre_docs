@@ -704,7 +704,7 @@ A close button appears at the top-right corner of the message logger window that
 
 ![Context Menu]({% site.baseurl %}/images/real-time-charts-image-3.png)
 
-The `messageGoesToJS` attribute is used to pass only the "Message Text" parameter to the JavaScript function, whereas, the `**messagePassAllToJS`** is used to pass all the four parameters to the JavaScript function.
+The `messageGoesToJS` attribute is used to pass only the "Message Text" parameter to the JavaScript function, whereas, the `messagePassAllToJS` is used to pass all the four parameters to the JavaScript function.
 
 For a detailed list of attributes used to configure the functional and cosmetic properties of the message logger, refer to the API reference page of the real-time chart.
 
