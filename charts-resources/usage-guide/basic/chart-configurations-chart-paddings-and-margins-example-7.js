@@ -1,6 +1,5 @@
 {
-    type: 'area2d',
-    
+    type: 'area2d',    
     renderAt: 'chart-container',
     width: '500',
     height: '350',
@@ -55,7 +54,7 @@
         'beforeRender': function(event, args) {
             var radioContainer = document.createElement('div');
 
-            radioContainer.innerHTML = '<div id="radio-container"><label><input type="radio" id="withCP" name="padding" value="withCP" CHECKED > With Padding</label><label><input type="radio" id="withoutCP" name="padding" value="withoutCP"> Without Padding</label></div>';
+            radioContainer.innerHTML = '<div id="radio-container"><label><input type="radio" id="withCP" name="padding" value="withCP" CHECKED > With Padding</label> <label><input type="radio" id="withoutCP" name="padding" value="withoutCP"> Without Padding</label></div>';
             args.container.appendChild(radioContainer);
             args.container.setAttribute('style', 'padding:10px;font-family: Helvetica Neue, Arial; font-size: 14px; font-weight: normal;');
             radioContainer.setAttribute('style', 'margin-top: 10px; width: 500px; text-align:  center;');
