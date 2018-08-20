@@ -1,5 +1,4 @@
 {
-
     type: 'dragcolumn2d',
     renderAt: 'chart-container',
     id: "fc",
