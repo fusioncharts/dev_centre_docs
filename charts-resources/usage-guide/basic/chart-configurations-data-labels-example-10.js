@@ -11,6 +11,7 @@
             "xAxisName": "Quarter",
             "yAxisName": "Amount (In USD)",
             "numberPrefix": "$",
+            "showValues": "1",
             "theme": "fusion",
             //Remove the comment for the canvasPadding attribute below to add custom padding. The chart adds a canvasPadding automatically.
             //"canvasPadding": "0"

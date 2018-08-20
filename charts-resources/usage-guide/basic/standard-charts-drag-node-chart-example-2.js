@@ -251,50 +251,5 @@
                 "arrowatend": "0"
             }]
         }]
-    },
-    events: {
-        'beforeRender': function(event, args) {
-            // creating div for controllers
-            var controllers = document.createElement('div'),
-                chartRef = event.sender,
-                restoreBtn,
-                httpRequest,
-                //Function to restore data
-                restoreData = function() {
-                    if (window.XMLHttpRequest) { // Mozilla, Safari, ...
-                        httpRequest = new XMLHttpRequest();
-                    } else if (window.ActiveXObject) { // IE 8 and older
-                        httpRequest = new ActiveXObject("Microsoft.XMLHTTP");
-                    }
-                    httpRequest.onreadystatechange = function() {
-                        if (httpRequest.readyState === 4) {
-                            chartRef.setXMLUrl('https://static.fusioncharts.com/sample/dev2.0/chart-guide-drag-node-chart-introduction.xml');
-                            alert("Data Restored");
-                        } else if (httpRequest.readyState >= 400) {
-                            alert("Data Restored Failed");
-                        }
-                    };
-
-                    httpRequest.open('GET', 'https://static.fusioncharts.com/sample/dev2.0/chart-guide-drag-node-chart-introduction-restore.php', true);
-                    httpRequest.send(null);
-                };
-
-            controllers.setAttribute('id', 'btnCont');
-
-            // Create Button inside div
-            controllers.innerHTML = '<input id="restoreXML" type="submit" name="Submit" value="Restore Original Data">';
-
-            args.container.parentNode.insertBefore(controllers, args.container.nextSibling);
-
-            // setting css styles for controllers div
-            controllers.style.cssText = "width: 800px; text-align:center;";
-            restoreBtn = document.getElementById('restoreXML');
-
-            //Set event listener for check boxes
-            restoreBtn.addEventListener && restoreBtn.addEventListener("click", restoreData);
-        },
-        "datasubmitted": function(e, a) {
-            alert("Successfully Saved");
-        }
     }
 }
