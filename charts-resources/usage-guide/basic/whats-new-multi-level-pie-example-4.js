@@ -20,7 +20,6 @@
         "theme": "fusion"
       },
       "category": [{
-        "label": "Sales by category",
         "color": "#ffffff",
         "value": "150",
         "category": [{
