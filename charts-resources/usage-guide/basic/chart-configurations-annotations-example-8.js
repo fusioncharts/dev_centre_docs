@@ -10,8 +10,6 @@
             "subCaption": "Last week",
             "xAxisName": "Day",
             "yAxisName": "No. of Visitors",
-            "showValues": "0",
-            "showBorder": "1",
             "showTooltip": "0",
             "formatNumberScale": "0",
             "theme": "fusion"
@@ -29,7 +27,7 @@
                     "y": "$canvasStartY",
                     "tox": "$canvasEndX",
                     "toy": "$canvasStartY + 30",
-                    "color": "#0075c2",
+                    "color": "#5d62b5",
                     "alpha": "70"
                 }, {
                     "id": "dyn-label",

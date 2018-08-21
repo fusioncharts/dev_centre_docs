@@ -1,9 +1,8 @@
 {
     type: 'hled',
     renderAt: 'chart-container',
-    
     width: '500',
-    height: '120',
+    height: '150',
     dataFormat: 'json',
     dataSource: {
         "chart": {
