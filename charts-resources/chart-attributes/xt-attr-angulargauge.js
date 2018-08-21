@@ -7,16 +7,11 @@
     dataSource: {
         "chart": {
             "caption": "Speedometer",
-            "captionFont": "Arial",
-            "captionFontColor": "#333333",
-            "manageresize": "1",
             "origw": "320",
             "origh": "320",
             "tickvaluedistance": "-10",
-            "bgcolor": "#FFFFFF",
             "upperlimit": "240",
             "lowerlimit": "0",
-            "basefontcolor": "#FFFFFF",
             "majortmnumber": "9",
             "majortmcolor": "#FFFFFF",
             "majortmheight": "8",
@@ -31,16 +26,9 @@
             "pivotborderthickness": "2",
             "tooltipbordercolor": "#FFFFFF",
             "tooltipbgcolor": "#333333",
-            "gaugeouterradius": "115",
-            "gaugestartangle": "240",
-            "gaugeendangle": "-60",
-            "decimals": "0",
-            "placevaluesinside": "1",
-            "pivotfillmix": "",
-            "showpivotborder": "1",
             "gaugeoriginx": "160",
             "gaugeoriginy": "160",
-            "showborder": "0"
+            "theme": "fusion"
         },
         "dials": {
             "dial": [{
