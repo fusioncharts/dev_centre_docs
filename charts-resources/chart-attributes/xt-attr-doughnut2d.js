@@ -9,10 +9,8 @@
             "caption": "Split of Revenue by Product Categories",
             "subCaption": "Last year",
             "numberPrefix": "$",
-            "startingAngle": "310",
             "defaultCenterLabel": "Total revenue: $64.08K",
             "centerLabel": "Revenue from $label: $value",
-            "centerLabelBold": "1",
             "decimals": "0",
             "theme": "fusion"
         },
