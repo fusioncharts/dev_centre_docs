@@ -12,7 +12,7 @@
             "canvasleftmargin": "145",
             "chartTopMargin": "10",
             "chartRightMargin": "10",
-            "showBorder": "0"
+            "theme": "fusion"
         },
         "dataset": [{
             "data": [{
