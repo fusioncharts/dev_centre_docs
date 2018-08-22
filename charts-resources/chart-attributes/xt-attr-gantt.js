@@ -15,14 +15,12 @@
             "ganttPaneDurationUnit": "d",
             "plottooltext": "$processName{br} $label starting date $start{br}$label ending date $end",
             "legendBorderAlpha": "0",
-            "legendShadow": "0",
-            "usePlotGradientColor": "0",
-            "showCanvasBorder": "0",
             "flatScrollBars": "1",
             "gridbordercolor": "#333333",
             "gridborderalpha": "20",
             "slackFillColor": "#e44a00",
-            "taskBarFillMix": "light+0"
+            "taskBarFillMix": "light+0",
+            "theme": "fusion"
         },
         "categories": [{
             "bgcolor": "#999999",
