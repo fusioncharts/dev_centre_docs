@@ -8,17 +8,13 @@
         "chart": {
             "caption": "Customer satisfaction score",
             "subcaption": "Current week - Bakersfield Central",
-            "subcaptionFontBold": "0",
             "lowerLimit": "0",
             "upperLimit": "100",
             "lowerLimitDisplay": "Bad",
             "upperLimitDisplay": "Good",
             "numberSuffix": "%",
-            "showValue": "0",
-            "showBorder": "0",
-            "bgColor": "#ffffff",
-            "showShadow": "0",
-            "tickMarkDistance": "5"
+            "tickMarkDistance": "5",
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

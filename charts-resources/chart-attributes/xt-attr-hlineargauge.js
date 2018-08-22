@@ -8,22 +8,13 @@
         "chart": {
             "caption": "Server CPU Utilization",
             "subcaption": "food.hsm.com",
-            "captionFontColor": "#000000",
-            "subcaptionFontBold": "0",
-            "bgColor": "#ffffff",
-            "showBorder": "0",
             "lowerLimit": "0",
             "upperLimit": "100",
             "numberSuffix": "%",
             "valueAbovePointer": "0",
             "showShadow": "0",
             "gaugeFillMix": "{light}",
-            "valueBgColor": "#ffffff",
-            "valueBgAlpha": "60",
-            "valueFontColor": "#000000",
-            "pointerBgColor": "#ffffff",
-            "pointerBgAlpha": "50",
-            "baseFontColor": "#ffffff"
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

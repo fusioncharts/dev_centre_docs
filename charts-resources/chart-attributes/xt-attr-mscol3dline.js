@@ -11,27 +11,7 @@
             "numberprefix": "$",
             "xaxisname": "Quarters",
             "yaxisname": "Cost",
-            "showBorder": "0",
-            "paletteColors": "#0075c2,#1aaf5d,#f2c500",
-            "bgColor": "#ffffff",
-            "canvasBgColor": "#ffffff",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
-            "subcaptionFontBold": "0",
-            "divlineColor": "#999999",
-            "divLineIsDashed": "1",
-            "divLineDashLen": "1",
-            "toolTipColor": "#ffffff",
-            "toolTipBorderThickness": "0",
-            "toolTipBgColor": "#000000",
-            "toolTipBgAlpha": "80",
-            "toolTipBorderRadius": "2",
-            "toolTipPadding": "5",
-            "legendBgColor": "#ffffff",
-            "legendBorderAlpha": '0',
-            "legendShadow": '0',
-            "legendItemFontSize": '10',
-            "legendItemFontColor": '#666666'
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

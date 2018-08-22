@@ -7,13 +7,9 @@
     dataSource: {
         "chart": {
             "caption": "Speedometer",
-            "captionFont": "Arial",
-            "captionFontColor": "#333333",
-            "manageresize": "1",
             "origw": "320",
             "origh": "320",
             "tickvaluedistance": "-10",
-            "bgcolor": "#FFFFFF",
             "upperlimit": "240",
             "lowerlimit": "0",
             "basefontcolor": "#FFFFFF",
@@ -38,9 +34,10 @@
             "placevaluesinside": "1",
             "pivotfillmix": "",
             "showpivotborder": "1",
+            "annrenderdelay": "0",
             "gaugeoriginx": "160",
             "gaugeoriginy": "160",
-            "showborder": "0"
+            "theme": "fusion"
         },
         "dials": {
             "dial": [{

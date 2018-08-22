@@ -10,14 +10,9 @@
             "upperLimit": "100",
             "numberPrefix": "$",
             "numberSuffix": "K",
-            "plotFillColor": "#0075c2",
-            "targetColor": "#8e0000",
-            "showHoverEffect": "1",
-            "showBorder": "0",
-            "bgColor": "#ffffff",
-            "showShadow": "0",
             "colorRangeFillMix": "{light}",
-            "chartBottomMargin": "20"
+            "chartBottomMargin": "20",
+            "theme": "fusion"
         },
         "colorRange": {
             "color": [{

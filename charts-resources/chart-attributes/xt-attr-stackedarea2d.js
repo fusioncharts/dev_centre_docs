@@ -11,24 +11,7 @@
             "xAxisname": "Quarter",
             "yAxisName": "Amount",
             "numberPrefix": "$",
-            "paletteColors": "#0075c2,#1aaf5d",
-            "bgColor": "#ffffff",
-            "borderAlpha": "20",
-            "showCanvasBorder": "0",
-            "usePlotGradientColor": "0",
-            "plotBorderAlpha": "10",
-            "plotFillAlpha": "50",
-            "legendBorderAlpha": "0",
-            "legendShadow": "0",
-            "showValues": "0",
-            "showBorder": "0",
-            "showXAxisLine": "1",
-            "xAxisLineColor": "#999999",
-            "divlineColor": "#999999",
-            "divLineDashed": "1",
-            "showAlternateHGridColor": "0",
-            "subcaptionFontBold": "0",
-            "subcaptionFontSize": "14"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

@@ -10,8 +10,6 @@
             "subCaption": "Last week",
             "xAxisName": "Day",
             "yAxisName": "No. of Visitors",
-            "showValues": "1",
-            "showBorder": "1",
             "showTooltip": "0",
             "formatNumberScale": "1",
             "theme": "fusion"
@@ -26,7 +24,7 @@
                     "y": "60",
                     "tox": "390",
                     "toy": "90",
-                    "color": "#0075c2",
+                    "color": "#5d62b5",
                     "alpha": "70",
                     "origW": "400",
                     "origH": "300"

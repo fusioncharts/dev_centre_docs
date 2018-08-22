@@ -11,24 +11,7 @@
             "xAxisName": "Pay Grades",
             "YAxisName": "Salaries (In USD)",
             "numberPrefix": "$",
-            "paletteColors": "#0075c2,#1aaf5d,#f2c500,#f45b00",
-            "bgColor": "#ffffff",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
-            "subcaptionFontBold": "0",
-            "showBorder": "0",
-            "showCanvasBorder": "0",
-            "showAlternateHGridColor": "0",
-            "legendBorderAlpha": "0",
-            "legendShadow": "0",
-            "legendPosition": "right",
-            "showValues": "0",
-            "toolTipColor": "#ffffff",
-            "toolTipBorderThickness": "0",
-            "toolTipBgColor": "#000000",
-            "toolTipBgAlpha": "80",
-            "toolTipBorderRadius": "2",
-            "toolTipPadding": "5"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{
