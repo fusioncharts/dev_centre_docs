@@ -14,26 +14,7 @@
             "numberPrefix": "$",
             "sNumberSuffix": "%",
             "sYAxisMaxValue": "25",
-            "paletteColors": "#0075c2,#1aaf5d,#f2c500",
-            "bgColor": "#ffffff",
-            "showBorder": "0",
-            "showCanvasBorder": "0",
-            "usePlotGradientColor": "0",
-            "plotBorderAlpha": "10",
-            "legendBorderAlpha": "0",
-            "legendBgAlpha": "0",
-            "legendShadow": "0",
-            "showHoverEffect": "1",
-            "valueFontColor": "#ffffff",
-            "rotateValues": "1",
-            "placeValuesInside": "1",
-            "divlineColor": "#999999",
-            "divLineDashed": "1",
-            "divLineDashLen": "1",
-            "canvasBgColor": "#ffffff",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
-            "subcaptionFontBold": "0"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{
