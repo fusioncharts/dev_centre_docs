@@ -12,13 +12,7 @@
             "chartBottomMargin": "10",
             "chartRightMargin": "10",
             "numberPrefix": "$",
-            "showBorder": "0",
-            "canvasBorderThickness": "0",
-            "bgColor": "#ffffff",
-            "plotFillColor": "#0075c2",
-            "highColor": "#1aaf5d",
-            "lowColor": "#8e0000",
-            "showHoverEffect": "1"
+            "theme": "fusion"
         },
         "dataset": [{
             "data": [{
