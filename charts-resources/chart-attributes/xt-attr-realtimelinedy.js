@@ -8,20 +8,7 @@
         "chart": {
             "caption": "Stock Price Monitor",
             "subCaption": "Harry's Supermart",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
-            "baseFontColor": "#333333",
-            "baseFont": "Helvetica Neue,Arial",
-            "subcaptionFontBold": "0",
-            "paletteColors": "#0075c2,#1aaf5d,#f2c500",
-            "bgColor": "#ffffff",
-            "canvasBgColor": "#ffffff",
-            "showBorder": "0",
-            "showShadow": "0",
-            "showCanvasBorder": "0",
             "showRealTimeValue": "0",
-            "legendBorderAlpha": "0",
-            "legendShadow": "0",
             "numberprefix": "$",
             "setadaptiveymin": "1",
             "setadaptivesymin": "1",
@@ -32,13 +19,8 @@
             "pyaxismaxvalue": "36",
             "syaxisminvalue": "10000",
             "syaxismaxvalue": "12000",
-            "divlineAlpha": "100",
-            "divlineColor": "#999999",
-            "showAlternateHGridColor": "0",
-            "divlineThickness": "1",
-            "divLineDashed": "1",
-            "divLineDashLen": "1",
-            "numDisplaySets": "10"
+            "numDisplaySets": "10",
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{
