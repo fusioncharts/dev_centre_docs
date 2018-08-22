@@ -12,12 +12,7 @@
             "chartTopMargin": "10",
             "chartBottomMargin": "10",
             "chartRightMargin": "10",
-            "showBorder": "0",
-            "bgColor": "#ffffff",
-            "winColor": "#1aaf5d",
-            "lossColor": "#8e0000",
-            "showHoverEffect": "1",
-            "canvasBorderThickness": "0"
+            "theme": "fusion"
         },
         "dataset": [{
             "data": [{

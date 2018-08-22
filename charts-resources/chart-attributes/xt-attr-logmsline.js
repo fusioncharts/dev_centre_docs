@@ -10,26 +10,9 @@
             "subCaption": "Last Year",
             "xAxisName": "Quarter",
             "yAxisName": "USD",
-            "paletteColors": "#008ee4,#6baa01,#e44a00",
-            "bgAlpha": "0",
-            "borderAlpha": "20",
-            "canvasBorderAlpha": "0",
-            "LegendShadow": "0",
-            "legendBorderAlpha": "0",
-            "showXAxisLine": "1",
-            "showValues": "0",
-            "showBorder": "0",
-            "showAlternateHgridColor": "0",
             "base": "10",
             "numberprefix": "$",
-            "axisLineAlpha": "10",
-            "divLineAlpha": "10",
-            "toolTipColor": "#ffffff",
-            "toolTipBorderThickness": "0",
-            "toolTipBgColor": "#000000",
-            "toolTipBgAlpha": "80",
-            "toolTipBorderRadius": "2",
-            "toolTipPadding": "5"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

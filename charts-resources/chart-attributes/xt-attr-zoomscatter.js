@@ -6,13 +6,13 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "palette": "2",
             "caption": "Server Performance",
             "yaxisname": "Response Time (sec)",
             "xaxisname": "Server Load (TPS)",
             "xaxismaxvalue": "100",
             "xaxisminvalue": "20",
-            "yaxismaxvalue": "7"
+            "yaxismaxvalue": "7",
+            "theme": "fusion"
         },
         "dataset": [
         {

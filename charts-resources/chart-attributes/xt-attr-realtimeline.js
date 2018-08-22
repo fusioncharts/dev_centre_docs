@@ -16,7 +16,6 @@
             "yaxismaxvalue": "36",
             "numdisplaysets": "10",
             "labeldisplay": "rotate",
-            "showValues": "0",
             "showRealTimeValue": "0",
             "theme": "fusion"
         },

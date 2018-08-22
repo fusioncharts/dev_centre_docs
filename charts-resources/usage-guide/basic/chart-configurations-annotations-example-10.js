@@ -1,7 +1,7 @@
 {
     type: 'spline',
     renderAt: 'chart-container',
-    width: '400',
+    width: '450',
     height: '300',
     dataFormat: 'json',
     dataSource: {
@@ -11,16 +11,7 @@
             "xAxisName": "Day",
             "yAxisName": "No. of Visitors",
             "yAxisNamePadding": "20",
-            "paletteColors": "#008ee4",
-            "bgAlpha": "0",
-            "borderAlpha": "20",
-            "canvasBorderAlpha": "0",
-            "plotBorderAlpha": "10",
-            "captionpadding": "20",
-            "axisLineAlpha": "25",
-            "divLineAlpha": "10",
-            "showValues": "0",
-            "showAlternateHGridColor": "0"
+            "theme": "fusion"
         },
         "annotations": {
             "origw": "400",

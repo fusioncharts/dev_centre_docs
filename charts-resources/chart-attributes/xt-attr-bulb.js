@@ -14,19 +14,7 @@
             "showvalue": "1",
             "useColorNameAsValue": "1",
             "placeValuesInside": "1",
-            "valueFontSize": "16",
-            //Cosmetics
-            "baseFontColor": "#333333",
-            "baseFont": "Helvetica Neue,Arial",
-            "captionFontSize": "14",
-            "showborder": "0",
-            "bgcolor": "#FFFFFF",
-            "toolTipColor": "#ffffff",
-            "toolTipBorderThickness": "0",
-            "toolTipBgColor": "#000000",
-            "toolTipBgAlpha": "80",
-            "toolTipBorderRadius": "2",
-            "toolTipPadding": "5",
+            "theme": "fusion"
         },
         "colorrange": {
             "color": [{

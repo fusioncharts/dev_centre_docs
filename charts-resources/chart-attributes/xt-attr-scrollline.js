@@ -10,24 +10,12 @@
             "subCaption": "(FY 2012 to FY 2013)",
             "xAxisName": "Month",
             "yAxisName": "Revenue",
-            "showValues": "0",
             "numberPrefix": "$",
-            "showBorder": "0",
-            "showShadow": "0",
-            "bgColor": "#ffffff",
-            "paletteColors": "#008ee4",
-            "showCanvasBorder": "0",
-            "showAxisLines": "0",
-            "showAlternateHGridColor": "0",
-            "divlineAlpha": "100",
-            "divlineThickness": "1",
-            "divLineDashed": "1",
-            "divLineDashLen": "1",
             "lineThickness": "3",
             "flatScrollBars": "1",
             "scrollheight": "10",
             "numVisiblePlot": "12",
-            "showHoverEffect": "1"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

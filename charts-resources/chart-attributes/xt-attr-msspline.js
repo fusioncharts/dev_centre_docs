@@ -8,31 +8,9 @@
         "chart": {
             "caption": "Number of visitors last week",
             "subCaption": "Bakersfield Central vs Los Angeles Topanga",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
-            "baseFontColor": "#333333",
-            "baseFont": "Helvetica Neue,Arial",
-            "subcaptionFontBold": "0",
             "xAxisName": "Day",
             "yAxisName": "No. of Visitor",
-            "showValues": "0",
-            "paletteColors": "#0075c2,#1aaf5d",
-            "bgColor": "#ffffff",
-            "showBorder": "0",
-            "showShadow": "0",
-            "showAlternateHGridColor": "0",
-            "showCanvasBorder": "0",
-            "showXAxisLine": "1",
-            "xAxisLineThickness": "1",
-            "xAxisLineColor": "#999999",
-            "canvasBgColor": "#ffffff",
-            "legendBorderAlpha": "0",
-            "legendShadow": "0",
-            "divlineAlpha": "100",
-            "divlineColor": "#999999",
-            "divlineThickness": "1",
-            "divLineDashed": "1",
-            "divLineDashLen": "1"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{

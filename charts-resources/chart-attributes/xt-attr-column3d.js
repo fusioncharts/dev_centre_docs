@@ -10,20 +10,7 @@
             "subCaption": "Harry's SuperMart",
             "xAxisName": "Month",
             "yAxisName": "Revenues (In USD)",
-            "paletteColors": "#0075c2",
-            "valueFontColor": "#ffffff",
-            "baseFont": "Helvetica Neue,Arial",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
-            "subcaptionFontBold": "0",
-            "placeValuesInside": "1",
-            "rotateValues": "1",
-            "showShadow": "0",
-            "divlineColor": "#999999",
-            "divLineDashed": "1",
-            "divlineThickness": "1",
-            "divLineDashLen": "1",
-            "canvasBgColor": "#ffffff"
+            "theme": "fusion"
         },
 
         "data": [{

@@ -14,12 +14,10 @@
             "yAxisMaxValue": "30000",
             "plotFillAlpha": "70",
             "plotFillHoverColor": "#6baa01",
-            "showPlotBorder": "0",
             "xAxisName": "Average Price",
             "yAxisName": "Units Sold",
             "numDivlines": "2",
             "showValues": "1",
-            "showTrendlineLabels": "0",
             "plotTooltext": "$name : Profit Contribution - $zvalue%",
             "drawQuadrant": "1",
             "quadrantLineAlpha": "80",
@@ -33,32 +31,10 @@
             "quadrantLabelBR": "High Price / Low Sale",
 
             //Cosmetics
-            "baseFontColor": "#333333",
-            "baseFont": "Helvetica Neue,Arial",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
-            "subcaptionFontBold": "0",
-            "showBorder": "0",
-            "bgColor": "#ffffff",
-            "showShadow": "0",
-            "canvasBgColor": "#ffffff",
-            "canvasBorderAlpha": "0",
-            "divlineAlpha": "100",
-            "divlineColor": "#999999",
-            "divlineThickness": "1",
-            "divLineDashed": "1",
-            "divLineDashLen": "1",
             "use3dlighting": "0",
-            "showplotborder": "0",
-            "showYAxisLine": "1",
-            "yAxisLineThickness": "1",
-            "yAxisLineColor": "#999999",
-            "showXAxisLine": "1",
-            "xAxisLineThickness": "1",
-            "xAxisLineColor": "#999999",
             "showAlternateHGridColor": "0",
-            "showAlternateVGridColor": "0"
-
+            "showAlternateVGridColor": "0",
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{
