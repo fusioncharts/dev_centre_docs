@@ -19,7 +19,8 @@
             "numberScaleValue": "1,1000,1000",
             "numberScaleUnit": "K,M,B",
             "canvasBorderAlpha": "0",
-            "numberPrefix": "$"
+            "numberPrefix": "$",
+            "theme": "fusion"
         },
         "colorrange": {
             "color": [{
