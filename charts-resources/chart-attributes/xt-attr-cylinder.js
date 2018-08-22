@@ -14,11 +14,8 @@
             "lowerLimitDisplay": "Empty",
             "upperLimitDisplay": "Full",
             "numberSuffix": " ltrs",
-            "showValue": "0",
             "showhovereffect": "1",
-            "bgCOlor": "#ffffff",
-            "borderAlpha": "0",
-            "cylFillColor": "#008ee4"
+            "theme": "fusion"
         },
         "value": "110"
     },
