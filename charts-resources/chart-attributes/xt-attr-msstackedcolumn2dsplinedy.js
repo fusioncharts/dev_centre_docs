@@ -1,5 +1,5 @@
 {
-    type: 'area2d',
+    type: 'msstackedcolumn2dsplinedy',
     renderAt: 'chart-container',
     width: '100%',
     height: '100%',
