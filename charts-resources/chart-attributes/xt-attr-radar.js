@@ -8,25 +8,8 @@
         "chart": {
             "caption": "Budget analysis",
             "subCaption": "Current month",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
             "numberPrefix": "$",
-            "baseFontColor": "#333333",
-            "baseFont": "Helvetica Neue,Arial",
-            "subcaptionFontBold": "0",
-            "paletteColors": "#008ee4,#6baa01",
-            "bgColor": "#ffffff",
-            "radarfillcolor": "#ffffff",
-            "showBorder": "0",
-            "showShadow": "0",
-            "showCanvasBorder": "0",
-            "legendBorderAlpha": "0",
-            "legendShadow": "0",
-            "divLineAlpha": "10",
-            "usePlotGradientColor": "0",
-            "numberPreffix": "$",
-            "legendBorderAlpha": "0",
-            "legendShadow": "0"
+            "theme": "fusion"
         },
         "categories": [{
             "category": [{
