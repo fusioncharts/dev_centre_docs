@@ -139,7 +139,7 @@ ReactDOM.render( <
 );
 ```
 
-Refer to the code below where the `dataplotRollOver` event has been specified.
+Refer to the code below where the code snippet for `dataplotRollOver` event has been specified.
 
 ```
 render() {
