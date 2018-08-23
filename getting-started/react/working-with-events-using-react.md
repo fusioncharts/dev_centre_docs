@@ -6,6 +6,10 @@ heading: Working with Events
 
 Events are signals that let you execute specific actions—such as manipulating the DOM, sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. Events can be used to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
 
+Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
+
+{% embed_chart getting-started-your-first-chart.js %}
+
 To attach event callbacks to a FusionCharts component, follow the pattern shown below:
 
 **Step 1:** Write a callback

@@ -8,6 +8,10 @@ The FusionCharts Suite XT API offers a wide range of events that you can use to 
 
 To call APIs, a chart object is required. To get the chart object for a React-FC component, pass a callback through the `onRender` attribute.
 
+Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
+
+{% embed_chart getting-started-your-first-chart.js %}
+
 **Step 1:** Write a callback
 
 * As a separate function:
