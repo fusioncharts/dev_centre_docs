@@ -84,4 +84,14 @@ app.controller('MyController', function($scope) {
 });
 ```
 
+In the above code, `rollover` event is triggered when the mouse pointer is rolled over. Refer to the code below:
+
+```
+$scope.rollover = function(event, name) {
+    console.log(event, name);
+}
+```
+
+
+
 Click [here]({% site.baseurl %}/api/fusioncharts/fusioncharts-events) for the list of events in FusionCharts.

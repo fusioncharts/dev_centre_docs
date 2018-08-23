@@ -124,24 +124,11 @@ class Chart extends Component {
     }
 
     render() {
-        return ( <
-            div >
-            <
-            ReactFC { ...chartConfigs
-            }
-            fcEvent - dataplotRollOver = {
-                this.showPlotValue
-            }
-            /> <
-            p style = {
-                {
-                    padding: '10px',
-                    background: '#f5f2f0'
-                }
-            } > {
-                this.state.actualValue
-            } < /p> <
-            /div>
+        return ( 
+            <div>
+                <ReactFC { ...chartConfigs} fcEvent - dataplotRollOver = {this.showPlotValue} />
+                <p style = {{ padding: '10px', background: '#f5f2f0' }} > {this.state.actualValue} </p>
+            </div>
         );
     }
 }
@@ -152,4 +139,22 @@ ReactDOM.render( <
 );
 ```
 
-In the above code, `dataplotRollOver` event is triggered when the mouse pointer is rolled over a data plot. Click [here]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollover-247) to get the detailed parameters of the event.
+Refer to the code below where the `dataplotRollOver` event has been specified.
+
+```
+render() {
+    return ( 
+        <div>
+            <ReactFC { ...chartConfigs} fcEvent - dataplotRollOver = {this.showPlotValue} />
+            <p style = {{ padding: '10px', background: '#f5f2f0' }} > {this.state.actualValue} </p>
+        </div>
+    );
+}
+```
+
+In the above code:
+
+* `dataplotRollOver` event is triggered when the mouse pointer is rolled over a data plot. 
+* `showPlotValue` is the callback handler for the `dataplotRollOver` event which shows the value of the hovered plot on the page.
+
+Click [here]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollover-247) to get the detailed parameters of the event.
