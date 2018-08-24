@@ -6,9 +6,17 @@ heading: Working with Events
 
 Events are signals that let you execute specific actions—such as manipulating the DOM, sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. Events can be used to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
 
-Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
+Events can be used for applications like monitoring the state of a system or a business. For example, you can listen to an event to observe the temperature of a deep freezer and display an alert message if the temperature falls below the minimum value.
 
-{% embed_chart getting-started-your-first-chart.js %}
+Take a look at the pie chart shown below:
+
+{% embed_chart advanced-charting-events-introduction-example-1.js %}
+
+Roll the mouse pointer over any one pie slice and see how the text (the slice label and the no. of visitors) rendered below the chart changes.
+
+For example, if you roll the mouse pointer over the __Senior__ slice, the following text is displayed is below the chart:
+__Age group: Senior__
+__No. of visitors: 491000__
 
 Fusincharts events can be subscribed by attaching scope functions to event attributes. All the events attribute starts with `fcevent-` followed by the event name in lowercase.
 
@@ -16,9 +24,9 @@ To render the above chart, use the template given below:
 
 ```
 <fusioncharts 
-	width="700"
-	height="400"
-	type="column2d"
+	width="450"
+	height="350"
+	type="pie2d"
 	datasource="{{myDataSource}}"
 	fcevent-dataplotrollover="rollover(event, args)">
 </fusioncharts>
@@ -36,46 +44,27 @@ var app = angular.module('myApp', ['ng-fusioncharts']);
 app.controller('MyController', function($scope) {
     $scope.myDataSource = {
         "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
+            "caption": "Split of visitors by age group-FY2013-14",
+            "subCaption": "Harry's SuperMart",
+            "enableSmartLabels": "0",
+            "showPercentValues": "1",
+            "showTooltip": "0",
+            "decimals": "1",
             "theme": "fusion"
         },
         "data": [{
-                "label": "Venezuela",
-                "value": "290"
-            },
-            {
-                "label": "Saudi",
-                "value": "260"
-            },
-            {
-                "label": "Canada",
-                "value": "180"
-            },
-            {
-                "label": "Iran",
-                "value": "140"
-            },
-            {
-                "label": "Russia",
-                "value": "115"
-            },
-            {
-                "label": "UAE",
-                "value": "100"
-            },
-            {
-                "label": "US",
-                "value": "30"
-            },
-            {
-                "label": "China",
-                "value": "30"
-            }
-        ]
+            "label": "Teenage",
+            "value": "1250400"
+        }, {
+            "label": "Adult",
+            "value": "1463300"
+        }, {
+            "label": "Mid-age",
+            "value": "1050700"
+        }, {
+            "label": "Senior",
+            "value": "491000"
+        }]
     };
 
     $scope.rollover = function(event, name) {
@@ -84,7 +73,7 @@ app.controller('MyController', function($scope) {
 });
 ```
 
-Refer to the code below where the code snippet for `dataplotRollOver` event has been specified.
+Refer to the code below where the code snippet for `rollover` event has been specified.
 
 ```
 $scope.rollover = function(event, name) {
@@ -92,6 +81,6 @@ $scope.rollover = function(event, name) {
 }
 ```
 
-In the above code `dataplotRollOver` event is triggered when the mouse pointer is rolled over a data plot. 
+In the above code `RollOver` event is triggered when the mouse pointer is rolled over a data plot. 
 
 Click [here]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollover-247) to get the detailed parameters of the event.

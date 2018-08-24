@@ -88,7 +88,7 @@ const myDataSource = {
 const chartConfigs = {
     type: 'pie2d',
     width: 450,
-    height: 300,
+    height: 350,
     dataFormat: 'json',
     dataSource: myDataSource,
 };
