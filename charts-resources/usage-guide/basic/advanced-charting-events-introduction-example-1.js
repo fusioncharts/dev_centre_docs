@@ -33,7 +33,7 @@
             var controllers = document.createElement('div');
             controllers.innerHTML = "Hover on any of the pie slices to view its details.";
             controllers.setAttribute('id', 'indicatorDiv');
-            controllers.style.cssText = "color: #5c2699; width: 480px; font-family:'Arial, Helvetica'; font-size:15px; padding:10px;";     
+            controllers.style.cssText = "color: #5c2699; width: 480px; font-family:'Arial, Helvetica'; font-size:15px;";     
             args.container.appendChild(controllers);
         },
 
