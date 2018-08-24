@@ -8,7 +8,7 @@
         "chart": {
             "caption": "Split of visitors by age group-FY2013-14",
             "subCaption": "Harry's SuperMart",
-            "enableSmartLabels": "0",
+            "enableSmartLabels": "1",
             "showPercentValues": "1",
             "showTooltip": "0",
             "decimals": "1",
@@ -33,7 +33,7 @@
             var controllers = document.createElement('div');
             controllers.innerHTML = "Hover on any of the pie slices to view its details.";
             controllers.setAttribute('id', 'indicatorDiv');
-            controllers.style.cssText = "color: #5c2699; width: 480px; font-family:'Arial, Helvetica'; font-size:15px; padding:10px;";     
+            controllers.style.cssText = "color: #696969; width: 480px; font-family:'Arial, Helvetica'; font-size:15px; padding:10px; border: 1px solid #e4e4f5";     
             args.container.appendChild(controllers);
         },
 
