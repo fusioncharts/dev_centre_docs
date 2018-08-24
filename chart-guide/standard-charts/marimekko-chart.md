@@ -105,14 +105,14 @@ Click [here](http://jsfiddle.net/fusioncharts/m02om320/) to edit the marimekko c
 
 ## Percentage Market Share Values
 
-By default, labels are rendered between the columns of a Marimekko chart, along the x-axis, to show the percentage market value share of the competitors. These labels can be shown/hidden, depending on what the user requirement is. Set the `showAxisPercentValues` attribute to `0` to hide the percent values along the x-axis. The default value of this attribute is `1`.
+By default, labels are rendered between the columns of a Marimekko chart, along the x-axis, to show the percentage market value share of the competitors. These labels can be shown/hidden, depending on what the user requirement is. Set the `showXAxisPercentValues` attribute to `0` to hide the percent values along the x-axis. The default value of this attribute is `1`.
 
 Refer to the code given below:
 
 ```json
 {
   "chart": {
-    "showAxisPercentValues": "0"
+    "showXAxisPercentValues": "0"
   }
 }
 ```

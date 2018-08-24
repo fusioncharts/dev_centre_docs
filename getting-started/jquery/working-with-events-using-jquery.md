@@ -95,3 +95,15 @@ Let's take an example below that tracks hover events on a data plot.
 </body>
 </html>
 ```
+
+Refer to the code below where the code snippet for `dataplotRollOver` event has been specified.
+
+```
+$("#chart-container").on('fusionchartsdataplotrollover', function(eventObj, dataObj) {
+    $('body p').text('You’re are currently hovering over ' + dataObj.categoryLabel + ' whose value is ' + dataObj.displayValue);
+});
+```
+
+In the above code `dataplotRollOver` event is triggered when the mouse pointer is rolled over a data plot. 
+
+Click [here]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollover-247) to get the detailed parameters of the event.
