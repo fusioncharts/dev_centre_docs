@@ -104,6 +104,6 @@ $("#chart-container").on('fusionchartsdataplotrollover', function(eventObj, data
 });
 ```
 
-In the above code `dataplotRollOver` event is triggered when the mouse pointer is rolled over a data plot. 
+In the above code `fusionchartsdataplotrollover` event is triggered when the mouse pointer is rolled over a data plot. 
 
 Click [here]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollover-247) to get the detailed parameters of the event.

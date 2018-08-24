@@ -14,7 +14,6 @@
             "decimals": "1",
             "theme": "fusion"
         },
-
         "data": [{
             "label": "Teenage",
             "value": "1250400"
