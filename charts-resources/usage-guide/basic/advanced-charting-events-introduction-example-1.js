@@ -2,7 +2,7 @@
     type: 'pie2d',
     renderAt: 'chart-container',
     width: '450',
-    height: '300',
+    height: '350',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -33,13 +33,13 @@
             var controllers = document.createElement('div');
             controllers.innerHTML = "Hover on any of the pie slices to view its details.";
             controllers.setAttribute('id', 'indicatorDiv');
-            controllers.style.cssText = "color: #1790e1; width: 480px; font-family:'Arial, Helvetica'; font-size:14px; padding:10px;";     
+            controllers.style.cssText = "color: #5c2699; width: 480px; font-family:'Arial, Helvetica'; font-size:15px; padding:10px;";     
             args.container.appendChild(controllers);
         },
 
 
         "dataplotRollOver": function(evt, data) {
-            var txt = "Age group: " + data.categoryLabel + "<br/>No. of visitors: " + data.value;
+            var txt = "Age group: " + data.categoryLabel + ", No. of visitors: " + data.value;
                document.getElementById("indicatorDiv").innerHTML = txt;
 
         },
