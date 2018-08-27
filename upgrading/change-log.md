@@ -910,7 +910,7 @@ heading: Version 3.13.x
 
 <h4>Deprecated</h4>
 
-* Support for coma `,` separator option is FC constructor has been deprecated.
+* Support for coma (`,`) separator option is FC constructor has been deprecated.
 
 * The **Fusioncharts CJS** module for npm has been deprecated.
 
