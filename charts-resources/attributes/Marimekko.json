@@ -142,7 +142,7 @@
                 "description": "This attribute specifies whether percentage values should be should along the x-axis or not. \n\n Default value: 1",
                 "range": "0/1",
                 "type": "Boolean",
-                "name": "showAxisPercentValues"
+                "name": "showXAxisPercentValues"
             },
             {
                 "description": "This attribute, when set to __1__, indicates to the chart that the text (rendered on the chart) may contain RTL characters and the textual display has to be managed accordingly. ",
