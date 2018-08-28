@@ -6,20 +6,11 @@
     dataFormat: 'json',
     dataSource: {
         "chart": {
+            "theme": "fusion",
             "caption": "Cost Analysis",
-            "xaxisname": "Quarters",
-            "yaxisname": "Cost",
             "numberprefix": "$",
-            "divlineColor": "#999999",
-            "divLineIsDashed": "1",
-            "divLineDashLen": "1",
-            "toolTipColor": "#ffffff",
-            "toolTipBorderThickness": "0",
-            "toolTipBgColor": "#000000",
-            "toolTipBgAlpha": "80",
-            "toolTipBorderRadius": "2",
-            "toolTipPadding": "5",
-            "theme": "fusion"
+            "xaxisname": "Quarters",
+            "yaxisname": "Cost"
         },
         "categories": [{
             "category": [{
