@@ -4,6 +4,15 @@ description: This section talks about the change in features and attributes with
 heading: Version 3.13.x
 ---
 
+<h2 class="sub-heading">Version 3.13.1-sr.1</h2>
+27th August, 2018
+
+<h4 class="sub-heading">Fixes</h4>
+
+* Legend interaction was not working in Chrome for Android devices. The issue has now been fixed.
+
+* The size of `fusioncharts.js` file in FusionCharts Suite XT package has been reduced to 1.3 Mb. Previously the file size was 2.44 Mb. 
+
 <h2 class="sub-heading">Version 3.13.1</h2>
 10th August, 2018
 
@@ -876,41 +885,32 @@ heading: Version 3.13.x
 
 * Single Series grid support is removed.
 
-Following are the list of attributes which have been removed from the FusionCharts XT Suite:
+* Following are the list of attributes which have been removed from the FusionCharts XT Suite:
 
     * `Annrenderdelay`
-
     * `btnTextColor`
-
     * `btnFontSize`
-
     * `formBtnWidth`
-
     * `formBtnBorderColor`
-
     * `formBtnBgColor`
-
     * `btnPadding`
-
     * `btnSpacing`
-
     * `restoreBtnWidth`
-
     * `restoreBtnBorderColor`
-
     * `restoreBtnBgColor`
-
     * `clickBubbles`
 
-    * The deprecated methods `getXML()` & `setDataXML()` have been removed.
+* The deprecated methods `getXML()` & `setDataXML()` have been removed.
 
-    * The deprecated method `setCurrentRenderer()` has been removed.
+* The deprecated method `setCurrentRenderer()` has been removed.
 
-    * The method `getChartFromId()` has been removed. Use `getObjectReference()` instead.
+* The method `getChartFromId()` has been removed. Use `getObjectReference()` instead.
 
-    * The method `getMapFromId()` has been removed.  Use `getObjectReference()` instead.
+* The method `getMapFromId()` has been removed.  Use `getObjectReference()` instead.
 
 <h4>Deprecated</h4>
+
+* Support for coma (`,`) separator option is FC constructor has been deprecated.
 
 * The **Fusioncharts CJS** module for npm has been deprecated.
 

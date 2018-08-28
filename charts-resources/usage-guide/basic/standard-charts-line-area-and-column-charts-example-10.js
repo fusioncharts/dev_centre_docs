@@ -1,7 +1,7 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    width: '500',
+    width: '600',
     height: '400',
     dataFormat: 'json',
     dataSource: {
@@ -13,7 +13,6 @@
             "numberPrefix": "$",
             "theme": "fusion"
         },
-
         "data": [{
             "label": "Jan",
             "value": "420000"
