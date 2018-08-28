@@ -13,7 +13,6 @@
             "sYAxisname": "Cumulative Percentage",
             "showHoverEffect": "1",
             "theme": "fusion"
-
         },
         "data": [{
             "label": "Traffic",
