@@ -1,12 +1,12 @@
 {
-
     type: 'scrollColumn2d',
     renderAt: 'chart-container',
-    width: '550',
-    height: '350',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
+            "theme": "fusion",
             "caption": "Sales Trends",
             "subcaption": "2016 - 2017",
             "xaxisname": "Month",
@@ -21,32 +21,11 @@
             "flatScrollBars": "0",
 
             //Cosmetics
-            "baseFontColor": "#333333",
-            "baseFont": "Helvetica Neue,Arial",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
-            "subcaptionFontBold": "0",
-            "showborder": "0",
-            "paletteColors": "#0075c2",
-            "bgcolor": "#FFFFFF",
-            "showalternatehgridcolor": "0",
-            "showplotborder": "0",
-            "labeldisplay": "WRAP",
-            "divlinecolor": "#CCCCCC",
-            "showcanvasborder": "0",
             "linethickness": "3",
-            "plotfillalpha": "100",
-            "plotgradientcolor": "",
-            "divlineAlpha": "100",
-            "divlineColor": "#999999",
-            "divlineThickness": "1",
-            "divLineIsDashed": "1",
-            "divLineDashLen": "1",
-            "divLineGapLen": "1",
             "scrollheight": "10",
             "scrollShowButtons": "0",
             "scrollColor": "#cccccc",
-            "showHoverEffect": "1",
+            "showHoverEffect": "1"
         },
         "categories": [{
             "category": [{
