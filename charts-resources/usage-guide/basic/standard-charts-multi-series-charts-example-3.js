@@ -1,33 +1,16 @@
 {
     type: 'msbar2d',
     renderAt: 'chart-container',
-    width: '450',
-    height: '420',
+    width: '600',
+    height: '500',
     dataFormat: 'json',
     dataSource: {
         "chart": {
+            "theme": "fusion",
             "caption": "Split of Sales by Product Category",
             "subCaption": "In top 5 stores last month",
             "yAxisname": "Sales (In USD)",
-            "numberPrefix": "$",
-            "paletteColors": "#0075c2,#1aaf5d",
-            "bgColor": "#ffffff",
-            "showBorder": "0",
-            "showHoverEffect": "1",
-            "showCanvasBorder": "0",
-            "usePlotGradientColor": "0",
-            "plotBorderAlpha": "10",
-            "legendBorderAlpha": "0",
-            "legendShadow": "0",
-            "placevaluesInside": "1",
-            "valueFontColor": "#ffffff",
-            "showXAxisLine": "1",
-            "xAxisLineColor": "#999999",
-            "divlineColor": "#999999",
-            "divLineIsDashed": "1",
-            "showAlternateVGridColor": "0",
-            "subcaptionFontBold": "0",
-            "subcaptionFontSize": "14"
+            "numberPrefix": "$"
         },
         "categories": [{
             "category": [{
@@ -89,13 +72,13 @@
         "trendlines": [{
             "line": [{
                     "startvalue": "15000",
-                    "color": "#0075c2",
+                    "color": "#5D62B5",
                     "valueOnRight": "1",
                     "displayvalue": "Avg. for{br}Food"
                 },
                 {
                     "startvalue": "22000",
-                    "color": "#1aaf5d",
+                    "color": "#29C3BE",
                     "valueOnRight": "1",
                     "displayvalue": "Avg. for{br}Non-food"
                 }
