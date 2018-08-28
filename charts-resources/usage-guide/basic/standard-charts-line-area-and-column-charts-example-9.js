@@ -1,8 +1,8 @@
 {
     type: 'line',
     renderAt: 'chart-container',
-    width: '500',
-    height: '300',
+    width: '600',
+    height: '350',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -11,6 +11,8 @@
             "subCaption": "Last week",
             "xAxisName": "Day",
             "yAxisName": "Visits",
+            "divlineColor": "#999999",
+            "divLineIsDashed": "1",
             "showValues": "0"
         },
         "data": [{
@@ -33,6 +35,7 @@
             "vline": "true",
             //Adding label
             "label": "Weekend Start",
+            "color": "#29C3BE",
             "linePosition": "0.7"
         }, {
             "label": "Sat",
