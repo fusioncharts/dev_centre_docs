@@ -1,8 +1,8 @@
 {
     type: 'doughnut2d',
     renderAt: 'chart-container',
-    width: '450',
-    height: '400',
+    width: '550',
+    height: '350',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -10,10 +10,11 @@
             "subCaption": "Los Angeles Topanga - Last month",
             "numberPrefix": "$",
             "startingAngle": "310",
+            "defaultCenterLabel": "Total revenue: $64.08K",
+            "centerLabel": "Revenue from $label: $value",
+            "centerLabelBold": "1",
+            "showTooltip": "0",
             "decimals": "0",
-            "defaultCenterLabel": "Total revenue: $60K",
-            "centerLabel": "$value",
-            "useDataPlotColorForLabels": "1",
             "theme": "fusion"
         },
         "data": [{
