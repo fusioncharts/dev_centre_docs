@@ -11,6 +11,7 @@ This article focuses on how you can configure the following using `jquery-fusion
 
 * [Update Chart Data]({% site.baseurl %}/getting-started/jquery/configure-your-chart-using-jquery#update-chart-data-1)
 * [Update Chart Attributes]({% site.baseurl %}/getting-started/jquery/configure-your-chart-using-jquery#update-chart-attributes-2)
+* [Selecting Charts in a Specific Scope]({% site.baseurl %}/getting-started/jquery/configure-your-chart-using-jquery#selecting-charts-in-a-specific-scope-3)
 
 ## Update Chart Data
 
