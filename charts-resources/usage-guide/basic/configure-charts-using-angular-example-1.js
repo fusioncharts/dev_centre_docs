@@ -44,6 +44,7 @@
     events: {
         "beforeRender": function(evt, args) {
             var controls = document.createElement('div'),
+            var clicks = document.createElement('a'),
                 chartRef = evt.sender;
 
             chartRef.getRandomNumber = function() {
@@ -66,7 +67,8 @@
 
 
             controls.innerHTML = '<button onClick="updateData()" >Update chart data</button>';
-            controls.style.cssText = 'text-align: center; width: 400px; padding-left: 200px; background-color: #6957da; border: none; display: inline-block; color: white; padding: 15px 32px;';
+            controls.style.cssText = 'text-align: center; width: 400px; padding-left: 200px;';
+            clicks.style.cssText = ' background-color: #6957da; border: none; display: inline-block; color: white; padding: 15px 32px;';
             args.container.appendChild(controls);
         }
     }
