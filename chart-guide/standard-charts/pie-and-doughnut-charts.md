@@ -58,7 +58,7 @@ The doughnut 2D chart for the above code looks like:
 
 {% embed_all standard-charts-pie-and-doughnut-charts-example-3.js %}
 
-Click [here](http://jsfiddle.net/fusioncharts/wYj95/) to edit the doughnut 2D chart.
+Click [here](http://jsfiddle.net/fusioncharts/2Lyd4bpv/) to edit the doughnut 2D chart.
 
 ## Doughnut 3D Chart
 

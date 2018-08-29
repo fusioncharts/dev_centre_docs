@@ -76,27 +76,35 @@ FusionCharts.ready(function() {
         el: '#app',
         data: {
             type: 'column2d',
-            width: '400',
-            height: '350',
+            width: '700',
+            height: '400',
             dataFormat: 'json',
             dataSource: dataSource
         },
-        methods: {
-            // Updates the chart data
-            updateData: function() {
-                const data = Object.assign({}, this.dataSource); //clones data
-                data.data[2].label = 'This Label is Updated';
-                data.data[2].value = this.getRandomNumber();
+        events: {
+            "beforeRender": function(evt, args) {
+                var controls = document.createElement('div'),
+                    chartRef = evt.sender;
 
-                data.data[3].label = 'This is updated as well';
-                data.data[3].value = this.getRandomNumber();
-                this.dataSource = data;
-            },
-            // Generates a random number between min and max
-            getRandomNumber: function() {
-                var max = 300,
-                    min = 50;
-                return Math.round(((max - min) * Math.random()) + min);
+                chartRef.getRandomNumber = function() {
+                    var max = 300,
+                        min = 50;
+                    return Math.round(((max - min) * Math.random()) + min);
+                }
+                updateData = function() {
+
+                    //clones data
+                    var data = Object.assign({}, chartRef.getJSONData());
+                    data.data[2].label = 'Canada';
+                    data.data[2].value = chartRef.getRandomNumber();
+
+                    data.data[3].label = 'Iran';
+                    data.data[3].value = chartRef.getRandomNumber();
+                    chartRef.setJSONData(data);
+                };
+                controls.innerHTML = '<button style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;" onClick="updateData()" >Update chart data</button>';
+                controls.style.cssText = 'text-align: center; width: 100%;';
+                args.container.appendChild(controls);
             }
         },
     });
@@ -120,7 +128,7 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 ## Update Chart Attributes
 
-A chart, configured to update the **chart caption** and **sub-caption** alignment dynamically, is shown below (click any one of the radio buttons shown below the chart to change the caption and sub-caption alignment):
+A chart, configured to update the **chart caption**, **sub-caption** alignment and chart **background** dynamically, is shown below (click any one of the buttons shown below the chart to change the chart background and caption, sub-caption alignment):
 
 {% embed_chart configure-charts-using-react-example-2.js %}
 
@@ -187,12 +195,54 @@ FusionCharts.ready(function() {
             dataFormat: 'json',
             dataSource: dataSource
         },
-        methods:{
-            // Changes chart background
-            changeBackground: function(){
-                const data = Object.assign({}, this.dataSource); //copy of object
-                data.chart.bgColor = '#efefef';
-                this.dataSource = data;
+        events: {
+            "beforeRender": function(evt, args) {
+                var chartRef = evt.sender;
+
+                chartRef.originalData = JSON.parse(JSON.stringify(chartRef.getJSONData()));
+
+                chartRef.changeBackground = function() {
+                    var data = chartRef.getJSONData(); //copy of object
+                    data.chart.bgColor = '#efefef';
+                    chartRef.setJSONData(data);
+                };
+
+                // Resets all the chart data to it's initial verison
+                chartRef.resetAttr = function() {
+                    chartRef.setJSONData(chartRef.originalData);
+                };
+
+                // Makes the caption text left aligned
+                chartRef.makeCaptionLeft = function() {
+                    var data = chartRef.getJSONData();
+                    data.chart.captionAlignment = 'left';
+                    chartRef.setJSONData(data);
+                };
+
+
+                var btnContainer = document.createElement('div'),
+                    str;
+
+                // buttons 
+                str = '<button id="bgColorBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Change Chart Background</button>&nbsp&nbsp';
+                str += '<button id="captionAlignBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Make Caption Text Left-Aligned</button>&nbsp&nbsp';
+                str += '<button id="resetAttrBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Reset Attributes</button>';
+
+                btnContainer.style.cssText = "text-align: center; width: 100%; margin: 10px;";
+                btnContainer.innerHTML = str;
+                //button attachment
+                args.container.parentNode.insertBefore(btnContainer, args.container.nextSibling);
+            },
+
+            "renderComplete": function(evt, args) {
+                var chartRef = evt.sender,
+                    bgColorBtn = document.getElementById('bgColorBtn'),
+                    captionAlignBtn = document.getElementById('captionAlignBtn'),
+                    resetAttrBtn = document.getElementById('resetAttrBtn');
+
+                bgColorBtn.onclick = chartRef.changeBackground;
+                captionAlignBtn.onclick = chartRef.makeCaptionLeft;
+                resetAttrBtn.onclick = chartRef.resetAttr;
             }
         }
     });

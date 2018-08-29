@@ -1,7 +1,6 @@
 {
     type: 'column2d',
     renderAt: 'chart-container',
-    
     width: '500',
     height: '300',
     dataFormat: 'json',
@@ -12,6 +11,8 @@
             "xaxisname": "Quarter",
             "yaxisname": "Amount (In USD)",
             "numberprefix": "$",
+            "divlineColor": "#999999",
+            "divLineIsDashed": "1",
             "theme": "fusion"
         },
         "data": [{
@@ -30,7 +31,7 @@
         "trendlines": [{
             "line": [{
                 "startvalue": "175000",
-                "color": "#1aaf5d",
+                "color": "#29C3BE",
                 "displayvalue": "Target - $175K"
             }]
         }]

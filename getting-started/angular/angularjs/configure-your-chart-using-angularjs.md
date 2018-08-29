@@ -108,16 +108,32 @@ $scope.dataSource = {
     ]
 };
 
-let getRandomNumber = function() {
-    var max = 290,
-        min = 30;
-    return Math.round(((max - min) * Math.random()) + min);
-}
+events: {
+    "beforeRender": function(evt, args) {
+        var controls = document.createElement('div'),
+            chartRef = evt.sender;
 
-$scope.updateMyChartData = function() {
-    $scope.dataSource.data[2].value = getRandomNumber();
-    $scope.dataSource.data[3].value = getRandomNumber();
-};
+        chartRef.getRandomNumber = function() {
+            var max = 300,
+                min = 50;
+            return Math.round(((max - min) * Math.random()) + min);
+        }
+        updateData = function() {
+
+            //clones data
+            var data = Object.assign({}, chartRef.getJSONData());
+            data.data[2].label = 'Canada';
+            data.data[2].value = chartRef.getRandomNumber();
+
+            data.data[3].label = 'Iran';
+            data.data[3].value = chartRef.getRandomNumber();
+            chartRef.setJSONData(data);
+        };
+        controls.innerHTML = '<button style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;" onClick="updateData()" >Update chart data</button>';
+        controls.style.cssText = 'text-align: center; width: 100%;';
+        args.container.appendChild(controls);
+    }
+}
 ```
 
 Now, use the `fusioncharts` directive in a template. The HTML template is given below:
@@ -135,7 +151,7 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 ## Update Chart Attributes
 
-A chart, configured to update the **chart caption** and **sub-caption** alignment dynamically, is shown below (click any one of the radio buttons shown below the chart to change the caption and sub-caption alignment):
+A chart, configured to update the **chart caption**, **sub-caption** alignment and chart **background** dynamically, is shown below (click any one of the buttons shown below the chart to change the chart background and caption, sub-caption alignment):
 
 {% embed_chart configure-charts-using-react-example-2.js %}
 
@@ -228,13 +244,56 @@ $scope.dataSource = {
     ]
 };
 
-$scope.changeBackgroundColor = function() {
-    $scope.dataSource.chart.bgColor = "#efefef";
-};
+events: {
+    "beforeRender": function(evt, args) {
+        var chartRef = evt.sender;
 
-$scope.changeCaptionTextAlignment = function() {
-    $scope.dataSource.chart.captionAlignment = "left";
-};
+        chartRef.originalData = JSON.parse(JSON.stringify(chartRef.getJSONData()));
+
+        chartRef.changeBackground = function() {
+            var data = chartRef.getJSONData(); //copy of object
+            data.chart.bgColor = '#efefef';
+            chartRef.setJSONData(data);
+        };
+
+        // Resets all the chart data to it's initial verison
+        chartRef.resetAttr = function() {
+            chartRef.setJSONData(chartRef.originalData);
+        };
+
+        // Makes the caption text left aligned
+        chartRef.makeCaptionLeft = function() {
+            var data = chartRef.getJSONData();
+            data.chart.captionAlignment = 'left';
+            chartRef.setJSONData(data);
+        };
+
+
+        var btnContainer = document.createElement('div'),
+            str;
+
+        // buttons 
+        str = '<button id="bgColorBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Change Chart Background</button>&nbsp&nbsp';
+        str += '<button id="captionAlignBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Make Caption Text Left-Aligned</button>&nbsp&nbsp';
+        str += '<button id="resetAttrBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Reset Attributes</button>';
+
+        btnContainer.style.cssText = "text-align: center; width: 100%; margin: 10px;";
+        btnContainer.innerHTML = str;
+        //button attachment
+        args.container.parentNode.insertBefore(btnContainer, args.container.nextSibling);
+    },
+
+    "renderComplete": function(evt, args) {
+        var chartRef = evt.sender,
+            bgColorBtn = document.getElementById('bgColorBtn'),
+            captionAlignBtn = document.getElementById('captionAlignBtn'),
+            resetAttrBtn = document.getElementById('resetAttrBtn');
+
+        bgColorBtn.onclick = chartRef.changeBackground;
+        captionAlignBtn.onclick = chartRef.makeCaptionLeft;
+        resetAttrBtn.onclick = chartRef.resetAttr;
+    }
+}
 ```
 
 Now, use the `fusioncharts` directive in a template. The HTML template is given below:
@@ -246,7 +305,8 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
     type="column2d",
     datasource="{{dataSource}}"
     ></div>
-<p><a class="btn btn-default" ng-click="changeBackgroundColor()">Change chart background color</a>
-<a class="btn btn-default" ng-click="changeCaptionTextAlignment()">Make Caption text left-aligned</a>
+<p><a class="btn btn-default" ng-click="bgColorBtn()">Change chart background color</a>
+<a class="btn btn-default" ng-click="captionAlignBtn()">Make Caption text left-aligned</a>
+<a class="btn btn-default" ng-click="resetAttrBtn()">Reset Attributes</a>
 </p>
 ```
