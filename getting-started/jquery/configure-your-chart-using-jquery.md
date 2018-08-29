@@ -135,7 +135,7 @@ The HTML template of the above sample is shown below:
 
 ## Update Chart Attributes
 
-A chart, configured to update the **chart caption** and **sub-caption** alignment dynamically, is shown below (click any one of the radio buttons shown below the chart to change the caption and sub-caption alignment):
+A chart, configured to update the **chart caption**, **sub-caption** alignment and chart **background** dynamically, is shown below (click any one of the buttons shown below the chart to change the chart background and caption, sub-caption alignment):
 
 {% embed_chart configure-charts-using-react-example-2.js %}
 
