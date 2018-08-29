@@ -305,7 +305,8 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
     type="column2d",
     datasource="{{dataSource}}"
     ></div>
-<p><a class="btn btn-default" ng-click="changeBackgroundColor()">Change chart background color</a>
-<a class="btn btn-default" ng-click="changeCaptionTextAlignment()">Make Caption text left-aligned</a>
+<p><a class="btn btn-default" ng-click="bgColorBtn()">Change chart background color</a>
+<a class="btn btn-default" ng-click="captionAlignBtn()">Make Caption text left-aligned</a>
+<a class="btn btn-default" ng-click="resetAttrBtn()">Reset Attributes</a>
 </p>
 ```
