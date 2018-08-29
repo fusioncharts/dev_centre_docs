@@ -2,37 +2,16 @@
     type: 'scrollstackedcolumn2d',
     dataFormat: 'json',
     renderAt: 'chart-container',
-    width: '550',
-    height: '350',
+    width: '700',
+    height: '400',
     dataSource: {
         "chart": {
+            "theme": "fusion",
             "caption": "Sales Comparison",
             "subCaption": "(2016 to 2017)",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
-            "subcaptionFontBold": "0",
             "xaxisname": "Month",
             "yaxisname": "Revenue",
-            "showvalues": "0",
             "numberprefix": "$",
-            "legendBgAlpha": "0",
-            "legendBorderAlpha": "0",
-            "legendShadow": "0",
-            "showborder": "0",
-            "bgcolor": "#ffffff",
-            "showalternatehgridcolor": "0",
-            "showplotborder": "0",
-            "showcanvasborder": "0",
-            "legendshadow": "0",
-            "plotgradientcolor": "",
-            "showCanvasBorder": "0",
-            "showAxisLines": "0",
-            "showAlternateHGridColor": "0",
-            "divlineAlpha": "100",
-            "divlineThickness": "1",
-            "divLineIsDashed": "1",
-            "divLineDashLen": "1",
-            "divLineGapLen": "1",
             "lineThickness": "3",
             "flatScrollBars": "1",
             "scrollheight": "10",
@@ -92,7 +71,6 @@
         }],
         "dataset": [{
             "seriesname": "Products",
-            "color": "008ee4",
             "data": [{
                 "value": "27400"
             }, {
@@ -144,7 +122,6 @@
             }]
         }, {
             "seriesname": "Services",
-            "color": "f8bd19",
             "data": [{
                 "value": "10000"
             }, {

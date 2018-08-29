@@ -1,32 +1,15 @@
 {
     type: 'msline',
     renderAt: 'chart-container',
-    width: '500',
-    height: '300',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
+            "theme": "fusion",
             "caption": "Number of visitors last week",
             "subCaption": "Bakersfield Central vs Los Angeles Topanga",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
-            "subcaptionFontBold": "0",
-            "paletteColors": "#0075c2,#1aaf5d",
-            "bgcolor": "#ffffff",
-            "showBorder": "0",
-            "showShadow": "0",
-            "showCanvasBorder": "0",
-            "usePlotGradientColor": "0",
-            "legendBorderAlpha": "0",
-            "legendShadow": "0",
-            "showAxisLines": "0",
-            "showAlternateHGridColor": "0",
-            "divlineThickness": "1",
-            "divLineIsDashed": "1",
-            "divLineDashLen": "1",
-            "divLineGapLen": "1",
-            "xAxisName": "Day",
-            "showValues": "0"
+            "xAxisName": "Day"
         },
         "categories": [{
             "category": [{
@@ -38,7 +21,7 @@
             }, {
                 "vline": "true",
                 "lineposition": "0",
-                "color": "#6baa01",
+                "color": "#62B58F",
                 "labelHAlign": "center",
                 "labelPosition": "0",
                 "label": "National holiday",
@@ -91,7 +74,7 @@
         "trendlines": [{
             "line": [{
                 "startvalue": "17022",
-                "color": "#6baa01",
+                "color": "#62B58F",
                 "valueOnRight": "1",
                 "displayvalue": "Average"
             }]

@@ -2,7 +2,6 @@
 title: Your First Chart in Angular using FusionCharts | FusionCharts
 description: This article outlines the steps to create your first chart, widget and map using the fusionCharts Angular component.
 heading: Your First Chart in Angular using FusionCharts
-chartPresent: false
 ---
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and **angular-FusionCharts** component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-gauge-9), and a [map]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular#create-your-first-map-14).

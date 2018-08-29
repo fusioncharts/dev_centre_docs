@@ -43,33 +43,52 @@
     },
     events: {
         "beforeRender": function(evt, args) {
-            var rdoCont = document.createElement('div'),
-                str = 'Change Caption Alignment: <input id="left" type="radio" name="captionalignment" > Left </input><input id="center" type="radio" name="captionalignment" checked="1"> Center </input><input id="right" type="radio" name="captionalignment"> Right </input>';
-            rdoCont.setAttribute('id', 'rdoCont');
-            rdoCont.style.cssText = "width: 600px; margin: 10px; margin-left: 3px;";
+            var chartRef = evt.sender;
 
-            rdoCont.innerHTML = str;
+            chartRef.originalData = JSON.parse(JSON.stringify(chartRef.getJSONData()));
 
-            //Display container div and write table
-            args.container.parentNode.insertBefore(rdoCont, args.container.nextSibling);
+            chartRef.changeBackground = function() {
+                var data = chartRef.getJSONData(); //copy of object
+                data.chart.bgColor = '#efefef';
+                chartRef.setJSONData(data);
+            };
+
+            // Resets all the chart data to it's initial verison
+            chartRef.resetAttr = function() {
+                chartRef.setJSONData(chartRef.originalData);
+            };
+
+            // Makes the caption text left aligned
+            chartRef.makeCaptionLeft = function() {
+                var data = chartRef.getJSONData();
+                data.chart.captionAlignment = 'left';
+                chartRef.setJSONData(data);
+            };
+
+
+            var btnContainer = document.createElement('div'),
+                str;
+
+            // buttons 
+            str = '<button id="bgColorBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Change Chart Background</button>&nbsp&nbsp';
+            str += '<button id="captionAlignBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Make Caption Text Left-Aligned</button>&nbsp&nbsp';
+            str += '<button id="resetAttrBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Reset Attributes</button>';
+
+            btnContainer.style.cssText = "text-align: center; width: 100%; margin: 10px;";
+            btnContainer.innerHTML = str;
+            //button attachment
+            args.container.parentNode.insertBefore(btnContainer, args.container.nextSibling);
         },
+
         "renderComplete": function(evt, args) {
-            var val,
-                radElem,
-                chartRef = evt.sender,
-                radio = document.getElementsByTagName('input');
-            for (var i = 0; i < radio.length; i++) {
-                radElem = radio[i];
-                if (radElem.type === 'radio') {
-                    radElem.onclick = function() {
-                        val = this.getAttribute('id');
-                        val && chartRef.setChartAttribute({
-                            "captionAlignment": val
-                        });
-                    };
-                }
-            }
+            var chartRef = evt.sender,
+                bgColorBtn = document.getElementById('bgColorBtn'),
+                captionAlignBtn = document.getElementById('captionAlignBtn'),
+                resetAttrBtn = document.getElementById('resetAttrBtn');
+
+            bgColorBtn.onclick = chartRef.changeBackground;
+            captionAlignBtn.onclick = chartRef.makeCaptionLeft;
+            resetAttrBtn.onclick = chartRef.resetAttr;
         }
     }
 }
-

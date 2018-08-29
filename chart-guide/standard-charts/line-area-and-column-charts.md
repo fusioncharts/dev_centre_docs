@@ -132,9 +132,9 @@ Given below is the JSON code to include trend-line on your chart:
 	"data": [],
 	"trendlines": [{
 	    "line": [{
-	        "startvalue": "700000",
-	        "color": "#1aaf5d",
-	        "displayvalue": "Monthly Target"
+			"startvalue": "175000",
+			"color": "#29C3BE",
+			"displayvalue": "Target - $175K"
 	    }]
 	}]
 }
@@ -180,6 +180,7 @@ Given below is the JSON code to include a vertical line on your chart:
 	    "line": [{
 	        "vline": "true",
     		"label": "Weekend Start",
+        	"color": "#29C3BE",
     		"linePosition": "0.7"
 	    }]
 	}]
