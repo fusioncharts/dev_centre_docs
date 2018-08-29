@@ -74,7 +74,7 @@
             str += '<button id="captionAlignBtn" style="background-color: #6957da; border: none; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">MAKE CAPTION TEXT LEFT-ALIGNED</button>&nbsp&nbsp';
             str += '<button id="resetAttrBtn" style="background-color: #6957da; border: none; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">RESET ATTRIBUTES</button>';
 
-            btnContainer.style.cssText = "width: 100%; margin: 10px;";
+            btnContainer.style.cssText = "text-align: center; width: 100%; margin: 10px;";
             btnContainer.innerHTML = str;
             //button attachment
             args.container.parentNode.insertBefore(btnContainer, args.container.nextSibling);
