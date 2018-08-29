@@ -42,24 +42,32 @@
         }]
     },
     events: {
-        // Updates the chart data
-        updateData: function() {
-            const data = Object.assign({}, this.dataSource); //clones data
-            data.data[2].label = 'This Label is Updated';
-            data.data[2].value = this.getRandomNumber();
+        "beforeRender": function(evt, args) {
+            var controls = document.createElement('div'),
+                chartRef = evt.sender;
 
-            data.data[3].label = 'This is updated as well';
-            data.data[3].value = this.getRandomNumber();
-            this.dataSource = data;
-        },
-        // Generates a random number between min and max
-        getRandomNumber: function() {
-            var max = 300,
-                min = 50;
-            return Math.round(((max - min) * Math.random()) + min);
-        },
-        controls.innerHTML = '<button onClick="updateData()" >Update chart data</button>';
-        controls.style.cssText = 'text-align: center; width: 400px; padding-left: 200px;';
-        args.container.appendChild(controls);
+            chartRef.getRandomNumber = function() {
+                var max = 300,
+                    min = 50;
+                return Math.round(((max - min) * Math.random()) + min);
+            }
+
+            updateData = function() {
+
+                //clones data
+                var data = Object.assign({}, chartRef.getJSONData());
+                data.data[2].label = 'This Label is Updated';
+                data.data[2].value = chartRef.getRandomNumber();
+
+                data.data[3].label = 'This is updated as well';
+                data.data[3].value = chartRef.getRandomNumber();
+                chartRef.setJSONData(data);
+            };
+
+
+            controls.innerHTML = '<button onClick="updateData()" >Update chart data</button>';
+            controls.style.cssText = 'text-align: center; width: 400px; padding-left: 200px;';
+            args.container.appendChild(controls);
+        }
     }
 }
