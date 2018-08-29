@@ -56,10 +56,10 @@
 
                 //clones data
                 var data = Object.assign({}, chartRef.getJSONData());
-                data.data[2].label = 'This Label is Updated';
+                data.data[2].label = 'Canada';
                 data.data[2].value = chartRef.getRandomNumber();
 
-                data.data[3].label = 'This is updated as well';
+                data.data[3].label = 'Iran';
                 data.data[3].value = chartRef.getRandomNumber();
                 chartRef.setJSONData(data);
             };
