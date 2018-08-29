@@ -52,7 +52,6 @@
                     min = 50;
                 return Math.round(((max - min) * Math.random()) + min);
             }
-
             updateData = function() {
 
                 //clones data
@@ -64,12 +63,12 @@
                 data.data[3].value = chartRef.getRandomNumber();
                 chartRef.setJSONData(data);
             };
-
-
             controls.innerHTML = '<button onClick="updateData()" >Update chart data</button>';
             controls.style.cssText = 'text-align: center; width: 400px; padding-left: 200px;';
-            clicks.style.cssText = ' background-color: #6957da; border: none; display: inline-block; color: white; padding: 15px 32px;';
+            clicks.innerHTML = '<button onClick="updateData()" >Update chart data</button>';
+            clicks.style.cssText = 'background-color: #6957da; border: none; display: inline-block; color: white; padding: 15px 32px;';
             args.container.appendChild(controls);
+            args.container.appendChild(clicks);
         }
     }
 }
