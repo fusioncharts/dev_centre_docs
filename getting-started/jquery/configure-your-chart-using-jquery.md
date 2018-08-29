@@ -65,63 +65,44 @@ In this step, we will create an instance of the chart type as **column2d**, set 
 The code to render a chart using `require` is given below:
 
 ```
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
+var FusionCharts = require('fusioncharts');
+var Charts = require('fusioncharts/fusioncharts.charts');
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+var $ = require('jquery');
+var jQFc = require('jquery-fusioncharts');
 
-ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+Charts(FusionCharts);
+FusionTheme(FusionCharts);
 
-const chartConfigs = {
+var dataSource = {/* see data tab */ };
+// Using FusionChart's jQuery method insertFusionCharts() to create FusionCharts.
+$('#chart-container').insertFusionCharts({
   type: 'column2d',
   width: 600,
   height: 400,
   dataFormat: 'json',
-  dataSource: {/* see data tab */ },
-};
+  dataSource: dataSource
+});
 
-class Chart extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = chartConfigs;
-
-    this.updateData = this.updateData.bind(this);
-  }
-
-  // This function generates random number.
-  getRandomNumber() {
-    var max = 290, min = 30;
-    return Math.round(((max - min) * Math.random()) + min);
-  }
-
-  // Handler for update button.
-  // Randomly updates the values of the chart.
-  updateData() {
-    var prevDs = Object.assign({}, this.state.dataSource);
-    prevDs.data[2].value = this.getRandomNumber();
-    prevDs.data[3].value = this.getRandomNumber();
-    this.setState({
-      dataSource: prevDs,
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <ReactFC {...this.state} />
-        <center><button className='btn btn-outline-secondary btn-sm' onClick={this.updateData}>Change Chart Data</button></center>
-      </div>
-    );
-  }
+// This function generates random number.
+function getRandomNumber() {
+  var max = 300, min = 50;
+  return Math.round(((max - min) * Math.random()) + min);
 }
 
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
+var btn = document.getElementById('update');
+
+// Handler for update button.
+// Randomly updates the values of the chart.
+btn.addEventListener('click', function() {
+  var dataArrayNew = $.extend({}, dataSource);
+  dataArrayNew.data[2].value = getRandomNumber();
+  dataArrayNew.data[3].value = getRandomNumber();
+  $('#chart-container').updateFusionCharts({
+    dataFormat: 'json',
+    dataSource: dataArrayNew
+  });
+});
 ```
 
 The HTML template of the above sample is shown below:
