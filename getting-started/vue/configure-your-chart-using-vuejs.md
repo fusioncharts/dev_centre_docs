@@ -76,8 +76,8 @@ FusionCharts.ready(function() {
         el: '#app',
         data: {
             type: 'column2d',
-            width: '400',
-            height: '350',
+            width: '700',
+            height: '400',
             dataFormat: 'json',
             dataSource: dataSource
         },
