@@ -63,7 +63,7 @@
                 chartRef.setJSONData(data);
             };
             controls.innerHTML = '<button onClick="updateData()" >Update chart data</button>';
-            controls.style.cssText = 'text-align: center; width: 400px; padding-left: 300px;';
+            controls.style.cssText = 'text-align: center; width: 700px; padding-left: 350px;';
             args.container.appendChild(controls);
         }
     }
