@@ -70,9 +70,9 @@
                 str;
 
             // buttons 
-            str = '<button id="bgColorBtn" style="background-color: #6957da; border: none; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">CHANGE CHART BACKGROUND</button>&nbsp&nbsp';
-            str += '<button id="captionAlignBtn" style="background-color: #6957da; border: none; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">MAKE CAPTION TEXT LEFT-ALIGNED</button>&nbsp&nbsp';
-            str += '<button id="resetAttrBtn" style="background-color: #6957da; border: none; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">RESET ATTRIBUTES</button>';
+            str = '<button id="bgColorBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Change Chart Background</button>&nbsp&nbsp';
+            str += '<button id="captionAlignBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Make Caption Text Left-Aligned</button>&nbsp&nbsp';
+            str += '<button id="resetAttrBtn" style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;">Reset Attributes</button>';
 
             btnContainer.style.cssText = "text-align: center; width: 100%; margin: 10px;";
             btnContainer.innerHTML = str;

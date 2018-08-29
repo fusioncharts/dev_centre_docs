@@ -62,7 +62,7 @@
                 data.data[3].value = chartRef.getRandomNumber();
                 chartRef.setJSONData(data);
             };
-            controls.innerHTML = '<button style="background-color: #6957da; border: none; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;" onClick="updateData()" >Update chart data</button>';
+            controls.innerHTML = '<button style="background-color: #6957da; border: none; border-radius: 3px; color: white; padding: 4px 12px; text-align: center; cursor: pointer; outline: none; text-decoration: none; display: inline-block; font-size: 14px;" onClick="updateData()" >Update chart data</button>';
             controls.style.cssText = 'text-align: center; width: 100%;';
             args.container.appendChild(controls);
         }
