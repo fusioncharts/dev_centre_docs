@@ -64,98 +64,69 @@ The JSON data to render the above chart is given below:
 The full code of the above sample is given below:
 
 ```
-// Import React
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
-// Import Licenced version of FusionCharts
-import FusionCharts from 'fusioncharts';
-import Charts from 'fusioncharts/fusioncharts.charts';
+import FusionCharts from 'fusioncharts/core';
+import Column2D from 'fusioncharts/viz/column2d';
 import ReactFC from 'react-fusioncharts';
-import FusionTime from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
-// Provide FusionCharts core and other modules to resolve 
-ReactFC.fcRoot(FusionCharts, Charts, FusionTime);
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
-class App extends React.Component {
-    constructor(props) {
-        super(props);
+const chartConfigs = {
+  type: 'column2d',
+  width: 600,
+  height: 400,
+  dataFormat: 'json',
+  dataSource: {/* see data tab */ },
+};
 
-        this.state = {
-            type: 'column2d',
-            width: '700',
-            height: '400',
-            dataFormat: 'json',
-            dataSource: {
-                // Chart Configuration
-                "chart": {
-                    "caption": "Countries With Most Oil Reserves [2017-18]",
-                    "subCaption": "In MMbbl = One Million barrels",
-                    "xAxisName": "Country",
-                    "yAxisName": "Reserves (MMbbl)",
-                    "numberSuffix": "K",
-                    "theme": "fusion",
-                },
-                // Chart Data
-                "data": [{
-                    "label": "Venezuela",
-                    "value": "290"
-                }, {
-                    "label": "Saudi",
-                    "value": "260"
-                }, {
-                    "label": "Canada",
-                    "value": "180"
-                }, {
-                    "label": "Iran",
-                    "value": "140"
-                }, {
-                    "label": "Russia",
-                    "value": "115"
-                }, {
-                    "label": "UAE",
-                    "value": "100"
-                }, {
-                    "label": "US",
-                    "value": "30"
-                }, {
-                    "label": "China",
-                    "value": "30"
-                }]
-            },
-        };
+class Chart extends Component {
+  constructor(props) {
+    super(props);
 
-        this.updateData = this.updateData.bind(this);
-    }
+    this.state = chartConfigs;
 
-    // This function generates random number.
-    getRandomNumber() {
-        var max = 290,
-            min = 30;
-        return Math.round(((max - min) * Math.random()) + min);
-    }
+    this.updateData = this.updateData.bind(this);
+  }
 
-    // Handler for update button.
-    // Randomly updates the values of the chart.
-    updateData() {
-        const prevDs = Object.assign({}, this.state.dataSource);
-        prevDs.data[2].value = this.getRandomNumber();
-        prevDs.data[3].value = this.getRandomNumber();
-        this.setState({
-            dataSource: prevDs,
-        });
-    }
+  // This function generates random number.
+  getRandomNumber() {
+    var max = 290, min = 30;
+    return Math.round(((max - min) * Math.random()) + min);
+  }
+
+  // Handler for update button.
+  // Randomly updates the values of the chart.
+  updateData() {
+    var prevDs = Object.assign({}, this.state.dataSource);
+    prevDs.data[2].value = this.getRandomNumber();
+    prevDs.data[3].value = this.getRandomNumber();
+    this.setState({
+      dataSource: prevDs,
+    });
+  }
+
+  render() {
+    return (
+      <div>
+        <ReactFC {...this.state} />
+        <center><button className='btn btn-outline-secondary btn-sm' onClick={this.updateData}>Change Chart Data</button></center>
+      </div>
+    );
+  }
 }
 
-ReactDOM.render( <
-    App / > ,
-    document.getElementById('root'),
+ReactDOM.render(
+  <Chart />,
+  document.getElementById('root'),
 );
+
 ```
 
 ## Update Chart Attributes
 
-A chart, configured to update the **chart caption** and **sub-caption** alignment dynamically, is shown below (click any one of the radio buttons shown below the chart to change the caption and sub-caption alignment):
+A chart, configured to update the **chart caption**, **sub-caption** alignment and chart **background** dynamically, is shown below (click any one of the buttons shown below the chart to change the chart background and caption, sub-caption alignment):
 
 {% embed_chart configure-charts-using-react-example-2.js %}
 
@@ -204,107 +175,93 @@ The JSON data to render the above chart is given below:
 The full code of the above sample is given below:
 
 ```
-import React from 'react';
+import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts';
-import Charts from 'fusioncharts/fusioncharts.charts';
+import FusionCharts from 'fusioncharts/core';
+import Column2D from 'fusioncharts/viz/column2d';
 import ReactFC from 'react-fusioncharts';
-import FusionTime from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
-ReactFC.fcRoot(FusionCharts, Charts, FusionTime);
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
-class App extends React.Component {
+const chartConfigs = {
+    type: 'column2d',
+    width: 700,
+    height: 400,
+    dataFormat: 'json',
+    dataSource: { /* see data tab */ },
+};
+
+class Chart extends Component {
     constructor(props) {
         super(props);
 
         this.state = {
-        type: 'column2d',
-        width: '700',
-        height: '400',
-        dataFormat: 'json',
-        dataSource: {
-                // Chart Configuration
-                "chart": {
-                    "caption": "Countries With Most Oil Reserves [2017-18]",
-                    "subCaption": "In MMbbl = One Million barrels",
-                    "xAxisName": "Country",
-                    "yAxisName": "Reserves (MMbbl)",
-                    "numberSuffix": "K",
-                    "theme": "fusion",
-                },
-                // Chart Data
-                "data": [{
-                    "label": "Venezuela",
-                    "value": "290"
-                }, {
-                    "label": "Saudi",
-                    "value": "260"
-                }, {
-                    "label": "Canada",
-                    "value": "180"
-                }, {
-                    "label": "Iran",
-                    "value": "140"
-                }, {
-                    "label": "Russia",
-                    "value": "115"
-                }, {
-                    "label": "UAE",
-                    "value": "100"
-                }, {
-                    "label": "US",
-                    "value": "30"
-                }, {
-                    "label": "China",
-                    "value": "30"
-                }]
-            },
-        };
+            chart: {}
+        }
 
+        this.renderComplete = this.renderComplete.bind(this);
         this.changeBackgroundColor = this.changeBackgroundColor.bind(this);
         this.changeCaptionTextAlignment = this.changeCaptionTextAlignment.bind(this);
+        this.resetChart = this.resetChart.bind(this);
+    }
+
+    // Called by FC-React component to return the rendered chart
+    renderComplete(chart) {
+        this.state.chart = chart;
     }
 
     // Handler for 'Change Background' button.
     // Changes the chart background color.
     changeBackgroundColor() {
-        const prevDs = Object.assign({}, this.dataSource);
-        prevDs.chart.bgColor = '#efefef';
-        this.setState({
-            dataSource: prevDs,
-        });
+        this.state.chart.setChartAttribute('bgColor', '#efefef');
     }
 
     // Handler for 'Change CaptionAlignment' button.
     // Changes the caption alignment to left.
     changeCaptionTextAlignment() {
-        const prevDs = Object.assign({}, this.dataSource);
-        prevDs.chart.captionAlignment = 'left';
-        this.setState({
-            dataSource: prevDs,
-        });
+        this.state.chart.setChartAttribute('captionAlignment', 'left');
+    }
+
+    // Handler for 'Reset' button.
+    // Resets the chart to the original version.
+    resetChart() {
+        this.state.chart.setChartAttribute('bgColor', null);
+        this.state.chart.setChartAttribute('captionAlignment', null);
     }
 
     render() {
-        return (
-            <div>
-                <ReactFC {...this.state} />
-                <br />
-                <br />
-                <center>
-                    <form>Change Caption Alignment
-                        <input type="radio" name="Left" value="male" checked> Left<br>
-                        <input type="radio" name="Center" value="female"> Center<br>
-                        <input type="radio" name="Right" value="other"> Right  
-                    </form> 
-                </center>
-            </div>
+        return ( <
+            div >
+            <
+            ReactFC { ...chartConfigs
+            }
+            onRender = {
+                this.renderComplete
+            }
+            /> <
+            center >
+            <
+            button className = 'btn btn-outline-secondary btn-sm'
+            onClick = {
+                this.changeBackgroundColor
+            } > Change Background < /button> <
+            button className = 'btn btn-outline-secondary btn-sm'
+            onClick = {
+                this.changeCaptionTextAlignment
+            } > Change Caption Alignment < /button> <
+            button className = 'btn btn-outline-secondary btn-sm'
+            onClick = {
+                this.resetChart
+            } > Reset < /button> <
+            /center> <
+            /div>
         );
     }
 }
 
-ReactDOM.render(
-    <App />,
+ReactDOM.render( <
+    Chart / > ,
     document.getElementById('root'),
 );
 ```

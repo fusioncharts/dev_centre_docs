@@ -65,56 +65,72 @@ In this step, we will create an instance of the chart type as **column2d**, set 
 The code to render a chart using `require` is given below:
 
 ```
-let FusionCharts = require('fusioncharts');
-let Charts = require('fusioncharts/fusioncharts.charts');
-let FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
-let $ = require('jquery');
-let jQFc = require('jquery-fusioncharts');
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import FusionCharts from 'fusioncharts/core';
+import Column2D from 'fusioncharts/viz/column2d';
+import ReactFC from 'react-fusioncharts';
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
-Charts(FusionCharts);
-FusionTheme(FusionCharts);
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
-FusionCharts.ready(function() {
-    var dataSource = { /* see data tab */ };
-    var btn = document.getElementById('update');
+const chartConfigs = {
+  type: 'column2d',
+  width: 600,
+  height: 400,
+  dataFormat: 'json',
+  dataSource: {/* see data tab */ },
+};
 
-    // This function generates random number.
-    function getRandomNumber() {
-        var max = 300,
-            min = 50;
-        return Math.round(((max - min) * Math.random()) + min);
-    }
+class Chart extends Component {
+  constructor(props) {
+    super(props);
 
-    // Handler for update button.
-    // Randomly updates the values of the chart.
-    btn.addEventListener('click', function() {
-        var dataArrayNew = $.extend({}, dataSource);
-        dataArrayNew.data[2].value = getRandomNumber();
-        dataArrayNew.data[3].value = getRandomNumber();
-        $('#chart-container').updateFusionCharts({
-            dataFormat: 'json',
-            dataSource: dataArrayNew
-        });
+    this.state = chartConfigs;
+
+    this.updateData = this.updateData.bind(this);
+  }
+
+  // This function generates random number.
+  getRandomNumber() {
+    var max = 290, min = 30;
+    return Math.round(((max - min) * Math.random()) + min);
+  }
+
+  // Handler for update button.
+  // Randomly updates the values of the chart.
+  updateData() {
+    var prevDs = Object.assign({}, this.state.dataSource);
+    prevDs.data[2].value = this.getRandomNumber();
+    prevDs.data[3].value = this.getRandomNumber();
+    this.setState({
+      dataSource: prevDs,
     });
+  }
 
-    // Using FusionChart's jQuery method insertFusionCharts() to create FusionCharts.
-    $('#chart-container').insertFusionCharts({
-        type: 'column2d',
-        width: '500',
-        height: '300',
-        dataFormat: 'json',
-        dataSource: dataSource
-    })
-});
+  render() {
+    return (
+      <div>
+        <ReactFC {...this.state} />
+        <center><button className='btn btn-outline-secondary btn-sm' onClick={this.updateData}>Change Chart Data</button></center>
+      </div>
+    );
+  }
+}
+
+ReactDOM.render(
+  <Chart />,
+  document.getElementById('root'),
+);
 ```
 
 The HTML template of the above sample is shown below:
 
 ```html
-<div id='chart-container'>
+<div id="chart-container">
     FusionCharts will render here
 </div>
-<center><button id='update' style="padding: 5px 10px; background: rgb(251, 251, 251);">Change Chart Data</button></center>
+<center><button id="update">Change Chart Data</button></center>
 ```
 
 ## Update Chart Attributes
@@ -170,49 +186,74 @@ In this step, we will create an instance of the chart type as **column2d**, set 
 The code to render a chart using `require` is given below:
 
 ```
-let FusionCharts = require('fusioncharts');
-let Charts = require('fusioncharts/fusioncharts.charts');
-let FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
-let $ = require('jquery');
-let jQFc = require('jquery-fusioncharts');
+var FusionCharts = require('fusioncharts');
+var Charts = require('fusioncharts/fusioncharts.charts');
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+var $ = require('jquery');
+var jQFc = require('jquery-fusioncharts');
 
 Charts(FusionCharts);
 FusionTheme(FusionCharts);
 
-FusionCharts.ready(function() {
-    var btn = document.getElementById('update');
-    var dataSource = { /* see data tab */ };
+var dataSource = {/* see data tab */ };
+var dataSourceOrg = JSON.parse(JSON.stringify(dataSource));
+// Using FusionChart's jQuery method insertFusionCharts() to create FusionCharts.
+$('#chart-container').insertFusionCharts({
+  type: 'column2d',
+  width: 600,
+  height: 400,
+  dataFormat: 'json',
+  dataSource: dataSource
+});
 
-    // Handler for 'Change Background' button.
-    // Changes the chart background color.
-    btn.addEventListener('click', function() {
-        var dataArrayNew = $.extend({}, dataSource);
-        dataArrayNew.chart.bgColor = '#efefef';
-        $('#chart-container').updateFusionCharts({
-            dataFormat: 'json',
-            dataSource: dataArrayNew
-        });
-    });
+var btnBG = document.getElementById('change-background');
+var btnCA = document.getElementById('change-caption-alignment');
+var btnReset = document.getElementById('reset-chart');
 
-    // Using FusionChart's jQuery method insertFusionCharts() to create FusionCharts.
-    $('#chart-container').insertFusionCharts({
-        type: 'column2d',
-        width: '500',
-        height: '300',
-        dataFormat: 'json',
-        dataSource: dataSource
-    })
+// Handler for 'Change Background' button.
+// Changes the chart background color.
+btnBG.addEventListener('click', function() {
+  var dataArrayNew = JSON.parse(JSON.stringify(dataSource));
+  dataArrayNew.chart.bgColor = '#efefef';
+  $('#chart-container').updateFusionCharts({
+      dataFormat: 'json',
+      dataSource: dataArrayNew
+  });
+});
+
+// Handler for 'Change Caption Alignment' button.
+// Moved the caption to the left.
+btnCA.addEventListener('click', function() {
+  var dataArrayNew = JSON.parse(JSON.stringify(dataSource));
+  dataArrayNew.chart.captionAlignment = 'left';
+  $('#chart-container').updateFusionCharts({
+      dataFormat: 'json',
+      dataSource: dataArrayNew
+  });
+});
+
+// Handler for 'Reset' button.
+// Resets the chart to the original version.
+btnReset.addEventListener('click', function() {
+  var dataArrayNew = JSON.parse(JSON.stringify(dataSourceOrg));
+  dataSource = JSON.parse(JSON.stringify(dataSourceOrg));
+  $('#chart-container').updateFusionCharts({
+      dataFormat: 'json',
+      dataSource: dataArrayNew
+  });
 });
 ```
 
 The HTML template of the above sample is shown below:
 
 ```html
-<div id='chart-container'>
+<div id="chart-container">
     FusionCharts will render here
 </div>
 <center>
-    <button id='update' style='padding: 5px 10px; margin: 0px 2px; background: rgb(251, 251, 251);'>Change Background</button>
+    <button id="change-background">Change Chart Background</button>
+    <button id="change-caption-alignment">Make Caption Text Left-Aligned</button>
+    <button id="reset-chart">Reset Attributes</button>
 </center>
 ```
 
