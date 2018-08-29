@@ -66,7 +66,7 @@
 
 
             controls.innerHTML = '<button onClick="updateData()" >Update chart data</button>';
-            controls.style.cssText = 'text-align: center; width: 400px; padding-left: 200px;';
+            controls.style.cssText = 'text-align: center; width: 400px; padding-left: 200px; background-color: #6957da; border: none; display: inline-block; color: white; padding: 15px 32px;';
             args.container.appendChild(controls);
         }
     }
