@@ -29,7 +29,7 @@
             "showchildlabels": "1",
             "algorithm": "sliceanddice",
             "slicingmode": "alternate",
-            "theme": "zune",
+            "theme": "fusion",
             "legendCaption": "Growth in sales - Compared to previous year"
         },
         "data": [{

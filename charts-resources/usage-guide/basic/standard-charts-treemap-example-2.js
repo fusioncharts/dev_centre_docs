@@ -1,8 +1,8 @@
 {
     type: 'treemap',
     renderAt: 'chart-container',
-    width: '550',
-    height: '550',
+    width: '650',
+    height: '650',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -26,7 +26,7 @@
             "legendCaptionFontSize": "10",
             "algorithm": "squarified",
             "caption": "Harry's SuperMart : Sales of mobile devices in last quarter",
-            "theme": "zune",
+            "theme": "fusion",
             "subcaption": "Analysis based on SAR values",
             "legendCaption": "Specific Absorption Rate (SAR) in W/kg"
         },
