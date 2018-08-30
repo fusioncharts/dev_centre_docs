@@ -1,8 +1,8 @@
 {
     type: 'treemap',
     renderAt: 'chart-container',
-    width: '550',
-    height: '350',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -29,7 +29,7 @@
             "legendaxisbordercolor": "bfbfbf",
             "subcaption": "Year Till Date",
             "legendCaption": "Growth in sales - Compared to previous year",
-            "theme": "zune"
+            "theme": "fusion"
         },
         "data": [{
             "label": "USA",

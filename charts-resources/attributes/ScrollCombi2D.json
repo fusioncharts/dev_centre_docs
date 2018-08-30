@@ -205,6 +205,7 @@
     },
     {
         "table": "Chart Message-related Attributes",
+        "path": "FusionCharts",
         "attrs": [
         	{
                 "description": "This attribute allows to set a custom font for all chart messages.",
@@ -648,7 +649,7 @@
                 "name": "dataInvalidMessageImageScale"
             }
         ],
-        "description": "These attributes let you set and configure custom chart messages, using text as well as images."
+        "description": "These attributes let you set and configure custom chart messages, using text as well as images. These attributes are supported in FusionCharts constructor (`FusionCharts({ })`)."
     },
     {
         "table": "Chart Titles and Axis Names",
