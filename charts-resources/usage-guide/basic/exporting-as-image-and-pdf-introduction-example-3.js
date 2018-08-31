@@ -13,7 +13,6 @@
             "xAxisName": "Country",
             "yAxisName": "Reserves (MMbbl)",
             "numberSuffix": "K",
-            "exportEnabled": "1",
             "theme": "fusion",
         },
         // Chart Data
