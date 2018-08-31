@@ -153,7 +153,7 @@ FusionCharts lets you export multiple charts in a single image at once, in diffe
 <div>
 <p>{% embed_chart exporting-as-image-and-pdf-introduction-example-3.js %}</p>
 <p>{% embed_chart exporting-as-image-and-pdf-introduction-example-4.js %}</p>
-<p>{% exporter.js %}</p>
+
 </div>
 
 The JSON data to render the above chart is given below:
