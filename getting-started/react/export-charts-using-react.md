@@ -11,6 +11,7 @@ In this section we will discuss how to:
 
 * [Export Charts as Image and PDF]({% site.baseurl %}/getting-started/react/export-charts-using-react#export-charts-as-image-and-pdf-1)
 * [Export Multiple Charts]({% site.baseurl %}/getting-started/react/export-charts-using-react#export-multiple-charts-2)
+* [Modes of Export]({% site.baseurl %}/getting-started/react/export-charts-using-react#modes-of-export-3)
 * [Export Chart Data]({% site.baseurl %}/getting-started/react/export-charts-using-react#export-chart-data-4)
 
 ## Export Charts as Image and PDF
@@ -487,7 +488,7 @@ ReactDOM.render(
 );
 ```
 
-### Modes of Export
+## Modes of Export
 
 FusionCharts Suite XT supports the following three modes of export:
 
