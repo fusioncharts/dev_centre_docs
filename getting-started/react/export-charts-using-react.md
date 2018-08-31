@@ -9,9 +9,9 @@ FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG 
 
 In this section we will discuss how to:
 
-* [Export Charts as Image and PDF]({% site.baseurl %}/getting-started/plain-javascript/export-charts-using-plain-javascript#export-charts-as-image-and-pdf-1)
-* Export Multiple Charts
-* [Export Chart Data]({% site.baseurl %}/getting-started/plain-javascript/export-charts-using-plain-javascript#export-chart-data-3)
+* [Export Charts as Image and PDF]({% site.baseurl %}/getting-started/react/export-charts-using-react#export-charts-as-image-and-pdf-1)
+* [Export Multiple Charts]({% site.baseurl %}/getting-started/react/export-charts-using-react#export-multiple-charts-2)
+* [Export Chart Data]({% site.baseurl %}/getting-started/react/export-charts-using-react#export-chart-data-4)
 
 ## Export Charts as Image and PDF
 
