@@ -10,6 +10,7 @@ FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG 
 In this section we will discuss how to:
 
 * [Export Charts as Image and PDF]({% site.baseurl %}/getting-started/plain-javascript/export-charts-using-plain-javascript#export-charts-as-image-and-pdf-1)
+* Export Multiple Charts
 * [Export Chart Data]({% site.baseurl %}/getting-started/plain-javascript/export-charts-using-plain-javascript#export-chart-data-3)
 
 ## Export Charts as Image and PDF
@@ -30,6 +31,462 @@ A column 2D chart with export enabled is shown below. Click the <span> ![image](
 
 {% embed_all exporting-as-image-and-pdf-introduction-example-1.js %}
 
+The JSON data to render the above chart is given below:
+
+```
+{
+    // Chart Configuration
+    "chart": {
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "exportEnabled": "1", //Export Your Chart
+        "theme": "fusion",
+    },
+    // Chart Data
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
+},
+```
+
+The full code of the above sample is given below:
+
+```
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import FusionCharts from 'fusioncharts/core';
+import Column2D from 'fusioncharts/viz/column2d';
+import ReactFC from 'react-fusioncharts';
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
+
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+
+const chartConfigs = {
+  type: 'column2d',
+  width: 700,
+  height: 400,
+  dataFormat: 'json',
+  dataSource: {
+    // Chart Configuration
+    "chart": {
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "exportEnabled": "1",
+        "theme": "fusion",
+    },
+    // Chart Data
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
+  },
+};
+
+class Chart extends Component {
+  render () {
+    return (
+      <ReactFC {...chartConfigs} />
+    )
+  }
+}
+
+ReactDOM.render(
+  <Chart />,
+  document.getElementById('root'),
+);
+```
+
+## Export Multiple Charts
+
+FusionCharts lets you export multiple charts in a single image at once, in different formats. In the sample given below, we have two charts-Column2D and Stacked Column2D chart.
+
+{% embed_all exporting-as-image-and-pdf-introduction-example-3.js %}
+
+The JSON data to render the above chart is given below:
+
+```
+{
+    data1: {
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion"
+        },
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    },
+    data2: {
+        "chart": {
+            "caption": "Yearly Energy Production Rate",
+            "subCaption": " Top 5 Developed Countries",
+            "numbersuffix": " TWh",
+            "showSum": "1",
+            "plotToolText": "$label produces <b>$dataValue</b> of energy from $seriesName",
+            "theme": "fusion"
+        },
+        "categories": [{
+            "category": [{
+                "label": "Canada"
+            }, {
+                "label": "China"
+            }, {
+                "label": "Russia"
+            }, {
+                "label": "Australia"
+            }, {
+                "label": "United States"
+            }, {
+                "label": "France"
+            }]
+        }],
+        "dataSet": [{
+            "seriesName": "Coal",
+            "data": [{
+                "value": "400"
+            }, {
+                "value": "830"
+            }, {
+                "value": "500"
+            }, {
+                "value": "420"
+            }, {
+                "value": "790"
+            }, {
+                "value": "380"
+            }]
+        }, {
+            "seriesName": "Hydro",
+            "data": [{
+                "value": "350"
+            }, {
+                "value": "620"
+            }, {
+                "value": "410"
+            }, {
+                "value": "370"
+            }, {
+                "value": "720"
+            }, {
+                "value": "310"
+            }]
+        }, {
+            "seriesName": "Nuclear",
+            "data": [{
+                "value": "210"
+            }, {
+                "value": "400"
+            }, {
+                "value": "450"
+            }, {
+                "value": "180"
+            }, {
+                "value": "570"
+            }, {
+                "value": "270"
+            }]
+        }, {
+            "seriesName": "Gas",
+            "data": [{
+                "value": "180"
+            }, {
+                "value": "330"
+            }, {
+                "value": "230"
+            }, {
+                "value": "160"
+            }, {
+                "value": "440"
+            }, {
+                "value": "350"
+            }]
+        }, {
+            "seriesName": "Oil",
+            "data": [{
+                "value": "60"
+            }, {
+                "value": "200"
+            }, {
+                "value": "200"
+            }, {
+                "value": "50"
+            }, {
+                "value": "230"
+            }, {
+                "value": "150"
+            }]
+        }]
+    }
+}
+```
+
+The full code of the above sample is given below:
+
+```
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import FusionCharts from 'fusioncharts/core';
+import Column2D from 'fusioncharts/viz/column2d';
+import StackedColumn2D from 'fusioncharts/viz/stackedcolumn2d';
+import ReactFC from 'react-fusioncharts';
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
+
+ReactFC.fcRoot(FusionCharts, Column2D, StackedColumn2D, FusionTheme);
+
+const chart1Configs = {
+  type: 'column2d',
+  width: 700,
+  height: 400,
+  dataFormat: 'json',
+  dataSource: {
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion"
+        },
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    },
+};
+const chart2Configs = {
+  type: 'stackedcolumn2d',
+  width: 700,
+  height: 400,
+  dataFormat: 'json',
+  dataSource: {
+        "chart": {
+            "caption": "Yearly Energy Production Rate",
+            "subCaption": " Top 5 Developed Countries",
+            "numbersuffix": " TWh",
+            "showSum": "1",
+            "plotToolText": "$label produces <b>$dataValue</b> of energy from $seriesName",
+            "theme": "fusion"
+        },
+        "categories": [{
+            "category": [{
+                "label": "Canada"
+            }, {
+                "label": "China"
+            }, {
+                "label": "Russia"
+            }, {
+                "label": "Australia"
+            }, {
+                "label": "United States"
+            }, {
+                "label": "France"
+            }]
+        }],
+        "dataSet": [{
+            "seriesName": "Coal",
+            "data": [{
+                "value": "400"
+            }, {
+                "value": "830"
+            }, {
+                "value": "500"
+            }, {
+                "value": "420"
+            }, {
+                "value": "790"
+            }, {
+                "value": "380"
+            }]
+        }, {
+            "seriesName": "Hydro",
+            "data": [{
+                "value": "350"
+            }, {
+                "value": "620"
+            }, {
+                "value": "410"
+            }, {
+                "value": "370"
+            }, {
+                "value": "720"
+            }, {
+                "value": "310"
+            }]
+        }, {
+            "seriesName": "Nuclear",
+            "data": [{
+                "value": "210"
+            }, {
+                "value": "400"
+            }, {
+                "value": "450"
+            }, {
+                "value": "180"
+            }, {
+                "value": "570"
+            }, {
+                "value": "270"
+            }]
+        }, {
+            "seriesName": "Gas",
+            "data": [{
+                "value": "180"
+            }, {
+                "value": "330"
+            }, {
+                "value": "230"
+            }, {
+                "value": "160"
+            }, {
+                "value": "440"
+            }, {
+                "value": "350"
+            }]
+        }, {
+            "seriesName": "Oil",
+            "data": [{
+                "value": "60"
+            }, {
+                "value": "200"
+            }, {
+                "value": "200"
+            }, {
+                "value": "50"
+            }, {
+                "value": "230"
+            }, {
+                "value": "150"
+            }]
+        }]
+    },
+};
+
+class Chart extends Component {
+  constructor() {
+    super();
+    this.exportChart = this.exportChart.bind(this);
+  }
+
+  // Handler for export button.
+  // Fires an export operation which exports all charts on the page as a PDF.
+  exportChart(e) {
+    FusionCharts.batchExport({
+      exportFormat: 'pdf',
+    });
+  }
+
+  render () {
+    return (
+      <div>
+        <ReactFC {...chart1Configs} />
+        <ReactFC {...chart2Configs} />
+        <center><button className='btn btn-outline-secondary btn-sm' onClick={this.exportChart}>Export both charts as a single PDF</button></center>
+      </div>
+    )
+  }
+}
+
+ReactDOM.render(
+  <Chart />,
+  document.getElementById('root'),
+);
+```
+
 ### Modes of Export
 
 FusionCharts Suite XT supports the following three modes of export:
@@ -42,7 +499,7 @@ By default, charts are exported using the auto-export feature.
 
 The `exportMode` attribute is used to switch between the different modes of export.
 
->  Starting from version v3.12.1, the `exportMode` attribute __replaces__ the `exportAtClientSide` attribute.
+> Starting from version v3.12.1, the `exportMode` attribute __replaces__ the `exportAtClientSide` attribute.
 
 To process the export data on your own server, configure one of the export handlers by following the [Setup Private Export Server]({% site.baseurl %}/exporting-charts/using-fc-export-server/configuring-the-export-feature) guide.
 
