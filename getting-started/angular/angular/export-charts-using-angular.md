@@ -11,8 +11,8 @@ In this section we will discuss how to:
 
 * [Export Charts as Image and PDF]({% site.baseurl %}/getting-started/angular/angular/export-charts-using-angular#export-charts-as-image-and-pdf-1)
 * [Export Multiple Charts]({% site.baseurl %}/getting-started/angular/angular/export-charts-using-angular#export-multiple-charts-2)
-* [Modes of Export]({% site.baseurl %}/getting-started/angular/angular/export-charts-using-angular#modes-of-export-3)
-* [Export Chart Data]({% site.baseurl %}/getting-started/angular/angular/export-charts-using-angular#export-chart-data-4)
+* [Modes of Export]({% site.baseurl %}/getting-started/angular/angular/export-charts-using-angular#modes-of-export-7)
+* [Export Chart Data]({% site.baseurl %}/getting-started/angular/angular/export-charts-using-angular#export-chart-data-8)
 
 ## Export Charts as Image and PDF
 
