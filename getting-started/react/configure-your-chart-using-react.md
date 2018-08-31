@@ -75,7 +75,7 @@ ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
 const chartConfigs = {
   type: 'column2d',
-  width: 600,
+  width: 700,
   height: 400,
   dataFormat: 'json',
   dataSource: {

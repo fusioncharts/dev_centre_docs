@@ -5,10 +5,9 @@ heading: Version 3.4.x
 ---
 
 <h2 class="sub-heading">Version 3.4.1</h2>
-18th November, 2013
+26th September, 2014
 
 <h4 class="sub-heading">Improvements</h4>
-26th September, 2014
 
 * Zero JavaScript memory leak while disposing a chart.
 
