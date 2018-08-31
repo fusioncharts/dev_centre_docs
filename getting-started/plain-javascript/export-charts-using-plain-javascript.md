@@ -18,7 +18,7 @@ A server-side helper library enables export by conveting the SVG to the required
 
 When charts are exported on the client side, the entire exporting process is carried out using the user’s browser. The chart’s SVG is converted into the selected export format and download using the HTML5 `download` attribute.
 
->  You must have an active internet connection for this feature to work. </p>
+> You must have an active internet connection for this feature to work.
 
 To enable chart exporting, the `chart` level attribute `exportEnabled` is set to __1__. The <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over this button to see the dropdown menu with export options, as shown in the image below:
 

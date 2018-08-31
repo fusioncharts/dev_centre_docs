@@ -5,7 +5,7 @@ heading: Exporting Charts
 chartPresent: true
 ---
 
-FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG and VML. A prominent feature of the suite is the ability to export the rendered charts in JPG, PNG, SVG, PDF formats and export chart data as well.
+FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG and VML. A prominent feature of the suite is the ability to export the rendered charts in JPG, PNG, SVG, PDF formats and export chart data as well. This article focuses on how you can export charts using the React `props` object and `react-fusioncharts` component.
 
 In this section we will discuss how to:
 
@@ -18,7 +18,7 @@ A server-side helper library enables export by conveting the SVG to the required
 
 When charts are exported on the client side, the entire exporting process is carried out using the user’s browser. The chart’s SVG is converted into the selected export format and download using the HTML5 `download` attribute.
 
->  You must have an active internet connection for this feature to work. </p>
+> You must have an active internet connection for this feature to work.
 
 To enable chart exporting, the `chart` level attribute `exportEnabled` is set to __1__. The <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button is then visible on the top-right corner of the chart. Click/hover over this button to see the dropdown menu with export options, as shown in the image below:
 
