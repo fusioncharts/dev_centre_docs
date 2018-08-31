@@ -471,6 +471,11 @@ class Chart extends Component {
   exportChart(e) {
     FusionCharts.batchExport({
       exportFormat: 'pdf',
+      charts:[{
+        "id":"chart1"
+      },{
+        "id":"chart2"    
+      }]
     });
   }
 
