@@ -151,9 +151,8 @@ ReactDOM.render(
 FusionCharts lets you export multiple charts in a single image at once, in different formats. In the sample given below, we have two charts-Column2D and Stacked Column2D chart.
 
 <div>
-<p>{% embed_chart exporting-as-image-and-pdf-introduction-example-3.js %}</p>
+<p margin-bottom="0px">{% embed_chart exporting-as-image-and-pdf-introduction-example-3.js %}</p>
 <p>{% embed_chart exporting-as-image-and-pdf-introduction-example-4.js %}</p>
-
 </div>
 
 The JSON data to render the above chart is given below:
