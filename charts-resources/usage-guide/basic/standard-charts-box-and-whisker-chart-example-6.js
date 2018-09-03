@@ -1,8 +1,7 @@
 {
-
     type: 'boxandwhisker2d',
     renderAt: 'chart-container',
-    width: '550',
+    width: '700',
     height: '450',
     dataFormat: 'json',
     dataSource: {
@@ -13,7 +12,7 @@
             "YAxisName": "Salaries (In USD)",
             "numberPrefix": "$",
             "theme": "fusion",
-            "showValues": "1",
+            "showValues": "0",
             //color of the upper whisker set to red
             "upperWhiskerColor": "ff0000",
             //thickness of the upper whisker set to 5

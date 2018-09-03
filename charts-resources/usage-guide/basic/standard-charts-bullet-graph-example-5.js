@@ -2,7 +2,7 @@
     type: 'hbullet',
     renderAt: 'chart-container',
     width: '500',
-    height: '90',
+    height: '100',
     dataFormat: 'json',
     dataSource: {
         "chart": {

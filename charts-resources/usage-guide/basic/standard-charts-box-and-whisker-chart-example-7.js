@@ -1,8 +1,7 @@
 {
-
     type: 'boxandwhisker2d',
     renderAt: 'chart-container',
-    width: '550',
+    width: '700',
     height: '450',
     dataFormat: 'json',
     dataSource: {
