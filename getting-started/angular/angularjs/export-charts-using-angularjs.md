@@ -10,6 +10,7 @@ FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG 
 In this section we will discuss how to:
 
 * [Export Charts as Image and PDF]({% site.baseurl %}/getting-started/angular/angularjs/export-charts-using-angularjs#export-charts-as-image-and-pdf-1)
+* [Export Multiple Charts]({% site.baseurl %}/getting-started/angular/angularjs/export-charts-using-angularjs#export-multiple-charts-4)
 * [Modes of Export]({% site.baseurl %}/getting-started/angular/angularjs/export-charts-using-angularjs#modes-of-export-2)
 * [Export Chart Data]({% site.baseurl %}/getting-started/angular/angularjs/export-charts-using-angularjs#export-chart-data-3)
 
@@ -100,6 +101,377 @@ myApp.controller('MyController', ['$scope', function($scope){
         ]
     };
 }]);
+```
+
+## Export Multiple Charts
+
+FusionCharts lets you export multiple charts in a single image at once, in different formats. In the sample given below, we have two charts-Column2D and Stacked Column2D chart.
+
+<div  style="background-color: #ffffff;">
+<p>{% embed_chart exporting-as-image-and-pdf-introduction-example-3.js %}</p>
+<p>{% embed_chart exporting-as-image-and-pdf-introduction-example-4.js %}</p>
+</div>
+
+The JSON data to render the above chart is given below:
+
+```
+{
+    data1: {
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion"
+        },
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    },
+    data2: {
+        "chart": {
+            "caption": "Yearly Energy Production Rate",
+            "subCaption": " Top 5 Developed Countries",
+            "numbersuffix": " TWh",
+            "showSum": "1",
+            "plotToolText": "$label produces <b>$dataValue</b> of energy from $seriesName",
+            "theme": "fusion"
+        },
+        "categories": [{
+            "category": [{
+                "label": "Canada"
+            }, {
+                "label": "China"
+            }, {
+                "label": "Russia"
+            }, {
+                "label": "Australia"
+            }, {
+                "label": "United States"
+            }, {
+                "label": "France"
+            }]
+        }],
+        "dataSet": [{
+            "seriesName": "Coal",
+            "data": [{
+                "value": "400"
+            }, {
+                "value": "830"
+            }, {
+                "value": "500"
+            }, {
+                "value": "420"
+            }, {
+                "value": "790"
+            }, {
+                "value": "380"
+            }]
+        }, {
+            "seriesName": "Hydro",
+            "data": [{
+                "value": "350"
+            }, {
+                "value": "620"
+            }, {
+                "value": "410"
+            }, {
+                "value": "370"
+            }, {
+                "value": "720"
+            }, {
+                "value": "310"
+            }]
+        }, {
+            "seriesName": "Nuclear",
+            "data": [{
+                "value": "210"
+            }, {
+                "value": "400"
+            }, {
+                "value": "450"
+            }, {
+                "value": "180"
+            }, {
+                "value": "570"
+            }, {
+                "value": "270"
+            }]
+        }, {
+            "seriesName": "Gas",
+            "data": [{
+                "value": "180"
+            }, {
+                "value": "330"
+            }, {
+                "value": "230"
+            }, {
+                "value": "160"
+            }, {
+                "value": "440"
+            }, {
+                "value": "350"
+            }]
+        }, {
+            "seriesName": "Oil",
+            "data": [{
+                "value": "60"
+            }, {
+                "value": "200"
+            }, {
+                "value": "200"
+            }, {
+                "value": "50"
+            }, {
+                "value": "230"
+            }, {
+                "value": "150"
+            }]
+        }]
+    }
+}
+```
+
+The JavaScript code of the above sample is given below:
+
+```
+var myApp = angular.module("myApp", ["ng-fusioncharts"]);
+myApp.controller("MyController", ["$scope", function($scope) {
+    // datasource for first chart
+    $scope.firstDataSource = {
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion",
+        },
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    };
+    //datasource for second chart 
+    $scope.secondDataSource = {
+        chart: {
+            caption: "Yearly Energy Production Rate",
+            subCaption: " Top 5 Developed Countries",
+            numbersuffix: " TWh",
+            showSum: "1",
+            plotToolText: "$label produces <b>$dataValue</b> of energy from $seriesName",
+            theme: "fusion"
+        },
+        categories: [{
+            category: [{
+                    label: "Canada"
+                },
+                {
+                    label: "China"
+                },
+                {
+                    label: "Russia"
+                },
+                {
+                    label: "Australia"
+                },
+                {
+                    label: "United States"
+                },
+                {
+                    label: "France"
+                }
+            ]
+        }],
+        dataSet: [{
+                seriesName: "Coal",
+                data: [{
+                        value: "400"
+                    },
+                    {
+                        value: "830"
+                    },
+                    {
+                        value: "500"
+                    },
+                    {
+                        value: "420"
+                    },
+                    {
+                        value: "790"
+                    },
+                    {
+                        value: "380"
+                    }
+                ]
+            },
+            {
+                seriesName: "Hydro",
+                data: [{
+                        value: "350"
+                    },
+                    {
+                        value: "620"
+                    },
+                    {
+                        value: "410"
+                    },
+                    {
+                        value: "370"
+                    },
+                    {
+                        value: "720"
+                    },
+                    {
+                        value: "310"
+                    }
+                ]
+            },
+            {
+                seriesName: "Nuclear",
+                data: [{
+                        value: "210"
+                    },
+                    {
+                        value: "400"
+                    },
+                    {
+                        value: "450"
+                    },
+                    {
+                        value: "180"
+                    },
+                    {
+                        value: "570"
+                    },
+                    {
+                        value: "270"
+                    }
+                ]
+            },
+            {
+                seriesName: "Gas",
+                data: [{
+                        value: "180"
+                    },
+                    {
+                        value: "330"
+                    },
+                    {
+                        value: "230"
+                    },
+                    {
+                        value: "160"
+                    },
+                    {
+                        value: "440"
+                    },
+                    {
+                        value: "350"
+                    }
+                ]
+            },
+            {
+                seriesName: "Oil",
+                data: [{
+                        value: "60"
+                    },
+                    {
+                        value: "200"
+                    },
+                    {
+                        value: "200"
+                    },
+                    {
+                        value: "50"
+                    },
+                    {
+                        value: "230"
+                    },
+                    {
+                        value: "150"
+                    }
+                ]
+            }
+        ]
+    };
+
+    $scope.exportChart = function() {
+        // export charts
+        FusionCharts.batchExport({
+            exportFormat: "pdf"
+        })
+    }
+}]);
+```
+
+The HTML code of the above sample is given below:
+
+```HTML
+<div ng-app="myApp">
+  <div ng-controller="MyController"> 
+    <fusioncharts
+        width="700"
+        height="400"
+        type="column2D"
+        datasource="{{firstDataSource}}"
+        >
+    </fusioncharts>
+    <fusioncharts
+        width="700"
+        height="400"
+        type="stackedcolumn2d"
+        datasource="{{secondDataSource}}">
+    </fusioncharts>
+    <div style="display: flex;justify-content: center">
+        <button ng-click="exportChart()">Export both charts as a single PDF</button>
+    </div>
+  </div>
+</div>
 ```
 
 ## Modes of Export
