@@ -1,7 +1,7 @@
 ---
 title: Pyramid Chart | FusionCharts
 description: Pyramid charts are used for comparison of data. This section indroduces some basics of pyramid chart with some of its silent features
-heading: Introduction to Pyramid Chart
+heading: Pyramid Chart
 ---
 
 > These chart types belong to **FusionWidgets XT**.
@@ -95,7 +95,7 @@ Refer to the code given below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-pyramid-chart-example-2.js %}
+{% embed_chart standard-charts-pyramid-chart-example-2.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/oy87kg3f/) to edit the above chart.
 
@@ -115,7 +115,7 @@ Refer to the code given below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-pyramid-chart-example-3.js %}
+{% embed_chart standard-charts-pyramid-chart-example-3.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/6u7e72co/) to edit the above chart.
 
@@ -140,7 +140,7 @@ Refer to the code given below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-pyramid-chart-example-4.js %}
+{% embed_chart standard-charts-pyramid-chart-example-4.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/c9t3ya49/) to edit the above chart.
 
@@ -160,7 +160,7 @@ Refer to the code given below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-pyramid-chart-example-5.js %}
+{% embed_chart standard-charts-pyramid-chart-example-5.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/cLah09x0/) to edit the above chart.
 
@@ -180,7 +180,7 @@ Refer to the code given below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-pyramid-chart-example-6.js %}
+{% embed_chart standard-charts-pyramid-chart-example-6.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/Lj8x9scr/) to edit the above chart.
 
@@ -200,7 +200,7 @@ Refer to the code given below:
 
 The chart will look like the following:
 
-{% embed_all standard-charts-pyramid-chart-example-7.js %}
+{% embed_chart standard-charts-pyramid-chart-example-7.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/bwwct623/) to edit the above chart.
 

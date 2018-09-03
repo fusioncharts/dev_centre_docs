@@ -1,8 +1,8 @@
 {
     type: 'hbullet',
     renderAt: 'chart-container',
-    width: '450',
-    height: '72',
+    width: '500',
+    height: '100',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -23,7 +23,7 @@
             "baseFontColor": "595959",
             "plotToolText": "<div>Sales : <b>$$value</b></div>",
             "targettooltext": "Target : <b>$$targetvalue</b>",
-            "theme": "zune",
+            "theme": "fusion",
             "dataStreamURL": "dummy-url-abcdefg.php",
             "refreshInterval": "5"
         },

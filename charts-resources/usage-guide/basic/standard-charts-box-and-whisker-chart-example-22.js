@@ -1,8 +1,8 @@
 {
     type: 'boxandwhisker2d',
     renderAt: 'chart-container',
-    width: '550',
-    height: '350',
+    width: '700',
+    height: '450',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -13,6 +13,7 @@
             "numberPrefix": "$",
             "theme": "fusion",
             "showValues": "0",
+            "yaxismaxvalue": "80000",
             //Showing out of range outliers
             "showAllOutliers ": "1"
         },

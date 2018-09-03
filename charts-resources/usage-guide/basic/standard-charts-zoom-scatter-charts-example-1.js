@@ -16,6 +16,7 @@
                 "yaxisminvalue": "-15",
                 "anchorradius": "2",
                 "rotateYAxisName": "1",
+                "theme": "fusion",
                 "plotTooltext": "<div id='valueDiv'><b>$seriesName</b>, Admission rate % : <b>$xDataValue</b>, Return % : <b>$yDataValue</b></div>"
         },
         "dataset": [
