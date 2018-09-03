@@ -1,14 +1,13 @@
 {
     type: 'zoomline',
     renderAt: 'chart-container',
-    width: '600',
+    width: '700',
     height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
             "caption": "Unique Website Visitors",
             "subcaption": "Last year",
-            "paletteColors": "#0075c2,#1aaf5d",
             "baseFont": "Helvetica Neue,Arial",
             "yaxisname": "Unique Visitors",
             "xaxisname": "Date",
