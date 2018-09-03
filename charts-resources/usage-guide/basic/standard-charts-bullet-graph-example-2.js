@@ -1,7 +1,7 @@
 {
     type: 'vbullet',
     renderAt: 'chart-container',
-    width: '140',
+    width: '120',
     height: '500',
     dataFormat: 'json',
     dataSource: {
