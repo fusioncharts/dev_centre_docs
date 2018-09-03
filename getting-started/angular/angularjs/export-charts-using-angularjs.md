@@ -10,9 +10,9 @@ FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG 
 In this section we will discuss how to:
 
 * [Export Charts as Image and PDF]({% site.baseurl %}/getting-started/angular/angularjs/export-charts-using-angularjs#export-charts-as-image-and-pdf-1)
-* [Export Multiple Charts]({% site.baseurl %}/getting-started/angular/angularjs/export-charts-using-angularjs#export-multiple-charts-4)
-* [Modes of Export]({% site.baseurl %}/getting-started/angular/angularjs/export-charts-using-angularjs#modes-of-export-2)
-* [Export Chart Data]({% site.baseurl %}/getting-started/angular/angularjs/export-charts-using-angularjs#export-chart-data-3)
+* [Export Multiple Charts]({% site.baseurl %}/getting-started/angular/angularjs/export-charts-using-angularjs#export-multiple-charts-2)
+* [Modes of Export]({% site.baseurl %}/getting-started/angular/angularjs/export-charts-using-angularjs#modes-of-export-3)
+* [Export Chart Data]({% site.baseurl %}/getting-started/angular/angularjs/export-charts-using-angularjs#export-chart-data-4)
 
 ## Export Charts as Image and PDF
 
@@ -75,7 +75,7 @@ The JSON data to render the above chart is given below:
 }
 ```
 
-The full code of the above sample is given below:
+The JavaScript code of the above sample is given below:
 
 ```
 var myApp = angular.module('myApp', ['ng-fusioncharts']);
@@ -101,6 +101,21 @@ myApp.controller('MyController', ['$scope', function($scope){
         ]
     };
 }]);
+```
+
+The HTML code of the above sample is given below:
+
+```HTML
+<div ng-app="myApp">
+    <div ng-controller="MyController">
+        <fusioncharts 
+            width="700" 
+            height="400"
+            type="column2d"
+            datasource="{{myDataSource}}">
+        </fusioncharts>
+    </div>
+</div>
 ```
 
 ## Export Multiple Charts
