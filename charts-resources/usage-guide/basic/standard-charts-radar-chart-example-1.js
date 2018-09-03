@@ -1,7 +1,7 @@
 {
     type: 'radar',
     renderAt: 'chart-container',
-    width: '500',
+    width: '600',
     height: '350',
     dataFormat: 'json',
     dataSource: {
