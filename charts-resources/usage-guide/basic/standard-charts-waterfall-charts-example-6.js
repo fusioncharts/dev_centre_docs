@@ -1,8 +1,8 @@
 {
     type: 'waterfall2d',
     renderAt: 'chart-container',
-    width: '600',
-    height: '350',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -12,8 +12,6 @@
             "numberprefix": "$",
             "sumlabel": "Total {br} Profit",
             "theme": "fusion",
-            "positiveColor": "#1aaf5d",
-            "negativeColor": "#c02d00",
 
             //Connector lines configuration
             "showConnectors": "1",
