@@ -1,7 +1,7 @@
 {
     type: 'boxandwhisker2d',
     renderAt: 'chart-container',
-    width: '550',
+    width: '700',
     height: '450',
     dataFormat: 'json',
     dataSource: {
@@ -12,7 +12,7 @@
             "YAxisName": "Salaries (In USD)",
             "numberPrefix": "$",
             "theme": "fusion",
-            "showValues": "1",
+            "showValues": "0",
             //The color of the upper quartile set to Red
             "upperQuartileColor": "ff0000",
             //The thickness of the upper quartile set to 5

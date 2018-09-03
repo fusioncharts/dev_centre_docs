@@ -1,8 +1,7 @@
 {
-
     type: 'boxandwhisker2d',
     renderAt: 'chart-container',
-    width: '550',
+    width: '700',
     height: '450',
     dataFormat: 'json',
     dataSource: {
@@ -13,7 +12,6 @@
             "YAxisName": "Salaries (In USD)",
             "numberPrefix": "$",
             "theme": "fusion",
-            "showValues": "1",
             "showSD": "1",
             "sdIconRadius": "5",
             "sdIconSides": "5",

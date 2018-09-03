@@ -1,8 +1,8 @@
 {
     type: 'boxandwhisker2d',
     renderAt: 'chart-container',
-    width: '550',
-    height: '350',
+    width: '700',
+    height: '450',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -12,7 +12,8 @@
             "YAxisName": "Salaries (In USD)",
             "numberPrefix": "$",
             "theme": "fusion",
-            "showValues": "0"
+            "showValues": "0",
+            "yaxismaxvalue": "80000"
         },
         "categories": [{
             "category": [{
