@@ -92,13 +92,31 @@ var app = new Vue({
     el: '#app',
     data: {
         type: 'column2d',
-        width: '100%',
+        width: '700',
         height: '400',
         dataFormat: 'jsonurl',
-        dataSource: 'data.json' // url of datasource
+        dataSource: 'https:\/\/static.fusioncharts.com/sample/oilReserves.json' // url of datasource
+        dataSource: "https://static.fusioncharts.com/sample/oilReserves.json" // url of datasource
+        dataSource: 'https:&#47;&#47;static.fusioncharts.com/sample/oilReserves.json' // url of datasource
+        dataSource: 'https://static.fusioncharts.com/sample/oilReserves.json' // url of datasource
     }
 });
 ```
+
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
+
+```
+<div id="app">
+    <fusioncharts
+    :type="type"
+    :width="width"
+    :height="height"
+    :dataFormat="dataFormat"
+    :dataSource="dataSource"
+    ></fusioncharts>
+</div>
+```
+
 
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
