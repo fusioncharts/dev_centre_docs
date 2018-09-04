@@ -106,7 +106,6 @@ export class AppModule {}
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
-
 ### Add data to `app.component.ts`
 
 Add the following code to `app.component.ts`:

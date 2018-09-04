@@ -8,7 +8,7 @@ FusionCharts lets you pass the complete JSON/XML chart data as a static string t
 
 The only difference between the two methods is the value that is passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes `json` or `xml` as values, depending on the chart data. For the second method, the values will be `jsonurl` and `xmlurl`.
 
-This article explains how you can set the chart data using the URL of the corresponding file.
+This article explains how you can set the chart data using the URL of the corresponding file using `angular-fusioncharts` component.
 
 ## Load data using JSON as URL
 
@@ -71,25 +71,87 @@ The JSON representation for the above table looks as shown below:
 }
 ```
 
-Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your HTML page.
+Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your modules.
 
 > If you are using multi-lingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
 
-The data structure needed to render the above chart is given below:
+### Setup the Main Module
+
+In this step, we will setup the main module to create the **Column2D chart**. The code is given below:
 
 ```
-FusionCharts.ready(function() {
-    var fusioncharts = new FusionCharts({
-        type: 'column2d',
-        renderAt: 'chart-container',
-        width: '700',
-        height: '400',
-        dataFormat: 'jsonurl',
-        dataSource: 'https://static.fusioncharts.com/sample/oilReserves.json'
-    });
-    fusioncharts.render();
-});
+// Setup needed in app.module.ts
 
+import { NgModule, enableProdMode } from '@angular/core'
+import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Load FusionCharts
+import FusionCharts from 'fusioncharts/core';
+// Load Charts Module
+import Column2d from 'fusioncharts/viz/column2d';
+// Load Fusion Theme
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+
+// Add dependencies to FusionChartsModule
+FusionChartsModule.fcRoot(FusionCharts, Column2d, FusionTheme)
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FusionChartsModule
+  ],
+  providers: [
+  ],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule {
+}
+```
+
+> The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render the above chart in the main app.component.
+
+### Add data to `app.component.ts`
+
+Add the following code to `app.component.ts`:
+
+```
+// in app.component.ts
+import {
+    Component
+} from '@angular/core';
+
+@Component({
+    selector: 'app',
+    templateUrl: 'app.component.html'
+})
+export class AppComponent {
+
+    type = "Column2D";
+    width = "700";
+    height = "400";
+    dataFormat = "jsonurl";
+    dataSource: any = { https://static.fusioncharts.com/sample/oilReserves.json }
+}
+```
+
+### Add data to `app.component.html`
+
+Add the following code to `app.component.html`:
+
+```
+<!-- in app.component.html -->
+<fusioncharts
+    width={{width}}
+    height={{height}}
+    type={{type}}
+    dataFormat={{dataFormat}}
+    [dataSource]=dataSource >
+</fusioncharts>
 ```
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
@@ -114,19 +176,81 @@ Copy this into a file called `oilReserves.xml` and store it in the same folder a
 
 > If you are using multilingual characters in your XML, make sure you save the XML data with UTF-8 encoding.
 
-To initialize the chart and instruct it using XML URL, use the following code:
+### Setup the Main Module
+
+In this step, we will setup the main module to create the **Column2D chart**. The code is given below:
 
 ```
-FusionCharts.ready(function() {
-    var myChart = new FusionCharts({
-        "type": "column2d",
-        "renderAt": "chart-container",
-        "width": "700",
-        "height": "400",
-        "dataFormat": "xmlurl",
-        "dataSource": "https://static.fusioncharts.com/sample/oilReserves.xml"
-    });
-    myChart.render();
-});
+// Setup needed in app.module.ts
 
+import { NgModule, enableProdMode } from '@angular/core'
+import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Load FusionCharts
+import FusionCharts from 'fusioncharts/core';
+// Load Charts Module
+import Column2d from 'fusioncharts/viz/column2d';
+// Load Fusion Theme
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+
+// Add dependencies to FusionChartsModule
+FusionChartsModule.fcRoot(FusionCharts, Column2d, FusionTheme)
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FusionChartsModule
+  ],
+  providers: [
+  ],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule {
+}
+```
+
+> The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render the above chart in the main app.component.
+
+### Add data to `app.component.ts`
+
+Add the following code to `app.component.ts`:
+
+```
+// in app.component.ts
+import {
+    Component
+} from '@angular/core';
+
+@Component({
+    selector: 'app',
+    templateUrl: 'app.component.html'
+})
+export class AppComponent {
+
+    type = "Column2D";
+    width = "700";
+    height = "400";
+    dataFormat = "xmlurl";
+    dataSource: any = { https://static.fusioncharts.com/sample/oilReserves.xml }
+}
+```
+
+### Add data to `app.component.html`
+
+Add the following code to `app.component.html`:
+
+```
+<!-- in app.component.html -->
+<fusioncharts
+    width={{width}}
+    height={{height}}
+    type={{type}}
+    dataFormat={{dataFormat}}
+    [dataSource]=dataSource >
+</fusioncharts>
 ```
