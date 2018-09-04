@@ -115,7 +115,7 @@ var dataSource = {
 // Using FusionChart's jQuery method insertFusionCharts() to create FusionCharts.
 $('#chart-container').insertFusionCharts({
     type: 'column2d',
-    width: 600,
+    width: 700,
     height: 400,
     dataFormat: 'json',
     dataSource: dataSource
@@ -254,7 +254,7 @@ var dataSourceOrg = JSON.parse(JSON.stringify(dataSource));
 // Using FusionChart's jQuery method insertFusionCharts() to create FusionCharts.
 $('#chart-container').insertFusionCharts({
     type: 'column2d',
-    width: 600,
+    width: 700,
     height: 400,
     dataFormat: 'json',
     dataSource: dataSource
@@ -321,7 +321,6 @@ For applying a common theme to all charts inside all the `<div>` elements in the
 
 ```javascript
 $('div').attrFusionCharts({"theme": "fusion"});
-
 ```
 
 For applying a common theme to only those charts that belong to HTML elements having the `selectorExample` class, use the code snippet given below:
