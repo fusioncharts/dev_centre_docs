@@ -8,7 +8,7 @@ FusionCharts lets you pass the complete JSON/XML chart data as a static string t
 
 The only difference between the two methods is the value that is passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes `json` or `xml` as values, depending on the chart data. For the second method, the values will be `jsonurl` and `xmlurl`.
 
-This article explains how you can set the chart data using the URL of the corresponding file.
+This article explains how you can set the chart data using the URL of the corresponding file using `angularjs-fusioncharts` component.
 
 ## Load data using JSON as URL
 
@@ -71,25 +71,28 @@ The JSON representation for the above table looks as shown below:
 }
 ```
 
-Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your HTML page.
+Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your HTML page. Create the module and the controller for the template.
 
 > If you are using multi-lingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
 
-The data structure needed to render the above chart is given below:
+The JavaScript code is given below:
 
 ```
-FusionCharts.ready(function() {
-    var fusioncharts = new FusionCharts({
-        type: 'column2d',
-        renderAt: 'chart-container',
-        width: '700',
-        height: '400',
-        dataFormat: 'jsonurl',
-        dataSource: 'https://static.fusioncharts.com/sample/oilReserves.json'
-    });
-    fusioncharts.render();
-});
+var myApp = angular.module("myApp", ["ng-fusioncharts"]);
+```
 
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
+
+```
+<div ng-app="myApp">
+  <fusioncharts
+    dataformat="jsonurl"
+    datasource="data/data.json"
+    type="column2d"
+    width="700"
+    height="400">
+  </fusioncharts>
+</div>
 ```
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
@@ -110,23 +113,27 @@ The XML representation for the above chart looks as shown below:
     <set label='China ' value='30 ' />
 </chart>
 ```
+
 Copy this into a file called `oilReserves.xml` and store it in the same folder as your HTML page.
 
 > If you are using multilingual characters in your XML, make sure you save the XML data with UTF-8 encoding.
 
-To initialize the chart and instruct it using XML URL, use the following code:
+The JavaScript code is given below:
 
 ```
-FusionCharts.ready(function() {
-    var myChart = new FusionCharts({
-        "type": "column2d",
-        "renderAt": "chart-container",
-        "width": "700",
-        "height": "400",
-        "dataFormat": "xmlurl",
-        "dataSource": "https://static.fusioncharts.com/sample/oilReserves.xml"
-    });
-    myChart.render();
-});
+var myApp = angular.module("myApp", ["ng-fusioncharts"]);
+```
 
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
+
+```
+<div ng-app="myApp">
+  <fusioncharts
+    dataformat="xmlurl"
+    datasource="data/data.xml"
+    type="column2d"
+    width="700"
+    height="400">
+  </fusioncharts>
+</div>
 ```
