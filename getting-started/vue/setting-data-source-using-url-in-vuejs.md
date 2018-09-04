@@ -8,7 +8,7 @@ FusionCharts lets you pass the complete JSON/XML chart data as a static string t
 
 The only difference between the two methods is the value that is passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes `json` or `xml` as values, depending on the chart data. For the second method, the values will be `jsonurl` and `xmlurl`.
 
-This article explains how you can set the chart data using the URL of the corresponding file.
+This article explains how you can set the chart data using the URL of the corresponding file using `vue-fusioncharts` component.
 
 ## Load data using JSON as URL
 
@@ -75,22 +75,31 @@ Copy this into a file, name it `oilReserves.json`, and store it in the same fold
 
 > If you are using multi-lingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
 
-The data structure needed to render the above chart is given below:
+In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
+
+The code to render a chart is given below:
 
 ```
-FusionCharts.ready(function() {
-    var fusioncharts = new FusionCharts({
+import Vue from 'vue';
+import VueFusionCharts from 'vue-fusioncharts';
+import FusionCharts from 'fusioncharts/core';
+import Column2D from 'fusioncharts/viz/column2d'
+
+// register VueFusionCharts component
+Vue.use(VueFusionCharts, FusionCharts, Column2D)
+
+var app = new Vue({
+    el: '#app',
+    data: {
         type: 'column2d',
-        renderAt: 'chart-container',
-        width: '700',
+        width: '100%',
         height: '400',
         dataFormat: 'jsonurl',
-        dataSource: 'https://static.fusioncharts.com/sample/oilReserves.json'
-    });
-    fusioncharts.render();
+        dataSource: 'data.json' // url of datasource
+    }
 });
-
 ```
+
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 

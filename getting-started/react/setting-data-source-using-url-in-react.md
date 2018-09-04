@@ -133,7 +133,7 @@ Copy this into a file called `oilReserves.xml` and store it in the same folder a
 
 The full code of the above sample is:
 
-```
+```React
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import FusionCharts from 'fusioncharts/core';
