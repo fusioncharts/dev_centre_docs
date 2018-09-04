@@ -95,9 +95,6 @@ var app = new Vue({
         width: '700',
         height: '400',
         dataFormat: 'jsonurl',
-        dataSource: 'https:\/\/static.fusioncharts.com/sample/oilReserves.json' // url of datasource
-        dataSource: "https://static.fusioncharts.com/sample/oilReserves.json" // url of datasource
-        dataSource: 'https:&#47;&#47;static.fusioncharts.com/sample/oilReserves.json' // url of datasource
         dataSource: 'https://static.fusioncharts.com/sample/oilReserves.json' // url of datasource
     }
 });
@@ -116,8 +113,6 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
     ></fusioncharts>
 </div>
 ```
-
-
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
@@ -141,19 +136,41 @@ Copy this into a file called `oilReserves.xml` and store it in the same folder a
 
 > If you are using multilingual characters in your XML, make sure you save the XML data with UTF-8 encoding.
 
-To initialize the chart and instruct it using XML URL, use the following code:
+In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
+
+The code to render a chart is given below:
 
 ```
-FusionCharts.ready(function() {
-    var myChart = new FusionCharts({
-        "type": "column2d",
-        "renderAt": "chart-container",
-        "width": "700",
-        "height": "400",
-        "dataFormat": "xmlurl",
-        "dataSource": "https://static.fusioncharts.com/sample/oilReserves.xml"
-    });
-    myChart.render();
-});
+import Vue from 'vue';
+import VueFusionCharts from 'vue-fusioncharts';
+import FusionCharts from 'fusioncharts/core';
+import Column2D from 'fusioncharts/viz/column2d'
 
+// register VueFusionCharts component
+Vue.use(VueFusionCharts, FusionCharts, Column2D)
+
+var app = new Vue({
+    el: '#app',
+    data: {
+        type: 'column2d',
+        width: '700',
+        height: '400',
+        dataFormat: 'xmlurl',
+        dataSource: 'https://static.fusioncharts.com/sample/oilReserves.xml' // url of datasource
+    }
+});
+```
+
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
+
+```
+<div id="app">
+    <fusioncharts
+    :type="type"
+    :width="width"
+    :height="height"
+    :dataFormat="dataFormat"
+    :dataSource="dataSource"
+    ></fusioncharts>
+</div>
 ```

@@ -92,7 +92,7 @@ const chartConfigs = {
   width: 700,
   height: 400,
   dataFormat: 'jsonurl',
-  dataSource: 'https://static.fusioncharts.com/sample/oilReserves.json',
+  dataSource: 'https://static.fusioncharts.com/sample/oilReserves.json', // url of datasource
 };
 
 class Chart extends Component {
@@ -148,7 +148,7 @@ const chartConfigs = {
   width: 700,
   height: 400,
   dataFormat: 'xmlurl',
-  dataSource: 'https://static.fusioncharts.com/sample/oilReserves.xml',
+  dataSource: 'https://static.fusioncharts.com/sample/oilReserves.xml', // url of datasource
 };
 
 class Chart extends Component {
