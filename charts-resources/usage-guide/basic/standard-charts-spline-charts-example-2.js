@@ -1,39 +1,18 @@
 {
     type: 'msspline',
     renderAt: 'chart-container',
-    width: '550',
-    height: '350',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
+            "theme": "fusion",
             "caption": "Number of visitors last week",
             "subCaption": "Bakersfield Central vs Los Angeles Topanga",
-            "captionFontSize": "14",
-            "subcaptionFontSize": "14",
-            "baseFontColor": "#333333",
-            "baseFont": "Helvetica Neue,Arial",
-            "subcaptionFontBold": "0",
             "xAxisName": "Day",
             "yAxisName": "No. of Visitor",
-            "showValues": "0",
-            "paletteColors": "#0075c2,#1aaf5d",
-            "bgColor": "#ffffff",
-            "showBorder": "0",
-            "showShadow": "0",
-            "showAlternateHGridColor": "0",
-            "showCanvasBorder": "0",
             "showXAxisLine": "1",
-            "xAxisLineThickness": "1",
-            "xAxisLineColor": "#999999",
-            "canvasBgColor": "#ffffff",
-            "legendBorderAlpha": "0",
-            "legendShadow": "0",
-            "divlineAlpha": "100",
-            "divlineColor": "#999999",
-            "divlineThickness": "1",
-            "divLineIsDashed": "1",
-            "divLineDashLen": "1",
-            "divLineGapLen": "1"
+            "xAxisLineColor": "#999999"
         },
         "categories": [{
             "category": [{
@@ -45,7 +24,7 @@
             }, {
                 "vline": "true",
                 "lineposition": "0",
-                "color": "#6baa01",
+                "color": "#F2726F",
                 "labelHAlign": "right",
                 "labelPosition": "0",
                 "label": "National holiday"

@@ -1,22 +1,19 @@
 {
     type: 'InverseMSColumn2D',
-    id: 'time-chart',
     dataFormat: 'json',
     renderAt: 'chart-container',
-    width: '500',
-    height: '300',
+    width: '700',
+    height: '400',
     dataSource: {
         "chart": {
+            "theme": "fusion",
             "caption": "Average Page Load Time (hsm.com)",
             "subCaption": "Last Week",
-            "showBorder": "0",
             "xAxisName": "Day",
             "yAxisName": "Time (In Sec)",
             "numberSuffix": "s",
-            "placeValuesInside": "0",
-            "valueFontColor": "#333333",
-            "rotateValues": "0",
-            "theme": "fusion"
+            "showXAxisLine": "1",
+            "showLegend": "0"
 
         },
         "categories": [{

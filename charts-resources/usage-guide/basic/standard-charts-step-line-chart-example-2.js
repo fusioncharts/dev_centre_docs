@@ -1,8 +1,8 @@
 {
     type: 'msstepline',
     renderAt: 'chart-container',
-    width: '550',
-    height: '350',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -10,9 +10,7 @@
             "subcaption": "Last year",
             "xaxisname": "Month",
             "yaxisname": "Amount (In USD)",
-            "showvalues": "0",
             "numberprefix": "$",
-            "palettecolors": "#6baa01, #d35400",
             //Without vertical joins
             "drawVerticalJoins": "0",
             "theme": "fusion"
