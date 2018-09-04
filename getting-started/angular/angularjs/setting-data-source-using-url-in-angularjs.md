@@ -87,7 +87,7 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 <div ng-app="myApp">
   <fusioncharts
     dataformat="jsonurl"
-    datasource="data/data.json"
+    datasource="https://static.fusioncharts.com/sample/oilReserves.json"
     type="column2d"
     width="700"
     height="400">
@@ -130,7 +130,7 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 <div ng-app="myApp">
   <fusioncharts
     dataformat="xmlurl"
-    datasource="data/data.xml"
+    datasource="https://static.fusioncharts.com/sample/oilReserves.xml"
     type="column2d"
     width="700"
     height="400">
