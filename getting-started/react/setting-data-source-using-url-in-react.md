@@ -8,7 +8,7 @@ FusionCharts lets you pass the complete JSON/XML chart data as a static string t
 
 The only difference between the two methods is the value that is passed to the `dataFormat` attribute. For the first method, the `dataFormat` attribute takes `json` or `xml` as values, depending on the chart data. For the second method, the values will be `jsonurl` and `xmlurl`.
 
-This article explains how you can set the chart data using the URL of the corresponding file.
+This article explains how you can set the chart data using the URL of the corresponding file using `react-fusioncharts` component.
 
 ## Load data using JSON as URL
 
@@ -75,21 +75,38 @@ Copy this into a file, name it `oilReserves.json`, and store it in the same fold
 
 > If you are using multi-lingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
 
-The data structure needed to render the above chart is given below:
+The full code of the above sample is given below:
 
 ```
-FusionCharts.ready(function() {
-    var fusioncharts = new FusionCharts({
-        type: 'column2d',
-        renderAt: 'chart-container',
-        width: '700',
-        height: '400',
-        dataFormat: 'jsonurl',
-        dataSource: 'https://static.fusioncharts.com/sample/oilReserves.json'
-    });
-    fusioncharts.render();
-});
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import FusionCharts from 'fusioncharts/core';
+import Column2D from 'fusioncharts/viz/column2d';
+import ReactFC from 'react-fusioncharts';
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+
+const chartConfigs = {
+  type: 'column2d',
+  width: 700,
+  height: 400,
+  dataFormat: 'jsonurl',
+  dataSource: 'https://static.fusioncharts.com/sample/oilReserves.json',
+};
+
+class Chart extends Component {
+  render () {
+    return (
+      <ReactFC {...chartConfigs} />
+    )
+  }
+}
+
+ReactDOM.render(
+  <Chart />,
+  document.getElementById('root'),
+);
 ```
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
@@ -114,19 +131,36 @@ Copy this into a file called `oilReserves.xml` and store it in the same folder a
 
 > If you are using multilingual characters in your XML, make sure you save the XML data with UTF-8 encoding.
 
-To initialize the chart and instruct it using XML URL, use the following code:
+The full code of the above sample is:
 
 ```
-FusionCharts.ready(function() {
-    var myChart = new FusionCharts({
-        "type": "column2d",
-        "renderAt": "chart-container",
-        "width": "700",
-        "height": "400",
-        "dataFormat": "xmlurl",
-        "dataSource": "https://static.fusioncharts.com/sample/oilReserves.xml"
-    });
-    myChart.render();
-});
+import React, { Component } from 'react';
+import ReactDOM from 'react-dom';
+import FusionCharts from 'fusioncharts/core';
+import Column2D from 'fusioncharts/viz/column2d';
+import ReactFC from 'react-fusioncharts';
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+
+const chartConfigs = {
+  type: 'column2d',
+  width: 700,
+  height: 400,
+  dataFormat: 'xmlurl',
+  dataSource: 'https://static.fusioncharts.com/sample/oilReserves.xml',
+};
+
+class Chart extends Component {
+  render () {
+    return (
+      <ReactFC {...chartConfigs} />
+    )
+  }
+}
+
+ReactDOM.render(
+  <Chart />,
+  document.getElementById('root'),
+);
 ```
