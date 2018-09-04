@@ -12,7 +12,7 @@ This article explains how you can set the chart data using the URL of the corres
 
 ## Load data using JSON as URL
 
-Let's build the same revenue chart which we built in the [first example]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript) using JSON, and use a .json file as the data source.
+Let's build the same revenue chart which we built in the [first example]({% site.baseurl %}/getting-started/angular/angular/your-first-chart-using-angular) using JSON, and use a .json file as the data source.
 
 {% embed_chart plain-js-setting-data-using-url-example-1.js %}
 
@@ -135,7 +135,8 @@ export class AppComponent {
     width = "700";
     height = "400";
     dataFormat = "jsonurl";
-    dataSource: any = { https://static.fusioncharts.com/sample/oilReserves.json }
+    dataSource: any = { https://static.fusioncharts.com/sample/oilReserves.json
+    }
 }
 ```
 
