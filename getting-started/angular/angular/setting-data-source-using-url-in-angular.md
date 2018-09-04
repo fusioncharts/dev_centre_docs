@@ -130,13 +130,6 @@ import {
     templateUrl: 'app.component.html'
 })
 export class AppComponent {
-
-    type = "Column2D";
-    width = "700";
-    height = "400";
-    dataFormat = "jsonurl";
-    dataSource: any = { https://static.fusioncharts.com/sample/oilReserves.json
-    }
 }
 ```
 
@@ -232,12 +225,6 @@ import {
     templateUrl: 'app.component.html'
 })
 export class AppComponent {
-
-    type = "Column2D";
-    width = "700";
-    height = "400";
-    dataFormat = "xmlurl";
-    dataSource: any = { https://static.fusioncharts.com/sample/oilReserves.xml }
 }
 ```
 
