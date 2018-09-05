@@ -835,7 +835,7 @@ Refer to the code below:
 
 The chart will look like the following:
 
-{% embed_chart standard-charts-spark-chart-example-21.js %}
+{% embed_all standard-charts-spark-chart-example-21.js %}
 
 Click [here](http://jsfiddle.net/fusioncharts/6c5hbzLn/) to edit the above chart.
 
