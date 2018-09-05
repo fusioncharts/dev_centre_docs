@@ -1,8 +1,8 @@
 {
     type: 'sparkwinloss',
     renderAt: 'chart-container',
-    width: '400',
-    height: '60',
+    width: '450',
+    height: '70',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -20,49 +20,70 @@
             "periodalpha": "90",
         },
         "dataset": [{
-            "set": [{
-                "value": "L"
-            }, {
-                "value": "L"
-            }, {
-                "value": "W"
-            }, {
-                "value": "D"
-            }, {
-                "value": "W"
-            }, {
-                "value": "W"
-            }, {
-                "value": "D"
-            }, {
-                "value": "W"
-            }, {
-                "value": "D"
-            }, {
-                "value": "W"
-            }, {
-                "value": "L"
-            }, {
-                "value": "D"
-            }, {
-                "value": "W"
-            }, {
-                "value": "D"
-            }, {
-                "value": "D"
-            }, {
-                "value": "D"
-            }, {
-                "value": "D"
-            }, {
-                "value": "D"
-            }, {
-                "value": "D"
-            }, {
-                "value": "D"
-            }, {
-                "value": "W"
-            }]
+            "data": [{
+                    "value": "L"
+                },
+                {
+                    "value": "L"
+                },
+                {
+                    "value": "W"
+                },
+                {
+                    "value": "D"
+                },
+                {
+                    "value": "W"
+                },
+                {
+                    "value": "W"
+                },
+                {
+                    "value": "D"
+                },
+                {
+                    "value": "W"
+                },
+                {
+                    "value": "D"
+                },
+                {
+                    "value": "W"
+                },
+                {
+                    "value": "L"
+                },
+                {
+                    "value": "D"
+                },
+                {
+                    "value": "W"
+                },
+                {
+                    "value": "D"
+                },
+                {
+                    "value": "D"
+                },
+                {
+                    "value": "D"
+                },
+                {
+                    "value": "D"
+                },
+                {
+                    "value": "D"
+                },
+                {
+                    "value": "D"
+                },
+                {
+                    "value": "D"
+                },
+                {
+                    "value": "W"
+                }
+            ]
         }]
     }
 }
