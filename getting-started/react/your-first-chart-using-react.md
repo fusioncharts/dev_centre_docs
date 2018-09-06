@@ -61,19 +61,19 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 </div>
 <div>The consolidated code is shown below:</div>
 <pre><code class="custom-hlc language-javascript">
-<head>
+&lt;head&gt;
     <!-- Step 1 - Including react -->
-    <script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script&gt;
     <!-- Step 2 - Including Babel for JSX transpiling -->
-    <script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script&gt;
     <!-- Step 3 - Including the fusioncharts core library -->
-    <script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
     <!-- Step 4 - Including the react-fusioncharts component-->
-    <script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"></script>
+    &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script&gt;
     <!-- Step 5 - Including the fusion theme -->
-    <script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"></script>
-</head>
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -92,19 +92,19 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 </div>
 <div>The consolidated code is shown below:</div>
 <pre><code class="custom-hlc language-javascript">
-<head>
+&lt;head&gt;
     <!-- Step 1 - Including react  -->
-    <script type="text/javascript" src="path/to/local/react.js"></script>
-    <script type="text/javascript" src="path/to/local/react-dom.js"></script>
+    &lt;script type="text/javascript" src="path/to/local/react.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-dom.js"&gt;&lt;/script&gt;
     <!-- Step 2 - Including Babel for JSX transpiling -->
-    <script type="text/javascript" src="path/to/local/babel-core.js"></script>
+    &lt;script type="text/javascript" src="path/to/local/babel-core.js"&gt;&lt;/script&gt;
     <!-- Step 3 - Including the fusioncharts core library -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
     <!-- Step 4 - Including the react-fusioncharts component -->
-    <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
+    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.js"&gt;&lt;/script&gt;
     <!-- Step 5 - Including the fusion theme -->
-    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-</head>
+    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
