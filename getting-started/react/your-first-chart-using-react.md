@@ -112,7 +112,7 @@ In this page, we will create the chart using npm. To know how to create charts u
 
 The Column 2D chart is shown below:
 
-{% embed_all getting-started-your-first-chart.js %} 
+{% embed_chart getting-started-your-first-chart-example-1.js %} 
 
 The data for the above chart is shown in the table below:
 
