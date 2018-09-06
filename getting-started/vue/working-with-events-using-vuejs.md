@@ -105,3 +105,5 @@ The HTML template to render the above chart is:
     <div v-html="displayValue"></div>
 </div>
 ```
+
+Click [here]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollover-247) to get the detailed parameters of the event.
