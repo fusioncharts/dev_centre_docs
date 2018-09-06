@@ -106,9 +106,9 @@ That completes the installation of FusionCharts and the react-fusioncharts compo
 
 Let's create a Column 2D chart using the react-fusioncharts component showing the "Countries With Most Oil Reserves". 
 
-In this page, we will create the chart using npm. To know how to create charts using `**locally**` and `**CDN**` click here.
+In this page, we will create the chart using npm. To know how to create charts using **local files** and **CDN** click here.
 
-FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 The Column 2D chart is shown below:
 
@@ -172,7 +172,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-Note: Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts. 
+> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts. 
 
 In the above JSON data: 
 
@@ -194,11 +194,11 @@ To render the chart, follow the steps below:
 
 3. Include the **fusioncharts** library
 
-4. Include the chart type.
+4. Include the chart type
 
-5. Include the FusionCharts theme file to apply the style to the charts.
+5. Include the FusionCharts theme file to apply the style to the charts
 
-6. Add the chart and the theme as a dependency to the core.
+6. Add the chart and the theme as a dependency to the core
 
 7. Store the chart configurations in a JSON object. In this JSON object:
 
@@ -221,17 +221,17 @@ The consolidated code is shown below:
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// Step 2 - including the react-fusioncharts component
+// Step 2 - Including the react-fusioncharts component
 
 import ReactFC from 'react-fusioncharts';
 
-// Step 3 - including the fusioncharts library
+// Step 3 - Including the fusioncharts library
 import FusionCharts from 'fusioncharts/core';
 
-// Step 4 - including the chart type
+// Step 4 - Including the chart type
 import Column2D from 'fusioncharts/viz/column2d';
 
-// Step 5 - including the theme as fusion
+// Step 5 - Including the theme as fusion
 
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
@@ -239,7 +239,7 @@ import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
-// Step 7 - creating the JSON object to store the chart configurations
+// Step 7 - Creating the JSON object to store the chart configurations
 
 const chartConfigs = {
     type: 'column2d',// The chart type
@@ -286,7 +286,7 @@ const chartConfigs = {
         }
     };
 
-// Step 8 - creating the DOM element to pass the react-fusioncharts component 
+// Step 8 - Creating the DOM element to pass the react-fusioncharts component 
 ReactDOM.render(
     <ReactFC {...chartConfigs} />,
     document.getElementById('root'),
@@ -294,7 +294,7 @@ ReactDOM.render(
 
 ```
 
-That's it! Your first chart using react-fusioncharts is ready.
+That's it! Your first chart using `react-fusioncharts` is ready.
 
 ## Problem rendering the chart?
 
