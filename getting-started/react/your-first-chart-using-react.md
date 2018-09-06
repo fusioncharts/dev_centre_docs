@@ -39,13 +39,13 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 <div class='tab cdn-tab'>
 <div><strong>To install the FusionCharts package and the react-fusioncharts component follow the steps below:</strong></div>
 <div>
-    <ul>
+    <ol>
         <li>Include the [React](https://reactjs.org/)core library.
         <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
         <li>Include the **FusionCharts** JavaScript files from CDN.</li>
         <li>Include the `react-fusioncharts` module.</li>
         <li>Include the theme file.</li>
-    </ul>
+    </ol>
 </div>
 <div>The consolidated code is shown below:</div>
 <pre><code class="custom-hlc language-javascript">
@@ -70,13 +70,13 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 <div class='tab localfiles-tab'>
 <div><strong>To install the **FusionCharts** package and the `react-fusioncharts` component follow the steps below:</strong></div>
 <div>
-    <ul>
+    <ol>
         <li>Include the [React](https://reactjs.org/)core library.</li>
         <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
         <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
         <li>Include the `react-fusioncharts` component.</li>
         <li>Include the FusionCharts theme file to apply the style to the charts.</li>
-    </ul>
+    </ol>
 </div>
 <div>The consolidated code is shown below:</div>
 <pre><code class="custom-hlc language-javascript">
