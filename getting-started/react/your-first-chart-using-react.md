@@ -15,23 +15,11 @@ In this page, we'll see how to install FusionCharts and render a chart using the
 
 Install **FusionCharts** and the `react-fusioncharts` component using any of the following methods:
 
-**Using local files:**
-
-
-
-
-
-```HTML
-
-
-
-```
-
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='npm'>NPM</a></li>
     <li><a data-toggle='cdn'>CDN</a></li>
-    <li><a data-toggle='localfiles'>Using Local Files</a></li>
+    <li><a data-toggle='localfiles'>Local Files</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
