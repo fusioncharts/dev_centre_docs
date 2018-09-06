@@ -11,7 +11,7 @@ FusionCharts is a JavaScript charting library that enables you to create interac
 
 In this page, we'll see how to install FusionCharts and render a chart using the `react-fusionCharts` component.
 
-**Installation**
+## Installation
 
 Install **FusionCharts** and the `react-fusioncharts` component using any of the following methods:
 
@@ -24,7 +24,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 
-<div><strong>To install fusioncharts and the react-fusioncharts component via npm follow the steps below:</strong></div>
+<div><strong>To install fusioncharts and the `react-fusioncharts` component via npm follow the steps below:</strong></div>
 <div>1. Install the `react-fusioncharts` module</div>
 <pre><code class="custom-hlc language-javascript">
     $ npm install react-fusioncharts --save
@@ -37,7 +37,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 </div>
 
 <div class='tab cdn-tab'>
-<div><strong>To install the FusionCharts package and the react-fusioncharts component follow the steps below:</strong></div>
+<div><strong>To install the FusionCharts package and the `react-fusioncharts` component follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the [React](https://reactjs.org/)core library.
