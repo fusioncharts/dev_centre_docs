@@ -1,8 +1,8 @@
 {
     type: 'sparkwinloss',
     renderAt: 'chart-container',
-    width: '400',
-    height: '60',
+    width: '450',
+    height: '70',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -12,15 +12,12 @@
             "subCaptionFontSize": "11",
             "numberPrefix": "$",
             "chartBottomMargin": "20",
-            //Setting period length (Period defined as a set of 3 match)
             "periodlength": "3",
-            //Defining period color
             "periodcolor": "#cccccc",
-            //Setting period transparency
-            "periodalpha": "90",
+            "periodalpha": "90"
         },
         "dataset": [{
-            "set": [{
+            "data": [{
                 "value": "L"
             }, {
                 "value": "L"

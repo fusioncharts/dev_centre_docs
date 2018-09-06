@@ -13,7 +13,10 @@
             "bgColor": "#ffffff",
             "captionPadding": "7",
             "valuePadding": "7",
-            "numberPrefix": "$"
+            "numberPrefix": "$",
+            "showopenvalue": "1",
+            "showclosevalue": "1",
+            "theme": "fusion"
         },
         "dataset": [{
             "data": [{

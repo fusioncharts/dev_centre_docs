@@ -473,9 +473,9 @@ By default, the tooltip text for the data plots in a box and whisker chart inclu
     </tr>
 
     <tr>
-        <td> `$errorPercent` </td>
+        <td> `$errorPercentValue` </td>
         <td> Represents the error value, in percent, of a data plot </td>
-        <td> <li> Error bar chart </li> <li> Error line 2D chart </li> <li> Error scatter chart </li> </td>
+        <td> <li> Error bar chart </li> <li> Error line 2D chart </li> </td>
         <td> <li> `chart`: {`plotToolText`} </li> <li> `dataset`: {`plotToolText`} </li> <li> `data`: {`toolText`} </li> </td>
     </tr>
 

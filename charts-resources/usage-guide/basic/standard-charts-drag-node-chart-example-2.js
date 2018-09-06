@@ -8,9 +8,6 @@
         "chart": {
             "caption": "US Subway Map",
             "xaxisminvalue": "0",
-            "xaxismaxvalue": "100",
-            "yaxisminvalue": "0",
-            "yaxismaxvalue": "100",
             "is3d": "0",
             "showformbtn": "1",
             "formaction": "resources/php/chart-guide-drag-node-chart-introduction-update.php",

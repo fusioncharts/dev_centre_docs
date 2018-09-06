@@ -17,6 +17,8 @@
             "periodcolor": "#cccccc",
             //Setting period transparency
             "periodalpha": "50",
+            "showopenvalue": "1",
+            "showclosevalue": "1"
         },
         "dataset": [{
             "data": [{
