@@ -112,10 +112,9 @@ In this page, we will create the chart using npm. To know how to create charts u
 
 The Column 2D chart is shown below:
 
-{% embed_chart getting-started-your-first-chart.js %} 
+{% embed_all getting-started-your-first-chart.js %} 
 
 The data for the above chart is shown in the table below:
-
 
 Country|No. of Oil Reserves||
 -|-|-
@@ -201,21 +200,16 @@ To render the chart, follow the steps below:
 6. Add the chart and the theme as a dependency to the core
 
 7. Store the chart configurations in a JSON object. In this JSON object:
-
-* Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-
-* Set the width and height (in pixels). 
-
-* Set the `dataFormat` as JSON.
-
-* Embed the json data as the value of the `dataSource`.
+    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height (in pixels). 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of the `dataSource`.
 
 8. Create the `DOM` element and pass the react-fusioncharts component directly to the **ReactDOM.render()** method.
 
 The consolidated code is shown below:
 
 ```JavaScript
-
 // Step 1 - including react
 
 import React from 'react';
@@ -291,7 +285,6 @@ ReactDOM.render(
     <ReactFC {...chartConfigs} />,
     document.getElementById('root'),
 );
-
 ```
 
 That's it! Your first chart using `react-fusioncharts` is ready.
