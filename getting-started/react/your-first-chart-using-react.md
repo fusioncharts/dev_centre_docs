@@ -17,56 +17,50 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 
 **Using local files:**
 
-To install the **FusionCharts** package and the `react-fusioncharts` component follow the steps below:
 
-1. Include the [React ](https://reactjs.org/)core library.
 
-2. Include [Babel ](https://babeljs.io/)for [JSX ](https://unpkg.com/babel-standalone/babel.min.js) transpiling.
 
-3. Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
-
-4. Include the `react-fusioncharts` component.
-
-5. Include the FusionCharts theme file to apply the style to the charts.
-
-The consolidated code is shown below:
 
 ```HTML
 
-<head>
-    <!-- Step 1 - Including react  -->
-    <script type="text/javascript" src="path/to/local/react.js"></script>
-    <script type="text/javascript" src="path/to/local/react-dom.js"></script>
-    <!-- Step 2 - Including Babel for JSX transpiling -->
-    <script type="text/javascript" src="path/to/local/babel-core.js"></script>
-    <!-- Step 3 - Including the fusioncharts core library -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-    <!-- Step 4 - Including the react-fusioncharts component -->
-    <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
-    <!-- Step 5 - Including the fusion theme -->
-    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-</head>
+
 
 ```
 
-**Using CDN:**
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='npm'>NPM</a></li>
+    <li><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='localfiles'>Using Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab npm-tab active'>
 
-To install the FusionCharts package and the react-fusioncharts component follow the steps below:
+<div><strong>To install fusioncharts and the react-fusioncharts component via npm follow the steps below:</strong></div>
+<div>1. Install the `react-fusioncharts` module</div>
+<pre><code class="custom-hlc language-javascript">
+    $ npm install react-fusioncharts --save
+</code></pre>
+<div>2. Install the `fusioncharts` package</div>
+<pre><code class="custom-hlc language-javascript">
+    $ npm install fusioncharts --save
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-1. Include the [React ](https://reactjs.org/)core library.
-
-2. Include [Babel ](https://babeljs.io/)for [JSX ](https://unpkg.com/babel-standalone/babel.min.js) transpiling.
-
-3. Include the **FusionCharts** JavaScript files from CDN.
-
-4. Include the `react-fusioncharts` module.
-
-5. Include the theme file.
-
-The consolidated code is shown below:
-
-```HTML
-
+<div class='tab cdn-tab'>
+<div><strong>To install the FusionCharts package and the react-fusioncharts component follow the steps below:</strong></div>
+<div>
+    <ul>
+        <li>Include the [React](https://reactjs.org/)core library.
+        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
+        <li>Include the **FusionCharts** JavaScript files from CDN.</li>
+        <li>Include the `react-fusioncharts` module.</li>
+        <li>Include the theme file.</li>
+    </ul>
+</div>
+<div>The consolidated code is shown below:</div>
+<pre><code class="custom-hlc language-javascript">
 <head>
     <!-- Step 1 - Including react -->
     <script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"></script>
@@ -80,28 +74,43 @@ The consolidated code is shown below:
     <!-- Step 5 - Including the fusion theme -->
     <script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"></script>
 </head>
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-```
 
-**Using npm**
+<div class='tab localfiles-tab'>
+<div><strong>To install the **FusionCharts** package and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div>
+    <ul>
+        <li>Include the [React](https://reactjs.org/)core library.</li>
+        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
+        <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>Include the `react-fusioncharts` component.</li>
+        <li>Include the FusionCharts theme file to apply the style to the charts.</li>
+    </ul>
+</div>
+<div>The consolidated code is shown below:</div>
+<pre><code class="custom-hlc language-javascript">
+<head>
+    <!-- Step 1 - Including react  -->
+    <script type="text/javascript" src="path/to/local/react.js"></script>
+    <script type="text/javascript" src="path/to/local/react-dom.js"></script>
+    <!-- Step 2 - Including Babel for JSX transpiling -->
+    <script type="text/javascript" src="path/to/local/babel-core.js"></script>
+    <!-- Step 3 - Including the fusioncharts core library -->
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <!-- Step 4 - Including the react-fusioncharts component -->
+    <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
+    <!-- Step 5 - Including the fusion theme -->
+    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+</head>
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-To install fusioncharts and the react-fusioncharts component via npm follow the steps below:
-
-1. Install the `react-fusioncharts` module
-
-```
-
-$ npm install react-fusioncharts --save
-
-```
-
-2. Install the `fusioncharts` package
-
-```
-
-$ npm install fusioncharts --save
-
-```
+</div>
+</div>
 
 That completes the installation of FusionCharts and the react-fusioncharts component.
 
@@ -111,7 +120,7 @@ Let's create a Column 2D chart using the react-fusioncharts component showing th
 
 In this page, we will create the chart using npm. To know how to create charts using `**locally**` and `**CDN**` click here.
 
-FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 The Column 2D chart is shown below:
 
@@ -175,7 +184,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-Note: Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts. 
+Note: Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts. 
 
 In the above JSON data: 
 
