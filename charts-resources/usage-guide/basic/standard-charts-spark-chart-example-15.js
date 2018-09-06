@@ -1,7 +1,7 @@
 {
     type: 'sparkcolumn',
     renderAt: 'chart-container',
-    width: '300',
+    width: '450',
     height: '80',
     dataFormat: 'json',
     dataSource: {

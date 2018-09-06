@@ -1,8 +1,8 @@
 {
     type: 'realtimeline',
     renderAt: 'chart-container',
-    width: '500',
-    height: '300',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -16,7 +16,6 @@
             "yaxismaxvalue": "36",
             "numdisplaysets": "10",
             "labeldisplay": "rotate",
-            "showValues": "0",
             "showRealTimeValue": "0",
             "theme": "fusion"
         },
