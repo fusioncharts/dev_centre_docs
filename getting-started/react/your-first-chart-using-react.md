@@ -31,7 +31,7 @@ To install the **FusionCharts** package and the `react-fusioncharts` component f
 
 The consolidated code is shown below:
 
-```
+```HTML
 
 <head>
     <!-- Step 1 - Including react  -->
@@ -65,26 +65,20 @@ To install the FusionCharts package and the react-fusioncharts component follow 
 
 The consolidated code is shown below:
 
-```
+```HTML
 
 <head>
     <!-- Step 1 - Including react -->
-    <script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js
-
-"></script>
-    <script type="text/javascript"
-
-src="https://unpkg.com/react-dom@16/umd/react-dom.development.js
-
-"></script>
+    <script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
     <!-- Step 2 - Including Babel for JSX transpiling -->
     <script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <!-- Step 3 - Including the fusioncharts core library -->
-    <script type="text/javascript" src="**[http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js](http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)**"></script>
+    <script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
     <!-- Step 4 - Including the react-fusioncharts component-->
-    <script type="text/javascript" src="**https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js**"></script>
+    <script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"></script>
     <!-- Step 5 - Including the fusion theme -->
-    <script type="text/javascript" src="**[http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js](http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)**"></script>
+    <script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"></script>
 </head>
 
 ```
@@ -121,7 +115,7 @@ FusionCharts Suite has 95+ chart types for you to explore. Find the complete lis
 
 The Column 2D chart is shown below:
 
-<Live chart> 
+{% embed_chart getting-started-your-first-chart.js %} 
 
 The data for the above chart is shown in the table below:
 
@@ -141,7 +135,45 @@ China|30||
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format as shown below:
 
-<JSON DATA>
+```json
+{
+    // Chart Configuration
+    "chart": {
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion",
+    },
+    // Chart Data
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
+}
+```
 
 Note: Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts. 
 
@@ -185,7 +217,7 @@ To render the chart, follow the steps below:
 
 The consolidated code is shown below:
 
-```
+```JavaScript
 
 // Step 1 - including react
 
@@ -221,19 +253,41 @@ const chartConfigs = {
 
 // Chart Configuration 
         "chart": {
-            ...
-        },
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, …
-
-   }]
-    },
-};
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+            },
+            // Chart Data
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
+        }
+    };
 
 // Step 8 - creating the DOM element to pass the react-fusioncharts component 
 ReactDOM.render(
