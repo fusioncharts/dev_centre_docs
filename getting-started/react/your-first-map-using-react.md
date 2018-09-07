@@ -8,118 +8,102 @@ In this page, we'll see how to install FusionCharts and render a map using the `
 
 Install **FusionCharts** and the `react-fusioncharts` component using any of the following methods:
 
-**Local files:**
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='npm'>NPM</a></li>
+    <li><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='localfiles'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab npm-tab active'>
 
-To install the **FusionCharts** package and the `react-fusioncharts` component follow the steps below:
+<div><strong>To install fusioncharts and the `react-fusioncharts` component via npm follow the steps below:</strong></div>
+<div>1. Install the `react-fusioncharts` module</div>
+<pre><code class="custom-hlc language-javascript">
+    $ npm install react-fusioncharts --save
+</code></pre>
+<div>2. Install the `fusioncharts` package</div>
+<pre><code class="custom-hlc language-javascript">
+    $ npm install fusioncharts --save
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-1. Include the [React ](https://reactjs.org/)core library.
+<div class='tab cdn-tab'>
+<div><strong>To install react-fusioncharts create an HTML file and follow the steps below:</strong></div>
+<div>
+    <ol>
+        <li>1. Include the [React](https://reactjs.org/)core library.</li>
+        <li>2. Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
+        <li>3. Include the **FusionCharts** package.</li>
+        <li>4. Include the FusionCharts map renderer.</li>
+        <li>5. Include the map definition file.</li>
+        <li>6. Include the `react-fusioncharts` module.</li>
+        <li>7. Include the FusionCharts theme file to apply the style to the charts.</li>
+    </ol>
+</div>
+<div>The consolidated code is shown below:</div>
+<pre><code class="custom-hlc language-javascript">
+&lt;head&gt;
+    &lt;!-- Step 1 - Including react --&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 2 - Including Babel for JSX transpiling --&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 3 Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="**[http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js](http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)**"&gt;&lt;/script&gt;
+    &lt;!-- Step 4 - Including the map renderer file --&gt;
+    &lt;script type="text/javascript" src="**[http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js](http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)**"&gt;&lt;/script&gt;
+    &lt;!-- Step 5 - Including the map definition file --&gt;
+    &lt;script type="text/javascript" src="**[http://cdn.fusioncharts.com/fusioncharts/latest/](http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)**fusioncharts.world.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 6 - Including the react-fusioncharts component --&gt;
+    &lt;script type="text/javascript" src="**https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js**"&gt;&lt;/script&gt;
+    &lt;!-- Step 7 - Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src="**[http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js](http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)**"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-2. Include [Babel ](https://babeljs.io/)for [JSX ](https://unpkg.com/babel-standalone/babel.min.js) transpiling.
 
-1. Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+<div class='tab localfiles-tab'>
+<div><strong>To install the **FusionCharts** package and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div>
+    <ol>
+        <li>1. Include the [React](https://reactjs.org/)core library.</li>
+        <li>2. Include [Babel](https://babeljs.io/) for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
+        <li>3. Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>4. Include the FusionMap renderer. </li>
+        <li>5. Include the map definition file.</li>
+        <li>6. Include the `react-fusioncharts` module.</li>
+        <li>7. Include the FusionCharts theme file to apply the style to the charts.</li>
+    </ol>
+</div>
+<div>The consolidated code is shown below:</div>
+<pre><code class="custom-hlc language-javascript">
+&lt;head&gt;
+    &lt;!-- Step 1 - Including react --&gt;
+    &lt;script type="text/javascript" src="path/to/local/react.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-dom.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 2 - Including Babel for JSX transpiling --&gt;
+    &lt;script type="text/javascript" src="path/to/local/babel-core.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 4 - Including the map renderer file --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 5 - Including the map definition file --&gt;
+    &lt;script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 6 - Including the react-fusioncharts component --&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 7 - Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-3. Include the FusionMap renderer. 
-
-4. Include the map definition file.
-
-5. Include the `react-fusioncharts` module.
-
-6. Include the FusionCharts theme file to apply the style to the charts.
-
-The consolidated code is shown below:
-
-```HTML
-
-<head>
-   
-    <!-- Step 1 - Including react -->
-    <script type="text/javascript" src="path/to/local/react.js"></script>
-    <script type="text/javascript" src="path/to/local/react-dom.js"></script>
-    <!-- Step 2 - Including Babel for JSX transpiling -->
-    <script type="text/javascript" src="path/to/local/babel-core.js"></script>
-    <!-- Step 3 - Including the fusioncharts core library -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-
-<!-- Step 4 - Including the map renderer file -->
-
-<script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-
-<!-- Step 5 - Including the map definition file -->
-
-<script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"></script>
-
-    <!-- Step 6 - Including the react-fusioncharts component -->
-    <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
-    <!-- Step 7 - Including the fusion theme -->
-    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-</head>
-
-```
-
-**Using CDN links:**
-
-To install react-fusioncharts create an HTML file and follow the steps below:
-
-1. Include the [React ](https://reactjs.org/)core library.
-
-2. Include [Babel ](https://babeljs.io/)for [JSX ](https://unpkg.com/babel-standalone/babel.min.js) transpiling.
-
-3. Include the **FusionCharts** package.
-
-4. Include the FusionCharts map renderer. 
-
-5. Include the map definition file.
-
-6. Include the `react-fusioncharts` module.
-
-7. Include the FusionCharts theme file to apply the style to the charts.
-
-The consolidated code is shown below:
-
-```HTML
-
-<head>
-
-    <!-- Step 1 - Including react -->
-    <script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script type="text/javascript"
-
-src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <!-- Step 2 - Including Babel for JSX transpiling -->
-    <script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <!-- Step 3 Including the fusioncharts core library -->
-    <script type="text/javascript" src="**[http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js](http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)**"></script>
-
-<!-- Step 4 - Including the map renderer file -->
-
-<script type="text/javascript" src="**[http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js](http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)**"></script>
-
-<!-- Step 5 - Including the map definition file -->
-
-<script type="text/javascript" src="**[http://cdn.fusioncharts.com/fusioncharts/latest/](http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)**fusioncharts.world.js"></script>
-    <!-- Step 6 - Including the react-fusioncharts component -->
-    <script type="text/javascript" src="**https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js**"></script>
-    <!-- Step 7 - Including the fusion theme -->
-    <script type="text/javascript" src="**[http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js](http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)**"></script>
-</head>
-
-```
-
-**Using npm**
-
-To install react-fusioncharts via npm follow the steps below:
-
-1. Install the **react-fusioncharts** module
-
-```
-$ npm install react-fusioncharts --save
-```
-
-2. Install the **fusioncharts** package
-
-```
-$ npm install fusioncharts --save
-```
+</div>
+</div>
 
 ## Create you First map
 
@@ -150,7 +134,7 @@ However, when you convert the data into a format (JSON or XML) supported by Fusi
 
 For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
 
-We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/maps/spec-sheets/world)for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
+We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/maps/spec-sheets/world)for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
 
  In this example, we will use the JSON format as shown below:
 

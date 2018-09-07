@@ -227,12 +227,10 @@ The consolidated code is shown below:
 
 <pre><code class="custom-hlc language-javascript">
 // Step 1 - Including react
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Step 2 - Including the react-fusioncharts component
-
 import ReactFC from 'react-fusioncharts';
 
 // Step 3 - Including the fusioncharts library
@@ -245,11 +243,9 @@ import AngularGauge from 'fusioncharts/viz/angulargauge';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Step 6 - Adding the gauge as dependency to the core fusioncharts
-
 ReactFC.fcRoot(FusionCharts, AngularGauge, FusionTheme);
 
 // Step 7 - Creating the JSON object to store the chart configurations
-
 const chartConfigs = {
     type: 'angulargauge', // The gauge type
     width: '450', // Width of the gauge
@@ -366,7 +362,7 @@ ReactDOM.render(
 
 <div class='tab localfiles-tab'>
 <pre><code class="custom-hlc language-javascript">
-    &lt;html&gt;
+&lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
