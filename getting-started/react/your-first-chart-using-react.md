@@ -305,8 +305,8 @@ ReactDOM.render(
 &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
-    FusionCharts.ready(function(){
-    var fusioncharts = new FusionCharts({
+'use strict';
+const chartConfigs = {
     type: 'column2d',
     renderAt: 'chart-container',
     width: '700',
@@ -349,15 +349,25 @@ ReactDOM.render(
             "value": "30"
         }]
     }
-});
-    fusioncharts.render();
-    });
+};
+class App extends React.Component {
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;ReactFC {...chartConfigs} /&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+ReactDOM.render(
+  &lt;App /&gt;,
+  document.getElementById('root')
+);
 &lt;/script&gt;
 &lt;/head&gt;
-&lt;body&gt;
-    &lt;div id="chart-container"&gt;FusionCharts XT will load here!&lt;/div&gt;
-&lt;/body&gt;
 &lt;/html&gt;
+
+
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -367,12 +377,12 @@ ReactDOM.render(
 <pre><code class="custom-hlc language-javascript">
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;My First Chart using FusionCharts Suite XT&lt;/title&gt;
+&lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
-    FusionCharts.ready(function(){
-    var fusioncharts = new FusionCharts({
+'use strict';
+const chartConfigs = {
     type: 'column2d',
     renderAt: 'chart-container',
     width: '700',
@@ -415,14 +425,22 @@ ReactDOM.render(
             "value": "30"
         }]
     }
-});
-    fusioncharts.render();
-    });
+};
+class App extends React.Component {
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;ReactFC {...chartConfigs} /&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+ReactDOM.render(
+  &lt;App /&gt;,
+  document.getElementById('root')
+);
 &lt;/script&gt;
 &lt;/head&gt;
-&lt;body&gt;
-    &lt;div id="chart-container"&gt;FusionCharts XT will load here!&lt;/div&gt;
-&lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
