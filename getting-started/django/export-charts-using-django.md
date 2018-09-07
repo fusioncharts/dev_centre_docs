@@ -4,7 +4,7 @@ description: This article focuses on how you can export your chart using Ruby on
 heading: Exporting Charts
 ---
 
-FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG and VML. A prominent feature of the suite is the ability to export the rendered charts in JPG, PNG, SVG, PDF formats and export chart data as well. This article focuses on how you can export charts using FusionCharts JSP wrapper.
+FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG and VML. A prominent feature of the suite is the ability to export the rendered charts in JPG, PNG, SVG, PDF formats and export chart data as well. This article focuses on how you can export charts using FusionCharts Django wrapper.
 
 In this section we will discuss how to:
 
