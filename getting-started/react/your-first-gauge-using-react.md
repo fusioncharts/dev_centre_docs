@@ -110,7 +110,7 @@ In this page, we will create the gauge using npm. To know how to create gauge us
 
 The angular gauge is shown below:
 
-{% embed_chart getting-started-your-first-chart.js %}
+{% embed_chart getting-started-your-first-widget.js %}
 
 The thresholds for the above sample have been defined using the following range:
 
@@ -248,33 +248,41 @@ const chartConfigs = {
         dataSource: {
             // Gauge Configuration
             "chart": {
-                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-                "lowerLimit": "0",
-                "upperLimit": "100",
-                ...            },
-            // Chart Data
-            "colorRange": {
-                "color": [{
-                    "minValue": "0",
-                    "maxValue": "50",
-                    "code": "#F2726F"
-                }, {
-                    "minValue": "50",
-                    "maxValue": "75",
-                    "code": "#FFC533"
-                }, {
-                    "minValue": "75",
-                    "maxValue": "100",
-                    "code": "#62B58F"
-                }]
-            },
-            "dials": {
-                "dial": [{
-                    "value": "81"
-                }]
-            }
-        }
-    };
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion",
+    },
+        // Chart Data
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    }
+};
 
 // Step 8 - Creating the DOM element to pass the react-fusioncharts component
 ReactDOM.render(
