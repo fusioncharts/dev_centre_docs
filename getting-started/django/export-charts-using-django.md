@@ -1,6 +1,6 @@
 ---
 title: Exporting Charts | FusionCharts
-description: This article focuses on how you can export your chart using Ruby on Rails.
+description: This article focuses on how you can export your chart using Django.
 heading: Exporting Charts
 ---
 
@@ -8,9 +8,9 @@ FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG 
 
 In this section we will discuss how to:
 
-* [Export Charts as Image and PDF]({% site.baseurl %}/getting-started/ruby-on-rails/export-charts-using-ruby-on-rails#export-charts-as-image-and-pdf-1)
-* [Modes of Export]({% site.baseurl %}/getting-started/ruby-on-rails/export-charts-using-ruby-on-rails#modes-of-export-2)
-* [Export Chart Data]({% site.baseurl %}/getting-started/ruby-on-rails/export-charts-using-ruby-on-rails#export-chart-data-3)
+* [Export Charts as Image and PDF]({% site.baseurl %}/getting-started/django/export-charts-using-django#export-charts-as-image-and-pdf-1)
+* [Modes of Export]({% site.baseurl %}/getting-started/django/export-charts-using-django#modes-of-export-2)
+* [Export Chart Data]({% site.baseurl %}/getting-started/django/export-charts-using-django#export-chart-data-3)
 
 ## Export Charts as Image and PDF
 
