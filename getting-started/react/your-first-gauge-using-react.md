@@ -110,7 +110,7 @@ In this page, we will create the gauge using npm. To know how to create gauge us
 
 The angular gauge is shown below:
 
-{% embed_chart getting-started-your-first-widget.js %}
+{% embed_all getting-started-your-first-widget.js %}
 
 The thresholds for the above sample have been defined using the following range:
 
