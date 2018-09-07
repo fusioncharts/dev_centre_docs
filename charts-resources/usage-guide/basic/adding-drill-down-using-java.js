@@ -63,6 +63,7 @@
                     "divlineColor": "#999999",
                     "divLineIsDashed": "1",
                     "showAlternateHGridColor": "0",
+                    "theme": "fusion"
                 },
                 "data": [{
                     "label": "Shanghai",
@@ -107,6 +108,7 @@
                     "divlineColor": "#999999",
                     "divLineIsDashed": "1",
                     "showAlternateHGridColor": "0",
+                    "theme": "fusion"
                 },
                 "data": [{
                     "label": "Mumbai (Bombay)",
@@ -151,6 +153,7 @@
                     "divlineColor": "#999999",
                     "divLineIsDashed": "1",
                     "showAlternateHGridColor": "0",
+                    "theme": "fusion"
                 },
                 "data": [{
                     "label": "New York",
@@ -195,6 +198,7 @@
                     "divlineColor": "#999999",
                     "divLineIsDashed": "1",
                     "showAlternateHGridColor": "0",
+                    "theme": "fusion"
                 },
                 "data": [{
                     "label": "Jakarta",
@@ -239,6 +243,7 @@
                     "divlineColor": "#999999",
                     "divLineIsDashed": "1",
                     "showAlternateHGridColor": "0",
+                    "theme": "fusion"
                 },
                 "data": [{
                     "label": "S?o Paulo",
@@ -283,6 +288,7 @@
                     "divlineColor": "#999999",
                     "divLineIsDashed": "1",
                     "showAlternateHGridColor": "0",
+                    "theme": "fusion"
                 },
                 "data": [{
                     "label": "Karachi",
@@ -327,6 +333,7 @@
                     "divlineColor": "#999999",
                     "divLineIsDashed": "1",
                     "showAlternateHGridColor": "0",
+                    "theme": "fusion"
                 },
                 "data": [{
                     "label": "Moscow",
@@ -371,6 +378,7 @@
                     "divlineColor": "#999999",
                     "divLineIsDashed": "1",
                     "showAlternateHGridColor": "0",
+                    "theme": "fusion"
                 },
                 "data": [{
                     "label": "Dhaka",
@@ -415,6 +423,7 @@
                     "divlineColor": "#999999",
                     "divLineIsDashed": "1",
                     "showAlternateHGridColor": "0",
+                    "theme": "fusion"
                 },
                 "data": [{
                     "label": "Tokyo",
@@ -459,6 +468,7 @@
                     "divlineColor": "#999999",
                     "divLineIsDashed": "1",
                     "showAlternateHGridColor": "0",
+                    "theme": "fusion"
                 },
                 "data": [{
                     "label": "Lagos",
