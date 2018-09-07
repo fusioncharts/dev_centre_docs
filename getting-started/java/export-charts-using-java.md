@@ -1,6 +1,6 @@
 ---
 title: Exporting Charts | FusionCharts
-description: This article focuses on how you can export your chart using react.
+description: This article focuses on how you can export your chart using java.
 heading: Exporting Charts
 ---
 
@@ -8,9 +8,9 @@ FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG 
 
 In this section we will discuss how to:
 
-* [Export Charts as Image and PDF]({% site.baseurl %}/getting-started/react/export-charts-using-react#export-charts-as-image-and-pdf-1)
-* [Modes of Export]({% site.baseurl %}/getting-started/react/export-charts-using-react#modes-of-export-2)
-* [Export Chart Data]({% site.baseurl %}/getting-started/react/export-charts-using-react#export-chart-data-3)
+* [Export Charts as Image and PDF]({% site.baseurl %}/getting-started/java/export-charts-using-java#export-charts-as-image-and-pdf-1)
+* [Modes of Export]({% site.baseurl %}/getting-started/java/export-charts-using-java#modes-of-export-2)
+* [Export Chart Data]({% site.baseurl %}/getting-started/java/export-charts-using-java#export-chart-data-3)
 
 ## Export Charts as Image and PDF
 

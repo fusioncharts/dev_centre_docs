@@ -2,7 +2,6 @@
 title: Your First Chart in Java using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the FusionCharts JSP wrapper.
 heading: Your First Chart in Java using FusionCharts
-chartPresent: false
 ---
 
 FusionCharts Suite XT includes the **FusionCharts JSP** wrapper that lets you create interactive, data-driven charts.
