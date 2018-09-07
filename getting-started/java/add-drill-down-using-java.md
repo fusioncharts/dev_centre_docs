@@ -1,204 +1,220 @@
 ---
-title: Adding Drill Down using Vue | FusionCharts
+title: Adding Drill Down using Java | FusionCharts
 description: This article focuses on drill down charts.
-heading: Adding Drill Down using Vue
-chartPresent: true
+heading: Adding Drill Down using Java
 ---
 
 With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
 
 You can drill-down to descendant charts by simply clicking the data plot items on the parent chart. A descendant chart can either replace the parent chart with an option to drill-up, or it can open in a new window or frame.
 
-### Features of the FusionCharts JavaScript Class
+Let's say that you now need to plot a chart that shows the top 10 most populous countries and the top 10 most populous cities in these countries. Assume that the __fusioncharts_jspsample__ database also includes the __City__ table that stores the population of all cities in all countries. 
 
-* Automatically creates and shows a detailed descendant chart when you click on the corresponding data plot item linked in the parent chart
+Drill-down charts are used to show data at different levels of a hierarchy.
 
-* Clones all chart configuration settings from the parent chart to create the descendant charts
+Therefore, the resultant drill-down chart, according to the use-case, looks like this:
 
-* Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configurelink-21) function
+{% embed_chart using-with-server-side-languages-java-creating-charts-with-data-from-a-database-example-2.js %}
 
-* Uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed
+To render the above chart, we need a JSP files —__country.jsp__. The __country.jsp__ file creates a drill-down column 2D chart showing the most populous countries and the most populous cities for countries that will be selected in the parent chart.
 
-* Supports drill-down to an unlimited number of levels
+The data structure that should go into the __country.jsp__ file is given below:
 
-## Create drill-down 
+```java
 
-To create drill-down charts, follow the steps given below:
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@page import="java.sql.*" %>
+<%@page import="java.util.*" %>
+<%@page import="com.google.gson.*" %>
 
-1. Create the JSON/XML data for the parent chart. This is called the parent data source.
+<%
+    
+/* 
+    The following four code lines contain the database connection information.
+    Alternatively, you can move these code lines to a separate file and
+    include the file here. You can also modify this code based on your 
+    database connection. 
+ */
 
-2. Append the data string or the data URL for the descendant charts within the parent data source. If you append a string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
+   String hostdb = "localhost:3306";  // MySQl host
+   String userdb = "root";  // MySQL username
+   String passdb = "";  // MySQL password
+   String namedb = "fusioncharts_jspsample";  // MySQL database name
 
-Once you implement these steps, the FusionCharts JavaScript class takes care of the rest. Let's see the steps in details.
+    // Establish a connection to the database
+    DriverManager.registerDriver(new com.mysql.jdbc.Driver());
+    Connection con = DriverManager.getConnection("jdbc:mysql://" + hostdb + "/" + namedb , userdb , passdb);
+   
+    %>
 
-As an example, we will consider a simple scenario of a parent chart with the single level of drill-down.
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Creating Charts with Data from a Database - fusioncharts.com</title>
+<!--    Step 1: Include the `fusioncharts.js` file. This file is needed to
+        render the chart. Ensure that the path to this JS file is correct.
+        Otherwise, it may lead to JavaScript errors.
+--> 
+        <script src="../scripts/fusioncharts.js"></script>
+    </head>
+    <body>
+         <div id="chart"></div>
+         
+<!--    Step 2: Include the `FusionCharts.java` file as a package in your 
+        project.
+    
+        Step 3:Include the package in the file where you want to show 
+        FusionCharts.
 
-The parent chart is a column 2D chart that shows the yearly sales of the top three juice flavors, for the last year. When you click on the data plot for a particular flavor of juice, it drills-down to show a pie 2D chart that shows the quarterly sales figures for that flavor.
+-->
+        <%@page import="fusioncharts.FusionCharts" %>
 
-The above chart, when rendered, looks like the following:
+<!--
+        
+        Step 4: Create a chart object using the FusionCharts JAVA class 
+        constructor. Syntax for the constructor: 
+        `FusionCharts("type of chart", "unique chart id", "width of chart",
+                        "height of chart", "div id to render the chart", 
+                        "data format", "data source")`   
+-->         
+        <%
+         /* 
+            google-gson
+    
+            Gson is a Java library facilitating conversion of Java objects 
+            into their JSON representation and 
+            JSON strings into their equivalant Java objects. 
+            Gson can also work with arbitrary Java objects 
+            including the pre-existing ones that 
+            you may not have the source-code for. 
+            Read the note below this code for more details on the google-gson library.           
+         */
+    
+            Gson gson = new Gson();
+            
+            
+            // Form the SQL query that returns the top 10 most populous countries
+            String sqlQueryCountry="SELECT * FROM Country ORDER BY Population DESC LIMIT 10";
 
-{% embed_chart add-drill-down-using-angular-example-1.js %}
+            // Prepare the query statement    
+            PreparedStatement ptCountry=con.prepareStatement(sqlQueryCountry);  
+            // Prepare the query statement
+            ResultSet rsCountry=ptCountry.executeQuery();
+            
+            // The 'chart' map object holds the chart attributes and data.
+            Map<String, String> chart = new HashMap<String, String>();
+            
+            chart.put("caption", "Top 10 Most Populous Countries");
+            chart.put("showValues", "0");
+            chart.put("theme", "zune");
+ 
+            // Push the data into the array using map object.
+            ArrayList data = new ArrayList();
+            
+            /*
+                `linkeddata` array: It contains data for individual linked 
+                items. The links should be defined in the format 
+                `newchart-dataformat-datasource`. 
+            */
+            ArrayList linkeddata = new ArrayList();
+            while(rsCountry.next()) {
+            /*
+                The `link` attribute: It defines the unique id of the linked 
+                data inside the `linkeddata` array. Using this attribute 
+                FusionCharts finds out the corresponding data for each linked 
+                item.
+                
+                For the data string method, dataformat takes JSON and 
+                datasource takes the value of the unique identifier that 
+                refers to the data embedded inside the linkeddata array in 
+                the parent data source. So the Country drill-down links will 
+                get generated as newchart-json-IND, newchart-json-CHN ... 
+            */    
+                Map<String, String> lv = new HashMap<String, String>();
+                lv.put("label", rsCountry.getString("Name"));
+                lv.put("value", rsCountry.getString("Population"));
+                lv.put("link", "newchart-json-" + rsCountry.getString("Code"));
+                data.add(lv);
+      
+                // Create the linkedDataObj for cities drilldown    
+                Map<String, String> linkedDataObj = new HashMap<String, String>();
+                // Inititate the linkedDataObj for cities drilldown
+                linkedDataObj.put("id", rsCountry.getString("Code"));
+                
+               // The 'linkedChartAttribute' map object holds the chart attributes .
+                Map<String, String> linkedChartAttribute = new HashMap<String, String>();
+                linkedChartAttribute.put("caption" , "Top 10 Most Populous Cities - " + rsCountry.getString("Name") );
+                linkedChartAttribute.put("showValues", "0");
+                linkedChartAttribute.put("theme" , "zune");
 
-The JSON data to render the above chart:
+                // Convert the data in the `City` model into a format that can be consumed by FusionCharts.     
+                ArrayList linkedChartData = new ArrayList();
+                
+                // Filtering the data base on the Country Code
+                // Form the SQL query that returns the top 10 most populous countries
+                String sqlQueryCity="SELECT Name, Population FROM City WHERE CountryCode = ? ORDER BY Population DESC LIMIT 10";
 
-```json
-{
-    "chart": {
-        "caption": "Top 3 Juice Flavors",
-        "subcaption": "Last year",
-        "xaxisname": "Flavor",
-        "yaxisname": "Amount (In USD)",
-        "numberprefix": "$",
-        "theme": "fusion",
-        "rotateValues": "0"
-    },
-    "data": [{
-        "label": "Apple",
-        "value": "810000",
-        "link": "newchart-xml-apple"
-    }, {
-        "label": "Cranberry",
-        "value": "620000",
-        "link": "newchart-xml-cranberry"
-    }, {
-        "label": "Grapes",
-        "value": "350000",
-        "link": "newchart-xml-grapes"
-    }],
-    "linkeddata": [{
-        "id": "apple",
-        "linkedchart": {
-            "chart": {
-                "caption": "Apple Juice - Quarterly Sales",
-                "subcaption": "Last year",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "rotateValues": "0",
-                "plottooltext": "$label, $dataValue,  $percentValue"
-            },
-            "data": [{
-                "label": "Q1",
-                "value": "157000"
-            }, {
-                "label": "Q2",
-                "value": "172000"
-            }, {
-                "label": "Q3",
-                "value": "206000"
-            }, {
-                "label": "Q4",
-                "value": "275000"
-            }]
-        }
-    }, {
-        "id": "cranberry",
-        "linkedchart": {
-            "chart": {
-                "caption": "Cranberry Juice - Quarterly Sales",
-                "subcaption": "Last year",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "plottooltext": "$label, $dataValue,  $percentValue"
-            },
-            "data": [{
-                "label": "Q1",
-                "value": "102000"
-            }, {
-                "label": "Q2",
-                "value": "142000"
-            }, {
-                "label": "Q3",
-                "value": "187000"
-            }, {
-                "label": "Q4",
-                "value": "189000"
-            }]
-        }
-    }, {
-        "id": "grapes",
-        "linkedchart": {
-            "chart": {
-                "caption": "Grapes Juice - Quarterly Sales",
-                "subcaption": "Last year",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "rotateValues": "0",
-                "plottooltext": "$label, $dataValue,  $percentValue"
-            },
-            "data": [{
-                "label": "Q1",
-                "value": "45000"
-            }, {
-                "label": "Q2",
-                "value": "72000"
-            }, {
-                "label": "Q3",
-                "value": "95000"
-            }, {
-                "label": "Q4",
-                "value": "108000"
-            }]
-        }
-    }]
-}
-```
+                // Prepare the query statement.
+                PreparedStatement ptCity=con.prepareStatement(sqlQueryCity);  
+                ptCity.setString(1, rsCountry.getString("Code"));
+                // Execute the query.
+                ResultSet rsCity=ptCity.executeQuery();
+                while(rsCity.next()) {
+                  Map<String, String> arrDara = new HashMap<String, String>();
+                  arrDara.put("label", rsCity.getString("Name"));
+                  arrDara.put("value", rsCity.getString("Population"));
+                  linkedChartData.add(arrDara);
+                } 
+                
+                //closing the connection.
+                rsCity.close();
+            
+            /*  create a 'linkedchart' map object to make a FC's 
+                linkedchart structure.
+            */    
+                Map<String, String> linkedchart = new HashMap<String, String>();
+            /*
+                gson.toJson() the data to retrieve the string containing the
+                JSON representation of the data in the array.
+            */    
+                linkedchart.put("chart", gson.toJson(linkedChartAttribute));
+                linkedchart.put("data", gson.toJson(linkedChartData));
+               
+                linkedDataObj.put("linkedchart", gson.toJson(linkedchart));
+                linkeddata.add(linkedDataObj);
+            } //end of while loop
+            
+            //closing the connection.
+            rsCountry.close();
+ 
+            //create 'dataMap' map object to make a complete FC datasource.
+            Map<String, String> dataMap = new LinkedHashMap<String, String>();  
+        
+            dataMap.put("chart", gson.toJson(chart));
+            dataMap.put("data", gson.toJson(data));
+            dataMap.put("linkeddata", gson.toJson(linkeddata));
 
-In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
+            FusionCharts columnChart= new FusionCharts(
+                        //type of chart
+                        "column2d",             
+                        //unique chart ID
+                        "chart1",               
+                        //width and height of the chart
+                        "500","300",            
+                        //div ID of the chart container
+                        "chart",                
+                        //data format
+                        "json",                 
+                        //data source
+                        gson.toJson(dataMap)    
+                    );
+           
+            %>
+<!--    Step 5: Render the chart    -->                
+            <%=columnChart.render()%>
+    </body>
+</html>
 
-The code to render a chart is given below:
 
-```
-FusionCharts.ready(function() {
-
-    Vue.use(VueFusionCharts);
-
-    // Load datasource from data.json
-    var dataSource = getDataSource();
-
-    var app = new Vue({
-        el: '#app',
-        data: {
-            width: '700',
-            height: '400',
-            type: 'column2d',
-            dataFormat: 'json',
-            dataSource: dataSource
-        },
-        methods: {
-            configureLink: function(chart) {
-                this.chartInstance = chart; // Save it for further use
-
-                // Configure Drilldown attributes 
-                // See this : https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configureLink
-                this.chartInstance.configureLink({
-                    type: "pie2d",
-                    overlayButton: {
-                        message: 'Back',
-                        fontColor: '880000',
-                        bgColor: 'FFEEEE',
-                        borderColor: '660000'
-                    }
-                }, 0)
-            }
-        },
-        mounted: function() {
-            this.configureLink(this.$refs.fc.chartObj); // this.$refs.fc gets the vue-fusionchart component
-        }
-    });
-});
-```
-
-Now, use the `fusioncharts` directive in a template. The HTML template is given below:
-
-```html
-<div id="app">
-    <fusioncharts
-    :type="type"
-    :width="width"
-    :height="height"
-    :dataFormat="dataFormat"
-    :dataSource="dataSource"
-    ref="fc"
-    ></fusioncharts>
-</div>
 ```
