@@ -111,7 +111,7 @@
                     "theme": "fusion"
                 },
                 "data": [{
-                    "label": "Mumbai (Bombay)",
+                    "label": "Mumbai [Bombay]",
                     "value": 10500000
                 }, {
                     "label": "Delhi",
@@ -120,7 +120,7 @@
                     "label": "Calcutta [Kolkata]",
                     "value": 4399819
                 }, {
-                    "label": "Chennai (Madras)",
+                    "label": "Chennai [Madras]",
                     "value": 3841396
                 }, {
                     "label": "Hyderabad",
