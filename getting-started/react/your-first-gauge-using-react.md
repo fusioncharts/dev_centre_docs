@@ -1,7 +1,7 @@
 ---
-title: Your First Chart in React using FusionCharts | FusionCharts
-description: This article outlines the steps to be executed for creating your first chart using the react-fusioncharts component.
-heading: Create a chart in React using FusionCharts
+title: Your First Gauge in React using FusionCharts | FusionCharts
+description: This article outlines the steps to be executed for creating your first gauge using the react-fusioncharts component.
+heading: Create a Gauge in React using FusionCharts
 chartPresent: false
 ---
 
@@ -15,83 +15,90 @@ In this page, we'll see how to install FusionCharts and render a gauge using the
 
 Install **FusionCharts** and the `react-fusioncharts` component using any of the following methods:
 
-**Local files:**
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='npm'>NPM</a></li>
+    <li><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='localfiles'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab npm-tab active'>
 
-To install the **FusionCharts** package and the `react-fusioncharts` component follow the steps below:
+<div><strong>To install fusioncharts and the `react-fusioncharts` component via npm follow the steps below:</strong></div>
+<div>1. Install the `react-fusioncharts` module</div>
+<pre><code class="custom-hlc language-javascript">
+    $ npm install react-fusioncharts --save
+</code></pre>
+<div>2. Install the `fusioncharts` package</div>
+<pre><code class="custom-hlc language-javascript">
+    $ npm install fusioncharts --save
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-1. Include the [React ](https://reactjs.org/)core library.
+<div class='tab cdn-tab'>
+<div><strong>To install the FusionCharts package and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div>
+    <ol>
+        <li>Include the [React](https://reactjs.org/)core library.
+        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
+        <li>Include the **FusionCharts** JavaScript files from CDN.</li>
+        <li>Include the `react-fusioncharts` module.</li>
+        <li>Include the theme file.</li>
+    </ol>
+</div>
+<div>The consolidated code is shown below:</div>
+<pre><code class="custom-hlc language-javascript">
+&lt;head&gt;
+    &lt;!-- Step 1 - Including react --&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script &gt;
+    &lt;!-- Step 2 - Including Babel for JSX transpiling --&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script &gt;
+    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
+    &lt;!-- Step 4 - Including the react-fusioncharts component--&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script &gt;
+    &lt;!-- Step 5 - Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
+&lt;/head&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-2. Include [Babel ](https://babeljs.io/)for [JSX ](https://unpkg.com/babel-standalone/babel.min.js) transpiling.
 
-1. Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+<div class='tab localfiles-tab'>
+<div><strong>To install the **FusionCharts** package and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div>
+    <ol>
+        <li>Include the [React](https://reactjs.org/)core library.</li>
+        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
+        <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>Include the `react-fusioncharts` component.</li>
+        <li>Include the FusionCharts theme file to apply the style to the charts.</li>
+    </ol>
+</div>
+<div>The consolidated code is shown below:</div>
+<pre><code class="custom-hlc language-javascript">
+&lt;head&gt;
+    &lt;!-- Step 1 - Including react  --&gt;
+    &lt;script type="text/javascript" src="path/to/local/react.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-dom.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 2 - Including Babel for JSX transpiling --&gt;
+    &lt;script type="text/javascript" src="path/to/local/babel-core.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 4 - Including the react-fusioncharts component --&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 5 - Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-3. Include the `react-fusioncharts` module.
-
-4. Include the FusionCharts theme file to apply the style to the charts.
-
-The consolidated code is shown below:
-
-<head>
-    <meta charset="utf-8">
-    <title>React - FusionCharts</title>
-    <!-- Step 1 - Including react-->
-    <script type="text/javascript" src="path/to/local/react.js"></script>
-    <script type="text/javascript" src="path/to/local/react-dom.js"></script>
-    <!-- Step 2 - Including Babel for JSX transpiling-->
-    <script type="text/javascript" src="path/to/local/babel-core.js"></script>
-    <!-- Step 3 - Including the fusioncharts core library -->
-    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-    <!-- Step 4 - Including the react-fusioncharts component-->
-    <script type="text/javascript" src="path/to/local/react-fusioncharts.js"></script>
-    <!-- Step 5 - Including the fusion theme-->
-    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-</head>
-
-**Using CDN links:**
-
-To install the FusionCharts package and the react-fusioncharts component follow the steps below:
-
-1. Include the [React ](https://reactjs.org/)core library.
-
-2. Include [Babel ](https://babeljs.io/)for [JSX ](https://unpkg.com/babel-standalone/babel.min.js) transpiling.
-
-3. Include the **FusionCharts** JavaScript files from CDN.
-
-4. Include the `react-fusioncharts` module.
-
-5. Include the FusionCharts theme file to apply the style to the charts.
-
-The consolidated code is shown below:
-
-<head>
-    <meta charset="utf-8">
-    <title>React - FusionCharts</title>
-    <!-- Step 1 - Including react -->
-    <script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"></script>
-    <script type="text/javascript"
-
-src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
-    <!-- Step 2 - Including Babel for JSX transpiling-->
-    <script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
-    <!-- Step 3 - Including the react-fusioncharts component -->
-    <script type="text/javascript" src="**[http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js](http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)**"></script>
-    <!-- Step 4 - Including the react-fusioncharts component -->
-    <script type="text/javascript" src="**https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js**"></script>
-    <!-- Step 5 - Including the fusion theme-->
-    <script type="text/javascript" src="**[http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js](http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)**"></script>
-</head>
-
-**Using npm**
-
-To install fusioncharts and the react-fusioncharts component via npm follow the steps below:
-
-1. Install the **react-fusioncharts** module
-
-$ npm install react-fusioncharts --save
-
-2. Install the **fusioncharts** package
-
-$ npm install fusioncharts --save
+</div>
+</div>
 
 ## Create your first gauge
 
@@ -103,7 +110,7 @@ In this page, we will create the gauge using npm. To know how to create gauge us
 
 The angular gauge is shown below:
 
-<live gauge>
+{% embed_chart getting-started-your-first-chart.js %}
 
 The thresholds for the above sample have been defined using the following range:
 
@@ -114,31 +121,67 @@ Range|Color|Hex Code||
 50-75|Yellow|#FFC533||
 75-100|Green|#62B58F||
 
-
-
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
 ## Convert tabular data into JSON format
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. In this example, we will use the JSON format as shown below:
 
-<JSON DATA>
+```json
+{
+    // Chart Configuration
+    "chart": {
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion",
+    },
+    // Chart Data
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
+}
+```
 
 In the above JSON: 
 
-* Create the **chart** object to define the elements of the gauge.
+* Create the `chart` object to define the elements of the gauge.
 
-* Create the **colorRange** array to set the color associated with the specific range of values.
+* Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify the **min** and **max** value within the **color** array under the **colorRange** array.
+* Specify the `min` and `max` value within the `color` array under the `colorRange` array.
 
-* Specify the hex code of the color within the **color** array.
+* Specify the hex code of the color within the `color` array.
 
-* Create the **dials** array to represent the customer satisfaction score.
+* Create the `dials` array to represent the customer satisfaction score.
 
-* Create the **dial** array under the **dials** array and set the value of the dial.
+* Create the `dial` array under the `dials` array and set the value of the dial.
 
-The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the gauge.
+The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
 Now that you have converted the tabular data to JSON format, let's learn how to render the gauge.
 
@@ -146,11 +189,11 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 
 To render the gauge, follow the steps below:
 
-1. Include **react.**
+1. Include `react`
 
-2. Include **react-fusioncharts**
+2. Include `react-fusioncharts`
 
-3. Include the **fusioncharts** library
+3. Include the `fusioncharts` library
 
 4. Include gauge type.
 
@@ -160,18 +203,19 @@ To render the gauge, follow the steps below:
 
 7. Store the chart configurations as a JSON object. In this JSON object:
 
-* Set the gauge type as `angulargauge`.  Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the gauge type as `angulargauge`.  Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
-* Set the width and height (in pixels). 
+    * Set the width and height (in pixels). 
 
-* Set the `dataFormat` as **json**.
+    * Set the `dataFormat` as **json**.
 
-* Embed the json data as the value of the `dataSource`.
+    * Embed the json data as the value of the `dataSource`.
 
 8. Create the DOM element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
 
 The consolidated code is shown below:
 
+```JavaScript
 // Step 1 - Including react
 
 import React from 'react';
@@ -237,6 +281,7 @@ ReactDOM.render(
     <ReactFC {...chartConfigs} />,
     document.getElementById('root'),
 );
+```
 
 That's it! Your first gauge using `react-fusioncharts` is ready.
 
