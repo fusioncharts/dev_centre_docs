@@ -14,7 +14,7 @@ Drill-down charts are used to show data at different levels of a hierarchy.
 
 Therefore, the resultant drill-down chart, according to the use-case, looks like this:
 
-{% embed_chart using-with-server-side-languages-java-creating-charts-with-data-from-a-database-example-2.js %}
+{% embed_all adding-drill-down-using-java.js %}
 
 To render the above chart, we need a JSP files —__country.jsp__. The __country.jsp__ file creates a drill-down column 2D chart showing the most populous countries and the most populous cities for countries that will be selected in the parent chart.
 
