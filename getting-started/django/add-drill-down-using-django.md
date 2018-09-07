@@ -97,7 +97,7 @@ def chart(request):
       dataSource['linkeddata'].append(linkData)
 
     # Create an object for the Column 2D chart using the FusionCharts class constructor                 
-    column2D = FusionCharts("column2D", "ex1" , "600", "350", "chart-1", "json", dataSource)
+    column2D = FusionCharts("column2D", "ex1" , "700", "400", "chart-1", "json", dataSource)
     return render(request, 'index.html', {'output': column2D.render()}) 
 ```
 
