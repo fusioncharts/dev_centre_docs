@@ -110,7 +110,7 @@ In this page, we will create the gauge using npm. To know how to create gauge us
 
 The angular gauge is shown below:
 
-{% embed_all getting-started-your-first-widget.js %}
+{% embed_chart getting-started-your-first-widget.js %}
 
 The thresholds for the above sample have been defined using the following range:
 
@@ -215,7 +215,17 @@ To render the gauge, follow the steps below:
 
 The consolidated code is shown below:
 
-```JavaScript
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='npm'>NPM</a></li>
+    <li><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='localfiles'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab npm-tab active'>
+
+<pre><code class="custom-hlc language-javascript">
 // Step 1 - Including react
 
 import React from 'react';
@@ -242,19 +252,19 @@ ReactFC.fcRoot(FusionCharts, AngularGauge, FusionTheme);
 
 const chartConfigs = {
     type: 'angulargauge', // The gauge type
-        width: '450', // Width of the gauge
-        height: '250', // Height of the gauge
-        dataFormat: 'json', // Data type
-        dataSource: {
-            // Gauge Configuration
-            "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "theme": "fusion",
-    },
+    width: '450', // Width of the gauge
+    height: '250', // Height of the gauge
+    dataFormat: 'json', // Data type
+    dataSource: {
+        // Gauge Configuration
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion",
+        },
         // Chart Data
         "data": [{
             "label": "Venezuela",
@@ -289,7 +299,134 @@ ReactDOM.render(
     <ReactFC {...chartConfigs} />,
     document.getElementById('root'),
 );
-```
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab cdn-tab'>
+<pre><code class="custom-hlc language-javascript">
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    FusionCharts.ready(function(){
+    var fusioncharts = new FusionCharts({
+    type: 'angulargauge',
+    renderAt: 'chart-container',
+    width: '450',
+    height: '250',
+    dataFormat: 'json',
+    dataSource: {
+        // Chart Configuration
+        "chart": {
+            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+            "lowerLimit": "0",
+            "upperLimit": "100",
+            "showValue": "1",
+            "numberSuffix": "%",
+            "theme": "fusion",
+            "showToolTip": "0"
+        },
+        // Chart Data
+        "colorRange": {
+            "color": [{
+                "minValue": "0",
+                "maxValue": "50",
+                "code": "#F2726F"
+            }, {
+                "minValue": "50",
+                "maxValue": "75",
+                "code": "#FFC533"
+            }, {
+                "minValue": "75",
+                "maxValue": "100",
+                "code": "#62B58F"
+            }]
+        },
+        "dials": {
+            "dial": [{
+                "value": "81"
+            }]
+        }
+    }
+});
+    fusioncharts.render();
+    });
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="chart-container"&gt;FusionCharts XT will load here!&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab localfiles-tab'>
+<pre><code class="custom-hlc language-javascript">
+    &lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
+&lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    FusionCharts.ready(function(){
+    var fusioncharts = new FusionCharts({
+    type: 'angulargauge',
+    renderAt: 'chart-container',
+    width: '450',
+    height: '250',
+    dataFormat: 'json',
+    dataSource: {
+        // Chart Configuration
+        "chart": {
+            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+            "lowerLimit": "0",
+            "upperLimit": "100",
+            "showValue": "1",
+            "numberSuffix": "%",
+            "theme": "fusion",
+            "showToolTip": "0"
+        },
+        // Chart Data
+        "colorRange": {
+            "color": [{
+                "minValue": "0",
+                "maxValue": "50",
+                "code": "#F2726F"
+            }, {
+                "minValue": "50",
+                "maxValue": "75",
+                "code": "#FFC533"
+            }, {
+                "minValue": "75",
+                "maxValue": "100",
+                "code": "#62B58F"
+            }]
+        },
+        "dials": {
+            "dial": [{
+                "value": "81"
+            }]
+        }
+    }
+});
+    fusioncharts.render();
+    });
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="chart-container"&gt;FusionCharts XT will load here!&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 That's it! Your first gauge using `react-fusioncharts` is ready.
 
