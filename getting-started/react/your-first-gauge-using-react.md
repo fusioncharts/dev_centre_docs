@@ -307,54 +307,65 @@ ReactDOM.render(
 &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
-    FusionCharts.ready(function(){
-    var fusioncharts = new FusionCharts({
-    type: 'angulargauge',
-    renderAt: 'chart-container',
-    width: '450',
-    height: '250',
-    dataFormat: 'json',
+'use strict';
+const chartConfigs = {
+    type: 'angulargauge', // The gauge type
+    width: '450', // Width of the gauge
+    height: '250', // Height of the gauge
+    dataFormat: 'json', // Data type
     dataSource: {
-        // Chart Configuration
+        // Gauge Configuration
         "chart": {
-            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-            "lowerLimit": "0",
-            "upperLimit": "100",
-            "showValue": "1",
-            "numberSuffix": "%",
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
             "theme": "fusion",
-            "showToolTip": "0"
         },
         // Chart Data
-        "colorRange": {
-            "color": [{
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#F2726F"
-            }, {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#FFC533"
-            }, {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#62B58F"
-            }]
-        },
-        "dials": {
-            "dial": [{
-                "value": "81"
-            }]
-        }
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
     }
-});
-    fusioncharts.render();
-    });
+};
+class App extends React.Component {
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;ReactFC {...chartConfigs} /&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+ReactDOM.render(
+  &lt;App /&gt;,
+  document.getElementById('root')
+);
 &lt;/script&gt;
 &lt;/head&gt;
-&lt;body&gt;
-    &lt;div id="chart-container"&gt;FusionCharts XT will load here!&lt;/div&gt;
-&lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -368,54 +379,65 @@ ReactDOM.render(
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
-    FusionCharts.ready(function(){
-    var fusioncharts = new FusionCharts({
-    type: 'angulargauge',
-    renderAt: 'chart-container',
-    width: '450',
-    height: '250',
-    dataFormat: 'json',
+'use strict';
+const chartConfigs = {
+    type: 'angulargauge', // The gauge type
+    width: '450', // Width of the gauge
+    height: '250', // Height of the gauge
+    dataFormat: 'json', // Data type
     dataSource: {
-        // Chart Configuration
+        // Gauge Configuration
         "chart": {
-            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-            "lowerLimit": "0",
-            "upperLimit": "100",
-            "showValue": "1",
-            "numberSuffix": "%",
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
             "theme": "fusion",
-            "showToolTip": "0"
         },
         // Chart Data
-        "colorRange": {
-            "color": [{
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#F2726F"
-            }, {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#FFC533"
-            }, {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#62B58F"
-            }]
-        },
-        "dials": {
-            "dial": [{
-                "value": "81"
-            }]
-        }
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
     }
-});
-    fusioncharts.render();
-    });
+};
+class App extends React.Component {
+  render() {
+    return (
+      &lt;div&gt;
+        &lt;ReactFC {...chartConfigs} /&gt;
+      &lt;/div&gt;
+    )
+  }
+}
+ReactDOM.render(
+  &lt;App /&gt;,
+  document.getElementById('root')
+);
 &lt;/script&gt;
 &lt;/head&gt;
-&lt;body&gt;
-    &lt;div id="chart-container"&gt;FusionCharts XT will load here!&lt;/div&gt;
-&lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
