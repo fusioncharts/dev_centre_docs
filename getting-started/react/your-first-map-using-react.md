@@ -111,11 +111,15 @@ To install react-fusioncharts via npm follow the steps below:
 
 1. Install the **react-fusioncharts** module
 
+```
 $ npm install react-fusioncharts --save
+```
 
 2. Install the **fusioncharts** package
 
+```
 $ npm install fusioncharts --save
+```
 
 ## Create you First map
 
