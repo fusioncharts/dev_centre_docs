@@ -115,9 +115,7 @@ The data structure for the `countryDrillDown.php` file is given below:
 
 ```php
 <?php
-
  /* Include the `includes/fusioncharts.php` file that contains functions to embed the charts.*/
-
    include("includes/fusioncharts.php");
 
   /* The following 4 code lines contains the database connection information. Alternatively, you can move these code lines to a separate file and include the file here. You can also modify this code based on your database connection.   */
