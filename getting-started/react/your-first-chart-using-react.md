@@ -290,7 +290,7 @@ const chartConfigs = {
 
 // Step 8 - Creating the DOM element to pass the react-fusioncharts component 
 ReactDOM.render(
-    <ReactFC {...chartConfigs} />,
+    &lt;ReactFC {...chartConfigs} /&gt;,
     document.getElementById('root'),
 );
 </code></pre>
@@ -350,19 +350,12 @@ const chartConfigs = {
         }]
     }
 };
-class App extends React.Component {
-  render() {
-    return (
-      &lt;div&gt;
-        &lt;ReactFC {...chartConfigs} /&gt;
-      &lt;/div&gt;
-    )
-  }
-}
+&lt;script type="text/jsx"&gt;
 ReactDOM.render(
-  &lt;App /&gt;,
-  document.getElementById('root')
+    &lt;ReactFC {...chartConfigs} /&gt;,
+    document.getElementById('chart-container')
 );
+&lt;/script&gt;
 &lt;/script&gt;
 &lt;/head&gt;
 &lt;/html&gt;
@@ -426,19 +419,12 @@ const chartConfigs = {
         }]
     }
 };
-class App extends React.Component {
-  render() {
-    return (
-      &lt;div&gt;
-        &lt;ReactFC {...chartConfigs} /&gt;
-      &lt;/div&gt;
-    )
-  }
-}
+&lt;script type="text/jsx"&gt;
 ReactDOM.render(
-  &lt;App /&gt;,
-  document.getElementById('root')
+    &lt;ReactFC {...chartConfigs} /&gt;,
+    document.getElementById('chart-container')
 );
+&lt;/script&gt;
 &lt;/script&gt;
 &lt;/head&gt;
 &lt;/html&gt;
