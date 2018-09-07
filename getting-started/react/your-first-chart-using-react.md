@@ -205,7 +205,7 @@ To render the chart, follow the steps below:
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
-8. Create the `DOM` element and pass the react-fusioncharts component directly to the **ReactDOM.render()** method.
+8. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
 
 The consolidated code is shown below:
 
@@ -219,7 +219,7 @@ The consolidated code is shown below:
 <div class='tab npm-tab active'>
 
 <pre><code class="custom-hlc language-javascript">
-// Step 1 - including react
+// Step 1 - Including react
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -374,7 +374,7 @@ ReactDOM.render(
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
-'use strict';
+
 const chartConfigs = {
     type: 'column2d',
     renderAt: 'chart-container',
@@ -419,12 +419,13 @@ const chartConfigs = {
         }]
     }
 };
+&lt;/script&gt;
 &lt;script type="text/jsx"&gt;
 ReactDOM.render(
     &lt;ReactFC {...chartConfigs} /&gt;,
     document.getElementById('chart-container')
 );
-&lt;/script&gt;
+
 &lt;/script&gt;
 &lt;/head&gt;
 &lt;/html&gt;
