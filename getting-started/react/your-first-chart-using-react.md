@@ -350,13 +350,14 @@ const chartConfigs = {
         }]
     }
 };
+&lt;/script&gt;
 &lt;script type="text/jsx"&gt;
 ReactDOM.render(
     &lt;ReactFC {...chartConfigs} /&gt;,
     document.getElementById('chart-container')
 );
 &lt;/script&gt;
-&lt;/script&gt;
+
 &lt;/head&gt;
 &lt;/html&gt;
 
@@ -425,7 +426,6 @@ ReactDOM.render(
     &lt;ReactFC {...chartConfigs} /&gt;,
     document.getElementById('chart-container')
 );
-
 &lt;/script&gt;
 &lt;/head&gt;
 &lt;/html&gt;
