@@ -106,8 +106,6 @@ That completes the installation of FusionCharts and the react-fusioncharts compo
 
 Let's create a Column 2D chart using the react-fusioncharts component showing the "Countries With Most Oil Reserves". 
 
-In this page, we will create the chart using npm. To know how to create charts using **local files** and **CDN** click here.
-
 > FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 The Column 2D chart is shown below:

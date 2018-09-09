@@ -1,3 +1,10 @@
+---
+title: Your First Map in React using FusionCharts | FusionCharts
+description: This article outlines the steps to be executed for creating your first map using the react-fusioncharts component.
+heading: Create a Map in React using FusionCharts
+chartPresent: false
+---
+
 ## Overview
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **React** component which provides bindings for **FusionCharts**. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any **React** project. 

@@ -104,9 +104,9 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 
 Gauges are powerful tools that can showcase information using a radial scale to display data. 
 
-To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below. 
+To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below.
 
-In this page, we will create the gauge using npm. To know how to create gauge using **local files** and **CDN** click here.
+> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts). 
 
 The angular gauge is shown below:
 
