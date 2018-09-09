@@ -381,7 +381,6 @@ ReactDOM.render(
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;script type="text/javascript"&gt;
-
 const chartConfigs = {
     type: 'column2d',
     renderAt: 'chart-container',
