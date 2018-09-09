@@ -307,7 +307,6 @@ ReactDOM.render(
 &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
-'use strict';
 const chartConfigs = {
     type: 'angulargauge', // The gauge type
     width: '450', // Width of the gauge
@@ -351,18 +350,12 @@ const chartConfigs = {
         }]
     }
 };
-class App extends React.Component {
-  render() {
-    return (
-      &lt;div&gt;
-        &lt;ReactFC {...chartConfigs} /&gt;
-      &lt;/div&gt;
-    )
-  }
-}
+
+&lt;/script&gt;
+&lt;script type="text/jsx"&gt;
 ReactDOM.render(
-  &lt;App /&gt;,
-  document.getElementById('root')
+    &lt;ReactFC {...chartConfigs} /&gt;,
+    document.getElementById('chart-container')
 );
 &lt;/script&gt;
 &lt;/head&gt;
