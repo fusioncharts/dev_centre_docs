@@ -106,8 +106,6 @@ That completes the installation of FusionCharts and the react-fusioncharts compo
 
 Let's create a Column 2D chart using the react-fusioncharts component showing the "Countries With Most Oil Reserves". 
 
-In this page, we will create the chart using npm. To know how to create charts using **local files** and **CDN** click here.
-
 > FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 The Column 2D chart is shown below:
@@ -205,7 +203,7 @@ To render the chart, follow the steps below:
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
-8. Create the `DOM` element and pass the react-fusioncharts component directly to the **ReactDOM.render()** method.
+8. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
 
 The consolidated code is shown below:
 
@@ -219,7 +217,7 @@ The consolidated code is shown below:
 <div class='tab npm-tab active'>
 
 <pre><code class="custom-hlc language-javascript">
-// Step 1 - including react
+// Step 1 - Including react
 
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -290,7 +288,7 @@ const chartConfigs = {
 
 // Step 8 - Creating the DOM element to pass the react-fusioncharts component 
 ReactDOM.render(
-    <ReactFC {...chartConfigs} />,
+    &lt;ReactFC {...chartConfigs} /&gt;,
     document.getElementById('root'),
 );
 </code></pre>
@@ -301,11 +299,13 @@ ReactDOM.render(
 <pre><code class="custom-hlc language-javascript">
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
-&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
 &lt;script type="text/javascript"&gt;
-'use strict';
 const chartConfigs = {
     type: 'column2d',
     renderAt: 'chart-container',
@@ -350,18 +350,11 @@ const chartConfigs = {
         }]
     }
 };
-class App extends React.Component {
-  render() {
-    return (
-      &lt;div&gt;
-        &lt;ReactFC {...chartConfigs} /&gt;
-      &lt;/div&gt;
-    )
-  }
-}
+&lt;/script&gt;
+&lt;script type="text/jsx"&gt;
 ReactDOM.render(
-  &lt;App /&gt;,
-  document.getElementById('root')
+    &lt;ReactFC {...chartConfigs} /&gt;,
+    document.getElementById('chart-container')
 );
 &lt;/script&gt;
 &lt;/head&gt;
@@ -377,11 +370,14 @@ ReactDOM.render(
 <pre><code class="custom-hlc language-javascript">
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
-&lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/react.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-dom.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/babel-core.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
 &lt;script type="text/javascript"&gt;
-'use strict';
 const chartConfigs = {
     type: 'column2d',
     renderAt: 'chart-container',
@@ -426,18 +422,11 @@ const chartConfigs = {
         }]
     }
 };
-class App extends React.Component {
-  render() {
-    return (
-      &lt;div&gt;
-        &lt;ReactFC {...chartConfigs} /&gt;
-      &lt;/div&gt;
-    )
-  }
-}
+&lt;/script&gt;
+&lt;script type="text/jsx"&gt;
 ReactDOM.render(
-  &lt;App /&gt;,
-  document.getElementById('root')
+    &lt;ReactFC {...chartConfigs} /&gt;,
+    document.getElementById('chart-container')
 );
 &lt;/script&gt;
 &lt;/head&gt;

@@ -104,9 +104,9 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 
 Gauges are powerful tools that can showcase information using a radial scale to display data. 
 
-To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below. 
+To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below.
 
-In this page, we will create the gauge using npm. To know how to create gauge using **local files** and **CDN** click here.
+> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts). 
 
 The angular gauge is shown below:
 
@@ -303,11 +303,13 @@ ReactDOM.render(
 <pre><code class="custom-hlc language-javascript">
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
-&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
 &lt;script type="text/javascript"&gt;
-'use strict';
 const chartConfigs = {
     type: 'angulargauge', // The gauge type
     width: '450', // Width of the gauge
@@ -351,18 +353,12 @@ const chartConfigs = {
         }]
     }
 };
-class App extends React.Component {
-  render() {
-    return (
-      &lt;div&gt;
-        &lt;ReactFC {...chartConfigs} /&gt;
-      &lt;/div&gt;
-    )
-  }
-}
+
+&lt;/script&gt;
+&lt;script type="text/jsx"&gt;
 ReactDOM.render(
-  &lt;App /&gt;,
-  document.getElementById('root')
+    &lt;ReactFC {...chartConfigs} /&gt;,
+    document.getElementById('chart-container')
 );
 &lt;/script&gt;
 &lt;/head&gt;
@@ -375,11 +371,13 @@ ReactDOM.render(
 <pre><code class="custom-hlc language-javascript">
 &lt;html&gt;
 &lt;head&gt;
-&lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
-&lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript"&gt;
-'use strict';
+    &lt;script type="text/javascript" src="path/to/local/react.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-dom.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/babel-core.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
 const chartConfigs = {
     type: 'angulargauge', // The gauge type
     width: '450', // Width of the gauge
@@ -423,18 +421,12 @@ const chartConfigs = {
         }]
     }
 };
-class App extends React.Component {
-  render() {
-    return (
-      &lt;div&gt;
-        &lt;ReactFC {...chartConfigs} /&gt;
-      &lt;/div&gt;
-    )
-  }
-}
+};
+&lt;/script&gt;
+&lt;script type="text/jsx"&gt;
 ReactDOM.render(
-  &lt;App /&gt;,
-  document.getElementById('root')
+    &lt;ReactFC {...chartConfigs} /&gt;,
+    document.getElementById('chart-container')
 );
 &lt;/script&gt;
 &lt;/head&gt;
