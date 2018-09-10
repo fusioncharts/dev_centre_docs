@@ -13,17 +13,13 @@ To install **FusionCharts** and the `angular-fusioncharts` component via `npm` f
 **Step 1:** Install angular-fusioncharts
 
 ```
-
 $ npm install angular-fusioncharts --save
-
 ```
 
 **Step 2:** Install fusioncharts core library
 
 ```
-
 $ npm install fusioncharts --save
-
 ```
 
 That completes the installation of **FusionCharts** and the `angular-fusioncharts` component.
@@ -141,8 +137,16 @@ To render the chart follow the steps below:
 
 * Pass the `fusioncharts` library, map module, and the FusionTheme.
 
-```
 
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='angular4'>Angular 4 onward</a></li>
+    <li><a data-toggle='angular2'>Angular 2</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab angular4-tab active'>
+
+<pre><code class="custom-hlc language-javascript">
 import { FusionChartsModule } from 'angular-fusioncharts';
 import FusionCharts from 'fusioncharts/core';
 import FusionMaps from 'fusioncharts/maps'; // maps
@@ -164,11 +168,20 @@ FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
 })
 export class AppModule {
 }
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-Angular 2 
-
-For angular version 2.x.x, we cannot use 'fusioncharts/core' as it uses dynamic imports, which is not compatible with older version typescripts used by Angular 2. 
-
+<div class='tab angular2-tab'>
+<div class='mt-20'>For angular version <strong>2.x.x</strong>, we cannot use <strong>'fusioncharts/core'</strong> as it uses dynamic imports, which is not compatible with older version typescripts used by <strong>Angular 2.</strong>
+For Angular 2 the changes in the code are: 
+<ul> 
+<li> Use `*` as syntax. For example - `import * as FusionCharts from 'fusioncharts';`</li>
+<li> Change fusioncharts/core to fusioncharts</li>
+</ul>
+Refer to the code below:
+</div>
+<pre><code class="custom-hlc language-javascript">
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -178,15 +191,21 @@ import { AppComponent } from './app.component';
 import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Import FusionCharts library and chart modules
-import * as FusionCharts from 'fusioncharts'; // Change fusioncharts/core to fusioncharts and use ` *as`  syntax
-import*  as FusionMaps from 'fusioncharts/fusioncharts.maps'; // Contains all the charts under FusionCharts XT , Read below for details
+import \* as FusionCharts from 'fusioncharts'; // Change fusioncharts/core to fusioncharts and use ` *as`  syntax
+import \*  as FusionMaps from 'fusioncharts/fusioncharts.maps'; // Contains all the charts under FusionCharts XT , Read below for details
 
-Import  *as World from 'fusioncharts/maps/fusioncharts.world';
+Import \* as World from 'fusioncharts/maps/fusioncharts.world';
 
-import*  as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Pass the fusioncharts library and chart modules
 FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 Step 2: **Add data to the angular app.component.ts**
 
@@ -276,8 +295,7 @@ Create the chart container and define the following:
 
 > The code below is same for Angular older and latest versions.
 
-```
-
+```HTML
 <h1>
   {{title}}
 </h1>
@@ -321,8 +339,15 @@ After installing fusionmaps package, follow the steps to render the map:
 
 * Pass the `fusioncharts` library, map module, and the FusionTheme.
 
-```
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='angular4'>Angular 4 onward</a></li>
+    <li><a data-toggle='angular2'>Angular 2</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab angular4-tab active'>
 
+<pre><code class="custom-hlc language-javascript">
 import { FusionChartsModule } from 'angular-fusioncharts';
 import FusionCharts from 'fusioncharts/core';
 import FusionMaps from 'fusioncharts/maps'; // maps
@@ -344,11 +369,20 @@ FusionChartsModule.fcRoot(FusionCharts, FusionMaps, California, FusionTheme);
 })
 export class AppModule {
 }
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-Angular 2 
-
-For angular version 2.x.x, we cannot use 'fusioncharts/core' as it uses dynamic imports, which is not compatible with older version typescripts used by Angular 2. 
-
+<div class='tab angular2-tab'>
+<div class='mt-20'>For angular version <strong>2.x.x</strong>, we cannot use <strong>'fusioncharts/core'</strong> as it uses dynamic imports, which is not compatible with older version typescripts used by <strong>Angular 2.</strong>
+For Angular 2 the changes in the code are: 
+<ul> 
+<li> Use `*` as syntax. For example - `import * as FusionCharts from 'fusioncharts';`</li>
+<li> Change fusioncharts/core to fusioncharts</li>
+</ul>
+Refer to the code below:
+</div>
+<pre><code class="custom-hlc language-javascript">
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -358,15 +392,21 @@ import { AppComponent } from './app.component';
 import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Import FusionCharts library and chart modules
-import * as FusionCharts from 'fusioncharts'; // Change fusioncharts/core to fusioncharts and use ` *as`  syntax
-import*  as FusionMaps from 'fusioncharts/fusioncharts.maps'; // Contains all the charts under FusionCharts XT , Read below for details
+import \* as FusionCharts from 'fusioncharts'; // Change fusioncharts/core to fusioncharts and use ` *as`  syntax
+import \*  as FusionMaps from 'fusioncharts/fusioncharts.maps'; // Contains all the charts under FusionCharts XT , Read below for details
 
-Import  *as World from 'fusioncharts/maps/fusioncharts.california';
+Import \* as World from 'fusioncharts/maps/fusioncharts.california';
 
-import*  as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Pass the fusioncharts library and chart modules
 FusionChartsModule.fcRoot(FusionCharts, FusionMaps, California, FusionTheme);
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 Step 2: **Add data to the angular app.component.ts**
 

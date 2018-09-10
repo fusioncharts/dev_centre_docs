@@ -173,7 +173,7 @@ export class AppModule {
 
 <div class='tab angular2-tab'>
 <div class='mt-20'>For angular version <strong>2.x.x</strong>, we cannot use <strong>'fusioncharts/core'</strong> as it uses dynamic imports, which is not compatible with older version typescripts used by <strong>Angular 2.</strong>
-For Angualr 2 the changes in the code are: 
+For Angular 2 the changes in the code are: 
 <ul> 
 <li> Use `*` as syntax. For example - `import * as FusionCharts from 'fusioncharts';`</li>
 <li> Change fusioncharts/core to fusioncharts</li>
