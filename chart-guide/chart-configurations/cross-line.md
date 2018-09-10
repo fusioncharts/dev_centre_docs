@@ -176,7 +176,7 @@ Specify the character to separate the name and the value displayed in the toolti
 ```json
 {
     "chart": {
-        "toolTipSepChar": ":"
+        "toolTipSepChar": ","
     }
 }
 ```
