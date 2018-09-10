@@ -22,17 +22,13 @@ To install **FusionCharts** and the `angular-fusioncharts` component via `npm` f
 **Step 1:** Install angular-fusioncharts
 
 ```
-
 $ npm install angular-fusioncharts --save
-
 ```
 
 **Step 2:** Install fusioncharts core library
 
 ```
-
 $ npm install fusioncharts --save
-
 ```
 
 That completes the installation of **FusionCharts** and the `angular-fusioncharts` component.
@@ -51,21 +47,58 @@ The data for the above chart is shown in the table below:
 
 Country|No. of Oil Reserves||
 -|-|-
-Venezuela|290||
-Saudi|260||
-Canada|180||
-Iran|140||
-Russia|115||
-UAE|100||
-US|30||
-China|30||
-
+Venezuela|290|
+Saudi|260|
+Canada|180|
+Iran|140|
+Russia|115|
+UAE|100|
+US|30|
+China|30|
 
 ## Convert tabular data into JSON format
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format as shown below:
 
-<JSON DATA>
+```json
+{
+    // Chart Configuration
+    "chart": {
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion",
+    },
+    // Chart Data
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
+}
+```
 
 Note: Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts. 
 
@@ -95,16 +128,20 @@ To render the chart follow the steps below:
 
 * Pass the `fusioncharts` library and chart modules.
 
-```
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='angular4'>Angular 4 onwards</a></li>
+    <li><a data-toggle='angular2'>Angular 2</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab angular4-tab active'>
 
+<pre><code class="custom-hlc language-javascript">
 import { BrowserModule } from '@angular/platform-browser';
-
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
 
 // Import angular-fusioncharts
-
 import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Import fusioncharts core in the root
@@ -132,11 +169,12 @@ FusionChartsModule.fcRoot(FusionCharts, Column2D);
 })
 export class AppModule {
 }
-```
-**Angular 2**
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-For angular version 2.x.x, we cannot use 'fusioncharts/core' as it uses dynamic imports, which is not compatible with older version typescripts used by Angular 2. 
-
+<div class='tab angular2-tab'>
+<pre><code class="custom-hlc language-javascript">
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -153,6 +191,14 @@ import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Pass the fusioncharts library and chart modules
 FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
+
+For angular version 2.x.x, we cannot use 'fusioncharts/core' as it uses dynamic imports, which is not compatible with older version typescripts used by Angular 2. 
 
 **Step 2:** Add data to the angular `app.component.ts`
 
