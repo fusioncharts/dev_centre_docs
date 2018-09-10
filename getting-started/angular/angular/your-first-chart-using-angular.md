@@ -174,6 +174,7 @@ export class AppModule {
 </div>
 
 <div class='tab angular2-tab'>
+<div class='mt-20'>For angular version 2.x.x, we cannot use 'fusioncharts/core' as it uses dynamic imports, which is not compatible with older version typescripts used by Angular 2.</div>
 <pre><code class="custom-hlc language-javascript">
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -197,8 +198,6 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
 
 </div>
 </div>
-
-For angular version 2.x.x, we cannot use 'fusioncharts/core' as it uses dynamic imports, which is not compatible with older version typescripts used by Angular 2. 
 
 **Step 2:** Add data to the angular `app.component.ts`
 
