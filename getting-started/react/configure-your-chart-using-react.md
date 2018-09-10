@@ -232,33 +232,46 @@ To render the chart, follow the steps below:
 
 8. Create a component to include `react-fusioncharts` component.
 
-9. Write a **Math.random()** function to generate random number. You can also update the chart data using any other data.
+9. Call the **renderComplete()** function by FC-React component to return the rendered chart.
 
-10. Write a handler to update chart button.
+10. Write a handler to change the background (color) of the button.
 
-11. Add `updateData()` function to randomly update the value of the chart.
+11. Write a handler to change the caption alignment of the button.
 
-12. Add the `render()` function to create a `button` tag.
+12. Write a handler for the Reset button.
 
-13. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
+13. Add the `render()` function to create a buttons.
+
+14. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
 
 The full code of the above sample is given below:
 
 ```
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
+//Including react
+import React, { Component } from 'react';
 
+//Including the react-fusioncharts component
+import ReactDOM from 'react-dom';
+
+//Including the fusioncharts library
+import FusionCharts from 'fusioncharts/core';
+
+//Including the chart type
+import Column2D from 'fusioncharts/viz/column2d';
+
+//Including the theme as fusion
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+//Adding the chart as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
+//Creating the JSON object to store the chart configurations
+
 const chartConfigs = {
-    type: 'column2d',
-    width: 700,
-    height: 400,
-    dataFormat: 'json',
+    type: 'column2d',// The chart type
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'json', // Data type
     dataSource: {
     // Chart Configuration
         "chart": {
@@ -298,6 +311,7 @@ const chartConfigs = {
     },
 };
 
+//Your react component
 class Chart extends Component {
     constructor(props) {
         super(props);
@@ -336,6 +350,7 @@ class Chart extends Component {
         this.state.chart.setChartAttribute('captionAlignment', null);
     }
 
+    //Create buttons
     render() {
         return ( <
             div >
