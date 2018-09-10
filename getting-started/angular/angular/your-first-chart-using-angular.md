@@ -11,9 +11,9 @@ FusionCharts is a JavaScript charting library that enables you to create interac
 
 In this page, we'll see how to install FusionCharts and render a chart using the `angular-fusionCharts` component.
 
-> Since, **Angular2** and onward do not support the direct `<script>` inclusion of files, `angular-fusioncharts` can only be used via `npm`.
+> Since, **Angular2** and onward do not support the direct `<script>` tags, `angular-fusioncharts` can only be used via `npm`.
 
-In this page, we'll see how to install FusionCharts and render a chart using the `angular-fusionCharts` component.
+In this page, we'll see how to install **FusionCharts** and render a chart using the `angular-fusionCharts` component.
 
 ## Installation
 
@@ -100,7 +100,7 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-Note: Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts. 
+> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts. 
 
 In the above JSON data: 
 
@@ -174,7 +174,9 @@ export class AppModule {
 </div>
 
 <div class='tab angular2-tab'>
-<div class='mt-20'>For angular version 2.x.x, we cannot use 'fusioncharts/core' as it uses dynamic imports, which is not compatible with older version typescripts used by Angular 2.</div>
+<div class='mt-20'>For angular version <strong>2.x.x</strong>, we cannot use <strong>'fusioncharts/core'</strong> as it uses dynamic imports, which is not compatible with older version typescripts used by <strong>Angular 2.</strong>
+To code for Angualr 2 is shown below:
+</div>
 <pre><code class="custom-hlc language-javascript">
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -203,7 +205,7 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
 
 Set the JSON data within the `AppComponent` class as shown below:
 
-> The below code is same for Angular older and latest versions.
+> The code below is same for Angular older and latest versions.
 
 ```
 import {Component} from '@angular/core';
@@ -263,6 +265,8 @@ Create the chart container and define the following:
 * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 * Set the data source.
+
+> The code below is same for Angular older and latest versions.
 
 ```
 <h1>
