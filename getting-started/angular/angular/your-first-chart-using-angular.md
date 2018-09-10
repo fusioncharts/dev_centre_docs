@@ -83,11 +83,11 @@ Now that you have converted the tabular data to JSON format, let's see how to re
 
 To render the chart follow the steps below:
 
-**Step 1:** In 'app.module.ts` include the necessary files and add the dependency. 
+**Step 1:** In `app.module.ts` include the necessary files and add the dependency. 
 
-* Import **angular-fusioncharts** in the root @NgModule .
+* Import `angular-fusioncharts` in the root `@NgModule`.
 
-* Import FusionCharts library in the root @NgModule.
+* Import FusionCharts library in the root `@NgModule`.
 
 * Import the chart type.
 
