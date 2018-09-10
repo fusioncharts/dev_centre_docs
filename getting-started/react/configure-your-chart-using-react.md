@@ -166,7 +166,7 @@ ReactDOM.render(
 
 A chart, configured to update the **chart caption**, **sub-caption** alignment and chart **background** dynamically, is shown below (click any one of the buttons shown below the chart to change the chart background and caption, sub-caption alignment):
 
-{% embed_chart configure-charts-using-react-example-2.js %}
+{% embed_chartData configure-charts-using-react-example-2.js %}
 
 The JSON data to render the above chart is given below:
 
@@ -209,6 +209,38 @@ The JSON data to render the above chart is given below:
     }]
 },
 ```
+
+To render the chart, follow the steps below:
+
+1. Include **react**
+
+2. Include `react-fusioncharts`
+
+3. Include the `fusioncharts` library
+
+4. Include the chart type
+
+5. Include the FusionCharts theme file to apply the style to the charts
+
+6. Add the chart and the theme as a dependency to the core
+
+7. Store the chart configurations in a JSON object. In this JSON object:
+    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height (in pixels). 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of the `dataSource`.
+
+8. Create a component to include `react-fusioncharts` component.
+
+9. Write a **Math.random()** function to generate random number. You can also update the chart data using any other data.
+
+10. Write a handler to update chart button.
+
+11. Add `updateData()` function to randomly update the value of the chart.
+
+12. Add the `render()` function to create a `button` tag.
+
+13. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
 
 The full code of the above sample is given below:
 
@@ -338,191 +370,4 @@ ReactDOM.render( <
     Chart / > ,
     document.getElementById('root'),
 );
-```
-
-## Add Annotations
-
-Annotations are graphical elements (different types of shapes, custom text, and so on) that you can render on your chart to make it more informative, while making it visually appealing.
-
-A spline chart using annotations to highlight a particular anchor along with text is shown below:
-
-{% embed_chart configure-charts-using-react-example-3.js %}
-
-The JSON data to render the above chart is given below:
-
-```
-{
-    "chart": {
-        "caption": "Average Monthly Temperature in Texas",
-        "yAxisName": "Average Monthly Temperature",
-        "anchorradius": "5",
-        "plotToolText": "Average temperature in $label is <b>$dataValue</b>",
-        "showHoverEffect": "1",
-        "showvalues": "0",
-        "numberSuffix": "°C",
-        "theme": "fusion",
-        "anchorBgColor": "#72D7B2",
-        "paletteColors": "#72D7B2"
-    },
-    "annotations": {
-        "groups": [{
-            "id": "anchor-highlight",
-            "items": [{
-                "id": "high-star",
-                "type": "circle",
-                "x": "$dataset.0.set.7.x",
-                "y": "$dataset.0.set.7.y",
-                "radius": "12",
-                "color": "#cc0000",
-                "border": "2",
-                "borderColor": "#0075c2"
-            }, {
-                "id": "label",
-                "type": "text",
-                "text": "Hottest Month",
-                "fillcolor": "#0075c2",
-                "rotate": "90",
-                "x": "$dataset.0.set.7.x+75",
-                "y": "$dataset.0.set.7.y-2"
-            }]
-        }]
-    },
-    "data": [{
-        "label": "Jan",
-        "value": "1"
-    }, {
-        "label": "Feb",
-        "value": "5"
-    }, {
-        "label": "Mar",
-        "value": "10"
-    }, {
-        "label": "Apr",
-        "value": "12"
-    }, {
-        "label": "May",
-        "value": "14"
-    }, {
-        "label": "Jun",
-        "value": "16"
-    }, {
-        "label": "Jul",
-        "value": "20"
-    }, {
-        "label": "Aug",
-        "value": "22"
-    }, {
-        "label": "Sep",
-        "value": "20"
-    }, {
-        "label": "Oct",
-        "value": "16"
-    }, {
-        "label": "Nov",
-        "value": "7"
-    }, {
-        "label": "Dec",
-        "value": "2"
-    }]
-},
-```
-
-The full code of the above sample is given below:
-
-```
-import React from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts';
-import PowerCharts from 'fusioncharts/fusioncharts.powercharts';
-import ReactFC from 'react-fusioncharts';
-import FusionTime from 'fusioncharts/themes/fusioncharts.theme.fusion';
-
-ReactFC.fcRoot(FusionCharts, PowerCharts, FusionTime);
-
-const chartConfigs = {
-    type: 'spline',
-    width: '700',
-    height: '400',
-    dataFormat: 'json',
-    dataSource: {
-        "chart": {
-            "caption": "Average Monthly Temperature in Texas",
-            "yAxisName": "Average Monthly Temperature",
-            "anchorradius": "5",
-            "plotToolText": "Average temperature in $label is <b>$dataValue</b>",
-            "showHoverEffect": "1",
-            "showvalues": "0",
-            "numberSuffix": "°C",
-            "theme": "fusion",
-            "anchorBgColor": "#72D7B2",
-            "paletteColors": "#72D7B2"
-        },
-        "annotations": {
-            "groups": [{
-                "id": "anchor-highlight",
-                "items": [{
-                    "id": "high-star",
-                    "type": "circle",
-                    "x": "$dataset.0.set.7.x",
-                    "y": "$dataset.0.set.7.y",
-                    "radius": "12",
-                    "color": "#cc0000",
-                    "border": "2",
-                    "borderColor": "#0075c2"
-                }, {
-                    "id": "label",
-                    "type": "text",
-                    "text": "Hottest Month",
-                    "fillcolor": "#0075c2",
-                    "rotate": "90",
-                    "x": "$dataset.0.set.7.x+75",
-                    "y": "$dataset.0.set.7.y-2"
-                }]
-            }]
-        },
-        "data": [{
-            "label": "Jan",
-            "value": "1"
-        }, {
-            "label": "Feb",
-            "value": "5"
-        }, {
-            "label": "Mar",
-            "value": "10"
-        }, {
-            "label": "Apr",
-            "value": "12"
-        }, {
-            "label": "May",
-            "value": "14"
-        }, {
-            "label": "Jun",
-            "value": "16"
-        }, {
-            "label": "Jul",
-            "value": "20"
-        }, {
-            "label": "Aug",
-            "value": "22"
-        }, {
-            "label": "Sep",
-            "value": "20"
-        }, {
-            "label": "Oct",
-            "value": "16"
-        }, {
-            "label": "Nov",
-            "value": "7"
-        }, {
-            "label": "Dec",
-            "value": "2"
-        }]
-    },
-};
-
-ReactDOM.render(
-    <ReactFC {...chartConfigs} />,
-    document.getElementById('root'),
-);
-
 ```
