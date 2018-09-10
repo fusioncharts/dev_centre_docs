@@ -187,10 +187,10 @@ import { AppComponent } from './app.component';
 import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Import FusionCharts library and chart modules
-import * as FusionCharts from 'fusioncharts'; // Change fusioncharts/core to fusioncharts and use `*` as  syntax
-import *  as Charts from 'fusioncharts/fusioncharts.charts'; // Contains all the charts under FusionCharts XT
+import \* as FusionCharts from 'fusioncharts'; // Change fusioncharts/core to fusioncharts and use `*` as  syntax
+import \*  as Charts from 'fusioncharts/fusioncharts.charts'; // Contains all the charts under FusionCharts XT
 
-import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Pass the fusioncharts library and chart modules
 FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
