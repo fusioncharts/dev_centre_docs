@@ -357,7 +357,6 @@ ReactDOM.render(
     document.getElementById('chart-container')
 );
 &lt;/script&gt;
-
 &lt;/head&gt;
 &lt;/html&gt;
 
