@@ -17,7 +17,7 @@ This article focuses on how you can configure using the React `props` object and
 
 A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to start):
 
-{% embed_chartData configure-charts-using-react-example-1.js %}
+{% embed_chartData configure-charts-using-react-example-1.js json %}
 
 To render the chart, follow the steps below:
 
@@ -43,9 +43,9 @@ To render the chart, follow the steps below:
 
 9. Write a handler to update chart button.
 
-10. `updateData()` function randomly updates the value of the chart.
+10. Add `updateData()` function to randomly update the value of the chart.
 
-11. 
+11. Add the `render()` function to create a `button` tag.
 
 12. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
 
