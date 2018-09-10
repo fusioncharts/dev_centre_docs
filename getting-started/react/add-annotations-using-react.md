@@ -7,7 +7,7 @@ chartPresent: true
 
 Annotations are graphical elements (different types of shapes, custom text, and so on) that you can render on your chart to make it more informative, while making it visually appealing.
 
-In this article we'll create a spline chart and add annotations using `react` component. A spline chart using annotations to highlight a particular anchor along with text is shown below:
+In this article we'll create a **Spline** chart and add annotations using `react-fusioncharts` component. A spline chart using annotations to highlight a particular anchor along with text is shown below:
 
 {% embed_chartData configure-charts-using-react-example-3.js json %}
 
@@ -125,9 +125,10 @@ The above chart has been rendered using the following steps:
 6. Added the chart and the theme as a dependency to the core
 
 7. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The chart type has been set to `spline`. Each chart type is represented with a unique chart alias. For Spline chart, the alias is `spline`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
     * The json data has been embeded as the value of the `dataSource`.
+    * In the `dataSource`, an `annotations` object is created to specify the cosmetics and functionalities of the annotation.
 
-13. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+8. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
