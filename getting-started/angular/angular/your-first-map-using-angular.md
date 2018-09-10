@@ -1,3 +1,10 @@
+---
+title: Your First Map in Angular using FusionCharts | FusionCharts
+description: This article outlines the steps to be executed for creating your first map using the angular-fusioncharts component.
+heading: Create a Map in Angular using FusionCharts
+chartPresent: false
+---
+
 ## Overview
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angular** component which provides bindings for **FusionCharts**. The `angular-fusioncharts` component allows you to easily add rich and interactive charts to any **Angular** project. 
@@ -28,7 +35,7 @@ That completes the installation of **FusionCharts** and the `angular-fusionchart
 
 In this section, we will create a visualization using the **World Map** showing the average annual population growth. 
 
-<Live map>
+{% embed_chart getting-started-your-first-map.js %}
 
 The data for this chart is represented in the table below:
 
@@ -41,8 +48,6 @@ Asia|AS|1.78||
 Europe|EU|40||
 Africa|AF|2.58||
 Australia|AU|1.30||
-
-
 
 ## Convert tabular data into JSON format
 
@@ -107,15 +112,15 @@ We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/
 
 In the above JSON data: 
 
-* Create the `chart**`** object to define the elements of the map.
+* Create the `chart` object to define the elements of the map.
 
-* Create the `colorRange**`** array to set the color associated with the specific range of values.
+* Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify the `min**` **and** `**max**` **value within the `color**`** array under the `colorRange`** **array.
+* Specify the `min` and `max` **value within the `color` array under the `colorRange` array.
 
-* Create the `data`** **array to define the id of the continents and their corresponding values along with configurations.
+* Create the `data` array to define the id of the continents and their corresponding values along with configurations.
 
-The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the gauge.
+The `chart` object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the gauge.
 
 Now that you have converted the tabular data to JSON format, let's learn how to render the map.
 
@@ -125,7 +130,7 @@ To render the chart follow the steps below:
 
 **Step 1:** In 'app.module.ts` include the necessary files and add the dependency. 
 
-* Import **angular-fusioncharts** in the root `@NgModule`.
+* Import `angular-fusioncharts` in the root `@NgModule`.
 
 * Import FusionCharts library in the root `@NgModule`.
 
@@ -191,8 +196,8 @@ import { AppComponent } from './app.component';
 import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Import FusionCharts library and chart modules
-import \* as FusionCharts from 'fusioncharts'; // Change fusioncharts/core to fusioncharts and use ` *as`  syntax
-import \*  as FusionMaps from 'fusioncharts/fusioncharts.maps'; // Contains all the charts under FusionCharts XT , Read below for details
+import \* as FusionCharts from 'fusioncharts';
+import \*  as FusionMaps from 'fusioncharts/fusioncharts.maps';
 
 Import \* as World from 'fusioncharts/maps/fusioncharts.world';
 
@@ -207,7 +212,7 @@ FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
 </div>
 </div>
 
-Step 2: **Add data to the angular app.component.ts**
+**Step 2**: Add data to the angular `app.component.ts`
 
 Set the JSON data within the `AppComponent` class as shown below:
 
@@ -281,17 +286,15 @@ export class AppComponent {
 
 ```
 
-Step 3: **Now use fusioncharts component in app.component.html**
+**Step 3**: Now use fusioncharts component in `app.component.html`
 
-** app.component.html**
+Create the chart container and set the following:
 
-Create the chart container and define the following:
+* Chart `width` and `height`.
 
-* Chart `width and height`
+* The map type as `world`. Each map type is represented with a unique alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
-* Set the map type as `world`. Each map type is represented with a unique map alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
-
-* Set the data source.
+* The data source.
 
 > The code below is same for Angular older and latest versions.
 
@@ -317,17 +320,19 @@ To reduce the size of the package FusionCharts comes with only two maps, i.e., t
 
 Let's create a map of California to show the "Web visits for a particular month" as shown below:
 
-<Live Map>
+{% embed_chart getting-started-your-first-map-california.js %}
 
 To render the above map, first install fusionmaps package which contains all the map definition files as shown below:
 
+```
 $ npm install fusionmaps
+```
 
 After installing fusionmaps package, follow the steps to render the map:
 
 **Step 1:** In 'app.module.ts` include the necessary files and add the dependency. 
 
-* Import **angular-fusioncharts** in the root `@NgModule`.
+* Import `angular-fusioncharts` in the root `@NgModule`.
 
 * Import FusionCharts library in the root `@NgModule`.
 
@@ -350,7 +355,7 @@ After installing fusionmaps package, follow the steps to render the map:
 <pre><code class="custom-hlc language-javascript">
 import { FusionChartsModule } from 'angular-fusioncharts';
 import FusionCharts from 'fusioncharts/core';
-import FusionMaps from 'fusioncharts/maps'; // maps
+import FusionMaps from 'fusioncharts/maps';
 import California from 'fusioncharts/maps/es/fusioncharts.california'; 
 
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
@@ -408,7 +413,7 @@ FusionChartsModule.fcRoot(FusionCharts, FusionMaps, California, FusionTheme);
 </div>
 </div>
 
-Step 2: **Add data to the angular app.component.ts**
+**Step 2**: Add data to the angular `app.component.ts`
 
 Set the JSON data within the `AppComponent` class as shown below:
 
@@ -486,15 +491,15 @@ export class AppComponent {
 
 ```
 
-Step 3: Now use fusioncharts component in `app.component.html`.
+**Step 3**: Now use fusioncharts component in `app.component.html`.
 
-Create the chart container and define the following:
+Create the chart container and set the following:
 
-* Chart `width and height`
+* Chart `width` and `height`.
 
-* Set the map type as `california`. Each map type is represented with a unique map alias. For California map, the alias is `california`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
+* The map type as `california`. Each map type is represented with a unique map alias. For California map, the alias is `california`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
-* Set the data source.
+* The data source.
 
 > The code below is same for Angular older and latest versions.
 
