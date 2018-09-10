@@ -11,7 +11,6 @@ This article focuses on how you can configure using the React `props` object and
 
 * [Update Chart Data]({% site.baseurl %}/getting-started/react/configure-your-chart-using-react#update-chart-data-1) (using React `Props` object)
 * [Update Chart Attributes]({% site.baseurl %}/getting-started/react/configure-your-chart-using-react#update-chart-attributes-2) (using React `Props` object)
-* [Add Annotations]({% site.baseurl %}/getting-started/react/configure-your-chart-using-react#add-annotations-3) (using `react-fusioncharts` component)
 
 ## Update Chart Data
 
