@@ -40,13 +40,13 @@ To render the chart, follow the steps below:
 
 8. Create a component to include `react-fusioncharts` component.
 
-9. Write a **Math.random()** function to generate random number. You can also update the chart data using any other data.
+9. Write a **Math.random()** function to generate random data. You can also update the chart data using any other data.
 
 10. Write a handler to update chart button.
 
 11. Add `updateData()` function to randomly update the value of the chart.
 
-12. Add the `render()` function to create a `button` tag.
+12. Add the `render()` function to create the `button` inside the `<div>`.
 
 13. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
 
@@ -154,7 +154,7 @@ class Chart extends Component {
   }
 }
 
-//DOM element to pass the react-fusioncharts component directly to the ReactDOM.render() method.
+//DOM element to pass the react-fusioncharts component
 ReactDOM.render(
   <Chart />,
   document.getElementById('root'),
