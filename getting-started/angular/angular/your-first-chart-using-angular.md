@@ -45,7 +45,7 @@ Let's create a Column 2D chart using the `angular-fusioncharts` component showin
 
 The Column 2D chart is shown below:
 
-{% embed_chart getting-started-your-first-chart.js %} 
+{% embed_chart getting-started-your-first-chart.js %}
 
 The data for the above chart is shown in the table below:
 
