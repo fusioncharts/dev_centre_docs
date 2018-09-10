@@ -39,7 +39,7 @@ To render the chart, follow the steps below:
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
-8. Create a component in include `react-fusioncharts` component.
+8. Create a component to include `react-fusioncharts` component.
 
 9. Write a **Math.random()** function to generate random number. You can also update the chart data using any other data.
 
@@ -54,25 +54,25 @@ To render the chart, follow the steps below:
 The full code of the above sample is given below:
 
 ```
-// Step 1 - Including react
+//Including react
 import React, { Component } from 'react';
 
-// Step 2 - Including the react-fusioncharts component
+//Including the react-fusioncharts component
 import ReactDOM from 'react-dom';
 
-// Step 3 - Including the fusioncharts library
+//Including the fusioncharts library
 import FusionCharts from 'fusioncharts/core';
 
-// Step 4 - Including the chart type
+//Including the chart type
 import Column2D from 'fusioncharts/viz/column2d';
 
-// Step 5 - Including the theme as fusion
+//Including the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Step 6 - Adding the chart as dependency to the core fusioncharts
+//Adding the chart as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
-// Step 7 - Creating the JSON object to store the chart configurations
+//Creating the JSON object to store the chart configurations
 
 const chartConfigs = {
     type: 'column2d',// The chart type
@@ -118,7 +118,7 @@ const chartConfigs = {
         },
     };
 
-// Step 8 - Your react component
+//Your react component
 class Chart extends Component {
   constructor(props) {
     super(props);
@@ -127,14 +127,14 @@ class Chart extends Component {
     this.updateData = this.updateData.bind(this);
   }
 
-// Step 9 - This function generates random number.
+//This function generates random number.
   getRandomNumber() {
     var max = 290, min = 30;
     return Math.round(((max - min) * Math.random()) + min);
   }
 
-  // Step 10 - Handler for update button.
-  // Step 11 - Randomly updates the values of the chart.
+  //Handler for update button.
+  //Randomly updates the values of the chart.
   updateData() {
     var prevDs = Object.assign({}, this.state.dataSource);
     prevDs.data[2].value = this.getRandomNumber();
@@ -144,7 +144,7 @@ class Chart extends Component {
     });
   }
 
-  // Step 12 - Create the button
+  //Create the button
   render() {
     return (
       <div>
@@ -155,7 +155,7 @@ class Chart extends Component {
   }
 }
 
-// Step 13 - DOM element to pass the react-fusioncharts component directly to the ReactDOM.render() method.
+//DOM element to pass the react-fusioncharts component directly to the ReactDOM.render() method.
 ReactDOM.render(
   <Chart />,
   document.getElementById('root'),
