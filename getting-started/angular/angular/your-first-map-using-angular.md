@@ -116,7 +116,7 @@ In the above JSON data:
 
 * Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify the `min` and `max` **value within the `color` array under the `colorRange` array.
+* Specify the `min` and `max` value within the `color` array under the `colorRange` array.
 
 * Create the `data` array to define the id of the continents and their corresponding values along with configurations.
 
@@ -128,7 +128,7 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 
 To render the chart follow the steps below:
 
-**Step 1:** In 'app.module.ts` include the necessary files and add the dependency. 
+**Step 1:** In `app.module.ts` include the necessary files and add the dependency. 
 
 * Import `angular-fusioncharts` in the root `@NgModule`.
 
@@ -288,9 +288,9 @@ export class AppComponent {
 
 **Step 3**: Now use fusioncharts component in `app.component.html`
 
-Create the chart container and set the following:
+Create the map container and set the following:
 
-* Chart `width` and `height`.
+* Map `width` and `height`.
 
 * The map type as `world`. Each map type is represented with a unique alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
@@ -330,7 +330,7 @@ $ npm install fusionmaps
 
 After installing fusionmaps package, follow the steps to render the map:
 
-**Step 1:** In 'app.module.ts` include the necessary files and add the dependency. 
+**Step 1:** In `app.module.ts` include the necessary files and add the dependency. 
 
 * Import `angular-fusioncharts` in the root `@NgModule`.
 
@@ -397,11 +397,9 @@ import { AppComponent } from './app.component';
 import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Import FusionCharts library and chart modules
-import \* as FusionCharts from 'fusioncharts'; // Change fusioncharts/core to fusioncharts and use ` *as`  syntax
-import \*  as FusionMaps from 'fusioncharts/fusioncharts.maps'; // Contains all the charts under FusionCharts XT , Read below for details
-
-Import \* as World from 'fusioncharts/maps/fusioncharts.california';
-
+import \* as FusionCharts from 'fusioncharts'; 
+import \*  as FusionMaps from 'fusioncharts/fusioncharts.maps';
+import \* as California from 'fusioncharts/maps/fusioncharts.california';
 import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Pass the fusioncharts library and chart modules
