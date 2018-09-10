@@ -7,7 +7,7 @@ chartPresent: true
 
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, annotations, trend-lines, and events.
 
-This article focuses on how you can configure using the React `props` object and `react-fusioncharts` component to:
+This article focuses on how you can configure using the React `props` object to:
 
 * [Update Chart Data]({% site.baseurl %}/getting-started/react/configure-your-chart-using-react#update-chart-data-1) (using React `Props` object)
 * [Update Chart Attributes]({% site.baseurl %}/getting-started/react/configure-your-chart-using-react#update-chart-attributes-2) (using React `Props` object)
@@ -155,7 +155,7 @@ The above chart has been rendered using the following steps:
 
 10. An event handler is added to update chart buttom.
 
-11. `updateData()` function is added to randomly update the value of the chart.
+11. `updateData()` function is added to randomly update the value of the chart when the button is clicked.
 
 12. `render()` function is added to create the `button` inside the `<div>`.
 
@@ -211,37 +211,37 @@ The JSON data to render the above chart is given below:
 
 To render the chart, follow the steps below:
 
-1. Include **react**
+1. Included **react**
 
-2. Include `react-fusioncharts`
+2. Included `react-fusioncharts`
 
-3. Include the `fusioncharts` library
+3. Included the `fusioncharts` library
 
-4. Include the chart type
+4. Included the chart type
 
-5. Include the FusionCharts theme file to apply the style to the charts
+5. Included the FusionCharts theme file to apply the style to the charts
 
-6. Add the chart and the theme as a dependency to the core
+6. Added the chart and the theme as a dependency to the core
 
-7. Store the chart configurations in a JSON object. In this JSON object:
-    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height (in pixels). 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of the `dataSource`.
+7. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * The json data has been embeded as the value of the `dataSource`.
 
-8. Create a component to include `react-fusioncharts` component.
+8. Created a component to include `react-fusioncharts` component.
 
-9. Call the **renderComplete()** function by FC-React component to return the rendered chart.
+9. **renderComplete()** function is called by FC-React component to return the rendered chart.
 
-10. Write a handler to change the background (color) of the button.
+10. An event handler is added to update the background color of the chart when the button is clicked.
 
-11. Write a handler to change the caption alignment of the button.
+11. An event handler is added to change the caption alignment of the chart when the button is clicked.
 
-12. Write a handler for the Reset button.
+12. The third event handler is added for the Reset button. When clicked this handler sends the chart to its rendered state.
 
-13. Add the `render()` function to create a buttons.
+13. `render()` function is added to create the `buttons` inside the `<div>`.
 
-14. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
+13. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
 
 The full code of the above sample is given below:
 
