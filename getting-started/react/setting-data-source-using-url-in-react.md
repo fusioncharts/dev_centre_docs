@@ -14,7 +14,7 @@ This article explains how you can set the chart data using the URL of the corres
 
 Let's build the same revenue chart which we built in the [first example]({% site.baseurl %}/getting-started/react/your-first-chart-using-react) using JSON, and use a .json file as the data source.
 
-{% embed_chart plain-js-setting-data-using-url-example-1.js %}
+{% embed_chartData plain-js-setting-data-using-url-example-1.js json %}
 
 The data for this chart is represented in the table below:
 
@@ -78,14 +78,25 @@ Copy this into a file, name it `oilReserves.json`, and store it in the same fold
 The full code of the above sample is given below:
 
 ```
+//Including react
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
+//Including the react-fusioncharts component
+import ReactDOM from 'react-dom';
+
+//Including the fusioncharts library
+import FusionCharts from 'fusioncharts/core';
+
+//Including the chart type
+import Column2D from 'fusioncharts/viz/column2d';
+
+//Including the theme as fusion
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+//Adding the chart as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+
+//Creating the JSON object to store the chart configurations
 
 const chartConfigs = {
   type: 'column2d',
@@ -108,6 +119,12 @@ ReactDOM.render(
   document.getElementById('root'),
 );
 ```
+
+The initial steps to render the chart is same as [Create your First Chart]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#render-the-chart-5). To set the datasource using URL:
+
+* The value of the `dataFormat` has been set to **jsonurl**.
+
+* A static URL has been set to `dataSource` to render the above chart.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
@@ -134,14 +151,25 @@ Copy this into a file called `oilReserves.xml` and store it in the same folder a
 The full code of the above sample is:
 
 ```React
+//Including react
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
+//Including the react-fusioncharts component
+import ReactDOM from 'react-dom';
+
+//Including the fusioncharts library
+import FusionCharts from 'fusioncharts/core';
+
+//Including the chart type
+import Column2D from 'fusioncharts/viz/column2d';
+
+//Including the theme as fusion
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+//Adding the chart as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+
+//Creating the JSON object to store the chart configurations
 
 const chartConfigs = {
   type: 'column2d',
@@ -151,6 +179,7 @@ const chartConfigs = {
   dataSource: 'https://static.fusioncharts.com/sample/oilReserves.xml', // url of datasource
 };
 
+//Your react component
 class Chart extends Component {
   render () {
     return (
@@ -164,3 +193,9 @@ ReactDOM.render(
   document.getElementById('root'),
 );
 ```
+
+The initial steps to render the chart is same as [Create your First Chart]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#render-the-chart-5). To set the datasource using URL:
+
+* The value of the `dataFormat` has been set to **xmlurl**.
+
+* A static URL has been set to `dataSource` to render the above chart.

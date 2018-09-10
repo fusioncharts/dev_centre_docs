@@ -100,6 +100,7 @@ const chartConfigs = {
     },
 };
 
+//Your react component
 class Chart extends Component {
   render () {
     return (

@@ -29,7 +29,7 @@ The parent chart is a column 2D chart showing yearly sales of the top three juic
 
 The above chart, when rendered, looks like the following:
 
-{% embed_chartData add-drill-down-using-react-example-1.js %}
+{% embed_chartData add-drill-down-using-react-example-1.js json %}
 
 The full code of the above sample is given below:
 
