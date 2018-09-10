@@ -37,130 +37,38 @@ The parent chart is a column 2D chart showing yearly sales of the top three juic
 
 The above chart, when rendered, looks like the following:
 
-{% embed_chart add-drill-down-using-react-example-1.js %}
-
-The JSON data to render the above chart is shown below:
-
-```json
-{
-    "chart": {
-        "caption": "Top 3 Juice Flavors",
-        "subcaption": "Last year",
-        "xaxisname": "Flavor",
-        "yaxisname": "Amount (In USD)",
-        "numberprefix": "$",
-        "theme": "fusion",
-        "rotateValues": "0"
-    },
-    "data": [{
-        "label": "Apple",
-        "value": "810000",
-        "link": "newchart-xml-apple"
-    }, {
-        "label": "Cranberry",
-        "value": "620000",
-        "link": "newchart-xml-cranberry"
-    }, {
-        "label": "Grapes",
-        "value": "350000",
-        "link": "newchart-xml-grapes"
-    }],
-    "linkeddata": [{
-        "id": "apple",
-        "linkedchart": {
-            "chart": {
-                "caption": "Apple Juice - Quarterly Sales",
-                "subcaption": "Last year",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "rotateValues": "0",
-                "plottooltext": "$label, $dataValue,  $percentValue"
-            },
-            "data": [{
-                "label": "Q1",
-                "value": "157000"
-            }, {
-                "label": "Q2",
-                "value": "172000"
-            }, {
-                "label": "Q3",
-                "value": "206000"
-            }, {
-                "label": "Q4",
-                "value": "275000"
-            }]
-        }
-    }, {
-        "id": "cranberry",
-        "linkedchart": {
-            "chart": {
-                "caption": "Cranberry Juice - Quarterly Sales",
-                "subcaption": "Last year",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "plottooltext": "$label, $dataValue,  $percentValue"
-            },
-            "data": [{
-                "label": "Q1",
-                "value": "102000"
-            }, {
-                "label": "Q2",
-                "value": "142000"
-            }, {
-                "label": "Q3",
-                "value": "187000"
-            }, {
-                "label": "Q4",
-                "value": "189000"
-            }]
-        }
-    }, {
-        "id": "grapes",
-        "linkedchart": {
-            "chart": {
-                "caption": "Grapes Juice - Quarterly Sales",
-                "subcaption": "Last year",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "rotateValues": "0",
-                "plottooltext": "$label, $dataValue,  $percentValue"
-            },
-            "data": [{
-                "label": "Q1",
-                "value": "45000"
-            }, {
-                "label": "Q2",
-                "value": "72000"
-            }, {
-                "label": "Q3",
-                "value": "95000"
-            }, {
-                "label": "Q4",
-                "value": "108000"
-            }]
-        }
-    }]
-}
-```
+{% embed_chartData add-drill-down-using-react-example-1.js %}
 
 The full code of the above sample is given below:
 
 ```
-import React from 'react';
+//Including react
+import React, { Component } from 'react';
+
+//Including the react-fusioncharts component
 import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts';
-import Charts from 'fusioncharts/fusioncharts.charts';
-import ReactFC from 'react-fusioncharts';
+
+//Including the fusioncharts library
+import FusionCharts from 'fusioncharts/core';
+
+//Including the chart type
+import Column2D from 'fusioncharts/viz/column2d';
+
+//Including the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-ReactFC.fcRoot(FusionCharts, Charts, FusionTheme);
+//Adding the chart as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+
+//Creating the JSON object to store the chart configurations
 
 const chartConfigs = {
-	type: 'column2d',
-	width: '700',
-	height: '400',
-	dataFormat: 'jsonurl',
-	dataSource: {
+	type: 'column2d',// The chart type
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'json', // Data type
+    dataSource: {
+	    // Chart Configuration
 	    "chart": {
 	        "caption": "Top 3 Juice Flavors",
 	        "subcaption": "Last year",
@@ -283,3 +191,26 @@ ReactDOM.render(
 ```
 
 Click [here](http://jsfiddle.net/fusioncharts/k7mn6j5s/) to edit the above chart.
+
+The above chart has been rendered using the following steps:
+
+1. Included **react**
+
+2. Included `react-fusioncharts`
+
+3. Included the `fusioncharts` library
+
+4. Included the chart type
+
+5. Included the FusionCharts theme file to apply the style to the charts
+
+6. Added the chart and the theme as a dependency to the core
+
+7. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d` for the first chart. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Once the data plots in the Column charts are clicked, the rendered chart is a Pie 2D chart (alias name: `pie2d`).Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * The json data has been embeded as the value of the `dataSource`.
+    * An array is created to save the data of the charts which gets rendered when the data plots of the column charts is clicked.
+
+8. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
