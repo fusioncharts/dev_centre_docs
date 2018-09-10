@@ -130,7 +130,7 @@ To render the chart follow the steps below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='angular4'>Angular 4 onwards</a></li>
+    <li class='active'><a data-toggle='angular4'>Angular 4 onward</a></li>
     <li><a data-toggle='angular2'>Angular 2</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
@@ -155,7 +155,7 @@ import Column2D from 'fusioncharts/viz/column2d'; // Column2D chart
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
 // Pass the fusioncharts library and chart modules
 
-FusionChartsModule.fcRoot(FusionCharts, Column2D);
+FusionChartsModule.fcRoot(FusionCharts, Column2D, FusionTheme);
 @NgModule({
     declarations: [
         AppComponent
@@ -188,7 +188,7 @@ import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Import FusionCharts library and chart modules
 import * as FusionCharts from 'fusioncharts'; // Change fusioncharts/core to fusioncharts and use `*` as  syntax
-import*  as Charts from 'fusioncharts/fusioncharts.charts'; // Contains all the charts under FusionCharts XT , Read below for details
+import*  as Charts from 'fusioncharts/fusioncharts.charts'; // Contains all the charts under FusionCharts XT
 
 import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
@@ -258,13 +258,13 @@ export class AppComponent {
 
 **Step 3:** Now use `fusioncharts` component in `app.component.html`.
 
-Create the chart container and define the following:
+Create the chart container and set the following:
 
 * Chart `width` and `height`
 
-* Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+* Chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
-* Set the data source.
+* The data source.
 
 > The code below is same for Angular older and latest versions.
 
