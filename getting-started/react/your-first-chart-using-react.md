@@ -185,7 +185,7 @@ Now that you have converted the tabular data to JSON format, let's see how to re
 
 To render the chart, follow the steps below:
 
-1. Include **react.**
+1. Include **react**
 
 2. Include **react-fusioncharts**
 

@@ -17,49 +17,37 @@ This article focuses on how you can configure using the React `props` object and
 
 A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to start):
 
-{% embed_chart configure-charts-using-react-example-1.js %}
+{% embed_chartData configure-charts-using-react-example-1.js %}
 
-The JSON data to render the above chart is given below:
+To render the chart, follow the steps below:
 
-```
-{
-    // Chart Configuration
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "theme": "fusion",
-    },
-    // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
-},
-```
+1. Include **react**
+
+2. Include **react-fusioncharts**
+
+3. Include the **fusioncharts** library
+
+4. Include the chart type
+
+5. Include the FusionCharts theme file to apply the style to the charts
+
+6. Add the chart and the theme as a dependency to the core
+
+7. Store the chart configurations in a JSON object. In this JSON object:
+    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height (in pixels). 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of the `dataSource`.
+
+8. Write a function to generate random number using `Math.random()`.
+
+9. Write a handler to update chart button.
+
+10. `updateData()` function randomly updates the value of the chart.
+
+11. 
+
+12. Create the `DOM` element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
 
 The full code of the above sample is given below:
 
