@@ -7,13 +7,11 @@ chartPresent: false
 
 ## Overview
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angular** component which provides bindings for **FusionCharts**. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any **Angular** project. 
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angular** component which provides bindings for **FusionCharts**. The `angular-fusioncharts` component allows you to easily add rich and interactive charts to any **Angular** project. 
 
 In this page, we'll see how to install FusionCharts and render a chart using the `angular-fusionCharts` component.
 
 > Since, **Angular2** and onward do not support the direct `<script>` tags, `angular-fusioncharts` can only be used via `npm`.
-
-In this page, we'll see how to install **FusionCharts** and render a chart using the `angular-fusionCharts` component.
 
 ## Installation
 
@@ -222,7 +220,7 @@ export class AppComponent {
     dataSource: Object;
     constructor() {
         this.dataSource = {
-            chart: {
+            "chart": {
                 "caption": "Countries With Most Oil Reserves [2017-18]",
                 "subCaption": "In MMbbl = One Million barrels",
                 "xAxisName": "Country",

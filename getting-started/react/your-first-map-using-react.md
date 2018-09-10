@@ -197,9 +197,9 @@ In the above JSON data:
 
 * Create the `data` array to define the id of the continents and their corresponding values along with configurations.
 
-The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the gauge.
+The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the map.
 
-Now that you have converted the tabular data to JSON format, let's learn how to render the gauge.
+Now that you have converted the tabular data to JSON format, let's learn how to render the map.
 
 ## Render the map
 
@@ -223,7 +223,7 @@ To render the map follow the steps below:
 
 9. Store the chart configurations as a JSON object. In this JSON object:
 
-    * Set the gauge type as world. Each chart type is represented with a unique map alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
+    * Set the map type as world. Each chart type is represented with a unique map alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
     * Set the width and height (in pixels). 
 

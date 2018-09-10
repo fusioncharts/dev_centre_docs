@@ -7,13 +7,11 @@ chartPresent: false
 
 ## Overview
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angular** component which provides bindings for **FusionCharts**. The `react-fusioncharts` component allows you to easily add rich and interactive charts to any **Angular** project. 
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angular** component which provides bindings for **FusionCharts**. The `angular-fusioncharts` component allows you to easily add rich and interactive charts to any **Angular** project. 
 
 In this page, we'll see how to install FusionCharts and render a chart using the `angular-fusionCharts` component.
 
 > Since, **Angular2** and onward do not support the direct `<script>` tags, `angular-fusioncharts` can only be used via `npm`.
-
-In this page, we'll see how to install FusionCharts and render a gauge using the `angular-fusionCharts` component.
 
 ## Installation
 
@@ -112,13 +110,13 @@ In the above JSON:
 
 * Create the `dial` array under the `dials` array and set the value of the dial.
 
-The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the gauge.
+The `chart` object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the gauge.
 
 Now that you have converted the tabular data to JSON format, let's learn how to render the gauge.
 
 ## Render the Gauge
 
-To render the chart follow the steps below:
+To render the gauge follow the steps below:
 
 **Step 1:** In 'app.module.ts` include the necessary files and add the dependency. 
 
@@ -126,11 +124,11 @@ To render the chart follow the steps below:
 
 * Import FusionCharts library in the root `@NgModule`.
 
-* Import the chart type.
+* Import the gauge type.
 
-* Include the FusionCharts theme file to apply the style to the charts.
+* Include the FusionCharts theme file to apply the style to the gauge.
 
-* Pass the `fusioncharts` library and chart modules.
+* Pass the `fusioncharts` library, gauge module and the theme.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
@@ -151,13 +149,13 @@ import { FusionChartsModule } from 'angular-fusioncharts';
 // Import fusioncharts core in the root
 import FusionCharts from 'fusioncharts/core';
 
-// Import chart type
-import AngularGauge from 'fusioncharts/viz/angulargauge'; // Column2D chart
+// Import gauge type
+import AngularGauge from 'fusioncharts/viz/angulargauge'; 
 
 // Import the fusion theme
 
 import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
-// Pass the fusioncharts library and chart modules
+// Pass the fusioncharts library, gauge and FusionTheme
 
 FusionChartsModule.fcRoot(FusionCharts, AngularGauge, FusionTheme);
 @NgModule({
@@ -195,12 +193,12 @@ import { AppComponent } from './app.component';
 // Import angular-fusioncharts
 import { FusionChartsModule } from 'angular-fusioncharts';
 
-// Import FusionCharts library and chart modules
+// Import FusionCharts library, gauge module and the FusionTheme
 import \* as FusionCharts from 'fusioncharts'; 
 import \* as Widgets from 'fusioncharts/fusioncharts.widgets;
 import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Pass the fusioncharts library and chart modules
+// Pass the fusioncharts library gauge module and the FusionTheme
 FusionChartsModule.fcRoot(FusionCharts, Widgets, FusionTheme);
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -226,6 +224,7 @@ export class AppComponent {
     dataSource: Object;
     constructor() {
         this.dataSource = {
+            "chart": {
             "caption": "Nordstorm's Customer Satisfaction Score for 2017",
             "lowerLimit": "0",
             "upperLimit": "100",
@@ -234,7 +233,7 @@ export class AppComponent {
             "theme": "fusion",
             "showToolTip": "0"
         },
-        // Chart Data
+        // Gauge Data
         "colorRange": {
             "color": [{
                 "minValue": "0",
@@ -263,13 +262,13 @@ export class AppComponent {
 
 **Step 3:** Now use fusioncharts component in `app.component.html`
 
-Create the chart container and define the following:
+Create the container to render the gauge and set the following:
 
 * Gauge `width and height`
 
-* Set the gauge type as `angulargauge`. Each gauge type is represented with a unique alias. For Angualar Gauge, the alias is `angulargauge`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+* Gauge type as `angulargauge`. Each gauge type is represented with a unique alias. For Angualar Gauge, the alias is `angulargauge`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
-* Set the data source.
+* The data source.
 
 > The code below is same for Angular older and latest versions.
 
