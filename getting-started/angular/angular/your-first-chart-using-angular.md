@@ -160,6 +160,7 @@ Set the JSON data within the `AppComponent` class as shown below:
 
 > The below code is same for Angular older and latest versions.
 
+```
 import {Component} from '@angular/core';
 @Component({
     selector: 'app',
@@ -206,6 +207,7 @@ export class AppComponent {
         }; // end of this.dataSource
     } // end of constructor
 } // end of class AppComponent
+```
 
 **Step 3:** Now use `fusioncharts` component in `app.component.html`.
 
