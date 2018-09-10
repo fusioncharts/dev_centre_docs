@@ -178,8 +178,13 @@ export class AppModule {
 </div>
 
 <div class='tab angular2-tab'>
-<div class='mt-20'>For angular version <strong>2.x.x</strong>, we cannot use <strong>'fusioncharts/core'</strong> as it uses dynamic imports, which is not compatible with older version typescripts used by <strong>Angular 2.</strong>
-To code for Angualr 2 is shown below:
+<div class='mt-20'>For angular version <strong>2.x.x</strong>, we cannot use <strong>'fusioncharts/core'</strong> as it uses dynamic imports, which is not compatible with older version typescripts used by <strong>Angular 2.</strong> 
+For Angualr 2 the changes in the code are: 
+<ul> 
+<li> Use `*` as syntax. For example - `import * as FusionCharts from 'fusioncharts';`</li>
+<li> Change fusioncharts/core to fusioncharts</li>
+</ul>
+Refer to the code below:
 </div>
 <pre><code class="custom-hlc language-javascript">
 import { BrowserModule } from '@angular/platform-browser';
@@ -191,9 +196,8 @@ import { AppComponent } from './app.component';
 import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Import FusionCharts library and chart modules
-import \* as FusionCharts from 'fusioncharts'; // Change fusioncharts/core to fusioncharts and use `*` as  syntax
-import \* as Widgets from 'fusioncharts/fusioncharts.widgets; // Contains all the gauges under FusionCharts XT
-
+import \* as FusionCharts from 'fusioncharts'; 
+import \* as Widgets from 'fusioncharts/fusioncharts.widgets;
 import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Pass the fusioncharts library and chart modules
