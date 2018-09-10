@@ -23,14 +23,6 @@ You can drill-down to descendant charts by simply clicking the data plot items o
 
 ## Create drill-down charts
 
-To create drill-down charts, follow the steps given below:
-
-1. Create the JSON/XML data for the parent chart. This is called the parent data source.
-
-2. Append the data string or the data URL for the descendant charts within the parent data source. If you append a data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
-
-Once you implement these steps, the FusionCharts JavaScript class takes care of the rest. Let's see the steps in details.
-
 As an example, we will consider a simple scenario of a parent chart with a single level of drill-down.
 
 The parent chart is a column 2D chart showing yearly sales of the top three juice flavors, over the last one year. When you click on the data plot for a particular flavor, it drills-down to show a pie 2D chart showing the quarterly sales figures for that flavor.
@@ -210,7 +202,7 @@ The above chart has been rendered using the following steps:
     * The chart type has been set to `column2d` for the first chart. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Once the data plots in the Column charts are clicked, the rendered chart is a Pie 2D chart (alias name: `pie2d`).Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
-    * The json data has been embeded as the value of the `dataSource`.
-    * An array is created to save the data of the charts which gets rendered when the data plots of the column charts is clicked.
+    *. Create the JSON/XML data for the parent chart. This is called the parent data source.
+    * Append the data string or the data URL for the descendant charts within the parent data source. If you append a data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
 
 8. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
