@@ -188,7 +188,7 @@ import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Import FusionCharts library and chart modules
 import * as FusionCharts from 'fusioncharts'; // Change fusioncharts/core to fusioncharts and use `*` as  syntax
-import*  as Charts from 'fusioncharts/fusioncharts.charts'; // Contains all the charts under FusionCharts XT
+import *  as Charts from 'fusioncharts/fusioncharts.charts'; // Contains all the charts under FusionCharts XT
 
 import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
@@ -281,7 +281,7 @@ Create the chart container and set the following:
 </fusioncharts> 
 
 ```
-That's it! Your first chart using react-fusioncharts is ready
+That's it! Your first chart using `react-fusioncharts` is ready.
 
 ## Problem rendering the chart?
 

@@ -284,7 +284,7 @@ Create the chart container and define the following:
 
 ```
 
-That's it! Your first gauge using react-fusioncharts is ready
+That's it! Your first gauge using `react-fusioncharts` is ready.
 
 ## Problem rendering the chart?
 
