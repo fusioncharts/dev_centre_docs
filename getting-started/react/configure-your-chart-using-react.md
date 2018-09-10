@@ -16,7 +16,7 @@ This article focuses on how you can configure using the React `props` object and
 
 A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to start):
 
-{% embed_chartData configure-charts-using-react-example-1.js json %}
+{% embed_all configure-charts-using-react-example-1.js json %}
 
 To render the chart, follow the steps below:
 
