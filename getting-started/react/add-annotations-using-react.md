@@ -118,6 +118,8 @@ The above chart has been rendered using the following steps:
 
 3. Included the `fusioncharts` library
 
+4. Included the `fusioncharts.powercharts` library to render **Spline** chart
+
 4. Included the chart type
 
 5. Included the FusionCharts theme file to apply the style to the charts
