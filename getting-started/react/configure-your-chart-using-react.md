@@ -23,9 +23,9 @@ To render the chart, follow the steps below:
 
 1. Include **react**
 
-2. Include **react-fusioncharts**
+2. Include `react-fusioncharts`
 
-3. Include the **fusioncharts** library
+3. Include the `fusioncharts` library
 
 4. Include the chart type
 
@@ -39,7 +39,7 @@ To render the chart, follow the steps below:
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
-8. Write a function to generate random number using `Math.random()`.
+8. Write a **Math.random()** function to generate random number. You can also update the chart data using any other data.
 
 9. Write a handler to update chart button.
 
@@ -52,58 +52,69 @@ To render the chart, follow the steps below:
 The full code of the above sample is given below:
 
 ```
+// Step 1 - Including react
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
+// Step 2 - Including the react-fusioncharts component
+import ReactDOM from 'react-dom';
+
+// Step 3 - Including the fusioncharts library
+import FusionCharts from 'fusioncharts/core';
+
+// Step 4 - Including the chart type
+import Column2D from 'fusioncharts/viz/column2d';
+
+// Step 5 - Including the theme as fusion
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+// Step 6 - Adding the chart as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
+// Step 7 - Creating the JSON object to store the chart configurations
+
 const chartConfigs = {
-  type: 'column2d',
-  width: 700,
-  height: 400,
-  dataFormat: 'json',
-  dataSource: {
+    type: 'column2d',// The chart type
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'json', // Data type
+    dataSource: {
     // Chart Configuration
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "theme": "fusion",
-    },
-    // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
-  },
-};
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion",
+        },
+        // Chart Data
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+        },
+    };
 
 class Chart extends Component {
   constructor(props) {
@@ -113,14 +124,14 @@ class Chart extends Component {
     this.updateData = this.updateData.bind(this);
   }
 
-// This function generates random number.
+// Step 8 - This function generates random number.
   getRandomNumber() {
     var max = 290, min = 30;
     return Math.round(((max - min) * Math.random()) + min);
   }
 
-  // Handler for update button.
-  // Randomly updates the values of the chart.
+  // Step 9 - Handler for update button.
+  // Step 10 - Randomly updates the values of the chart.
   updateData() {
     var prevDs = Object.assign({}, this.state.dataSource);
     prevDs.data[2].value = this.getRandomNumber();
@@ -130,6 +141,7 @@ class Chart extends Component {
     });
   }
 
+  // Step 11 - Create the button
   render() {
     return (
       <div>
@@ -140,6 +152,7 @@ class Chart extends Component {
   }
 }
 
+// Step 12 - DOM element to pass the react-fusioncharts component directly to the ReactDOM.render() method.
 ReactDOM.render(
   <Chart />,
   document.getElementById('root'),

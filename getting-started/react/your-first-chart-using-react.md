@@ -187,9 +187,9 @@ To render the chart, follow the steps below:
 
 1. Include **react**
 
-2. Include **react-fusioncharts**
+2. Include `react-fusioncharts`
 
-3. Include the **fusioncharts** library
+3. Include the `fusioncharts` library
 
 4. Include the chart type
 
@@ -233,11 +233,9 @@ import FusionCharts from 'fusioncharts/core';
 import Column2D from 'fusioncharts/viz/column2d';
 
 // Step 5 - Including the theme as fusion
-
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Step 6 - Adding the chart as dependency to the core fusioncharts
-
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
 // Step 7 - Creating the JSON object to store the chart configurations
