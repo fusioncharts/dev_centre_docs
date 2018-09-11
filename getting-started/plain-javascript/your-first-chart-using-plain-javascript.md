@@ -184,8 +184,10 @@ The consolidated code is shown below:
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 <div class='mt-30'><strong>The `fusioncharts` package for `npm` can now be used in two different ways:</strong></div>
-<div class='pb-20'>FusionCharts ES module</div>
-<div class='pb-20'>FusionCharts CJS module</div>
+<ul>
+    <li>FusionCharts ES module</li>
+    <li>FusionCharts CJS module</li>
+</ul>
 <div  class='mt-30'><strong>The installation steps for both the modules are shown below:</strong></div>
 <h4>ES6</h4>
 <pre><code class="custom-hlc language-javascript">
