@@ -310,10 +310,10 @@ chartInstance.render();
     <li><strong>Widgets</strong> - `var Widgets = require('fusioncharts/fusioncharts.widgets');`</li>
     <li><strong>Gantt</strong> - `var Gantt = require('fusioncharts/fusioncharts.gantt');`</li>
     <li><strong>Treemap -  `var Treemap = require('fusioncharts/fusioncharts.treemap');`</li>
-    <li>var Zoomscatter = require('fusioncharts/fusioncharts.zoomscatter'); (for `ZoomScatter`)</li>
-    <li>var Zoomline = require('fusioncharts/fusioncharts.zoomline'); (for `Zoomline`)</li>
-    <li>var OverlappedBar2d = require('fusioncharts/fusioncharts.overlappedbar2d'); (for `Overlapped Bar 2D`)</li>
-    <li>var Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d'); (for `Overlapped Column 2D`)</li>
+    <li><strong>Zoomscatter</strong> - `var Zoomscatter = require('fusioncharts/fusioncharts.zoomscatter');`</li>
+    <li><strong>Zoomline</strong> - `var Zoomline = require('fusioncharts/fusioncharts.zoomline');`</li>
+    <li><strong>Overlapped Bar</strong> - `var OverlappedBar2d = require('fusioncharts/fusioncharts.overlappedbar2d');`</li>
+    <li><strong>Overlapped Column</strong> - `var Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');`</li>
 </ul>
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
