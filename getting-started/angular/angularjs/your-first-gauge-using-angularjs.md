@@ -273,19 +273,19 @@ myApp.controller('MyController', ['$scope', function($scope) {
 // Render
 chartInstance.render()
 </code></pre>
-<div class='mt-30'><strong>Create an HTML template as shown below:</strong></div>
-<pre><code class="custom-hlc language-javascript">
-<body ng-app="myApp">
-    <div ng-controller="MyController">
-        <div
+&lt;div class='mt-30'&gt;&lt;strong&gt;Create an HTML template as shown below:&lt;/strong&gt;&lt;/div&gt;
+&lt;pre&gt;&lt;code class="custom-hlc language-javascript"&gt;
+&lt;body ng-app="myApp"&gt;
+    &lt;div ng-controller="MyController"&gt;
+        &lt;div
         fusioncharts
         width="450"
         height="250"
         type="angulargauge"
-        datasource="{{myDataSource}}">
-        </div>
-    </div>
-</body>
+        datasource="{{myDataSource}}"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
