@@ -329,17 +329,17 @@ var app = new Vue({
 <pre><code class="custom-hlc language-javascript">
 &lt;head&gt;
     &lt;!-- Including vue  --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script &gt;
     &lt;!-- Including vue-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script&gt;
-    &lt;!-- cluding the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script &gt;
+    &lt;!-- Icluding the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
     &lt;!-- Including the map renderer file --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script &gt;
     &lt;!-- Including the map definition file --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script &gt;
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
 &lt;/head&gt;
 &lt;body&gt;
     &lt;div id="app"&gt;
@@ -431,17 +431,17 @@ var app = new Vue({
 <div class='tab localfiles-tab'>
 <pre><code class="custom-hlc language-javascript">
 &lt;head&gt;
-    &lt;!-- Step 1 - Including vue  --&gt;
+    &lt;!-- Including vue  --&gt;
     &lt;script type="text/javascript" src="path/to/local/vue.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 2 - Including vue-fusioncharts component --&gt;
+    &lt;!-- Including vue-fusioncharts component --&gt;
     &lt;script type="text/javascript" src="path/to/local/vue-fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
+    &lt;!-- Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 4 - Including the map renderer file --&gt;
+    &lt;!-- Including the map renderer file --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 5 - Including the map definition file --&gt;
+    &lt;!-- Including the map definition file --&gt;
     &lt;script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 6 - Including the fusion theme --&gt;
+    &lt;!-- Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -628,17 +628,17 @@ var app = new Vue({
 <pre><code class="custom-hlc language-javascript">
 &lt;head&gt;
     &lt;!-- Including vue  --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script &gt;
     &lt;!-- Including vue-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script&gt;
-    &lt;!-- cluding the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script &gt;
+    &lt;!-- Icluding the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
     &lt;!-- Including the map renderer file --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script &gt;
     &lt;!-- Including the map definition file --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.california.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.california.js"&gt;&lt;/script &gt;
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
 &lt;/head&gt;
 &lt;body&gt;
     &lt;div id="app"&gt;
