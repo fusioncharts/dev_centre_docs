@@ -2,14 +2,95 @@
 title: Your First Chart using Plain JS | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the plain javascript.
 heading: Your First Chart using Plain JS
-chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. Let's build our first chart using FusionCharts Suite XT!
+**FusionCharts Suite XT** — the industry's most comprehensive JavaScript charting solution — is all about easing the whole process of data visualization through charts.
 
-We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-gauge-8) and a [map]({% site.baseurl %}/getting-started/plain-javascript/your-first-chart-using-plain-javascript#create-your-first-map-13).
+In this page, we'll see how to install **FusionCharts** library and all the other dependencies on your system and render a chart.
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript) the `fusioncharts` package, if you haven’t installed it already.
+## Installation
+
+Install **FusionCharts** using any of the following steps:
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='npm'>NPM</a></li>
+    <li><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='localfiles'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab npm-tab active'>
+
+<div><strong>To install the `fusioncharts` package via  npm run the command below:</strong></div>
+<pre><code class="custom-hlc language-PowerShell">
+    $ npm install fusioncharts
+</code></pre>
+
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab cdn-tab'>
+<div><strong>To install the **FusionCharts** package follow the steps below:</strong></div>
+<div>
+    <ol>
+        <li>Include the **FusionCharts** JavaScript files from CDN.</li>
+        <li>Include the theme file.</li>
+    </ol>
+</div>
+<div>The consolidated code is shown below:</div>
+<pre><code class="custom-hlc language-javascript">
+&lt;head&gt;
+    &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
+    &lt;!-- Step 2 - Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
+&lt;/head&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab localfiles-tab'>
+<div><strong>To install the **FusionCharts** package follow the steps below:</strong></div>
+<div>
+    <ol>
+        <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>Include the FusionCharts theme file to apply the style to the charts.</li>
+    </ol>
+</div>
+<div>The consolidated code is shown below:</div>
+<pre><code class="custom-hlc language-javascript">
+&lt;head&gt;
+    &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 2 - Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Create your first chart
 
