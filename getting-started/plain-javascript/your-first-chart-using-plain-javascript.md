@@ -25,115 +25,44 @@ Install **FusionCharts** using any of the following steps:
 <pre><code class="custom-hlc language-PowerShell">
     $ npm install fusioncharts
 </code></pre>
-<div class='mt-30'><strong>The `fusioncharts` package for `npm` can now be used in two different ways:</strong></div>
-<div class='mt-20'>1. FusionCharts ES module</div>
-<div class='mt-20'>2. FusionCharts CJS module</div>
-<div class='mt-10'><strong>The installation steps for both the modules are shown below:</strong></div>
-<h3>ES6</h3>
-<div class='mt-30'>Install `fusioncharts` package</div>
-<pre><code class="custom-hlc language-PowerShell">
-$ npm install fusioncharts    
-</code></pre>
-<div class='mt-30'>Include the core fusioncharts file from core</div>
-<pre><code class="custom-hlc language-javascript">
-import FusionCharts from 'fusioncharts/core';
-</code></pre>
-<div class='mt-30'>Include the chart from viz folder</div>
-<pre><code class="custom-hlc language-javascript">
-import Column2D from 'fusioncharts/viz/column2d';
-</code></pre>
-<div class='mt-30'>Add the chart as dependency</div>
-<pre><code class="custom-hlc language-javascript">
-FusionCharts.addDep(Column2D);
-</code></pre>
-
-<h3>CJS</h3>
-<div class='mt-30'>Install `fusioncharts` via npm</div>
-<pre><code class="custom-hlc language-PowerShell">
-$ npm install fusioncharts
-</code></pre>
-<div class='mt-30'>Load the fusioncharts module</div>
-<div class="pb-10">After you have installed fusioncharts via npm, include the `fusioncharts` module<strong> using require():</strong> </div>
-<pre><code class="custom-hlc language-javascript">
-var FusionCharts = require('fusioncharts');
-</code></pre>
-<div class='mt-30'>Include the chart from viz folder</div>
-<pre><code class="custom-hlc language-javascript">
-import Column2D from 'fusioncharts/viz/column2d';
-</code></pre>
-<div class='mt-30'>Add the chart as dependency</div>
-<pre><code class="custom-hlc language-javascript">
-FusionCharts.addDep(Column2D);
-</code></pre>
-
-
-
-
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
-
-
-
-
-
-
 <div class='tab cdn-tab'>
-<div><strong>To install the FusionCharts package and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>To install the **FusionCharts** package follow the steps below:</strong></div>
 <div>
     <ol>
-        <li>Include the [React](https://reactjs.org/)core library.
-        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
         <li>Include the **FusionCharts** JavaScript files from CDN.</li>
-        <li>Include the `react-fusioncharts` module.</li>
         <li>Include the theme file.</li>
     </ol>
 </div>
 <div>The consolidated code is shown below:</div>
 <pre><code class="custom-hlc language-javascript">
 &lt;head&gt;
-    &lt;!-- Step 1 - Including react --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script &gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script &gt;
-    &lt;!-- Step 2 - Including Babel for JSX transpiling --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script &gt;
-    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
+    &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
-    &lt;!-- Step 4 - Including the react-fusioncharts component--&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script &gt;
-    &lt;!-- Step 5 - Including the fusion theme --&gt;
+    &lt;!-- Step 2 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
 &lt;/head&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
-
 <div class='tab localfiles-tab'>
-<div><strong>To install the **FusionCharts** package and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>To install the **FusionCharts** package follow the steps below:</strong></div>
 <div>
     <ol>
-        <li>Include the [React](https://reactjs.org/)core library.</li>
-        <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
         <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
-        <li>Include the `react-fusioncharts` component.</li>
         <li>Include the FusionCharts theme file to apply the style to the charts.</li>
     </ol>
 </div>
 <div>The consolidated code is shown below:</div>
 <pre><code class="custom-hlc language-javascript">
 &lt;head&gt;
-    &lt;!-- Step 1 - Including react  --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-dom.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 2 - Including Babel for JSX transpiling --&gt;
-    &lt;script type="text/javascript" src="path/to/local/babel-core.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
+    &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 4 - Including the react-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 5 - Including the fusion theme --&gt;
+    &lt;!-- Step 2 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 </code></pre>
