@@ -114,12 +114,11 @@ The angular gauge is shown below:
 
 The thresholds for the above sample have been defined using the following range:
 
-
-Range|Color|Hex Code||
+Range|Color|Hex Code|
 -|-|-|-
-0-50|Red|#F2726F||
-50-75|Yellow|#FFC533||
-75-100|Green|#62B58F||
+0-50|Red|#F2726F|
+50-75|Yellow|#FFC533|
+75-100|Green|#62B58F|
 
 So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
 
@@ -131,39 +130,35 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 {
     // Chart Configuration
     "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
+        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+        "lowerLimit": "0",
+        "upperLimit": "100",
+        "showValue": "1",
+        "numberSuffix": "%",
         "theme": "fusion",
+        "showToolTip": "0"
     },
     // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
+    "colorRange": {
+        "color": [{
+            "minValue": "0",
+            "maxValue": "50",
+            "code": "#F2726F"
+        }, {
+            "minValue": "50",
+            "maxValue": "75",
+            "code": "#FFC533"
+        }, {
+            "minValue": "75",
+            "maxValue": "100",
+            "code": "#62B58F"
+        }]
+    },
+    "dials": {
+        "dial": [{
+            "value": "81"
+        }]
+    }
 }
 ```
 
