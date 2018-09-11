@@ -43,7 +43,7 @@ $ npm install fusioncharts --save
 <pre><code class="custom-hlc language-html">
 &lt;head&gt;
     &lt;!-- Step 1 - Including vue  --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script &gt;
     &lt;!-- Step 2 - Including vue-fusioncharts component --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script&gt;
     &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
