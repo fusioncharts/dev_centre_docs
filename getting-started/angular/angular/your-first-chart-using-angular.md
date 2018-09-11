@@ -35,7 +35,7 @@ That completes the installation of **FusionCharts** and the `angular-fusionchart
 
 Let's create a Column 2D chart using the `angular-fusioncharts` component showing the "Countries With Most Oil Reserves".
 
-> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 The Column 2D chart is shown below:
 

@@ -34,7 +34,7 @@ File Name|Description|
 This section outlines the steps for installing **ember-fusioncharts** via npm:
 
 **Step 1:** Install `ember-fusioncharts`
-
+ 
 You can install `ember-fusioncharts` component for any of the following CLI:
 
 **Modern Ember CLI**
