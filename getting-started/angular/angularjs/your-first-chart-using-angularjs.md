@@ -12,7 +12,6 @@ In this page, we'll see how to install FusionCharts and render a chart using the
 
 Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of the following methods:
 
-
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='npm'>NPM</a></li>
