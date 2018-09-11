@@ -1,4 +1,4 @@
----
+z---
 title: Your First Gauge in AngularJS Using FusionCharts | FusionCharts
 description: This article outlines the steps to create your first gauge, widget and map using the fusionCharts AngularJS component.
 heading: Your First Gauge in AngularJS using FusionCharts
@@ -38,7 +38,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 </div>
 
 <div class='tab cdn-tab'>
-<div><strong>To install the FusionCharts package and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>To install the FusionCharts package and the `angularjs-fusioncharts` component follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the [AngularJS](https://angularjs.org/) core library.
@@ -64,7 +64,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 </div>
 
 <div class='tab localfiles-tab'>
-<div><strong>To install the **FusionCharts** package and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>To install the **FusionCharts** package and the `angularjs-fusioncharts` component follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the [AngularJS](https://angularjs.org/) core library.
@@ -270,6 +270,22 @@ myApp.controller('MyController', ['$scope', function($scope) {
         }
     };
 }]);
+// Render
+chartInstance.render()
+</code></pre>
+<div class='mt-30'><strong>Create an HTML template as shown below:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+<body ng-app="myApp">
+    <div ng-controller="MyController">
+        <div
+        fusioncharts
+        width="450"
+        height="250"
+        type="angulargauge"
+        datasource="{{myDataSource}}">
+        </div>
+    </div>
+</body>
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
