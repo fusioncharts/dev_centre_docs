@@ -137,17 +137,17 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 ```
 In the above JSON: 
 
-* Create the **chart** object to define the elements of the gauge.
+* Create the `chart` object to define the elements of the gauge.
 
-* Create the **colorRange** array to set the color associated with the specific range of values.
+* Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify the **min** and **max** value within the **color** array under the **colorRange** array.
+* Specify the `min` and `max` value within the `color` array under the `colorRange` array.
 
-* Specify the hex code of the color within the **color** array.
+* Specify the hex code of the color within the `color` array.
 
-* Create the **dials** array to represent the customer satisfaction score.
+* Create the `dials` array to represent the customer satisfaction score.
 
-* Create the **dial** array under the **dials** array and set the value of the dial.
+* Create the `dial` array under the `dials` array and set the value of the dial.
 
 Now that you have converted the tabular data to JSON format, let's see how to render the chart.
 
@@ -176,6 +176,8 @@ To render the gauge, follow the steps below:
     * Set the `dataFormat` as JSON.
 
     * Embed the json data as the value of the `dataSource`.
+
+The consolidated code is given below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
