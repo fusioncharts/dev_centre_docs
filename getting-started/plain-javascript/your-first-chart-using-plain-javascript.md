@@ -82,7 +82,7 @@ Let's create a Column 2D chart showing the "Countries With Most Oil Reserves".
 
 The Column 2D chart is shown below:
 
-{% embed_chart getting-started-your-first-chart-example-1.js %}
+{% embed_chart getting-started-your-first-chart.js %}
 
 The data for the above chart is shown in the table below:
 
