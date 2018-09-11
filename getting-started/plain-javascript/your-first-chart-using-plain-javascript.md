@@ -82,7 +82,7 @@ Let's create a Column 2D chart showing the "Countries With Most Oil Reserves".
 
 The Column 2D chart is shown below:
 
-{% embed_all getting-started-your-first-chart-example-1.js %}
+{% embed_chart getting-started-your-first-chart-example-1.js %}
 
 The data for the above chart is shown in the table below:
 
@@ -320,7 +320,65 @@ chartInstance.render();
 
 <div class='tab cdn-tab'>
 <pre><code class="custom-hlc language-javascript">
-
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    FusionCharts.ready(function(){
+    var fusioncharts = new FusionCharts({
+    type: 'column2d',
+    renderAt: 'chart-container',
+    width: '700',
+    height: '400',
+    dataFormat: 'json',
+    dataSource: {
+        // Chart Configuration
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion",
+        },
+        // Chart Data
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    }
+});
+    fusioncharts.render();
+    });
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="chart-container"&gt;FusionCharts XT will load here!&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -328,7 +386,65 @@ chartInstance.render();
 
 <div class='tab localfiles-tab'>
 <pre><code class="custom-hlc language-javascript">
-
+&lt;html&gt;
+&lt;head&gt;
+&lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
+&lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript"&gt;
+    FusionCharts.ready(function(){
+    var fusioncharts = new FusionCharts({
+    type: 'column2d',
+    renderAt: 'chart-container',
+    width: '700',
+    height: '400',
+    dataFormat: 'json',
+    dataSource: {
+        // Chart Configuration
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion",
+        },
+        // Chart Data
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    }
+});
+    fusioncharts.render();
+    });
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id="chart-container"&gt;FusionCharts XT will load here!&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
