@@ -1,14 +1,14 @@
 ---
-title: Your First Chart in jQuery using FusionCharts | FusionCharts
-description: This article outlines the steps to be executed for creating your first chart using the jquery-fusioncharts component.
-heading: Create a Chart in jQuery using FusionCharts
+title: Your First Gauge in jQuery using FusionCharts | FusionCharts
+description: This article outlines the steps to be executed for creating your first gauge using the jquery-fusioncharts component.
+heading: Create a Gauge in jQuery using FusionCharts
 ---
 
 ## Overview
 
 FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **jQuery** plugin which provides bindings for **FusionCharts**. The `jquery-fusioncharts` plugin allows you to easily add rich and interactive charts to any **jQuery** project.
 
-In this page, we'll see how to install FusionCharts and render a chart using the `jquery-fusionCharts` plugin.
+In this page, we'll see how to install FusionCharts and render a gauge using the `jquery-fusionCharts` plugin.
 
 ## Installation
 
@@ -33,7 +33,6 @@ $ npm install fusioncharts --save
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-
 <div class='tab cdn-tab'>
 <div class='mt-30'><strong>To install the FusionCharts package and the `jquery-fusioncharts` component follow the steps below:</strong></div>
 <div class='mt-20'>1. Include the [jQuery ](https://jquery.com/)core library.</div>
@@ -50,12 +49,10 @@ $ npm install fusioncharts --save
         &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
         &lt;!-- Fusion Theme --&gt;
         &lt;script type="text/javascript" src="https://unpkg.com/fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-
     &lt;/head&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-
 <div class='tab local-tab'>
 <div class='mt-30'><strong>To install the FusionCharts package and the `jquery-fusioncharts` component follow the steps below:</strong></div>
 <div class='mt-20'>1. Include the [jQuery ](https://jquery.com/)core library.</div>
@@ -76,111 +73,103 @@ $ npm install fusioncharts --save
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-
 </div>
 </div>
 
 That completes the installation of FusionCharts and the `jquery-fusioncharts` plugin.
 
-## Create your First Chart
+## Create your first gauge
 
-Let's create a Column 2D chart using the `jquery-fusioncharts` plugin showing the "Countries With Most Oil Reserves". 
+Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial to indicate the value. In this section, we will create an **Angular Gauge.**
 
-FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+To start with, we'll build a simple "Nordstorm Customer Satisfaction Index" gauge as shown below:
 
-The Column 2D chart is shown below:
+{% embed_chart getting-started-your-first-widget.js %}
 
-{% embed_chart getting-started-your-first-chart.js %}
+The thresholds for his customer satisfaction score has been defined using the following range.
 
-The data for the above chart is shown in the table below:
-
-
-Country|No. of Oil Reserves||
+Range|Color|Hex Code|
 -|-|-
-Venezuela|290||
-Saudi|260||
-Canada|180||
-Iran|140||
-Russia|115||
-UAE|100||
-US|30||
-China|30||
+0-50|Red|#F2726F|
+50-75|Yellow|#FFC533|
+75-100|Green|#62B58F|
+
+So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and is green.
 
 ## Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
 
 ```javascript
 {
     // Chart Configuration
     "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
+        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+        "lowerLimit": "0",
+        "upperLimit": "100",
+        "showValue": "1",
+        "numberSuffix": "%",
         "theme": "fusion",
+        "showToolTip": "0"
     },
     // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
+    "colorRange": {
+        "color": [{
+            "minValue": "0",
+            "maxValue": "50",
+            "code": "#F2726F"
+        }, {
+            "minValue": "50",
+            "maxValue": "75",
+            "code": "#FFC533"
+        }, {
+            "minValue": "75",
+            "maxValue": "100",
+            "code": "#62B58F"
+        }]
+    },
+    "dials": {
+        "dial": [{
+            "value": "81"
+        }]
+    }
 }
 ```
+In the above JSON: 
 
-> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
+* Create the **chart** object to define the elements of the gauge.
 
-In the above JSON data: 
+* Create the **colorRange** array to set the color associated with the specific range of values.
 
-* Create the `chart` object to define the elements of the chart.
+* Specify the **min** and **max** value within the **color** array under the **colorRange** array.
 
-* Specify the `label` and `value` of each column within the `data` array.
+* Specify the hex code of the color within the **color** array.
 
-Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
+* Create the **dials** array to represent the customer satisfaction score.
+
+* Create the **dial** array under the **dials** array and set the value of the dial.
 
 Now that you have converted the tabular data to JSON format, let's see how to render the chart.
 
-## Render the chart
+## Render the Gauge
 
-To render the chart, follow the steps below:
+To render the gauge, follow the steps below:
 
 1. Include `jQuery`.
 
-2. Include `jquery-fusioncharts` plugin
+2. Include `jquery-fusioncharts` plugin.
 
-3. Include `fusioncharts` core library
+3. Include `fusioncharts` core library.
 
-4. Include all charts from FusionCharts.
+4. Include all gauges from Widgets.
 
-5. Include the FusionCharts theme file to apply the style to the charts.
+5. Include the FusionCharts theme file to apply the style to the gauge.
 
-6. Add the FusionCharts and the theme as a dependency to the core.
+6. Add the widgets and the theme as a dependency to the core.
 
 7. Store the chart configurations in a JSON object. In this JSON object:
 
-    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type as `angulargauge`. Each gauge type is represented with a unique gauge alias. For Angular gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
     * Set the width and height (in pixels). 
 
@@ -199,60 +188,55 @@ To render the chart, follow the steps below:
 <pre><code class="custom-hlc language-javascript">
 var FusionCharts = require('fusioncharts');
 var jQuery = require('jquery');
-
 var jQueryFusionCharts = require('jquery-fusioncharts');
-
 var FusionCharts = require('fusioncharts');
-var Charts = require('fusioncharts/fusioncharts.charts');
-
-Charts(FusionCharts);
-
+var Widgets = require('fusioncharts/fusioncharts.widgets');
+Widgets(FusionCharts);
 FusionTheme(FusionCharts);
-
 // Render the chart using `insertFusionCharts` method
-
 $('document').ready(function () {
 
     $("#chart-container").insertFusionCharts({
-        type: "column2d",
-        width: "700",
-        height: "400",
-        dataFormat: "json",
+
+        type: 'angulargauge', // Chart type
+        renderAt: 'chart-container', // Container
+        width: '450', // Width of the chart
+        height: '250', // Height of the chart
+        dataFormat: 'json', // Data Type
         dataSource: {
+            // Chart Configuration
             "chart": {
-                "caption": "Countries With Most Oil Reserves [2017-18]",
-                "subCaption": "In MMbbl = One Million barrels",
-                "xAxisName": "Country",
-                "yAxisName": "Reserves (MMbbl)",
-                "numberSuffix": "K"
+                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                "lowerLimit": "0",
+                "upperLimit": "100",
+                "showValue": "1",
+                "numberSuffix": "%",
+                "theme": "fusion",
+                "showToolTip": "0"
             },
-            "data": [{
-                "label": "Venezuela",
-                "value": "290"
-            }, {
-                "label": "Saudi",
-                "value": "260"
-            }, {
-                "label": "Canada",
-                "value": "180"
-            }, {
-                "label": "Iran",
-                "value": "140"
-            }, {
-                "label": "Russia",
-                "value": "115"
-            }, {
-                "label": "UAE",
-                "value": "100"
-            }, {
-                "label": "US",
-                "value": "30"
-            }, {
-                "label": "China",
-                "value": "30"
-            }]
+            // Chart Data
+            "colorRange": {
+                "color": [{
+                    "minValue": "0",
+                    "maxValue": "50",
+                    "code": "#F2726F"
+                }, {
+                    "minValue": "50",
+                    "maxValue": "75",
+                    "code": "#FFC533"
+                }, {
+                    "minValue": "75",
+                    "maxValue": "100",
+                    "code": "#62B58F"
+                }]
+            },
+            "dials": {
+                "dial": [{
+                    "value": "81"
+                }]
+            }
         }
-    });
+    }
 });
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -268,45 +252,60 @@ $('document').ready(function () {
         &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
     &lt;body&gt;
-
         &lt;div id="chart-container"&gt;FusionCharts will render here...&lt;/div&gt;
-
         &lt;script type="text/javascript"&gt;
             console.log(jQuery);
             $('document').ready(function () {
                 $("#chart-container").insertFusionCharts({
-                    type: "column2d",
-                    width: "700",
-                    height: "400",
-                    dataFormat: "json",
-                    dataSource: {
-                        "chart": {
-                            "caption": "Yearly revenue",
-                            "xAxisName": "Year",
-                            "yAxisName": "Revenues",
-                            "numberPrefix": "$",
-                            "theme": "fusion"
-                        },
-                        "data": [{
-                            "label": "2015",
-                            "value": "5548900"
-                        }, {
-                            "label": "2016",
-                            "value": "8100000"
-                        }, {
-                            "label": "2017",
-                            "value": "7200000"
-                        }]
-                    }
-                });
-            });
+                    type: 'angulargauge', // Chart type
+        renderAt: 'chart-container', // Container
+        width: '450', // Width of the chart
+        height: '250', // Height of the chart
+        dataFormat: 'json', // Data Type
+        dataSource: {
+            // Chart Configuration
+            "chart": {
+                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                "lowerLimit": "0",
+                "upperLimit": "100",
+                "showValue": "1",
+                "numberSuffix": "%",
+                "theme": "fusion",
+                "showToolTip": "0"
+            },
+            // Chart Data
+            "colorRange": {
+                "color": [{
+                    "minValue": "0",
+                    "maxValue": "50",
+                    "code": "#F2726F"
+                }, {
+                    "minValue": "50",
+                    "maxValue": "75",
+                    "code": "#FFC533"
+                }, {
+                    "minValue": "75",
+                    "maxValue": "100",
+                    "code": "#62B58F"
+                }]
+            },
+            "dials": {
+                "dial": [{
+                    "value": "81"
+                }]
+            }
+        }
+    }
+});
+
         &lt;/script&gt;
+
     &lt;/body&gt;
+
 &lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-
 <div class='tab local-tab'>
 <pre><code class="custom-hlc language-html">
 &lt;html&gt;
@@ -318,40 +317,60 @@ $('document').ready(function () {
         &lt;script type="text/javascript" src="path/to/local/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
     &lt;body&gt;
-
         &lt;div id="chart-container"&gt;FusionCharts will render here...&lt;/div&gt;
-
         &lt;script type="text/javascript"&gt;
+
             console.log(jQuery);
+
             $('document').ready(function () {
+
                 $("#chart-container").insertFusionCharts({
-                    type: "column2d",
-                    width: "700",
-                    height: "400",
-                    dataFormat: "json",
-                    dataSource: {
-                        "chart": {
-                            "caption": "Yearly revenue",
-                            "xAxisName": "Year",
-                            "yAxisName": "Revenues",
-                            "numberPrefix": "$",
-                            "theme": "fusion"
-                        },
-                        "data": [{
-                            "label": "2015",
-                            "value": "5548900"
-                        }, {
-                            "label": "2016",
-                            "value": "8100000"
-                        }, {
-                            "label": "2017",
-                            "value": "7200000"
-                        }]
-                    }
-                });
-            });
+
+                    type: 'angulargauge', // Chart type
+        renderAt: 'chart-container', // Container
+        width: '450', // Width of the chart
+        height: '250', // Height of the chart
+        dataFormat: 'json', // Data Type
+        dataSource: {
+            // Chart Configuration
+            "chart": {
+                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                "lowerLimit": "0",
+                "upperLimit": "100",
+                "showValue": "1",
+                "numberSuffix": "%",
+                "theme": "fusion",
+                "showToolTip": "0"
+            },
+            // Chart Data
+            "colorRange": {
+                "color": [{
+                    "minValue": "0",
+                    "maxValue": "50",
+                    "code": "#F2726F"
+                }, {
+                    "minValue": "50",
+                    "maxValue": "75",
+                    "code": "#FFC533"
+                }, {
+                    "minValue": "75",
+                    "maxValue": "100",
+                    "code": "#62B58F"
+                }]
+            },
+            "dials": {
+                "dial": [{
+                    "value": "81"
+                }]
+            }
+        }
+    }
+});
+
         &lt;/script&gt;
+
     &lt;/body&gt;
+
 &lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -360,7 +379,7 @@ $('document').ready(function () {
 </div>
 </div>
 
-That's it! Your first chart using `jquery-fusioncharts` is ready.
+That's it! Your first gauge using `jquery-fusioncharts` is ready.
 
 ## Problem rendering the chart?
 
@@ -371,3 +390,4 @@ In case there is an error, and you are unable to see the chart, check for the fo
 * If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
 
 * If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+
