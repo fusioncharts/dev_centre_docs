@@ -120,7 +120,6 @@ In this section, we will create a visualization using the **World Map** showing 
 
 The data for this chart is represented in the table below:
 
-
 State|Entity Name|Value||
 -|-|-|-
 North America|NA|82||

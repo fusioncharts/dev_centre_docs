@@ -84,7 +84,7 @@ To start with, we'll build a simple angular gauge showcasing Nordstorm's Custome
 
 The angular gauge is shown below:
 
-{% embed_all getting-started-your-first-widget.js %}
+{% embed_chart getting-started-your-first-widget.js %}
 
 The thresholds for the above sample have been defined using the following range:
 
@@ -422,7 +422,7 @@ gaugeInstance.render();
 </div>
 </div>
 
-That's it! Your first chart using Plain JavaScript is ready.
+That's it! Your first gauge using Plain JavaScript is ready.
 
 ## Problem rendering the chart?
 
