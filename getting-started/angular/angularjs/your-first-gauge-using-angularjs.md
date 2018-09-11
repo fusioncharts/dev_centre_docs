@@ -273,8 +273,8 @@ myApp.controller('MyController', ['$scope', function($scope) {
 // Render
 chartInstance.render()
 </code></pre>
-&lt;div class='mt-30'&gt;&lt;strong&gt;Create an HTML template as shown below:&lt;/strong&gt;&lt;/div&gt;
-&lt;pre&gt;&lt;code class="custom-hlc language-javascript"&gt;
+<div class='mt-30'><strong>Create an HTML template as shown below:</strong></div>
+<pre><code class="custom-hlc language-javascript">
 &lt;body ng-app="myApp"&gt;
     &lt;div ng-controller="MyController"&gt;
         &lt;div
