@@ -516,7 +516,7 @@ Create the chart container and set the following:
 
 ```
 
-That's it the California map is ready. 
+That's it! The **California** map is ready. 
 
 ## Problem rendering the chart?
 

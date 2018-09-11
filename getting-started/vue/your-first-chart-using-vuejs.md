@@ -1,509 +1,441 @@
 ---
 title: Your First Chart in Vue using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the vue-fusioncharts component.
-heading: Your First Chart in Vue using FusionCharts
+heading: Create a Chart in Vue using FusionCharts
 chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps, and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and the `Vue-FusionCharts` component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/vue/your-first-chart-using-vuejs#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/vue/your-first-chart-using-vuejs#create-your-first-gauge-6) and a [map]({% site.baseurl %}/getting-started/vue/your-first-chart-using-vuejs#create-your-first-map-9).
+## Overview
 
-Before going through this article, [install]({% site.baseurl %}/getting-started/vue/install-using-vuejs) the `vue-fusioncharts` plugin, if you haven’t installed it already.
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Vue** component which provides bindings for **FusionCharts**. The `vue-fusioncharts` component allows you to easily add rich and interactive charts to any **Vue** project.
 
-## Create your first chart
+In this page, we'll see how to install FusionCharts and render a chart using the `vue-fusionCharts` component.
 
-In this section, we will create a chart using `vue-fusioncharts`. Let's create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/list-of-charts).
+## Installation
 
-To create charts, the `vue-fusioncharts` component can be passed as part of another VueJs component.
+Install **FusionCharts** and the `vue-fusioncharts` component using any of the following methods:
 
-Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
+**Using local files:	**
 
-{% embed_chart getting-started-your-first-chart.js %}
+1. Include [Vue ](https://vuejs.org/)core library.
 
-**The data for this chart is represented in the table below:**
+2. Include the `vue-fusioncharts` component.
 
-Country|No. of Oil Reserves|
--|-
-Venezuela|290|
-Saudi|260|
-Canada|180|
-Iran|140|
-Russia|115|
-UAE|100|
-US|30|
-China|30|
+3. Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
 
-### Convert tabular data into JSON format
+4. Include the FusionCharts theme file to apply the style to the charts.
 
-It's time to convert it into JSON format, as FusionCharts accepts data in either JSON or XML format. For Vue, we recommend JSON format. The converted format will look as shown below:
+The consolidated code is shown below:
 
-> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts), etc.
-
-```javascript
-{
-    // Chart Configuration
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "theme": "fusion",
-    },
-    // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
-}
 ```
 
-In the above JSON we have:
+<head>
+    <!-- Step 1 - Including vue  -->
+    <script type="text/javascript" src="path/to/local/vue.js"></script>
 
-* Created the chart object to define the elements of the `chart`.
-* Then, each row of the tabular data is present within the `data` array to specify the labels and their corresponding values.
+    <!-- Step 2 - Including vue-fusioncharts component -->
+    <script type="text/javascript" src="path/to/local/vue-fusioncharts.js"></script>
+    <!-- Step 3 - Including the fusioncharts core library -->
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <!-- Step 4 - Including the fusion theme -->
+    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+</head>
 
-Both the `chart` object and the `data` array contain a set of key-value pairs known as attributes. These attributes are used to set the functional and cosmetic properties of the chart, as defined below:
-
-#### Functional Attributes
-
-Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The functional attributes used in the above JSON are:
-
-* `caption` sets the caption of the chart.
-* `subcaption` sets the sub-caption of the chart.
-* `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
-* `numberPrefix` adds a prefix to all the numbers visible on the chart.
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` theme as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
-
-#### Cosmetic Attributes
-
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics, no cosmetic attributes are used in this sample. For the detailed list of cosmetic attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d).
-
-### Create an instance of the chart
-
-In this step, we will create an instance of the chart type as **Column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
-
-The code to render a chart is given below:
-
-```javascript
-// Use the Vue.use() global method
-Vue.use(VueFusionCharts);
-const app = new Vue({
-    el: '#app',
-    data: {
-        type: 'column2d', // The chart type
-        width: '700', // Width of the chart
-        height: '400', // Height of the chart
-        dataFormat: 'json', // Data type
-        dataSource: {
-            // Chart Configuration
-            "chart": {
-                "caption": "Countries With Most Oil Reserves [2017-18]",
-                "subCaption": "In MMbbl = One Million barrels",
-                "xAxisName": "Country",
-                "yAxisName": "Reserves (MMbbl)",
-                "numberSuffix": "K",
-                "theme": "fusion",
-            },
-            // Chart Data
-            "data": [{
-                "label": "Venezuela",
-                "value": "290"
-            }, {
-                "label": "Saudi",
-                "value": "260"
-            }, {
-                "label": "Canada",
-                "value": "180"
-            }, {
-                "label": "Iran",
-                "value": "140"
-            }, {
-                "label": "Russia",
-                "value": "115"
-            }, {
-                "label": "UAE",
-                "value": "100"
-            }, {
-                "label": "US",
-                "value": "30"
-            }, {
-                "label": "China",
-                "value": "30"
-            }]
-        }
-    }
-});
 ```
 
-In the above code:
+**Using CDN:**
 
-* We have created an instance of the **Column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 700x400 pixels using `width` and `height`.
-* To specify the data format as JSON, we have set the `dataFormat` parameter to `json`. You can also provide the data in XML format. 
-* The JSON data is embedded as the value of the `dataSource` parameter.
+To install the FusionCharts package and the `vue-fusioncharts` component follow the steps below:
 
-The HTML template of the above sample is shown below:
+1. Include [Vue ](https://vuejs.org/)core library.
 
-```html
-<div id="app">
-    <fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
-</div>
+2. Include the `vue-fusioncharts` component.
+
+3. Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+
+4. Include the FusionCharts theme file to apply the style to the charts.
+
 ```
 
-That's it! When you run this HTML page now, you should see a chart representing your data.
+<head>
+    <!-- Step 1 - Including vue  -->
+    <script type="text/javascript" src="https://unpkg.com/vue@2.3.3"></script>
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d) (the keys in the `dataSource` object) for a Column 2D chart.
+    <!-- Step 2 - Including vue-fusioncharts component -->
+    <script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js
 
-In the JavaScript code, execution of `const app = new Vue({ })` creates a new Vue instance called **app**. 
+"></script>
+    <!-- Step 3 - Including the fusioncharts core library -->
+    <script type="text/javascript" src="**http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js**
 
-Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/list-of-charts), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d) for different charts.
+"></script>
+    <!-- Step 4 - Including the fusion theme -->
+    <script type="text/javascript" src="**http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js**"></script>
+</head>
 
-## Create your first gauge
+```
 
-Gauges are powerful tools that can showcase information using a radial scale to display data, and a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
+**Using npm**
 
-To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
+To install FusionCharts and the `vue-fusioncharts` component via npm follow the steps below:
 
-{% embed_chart getting-started-your-first-widget.js %}
+1. Install the `vue-fusioncharts` component
 
-The thresholds for the above sample have been defined using the following range.
+```
 
-Range|Color|Hex Code|
+$ npm install vue-fusioncharts --save
+
+```
+
+2. Install `fusioncharts` package
+
+```
+
+$ npm install fusioncharts --save
+
+```
+
+That completes the installation of FusionCharts and the `vue-fusioncharts` component.
+
+## Create your First Chart
+
+Let's create a Column 2D chart using the `vue-fusioncharts` component showing the "Countries With Most Oil Reserves". 
+
+FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+
+The Column 2D chart is shown below:
+
+<Live chart> 
+
+The data for the above chart is shown in the table below:
+
+
+Country|No. of Oil Reserves||
 -|-|-
-0-50|Red|#F2726F|
-50-75|Yellow|#FFC533|
-75-100|Green|#62B58F|
+Venezuela|290||
+Saudi|260||
+Canada|180||
+Iran|140||
+Russia|115||
+UAE|100||
+US|30||
+China|30||
 
-So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and is green.
 
-### Convert tabular data into JSON format
 
-It's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For Vue, we recommend JSON format. The converted format is shown below:
+**Convert tabular data into JSON format**
 
-```javascript
-{
-    // Chart Configuration
-    "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
-        "theme": "fusion",
-        "showToolTip": "0"
-    },
-    // Chart Data
-    "colorRange": {
-        "color": [{
-            "minValue": "0",
-            "maxValue": "50",
-            "code": "#F2726F"
-        }, {
-            "minValue": "50",
-            "maxValue": "75",
-            "code": "#FFC533"
-        }, {
-            "minValue": "75",
-            "maxValue": "100",
-            "code": "#62B58F"
-        }]
-    },
-    "dials": {
-        "dial": [{
-            "value": "81"
-        }]
-    }
-}
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format as shown below:
+
+<JSON DATA>
+
+> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
+
+In the above JSON data: 
+
+* Create the `chart` object to define the elements of the chart.
+
+* Specify the `label` and `value` of each column within the `data` array.
+
+Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
+
+Now that you have converted the tabular data to JSON format, let's see how to render the chart.
+
+## Render the chart
+
+To render the chart, follow the steps below:
+
+1. Include the `vue` component
+
+2. Include `vue-fusioncharts` component
+
+3. Include `fusioncharts` core library
+
+4. Include the chart type.
+
+5. Include the FusionCharts theme file to apply the style to the charts
+
+6. Register the **VueFusionCharts** component
+
+7. Store the chart configurations in a JSON object. In this JSON object:
+
+* Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+
+* Set the width and height (in pixels). 
+
+* Set the `dataFormat` as JSON.
+
+* Embed the json data as the value of the `dataSource`.
+
 ```
 
-### Create an instance of the gauge
+import Vue from 'vue';
+import VueFusionCharts from 'vue-fusioncharts';
+import FusionCharts from 'fusioncharts/core';
+import Column2D from 'fusioncharts/viz/column2d'
 
-In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+// Register VueFusionCharts component
+Vue.use(VueFusionCharts, FusionCharts, Column2D)
 
-The code to render a chart by passing VueJS component is given below:
-
-```javascript
-// Use the vue.use() global method
-Vue.use(VueFusionCharts);
-const app = new Vue({
+var app = new Vue({
     el: '#app',
     data: {
-        type: 'angulargauge', // Chart type
-        renderAt: 'chart-container', // Container
-        width: '450', // Width of the chart
-        height: '250', // Height of the chart
-        dataFormat: 'json', // Data Type
+        width: '700',
+        height: '400',
+        type: 'column2d',
+        dataFormat: 'json',
         dataSource: {
-            // Chart Configuration
-            "chart": {
-                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-                "lowerLimit": "0",
-                "upperLimit": "100",
-                "showValue": "1",
-                "numberSuffix": "%",
-                "theme": "fusion",
-                "showToolTip": "0"
-            },
-            // Chart Data
-            "colorRange": {
-                "color": [{
-                    "minValue": "0",
-                    "maxValue": "50",
-                    "code": "#F2726F"
-                }, {
-                    "minValue": "50",
-                    "maxValue": "75",
-                    "code": "#FFC533"
-                }, {
-                    "minValue": "75",
-                    "maxValue": "100",
-                    "code": "#62B58F"
-                }]
-            },
-            "dials": {
-                "dial": [{
-                    "value": "81"
-                }]
-            }
-        }
+          "chart": {
+              "caption": "Countries With Most Oil Reserves [2017-18]",
+              "subCaption": "In MMbbl = One Million barrels",
+              "xAxisName": "Country",
+              "yAxisName": "Reserves (MMbbl)",
+              "numberSuffix": "K",
+              "theme": "fusion"
+          },
+          "data": [{
+              "label": "Venezuela",
+              "value": "290"
+          }, {
+              "label": "Saudi",
+              "value": "260"
+          }, {
+              "label": "Canada",
+              "value": "180"
+          }, {
+              "label": "Iran",
+              "value": "140"
+          }, {
+              "label": "Russia",
+              "value": "115"
+          }, {
+              "label": "UAE",
+              "value": "100"
+          }, {
+              "label": "US",
+              "value": "30"
+          }, {
+              "label": "China",
+              "value": "30"
+          }]
+      }
     }
 });
+
+Create an HTML template as shown below:
+
 ```
 
-The HTML template for the above sample is:
-
-```html
 <div id="app">
     <fusioncharts
+    :type="type"
+    :width="width"
+    :height="height"
+    :dataFormat="dataFormat"
+    :dataSource="dataSource"
+    ></fusioncharts>
+</div>
+
+```
+
+Using CDN:
+
+```
+
+<head>
+    <!-- Step 1 - Including vue  -->
+    <script type="text/javascript" src="https://unpkg.com/vue@2.3.3"></script>
+
+    <!-- Step 2 - Including vue-fusioncharts component -->
+    <script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js
+
+"></script>
+    <!-- Step 3 - Including the fusioncharts core library -->
+    <script type="text/javascript" src="**http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js**
+
+"></script>
+    <!-- Step 4 - Including the fusion theme -->
+    <script type="text/javascript" src="**http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js**"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <fusioncharts
         :type="type"
         :width="width"
         :height="height"
         :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
-</div>
-```
+        :dataSource="dataSource"
+        :events="events">
+        </fusioncharts>
+        <p>Display Value: {{displayValue}}</p>
+    </div>
+    
+    <script>
+        // Use VueFusionCharts component by calling the Vue.use() method:
+        Vue.use(VueFusionCharts);
+        
+     var app = new Vue({
 
-See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge) for an angular gauge.
-
-## Create your first map
-
-In this section, we will create a visualization using the map of **World**. Take a look at the map shown below:
-
-{% embed_chart getting-started-your-first-map.js %}
-
-The data for this chart is represented in the table below:
-
-State|Entity Name|Value|
--|-|-
-North America|NA|82|
-South America|SA|2.04|
-Asia|AS|1.78|
-Europe|EU|40|
-Africa|AF|2.58|
-Australia|AU|1.30|
-
-> In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column. 
-
-However, when you convert the data into a format supported by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). 
-
-For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
-
-We have a detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
-
-
-### Convert tabular data into JSON format
-
-It's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For Vue, we recommend JSON format. The converted format is shown below:
-
-```javascript
-{
-    // Map Configuration
-    "chart": {
-        "caption": "Average Annual Population Growth",
-        "subcaption": " 1955-2015",
-        "numbersuffix": "%",
-        "includevalueinlabels": "1",
-        "labelsepchar": ": ",
-        "entityFillHoverColor": "#FFF9C4",
-        "theme": "fusion"
-    },
-    // Aesthetics; ranges synced with the slider
-    "colorrange": {
-        "minvalue": "0",
-        "code": "#FFE0B2",
-        "gradient": "1",
-        "color": [{
-            "minvalue": "0.5",
-            "maxvalue": "1.0",
-            "color": "#FFD74D"
-        }, {
-            "minvalue": "1.0",
-            "maxvalue": "2.0",
-            "color": "#FB8C00"
-        }, {
-            "minvalue": "2.0",
-            "maxvalue": "3.0",
-            "color": "#E65100"
-        }]
-    },
-    // Source data as JSON --> id represents countries of world.
-    "data": [{
-        "id": "NA",
-        "value": ".82",
-        "showLabel": "1"
-    }, {
-        "id": "SA",
-        "value": "2.04",
-        "showLabel": "1"
-    }, {
-        "id": "AS",
-        "value": "1.78",
-        "showLabel": "1"
-    }, {
-        "id": "EU",
-        "value": ".40",
-        "showLabel": "1"
-    }, {
-        "id": "AF",
-        "value": "2.58",
-        "showLabel": "1"
-    }, {
-        "id": "AU",
-        "value": "1.30",
-        "showLabel": "1"
-    }]
-}
-```
-
-### Create an instance of the map
-
-In this step, we will create an instance of the map type as **world**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
-
-The code to render a chart by passing the VueJS component is given below:
-
-```javascript
-// USe the Vue.use() global method
-Vue.use(VueFusionCharts);
-const app = new Vue({
     el: '#app',
+
     data: {
-        type: 'world', // Map type
-        renderAt: 'chart-container', // Container
-        width: '800', // Width of the chart
-        height: '550', // Height of the chart
-        dataFormat: 'json', // Data Type
-        dataSource: {
-            // Map Configuration
-            "chart": {
-                "caption": "Average Annual Population Growth",
-                "subcaption": " 1955-2015",
-                "numbersuffix": "%",
-                "includevalueinlabels": "1",
-                "labelsepchar": ": ",
-                "entityFillHoverColor": "#FFF9C4",
-                "theme": "fusion"
-            },
-            // Aesthetics; ranges synced with the slider
-            "colorrange": {
-                "minvalue": "0",
-                "code": "#FFE0B2",
-                "gradient": "1",
-                "color": [{
-                    "minvalue": "0.5",
-                    "maxvalue": "1.0",
-                    "color": "#FFD74D"
-                }, {
-                    "minvalue": "1.0",
-                    "maxvalue": "2.0",
-                    "color": "#FB8C00"
-                }, {
-                    "minvalue": "2.0",
-                    "maxvalue": "3.0",
-                    "color": "#E65100"
-                }]
-            },
-            // Source data as JSON --> id represents countries of world.
-            "data": [{
-                "id": "NA",
-                "value": ".82",
-                "showLabel": "1"
-            }, {
-                "id": "SA",
-                "value": "2.04",
-                "showLabel": "1"
-            }, {
-                "id": "AS",
-                "value": "1.78",
-                "showLabel": "1"
-            }, {
-                "id": "EU",
-                "value": ".40",
-                "showLabel": "1"
-            }, {
-                "id": "AF",
-                "value": "2.58",
-                "showLabel": "1"
-            }, {
-                "id": "AU",
-                "value": "1.30",
-                "showLabel": "1"
-            }]
-        }
+
+        width: '100%',
+
+        height: '400',
+
+        type: 'column2d',
+
+        dataFormat: 'json',
+
+        dataSource:{
+          "chart": {
+              "caption": "Countries With Most Oil Reserves [2017-18]",
+              "subCaption": "In MMbbl = One Million barrels",
+              "xAxisName": "Country",
+              "yAxisName": "Reserves (MMbbl)",
+              "numberSuffix": "K",
+              "theme": "fusion"
+          },
+          "data": [{
+              "label": "Venezuela",
+              "value": "290"
+          }, {
+              "label": "Saudi",
+              "value": "260"
+          }, {
+              "label": "Canada",
+              "value": "180"
+          }, {
+              "label": "Iran",
+              "value": "140"
+          }, {
+              "label": "Russia",
+              "value": "115"
+          }, {
+              "label": "UAE",
+              "value": "100"
+          }, {
+              "label": "US",
+              "value": "30"
+          }, {
+              "label": "China",
+              "value": "30"
+          }]
+      }
     }
 });
+
+    }
+
+});
+
+    </script>
+</body>
+
 ```
 
-The HTML template for the above sample is:
+Using Local files:
 
-```html
-<div id="app">
-    <fusioncharts
+    <head>
+    <!-- Step 1 - Including vue  -->
+    <script type="text/javascript" src="path/to/local/vue.js"></script>
+
+    <!-- Step 2 - Including vue-fusioncharts component -->
+    <script type="text/javascript" src="path/to/local/vue-fusioncharts.js"></script>
+    <!-- Step 3 - Including the fusioncharts core library -->
+    <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+    <!-- Step 4 - Including the fusion theme -->
+    <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+</head>
+
+<body>
+
+    <div id="app">
+        <fusioncharts
         :type="type"
         :width="width"
         :height="height"
         :dataFormat="dataFormat"
-        :dataSource="dataSource">
-    </fusioncharts>
-</div>
-```
+        :dataSource="dataSource"
+        :events="events">
+        </fusioncharts>
+        <p>Display Value: {{displayValue}}</p>
+    </div>
+    
+    <script>
+        // Use VueFusionCharts component by calling the Vue.use() method:
+        Vue.use(VueFusionCharts);
+        
+             var app = new Vue({
 
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference) (the keys in the `dataSource` object) for the **World** map. The respective `ids` can be found [here]({% site.baseurl %}/maps/spec-sheets/world).
+    el: '#app',
+
+    data: {
+
+        width: '100%',
+
+        height: '400',
+
+        type: 'column2d',
+
+        dataFormat: 'json',
+
+        dataSource:{
+          "chart": {
+              "caption": "Countries With Most Oil Reserves [2017-18]",
+              "subCaption": "In MMbbl = One Million barrels",
+              "xAxisName": "Country",
+              "yAxisName": "Reserves (MMbbl)",
+              "numberSuffix": "K",
+              "theme": "fusion"
+          },
+          "data": [{
+              "label": "Venezuela",
+              "value": "290"
+          }, {
+              "label": "Saudi",
+              "value": "260"
+          }, {
+              "label": "Canada",
+              "value": "180"
+          }, {
+              "label": "Iran",
+              "value": "140"
+          }, {
+              "label": "Russia",
+              "value": "115"
+          }, {
+              "label": "UAE",
+              "value": "100"
+          }, {
+              "label": "US",
+              "value": "30"
+          }, {
+              "label": "China",
+              "value": "30"
+          }]
+      }
+    }
+});
+
+    }
+
+});
+    </script>
+</body>
+
+That's it! Your first chart using `vue-fusioncharts` is ready.
 
 ## Problem rendering the chart?
 
-In case there is an error and you are unable to render the chart, check for the following:
+In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you don't see the chart getting rendered on the browser, it might be because some browsers does not allow JavaScript files to be loaded and run from the local filesystem. In such cases, either try a different browser, or create a local/remote server and provide the webpages containing the charts from the server.
+* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click here to get in touch with our support team.
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
-
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. Check if the path to `fusioncharts.js` file is correct and whether the file exists in that location.
+* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
 
 * If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
+
