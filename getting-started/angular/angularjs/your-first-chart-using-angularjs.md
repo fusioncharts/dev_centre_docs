@@ -38,7 +38,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 </div>
 
 <div class='tab cdn-tab'>
-<div><strong>To install the FusionCharts package and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>To install the FusionCharts package and the `angularjs-fusioncharts` component follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the [AngularJS](https://angularjs.org/) core library.
@@ -65,7 +65,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 
 
 <div class='tab localfiles-tab'>
-<div><strong>To install the **FusionCharts** package and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>To install the **FusionCharts** package and the `angularjs-fusioncharts` component follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the [AngularJS](https://angularjs.org/) core library.
@@ -97,7 +97,7 @@ That completes the installation of FusionCharts and the `angularjs-fusioncharts`
 
 ## Create your first chart
 
-Let's create a Column 2D chart using the react-fusioncharts component showing the "Countries With Most Oil Reserves". 
+Let's create a Column 2D chart using the angularjs-fusioncharts component showing the "Countries With Most Oil Reserves". 
 
 > FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
@@ -273,6 +273,22 @@ myApp.controller('MyController', ['$scope', function($scope) {
         ]
     };
 }]);
+// Render
+chartInstance.render()
+</code></pre>
+<div class='mt-30'><strong>Create an HTML template as shown below:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+<body ng-app="myApp">
+    <div ng-controller="MyController">
+        <div
+        fusioncharts
+        width="700"
+        height="400"
+        type="column2d"
+        datasource="{{myDataSource}}">
+        </div>
+    </div>
+</body>
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>

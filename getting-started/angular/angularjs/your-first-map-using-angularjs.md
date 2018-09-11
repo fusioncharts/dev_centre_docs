@@ -1,7 +1,7 @@
 ---
-title: Your First Gauge in AngularJS Using FusionCharts | FusionCharts
-description: This article outlines the steps to create your first gauge, widget and map using the fusionCharts AngularJS component.
-heading: Your First Gauge in AngularJS using FusionCharts
+title: Your First Map in AngularJS Using FusionCharts | FusionCharts
+description: This article outlines the steps to create your first map, widget and map using the fusionCharts AngularJS component.
+heading: Your First Map in AngularJS using FusionCharts
 ---
 
 The `angularjs-fusioncharts` module for **FusionCharts Suite XT** lets you add interactive JavaScript charts to your **AngularJS (v1.x)** web and mobile applications.
@@ -43,6 +43,8 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     <ol>
         <li>Include the [AngularJS](https://angularjs.org/) core library.
         <li>Include the **FusionCharts** JavaScript files from CDN.</li>
+        <li>Include the FusionCharts map renderer.</li>
+        <li>Include the map definition file.</li>
         <li>Include the `angularjs-fusioncharts` directive.</li>
         <li>Include the theme file.</li>
     </ol>
@@ -54,9 +56,13 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 	&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script &gt;
 	&lt;!-- Step 2 - Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
-    &lt;!-- Step 3 - Including the angularjs-fusioncharts directive--&gt;
+    &lt;!-- Step 3 - Including the map renderer file --&gt;
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js "&gt;&lt;/script&gt;
+    &lt;!-- Step 4 - Including the map definition file --&gt;
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/ fusioncharts.world.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 5 - Including the angularjs-fusioncharts directive--&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/angularjs-fusioncharts.min.js"&gt;&lt;/script &gt;
-    &lt;!-- Step 4 - Including the fusion theme --&gt;
+    &lt;!-- Step 6 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
 &lt;/head&gt;
 </code></pre>
@@ -69,6 +75,8 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
     <ol>
         <li>Include the [AngularJS](https://angularjs.org/) core library.
         <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>Include the FusionCharts map renderer.</li>
+        <li>Include the map definition file.</li>
         <li>Include the `angularjs-fusioncharts` directive.</li>
         <li>Include the FusionCharts theme file to apply the style to the charts.</li>
     </ol>
@@ -80,9 +88,13 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 	&lt;script type="text/javascript" src="path/to/local/angular.min.js"&gt;&lt;/script&gt;
 	&lt;!-- Step 2 - Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 3 - Including the angularjs-fusioncharts directive--&gt;
+    &lt;!-- Step 3 - Including the map renderer file --&gt;
+    &lt;script type="text/javascript" src=" path/to/local/fusioncharts.maps.js "&gt;&lt;/script&gt;
+    &lt;!-- Step 4 - Including the map definition file --&gt;
+    &lt;script type="text/javascript" src=" path/to/local/ fusioncharts.world.js"&gt;&lt;/script&gt;
+    &lt;!-- Step 5 - Including the angularjs-fusioncharts directive--&gt;
     &lt;script type="text/javascript" src="path/to/local/angularjs-fusioncharts.min.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 4 - Including the fusion theme --&gt;
+    &lt;!-- Step 6 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 </code></pre>
@@ -94,89 +106,97 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 
 That completes the installation of FusionCharts and the `angularjs-fusioncharts` directive.
 
-## Create your first gauge
+## Create your first map
 
-Gauges are powerful tools that can showcase information using a radial scale to display data. 
+In this section, we will create a visualization using the **World Map** showing the average annual population growth. 
 
-To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below.
+{% embed_chart getting-started-your-first-map.js %}
 
-> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts). 
+The data for this chart is represented in the table below:
 
-The angular gauge is shown below:
-
-{% embed_chart getting-started-your-first-widget.js %}
-
-The thresholds for the above sample have been defined using the following range:
-
-Range|Color|Hex Code|
+State|Entity Name|Value||
 -|-|-|-
-0-50|Red|#F2726F|
-50-75|Yellow|#FFC533|
-75-100|Green|#62B58F|
-
-So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
+North America|NA|82||
+South America|SA|2.04||
+Asia|AS|1.78||
+Europe|EU|40||
+Africa|AF|2.58||
+Australia|AU|1.30||
 
 ## Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. In this example, we will use the JSON format as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format.
 
-```json
+In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column.
+
+However, when you convert the data into a format (JSON or XML) supported by FusionCharts, the entities are denoted by the `id` key in the `data` object.
+
+For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
+
+We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/maps/spec-sheets/world)for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
+
+ In this example, we will use the JSON format as shown below:
+
+```JSON
 {
-    // Chart Configuration
+    // Map Configuration
     "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
-        "theme": "fusion",
-        "showToolTip": "0"
+        "caption": "Average Annual Population Growth",
+        "subcaption": " 1955-2015",
+        "numbersuffix": "%",
+        "includevalueinlabels": "1",
+        ...
     },
-    // Chart Data
-    "colorRange": {
+    // Aesthetics; ranges synced with the slider
+    "colorrange": {
+        "minvalue": "0",
+        "code": "#FFE0B2",
+        "gradient": "1",
         "color": [{
-            "minValue": "0",
-            "maxValue": "50",
-            "code": "#F2726F"
+            "minvalue": "0.5",
+            "maxvalue": "1.0",
+            "color": "#FFD74D"
         }, {
-            "minValue": "50",
-            "maxValue": "75",
-            "code": "#FFC533"
-        }, {
-            "minValue": "75",
-            "maxValue": "100",
-            "code": "#62B58F"
-        }]
+            "minvalue": "1.0",
+            "maxvalue": "2.0",
+            "color": "#FB8C00"
+        }, …
+    ]
     },
-    "dials": {
-        "dial": [{
-            "value": "81"
-        }]
-    }
+    // Source data as JSON --> id represents countries of world.
+    "data": [{
+        "id": "NA",
+        "value": ".82",
+        "showLabel": "1"
+    }, {
+        "id": "SA",
+        "value": "2.04",
+        "showLabel": "1"
+    }, {
+        "id": "AS",
+        "value": "1.78",
+        "showLabel": "1"
+    }, …
 }
 ```
 
-In the above JSON: 
+In the above JSON data: 
 
-* Create the `chart` object to define the elements of the gauge.
+* Create the `chart` object to define the elements of the map.
 
 * Create the `colorRange` array to set the color associated with the specific range of values.
 
 * Specify the `min` and `max` value within the `color` array under the `colorRange` array.
 
-* Specify the hex code of the color within the `color` array.
+* Create the `data` array to define the id of the continents and their corresponding values along with configurations.
 
-* Create the `dials` array to represent the customer satisfaction score.
+The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the map.
 
-* Create the `dial` array under the `dials` array and set the value of the dial.
+Now that you have converted the tabular data to JSON format, let's learn how to render the map.
 
-The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
+## Render the map
 
-Now that you have converted the tabular data to JSON format, let's learn how to render the gauge.
-
-## Render the gauge
-
-To render the gauge, follow the steps below:
+To render the map follow the steps below:
 
 1. Include **angularjs** using **require**
 
@@ -186,19 +206,23 @@ To render the gauge, follow the steps below:
 
 4. Include `ng-fusioncharts` as a dependency in the application. Call `angular.module()` to add the dependency.
 
-5. Include the chart type
+5. Include the FusionMaps renderer
 
-6. Include the FusionCharts theme file to apply the style to the charts
+6. Include the map definition file
 
-7. Add the chart and the theme as a dependency to the core
+7. Include the map type.
 
-8. Store the chart configurations in a JSON object. In this JSON object:
-    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge chart, the alias is `angulargauge`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+8. Include the FusionCharts theme file to apply the style to the charts
+
+9. Add the map and the theme as a dependency to the core
+
+10. Store the map configurations in a JSON object. In this JSON object:
+    * Set the map type as `world`. Each map type is represented with a unique map alias. For World Map, the alias is `world`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height (in pixels). 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
-9. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named MyController.
+11. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named MyController.
 
 The consolidated code is shown below:
 
@@ -221,14 +245,20 @@ var FusionCharts = require('fusioncharts');
 // Include angularjs-fusioncharts 
 require('angularjs-fusioncharts');
 
-// Require Chart modules 
-var Charts = require('fusioncharts/fusioncharts.charts');
+// Require FusionMaps renderer
+var FusionMaps = require('fusioncharts/fusioncharts.map');
+
+// Require map definition file
+var World = require('fusioncharts/maps/fusioncharts.world');
 
 // Require Fusion theme
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
 // Initialize Charts with FusionCharts instance
-Charts(FusionCharts);
+FusionMaps(FusionCharts);
+
+// Initialize Map definition File
+World(FusionCharts);
 
 // Initialize FusionTheme with FusionCharts instance
 FusionTheme(FusionCharts);
@@ -237,39 +267,82 @@ var myApp = angular.module('myApp', ['ng-fusioncharts']);
 
 myApp.controller('MyController', ['$scope', function($scope) {
     $scope.dataSource = {
-    // Chart Configuration
+        // Chart Configuration
         "chart": {
-            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-            "lowerLimit": "0",
-            "upperLimit": "100",
-            "showValue": "1",
-            "numberSuffix": "%",
-            "theme": "fusion",
-            "showToolTip": "0"
-        },
-        // Chart Data
-        "colorRange": {
-            "color": [{
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#F2726F"
+            // Map Configuration
+            "chart": {
+                "caption": "Average Annual Population Growth",
+                "subcaption": " 1955-2015",
+                "numbersuffix": "%",
+                "includevalueinlabels": "1",
+                "labelsepchar": ": ",
+                "entityFillHoverColor": "#FFF9C4",
+                "theme": "fusion"
+            },
+            // Aesthetics; ranges synced with the slider
+            "colorrange": {
+                "minvalue": "0",
+                "code": "#FFE0B2",
+                "gradient": "1",
+                "color": [{
+                    "minvalue": "0.5",
+                    "maxvalue": "1.0",
+                    "color": "#FFD74D"
+                }, {
+                    "minvalue": "1.0",
+                    "maxvalue": "2.0",
+                    "color": "#FB8C00"
+                }, {
+                    "minvalue": "2.0",
+                    "maxvalue": "3.0",
+                    "color": "#E65100"
+                }]
+            },
+            // Source data as JSON --> id represents countries of world.
+            "data": [{
+                "id": "NA",
+                "value": ".82",
+                "showLabel": "1"
             }, {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#FFC533"
+                "id": "SA",
+                "value": "2.04",
+                "showLabel": "1"
             }, {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#62B58F"
-            }]
-        },
-        "dials": {
-            "dial": [{
-                "value": "81"
+                "id": "AS",
+                "value": "1.78",
+                "showLabel": "1"
+            }, {
+                "id": "EU",
+                "value": ".40",
+                "showLabel": "1"
+            }, {
+                "id": "AF",
+                "value": "2.58",
+                "showLabel": "1"
+            }, {
+                "id": "AU",
+                "value": "1.30",
+                "showLabel": "1"
             }]
         }
     };
 }]);
+// Render
+chartInstance.render()
+</code></pre>
+<div class='mt-30'><strong>Create an HTML template as shown below:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+<body ng-app="myApp">
+    <div ng-controller="MyController">
+        <div
+        fusioncharts
+        width="800"
+        height="550"
+        type="world"
+        datasource="{{myDataSource}}">
+        </div>
+    </div>
+</body>
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -278,18 +351,83 @@ myApp.controller('MyController', ['$scope', function($scope) {
 <pre><code class="custom-hlc language-javascript">
 &lt;head&gt;
     &lt;!-- Including AngularJS --&gt;
-	&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script &gt;
-	&lt;!-- Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script &gt;
+    &lt;!-- Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
     &lt;!-- Including the angularjs-fusioncharts directive--&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/angularjs-fusioncharts.min.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script&gt;
     &lt;!-- Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
 &lt;/head&gt;
 
 &lt;body ng-app="my-app"&gt;
     &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts id="my-chart-id" width="450" height="250" type="angulargauge" dataSource="{{myDataSource}}"&gt;
+        &lt;div fusioncharts id="my-chart-id" width="800" height="550" type="world" dataSource="{{myDataSource}}"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script src="text/javascript"&gt;
+        var myApp = angular.module('myApp', ['ng-fusioncharts']);
+        myApp.controller('MyController', ['$scope', function($scope) {
+            $scope.dataSource = {
+                "chart": {
+                    "caption": "Average Annual Population Growth",
+                    "subcaption": " 1955-2015",
+                    "numbersuffix": "%",
+                    "includevalueinlabels": "1",
+                    ...
+                },
+                "colorrange": {
+                    "minvalue": "0",
+                    "code": "#FFE0B2",
+                    "gradient": "1",
+                    "color": [{
+                        "minvalue": "0.5",
+                        "maxvalue": "1.0",
+                        "color": "#FFD74D"
+                    },  ... ]
+                },
+                "data": [{
+                    "id": "NA",
+                    "value": ".82",
+                    "showLabel": "1"
+                }, {
+                    "id": "SA",
+                    "value": "2.04",
+                    "showLabel": "1"
+                }, {
+                    "id": "AS",
+                    "value": "1.78",
+                    "showLabel": "1"
+                },  ... ]
+            };
+        }]);
+    &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+
+<div class='tab localfiles-tab'>
+<pre><code class="custom-hlc language-javascript">
+&lt;head&gt;
+    &lt;!-- Including AngularJS --&gt;
+    &lt;script type="text/javascript" src="path/to/local/angular.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the angularjs-fusioncharts directive--&gt;
+    &lt;script type="text/javascript" src="path/to/local/angularjs-fusioncharts.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.world.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body ng-app="my-app"&gt;
+    &lt;div ng-controller="MyController"&gt;
+        &lt;div fusioncharts id="my-chart-id" width="800" height="550" type="world" dataSource="{{myDataSource}}"&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;script src="text/javascript"&gt;
@@ -326,6 +464,184 @@ myApp.controller('MyController', ['$scope', function($scope) {
                     "dial": [{
                         "value": "81"
                     }]
+                }
+            };
+        }]);
+    &lt;/script&gt;
+&lt;/body&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
+
+That's it! Your first map using `angularjs-fusioncharts` is ready.
+
+## Render other maps 
+
+To reduce the size of the package FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provide 1600+ maps for you to explore. [Download](https://www.fusioncharts.com/download/map-definition-files) the map files separately if you want to save them locally. 
+
+Let's create a map of California to show the "Web visits for a particular month" as shown below:
+
+{% embed_chart getting-started-your-first-map-california.js %}
+
+To render the above map, first install `fusionmaps` package which contains all the map definition files as shown below:
+
+```
+$ npm install fusionmaps
+```
+
+After installing `fusionmaps` package, the code to render the map of **California** is:
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='npm'>NPM</a></li>
+    <li><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='localfiles'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+<div class='tab npm-tab active'>
+
+<pre><code class="custom-hlc language-javascript">
+//  Require AngularJS 
+var angular = require('angular');
+
+// Require FusionCharts 
+var FusionCharts = require('fusioncharts');
+
+// Include angularjs-fusioncharts 
+require('angularjs-fusioncharts');
+
+// Require FusionMaps renderer
+var FusionMaps = require('fusioncharts/fusioncharts.map');
+
+// Require map definition file
+var California = require('fusioncharts/maps/fusioncharts.california');
+
+// Require Fusion theme
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+// Initialize Charts with FusionCharts instance
+FusionMaps(FusionCharts);
+
+// Initialize Map definition File
+California(FusionCharts);
+
+// Initialize FusionTheme with FusionCharts instance
+FusionTheme(FusionCharts);
+
+var myApp = angular.module('myApp', ['ng-fusioncharts']);
+
+myApp.controller('MyController', ['$scope', function($scope) {
+    $scope.dataSource = {
+        type: 'maps/california',
+        width: '800',
+        height: '550',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "animation": "0",
+                "showbevel": "0",
+                "usehovercolor": "1",
+                "showlegend": "1",
+                "legendposition": "BOTTOM",
+                "legendborderalpha": "0",
+                "legendbordercolor": "ffffff",
+                "legendallowdrag": "0",
+                "legendshadow": "0",
+                "caption": "Website Visits for the month of March 2018",
+                "connectorcolor": "000000",
+                "fillalpha": "80",
+                "hovercolor": "CCCCCC",
+                "theme": "fusion"
+            },
+            "colorrange": {
+                "minvalue": "0",
+                "startlabel": "Low",
+                "endlabel": "High",
+                "code": "e44a00",
+                "gradient": "1",
+                "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
+            },
+            "data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
+        }
+    };
+}]);
+// Render
+chartInstance.render()
+</code></pre>
+<div class='mt-30'><strong>Create an HTML template as shown below:</strong></div>
+<pre><code class="custom-hlc language-javascript">
+<body ng-app="myApp">
+    <div ng-controller="MyController">
+        <div
+        fusioncharts
+        width="800"
+        height="550"
+        type="world"
+        datasource="{{myDataSource}}">
+        </div>
+    </div>
+</body>
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab cdn-tab'>
+<pre><code class="custom-hlc language-javascript">
+&lt;head&gt;
+    &lt;!-- Including AngularJS --&gt;
+    &lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script &gt;
+    &lt;!-- Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
+    &lt;!-- Including the angularjs-fusioncharts directive--&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/angularjs-fusioncharts.min.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.california.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
+&lt;/head&gt;
+
+&lt;body ng-app="my-app"&gt;
+    &lt;div ng-controller="MyController"&gt;
+        &lt;div fusioncharts id="my-chart-id" width="800" height="550" type="california" dataSource="{{myDataSource}}"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;script src="text/javascript"&gt;
+        var myApp = angular.module('myApp', ['ng-fusioncharts']);
+        myApp.controller('MyController', ['$scope', function($scope) {
+            $scope.dataSource = {
+                type: 'maps/california',
+                width: '800',
+                height: '550',
+                dataFormat: 'json',
+                dataSource: {
+                    "chart": {
+                        "animation": "0",
+                        "showbevel": "0",
+                        "usehovercolor": "1",
+                        "showlegend": "1",
+                        "legendposition": "BOTTOM",
+                        "legendborderalpha": "0",
+                        "legendbordercolor": "ffffff",
+                        "legendallowdrag": "0",
+                        "legendshadow": "0",
+                        "caption": "Website Visits for the month of March 2018",
+                        "connectorcolor": "000000",
+                        "fillalpha": "80",
+                        "hovercolor": "CCCCCC",
+                        "theme": "fusion"
+                    },
+                    "colorrange": {
+                        "minvalue": "0",
+                        "startlabel": "Low",
+                        "endlabel": "High",
+                        "code": "e44a00",
+                        "gradient": "1",
+                        "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
+                    },
+                    "data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
                 }
             };
         }]);
@@ -346,48 +662,50 @@ myApp.controller('MyController', ['$scope', function($scope) {
     &lt;!-- Including the angularjs-fusioncharts directive--&gt;
     &lt;script type="text/javascript" src="path/to/local/angularjs-fusioncharts.min.js"&gt;&lt;/script&gt;
     &lt;!-- Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"&gt;&lt;/script&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body ng-app="my-app"&gt;
     &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts id="my-chart-id" width="450" height="250" type="angulargauge" dataSource="{{myDataSource}}"&gt;
+        &lt;div fusioncharts id="my-chart-id" width="800" height="550" type="california" dataSource="{{myDataSource}}"&gt;
         &lt;/div&gt;
     &lt;/div&gt;
     &lt;script src="text/javascript"&gt;
         var myApp = angular.module('myApp', ['ng-fusioncharts']);
         myApp.controller('MyController', ['$scope', function($scope) {
             $scope.dataSource = {
-                // Chart Configuration
-                "chart": {
-                    "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-                    "lowerLimit": "0",
-                    "upperLimit": "100",
-                    "showValue": "1",
-                    "numberSuffix": "%",
-                    "theme": "fusion",
-                    "showToolTip": "0"
-                },
-                // Chart Data
-                "colorRange": {
-                    "color": [{
-                        "minValue": "0",
-                        "maxValue": "50",
-                        "code": "#F2726F"
-                    }, {
-                        "minValue": "50",
-                        "maxValue": "75",
-                        "code": "#FFC533"
-                    }, {
-                        "minValue": "75",
-                        "maxValue": "100",
-                        "code": "#62B58F"
-                    }]
-                },
-                "dials": {
-                    "dial": [{
-                        "value": "81"
-                    }]
+                type: 'maps/california',
+                width: '800',
+                height: '550',
+                dataFormat: 'json',
+                dataSource: {
+                    "chart": {
+                        "animation": "0",
+                        "showbevel": "0",
+                        "usehovercolor": "1",
+                        "showlegend": "1",
+                        "legendposition": "BOTTOM",
+                        "legendborderalpha": "0",
+                        "legendbordercolor": "ffffff",
+                        "legendallowdrag": "0",
+                        "legendshadow": "0",
+                        "caption": "Website Visits for the month of March 2018",
+                        "connectorcolor": "000000",
+                        "fillalpha": "80",
+                        "hovercolor": "CCCCCC",
+                        "theme": "fusion"
+                    },
+                    "colorrange": {
+                        "minvalue": "0",
+                        "startlabel": "Low",
+                        "endlabel": "High",
+                        "code": "e44a00",
+                        "gradient": "1",
+                        "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
+                    },
+                    "data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
                 }
             };
         }]);
@@ -400,7 +718,7 @@ myApp.controller('MyController', ['$scope', function($scope) {
 </div>
 </div>
 
-That's it! Your first chart using `angularjs-fusioncharts` is ready.
+That's it! The **California** map is ready.
 
 ## Problem rendering the chart?
 
