@@ -52,7 +52,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 <pre><code class="custom-hlc language-javascript">
 &lt;head&gt;
 	&lt;!-- Step 1 - Including AngularJS --&gt;
-	&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script &gt;
 	&lt;!-- Step 2 - Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
     &lt;!-- Step 3 - Including the angularjs-fusioncharts directive--&gt;
@@ -282,7 +282,7 @@ myApp.controller('MyController', ['$scope', function($scope) {
 <pre><code class="custom-hlc language-javascript">
 &lt;head&gt;
     &lt;!-- Including AngularJS --&gt;
-	&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script&gt;
+	&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script &gt;
 	&lt;!-- Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
     &lt;!-- Including the angularjs-fusioncharts directive--&gt;
