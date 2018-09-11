@@ -306,10 +306,10 @@ chartInstance.render();
 </code></pre>
 <div class='mt-30'><strong>To include the specific chart types, individually add the following files using `require`</strong></div>
 <ul>
-    <li>var PowerCharts = require('fusioncharts/fusioncharts.powercharts'); (for `PowerCharts`)</li>
-    <li>var Widgets = require('fusioncharts/fusioncharts.widgets'); (for `Widgets`)</li>
-    <li>var Gantt = require('fusioncharts/fusioncharts.gantt'); (for `Gantt` Chart)</li>
-    <li>var Treemap = require('fusioncharts/fusioncharts.treemap'); (for `Treemap`)</li>
+    <li><strong>PowerCharts</strong> - `var PowerCharts = require('fusioncharts/fusioncharts.powercharts');`</li>
+    <li><strong>Widgets</strong> - `var Widgets = require('fusioncharts/fusioncharts.widgets');`</li>
+    <li><strong>Gantt</strong> - `var Gantt = require('fusioncharts/fusioncharts.gantt');`</li>
+    <li><strong>Treemap -  `var Treemap = require('fusioncharts/fusioncharts.treemap');`</li>
     <li>var Zoomscatter = require('fusioncharts/fusioncharts.zoomscatter'); (for `ZoomScatter`)</li>
     <li>var Zoomline = require('fusioncharts/fusioncharts.zoomline'); (for `Zoomline`)</li>
     <li>var OverlappedBar2d = require('fusioncharts/fusioncharts.overlappedbar2d'); (for `Overlapped Bar 2D`)</li>
