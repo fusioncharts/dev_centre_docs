@@ -95,7 +95,7 @@ $ npm install fusioncharts --save
 
 In this section, we will create a visualization using the **World Map** showing the average annual population growth. 
 
-<Live map>
+{% embed_chart getting-started-your-first-map.js %}
 
 The data for this chart is represented in the table below:
 
@@ -108,8 +108,6 @@ Asia|AS|1.78||
 Europe|EU|40||
 Africa|AF|2.58||
 Australia|AU|1.30||
-
-
 
 ## Convert tabular data into JSON format
 
@@ -124,9 +122,7 @@ For any map visualization, it is important to provide the correct value for the 
 We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/maps/spec-sheets/world)for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
 
  In this example, we will use the JSON format as shown below:
-
-```JSON
-
+```javascript
 {
     // Map Configuration
     "chart": {
@@ -134,7 +130,9 @@ We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/
         "subcaption": " 1955-2015",
         "numbersuffix": "%",
         "includevalueinlabels": "1",
-        ...
+        "labelsepchar": ": ",
+        "entityFillHoverColor": "#FFF9C4",
+        "theme": "fusion"
     },
     // Aesthetics; ranges synced with the slider
     "colorrange": {
@@ -149,9 +147,11 @@ We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/
             "minvalue": "1.0",
             "maxvalue": "2.0",
             "color": "#FB8C00"
-        }, …
-
-]
+        }, {
+            "minvalue": "2.0",
+            "maxvalue": "3.0",
+            "color": "#E65100"
+        }]
     },
     // Source data as JSON --> id represents countries of world.
     "data": [{
@@ -166,25 +166,35 @@ We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/
         "id": "AS",
         "value": "1.78",
         "showLabel": "1"
-    }, …
-
+    }, {
+        "id": "EU",
+        "value": ".40",
+        "showLabel": "1"
+    }, {
+        "id": "AF",
+        "value": "2.58",
+        "showLabel": "1"
+    }, {
+        "id": "AU",
+        "value": "1.30",
+        "showLabel": "1"
+    }]
 }
-
 ```
 
 In the above JSON data: 
 
-* Create the `chart**`** object to define the elements of the map.
+* Create the `chart` object to define the elements of the map.
 
-* Create the `colorRange**`** array to set the color associated with the specific range of values.
+* Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify the `min**` **and** `**max**` **value within the `color**`** array under the `colorRange`** **array.
+* Specify the `min` and `max` value within the `color` array under the `colorRange` array.
 
-* Create the `data`** **array to define the id of the continents and their corresponding values along with configurations.
+* Create the `data` array to define the id of the continents and their corresponding values along with configurations.
 
 The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the gauge.
 
-Now that you have converted the tabular data to JSON format, let's learn how to render the gauge.
+Now that you have converted the tabular data to JSON format, let's learn how to render the map.
 
 ## Render the map
 
@@ -202,7 +212,7 @@ To render the map follow the steps below:
 
 6. Include the FusionCharts theme file to apply the style to the charts
 
-7. Register the **VueFusionCharts** component
+7. Register the `VueFusionCharts` component
 
 8. Store the chart configurations in a JSON object. In this JSON object:
 
