@@ -140,9 +140,9 @@ The above chart has been rendered using the following steps:
 
 5. `updateData()` function is added to randomly update the value of the chart when the button is clicked.
 
-7. `controls.innerHTML` is added to create the `button` inside the `<div>`.
+6. `controls.innerHTML` is added to create the `button` inside the `<div>`.
 
-8. Create a `fusioncharts` directive in a template.
+7. Create a `fusioncharts` directive in a template.
 
 ## Update Chart Attributes
 

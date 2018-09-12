@@ -129,7 +129,6 @@ The above chart has been rendered using the following steps:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
-    * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
 3. To set the datasource using URL:
     * The value of the `dataFormat` has been set to **jsonurl**.
