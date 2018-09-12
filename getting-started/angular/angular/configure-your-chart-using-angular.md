@@ -227,6 +227,7 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion)
 })
 export class AppModule {}
 ```
+
 In the above code:
 
 1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
