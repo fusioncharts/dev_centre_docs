@@ -1,4 +1,4 @@
-z---
+---
 title: Your First Gauge in AngularJS Using FusionCharts | FusionCharts
 description: This article outlines the steps to create your first gauge, widget and map using the fusionCharts AngularJS component.
 heading: Your First Gauge in AngularJS using FusionCharts
