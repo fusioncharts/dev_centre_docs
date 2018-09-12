@@ -449,7 +449,7 @@ In the above code:
     * The `dataFormat` is set as JSON.
     * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
-3. To export multiple charts as PDF, exportChart in PDF  format.
+3. To export multiple charts as PDF, set the `batchExport` to PDF.
 
 4. A container is created to render buttons in the chart.
 
