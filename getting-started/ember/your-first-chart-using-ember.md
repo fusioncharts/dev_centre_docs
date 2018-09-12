@@ -118,3 +118,138 @@ Now that you have converted the tabular data to JSON format, let's see how to re
 
 ## Render the chart
 
+To render the chart using `ember-fusioncharts` component, follow the steps below:
+
+**Step 1:** In `ember-cli-build.js` file include the necessary files and add the dependency.
+
+* Import FusionCharts library to your `ember-cli-build.js` file
+
+* Import `ember-fusioncharts` to your `ember-cli-build.js` file
+
+* Import specific modules to your `ember-cli-build.js` file
+
+* Import the FusionCharts theme file to apply the style to the charts
+
+> If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
+
+```
+/* eslint-env node */
+'use strict';
+
+const EmberApp = require('ember-cli/lib/broccoli/ember-app');
+
+module.exports = function(defaults) {
+    let app = new EmberApp(defaults, {
+    // Add options here
+    });
+
+    // Import fusioncharts library
+    app.import('node_modules/fusioncharts/fusioncharts.js');
+    // Use `app.import` to import additional libraries/files
+    return app.toTree();
+};
+```
+
+**Step 2:** Create Component and specify the chart data in `chart-viewer.js` file
+
+* Create a simple component (e.g. chart-viewer) to render your chart.
+
+* Add data to `chart-viewer.js` file
+
+* Set the chart `width` and `height`
+
+* Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+
+* Set the data source
+
+```
+$ ember g component chart-viewer
+```
+
+```
+import Component from '@ember/component';
+
+const myDataSource = {
+    chart: {
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion",
+    },
+    // Chart Data
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
+}; // end of this.dataSource
+
+export default Component.extend({
+    title: 'Ember FusionCharts Sample',
+    width: 700,
+    height: 400,
+    type: 'column2d',
+    dataFormat: 'json',
+    dataSource: myDataSource
+});
+```
+
+**Step 3:** Add data to `chart-viewer.hbs`
+
+Add `fusioncharts` component to your `chart-viewer.hbs` template to render the chart:
+
+```
+<h1>{{ title }}</h1>
+
+{{fusioncharts-xt
+    width=width
+    height=height
+    type=type
+    dataFormat=dataFormat
+    dataSource=dataSource
+}}
+```
+
+**Step 4:** Add data to `application.hbs`
+
+Add `chart-viewer` component to your `application.hbs` template:
+
+```
+{{chart-viewer}}
+
+{{outlet}}
+```
+
+That's it! Your first chart using `ember-fusioncharts` is ready.
+
+## Problem rendering the chart?
+
+In case there is an error, and you are unable to see the chart, check for the following:
+
+* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click here to get in touch with our support team.
+
+* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
+
+* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
