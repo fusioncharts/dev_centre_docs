@@ -158,13 +158,13 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 
 To render the gauge, follow the steps below:
 
-1. Include the `fusioncharts` library
+1. Include the `fusioncharts` library.
 
-2. Include the chart type
+2. Include all gauges from Widgets.
 
-3. Include the FusionCharts theme file to apply the style to the charts
+3. Include the FusionCharts theme file to apply the style to the charts.
 
-4. Add the chart and the theme as a dependency to the core
+4. Add the chart and the theme as a dependency to the core.
 
 5. Store the chart configurations in a JSON object. In this JSON object:
     * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
@@ -172,7 +172,7 @@ To render the gauge, follow the steps below:
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
-6. Each chart in the page needs a container to reside in. Add a `<div>` element as a container for the chart.
+6. Add a container (instance) for the chart.
 
 The consolidated code is shown below:
 
@@ -198,10 +198,14 @@ import FusionCharts from 'fusioncharts/core';
 // Include the gauge from viz folder
 // E.g. - import ChartType from fusioncharts/viz/[ChartType]
 import AngularGauge from 'fusioncharts/viz/angulargauge';
+
+// Include the fusion theme
+/import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
     
-// Add the gauge as dependency
+// Add the gauge and theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(AngularGauge);
+FusionCharts.addDep(FusionTheme);
     
 // Create an Instance with chart options
 var gaugeInstance = new FusionCharts({
@@ -249,8 +253,11 @@ gaugeInstance.render();
 <h4>CJS</h4>
 <pre><code class="custom-hlc language-javascript">
 var FusionCharts = require('fusioncharts');
-var AngularGauge = require('fusioncharts/fusioncharts.angulargauge');
-AngularGauge(FusionCharts);
+var Widgets = require('fusioncharts/fusioncharts.widgets');
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+Widgets(FusionCharts);
+FusionTheme(FusionCharts);
+
 
 // Create an Instance with chart options
 var gaugeInstance = new FusionCharts({
