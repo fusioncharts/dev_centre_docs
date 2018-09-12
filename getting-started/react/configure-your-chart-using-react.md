@@ -154,7 +154,7 @@ The above chart has been rendered using the following steps:
 
 A chart, configured to update the **chart caption**, **sub-caption** alignment and chart **background** dynamically, is shown below (click any one of the buttons shown below the chart to change the chart background and caption, sub-caption alignment):
 
-{% embed_chartData configure-charts-using-react-example-2.js %}
+{% embed_chartData configure-charts-using-react-example-2.js json %}
 
 The full code of the above sample is given below:
 

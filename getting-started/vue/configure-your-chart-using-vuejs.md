@@ -15,7 +15,7 @@ This article focuses on how you can configure the following using `vue-fusioncha
 
 A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to start):
 
-{% embed_chart configure-charts-using-angular-example-1.js %}
+{% embed_chartData configure-charts-using-angular-example-1.js json %}
 
 The code to render a chart is given below:
 
@@ -148,7 +148,7 @@ The above chart has been rendered using the following steps:
 
 A chart, configured to update the **chart caption**, **sub-caption** alignment and chart **background** dynamically, is shown below (click any one of the buttons shown below the chart to change the chart background and caption, sub-caption alignment):
 
-{% embed_chart configure-charts-using-vue-example-2.js %}
+{% embed_chartData configure-charts-using-vue-example-2.js json %}
 
 The JSON data to render the above chart is given below:
 
