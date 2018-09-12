@@ -212,9 +212,6 @@ import Column2D from 'fusioncharts/viz/column2d'
 // Register VueFusionCharts component
 Vue.use(VueFusionCharts);
 
-// Register VueFusionCharts component
-Vue.use(VueFusionCharts);
-
 var app = new Vue({
     el: '#app',
     data: {

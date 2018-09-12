@@ -136,149 +136,6 @@ FusionCharts lets you export multiple charts in a single image at once, in diffe
 <p>{% embed_chart exporting-as-image-and-pdf-introduction-example-4.js %}</p>
 </div>
 
-The JSON data to render the above chart is given below:
-
-```
-{
-    data1: {
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion"
-        },
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    },
-    data2: {
-        "chart": {
-            "caption": "Yearly Energy Production Rate",
-            "subCaption": " Top 5 Developed Countries",
-            "numbersuffix": " TWh",
-            "showSum": "1",
-            "plotToolText": "$label produces <b>$dataValue</b> of energy from $seriesName",
-            "theme": "fusion"
-        },
-        "categories": [{
-            "category": [{
-                "label": "Canada"
-            }, {
-                "label": "China"
-            }, {
-                "label": "Russia"
-            }, {
-                "label": "Australia"
-            }, {
-                "label": "United States"
-            }, {
-                "label": "France"
-            }]
-        }],
-        "dataSet": [{
-            "seriesName": "Coal",
-            "data": [{
-                "value": "400"
-            }, {
-                "value": "830"
-            }, {
-                "value": "500"
-            }, {
-                "value": "420"
-            }, {
-                "value": "790"
-            }, {
-                "value": "380"
-            }]
-        }, {
-            "seriesName": "Hydro",
-            "data": [{
-                "value": "350"
-            }, {
-                "value": "620"
-            }, {
-                "value": "410"
-            }, {
-                "value": "370"
-            }, {
-                "value": "720"
-            }, {
-                "value": "310"
-            }]
-        }, {
-            "seriesName": "Nuclear",
-            "data": [{
-                "value": "210"
-            }, {
-                "value": "400"
-            }, {
-                "value": "450"
-            }, {
-                "value": "180"
-            }, {
-                "value": "570"
-            }, {
-                "value": "270"
-            }]
-        }, {
-            "seriesName": "Gas",
-            "data": [{
-                "value": "180"
-            }, {
-                "value": "330"
-            }, {
-                "value": "230"
-            }, {
-                "value": "160"
-            }, {
-                "value": "440"
-            }, {
-                "value": "350"
-            }]
-        }, {
-            "seriesName": "Oil",
-            "data": [{
-                "value": "60"
-            }, {
-                "value": "200"
-            }, {
-                "value": "200"
-            }, {
-                "value": "50"
-            }, {
-                "value": "230"
-            }, {
-                "value": "150"
-            }]
-        }]
-    }
-}
-```
-
 The full code of the above sample is given below:
 
 ```
@@ -498,9 +355,9 @@ The above chart has been rendered using the following steps:
     * The `dataFormat` is set as JSON.
     * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
-3. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+3. To export multiple charts on the page an **event handler** is added to fire the export operation when the button is clicked.
 
-The initial steps to render the chart is same as [Configuring your Chart]({% site.baseurl %}/getting-started/react/configure-your-chart-using-react#update-chart-data-1) using React. To export multiple charts on the page an **event handler** is added to fire the export operation when the button is clicked.
+4. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
 
 ## Modes of Export
 
