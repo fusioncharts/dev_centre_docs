@@ -158,13 +158,13 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 
 To render the gauge, follow the steps below:
 
-1. Include the `fusioncharts` library
+1. Include the `fusioncharts` library.
 
-2. Include the chart type
+2. Include all gauges from Widgets.
 
-3. Include the FusionCharts theme file to apply the style to the charts
+3. Include the FusionCharts theme file to apply the style to the charts.
 
-4. Add the chart and the theme as a dependency to the core
+4. Add the chart and the theme as a dependency to the core.
 
 5. Store the chart configurations in a JSON object. In this JSON object:
     * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
