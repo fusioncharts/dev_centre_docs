@@ -188,13 +188,22 @@ In this step, we will create an instance of the chart type as **column2d**, set 
 The code to render a chart using `require` is given below:
 
 ```
+//Include fusioncharts
 var FusionCharts = require('fusioncharts');
+
+//Include chart modules
 var Charts = require('fusioncharts/fusioncharts.charts');
+
+//Include the theme file
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
 var $ = require('jquery');
 var jQFc = require('jquery-fusioncharts');
 
+//Pass FusionCharts as dependency
 Charts(FusionCharts);
+
+//Pass theme as dependency
 FusionTheme(FusionCharts);
 
 var dataSource = {
