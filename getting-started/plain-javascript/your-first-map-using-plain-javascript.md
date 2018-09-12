@@ -716,7 +716,9 @@ webVisit.render();
 </div>
 
 <div class='tab cdn-tab'>
-<div>To use any other map (except World and USA) from the 1600+ maps, [download](https://www.fusioncharts.com/download/map-definition-files) the map definition files, then copy those map files to your current maps folder. The map definition files are named in the `fusioncharts.[MAP_ALIAS].js ` format, where `MAP_ALIAS` represents the country, state or region name.</div>
+<div>To use any other map (except World and USA) from the 1600+ maps, [download](https://www.fusioncharts.com/download/map-definition-files) the map definition files, then copy those map files to your current maps folder. 
+
+The map definition files are named in the `fusioncharts.[MAP_ALIAS].js ` format, where `MAP_ALIAS` represents the country, state or region name.</div>
 <pre><code class="custom-hlc language-javascript">
 &lt;html&gt;
 &lt;head&gt;
@@ -768,7 +770,9 @@ webVisit.render();
 </div>
 
 <div class='tab localfiles-tab'>
-<div>To use any other map (except World and USA) from the 1600+ maps, [download](https://www.fusioncharts.com/download/map-definition-files) the map definition files, then copy those map files to your current maps folder. The map definition files are named in the fusioncharts.[MAP_ALIAS].js format, where MAP_ALIAS represents the country, state or region name.</div>
+<div>To use any other map (except World and USA) from the 1600+ maps, [download](https://www.fusioncharts.com/download/map-definition-files) the map definition files, then copy those map files to your current maps folder. 
+
+The map definition files are named in the `fusioncharts.[MAP_ALIAS].js` format, where `MAP_ALIAS` represents the country, state or region name.</div>
 <pre><code class="custom-hlc language-javascript">
 &lt;html&gt;
 &lt;head&gt;
