@@ -4,7 +4,7 @@ description: This article outlines the steps to create your first map, widget an
 heading: Your First Map in AngularJS using FusionCharts
 ---
 
-The `angularjs-fusioncharts` module for **FusionCharts Suite XT** lets you add interactive JavaScript charts to your **AngularJS (v1.x)** web and mobile applications.
+TFusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angularjs** directive which provides bindings for **FusionCharts**. The `angularjs-fusioncharts` directive allows you to easily add rich and interactive charts to any **Angularjs** project.
 
 In this page, we'll see how to install FusionCharts and render a gauge using the `angularjs-fusionCharts` directive.
 
@@ -210,19 +210,17 @@ To render the map follow the steps below:
 
 6. Include the map definition file
 
-7. Include the map type.
+7. Include the FusionCharts theme file to apply the style to the charts
 
-8. Include the FusionCharts theme file to apply the style to the charts
+8. Add the map and the theme as a dependency to the core
 
-9. Add the map and the theme as a dependency to the core
-
-10. Store the map configurations in a JSON object. In this JSON object:
+9. Store the map configurations in a JSON object. In this JSON object:
     * Set the map type as `world`. Each map type is represented with a unique map alias. For World Map, the alias is `world`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height (in pixels). 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
-11. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named MyController.
+10. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named MyController.
 
 The consolidated code is shown below:
 
