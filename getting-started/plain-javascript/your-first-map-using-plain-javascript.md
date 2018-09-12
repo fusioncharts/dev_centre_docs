@@ -591,7 +591,7 @@ To reduce the size of the package FusionCharts comes with only two maps, i.e., t
 
 Let's create a map of California to show the "Web visits for a particular month" as shown below:
 
-{% embed_chartData getting-started-your-first-map-california.js %}
+{% embed_chartData getting-started-your-first-map-california.js json %}
 
 To render the above map, first install `fusionmaps` package which contains all the map definition files as shown below:
 
