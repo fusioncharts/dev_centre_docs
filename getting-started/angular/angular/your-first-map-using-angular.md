@@ -64,7 +64,6 @@ We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/
  In this example, we will use the JSON format as shown below:
 
 ```JSON
-
 {
     // Map Configuration
     "chart": {

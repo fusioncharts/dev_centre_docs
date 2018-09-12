@@ -14,25 +14,10 @@ To install **FusionCharts** and the `ember-fusioncharts` component via `npm` fol
 
 **Step 1:** Install `ember-fusioncharts`
 
-You can install `ember-fusioncharts` component for any of the following CLI:
-
-**Modern Ember CLI**
+You can install `ember-fusioncharts` component using:
 
 ```PowerShell
 $ ember install ember-fusioncharts
-```
-
-**Earlier Ember CLI (and addon developers)**
-
-```PowerShell
-$ npm install ember-fusioncharts --save-dev
-$ ember g ember-fusioncharts
-```
-
-**Step 2:** Install `fusioncharts` core library
-
-```PowerShell
-$ npm install fusioncharts --save
 ```
 
 That completes the installation of **FusionCharts** and the `ember-fusioncharts` component.
@@ -145,6 +130,7 @@ module.exports = function(defaults) {
 
     // Import fusioncharts library
     app.import('node_modules/fusioncharts/fusioncharts.js');
+    app.import('node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js');
     // Use `app.import` to import additional libraries/files
     return app.toTree();
 };
