@@ -126,7 +126,7 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
 2. Registered `vue-fusioncharts` component.
 
@@ -148,7 +148,7 @@ The above chart has been rendered using the following steps:
 
 A chart, configured to update the **chart caption**, **sub-caption** alignment and chart **background** dynamically, is shown below (click any one of the buttons shown below the chart to change the chart background and caption, sub-caption alignment):
 
-{% embed_chart configure-charts-using-react-example-2.js %}
+{% embed_chart configure-charts-using-vue-example-2.js %}
 
 The JSON data to render the above chart is given below:
 
@@ -330,7 +330,7 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
 2. Registered `vue-fusioncharts` component.
 
@@ -350,19 +350,4 @@ The above chart has been rendered using the following steps:
 
 6. A container is created to render buttons in the chart.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-7. `controls.innerHTML` is added to create the `button` inside the `<div>`.
-
-8. Create a `fusioncharts` directive in a template.
+7. Created a `fusioncharts` directive in a template.
