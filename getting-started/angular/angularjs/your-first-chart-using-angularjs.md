@@ -4,7 +4,7 @@ description: This article outlines the steps to create your first chart, widget 
 heading: Your First Chart in AngularJS using FusionCharts
 ---
 
-The `angularjs-fusioncharts` module for **FusionCharts Suite XT** lets you add interactive JavaScript charts to your **AngularJS (v1.x)** web and mobile applications.
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angularjs** directive which provides bindings for **FusionCharts**. The `angularjs-fusioncharts` directive allows you to easily add rich and interactive charts to any **Angularjs** project.
 
 In this page, we'll see how to install FusionCharts and render a chart using the `angularjs-fusionCharts` directive.
 
@@ -178,19 +178,19 @@ Now that you have converted the tabular data to JSON format, let's see how to re
 
 To render the chart, follow the steps below:
 
-1. Include **angularjs** using **require**
+1. Include `angularjs` using require.
 
-2. Include the `fusioncharts` library using **require**
+2. Include the `fusioncharts` library.
 
-3. Include `angularjs-fusioncharts` directive using **require**
+3. Include `angularjs-fusioncharts` directive.
 
 4. Include `ng-fusioncharts` as a dependency in the application. Call `angular.module()` to add the dependency.
 
-5. Include the chart type
+5. Include the chart type.
 
-6. Include the FusionCharts theme file to apply the style to the charts
+6. Include the FusionCharts theme file to apply the style to the charts.
 
-7. Add the chart and the theme as a dependency to the core
+7. Add the chart and the theme as a dependency to the core.
 
 8. Store the chart configurations in a JSON object. In this JSON object:
     * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
@@ -198,7 +198,7 @@ To render the chart, follow the steps below:
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
-9. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named MyController.
+9. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`.
 
 The consolidated code is shown below:
 

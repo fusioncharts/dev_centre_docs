@@ -583,7 +583,7 @@ annualPopulation.render();
 </div>
 </div>
 
-That's it! Your first gauge using Plain JavaScript is ready.
+That's it! Your first map using Plain JavaScript is ready.
 
 ## Render other maps 
 
@@ -623,11 +623,14 @@ import FusionCharts from 'fusioncharts/core';
 // Include the map files
 import FusionMaps from 'fusioncharts/maps';
 import California from 'fusioncharts/maps/es/fusioncharts.california';
+// Include the fusion theme
+/import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
     
 // Add the map as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(FusionMaps);
-FusionCharts.addDep(california);
+FusionCharts.addDep(California);
+FusionCharts.addDep(FusionTheme);
 
 // Create an Instance with map options
 var webVisit =   new  FusionCharts({
@@ -671,8 +674,11 @@ webVisit.render();
 var FusionCharts = require('fusioncharts');
 var FusionMaps = require('fusioncharts/fusioncharts.maps');
 var California = require('fusioncharts/maps/fusioncharts.california');
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
 FusionMaps(FusionCharts);
 California(FusionCharts);
+FusionTheme(FusionCharts);
 
 // Create an Instance with map options
 var webVisit =   new  FusionCharts({
