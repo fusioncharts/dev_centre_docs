@@ -287,9 +287,6 @@ chartInstance.render()
     <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
     <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
 </ul>
-
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
 <div class='mt-30'><strong>Create an HTML template as shown below:</strong></div>
 <pre><code class="custom-hlc language-javascript">
 &lt;body ng-app="myApp"&gt;

@@ -183,7 +183,7 @@ The consolidated code is shown below:
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
-<div class='mt-30'><strong>The `fusioncharts` package for `npm` can now be used in two different ways:</strong></div>
+<div class='mt-30'><strong>The `fusioncharts` package for `npm` can be used in two different ways:</strong></div>
 <ul>
     <li>FusionCharts ES module</li>
     <li>FusionCharts CJS module</li>
