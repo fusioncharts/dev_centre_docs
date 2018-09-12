@@ -130,6 +130,7 @@ module.exports = function(defaults) {
 
     // Import fusioncharts library
     app.import('node_modules/fusioncharts/fusioncharts.js');
+	app.import('bower_components/fusioncharts/fusioncharts.charts.js');
     app.import('node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js');
     // Use `app.import` to import additional libraries/files
     return app.toTree();
