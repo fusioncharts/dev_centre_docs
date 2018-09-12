@@ -121,42 +121,63 @@ We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/m
 {
     // Map Configuration
     "chart": {
-        "caption": "Average Annual Population Growth",
-        "subcaption": " 1955-2015",
-        "numbersuffix": "%",
-        "includevalueinlabels": "1",
-        ...
-    },
-    // Aesthetics; ranges synced with the slider
-    "colorrange": {
-        "minvalue": "0",
-        "code": "#FFE0B2",
-        "gradient": "1",
-        "color": [{
-            "minvalue": "0.5",
-            "maxvalue": "1.0",
-            "color": "#FFD74D"
-        }, {
-            "minvalue": "1.0",
-            "maxvalue": "2.0",
-            "color": "#FB8C00"
-        }, …
-    ]
-    },
-    // Source data as JSON --> id represents countries of world.
-    "data": [{
-        "id": "NA",
-        "value": ".82",
-        "showLabel": "1"
-    }, {
-        "id": "SA",
-        "value": "2.04",
-        "showLabel": "1"
-    }, {
-        "id": "AS",
-        "value": "1.78",
-        "showLabel": "1"
-    }, …
+            "caption": "Average Annual Population Growth",
+            "subcaption": " 1955-2015",
+            "numbersuffix": "%",
+            "includevalueinlabels": "1",
+            "labelsepchar": ": ",
+            "entityFillHoverColor": "#FFF9C4",
+            "theme": "fusion"
+        },
+        // Aesthetics; ranges synced with the slider
+        "colorrange": {
+            "minvalue": "0",
+            "code": "#FFE0B2",
+            "gradient": "1",
+            "color": [
+                {
+                    "minvalue": "0.5",
+                    "maxvalue": "1.0",
+                    "color": "#FFD74D"
+                }, {
+                    "minvalue": "1.0",
+                    "maxvalue": "2.0",
+                    "color": "#FB8C00"
+                }, {
+                    "minvalue": "2.0",
+                    "maxvalue": "3.0",
+                    "color": "#E65100"
+                }
+            ]
+        },
+        // Source data as JSON --> id represents countries of world.
+        "data": [{
+                "id": "NA",
+                "value": ".82",
+                "showLabel": "1"
+            }, {
+                "id": "SA",
+                "value": "2.04",
+                "showLabel": "1"
+            }, {
+                "id": "AS",
+                "value": "1.78",
+                "showLabel": "1"
+            }, {
+                "id": "EU",
+                "value": ".40",
+                "showLabel": "1"
+            }, {
+                "id": "AF",
+                "value": "2.58",
+                "showLabel": "1"
+            }, {
+                "id": "AU",
+                "value": "1.30",
+                "showLabel": "1"
+            }
+        ]
+    }
 }
 ```
 
@@ -178,19 +199,17 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 
 To render the map follow the steps below:
 
-1. Include the `fusioncharts` library
+1. Include the `fusioncharts` library.
 
-2. Include the FusionMaps renderer
+2. Include the FusionMaps renderer.
 
-3. Include the map definition file
+3. Include the map definition file.
 
-4. Include the map type.
+4. Include the FusionCharts theme file to apply the style to the charts.
 
-5. Include the FusionCharts theme file to apply the style to the charts.
+5. Add the map renderer, map definition and the theme as a dependency to the core.
 
-6. Add the map renderer, map definition and the theme as a dependency to the core.
-
-7. Store the chart configurations as a JSON object. In this JSON object:
+6. Store the chart configurations as a JSON object. In this JSON object:
 
     * Set the map type as world. Each chart type is represented with a unique map alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
@@ -200,7 +219,7 @@ To render the map follow the steps below:
 
     * Embed the json data as the value of the `dataSource`.
 
-8. Each chart in the page needs a container to reside in. Add a `<div>` element as a container for the chart.
+7. Add a container (instance) for the chart.
 
 The consolidated code is shown below:
 
@@ -227,11 +246,14 @@ import FusionCharts from 'fusioncharts/core';
 import FusionMaps from 'fusioncharts/maps';
 import World from 'fusioncharts/maps/es/fusioncharts.world';
 
-    
-// Add the map as dependency
+// Include the fusion theme
+/import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+
+// Add the map and the theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(FusionMaps);
 FusionCharts.addDep(World);
+FusionCharts.addDep(FusionTheme);
 
 // Create an Instance with map options
 var annualPopulation =   new  FusionCharts({
@@ -306,8 +328,10 @@ annualPopulation.render();
 var FusionCharts = require('fusioncharts');
 var FusionMaps = require('fusioncharts/fusioncharts.maps');
 var World = require('fusioncharts/maps/fusioncharts.world');
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 FusionMaps(FusionCharts);
 World(FusionCharts);
+FusionTheme(FusionCharts);
 
 // Create an Instance with map options
 var annualPopulation =   new  FusionCharts({
@@ -567,7 +591,7 @@ To reduce the size of the package FusionCharts comes with only two maps, i.e., t
 
 Let's create a map of California to show the "Web visits for a particular month" as shown below:
 
-{% embed_chart getting-started-your-first-map-california.js %}
+{% embed_chartdata getting-started-your-first-map-california.js %}
 
 To render the above map, first install `fusionmaps` package which contains all the map definition files as shown below:
 

@@ -76,7 +76,7 @@ That completes the installation of FusionCharts package.
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase information using a radial scale to display data. 
+Gauges are powerful tools that can showcase information using a radial or linear scale to display data. 
 
 To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below.
 
