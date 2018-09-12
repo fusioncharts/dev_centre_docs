@@ -4,7 +4,7 @@ description: This article outlines the steps to create your first gauge, widget 
 heading: Your First Gauge in AngularJS using FusionCharts
 ---
 
-The `angularjs-fusioncharts` module for **FusionCharts Suite XT** lets you add interactive JavaScript charts to your **AngularJS (v1.x)** web and mobile applications.
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angularjs** directive which provides bindings for **FusionCharts**. The `angularjs-fusioncharts` directive allows you to easily add rich and interactive charts to any **Angularjs** project.
 
 In this page, we'll see how to install FusionCharts and render a gauge using the `angularjs-fusionCharts` directive.
 
