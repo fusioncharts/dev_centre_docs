@@ -120,11 +120,21 @@ ReactDOM.render(
 );
 ```
 
-The initial steps to render the chart is same as [Create your First Chart]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#render-the-chart-5). To set the datasource using URL:
+The above chart has been rendered using the following steps:
 
-* The value of the `dataFormat` has been set to **jsonurl**.
+1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
 
-* A static URL has been set to `dataSource` to render the above chart.
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d` for the first chart and `stackedcolumn2d` for the second chart. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
+
+3. To set the datasource using URL:
+    * The value of the `dataFormat` has been set to **jsonurl**.
+    * A static URL has been set to `dataSource` to render the above chart.
+
+4. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 

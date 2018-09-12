@@ -112,25 +112,13 @@ ReactDOM.render(
 
 The above chart has been rendered using the following steps:
 
-1. Included **react**
+1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
 
-2. Included `react-fusioncharts`
-
-3. Included the `fusioncharts` library
-
-4. Included the `fusioncharts.powercharts` library to render **Spline** chart
-
-4. Included the chart type
-
-5. Included the FusionCharts theme file to apply the style to the charts
-
-6. Added the chart and the theme as a dependency to the core
-
-7. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `spline`. Each chart type is represented with a unique chart alias. For Spline chart, the alias is `spline`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `spline`. For Spline chart, the alias is `spline`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
     * The json data has been embeded as the value of the `dataSource`.
     * In the `dataSource`, an `annotations` object is created to specify the cosmetics and functionalities of the annotation.
 
-8. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+3. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.

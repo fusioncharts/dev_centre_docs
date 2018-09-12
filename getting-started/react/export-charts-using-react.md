@@ -115,7 +115,17 @@ ReactDOM.render(
 );
 ```
 
-The initial steps to render the chart is same as [Create your First Chart]({% site.baseurl %}/getting-started/react/your-first-chart-using-react#render-the-chart-5). In the above sample `exportEnabled` attribute is set to `1` to enable the export the chart feature.
+The above chart has been rendered using the following steps:
+
+1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d` for the first chart. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
+
+3. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
 
 ## Export Multiple Charts
 
@@ -477,6 +487,18 @@ ReactDOM.render(
   document.getElementById('root'),
 );
 ```
+
+The above chart has been rendered using the following steps:
+
+1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d` for the first chart and `stackedcolumn2d` for the second chart. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
+
+3. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
 
 The initial steps to render the chart is same as [Configuring your Chart]({% site.baseurl %}/getting-started/react/configure-your-chart-using-react#update-chart-data-1) using React. To export multiple charts on the page an **event handler** is added to fire the export operation when the button is clicked.
 

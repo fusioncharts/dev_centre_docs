@@ -186,23 +186,13 @@ Click [here](http://jsfiddle.net/fusioncharts/k7mn6j5s/) to edit the above chart
 
 The above chart has been rendered using the following steps:
 
-1. Included **react**
+1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
 
-2. Included `react-fusioncharts`
-
-3. Included the `fusioncharts` library
-
-4. Included the chart type
-
-5. Included the FusionCharts theme file to apply the style to the charts
-
-6. Added the chart and the theme as a dependency to the core
-
-7. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d` for the first chart. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Once the data plots in the Column charts are clicked, the rendered chart is a Pie 2D chart (alias name: `pie2d`).Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d` for the first chart. For Column 2D chart, the alias is `column2d`. Once the data plots in the Column charts are clicked, the rendered chart is a Pie 2D chart (alias name: `pie2d`).Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
     *. Create the JSON/XML data for the parent chart. This is called the parent data source.
     * Append the data string or the data URL for the descendant charts within the parent data source. If you append a data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
 
-8. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+3. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
