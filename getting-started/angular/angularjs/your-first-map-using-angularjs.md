@@ -4,7 +4,7 @@ description: This article outlines the steps to create your first map, widget an
 heading: Your First Map in AngularJS using FusionCharts
 ---
 
-The `angularjs-fusioncharts` module for **FusionCharts Suite XT** lets you add interactive JavaScript charts to your **AngularJS (v1.x)** web and mobile applications.
+TFusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angularjs** directive which provides bindings for **FusionCharts**. The `angularjs-fusioncharts` directive allows you to easily add rich and interactive charts to any **Angularjs** project.
 
 In this page, we'll see how to install FusionCharts and render a gauge using the `angularjs-fusionCharts` directive.
 
@@ -141,42 +141,63 @@ We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/m
 {
     // Map Configuration
     "chart": {
-        "caption": "Average Annual Population Growth",
-        "subcaption": " 1955-2015",
-        "numbersuffix": "%",
-        "includevalueinlabels": "1",
-        ...
-    },
-    // Aesthetics; ranges synced with the slider
-    "colorrange": {
-        "minvalue": "0",
-        "code": "#FFE0B2",
-        "gradient": "1",
-        "color": [{
-            "minvalue": "0.5",
-            "maxvalue": "1.0",
-            "color": "#FFD74D"
-        }, {
-            "minvalue": "1.0",
-            "maxvalue": "2.0",
-            "color": "#FB8C00"
-        }, …
-    ]
-    },
-    // Source data as JSON --> id represents countries of world.
-    "data": [{
-        "id": "NA",
-        "value": ".82",
-        "showLabel": "1"
-    }, {
-        "id": "SA",
-        "value": "2.04",
-        "showLabel": "1"
-    }, {
-        "id": "AS",
-        "value": "1.78",
-        "showLabel": "1"
-    }, …
+            "caption": "Average Annual Population Growth",
+            "subcaption": " 1955-2015",
+            "numbersuffix": "%",
+            "includevalueinlabels": "1",
+            "labelsepchar": ": ",
+            "entityFillHoverColor": "#FFF9C4",
+            "theme": "fusion"
+        },
+        // Aesthetics; ranges synced with the slider
+        "colorrange": {
+            "minvalue": "0",
+            "code": "#FFE0B2",
+            "gradient": "1",
+            "color": [
+                {
+                    "minvalue": "0.5",
+                    "maxvalue": "1.0",
+                    "color": "#FFD74D"
+                }, {
+                    "minvalue": "1.0",
+                    "maxvalue": "2.0",
+                    "color": "#FB8C00"
+                }, {
+                    "minvalue": "2.0",
+                    "maxvalue": "3.0",
+                    "color": "#E65100"
+                }
+            ]
+        },
+        // Source data as JSON --> id represents countries of world.
+        "data": [{
+                "id": "NA",
+                "value": ".82",
+                "showLabel": "1"
+            }, {
+                "id": "SA",
+                "value": "2.04",
+                "showLabel": "1"
+            }, {
+                "id": "AS",
+                "value": "1.78",
+                "showLabel": "1"
+            }, {
+                "id": "EU",
+                "value": ".40",
+                "showLabel": "1"
+            }, {
+                "id": "AF",
+                "value": "2.58",
+                "showLabel": "1"
+            }, {
+                "id": "AU",
+                "value": "1.30",
+                "showLabel": "1"
+            }
+        ]
+    }
 }
 ```
 
@@ -198,31 +219,29 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 
 To render the map follow the steps below:
 
-1. Include **angularjs** using **require**
+1. Include `angularjs`.
 
-2. Include the `fusioncharts` library using **require**
+2. Include the `fusioncharts` library.
 
-3. Include `angularjs-fusioncharts` directive using **require**
+3. Include `angularjs-fusioncharts` directive.
 
 4. Include `ng-fusioncharts` as a dependency in the application. Call `angular.module()` to add the dependency.
 
-5. Include the FusionMaps renderer
+5. Include the FusionMaps renderer.
 
-6. Include the map definition file
+6. Include the map definition file.
 
-7. Include the map type.
+7. Include the FusionCharts theme file to apply the style to the charts.
 
-8. Include the FusionCharts theme file to apply the style to the charts
+8. Add the map and the theme as a dependency to the core.
 
-9. Add the map and the theme as a dependency to the core
-
-10. Store the map configurations in a JSON object. In this JSON object:
-    * Set the map type as `world`. Each map type is represented with a unique map alias. For World Map, the alias is `world`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+9. Store the map configurations in a JSON object. In this JSON object:
+    * Set the map type as `world`. Each map type is represented with a unique map alias. For World Map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
     * Set the width and height (in pixels). 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
-11. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named MyController.
+10. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named MyController.
 
 The consolidated code is shown below:
 

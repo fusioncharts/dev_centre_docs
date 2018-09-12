@@ -276,6 +276,17 @@ myApp.controller('MyController', ['$scope', function($scope) {
 // Render
 chartInstance.render()
 </code></pre>
+<div class='mt-30'><strong>To include the specific chart types, individually add the following files using `require`</strong></div>
+<ul>
+    <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
+    <li><strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`</li>
+    <li><strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`</li>
+    <li><strong>Treemap</strong> -  `fusioncharts/fusioncharts.treemap`</li>
+    <li><strong>Zoomscatter</strong> - `fusioncharts/fusioncharts.zoomscatter`</li>
+    <li><strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`</li>
+    <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
+    <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
+</ul>
 <div class='mt-30'><strong>Create an HTML template as shown below:</strong></div>
 <pre><code class="custom-hlc language-javascript">
 &lt;body ng-app="myApp"&gt;
