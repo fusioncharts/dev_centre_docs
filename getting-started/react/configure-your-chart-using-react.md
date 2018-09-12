@@ -142,7 +142,7 @@ The above chart has been rendered using the following steps:
 
 4. In the above sample, to update the chart we have generated random data using **Math.random()**.
 
-5. An event handler is added to update chart buttom.
+5. An event handler is added to update chart button.
 
 6. `updateData()` function is added to randomly update the value of the chart when the button is clicked.
 
