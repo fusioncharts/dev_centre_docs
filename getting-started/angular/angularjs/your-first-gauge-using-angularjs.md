@@ -96,7 +96,7 @@ That completes the installation of FusionCharts and the `angularjs-fusioncharts`
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase information using a radial scale to display data. 
+Gauges are powerful tools that can showcase information using a radial or linear scale to display data. 
 
 To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below.
 
@@ -178,22 +178,22 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 
 To render the gauge, follow the steps below:
 
-1. Include **angularjs** using **require**
+1. Include `angularjs`.
 
-2. Include the `fusioncharts` library using **require**
+2. Include the `fusioncharts` library.
 
-3. Include `angularjs-fusioncharts` directive using **require**
+3. Include `angularjs-fusioncharts` directive.
 
 4. Include `ng-fusioncharts` as a dependency in the application. Call `angular.module()` to add the dependency.
 
-5. Include the chart type
+5. Include all gauges from Widgets.
 
 6. Include the FusionCharts theme file to apply the style to the charts
 
 7. Add the chart and the theme as a dependency to the core
 
 8. Store the chart configurations in a JSON object. In this JSON object:
-    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge chart, the alias is `angulargauge`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge chart, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height (in pixels). 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
@@ -222,13 +222,13 @@ var FusionCharts = require('fusioncharts');
 require('angularjs-fusioncharts');
 
 // Require Chart modules 
-var Charts = require('fusioncharts/fusioncharts.charts');
+var Widgets = require('fusioncharts/fusioncharts.widgets');
 
 // Require Fusion theme
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
 // Initialize Charts with FusionCharts instance
-Charts(FusionCharts);
+Widgets(FusionCharts);
 
 // Initialize FusionTheme with FusionCharts instance
 FusionTheme(FusionCharts);

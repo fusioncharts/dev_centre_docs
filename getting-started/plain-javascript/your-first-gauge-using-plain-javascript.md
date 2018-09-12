@@ -160,7 +160,7 @@ To render the gauge, follow the steps below:
 
 1. Include the `fusioncharts` library.
 
-2. Include all gauges from Widgets.
+2. Include the gauge type.
 
 3. Include the FusionCharts theme file to apply the style to the charts.
 
