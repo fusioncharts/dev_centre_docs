@@ -157,13 +157,13 @@ Now that you have converted the tabular data to JSON format, let's see how to re
 
 To render the chart, follow the steps below:
 
-1. Include the `fusioncharts` library
+1. Include the `fusioncharts` library.
 
-2. Include the chart type
+2. Include the chart type.
 
-3. Include the FusionCharts theme file to apply the style to the charts
+3. Include the FusionCharts theme file to apply the style to the charts.
 
-4. Add the chart and the theme as a dependency to the core
+4. Add the chart and the theme as a dependency to the core.
 
 5. Store the chart configurations in a JSON object. In this JSON object:
     * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
@@ -171,7 +171,7 @@ To render the chart, follow the steps below:
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
-6. Each chart in the page needs a container to reside in. Add a `<div>` element as a container for the chart.
+6. Add a `<div>` element as a container for the chart.
 
 The consolidated code is shown below:
 
@@ -188,7 +188,6 @@ The consolidated code is shown below:
     <li>FusionCharts ES module</li>
     <li>FusionCharts CJS module</li>
 </ul>
-<div  class='mt-30'><strong>The installation steps for both the modules are shown below:</strong></div>
 <h4>ES6</h4>
 <pre><code class="custom-hlc language-javascript">
 // Include the core fusioncharts file from core  -
@@ -197,10 +196,14 @@ import FusionCharts from 'fusioncharts/core';
 // Include the chart from viz folder
 // E.g. - import ChartType from fusioncharts/viz/[ChartType]
 import Column2D from 'fusioncharts/viz/column2d';
+
+// Include the fusion theme
+/import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
     
-// Add the chart as dependency
+// Add the chart and theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(Column2D);
+FusionCharts.addDep(FusionTheme);
     
 // Create an Instance with chart options
 var chartInstance = new FusionCharts({
@@ -254,7 +257,9 @@ chartInstance.render();
 <pre><code class="custom-hlc language-javascript">
 var FusionCharts = require('fusioncharts');
 var Charts = require('fusioncharts/fusioncharts.charts');
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 Charts(FusionCharts);
+FusionTheme(FusionCharts);
 
 // Create an Instance with chart options
 var chartInstance = new FusionCharts({
@@ -306,14 +311,14 @@ chartInstance.render();
 </code></pre>
 <div class='mt-30'><strong>To include the specific chart types, individually add the following files using `require`</strong></div>
 <ul>
-    <li><strong>PowerCharts</strong> - `var PowerCharts = require('fusioncharts/fusioncharts.powercharts');`</li>
-    <li><strong>Widgets</strong> - `var Widgets = require('fusioncharts/fusioncharts.widgets');`</li>
-    <li><strong>Gantt</strong> - `var Gantt = require('fusioncharts/fusioncharts.gantt');`</li>
-    <li><strong>Treemap -  `var Treemap = require('fusioncharts/fusioncharts.treemap');`</li>
-    <li><strong>Zoomscatter</strong> - `var Zoomscatter = require('fusioncharts/fusioncharts.zoomscatter');`</li>
-    <li><strong>Zoomline</strong> - `var Zoomline = require('fusioncharts/fusioncharts.zoomline');`</li>
-    <li><strong>Overlapped Bar</strong> - `var OverlappedBar2d = require('fusioncharts/fusioncharts.overlappedbar2d');`</li>
-    <li><strong>Overlapped Column</strong> - `var Overlappedcolumn2d = require('fusioncharts/fusioncharts.overlappedcolumn2d');`</li>
+    <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
+    <li><strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`</li>
+    <li><strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`</li>
+    <li><strong>Treemap</strong> -  `fusioncharts/fusioncharts.treemap`</li>
+    <li><strong>Zoomscatter</strong> - `fusioncharts/fusioncharts.zoomscatter`</li>
+    <li><strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`</li>
+    <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
+    <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
 </ul>
 
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
