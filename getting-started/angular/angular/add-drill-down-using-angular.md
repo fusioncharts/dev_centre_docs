@@ -2,7 +2,6 @@
 title: Adding Drill Down using Angular | FusionCharts
 description: This article focuses on drill down charts.
 heading: Adding Drill Down using Angular
-chartPresent: true
 ---
 
 With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
@@ -16,19 +15,12 @@ You can drill-down to descendant charts by simply clicking the data plot items o
 * Clones all chart configuration settings from the parent chart to create the descendant charts
 
 * Accepts specific properties for descendant charts when you configure them using the [configureLink()](https://www.fusioncharts.com/dev/api/fusioncharts/fusioncharts-methods#configurelink-21) function
+
 * Uses events to notify your code when a link is invoked, a link item is opened, or a link item is closed
 
 * Supports drill-down to an unlimited number of levels
 
 ## Create drill-down charts 
-
-To create drill-down charts follow the steps given below:
-
-1. Create the JSON/XML data for the parent chart. This is called the parent data source.
-
-2. Append the data string or the data URL for the descendant charts within the parent data source. If you append the data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
-
-Once you implement these steps, the FusionCharts JavaScript class takes care of the rest. Let's see the steps in details.
 
 As an example, we will consider a simple scenario of a parent chart with a single level of drill-down.
 
@@ -36,7 +28,7 @@ The parent chart is a column 2D chart that shows yearly sales of the top three j
 
 The above chart, when rendered, looks like the following:
 
-{% embed_chartData add-drill-down-using-angular-example-1.js %}
+{% embed_chartData add-drill-down-using-angular-example-1.js json %}
 
 ### Setup the Main Module
 
@@ -77,6 +69,13 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion)
 export class AppModule {
 }
 ```
+In the above code:
+
+1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+
+2. Loaded FusionCharts, chart module and fusion theme.
+
+3. Added dependencies to `FusionChartsModule`.
 
 > The `<fusioncharts></fusioncharts>` component is available to be used in any component throughout your app. We will render our first chart in the main `app.component`.
 
@@ -227,6 +226,16 @@ export class AppComponent {
     constructor(private zone: NgZone) {}
 }
 ```
+In the above code:
+
+1. The JSON data has been within the `AppComponent` class.
+
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d` for the first chart. For Column 2D chart, the alias is `column2d`. Once the data plots in the Column charts are clicked, the rendered chart is a Pie 2D chart (alias name: `pie2d`).Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * Create the JSON/XML data for the parent chart. This is called the parent data source.
+    * Append the data string or the data URL for the descendant charts within the parent data source. If you append a data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
 
 ### Add data to `app.component.html`
 
@@ -243,3 +252,5 @@ Add the following code to `app.component.html`:
     (initialized)="initialized($event)"
 ></fusioncharts>
 ```
+
+In the above code a fusioncharts diective is created in a template.
