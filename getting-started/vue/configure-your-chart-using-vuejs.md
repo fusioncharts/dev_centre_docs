@@ -337,14 +337,12 @@ The above chart has been rendered using the following steps:
     * The `dataFormat` is set as JSON.
     * The json data has been embeded as the value of the `dataSource`.
 
-4. An event is triggered to update the caption, subcaption alignment and the background of the chart.
-
-5. An event is triggered to update the caption, subcaption alignment and the background of the chart.
+4. An event is triggered:
 
     * To update the chart caption, sub-capion alignment.
     * To update the backgroing color.
     * Reset all the chart data to it's initial version.
 
-6. A container is created to render buttons in the chart.
+5. A container is created to render buttons in the chart.
 
-7. Created a `fusioncharts` directive in a template.
+6. Created a `fusioncharts` directive in a template.

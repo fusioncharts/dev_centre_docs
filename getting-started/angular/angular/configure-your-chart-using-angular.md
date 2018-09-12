@@ -16,49 +16,7 @@ This article focuses on how you can configure the following using the `angular-f
 
 A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to start):
 
-{% embed_chart configure-charts-using-angular-example-1.js %}
-
-The JSON data to render the above chart is given below:
-
-```
-{
-    // Chart Configuration
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "theme": "fusion",
-    },
-    // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
-},
-```
+{% embed_chartData configure-charts-using-angular-example-1.js json %}
 
 ### Setup the Main Module
 
@@ -66,19 +24,10 @@ In this step, we will setup the main module to create the **Column 2d** chart. T
 
 ```
 // Setup needed in app.module.ts
-import {
-    NgModule,
-    enableProdMode
-} from '@angular/core'
-import {
-    AppComponent
-} from './app.component';
-import {
-    BrowserModule
-} from '@angular/platform-browser';
-import {
-    FusionChartsModule
-} from 'angular-fusioncharts';
+import { NgModule,  enableProdMode } from '@angular/core'
+import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Load FusionCharts
 import * as FusionCharts from 'fusioncharts';
@@ -103,6 +52,14 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion)
 })
 export class AppModule {}
 ```
+
+In the above code:
+
+1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+
+2. Loaded FusionCharts, chart module and fusion theme.
+
+3. Added dependencies to `FusionChartsModule`.
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
@@ -197,6 +154,22 @@ export class AppComponent {
 }
 ```
 
+In the above code:
+
+1. The JSON data has been within the `AppComponent` class.
+
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * The json data has been embeded as the value of the `dataSource`.
+
+3. In the above sample, to update the chart we have generated random data using **Math.random()**.
+
+4. `updateData()` function is added to randomly update the value of the chart when the button is clicked.
+
+5. `controls.innerHTML` is added to create the `button` inside the `<div>`.
+
 ### Add data to `app.component.html`
 
 Add the following code to `app.component.html`:
@@ -212,53 +185,13 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
+In the above code a fusioncharts diective is created in a template.
+
 ## Update Chart Attributes
 
 A chart, configured to update the **chart caption**, **sub-caption** alignment and chart **background** dynamically, is shown below (click any one of the buttons shown below the chart to change the chart background and caption, sub-caption alignment):
 
-{% embed_chart configure-charts-using-react-example-2.js %}
-
-The JSON data to render the above chart is given below:
-
-```
-{
-    // Chart Configuration
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "theme": "fusion",
-    },
-    // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
-},
-```
+{% embed_chartData configure-charts-using-react-example-2.js json %}
 
 ### Setup the Main Module
 
@@ -266,19 +199,10 @@ In this step, we will setup the main module to create the **Column 2d** chart. T
 
 ```
 // Setup needed in app.module.ts
-import {
-    NgModule,
-    enableProdMode
-} from '@angular/core'
-import {
-    AppComponent
-} from './app.component';
-import {
-    BrowserModule
-} from '@angular/platform-browser';
-import {
-    FusionChartsModule
-} from 'angular-fusioncharts';
+import { NgModule,  enableProdMode } from '@angular/core'
+import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Load FusionCharts
 import * as FusionCharts from 'fusioncharts';
@@ -303,6 +227,13 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, Fusion)
 })
 export class AppModule {}
 ```
+In the above code:
+
+1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+
+2. Loaded FusionCharts, chart module and fusion theme.
+
+3. Added dependencies to `FusionChartsModule`.
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
@@ -416,6 +347,23 @@ export class AppComponent {
 }
 ```
 
+In the above code:
+
+1. The JSON data has been within the `AppComponent` class.
+
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * The json data has been embeded as the value of the `dataSource`.
+
+3. An event is triggered:
+    * To update the chart caption, sub-capion alignment.
+    * To update the backgroing color.
+    * Reset all the chart data to it's initial version.
+
+4. A container is created to render buttons in the chart.
+
 ### Add data to `app.component.html`
 
 Add the following code to `app.component.html`:
@@ -433,3 +381,5 @@ Add the following code to `app.component.html`:
     <a class="btn btn-default" (click)="changeCaptionTextAlignment()">Make Caption text left-aligned</a>
 </p>
 ```
+
+In the above code a fusioncharts diective is created in a template.
