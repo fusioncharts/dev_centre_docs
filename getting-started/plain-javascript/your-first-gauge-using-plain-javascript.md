@@ -172,7 +172,7 @@ To render the gauge, follow the steps below:
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
-6. Each chart in the page needs a container to reside in. Add a `<div>` element as a container for the chart.
+6. Add a container (instance) for the chart.
 
 The consolidated code is shown below:
 
@@ -198,10 +198,14 @@ import FusionCharts from 'fusioncharts/core';
 // Include the gauge from viz folder
 // E.g. - import ChartType from fusioncharts/viz/[ChartType]
 import AngularGauge from 'fusioncharts/viz/angulargauge';
+
+// Include the fusion theme
+/import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
     
-// Add the gauge as dependency
+// Add the gauge and theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
 FusionCharts.addDep(AngularGauge);
+FusionCharts.addDep(FusionTheme);
     
 // Create an Instance with chart options
 var gaugeInstance = new FusionCharts({
@@ -249,8 +253,11 @@ gaugeInstance.render();
 <h4>CJS</h4>
 <pre><code class="custom-hlc language-javascript">
 var FusionCharts = require('fusioncharts');
-var AngularGauge = require('fusioncharts/fusioncharts.angulargauge');
-AngularGauge(FusionCharts);
+var Widgets = require('fusioncharts/fusioncharts.widgets');
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+Widgets(FusionCharts);
+FusionTheme(FusionCharts);
+
 
 // Create an Instance with chart options
 var gaugeInstance = new FusionCharts({

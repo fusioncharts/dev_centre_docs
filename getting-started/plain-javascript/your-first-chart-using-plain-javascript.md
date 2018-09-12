@@ -171,7 +171,7 @@ To render the chart, follow the steps below:
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
 
-6. Add a `<div>` element as a container for the chart.
+6. Add a container (instance) for the chart.
 
 The consolidated code is shown below:
 
