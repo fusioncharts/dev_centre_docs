@@ -327,206 +327,190 @@ var app = new Vue({
 
 <div class='tab cdn-tab'>
 <pre><code class="custom-hlc language-javascript">
+&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including vue  --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src=" https://unpkg.com/vue@2.3.3"&gt;&lt;/script>
     &lt;!-- Including vue-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script &gt;
-    &lt;!-- Icluding the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
-    &lt;!-- Including the map renderer file --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script &gt;
-    &lt;!-- Including the map definition file --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src=" https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script>
+    &lt;!-- Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 &lt;body&gt;
     &lt;div id="app"&gt;
-        &lt;fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource"
-        :events="events"&gt;
-        &lt;/fusioncharts&gt;
-        &lt;p&gt;Display Value: {{displayValue}}&lt;/p&gt;
+        &lt;fusioncharts :type="type" :width="width" :height="height" :dataFormat="dataFormat" :dataSource="dataSource"&gt;&lt;/fusioncharts&gt;
     &lt;/div&gt;
-    &lt;script&gt;
-    // Use VueFusionCharts component by calling the Vue.use() method:
-    Vue.use(VueFusionCharts);
-    var app = new Vue({
-        el: '#app',
-        data: {
-            width: '800',
-            height: '550',
-            type: 'world',
-            dataFormat: 'json',
-            dataSource: {
-                // Map Configuration
-                "chart": {
-                    "caption": "Average Annual Population Growth",
-                    "subcaption": " 1955-2015",
-                    "numbersuffix": "%",
-                    "includevalueinlabels": "1",
-                    "labelsepchar": ": ",
-                    "entityFillHoverColor": "#FFF9C4",
-                    "theme": "fusion"
-                },
-                // Aesthetics; ranges synced with the slider
-                "colorrange": {
-                    "minvalue": "0",
-                    "code": "#FFE0B2",
-                    "gradient": "1",
-                    "color": [{
-                        "minvalue": "0.5",
-                        "maxvalue": "1.0",
-                        "color": "#FFD74D"
+    &lt;script type="text/javascript"&gt;
+        // Use VueFusionCharts component by calling the Vue.use() method:
+        Vue.use(VueFusionCharts, FusionCharts);
+        var app = new Vue({
+            el: '#app',
+            data: {
+                width: '800',
+                height: '550',
+                type: 'world',
+                dataFormat: 'json',
+                dataSource: {
+                    // Map Configuration
+                    "chart": {
+                        "caption": "Average Annual Population Growth",
+                        "subcaption": " 1955-2015",
+                        "numbersuffix": "%",
+                        "includevalueinlabels": "1",
+                        "labelsepchar": ": ",
+                        "entityFillHoverColor": "#FFF9C4",
+                        "theme": "fusion"
+                    },
+                    // Aesthetics; ranges synced with the slider
+                    "colorrange": {
+                        "minvalue": "0",
+                        "code": "#FFE0B2",
+                        "gradient": "1",
+                        "color": [{
+                            "minvalue": "0.5",
+                            "maxvalue": "1.0",
+                            "color": "#FFD74D"
+                        }, {
+                            "minvalue": "1.0",
+                            "maxvalue": "2.0",
+                            "color": "#FB8C00"
+                        }, {
+                            "minvalue": "2.0",
+                            "maxvalue": "3.0",
+                            "color": "#E65100"
+                        }]
+                    },
+                    // Source data as JSON --&gt; id represents countries of world.
+                    "data": [{
+                        "id": "NA",
+                        "value": ".82",
+                        "showLabel": "1"
                     }, {
-                        "minvalue": "1.0",
-                        "maxvalue": "2.0",
-                        "color": "#FB8C00"
+                        "id": "SA",
+                        "value": "2.04",
+                        "showLabel": "1"
                     }, {
-                        "minvalue": "2.0",
-                        "maxvalue": "3.0",
-                        "color": "#E65100"
+                        "id": "AS",
+                        "value": "1.78",
+                        "showLabel": "1"
+                    }, {
+                        "id": "EU",
+                        "value": ".40",
+                        "showLabel": "1"
+                    }, {
+                        "id": "AF",
+                        "value": "2.58",
+                        "showLabel": "1"
+                    }, {
+                        "id": "AU",
+                        "value": "1.30",
+                        "showLabel": "1"
                     }]
-                },
-                // Source data as JSON --&gt; id represents countries of world.
-                "data": [{
-                    "id": "NA",
-                    "value": ".82",
-                    "showLabel": "1"
-                }, {
-                    "id": "SA",
-                    "value": "2.04",
-                    "showLabel": "1"
-                }, {
-                    "id": "AS",
-                    "value": "1.78",
-                    "showLabel": "1"
-                }, {
-                    "id": "EU",
-                    "value": ".40",
-                    "showLabel": "1"
-                }, {
-                    "id": "AF",
-                    "value": "2.58",
-                    "showLabel": "1"
-                }, {
-                    "id": "AU",
-                    "value": "1.30",
-                    "showLabel": "1"
-                }]
+                }
             }
-        }
-    });
+        });
     &lt;/script&gt;
 &lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab localfiles-tab'>
 <pre><code class="custom-hlc language-javascript">
+&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including vue  --&gt;
-    &lt;script type="text/javascript" src="path/to/local/vue.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script&gt;
     &lt;!-- Including vue-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="path/to/local/vue-fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/vue-fusioncharts.min.js"&gt;&lt;/script&gt;
     &lt;!-- Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Including the map renderer file --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
-    &lt;!-- Including the map definition file --&gt;
-    &lt;script type="text/javascript" src="path/to/local/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.world.js"&gt;&lt;/script&gt;
     &lt;!-- Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
     &lt;div id="app"&gt;
-        &lt;fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource"
-        :events="events"&gt;
-        &lt;/fusioncharts&gt;
-        &lt;p&gt;Display Value: {{displayValue}}&lt;/p&gt;
+        &lt;fusioncharts :type="type" :width="width" :height="height" :dataFormat="dataFormat" :dataSource="dataSource"&gt;&lt;/fusioncharts&gt;
     &lt;/div&gt;
-    &lt;script&gt;
-    // Use VueFusionCharts component by calling the Vue.use() method:
-    Vue.use(VueFusionCharts);
-    var app = new Vue({
-        el: '#app',
-        data: {
-            width: '800',
-            height: '550',
-            type: 'world',
-            dataFormat: 'json',
-            dataSource: {
-                // Map Configuration
-                "chart": {
-                    "caption": "Average Annual Population Growth",
-                    "subcaption": " 1955-2015",
-                    "numbersuffix": "%",
-                    "includevalueinlabels": "1",
-                    "labelsepchar": ": ",
-                    "entityFillHoverColor": "#FFF9C4",
-                    "theme": "fusion"
-                },
-                // Aesthetics; ranges synced with the slider
-                "colorrange": {
-                    "minvalue": "0",
-                    "code": "#FFE0B2",
-                    "gradient": "1",
-                    "color": [{
-                        "minvalue": "0.5",
-                        "maxvalue": "1.0",
-                        "color": "#FFD74D"
+    &lt;script type="text/javascript"&gt;
+        // Use VueFusionCharts component by calling the Vue.use() method:
+        Vue.use(VueFusionCharts, FusionCharts);
+        var app = new Vue({
+            el: '#app',
+            data: {
+                width: '800',
+                height: '550',
+                type: 'world',
+                dataFormat: 'json',
+                dataSource: {
+                    // Map Configuration
+                    "chart": {
+                        "caption": "Average Annual Population Growth",
+                        "subcaption": " 1955-2015",
+                        "numbersuffix": "%",
+                        "includevalueinlabels": "1",
+                        "labelsepchar": ": ",
+                        "entityFillHoverColor": "#FFF9C4",
+                        "theme": "fusion"
+                    },
+                    // Aesthetics; ranges synced with the slider
+                    "colorrange": {
+                        "minvalue": "0",
+                        "code": "#FFE0B2",
+                        "gradient": "1",
+                        "color": [{
+                            "minvalue": "0.5",
+                            "maxvalue": "1.0",
+                            "color": "#FFD74D"
+                        }, {
+                            "minvalue": "1.0",
+                            "maxvalue": "2.0",
+                            "color": "#FB8C00"
+                        }, {
+                            "minvalue": "2.0",
+                            "maxvalue": "3.0",
+                            "color": "#E65100"
+                        }]
+                    },
+                    // Source data as JSON --&gt; id represents countries of world.
+                    "data": [{
+                        "id": "NA",
+                        "value": ".82",
+                        "showLabel": "1"
                     }, {
-                        "minvalue": "1.0",
-                        "maxvalue": "2.0",
-                        "color": "#FB8C00"
+                        "id": "SA",
+                        "value": "2.04",
+                        "showLabel": "1"
                     }, {
-                        "minvalue": "2.0",
-                        "maxvalue": "3.0",
-                        "color": "#E65100"
+                        "id": "AS",
+                        "value": "1.78",
+                        "showLabel": "1"
+                    }, {
+                        "id": "EU",
+                        "value": ".40",
+                        "showLabel": "1"
+                    }, {
+                        "id": "AF",
+                        "value": "2.58",
+                        "showLabel": "1"
+                    }, {
+                        "id": "AU",
+                        "value": "1.30",
+                        "showLabel": "1"
                     }]
-                },
-                // Source data as JSON --&gt; id represents countries of world.
-                "data": [{
-                    "id": "NA",
-                    "value": ".82",
-                    "showLabel": "1"
-                }, {
-                    "id": "SA",
-                    "value": "2.04",
-                    "showLabel": "1"
-                }, {
-                    "id": "AS",
-                    "value": "1.78",
-                    "showLabel": "1"
-                }, {
-                    "id": "EU",
-                    "value": ".40",
-                    "showLabel": "1"
-                }, {
-                    "id": "AF",
-                    "value": "2.58",
-                    "showLabel": "1"
-                }, {
-                    "id": "AU",
-                    "value": "1.30",
-                    "showLabel": "1"
-                }]
+                }
             }
-        }
-    });
+        });
     &lt;/script&gt;
 &lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -626,146 +610,132 @@ var app = new Vue({
 
 <div class='tab cdn-tab'>
 <pre><code class="custom-hlc language-javascript">
+&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including vue  --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src=" https://unpkg.com/vue@2.3.3"&gt;&lt;/script>
     &lt;!-- Including vue-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script &gt;
-    &lt;!-- Icluding the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
-    &lt;!-- Including the map renderer file --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script &gt;
-    &lt;!-- Including the map definition file --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.california.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src=" https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script>
+    &lt;!-- Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;!-- Including map files --&gt;
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.california.js"&gt;&lt;/script>
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 &lt;body&gt;
     &lt;div id="app"&gt;
-        &lt;fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource"
-        :events="events"&gt;
-        &lt;/fusioncharts&gt;
-        &lt;p&gt;Display Value: {{displayValue}}&lt;/p&gt;
+        &lt;fusioncharts :type="type" :width="width" :height="height" :dataFormat="dataFormat" :dataSource="dataSource"&gt;&lt;/fusioncharts&gt;
     &lt;/div&gt;
-    &lt;script&gt;
-    // Use VueFusionCharts component by calling the Vue.use() method:
-    Vue.use(VueFusionCharts);
-    var app = new Vue({
-        el: '#app',
-        data: {
-            type: 'maps/california',
-            width: '800',
-            height: '550',
-            dataFormat: 'json',
-            dataSource: {
-                "chart": {
-                    "animation": "0",
-                    "showbevel": "0",
-                    "usehovercolor": "1",
-                    "showlegend": "1",
-                    "legendposition": "BOTTOM",
-                    "legendborderalpha": "0",
-                    "legendbordercolor": "ffffff",
-                    "legendallowdrag": "0",
-                    "legendshadow": "0",
-                    "caption": "Website Visits for the month of March 2018",
-                    "connectorcolor": "000000",
-                    "fillalpha": "80",
-                    "hovercolor": "CCCCCC",
-                    "theme": "fusion"
-                },
-                "colorrange": {
-                    "minvalue": "0",
-                    "startlabel": "Low",
-                    "endlabel": "High",
-                    "code": "e44a00",
-                    "gradient": "1",
-                    "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
-                },
-                "data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
+    &lt;script type="text/javascript"&gt;
+        // Use VueFusionCharts component by calling the Vue.use() method:
+        Vue.use(VueFusionCharts, FusionCharts);
+        var app = new Vue({
+            el: '#app',
+            data: {
+                width: '800',
+                height: '550',
+                type: 'maps/california',
+                dataFormat: 'json',
+                dataSource: {
+                    "chart": {
+                        "animation": "0",
+                        "showbevel": "0",
+                        "usehovercolor": "1",
+                        "showlegend": "1",
+                        "legendposition": "BOTTOM",
+                        "legendborderalpha": "0",
+                        "legendbordercolor": "ffffff",
+                        "legendallowdrag": "0",
+                        "legendshadow": "0",
+                        "caption": "Website Visits for the month of March 2018",
+                        "connectorcolor": "000000",
+                        "fillalpha": "80",
+                        "hovercolor": "CCCCCC",
+                        "theme": "fusion"
+                    },
+                    "colorrange": {
+                        "minvalue": "0",
+                        "startlabel": "Low",
+                        "endlabel": "High",
+                        "code": "e44a00",
+                        "gradient": "1",
+                        "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
+                    },
+                    "data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
+                }
             }
-        }
-    });
+        });
     &lt;/script&gt;
 &lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab localfiles-tab'>
 <pre><code class="custom-hlc language-javascript">
+&lt;html&gt;
 &lt;head&gt;
-    &lt;!-- Step 1 - Including vue  --&gt;
-    &lt;script type="text/javascript" src="path/to/local/vue.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 2 - Including vue-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="path/to/local/vue-fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 4 - Including the map renderer file --&gt;
-    &lt;script type="text/javascript" src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 5 - Including the map definition file --&gt;
-    &lt;script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 6 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;!-- Including vue  --&gt;
+    &lt;script type="text/javascript" src=" https://unpkg.com/vue@2.3.3"&gt;&lt;/script&gt;
+    &lt;!-- Including vue-fusioncharts component --&gt;
+    &lt;script type="text/javascript" src=" path/to/local/vue-fusioncharts.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src=" path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Including map files --&gt;
+    &lt;script type="text/javascript" src=" path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src=" path/to/local/maps/fusioncharts.california.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src=" path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
     &lt;div id="app"&gt;
-        &lt;fusioncharts
-        :type="type"
-        :width="width"
-        :height="height"
-        :dataFormat="dataFormat"
-        :dataSource="dataSource"
-        :events="events"&gt;
-        &lt;/fusioncharts&gt;
-        &lt;p&gt;Display Value: {{displayValue}}&lt;/p&gt;
+        &lt;fusioncharts :type="type" :width="width" :height="height" :dataFormat="dataFormat" :dataSource="dataSource"&gt;&lt;/fusioncharts&gt;
     &lt;/div&gt;
-    &lt;script&gt;
-    // Use VueFusionCharts component by calling the Vue.use() method:
-    Vue.use(VueFusionCharts);
-    var app = new Vue({
-        el: '#app',
-        data: {
-            type: 'maps/california',
-            width: '800',
-            height: '550',
-            dataFormat: 'json',
-            dataSource: {
-                "chart": {
-                    "animation": "0",
-                    "showbevel": "0",
-                    "usehovercolor": "1",
-                    "showlegend": "1",
-                    "legendposition": "BOTTOM",
-                    "legendborderalpha": "0",
-                    "legendbordercolor": "ffffff",
-                    "legendallowdrag": "0",
-                    "legendshadow": "0",
-                    "caption": "Website Visits for the month of March 2018",
-                    "connectorcolor": "000000",
-                    "fillalpha": "80",
-                    "hovercolor": "CCCCCC",
-                    "theme": "fusion"
-                },
-                "colorrange": {
-                    "minvalue": "0",
-                    "startlabel": "Low",
-                    "endlabel": "High",
-                    "code": "e44a00",
-                    "gradient": "1",
-                    "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
-                },
-                "data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
+    &lt;script type="text/javascript"&gt;
+        // Use VueFusionCharts component by calling the Vue.use() method:
+        Vue.use(VueFusionCharts, FusionCharts);
+        var app = new Vue({
+            el: '#app',
+            data: {
+                width: '800',
+                height: '550',
+                type: 'maps/california',
+                dataFormat: 'json',
+                dataSource: {
+                    "chart": {
+                        "animation": "0",
+                        "showbevel": "0",
+                        "usehovercolor": "1",
+                        "showlegend": "1",
+                        "legendposition": "BOTTOM",
+                        "legendborderalpha": "0",
+                        "legendbordercolor": "ffffff",
+                        "legendallowdrag": "0",
+                        "legendshadow": "0",
+                        "caption": "Website Visits for the month of March 2018",
+                        "connectorcolor": "000000",
+                        "fillalpha": "80",
+                        "hovercolor": "CCCCCC",
+                        "theme": "fusion"
+                    },
+                    "colorrange": {
+                        "minvalue": "0",
+                        "startlabel": "Low",
+                        "endlabel": "High",
+                        "code": "e44a00",
+                        "gradient": "1",
+                        "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
+                    },
+                    "data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
+                }
             }
-        }
-    });
+        });
     &lt;/script&gt;
 &lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
