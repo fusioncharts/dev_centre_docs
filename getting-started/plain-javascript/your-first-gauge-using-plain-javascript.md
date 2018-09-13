@@ -213,6 +213,7 @@ var gaugeInstance = new FusionCharts({
     width: '450', // Width of the gauge
     height: '250', // Height of the gauge
     dataFormat: 'json', // Data type
+    renderAt:'chart-container', //container where the chart will render
     dataSource: {
         // Gauge Configuration
         "chart": {
@@ -265,6 +266,7 @@ var gaugeInstance = new FusionCharts({
     width: '450', // Width of the gauge
     height: '250', // Height of the gauge
     dataFormat: 'json', // Data type
+    renderAt:'chart-container', //container where the chart will render
     dataSource: {
         // Gauge Configuration
         "chart": {

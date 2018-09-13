@@ -262,6 +262,7 @@ var annualPopulation =   new  FusionCharts({
     width: '800', // Width of the chart
     height: '550', // Height of the chart
     dataFormat: 'json', // Data Type
+    renderAt:'chart-container', //container where the chart will render
     dataSource: {
         // Map Configuration
         "chart": {
@@ -340,6 +341,7 @@ var annualPopulation =   new  FusionCharts({
         width: '800', // Width of the chart
         height: '550', // Height of the chart
         dataFormat: 'json', // Data Type
+        renderAt:'chart-container', //container where the chart will render
         dataSource: {
             // Map Configuration
             "chart": {

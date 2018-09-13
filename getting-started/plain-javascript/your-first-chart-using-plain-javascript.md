@@ -269,6 +269,7 @@ var chartInstance = new FusionCharts({
     width: '700', // Width of the chart
     height: '400', // Height of the chart
     dataFormat: 'json', // Data type
+    renderAt:'chart-container', //container where the chart will render
     dataSource: {
         // Chart Configuration
         "chart": {
