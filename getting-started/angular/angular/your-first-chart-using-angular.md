@@ -11,13 +11,11 @@ FusionCharts is a JavaScript charting library that enables you to create interac
 
 In this page, we'll see how to install FusionCharts and render a chart using the `angular-fusionCharts` component.
 
-> Since, **Angular2** and onward do not support the direct `<script>` tags, `angular-fusioncharts` can only be used via `npm`.
-
 ## Installation
 
 To install **FusionCharts** and the `angular-fusioncharts` component via `npm` follow the steps below:
 
-**Step 1:** Install angular-fusioncharts
+**Step 1:** Install `angular-fusioncharts`
 
 ```
 $ npm install angular-fusioncharts --save
@@ -116,15 +114,15 @@ To render the chart follow the steps below:
 
 **Step 1:** In `app.module.ts` include the necessary files and add the dependency. 
 
-* Import `angular-fusioncharts` in the root `@NgModule`.
+    * Import `angular-fusioncharts` in the root `@NgModule`.
 
-* Import FusionCharts library in the root `@NgModule`.
+    * Import FusionCharts library in the root `@NgModule`.
 
-* Import the chart type.
+    * Import the chart type.
 
-* Include the FusionCharts theme file to apply the style to the charts.
+    * Include the FusionCharts theme file to apply the style to the charts.
 
-* Pass the `fusioncharts` library and chart modules.
+    * Pass the `fusioncharts` library and chart modules.
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
