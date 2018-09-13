@@ -4,7 +4,7 @@ description: This article outlines the steps to create your first map, widget an
 heading: Your First Map in AngularJS using FusionCharts
 ---
 
-TFusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angularjs** directive which provides bindings for **FusionCharts**. The `angularjs-fusioncharts` directive allows you to easily add rich and interactive charts to any **Angularjs** project.
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple and lightweight **Angularjs** directive which provides bindings for **FusionCharts**. The `angularjs-fusioncharts` directive allows you to easily add rich and interactive charts to any **Angularjs** project.
 
 In this page, we'll see how to install FusionCharts and render a gauge using the `angularjs-fusionCharts` directive.
 
@@ -21,7 +21,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 
-<div><strong>To install fusioncharts and the `angularjs-fusioncharts` directice via npm follow the steps below:</strong></div>
+<div><strong>To install fusioncharts and the `angularjs-fusioncharts` directive via npm follow the steps below:</strong></div>
 <div>1. Install `angularjs` core library</div>
 <pre><code class="custom-hlc language-javascript">
     $ npm install angular

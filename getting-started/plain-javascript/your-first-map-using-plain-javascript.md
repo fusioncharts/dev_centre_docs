@@ -624,9 +624,9 @@ import FusionCharts from 'fusioncharts/core';
 
 // Include the map files
 import FusionMaps from 'fusioncharts/maps';
-import California from 'fusioncharts/maps/es/fusioncharts.california';
+import California from 'fusionmaps/maps/es/fusioncharts.california';
 // Include the fusion theme
-/import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
     
 // Add the map as dependency
 // E.g. FusionCharts.addDep(ChartType)
@@ -639,6 +639,7 @@ var webVisit =   new  FusionCharts({
     type: 'maps/california',
     width: '800',
     height: '550',
+    renderAt: 'chart-container',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -675,7 +676,7 @@ webVisit.render();
 <pre><code class="custom-hlc language-javascript">
 var FusionCharts = require('fusioncharts');
 var FusionMaps = require('fusioncharts/fusioncharts.maps');
-var California = require('fusioncharts/maps/fusioncharts.california');
+var California = require('fusionmaps/maps/fusioncharts.california');
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
 FusionMaps(FusionCharts);
@@ -687,6 +688,7 @@ var webVisit =   new  FusionCharts({
         type: 'maps/california',
     width: '800',
     height: '550',
+    renderAt: 'chart-container',
     dataFormat: 'json',
     dataSource: {
         "chart": {
@@ -735,6 +737,7 @@ webVisit.render();
 &lt;script type="text/javascript"&gt;
 const webVisit = {
     type: 'maps/california',
+    renderAt: 'chart-container',
     width: '800',
     height: '550',
     dataFormat: 'json',
@@ -787,6 +790,7 @@ webVisit.render();
 &lt;script type="text/javascript"&gt;
 const webVisit = {
     type: 'maps/california',
+    renderAt: 'chart-container',
     width: '800',
     height: '550',
     dataFormat: 'json',

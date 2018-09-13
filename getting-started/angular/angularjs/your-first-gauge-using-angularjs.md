@@ -21,7 +21,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 
-<div><strong>To install fusioncharts and the `angularjs-fusioncharts` directice via npm follow the steps below:</strong></div>
+<div><strong>To install fusioncharts and the `angularjs-fusioncharts` directive via npm follow the steps below:</strong></div>
 <div>1. Install `angularjs` core library</div>
 <pre><code class="custom-hlc language-javascript">
     $ npm install angular
