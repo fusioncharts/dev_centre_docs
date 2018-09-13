@@ -261,136 +261,140 @@ var app = new Vue({
 
 <div class='tab cdn-tab'>
 <pre><code class="custom-hlc language-html">
+&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Step 1 - Including vue  --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src=" https://unpkg.com/vue@2.3.3"&gt;&lt;/script>
     &lt;!-- Step 2 - Including vue-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src=" https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script>
     &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.widgets.js"&gt;&lt;/script>    
     &lt;!-- Step 4 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 &lt;body&gt;
     &lt;div id="app"&gt;
-        &lt;fusioncharts :type="type" :width="width" :height="height" :dataFormat="dataFormat" :dataSource="dataSource" :events="events"&gt;&lt;/fusioncharts&gt;
-        &lt;p&gt;Display Value: {{displayValue}}&lt;/p&gt;
+        &lt;fusioncharts :type="type" :width="width" :height="height" :dataFormat="dataFormat" :dataSource="dataSource"&gt;&lt;/fusioncharts&gt;
     &lt;/div&gt;
-    &lt;script&gt;
+    &lt;script type="text/javascript"&gt;
         // Use VueFusionCharts component by calling the Vue.use() method:
-        Vue.use(VueFusionCharts);
+        Vue.use(VueFusionCharts, FusionCharts);
         var app = new Vue({
             el: '#app',
-            type: 'angulargauge', // Chart type
-        renderAt: 'chart-container', // Container
-        width: '450', // Width of the chart
-        height: '250', // Height of the chart
-        dataFormat: 'json', // Data Type
-        dataSource: {
-            // Chart Configuration
-            "chart": {
-                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-                "lowerLimit": "0",
-                "upperLimit": "100",
-                "showValue": "1",
-                "numberSuffix": "%",
-                "theme": "fusion",
-                "showToolTip": "0"
-            },
-            // Chart Data
-            "colorRange": {
-                "color": [{
-                    "minValue": "0",
-                    "maxValue": "50",
-                    "code": "#F2726F"
-                }, {
-                    "minValue": "50",
-                    "maxValue": "75",
-                    "code": "#FFC533"
-                }, {
-                    "minValue": "75",
-                    "maxValue": "100",
-                    "code": "#62B58F"
-                }]
-            },
-            "dials": {
-                "dial": [{
-                    "value": "81"
-                }]
+            data: {
+                width: '450',
+                height: '250',
+                type: 'angulargauge',
+                dataFormat: 'json',
+                dataSource: {
+                    // Chart Configuration
+                    "chart": {
+                        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                        "lowerLimit": "0",
+                        "upperLimit": "100",
+                        "showValue": "1",
+                        "numberSuffix": "%",
+                        "theme": "fusion",
+                        "showToolTip": "0"
+                    },
+                    // Chart Data
+                    "colorRange": {
+                        "color": [{
+                            "minValue": "0",
+                            "maxValue": "50",
+                            "code": "#F2726F"
+                        }, {
+                            "minValue": "50",
+                            "maxValue": "75",
+                            "code": "#FFC533"
+                        }, {
+                            "minValue": "75",
+                            "maxValue": "100",
+                            "code": "#62B58F"
+                        }]
+                    },
+                    "dials": {
+                        "dial": [{
+                            "value": "81"
+                        }]
+                    }
+                }
             }
-        }
-    }
-});
+        });
     &lt;/script&gt;
 &lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab local-tab'>
 <pre><code class="custom-hlc language-html">
+&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Step 1 - Including vue  --&gt;
-    &lt;script type="text/javascript" src="path/to/local/vue.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script&gt;
     &lt;!-- Step 2 - Including vue-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="path/to/local/vue-fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/vue-fusioncharts.min.js"&gt;&lt;/script&gt;
     &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.widgets.js"&gt;&lt;/script&gt;    
     &lt;!-- Step 4 - Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
     &lt;div id="app"&gt;
-        &lt;fusioncharts :type="type" :width="width" :height="height" :dataFormat="dataFormat" :dataSource="dataSource" :events="events"&gt;&lt;/fusioncharts&gt;
-        &lt;p&gt;Display Value: {{displayValue}}&lt;/p&gt;
+        &lt;fusioncharts :type="type" :width="width" :height="height" :dataFormat="dataFormat" :dataSource="dataSource"&gt;&lt;/fusioncharts&gt;
     &lt;/div&gt;
-    &lt;script&gt;
+    &lt;script type="text/javascript"&gt;
         // Use VueFusionCharts component by calling the Vue.use() method:
-        Vue.use(VueFusionCharts);
+        Vue.use(VueFusionCharts, FusionCharts);
         var app = new Vue({
             el: '#app',
-            type: 'angulargauge', // Chart type
-        renderAt: 'chart-container', // Container
-        width: '450', // Width of the chart
-        height: '250', // Height of the chart
-        dataFormat: 'json', // Data Type
-        dataSource: {
-            // Chart Configuration
-            "chart": {
-                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-                "lowerLimit": "0",
-                "upperLimit": "100",
-                "showValue": "1",
-                "numberSuffix": "%",
-                "theme": "fusion",
-                "showToolTip": "0"
-            },
-            // Chart Data
-            "colorRange": {
-                "color": [{
-                    "minValue": "0",
-                    "maxValue": "50",
-                    "code": "#F2726F"
-                }, {
-                    "minValue": "50",
-                    "maxValue": "75",
-                    "code": "#FFC533"
-                }, {
-                    "minValue": "75",
-                    "maxValue": "100",
-                    "code": "#62B58F"
-                }]
-            },
-            "dials": {
-                "dial": [{
-                    "value": "81"
-                }]
+            data: {
+                width: '450',
+                height: '250',
+                type: 'angulargauge',
+                dataFormat: 'json',
+                dataSource: {
+                    // Chart Configuration
+                    "chart": {
+                        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                        "lowerLimit": "0",
+                        "upperLimit": "100",
+                        "showValue": "1",
+                        "numberSuffix": "%",
+                        "theme": "fusion",
+                        "showToolTip": "0"
+                    },
+                    // Chart Data
+                    "colorRange": {
+                        "color": [{
+                            "minValue": "0",
+                            "maxValue": "50",
+                            "code": "#F2726F"
+                        }, {
+                            "minValue": "50",
+                            "maxValue": "75",
+                            "code": "#FFC533"
+                        }, {
+                            "minValue": "75",
+                            "maxValue": "100",
+                            "code": "#62B58F"
+                        }]
+                    },
+                    "dials": {
+                        "dial": [{
+                            "value": "81"
+                        }]
+                    }
+                }
             }
-        }
-    }
-});
+        });
     &lt;/script&gt;
 &lt;/body&gt;
+&lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
