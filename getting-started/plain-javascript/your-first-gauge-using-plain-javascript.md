@@ -355,9 +355,9 @@ gaugeInstance.render();
                         }]
                     }
                 }
-                csatGauge.render();
             });
-        }
+            csatGauge.render();
+        });
     &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
@@ -417,9 +417,9 @@ gaugeInstance.render();
                         }]
                     }
                 }
-                csatGauge.render();
             });
-        }
+            csatGauge.render();
+        });
     &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
