@@ -247,7 +247,7 @@ import FusionMaps from 'fusioncharts/maps';
 import World from 'fusioncharts/maps/es/fusioncharts.world';
 
 // Include the fusion theme
-/import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
 
 // Add the map and the theme as dependency
 // E.g. FusionCharts.addDep(ChartType)

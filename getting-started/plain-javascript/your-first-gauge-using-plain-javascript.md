@@ -200,7 +200,7 @@ import FusionCharts from 'fusioncharts/core';
 import AngularGauge from 'fusioncharts/viz/angulargauge';
 
 // Include the fusion theme
-/import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
     
 // Add the gauge and theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
