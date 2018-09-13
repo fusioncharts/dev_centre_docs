@@ -2,7 +2,6 @@
 title: Adding Drill Down | FusionCharts
 description: This article focuses on drill down charts.
 heading: Adding Drill Down
-chartPresent: true
 ---
 
 With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
@@ -16,6 +15,10 @@ Create linked charts by following the steps given below:
 2. Append the data string or the data URL for the descendant charts within the parent data source. If you append the data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
 
 Once you implement these steps, the FusionCharts JavaScript class takes care of the rest.
+
+
+
+
 
 ### Features of the FusionCharts JavaScript Class
 
@@ -34,9 +37,155 @@ The parent chart here is a **Column 2D** chart showing yearly sales for the top 
 
 The above chart, when rendered, looks like the following:
 
-{% embed_chart chart-configurations-drill-down-example-7.js %}
+{% embed_chartData chart-configurations-drill-down-example-7.js json %}
 
 Click [here](http://jsfiddle.net/fusioncharts/wvpzfz5g/) to edit the above chart.
+
+The code to render the above chart is given below:
+
+```
+// Include the core fusioncharts file from core  -
+import FusionCharts from 'fusioncharts/core';
+
+// Include the chart from viz folder
+// E.g. - import ChartType from fusioncharts/viz/[ChartType]
+import Column2D from 'fusioncharts/viz/column2d';
+
+// Include the fusion theme
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+    
+// Add the chart and theme as dependency
+// E.g. FusionCharts.addDep(ChartType)
+FusionCharts.addDep(Column2D);
+FusionCharts.addDep(FusionTheme);
+    
+// Create an Instance with chart options
+var chartInstance = new FusionCharts({
+    type: 'column2d',
+    renderAt: 'chart-container',
+    width: '400',
+    height: '300',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "caption": "Top 3 Juice Flavors",
+            "subcaption": "Last year",
+            "xaxisName": "Flavor",
+            "yaxisName": "Amount (In USD)",
+            "numberPrefix": "$",
+            "theme": "fusion",
+            "rotateValues": "0"
+        },
+        "data": [{
+            "label": "Apple",
+            "value": "810000",
+            "link": "newchart-xml-apple"
+        }, {
+            "label": "Cranberry",
+            "value": "620000",
+            "link": "newchart-xml-cranberry"
+        }, {
+            "label": "Grapes",
+            "value": "350000",
+            "link": "newchart-xml-grapes"
+        }],
+        "linkeddata": [{
+            "id": "apple",
+            "linkedchart": {
+                "chart": {
+                    "caption": "Apple Juice - Quarterly Sales",
+                    "subcaption": "Last year",
+                    "xaxisname": "Quarter",
+                    "yaxisname": "Amount (In USD)",
+                    "numberprefix": "$",
+                    "theme": "fusion",
+                    "rotateValues": "0"
+                },
+                "data": [{
+                    "label": "Q1",
+                    "value": "157000"
+                }, {
+                    "label": "Q2",
+                    "value": "172000"
+                }, {
+                    "label": "Q3",
+                    "value": "206000"
+                }, {
+                    "label": "Q4",
+                    "value": "275000",
+                    "rotateValues": "0"
+                }]
+            }
+        }, {
+            "id": "cranberry",
+            "linkedchart": {
+                "chart": {
+                    "caption": "Cranberry Juice - Quarterly Sales",
+                    "subcaption": "Last year",
+                    "xaxisname": "Quarter",
+                    "yaxisname": "Amount (In USD)",
+                    "numberprefix": "$",
+                    "theme": "fusion",
+                    "rotateValues": "0"
+                },
+                "data": [{
+                    "label": "Q1",
+                    "value": "102000"
+                }, {
+                    "label": "Q2",
+                    "value": "142000"
+                }, {
+                    "label": "Q3",
+                    "value": "187000"
+                }, {
+                    "label": "Q4",
+                    "value": "189000"
+                }]
+            }
+        }, {
+            "id": "grapes",
+            "linkedchart": {
+                "chart": {
+                    "caption": "Grape Juice - Quarterly Sales",
+                    "subcaption": "Last year",
+                    "xaxisname": "Quarter",
+                    "yaxisname": "Amount (In USD)",
+                    "numberprefix": "$",
+                    "theme": "fusion",
+                    "rotateValues": "0"
+                },
+                "data": [{
+                    "label": "Q1",
+                    "value": "45000"
+                }, {
+                    "label": "Q2",
+                    "value": "72000"
+                }, {
+                    "label": "Q3",
+                    "value": "95000"
+                }, {
+                    "label": "Q4",
+                    "value": "108000"
+                }]
+            }
+        }]
+    }
+});// Render
+chartInstance.render();
+```
+
+1. Included the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
+
+2. Store the chart configurations in a JSON object. In this JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height (in pixels). 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of the `dataSource`.
+    * Create the JSON/XML data for the parent chart. This is called the parent data source.
+    * Append the data string or the data URL for the descendant charts within the parent data source. If you append a data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
+
+3. Add a container (instance) for the chart.
+
 
 ### Create linked charts using Data URL method
 
@@ -54,7 +203,7 @@ The syntax for the link attribute is:
 
 The above chart, when rendered, looks like the following:
 
-{% embed_chart chart-configurations-drill-down-example-11.js %}
+{% embed_chartData chart-configurations-drill-down-example-11.js json %}
 
 Click [here](http://jsfiddle.net/fusioncharts/v76phqq5/) to edit the above chart.
 
@@ -151,7 +300,23 @@ For the data string method, `dataformat` accepts either `json` (if the JSON data
 Refer to the code below:
 
 ```json
-{
+// Include the core fusioncharts file from core  -
+import FusionCharts from 'fusioncharts/core';
+
+// Include the chart from viz folder
+// E.g. - import ChartType from fusioncharts/viz/[ChartType]
+import Column2D from 'fusioncharts/viz/column2d';
+
+// Include the fusion theme
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+    
+// Add the chart and theme as dependency
+// E.g. FusionCharts.addDep(ChartType)
+FusionCharts.addDep(Column2D);
+FusionCharts.addDep(FusionTheme);
+    
+// Create an Instance with chart options
+var chartInstance = new FusionCharts({
     "chart": {
         "caption": "Top 3 Juice Flavors",
         "subcaption": "Last year",
@@ -277,7 +442,8 @@ Refer to the code below:
             }
         }
     ]
-}
+});//render
+chartInstance.render();
 ```
 
 ### Configure events for linked charts
@@ -301,7 +467,23 @@ Click [here](http://jsfiddle.net/fusioncharts/sknyboh5/) to edit the above chart
 Configure the `addEventListener()` method for the parent chart to listen to these events. The data structure that shows how to implement these events is given below:
 
 ```json
-{
+// Include the core fusioncharts file from core  -
+import FusionCharts from 'fusioncharts/core';
+
+// Include the chart from viz folder
+// E.g. - import ChartType from fusioncharts/viz/[ChartType]
+import Column2D from 'fusioncharts/viz/column2d';
+
+// Include the fusion theme
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+    
+// Add the chart and theme as dependency
+// E.g. FusionCharts.addDep(ChartType)
+FusionCharts.addDep(Column2D);
+FusionCharts.addDep(FusionTheme);
+    
+// Create an Instance with chart options
+var chartInstance = new FusionCharts({
     "chart": {
         "caption": "Top 3 Juice Flavors",
         "subcaption": "Last year",
@@ -422,7 +604,8 @@ Configure the `addEventListener()` method for the parent chart to listen to thes
             }
         }
     ]
-}
+}); //render
+chartInstance.render();
 ```
 
 Use the events object (under the `dataSource` object) to configure the events raised for a chart.

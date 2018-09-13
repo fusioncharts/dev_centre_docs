@@ -40,7 +40,7 @@ import FusionCharts from 'fusioncharts/core';
 import Column2D from 'fusioncharts/viz/column2d';
 
 // Include the fusion theme
-/import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
     
 // Add the chart and theme as dependency
 // E.g. FusionCharts.addDep(ChartType)
