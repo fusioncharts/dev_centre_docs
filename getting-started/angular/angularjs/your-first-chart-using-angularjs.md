@@ -309,13 +309,13 @@ chartInstance.render()
 &lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including AngularJS --&gt;
-    &lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script>
     &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Including the angularjs-fusioncharts directive--&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/angularjs-fusioncharts@4.0.1/dist/angular-fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/angularjs-fusioncharts@4.0.1/dist/angular-fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
     &lt;script type="text/javascript"&gt;
         var myApp = angular.module('myApp', ['ng-fusioncharts']);
         myApp.controller('MyController', ['$scope', function($scope) {
