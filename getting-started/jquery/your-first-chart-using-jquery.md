@@ -261,18 +261,17 @@ $('document').ready(function () {
 <pre><code class="custom-hlc language-html">
 &lt;html&gt;
     &lt;head&gt;
-        &lt;title&gt;jQuery FusionCharts Plugin Sample&lt;/title&gt;
-        &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="https://unpkg.com/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="https://unpkg.com/fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
+        &lt;!-- Include jQuery --&gt;
+        &lt;script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
+        &lt;!-- Include fusioncharts core library file --&gt;
+        &lt;script type="text/javascript" src=" https://unpkg.com/fusioncharts/fusioncharts.js"&gt;&lt;/script>
+        &lt;!-- Include fusion theme file --&gt;
+        &lt;script type="text/javascript" src=" https://unpkg.com/fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+        &lt;!-- Include fusioncharts jquery plugin --&gt;
+        &lt;script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
     &lt;/head&gt;
     &lt;body&gt;
-
-        &lt;div id="chart-container"&gt;FusionCharts will render here...&lt;/div&gt;
-
         &lt;script type="text/javascript"&gt;
-            console.log(jQuery);
             $('document').ready(function () {
                 $("#chart-container").insertFusionCharts({
                     type: "column2d",
@@ -280,27 +279,46 @@ $('document').ready(function () {
                     height: "400",
                     dataFormat: "json",
                     dataSource: {
+                        // Chart Configuration
                         "chart": {
-                            "caption": "Yearly revenue",
-                            "xAxisName": "Year",
-                            "yAxisName": "Revenues",
-                            "numberPrefix": "$",
-                            "theme": "fusion"
+                            "caption": "Countries With Most Oil Reserves [2017-18]",
+                            "subCaption": "In MMbbl = One Million barrels",
+                            "xAxisName": "Country",
+                            "yAxisName": "Reserves (MMbbl)",
+                            "numberSuffix": "K",
+                            "theme": "fusion",
                         },
+                        // Chart Data
                         "data": [{
-                            "label": "2015",
-                            "value": "5548900"
+                            "label": "Venezuela",
+                            "value": "290"
                         }, {
-                            "label": "2016",
-                            "value": "8100000"
+                            "label": "Saudi",
+                            "value": "260"
                         }, {
-                            "label": "2017",
-                            "value": "7200000"
+                            "label": "Canada",
+                            "value": "180"
+                        }, {
+                            "label": "Iran",
+                            "value": "140"
+                        }, {
+                            "label": "Russia",
+                            "value": "115"
+                        }, {
+                            "label": "UAE",
+                            "value": "100"
+                        }, {
+                            "label": "US",
+                            "value": "30"
+                        }, {
+                            "label": "China",
+                            "value": "30"
                         }]
                     }
                 });
             });
         &lt;/script&gt;
+        &lt;div id="chart-container"&gt;FusionCharts will render here&lt;/div&gt;
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -311,18 +329,17 @@ $('document').ready(function () {
 <pre><code class="custom-hlc language-html">
 &lt;html&gt;
     &lt;head&gt;
-        &lt;title&gt;jQuery FusionCharts Plugin Sample&lt;/title&gt;
-        &lt;script type="text/javascript" src="path/to/local/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
+        &lt;!-- Include jQuery --&gt;
+        &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
+        &lt;!-- Include fusioncharts core library file --&gt;
         &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="path/to/local/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
+        &lt;!-- Include fusion theme file --&gt;
+        &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;!-- Include fusioncharts jquery plugin --&gt;
+        &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
     &lt;body&gt;
-
-        &lt;div id="chart-container"&gt;FusionCharts will render here...&lt;/div&gt;
-
         &lt;script type="text/javascript"&gt;
-            console.log(jQuery);
             $('document').ready(function () {
                 $("#chart-container").insertFusionCharts({
                     type: "column2d",
@@ -330,27 +347,46 @@ $('document').ready(function () {
                     height: "400",
                     dataFormat: "json",
                     dataSource: {
+                        // Chart Configuration
                         "chart": {
-                            "caption": "Yearly revenue",
-                            "xAxisName": "Year",
-                            "yAxisName": "Revenues",
-                            "numberPrefix": "$",
-                            "theme": "fusion"
+                            "caption": "Countries With Most Oil Reserves [2017-18]",
+                            "subCaption": "In MMbbl = One Million barrels",
+                            "xAxisName": "Country",
+                            "yAxisName": "Reserves (MMbbl)",
+                            "numberSuffix": "K",
+                            "theme": "fusion",
                         },
+                        // Chart Data
                         "data": [{
-                            "label": "2015",
-                            "value": "5548900"
+                            "label": "Venezuela",
+                            "value": "290"
                         }, {
-                            "label": "2016",
-                            "value": "8100000"
+                            "label": "Saudi",
+                            "value": "260"
                         }, {
-                            "label": "2017",
-                            "value": "7200000"
+                            "label": "Canada",
+                            "value": "180"
+                        }, {
+                            "label": "Iran",
+                            "value": "140"
+                        }, {
+                            "label": "Russia",
+                            "value": "115"
+                        }, {
+                            "label": "UAE",
+                            "value": "100"
+                        }, {
+                            "label": "US",
+                            "value": "30"
+                        }, {
+                            "label": "China",
+                            "value": "30"
                         }]
                     }
                 });
             });
         &lt;/script&gt;
+        &lt;div id="chart-container"&gt;FusionCharts will render here&lt;/div&gt;
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
