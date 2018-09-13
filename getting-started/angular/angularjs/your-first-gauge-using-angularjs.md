@@ -292,26 +292,20 @@ chartInstance.render()
 
 <div class='tab cdn-tab'>
 <pre><code class="custom-hlc language-javascript">
+&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including AngularJS --&gt;
-	&lt;script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script &gt;
-	&lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src=" https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.7.2/angular.min.js"&gt;&lt;/script>
+    &lt;!-- Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Including the angularjs-fusioncharts directive--&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/angularjs-fusioncharts.min.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src=" https://unpkg.com/angularjs-fusioncharts@4.0.1/dist/angular-fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
-&lt;/head&gt;
-
-&lt;body ng-app="my-app"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts id="my-chart-id" width="450" height="250" type="angulargauge" dataSource="{{myDataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;script src="text/javascript"&gt;
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript"&gt;
         var myApp = angular.module('myApp', ['ng-fusioncharts']);
         myApp.controller('MyController', ['$scope', function($scope) {
-            $scope.dataSource = {
+            $scope.myDataSource = {
                 // Chart Configuration
                 "chart": {
                     "caption": "Nordstorm's Customer Satisfaction Score for 2017",
@@ -346,7 +340,16 @@ chartInstance.render()
             };
         }]);
     &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body ng-app="myApp"&gt;
+    &lt;div ng-controller="MyController"&gt;
+        &lt;div fusioncharts id="my-chart-id" width="450" height="250" type="angulargauge" dataSource="{{myDataSource}}"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/body&gt;
+
+&lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -354,26 +357,20 @@ chartInstance.render()
 
 <div class='tab localfiles-tab'>
 <pre><code class="custom-hlc language-javascript">
+&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including AngularJS --&gt;
     &lt;script type="text/javascript" src="path/to/local/angular.min.js"&gt;&lt;/script&gt;
     &lt;!-- Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
     &lt;!-- Including the angularjs-fusioncharts directive--&gt;
-    &lt;script type="text/javascript" src="path/to/local/angularjs-fusioncharts.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/angular-fusioncharts.js"&gt;&lt;/script&gt;
     &lt;!-- Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-&lt;/head&gt;
-
-&lt;body ng-app="my-app"&gt;
-    &lt;div ng-controller="MyController"&gt;
-        &lt;div fusioncharts id="my-chart-id" width="450" height="250" type="angulargauge" dataSource="{{myDataSource}}"&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
-    &lt;script src="text/javascript"&gt;
+    &lt;script type="text/javascript"&gt;
         var myApp = angular.module('myApp', ['ng-fusioncharts']);
         myApp.controller('MyController', ['$scope', function($scope) {
-            $scope.dataSource = {
+            $scope.myDataSource = {
                 // Chart Configuration
                 "chart": {
                     "caption": "Nordstorm's Customer Satisfaction Score for 2017",
@@ -408,7 +405,16 @@ chartInstance.render()
             };
         }]);
     &lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body ng-app="myApp"&gt;
+    &lt;div ng-controller="MyController"&gt;
+        &lt;div fusioncharts id="my-chart-id" width="450" height="250" type="angulargauge" dataSource="{{myDataSource}}"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
 &lt;/body&gt;
+
+&lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
