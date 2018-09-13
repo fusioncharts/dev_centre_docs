@@ -98,7 +98,6 @@ var chartInstance = new FusionCharts({
     type: 'Column2D',
     width: '700', // Width of the chart
     height: '400', // Height of the chart
-    dataFormat: 'json', // Data type
     dataFormat: 'jsonurl',
     dataSource: 'https://static.fusioncharts.com/sample/oilReserves.json'
 });
@@ -112,8 +111,7 @@ The above chart has been rendered using the following steps:
 
 2. Stored the chart configuration in a JSON object. In the JSON object:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
+    * The width and height of the chart has been set in pixels.
 
 3. To set the datasource using URL:
     * The value of the `dataFormat` has been set to **jsonurl**.
@@ -168,7 +166,6 @@ var chartInstance = new FusionCharts({
     type: 'Column2D',
     width: '700', // Width of the chart
     height: '400', // Height of the chart
-    dataFormat: 'xml', // Data type
     dataFormat: 'xmlurl',
     dataSource: 'https://static.fusioncharts.com/sample/oilReserves.xml'
 });
@@ -182,8 +179,7 @@ The above chart has been rendered using the following steps:
 
 2. Stored the chart configuration in a XML object. In the XML object:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as XML.
+    * The width and height of the chart has been set in pixels.
 
 3. To set the datasource using URL:
     * The value of the `dataFormat` has been set to **jsonurl**.
