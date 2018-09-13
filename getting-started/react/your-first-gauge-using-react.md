@@ -298,65 +298,77 @@ ReactDOM.render(
 <pre><code class="custom-hlc language-javascript">
 &lt;html&gt;
 &lt;head&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script &gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script &gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script &gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script &gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
-&lt;script type="text/javascript"&gt;
-const chartConfigs = {
-    type: 'angulargauge', // The gauge type
-    width: '450', // Width of the gauge
-    height: '250', // Height of the gauge
-    dataFormat: 'json', // Data type
-    dataSource: {
-        // Gauge Configuration
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion",
-        },
-        // Chart Data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    }
-};
-
-&lt;/script&gt;
-&lt;script type="text/jsx"&gt;
-ReactDOM.render(
-    &lt;ReactFC {...chartConfigs} /&gt;,
-    document.getElementById('chart-container')
-);
-&lt;/script&gt;
+    &lt;!-- Including react --&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script>
+    &lt;!-- Including react-dom --&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script>
+    &lt;!-- Including babel --&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script>
+    &lt;!-- Including the fusioncharts core library --&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;!-- Including the fusioncharts library to render charts --&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.widgets.js"&gt;&lt;/script>
+    &lt;!-- Including react-fusioncharts component --&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script>
+    &lt;!-- Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/jsx"&gt;
+    ReactFC.fcRoot(FusionCharts);
+    const chartConfigs = {
+        type: 'angulargauge',
+        renderAt: 'chart-container',
+        width: '450',
+        height: '250',
+        dataFormat: 'json',
+        dataSource: {
+            // Gauge Configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+            },
+            // Chart Data
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
+        }
+    };
+    &lt;/script&gt;
+    &lt;script type="text/jsx"&gt;
+    ReactDOM.render(
+        &lt;ReactFC {...chartConfigs} /&gt;,
+        document.getElementById('chart-container')
+    );
+    &lt;/script&gt;
 &lt;/head&gt;
+&lt;body&gt;
+    &lt;div id='chart-container'&gt;&lt;/div&gt;
+&lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -366,65 +378,77 @@ ReactDOM.render(
 <pre><code class="custom-hlc language-javascript">
 &lt;html&gt;
 &lt;head&gt;
-    &lt;script type="text/javascript" src="path/to/local/react.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-dom.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="path/to/local/babel-core.js"&gt;&lt;/script&gt;
+    &lt;!-- Including react --&gt;
+    &lt;script type="text/javascript" src="path/to/local/react.development.js"&gt;&lt;/script&gt;
+    &lt;!-- Including react-dom --&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-dom.development.js"&gt;&lt;/script&gt;
+    &lt;!-- Including babel --&gt;
+    &lt;script type="text/javascript" src="path/to/local/babel.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusioncharts library to render charts --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.widgets.js"&gt;&lt;/script&gt;
+    &lt;!-- Including react-fusioncharts component --&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/jsx"&gt;
+    ReactFC.fcRoot(FusionCharts);
+    const chartConfigs = {
+        type: 'angulargauge',
+        renderAt: 'chart-container',
+        width: '450',
+        height: '250',
+        dataFormat: 'json',
+        dataSource: {
+            // Gauge Configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+            },
+            // Chart Data
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
+        }
+    };
+    &lt;/script&gt;
+    &lt;script type="text/jsx"&gt;
+    ReactDOM.render(
+        &lt;ReactFC {...chartConfigs} /&gt;,
+        document.getElementById('chart-container')
+    );
+    &lt;/script&gt;
 &lt;/head&gt;
-const chartConfigs = {
-    type: 'angulargauge', // The gauge type
-    width: '450', // Width of the gauge
-    height: '250', // Height of the gauge
-    dataFormat: 'json', // Data type
-    dataSource: {
-        // Gauge Configuration
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion",
-        },
-        // Chart Data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    }
-};
-};
-&lt;/script&gt;
-&lt;script type="text/jsx"&gt;
-ReactDOM.render(
-    &lt;ReactFC {...chartConfigs} /&gt;,
-    document.getElementById('chart-container')
-);
-&lt;/script&gt;
-&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id='chart-container'&gt;&lt;/div&gt;
+&lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -444,4 +468,3 @@ In case there is an error, and you are unable to see the chart, check for the fo
 * If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
 
 * If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
-
