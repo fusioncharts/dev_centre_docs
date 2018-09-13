@@ -43,13 +43,13 @@ $ npm install fusioncharts --save
         &lt;!-- jQuery --&gt;
         &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
         &lt;!-- FusionCharts --&gt;
-        &lt;script type="text/javascript" src="https://unpkg.com/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
         &lt;!-- jQuery-FusionCharts --&gt;
         &lt;script type="text/javascript" src="[https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;](https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;);
         &lt;!-- Step 4 - Including the map renderer file --&gt;
-        &lt;script type="text/javascript" src="**[http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js](http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)**"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt;
         &lt;!-- Step 5 - Including the map definition file --&gt;
-        &lt;script type="text/javascript" src="**[http://cdn.fusioncharts.com/fusioncharts/latest/](http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js)**fusioncharts.world.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="**http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script&gt;
         &lt;!-- Fusion Theme --&gt;
         &lt;script type="text/javascript" src="https://unpkg.com/fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
@@ -118,7 +118,6 @@ We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/
  In this example, we will use the JSON format as shown below:
 
 ```JSON
-
 {
     // Map Configuration
     "chart": {
@@ -126,7 +125,9 @@ We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/
         "subcaption": " 1955-2015",
         "numbersuffix": "%",
         "includevalueinlabels": "1",
-        ...
+        "labelsepchar": ": ",
+        "entityFillHoverColor": "#FFF9C4",
+        "theme": "fusion"
     },
     // Aesthetics; ranges synced with the slider
     "colorrange": {
@@ -141,9 +142,11 @@ We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/
             "minvalue": "1.0",
             "maxvalue": "2.0",
             "color": "#FB8C00"
-        }, …
-
-]
+        }, {
+            "minvalue": "2.0",
+            "maxvalue": "3.0",
+            "color": "#E65100"
+        }]
     },
     // Source data as JSON --> id represents countries of world.
     "data": [{
@@ -158,10 +161,20 @@ We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/
         "id": "AS",
         "value": "1.78",
         "showLabel": "1"
-    }, …
-
+    }, {
+        "id": "EU",
+        "value": ".40",
+        "showLabel": "1"
+    }, {
+        "id": "AF",
+        "value": "2.58",
+        "showLabel": "1"
+    }, {
+        "id": "AU",
+        "value": "1.30",
+        "showLabel": "1"
+    }]
 }
-
 ```
 
 In the above JSON data: 
@@ -274,29 +287,27 @@ $('document').ready(function () {
 <pre><code class="custom-hlc language-html">
 &lt;html&gt;
     &lt;head&gt;
-        &lt;title&gt;jQuery FusionCharts Plugin Sample&lt;/title&gt;
-        &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="[https://unpkg.com/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;](https://unpkg.com/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;);
-        &lt;!-- Step 4 - Including the map renderer file --&gt;
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt;     
-        &lt;!-- Step 5 - Including the map definition file --&gt;
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="https://unpkg.com/fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
+        &lt;!-- Include jQuery --&gt;
+        &lt;script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
+        &lt;!-- Include fusioncharts core library file --&gt;
+        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+        &lt;!-- Include fusioncharts map definition files --&gt;
+        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script>
+        &lt;!-- Include fusion theme file --&gt;
+        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+        &lt;!-- Include fusioncharts jquery plugin --&gt;
+        &lt;script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
     &lt;/head&gt;
     &lt;body&gt;
-        &lt;div id="chart-container"&gt;FusionCharts will render here...&lt;/div&gt;
         &lt;script type="text/javascript"&gt;
-            console.log(jQuery);
             $('document').ready(function () {
                 $("#chart-container").insertFusionCharts({
-                    type: 'world', // Map type
-                    renderAt: 'chart-container', // Container
-                    width: '800', // Width of the chart
-                    height: '550', // Height of the chart
-                    dataFormat: 'json', // Data Type
+                    type: "world",
+                    width: "800",
+                    height: "550",
+                    dataFormat: "json",
                     dataSource: {
-
                         // Map Configuration
                         "chart": {
                             "caption": "Average Annual Population Growth",
@@ -353,10 +364,10 @@ $('document').ready(function () {
                             "showLabel": "1"
                         }]
                     }
-                }
+                });
             });
-
         &lt;/script&gt;
+        &lt;div id="chart-container"&gt;FusionCharts will render here&lt;/div&gt;
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -366,25 +377,26 @@ $('document').ready(function () {
 <pre><code class="custom-hlc language-html">
 &lt;html&gt;
     &lt;head&gt;
-        &lt;title&gt;jQuery FusionCharts Plugin Sample&lt;/title&gt;
-        &lt;script type="text/javascript" src="path/to/local/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
+        &lt;!-- Include jQuery --&gt;
+        &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
+        &lt;!-- Include fusioncharts core library file --&gt;
         &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="path/to/local/fusioncharts.maps.js**"&gt;&lt;/script&gt;
+        &lt;!-- Include fusioncharts map definition files --&gt;
+        &lt;script type="text/javascript" src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
         &lt;script type="text/javascript" src="path/to/local/fusioncharts.world.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;!-- Include fusion theme file --&gt;
+        &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;!-- Include fusioncharts jquery plugin --&gt;
         &lt;script type="text/javascript" src="path/to/local/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
     &lt;body&gt;
-        &lt;div id="chart-container"&gt;FusionCharts will render here...&lt;/div&gt;
         &lt;script type="text/javascript"&gt;
-            console.log(jQuery);
             $('document').ready(function () {
                 $("#chart-container").insertFusionCharts({
-                    type: 'world', // Map type
-                    renderAt: 'chart-container', // Container
-                    width: '800', // Width of the map                  
-                    height: '550', // Height of the map
-                    dataFormat: 'json', // Data Type                   
+                    type: "world",
+                    width: "800",
+                    height: "550",
+                    dataFormat: "json",
                     dataSource: {
                         // Map Configuration
                         "chart": {
@@ -442,9 +454,10 @@ $('document').ready(function () {
                             "showLabel": "1"
                         }]
                     }
-                }
+                });
             });
         &lt;/script&gt;
+        &lt;div id="chart-container"&gt;FusionCharts will render here&lt;/div&gt;
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
@@ -539,108 +552,41 @@ $('document').ready(function () {
 <pre><code class="custom-hlc language-html">
 &lt;html&gt;
     &lt;head&gt;
-        &lt;title&gt;jQuery FusionCharts Plugin Sample&lt;/title&gt;
-        &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="[https://unpkg.com/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;](https://unpkg.com/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;);
-        &lt;!-- Step 4 - Including the map renderer file --&gt;
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt;
-        &lt;!-- Step 5 - Including the map definition file --&gt;
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="https://unpkg.com/fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
+        &lt;!-- Include jQuery --&gt;
+        &lt;script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
+        &lt;!-- Include fusioncharts core library file --&gt;
+        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+        &lt;!-- Include fusioncharts map definition files --&gt;
+        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script>
+        &lt;!-- Include fusion theme file --&gt;
+        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+        &lt;!-- Include fusioncharts jquery plugin --&gt;
+        &lt;script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
     &lt;/head&gt;
     &lt;body&gt;
-        &lt;div id="chart-container"&gt;FusionCharts will render here...&lt;/div&gt;
         &lt;script type="text/javascript"&gt;
-            console.log(jQuery);
             $('document').ready(function () {
                 $("#chart-container").insertFusionCharts({
-                    type: 'maps/california', // Map type
-                    renderAt: 'chart-container', // Container
-                    width: '800', // Width of the map
-                    height: '550', // Height of the map
-                    dataFormat: 'json', // Data Type
-                    dataSource: 
-                        // Map Configuration
-                        {
-                    "chart": {
-                        "animation": "0",
-                        "showbevel": "0",
-                        "usehovercolor": "1",
-                        "canvasbordercolor": "FFFFFF",
-                        "bordercolor": "FFFFFF",
-                        "showlegend": "1",
-                        "legendposition": "BOTTOM",
-                        "legendborderalpha": "0",
-                        "legendbordercolor": "ffffff",
-                        "legendallowdrag": "0",
-                        "legendshadow": "0",
-                        "caption": "Website Visits for the month of March 2018",
-                        "connectorcolor": "000000",
-                        "fillalpha": "80",
-                        "hovercolor": "CCCCCC",
-                        "showborder": 0,
-                        "theme": "fusion"
-                        },
-                    "colorrange": {
-                        "minvalue": "0",
-                        "startlabel": "Low",
-                        "endlabel": "High",
-                        "code": "e44a00",
-                        "gradient": "1",
-                        "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
-                    },
-                    "data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
-                }
-            }
-            };
-        &lt;/script&gt;
-    &lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-<div class='tab local-tab'>
-<pre><code class="custom-hlc language-html">
-&lt;html&gt;
-    &lt;head&gt;
-        &lt;title&gt;jQuery FusionCharts Plugin Sample&lt;/title&gt;
-        &lt;script type="text/javascript" src="path/to/local/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="path/to/local**/fusioncharts.maps.js**"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="path/to/local**/**fusioncharts.world.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="path/to/local/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
-    &lt;/head&gt;
-    &lt;body&gt;
-        &lt;div id="chart-container"&gt;FusionCharts will render here...&lt;/div&gt;
-        &lt;script type="text/javascript"&gt;
-            console.log(jQuery);
-            $('document').ready(function () {
-                $("#chart-container").insertFusionCharts({
-                    type: 'maps/california', // Map type
-                    renderAt: 'chart-container', // Container
-                    width: '800', // Width of the map
-                    height: '550', // Height of the map
-                    dataFormat: 'json', // Data Type
-                    dataSource: 
-                            {
+                    type: "maps/california",
+                    width: "800",
+                    height: "550",
+                    dataFormat: "json",
+                    dataSource: {
                         "chart": {
                             "animation": "0",
                             "showbevel": "0",
                             "usehovercolor": "1",
-                            "canvasbordercolor": "FFFFFF",
-                            "bordercolor": "FFFFFF",
                             "showlegend": "1",
                             "legendposition": "BOTTOM",
                             "legendborderalpha": "0",
                             "legendbordercolor": "ffffff",
                             "legendallowdrag": "0",
                             "legendshadow": "0",
-                            "caption": "Website Visits for the month of March 2018",                            "connectorcolor": "000000",
+                            "caption": "Website Visits for the month of March 2018",
+                            "connectorcolor": "000000",
                             "fillalpha": "80",
                             "hovercolor": "CCCCCC",
-                            "showborder": 0,
                             "theme": "fusion"
                         },
                         "colorrange": {
@@ -653,9 +599,70 @@ $('document').ready(function () {
                         },
                         "data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
                     }
-                }
-                };
+                });
+            });
         &lt;/script&gt;
+        &lt;div id="chart-container"&gt;FusionCharts will render here...&lt;/div&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+<div class='tab local-tab'>
+<pre><code class="custom-hlc language-html">
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;!-- Include jQuery --&gt;
+        &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
+        &lt;!-- Include fusioncharts core library file --&gt;
+        &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;!-- Include fusioncharts map definition files --&gt;
+        &lt;script type="text/javascript" src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/maps/fusioncharts.california.js"&gt;&lt;/script&gt;
+        &lt;!-- Include fusion theme file --&gt;
+        &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;!-- Include fusioncharts jquery plugin --&gt;
+        &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;script type="text/javascript"&gt;
+            $('document').ready(function () {
+                $("#chart-container").insertFusionCharts({
+                    type: "maps/california",
+                    width: "800",
+                    height: "550",
+                    dataFormat: "json",
+                    dataSource: {
+                        "chart": {
+                            "animation": "0",
+                            "showbevel": "0",
+                            "usehovercolor": "1",
+                            "showlegend": "1",
+                            "legendposition": "BOTTOM",
+                            "legendborderalpha": "0",
+                            "legendbordercolor": "ffffff",
+                            "legendallowdrag": "0",
+                            "legendshadow": "0",
+                            "caption": "Website Visits for the month of March 2018",
+                            "connectorcolor": "000000",
+                            "fillalpha": "80",
+                            "hovercolor": "CCCCCC",
+                            "theme": "fusion"
+                        },
+                        "colorrange": {
+                            "minvalue": "0",
+                            "startlabel": "Low",
+                            "endlabel": "High",
+                            "code": "e44a00",
+                            "gradient": "1",
+                            "color": [{"maxvalue": "2500", "code": "f8bd19"}, {"maxvalue": "5000", "code": "6baa01"}]
+                        },
+                        "data": [{"id":"001","value":2834},{"id":"003","value":3182},{"id":"005","value":3280},{"id":"007","value":911},{"id":"009","value":292},{"id":"011","value":530},{"id":"013","value":2515},{"id":"015","value":728},{"id":"017","value":1974},{"id":"019","value":848},{"id":"021","value":3278},{"id":"023","value":4463},{"id":"025","value":1198},{"id":"027","value":378},{"id":"029","value":2610},{"id":"031","value":1200},{"id":"033","value":3820},{"id":"035","value":940},{"id":"037","value":3416},{"id":"039","value":4004},{"id":"041","value":1604},{"id":"043","value":4011},{"id":"045","value":3203},{"id":"047","value":3775},{"id":"049","value":2721},{"id":"051","value":3417},{"id":"053","value":1530},{"id":"055","value":412},{"id":"057","value":3434},{"id":"059","value":1670},{"id":"061","value":1274},{"id":"063","value":4339},{"id":"065","value":2073},{"id":"067","value":1018},{"id":"069","value":3967},{"id":"071","value":3401},{"id":"073","value":3307},{"id":"075","value":1938},{"id":"077","value":489},{"id":"079","value":3207},{"id":"081","value":2295},{"id":"083","value":2747},{"id":"085","value":1114},{"id":"087","value":3400},{"id":"089","value":784},{"id":"091","value":1673},{"id":"093","value":4274},{"id":"095","value":4509},{"id":"097","value":3862},{"id":"099","value":1356},{"id":"101","value":4126},{"id":"103","value":1314},{"id":"105","value":1807},{"id":"107","value":4026},{"id":"109","value":3456},{"id":"111","value":1393},{"id":"113","value":1500},{"id":"115","value":2218}]
+                    }
+                });
+            });
+        &lt;/script&gt;
+        &lt;div id="chart-container"&gt;FusionCharts will render here...&lt;/div&gt;
     &lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
