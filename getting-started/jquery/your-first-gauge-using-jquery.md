@@ -44,11 +44,11 @@ $ npm install fusioncharts --save
         &lt;!-- jQuery --&gt;
         &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
         &lt;!-- FusionCharts --&gt;
-        &lt;script type="text/javascript" src="https://unpkg.com/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
         &lt;!-- jQuery-FusionCharts --&gt;
         &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
         &lt;!-- Fusion Theme --&gt;
-        &lt;script type="text/javascript" src="https://unpkg.com/fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -247,63 +247,61 @@ $('document').ready(function () {
 <pre><code class="custom-hlc language-html">
 &lt;html&gt;
     &lt;head&gt;
-        &lt;title&gt;jQuery FusionCharts Plugin Sample&lt;/title&gt;
-        &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="https://unpkg.com/fusioncharts/fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="https://unpkg.com/fusioncharts/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
+        &lt;!-- Include jQuery --&gt;
+        &lt;script type="text/javascript" src=" https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
+        &lt;!-- Include fusioncharts core library file --&gt;
+        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+        &lt;!-- Include fusion theme file --&gt;
+        &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+        &lt;!-- Include fusioncharts jquery plugin --&gt;
+        &lt;script type="text/javascript" src=" https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
     &lt;/head&gt;
     &lt;body&gt;
-        &lt;div id="chart-container"&gt;FusionCharts will render here...&lt;/div&gt;
         &lt;script type="text/javascript"&gt;
-            console.log(jQuery);
             $('document').ready(function () {
                 $("#chart-container").insertFusionCharts({
-                    type: 'angulargauge', // Chart type
-        renderAt: 'chart-container', // Container
-        width: '450', // Width of the chart
-        height: '250', // Height of the chart
-        dataFormat: 'json', // Data Type
-        dataSource: {
-            // Chart Configuration
-            "chart": {
-                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-                "lowerLimit": "0",
-                "upperLimit": "100",
-                "showValue": "1",
-                "numberSuffix": "%",
-                "theme": "fusion",
-                "showToolTip": "0"
-            },
-            // Chart Data
-            "colorRange": {
-                "color": [{
-                    "minValue": "0",
-                    "maxValue": "50",
-                    "code": "#F2726F"
-                }, {
-                    "minValue": "50",
-                    "maxValue": "75",
-                    "code": "#FFC533"
-                }, {
-                    "minValue": "75",
-                    "maxValue": "100",
-                    "code": "#62B58F"
-                }]
-            },
-            "dials": {
-                "dial": [{
-                    "value": "81"
-                }]
-            }
-        }
-    }
-});
-
+                    type: "angulargauge",
+                    width: "450",
+                    height: "250",
+                    dataFormat: "json",
+                    dataSource: {
+                        // Chart Configuration
+                        "chart": {
+                            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                            "lowerLimit": "0",
+                            "upperLimit": "100",
+                            "showValue": "1",
+                            "numberSuffix": "%",
+                            "theme": "fusion",
+                            "showToolTip": "0"
+                        },
+                        // Chart Data
+                        "colorRange": {
+                            "color": [{
+                                "minValue": "0",
+                                "maxValue": "50",
+                                "code": "#F2726F"
+                            }, {
+                                "minValue": "50",
+                                "maxValue": "75",
+                                "code": "#FFC533"
+                            }, {
+                                "minValue": "75",
+                                "maxValue": "100",
+                                "code": "#62B58F"
+                            }]
+                        },
+                        "dials": {
+                            "dial": [{
+                                "value": "81"
+                            }]
+                        }
+                    }
+                });
+            });
         &lt;/script&gt;
-
+        &lt;div id="chart-container"&gt;FusionCharts will render here...&lt;/div&gt;
     &lt;/body&gt;
-
 &lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -312,67 +310,61 @@ $('document').ready(function () {
 <pre><code class="custom-hlc language-html">
 &lt;html&gt;
     &lt;head&gt;
-        &lt;title&gt;jQuery FusionCharts Plugin Sample&lt;/title&gt;
-        &lt;script type="text/javascript" src="path/to/local/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
+        &lt;!-- Include jQuery --&gt;
+        &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
+        &lt;!-- Include fusioncharts core library file --&gt;
         &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-        &lt;script type="text/javascript" src="path/to/local/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
+        &lt;!-- Include fusion theme file --&gt;
+        &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;!-- Include fusioncharts jquery plugin --&gt;
+        &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
     &lt;body&gt;
-        &lt;div id="chart-container"&gt;FusionCharts will render here...&lt;/div&gt;
         &lt;script type="text/javascript"&gt;
-
-            console.log(jQuery);
-
             $('document').ready(function () {
-
                 $("#chart-container").insertFusionCharts({
-
-                    type: 'angulargauge', // Chart type
-        renderAt: 'chart-container', // Container
-        width: '450', // Width of the chart
-        height: '250', // Height of the chart
-        dataFormat: 'json', // Data Type
-        dataSource: {
-            // Chart Configuration
-            "chart": {
-                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-                "lowerLimit": "0",
-                "upperLimit": "100",
-                "showValue": "1",
-                "numberSuffix": "%",
-                "theme": "fusion",
-                "showToolTip": "0"
-            },
-            // Chart Data
-            "colorRange": {
-                "color": [{
-                    "minValue": "0",
-                    "maxValue": "50",
-                    "code": "#F2726F"
-                }, {
-                    "minValue": "50",
-                    "maxValue": "75",
-                    "code": "#FFC533"
-                }, {
-                    "minValue": "75",
-                    "maxValue": "100",
-                    "code": "#62B58F"
-                }]
-            },
-            "dials": {
-                "dial": [{
-                    "value": "81"
-                }]
-            }
-        }
-    }
-});
-
+                    type: "angulargauge",
+                    width: "450",
+                    height: "250",
+                    dataFormat: "json",
+                    dataSource: {
+                        // Chart Configuration
+                        "chart": {
+                            "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                            "lowerLimit": "0",
+                            "upperLimit": "100",
+                            "showValue": "1",
+                            "numberSuffix": "%",
+                            "theme": "fusion",
+                            "showToolTip": "0"
+                        },
+                        // Chart Data
+                        "colorRange": {
+                            "color": [{
+                                "minValue": "0",
+                                "maxValue": "50",
+                                "code": "#F2726F"
+                            }, {
+                                "minValue": "50",
+                                "maxValue": "75",
+                                "code": "#FFC533"
+                            }, {
+                                "minValue": "75",
+                                "maxValue": "100",
+                                "code": "#62B58F"
+                            }]
+                        },
+                        "dials": {
+                            "dial": [{
+                                "value": "81"
+                            }]
+                        }
+                    }
+                });
+            });
         &lt;/script&gt;
-
+        &lt;div id="chart-container"&gt;FusionCharts will render here&lt;/div&gt;
     &lt;/body&gt;
-
 &lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
