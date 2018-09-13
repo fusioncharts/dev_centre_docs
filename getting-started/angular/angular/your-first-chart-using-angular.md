@@ -120,7 +120,7 @@ To render the chart follow the steps below:
 
     * Import the chart type.
 
-    * Include the FusionCharts theme file to apply the style to the charts.
+    * Include the FusionCharts theme file to apply style to the charts.
 
     * Pass the `fusioncharts` library and chart modules.
 

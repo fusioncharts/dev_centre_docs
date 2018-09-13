@@ -41,7 +41,7 @@ $ npm install fusioncharts --save
 <div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
 <div class='mt-20'>4. Include the FusionCharts map renderer.</div>
 <div class='mt-20'>5. Include the map definition file.</div>
-<div class='mt-20'>6. Include the FusionCharts theme file to apply the style to the charts.</div>
+<div class='mt-20'>6. Include the FusionCharts theme file to apply style to the charts.</div>
 <pre><code class="custom-hlc language-html">
 &lt;head&gt;
     &lt;!-- Step 1 - Including vue  --&gt;
@@ -68,7 +68,7 @@ $ npm install fusioncharts --save
 <div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
 <div class='mt-20'>4. Include the FusionCharts map renderer.</div>
 <div class='mt-20'>5. Include the map definition file.</div>
-<div class='mt-20'>6. Include the FusionCharts theme file to apply the style to the charts.</div>
+<div class='mt-20'>6. Include the FusionCharts theme file to apply style to the charts.</div>
 <pre><code class="custom-hlc language-html">
 &lt;head&gt;
     &lt;!-- Step 1 - Including vue  --&gt;

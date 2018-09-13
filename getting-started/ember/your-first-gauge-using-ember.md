@@ -107,9 +107,9 @@ In the above JSON:
 
 * Specify the hex code of the color within the `color` array.
 
-* Create the `dials` array to represent the customer satisfaction score.
+* Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` array under the `dials` array and set the value of the dial.
+* Create the `dial` object under `dials` object to set the value of the dial in an array.
 
 The `chart` object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the gauge.
 

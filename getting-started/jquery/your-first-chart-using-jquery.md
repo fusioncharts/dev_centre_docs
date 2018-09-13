@@ -39,7 +39,7 @@ $ npm install fusioncharts --save
 <div class='mt-20'>1. Include the [jQuery ](https://jquery.com/)core library.</div>
 <div class='mt-20'>2. Include the `jquery-fusioncharts` module.</div>
 <div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files.</div>
-<div class='mt-20'>4. Include the FusionCharts theme file to apply the style to the charts.</div>
+<div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
 <pre><code class="custom-hlc language-html">
 &lt;head&gt;
         &lt;!-- jQuery --&gt;
@@ -61,7 +61,7 @@ $ npm install fusioncharts --save
 <div class='mt-20'>1. Include the [jQuery ](https://jquery.com/)core library.</div>
 <div class='mt-20'>2. Include the `jquery-fusioncharts` module.</div>
 <div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
-<div class='mt-20'>4. Include the FusionCharts theme file to apply the style to the charts.</div>
+<div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
 <pre><code class="custom-hlc language-html">
 &lt;head&gt;
         &lt;!-- jQuery --&gt;
@@ -174,7 +174,7 @@ To render the chart, follow the steps below:
 
 4. Include all charts from FusionCharts.
 
-5. Include the FusionCharts theme file to apply the style to the charts.
+5. Include the FusionCharts theme file to apply style to the charts.
 
 6. Add the FusionCharts and the theme as a dependency to the core.
 

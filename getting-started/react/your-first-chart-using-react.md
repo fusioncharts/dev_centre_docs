@@ -75,7 +75,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
         <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
         <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
         <li>Include the `react-fusioncharts` component.</li>
-        <li>Include the FusionCharts theme file to apply the style to the charts.</li>
+        <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>
 </div>
 <div>The consolidated code is shown below:</div>

@@ -75,7 +75,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
         <li>Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
         <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
         <li>Include the `react-fusioncharts` component.</li>
-        <li>Include the FusionCharts theme file to apply the style to the charts.</li>
+        <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>
 </div>
 <div>The consolidated code is shown below:</div>
@@ -172,9 +172,9 @@ In the above JSON:
 
 * Specify the hex code of the color within the `color` array.
 
-* Create the `dials` array to represent the customer satisfaction score.
+* Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` array under the `dials` array and set the value of the dial.
+* Create the `dial` object under `dials` object to set the value of the dial in an array.
 
 The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
@@ -192,7 +192,7 @@ To render the gauge, follow the steps below:
 
 4. Include gauge type.
 
-5. Include the FusionCharts theme file to apply the style to the charts.
+5. Include the FusionCharts theme file to apply style to the charts.
 
 6. Add the gauge and the theme as a dependency to the core.
 

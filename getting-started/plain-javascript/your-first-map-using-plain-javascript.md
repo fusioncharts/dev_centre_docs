@@ -36,7 +36,7 @@ Install **FusionCharts** using any of the following steps:
         <li>Include the **FusionCharts** JavaScript files from CDN.</li>
         <li>Include the FusionCharts map renderer.</li>
         <li>Include the map definition file.</li>
-        <li>Include the FusionCharts theme file to apply the style to the charts.</li>
+        <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>
 </div>
 <div>The code is shown below:</div>
@@ -62,7 +62,7 @@ Install **FusionCharts** using any of the following steps:
         <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
         <li>Include the FusionCharts map renderer.</li>
         <li>Include the map definition file.</li>
-        <li>Include the FusionCharts theme file to apply the style to the charts.</li>
+        <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>
 </div>
 <div>The code is shown below:</div>
@@ -205,7 +205,7 @@ To render the map follow the steps below:
 
 3. Include the map definition file.
 
-4. Include the FusionCharts theme file to apply the style to the charts.
+4. Include the FusionCharts theme file to apply style to the charts.
 
 5. Add the map renderer, map definition and the theme as a dependency to the core.
 
@@ -834,7 +834,7 @@ That's it! The **California** map is ready.
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click here to get in touch with our support team.
+* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](support@fusioncharts.com) to get in touch with our support team.
 
 * If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
 

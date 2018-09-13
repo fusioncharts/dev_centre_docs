@@ -54,7 +54,7 @@ Install **FusionCharts** using any of the following steps:
 <div>
     <ol>
         <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
-        <li>Include the FusionCharts theme file to apply the style to the charts.</li>
+        <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>
 </div>
 <div>The code is shown below:</div>
@@ -161,7 +161,7 @@ To render the chart, follow the steps below:
 
 2. Include the chart type.
 
-3. Include the FusionCharts theme file to apply the style to the charts.
+3. Include the FusionCharts theme file to apply style to the charts.
 
 4. Add the chart and the theme as a dependency to the core.
 
@@ -188,6 +188,7 @@ The consolidated code is shown below:
     <li>FusionCharts ES module</li>
     <li>FusionCharts CJS module</li>
 </ul>
+<div  class='mt-30'><strong>The steps to render the chart for both the modules are shown below:</strong></div>
 <h4>ES6</h4>
 <pre><code class="custom-hlc language-javascript">
 // Include the core fusioncharts file from core  -
@@ -464,7 +465,7 @@ That's it! Your first chart using Plain JavaScript is ready.
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click here to get in touch with our support team.
+* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](support@fusioncharts.com) to get in touch with our support team.
 
 * If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
 

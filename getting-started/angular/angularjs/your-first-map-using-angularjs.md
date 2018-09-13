@@ -78,7 +78,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
         <li>Include the FusionCharts map renderer.</li>
         <li>Include the map definition file.</li>
         <li>Include the `angularjs-fusioncharts` directive.</li>
-        <li>Include the FusionCharts theme file to apply the style to the charts.</li>
+        <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>
 </div>
 <div>The consolidated code is shown below:</div>
@@ -231,7 +231,7 @@ To render the map follow the steps below:
 
 6. Include the map definition file.
 
-7. Include the FusionCharts theme file to apply the style to the charts.
+7. Include the FusionCharts theme file to apply style to the charts.
 
 8. Add the map and the theme as a dependency to the core.
 

@@ -39,7 +39,7 @@ $ npm install fusioncharts --save
 <div class='mt-20'>1. Include [Vue](https://vuejs.org/)core library.</div>
 <div class='mt-20'>2. Include the `vue-fusioncharts` component.</div>
 <div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
-<div class='mt-20'>4. Include the FusionCharts theme file to apply the style to the charts.</div>
+<div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
 <pre><code class="custom-hlc language-html">
 &lt;head&gt;
     &lt;!-- Step 1 - Including vue  --&gt;
@@ -60,7 +60,7 @@ $ npm install fusioncharts --save
 <div class='mt-20'>1. Include [Vue](https://vuejs.org/)core library.</div>
 <div class='mt-20'>2. Include the `vue-fusioncharts` component.</div>
 <div class='mt-20'>3. Include the <strong>FusionCharts</strong> JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</div>
-<div class='mt-20'>4. Include the FusionCharts theme file to apply the style to the charts.</div>
+<div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
 <pre><code class="custom-hlc language-html">
 &lt;head&gt;
     &lt;!-- Step 1 - Including vue  --&gt;
@@ -152,9 +152,9 @@ In the above JSON:
 
 * Specify the hex code of the color within the `color` array.
 
-* Create the `dials` array to represent the customer satisfaction score.
+* Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` array under the `dials` array and set the value of the dial.
+* Create the `dial` object under `dials` object to set the value of the dial in an array.
 
 The chart object and the respective arrays contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the gauge.
 
@@ -172,7 +172,7 @@ To render the gauge, follow the steps below:
 
 4. Include the chart type.
 
-5. Include the FusionCharts theme file to apply the style to the charts.
+5. Include the FusionCharts theme file to apply style to the charts.
 
 6. Register the `vue-fusionCharts` component.
 

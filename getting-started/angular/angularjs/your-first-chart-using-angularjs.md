@@ -71,7 +71,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
         <li>Include the [AngularJS](https://angularjs.org/) core library.
         <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
         <li>Include the `angularjs-fusioncharts` directive.</li>
-        <li>Include the FusionCharts theme file to apply the style to the charts.</li>
+        <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>
 </div>
 <div>The consolidated code is shown below:</div>
@@ -188,7 +188,7 @@ To render the chart, follow the steps below:
 
 5. Include the chart type.
 
-6. Include the FusionCharts theme file to apply the style to the charts.
+6. Include the FusionCharts theme file to apply style to the charts.
 
 7. Add the chart and the theme as a dependency to the core.
 

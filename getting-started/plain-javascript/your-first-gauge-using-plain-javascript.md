@@ -41,9 +41,9 @@ Install **FusionCharts** using any of the following steps:
 <pre><code class="custom-hlc language-javascript">
 &lt;head&gt;
     &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Step 2 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -54,7 +54,7 @@ Install **FusionCharts** using any of the following steps:
 <div>
     <ol>
         <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
-        <li>Include the FusionCharts theme file to apply the style to the charts.</li>
+        <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>
 </div>
 <div>The code is shown below:</div>
@@ -146,9 +146,9 @@ In the above JSON:
 
 * Specify the hex code of the color within the `color` array.
 
-* Create the `dials` array to represent the customer satisfaction score.
+* Create the `dials` object to represent the customer satisfaction score.
 
-* Create the `dial` array under the `dials` array and set the value of the dial.
+* Create the `dial` object under `dials` object to set the value of the dial in an array.
 
 The chart object and the respective arrays contain a set of key-value pairs known as `attributes`. These attributes are used to set the functional and cosmetic properties of the gauge.
 
@@ -162,12 +162,12 @@ To render the gauge, follow the steps below:
 
 2. Include the gauge type.
 
-3. Include the FusionCharts theme file to apply the style to the charts.
+3. Include the FusionCharts theme file to apply style to the charts.
 
 4. Add the chart and the theme as a dependency to the core.
 
 5. Store the chart configurations in a JSON object. In this JSON object:
-    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height (in pixels). 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
@@ -189,7 +189,7 @@ The consolidated code is shown below:
     <li>FusionCharts ES module</li>
     <li>FusionCharts CJS module</li>
 </ul>
-<div  class='mt-30'><strong>The installation steps for both the modules are shown below:</strong></div>
+<div  class='mt-30'><strong>The steps to render the gauge for both the modules are shown below:</strong></div>
 <h4>ES6</h4>
 <pre><code class="custom-hlc language-javascript">
 // Include the core fusioncharts file from core  -
@@ -310,8 +310,8 @@ gaugeInstance.render();
 &lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;My first gauge using FusionWidgets XT&lt;/title&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
     &lt;script type="text/javascript"&gt;
         FusionCharts.ready(function() {
             var csatGauge = new FusionCharts({
@@ -437,7 +437,7 @@ That's it! Your first gauge using Plain JavaScript is ready.
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click here to get in touch with our support team.
+* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](support@fusioncharts.com) to get in touch with our support team.
 
 * If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
 
