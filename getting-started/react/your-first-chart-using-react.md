@@ -297,12 +297,19 @@ ReactDOM.render(
 <pre><code class="custom-hlc language-javascript">
 &lt;html&gt;
 &lt;head&gt;
+    &lt;!-- Including react --&gt;
     &lt;script type="text/javascript" src=" https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script>
+    &lt;!-- Including react-dom --&gt;
     &lt;script type="text/javascript" src=" https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script>
+    &lt;!-- Including babel --&gt;
     &lt;script type="text/javascript" src=" https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script>
+    &lt;!-- Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;!-- Including the fusioncharts library to render charts --&gt;
     &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.charts.js"&gt;&lt;/script>
+    &lt;!-- Including react-fusioncharts component --&gt;
     &lt;script type="text/javascript" src=" https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script>
+    &lt;!-- Including the fusion theme --&gt;
     &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
     &lt;script type="text/jsx"&gt;
     ReactFC.fcRoot(FusionCharts);
@@ -371,13 +378,20 @@ ReactDOM.render(
 <pre><code class="custom-hlc language-javascript">
 &lt;html&gt;
 &lt;head&gt;
+    &lt;!-- Including react --&gt;
     &lt;script type="text/javascript" src="path/to/local/react.development.js"&gt;&lt;/script&gt;
+    &lt;!-- Including react-dom --&gt;
     &lt;script type="text/javascript" src="path/to/local/react-dom.development.js"&gt;&lt;/script&gt;
+    &lt;!-- Including babel --&gt;
     &lt;script type="text/javascript" src="path/to/local/babel.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Including the fusioncharts library to render charts --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.charts.js"&gt;&lt;/script&gt;
+    &lt;!-- Including react-fusioncharts component --&gt;
     &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.min.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src=" path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;!-- Including the fusion theme --&gt;
+    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
     &lt;script type="text/jsx"&gt;
     ReactFC.fcRoot(FusionCharts);
     const chartConfigs = {
