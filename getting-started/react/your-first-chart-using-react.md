@@ -297,68 +297,71 @@ ReactDOM.render(
 <pre><code class="custom-hlc language-javascript">
 &lt;html&gt;
 &lt;head&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script &gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script &gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script &gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script &gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
-&lt;script type="text/javascript"&gt;
-const chartConfigs = {
-    type: 'column2d',
-    renderAt: 'chart-container',
-    width: '700',
-    height: '400',
-    dataFormat: 'json',
-    dataSource: {
-        // Chart Configuration
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion",
-        },
-        // Chart Data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    }
-};
-&lt;/script&gt;
-&lt;script type="text/jsx"&gt;
-ReactDOM.render(
-    &lt;ReactFC {...chartConfigs} /&gt;,
-    document.getElementById('chart-container')
-);
-&lt;/script&gt;
+    &lt;script type="text/javascript" src=" https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.charts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/jsx"&gt;
+    ReactFC.fcRoot(FusionCharts);
+    const chartConfigs = {
+        type: 'column2d',
+        renderAt: 'chart-container',
+        width: '700',
+        height: '400',
+        dataFormat: 'json',
+        dataSource: {
+            // Chart Configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+            },
+            // Chart Data
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
+        }
+    };
+    &lt;/script&gt;
+    &lt;script type="text/jsx"&gt;
+    ReactDOM.render(
+        &lt;ReactFC {...chartConfigs} /&gt;,
+        document.getElementById('chart-container')
+    );
+    &lt;/script&gt;
 &lt;/head&gt;
+&lt;body&gt;
+    &lt;div id='chart-container'&gt;&lt;/div&gt;
+&lt;/body&gt;
 &lt;/html&gt;
-
-
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -368,66 +371,70 @@ ReactDOM.render(
 <pre><code class="custom-hlc language-javascript">
 &lt;html&gt;
 &lt;head&gt;
-    &lt;script type="text/javascript" src="path/to/local/react.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-dom.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="path/to/local/babel-core.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/react.development.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-dom.development.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/babel.min.js"&gt;&lt;/script&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.charts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="path/to/local/react-fusioncharts.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src=" path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/jsx"&gt;
+    ReactFC.fcRoot(FusionCharts);
+    const chartConfigs = {
+        type: 'column2d',
+        renderAt: 'chart-container',
+        width: '700',
+        height: '400',
+        dataFormat: 'json',
+        dataSource: {
+            // Chart Configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+            },
+            // Chart Data
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
+        }
+    };
+    &lt;/script&gt;
+    &lt;script type="text/jsx"&gt;
+    ReactDOM.render(
+        &lt;ReactFC {...chartConfigs} /&gt;,
+        document.getElementById('chart-container')
+    );
+    &lt;/script&gt;
 &lt;/head&gt;
-&lt;script type="text/javascript"&gt;
-const chartConfigs = {
-    type: 'column2d',
-    renderAt: 'chart-container',
-    width: '700',
-    height: '400',
-    dataFormat: 'json',
-    dataSource: {
-        // Chart Configuration
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion",
-        },
-        // Chart Data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    }
-};
-&lt;/script&gt;
-&lt;script type="text/jsx"&gt;
-ReactDOM.render(
-    &lt;ReactFC {...chartConfigs} /&gt;,
-    document.getElementById('chart-container')
-);
-&lt;/script&gt;
-&lt;/head&gt;
+&lt;body&gt;
+    &lt;div id='chart-container'&gt;&lt;/div&gt;
+&lt;/body&gt;
 &lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
