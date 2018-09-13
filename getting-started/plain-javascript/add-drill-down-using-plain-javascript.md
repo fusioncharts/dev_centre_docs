@@ -16,10 +16,6 @@ Create linked charts by following the steps given below:
 
 Once you implement these steps, the FusionCharts JavaScript class takes care of the rest.
 
-
-
-
-
 ### Features of the FusionCharts JavaScript Class
 
 * Automatically creates and shows a detailed descendant chart when you click on the corresponding data plot item linked in the parent chart
