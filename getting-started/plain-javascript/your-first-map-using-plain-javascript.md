@@ -43,13 +43,13 @@ Install **FusionCharts** using any of the following steps:
 <pre><code class="custom-hlc language-javascript">
 &lt;head&gt;
     &lt;!-- Step 1 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Step 2 - Including the map renderer file --&gt;
     &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js "&gt;&lt;/script&gt;
     &lt;!-- Step 3 - Including the map definition file --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/ fusioncharts.world.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.world.js"&gt;&lt;/script&gt;
     &lt;!-- Step 4 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -211,7 +211,7 @@ To render the map follow the steps below:
 
 6. Store the chart configurations as a JSON object. In this JSON object:
 
-    * Set the map type as world. Each chart type is represented with a unique map alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
+    * Set the map type as `world`. Each chart type is represented with a unique map alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
     * Set the width and height (in pixels). 
 
@@ -236,7 +236,7 @@ The consolidated code is shown below:
     <li>FusionCharts ES module</li>
     <li>FusionCharts CJS module</li>
 </ul>
-<div  class='mt-30'><strong>The installation steps for both the modules are shown below:</strong></div>
+<div  class='mt-30'><strong>The steps to render a map for both the modules are shown below:</strong></div>
 <h4>ES6</h4>
 <pre><code class="custom-hlc language-javascript">
 // Include the core fusioncharts file from core  -
@@ -410,9 +410,9 @@ annualPopulation.render();
 &lt;html&gt;
 &lt;head&gt;
     &lt;title&gt;My First map using FusionCharts Suite XT&lt;/title&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
     &lt;script type="text/javascript"&gt;
         FusionCharts.ready(function() {
             var annualPopulation = new FusionCharts({
@@ -614,7 +614,7 @@ After installing `fusionmaps` package, the code to render the map of **Californi
     <li>FusionCharts ES module</li>
     <li>FusionCharts CJS module</li>
 </ul>
-<div  class='mt-30'><strong>The installation steps for both the modules are shown below:</strong></div>
+<div  class='mt-30'><strong>The steps to render a map for both the modules are shown below:</strong></div>
 <h4>ES6</h4>
 <pre><code class="custom-hlc language-javascript">
 // Include the core fusioncharts file from core  -
