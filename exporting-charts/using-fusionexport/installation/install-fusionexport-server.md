@@ -6,7 +6,7 @@ heading: Install FusionExport Server
 chartPresent: False
 ---
 
-FusionExport server accepts export requests from FusionExport CLI, SDK clients, and browsers.
+FusionExport server accepts export requests from [FusionExport CLI]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-cli), [SDK clients]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks), and browsers.
 
 Download FusionExport from [here](https://fusioncharts.com/download/fusionexport).
 
