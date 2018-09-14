@@ -126,13 +126,13 @@ In this example, we will use the JSON format as shown below:
 {
     // Map Configuration
     "chart": {
-        "caption": "Average Annual Population Growth",
-        "subcaption": " 1955-2015",
-        "numbersuffix": "%",
-        "includevalueinlabels": "1",
-        "labelsepchar": ": ",
-        "entityFillHoverColor": "#FFF9C4",
-        "theme": "fusion"
+            "caption": "Average Annual Population Growth",
+            "subcaption": " 1955-2015",
+            "numbersuffix": "%",
+            "includevalueinlabels": "1",
+            "labelsepchar": ": ",
+            "entityFillHoverColor": "#FFF9C4",
+            "theme": "fusion"
     },
     // Aesthetics; ranges synced with the slider
     "colorrange": {
