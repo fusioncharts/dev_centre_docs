@@ -200,7 +200,7 @@ var $ = require('jquery');
 var FusionCharts = require('fusioncharts');
 var jQueryFusionCharts = require('jquery-fusioncharts');
 var Charts = require('fusioncharts/fusioncharts.charts');
-var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.ocean')
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion')
 
 Charts(FusionCharts);
 FusionTheme(FusionCharts);
@@ -222,7 +222,7 @@ $('document').ready(function () {
                 "xAxisName": "Country",
                 "yAxisName": "Reserves (MMbbl)",
                 "numberSuffix": "K",
-                "theme":"ocean"
+                "theme":"fusion"
             },
             "data": [{
                 "label": "Venezuela",
