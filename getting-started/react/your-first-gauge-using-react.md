@@ -299,19 +299,19 @@ ReactDOM.render(
 &lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including react --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="  https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script>
     &lt;!-- Including react-dom --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="  https://unpkg.com/react-dom@16/umd/react-dom.development.js"&gt;&lt;/script> 
     &lt;!-- Including babel --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="  https://unpkg.com/babel-standalone@6/babel.min.js"&gt;&lt;/script> 
     &lt;!-- Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="  http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script> 
     &lt;!-- Including the fusioncharts library to render charts --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.widgets.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="  http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.charts.js"&gt;&lt;/script> 
     &lt;!-- Including react-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="  https://unpkg.com/react-fusioncharts@2.0.1/dist/react-fusioncharts.min.js"&gt;&lt;/script> 
     &lt;!-- Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="  http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script> 
     &lt;script type="text/jsx"&gt;
     ReactFC.fcRoot(FusionCharts);
     const chartConfigs = {
@@ -321,41 +321,37 @@ ReactDOM.render(
         height: '250',
         dataFormat: 'json',
         dataSource: {
-            // Gauge Configuration
+            // Chart Configuration
             "chart": {
-                "caption": "Countries With Most Oil Reserves [2017-18]",
-                "subCaption": "In MMbbl = One Million barrels",
-                "xAxisName": "Country",
-                "yAxisName": "Reserves (MMbbl)",
-                "numberSuffix": "K",
+                "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+                "lowerLimit": "0",
+                "upperLimit": "100",
+                "showValue": "1",
+                "numberSuffix": "%",
                 "theme": "fusion",
+                "showToolTip": "0"
             },
             // Chart Data
-            "data": [{
-                "label": "Venezuela",
-                "value": "290"
-            }, {
-                "label": "Saudi",
-                "value": "260"
-            }, {
-                "label": "Canada",
-                "value": "180"
-            }, {
-                "label": "Iran",
-                "value": "140"
-            }, {
-                "label": "Russia",
-                "value": "115"
-            }, {
-                "label": "UAE",
-                "value": "100"
-            }, {
-                "label": "US",
-                "value": "30"
-            }, {
-                "label": "China",
-                "value": "30"
-            }]
+            "colorRange": {
+                "color": [{
+                    "minValue": "0",
+                    "maxValue": "50",
+                    "code": "#F2726F"
+                }, {
+                    "minValue": "50",
+                    "maxValue": "75",
+                    "code": "#FFC533"
+                }, {
+                    "minValue": "75",
+                    "maxValue": "100",
+                    "code": "#62B58F"
+                }]
+            },
+            "dials": {
+                "dial": [{
+                    "value": "81"
+                }]
+            }
         }
     };
     &lt;/script&gt;
