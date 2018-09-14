@@ -220,75 +220,81 @@ The consolidated code is shown below:
 <div class='tab npm-tab active'>
 
 <pre><code class="custom-hlc language-javascript">
+
 // Step 1 - Including react
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Step 2 - Including the react-fusioncharts component
+
 import ReactFC from 'react-fusioncharts';
 
 // Step 3 - Including the fusioncharts library
 import FusionCharts from 'fusioncharts/core';
 
 // Step 4 - Including the chart type
-import AngularGauge from 'fusioncharts/viz/angulargauge';
+import Widgets from 'fusioncharts/viz/angulargauge';
 
 // Step 5 - Including the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-// Step 6 - Adding the gauge as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, AngularGauge, FusionTheme);
+// Step 6 - Adding the chart as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, Widgets, FusionTheme);
 
 // Step 7 - Creating the JSON object to store the chart configurations
+
 const chartConfigs = {
     type: 'angulargauge', // The gauge type
     width: '450', // Width of the gauge
     height: '250', // Height of the gauge
     dataFormat: 'json', // Data type
     dataSource: {
-        // Gauge Configuration
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion",
-        },
-        // Chart Data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    }
+    // Chart Configuration
+      "chart": {
+          "caption": "Nordstorm's Customer Satisfaction Score for 2017",
+          "lowerLimit": "0",
+          "upperLimit": "100",
+          "showValue": "1",
+          "numberSuffix": "%",
+          "theme": "fusion",
+          "showToolTip": "0"
+      },
+      // Chart Data
+      "colorRange": {
+          "color": [{
+              "minValue": "0",
+              "maxValue": "50",
+              "code": "#F2726F"
+          }, {
+              "minValue": "50",
+              "maxValue": "75",
+              "code": "#FFC533"
+          }, {
+              "minValue": "75",
+              "maxValue": "100",
+              "code": "#62B58F"
+          }]
+      },
+      "dials": {
+          "dial": [{
+              "value": "81"
+          }]
+      }
+  }
 };
 
-// Step 8 - Creating the DOM element to pass the react-fusioncharts component
-ReactDOM.render(
-    <ReactFC {...chartConfigs} />,
-    document.getElementById('root'),
-);
+// Step 8 - Creating the DOM element to pass the react-fusioncharts component 
+class App extends React.Component {
+  render() {
+     return (
+     &lt;ReactFC
+        {...chartConfigs}/&gt;
+     );
+  }
+}
+
+export default App
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
