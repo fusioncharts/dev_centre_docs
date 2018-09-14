@@ -192,7 +192,7 @@ var $ = require('jquery');
 var FusionCharts = require('fusioncharts');
 var jQueryFusionCharts = require('jquery-fusioncharts');
 var Widgets = require('fusioncharts/fusioncharts.widgets');
-var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.ocean');
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 Widgets(FusionCharts);
 FusionTheme(FusionCharts);
 // Render the chart using insertFusionCharts method
@@ -215,7 +215,7 @@ $('document').ready(function () {
         "numberSuffix": "%",
         "theme": "fusion",
         "showToolTip": "0",
-        "theme": "ocean"
+        "theme": "fusion"
       },
       // Chart Data
       "colorRange": {
