@@ -331,7 +331,9 @@ chartInstance.render();
 &lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
+&lt;!-- Include fusioncharts core library --&gt;
 &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+&lt;!-- Include fusion theme --&gt;
 &lt;script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;script type="text/javascript"&gt;
     FusionCharts.ready(function(){
@@ -397,7 +399,9 @@ chartInstance.render();
 &lt;html&gt;
 &lt;head&gt;
 &lt;title&gt;My first chart using FusionCharts Suite XT&lt;/title&gt;
+&lt;!-- Include fusioncharts core library --&gt;
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;!-- Include fusion theme --&gt;
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;script type="text/javascript"&gt;
     FusionCharts.ready(function(){
