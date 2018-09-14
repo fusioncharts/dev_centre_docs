@@ -42,16 +42,15 @@ $ npm install fusioncharts --save
 <div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
 <pre><code class="custom-hlc language-html">
 &lt;head&gt;
-        &lt;!-- jQuery --&gt;
-        &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
-        &lt;!-- FusionCharts --&gt;
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;!-- jQuery-FusionCharts --&gt;
-        &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
-        &lt;!-- Fusion Theme --&gt;
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-
-    &lt;/head&gt;
+    &lt;!-- jQuery --&gt;
+    &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script>
+    &lt;!-- FusionCharts --&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+    &lt;!-- jQuery-FusionCharts --&gt;
+    &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script>
+    &lt;!-- Fusion Theme --&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+&lt;/head&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -64,15 +63,15 @@ $ npm install fusioncharts --save
 <div class='mt-20'>4. Include the FusionCharts theme file to apply style to the charts.</div>
 <pre><code class="custom-hlc language-html">
 &lt;head&gt;
-        &lt;!-- jQuery --&gt;
-        &lt;script type="text/javascript" src="path/to/local/jquery.min.js"&gt;&lt;/script&gt;
-        &lt;!-- FusionCharts --&gt;
-        &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;!-- jQuery-FusionCharts --&gt;
-        &lt;script type="text/javascript" src="path/to/local/jquery-fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;!-- Fusion Theme --&gt;
-        &lt;script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
-    &lt;/head&gt;
+    &lt;!-- jQuery --&gt;
+    &lt;script type="text/javascript" src="path/to/local/jquery.min.js"&gt;&lt;/script&gt;
+    &lt;!-- FusionCharts --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- jQuery-FusionCharts --&gt;
+    &lt;script type="text/javascript" src="path/to/local/jquery-fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;!-- Fusion Theme --&gt;
+    &lt;script type="text/javascript" src="path/to/local/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -330,13 +329,13 @@ $('document').ready(function () {
 &lt;html&gt;
     &lt;head&gt;
         &lt;!-- Include jQuery --&gt;
-        &lt;script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/jquery-3.3.1.min.js"&gt;&lt;/script&gt;
         &lt;!-- Include fusioncharts core library file --&gt;
         &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
         &lt;!-- Include fusion theme file --&gt;
         &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
         &lt;!-- Include fusioncharts jquery plugin --&gt;
-        &lt;script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
+        &lt;script type="text/javascript" src="path/to/local/fusioncharts.jqueryplugin.min.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
     &lt;body&gt;
         &lt;script type="text/javascript"&gt;

@@ -43,13 +43,13 @@ $ npm install fusioncharts --save
 <pre><code class="custom-hlc language-html">
 &lt;head&gt;
     &lt;!-- Step 1 - Including vue  --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script &gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script>
     &lt;!-- Step 2 - Including vue-fusioncharts component --&gt;
-    &lt;script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script>
     &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;!-- Step 4 - Including the fusion theme --&gt;
-    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -92,7 +92,6 @@ The angular gauge is shown below:
 {% embed_chart getting-started-your-first-widget.js %}
 
 The thresholds for the above sample have been defined using the following range:
-
 
 Range|Color|Hex Code||
 -|-|-|-
@@ -263,14 +262,14 @@ var app = new Vue({
 <pre><code class="custom-hlc language-html">
 &lt;html&gt;
 &lt;head&gt;
-    &lt;!-- Step 1 - Including vue  --&gt;
+    &lt;!-- Including vue  --&gt;
     &lt;script type="text/javascript" src=" https://unpkg.com/vue@2.3.3"&gt;&lt;/script>
-    &lt;!-- Step 2 - Including vue-fusioncharts component --&gt;
+    &lt;!-- Including vue-fusioncharts component --&gt;
     &lt;script type="text/javascript" src=" https://unpkg.com/vue-fusioncharts/dist/vue-fusioncharts.min.js"&gt;&lt;/script>
-    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
+    &lt;!-- Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
     &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.widgets.js"&gt;&lt;/script>    
-    &lt;!-- Step 4 - Including the fusion theme --&gt;
+    &lt;!-- Including the fusion theme --&gt;
     &lt;script type="text/javascript" src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 &lt;body&gt;
@@ -333,14 +332,14 @@ var app = new Vue({
 <pre><code class="custom-hlc language-html">
 &lt;html&gt;
 &lt;head&gt;
-    &lt;!-- Step 1 - Including vue  --&gt;
+    &lt;!-- Including vue  --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script&gt;
-    &lt;!-- Step 2 - Including vue-fusioncharts component --&gt;
+    &lt;!-- Including vue-fusioncharts component --&gt;
     &lt;script type="text/javascript" src="path/to/local/vue-fusioncharts.min.js"&gt;&lt;/script&gt;
-    &lt;!-- Step 3 - Including the fusioncharts core library --&gt;
+    &lt;!-- Including the fusioncharts core library --&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
     &lt;script type="text/javascript" src="path/to/local/fusioncharts.widgets.js"&gt;&lt;/script&gt;    
-    &lt;!-- Step 4 - Including the fusion theme --&gt;
+    &lt;!-- Including the fusion theme --&gt;
     &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
