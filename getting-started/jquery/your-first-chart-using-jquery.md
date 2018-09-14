@@ -196,19 +196,16 @@ To render the chart, follow the steps below:
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 <pre><code class="custom-hlc language-javascript">
+var $ = require('jquery');
 var FusionCharts = require('fusioncharts');
-var jQuery = require('jquery');
-
 var jQueryFusionCharts = require('jquery-fusioncharts');
-
-var FusionCharts = require('fusioncharts');
 var Charts = require('fusioncharts/fusioncharts.charts');
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.ocean')
 
 Charts(FusionCharts);
-
 FusionTheme(FusionCharts);
 
-// Render the chart using `insertFusionCharts` method
+// Render the chart using insertFusionCharts method
 
 $('document').ready(function () {
 
@@ -217,13 +214,15 @@ $('document').ready(function () {
         width: "700",
         height: "400",
         dataFormat: "json",
+        renderAt:"chart-container",
         dataSource: {
             "chart": {
                 "caption": "Countries With Most Oil Reserves [2017-18]",
                 "subCaption": "In MMbbl = One Million barrels",
                 "xAxisName": "Country",
                 "yAxisName": "Reserves (MMbbl)",
-                "numberSuffix": "K"
+                "numberSuffix": "K",
+                "theme":"ocean"
             },
             "data": [{
                 "label": "Venezuela",
