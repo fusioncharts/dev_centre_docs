@@ -126,13 +126,13 @@ In this example, we will use the JSON format as shown below:
 {
     // Map Configuration
     "chart": {
-        "caption": "Average Annual Population Growth",
-        "subcaption": " 1955-2015",
-        "numbersuffix": "%",
-        "includevalueinlabels": "1",
-        "labelsepchar": ": ",
-        "entityFillHoverColor": "#FFF9C4",
-        "theme": "fusion"
+            "caption": "Average Annual Population Growth",
+            "subcaption": " 1955-2015",
+            "numbersuffix": "%",
+            "includevalueinlabels": "1",
+            "labelsepchar": ": ",
+            "entityFillHoverColor": "#FFF9C4",
+            "theme": "fusion"
     },
     // Aesthetics; ranges synced with the slider
     "colorrange": {
@@ -214,9 +214,9 @@ To render the map follow the steps below:
 
 7. Register the `VueFusionCharts` component
 
-8. Store the chart configurations in a JSON object. In this JSON object:
+8. Store the map configurations in a JSON object. In this JSON object:
 
-    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the map type as `world`. Each map is represented with a unique chart alias. For World Map, the alias is `world`. Find the complete list of maps with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
     * Set the width and height (in pixels). 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of the `dataSource`.
