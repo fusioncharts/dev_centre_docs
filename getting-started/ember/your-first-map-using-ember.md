@@ -70,15 +70,16 @@ We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/
  In this example, we will use the JSON format as shown below:
 
 ```JSON
-
 {
     // Map Configuration
     "chart": {
-        "caption": "Average Annual Population Growth",
-        "subcaption": " 1955-2015",
-        "numbersuffix": "%",
-        "includevalueinlabels": "1",
-        ...
+            "caption": "Average Annual Population Growth",
+            "subcaption": " 1955-2015",
+            "numbersuffix": "%",
+            "includevalueinlabels": "1",
+            "labelsepchar": ": ",
+            "entityFillHoverColor": "#FFF9C4",
+            "theme": "fusion"
     },
     // Aesthetics; ranges synced with the slider
     "colorrange": {
@@ -93,9 +94,11 @@ We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/
             "minvalue": "1.0",
             "maxvalue": "2.0",
             "color": "#FB8C00"
-        }, …
-
-]
+        }, {
+            "minvalue": "2.0",
+            "maxvalue": "3.0",
+            "color": "#E65100"
+        }]
     },
     // Source data as JSON --> id represents countries of world.
     "data": [{
@@ -110,10 +113,20 @@ We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/
         "id": "AS",
         "value": "1.78",
         "showLabel": "1"
-    }, …
-
+    }, {
+        "id": "EU",
+        "value": ".40",
+        "showLabel": "1"
+    }, {
+        "id": "AF",
+        "value": "2.58",
+        "showLabel": "1"
+    }, {
+        "id": "AU",
+        "value": "1.30",
+        "showLabel": "1"
+    }]
 }
-
 ```
 
 In the above JSON data: 
