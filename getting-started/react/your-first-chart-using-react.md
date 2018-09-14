@@ -216,6 +216,7 @@ The consolidated code is shown below:
 <div class='tab npm-tab active'>
 
 <pre><code class="custom-hlc language-javascript">
+
 // Step 1 - Including react
 
 import React from 'react';
@@ -284,10 +285,16 @@ const chartConfigs = {
 };
 
 // Step 8 - Creating the DOM element to pass the react-fusioncharts component 
-ReactDOM.render(
-    &lt;ReactFC {...chartConfigs} /&gt;,
-    document.getElementById('root'),
-);
+class App extends React.Component {
+  render() {
+     return (
+     &lt;ReactFC
+        {...chartConfigs}/&gt;
+     );
+  }
+}
+
+export default App
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
