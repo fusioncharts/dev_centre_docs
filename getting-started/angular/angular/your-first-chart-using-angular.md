@@ -181,6 +181,8 @@ Refer to the code below:
 <pre><code class="custom-hlc language-javascript">
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 
@@ -189,12 +191,27 @@ import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Import FusionCharts library and chart modules
 import \* as FusionCharts from 'fusioncharts';
-import \*  as Charts from 'fusioncharts/fusioncharts.charts';
+import \* as Charts from 'fusioncharts/fusioncharts.charts';
 
 import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Pass the fusioncharts library and chart modules
 FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    HttpModule,
+    FusionChartsModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -211,7 +228,7 @@ Set the JSON data within the `AppComponent` class as shown below:
 ```
 import {Component} from '@angular/core';
 @Component({
-    selector: 'app',
+    selector: 'app-root',
     templateUrl: './app.component.html',
 })
 export class AppComponent {
@@ -275,9 +292,9 @@ Create the chart container and set the following:
 </h1>
 
 <fusioncharts
-    width="700" //chart width
-    height="400" //chart height
-    type="Column2d" // chart type
+    width="700"
+    height="400" 
+    type="Column2d"
     [dataSource]="dataSource">
 </fusioncharts> 
 
