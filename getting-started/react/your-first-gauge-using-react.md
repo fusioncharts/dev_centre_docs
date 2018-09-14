@@ -198,7 +198,7 @@ To render the gauge, follow the steps below:
 
 7. Store the chart configurations as a JSON object. In this JSON object:
 
-    * Set the gauge type as `angulargauge`.  Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the gauge type as `angulargauge`.  Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt-8).
 
     * Set the width and height (in pixels). 
 
@@ -209,7 +209,6 @@ To render the gauge, follow the steps below:
 8. Create the DOM element and pass the `react-fusioncharts` component directly to the **ReactDOM.render()** method.
 
 The consolidated code is shown below:
-
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>

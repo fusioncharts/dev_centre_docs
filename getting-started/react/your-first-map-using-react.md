@@ -220,9 +220,9 @@ To render the map follow the steps below:
 
 8. Add the map renderer, map definition and the theme as a dependency to the core.
 
-9. Store the chart configurations as a JSON object. In this JSON object:
+9. Store the map configurations as a JSON object. In this JSON object:
 
-    * Set the map type as world. Each chart type is represented with a unique map alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
+    * Set the map as `world`. For World map, the alias is `world`. Find the complete list of map with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
     * Set the width and height (in pixels). 
 
