@@ -1,5 +1,4 @@
 ---
-install-fusionexport-cli.html
 title: Install FusionExport CLI | FusionCharts
 description: This article focuses on how you can install the FusionExport CLI.
 heading: Install FusionExport CLI
