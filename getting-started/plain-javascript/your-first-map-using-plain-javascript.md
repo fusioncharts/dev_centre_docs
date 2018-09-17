@@ -30,7 +30,7 @@ Install **FusionCharts** using any of the following steps:
 </div>
 
 <div class='tab cdn-tab'>
-<div><strong>To install the **FusionCharts** package follow the steps below:</strong></div>
+<div><strong>To install the **FusionCharts** JS files follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the **FusionCharts** JavaScript files from CDN.</li>
@@ -56,7 +56,7 @@ Install **FusionCharts** using any of the following steps:
 </div>
 
 <div class='tab localfiles-tab'>
-<div><strong>To install the **FusionCharts** package follow the steps below:</strong></div>
+<div><strong>To install the **FusionCharts** JS files follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>

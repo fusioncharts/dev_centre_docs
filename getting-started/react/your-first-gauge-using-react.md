@@ -68,7 +68,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 
 
 <div class='tab localfiles-tab'>
-<div><strong>To install the **FusionCharts** package and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>To install the **FusionCharts** JS files and the `react-fusioncharts` component follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the [React](https://reactjs.org/)core library.</li>

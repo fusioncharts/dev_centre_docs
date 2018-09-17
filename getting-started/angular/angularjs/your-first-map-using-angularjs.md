@@ -70,7 +70,7 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 </div>
 
 <div class='tab localfiles-tab'>
-<div><strong>To install the **FusionCharts** package and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>To install the **FusionCharts** JS files and the `react-fusioncharts` component follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the [AngularJS](https://angularjs.org/) core library.
