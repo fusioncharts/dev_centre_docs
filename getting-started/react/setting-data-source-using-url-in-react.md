@@ -14,7 +14,7 @@ This article explains how you can set the chart data using the URL of the corres
 
 Let's build the same revenue chart which we built in the [first example]({% site.baseurl %}/getting-started/react/your-first-chart-using-react) using JSON, and use a .json file as the data source.
 
-{% embed_chart plain-js-setting-data-using-url-example-1.js %}
+{% embed_chartData plain-js-setting-data-using-url-example-1.js json %}
 
 The data for this chart is represented in the table below:
 
@@ -73,19 +73,30 @@ The JSON representation for the above table looks as shown below:
 
 Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your HTML page.
 
-> If you are using multi-lingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
+> If you are using multilingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
 
 The full code of the above sample is given below:
 
 ```
+//Including react
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
+//Including the react-fusioncharts component
+import ReactDOM from 'react-dom';
+
+//Including the fusioncharts library
+import FusionCharts from 'fusioncharts/core';
+
+//Including the chart type
+import Column2D from 'fusioncharts/viz/column2d';
+
+//Including the theme as fusion
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+//Adding the chart as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+
+//Creating the JSON object to store the chart configurations
 
 const chartConfigs = {
   type: 'column2d',
@@ -108,6 +119,22 @@ ReactDOM.render(
   document.getElementById('root'),
 );
 ```
+
+The above chart has been rendered using the following steps:
+
+1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
+
+3. To set the datasource using URL:
+    * The value of the `dataFormat` has been set to **jsonurl**.
+    * A static URL has been set to `dataSource` to render the above chart.
+
+4. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
@@ -134,14 +161,25 @@ Copy this into a file called `oilReserves.xml` and store it in the same folder a
 The full code of the above sample is:
 
 ```React
+//Including react
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
+//Including the react-fusioncharts component
+import ReactDOM from 'react-dom';
+
+//Including the fusioncharts library
+import FusionCharts from 'fusioncharts/core';
+
+//Including the chart type
+import Column2D from 'fusioncharts/viz/column2d';
+
+//Including the theme as fusion
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+//Adding the chart as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+
+//Creating the JSON object to store the chart configurations
 
 const chartConfigs = {
   type: 'column2d',
@@ -151,6 +189,7 @@ const chartConfigs = {
   dataSource: 'https://static.fusioncharts.com/sample/oilReserves.xml', // url of datasource
 };
 
+//Your react component
 class Chart extends Component {
   render () {
     return (
@@ -164,3 +203,17 @@ ReactDOM.render(
   document.getElementById('root'),
 );
 ```
+
+1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
+
+3. To set the datasource using URL:
+    * The value of the `dataFormat` has been set to **xmlurl**.
+    * A static URL has been set to `dataSource` to render the above chart.
+
+4. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.

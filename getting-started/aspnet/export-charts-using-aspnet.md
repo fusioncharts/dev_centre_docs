@@ -2,7 +2,6 @@
 title: Exporting Charts | FusionCharts
 description: This article focuses on how you can export your chart using react.
 heading: Exporting Charts
-chartPresent: true
 ---
 
 FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG and VML. A prominent feature of the suite is the ability to export the rendered charts in JPG, PNG, SVG, PDF formats and export chart data as well. This article focuses on how you can export charts using the React `props` object and `react-fusioncharts` component.

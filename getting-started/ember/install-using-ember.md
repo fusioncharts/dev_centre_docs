@@ -11,7 +11,7 @@ In this article, we will show you how to download and install the `ember-fusionC
 
 > Unlike other tech stacks **ember-fusioncharts** can only be used via `npm`.
 
-Before installing and starting to work with **ember-fusioncharts** component, let's get familiar with the JavaScript files present in the **FusionCharts** package:
+Before installing and starting to work with **ember-fusioncharts** component, let's get familiar with the JavaScript files present in the **FusionCharts** Suite:
 
 File Name|Description|
 -|-
@@ -34,7 +34,7 @@ File Name|Description|
 This section outlines the steps for installing **ember-fusioncharts** via npm:
 
 **Step 1:** Install `ember-fusioncharts`
-
+ 
 You can install `ember-fusioncharts` component for any of the following CLI:
 
 **Modern Ember CLI**

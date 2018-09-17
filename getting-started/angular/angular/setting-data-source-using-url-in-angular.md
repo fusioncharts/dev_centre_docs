@@ -73,7 +73,7 @@ The JSON representation for the above table looks as shown below:
 
 Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your modules.
 
-> If you are using multi-lingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
+> If you are using multilingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
 
 ### Setup the Main Module
 
@@ -113,6 +113,14 @@ export class AppModule {
 }
 ```
 
+In the above code:
+
+1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+
+2. Loaded FusionCharts, chart module and fusion theme.
+
+3. Added dependencies to `FusionChartsModule`.
+
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render the above chart in the main app.component.
 
 ### Add data to `app.component.ts`
@@ -133,6 +141,19 @@ export class AppComponent {
 }
 ```
 
+1. The JSON data is added within the `AppComponent` class.
+
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    
+3. To set the datasource using URL:
+    * The value of the `dataFormat` has been set to **jsonurl**.
+    * A static URL has been set to `dataSource` to render the above chart.
+
+4. Created a `fusioncharts` directive in a template.
+
 ### Add data to `app.component.html`
 
 Add the following code to `app.component.html`:
@@ -147,6 +168,8 @@ Add the following code to `app.component.html`:
     [dataSource]=dataSource >
 </fusioncharts>
 ```
+
+In the above code a `fusioncharts` diective is created in a template.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
@@ -208,6 +231,14 @@ export class AppModule {
 }
 ```
 
+In the above code:
+
+1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+
+2. Loaded FusionCharts, chart module and fusion theme.
+
+3. Added dependencies to `FusionChartsModule`.
+
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render the above chart in the main app.component.
 
 ### Add data to `app.component.ts`
@@ -228,6 +259,20 @@ export class AppComponent {
 }
 ```
 
+1. The XML data has been within the `AppComponent` class.
+
+2. Stored the chart configuration in an XML object. In the XML object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as XML.
+    
+3. To set the datasource using URL:
+    * The value of the `dataFormat` has been set to **xmlurl**.
+    * A static URL has been set to `dataSource` to render the above chart.
+
+4. Created a `fusioncharts` directive in a template.
+
+
 ### Add data to `app.component.html`
 
 Add the following code to `app.component.html`:
@@ -242,3 +287,5 @@ Add the following code to `app.component.html`:
     [dataSource]=dataSource >
 </fusioncharts>
 ```
+
+In the above code a `fusioncharts` diective is created in a template.

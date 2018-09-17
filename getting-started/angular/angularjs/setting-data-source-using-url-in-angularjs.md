@@ -73,12 +73,37 @@ The JSON representation for the above table looks as shown below:
 
 Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your HTML page. Create the module and the controller for the template.
 
-> If you are using multi-lingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
+> If you are using multilingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
 
 The JavaScript code is given below:
 
 ```
+//  Require AngularJS 
+var angular = require('angular');
+
+// Require FusionCharts 
+var FusionCharts = require('fusioncharts');
+
+// Include angularjs-fusioncharts 
+require('angularjs-fusioncharts');
+
+// Require Chart modules 
+var Charts = require('fusioncharts/fusioncharts.charts');
+
+// Require Fusion theme
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+// Initialize Charts with FusionCharts instance
+Charts(FusionCharts);
+
+// Initialize FusionTheme with FusionCharts instance
+FusionTheme(FusionCharts);
+
 var myApp = angular.module("myApp", ["ng-fusioncharts"]);
+
+myApp.controller('MyController', ['$scope', function($scope) {
+    $scope.dataSource = { datasource }
+}
 ```
 
 Now, use the `fusioncharts` directive in a template. The HTML template is given below:
@@ -94,6 +119,21 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
   </fusioncharts>
 </div>
 ```
+
+The above chart has been rendered using the following steps:
+
+1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
+
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+
+3. To set the datasource using URL:
+    * The value of the `dataFormat` has been set to **jsonurl**.
+    * A static URL has been set to `dataSource` to render the above chart.
+
+4. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
@@ -121,7 +161,32 @@ Copy this into a file called `oilReserves.xml` and store it in the same folder a
 The JavaScript code is given below:
 
 ```
+//  Require AngularJS 
+var angular = require('angular');
+
+// Require FusionCharts 
+var FusionCharts = require('fusioncharts');
+
+// Include angularjs-fusioncharts 
+require('angularjs-fusioncharts');
+
+// Require Chart modules 
+var Charts = require('fusioncharts/fusioncharts.charts');
+
+// Require Fusion theme
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+// Initialize Charts with FusionCharts instance
+Charts(FusionCharts);
+
+// Initialize FusionTheme with FusionCharts instance
+FusionTheme(FusionCharts);
+
 var myApp = angular.module("myApp", ["ng-fusioncharts"]);
+
+myApp.controller('MyController', ['$scope', function($scope) {
+    $scope.dataSource = { datasource }
+}
 ```
 
 Now, use the `fusioncharts` directive in a template. The HTML template is given below:
@@ -137,3 +202,18 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
   </fusioncharts>
 </div>
 ```
+
+The above chart has been rendered using the following steps:
+
+1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
+
+2. Stored the chart configuration in an XML object. In the XML object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as XML.
+
+3. To set the datasource using URL:
+    * The value of the `dataFormat` has been set to **xmlurl**.
+    * A static URL has been set to `dataSource` to render the above chart.
+
+4. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`.

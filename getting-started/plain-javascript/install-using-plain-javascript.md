@@ -2,25 +2,10 @@
 title: Installation | FusionCharts
 description: FusionCharts Suite XT is a JavaScript library that runs on your desktop and mobile web browsers.
 heading: Installation
-chartPresent: false
 ---
 
 **FusionCharts Suite XT** — the industry's most comprehensive JavaScript charting solution — is all about easing the whole process of data visualization through charts.
 
-In this article, we will show you how to download and install the **FusionCharts Suite XT**  library and all the other dependencies on your system.
-
-## Choose Your Mode of Installation:
-
-You can include FusionCharts in your project using any of the two modes given below:
-
-<table>
-    <tr>
-        <td align="center" style="border: none !important; background-color:#f3f6f9"><a href="{% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#install-using-direct-javascript-files-2"><img width="100px" height="100px" src="{% site.baseurl %}/images/Icons_JS.svg"></a></td>
-        <td align="center" style="border: none !important; background-color:#f3f6f9"><a href="{% site.baseurl %}/getting-started/plain-javascript/install-using-plain-javascript#install-fusioncharts-via-npm-5"><img width="100px" height="100px" src="{% site.baseurl %}/images/Icons_NPM.svg"></a></td>
-    </tr>
-</table>
-
-## Install using Direct JavaScript files
 
 [Download](https://www.fusioncharts.com/download/fusioncharts-suite) the `fusioncharts-suite-xt` package which contains:
 
