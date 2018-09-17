@@ -701,7 +701,7 @@ $('document').ready(function () {
 </div>
 </div>
 
-That's it! The California map is ready. 
+That's it! The **California** map is ready. 
 
 ## Problem rendering the chart?
 
