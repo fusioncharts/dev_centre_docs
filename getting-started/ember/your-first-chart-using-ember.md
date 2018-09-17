@@ -12,13 +12,18 @@ In this page, we'll see how to install FusionCharts and render a chart using the
 
 To install **FusionCharts** and the `ember-fusioncharts` component via `npm` follow the steps below:
 
-**Step 1:** Install `ember-fusioncharts`
+**Step 1:** Install `fusioncharts` core library
 
-You can install `ember-fusioncharts` component using:
+```PowerShell
+$ npm install fusioncharts --save
+```
+
+**Step 2:** Install `ember-fusioncharts`
+
+You can install `ember-fusioncharts` component for any of the following CLI:
 
 ```PowerShell
 $ ember install ember-fusioncharts
-```
 
 That completes the installation of **FusionCharts** and the `ember-fusioncharts` component.
 
