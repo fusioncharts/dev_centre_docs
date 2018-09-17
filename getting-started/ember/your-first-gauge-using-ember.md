@@ -24,6 +24,7 @@ You can install `ember-fusioncharts` component for any of the following CLI:
 
 ```PowerShell
 $ ember install ember-fusioncharts
+```
 
 That completes the installation of **FusionCharts** and the `ember-fusioncharts` component.
 

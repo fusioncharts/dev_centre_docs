@@ -24,6 +24,7 @@ You can install `ember-fusioncharts` component for any of the following CLI:
 
 ```PowerShell
 $ ember install ember-fusioncharts
+```
 
 That completes the installation of **FusionCharts** and the `ember-fusioncharts` component.
 
@@ -35,15 +36,14 @@ In this section, we will create a visualization using the **World Map** showing 
 
 The data for this chart is represented in the table below:
 
-
-State|Entity Name|Value||
+State|Entity Name|Value|
 -|-|-|-
-North America|NA|82||
-South America|SA|2.04||
-Asia|AS|1.78||
-Europe|EU|40||
-Africa|AF|2.58||
-Australia|AU|1.30||
+North America|NA|82|
+South America|SA|2.04|
+Asia|AS|1.78|
+Europe|EU|40|
+Africa|AF|2.58|
+Australia|AU|1.30|
 
 ## Convert tabular data into JSON format
 

@@ -4,6 +4,8 @@ description: This article outlines the steps to create your first chart, widget 
 heading: Your First Chart in Ember using FusionCharts
 ---
 
+## Overview
+
 The **ember-fusioncharts** component, provide bindings for FusionCharts JavaScript charting library. It lets you add interactive JavaScript charts and graphs to your web and mobile applications using EmberJS component.
 
 In this page, we'll see how to install FusionCharts and render a chart using the `ember-fusionCharts` component.
@@ -24,6 +26,7 @@ You can install `ember-fusioncharts` component for any of the following CLI:
 
 ```PowerShell
 $ ember install ember-fusioncharts
+```
 
 That completes the installation of **FusionCharts** and the `ember-fusioncharts` component.
 
@@ -134,13 +137,24 @@ module.exports = function(defaults) {
     });
 
     // Import fusioncharts library
-    app.import('bower_components/fusioncharts/fusioncharts.js');
-    app.import('bower_components/fusioncharts/fusioncharts.charts.js');
-    app.import('bower_components/fusioncharts/themes/fusioncharts.theme.fusion.js');
+    app.import('node-modules/fusioncharts/fusioncharts.js');
+    app.import('node-modules/fusioncharts/fusioncharts.charts.js');
+    app.import('node-modules/fusioncharts/themes/fusioncharts.theme.fusion.js');
     // Use `app.import` to import additional libraries/files
     return app.toTree();
 };
 ```
+
+To include specific chart types, individually add the following files using `import`:
+
+* PowerCharts - `fusioncharts/fusioncharts.powercharts`
+* Widgets - `fusioncharts/fusioncharts.widgets`
+* Gantt - `fusioncharts/fusioncharts.gantt`
+* Treemap -  `fusioncharts/fusioncharts.treemap`
+* Zoomscatter - `fusioncharts/fusioncharts.zoomscatter`
+* Zoomline - `fusioncharts/fusioncharts.zoomline`
+* Overlapped Bar - `fusioncharts/fusioncharts.overlappedbar2d`
+* Overlapped Column - `fusioncharts/fusioncharts.overlappedcolumn2d`
 
 **Step 2:** Create Component and specify the chart data in `chart-viewer.js` file
 
