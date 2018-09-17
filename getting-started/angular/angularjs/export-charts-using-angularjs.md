@@ -121,7 +121,8 @@ FusionCharts lets you export multiple charts in a single image at once, in diffe
 
 The code to render the above chart is given below:
 
-```//  Require AngularJS 
+```
+//  Require AngularJS 
 var angular = require('angular');
 
 // Require FusionCharts 

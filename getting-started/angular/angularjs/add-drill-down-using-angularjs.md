@@ -198,9 +198,9 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 ```
 <div fusioncharts
-    width="600" 
+    width="700" 
     height="400"
-    type="msline"
+    type="column2d"
     chart="{{attrs}}"
     categories="{{categories}}"
     dataset="{{dataset}}"

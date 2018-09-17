@@ -40,7 +40,7 @@ Click [here](http://jsfiddle.net/fusioncharts/wvpzfz5g/) to edit the above chart
 The code to render the above chart is given below:
 
 ```
-// Include the core fusioncharts file from core  -
+// Include the core fusioncharts file from core
 import FusionCharts from 'fusioncharts/core';
 
 // Include the chart from viz folder

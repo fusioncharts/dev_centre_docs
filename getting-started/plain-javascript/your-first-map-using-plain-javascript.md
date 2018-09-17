@@ -84,7 +84,7 @@ Install **FusionCharts** using any of the following steps:
 </div>
 </div>
 
-That completes the installation of FusionCharts package.
+That completes the installation of FusionCharts JS files.
 
 ## Create you First map
 
