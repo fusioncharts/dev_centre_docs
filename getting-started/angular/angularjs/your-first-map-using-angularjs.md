@@ -584,10 +584,10 @@ var FusionCharts = require('fusioncharts');
 require('angularjs-fusioncharts');
 
 // Require FusionMaps renderer
-var FusionMaps = require('fusioncharts/fusioncharts.map');
+var FusionMaps = require('fusioncharts/fusioncharts.maps');
 
 // Require map definition file
-var California = require('fusioncharts/maps/fusioncharts.california');
+var California = require('fusionmaps/maps/fusioncharts.california');
 
 // Require Fusion theme
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
@@ -605,7 +605,7 @@ var myApp = angular.module('myApp', ['ng-fusioncharts']);
 
 myApp.controller('MyController', ['$scope', function($scope) {
     $scope.dataSource = {
-        type: 'maps/california',
+        type: 'california',
         width: '800',
         height: '550',
         dataFormat: 'json',
