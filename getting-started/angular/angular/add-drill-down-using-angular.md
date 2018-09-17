@@ -24,7 +24,7 @@ You can drill-down to descendant charts by simply clicking the data plot items o
 
 As an example, we will consider a simple scenario of a parent chart with a single level of drill-down.
 
-The parent chart is a column 2D chart that shows yearly sales of the top three juice flavors over the last one year. When you click on the data plot for a particular flavor, it drills-down to show a pie 2D chart of quarterly sales figures for that flavor.
+The parent chart is a column 2D chart that shows yearly sales of the top three juice flavors over the last one year. When you click on the data plot for a particular flavor, it drills down to show a pie 2D chart of quarterly sales figures for that flavor.
 
 The above chart, when rendered, looks like the following:
 
@@ -253,4 +253,4 @@ Add the following code to `app.component.html`:
 ></fusioncharts>
 ```
 
-In the above code a fusioncharts diective is created in a template.
+In the above code a `fusioncharts` diective is created in a template.

@@ -99,7 +99,7 @@ The above chart has been rendered using the following steps:
 
 1. Included the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
 
-2. Add the chart and the theme as a dependency to the core.
+2. Add the chart and the theme as dependencies to the core.
 
 3. Store the chart configurations in a JSON object. In this JSON object:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
@@ -363,7 +363,7 @@ The above chart has been rendered using the following steps:
 
 1. Included the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
 
-2. Add the chart and the theme as a dependency to the core.
+2. Add the chart and the theme as dependencies to the core.
 
 3. Store the chart configurations in a JSON object. In this JSON object:
     * The chart type has been set to `column2d` for the first chart and `stackedcolumn2d` for the second chart. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).

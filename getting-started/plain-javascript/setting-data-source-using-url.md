@@ -73,7 +73,7 @@ The JSON representation for the above table looks as shown below:
 
 Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your HTML page.
 
-> If you are using multi-lingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
+> If you are using multilingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
 
 The code to render the above chart is given below:
 
@@ -118,8 +118,6 @@ The above chart has been rendered using the following steps:
     * A static URL has been set to `dataSource` to render the above chart.
 
 4. Add a container (instance) for the chart.
-
-> When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
@@ -177,7 +175,7 @@ The above chart has been rendered using the following steps:
 
 1. Included the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
 
-2. Stored the chart configuration in a XML object. In the XML object:
+2. Stored the chart configuration in an XML object. In the XML object:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels.
 

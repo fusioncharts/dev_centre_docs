@@ -42,7 +42,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
     <ol>
         <li>1. Include the [React](https://reactjs.org/)core library.</li>
         <li>2. Include [Babel](https://babeljs.io/)for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
-        <li>3. Include the **FusionCharts** JS files.</li>
+        <li>3. Include the **FusionCharts** Suite.</li>
         <li>4. Include the FusionCharts map renderer.</li>
         <li>5. Include the map definition file.</li>
         <li>6. Include the `react-fusioncharts` module.</li>
@@ -74,12 +74,12 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 
 
 <div class='tab localfiles-tab'>
-<div><strong>To install the **FusionCharts** JS files and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>To install the **FusionCharts** Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
 <div>
     <ol>
         <li>1. Include the [React](https://reactjs.org/)core library.</li>
         <li>2. Include [Babel](https://babeljs.io/) for [JSX](https://unpkg.com/babel-standalone/babel.min.js) transpiling.</li>
-        <li>3. Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>3. Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
         <li>4. Include the FusionMap renderer. </li>
         <li>5. Include the map definition file.</li>
         <li>6. Include the `react-fusioncharts` module.</li>
@@ -141,7 +141,7 @@ For any map visualization, it is important to provide the correct value for the 
 
 We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/maps/spec-sheets/world)for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
 
- In this example, we will use the JSON format as shown below:
+ In this example, we will use the JSON format, as shown below:
 
 ```JSON
 {
@@ -209,7 +209,7 @@ In the above JSON data:
 
 * Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify the `min` and `max` value within the `color` array under the `colorRange` array.
+* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
 
 * Create the `data` array to define the id of the continents and their corresponding values along with configurations.
 

@@ -103,7 +103,7 @@ So, any score less than 50 is bad and is red. Any score between 50 and 75 is ave
 
 ## Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. In this example, we will use the JSON format as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. In this example, we will use the JSON format, as shown below:
 
 ```javascript
 {
@@ -147,7 +147,7 @@ In the above JSON:
 
 * Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify the `min` and `max` value within the `color` array under the `colorRange` array.
+* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
 
 * Specify the hex code of the color within the `color` array.
 

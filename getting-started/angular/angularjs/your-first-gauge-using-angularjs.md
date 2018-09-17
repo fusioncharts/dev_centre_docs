@@ -64,11 +64,11 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 </div>
 
 <div class='tab localfiles-tab'>
-<div><strong>To install the **FusionCharts** JS files and the `angularjs-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>To install the **FusionCharts** Suite and the `angularjs-fusioncharts` component follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the [AngularJS](https://angularjs.org/) core library.
-        <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
         <li>Include the `angularjs-fusioncharts` directive.</li>
         <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>
@@ -118,7 +118,7 @@ So, any score less than 50 is bad and is red. Any score between 50 and 75 is ave
 
 ## Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. In this example, we will use the JSON format as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. In this example, we will use the JSON format, as shown below:
 
 ```json
 {
@@ -162,7 +162,7 @@ In the above JSON:
 
 * Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify the `min` and `max` value within the `color` array under the `colorRange` array.
+* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
 
 * Specify the hex code of the color within the `color` array.
 

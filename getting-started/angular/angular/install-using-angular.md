@@ -11,7 +11,7 @@ In this article, we will show you how to download and install the `angular-fusio
 
 > Unlike other tech stacks **angular-fusioncharts** can only be used via `npm`. Since, **Angular2** and onward do not support direct `<script>` inclusion of files, this page shows only the steps to install via `npm`.
 
-Before installing and starting to work with **angular-fusioncharts** wrapper, let's get familiar with the JavaScript files present in the **FusionCharts** JS files:
+Before installing and starting to work with **angular-fusioncharts** wrapper, let's get familiar with the JavaScript files present in the **FusionCharts** Suite:
 
 File Name|Description|
 -|-

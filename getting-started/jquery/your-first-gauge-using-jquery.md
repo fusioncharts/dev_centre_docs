@@ -141,7 +141,7 @@ In the above JSON:
 
 * Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify the `min` and `max` value within the `color` array under the `colorRange` array.
+* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
 
 * Specify the hex code of the color within the `color` array.
 

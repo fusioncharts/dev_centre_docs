@@ -57,7 +57,7 @@ For any map visualization, it is important to provide the correct value for the 
 
 We have a detailed [Map Specification Sheets ](https://www.fusioncharts.com/dev/maps/spec-sheets/world)for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
 
- In this example, we will use the JSON format as shown below:
+ In this example, we will use the JSON format, as shown below:
 
 ```JSON
 {
@@ -125,7 +125,7 @@ In the above JSON data:
 
 * Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify the `min` and `max` value within the `color` array under the `colorRange` array.
+* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
 
 * Create the `data` array to define the id of the continents and their corresponding values along with configurations.
 
@@ -298,7 +298,7 @@ Let's create a map of California to show the "Web visits for a particular month"
 
 {% embed_chart getting-started-your-first-map-california.js %}
 
-To render the above map, first install fusionmaps package which contains all the map definition files as shown below:
+To render the above map, first install `fusionmaps` package which contains all the map definition files as shown below:
 
 ```
 $ npm install fusionmaps

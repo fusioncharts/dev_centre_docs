@@ -70,11 +70,11 @@ Install **FusionCharts** and the `angularjs-fusioncharts` directive using any of
 </div>
 
 <div class='tab localfiles-tab'>
-<div><strong>To install the **FusionCharts** JS files and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>To install the **FusionCharts** Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the [AngularJS](https://angularjs.org/) core library.
-        <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
         <li>Include the FusionCharts map renderer.</li>
         <li>Include the map definition file.</li>
         <li>Include the `angularjs-fusioncharts` directive.</li>
@@ -135,7 +135,7 @@ For any map visualization, it is important to provide the correct value for the 
 
 We have a detailed [Map Specification Sheets](https://www.fusioncharts.com/dev/maps/spec-sheets/world)for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
 
- In this example, we will use the JSON format as shown below:
+ In this example, we will use the JSON format, as shown below:
 
 ```JSON
 {
@@ -203,7 +203,7 @@ In the above JSON data:
 
 * Create the `colorRange` array to set the color associated with the specific range of values.
 
-* Specify the `min` and `max` value within the `color` array under the `colorRange` array.
+* Specify `minValue` and `maxValue` within the `color` array under the `colorRange` array.
 
 * Create the `data` array to define the id of the continents and their corresponding values along with configurations.
 

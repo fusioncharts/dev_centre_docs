@@ -30,7 +30,7 @@ Install **FusionCharts** using any of the following steps:
 </div>
 
 <div class='tab cdn-tab'>
-<div><strong>To install the **FusionCharts** JS files follow the steps below:</strong></div>
+<div><strong>To install the **FusionCharts** Suite follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the **FusionCharts** JavaScript files from CDN.</li>
@@ -50,10 +50,10 @@ Install **FusionCharts** using any of the following steps:
 </div>
 
 <div class='tab localfiles-tab'>
-<div><strong>To install the **FusionCharts** JS files follow the steps below:</strong></div>
+<div><strong>To install the **FusionCharts** Suite follow the steps below:</strong></div>
 <div>
     <ol>
-        <li>Include the **FusionCharts** JavaScript files which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
+        <li>Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).</li>
         <li>Include the FusionCharts theme file to apply style to the charts.</li>
     </ol>
 </div>
@@ -72,7 +72,7 @@ Install **FusionCharts** using any of the following steps:
 </div>
 </div>
 
-That completes the installation of FusionCharts JS files.
+That completes the installation of **FusionCharts** Suite.
 
 ## Create your first chart
 
@@ -99,7 +99,7 @@ China|30|
 
 ## Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format, as shown below:
 
 ```json
 {
@@ -163,7 +163,7 @@ To render the chart, follow the steps below:
 
 3. Include the FusionCharts theme file to apply style to the charts.
 
-4. Add the chart and the theme as a dependency to the core.
+4. Add the chart and the theme as dependencies to the core.
 
 5. Store the chart configurations in a JSON object. In this JSON object:
     * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).

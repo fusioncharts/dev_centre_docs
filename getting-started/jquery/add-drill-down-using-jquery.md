@@ -23,7 +23,7 @@ You can drill-down to descendant charts by simply clicking the data plot items o
 
 As an example, we will consider a simple scenario of a parent chart with a single level of drill-down.
 
-The parent chart here is a **Column 2D** chart showing yearly sales for the top three juice flavors over the last one year. When you click on the data plot for a particular flavor, it drills-down to show a descendant **Column 2D** chart with quarterly sales figures for that flavor.
+The parent chart here is a **Column 2D** chart showing yearly sales for the top three juice flavors over the last one year. When you click on the data plot for a particular flavor, it drills down to show a descendant **Column 2D** chart with quarterly sales figures for that flavor.
 
 The above chart, when rendered, looks like the following:
 

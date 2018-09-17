@@ -73,7 +73,7 @@ The JSON representation for the above table looks as shown below:
 
 Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your HTML page.
 
-> If you are using multi-lingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
+> If you are using multilingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
 
 In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
 
@@ -208,7 +208,7 @@ The above chart has been rendered using the following steps:
 
 1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a XML object. In the XML object:
+2. Stored the chart configuration in an XML object. In the XML object:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as XML.

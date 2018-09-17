@@ -24,7 +24,7 @@ You can drill-down to the descendant charts by simply clicking the data plot ite
 
 As an example, Let's consider a simple scenario of a parent chart with a single level of drill-down.
 
-The parent chart is a column 2D chart that shows yearly sales of the top three juice flavors, for the last one year. When you click on the data plot for a particular flavor of juice, it drills-down to show a pie 2D chart showing quarterly sales figures for that specific flavor.
+The parent chart is a column 2D chart that shows yearly sales of the top three juice flavors, for the last one year. When you click on the data plot for a particular flavor of juice, it drills down to show a pie 2D chart showing quarterly sales figures for that specific flavor.
 
 The above chart looks like this when rendered:
 
@@ -211,7 +211,7 @@ The above chart has been rendered using the following steps:
 
 1. Included the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
 
-2. Add the chart and the theme as a dependency to the core.
+2. Add the chart and the theme as dependencies to the core.
 
 3. Stored the chart configuration in a JSON object. In the JSON object:
     * The chart type has been set to `column2d` for the first chart. For Column 2D chart, the alias is `column2d`. Once the data plots in the Column charts are clicked, the rendered chart is a Pie 2D chart (alias name: `pie2d`).Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).

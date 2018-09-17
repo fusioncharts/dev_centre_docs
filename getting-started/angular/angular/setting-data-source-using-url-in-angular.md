@@ -73,7 +73,7 @@ The JSON representation for the above table looks as shown below:
 
 Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your modules.
 
-> If you are using multi-lingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
+> If you are using multilingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
 
 ### Setup the Main Module
 
@@ -169,7 +169,7 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
-In the above code a fusioncharts diective is created in a template.
+In the above code a `fusioncharts` diective is created in a template.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
@@ -261,7 +261,7 @@ export class AppComponent {
 
 1. The XML data has been within the `AppComponent` class.
 
-2. Stored the chart configuration in a XML object. In the XML object:
+2. Stored the chart configuration in an XML object. In the XML object:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as XML.
@@ -288,4 +288,4 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
-In the above code a fusioncharts diective is created in a template.
+In the above code a `fusioncharts` diective is created in a template.
