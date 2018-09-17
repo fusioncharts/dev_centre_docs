@@ -17,7 +17,7 @@ In this page, we'll see how to install FusionCharts and render a map using the `
 
 To install **FusionCharts** and the `angular-fusioncharts` component via `npm` follow the steps below:
 
-**Step 1:** Install angular-fusioncharts
+**Step 1:** Install `angular-fusioncharts`
 
 ```
 $ npm install angular-fusioncharts --save

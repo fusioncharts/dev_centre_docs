@@ -141,7 +141,7 @@ export class AppComponent {
 
 In the above code:
 
-1. The JSON data has been within the `AppComponent` class.
+1. The JSON data is added within the `AppComponent` class.
 
 2. Stored the chart configuration in a JSON object. In the JSON object:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
@@ -441,7 +441,7 @@ export class Ex10 {
 
 In the above code:
 
-1. The JSON data has been within the `AppComponent` class.
+1. The JSON data is added within the `AppComponent` class.
 
 2. Stored the chart configuration in a JSON object. In the JSON object:
     * The chart type has been set to `column2d` for the first chart and `stackedcolumn2d` for the second chart. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).

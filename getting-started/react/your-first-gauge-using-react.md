@@ -29,7 +29,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 <pre><code class="custom-hlc language-javascript">
     $ npm install react-fusioncharts --save
 </code></pre>
-<div>2. Install the `fusioncharts` package</div>
+<div>2. Install the `fusioncharts` JS files</div>
 <pre><code class="custom-hlc language-javascript">
     $ npm install fusioncharts --save
 </code></pre>
@@ -37,7 +37,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 </div>
 
 <div class='tab cdn-tab'>
-<div><strong>To install the FusionCharts package and the `react-fusioncharts` component follow the steps below:</strong></div>
+<div><strong>To install the FusionCharts Suite and the `react-fusioncharts` component follow the steps below:</strong></div>
 <div>
     <ol>
         <li>Include the [React](https://reactjs.org/)core library.
@@ -102,7 +102,7 @@ Install **FusionCharts** and the `react-fusioncharts` component using any of the
 
 ## Create your first gauge
 
-Gauges are powerful tools that can showcase information using a radial scale to display data. 
+Gauges are powerful tools that can showcase information using a radial or linear scale to display data. 
 
 To start with, we'll build a simple angular gauge showcasing Nordstorm's Customer Satisfaction Score as shown below.
 
