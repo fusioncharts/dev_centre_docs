@@ -219,7 +219,7 @@ The consolidated code is shown below:
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 
-<pre><code class="custom-hlc language-javascript"> // Step 1 - Including react
+<pre><code class="custom-hlc language-javascript">// Step 1 - Including react
 import React from 'react';
 import ReactDOM from 'react-dom';
 
@@ -295,7 +295,7 @@ export default App
 </div>
 
 <div class='tab cdn-tab'>
-<pre><code class="custom-hlc language-javascript"> &lt;html&gt;
+<pre><code class="custom-hlc language-javascript">&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including react --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/react@16/umd/react.development.js"&gt;&lt;/script>
@@ -370,7 +370,7 @@ export default App
 </div>
 
 <div class='tab localfiles-tab'>
-<pre><code class="custom-hlc language-javascript"> &lt;html&gt;
+<pre><code class="custom-hlc language-javascript">&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including react --&gt;
     &lt;script type="text/javascript" src="path/to/local/react.development.js"&gt;&lt;/script&gt;

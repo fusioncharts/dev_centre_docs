@@ -194,9 +194,7 @@ To render the chart, open `App.vue` file and follow the steps below:
 </ul>
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
-<pre><code class="custom-hlc language-javascript">
-&lt;script&gt;
-
+<pre><code class="custom-hlc language-javascript">&lt;script&gt;
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts/core';
@@ -205,65 +203,56 @@ import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
 Vue.use(VueFusionCharts, FusionCharts, Column2D, FusionTheme);
 export default {
-  name: 'app',
-  data () {
-    return {
-   "type": "column2d",
-   "renderAt": "chart-container",
-   "width": "550",
-   "height": "350",
-   "dataFormat": "json",
-   "datasource": {
-     "chart": {
-       "caption": "Number of visitors in the last 3 days",
-       "subCaption": "Bakersfield Central vs Los Angeles Topanga",
-       "theme": "fusion"
-     },
-     "data": [
-       {
-         "label": "Mon",
-         "value": "15123"
-       },
-       {
-         "label": "Tue",
-         "value": "14233"
-       },
-       {
-         "label": "Wed",
-         "value": "25507"
-       }
-     ]
-   }
- }
+name: 'app',
+    data () {
+        return {
+            "type": "column2d",
+            "renderAt": "chart-container",
+            "width": "550",
+            "height": "350",
+            "dataFormat": "json",
+            "datasource": {
+                "chart": {
+                    "caption": "Number of visitors in the last 3 days",
+                    "subCaption": "Bakersfield Central vs Los Angeles Topanga",
+                    "theme": "fusion"
+                },
+                "data": [{
+                    "label": "Mon",
+                    "value": "15123"
+                }, {
+                    "label": "Tue",
+                    "value": "14233"
+                }, {
+                    "label": "Wed",
+                    "value": "25507"
+                }]
+            }
+        }
+    }
 }
-}
- &lt;/script&gt;
-
+&lt;/script&gt;
 
 &lt;template&gt;
-
-  &lt;div id="app"&gt;
-
-    &lt;div id="chart-container"&gt;
-
-    &lt;fusioncharts
-     :type="type"
-     :width="width"
-     :height="height"
-     :dataformat="dataformat"
-     :datasource="datasource"
-    &gt;
-&lt;/fusioncharts&gt;
+    &lt;div id="app"&gt;
+        &lt;div id="chart-container"&gt;
+            &lt;fusioncharts
+            :type="type"
+            :width="width"
+            :height="height"
+            :dataformat="dataformat"
+            :datasource="datasource"
+            &gt;
+        &lt;/fusioncharts&gt;
+        &lt;/div&gt;
     &lt;/div&gt;
-  &lt;/div&gt;
 &lt;/template&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab cdn-tab'>
-<pre><code class="custom-hlc language-html">
-&lt;html&gt;
+<pre><code class="custom-hlc language-html">&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including vue  --&gt;
     &lt;script type="text/javascript" src=" https://unpkg.com/vue@2.3.3"&gt;&lt;/script>
@@ -334,8 +323,7 @@ export default {
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-html">
-&lt;html&gt;
+<pre><code class="custom-hlc language-html">&lt;html&gt;
 &lt;head&gt;
     &lt;!-- Including vue  --&gt;
     &lt;script type="text/javascript" src="https://unpkg.com/vue@2.3.3"&gt;&lt;/script&gt;
