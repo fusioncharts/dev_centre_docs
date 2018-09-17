@@ -187,6 +187,8 @@ To render the chart, follow the steps below:
 
     * Embed the json data as the value of the `dataSource`.
 
+8. Add a container (instance) for the chart.
+
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='npm'>NPM</a></li>

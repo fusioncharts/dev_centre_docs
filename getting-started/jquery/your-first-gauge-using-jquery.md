@@ -177,6 +177,8 @@ To render the gauge, follow the steps below:
 
     * Embed the json data as the value of the `dataSource`.
 
+8. Add a container (instance) for the chart.
+
 The consolidated code is given below:
 
 <div class="code-wrapper">

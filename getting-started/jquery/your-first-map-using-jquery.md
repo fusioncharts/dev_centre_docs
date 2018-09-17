@@ -194,6 +194,36 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 
 To render the map follow the steps below:
 
+1. Include `jQuery`.
+
+2. Include `jquery-fusioncharts` plugin.
+
+3. Include `fusioncharts` core library.
+
+4. Include the map definition file.
+
+5. Include all gauges from Widgets.
+
+6. Include the FusionCharts theme file to apply the style to the gauge.
+
+7. Add the map renderer, map definition and the theme as a dependency to the core.
+
+8. Add the widgets and the theme as a dependency to the core.
+
+9. Store the chart configurations in a JSON object. In this JSON object:
+
+    * Set the chart type as `angulargauge`. Each gauge type is represented with a unique gauge alias. For Angular gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt-8).
+
+    * Set the width and height (in pixels). 
+
+    * Set the `dataFormat` as JSON.
+
+    * Embed the json data as the value of the `dataSource`.
+
+10. Add a container (instance) for the chart.
+
+The consolidated code is shown below:
+
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='npm'>NPM</a></li>
