@@ -47,7 +47,7 @@ To export charts and dashboards using FusionExport, you can develop the applicat
 
 <div class="tab java-tab">
 <strong>Install Java SDK for FusionCharts using any of the following mechanisms:</strong>
-<p><strong>Gradle</strong></p>
+<h4><strong>Gradle</strong></h4>
 <strong>To use the SDK as part of the [Gradle](https://gradle.org/) build system, add the following in the `build.gradle` file of your project (`Java >= 8, JDK >= 1.8, gradle >= 4.x`):</strong>
 <p>1. Maven central repository to the repositories list:</p>
 <pre><code class="language-java">
@@ -66,7 +66,7 @@ dependencies {
     compile group: 'org.apache.ant', name: 'ant', version: '1.8.2'
 }
 </code></pre>
-<p><strong>Maven</strong></p>
+<h4><strong>Maven</strong></h4>
 <strong>To use the SDK with your [maven](https://maven.apache.org/) project (`Java >= 8, JDK >= 1.8, maven >= 3.x`), add these dependencies to the `pom.xml` file:</strong>
 <pre><code class="language-java">
 &lt;dependency&gt;
