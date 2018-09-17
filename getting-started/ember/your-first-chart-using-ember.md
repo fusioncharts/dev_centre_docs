@@ -107,13 +107,13 @@ To render the chart using `ember-fusioncharts` component, follow the steps below
 
 **Step 1:** In `ember-cli-build.js` file include the necessary files and add the dependency.
 
-* Import FusionCharts library to your `ember-cli-build.js` file
+* Include FusionCharts library to your `ember-cli-build.js` file
 
-* Import `ember-fusioncharts` to your `ember-cli-build.js` file
+* Include `ember-fusioncharts` to your `ember-cli-build.js` file
 
-* Import specific modules to your `ember-cli-build.js` file
+* Include specific modules to your `ember-cli-build.js` file
 
-* Import the FusionCharts theme file to apply the style to the charts
+* Include the FusionCharts theme file to apply the style to the charts
 
 > If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
 
@@ -129,9 +129,9 @@ module.exports = function(defaults) {
     });
 
     // Import fusioncharts library
-    app.import('node_modules/fusioncharts/fusioncharts.js');
-	app.import('bower_components/fusioncharts/fusioncharts.charts.js');
-    app.import('node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js');
+    app.import('bower_components/fusioncharts/fusioncharts.js');
+    app.import('bower_components/fusioncharts/fusioncharts.charts.js');
+    app.import('bower_components/fusioncharts/themes/fusioncharts.theme.fusion.js');
     // Use `app.import` to import additional libraries/files
     return app.toTree();
 };
