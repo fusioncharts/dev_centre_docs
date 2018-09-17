@@ -2,7 +2,6 @@
 title: Exporting Charts | FusionCharts
 description: This article focuses on how you can export your chart using plain javascript.
 heading: Exporting Charts
-chartPresent: true
 ---
 
 FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG and VML. A prominent feature of the suite is the ability to export the rendered charts in JPG, PNG, SVG, PDF formats and export chart data as well.
@@ -28,7 +27,88 @@ From the menu rendered, select the required format. The chart is downloaded to y
 
 A column 2D chart with export enabled is shown below. Click the <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button and select the required export format.
 
-{% embed_all exporting-as-image-and-pdf-introduction-example-1.js %}
+{% embed_chartData exporting-as-image-and-pdf-introduction-example-1.js json %}
+
+The full code of the above sample is given below:
+
+```
+// Include the core fusioncharts file from core  -
+import FusionCharts from 'fusioncharts/core';
+
+// Include the chart from viz folder
+// E.g. - import ChartType from fusioncharts/viz/[ChartType]
+import Column2D from 'fusioncharts/viz/column2d';
+
+// Include the fusion theme
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+    
+// Add the chart and theme as dependency
+// E.g. FusionCharts.addDep(ChartType)
+FusionCharts.addDep(Column2D);
+FusionCharts.addDep(FusionTheme);
+    
+// Create an Instance with chart options
+var chartInstance = new FusionCharts({
+    type: 'Column2D',
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'json', // Data type
+    renderAt:'chart-container', //container where the chart will render
+    dataSource: {
+        // Chart Configuration
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "exportEnabled": "1",
+            "theme": "fusion"
+        },
+        // Chart Data
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    }
+});
+// Render
+chartInstance.render();
+```
+
+The above chart has been rendered using the following steps:
+
+1. Include the necessary library files like `fusioncharts` library, fusion theme file, etc.
+
+2. Store the chart configurations in a JSON object. In this JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height (in pixels). 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of the `dataSource`.
+    * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
+
+3. Add a container (instance) for the chart.
 
 ### Modes of Export
 

@@ -87,7 +87,7 @@ After that, you can include the FusionCharts JavaScript library in web applicati
 <script type="text/javascript" src="path/to/local/babel-core.js"></script>
 ```
 
-**Step 3:** Include the **FusionCharts** package
+**Step 3:** Include the **FusionCharts** Suite
 
 ```HTML
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>

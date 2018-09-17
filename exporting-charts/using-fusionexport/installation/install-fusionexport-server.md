@@ -1,64 +1,71 @@
 ---
-permalink: exporting-charts/using-fusionexport/installation/install-fusionexport-server.html
 title: Install FusionExport Server | FusionCharts
 description: This article focuses on how you can install the FusionExport server.
 heading: Install FusionExport Server
-chartPresent: False
 ---
 
-FusionExport server accepts export requests from FusionExport CLI, SDK clients, and browsers.
+FusionExport server accepts export requests from [FusionExport CLI]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-cli), [SDK clients]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks), and browsers. For most practical use cases, we strongly recommend using the SDK clients for your preferred programming language.
 
-Download FusionExport from [here](https://fusioncharts.com/download/fusionexport).
+## Download
+
+Download FusionExport from [here](https://fusioncharts.com/download/fusionexport). After downloading:
+
+* Unzip the downloaded package.
+
+* Open the command-line interface and navigate to the directory containing the unzipped files.
 
 ## Usage
 
 ### Mac OS X and Linux
 
-Unzip the package and run **fusionexport** file. In MacOS or Linux based distribution, open the terminal and run the following commands: 
+In **MacOS** or **Linus** based distribution, open the terminal and run the following commands:
 
-```
+```Bash
 $ chmod +x ./fusionexport
-$ ./fusionexport -H 0.0.0.0 -P 8080
+$ ./fusionexport
 ```
 
+By default, the FusionExport Server starts on **localhost**, and listens to port **1337**. 
 
-> FusionExport will run mostly on all the Linux distributions. In case you are unable to run it, use our docker image or reach out to our [support team](mailto:support@fusioncharts.com).
+> FusionExport will run mostly on all the Linux distributions. In case you are unable to run it, use our docker image or reach out to our [engineering team](mailto:fusionexport@fusioncharts.com) or [support team](mailto:support@fusioncharts.com) and we will help you with the integration.
 
 ### Windows
 
-If you have a Windows machine then follow the given instructions for Powershell and Command Prompt respectively:
+Based on the command-line interface of your choice on Windows machines, follow the instructions either for Powershell or Command Prompt.
 
 #### PowerShell
 
-```
-$ .\fusionexport.bat -H 0.0.0.0 -P 8080
+Execute the batch file `fusionexport.bat`:
+
+```Bash
+$ .\fusionexport.bat
 ```
 
 #### Command Prompt
 
-```
-$ start fusionexport.bat -H 0.0.0.0 -P 8080
+Execute the batch file `fusionexport.bat`:
+
+```Bash
+$ start fusionexport.bat
 ```
 
-The above command starts the FusionExport server on port number 8080. For more help just pass -h option:
+By default, the FusionExport Server starts on **localhost**, and listens to port **1337**. 
 
-```
-$ ./fusionexport -h
-```
+> When you download FusionExport for Windows, you will find executables like `fusionexport.exe` and `service.exe`. **Do not** run them by double-clicking on the file icons; instead, execute them using either the Command Prompt or the PowerShell.
 
 ## Docker
 
-Run the following command in your favorite terminal to start the server in docker container:
+Run the following command in the terminal to start the server in docker container:
 
-```
+```Bash
 $ docker-compose up
 ```
 
-The above command will complete all the dependencies missing for FusionExport Server. It will also include MySQL and RabbitMQ.
+The above command will complete all the dependencies missing for FusionExport Server. It will start the server and listen to port **1337**.
 
-> In order to use FusionExport Server, you have to either use Fusion Export Server SDKs in your application or use FusionExport CLI. 
+## Next Steps
 
-## What's next?
+After you have installed FusionCharts Server, install either FusionExport CLI or FusionExport Server SDK for your preferred programming language, or both:
 
 * [Install FusionExport CLI]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-cli)
 

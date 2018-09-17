@@ -2,27 +2,48 @@
 title: Your First Chart in Ember using FusionCharts | FusionCharts
 description: This article outlines the steps to create your first chart, widget and map using the fusionCharts Ember component.
 heading: Your First Chart in Ember using FusionCharts
-chartPresent: false
 ---
 
-FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. In this page, we'll see how to render charts using FusionCharts and **ember-FusionCharts** component. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/ember/your-first-chart-using-ember#create-your-first-chart-1), followed by a [gauge]({% site.baseurl %}/getting-started/ember/your-first-chart-using-ember#create-your-first-gauge-10), and a [map]({% site.baseurl %}/getting-started/ember/your-first-chart-using-ember#create-your-first-map-16).
+## Overview
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/ember/install-using-ember) `ember-fusioncharts` package, if you haven’t installed it already.
+The **ember-fusioncharts** component, provide bindings for FusionCharts JavaScript charting library. It lets you add interactive JavaScript charts and graphs to your web and mobile applications using EmberJS component.
+
+In this page, we'll see how to install FusionCharts and render a chart using the `ember-fusionCharts` component.
+
+## Installation
+
+To install **FusionCharts** and the `ember-fusioncharts` component via `npm` follow the steps below:
+
+**Step 1:** Install `fusioncharts` core library
+
+```PowerShell
+$ npm install fusioncharts --save
+```
+
+**Step 2:** Install `ember-fusioncharts`
+
+You can install `ember-fusioncharts` component for any of the following CLI:
+
+```PowerShell
+$ ember install ember-fusioncharts
+```
+
+That completes the installation of **FusionCharts** and the `ember-fusioncharts` component.
 
 ## Create your first chart
 
-In this section, we will create a chart using the `ember-fusioncharts` component. We will create a **Column 2D** chart which has the alias `column2d` in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list [here]({% site.baseurl %}/chart-guide/list-of-charts).
+Let's create a Column 2D chart using the `ember-fusioncharts` component showing the "Countries With Most Oil Reserves".
 
-To create charts, the `ember-fusioncharts` component can be passed as a part of another ember component.
+> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
-Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
+The Column 2D chart is shown below:
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-#### The data for this chart is represented in the table below:
+The data for the above chart is shown in the table below:
 
-Country|No. of Oil Reserves|
--|-
+Country|No. of Oil Reserves||
+-|-|-
 Venezuela|290|
 Saudi|260|
 Canada|180|
@@ -32,13 +53,11 @@ UAE|100|
 US|30|
 China|30|
 
-### Convert tabular data into JSON format
+## Convert tabular data into JSON format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format, as shown below:
 
-> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts), etc.
-
-```javascript
+```json
 {
     // Chart Configuration
     "chart": {
@@ -78,34 +97,35 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 }
 ```
 
-In the above JSON, we have:
+> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example,  [single-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[multi-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts. 
 
-* Created the chart object to define the elements of the `chart`.
-* Then, each row of the tabular data is present within the `data` array to specify the labels and their corresponding values.
+In the above JSON data: 
 
-Both the `chart` object and the `data` array contain a set of key-value pairs known as attributes. These attributes are used to set the functional and cosmetic properties of the chart as defined below:
+* Create the `chart` object to define the elements of the chart.
 
-#### Functional Attributes
+* Specify the `label` and `value` of each column within the `data` array.
 
-Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The functional attributes used in the above JSON are:
+Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
 
-* `caption` sets the caption of the chart.
-* `subcaption` sets the sub-caption of the chart.
-* `xAxisName` sets the name of the x-axis, while `yAxisName` sets the name of the y-axis.
-* `numberPrefix` adds a prefix to all the numbers visible on the chart.
-* Please note, we have used the `theme` attribute in the chart's JSON data and provided `fusion` theme as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
+Now that you have converted the tabular data to JSON format, let's see how to render the chart.
 
-#### Cosmetics Attributes
+## Render the chart
 
-These attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion` theme to customize the chart's aesthetics, no cosmetic attributes are used in this sample.
+To render the chart using `ember-fusioncharts` component, follow the steps below:
 
-For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d).
+**Step 1:** In `ember-cli-build.js` file include the necessary files and add the dependency.
 
-### Import `fusioncharts` library
+* Include FusionCharts library to your `ember-cli-build.js` file
 
-To create a **Column2D** chart, import the following files to your `ember-build.js` build file:
+* Include `ember-fusioncharts` to your `ember-cli-build.js` file
 
-```JavaScript
+* Include specific modules to your `ember-cli-build.js` file
+
+* Include the FusionCharts theme file to apply the style to the charts
+
+> If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
+
+```
 /* eslint-env node */
 'use strict';
 
@@ -117,24 +137,40 @@ module.exports = function(defaults) {
     });
 
     // Import fusioncharts library
-    app.import('node_modules/fusioncharts/fusioncharts.js');
-    app.import('node_modules/fusioncharts/fusioncharts.charts.js');
-    app.import('node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js');
+    app.import('node-modules/fusioncharts/fusioncharts.js');
+    app.import('node-modules/fusioncharts/fusioncharts.charts.js');
+    app.import('node-modules/fusioncharts/themes/fusioncharts.theme.fusion.js');
+    // Use `app.import` to import additional libraries/files
     return app.toTree();
 };
 ```
 
-### Create component
+To include specific chart types, individually add the following files using `import`:
 
-Create a simple component (e.g. chart-viewer) to render your chart using:
+* **PowerCharts** - `fusioncharts/fusioncharts.powercharts`
+* **Widgets** - `fusioncharts/fusioncharts.widgets`
+* **Gantt** - `fusioncharts/fusioncharts.gantt`
+* **Treemap** -  `fusioncharts/fusioncharts.treemap`
+* **Zoomscatter** - `fusioncharts/fusioncharts.zoomscatter`
+* **Zoomline** - `fusioncharts/fusioncharts.zoomline`
+* **Overlapped Bar** - `fusioncharts/fusioncharts.overlappedbar2d`
+* **Overlapped Column** - `fusioncharts/fusioncharts.overlappedcolumn2d`
 
-```PowerShell
+**Step 2:** Create Component and specify the chart data in `chart-viewer.js` file
+
+* Create a simple component (e.g. chart-viewer) to render your chart.
+
+* Add data to `chart-viewer.js` file
+
+* Set the chart `width` and `height`
+
+* Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+
+* Set the data source
+
+```
 $ ember g component chart-viewer
 ```
-
-### Add data to `chart-viewer.js` file
-
-Add the following code to `chart-viewer.js`:
 
 ```
 import Component from '@ember/component';
@@ -186,7 +222,7 @@ export default Component.extend({
 });
 ```
 
-### Add data to `chart-viewer.hbs`
+**Step 3:** Add data to `chart-viewer.hbs`
 
 Add `fusioncharts` component to your `chart-viewer.hbs` template to render the chart:
 
@@ -202,7 +238,7 @@ Add `fusioncharts` component to your `chart-viewer.hbs` template to render the c
 }}
 ```
 
-### Add data to `application.hbs`
+**Step 4:** Add data to `application.hbs`
 
 Add `chart-viewer` component to your `application.hbs` template:
 
@@ -212,407 +248,14 @@ Add `chart-viewer` component to your `application.hbs` template:
 {{outlet}}
 ```
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d) (the keys in the `dataSource` object) for a Column 2D chart.
-
-Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/list-of-charts), or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d) for different charts.
-
-## Create your first gauge
-
-Gauges are powerful tools that can showcase information using a radial scale to display data, while a dial is used to indicate the value. In this section, we will create an **Angular Gauge.**
-
-To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
-
-{% embed_chart getting-started-your-first-widget.js %}
-
-The thresholds for the above sample have been defined using the following range.
-
-Range|Color|Hex Code|
--|-|-
-0-50|Red|#F2726F|
-50-75|Yellow|#FFC533|
-75-100|Green|#62B58F|
-
-So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and are green.
-
-### Convert tabular data into JSON format
-
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
-
-```javascript
-{
-    // Chart Configuration
-    "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
-        "theme": "fusion",
-        "showToolTip": "0"
-    },
-    // Chart Data
-    "colorRange": {
-        "color": [{
-            "minValue": "0",
-            "maxValue": "50",
-            "code": "#F2726F"
-        }, {
-            "minValue": "50",
-            "maxValue": "75",
-            "code": "#FFC533"
-        }, {
-            "minValue": "75",
-            "maxValue": "100",
-            "code": "#62B58F"
-        }]
-    },
-    "dials": {
-        "dial": [{
-            "value": "81"
-        }]
-    }
-}
-```
-
-### Import `fusioncharts` library
-
-To create a **Angular Gauge**, import the following files to your `ember-build.js` build file:
-
-```JavaScript
-/* eslint-env node */
-'use strict';
-
-const EmberApp = require('ember-cli/lib/broccoli/ember-app');
-
-module.exports = function(defaults) {
-    let app = new EmberApp(defaults, {
-    // Add options here
-    });
-
-    // Import fusioncharts library
-    app.import('node_modules/fusioncharts/fusioncharts.js');
-    app.import('node_modules/fusioncharts/fusioncharts.widgets.js');
-    app.import('node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js');
-    return app.toTree();
-};
-```
-
-### Create component
-
-Create a simple component (e.g. chart-viewer) to render your chart using:
-
-```PowerShell
-$ ember g component chart-viewer
-```
-
-### Add data to `chart-viewer.js` file
-
-Add the following code to `chart-viewer.js`:
-
-```
-import Component from '@ember/component';
-
-const myDataSource = {
-    // Chart Configuration
-    "chart": {
-        "caption": "Nordstorm's Customer Satisfaction Score for 2017",
-        "lowerLimit": "0",
-        "upperLimit": "100",
-        "showValue": "1",
-        "numberSuffix": "%",
-        "theme": "fusion",
-        "showToolTip": "0"
-    },
-    // Chart Data
-    "colorRange": {
-        "color": [{
-            "minValue": "0",
-            "maxValue": "50",
-            "code": "#F2726F"
-        }, {
-            "minValue": "50",
-            "maxValue": "75",
-            "code": "#FFC533"
-        }, {
-            "minValue": "75",
-            "maxValue": "100",
-            "code": "#62B58F"
-        }]
-    },
-    "dials": {
-        "dial": [{
-            "value": "81"
-        }]
-    }
-}; // end of this.dataSource
-
-export default Component.extend({
-    title: 'Ember FusionCharts Sample',
-    width: 450,
-    height: 250,
-    type: 'angulargauge',
-    dataFormat: 'json',
-    dataSource: myDataSource
-});
-```
-
-### Add data to `chart-viewer.hbs`
-
-Add `fusioncharts` component to your `chart-viewer.hbs` template to render the chart:
-
-```
-<h1>{{ title }}</h1>
-
-{{fusioncharts-xt
-    width=width
-    height=height
-    type=type
-    dataFormat=dataFormat
-    dataSource=dataSource
-}}
-```
-
-### Add data to `application.hbs`
-
-Add `chart-viewer` component to your `application.hbs` template:
-
-```
-{{chart-viewer}}
-
-{{outlet}}
-```
-
-See the complete list of[ all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge) for an angular gauge.
-
-## Create your first map
-
-In this section, we will create a visualization using the **World Map**. Take a look at the map shown below:
-
-{% embed_chart getting-started-your-first-map.js %}
-
-The data for this chart is represented in the table below:
-
-State|Entity Name|Value|
--|-|-
-North America|NA|82|
-South America|SA|2.04|
-Asia|AS|1.78|
-Europe|EU|40|
-Africa|AF|2.58|
-Australia|AU|1.30|
-
-> In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column. 
-
-However, when you convert the data into a format supported by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). 
-
-For any map visualization, it is important to provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF` and not `AFR`.
-
-We have a detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts, where you can find the correct `id` of the maps you want to create.
-
-### Convert tabular data into JSON format
-
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
-
-```javascript
-{
-    // Map Configuration
-    "chart": {
-        "caption": "Average Annual Population Growth",
-        "subcaption": " 1955-2015",
-        "numbersuffix": "%",
-        "includevalueinlabels": "1",
-        "labelsepchar": ": ",
-        "entityFillHoverColor": "#FFF9C4",
-        "theme": "fusion"
-    },
-    // Aesthetics; ranges synced with the slider
-    "colorrange": {
-        "minvalue": "0",
-        "code": "#FFE0B2",
-        "gradient": "1",
-        "color": [{
-            "minvalue": "0.5",
-            "maxvalue": "1.0",
-            "color": "#FFD74D"
-        }, {
-            "minvalue": "1.0",
-            "maxvalue": "2.0",
-            "color": "#FB8C00"
-        }, {
-            "minvalue": "2.0",
-            "maxvalue": "3.0",
-            "color": "#E65100"
-        }]
-    },
-    // Source data as JSON --> id represents countries of world.
-    "data": [{
-        "id": "NA",
-        "value": ".82",
-        "showLabel": "1"
-    }, {
-        "id": "SA",
-        "value": "2.04",
-        "showLabel": "1"
-    }, {
-        "id": "AS",
-        "value": "1.78",
-        "showLabel": "1"
-    }, {
-        "id": "EU",
-        "value": ".40",
-        "showLabel": "1"
-    }, {
-        "id": "AF",
-        "value": "2.58",
-        "showLabel": "1"
-    }, {
-        "id": "AU",
-        "value": "1.30",
-        "showLabel": "1"
-    }]
-}
-```
-
-### Import `fusioncharts` library
-
-To create a **World Map**, import the following files to your `ember-build.js` build file:
-
-```JavaScript
-/* eslint-env node */
-'use strict';
-
-const EmberApp = require('ember-cli/lib/broccoli/ember-app');
-
-module.exports = function(defaults) {
-    let app = new EmberApp(defaults, {
-    // Add options here
-    });
-
-    // Import fusioncharts library
-    app.import('node_modules/fusioncharts/fusioncharts.js');
-    app.import('node_modules/fusioncharts/fusioncharts.maps.js');
-    app.import('node_modules/fusioncharts/maps/fusioncharts.world.js');
-    app.import('node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js');
-    return app.toTree();
-};
-```
-
-### Create component
-
-Create a simple component (e.g. chart-viewer) to render your chart using:
-
-```PowerShell
-$ ember g component chart-viewer
-```
-
-### Add data to `chart-viewer.js` file
-
-Add the following code to `chart-viewer.js`:
-
-```
-import Component from '@ember/component';
-
-const myDataSource = {
-    "chart": {
-        "caption": "Average Annual Population Growth",
-        "subcaption": " 1955-2015",
-        "numbersuffix": "%",
-        "includevalueinlabels": "1",
-        "labelsepchar": ": ",
-        "entityFillHoverColor": "#FFF9C4",
-        "theme": "fusion"
-    },
-    "colorrange": {
-        "minvalue": "0",
-        "code": "#FFE0B2",
-        "gradient": "1",
-        "color": [{
-            "minvalue": "0.5",
-            "maxvalue": "1.0",
-            "color": "#FFD74D"
-        }, {
-            "minvalue": "1.0",
-            "maxvalue": "2.0",
-            "color": "#FB8C00"
-        }, {
-            "minvalue": "2.0",
-            "maxvalue": "3.0",
-            "color": "#E65100"
-        }]
-    },
-    "data": [{
-        "id": "NA",
-        "value": ".82",
-        "showLabel": "1"
-    }, {
-        "id": "SA",
-        "value": "2.04",
-        "showLabel": "1"
-    }, {
-        "id": "AS",
-        "value": "1.78",
-        "showLabel": "1"
-    }, {
-        "id": "EU",
-        "value": ".40",
-        "showLabel": "1"
-    }, {
-        "id": "AF",
-        "value": "2.58",
-        "showLabel": "1"
-    }, {
-        "id": "AU",
-        "value": "1.30",
-        "showLabel": "1"
-    }]
-}; // end of this.dataSource
-
-export default Component.extend({
-    title: 'Ember FusionCharts Sample',
-    width: 800,
-    height: 550,
-    type: 'world',
-    dataFormat: 'json',
-    dataSource: myDataSource
-});
-```
-
-### Add data to `chart-viewer.hbs`
-
-Add `fusioncharts` component to your `chart-viewer.hbs` template to render the chart:
-
-```
-<h1>{{ title }}</h1>
-
-{{fusioncharts-xt
-    width=width
-    height=height
-    type=type
-    dataFormat=dataFormat
-    dataSource=dataSource
-}}
-```
-
-### Add data to `application.hbs`
-
-Add `chart-viewer` component to your `application.hbs` template:
-
-```
-{{chart-viewer}}
-
-{{outlet}}
-```
-
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference) (the keys in the `dataSource` object) for the Map of World. The respective `ids`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world).
+That's it! Your first chart using `ember-fusioncharts` is ready.
 
 ## Problem rendering the chart?
 
-In case there is an error and you are unable to see the chart, check for the following:
+In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you don't see the chart rendered on your browser, it might be because some browsers do not allow JavaScript files to be loaded and run from the local file system. In such cases, either try a different browser, or create a local/remote server and provide the webpages containing the charts from the server.
+* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
+* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
 
-* If the chart does not show up, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. Check if the path to `fusioncharts.js` file is correct and whether the file exists in that location.
-
-* If you get a `Loading Data` or `Error in Loading Data` message, check whether your JSON data structure is correct, or if there are conflicts related to quotation marks in your code.
+* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.

@@ -73,24 +73,51 @@ The JSON representation for the above table looks as shown below:
 
 Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your HTML page.
 
-> If you are using multi-lingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
+> If you are using multilingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
 
-The data structure needed to render the above chart is given below:
+The code to render the above chart is given below:
 
 ```
-FusionCharts.ready(function() {
-    var fusioncharts = new FusionCharts({
-        type: 'column2d',
-        renderAt: 'chart-container',
-        width: '700',
-        height: '400',
-        dataFormat: 'jsonurl',
-        dataSource: 'https://static.fusioncharts.com/sample/oilReserves.json'
-    });
-    fusioncharts.render();
+// Include the core fusioncharts file from core  -
+import FusionCharts from 'fusioncharts/core';
+
+// Include the chart from viz folder
+// E.g. - import ChartType from fusioncharts/viz/[ChartType]
+import Column2D from 'fusioncharts/viz/column2d';
+
+// Include the fusion theme
+/import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+    
+// Add the chart and theme as dependency
+// E.g. FusionCharts.addDep(ChartType)
+FusionCharts.addDep(Column2D);
+FusionCharts.addDep(FusionTheme);
+    
+// Create an Instance with chart options
+var chartInstance = new FusionCharts({
+    type: 'Column2D',
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'jsonurl',
+    dataSource: 'https://static.fusioncharts.com/sample/oilReserves.json'
 });
-
+// Render
+chartInstance.render();
 ```
+
+The above chart has been rendered using the following steps:
+
+1. Included the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
+
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels.
+
+3. To set the datasource using URL:
+    * The value of the `dataFormat` has been set to **jsonurl**.
+    * A static URL has been set to `dataSource` to render the above chart.
+
+4. Add a container (instance) for the chart.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
@@ -114,19 +141,46 @@ Copy this into a file called `oilReserves.xml` and store it in the same folder a
 
 > If you are using multilingual characters in your XML, make sure you save the XML data with UTF-8 encoding.
 
-To initialize the chart and instruct it using XML URL, use the following code:
+The code to render the above chart is given below:
 
 ```
-FusionCharts.ready(function() {
-    var myChart = new FusionCharts({
-        "type": "column2d",
-        "renderAt": "chart-container",
-        "width": "700",
-        "height": "400",
-        "dataFormat": "xmlurl",
-        "dataSource": "https://static.fusioncharts.com/sample/oilReserves.xml"
-    });
-    myChart.render();
+// Include the core fusioncharts file from core  -
+import FusionCharts from 'fusioncharts/core';
+
+// Include the chart from viz folder
+// E.g. - import ChartType from fusioncharts/viz/[ChartType]
+import Column2D from 'fusioncharts/viz/column2d';
+
+// Include the fusion theme
+/import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+    
+// Add the chart and theme as dependency
+// E.g. FusionCharts.addDep(ChartType)
+FusionCharts.addDep(Column2D);
+FusionCharts.addDep(FusionTheme);
+    
+// Create an Instance with chart options
+var chartInstance = new FusionCharts({
+    type: 'Column2D',
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'xmlurl',
+    dataSource: 'https://static.fusioncharts.com/sample/oilReserves.xml'
 });
-
+// Render
+chartInstance.render();
 ```
+
+The above chart has been rendered using the following steps:
+
+1. Included the necessary libraries and components using `import`. For example, `fusioncharts` library, etc.
+
+2. Stored the chart configuration in an XML object. In the XML object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels.
+
+3. To set the datasource using URL:
+    * The value of the `dataFormat` has been set to **jsonurl**.
+    * A static URL has been set to `dataSource` to render the above chart.
+
+4. Add a container (instance) for the chart.

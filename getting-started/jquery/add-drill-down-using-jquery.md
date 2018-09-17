@@ -2,7 +2,6 @@
 title: Adding Drill Down using jQuery | FusionCharts
 description: This article focuses on drill down charts.
 heading: Adding Drill Down using jQuery
-chartPresent: true
 ---
 
 With FusionCharts, you can create unlimited levels of drill-down with a single data source. The parent chart contains all data — for the parent chart as well as all descendant (child, grandchild) charts. The links to all the descendant charts are defined in the parent chart.
@@ -22,138 +21,33 @@ You can drill-down to descendant charts by simply clicking the data plot items o
 
 ## Create drill down 
 
-To create drill-down charts follow the steps given below:
-
-1. Create the JSON/XML data for the parent chart. This is called the parent data source.
-
-2. Append the data string or the data URL for the descendant charts within the parent data source. If you append the data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
-
-Once you implement these steps, the FusionCharts JavaScript class takes care of the rest. Let's see the steps in details.
-
 As an example, we will consider a simple scenario of a parent chart with a single level of drill-down.
 
-The parent chart here is a **Column 2D** chart showing yearly sales for the top three juice flavors over the last one year. When you click on the data plot for a particular flavor, it drills-down to show a descendant **Column 2D** chart with quarterly sales figures for that flavor.
+The parent chart here is a **Column 2D** chart showing yearly sales for the top three juice flavors over the last one year. When you click on the data plot for a particular flavor, it drills down to show a descendant **Column 2D** chart with quarterly sales figures for that flavor.
 
 The above chart, when rendered, looks like the following:
 
-{% embed_chart add-drill-down-using-angular-example-1.js %}
-
-The JSON data to render the above chart:
-
-```json
-{
-    "chart": {
-        "caption": "Top 3 Juice Flavors",
-        "subcaption": "Last year",
-        "xaxisname": "Flavor",
-        "yaxisname": "Amount (In USD)",
-        "numberprefix": "$",
-        "theme": "fusion",
-        "rotateValues": "0"
-    },
-    "data": [{
-        "label": "Apple",
-        "value": "810000",
-        "link": "newchart-xml-apple"
-    }, {
-        "label": "Cranberry",
-        "value": "620000",
-        "link": "newchart-xml-cranberry"
-    }, {
-        "label": "Grapes",
-        "value": "350000",
-        "link": "newchart-xml-grapes"
-    }],
-    "linkeddata": [{
-        "id": "apple",
-        "linkedchart": {
-            "chart": {
-                "caption": "Apple Juice - Quarterly Sales",
-                "subcaption": "Last year",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "rotateValues": "0",
-                "plottooltext": "$label, $dataValue,  $percentValue"
-            },
-            "data": [{
-                "label": "Q1",
-                "value": "157000"
-            }, {
-                "label": "Q2",
-                "value": "172000"
-            }, {
-                "label": "Q3",
-                "value": "206000"
-            }, {
-                "label": "Q4",
-                "value": "275000"
-            }]
-        }
-    }, {
-        "id": "cranberry",
-        "linkedchart": {
-            "chart": {
-                "caption": "Cranberry Juice - Quarterly Sales",
-                "subcaption": "Last year",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "plottooltext": "$label, $dataValue,  $percentValue"
-            },
-            "data": [{
-                "label": "Q1",
-                "value": "102000"
-            }, {
-                "label": "Q2",
-                "value": "142000"
-            }, {
-                "label": "Q3",
-                "value": "187000"
-            }, {
-                "label": "Q4",
-                "value": "189000"
-            }]
-        }
-    }, {
-        "id": "grapes",
-        "linkedchart": {
-            "chart": {
-                "caption": "Grapes Juice - Quarterly Sales",
-                "subcaption": "Last year",
-                "numberprefix": "$",
-                "theme": "fusion",
-                "rotateValues": "0",
-                "plottooltext": "$label, $dataValue,  $percentValue"
-            },
-            "data": [{
-                "label": "Q1",
-                "value": "45000"
-            }, {
-                "label": "Q2",
-                "value": "72000"
-            }, {
-                "label": "Q3",
-                "value": "95000"
-            }, {
-                "label": "Q4",
-                "value": "108000"
-            }]
-        }
-    }]
-}
-```
-
-In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as string.
+{% embed_chartData add-drill-down-using-angular-example-1.js json %}
 
 The code to render a chart using `require` is given below:
 
 ```
-let FusionCharts = require('fusioncharts');
-let Charts = require('fusioncharts/fusioncharts.charts');
-let FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
-let $ = require('jquery');
-let jQFc = require('jquery-fusioncharts');
+//Include fusioncharts
+var FusionCharts = require('fusioncharts');
 
+//Include chart modules
+var Charts = require('fusioncharts/fusioncharts.charts');
+
+//Include the theme file
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+var $ = require('jquery');
+var jQFc = require('jquery-fusioncharts');
+
+//Pass FusionCharts as dependency
 Charts(FusionCharts);
+
+//Pass theme as dependency
 FusionTheme(FusionCharts);
 
 $('#chart-container').insertFusionCharts({
@@ -162,7 +56,111 @@ $('#chart-container').insertFusionCharts({
     width: '700',
     height: '400',
     dataFormat: 'json',
-    dataSource: {/* see data tab */ },
+    dataSource: {
+    type: 'column2d',// The chart type
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'json', // Data type
+    dataSource: {
+        // Chart Configuration
+        "chart": {
+            "caption": "Top 3 Juice Flavors",
+            "subcaption": "Last year",
+            "xaxisname": "Flavor",
+            "yaxisname": "Amount (In USD)",
+            "numberprefix": "$",
+            "theme": "fusion",
+            "rotateValues": "0"
+        },
+        "data": [{
+            "label": "Apple",
+            "value": "810000",
+            "link": "newchart-xml-apple"
+        }, {
+            "label": "Cranberry",
+            "value": "620000",
+            "link": "newchart-xml-cranberry"
+        }, {
+            "label": "Grapes",
+            "value": "350000",
+            "link": "newchart-xml-grapes"
+        }],
+        "linkeddata": [{
+            "id": "apple",
+            "linkedchart": {
+                "chart": {
+                    "caption": "Apple Juice - Quarterly Sales",
+                    "subcaption": "Last year",
+                    "numberprefix": "$",
+                    "theme": "fusion",
+                    "rotateValues": "0",
+                    "plottooltext": "$label, $dataValue,  $percentValue"
+                },
+                "data": [{
+                    "label": "Q1",
+                    "value": "157000"
+                }, {
+                    "label": "Q2",
+                    "value": "172000"
+                }, {
+                    "label": "Q3",
+                    "value": "206000"
+                }, {
+                    "label": "Q4",
+                    "value": "275000"
+                }]
+            }
+        }, {
+            "id": "cranberry",
+            "linkedchart": {
+                "chart": {
+                    "caption": "Cranberry Juice - Quarterly Sales",
+                    "subcaption": "Last year",
+                    "numberprefix": "$",
+                    "theme": "fusion",
+                    "plottooltext": "$label, $dataValue,  $percentValue"
+                },
+                "data": [{
+                    "label": "Q1",
+                    "value": "102000"
+                }, {
+                    "label": "Q2",
+                    "value": "142000"
+                }, {
+                    "label": "Q3",
+                    "value": "187000"
+                }, {
+                    "label": "Q4",
+                    "value": "189000"
+                }]
+            }
+        }, {
+            "id": "grapes",
+            "linkedchart": {
+                "chart": {
+                    "caption": "Grapes Juice - Quarterly Sales",
+                    "subcaption": "Last year",
+                    "numberprefix": "$",
+                    "theme": "fusion",
+                    "rotateValues": "0",
+                    "plottooltext": "$label, $dataValue,  $percentValue"
+                },
+                "data": [{
+                    "label": "Q1",
+                    "value": "45000"
+                }, {
+                    "label": "Q2",
+                    "value": "72000"
+                }, {
+                    "label": "Q3",
+                    "value": "95000"
+                }, {
+                    "label": "Q4",
+                    "value": "108000"
+                }]
+            }
+        }]
+    },
 });
 
 // Trigerred when chart is rendered.
@@ -188,3 +186,17 @@ The HTML template of the above sample is shown below:
     FusionCharts will render here
 </div>
 ```
+
+The above chart has been rendered using the following steps:
+
+1. Included the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
+
+2. Passed FusionCharts and Fusion Theme as dependency.
+
+3. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Once the data plots in the Column charts are clicked, the rendered chart is a Pie 2D chart (alias name: `pie2d`). Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * The json data has been embeded as the value of the `dataSource`.
+
+4. Each linked chart has been saved in object with an `id`.

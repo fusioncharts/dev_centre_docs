@@ -33,7 +33,7 @@ Once you implement these steps, the FusionCharts JavaScript class takes care of 
 
 As an example, we will consider a simple scenario of a parent chart with the single level of drill-down.
 
-The parent chart is a column 2D chart that shows the yearly sales of the top three juice flavors, for the last year. When you click on the data plot for a particular flavor of juice, it drills-down to show a pie 2D chart that shows the quarterly sales figures for that flavor.
+The parent chart is a column 2D chart that shows the yearly sales of the top three juice flavors, for the last year. When you click on the data plot for a particular flavor of juice, it drills down to show a pie 2D chart that shows the quarterly sales figures for that flavor.
 
 The above chart, when rendered, looks like the following:
 

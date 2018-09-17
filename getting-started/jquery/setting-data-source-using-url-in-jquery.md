@@ -73,20 +73,29 @@ The JSON representation for the above table looks as shown below:
 
 Copy this into a file, name it `oilReserves.json`, and store it in the same folder as your HTML page.
 
-> If you are using multi-lingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
+> If you are using multilingual characters in your JSON, make sure that you save the JSON data with UTF-8 encoding.
 
 In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the JSON data for the chart as a string.
 
 The code to render a chart using `require` is given below:
 
 ```
+//Include fusioncharts
 var FusionCharts = require('fusioncharts');
+
+//Include chart modules
 var Charts = require('fusioncharts/fusioncharts.charts');
+
+//Include the theme file
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
 var $ = require('jquery');
 var jQFc = require('jquery-fusioncharts');
 
+//Pass FusionCharts as dependency
 Charts(FusionCharts);
+
+//Pass theme as dependency
 FusionTheme(FusionCharts);
 
 $('#chart-container').insertFusionCharts({
@@ -105,6 +114,21 @@ The HTML template of the above sample is shown below:
     FusionCharts will render here
 </div>
 ```
+
+The above chart has been rendered using the following steps:
+
+1. Included the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
+
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as XML.
+
+3. To set the datasource using URL:
+    * The value of the `dataFormat` has been set to **jsonurl**.
+    * A static URL has been set to `dataSource` to render the above chart.
+
+4. Create an HTML template to render the chart.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
@@ -158,3 +182,18 @@ The HTML template of the above sample is shown below:
     FusionCharts will render here
 </div>
 ```
+
+The above chart has been rendered using the following steps:
+
+1. Included the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
+
+2. Stored the chart configuration in an XML object. In the XML object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as XML.
+
+3. To set the datasource using URL:
+    * The value of the `dataFormat` has been set to **xmlurl**.
+    * A static URL has been set to `dataSource` to render the above chart.
+
+4. Create an HTML template to render the chart.

@@ -2,121 +2,89 @@
 title: Configuring your Chart using React | FusionCharts
 description: This article focuses on different type of configurations possible using the react.
 heading: Configuring your Chart using React
-chartPresent: true
 ---
 
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, annotations, trend-lines, and events.
 
-This article focuses on how you can configure using the React `props` object and `react-fusioncharts` component to:
+This article focuses on how you can configure using the React `props` object to:
 
 * [Update Chart Data]({% site.baseurl %}/getting-started/react/configure-your-chart-using-react#update-chart-data-1) (using React `Props` object)
 * [Update Chart Attributes]({% site.baseurl %}/getting-started/react/configure-your-chart-using-react#update-chart-attributes-2) (using React `Props` object)
-* [Add Annotations]({% site.baseurl %}/getting-started/react/configure-your-chart-using-react#add-annotations-3) (using `react-fusioncharts` component)
 
 ## Update Chart Data
 
 A chart, configured to update data values dynamically, is shown below (click **Update Chart Data** to start):
 
-{% embed_chart configure-charts-using-react-example-1.js %}
-
-The JSON data to render the above chart is given below:
-
-```
-{
-    // Chart Configuration
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "theme": "fusion",
-    },
-    // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
-},
-```
+{% embed_chartData configure-charts-using-react-example-1.js json %}
 
 The full code of the above sample is given below:
 
 ```
+//Including react
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
+//Including the react-fusioncharts component
+import ReactDOM from 'react-dom';
+
+//Including the fusioncharts library
+import FusionCharts from 'fusioncharts/core';
+
+//Including the chart type
+import Column2D from 'fusioncharts/viz/column2d';
+
+//Including the theme as fusion
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+//Adding the chart as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
-const chartConfigs = {
-  type: 'column2d',
-  width: 700,
-  height: 400,
-  dataFormat: 'json',
-  dataSource: {
-    // Chart Configuration
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "theme": "fusion",
-    },
-    // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
-  },
-};
+//Creating the JSON object to store the chart configurations
 
+const chartConfigs = {
+    type: 'column2d',// The chart type
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'json', // Data type
+    dataSource: {
+    // Chart Configuration
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion",
+        },
+        // Chart Data
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+        },
+    };
+
+//Your react component
 class Chart extends Component {
   constructor(props) {
     super(props);
@@ -125,14 +93,14 @@ class Chart extends Component {
     this.updateData = this.updateData.bind(this);
   }
 
-// This function generates random number.
+//This function generates random number.
   getRandomNumber() {
     var max = 290, min = 30;
     return Math.round(((max - min) * Math.random()) + min);
   }
 
-  // Handler for update button.
-  // Randomly updates the values of the chart.
+  //Handler for update button.
+  //Randomly updates the values of the chart.
   updateData() {
     var prevDs = Object.assign({}, this.state.dataSource);
     prevDs.data[2].value = this.getRandomNumber();
@@ -142,6 +110,7 @@ class Chart extends Component {
     });
   }
 
+  //Create the button
   render() {
     return (
       <div>
@@ -152,77 +121,69 @@ class Chart extends Component {
   }
 }
 
+//DOM element to pass the react-fusioncharts component
 ReactDOM.render(
   <Chart />,
   document.getElementById('root'),
 );
 ```
 
+The above chart has been rendered using the following steps:
+
+1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * The json data has been embeded as the value of the `dataSource`.
+
+3. Created a component to include `react-fusioncharts` component.
+
+4. In the above sample, to update the chart we have generated random data using **Math.random()**.
+
+5. An event handler is added to update chart button.
+
+6. `updateData()` function is added to randomly update the value of the chart when the button is clicked.
+
+7. `render()` function is added to create the `button` inside the `<div>`.
+
+8. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+
 ## Update Chart Attributes
 
 A chart, configured to update the **chart caption**, **sub-caption** alignment and chart **background** dynamically, is shown below (click any one of the buttons shown below the chart to change the chart background and caption, sub-caption alignment):
 
-{% embed_chart configure-charts-using-react-example-2.js %}
-
-The JSON data to render the above chart is given below:
-
-```
-{
-    // Chart Configuration
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "theme": "fusion",
-    },
-    // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
-},
-```
+{% embed_chartData configure-charts-using-react-example-2.js json %}
 
 The full code of the above sample is given below:
 
 ```
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
+//Including react
+import React, { Component } from 'react';
 
+//Including the react-fusioncharts component
+import ReactDOM from 'react-dom';
+
+//Including the fusioncharts library
+import FusionCharts from 'fusioncharts/core';
+
+//Including the chart type
+import Column2D from 'fusioncharts/viz/column2d';
+
+//Including the theme as fusion
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+//Adding the chart as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
+//Creating the JSON object to store the chart configurations
+
 const chartConfigs = {
-    type: 'column2d',
-    width: 700,
-    height: 400,
-    dataFormat: 'json',
+    type: 'column2d',// The chart type
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'json', // Data type
     dataSource: {
     // Chart Configuration
         "chart": {
@@ -262,6 +223,7 @@ const chartConfigs = {
     },
 };
 
+//Your react component
 class Chart extends Component {
     constructor(props) {
         super(props);
@@ -300,6 +262,7 @@ class Chart extends Component {
         this.state.chart.setChartAttribute('captionAlignment', null);
     }
 
+    //Create buttons
     render() {
         return ( <
             div >
@@ -336,189 +299,26 @@ ReactDOM.render( <
 );
 ```
 
-## Add Annotations
+The above chart has been rendered using the following steps:
 
-Annotations are graphical elements (different types of shapes, custom text, and so on) that you can render on your chart to make it more informative, while making it visually appealing.
+1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
 
-A spline chart using annotations to highlight a particular anchor along with text is shown below:
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * The json data has been embeded as the value of the `dataSource`.
 
-{% embed_chart configure-charts-using-react-example-3.js %}
+3. Created a component to include `react-fusioncharts` component.
 
-The JSON data to render the above chart is given below:
+4. **renderComplete()** function is called by FC-React component to return the rendered chart.
 
-```
-{
-    "chart": {
-        "caption": "Average Monthly Temperature in Texas",
-        "yAxisName": "Average Monthly Temperature",
-        "anchorradius": "5",
-        "plotToolText": "Average temperature in $label is <b>$dataValue</b>",
-        "showHoverEffect": "1",
-        "showvalues": "0",
-        "numberSuffix": "°C",
-        "theme": "fusion",
-        "anchorBgColor": "#72D7B2",
-        "paletteColors": "#72D7B2"
-    },
-    "annotations": {
-        "groups": [{
-            "id": "anchor-highlight",
-            "items": [{
-                "id": "high-star",
-                "type": "circle",
-                "x": "$dataset.0.set.7.x",
-                "y": "$dataset.0.set.7.y",
-                "radius": "12",
-                "color": "#cc0000",
-                "border": "2",
-                "borderColor": "#0075c2"
-            }, {
-                "id": "label",
-                "type": "text",
-                "text": "Hottest Month",
-                "fillcolor": "#0075c2",
-                "rotate": "90",
-                "x": "$dataset.0.set.7.x+75",
-                "y": "$dataset.0.set.7.y-2"
-            }]
-        }]
-    },
-    "data": [{
-        "label": "Jan",
-        "value": "1"
-    }, {
-        "label": "Feb",
-        "value": "5"
-    }, {
-        "label": "Mar",
-        "value": "10"
-    }, {
-        "label": "Apr",
-        "value": "12"
-    }, {
-        "label": "May",
-        "value": "14"
-    }, {
-        "label": "Jun",
-        "value": "16"
-    }, {
-        "label": "Jul",
-        "value": "20"
-    }, {
-        "label": "Aug",
-        "value": "22"
-    }, {
-        "label": "Sep",
-        "value": "20"
-    }, {
-        "label": "Oct",
-        "value": "16"
-    }, {
-        "label": "Nov",
-        "value": "7"
-    }, {
-        "label": "Dec",
-        "value": "2"
-    }]
-},
-```
+5. An event handler is added to update the background color of the chart when the button is clicked.
 
-The full code of the above sample is given below:
+6. An event handler is added to change the caption alignment of the chart when the button is clicked.
 
-```
-import React from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts';
-import PowerCharts from 'fusioncharts/fusioncharts.powercharts';
-import ReactFC from 'react-fusioncharts';
-import FusionTime from 'fusioncharts/themes/fusioncharts.theme.fusion';
+7. The third event handler is added for the Reset button. When clicked this handler sends the chart to its rendered state.
 
-ReactFC.fcRoot(FusionCharts, PowerCharts, FusionTime);
+8. `render()` function is added to create the `buttons` inside the `<div>`.
 
-const chartConfigs = {
-    type: 'spline',
-    width: '700',
-    height: '400',
-    dataFormat: 'json',
-    dataSource: {
-        "chart": {
-            "caption": "Average Monthly Temperature in Texas",
-            "yAxisName": "Average Monthly Temperature",
-            "anchorradius": "5",
-            "plotToolText": "Average temperature in $label is <b>$dataValue</b>",
-            "showHoverEffect": "1",
-            "showvalues": "0",
-            "numberSuffix": "°C",
-            "theme": "fusion",
-            "anchorBgColor": "#72D7B2",
-            "paletteColors": "#72D7B2"
-        },
-        "annotations": {
-            "groups": [{
-                "id": "anchor-highlight",
-                "items": [{
-                    "id": "high-star",
-                    "type": "circle",
-                    "x": "$dataset.0.set.7.x",
-                    "y": "$dataset.0.set.7.y",
-                    "radius": "12",
-                    "color": "#cc0000",
-                    "border": "2",
-                    "borderColor": "#0075c2"
-                }, {
-                    "id": "label",
-                    "type": "text",
-                    "text": "Hottest Month",
-                    "fillcolor": "#0075c2",
-                    "rotate": "90",
-                    "x": "$dataset.0.set.7.x+75",
-                    "y": "$dataset.0.set.7.y-2"
-                }]
-            }]
-        },
-        "data": [{
-            "label": "Jan",
-            "value": "1"
-        }, {
-            "label": "Feb",
-            "value": "5"
-        }, {
-            "label": "Mar",
-            "value": "10"
-        }, {
-            "label": "Apr",
-            "value": "12"
-        }, {
-            "label": "May",
-            "value": "14"
-        }, {
-            "label": "Jun",
-            "value": "16"
-        }, {
-            "label": "Jul",
-            "value": "20"
-        }, {
-            "label": "Aug",
-            "value": "22"
-        }, {
-            "label": "Sep",
-            "value": "20"
-        }, {
-            "label": "Oct",
-            "value": "16"
-        }, {
-            "label": "Nov",
-            "value": "7"
-        }, {
-            "label": "Dec",
-            "value": "2"
-        }]
-    },
-};
-
-ReactDOM.render(
-    <ReactFC {...chartConfigs} />,
-    document.getElementById('root'),
-);
-
-```
+9. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.

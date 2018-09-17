@@ -2,7 +2,6 @@
 title: Exporting Charts | FusionCharts
 description: This article focuses on how you can export your chart using react.
 heading: Exporting Charts
-chartPresent: true
 ---
 
 FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG and VML. A prominent feature of the suite is the ability to export the rendered charts in JPG, PNG, SVG, PDF formats and export chart data as well. This article focuses on how you can export charts using the React `props` object and `react-fusioncharts` component.
@@ -30,144 +29,48 @@ From the menu rendered, select the required format. The chart is downloaded to y
 
 A column 2D chart with export enabled is shown below. Click the <span> ![image]({% site.baseurl %}/images/exporting-as-image-and-pdf-export-button.jpg) </span> (menu) button and select the required export format.
 
-{% embed_all exporting-as-image-and-pdf-introduction-example-1.js %}
-
-The JSON data to render the above chart is given below:
-
-```
-{
-    // Chart Configuration
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "exportEnabled": "1", //Export Your Chart
-        "theme": "fusion",
-    },
-    // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
-},
-```
+{% embed_chartData exporting-as-image-and-pdf-introduction-example-1.js %}
 
 The full code of the above sample is given below:
 
 ```
+//Including react
 import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
+//Including the react-fusioncharts component
+import ReactDOM from 'react-dom';
+
+//Including the fusioncharts library
+import FusionCharts from 'fusioncharts/core';
+
+//Including the chart type
+import Column2D from 'fusioncharts/viz/column2d';
+
+//Including the theme as fusion
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+
+//Adding the chart as dependency to the core fusioncharts
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
+//Creating the JSON object to store the chart configurations
+
 const chartConfigs = {
-  type: 'column2d',
-  width: 700,
-  height: 400,
-  dataFormat: 'json',
-  dataSource: {
+    type: 'column2d',// The chart type
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'json', // Data type
+    dataSource: {
     // Chart Configuration
-    "chart": {
-        "caption": "Countries With Most Oil Reserves [2017-18]",
-        "subCaption": "In MMbbl = One Million barrels",
-        "xAxisName": "Country",
-        "yAxisName": "Reserves (MMbbl)",
-        "numberSuffix": "K",
-        "exportEnabled": "1",
-        "theme": "fusion",
-    },
-    // Chart Data
-    "data": [{
-        "label": "Venezuela",
-        "value": "290"
-    }, {
-        "label": "Saudi",
-        "value": "260"
-    }, {
-        "label": "Canada",
-        "value": "180"
-    }, {
-        "label": "Iran",
-        "value": "140"
-    }, {
-        "label": "Russia",
-        "value": "115"
-    }, {
-        "label": "UAE",
-        "value": "100"
-    }, {
-        "label": "US",
-        "value": "30"
-    }, {
-        "label": "China",
-        "value": "30"
-    }]
-  },
-};
-
-class Chart extends Component {
-  render () {
-    return (
-      <ReactFC {...chartConfigs} />
-    )
-  }
-}
-
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
-```
-
-## Export Multiple Charts
-
-FusionCharts lets you export multiple charts in a single image at once, in different formats. In the sample given below, we have two charts-Column2D and Stacked Column2D chart.
-
-<div  style="background-color: #ffffff;">
-<p>{% embed_chart exporting-as-image-and-pdf-introduction-example-3.js %}</p>
-<p>{% embed_chart exporting-as-image-and-pdf-introduction-example-4.js %}</p>
-</div>
-
-The JSON data to render the above chart is given below:
-
-```
-{
-    data1: {
         "chart": {
             "caption": "Countries With Most Oil Reserves [2017-18]",
             "subCaption": "In MMbbl = One Million barrels",
             "xAxisName": "Country",
             "yAxisName": "Reserves (MMbbl)",
             "numberSuffix": "K",
-            "theme": "fusion"
+            "exportEnabled": "1",
+            "theme": "fusion",
         },
+        // Chart Data
         "data": [{
             "label": "Venezuela",
             "value": "290"
@@ -194,129 +97,74 @@ The JSON data to render the above chart is given below:
             "value": "30"
         }]
     },
-    data2: {
-        "chart": {
-            "caption": "Yearly Energy Production Rate",
-            "subCaption": " Top 5 Developed Countries",
-            "numbersuffix": " TWh",
-            "showSum": "1",
-            "plotToolText": "$label produces <b>$dataValue</b> of energy from $seriesName",
-            "theme": "fusion"
-        },
-        "categories": [{
-            "category": [{
-                "label": "Canada"
-            }, {
-                "label": "China"
-            }, {
-                "label": "Russia"
-            }, {
-                "label": "Australia"
-            }, {
-                "label": "United States"
-            }, {
-                "label": "France"
-            }]
-        }],
-        "dataSet": [{
-            "seriesName": "Coal",
-            "data": [{
-                "value": "400"
-            }, {
-                "value": "830"
-            }, {
-                "value": "500"
-            }, {
-                "value": "420"
-            }, {
-                "value": "790"
-            }, {
-                "value": "380"
-            }]
-        }, {
-            "seriesName": "Hydro",
-            "data": [{
-                "value": "350"
-            }, {
-                "value": "620"
-            }, {
-                "value": "410"
-            }, {
-                "value": "370"
-            }, {
-                "value": "720"
-            }, {
-                "value": "310"
-            }]
-        }, {
-            "seriesName": "Nuclear",
-            "data": [{
-                "value": "210"
-            }, {
-                "value": "400"
-            }, {
-                "value": "450"
-            }, {
-                "value": "180"
-            }, {
-                "value": "570"
-            }, {
-                "value": "270"
-            }]
-        }, {
-            "seriesName": "Gas",
-            "data": [{
-                "value": "180"
-            }, {
-                "value": "330"
-            }, {
-                "value": "230"
-            }, {
-                "value": "160"
-            }, {
-                "value": "440"
-            }, {
-                "value": "350"
-            }]
-        }, {
-            "seriesName": "Oil",
-            "data": [{
-                "value": "60"
-            }, {
-                "value": "200"
-            }, {
-                "value": "200"
-            }, {
-                "value": "50"
-            }, {
-                "value": "230"
-            }, {
-                "value": "150"
-            }]
-        }]
-    }
+};
+
+//Your react component
+class Chart extends Component {
+  render () {
+    return (
+      <ReactFC {...chartConfigs} />
+    )
+  }
 }
+
+ReactDOM.render(
+  <Chart />,
+  document.getElementById('root'),
+);
 ```
+
+The above chart has been rendered using the following steps:
+
+1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d` for the first chart. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
+
+3. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+
+## Export Multiple Charts
+
+FusionCharts lets you export multiple charts in a single image at once, in different formats. In the sample given below, we have two charts-Column2D and Stacked Column2D chart.
+
+<div  style="background-color: #ffffff;">
+<p>{% embed_chart exporting-as-image-and-pdf-introduction-example-3.js %}</p>
+<p>{% embed_chart exporting-as-image-and-pdf-introduction-example-4.js %}</p>
+</div>
 
 The full code of the above sample is given below:
 
 ```
+//Including react
 import React, { Component } from 'react';
+
+//Including the react-fusioncharts component
 import ReactDOM from 'react-dom';
+
+//Including the fusioncharts library
 import FusionCharts from 'fusioncharts/core';
+
+//Including the chart type
 import Column2D from 'fusioncharts/viz/column2d';
-import StackedColumn2D from 'fusioncharts/viz/stackedcolumn2d';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
-ReactFC.fcRoot(FusionCharts, Column2D, StackedColumn2D, FusionTheme);
+//Including the theme as fusion
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-const chart1Configs = {
-  type: 'column2d',
-  width: 700,
-  height: 400,
-  dataFormat: 'json',
-  dataSource: {
+//Adding the chart as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
+
+//Creating the JSON object to store the chart configurations
+
+const chartConfigs = {
+    type: 'column2d',// The chart type
+    width: '700', // Width of the chart
+    height: '400', // Height of the chart
+    dataFormat: 'json', // Data type
+    dataSource: {
+        // Chart Configuration
         "chart": {
             "caption": "Countries With Most Oil Reserves [2017-18]",
             "subCaption": "In MMbbl = One Million barrels",
@@ -495,6 +343,20 @@ ReactDOM.render(
   document.getElementById('root'),
 );
 ```
+
+The above chart has been rendered using the following steps:
+
+1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d` for the first chart and `stackedcolumn2d` for the second chart. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
+
+3. To export multiple charts on the page an **event handler** is added to fire the export operation when the button is clicked.
+
+4. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
 
 ## Modes of Export
 
