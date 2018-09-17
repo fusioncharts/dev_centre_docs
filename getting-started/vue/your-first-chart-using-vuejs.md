@@ -162,7 +162,7 @@ Now that you have converted the tabular data to JSON format, let's see how to re
 
 ## Render the chart
 
-To render the chart, follow the steps below:
+To render the chart, open `App.vue` file and follow the steps below:
 
 1. Include the `vue` component
 
@@ -195,70 +195,68 @@ To render the chart, follow the steps below:
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 <pre><code class="custom-hlc language-javascript">
+&lt;script&gt;
+
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d'
+import Column2D from 'fusioncharts/viz/column2d';
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
-// Register VueFusionCharts component
-Vue.use(VueFusionCharts, FusionCharts, Column2D)
+Vue.use(VueFusionCharts, FusionCharts, Column2D, FusionTheme);
+export default {
+  name: 'app',
+  data () {
+    return {
+   "type": "column2d",
+   "renderAt": "chart-container",
+   "width": "550",
+   "height": "350",
+   "dataFormat": "json",
+   "datasource": {
+     "chart": {
+       "caption": "Number of visitors in the last 3 days",
+       "subCaption": "Bakersfield Central vs Los Angeles Topanga",
+       "theme": "fusion"
+     },
+     "data": [
+       {
+         "label": "Mon",
+         "value": "15123"
+       },
+       {
+         "label": "Tue",
+         "value": "14233"
+       },
+       {
+         "label": "Wed",
+         "value": "25507"
+       }
+     ]
+   }
+ }
+}
+}
+ &lt;/script&gt;
 
-var app = new Vue({
-    el: '#app',
-    data: {
-        width: '700',
-        height: '400',
-        type: 'column2d',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
-                "caption": "Countries With Most Oil Reserves [2017-18]",
-                "subCaption": "In MMbbl = One Million barrels",
-                "xAxisName": "Country",
-                "yAxisName": "Reserves (MMbbl)",
-                "numberSuffix": "K",
-                "theme": "fusion"
-            },
-            "data": [{
-                "label": "Venezuela",
-                "value": "290"
-            }, {
-                "label": "Saudi",
-                "value": "260"
-            }, {
-                "label": "Canada",
-                "value": "180"
-            }, {
-                "label": "Iran",
-                "value": "140"
-            }, {
-                "label": "Russia",
-                "value": "115"
-            }, {
-                "label": "UAE",
-                "value": "100"
-            }, {
-                "label": "US",
-                "value": "30"
-            }, {
-                "label": "China",
-                "value": "30"
-            }]
-        }
-    }
-});
-</code></pre>
-<div class='mt-30'><strong>Create an HTML template as shown below:</strong></div>
-<pre><code class="custom-hlc language-html">
-&lt;div id="app"&gt;
+
+&lt;template&gt;
+
+  &lt;div id="app"&gt;
+
+    &lt;div id="chart-container"&gt;
+
     &lt;fusioncharts
-    :type="type"
-    :width="width"
-    :height="height"
-    :dataFormat="dataFormat"
-    :dataSource="dataSource"
-    &gt;&lt;/fusioncharts&gt;
-&lt;/div&gt;
+     :type="type"
+     :width="width"
+     :height="height"
+     :dataformat="dataformat"
+     :datasource="datasource"
+    &gt;
+&lt;/fusioncharts&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>

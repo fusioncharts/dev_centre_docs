@@ -161,7 +161,7 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 
 ## Render the gauge
 
-To render the gauge, follow the steps below:
+To render the gauge, open `App.vue` file and follow the steps below:
 
 1. Include the `vue` component.
 
@@ -191,25 +191,25 @@ To render the gauge, follow the steps below:
 <div class='tab-content extra-tabs'>
 <div class='tab npm-tab active'>
 <pre><code class="custom-hlc language-javascript">
+&lt;script&gt;
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
 import FusionCharts from 'fusioncharts/core';
-import AngularGauge from 'fusioncharts/viz/angulargauge'
+import AngularGauge from 'fusioncharts/viz/angulargauge';
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
-// Register VueFusionCharts component
-Vue.use(VueFusionCharts, FusionCharts, AngularGauge, FusionTheme)
-
-var app = new Vue({
-    el: '#app',
-    data: {
-        type: 'angulargauge', // Chart type
-        renderAt: 'chart-container', // Container
-        width: '450', // Width of the chart
-        height: '250', // Height of the chart
-        dataFormat: 'json', // Data Type
-        dataSource: {
-            // Chart Configuration
-            "chart": {
+Vue.use(VueFusionCharts, FusionCharts, AngularGauge, FusionTheme);
+export default {
+  name: 'app',
+  data () {
+    return {
+   "type": "angulargauge",
+   "renderAt": "chart-container",
+   "width": "550",
+   "height": "350",
+   "dataFormat": "json",
+   "datasource": {
+     "chart": {
                 "caption": "Nordstorm's Customer Satisfaction Score for 2017",
                 "lowerLimit": "0",
                 "upperLimit": "100",
@@ -241,19 +241,24 @@ var app = new Vue({
             }
         }
     }
-});
-</code></pre>
-<div class='mt-30'><strong>Create an HTML template as shown below:</strong></div>
-<pre><code class="custom-hlc language-html">
-&lt;div id="app"&gt;
+}
+}
+ &lt;/script&gt;
+
+&lt;template&gt;
+  &lt;div id="app"&gt;
+    &lt;div id="chart-container"&gt;
     &lt;fusioncharts
-    :type="type"
-    :width="width"
-    :height="height"
-    :dataFormat="dataFormat"
-    :dataSource="dataSource"
-    &gt;&lt;/fusioncharts&gt;
-&lt;/div&gt;
+     :type="type"
+     :width="width"
+     :height="height"
+     :dataformat="dataformat"
+     :datasource="datasource"
+&gt;
+&lt;/fusioncharts&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/template&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>

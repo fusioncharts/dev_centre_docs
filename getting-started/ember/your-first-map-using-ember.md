@@ -175,10 +175,10 @@ module.exports = function(defaults) {
     });
 
     // Import fusioncharts library
-    app.import('node_modules/fusioncharts/fusioncharts.js');
-    app.import('node_modules/fusioncharts/fusioncharts.maps.js');
-    app.import('node_modules/fusioncharts/fusioncharts.world.js');
-    app.import('node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js');
+    app.import('bower_components/fusioncharts/fusioncharts.js');
+    app.import('bower_components/fusioncharts/fusioncharts.maps.js');
+    app.import('bower_components/fusioncharts/fusioncharts.world.js');
+    app.import('bower_components/fusioncharts/themes/fusioncharts.theme.fusion.js');
     // Use `app.import` to import additional libraries/files
     return app.toTree();
 };
@@ -204,48 +204,63 @@ $ ember g component chart-viewer
 import Component from '@ember/component';
 
 const myDataSource = 
-{
-    // Map Configuration
-    "chart": {
-        "caption": "Average Annual Population Growth",
-        "subcaption": " 1955-2015",
-        "numbersuffix": "%",
-        "includevalueinlabels": "1",
-        ...
-    },
-    // Aesthetics; ranges synced with the slider
-    "colorrange": {
-        "minvalue": "0",
-        "code": "#FFE0B2",
-        "gradient": "1",
-        "color": [{
-            "minvalue": "0.5",
-            "maxvalue": "1.0",
-            "color": "#FFD74D"
+    {
+        // Map Configuration
+        "chart": {
+                "caption": "Average Annual Population Growth",
+                "subcaption": " 1955-2015",
+                "numbersuffix": "%",
+                "includevalueinlabels": "1",
+                "labelsepchar": ": ",
+                "entityFillHoverColor": "#FFF9C4",
+                "theme": "fusion"
+        },
+        // Aesthetics; ranges synced with the slider
+        "colorrange": {
+            "minvalue": "0",
+            "code": "#FFE0B2",
+            "gradient": "1",
+            "color": [{
+                "minvalue": "0.5",
+                "maxvalue": "1.0",
+                "color": "#FFD74D"
+            }, {
+                "minvalue": "1.0",
+                "maxvalue": "2.0",
+                "color": "#FB8C00"
+            }, {
+                "minvalue": "2.0",
+                "maxvalue": "3.0",
+                "color": "#E65100"
+            }]
+        },
+        // Source data as JSON --> id represents countries of world.
+        "data": [{
+            "id": "NA",
+            "value": ".82",
+            "showLabel": "1"
         }, {
-            "minvalue": "1.0",
-            "maxvalue": "2.0",
-            "color": "#FB8C00"
-        }, …
-
-]
-    },
-    // Source data as JSON --> id represents countries of world.
-    "data": [{
-        "id": "NA",
-        "value": ".82",
-        "showLabel": "1"
-    }, {
-        "id": "SA",
-        "value": "2.04",
-        "showLabel": "1"
-    }, {
-        "id": "AS",
-        "value": "1.78",
-        "showLabel": "1"
-    }, …
-
-}; // end of this.dataSource
+            "id": "SA",
+            "value": "2.04",
+            "showLabel": "1"
+        }, {
+            "id": "AS",
+            "value": "1.78",
+            "showLabel": "1"
+        }, {
+            "id": "EU",
+            "value": ".40",
+            "showLabel": "1"
+        }, {
+            "id": "AF",
+            "value": "2.58",
+            "showLabel": "1"
+        }, {
+            "id": "AU",
+            "value": "1.30",
+            "showLabel": "1"
+        }]
+    };
 
 export default Component.extend({
     title: 'Ember FusionCharts Sample',
@@ -329,10 +344,10 @@ module.exports = function(defaults) {
     });
 
     // Import fusioncharts library
-    app.import('node_modules/fusioncharts/fusioncharts.js');
-    app.import('node_modules/fusioncharts/fusioncharts.maps.js');
-    app.import('node_modules/fusioncharts/fusioncharts.california.js');
-    app.import('node_modules/fusioncharts/themes/fusioncharts.theme.fusion.js');
+    app.import('bower_components/fusioncharts/fusioncharts.js');
+    app.import('bower_components/fusioncharts/fusioncharts.maps.js');
+    app.import('node_modules/fusionmaps/maps/fusioncharts.california.js');
+    app.import('bower_components/fusioncharts/themes/fusioncharts.theme.fusion.js');
     // Use `app.import` to import additional libraries/files
     return app.toTree();
 };
@@ -393,7 +408,7 @@ export default Component.extend({
     title: 'Ember FusionCharts Sample',
     width: 800,
     height: 550,
-    type: 'maps/california',
+    type: 'california',
     dataFormat: 'json',
     dataSource: myDataSource
 });
