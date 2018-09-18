@@ -6,56 +6,52 @@ This Agreement provides for a Retail License to use the Software, terms of payme
 
 ## 1. Definitions
 
-1. "**FusionCharts**" means InfoSoft Global Private Limited and its licensors, if any.
+(a) "**FusionCharts**" means InfoSoft Global Private Limited and its licensors, if any.
 
-2. "**FusionCharts Website**" means[ ](http://www.fusioncharts.com)[www.fusioncharts.com](www.fusioncharts.com).
+(b) "**FusionCharts Website**" means[ ](http://www.fusioncharts.com)[www.fusioncharts.com](www.fusioncharts.com).
 
-3. "**InfoSoft Global Private Limited**"** **shall mean** **a company incorporated under the laws of India and having its registered office at 17, Bangur Avenue, Block-D, Ground Floor 	Kolkata, West Bengal- 700055, India.
+(c) "**InfoSoft Global Private Limited**"** **shall mean** **a company incorporated under the laws of India and having its registered office at 17, Bangur Avenue, Block-D, Ground Floor 	Kolkata, West Bengal- 700055, India.
 
-4. "**Software**" 	or "**FusionCharts 	Software**" 	means only the software program(s) developed by FusionCharts. They 	are FusionCharts Suite XT (comprising FusionCharts XT, FusionWidgets 	XT, PowerCharts XT, FusionMaps XT) in source or object form, 	including all JavaScript libraries, documentation, code samples, 	demos, GUIs and tools and FusionCharts JavaScript Library. 	Additional details are described in Table A.
+(d) "**Software**" 	or "**FusionCharts 	Software**" 	means only the software program(s) developed by FusionCharts. They 	are FusionCharts Suite XT (comprising FusionCharts XT, FusionWidgets 	XT, PowerCharts XT, FusionMaps XT) in source or object form, 	including all JavaScript libraries, documentation, code samples, 	demos, GUIs and tools and FusionCharts JavaScript Library. 	Additional details are described in Table A.
 
-5. "**Source 	Code**" 	shall include computer programming code or any computer instructions 	necessary to compile the Software.
+(e) "**Source 	Code**" 	shall include computer programming code or any computer instructions 	necessary to compile the Software.
 
-6. "**OEM 	License**" 	shall mean licenses that are required by ISVs (Independent Software 	Vendors), who build and sell software for on premise installation at 	customer infrastructure or hosts at own or rented infrastructure to 	offer Software as a Service (SaaS) or such Developers who develop 	software for other ISVs who in turn may sell such software for on 	premise installation or host as SaaS to their own customers.
+(f) "**OEM 	License**" 	shall mean licenses that are required by ISVs (Independent Software 	Vendors), who build and sell software for on premise installation at 	customer infrastructure or hosts at own or rented infrastructure to 	offer Software as a Service (SaaS) or such Developers who develop 	software for other ISVs who in turn may sell such software for on 	premise installation or host as SaaS to their own customers.
 
-7. "**Retail License**" shall mean any of the licenses granted to the Licensee for use 	within internal applications, corporate websites or content sites, through this Agreement, as set out in Table A.
+(g) "**Retail License**" shall mean any of the licenses granted to the Licensee for use 	within internal applications, corporate websites or content sites, through this Agreement, as set out in Table A.
 
-8. "**Packaged Software Product**" refers to a single application or suite of commercial applications built to be used by many customers, businesses or consumers and is installed on the customer's premises or infrastructure, for which an OEM license of FusionCharts software is required.
+(h) "**Packaged Software Product**" refers to a single application or suite of commercial applications built to be used by many customers, businesses or consumers and is installed on the customer's premises or infrastructure, for which an OEM license of FusionCharts software is required.
 
-9. "**SaaS 	(software as a service) Application**" shall mean a product or an application on a remote server offered to users under the terms of a subscription or other financial agreement.
+(i) "**SaaS 	(software as a service) Application**" shall mean a product or an application on a remote server offered to users under the terms of a subscription or other financial agreement.
 
-10. "**License Fee**" shall mean the Retail License fee payable at the time of purchase as provided in the FusionCharts website ([www.fusioncharts.com/buy](http://www.fusioncharts.com/buy)). 	License Fee may change at any time at the discretion of FusionCharts.
+(j) "**License Fee**" shall mean the Retail License fee payable at the time of purchase as provided in the FusionCharts website ([www.fusioncharts.com/buy](http://www.fusioncharts.com/buy)). 	License Fee may change at any time at the discretion of FusionCharts.
 
-11. **"Perpetual Retail License"** 	is a specific type of Retail License, with life-time validity and does not need annual renewals, and includes support and upgrades for a specified period as mentioned in Table A, with renewals after such period to avail of further support and upgrades of the Software.
+(k) **"Perpetual Retail License"** 	is a specific type of Retail License, with life-time validity and does not need annual renewals, and includes support and upgrades for a specified period as mentioned in Table A, with renewals after such period to avail of further support and upgrades of the Software.
 
-12. "**License Statement**" 	shall mean a purchase confirmation document sent to the Retail Licensee by InfoSoft containing details of the Retail Licensee, particulars of Retail License purchased, License Fee Period and 	related information.
+(l) "**License Statement**" 	shall mean a purchase confirmation document sent to the Retail Licensee by InfoSoft containing details of the Retail Licensee, particulars of Retail License purchased, License Fee Period and 	related information.
 
-13. "**Developer**" shall mean any Person working with FusionCharts API, implementing or testing FusionCharts in the software or doing customizations to the 	FusionCharts Software. 
+(m) "**Developer**" shall mean any Person working with FusionCharts API, implementing or testing FusionCharts in the software or doing customizations to the 	FusionCharts Software. 
 
-14. "**Derivative 	Works**" 	means any software programs which are developed by licensee and 	which incorporate or contain modifications of any part of Source 	Code, and including any revision, modification, translation 	(including compilation or recapitulation by computer), abridgement, 	condensation, expansion or any other form in which Source Code, may 	be recast, transformed or adapted.
+(n) "**Derivative 	Works**" 	means any software programs which are developed by licensee and 	which incorporate or contain modifications of any part of Source 	Code, and including any revision, modification, translation 	(including compilation or recapitulation by computer), abridgement, 	condensation, expansion or any other form in which Source Code, may 	be recast, transformed or adapted.
 
-15. **"Upgrade"** means an upgrade to the current version of the FusionCharts 	Software."
+(o) **"Upgrade"** means an upgrade to the current version of the FusionCharts 	Software."
 
-16. "**Intellectual Property Rights**" means patents, trade or service marks, registered designs or applications for any of the foregoing, copyright, design rights, 	database right and any other industrial or intellectual property right.
+(p) "**Intellectual Property Rights**" means patents, trade or service marks, registered designs or applications for any of the foregoing, copyright, design rights, 	database right and any other industrial or intellectual property right.
 
-17. "**Documentation**" means all end user and developer documentation supplied by 	FusionCharts for the FusionCharts Software, including subsequent revisions and updates thereto.
+(q) "**Documentation**" means all end user and developer documentation supplied by 	FusionCharts for the FusionCharts Software, including subsequent revisions and updates thereto.
 
-18. "**Business Days**" shall mean any day other than Saturday and Sunday or any day on which banks in Kolkata, India are generally closed for regular 	banking business.
+(r) "**Business Days**" shall mean any day other than Saturday and Sunday or any day on which banks in Kolkata, India are generally closed for regular 	banking business.
 
-19. "**Confidential 	Information**" 	means all business information disclosed by one party to the other 	in connection with this Agreement which is either marked or 	designated as being confidential, or should reasonably be understood 	as confidential having regard to its nature or the circumstances in 	which it was disclosed. Without limiting the generality of the 	foregoing, Confidential Information shall include each party's 	data and the details of such party's proprietary software and computer operations.
+(s) "**Confidential 	Information**" 	means all business information disclosed by one party to the other 	in connection with this Agreement which is either marked or 	designated as being confidential, or should reasonably be understood 	as confidential having regard to its nature or the circumstances in 	which it was disclosed. Without limiting the generality of the 	foregoing, Confidential Information shall include each party's 	data and the details of such party's proprietary software and computer operations.
 
 ## 2. Scope of the Perpetual Retail License
 
 2.1.  Ownership and Retail License Grant: This is a license agreement and not an agreement of sale of the Software. Your authorisation to use the Software is dependent on the type of Retail License that you have subscribed to. FusionCharts may modify the types of Retail Licenses, applicable authorisations and restrictions and payment terms.. Except for the rights expressly granted in this Agreement, the Retail License transfers to you no right, title or interest in the Software or any copyright, patent, trademark, trade secret, or other Intellectual Property Rights or proprietary right in the Software. FusionCharts retains sole and exclusive title to all portions of the Software and any copies thereof. Depending on the type of Retail License purchased, Table A shall apply.
 
 2.2.  General terms: There are different types of Perpetual Retail Licenses that may be applicable to you depending on your needs and suitability. We have set out in Table A currently available FusionCharts Retail License types, depending on the nature of use, scope, inclusions and exclusions. A License Statement will be provided to you stipulating the Retail License particulars. General terms applicable to your use of all FusionCharts Retail Licenses are as follows:
-
-    (A).  Supports and Upgrades: Supports and Upgrades may be made available by us for Retail License types as provided in table A. There are no warranties in relation to support or Upgrades or any obligation to provide periodic support or Upgrades. 
-
-    (B). Source Code: Certain types of Retail Licenses as provided in Table A involve the Source Code as part of the Retail License. You may make modifications, enhancements, Derivative Works and/or extensions to that licensed Source Code. However, you will not grant, either expressly or impliedly, any rights, title, interest, or licenses to any such modifications, enhancements, Derivative Works and/or extensions to any third party. You hereby assign and agree to assign all right, title and interest in and to such modifications, enhancements, Derivative Works and/or extensions that may be made to the licensed Source Code to FusionCharts. You agree not to distribute the FusionCharts Software Source Code, or any modification, enhancement, Derivative Work and/or extension thereto, in Source Code form. 
-
+    (A)  Supports and Upgrades: Supports and Upgrades may be made available by us for Retail License types as provided in table A. There are no warranties in relation to support or Upgrades or any obligation to provide periodic support or Upgrades. 
+    (B) Source Code: Certain types of Retail Licenses as provided in Table A involve the Source Code as part of the Retail License. You may make modifications, enhancements, Derivative Works and/or extensions to that licensed Source Code. However, you will not grant, either expressly or impliedly, any rights, title, interest, or licenses to any such modifications, enhancements, Derivative Works and/or extensions to any third party. You hereby assign and agree to assign all right, title and interest in and to such modifications, enhancements, Derivative Works and/or extensions that may be made to the licensed Source Code to FusionCharts. You agree not to distribute the FusionCharts Software Source Code, or any modification, enhancement, Derivative Work and/or extension thereto, in Source Code form. 
     The Source Code contained herein and in related files is provided to the registered Developer for the purpose of modification, education and troubleshooting. Under no circumstances any portion of the Source Code shall be distributed, disclosed or otherwise made available to any third party without the express, prior written consent of FusionCharts. Under no circumstances may the Source Code be used in whole or in part, as the basis for creating a product that provides the same or similar, or substantially the same or similar, functionality as any FusionCharts product or that competes in any manner with FusionCharts products.
-
     (C). Multiple users: If you are a Retail Licensee holding a Single Developer License, then you are not entitled to assign the Retail License to any other Developer within the organization other than the Named Developer. If you hold any other Retail License (other than a Single Developer License), only such permitted number of Developers shall be allowed to use the Retail License as purchased. If the number of Developers are higher than the granted Retail License, you will notify FusionCharts by an email to salesops@fusioncharts.com and the Retail Licensee shall upgrade to a higher version as specified by FusionCharts or as applicable based on the types of Retail Licenses as set out in Table A and pro-rated fees for the remaining developers shall be payable immediately calculated on the next higher version of Retail License.
 
     (D).  Permitted Uses: The Retail Licensee may be permitted to:
