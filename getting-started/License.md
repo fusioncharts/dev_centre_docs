@@ -58,20 +58,22 @@ The Source Code contained herein and in related files is provided to the registe
 (C). Multiple users: If you are a Retail Licensee holding a Single Developer License, then you are not entitled to assign the Retail License to any other Developer within the organization other than the Named Developer. If you hold any other Retail License (other than a Single Developer License), only such permitted number of Developers shall be allowed to use the Retail License as purchased. If the number of Developers are higher than the granted Retail License, you will notify FusionCharts by an email to salesops@fusioncharts.com and the Retail Licensee shall upgrade to a higher version as specified by FusionCharts or as applicable based on the types of Retail Licenses as set out in Table A and pro-rated fees for the remaining developers shall be payable immediately calculated on the next higher version of Retail License.
 
 (D).  Permitted Uses: The Retail Licensee may be permitted to:
-    (a). Allow use by the permitted number of Developers, for development and testing purpose of website or web applications that are not OEM or SaaS, as set out in Table A; and
-    
-    (b). Make copies of the Software for backup purposes.
+
+(a). Allow use by the permitted number of Developers, for development and testing purpose of website or web applications that are not OEM or SaaS, as set out in Table A; and
+
+(b). Make copies of the Software for backup purposes.
 
 (E).  Prohibited uses: You may not
-    (a). Use the FusionCharts Software or any part thereof as a part of any SaaS Application, offered by you or by your client for whom you are developing the software. FusionCharts SaaS license is required for such usage;
-    
-    (b). Use or distribute the FusionCharts Software or any part thereof as part of a Packaged Software Product, framework, component, library or plug-in, offered by you or by your client for whom you are developing such software. An OEM License is required for such usage;
-    
-    (c). Disassemble, decompile, decode or otherwise reverse translate or engineer, or attempt in any manner to reconstruct or discover any source code or underlying algorithms of Software, if provided in object code form only;
-    
-    (d). Use, copy, modify, or merge copies of the Software and any accompanying documents except as permitted in this Agreement;
-    
-    (e). Sell, lease, assign, transfer, sublicense, disseminate, translate, duplicate, reproduce or copy the Software or permit any of the foregoing) or any information pertaining thereto to any other party except as permitted in this Agreement;
+
+(a). Use the FusionCharts Software or any part thereof as a part of any SaaS Application, offered by you or by your client for whom you are developing the software. FusionCharts SaaS license is required for such usage;
+
+(b). Use or distribute the FusionCharts Software or any part thereof as part of a Packaged Software Product, framework, component, library or plug-in, offered by you or by your client for whom you are developing such software. An OEM License is required for such usage;
+
+(c). Disassemble, decompile, decode or otherwise reverse translate or engineer, or attempt in any manner to reconstruct or discover any source code or underlying algorithms of Software, if provided in object code form only;
+
+(d). Use, copy, modify, or merge copies of the Software and any accompanying documents except as permitted in this Agreement;
+
+(e). Sell, lease, assign, transfer, sublicense, disseminate, translate, duplicate, reproduce or copy the Software or permit any of the foregoing) or any information pertaining thereto to any other party except as permitted in this Agreement;
 
 (F). If you sell, or license any Packaged Software Product or host as SaaS any application which has the FusionCharts Software embedded in it, appropriate OEM License should be purchased from us by contacting us at sales@fusioncharts.com. In the event you have embedded such software without purchasing an OEM License from us, you shall be required to make immediate payment of the OEM License Fee to us for all such periods during which such software was used for such Purposes. If your customer for whom you have developed such software, sells or licenses any Packaged Software Product or hosts as SaaS any application which has the FusionCharts Software embedded in it, such customer will be required to purchase appropriate OEM License from us by contacting us at sales@fusioncharts.com. In the event your customer uses such embedded FusionCharts Software without purchasing an OEM License from us, your customer shall be required to make immediate payment of the OEM License Fee to us for all such period during which such software was used for such Purposes. 
 
