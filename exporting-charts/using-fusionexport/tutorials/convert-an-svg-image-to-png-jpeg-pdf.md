@@ -1,9 +1,7 @@
 ---
-permalink: exporting-charts/using-fusionexport/tutorials/convert-an-svg-image-to-png-jpeg-pdf.html
 title: Convert an SVG image to PNG/JPEG/PDF | FusionCharts
 description: This article talks about the SDKs used for converting an SVG image to PNG/JPEG/PDF.
 heading: Convert an SVG image to PNG/JPEG/PDF
-chartPresent: False
 ---
 
 If you have an SVG image, you can convert it into the PNG, JPEG, or PDF formats. 
