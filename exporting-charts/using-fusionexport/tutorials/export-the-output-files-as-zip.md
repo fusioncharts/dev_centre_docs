@@ -1,9 +1,7 @@
 ---
-permalink: exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip.html
 title: Export the output files as a zip | FusionCharts
 description: This article talks about the SDKs used for exporting output files as a zip.
 heading: Export the output files as a zip
-chartPresent: False
 ---
 
 For exporting the output files as a zip, set `--export-as-zip` option to __true__.
@@ -11,104 +9,15 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
-    <li class="active"><a data-toggle="cli">CLI</a></li>
-    <li><a data-toggle="nodejs">Node.js</a></li>
+    <li class="active"><a data-toggle="csharp">C#</a></li>
     <li><a data-toggle="java">Java</a></li>
-    <li><a data-toggle="csharp">C#</a></li>
     <li><a data-toggle="php">PHP</a></li>
+    <li><a data-toggle="nodejs">Node.js</a></li>
     <li><a data-toggle="python">Python</a></li>
-    <li><a data-toggle="golang">Golang</a></li>
 </ul>
 
 <div class="tab-content extra-tabs">
-    <div class="tab cli-tab active">
-    <div>If you want to export the files as a zip, set the <strong>--output-as-zip</strong> option to true as shown in the command below:</div>
-<pre><code class="custom-hlc language-bash">
-	$ fe -c multiple_charts_config.json -z true
-</code></pre>
-</div>
-    
-<div class="tab nodejs-tab">
-<pre><code class="custom-hlc language-javascript">
-	// Exporting the Output Files as Zip
-	const path = require('path');
 
-	// Require FusionExport
-	const {
-	    ExportManager,
-	    ExportConfig
-	} = require('../');
-
-	// Instantiate ExportManager
-	const exportManager = new ExportManager();
-
-	// Instantiate ExportConfig and add the required configurations
-	const exportConfig = new ExportConfig();
-
-	exportConfig.set('chartConfig', path.join(__dirname, 'resources', 'multiple.json'));
-	exportConfig.set('outputFile', 'export-<%= number(5) %>');
-	exportConfig.set('exportAsZip', true);
-
-	// provide the export config
-	exportManager.export(exportConfig);
-
-	// Called when export is done
-	exportManager.on('exportDone', (outputFileBag) => {
-	    outputFileBag.forEach((op) => {
-	        console.log(`DONE: ${op.realName}`);
-	    });
-
-	    ExportManager.saveExportedFiles(outputFileBag);
-	});
-
-	// Called on each export state change
-	exportManager.on('exportStateChange', (state) => {
-	    console.log(`[${state.reporter}] ${state.customMsg}`);
-	});
-
-	// Called on erroe
-	exportManager.on('error', (err) => {
-	    console.error(err);
-	});
-</code></pre>
-</div>
-<div class="tab java-tab">
-<pre><code class="custom-hlc language-java">
-	import com.fusioncharts.fusionexport.client.*; // import sdk
-
-	public class ExportChart {
-	    public static void main(String[] args) throws Exception {
-
-	        String configPath = "fullPath/multiple.json";
-
-	        // Instantiate the ExportConfig class and add the required configurations
-	        ExportConfig config = new ExportConfig();
-	        config.set("chartConfig", configPath);
-	        config.set("exportAsZip", "true");
-
-	        // Instantiate the ExportManager class
-	        ExportManager manager = new ExportManager(config);
-	        // Call the export() method with the export config and the respective callbacks
-	        manager.export(new ExportDoneListener() {
-	                @Override
-	                public void exportDone(ExportDoneData result, ExportException error) {
-	                    if (error != null) {
-	                        System.out.println(error.getMessage());
-	                    } else {
-	                        ExportManager.saveExportedFiles("fullPath", result);
-	                    }
-	                }
-	            },
-	            new ExportStateChangedListener() {
-	                @Override
-	                public void exportStateChanged(ExportState state) {
-	                    System.out.println("STATE: " + state.reporter);
-	                }
-	            });
-	    }
-	}
-</code></pre>
-</div>
 <div class="tab csharp-tab">
 <pre><code class="custom-hlc language-cs">
 	using System;
@@ -156,6 +65,45 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	}
 </code></pre>
 </div>
+
+<div class="tab java-tab">
+<pre><code class="custom-hlc language-java">
+	import com.fusioncharts.fusionexport.client.*; // import sdk
+
+	public class ExportChart {
+	    public static void main(String[] args) throws Exception {
+
+	        String configPath = "fullPath/multiple.json";
+
+	        // Instantiate the ExportConfig class and add the required configurations
+	        ExportConfig config = new ExportConfig();
+	        config.set("chartConfig", configPath);
+	        config.set("exportAsZip", "true");
+
+	        // Instantiate the ExportManager class
+	        ExportManager manager = new ExportManager(config);
+	        // Call the export() method with the export config and the respective callbacks
+	        manager.export(new ExportDoneListener() {
+	                @Override
+	                public void exportDone(ExportDoneData result, ExportException error) {
+	                    if (error != null) {
+	                        System.out.println(error.getMessage());
+	                    } else {
+	                        ExportManager.saveExportedFiles("fullPath", result);
+	                    }
+	                }
+	            },
+	            new ExportStateChangedListener() {
+	                @Override
+	                public void exportStateChanged(ExportState state) {
+	                    System.out.println("STATE: " + state.reporter);
+	                }
+	            });
+	    }
+	}
+</code></pre>
+</div>
+
 <div class="tab php-tab">
 <pre><code class="custom-hlc language-php">
 	<?php
@@ -192,6 +140,52 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
 </code></pre>
 </div>
+
+<div class="tab nodejs-tab">
+<pre><code class="custom-hlc language-javascript">
+	// Exporting the Output Files as Zip
+	const path = require('path');
+
+	// Require FusionExport
+	const {
+	    ExportManager,
+	    ExportConfig
+	} = require('../');
+
+	// Instantiate ExportManager
+	const exportManager = new ExportManager();
+
+	// Instantiate ExportConfig and add the required configurations
+	const exportConfig = new ExportConfig();
+
+	exportConfig.set('chartConfig', path.join(__dirname, 'resources', 'multiple.json'));
+	exportConfig.set('outputFile', 'export-<%= number(5) %>');
+	exportConfig.set('exportAsZip', true);
+
+	// provide the export config
+	exportManager.export(exportConfig);
+
+	// Called when export is done
+	exportManager.on('exportDone', (outputFileBag) => {
+	    outputFileBag.forEach((op) => {
+	        console.log(`DONE: ${op.realName}`);
+	    });
+
+	    ExportManager.saveExportedFiles(outputFileBag);
+	});
+
+	// Called on each export state change
+	exportManager.on('exportStateChange', (state) => {
+	    console.log(`[${state.reporter}] ${state.customMsg}`);
+	});
+
+	// Called on erroe
+	exportManager.on('error', (err) => {
+	    console.error(err);
+	});
+</code></pre>
+</div>
+
 <div class="tab python-tab">
 <pre><code class="custom-hlc language-python">
 	#!/usr/bin/env python
@@ -232,50 +226,6 @@ To do this, you can use the CLI or SDKs of the languages mentioned below, using 
 	em = ExportManager(export_server_host, export_server_port)
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</code></pre>
-</div>
-<div class="tab golang-tab">
-<pre><code class="custom-hlc language-go">
-	// Exporting the Output Files as Zip
-
-	package main
-
-	import (
-		"fmt"
-
-		"github.com/fusioncharts/fusionexport-go-client"
-	)
-
-	// Called when export is done
-	func onDone(outFileBag []FusionExport.OutFileBag, err error) {
-		check(err)
-		FusionExport.SaveExportedFiles(outFileBag)
-	}
-
-	// Called on each export state change
-	func onStateChange(event FusionExport.ExportEvent) {
-		fmt.Println("[" + event.Reporter + "] " + event.CustomMsg)
-	}
-
-	func main() {
-		// Instantiate ExportConfig and add the required configurations
-		exportConfig := FusionExport.NewExportConfig()
-
-		exportConfig.Set("chartConfig", "example/resources/multiple.json")
-		exportConfig.Set("exportFile", "go-export-<%= number(5) %>")
-		exportConfig.Set("exportAsZip", true)
-
-		// Instantiate ExportManager
-		exportManager := FusionExport.NewExportManager()
-		// Call the Export() method with the export config and the respective callbacks
-		exportManager.Export(exportConfig, onDone, onStateChange)
-	}
-
-	func check(e error) {
-		if e != nil {
-			panic(e)
-		}
-	}
 </code></pre>
 </div>
 </div>

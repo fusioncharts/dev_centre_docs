@@ -1,9 +1,7 @@
 ---
-permalink: exporting-charts/using-fusionexport/tutorials/cli-options-in-a-file.html
 title: Add CLI options in a file | FusionCharts
 description: This article talks about the SDKs used for cli options in a file.
 heading: Add CLI options in a file
-chartPresent: False
 ---
 
 All the CLI export config options can be written in a JSON file. To do this, you need to provide the JSON file as CLI arguments using the `--config`, or `-e`, option. The remaining elements will be automatically figured out from that file.

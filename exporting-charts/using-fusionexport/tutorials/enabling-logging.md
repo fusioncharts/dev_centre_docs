@@ -1,9 +1,7 @@
 ---
-permalink: exporting-charts/using-fusionexport/tutorials/enabling-logging.html
 title: Enable logging | FusionCharts
 description: Enagbles the logging feature
 heading: Enable logging
-chartPresent: False
 ---
 
 By default, export logging is disabled. It can be enabled by setting a log destination:

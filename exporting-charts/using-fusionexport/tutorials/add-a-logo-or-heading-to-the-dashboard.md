@@ -1,9 +1,7 @@
 ---
-permalink: exporting-charts/using-fusionexport/tutorials/add-a-logo-or-heading-to-the-dashboard.html
 title: Add a logo or a heading to the dashboard | FusionCharts
 description: This article talks about the SDKs used for exporting a dashboard.
 heading: Add a logo or a heading to the dashboard
-chartPresent: False
 ---
 
 You can add logos, headings, and subheadings to your exported dashboard images. The logo and the heading/subheading can be included at the top of the dashboard. To do so, use the options listed below:
@@ -17,117 +15,14 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
-    <li class="active"><a data-toggle="cli">CLI</a></li>
-    <li><a data-toggle="nodejs">Node.js</a></li>
+    <li class="active"><a data-toggle="csharp">C#</a></li>
     <li><a data-toggle="java">Java</a></li>
-    <li><a data-toggle="csharp">C#</a></li>
     <li><a data-toggle="php">PHP</a></li>
+    <li><a data-toggle="nodejs">Node.js</a></li>
     <li><a data-toggle="python">Python</a></li>
-    <li><a data-toggle="golang">Golang</a></li>
 </ul>
 
 <div class="tab-content extra-tabs">
-<div class="tab cli-tab active">
-<p>To add a logos, headings, and subheadings to the exported dashboard image, use the commands listed below: </p>
-<div>
-<ul>
-<li>To add a logo: <strong>--dashboard-logo</strong> or <strong>-G</strong></li>
-<li>To add a heading: <strong>--dashboard-heading</strong> or <strong>-D</strong></li>
-<li>To add a subheading: <strong>--dashboard-subheading</strong> or <strong>-B</strong></li>
-</ul>
-</div>
-<p><strong>A sample command is shown below:</strong></p>
-<pre><code class="custom-hlc language-bash">
-	$ fe -c multiple_charts_config.json -T template.html -G "path/to/logo.png" -D "FusionExport Dashboard" -B "Powered by FusionExport"
-</code></pre>
-</div>
-<div class="tab nodejs-tab">
-<pre><code class="custom-hlc language-javascript">
-	// Adding a logo or heading to the dashboard
-	const path = require('path');
-
-	// Require FusionExport
-	const {
-	    ExportManager,
-	    ExportConfig
-	} = require('../');
-
-	// Instantiate ExportManager
-	const exportManager = new ExportManager();
-
-	// Instantiate ExportConfig and add the required configurations
-	const exportConfig = new ExportConfig();
-
-	exportConfig.set('chartConfig', path.join(__dirname, 'resources', 'multiple.json'));
-	exportConfig.set('templateFilePath', path.join(__dirname, 'resources', 'template.html'));
-	exportConfig.set('dashboardLogo', path.join(__dirname, 'resources', 'logo.jpg'));
-	exportConfig.set('dashboardHeading', 'FusionCharts');
-	exportConfig.set('dashboardSubheading', 'The best charting library in the world');
-
-	// provide the export config
-	exportManager.export(exportConfig);
-
-	// Called when export is done
-	exportManager.on('exportDone', (outputFileBag) => {
-	    outputFileBag.forEach((op) => {
-	        console.log(`DONE: ${op.realName}`);
-	    });
-
-	    ExportManager.saveExportedFiles(outputFileBag);
-	});
-
-	// Called on each export state change
-	exportManager.on('exportStateChange', (state) => {
-	    console.log(`[${state.reporter}] ${state.customMsg}`);
-	});
-
-	// Called on erroe
-	exportManager.on('error', (err) => {
-	    console.error(err);
-	});
-</code></pre>
-</div>
-<div class="tab java-tab">
-<pre><code class="custom-hlc language-java">
-	import com.fusioncharts.fusionexport.client.*; // import sdk
-
-	public class ExportChart {
-	    public static void main(String[] args) throws Exception {
-
-	        String configPath = "fullpath/resources/static2/resources/multiple.json";
-	        String templatePath = "fullpath/resources/static2/resources/template.html";
-
-	        // Instantiate the ExportConfig class and add the required configurations
-	        ExportConfig config = new ExportConfig();
-	        config.set("chartConfig", configPath);
-	        config.set("templateFilePath", templatePath);
-	        config.set("dashboardLogo", "fullpath/resources/static2/resources/logo.jpg");
-	        config.set("dashboardHeading", "Dashboard");
-	        config.set("dashboardSubheading", "Powered by FusionExport");
-
-	        // Instantiate the ExportManager class
-	        ExportManager manager = new ExportManager(config);
-	        // Call the export() method with the export config and the respective callbacks
-	        manager.export(new ExportDoneListener() {
-	                @Override
-	                public void exportDone(ExportDoneData result, ExportException error) {
-	                    if (error != null) {
-	                        System.out.println(error.getMessage());
-	                    } else {
-	                        ExportManager.saveExportedFiles("fullPath", result);
-	                    }
-	                }
-	            },
-	            new ExportStateChangedListener() {
-	                @Override
-	                public void exportStateChanged(ExportState state) {
-	                    System.out.println("STATE: " + state.reporter);
-	                }
-	            });
-	    }
-	}
-</code></pre>
-</div>
 <div class="tab csharp-tab">
 <pre><code class="custom-hlc language-cs">
 	using System;
@@ -178,6 +73,48 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	}
 </code></pre>
 </div>
+<div class="tab java-tab">
+<pre><code class="custom-hlc language-java">
+	import com.fusioncharts.fusionexport.client.*; // import sdk
+
+	public class ExportChart {
+	    public static void main(String[] args) throws Exception {
+
+	        String configPath = "fullpath/resources/static2/resources/multiple.json";
+	        String templatePath = "fullpath/resources/static2/resources/template.html";
+
+	        // Instantiate the ExportConfig class and add the required configurations
+	        ExportConfig config = new ExportConfig();
+	        config.set("chartConfig", configPath);
+	        config.set("templateFilePath", templatePath);
+	        config.set("dashboardLogo", "fullpath/resources/static2/resources/logo.jpg");
+	        config.set("dashboardHeading", "Dashboard");
+	        config.set("dashboardSubheading", "Powered by FusionExport");
+
+	        // Instantiate the ExportManager class
+	        ExportManager manager = new ExportManager(config);
+	        // Call the export() method with the export config and the respective callbacks
+	        manager.export(new ExportDoneListener() {
+	                @Override
+	                public void exportDone(ExportDoneData result, ExportException error) {
+	                    if (error != null) {
+	                        System.out.println(error.getMessage());
+	                    } else {
+	                        ExportManager.saveExportedFiles("fullPath", result);
+	                    }
+	                }
+	            },
+	            new ExportStateChangedListener() {
+	                @Override
+	                public void exportStateChanged(ExportState state) {
+	                    System.out.println("STATE: " + state.reporter);
+	                }
+	            });
+	    }
+	}
+</code></pre>
+</div>
+
 <div class="tab php-tab">
 <pre><code class="custom-hlc language-php">
 	<?php
@@ -214,6 +151,53 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	$exportManager = new ExportManager();
 	// Call the export() method with the export config and the respective callbacks
 	$exportManager->export($exportConfig, $onDone, $onStateChange);
+</code></pre>
+</div>
+
+<div class="tab nodejs-tab">
+<pre><code class="custom-hlc language-javascript">
+	// Adding a logo or heading to the dashboard
+	const path = require('path');
+
+	// Require FusionExport
+	const {
+	    ExportManager,
+	    ExportConfig
+	} = require('../');
+
+	// Instantiate ExportManager
+	const exportManager = new ExportManager();
+
+	// Instantiate ExportConfig and add the required configurations
+	const exportConfig = new ExportConfig();
+
+	exportConfig.set('chartConfig', path.join(__dirname, 'resources', 'multiple.json'));
+	exportConfig.set('templateFilePath', path.join(__dirname, 'resources', 'template.html'));
+	exportConfig.set('dashboardLogo', path.join(__dirname, 'resources', 'logo.jpg'));
+	exportConfig.set('dashboardHeading', 'FusionCharts');
+	exportConfig.set('dashboardSubheading', 'The best charting library in the world');
+
+	// provide the export config
+	exportManager.export(exportConfig);
+
+	// Called when export is done
+	exportManager.on('exportDone', (outputFileBag) => {
+	    outputFileBag.forEach((op) => {
+	        console.log(`DONE: ${op.realName}`);
+	    });
+
+	    ExportManager.saveExportedFiles(outputFileBag);
+	});
+
+	// Called on each export state change
+	exportManager.on('exportStateChange', (state) => {
+	    console.log(`[${state.reporter}] ${state.customMsg}`);
+	});
+
+	// Called on erroe
+	exportManager.on('error', (err) => {
+	    console.error(err);
+	});
 </code></pre>
 </div>
 <div class="tab python-tab">
@@ -264,52 +248,6 @@ To add logos, headings, and subheadings to your exported dashboard images, you c
 	export () method with the
 	export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</code></pre>
-</div>
-<div class="tab golang-tab">
-<pre><code class="custom-hlc language-go">
-	// Adding a logo or heading to the dashboard
-
-	package main
-
-	import (
-		"fmt"
-
-		"github.com/fusioncharts/fusionexport-go-client"
-	)
-
-	// Called when export is done
-	func onDone(outFileBag []FusionExport.OutFileBag, err error) {
-		check(err)
-		FusionExport.SaveExportedFiles(outFileBag)
-	}
-
-	// Called on each export state change
-	func onStateChange(event FusionExport.ExportEvent) {
-		fmt.Println("[" + event.Reporter + "] " + event.CustomMsg)
-	}
-
-	func main() {
-		// Instantiate ExportConfig and add the required configurations
-		exportConfig := FusionExport.NewExportConfig()
-
-		exportConfig.Set("chartConfig", "example/resources/multiple.json")
-		exportConfig.Set("templateFilePath", "example/resources/template.html")
-		exportConfig.Set("dashboardLogo", "example/resources/logo.jpg")
-		exportConfig.Set("dashboardHeading", "FusionCharts")
-		exportConfig.Set("dashboardSubheading", "The best charting library in the world")
-
-		// Instantiate ExportManager
-		exportManager := FusionExport.NewExportManager()
-		// Call the Export() method with the export config and the respective callbacks
-		exportManager.Export(exportConfig, onDone, onStateChange)
-	}
-
-	func check(e error) {
-		if e != nil {
-			panic(e)
-		}
-	}
 </code></pre>
 </div>
 </div>
