@@ -23,7 +23,7 @@ Download the components from [here](https://nodejs.org/en/download/).
 2. Run the following command to install the FusionExport CLI:
 
 ```Bash
-$ npm i -g fusionexport-cli|
+$ npm i -g fusionexport-cli
 ```
 
 We recommend global installation to facilitate using the tool from any directory on your system.
@@ -31,7 +31,7 @@ We recommend global installation to facilitate using the tool from any directory
 3. Verify whether FusionExport CLI has been properly installed or not:
 
 ```Bash
-$ fusionexport --help|
+$ fusionexport --help
 ```
 
 > Before using FusionExport CLI, ensure that [FusionExport Server]({% site.baseurl %}/dev/exporting-charts/using-fusionexport/installation/install-fusionexport-server) is running.
