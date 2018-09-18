@@ -107,13 +107,6 @@ dependencies {
 &lt;/dependency&gt;
 </code></pre></div>
 
-<div class="tab golang-tab">
-<strong>To install the go package, simply use go get:</strong>
-<pre><code class="language-go">	go get github.com/fusioncharts/fusionexport-go-client </code></pre>
-<strong>To require this into your project:</strong>
-<pre><code class="language-go">	import "github.com/fusioncharts/fusionexport-go-client"</code></pre>
-</div>
-
 <div class="tab php-tab">
 <strong>Install the PHP SDK client for FusionExport using [composer](https://getcomposer.org/) (`PHP >= 7.x, composer >= 1.7.x`):</strong>
 <pre><code class="language-php"> $ composer require fusioncharts/fusionexport:1.0.0-rc</code></pre>
