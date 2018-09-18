@@ -20,7 +20,7 @@ The chart configuration files are simple `.json` files. If you are executing the
 [code_executed_from_this_directory]/resources/chart-config-file.json
 ```
 
-> It is **not** mandatory to create a file containing the chart configuration. In the code, you can directly create an object containing a serialized JSON string representation of the chart configuration, and pass it on to the `ExportConfig.set()` object of the FusionExport SDK you are using. For more clarity, see the inline comments in the [template code](ADD LINK).
+> It is **not** mandatory to create a file containing the chart configuration. In the code, you can directly create an object containing a serialized JSON string representation of the chart configuration, and pass it on to the `ExportConfig.set()` object of the FusionExport SDK you are using. For more clarity, see the inline comments in the [template code]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-chart-as-image#code-3).
 
 The accepted format of configuration is the same as that of charts which you can generate using [FusionCharts Suite](https://www.fusioncharts.com/download/fusioncharts-suite). Refer to [Chart Attributes]({% site.baseurl %}/chart-attributes/?chart=column2d) for detailed information on the possible configurations of the charts. 
 
