@@ -308,14 +308,10 @@ em.export(export_config, on_export_done, on_export_state_changed)
 </div>
 </div>
 
-## Related Resources
+## Next Steps
+
+After you have exported a single chart as an image, we recommend learning how to:
 
 * [Change the Export Type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
 
-* [Export Charts in Bulk]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-charts-in-bulk)
-
-* [Export in Bulk Using Multiple JSON Files]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-in-bulk-using-multiple-js-json-files)
-
-* [Export a Dashboard]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-a-dashboard)
-
-* [Convert an SVG Image to PNG/JPEG/PDF]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/convert-an-svg-image-to-png-jpeg-pdf)
+* [Change the Export Quality](https://www.fusioncharts.com/dev/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)

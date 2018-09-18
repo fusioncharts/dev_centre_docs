@@ -1,9 +1,7 @@
 ---
-permalink: exporting-charts/using-fusionexport/tutorials/manipulate-the-output-filename.html
 title: Manipulate the output filename | FusionCharts
 description: This article talks about the SDKs used for manipulating the output filename.
 heading: Manipulate the output filename
-chartPresent: False
 ---
 
 Output filenames can be dynamically generated using the  `--output-file-definition`  option. This option takes a JavaScript file as an input, which can contain multiple function definitions, as shown below:
