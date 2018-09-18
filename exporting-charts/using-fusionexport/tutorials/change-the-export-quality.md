@@ -95,7 +95,8 @@ Before you start with the code, we suggest going through the steps that the code
 
 <div class="tab-content">
 <div class="tab csharp-tab">
-<pre><code class="custom-hlc language-cs">using System;
+<pre><code class="custom-hlc language-cs">
+using System;
 using System.IO;
 using System.Linq;
 using FusionCharts.FusionExport.Client; // Import sdk
