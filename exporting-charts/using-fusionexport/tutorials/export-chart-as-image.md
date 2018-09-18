@@ -58,7 +58,7 @@ Except for the case of exporting dashboards, all other exports work on the basis
 
 Based on the above configuration, the exported chart will look like the illustration below.
 
-![Border and Background]({% site.baseurl %}/images/export-chart-as-image-1.png)
+![Export-Chart-As-Image]({% site.baseurl %}/images/export-chart-as-image-1.png)
 
 ## Code
 
