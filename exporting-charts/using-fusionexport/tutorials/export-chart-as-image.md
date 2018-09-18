@@ -1,9 +1,7 @@
 ---
-permalink: exporting-charts/using-fusionexport/tutorials/export-chart-as-image.html
 title: Export chart as image | FusionCharts
 description: This article talks about the SDKs used for exporting charts as images.
 heading: Export chart as image
-chartPresent: False
 ---
 
 Let's start with a simple chart export. For exporting a single chart, save the chart configuration in a JSON file. The configuration should be inside an array.
@@ -11,73 +9,126 @@ To export charts as images, you can use the CLI or SDKs of the languages mention
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
-    <li class="active"><a data-toggle="cli">CLI</a></li>
-    <li><a data-toggle="nodejs">Node.js</a></li>
-    <li><a data-toggle="java">Java</a></li>
-    <li><a data-toggle="csharp">C#</a></li>
-    <li><a data-toggle="php">PHP</a></li>
-    <li><a data-toggle="python">Python</a></li>
-    <li><a data-toggle="golang">Golang</a></li>
+	<li class="active"><a data-toggle="csharp">C#</a></li>
+	<li><a data-toggle="java">Java</a></li>
+	<li><a data-toggle="php">PHP</a></li>
+	<li><a data-toggle="nodejs">Node.js</a></li>
+	<li><a data-toggle="python">Python</a></li>
 </ul>
 
 <div class="tab-content extra-tabs">
-<div class="tab cli-tab active">
-<div class="pb-10">FusionExport CLI accepts a chart’s configuration using the  <strong>--chart-config</strong> or <strong>-c</strong> options.</div>
-<div class="mt-10 pb-10"><strong>For exporting a single chart from the CLI, using a JSON file:</strong></div>
-<div><strong>Step 1</strong></div>
-<div class="pb-10">Save the chart configuration in a JSON file named as chart-config-file.json</div>
-<pre><code class="custom-hlc language-javascript">
-	[
-		{
-			"type": "column2d",
-			"renderAt": "chart-container",
-			"width": "550",
-			"height": "350",
-			"dataFormat": "json",
-			"dataSource": {
-				"chart": {
-					"caption": "Number of visitors last week",
-					"subCaption": "Bakersfield Central vs Los Angeles Topanga"
-				},
-				"data": [
-					{
-						"label": "Mon",
-						"value": "15123"
-					},
-					{
-						"label": "Tue",
-						"value": "14233"
-					},
-					{
-						"label": "Wed",
-						"value": "25507"
-					}
-				]
-			}
-		}
-	]
-</code></pre>
-<div class="mt-20"><strong>Step 2</strong></div>
-<div class="pb-10">To export the file, run the following command from the terminal/command prompt:</div>
-<pre><code class="custom-hlc language-bash">
-	$ fe -c chart-config-file.json
-</code></pre>
-<div class="mt-30"><strong>For exporting a single chart from the CLI, using a JS file:</strong></div>
-<div class="mt-20"><strong>Step 1</strong></div>
-<div class="pb-10">Save the chart configuration in a JavaScript file named as <strong>chart-config-file.js</strong>. In this case, the whole chart configuration object must be exported. </div>
 
-<pre><code class="custom-hlc language-json">
-	module.exports = {
-		// fusioncharts config
-	};
-</code></pre>
+<div class="tab csharp-tab">
+<pre><code class="custom-hlc language-cs">
+	using System;
+	using System.IO;
+	using System.Linq;
+	using FusionCharts.FusionExport.Client; // Import sdk
 
-<div class="mt-20"><strong>Step 2</strong></div>
-<div class="pb-10">To use this newly created JavaScript file for the export, execute the following command:</div>
-<pre><code class="custom-hlc language-javascript">
-	$ fe -c chart-config-file.js
+	namespace FusionExportTest {
+	    public static class ExportSingleChart {
+	        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT) {
+	            // Instantiate the ExportConfig class and add the required configurations
+	            ExportConfig exportConfig = new ExportConfig();
+	            exportConfig.Set("chartConfig", File.ReadAllText("./resources/chart-config-file.json"));
+
+	            // Instantiate the ExportManager class
+	            ExportManager em = new ExportManager(host: host, port: port);
+	            // Call the Export() method with the export config and the respective callbacks
+	            em.Export(exportConfig, OnExportDone, OnExportStateChanged);
+	        }
+
+	        // Called when export is done
+	        static void OnExportDone(ExportEvent ev, ExportException error) {
+	            if (error != null) {
+	                Console.WriteLine("Error: " + error);
+	            } else {
+	                var fileNames = ExportManager.GetExportedFileNames(ev.exportedFiles);
+	                Console.WriteLine("Done: " + String.Join(", ", fileNames)); // export result
+	            }
+	        }
+
+	        // Called on each export state change
+	        static void OnExportStateChanged(ExportEvent ev) {
+	            Console.WriteLine("State: " + ev.state.customMsg);
+	        }
+	    }
+	}
 </code></pre>
 </div>
+
+<div class="tab java-tab">
+<pre><code class="custom-hlc language-java">
+	import com.fusioncharts.fusionexport.client.*; // import sdk
+
+	public class ExportChart {
+	    public static void main(String[] args) throws Exception {
+
+	        String configPath = "fullPath/resources/static2/resources/multiple.json";
+
+	        // Instantiate the ExportConfig class and add the required configurations
+	        ExportConfig config = new ExportConfig();
+	        config.set("chartConfig", configPath);
+
+	        // Instantiate the ExportManager class
+	        ExportManager manager = new ExportManager(config);
+	        // Call the export() method with the export config and the respective callbacks
+	        manager.export(new ExportDoneListener() {
+	                @Override
+	                public void exportDone(ExportDoneData result, ExportException error) {
+	                    if (error != null) {
+	                        System.out.println(error.getMessage());
+	                    } else {
+	                        ExportManager.saveExportedFiles("fullPath", result);
+	                    }
+	                }
+	            },
+	            new ExportStateChangedListener() {
+	                @Override
+	                public void exportStateChanged(ExportState state) {
+	                    System.out.println("STATE: " + state.reporter);
+	                }
+	            });
+	    }
+	}
+</code></pre>
+</div>
+
+<div class="tab php-tab">
+<pre><code class="custom-hlc language-php">
+	<?php
+	// Exporting a chart
+	require __DIR__ . '/../vendor/autoload.php';
+	// Use the sdk
+	use FusionExport\ExportManager;
+	use FusionExport\ExportConfig;
+	// Instantiate the ExportConfig class and add the required configurations
+	$exportConfig = new ExportConfig();
+	$exportConfig->set('chartConfig', realpath('resources/single.json'));
+	// Called on each export state change
+	$onStateChange = function ($event) {
+	    $state = $event->state;
+	    echo('STATE: [' . $state->reporter . '] ' . $state->customMsg . "\n");
+	};
+	// Called when export is done
+	$onDone = function ($event, $e) {
+	    $export = $event->export;
+	    if ($e) {
+	        echo('ERROR: ' . $e->getMessage());
+	    } else {
+	        foreach ($export as $file) {
+	            echo('DONE: ' . $file->realName. "\n");
+	        }
+	        ExportManager::saveExportedFiles($export);
+	    }
+	};
+	// Instantiate the ExportManager class
+	$exportManager = new ExportManager();
+	// Call the export() method with the export config and the respective callbacks
+	$exportManager->export($exportConfig, $onDone, $onStateChange);
+</code></pre>
+</div>
+
 <div class="tab nodejs-tab">
 <pre><code class="custom-hlc language-javascript">
 	// Exporting a chart
@@ -120,114 +171,7 @@ To export charts as images, you can use the CLI or SDKs of the languages mention
 	});
 </code></pre>
 </div>
-<div class="tab java-tab">
-<pre><code class="custom-hlc language-java">
-	import com.fusioncharts.fusionexport.client.*; // import sdk
 
-	public class ExportChart {
-	    public static void main(String[] args) throws Exception {
-
-	        String configPath = "fullPath/resources/static2/resources/multiple.json";
-
-	        // Instantiate the ExportConfig class and add the required configurations
-	        ExportConfig config = new ExportConfig();
-	        config.set("chartConfig", configPath);
-
-	        // Instantiate the ExportManager class
-	        ExportManager manager = new ExportManager(config);
-	        // Call the export() method with the export config and the respective callbacks
-	        manager.export(new ExportDoneListener() {
-	                @Override
-	                public void exportDone(ExportDoneData result, ExportException error) {
-	                    if (error != null) {
-	                        System.out.println(error.getMessage());
-	                    } else {
-	                        ExportManager.saveExportedFiles("fullPath", result);
-	                    }
-	                }
-	            },
-	            new ExportStateChangedListener() {
-	                @Override
-	                public void exportStateChanged(ExportState state) {
-	                    System.out.println("STATE: " + state.reporter);
-	                }
-	            });
-	    }
-	}
-</code></pre>
-</div>
-<div class="tab csharp-tab">
-<pre><code class="custom-hlc language-cs">
-	using System;
-	using System.IO;
-	using System.Linq;
-	using FusionCharts.FusionExport.Client; // Import sdk
-
-	namespace FusionExportTest {
-	    public static class ExportSingleChart {
-	        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT) {
-	            // Instantiate the ExportConfig class and add the required configurations
-	            ExportConfig exportConfig = new ExportConfig();
-	            exportConfig.Set("chartConfig", File.ReadAllText("./resources/chart-config-file.json"));
-
-	            // Instantiate the ExportManager class
-	            ExportManager em = new ExportManager(host: host, port: port);
-	            // Call the Export() method with the export config and the respective callbacks
-	            em.Export(exportConfig, OnExportDone, OnExportStateChanged);
-	        }
-
-	        // Called when export is done
-	        static void OnExportDone(ExportEvent ev, ExportException error) {
-	            if (error != null) {
-	                Console.WriteLine("Error: " + error);
-	            } else {
-	                var fileNames = ExportManager.GetExportedFileNames(ev.exportedFiles);
-	                Console.WriteLine("Done: " + String.Join(", ", fileNames)); // export result
-	            }
-	        }
-
-	        // Called on each export state change
-	        static void OnExportStateChanged(ExportEvent ev) {
-	            Console.WriteLine("State: " + ev.state.customMsg);
-	        }
-	    }
-	}
-</code></pre>
-</div>
-<div class="tab php-tab">
-<pre><code class="custom-hlc language-php">
-	<?php
-	// Exporting a chart
-	require __DIR__ . '/../vendor/autoload.php';
-	// Use the sdk
-	use FusionExport\ExportManager;
-	use FusionExport\ExportConfig;
-	// Instantiate the ExportConfig class and add the required configurations
-	$exportConfig = new ExportConfig();
-	$exportConfig->set('chartConfig', realpath('resources/single.json'));
-	// Called on each export state change
-	$onStateChange = function ($event) {
-	    $state = $event->state;
-	    echo('STATE: [' . $state->reporter . '] ' . $state->customMsg . "\n");
-	};
-	// Called when export is done
-	$onDone = function ($event, $e) {
-	    $export = $event->export;
-	    if ($e) {
-	        echo('ERROR: ' . $e->getMessage());
-	    } else {
-	        foreach ($export as $file) {
-	            echo('DONE: ' . $file->realName. "\n");
-	        }
-	        ExportManager::saveExportedFiles($export);
-	    }
-	};
-	// Instantiate the ExportManager class
-	$exportManager = new ExportManager();
-	// Call the export() method with the export config and the respective callbacks
-	$exportManager->export($exportConfig, $onDone, $onStateChange);
-</code></pre>
-</div>
 <div class="tab python-tab">
 <pre><code class="custom-hlc language-python">
 	#!/usr/bin/env python
@@ -267,48 +211,6 @@ To export charts as images, you can use the CLI or SDKs of the languages mention
 	em = ExportManager(export_server_host, export_server_port)
 	# Call the export() method with the export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</code></pre>
-</div>
-<div class="tab golang-tab">
-<pre><code class="custom-hlc language-javascript">
-	// Exporting a chart
-
-	package main
-
-	import (
-		"fmt"
-
-		"github.com/fusioncharts/fusionexport-go-client"
-	)
-
-	// Called when export is done
-	func onDone(outFileBag []FusionExport.OutFileBag, err error) {
-		check(err)
-		FusionExport.SaveExportedFiles(outFileBag)
-	}
-
-	// Called on each export state change
-	func onStateChange(event FusionExport.ExportEvent) {
-		fmt.Println("[" + event.Reporter + "] " + event.CustomMsg)
-	}
-
-	func main() {
-		// Instantiate ExportConfig and add the required configurations
-		exportConfig := FusionExport.NewExportConfig()
-
-		exportConfig.Set("chartConfig", "example/resources/single.json")
-
-		// Instantiate ExportManager
-		exportManager := FusionExport.NewExportManager()
-		// Call the Export() method with the export config and the respective callbacks
-		exportManager.Export(exportConfig, onDone, onStateChange)
-	}
-
-	func check(e error) {
-		if e != nil {
-			panic(e)
-		}
-	}
 </code></pre>
 </div>
 </div>
