@@ -1,9 +1,7 @@
 ---
-permalink: exporting-charts/using-fusionexport/tutorials/save-exported-files-to-s-three.html
 title: Save exported files to S3 | FusionCharts
 description: This article talks about the SDKs used to save exported files to s3.
 heading: Save exported files to S3
-chartPresent: False
 ---
 
 To directly save exported files into s3, you need to obtain below credentials from S3:

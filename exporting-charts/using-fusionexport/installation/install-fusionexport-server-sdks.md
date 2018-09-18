@@ -20,25 +20,14 @@ To export charts and dashboards using FusionExport, you can develop the applicat
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
-    <li class="active"><a data-toggle="nodejs">Node.js</a></li>
-    <li><a data-toggle="python">Python</a></li>
-    <li><a data-toggle="csharp">C#</a></li>
+    <li class="active"><a data-toggle="csharp">C#</a></li>
     <li><a data-toggle="java">Java</a></li>
-    <li><a data-toggle="golang">Golang</a></li>
     <li><a data-toggle="php">PHP</a></li>
+    <li><a data-toggle="nodejs">Node.js</a></li>
+    <li><a data-toggle="python">Python</a></li>
 </ul>
 
 <div class="tab-content extra-tabs">
-<div class="tab nodejs-tab active">
-<strong>Install the Node.js SDK client for FusionExport using [npm](https://www.npmjs.com/) (`Node.js >= 8.0.0, npm >= 5.0.0`):</strong>
-<pre><code class="language-Bash"> $ npm install fusionexport-node-client --save</code></pre>
-</div>
-
-<div class="tab python-tab">
-<strong>Install the Python SDK client for FusionExport using [pip](https://pypi.org/project/pip/) (`Python >= 3.x`):</strong>
-<pre><code class="language-python">	$ pip install fusionexport</code></pre>
-<p><strong>Note: </strong>To avoid global installation, we recommend [creating a virtual environment](https://docs.python.org/3/tutorial/venv.html) before installing the package. If you want `pip` to install the package in a specific directory *without* using virtual environment, you may also experiment with the suggestions in [this StackOverflow thread](https://stackoverflow.com/questions/2915471/install-a-python-package-into-a-different-directory-using-pip), or [this Github issue](https://github.com/pypa/pip/issues/446).</p>
-</div>
 
 <div class="tab csharp-tab">
 <strong>Install the C# SDK client for FusionExport using the [NuGet](https://www.nuget.org/) package manager (`.NET >= 4.0`). Open the *NuGet package manager console* and execute the following command:</strong>
@@ -107,16 +96,20 @@ dependencies {
 &lt;/dependency&gt;
 </code></pre></div>
 
-<div class="tab golang-tab">
-<strong>To install the go package, simply use go get:</strong>
-<pre><code class="language-go">	go get github.com/fusioncharts/fusionexport-go-client </code></pre>
-<strong>To require this into your project:</strong>
-<pre><code class="language-go">	import "github.com/fusioncharts/fusionexport-go-client"</code></pre>
-</div>
-
 <div class="tab php-tab">
 <strong>Install the PHP SDK client for FusionExport using [composer](https://getcomposer.org/) (`PHP >= 7.x, composer >= 1.7.x`):</strong>
 <pre><code class="language-php"> $ composer require fusioncharts/fusionexport:1.0.0-rc</code></pre>
+</div>
+
+<div class="tab nodejs-tab active">
+<strong>Install the Node.js SDK client for FusionExport using [npm](https://www.npmjs.com/) (`Node.js >= 8.0.0, npm >= 5.0.0`):</strong>
+<pre><code class="language-Bash"> $ npm install fusionexport-node-client --save</code></pre>
+</div>
+
+<div class="tab python-tab">
+<strong>Install the Python SDK client for FusionExport using [pip](https://pypi.org/project/pip/) (`Python >= 3.x`):</strong>
+<pre><code class="language-python"> $ pip install fusionexport</code></pre>
+<p><strong>Note: </strong>To avoid global installation, we recommend [creating a virtual environment](https://docs.python.org/3/tutorial/venv.html) before installing the package. If you want `pip` to install the package in a specific directory *without* using virtual environment, you may also experiment with the suggestions in [this StackOverflow thread](https://stackoverflow.com/questions/2915471/install-a-python-package-into-a-different-directory-using-pip), or [this Github issue](https://github.com/pypa/pip/issues/446).</p>
 </div>
 </div>
 </div>

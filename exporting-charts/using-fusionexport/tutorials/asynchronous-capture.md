@@ -1,9 +1,7 @@
 ---
-permalink: exporting-charts/using-fusionexport/tutorials/asynchronous-capture.html
 title: Asynchronous capture | FusionCharts
 description: This article talks about the SDKs used for asynchronous capture.
 heading: Asynchronous capture
-chartPresent: False
 ---
 
 Exporting can be invoked from the injected JavaScript (done using the `--callbackFilePath` option). If the `--asyncCapture` option is enabled, the injected script will trigger the  `CAPTURE_EXIT` event.
@@ -18,64 +16,132 @@ To use asynchronous capture, you can use the CLI or SDKs of the languages mentio
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
-    <li class="active"><a data-toggle="cli">CLI</a></li>
-    <li><a data-toggle="nodejs">Node.js</a></li>
+    <li class="active"><a data-toggle="csharp">C#</a></li>
     <li><a data-toggle="java">Java</a></li>
-    <li><a data-toggle="csharp">C#</a></li>
     <li><a data-toggle="php">PHP</a></li>
+    <li><a data-toggle="nodejs">Node.js</a></li>
     <li><a data-toggle="python">Python</a></li>
-    <li><a data-toggle="golang">Golang</a></li>
 </ul>
 
 <div class="tab-content extra-tabs">
-<div class="tab cli-tab active">
-<div class="mt-20 pb-10">Exporting can be invoked from the injected JavaScript (using the `--callbacks` option). If `--async-capture<` option is enabled, the injected script must emit `CAPTURE_EXIT event.`</div>
+<div class="tab csharp-tab">
+<pre><code class="custom-hlc language-c">
+	using System;
+	using System.IO;
+	using System.Linq;
+	using FusionCharts.FusionExport.Client; // Import sdk
 
-<div class="mt-20 pb-10"><strong>An example of a scrollCombidy2d chart is shown below:</strong></div>
-<pre><code class="custom-hlc language-javascript">
-	// scrollchart.js
-	module.exports = {
-	    type: 'scrollcombidy2d',
-	    renderAt: 'chart-container',
-	    width: '550',
-	    height: '400',
-	    dataFormat: 'json',
-	    id: 'myChartId', // for referring the chart instance
-	    dataSource: {
-	        // rest of the config
+	namespace FusionExportTest {
+	    public static class AsyncCapture {
+	        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT) {
+	            // Instantiate the ExportConfig class and add the required configurations
+	            ExportConfig exportConfig = new ExportConfig();
+	            exportConfig.Set("chartConfig", File.ReadAllText("./resources/scrollchart.json"));
+	            exportConfig.Set("callbackFilePath", "./resources/expand_scroll.js");
+	            exportConfig.Set("asyncCapture", "true");
+
+	            // Instantiate the ExportManager class
+	            ExportManager em = new ExportManager(host: host, port: port);
+	            // Call the Export() method with the export config and the respective callbacks
+	            em.Export(exportConfig, OnExportDone, OnExportStateChanged);
+	        }
+
+	        // Called when export is done
+	        static void OnExportDone(ExportEvent ev, ExportException error) {
+	            if (error != null) {
+	                Console.WriteLine("Error: " + error);
+	            } else {
+	                var fileNames = ExportManager.GetExportedFileNames(ev.exportedFiles);
+	                Console.WriteLine("Done: " + String.Join(", ", fileNames)); // export result
+	            }
+	        }
+
+	        // Called on each export state change
+	        static void OnExportStateChanged(ExportEvent ev) {
+	            Console.WriteLine("State: " + ev.state.customMsg);
+	        }
+	    }
+	}
+</code></pre>
+</div>
+
+<div class="tab java-tab">
+<pre><code class="custom-hlc language-java">
+	import com.fusioncharts.fusionexport.client.*; // import sdk
+
+	public class ExportChart {
+	    public static void main(String[] args) throws Exception {
+
+	        String chartConfig = "fullPath/resources/static/scrollchart.json";
+	        String localJS = "fullPath/resources/static/expand_scroll.js";
+
+	        // Instantiate the ExportConfig class and add the required configurations
+	        ExportConfig config = new ExportConfig();
+	        config.set("chartConfig", chartConfig);
+	        config.set("callbackFilePath", localJS);
+	        config.set("asyncCapture", "true");
+
+	        // Instantiate the ExportManager class
+	        ExportManager manager = new ExportManager(config);
+	        // Call the export() method with the export config and the respective callbacks
+	        manager.export(new ExportDoneListener() {
+	                @Override
+	                public void exportDone(ExportDoneData result, ExportException error) {
+	                    if (error != null) {
+	                        System.out.println(error.getMessage());
+	                    } else {
+	                        ExportManager.saveExportedFiles("fullpath", result);
+	                    }
+	                }
+	            },
+	            new ExportStateChangedListener() {
+	                @Override
+	                public void exportStateChanged(ExportState state) {
+	                    System.out.println("STATE: " + state.reporter);
+	                }
+	            });
+	    }
+	}
+</code></pre>
+</div>
+
+<div class="tab php-tab">
+<pre><code class="custom-hlc language-php">
+	<?php
+	// Async capture
+	require __DIR__ . '/../vendor/autoload.php';
+	// Use the sdk
+	use FusionExport\ExportManager;
+	use FusionExport\ExportConfig;
+	// Instantiate the ExportConfig class and add the required configurations
+	$exportConfig = new ExportConfig();
+	$exportConfig->set('chartConfig', realpath('resources/single.json'));
+	$exportConfig->set('callbackFilePath', realpath('resources/expand_scroll.js'));
+	$exportConfig->set('asyncCapture', 'true');
+	// Called on each export state change
+	$onStateChange = function ($event) {
+	    $state = $event->state;
+	    echo('STATE: [' . $state->reporter . '] ' . $state->customMsg . "\n");
+	};
+	// Called when export is done
+	$onDone = function ($event, $e) {
+	    $export = $event->export;
+	    if ($e) {
+	        echo('ERROR: ' . $e->getMessage());
+	    } else {
+	        foreach ($export as $file) {
+	            echo('DONE: ' . $file->realName. "\n");
+	        }
+	        ExportManager::saveExportedFiles($export);
 	    }
 	};
+	// Instantiate the ExportManager class
+	$exportManager = new ExportManager();
+	// Call the export() method with the export config and the respective callbacks
+	$exportManager->export($exportConfig, $onDone, $onStateChange);
 </code></pre>
-<div class="mt-20 pb-10">The intention here is to take a snap of the whole chart. By default, the chart’s width is `550px`. We will increase the width and then ask FusionExport to start processing.</div>
-<div class="mt-20 pb-10"><strong>Following is the content of the callback.js file:</strong></div>
-<pre><code class="custom-hlc language-javascript">
-	    FusionCharts.items.myChartId.addEventListener('renderComplete', (evt) => {
-	    evt.sender.resizeTo('3000', '400');
-	    FusionExport.emit('CAPTURE_EXIT');
-});
-</code></pre>
-
-        <div class="mt-20 pb-10"><strong>Run the following command:</strong></div>
-<pre><code class="custom-hlc language-bash">
-	$ fe -c scrollchart.js -b callback.js -async-capture true
-</code></pre>
-
-<div>By default, the maximum time that FusionExport waits for the <code>`CAPTURE_EXIT`</code> event is 6 seconds. It can be increased up to 60 seconds using `--async-capture-timeout` option.</div>
-<div class="mt-20 pb-10"><strong>Here is an example export_config.json file.</strong></div>
-<pre><code class="custom-hlc language-json">
-	{
-		"chart-config": "scrollchart.js",
-		"callbacks": "callback.js",
-		"async-capture": "true",
-		"async-capture-timeout": "4000",
-		"output-file": "fc-<%= number(1, 10) %>",
-		"type": "jpeg"
-	}       
-</code></pre>
-
-The `--async-capture-timeout` option takes input as milliseconds. 
 </div>
-    
+
 <div class="tab nodejs-tab">
 <pre><code class="custom-hlc language-javascript">
 	// Async capture
@@ -120,121 +186,7 @@ The `--async-capture-timeout` option takes input as milliseconds.
 	});
 </code></pre>
 </div>
-<div class="tab java-tab">
-<pre><code class="custom-hlc language-java">
-	import com.fusioncharts.fusionexport.client.*; // import sdk
 
-	public class ExportChart {
-	    public static void main(String[] args) throws Exception {
-
-	        String chartConfig = "fullPath/resources/static/scrollchart.json";
-	        String localJS = "fullPath/resources/static/expand_scroll.js";
-
-	        // Instantiate the ExportConfig class and add the required configurations
-	        ExportConfig config = new ExportConfig();
-	        config.set("chartConfig", chartConfig);
-	        config.set("callbackFilePath", localJS);
-	        config.set("asyncCapture", "true");
-
-	        // Instantiate the ExportManager class
-	        ExportManager manager = new ExportManager(config);
-	        // Call the export() method with the export config and the respective callbacks
-	        manager.export(new ExportDoneListener() {
-	                @Override
-	                public void exportDone(ExportDoneData result, ExportException error) {
-	                    if (error != null) {
-	                        System.out.println(error.getMessage());
-	                    } else {
-	                        ExportManager.saveExportedFiles("fullpath", result);
-	                    }
-	                }
-	            },
-	            new ExportStateChangedListener() {
-	                @Override
-	                public void exportStateChanged(ExportState state) {
-	                    System.out.println("STATE: " + state.reporter);
-	                }
-	            });
-	    }
-	}
-</code></pre>
-</div>
-<div class="tab csharp-tab">
-<pre><code class="custom-hlc language-c">
-	using System;
-	using System.IO;
-	using System.Linq;
-	using FusionCharts.FusionExport.Client; // Import sdk
-
-	namespace FusionExportTest {
-	    public static class AsyncCapture {
-	        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT) {
-	            // Instantiate the ExportConfig class and add the required configurations
-	            ExportConfig exportConfig = new ExportConfig();
-	            exportConfig.Set("chartConfig", File.ReadAllText("./resources/scrollchart.json"));
-	            exportConfig.Set("callbackFilePath", "./resources/expand_scroll.js");
-	            exportConfig.Set("asyncCapture", "true");
-
-	            // Instantiate the ExportManager class
-	            ExportManager em = new ExportManager(host: host, port: port);
-	            // Call the Export() method with the export config and the respective callbacks
-	            em.Export(exportConfig, OnExportDone, OnExportStateChanged);
-	        }
-
-	        // Called when export is done
-	        static void OnExportDone(ExportEvent ev, ExportException error) {
-	            if (error != null) {
-	                Console.WriteLine("Error: " + error);
-	            } else {
-	                var fileNames = ExportManager.GetExportedFileNames(ev.exportedFiles);
-	                Console.WriteLine("Done: " + String.Join(", ", fileNames)); // export result
-	            }
-	        }
-
-	        // Called on each export state change
-	        static void OnExportStateChanged(ExportEvent ev) {
-	            Console.WriteLine("State: " + ev.state.customMsg);
-	        }
-	    }
-	}
-</code></pre>
-</div>
-<div class="tab php-tab">
-<pre><code class="custom-hlc language-php">
-	<?php
-	// Async capture
-	require __DIR__ . '/../vendor/autoload.php';
-	// Use the sdk
-	use FusionExport\ExportManager;
-	use FusionExport\ExportConfig;
-	// Instantiate the ExportConfig class and add the required configurations
-	$exportConfig = new ExportConfig();
-	$exportConfig->set('chartConfig', realpath('resources/single.json'));
-	$exportConfig->set('callbackFilePath', realpath('resources/expand_scroll.js'));
-	$exportConfig->set('asyncCapture', 'true');
-	// Called on each export state change
-	$onStateChange = function ($event) {
-	    $state = $event->state;
-	    echo('STATE: [' . $state->reporter . '] ' . $state->customMsg . "\n");
-	};
-	// Called when export is done
-	$onDone = function ($event, $e) {
-	    $export = $event->export;
-	    if ($e) {
-	        echo('ERROR: ' . $e->getMessage());
-	    } else {
-	        foreach ($export as $file) {
-	            echo('DONE: ' . $file->realName. "\n");
-	        }
-	        ExportManager::saveExportedFiles($export);
-	    }
-	};
-	// Instantiate the ExportManager class
-	$exportManager = new ExportManager();
-	// Call the export() method with the export config and the respective callbacks
-	$exportManager->export($exportConfig, $onDone, $onStateChange);
-</code></pre>
-</div>
 <div class="tab python-tab">
 <pre><code class="custom-hlc language-python">
 	#!/usr/bin/env python
@@ -281,49 +233,6 @@ The `--async-capture-timeout` option takes input as milliseconds.
 	export () method with the
 	export config and the respective callbacks
 	em.export(export_config, on_export_done, on_export_state_changed)
-</code></pre>
-</div>
-<div class="tab golang-tab">
-<pre><code class="custom-hlc language-javascript">
-	// Async capture
-	package main
-
-	import (
-	    "fmt"
-
-	    "github.com/fusioncharts/fusionexport-go-client"
-	)
-
-	// Called when export is done
-	func onDone(outFileBag[] FusionExport.OutFileBag, err error) {
-	    check(err)
-	    FusionExport.SaveExportedFiles(outFileBag)
-	}
-
-	// Called on each export state change
-	func onStateChange(event FusionExport.ExportEvent) {
-	    fmt.Println("[" + event.Reporter + "] " + event.CustomMsg)
-	}
-
-	func main() {
-	    // Instantiate ExportConfig and add the required configurations
-	    exportConfig: = FusionExport.NewExportConfig()
-
-	    exportConfig.Set("chartConfig", "example/resources/single.json")
-	    exportConfig.Set("callbackFilePath", "example/resources/expand_scroll.js")
-	    exportConfig.Set("asyncCapture", true)
-
-	    // Instantiate ExportManager
-	    exportManager: = FusionExport.NewExportManager()
-	    // Call the Export() method with the export config and the respective callbacks
-	    exportManager.Export(exportConfig, onDone, onStateChange)
-	}
-
-	func check(e error) {
-	    if e != nil {
-	        panic(e)
-	    }
-	}
 </code></pre>
 </div>
 </div>

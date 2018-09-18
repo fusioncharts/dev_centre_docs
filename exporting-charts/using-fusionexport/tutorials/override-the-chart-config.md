@@ -1,9 +1,7 @@
 ---
-permalink: exporting-charts/using-fusionexport/tutorials/override-the-chart-config.html
 title: Override the chart config | FusionCharts
 description: This article talks about the SDKs used for overriding the chart config.
 heading: Override the chart config
-chartPresent: False
 ---
 
 The  `--chart-config-options` option can be used to change the chart configuration, as shown in the example below: 
