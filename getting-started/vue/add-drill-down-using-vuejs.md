@@ -207,5 +207,3 @@ The above chart has been rendered using the following steps:
     * Append the data string or the data URL for the descendant charts within the parent data source. If you append a data string, the data for each descendant chart is embedded within the parent data source and is linked using unique data identifiers.
 
 4. Created a `fusioncharts` directive in a template.
-
-{% embed_all Percentage_Calculation_Snippet.js %}
