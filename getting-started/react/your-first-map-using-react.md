@@ -268,13 +268,13 @@ import ReactDOM from 'react-dom';
 import ReactFC from 'react-fusioncharts';
 
 // Step 3 - Including the fusioncharts library
-import FusionCharts from 'fusioncharts/core';
+import FusionCharts from 'fusioncharts';
 
 // Step 4 - Including the map renderer
-import FusionMaps from 'fusioncharts/maps';
+import FusionMaps from 'fusioncharts/fusioncharts.maps';
 
 // Step 5 - Including the map definition file
-import World from 'fusioncharts/maps/es/fusioncharts.world';
+import World from 'fusioncharts/maps/fusioncharts.world';
 
 // Step 6 - Including the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
@@ -598,13 +598,13 @@ import ReactDOM from 'react-dom';
 import ReactFC from 'react-fusioncharts';
 
 // Step 3 - Including the fusioncharts library
-import FusionCharts from 'fusioncharts/core';
+import FusionCharts from 'fusioncharts';
 
 // Step 4 - Including the map renderer
-import FusionMaps from 'fusioncharts/maps';
+import FusionMaps from 'fusioncharts/fusioncharts.maps';
 
 // Step 5 - Including the map definition file
-import California from 'fusionmaps/maps/es/fusioncharts.california';
+import California from 'fusionmaps/maps/fusioncharts.california';
 
 // Step 6 - Including the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';

@@ -227,10 +227,10 @@ import ReactDOM from 'react-dom';
 import ReactFC from 'react-fusioncharts';
 
 // Step 3 - Including the fusioncharts library
-import FusionCharts from 'fusioncharts/core';
+import FusionCharts from 'fusioncharts';
 
 // Step 4 - Including the chart type
-import Column2D from 'fusioncharts/viz/column2d';
+import Column2D from 'fusioncharts/fusioncharts.charts';
 
 // Step 5 - Including the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
