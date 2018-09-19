@@ -174,9 +174,9 @@ The accepted format of configuration is the same as that of charts you can gener
 
 Based on the above configuration, three charts will be exported and then zipped, generating an output file with the default name `fusioncharts_export.zip` in the same directory from here the export code is executed. You may unzip the file and inspect the exported charts - they will look like the images below.
 
-![Export-Chart-As-Image]({% site.baseurl %}/images/export-chart-as-image-1.png)
+![Change-the-Export-Quality-Image]({% site.baseurl %}/images/change-the-export-quality-image-1.png)
 
-> It is **not** mandatory to create a file containing the chart configuration. In the code, you can directly create an object containing a serialized JSON string representation of the chart configuration, and pass it on to the `ExportConfig.set()` object of the FusionExport SDK you are using. For more clarity, see the inline comments in the [template code](ADD LINK).
+> It is **not** mandatory to create a file containing the chart configuration. In the code, you can directly create an object containing a serialized JSON string representation of the chart configuration, and pass it on to the `ExportConfig.set()` object of the FusionExport SDK you are using. For more clarity, see the inline comments in the template code mentioned below.
 
 ## Code
 
