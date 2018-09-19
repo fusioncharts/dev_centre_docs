@@ -101,13 +101,13 @@ In this example, we will use the JSON format, as shown below:
 {
     // Map Configuration
     "chart": {
-            "caption": "Average Annual Population Growth",
-            "subcaption": " 1955-2015",
-            "numbersuffix": "%",
-            "includevalueinlabels": "1",
-            "labelsepchar": ": ",
-            "entityFillHoverColor": "#FFF9C4",
-            "theme": "fusion"
+        "caption": "Average Annual Population Growth",
+        "subcaption": " 1955-2015",
+        "numbersuffix": "%",
+        "includevalueinlabels": "1",
+        "labelsepchar": ": ",
+        "entityFillHoverColor": "#FFF9C4",
+        "theme": "fusion"
     },
     // Aesthetics; ranges synced with the slider
     "colorrange": {
@@ -155,7 +155,6 @@ In this example, we will use the JSON format, as shown below:
         "showLabel": "1"
     }]
 }
-
 ```
 
 In the above JSON data:
@@ -212,41 +211,48 @@ To render the chart, follow the steps below:
 
 The full code for the above sample is given below:
 
-```
-<?php
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab cdn-tab active'>
+<pre><code class="custom-hlc language-javascript">
+&lt;?php
     // Include the `../src/fusioncharts.php` file that contains functions to embed the charts.
     include("includes/fusioncharts.php");
-?>
-<html>
-    <head>
-        <title>FusionCharts | My First Map</title>
-        <script src="path/to/local/fusioncharts.js"></script>
-
-<script src="path/to/local/fusioncharts.maps.js"></script>
-        <script src="path/to/local/maps/fusioncharts.world.js"></script>
-        <script src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-    </head>
-    <body>
-        <?php
+?&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;FusionCharts | My First Map&lt;/title&gt;
+        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;?php
         // Widget appearance configuration
         $arrMapConfig = array(
-            "chart" => array(
-                "caption" => "Average Annual Population Growth",
-                "subcaption" => " 1955-2015",
-                "numbersuffix" => "%",
-                "includevalueinlabels" => "1",
-                "labelsepchar" => ": ",
-                "entityFillHoverColor" => "#FFF9C4",
-                "theme" => "fusion"
+            "chart" =&gt; array(
+                "caption" =&gt; "Average Annual Population Growth",
+                "subcaption" =&gt; " 1955-2015",
+                "numbersuffix" =&gt; "%",
+                "includevalueinlabels" =&gt; "1",
+                "labelsepchar" =&gt; ": ",
+                "entityFillHoverColor" =&gt; "#FFF9C4",
+                "theme" =&gt; "fusion"
             )
         );
 
         // Widget color range data
-        $colorDataObj = array("minvalue" => "0", "code" => "#FFE0B2", "gradient" => "1",
-        "color" => array(
-            ["minValue" => "0", "maxValue" => "50", "code" => "#F2726F"],
-            ["minValue" => "50", "maxValue" => "75", "code" => "#FFC533"],
-            ["minValue" => "75", "maxValue" => "100", "code" => "#62B58F"]
+        $colorDataObj = array("minvalue" =&gt; "0", "code" =&gt; "#FFE0B2", "gradient" =&gt; "1",
+        "color" =&gt; array(
+            ["minValue" =&gt; "0", "maxValue" =&gt; "50", "code" =&gt; "#F2726F"],
+            ["minValue" =&gt; "50", "maxValue" =&gt; "75", "code" =&gt; "#FFC533"],
+            ["minValue" =&gt; "75", "maxValue" =&gt; "100", "code" =&gt; "#62B58F"]
         ));
 
         // Map data array
@@ -261,8 +267,8 @@ The full code for the above sample is given below:
 
         $mapData = array();
 
-        for($i = 0; $i < count($mapDataArray); $i++) {
-            array_push($mapData,array("id" => $mapDataArray[$i][0], "value" => $mapDataArray[$i][1], "showLabel" => $mapDataArray[$i][2]));
+        for($i = 0; $i &lt; count($mapDataArray); $i++) {
+            array_push($mapData,array("id" =&gt; $mapDataArray[$i][0], "value" =&gt; $mapDataArray[$i][1], "showLabel" =&gt; $mapDataArray[$i][2]));
         }
 
         $arrMapConfig["colorRange"] = $colorDataObj;
@@ -275,15 +281,95 @@ The full code for the above sample is given below:
         $Map = new FusionCharts("maps/world", "MyFirstMap" , "800", "500", "map-container", "json", $jsonEncodedData);
 
         // Render the Map
-        $Map->render();
-        ?>
-        <center>
-            div id="map-container">Map will render here!</div>
-        </center>
-    </body>
-</html>
+        $Map-&gt;render();
+        ?&gt;
+        &lt;center&gt;
+            div id="map-container"&gt;Map will render here!&lt;/div&gt;
+        &lt;/center&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-```
+<div class='tab local-tab'>
+<pre><code class="custom-hlc language-javascript">
+&lt;?php
+    // Include the `../src/fusioncharts.php` file that contains functions to embed the charts.
+    include("includes/fusioncharts.php");
+?&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;FusionCharts | My First Map&lt;/title&gt;
+        &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+
+        &lt;script src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
+        &lt;script src="path/to/local/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
+        &lt;script src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;?php
+        // Widget appearance configuration
+        $arrMapConfig = array(
+            "chart" =&gt; array(
+                "caption" =&gt; "Average Annual Population Growth",
+                "subcaption" =&gt; " 1955-2015",
+                "numbersuffix" =&gt; "%",
+                "includevalueinlabels" =&gt; "1",
+                "labelsepchar" =&gt; ": ",
+                "entityFillHoverColor" =&gt; "#FFF9C4",
+                "theme" =&gt; "fusion"
+            )
+        );
+
+        // Widget color range data
+        $colorDataObj = array("minvalue" =&gt; "0", "code" =&gt; "#FFE0B2", "gradient" =&gt; "1",
+        "color" =&gt; array(
+            ["minValue" =&gt; "0", "maxValue" =&gt; "50", "code" =&gt; "#F2726F"],
+            ["minValue" =&gt; "50", "maxValue" =&gt; "75", "code" =&gt; "#FFC533"],
+            ["minValue" =&gt; "75", "maxValue" =&gt; "100", "code" =&gt; "#62B58F"]
+        ));
+
+        // Map data array
+        $mapDataArray = array(
+            ["NA", ".82", "1"],
+            ["SA", "2.04", "1"],
+            ["AS", "1.78", "1"],
+            ["EU", ".40", "1"],
+            ["AF", "2.58", "1"],
+            ["AU", "1.30", "1"]
+        );
+
+        $mapData = array();
+
+        for($i = 0; $i &lt; count($mapDataArray); $i++) {
+            array_push($mapData,array("id" =&gt; $mapDataArray[$i][0], "value" =&gt; $mapDataArray[$i][1], "showLabel" =&gt; $mapDataArray[$i][2]));
+        }
+
+        $arrMapConfig["colorRange"] = $colorDataObj;
+        $arrMapConfig["data"] = $mapData;
+
+        // JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
+        $jsonEncodedData = json_encode($arrMapConfig);
+
+        // Map object
+        $Map = new FusionCharts("maps/world", "MyFirstMap" , "800", "500", "map-container", "json", $jsonEncodedData);
+
+        // Render the Map
+        $Map-&gt;render();
+        ?&gt;
+        &lt;center&gt;
+            div id="map-container"&gt;Map will render here!&lt;/div&gt;
+        &lt;/center&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
+
 ## Render other maps
 
 To reduce the size of the package FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provide 1600+ maps for you to explore. [Download ](https://www.fusioncharts.com/download/map-definition-files)the map files separately if you want to save them locally.
@@ -294,117 +380,121 @@ Let's create a map of California to show the "Web visits for a particular month"
 
 To render the above map, the following code is used:
 
-```
-<?php
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab cdn-tab active'>
+<pre><code class="custom-hlc language-javascript">
+&lt;?php
     // Include the `../src/fusioncharts.php` file that contains functions to embed the charts.
     include("../includes/fusioncharts.php");
-?>
-<html>
-    <head>
-        <title>FusionCharts | My First Map</title>
-        <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
-        <script type="text/javascript" src="//cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
-        
-        <!-- <script src="path/to/local/maps/fusioncharts.california.js"></script>
-        <script src="path/to/local/themes/fusioncharts.theme.fusion.js"></script> -->
-    </head>
-    <body>
-        <?php
+?&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js"&gt;&lt;/script>
+        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;?php
         // Widget appearance configuration
         $arrMapConfig = array(
-            "chart" => array(
-                "animation"=> "0",
-                "showbevel"=> "0",
-                "usehovercolor"=> "1",
-                "showlegend"=> "1",
-                "legendposition"=> "BOTTOM",
-                "legendborderalpha"=> "0",
-                "legendbordercolor"=> "ffffff",
-                "legendallowdrag"=> "0",
-                "legendshadow"=> "0",
-                "caption"=> "Website Visits for the month of March 2018",
-                "connectorcolor"=> "000000",
-                "fillalpha"=> "80",
-                "hovercolor"=> "CCCCCC",
-                "theme"=> "fusion"
+            "chart" =&gt; array(
+                "animation"=&gt; "0",
+                "showbevel"=&gt; "0",
+                "usehovercolor"=&gt; "1",
+                "showlegend"=&gt; "1",
+                "legendposition"=&gt; "BOTTOM",
+                "legendborderalpha"=&gt; "0",
+                "legendbordercolor"=&gt; "ffffff",
+                "legendallowdrag"=&gt; "0",
+                "legendshadow"=&gt; "0",
+                "caption"=&gt; "Website Visits for the month of March 2018",
+                "connectorcolor"=&gt; "000000",
+                "fillalpha"=&gt; "80",
+                "hovercolor"=&gt; "CCCCCC",
+                "theme"=&gt; "fusion"
             )
         );
 
  // Widget color range data
-        $colorDataObj = array("minvalue" => "0", "code" => "#FFE0B2", "gradient" => "1",
-        "color" => array(
-            ["maxvalue"=> "2500", "code"=> "f8bd19"], ["maxvalue"=> "5000", "code"=> "6baa01"]
+        $colorDataObj = array("minvalue" =&gt; "0", "code" =&gt; "#FFE0B2", "gradient" =&gt; "1",
+        "color" =&gt; array(
+            ["maxvalue"=&gt; "2500", "code"=&gt; "f8bd19"], ["maxvalue"=&gt; "5000", "code"=&gt; "6baa01"]
         ));
-
-
-                    
+   
         // Map data array
         $mapDataArray = array(
             ["001", "2834", "1"],
-["003", "3182", "1"],
-["005", "3280", "1"],
-["007", "911", "1"],
-["009", "292", "1"],
-["011", "530", "1"],
-["013", "2515", "1"],
-["015", "728", "1"],
-["017", "1974", "1"],
-["019", "848", "1"],
-["021", "3278", "1"],
-["023", "4463", "1"],
-["025", "1198", "1"],
-["027", "378", "1"],
-["029", "2610", "1"],
-["031", "1200", "1"],
-["033", "3820", "1"],
-["035", "940", "1"],
-["037", "3416", "1"],
-["039", "4004", "1"],
-["041", "1604", "1"],
-["043", "4011", "1"],
-["045", "3203", "1"],
-["047", "3775", "1"],
-["049", "2721", "1"],
-["051", "3417", "1"],
-["053", "1530", "1"],
-["055", "412", "1"],
-["057", "3434", "1"],
-["059", "1670", "1"],
-["061", "1274", "1"],
-["063", "4339", "1"],
-["065", "2073", "1"],
-["067", "1018", "1"],
-["069", "3967", "1"],
-["071", "3401", "1"],
-["073", "3307", "1"],
-["075", "1938", "1"],
-["077", "489", "1"],
-["079", "3207", "1"],
-["081", "2295", "1"],
-["083", "2747", "1"],
-["085", "1114", "1"],
-["087", "3400", "1"],
-["089", "784", "1"],
-["091", "1673", "1"],
-["093", "4274", "1"],
-["095", "4509", "1"],
-["097", "3862", "1"],
-["099", "1356", "1"],
-["101", "4126", "1"],
-["103", "1314", "1"],
-["105", "1807", "1"],
-["107", "4026", "1"],
-["109", "3456", "1"],
-["111", "1393", "1"],
-["113", "1500", "1"],
-["115", "2218", "1"]
+            ["003", "3182", "1"],
+            ["005", "3280", "1"],
+            ["007", "911", "1"],
+            ["009", "292", "1"],
+            ["011", "530", "1"],
+            ["013", "2515", "1"],
+            ["015", "728", "1"],
+            ["017", "1974", "1"],
+            ["019", "848", "1"],
+            ["021", "3278", "1"],
+            ["023", "4463", "1"],
+            ["025", "1198", "1"],
+            ["027", "378", "1"],
+            ["029", "2610", "1"],
+            ["031", "1200", "1"],
+            ["033", "3820", "1"],
+            ["035", "940", "1"],
+            ["037", "3416", "1"],
+            ["039", "4004", "1"],
+            ["041", "1604", "1"],
+            ["043", "4011", "1"],
+            ["045", "3203", "1"],
+            ["047", "3775", "1"],
+            ["049", "2721", "1"],
+            ["051", "3417", "1"],
+            ["053", "1530", "1"],
+            ["055", "412", "1"],
+            ["057", "3434", "1"],
+            ["059", "1670", "1"],
+            ["061", "1274", "1"],
+            ["063", "4339", "1"],
+            ["065", "2073", "1"],
+            ["067", "1018", "1"],
+            ["069", "3967", "1"],
+            ["071", "3401", "1"],
+            ["073", "3307", "1"],
+            ["075", "1938", "1"],
+            ["077", "489", "1"],
+            ["079", "3207", "1"],
+            ["081", "2295", "1"],
+            ["083", "2747", "1"],
+            ["085", "1114", "1"],
+            ["087", "3400", "1"],
+            ["089", "784", "1"],
+            ["091", "1673", "1"],
+            ["093", "4274", "1"],
+            ["095", "4509", "1"],
+            ["097", "3862", "1"],
+            ["099", "1356", "1"],
+            ["101", "4126", "1"],
+            ["103", "1314", "1"],
+            ["105", "1807", "1"],
+            ["107", "4026", "1"],
+            ["109", "3456", "1"],
+            ["111", "1393", "1"],
+            ["113", "1500", "1"],
+            ["115", "2218", "1"]
 
  );
 
         $mapData = array();
 
-        for($i = 0; $i < count($mapDataArray); $i++) {
-            array_push($mapData,array("id" => $mapDataArray[$i][0], "value" => $mapDataArray[$i][1], "showLabel" => $mapDataArray[$i][2]));
+        for($i = 0; $i &lt; count($mapDataArray); $i++) {
+            array_push($mapData,array("id" =&gt; $mapDataArray[$i][0], "value" =&gt; $mapDataArray[$i][1], "showLabel" =&gt; $mapDataArray[$i][2]));
         }
 
         $arrMapConfig["colorRange"] = $colorDataObj;
@@ -417,15 +507,153 @@ To render the above map, the following code is used:
         $Map = new FusionCharts("maps/california", "MyFirstMap" , "800", "500", "map-container", "json", $jsonEncodedData);
 
         // Render the Map
-        $Map->render();
-        ?>
-        <center>
-            <div id="map-container">Map will render here!</div>
-        </center>
-    </body>
-</html>
-```
-That's it! The California map is ready.
+        $Map-&gt;render();
+        ?&gt;
+        &lt;center&gt;
+            &lt;div id="map-container"&gt;Map will render here!&lt;/div&gt;
+        &lt;/center&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab local-tab'>
+<pre><code class="custom-hlc language-javascript">
+&lt;?php
+    // Include the `../src/fusioncharts.php` file that contains functions to embed the charts.
+    include("../includes/fusioncharts.php");
+?&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;FusionCharts | California Map&lt;/title&gt;
+        &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
+        &lt;script src="path/to/local/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
+        &lt;script src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;?php
+        // Widget appearance configuration
+        $arrMapConfig = array(
+            "chart" =&gt; array(
+                "animation"=&gt; "0",
+                "showbevel"=&gt; "0",
+                "usehovercolor"=&gt; "1",
+                "showlegend"=&gt; "1",
+                "legendposition"=&gt; "BOTTOM",
+                "legendborderalpha"=&gt; "0",
+                "legendbordercolor"=&gt; "ffffff",
+                "legendallowdrag"=&gt; "0",
+                "legendshadow"=&gt; "0",
+                "caption"=&gt; "Website Visits for the month of March 2018",
+                "connectorcolor"=&gt; "000000",
+                "fillalpha"=&gt; "80",
+                "hovercolor"=&gt; "CCCCCC",
+                "theme"=&gt; "fusion"
+            )
+        );
+
+ // Widget color range data
+        $colorDataObj = array("minvalue" =&gt; "0", "code" =&gt; "#FFE0B2", "gradient" =&gt; "1",
+        "color" =&gt; array(
+            ["maxvalue"=&gt; "2500", "code"=&gt; "f8bd19"], ["maxvalue"=&gt; "5000", "code"=&gt; "6baa01"]
+        ));
+   
+        // Map data array
+        $mapDataArray = array(
+            ["001", "2834", "1"],
+            ["003", "3182", "1"],
+            ["005", "3280", "1"],
+            ["007", "911", "1"],
+            ["009", "292", "1"],
+            ["011", "530", "1"],
+            ["013", "2515", "1"],
+            ["015", "728", "1"],
+            ["017", "1974", "1"],
+            ["019", "848", "1"],
+            ["021", "3278", "1"],
+            ["023", "4463", "1"],
+            ["025", "1198", "1"],
+            ["027", "378", "1"],
+            ["029", "2610", "1"],
+            ["031", "1200", "1"],
+            ["033", "3820", "1"],
+            ["035", "940", "1"],
+            ["037", "3416", "1"],
+            ["039", "4004", "1"],
+            ["041", "1604", "1"],
+            ["043", "4011", "1"],
+            ["045", "3203", "1"],
+            ["047", "3775", "1"],
+            ["049", "2721", "1"],
+            ["051", "3417", "1"],
+            ["053", "1530", "1"],
+            ["055", "412", "1"],
+            ["057", "3434", "1"],
+            ["059", "1670", "1"],
+            ["061", "1274", "1"],
+            ["063", "4339", "1"],
+            ["065", "2073", "1"],
+            ["067", "1018", "1"],
+            ["069", "3967", "1"],
+            ["071", "3401", "1"],
+            ["073", "3307", "1"],
+            ["075", "1938", "1"],
+            ["077", "489", "1"],
+            ["079", "3207", "1"],
+            ["081", "2295", "1"],
+            ["083", "2747", "1"],
+            ["085", "1114", "1"],
+            ["087", "3400", "1"],
+            ["089", "784", "1"],
+            ["091", "1673", "1"],
+            ["093", "4274", "1"],
+            ["095", "4509", "1"],
+            ["097", "3862", "1"],
+            ["099", "1356", "1"],
+            ["101", "4126", "1"],
+            ["103", "1314", "1"],
+            ["105", "1807", "1"],
+            ["107", "4026", "1"],
+            ["109", "3456", "1"],
+            ["111", "1393", "1"],
+            ["113", "1500", "1"],
+            ["115", "2218", "1"]
+
+ );
+
+        $mapData = array();
+
+        for($i = 0; $i &lt; count($mapDataArray); $i++) {
+            array_push($mapData,array("id" =&gt; $mapDataArray[$i][0], "value" =&gt; $mapDataArray[$i][1], "showLabel" =&gt; $mapDataArray[$i][2]));
+        }
+
+        $arrMapConfig["colorRange"] = $colorDataObj;
+        $arrMapConfig["data"] = $mapData;
+
+        // JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
+        $jsonEncodedData = json_encode($arrMapConfig);
+
+        // Map object
+        $Map = new FusionCharts("maps/california", "MyFirstMap" , "800", "500", "map-container", "json", $jsonEncodedData);
+
+        // Render the Map
+        $Map-&gt;render();
+        ?&gt;
+        &lt;center&gt;
+            &lt;div id="map-container"&gt;Map will render here!&lt;/div&gt;
+        &lt;/center&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
+
+That's it! The **California** map is ready.
 
 ## Problem rendering the chart?
 
