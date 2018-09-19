@@ -2,7 +2,6 @@
 title: Your First Map in Angular using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first map using the angular-fusioncharts component.
 heading: Create a Map in Angular using FusionCharts
-chartPresent: false
 ---
 
 ## Overview
@@ -157,39 +156,12 @@ To render the chart follow the steps below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='angular4'>Angular 4 onward</a></li>
-    <li><a data-toggle='angular2'>Angular 2</a></li>
+    <li class='active'><a data-toggle='angular2'>ES5</a></li>
+    <li><a data-toggle='angular4'>ES6</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
-<div class='tab angular4-tab active'>
 
-<pre><code class="custom-hlc language-javascript">
-import { FusionChartsModule } from 'angular-fusioncharts';
-import FusionCharts from 'fusioncharts/core';
-import FusionMaps from 'fusioncharts/maps'; // maps
-import World from 'fusioncharts/maps/es/fusioncharts.world'; // world
-
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
-
-FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
-@NgModule({
-    declarations: [
-        AppComponent
-    ],
-    imports: [
-        BrowserModule, 
-        FusionChartsModule 
-    ],
-    providers: [],
-    bootstrap: [ AppComponent ]
-})
-export class AppModule {
-}
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-<div class='tab angular2-tab'>
+<div class='tab angular2-tab active'>
 <div class='mt-20'>For angular version <strong>2.x.x</strong>, we cannot use <strong>'fusioncharts/core'</strong> as it uses dynamic imports, which is not compatible with older version typescripts used by <strong>Angular 2.</strong>
 For Angular 2 the changes in the code are: 
 <ul> 
@@ -233,6 +205,33 @@ FusionChartsModule.fcRoot(FusionCharts, FusionMaps, California, FusionTheme);
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab angular4-tab'>
+<pre><code class="custom-hlc language-javascript">
+import { FusionChartsModule } from 'angular-fusioncharts';
+import FusionCharts from 'fusioncharts/core';
+import FusionMaps from 'fusioncharts/maps'; // maps
+import World from 'fusioncharts/maps/es/fusioncharts.world'; // world
+
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+
+FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
+@NgModule({
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule, 
+        FusionChartsModule 
+    ],
+    providers: [],
+    bootstrap: [ AppComponent ]
+})
+export class AppModule {
+}
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -375,39 +374,12 @@ After installing fusionmaps package, follow the steps to render the map:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='angular4'>Angular 4 onward</a></li>
-    <li><a data-toggle='angular2'>Angular 2</a></li>
+    <li><a data-toggle='angular4'>ES6</a></li>
+    <li class='active'><a data-toggle='angular2'>ES5</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
-<div class='tab angular4-tab active'>
 
-<pre><code class="custom-hlc language-javascript">
-import { FusionChartsModule } from 'angular-fusioncharts';
-import FusionCharts from 'fusioncharts/core';
-import FusionMaps from 'fusioncharts/maps';
-import California from 'fusioncharts/maps/es/fusioncharts.california'; 
-
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
-
-FusionChartsModule.fcRoot(FusionCharts, FusionMaps, California, FusionTheme);
-@NgModule({
-    declarations: [
-        AppComponent
-    ],
-    imports: [
-        BrowserModule, 
-        FusionChartsModule 
-    ],
-    providers: [],
-    bootstrap: [ AppComponent ]
-})
-export class AppModule {
-}
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-<div class='tab angular2-tab'>
+<div class='tab angular2-tab active'>
 <div class='mt-20'>For angular version <strong>2.x.x</strong>, we cannot use <strong>'fusioncharts/core'</strong> as it uses dynamic imports, which is not compatible with older version typescripts used by <strong>Angular 2.</strong>
 For Angular 2 the changes in the code are: 
 <ul> 
@@ -451,6 +423,33 @@ FusionChartsModule.fcRoot(FusionCharts, FusionMaps, California, FusionTheme);
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab angular4-tab'>
+<pre><code class="custom-hlc language-javascript">
+import { FusionChartsModule } from 'angular-fusioncharts';
+import FusionCharts from 'fusioncharts/core';
+import FusionMaps from 'fusioncharts/maps';
+import California from 'fusioncharts/maps/es/fusioncharts.california'; 
+
+import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+
+FusionChartsModule.fcRoot(FusionCharts, FusionMaps, California, FusionTheme);
+@NgModule({
+    declarations: [
+        AppComponent
+    ],
+    imports: [
+        BrowserModule, 
+        FusionChartsModule 
+    ],
+    providers: [],
+    bootstrap: [ AppComponent ]
+})
+export class AppModule {
+}
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
