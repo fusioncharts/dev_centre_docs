@@ -140,10 +140,10 @@ import { AppComponent } from './app.component';
 import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Import FusionCharts library and chart modules
-import /* as FusionCharts from 'fusioncharts';
-import /* as Widgets from 'fusioncharts/fusioncharts.widgets';
+import * as FusionCharts from 'fusioncharts';
+import * as Widgets from 'fusioncharts/fusioncharts.widgets';
 
-import /* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Pass the fusioncharts library and chart modules
 FusionChartsModule.fcRoot(FusionCharts, Widgets, FusionTheme);
@@ -225,13 +225,10 @@ Create the container to render the gauge and set the following:
 
 * The data source.
 
-> The code below is same for Angular older and latest versions.
-
 ```
 <h1>
   {{title}}
 </h1>
-
 <fusioncharts
     width="450" 
     height="250" 

@@ -168,11 +168,11 @@ import { AppComponent } from './app.component';
 import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Import FusionCharts library and chart modules
-import /* as FusionCharts from 'fusioncharts';
-import /*  as FusionMaps from 'fusioncharts/fusioncharts.maps';
-import /* as World from 'fusionmaps/maps/fusioncharts.world';
+import * as FusionCharts from 'fusioncharts';
+import *  as FusionMaps from 'fusioncharts/fusioncharts.maps';
+import * as World from 'fusionmaps/maps/fusioncharts.world';
 
-import /* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Pass the fusioncharts library and chart modules
 FusionChartsModule.fcRoot(FusionCharts, FusionMaps, World, FusionTheme);
@@ -267,6 +267,7 @@ export class AppComponent {
     }
 }
 ```
+
 **Step 3**: Now use fusioncharts component in `app.component.html`
 
 Create the map container and set the following:
@@ -277,13 +278,10 @@ Create the map container and set the following:
 
 * The data source.
 
-> The code below is same for Angular older and latest versions.
-
 ```HTML
 <h1>
   {{title}}
 </h1>
-
 <fusioncharts
     width="800"
     height="550"
@@ -423,13 +421,10 @@ Create the chart container and set the following:
 
 * The data source.
 
-> The code below is same for Angular older and latest versions.
-
 ```HTML
 <h1>
   {{title}}
 </h1>
-
 <fusioncharts
     width="800"
     height="550"

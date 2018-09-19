@@ -138,10 +138,10 @@ import { AppComponent } from './app.component';
 import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Import FusionCharts library and chart modules
-import \* as FusionCharts from 'fusioncharts';
-import \* as Charts from 'fusioncharts/fusioncharts.charts';
+import * as FusionCharts from 'fusioncharts';
+import * as Charts from 'fusioncharts/fusioncharts.charts';
 
-import \* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Pass the fusioncharts library and chart modules
 FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
@@ -227,13 +227,10 @@ Create the chart container and set the following:
 
 * The data source.
 
-> The code below is same for Angular older and latest versions.
-
 ```
 <h1>
   {{title}}
 </h1>
-
 <fusioncharts
     width="700"
     height="400" 
@@ -242,6 +239,7 @@ Create the chart container and set the following:
 </fusioncharts> 
 
 ```
+
 That's it! Your first chart using `react-fusioncharts` is ready.
 
 ## Problem rendering the chart?
