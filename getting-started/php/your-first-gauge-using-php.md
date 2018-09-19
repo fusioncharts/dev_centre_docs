@@ -75,7 +75,7 @@ The angular gauge is shown below:
 The thresholds for the above sample have been defined using the following range.
 
 Range|Color|Hex Code|
--|-|-|-
+-|-|-
 0-50|Red|#F2726F|
 50-75|Yellow|#FFC533|
 75-100|Green|#62B58F|
@@ -192,8 +192,8 @@ The full code for the above sample is given below:
 &lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;FusionCharts | My First Widget&lt;/title&gt;
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
     &lt;/head&gt;
     &lt;body&gt;
 &lt;?php

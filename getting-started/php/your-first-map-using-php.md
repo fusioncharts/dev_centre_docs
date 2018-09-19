@@ -12,7 +12,6 @@ In this page, we'll see how to install FusionCharts and render a map using the `
 
 ## Installation
 
-
 In this section, we will show you how to install FusionCharts Suite XT and the `FusionCharts PHP` wrapper and all the other dependencies on your system.
 
 > The **FusionCharts PHP server-side wrapper** requires **PHP 5** or higher.
@@ -27,15 +26,41 @@ To install the FusionCharts Suite, follow the steps below:
 
 * Include the FusionCharts theme file to apply the style to the charts.
 
-```
-<?php
-       /* Include the `fusioncharts.php` file that contains functions to embed the charts. */
-       include("path/to/local/fusioncharts.php");
-?>
-<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-<script type="text/javascript" src="path/to/local/fusioncharts.maps.js"></script>
-<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-```
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab cdn-tab active'>
+<pre><code class="custom-hlc language-php">
+&lt;?php
+    /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
+    include("path/to/local/fusioncharts.php");
+?&gt;
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab local-tab'>
+<pre><code class="custom-hlc language-php">
+&lt;?php
+    /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
+    include("path/to/local/fusioncharts.php");
+?&gt;
+&lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 That completes the installation of FusionCharts Suite and the PHP wrapper.
 
@@ -49,14 +74,14 @@ The chart will look like as shown below:
 
 The data for this chart is represented in the table below:
 
-State|Entity Name|Value|||
--|-|-|-|-
-North America|NA|82|||
-South America|SA|2.04|||
-Asia|AS|1.78|||
-Europe|EU|40|||
-Africa|AF|2.58|||
-Australia|AU|1.30|||
+State|Entity Name|Value|
+-|-|-
+North America|NA|82|
+South America|SA|2.04|
+Asia|AS|1.78|
+Europe|EU|40|
+Africa|AF|2.58|
+Australia|AU|1.30|
 
 ## Convert tabular data into JSON format
 
