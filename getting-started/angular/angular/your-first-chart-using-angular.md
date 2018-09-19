@@ -162,6 +162,17 @@ FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
 export class AppModule { }
 ```
 
+To include the specific chart types, individually add the following files using `import`:
+
+* PowerCharts - `fusioncharts/fusioncharts.powercharts`
+* Widgets - `fusioncharts/fusioncharts.widgets`
+* Gantt - `fusioncharts/fusioncharts.gantt`
+* Treemap -  `fusioncharts/fusioncharts.treemap`
+* Zoomscatter - `fusioncharts/fusioncharts.zoomscatter`
+* Zoomline - `fusioncharts/fusioncharts.zoomline`
+* Overlapped Bar - `fusioncharts/fusioncharts.overlappedbar2d`
+* Overlapped Column - `fusioncharts/fusioncharts.overlappedcolumn2d`
+
 **Step 2:** Add data to the angular `app.component.ts`
 
 Set the JSON data within the `AppComponent` class as shown below:
