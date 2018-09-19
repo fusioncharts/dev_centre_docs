@@ -197,9 +197,9 @@ To render the chart, open `App.vue` file and follow the steps below:
 <pre><code class="custom-hlc language-javascript">&lt;script&gt;
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
-import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d';
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
+import FusionCharts from 'fusioncharts';
+import Column2D from 'fusioncharts/fusioncharts.charts';
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 Vue.use(VueFusionCharts, FusionCharts, Column2D, FusionTheme);
 export default {
