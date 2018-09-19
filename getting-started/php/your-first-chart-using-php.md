@@ -13,11 +13,9 @@ In this page, we'll see how to install FusionCharts and render a chart using the
 
 ## Installation
 
-In this section, we will show you how to install FusionCharts Suite XT and the `FusionCharts PHP` wrapper and all the other dependencies on your system.
+Install FusionCharts and the **PHP** wrapper component using any of the following methods:
 
 > The **FusionCharts PHP server-side wrapper** requires **PHP 5** or higher.
-
-To install the FusionCharts Suite, follow the steps below:
 
 * Include the **FusionCharts PHP wrapper** in your project.
 
@@ -46,7 +44,7 @@ Let's create a Column 2D chart using the `php-fusioncharts` wrapper showing the 
 
 > FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
-{% embed_data getting-started-your-first-chart.js %}
+{% embed_chart getting-started-your-first-chart.js %}
 
 The data for the above chart is shown in the table below:
 
@@ -117,9 +115,9 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
 
 In the above JSON data:
 
-* Create the chart object to define the elements of the chart.
+* Create the `chart` object to define the elements of the chart.
 
-* Specify the label and value of each column within the data array.
+* Specify the `label` and `value` of each column within the data array.
 
 Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
 
@@ -159,7 +157,7 @@ To render the chart, follow the steps below:
 
     * Embed the `json` data as the value of the `dataSource`.
 
-* Finally, use a container using `<div>` to render the chart.
+* Finally, create a container using `<div>` to render the chart.
 
 The consolidated code is shown below:
 
@@ -238,8 +236,8 @@ That's it! Your first chart using the **FusionCharts PHP** wrapper is ready.
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click here to get in touch with our support team.
+* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if fusioncharts.js was loaded.
+* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
 
 * If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
