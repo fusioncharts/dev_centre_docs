@@ -32,7 +32,7 @@ Install FusionCharts and the **PHP** wrapper component using any of the followin
 <div class='tab cdn-tab active'>
 <pre><code class="custom-hlc language-javascript">
 &lt;?php
-    /* Include the `fusioncharts.php` file that contains functions to embed the charts. */
+    /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
     include("path/to/local/fusioncharts.php");
 ?&gt;
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
@@ -44,7 +44,7 @@ Install FusionCharts and the **PHP** wrapper component using any of the followin
 <div class='tab local-tab'>
 <pre><code class="custom-hlc language-javascript">
 &lt;?php
-    /* Include the `fusioncharts.php` file that contains functions to embed the charts. */
+    /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
     include("path/to/local/fusioncharts.php");
 ?&gt;
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
