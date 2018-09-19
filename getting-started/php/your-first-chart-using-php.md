@@ -30,19 +30,19 @@ Install FusionCharts and the **PHP** wrapper component using any of the followin
 <div class='tab-content extra-tabs'>
 
 <div class='tab cdn-tab active'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="custom-hlc language-php">
 &lt;?php
     /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
     include("path/to/local/fusioncharts.php");
 ?&gt;
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-javascript">
+<pre><code class="custom-hlc language-php">
 &lt;?php
     /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
     include("path/to/local/fusioncharts.php");
@@ -93,42 +93,32 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
         "numberSuffix": "K",
         "theme": "fusion"
     },
-    "data": [
-        {
-            "label": "Venezuela",
-            "value": "290"
-        },
-        {
-            "label": "Saudi",
-            "value": "260"
-        },
-        {
-            "label": "Canada",
-            "value": "180"
-        },
-        {
-            "label": "Iran",
-            "value": "140"
-        },
-        {
-            "label": "Russia",
-            "value": "115"
-        },
-        {
-            "label": "UAE",
-            "value": "100"
-        },
-        {
-            "label": "US",
-            "value": "30"
-        },
-        {
-            "label": "China",
-            "value": "30"
-        }
-    ]
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
 }
-
 ```
 
 > Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example, [single-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[ multi-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts)charts.
@@ -181,33 +171,40 @@ To render the chart, follow the steps below:
 
 The consolidated code is shown below:
 
-```
-<?php
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab cdn-tab active'>
+<pre><code class="custom-hlc language-php">
+&lt;?php
 
    /* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.*/
    include("includes/fusioncharts.php");
-?>
-<html>
+?&gt;
+&lt;html&gt;
 
-<head>
-    <title>FusionCharts | My First Chart</title>
-    <script src="path/to/local/fusioncharts.js"></script>
-    <script src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-</head>
+&lt;head&gt;
+    &lt;title&gt;FusionCharts | My First Chart&lt;/title&gt;
+    &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
 
-<body>
-    <?php
+&lt;body&gt;
+    &lt;?php
     $arrChartConfig = array(
-        "chart" => array(
-            "caption" => "Countries With Most Oil Reserves [2017-18]",
-            "subCaption" => "In MMbbl = One Million barrels",
-            "xAxisName" => "Country",
-            "yAxisName" => "Reserves (MMbbl)",
-            "numberSuffix" => "K",
-            "theme" => "fusion"
+        "chart" =&gt; array(
+            "caption" =&gt; "Countries With Most Oil Reserves [2017-18]",
+            "subCaption" =&gt; "In MMbbl = One Million barrels",
+            "xAxisName" =&gt; "Country",
+            "yAxisName" =&gt; "Reserves (MMbbl)",
+            "numberSuffix" =&gt; "K",
+            "theme" =&gt; "fusion"
         )
     );
-
     // An array of hash objects which stores data
     $arrChartData = array(
         ["Venezuela", "290"],
@@ -223,9 +220,9 @@ The consolidated code is shown below:
     $arrLabelValueData = array();
 
     // Pushing labels and values
-    for($i = 0; $i < count($arrChartData); $i++) {
+    for($i = 0; $i &lt; count($arrChartData); $i++) {
         array_push($arrLabelValueData, array(
-            "label" => $arrChartData[$i][0], "value" => $arrChartData[$i][1]
+            "label" =&gt; $arrChartData[$i][0], "value" =&gt; $arrChartData[$i][1]
         ));
     }
 
@@ -238,17 +235,89 @@ The consolidated code is shown below:
     $Chart = new FusionCharts("column2d", "MyFirstChart" , "700", "400", "chart-container", "json", $jsonEncodedData);
 
     // Render the chart
-    $Chart->render();
-    ?>
+    $Chart-&gt;render();
+    ?&gt;
 
-    <center>
-        <div id="chart-container">Chart will render here!</div>
-    </center>
-</body>
+    &lt;center&gt;
+        &lt;div id="chart-container"&gt;Chart will render here!&lt;/div&gt;
+    &lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-</html>
+<div class='tab local-tab'>
+<pre><code class="custom-hlc language-php">
+&lt;?php
 
-```
+   /* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.*/
+   include("includes/fusioncharts.php");
+?&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;FusionCharts | My First Chart&lt;/title&gt;
+    &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+    &lt;script src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;?php
+    $arrChartConfig = array(
+        "chart" =&gt; array(
+            "caption" =&gt; "Countries With Most Oil Reserves [2017-18]",
+            "subCaption" =&gt; "In MMbbl = One Million barrels",
+            "xAxisName" =&gt; "Country",
+            "yAxisName" =&gt; "Reserves (MMbbl)",
+            "numberSuffix" =&gt; "K",
+            "theme" =&gt; "fusion"
+        )
+    );
+    // An array of hash objects which stores data
+    $arrChartData = array(
+        ["Venezuela", "290"],
+        ["Saudi", "260"],
+        ["Canada", "180"],
+        ["Iran", "140"],
+        ["Russia", "115"],
+        ["UAE", "100"],
+        ["US", "30"],
+        ["China", "30"]
+    );
+
+    $arrLabelValueData = array();
+
+    // Pushing labels and values
+    for($i = 0; $i &lt; count($arrChartData); $i++) {
+        array_push($arrLabelValueData, array(
+            "label" =&gt; $arrChartData[$i][0], "value" =&gt; $arrChartData[$i][1]
+        ));
+    }
+
+    $arrChartConfig["data"] = $arrLabelValueData;
+
+    // JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
+    $jsonEncodedData = json_encode($arrChartConfig);
+
+    // chart object
+    $Chart = new FusionCharts("column2d", "MyFirstChart" , "700", "400", "chart-container", "json", $jsonEncodedData);
+
+    // Render the chart
+    $Chart-&gt;render();
+    ?&gt;
+
+    &lt;center&gt;
+        &lt;div id="chart-container"&gt;Chart will render here!&lt;/div&gt;
+    &lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 That's it! Your first chart using the **FusionCharts PHP** wrapper is ready.
 
