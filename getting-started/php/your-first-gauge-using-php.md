@@ -74,11 +74,11 @@ The angular gauge is shown below:
 
 The thresholds for the above sample have been defined using the following range.
 
-Range|Color|Hex Code|
+Range|Color|Hex Code
 -|-|-
-0-50|Red|#F2726F|
-50-75|Yellow|#FFC533|
-75-100|Green|#62B58F|
+0-50|Red|#F2726F
+50-75|Yellow|#FFC533
+75-100|Green|#62B58F
 
 So, any score less than 50 (considered bad) is presented in red. Any score between 50 and 75 (considered average) is presented in yellow. Any score above 75 (considered good) is presented in green.
 
