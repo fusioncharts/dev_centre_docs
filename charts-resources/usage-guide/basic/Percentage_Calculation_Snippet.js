@@ -1,7 +1,7 @@
 {
     type: 'column2d',
     height: '400',
-    width: '700',
+    width:'700',
     dataFormat:'json',
     renderAt:'chart-container',
     dataSource: {
@@ -49,13 +49,15 @@
     },
     "events":{
       "beforeRender": function(e, d){
+        
+        
         var message = "Hover on the plot to see the percentage along with the label";
         var customDiv = document.createElement('p');
         customDiv.innerText = message;
         customDiv.style.padding = "10px";
         customDiv.style.background = "rgb(245, 242, 240)";
         customDiv.style.textAlign = "center";
-        e.sender.ref.appendChild(customDiv);
+        e.data.container.appendChild(customDiv);
 
         var total = 0;
         e.sender.args.dataSource.data.forEach(function(dataObj){
