@@ -197,9 +197,9 @@ To render the chart, open `App.vue` file and follow the steps below:
 <pre><code class="custom-hlc language-javascript">&lt;script&gt;
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
-import FusionCharts from 'fusioncharts/core';
-import Column2D from 'fusioncharts/viz/column2d';
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
+import FusionCharts from 'fusioncharts';
+import Column2D from 'fusioncharts/fusioncharts.charts';
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 Vue.use(VueFusionCharts, FusionCharts, Column2D, FusionTheme);
 export default {
@@ -248,6 +248,17 @@ name: 'app',
     &lt;/div&gt;
 &lt;/template&gt;
 </code></pre>
+<div class='mt-30'><strong>To include the specific chart types, individually add the following files using `import`</strong></div>
+<ul>
+    <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
+    <li><strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`</li>
+    <li><strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`</li>
+    <li><strong>Treemap</strong> -  `fusioncharts/fusioncharts.treemap`</li>
+    <li><strong>Zoomscatter</strong> - `fusioncharts/fusioncharts.zoomscatter`</li>
+    <li><strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`</li>
+    <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
+    <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
+</ul>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 

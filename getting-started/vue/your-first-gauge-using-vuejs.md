@@ -193,9 +193,9 @@ To render the gauge, open `App.vue` file and follow the steps below:
 <pre><code class="custom-hlc language-javascript">&lt;script&gt;
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
-import FusionCharts from 'fusioncharts/core';
-import AngularGauge from 'fusioncharts/viz/angulargauge';
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
+import FusionCharts from 'fusioncharts';
+import AngularGauge from 'fusioncharts/fusioncharts.widgets';
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 Vue.use(VueFusionCharts, FusionCharts, AngularGauge, FusionTheme);
 export default {

@@ -235,9 +235,9 @@ The consolidated code is given below:
 <pre><code class="custom-hlc language-javascript">&lt;script&gt;
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
-import FusionCharts from 'fusioncharts/core';
-import FusionMaps from 'fusioncharts/maps';
-import World from 'fusioncharts/maps/es/fusioncharts.world';
+import FusionCharts from 'fusioncharts';
+import FusionMaps from 'fusioncharts/fusioncharts.maps';
+import World from 'fusioncharts/maps/fusioncharts.world';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Register VueFusionCharts component
@@ -551,9 +551,9 @@ After installing `fusionmaps` package, the code to render the map of **Californi
 &lt;script&gt;
 import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
-import FusionCharts from 'fusioncharts/core';
-import FusionMaps from 'fusioncharts/maps';
-import California from 'fusionmaps/maps/es/fusioncharts.california';
+import FusionCharts from 'fusioncharts';
+import FusionMaps from 'fusioncharts/fusioncharts.maps';
+import California from 'fusionmaps/maps/fusioncharts.california';
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Register VueFusionCharts component

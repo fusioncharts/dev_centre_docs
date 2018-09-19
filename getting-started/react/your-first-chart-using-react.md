@@ -216,21 +216,18 @@ The consolidated code is shown below:
 <div class='tab npm-tab active'>
 
 <pre><code class="custom-hlc language-javascript">
-
 // Step 1 - Including react
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Step 2 - Including the react-fusioncharts component
-
 import ReactFC from 'react-fusioncharts';
 
 // Step 3 - Including the fusioncharts library
-import FusionCharts from 'fusioncharts/core';
+import FusionCharts from 'fusioncharts';
 
 // Step 4 - Including the chart type
-import Column2D from 'fusioncharts/viz/column2d';
+import Column2D from 'fusioncharts/fusioncharts.charts';
 
 // Step 5 - Including the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
@@ -239,7 +236,6 @@ import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
 // Step 7 - Creating the JSON object to store the chart configurations
-
 const chartConfigs = {
     type: 'column2d',// The chart type
     width: '700', // Width of the chart
@@ -296,6 +292,18 @@ class App extends React.Component {
 
 export default App
 </code></pre>
+
+<div class='mt-30'><strong>To include the specific chart types, individually add the following files using `import`</strong></div>
+<ul>
+    <li><strong>PowerCharts</strong> - `fusioncharts/fusioncharts.powercharts`</li>
+    <li><strong>Widgets</strong> - `fusioncharts/fusioncharts.widgets`</li>
+    <li><strong>Gantt</strong> - `fusioncharts/fusioncharts.gantt`</li>
+    <li><strong>Treemap</strong> -  `fusioncharts/fusioncharts.treemap`</li>
+    <li><strong>Zoomscatter</strong> - `fusioncharts/fusioncharts.zoomscatter`</li>
+    <li><strong>Zoomline</strong> - `fusioncharts/fusioncharts.zoomline`</li>
+    <li><strong>Overlapped Bar</strong> - `fusioncharts/fusioncharts.overlappedbar2d`</li>
+    <li><strong>Overlapped Column</strong> - `fusioncharts/fusioncharts.overlappedcolumn2d`</li>
+</ul>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 
