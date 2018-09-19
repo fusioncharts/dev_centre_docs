@@ -2,7 +2,6 @@
 title: Your First Map in PHP using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first map using the php wrapper.
 heading: Create a Map Using PHP in FusionCharts
-chartPresent: false
 ---
 
 ## Overview

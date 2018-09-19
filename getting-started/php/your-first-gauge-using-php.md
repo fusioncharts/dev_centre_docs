@@ -2,7 +2,6 @@
 title: Your First Gauge in PHP using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first gauge using the php wrapper.
 heading: Create a Gauge Using PHP in FusionCharts
-chartPresent: false
 ---
 
 ## Overview

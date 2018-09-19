@@ -2,7 +2,6 @@
 title: Your First Chart in PHP using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the php wrapper.
 heading: Create a Chart Using PHP in FusionCharts
-chartPresent: false
 ---
 
 ## Overview
