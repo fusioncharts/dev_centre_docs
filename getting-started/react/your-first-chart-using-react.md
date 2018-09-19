@@ -216,14 +216,11 @@ The consolidated code is shown below:
 <div class='tab npm-tab active'>
 
 <pre><code class="custom-hlc language-javascript">
-
 // Step 1 - Including react
-
 import React from 'react';
 import ReactDOM from 'react-dom';
 
 // Step 2 - Including the react-fusioncharts component
-
 import ReactFC from 'react-fusioncharts';
 
 // Step 3 - Including the fusioncharts library
@@ -239,7 +236,6 @@ import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 ReactFC.fcRoot(FusionCharts, Column2D, FusionTheme);
 
 // Step 7 - Creating the JSON object to store the chart configurations
-
 const chartConfigs = {
     type: 'column2d',// The chart type
     width: '700', // Width of the chart

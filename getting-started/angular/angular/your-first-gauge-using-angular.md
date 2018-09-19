@@ -126,23 +126,9 @@ To render the gauge follow the steps below:
 
 * Pass the `fusioncharts` library, gauge module and the theme.
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='angular2'>ES5</a></li>
-    <li><a data-toggle='angular4'>ES6</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
+The consolidated code is shown below:
 
-<div class='tab angular2-tab active'>
-<div class='mt-20'>For angular version <strong>2.x.x</strong>, we cannot use <strong>'fusioncharts/core'</strong> as it uses dynamic imports, which is not compatible with older version typescripts used by <strong>Angular 2.</strong> 
-For Angualr 2 the changes in the code are: 
-<ul> 
-<li> Use `*` as syntax. For example - `import * as FusionCharts from 'fusioncharts';`</li>
-<li> Change fusioncharts/core to fusioncharts</li>
-</ul>
-Refer to the code below:
-</div>
-<pre><code class="custom-hlc language-javascript">
+```
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -176,50 +162,7 @@ FusionChartsModule.fcRoot(FusionCharts, Widgets, FusionTheme);
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-<div class='tab angular4-tab'>
-
-<pre><code class="custom-hlc language-javascript">
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
-
-// Import angular-fusioncharts
-import { FusionChartsModule } from 'angular-fusioncharts';
-
-// Import fusioncharts core in the root
-import FusionCharts from 'fusioncharts/core';
-
-// Import gauge type
-import AngularGauge from 'fusioncharts/viz/angulargauge'; 
-
-// Import the fusion theme
-
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
-// Pass the fusioncharts library, gauge and FusionTheme
-
-FusionChartsModule.fcRoot(FusionCharts, AngularGauge, FusionTheme);
-@NgModule({
-    declarations: [
-        AppComponent
-    ],
-    imports: [
-        BrowserModule, 
-        FusionChartsModule 
-    ],
-    providers: [],
-    bootstrap: [ AppComponent ]
-})
-export class AppModule {
-}
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-</div>
-</div>
+```
 
 **Step 2:** Add data to the angular `app.component.ts`
 
