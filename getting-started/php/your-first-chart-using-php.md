@@ -182,7 +182,7 @@ The consolidated code is shown below:
 <pre><code class="custom-hlc language-php">
 &lt;?php
 
-   /* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.*/
+   /\* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.\*/
    include("includes/fusioncharts.php");
 ?&gt;
 &lt;html&gt;
@@ -251,7 +251,7 @@ The consolidated code is shown below:
 <pre><code class="custom-hlc language-php">
 &lt;?php
 
-   /* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.*/
+   /\* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.\*/
    include("includes/fusioncharts.php");
 ?&gt;
 &lt;html&gt;

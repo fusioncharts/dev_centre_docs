@@ -24,18 +24,43 @@ To install the FusionCharts Suite, follow the steps below:
 
 * Include the FusionCharts theme file to apply the style to the charts.
 
-```
-<?php
-       /* Include the `fusioncharts.php` file that contains functions to embed the charts. */
-       include("path/to/local/fusioncharts.php");
-?>
-<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-```
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab cdn-tab active'>
+<pre><code class="custom-hlc language-php">
+&lt;?php
+    /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
+    include("path/to/local/fusioncharts.php");
+?&gt;
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab local-tab'>
+<pre><code class="custom-hlc language-php">
+&lt;?php
+    /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
+    include("path/to/local/fusioncharts.php");
+?&gt;
+&lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 That completes the installation of FusionCharts Suite and the PHP wrapper.
 
-## **Create your first gauge**
+## Create your first gauge
 
 Gauges are powerful tools that can showcase information using a radial or linear scale to display data.
 
@@ -49,11 +74,11 @@ The angular gauge is shown below:
 
 The thresholds for the above sample have been defined using the following range.
 
-Range|Color|Hex Code||
+Range|Color|Hex Code|
 -|-|-|-
-0-50|Red|#F2726F||
-50-75|Yellow|#FFC533||
-75-100|Green|#62B58F||
+0-50|Red|#F2726F|
+50-75|Yellow|#FFC533|
+75-100|Green|#62B58F|
 
 So, any score less than 50 (considered bad) is presented in red. Any score between 50 and 75 (considered average) is presented in yellow. Any score above 75 (considered good) is presented in green.
 
@@ -61,7 +86,7 @@ So, any score less than 50 (considered bad) is presented in red. Any score betwe
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. In this example, we will use the JSON format, as shown below:
 
-```
+```JSON
 {
     "chart": {
         "caption": "Nordstorm's Customer Satisfaction Score for 2017",
@@ -73,33 +98,26 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
         "showToolTip": "0"
     },
     "colorRange": {
-        "color": [
-            {
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#F2726F"
-            },
-            {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#FFC533"
-            },
-            {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#62B58F"
-            }
-        ]
+        "color": [{
+            "minValue": "0",
+            "maxValue": "50",
+            "code": "#F2726F"
+        }, {
+            "minValue": "50",
+            "maxValue": "75",
+            "code": "#FFC533"
+        }, {
+            "minValue": "75",
+            "maxValue": "100",
+            "code": "#62B58F"
+        }]
     },
     "dials": {
-        "dial": [
-            {
-                "value": "81"
-            }
-        ]
+        "dial": [{
+            "value": "81"
+        }]
     }
 }
-
 ```
 
 In the above JSON:
@@ -142,7 +160,7 @@ To render the chart, follow the steps below:
 
 * Create the chart instance and set the following:
 
-    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of chart types with their respective alias[ here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
 
     * Set the gauge `id`.
 
@@ -158,38 +176,45 @@ To render the chart, follow the steps below:
 
 The full code for the above sample is given below:
 
-```
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-<?php
-    /* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.*/
+<div class='tab cdn-tab active'>
+<pre><code class="custom-hlc language-php">
+&lt;?php
+    /\* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.\*/
     include("includes/fusioncharts.php");
-?>
-<html>
-    <head>
-        <title>FusionCharts | My First Widget</title>
-        <script src="path/to/local/fusioncharts.js"></script>
-        <script src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-    </head>
-    <body>
-<?php
+?&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;FusionCharts | My First Widget&lt;/title&gt;
+        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+&lt;?php
     // Widget appearance configuration
     $arrChartConfig = array(
-        "chart" => array(
-            "caption" => "Nordstorm's Customer Satisfaction Score for 2017",
-            "lowerLimit" => "0",
-            "upperLimit" => "100",
-            "showValue" => "1",
-            "numberSuffix" => "%",
-            "theme" => "fusion",
-            "showToolTip" => "0"
+        "chart" =&gt; array(
+            "caption" =&gt; "Nordstorm's Customer Satisfaction Score for 2017",
+            "lowerLimit" =&gt; "0",
+            "upperLimit" =&gt; "100",
+            "showValue" =&gt; "1",
+            "numberSuffix" =&gt; "%",
+            "theme" =&gt; "fusion",
+            "showToolTip" =&gt; "0"
         )
     );
 
     // Widget color range data
-    $colorDataObj = array("color" => array(
-        ["minValue" => "0", "maxValue" => "50", "code" => "#F2726F"],
-        ["minValue" => "50", "maxValue" => "75", "code" => "#FFC533"],
-        ["minValue" => "75", "maxValue" => "100", "code" => "#62B58F"]
+    $colorDataObj = array("color" =&gt; array(
+        ["minValue" =&gt; "0", "maxValue" =&gt; "50", "code" =&gt; "#F2726F"],
+        ["minValue" =&gt; "50", "maxValue" =&gt; "75", "code" =&gt; "#FFC533"],
+        ["minValue" =&gt; "75", "maxValue" =&gt; "100", "code" =&gt; "#62B58F"]
     ));
 
     // Dial array    
@@ -197,12 +222,12 @@ The full code for the above sample is given below:
 
     // Widget dial data in array format, multiple values can be separated by comma e.g. ["81", "23", "45",...]
     $widgetDialDataArray = array("81");
-    for($i = 0; $i < count($widgetDialDataArray); $i++) {
-        array_push($dial,array("value" => $widgetDialDataArray[$i]));
+    for($i = 0; $i &lt; count($widgetDialDataArray); $i++) {
+        array_push($dial,array("value" =&gt; $widgetDialDataArray[$i]));
     }
 
     $arrChartConfig["colorRange"] = $colorDataObj;
-    $arrChartConfig["dials"] = array( "dial" => $dial);
+    $arrChartConfig["dials"] = array( "dial" =&gt; $dial);
 
     // JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
     $jsonEncodedData = json_encode($arrChartConfig);
@@ -211,19 +236,87 @@ The full code for the above sample is given below:
     $Widget = new FusionCharts("angulargauge", "MyFirstWidget" , "400", "250", "widget-container", "json", $jsonEncodedData);
 
     // Render the Widget
-    $Widget->render();
-?>
-    <center>
-        <div id="widget-container">Widget will render here!</div>
-    </center>
-</body>
+    $Widget-&gt;render();
+?&gt;
+    &lt;center&gt;
+        &lt;div id="widget-container"&gt;Widget will render here!&lt;/div&gt;
+    &lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-</html>
-```
+<div class='tab local-tab'>
+<pre><code class="custom-hlc language-php">
+&lt;?php
+    /\* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.\*/
+    include("includes/fusioncharts.php");
+?&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;FusionCharts | My First Widget&lt;/title&gt;
+        &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+        &lt;script src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+&lt;?php
+    // Widget appearance configuration
+    $arrChartConfig = array(
+        "chart" =&gt; array(
+            "caption" =&gt; "Nordstorm's Customer Satisfaction Score for 2017",
+            "lowerLimit" =&gt; "0",
+            "upperLimit" =&gt; "100",
+            "showValue" =&gt; "1",
+            "numberSuffix" =&gt; "%",
+            "theme" =&gt; "fusion",
+            "showToolTip" =&gt; "0"
+        )
+    );
+
+    // Widget color range data
+    $colorDataObj = array("color" =&gt; array(
+        ["minValue" =&gt; "0", "maxValue" =&gt; "50", "code" =&gt; "#F2726F"],
+        ["minValue" =&gt; "50", "maxValue" =&gt; "75", "code" =&gt; "#FFC533"],
+        ["minValue" =&gt; "75", "maxValue" =&gt; "100", "code" =&gt; "#62B58F"]
+    ));
+
+    // Dial array    
+    $dial = array();
+
+    // Widget dial data in array format, multiple values can be separated by comma e.g. ["81", "23", "45",...]
+    $widgetDialDataArray = array("81");
+    for($i = 0; $i &lt; count($widgetDialDataArray); $i++) {
+        array_push($dial,array("value" =&gt; $widgetDialDataArray[$i]));
+    }
+
+    $arrChartConfig["colorRange"] = $colorDataObj;
+    $arrChartConfig["dials"] = array( "dial" =&gt; $dial);
+
+    // JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
+    $jsonEncodedData = json_encode($arrChartConfig);
+
+    // Widget object
+    $Widget = new FusionCharts("angulargauge", "MyFirstWidget" , "400", "250", "widget-container", "json", $jsonEncodedData);
+
+    // Render the Widget
+    $Widget-&gt;render();
+?&gt;
+    &lt;center&gt;
+        &lt;div id="widget-container"&gt;Widget will render here!&lt;/div&gt;
+    &lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+</div>
+</div>
 
 That's it! Your first chart using the FusionCharts PHP wrapper is ready.
 
-## **Problem rendering the chart?**
+## Problem rendering the chart?
 
 In case there is an error, and you are unable to see the chart, check for the following:
 
