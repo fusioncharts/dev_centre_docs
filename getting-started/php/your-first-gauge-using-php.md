@@ -25,16 +25,12 @@ To install the FusionCharts Suite, follow the steps below:
 * Include the FusionCharts theme file to apply the style to the charts.
 
 ```
-
 <?php
        /* Include the `fusioncharts.php` file that contains functions to embed the charts. */
        include("path/to/local/fusioncharts.php");
 ?>
-
 <script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
-
 <script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-
 ```
 
 That completes the installation of FusionCharts Suite and the PHP wrapper.

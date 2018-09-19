@@ -22,18 +22,39 @@ Install FusionCharts and the **PHP** wrapper component using any of the followin
 
 * Include the FusionCharts theme file to apply the style to the charts.
 
-```
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-<?php
+<div class='tab cdn-tab active'>
+<pre><code class="custom-hlc language-javascript">
+&lt;?php
     /* Include the `fusioncharts.php` file that contains functions to embed the charts. */
     include("path/to/local/fusioncharts.php");
-?>
+?&gt;
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-<script type="text/javascript" src="path/to/local/fusioncharts.js"></script>
+<div class='tab local-tab'>
+<pre><code class="custom-hlc language-javascript">
+&lt;?php
+    /* Include the `fusioncharts.php` file that contains functions to embed the charts. */
+    include("path/to/local/fusioncharts.php");
+?&gt;
+&lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-<script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-
-```
+</div>
+</div>
 
 That completes the installation of FusionCharts Suite and the PHP wrapper.
 
