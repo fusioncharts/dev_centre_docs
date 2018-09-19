@@ -68,16 +68,16 @@ Let's create a Column 2D chart using the `php-fusioncharts` wrapper showing the 
 
 The data for the above chart is shown in the table below:
 
-Country|No. of Oil Reserves|
+Country|No. of Oil Reserves
 -|-
-Venezuela|290|
-Saudi|260|
-Canada|180|
-Iran|140|
-Russia|115|
-UAE|100|
-US|30|
-China|30|
+Venezuela|290
+Saudi|260
+Canada|180
+Iran|140
+Russia|115
+UAE|100
+US|30
+China|30
 
 ## Convert Tabular Data into JSON Format
 

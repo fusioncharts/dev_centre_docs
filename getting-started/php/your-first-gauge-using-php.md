@@ -160,7 +160,7 @@ To render the chart, follow the steps below:
 
 * Create the chart instance and set the following:
 
-    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
+    * Set the chart type as `angulargauge`. Each gauge is represented with a unique alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauges with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts#fusionwidgets-xt-8).
 
     * Set the gauge `id`.
 

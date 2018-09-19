@@ -195,7 +195,7 @@ To render the chart, follow the steps below:
 
 10. Create the map instance and set the following:
 
-    * Set the map type as `world`. Each chart type is represented with a unique chart alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias[ here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
+    * Set the map type as `world`. Each map is represented with a unique alias. For **World map**, the alias is `world`. Find the complete list of map types with their respective alias[ here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
 
     * Set the map `id`.
 
@@ -302,7 +302,6 @@ The full code for the above sample is given below:
     &lt;head&gt;
         &lt;title&gt;FusionCharts | My First Map&lt;/title&gt;
         &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-
         &lt;script src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
         &lt;script src="path/to/local/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
         &lt;script src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
@@ -374,7 +373,7 @@ The full code for the above sample is given below:
 
 To reduce the size of the package FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provide 1600+ maps for you to explore. [Download ](https://www.fusioncharts.com/download/map-definition-files)the map files separately if you want to save them locally.
 
-Let's create a map of California to show the "Web visits for a particular month" as shown below:
+Let's create a map of **California** to show the "Web visits for a particular month" as shown below:
 
 {% embed_chart getting-started-your-first-map-california.js %}
 
