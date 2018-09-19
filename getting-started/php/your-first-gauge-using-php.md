@@ -51,6 +51,7 @@ To start with, we'll build a simple angular gauge showcasing Nordstorm's Custome
 The angular gauge is shown below:
 
 {% embed_chart getting-started-your-first-widget.js %}
+
 The thresholds for the above sample have been defined using the following range.
 
 Range|Color|Hex Code||
