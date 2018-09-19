@@ -48,7 +48,7 @@
       ],
     },
     "events":{
-      "dataUpdated": function(e, d){
+      "beforeRender": function(e, d){
         var message = "Hover on the plot to see the percentage along with the label";
         var customDiv = document.createElement('p');
         customDiv.innerText = message;
