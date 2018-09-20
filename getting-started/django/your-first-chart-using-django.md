@@ -31,6 +31,7 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 <div class='tab cdn-tab active'>
 <pre><code class="custom-hlc language-php">
+{% load static %}
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
@@ -42,6 +43,7 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 <div class='tab local-tab'>
 <pre><code class="custom-hlc language-php">
+{% load static %}
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
