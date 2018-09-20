@@ -1,7 +1,7 @@
 ---
-title: Working with Events | FusionCharts
+title: Bind Event Listener | FusionCharts
 description: This article talks about the Events using jQuery.
-heading: Working with Events
+heading: Bind Event Listener
 ---
 
 Events are signals that let you execute specific actions—such as manipulating the DOM, sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. Events can be used to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
