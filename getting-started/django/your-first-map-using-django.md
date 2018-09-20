@@ -571,7 +571,7 @@ The HTML template of the above sample is shown below:
     &lt;script type="text/javascript" src="{% static "path/to/local/fusioncharts.js" %}"&gt;&lt;/script&gt;
     &lt;script src="{% static "path/to/local/fusioncharts.maps.js" %}"&gt;&lt;/script&gt;
     &lt;script src="{% static "path/to/local/maps/fusioncharts.world.js" %}"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="{% static "path/to/local/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="\{\% static "path/to/local/themes/fusioncharts.theme.fusion.js" \%\}"&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
