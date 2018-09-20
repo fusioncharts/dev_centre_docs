@@ -117,8 +117,6 @@ Following are the list of attributes which have been removed from the FusionChar
 
 ## Deprecated
 
-* The **Fusioncharts CJS** module for npm has been deprecated.
-
 * `showFormBtn` (deprecated)
 
 * `formBtnTitle` (deprecated)
