@@ -239,9 +239,17 @@ The full code for the above sample is given below:
 &lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;FusionCharts | My First Map&lt;/title&gt;
+
+        // Include FusionCharts core file
         &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+
+        // Include FusionCharts maps file
         &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+
+        // Include World map
         &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js"&gt;&lt;/script>
+
+        // Include FusionCharts Theme file
         &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
     &lt;/head&gt;
     &lt;body&gt;
@@ -313,9 +321,17 @@ The full code for the above sample is given below:
 &lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;FusionCharts | My First Map&lt;/title&gt;
+
+        // Include FusionCharts core file
         &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+
+        // Include FusionCharts maps file
         &lt;script src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
+
+        // Include World map
         &lt;script src="path/to/local/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
+
+        // Include FusionCharts Theme file
         &lt;script src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
     &lt;body&gt;
@@ -406,9 +422,16 @@ To render the above map, the following code is used:
 ?&gt;
 &lt;html&gt;
     &lt;head&gt;
+        // Include FusionCharts core file
         &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+
+        // Include FusionCharts map file
         &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js"&gt;&lt;/script>
+
+        // Include california map
+        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script>
+
+        //Include FusionCharts Theme file
         &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
     &lt;/head&gt;
     &lt;body&gt;
@@ -538,9 +561,17 @@ To render the above map, the following code is used:
 &lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;FusionCharts | California Map&lt;/title&gt;
+
+        // Include FusionCharts core file
         &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+
+        // Include FusionCharts maps file
         &lt;script src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
-        &lt;script src="path/to/local/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
+
+        // Include California map
+        &lt;script src="path/to/local/maps/fusioncharts.california.js"&gt;&lt;/script&gt;
+
+        // Include FusionCharts Theme file
         &lt;script src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
     &lt;body&gt;
@@ -565,7 +596,7 @@ To render the above map, the following code is used:
             )
         );
 
- // Widget color range data
+        // Widget color range data
         $colorDataObj = array("minvalue" =&gt; "0", "code" =&gt; "#FFE0B2", "gradient" =&gt; "1",
         "color" =&gt; array(
             ["maxvalue"=&gt; "2500", "code"=&gt; "f8bd19"], ["maxvalue"=&gt; "5000", "code"=&gt; "6baa01"]
@@ -675,5 +706,3 @@ In case there is an error, and you are unable to see the chart, check for the fo
 * If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if fusioncharts.js was loaded.
 
 * If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
-
-{% embed_all Special_Events_Sample.js %}
