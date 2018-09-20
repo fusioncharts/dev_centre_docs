@@ -162,11 +162,11 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 
 9. Convert the data in `dialData` array into a format supported by FusionCharts.
 
-10 Enter the data for the gauge as an array, where each element is a JSON object, with `label` and `value` as keys.
+10. Enter the data for the gauge as an array, where each element is a JSON object, with `label` and `value` as keys.
 
 11. Iterate through the data in `dialValues` and insert into the `dialData["dial"]` list.
 
-12. Enter data for the `dial` via an array, wherein each element is a JSON object having the `value` as keys.
+12. Enter data for the `dial` using an array, wherein each element is a JSON object having the `value` as keys.
 
 13. Create the gauge instance and set the following:
     * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias[ here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
