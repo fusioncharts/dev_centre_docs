@@ -16,9 +16,9 @@ Install FusionCharts and the **PHP** wrapper component using any of the followin
 
 > The **FusionCharts PHP server-side wrapper** requires **PHP 5** or higher.
 
-* Include the **FusionCharts PHP wrapper** in your project.
-
 * Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+
+* Copy and paste the `fusioncharts.php` file in your project folder.
 
 * Include the FusionCharts theme file to apply the style to the charts.
 
@@ -31,11 +31,6 @@ Install FusionCharts and the **PHP** wrapper component using any of the followin
 
 <div class='tab cdn-tab active'>
 <pre><code class="custom-hlc language-php">
-&lt;?php
-    /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
-    include("path/to/local/fusioncharts.php");
-?&gt;
-
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
@@ -47,11 +42,6 @@ Install FusionCharts and the **PHP** wrapper component using any of the followin
 
 <div class='tab local-tab'>
 <pre><code class="custom-hlc language-php">
-&lt;?php
-    /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
-    include("path/to/local/fusioncharts.php");
-?&gt;
-
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 

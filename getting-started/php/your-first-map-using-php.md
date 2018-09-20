@@ -18,9 +18,9 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 To install the FusionCharts Suite, follow the steps below:
 
-* Include the **FusionCharts PHP wrapper** in your project.
-
 * Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+
+* Copy and paste the `fusioncharts.php` file in your project folder.
 
 * Include the map renderer file.
 
@@ -35,11 +35,6 @@ To install the FusionCharts Suite, follow the steps below:
 
 <div class='tab cdn-tab active'>
 <pre><code class="custom-hlc language-php">
-&lt;?php
-    /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
-    include("path/to/local/fusioncharts.php");
-?&gt;
-
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
@@ -54,11 +49,6 @@ To install the FusionCharts Suite, follow the steps below:
 
 <div class='tab local-tab'>
 <pre><code class="custom-hlc language-php">
-&lt;?php
-    /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
-    include("path/to/local/fusioncharts.php");
-?&gt;
-
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
