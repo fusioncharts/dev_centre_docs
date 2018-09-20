@@ -126,61 +126,9 @@ To render the gauge follow the steps below:
 
 * Pass the `fusioncharts` library, gauge module and the theme.
 
-<div class="code-wrapper">
-<ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='angular4'>Angular 4 onward</a></li>
-    <li><a data-toggle='angular2'>Angular 2</a></li>
-</ul>
-<div class='tab-content extra-tabs'>
-<div class='tab angular4-tab active'>
+The consolidated code is shown below:
 
-<pre><code class="custom-hlc language-javascript">
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { AppComponent } from './app.component';
-
-// Import angular-fusioncharts
-import { FusionChartsModule } from 'angular-fusioncharts';
-
-// Import fusioncharts core in the root
-import FusionCharts from 'fusioncharts/core';
-
-// Import gauge type
-import AngularGauge from 'fusioncharts/viz/angulargauge'; 
-
-// Import the fusion theme
-
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
-// Pass the fusioncharts library, gauge and FusionTheme
-
-FusionChartsModule.fcRoot(FusionCharts, AngularGauge, FusionTheme);
-@NgModule({
-    declarations: [
-        AppComponent
-    ],
-    imports: [
-        BrowserModule, 
-        FusionChartsModule 
-    ],
-    providers: [],
-    bootstrap: [ AppComponent ]
-})
-export class AppModule {
-}
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-<div class='tab angular2-tab'>
-<div class='mt-20'>For angular version <strong>2.x.x</strong>, we cannot use <strong>'fusioncharts/core'</strong> as it uses dynamic imports, which is not compatible with older version typescripts used by <strong>Angular 2.</strong> 
-For Angualr 2 the changes in the code are: 
-<ul> 
-<li> Use `*` as syntax. For example - `import * as FusionCharts from 'fusioncharts';`</li>
-<li> Change fusioncharts/core to fusioncharts</li>
-</ul>
-Refer to the code below:
-</div>
-<pre><code class="custom-hlc language-javascript">
+```
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -192,10 +140,10 @@ import { AppComponent } from './app.component';
 import { FusionChartsModule } from 'angular-fusioncharts';
 
 // Import FusionCharts library and chart modules
-import /* as FusionCharts from 'fusioncharts';
-import /* as Widgets from 'fusioncharts/fusioncharts.widgets';
+import * as FusionCharts from 'fusioncharts';
+import * as Widgets from 'fusioncharts/fusioncharts.widgets';
 
-import /* as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Pass the fusioncharts library and chart modules
 FusionChartsModule.fcRoot(FusionCharts, Widgets, FusionTheme);
@@ -214,12 +162,7 @@ FusionChartsModule.fcRoot(FusionCharts, Widgets, FusionTheme);
   bootstrap: [AppComponent]
 })
 export class AppModule { }
-</code></pre>
-<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
-</div>
-
-</div>
-</div>
+```
 
 **Step 2:** Add data to the angular `app.component.ts`
 
@@ -228,7 +171,6 @@ Set the JSON data within the `AppComponent` class as shown below:
 > The code below is same for Angular older and latest versions.
 
 ```
-
 import {Component} from '@angular/core';
 @Component({
     selector: 'app-root',
@@ -271,7 +213,6 @@ export class AppComponent {
     }; // end of this.dataSource
 } // end of constructor
 } // end of class AppComponent
-
 ```
 
 **Step 3:** Now use fusioncharts component in `app.component.html`
@@ -284,21 +225,16 @@ Create the container to render the gauge and set the following:
 
 * The data source.
 
-> The code below is same for Angular older and latest versions.
-
 ```
-
 <h1>
   {{title}}
 </h1>
-
 <fusioncharts
     width="450" 
     height="250" 
     type="AngularGauge" 
     [dataSource]="dataSource">
 </fusioncharts> 
-
 ```
 
 That's it! Your first gauge using `react-fusioncharts` is ready.
@@ -312,4 +248,3 @@ In case there is an error, and you are unable to see the chart, check for the fo
 * If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
 
 * If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
-

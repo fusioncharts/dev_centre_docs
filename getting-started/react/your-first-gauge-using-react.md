@@ -227,10 +227,10 @@ import ReactDOM from 'react-dom';
 import ReactFC from 'react-fusioncharts';
 
 // Step 3 - Including the fusioncharts library
-import FusionCharts from 'fusioncharts/core';
+import FusionCharts from 'fusioncharts';
 
 // Step 4 - Including the chart type
-import Widgets from 'fusioncharts/viz/angulargauge';
+import Widgets from 'fusioncharts/fusioncharts.widgets';
 
 // Step 5 - Including the theme as fusion
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';

@@ -1,118 +1,222 @@
 ---
-permalink: getting-started/php/your-first-chart-using-php.html
 title: Your First Chart in PHP using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the php wrapper.
-heading: Your First Chart in PHP using FusionCharts
-chartPresent: false
+heading: Create a Chart Using PHP in FusionCharts
 ---
 
-FusionCharts Suite XT includes the **FusionCharts PHP** wrapper that lets you create interactive, data-driven charts in your PHP website without writing any JavaScript code.
+## Overview
 
-JavaScript and HTML code is used to generate charts in the browsers. The server-side PHP wrapper generates the required JavaScript and HTML code as a string, which is then used to render charts on a browser page. We'll start with simple examples of creating a [chart]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-chart-1), then a [gauge]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-gauge-8) and a [map]({% site.baseurl %}/getting-started/php/your-first-chart-using-php#create-your-first-map-11).
+FusionCharts is a JavaScript charting library that enables you to create interactive charts, gauges, maps and dashboards in JavaScript. We have built a simple server-side **PHP** wrapper for FusionCharts. The `FusionCharts server-side PHP` wrapper lets you easily add rich and interactive charts to any PHP project. Using the wrapper, you can create charts in your browsers, without writing any JavaScript code.
 
-Before going through this article, please [install]({% site.baseurl %}/getting-started/php/install-using-php) FusionCharts PHP wrapper, if you haven’t installed it already.
+In this page, we'll see how to install FusionCharts and render a chart using the `FusionCharts server-side PHP` wrapper.
 
-## Create your first chart
+## Installation
 
-In this section, we will create a chart using the FusionCharts PHP server-side wrapper. We will create a **Column 2D** chart, which has the `column2d` chart alias in FusionCharts. We have 95+ chart types with their respective aliases for you to explore. Find the complete list of chart types [here]({% site.baseurl %}/chart-guide/list-of-charts).
+Install FusionCharts and the **PHP** wrapper component using any of the following methods:
 
-Let's start with a simple example of "Countries With Most Oil Reserves" chart, which we will plot in a Column 2D chart as shown below:
+> The **FusionCharts PHP server-side wrapper** requires **PHP 5** or higher.
+
+* Include the **FusionCharts PHP wrapper** in your project.
+
+* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+
+* Include the FusionCharts theme file to apply the style to the charts.
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab cdn-tab active'>
+<pre><code class="custom-hlc language-php">
+&lt;?php
+    /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
+    include("path/to/local/fusioncharts.php");
+?&gt;
+
+// Include FusionCharts core file
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+
+// Include FusionCharts Theme file
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab local-tab'>
+<pre><code class="custom-hlc language-php">
+&lt;?php
+    /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
+    include("path/to/local/fusioncharts.php");
+?&gt;
+
+// Include FusionCharts core file
+&lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+
+// Include FusionCharts Theme file
+&lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+</div>
+</div>
+
+That completes the installation of FusionCharts Suite and the PHP wrapper.
+
+## Create Your First Chart
+
+Let's create a Column 2D chart using the `php-fusioncharts` wrapper showing the "Countries With Most Oil Reserves".
+
+> FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
 {% embed_chart getting-started-your-first-chart.js %}
 
-#### The data for this chart is represented in the table below:
+The data for the above chart is shown in the table below:
 
-Country|No. of Oil Reserves|
+Country|No. of Oil Reserves
 -|-
-Venezuela|290|
-Saudi|260|
-Canada|180|
-Iran|140|
-Russia|115|
-UAE|100|
-US|30|
-China|30|
+Venezuela|290
+Saudi|260
+Canada|180
+Iran|140
+Russia|115
+UAE|100
+US|30
+China|30
 
-### Convert tabular data into JSON/XML format
+## Convert Tabular Data into JSON Format
 
-Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. For PHP, we recommend JSON format. The converted format will look as shown below:
+Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format, as shown below:
 
-> There are different JSON formats for different groups of charts in FusionCharts - e.g., [single-series]({% site.baseurl %}/chart-guide/standard-charts/line-area-and-column-charts) (which you see here), [multi-series]({% site.baseurl %}/chart-guide/standard-charts/multi-series-charts), [combination]({% site.baseurl %}/chart-guide/standard-charts/combination-charts), etc.
-
-{% embed_data getting-started-your-first-chart.js %}
-
-In the above code we have:
-
-* Created the chart object to define the elements of the `chart`.
-* Then, each row of the tabular data is present within the `data` array to specify the labels and their corresponding values.
-
-Both the `chart` object and the `data` array contain a set of key-value pairs known as attributes. These attributes are used to set the functional and cosmetic properties of the chart as defined below:
-
-#### Functional Attributes
-
-Functional attributes let you control a variety of functional elements on the chart. For example, you can opt to show/hide data labels or data values. You can also set chart limits and extended properties. The functional attributes used in the above code are:
-
-* `caption` sets the caption of the chart.
-* `subcaption` sets the sub-caption of the chart.
-* `xAxisName` sets the name of the x-axis, whereas `yAxisName` sets the name of the y-axis.
-* `numberPrefix` adds a prefix to all the numbers visible on the chart.
-* Please note, we have used the `theme` attribute in the chart's data and provided `fusion` theme as its value. Using themes, you can centralize cosmetic and functional properties across various charts in your web application.
-
-#### Cosmetic Attributes
-
-Cosmetic attributes let you configure chart cosmetics like color, transparency, font size, etc. Since we are using the `fusion`theme to customize the chart's aesthetics, no cosmetic attributes are used in this sample. For the detailed list of attributes, click [here]({% site.baseurl %}/chart-attributes/?chart=area2d).
-
-### Create an instance of the chart
-
-In this step, we will create an instance of the chart type as **column2d**, set the width and height (in pixels or %), and finally specify the data for the chart as a string.
-
-The code to initialize and render the chart is given below:
-
-```php
-// $jsonEncodedData = "JSON data of the Chart"
-// chart object
-$Chart = new FusionCharts("column2d", "MyFirstChart" , "700", "400", "chart-container", "json", $jsonEncodedData);
+```JSON
+{
+    "chart": {
+        "caption": "Countries With Most Oil Reserves [2017-18]",
+        "subCaption": "In MMbbl = One Million barrels",
+        "xAxisName": "Country",
+        "yAxisName": "Reserves (MMbbl)",
+        "numberSuffix": "K",
+        "theme": "fusion"
+    },
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
+}
 ```
 
-In the above code:
+> Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example, [single-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[ multi-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), [combination ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts)charts.
 
-* We have created an instance of the **Column2d** chart. Each chart type in FusionCharts Suite XT has a unique alias, which you can use to create an instance of that chart. In this case, we are creating an instance of a Column 2D chart with dimensions of 700x400 pixels using `width` and `height`.
-* The array data is embedded as the value of the `jsonEncodedData` parameter.
+In the above JSON data:
 
-Then, create a container using `<div>`, to render the chart.
+* Create the `chart` object to define the elements of the chart.
 
-```HTML
-<div id="chart-container">Chart will render here!</div>
-```
-The full code for the above sample is given below:
+* Specify the `label` and `value` of each column within the data array.
 
-```html
-<?php
+Both the chart object and the data array contain a set of key-value pairs known as **attributes**. These attributes are used to set the functional and cosmetic properties of the chart.
 
-   /* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.*/
+Now that you have converted the tabular data to JSON format, let's see how to render the chart.
+
+## Render the Chart
+
+To render the chart, follow the steps below:
+
+1. Include the **FusionCharts PHP wrapper** in your project.
+
+2. Include the `fusioncharts` library.
+
+3. Include the FusionCharts theme file to apply the style to the charts.
+
+4. Store the chart configurations in an associative array.
+
+5. Store the data in a multidimensional array.
+
+6. Create an associative array with `label` and `values` derived from the `data` array.
+
+7. Create a data object within the chart configurations to assign the associative data array to it.
+
+8. Convert the final chart configuration to JSON string.
+
+9. Create the chart instance and set the following:
+
+    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias[ here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+
+    * Set the chart `id`.
+
+    * Set the `width` and `height` (in pixels).
+
+    * Set the container for the chart.
+
+    * Set the `dataFormat` as JSON.
+
+    * Embed the `json` data as the value of the `dataSource`.
+
+10. Finally, create a container using `<div>` to render the chart.
+
+The consolidated code is shown below:
+
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab cdn-tab active'>
+<pre><code class="custom-hlc language-php">
+&lt;?php
+
+   /\* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.\*/
    include("includes/fusioncharts.php");
-?>
-<html>
+?&gt;
+&lt;html&gt;
 
-<head>
-    <title>FusionCharts | My First Chart</title>
-    <script src="path/to/local/fusioncharts.js"></script>
-    <script src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-</head>
+&lt;head&gt;
+    &lt;title&gt;FusionCharts | My First Chart&lt;/title&gt;
 
-<body>
-    <?php
+    // Include FusionCharts core file
+    &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+
+    // Include FusionCharts Theme File
+    &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;?php
+    // Chart Configuration stored in Associative Array
     $arrChartConfig = array(
-        "chart" => array(
-            "caption" => "Countries With Most Oil Reserves [2017-18]",
-            "subCaption" => "In MMbbl = One Million barrels",
-            "xAxisName" => "Country",
-            "yAxisName" => "Reserves (MMbbl)",
-            "numberSuffix" => "K",
-            "theme" => "fusion"
+        "chart" =&gt; array(
+            "caption" =&gt; "Countries With Most Oil Reserves [2017-18]",
+            "subCaption" =&gt; "In MMbbl = One Million barrels",
+            "xAxisName" =&gt; "Country",
+            "yAxisName" =&gt; "Reserves (MMbbl)",
+            "numberSuffix" =&gt; "K",
+            "theme" =&gt; "fusion"
         )
     );
-
     // An array of hash objects which stores data
     $arrChartData = array(
         ["Venezuela", "290"],
@@ -128,9 +232,9 @@ The full code for the above sample is given below:
     $arrLabelValueData = array();
 
     // Pushing labels and values
-    for($i = 0; $i < count($arrChartData); $i++) {
+    for($i = 0; $i &lt; count($arrChartData); $i++) {
         array_push($arrLabelValueData, array(
-            "label" => $arrChartData[$i][0], "value" => $arrChartData[$i][1]
+            "label" =&gt; $arrChartData[$i][0], "value" =&gt; $arrChartData[$i][1]
         ));
     }
 
@@ -143,326 +247,102 @@ The full code for the above sample is given below:
     $Chart = new FusionCharts("column2d", "MyFirstChart" , "700", "400", "chart-container", "json", $jsonEncodedData);
 
     // Render the chart
-    $Chart->render();
-    ?>
+    $Chart-&gt;render();
+    ?&gt;
 
-    <center>
-        <div id="chart-container">Chart will render here!</div>
-    </center>
-</body>
+    &lt;center&gt;
+        &lt;div id="chart-container"&gt;Chart will render here!&lt;/div&gt;
+    &lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-</html>
-```
+<div class='tab local-tab'>
+<pre><code class="custom-hlc language-php">
+&lt;?php
 
-That's it! When you run this HTML page now, you should see a chart representing your data.
+   /\* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.\*/
+   include("includes/fusioncharts.php");
+?&gt;
+&lt;html&gt;
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=column2d) (the keys in the `dataSource` object) for a Column 2D chart.
+&lt;head&gt;
+    &lt;title&gt;FusionCharts | My First Chart&lt;/title&gt;
 
-Now, go on and explore other 95+ chart types that we have in [FusionCharts]({% site.baseurl %}/chart-guide/list-of-charts) or explore the configuration [attributes]({% site.baseurl %}/chart-attributes/?chart=area2d) for the charts.
+    // Include the FusionCharts core file
+    &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
-## The FusionCharts Chart Class
+    // Include the FusionCharts Theme file
+    &lt;script src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
 
-The syntax of the `Chart` class constructor used to initialize the chart object is:
-
-```vb.net
-Chart <object name> = new Chart (chartType, chartId, chartWidth, chartHeight, dataFormat, dataSource, bgColor, bgOpacity)
-```
-
-A list of available constructor parameters are given in the table below:
-
-<table>
-  <tr>
-    <th>Parameter</th>
-    <th>Type</th>
-    <th>Description</th>
-  </tr>
-  <tr>
-    <td>`chartType`
-</td>
-    <td>String</td>
-    <td>It is used to specify the type of chart to be rendered.</td>
-  </tr>
-  <tr>
-    <td>`chartId`</td>
-    <td>String</td>
-    <td>It is used to specify a unique identifier for the chart. If multiple charts are rendered on the same HTML page, each chart is referred to using its unique ID.</td>
-  </tr>
-  <tr>
-    <td>`chartWidth`</td>
-    <td>String</td>
-    <td>It is used to specify the width of the chart, in pixels.</td>
-  </tr>
-  <tr>
-    <td>`chartHeight`</td>
-    <td>String</td>
-    <td>It is used to specify the height of the chart, in pixels.</td>
-  </tr>
-  <tr>
-    <td>`dataFormat`</td>
-    <td>String</td>
-    <td>It is used to specify the type of data that will be passed to the chart. This attribute takes the following values: `json`, `xml`, `jsonurl`, `xmlurl`. </td>
-  </tr>
-  <tr>
-    <td>`dataSource`</td>
-    <td>String</td>
-    <td>It specifies the source from where the data will be fetched, depending on the value passed to the `dataFormat` attribute.</td>
-  </tr>
-  <tr>
-    <td>`bgColor`</td>
-    <td>String</td>
-    <td>It is used to specify the hex code for the background color of the chart.</td>
-  </tr>
-  <tr>
-    <td>`bgOpacity`</td>
-    <td>String</td>
-    <td>It is used to specify the background opacity for the chart. This attribute takes values between 0 (transparent) and 100 (opaque).</td>
-  </tr>
-</table>
-
-It is not necessary to assign values for all parameters during initialization. However, keep in mind the following:
-
-* The order of parameters needs to be preserved.
-* Make sure that all of these parameters have been assigned values using the constructor, the `Chart` class methods, or the `Render()` method before running the application.
-* If not, either the chart will not render at all or it will not render the way you want it to. </p>
-
-## Create your first gauge
-
-Gauges are powerful tools that can showcase information using a radial scale to display data and a dial to indicate the value. In this section, we will create an **Angular Gauge.**
-
-To start with, we'll build a simple gauge showcasing Nordstorm's Customer Satisfaction Score as shown below:
-
-{% embed_chart getting-started-your-first-widget.js %}
-
-The thresholds for the above sample have been defined using the following range.
-
-Range|Color|Hex Code|
--|-|-
-0-50|Red|#F2726F|
-50-75|Yellow|#FFC533|
-75-100|Green|#62B58F|
-
-So, any score less than 50 is bad and is red. Any score between 50 and 75 is average and is yellow. Any score above 75 means good and is green.
-
-### Convert tabular data into JSON/XML format
-
-Now that you have the tabular data ready, it's time to convert it into JSON/XML format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
-
-{% embed_data getting-started-your-first-widget.js %}
-
-### Create an instance of the gauge
-
-In this step, we will create an instance of the chart type as **angulargauge**, set the width and height (in pixels or %), and finally specify the data for the chart as a string format.
-
-The code to initialize and render the chart is given below:
-
-```php
-// $jsonEncodedData = "JSON data of the Gauge"
-// Widget object
-$Widget = new FusionCharts("angulargauge", "MyFirstWidget" , "400", "250", "widget-container", "json", $jsonEncodedData);
-
-```
-
-Then, create a container using `<div>` to render the gauge.
-
-```HTML
-<div id="widget-container">Widget will render here!</div>
-```
-
-The full code for the above sample is given below:
-
-```html
-<?php
-    /* Include the `../src/fusioncharts.php` file that contains functions to embed the charts.*/
-    include("includes/fusioncharts.php");
-?>
-<html>
-    <head>
-        <title>FusionCharts | My First Widget</title>
-        <script src="path/to/local/fusioncharts.js"></script>
-        <script src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-    </head>
-    <body>
-<?php
-    // Widget appearance configuration
+&lt;body&gt;
+    &lt;?php
     $arrChartConfig = array(
-        "chart" => array(
-            "caption" => "Nordstorm's Customer Satisfaction Score for 2017",
-            "lowerLimit" => "0",
-            "upperLimit" => "100",
-            "showValue" => "1",
-            "numberSuffix" => "%",
-            "theme" => "fusion",
-            "showToolTip" => "0"
+        "chart" =&gt; array(
+            "caption" =&gt; "Countries With Most Oil Reserves [2017-18]",
+            "subCaption" =&gt; "In MMbbl = One Million barrels",
+            "xAxisName" =&gt; "Country",
+            "yAxisName" =&gt; "Reserves (MMbbl)",
+            "numberSuffix" =&gt; "K",
+            "theme" =&gt; "fusion"
         )
     );
+    // An array of hash objects which stores data
+    $arrChartData = array(
+        ["Venezuela", "290"],
+        ["Saudi", "260"],
+        ["Canada", "180"],
+        ["Iran", "140"],
+        ["Russia", "115"],
+        ["UAE", "100"],
+        ["US", "30"],
+        ["China", "30"]
+    );
 
-    // Widget color range data
-    $colorDataObj = array("color" => array(
-        ["minValue" => "0", "maxValue" => "50", "code" => "#F2726F"],
-        ["minValue" => "50", "maxValue" => "75", "code" => "#FFC533"],
-        ["minValue" => "75", "maxValue" => "100", "code" => "#62B58F"]
-    ));
+    $arrLabelValueData = array();
 
-    // Dial array    
-    $dial = array();
-                  
-    // Widget dial data in array format, multiple values can be separated by comma e.g. ["81", "23", "45",...]
-    $widgetDialDataArray = array("81");
-    for($i = 0; $i < count($widgetDialDataArray); $i++) {
-        array_push($dial,array("value" => $widgetDialDataArray[$i]));
+    // Pushing labels and values
+    for($i = 0; $i &lt; count($arrChartData); $i++) {
+        array_push($arrLabelValueData, array(
+            "label" =&gt; $arrChartData[$i][0], "value" =&gt; $arrChartData[$i][1]
+        ));
     }
 
-    $arrChartConfig["colorRange"] = $colorDataObj;
-    $arrChartConfig["dials"] = array( "dial" => $dial);
+    $arrChartConfig["data"] = $arrLabelValueData;
 
     // JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
     $jsonEncodedData = json_encode($arrChartConfig);
 
-    // Widget object
-    $Widget = new FusionCharts("angulargauge", "MyFirstWidget" , "400", "250", "widget-container", "json", $jsonEncodedData);
+    // chart object
+    $Chart = new FusionCharts("column2d", "MyFirstChart" , "700", "400", "chart-container", "json", $jsonEncodedData);
 
-    // Render the Widget
-    $Widget->render();
-?>
-    <center>
-        <div id="widget-container">Widget will render here!</div>
-    </center>
-</body>
+    // Render the chart
+    $Chart-&gt;render();
+    ?&gt;
 
-</html>
+    &lt;center&gt;
+        &lt;div id="chart-container"&gt;Chart will render here!&lt;/div&gt;
+    &lt;/center&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-```
+</div>
+</div>
 
-See the complete list of [all possible attributes]({% site.baseurl %}/chart-attributes/?chart=angulargauge) for an angular gauge.
-
-## Create your first map
-
-In this section, we will create a visualization using the map of **World**. Take a look at the map shown below:
-
-{% embed_chart getting-started-your-first-map.js %}
-
-The data for this chart is represented in the table below:
-
-State|Entity Name|Value|
--|-|-
-North America|NA|82|
-South America|SA|2.04|
-Asia|AS|1.78|
-Europe|EU|40|
-Africa|AF|2.58|
-Australia|AU|1.30|
-
-In the above table, the column **Entity Name** represents the geographical entities represented in the map, whose full names are given in the **State** column in this example. 
-
-However, when you convert the data in a format acceptable by FusionCharts, the entities are denoted by the `id` key in the `data` object (see the code snippet of the next section). 
-
-For any map visualization you create, it is imperative that you provide the correct value for the `id` keys. For example, if you want to denote Africa, the value for the corresponding `id` must be `AF`, and not `AFR`. We have detailed [Map Specification Sheets]({% site.baseurl %}/maps/spec-sheets/world) for all the maps that can be rendered using FusionCharts. Refer to them for the correct `id` of the map you want to create.
-
-### Convert tabular data into JSON/XML format
-
-Now that you have the tabular data ready, it's time to convert it into JSON/XML format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
-
-{% embed_data getting-started-your-first-map.js %}
-
-### Create an instance of the map
-
-In this step, we will create an instance of the map type as **world**, set the width and height (in pixels or %), and finally specify the data for the chart as a string.
-
-The code to initialize and render the chart is given below:
-
-```php
-// $jsonEncodedData = "JSON data of the Map"
-// Map object
-$Map = new FusionCharts("maps/world", "MyFirstMap" , "800", "500", "map-container", "json", $jsonEncodedData);
-```
-Then, create a container using `div>`, to render the map.
-
-```HTML
-<div id="map-container">Map will render here!</div>
-```
-
-The full code for the above sample is given below:
-
-```html
-<?php
-    // Include the `../src/fusioncharts.php` file that contains functions to embed the charts.
-    include("includes/fusioncharts.php");
-?>
-<html>
-    <head>
-        <title>FusionCharts | My First Map</title>
-        <script src="path/to/local/fusioncharts.js"></script>
-        <script src="path/to/local/maps/fusioncharts.world.js"></script>
-        <script src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
-    </head>
-    <body>
-        <?php
-        // Widget appearance configuration
-        $arrMapConfig = array(
-            "chart" => array(
-                "caption" => "Average Annual Population Growth",
-                "subcaption" => " 1955-2015",
-                "numbersuffix" => "%",
-                "includevalueinlabels" => "1",
-                "labelsepchar" => ": ",
-                "entityFillHoverColor" => "#FFF9C4",
-                "theme" => "fusion"
-            )
-        );
-
-        // Widget color range data
-        $colorDataObj = array("minvalue" => "0", "code" => "#FFE0B2", "gradient" => "1",
-        "color" => array(
-            ["minValue" => "0", "maxValue" => "50", "code" => "#F2726F"],
-            ["minValue" => "50", "maxValue" => "75", "code" => "#FFC533"],
-            ["minValue" => "75", "maxValue" => "100", "code" => "#62B58F"]
-        ));
-
-        // Map data array
-        $mapDataArray = array(
-            ["NA", ".82", "1"],
-            ["SA", "2.04", "1"],
-            ["AS", "1.78", "1"],
-            ["EU", ".40", "1"],
-            ["AF", "2.58", "1"],
-            ["AU", "1.30", "1"]
-        );
-                      
-        $mapData = array();
-
-        for($i = 0; $i < count($mapDataArray); $i++) {
-            array_push($mapData,array("id" => $mapDataArray[$i][0], "value" => $mapDataArray[$i][1], "showLabel" => $mapDataArray[$i][2]));
-        }
-
-        $arrMapConfig["colorRange"] = $colorDataObj;
-        $arrMapConfig["data"] = $mapData;
-
-        // JSON Encode the data to retrieve the string containing the JSON representation of the data in the array.
-        $jsonEncodedData = json_encode($arrMapConfig);
-
-        // Map object
-        $Map = new FusionCharts("maps/world", "MyFirstMap" , "800", "500", "map-container", "json", $jsonEncodedData);
-
-        // Render the Map
-        $Map->render();
-        ?>
-        <center>
-            div id="map-container">Map will render here!</div>
-        </center>
-    </body>
-</html>
-```
-
-See the complete list of [all possible attributes]({% site.baseurl %}/maps/attribute-reference) (the keys in the `dataSource` object) for the Map of World. The respective `ids`, can be found [here]({% site.baseurl %}/maps/spec-sheets/world).
+That's it! Your first chart using the **FusionCharts PHP** wrapper is ready.
 
 ## Problem rendering the chart?
 
-In case there is an error and you are unable to see the chart, check for the following:
+In case there is an error, and you are unable to see the chart, check for the following:
 
-* If you don't see the chart rendered on your browser, it might be because some browsers do not allow JavaScript files to be loaded and run from the local file system. In such cases, either try a different browser, or create a local/remote server and provide the webpages containing the charts from the server.
+* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly.
+* If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. 
 
-* If the chart does not show up, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded. Check if the path to `fusioncharts.js` file is correct and whether the file exists in that location.
-
-* If you get a `Loading Data` or `Error in Loading Data` message, check whether your JSON data structure is correct, or if there are conflicts related to quotation marks in your code.
+* If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
