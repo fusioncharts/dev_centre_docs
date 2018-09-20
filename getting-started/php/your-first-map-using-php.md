@@ -18,9 +18,9 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 To install the FusionCharts Suite, follow the steps below:
 
-* Include the **FusionCharts PHP wrapper** in your project.
-
 * Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+
+* Copy and paste the `fusioncharts.php` file in your project folder.
 
 * Include the map renderer file.
 
@@ -35,11 +35,6 @@ To install the FusionCharts Suite, follow the steps below:
 
 <div class='tab cdn-tab active'>
 <pre><code class="custom-hlc language-php">
-&lt;?php
-    /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
-    include("path/to/local/fusioncharts.php");
-?&gt;
-
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
@@ -54,11 +49,6 @@ To install the FusionCharts Suite, follow the steps below:
 
 <div class='tab local-tab'>
 <pre><code class="custom-hlc language-php">
-&lt;?php
-    /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
-    include("path/to/local/fusioncharts.php");
-?&gt;
-
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
@@ -397,6 +387,8 @@ The full code for the above sample is given below:
 </div>
 </div>
 
+That's it! You first map with PHP is ready.
+
 ## Render other maps
 
 To reduce the size of the package FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provide 1600+ maps for you to explore. [Download ](https://www.fusioncharts.com/download/map-definition-files)the map files separately if you want to save them locally.
@@ -436,7 +428,7 @@ To render the above map, the following code is used:
     &lt;/head&gt;
     &lt;body&gt;
         &lt;?php
-        // Widget appearance configuration
+        // Map appearance configuration
         $arrMapConfig = array(
             "chart" =&gt; array(
                 "animation"=&gt; "0",
@@ -456,7 +448,7 @@ To render the above map, the following code is used:
             )
         );
 
- // Widget color range data
+ // Map color range data
         $colorDataObj = array("minvalue" =&gt; "0", "code" =&gt; "#FFE0B2", "gradient" =&gt; "1",
         "color" =&gt; array(
             ["maxvalue"=&gt; "2500", "code"=&gt; "f8bd19"], ["maxvalue"=&gt; "5000", "code"=&gt; "6baa01"]
