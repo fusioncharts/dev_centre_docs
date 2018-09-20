@@ -36,13 +36,13 @@ To install the FusionCharts Suite, follow the steps below:
 <div class='tab cdn-tab active'>
 <pre><code class="custom-hlc language-php">
 // Include FusionCharts core file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="{% "http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js" %}"&gt;&lt;/script>
 
 // Include FusionCharts maps file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="{% "http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js" %}"&gt;&lt;/script>
 
 // Include FusionCharts Theme file
-&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+&lt;script type="text/javascript" src="{% "http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script>
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -50,13 +50,13 @@ To install the FusionCharts Suite, follow the steps below:
 <div class='tab local-tab'>
 <pre><code class="custom-hlc language-php">
 // Include FusionCharts core file
-&lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="{% "path/to/local/fusioncharts.js" %}"&gt;&lt;/script&gt;
 
 // Include FusionCharts maps file
-&lt;script type="text/javascript" src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="{% "path/to/local/fusioncharts.maps.js" %}"&gt;&lt;/script&gt;
 
 // Include FusionCharts Theme file
-&lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="{% "path/to/local/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
@@ -317,17 +317,10 @@ The HTML template of the above sample is shown below:
 &lt;head&gt;
     &lt;title&gt;FC-python wrapper&lt;/title&gt;
     {% load static %}
-    // Include FusionCharts core file
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-
-        // Include FusionCharts maps file
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
-
-        // Include World map
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js"&gt;&lt;/script>
-
-        // Include FusionCharts Theme file
-        &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js" %}"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js" %}"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js" %}"&gt;&lt;/script>
+    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
@@ -348,17 +341,10 @@ The HTML template of the above sample is shown below:
 &lt;head&gt;
     &lt;title&gt;FC-python wrapper&lt;/title&gt;
     {% load static %}
-    	// Include FusionCharts core file
-        &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-
-        // Include FusionCharts maps file
-        &lt;script src="path/to/local/fusioncharts.maps.js"&gt;&lt;/script&gt;
-
-        // Include World map
-        &lt;script src="path/to/local/maps/fusioncharts.world.js"&gt;&lt;/script&gt;
-
-        // Include FusionCharts Theme file
-        &lt;script src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="{% static "path/to/local/fusioncharts.js" %}"&gt;&lt;/script&gt;
+    &lt;script src="{% static "path/to/local/fusioncharts.maps.js" %}"&gt;&lt;/script&gt;
+    &lt;script src="{% static "path/to/local/maps/fusioncharts.world.js" %}"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="{% static "path/to/local/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
@@ -571,7 +557,7 @@ The HTML template of the above sample is shown below:
     &lt;script type="text/javascript" src="{% static "path/to/local/fusioncharts.js" %}"&gt;&lt;/script&gt;
     &lt;script src="{% static "path/to/local/fusioncharts.maps.js" %}"&gt;&lt;/script&gt;
     &lt;script src="{% static "path/to/local/maps/fusioncharts.world.js" %}"&gt;&lt;/script&gt;
-    &lt;script type="text/javascript" src="\{\% static "path/to/local/themes/fusioncharts.theme.fusion.js" \%\}"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="{% static "path/to/local/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
 &lt;/head&gt;
 
 &lt;body&gt;
