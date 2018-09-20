@@ -166,3 +166,17 @@ In the above code:
 	* `renderComplete` event calculates and stores the total value of the chart data.
 
 5. `customDiv.innerHTML` is added to display the message inside the `<div>`.
+
+### Add data to `app.component.html`
+
+Add the following code to `app.component.html`:
+
+```HTML
+<!-- in app.component.html -->
+<fusioncharts
+    [chartConfig]=chartConfig
+    [dataSource]=dataSource >
+</fusioncharts>
+```
+
+In the above code a `fusioncharts` diective is created in a template.
