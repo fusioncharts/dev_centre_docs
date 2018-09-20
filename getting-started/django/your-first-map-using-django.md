@@ -1,6 +1,6 @@
 ---
 title: Your First Map in Django using FusionCharts | FusionCharts
-description: This article outlines the steps to be executed for creating your first map using the php wrapper.
+description: This article outlines the steps to be executed for creating your first map using the django wrapper.
 heading: Create a Map Using Django in FusionCharts
 ---
 
@@ -12,9 +12,9 @@ In this page, we'll see how to install FusionCharts and render a chart using the
 
 ## Installation
 
-In this section, we will show you how to install FusionCharts Suite XT and the `FusionCharts PHP` wrapper and all the other dependencies on your system.
+In this section, we will show you how to install FusionCharts Suite XT and the `FusionCharts Django` wrapper and all the other dependencies on your system.
 
-> The **FusionCharts PHP server-side wrapper** requires **PHP 5** or higher.
+> The **FusionCharts Django** wrapper requires Python 2.7 or higher.
 
 To install the FusionCharts Suite, follow the steps below:
 
@@ -198,7 +198,7 @@ To render the chart, follow the steps below:
 10. Insert the `mapDataArray` `dataSource["data"]` list.
 
 11. Create the gauge instance and set the following:
-    * Set the chart type as `world`. Each chart type is represented with a unique map alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias[ here ](https://www.fusioncharts.com/dev/chart-guide/list-of-maps).
+    * Set the chart type as `world`. Each map is represented with a unique map alias. For World map, the alias is `world`. Find the complete list of map types with their respective alias[ here ](https://www.fusioncharts.com/dev/chart-guide/list-of-maps).
 
     * Set the map `id`.
 

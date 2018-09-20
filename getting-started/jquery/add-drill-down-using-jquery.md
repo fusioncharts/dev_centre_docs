@@ -200,5 +200,3 @@ The above chart has been rendered using the following steps:
     * The json data has been embeded as the value of the `dataSource`.
 
 4. Each linked chart has been saved in object with an `id`.
-
-{% embed_all Lifecycle_event.js %}

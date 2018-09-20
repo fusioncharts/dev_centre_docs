@@ -169,7 +169,7 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 12. Enter data for the `dial` using an array, wherein each element is a JSON object having the `value` as keys.
 
 13. Create the gauge instance and set the following:
-    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias[ here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type as `angulargauge`. Find the complete list of gauge types with their respective alias[ here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
     * Set the gauge `id`.
 
