@@ -387,6 +387,8 @@ The full code for the above sample is given below:
 </div>
 </div>
 
+That's it! You first map with PHP is ready.
+
 ## Render other maps
 
 To reduce the size of the package FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provide 1600+ maps for you to explore. [Download ](https://www.fusioncharts.com/download/map-definition-files)the map files separately if you want to save them locally.
@@ -426,7 +428,7 @@ To render the above map, the following code is used:
     &lt;/head&gt;
     &lt;body&gt;
         &lt;?php
-        // Widget appearance configuration
+        // Map appearance configuration
         $arrMapConfig = array(
             "chart" =&gt; array(
                 "animation"=&gt; "0",
@@ -446,7 +448,7 @@ To render the above map, the following code is used:
             )
         );
 
- // Widget color range data
+ // Map color range data
         $colorDataObj = array("minvalue" =&gt; "0", "code" =&gt; "#FFE0B2", "gradient" =&gt; "1",
         "color" =&gt; array(
             ["maxvalue"=&gt; "2500", "code"=&gt; "f8bd19"], ["maxvalue"=&gt; "5000", "code"=&gt; "6baa01"]
