@@ -171,7 +171,7 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 13. Create the gauge instance and set the following:
     * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias[ here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
-    * Set the chart `id`.
+    * Set the gauge `id`.
 
     * Set the `width` and `height` (in pixels).
 
@@ -181,7 +181,7 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 
     * Embed the `json` data as the value of the `dataSource`.
 
-    * Pass the chart data to the `dataSource` parameter.
+    * Pass the gauge data to the `dataSource` parameter.
 
 14. Finally, use a container using `<div>` to render the gauge.
 
