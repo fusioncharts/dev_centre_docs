@@ -174,5 +174,3 @@ This article focuses on how you can calculate the percentage of a data plot with
 5. `render()` function is added to create the `button` inside the `<div>`.
 
 6. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
-
-{% embed_all Change_Chart_type__Fixed.js %}
