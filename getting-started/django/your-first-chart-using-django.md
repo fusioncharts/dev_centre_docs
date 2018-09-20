@@ -37,7 +37,7 @@ Let's create a Column 2D chart using the `django-fusioncharts` wrapper showing t
 
 > FusionCharts Suite has 95+ chart types for you to explore. Find the complete list of chart types [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
-<<Chart>>
+{% embed_chart getting-started-your-first-chart.js %}
 
 The data for the above chart is shown in the table below:
 
