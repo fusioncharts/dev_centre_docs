@@ -46,7 +46,7 @@ const chartConfigs = {
     height: '400', // Height of the chart
     dataFormat: 'json', // Data type
     dataSource: {
-    // Chart Configuration
+        // Chart Configuration
         "chart": {
             "caption": "Countries With Most Oil Reserves [2017-18]",
             "subCaption": "In MMbbl = One Million barrels",
