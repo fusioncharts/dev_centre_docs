@@ -35,7 +35,11 @@ Install FusionCharts and the **PHP** wrapper component using any of the followin
     /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
     include("path/to/local/fusioncharts.php");
 ?&gt;
+
+// Include FusionCharts core file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+
+// Include FusionCharts Theme file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -47,12 +51,15 @@ Install FusionCharts and the **PHP** wrapper component using any of the followin
     /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
     include("path/to/local/fusioncharts.php");
 ?&gt;
+
+// Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+
+// Include FusionCharts Theme file
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-
 </div>
 </div>
 
@@ -83,7 +90,7 @@ China|30
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format, as shown below:
 
-```
+```JSON
 {
     "chart": {
         "caption": "Countries With Most Oil Reserves [2017-18]",
@@ -137,23 +144,23 @@ Now that you have converted the tabular data to JSON format, let's see how to re
 
 To render the chart, follow the steps below:
 
-* Include the **FusionCharts PHP wrapper** in your project.
+1. Include the **FusionCharts PHP wrapper** in your project.
 
-* Include the `fusioncharts` library.
+2. Include the `fusioncharts` library.
 
-* Include the FusionCharts theme file to apply the style to the charts.
+3. Include the FusionCharts theme file to apply the style to the charts.
 
-* Store the chart configurations in an associative array.
+4. Store the chart configurations in an associative array.
 
-* Store the data in a multidimensional array.
+5. Store the data in a multidimensional array.
 
-* Create an associative array with `label` and `values` derived from the `data` array.
+6. Create an associative array with `label` and `values` derived from the `data` array.
 
-* Create a data object within the chart configurations to assign the associative data array to it.
+7. Create a data object within the chart configurations to assign the associative data array to it.
 
-* Convert the final chart configuration to JSON string.
+8. Convert the final chart configuration to JSON string.
 
-* Create the chart instance and set the following:
+9. Create the chart instance and set the following:
 
     * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias[ here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
@@ -167,7 +174,7 @@ To render the chart, follow the steps below:
 
     * Embed the `json` data as the value of the `dataSource`.
 
-* Finally, create a container using `<div>` to render the chart.
+10. Finally, create a container using `<div>` to render the chart.
 
 The consolidated code is shown below:
 
@@ -189,12 +196,17 @@ The consolidated code is shown below:
 
 &lt;head&gt;
     &lt;title&gt;FusionCharts | My First Chart&lt;/title&gt;
+
+    // Include FusionCharts core file
     &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+
+    // Include FusionCharts Theme File
     &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 &lt;/head&gt;
 
 &lt;body&gt;
     &lt;?php
+    // Chart Configuration stored in Associative Array
     $arrChartConfig = array(
         "chart" =&gt; array(
             "caption" =&gt; "Countries With Most Oil Reserves [2017-18]",
@@ -258,7 +270,11 @@ The consolidated code is shown below:
 
 &lt;head&gt;
     &lt;title&gt;FusionCharts | My First Chart&lt;/title&gt;
+
+    // Include the FusionCharts core file
     &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+
+    // Include the FusionCharts Theme file
     &lt;script src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 &lt;/head&gt;
 

@@ -37,7 +37,11 @@ To install the FusionCharts Suite, follow the steps below:
     /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
     include("path/to/local/fusioncharts.php");
 ?&gt;
+
+// Include FusionCharts core file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+
+// Include FusionCharts Theme File
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -49,12 +53,15 @@ To install the FusionCharts Suite, follow the steps below:
     /\* Include the `fusioncharts.php` file that contains functions to embed the charts. \*/
     include("path/to/local/fusioncharts.php");
 ?&gt;
+
+// Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+
+// Include FusionCharts Theme file
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-
 </div>
 </div>
 
@@ -142,23 +149,23 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 
 To render the chart, follow the steps below:
 
-* Include the **FusionCharts PHP wrapper** in your project.
+1. Include the **FusionCharts PHP wrapper** in your project.
 
-* Include the `fusioncharts` library.
+2. Include the `fusioncharts` library.
 
-* Include the FusionCharts theme file to apply the style to the charts.
+3.  Include the FusionCharts theme file to apply the style to the charts.
 
-* Store the chart configurations in an associative array.
+4.  Store the chart configurations in an associative array.
 
-* Store the color range in a multidimensional array.
+5.  Store the color range in a multidimensional array.
 
-* Store the value of the `dial` in an array. 
+6.  Store the value of the `dial` in an array. 
 
-* Create a data object within the chart configurations to assign the associative data array to it.
+7. Create a data object within the chart configurations to assign the associative data array to it.
 
-* Convert the final chart configuration to JSON string.
+8. Convert the final chart configuration to JSON string.
 
-* Create the chart instance and set the following:
+9. Create the chart instance and set the following:
 
     * Set the chart type as `angulargauge`. Each gauge is represented with a unique alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauges with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts#fusionwidgets-xt-8).
 
@@ -172,7 +179,7 @@ To render the chart, follow the steps below:
 
     * Embed the `json` data as the value of the `dataSource`.
 
-* Finally, use a container using `<div>` to render the gauge.
+10. Finally, use a container using `<div>` to render the gauge.
 
 The full code for the above sample is given below:
 
@@ -192,7 +199,11 @@ The full code for the above sample is given below:
 &lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;FusionCharts | My First Widget&lt;/title&gt;
+
+        // Include FusionCharts core file
         &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
+
+        // Include FusionCharts Theme File
         &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
     &lt;/head&gt;
     &lt;body&gt;
@@ -256,7 +267,11 @@ The full code for the above sample is given below:
 &lt;html&gt;
     &lt;head&gt;
         &lt;title&gt;FusionCharts | My First Widget&lt;/title&gt;
+
+        // Include FusionCharts core file
         &lt;script src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+
+        // Include FusionCharts Theme file
         &lt;script src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
     &lt;/head&gt;
     &lt;body&gt;
