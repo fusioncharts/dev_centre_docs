@@ -65,10 +65,9 @@ To start with, we'll build a simple angular gauge showcasing Nordstrom's Custome
 
 The angular gauge is shown below:
 
-<<Gauge>>
+{% embed_chart getting-started-your-first-widget.js %}
 
-The thresholds for the above sample have been defined using the following range.
-
+The thresholds for his customer satisfaction score has been defined using the following range.
 
 Range|Color|Hex Code|
 -|-|-
@@ -76,16 +75,13 @@ Range|Color|Hex Code|
 50-75|Yellow|#FFC533|
 75-100|Green|#62B58F|
 
-
-
 So, any score less than 50 (considered bad) is presented in red. Any score between 50 and 75 (considered average) is presented in yellow. Any score above 75 (considered good) is presented in green.
 
 ### Convert Tabular Data into JSON/XML Format
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in JSON or XML format. In this example, we will use the JSON format, as shown below:
 
-```
-
+```JSON
 {
     "chart": {
         "caption": "Nordstorm's Customer Satisfaction Score for 2017",
@@ -97,33 +93,26 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
         "showToolTip": "0"
     },
     "colorRange": {
-        "color": [
-            {
-                "minValue": "0",
-                "maxValue": "50",
-                "code": "#F2726F"
-            },
-            {
-                "minValue": "50",
-                "maxValue": "75",
-                "code": "#FFC533"
-            },
-            {
-                "minValue": "75",
-                "maxValue": "100",
-                "code": "#62B58F"
-            }
-        ]
+        "color": [{
+            "minValue": "0",
+            "maxValue": "50",
+            "code": "#F2726F"
+        }, {
+            "minValue": "50",
+            "maxValue": "75",
+            "code": "#FFC533"
+        }, {
+            "minValue": "75",
+            "maxValue": "100",
+            "code": "#62B58F"
+        }]
     },
     "dials": {
-        "dial": [
-            {
-                "value": "81"
-            }
-        ]
+        "dial": [{
+            "value": "81"
+        }]
     }
 }
-
 ```
 
 In the above JSON:
@@ -164,7 +153,7 @@ To render the chart, follow the steps below:
 
 * Create the chart instance and set the following:
 
-    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type as `angulargauge`. Each gauge is represented with a unique alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauges with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts#fusionwidgets-xt-8).
 
     * Set the gauge `id`.
 

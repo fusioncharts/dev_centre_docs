@@ -31,7 +31,7 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 <div class='tab-content extra-tabs'>
 
 <div class='tab cdn-tab active'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="custom-hlc language-java">
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
@@ -42,7 +42,7 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="custom-hlc language-java">
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
 
@@ -66,22 +66,22 @@ Let's create a Column 2D chart using the `jsp-fusioncharts` wrapper showing the 
 
 The data for the above chart is shown in the table below:
 
-Country|No. of Oil Reserves||
--|-|-
-Venezuela|290||
-Saudi|260||
-Canada|180||
-Iran|140||
-Russia|115||
-UAE|100||
-US|30||
-China|30||
+Country|No. of Oil Reserves|
+-|-
+Venezuela|290|
+Saudi|260|
+Canada|180|
+Iran|140|
+Russia|115|
+UAE|100|
+US|30|
+China|30|
 
 ## Convert Tabular Data into JSON Format
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format, as shown below:
 
-```
+```JSON
 {
     "chart": {
         "caption": "Countries With Most Oil Reserves [2017-18]",
@@ -91,42 +91,32 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
         "numberSuffix": "K",
         "theme": "fusion"
     },
-    "data": [
-        {
-            "label": "Venezuela",
-            "value": "290"
-        },
-        {
-            "label": "Saudi",
-            "value": "260"
-        },
-        {
-            "label": "Canada",
-            "value": "180"
-        },
-        {
-            "label": "Iran",
-            "value": "140"
-        },
-        {
-            "label": "Russia",
-            "value": "115"
-        },
-        {
-            "label": "UAE",
-            "value": "100"
-        },
-        {
-            "label": "US",
-            "value": "30"
-        },
-        {
-            "label": "China",
-            "value": "30"
-        }
-    ]
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
 }
-
 ```
 > Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example, [single-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts),[ multi-series ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), and [combination ](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts)charts.
 
@@ -184,7 +174,7 @@ The consolidated code is shown below:
 <div class='tab-content extra-tabs'>
 
 <div class='tab cdn-tab active'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="custom-hlc language-java">
 &lt;%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%&gt;
 &lt;%@page import="java.util.*" %&gt;
 &lt;%@page import="fusioncharts.FusionCharts" %&gt;
@@ -254,8 +244,8 @@ The consolidated code is shown below:
             FusionCharts firstChart = new FusionCharts(
                 "column2d", 
                 "first_chart", 
-                "800",
-                "550", 
+                "700",
+                "400", 
                 "chart",
                 "json", 
                 jsonData.toString()
@@ -269,7 +259,7 @@ The consolidated code is shown below:
 </div>
 
 <div class='tab local-tab'>
-<pre><code class="custom-hlc language-php">
+<pre><code class="custom-hlc language-java">
 &lt;%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%&gt;
 &lt;%@page import="java.util.*" %&gt;
 &lt;%@page import="fusioncharts.FusionCharts" %&gt;
@@ -334,8 +324,8 @@ The consolidated code is shown below:
             FusionCharts firstChart = new FusionCharts(
                 "column2d", 
                 "first_chart", 
-                "800",
-                "550", 
+                "700",
+                "400", 
                 "chart",
                 "json", 
                 jsonData.toString()
