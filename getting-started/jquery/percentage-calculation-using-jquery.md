@@ -6,150 +6,106 @@ heading: Percentage Calculation
 
 Events are signals that let you execute specific actions—such as sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, percentage calculation, and events.
 
-This article focuses on how you can calculate the percentage of a data plot with respect to the all the data plots using React `props` object.
+This article focuses on how you can calculate the percentage of a data plot with respect to all the data plots using `jquery-fusioncharts` component.
 
 A chart configured to calculate the percent, is shown below:
 
 {% embed_chartData percentage-calculation-example-1.js json %}
 
-The full code of the above sample is given below:
+The code to render a chart using `require` is given below:
 
 ```
-//Including react
-import React, { Component } from 'react';
+// Include fusioncharts
+var FusionCharts = require('fusioncharts');
 
-//Including the react-fusioncharts component
-import ReactDOM from 'react-dom';
+// Include chart modules
+var Charts = require('fusioncharts/fusioncharts.charts');
 
-//Including the fusioncharts library
-import FusionCharts from 'fusioncharts';
+// Include the theme file
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-//Including the chart type
-import Chart from 'fusioncharts/fusioncharts.charts';
+var $ = require('jquery');
+var jQueryFusionCharts = require('jquery-fusioncharts');
 
-//Including react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
+// Resolve Charts as dependency for FusionCharts
+Charts(FusionCharts); 
 
-//Including the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+// Resolve Fusion theme as dependency for FusionCharts
+FusionTheme(FusionCharts); 
 
-//Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Chart, FusionTheme);
+// Resolve FusionCharts as dependency for jqueryFusionCharts
+jQueryFusionCharts(FusionCharts); 
 
-//Creating the JSON object to store the chart configurations
+$('document').ready(function () {
+    // bind beforeDataUpdate and dataUpdated events
+    $('#chart-container').bind('fusionchartsbeforedataupdate', function (event, args) {
+        $('#message').append('beforeDataUpdate, ');
+    });
+    $('#chart-container').bind('fusionchartsdataupdated', function (event, args) {
+        $('#message').append('dataUpdated, ');
+    });
 
-const chartConfigs = {
-	type: 'column2d', // The chart type
-	width: 700, // Width of the chart
-	height: 400, // Height of the chart
-	dataFormat: 'json', // Data type
-	dataSource: {
-		// Chart configuration
-	    "chart": {
-	        "caption": "Countries With Most Oil Reserves [2017-18]",
-	        "subCaption": "In MMbbl = One Million barrels",
-	        "xAxisName": "Country",
-	        "yAxisName": "Reserves (MMbbl)",
-	        "numberSuffix": "K",
-	        "theme": "fusion"
-	    },
-	    // Chart data
-	    "data": [{
-	        "label": "Venezuela",
-	        "value": "290"
-	    }, {
-	        "label": "Saudi",
-	        "value": "260"
-	    }, {
-	        "label": "Canada",
-	        "value": "180"
-	    }, {
-	        "label": "Iran",
-	        "value": "140"
-	    }, {
-	        "label": "Russia",
-	        "value": "115"
-	    }, {
-	        "label": "UAE",
-	        "value": "100"
-	    }, {
-	        "label": "US",
-	        "value": "30"
-	    }, {
-	        "label": "China",
-	        "value": "30"
-	    }]
-	},
-};
+    $('#chart-container').insertFusionCharts({
+        type: 'column2d',
+        width: '700',
+        height: '400',
+        dataFormat: 'json',
+        dataSource: {
+		    "chart": {
+		        "caption": "Countries With Most Oil Reserves [2017-18]",
+		        "subCaption": "In MMbbl = One Million barrels",
+		        "xAxisName": "Country",
+		        "yAxisName": "Reserves (MMbbl)",
+		        "numberSuffix": "K",
+		        "theme": "fusion"
+		    },
+		    "data": [{
+	            "label": "Venezuela",
+	            "value": "290"
+	        }, {
+	            "label": "Saudi",
+	            "value": "260"
+	        }, {
+	            "label": "Canada",
+	            "value": "180"
+	        }, {
+	            "label": "Iran",
+	            "value": "140"
+	        }, {
+	            "label": "Russia",
+	            "value": "115"
+	        }, {
+	            "label": "UAE",
+	            "value": "100"
+	        }, {
+	            "label": "US",
+	            "value": "30"
+	        }, {
+	            "label": "China",
+	            "value": "30"
+	        }]
+		}
+    });
 
-//Your react component
-class Chart extends Component {
- 	constructor(props) {
-    	super(props);
+    // bind drawComplete and renderComplete events
+    $('#chart-container').bind('fusionchartsdrawcomplete', function (event, args) {
+        $('#message').append('drawComplete, ');
+    });
+    $('#chart-container').bind('fusionchartsrendercomplete', function (event, args) {
+        $('#message').append('renderComplete');
+    });
+});
+```
 
-    	// Message Generator 
-    	this.state = {
-      		actualValue: 'Hover on the plot to see the percentage along with the label',
-      		message: 'Hover on the plot to see the value along with the label'
-		};
+The HTML template of the above sample is shown below:
 
-	    this.dataplotrollover = this.dataplotrollover.bind(this);
-	    this.dataplotrollout = this.dataplotrollout.bind(this);
-	    this.renderComplete = this.renderComplete.bind(this);
-  	}
-
-  	// Event callback handler for 'dataplotRollOver'.
-  	// Shows the percentage of the hovered plot on the page.
-  	dataplotrollover(eventObj, dataObj) {
-    	const value = ((dataObj.value / this.state.total) * 100).toFixed(2);
-		this.setState({
-  			message: [
-		        <strong>{dataObj.categoryLabel}</strong>,
-		        " is ",
-		        <strong>{value}</strong>,
-		        "% of top 8 oil reserve countries"
-  			]
-		});
-  	}
-
- 	// Event callback handler for 'dataplotRollOut'.
-  	// Resets to the default message.
-  	dataplotrollout(eventObj, dataObj) {
-    	this.setState({
-      		message: this.state.actualValue
-    	});
-  	}
-
-  	// Trigerred when chart is rendered.
-  	// Calculates and stores the total value of the chart's data.
-  	renderComplete(chart) {
-    	const chartData = chart.getJSONData();
-    	this.setState({
-      		total: chartData.data.reduce((p, c) => p + Number(c.value), 0),
-    	});
-  	}
-
-	render() {
-    	return (
-			<div>
-			<ReactFC
-			  {...chartConfigs}
-			  onRender={this.renderComplete}
-			  fcEvent-dataplotRollOver={this.dataplotrollover}
-			  fcEvent-dataplotRollOut={this.dataplotrollout}
-			/>
-			<p style={{ padding: '10px', background: '#f5f2f0' }}>
-			  {this.state.message}
-			</p>
-			</div>
-    	);
-  	}
-}
-
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
+```html
+<div id="chart-container">
+    FusionCharts will render here
+</div>
+<p style="padding: 10px; background: rgb(245, 242, 240);" id="message">
+    <b>Status:</b>
+</p>
 ```
 
 The above chart has been rendered using the following steps:
@@ -164,15 +120,8 @@ The above chart has been rendered using the following steps:
 
 3. Created a component to include `react-fusioncharts` component.
 
-This article focuses on how you can calculate the percentage of a data plot with respect to the all the data plots using React `props` object.
-
 4. In the above sample:
-* `dataplotrollover` event shows the percentage of the hovered plot on the page.
-* `dataplotrollout` event resets the default message.
+* `beforeDataUpdate` and `dataUpdated` events are bind.
 * `renderComplete` event calculates and stores the total value of the chart data.
 
-5. `render()` function is added to create the `button` inside the `<div>`.
-
-6. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
-
-{% embed_all Change_theme_change.js %}
+5. Created an HTML template to render the chart.

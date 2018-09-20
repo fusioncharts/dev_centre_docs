@@ -6,7 +6,7 @@ heading: Percentage Calculation
 
 Events are signals that let you execute specific actions—such as sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, percentage calculation, and events.
 
-This article focuses on how you can calculate the percentage of a data plot with respect to the all the data plots using React `props` object.
+This article focuses on how you can calculate the percentage of a data plot with respect to all the data plots using React `props` object.
 
 A chart configured to calculate the percent, is shown below:
 
@@ -163,8 +163,6 @@ The above chart has been rendered using the following steps:
     * The json data has been embeded as the value of the `dataSource`.
 
 3. Created a component to include `react-fusioncharts` component.
-
-This article focuses on how you can calculate the percentage of a data plot with respect to the all the data plots using React `props` object.
 
 4. In the above sample:
 * `dataplotrollover` event shows the percentage of the hovered plot on the page.
