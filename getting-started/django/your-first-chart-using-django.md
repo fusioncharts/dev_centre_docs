@@ -22,6 +22,8 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 * Include the FusionCharts theme file to apply the style to the charts.
 
+The consolidated given below:
+
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='cdn'>CDN</a></li>
@@ -34,7 +36,6 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 {% load static %}
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
 </code></pre>
@@ -46,7 +47,6 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 {% load static %}
 // Include FusionCharts core file
 &lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
-
 // Include FusionCharts Theme file
 &lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
 </code></pre>
@@ -54,6 +54,7 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 </div>
 </div>
 </div>
+
 That completes the installation of FusionCharts Suite and the Django wrapper.
 
 ## Create Your First Chart
