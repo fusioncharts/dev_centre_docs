@@ -165,7 +165,7 @@ To render the chart, follow the steps below:
 9. Iterate through the data in `chartData` and insert into the `dataSource['data']` list.
 
 10. Create the chart instance and set the following:
-    * Set the chart type as `angulargauge`. Each chart type is represented with a unique chart alias. For Angular Gauge, the alias is `angulargauge`. Find the complete list of gauge types with their respective alias[ here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias[ here ](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
     * Set the chart `id`.
 
@@ -179,7 +179,7 @@ To render the chart, follow the steps below:
 
     * Pass the chart data to the `dataSource` parameter.
 
-12. Finally, use a container using `<div>` to render the chart.
+11. Finally, use a container using `<div>` to render the chart.
 
 The consolidated code is shown below:
 
