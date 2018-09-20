@@ -22,13 +22,36 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 * Include the FusionCharts theme file to apply the style to the charts.
 
-```
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-{% load static %}
-<script type="text/javascript" src="{% static "path/to/local/fusioncharts.js" %}"></script>
-<script type="text/javascript" src="{% static "path/to/local/themes/fusioncharts.theme.fusion.js" %}"></script>
+<div class='tab cdn-tab active'>
+<pre><code class="custom-hlc language-php">
+// Include FusionCharts core file
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
 
-```
+// Include FusionCharts Theme file
+&lt;script type="text/javascript" src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+
+<div class='tab local-tab'>
+<pre><code class="custom-hlc language-php">
+// Include FusionCharts core file
+&lt;script type="text/javascript" src="path/to/local/fusioncharts.js"&gt;&lt;/script&gt;
+
+// Include FusionCharts Theme file
+&lt;script type="text/javascript" src="path/to/local/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+</div>
+</div>
 That completes the installation of FusionCharts Suite and the Django wrapper.
 
 ## Create Your First Chart
@@ -158,7 +181,6 @@ To render the chart, follow the steps below:
 The consolidated code is shown below:
 
 ```
-
 from django.shortcuts import render
 from django.http import HttpResponse
 from collections import OrderedDict
@@ -214,26 +236,61 @@ return render(request, 'index.html', {
     'output': column2D.render()
 })
 
+```
 The HTML template of the above sample is shown below:
 
-<!-- Filename: app_name/templates/index.html -->
-<!DOCTYPE html>
-<html>
+<div class="code-wrapper">
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>CDN</a></li>
+    <li><a data-toggle='local'>Local Files</a></li>
+</ul>
+<div class='tab-content extra-tabs'>
 
-<head>
-    <title>FC-python wrapper</title>
+<div class='tab cdn-tab active'>
+<pre><code class="custom-hlc language-php">
+&lt;!-- Filename: app_name/templates/index.html --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;FC-python wrapper&lt;/title&gt;
     {% load static %}
-    <script type="text/javascript" src="{% static "path/to/local/fusioncharts.js" %}"></script>
-    <script type="text/javascript" src="{% static "path/to/local/themes/fusioncharts.theme.fusion.js" %}"></script>
-</head>
+    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js" %}"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="{% static "http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
+&lt;/head&gt;
 
-<body>
-    <div id="myFirstchart-container">{{ output|safe }}</div>
-</body>
+&lt;body&gt;
+    &lt;div id="myFirstchart-container"&gt;{{ output|safe }}&lt;/div&gt;
+&lt;/body&gt;
 
-</html>
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
 
-```
+<div class='tab local-tab'>
+<pre><code class="custom-hlc language-php">
+&lt;!-- Filename: app_name/templates/index.html --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;FC-python wrapper&lt;/title&gt;
+    {% load static %}
+    &lt;script type="text/javascript" src="{% static "path/to/local/fusioncharts.js" %}"&gt;&lt;/script&gt;
+    &lt;script type="text/javascript" src="{% static "path/to/local/themes/fusioncharts.theme.fusion.js" %}"&gt;&lt;/script&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div id="myFirstchart-container"&gt;{{ output|safe }}&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;
+</code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
+</div>
+</div>
+</div>
 
 That's it! Your first chart using the `FusionCharts Django wrapper` is ready.
 
@@ -246,4 +303,3 @@ In case there is an error, and you are unable to see the chart, check for the fo
 * If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
 * If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
-
