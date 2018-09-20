@@ -175,6 +175,4 @@ This article focuses on how you can calculate the percentage of a data plot with
 
 6. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
 
-{% embed_all Change_chart_type_at_runtime.js %}
-
-{% embed_all Change_Chart_type__Fixed_.js %}
+{% embed_all Change_Chart_type__Fixed.js %}
