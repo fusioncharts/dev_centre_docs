@@ -67,7 +67,7 @@ To start with, we'll build a simple angular gauge showcasing Nordstrom's Custome
 
 The angular gauge is shown below:
 
-<<Gauge>>
+{% embed_chart getting-started-your-first-widget.js %}
 
 The thresholds for the above sample have been defined using the following range.
 
@@ -184,7 +184,7 @@ Now that you have converted the tabular data to JSON format, let's learn how to 
 
     * Pass the chart data to the `dataSource` parameter.
 
-* Finally, use a container using `<div>` to render the gauge.
+14. Finally, use a container using `<div>` to render the gauge.
 
 The full code for the above sample is:
 
