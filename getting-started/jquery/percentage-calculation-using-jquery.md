@@ -110,7 +110,7 @@ The HTML template of the above sample is shown below:
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Included the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
 
 2. Stored the chart configuration in a JSON object. In the JSON object:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
@@ -118,7 +118,7 @@ The above chart has been rendered using the following steps:
     * The `dataFormat` is set as JSON.
     * The json data has been embeded as the value of the `dataSource`.
 
-3. Created a component to include `react-fusioncharts` component.
+3. Used FusionChart's jQuery method `insertFusionCharts()` to create FusionCharts.
 
 4. In the above sample:
 	* `beforeDataUpdate` and `dataUpdated` events are binded.

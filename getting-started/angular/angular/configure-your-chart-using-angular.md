@@ -20,7 +20,7 @@ A chart, configured to update data values dynamically, is shown below (click **U
 
 ### Setup the Main Module
 
-In this step, we will setup the main module to create the **Column 2d** chart. The code is given below:
+In this step, we will setup the main module to create the **Column 2D** chart. The code is given below:
 
 ```
 // Setup needed in app.module.ts
