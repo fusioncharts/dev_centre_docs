@@ -15,148 +15,144 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-This article focuses on how you can apply different themes to the chart at runtime using React `props` object. Click any radio button, to see how the look and feel of the chart change with each theme.
+This article focuses on how you can apply different themes to the chart at runtime using `jquery-fusioncharts` component. Click any radio button, to see how the look and feel of the chart change with each theme.
 
 A chart configured to change the theme, is shown below:
 
 {% embed_chartData apply-different-theme-example-1.js json %}
 
-The full code of the above sample is given below:
+The code to render a chart using `require` is given below:
 
 ```
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts/core';
-import Charts from 'fusioncharts/fusioncharts.charts';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-import GammelTheme from 'fusioncharts/themes/fusioncharts.theme.gammel';
-import CandyTheme from 'fusioncharts/themes/fusioncharts.theme.candy';
-import ZuneTheme from 'fusioncharts/themes/fusioncharts.theme.zune';
-import OceanTheme from 'fusioncharts/themes/fusioncharts.theme.ocean';
-import CarbonTheme from 'fusioncharts/themes/fusioncharts.theme.carbon';
+// Include fusioncharts
+var FusionCharts = require('fusioncharts');
 
-ReactFC.fcRoot(FusionCharts, Charts, FusionTheme, GammelTheme, CandyTheme, ZuneTheme, OceanTheme, CarbonTheme);
+// Include chart modules
+var Charts = require('fusioncharts/fusioncharts.charts');
 
-const chartConfigs = {
-    type: 'column2d',
-    width: '700',
-    height: '400',
-    dataFormat: 'json',
-    dataSource: {
-        // Chart configuration
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion"
-        },
-        // Chart data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    }
-};
+// Include the theme file
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-class Chart extends Component {
-    constructor(props) {
-        super(props);
+var $ = require('jquery');
+var jQueryFusionCharts = require('jquery-fusioncharts');
 
-        this.state = {
-            chart: {},
-            currentVal: 'fusion'
-        };
+// Resolve Charts as dependency for FusionCharts
+Charts(FusionCharts); 
 
-        this.renderComplete = this.renderComplete.bind(this);
-        this.radioHandler = this.radioHandler.bind(this);
-    }
+// Resolve Fusion theme as dependency for FusionCharts
+FusionTheme(FusionCharts); 
 
-    renderComplete(chart) {
-    this.setState({ chart });
-    }
+// Resolve FusionCharts as dependency for jqueryFusionCharts
+jQueryFusionCharts(FusionCharts); 
 
-    // Handler for radio buttons to change chart theme.
-    radioHandler(e) {
-        this.state.chart.setChartAttribute('theme', e.currentTarget.value);
-        this.setState({
-            currentVal: e.currentTarget.value
-        });
-    }
+$('document').ready(function() {
+    $('#chart-container').insertFusionCharts({
+        id: 'theme-chart',
+        type: 'column2d',
+        width: '600',
+        height: '400',
+        dataFormat: 'json',
+        dataSource: {
+            // Chart configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion"
+            },
+            // Chart data
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
+        }
+    });
 
-    render() {
-        return (
-            <div>
-            <ReactFC {...chartConfigs} onRender={this.renderComplete} />
-            <br />
-            <center>
-                <span>Choose a theme:</span>
-                <div className="change-type">
-                    <div>
-                        <input type="radio" value="fusion" onChange={this.radioHandler} checked={this.state.currentVal === 'fusion'} />
-                        <label>Fusion</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="gammel" onChange={this.radioHandler} checked={this.state.currentVal === 'gammel'} />
-                        <label>Gammel</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="candy" onChange={this.radioHandler} checked={this.state.currentVal === 'candy'} />
-                        <label>Candy</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="zune" onChange={this.radioHandler} checked={this.state.currentVal === 'zune'} />
-                        <label>Zune</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="ocean" onChange={this.radioHandler} checked={this.state.currentVal === 'ocean'} />
-                        <label>Ocean</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="carbon" onChange={this.radioHandler} checked={this.state.currentVal === 'carbon'} />
-                      <label>Carbon</label>
-                    </div>
-                </div>
-            </center>
+    // Handlers for changing the theme using setChartAttribute method
+    $('#radio1').click(function() {
+        FusionCharts.items['theme-chart'].setChartAttribute('theme', 'fusion');
+    });
+    $('#radio2').click(function() {
+        FusionCharts.items['theme-chart'].setChartAttribute('theme', 'gammel');
+    });
+    $('#radio3').click(function() {
+        FusionCharts.items['theme-chart'].setChartAttribute('theme', 'candy');
+    });
+    $('#radio4').click(function() {
+        FusionCharts.items['theme-chart'].setChartAttribute('theme', 'zune');
+    });
+    $('#radio5').click(function() {
+        FusionCharts.items['theme-chart'].setChartAttribute('theme', 'ocean');
+    });
+    $('#radio6').click(function() {
+        FusionCharts.items['theme-chart'].setChartAttribute('theme', 'carbon');
+    });
+});
+```
+
+The HTML template of the above sample is shown below:
+
+```HTML
+<div id="chart-container"></div>
+<div style="display: flex; position: absolute; bottom: 2px;">
+    <div id="select-text">Choose a theme:</div>
+    <div class="change-type">
+        <div id="radio1">
+            <input name="theme-selecter" id="radioButton1" type="radio" checked="checked" />
+            <label for="radioButton1">Fusion</label>
         </div>
-      );
-    }
-}
-
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
+        <div id="radio2">
+            <input name="theme-selecter" id="radioButton2" type="radio" />
+            <label for="radioButton2">Gammel</label>
+        </div>
+        <div id="radio3">
+            <input name="theme-selecter" id="radioButton3" type="radio" />
+            <label for="radioButton3">Candy</label>
+        </div>
+        <div id="radio4">
+            <input name="theme-selecter" id="radioButton4" type="radio" />
+            <label for="radioButton4">Zune</label>
+        </div>
+        <div id="radio5">
+            <input name="theme-selecter" id="radioButton5" type="radio" />
+            <label for="radioButton5">Ocean</label>
+        </div>
+        <div id="radio6">
+            <input name="theme-selecter" id="radioButton6" type="radio" />
+            <label for="radioButton6">Carbon</label>
+        </div>
+    </div>
+</div>
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Included the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
 
-2. As the above samples shows all the themes using the radio buttons, included the theme files for all the six themes.
+2. Resolve charts as dependency for `fusioncharts`, `theme` file and `jquery-fusioncharts`. 
 
 3. Stored the chart configuration in a JSON object. In the JSON object:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
@@ -164,12 +160,6 @@ The above chart has been rendered using the following steps:
     * The `dataFormat` is set as JSON.
     * The json data has been embeded as the value of the `dataSource`.
 
-3. Created a component to include `react-fusioncharts` component.
+4. Handlers to apply selected theme to the chart.
 
-4. In the above sample:
-	* `renderComplete` event is used to render the charts at runtime.
-	* `radioHander` is uded for radio buttons to apply selected theme to the chart.
-
-5. `render()` function is added to create the **radio buttons** inside the `<div>`.
-
-6. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+5. Created an HTML template to render the chart.

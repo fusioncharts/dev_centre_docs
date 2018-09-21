@@ -168,7 +168,7 @@ The above chart has been rendered using the following steps:
 
 4. In the above sample:
 	* `renderComplete` event is used to render the charts at runtime.
-	* `radioHander` is uded for radio buttons to apply selected theme to the chart.
+	* `radioHander` is used for radio buttons to apply selected theme to the chart.
 
 5. `render()` function is added to create the **radio buttons** inside the `<div>`.
 
