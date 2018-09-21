@@ -520,7 +520,6 @@ The HTML template of the above sample is shown below:
 &lt;!-- Filename: app_name/templates/index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
     &lt;title&gt;FC-python wrapper&lt;/title&gt;
     {% load static %}
@@ -533,7 +532,6 @@ The HTML template of the above sample is shown below:
 &lt;body&gt;
     &lt;div id="myFirstchart-container"&gt;{{ output|safe }}&lt;/div&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -544,7 +542,6 @@ The HTML template of the above sample is shown below:
 &lt;!-- Filename: app_name/templates/index.html --&gt;
 &lt;!DOCTYPE html&gt;
 &lt;html&gt;
-
 &lt;head&gt;
     &lt;title&gt;FC-python wrapper&lt;/title&gt;
     {% load static %}
@@ -557,7 +554,6 @@ The HTML template of the above sample is shown below:
 &lt;body&gt;
     &lt;div id="myFirstchart-container"&gt;{{ output|safe }}&lt;/div&gt;
 &lt;/body&gt;
-
 &lt;/html&gt;
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
