@@ -1,6 +1,6 @@
 ---
 title: Lifecycle Events using React | FusionCharts
-description: In this article a sample to calculate the percentage value of the data plot with respect to the total is created.
+description: The sample in this article lists the basic lifestyle events at the time of rendering the chart using react props object.
 heading: Lifecycle Events using React
 ---
 
