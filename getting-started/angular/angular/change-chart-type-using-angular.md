@@ -6,7 +6,7 @@ heading: Change Chart Type at Runtime
 
 FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, update chart type at runtime, and events.
 
-This article focuses on how you can change the chart type of the chart at runtime using React `props` object. The chart types used in the sample is:
+This article focuses on how you can change the chart type of the chart at runtime `angular-fusioncharts` component. The chart types used in the sample is:
 
 * Column 2D
 * Bar 2D
@@ -16,135 +16,129 @@ A chart configured to change the chart type, is shown below:
 
 {% embed_chartData change-chart-type-example-1.js json %}
 
-The full code of the above sample is given below:
+### Setup the Main Module
+
+In this step, we will setup the main module to create the **Column 2D** chart. The code is given below:
 
 ```
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts';
-import Charts from 'fusioncharts/fusioncharts.charts';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+// Setup needed in app.module.ts
+import { NgModule, enableProdMode } from '@angular/core'
+import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { FusionChartsModule } from 'angular-fusioncharts';
 
-ReactFC.fcRoot(FusionCharts, Charts, FusionTheme);
+// Load FusionCharts
+import * as FusionCharts from 'fusioncharts';
+// Load Charts module
+import * as Charts from 'fusioncharts/fusioncharts.charts';
+// Load themes
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-const chartConfigs = {
-	type: 'column2d',
-	width: 700,
-	height: 400,
-	dataFormat: 'json',
-	dataSource: {
-		// Chart configuration
-	    "chart": {
-	        "caption": "Countries With Most Oil Reserves [2017-18]",
-	        "subCaption": "In MMbbl = One Million barrels",
-	        "xAxisName": "Country",
-	        "yAxisName": "Reserves (MMbbl)",
-	        "numberSuffix": "K",
-	        "theme": "fusion"
-	    },
-	    // Chart data
-	    "data": [{
-	        "label": "Venezuela",
-	        "value": "290"
-	    }, {
-	        "label": "Saudi",
-	        "value": "260"
-	    }, {
-	        "label": "Canada",
-	        "value": "180"
-	    }, {
-	        "label": "Iran",
-	        "value": "140"
-	    }, {
-	        "label": "Russia",
-	        "value": "115"
-	    }, {
-	        "label": "UAE",
-	        "value": "100"
-	    }, {
-	        "label": "US",
-	        "value": "30"
-	    }, {
-	        "label": "China",
-	        "value": "30"
-	    }]
-	},
-};
+// Add dependencies to FusionChartsModule
+FusionChartsModule.fcRoot(
+  FusionCharts,
+  Charts,
+  FusionTheme
+)
 
-class Chart extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      chart: {},
-      currentVal: 'column2d'
-    };
-
-    this.renderComplete = this.renderComplete.bind(this);
-    this.radioHandler = this.radioHandler.bind(this);
-  }
-
-  renderComplete(chart) {
-    this.setState({ chart });
-  }
-
-  // Handler for radio buttons to change chart type.
-  radioHandler(e) {
-    this.state.chart.chartType(e.currentTarget.value);
-    this.setState({
-      currentVal: e.currentTarget.value
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <ReactFC {...chartConfigs} onRender={this.renderComplete} />
-        <br />
-        <center>
-          <span>Choose a chart type:</span>
-          <div className="change-type">
-            <div>
-              <input
-                type="radio"
-                value="column2d"
-                onChange={this.radioHandler}
-                checked={this.state.currentVal === 'column2d'} />
-              <label>Column 2D Chart</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                value="bar2d"
-                onChange={this.radioHandler}
-                checked={this.state.currentVal === 'bar2d'} />
-              <label>Bar 2D Chart</label>
-            </div>
-            <div>
-              <input
-                type="radio"
-                value="pie2d"
-                onChange={this.radioHandler}
-                checked={this.state.currentVal === 'pie2d'} />
-              <label>Pie 2D Chart</label>
-            </div>
-          </div>
-        </center>
-      </div>
-    );
-  }
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FusionChartsModule
+  ],
+  providers: [
+  ],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule {
 }
-
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
 ```
 
-The above chart has been rendered using the following steps:
+In the above code:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+
+2. Loaded FusionCharts, chart module and fusion theme.
+
+3. Added dependencies to `FusionChartsModule`.
+
+> The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
+
+### Add data to `app.component.ts`
+
+Add the following code to `app.component.ts`:
+
+```
+// In app.component.ts
+import {
+  Component,
+  NgZone
+} from '@angular/core';
+
+@Component({
+    selector: 'app',
+    templateUrl: './app.component.html'
+})
+export class AppComponent {
+    dataSource: any;
+    chartObj:any;
+    chart: any = 'column2d';
+
+    constructor(private zone: NgZone) {
+        this.dataSource = {
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
+            },
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+              }, {
+                "label": "Saudi",
+                "value": "260"
+              }, {
+                "label": "Canada",
+                "value": "180"
+              }, {
+                "label": "Iran",
+                "value": "140"
+              }, {
+                "label": "Russia",
+                "value": "115"
+              }, {
+                "label": "UAE",
+                "value": "100"
+              }, {
+                "label": "US",
+                "value": "30"
+              }, {
+                "label": "China",
+                "value": "30"
+              }]
+          };
+    }
+
+    initialized($event){
+      this.chartObj = $event.chart; // saving chart instance
+    }
+  
+    onSelectionChange(chart){
+      this.chart = chart;
+      this.chartObj.chartType(chart); // Changing chart type using chart instance
+    }
+}
+```
+
+In the above code:
+
+1. The JSON data is added within the `AppComponent` class.
 
 2. Stored the chart configuration in a JSON object. In the JSON object:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
@@ -152,12 +146,39 @@ The above chart has been rendered using the following steps:
     * The `dataFormat` is set as JSON.
     * The json data has been embeded as the value of the `dataSource`.
 
-3. Created a component to include `react-fusioncharts` component.
+3. Saved the chart instance in `chartObj`.
 
-4. In the above sample:
-	* `renderComplete` event is used to render the charts at runtime.
-	* `radioHander` is uded for radio buttons to change the chart type.
+4. `onSectionChange` chart instance to change the chart type at runtime.
 
-5. `render()` function is added to create the **radio buttons** inside the `<div>`.
+### Add data to `app.component.html`
 
-6. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+Add the following code to `app.component.html`:
+
+```
+<!-- in app.component.html -->
+<fusioncharts width="700" height="400" type="column2d" [dataSource]=dataSource (initialized)="initialized($event)">
+</fusioncharts>
+<div style='display: flex; justify-content: center'>
+    <span id="select-text">Select size:</span>
+    <div class="change-type">
+        <div>
+            <input type="radio" name='options' [value]="'column2d'" [checked]='chart === "column2d"' (change)="onSelectionChange('column2d')" />
+            <label>Column2d</label>
+        </div>
+        <div>
+            <input type="radio" name='options' [value]="'bar2d'" [checked]='chart === "bar2d"' (change)="onSelectionChange('bar2d')" />
+            <label>Bar2d</label>
+        </div>
+        <div>
+            <input type="radio" name='options' [value]="'pie2d'" [checked]='chart === "pie2d"' (change)="onSelectionChange('pie2d')" />
+            <label>Pie2d</label>
+        </div>
+    </div>
+</div>
+```
+
+In the above code 
+
+* `fusioncharts` diective is created in a template.
+
+* Radio buttons for **column2d**, **bar2d** and **pie2d** chart have been created using `<input>`.
