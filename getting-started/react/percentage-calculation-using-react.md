@@ -165,9 +165,9 @@ The above chart has been rendered using the following steps:
 3. Created a component to include `react-fusioncharts` component.
 
 4. In the above sample:
-* `dataplotrollover` event shows the percentage of the hovered plot on the page.
-* `dataplotrollout` event resets the default message.
-* `renderComplete` event calculates and stores the total value of the chart data.
+	* `dataplotrollover` event shows the percentage of the hovered plot on the page.
+	* `dataplotrollout` event resets the default message.
+	* `renderComplete` event calculates and stores the total value of the chart data.
 
 5. `render()` function is added to create the `button` inside the `<div>`.
 
