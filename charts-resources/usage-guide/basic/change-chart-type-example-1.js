@@ -1,6 +1,6 @@
 {
     type: 'column2d',
-    height: '500',
+    height: '700',
     width: '500',
     dataFormat: 'json',
     renderAt: 'chart-container',
