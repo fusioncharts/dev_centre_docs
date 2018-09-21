@@ -68,7 +68,7 @@ We will create a visualization using the World Map showing the average annual po
 
 {% embed_chart getting-started-your-first-map.js %}
 
-The data for this chart is represented in the table below:
+The data for this map is represented in the table below:
 
 State|Entity Name|Value|
 -|-|-
@@ -204,7 +204,7 @@ To render the map, follow the steps below:
 
     * Embed the `json` data as the value of the `dataSource`.
 
-11. Finally, use the map.render() command to render the map.
+11. Finally, use the `map.render()` command to render the map.
 
 The full code for the above sample is given below:
 
@@ -267,7 +267,7 @@ The full code for the above sample is given below:
     &lt;body&gt;
         &lt;div id="map"&gt;&lt;/div&gt;
         &lt;%
-            // store chart config name-config value pair
+            // store map config name-config value pair
             Map&lt;String, String&gt; chartConfig = new HashMap&lt;String, String&gt;();
             chartConfig.put("caption", "Average Annual Population Growth");
             chartConfig.put("subCaption", " 1955-2015");
@@ -292,9 +292,9 @@ The full code for the above sample is given below:
             countries.add(new CountryData("AF", 2.58, 1));
             countries.add(new CountryData("AU", 1.30, 1));
 
-            // json data to use as chart data source
+            // json data to use as map data source
             StringBuilder jsonData = new StringBuilder();
-            //build chart config object
+            //build map config object
             jsonData.append("{'chart':{");
             for(Map.Entry cnf :chartConfig.entrySet())
             {
@@ -393,7 +393,7 @@ The full code for the above sample is given below:
     &lt;body&gt;
         &lt;div id="map"&gt;&lt;/div&gt;
         &lt;%
-            // store chart config name-config value pair
+            // store map config name-config value pair
             Map&lt;String, String&gt; chartConfig = new HashMap&lt;String, String&gt;();
             chartConfig.put("caption", "Average Annual Population Growth");
             chartConfig.put("subCaption", " 1955-2015");
@@ -418,9 +418,9 @@ The full code for the above sample is given below:
             countries.add(new CountryData("AF", 2.58, 1));
             countries.add(new CountryData("AU", 1.30, 1));
 
-            // json data to use as chart data source
+            // json data to use as map data source
             StringBuilder jsonData = new StringBuilder();
-            //build chart config object
+            //build map config object
             jsonData.append("{'chart':{");
             for(Map.Entry cnf :chartConfig.entrySet())
             {
@@ -542,7 +542,7 @@ To render the above map, the following code is used:
     &lt;body&gt;
         &lt;div id="map"&gt;&lt;/div&gt;
         &lt;%
-            // store chart config name-config value pair
+            // store map config name-config value pair
             Map&lt;String, String&gt; chartConfig = new HashMap&lt;String, String&gt;();
             chartConfig.put("caption", "Average Annual Population Growth");
             chartConfig.put("animation", "0");
@@ -627,9 +627,9 @@ To render the above map, the following code is used:
             countries.add(new CountryData(113, 1500, 1));
             countries.add(new CountryData(115, 2218, 1));
 
-            // json data to use as chart data source
+            // json data to use as map data source
             StringBuilder jsonData = new StringBuilder();
-            //build chart config object
+            //build map config object
             jsonData.append("{'chart':{");
             for(Map.Entry cnf :chartConfig.entrySet())
             {
@@ -728,7 +728,7 @@ To render the above map, the following code is used:
     &lt;body&gt;
         &lt;div id="map"&gt;&lt;/div&gt;
         &lt;%
-            // store chart config name-config value pair
+            // store map config name-config value pair
             Map&lt;String, String&gt; chartConfig = new HashMap&lt;String, String&gt;();
             chartConfig.put("caption", "Average Annual Population Growth");
             chartConfig.put("animation", "0");
@@ -813,9 +813,9 @@ To render the above map, the following code is used:
             countries.add(new CountryData(113, 1500, 1));
             countries.add(new CountryData(115, 2218, 1));
 
-            // json data to use as chart data source
+            // json data to use as map data source
             StringBuilder jsonData = new StringBuilder();
-            //build chart config object
+            //build map config object
             jsonData.append("{'chart':{");
             for(Map.Entry cnf :chartConfig.entrySet())
             {
