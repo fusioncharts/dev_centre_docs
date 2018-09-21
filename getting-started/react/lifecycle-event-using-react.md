@@ -163,10 +163,10 @@ The above chart has been rendered using the following steps:
 3. Created a component to include `react-fusioncharts` component.
 
 4. In the above sample:
-	* Callback handler for 'beforeDataUpdate' event has been used.
-	* Callback handler for 'dataUpdated' event has been used.
-	* Callback handler for 'drawComplete' event has been used.
-	* Callback handler for 'renderComplete' event has been used.
+	* Callback handler for `beforeDataUpdate` event has been used.
+	* Callback handler for `dataUpdated` event has been used.
+	* Callback handler for `drawComplete` event has been used.
+	* Callback handler for `renderComplete` event has been used.
 
 5. `render()` function is added to create the `button` inside the `<div>`.
 
