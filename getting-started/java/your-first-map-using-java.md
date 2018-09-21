@@ -334,7 +334,7 @@ The full code for the above sample is given below:
 
 That's it! Your first map using the `FusionCharts JSP wrapper` is ready.
 
-## **Render other maps**
+## Render other maps
 
 To reduce the size of the package FusionCharts comes with only two maps, i.e., the **World** map and the **USA** map. However, FusionCharts provide 1600+ maps for you to explore. [Download ](https://www.fusioncharts.com/download/map-definition-files)the map files separately if you want to save them locally.
 
@@ -382,19 +382,20 @@ To render the above map, the following code is used:
     }
 %>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" " http://www.w3.org/TR/html4/loose.dtd" >
 <html>
-    <head>
+     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
         <title>Insert title here</title>
-        <script src="path/to/local/fusioncharts.js"></script>
-        <script src="path/to/local/maps/fusioncharts.world.js"></script>
-        <script src="path/to/local/themes/fusioncharts.theme.fusion.js"></script>
+        <script src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+        <script src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"></script>
+        <script src=" http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"></script>
+        <script src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
     </head>
     <body>
         <div id="map"></div>
         <%
-            // store chart config name-config value pair
+            // store map config name-config value pair
             Map<String, String> chartConfig = new HashMap<String, String>();
             chartConfig.put("caption", "Average Annual Population Growth");
             chartConfig.put("animation", "0");
@@ -420,68 +421,68 @@ To render the above map, the following code is used:
 
             // store country data
             ArrayList<CountryData> countries = new ArrayList<CountryData>();
-            countries.add(new CountryData(001, 2834, 1));
-            countries.add(new CountryData(003, 3182, 1));
-            countries.add(new CountryData(005, 3280, 1));
-            countries.add(new CountryData(007, 911, 1));
-            countries.add(new CountryData(009, 292, 1));
-            countries.add(new CountryData(011, 530, 1));
-            countries.add(new CountryData(013, 2515, 1));
-            countries.add(new CountryData(015, 728, 1));
-            countries.add(new CountryData(017, 1974, 1));
-            countries.add(new CountryData(019, 848, 1));
-            countries.add(new CountryData(021, 3278, 1));
-            countries.add(new CountryData(023, 4463, 1));
-            countries.add(new CountryData(025, 1198, 1));
-            countries.add(new CountryData(027, 378, 1));
-            countries.add(new CountryData(029, 2610, 1));
-            countries.add(new CountryData(031, 1200, 1));
-            countries.add(new CountryData(033, 3820, 1));
-            countries.add(new CountryData(035, 940, 1));
-            countries.add(new CountryData(037, 3416, 1));
-            countries.add(new CountryData(039, 4004, 1));
-            countries.add(new CountryData(041, 1604, 1));
-            countries.add(new CountryData(043, 4011, 1));
-            countries.add(new CountryData(045, 3203, 1));
-            countries.add(new CountryData(047, 3775, 1));
-            countries.add(new CountryData(049, 2721, 1));
-            countries.add(new CountryData(051, 3417, 1));
-            countries.add(new CountryData(053, 1530, 1));
-            countries.add(new CountryData(055, 412, 1));
-            countries.add(new CountryData(057, 3434, 1));
-            countries.add(new CountryData(059, 1670, 1));
-            countries.add(new CountryData(061, 1274, 1));
-            countries.add(new CountryData(063, 4339, 1));
-            countries.add(new CountryData(065, 2073, 1));
-            countries.add(new CountryData(067, 1018, 1));
-            countries.add(new CountryData(069, 3967, 1));
-            countries.add(new CountryData(071, 3401, 1));
-            countries.add(new CountryData(073, 3307, 1));
-            countries.add(new CountryData(075, 1938, 1));
-            countries.add(new CountryData(077, 489, 1));
-            countries.add(new CountryData(079, 3207, 1));
-            countries.add(new CountryData(081, 2295, 1));
-            countries.add(new CountryData(083, 2747, 1));
-            countries.add(new CountryData(085, 1114, 1));
-            countries.add(new CountryData(087, 3400, 1));
-            countries.add(new CountryData(089, 784, 1));
-            countries.add(new CountryData(091, 1673, 1));
-            countries.add(new CountryData(093, 4274, 1));
-            countries.add(new CountryData(095, 4509, 1));
-            countries.add(new CountryData(097, 3862, 1));
-            countries.add(new CountryData(099, 1356, 1));
-            countries.add(new CountryData(101, 4126, 1));
-            countries.add(new CountryData(103, 1314, 1));
-            countries.add(new CountryData(105, 1807, 1));
-            countries.add(new CountryData(107, 4026, 1));
-            countries.add(new CountryData(109, 3456, 1));
-            countries.add(new CountryData(111, 1393, 1));
-            countries.add(new CountryData(113, 1500, 1));
-            countries.add(new CountryData(115, 2218, 1));
+            countries.add(new CountryData("001", 2834, 1));
+            countries.add(new CountryData("003", 3182, 1));
+            countries.add(new CountryData("005", 3280, 1));
+            countries.add(new CountryData("007", 911, 1));
+            countries.add(new CountryData("009", 292, 1));
+            countries.add(new CountryData("011", 530, 1));
+            countries.add(new CountryData("013", 2515, 1));
+            countries.add(new CountryData("015", 728, 1));
+            countries.add(new CountryData("017", 1974, 1));
+            countries.add(new CountryData("019", 848, 1));
+            countries.add(new CountryData("021", 3278, 1));
+            countries.add(new CountryData("023", 4463, 1));
+            countries.add(new CountryData("025", 1198, 1));
+            countries.add(new CountryData("027", 378, 1));
+            countries.add(new CountryData("029", 2610, 1));
+            countries.add(new CountryData("031", 1200, 1));
+            countries.add(new CountryData("033", 3820, 1));
+            countries.add(new CountryData("035", 940, 1));
+            countries.add(new CountryData("037", 3416, 1));
+            countries.add(new CountryData("039", 4004, 1));
+            countries.add(new CountryData("041", 1604, 1));
+            countries.add(new CountryData("043", 4011, 1));
+            countries.add(new CountryData("045", 3203, 1));
+            countries.add(new CountryData("047", 3775, 1));
+            countries.add(new CountryData("049", 2721, 1));
+            countries.add(new CountryData("051", 3417, 1));
+            countries.add(new CountryData("053", 1530, 1));
+            countries.add(new CountryData("055", 412, 1));
+            countries.add(new CountryData("057", 3434, 1));
+            countries.add(new CountryData("059", 1670, 1));
+            countries.add(new CountryData("061", 1274, 1));
+            countries.add(new CountryData("063", 4339, 1));
+            countries.add(new CountryData("065", 2073, 1));
+            countries.add(new CountryData("067", 1018, 1));
+            countries.add(new CountryData("069", 3967, 1));
+            countries.add(new CountryData("071", 3401, 1));
+            countries.add(new CountryData("073", 3307, 1));
+            countries.add(new CountryData("075", 1938, 1));
+            countries.add(new CountryData("077", 489, 1));
+            countries.add(new CountryData("079", 3207, 1));
+            countries.add(new CountryData("081", 2295, 1));
+            countries.add(new CountryData("083", 2747, 1));
+            countries.add(new CountryData("085", 1114, 1));
+            countries.add(new CountryData("087", 3400, 1));
+            countries.add(new CountryData("089", 784, 1));
+            countries.add(new CountryData("091", 1673, 1));
+            countries.add(new CountryData("093", 4274, 1));
+            countries.add(new CountryData("095", 4509, 1));
+            countries.add(new CountryData("097", 3862, 1));
+            countries.add(new CountryData("099", 1356, 1));
+            countries.add(new CountryData("101", 4126, 1));
+            countries.add(new CountryData("103", 1314, 1));
+            countries.add(new CountryData("105", 1807, 1));
+            countries.add(new CountryData("107", 4026, 1));
+            countries.add(new CountryData("109", 3456, 1));
+            countries.add(new CountryData("111", 1393, 1));
+            countries.add(new CountryData("113", 1500, 1));
+            countries.add(new CountryData("115", 2218, 1));
 
-            // json data to use as chart data source
+            // json data to use as map data source
             StringBuilder jsonData = new StringBuilder();
-            //build chart config object
+            //build map config object
             jsonData.append("{'chart':{");
             for(Map.Entry cnf :chartConfig.entrySet())
             {
@@ -515,8 +516,8 @@ To render the above map, the following code is used:
             FusionCharts map = new FusionCharts(
                 "maps/california", 
                 "first_map", 
-                "800",
-                "650", 
+                "850",
+                "550", 
                 "map",
                 "json", 
                 jsonData.toString()
@@ -525,10 +526,9 @@ To render the above map, the following code is used:
         <%= map.render() %>
     </body>
 </html>
-
 ```
 
-That's it! The California map is ready.
+That's it! The **California** map is ready.
 
 ## Problem rendering the map?
 
