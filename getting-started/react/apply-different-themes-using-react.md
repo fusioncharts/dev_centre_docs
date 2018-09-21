@@ -1,7 +1,7 @@
 ---
-title: Apply Different Themes | FusionCharts
-description: This article will showcase a sample to change the chart type at runtime.
-heading: Apply Different Themes
+title: Apply Different Themes using React | FusionCharts
+description: This article will showcase how to apply different themes to the chart at runtime.
+heading: Apply Different Themes using React
 ---
 
 In FusionCharts Suite XT you can manually set the cosmetics and functional attributes for each chart in the corresponding JSON/XML file. This can work if you deal with only a small number of charts. As the number of charts increases so does your hassles. FusionCharts Suite ships with predefined themes which you can use to set the visual appearance or the behavior of your chart.
