@@ -15,161 +15,199 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-This article focuses on how you can apply different themes to the chart at runtime using React `props` object. Click any radio button, to see how the look and feel of the chart change with each theme.
+This article focuses on how you can apply different themes to the chart at runtime using `angular-fusioncharts` component. Click any radio button, to see how the look and feel of the chart change with each theme.
 
 A chart configured to change the theme, is shown below:
 
 {% embed_chartData apply-different-theme-example-1.js json %}
 
-The full code of the above sample is given below:
+### Setup the Main Module
+
+In this step, we will setup the main module to create the **Column 2D** chart. The code is given below:
 
 ```
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts/core';
-import Charts from 'fusioncharts/fusioncharts.charts';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-import GammelTheme from 'fusioncharts/themes/fusioncharts.theme.gammel';
-import CandyTheme from 'fusioncharts/themes/fusioncharts.theme.candy';
-import ZuneTheme from 'fusioncharts/themes/fusioncharts.theme.zune';
-import OceanTheme from 'fusioncharts/themes/fusioncharts.theme.ocean';
-import CarbonTheme from 'fusioncharts/themes/fusioncharts.theme.carbon';
+// Setup needed in app.module.ts
 
-ReactFC.fcRoot(FusionCharts, Charts, FusionTheme, GammelTheme, CandyTheme, ZuneTheme, OceanTheme, CarbonTheme);
+import { NgModule, enableProdMode } from '@angular/core'
+import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { FusionChartsModule } from 'angular-fusioncharts';
 
-const chartConfigs = {
-    type: 'column2d',
-    width: '700',
-    height: '400',
-    dataFormat: 'json',
-    dataSource: {
-        // Chart configuration
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion"
-        },
-        // Chart data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    }
-};
+// Load FusionCharts
+import * as FusionCharts from 'fusioncharts';
+// Load Charts module
+import * as Charts from 'fusioncharts/fusioncharts.charts';
+// Load themes
+import * as Ocean from 'fusioncharts/themes/fusioncharts.theme.ocean';
+import * as Fint from 'fusioncharts/themes/fusioncharts.theme.fint';
+import * as Candy from 'fusioncharts/themes/fusioncharts.theme.candy';
+import * as Gammel from 'fusioncharts/themes/fusioncharts.theme.gammel';
+import * as Zune from 'fusioncharts/themes/fusioncharts.theme.zune';
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+import * as Carbon from 'fusioncharts/themes/fusioncharts.theme.carbon';
 
-class Chart extends Component {
-    constructor(props) {
-        super(props);
+// Add dependencies to FusionChartsModule
+FusionChartsModule.fcRoot(
+  FusionCharts,
+  Charts,
+  Ocean,
+  Fint,
+  Candy,
+  Gammel,
+  Zune,
+  Carbon,
+  FusionTheme
+)
 
-        this.state = {
-            chart: {},
-            currentVal: 'fusion'
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FusionChartsModule
+  ],
+  providers: [
+  ],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule {
+}
+```
+
+In the above code:
+
+1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+
+2. Loaded FusionCharts, chart module and fusion theme.
+
+3. Added dependencies to `FusionChartsModule`. Here added depencencies for all the themes in FusionCharts Suite.
+
+> The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
+
+### Add data to `app.component.ts`
+
+Add the following code to `app.component.ts`:
+
+```
+// in app.component.ts
+import {
+    Component,
+    NgZone
+} from '@angular/core';
+
+@Component({
+    selector: 'app',
+    templateUrl: './app.component.html'
+})
+export class AppComponent {
+    dataSource: any;
+    chartObj: any;
+    theme: string = 'fusion';
+    constructor(private zone: NgZone) {
+        this.dataSource = {
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion"
+            },
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
         };
-
-        this.renderComplete = this.renderComplete.bind(this);
-        this.radioHandler = this.radioHandler.bind(this);
     }
 
-    renderComplete(chart) {
-    this.setState({ chart });
+    initialized($event){
+        this.chartObj = $event.chart;
     }
-
-    // Handler for radio buttons to change chart theme.
-    radioHandler(e) {
-        this.state.chart.setChartAttribute('theme', e.currentTarget.value);
-        this.setState({
-            currentVal: e.currentTarget.value
-        });
-    }
-
-    render() {
-        return (
-            <div>
-            <ReactFC {...chartConfigs} onRender={this.renderComplete} />
-            <br />
-            <center>
-                <span>Choose a theme:</span>
-                <div className="change-type">
-                    <div>
-                        <input type="radio" value="fusion" onChange={this.radioHandler} checked={this.state.currentVal === 'fusion'} />
-                        <label>Fusion</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="gammel" onChange={this.radioHandler} checked={this.state.currentVal === 'gammel'} />
-                        <label>Gammel</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="candy" onChange={this.radioHandler} checked={this.state.currentVal === 'candy'} />
-                        <label>Candy</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="zune" onChange={this.radioHandler} checked={this.state.currentVal === 'zune'} />
-                        <label>Zune</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="ocean" onChange={this.radioHandler} checked={this.state.currentVal === 'ocean'} />
-                        <label>Ocean</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="carbon" onChange={this.radioHandler} checked={this.state.currentVal === 'carbon'} />
-                      <label>Carbon</label>
-                    </div>
-                </div>
-            </center>
-        </div>
-      );
+    onSelectionChange(theme){
+        this.theme = theme;
+        this.chartObj.setChartAttribute('theme', this.theme);
     }
 }
-
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
 ```
 
-The above chart has been rendered using the following steps:
+In the above code:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. The JSON data is added within the `AppComponent` class.
 
-2. As the above samples shows all the themes using the radio buttons, included the theme files for all the six themes.
-
-3. Stored the chart configuration in a JSON object. In the JSON object:
+2. Stored the chart configuration in a JSON object. In the JSON object:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
     * The json data has been embeded as the value of the `dataSource`.
 
-3. Created a component to include `react-fusioncharts` component.
+3. Saved the chart instance in `chartObj`.
 
-4. In the above sample:
-	* `renderComplete` event is used to render the charts at runtime.
-	* `radioHander` is used for radio buttons to apply selected theme to the chart.
+4. `onSectionChange` chart instance to apply differnet themes at runtime.
 
-5. `render()` function is added to create the **radio buttons** inside the `<div>`.
+### Add data to `app.component.html`
 
-6. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+Add the following code to `app.component.html`:
+
+```
+<!-- in app.component.html -->
+
+<fusioncharts width="700" height="400" type="column2d" [dataSource]=dataSource (initialized)="initialized($event)">
+</fusioncharts>
+<div style='display: flex; justify-content: center'>
+    <span id="select-text">Choose a theme:</span>
+    <div class="change-type">
+        <div>
+            <input type="radio" name='options' [value]="fusion" [checked]='theme === "fusion"' (change)="onSelectionChange('fusion')" />
+            <label>Fusion</label>
+        </div>
+        <div>
+            <input type="radio" name='options' [value]="gammel" [checked]='theme === "gammel"' (change)="onSelectionChange('gammel')" />
+            <label>Gammel</label>
+        </div>
+        <div>
+            <input type="radio" name='options' [value]="candy" [checked]='theme === "candy"' (change)="onSelectionChange('candy')" />
+            <label>Candy</label>
+        </div>
+        <div>
+            <input type="radio" name='options' [value]="zune" [checked]='theme === "zune"' (change)="onSelectionChange('zune')" />
+            <label>Zune</label>
+        </div>
+        <div>
+            <input type="radio" name='options' [value]="ocean" [checked]='theme === "ocean"' (change)="onSelectionChange('ocean')" />
+            <label>Ocean</label>
+        </div>
+        <div>
+            <input type="radio" name='options' [value]="carbon" [checked]='theme === "carbon"' (change)="onSelectionChange('carbon')" />
+            <label>Carbon</label>
+        </div>
+    </div>
+</div>
+```
+
+In the above code 
+
+* `fusioncharts` diective is created in a template.
+
+* Radio buttons for **fusion**, **gammel**, **candy**, **zune**, **ocean** and **carbon** themes have been created using `<input>`.
