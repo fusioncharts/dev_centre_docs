@@ -112,16 +112,18 @@ The above chart has been rendered using the following steps:
 
 1. Included the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
+2. Resolve charts as dependency for FusionCharts, Fusion Theme and jquery-fusioncharts.
+
+3. Stored the chart configuration in a JSON object. In the JSON object:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
     * The json data has been embeded as the value of the `dataSource`.
 
-3. Used FusionChart's jQuery method `insertFusionCharts()` to create FusionCharts.
+4. Used FusionChart's jQuery method `insertFusionCharts()` to create FusionCharts.
 
-4. In the above sample:
+5. In the above sample:
 	* `beforeDataUpdate` and `dataUpdated` events are binded.
 	* `renderComplete` event calculates and stores the total value of the chart data.
 
-5. Created an HTML template to render the chart.
+6. Created an HTML template to render the chart.
