@@ -12,162 +12,114 @@ A chart is shown below:
 
 {% embed_chartData lifecycle-event-example-1.js json %}
 
-The full code of the above sample is given below:
+The code to render a chart using `require` is given below:
 
 ```
-//Including react
-import React, { Component } from 'react';
+// Include fusioncharts
+var FusionCharts = require('fusioncharts');
 
-//Including the react-fusioncharts component
-import ReactDOM from 'react-dom';
+// Include chart modules
+var Charts = require('fusioncharts/fusioncharts.charts');
 
-//Including the fusioncharts library
-import FusionCharts from 'fusioncharts';
+// Include the theme file
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-//Including the chart type
-import Chart from 'fusioncharts/fusioncharts.charts';
+var $ = require('jquery');
+var jQueryFusionCharts = require('jquery-fusioncharts');
 
-//Including react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
+// Resolve Charts as dependency for FusionCharts
+Charts(FusionCharts); 
 
-//Including the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+// Resolve Fusion theme as dependency for FusionCharts
+FusionTheme(FusionCharts); 
 
-//Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Chart, FusionTheme);
+// Resolve FusionCharts as dependency for jqueryFusionCharts
+jQueryFusionCharts(FusionCharts);
 
-//Creating the JSON object to store the chart configurations
-
-const chartConfigs = {
-  type: "column2d",
-  width: 700,
-  height: 400,
-  dataFormat: "json",
-  dataSource: {
-    // Chart configuration
-      "chart": {
-          "caption": "Countries With Most Oil Reserves [2017-18]",
-          "subCaption": "In MMbbl = One Million barrels",
-          "xAxisName": "Country",
-          "yAxisName": "Reserves (MMbbl)",
-          "numberSuffix": "K",
-          "theme": "fusion"
-      },
-      // Chart data
-      "data": [{
-          "label": "Venezuela",
-          "value": "290"
-      }, {
-          "label": "Saudi",
-          "value": "260"
-      }, {
-          "label": "Canada",
-          "value": "180"
-      }, {
-          "label": "Iran",
-          "value": "140"
-      }, {
-          "label": "Russia",
-          "value": "115"
-      }, {
-          "label": "UAE",
-          "value": "100"
-      }, {
-          "label": "US",
-          "value": "30"
-      }, {
-          "label": "China",
-          "value": "30"
-      }]
-  },
-};
-
-class Chart extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      message:
-        "You will see a notifications here for the chart lifecycle events"
-    };
-
-    this.beforeDataUpdate = this.beforeDataUpdate.bind(this);
-    this.dataUpdated = this.dataUpdated.bind(this);
-    this.drawComplete = this.drawComplete.bind(this);
-    this.renderComplete = this.renderComplete.bind(this);
-  }
-
-  // Callback handler for event 'beforeDataUpdate'.
-  beforeDataUpdate() {
-    this.state.message = [<strong>Status: </strong>, " beforeDataUpdate"];
-  }
-
-  // Callback handler for event 'dataUpdated'.
-  dataUpdated() {
-    let newMessage = this.state.message.slice();
-    newMessage.push(", dataUpdated");
-    this.setState({
-      message: newMessage
+$('document').ready(function () {
+    // bind beforeDataUpdate and dataUpdated events
+    $('#chart-container').bind('fusionchartsbeforedataupdate', function (event, args) {
+        $('#message').append('beforeDataUpdate, ');
     });
-  }
-
-  // Callback handler for event 'drawComplete'.
-  drawComplete() {
-    let newMessage = this.state.message.slice();
-    newMessage.push(", drawComplete");
-    this.setState({
-      message: newMessage
+    $('#chart-container').bind('fusionchartsdataupdated', function (event, args) {
+        $('#message').append('dataUpdated, ');
     });
-  }
 
-  // Callback handler for event 'renderComplete'.
-  renderComplete() {
-    let newMessage = this.state.message.slice();
-    newMessage.push(", renderComplete");
-    this.setState({
-      message: newMessage
+    $('#chart-container').insertFusionCharts({
+        type: 'column2d',
+        width: '700',
+        height: '400',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion"
+            },
+            "data": [{
+                  "label": "Venezuela",
+                  "value": "290"
+              }, {
+                  "label": "Saudi",
+                  "value": "260"
+              }, {
+                  "label": "Canada",
+                  "value": "180"
+              }, {
+                  "label": "Iran",
+                  "value": "140"
+              }, {
+                  "label": "Russia",
+                  "value": "115"
+              }, {
+                  "label": "UAE",
+                  "value": "100"
+              }, {
+                  "label": "US",
+                  "value": "30"
+              }, {
+                  "label": "China",
+                  "value": "30"
+              }]
+        }
     });
-  }
 
-  render() {
-    return (
-      <div>
-        <ReactFC
-          {...chartConfigs}
-          fcEvent-beforeDataUpdate={this.beforeDataUpdate}
-          fcEvent-dataUpdated={this.dataUpdated}
-          fcEvent-drawComplete={this.drawComplete}
-          fcEvent-renderComplete={this.renderComplete}
-        />
-        <p style={{ padding: "10px", background: "#f5f2f0" }}>
-          {this.state.message}
-        </p>
-      </div>
-    );
-  }
-}
+    // bind drawComplete and renderComplete events
+    $('#chart-container').bind('fusionchartsdrawcomplete', function (event, args) {
+        $('#message').append('drawComplete, ');
+    });
+    $('#chart-container').bind('fusionchartsrendercomplete', function (event, args) {
+        $('#message').append('renderComplete');
+    });
+});
+```
 
-ReactDOM.render(<Chart />, document.getElementById("root"));
+The HTML template of the above sample is shown below:
+
+```HTML
+<div id="chart-container">
+    FusionCharts will render here
+</div>
+<p style="padding: 10px; background: rgb(245, 242, 240);" id="message">
+    <b>Status:</b>
+</p>
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Included the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
+2. Resolve charts as dependency for FusionCharts, Fusion Theme and jquery-fusioncharts.
+
+3. Stored the chart configuration in a JSON object. In the JSON object:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
     * The json data has been embeded as the value of the `dataSource`.
 
-3. Created a component to include `react-fusioncharts` component.
+4. In the above sample `drawComplete` and `renderComplete` events have been binded.
 
-4. In the above sample:
-	* Callback handler for `beforeDataUpdate` event has been used.
-	* Callback handler for `dataUpdated` event has been used.
-	* Callback handler for `drawComplete` event has been used.
-	* Callback handler for `renderComplete` event has been used.
-
-5. `render()` function is added to create the `button` inside the `<div>`.
-
-6. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+5. Created an HTML template to render the chart.
