@@ -179,6 +179,6 @@ Add the following code to `app.component.html`:
 
 In the above code 
 
-* `fusioncharts` diective is created in a template.
+* `fusioncharts` directive is created in a template.
 
 * Radio buttons for **column2d**, **bar2d** and **pie2d** chart have been created using `<input>`.
