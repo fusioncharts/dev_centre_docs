@@ -174,10 +174,13 @@ Now that you have converted the tabular data to JSON format, let's see how to re
 The consolidated code is shown below:
 
 <div class="code-wrapper">
-<ul class="code-tabs extra-tabs">
-    <li class="active"><a data-toggle="csharp">C#</a></li>
-    <li><a data-toggle="vb">VB</a></li>
+<ul class='code-tabs extra-tabs'>
+    <li class='active'><a data-toggle='cdn'>C#</a></li>
+    <li><a data-toggle='local'>VB</a></li>
 </ul>
+<div class='tab-content extra-tabs'>
+
+<div class='tab C#-tab active'>
 <pre><code class="custom-hlc language-javascript">
     using System;
     using System.Collections.Generic;
@@ -240,7 +243,9 @@ The consolidated code is shown below:
         }
     }
 </code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
+<div class='tab VB-tab'>
 <pre><code class="custom-hlc language-javascript">
     Imports FusionCharts.Charts
     Partial Class first_chart
@@ -294,6 +299,7 @@ The consolidated code is shown below:
 
      End Class
 </code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 </div>
 </div>
