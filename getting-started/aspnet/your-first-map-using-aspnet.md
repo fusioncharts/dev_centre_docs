@@ -216,137 +216,151 @@ The full code for the above sample is given below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='cdn'>C#</a></li>
-    <li><a data-toggle='local'>VB</a></li>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 
-<div class='tab C#-tab active'>
+<div class='tab csharp-tab active'>
 <pre><code class="custom-hlc language-javascript">
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-    using FusionCharts.Charts;
-    namespace asp_test {
-        public partial class map: System.Web.UI.Page {
-            //Create colorRange class
-            //It will store Min range Max range and specific color code for each range
+using System;
+using System.Collections.Generic;
+using System.Text;
+using FusionCharts.Charts;
 
-            class ColorRange {
-                public double Min {
-                    get;
-                    set;
-                }
-                public double Max {
-                    get;
-                    set;
-                }
-                public string ColorCode {
-                    get;
-                    set;
-                }
+public partial class MapTest : System.Web.UI.Page
+{
+    //Create colorRange class
+    //It will store Min range Max range and specific color code for each range
 
-                public ColorRange(double min, double max, string code) {
-                    Min = min;
-                    Max = max;
-                    ColorCode = code;
-                }
-            }
-            //Create countryData class
-            //It will store id, value and show label for each country
+    class ColorRange
+    {
+        public double Min
+        {
+            get;
+            set;
+        }
+        public double Max
+        {
+            get;
+            set;
+        }
+        public string ColorCode
+        {
+            get;
+            set;
+        }
 
-            class countryData {
-                public string ID {
-                    get;
-                    set;
-                }
-                public double Value {
-                    get;
-                    set;
-                }
-                public int ShowLabel {
-                    get;
-                    set;
-                }
-
-                public countryData(string id, double value, int showLabel) {
-                    ID = id;
-                    Value = value;
-                    ShowLabel = showLabel;
-
-                }
-
-            }
-            protected void Page_Load(object sender, EventArgs e) {
-                // store chart config name-config value pair
-                Dictionary < string, string > chartConfig = new Dictionary < string, string > ();
-                chartConfig.Add("caption", "Average Annual Population Growth");
-                chartConfig.Add("subCaption", " 1955-2015");
-                chartConfig.Add("includevalueinlabels", "1");
-                chartConfig.Add("labelsepchar", ": ");
-                chartConfig.Add("numberSuffix", "%");
-                chartConfig.Add("entityFillHoverColor", "#FFF9C4");
-                chartConfig.Add("theme", "fusion");
-
-                // store color code for different range
-                List < ColorRange > color = new List < ColorRange > ();
-                color.Add(new ColorRange(0.5, 1.0, "#FFD74D"));
-                color.Add(new ColorRange(1.0, 2.0, "#FB8C00"));
-                color.Add(new ColorRange(2.0, 3.0, "#E65100"));
-
-                // store country data
-                List < countryData > countries = new List < countryData > ();
-                countries.Add(new countryData("NA", .82, 1));
-                countries.Add(new countryData("SA", 2.04, 1));
-                countries.Add(new countryData("AS", 1.78, 1));
-                countries.Add(new countryData("EU", .40, 1));
-                countries.Add(new countryData("AF", 2.58, 1));
-                countries.Add(new countryData("AU", 1.30, 1));
-
-                // json data to use as chart data source
-                StringBuilder jsonData = new StringBuilder();
-                //build chart config object
-                jsonData.Append("{'chart':{");
-                foreach(var config in chartConfig) {
-                    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
-                }
-                jsonData.Replace(",", "},", jsonData.Length - 1, 1);
-
-                StringBuilder range = new StringBuilder();
-                //build colorRange object
-                range.Append("'colorRange':{");
-                range.Append("'color':[");
-                foreach(ColorRange clr in color) {
-                    range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode);
-                }
-                range.Replace(",", "]},", range.Length - 1, 1);
-
-                // build data object
-                StringBuilder data = new StringBuilder();
-                data.Append("'data':[");
-                foreach(countryData country in countries) {
-                    data.AppendFormat("{{'id':'{0}','value':'{1}','showLabel':'{2}'}},", country.ID, country.Value, country.ShowLabel);
-                }
-                data.Replace(",", "]", data.Length - 1, 1);
-                jsonData.Append(range);
-                jsonData.Append(data);
-                jsonData.Append("}");
-                //Create map instance
-                // map type, mapid, width, height, data format, data
-
-                Chart MyFirstMap = new Chart("world", "first_map", "800", "500", "json", jsonData.ToString());
-                //render map
-                Literal1.Text = MyFirstMap.Render();
-            }
+        public ColorRange(double min, double max, string code)
+        {
+            Min = min;
+            Max = max;
+            ColorCode = code;
         }
     }
+    //Create countryData class
+    //It will store id, value and show label for each country
+
+    class countryData
+    {
+        public string ID
+        {
+            get;
+            set;
+        }
+        public double Value
+        {
+            get;
+            set;
+        }
+        public int ShowLabel
+        {
+            get;
+            set;
+        }
+
+        public countryData(string id, double value, int showLabel)
+        {
+            ID = id;
+            Value = value;
+            ShowLabel = showLabel;
+
+        }
+
+    }
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        // store chart config name-config value pair
+        Dictionary&lt;string, string&gt; chartConfig = new Dictionary&lt;string, string&gt;();
+        chartConfig.Add("caption", "Average Annual Population Growth");
+        chartConfig.Add("subCaption", " 1955-2015");
+        chartConfig.Add("includevalueinlabels", "1");
+        chartConfig.Add("labelsepchar", ": ");
+        chartConfig.Add("numberSuffix", "%");
+        chartConfig.Add("entityFillHoverColor", "#FFF9C4");
+        chartConfig.Add("theme", "fusion");
+
+        // store color code for different range
+        List&lt;ColorRange&gt; color = new List&lt;ColorRange&gt;();
+        color.Add(new ColorRange(0.5, 1.0, "#FFD74D"));
+        color.Add(new ColorRange(1.0, 2.0, "#FB8C00"));
+        color.Add(new ColorRange(2.0, 3.0, "#E65100"));
+
+        // store country data
+        List&lt;countryData&gt; countries = new List&lt;countryData&gt;();
+        countries.Add(new countryData("NA", .82, 1));
+        countries.Add(new countryData("SA", 2.04, 1));
+        countries.Add(new countryData("AS", 1.78, 1));
+        countries.Add(new countryData("EU", .40, 1));
+        countries.Add(new countryData("AF", 2.58, 1));
+        countries.Add(new countryData("AU", 1.30, 1));
+
+        // json data to use as chart data source
+        StringBuilder jsonData = new StringBuilder();
+        //build chart config object
+        jsonData.Append("{'chart':{");
+        foreach (var config in chartConfig)
+        {
+            jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
+        }
+        jsonData.Replace(",", "},", jsonData.Length - 1, 1);
+
+        StringBuilder range = new StringBuilder();
+        //build colorRange object
+        range.Append("'colorRange':{");
+        range.Append("'color':[");
+        foreach (ColorRange clr in color)
+        {
+            range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode);
+        }
+        range.Replace(",", "]},", range.Length - 1, 1);
+
+        // build data object
+        StringBuilder data = new StringBuilder();
+        data.Append("'data':[");
+        foreach (countryData country in countries)
+        {
+            data.AppendFormat("{{'id':'{0}','value':'{1}','showLabel':'{2}'}},", country.ID, country.Value, country.ShowLabel);
+        }
+        data.Replace(",", "]", data.Length - 1, 1);
+        jsonData.Append(range);
+        jsonData.Append(data);
+        jsonData.Append("}");
+        //Create map instance
+        // map type, mapid, width, height, data format, data
+
+        Chart MyFirstMap = new Chart("world", "first_map", "800", "500", "json", jsonData.ToString());
+        //render map
+        Literal1.Text = MyFirstMap.Render();
+    }
+}
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-<div class='tab VB-tab'>
+<div class='tab vb-tab'>
 <pre><code class="custom-hlc language-javascript">
     Imports FusionCharts.Charts
-    Partial Class map
+    Partial Class firstmap
     Inherits System.Web.UI.Page
     'Create colorRange class
     'It will store Min range Max range And specific color code for each range
@@ -518,31 +532,26 @@ The HTML template is shown below:
 <div class="tab-content extra-tabs">
 <div class="tab csharp-tab active">
 <pre><code class="custom-hlc language-javascript">
-    &lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="asp_test.index" %&gt;
-
-    &lt;!DOCTYPE html&gt;
-
-    &lt;html xmlns=" http://www.w3.org/1999/xhtml"&gt;
-
+    &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="MapTest.aspx.cs" Inherits="MapTest" %&gt;
+   &lt;!DOCTYPE html&gt;
+    &lt;html xmlns="  http://www.w3.org/1999/xhtml" &gt;
     &lt;head runat="server"&gt;
         &lt;title&gt;fusioncharts&lt;/title&gt;
     &lt;/head&gt;
-
     &lt;body&gt;
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-            &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt; 
+        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt; 
+        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js"&gt;&lt;/script&gt; 
+        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt; 
+            &lt;asp:Literal ID="Literal1" runat="server"&gt;Chart will appear here&lt;/asp:Literal&gt;
         &lt;/div&gt;
     &lt;/body&gt;
-
     &lt;/html&gt;
 </code></pre>
 </div>
 <div class="tab vb-tab">
 <pre><code class="custom-hlc language-javascript">
-    &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="index" %&gt;
+    &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="firstmap.aspx.vb" Inherits="index" %&gt;
     &lt;!DOCTYPE html&gt;
     &lt;html xmlns=" http://www.w3.org/1999/xhtml"&gt;
     &lt;head runat="server"&gt;
@@ -615,12 +624,12 @@ The full code for the above sample is given below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='cdn'>C#</a></li>
-    <li><a data-toggle='local'>VB</a></li>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 
-<div class='tab C#-tab active'>
+<div class='tab csharp-tab active'>
 <pre><code class="custom-hlc language-javascript">
     using System;
     using System.Collections.Generic;
@@ -803,7 +812,7 @@ The full code for the above sample is given below:
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-<div class='tab VB-tab'>
+<div class='tab vb-tab'>
 <pre><code class="custom-hlc language-javascript">
     Imports FusionCharts.Charts
     Partial Class map
