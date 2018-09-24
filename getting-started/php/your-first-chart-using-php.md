@@ -18,7 +18,7 @@ Install FusionCharts and the **PHP** wrapper component using any of the followin
 
 * Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
 
-* Copy and paste the `fusioncharts.php` file in your project folder.
+* Copy and paste the `fusioncharts.php` file from `integrations > php >fusioncharts-wrapper in your project folder.
 
 * Include the FusionCharts theme file to apply the style to the charts.
 
