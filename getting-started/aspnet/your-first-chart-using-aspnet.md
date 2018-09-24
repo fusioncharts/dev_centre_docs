@@ -313,7 +313,6 @@ The HTML template is shown below:
 </ul>
 <div class="tab-content extra-tabs">
 <div class="tab csharp-tab active">
-<div><strong>.aspx (template)</strong></div>
 <pre><code class="custom-hlc language-javascript">
     &lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="asp_test.index" %&gt;
 
@@ -337,7 +336,6 @@ The HTML template is shown below:
 </code></pre>
 </div>
 <div class="tab vb-tab">
-<div><strong>.aspx</strong></div>
 <pre><code class="custom-hlc language-javascript">
     &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="index" %&gt;
     &lt;!DOCTYPE html&gt;
