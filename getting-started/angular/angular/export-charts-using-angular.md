@@ -164,7 +164,7 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
-In the above code a `fusioncharts` diective is created in a template.
+In the above code a `fusioncharts` directive is created in a template.
 
 ## Export Multiple Charts
 
@@ -480,7 +480,7 @@ Add the following code to `app.component.html`:
 </div>
 ```
 
-In the above code a `fusioncharts` diective is created in a template.
+In the above code a `fusioncharts` directive is created in a template.
 
 ## Modes of Export
 

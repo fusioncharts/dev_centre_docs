@@ -81,7 +81,7 @@ import {
 export class AppComponent {
 
     type = "Column2D";
-    width = "600";
+    width = "700";
     height = "300";
     dataFormat = "json";
     dataSource: any = {
@@ -185,7 +185,7 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
-In the above code a `fusioncharts` diective is created in a template.
+In the above code a `fusioncharts` directive is created in a template.
 
 ## Update Chart Attributes
 
@@ -383,4 +383,4 @@ Add the following code to `app.component.html`:
 </p>
 ```
 
-In the above code a `fusioncharts` diective is created in a template.
+In the above code a `fusioncharts` directive is created in a template.

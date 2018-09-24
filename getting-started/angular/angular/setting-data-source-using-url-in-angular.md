@@ -169,7 +169,7 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
-In the above code a `fusioncharts` diective is created in a template.
+In the above code a `fusioncharts` directive is created in a template.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
@@ -288,4 +288,4 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
-In the above code a `fusioncharts` diective is created in a template.
+In the above code a `fusioncharts` directive is created in a template.

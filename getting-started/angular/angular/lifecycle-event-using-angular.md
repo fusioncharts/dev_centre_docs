@@ -190,4 +190,4 @@ Add the following code to `app.component.html`:
 <p style="font-size:18px;font-weight: 300;padding:10px;background:#efefef">{{message}}</p>
 ```
 
-In the above code a `fusioncharts` diective is created in a template.
+In the above code a `fusioncharts` directive is created in a template.
