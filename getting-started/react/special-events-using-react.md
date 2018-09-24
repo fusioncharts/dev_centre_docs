@@ -1,7 +1,7 @@
 ---
-title: Dynamically Add Chart Event Listener using React | FusionCharts
-description: This article tells you how to dynamically add chart event listener to your chart using react.
-heading: Dynamically Add Chart Event Listener using React
+title: Special Events using React | FusionCharts
+description: This article showcases a draggable column chart with special events.
+heading: Special Events using React
 ---
 
 FusionCharts Suite XT API offers a wide range of events that you can use to trigger actions for different stages in the life cycle of a chart or when you interact with a chart. For example, events can be used to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
