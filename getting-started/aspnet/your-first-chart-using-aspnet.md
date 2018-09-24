@@ -82,7 +82,7 @@ China|30|
 
 Now that you have the tabular data ready, it's time to convert it into JSON format, as FusionCharts accepts data in **JSON** or **XML** format. In this example, we will use the JSON format, as shown below:
 
-```
+```JSON
 {
     "chart": {
         "caption": "Countries With Most Oil Reserves [2017-18]",
@@ -92,42 +92,32 @@ Now that you have the tabular data ready, it's time to convert it into JSON form
         "numberSuffix": "K",
         "theme": "fusion"
     },
-    "data": [
-        {
-            "label": "Venezuela",
-            "value": "290"
-        },
-        {
-            "label": "Saudi",
-            "value": "260"
-        },
-        {
-            "label": "Canada",
-            "value": "180"
-        },
-        {
-            "label": "Iran",
-            "value": "140"
-        },
-        {
-            "label": "Russia",
-            "value": "115"
-        },
-        {
-            "label": "UAE",
-            "value": "100"
-        },
-        {
-            "label": "US",
-            "value": "30"
-        },
-        {
-            "label": "China",
-            "value": "30"
-        }
-    ]
+    "data": [{
+        "label": "Venezuela",
+        "value": "290"
+    }, {
+        "label": "Saudi",
+        "value": "260"
+    }, {
+        "label": "Canada",
+        "value": "180"
+    }, {
+        "label": "Iran",
+        "value": "140"
+    }, {
+        "label": "Russia",
+        "value": "115"
+    }, {
+        "label": "UAE",
+        "value": "100"
+    }, {
+        "label": "US",
+        "value": "30"
+    }, {
+        "label": "China",
+        "value": "30"
+    }]
 }
-
 ```
 > Different types of charts in FusionCharts expect different JSON formats, based on their grouping. Explore different JSON formats, for example, [single-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/line-area-and-column-charts), [multi-series](https://www.fusioncharts.com/dev/chart-guide/standard-charts/multi-series-charts), and [combination](https://www.fusioncharts.com/dev/chart-guide/standard-charts/combination-charts) charts.
 
@@ -175,12 +165,12 @@ The consolidated code is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='cdn'>C#</a></li>
-    <li><a data-toggle='local'>VB</a></li>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 
-<div class='tab C#-tab active'>
+<div class='tab csharp-tab active'>
 <pre><code class="custom-hlc language-javascript">
     using System;
     using System.Collections.Generic;
@@ -245,7 +235,7 @@ The consolidated code is shown below:
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-<div class='tab VB-tab'>
+<div class='tab vb-tab'>
 <pre><code class="custom-hlc language-javascript">
     Imports FusionCharts.Charts
     Partial Class first_chart
@@ -369,4 +359,3 @@ In case there is an error, and you are unable to see the chart, check for the fo
 * If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
 * If you get a **Loading Data** or **Error in loading data** message, check whether your JSON data structure is correct, or there are conflicts related to quotation marks in your code.
-
