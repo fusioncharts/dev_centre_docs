@@ -175,9 +175,17 @@ To render the chart, follow the steps below:
 
 3. Include the FusionCharts theme file to apply the style to the charts.
 
-4. Create the chart instance and set the following:
+4. Set the chart appearance configuration to display the data in the chart.
 
-	*  Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias[ here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+5. Create an array named `chartDataObj` of hash objects which stores data.
+
+6. Create a chart data template to store data in `label` and `value`.
+
+7. Set te chart data as JSON string.
+
+8. Create the chart instance and set the following:
+
+	* Set the chart type as `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias[ here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
 
     * Set the `width` and `height` (in pixels).
 
@@ -187,105 +195,70 @@ To render the chart, follow the steps below:
 
     * Embed the `json` data as the value of the `dataSource`.
 
-5. Set the chart appearance configuration to display the data in the chart.
-
-6. Create an array named `chartDataObj` of hash objects which stores data.
-
-7. Create a chart data template to store data in `label` and `value`.
-
-8. Set te chart data as JSON string.
-
 9. Create a container using `<div>` to render the chart.
-
-Following is the instance of the chart:
-
-```
-# Chart rendering
-chart = Fusioncharts::Chart.new({
-    width: “700”,
-    height: “400",
-    type: “column2d”,
-    renderAt: “chart-container”,
-    dataSource: chartJSONDataStr # Variable which has chart data in JSON format
-})
-```
 
 The full code for the above sample is:
 
 ```
-# Filename: app/controllers/examples_controller.rb
-class ExamplesController < ApplicationController
-require ‘fusioncharts-rails’
+require 'json'
+require 'fusioncharts-rails'
 
-def getChart
+class FirstChart
+    def self.getChart
+        
+        # Chart appearance configuration
+        chartAppearancesConfigObj = Hash.new
+        chartAppearancesConfigObj = { 
+                        "caption" => "Countries With Most Oil Reserves [2017-18]",
+                        "subCaption" => "In MMbbl = One Million barrels", 
+                        "xAxisName" => "Country",
+                        "yAxisName" => "Reserves (MMbbl)", 
+                        "numberSuffix" => "K", 
+                        "theme" => "fusion"
+                    }
+        
+        # An array of hash objects which stores data
+        chartDataObj = [
+                    {"Venezuela" => "290"},
+                    {"Saudi" => "260"},
+                    {"Canada" => "180"},
+                    {"Iran" => "140"},
+                    {"Russia" => "115"},
+                    {"UAE" => "100"},
+                    {"US" => "30"},
+                    {"China" => "30"}
+                ]
+        
+        # Chart data template to store data in "Label" & "Value" format
+        labelValueTemplate = "{ \"label\": \"%s\", \"value\": \"%s\" },"
+        
+        # Chart data as JSON string
+        labelValueJSONStr = ""
 
-    # Chart appearance configuration
-    chartAppearancesConfigObj = Hash.new
-    chartAppearancesConfigObj = {
-        "caption" => "Countries With Most Oil Reserves [2017-18]",
-        "subCaption" => "In MMbbl = One Million barrels",
-        "xAxisName" => "Country",
-        "yAxisName" => "Reserves (MMbbl)",
-        "numberSuffix" => "K",
-        "theme" => "fusion"
-    }
-
-    # An array of hash objects which stores data
-    chartDataObj = [{
-            "Venezuela" => "290"
-        }, {
-            "Saudi" => "260"
-        }, {
-            "Canada" => "180"
-        }, {
-            "Iran" => "140"
-        }, {
-            "Russia" => "115"
-        }, {
-            "UAE" => "100"
-        }, {
-            "US" => "30"
-        }, {
-            "China" => "30"
-        }
-    ]
-
-    # Chart data template to store data in "Label" & "Value"
-    format
-    labelValueTemplate = "{ \"label\": \"%s\", \"value\": \"%s\" },"
-
-    # Chart data as JSON string
-    labelValueJSONStr = ""
-
-    chartDataObj.each { | item |
+        chartDataObj.each {|item| 
             data = labelValueTemplate % [item.keys[0], item[item.keys[0]]]
-        labelValueJSONStr.concat(data)
-    }
+            labelValueJSONStr.concat(data)
+        }
 
-    # Removing trailing comma character
-    labelValueJSONStr = labelValueJSONStr.chop
+        # Removing trailing comma character
+        labelValueJSONStr = labelValueJSONStr.chop
 
-    # Chart JSON data template
-    chartJSONDataTemplate = "{ \"chart\": %s, \"data\": [%s] }"
+        # Chart JSON data template
+        chartJSONDataTemplate = "{ \"chart\": %s, \"data\": [%s] }"
 
-    # Final Chart JSON data from template
-    chartJSONDataStr = chartJSONDataTemplate % [chartAppearancesConfigObj.to_json, labelValueJSONStr]
+        # Final Chart JSON data from template
+        chartJSONDataStr = chartJSONDataTemplate % [chartAppearancesConfigObj.to_json, labelValueJSONStr]
 
-    # Chart rendering
-    chart = Fusioncharts::Chart.new({
-        width: "700",
-        height: "400",
-        type: "column2d",
-        renderAt: "chart-container",
-        dataSource: chartJSONDataStr
-    })
+        # Chart rendering 
+        chart = Fusioncharts::Chart.new({
+                width: "700",
+                height: "400",
+                type: "column2d",
+                renderAt: "chartContainer",
+                dataSource: chartJSONDataStr
+            })
 
     end
-
-    def firstchart
-        @myChart = getChart
-    end
-
 end
 ```
 
