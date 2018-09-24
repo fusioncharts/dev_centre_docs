@@ -79,7 +79,7 @@ So, any score less than 50 is bad and is red. Any score between 50 and 75 is ave
 
 Now that you have the tabular data ready, it's time to convert it into JSON/XML format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
 
-```JSON				
+```					
 {
     "chart": {
         "caption": "Nordstrom's Customer Satisfaction Score for 2017",
@@ -91,26 +91,33 @@ Now that you have the tabular data ready, it's time to convert it into JSON/XML 
         "showToolTip": "0"
     },
     "colorRange": {
-        "color": [{
-            "minValue": "0",
-            "maxValue": "50",
-            "code": "#F2726F"
-        }, {
-            "minValue": "50",
-            "maxValue": "75",
-            "code": "#FFC533"
-        }, {
-            "minValue": "75",
-            "maxValue": "100",
-            "code": "#62B58F"
-        }]
+        "color": [
+            {
+                "minValue": "0",
+                "maxValue": "50",
+                "code": "#F2726F"
+            },
+            {
+                "minValue": "50",
+                "maxValue": "75",
+                "code": "#FFC533"
+            },
+            {
+                "minValue": "75",
+                "maxValue": "100",
+                "code": "#62B58F"
+            }
+        ]
     },
     "dials": {
-        "dial": [{
-            "value": "81"
-        }]
+        "dial": [
+            {
+                "value": "81"
+            }
+        ]
     }
 }
+
 ```
 
 In the above JSON:
@@ -167,12 +174,12 @@ The consolidated code is shown below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='csharp'>C#</a></li>
-    <li><a data-toggle='vb'>VB</a></li>
+    <li class='active'><a data-toggle='cdn'>C#</a></li>
+    <li><a data-toggle='local'>VB</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 
-<div class='tab csharp-tab active'>
+<div class='tab C#-tab active'>
 <pre><code class="custom-hlc language-javascript">
     using System;
     using System.Collections.Generic;
@@ -266,7 +273,7 @@ The consolidated code is shown below:
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-<div class='tab vb-tab'>
+<div class='tab VB-tab'>
 <pre><code class="custom-hlc language-javascript">
     Imports FusionCharts.Charts
     Partial Class first_chart
@@ -380,11 +387,11 @@ The HTML template is shown below:
 
 That's it! Your first gauge using the FusionCharts ASP.NET wrapper is ready.
 
-## Problem Rendering the Chart?
+## Problem rendering the map?
 
-In case there is an error, and you are unable to see the chart, check for the following:
+In case there is an error, and you are unable to see the map, check for the following:
 
-* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click <<here>> to get in touch with our support team.
+* If you are getting a JavaScript error on your page, check your browser console for the exact error and fix accordingly. If you're unable to solve it, click [here](mailto:support@fusioncharts.com) to get in touch with our support team.
 
 * If the chart does not show up at all, but there are no JavaScript errors, check if the FusionCharts Suite XT JavaScript library has loaded correctly. You can use developer tools within your browser to see if `fusioncharts.js` was loaded.
 
