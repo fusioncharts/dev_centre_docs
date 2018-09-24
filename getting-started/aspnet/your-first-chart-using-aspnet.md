@@ -178,7 +178,6 @@ The consolidated code is shown below:
     <li class="active"><a data-toggle="csharp">C#</a></li>
     <li><a data-toggle="vb">VB</a></li>
 </ul>
-<div><strong>.aspx.cs (full code)</strong></div>
 <pre><code class="custom-hlc language-javascript">
     using System;
     using System.Collections.Generic;
@@ -242,7 +241,6 @@ The consolidated code is shown below:
     }
 </code></pre>
 </div>
-<div><strong>.aspx.vb</strong></div>
 <pre><code class="custom-hlc language-javascript">
     Imports FusionCharts.Charts
     Partial Class first_chart
