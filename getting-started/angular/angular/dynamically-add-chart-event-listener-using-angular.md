@@ -222,5 +222,6 @@ Add the following code to `app.component.html`:
 ```
 
 In the above code:
-	* A `fusioncharts` directive is created in a template.
-	* Buttons are created to add/remove event listener to the data plots of the chart
+
+* A `fusioncharts` directive is created in a template.
+* Buttons are created to add/remove event listener to the data plots of the chart.
