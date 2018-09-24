@@ -216,137 +216,151 @@ The full code for the above sample is given below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='cdn'>C#</a></li>
-    <li><a data-toggle='local'>VB</a></li>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 
-<div class='tab C#-tab active'>
+<div class='tab csharp-tab active'>
 <pre><code class="custom-hlc language-javascript">
-    using System;
-    using System.Collections.Generic;
-    using System.Text;
-    using FusionCharts.Charts;
-    namespace asp_test {
-        public partial class map: System.Web.UI.Page {
-            //Create colorRange class
-            //It will store Min range Max range and specific color code for each range
+using System;
+using System.Collections.Generic;
+using System.Text;
+using FusionCharts.Charts;
 
-            class ColorRange {
-                public double Min {
-                    get;
-                    set;
-                }
-                public double Max {
-                    get;
-                    set;
-                }
-                public string ColorCode {
-                    get;
-                    set;
-                }
+public partial class firstmap : System.Web.UI.Page
+{
+    //Create colorRange class
+    //It will store Min range Max range and specific color code for each range
 
-                public ColorRange(double min, double max, string code) {
-                    Min = min;
-                    Max = max;
-                    ColorCode = code;
-                }
-            }
-            //Create countryData class
-            //It will store id, value and show label for each country
+    class ColorRange
+    {
+        public double Min
+        {
+            get;
+            set;
+        }
+        public double Max
+        {
+            get;
+            set;
+        }
+        public string ColorCode
+        {
+            get;
+            set;
+        }
 
-            class countryData {
-                public string ID {
-                    get;
-                    set;
-                }
-                public double Value {
-                    get;
-                    set;
-                }
-                public int ShowLabel {
-                    get;
-                    set;
-                }
-
-                public countryData(string id, double value, int showLabel) {
-                    ID = id;
-                    Value = value;
-                    ShowLabel = showLabel;
-
-                }
-
-            }
-            protected void Page_Load(object sender, EventArgs e) {
-                // store chart config name-config value pair
-                Dictionary < string, string > chartConfig = new Dictionary < string, string > ();
-                chartConfig.Add("caption", "Average Annual Population Growth");
-                chartConfig.Add("subCaption", " 1955-2015");
-                chartConfig.Add("includevalueinlabels", "1");
-                chartConfig.Add("labelsepchar", ": ");
-                chartConfig.Add("numberSuffix", "%");
-                chartConfig.Add("entityFillHoverColor", "#FFF9C4");
-                chartConfig.Add("theme", "fusion");
-
-                // store color code for different range
-                List < ColorRange > color = new List < ColorRange > ();
-                color.Add(new ColorRange(0.5, 1.0, "#FFD74D"));
-                color.Add(new ColorRange(1.0, 2.0, "#FB8C00"));
-                color.Add(new ColorRange(2.0, 3.0, "#E65100"));
-
-                // store country data
-                List < countryData > countries = new List < countryData > ();
-                countries.Add(new countryData("NA", .82, 1));
-                countries.Add(new countryData("SA", 2.04, 1));
-                countries.Add(new countryData("AS", 1.78, 1));
-                countries.Add(new countryData("EU", .40, 1));
-                countries.Add(new countryData("AF", 2.58, 1));
-                countries.Add(new countryData("AU", 1.30, 1));
-
-                // json data to use as chart data source
-                StringBuilder jsonData = new StringBuilder();
-                //build chart config object
-                jsonData.Append("{'chart':{");
-                foreach(var config in chartConfig) {
-                    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
-                }
-                jsonData.Replace(",", "},", jsonData.Length - 1, 1);
-
-                StringBuilder range = new StringBuilder();
-                //build colorRange object
-                range.Append("'colorRange':{");
-                range.Append("'color':[");
-                foreach(ColorRange clr in color) {
-                    range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode);
-                }
-                range.Replace(",", "]},", range.Length - 1, 1);
-
-                // build data object
-                StringBuilder data = new StringBuilder();
-                data.Append("'data':[");
-                foreach(countryData country in countries) {
-                    data.AppendFormat("{{'id':'{0}','value':'{1}','showLabel':'{2}'}},", country.ID, country.Value, country.ShowLabel);
-                }
-                data.Replace(",", "]", data.Length - 1, 1);
-                jsonData.Append(range);
-                jsonData.Append(data);
-                jsonData.Append("}");
-                //Create map instance
-                // map type, mapid, width, height, data format, data
-
-                Chart MyFirstMap = new Chart("world", "first_map", "800", "500", "json", jsonData.ToString());
-                //render map
-                Literal1.Text = MyFirstMap.Render();
-            }
+        public ColorRange(double min, double max, string code)
+        {
+            Min = min;
+            Max = max;
+            ColorCode = code;
         }
     }
+    //Create countryData class
+    //It will store id, value and show label for each country
+
+    class countryData
+    {
+        public string ID
+        {
+            get;
+            set;
+        }
+        public double Value
+        {
+            get;
+            set;
+        }
+        public int ShowLabel
+        {
+            get;
+            set;
+        }
+
+        public countryData(string id, double value, int showLabel)
+        {
+            ID = id;
+            Value = value;
+            ShowLabel = showLabel;
+
+        }
+
+    }
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        // store chart config name-config value pair
+        Dictionary&lt;string, string&gt; chartConfig = new Dictionary&lt;string, string&gt;();
+        chartConfig.Add("caption", "Average Annual Population Growth");
+        chartConfig.Add("subCaption", " 1955-2015");
+        chartConfig.Add("includevalueinlabels", "1");
+        chartConfig.Add("labelsepchar", ": ");
+        chartConfig.Add("numberSuffix", "%");
+        chartConfig.Add("entityFillHoverColor", "#FFF9C4");
+        chartConfig.Add("theme", "fusion");
+
+        // store color code for different range
+        List&lt;ColorRange&gt; color = new List&lt;ColorRange&gt;();
+        color.Add(new ColorRange(0.5, 1.0, "#FFD74D"));
+        color.Add(new ColorRange(1.0, 2.0, "#FB8C00"));
+        color.Add(new ColorRange(2.0, 3.0, "#E65100"));
+
+        // store country data
+        List&lt;countryData&gt; countries = new List&lt;countryData&gt;();
+        countries.Add(new countryData("NA", .82, 1));
+        countries.Add(new countryData("SA", 2.04, 1));
+        countries.Add(new countryData("AS", 1.78, 1));
+        countries.Add(new countryData("EU", .40, 1));
+        countries.Add(new countryData("AF", 2.58, 1));
+        countries.Add(new countryData("AU", 1.30, 1));
+
+        // json data to use as chart data source
+        StringBuilder jsonData = new StringBuilder();
+        //build chart config object
+        jsonData.Append("{'chart':{");
+        foreach (var config in chartConfig)
+        {
+            jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
+        }
+        jsonData.Replace(",", "},", jsonData.Length - 1, 1);
+
+        StringBuilder range = new StringBuilder();
+        //build colorRange object
+        range.Append("'colorRange':{");
+        range.Append("'color':[");
+        foreach (ColorRange clr in color)
+        {
+            range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode);
+        }
+        range.Replace(",", "]},", range.Length - 1, 1);
+
+        // build data object
+        StringBuilder data = new StringBuilder();
+        data.Append("'data':[");
+        foreach (countryData country in countries)
+        {
+            data.AppendFormat("{{'id':'{0}','value':'{1}','showLabel':'{2}'}},", country.ID, country.Value, country.ShowLabel);
+        }
+        data.Replace(",", "]", data.Length - 1, 1);
+        jsonData.Append(range);
+        jsonData.Append(data);
+        jsonData.Append("}");
+        //Create map instance
+        // map type, mapid, width, height, data format, data
+
+        Chart MyFirstMap = new Chart("world", "first_map", "800", "500", "json", jsonData.ToString());
+        //render map
+        Literal1.Text = MyFirstMap.Render();
+    }
+}
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-<div class='tab VB-tab'>
+<div class='tab vb-tab'>
 <pre><code class="custom-hlc language-javascript">
     Imports FusionCharts.Charts
-    Partial Class map
+    Partial Class firstmap
     Inherits System.Web.UI.Page
     'Create colorRange class
     'It will store Min range Max range And specific color code for each range
@@ -518,31 +532,26 @@ The HTML template is shown below:
 <div class="tab-content extra-tabs">
 <div class="tab csharp-tab active">
 <pre><code class="custom-hlc language-javascript">
-    &lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="asp_test.index" %&gt;
-
-    &lt;!DOCTYPE html&gt;
-
-    &lt;html xmlns=" http://www.w3.org/1999/xhtml"&gt;
-
+    &lt;%@ Page Language="C#" AutoEventWireup="true" CodeFile="firstmap.aspx.cs" Inherits="firstmap" %&gt;
+   &lt;!DOCTYPE html&gt;
+    &lt;html xmlns="  http://www.w3.org/1999/xhtml" &gt;
     &lt;head runat="server"&gt;
         &lt;title&gt;fusioncharts&lt;/title&gt;
     &lt;/head&gt;
-
     &lt;body&gt;
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
-            &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
+        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt; 
+        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt; 
+        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js"&gt;&lt;/script&gt; 
+        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt; 
+            &lt;asp:Literal ID="Literal1" runat="server"&gt;Chart will appear here&lt;/asp:Literal&gt;
         &lt;/div&gt;
     &lt;/body&gt;
-
     &lt;/html&gt;
 </code></pre>
 </div>
 <div class="tab vb-tab">
 <pre><code class="custom-hlc language-javascript">
-    &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="index" %&gt;
+    &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="firstmap.aspx.vb" Inherits="firstmap" %&gt;
     &lt;!DOCTYPE html&gt;
     &lt;html xmlns=" http://www.w3.org/1999/xhtml"&gt;
     &lt;head runat="server"&gt;
@@ -561,6 +570,7 @@ The HTML template is shown below:
     &lt;/body&gt;
     &lt;/html&gt;
 </code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 </div>
 </div>
@@ -615,411 +625,423 @@ The full code for the above sample is given below:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
-    <li class='active'><a data-toggle='cdn'>C#</a></li>
-    <li><a data-toggle='local'>VB</a></li>
+    <li class='active'><a data-toggle='csharp'>C#</a></li>
+    <li><a data-toggle='vb'>VB</a></li>
 </ul>
 <div class='tab-content extra-tabs'>
 
-<div class='tab C#-tab active'>
+<div class='tab csharp-tab active'>
 <pre><code class="custom-hlc language-javascript">
     using System;
-    using System.Collections.Generic;
-    using System.Text;
-    using FusionCharts.Charts;
-    namespace asp_test {
-        public partial class map: System.Web.UI.Page {
-            //Create colorRange class
-            //It will store Min range Max range and specific color code for each range
+using System.Collections.Generic;
+using System.Text;
+using FusionCharts.Charts;
 
-            class ColorRange {
-                public double Min {
-                    get;
-                    set;
-                }
-                public double Max {
-                    get;
-                    set;
-                }
-                public string ColorCode {
-                    get;
-                    set;
-                }
+public partial class MapTest : System.Web.UI.Page
+{
+    //Create colorRange class
+    //It will store Min range Max range and specific color code for each range
 
-                public ColorRange(double min, double max, string code) {
-                    Min = min;
-                    Max = max;
-                    ColorCode = code;
-                }
-            }
-            //Create countryData class
-            //It will store id, value and show label for each country
+    class ColorRange
+    {
+        public double Min
+        {
+            get;
+            set;
+        }
+        public double Max
+        {
+            get;
+            set;
+        }
+        public string ColorCode
+        {
+            get;
+            set;
+        }
 
-            class countryData {
-                public string ID {
-                    get;
-                    set;
-                }
-                public double Value {
-                    get;
-                    set;
-                }
-                public int ShowLabel {
-                    get;
-                    set;
-                }
+        public ColorRange(double min, double max, string code)
+        {
+            Min = min;
+            Max = max;
+            ColorCode = code;
+        }
+    }
+    //Create countryData class
+    //It will store id, value and show label for each country
 
-                public countryData(string id, double value, int showLabel) {
-                    ID = id;
-                    Value = value;
-                    ShowLabel = showLabel;
+    class CountryData
+    {
+        public string ID
+        {
+            get;
+            set;
+        }
+        public double Value
+        {
+            get;
+            set;
+        }
+        public int ShowLabel
+        {
+            get;
+            set;
+        }
 
-                }
+        public CountryData(string id, double value, int showLabel)
+        {
+            ID = id;
+            Value = value;
+            ShowLabel = showLabel;
 
-            }
-            protected void Page_Load(object sender, EventArgs e) {
-                // store chart config name-config value pair
-                Dictionary < string, string > chartConfig = new Dictionary < string, string > ();
-                chartConfig.put("animation", "0")
-                chartConfig.Add("usehovercolor", "1")
-                chartConfig.Add("showlegend", "1")
-                chartConfig.Add("legendposition", "BOTTOM")
-                chartConfig.Add("legendborderalpha", "0")
-                chartConfig.Add("legendbordercolor", "ffffff")
-                chartConfig.Add("legendallowdrag", "0")
-                chartConfig.Add("legendshadow", "0")
-                chartConfig.Add("caption", "Website Visits for the month of March 2018")
-                chartConfig.Add("legendborderalpha", "0")
-                chartConfig.Add("fillalpha", "80")
-                chartConfig.Add("hovercolor", "CCCCCC")
-                chartConfig.Add("theme", "fusion")
+        }
+
+    }
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        // store chart config name-config value pair
+        Dictionary&lt;string, string&gt; chartConfig = new Dictionary&lt;string, string&gt;();
+        chartConfig.Add("animation", "0");
+        chartConfig.Add("usehovercolor", "1");
+        chartConfig.Add("showlegend", "1");
+        chartConfig.Add("legendposition", "BOTTOM");
+        chartConfig.Add("legendbordercolor", "ffffff");
+        chartConfig.Add("legendallowdrag", "0");
+        chartConfig.Add("legendshadow", "0");
+        chartConfig.Add("caption", "Website Visits for the month of March 2018");
+        chartConfig.Add("legendborderalpha", "0");
+        chartConfig.Add("fillalpha", "80");
+        chartConfig.Add("hovercolor", "CCCCCC");
+        chartConfig.Add("theme", "fusion");
 
 
                 // store color code for different range
-                List < ColorRange > color = new List < ColorRange > ();
-                color.Add(new ColorRange(0.5, 1.0, "#FFD74D"));
-                color.Add(new ColorRange(1.0, 2.0, "#FB8C00"));
-                color.Add(new ColorRange(2.0, 3.0, "#E65100"));
+        List&lt;ColorRange&gt; color = new List&lt;ColorRange&gt;();
+        color.Add(new ColorRange(0, 1000, "#FFD74D"));;
+        color.Add(new ColorRange(1001, 2500, "#FB8C00"));;
+        color.Add(new ColorRange(2501, 5500, "#E65100"));;
 
-                // store country data
-                List < countryData > countries = new List < countryData > ();
-                countries.add(new CountryData("001", 2834, 1))
-                countries.add(new CountryData("003", 3182, 1))
-                countries.add(new CountryData("005", 3280, 1))
-                countries.add(new CountryData("007", 911, 1))
-                countries.add(new CountryData("009", 292, 1))
-                countries.add(new CountryData("011", 530, 1))
-                countries.add(new CountryData("013", 2515, 1))
-                countries.add(new CountryData("015", 728, 1))
-                countries.add(new CountryData("017", 1974, 1))
-                countries.add(new CountryData("019", 848, 1))
-                countries.add(new CountryData("021", 3278, 1))
-                countries.add(new CountryData("023", 4463, 1))
-                countries.add(new CountryData("025", 1198, 1))
-                countries.add(new CountryData("027", 378, 1))
-                countries.add(new CountryData("029", 2610, 1))
-                countries.add(new CountryData("031", 1200, 1))
-                countries.add(new CountryData("033", 3820, 1))
-                countries.add(new CountryData("035", 940, 1))
-                countries.add(new CountryData("037", 3416, 1))
-                countries.add(new CountryData("039", 4004, 1))
-                countries.add(new CountryData("041", 1604, 1))
-                countries.add(new CountryData("043", 4011, 1))
-                countries.add(new CountryData("045", 3203, 1))
-                countries.add(new CountryData("047", 3775, 1))
-                countries.add(new CountryData("049", 2721, 1))
-                countries.add(new CountryData("051", 3417, 1))
-                countries.add(new CountryData("053", 1530, 1))
-                countries.add(new CountryData("055", 412, 1))
-                countries.add(new CountryData("057", 3434, 1))
-                countries.add(new CountryData("059", 1670, 1))
-                countries.add(new CountryData("061", 1274, 1))
-                countries.add(new CountryData("063", 4339, 1))
-                countries.add(new CountryData("065", 2073, 1))
-                countries.add(new CountryData("067", 1018, 1))
-                countries.add(new CountryData("069", 3967, 1))
-                countries.add(new CountryData("071", 3401, 1))
-                countries.add(new CountryData("073", 3307, 1))
-                countries.add(new CountryData("075", 1938, 1))
-                countries.add(new CountryData("077", 489, 1))
-                countries.add(new CountryData("079", 3207, 1))
-                countries.add(new CountryData("081", 2295, 1))
-                countries.add(new CountryData("083", 2747, 1))
-                countries.add(new CountryData("085", 1114, 1))
-                countries.add(new CountryData("087", 3400, 1))
-                countries.add(new CountryData("089", 784, 1))
-                countries.add(new CountryData("091", 1673, 1))
-                countries.add(new CountryData("093", 4274, 1))
-                countries.add(new CountryData("095", 4509, 1))
-                countries.add(new CountryData("097", 3862, 1))
-                countries.add(new CountryData("099", 1356, 1))
-                countries.add(new CountryData("101", 4126, 1))
-                countries.add(new CountryData("103", 1314, 1))
-                countries.add(new CountryData("105", 1807, 1))
-                countries.add(new CountryData("107", 4026, 1))
-                countries.add(new CountryData("109", 3456, 1))
-                countries.add(new CountryData("111", 1393, 1))
-                countries.add(new CountryData("113", 1500, 1))
-                countries.add(new CountryData("115", 2218, 1))
+        // store country data
+        List&lt;CountryData&gt; countries = new List&lt;CountryData&gt;();
+                countries.Add(new CountryData("001", 2834, 1));
+                countries.Add(new CountryData("003", 3182, 1));
+                countries.Add(new CountryData("005", 3280, 1));
+                countries.Add(new CountryData("007", 911, 1));
+                countries.Add(new CountryData("009", 292, 1));
+                countries.Add(new CountryData("011", 530, 1));
+                countries.Add(new CountryData("013", 2515, 1));
+                countries.Add(new CountryData("015", 728, 1));
+                countries.Add(new CountryData("017", 1974, 1));
+                countries.Add(new CountryData("019", 848, 1));
+                countries.Add(new CountryData("021", 3278, 1));
+                countries.Add(new CountryData("023", 4463, 1));
+                countries.Add(new CountryData("025", 1198, 1));
+                countries.Add(new CountryData("027", 378, 1));
+                countries.Add(new CountryData("029", 2610, 1));
+                countries.Add(new CountryData("031", 1200, 1));
+                countries.Add(new CountryData("033", 3820, 1));
+                countries.Add(new CountryData("035", 940, 1));
+                countries.Add(new CountryData("037", 3416, 1));
+                countries.Add(new CountryData("039", 4004, 1));
+                countries.Add(new CountryData("041", 1604, 1));
+                countries.Add(new CountryData("043", 4011, 1));
+                countries.Add(new CountryData("045", 3203, 1));
+                countries.Add(new CountryData("047", 3775, 1));
+                countries.Add(new CountryData("049", 2721, 1));
+                countries.Add(new CountryData("051", 3417, 1));
+                countries.Add(new CountryData("053", 1530, 1));
+                countries.Add(new CountryData("055", 412, 1));
+                countries.Add(new CountryData("057", 3434, 1));
+                countries.Add(new CountryData("059", 1670, 1));
+                countries.Add(new CountryData("061", 1274, 1));
+                countries.Add(new CountryData("063", 4339, 1));
+                countries.Add(new CountryData("065", 2073, 1));
+                countries.Add(new CountryData("067", 1018, 1));
+                countries.Add(new CountryData("069", 3967, 1));
+                countries.Add(new CountryData("071", 3401, 1));
+                countries.Add(new CountryData("073", 3307, 1));
+                countries.Add(new CountryData("075", 1938, 1));
+                countries.Add(new CountryData("077", 489, 1));
+                countries.Add(new CountryData("079", 3207, 1));
+                countries.Add(new CountryData("081", 2295, 1));
+                countries.Add(new CountryData("083", 2747, 1));
+                countries.Add(new CountryData("085", 1114, 1));
+                countries.Add(new CountryData("087", 3400, 1));
+                countries.Add(new CountryData("089", 784, 1));
+                countries.Add(new CountryData("091", 1673, 1));
+                countries.Add(new CountryData("093", 4274, 1));
+                countries.Add(new CountryData("095", 4509, 1));
+                countries.Add(new CountryData("097", 3862, 1));
+                countries.Add(new CountryData("099", 1356, 1));
+                countries.Add(new CountryData("101", 4126, 1));
+                countries.Add(new CountryData("103", 1314, 1));
+                countries.Add(new CountryData("105", 1807, 1));
+                countries.Add(new CountryData("107", 4026, 1));
+                countries.Add(new CountryData("109", 3456, 1));
+                countries.Add(new CountryData("111", 1393, 1));
+                countries.Add(new CountryData("113", 1500, 1));
+                countries.Add(new CountryData("115", 2218, 1));
 
 
                 // json data to use as chart data source
-                StringBuilder jsonData = new StringBuilder();
-                //build chart config object
-                jsonData.Append("{'chart':{");
-                foreach(var config in chartConfig) {
-                    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
-                }
-                jsonData.Replace(",", "},", jsonData.Length - 1, 1);
-
-                StringBuilder range = new StringBuilder();
-                //build colorRange object
-                range.Append("'colorRange':{");
-                range.Append("'color':[");
-                foreach(ColorRange clr in color) {
-                    range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode);
-                }
-                range.Replace(",", "]},", range.Length - 1, 1);
-
-                // build data object
-                StringBuilder data = new StringBuilder();
-                data.Append("'data':[");
-                foreach(countryData country in countries) {
-                    data.AppendFormat("{{'id':'{0}','value':'{1}','showLabel':'{2}'}},", country.ID, country.Value, country.ShowLabel);
-                }
-                data.Replace(",", "]", data.Length - 1, 1);
-                jsonData.Append(range);
-                jsonData.Append(data);
-                jsonData.Append("}");
-                //Create map instance
-                // map type, mapid, width, height, data format, data
-
-                Chart MyFirstMap = new Chart("california", "first_map", "800", "500", "json", jsonData.ToString());
-                //render map
-                Literal1.Text = MyFirstMap.Render();
-            }
+        StringBuilder jsonData = new StringBuilder();
+        //build chart config object
+        jsonData.Append("{'chart':{");
+        foreach (var config in chartConfig)
+        {
+            jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value);
         }
+        jsonData.Replace(",", "},", jsonData.Length - 1, 1);
+
+        StringBuilder range = new StringBuilder();
+        //build colorRange object
+        range.Append("'colorRange':{");
+        range.Append("'color':[");
+        foreach (ColorRange clr in color)
+        {
+            range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode);
+        }
+        range.Replace(",", "]},", range.Length - 1, 1);
+
+        // build data object
+        StringBuilder data = new StringBuilder();
+        data.Append("'data':[");
+        foreach (CountryData country in countries)
+        {
+            data.AppendFormat("{{'id':'{0}','value':'{1}','showLabel':'{2}'}},", country.ID, country.Value, country.ShowLabel);
+        }
+        data.Replace(",", "]", data.Length - 1, 1);
+        jsonData.Append(range);
+        jsonData.Append(data);
+        jsonData.Append("}");
+        //Create map instance
+        // map type, mapid, width, height, data format, data
+
+        Chart MyFirstMap = new Chart("california", "first_map", "800", "500", "json", jsonData.ToString());;
+        //render map
+        Literal1.Text = MyFirstMap.Render();
     }
+}
 
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
-<div class='tab VB-tab'>
+<div class='tab vb-tab'>
 <pre><code class="custom-hlc language-javascript">
     Imports FusionCharts.Charts
-    Partial Class map
+Partial Class MapTest
     Inherits System.Web.UI.Page
     'Create colorRange class
     'It will store Min range Max range And specific color code for each range
     Class ColorRange
-    Private lowerLimit As Double
+        Private lowerLimit As Double
 
-    Private upprLimit As Double
-    Private code As String
+        Private upprLimit As Double
+        Private code As String
         'lower value of range set as property
-    Property Min() As Double
-    Get
-    Return lowerLimit
+        Property Min() As Double
+            Get
+                Return lowerLimit
 
-    End Get
-    Set(value As Double)
-    lowerLimit = value
-    End Set
-    End Property
+            End Get
+            Set(value As Double)
+                lowerLimit = value
+            End Set
+        End Property
         'upper value of range set as property
-    Property Max() As Double
-    Get
-    Return upprLimit
+        Property Max() As Double
+            Get
+                Return upprLimit
 
-    End Get
-    Set(value As Double)
-    upprLimit = value
-    End Set
-    End Property
+            End Get
+            Set(value As Double)
+                upprLimit = value
+            End Set
+        End Property
         ' specific color code for this range
-    Property ColorCode() As String
-    Get
-    Return code
+        Property ColorCode() As String
+            Get
+                Return code
 
-    End Get
-    Set(value As String)
-    code = value
-    End Set
-    End Property
+            End Get
+            Set(value As String)
+                code = value
+            End Set
+        End Property
         'constructor
-    Public Sub New(ByVal lowerLimit As Double, ByVal upperLimit As Double, ByVal code As String)
-    Min = lowerLimit
-    Max = upperLimit
-    ColorCode = code
-    End Sub
+        Public Sub New(ByVal lowerLimit As Double, ByVal upperLimit As Double, ByVal code As String)
+            Min = lowerLimit
+            Max = upperLimit
+            ColorCode = code
+        End Sub
 
     End Class
-        'Create countryData class
+    'Create countryData class
     'It will store id, value And show label for each country
     Class CountryData
-    Private cid As String
-    Private cvalue As Double
-    Private label As Integer
+        Private cid As String
+        Private cvalue As Double
+        Private label As Integer
         'country id set as a property
-    Property ID() As String
-    Get
-    Return cid
+        Property ID() As String
+            Get
+                Return cid
 
-    End Get
-    Set(value As String)
-    cid = value
-    End Set
-    End Property
+            End Get
+            Set(value As String)
+                cid = value
+            End Set
+        End Property
         'data value for a country set as property
-    Property Value() As Double
-    Get
-    Return cvalue
+        Property Value() As Double
+            Get
+                Return cvalue
 
-    End Get
-    Set(value As Double)
-    cvalue = value
-    End Set
-    End Property
+            End Get
+            Set(value As Double)
+                cvalue = value
+            End Set
+        End Property
         ' whether show label or not
-    Property ShowLabel() As Integer
-    Get
-    Return label
+        Property ShowLabel() As Integer
+            Get
+                Return label
 
-    End Get
-    Set(value As Integer)
-    label = value
-    End Set
-    End Property
+            End Get
+            Set(value As Integer)
+                label = value
+            End Set
+        End Property
         'constructor
-    Public Sub New(ByVal cntryid As String, ByVal val As Double, ByVal lbl As Integer)
-    ID = cntryid
-    Value = val
-    ShowLabel = lbl
-    End Sub
+        Public Sub New(ByVal cntryid As String, ByVal val As Double, ByVal lbl As Integer)
+            ID = cntryid
+            Value = val
+            ShowLabel = lbl
+        End Sub
 
     End Class
     Protected Sub Page_Load(sender As Object, e As EventArgs) Handles MyBase.Load ' store chart config name-config value pair
-    Dim chartConfig As New Dictionary(Of String, String)
-    chartConfig.Add("animation", "0")
-    chartConfig.Add("usehovercolor", "1")
-            chartConfig.Add("showlegend", "1")
-            chartConfig.Add("legendposition", "BOTTOM")
-            chartConfig.Add("legendborderalpha", "0")
-            chartConfig.Add("legendbordercolor", "ffffff")
-            chartConfig.Add("legendallowdrag", "0")
-            chartConfig.Add("legendshadow", "0")
-            chartConfig.Add("caption", "Website Visits for the month of March 2018");
-            chartConfig.Add("legendborderalpha", "0")
-            chartConfig.Add("fillalpha", "80")
-            chartConfig.Add("hovercolor", "CCCCCC")
-            chartConfig.Add("theme", "fusion")
+        Dim chartConfig As New Dictionary(Of String, String)
+        chartConfig.Add("animation", "0")
+        chartConfig.Add("usehovercolor", "1")
+        chartConfig.Add("showlegend", "1")
+        chartConfig.Add("legendposition", "BOTTOM")
+        chartConfig.Add("legendborderalpha", "0")
+        chartConfig.Add("legendbordercolor", "ffffff")
+        chartConfig.Add("legendallowdrag", "0")
+        chartConfig.Add("legendshadow", "0")
+        chartConfig.Add("caption", "Website Visits for the month of March 2018")
+        chartConfig.Add("fillalpha", "80")
+        chartConfig.Add("hovercolor", "CCCCCC")
+        chartConfig.Add("theme", "fusion")
 
-    'store color code for different range
-    Dim color As New List(Of ColorRange)
-    color.Add(New ColorRange(0.5, 1.0, "#FFD74D"))
-    color.Add(New ColorRange(1.0, 2.0, "#FB8C00"))
-    color.Add(New ColorRange(2.0, 3.0, "#E65100"))
+        'store color code for different range
+        Dim color As New List(Of ColorRange)
+        color.Add(New ColorRange(0, 1000, "#FFD74D"))
+        color.Add(New ColorRange(1001, 2500, "#FB8C00"))
+        color.Add(New ColorRange(2501, 5500, "#E65100"))
 
-    'store country data
-    Dim countries As New List(Of CountryData)
-    countries.add(new CountryData("001", 2834, 1))
-            countries.add(new CountryData("003", 3182, 1))
-            countries.add(new CountryData("005", 3280, 1))
-            countries.add(new CountryData("007", 911, 1))
-            countries.add(new CountryData("009", 292, 1))
-            countries.add(new CountryData("011", 530, 1))
-            countries.add(new CountryData("013", 2515, 1))
-            countries.add(new CountryData("015", 728, 1))
-            countries.add(new CountryData("017", 1974, 1))
-            countries.add(new CountryData("019", 848, 1))
-            countries.add(new CountryData("021", 3278, 1))
-            countries.add(new CountryData("023", 4463, 1))
-            countries.add(new CountryData("025", 1198, 1))
-            countries.add(new CountryData("027", 378, 1))
-            countries.add(new CountryData("029", 2610, 1))
-            countries.add(new CountryData("031", 1200, 1))
-            countries.add(new CountryData("033", 3820, 1))
-            countries.add(new CountryData("035", 940, 1))
-            countries.add(new CountryData("037", 3416, 1))
-            countries.add(new CountryData("039", 4004, 1))
-            countries.add(new CountryData("041", 1604, 1))
-            countries.add(new CountryData("043", 4011, 1))
-            countries.add(new CountryData("045", 3203, 1))
-            countries.add(new CountryData("047", 3775, 1))
-            countries.add(new CountryData("049", 2721, 1))
-            countries.add(new CountryData("051", 3417, 1))
-            countries.add(new CountryData("053", 1530, 1))
-            countries.add(new CountryData("055", 412, 1))
-            countries.add(new CountryData("057", 3434, 1))
-            countries.add(new CountryData("059", 1670, 1))
-            countries.add(new CountryData("061", 1274, 1))
-            countries.add(new CountryData("063", 4339, 1))
-            countries.add(new CountryData("065", 2073, 1))
-            countries.add(new CountryData("067", 1018, 1))
-            countries.add(new CountryData("069", 3967, 1))
-            countries.add(new CountryData("071", 3401, 1))
-            countries.add(new CountryData("073", 3307, 1))
-            countries.add(new CountryData("075", 1938, 1))
-            countries.add(new CountryData("077", 489, 1))
-            countries.add(new CountryData("079", 3207, 1))
-            countries.add(new CountryData("081", 2295, 1))
-            countries.add(new CountryData("083", 2747, 1))
-            countries.add(new CountryData("085", 1114, 1))
-            countries.add(new CountryData("087", 3400, 1))
-            countries.add(new CountryData("089", 784, 1))
-            countries.add(new CountryData("091", 1673, 1))
-            countries.add(new CountryData("093", 4274, 1))
-            countries.add(new CountryData("095", 4509, 1))
-            countries.add(new CountryData("097", 3862, 1))
-            countries.add(new CountryData("099", 1356, 1))
-            countries.add(new CountryData("101", 4126, 1))
-            countries.add(new CountryData("103", 1314, 1))
-            countries.add(new CountryData("105", 1807, 1))
-            countries.add(new CountryData("107", 4026, 1))
-            countries.add(new CountryData("109", 3456, 1))
-            countries.add(new CountryData("111", 1393, 1))
-            countries.add(new CountryData("113", 1500, 1))
-            countries.add(new CountryData("115", 2218, 1))
+        'store country data
+        Dim countries As New List(Of CountryData)
+        countries.Add(New CountryData("001", 2834, 1))
+        countries.Add(New CountryData("003", 3182, 1))
+        countries.Add(New CountryData("005", 3280, 1))
+        countries.Add(New CountryData("007", 911, 1))
+        countries.Add(New CountryData("009", 292, 1))
+        countries.Add(New CountryData("011", 530, 1))
+        countries.Add(New CountryData("013", 2515, 1))
+        countries.Add(New CountryData("015", 728, 1))
+        countries.Add(New CountryData("017", 1974, 1))
+        countries.Add(New CountryData("019", 848, 1))
+        countries.Add(New CountryData("021", 3278, 1))
+        countries.Add(New CountryData("023", 4463, 1))
+        countries.Add(New CountryData("025", 1198, 1))
+        countries.Add(New CountryData("027", 378, 1))
+        countries.Add(New CountryData("029", 2610, 1))
+        countries.Add(New CountryData("031", 1200, 1))
+        countries.Add(New CountryData("033", 3820, 1))
+        countries.Add(New CountryData("035", 940, 1))
+        countries.Add(New CountryData("037", 3416, 1))
+        countries.Add(New CountryData("039", 4004, 1))
+        countries.Add(New CountryData("041", 1604, 1))
+        countries.Add(New CountryData("043", 4011, 1))
+        countries.Add(New CountryData("045", 3203, 1))
+        countries.Add(New CountryData("047", 3775, 1))
+        countries.Add(New CountryData("049", 2721, 1))
+        countries.Add(New CountryData("051", 3417, 1))
+        countries.Add(New CountryData("053", 1530, 1))
+        countries.Add(New CountryData("055", 412, 1))
+        countries.Add(New CountryData("057", 3434, 1))
+        countries.Add(New CountryData("059", 1670, 1))
+        countries.Add(New CountryData("061", 1274, 1))
+        countries.Add(New CountryData("063", 4339, 1))
+        countries.Add(New CountryData("065", 2073, 1))
+        countries.Add(New CountryData("067", 1018, 1))
+        countries.Add(New CountryData("069", 3967, 1))
+        countries.Add(New CountryData("071", 3401, 1))
+        countries.Add(New CountryData("073", 3307, 1))
+        countries.Add(New CountryData("075", 1938, 1))
+        countries.Add(New CountryData("077", 489, 1))
+        countries.Add(New CountryData("079", 3207, 1))
+        countries.Add(New CountryData("081", 2295, 1))
+        countries.Add(New CountryData("083", 2747, 1))
+        countries.Add(New CountryData("085", 1114, 1))
+        countries.Add(New CountryData("087", 3400, 1))
+        countries.Add(New CountryData("089", 784, 1))
+        countries.Add(New CountryData("091", 1673, 1))
+        countries.Add(New CountryData("093", 4274, 1))
+        countries.Add(New CountryData("095", 4509, 1))
+        countries.Add(New CountryData("097", 3862, 1))
+        countries.Add(New CountryData("099", 1356, 1))
+        countries.Add(New CountryData("101", 4126, 1))
+        countries.Add(New CountryData("103", 1314, 1))
+        countries.Add(New CountryData("105", 1807, 1))
+        countries.Add(New CountryData("107", 4026, 1))
+        countries.Add(New CountryData("109", 3456, 1))
+        countries.Add(New CountryData("111", 1393, 1))
+        countries.Add(New CountryData("113", 1500, 1))
+        countries.Add(New CountryData("115", 2218, 1))
 
-    'json data to use as chart data source
-    Dim jsonData As New StringBuilder
+        'json data to use as chart data source
+        Dim jsonData As New StringBuilder
         'build chart config object
-    jsonData.Append("{'chart':{")
-    For Each config In chartConfig
+        jsonData.Append("{'chart':{")
+        For Each config In chartConfig
 
-    jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value)
-    Next
-    jsonData.Replace(",", "},", jsonData.Length - 1, 1)
+            jsonData.AppendFormat("'{0}':'{1}',", config.Key, config.Value)
+        Next
+        jsonData.Replace(",", "},", jsonData.Length - 1, 1)
 
-    Dim range As New StringBuilder
+        Dim range As New StringBuilder
         'build colorRange object
-    range.Append("'colorRange':{")
-    range.Append("'color':[")
-    For Each clr In color
+        range.Append("'colorRange':{")
+        range.Append("'color':[")
+        For Each clr In color
 
-    range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode)
-    Next
-    range.Replace(",", "]},", range.Length - 1, 1)
+            range.AppendFormat("{{'minValue':'{0}','maxValue':'{1}','code':'{2}'}},", clr.Min, clr.Max, clr.ColorCode)
+        Next
+        range.Replace(",", "]},", range.Length - 1, 1)
 
-    'build data object
-    Dim data As New StringBuilder
-    data.Append("'data':[")
-    For Each country In countries
+        'build data object
+        Dim data As New StringBuilder
+        data.Append("'data':[")
+        For Each country In countries
 
-    data.AppendFormat("{{'id':'{0}','value':'{1}','showLabel':'{2}'}},", country.ID, country.Value, country.ShowLabel)
-    Next
-    data.Replace(",", "]", data.Length - 1, 1)
-    jsonData.Append(range)
-    jsonData.Append(data)
-    jsonData.Append("}")
-    'Create map instance
-    'map type, mapid, width, height, data format, data
+            data.AppendFormat("{{'id':'{0}','value':'{1}','showLabel':'{2}'}},", country.ID, country.Value, country.ShowLabel)
+        Next
+        data.Replace(",", "]", data.Length - 1, 1)
+        jsonData.Append(range)
+        jsonData.Append(data)
+        jsonData.Append("}")
+        'Create map instance
+        'map type, mapid, width, height, data format, data
 
-    Dim MyFirstMap As New Chart("california", "first_map", "800", "500", "json", jsonData.ToString())
-    'render map
-    Literal1.Text = MyFirstMap.Render()
+        Dim MyFirstMap As New Chart("california", "first_map", "800", "500", "json", jsonData.ToString())
+        'render map
+        Literal1.Text = MyFirstMap.Render()
     End Sub
 
-    End Class
+End Class
 
 </code></pre>
 <button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
@@ -1037,7 +1059,7 @@ The HTML template is shown below:
 <div class="tab-content extra-tabs">
 <div class="tab csharp-tab active">
 <pre><code class="custom-hlc language-javascript">
-    &lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="index.aspx.cs" Inherits="asp_test.index" %&gt;
+    &lt;%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MapTest.aspx.cs" Inherits="MapTest.index" %&gt;
 
     &lt;!DOCTYPE html&gt;
 
@@ -1051,7 +1073,7 @@ The HTML template is shown below:
         &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
         &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
         &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/
+        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
             &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
         &lt;/div&gt;
     &lt;/body&gt;
@@ -1061,17 +1083,18 @@ The HTML template is shown below:
 </div>
 <div class="tab vb-tab">
 <pre><code class="custom-hlc language-javascript">
-    &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="index.aspx.vb" Inherits="index" %&gt;
-    &lt;!DOCTYPE html&gt;
-    &lt;html xmlns=" http://www.w3.org/1999/xhtml"&gt;
+    &lt;%@ Page Language="VB" AutoEventWireup="false" CodeFile="MapTest.aspx.vb" Inherits="MapTest" %&gt;
+
+&lt;!DOCTYPE html&gt;
+    &lt;html xmlns="  http://www.w3.org/1999/xhtml" &gt;
     &lt;head runat="server"&gt;
         &lt;title&gt;fusioncharts&lt;/title&gt;
     &lt;/head&gt;
     &lt;body&gt;
-       &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
+       &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script&gt; 
+        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script&gt; 
+        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script&gt; 
+        &lt;script src=" http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script&gt; 
         &lt;form id="form1" runat="server"&gt;
             &lt;div&gt;
                 &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
@@ -1080,6 +1103,7 @@ The HTML template is shown below:
     &lt;/body&gt;
     &lt;/html&gt;
 </code></pre>
+<button class='btn btn-outline-secondary btn-copy' title='Copy to Clipboard'>COPY</button>
 </div>
 </div>
 </div>
