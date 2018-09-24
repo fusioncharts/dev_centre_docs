@@ -24,8 +24,6 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 The consolidated code is shown below:
 
-The consolidated code is shown below:
-
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>
     <li class='active'><a data-toggle='cdn'>CDN</a></li>
@@ -80,8 +78,6 @@ So, any score less than 50 is bad and is red. Any score between 50 and 75 is ave
 ## Convert Tabular Data into JSON/XML Format
 
 Now that you have the tabular data ready, it's time to convert it into JSON/XML format, as FusionCharts accepts data in JSON or XML format. The converted format will look as shown below:
-
-JSON
 
 ```					
 {
