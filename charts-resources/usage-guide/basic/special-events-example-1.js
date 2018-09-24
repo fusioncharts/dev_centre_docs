@@ -76,8 +76,6 @@
     },
     "events": {
         "beforeRender": function(e, d) {
-
-
             var message = "Drag any column for years 2017 or 2018 to see updated value along with the label";
             var customDiv = document.createElement('p');
             customDiv.innerText = message;
@@ -94,9 +92,7 @@
                 var eventMessage = '<b>' + args.datasetName + '</b> dataset, its previous value was <b>' + prev + '</b> and its current value is <b>' + curr + '</b> for year ' +
                     '<b>' + label + '</b>';
                 customDiv.innerHTML = eventMessage;
-
             });
-
         }
     }
 }

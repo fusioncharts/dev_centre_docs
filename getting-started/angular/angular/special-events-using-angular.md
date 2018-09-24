@@ -206,5 +206,6 @@ Add the following code to `app.component.html`:
   (dataplotDragEnd)="dragEnd($event)">
 </fusioncharts>
 <p style="padding: 10px;background:#f5f2f0">{{message}}</p>
+```
 
 In the above code a `fusioncharts` directive is created in a template.
