@@ -1,5 +1,4 @@
 ---
-permalink: getting-started/ruby-on-rails/your-first-chart-using-ruby-on-rails.html
 title: Your First Chart in Ruby using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the ruby-on-rails.
 heading: Your First Chart in Ruby using FusionCharts
