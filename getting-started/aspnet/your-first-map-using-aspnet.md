@@ -552,7 +552,7 @@ The HTML template is shown below:
        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
         &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
         &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.world.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/
+        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
         &lt;form id="form1" runat="server"&gt;
             &lt;div&gt;
                 &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
@@ -1071,7 +1071,7 @@ The HTML template is shown below:
        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"&gt;&lt;/script>
         &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.maps.js"&gt;&lt;/script>
         &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/maps/fusioncharts.california.js"&gt;&lt;/script>
-        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/
+        &lt;script src="http://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"&gt;&lt;/script>
         &lt;form id="form1" runat="server"&gt;
             &lt;div&gt;
                 &lt;asp:Literal ID="Literal1" runat="server"&gt;&lt;/asp:Literal&gt;
