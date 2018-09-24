@@ -180,15 +180,13 @@ In the above code:
 	* An event listener is added to enable the `dataplotClick` event on the data plot which the button is clicked.
 	* An event listener is removed to disable the `dataPlotClick` event on the data plot which the button is clicked.
 
-4. `customDiv.innerHTML` is added to display the message inside the `<div>`.
-
 ### Add data to `app.component.html`
 
 Add the following code to `app.component.html`:
 
 ```
 <!-- In app.component.html -->
-<style >
+<style>
     .btn.btn-outline-secondary.btn-sm:hover{
         color:white;
     }
@@ -204,7 +202,7 @@ Add the following code to `app.component.html`:
   <div class="card-body chart-wrapper">
     <div class="chart-wrapper-inner">
         <fusioncharts
-          width="100%" 
+          width="700" 
           height="400"
           type="column2d"
           [dataSource]=dataSource
