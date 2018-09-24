@@ -544,13 +544,11 @@ To render the above map, the following code is used:
         &lt;%
             // store map config name-config value pair
             Map&lt;String, String&gt; chartConfig = new HashMap&lt;String, String&gt;();
-            chartConfig.put("caption", "Average Annual Population Growth");
             chartConfig.put("animation", "0");
             chartConfig.put("usehovercolor", "1");
             chartConfig.put("showlegend", "1");
             chartConfig.put("legendposition", "BOTTOM");
             chartConfig.put("legendborderalpha", "0");
-
             chartConfig.put("legendbordercolor", "ffffff");
             chartConfig.put("legendallowdrag", "0");
             chartConfig.put("legendshadow", "0");
