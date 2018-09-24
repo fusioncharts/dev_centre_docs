@@ -168,9 +168,9 @@ The chart object and the respective arrays contain a set of key-value pairs know
 
 Now that you have converted the tabular data to JSON format, let's learn how to render the gauge.
 
-## Render the Chart
+## Render the Gauge
 
-To render the chart, follow the steps below:
+To render the gauge, follow the steps below:
 
 1. Include the **FusionCharts Rails wrapper** in your project.
 
@@ -260,7 +260,7 @@ class FirstWidget
         
         # Rendering the widget
         widget = Fusioncharts::Chart.new({
-            width: "400",
+            width: "450",
             height: "250",
             type: "angulargauge",
             renderAt: "widgetContainer",
