@@ -208,6 +208,6 @@ Add the following code to `app.component.html`:
 
 In the above code 
 
-* `fusioncharts` diective is created in a template.
+* `fusioncharts` directive is created in a template.
 
 * Radio buttons for **fusion**, **gammel**, **candy**, **zune**, **ocean** and **carbon** themes have been created using `<input>`.
