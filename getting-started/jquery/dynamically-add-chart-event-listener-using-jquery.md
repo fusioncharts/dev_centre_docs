@@ -17,173 +17,116 @@ A chart is shown below:
 The code to render a chart using `require` is given below:
 
 ```
-//Including react
-import React, { Component } from 'react';
+// Include fusioncharts
+var FusionCharts = require('fusioncharts');
 
-//Including the react-fusioncharts component
-import ReactDOM from 'react-dom';
+// Include chart modules
+var Charts = require('fusioncharts/fusioncharts.charts');
 
-//Including the fusioncharts library
-import FusionCharts from 'fusioncharts';
+// Include the theme file
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-//Including the chart type
-import Chart from 'fusioncharts/fusioncharts.charts';
+var $ = require('jquery');
+var jQueryFusionCharts = require('jquery-fusioncharts');
 
-//Including react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
+// Resolve Charts as dependency for FusionCharts
+Charts(FusionCharts); 
 
-//Including the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+// Resolve Fusion theme as dependency for FusionCharts
+FusionTheme(FusionCharts); 
 
-//Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Chart, FusionTheme);
+// Resolve FusionCharts as dependency for jqueryFusionCharts
+jQueryFusionCharts(FusionCharts); 
 
-//Creating the JSON object to store the chart configurations
+$('document').ready(function () {
+    $('#chart-container').insertFusionCharts({
+        type: 'column2d',
+        width: '700',
+        height: '400',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion"
+            },
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
+        }
+    });
 
-const chartConfigs = {
-	type: 'column2d',
-	width: '700',
-	height: '400',
-	dataFormat: 'json',
-	dataSource: {
-		// Chart configuration
-		"chart": {
-			"caption": "Countries With Most Oil Reserves [2017-18]",
-			"subCaption": "In MMbbl = One Million barrels",
-			"xAxisName": "Country",
-			"yAxisName": "Reserves (MMbbl)",
-			"numberSuffix": "K",
-			"theme": "fusion"
-		},
-		// Chart data
-		"data": [{
-			"label": "Venezuela",
-			"value": "290"
-		}, {
-			"label": "Saudi",
-			"value": "260"
-		}, {
-			"label": "Canada",
-			"value": "180"
-		}, {
-			"label": "Iran",
-			"value": "140"
-		}, {
-			"label": "Russia",
-			"value": "115"
-		}, {
-			"label": "UAE",
-			"value": "100"
-		}, {
-			"label": "US",
-			"value": "30"
-		}, {
-			"label": "China",
-			"value": "30"
-		}]
-	},
-};
+    // Handlers for tracking click events
+    $('#track').click(function () {
+        $('#message').html('Click on the plot to see the value along with the label');
+        $('#chart-container').bind('fusionchartsdataplotclick', function (event, data) {
+            $('#message').html('You have clicked on plot <b>' + data.categoryLabel +
+                '</b> which has a value of <b>' + data.displayValue + '</b>');
+        });
+        $('#track').attr('disabled', 'disabled');
+        $('#reset').removeAttr('disabled');
+    });
+    $('#reset').click(function () {
+        $('#chart-container').unbind('fusionchartsdataplotclick');
+        $('#message').html('Click the below buttons to add an event dynamically to a chart');
+        $('#track').removeAttr('disabled');
+        $('#reset').attr('disabled', 'disabled');
+    });
+});
+```
 
-var defaultMessage = 'Click on the plot to see the value along with the label';
+The HTML template of the above sample is shown below:
 
-class Chart extends Component {
-	constructor(props) {
-		super(props);
-
-	    this.state = {
-	      message: '',
-	      enabled: false
-	    }
-
-	    this.trackPlotClick = this.trackPlotClick.bind(this);
-	    this.resetChart = this.resetChart.bind(this);
-	    this.dataPlotClick = this.dataPlotClick.bind(this);
-	}
-
-	// Handler for 'Track Data Plot Clicks' button.
-	// 1. Adds an eventlistener for data plot cick on the chart
-	// 2. Sets the default message when data plot click tracking is enabled
-	trackPlotClick() {
-    	FusionCharts.addEventListener('dataplotClick', this.dataPlotClick);
-    	this.setState({
-			message: defaultMessage,
-			enabled: true
-    	});
-  	}
-
-	// Event listener for dataplotclick event on chart. Update message with data plot values.
-	dataPlotClick(eventObj, dataObj) {
-    	this.setState({
-			message: [
-				'You have clicked on plot ',
-				<strong>{dataObj.categoryLabel}</strong>,
-				' whose value is ',
-				<strong>{dataObj.displayValue}</strong>
-			]
-		});
-	}
-
-	// Handler for 'Reset' button.
-	// Resets the chart to default message and removed the event listener.
-	resetChart() {
-	FusionCharts.removeEventListener('dataplotClick', this.dataPlotClick);
-    	this.setState({
-			message: '',
-			enabled: false
-    	});
-  	}
-
-  	render () {
-    	return (
-      	<div>
-        	<ReactFC {...chartConfigs} />
-        	<div style={{ padding: '5px' }} id="message">
-          	{ this.state.message || 'Click the below buttons to add an event dynamically to a charts' }
-        	</div>
-        	<button
-          	className='btn btn-outline-secondary btn-sm'
-          	disabled={this.state.enabled}
-          	onClick={this.trackPlotClick}
-        	>
-          	Add/ listen to data plot click event
-        	</button>
-        	<button
-          	className='btn btn-outline-secondary btn-sm'
-          	disabled={!this.state.enabled}
-          	onClick={this.resetChart}
-        	>
-          	Remove data plot click event
-        	</button>
-      	</div>
-    	)
-  	}
-}
-
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
+```HTML
+<div id="chart-container">
+    FusionCharts will render here
+</div>
+<div style="padding: 0px; background: rgb(255, 255, 255);" id="message">
+	Click the below buttons to add an event dynamically to the chart
+</div>
+<div style="display: flex; justify-content: center; margin: 0px">
+    <button class="btn btn-outline-secondary btn-sm" id="track">ADD/LISTEN TO DATAPLOTCLICK EVENT</button>
+    <button class="btn btn-outline-secondary btn-sm" id="reset" disabled="true">REMOVE DATAPLOTCLICK EVENT</button>
+</div>
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Included the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
+2. Resolve charts as dependency for `fusioncharts`, `theme` file and `jquery-fusioncharts`. 
+
+3. Stored the chart configuration in a JSON object. In the JSON object:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
     * The json data has been embeded as the value of the `dataSource`.
 
-3. Created a component to include `react-fusioncharts` component.
+4. Handlers are added to track the click events when the event is applied to the data plots and when the **Reset** button is clicked.
 
-4. In the above sample:
-	* A handler is added to track plot clicks.
-	* An event listener is added for data plot click on the chart.
-	* A default message is set when data plot tracking is enabled.
-	* An event listener for `dataPlotClick` event when the message is updated with the values of the data plot.
-	* A handler is added for the **Reset** button. The Reset button resets the chart to default message and removes the event listener.
-
-5. `render()` function is added to create **buttons** inside the `<div>`.
-
-6. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+5. Created an HTML template to render the chart and the buttons using `<button>`.
