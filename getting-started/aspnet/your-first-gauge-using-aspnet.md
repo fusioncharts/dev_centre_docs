@@ -387,7 +387,7 @@ The HTML template is shown below:
 
 That's it! Your first gauge using the FusionCharts ASP.NET wrapper is ready.
 
-## Problem rendering the map?
+## Problem rendering the chart?
 
 In case there is an error, and you are unable to see the map, check for the following:
 

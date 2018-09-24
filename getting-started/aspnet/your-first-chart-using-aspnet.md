@@ -350,7 +350,7 @@ The HTML template is shown below:
 
 That's it! Your first chart using the `FusionCharts asp-net-wrapper` is ready.
 
-## Problem rendering the map?
+## Problem rendering the chart?
 
 In case there is an error, and you are unable to see the map, check for the following:
 
