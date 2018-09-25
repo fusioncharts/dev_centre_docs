@@ -16,7 +16,7 @@ Roll the mouse pointer over any one data plot and see how the text (the data lab
 
 For example, if you roll the mouse pointer over the __Canada__ data plot, the following text is displayed below the chart:
 
-You are currently hovering over Canada whose calue is 180
+**You are currently hovering over Canada whose calue is 180**
 
 The full code of the above sample is given below:
 
