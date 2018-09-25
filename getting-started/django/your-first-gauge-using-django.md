@@ -1,7 +1,7 @@
 ---
-title: Your First Gauge in Django using FusionCharts | FusionCharts
+title: Create a Gauge Using Django | FusionCharts
 description: This article outlines the steps to be executed for creating your first gauge using the Django wrapper.
-heading: Create a Gauge Using Django in FusionCharts
+heading: Create a Gauge Using Django
 ---
 
 ## Overview
@@ -16,9 +16,9 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 > The **FusionCharts Django** wrapper requires Python 2.7 or higher.
 
-* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+* Copy and paste the `fusioncharts.py` file from `integrations > django > fusioncharts-wrapper` in your project folder.
 
-* Copy and paste the `fusioncharts.py` file in your project folder.
+* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
 
 * Include the FusionCharts theme file to apply the style to the charts.
 

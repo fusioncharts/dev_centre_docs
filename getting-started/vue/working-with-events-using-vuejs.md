@@ -8,89 +8,93 @@ Events are signals that let you execute specific actions—such as manipulating 
 
 Events can be used for applications like monitoring the state of a system or a business. For example, you can listen to an event to observe the temperature of a deep freezer and display an alert message if the temperature falls below the minimum value.
 
-Take a look at the pie chart shown below:
+Take a look at the Column 2D chart shown below:
 
 {% embed_chart advanced-charting-events-introduction-example-1.js %}
 
-Roll the mouse pointer over any one pie slice and see how the text (the slice label and the no. of visitors) rendered below the chart changes.
+Roll the mouse pointer over any one data plot and see how the text (the data label and the value) rendered below the chart changes.
 
-For example, if you roll the mouse pointer over the __Senior__ slice, the following text is displayed is below the chart:
-__Age group: Senior__
-__No. of visitors: 491000__
+For example, if you roll the mouse pointer over the __Canada__ data plot, the following text is displayed below the chart:
 
-To attach event listeners to FusionCharts, use `v-on` or `@` operator in the `vue-fusioncharts` component.
+**You are currently hovering over Canada whose calue is 180**
 
-The event name string should be in **'fusioncharts[event name in lowercase]'** format. Example, to attach an event listener to `dataplotRollOver`, the string will be `fusionchartsdataplotrollover`.
+The full code of the above sample is given below:
 
-Let's take an example below that tracks hover events on a data plot.
-
-```JavaScript
+```
+//Including Vue
 import Vue from 'vue';
+
+// Include the vue-fusioncharts component
 import VueFusionCharts from 'vue-fusioncharts';
-import FusionCharts from 'fusioncharts/core';
-import Pie2D from 'fusioncharts/viz/pie2d'
+
+//Include the FusionCharts library
+import FusionCharts from 'fusioncharts';
+
+//Include the chart type
+import Charts from 'fusioncharts/fusioncharts.charts';
 
 //import the theme
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion'
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // register VueFusionCharts component
-Vue.use(VueFusionCharts, FusionCharts, Pie2D, FusionTheme)
-
-// Copy datasource from 'Data' tab
-var dataSource = /*{ "chart": {..}, ..}*/;
+Vue.use(VueFusionCharts, FusionCharts, Charts, FusionTheme)
 
 var app = new Vue({
     el: '#app',
     data: {
-        width: '450',
-        height: '350',
-        type: 'pie2d',
+        width: '700',
+        height: '400',
+        type: 'column2d',
         dataFormat: 'json',
         dataSource: {
+            // Chart Configuration
             "chart": {
-                "caption": "Split of visitors by age group-FY2013-14",
-                "subCaption": "Harry's SuperMart",
-                "enableSmartLabels": "0",
-                "showPercentValues": "1",
-                "showTooltip": "0",
-                "decimals": "1",
-                "theme": "fusion"
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion",
             },
+            // Chart Data
             "data": [{
-                "label": "Teenage",
-                "value": "1250400"
+                "label": "Venezuela",
+                "value": "290"
             }, {
-                "label": "Adult",
-                "value": "1463300"
+                "label": "Saudi",
+                "value": "260"
             }, {
-                "label": "Mid-age",
-                "value": "1050700"
+                "label": "Canada",
+                "value": "180"
             }, {
-                "label": "Senior",
-                "value": "491000"
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
             }]
         },
+        displayValue:'Hover on the plot to see the value along with the label'
     },
     methods: {
         // uses the data info of the event 'dataplotrollover' and represents it
         dataplotRollover: function (e) {
-			this.displayValue = `You’re are currently hovering over ${dataObj.categoryLabel} whose value is ${dataObj.displayValue}`;
-		}
+            this.displayValue = `You are currently hovering over <strong>${e.data.categoryLabel}</strong> whose value is <strong>${e.data.displayValue}</strong>`;
+        }
     }
 });
 ```
 
-Refer to the code below where the code snippet for dataplotRollOver event has been specified.
-
-```
-dataplotRollover: function (e) {
-	this.displayValue = `You’re are currently hovering over ${dataObj.categoryLabel} whose value is ${dataObj.displayValue}`;
-}
-```
-
-In the above code `dataplotRollOver` event is triggered when the mouse pointer is rolled over a data plot.
-
-The HTML template to render the above chart is:
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
 ```
 <div id="app">
@@ -106,4 +110,20 @@ The HTML template to render the above chart is:
 </div>
 ```
 
-Click [here]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollover-247) to get the detailed parameters of the event.
+The above chart has been rendered using the following steps:
+
+1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
+
+2. Registered `vue-fusioncharts` component.
+
+3. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * The json data has been embeded as the value of the `dataSource`.
+
+4. In the above sample `dataplotRollOver` event has been used which is triggered when the mouse pointer is rolled over a data plot.
+
+5. The **display value** is set when the mouse pointer rill roll over the data plots.
+
+6. Create a `fusioncharts` directive in a template.
