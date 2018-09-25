@@ -8,73 +8,167 @@ Events are signals that let you execute specific actions—such as manipulating 
 
 Events can be used for applications like monitoring the state of a system or a business. For example, you can listen to an event to observe the temperature of a deep freezer and display an alert message if the temperature falls below the minimum value.
 
-Take a look at the pie chart shown below:
+Take a look at the Column 2D chart shown below:
 
 {% embed_chart advanced-charting-events-introduction-example-1.js %}
 
-Roll the mouse pointer over any one pie slice and see how the text (the slice label and the no. of visitors) rendered below the chart changes.
+Roll the mouse pointer over any one data plot and see how the text (the data label and the value) rendered below the chart changes.
 
-For example, if you roll the mouse pointer over the __Senior__ slice, the following text is displayed is below the chart:
-__Age group: Senior__
-__No. of visitors: 491000__
+For example, if you roll the mouse pointer over the __Canada__ data plot, the following text is displayed below the chart:
 
-Fusincharts events can be subscribed from component's output parameters.
+**You are currently hovering over Canada whose calue is 180**
 
-To render the above chart, use the template given below:
+### Setup the Main Module
 
-```
-<fusioncharts
-	width="450"
-	height="350"
-	type="pie2d"
-	dataFormat="JSON"
-	[dataSource]="dataSource"
-	(dataplotRollOver)="plotRollOver($event)">
-</fusioncharts>
-```
-
-In the above template, `dataplotRollOver` is the scope function which is to be defined in the controller's code. In the component's code, `$event` is an object like shown below:
-
-`{ eventObj : {...}, dataObj: {...} }`
-
-Click [here]({% site.baseurl %}/api/fusioncharts/fusioncharts-events) for the detailed events in FusionCharts.
-
-The full code to render the above chart using `dataplotRollOver` event is:
+In this step, we will setup the main module to create the **Column 2D** chart. The code is given below:
 
 ```
-import {Component} from '@angular/core';
+// Setup needed in app.module.ts
+import { NgModule, enableProdMode } from '@angular/core'
+import { AppComponent } from './app.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { FusionChartsModule } from 'angular-fusioncharts';
+
+// Load FusionCharts
+import * as FusionCharts from 'fusioncharts';
+// Load Charts module
+import * as Charts from 'fusioncharts/fusioncharts.charts';
+// Load fusion theme
+import * as FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'
+
+// Add dependencies to FusionChartsModule
+FusionChartsModule.fcRoot(FusionCharts, Charts, FusionTheme);
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    FusionChartsModule
+  ],
+  providers: [
+  ],
+  bootstrap: [ AppComponent ]
+})
+export class AppModule {
+}
+```
+
+In the above code:
+
+1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+
+2. Loaded FusionCharts, chart module and fusion theme.
+
+3. Added dependencies to `FusionChartsModule`.
+
+> The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
+
+### Add data to `app.component.ts`
+
+Add the following code to `app.component.ts`:
+
+```
+// In app.component.ts
+import {
+  Component,
+  NgZone
+} from '@angular/core';
 
 @Component({
-    selector: 'my-app',
-    templateUrl: './app.component.html'
+  selector: 'app',
+  templateUrl: 'app.component.html'
 })
 export class AppComponent {
-    dataSource: Object;
-    title: string;
 
-    constructor() {
-        this.title = "Angular  FusionCharts Sample";
+  dataSource = {
+    "chart": {
+      "caption": "Countries With Most Oil Reserves [2017-18]",
+      "subCaption": "In MMbbl = One Million barrels",
+      "xAxisName": "Country",
+      "yAxisName": "Reserves (MMbbl)",
+      "numberSuffix": "K",
+      "theme": "fusion",
+    },
+    "data": [{
+      "label": "Venezuela",
+      "value": "290"
+    }, {
+      "label": "Saudi",
+      "value": "260"
+    }, {
+      "label": "Canada",
+      "value": "180"
+    }, {
+      "label": "Iran",
+      "value": "140"
+    }, {
+      "label": "Russia",
+      "value": "115"
+    }, {
+      "label": "UAE",
+      "value": "100"
+    }, {
+      "label": "US",
+      "value": "30"
+    }, {
+      "label": "China",
+      "value": "30"
+    }]
+  };
 
-        this.dataSource = {
-            ... // same data as above
-        };
-    }
-    plotRollOver($event) {
-        var dataValue = $event.dataObj.dataValue;
-        console.log(`Value is ${dataValue}`);
-    }
+  selectedLabel = "";
+  selectedValue = "";
+
+  update($event) {
+    // Run inside angular context
+    this.zone.run(() => {
+      this.selectedLabel = $event.dataObj.categoryLabel;
+      this.selectedValue = $event.dataObj.displayValue;
+    })
+  }
+  constructor(private zone: NgZone) {}
 }
 ```
 
-Refer to the code below where the code snippet for `plotRollOver` event has been specified.
+In the above code:
+
+1. The JSON data is added within the `AppComponent` class.
+
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * The json data has been embeded as the value of the `dataSource`.
+
+3. In the above sample, `update` function is set inside the angular context to select the label and the value of the data plot at the time of mouse rollover.
+
+### Add data to `app.component.html`
+
+Add the following code to `app.component.html`:
 
 ```
-plotRollOver($event) {
-    var dataValue = $event.dataObj.dataValue;
-    console.log(`Value is ${dataValue}`);
-}
-```
+<!-- in app.component.html--><div class="card shadow">
+    <div class="card-body chart-wrapper">
+        <div class="chart-wrapper-inner">
+            <fusioncharts
+                width="700" 
+                height="400"
+                type="column2d"
+                [dataSource]="dataSource"
+                [events]="events"
+                (dataplotRollOver)="update($event)">    <!-- Added event listener to attach update function from component -->
+            </fusioncharts>
+            <p style="font-size:20px;font-weight: 300;">You're are currently hovering over <u>{{selectedLabel || "______"}}</u> whose value is <u>{{selectedValue || "_______"}} </u></p>
+        </div>
+    </div>
+</div>
 
-In the above code `plotRollOver` event is triggered when the mouse pointer is rolled over a data plot. 
+In the above code:
 
-Click [here]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollover-247) to get the detailed parameters of the event.
+1. `fusioncharts` directive is created inside the template.
+
+2. An event listener is added to attach the updated fusction from the component.
+
+3. The content is added which will be displayed when the mouse pointer is rolled over the data plot.

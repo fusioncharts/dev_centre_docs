@@ -168,8 +168,6 @@ In the above code:
     * Event Listerer for `drawComplete` event has been used.
     * Event Listerer for `renderComplete` event has been used.
 
-4. `customDiv.innerHTML` is added to display the message inside the `<div>`.
-
 ### Add data to `app.component.html`
 
 Add the following code to `app.component.html`:
