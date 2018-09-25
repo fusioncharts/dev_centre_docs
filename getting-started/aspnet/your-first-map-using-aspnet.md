@@ -585,43 +585,7 @@ Let's create a map of California to show the "Web visits for a particular month"
 
 {% embed_chart getting-started-your-first-map-california.js %}
 
-To render the map, follow the steps below:
-
-1. Include the **FusionCharts asp-net-wrapper** (for C#) OR **FusionCharts vb-net-wrapper** (for VB) in your project.
-
-2. Include the `fusioncharts` core library.
-
-3. Include the map renderer file.
-
-4. Include the `california` map definition file.
-
-5. Include the FusionCharts theme file to apply the style to the charts.
-
-6. Store the map configurations in an associative array.
-
-7. Store the color range in a multidimensional array.
-
-8. Create a data object within the map configurations to assign the associative data array to it.
-
-9. Convert the final map configuration to JSON string.
-
-10. Create the map instance and set the following:
-
-    * Set the map type as `california`. Each map is represented with a unique alias. For California map, the alias is `california`. Find the complete list of map types with their respective aliases[here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
-
-    * Set the map `id`.
-
-    * Set the `width` and `height` (in pixels).
-
-    * Set the container for the map.
-
-    * Set the `dataFormat` as **JSON**.
-
-    * Embed the `json` data as the value of the `dataSource`.
-
-11. Finally, use a container using `<div>` to render the map.
-
-The full code for the above sample is given below:
+To render the above map, the following code is used:
 
 <div class="code-wrapper">
 <ul class='code-tabs extra-tabs'>

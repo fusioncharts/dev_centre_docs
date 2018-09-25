@@ -303,7 +303,7 @@ class FirstMap
         # Map JSON data after combining all parts
         mapJSONStr = mapJSONTemplate % [mapAppearancesConfigObj.to_json, colorDataObj.to_json, mapDataJSONStr]
 
-        # Rendeing the Map
+        # Rendering the Map
         map = Fusioncharts::Chart.new({
             width: "850",
             height: "550",
@@ -321,11 +321,11 @@ The HTML template of the above sample is shown below:
 ```HTML
 <!-- Filename: app/views/examples/firstchart.html.erb -->
 <h3>My Map</h3>
-<div id="chart-container"></div>
+<div id="mapContainer"></div>
 <%=@myChart.render() %>
 ```
 
-That's it! Your first map using **FusionCharts Rails** wrapper is ready. When you run this HTML page now, you should see a chart representing your data.
+That's it! Your first map using **FusionCharts Rails** wrapper is ready. 
 
 ## Problem rendering the map?
 
