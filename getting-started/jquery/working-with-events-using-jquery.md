@@ -8,91 +8,121 @@ Events are signals that let you execute specific actions—such as manipulating 
 
 Events can be used for applications like monitoring the state of a system or a business. For example, you can listen to an event to observe the temperature of a deep freezer and display an alert message if the temperature falls below the minimum value.
 
-Take a look at the pie chart shown below:
+Take a look at the Column 2D chart shown below:
 
 {% embed_chart advanced-charting-events-introduction-example-1.js %}
 
-Roll the mouse pointer over any one pie slice and see how the text (the slice label and the no. of visitors) rendered below the chart changes.
+Roll the mouse pointer over any one data plot and see how the text (the data label and the value) rendered below the chart changes.
 
-For example, if you roll the mouse pointer over the __Senior__ slice, the following text is displayed is below the chart:
-__Age group: Senior__
-__No. of visitors: 491000__
+For example, if you roll the mouse pointer over the __Canada__ data plot, the following text is displayed below the chart:
 
-To attach event to the FusionCharts element, use bind or jQuery selectors.
+**You are currently hovering over Canada whose calue is 180**
 
-The event name string should be in **'fusioncharts[event name in lowercase]'** format. Example, to attach an event listener to `dataplotRollOver`, the string will be `fusionchartsdataplotrollover`.
+The code to render a chart using `require` is given below:
 
 ```
-$("#chart-container").on('fusioncharts[event name in lowercase]', function(eventObj, dataObj) {
-    [code goes here]
+// Include fusioncharts
+var FusionCharts = require('fusioncharts');
+
+// Include chart modules
+var Charts = require('fusioncharts/fusioncharts.charts');
+
+// Include the theme file
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+var $ = require('jquery');
+var jQueryFusionCharts = require('jquery-fusioncharts');
+
+// Resolve Charts as dependency for FusionCharts
+Charts(FusionCharts); 
+
+// Resolve Fusion theme as dependency for FusionCharts
+FusionTheme(FusionCharts); 
+
+// Resolve FusionCharts as dependency for jqueryFusionCharts
+jQueryFusionCharts(FusionCharts);
+
+$('document').ready(function () {
+    $('#chart-container').insertFusionCharts({
+        type: 'column2d',
+        width: '700',
+        height: '400',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion"
+            },
+            "data": [{
+                  "label": "Venezuela",
+                  "value": "290"
+              }, {
+                  "label": "Saudi",
+                  "value": "260"
+              }, {
+                  "label": "Canada",
+                  "value": "180"
+              }, {
+                  "label": "Iran",
+                  "value": "140"
+              }, {
+                  "label": "Russia",
+                  "value": "115"
+              }, {
+                  "label": "UAE",
+                  "value": "100"
+              }, {
+                  "label": "US",
+                  "value": "30"
+              }, {
+                  "label": "China",
+                  "value": "30"
+              }]
+        }
+    });
+    
+    // Adding dataplotrollover event to chart
+    $('#chart-container').bind('fusionchartsdataplotrollover', function (event, args) {
+        $('#message').html('You are currently hovering over <b>' + args.categoryLabel +
+            '</b> whose value is <b>' + args.displayValue + '</b>');
+    });
+
+    // Adding dataplotrollout event to chart
+    $('#chart-container').bind('fusionchartsdataplotrollout', function (event, args) {
+        $('#message').html('Hover on the plot to see the value along with the label');
+    });
 });
 ```
 
-Let's take an example below that tracks hover events on a data plot.
+The HTML template of the above sample is shown below:
 
 ```HTML
-<!DOCTYPE html>
-<html>
-<head>
-    <title>jQuery FusionCharts Plugin Sample</title>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/fusioncharts/fusioncharts.js"></script>
-    <script type="text/javascript" src="https://unpkg.com/fusioncharts/themes/fusioncharts.theme.fusion.js"></script>
-    <script type="text/javascript" src="https://rawgit.com/fusioncharts/fusioncharts-jquery-plugin/develop/dist/fusioncharts.jqueryplugin.min.js"></script>
-</head>
-
-<body>
-    <div id="chart-container">FusionCharts will render here...</div>
-    <p style="padding: 10px;background: #f5f2f0;text-align: center;">Hover on the plot to see the value along with the label</p>
-    <script type="text/javascript">
-        $('document').ready(function() {
-            $("#chart-container").insertFusionCharts({
-                type: "pie2d",
-                width: "450",
-                height: "350",
-                dataFormat: "json",
-                dataSource: {
-                    "chart": {
-                        "caption": "Split of visitors by age group-FY2013-14",
-                        "subCaption": "Harry's SuperMart",
-                        "enableSmartLabels": "0",
-                        "showPercentValues": "1",
-                        "showTooltip": "0",
-                        "decimals": "1",
-                        "theme": "fusion"
-                    },
-                    "data": [{
-                        "label": "Teenage",
-                        "value": "1250400"
-                    }, {
-                        "label": "Adult",
-                        "value": "1463300"
-                    }, {
-                        "label": "Mid-age",
-                        "value": "1050700"
-                    }, {
-                        "label": "Senior",
-                        "value": "491000"
-                    }]
-                }
-            });
-            $("#chart-container").on('fusionchartsdataplotrollover', function(eventObj, dataObj) {
-                $('body p').text('You’re are currently hovering over ' + dataObj.categoryLabel + ' whose value is ' + dataObj.displayValue);
-            });
-        });
-    </script>
-</body>
-</html>
+<div id="chart-container">
+    FusionCharts will render here
+</div>
+<p style="padding: 10px; background: rgb(245, 242, 240);" id='message'>
+    Hover on the plot to see the value along with the label
+</p>
 ```
 
-Refer to the code below where the code snippet for `dataplotRollOver` event has been specified.
+The above chart has been rendered using the following steps:
 
-```
-$("#chart-container").on('fusionchartsdataplotrollover', function(eventObj, dataObj) {
-    $('body p').text('You’re are currently hovering over ' + dataObj.categoryLabel + ' whose value is ' + dataObj.displayValue);
-});
-```
+1. Included the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
 
-In the above code `fusionchartsdataplotrollover` event is triggered when the mouse pointer is rolled over a data plot. 
+2. Resolve charts as dependency for FusionCharts, Fusion Theme and jquery-fusioncharts.
 
-Click [here]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollover-247) to get the detailed parameters of the event.
+3. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * The json data has been embeded as the value of the `dataSource`.
+
+4. In the above sample:
+    * `dataplotRollOver` event has been used which is triggered when the mouse pointer is rolled over a data plot.
+    * `dataplotRollOut` event has been used which is triggered when the mouse pointer is rolled out of the data plot.
+
+5. Created an HTML template to render the chart.
