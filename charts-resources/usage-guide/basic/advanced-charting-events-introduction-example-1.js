@@ -52,7 +52,7 @@
         },
 
         "dataplotRollOver": function(evt, data) {
-            var txt = "You are currently hovering over " + data.categoryLabel + "whose value is " + data.value;
+            var txt = "You are currently hovering over " + data.categoryLabel + " whose value is " + data.value;
                document.getElementById("indicatorDiv").innerHTML = txt;
 
         },
