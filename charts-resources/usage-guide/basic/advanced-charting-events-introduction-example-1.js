@@ -1,50 +1,60 @@
 {
-    type: 'pie2d',
+    type: 'column2d',
     renderAt: 'chart-container',
-    width: '450',
-    height: '350',
+    width: '700',
+    height: '400',
     dataFormat: 'json',
     dataSource: {
         "chart": {
-            "caption": "Split of visitors by age group-FY2013-14",
-            "subCaption": "Harry's SuperMart",
-            "enableSmartLabels": "1",
-            "showPercentValues": "1",
-            "showTooltip": "0",
-            "decimals": "1",
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
             "theme": "fusion"
         },
         "data": [{
-            "label": "Teenage",
-            "value": "1250400"
+            "label": "Venezuela",
+            "value": "290"
         }, {
-            "label": "Adult",
-            "value": "1463300"
+            "label": "Saudi",
+            "value": "260"
         }, {
-            "label": "Mid-age",
-            "value": "1050700"
+            "label": "Canada",
+            "value": "180"
         }, {
-            "label": "Senior",
-            "value": "491000"
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
         }]
     },
     events: {
         "beforeRender": function(evt, args) {
             var controllers = document.createElement('div');
-            controllers.innerHTML = "Hover on any of the pie slices to view its details.";
+            controllers.innerHTML = "Hover on the plot to see the value along with the label";
             controllers.setAttribute('id', 'indicatorDiv');
             controllers.style.cssText = "color: #696969; width: 480px; font-family:'Arial, Helvetica'; font-size:15px; padding:10px; border: 1px solid #e4e4f5";     
             args.container.appendChild(controllers);
         },
 
-
         "dataplotRollOver": function(evt, data) {
-            var txt = "Age group: " + data.categoryLabel + ", No. of visitors: " + data.value;
+            var txt = "You are currently hovering over " + data.categoryLabel + "whose value is " + data.value;
                document.getElementById("indicatorDiv").innerHTML = txt;
 
         },
         "dataplotRollOut": function(evt, data) {
-            document.getElementById("indicatorDiv").innerHTML = "Hover on any of the pie slices to view its details.";
+            document.getElementById("indicatorDiv").innerHTML = "Hover on the plot to see the value along with the label";
         }
     }
 }
