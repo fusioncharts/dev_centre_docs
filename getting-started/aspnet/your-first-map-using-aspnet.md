@@ -178,7 +178,7 @@ To render the map, follow the steps below:
 
 1. Create the template (.aspx)
 
-2 Include the **FusionCharts asp-net-wrapper** (for C#) OR **FusionCharts vb-net-wrapper** (for VB) in your project.
+2. Include the **FusionCharts asp-net-wrapper** (for C#) OR **FusionCharts vb-net-wrapper** (for VB) in your project.
 
 3. Include the `fusioncharts` core library.
 
