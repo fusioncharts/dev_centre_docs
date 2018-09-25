@@ -8,142 +8,155 @@ Events are signals that let you execute specific actions—such as manipulating 
 
 Events can be used for applications like monitoring the state of a system or a business. For example, you can listen to an event to observe the temperature of a deep freezer and display an alert message if the temperature falls below the minimum value.
 
-Take a look at the pie chart shown below:
+Take a look at the Column 2D chart shown below:
 
 {% embed_chart advanced-charting-events-introduction-example-1.js %}
 
-Roll the mouse pointer over any one pie slice and see how the text (the slice label and the no. of visitors) rendered below the chart changes.
+Roll the mouse pointer over any one data plot and see how the text (the data label and the value) rendered below the chart changes.
 
-For example, if you roll the mouse pointer over the __Senior__ slice, the following text is displayed is below the chart:
-__Age group: Senior__
-__No. of visitors: 491000__
+For example, if you roll the mouse pointer over the __Canada__ data plot, the following text is displayed below the chart:
 
-To attach event callbacks to a FusionCharts component, follow the pattern shown below:
+You are currently hovering over Canada whose calue is 180
 
-**Step 1:** Write a callback
+The full code of the above sample is given below:
 
-* As a separate function:
-
-```JavaScript
-var chartEventCallback  = function (eventObj, dataObj) {
-	[Code goes here]
-}
 ```
+//Including react
+import React, { Component } from 'react';
 
-OR
-
-* As a component class method:
-
-```JavaScript
-chartEventCallback (eventObj, dataObj) {
-	[Code goes here]
-}
-```
-
-**Step 2:** Attach the callback to an event through the React-FC component:
-
-```JavaScript
-<ReactFC {...chartConfigs} fcEvent-EVENTNAME={this.chartEventCallback} />
-```
-
-`EVENTNAME` is to be replaced by the event you want to track.
-
-Let's take an example below that tracks hover events on a data plot.
-
-```JavaScript
-import React, {Component} from 'react';
+//Including the react-fusioncharts component
 import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts/core';
-import Pie2D from 'fusioncharts/viz/pie2d';
+
+//Including the fusioncharts library
+import FusionCharts from 'fusioncharts';
+
+//Including the chart type
+import Chart from 'fusioncharts/fusioncharts.charts';
+
+//Including react-fusioncharts component
 import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/es/fusioncharts.theme.fusion';
 
-ReactFC.fcRoot(FusionCharts, Pie2D, FusionTheme);
+//Including the theme as fusion
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-const myDataSource = {
-    "chart": {
-        "caption": "Split of visitors by age group-FY2013-14",
-        "subCaption": "Harry's SuperMart",
-        "enableSmartLabels": "0",
-        "showPercentValues": "1",
-        "showTooltip": "0",
-        "decimals": "1",
-        "theme": "fusion"
-    },
-    "data": [{
-        "label": "Teenage",
-        "value": "1250400"
-    }, {
-        "label": "Adult",
-        "value": "1463300"
-    }, {
-        "label": "Mid-age",
-        "value": "1050700"
-    }, {
-        "label": "Senior",
-        "value": "491000"
-    }]
-};
+//Adding the chart as dependency to the core fusioncharts
+ReactFC.fcRoot(FusionCharts, Chart, FusionTheme);
+
+//Creating the JSON object to store the chart configurations
 
 const chartConfigs = {
-    type: 'pie2d',
-    width: 450,
-    height: 350,
-    dataFormat: 'json',
-    dataSource: myDataSource,
+    type: "column2d",
+    width: 700,
+    height: 400,
+    dataFormat: "json",
+    dataSource: {
+      // Chart configuration
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion"
+        },
+        // Chart data
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    }
 };
 
 class Chart extends Component {
-    constructor(props) {
-        super(props);
+  constructor(props) {
+    super(props);
 
-        this.state = {
-            actualValue: 'Hover on the plot to see the value along with the label',
-        };
+    this.state = {
+      actualValue: "Hover on the plot to see the value along with the label",
+      message: "Hover on the plot to see the value along with the label"
+    };
 
-        this.showPlotValue = this.showPlotValue.bind(this);
-    }
+    this.dataplotrollover = this.dataplotrollover.bind(this);
+    this.dataplotrollout = this.dataplotrollout.bind(this);
+  }
 
-    // Event callback handler for 'dataplotRollOver'.
-    // Shows the value of the hovered plot on the page.
-    showPlotValue(eventObj, dataObj) {
-        this.setState({
-            actualValue: `You’re are currently hovering over ${dataObj.categoryLabel} whose value is ${dataObj.displayValue}`,
-        });
-    }
+  // Event callback handler for 'dataplotRollOver'.
+  // Shows the value of the hovered plot on the page.
+  dataplotrollover(eventObj, dataObj) {
+    this.setState({
+      message: [
+        "You are currently hovering over ",
+        <strong>{dataObj.categoryLabel}</strong>,
+        " whose value is ",
+        <strong>{dataObj.displayValue}</strong>
+      ]
+    });
+  }
 
-    render() {
-        return ( 
-            <div>
-                <ReactFC { ...chartConfigs} fcEvent - dataplotRollOver = {this.showPlotValue} />
-                <p style = {{ padding: '10px', background: '#f5f2f0' }} > {this.state.actualValue} </p>
-            </div>
-        );
-    }
-}
+  // Event callback handler for 'dataplotRollOut'.
+  // Resets to the original message.
+  dataplotrollout(eventObj, dataObj) {
+    this.setState({
+      message: this.state.actualValue
+    });
+  }
 
-ReactDOM.render( <
-    Chart / > ,
-    document.getElementById('root'),
-);
-```
-
-Refer to the code below where the code snippet for `dataplotRollOver` event has been specified.
-
-```
-render() {
-    return ( 
-        <div>
-            <ReactFC { ...chartConfigs} fcEvent - dataplotRollOver = {this.showPlotValue} />
-            <p style = {{ padding: '10px', background: '#f5f2f0' }} > {this.state.actualValue} </p>
-        </div>
+  render() {
+    return (
+      <div>
+        <ReactFC
+          {...chartConfigs}
+          fcEvent-dataplotRollOver={this.dataplotrollover}
+          fcEvent-dataplotRollOut={this.dataplotrollout}
+        />
+        <p style={{ padding: "10px", background: "#f5f2f0" }}>
+          {this.state.message}
+        </p>
+      </div>
     );
+  }
 }
+
+ReactDOM.render(<Chart />, document.getElementById("root"));
 ```
 
-In the above code:
+The above chart is rendered using the following steps:
 
-* `dataplotRollOver` event is triggered when the mouse pointer is rolled over a data plot. 
-* `showPlotValue` is the callback handler for the `dataplotRollOver` event which shows the value of the hovered plot on the page.
+1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
 
-Click [here]({% site.baseurl %}/api/fusioncharts/fusioncharts-events#dataplotrollover-247) to get the detailed parameters of the event.
+2. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The width and height of the chart has been set in pixels. 
+    * The `dataFormat` is set as JSON.
+    * The json data has been embeded as the value of the `dataSource`.
+
+3. Created a component to include `react-fusioncharts` component.
+
+4. In the above sample:
+    * Callback handler for `dataplotRollOver` event has been used which is triggered when the mouse pointer is rolled over a data plot.
+    * Callback handler for `dataplotRollOut` event has been used which is triggered when the mouse pointer is rolled out of the data plot.
+
+5. `render()` function is added to create the `button` inside the `<div>`.
+
+6. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
