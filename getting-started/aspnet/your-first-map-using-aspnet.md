@@ -1,7 +1,7 @@
 ---
-title: Your First Map in ASP using FusionCharts | FusionCharts
+title: Create a Map Using ASP.NET | FusionCharts
 description: This article outlines the steps to be executed for creating your first map using the FusionCharts ASP wrapper.
-heading: Create a Map in ASP Using FusionCharts
+heading: Create a Map Using ASP.NET
 ---
 
 ## Overview

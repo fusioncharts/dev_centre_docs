@@ -1,7 +1,7 @@
 ---
-title: Your First Map in Ruby using FusionCharts | FusionCharts
+title: Create a Map Using Ruby | FusionCharts
 description: This article outlines the steps to be executed for creating your first map using the ruby-on-rails.
-heading: Your First Map in Ruby using FusionCharts
+heading: Create a Map Using Ruby
 ---
 
 ## Overview
@@ -14,9 +14,9 @@ In this article, we will show you how to install and render a chart using the **
 
 In this article, we will show you how to download and install the **FusionCharts Rails gem** wrapper and all the other dependencies on your system.
 
-* Include the **FusionCharts** JavaScript files, which can be downloaded from here.
+* Copy the 'fusionCharts-rails.rb` from `integrations > rubyonrails > fusioncharts-wrapper` in your project folder.
 
-* Include the map renderer file.
+* Include the **FusionCharts** JavaScript files, which can be downloaded from here.
 
 * Include the FusionCharts theme file to apply the style to the charts.
 
