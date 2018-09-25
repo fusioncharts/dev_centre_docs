@@ -1,7 +1,7 @@
 ---
-title: Your First Gauge in Java using FusionCharts | FusionCharts
+title: Create a Gauge Using Java | FusionCharts
 description: This article outlines the steps to be executed for creating your first gauge using the FusionCharts JSP wrapper.
-heading: Create a Gauge in Java Using FusionCharts
+heading: Create a Gauge Using Java
 ---
 
 ## Overview
@@ -16,9 +16,9 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 > The **FusionCharts JSP wrapper** requires **JAVA 6** or higher.
 
-* Include the FusionCharts JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+* Copy and paste the `fusioncharts.java` file from `integrations > java > fusioncharts-wrapper` in your project folder.
 
-* Copy and paste the `fusioncharts.java` file in your project folder.
+* Include the FusionCharts JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
 
 * Include the FusionCharts theme file to apply the style to the widgets.
 

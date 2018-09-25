@@ -1,7 +1,7 @@
 ---
-title: Your First Map in Django using FusionCharts | FusionCharts
+title: Create a Map Using Django | FusionCharts
 description: This article outlines the steps to be executed for creating your first map using the django wrapper.
-heading: Create a Map Using Django in FusionCharts
+heading: Create a Map Using Django
 ---
 
 ## Overview
@@ -18,9 +18,9 @@ In this section, we will show you how to install FusionCharts Suite XT and the `
 
 To install the FusionCharts Suite, follow the steps below:
 
-* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
+* Copy and paste the `fusioncharts.py` file from `integrations > django > fusioncharts-wrapper` in your project folder.
 
-* Copy and paste the `fusioncharts.py` file in your project folder.
+* Include the **FusionCharts** JavaScript files, which can be downloaded from [here](https://www.fusioncharts.com/download/fusioncharts-suite).
 
 * Include the map renderer file.
 

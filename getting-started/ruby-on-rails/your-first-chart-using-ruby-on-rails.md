@@ -1,7 +1,7 @@
 ---
-title: Your First Chart in Ruby using FusionCharts | FusionCharts
+title: Create a Chart Using Ruby on Rails | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the ruby-on-rails.
-heading: Your First Chart in Ruby using FusionCharts
+heading: Create a Chart Using Ruby on Rails
 ---
 
 ## Overview
@@ -13,6 +13,8 @@ In this article, we will show you how to install and render a chart using the **
 ## Installation
 
 In this article, we will show you how to download and install the **FusionCharts Rails gem** wrapper and all the other dependencies on your system.
+
+* Copy the 'fusionCharts-rails.rb` from `integrations > rubyonrails > fusioncharts-wrapper` in your project folder.
 
 * Include the **FusionCharts** JavaScript files, which can be downloaded from here.
 

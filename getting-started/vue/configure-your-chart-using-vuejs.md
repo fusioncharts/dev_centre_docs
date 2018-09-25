@@ -27,10 +27,13 @@ import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
 
 //Include the FusionCharts library
-import FusionCharts from 'fusioncharts/core';
+import FusionCharts from 'fusioncharts';
 
 //Include the chart type
-import Column2D from 'fusioncharts/viz/column2d'
+import Charts from 'fusioncharts/fusioncharts.charts';
+
+//import the theme
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Register VueFusionCharts component
 Vue.use(VueFusionCharts);
@@ -204,10 +207,13 @@ import Vue from 'vue';
 import VueFusionCharts from 'vue-fusioncharts';
 
 //Include the FusionCharts library
-import FusionCharts from 'fusioncharts/core';
+import FusionCharts from 'fusioncharts';
 
 //Include the chart type
-import Column2D from 'fusioncharts/viz/column2d'
+import Charts from 'fusioncharts/fusioncharts.charts';
+
+//import the theme
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
 // Register VueFusionCharts component
 Vue.use(VueFusionCharts);
