@@ -130,7 +130,6 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
     datasource="{{dataSource}}"
 ></div>
 <p><a class="btn btn-default" ng-click="updateMyChartData()">Click me to change data</a></p>
-
 ```
 
 The above chart has been rendered using the following steps:
