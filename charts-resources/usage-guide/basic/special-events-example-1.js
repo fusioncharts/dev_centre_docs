@@ -80,7 +80,6 @@
             var customDiv = document.createElement('p');
             customDiv.innerText = message;
             customDiv.style.padding = "10px";
-            customDiv.style.width = "700px";
             customDiv.style.background = "rgb(245, 242, 240)";
             customDiv.style.textAlign = "center";
             customDiv.style.fontFamily = ""
