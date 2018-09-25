@@ -44,7 +44,10 @@
             var controllers = document.createElement('div');
             controllers.innerHTML = "Hover on the plot to see the value along with the label";
             controllers.setAttribute('id', 'indicatorDiv');
-            controllers.style.cssText = "color: #696969; width: 480px; font-family:'Arial, Helvetica'; font-size:15px; padding:10px; border: 1px solid #e4e4f5";     
+            controllers.style.padding = "10px";
+            controllers.style.background = "rgb(245, 242, 240)";
+            controllers.style.textAlign = "center";
+            controllers.style.fontFamily = ""
             args.container.appendChild(controllers);
         },
 
