@@ -1,7 +1,7 @@
 ---
-title: Apply Different Themes using React | FusionCharts
+title: Apply Different Themes using Vue | FusionCharts
 description: This article will showcase how to apply different themes to the chart at runtime.
-heading: Apply Different Themes using React
+heading: Apply Different Themes using Vue
 ---
 
 In FusionCharts Suite XT you can manually set the cosmetics and functional attributes for each chart in the corresponding JSON/XML file. This can work if you deal with only a small number of charts. As the number of charts increases so does your hassles. FusionCharts Suite ships with predefined themes which you can use to set the visual appearance or the behavior of your chart.
@@ -24,39 +24,143 @@ A chart configured to change the theme, is shown below:
 The code to render a chart is given below:
 
 ```
+//Including Vue
+import Vue from 'vue';
 
+// Include the vue-fusioncharts component
+import VueFusionCharts from 'vue-fusioncharts';
+
+//Include the FusionCharts library
+import FusionCharts from 'fusioncharts';
+
+//Include the chart type
+import Charts from 'fusioncharts/fusioncharts.charts';
+
+//import the themes
+import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion'
+import GammelTheme from 'fusioncharts/themes/fusioncharts.theme.gammel'
+import CandyTheme from 'fusioncharts/themes/fusioncharts.theme.candy'
+import ZuneTheme from 'fusioncharts/themes/fusioncharts.theme.zune'
+import OceanTheme from 'fusioncharts/themes/fusioncharts.theme.ocean'
+import CarbonTheme from 'fusioncharts/themes/fusioncharts.theme.carbon'
+
+// register VueFusionCharts component
+Vue.use(VueFusionCharts, FusionCharts, Charts, FusionTheme, GammelTheme, CandyTheme, ZuneTheme, OceanTheme, CarbonTheme)
+
+var app = new Vue({
+    el: '#app',
+    data: {
+        width: '700',
+        height: '400',
+        type: 'column2d',
+        dataFormat: 'json',
+        dataSource: {
+            // Chart configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion"
+            },
+            // Chart data
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
+        }
+    },
+    methods:{
+        // sets the theme attribute through FusionCharts API 'setChartAttribute'
+        onChangeTheme: function (e) {
+            const chart = this.$refs.fc.chartObj,
+                theme = e.target.value.toLowerCase();
+            chart.setChartAttribute('theme', theme);
+        }
+    }
+});
 ```
 
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
-
-
-
-
-
-
-
-
-
-
+```HTML
+<div id="app">
+    <fusioncharts
+    :type="type"
+    :width="width"
+    :height="height"
+    :dataFormat="dataFormat"
+    :dataSource="dataSource"
+    ref="fc"
+    ></fusioncharts>
+    <div style="display: flex; position: absolute; bottom: 2px;">
+        <div id="select-text">Choose a theme:</div>
+        <div class="change-type">
+          <input name='theme' type="radio" @change="onChangeTheme" value="Fusion" checked/>
+          <label>Fusion</label>
+        </div>
+        <div>
+          <input name='theme' type="radio" @change="onChangeTheme" value="Gammel" />
+          <label>Gammel</label>
+        </div>
+        <div>
+          <input name='theme' type="radio" @change="onChangeTheme" value="Candy" />
+          <label>Candy</label>
+        </div>
+        <div>
+          <input name='theme' type="radio" @change="onChangeTheme" value="Zune" />
+          <label>Zune</label>
+        </div>
+        <div>
+          <input name='theme' type="radio" @change="onChangeTheme" value="Ocean" />
+          <label>Ocean</label>
+        </div>
+        <div>
+          <input name='theme' type="radio" @change="onChangeTheme" value="Carbon" />
+          <label>Carbon</label>
+        </div>
+    </div>
+</div>
+```
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
 2. As the above samples shows all the themes using the radio buttons, included the theme files for all the six themes.
 
-3. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+3. Registered `vue-fusioncharts` component.
+
+4. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
     * The json data has been embeded as the value of the `dataSource`.
 
-3. Created a component to include `react-fusioncharts` component.
+5. In the above sample, a FusionCharts API `setChartAttribute` is called to apply themes to the chart at runtime.
 
-4. In the above sample:
-	* `renderComplete` event is used to render the charts at runtime.
-	* `radioHander` is used for radio buttons to apply selected theme to the chart.
+6. Created a `fusioncharts` directive in a template. 
 
-5. `render()` function is added to create the **radio buttons** inside the `<div>`.
-
-6. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+7. Created Radio buttons for Fusion, Gammel, Candy, Zune, Ocean and Carbon in a template.
