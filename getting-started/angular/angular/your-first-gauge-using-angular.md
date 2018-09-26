@@ -1,7 +1,7 @@
 ---
-title: Your First Gauge in Angular using FusionCharts | FusionCharts
+title: Create a Gauge in Angular Using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first gauge using the angular-fusioncharts component.
-heading: Create a Gauge in Angular using FusionCharts
+heading: Create a Gauge in Angular Using FusionCharts
 chartPresent: false
 ---
 

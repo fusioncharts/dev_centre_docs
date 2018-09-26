@@ -1,7 +1,7 @@
 ---
-title: Your First Chart in Ember using FusionCharts | FusionCharts
+title: Create a Chart in Ember | FusionCharts
 description: This article outlines the steps to create your first chart, widget and map using the fusionCharts Ember component.
-heading: Your First Chart in Ember using FusionCharts
+heading: Create a Chart in Ember Using FusionCharts
 ---
 
 ## Overview

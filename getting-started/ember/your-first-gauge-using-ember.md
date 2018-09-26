@@ -1,7 +1,7 @@
 ---
-title: Your First Gauge in Ember using FusionCharts | FusionCharts
+title: Create a Gauge in Ember | FusionCharts
 description: This article outlines the steps to create your first gauge using the fusionCharts Ember component.
-heading: Your First Gauge in Ember using FusionCharts
+heading: Create a Gauge in Ember Using Ember
 ---
 
 The **ember-fusioncharts** component, provide bindings for FusionCharts JavaScript charting library. It lets you add interactive JavaScript charts and graphs to your web and mobile applications using EmberJS component.
