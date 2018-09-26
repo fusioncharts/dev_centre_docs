@@ -147,7 +147,7 @@ The above chart has been rendered using the following steps:
 2. Resolve charts as dependency for `fusioncharts`, `theme` file and `jquery-fusioncharts`. 
 
 3. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * The chart type has been set to `dragcolumn2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
     * The json data has been embeded as the value of the `dataSource`.
