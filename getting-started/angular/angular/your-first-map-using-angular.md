@@ -1,5 +1,5 @@
 ---
-title: Your First Map in Angular using FusionCharts | FusionCharts
+title: Create a Map in Angular using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first map using the angular-fusioncharts component.
 heading: Create a Map in Angular using FusionCharts
 ---

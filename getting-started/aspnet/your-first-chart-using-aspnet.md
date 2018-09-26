@@ -12,7 +12,7 @@ In this page, we'll see how to install FusionCharts and render a chart using the
 
 ## Installation
 
-In this section, we will show you how to install FusionCharts Suite XT and the `FusionCharts PHP` wrapper and all the other dependencies on your system.
+In this section, we will show you how to install FusionCharts Suite XT and the `FusionCharts ASP.NET` wrapper and all the other dependencies on your system.
 
 > The **FusionCharts ASP.NET server-side wrapper** requires **.NET Framework 3.5** or higher.
 

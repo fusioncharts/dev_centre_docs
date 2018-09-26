@@ -1,7 +1,7 @@
 ---
-title: Your First Map in Ember using FusionCharts | FusionCharts
+title: Create a Map in Ember | FusionCharts
 description: This article outlines the steps to create your first map using the fusionCharts Ember component.
-heading: Your First Map in Ember using FusionCharts
+heading: Create a Map in Ember Using FusionCharts
 ---
 
 The **ember-fusioncharts** component, provide bindings for FusionCharts JavaScript charting library. It lets you add interactive JavaScript charts and graphs to your web and mobile applications using EmberJS component.

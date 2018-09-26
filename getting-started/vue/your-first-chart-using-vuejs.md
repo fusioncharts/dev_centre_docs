@@ -1,7 +1,7 @@
 ---
-title: Your First Chart in Vue using FusionCharts | FusionCharts
+title: Create a Chart in Vue | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the vue-fusioncharts component.
-heading: Create a Chart in Vue using FusionCharts
+heading: Create a Chart in Vue Using FusionCharts
 ---
 
 ## Overview
