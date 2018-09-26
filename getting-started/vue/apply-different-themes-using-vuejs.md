@@ -15,142 +15,29 @@ FusionCharts Suite XT ships with the following predefined themes:
 * `ocean`
 * `carbon`
 
-This article focuses on how you can apply different themes to the chart at runtime using React `props` object. Click any radio button, to see how the look and feel of the chart change with each theme.
+This article focuses on how you can apply different themes to the chart at runtime using `vue-fusioncharts` component. Click any radio button, to see how the look and feel of the chart change with each theme.
 
 A chart configured to change the theme, is shown below:
 
 {% embed_chartData apply-different-theme-example-1.js json %}
 
-The full code of the above sample is given below:
+The code to render a chart is given below:
 
 ```
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts/core';
-import Charts from 'fusioncharts/fusioncharts.charts';
-import ReactFC from 'react-fusioncharts';
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
-import GammelTheme from 'fusioncharts/themes/fusioncharts.theme.gammel';
-import CandyTheme from 'fusioncharts/themes/fusioncharts.theme.candy';
-import ZuneTheme from 'fusioncharts/themes/fusioncharts.theme.zune';
-import OceanTheme from 'fusioncharts/themes/fusioncharts.theme.ocean';
-import CarbonTheme from 'fusioncharts/themes/fusioncharts.theme.carbon';
 
-ReactFC.fcRoot(FusionCharts, Charts, FusionTheme, GammelTheme, CandyTheme, ZuneTheme, OceanTheme, CarbonTheme);
-
-const chartConfigs = {
-    type: 'column2d',
-    width: '700',
-    height: '400',
-    dataFormat: 'json',
-    dataSource: {
-        // Chart configuration
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion"
-        },
-        // Chart data
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    }
-};
-
-class Chart extends Component {
-    constructor(props) {
-        super(props);
-
-        this.state = {
-            chart: {},
-            currentVal: 'fusion'
-        };
-
-        this.renderComplete = this.renderComplete.bind(this);
-        this.radioHandler = this.radioHandler.bind(this);
-    }
-
-    renderComplete(chart) {
-    this.setState({ chart });
-    }
-
-    // Handler for radio buttons to change chart theme.
-    radioHandler(e) {
-        this.state.chart.setChartAttribute('theme', e.currentTarget.value);
-        this.setState({
-            currentVal: e.currentTarget.value
-        });
-    }
-
-    render() {
-        return (
-            <div>
-            <ReactFC {...chartConfigs} onRender={this.renderComplete} />
-            <br />
-            <center>
-                <span>Choose a theme:</span>
-                <div className="change-type">
-                    <div>
-                        <input type="radio" value="fusion" onChange={this.radioHandler} checked={this.state.currentVal === 'fusion'} />
-                        <label>Fusion</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="gammel" onChange={this.radioHandler} checked={this.state.currentVal === 'gammel'} />
-                        <label>Gammel</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="candy" onChange={this.radioHandler} checked={this.state.currentVal === 'candy'} />
-                        <label>Candy</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="zune" onChange={this.radioHandler} checked={this.state.currentVal === 'zune'} />
-                        <label>Zune</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="ocean" onChange={this.radioHandler} checked={this.state.currentVal === 'ocean'} />
-                        <label>Ocean</label>
-                    </div>
-                    <div>
-                        <input type="radio" value="carbon" onChange={this.radioHandler} checked={this.state.currentVal === 'carbon'} />
-                      <label>Carbon</label>
-                    </div>
-                </div>
-            </center>
-        </div>
-      );
-    }
-}
-
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
 ```
+
+
+
+
+
+
+
+
+
+
+
+
 
 The above chart has been rendered using the following steps:
 
