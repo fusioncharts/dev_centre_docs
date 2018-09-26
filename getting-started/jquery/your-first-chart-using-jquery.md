@@ -1,7 +1,7 @@
 ---
-title: Your First Chart in jQuery using FusionCharts | FusionCharts
+title: Create a Chart in jQuery | FusionCharts
 description: This article outlines the steps to be executed for creating your first chart using the jquery-fusioncharts component.
-heading: Create a Chart in jQuery using FusionCharts
+heading: Create a Chart in jQuery Using FusionCharts
 ---
 
 ## Overview

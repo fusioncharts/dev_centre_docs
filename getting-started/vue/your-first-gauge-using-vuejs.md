@@ -1,7 +1,7 @@
 ---
-title: Your First Gauge in Vue using FusionCharts | FusionCharts
+title: Create a Gauge in Vue | FusionCharts
 description: This article outlines the steps to be executed for creating your first gauge using the vue-fusioncharts component.
-heading: Create a Gauge in Vue using FusionCharts
+heading: Create a Gauge in Vue Using FusionCharts
 ---
 
 ## Overview
