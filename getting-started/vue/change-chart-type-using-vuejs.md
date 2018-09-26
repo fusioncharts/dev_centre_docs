@@ -16,148 +16,129 @@ A chart configured to change the chart type, is shown below:
 
 {% embed_chartData change-chart-type-example-1.js json %}
 
-The full code of the above sample is given below:
+The code to render a chart is given below:
 
 ```
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
+//Including Vue
+import Vue from 'vue';
+
+// Include the vue-fusioncharts component
+import VueFusionCharts from 'vue-fusioncharts';
+
+//Include the FusionCharts library
 import FusionCharts from 'fusioncharts';
+
+//Include the chart type
 import Charts from 'fusioncharts/fusioncharts.charts';
-import ReactFC from 'react-fusioncharts';
+
+//import the theme
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-ReactFC.fcRoot(FusionCharts, Charts, FusionTheme);
+// Register VueFusionCharts component
+Vue.use(VueFusionCharts);
 
-const chartConfigs = {
-	type: 'column2d',
-	width: 700,
-	height: 400,
-	dataFormat: 'json',
-	dataSource: {
-		// Chart configuration
-	    "chart": {
-	        "caption": "Countries With Most Oil Reserves [2017-18]",
-	        "subCaption": "In MMbbl = One Million barrels",
-	        "xAxisName": "Country",
-	        "yAxisName": "Reserves (MMbbl)",
-	        "numberSuffix": "K",
-	        "theme": "fusion"
-	    },
-	    // Chart data
-	    "data": [{
-	        "label": "Venezuela",
-	        "value": "290"
-	    }, {
-	        "label": "Saudi",
-	        "value": "260"
-	    }, {
-	        "label": "Canada",
-	        "value": "180"
-	    }, {
-	        "label": "Iran",
-	        "value": "140"
-	    }, {
-	        "label": "Russia",
-	        "value": "115"
-	    }, {
-	        "label": "UAE",
-	        "value": "100"
-	    }, {
-	        "label": "US",
-	        "value": "30"
-	    }, {
-	        "label": "China",
-	        "value": "30"
-	    }]
-	},
-};
+// register VueFusionCharts component
+Vue.use(VueFusionCharts, FusionCharts, Charts, FusionTheme)
 
-class Chart extends Component {
-  constructor(props) {
-    super(props);
+var app = new Vue({
+    el: '#app',
+    data: {
+        width: '700',
+        height: '400',
+        type: 'column2d',
+        dataFormat: 'json',
+        dataSource: {
+            // Chart configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion"
+            },
+            // Chart data
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
+        }
+    },
+    methods:{
+        // uses the chartInstance API 'chartType' to change the chart type after render
+        onChartTypeChange: function (e) {
+            const chart = this.$refs.fc.chartObj,
+                type = e.target.value.toLowerCase();
+            chart.chartType(type);
+        }
+    }
+});
+```
 
-    this.state = {
-      chart: {},
-      currentVal: 'column2d'
-    };
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
-    this.renderComplete = this.renderComplete.bind(this);
-    this.radioHandler = this.radioHandler.bind(this);
-  }
-
-  renderComplete(chart) {
-    this.setState({ chart });
-  }
-
-  // Handler for radio buttons to change chart type.
-  radioHandler(e) {
-    this.state.chart.chartType(e.currentTarget.value);
-    this.setState({
-      currentVal: e.currentTarget.value
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <ReactFC {...chartConfigs} onRender={this.renderComplete} />
-        <br />
-        <center>
-          <span>Choose a chart type:</span>
-          <div className="change-type">
-            <div>
-              <input
-                type="radio"
-                value="column2d"
-                onChange={this.radioHandler}
-                checked={this.state.currentVal === 'column2d'} />
-              <label>Column 2D Chart</label>
+```HTML
+<div id="app">
+    <fusioncharts
+    :type="type"
+    :width="width"
+    :height="height"
+    :dataFormat="dataFormat"
+    :dataSource="dataSource"
+    ref="fc"
+    ></fusioncharts>
+    <div>
+        <div>
+            <input name='chartType' type="radio" @change="onChartTypeChange" value="Column2d" checked/>
+            <label>Column 2D Chart</label>
             </div>
             <div>
-              <input
-                type="radio"
-                value="bar2d"
-                onChange={this.radioHandler}
-                checked={this.state.currentVal === 'bar2d'} />
-              <label>Bar 2D Chart</label>
+            <input name='chartType' type="radio" @change="onChartTypeChange" value="Bar2d" />
+            <label>Bar 2D Chart</label>
             </div>
             <div>
-              <input
-                type="radio"
-                value="pie2d"
-                onChange={this.radioHandler}
-                checked={this.state.currentVal === 'pie2d'} />
-              <label>Pie 2D Chart</label>
+            <input name='chartType' type="radio" @change="onChartTypeChange" value="Pie2d" />
+            <label>Pie 2D Chart</label>
             </div>
-          </div>
-        </center>
-      </div>
-    );
-  }
-}
-
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
+    </div>
+</div>
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+2. Registered `vue-fusioncharts` component.
+
+3. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
     * The json data has been embeded as the value of the `dataSource`.
 
-3. Created a component to include `react-fusioncharts` component.
+4. In the above sample, a chartInstance API `chartType` is called to change the chart type after the chart has been rendered.
 
-4. In the above sample:
-	* `renderComplete` event is used to render the charts at runtime.
-	* `radioHander` is uded for radio buttons to change the chart type.
+5. Created a `fusioncharts` directive in a template. 
 
-5. `render()` function is added to create the **radio buttons** inside the `<div>`.
-
-6. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+6. Created Radio buttons for Column 2D, Bar 2D and Pie 2D in a template.
