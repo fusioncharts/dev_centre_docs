@@ -1,7 +1,7 @@
 ---
-title: Your First Map in jQuery using FusionCharts | FusionCharts
+title: Create a Map in jQuery | FusionCharts
 description: This article outlines the steps to be executed for creating your first map using the jquery-fusioncharts component.
-heading: Create a Map in jQuery using FusionCharts
+heading: Create a Map in jQuery Using FusionCharts
 chartPresent: false
 ---
 

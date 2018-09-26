@@ -1,7 +1,7 @@
 ---
-title: Your First Map in Vue using FusionCharts | FusionCharts
+title: Create a Map in Vue using FusionCharts | FusionCharts
 description: This article outlines the steps to be executed for creating your first map using the vue-fusioncharts component.
-heading: Create a Map in Vue using FusionCharts
+heading: Create a Map in Vue Using FusionCharts
 ---
 
 ## Overview

@@ -1,7 +1,7 @@
 ---
-title: Your First Gauge in jQuery using FusionCharts | FusionCharts
+title: Create a Gauge in jQuery | FusionCharts
 description: This article outlines the steps to be executed for creating your first gauge using the jquery-fusioncharts component.
-heading: Create a Gauge in jQuery using FusionCharts
+heading: Create a Gauge in jQuery Using FusionCharts
 ---
 
 ## Overview
