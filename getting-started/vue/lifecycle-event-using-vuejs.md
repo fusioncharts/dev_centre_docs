@@ -1,173 +1,146 @@
 ---
-title: Lifecycle Events using React | FusionCharts
-description: The sample in this article lists the basic lifestyle events at the time of rendering the chart using react props object.
-heading: Lifecycle Events using React
+title: Lifecycle Events using Vue | FusionCharts
+description: The sample in this article lists the basic lifestyle events at the time of rendering the chart using vue.
+heading: Lifecycle Events using Vue
 ---
 
 Events are signals that let you execute specific actions—such as sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, and events.
 
-The sample in this article lists the basic lifestyle events at the time of rendering the chart using react `props` object.
+The sample in this article lists the basic lifestyle events at the time of rendering the chart using `vue-fusioncharts` component.
 
 A chart is shown below:
 
 {% embed_chartData lifecycle-event-example-1.js json %}
 
-The full code of the above sample is given below:
+The code to render a chart is given below:
 
 ```
-//Including react
-import React, { Component } from 'react';
+//Including Vue
+import Vue from 'vue';
 
-//Including the react-fusioncharts component
-import ReactDOM from 'react-dom';
+// Include the vue-fusioncharts component
+import VueFusionCharts from 'vue-fusioncharts';
 
-//Including the fusioncharts library
+//Include the FusionCharts library
 import FusionCharts from 'fusioncharts';
 
-//Including the chart type
-import Chart from 'fusioncharts/fusioncharts.charts';
+//Include the chart type
+import Charts from 'fusioncharts/fusioncharts.charts';
 
-//Including react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
-
-//Including the theme as fusion
+//import the theme
 import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
 
-//Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, Chart, FusionTheme);
+// Register VueFusionCharts component
+Vue.use(VueFusionCharts);
 
-//Creating the JSON object to store the chart configurations
+// register VueFusionCharts component
+Vue.use(VueFusionCharts, FusionCharts, Charts, FusionTheme)
 
-const chartConfigs = {
-  type: "column2d",
-  width: 700,
-  height: 400,
-  dataFormat: "json",
-  dataSource: {
-    // Chart configuration
-      "chart": {
-          "caption": "Countries With Most Oil Reserves [2017-18]",
-          "subCaption": "In MMbbl = One Million barrels",
-          "xAxisName": "Country",
-          "yAxisName": "Reserves (MMbbl)",
-          "numberSuffix": "K",
-          "theme": "fusion"
-      },
-      // Chart data
-      "data": [{
-          "label": "Venezuela",
-          "value": "290"
-      }, {
-          "label": "Saudi",
-          "value": "260"
-      }, {
-          "label": "Canada",
-          "value": "180"
-      }, {
-          "label": "Iran",
-          "value": "140"
-      }, {
-          "label": "Russia",
-          "value": "115"
-      }, {
-          "label": "UAE",
-          "value": "100"
-      }, {
-          "label": "US",
-          "value": "30"
-      }, {
-          "label": "China",
-          "value": "30"
-      }]
-  },
-};
+var app = new Vue({
+    el: '#app',
+    data: {
+        width: '700',
+        height: '400',
+        type: 'column2d',
+        dataFormat: 'json',
+        dataSource: {
+            // Chart configuration
+            "chart": {
+                "caption": "Countries With Most Oil Reserves [2017-18]",
+                "subCaption": "In MMbbl = One Million barrels",
+                "xAxisName": "Country",
+                "yAxisName": "Reserves (MMbbl)",
+                "numberSuffix": "K",
+                "theme": "fusion"
+            },
+            // Chart data
+            "data": [{
+                "label": "Venezuela",
+                "value": "290"
+            }, {
+                "label": "Saudi",
+                "value": "260"
+            }, {
+                "label": "Canada",
+                "value": "180"
+            }, {
+                "label": "Iran",
+                "value": "140"
+            }, {
+                "label": "Russia",
+                "value": "115"
+            }, {
+                "label": "UAE",
+                "value": "100"
+            }, {
+                "label": "US",
+                "value": "30"
+            }, {
+                "label": "China",
+                "value": "30"
+            }]
+        },
+        displayValue: '<b>Status: </b>'
+    },
+    methods: {
+        // Binding Life Cycle events
+        beforeDataUpdate: function() {
+            let prevValue = this.displayValue;
+            this.displayValue = prevValue + " beforeDataUpdate";
+        },
+        dataUpdated: function() {
+            let prevValue = this.displayValue;
+            this.displayValue = prevValue + ", dataUpdated";
+        },
+        drawComplete: function() {
+            let prevValue = this.displayValue;
+            this.displayValue = prevValue + ", drawComplete";
+        },
+        renderComplete: function() {
+            let prevValue = this.displayValue;
+            this.displayValue = prevValue + ", renderComplete";
+        }
+    }
+});
+```
 
-class Chart extends Component {
-  constructor(props) {
-    super(props);
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
-    this.state = {
-      message:
-        "You will see a notifications here for the chart lifecycle events"
-    };
-
-    this.beforeDataUpdate = this.beforeDataUpdate.bind(this);
-    this.dataUpdated = this.dataUpdated.bind(this);
-    this.drawComplete = this.drawComplete.bind(this);
-    this.renderComplete = this.renderComplete.bind(this);
-  }
-
-  // Callback handler for event 'beforeDataUpdate'.
-  beforeDataUpdate() {
-    this.state.message = [<strong>Status: </strong>, " beforeDataUpdate"];
-  }
-
-  // Callback handler for event 'dataUpdated'.
-  dataUpdated() {
-    let newMessage = this.state.message.slice();
-    newMessage.push(", dataUpdated");
-    this.setState({
-      message: newMessage
-    });
-  }
-
-  // Callback handler for event 'drawComplete'.
-  drawComplete() {
-    let newMessage = this.state.message.slice();
-    newMessage.push(", drawComplete");
-    this.setState({
-      message: newMessage
-    });
-  }
-
-  // Callback handler for event 'renderComplete'.
-  renderComplete() {
-    let newMessage = this.state.message.slice();
-    newMessage.push(", renderComplete");
-    this.setState({
-      message: newMessage
-    });
-  }
-
-  render() {
-    return (
-      <div>
-        <ReactFC
-          {...chartConfigs}
-          fcEvent-beforeDataUpdate={this.beforeDataUpdate}
-          fcEvent-dataUpdated={this.dataUpdated}
-          fcEvent-drawComplete={this.drawComplete}
-          fcEvent-renderComplete={this.renderComplete}
-        />
-        <p style={{ padding: "10px", background: "#f5f2f0" }}>
-          {this.state.message}
-        </p>
-      </div>
-    );
-  }
-}
-
-ReactDOM.render(<Chart />, document.getElementById("root"));
+```HTML
+<div id="app">
+    <fusioncharts
+    :type="type"
+    :width="width"
+    :height="height"
+    :dataFormat="dataFormat"
+    :dataSource="dataSource"
+    @beforeDataUpdate="beforeDataUpdate"
+    @dataUpdated="dataUpdated"
+    @drawComplete="drawComplete"
+    @renderComplete="renderComplete"
+    ></fusioncharts>
+    <div v-html="displayValue"></div>
+</div>
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+2. Registered `vue-fusioncharts` component.
+
+3. Stored the chart configuration in a JSON object. In the JSON object:
+    * The chart type has been set to `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
     * The json data has been embeded as the value of the `dataSource`.
 
-3. Created a component to include `react-fusioncharts` component.
-
 4. In the above sample:
-	* Callback handler for `beforeDataUpdate` event has been used.
-	* Callback handler for `dataUpdated` event has been used.
-	* Callback handler for `drawComplete` event has been used.
-	* Callback handler for `renderComplete` event has been used.
+    * `beforeDataUpdate` event is fired.
+    * `dataUpdated` event is fired.
+    * `drawComplete` event is fired.
+    * `renderComplete` event is fired.
 
-5. `render()` function is added to create the `button` inside the `<div>`.
+5. Created a `fusioncharts` directive in a template. 
 
-6. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+6. A `<div>` is created to display the content related to the event applied to the chart.
