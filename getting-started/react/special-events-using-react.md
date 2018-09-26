@@ -8,7 +8,7 @@ FusionCharts Suite XT API offers a wide range of events that you can use to trig
 
 This article focuses on how you can dynamically drag the column and see modified value as text using React `props` object.
 
-A dragabble column chart is shown below:
+A drag-able column chart is shown below:
 
 {% embed_chartData special-events-example-1.js json %}
 

@@ -8,7 +8,7 @@ FusionCharts Suite XT API offers a wide range of events that you can use to trig
 
 This article focuses on how you can dynamically drag the column and see modified value as text using `vue-fusioncharts` component.
 
-A dragabble column chart is shown below:
+A drag-able column chart is shown below:
 
 {% embed_chartData special-events-example-1.js json %}
 
@@ -150,7 +150,7 @@ The above chart has been rendered using the following steps:
 2. Registered `vue-fusioncharts` component.
 
 3. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `dragcolumn2d`. Each chart type is represented with a unique chart alias. For Draggable Column 2D chart, the alias is `dragcolumn2d`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
+    * The chart type has been set to `dragcolumn2d`. Each chart type is represented with a unique chart alias. For Drag-able Column 2D chart, the alias is `dragcolumn2d`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
     * The json data has been embeded as the value of the `dataSource`.
