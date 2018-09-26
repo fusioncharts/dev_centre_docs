@@ -2,7 +2,6 @@
 title: Add Annotations | FusionCharts
 description: This article focuses on different type of configurations possible using the react.
 heading: Add Annotations
-chartPresent: true
 ---
 
 Annotations are graphical elements (different types of shapes, custom text, and so on) that you can render on your chart to make it more informative, while making it visually appealing.
