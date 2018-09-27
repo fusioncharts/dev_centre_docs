@@ -247,8 +247,6 @@ The full code for the above sample is:
 ```
 require 'json'
 
-class FirstMap
-
     # Map rendering
     def self.getMap 
 
@@ -313,7 +311,6 @@ class FirstMap
         })
 
     end
-end
 ```
 
 The HTML template of the above sample is shown below:
@@ -324,8 +321,254 @@ The HTML template of the above sample is shown below:
 <div id="mapContainer"></div>
 <%=@myChart.render() %>
 ```
-
 That's it! Your first map using **FusionCharts Rails** wrapper is ready. 
+
+## Render other Maps
+
+To reduce the size of the package FusionCharts comes with only two maps, i.e., the World map and the USA map. However, FusionCharts provides 1600+ maps for you to explore. [Download ](https://www.fusioncharts.com/download/map-definition-files)the map files separately if you want to save them locally.
+
+Let's create a map of California to show the "Web visits for a particular month" as shown below:
+
+{% embed_chart getting-started-your-first-map-california.js %}
+
+To render the above map, the following code is used:
+
+```
+# Map rendering
+
+    def self.getMap 
+
+        # Map appearance configuration
+
+        mapAppearancesConfigObj = {
+
+                "animation"=> "0",
+
+                "showbevel"=> "0",
+
+                "usehovercolor"=> "1",
+
+                "showlegend"=> "1",
+
+                "legendposition"=> "BOTTOM",
+
+                "legendborderalpha"=> "0",
+
+                "legendbordercolor"=> "ffffff",
+
+                "legendallowdrag"=> "0",
+
+                "legendshadow"=> "0",
+
+                "caption"=> "Website Visits for the month of March 2018",
+
+                "connectorcolor"=> "000000",
+
+                "fillalpha"=> "80",
+
+                "hovercolor"=> "CCCCCC",
+
+                "theme"=> "fusion"
+
+        }
+
+        # Map color range data
+
+        colorDataObj = { "minvalue" => "0", "code" => "#FFE0B2", "gradient" => "1",
+
+                        "color" => [
+
+                            {"minValue" => "0", "maxValue" => "1000", "code" => "#FFD74D"}, 
+
+                            {"minValue" => "1001", "maxValue" => "2500", "code" => "#FB8C00"},
+
+                            {"minValue" => "2501", "maxValue" => "5500", "code" => "#E65100"}
+
+                        ]
+
+        }
+
+        # Map data array
+
+        mapDataArray = [ 
+
+            ["001", "2834", "1"],
+
+            ["003", "3182", "1"],
+
+            ["005", "3280", "1"],
+
+            ["007", "911", "1"],
+
+            ["009", "292", "1"],
+
+            ["011", "530", "1"],
+
+            ["013", "2515", "1"],
+
+            ["015", "728", "1"],
+
+            ["017", "1974", "1"],
+
+            ["019", "848", "1"],
+
+            ["021", "3278", "1"],
+
+            ["023", "4463", "1"],
+
+            ["025", "1198", "1"],
+
+            ["027", "378", "1"],
+
+            ["029", "2610", "1"],
+
+            ["031", "1200", "1"],
+
+            ["033", "3820", "1"],
+
+            ["035", "940", "1"],
+
+            ["037", "3416", "1"],
+
+            ["039", "4004", "1"],
+
+            ["041", "1604", "1"],
+
+            ["043", "4011", "1"],
+
+            ["045", "3203", "1"],
+
+            ["047", "3775", "1"],
+
+            ["049", "2721", "1"],
+
+            ["051", "3417", "1"],
+
+            ["053", "1530", "1"],
+
+            ["055", "412", "1"],
+
+            ["057", "3434", "1"],
+
+            ["059", "1670", "1"],
+
+            ["061", "1274", "1"],
+
+            ["063", "4339", "1"],
+
+            ["065", "2073", "1"],
+
+            ["067", "1018", "1"],
+
+            ["069", "3967", "1"],
+
+            ["071", "3401", "1"],
+
+            ["073", "3307", "1"],
+
+            ["075", "1938", "1"],
+
+            ["077", "489", "1"],
+
+            ["079", "3207", "1"],
+
+            ["081", "2295", "1"],
+
+            ["083", "2747", "1"],
+
+            ["085", "1114", "1"],
+
+            ["087", "3400", "1"],
+
+            ["089", "784", "1"],
+
+            ["091", "1673", "1"],
+
+            ["093", "4274", "1"],
+
+            ["095", "4509", "1"],
+
+            ["097", "3862", "1"],
+
+            ["099", "1356", "1"],
+
+            ["101", "4126", "1"],
+
+            ["103", "1314", "1"],
+
+            ["105", "1807", "1"],
+
+            ["107", "4026", "1"],
+
+            ["109", "3456", "1"],
+
+            ["111", "1393", "1"],
+
+            ["113", "1500", "1"],
+
+            ["115", "2218", "1"]
+
+        ]
+
+        # Map data template
+
+        mapDataTemplate = "{ \"id\": \"%s\", \"value\": \"%s\", \"showLabel\": \"%s\" },"
+
+        # Map data as JSON string
+
+        mapDataJSONStr = ""
+
+        # Iterate all data in mapDataArray and converts it to actual data format
+
+        mapDataArray.each {|item|
+
+            data = mapDataTemplate % [item[0], item[1], item[2]]
+
+            mapDataJSONStr.concat(data)
+
+        }
+
+        # Removing trailing comma
+
+        mapDataJSONStr = mapDataJSONStr.chop
+
+        # Map JSON data template
+
+        mapJSONTemplate = "{ \"chart\": %s, \"colorRange\": %s,  \"data\": [%s]}"
+
+        # Map JSON data after combining all parts
+
+        mapJSONStr = mapJSONTemplate % [mapAppearancesConfigObj.to_json, colorDataObj.to_json, mapDataJSONStr]
+
+        # Rendeing the Map
+
+        map = Fusioncharts::Chart.new({
+
+            width: "850",
+
+            height: "550",
+
+            type: "maps/california",
+
+            renderAt: "mapContainer",
+
+            dataSource: mapJSONStr
+
+        })
+
+    end
+```
+
+The HTML template of the above sample is shown below:
+
+```
+<!-- Filename: app/views/examples/firstchart.html.erb -->
+<h3>My Map</h3>
+<div id="mapContainer"></div>
+<%=@myChart.render() %>
+```
+
+That's it! The **California** map is ready.
 
 ## Problem rendering the map?
 
