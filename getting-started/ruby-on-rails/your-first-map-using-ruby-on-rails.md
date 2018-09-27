@@ -319,7 +319,7 @@ The HTML template of the above sample is shown below:
 <!-- Filename: app/views/examples/firstchart.html.erb -->
 <h3>My Map</h3>
 <div id="mapContainer"></div>
-<%=@myChart.render() %>
+<%=@getMap.render() %>
 ```
 That's it! Your first map using **FusionCharts Rails** wrapper is ready. 
 
@@ -565,7 +565,7 @@ The HTML template of the above sample is shown below:
 <!-- Filename: app/views/examples/firstchart.html.erb -->
 <h3>My Map</h3>
 <div id="mapContainer"></div>
-<%=@myChart.render() %>
+<%=@getMap.render() %>
 ```
 
 That's it! The **California** map is ready.
