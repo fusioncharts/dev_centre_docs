@@ -1,49 +1,58 @@
 ---
-title: Special Events using React | FusionCharts
+title: Special Events using Ember | FusionCharts
 description: This article showcases a draggable column chart with special events.
-heading: Special Events using React
+heading: Special Events using Ember
 ---
 
 FusionCharts Suite XT API offers a wide range of events that you can use to trigger actions for different stages in the life cycle of a chart or when you interact with a chart. For example, events can be used to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
 
-This article focuses on how you can dynamically drag the column and see modified value as text using React `props` object.
+This article focuses on how you can dynamically drag the column and see modified value as text using `ember-fusioncharts` component.
 
 A drag-able column chart is shown below:
 
 {% embed_chartData special-events-example-1.js json %}
 
-The full code of the above sample is given below:
+### Setup `ember-cli-build.js`
+
+In this step we will include all the necessary files and add the dependency to create the **Drag-able** chart. The code is given below:
 
 ```
-//Including react
-import React, { Component } from 'react';
+/* eslint-env node */
+'use strict';
 
-//Including the react-fusioncharts component
-import ReactDOM from 'react-dom';
+const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
 
-//Including the fusioncharts library
-import FusionCharts from 'fusioncharts';
+module.exports = function (defaults) {
+    let app = new EmberAddon(defaults, {
+        // Add options here
+    });
 
-//Including the chart type
-import PowerCharts from 'fusioncharts/fusioncharts.powercharts';
+    // Import FusionCharts library
+    app.import('bower_components/fusioncharts/fusioncharts.js');    
+    app.import('bower_components/fusioncharts/fusioncharts.powercharts.js');
+    app.import('bower_components/fusioncharts/themes/fusioncharts.theme.fusion.js');    
 
-//Including react-fusioncharts component
-import ReactFC from 'react-fusioncharts';
+    return app.toTree();
+};
+```
 
-//Including the theme as fusion
-import FusionTheme from 'fusioncharts/themes/fusioncharts.theme.fusion';
+In the above code necessary libraries and components have been included using import. For example, `ember-fusioncharts`, `fusioncharts`, etc.
 
-//Adding the chart as dependency to the core fusioncharts
-ReactFC.fcRoot(FusionCharts, PowerCharts, FusionTheme);
+> If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
 
-//Creating the JSON object to store the chart configurations
+### Add chart data to `chart-viewer.js`
 
-const chartConfigs = {
-	type: 'dragcolumn2d',
-	width: 700,
-	height: 400,
-	dataFormat: 'json',
-	dataSource: {
+Add the following code to `chart-viewer.js`:
+
+```
+import Component from '@ember/component';
+
+export default Component.extend({    
+    width: 700,
+    height: 400,
+    type: 'dragcolumn2d',
+    dataFormat: 'json',
+    dataSource: {
 	    "chart": {
 	        "caption": "Android and iOS Devices Sales Projections",
 	        "subCaption": "Drag the top of columns to adjust projections for 2017 & 2018",
@@ -112,63 +121,25 @@ const chartConfigs = {
                 "toolText": "<b>$label</b><br>$seriesName: <b>$dataValue</b>"
             }]
 	    }]
-	}
-};
+	},    
+    events: null,
+    message: 'Drag any column for years 2017 or 2018 to see updated value along with the label',
 
-class Chart extends Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      message: 'Drag any column for years 2017 or 2018 to see updated value along with the label',
-    };
-
-    this.dataplotDragEnd = this.dataplotDragEnd.bind(this);
-  }
-
-  // Event callback handler for 'dataplotDragEnd' event.
-  // Shows a message with the dateset, initial value and final value of the dragged column.
-  dataplotDragEnd(eventObj, dataObj) {
-    var prevValue = FusionCharts.formatNumber(dataObj.startValue.toFixed(2));
-    var curValue = FusionCharts.formatNumber(dataObj.endValue.toFixed(2));
-    var labelYear = this.state.chart.args.dataSource.categories[0].category[dataObj.dataIndex].label
-    this.setState({
-      message: [
-        <strong>{eventObj.data.datasetName}</strong>,
-        " is modified to ",
-        <strong>{'$' + curValue + 'M'}</strong>,
-        " from ",
-        <strong>{'$' + prevValue + 'M'}</strong>,
-        " for ",
-        <strong>{labelYear}</strong>
-      ]
-    });
-  }
-
-  render () {
-    return (
-      <div>
-        <ReactFC
-          {...chartConfigs}
-          fcEvent-dataplotDragEnd={this.dataplotDragEnd}
-        />
-        <p style={{ padding: '10px', background: '#f5f2f0' }}>
-          {this.state.message}
-        </p>
-      </div>
-    )
-  }
-}
-
-ReactDOM.render(
-  <Chart />,
-  document.getElementById('root'),
-);
+    init() {
+        this._super(...arguments);
+        const self = this;
+        this.set('events', {
+            dataplotdragend: function (eventObj, dataObj) {
+                self.set('message', dataObj.datasetName + ' is modified to $' + FusionCharts.formatNumber(dataObj.endValue.toFixed(2)) + 'M from $' + FusionCharts.formatNumber(dataObj.startValue.toFixed(2)) + 'M');
+            }
+        });
+    }    
+});
 ```
 
-The above chart has been rendered using the following steps:
+In the above code:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. A chart component is created to render the chart.
 
 2. Stored the chart configuration in a JSON object. In the JSON object:
     * The chart type has been set to `dragcolumn2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
@@ -176,12 +147,25 @@ The above chart has been rendered using the following steps:
     * The `dataFormat` is set as JSON.
     * The json data has been embedded as the value of the `dataSource`.
 
-3. Created a component to include `react-fusioncharts` component.
+3. `message` is set which gets displayed with the rendering of the chart.
 
-4. In the above sample:
-	* An event callback handler is used for `dataPlotDragEnd` event.
-	* `dragPlotDragEnd` event shows a message with the dataset, initial value and final value of the dragged column.
+4. `init()` funtion is called for `dragPlotDragEnd` event to show a message with the dataset's initial value and final value of the dragged column.
 
-5. `render()` function is added to create **buttons** inside the `<div>`.
+### Add data to `chart-viewer.hbs`
 
-6. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+Add the following code to `chart-viewer.hbs`:
+
+```
+{{fusioncharts-xt
+    width=width
+    height=height
+    type=type
+    dataFormat=dataFormat
+    dataSource=dataSource
+    events=events
+}}
+
+<p style="padding: 10px; background: rgb(245, 242, 240);">{{ message }}</p>
+```
+
+In the above code `fusioncharts` component is added to `chart-viewer.hbs` template to render the chart.

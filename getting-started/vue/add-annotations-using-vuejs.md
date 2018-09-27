@@ -143,7 +143,7 @@ The above chart has been rendered using the following steps:
     * The chart type has been set to `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
-    * The json data has been embeded as the value of the `dataSource`.
+    * The json data has been embedded as the value of the `dataSource`.
     * In the `dataSource`, an `annotations` object is created to specify the cosmetics and functionalities of the annotation.
 
 4. Create a `fusioncharts` directive in a template.

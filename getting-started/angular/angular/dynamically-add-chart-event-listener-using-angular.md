@@ -173,7 +173,7 @@ In the above code:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
-    * The json data has been embeded as the value of the `dataSource`.
+    * The json data has been embedded as the value of the `dataSource`.
 
 3. In the above sample:
 	* A `getMessage` function is created for the message which gets displayed when the data plots are clicked.

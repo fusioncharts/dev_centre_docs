@@ -2,7 +2,6 @@
 title: Configuring your Chart using Angular | FusionCharts
 description: This article focuses on different type of configurations possible using Angular.
 heading: Configuring your Chart using Angular
-chartPresent: true
 ---
 
 FusionCharts Suite XT includes advanced features that let you add more context to your charts and make data visualization simpler. These features include chart updates, annotations, trend-lines, and events.
@@ -82,7 +81,7 @@ export class AppComponent {
 
     type = "Column2D";
     width = "700";
-    height = "300";
+    height = "400";
     dataFormat = "json";
     dataSource: any = {
         "chart": {
@@ -91,8 +90,7 @@ export class AppComponent {
             "xAxisName": "Country",
             "yAxisName": "Reserves (MMbbl)",
             "numberSuffix": "K",
-            "theme": "fusion",
-            "updateAnimDuration": "0.4"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Venezuela",
@@ -162,7 +160,7 @@ In the above code:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
-    * The json data has been embeded as the value of the `dataSource`.
+    * The json data has been embedded as the value of the `dataSource`.
 
 3. In the above sample, to update the chart we have generated random data using **Math.random()**.
 
@@ -356,11 +354,11 @@ In the above code:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
-    * The json data has been embeded as the value of the `dataSource`.
+    * The json data has been embedded as the value of the `dataSource`.
 
 3. An event is triggered:
     * To update the chart caption, sub-capion alignment.
-    * To update the backgroing color.
+    * To update the background color.
     * Reset all the chart data to it's initial version.
 
 4. A container is created to render buttons in the chart.
