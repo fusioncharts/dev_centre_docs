@@ -180,7 +180,7 @@ The above chart has been rendered using the following steps:
 
 4. In the above sample:
 	* An event callback handler is used for `dataPlotDragEnd` event.
-	* `dragPlotDragEnd` event shows a message with the dataset, inita value and final value of the dragged column.
+	* `dragPlotDragEnd` event shows a message with the dataset, initial value and final value of the dragged column.
 
 5. `render()` function is added to create **buttons** inside the `<div>`.
 
