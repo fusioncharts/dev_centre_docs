@@ -16,7 +16,7 @@ Roll the mouse pointer over any one data plot and see how the text (the data lab
 
 For example, if you roll the mouse pointer over the __Canada__ data plot, the following text is displayed below the chart:
 
-**You are currently hovering over Canada whose calue is 180**
+**You are currently hovering over Canada whose value is 180**
 
 The full code of the above sample is given below:
 
@@ -120,7 +120,7 @@ The above chart has been rendered using the following steps:
     * The chart type has been set to `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
-    * The json data has been embeded as the value of the `dataSource`.
+    * The json data has been embedded as the value of the `dataSource`.
 
 4. In the above sample `dataplotRollOver` event has been used which is triggered when the mouse pointer is rolled over a data plot.
 
