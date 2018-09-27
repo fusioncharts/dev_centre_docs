@@ -146,8 +146,7 @@ Add the following code to `chart-viewer.hbs`:
     type=type
     dataFormat=dataFormat
     dataSource=dataSource
-    events=events
-}}
+    events=events}}
 
 <p style="padding: 10px; background: rgb(245, 242, 240);">{{ message }}</p>
 ```
