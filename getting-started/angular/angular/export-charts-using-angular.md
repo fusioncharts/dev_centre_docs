@@ -108,6 +108,7 @@ export class AppComponent {
               "yAxisName": "Reserves (MMbbl)",
               "numberSuffix": "K",
               "theme": "fusion",
+              "exportEnabled": "1"
             },
             "data": [{
               "label": "Venezuela",
@@ -447,7 +448,6 @@ In the above code:
     * The chart type has been set to `column2d` for the first chart and `stackedcolumn2d` for the second chart. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
-    * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
 3. To export multiple charts as PDF, set the `batchExport` to PDF.
 
