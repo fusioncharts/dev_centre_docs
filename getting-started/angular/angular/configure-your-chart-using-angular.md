@@ -358,7 +358,7 @@ In the above code:
 
 3. An event is triggered:
     * To update the chart caption, sub-capion alignment.
-    * To update the backgroing color.
+    * To update the background color.
     * Reset all the chart data to it's initial version.
 
 4. A container is created to render buttons in the chart.
