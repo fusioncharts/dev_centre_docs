@@ -9,9 +9,9 @@ FusionCharts Suite XT uses JavaScript to render charts in the browser using SVG 
 In this section we will discuss how to:
 
 * [Export Charts as Image and PDF]({% site.baseurl %}/getting-started/ember/export-charts-using-ember#export-charts-as-image-and-pdf-1)
-* [Export Multiple Charts]({% site.baseurl %}/getting-started/ember/export-charts-using-ember#export-multiple-charts-4)
-* [Modes of Export]({% site.baseurl %}/getting-started/ember/export-charts-using-ember#modes-of-export-7)
-* [Export Chart Data]({% site.baseurl %}/getting-started/ember/export-charts-using-ember#export-chart-data-8)
+* [Export Multiple Charts]({% site.baseurl %}/getting-started/ember/export-charts-using-ember#export-multiple-charts-5)
+* [Modes of Export]({% site.baseurl %}/getting-started/ember/export-charts-using-ember#modes-of-export-9)
+* [Export Chart Data]({% site.baseurl %}/getting-started/ember/export-charts-using-ember#export-chart-data-10)
 
 ## Export Charts as Image and PDF
 
