@@ -1,7 +1,7 @@
 ---
-title: Configuring your Chart using React | FusionCharts
-description: This article focuses on different type of configurations possible using the react.
-heading: Configuring your Chart using React
+title: Configuring your Chart using Ember | FusionCharts
+description: This article focuses on different type of configurations possible using the ember.
+heading: Configuring your Chart using Ember
 ---
 
 FusionCharts Suite XT includes advanced features that let you add more context to your charts and make data visualization simpler. These features include chart updates, annotations, trend-lines, and events.
