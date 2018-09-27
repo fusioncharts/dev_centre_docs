@@ -2,7 +2,6 @@
 title: Configuring your Chart using Angular | FusionCharts
 description: This article focuses on different type of configurations possible using Angular.
 heading: Configuring your Chart using Angular
-chartPresent: true
 ---
 
 FusionCharts Suite XT includes advanced features that let you add more context to your charts and make data visualization simpler. These features include chart updates, annotations, trend-lines, and events.
@@ -82,7 +81,7 @@ export class AppComponent {
 
     type = "Column2D";
     width = "700";
-    height = "300";
+    height = "400";
     dataFormat = "json";
     dataSource: any = {
         "chart": {
@@ -91,8 +90,7 @@ export class AppComponent {
             "xAxisName": "Country",
             "yAxisName": "Reserves (MMbbl)",
             "numberSuffix": "K",
-            "theme": "fusion",
-            "updateAnimDuration": "0.4"
+            "theme": "fusion"
         },
         "data": [{
             "label": "Venezuela",
