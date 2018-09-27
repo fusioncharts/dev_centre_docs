@@ -121,7 +121,7 @@ In the above code:
 3. `message` is set which gets displayed with the rendering of the chart.
 
 4. `init()` funtion is called where: 
-	* `dataplotrollover` event shows the percentage of the hovered plot on the page.
+	* `dataplotrollover` event shows the percentage of the hovered plot.
 	* `dataplotrollout` event resets the default message.
 
 ### Add data to `chart-viewer.hbs`
