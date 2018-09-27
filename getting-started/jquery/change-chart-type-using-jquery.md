@@ -132,7 +132,7 @@ The above chart has been rendered using the following steps:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
-    * The json data has been embeded as the value of the `dataSource`.
+    * The json data has been embedded as the value of the `dataSource`.
 
 4. Handlers to change the chart type using radio buttons.
 

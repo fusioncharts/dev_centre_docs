@@ -120,7 +120,7 @@ In the above code:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
-    * The json data has been embeded as the value of the `dataSource`.
+    * The json data has been embedded as the value of the `dataSource`.
     * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
 ### Add data to `chart-viewer.hbs`
@@ -343,7 +343,7 @@ In the above code:
     * The chart type has been set to `column2d` for the first chart and `stackedcolumn2d` for the second chart. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
-    * The json data has been embeded as the value of the `dataSource`.
+    * The json data has been embedded as the value of the `dataSource`.
 
 3. To export multiple charts as PDF, set the `batchExport` to PDF.
 

@@ -148,7 +148,7 @@ In the above code:
     * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
-    * The json data has been embeded as the value of the `dataSource`.
+    * The json data has been embedded as the value of the `dataSource`.
     * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
 3. Created a `fusioncharts` directive to render the chart.

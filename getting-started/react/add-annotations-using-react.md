@@ -117,7 +117,7 @@ The above chart has been rendered using the following steps:
     * The chart type has been set to `spline`. For Spline chart, the alias is `spline`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * The width and height of the chart has been set in pixels. 
     * The `dataFormat` is set as JSON.
-    * The json data has been embeded as the value of the `dataSource`.
+    * The json data has been embedded as the value of the `dataSource`.
     * In the `dataSource`, an `annotations` object is created to specify the cosmetics and functionalities of the annotation.
 
 3. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
