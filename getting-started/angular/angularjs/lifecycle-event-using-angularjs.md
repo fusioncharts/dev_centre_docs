@@ -1,0 +1,155 @@
+---
+title: Lifecycle Events using AngularJS | FusionCharts
+description: The sample in this article lists the basic lifestyle events at the time of rendering the chart using angularjs.
+heading: Lifecycle Events using AngularJS
+---
+
+Events are signals that let you execute specific actions—such as sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, and events.
+
+The sample in this article lists the basic lifestyle events at the time of rendering the chart using `ember-fusioncharts` component.
+
+A chart is shown below:
+
+{% embed_chartData lifecycle-event-example-1.js json %}
+
+### Setup `ember-cli-build.js`
+
+In this step we will include all the necessary files and add the dependency to create the **Column 2D** chart. The code is given below:
+
+```
+/* eslint-env node */
+'use strict';
+
+const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+
+module.exports = function (defaults) {
+    let app = new EmberAddon(defaults, {
+        // Add options here
+    });
+
+    // Import FusionCharts library
+    app.import('bower_components/fusioncharts/fusioncharts.js');
+    app.import('bower_components/fusioncharts/fusioncharts.charts.js');        
+    app.import('bower_components/fusioncharts/themes/fusioncharts.theme.fusion.js');    
+
+    return app.toTree();
+};
+```
+
+In the above code, include the necessary libraries and components using import. For example, `ember-fusioncharts`, `fusioncharts`, etc.
+
+> If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
+
+### Add chart data to `chart-viewer.js`
+
+Add the following code to `chart-viewer.js`:
+
+```
+import Component from '@ember/component';
+
+var message = 'Status: ';
+
+export default Component.extend({    
+    width: 700,
+    height: 400,
+    type: 'column2d',
+    dataFormat: 'json',
+    dataSource: {
+        "chart": {
+            "caption": "Countries With Most Oil Reserves [2017-18]",
+            "subCaption": "In MMbbl = One Million barrels",
+            "xAxisName": "Country",
+            "yAxisName": "Reserves (MMbbl)",
+            "numberSuffix": "K",
+            "theme": "fusion"
+        },
+        "data": [{
+            "label": "Venezuela",
+            "value": "290"
+        }, {
+            "label": "Saudi",
+            "value": "260"
+        }, {
+            "label": "Canada",
+            "value": "180"
+        }, {
+            "label": "Iran",
+            "value": "140"
+        }, {
+            "label": "Russia",
+            "value": "115"
+        }, {
+            "label": "UAE",
+            "value": "100"
+        }, {
+            "label": "US",
+            "value": "30"
+        }, {
+            "label": "China",
+            "value": "30"
+        }]
+    },    
+    events: null,
+    message: 'Drag any column for years 2017 or 2018 to see updated value along with the label',
+
+    init() {
+        this._super(...arguments);
+        const self = this;
+        this.set('events', {
+            beforedataupdate: function() {
+                message += 'beforeDataUpdate, ';
+                self.set('message', message);
+            },
+            dataupdated: function() {
+                message += 'dataUpdated, ';
+                self.set('message', message);
+            },
+            drawcomplete: function() {
+                message += 'drawComplete, ';
+                self.set('message', message);
+            },
+            rendercomplete: function() {
+                message += 'renderComplete';
+                self.set('message', message);
+            }            
+        });
+    }    
+});
+```
+
+In the above code:
+
+1. Create a chart component to render the chart.
+
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
+
+3. Set the `message` which gets displayed while rendering the chart.
+
+4. Call the `init()` funtion where:
+	* `beforeDataUpdate` event is updated.
+	* `dataUpdated` event is updated.
+	* `drawComplete` event is updated.
+	* `renderComplete` event is updated.
+
+### Add data to `chart-viewer.hbs`
+
+Add the following code to `chart-viewer.hbs`:
+
+```
+{{fusioncharts-xt
+    width=width
+    height=height
+    type=type
+    dataFormat=dataFormat
+    dataSource=dataSource
+    events=events
+}}
+
+<p style="padding: 10px; background: rgb(245, 242, 240);">{{ message }}</p>
+```
+
+In the above code, add the `fusioncharts` component to render the chart.
