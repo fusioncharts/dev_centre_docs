@@ -8,53 +8,50 @@ FusionCharts Suite XT includes advanced features that let you add more context t
 
 Events are signals that let you execute specific actions—such as manipulating the DOM, sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. Events can be used to trigger action(s) when a chart renders successfully, when data completes loading, when a data plot is clicked, when the mouse pointer is hovered over a data plot, and so on.
 
-This article focuses on how you can dynamically add/remove event listener to the data plots in the chart using `ember-fusioncharts` component.
+This article focuses on how you can dynamically add/remove event listener to the data plots in the chart using `angularjs-fusioncharts` component.
 
 A chart is shown below:
 
 {% embed_chartData dynamically-add-chart-event-listener-example-1.js json %}
 
-### Setup `ember-cli-build.js`
-
-In this step we will include all the necessary files and add the dependency to create the **Column 2D** chart. The code is given below:
+The code to render the above chart is given below:
 
 ```
-/* eslint-env node */
-'use strict';
+//  Require AngularJS 
+var angular = require('angular');
 
-const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+// Require FusionCharts 
+var FusionCharts = require('fusioncharts');
 
-module.exports = function (defaults) {
-    let app = new EmberAddon(defaults, {
-        // Add options here
-    });
+// Include angularjs-fusioncharts 
+require('angularjs-fusioncharts');
 
-    // Import FusionCharts library
-    app.import('bower_components/fusioncharts/fusioncharts.js');
-    app.import('bower_components/fusioncharts/fusioncharts.charts.js');        
-    app.import('bower_components/fusioncharts/themes/fusioncharts.theme.fusion.js');
+// Require Chart modules 
+var Charts = require('fusioncharts/fusioncharts.charts');
 
-    return app.toTree();
-};
-```
+// Require Fusion theme
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
 
-In the above code, include the necessary libraries and components using import. For example, `ember-fusioncharts`, `fusioncharts`, etc.
+// Initialize Charts with FusionCharts instance
+Charts(FusionCharts);
 
-> If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
+// Initialize FusionTheme with FusionCharts instance
+FusionTheme(FusionCharts);
 
-### Add chart data to `chart-viewer.js`
-
-Add the following code to `chart-viewer.js`:
-
-```
-import Component from '@ember/component';
-
-export default Component.extend({    
-    width: 700,
-    height: 400,
-    type: 'column2d',
-    dataFormat: 'json',
-    dataSource: {
+var myApp = angular.module("myApp", ["ng-fusioncharts"]);
+myApp.controller("MyController", ["$scope", function($scope) {
+    var disableStyle = {
+        "border-color": "#d3d3d3",
+        "color": "#d3d3d3",
+        "background": "none",
+        "cursor": "default"
+    },
+    activeStyle = {
+        "border-color": "#6957da",
+        "cursor": "pointer"
+    };
+    $scope.message = "Click the below buttons to add an event dynamically to the chart";
+    $scope.myDataSource = {
         "chart": {
             "caption": "Countries With Most Oil Reserves [2017-18]",
             "subCaption": "In MMbbl = One Million barrels",
@@ -88,75 +85,82 @@ export default Component.extend({
             "label": "China",
             "value": "30"
         }]
-    },
-    message: 'Click the below buttons to add an event dynamically to a chart',
-    buttonText: 'ADD/LISTEN TO DATAPLOTCLICK EVENT',
-    actions: {
-        addEvent() {
-            const self = this;
-            if(this.get('buttonText') === 'ADD/LISTEN TO DATAPLOTCLICK EVENT') {
-                this.set('message', 'Click on the plot to see the value along with the label');
-                this.set('buttonText', 'REMOVE DATAPLOTCLICK EVENT');                
-                this.set('events', {
-                    dataplotclick: function (eventObj, dataObj) {
-                        self.set('message', 'You have clicked on plot ' + dataObj.categoryLabel + ' whose value is ' + dataObj.displayValue);
-                    }
-                });
-            }
-            else {
-                this.set('message', 'Click the below buttons to add an event dynamically to a chart');
-                this.set('buttonText', 'ADD/LISTEN TO DATAPLOTCLICK EVENT');
-                this.set('events', {
-                    dataplotclick: null
-                });
-            }
-        }
+    };
+    $scope.trackButton = activeStyle;
+    $scope.resetButton = disableStyle;
+
+    // handler for dataplotclick event
+    $scope.clickHandler = function(e) {
+        $scope.$apply(function() {
+            $scope.message = "You have clicked on plot <b>" + e.data.categoryLabel + "</b> whose value is <b>" + e.data.displayValue + "</b>";
+        });
+    };
+    $scope.track = function() {
+        FusionCharts.addEventListener("dataplotclick", $scope.clickHandler);
+        $scope.message = "Click on the plot to see the value along with the label";
+        $scope.trackButton = disableStyle;
+        $scope.resetButton = activeStyle;
+    };
+    $scope.reset = function() {
+        FusionCharts.removeEventListener("dataplotclick", $scope.clickHandler);
+        $scope.message = "Click the below buttons to add an event dynamically to the chart";
+        $scope.trackButton = activeStyle;
+        $scope.resetButton = disableStyle;
     }
-});
+    // unlisten to dataplotclick event when the view gets destroyed.
+    $scope.$on("$destroy", function() {
+        FusionCharts.removeEventListener("dataplotclick", $scope.clickHandler);
+    });
+}]);
 ```
 
-In the above code:
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
-1. Create a chart component to render the chart.
+```
+<div ng-app="myApp">
+	<div ng-controller="MyController"> 
+    	<div id="chart-container">
+			<fusioncharts
+				type="column2d"
+				width="100%"
+				height="500"
+				dataFormat="json"
+				datasource="{{myDataSource}}">
+			</fusioncharts>
+      	</div>
+      	<p ng-bind-html="message" style="padding: 10px; background: #f5f2f0"></p>
+      	<div style="display: flex; justify-content: center">
+			<a ng-click="track()" ng-style="trackButton">LISTEN TO DATAPLOTCLICK EVENT</a>
+			<a ng-click="reset()" ng-style="resetButton">REMOVE DATAPLOTCLICK EVENT</a>
+      	</div>
+  	</div>
+</div>
+```
 
-2. Store the chart configuration in a JSON object. In the JSON object:
-    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height of the chart in pixels. 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of `dataSource`.
+The above chart has been rendered using the following steps:
 
-3. Set the `message` which gets displayed while rendering the chart.
+1. Include the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
 
-4. Add the `addEventListener` to: 
+2. Add the chart and the theme as dependencies to the core.
+
+3. Store the chart configurations in a variable (`myApp`).
+
+4. Set the `message` and its styling which gets displayed while rendering the chart.
+
+5. Store the data source in a variable (`dataSource`).
+
+6. Set the scope for the buttons.
+
+7. Add the `addEventListener` to: 
 	* Track plot clicks.
 	* Track the clicks on the data plot.
 	* Set the default message when data plot tracking is enabled.
 	* Set the event listener for `dataPlotClick` event when the message is updated with the values of the data plot.
 	* Set the  handler for **Reset** button. The **Reset** button resets the chart to default message and removes the event listener.
 
-### Add data to `chart-viewer.hbs`
+8. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels.
+    * Embed the json data as the value of `dataSource`.
 
-Add the following code to `chart-viewer.hbs`:
-
-```
-{{fusioncharts-xt
-    width=width
-    height=height
-    type=type
-    dataFormat=dataFormat
-    dataSource=dataSource
-}}
-
-<div style="padding: 0px; background: rgb(255, 255, 255);" id="message">
-    {{ message }}
-</div>
-<div style="display: flex; justify-content: center; margin: 0px">
-    <button class="btn btn-outline-secondary btn-sm" id="track" {{ action 'addEvent' }}>{{ buttonText }}</button>    
-</div>
-```
-
-In the above code:
-
-1. Add the `fusioncharts` component to render the chart.
-
-2. Add **Buttons** using `<button>` to update the chart to add/remove the chart event listener.
+9. Create a `<div>` to add **buttons** using `<a>`.
