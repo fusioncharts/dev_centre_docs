@@ -139,6 +139,6 @@ The above chart has been rendered using the following steps:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height (in pixels).
     * Set the `dataFormat` as JSON.
-	* Embed the json data from `dataSource`.
+    * Embed the json data from `dataSource`.
 
 6. Create Radio buttons for **column2d**, **bar2d** and **pie2d** chart using `<input>`.
