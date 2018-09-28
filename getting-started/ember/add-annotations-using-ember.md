@@ -129,14 +129,14 @@ export default Component.extend({
 
 In the above code:
 
-1. A chart component is created to render the chart.
+1. Create a chart component to render the chart.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `spline`. For Spline chart, the alias is `spline`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
-    * In the `dataSource`, an `annotations` object is created to specify the cosmetics and functionalities of the annotation.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
+    * In the `dataSource`, create an `annotations` object to specify the cosmetics and functionalities of the annotation.
 
 ### Add data to `chart-viewer.hbs`
 
@@ -152,4 +152,4 @@ Add the following code to `chart-viewer.hbs`:
 }}
 ```
 
-In the above code `fusioncharts` component is added to `chart-viewer.hbs` template to render the chart.
+In the above code add the `fusioncharts` component to `chart-viewer.hbs` template to render the chart.

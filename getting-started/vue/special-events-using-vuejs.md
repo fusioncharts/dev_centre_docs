@@ -145,20 +145,20 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
-2. Registered `vue-fusioncharts` component.
+2. Register `vue-fusioncharts` component.
 
-3. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `dragcolumn2d`. Each chart type is represented with a unique chart alias. For Drag-able Column 2D chart, the alias is `dragcolumn2d`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+3. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-4. `message` is set which gets displayed with the rendering of the chart.
+4. Set the `message` which gets displayed with the rendering of the chart.
 
-5. In the above sample, `dataPlotDragEnd` event is triggered whenever the data plot is dragged. The function is called which uses that data ad formats it using FusionCharts `formatNumber` API.
+5. Add the `dataPlotDragEnd` event which is triggered whenever the data plot is dragged. The function is called which uses that data and formats it using FusionCharts `formatNumber` API.
 
-6. Created a `fusioncharts` directive in a template. 
+6. Create a `fusioncharts` directive in a template. 
 
-7. A `<div>` is created to displays the message to drag the data plot.
+7. Create a `<div>` to display the message to drag the data plot.

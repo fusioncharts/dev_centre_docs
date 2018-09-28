@@ -54,11 +54,11 @@ export class AppModule {}
 
 In the above code:
 
-1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and componentsusing import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
 
-2. Loaded FusionCharts, chart module and fusion theme.
+2. Load FusionCharts, chart module and the `fusion` theme.
 
-3. Added dependencies to `FusionChartsModule`.
+3. Add dependencies to `FusionChartsModule`.
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
@@ -154,19 +154,19 @@ export class AppComponent {
 
 In the above code:
 
-1. The JSON data is added within the `AppComponent` class.
+1. Add the JSON data within the `AppComponent` class.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-3. In the above sample, to update the chart we have generated random data using **Math.random()**.
+3. Generate random data, to update the chart using **Math.random()**.
 
-4. `updateData()` function is added to randomly update the value of the chart when the button is clicked.
+4. Add the `updateData()` function to randomly update the value of the chart when the button is clicked.
 
-5. `controls.innerHTML` is added to create the `button` inside the `<div>`.
+5. Add `controls.innerHTML` to create the `button` inside the `<div>`.
 
 ### Add data to `app.component.html`
 
@@ -183,7 +183,7 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
-In the above code a `fusioncharts` directive is created in a template.
+In the above code, create the `fusioncharts` directive in a template.
 
 ## Update Chart Attributes
 
@@ -228,11 +228,11 @@ export class AppModule {}
 
 In the above code:
 
-1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
 
-2. Loaded FusionCharts, chart module and fusion theme.
+2. Load FusionCharts, chart module and the `fusion` theme.
 
-3. Added dependencies to `FusionChartsModule`.
+3. Add dependencies to `FusionChartsModule`.
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
@@ -348,20 +348,20 @@ export class AppComponent {
 
 In the above code:
 
-1. The JSON data is added within the `AppComponent` class.
+1. Add the JSON data within the `AppComponent` class.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`..
 
-3. An event is triggered:
-    * To update the chart caption, sub-capion alignment.
-    * To update the background color.
+3. Add an event to:
+    * Update the chart caption, sub-capion alignment.
+    * Update the background color.
     * Reset all the chart data to it's initial version.
 
-4. A container is created to render buttons in the chart.
+4. Create a container to render buttons in the chart.
 
 ### Add data to `app.component.html`
 
@@ -381,4 +381,4 @@ Add the following code to `app.component.html`:
 </p>
 ```
 
-In the above code a `fusioncharts` directive is created in a template.
+In the above code create a `fusioncharts` directive in a template.

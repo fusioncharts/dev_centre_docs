@@ -245,6 +245,7 @@ To render the map, follow the steps below:
 The full code for the above sample is:
 
 ```
+<%
 require 'json'
 
     # Map rendering
@@ -311,6 +312,7 @@ require 'json'
         })
 
     end
+    %>
 ```
 
 The HTML template of the above sample is shown below:
@@ -334,6 +336,7 @@ Let's create a map of California to show the "Web visits for a particular month"
 To render the above map, the following code is used:
 
 ```
+<%
 # Map rendering
 
     def self.getMap 
@@ -557,6 +560,7 @@ To render the above map, the following code is used:
         })
 
     end
+%>
 ```
 
 The HTML template of the above sample is shown below:
