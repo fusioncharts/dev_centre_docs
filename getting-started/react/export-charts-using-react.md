@@ -116,15 +116,16 @@ ReactDOM.render(
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d` for the first chart. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
     * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
-3. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+3. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
 
 ## Export Multiple Charts
 
@@ -346,17 +347,18 @@ ReactDOM.render(
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d` for the first chart and `stackedcolumn2d` for the second chart. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
     * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
-3. To export multiple charts on the page an **event handler** is added to fire the export operation when the button is clicked.
+3. To export multiple charts on the page add an **event handler** to fire the export operation when the button is clicked.
 
-4. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+4. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
 
 ## Modes of Export
 

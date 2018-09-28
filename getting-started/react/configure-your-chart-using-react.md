@@ -130,25 +130,25 @@ ReactDOM.render(
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-3. Created a component to include `react-fusioncharts` component.
+3. Create a component to include `react-fusioncharts` component.
 
-4. In the above sample, to update the chart we have generated random data using **Math.random()**.
+4. Generate random data to update the chart using **Math.random()**.
 
-5. An event handler is added to update chart button.
+5. Add an event handler to update chart button.
 
-6. `updateData()` function is added to randomly update the value of the chart when the button is clicked.
+6. Add the `updateData()` function to randomly update the value of the chart when the button is clicked.
 
-7. `render()` function is added to create the `button` inside the `<div>`.
+7. Add the `render()` function to create the `button` inside the `<div>`.
 
-8. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+8. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
 
 ## Update Chart Attributes
 
@@ -301,24 +301,24 @@ ReactDOM.render( <
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-3. Created a component to include `react-fusioncharts` component.
+3. Create a component to include `react-fusioncharts` component.
 
-4. **renderComplete()** function is called by FC-React component to return the rendered chart.
+4. Call the `renderComplete()` function to return the rendered chart.
 
-5. An event handler is added to update the background color of the chart when the button is clicked.
+5. Add an event handler to update the background color of the chart when the button is clicked.
 
-6. An event handler is added to change the caption alignment of the chart when the button is clicked.
+6. Add an event handler to change the caption alignment of the chart when the button is clicked.
 
-7. The third event handler is added for the Reset button. When clicked this handler sends the chart to its rendered state.
+7. Add an event handler for the **Reset** button to return the chart to its rendered state.
 
-8. `render()` function is added to create the `buttons` inside the `<div>`.
+8. Add the `render()` function to create the `buttons` inside the `<div>`.
 
-9. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+9. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.

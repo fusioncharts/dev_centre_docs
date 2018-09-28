@@ -144,20 +144,20 @@ ReactDOM.render(
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-3. Created a component to include `react-fusioncharts` component.
+3. Create a component to include `react-fusioncharts` component.
 
 4. In the above sample:
-	* `renderComplete` event is used to render the charts at runtime.
-	* `radioHander` is uded for radio buttons to change the chart type.
+	* Use the `renderComplete` to render the charts at runtime.
+	* Use the `radioHander` for radio buttons to change the chart type.
 
-5. `render()` function is added to create the **radio buttons** inside the `<div>`.
+5. Add the `render()` function to create the **radio buttons** inside the `<div>`.
 
-6. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+6. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
