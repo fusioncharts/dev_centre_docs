@@ -15,7 +15,7 @@ A drag-able column chart is shown below:
 The code to render the above chart is given below:
 
 ```
-//  Require AngularJS 
+// Require AngularJS 
 var angular = require('angular');
 
 // Require FusionCharts 
@@ -141,8 +141,8 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 	  	<!--Listen to FusionCharts events by using "fcevent-<fc-event-name>" attribute. In this case the events used are dataplotdragstart and dataplotdragend-->   
 	    <fusioncharts
 			type="dragcolumn2d"
-			width="100%"
-			height="500"
+			width="700"
+			height="400"
 			dataFormat="json"
 			fcevent-dataplotdragstart="dataPlotDragstart(event)"
 			fcevent-dataplotdragend="dataPlotDragend(event)"
