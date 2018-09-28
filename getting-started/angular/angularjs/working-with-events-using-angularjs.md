@@ -98,19 +98,21 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
 
 2. Add the chart and the theme as dependencies to the core.
 
-3. Store the chart configurations in a JSON object.
+3. Store the chart configurations in a variable (`myApp`).
 
-4. In the above sample:
+4. Store the data source in a variable (`dataSource`).
+
+5. In the above sample:
     * Callback handler for `plotRollOver` event has been used which is triggered when the mouse pointer is rolled over a data plot.
     * Callback handler for `plotRollOut` event has been used which is triggered when the mouse pointer is rolled out of the data plot.
 
-5. A container is created to render buttons in the chart.
+6. A container is created to render buttons in the chart.
 
-6. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
+7. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height (in pixels).
     * Embed the json data as the value of the `dataSource`.
