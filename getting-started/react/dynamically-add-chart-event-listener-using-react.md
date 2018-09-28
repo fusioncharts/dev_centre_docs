@@ -167,23 +167,23 @@ ReactDOM.render(
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-3. Created a component to include `react-fusioncharts` component.
+3. Create a component to include `react-fusioncharts` component.
 
 4. In the above sample:
-	* A handler is added to track plot clicks.
-	* An event listener is added for data plot click on the chart.
-	* A default message is set when data plot tracking is enabled.
-	* An event listener for `dataPlotClick` event when the message is updated with the values of the data plot.
-	* A handler is added for the **Reset** button. The Reset button resets the chart to default message and removes the event listener.
+	* Add a handler to track plot clicks.
+	* Add an event listener is added for data plot click on the chart.
+	* Set the default message is set when data plot tracking is enabled.
+	* Add an event listener for `dataPlotClick` event when the message is updated with the values of the data plot.
+	* Add a handler is added for the **Reset** button. The Reset button resets the chart to default message and removes the event listener.
 
-5. `render()` function is added to create **buttons** inside the `<div>`.
+5. Add the `render()` function to create **buttons** inside the `<div>`.
 
-6. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+6. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.

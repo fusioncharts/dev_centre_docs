@@ -122,19 +122,19 @@ ReactDOM.render(
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
     * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
 3. To set the datasource using URL:
-    * The value of the `dataFormat` has been set to **jsonurl**.
-    * A static URL has been set to `dataSource` to render the above chart.
+    * Set the value of the `dataFormat` to **jsonurl**.
+    * Set the static URL to `dataSource` to render the above chart.
 
-4. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+4. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
@@ -204,16 +204,16 @@ ReactDOM.render(
 );
 ```
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as XML.
     * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
 
 3. To set the datasource using URL:
-    * The value of the `dataFormat` has been set to **xmlurl**.
-    * A static URL has been set to `dataSource` to render the above chart.
+    * Set the value of the `dataFormat` to **xmlurl**.
+    * Set the static URL to `dataSource` to render the above chart.
 
-4. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+4. Create a `DOM` element and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
