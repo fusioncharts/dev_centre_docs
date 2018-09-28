@@ -142,22 +142,22 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
-2. Registered `vue-fusioncharts` component.
+2. Register `vue-fusioncharts` component.
 
-3. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here]({% site.baseurl %}/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+3. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
 4. In the above sample:
-	* An event handler is attached using `attachHandler` to `dataPlotClick` event.
-	* An event handler is removed using `removeHandler` from `dataPlotClick` event when not required.
-	* An event handler is removed using `disposed` from `dataPlotClick` event when chart gets disposed.
+	* Attach an event handler using `attachHandler` to `dataPlotClick` event.
+	* Remove an event handler using `removeHandler` from `dataPlotClick` event when not required.
+	* Remove an event handler `disposed` from `dataPlotClick` event when chart gets disposed.
 
-5. Created a `fusioncharts` directive in a template. 
+5. Create a `fusioncharts` directive in a template. 
 
 6. Create buttons in a template to:
 	* Add/Listen to the `dataPlotClick` event

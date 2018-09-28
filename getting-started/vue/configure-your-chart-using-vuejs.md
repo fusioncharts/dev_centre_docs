@@ -129,21 +129,21 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
-2. Registered `vue-fusioncharts` component.
+2. Register `vue-fusioncharts` component.
 
-3. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+3. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-4. In the above sample, to update the chart we have generated random data using **Math.random()**.
+4. Generate random numbers to update the chart using **Math.random()**.
 
-5. `updateData()` function is added to randomly update the value of the chart when the button is clicked.
+5. Add the `updateData()` function to randomly update the value of the chart when the button is clicked.
 
-6. `controls.innerHTML` is added to create the `button` inside the `<div>`.
+6. Add the `controls.innerHTML` to create the `button` inside the `<div>`.
 
 7. Create a `fusioncharts` directive in a template.
 
@@ -333,15 +333,15 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
-2. Registered `vue-fusioncharts` component.
+2. Register `vue-fusioncharts` component.
 
-3. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+3. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
 4. An event is triggered:
 
@@ -349,6 +349,6 @@ The above chart has been rendered using the following steps:
     * To update the backgroing color.
     * Reset all the chart data to it's initial version.
 
-5. A container is created to render buttons in the chart.
+5. Create a container to render buttons in the chart.
 
-6. Created a `fusioncharts` directive in a template.
+6. Create a `fusioncharts` directive in a template.

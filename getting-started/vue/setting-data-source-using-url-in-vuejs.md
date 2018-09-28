@@ -123,16 +123,16 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    
 3. To set the datasource using URL:
-    * The value of the `dataFormat` has been set to **jsonurl**.
-    * A static URL has been set to `dataSource` to render the above chart.
+    * Set the value of the `dataFormat` as **jsonurl**.
+    * Set the static URL to `dataSource` to render the above chart.
 
 4. Created a `fusioncharts` directive in a template.
 
@@ -206,15 +206,15 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in an XML object. In the XML object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as XML.
-
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as XML.
+    
 3. To set the datasource using URL:
-    * The value of the `dataFormat` has been set to **xmlurl**.
-    * A static URL has been set to `dataSource` to render the above chart.
+    * Set the value of the `dataFormat` as **xmlurl**.
+    * Set the static URL to `dataSource` to render the above chart.
 
-4. Created a `fusioncharts` directive in a template.
+4. Create a `fusioncharts` directive in a template.
