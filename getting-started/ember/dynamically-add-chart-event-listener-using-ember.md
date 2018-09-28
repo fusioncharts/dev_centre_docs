@@ -38,7 +38,7 @@ module.exports = function (defaults) {
 };
 ```
 
-In the above code necessary libraries and components have been included using import. For example, `ember-fusioncharts`, `fusioncharts`, etc.
+In the above code, include the necessary libraries and components using import. For example, `ember-fusioncharts`, `fusioncharts`, etc.
 
 > If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
 
@@ -117,17 +117,17 @@ export default Component.extend({
 
 In the above code:
 
-1. A chart component is created to render the chart.
+1. Create a chart component to render the chart.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-3. `message` is set which gets displayed with the rendering of the chart.
+3. Set the `message` which gets displayed while rendering the chart.
 
-4. In the above sample an `addEventListener` is added to: 
+4. Add the `addEventListener` to: 
 	* Track plot clicks.
 	* Track the clicks on the data plot.
 	* Set the default message when data plot tracking is enabled.
@@ -157,6 +157,6 @@ Add the following code to `chart-viewer.hbs`:
 
 In the above code:
 
-1. `fusioncharts` component is added to `chart-viewer.hbs` template to render the chart.
+1. Add the `fusioncharts` component to render the chart.
 
-2. **Buttons** are added using `<button>` to update the chart to add/remove the chart event listener.
+2. Add **Buttons** using `<button>` to update the chart to add/remove the chart event listener.

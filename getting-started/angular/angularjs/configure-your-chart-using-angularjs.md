@@ -118,8 +118,6 @@ myApp.controller('MyController', ['$scope', function($scope) {
 }
 ```
 
-Now, create the module and the controller for the template. The code for the `js` file is given below:
-
 Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
 ```
@@ -134,23 +132,22 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
 
 2. Add the chart and the theme as dependencies to the core.
 
-3. Store the chart configurations in a JSON object. In this JSON object:
+3. Store the chart configurations in a JSON object.
+
+4. In the above sample, to update the chart generate random data using **Math.random()**.
+
+5. Add `updateData()` function to randomly update the value of the chart when the button is clicked.
+
+6. Add `controls.innerHTML` to create the `button` inside the `<div>`.
+
+7. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height (in pixels). 
-    * Set the `dataFormat` as JSON.
+    * Set the width and height (in pixels).
     * Embed the json data as the value of the `dataSource`.
-
-4. In the above sample, to update the chart we have generated random data using **Math.random()**.
-
-5. `updateData()` function is added to randomly update the value of the chart when the button is clicked.
-
-6. `controls.innerHTML` is added to create the `button` inside the `<div>`.
-
-7. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`.
 
 ## Update Chart Attributes
 

@@ -117,23 +117,23 @@ The HTML template of the above sample is shown below:
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
 
-2. Passed FusionCharts and Fusion Theme as dependency.
+2. Pass FusionCharts and Fusion Theme as dependency.
 
-3. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+3. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-4. Used FusionChart's jQuery method `insertFusionCharts()` to create FusionCharts.
+4. Use FusionChart's jQuery method `insertFusionCharts()` to create FusionCharts.
 
-5. In the above sample, to update the chart we have generated random data using **Math.random()**.
+5. Generate random data to update the chart using **Math.random()**.
 
-6. An event handler `addEventListener` is added to update chart button.
+6. Add an event handler `addEventListener` to update chart button.
 
-7. Created an HTML template to render the chart and the **Change Chart Data** button.
+7. Create an HTML template to render the chart and the **Change Chart Data** button.
 
 ## Update Chart Attributes
 
@@ -264,25 +264,25 @@ The HTML template of the above sample is shown below:
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
 
-2. Passed FusionCharts and Fusion Theme as dependency.
+2. Pass FusionCharts and Fusion Theme as dependency.
 
-3. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+3. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-4. Used FusionChart's jQuery method `insertFusionCharts()` to create FusionCharts.
+4. Use FusionChart's jQuery method `insertFusionCharts()` to create FusionCharts.
 
-5. In the above sample, to update the chart we have generated random data using **Math.random()**.
+5. Generate random data to update the chart using **Math.random()**.
 
-6. An event handler `addEventListener` is added to change the chart background of the chart when the button is clicked..
+6. Add an event handler `addEventListener` to change the chart background of the chart when the button is clicked.
 
-7. An event handler to change the caption alignment of the chart when the button is clicked.
+7. Add an event handler to change the caption alignment of the chart when the button is clicked.
 
-8. The third event handler is added for the Reset button. When clicked this handler sends the chart to its rendered state.
+8. Add an event handler for the Reset button. When clicked this handler sends the chart to its rendered state.
 
 9. Created an HTML template to render the chart and the:
     * **Change Chart Background Button** button.

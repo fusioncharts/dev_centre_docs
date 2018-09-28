@@ -68,11 +68,11 @@ export class AppModule {
 
 In the above code:
 
-1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
 
-2. Loaded FusionCharts, chart module and fusion theme.
+2. Load FusionCharts, chart module and the `fusion` theme.
 
-3. Added dependencies to `FusionChartsModule`.
+3. Add dependencies to `FusionChartsModule`.
 
 > The `<fusioncharts></fusioncharts>` component is available for use in any component throughout your app.
 
@@ -142,16 +142,15 @@ export class AppComponent {
 
 In the above code:
 
-1. The JSON data is added within the `AppComponent` class.
+1. Add the JSON data within the `AppComponent` class.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
-    * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-3. Created a `fusioncharts` directive to render the chart.
+3. Create a `fusioncharts` directive to render the chart.
 
 ### Add data to `app.component.html`
 
@@ -165,7 +164,7 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
-In the above code a `fusioncharts` directive is created in a template.
+In the above code create a `fusioncharts` directive in a template.
 
 ## Export Multiple Charts
 
@@ -216,11 +215,11 @@ export class AppModule {
 
 In the above code:
 
-1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
 
-2. Loaded FusionCharts, chart module and fusion theme.
+2. Load FusionCharts, chart module and the `fusion` theme.
 
-3. Added dependencies to `FusionChartsModule`.
+3. Add dependencies to `FusionChartsModule`.
 
 > The `<fusioncharts></fusioncharts>` component is available for use in any component throughout your app.
 
@@ -442,16 +441,17 @@ export class Ex10 {
 
 In the above code:
 
-1. The JSON data is added within the `AppComponent` class.
+1. Add the JSON data within the `AppComponent` class.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d` for the first chart and `stackedcolumn2d` for the second chart. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
 3. To export multiple charts as PDF, set the `batchExport` to PDF.
 
-4. A container is created to render buttons in the chart.
+4. Create a container to render buttons in the chart.
 
 ### Add data to `app.component.html`
 
@@ -480,7 +480,7 @@ Add the following code to `app.component.html`:
 </div>
 ```
 
-In the above code a `fusioncharts` directive is created in a template.
+In the above code create a `fusioncharts` directive in a template.
 
 ## Modes of Export
 

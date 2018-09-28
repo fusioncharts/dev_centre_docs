@@ -1,0 +1,171 @@
+<svg height="350" version="1.1" width="550" xmlns="http://www.w3.org/2000/svg" id="raphael-paper-5" style="overflow: hidden; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); user-select: none; cursor: default; vertical-align: middle; position: relative; background-color: rgb(255, 255, 255);">
+    <desc></desc>
+    <defs>
+        <clipPath id="rr-49DB0966-44E1-42FF-B9FC-92B262D41C11">
+            <rect x="54" y="67.19999999999999" width="481" height="241" transform="matrix(1,0,0,1,0,0)"></rect>
+        </clipPath>
+        <clipPath id="rr-49004B48-2424-46C6-8DC9-B39CC3EC5D72">
+            <rect x="54" y="67.19999999999999" width="481" height="241" transform="matrix(1,0,0,1,0,0)"></rect>
+        </clipPath>
+        <clipPath id="rr-232607D5-64C4-4AC9-AB42-6A1233811909">
+            <rect x="52" y="65.19999999999999" width="485" height="245" transform="matrix(1,0,0,1,0,0)"></rect>
+        </clipPath>
+        <clipPath id="rr-AC08B54F-5E36-4607-BB1F-D74249684D69">
+            <rect x="52" y="65.19999999999999" width="485" height="245" transform="matrix(1,0,0,1,0,0)"></rect>
+        </clipPath>
+        <clipPath id="rr-EF0D08DD-1F7E-40E8-BDD5-074DDCC689B2">
+            <rect x="52" y="65.19999999999999" width="485" height="245" transform="matrix(1,0,0,1,0,0)"></rect>
+        </clipPath>
+        <clipPath id="rr-70B52328-9E93-4CCB-AF4A-F85EAD0F2AD1">
+            <rect x="54" y="0" width="481" height="308.2" transform="matrix(1,0,0,1,0,0)"></rect>
+        </clipPath>
+    </defs>
+    <g class="raphael-group-6-parentgroup">
+        <g class="raphael-group-7-background">
+            <rect x="0" y="0" width="550" height="350" stroke="none" fill-opacity="1" fill="#ffffff" ry="0" rx="0"></rect>
+            <rect x="0" y="0" width="550" height="350" stroke="#767575" stroke-opacity="0.5" stroke-width="0" stroke-dasharray="none" fill="none" ry="0" rx="0"></rect>
+        </g>
+        <g class="raphael-group-33-canvas">
+            <rect x="54" y="67.19999999999999" width="481" height="241" ry="0" rx="0" stroke-width="0" stroke="none" fill-opacity="0" fill="#ffffff"></rect>
+        </g>
+        <g class="raphael-group-8-axisbottom">
+            <g class="raphael-group-80-dataset-Name-group">
+                <g class="raphael-group-90-dataset-axis-name"></g>
+            </g>
+            <g class="raphael-group-83-dataset-Label-group">
+                <g class="raphael-group-86-dataset-axis" transform="matrix(1,0,0,1,0,0)" font-family="Source Sans Pro" font-size="14px" font-weight="normal" font-style="normal" style="font-family: &quot;Source Sans Pro&quot;; font-size: 14px; font-weight: normal; font-style: normal;">
+                    <text transform="matrix(1,0,0,1,0,0)" fill-opacity="1" fill="#5a5a5a" font-size="14px" opacity="1" text-anchor="end" x="39" stroke="none" y="312" style="font-size: 14px; text-anchor: end;">0</text>
+                    <text transform="matrix(1,0,0,1,0,0)" fill-opacity="1" fill="#5a5a5a" font-size="14px" opacity="1" text-anchor="end" x="39" stroke="none" y="272" style="font-size: 14px; text-anchor: end;">5K</text>
+                    <text transform="matrix(1,0,0,1,0,0)" fill-opacity="1" fill="#5a5a5a" font-size="14px" opacity="1" text-anchor="end" x="39" stroke="none" y="232" style="font-size: 14px; text-anchor: end;">10K</text>
+                    <text transform="matrix(1,0,0,1,0,0)" fill-opacity="1" fill="#5a5a5a" font-size="14px" opacity="1" text-anchor="end" x="39" stroke="none" y="192" style="font-size: 14px; text-anchor: end;">15K</text>
+                    <text transform="matrix(1,0,0,1,0,0)" fill-opacity="1" fill="#5a5a5a" font-size="14px" opacity="1" text-anchor="end" x="39" stroke="none" y="152" style="font-size: 14px; text-anchor: end;">20K</text>
+                    <text transform="matrix(1,0,0,1,0,0)" fill-opacity="1" fill="#5a5a5a" font-size="14px" opacity="1" text-anchor="end" x="39" stroke="none" y="112" style="font-size: 14px; text-anchor: end;">25K</text>
+                    <text transform="matrix(1,0,0,1,0,0)" fill-opacity="1" fill="#5a5a5a" font-size="14px" opacity="1" text-anchor="end" x="39" stroke="none" y="71" style="font-size: 14px; text-anchor: end;">30K</text>
+                </g>
+            </g>
+            <g class="raphael-group-91-axis-line-tick-bottom"></g>
+            <g class="raphael-group-99-dataset-Name-group">
+                <g class="raphael-group-109-dataset-axis-name"></g>
+            </g>
+            <g class="raphael-group-102-dataset-Label-group">
+                <g class="raphael-group-105-dataset-axis" transform="matrix(1,0,0,1,0,0)" font-family="Source Sans Pro" font-size="14px" font-weight="normal" font-style="normal" style="font-family: &quot;Source Sans Pro&quot;; font-size: 14px; font-weight: normal; font-style: normal;">
+                    <text transform="matrix(1,0,0,1,0,0)" fill-opacity="1" fill="#5a5a5a" opacity="1" x="134.16666666666666" text-anchor="middle" stroke="none" y="331" style="text-anchor: middle;">Mon</text>
+                    <text transform="matrix(1,0,0,1,0,0)" fill-opacity="1" fill="#5a5a5a" opacity="1" x="294.5" text-anchor="middle" stroke="none" y="331" style="text-anchor: middle;">Tue</text>
+                    <text transform="matrix(1,0,0,1,0,0)" fill-opacity="1" fill="#5a5a5a" opacity="1" x="454.83333333333337" text-anchor="middle" stroke="none" y="331" style="text-anchor: middle;">Wed</text>
+                </g>
+            </g>
+            <g class="raphael-group-110-axis-line-tick-bottom"></g>
+        </g>
+        <g class="raphael-group-35-axisReferenceVisualsFloor" clip-path="url('#rr-49DB0966-44E1-42FF-B9FC-92B262D41C11')"></g>
+        <g class="raphael-group-34-axisReferenceVisualsBottom">
+            <path stroke-dasharray="none" stroke="#dfdfdf" stroke-opacity="0.4" stroke-width="1" d="M54,308.5L535,308.5" stroke-linecap="butt" fill="none"></path>
+            <path stroke-dasharray="none" stroke="#dfdfdf" stroke-opacity="0.4" stroke-width="1" d="M54,268.5L535,268.5" stroke-linecap="butt" fill="none"></path>
+            <path stroke-dasharray="none" stroke="#dfdfdf" stroke-opacity="0.4" stroke-width="1" d="M54,227.5L535,227.5" stroke-linecap="butt" fill="none"></path>
+            <path stroke-dasharray="none" stroke="#dfdfdf" stroke-opacity="0.4" stroke-width="1" d="M54,187.5L535,187.5" stroke-linecap="butt" fill="none"></path>
+            <path stroke-dasharray="none" stroke="#dfdfdf" stroke-opacity="0.4" stroke-width="1" d="M54,147.5L535,147.5" stroke-linecap="butt" fill="none"></path>
+            <path stroke-dasharray="none" stroke="#dfdfdf" stroke-opacity="0.4" stroke-width="1" d="M54,107.5L535,107.5" stroke-linecap="butt" fill="none"></path>
+            <path stroke-dasharray="none" stroke="#dfdfdf" stroke-opacity="0.4" stroke-width="1" d="M54,67.5L535,67.5" stroke-linecap="butt" fill="none"></path>
+        </g>
+        <g class="raphael-group-9-belowplot">
+            <g class="raphael-group-10-lowerannotations"></g>
+        </g>
+        <g class="raphael-group-36-crossline"></g>
+        <g class="raphael-group-37-crosslineBottom"></g>
+        <g class="raphael-group-40-axisReferenceVisualsMiddle" clip-path="url('#rr-49004B48-2424-46C6-8DC9-B39CC3EC5D72')"></g>
+        <g class="raphael-group-42-quadrant" clip-path="url('#rr-EF0D08DD-1F7E-40E8-BDD5-074DDCC689B2')"></g>
+        <g class="raphael-group-11-plots" clip-path="url('#rr-232607D5-64C4-4AC9-AB42-6A1233811909')">
+            <g class="raphael-group-44-column-shadow-group">
+                <g class="raphael-group-60-vcanvas-column-shadow" transform="matrix(1,0,0,1,0,0)">
+                    <g class="raphael-group-71-shadow-group"></g>
+                    <g class="raphael-group-72-error-shadow-group"></g>
+                </g>
+            </g>
+            <g class="raphael-group-45-column">
+                <g class="raphael-group-61-vcanvas-column-plot" transform="matrix(1,0,0,1,0,0)">
+                    <g class="raphael-group-69-columnTrendGroup"></g>
+                    <g class="raphael-group-73-common-elems-group"></g>
+                    <g class="raphael-group-74-plot-group">
+                        <rect x="109.5" width="50" height="121" y="187.5" ry="0" rx="0" fill-opacity="1" fill="#5d62b5" stroke="#c0c0c0" stroke-opacity="0.000001" stroke-width="0" stroke-dasharray="none" stroke-linejoin="miter"></rect>
+                        <rect x="269.5" width="50" height="114" y="194.5" ry="0" rx="0" fill-opacity="1" fill="#5d62b5" stroke="#c0c0c0" stroke-opacity="0.000001" stroke-width="0" stroke-dasharray="none" stroke-linejoin="miter"></rect>
+                        <rect x="429.5" width="50" height="205" y="103.5" ry="0" rx="0" fill-opacity="1" fill="#5d62b5" stroke="#c0c0c0" stroke-opacity="0.000001" stroke-width="0" stroke-dasharray="none" stroke-linejoin="miter"></rect>
+                    </g>
+                    <g class="raphael-group-75-error-plot-group"></g>
+                </g>
+            </g>
+            <g class="raphael-group-46-area-shadow-group">
+                <g class="raphael-group-62-vcanvas-area-shadow" transform="matrix(1,0,0,1,0,0)"></g>
+            </g>
+            <g class="raphael-group-47-area">
+                <g class="raphael-group-63-vcanvas-area-plot" transform="matrix(1,0,0,1,0,0)"></g>
+            </g>
+            <g class="raphael-group-48-line-shadow-group">
+                <g class="raphael-group-64-vcanvas-line-shadow" transform="matrix(1,0,0,1,0,0)"></g>
+            </g>
+            <g class="raphael-group-49-line">
+                <g class="raphael-group-65-vcanvas-line-plot" transform="matrix(1,0,0,1,0,0)"></g>
+            </g>
+            <g class="raphael-group-50-default-shadow-group">
+                <g class="raphael-group-66-vcanvas-default-shadow" transform="matrix(1,0,0,1,0,0)"></g>
+            </g>
+            <g class="raphael-group-51-default">
+                <g class="raphael-group-67-vcanvas-default-plot" transform="matrix(1,0,0,1,0,0)"></g>
+            </g>
+        </g>
+        <g class="raphael-group-12-axistop">
+            <g class="raphael-group-81-axis-Line-group">
+                <g class="raphael-group-85-scroller-container"></g>
+                <g class="raphael-group-88-axis-line-tick"></g>
+            </g>
+            <g class="raphael-group-82-dataset-Trend-group-top">
+                <g class="raphael-group-89-dataset-axis-trend-label"></g>
+            </g>
+            <g class="raphael-group-84-dataset-Label-group">
+                <g class="raphael-group-87-dataset-top-label" transform="matrix(1,0,0,1,0,0)"></g>
+            </g>
+            <g class="raphael-group-100-axis-Line-group">
+                <g class="raphael-group-104-scroller-container"></g>
+                <g class="raphael-group-107-axis-line-tick"></g>
+            </g>
+            <g class="raphael-group-101-dataset-Trend-group-top">
+                <g class="raphael-group-108-dataset-axis-trend-label"></g>
+            </g>
+            <g class="raphael-group-103-dataset-Label-group">
+                <g class="raphael-group-106-dataset-top-label" transform="matrix(1,0,0,1,0,0)"></g>
+            </g>
+        </g>
+        <g class="raphael-group-13-sumlabels fusioncharts-datalabels" clip-path="url('#rr-70B52328-9E93-4CCB-AF4A-F85EAD0F2AD1')">
+            <g class="raphael-group-70-vcanvas-sumLabelsLayer" transform="matrix(1,0,0,1,0,0)"></g>
+        </g>
+        <g class="raphael-group-41-axisReferenceVisualsTop"></g>
+        <g class="raphael-group-43-axisReferenceVisualsCeil"></g>
+        <g class="raphael-group-14-datalabel" font-family="Source Sans Pro" font-size="14px" font-weight="normal" font-style="normal" clip-path="url('#rr-AC08B54F-5E36-4607-BB1F-D74249684D69')" style="font-family: &quot;Source Sans Pro&quot;; font-size: 14px; font-weight: normal; font-style: normal;">
+            <g class="raphael-group-39-canvasdatalabel">
+                <g class="raphael-group-68-vcanvas-label" transform="matrix(1,0,0,1,0,0)">
+                    <g class="raphael-group-76-label-group fusioncharts-datalabels" font-family="Source Sans Pro" font-size="14px" font-weight="normal" font-style="normal" style="font-family: &quot;Source Sans Pro&quot;; font-size: 14px; font-weight: normal; font-style: normal;"></g>
+                </g>
+            </g>
+        </g>
+        <g class="raphael-group-38-crosslineTop"></g>
+        <g class="raphael-group-15-aboveplot">
+            <g class="raphael-group-16-upperannotations"></g>
+        </g>
+        <g class="raphael-group-17-caption">
+            <text fill-opacity="1" fill="#5a5a5a" x="294.5" text-anchor="middle" stroke="none" y="31" font-family="Source Sans Pro" font-size="18px" font-weight="bold" style="text-anchor: middle; font-family: &quot;Source Sans Pro&quot;; font-size: 18px; font-weight: bold;">Number of visitors last week</text>
+            <text fill-opacity="1" fill="#999999" x="294.5" text-anchor="middle" stroke="none" y="50" font-family="Source Sans Pro" font-size="13px" font-weight="normal" style="text-anchor: middle; font-family: &quot;Source Sans Pro&quot;; font-size: 13px; font-weight: normal;">Bakersfield Central vs Los Angeles Topanga</text>
+        </g>
+        <g class="raphael-group-18-chartdefault"></g>
+        <g class="raphael-group-19-chartdefault-shadow"></g>
+        <g class="raphael-group-20-tracker"></g>
+        <g class="raphael-group-21-buttons"></g>
+        <g class="raphael-group-29-TB_MASTER2">
+            <rect x="540" y="6" width="14" height="13" ry="0" rx="0" fill="#ff0000" stroke="#ff0000" fill-opacity="0.000001" stroke-opacity="0.000001" stroke-width="1"></rect>
+            <g class="raphael-group-31-toolbar-group10">
+                <rect x="543" y="9" width="8" height="7" ry="1" rx="1" fill="#ff0000" stroke="#ff0000" fill-opacity="0.000001" stroke-opacity="0.000001" stroke-width="1"></rect>
+            </g>
+        </g>
+    </g>
+    <g class="raphael-group-23-creditgroup">
+        <text font-size="9px" font-family="Verdana,sans" x="6" text-anchor="start" fill-opacity="0.5" fill="#000000" stroke="none" y="343" style="font-size: 9px; font-family: Verdana, sans; cursor: pointer; text-anchor: start;">FusionCharts XT Trial</text>
+    </g>
+    <g class="raphael-group-22-logo"></g>
+</svg>

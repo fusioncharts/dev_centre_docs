@@ -147,20 +147,20 @@ Now, use the `fusioncharts` directive in a template. The HTML template is given 
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `vue-fusioncharts`, `fusioncharts`, etc.
 
-2. As the above samples shows all the themes using the radio buttons, included the theme files for all the six themes.
+2. Include the theme files for all the six themes.
 
-3. Registered `vue-fusioncharts` component.
+3. Register `vue-fusioncharts` component.
 
-4. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Each chart type is represented with a unique chart alias. For Column 2D chart, the alias is `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+4. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-5. In the above sample, a FusionCharts API `setChartAttribute` is called to apply themes to the chart at runtime.
+5. Call a FusionCharts API `setChartAttribute` to apply themes to the chart at runtime.
 
-6. Created a `fusioncharts` directive in a template. 
+6. Create a `fusioncharts` directive in a template. 
 
-7. Created Radio buttons for Fusion, Gammel, Candy, Zune, Ocean and Carbon in a template.
+7. Create Radio buttons for Fusion, Gammel, Candy, Zune, Ocean and Carbon in a template.

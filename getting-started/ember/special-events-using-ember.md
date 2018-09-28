@@ -36,7 +36,7 @@ module.exports = function (defaults) {
 };
 ```
 
-In the above code necessary libraries and components have been included using import. For example, `ember-fusioncharts`, `fusioncharts`, etc.
+In the above code, include the necessary libraries and components using import. For example, `ember-fusioncharts`, `fusioncharts`, etc.
 
 > If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
 
@@ -139,17 +139,17 @@ export default Component.extend({
 
 In the above code:
 
-1. A chart component is created to render the chart.
+1. Create a chart component to render the chart.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `dragcolumn2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-3. `message` is set which gets displayed with the rendering of the chart.
+3. Set the `message which gets displayed with the rendering of the chart.
 
-4. `init()` funtion is called for `dragPlotDragEnd` event to show a message with the dataset's initial value and final value of the dragged column.
+4. Call the `init()` funtion for `dragPlotDragEnd` event to show a message with the dataset's initial value and final value of the dragged column.
 
 ### Add data to `chart-viewer.hbs`
 
@@ -168,4 +168,4 @@ Add the following code to `chart-viewer.hbs`:
 <p style="padding: 10px; background: rgb(245, 242, 240);">{{ message }}</p>
 ```
 
-In the above code `fusioncharts` component is added to `chart-viewer.hbs` template to render the chart.
+In the above code, add the `fusioncharts` component to render the chart.
