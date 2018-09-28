@@ -117,16 +117,16 @@ The HTML template of the above sample is shown below:
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `import`. For example, `jquery-fusioncharts`, `fusioncharts`, etc.
 
 2. Resolve charts as dependency for `fusioncharts`, `theme` file and `jquery-fusioncharts`. 
 
-3. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+3. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-4. Handlers are added to track the click events when the event is applied to the data plots and when the **Reset** button is clicked.
+4. Add event handlers to track the click events when the event is applied to the data plots and when the **Reset** button is clicked.
 
-5. Created an HTML template to render the chart and the buttons using `<button>`.
+5. Create an HTML template to render the chart and the buttons using `<button>`.
