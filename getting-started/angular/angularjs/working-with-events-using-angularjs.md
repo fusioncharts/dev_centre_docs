@@ -81,8 +81,6 @@ myApp.controller("MyController", ["$scope", function($scope){
 }]);
 ```
 
-Now, create the module and the controller for the template. The code for the `js` file is given below:
-
 Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
 ```

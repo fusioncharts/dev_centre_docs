@@ -115,8 +115,6 @@ myApp.controller("MyController", ["$scope", function($scope){
 }]);
 ```
 
-Now, create the module and the controller for the template. The code for the `js` file is given below:
-
 Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
 ```
@@ -148,6 +146,6 @@ The above chart has been rendered using the following steps:
 5. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
     * Set the chart type as `spline`. For Spline chart, the alias is `spline`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
     * Set the width and height (in pixels).
-    * Embed the annotations data from `annotations` object.
+    * Embed the annotations from `annotations` object.
     * Set the `dataFormat` as JSON.
 	* Embed the json data from `dataSource`.
