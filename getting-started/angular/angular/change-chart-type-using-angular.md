@@ -59,11 +59,11 @@ export class AppModule {
 
 In the above code:
 
-1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
 
-2. Loaded FusionCharts, chart module and fusion theme.
+2. Load FusionCharts, chart module and the `fusion` theme.
 
-3. Added dependencies to `FusionChartsModule`.
+3. Add dependencies to `FusionChartsModule`.
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
@@ -138,17 +138,17 @@ export class AppComponent {
 
 In the above code:
 
-1. The JSON data is added within the `AppComponent` class.
+1. Add the the JSON data within the `AppComponent` class.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-3. Saved the chart instance in `chartObj`.
+3. Save the chart instance in `chartObj`.
 
-4. `onSectionChange` chart instance to change the chart type at runtime.
+4. Create the `onSectionChange` chart instance to change the chart type at runtime.
 
 ### Add data to `app.component.html`
 
@@ -179,6 +179,6 @@ Add the following code to `app.component.html`:
 
 In the above code 
 
-* `fusioncharts` directive is created in a template.
+* Create the `fusioncharts` directive in a template.
 
-* Radio buttons for **column2d**, **bar2d** and **pie2d** chart have been created using `<input>`.
+* Create Radio buttons for **column2d**, **bar2d** and **pie2d** chart using `<input>`.

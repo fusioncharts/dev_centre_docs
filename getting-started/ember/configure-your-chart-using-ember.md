@@ -41,7 +41,7 @@ module.exports = function (defaults) {
 };
 ```
 
-In the above code necessary libraries and components have been included using import. For example, `ember-fusioncharts`, `fusioncharts`, etc.
+In the above code, include the necessary libraries and components using import. For example, `ember-fusioncharts`, `fusioncharts`, etc.
 
 > If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
 
@@ -110,17 +110,17 @@ export default Component.extend({
 
 In the above code:
 
-1. A chart component is created to render the chart.
+1. Create a chart component to render the chart.
 
-2. To update the chart we have generated random data using **Math.random()**.
+2. Generate random data to update the chart using **Math.random()**.
 
-3. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+3. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-4. `updateData()` function is added to randomly update the value of the chart when the button is clicked.
+4. Add the `updateData()` function to randomly update the value of the chart when the button is clicked.
 
 ### Add data to `chart-viewer.hbs`
 
@@ -139,9 +139,9 @@ Add the following code to `chart-viewer.hbs`:
 
 In the above code:
 
-1. `fusioncharts` component is added to `chart-viewer.hbs` template to render the chart.
+1. Add the `fusioncharts` component to render the chart.
 
-2. A **button** has been added using `<button>` to update the data when clicked.
+2. Add a **button** using `<button>` to update the data when clicked.
 
 ## Update Chart Attributes
 
@@ -151,7 +151,7 @@ A chart, configured to update the **chart caption**, **sub-caption** alignment a
 
 ### Setup `ember-cli-build.js`
 
-In this step we will include all the necessary files and add the dependency to create the **Column 2D** chart. The code is given below:
+In this step, include all the necessary files and add the dependency to create the **Column 2D** chart. The code is given below:
 
 ```
 /* eslint-env node */
@@ -173,7 +173,7 @@ module.exports = function (defaults) {
 };
 ```
 
-In the above code necessary libraries and components have been included using import. For example, `ember-fusioncharts`, `fusioncharts`, etc.
+In the above code, include the necessary libraries and components using import. For example, `ember-fusioncharts`, `fusioncharts`, etc.
 
 > If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
 
@@ -244,13 +244,13 @@ export default Component.extend({
 
 In the above code:
 
-1. A chart component is created to render the chart.
+1. Create a chart component to render the chart.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
 3. Action takes place to:
     * Update the chart caption, sub-capion alignment.
@@ -276,6 +276,6 @@ Add the following code to `chart-viewer.hbs`:
 
 In the above code:
 
-1. `fusioncharts` component is added to `chart-viewer.hbs` template to render the chart.
+1. Add the `fusioncharts` component to render the chart.
 
-2. **Buttons** are added using `<button>` to update the chart according to the action.
+2. Add **Buttons** using `<button>` to update the chart according to the action.

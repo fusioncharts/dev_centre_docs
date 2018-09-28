@@ -51,11 +51,11 @@ export class AppModule {}
 
 In the above code:
 
-1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+1. Include necessary libraries and components using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
 
-2. Loaded FusionCharts, chart module and fusion theme.
+2. Load FusionCharts, chart module and the `fusion` theme.
 
-3. Added dependencies to `FusionChartsModule`.
+3. Add dependencies to `FusionChartsModule`.
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render our first chart in the main `app.component`.
 
@@ -167,19 +167,18 @@ export class AppComponent {
 
 In the above code:
 
-1. The JSON data is added within the `AppComponent` class.
+1. Add the JSON data within the `AppComponent` class.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
 3. In the above sample:
-	* A `getMessage` function is created for the message which gets displayed when the data plots are clicked.
-	* An event listener is added to enable the `dataplotClick` event on the data plot which the button is clicked.
-	* An event listener is removed to disable the `dataPlotClick` event on the data plot which the button is clicked.
-
+	* Create the `getMessage` function for the message which gets displayed on clicking the data plots.
+	* Add an event listener to enable the `dataplotClick` event.
+	
 ### Add data to `app.component.html`
 
 Add the following code to `app.component.html`:
@@ -221,5 +220,5 @@ Add the following code to `app.component.html`:
 
 In the above code:
 
-* A `fusioncharts` directive is created in a template.
-* Buttons are created to add/remove event listener to the data plots of the chart.
+* Create a `fusioncharts` directive in a template.
+* Create buttons to add/remove event listener.

@@ -115,11 +115,11 @@ export class AppModule {
 
 In the above code:
 
-1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
 
-2. Loaded FusionCharts, chart module and fusion theme.
+2. Load FusionCharts, chart module and the `fusion` theme.
 
-3. Added dependencies to `FusionChartsModule`.
+3. Add dependencies to `FusionChartsModule`.
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render the above chart in the main app.component.
 
@@ -141,18 +141,17 @@ export class AppComponent {
 }
 ```
 
-1. The JSON data is added within the `AppComponent` class.
+1. Add the JSON data within the `AppComponent` class.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
     
-3. To set the datasource using URL:
-    * The value of the `dataFormat` has been set to **jsonurl**.
-    * A static URL has been set to `dataSource` to render the above chart.
-
-4. Created a `fusioncharts` directive in a template.
+3. Set the datasource using URL:
+    * Set the value of the `dataFormat` to **jsonurl**.
+    * Provide a static URL to `dataSource` to render the above chart.
 
 ### Add data to `app.component.html`
 
@@ -169,7 +168,7 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
-In the above code a `fusioncharts` directive is created in a template.
+In the above code create a `fusioncharts` directive in a template.
 
 > When rendering your charts locally (without a web server, even if on the localhost), you will not be able to load data from XML or JSON files present on your hard-drive. This is due to security restrictions enforced by most modern browsers.
 
@@ -233,11 +232,11 @@ export class AppModule {
 
 In the above code:
 
-1. Necessary libraries and components have been included using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using import. For example, `angular-fusioncharts`, `fusioncharts`, etc.
 
-2. Loaded FusionCharts, chart module and fusion theme.
+2. Load FusionCharts, chart module and the `fusion` theme.
 
-3. Added dependencies to `FusionChartsModule`.
+3. Add dependencies to `FusionChartsModule`.
 
 > The `<fusioncharts></fusioncharts>` component is available to be used by any component your app. We will render the above chart in the main app.component.
 
@@ -259,19 +258,16 @@ export class AppComponent {
 }
 ```
 
-1. The XML data has been within the `AppComponent` class.
+1. Add the XML data within the `AppComponent` class.
 
-2. Stored the chart configuration in an XML object. In the XML object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as XML.
+2. Store the chart configuration in an XML object. In the XML object:
+    * Set the chart type to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as XML.
     
 3. To set the datasource using URL:
-    * The value of the `dataFormat` has been set to **xmlurl**.
-    * A static URL has been set to `dataSource` to render the above chart.
-
-4. Created a `fusioncharts` directive in a template.
-
+    * Set the value of the `dataFormat` to **xmlurl**.
+    * Set a static URL to `dataSource` to render the above chart.
 
 ### Add data to `app.component.html`
 
@@ -288,4 +284,4 @@ Add the following code to `app.component.html`:
 </fusioncharts>
 ```
 
-In the above code a `fusioncharts` directive is created in a template.
+In the above code create a `fusioncharts` directive in a template.

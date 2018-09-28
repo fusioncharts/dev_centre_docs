@@ -52,9 +52,9 @@ module.exports = function (defaults) {
 
 In the above code:
 
-1. Necessary libraries and components have been included using import. For example, `ember-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using import. For example, `ember-fusioncharts`, `fusioncharts`, etc.
 
-2. As the above samples shows all the themes using the radio buttons, included the theme files for all the six themes.
+2. Include the theme files for all the six themes.
 
 > If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
 
@@ -116,12 +116,12 @@ export default Component.extend({
 
 In the above code:
 
-1. A chart component is created to render the chart.
+1. Create a chart component to render the chart.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
+2. Store the chart configuration in a JSON object. In the JSON object:
+    * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height of the chart in pixels. 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of `dataSource`.
 
-3. `changeTheme()` function is added to update the theme of the chart whenever the radio buttons are clicked.
+3. Add the `changeTheme()` function to update the theme of the chart whenever the radio buttons are clicked.
