@@ -231,7 +231,7 @@ To render the map follow the steps below:
 
 8. Add the map and the theme as a dependency to the core.
 
-9. Store the map configurations in a JSON object.
+9. Store the map configurations in a variable (`myApp`).
 
 10. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `<div>`:
     * Set the map type as `world`. Each map type is represented with a unique map alias. For World Map, the alias is `world`. Find the complete list of map types with their respective alias [here](https://www.fusioncharts.com/dev/map-guide/list-of-maps).
