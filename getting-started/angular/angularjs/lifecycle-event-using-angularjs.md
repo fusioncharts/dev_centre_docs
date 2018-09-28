@@ -6,150 +6,127 @@ heading: Lifecycle Events using AngularJS
 
 Events are signals that let you execute specific actions—such as sending data to the server, and so on—using JavaScript, in response to any interactions/updates for a chart. FusionCharts Suite XT includes advanced features that let you add more context to your chart and make data visualization simpler. These features include chart updates, and events.
 
-The sample in this article lists the basic lifestyle events at the time of rendering the chart using `ember-fusioncharts` component.
+The sample in this article lists the basic lifestyle events at the time of rendering the chart using `angularjs-fusioncharts` component.
 
 A chart is shown below:
 
 {% embed_chartData lifecycle-event-example-1.js json %}
 
-### Setup `ember-cli-build.js`
-
-In this step we will include all the necessary files and add the dependency to create the **Column 2D** chart. The code is given below:
+The code to render the above chart is given below:
 
 ```
-/* eslint-env node */
-'use strict';
+//  Require AngularJS 
+var angular = require('angular');
 
-const EmberAddon = require('ember-cli/lib/broccoli/ember-addon');
+// Require FusionCharts 
+var FusionCharts = require('fusioncharts');
 
-module.exports = function (defaults) {
-    let app = new EmberAddon(defaults, {
-        // Add options here
-    });
+// Include angularjs-fusioncharts 
+require('angularjs-fusioncharts');
 
-    // Import FusionCharts library
-    app.import('bower_components/fusioncharts/fusioncharts.js');
-    app.import('bower_components/fusioncharts/fusioncharts.charts.js');        
-    app.import('bower_components/fusioncharts/themes/fusioncharts.theme.fusion.js');    
+// Require Chart modules 
+var Charts = require('fusioncharts/fusioncharts.charts');
 
-    return app.toTree();
-};
+// Require Fusion theme
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+// Initialize Charts with FusionCharts instance
+Charts(FusionCharts);
+
+// Initialize FusionTheme with FusionCharts instance
+FusionTheme(FusionCharts);
+
+var myApp = angular.module("myApp", ["ng-fusioncharts"]);
+myApp.controller("MyController", ["$scope", function($scope){
+    // datasource
+    $scope.myDataSource = {
+		"chart": {
+			"caption": "Countries With Most Oil Reserves [2017-18]",
+			"subCaption": "In MMbbl = One Million barrels",
+			"xAxisName": "Country",
+			"yAxisName": "Reserves (MMbbl)",
+			"numberSuffix": "K",
+			"theme": "fusion"
+		},
+      	"data": [
+			{ "label": "Venezuela", "value": "290" },
+			{ "label": "Saudi", "value": "260" },
+			{ "label": "Canada", "value": "180" },
+			{ "label": "Iran", "value": "140" },
+			{ "label": "Russia", "value": "115" },
+			{ "label": "UAE", "value": "100" },
+			{ "label": "US", "value": "30" },
+			{ "label": "China", "value": "30"}
+		]
+    };
+    // handler for rendercomplete event
+    $scope.renderComplete = function(){
+    	$scope.$apply(function(){
+        	$scope.message = "render complete";
+      	});
+    }
+    // handler for drawcomplete event
+    $scope.drawComplete = function(){
+    	$scope.$apply(function(){
+        	$scope.message = "draw complete";
+      	});
+    }
+    // handler for beforedataupdate event
+    $scope.beforeDataUpdate = function(){
+    	$scope.$apply(function(){
+        	$scope.message = "before data update";
+      	});
+    }
+    // handler for dataupdated event
+    $scope.dataUpdated = function(){
+      	$scope.$apply(function(){
+        	$scope.message = "data updated";
+      	});
+    }
+}]);
 ```
 
-In the above code, include the necessary libraries and components using import. For example, `ember-fusioncharts`, `fusioncharts`, etc.
-
-> If you need to use different assets in different environments, specify an object as the first parameter. That object's keys should be the environment name and the values should be the asset to use in that environment.
-
-### Add chart data to `chart-viewer.js`
-
-Add the following code to `chart-viewer.js`:
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
 
 ```
-import Component from '@ember/component';
-
-var message = 'Status: ';
-
-export default Component.extend({    
-    width: 700,
-    height: 400,
-    type: 'column2d',
-    dataFormat: 'json',
-    dataSource: {
-        "chart": {
-            "caption": "Countries With Most Oil Reserves [2017-18]",
-            "subCaption": "In MMbbl = One Million barrels",
-            "xAxisName": "Country",
-            "yAxisName": "Reserves (MMbbl)",
-            "numberSuffix": "K",
-            "theme": "fusion"
-        },
-        "data": [{
-            "label": "Venezuela",
-            "value": "290"
-        }, {
-            "label": "Saudi",
-            "value": "260"
-        }, {
-            "label": "Canada",
-            "value": "180"
-        }, {
-            "label": "Iran",
-            "value": "140"
-        }, {
-            "label": "Russia",
-            "value": "115"
-        }, {
-            "label": "UAE",
-            "value": "100"
-        }, {
-            "label": "US",
-            "value": "30"
-        }, {
-            "label": "China",
-            "value": "30"
-        }]
-    },    
-    events: null,
-    message: 'Drag any column for years 2017 or 2018 to see updated value along with the label',
-
-    init() {
-        this._super(...arguments);
-        const self = this;
-        this.set('events', {
-            beforedataupdate: function() {
-                message += 'beforeDataUpdate, ';
-                self.set('message', message);
-            },
-            dataupdated: function() {
-                message += 'dataUpdated, ';
-                self.set('message', message);
-            },
-            drawcomplete: function() {
-                message += 'drawComplete, ';
-                self.set('message', message);
-            },
-            rendercomplete: function() {
-                message += 'renderComplete';
-                self.set('message', message);
-            }            
-        });
-    }    
-});
+<div ng-app="myApp">
+  <div ng-controller="MyController">
+  <!--Listen to FusionCharts events by using "fcevent-<fc-event-name>" attribute. In this case the event name is rendered-->   
+    <fusioncharts type="column2d" 
+      width="700" 
+      height="400" 
+      dataFormat="json" 
+      fcevent-rendered="renderComplete()" 
+      fcevent-beforedataupdate="beforeDataUpdate()"
+      fcevent-dataupdated="dataUpdated()"
+      fcevent-drawcomplete="drawComplete()"
+      datasource="{{myDataSource}}"></fusioncharts>
+    <p style="padding: 10px; background: #f5f2f0"><b>Status: </b>{{message}}</p>
+  </div>
+</div>
 ```
 
-In the above code:
+The above chart has been rendered using the following steps:
 
-1. Create a chart component to render the chart.
+1. Include the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
 
-2. Store the chart configuration in a JSON object. In the JSON object:
+2. Add the chart and the theme as dependencies to the core.
+
+3. Store the chart configurations in a variable (`myApp`).
+
+4. Set the `message` and its styling which gets displayed while rendering the chart.
+
+5. Store the data source in a variable (`dataSource`).
+
+6. Handler for:
+	* `rendercomplete` event is updated.
+	* `drawcomplete` event is updated.
+	* `beforedataupdate` event is updated.
+	* `dataupdated` event is updated.
+
+7. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height of the chart in pixels. 
-    * Set the `dataFormat` as JSON.
+    * Set the width and height of the chart in pixels.
     * Embed the json data as the value of `dataSource`.
 
-3. Set the `message` which gets displayed while rendering the chart.
-
-4. Call the `init()` funtion where:
-	* `beforeDataUpdate` event is updated.
-	* `dataUpdated` event is updated.
-	* `drawComplete` event is updated.
-	* `renderComplete` event is updated.
-
-### Add data to `chart-viewer.hbs`
-
-Add the following code to `chart-viewer.hbs`:
-
-```
-{{fusioncharts-xt
-    width=width
-    height=height
-    type=type
-    dataFormat=dataFormat
-    dataSource=dataSource
-    events=events
-}}
-
-<p style="padding: 10px; background: rgb(245, 242, 240);">{{ message }}</p>
-```
-
-In the above code, add the `fusioncharts` component to render the chart.
+8. Create a `<p>` to display the list of events.
