@@ -12,6 +12,11 @@ A chart configured to calculate the percent, is shown below:
 
 {% embed_chartData percentage-calculation-example-1.js json %}
 
+
+
+
+
+
 ### Setup the Main Module
 
 In this step, we will setup the main module to create the **Column 2D** chart. The code is given below:

@@ -36,8 +36,13 @@ require('angularjs-fusioncharts');
 // Require Chart modules 
 var Charts = require('fusioncharts/fusioncharts.charts');
 
-// Require Fusion theme
+// Require Themes
 var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+var GammelTheme = require('fusioncharts/themes/fusioncharts.theme.gammel');
+var CandyTheme = require('fusioncharts/themes/fusioncharts.theme.candy');
+var ZuneTheme = require('fusioncharts/themes/fusioncharts.theme.zune');
+var OceanTheme = require('fusioncharts/themes/fusioncharts.theme.ocean');
+var CarbonTheme = require('fusioncharts/themes/fusioncharts.theme.carbon');
 
 // Initialize Charts with FusionCharts instance
 Charts(FusionCharts);
