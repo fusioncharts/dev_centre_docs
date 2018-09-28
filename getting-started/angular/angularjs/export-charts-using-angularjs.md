@@ -97,18 +97,17 @@ The HTML code of the above sample is given below:
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
 
 2. Add the chart and the theme as dependencies to the core.
 
-3. Store the chart configurations in a JSON object. In this JSON object:
+3. Store the chart configurations in a JSON object.
+
+4. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `<div>`:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height (in pixels). 
-    * Set the `dataFormat` as JSON.
+    * Set the width and height (in pixels).
     * Embed the json data as the value of the `dataSource`.
     * Set the value of `exportEnabled` attribute to `1`, which enables the export feature of the chart.
-
-4. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`.
 
 ## Export Multiple Charts
 
@@ -365,16 +364,15 @@ The above chart has been rendered using the following steps:
 
 2. Add the chart and the theme as dependencies to the core.
 
-3. Store the chart configurations in a JSON object. In this JSON object:
-    * The chart type has been set to `column2d` for the first chart and `stackedcolumn2d` for the second chart. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * Set the width and height (in pixels). 
-    * Set the `dataFormat` as JSON.
-    * Embed the json data as the value of the `dataSource`.
+3. Store the chart configurations in a JSON object.
 
 4. To export multiple charts as PDF, set the `batchExport` to PDF.
 
-5. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`.
-
+5. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
+    * Set the chart type as `column2d` for the first chart and `stackedcolumn2d` for the second chart. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height (in pixels). 
+    * Set the `dataFormat` as JSON.
+    * Embed the json data as the value of the `dataSource`.
 
 ## Modes of Export
 
