@@ -10,114 +10,144 @@ In this article we'll create a **Spline** chart and add annotations using `angul
 
 {% embed_chartData configure-charts-using-react-example-3.js json %}
 
-The full code of the above sample is given below:
+The code to render the above chart is given below:
 
 ```
-import React from 'react';
-import ReactDOM from 'react-dom';
-import FusionCharts from 'fusioncharts';
-import PowerCharts from 'fusioncharts/fusioncharts.powercharts';
-import ReactFC from 'react-fusioncharts';
-import FusionTime from 'fusioncharts/themes/fusioncharts.theme.fusion';
+//  Require AngularJS 
+var angular = require('angular');
 
-ReactFC.fcRoot(FusionCharts, PowerCharts, FusionTime);
+// Require FusionCharts 
+var FusionCharts = require('fusioncharts');
 
-const chartConfigs = {
-    type: 'spline',
-    width: '700',
-    height: '400',
-    dataFormat: 'json',
-    dataSource: {
-        "chart": {
-            "caption": "Average Monthly Temperature in Texas",
-            "yAxisName": "Average Monthly Temperature",
-            "anchorradius": "5",
-            "plotToolText": "Average temperature in $label is <b>$dataValue</b>",
-            "showHoverEffect": "1",
-            "showvalues": "0",
-            "numberSuffix": "°C",
-            "theme": "fusion",
-            "anchorBgColor": "#72D7B2",
-            "paletteColors": "#72D7B2"
-        },
-        "annotations": {
-            "groups": [{
-                "id": "anchor-highlight",
-                "items": [{
-                    "id": "high-star",
-                    "type": "circle",
-                    "x": "$dataset.0.set.7.x",
-                    "y": "$dataset.0.set.7.y",
-                    "radius": "12",
-                    "color": "#cc0000",
-                    "border": "2",
-                    "borderColor": "#0075c2"
-                }, {
-                    "id": "label",
-                    "type": "text",
-                    "text": "Hottest Month",
-                    "fillcolor": "#0075c2",
-                    "rotate": "90",
-                    "x": "$dataset.0.set.7.x+75",
-                    "y": "$dataset.0.set.7.y-2"
-                }]
-            }]
-        },
-        "data": [{
-            "label": "Jan",
-            "value": "1"
-        }, {
-            "label": "Feb",
-            "value": "5"
-        }, {
-            "label": "Mar",
-            "value": "10"
-        }, {
-            "label": "Apr",
-            "value": "12"
-        }, {
-            "label": "May",
-            "value": "14"
-        }, {
-            "label": "Jun",
-            "value": "16"
-        }, {
-            "label": "Jul",
-            "value": "20"
-        }, {
-            "label": "Aug",
-            "value": "22"
-        }, {
-            "label": "Sep",
-            "value": "20"
-        }, {
-            "label": "Oct",
-            "value": "16"
-        }, {
-            "label": "Nov",
-            "value": "7"
-        }, {
-            "label": "Dec",
-            "value": "2"
-        }]
+// Include angularjs-fusioncharts 
+require('angularjs-fusioncharts');
+
+// Require Chart modules 
+var Charts = require('fusioncharts/fusioncharts.charts');
+
+// Require Fusion theme
+var FusionTheme = require('fusioncharts/themes/fusioncharts.theme.fusion');
+
+// Initialize Charts with FusionCharts instance
+Charts(FusionCharts);
+
+// Initialize FusionTheme with FusionCharts instance
+FusionTheme(FusionCharts);
+
+var myApp = angular.module("myApp", ["ng-fusioncharts"]);
+myApp.controller("MyController", ["$scope", function($scope){
+// datasource
+$scope.myDataSource = {
+    "chart": {
+        "caption": "Average Monthly Temperature in Texas",
+        "yAxisName": "Average Monthly Temperature",
+        "anchorradius": "5",
+        "plotToolText": "Average temperature in $label is <b>$dataValue</b>",
+        "showHoverEffect": "1",
+        "showvalues": "0",
+        "numberSuffix": "°C",
+        "theme": "fusion",
+        "anchorBgColor": "#72D7B2",
+        "paletteColors": "#72D7B2"
     },
+    "data": [{
+        "label": "Jan",
+        "value": "1"
+    }, {
+        "label": "Feb",
+        "value": "5"
+    }, {
+        "label": "Mar",
+        "value": "10"
+    }, {
+        "label": "Apr",
+        "value": "12"
+    }, {
+        "label": "May",
+        "value": "14"
+    }, {
+        "label": "Jun",
+        "value": "16"
+    }, {
+        "label": "Jul",
+        "value": "20"
+    }, {
+        "label": "Aug",
+        "value": "22"
+    }, {
+        "label": "Sep",
+        "value": "20"
+    }, {
+        "label": "Oct",
+        "value": "16"
+    }, {
+        "label": "Nov",
+        "value": "7"
+    }, {
+        "label": "Dec",
+        "value": "2"
+    }]
 };
+// annotations object
+$scope.annotations = {{
+	"groups": [{
+        "id": "anchor-highlight",
+        "items": [{
+            "id": "high-star",
+            "type": "circle",
+            "x": "$dataset.0.set.7.x",
+            "y": "$dataset.0.set.7.y",
+            "radius": "12",
+            "color": "#cc0000",
+            "border": "2",
+            "borderColor": "#0075c2"
+        }, {
+            "id": "label",
+            "type": "text",
+            "text": "Hottest Month",
+            "fillcolor": "#0075c2",
+            "rotate": "90",
+            "x": "$dataset.0.set.7.x+75",
+            "y": "$dataset.0.set.7.y-2"
+        }]
+     }]
+};
+}]);
+```
 
-ReactDOM.render(
-    <ReactFC {...chartConfigs} />,
-    document.getElementById('root'),
-);
+Now, create the module and the controller for the template. The code for the `js` file is given below:
+
+Now, use the `fusioncharts` directive in a template. The HTML template is given below:
+
+```
+<div ng-app="myApp">
+  <div ng-controller="MyController"> 
+    <!--Add annotations to the chart through annotations attribute-->
+    <fusioncharts
+        type="spline"
+        width="700"
+        height="400"
+        annotations="{{annotations}}"
+        dataFormat="json"
+        datasource="{{myDataSource}}">
+    </fusioncharts>
+  </div>
+</div>
 ```
 
 The above chart has been rendered using the following steps:
 
-1. Included the necessary libraries and components using `import`. For example, `react-fusioncharts`, `fusioncharts`, etc.
+1. Include the necessary libraries and components using `require`. For example, `angularjs-fusioncharts`, `fusioncharts`, etc.
 
-2. Stored the chart configuration in a JSON object. In the JSON object:
-    * The chart type has been set to `spline`. For Spline chart, the alias is `spline`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
-    * The width and height of the chart has been set in pixels. 
-    * The `dataFormat` is set as JSON.
-    * The json data has been embedded as the value of the `dataSource`.
-    * In the `dataSource`, an `annotations` object is created to specify the cosmetics and functionalities of the annotation.
+2. Add the chart and the theme as dependencies to the core.
 
-3. A `DOM` element has been created and the `react-fusioncharts` component is passed directly to the **ReactDOM.render()** method.
+3. Store the chart configurations in a variable (`myApp`).
+
+4. In the `dataSource`, create an `annotations` object to specify the cosmetics and functionalities of the annotation.
+
+5. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
+    * Set the chart type as `spline`. For Spline chart, the alias is `spline`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).
+    * Set the width and height (in pixels).
+    * Embed the annotations data from `annotations` object.
+    * Set the `dataFormat` as JSON.
+	* Embed the json data from `dataSource`.
