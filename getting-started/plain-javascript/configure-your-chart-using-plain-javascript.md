@@ -115,7 +115,6 @@ The above chart has been rendered using the following steps:
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
-    * Create an `annotations` object in the `dataSource`, to specify the cosmetics and functionalities of the annotation.
 
 4. Generate random data to update the chart using **Math.random()**.
 
@@ -248,7 +247,6 @@ var chartInstance = new FusionCharts({
     * Set the width and height of the chart in pixels. 
     * Set the `dataFormat` as JSON.
     * Embed the json data as the value of `dataSource`.
-    * Create an `annotations` object in the `dataSource`, to specify the cosmetics and functionalities of the annotation.
 
 4. `beforeRender` function is used to set the chart attributes.
     * `changeBackground` updated the background of the chart.
