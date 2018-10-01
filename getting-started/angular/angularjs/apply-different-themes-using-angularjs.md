@@ -137,7 +137,7 @@ The above chart has been rendered using the following steps:
 
 4. Create a handler to initialize events.
 	* `initialized` to store the reference of the chart instance for further usage.
-	* `applyTheme` to update the `theme` at rumtime.
+	* `applyTheme` to update the `theme` at runtime.
 
 5. Add the `<div>` with an `fc-chart` directive in your HTML, assuming that it is inside a controller named `MyController`. In the `div`:
     * Set the chart type as `column2d`. Find the complete list of chart types with their respective alias [here](https://www.fusioncharts.com/dev/chart-guide/list-of-charts).

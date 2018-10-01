@@ -18,7 +18,7 @@ Before starting with the code, ensure that you have:
 
 1. [Downloaded and installed FusionExport Server]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server), and the server is running
 
-2. [Downloaded and installed the FusionExport SDK client]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks) 
+2. [Downloaded and installed the FusionExport SDK client]({% site.baseurl %}/exporting-charts/using-fusionexport/installation/install-fusionexport-server-sdks)
 
 ## Chart Configuration
 
@@ -30,7 +30,7 @@ The chart configuration files are simple `.json` files. If you are executing the
 
 > It is **not** mandatory to create a file containing the chart configuration. In the code, you can directly create an object containing a serialized JSON string representation of the chart configuration, and pass it on to the `ExportConfig.set()` object of the FusionExport SDK you are using. For more clarity, see the inline comments in the [template code]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality#code-4).
 
-The accepted format of configuration is the same as that of charts you can generate using [FusionCharts Suite](https://www.fusioncharts.com/download/fusioncharts-suite). Refer to [Chart Attributes]({% site.baseurl %}/chart-attributes/?chart=column2d) for detailed information on the possible configurations of the charts. 
+The accepted format of configuration is the same as that of charts you can generate using [FusionCharts Suite](https://www.fusioncharts.com/download/fusioncharts-suite). Refer to [Chart Attributes]({% site.baseurl %}/chart-attributes/?chart=column2d) for detailed information on the possible configurations of the charts.
 
 Except for the case of exporting dashboards, all other exports work on the basis of the chart configuration that you create. Here, we will use the configuration of a simple Column 2D chart.
 
@@ -70,19 +70,21 @@ Based on the above configuration, the exported chart will look like the image be
 
 ## Code
 
-Before you start with the code, we suggest going through the steps that the code accomplishes. 
+Before you start with the code, we suggest going through the steps that the code accomplishes.
 
 1. Import and resolve the dependencies as per the system/programming language specific dependencies, and the FusionExport SDK client.
 
 2. Create a new instance of the `ExportConfig()` object, which will be used to extract the chart configuration by using the chart configuration file path you pass to its `set()` method.  You can also pass on an object containing the serialized JSON string representation of the configuration to the `set()` method. Use the `set()` method to change the export `quality`, by passing any of the [supported qualities]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality#supported-export-quality-1) as one of its arguments.
 
-3. Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`.
+3. Create a new instance of the `ExportManager()` object. To export the chart, pass the instance of `ExportConfig()` to `export()`, which is a method of the instance of `ExportManager()`. This will export the chart, and save the output file to the path you provide (by default, it is the directory from which the code is being executed).
 
-4. Use the instance of `ExportManager()` to perform pass success messages using the `on()` method, and save the exported chart in an appropriate file format using the `saveExportedFiles()` method.
+4. Optionally, you can print the names of the exported files on the console, and the error messages if anything goes wrong.
 
 > The above guidelines may vary slightly based on the programming language you are using, and the customizations you want on top of the defaults.
 
 > In most cases, the default output file name is `export--1.png`. If you execute the template code without any changes, you can find it in the same directory from where the code has been executed.
+
+> For detailed information on the vast number of possibilities, refer to [FusionExport SDK API Reference]({% site.baseurl %}/exporting-charts/using-fusionexport/sdk-api-reference/nodejs), and select the SDK of your choice from the left navigation panel.
 
 <div class="code-wrapper">
 <ul class="code-tabs extra-tabs">
@@ -97,48 +99,47 @@ Before you start with the code, we suggest going through the steps that the code
 <div class="tab csharp-tab">
 <pre><code class="custom-hlc language-cs">
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using FusionCharts.FusionExport.Client; // Import sdk
 
-namespace FusionExportTest {
-    public static class ExportSingleChart {
-        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT) {
+namespace FusionExportTest
+{
+    public static class Quality
+    {
+        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT)
+        {
             // Instantiate the ExportConfig class and add the required configurations
             ExportConfig exportConfig = new ExportConfig();
-            // Provide path of the chart configuration which we have defined above. 
-            // You can also pass the same object as serialized JSON.
-            exportConfig.Set("chartConfig", File.ReadAllText("./resources/chart-config-file.json"));
-
-            // *** ATTENTION - MODIFY THE EXPORT QUALITY ***
-            // OPTIONS ARE: "good" | "better" (default) | "best"
-            exportConfig.Set("quality", "best");
+            List<string> results = new List<string>();
 
             // Instantiate the ExportManager class
-            ExportManager em = new ExportManager(host: host, port: port);
-            // Call the Export() method with the export config and the respective callbacks
-            em.Export(exportConfig, OnExportDone, OnExportStateChanged);
-        }
+            using (ExportManager exportManager = new ExportManager())
+            {
+                exportConfig.Set("chartConfig", File.ReadAllText("./resources/chart-config-file.json"));
 
-        // Called when export is done
-        static void OnExportDone(ExportEvent ev, ExportException error) {
-            if (error != null) {
-                Console.WriteLine("Error: " + error);
-            } else {
-                var fileNames = ExportManager.GetExportedFileNames(ev.exportedFiles);
-                Console.WriteLine("Done: " + String.Join(", ", fileNames)); // export result
+                // *** ATTENTION - MODIFY THE EXPORT QUALITY ***
+                // OPTIONS ARE: "good" | "better" (default) | "best"
+                exportConfig.Set("quality", "best");
+
+                // Call the Export() method with the export config
+                results.AddRange(exportManager.Export(exportConfig, outputDir = ".", unzip = true));
             }
-        }
 
-        // Called on each export state change
-        static void OnExportStateChanged(ExportEvent ev) {
-            Console.WriteLine("State: " + ev.state.customMsg);
+            foreach (string path in results)
+            {
+                Console.WriteLine(path);
+            }
+
+            Console.Read();
+
         }
     }
 }
 </code></pre>
 </div>
-    
+
 <div class="tab java-tab">
 <pre><code class="custom-hlc language-java">
 import com.fusioncharts.fusionexport.client.*; // import sdk
@@ -149,7 +150,7 @@ public class Script {
 
         // Instantiate the ExportConfig class and add the required configurations
         ExportConfig config = new ExportConfig();
-        // Provide path of the chart configuration which we have defined above. 
+        // Provide path of the chart configuration which we have defined above.
         // You can also pass the same object as serialized JSON.
         config.set("chartConfig", configPath);
 
@@ -158,25 +159,10 @@ public class Script {
         config.set("quality", "best");
 
         // Instantiate the ExportManager class
-        ExportManager manager = new ExportManager(config);
+        ExportManager manager = new ExportManager();
         // Call the export() method with the export config and the respective callbacks
-        manager.export(new ExportDoneListener() {
-                @Override
-                public void exportDone(ExportDoneData result, ExportException error) {
-                    if (error != null) {
-                        System.out.println(error.getMessage());
-                    } else {
-                        ExportManager.saveExportedFiles(".", result);
-                    }
-                }
-            },
-            new ExportStateChangedListener() {
-                @Override
-                public void exportStateChanged(ExportState state) {
-                    System.out.println("STATE: " + state.reporter);
-                }
-            });
-    }
+        manager.export(config, outputDir = ".", unzip = true);
+  }
 }
 </code></pre>
 </div>
@@ -184,10 +170,8 @@ public class Script {
 <div class="tab php-tab">
 <pre><code class="custom-hlc language-php">
 <?php
-
   // Import dependencies
-  require
-DIR__ . '/../vendor/autoload.php';
+  require DIR__ . '/../vendor/autoload.php';
   use FusionExport\ExportManager;
   use FusionExport\ExportConfig;
 
@@ -197,35 +181,15 @@ DIR__ . '/../vendor/autoload.php';
   // You can also pass the same object as serialized JSON.
   $exportConfig->set('chartConfig', realpath('resources/chart-config-file.json'));
 
-  # ********* ATTENTION - MODIFY THE EXPORT QUALITY **********
-  # OPTIONS ARE: "good" | "better" (default) | "best"
-  $exportConfig->set('quality', 'best')
-
-  // Called on each export state change
-  $onStateChange = function ($event) {
-      $state = $event->state;
-      echo('STATE: [' . $state->reporter . '] ' . $state->customMsg . "\n");
-  };
-
-  // Called when export is done
-  $onDone = function ($event, $e) {
-      $export = $event->export;
-      if ($e) {
-          echo('ERROR: ' . $e->getMessage());
-      } else {
-          foreach ($export as $file) {
-              echo('DONE: ' . $file->realName. "\n");
-          }
-          ExportManager::saveExportedFiles($export);
-      }
-  };
+  // ********* ATTENTION - MODIFY THE EXPORT QUALITY **********
+  // OPTIONS ARE: "good" | "better" (default) | "best"
+  $exportConfig->set('quality', 'best');
 
   // Instantiate the ExportManager class
   $exportManager = new ExportManager();
 
-  // Call the export() method with the export config and the respective callbacks
-  $exportManager->export($exportConfig, $onDone, $onStateChange);
-
+  // Call the export() method with the exportConfig and the respective callbacks
+  $exportManager->export($exportConfig, $outputDir = '.', $unzip = true);
 ?>
 </code></pre>
 </div>
@@ -239,8 +203,8 @@ const path = require('path');
 
 // Import FusionExport SDK client for Node.js
 const {
-    ExportManager,
-    ExportConfig
+  ExportManager,
+  ExportConfig
 } = require('fusionexport-node-client');
 
 
@@ -264,19 +228,16 @@ exportConfig.set('quality', 'best');
 // Instantiate ExportManager
 const exportManager = new ExportManager();
 
-// Provide the exportConfig to exportManager()
-exportManager.export(exportConfig);
-
 
 // ***** OUTPUT ******
 
-// Called when export is done
-exportManager.on('exportDone', (outputFileBag) => {
-    outputFileBag.forEach((op) => {
-        console.log('EXPORT DONE');
-    });
+// Provide the exportConfig
+// Optionally, print the exported file names and error messages, if any
 
-    ExportManager.saveExportedFiles(outputFileBag);
+exportManager.export(exportConfig, outputDir = '.', unzip = true).then((exportedFiles) => {
+  exportedFiles.forEach(file => console.log(file));
+}).catch((err) => {
+  console.log(err);
 });
 </code></pre>
 </div>
@@ -284,34 +245,13 @@ exportManager.on('exportDone', (outputFileBag) => {
 <div class="tab python-tab">
 <pre><code class="custom-hlc language-python">
 # Import sdk
-from fusionexport import ExportManager, ExportConfig 
-
-# Read the chart configuration file
-def read_file(file_path):
-    try:
-        with open(file_path, "r") as f:
-            return f.read()
-    except Exception as e:
-        print(e)
-
-
-# Called when export is done
-def on_export_done(event, error):
-    if error:
-        print(error)
-    else:
-        # The first argument represents the path for saving the output
-        ExportManager.save_exported_files(".", event["result"])
-
-
-# Called on each export state change
-def on_export_state_changed(event):
-    print(event["state"])
-
+from fusionexport import ExportManager, ExportConfig
 
 # Instantiate the ExportConfig class and add the required configurations
 export_config = ExportConfig()
-// Provide path of the chart configuration which we have defined above. // You can also pass the same object as serialized JSON.
+
+# Provide path of the chart configuration which we have defined above.
+# You can also pass the same object as serialized JSON.
 export_config["chartConfig"] = read_file("resources/chart-config-file.json")
 
 # ********* ATTENTION - MODIFY THE EXPORT QUALITY **********
@@ -325,8 +265,8 @@ export_server_port = 1337
 # Instantiate the ExportManager class
 em = ExportManager(export_server_host, export_server_port)
 
-# Call the export() method with the export config and the respective callbacks
-em.export(export_config, on_export_done, on_export_state_changed)
+# Call the export() method with the export_config as an argument
+em.export(export_config, outputDir = ".", unzip = True)
 </code></pre>
 </div>
 </div>
