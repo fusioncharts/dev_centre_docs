@@ -4,7 +4,7 @@ description: This article talks about the SDKs used for exporting output files a
 heading: Export the output files as a zip
 ---
 
-When exporting multiple charts simultaneously, or emailing multiple charts as attachments, it is helpful to have a `.zip` file that bundles all the charts together. FusionExport natively allows you to export charts as a `.zip` file, thus saving your time and effort. In this article, we show how to use FusionExport for exporting charts as a zip file - it's as easy as setting a flag to `true` in the code!
+When exporting multiple charts simultaneously, or emailing multiple charts as attachments, it is helpful to have a `.zip` file that bundles all the charts together. FusionExport natively allows you to export charts as a `.zip` file, thus saving your time and effort. In this article, we show how to use FusionExport for exporting charts as a zip file - it's as easy as setting a flag called `unzip` to `false` in the code.
 
 ## Prerequisites
 
@@ -205,44 +205,40 @@ Before you start with the code, we suggest going through the steps that the code
 
 <div class="tab-content extra-tabs">
 
-<div class="tab csharp-tab">
+<div class="tab csharp-tab active">
 <pre><code class="custom-hlc language-cs">
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using FusionCharts.FusionExport.Client; // Import sdk
 
-namespace FusionExportTest {
-    public static class ExportSingleChart {
-        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT) {
+namespace FusionExportTest
+{
+    public static class OutputAsZip
+    {
+        public static void Run(string host = Constants.DEFAULT_HOST, int port = Constants.DEFAULT_PORT)
+        {
             // Instantiate the ExportConfig class and add the required configurations
             ExportConfig exportConfig = new ExportConfig();
-            // Provide path of the chart configuration which we have defined above. 
-            // You can also pass the same object as serialized JSON.
-            exportConfig.Set("chartConfig", File.ReadAllText("./resources/chart-config-file.json"));
-
-            // ATTENTION - Export charts as a zip file
-            // exportConfig.set("exportAsZip", "true")
+            List&lt;string&gt; results = new List&lt;string&gt;();
 
             // Instantiate the ExportManager class
-            ExportManager em = new ExportManager(host: host, port: port);
-            // Call the Export() method with the export config and the respective callbacks
-            em.Export(exportConfig, OnExportDone, OnExportStateChanged);
-        }
+            using (ExportManager exportManager = new ExportManager())
+            {
+                exportConfig.Set("chartConfig", File.ReadAllText("./resources/chart-config-file.json"));
 
-        // Called when export is done
-        static void OnExportDone(ExportEvent ev, ExportException error) {
-            if (error != null) {
-                Console.WriteLine("Error: " + error);
-            } else {
-                var fileNames = ExportManager.GetExportedFileNames(ev.exportedFiles);
-                Console.WriteLine("Done: " + String.Join(", ", fileNames)); // export result
+                // Call the Export() method with the export config
+                results.AddRange(exportManager.Export(exportConfig, outputDir = ".", unzip = false));
             }
-        }
 
-        // Called on each export state change
-        static void OnExportStateChanged(ExportEvent ev) {
-            Console.WriteLine("State: " + ev.state.customMsg);
+            foreach (string path in results)
+            {
+                Console.WriteLine(path);
+            }
+
+            Console.Read();
+
         }
     }
 }
@@ -263,28 +259,10 @@ public class Script {
         // You can also pass the same object as serialized JSON.
         config.set("chartConfig", configPath);
 
-        // ATTENTION - Export charts as a zip file
-        config.set("exportAsZip", "true");
-
         // Instantiate the ExportManager class
-        ExportManager manager = new ExportManager(config);
-        // Call the export() method with the export config and the respective callbacks
-        manager.export(new ExportDoneListener() {
-                @Override
-                public void exportDone(ExportDoneData result, ExportException error) {
-                    if (error != null) {
-                        System.out.println(error.getMessage());
-                    } else {
-                        ExportManager.saveExportedFiles(".", result);
-                    }
-                }
-            },
-            new ExportStateChangedListener() {
-                @Override
-                public void exportStateChanged(ExportState state) {
-                    System.out.println("STATE: " + state.reporter);
-                }
-            });
+        ExportManager manager = new ExportManager();
+        // Call the export() method with the export config and the flag unzip = false
+        manager.export(config, outputDir = ".", unzip = false);
     }
 }
 </code></pre>
@@ -295,8 +273,7 @@ public class Script {
 <?php
 
   // Import dependencies
-  require
-DIR__ . '/../vendor/autoload.php';
+  require DIR__ . '/../vendor/autoload.php';
   use FusionExport\ExportManager;
   use FusionExport\ExportConfig;
 
@@ -306,33 +283,11 @@ DIR__ . '/../vendor/autoload.php';
   // You can also pass the same object as serialized JSON.
   $exportConfig->set('chartConfig', realpath('resources/chart-config-file.json'));
 
-  // ATTENTION - Export charts as a zip file
-  $exportConfig->set('exportAsZip', true);
-
-  // Called on each export state change
-  $onStateChange = function ($event) {
-      $state = $event->state;
-      echo('STATE: [' . $state->reporter . '] ' . $state->customMsg . "\n");
-  };
-
-  // Called when export is done
-  $onDone = function ($event, $e) {
-      $export = $event->export;
-      if ($e) {
-          echo('ERROR: ' . $e->getMessage());
-      } else {
-          foreach ($export as $file) {
-              echo('DONE: ' . $file->realName. "\n");
-          }
-          ExportManager::saveExportedFiles($export);
-      }
-  };
-
   // Instantiate the ExportManager class
   $exportManager = new ExportManager();
 
-  // Call the export() method with the export config and the respective callbacks
-  $exportManager->export($exportConfig, $onDone, $onStateChange);
+  // Call the export() method with the exportConfig and the respective callbacks
+  $exportManager->export($exportConfig, $outputDir = '.', $unzip = false);
 
 ?>
 </code></pre>
@@ -362,29 +317,24 @@ const exportConfig = new ExportConfig();
 // You can also pass the same object as serialized JSON.
 exportConfig.set('chartConfig', path.join(__dirname, 'resources', 'chart-config-file.json'));
 
-// ATTENTION - Export charts as a zip file
-exportConfig.set('exportAsZip', true);
-
 
 // ********** EXPORT-MANAGER ***********
 
 // Instantiate ExportManager
 const exportManager = new ExportManager();
 
-// Provide the exportConfig to exportManager()
-exportManager.export(exportConfig);
-
 
 // ***** OUTPUT ******
 
-// Called when export is done
-exportManager.on('exportDone', (outputFileBag) => {
-    outputFileBag.forEach((op) => {
-        console.log('EXPORT DONE');
-    });
+// Provide the exportConfig and unzip = false
+// Optionally, print the exported file names and error messages, if any
 
-    ExportManager.saveExportedFiles(outputFileBag);
+exportManager.export(exportConfig, outputDir = '.', unzip = false).then((exportedFiles) => {
+  exportedFiles.forEach(file => console.log(file));
+}).catch((err) => {
+  console.log(err);
 });
+
 </code></pre>
 </div>
 
@@ -393,38 +343,12 @@ exportManager.on('exportDone', (outputFileBag) => {
 # Import sdk
 from fusionexport import ExportManager, ExportConfig 
 
-# Read the chart configuration file
-def read_file(file_path):
-    try:
-        with open(file_path, "r") as f:
-            return f.read()
-    except Exception as e:
-        print(e)
-
-
-# Called when export is done
-def on_export_done(event, error):
-    if error:
-        print(error)
-    else:
-        # The first argument represents the path for saving the output
-        ExportManager.save_exported_files(".", event["result"])
-
-
-# Called on each export state change
-def on_export_state_changed(event):
-    print(event["state"])
-
-
 # Instantiate the ExportConfig class and add the required configurations
 export_config = ExportConfig()
 
 # Provide path of the chart configuration which we have defined above.
 # You can also pass the same object as serialized JSON.
 export_config["chartConfig"] = read_file("resources/chart-config-file.json")
-
-# ATTENTION - Export charts as a zip file
-export_config["exportAsZip"] = True
 
 # Provide port and host of FusionExport Service
 export_server_host = "127.0.0.1"
@@ -433,9 +357,8 @@ export_server_port = 1337
 # Instantiate the ExportManager class
 em = ExportManager(export_server_host, export_server_port)
 
-# Call the export() method with the export config and the respective callbacks
-em.export(export_config, on_export_done, on_export_state_changed)
-
+# Call the export() method with the export_config and unzip = False
+em.export(export_config, outputDir = ".", unzip = False)
 </code></pre>
 </div>
 </div>
@@ -443,9 +366,9 @@ em.export(export_config, on_export_done, on_export_state_changed)
 
 ## Related Resources
 
-* [Change the Export Type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
+* [Change the export type]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-type)
 
-* [Change the Export Quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
+* [Change the export quality]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/change-the-export-quality)
 
 * [Export the Output Files as a Zip]({% site.baseurl %}/exporting-charts/using-fusionexport/tutorials/export-the-output-files-as-zip)
 
