@@ -197,7 +197,7 @@ Before you start with the code, we suggest going through the steps that the code
 
 <div class="tab-content extra-tabs">
 
-<div class="tab csharp-tab">
+<div class="tab csharp-tab active">
 <pre><code class="custom-hlc language-cs">
 using System;
 using System.Collections.Generic;
